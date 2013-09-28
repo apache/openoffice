@@ -1,1651 +1,5866 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
+msgid "HTML Export"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
+msgid "Assign design"
+msgstr ""
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
-msgid  "New design"
+msgid "New design"
 msgstr "புதிய வடிவமைப்புக்கள்"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RADIOBUTTON.TEXT
-msgid  "Existing design"
+msgid "Existing design"
 msgstr "பயனில் உள்ள வடிவமைப்புக்கள்"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PUSHBUTTON.TEXT
-msgid  "Delete Selected Design"
+msgid "Delete Selected Design"
 msgstr "தேர்வு செய்யாத வடிவத்தை நீக்கு"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FIXEDTEXT.TEXT
-msgid  "Select an existing design or create a new one"
+msgid "Select an existing design or create a new one"
 msgstr "புற வடிவமைப்பை தேர்வு செய்ய அல்லது புதிய ஒன்றையை உருவாக்கு"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
+msgid "Publication type"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
+msgid "Standard H~TML format"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
-msgid  "Standard HTML with ~frames"
+msgid "Standard HTML with ~frames"
 msgstr "இயல்பான எச்.டி.எம்.எல் உடன் சட்டங்கள்"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RADIOBUTTON.TEXT
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr "தானியக்கம்"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
+msgid "~WebCast"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
-msgid  "Create title page"
+msgid "Create title page"
 msgstr "தலைப்புப் பக்கத்தை உருவாக்கு "
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CHECKBOX.TEXT
-msgid  "Show notes"
+msgid "Show notes"
 msgstr "குறிப்புகளைக் காட்டு"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
+msgid "Advance slides"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
+msgid "~As stated in document"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RADIOBUTTON.TEXT
+msgid "~Automatic"
+msgstr "தானியக்கம்"
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
+msgid "~Slide view time:"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
+msgid "~Duration of page"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
+msgid "~Endless"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
+msgid "WebCast"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
+msgid "~Active Server Pages (ASP)"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
-msgid  "Perl"
+msgid "Perl"
 msgstr "பெர்ல்"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
+msgid "~URL for listeners"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
+msgid "URL for ~presentation:"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
-msgid  "URL for ~Perl scripts:"
+msgid "URL for ~Perl scripts:"
 msgstr "பெர்ல் ஆணைத் தொடர்கள் உடையை URL"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FIXEDLINE.TEXT
-msgid  "Save graphics as"
+msgid "Save graphics as"
 msgstr "சித்திரங்களாக சேமி"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
+msgid "~PNG"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
+msgid "~GIF"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
+msgid "~JPG"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
+msgid "Quality"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
+msgid "Monitor resolution"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
+msgid "Low resolution (~640x480 pixels)"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
+msgid "Medium resolution (~800x600 pixels)"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
+msgid "High resolution (~1024x768 pixels)"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
+msgid "Effects"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
+msgid "~Export sounds when slide advances"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
-msgid  "Export ~hidden slides"
+msgid "Export ~hidden slides"
 msgstr "Export ~hidden slides"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
+msgid "Information for the title page"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
+msgid "~Author"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
+msgid "E-~mail address"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
-msgid  "Your hom~epage"
+msgid "Your hom~epage"
 msgstr "உங்கள் ஆரம்பபக்கம்"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FIXEDTEXT.TEXT
-msgid  "Additional ~information"
+msgid "Additional ~information"
 msgstr "கூடுதல் தகவல்"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
+msgid "Link to a copy of the ~original presentation"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
+msgid "Note: 'Created with %PRODUCTNAME'"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
+msgid "Select button style"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
+msgid "~Text only"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
+msgid "Select color scheme"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
+msgid "~Apply color scheme from document"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
+msgid "Use ~browser colors"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
+msgid "~Use custom color scheme"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr "உரை"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
+msgid "Hyper~link"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
+msgid "Active Li~nk"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
+msgid "~Visited Link"
+msgstr ""
+
+#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
+msgid "Bac~kground"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
-msgid  "<< Back"
+msgid "<< Back"
 msgstr "<< பிண்"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
+msgid "Next >>"
 msgstr "அடுத்த>>"
 
+#: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
+msgid "~Create"
+msgstr "~உருவாக்குக"
+
+#: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
+msgid "~Save"
+msgstr ""
+
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
-msgid  "Do Not Save"
+msgid "Do Not Save"
 msgstr "சேமிக்காதே"
+
+#: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
+msgid "Name HTML Design"
+msgstr ""
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Select a slide design"
+msgid "~Select a slide design"
 msgstr "~Select a slide design"
+
+#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
+msgid "~Exchange background page"
+msgstr ""
+
+#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
+msgid "~Delete unused backgrounds"
+msgstr ""
+
+#: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
+msgid "~Load..."
+msgstr ""
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Slide Design"
+msgid "Slide Design"
 msgstr "காட்சி வடிவம்"
+
+#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
+msgid "Insert Slides/Objects"
+msgstr ""
+
+#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
+msgid "~Link"
+msgstr ""
 
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Delete unused backg~rounds"
+msgid "Delete unused backg~rounds"
 msgstr "தேவையில்லா பின்~னணிகளை நீக்குக"
+
+#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
+msgid "New Snap Object"
+msgstr ""
+
+#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "அழி"
+
+#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
+msgid "Position"
+msgstr ""
+
+#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
+msgid "Type"
+msgstr ""
+
+#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
+msgid "~Point"
+msgstr ""
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Vertical"
+msgid "~Vertical"
 msgstr "~நெடுக்குவசம்"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_HORIZONTAL.IMAGERADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Hori~zontal"
+msgid "Hori~zontal"
 msgstr "கி~டைமட்டம்"
 
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
+msgid "Field type"
+msgstr ""
+
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
+msgid "~Fixed"
+msgstr ""
+
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
+#, fuzzy
+msgid "~Variable"
+msgstr "~Variable"
+
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
+msgid "~Language"
+msgstr ""
+
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
+msgid "F~ormat"
+msgstr ""
+
+#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
+msgid "Edit Field"
+msgstr ""
+
+#: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
+msgid "Convert to Polygon"
+msgstr ""
+
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "முன்காட்சி"
+
+#: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
+msgid "Settings"
+msgstr ""
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Number of colors:"
+msgid "Number of colors:"
 msgstr "வண்ணங்களின் எண்ணிக்கை:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_REDUCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Point reduction:"
+msgid "Point reduction:"
 msgstr "புள்ளி குறைப்பு:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CB_FILLHOLES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Fill holes:"
+msgid "~Fill holes:"
 msgstr "~இடைவெளிகளை நிரப்புக:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_FILLHOLES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Tile size:"
+msgid "Tile size:"
 msgstr "தலைப்பு அளவு:"
 
+#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
+msgid "Source picture:"
+msgstr ""
+
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
-msgid  "Source picture"
+msgid "Source picture"
 msgstr "மூலப்படம்"
 
+#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
+msgid "Vectorized image:"
+msgstr ""
+
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
-msgid  "Vectorized image"
+msgid "Vectorized image"
 msgstr "வெக்டராக உள்ள படம்"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_PRGS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Progress"
+msgid "Progress"
 msgstr "முன்னேற்றம்"
+
+#: ui/dlg/vectdlg.src#DLG_VECTORIZE.WND_PRGS.WINDOW.TEXT
+#, fuzzy
+msgid "Progress"
+msgstr "முன்னேற்றம்"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
+msgid "Graphics Styles"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
+msgid "Area"
+msgstr "பகுதி"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
+msgid "Shadowing"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
+msgid "Transparency"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+msgid "Font"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+msgid "Font Effect"
+msgstr ""
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Indents & Spacing"
+msgid "Indents & Spacing"
 msgstr "Indents & Spacing"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
+msgid "Text"
+msgstr "உரை"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
+msgid "Text Animation"
+msgstr "Text animation"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
+msgid "Dimensioning"
+msgstr ""
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Connector"
+msgid "Connector"
 msgstr "இணைப்பான்"
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+msgid "Alignment"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+msgid "Asian Typography"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+msgid "Tabs"
+msgstr ""
+
+#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
+msgid "Back"
+msgstr ""
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
 msgstr "~புதிய ..."
 
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
+msgid "~Edit..."
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "அழி"
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
+msgid "Cop~y"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
+msgid "~Start"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
+msgid "~Close"
+msgstr ""
+
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
-msgid  "Custom Screen Show"
+msgid "Custom Screen Show"
 msgstr "வழக்கமான திரைக்காட்சி"
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
+msgid "~Use Custom Slide Show"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
+msgid "Custom Slide Shows"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
+msgid "Name"
+msgstr "Name"
+
+#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
+msgid "Existing slides"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
+msgid "Selected slides"
+msgstr ""
+
+#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
+msgid "Define Custom Slide Show"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
+msgid "Presentation Wizard"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
+msgid "Previe~w"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
+msgid "~Do not show this wizard again"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
+msgid "Type"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
+msgid "~Empty presentation"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
+msgid "~From template"
+msgstr ""
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "O~pen existing presentation"
+msgid "O~pen existing presentation"
 msgstr "~தற்போதைய முன்வைப்பை திற"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_LAYOUT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "~Select a slide design"
+msgid "~Select a slide design"
 msgstr "~Select a slide design"
+
+#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
+msgid "Select an output medium"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
+msgid "~Original"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
+msgid "Sc~reen"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
+msgid "Sli~de"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
+msgid "O~verhead sheet"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
+msgid "P~aper"
+msgstr ""
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Select a slide transition"
+msgid "Select a slide transition"
 msgstr "படக்காட்சி மாற்றத்தை தேர்ந்தெடுக்க"
 
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
+msgid "~Effect"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
+msgid "~Speed"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
+msgid "Select the presentation type"
+msgstr ""
+
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "உள்ளிருப்பு"
+
+#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
+msgid "~Automatic"
+msgstr "தானியக்கம்"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "D~uration of page"
+msgid "D~uration of page"
 msgstr "ப~க்க நிறுத்தம்"
+
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
+msgid "Du~ration of pause"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
+msgid "Sh~ow logo"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
+msgid "Describe your basic ideas"
+msgstr ""
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "What is your name or the name of your company?"
+msgid "What is your name or the name of your company?"
 msgstr "உன்னுடைய பெயர் அல்லது நிறுவனத்தின் பெயர்?"
 
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
+msgid "What is the subject of your presentation?"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
+msgid "Further ideas to be presented?"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
+msgid "Ch~oose your pages"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
+msgid "C~reate summary"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
+msgid "<< ~Back"
+msgstr ""
+
+#: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
+msgid "~Next >>"
+msgstr ""
+
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
-msgid  "~Create"
+msgid "~Create"
 msgstr "~உருவாக்குக"
 
 #: ui/dlg/dlgass.src#DLG_ASS.STR_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "திற"
+
+#: ui/dlg/dlgass.src#DLG_ASS.STR_CREATE.STRING.TEXT
+msgid "~Create"
+msgstr "~உருவாக்குக"
+
+#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+msgid "Slide Pane"
+msgstr ""
+
+#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+msgid "Page Pane"
+msgstr ""
+
+#: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+msgid "Task Pane"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
+msgid "Header and Footer"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
+#, fuzzy
+msgid "Slide"
+msgstr "காட்சி"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Notes and Handouts"
+msgid "Notes and Handouts"
 msgstr "Notes and Handouts"
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
+msgid "Include on slide"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
+msgid "Header"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
+msgid "Header text"
+msgstr ""
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Date and time"
+msgid "~Date and time"
 msgstr "~Date and time"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.RB_DATETIME_FIXED.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Fi~xed"
+msgid "Fi~xed"
 msgstr "Fi~xed"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.RB_DATETIME_AUTOMATIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Variable"
+msgid "~Variable"
 msgstr "~Variable"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_DATETIME_LANGUAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Language:"
+msgid "~Language:"
 msgstr "~Language:"
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
+msgid "Footer"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
+msgid "Footer text"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
+msgid "Slide number"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
+msgid "Do not show on first slide"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
+msgid "Apply to All"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
+msgid "Apply"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
+msgid "Page number"
+msgstr ""
+
+#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
+msgid "Include on page"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
+msgid "Slide Show"
+msgstr ""
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Range"
+msgid "Range"
 msgstr "வரம்பு/வீச்சு"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_ALL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "All ~slides"
+msgid "All ~slides"
 msgstr "அனைத்து ~காட்சிகள்"
 
+#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
+msgid "~From:"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
+msgid "~Custom Slide Show"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
+msgid "Type"
+msgstr ""
+
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "உள்ளிருப்பு"
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
+msgid "~Window"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
+msgid "A~uto"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
+msgid "Duration of pause"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
+msgid "Show ~logo"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Change slides ~manually"
+msgid "Change slides ~manually"
 msgstr "~Change slides manually"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MOUSEPOINTER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Mouse pointer ~visible"
+msgid "Mouse pointer ~visible"
 msgstr "சுட்டி ~புலனாகா முறைமையில்"
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
+msgid "Mouse pointer as ~pen"
+msgstr ""
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Navigator visible"
+msgid "~Navigator visible"
 msgstr "~உலாவி புலனாக்கம்"
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
+msgid "~Animations allowed"
+msgstr ""
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Change slides by clic~king on background"
+msgid "Change slides by clic~king on background"
 msgstr "~காட்சிகளை பின்னணியின் மூலம் மாற்றுக"
 
+#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
+msgid "Presentation always ~on top"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
+msgid "Multiple displays"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
+msgid "P~resentation display"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
+msgid "Display %1 (primary)"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
+msgid "Display %1"
+msgstr ""
+
+#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
+msgid "All displays"
+msgstr ""
+
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
-msgid  "Bullets and Numbering"
+msgid "Bullets and Numbering"
 msgstr "குண்டுகளும் எண்களும்..."
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
-msgid  "Bullets"
+msgid "Bullets"
 msgstr "குண்டுகள்"
 
+#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
+msgid "Numbering type"
+msgstr ""
+
+#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
+msgid "Graphics"
+msgstr ""
+
+#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
+msgid "Position"
+msgstr ""
+
+#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
+msgid "Customize"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
+msgid "Presentation Layout"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
+msgstr ""
+
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
+msgid "Area"
 msgstr "பகுதி"
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
+#, fuzzy
+msgid "Shadow"
+msgstr "நிழல்"
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
+msgid "Transparency"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+msgid "Font"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+msgid "Font Effects"
+msgstr ""
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Indents & Spacing"
+msgid "Indents & Spacing"
 msgstr "Indents & Spacing"
 
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
+msgid "Text"
+msgstr "உரை"
+
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
-msgid  "Bullets"
+msgid "Bullets"
 msgstr "குண்டுகள்"
 
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
+msgid "Numbering type"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
+msgid "Graphics"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
+msgid "Customize"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+msgid "Alignment"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+msgid "Asian Typography"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+msgid "Tabs"
+msgstr ""
+
+#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE_BACKGROUND.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
+msgid "Area"
+msgstr "பகுதி"
+
+#: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
+msgid "Duplicate"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
+msgid "Number of ~copies"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Values from Selection"
+msgstr ""
+
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "உள்ளிருப்பு"
 
 #: ui/dlg/copydlg.src#DLG_COPY.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
 #, fuzzy
-msgid  " degrees"
+msgid " degrees"
 msgstr " டிகிரிகள்"
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
+msgid "~Angle"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
+msgid "~X axis"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
+msgid "~Y axis"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
+msgid "~Width"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
+msgid "~Height"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
+msgid "Placement"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
+msgid "Enlargement"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
+msgid "Colors"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
+msgid "~Start"
+msgstr ""
+
+#: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
+msgid "~End"
+msgstr ""
+
+#: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
+msgid "Paragraph"
+msgstr ""
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Indents & Spacing"
+msgid "Indents & Spacing"
 msgstr "Indents & Spacing"
+
+#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+msgid "Alignment"
+msgstr ""
+
+#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+msgid "Asian Typography"
+msgstr ""
+
+#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+msgid "Tabs"
+msgstr ""
+
+#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr ""
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Character"
+msgid "Character"
 msgstr "எழுத்து"
+
+#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+msgid "Font"
+msgstr ""
+
+#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+msgid "Font Effects"
+msgstr ""
+
+#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
+msgid "Position"
+msgstr ""
+
+#: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr ""
+
+#: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
+msgid "Page Setup"
+msgstr ""
+
+#: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
+msgid "Page"
+msgstr ""
 
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Background"
+msgid "Background"
 msgstr "பின்னணி"
+
+#: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr ""
+
+#: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
+msgid "Action at mouse click"
+msgstr ""
+
+#: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
+msgid "~Browse..."
+msgstr ""
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Find"
+msgid "~Find"
 msgstr "~தேடுக"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.STR_PATHNAME.STRING.TEXT
-msgid  "Path Name"
+msgid "Path Name"
 msgstr "பாதைப் பெயர்"
+
+#: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
+msgid "Interaction"
+msgstr ""
+
+#: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
+msgid "Processing metafile:"
+msgstr ""
+
+#: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
+msgid "Broken down metaobjects:"
+msgstr ""
+
+#: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
+msgid "Inserted drawing objects:"
+msgstr ""
+
+#: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
+msgid "Break"
+msgstr ""
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
+msgid "Placeholders"
+msgstr ""
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
+msgid "Header"
+msgstr ""
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Date/time"
+msgid "Date/time"
 msgstr "Date/time"
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
+msgid "Footer"
+msgstr ""
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
+msgid "Page number"
+msgstr ""
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
+msgid "Slide number"
+msgstr ""
+
+#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
+msgid "Master Elements"
+msgstr ""
+
+#: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
+msgid "Scale"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
+msgid "Contents"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
+msgid "Display"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
+msgid "~Rulers visible"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Guides when moving"
+msgid "~Guides when moving"
 msgstr "நகரும் போது பொருத்து"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
+msgid "~All control points in Bézier editor"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
+msgid "~Contour of each individual object"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
+msgid "Other"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
+msgid "Text objects"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Allow quick editing"
+msgid "Allow quick editing"
 msgstr "விரைவுப் பதிப்பை அனுமதிக்க"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_PICKTHROUGH.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Only text area selectable"
+msgid "Only text area selectable"
 msgstr "தேர்ந்தெடுக்கப்பட வேண்டிய உரைப்பகுதி"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
+msgid "New document"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Start with ~wizard"
+msgid "Start with ~wizard"
 msgstr "Start with ~wizard"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
+msgid "Settings"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use background cache"
+msgid "Use background cache"
 msgstr "பின்னணி நினைவகத்தை பயன்படுத்துக"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_COPY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Copy when moving"
+msgid "Copy when moving"
 msgstr "நகர்த்தும் போது நகலெடுக்கப்படுகிறது"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MARKED_HIT_MOVES_ALWAYS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Objects always moveable"
+msgid "Objects always moveable"
 msgstr "எப்போதும் நகர்த்தக்கூடிய பொருள்"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_CROOK_NO_CONTORTION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Do not distort objects in curve"
+msgid "Do not distort objects in curve"
 msgstr "வளைகோட்டுப் பொருளை விலக்காதே"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
+msgid "Unit of ~measurement"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ta~b stops"
+msgid "Ta~b stops"
 msgstr "உ~ள் தள்ளல்கல்"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
+msgid "Start presentation"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Always with current page"
+msgid "Always with current page"
 msgstr "எப்போதும் நடப்பு பக்கத்துடன்"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
-msgid  "With Presenter Screen"
+msgid "With Presenter Screen"
 msgstr "காட்டுபவர் திரையுடன்"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
+msgid "Compatibility"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Us~e printer metrics for document formatting"
+msgid "Us~e printer metrics for document formatting"
 msgstr "ஆவண வடிவமைத்தலுக்கு அச்சுப்பொறி அளவை பயன்படுத்து"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_MERGE_PARA_DIST.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Add ~spacing between paragraphs and tables (in current document)"
+msgid "Add ~spacing between paragraphs and tables (in current document)"
 msgstr "Add ~spacing between paragraphs in the current document"
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
+msgid "Original"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
+msgid "Equivalent to"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
+msgid "~Drawing scale"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
+msgid "Page ~width"
+msgstr ""
+
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
+msgid "Page ~height"
+msgstr ""
+
+#: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
+msgid "Settings"
+msgstr ""
+
+#: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
+msgid "Increments"
+msgstr ""
+
+#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
+msgid "Cross-fade attributes"
+msgstr ""
+
+#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
+msgid "Same orientation"
+msgstr ""
+
+#: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
+msgid "Cross-fading"
+msgstr ""
+
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
+msgid "Pointer"
+msgstr ""
+
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
+msgid "First Slide"
+msgstr ""
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Previous Slide"
+msgid "Previous Slide"
 msgstr "முந்தைய காட்சிப்படம்"
+
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
+msgid "Next Slide"
+msgstr ""
+
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
+msgid "Last Slide"
+msgstr ""
+
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
+msgid "Drag Mode"
+msgstr ""
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Show Shapes"
+msgid "Show Shapes"
 msgstr "Show Shapes"
 
+#: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
+msgid "Documents"
+msgstr ""
+
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
-msgid  "Page Tree"
+msgid "Page Tree"
 msgstr "பக்கம் மரம்"
+
+#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
+msgid "Insert Layer"
+msgstr ""
+
+#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
+msgid "~Name"
+msgstr ""
+
+#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
+msgid "~Title"
+msgstr ""
+
+#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "~Description"
+msgstr ""
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Visible"
+msgid "~Visible"
 msgstr "தெரியும்"
+
+#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
+msgid "~Printable"
+msgstr ""
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Locked"
+msgid "~Locked"
 msgstr "~பூட்டப்பட்டது"
 
+#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
+msgid "Position"
+msgstr ""
+
+#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
+msgid "~Before"
+msgstr ""
+
+#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
+msgid "A~fter"
+msgstr ""
+
+#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
+msgid "Insert Slides"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
+msgid "Animation"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
+msgid "First Image"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Backwards"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Stop"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Play"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Last Image"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
+msgid "Image Number"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
+msgid "Duration"
+msgstr ""
+
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1"
+msgid "1"
 msgstr "1"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "2"
+msgid "2"
 msgstr "2"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "3"
+msgid "3"
 msgstr "3"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "4"
+msgid "4"
 msgstr "4"
 
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
+msgid "5"
+msgstr ""
+
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "6"
+msgid "6"
 msgstr "6"
 
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
+msgid "7"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
+msgid "8"
+msgstr ""
+
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "9"
+msgid "9"
 msgstr "9"
 
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
+msgid "10"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
+msgid "12"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
+msgid "15"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
+msgid "20"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
+msgid "25"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
+msgid "50"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
+msgid "100"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
+msgid "500"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
+msgid "1000"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
+msgid "Max."
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
+msgid "Loop Count"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Apply Object"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Apply Objects Individually"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Delete Current Image"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Delete All Images"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
+msgid "Number"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
+msgid "Image"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
+msgid "Group object"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
+msgid "Bitmap object"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
+msgid "Alignment"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Top Left"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Left"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Bottom Left"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Top"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Centered"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Bottom"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Top Right"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Right"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+msgid "Bottom Right"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
+msgid "Create"
+msgstr ""
+
+#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
+msgid "Animation group"
+msgstr ""
+
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "முன்காட்சி"
 
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
+msgid "Options"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
+msgid "Contents"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
+msgid "~Drawing"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
+msgid "~Notes"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
+msgid "Hando~uts"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
+msgid "Out~line"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
+msgid "Quality"
+msgstr ""
+
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
-msgid  "Default"
-msgstr "Default"
+#, fuzzy
+msgid "Default"
+msgstr "முன்னிருப்பு"
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
+msgid "Gra~yscale"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
+msgid "Black & ~white"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
+msgid "Print"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
+msgid "~Page name"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
+msgid "D~ate"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
+msgid "Ti~me"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
+msgid "H~idden pages"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
+msgid "Page options"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
+msgid "Default"
+msgstr "முன்னிருப்பு"
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
+msgid "~Fit to page"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
+msgid "~Tile pages"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
+msgid "B~rochure"
+msgstr ""
+
+#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
+msgid "Fr~ont"
+msgstr ""
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Ba~ck"
+msgid "Ba~ck"
 msgstr "பின்~பக்கம்"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAPERBIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Paper tray from printer s~ettings"
+msgid "Paper tray from printer s~ettings"
 msgstr "அச்சுப்பொறி ~அமைவுகள் காகிதத் தட்டிலிருந்து"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Reply"
+msgid "~Reply"
 msgstr "~Reply"
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
+msgid "~Bold"
+msgstr ""
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
+msgid "~Italic"
+msgstr ""
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
+msgid "~Underline"
+msgstr ""
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Strikethrough"
+msgid "~Strikethrough"
 msgstr "அடித்தல்"
 
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MENUITEM.TEXT
+msgid "~Copy"
+msgstr ""
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MENUITEM.TEXT
+msgid "~Paste"
+msgstr ""
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
+msgid "~Delete Comment"
+msgstr ""
+
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
-msgid  "Delete All Comments b~y %1"
+msgid "Delete All Comments b~y %1"
 msgstr "%1 இன் எல்லா கருத்துகளையும் அழி"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MENUITEM.TEXT
-msgid  "Delete ~All Comments"
+msgid "Delete ~All Comments"
 msgstr "எல்லா கருத்துகளையும் அழி"
 
+#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MENUITEM.TEXT
+#, fuzzy
+msgid "~Reply"
+msgstr "~Reply"
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
+msgid "~Delete Comment"
+msgstr ""
+
 #: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
-msgid  "Delete All Comments ~by %1"
+msgid "Delete All Comments ~by %1"
 msgstr "%1 இன் எல்லா கருத்துகளையும் அழி"
+
+#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALL_POSTIT.MENUITEM.TEXT
+msgid "Delete ~All Comments"
+msgstr "எல்லா கருத்துகளையும் அழி"
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
+msgid "Today,"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.STRING.TEXT
+msgid "Yesterday,"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.STRING.TEXT
+msgid "(no author)"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.STRING.TEXT
+msgid "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.STRING.TEXT
+msgid "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.STRING.TEXT
+msgid "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.STRING.TEXT
+msgid "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.STRING.TEXT
+msgid "Insert Comment"
+msgstr ""
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "Delete Comment(s)"
+msgid "Delete Comment(s)"
 msgstr "கருத்துகள் அழி"
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.STRING.TEXT
+msgid "Move Comment"
+msgstr ""
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.STRING.TEXT
+msgid "Edit Comment"
+msgstr ""
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.STRING.TEXT
 #, fuzzy
-msgid  "Reply to Comment"
+msgid "Reply to Comment"
 msgstr "கருத்துக்கு பதிலளி"
+
+#: ui/annotations/annotations.src#STR_ANNOTATION_REPLY.STRING.TEXT
+msgid "Reply to %1"
+msgstr ""
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
 #, fuzzy
-msgid  "Drawing View"
-msgstr "வரையும் பார்வை"
+msgid "Drawing View"
+msgstr "ஓவியக் காட்சி"
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
+msgid "This is where you create and edit drawings."
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.STRING.TEXT
+#, fuzzy
+msgid "Drawing View"
+msgstr "ஓவியக் காட்சி"
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
+msgid "This is where you create and edit slides."
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
+#, fuzzy
+msgid "Outline View"
+msgstr "வெளிக்கோட்டு காட்சி"
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
+msgid "This is where you enter or edit text in list form."
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
+msgid "Slides View"
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
+msgid "This is where you sort slides."
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
+msgid "Notes View"
+msgstr ""
+
+#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
+msgid "This is where you enter and view notes."
+msgstr ""
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
 #, fuzzy
-msgid  "Handout View"
+msgid "Handout View"
 msgstr "கைப்பிரதி காட்சி"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.STRING.TEXT
 #, fuzzy
-msgid  "This is where you decide on the layout for handouts."
+msgid "This is where you decide on the layout for handouts."
 msgstr "கைப்பிரதிகளின் உருவரையை இந்த இடத்தில் தான் முடிவு செய்ய வேண்டும்."
 
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
+msgid "~Next"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
+msgid "~Previous"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
+msgid "~Go to Slide"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
+msgid "~First Slide"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
+msgid "~Last Slide"
+msgstr ""
+
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
-msgid  "Mouse pointer as ~Pen"
+msgid "Mouse pointer as ~Pen"
 msgstr "சுட்டி காட்டும் பேனா"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.MENUITEM.TEXT
-msgid  "~Pen Width"
+msgid "~Pen Width"
 msgstr "பேனா அகலம்"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THIN.MENUITEM.TEXT
-msgid  "~Very thin"
+msgid "~Very thin"
 msgstr "மிக மெலிந்த"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THIN.MENUITEM.TEXT
-msgid  "~Thin"
+msgid "~Thin"
 msgstr "மெலிந்த"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_NORMAL.MENUITEM.TEXT
-msgid  "~Normal"
+msgid "~Normal"
 msgstr "சாதாரண"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THICK.MENUITEM.TEXT
-msgid  "~Thick"
+msgid "~Thick"
 msgstr "தடிமன்"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THICK.MENUITEM.TEXT
-msgid  "~Very Thick"
+msgid "~Very Thick"
 msgstr "அதிக தடிமன்"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_COLOR_PEN.MENUITEM.TEXT
-msgid  "~Change pen Color..."
+msgid "~Change pen Color..."
 msgstr "பேனா நிறத்தை மாற்று..."
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ERASE_ALLINK.MENUITEM.TEXT
-msgid  "~Erase all ink on Slide"
+msgid "~Erase all ink on Slide"
 msgstr "சறுக்கில் உள்ள எல்லா மையையும் அழி"
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
+msgid "~Screen"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
+msgid "~Black"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
+msgid "~White"
+msgstr ""
+
+#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
+msgid "~End Show"
+msgstr ""
+
+#: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
+msgid "~Graphics"
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
+msgid "~Table..."
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+msgid "~Cell"
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
+msgid "~Merge"
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
+msgid "~Split..."
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
+#, fuzzy
+msgid "~Top"
+msgstr "மேல்"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
+#, fuzzy
+msgid "C~enter"
+msgstr "நடு "
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
+#, fuzzy
+msgid "~Bottom"
+msgstr "கீழ்"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Row"
+msgid "~Row"
 msgstr "நிரை"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
-msgid  "Space ~Equally"
-msgstr "சமமாக இடைவெளி"
+#, fuzzy
+msgid "Space ~Equally"
+msgstr "சமமாக இடைவெளியிடு"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
+msgid "~Select"
+msgstr "தேர்வு செய்"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
+#, fuzzy
+msgid "~Insert..."
+msgstr "நுழை..."
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "அழி"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+msgid "Colu~mn"
+msgstr ""
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MENUITEM.TEXT
+#, fuzzy
+msgid "Space ~Equally"
+msgstr "சமமாக இடைவெளியிடு"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MENUITEM.TEXT
+msgid "~Select"
+msgstr "தேர்வு செய்"
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MENUITEM.TEXT
+#, fuzzy
+msgid "~Insert..."
+msgstr "நுழை..."
+
+#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MENUITEM.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "அழி"
+
+#: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
+msgid "Drawings Toolbar"
+msgstr ""
+
+#: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
+msgid "Draw toolbar/Graphics"
+msgstr ""
+
+#: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
+msgid "Slide Bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
+msgid "Outline Bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
+msgid "Draw Object Bar"
+msgstr ""
 
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Draw object bar/Graphics"
+msgid "Draw object bar/Graphics"
 msgstr "வரை பொருட் பட்டை/வரைவியல்"
 
 #: ui/app/strings.src#STR_DRAW_OPTIONS_TOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Options Bar"
+msgid "Options Bar"
 msgstr "விருப்பப் பட்டை"
 
 #: ui/app/strings.src#STR_GRAPHIC_OPTIONS_TOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Options bar/Graphics"
+msgid "Options bar/Graphics"
 msgstr "விருப்பப் பட்டை/வரைவியல்"
 
 #: ui/app/strings.src#STR_DRAW_COMMONTASK_TOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "வழங்கல்"
 
+#: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
+msgid "Slide Object Bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
+msgid "Bézier object bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
+msgid "Glue Point Object Bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
+msgid "Text Object Bar"
+msgstr ""
+
+#: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
+msgid "Text Object Bar/Draw"
+msgstr ""
+
+#: ui/app/strings.src#STR_NULL.STRING.TEXT
+msgid "None"
+msgstr ""
+
+#: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
+msgid "Insert Slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
+msgid "Insert Layer"
+msgstr ""
+
+#: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
+msgid "Modify Layer"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
+msgid "Slide parameter"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
+msgid "Move slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
+msgid "Cut"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
+msgid "Replace"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
+msgid "Drag and Drop"
+msgstr ""
+
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
-msgid  "Insert picture"
+msgid "Insert picture"
 msgstr "படத்தைச் சேர்"
 
+#: ui/app/strings.src#STR_SLOW.STRING.TEXT
+msgid "Slow"
+msgstr ""
+
+#: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
+msgid "Medium"
+msgstr ""
+
+#: ui/app/strings.src#STR_FAST.STRING.TEXT
+msgid "Fast"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
+msgid "Close Polygon"
+msgstr ""
+
+#: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
+msgid "Slide Sorter"
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
+msgid "Normal"
+msgstr ""
+
+#: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
+msgid "Outline"
+msgstr ""
+
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
-msgid  "Notes"
+msgid "Notes"
 msgstr "குறிப்புகள்"
 
 #: ui/app/strings.src#STR_HANDOUT_MODE.STRING.TEXT
 #, fuzzy
-msgid  "Handout"
+msgid "Handout"
 msgstr "Handout"
 
+#: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
+msgid "Blank Slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
+msgid "Title Only"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
+msgid "Centered Text"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
+msgid "Title Slide"
+msgstr ""
+
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
-msgid  "Title, Content"
+msgid "Title, Content"
 msgstr "தலைப்பு, உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT.STRING.TEXT
-msgid  "Title and 2 Content"
+msgid "Title and 2 Content"
 msgstr "தலைப்பு மற்றும் 2 உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_2CONTENT.STRING.TEXT
-msgid  "Title, Content and 2 Content"
+msgid "Title, Content and 2 Content"
 msgstr "தலைப்பு, உள்ளடக்கம், 2 உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_CONTENT.STRING.TEXT
-msgid  "Title, 2 Content and Content"
+msgid "Title, 2 Content and Content"
 msgstr "தலைப்பு, 2 உள்ளடக்கம், உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_2CONTENT.STRING.TEXT
-msgid  "Title, Content over 2 Content"
+msgid "Title, Content over 2 Content"
 msgstr "தலைப்பு, உள்ளடக்கம், 2க்கு மேல் உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT.STRING.TEXT
-msgid  "Title, 2 Content over Content"
+msgid "Title, 2 Content over Content"
 msgstr "தலைப்பு, 2 உள்ளடக்கம், மேல் உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_CONTENT.STRING.TEXT
-msgid  "Title, Content over Content"
+msgid "Title, Content over Content"
 msgstr "தலைப்பு, உள்ளடக்கம், மேல் உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_4CONTENT.STRING.TEXT
-msgid  "Title, 4 Content"
+msgid "Title, 4 Content"
 msgstr "தலைப்பு, 4 உள்ளடக்கம்"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_6CONTENT.STRING.TEXT
-msgid  "Title, 6 Content"
+msgid "Title, 6 Content"
 msgstr "தலைப்பு, 6 உள்ளடக்கம்"
 
+#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
+msgid "Title, Vertical Text"
+msgstr ""
+
+#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
+msgid "Title, Vertical Text, Clipart"
+msgstr ""
+
+#: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
+msgid "Vertical Title, Text, Chart"
+msgstr ""
+
+#: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
+msgid "Vertical Title, Vertical Text"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
+msgid "One Slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
+msgid "Two Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
+msgid "Three Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
+msgid "Four Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
+msgid "Six Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
+msgid "Nine Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_AUTOLAYOUT_NOTES.STRING.TEXT
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
+msgid "transform"
+msgstr ""
+
+#: ui/app/strings.src#STR_LINEEND.STRING.TEXT
+msgid "Line Ends"
+msgstr ""
+
+#: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
+msgid "Please enter a name for the new arrowhead:"
+msgstr ""
+
+#: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
+msgid "The name chosen already exists. \nPlease enter another name."
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
+msgid "Animation parameters"
+msgstr ""
+
+#: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
+msgid "Web Page"
+msgstr ""
+
+#: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
+msgid "Export"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
+msgid "Duplicate"
+msgstr ""
+
+#: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
+msgid "Name Object"
+msgstr ""
+
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "Name"
 
 #: ui/app/strings.src#STR_WARN_PAGE_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The slide name already exists or is invalid. Please enter another name."
+msgid "The slide name already exists or is invalid. Please enter another name."
 msgstr "படக்காட்சி பெயர் ஏற்கனவே உள்ளது அல்லது தவறானது. வேறு பெயரளிக்கவும்."
+
+#: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
+msgid "Edit Snap Line"
+msgstr ""
+
+#: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
+msgid "Edit Snap Point"
+msgstr ""
+
+#: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
+msgid "Edit Snap Line..."
+msgstr ""
 
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
 #, fuzzy
-msgid  "Edit Snap Point..."
+msgid "Edit Snap Point..."
 msgstr "காட்சிப்புள்ளியை பதிப்பிக்க.."
 
+#: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
+msgid "Delete Snap Line"
+msgstr ""
+
+#: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
+msgid "Delete Snap Point"
+msgstr ""
+
+#: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
+msgid "StarImpress 4.0"
+msgstr ""
+
+#: ui/app/strings.src#STR_LAYER.STRING.TEXT
+msgid "Layer"
+msgstr ""
+
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
-msgid  "Delete slides"
+msgid "Delete slides"
 msgstr "Delete slides"
+
+#: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
+msgid "Insert slides"
+msgstr ""
 
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
 #, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "\"$\"மட்டத்தை கண்டிப்பாக அழிக்கவேண்டுமா?\nகுறிப்பு:இம்மட்டத்திலுள்ள அனைத்து கருவிகளும் அழிக்கப்படும்!"
+msgid "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr ""
+"\"$\"மட்டத்தை கண்டிப்பாக அழிக்கவேண்டுமா?\n"
+"குறிப்பு:இம்மட்டத்திலுள்ள அனைத்து கருவிகளும் அழிக்கப்படும்!"
+
+#: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
+msgid "Do you really want to delete all images?"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
+msgid "Modify title and outline"
+msgstr ""
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
-msgid  "Sound"
+#, fuzzy
+msgid "Sound"
 msgstr "Sound"
+
+#: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
+msgid "MIDI"
+msgstr ""
+
+#: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
+msgid "Sun/NeXT Audio"
+msgstr ""
+
+#: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
+msgid "Creative Labs Audio"
+msgstr ""
+
+#: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
+msgid "Apple/SGI Audio"
+msgstr ""
+
+#: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
+msgid "Amiga SVX Audio"
+msgstr ""
+
+#: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
+#, fuzzy
+msgid "Slide"
+msgstr "காட்சி"
+
+#: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
+msgid "All files (*.*)"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
+msgid "Insert text frame"
+msgstr ""
+
+#: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
+msgid "This function cannot be run \nwith the selected objects."
+msgstr ""
+
+#: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
+msgid "Insert File"
+msgstr ""
+
+#: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
+msgid "The file could not be loaded!"
+msgstr ""
+
+#: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
+msgid "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
+msgstr ""
+
+#: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
+msgid "Create slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
+msgid "Modify page format"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
+msgid "Modify page margins"
+msgstr ""
+
+#: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
+msgid "~Edit"
+msgstr ""
 
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "செயல் படுத்த முடியாத செயல்களை இச்செயல் அழிக்கிறது ஆவணத்தின் முந்தைய மாற்றங்கள் அனுமதியில் உள்ளது,ஆனால் அழிக்க முடியாது"
+msgid "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
+msgstr ""
+"செயல் படுத்த முடியாத செயல்களை இச்செயல் அழிக்கிறது ஆவணத்தின் முந்தைய "
+"மாற்றங்கள் அனுமதியில் உள்ளது,ஆனால் அழிக்க முடியாது"
+
+#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
+msgid "~Do not show this warning again"
+msgstr ""
+
+#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: ui/app/strings.src#STR_DELETE_PAGES.STRING.TEXT
+msgid "Delete slides"
+msgstr "Delete slides"
+
+#: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
+msgid "The document format could not be set on the specified printer."
+msgstr ""
+
+#: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
+msgid "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
+
+#: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
+msgid "Graphics file cannot be opened"
+msgstr ""
+
+#: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
+msgid "Graphics file cannot be read"
+msgstr ""
+
+#: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
+msgid "Unknown graphics format"
+msgstr ""
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
 #, fuzzy
-msgid  "This graphics file version is not supported"
+msgid "This graphics file version is not supported"
 msgstr "வரைகலை கோப்பு பதிப்பு துணைபுரியவில்லை"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FILTERERROR.STRING.TEXT
 #, fuzzy
-msgid  "Graphics filter not found"
+msgid "Graphics filter not found"
 msgstr "Graphics filter not found"
+
+#: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
+msgid "Not enough memory to import graphics"
+msgstr ""
+
+#: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
+msgid "Objects"
+msgstr ""
 
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
 #, fuzzy
-msgid  "The document search is finished."
-msgstr "தேர்ந்தெடுக்கப்பட்ட ஆவணத்துக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு நிறைவடைந்தது."
+msgid "The document search is finished."
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட ஆவணத்துக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு "
+"நிறைவடைந்தது."
 
 #: ui/app/strings.src#STR_END_SPELLING.STRING.TEXT
 #, fuzzy
-msgid  "Spellcheck of entire document has been completed."
-msgstr "தேர்ந்தெடுக்கப்பட்ட ஆவணத்துக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு நிறைவடைந்தது."
+msgid "Spellcheck of entire document has been completed."
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட ஆவணத்துக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு "
+"நிறைவடைந்தது."
 
 #: ui/app/strings.src#STR_END_SPELLING_OBJ.STRING.TEXT
 #, fuzzy
-msgid  "The spellcheck for the selected objects has been completed."
-msgstr "தேர்ந்தெடுக்கப்பட்ட பொருட்களுக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு நிறைவடைந்தது."
+msgid "The spellcheck for the selected objects has been completed."
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட பொருட்களுக்கான எழுத்துக்கூட்டமைப்பு சரிபார்ப்பு "
+"நிறைவடைந்தது."
+
+#: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
+msgid "The selected language is not available."
+msgstr ""
+
+#: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
+msgid "Convert selected object to curve?"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
+msgid "Modify presentation object '$'"
+msgstr ""
 
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Slide layout"
+msgid "Slide layout"
 msgstr "Slide layout"
+
+#: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
+msgid "Printing..."
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
+msgid "Insert file"
+msgstr ""
+
+#: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
+msgid "Should the graphics be scaled to the new slide format?"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
+msgid "Insert special character"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
+msgid "Apply presentation layout"
+msgstr ""
+
+#: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
+msgid "Search key not found."
+msgstr ""
+
+#: ui/app/strings.src#STR_PLAY.STRING.TEXT
+msgid "~Play"
+msgstr ""
+
+#: ui/app/strings.src#STR_STOP.STRING.TEXT
+msgid "Sto~p"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
+msgid "Original Size"
+msgstr ""
 
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
 #, fuzzy
-msgid  " (Drawing)"
+msgid " (Drawing)"
 msgstr " (ஓவியம்)"
 
 #: ui/app/strings.src#STR_PRINT_NOTES.STRING.TEXT
 #, fuzzy
-msgid  " (Notes)"
+msgid " (Notes)"
 msgstr " (குறிப்புரை)"
 
 #: ui/app/strings.src#STR_PRINT_HANDOUT.STRING.TEXT
 #, fuzzy
-msgid  " (Handout)"
+msgid " (Handout)"
 msgstr " (கையேடு)"
 
 #: ui/app/strings.src#STR_PRINT_OUTLINE.STRING.TEXT
 #, fuzzy
-msgid  " (Outline)"
+msgid " (Outline)"
 msgstr " (வெளிக்கோடு)"
+
+#: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
+msgid "The specified scale is invalid.\nDo you want to enter a new one?"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
+msgid "No action"
+msgstr ""
 
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
 #, fuzzy
-msgid  "Go to previous slide"
+msgid "Go to previous slide"
 msgstr "முந்தைய படக்காட்சிக்கு செல்க"
+
+#: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
+msgid "Go to next slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
+msgid "Go to first slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
+msgid "Go to last slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
+msgid "Go to page or object"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
+msgid "Go to document"
+msgstr ""
 
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
 #, fuzzy
-msgid  "Fade object"
+msgid "Fade object"
 msgstr "திரைவிரிக்கும் விஷயம்/பொருள்"
+
+#: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
+msgid "Hide object"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
+msgid "Play sound"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
+msgid "Start object action"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
+msgid "Run program"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
+msgid "Run macro"
+msgstr ""
+
+#: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
+msgid "Exit presentation"
+msgstr ""
 
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
 #, fuzzy
-msgid  "Target"
+msgid "Target"
 msgstr "இலக்கு"
+
+#: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
+msgid "Act~ion"
+msgstr ""
+
+#: ui/app/strings.src#STR_EFFECTDLG_SOUND.STRING.TEXT
+#, fuzzy
+msgid "Sound"
+msgstr "Sound"
+
+#: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
+msgid "Slide / Object"
+msgstr ""
+
+#: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
+#, fuzzy
+msgid "Document"
+msgstr "ஆவணம்"
+
+#: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
+msgid "Program"
+msgstr ""
+
+#: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
+msgid "Macro"
+msgstr ""
+
+#: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
+msgid "No Effect"
+msgstr ""
+
+#: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
+msgid "Insert Text"
+msgstr ""
+
+#: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
+msgid " Slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
+msgid " Slides"
+msgstr ""
 
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
 #, fuzzy
-msgid  "Load Slide Design"
+msgid "Load Slide Design"
 msgstr "படக்காட்சி வடிவத்தை ஏற்றுக"
+
+#: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
+msgid "Insert as hyperlink"
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
+msgid "Insert as copy"
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
+msgid "Insert as link"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
+msgid "Smart"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
+msgid "Left"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
+msgid "Right"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
+msgid "Top"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
+msgid "Bottom"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
+msgid "Top Left?"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
+msgid "Bottom Left?"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
+msgid "Top Right?"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
+msgid "Bottom Right?"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
+msgid "Horizontal"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
+msgid "Vertical"
+msgstr ""
+
+#: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
+msgid "All?"
+msgstr ""
 
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
 #, fuzzy
-msgid  "This action can't be run in the live mode."
+msgid "This action can't be run in the live mode."
 msgstr "இயக்குமுறைமையில் இல்லை."
 
+#: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
+msgid "Back"
+msgstr ""
+
+#: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
+msgid "Continue"
+msgstr ""
+
+#: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
+msgid "Overview"
+msgstr ""
+
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
-msgid  "Color Replacer"
+msgid "Color Replacer"
 msgstr "நிறம் மாற்றுபவர்"
+
+#: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
+msgid "Cross-fading"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
+msgid "Color resolution"
+msgstr ""
 
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Expand Slide"
+msgid "Expand Slide"
 msgstr "கோடுகளை விரி"
+
+#: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
+msgid "Table of Contents Slide"
+msgstr ""
+
+#: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
+msgid "No SANE source is available at the moment."
+msgstr ""
+
+#: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
+msgid "At present, no TWAIN source is available."
+msgstr ""
+
+#: ui/app/strings.src#STR_FIX.STRING.TEXT
+msgid "Fixed"
+msgstr ""
+
+#: ui/app/strings.src#STR_VAR.STRING.TEXT
+msgid "Variable"
+msgstr ""
+
+#: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
+msgid "Standard"
+msgstr ""
+
+#: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
+msgid "Standard (short)"
+msgstr ""
+
+#: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
+msgid "Standard (long)"
+msgstr ""
+
+#: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
+msgid "File name"
+msgstr ""
+
+#: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
+msgid "Path/File name"
+msgstr ""
+
+#: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
+msgid "Path"
+msgstr ""
+
+#: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
+msgid "File name without extension"
+msgstr ""
+
+#: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
+msgid "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
+msgstr ""
+
+#: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
+msgid "New Custom Slide Show"
+msgstr ""
+
+#: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
+msgid "Copy "
+msgstr ""
+
+#: ui/app/strings.src#STR_IMPRESS_DOCUMENT.STRING.TEXT
+#, fuzzy
+msgid "Presentation"
+msgstr "வழங்கல்"
+
+#: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION Presentation"
+msgstr ""
+
+#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
+msgid "Drawing"
+msgstr ""
+
+#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION Drawing"
+msgstr ""
 
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
 #, fuzzy
-msgid  "Ungroup Metafile(s)..."
+msgid "Ungroup Metafile(s)..."
 msgstr "மீகோப்புகளை பிரிக்க..."
 
 #: ui/app/strings.src#STR_BREAK_FAIL.STRING.TEXT
 #, fuzzy
-msgid  "It was not possible to ungroup all drawing objects."
+msgid "It was not possible to ungroup all drawing objects."
 msgstr "அனைத்து வரைபொருட்களைச் சேர்க்கவியலாது."
+
+#: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
+msgid "A design already exists with this name.\nDo you want to replace it?"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
+msgid "Text"
+msgstr "உரை"
+
+#: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
+msgid "Hyperlink"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
+msgid "Visited link"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
+msgid "Active link"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_NOTES.STRING.TEXT
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
+msgid "Table of contents"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
+msgid "Click here to start"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
+msgid "Author"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
+msgid "E-mail"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
+msgid "Homepage"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
+msgid "Further information"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
+msgid "Download presentation"
+msgstr ""
 
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
 #, fuzzy
-msgid  "Unfortunately your browser does not support floating frames."
+msgid "Unfortunately your browser does not support floating frames."
 msgstr "மிதக்கும் சட்டங்களை இந்த உலாவி பயன்படுத்தவியலாது."
+
+#: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
+msgid "First page"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
+msgid "Last page"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_SETTEXT.STRING.TEXT
+msgid "Text"
+msgstr "உரை"
+
+#: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
+msgid "Graphics"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
+msgid "With contents"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
+msgid "Without contents"
+msgstr ""
+
+#: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
+msgid "To given page"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
+msgid "Convert bitmap to polygon"
+msgstr ""
+
+#: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
+msgid "Click to exit presentation..."
+msgstr ""
+
+#: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
+msgid "Pause..."
+msgstr ""
+
+#: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
+msgid "<Original>"
+msgstr ""
+
+#: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
+msgid "Loading..."
+msgstr ""
+
+#: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
+msgid "Graphics Object Bar"
+msgstr ""
 
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
 #, fuzzy
-msgid  "Apply 3D favorite"
+msgid "Apply 3D favorite"
 msgstr "3D பயன்படுத்துக"
 
 #: ui/app/strings.src#STR_UNDO_GRAFFILTER.STRING.TEXT
 #, fuzzy
-msgid  "Graphics filter"
+msgid "Graphics filter"
 msgstr "Graphics filter"
 
 #: ui/app/strings.src#STR_WARNING_NOSOUNDFILE.STRING.TEXT
 #, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr " %\n என்ற கோப்பு உரிய ஓசை கோப்பு அல்ல"
+msgid "The file %\nis not a valid sound file !"
+msgstr ""
+" %\n"
+" என்ற கோப்பு உரிய ஓசை கோப்பு அல்ல"
+
+#: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
+msgid "Convert to metafile"
+msgstr ""
+
+#: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
+msgid "Convert to bitmap"
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
+msgid "Cannot create the file $(URL1)."
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
+msgid "Could not open the file $(URL1)."
+msgstr ""
+
+#: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
+msgid "The file $(URL1) could not be copied to $(URL2)"
+msgstr ""
+
+#: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
+msgid "Page Settings"
+msgstr ""
+
+#: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
+msgid "Background settings for all pages?"
+msgstr ""
+
+#: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
+msgid "Rename Slide"
+msgstr ""
 
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
-msgid  "Save as Picture"
+msgid "Save as Picture"
 msgstr "படமாகச் சேமி"
+
+#: ui/app/strings.src#STR_DESC_RENAMESLIDE.STRING.TEXT
+msgid "Name"
+msgstr "Name"
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
+msgid "Title Area for AutoLayouts"
+msgstr ""
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
+msgid "Object Area for AutoLayouts"
+msgstr ""
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
+msgid "Footer Area"
+msgstr ""
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Header Area"
+msgid "Header Area"
 msgstr "Header Area"
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
+msgid "Date Area"
+msgstr ""
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
+msgid "Slide Number Area"
+msgstr ""
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
+msgid "Page Number Area"
+msgstr ""
+
+#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
+msgid "<header>"
+msgstr ""
+
+#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
+msgid "<footer>"
+msgstr ""
+
+#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
+msgid "<date/time>"
+msgstr ""
+
+#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
+msgid "<number>"
+msgstr ""
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "<count>"
+msgid "<count>"
 msgstr "<count>"
+
+#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
+msgid "Notes Area"
+msgstr ""
 
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Hangul/Hanja Conversion"
+msgid "Hangul/Hanja Conversion"
 msgstr "ஹங்குல்/ஹன்ஜா மாற்றுதல்"
+
+#: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
+msgid "Slides"
+msgstr ""
+
+#: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
+msgid "Pages"
+msgstr ""
+
+#: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
+msgid "Tasks"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
+msgid "Master Pages"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
+msgid "View"
+msgstr ""
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
 #, fuzzy
-msgid  "~Dock Task Pane"
+msgid "~Dock Task Pane"
 msgstr "~Dock Task Pane"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_UNLOCK.STRING.TEXT
 #, fuzzy
-msgid  "~Undock Task Pane"
+msgid "~Undock Task Pane"
 msgstr "~Undock Task Pane"
+
+#: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
+msgid "Used in This Presentation"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
+msgid "Recently Used"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
+msgid "Available for Use"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
+msgid "Preview not available"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
+msgid "Preparing preview"
+msgstr ""
+
+#: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
+msgid "Layouts"
+msgstr ""
+
+#: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
+msgid "Graphics Styles"
+msgstr ""
+
+#: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
+msgid "Cell Styles"
+msgstr ""
+
+#: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
+msgid "Table Designs"
+msgstr ""
 
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
 #, fuzzy
-msgid  "Custom Animation"
-msgstr "Custom Animation..."
+msgid "Custom Animation"
+msgstr "Custom Animation"
 
 #: ui/app/strings.src#STR_SLIDE_TRANSITION_PANE.STRING.TEXT
 #, fuzzy
-msgid  "Slide Transition"
+msgid "Slide Transition"
 msgstr "படமாற்றம்"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHOW_NAMED_SHAPES.STRING.TEXT
 #, fuzzy
-msgid  "Named shapes"
+msgid "Named shapes"
 msgstr "Named shapes"
 
+#: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
+msgid "All shapes"
+msgstr ""
+
+#: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
+msgid "Shape %1"
+msgstr ""
+
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
-msgid  "Set Background Picture for Slide ..."
-msgstr "பின்னணிப்படத்தை காட்சிவில்லையாக அமை..."
+msgid "Set Background Picture for Slide ..."
+msgstr "காட்சிவில்லைக்கு பின்னணிப் படத்தைச் சேர்.."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
-msgid  "Select a template from which to import page designs."
+msgid "Select a template from which to import page designs."
 msgstr "பக்க படிவமைப்பை எடுக்க முன் வடிவு ஒன்றைத் தேர்ந்தெடுங்கள்"
 
+#: ui/app/strings.src#RID_ANNOTATIONS_START.STRING.TEXT
+msgid "Comments"
+msgstr ""
+
 #: ui/app/strings.src#STR_RESET_LAYOUT.STRING.TEXT
-msgid  "Reset Slide Layout"
+msgid "Reset Slide Layout"
 msgstr "வழுக்கு படிவமைப்பு மீளமை"
 
+#: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
+msgid "Insert Table"
+msgstr ""
+
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
-msgid  "Insert Chart"
+msgid "Insert Chart"
 msgstr "படிவத்தைச் சேர்"
 
 #: ui/app/strings.src#STR_INSERT_PICTURE.STRING.TEXT
-msgid  "Insert Picture"
+msgid "Insert Picture"
 msgstr "படத்தைச் சேர்"
 
 #: ui/app/strings.src#STR_INSERT_MOVIE.STRING.TEXT
-msgid  "Insert Movie"
+msgid "Insert Movie"
 msgstr "திரைப்படத்தைச் சேர்"
 
+#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
+msgid "Graphics Styles"
+msgstr ""
+
+#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
+msgid "Presentation Styles"
+msgstr ""
+
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
-msgid  "Applied Styles"
+msgid "Applied Styles"
 msgstr "பயன்படுத்தப்பட்ட விதங்கள்"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USERDEF.STRING.TEXT
-msgid  "Custom Styles"
+msgid "Custom Styles"
 msgstr "வழக்கமான விதங்கள்"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.STRING.TEXT
-msgid  "All Styles"
+msgid "All Styles"
 msgstr "எல்லா விதங்கள்"
+
+#: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
+msgid "~Distribution..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
+msgid "~Drawing View"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
+msgid "~Outline View"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
+msgid "~Slide Sorter"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
+msgid "Slide Sho~w"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
+msgid "~Insert Snap Point/Line..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
+msgid "~Edit..."
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "அழி"
 
 #: ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Slide ~Layout"
+msgid "Slide ~Layout"
 msgstr "Slide ~Layout"
 
+#: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
+msgid "~Page Setup..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
+msgid "~New Slide"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
+msgid "~New Master"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
+msgid "~New Page"
+msgstr ""
+
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
-msgid  "Set Background Picture for Slide ..."
+msgid "Set Background Picture for Slide ..."
 msgstr "காட்சிவில்லைக்கு பின்னணிப் படத்தைச் சேர்.."
+
+#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
+msgid "Display Background of Master"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
+msgid "Display Objects from Master"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
+msgid "Pag~e"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
+msgid "Slid~e"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
+msgid "~Rename Layer..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
+msgid "D~elete Slide"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
+msgid "D~elete Master"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
+msgid "D~elete Page"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
+msgid "~Rename Slide"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
+msgid "~Rename Master"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
+msgid "~Rename Page"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
+msgid "L~ine..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
+msgid "~Area..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
+msgid "~Text..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
+msgid "~Connector..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
+msgid "Reset ~Routing"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
+msgid "Dimen~sions..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
+msgid "Position and Si~ze..."
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Edit ~Points"
+msgid "Edit ~Points"
 msgstr "Edit ~Points"
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
+msgid "Arra~nge"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
+msgid "~Bring to Front"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Bring ~Forward"
+msgid "Bring ~Forward"
 msgstr "Bring ~Forward"
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
+msgid "Send Back~ward"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
+msgid "~Send to Back"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
+msgid "In Front of ~Object"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
+msgid "Be~hind Object"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
+msgid "~Reverse"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "C~haracter..."
+msgid "C~haracter..."
 msgstr "எழுத்து..."
+
+#: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
+msgid "P~aragraph..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
+msgid "~Font"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
+msgid "~Size"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
+msgid "St~yle"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Bold"
+msgid "Bold"
 msgstr "பெரிய எழுத்து"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Italic"
+msgid "Italic"
 msgstr "சாய்வெழுத்து"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Overline"
+msgid "Overline"
 msgstr "Overline"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Underline"
+msgid "Underline"
 msgstr "அடிக்கோடு"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Strikethrough"
+msgid "Strikethrough"
 msgstr "நடுக்கோடு"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MENUITEM.TEXT
 #, fuzzy
-msgid  "Shadow"
+msgid "Shadow"
 msgstr "நிழல்"
+
+#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
+msgid "~Contour"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Line Spacing"
+msgid "~Line Spacing"
 msgstr "வரி இடைவெளி"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MENUITEM.TEXT
 #, fuzzy
-msgid  "Single Line Spacing"
+msgid "Single Line Spacing"
 msgstr "வரி இடைவௌத"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MENUITEM.TEXT
 #, fuzzy
-msgid  "1.5 Lines"
+msgid "1.5 Lines"
 msgstr "1.5 கோடுகள்"
+
+#: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
+msgid "~Double"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
 #, fuzzy
-msgid  "S~pecial Character..."
+msgid "S~pecial Character..."
 msgstr "சிறப்பு எழத்து..."
+
+#: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
+msgid "A~lignment"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Left"
+msgid "~Left"
 msgstr "இடது"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Right"
+msgid "~Right"
 msgstr "வலது"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Centered"
+msgid "~Centered"
 msgstr "~Centered"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MENUITEM.TEXT
 #, fuzzy
-msgid  "Justified"
+msgid "Justified"
 msgstr "வரிசீரமைக்கப்பட்ட"
+
+#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
+msgid "Al~ignment"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MENUITEM.TEXT
+#, fuzzy
+msgid "~Left"
+msgstr "இடது"
+
+#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MENUITEM.TEXT
+#, fuzzy
+msgid "~Centered"
+msgstr "~Centered"
+
+#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MENUITEM.TEXT
+#, fuzzy
+msgid "~Right"
+msgstr "வலது"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Top"
+msgid "~Top"
 msgstr "மேல்"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MENUITEM.TEXT
 #, fuzzy
-msgid  "C~enter"
+msgid "C~enter"
 msgstr "நடு "
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Bottom"
+msgid "~Bottom"
 msgstr "கீழ்"
 
 #: ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Close ~Object"
+msgid "Close ~Object"
 msgstr "Close ~Object"
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MENUITEM.TEXT
+#, fuzzy
+msgid "Edit ~Points"
+msgstr "Edit ~Points"
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
+msgid "~Move Points"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
+msgid "Insert ~Points"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete Points"
+msgid "~Delete Points"
 msgstr "~புள்ளிகளை நீக்கு"
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MENUITEM.TEXT
+#, fuzzy
+msgid "Close ~Object"
+msgstr "Close ~Object"
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
+msgid "~Split Curve"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
+msgid "Con~vert to Curve"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
+msgid "~Corner"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
+msgid "Smoot~h"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
+msgid "S~ymmetric"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Reduce Points"
+msgid "~Reduce Points"
 msgstr "~புள்ளிகளை சிறிதாக்கு"
+
+#: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
+#, fuzzy
+msgid "~Group"
+msgstr "~Group"
+
+#: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
+msgid "~Ungroup"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
+msgid "Comb~ine"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
+msgid "~Split"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
+msgid "~Enter Group"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
+msgid "E~xit Group"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
+msgid "Name..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
+msgid "Description..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
+msgid "~Rehearse Timings"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
 #, fuzzy
-msgid  "Custom Animation..."
+msgid "Custom Animation..."
 msgstr "Custom Animation..."
+
+#: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
+msgid "Int~eraction..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
+msgid "Presentation ~Object..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MENUITEM.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "அழி"
+
+#: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
+msgid "~Default"
+msgstr "உள்ளிருப்பு"
 
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
 #, fuzzy
-msgid  "F~ontwork"
+msgid "F~ontwork"
 msgstr "எழுத்துரு விதங்கள்"
 
+#: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
+msgid "~Original Size"
+msgstr ""
+
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
-msgid  "Save as Picture..."
+msgid "Save as Picture..."
 msgstr "படமாகச் சேமி.."
 
 #: ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MENUITEM.TEXT
-msgid  "Crop Picture..."
+msgid "Crop Picture..."
 msgstr "படத்தை வெட்டு..."
+
+#: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
+msgid "Na~vigator"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
+msgid "Insert ~Point"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MENUITEM.TEXT
+#, fuzzy
+msgid "~Left"
+msgstr "இடது"
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MENUITEM.TEXT
+#, fuzzy
+msgid "~Top"
+msgstr "மேல்"
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MENUITEM.TEXT
+#, fuzzy
+msgid "~Right"
+msgstr "வலது"
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MENUITEM.TEXT
+#, fuzzy
+msgid "~Bottom"
+msgstr "கீழ்"
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
+msgid "~Adapt Position to Object"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
+msgid "Fixed ~Horizontal Left"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
+msgid "Fixed Horizontal ~Center"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
+msgid "Fixed Hori~zontal Right"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
+msgid "Fixed ~Vertical Top"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
+msgid "Fixed V~ertical Center"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
+msgid "Fixed Ver~tical Bottom"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
+msgid "~Visible Grid"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Snap to Grid"
+msgid "Snap to Grid"
 msgstr "கட்டத்திற்க்கு இணை"
+
+#: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
+msgid "Grid to ~Front"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
+msgid "~Grid"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
+msgid "~Snap Lines Visible"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Snap to Snap Lines"
+msgid "Snap to Snap Lines"
 msgstr "இணைப்பு வரிகளுக்கு இணை"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Snap Lines to Front"
+msgid "Snap Lines to Front"
 msgstr "இழு கோடுகள் இருந்து முன்னுக்கு"
+
+#: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
+msgid "~Snap Lines"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
+msgid "Propert~ies..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
+msgid "1Bit ~Threshold"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
+msgid "1 Bit ~Dithering"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
-msgid  "4 Bit G~rayscales"
+msgid "4 Bit G~rayscales"
 msgstr "4 பிட் பழுப்பு"
+
+#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
+msgid "4 Bit ~Color Palette"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
-msgid  "8 Bit Gr~ayscales"
+msgid "8 Bit Gr~ayscales"
 msgstr "8 பிட் பழுப்பு வேறுபாடுகள்"
+
+#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
+msgid "8 Bit C~olor Palette"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "24 Bit ~True Colors"
+msgid "24 Bit ~True Colors"
 msgstr "24 பிட் மூவண்ணம்"
 
 #: ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ITEMLIST.TEXT
 #, fuzzy
-msgid  "~Color Resolution"
+msgid "~Color Resolution"
 msgstr "வண்ண வேறுபாடு"
+
+#: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
+msgid "Con~vert"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
+msgid "~Flip"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
+msgid "~Rotate"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
+msgid "C~onnect"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
+msgid "~Break"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Edit Style..."
+msgid "Edit Style..."
 msgstr "பாணியைத் திருத்து..."
+
+#: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
+msgid "H~yperlink..."
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
+msgid "Poi~nts"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
+msgid "~Glue Points"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
+msgid "La~yer"
+msgstr ""
+
+#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
+msgid "~Insert"
+msgstr ""
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Modify"
+msgid "~Modify"
 msgstr "மாற்று"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "நீக்கு"
+
+#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
+msgid "~Rename"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
+msgid "To ~Curve"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
+msgid "To ~Polygon"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
+msgid "To C~ontour"
+msgstr ""
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
 #, fuzzy
-msgid  "To 3~D"
+msgid "To 3~D"
 msgstr "முப்பரிமாணத்துக்கு"
+
+#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
+msgid "To ~Bitmap"
+msgstr ""
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
 #, fuzzy
-msgid  "To ~Metafile"
+msgid "To ~Metafile"
 msgstr "மெடா கோப்புக்கு"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MENUITEM.TEXT
 #, fuzzy
-msgid  "To 3D ~Rotation Object"
+msgid "To 3D ~Rotation Object"
 msgstr "முப்பரிமாண சுழற்சி பொருள்"
 
 #: ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Vertically"
+msgid "~Vertically"
 msgstr "உயரவாகில்"
 
 #: ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Horizontally"
+msgid "~Horizontally"
 msgstr "இடம்வலமாக"
 
 #: ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MENUITEM.TEXT
 #, fuzzy
-msgid  "~3D Effects"
+msgid "~3D Effects"
 msgstr "முப்பரிம விளைவுகள்"
 
 #: ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Slide Design"
+msgid "~Slide Design"
 msgstr "~Slide Design"
 
 #: ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MENUITEM.TEXT
 #, fuzzy
-msgid  "Slide ~Transition"
+msgid "Slide ~Transition"
 msgstr "படமாற்றம்"
+
+#: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
+msgid "~Show Slide"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
+msgid "~Hide Slide"
+msgstr ""
 
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Group"
+msgid "~Group"
+msgstr "~Group"
+
+#: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
+msgid "~Ungroup"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
+msgid "~Edit Group"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
+msgid "E~xit group"
+msgstr ""
+
+#: ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MENUITEM.TEXT
+#, fuzzy
+msgid "~Group"
 msgstr "~Group"
 
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Toolbars"
+msgid "~Toolbars"
 msgstr "~கருவிப்பட்டிகள்"
 
+#: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
+msgid "Function Bar (viewing mode)"
+msgstr ""
+
+#: ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.STRING.TEXT
+msgid "Function Bar (viewing mode)"
+msgstr ""
+
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
-msgid  "Media Playback"
+msgid "Media Playback"
 msgstr "ஊடக இயக்கம்"
+
+#: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
+msgid "Table"
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
+msgid "~Table..."
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+msgid "~Cell"
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
+msgid "~Merge"
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
+msgid "~Split..."
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
+#, fuzzy
+msgid "~Top"
+msgstr "மேல்"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
 #, fuzzy
-msgid  "C~enter"
+msgid "C~enter"
 msgstr "நடு "
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
+#, fuzzy
+msgid "~Bottom"
+msgstr "கீழ்"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Row"
+msgid "~Row"
 msgstr "நிரை"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
 #, fuzzy
-msgid  "Space ~Equally"
+msgid "Space ~Equally"
 msgstr "சமமாக இடைவெளியிடு"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
-msgid  "~Select"
+msgid "~Select"
 msgstr "தேர்வு செய்"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Insert..."
+msgid "~Insert..."
 msgstr "நுழை..."
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "அழி"
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+msgid "Colu~mn"
+msgstr ""
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MENUITEM.TEXT
+#, fuzzy
+msgid "Space ~Equally"
+msgstr "சமமாக இடைவெளியிடு"
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MENUITEM.TEXT
+msgid "~Select"
+msgstr "தேர்வு செய்"
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MENUITEM.TEXT
+#, fuzzy
+msgid "~Insert..."
+msgstr "நுழை..."
+
+#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MENUITEM.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "அழி"
+
+#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
+msgid "~Insert Layer..."
+msgstr ""
+
+#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
+msgid "Modify La~yer..."
+msgstr ""
+
+#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
+msgid "Delete ~Layer..."
+msgstr ""
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Apply to All Slides"
+msgid "~Apply to All Slides"
 msgstr "~Apply to All Slides"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
 #, fuzzy
-msgid  "Apply to ~Selected Slides"
+msgid "Apply to ~Selected Slides"
 msgstr "Apply to ~Selected Slides"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "Show ~Large Preview"
+msgid "Show ~Large Preview"
 msgstr "Show ~Large Preview"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "Show S~mall Preview"
+msgid "Show S~mall Preview"
 msgstr "Show S~mall Preview"
+
+#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
+#, fuzzy
+msgid "~Apply to All Slides"
+msgstr "~Apply to All Slides"
+
+#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
+#, fuzzy
+msgid "Apply to ~Selected Slides"
+msgstr "Apply to ~Selected Slides"
+
+#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
+msgid "~Edit Master..."
+msgstr ""
+
+#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
+msgid "Show ~Large Preview"
+msgstr "Show ~Large Preview"
+
+#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MENUITEM.TEXT
+#, fuzzy
+msgid "Show S~mall Preview"
+msgstr "Show S~mall Preview"
+
+#: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
+#, fuzzy
+msgid "Apply to ~Selected Slides"
+msgstr "Apply to ~Selected Slides"
 
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Insert Slide"
+msgid "~Insert Slide"
 msgstr "~Insert Slide"
+
+#: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
+msgid "Search key not found."
+msgstr ""
+
+#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
+msgid "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
+msgstr ""
+
+#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
+msgid "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
+msgstr ""
+
+#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
+msgid "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr ""
+
+#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
+msgid "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
+msgid "~New"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
+msgid "~Export..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
+msgid "Export as PDF..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
+msgid "Sen~d"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
+msgid "~Page..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
+msgid "~Edit"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
 #, fuzzy
-msgid  "Paste ~Special..."
+msgid "Paste ~Special..."
 msgstr "ஒட்டு தனிப்பட்ட..."
+
+#: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
+msgid "Duplicat~e..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
+msgid "Cross-fading..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
+msgid "F~ields..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
+msgid "Delete ~Layer..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
+msgid "Lin~ks..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
+msgid "~View"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
+msgid "Main ~Toolbar"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
+msgid "Optio~n Bar"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
+msgid "~Presentation"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
+msgid "Customi~ze..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
+msgid "~Rulers"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
+msgid "~Notes View"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Handout View"
+msgid "~Handout View"
 msgstr "~கைப்பிரதி காட்சி"
+
+#: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
+msgid "~Preview"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
+msgid "S~lide"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
+msgid "~Slide Master"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
+msgid "~Title"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
+msgid "~Notes"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Handout"
+msgid "~Handout"
 msgstr "~கைப்பிரதி"
+
+#: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
+msgid "La~yer"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "Wor~kspace"
+msgid "Wor~kspace"
 msgstr "~முக்கிய காட்சி"
+
+#: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
+msgid "~Master"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
+msgid "~Insert"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Slid~e..."
+msgid "Slid~e..."
 msgstr "படவில்லை...."
+
+#: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
+msgid "Slid~e"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
+msgid "D~uplicate Slide"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
+msgid "E~xpand Slide"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Su~mmary Slide"
+msgid "Su~mmary Slide"
 msgstr "சுருக்கப்படம்"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Layer..."
+msgid "~Layer..."
 msgstr "~Layer..."
+
+#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
+msgid "~Date (fixed)"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
+msgid "Dat~e (variable)"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
+msgid "~Time (fixed)"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
 #, fuzzy
-msgid  "T~ime (variable)"
+msgid "T~ime (variable)"
 msgstr "நேரம் (மாறும்) "
+
+#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
+msgid "~Page Number"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~File Name"
+msgid "~File Name"
 msgstr "கோப்பு பெயர்"
+
+#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
+msgid "~Author"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
+msgid "~Select Source..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
+msgid "~Request..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
+msgid "Sp~readsheet"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
 #, fuzzy
-msgid  "From ~File..."
+msgid "From ~File..."
 msgstr "கோப்பிலிருந்து"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MENUITEM.TEXT
 #, fuzzy
-msgid  "Chart"
+msgid "Chart"
 msgstr "வரைபடம்"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MENUITEM.TEXT
 #, fuzzy
-msgid  "Float~ing Frame..."
+msgid "Float~ing Frame..."
 msgstr "நடமாடும் சட்டம்... "
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~File..."
+msgid "~File..."
 msgstr "கோப்பு..."
+
+#: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
+msgid "Fiel~ds"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
+msgid "F~ormat"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
+msgid "Te~xt..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
+msgid "Dimen~sions..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
+msgid "~Connector..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MENUITEM.TEXT
+#, fuzzy
+msgid "~Layer..."
+msgstr "~Layer..."
+
+#: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
+msgid "Modify ~Layout..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
+msgid "Styl~es"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
+msgid "~Tools"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
+msgid "~Slide Show"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
+msgid "~Check..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
+msgid "~AutoSpellcheck"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
+msgid "~Thesaurus..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
+msgid "~Hyphenation"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
+msgid "~AutoCorrect..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
+msgid "~Slide Show Settings..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
+msgid "~Custom Slide Show..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
+msgid "~Animation"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
+msgid "~Interaction..."
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
+msgid "~Spellcheck"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
+#, fuzzy
+msgid "~Modify"
+msgstr "மாற்று"
+
+#: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
+#, fuzzy
+msgid "Bring ~Forward"
+msgstr "Bring ~Forward"
+
+#: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
+msgid "Send Back~ward"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
+msgid "In Front of ~Object"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
+msgid "Be~hind Object"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
+msgid "~Reverse"
+msgstr ""
+
+#: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
+msgid "~Eyedropper"
+msgstr ""
 
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Gallery"
+msgid "~Gallery"
 msgstr "படத்தொகுப்பு"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Color"
+msgid "~Color"
 msgstr "~Color"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Grayscale"
+msgid "~Grayscale"
 msgstr "~Grayscale"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Black and White"
+msgid "~Black and White"
 msgstr "~Black and White"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MENUITEM.TEXT
 #, fuzzy
-msgid  "~High Contrast"
+msgid "~High Contrast"
+msgstr "~High Contrast"
+
+#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MENUITEM.TEXT
+#, fuzzy
+msgid "~Color"
+msgstr "~Color"
+
+#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MENUITEM.TEXT
+#, fuzzy
+msgid "~Grayscale"
+msgstr "~Grayscale"
+
+#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MENUITEM.TEXT
+#, fuzzy
+msgid "~Black and White"
+msgstr "~Black and White"
+
+#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MENUITEM.TEXT
+#, fuzzy
+msgid "~High Contrast"
 msgstr "~High Contrast"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Arrange"
+msgid "~Arrange"
 msgstr "~Arrange"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ITEMLIST.TEXT
 #, fuzzy
-msgid  "~Display Quality"
+msgid "~Display Quality"
 msgstr "~தரம் காட்டு"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ITEMLIST.TEXT
 #, fuzzy
-msgid  "Pre~view Mode"
+msgid "Pre~view Mode"
 msgstr "முன் ஓட்டவகை"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CONTROL.TEXT
 #, fuzzy
-msgid  "Custom Animation"
+msgid "Custom Animation"
 msgstr "Custom Animation"
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Effect"
+msgstr "Effect"
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
+msgid "~Add..."
+msgstr ""
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Change..."
+msgid "~Change..."
 msgstr "~Change..."
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
+msgid "~Remove"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
+msgid "Modify effect"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
+msgid "~Start"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
+msgid "On click"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
+msgid "With previous"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
+msgid "After previous"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
+msgid "Property"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
+msgid "~..."
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
+msgid "Effect Options"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
+msgid "Sp~eed"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
+msgid "Change order:"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
+msgid "~Play"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
+msgid "Slide Sho~w"
+msgstr ""
+
+#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
+msgid "Automatic pre~view"
+msgstr ""
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Custom Animation"
+msgid "Custom Animation"
 msgstr "Custom Animation"
+
+#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
+msgid "Entrance"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
+msgid "Emphasis"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
+msgid "Exit"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
+msgid "Motion Paths"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
+msgid "Misc Effects"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
+msgid "Speed"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
+msgid "Automatic preview"
+msgstr ""
+
+#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
+msgid "User paths"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
+msgid "Effect Options"
+msgstr ""
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Effect"
+msgid "Effect"
 msgstr "Effect"
 
+#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
+msgid "Timing"
+msgstr ""
+
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
-msgid  "Text Animation"
+msgid "Text Animation"
 msgstr "Text animation"
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.TABPAGE.TEXT
+#, fuzzy
+msgid "Effect"
+msgstr "Effect"
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
+msgid "Settings"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
+msgid "Accelerated start"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
+msgid "Decelerated end"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
+msgid "Reverse automatically"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
+msgid "Enhancement"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Sound"
+msgstr "Sound"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "After animation "
+msgid "After animation "
 msgstr "After animation "
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
+msgid "Don't dim"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
+msgid "Dim with color"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
+msgid "Hide after animation"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
+msgid "Hide on next animation"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
+msgid "Dim Color"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
+msgid "Text animation"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
+msgid "All at once"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
+msgid "Word by word"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
+msgid "Letter by letter"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
+msgid "delay between characters"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
+msgid "%"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.TABPAGE.TEXT
+msgid "Timing"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
+msgid "Start"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
+msgid "On click"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
+msgid "With previous"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
+msgid "After previous"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
+msgid "Delay"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
+msgid "sec"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
+msgid "Speed"
+msgstr ""
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Repeat"
+msgid "Repeat"
 msgstr "திரும்பச் செய்"
 
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
+msgid "Rewind when done playing"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
+msgid "Trigger"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
+msgid "Animate as part of click sequence"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
+msgid "Start effect on click of"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.TABPAGE.TEXT
+msgid "Text Animation"
+msgstr "Text animation"
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
+msgid "Group text"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
+msgid "As one object"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
+msgid "All paragraphs at once"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
+msgid "By 1st level paragraphs"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
+msgid "By 2nd level paragraphs"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
+msgid "By 3rd level paragraphs"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
+msgid "By 4th level paragraphs"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
+msgid "By 5th level paragraphs"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
+msgid "Automatically after"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.MF_GROUP_AUTO.METRICFIELD.CUSTOMUNITTEXT
+msgid "sec"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
+msgid "Animate attached shape"
+msgstr ""
+
+#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
+msgid "In reverse order"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
+msgid "Start On ~Click"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
+msgid "Start ~With Previous"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
+msgid "Start ~After Previous"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
+msgid "~Effect Options..."
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
+msgid "~Timing..."
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
+msgid "~Remove"
+msgstr ""
+
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
-msgid  "Tiny"
+msgid "Tiny"
 msgstr "Tiny"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
+msgid "Smaller"
+msgstr ""
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
 #, fuzzy
-msgid  "Larger"
+msgid "Larger"
 msgstr "Larger"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
+msgid "Extra large"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MENUITEM.TEXT
+msgid "Tiny"
+msgstr "Tiny"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MENUITEM.TEXT
+msgid "Smaller"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MENUITEM.TEXT
+#, fuzzy
+msgid "Larger"
+msgstr "Larger"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MENUITEM.TEXT
+msgid "Extra large"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
+msgid "Horizontal"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
+msgid "Vertical"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
+msgid "Both"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
+msgid "Quarter spin"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
+msgid "Half spin"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
+msgid "Full spin"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
+msgid "Two spins"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
+msgid "Clockwise"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
+msgid "Counter-clockwise"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
+#, fuzzy
+msgid "Bold"
+msgstr "பெரிய எழுத்து"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
+#, fuzzy
+msgid "Italic"
+msgstr "சாய்வெழுத்து"
+
+#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
+msgid "Underlined"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
+msgid "Very slow"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
+msgid "Slow"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
+msgid "Medium"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
+msgid "Fast"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
+msgid "Very fast"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
+msgid "none"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
+msgid "Until next click"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
+msgid "Until end of slide"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
+msgid "Direction"
+msgstr ""
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
 #, fuzzy
-msgid  "Zoom"
+msgid "Zoom"
 msgstr "கிட்டப்பார்"
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
+msgid "Spokes"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
+msgid "First color"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
+msgid "Second color"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
+msgid "Fill color"
+msgstr ""
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
-msgid  "Style"
+msgid "Style"
+msgstr "Style"
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
+msgid "Font"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
+msgid "Font color"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_SIZE_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
+msgid "Style"
 msgstr "Style"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
-msgid  "Typeface"
+msgid "Typeface"
 msgstr "Typeface"
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
+msgid "Line color"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
+msgid "Font size"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
+msgid "Size"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
+msgid "Amount"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
+msgid "Color"
+msgstr ""
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
 #, fuzzy
-msgid  "(No sound)"
+msgid "(No sound)"
 msgstr "(No sound)"
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
+msgid "(Stop previous sound)"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
+msgid "Other sound..."
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
+msgid "Sample"
+msgstr ""
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
 #, fuzzy
-msgid  "1 Spoke"
+msgid "1 Spoke"
 msgstr "1 Spoke"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.STRING.TEXT
 #, fuzzy
-msgid  "2 Spokes"
+msgid "2 Spokes"
 msgstr "2 Spokes"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.STRING.TEXT
 #, fuzzy
-msgid  "3 Spokes"
+msgid "3 Spokes"
 msgstr "3 Spokes"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.STRING.TEXT
 #, fuzzy
-msgid  "4 Spokes"
+msgid "4 Spokes"
 msgstr "4 Spokes"
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
+msgid "8 Spokes"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
+msgid "Instant"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
+msgid "Gradual"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
+msgid "Trigger"
+msgstr ""
+
+#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
+msgid "First select the slide element and then click 'Add...' to add an animation effect."
+msgstr ""
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
 #, fuzzy
-msgid  "Slide Transition"
+msgid "Slide Transition"
 msgstr "படமாற்றம்"
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
+msgid "Apply to selected slides"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
+msgid "Modify transition"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
+msgid "Speed"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
+msgid "Slow"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
+msgid "Medium"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
+msgid "Fast"
+msgstr ""
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Sound"
+msgid "Sound"
 msgstr "Sound"
 
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
+msgid "<No Sound>"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
+msgid "<Stop Previous Sound>"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
+msgid "Other Sound..."
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
+msgid "Loop until next sound"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
+msgid "Advance slide"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
+msgid "On mouse click"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
+msgid "Automatically after"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
+msgid "sec"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
+msgid "Apply to All Slides"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
+msgid "Play"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
+msgid "Slide Show"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
+msgid "Automatic preview"
+msgstr ""
+
+#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
+msgid "No Transition"
+msgstr ""
+
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
-msgid  "Drag and Drop Pages"
+msgid "Drag and Drop Pages"
 msgstr "இழுத்துப் போடும் பக்கங்கள்"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_SLIDES.STRING.TEXT
-msgid  "Drag and Drop Slides"
+msgid "Drag and Drop Slides"
 msgstr "இழுத்துப் போடும் சறுக்குகள்"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND1.STRING.TEXT
-msgid  "Start Slide Show"
+msgid "Start Slide Show"
 msgstr "சறுக்கு காட்சியை ஆரம்பி"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_A.STRING.TEXT
-msgid  "Hide Slide"
+msgid "Hide Slide"
 msgstr "சறுக்கை மறை"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_B.STRING.TEXT
-msgid  "Show Slide"
+msgid "Show Slide"
 msgstr "சறுக்கு காட்டு"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND3.STRING.TEXT
-msgid  "Duplicate Slide"
+msgid "Duplicate Slide"
 msgstr "நகல் சறுக்கு"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.STRING.TEXT
+msgid "%PRODUCTNAME %s"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.STRING.TEXT
+msgid "Print content"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.STRING.TEXT
+msgid "Print"
+msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.STRING.TEXT
 #, fuzzy
-msgid  "Document"
+msgid "Document"
 msgstr "ஆவணம்"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM1.ITEMLIST.ITEM
+msgid "Slides"
+msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Handouts"
-msgstr "ஹேண்ட்அவுட்ஸ்"
+msgid "Handouts"
+msgstr "கையேடுகள்"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM3.ITEMLIST.ITEM
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM4.ITEMLIST.ITEM
+msgid "Outline"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.STRING.TEXT
+msgid "Slides per page"
+msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM1.ITEMLIST.ITEM
-msgid  "Default"
-msgstr "இயல்பான"
+#, fuzzy
+msgid "Default"
+msgstr "முன்னிருப்பு"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM2.ITEMLIST.ITEM
-msgid  "1"
+msgid "1"
 msgstr "1"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM3.ITEMLIST.ITEM
-msgid  "2"
+msgid "2"
 msgstr "2"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM4.ITEMLIST.ITEM
-msgid  "3"
+msgid "3"
 msgstr "3"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM5.ITEMLIST.ITEM
-msgid  "4"
+msgid "4"
 msgstr "4"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM6.ITEMLIST.ITEM
-msgid  "6"
+msgid "6"
 msgstr "6"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM7.ITEMLIST.ITEM
-msgid  "9"
+msgid "9"
 msgstr "9"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.STRING.TEXT
+msgid "Order"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM1.ITEMLIST.ITEM
+msgid "Left to right, then down"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM2.ITEMLIST.ITEM
+msgid "Top to bottom, then right"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.STRING.TEXT
+msgid "~Contents"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
+msgid "~Slide name"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
+msgid "P~age name"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.STRING.TEXT
+#, fuzzy
+msgid "~Date and time"
+msgstr "~Date and time"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.STRING.TEXT
+msgid "Hidden pages"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.STRING.TEXT
+msgid "Output options"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.STRING.TEXT
+msgid "Color"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM1.ITEMLIST.ITEM
+msgid "Original colors"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM2.ITEMLIST.ITEM
+msgid "Grayscale"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM3.ITEMLIST.ITEM
+msgid "Black & white"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.STRING.TEXT
+msgid "~Size"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM1.ITEMLIST.ITEM
+msgid "Original size"
+msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Fit to printable page"
+msgid "Fit to printable page"
 msgstr "அச்சடிக்கக்கூடிய பக்கத்தை பொருத்தவும்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM3.ITEMLIST.ITEM
-msgid  "Distribute on multiple sheets of paper"
+msgid "Distribute on multiple sheets of paper"
 msgstr "பல பக்கங்களின் தாளை விநியோகிக்கவும்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Tile sheet of paper with repeated slides"
+msgid "Tile sheet of paper with repeated slides"
 msgstr "திரும்பும் ஸ்லைடுகளுடன் டைல் பக்கத்தின் தாள்"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM1.ITEMLIST.ITEM
+msgid "Original size"
+msgstr ""
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM2.ITEMLIST.ITEM
+#, fuzzy
+msgid "Fit to printable page"
+msgstr "அச்சடிக்கக்கூடிய பக்கத்தை பொருத்தவும்"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM3.ITEMLIST.ITEM
+msgid "Distribute on multiple sheets of paper"
+msgstr "பல பக்கங்களின் தாளை விநியோகிக்கவும்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Tile sheet of paper with repeated pages"
+msgid "Tile sheet of paper with repeated pages"
 msgstr "திரும்பும் பக்கங்களுடன் டைல் பக்கத்தின் தாள்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.STRING.TEXT
 #, fuzzy
-msgid  "Brochure"
+msgid "Brochure"
 msgstr "சிற்றேடு"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.STRING.TEXT
 #, fuzzy
-msgid  "Page sides"
+msgid "Page sides"
 msgstr "பக்க ஸ்லைடுகள்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.STRING.TEXT
 #, fuzzy
-msgid  "Include"
+msgid "Include"
 msgstr "சேர்த்து"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "All pages"
+msgid "All pages"
 msgstr "அனைத்து பக்கங்கள்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Front sides / right pages"
+msgid "Front sides / right pages"
 msgstr "முன் பக்கங்கள் / வலது பக்கங்கள்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Back sides / left pages"
+msgid "Back sides / left pages"
 msgstr "பின் பக்கங்கள் / இடது பக்கங்கள்"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.STRING.TEXT
 #, fuzzy
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "தாள் தட்டு"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.STRING.TEXT
 #, fuzzy
-msgid  "~Use only paper tray from printer preferences"
-msgstr "அச்சடிப்பி முன்னுரிமைகளிலிருந்து தாள் தட்டிலிருந்து மட்டும் பயன்படுத்தவும் (~U)"
+msgid "~Use only paper tray from printer preferences"
+msgstr ""
+"அச்சடிப்பி முன்னுரிமைகளிலிருந்து தாள் தட்டிலிருந்து மட்டும் பயன்படுத்தவும் "
+"(~U)"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.STRING.TEXT
 #, fuzzy
-msgid  "Print range"
+msgid "Print range"
 msgstr "வரம்பை அச்சிடு"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "~All slides"
+msgid "~All slides"
 msgstr "அனைத்து ஸ்லைடுகள் (~A)"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
+msgid "~Slides"
+msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Se~lection"
+msgid "Se~lection"
 msgstr "தேர்ந்தெடுப்பு (~l)"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "~All pages"
+msgid "~All pages"
 msgstr "அனைத்து பக்கங்கள் (~A)"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Pa~ges"
+msgid "Pa~ges"
 msgstr "பக்கங்கள் (~g)"
+
+#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
+#, fuzzy
+msgid "Se~lection"
+msgstr "தேர்ந்தெடுப்பு (~l)"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CONTROL.TEXT
 #, fuzzy
-msgid  "Table Design"
+msgid "Table Design"
+msgstr "Table Design"
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
+msgid "Show"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
+msgid "Header Row"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
+msgid "Total Row"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
+msgid "Banded Rows"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
+msgid "First Column"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
+msgid "Last Column"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
+msgid "Banded Columns"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
+msgid "Styles"
+msgstr ""
+
+#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.MODALDIALOG.TEXT
+#, fuzzy
+msgid "Table Design"
 msgstr "Table Design"
 
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
 #, fuzzy
-msgid  "Notes Window"
+msgid "Notes Window"
 msgstr "குறிப்புகள் சாளரம்"
 
 #: core/glob.src#STR_LAYER_BCKGRND.STRING.TEXT
 #, fuzzy
-msgid  "Background"
+msgid "Background"
 msgstr "பின்னணி"
 
 #: core/glob.src#STR_LAYER_BCKGRNDOBJ.STRING.TEXT
 #, fuzzy
-msgid  "Background objects"
+msgid "Background objects"
 msgstr "பின்னணி பொருட்கள்"
+
+#: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
+msgid "Layout"
+msgstr ""
 
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
 #, fuzzy
-msgid  "Controls"
+msgid "Controls"
 msgstr "கட்டுப்பாடுகள்"
+
+#: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
+msgid "Dimension Lines"
+msgstr ""
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Slide"
+msgid "Slide"
 msgstr "காட்சி"
+
+#: core/glob.src#STR_PAGE_NAME.STRING.TEXT
+msgid "Page"
+msgstr ""
+
+#: core/glob.src#STR_SLIDE_NAME.STRING.TEXT
+#, fuzzy
+msgid "Slide"
+msgstr "காட்சி"
+
+#: core/glob.src#STR_MASTERPAGE.STRING.TEXT
+#, fuzzy
+msgid "Background"
+msgstr "பின்னணி"
+
+#: core/glob.src#STR_NOTES.STRING.TEXT
+msgid "(Notes)"
+msgstr ""
 
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
 #, fuzzy
-msgid  "Handouts"
+msgid "Handouts"
 msgstr "கையேடுகள்"
+
+#: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
+msgid "Click to edit the title text format"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
+msgid "Click to edit the outline text format"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
+msgid "Second Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
+msgid "Third Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
+msgid "Fourth Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
+msgid "Fifth Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
+msgid "Sixth Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
+msgid "Seventh Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
+msgid "Eighth Outline Level"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
+msgid "Ninth Outline Level"
+msgstr ""
 
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
 #, fuzzy
-msgid  "Click to move the slide"
+msgid "Click to move the slide"
 msgstr "படக்காட்சியை சேர்க்க சொடுக்கவும்"
+
+#: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
+msgid "Click to edit the notes format"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
+msgid "Click to add title"
+msgstr ""
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
 #, fuzzy
-msgid  "Click to add text"
+msgid "Click to add text"
 msgstr "உரையை சேர்க்க க்ளிக் செய்யவும்"
+
+#: core/glob.src#STR_PRESOBJ_TEXT.STRING.TEXT
+#, fuzzy
+msgid "Click to add text"
+msgstr "உரையை சேர்க்க க்ளிக் செய்யவும்"
+
+#: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
+msgid "Click to add notes"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
+msgid "Double-click to add graphics"
+msgstr ""
+
+#: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
+msgid "Double-click to add an object"
+msgstr ""
 
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
 #, fuzzy
-msgid  "Double-click to add a chart"
+msgid "Double-click to add a chart"
 msgstr "வரைபடத்தைச் சேர்க்க இருமுறை சொடுக்கவும்"
 
 #: core/glob.src#STR_PRESOBJ_ORGCHART.STRING.TEXT
 #, fuzzy
-msgid  "Double-click to add an organization chart"
+msgid "Double-click to add an organization chart"
 msgstr "நிறுவனஅமைப்புப்படத்தைச் சேர்க்க இருமுறை சொடுக்கவும்"
+
+#: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
+msgid "Double-click to add a spreadsheet"
+msgstr ""
 
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
 #, fuzzy
-msgid  "Outline View"
+msgid "Outline View"
 msgstr "வெளிக்கோட்டு காட்சி"
 
 #: core/glob.src#STR_DRAWVIEWSHELL.STRING.TEXT
 #, fuzzy
-msgid  "Drawing View"
+msgid "Drawing View"
 msgstr "ஓவியக் காட்சி"
+
+#: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
+msgid "Presentation mode"
+msgstr ""
+
+#: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
+msgid "Preview Window"
+msgstr ""
+
+#: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
+msgid "Text Mode"
+msgstr ""
+
+#: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
+msgid "Document Mode"
+msgstr ""
+
+#: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
+msgid "Bézier mode"
+msgstr ""
+
+#: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
+msgid "StarImpress 4.0"
+msgstr ""
+
+#: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
+msgid "Glue Points Mode"
+msgstr ""
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "முன்னிருப்பு"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "தலைப்பு"
+
+#: core/glob.src#STR_STANDARD_STYLESHEET_NAME.STRING.TEXT
+#, fuzzy
+msgid "Default"
+msgstr "முன்னிருப்பு"
+
+#: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
+msgid "The password is incorrect or the file is damaged."
+msgstr ""
 
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
 #, fuzzy
-msgid  "Move slides"
+msgid "Move slides"
 msgstr "படக்காட்சிகளை நகர்த்துக"
+
+#: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
+msgid "Not enough memory!\nThe action will be aborted."
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
 #, fuzzy
-msgid  "Dimension Line"
+msgid "Dimension Line"
 msgstr "பரிமாணக்கோடு"
 
 #: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
-msgid  "Object with no fill and no line"
+msgid "Object with no fill and no line"
 msgstr "நிரப்புதலும் வரியும் இல்லாத பொருள்"
+
+#: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
+msgid "Object with arrow"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
+msgid "Object with shadow"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
+msgid "Object without fill"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
+msgid "Text"
+msgstr "உரை"
+
+#: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
+msgid "Text body"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
+msgid "Text body justified"
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
 #, fuzzy
-msgid  "First line indent"
+msgid "First line indent"
 msgstr "முதற் கோட்டு விவரம்"
+
+#: core/glob.src#STR_POOLSHEET_TITLE.STRING.TEXT
+#, fuzzy
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
+msgid "Title1"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
+msgid "Title2"
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
 #, fuzzy
-msgid  "Heading"
+msgid "Heading"
 msgstr "தலைப்பு"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE1.STRING.TEXT
 #, fuzzy
-msgid  "Heading1"
+msgid "Heading1"
 msgstr "தலைப்பு1"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE2.STRING.TEXT
 #, fuzzy
-msgid  "Heading2"
+msgid "Heading2"
 msgstr "தலைப்பு2"
 
+#: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
+msgid "Blank template"
+msgstr ""
+
+#: core/glob.src#STR_PSEUDOSHEET_TITLE.STRING.TEXT
+#, fuzzy
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
+msgid "Subtitle"
+msgstr ""
+
+#: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
+msgid "Outline"
+msgstr ""
+
+#: core/glob.src#STR_PSEUDOSHEET_BACKGROUNDOBJECTS.STRING.TEXT
+#, fuzzy
+msgid "Background objects"
+msgstr "பின்னணி பொருட்கள்"
+
+#: core/glob.src#STR_PSEUDOSHEET_BACKGROUND.STRING.TEXT
+#, fuzzy
+msgid "Background"
+msgstr "பின்னணி"
+
+#: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
+msgid "Graphics mode"
+msgstr ""
+
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
-msgid  "Media Playback"
+msgid "Media Playback"
 msgstr "ஊடக இயக்கம்"
+
+#: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
+msgid "Table"
+msgstr ""
+
+#: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
+msgid "PowerPoint Import"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
+msgid "Arrow"
+msgstr ""
+
+#: core/glob.src#STR_LOAD_DOC.STRING.TEXT
+msgid "Load Document"
+msgstr ""
+
+#: core/glob.src#STR_SAVE_DOC.STRING.TEXT
+msgid "Save Document"
+msgstr ""
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
 #, fuzzy
-msgid  "File format error found at $(ARG1)(row,col)."
+msgid "File format error found at $(ARG1)(row,col)."
 msgstr "File format error found at $(ARG1)(row,col)."
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_FILE_ROWCOL_).STRING.TEXT
 #, fuzzy
-msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
+msgid "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
+msgstr ""
+"Format error discovered in the file in sub-document $(ARG1) at position "
+"$(ARG2)(row,col)."
+
+#: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_WARN_FORMAT_FILE_ROWCOL_).STRING.TEXT
+#, fuzzy
+msgid "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
+msgstr ""
+"Format error discovered in the file in sub-document $(ARG1) at position "
+"$(ARG2)(row,col)."
 
 #: core/glob.src#STR_3DOBJECTBARSHELL.STRING.TEXT
 #, fuzzy
-msgid  "3-D Settings"
+msgid "3-D Settings"
 msgstr "3-D Settings"
 
 #: core/glob.src#STR_FONTWORKOBJECTBARSHELL.STRING.TEXT
 #, fuzzy
-msgid  "Fontwork"
+msgid "Fontwork"
 msgstr "எழுத்துரு பணி"
+
+#: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
+msgid "Banding cell"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
+msgid "Header"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
+msgid "Total line"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
+msgid "First column"
+msgstr ""
+
+#: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
+msgid "Last column"
+msgstr ""

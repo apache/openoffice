@@ -1,708 +1,1217 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Välkommen till %PRODUCTNAME %PRODUCTVERSION"
 
+#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+msgid "Welcome"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
+msgid "License Agreement"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+msgid "Personal Data"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+msgid "User name"
+msgstr ""
+
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "Online-uppdatering"
 
+#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+msgid "Registration"
+msgstr ""
+
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Den här guiden hjälper dig genom licensavtalet, att överföra användardata från %OLD_VERSION och att registrera %PRODUCTNAME.\n\nFortsätt genom att klicka på Nästa."
+msgid "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Den här guiden hjälper dig genom licensavtalet, att överföra användardata "
+"från %OLD_VERSION och att registrera %PRODUCTNAME.\n"
+"\n"
+"Fortsätt genom att klicka på Nästa."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Den här guiden hjälper dig att registrera %PRODUCTNAME.\n\nFortsätt genom att klicka på Nästa."
+msgid "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Den här guiden hjälper dig att registrera %PRODUCTNAME.\n"
+"\n"
+"Fortsätt genom att klicka på Nästa."
+
+#: migration/wizard.src#STR_FINISH.STRING.TEXT
+msgid "~Finish"
+msgstr ""
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "Du har möjlighet att stödja ett av världens snabbast växande nätverk för programvara med öppen källkod.\n\nHjälp oss att visa att %PRODUCTNAME redan har vunnit betydande marknadsandelar genom att registrera produkten.\n\nRegistreringen är frivillig och utan förpliktelser."
+msgid "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+"Du har möjlighet att stödja ett av världens snabbast växande nätverk för "
+"programvara med öppen källkod.\n"
+"\n"
+"Hjälp oss att visa att %PRODUCTNAME redan har vunnit betydande "
+"marknadsandelar genom att registrera produkten.\n"
+"\n"
+"Registreringen är frivillig och utan förpliktelser."
 
 #: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "Det uppstod ett fel när webbläsaren skulle startas.\nKontrollera inställningarna i %PRODUCTNAME och webbläsaren."
+msgid "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"Det uppstod ett fel när webbläsaren skulle startas.\n"
+"Kontrollera inställningarna i %PRODUCTNAME och webbläsaren."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
-msgid  "Do you really want to decline?"
+msgid "Do you really want to decline?"
 msgstr "Vill du inte acceptera?"
 
+#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Välkommen till %PRODUCTNAME %PRODUCTVERSION"
+
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Den här guiden hjälper dig genom licensavtalet och att registrera %PRODUCTNAME.\n\nFortsätt genom att klicka på Nästa."
+msgid "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Den här guiden hjälper dig genom licensavtalet och att registrera %"
+"PRODUCTNAME.\n"
+"\n"
+"Fortsätt genom att klicka på Nästa."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to accept the license"
+msgid "Please follow these steps to accept the license"
 msgstr "Du accepterar licensavtalet genom att följa stegen nedan"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Visa det fullständiga licensavtalet. Använd rullningslisten eller knappen %PAGEDOWN i dialogrutan om du vill visa hela licensavtalet."
+msgid "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Visa det fullständiga licensavtalet. Använd rullningslisten eller knappen %"
+"PAGEDOWN i dialogrutan om du vill visa hela licensavtalet."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgid "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Klicka på Acceptera om du vill acceptera villkoren i avtalet."
 
+#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "Scroll Do~wn"
+msgstr ""
+
+#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+msgid "~Accept"
+msgstr ""
+
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
-msgid  "~Decline"
+msgid "~Decline"
 msgstr "Acceptera ~inte"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "Transfer personal data"
+msgid "Transfer personal data"
 msgstr "Överför personliga data"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "De flesta personliga data från installationen av %OLDPRODUCT kan återanvändas i %PRODUCTNAME %PRODUCTVERSION.\n\nOm du inte vill återanvända inställningarna i %PRODUCTNAME %PRODUCTVERSION avmarkerar du kryssrutan."
+msgid "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+"De flesta personliga data från installationen av %OLDPRODUCT kan "
+"återanvändas i %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Om du inte vill återanvända inställningarna i %PRODUCTNAME %PRODUCTVERSION "
+"avmarkerar du kryssrutan."
+
+#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
+msgid "Transfer personal data"
+msgstr "Överför personliga data"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
+msgid "Online Update"
+msgstr "Online-uppdatering"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "För %PRODUCTNAME görs regelbundet automatiska sökningar efter nya versioner.\nInga personliga uppgifter överförs i samband med uppdateringarna.\nDu blir meddelad när en ny version har gjorts tillgänglig.\n\nDu kan konfigurera den här funktionen i Verktyg / Alternativ... / %PRODUCTNAME / Online-uppdatering."
+msgid "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+"För %PRODUCTNAME görs regelbundet automatiska sökningar efter nya versioner.\n"
+"Inga personliga uppgifter överförs i samband med uppdateringarna.\n"
+"Du blir meddelad när en ny version har gjorts tillgänglig.\n"
+"\n"
+"Du kan konfigurera den här funktionen i Verktyg / Alternativ... / %"
+"PRODUCTNAME / Online-uppdatering."
+
+#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
+msgid "~Check for updates automatically"
+msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
-msgid  "Provide your full name and initials below"
+msgid "Provide your full name and initials below"
 msgstr "Ange fullständigt namn och initialer nedan"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
-msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr "Användarnamnet används i dokumentegenskaperna, mallarna och när du registrerar ändringar av dokumenten."
+msgid "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+"Användarnamnet används i dokumentegenskaperna, mallarna och när du "
+"registrerar ändringar av dokumenten."
+
+#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+msgid "~First name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+msgid "~Last name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
+msgid "~Initials"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+msgid "~Father's name"
+msgstr ""
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME Registration"
+msgid "%PRODUCTNAME Registration"
 msgstr "Registrera %PRODUCTNAME "
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "Du kan nu registrera dig som användare av %PRODUCTNAME. Registreringen är frivillig och utan förpliktelser.\n\nOm du registrerar dig får du information om hur produkten utvecklas."
+msgid "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+"Du kan nu registrera dig som användare av %PRODUCTNAME. Registreringen är "
+"frivillig och utan förpliktelser.\n"
+"\n"
+"Om du registrerar dig får du information om hur produkten utvecklas."
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
-msgid  "I want to register ~now"
+msgid "I want to register ~now"
 msgstr "Jag vill registrera mig ~nu"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
-msgid  "I want to register ~later"
+msgid "I want to register ~later"
 msgstr "Jag vi~ll registrera mig senare"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
-msgid  "I do not want to ~register"
+msgid "I do not want to ~register"
 msgstr "Jag vill inte ~registrera mig"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "Vi hoppas att du blir nöjd med %PRODUCTNAME.\n\nAvsluta guiden genom att klicka på Slutför."
+msgid "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+"Vi hoppas att du blir nöjd med %PRODUCTNAME.\n"
+"\n"
+"Avsluta guiden genom att klicka på Slutför."
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
-msgid  "Should the file \"$1\" be restored?"
+msgid "Should the file \"$1\" be restored?"
 msgstr "Skall filen \"$1\" återställas?"
 
+#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
+msgid "File Recovery"
+msgstr ""
+
 #: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "Ett irreparabelt fel har uppstått.\n\nMen alla ändrade filer sparades\noch kan förmodligen återställas\nvid nästa programstart."
+msgid "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr ""
+"Ett irreparabelt fel har uppstått.\n"
+"\n"
+"Men alla ändrade filer sparades\n"
+"och kan förmodligen återställas\n"
+"vid nästa programstart."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
-msgid  "The application cannot be started. "
+msgid "The application cannot be started. "
 msgstr "Det går inte att starta programmet. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
-msgid  "The configuration directory \"$1\" could not be found."
+msgid "The configuration directory \"$1\" could not be found."
 msgstr "Konfigurationssökvägen \"$1\" hittades inte."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
-msgid  "The installation path is invalid."
+msgid "The installation path is invalid."
 msgstr "Installationssökvägen är ogiltig."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
-msgid  "The installation path is not available."
+msgid "The installation path is not available."
 msgstr "Det gick inte att bestämma installationssökvägen."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
-msgid  "An internal error occurred."
+msgid "An internal error occurred."
 msgstr "Det har uppstått ett internt fel."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
-msgid  "The configuration file \"$1\" is corrupt."
+msgid "The configuration file \"$1\" is corrupt."
 msgstr "Konfigurationsfilen \"$1\" är skadad."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
-msgid  "The configuration file \"$1\" was not found."
+msgid "The configuration file \"$1\" was not found."
 msgstr "Konfigurationsfilen \"$1\" hittades inte."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
-msgid  "The configuration file \"$1\" does not support the current version."
+msgid "The configuration file \"$1\" does not support the current version."
 msgstr "Konfigurationsfilen \"$1\" understöder inte den här versionen."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
-msgid  "The user interface language cannot be determined."
+msgid "The user interface language cannot be determined."
 msgstr "Användargränssnittets språk kan inte bestämmas."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
-msgid  "The component manager is not available."
+msgid "The component manager is not available."
 msgstr "Komponenthanteraren är inte tillgänglig."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
-msgid  "The configuration service is not available."
+msgid "The configuration service is not available."
 msgstr "Det går inte att skapa konfigurationshanteraren."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
-msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr "Du kör en annan instans i en annan session. Stäng den instansen och försök igen."
+msgid "You have another instance running in a different terminal session. Close that instance and then try again."
+msgstr ""
+"Du kör en annan instans i en annan session. Stäng den instansen och försök "
+"igen."
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
-msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "Starta setupprogrammet från cd:n eller från katalogen där installationspaketen finns för att reparera installationen."
+msgid "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr ""
+"Starta setupprogrammet från cd:n eller från katalogen där "
+"installationspaketen finns för att reparera installationen."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
-msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr "Startinställningarna för att komma åt den centrala konfiguration är ofullständiga. "
+msgid "The startup settings for accessing the central configuration are incomplete. "
+msgstr ""
+"Startinställningarna för att komma åt den centrala konfiguration är "
+"ofullständiga. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
-msgid  "A connection to the central configuration could not be established. "
+msgid "A connection to the central configuration could not be established. "
 msgstr "Det gick inte att koppla till den centrala konfigurationen. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
-msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr "Du kan inte komma åt den centrala konfigurationen därför att du saknar åtkomsträttigheter. "
+msgid "You cannot access the central configuration because of missing access rights. "
+msgstr ""
+"Du kan inte komma åt den centrala konfigurationen därför att du saknar "
+"åtkomsträttigheter. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
-msgid  "A general error occurred while accessing your central configuration. "
-msgstr "Det har uppstått ett generellt fel vid försöket att komma åt din centrala konfiguration. "
+msgid "A general error occurred while accessing your central configuration. "
+msgstr ""
+"Det har uppstått ett generellt fel vid försöket att komma åt din centrala "
+"konfiguration. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
-msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "Det går inte att spara dina ändrade personliga inställningar centralt eftersom åtkomsträttigheter saknas. "
+msgid "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr ""
+"Det går inte att spara dina ändrade personliga inställningar centralt "
+"eftersom åtkomsträttigheter saknas. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "%PRODUCTNAME kunde inte startas därför att det inte går att komma åt %PRODUCTNAME-konfigurationsdata.\n\nVänd dig till din systemadministratör."
+msgid "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+"%PRODUCTNAME kunde inte startas därför att det inte går att komma åt %"
+"PRODUCTNAME-konfigurationsdata.\n"
+"\n"
+"Vänd dig till din systemadministratör."
+
+#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
+msgid "The following internal error has occurred: "
+msgstr ""
 
 #: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "Antingen har en annan instans av %PRODUCTNAME tillgång till dina personliga inställningar eller så har den inte frigjort dem igen.\nSamtidig åtkomst kan leda till att dina personliga inställningar blir inkonsekventa. Innan du fortsätter bör du se till att användaren '$u' stänger %PRODUCTNAME på värden '$h'.\n\nVill du verkligen fortsätta?"
+msgid "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr ""
+"Antingen har en annan instans av %PRODUCTNAME tillgång till dina personliga "
+"inställningar eller så har den inte frigjort dem igen.\n"
+"Samtidig åtkomst kan leda till att dina personliga inställningar blir "
+"inkonsekventa. Innan du fortsätter bör du se till att användaren '$u' "
+"stänger %PRODUCTNAME på värden '$h'.\n"
+"\n"
+"Vill du verkligen fortsätta?"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
-msgid  "Printing is disabled. No documents can be printed."
+msgid "Printing is disabled. No documents can be printed."
 msgstr "Utskriften är inaktiverad. Inga dokument kan skrivas ut."
 
 #: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr "Denna utvärderingsversion har löpt ut. För att ta reda mer om %PRODUCTNAME,\nbesöka http://www.openoffice.org"
+msgid "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
+"Denna utvärderingsversion har löpt ut. För att ta reda mer om %PRODUCTNAME,\n"
+"besöka http://www.openoffice.org"
+
+#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
-msgid  "The path manager is not available.\n"
+msgid "The path manager is not available.\n"
 msgstr "Sökvägshanteraren är inte tillgänglig.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Det går inte att slutföra användarinstallationen av %PRODUCTNAME på grund av otillräckligt diskutrymme. Frigör mer diskutrymme på följande plats och starta om %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Det går inte att slutföra användarinstallationen av %PRODUCTNAME på grund av "
+"otillräckligt diskutrymme. Frigör mer diskutrymme på följande plats och "
+"starta om %PRODUCTNAME:\n"
+"\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Det går inte att genomföra användarinstallationen av %PRODUCTNAME eftersom rätt behörighet saknas. Se till att du har rätt behörighet för följande plats och starta om %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Det går inte att genomföra användarinstallationen av %PRODUCTNAME eftersom "
+"rätt behörighet saknas. Se till att du har rätt behörighet för följande "
+"plats och starta om %PRODUCTNAME:\n"
+"\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
-msgid  "Extension Software License Agreement of $NAME:"
+msgid "Extension Software License Agreement of $NAME:"
 msgstr "Programlicensavtal för tillägg gällande $NAME:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr "Läs det fullständiga licensavtalet ovan. Godkänn licensavtalet genom att skriva \"ja\" i konsollen och trycka på enter. Skriv \"nej\" om du inte godkänner licensavtalet och vill avbryta installationen."
+msgid "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr ""
+"Läs det fullständiga licensavtalet ovan. Godkänn licensavtalet genom att "
+"skriva \"ja\" i konsollen och trycka på enter. Skriv \"nej\" om du inte "
+"godkänner licensavtalet och vill avbryta installationen."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
-msgid  "[Enter \"yes\" or \"no\"]:"
+msgid "[Enter \"yes\" or \"no\"]:"
 msgstr "[Ange \"ja\" eller \"nej\"]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
-msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Felaktig inmatning. Ange \"ja\" eller \"nej\":"
 
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+msgid "YES"
+msgstr ""
+
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
-msgid  "Y"
+msgid "Y"
 msgstr "J"
 
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+msgid "NO"
+msgstr ""
+
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
-msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr "unopkg kan inte startas. Låsfilen innebär att processen redan körs. Om den inte körs bör du ta bort låsfilen som finns i:"
+msgid "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
+"unopkg kan inte startas. Låsfilen innebär att processen redan körs. Om den "
+"inte körs bör du ta bort låsfilen som finns i:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
-msgid  "ERROR: "
+msgid "ERROR: "
 msgstr "FEL: "
 
+#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+msgid "Unknown"
+msgstr ""
+
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
-msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgid "Extension requires at least Apache OpenOffice %VERSION"
 msgstr "Tillägget kräver Apache OpenOffice %VERSION eller en nyare version"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
-msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr "Tillägget har inte stöd för nyare versioner än: Apache OpenOffice %VERSION"
+msgid "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgstr ""
+"Tillägget har inte stöd för nyare versioner än: Apache OpenOffice %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
-msgid  "%PRODUCTNAME Basic Library"
+msgid "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME Basic-bibliotek"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
-msgid  "Dialog Library"
+msgid "Dialog Library"
 msgstr "Dialog-bibliotek"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
-msgid  "The library name could not be determined."
+msgid "The library name could not be determined."
 msgstr "Det gick inte att bestämma biblioteket."
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
-msgid  "This library name already exists. Please choose a different name."
+msgid "This library name already exists. Please choose a different name."
 msgstr "Det här biblioteksnamnet finns redan. Välj ett annat namn."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
-msgid  "Enabling: "
+msgid "Enabling: "
 msgstr "Aktiverar: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
-msgid  "Disabling: "
+msgid "Disabling: "
 msgstr "Inaktiverar: "
 
+#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+msgid "Cannot detect media-type: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+msgid "This media-type is not supported: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+msgid "An error occurred while enabling: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+msgid "An error occurred while disabling: "
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
+msgid "Configuration Schema"
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
+msgid "Configuration Data"
+msgstr ""
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
-msgid  "The extension cannot be installed because:\n"
+msgid "The extension cannot be installed because:\n"
 msgstr "Tillägget kan inte installeras eftersom:\n"
 
+#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
+msgid "The extension will not be installed because an error occurred in the Help files:\n"
+msgstr ""
+
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
-msgid  "%MACROLANG Library"
+msgid "%MACROLANG Library"
 msgstr "%MACROLANG-bibliotek"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
-msgid  "Extension"
+msgid "Extension"
 msgstr "Tillägg"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
-msgid  "UNO Dynamic Library Component"
+msgid "UNO Dynamic Library Component"
 msgstr "UNO dynamisk bibliotekskomponent"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
-msgid  "UNO Java Component"
+msgid "UNO Java Component"
 msgstr "UNO Java-komponent"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
-msgid  "UNO Python Component"
+msgid "UNO Python Component"
 msgstr "UNO Python-komponent"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
-msgid  "UNO Components"
+msgid "UNO Components"
 msgstr "UNO komponenter"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
-msgid  "UNO RDB Type Library"
+msgid "UNO RDB Type Library"
 msgstr "UNO RDB-typbibliotek"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
-msgid  "UNO Java Type Library"
+msgid "UNO Java Type Library"
 msgstr "UNO Java-typbibliotek"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
-msgid  "Copying: "
+msgid "Copying: "
 msgstr "Kopiera: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
-msgid  "Error while adding: "
+msgid "Error while adding: "
 msgstr "Fel vid tilläggning: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
-msgid  "Error while removing: "
+msgid "Error while removing: "
 msgstr "Fel vid borttagning: "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
-msgid  "Extension has already been added: "
+msgid "Extension has already been added: "
 msgstr "Tillägget har redan lagts till: "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
-msgid  "There is no such extension deployed: "
+msgid "There is no such extension deployed: "
 msgstr "Det finns inget sådant tillägg installerat: "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
-msgid  "Synchronizing repository for %NAME extensions"
+msgid "Synchronizing repository for %NAME extensions"
 msgstr "Synkronisera databas för %NAME-tillägg"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nDen nyare versionen $DEPLOYED är redan installerad.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Den nyare versionen $DEPLOYED är redan installerad.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nDen nyare versionen $DEPLOYED som kallas $OLDNAME, är redan installerad.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Den nyare versionen $DEPLOYED som kallas $OLDNAME, är redan installerad.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nVersionen är redan installerad.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Versionen är redan installerad.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nNuvarande version som är installerad är $OLDNAME.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Nuvarande version som är installerad är $OLDNAME.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nDen äldre versionen $DEPLOYED är redan installerad.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Den äldre versionen $DEPLOYED är redan installerad.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera version $NEW av tillägget $NAME.\nDen äldre versionen $DEPLOYED som kallas $OLDNAME, är redan installerad.\nKlicka på OK om du vill ersätta det installerade tillägget.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera version $NEW av tillägget $NAME.\n"
+"Den äldre versionen $DEPLOYED som kallas $OLDNAME, är redan installerad.\n"
+"Klicka på OK om du vill ersätta det installerade tillägget.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
+
+#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
+msgid "System dependencies check"
+msgstr ""
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "Tillägget kan inte installeras eftersom följande\nsystemberoenden inte uppfylls:"
+msgid "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+"Tillägget kan inte installeras eftersom följande\n"
+"systemberoenden inte uppfylls:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
-msgid  "Add Extension(s)"
+msgid "Add Extension(s)"
 msgstr "Lägg till tillägg"
 
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
+msgid "~Remove"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
+msgid "~Enable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
+msgid "~Disable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
+msgid "~Update..."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
+msgid "~Options..."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
-msgid  "Adding %EXTENSION_NAME"
-msgstr "Lägga till %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Lägg till %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
+msgid "Removing %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
+msgid "Enabling %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
+msgid "Disabling %EXTENSION_NAME"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
-msgid  "Accept license for %EXTENSION_NAME"
+msgid "Accept license for %EXTENSION_NAME"
 msgstr "Godkänn licens för %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
-msgid  "~For all users"
+msgid "~For all users"
 msgstr "~För alla användare"
 
+#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
+msgid "~Only for me"
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
-msgid  "Error: The status of this extension is unknown"
+msgid "Error: The status of this extension is unknown"
 msgstr "Fel: Status för detta tillägg är okänt"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Stäng"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
-msgid  "Quit"
+msgid "Quit"
 msgstr "Avsluta"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME har uppdaterats till en ny version. Vissa delade paket i %PRODUCTNAME är inte kompatibla med den här versionen. De måste uppdateras innan %PRODUCTNAME kan starta.\n\nDu måste ha administratörsrättigheter för att kunna uppdatera de delade paketen. Ta kontakt med systemadministratören om du vill uppdatera följande delade paket:"
+msgid "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME har uppdaterats till en ny version. Vissa delade paket i %"
+"PRODUCTNAME är inte kompatibla med den här versionen. De måste uppdateras "
+"innan %PRODUCTNAME kan starta.\n"
+"\n"
+"Du måste ha administratörsrättigheter för att kunna uppdatera de delade "
+"paketen. Ta kontakt med systemadministratören om du vill uppdatera följande "
+"delade paket:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
-msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr "Paketet kan inte aktiveras eftersom följande systemberoenden inte uppfylls:"
+msgid "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr ""
+"Paketet kan inte aktiveras eftersom följande systemberoenden inte uppfylls:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr "Det här tillägget är inaktiverat eftersom du inte har godkänt licensen än.\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
-msgid  "Show license"
+msgid "Show license"
 msgstr "Visa licens"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
+msgid "Extension Software License Agreement"
 msgstr "Licensavtal för tillägg"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgid "Please follow these steps to proceed with the installation of the extension:"
 msgstr "Fortsätt installationen av tillägget genom att följa följande steg:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr "Läs det fullständiga licensavtalet. Använd rullningslisten eller knappen Rulla nedåt i dialogrutan om du vill se hela licensavtalet."
+msgid "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
+msgstr ""
+"Läs det fullständiga licensavtalet. Använd rullningslisten eller knappen "
+"Rulla nedåt i dialogrutan om du vill se hela licensavtalet."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgid "Accept the License Agreement for the extension by pressing the \'Accept\' button."
 msgstr "Godkänn licensavtalet för tillägget genom att trycka på Acceptera."
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "~Scroll Down"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
+msgid "Accept"
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "Acceptera inte"
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
+msgid "Extension Software License Agreement"
+msgstr "Licensavtal för tillägg"
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Stäng"
+
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Du håller på att installera tillägget %NAME.\nKlicka på OK om du vill slutföra installationen.\nKlicka på Avbryt om du vill avbryta installationen."
+msgid "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Du håller på att installera tillägget %NAME.\n"
+"Klicka på OK om du vill slutföra installationen.\n"
+"Klicka på Avbryt om du vill avbryta installationen."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Du är på väg att ta bort paketet \\'%NAME\\'.\nKlicka på \\'OK\\' för att ta bort paketet.\nKlicka på \\'Avbryt\\' om du inte vill att paketet tas bort."
+msgid "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Du är på väg att ta bort paketet \\'%NAME\\'.\n"
+"Klicka på \\'OK\\' för att ta bort paketet.\n"
+"Klicka på \\'Avbryt\\' om du inte vill att paketet tas bort."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra delade tillägg i en fleranvändarmiljö.\nKlicka på OK om du vill ta bort tillägget.\nKlicka på Avbryt om du vill avbryta borttagningen av tillägget."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra "
+"delade tillägg i en fleranvändarmiljö.\n"
+"Klicka på OK om du vill ta bort tillägget.\n"
+"Klicka på Avbryt om du vill avbryta borttagningen av tillägget."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr "Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra delade tillägg i en fleranvändarmiljö.\nKlicka på OK om du vill aktivera tillägg.\nKlicka på Avbryt om du vill avbryta aktiveringen av tillägget."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+"Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra "
+"delade tillägg i en fleranvändarmiljö.\n"
+"Klicka på OK om du vill aktivera tillägg.\n"
+"Klicka på Avbryt om du vill avbryta aktiveringen av tillägget."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr "Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra delade tillägg i en fleranvändarmiljö.\nKlicka på OK om du vill avaktivera tillägget.\nKlicka på Avbryt om du vill avbryta avaktiveringen av tillägget."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+"Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra "
+"delade tillägg i en fleranvändarmiljö.\n"
+"Klicka på OK om du vill avaktivera tillägget.\n"
+"Klicka på Avbryt om du vill avbryta avaktiveringen av tillägget."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
-msgid  "The extension \\'%Name\\' does not work on this computer."
+msgid "The extension \'%Name\' does not work on this computer."
 msgstr "Tillägget %Name fungerar inte på denna dator."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
-msgid  "Download and Installation"
+msgid "Download and Installation"
 msgstr "Hämtning och installation"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
-msgid  "Downloading extensions..."
+msgid "Downloading extensions..."
 msgstr "Hämtar tillägg..."
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
+msgid "Result"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
+msgid "Cancel Update"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
-msgid  "Installing extensions..."
+msgid "Installing extensions..."
 msgstr "Installerar tillägg..."
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
+msgid "Installation finished"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
-msgid  "No errors."
+msgid "No errors."
 msgstr "Inga fel."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
-msgid  "Error while downloading extension %NAME. "
+msgid "Error while downloading extension %NAME. "
 msgstr "Det gick inte att hämta tillägget %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
-msgid  "The error message is: "
+msgid "The error message is: "
 msgstr "Felmeddelandet är: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
-msgid  "Error while installing extension %NAME. "
+msgid "Error while installing extension %NAME. "
 msgstr "Det gick inte att installera tillägget %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
-msgid  "The license agreement for extension %NAME was refused. "
+msgid "The license agreement for extension %NAME was refused. "
 msgstr "Licensavtalet för tillägget %NAME godkändes inte. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
-msgid  "The extension will not be installed."
+msgid "The extension will not be installed."
 msgstr "Tillägget kommer inte att installeras."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
-msgid  "Extension Update"
+msgid "Extension Update"
 msgstr "Uppdatering av tillägg"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
+msgid "Checking..."
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
-msgid  "~Available extension updates"
+msgid "~Available extension updates"
 msgstr "~Tillgängliga uppdateringar"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
+msgid "~Show all updates"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
+msgid "Description"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
+msgid "Publisher:"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
+msgid "What is new:"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
-msgid  "Release Notes"
+msgid "Release Notes"
 msgstr "Viktigt"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
+msgid "~Install"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Stäng"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
-msgid  "No new updates are available."
+msgid "No new updates are available."
 msgstr "Det finns inga nya uppdateringar."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
-msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr "Det finns inga nya uppdateringar som kan installeras. Om du vill visa alla uppdateringar markerar du kryssrutan Visa alla uppdateringar."
+msgid "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+"Det finns inga nya uppdateringar som kan installeras. Om du vill visa alla "
+"uppdateringar markerar du kryssrutan Visa alla uppdateringar."
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
+msgid "An error occurred:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
-msgid  "Unknown error."
+msgid "Unknown error."
 msgstr "Okänt fel."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
-msgid  "No more details are available for this update."
+msgid "No more details are available for this update."
 msgstr "Inga fler detaljer är tillgngliga för denna uppdatering."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
-msgid  "The extension cannot be updated because:"
+msgid "The extension cannot be updated because:"
 msgstr "Tillägget kan inte installeras på grund av att:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
-msgid  "Required Apache OpenOffice version doesn't match:"
+msgid "Required Apache OpenOffice version doesn't match:"
 msgstr "En annan version av Apache OpenOffice krävs:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
-msgid  "You have Apache OpenOffice %VERSION"
+msgid "You have Apache OpenOffice %VERSION"
 msgstr "Du har Apache OpenOffice %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
-msgid  "browser based update"
+msgid "browser based update"
 msgstr "webbläsarbaserad uppdatering"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
+msgid "Version"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
-msgid  "Ignore this Update"
+msgid "Ignore this Update"
 msgstr "Ignorera denna uppdatering"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
-msgid  "Ignore all Updates"
+msgid "Ignore all Updates"
 msgstr "Ignorera alla uppdateringar"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
-msgid  "Enable Updates"
+msgid "Enable Updates"
 msgstr "Möjliggör uppdateringar"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
-msgid  "This update will be ignored.\n"
+msgid "This update will be ignored.\n"
 msgstr "Denna uppdatering hoppas över.\n"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr "Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra delade tillägg i en fleranvändarmiljö.\nKlicka på OK om du vill uppdatera tilläggen.\nKlicka på Avbryt om du vill avbryta uppdateringen av tilläggen."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+"Se till att inga andra användare arbetar med %PRODUCTNAME när du vill ändra "
+"delade tillägg i en fleranvändarmiljö.\n"
+"Klicka på OK om du vill uppdatera tilläggen.\n"
+"Klicka på Avbryt om du vill avbryta uppdateringen av tilläggen."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
-msgid  "Extension Manager"
+msgid "Extension Manager"
 msgstr "Tillägg"
 
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
+msgid "~Add..."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "Sök efter ~uppdateringar..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
-msgid  "Get more extensions online..."
+msgid "Get more extensions online..."
 msgstr "Hämta fler tillägg online ..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "Lägg till %EXTENSION_NAME"
 
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Stäng"
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
-msgid  "Extension Update Required"
+msgid "Extension Update Required"
 msgstr "Det krävs en uppdatering av paketet"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr "%PRODUCTNAME har uppdaterats till en ny version. Vissa delade paket i %PRODUCTNAME är inte kompatibla med den här versionen. De måste uppdateras innan de kan användas."
+msgid "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+"%PRODUCTNAME har uppdaterats till en ny version. Vissa delade paket i %"
+"PRODUCTNAME är inte kompatibla med den här versionen. De måste uppdateras "
+"innan de kan användas."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+msgid "Adding %EXTENSION_NAME"
+msgstr "Lägg till %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+msgid "Check for ~Updates..."
+msgstr "Sök efter ~uppdateringar..."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
+msgid "Disable all"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "Se till att inga andra användare arbetar med %PRODUCTNAME när du installerar ett tillägg för alla användare i en fleranvändarmiljö.\n\nFör vem vill du installera tillägget?\n"
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+"Se till att inga andra användare arbetar med %PRODUCTNAME när du installerar "
+"ett tillägg för alla användare i en fleranvändarmiljö.\n"
+"\n"
+"För vem vill du installera tillägget?\n"
+
+#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
+msgid "Installation Status"
+msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
-msgid  "Installation is optimized for clients."
+msgid "Installation is optimized for clients."
 msgstr "Installationen är optimerad för klienter."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
-msgid  "Installation is optimized for servers."
+msgid "Installation is optimized for servers."
 msgstr "Installationen är optimerad för servrar."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
-msgid  "Cannot find Office installation."
+msgid "Cannot find Office installation."
 msgstr "Det gick inte att hitta Office-installationen."
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
-msgid  "Setup"
+msgid "Setup"
 msgstr "Installationsprogram"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
-msgid  "The %PRODUCTNAME Setup"
+msgid "The %PRODUCTNAME Setup"
 msgstr "Installationsprogrammet för %PRODUCTNAME"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
-msgid  "Out of Memory"
+msgid "Out of Memory"
 msgstr "Slut på minne"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
-msgid  "Setup was unable to find the msi package."
+msgid "Setup was unable to find the msi package."
 msgstr "Installationsprogrammet kunde inte hitta msi-paketet."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
-msgid  "Setup was cancelled"
+msgid "Setup was cancelled"
 msgstr "Installationen har avbrutits"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
-msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr "Administratörsbehörighet krävs för att Windows-installeraren ska kunna uppgraderas."
+msgid "Administrator privileges are required for upgrading the Windows Installer."
+msgstr ""
+"Administratörsbehörighet krävs för att Windows-installeraren ska kunna "
+"uppgraderas."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
-msgid  "Setup was unable to find the file '%s'."
+msgid "Setup was unable to find the file '%s'."
 msgstr "Installationsprogrammet kunde inte hitta filen '%s'."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
-msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgid "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Kommandoradsalternativet '%s' är ogiltigt. Använd '/?' för hjälp."
 
 #: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "Paketet kräver version %s eller nyare av Windows Installer. \nDu har Windows Installer %s."
+msgid "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+"Paketet kräver version %s eller nyare av Windows Installer. \n"
+"Du har Windows Installer %s."
 
 #: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "Paketen kräver Windows Installer. \nWindows Installer %s eller en nyare version krävs."
+msgid "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+"Paketen kräver Windows Installer. \n"
+"Windows Installer %s eller en nyare version krävs."
 
 #: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "Använt:\n /? : Visa den här dialogrutan.\n /a : Utför en administrativ installation.\n /j[u|m] : Utför en annonserad installation.\n /q[n] : Visa inte något användargränssnitt (tyst läge).\n"
+msgid "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"Använt:\n"
+" /? : Visa den här dialogrutan.\n"
+" /a : Utför en administrativ installation.\n"
+" /j[u|m] : Utför en annonserad installation.\n"
+" /q[n] : Visa inte något användargränssnitt (tyst läge).\n"
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
-msgid  "There is already a setup process running."
+msgid "There is already a setup process running."
 msgstr "Det finns redan en pågående installationsprocess."
 
+#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
+msgid "An Unknown Error occured!"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
-msgid  "Invalid or incomplete profile."
+msgid "Invalid or incomplete profile."
 msgstr "Ogiltig eller ofullständig profil."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
-msgid  "Unknown Language: %d"
+msgid "Unknown Language: %d"
 msgstr "Okänt språk: %d"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+msgid "Czech"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+msgid "Danish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+msgid "German (Germany)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+msgid "Greek"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "Engelska (USA)"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+msgid "Spanish (Spain)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+msgid "Finnish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+msgid "French (France)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+msgid "Hebrew"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+msgid "Hungarian"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+msgid "Italian (Italy)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+msgid "Japanese"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+msgid "Korean"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+msgid "Dutch (Netherlands)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+msgid "Norwegian (Bokmål)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+msgid "Polish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+msgid "Russian"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
-msgid  "Slovak"
+msgid "Slovak"
 msgstr "slovak"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+msgid "Swedish (Sweden)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+msgid "Thai"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+msgid "Turkish"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "estniska"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+msgid "Portuguese (Portugal)"
+msgstr ""

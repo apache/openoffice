@@ -1,784 +1,886 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
-msgid  "Mozilla/Seamonkey Addressbook Directory"
+msgid "Mozilla/Seamonkey Addressbook Directory"
 msgstr "Κατάλογος βιβλίου διευθύνσεων του Mozilla/Seamonkey"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
-msgid  "Thunderbird Addressbook Directory"
+msgid "Thunderbird Addressbook Directory"
 msgstr "Κατάλογος βιβλίου διευθύνσεων του Thunderbird"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook Express Addressbook"
+msgid "Outlook Express Addressbook"
 msgstr "Βιβλίο διευθύνσεων του Outlook Express"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook (MAPI) Addressbook"
+msgid "Outlook (MAPI) Addressbook"
 msgstr "Βιβλίο διευθύνσεων του Outlook (MAPI)"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
-msgid  "Creating tables is not supported for this kind of address books."
-msgstr "Δεν υποστηρίζεται η δημιουργία πινάκων σε αυτό το είδος βιβλίου διευθύνσεων."
+msgid "Creating tables is not supported for this kind of address books."
+msgstr ""
+"Δεν υποστηρίζεται η δημιουργία πινάκων σε αυτό το είδος βιβλίου διευθύνσεων."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
-msgid  "Cannot create new address books while Mozilla is running."
-msgstr "Δεν είναι δυνατή η δημιουργία νέα βιβλία διευθύνσεων ενώ εκτελείται ο Mozilla."
+msgid "Cannot create new address books while Mozilla is running."
+msgstr ""
+"Δεν είναι δυνατή η δημιουργία νέα βιβλία διευθύνσεων ενώ εκτελείται ο "
+"Mozilla."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
-msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr "Δεν ήταν δυνατή η ανάκτηση καταχώρησης από το βιβλίο διευθύνσεων, προέκυψε κάποιο άγνωστο σφάλμα."
+msgid "An address book entry could not be retrieved, an unknown error occurred."
+msgstr ""
+"Δεν ήταν δυνατή η ανάκτηση καταχώρησης από το βιβλίο διευθύνσεων, προέκυψε "
+"κάποιο άγνωστο σφάλμα."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
-msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr "Δεν ήταν δυνατή η ανάκτηση ονόματος καταλόγου από το βιβλίο διευθύνσεων, προέκυψε κάποιο άγνωστο σφάλμα."
+msgid "An address book directory name could not be retrieved, an unknown error occurred."
+msgstr ""
+"Δεν ήταν δυνατή η ανάκτηση ονόματος καταλόγου από το βιβλίο διευθύνσεων, "
+"προέκυψε κάποιο άγνωστο σφάλμα."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
-msgid  "Timed out while waiting for the result."
+msgid "Timed out while waiting for the result."
 msgstr "Λήξη ορίου χρόνου κατά την αναμονή του αποτελέσματος."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
-msgid  "An error occurred while executing the query."
+msgid "An error occurred while executing the query."
 msgstr "Προέκυψε σφάλμα κατά της εκτέλεση του ερωτήματος."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
-msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr "Δεν είναι δυνατές οι αλλαγές στο βιβλίο διευθύνσεων του mozilla ενώ αυτός εκτελείται."
+msgid "You can't make any changes to mozilla address book when mozilla is running."
+msgstr ""
+"Δεν είναι δυνατές οι αλλαγές στο βιβλίο διευθύνσεων του mozilla ενώ αυτός "
+"εκτελείται."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
-msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr "Το βιβλίο διευθύνσεων του Mozilla τροποποιήθηκε από εξωτερική διεργασία, δεν είναι δυνατή η τροποποίηση του σε αυτή την κατάσταση."
+msgid "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
+msgstr ""
+"Το βιβλίο διευθύνσεων του Mozilla τροποποιήθηκε από εξωτερική διεργασία, δεν "
+"είναι δυνατή η τροποποίηση του σε αυτή την κατάσταση."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
-msgid  "Can't find the requested row."
+msgid "Can't find the requested row."
 msgstr "Αδυναμία εύρεσης της αιτούμενης γραμμής."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
-msgid  "Can't find the card for the requested row."
+msgid "Can't find the card for the requested row."
 msgstr "Αδυναμία εύρεσης της καρτέλας για την αιτούμενη γραμμή."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It needs at least one table."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Χρειάζεται τουλάχιστον έναν πίνακα."
+msgid "The query can not be executed. It needs at least one table."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Χρειάζεται τουλάχιστον έναν πίνακα."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
-msgid  "The driver does not support the 'COUNT' function."
+msgid "The driver does not support the 'COUNT' function."
 msgstr "Ο οδηγός δεν υποστηρίζει την 'COUNT' συνάρτηση."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
-msgid  "This statement type not supported by this database driver."
+msgid "This statement type not supported by this database driver."
 msgstr "Ο τύπος δήλωσης δεν υποστηρίζεται από τον driver της βάσης δεδομένων."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid  "An unknown error occured."
+msgid "An unknown error occured."
 msgstr "Ένα άγνωστο σφάλμα προέκυψε."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
-msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr "Αδυναμία δημιουργίας νέου βιβλίου διευθύνσεων. Ο κωδικός σφάλματος του Mozilla είναι $1$."
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr ""
+"Αδυναμία δημιουργίας νέου βιβλίου διευθύνσεων. Ο κωδικός σφάλματος του "
+"Mozilla είναι $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
-msgid  "The library '$libname$' could not be loaded."
+msgid "The library '$libname$' could not be loaded."
 msgstr "Η βιβλιοθήκη '$libname$' δεν μπορεί να φορτωθεί."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid  "An error occured while refreshing the current row."
+msgid "An error occured while refreshing the current row."
 msgstr "Προέκυψε ένα σφάλμα κατά την ανανέωση της τρέχουσας γραμμής."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid  "An error occured while getting the current row."
+msgid "An error occured while getting the current row."
 msgstr "Προέκυψε ένα σφάλμα κατά την λήψη της τρέχουσας γραμμής."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
-msgid  "The row update can not be canceled."
+msgid "The row update can not be canceled."
 msgstr "Η ενημέρωση σειράς δεν μπορεί να ακυρωθεί."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
-msgid  "A new row can not be created."
+msgid "A new row can not be created."
 msgstr "Δεν μπορεί να δημιουργηθεί μια νέα γραμμή."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Το 'IS NULL' μπορεί να χρησιμοποιηθεί μόνο με ένα όνομα στήλης."
+msgid "The query can not be executed. The 'IS NULL' can only be used with a column name."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Το 'IS NULL' μπορεί να χρησιμοποιηθεί "
+"μόνο με ένα όνομα στήλης."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid  "Illegal cursor movement occured."
+msgid "Illegal cursor movement occured."
 msgstr "Συνέβηκε μια μη συμβατή κίνηση του δρομέα."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
-msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr "Παρακαλώ υποβάλετε το '$position$' της γραμμής πριν την ενημέρωση ή την εισαγωγή νέων γραμμών."
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Παρακαλώ υποβάλετε το '$position$' της γραμμής πριν την ενημέρωση ή την "
+"εισαγωγή νέων γραμμών."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
-msgid  "The update call can not be executed. The row is invalid."
+msgid "The update call can not be executed. The row is invalid."
 msgstr "Δεν είναι δυνατή η εκτέλεση της ενημέρωσης. Η γραμμή δεν είναι έγκυρη."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
-msgid  "The current row can not be saved."
+msgid "The current row can not be saved."
 msgstr "Η τρέχουσα γραμμή δεν μπορεί να αποθηκευτεί."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
-msgid  "No hostname was provided."
+msgid "No hostname was provided."
 msgstr "Δεν υπάρχει όνομα κεντρικού υπολογιστή."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
-msgid  "No Base DN was provided."
+msgid "No Base DN was provided."
 msgstr "Δεν υπάρχει Base DN."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
-msgid  "The connection to the LDAP server could not be established."
+msgid "The connection to the LDAP server could not be established."
 msgstr "Δεν είναι δυνατή η σύνδεση στον εξυπηρετητή LDAP."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
-msgid  "It doesn't exist a connection to the database."
+msgid "It doesn't exist a connection to the database."
 msgstr "Δεν υπάρχει σύνδεση με τη βάση δεδομένων."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "Προσπαθήσατε να ορίσετε μια παράμετρο στη θέση '$pos$' αλλά επιτρέπονται μόνο '$count$' παράμετρο(-οι). Ένας λόγος μπορεί να είναι το ότι η ιδιότητα \"ParameterNameSubstitution\" δεν έχει ορισθεί σε TRUE στην προέλευση δεδομένων."
+msgid "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Προσπαθήσατε να ορίσετε μια παράμετρο στη θέση '$pos$' αλλά επιτρέπονται "
+"μόνο '$count$' παράμετρο(-οι). Ένας λόγος μπορεί να είναι το ότι η ιδιότητα "
+"\"ParameterNameSubstitution\" δεν έχει ορισθεί σε TRUE στην προέλευση "
+"δεδομένων."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
-msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr "Το τέλος του InputStream έφθασε πριν να ικανοποιηθεί η διάρκεια για την οποία είχε ορισθεί το InputStream."
+msgid "End of InputStream reached before satisfying length specified when InputStream was set."
+msgstr ""
+"Το τέλος του InputStream έφθασε πριν να ικανοποιηθεί η διάρκεια για την "
+"οποία είχε ορισθεί το InputStream."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
-msgid  "The input stream was not set."
+msgid "The input stream was not set."
 msgstr "Δεν έχει ορισθεί το input stream."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
-msgid  "There is no element named '$name$'."
+msgid "There is no element named '$name$'."
 msgstr "Δεν υπάρχει στοιχείο με όνομα '$name$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
-msgid  "Invalid bookmark value"
+msgid "Invalid bookmark value"
 msgstr "Μη έγκυρη τιμή σελιδοδείκτη"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
-msgid  "Privilege not granted: Only table privileges can be granted."
+msgid "Privilege not granted: Only table privileges can be granted."
 msgstr "Δεν δόθηκε προνόμιο: Μόνο προνόμια πίνακα μπορούν να δοθούν."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
-msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr "Το προνόμιο δεν ανακλήθηκε: Η ανάκληση είναι μόνο για τα προνόμια πινάκων."
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr ""
+"Το προνόμιο δεν ανακλήθηκε: Η ανάκληση είναι μόνο για τα προνόμια πινάκων."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
-msgid  "The column name '$columnname$' is unknown."
+msgid "The column name '$columnname$' is unknown."
 msgstr "Το όνομα στήλης '$columnname$' είναι άγνωστο."
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
-msgid  "Function sequence error."
+msgid "Function sequence error."
 msgstr "Σφάλμα συνέχειας συνάρτησης."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid descriptor index."
+msgid "Invalid descriptor index."
 msgstr "Μη έγκυρο descriptor index."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
-msgid  "The driver does not support the function '$functionname$'."
+msgid "The driver does not support the function '$functionname$'."
 msgstr "Ο οδηγός δεν υποστηρίζει τη συνάρτηση '$functionname$'."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
-msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr "Ο driver δεν υποστηρίζει τη λειτουργικότητα για το '$featurename$'. Δεν έχει εφαρμοσθεί."
+msgid "The driver does not support the functionality for '$featurename$'. It is not implemented."
+msgstr ""
+"Ο driver δεν υποστηρίζει τη λειτουργικότητα για το '$featurename$'. Δεν έχει "
+"εφαρμοσθεί."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
-msgid  "The formula for TypeInfoSettings is wrong!"
+msgid "The formula for TypeInfoSettings is wrong!"
 msgstr "Ο τύπος για το TypeInfoSettings είναι λάθος!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
-msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr "Το αλφαριθμητικό '$string$' υπερβαίνει τον μέγιστο αριθμό των $maxlen$ χαρακτήρων όταν μετατρέπεται στην κωδικοποίηση χαρακτήρων '$charset$'."
+msgid "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
+msgstr ""
+"Το αλφαριθμητικό '$string$' υπερβαίνει τον μέγιστο αριθμό των $maxlen$ "
+"χαρακτήρων όταν μετατρέπεται στην κωδικοποίηση χαρακτήρων '$charset$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
-msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "Το αλφαριθμητικό '$string$' δεν μπορεί να μετατραπεί στην κωδικοποίηση χαρακτήρων '$charset$'."
+msgid "The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr ""
+"Το αλφαριθμητικό '$string$' δεν μπορεί να μετατραπεί στην κωδικοποίηση "
+"χαρακτήρων '$charset$'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
-msgid  "The connection URL is invalid."
+msgid "The connection URL is invalid."
 msgstr "Το URL σύνδεσης δεν είναι έγκυρο."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. It is too complex."
+msgid "The query can not be executed. It is too complex."
 msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Είναι υπερβολικά πολύπλοκο."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The operator is too complex."
-msgstr "Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Ο τελεστής είναι πολύπλοκος."
+msgid "The query can not be executed. The operator is too complex."
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Ο τελεστής είναι πολύπλοκος."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Δεν μπορείτε να χρησιμοποιήσετε το 'LIKE' σε στήλες τέτοιου τύπου."
+msgid "The query can not be executed. You cannot use 'LIKE' with columns of this type."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Δεν μπορείτε να χρησιμοποιήσετε το "
+"'LIKE' σε στήλες τέτοιου τύπου."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
-msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr "Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Το 'LIKE' μπορεί να χρησιμοποιηθεί μόνο ως εντολή αλφαριθμητικού."
+msgid "The query can not be executed. 'LIKE' can be used with a string argument only."
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Το 'LIKE' μπορεί να "
+"χρησιμοποιηθεί μόνο ως εντολή αλφαριθμητικού."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Η συνθήκη 'NOT LIKE' είναι υπερβολικά πολύπλοκη."
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Η συνθήκη 'NOT LIKE' είναι υπερβολικά "
+"πολύπλοκη."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr "Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Η συνθήκη 'LIKE' περιέχει ένα χαρακτήρα μπαλαντέρ στο μέσο της."
+msgid "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Η συνθήκη 'LIKE' περιέχει ένα "
+"χαρακτήρα μπαλαντέρ στο μέσο της."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr "Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Η συνθήκη 'LIKE' περιέχει πάρα πολλούς χαρακτήρες μπαλαντέρ."
+msgid "The query can not be executed. The 'LIKE' condition contains too many wildcards."
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση του ερωτήματος. Η συνθήκη 'LIKE' περιέχει πάρα "
+"πολλούς χαρακτήρες μπαλαντέρ."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
-msgid  "The column name '$columnname$' is not valid."
+msgid "The column name '$columnname$' is not valid."
 msgstr "Το όνομα στήλης '$columnname$' δεν είναι έγκυρο."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
-msgid  "The statement contains an invalid selection of columns."
+msgid "The statement contains an invalid selection of columns."
 msgstr "Η εντολή περιέχει μη έγκυρη επιλογή γραμμών."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
-msgid  "The column at position '$position$' could not be updated."
+msgid "The column at position '$position$' could not be updated."
 msgstr "Η στήλη στη θέση '$position$' δεν μπορεί να ενημερωθεί."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be loaded."
+msgid "The file $filename$ could not be loaded."
 msgstr "Το αρχείο $filename$ δεν μπορεί να φορτωθεί."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr "Η προσπάθεια φόρτωσης του αρχείου είχε σαν αποτέλεσμα το ακόλουθο μήνυμα λάθους ($exception_type$):\n\n$error_message$"
+msgid "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
+msgstr ""
+"Η προσπάθεια φόρτωσης του αρχείου είχε σαν αποτέλεσμα το ακόλουθο μήνυμα "
+"λάθους ($exception_type$):\n"
+"\n"
+"$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
-msgid  "The type could not be converted."
+msgid "The type could not be converted."
 msgstr "Ο τύπος δεν μπορεί να μετατραπεί."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not append column: invalid column descriptor."
+msgid "Could not append column: invalid column descriptor."
 msgstr "Αδυναμία πρόσθεσης στήλης: μη έγκυρος περιγραφέας στήλης."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create group: invalid object descriptor."
+msgid "Could not create group: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας ομάδας: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create index: invalid object descriptor."
+msgid "Could not create index: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας index: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create key: invalid object descriptor."
+msgid "Could not create key: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας κλειδιού: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create table: invalid object descriptor."
+msgid "Could not create table: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας πίνακα: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create user: invalid object descriptor."
+msgid "Could not create user: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας χρήστη: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create view: invalid object descriptor."
+msgid "Could not create view: invalid object descriptor."
 msgstr "Αδυναμία δημιουργίας προβολής: μη έγκυρος περιγραφέας αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
-msgid  "Could not create view: no command object."
+msgid "Could not create view: no command object."
 msgstr "Αδυναμία δημιουργίας προβολής: δεν υπάρχει εντολή αντικειμένου."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
-msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr "Αδυναμία δημιουργίας σύνδεσης. Μπορεί να μην έχουν εγκατασταθεί οι απαιτούμενο πάροχοι δεδομένων."
+msgid "The connection could not be created. May be the necessary data provider is not installed."
+msgstr ""
+"Αδυναμία δημιουργίας σύνδεσης. Μπορεί να μην έχουν εγκατασταθεί οι "
+"απαιτούμενο πάροχοι δεδομένων."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "Αδυναμία διαγραφής index. Συνέβηκε ένα άγνωστο σφάλμα κατά τη πρόσβαση στο σύστημα αρχείων."
+msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgstr ""
+"Αδυναμία διαγραφής index. Συνέβηκε ένα άγνωστο σφάλμα κατά τη πρόσβαση στο "
+"σύστημα αρχείων."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
-msgid  "The index could not be created. Only one column per index is allowed."
+msgid "The index could not be created. Only one column per index is allowed."
 msgstr "Αδυναμία δημιουργίας index. Επιτρέπεται μόνο μια στήλη ανά index."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
-msgid  "The index could not be created. The values are not unique."
+msgid "The index could not be created. The values are not unique."
 msgstr "Αδυναμία δημιουργίας index. Οι τιμές δεν είναι μοναδικές."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
-msgid  "The index could not be created. An unknown error appeared."
+msgid "The index could not be created. An unknown error appeared."
 msgstr "Αδυναμία δημιουργίας index. Συνέβηκε ένα άγνωστο σφάλμα."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
-msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr "Αδυναμία δημιουργίας index. Το αρχείο '$filename$' χρησιμοποιείται από άλλο index."
+msgid "The index could not be created. The file '$filename$' is used by an other index."
+msgstr ""
+"Αδυναμία δημιουργίας index. Το αρχείο '$filename$' χρησιμοποιείται από άλλο "
+"index."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
 #, fuzzy
-msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr "Αδυναμία δημιουργίας index. Το μέγεθος της επιλεγμένης στήλης είναι πολύ μεγάλο."
+msgid "The index could not be created. The size of the chosen column is too big."
+msgstr ""
+"Αδυναμία δημιουργίας index. Το μέγεθος της επιλεγμένης στήλης είναι πολύ "
+"μεγάλο."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
-msgid  "The name '$name$' doesn't match SQL naming constraints."
+msgid "The name '$name$' doesn't match SQL naming constraints."
 msgstr "Το όνομα '$name$' είναι εκτός των περιορισμών της SQL."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 #, fuzzy
-msgid  "The file $filename$ could not be deleted."
+msgid "The file $filename$ could not be deleted."
 msgstr "Το αρχείο $filename$ δεν μπορεί να διαγραφεί."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Invalid column type for column '$columnname$'."
+msgid "Invalid column type for column '$columnname$'."
 msgstr "Μη έγκυρος τύπος στήλης για τη στήλη '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
 #, fuzzy
-msgid  "Invalid precision for column '$columnname$'."
+msgid "Invalid precision for column '$columnname$'."
 msgstr "Μη έγκυρη ακρίβεια για τη στήλη '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Precision is less than scale for column '$columnname$'."
+msgid "Precision is less than scale for column '$columnname$'."
 msgstr "Η ακρίβεια είναι μικρότερη από την κλίμακα για τη στήλη '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Invalid column name length for column '$columnname$'."
+msgid "Invalid column name length for column '$columnname$'."
 msgstr "Μη έγκυρο μήκος ονόματος στήλης για τη στήλη '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Duplicate value found in column '$columnname$'."
+msgid "Duplicate value found in column '$columnname$'."
 msgstr "Βρέθηκε διπλή τιμή στη στήλη '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
-msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr "Η στήλη '$columnname$' έχει καθοριστεί ως \"Δεκαδικός\" τύπος, το μέγιστο μήκος είναι $precision$ χαρακτήρες (με $scale$ δεκαδικά ψηφία).\n\nΗ ορισμένη τιμή \"$value$ είναι μεγαλύτερη από τον αριθμό των ψηφίων που επιτρέπονται."
+msgid "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"Η στήλη '$columnname$' έχει καθοριστεί ως \"Δεκαδικός\" τύπος, το μέγιστο "
+"μήκος είναι $precision$ χαρακτήρες (με $scale$ δεκαδικά ψηφία).\n"
+"\n"
+"Η ορισμένη τιμή \"$value$ είναι μεγαλύτερη από τον αριθμό των ψηφίων που "
+"επιτρέπονται."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr "Η στήλη '$columnname$' δεν μπορεί να αλλαχτεί. Ίσως το σύστημα αρχείων να έχει προστασία εγγραφής."
+msgid "The column '$columnname$' could not be altered. May be the file system is write protected."
+msgstr ""
+"Η στήλη '$columnname$' δεν μπορεί να αλλαχτεί. Ίσως το σύστημα αρχείων να "
+"έχει προστασία εγγραφής."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr "Η στήλη '$columnname$' δεν μπορεί να ενημερωθεί. Η τιμή δεν είναι έγκυρη για αυτή τη στήλη."
+msgid "The column '$columnname$' could not be updated. The value is invalid for that column."
+msgstr ""
+"Η στήλη '$columnname$' δεν μπορεί να ενημερωθεί. Η τιμή δεν είναι έγκυρη για "
+"αυτή τη στήλη."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr "Η στήλη '$columnname$' δεν μπορεί να προστεθεί. Ίσως το σύστημα αρχείων να έχει προστασία εγγραφής."
+msgid "The column '$columnname$' could not be added. May be the file system is write protected."
+msgstr ""
+"Η στήλη '$columnname$' δεν μπορεί να προστεθεί. Ίσως το σύστημα αρχείων να "
+"έχει προστασία εγγραφής."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 #, fuzzy
-msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr "Δεν είναι δυνατή η απόρριψη της στήλης στη θέση '$position$' . Πιθανόν το σύστημα αρχείων να έχει προστασία εγγραφής."
+msgid "The column at position '$position$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Δεν είναι δυνατή η απόρριψη της στήλης στη θέση '$position$' . Πιθανόν το "
+"σύστημα αρχείων να έχει προστασία εγγραφής."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
-msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr "Δεν είναι δυνατή η απόρριψη του '$tablename$' πίνακα. Πιθανώς το σύστημα αρχείων να έχει προστασία εγγραφής."
+msgid "The table '$tablename$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Δεν είναι δυνατή η απόρριψη του '$tablename$' πίνακα. Πιθανώς το σύστημα "
+"αρχείων να έχει προστασία εγγραφής."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "The table could not be altered."
+msgid "The table could not be altered."
 msgstr "Ο πίνακας δεν μπορεί να αλλαχτεί."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 #, fuzzy
-msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr "Το αρχείο '$filename$' δεν είναι έγκυρο (ή μη αναγνωρίσιμο) αρχείο dBase."
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgstr ""
+"Το αρχείο '$filename$' δεν είναι έγκυρο (ή μη αναγνωρίσιμο) αρχείο dBase."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 #, fuzzy
-msgid  "Cannot open Evolution address book."
+msgid "Cannot open Evolution address book."
 msgstr "Αδυναμία ανοίγματος βιβλίου διευθύνσεων Evolution."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
-msgid  "Can only sort by table columns."
+msgid "Can only sort by table columns."
 msgstr "Είναι δυνατή η ταξινόμηση μόνο στηλών πίνακα."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Είναι υπερβολικά πολύπλοκο. Μόνο το \"COUNT(*)\" υποστηρίζεται."
+msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Είναι υπερβολικά πολύπλοκο. Μόνο το "
+"\"COUNT(*)\" υποστηρίζεται."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "Αδυναμία εκτέλεσης ερωτήματος. Οι τιμές στο 'BETWEEN' δεν είναι σωστές."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. The function is not supported."
+msgid "The query can not be executed. The function is not supported."
 msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Η συνάρτηση δεν υποστηρίζεται."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "The table can not be changed. It is read only."
+msgid "The table can not be changed. It is read only."
 msgstr "Ο πίνακας δεν μπορεί να αλλαχτεί. Είναι μόνο για ανάγνωση."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
-msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr "Αδυναμία διαγραφής γραμμής. Η επιλογή \"Εμφάνιση ανενεργών εγγραφών\" έχει ορισθεί."
+msgid "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Αδυναμία διαγραφής γραμμής. Η επιλογή \"Εμφάνιση ανενεργών εγγραφών\" έχει "
+"ορισθεί."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 #, fuzzy
-msgid  "The row could not be deleted. It is already deleted."
+msgid "The row could not be deleted. It is already deleted."
 msgstr "Η γραμμή δεν μπορεί να διαγραφεί. Είναι ήδη διεγραμμένη."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains more than one table."
-msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Περιέχει περισσότερους από έναν πίνακες."
+msgid "The query can not be executed. It contains more than one table."
+msgstr ""
+"Το ερώτημα δεν μπορεί να εκτελεστεί. Περιέχει περισσότερους από έναν "
+"πίνακες."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains no valid table."
+msgid "The query can not be executed. It contains no valid table."
 msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Δεν περιέχει έγκυρο πίνακα."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains no valid columns."
+msgid "The query can not be executed. It contains no valid columns."
 msgstr "Το ερώτημα δεν μπορεί να εκτελεστεί. Δεν περιέχει έγκυρες στήλες."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr "Η καταμέτρηση των τιμών της δοθείσας παραμέτρου δε ταιριάζει με τις παραμέτρους."
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr ""
+"Η καταμέτρηση των τιμών της δοθείσας παραμέτρου δε ταιριάζει με τις "
+"παραμέτρους."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 #, fuzzy
-msgid  "The URL '$URL$' is not valid. A connection can not be created."
+msgid "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "Το URL '$URL$' δεν είναι έγκυρο. Δεν μπορεί να δημιουργηθεί σύνδεση."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
-msgid  "The driver class '$classname$' could not be loaded."
+msgid "The driver class '$classname$' could not be loaded."
 msgstr "Αδυναμία φόρτωσης του '$classname$' driver class."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 #, fuzzy
-msgid  "No Java installation could be found. Please check your installation."
-msgstr "Δεν βρέθηκε εγκατάσταση της Java. Παρακαλούμε ελέγξτε την εγκατάσταση σας."
+msgid "No Java installation could be found. Please check your installation."
+msgstr ""
+"Δεν βρέθηκε εγκατάσταση της Java. Παρακαλούμε ελέγξτε την εγκατάσταση σας."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 #, fuzzy
-msgid  "The execution of the query doesn't return a valid result set."
+msgid "The execution of the query doesn't return a valid result set."
 msgstr "Η εκτέλεση του ερωτήματος δεν έφερε κάποιο έγκυρο αποτέλεσμα."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 #, fuzzy
-msgid  "The execution of the update statement doesn't effect any rows."
+msgid "The execution of the update statement doesn't effect any rows."
 msgstr "Η εκτέλεση της δήλωσης ενημέρωσης δεν επηρεάζει καμία γραμμή."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 #, fuzzy
-msgid  "The additional driver class path is '$classpath$'."
+msgid "The additional driver class path is '$classpath$'."
 msgstr "Η διαδρομή κλάσης του επιπρόσθετου driver είναι '$classpath$'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "The type of parameter at position '$position$' is unknown."
+msgid "The type of parameter at position '$position$' is unknown."
 msgstr "Ο τύπος της παραμέτρου στη θέση '$position$' είναι άγνωστος."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "The type of column at position '$position$' is unknown."
+msgid "The type of column at position '$position$' is unknown."
 msgstr "Ο τύπος της στήλης στη θέση '$position$' είναι άγνωστος."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 #, fuzzy
-msgid  "No suitable KDE installation was found."
+msgid "No suitable KDE installation was found."
 msgstr "Δεν βρέθηκε κατάλληλη εγκατάσταση του KDE."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 #, fuzzy
-msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr "Απαιτείται η έκδοση του KDE $major$.$minor$ ή νεότερη για την πρόσβαση στο βιβλίο διευθύνσεων KDE."
+msgid "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
+msgstr ""
+"Απαιτείται η έκδοση του KDE $major$.$minor$ ή νεότερη για την πρόσβαση στο "
+"βιβλίο διευθύνσεων KDE."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 #, fuzzy
-msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr "Η έκδοση του KDE που βρέθηκε είναι πολύ νέα. Μόνο μέχρι την έκδοση $major$.$minor$ του KDE είναι γνωστό πως δουλεύει με αυτό το προϊόν.\n"
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
+msgstr "Η έκδοση του KDE που βρέθηκε είναι πολύ νέα. Μόνο μέχρι την έκδοση "
+"$major$.$minor$ του KDE είναι γνωστό πως δουλεύει με αυτό το προϊόν.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 #, fuzzy
-msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr "Αν είστε σίγουρος πως η έκδοση σας του KDE δουλεύει, μπορείτε να εκτελέσετε την ακόλουθη μακροεντολή Basic για να απενεργοποιήσετε αυτόν τον έλεγχο έκδοσης:\n\n"
+msgid "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
+msgstr ""
+"Αν είστε σίγουρος πως η έκδοση σας του KDE δουλεύει, μπορείτε να εκτελέσετε "
+"την ακόλουθη μακροεντολή Basic για να απενεργοποιήσετε αυτόν τον έλεγχο "
+"έκδοσης:\n"
+"\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 #, fuzzy
-msgid  "Parameters can appear only in prepared statements."
+msgid "Parameters can appear only in prepared statements."
 msgstr "Οι παράμετροι μπορούν να εμφανιστούν μόνο σε προετοιμασμένες δηλώσεις."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "No such table!"
+msgid "No such table!"
 msgstr "Δεν υπάρχει τέτοιος πίνακας!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "No suitable Mac OS installation was found."
+msgid "No suitable Mac OS installation was found."
 msgstr "Δεν βρέθηκε κατάλληλη εγκατάσταση του Mac OS."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 #, fuzzy
-msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr "Το αρχείο βάσης δεδομένων '$filename$' δεν μπόρεσε να δημιουργηθεί. Παρακαλούμε ελέγξτε τον ελεύθερο χώρο του δίσκου σας."
+msgid "The database file '$filename$' could not be created. Please check your disk space."
+msgstr ""
+"Το αρχείο βάσης δεδομένων '$filename$' δεν μπόρεσε να δημιουργηθεί. "
+"Παρακαλούμε ελέγξτε τον ελεύθερο χώρο του δίσκου σας."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr "Η βάση δεδομένων '$databasename$' δεν μπορεί να εκκινηθεί επειδή η εντολή '$progname$' δεν μπόρεσε να εκτελεστεί."
+msgid "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
+msgstr ""
+"Η βάση δεδομένων '$databasename$' δεν μπορεί να εκκινηθεί επειδή η εντολή "
+"'$progname$' δεν μπόρεσε να εκτελεστεί."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr "Η τρέχουσα βάση δεδομένων χρειάζεται να μετατραπεί. Παρακαλούμε εισάγετε το όνομα χρήστη   και τον κωδικό."
+msgid "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+"Η τρέχουσα βάση δεδομένων χρειάζεται να μετατραπεί. Παρακαλούμε εισάγετε το "
+"όνομα χρήστη   και τον κωδικό."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr "Ο χρήστης δεν μπορεί να διαγραφεί. Αλλιώς η βάση δεδομένων θα μείνει σε μια μη σταθερή κατάσταση."
+msgid "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
+msgstr ""
+"Ο χρήστης δεν μπορεί να διαγραφεί. Αλλιώς η βάση δεδομένων θα μείνει σε μια "
+"μη σταθερή κατάσταση."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 #, fuzzy
-msgid  "The connection can not be established. No storage or URL was given."
-msgstr "Η σύνδεση δεν μπόρεσε να επιτευχθεί. Δεν δόθηκε αποθηκευτικός χώρος ή URL."
+msgid "The connection can not be established. No storage or URL was given."
+msgstr ""
+"Η σύνδεση δεν μπόρεσε να επιτευχθεί. Δεν δόθηκε αποθηκευτικός χώρος ή URL."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 #, fuzzy
-msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr "Το δοθέν URL δεν περιέχει έγκυρη διαδρομή τοπικού αρχείου συστήματος. Ελέγξτε την τοποθεσία και προσπαθήστε ξανά."
+msgid "The given URL contains no valid local file system path. Please check the location of your database file."
+msgstr ""
+"Το δοθέν URL δεν περιέχει έγκυρη διαδρομή τοπικού αρχείου συστήματος. "
+"Ελέγξτε την τοποθεσία και προσπαθήστε ξανά."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 #, fuzzy
-msgid  "An error occured while obtaining the connection's table container."
+msgid "An error occured while obtaining the connection's table container."
 msgstr "Συνέβηκε ένα σφάλμα κατά τη λήψη του περιέκτη του πίνακα σύνδεσης."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 #, fuzzy
-msgid  "An error occured while creating the table editor dialog."
-msgstr "Συνέβηκε ένα σφάλμα κατά τη δημιουργία του διαλόγου επεξεργασίας πίνακα."
+msgid "An error occured while creating the table editor dialog."
+msgstr ""
+"Συνέβηκε ένα σφάλμα κατά τη δημιουργία του διαλόγου επεξεργασίας πίνακα."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
-msgid  "There is no table named '$tablename$'."
+msgid "There is no table named '$tablename$'."
 msgstr "Δεν υπάρχει πίνακας με όνομα '$tablename$'."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 #, fuzzy
-msgid  "The provided DocumentUI is not allowed to be NULL."
+msgid "The provided DocumentUI is not allowed to be NULL."
 msgstr "Το παρεχόμενο DocumentUI δεν επιτρέπεται να είναι NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 #, fuzzy
-msgid  "The record operation has been vetoed."
+msgid "The record operation has been vetoed."
 msgstr "Αρνησικυρία κατά την διεργασία εγγραφής."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 #, fuzzy
-msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr "Η δήλωση περιέχει μια κυκλική αναφορά σε ένα ή περισσότερα υποερωτήματα."
+msgid "The statement contains a cyclic reference to one or more sub queries."
+msgstr ""
+"Η δήλωση περιέχει μια κυκλική αναφορά σε ένα ή περισσότερα υποερωτήματα."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 #, fuzzy
-msgid  "The name must not contain any slashes ('/')."
+msgid "The name must not contain any slashes ('/')."
 msgstr "Το όνομα δεν πρέπει να περιέχει καθέτους ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 #, fuzzy
-msgid  "$1$ is no SQL conform identifier."
+msgid "$1$ is no SQL conform identifier."
 msgstr "Το $1$ δεν είναι συμβατό αναγνωριστικό SQL."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 #, fuzzy
-msgid  "Query names must not contain quote characters."
+msgid "Query names must not contain quote characters."
 msgstr "Τα ονόματα ερωτημάτων δεν πρέπει να περιέχουν χαρακτήρες εισαγωγικών."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 #, fuzzy
-msgid  "The name '$1$' is already in use in the database."
+msgid "The name '$1$' is already in use in the database."
 msgstr "Το όνομα '$1$' χρησιμοποιείται ήδη στη βάση δεδομένων."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 #, fuzzy
-msgid  "No connection to the database exists."
+msgid "No connection to the database exists."
 msgstr "Δεν υπάρχει σύνδεση με την βάση δεδομένων."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
 #, fuzzy
-msgid  "No $1$ exists."
+msgid "No $1$ exists."
 msgstr "Δεν υπάρχει $1$."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 #, fuzzy
-msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr "Αδυναμία εμφάνισης ολόκληρου του περιεχομένου του πίνακα. Παρακαλούμε εφαρμόστε ένα φίλτρο."
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr ""
+"Αδυναμία εμφάνισης ολόκληρου του περιεχομένου του πίνακα. Παρακαλούμε "
+"εφαρμόστε ένα φίλτρο."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Adabas D"
+msgid "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (JDBC)"
+msgid "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (ODBC)"
+msgid "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (Native)"
+msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Outlook Address Book"
+msgid "Microsoft Outlook Address Book"
 msgstr "Βιβλίο διευθύνσεων Microsoft Outlook"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Windows Address Book"
+msgid "Microsoft Windows Address Book"
 msgstr "Βιβλίο διευθύνσεων Microsoft Windows"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr "Βιβλίο διευθύνσεων Mozilla"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Βιβλίο διευθύνσεων Thunderbird"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Βιβλίο διευθύνσεων LDAP"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr "Βιβλίο διευθύνσεων Mozilla"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Βιβλίο διευθύνσεων Thunderbird"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Βιβλίο διευθύνσεων LDAP"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "HSQL database engine"
+msgid "HSQL database engine"
 msgstr "Μηχανή βάσης δεδομένων HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Mac OS X Address Book"
+msgid "Mac OS X Address Book"
 msgstr "Βιβλίο διευθύνσεων Mac OS X"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "ODBC"
+msgid "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "KDE Address Book"
+msgid "KDE Address Book"
 msgstr "Βιβλίο διευθύνσεων KDE"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Κείμενο"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Υπολογιστικό φύλλο"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "JDBC"
+msgid "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Oracle JDBC"
+msgid "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "dBASE"
+msgid "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution Local"
+msgid "Evolution Local"
 msgstr "Evolution Local"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "ADO"
+msgid "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Access"
+msgid "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Access 2007"
+msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

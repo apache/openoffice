@@ -1,816 +1,885 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-09-04 15:49+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: genLang\n"
-
+"X-POOTLE-MTIME: 1378309773.0\n"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
-msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgid "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
 msgstr "まずフォントをインポートするフォルダを選択してください。それから選択したフォントを追加するのに OK ボタンを押します。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
-msgid  "Source directory"
+msgid "Source directory"
 msgstr "ソースディレクトリ"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
-msgid  "Sea~rch Subdirectories"
+msgid "Sea~rch Subdirectories"
 msgstr "サブディレクトリを検索(~R)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
-msgid  "Target options"
+msgid "Target options"
 msgstr "ターゲットオプション"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
-msgid  "Create ~soft links only"
+msgid "Create ~soft links only"
 msgstr "追加時にソフトリンクのみ格納(~S)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
-msgid  "~Select All"
+msgid "~Select All"
 msgstr "すべて選択(~S)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
-msgid  "Add fonts"
+msgid "Add fonts"
 msgstr "フォントを追加します"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "次のフォントファイルを上書きしますか。\n   %s"
+msgid "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
+"次のフォントファイルを上書きしますか。\n"
+"   %s"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "すべて"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "なし"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "フォントファイル\n%s\nの書式ファイル(.afm 拡張子)が見つからなかったので、インストールできませんでした。書式ファイルは、ghostscript などで作成できますが、その際に書式ファイルと同じディレクトリか、あるいはそのサブディレクトリに afm にあることが必要です。"
+msgid "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+"フォントファイル\n"
+"%s\n"
+"の書式ファイル(.afm 拡張子)が見つからなかったので、インストールできませんでした。書式ファイルは、ghostscript "
+"などで作成できますが、その際に書式ファイルと同じディレクトリか、あるいはそのサブディレクトリに afm にあることが必要です。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "フォントファイル\n   %s\nのメトリックファイルは、コピーできませんでした。フォントはインストールされません。"
+msgid "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"フォントファイル\n"
+"   %s\n"
+"のメトリックファイルは、コピーできませんでした。フォントはインストールされません。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "フォントファイル\n   %s\nをコピーできませんでした。フォントはインストールできません。"
+msgid "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"フォントファイル\n"
+"   %s\n"
+"をコピーできませんでした。フォントはインストールできません。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
-msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgid "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
 msgstr "書き込み可能な fonts.dir ファイルを含むディレクトリは、フォントパスに見つかりませんでした。フォントはインストールできません。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
-msgid  "%d new fonts were added."
+msgid "%d new fonts were added."
 msgstr "新しいフォントが %d 追加されました。"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
-msgid  "Add Fonts"
+msgid "Add Fonts"
 msgstr "フォントの追加"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
-msgid  "CUPS support"
+msgid "CUPS support"
 msgstr "CUPS サポート"
 
 #: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
-msgid  "Disable CUPS Support"
+msgid "Disable CUPS Support"
 msgstr "CUPS サポートの無効化"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "閉じる"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
-msgid  "Installed ~printers"
+msgid "Installed ~printers"
 msgstr "インストールされているプリンタ(~P)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Command:"
+msgid "Command:"
 msgstr "コマンド:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Driver:"
+msgid "Driver:"
 msgstr "ドライバ:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "場所:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "コメント:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "プロパティー..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "R~ename..."
+msgid "R~ename..."
 msgstr "名前の変更(~E)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "標準(~D)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
-msgid  "Remo~ve..."
+msgid "Remo~ve..."
 msgstr "削除(~V)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
-msgid  "Test ~Page"
+msgid "Test ~Page"
 msgstr "テストページ(~P)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
-msgid  "Fon~ts..."
+msgid "Fon~ts..."
 msgstr "フォント(~T)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "New Printer..."
+msgid "New Printer..."
 msgstr "新しいプリンタ..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "標準プリンタ"
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
-msgid  "Rename"
+msgid "Rename"
 msgstr "名前の変更"
 
 #: padialog.src#RID_PADIALOG.STRING.TEXT
-msgid  "Printer Administration"
+msgid "Printer Administration"
 msgstr "プリンタの管理"
 
 #: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
-msgid  "Could not open printer %s."
+msgid "Could not open printer %s."
 msgstr "プリンタ %s を開けませんでした。"
 
 #: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
-msgid  "The test page was printed succesfully. Please check the result."
+msgid "The test page was printed succesfully. Please check the result."
 msgstr "テストページは正常に終了しました。印刷結果を確認してください。"
 
 #: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr "ファイルシステムが読み取り専用のためプリンタがインストールできません。\nシステム管理者に連絡を取ってください。"
+msgid "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+"ファイルシステムが読み取り専用のためプリンタがインストールできません。\n"
+"システム管理者に連絡を取ってください。"
 
 #: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
-msgid  "~New printer name"
+msgid "~New printer name"
 msgstr "新しいプリンタ名(~N)"
 
 #: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
-msgid  "Model"
+msgid "Model"
 msgstr "モデル"
 
 #: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "名前"
 
 #: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
-msgid  "Comment"
+msgid "Comment"
 msgstr "コメント"
 
 #: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
-msgid  "Queue"
+msgid "Queue"
 msgstr "キュー"
 
 #: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "日付"
 
 #: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "時刻"
 
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
+msgid "Close"
+msgstr "閉じる"
+
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "Re~name..."
+msgid "Re~name..."
 msgstr "名前の変更(~N)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Remove..."
+msgid "~Remove..."
 msgstr "削除(~R)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "追加(~A)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
-msgid  "Note: The fonts are only available to the applications."
+msgid "Note: The fonts are only available to the applications."
 msgstr "ヒント: フォントはアプリケーションでのみ使用可能です。"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
-msgid  "~New name for %s"
+msgid "~New name for %s"
 msgstr "%s の新しい名前(~N)"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
-msgid  "~New name for %s (%d1 of %d2)"
+msgid "~New name for %s (%d1 of %d2)"
 msgstr "%s(%d2 の %d1)の新しい名前(~N)"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
-msgid  "The font %s cannot be renamed due to missing write permission."
+msgid "The font %s cannot be renamed due to missing write permission."
 msgstr "書き込む権利がないため、フォント %s の名前は変更できません。"
 
 #: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
-msgid  "Fonts"
+msgid "Fonts"
 msgstr "フォント"
 
 #: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
-msgid  "Test page"
+msgid "Test page"
 msgstr "テストページ"
 
 #: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
-msgid  "Wrong environment"
+msgid "Wrong environment"
 msgstr "正しくない環境"
 
 #: padialog.src#RID_YOU_SURE.STRING.TEXT
-msgid  "Are you sure ?"
+msgid "Are you sure ?"
 msgstr "これでいいですか。"
 
 #: padialog.src#RID_AFMERROR_OK.STRING.TEXT
-msgid  "No error"
+msgid "No error"
 msgstr "エラーなし"
 
 #: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FontName' entry."
+msgid "The metric does not contain a 'FontName' entry."
 msgstr "メトリックに「FontName」の項目は含まれていません。"
 
 #: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FullName' entry."
+msgid "The metric does not contain a 'FullName' entry."
 msgstr "メトリックには「FullName」の項目は含まれていません。"
 
 #: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FamilyName' entry."
+msgid "The metric does not contain a 'FamilyName' entry."
 msgstr "メトリックに「FamilyName」の項目は含まれていません。"
 
 #: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
-msgid  "The converted metric could not be written."
+msgid "The converted metric could not be written."
 msgstr "変換したメトリックに書き込みはできません。"
 
 #: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
-msgid  "The metric could not be read."
+msgid "The metric could not be read."
 msgstr "メトリックを読み取れませんでした。"
 
 #: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
-msgid  "A temporary file could not be created."
+msgid "A temporary file could not be created."
 msgstr "一時ファイルを作成できませんでした。"
 
 #: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
-msgid  "The file does not contain a metric."
+msgid "The file does not contain a metric."
 msgstr "ファイルにメトリックは含まれていません。"
 
 #: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "メトリック\n\n%s\n\nは以下の理由で変換されませんでした:\n\n"
+msgid "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+"メトリック\n"
+"\n"
+"%s\n"
+"\n"
+"は以下の理由で変換されませんでした:\n"
+"\n"
 
 #: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "進捗状況"
 
 #: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
-msgid  "Please wait"
+msgid "Please wait"
 msgstr "しばらくお待ちください"
 
 #: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
-msgid  "Font metrics conversion"
+msgid "Font metrics conversion"
 msgstr "フォントメトリックの変換"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
-msgid  "Dri~ver directory"
+msgid "Dri~ver directory"
 msgstr "ドライバディレクトリ(~V)"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
-msgid  "Please select the driver directory."
+msgid "Please select the driver directory."
 msgstr "ドライブファイルのあるディレクトリを選択してください。"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "検索..."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
-msgid  "~Selection of drivers"
+msgid "~Selection of drivers"
 msgstr "ドライバの選択(~S)"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select the drivers to install and press \"%s\"."
+msgid "Please select the drivers to install and press \"%s\"."
 msgstr "ドライブを選択して、［%s］ボタンを押してください。"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
-msgid  "Searching for drivers"
+msgid "Searching for drivers"
 msgstr "ドライブを探しています"
 
 #: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
-msgid  "Driver Installation"
+msgid "Driver Installation"
 msgstr "ドライバのインストール"
 
 #: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
-msgid  "Do you really want to remove the driver \"%s\"?"
+msgid "Do you really want to remove the driver \"%s\"?"
 msgstr "本当にドライバ \"%s\" を削除してもいいですか。"
 
 #: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
-msgid  "Do you really want to remove this printer ?"
+msgid "Do you really want to remove this printer ?"
 msgstr "本当にこのプリンタを削除してもいいですか。"
 
 #: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
-msgid  "Do you really want to remove the selected fonts ?"
+msgid "Do you really want to remove the selected fonts ?"
 msgstr "本当に選択したフォントを削除してもいいですか。"
 
 #: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
-msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgid "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
 msgstr "まだドライバ \"%s\" を使用しているプリンタがあります。このドライブを削除してかまいませんか。同時にプリンタも削除されてしまいます。"
 
 #: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
-msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgid "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "ドライバ \"%s\" は常に必要とされるので、削除することはできません。"
 
 #: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "ドライバ \"%s1\" は削除できませんでした。ファイル\n\n%s2\n\nの削除は不可能でした。"
+msgid "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+"ドライバ \"%s1\" は削除できませんでした。ファイル\n"
+"\n"
+"%s2\n"
+"\n"
+"の削除は不可能でした。"
 
 #: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
-msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgid "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
 msgstr "ドライバ \"%s\" は標準プリンタに使用されているため、削除はできません。"
 
 #: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
-msgid  "The printer %s cannot be removed."
+msgid "The printer %s cannot be removed."
 msgstr "プリンタ %s は削除できません。"
 
 #: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
-msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgid "A printer named \"%s\" already exists. This printer will not be imported."
 msgstr "「%s」の名前のプリンタがすでにあります。 このプリンタはインポートされません。"
 
 #: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
-msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgid "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
 msgstr "プリンタ「%s」が正しく設定されていないため、インポートできません。"
 
 #: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
-msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgid "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
 msgstr "プリンタ「%s1」(%s2) に必要なドライバがインストールされていません。プリンタはインポートできません。"
 
 #: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
-msgid  "The printer \"%s\" could not be added."
+msgid "The printer \"%s\" could not be added."
 msgstr "プリンタ \"%s\" を追加できませんでした。"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "完了(~F)"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "次へ(~N) >>"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< 戻る(~B)"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
-msgid  "Add Printer"
+msgid "Add Printer"
 msgstr "プリンタの追加"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a driver"
+msgid "Choose a driver"
 msgstr "ドライバを選択"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select a s~uitable driver."
+msgid "Please select a s~uitable driver."
 msgstr "適切なドライバを選択してください(~U)。"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "インポート(~I)..."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "削除(~D)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
-msgid  "Delete driver"
+msgid "Delete driver"
 msgstr "ドライバの削除"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a device type"
+msgid "Choose a device type"
 msgstr "デバイスの種類を選択"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
-msgid  "Do you want to"
+msgid "Do you want to"
 msgstr "デバイスの追加"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
-msgid  "Add a ~printer"
+msgid "Add a ~printer"
 msgstr "プリンタの追加(~P)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
-msgid  "Connect a fa~x device"
+msgid "Connect a fa~x device"
 msgstr "Fa~x 機の設定"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
-msgid  "Connect a P~DF converter"
+msgid "Connect a P~DF converter"
 msgstr "P~DF コンバータの設置"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
-msgid  "~Import printers from a StarOffice installation"
+msgid "~Import printers from a StarOffice installation"
 msgstr "StarSu~ite のインストールからプリンタをインポート"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a name"
+msgid "Choose a name"
 msgstr "名前を選択"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the printer."
+msgid "Please enter a name for the printer."
 msgstr "プリンタの名前を入力してください。"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the fax connection."
+msgid "Please enter a name for the fax connection."
 msgstr "Fax 機の名前を入力してください。"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the PDF connection."
+msgid "Please enter a name for the PDF connection."
 msgstr "PDF コンバータの名前を入力してください。"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
-msgid  "Fax printer"
+msgid "Fax printer"
 msgstr "Fax プリンタ"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr "PDF コンバータ"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
-msgid  "~Use as default printer"
+msgid "~Use as default printer"
 msgstr "標準プリンタとして使用(~U)"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
-msgid  "Remo~ve fax number from output"
+msgid "Remo~ve fax number from output"
 msgstr "Fax 番号を出力から削除(~V)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a command line"
+msgid "Choose a command line"
 msgstr "コマンド行を選択"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Please enter a c~ommand line appropriate for this device."
+msgid "Please enter a c~ommand line appropriate for this device."
 msgstr "このデバイスを作動させるコマンド行を入力してください(~O)。"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF ~target directory"
+msgid "PDF ~target directory"
 msgstr "PDF ターゲットディレクトリ(~T)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ヘルプ(~H)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF コンバータでのコマンド行は次のように実行されます: ドキュメントを印刷するたびに、コマンド行で \"(TMP)\" は一時ファイルで、\"(OUTFILE)\" は作成される PDF ファイルで置換されます。コマンド行に \"(TMP)\" があると、PostScript コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"PDF コンバータでのコマンド行は次のように実行されます: ドキュメントを印刷するたびに、コマンド行で \"(TMP)\" "
+"は一時ファイルで、\"(OUTFILE)\" は作成される PDF ファイルで置換されます。コマンド行に \"(TMP)\" があると、PostScript "
+"コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "Fax 機でのコマンド行は次のように実行されます: Fax 送信するたびに、コマンド行の \"(TMP)\" は一時ファイルで、\"(PHONE)\" はファックス番号で置換されます。コマンド行に \"(TMP)\" があると、PostScript コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
+msgid "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"Fax 機でのコマンド行は次のように実行されます: Fax 送信するたびに、コマンド行の \"(TMP)\" は一時ファイルで、\"(PHONE)\" "
+"はファックス番号で置換されます。コマンド行に \"(TMP)\" があると、PostScript "
+"コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Import printers from old versions"
+msgid "Import printers from old versions"
 msgstr "旧バージョンのプリンタをインポート"
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
-msgid  "~These printers can be imported. Please select the ones you want to import."
+msgid "~These printers can be imported. Please select the ones you want to import."
 msgstr "これらはインポート可能なプリンタです。インポートする必要のないものは削除してください(~T)。"
 
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
+msgid "~Select All"
+msgstr "すべて選択(~S)"
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "ドライバを選択"
+
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this fax connection"
+msgid "Use the following driver for this fax connection"
 msgstr "この Fax 機に次のドライバを使用"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
-msgid  "T~he default driver"
+msgid "T~he default driver"
 msgstr "標準ドライバ(~H)"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A speci~fic driver, to adapt the format to another printer"
+msgid "A speci~fic driver, to adapt the format to another printer"
 msgstr "ほかのプリンタに書式設定を同期させる特殊ドライバ(~F)"
 
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "ドライバを選択"
+
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this PDF converter"
+msgid "Use the following driver for this PDF converter"
 msgstr "この PDF コンバータに次のドライバを使用"
 
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
+msgid "T~he default driver"
+msgstr "標準ドライバ(~H)"
+
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
-msgid  "The Adobe D~istiller(tm) driver"
+msgid "The Adobe D~istiller(tm) driver"
 msgstr "Adobe D~istiller(tm) ドライバ"
 
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A spec~ific driver, to adapt the format to another printer"
+msgid "A spec~ific driver, to adapt the format to another printer"
 msgstr "ほかのプリンタに書式設定を同期させる特殊ドライバ(~I)"
 
 #: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "イタリック体"
 
 #: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
-msgid  "Oblique"
+msgid "Oblique"
 msgstr "斜体"
 
 #: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
-msgid  "Thin"
+msgid "Thin"
 msgstr "細字"
 
 #: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
-msgid  "Ultralight"
+msgid "Ultralight"
 msgstr "超細字"
 
 #: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
-msgid  "Semilight"
+msgid "Semilight"
 msgstr "やや細字"
 
 #: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
-msgid  "Light"
+msgid "Light"
 msgstr "細字"
 
 #: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
-msgid  "Semibold"
+msgid "Semibold"
 msgstr "やや太字"
 
 #: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "太字"
 
 #: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
-msgid  "Ultrabold"
+msgid "Ultrabold"
 msgstr "超太字"
 
 #: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
-msgid  "Ultracondensed"
+msgid "Ultracondensed"
 msgstr "超圧縮字体"
 
 #: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
-msgid  "Extracondensed"
+msgid "Extracondensed"
 msgstr "特殊圧縮字体"
 
 #: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
-msgid  "Condensed"
+msgid "Condensed"
 msgstr "圧縮字体"
 
 #: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
-msgid  "Semicondensed"
+msgid "Semicondensed"
 msgstr "やや圧縮字体"
 
 #: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
-msgid  "Semiexpanded"
+msgid "Semiexpanded"
 msgstr "やや拡張字体"
 
 #: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
-msgid  "Expanded"
+msgid "Expanded"
 msgstr "拡張字体"
 
 #: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
-msgid  "Extraexpanded"
+msgid "Extraexpanded"
 msgstr "特殊拡張字体"
 
 #: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
-msgid  "Ultraexpanded"
+msgid "Ultraexpanded"
 msgstr "超拡張字体"
 
 #: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "標準"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
-msgid  "Command"
+msgid "Command"
 msgstr "コマンド"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
-msgid  "Paper"
+msgid "Paper"
 msgstr "用紙"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
-msgid  "Device"
+msgid "Device"
 msgstr "デバイス"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
-msgid  "Font Replacement"
+msgid "Font Replacement"
 msgstr "フォントの置換"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
-msgid  "Other Settings"
+msgid "Other Settings"
 msgstr "その他の設定"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
-msgid  "from driver"
+msgid "from driver"
 msgstr "ドライバから"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
-msgid  "<ignore>"
+msgid "<ignore>"
 msgstr "<無視する>"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
-msgid  "Properties of %s"
+msgid "Properties of %s"
 msgstr "%s のプロパティー"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
-msgid  "~Paper size"
+msgid "~Paper size"
 msgstr "用紙サイズ(~P)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "印刷の向き(~O)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
-msgid  "~Duplex"
+msgid "~Duplex"
 msgstr "両面印刷(~D)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "給紙用法"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
-msgid  "Color"
+msgid "Color"
 msgstr "色"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
-msgid  "Grayscale"
+msgid "Grayscale"
 msgstr "グレースケール"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
-msgid  "~Option"
+msgid "~Option"
 msgstr "オプション(~O)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
-msgid  "Current ~value"
+msgid "Current ~value"
 msgstr "現在の値(~V)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
-msgid  "Printer ~Language type"
+msgid "Printer ~Language type"
 msgstr "プリンタの言語形式(~L)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
-msgid  "PostScript (Level from driver)"
+msgid "PostScript (Level from driver)"
 msgstr "PostScript (ドライバの対応するレベル)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
-msgid  "PostScript Level 1"
+msgid "PostScript Level 1"
 msgstr "PostScript レベル 1"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
-msgid  "PostScript Level 2"
+msgid "PostScript Level 2"
 msgstr "PostScript レベル 2"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
-msgid  "PostScript Level 3"
+msgid "PostScript Level 3"
 msgstr "PostScript レベル 3"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
-msgid  "PDF"
+msgid "PDF"
 msgstr "PDF"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
-msgid  "~Color"
+msgid "~Color"
 msgstr "色(~C)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
-msgid  "Color ~depth"
+msgid "Color ~depth"
 msgstr "色の深み(~D)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
-msgid  "~Enable font replacement"
+msgid "~Enable font replacement"
 msgstr "フォントの置換をオンにする(~E)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
-msgid  "Replaced ~fonts"
+msgid "Replaced ~fonts"
 msgstr "置換するフォント(~F)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr "追加(~A)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "削除(~R)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
-msgid  "Repla~ce font"
+msgid "Repla~ce font"
 msgstr "フォントを置換する(~C)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
-msgid  "by ~printer font"
+msgid "by ~printer font"
 msgstr "プリンタ用のフォントに置換(~P)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
-msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
 msgstr "システムの「印刷」ダイアログを使用し、%PRODUCTNAME の「印刷」ダイアログを無効にする(~U)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
-msgid  "Command for quick printing without dialog (optional)"
+msgid "Command for quick printing without dialog (optional)"
 msgstr "ダイアログを使わずにクイック印刷を行うためのコマンド (オプション)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
-msgid  "Select command"
+msgid "Select command"
 msgstr "コマンドの選択"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
-msgid  "Printer"
+msgid "Printer"
 msgstr "プリンタ"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "Fax"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr "PDF コンバータ"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
-msgid  "~Configure as"
+msgid "~Configure as"
 msgstr "設定対象(~C)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
-msgid  "~Fax number will be removed from output"
+msgid "~Fax number will be removed from output"
 msgstr "~Fax 番号を出力から削除"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF target directory :"
+msgid "PDF target directory :"
 msgstr "PDF ターゲットディレクトリ:"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
-msgid  "Command: "
+msgid "Command: "
 msgstr "コマンド: "
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
+msgid "Printer"
+msgstr "プリンタ"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ヘルプ(~H)"
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid "~Remove"
+msgstr "削除(~R)"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF コンバータでのコマンド行は次のように実行されます: ドキュメントを印刷するたびに、コマンド行で \"(TMP)\" は一時ファイルで、\"(OUTFILE)\" は作成される PDF ファイルに置換されます。コマンド行に \"(TMP)\" があると、PostScript コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"PDF コンバータでのコマンド行は次のように実行されます: ドキュメントを印刷するたびに、コマンド行で \"(TMP)\" "
+"は一時ファイルで、\"(OUTFILE)\" は作成される PDF ファイルで置換されます。コマンド行に \"(TMP)\" があると、PostScript "
+"コードはファイルに読み込まれます。そうでない場合は、標準回路の入力、つまりパイプライン処理が行われます。"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
-msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "印刷時のコマンド行は次のように実行されます: 作成された PostScript コードは、コマンド行に標準回路の入力、つまりパイプライン処理されます。"
+msgid "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+"印刷時のコマンド行は次のように実行されます: 作成された PostScript コードは、コマンド行に標準回路の入力、つまりパイプライン処理されます。"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "Fax 機のコマンド行は次のように実行されます:  Fax 送信するたびに、コマンド行の \"(TMP)\" は一時ファイルで、\"(PHONE)\" はファックス番号で置換されます。\"(TMP)\" がコマンド行にあると、PostScript コードはファイルに読み込まれます。そうでなければ標準回路の入力、つまりパイプライン処理が行われます。"
+msgid "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"Fax 機のコマンド行は次のように実行されます:  Fax 送信するたびに、コマンド行の \"(TMP)\" は一時ファイルで、\"(PHONE)\" "
+"はファックス番号で置換されます。\"(TMP)\" がコマンド行にあると、PostScript "
+"コードはファイルに読み込まれます。そうでなければ標準回路の入力、つまりパイプライン処理が行われます。"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Left margin"
+msgid "~Left margin"
 msgstr "左余白(~L)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Top margin"
+msgid "~Top margin"
 msgstr "上余白(~T)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Right margin"
+msgid "~Right margin"
 msgstr "右余白(~R)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Bottom margin"
+msgid "~Bottom margin"
 msgstr "下余白(~B)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "~Comment"
+msgid "~Comment"
 msgstr "コメント(~C)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "標準(~D)"
 
 #: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
-msgid  "Please enter the fax number."
+msgid "Please enter the fax number."
 msgstr "Fax 番号を入力してください。"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
-msgid  "Authentication request"
+msgid "Authentication request"
 msgstr "認証要求"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
-msgid  "Please enter your authentication data for server %s"
+msgid "Please enter your authentication data for server %s"
 msgstr "サーバー %s の認証データを入力してください。"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
-msgid  "~User"
+msgid "~User"
 msgstr "ユーザー(~U)"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
-msgid  "~Password"
+msgid "~Password"
 msgstr "パスワード(~P)"

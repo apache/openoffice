@@ -1,3460 +1,3779 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: sd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
-msgid  "Tried to open the table $name$."
+msgid "Tried to open the table $name$."
 msgstr "تختي کولڻ لاءِ  ڪوشش ڪئي ويئي $name$."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
-msgid  "No connection could be established."
+msgid "No connection could be established."
 msgstr "سنٻنڌ اِسٿاپت ڪونہ ٿي سگهيو۔"
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
-msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr "تختي اڳ ۾ ئي ٻاهر نڪري ويئي آهي۔ اِهو نظر نٿو اچي ڇو تہ اِن کي فلٽر ڪري ٻاهر ڪڍيو ويو آهي۔ $name$ "
+msgid "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr ""
+"تختي اڳ ۾ ئي ٻاهر نڪري ويئي آهي۔ اِهو نظر نٿو اچي ڇو تہ اِن کي فلٽر ڪري ٻاهر "
+"ڪڍيو ويو آهي۔ $name$ "
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
-msgid  "You have no write access to the configuration data the object is based on."
-msgstr "توهان وٽ اُن سامگري رچنا جنهن تي شئہ آڌارت آهي اُن ۾ لکڻ داخل ڪرڻ مؤجو ڪونهي۔"
+msgid "You have no write access to the configuration data the object is based on."
+msgstr ""
+"توهان وٽ اُن سامگري رچنا جنهن تي شئہ آڌارت آهي اُن ۾ لکڻ داخل ڪرڻ مؤجو "
+"ڪونهي۔"
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
-msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr "ٻاهرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگهيو۔ ڪا نامعلوم چوڪ ٿي ويئي۔ ممڪن آهي تہ ڊرائيور ۾ خامي هجي۔"
+msgid "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr ""
+"ٻاهرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگهيو۔ ڪا نامعلوم چوڪ ٿي ويئي۔ "
+"ممڪن آهي تہ ڊرائيور ۾ خامي هجي۔"
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr "ٻاهرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگہيو۔ ڏنل  SDBC  لاءِ URL. ڊراءيور ڪونہ مليو هو۔"
+msgid "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr ""
+"ٻاهرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگہيو۔ ڏنل  SDBC  لاءِ URL. "
+"ڊراءيور ڪونہ مليو هو۔"
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr "ٻاہرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگہيو۔ SDBC ڊرائيور مئنيجر لوڊ نہ ٿي سگهيو۔"
+msgid "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr ""
+"ٻاہرئين سامگري مول سان سنٻنڌ قائم ڪونہ ٿي سگہيو۔ SDBC ڊرائيور مئنيجر لوڊ نہ "
+"ٿي سگهيو۔"
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
+msgid "Form"
 msgstr "فارمُ"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "رپورٽ"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
-msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr "سامگري مول ڪونہ سانڍيو ويو هو۔ مهرباني ڪري سامگري مول سانڍڻ لاءِ اXStorable  اِٽرفيس جو اِستعمال ڪريو۔"
+msgid "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr ""
+"سامگري مول ڪونہ سانڍيو ويو هو۔ مهرباني ڪري سامگري مول سانڍڻ لاءِ اXStorable "
+" اِٽرفيس جو اِستعمال ڪريو۔"
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
+msgid "The given command is not a SELECT statement.\nOnly queries are allowed."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
-msgid  "No values were modified."
+msgid "No values were modified."
 msgstr "مُلهن ۾بدل سدل ڪانہ ڪئي ويئي"
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr "ملهہ داخل ڪونہ ٿي سگهيا۔ دواران XRowUpdate  اِنٽرفيس جو سمرٿن ڪونہ ڪيو ويو آهي۔"
+msgid "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr ""
+"ملهہ داخل ڪونہ ٿي سگهيا۔ دواران XRowUpdate  اِنٽرفيس جو سمرٿن ڪونہ ڪيو ويو "
+"آهي۔"
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr "ملهہ داخل ڪونہ ٿي سگہيا۔ XResultSet دواران اِنٽرفيس جو سمرٿن ڪونہ ڪيو ويو آهي۔"
+msgid "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr ""
+"ملهہ داخل ڪونہ ٿي سگہيا۔ XResultSet دواران اِنٽرفيس جو سمرٿن ڪونہ ڪيو ويو "
+"آهي۔"
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
-msgid  "Values could not be modified, due to a missing condition statement."
+msgid "Values could not be modified, due to a missing condition statement."
 msgstr "شر ط جي بيان جي مؤجود نہ ہئڻ سبب ملهن ۾ بدل سدل ڪانہ ٿي سگهي۔"
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
-msgid  "The adding of columns is not supported."
+msgid "The adding of columns is not supported."
 msgstr "ڪالم شامل ڪرڻ لاءِ سمرٿن ڪونہ مليو آهي"
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
-msgid  "The dropping of columns is not supported."
+msgid "The dropping of columns is not supported."
 msgstr "ڪالم ڇڏي ڏيڻ لاءِ سمرٿن ڪونہ مليو آهي۔"
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
-msgid  "The WHERE condition could not be created for the primary key."
+msgid "The WHERE condition could not be created for the primary key."
 msgstr "بنيادي ڪنجيءَ لاءِ  WHERE . حالت ڪونہ خلقجي سگهي"
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
-msgid  "The column does not support the property '%value'."
+msgid "The column does not support the property '%value'."
 msgstr "هي ڪالم '%'. ملهہ خاصيت جو سمرٿن نٿو ڪري"
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
-msgid  "The column is not searchable!"
+msgid "The column is not searchable!"
 msgstr "ڪالم ڳولي سگهڻ جهڙو ناهي!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
-msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
 msgstr "هنن ڪالمن جو ملهہ قسم جي سلسلي جو ناهي"
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
-msgid  "The column is not valid."
+msgid "The column is not valid."
 msgstr "ڪالم جائز ناهي"
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
-msgid  "The column '%name' must be visible as a column."
+msgid "The column '%name' must be visible as a column."
 msgstr " '%. نالو ڪالم هڪ ڪالم جي روپ ۾ ضروري آهي"
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
-msgid  "The interface XQueriesSupplier is not available."
+msgid "The interface XQueriesSupplier is not available."
 msgstr "اِنٽرفيس مؤجود ڪونهي XQueriesSupplier ."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
-msgid  "The driver does not support this function."
+msgid "The driver does not support this function."
 msgstr "پرڪريا جي ڊرائيور سمرٿن نٿو ڪري۔"
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
-msgid  "An 'absolute(0)' call is not allowed."
+msgid "An 'absolute(0)' call is not allowed."
 msgstr "قطحي (0)'  ڪوٺڻ جي اِجازت ڪانهي"
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
-msgid  "Relative positioning is not allowed in this state."
+msgid "Relative positioning is not allowed in this state."
 msgstr "هن حالت ۾ واسطو رکندڙ بيهڪ جي اِجازت ڪانهي۔"
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
-msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr "پڇاڙيءَ جي قطار بعد جڏهن ResultSet گهربل آسٿان تي تڏهن ڪابہ قطار تازي نٿي ڪري سگهجي۔"
+msgid "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr ""
+"پڇاڙيءَ جي قطار بعد جڏهن ResultSet گهربل آسٿان تي تڏهن ڪابہ قطار تازي نٿي "
+"ڪري سگهجي۔"
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
-msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr "جيسين ResultSet کي پهرين داخل قطار ڏانهن نٿو هلائجي تيسين ڪا نئين قطار داخل نٿي ڪري سگهجي۔"
+msgid "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr ""
+"جيسين ResultSet کي پهرين داخل قطار ڏانهن نٿو هلائجي تيسين ڪا نئين قطار داخل "
+"نٿي ڪري سگهجي۔"
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
-msgid  "A row cannot be modified in this state"
+msgid "A row cannot be modified in this state"
 msgstr "حالت ۾ قطار ۾ بدل سدل نٿي ڪري سگهجي۔"
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
-msgid  "A row cannot be deleted in this state."
+msgid "A row cannot be deleted in this state."
 msgstr "حالت ۾ قطار ۾ بدل سدل نٿي ڪري سگهجي۔"
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
-msgid  "The driver does not support table renaming."
+msgid "The driver does not support table renaming."
 msgstr "ڊرائيور تختيءَ کي وري نالو ڏيڻ جو سمرٿن نٿو ڪري۔"
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions."
+msgid "The driver does not support the modification of column descriptions."
 msgstr "ڊرائيور ڪالم جي بيانن ۾ بدل سدل جو سمرٿن نٿو ڪري۔"
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgid "The driver does not support the modification of column descriptions by changing the name."
 msgstr "نالي بدلائڻ ذريعي ڪالم جي بيانن ۾ بدل سدل جو هي ڊرائيور سمرٿن نٿو ڪري"
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgid "The driver does not support the modification of column descriptions by changing the index."
 msgstr "فهرست بدلائڻ ذريعي ڪالم جي بيانن ۾ بدل سدل جو هي ڊرائيور سمرٿن نٿو ڪري۔"
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "The file \"$file$\" does not exist."
-msgstr "فائل مؤجود ڪانهي۔  \"$file$\""
+msgid "The file \"$file$\" does not exist."
+msgstr "فائل مؤجود ڪانہي \"$file$\" ."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no table named \"$table$\"."
+msgid "There exists no table named \"$table$\"."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no query named \"$table$\"."
+msgid "There exists no query named \"$table$\"."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
-msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgid "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
-msgid  "The SQL command leading to this error is:\n\n$command$"
+msgid "The SQL command leading to this error is:\n\n$command$"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
-msgid  "The SQL command does not describe a result set."
+msgid "The SQL command does not describe a result set."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
-msgid  "The name must not be empty."
+msgid "The name must not be empty."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
-msgid  "The container cannot contain NULL objects."
+msgid "The container cannot contain NULL objects."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
-msgid  "There already is an object with the given name."
+msgid "There already is an object with the given name."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
-msgid  "This object cannot be part of this container."
+msgid "This object cannot be part of this container."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
-msgid  "The object already is, with a different name, part of the container."
+msgid "The object already is, with a different name, part of the container."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
-msgid  "Unable to find the document '$name$'."
+msgid "Unable to find the document '$name$'."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
-msgid  "Could not save the document to $location$:\n$message$"
+msgid "Could not save the document to $location$:\n$message$"
 msgstr ""
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
-msgid  "There exists no folder named \"$folder$\"."
+msgid "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
-msgid  "Cannot delete the before-first or after-last row."
+msgid "Cannot delete the before-first or after-last row."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
-msgid  "Cannot delete the insert-row."
+msgid "Cannot delete the insert-row."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
-msgid  "Result set is read only."
+msgid "Result set is read only."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
-msgid  "DELETE privilege not available."
+msgid "DELETE privilege not available."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
-msgid  "Current row is already deleted."
+msgid "Current row is already deleted."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
-msgid  "Current row could not be updated."
+msgid "Current row could not be updated."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
-msgid  "INSERT privilege not available."
+msgid "INSERT privilege not available."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
-msgid  "Internal error: no statement object provided by the database driver."
+msgid "Internal error: no statement object provided by the database driver."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
-msgid  "Expression1"
+msgid "Expression1"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
-msgid  "No SQL command was provided."
+msgid "No SQL command was provided."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid column index."
+msgid "Invalid column index."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
-msgid  "Invalid cursor state."
+msgid "Invalid cursor state."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The cursor points to before the first or after the last row."
+msgid "The cursor points to before the first or after the last row."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The rows before the first and after the last row don't have a bookmark."
+msgid "The rows before the first and after the last row don't have a bookmark."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
-msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgid "The current row is deleted, and thus doesn't have a bookmark."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
-msgid  "Embedding of database documents is not supported."
+msgid "Embedding of database documents is not supported."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
-msgid  "A connection for the following URL was requested \"$name$\"."
+msgid "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
-msgid  "The extension is not installed."
+msgid "The extension is not installed."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
-msgid  "Database ~name"
+msgid "Database ~name"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
-msgid  "User settings"
+msgid "User settings"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
-msgid  "~Control user"
+msgid "~Control user"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
-msgid  "~Administrator"
+msgid "~Administrator"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
-msgid  "~Domain user"
+msgid "~Domain user"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
-msgid  "P~assword..."
+msgid "P~assword..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
-msgid  "~Password..."
+msgid "~Password..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
-msgid  "Passwo~rd..."
+msgid "Passwo~rd..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
-msgid  "~Backup file"
+msgid "~Backup file"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
-msgid  "..."
+msgid "..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
-msgid  "Database settings"
+msgid "Database settings"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
-msgid  "S~YSDEVSPACE"
+msgid "S~YSDEVSPACE"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
-msgid  "TRANSACTI~ONLOG"
+msgid "TRANSACTI~ONLOG"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
-msgid  "DATAD~EVSPACE"
+msgid "DATAD~EVSPACE"
+msgstr ""
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
+msgstr ""
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
+msgid "..."
+msgstr ""
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
-msgid  "Transaction ~file (MB)"
+msgid "Transaction ~file (MB)"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data~base size (MB)"
+msgid "Data~base size (MB)"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgid "Data ~buffer size (MB)"
+msgstr " (MB) (~b) سامگريءَ جو بفر آڪار"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
-msgid  "Backup file information"
+msgid "Backup file information"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
-msgid  "Create New Adabas D Database"
+msgid "Create New Adabas D Database"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
-msgid  "No entry could be written in the configuration file."
+msgid "No entry could be written in the configuration file."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
-msgid  "An error occurred as the DB files were being created."
+msgid "An error occurred as the DB files were being created."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
-msgid  "An error occurred as the system tables were being created."
+msgid "An error occurred as the system tables were being created."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
-msgid  "The backup file entered does not exist."
+msgid "The backup file entered does not exist."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
-msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgid "The fully qualified file cannot be longer than \'#\' characters."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
-msgid  "The administrator and the control user cannot have the same name!"
+msgid "The administrator and the control user cannot have the same name!"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
-msgid  "No name has been entered for the $name$ file!"
+msgid "No name has been entered for the $name$ file!"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
-msgid  "You have to have administrator rights to create a new database!"
+msgid "You have to have administrator rights to create a new database!"
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
-msgid  "The specified file name or directory does not exist."
+msgid "The specified file name or directory does not exist."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgid "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
-msgstr ""
+msgid "Warning!"
+msgstr "چتاءُ! "
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
-msgid  "Creating database files."
+msgid "Creating database files."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
-msgid  "Creating database configuration file."
+msgid "Creating database configuration file."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
-msgid  "Starting database for the first time."
+msgid "Starting database for the first time."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
-msgid  "The name entered already exists."
+msgid "The name entered already exists."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
-msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgid "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
-msgid  "No default names could be set for the database files. There is no write access."
+msgid "No default names could be set for the database files. There is no write access."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
+msgid "The current database need to be converted. Please insert control user  and password."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
-msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgid "Spaces are not permitted in the password. Please enter a new password."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
-msgid  "Database Document Macro Migration"
+msgid "Database Document Macro Migration"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
-msgid  "Prepare"
+msgid "Prepare"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
-msgid  "Backup Document"
+msgid "Backup Document"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
-msgid  "Migrate"
+msgid "Migrate"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
-msgid  "Summary"
+msgid "Summary"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to the Database Macro Migration Wizard"
+msgid "Welcome to the Database Macro Migration Wizard"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgid "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
-msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgid "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Backup your Document"
+msgid "Backup your Document"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgid "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
-msgid  "Save To:"
+msgid "Save To:"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
-msgid  "Browse ..."
+msgid "Browse ..."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
-msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgid "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Migration Progress"
+msgid "Migration Progress"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
-msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgid "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
-msgid  "Current object:"
+msgid "Current object:"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Current progress:"
+msgid "Current progress:"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Overall progress:"
+msgid "Overall progress:"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "document $current$ of $overall$"
+msgid "document $current$ of $overall$"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
-msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgid "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr ""
+
+#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
+msgid "Summary"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
-msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgid "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
-msgid  "The migration was not successful. Examine the migration log below for details."
+msgid "The migration was not successful. Examine the migration log below for details."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
-msgid  "Form '$name$'"
+msgid "Form '$name$'"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
-msgid  "Report '$name$'"
+msgid "Report '$name$'"
+msgstr ""
+
+#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
+msgid "document $current$ of $overall$"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
-msgid  "Database Document"
+msgid "Database Document"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
-msgid  "saved copy to $location$"
+msgid "saved copy to $location$"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
-msgid  "migrated $type$ library '$old$' to '$new$'"
+msgid "migrated $type$ library '$old$' to '$new$'"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
-msgid  "$type$ library '$library$'"
+msgid "$type$ library '$library$'"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
-msgid  "migrating libraries ..."
+msgid "migrating libraries ..."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
-msgid  "%PRODUCTNAME Basic"
+msgid "%PRODUCTNAME Basic"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
-msgid  "JavaScript"
+msgid "JavaScript"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
-msgid  "BeanShell"
+msgid "BeanShell"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
-msgid  "Java"
+msgid "Java"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
-msgid  "Python"
+msgid "Python"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
-msgid  "dialog"
+msgid "dialog"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
-msgid  "Error(s)"
+msgid "Error(s)"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
-msgid  "Warnings"
+msgid "Warnings"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
-msgid  "caught exception: "
+msgid "caught exception: "
 msgstr ""
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
-msgid  "You need to choose a backup location other than the document location itself."
+msgid "You need to choose a backup location other than the document location itself."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
-msgid  "Invalid number of initialization arguments. Expected 1."
+msgid "Invalid number of initialization arguments. Expected 1."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
-msgid  "No database document found in the initialization arguments."
+msgid "No database document found in the initialization arguments."
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
-msgid  "Not applicable to read-only documents."
+msgid "Not applicable to read-only documents."
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
-msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgid "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-msgid  "Table"
+msgid "Table"
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
-msgid  "The given connection is no valid query and/or tables supplier."
+msgid "The given connection is no valid query and/or tables supplier."
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
-msgid  "The given object is no table object."
+msgid "The given object is no table object."
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
-msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgid "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
-msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgid "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr ""
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
-msgid  "Create Form in Design View..."
+msgid "Create Form in Design View..."
 msgstr "فارم ۾ ڊرائن منظر خلقيو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Form..."
+msgid "Use Wizard to Create Form..."
 msgstr "فارم خلقڻ لاءِ ورارڊ جو اِستعمال ڪريو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Report..."
+msgid "Use Wizard to Create Report..."
 msgstr "رپورٽ خلقڻ لاءِ وزارڊ جو اِستعمال ڪريو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
-msgid  "Create Report in Design View..."
+msgid "Create Report in Design View..."
 msgstr ""
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
-msgid  "Create Query in Design View..."
+msgid "Create Query in Design View..."
 msgstr "ڊزائن جي منظر ۾ پُڇا خلقيو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
-msgid  "Create Query in SQL View..."
+msgid "Create Query in SQL View..."
 msgstr "منظر مٔ پُڇا خلقيو۔۔۔ SQL ... "
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Query..."
+msgid "Use Wizard to Create Query..."
 msgstr "پُڇا خلقڻ لاءِ وزارڊ جو اِستعمال ڪريو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
-msgid  "Create Table in Design View..."
+msgid "Create Table in Design View..."
 msgstr "ڊزائن جي منظر ۾ تختي حلقيو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Table..."
+msgid "Use Wizard to Create Table..."
 msgstr "تختي خلقڻ لاءِ وزارڊ جو اِستعمال ڪريو۔۔۔"
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-msgid  "Create View..."
+msgid "Create View..."
 msgstr "منظر خلقيو۔۔۔"
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-msgid  "Forms"
+msgid "Forms"
 msgstr "فارمُ"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
-msgid  "Reports"
+msgid "Reports"
 msgstr "رپورٽون"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
-msgid  "Form..."
+msgid "Form..."
 msgstr "کان۔۔۔"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
-msgid  "Report..."
+msgid "Report..."
 msgstr ""
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
-msgid  "View (Simple)..."
+msgid "View (Simple)..."
 msgstr "(منظر (سادو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
-msgid  "Paste Special..."
+msgid "Paste Special..."
 msgstr "خاص چنبڙايو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "خارج ڪريو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-msgid  "Rename"
+msgid "Rename"
 msgstr "نالو مَٽيو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-msgid  "Edit"
+msgid "Edit"
 msgstr "سمپادن ڪريو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
-msgid  "Edit in SQL View..."
+msgid "Edit in SQL View..."
 msgstr ""
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
-msgid  "Open"
+msgid "Open"
 msgstr "کوليو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-msgid  "Create as View"
+msgid "Create as View"
 msgstr "منظر جيان خلقيو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Form Wizard..."
+msgid "Form Wizard..."
 msgstr "وِزارڊ بڻايو۔۔۔"
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
+msgid "Report..."
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Report Wizard..."
-msgstr "وِزارڊ جي روپورٽ ڏيو"
+msgid "Report Wizard..."
+msgstr ""
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
-msgid  "Select All"
+msgid "Select All"
 msgstr "سڀ چونڊيو"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr " (~D) آڌار سامگري"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "خاصيتون"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
-msgid  "Connection Type..."
+msgid "Connection Type..."
 msgstr "سنٻنڌ جو قسم"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
-msgid  "Advanced Settings..."
+msgid "Advanced Settings..."
 msgstr "اوُچ طئہ ڪيل ترتيبون"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
-msgid  "Do you want to delete the data source '%1'?"
+msgid "Do you want to delete the data source '%1'?"
 msgstr " جو مول خارج ڪرڻ چاهيون ٿا؟ ڇا توهين سامگريءَ  '%1' "
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base"
+msgid " - %PRODUCTNAME Base"
 msgstr " - %PRODUCTNAME آڌار"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a report."
+msgid "The wizard will guide you through the steps necessary to create a report."
 msgstr "رپورٽ خلقڻ لاءِ گهربل ضروري قدمن بابت وزارڊ توهان کي رهنمائي ملندي۔"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
-msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr "Create a form by specifying the record source, controls, and control properties."
+msgid "Create a form by specifying the record source, controls, and control properties."
+msgstr ""
+"Create a form by specifying the record source, controls, and control "
+"properties."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
-msgid  "Create a report by specifying the record source, controls, and control properties."
+msgid "Create a report by specifying the record source, controls, and control properties."
 msgstr ""
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a form."
+msgid "The wizard will guide you through the steps necessary to create a form."
 msgstr "فارم خلق خلقڻ لاءِ گہربل ضروري قدمن بابت وزارڊ توهان جي رهنمائي ڪندو"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
-msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr "فلٽرن جا تفصيل ڏيندي پُڇا خلقيو۔ ڇانٽڻ يا گروپ بڻائڻ لاءِ اِن پُٽ تختيون، کيتر جا نالا، ۽ خاصيتون۔"
+msgid "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr ""
+"فلٽرن جا تفصيل ڏيندي پُڇا خلقيو۔ ڇانٽڻ يا گروپ بڻائڻ لاءِ اِن پُٽ تختيون، "
+"کيتر جا نالا، ۽ خاصيتون۔"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
-msgid  "Create a query  entering an SQL statement directly."
+msgid "Create a query  entering an SQL statement directly."
 msgstr "  بيان ۾ سِڌو داخل ٿيندي پُڇا خلقيو۔ SQL"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a query."
+msgid "The wizard will guide you through the steps necessary to create a query."
 msgstr "پُڇا خلقڻ لاءِ گہربل ضروري قدمن بابت وزارڊ توهان جي رهنمائي ڪندو"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
-msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr "تفصيل ڏيندڙ کيترن جي نالي ۽ خاصيتن سان گڏو گڏ سامگريءَ جي قسمن ذريعي تختي خلقيو۔"
+msgid "Create a table by specifying the field names and properties, as well as the data types."
+msgstr ""
+"تفصيل ڏيندڙ کيترن جي نالي ۽ خاصيتن سان گڏو گڏ سامگريءَ جي قسمن ذريعي تختي "
+"خلقيو۔"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr "واپار ۽ شخصي تختيءَ جا نمونا ناپسنديءَ سان چونڊيو، جيڪي توهين تختي خلقڻ لاءِ هليءَ چليءَ موجب بڻائڻ چاهيو ٿا"
+msgid "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr ""
+"واپار ۽ شخصي تختيءَ جا نمونا ناپسنديءَ سان چونڊيو، جيڪي توهين تختي خلقڻ لاءِ "
+"هليءَ چليءَ موجب بڻائڻ چاهيو ٿا"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
-msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr "تختين ۽ کيتر جي نالن جا تفصيل ڏيندي منظر خلقيو جيڪو توهين ڏيکارڻ چاهيو ٿا"
+msgid "Create a view by specifying the tables and field names you would like to have visible."
+msgstr ""
+"تختين ۽ کيتر جي نالن جا تفصيل ڏيندي منظر خلقيو جيڪو توهين ڏيکارڻ چاهيو ٿا"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Opens the view wizard"
+msgid "Opens the view wizard"
 msgstr "منظر وِزارد کولي ٿو"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
-msgid  "Database"
-msgstr "آڌار سامگري"
+msgid "Database"
+msgstr "آڌار  سامگري"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
-msgid  "Tasks"
+msgid "Tasks"
 msgstr "ڪاريہ"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
-msgid  "Description"
-msgstr "بيانُ"
+msgid "Description"
+msgstr ""
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "اَڳ منظرُ"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
-msgid  "Disable Preview"
+msgid "Disable Preview"
 msgstr "اَڳ منظر ناڪام"
 
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid "The database has been modified.\nDo you want to save the changes?"
+msgstr ""
+
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-msgid  "None"
+msgid "None"
 msgstr "ڪجهہ بہ نہ"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-msgid  "Document Information"
+msgid "Document Information"
 msgstr "دستاويز جي معلومات"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-msgid  "Document"
+msgid "Document"
 msgstr "دستاويز"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
+msgid "Form"
 msgstr "فارمُ"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "رپورٽ"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
-msgid  "F~orm name"
+msgid "F~orm name"
 msgstr " (~o) فارم جو نالو"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
+msgid "~Report name"
 msgstr " (~R) رپورٽ جو نالو"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
-msgid  "F~older name"
+msgid "F~older name"
 msgstr " (~o) فولڊر جو نالو"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
-msgid  "The document contains forms or reports with embedded macros."
+msgid "The document contains forms or reports with embedded macros."
 msgstr ""
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgid "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
 msgstr ""
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
-msgid  "Embedded database"
+msgid "Embedded database"
 msgstr ""
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
-msgid  "You cannot select different categories."
+msgid "You cannot select different categories."
 msgstr ""
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
-msgid  "Unsupported object type found ($type$)."
+msgid "Unsupported object type found ($type$)."
 msgstr ""
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
+msgid "Table #"
 msgstr "تختي#"
 
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid "The current record has been changed.\nDo you want to save the changes?"
+msgstr ""
+
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
-msgid  "Do you want to delete the selected data?"
+msgid "Do you want to delete the selected data?"
 msgstr "ڇا توهين چونڊيل سامگري خارج ڪرڻ چاهيو ٿا؟ "
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
-msgid  "(filtered)"
+msgid "(filtered)"
 msgstr "(فلٽر ڪيل)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "ڇانٽڻ جو پئمانو سيٽ ڪندي چوڪ "
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "فلٽر جو پئمانو سيٽ ڪندي چوڪ "
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
-msgid  "Connection lost"
+msgid "Connection lost"
 msgstr "سنٻنڌ گم ٿي ويو "
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-msgid  "Queries"
-msgstr "پڇائون "
+msgid "Queries"
+msgstr ""
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-msgid  "Tables"
-msgstr "تختيون "
+msgid "Tables"
+msgstr ""
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
-msgid  "Edit ~Database File..."
+msgid "Edit ~Database File..."
 msgstr "آڌار سامگريءَ جي فائل سمپادت ڪريو "
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
-msgid  "Registered databases ..."
+msgid "Registered databases ..."
 msgstr ""
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
-msgid  "Disco~nnect"
+msgid "Disco~nnect"
 msgstr "سنٻنڌ ختم ڪريو "
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
-msgid  "Confirm Deletion"
+msgid "Confirm Deletion"
 msgstr "خارج ڪرڻ جي تصديق ڪريو "
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
-msgid  "Do you want to delete the table '%1'?"
+msgid "Do you want to delete the table '%1'?"
 msgstr "ڇا توهين '%1' تختي خارج ڪرڻ چاهيو ٿا؟ "
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
-msgid  "The query already exists. Do you want to delete it?"
+msgid "The query already exists. Do you want to delete it?"
 msgstr "پڇا اڳ ۾ ئي مؤجود آهي۔ ڇا توهين اها خارج ڪرڻ چاهيو ٿا؟ "
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr "آڌار سامگريءَ جو سنٻنڌ گم ٿي ويو آهي؟ ڇا توهين وري سنٻنڌ قائم ڪرڻ چاهيو ٿا۔ "
+msgid "The connection to the database has been lost. Do you want to reconnect?"
+msgstr ""
+"آڌار سامگريءَ جو سنٻنڌ گم ٿي ويو آهي؟ ڇا توهين وري سنٻنڌ قائم ڪرڻ چاهيو ٿا۔ "
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
-msgid  "Warnings encountered"
+msgid "Warnings encountered"
 msgstr "چتاءُ ٽڪرايو "
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
-msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr "تختيون موٽائي ساڳيءَ جاءِ تي آڻڻ وقت آڌار سامگريءَ جي سنٻنڌ دواران چتاو ڄاڻايو ويا هئا۔ "
+msgid "While retrieving the tables, warnings were reported by the database connection."
+msgstr ""
+"تختيون موٽائي ساڳيءَ جاءِ تي آڻڻ وقت آڌار سامگريءَ جي سنٻنڌ دواران چتاو "
+"ڄاڻايو ويا هئا۔ "
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
-msgid  "Connecting to \"$name$\" ..."
+msgid "Connecting to \"$name$\" ..."
 msgstr "$name$ سان سنٻنڌ قائم ڪري پيو ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
-msgid  "Loading query $name$ ..."
+msgid "Loading query $name$ ..."
 msgstr "$name$ پڇا لوڊ ڪري پيو ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
-msgid  "Loading table $name$ ..."
+msgid "Loading table $name$ ..."
 msgstr "$name$ تختي لوڊ ڪري پيو ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
-msgid  "No table format could be found."
+msgid "No table format could be found."
 msgstr "تختيءَ جي رچنا نہ ملي سگهي۔ "
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "$name$ سامگريءَ جي مول سان سنٻنڌ قائم نہ ٿي سگهيو۔ "
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-msgid  "Rebuild"
+msgid "Rebuild"
 msgstr "نئين سِرِ ٺاهيو "
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
-msgid  "Column ~Format..."
+msgid "Column ~Format..."
 msgstr "ڪالم جي رچنا۔۔۔"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
-msgid  "Copy Column D~escription"
+msgid "Copy Column D~escription"
 msgstr "ڪالم جي بيان جو نقل ڪريو "
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
-msgid  "Table Format..."
+msgid "Table Format..."
 msgstr "تختيءَ جي رچنا "
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-msgid  "Row Height..."
+msgid "Row Height..."
 msgstr "قطار جي اوچائي۔۔۔"
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-msgid  "Undo: Data Input"
+msgid "Undo: Data Input"
 msgstr "ڪيل ڪاريہ رد ڪريو: سامگري اِنپٽ "
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
-msgid  "Save current record"
+msgid "Save current record"
 msgstr "مؤجودهہ رڪارڊ سانڍيو "
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-msgid  "Query #"
+msgid "Query #"
 msgstr "پڇا #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
+msgid "Table #"
 msgstr "تختي#"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-msgid  "View #"
+msgid "View #"
 msgstr "منظر #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
-msgid  "The name \"#\" already exists."
+msgid "The name \"#\" already exists."
 msgstr "# نالو اڳ ۾ ئي مؤجود آهي  "
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
-msgid  "No matching column names were found."
+msgid "No matching column names were found."
 msgstr "ميل کائيندڙ ڪالمن جا نالا ڪونہ مليا هئا۔ "
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
-msgid  "An error occurred. Do you want to continue copying?"
+msgid "An error occurred. Do you want to continue copying?"
 msgstr "چوڪ ٿي ويئي۔ ڇا توهين نقل ڪرڻ جاري رکڻ چاهيو ٿا؟ "
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
-msgid  "Data source table view"
+msgid "Data source table view"
 msgstr "سامگريءَ جي مول جي تختيءَ جو منظر "
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
-msgid  "Shows the selected table or query."
+msgid "Shows the selected table or query."
 msgstr "چونڊيل تختي يا پڇا ڏيکاري ٿو۔"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-msgid  "Table name"
+msgid "Table name"
 msgstr "تختيءَ جو نالو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-msgid  "Insert data"
+msgid "Insert data"
 msgstr "سامگري داخل ڪريو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-msgid  "Delete data"
+msgid "Delete data"
 msgstr "سامگري خارج ڪريو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-msgid  "Modify data"
+msgid "Modify data"
 msgstr "سامگريءَ ۾ بدل سدل ڪريو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-msgid  "Alter structure"
+msgid "Alter structure"
 msgstr "ڍانچي ۾ بدلاءُ آڻيو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-msgid  "Read data"
+msgid "Read data"
 msgstr "سامگري پڙهو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-msgid  "Modify references"
+msgid "Modify references"
 msgstr "حوالن ۾ بدل سدل ڪريو"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-msgid  "Drop structure"
+msgid "Drop structure"
 msgstr "ڍانچو ڇڏي ڏيو"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-msgid  "Sort Ascending"
+msgid "Sort Ascending"
 msgstr "مٿي چڙهندڙ سلسلي ۾ چانٽيو"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-msgid  "Sort Descending"
+msgid "Sort Descending"
 msgstr "هيٺ هلندڙ سلسلي ۾ ڇانٽيو"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "کي جوڙي نٿو سگہجي۔(#servicename#) ڊرائور مينجر SDBC "
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
-msgid  "A driver is not registered for the URL #connurl#."
+msgid "A driver is not registered for the URL #connurl#."
 msgstr "  . لاءِ ڊرائور رجسٽر ڪونہ ڪيو ويو آهي۔URL #connurl#"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-msgid  "No connection could be established for the URL #connurl#."
+msgid "No connection could be established for the URL #connurl#."
 msgstr "  لاءِ سنٻنڌ قائم ڪونہ ٿي سگهيو۔  URL #connurl#"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-msgid  "Please check the current settings, for example user name and password."
-msgstr "مهرباني ڪري مؤجودہ طئہ ڪيل ترتيبون جاچيو، مثال اِستعمال ڪندڙ جو نالو ۽ ڳجهہ لفظ"
+msgid "Please check the current settings, for example user name and password."
+msgstr ""
+"مهرباني ڪري مؤجودہ طئہ ڪيل ترتيبون جاچيو، مثال اِستعمال ڪندڙ جو نالو ۽ ڳجهہ "
+"لفظ"
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "ڪاميابيءَ سان ڳنڍيو ويو، پر آڌار سامگريءَ جي تختين بابت معلومات مؤجود ڪانهي۔"
+msgid "Successfully connected, but information about database tables is not available."
+msgstr ""
+"ڪاميابيءَ سان ڳنڍيو ويو، پر آڌار سامگريءَ جي تختين بابت معلومات مؤجود "
+"ڪانهي۔"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-msgid  "All tables"
+msgid "All tables"
 msgstr "سڀ تختيون"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-msgid  "All views"
+msgid "All views"
 msgstr "سَڀ منظر"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-msgid  "All tables and views"
+msgid "All tables and views"
 msgstr "سڀ تختيون ۽ منظر"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
-msgid  "Modify SQL statement(s)"
+msgid "Modify SQL statement(s)"
 msgstr "  بيان بيانن ۾ بدل سدل ڪريو  SQL"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-msgid  "Database files"
+msgid "Database files"
 msgstr "آڌار سامگريءَ جون فائلون"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
-msgid  "S~YSDEVSPACE:"
+msgid "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
-msgid  "~TRANSACTIONLOG:"
+msgid "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
-msgid  "DATAD~EVSPACE:"
+msgid "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-msgid  "Database sizes"
+msgid "Database sizes"
 msgstr "آڌار سامگريءَ جا آڪار"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-msgid  "S~ize (MB):"
+msgid "S~ize (MB):"
 msgstr "(MB) (~i): آڪار"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-msgid  "~Free memory space (MB):"
+msgid "~Free memory space (MB):"
 msgstr "ميموريءَ جي خالي وٿي (MB) (~F):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-msgid  "~Memory utilization (in %):"
+msgid "~Memory utilization (in %):"
 msgstr " (% )  (in %): ميموريءَ جو اِستعمال ۾"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-msgid  "Database Statistics"
+msgid "Database Statistics"
 msgstr "آڌار سامگريءَ جي اسِٽيٽڪس"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-msgid  "Contains the system tables"
+msgid "Contains the system tables"
 msgstr "سرشتي جون تختيون شامل اَٿس۔"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-msgid  "Contains information about transaction"
+msgid "Contains information about transaction"
 msgstr "ڪاروبار بابت معلومات شامل اٿس"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-msgid  "Contains all data files"
+msgid "Contains all data files"
 msgstr "سڀ سامگري فائلون شامل اَٿس"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-msgid  "Total size of the database files"
+msgid "Total size of the database files"
 msgstr "آڌار سامگريءَ جي فائلن جو ڪُلَ آڪارُ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
-msgid  "Currently available space before a new datadev file is created."
+msgid "Currently available space before a new datadev file is created."
 msgstr "نئين سامگري وڪاس فائل خلقڻ کان اڳ هن وقت مؤجود جڳہہ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-msgid  "Currently used memory"
+msgid "Currently used memory"
 msgstr "هن وقت اِستعمال ڪيل ميموري"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
-msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr "معلومات نٿي ڏيکاري سگهجي ڇو تہ گهربل سرشتي جي تختين لاءِ داخل ڪرڻ جا حق ڪونهن۔"
+msgid "No information could be displayed because no access rights exist for the required system tables."
+msgstr ""
+"معلومات نٿي ڏيکاري سگهجي ڇو تہ گهربل سرشتي جي تختين لاءِ داخل ڪرڻ جا حق "
+"ڪونهن۔"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
-msgid  "~Database name"
+msgid "~Database name"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
-msgid  "Se~rver / Port"
+msgid "Se~rver / Port"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
-msgid  "~Server"
+msgid "~Server"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
-msgid  "~Port"
+msgid "~Port"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-msgid  "Default: 3306"
-msgstr ""
+msgid "Default: 3306"
+msgstr "وڪلپ جي غير مؤجودگيءَ سبب اڳہ ۾ ئي اپنايل  3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
-msgid  "So~cket"
+msgid "So~cket"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
-msgid  "Named p~ipe"
+msgid "Named p~ipe"
 msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-msgid  "Tables"
+msgid "Tables"
 msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-msgid  "Queries"
+msgid "Queries"
 msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr " (~A) جوڙيو"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr " (~C) بند ڪريو"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-msgid  "Add Tables"
+msgid "Add Tables"
 msgstr "تختيون جوڙيو"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-msgid  "Add Table or Query"
+msgid "Add Table or Query"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "وِڪلپَ"
+msgid "Options"
+msgstr "وڪلپ"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
-msgid  "Use SQL92 naming constraints"
+msgid "Use SQL92 naming constraints"
 msgstr "SQL92نالي ڏيڻ جون بندشون اِستعمال ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
-msgid  "Append the table alias name on SELECT statements"
+msgid "Append the table alias name on SELECT statements"
 msgstr " SELECT بيانن تي تختيءَ جو ٻيو نالو شامل ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-msgid  "Use keyword AS before table alias names"
+msgid "Use keyword AS before table alias names"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
-msgid  "Use Outer Join syntax '{OJ }'"
+msgid "Use Outer Join syntax '{OJ }'"
 msgstr "Outer Join syntax '{OJ }' جو اِستعمال ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
-msgid  "Ignore the privileges from the database driver"
+msgid "Ignore the privileges from the database driver"
 msgstr "سامگريءَ ڊراڻيور سان privileges نظرانداز ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
-msgid  "Replace named parameters with '?'"
+msgid "Replace named parameters with '?'"
 msgstr " '?' سان نالا ڏنل پيراميٽر بدلايو"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-msgid  "Display version columns (when available)"
+msgid "Display version columns (when available)"
 msgstr "سنسڪرڻ جا ڪالم ڏيکاريو جڏهن مؤجود هجن"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
-msgid  "Use catalog name in SELECT statements"
+msgid "Use catalog name in SELECT statements"
 msgstr "SELECT  بيانن ۾ ڪيٽلاگ جو نالو اِستعمال ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
-msgid  "Use schema name in SELECT statements"
+msgid "Use schema name in SELECT statements"
 msgstr "SELECT بيانن ۾ رٿا جون نالو اِستعمال ڪريو"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
-msgid  "Create index with ASC or DESC statement"
+msgid "Create index with ASC or DESC statement"
 msgstr "ASC يا DESC  بيان سان فهرست خلقيو"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
-msgid  "End text lines with CR+LF"
+msgid "End text lines with CR+LF"
 msgstr "CR+LFسان متن جون قطارون ختم ڪريو "
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
-msgid  "Ignore currency field information"
+msgid "Ignore currency field information"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
-msgid  "Form data input checks for required fields"
+msgid "Form data input checks for required fields"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
-msgid  "Use ODBC conformant date/time literals"
+msgid "Use ODBC conformant date/time literals"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
-msgid  "Supports primary keys"
+msgid "Supports primary keys"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
-msgid  "Respect the result set type from the database driver"
+msgid "Respect the result set type from the database driver"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
+msgid "Default"
 msgstr "وڪلپ جي غير مؤجودگيءَ سبب اڳ ۾ ئي اَپنايل"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "SQL"
+msgid "SQL"
 msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "Mixed"
+msgid "Mixed"
 msgstr "گڏيل"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "MS Access"
+msgid "MS Access"
 msgstr "MS لنگہہ"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-msgid  "Comparison of Boolean values"
+msgid "Comparison of Boolean values"
 msgstr "بولين ملهن جي مشابهت"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
-msgid  "Rows to scan column types"
+msgid "Rows to scan column types"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
-msgid  "Settings"
+msgid "Settings"
 msgstr "طئہ ڪيل ترتيبون"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
-msgid  "Re~trieve generated values"
+msgid "Re~trieve generated values"
 msgstr " (~t) اُپايل ملهن کي موٽي وري هٿ ڪريو۔"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
-msgid  "~Auto-increment statement"
+msgid "~Auto-increment statement"
 msgstr " (~A) خودڪار واڌاري جو بيان"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-msgid  "~Query of generated values"
+msgid "~Query of generated values"
 msgstr "اُپايل ملهن جي پڇا (~Q)"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-msgid  "Generated Values"
+msgid "Generated Values"
 msgstr "اُپايل مُلهَہ"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
-msgid  "Special Settings"
+msgid "Special Settings"
 msgstr "خاص طئہ ڪيل ترتيبون"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
-msgid  "Advanced Settings"
+msgid "Advanced Settings"
 msgstr "اوُچ خاصيتون"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the dBASE files"
+msgid "Path to the dBASE files"
 msgstr "dBASE فائلن جو رستو"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the text files"
+msgid "Path to the text files"
 msgstr "ايندڙ فائلن جو رستو"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the spreadsheet document"
+msgid "Path to the spreadsheet document"
 msgstr "اِسپريڊ شيٽ دستاويز جو رستو"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-msgid  "Name of the ODBC data source on your system"
+msgid "Name of the ODBC data source on your system"
 msgstr " توهان جي سرشتي ۾  آڌار سامگريءَ جو نالو  ODBC"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the MySQL database"
+msgid "Name of the MySQL database"
 msgstr "MySQL  آڌار سامگريءَ جو نالو"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the Oracle database"
+msgid "Name of the Oracle database"
 msgstr "Oracle آڌار سامگريءَ جو نالو"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the Adabas D database"
+msgid "Name of the Adabas D database"
 msgstr "Adabas D آڌار سامگريءَ جو نالو"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-msgid  "Microsoft Access database file"
+msgid "Microsoft Access database file"
 msgstr "مائڪرو سافٽ جي لنگهہ جي آڌار سامگريءَ جي فائل"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
-msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr "وڌيڪ طئہ ڪيل ترتيبن جي ضرور ناهي۔ سنٻنڌ ڪم ڪري رهيو آهي اِن ڳالهہ جي تصديق لاءِ چڪاس بٽڻ تي ڪلڪ ڪريو۔'%test'."
+msgid "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr ""
+"وڌيڪ طئہ ڪيل ترتيبن جي ضرور ناهي۔ سنٻنڌ ڪم ڪري رهيو آهي اِن ڳالهہ جي تصديق "
+"لاءِ چڪاس بٽڻ تي ڪلڪ ڪريو۔'%test'."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
-msgid  "Datasource URL"
+msgid "Datasource URL"
 msgstr "سامگري آڌار  URL"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
-msgid  "~Host name"
-msgstr " (~H) ميزبان جو نالو"
+msgid "~Host name"
+msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
-msgid  "~Mozilla profile name"
+msgid "~Mozilla profile name"
 msgstr " (~M) موزيلا پروفائل جو نالو"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-msgid  "~Thunderbird profile name"
+msgid "~Thunderbird profile name"
 msgstr "ٿنڊربرڊ پروفائل جو نالو"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
-msgid  "Browse"
+msgid "Browse"
 msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
-msgid  "Database name"
+msgid "Database name"
 msgstr "آڌار سامگريءَ جو نالو"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
-msgid  "Server"
+msgid "Server"
 msgstr "~URL سرور "
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-msgid  "Base ~DN"
+msgid "Base ~DN"
 msgstr "~DN آڌار "
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr " (~P) پورٽ جو نمبر"
+msgid "~Port number"
+msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
-msgid  "Data conversion"
+msgid "Data conversion"
 msgstr "سامگريءَ جو بدلاءُ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
-msgid  "~Character set"
+msgid "~Character set"
 msgstr "اَکر جو سيٽُ (~C)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
-msgid  "Specify the type of files you want to access"
+msgid "Specify the type of files you want to access"
 msgstr "اُهي فائلن جي قسم جا تفصيل ڄاڻايو جن کي توهين داخل ڪرڻ چاهيو ٿا"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-msgid  "Plain text files (*.txt)"
+msgid "Plain text files (*.txt)"
 msgstr " (*.txt) ساديون متن جون فائلون"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
-msgid  "'Comma separated value' files (*.csv)"
+msgid "'Comma separated value' files (*.csv)"
 msgstr "' (*.csv) ٿوري دم سان جدا ڪيل ملهہ جون فائلون"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-msgid  "Custom:"
+msgid "Custom:"
 msgstr "هلي چلي:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Custom: *.abc"
+msgid "Custom: *.abc"
 msgstr "*.abc هلي چلي: "
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
-msgid  "Row Format"
+msgid "Row Format"
 msgstr "قطار جي رچنا"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Field separator"
+msgid "Field separator"
 msgstr "کيتر جدا ڪندڙ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Text separator"
+msgid "Text separator"
 msgstr "متن جدا ڪندڙ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Decimal separator"
+msgid "Decimal separator"
 msgstr "ڏهانش جدا ڪندڙ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "هزارين جدا ڪندڙ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-msgid  "~Text contains headers"
+msgid "~Text contains headers"
 msgstr " (~T) متن ۾ صفحي مٿان شرح آهي"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-msgid  "{None}"
+msgid "{None}"
 msgstr "{ڪوبہ نہ}"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
-msgid  "#1 must be set."
+msgid "#1 must be set."
 msgstr "#1 ضرور سيٽ ٿيڻ گهرجي."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
-msgid  "#1 and #2 must be different."
+msgid "#1 and #2 must be different."
 msgstr "#1 ۽ #2 علحدو هئڻ گهرجي ."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
-msgid  "Wildcards such as ?,* are not allowed in #1."
+msgid "Wildcards such as ?,* are not allowed in #1."
 msgstr "#1 ۾ ?,* جهڙا وائلڊ ڪارد منظور ناهن"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "JDBC d~river class"
+msgid "JDBC d~river class"
 msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
+msgid "Test class"
+msgstr "جاچ جو درجو"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
-msgid  "Socket"
+msgid "Socket"
 msgstr ""
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-msgid  "Save"
+msgid "Save"
 msgstr "سانڍيو"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
+msgid "Create New Directory"
 msgstr "نئون هدايت نامو خلقيو"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
+msgid "Up One Level"
 msgstr "هڪ سطح مٿي"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
+msgid "File ~name:"
 msgstr "فائل جو نالو (~n):"
 
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
+msgid "Save"
+msgstr "سانڍيو"
+
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
+msgid "~Path:"
 msgstr "رستو (~P):"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
+msgid "Folder"
 msgstr "فولڊر "
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
-msgid  "The file already exists. Overwrite?"
+msgid "The file already exists. Overwrite?"
 msgstr "فائل اَڳ ۾ ئي مؤجود آهي۔ ان جي مٿان لکو؟"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "General"
-msgstr "عام"
+msgid "General"
+msgstr "عام "
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr " (~H) ميزبان جو نالو"
+msgid "~Host name"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "اِستعمال ڪندڙ جي تصديق"
+msgid "User authentication"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr " (~U) اِستعمال ڪندڙ جو نالو"
+msgid "~User name"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "ڳجهو لفظ گهربل آهي"
+msgid "Password required"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "JDBC properties"
+msgid "JDBC properties"
 msgstr "JDBC خاصيتون"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "~JDBC driver class"
+msgid "~JDBC driver class"
 msgstr "JDBC ڊراڻيور جو درجو (~J)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test Class"
+msgid "Test Class"
 msgstr "جاچ جو درجو"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
-msgid  "Test Connection"
+msgid "Test Connection"
 msgstr "جاچ جو سنٻنڌ"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
-msgid  "No Adabas D data sources were found on your system."
-msgstr " Adabas D  .توهان جي سرشتي ۾ ڪي بہ توهانجي سرشتي ۾ ڪي بہ سامگري مول ڪونہ مليا هئا۔"
+msgid "No Adabas D data sources were found on your system."
+msgstr ""
+" Adabas D  .توهان جي سرشتي ۾ ڪي بہ توهانجي سرشتي ۾ ڪي بہ سامگري مول ڪونہ "
+"مليا هئا۔"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
-msgid  "Connection Test"
+msgid "Connection Test"
 msgstr "سنٻنڌ جي جاچ"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
-msgid  "The connection was established successfully."
+msgid "The connection was established successfully."
 msgstr "ڪاميابيءَ سان سنٻنڌ قائم ڪيو ويو"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "سنٻنڌ ڪاميابيءَ سان قائم ڪونہ ٿي سگهيو"
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
-msgid  "The JDBC driver was loaded successfully."
+msgid "The JDBC driver was loaded successfully."
 msgstr "JDBC ڊرائيور ڪاميابيءَ سان لوڊ ڪيو ويو هو."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
-msgid  "The JDBC driver could not be loaded."
+msgid "The JDBC driver could not be loaded."
 msgstr "JDBC ڊرائيور ڪاميابيءَ سان لوڊ ڪونہ ٿي سگهيو۔."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
-msgid  "MS Access file"
+msgid "MS Access file"
 msgstr "MS لنگهہ جي فائل"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
-msgid  "MS Access 2007 file"
+msgid "MS Access 2007 file"
 msgstr ""
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
-msgid  "A password is needed to connect to the data source \"$name$\"."
+msgid "A password is needed to connect to the data source \"$name$\"."
 msgstr "$name$ سامگريءَ جي مول سان جوڙڻ لاءِ ڳجہي لفظ جي ضرورت آهي۔ ."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "\n\n$path$\n\nهدايت نامو مؤجود ناهي۔ ڇا اهو خلقڻ گهرجي۔?"
+msgid "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
+msgstr ""
+"\n"
+"\n"
+"$path$\n"
+"\n"
+"هدايت نامو مؤجود ناهي۔ ڇا اهو خلقڻ گهرجي۔?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
-msgid  "The directory $name$ could not be created."
+msgid "The directory $name$ could not be created."
 msgstr "$name$ هدايت نامو خلقجي نہ سگهيو"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-msgid  "Convert Database"
+msgid "Convert Database"
 msgstr "آڌار سامگري بدلايو"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
-msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgid "Please enter the ~password for the user 'DOMAIN'."
 msgstr "مهرباني ڪري 'DOMAIN' استعمال ڪندڙ جي کيتر لاءِ ڳجهو لفظ داخل ڪريو"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-msgid  "Tables Filter"
+msgid "Tables Filter"
 msgstr "تختينءَ جو فلٽر"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Tables and table filter"
+msgid "Tables and table filter"
 msgstr "تختيون ۽ تختيءَ جو فلٽر"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Mark the tables that should be visible for the applications."
+msgid "Mark the tables that should be visible for the applications."
 msgstr "اُنهن تختين کي نشان لڳايو جيڪي پريوگن لاءِ نظر اَچڻ گهرجن۔"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
-msgid  "Database Wizard"
+msgid "Database Wizard"
+msgstr "آڌار سامگريءَ جو وِزراڊ"
+
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
+msgid "Database Wizard"
 msgstr "آڌار سامگريءَ جو وِزراڊ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-msgid  "Select database"
+msgid "Select database"
 msgstr "آڌار سامگري چونڊيو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
-msgid  "Set up dBASE connection"
+msgid "Set up dBASE connection"
 msgstr "dBASE آڌار سامگريءَ جو سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
+msgid "Set up a connection to text files"
 msgstr "متن جي فائلن جو سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
-msgid  "Set up Microsoft Access connection"
+msgid "Set up Microsoft Access connection"
 msgstr "Microsoft Access سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
-msgid  "Set up LDAP connection"
+msgid "Set up LDAP connection"
 msgstr "LDAPسنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
-msgid  "Set up Adabas D connection"
+msgid "Set up Adabas D connection"
 msgstr "Adabas D سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
-msgid  "Set up ADO connection"
+msgid "Set up ADO connection"
 msgstr "ADO سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
-msgid  "Set up JDBC connection"
+msgid "Set up JDBC connection"
 msgstr "JDBC سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
-msgid  "Set up Oracle database connection"
+msgid "Set up Oracle database connection"
 msgstr "اوريڪل آڌار سامگريءَ جو سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
-msgid  "Set up MySQL connection"
+msgid "Set up MySQL connection"
 msgstr "MySQL سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
-msgid  "Set up ODBC connection"
+msgid "Set up ODBC connection"
 msgstr "ODBC سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
-msgid  "Set up Spreadsheet connection"
+msgid "Set up Spreadsheet connection"
 msgstr "اِسپريڊ شيٽ ۾ سنٻنڌ سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
-msgid  "Set up user authentication"
+msgid "Set up user authentication"
 msgstr "اِستعمال ڪندڙ جي تصديق سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
-msgid  "Set up MySQL server data"
+msgid "Set up MySQL server data"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-msgid  "Save and proceed"
+msgid "Save and proceed"
 msgstr "سانڍيو ۽ اڳتي وڌو"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-msgid  "New Database"
+msgid "New Database"
 msgstr "نئين آڌار سامگري"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up a connection to a MySQL database"
+msgid "Set up a connection to a MySQL database"
 msgstr "آڌار سامگريءَ ۾ سنٻنڌ سيٽ اَپ ڪريو MySQL "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "توهين يا وري ODBC or JDBC.\n جو اِستعمال ڪندي MySQL آڌار سامگريءَ سان سنٻنڌ جوڙي سگهو ٿا۔ اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري پنهنجي سرشتي جي منتظم سان سمپرڪ ڪريو۔"
+msgid "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"توهين يا وري ODBC or JDBC.\n"
+" جو اِستعمال ڪندي MySQL آڌار سامگريءَ سان سنٻنڌ جوڙي سگهو ٿا۔ اگر توهان کي "
+"هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري پنهنجي سرشتي جي منتظم سان "
+"سمپرڪ ڪريو۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
-msgid  "How do you want to connect to your MySQL database?"
+msgid "How do you want to connect to your MySQL database?"
 msgstr "توهين پنهنجي MySQL آڌار سامگري ڪيئن جوڙڻ چاهيو ٿا؟ "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
-msgid  "Connect using ODBC (Open Database Connectivity)"
+msgid "Connect using ODBC (Open Database Connectivity)"
 msgstr "ODBC (Open Database Connectivity) جو اِستعمال ڪندي جوڙيو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
-msgid  "Connect using JDBC (Java Database Connectivity)"
+msgid "Connect using JDBC (Java Database Connectivity)"
 msgstr "JDBC (Java Database Connectivity) جو اِستعمال ڪندي جوڙيو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
-msgid  "Connect directly"
+msgid "Connect directly"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up the user authentication"
+msgid "Set up the user authentication"
 msgstr "استعمال ڪندڙ جي تصديق سيٽ اپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Some databases require you to enter a user name."
-msgstr "ڪِن آڌار سامگرين لاءِ توهان کي اِستعمال ڪندڙ جو نالو داخل ڪرڻ جي ضرورت پوندي۔"
+msgid "Some databases require you to enter a user name."
+msgstr ""
+"ڪِن آڌار سامگرين لاءِ توهان کي اِستعمال ڪندڙ جو نالو داخل ڪرڻ جي ضرورت "
+"پوندي۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr " (~U) اِستعمال ڪندڙ جو نالو"
+msgid "~User name"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
-msgid  "Password re~quired"
+msgid "Password re~quired"
 msgstr " (~q) ڳجهو نالو گهرجي"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
-msgid  "~Test Connection"
+msgid "~Test Connection"
 msgstr " (~T) جاچ سنٻنڌ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-msgid  "Decide how to proceed after saving the database"
+msgid "Decide how to proceed after saving the database"
 msgstr "اها ڳالهہ طئہ ڪريو تہ آڌار سامگري سانڍڻ کان پوءِ اڳتي ڪيئن وڌندا۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
 msgstr "ڇا %PRODUCTNAME  ۾ آڌار سامگري جرسٽر ڪرڻ لاءِ توهان کي وزارڊ گهرجي۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
-msgid  "~Yes, register the database for me"
+msgid "~Yes, register the database for me"
 msgstr " (~Y) ها، مون لاءِ آڌار سامگري رجسٽر ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
-msgid  "N~o, do not register the database"
+msgid "N~o, do not register the database"
 msgstr " (~o) نہ، آڌار سامگري رجسٽر نہ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-msgid  "After the database file has been saved, what do you want to do?"
+msgid "After the database file has been saved, what do you want to do?"
 msgstr "آڌار سامگريءَ جي فائل سانڍڻ بعد ڇا توهين ڪجہہ ڪرڻ چاهيو ٿا?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
-msgid  "Open the database for editing"
+msgid "Open the database for editing"
 msgstr "سمپادن لاءِ آڌار سامگري کوليو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
-msgid  "Create tables using the table wizard"
+msgid "Create tables using the table wizard"
 msgstr "وزارڊ جي تختي اِستعمال ڪندي تختيون خلقيو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
-msgid  "Click 'Finish' to save the database."
+msgid "Click 'Finish' to save the database."
 msgstr "آڌار سامگري سانڍڻ لاءِ ختم تي ڪلڪ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up connection to a MySQL database using JDBC"
+msgid "Set up connection to a MySQL database using JDBC"
 msgstr "JDBC جو اِستعمال ڪندي MySQL  آڌار سامگري سان سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "اِها ڳالہہ ڌيان ۾ رکو تہ توهين سرشتي ۾ ڊرائيور جو درجو ضرور اِسٿاپت ڪيو وڃي ۽ وٽ رجسٽر ڪيو وڃي۔ اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين پنهنجي سرشتي جي منظرم سان سمپرڪ ڪريو۔"
+msgid "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"اِها ڳالہہ ڌيان ۾ رکو تہ توهين سرشتي ۾ ڊرائيور جو درجو ضرور اِسٿاپت ڪيو وڃي "
+"۽ وٽ رجسٽر ڪيو وڃي۔ اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ "
+"مهرباني ڪري توهين پنهنجي سرشتي جي منظرم سان سمپرڪ ڪريو۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "MySQL JDBC d~river class:"
+msgid "MySQL JDBC d~river class:"
 msgstr "MySQL JDBC ڊرائيور درجو: (~r)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
-msgid  "Default: 3306"
+msgid "Default: 3306"
 msgstr "وڪلپ جي غير مؤجودگيءَ سبب اڳہ ۾ ئي اپنايل  3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
-msgid  "Set up connection to a MySQL database"
+msgid "Set up connection to a MySQL database"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
-msgid  "Please enter the required information to connect to a MySQL database."
+msgid "Please enter the required information to connect to a MySQL database."
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to dBASE files"
+msgid "Set up a connection to dBASE files"
 msgstr "dBASE آڌار سامگري فائلن ۾ سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
-msgid  "Select the folder where the dBASE files are stored."
+msgid "Select the folder where the dBASE files are stored."
 msgstr "اُهو فولڊر چونڊيو جنهن ۾ آڌار سامگري فائلون ڪٺيون ڪيون وييون آهن"
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
+msgid "Set up a connection to text files"
+msgstr "متن جي فائلن جو سنٻنڌ سيٽ اپ ڪريو"
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
-msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr "اُهو فولڊر چونڊيون جنهن ۾ متن CSV (Comma Separated Values) فائلون ڪٺيون ڪيون وييون آهن۔ اِهي فائلون  %PRODUCTNAME Base دواران فقط پڙهڻ جي ڍنگ  لاءِ کلنديون"
+msgid "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr ""
+"اُهو فولڊر چونڊيون جنهن ۾ متن CSV (Comma Separated Values) فائلون ڪٺيون ڪيون "
+"وييون آهن۔ اِهي فائلون  %PRODUCTNAME Base دواران فقط پڙهڻ جي ڍنگ  لاءِ "
+"کلنديون"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to text files"
+msgid "Path to text files"
 msgstr "متن فائلن لاءِ رستو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to a Microsoft Access database"
+msgid "Set up a connection to a Microsoft Access database"
 msgstr "مائڪرو سافٽ لنگهہ جي آڌار سامگري ۾ سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-msgid  "Please select the Microsoft Access file you want to access."
+msgid "Please select the Microsoft Access file you want to access."
 msgstr "مهرباني ڪري اُها مائڪرو سافٽ فائل چونڊيو جنهن ۾ توهين داخل ٿيڻ چاهيو ٿا"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up a connection to an LDAP directory"
+msgid "Set up a connection to an LDAP directory"
 msgstr "LDAP هدايت نامي ۾ سنٻنڌ سيٽ اَپ ڪريو  "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "مهرباني ڪري LDAP هدايت نامي سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ \n اَگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين پنهنجي سرشتي جي منظرم سان سمپرڪ ڪريو۔"
+msgid "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"مهرباني ڪري LDAP هدايت نامي سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ \n"
+" اَگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين "
+"پنهنجي سرشتي جي منظرم سان سمپرڪ ڪريو۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-msgid  "Default: 389"
+msgid "Default: 389"
 msgstr "وڪلپ جي غير مؤجودگيءَ سبب اَڳہ ۾ ئي اَپنايل : 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
-msgid  "Use ~secure connection (SSL)"
+msgid "Use ~secure connection (SSL)"
 msgstr " محفوض سنٻنڌ اِستعمال ڪيو  (SSL) (~s) "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an Adabas D database"
+msgid "Set up a connection to an Adabas D database"
 msgstr " Adabas D آڌار سامگريءَ ۾ سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "آڌار سامگري، جنهن سان توهين جڙڻ چاهيو ٿا، اُن Adabas D جو نالو داخل ڪريو۔ آڌار سامگري جيڪا  اڳہ ۾ ئي رجسٽر ٿيل آهي، ان کي چونڊڻ لاءِ چونڊيو تي ڪلڪ ڪريو."
+msgid "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
+"آڌار سامگري، جنهن سان توهين جڙڻ چاهيو ٿا، اُن Adabas D جو نالو داخل ڪريو۔ "
+"آڌار سامگري جيڪا  اڳہ ۾ ئي رجسٽر ٿيل آهي، ان کي چونڊڻ لاءِ چونڊيو تي ڪلڪ "
+"ڪريو."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an ADO database"
+msgid "Set up a connection to an ADO database"
 msgstr "آڌار سامگريءَ ۾ سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "جنهن سان توهين جڙڻ چاهيو ٿا ان لاءِ مهرباني ڪري URL سامگري مول جو ADO داخل ڪريو رچنا مُهيا ڪرائيندڙ خاص طئہ ڪيل ترتيبن برائوز تي ڪلڪ ڪريو۔ \n اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين پنهنجي سرشٽي جي منتظم سان سمپرڪ ڪريو۔"
+msgid "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"جنهن سان توهين جڙڻ چاهيو ٿا ان لاءِ مهرباني ڪري URL سامگري مول جو ADO داخل "
+"ڪريو رچنا مُهيا ڪرائيندڙ خاص طئہ ڪيل ترتيبن برائوز تي ڪلڪ ڪريو۔ \n"
+" اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين "
+"پنهنجي سرشٽي جي منتظم سان سمپرڪ ڪريو۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an ODBC database"
+msgid "Set up a connection to an ODBC database"
 msgstr "ODBC آڌار سامگريءَ ۾ سنٻنڌ سيٽ اپ ڪريو "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "جنهن سان توهين جڙڻ چاهيو ٿا اُن لاءِ آڌار سامگري جو نالو داخل ڪريو آڌار سامگري جيڪ ۾ اڳ ۾ ئي رجسٽر ٿيل اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ توهين پنہنجي سرشتي جي منتظم سان سمپرڪ ڪريو۔."
+msgid "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"جنهن سان توهين جڙڻ چاهيو ٿا اُن لاءِ آڌار سامگري جو نالو داخل ڪريو آڌار "
+"سامگري جيڪ ۾ اڳ ۾ ئي رجسٽر ٿيل اگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ "
+"ناهي تہ توهين پنہنجي سرشتي جي منتظم سان سمپرڪ ڪريو۔."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to a JDBC database"
+msgid "Set up a connection to a JDBC database"
 msgstr "JDBC  آڌار سامگريءَ ۾ سنٻنڌ سيٽ اَپ ڪريو "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "مهرباني ڪري JDBC آڌار سامگريءَ سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ \n اَگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت توهان کي پڪ ناهي تہ مهرباني ڪري  پنهنجي سرشتي جي منتظم سان سمپرڪ ڪريو"
+msgid "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"مهرباني ڪري JDBC آڌار سامگريءَ سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ \n"
+" اَگر توهان کي هيٺ ڏنل طئہ ڪيل ترتيبن بابت توهان کي پڪ ناهي تہ مهرباني ڪري  "
+"پنهنجي سرشتي جي منتظم سان سمپرڪ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an Oracle database"
+msgid "Set up a connection to an Oracle database"
 msgstr "اوريڪل آڌار سامگريءَ ۾ "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-msgid  "Default: 1521"
+msgid "Default: 1521"
 msgstr "وڪلپ جي غير مؤجودگيءَ سبب اڳ ۾ ئي اسٿاپت: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "Oracle JDBC ~driver class"
+msgid "Oracle JDBC ~driver class"
 msgstr "JDBC اوريڪل ڊرائيور ڏرجو (~d)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "مهرباني ڪري اوريڪل آڌار سامگريءَ سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ اِها ڳالهہ ڌيان ۾ رکو تہ توهان جي سرشتي ۾ JDBC ڊرائيور جو درجو ضرور اِسٿاپت ڪيل هجي ۽ اُهو                              % PRODUCTNAME ۾ رجسٽر ٿيل هجي۔ \n اَگر توهان ڪي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين پنهنجي سرشتي جي منتظم سان سمپرڪ ڪريو۔"
+msgid "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"مهرباني ڪري اوريڪل آڌار سامگريءَ سان جڙڻ لاءِ گهربل معلومات داخل ڪريو۔ اِها "
+"ڳالهہ ڌيان ۾ رکو تہ توهان جي سرشتي ۾ JDBC ڊرائيور جو درجو ضرور اِسٿاپت ڪيل "
+"هجي ۽ اُهو                              % PRODUCTNAME ۾ رجسٽر ٿيل هجي۔ \n"
+" اَگر توهان ڪي هيٺ ڏنل طئہ ڪيل ترتيبن بابت پڪ ناهي تہ مهرباني ڪري توهين "
+"پنهنجي سرشتي جي منتظم سان سمپرڪ ڪريو۔"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to spreadsheets"
+msgid "Set up a connection to spreadsheets"
 msgstr "اِسپريڊ شيٽن جو سنٻنڌ سيٽ اَپ ڪريو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr " %PRODUCTNAME \n%PRODUCTNAME  .اِسپريڊ شيٽ يا مائڪرو سافٽ ايڪسل ورڪ بوڪ چونڊڻ لاءِ برائوز تي ڪلڪ ڪريو۔  \n%PRODUCTNAME فائل کي فقط پڙهو جي نموني ۾ کُلندي"
+msgid "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+" %PRODUCTNAME \n"
+"%PRODUCTNAME  .اِسپريڊ شيٽ يا مائڪرو سافٽ ايڪسل ورڪ بوڪ چونڊڻ لاءِ برائوز تي "
+"ڪلڪ ڪريو۔  \n"
+"%PRODUCTNAME فائل کي فقط پڙهو جي نموني ۾ کُلندي"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
-msgid  "~Location and file name"
+msgid "~Location and file name"
 msgstr " (~L) جاءِ ۽ فائل جو نالو"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
-msgid  "~Password required"
+msgid "~Password required"
 msgstr "(~P) ڳجهي لفظ جي ضرورت آهي"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-msgid  "Use catalog for file-based databases"
+msgid "Use catalog for file-based databases"
 msgstr "فائل جي بنياد تي ٻڌل آڌار سامگرين لاءِ ڪيٽلاگ جو اِستعمال ڪريو"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
+msgid "~Host name"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
+msgid "~Port number"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
-msgid  "Advanced Properties"
+msgid "Advanced Properties"
 msgstr "اوُچ خاصيتون"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
-msgid  "Additional Settings"
+msgid "Additional Settings"
 msgstr "واڌو طئہ ڪيل ترتيبون"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
-msgid  "Connection settings"
+msgid "Connection settings"
 msgstr "سنٻنڌ جون طئہ ڪيل ترتيبون"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-msgid  "Database properties"
+msgid "Database properties"
+msgstr "آڌار سامگريءَ جون خاصيتون"
+
+#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
+msgid "Database properties"
 msgstr "آڌار سامگريءَ جون خاصيتون"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "%PRODUCTNAME آڌار سامگريءَ جي وزارڊ ۾ توهان جو سواگت آهي۔"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr "نئين آڌار سامگري خلقڻ، مؤجودہ آڌار سامگري کولڻ لاءِ آڌار سامگري وزارڊ جو اِستعمال ڪريو يا سَروَر ۾ ڪٺي ڪيل آڌار سامگريءَ سان جوڙيو"
+msgid "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr ""
+"نئين آڌار سامگري خلقڻ، مؤجودہ آڌار سامگري کولڻ لاءِ آڌار سامگري وزارڊ جو "
+"اِستعمال ڪريو يا سَروَر ۾ ڪٺي ڪيل آڌار سامگريءَ سان جوڙيو"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-msgid  "What do you want to do?"
+msgid "What do you want to do?"
 msgstr "ڇا توهين اهو ڪرڻ چاهيو ٿا؟"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-msgid  "Create a n~ew database"
+msgid "Create a n~ew database"
 msgstr "نئين آڌار سامگري خلقيو (~e)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-msgid  "Open an existing database ~file"
+msgid "Open an existing database ~file"
 msgstr "مؤجودہ سامگريءَ فائل کوليو (~f)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-msgid  "Recently used"
+msgid "Recently used"
 msgstr "حال ۾ استعمال ڪيل"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-msgid  "Connect to an e~xisting database"
+msgid "Connect to an e~xisting database"
 msgstr "مؤجودہ آڌار سامگريءَ سان جوڙيو (~x)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
-msgid  "Select the type of database to which you want to establish a connection."
-msgstr "آڌار سامگريءَ جو اُهو قسم چونڊيو جنهن سان توهين سنٻنڌ قائم ڪرڻ چاهيو ٿا۔"
+msgid "Select the type of database to which you want to establish a connection."
+msgstr ""
+"آڌار سامگريءَ جو اُهو قسم چونڊيو جنهن سان توهين سنٻنڌ قائم ڪرڻ چاهيو ٿا۔"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-msgid  "Database ~type "
+msgid "Database ~type "
 msgstr " آڌار سامگري جو قسم (~t)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Database"
+msgid "Database"
 msgstr "آڌار  سامگري"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "اِن سنٻنڌ لاءِ توهين هيٺ ڏنل صفحن تي تفصيلوار طئہ ڪيل ترتيبون ٺاهي سگهو ٿا۔ \n\n توهين جيڪي نيون ترتيبون تيار ڪندا اُهي توهان جي مؤجودہ طئہ ڪيل ترتيبن مٿان لکجي وينديون۔."
+msgid "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
+msgstr ""
+"اِن سنٻنڌ لاءِ توهين هيٺ ڏنل صفحن تي تفصيلوار طئہ ڪيل ترتيبون ٺاهي سگهو ٿا۔ \n"
+"\n"
+" توهين جيڪي نيون ترتيبون تيار ڪندا اُهي توهان جي مؤجودہ طئہ ڪيل ترتيبن مٿان "
+"لکجي وينديون۔."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-msgid  "MySQL"
+msgid "MySQL"
 msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-msgid  "Data Source Properties: #"
+msgid "Data Source Properties: #"
 msgstr "سامگري مول جون خاصيتون: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
-msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr " #lib#  . پروگرام لائبرري لوڊ نہ ٿي سگهي يا اهو بگڙيل آهي۔ ODBC سامگري مول جي چونڊ مؤجود ڪانہي۔"
+msgid "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr ""
+" #lib#  . پروگرام لائبرري لوڊ نہ ٿي سگهي يا اهو بگڙيل آهي۔ ODBC سامگري مول "
+"جي چونڊ مؤجود ڪانہي۔"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "هن پليٽفارم تي سامگري مول جي ان قسم کي سمرٿن مليل ناهي۔ \n توهان کي طئہ ڪيل ترتيبن ۾ تبديل ڪرڻ جي اِجازت آهي، پر لڳي ٿو تہ توهين آڌار سامگريءَ سان سنٻنڌ قائم ڪرڻ ۾ سمرٿ نہ ٿي سگہندا۔"
+msgid "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
+"هن پليٽفارم تي سامگري مول جي ان قسم کي سمرٿن مليل ناهي۔ \n"
+" توهان کي طئہ ڪيل ترتيبن ۾ تبديل ڪرڻ جي اِجازت آهي، پر لڳي ٿو تہ توهين آڌار "
+"سامگريءَ سان سنٻنڌ قائم ڪرڻ ۾ سمرٿ نہ ٿي سگہندا۔"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "عام"
+msgid "General"
+msgstr "عام "
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Optional settings"
+msgid "Optional settings"
 msgstr "وڪلپي طئہ ڪيل ترتيبون"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
-msgid  "Display deleted records as well"
+msgid "Display deleted records as well"
 msgstr "خارج ڪيل رڪارڊ پڻ ڏيکاريو"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
-msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr "ٽپڻي: جڏهن خارج ڪيو ويو ۽ ان ڪري نشڪريہ رڪارڊ ڏيکاريا ويا آهن، تڏهن توهين آڌار سامگريءَ مان رڪارڊ خارج ڪرڻ ۾ سمرت ڪونہ ٿيندا۔."
+msgid "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr ""
+"ٽپڻي: جڏهن خارج ڪيو ويو ۽ ان ڪري نشڪريہ رڪارڊ ڏيکاريا ويا آهن، تڏهن توهين "
+"آڌار سامگريءَ مان رڪارڊ خارج ڪرڻ ۾ سمرت ڪونہ ٿيندا۔."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
-msgid  "Indexes..."
+msgid "Indexes..."
 msgstr "فهرستون۔۔۔۔"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Optional Settings"
+msgid "Optional Settings"
 msgstr "وِڪلپي طئہ ڪيل ترتيبون"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "ODBC ~options"
+msgid "ODBC ~options"
 msgstr "ODBC وڪلپ (~o)"
 
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Connection Settings"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
+msgid "~Host name"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data ~buffer size (MB)"
+msgid "Data ~buffer size (MB)"
 msgstr " (MB) (~b) سامگريءَ جو بفر آڪار"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-msgid  "~Data increment (MB)"
+msgid "~Data increment (MB)"
 msgstr " (MB) (~D) سامگريءَ ۾ واڌ"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Administration"
+msgid "Administration"
 msgstr "اِنتظام"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-msgid  "Control ~user name"
+msgid "Control ~user name"
 msgstr "اِستعمال ڪندڙ جي نالي تي ضابطو رکو (~u)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-msgid  "Control ~password"
+msgid "Control ~password"
 msgstr " (~p) ڳجهي لفظ تي ضابطو رکو"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
-msgid  "~Shut down service when closing %PRODUCTNAME"
+msgid "~Shut down service when closing %PRODUCTNAME"
 msgstr "PRODUCTNAME بند ڪرڻ وقت شيوا بند ڪري ڇڏيو  (~S)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-msgid  "E~xtended..."
+msgid "E~xtended..."
 msgstr "ڦهلايو  (~x)..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "MySQL JDBC d~river class"
+msgid "MySQL JDBC d~river class"
 msgstr "MySQL JDBC ڊرائيور جو درجو (~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
+msgid "Test class"
 msgstr "جاچ جو درجو"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
+msgid "User authentication"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
+msgid "~User name"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
+msgid "Password required"
 msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "Oracle JDBC d~river class"
+msgid "Oracle JDBC d~river class"
 msgstr "Oracle JDBC ڊرائيور جو درجو (~r)"
 
+#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+msgid "Test class"
+msgstr "جاچ جو درجو"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Connection Settings"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-msgid  "~Base DN"
+msgid "~Base DN"
 msgstr " DN (~B) آڌار"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
-msgid  "Use secure connection(SSL)"
+msgid "Use secure connection(SSL)"
 msgstr "محفوظ سنٻنڌ (SSL)  جو اِستعمال ڪريو"
 
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
+msgid "~Port number"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
-msgid  "Maximum number of ~records"
+msgid "Maximum number of ~records"
 msgstr " (~r) رڪاردن جو سڀني کان وڌيڪ تعداد"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Hostname"
+msgid "~Hostname"
 msgstr " (~H) ميزبان جو نالو"
 
+#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
+msgid "~Port number"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "~Driver settings"
+msgid "~Driver settings"
 msgstr " (~D) ڊرائيور جو طئہ ڪيل ترتيبون"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
-msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgid "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr ""
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-msgid  "Indexes"
+msgid "Indexes"
 msgstr "فهرستون"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-msgid  "~Table"
+msgid "~Table"
 msgstr " (~T) تختي"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-msgid  "Assignment"
+msgid "Assignment"
 msgstr "مقرر ڪرڻ"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-msgid  "T~able indexes"
+msgid "T~able indexes"
 msgstr " (~a) تختيءَ جي فهرستون"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-msgid  "~Free indexes"
+msgid "~Free indexes"
 msgstr " (~F) آزاد فهرستون"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "آديش  SQL"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-msgid  "Command to execute"
+msgid "Command to execute"
 msgstr "هلائڻ جو آديش"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-msgid  "Execute"
+msgid "Execute"
 msgstr "هلايو"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-msgid  "Previous commands"
+msgid "Previous commands"
 msgstr "اڳلا آديش"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-msgid  "Status"
+msgid "Status"
 msgstr "حالت"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "بند ڪريو"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
-msgid  "Execute SQL Statement"
+msgid "Execute SQL Statement"
 msgstr "SQL  بيان هلايو"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
-msgid  "Command successfully executed."
+msgid "Command successfully executed."
 msgstr "آديش ڪاميابيءَ سان پورو ٿيو"
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
-msgid  "The connection to the database has been lost. This dialog will be closed."
+msgid "The connection to the database has been lost. This dialog will be closed."
 msgstr "آڌار سامگريءَ سان سنٻنڌ گم ٿي ويو آهي۔ اِهو گقتو بند ٿي ويندو۔"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
-msgid  "Field Format"
+msgid "Field Format"
 msgstr "کيتر جي رچنا"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-msgid  "Bac~k"
+msgid "Bac~k"
 msgstr " (~k) پٺيان"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "فانٽ"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "رچنا"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "ترتيب جي سڌائي"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
-msgid  "Table Format"
+msgid "Table Format"
 msgstr "تختيءَ جي رچنا"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-msgid  "Save As"
+msgid "Save As"
 msgstr "سانڊيو جئن"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the object to be created:"
+msgid "Please enter a name for the object to be created:"
 msgstr "مهرباني ڪري شئہ خلقڻ لاءِ ڪو نالو داخل ڪريو"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-msgid  "~Catalog"
+msgid "~Catalog"
 msgstr "(~C) ياداشت "
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-msgid  "~Schema"
+msgid "~Schema"
 msgstr " (~S) رٿا"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-msgid  "~Table Name"
+msgid "~Table Name"
 msgstr " (~T) تختيءَ جو نالو"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-msgid  "~Name of table view"
+msgid "~Name of table view"
 msgstr " (~N) تختيءَ جي منظر جو نالو"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-msgid  "~Query name"
+msgid "~Query name"
 msgstr " (~Q) پڇا جو نالو"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-msgid  "Rename to"
+msgid "Rename to"
 msgstr "جو وري نالو ڏيو"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
-msgid  "Insert as"
+msgid "Insert as"
 msgstr "داخل ڪريو جئن"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Height"
+msgid "~Height"
 msgstr " (~H) اوُچائي"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr " (~A) خودڪار نموني هلندڙ"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-msgid  "Row Height"
+msgid "Row Height"
 msgstr "قطار جي اوچائي"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Width"
+msgid "~Width"
 msgstr " (~W) ويڪر"
 
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
+msgid "~Automatic"
+msgstr " (~A) خودڪار نموني هلندڙ"
+
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-msgid  "Column Width"
+msgid "Column Width"
 msgstr "ڪالم جي ويڪر"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-msgid  "Data Source"
+msgid "Data Source"
 msgstr "سامگريءَ جو مول"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Choose a data source:"
+msgid "Choose a data source:"
 msgstr "سامگري جو مول چونڊيو:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organize..."
+msgid "Organize..."
 msgstr "ترڪيب ڏيو۔۔۔"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
-msgid  "Create..."
-msgstr "خلقيو"
+msgid "Create..."
+msgstr ""
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-msgid  "Local Databases"
+msgid "Local Databases"
 msgstr "مقامي آدار سامگريون"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-msgid  "Choose a database"
+msgid "Choose a database"
 msgstr "آڌار سامگري چونڊيو"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-msgid  "Indexes"
+msgid "Indexes"
 msgstr "فهرستون"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-msgid  "New Index"
+msgid "New Index"
 msgstr "نئين فهرست"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-msgid  "Delete Current Index"
+msgid "Delete Current Index"
 msgstr "مؤجودہ فهرست خارج ڪريو"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-msgid  "Rename Current Index"
+msgid "Rename Current Index"
 msgstr "مؤجودہ فهرست جو نئين سِر نالو ڏيو"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-msgid  "Save Current Index"
+msgid "Save Current Index"
 msgstr "مؤجودہ فهرست سانڍيو"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
-msgid  "Reset Current Index"
+msgid "Reset Current Index"
 msgstr "مؤجودہ فهرست وري سيٽ ڪريو"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-msgid  "Index details"
+msgid "Index details"
 msgstr "فهرست جا تفصيل"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-msgid  "Index identifier:"
+msgid "Index identifier:"
 msgstr "فهرست سڃاڻندڙ:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-msgid  "~Unique"
+msgid "~Unique"
 msgstr "بي مثل (~U)  "
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Fields"
+msgid "Fields"
 msgstr "کيتر"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr " (~C) بند ڪريو"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-msgid  "Sort order"
+msgid "Sort order"
 msgstr "سلسلو ڇانٽيو"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-msgid  "Index field"
+msgid "Index field"
 msgstr "فهرست جو کيتر"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-msgid  "Ascending"
-msgstr "مٿي چڙهندڙ سلسلو"
+msgid "Ascending"
+msgstr "مٿڀي چڙهندڙ "
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-msgid  "Descending"
-msgstr "هيٺ لهندڙ سلسلو"
+msgid "Descending"
+msgstr "هيٺ لهندڙ "
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
-msgid  "Do you really want to delete the index '$name$'?"
+msgid "Do you really want to delete the index '$name$'?"
 msgstr "ڇا توهين سچپچ '$name$'  فهرست خارج ڪرڻ چاهيو ٿا؟"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
-msgid  "index"
+msgid "index"
 msgstr "فهرست"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-msgid  "Save Index"
+msgid "Save Index"
 msgstr "فهرست سانڍيو"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
-msgid  "The index must contain at least one field."
+msgid "The index must contain at least one field."
 msgstr "فهرست ۾ گهٽ ۾ گهٽ هڪ کيتر هجڻ ضروري آهي۔"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
-msgid  "Exit Index Design"
+msgid "Exit Index Design"
 msgstr "فهرست جي ذزائين ڪڍي ڇڏيو"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-msgid  "Do you want to save the changes made to the current index?"
+msgid "Do you want to save the changes made to the current index?"
 msgstr "ڇا توهين مؤجودہ فهرست ۾ ڪيل تبديليون سانڍڻ چاهيو ٿا؟"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
-msgid  "There is already another index named \"$name$\"."
+msgid "There is already another index named \"$name$\"."
 msgstr "$name$ نالي ٻي فهرست اڳ ۾ ئي مؤجود آهي."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr "وصفن جي فهرست ۾ ڪوبہ تختيءَ جو ڪالم هڪ کان وڌيڪ دفعا نٿو اچي سگهي۔ خير توهين  \"$name$\"  ڪالم ۾ ٻہ دفعا داخل ٿي چڪا آهيو۔"
+msgid "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr ""
+"وصفن جي فهرست ۾ ڪوبہ تختيءَ جو ڪالم هڪ کان وڌيڪ دفعا نٿو اچي سگهي۔ خير توهين "
+" \"$name$\"  ڪالم ۾ ٻہ دفعا داخل ٿي چڪا آهيو۔"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
-msgid  "~Parameters"
+msgid "~Parameters"
 msgstr "پيراميٽر (~P)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Value"
+msgid "~Value"
 msgstr "ملهہ (~V)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
+msgid "~Next"
 msgstr "اَڳتي (~N)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
-msgid  "Parameter Input"
+msgid "Parameter Input"
 msgstr "پيراميٽر اِن پٽ"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
-msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgid "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "داخلا  \"$name$\" کي ڪالم لاءِ جائز ملهہ ۾ بدلي نہ سگهيو ويو"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-msgid  "Standard Filter"
+msgid "Standard Filter"
 msgstr "معياري فلٽر"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
+msgid "AND"
 msgstr "۽"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
+msgid "OR"
+msgstr "يا"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+msgid "AND"
+msgstr "۽"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+msgid "OR"
 msgstr "يا"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "کيتر جو نالو"
+msgid "Field name"
+msgstr ""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-msgid  "Condition"
+msgid "Condition"
 msgstr "حالت"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "ملهہ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
-msgid  "Operator"
+msgid "Operator"
 msgstr "ڪم ڪندڙُ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-msgid  "Criteria"
+msgid "Criteria"
 msgstr "پيمانو"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
-msgid  "- none -"
+msgid "- none -"
 msgstr "- ڪجهہ نہ -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
-msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;سَمان، سمان ناهي، اَجايو، اَجايو ناهي "
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-msgid  "Sort Order"
+msgid "Sort Order"
 msgstr "ڇانٽڻ جو سلسلو"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
+msgid "ascending"
 msgstr "مٿي چڙهندڙ سلسلو"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
+msgid "descending"
+msgstr "هيٺ لهندڙ سلسلو"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+msgid "ascending"
+msgstr "مٿي چڙهندڙ سلسلو"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+msgid "descending"
+msgstr "هيٺ لهندڙ سلسلو"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+msgid "ascending"
+msgstr "مٿي چڙهندڙ سلسلو"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+msgid "descending"
 msgstr "هيٺ لهندڙ سلسلو"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "کيتر جو نالو"
+msgid "Field name"
+msgstr ""
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
-msgid  "and then"
+msgid "and then"
+msgstr "۽ تڏهن"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
+msgid "and then"
 msgstr "۽ تڏهن"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
-msgid  "Operator"
+msgid "Operator"
 msgstr "ڪم ڪندڙُ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-msgid  "Order"
+msgid "Order"
 msgstr "سلسلو"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-msgid  "Sort order"
+msgid "Sort order"
 msgstr "سلسلو ڇانٽيو"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
-msgid  "<none>"
-msgstr "ڪجهہ بہ نہ"
+msgid "<none>"
+msgstr "<ڪوئي نہ >"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-msgid  "Relations"
+msgid "Relations"
 msgstr "سنٻنڌ"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "تختيون شامل ڪيون وييون"
+msgid "Tables involved"
+msgstr "تختيون رڌل "
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "کيتر شامل ڪيا ويا"
+msgid "Fields involved"
+msgstr "کيتر رڌم"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-msgid  "Update options"
+msgid "Update options"
 msgstr "وِڪلپَ اپ ڊيٽ ڪريو"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~No action"
+msgid "~No action"
 msgstr " (~N) ڪوبہ ڪاريہ نہ"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~Update cascade"
+msgid "~Update cascade"
 msgstr " (~U) هڪ ٻئي ۾ گڏيل اپ ڊيٽ ڪريو"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
+msgid "~Set null"
 msgstr " (~S) رد ڪيل سيٽ ڪريو"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
+msgid "Set ~default"
 msgstr " (~d) وڪلپ جي غير مؤجودگيءَ سبب اڳ ۾ ئي اپنايل سيٽ ڪريو"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-msgid  "Delete options"
+msgid "Delete options"
 msgstr "وِڪلپ خارج ڪريو"
 
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
+msgid "~No action"
+msgstr " (~N) ڪوبہ ڪاريہ نہ"
+
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "Delete ~cascade"
+msgid "Delete ~cascade"
 msgstr " (~c) هڪ ٻئي ۾ گڏيل خارج ڪريو"
 
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
+msgid "~Set null"
+msgstr " (~S) رد ڪيل سيٽ ڪريو"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
+msgid "Set ~default"
+msgstr " (~d) وڪلپ جي غير مؤجودگيءَ سبب اڳ ۾ ئي اپنايل سيٽ ڪريو"
+
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Base"
+msgid "%PRODUCTNAME Base"
 msgstr "%PRODUCTNAME آڌار"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "تفصيون"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-msgid  "Error ~list:"
+msgid "Error ~list:"
 msgstr "ياداشت ۾ چوڪ (~l):"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description:"
+msgid "~Description:"
 msgstr "بيان (~D):"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
-msgid  "SQL Status"
+msgid "SQL Status"
 msgstr "SQLحالت"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-msgid  "Error code"
+msgid "Error code"
 msgstr "چوڪ جو ڪوڊ"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
-msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr "هن چوڪ جو گهڻي ڀاڱي سبب، توهان جي آڌار سامگريءَ جي ٻوليءَ جي اکرن جي سيٽ جي اَڻ پوري طئہ ڪيل ترتيب آهي۔ سمپادن ڪريو۔ آڌار سامگري جون خاصيتون چونڊيندي طئہ ڪيل ترتيب جي جاچ ڪريو۔"
+msgid "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr ""
+"هن چوڪ جو گهڻي ڀاڱي سبب، توهان جي آڌار سامگريءَ جي ٻوليءَ جي اکرن جي سيٽ جي "
+"اَڻ پوري طئہ ڪيل ترتيب آهي۔ سمپادن ڪريو۔ آڌار سامگري جون خاصيتون چونڊيندي "
+"طئہ ڪيل ترتيب جي جاچ ڪريو۔"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "چوڪ"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-msgid  "Warning"
+msgid "Warning"
 msgstr "چتاءُ"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-msgid  "Information"
+msgid "Information"
 msgstr "معلومات"
 
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
+msgid "Details"
+msgstr "تفصيون"
+
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
-msgid  "Text Connection Settings"
+msgid "Text Connection Settings"
 msgstr ""
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
-msgid  "User Settings"
+msgid "User Settings"
 msgstr "اِستعمال ڪندڙ جون طئہ ڪيل ترتيبون"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-msgid  "User administration"
+msgid "User administration"
 msgstr "اِستعمال ڪندڙ جو اِنتظام"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-msgid  "User selection"
+msgid "User selection"
 msgstr "اِستعمال ڪندڙ جي چونڊ"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-msgid  "Us~er:"
+msgid "Us~er:"
 msgstr " (~e): اِستعمال ڪندڙ"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-msgid  "~Add User..."
+msgid "~Add User..."
 msgstr "اِستعمال ڪندڙ جوڙيو (~A)..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-msgid  "Change ~Password..."
+msgid "Change ~Password..."
 msgstr " (~P)... ڳجهو لفظ بدلايو"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-msgid  "~Delete User..."
+msgid "~Delete User..."
 msgstr " (~D)... اِستعمال ڪندڙ خارج ڪريو۔۔۔"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-msgid  "Access rights for selected user"
+msgid "Access rights for selected user"
 msgstr "چونڊيل اِستعمال ڪندڙ لاءِ لنگهہ جا حق"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
-msgid  "Do you really want to delete the user?"
+msgid "Do you really want to delete the user?"
 msgstr "ڇا توهين سچ پچ اِستعمال ڪندڙ خارج ڪرڻ چاهيو ٿا؟"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
-msgid  "The database does not support user administration."
+msgid "The database does not support user administration."
 msgstr "آڌار سامگري اِستعمال ڪندڙ جي پٺ ڀرائي نٿي ڪري"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-msgid  "User \"$name$:  $\""
+msgid "User \"$name$:  $\""
 msgstr "اِستعمال ڪندڙ \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-msgid  "Old p~assword"
+msgid "Old p~assword"
 msgstr " (~a) پراڻو ڳجهو لفظ"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
+msgid "~Password"
 msgstr " (~P) ڳجهو لفظ"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
-msgid  "~Confirm  password"
+msgid "~Confirm  password"
 msgstr " (~C) ڳجهي لفظ جي تصديق ڪريو"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-msgid  "Change Password"
+msgid "Change Password"
 msgstr "ڳجهو لفظ بدلايو"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
-msgid  "The passwords do not match. Please enter the password again."
+msgid "The passwords do not match. Please enter the password again."
 msgstr "ڳجهو لفظ ميل نٿو کائي۔ مهرباني ڪري ڳجهو لفظ وري داخل ڪريو۔"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-msgid  "Refresh"
+msgid "Refresh"
 msgstr "تازو ڪريو"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
-msgid  "New ~View Design"
+msgid "New ~View Design"
 msgstr "نئون منظر جي رچنا ڪريو (~V) "
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
-msgid  "New ~Table Design"
+msgid "New ~Table Design"
 msgstr "نئين تختيءَ جي رچنا ڪريو (~T)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-msgid  "Query AutoPilot..."
+msgid "Query AutoPilot..."
 msgstr "خود ڪارپائلٽ"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "New ~Query (Design View)"
+msgid "New ~Query (Design View)"
 msgstr " (~Q)  نئين پڇا (منظر)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "~Edit Query"
+msgid "~Edit Query"
 msgstr "(~E) پُڇا جو سمپادن ڪريو "
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
-msgid  "New Query (~SQL View)"
+msgid "New Query (~SQL View)"
 msgstr "(~SQL ) نئين پڇا منظر "
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-msgid  "Edit..."
-msgstr "۔۔۔سمپادن"
+msgid "Edit..."
+msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-msgid  "Column ~Width..."
+msgid "Column ~Width..."
 msgstr "ڪالم جي ويڪر (~W)..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
-msgid  "Report Wizard..."
+msgid "Report Wizard..."
 msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-msgid  "Form AutoPilot..."
+msgid "Form AutoPilot..."
 msgstr "خود ڪارپائلٽ رچيو"
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-msgid  "System"
+msgid "System"
 msgstr "سرشتو"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-msgid  "Error during creation"
+msgid "Error during creation"
 msgstr "خلقڻ دؤران چوڪ"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
-msgid  "An unexpected error occurred. The operation could not be performed."
+msgid "An unexpected error occurred. The operation could not be performed."
 msgstr "اوچتو چوڪ ٿي ويئي۔ ڪم پورو ڪونہ ڪري سگہبو"
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
-msgid  "The document \"$file$\" could not be opened."
+msgid "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
-msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr "تختي خارج نٿي ڪري سگہجي ڇو تہ ان جي مدد آڌار سامگريءَ کي جوڙيندڙ نٿو ڪري"
+msgid "The table cannot be deleted because the database connection does not support this."
+msgstr ""
+"تختي خارج نٿي ڪري سگہجي ڇو تہ ان جي مدد آڌار سامگريءَ کي جوڙيندڙ نٿو ڪري"
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
-msgid  "~All"
+msgid "~All"
 msgstr "~سڀ"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-msgid  "Undo:"
+msgid "Undo:"
 msgstr "نہ ڪريو"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
-msgid  "Redo:"
+msgid "Redo:"
 msgstr "وري ڪريو"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
-msgid  "No corresponding column type could be found for column '#1'."
+msgid "No corresponding column type could be found for column '#1'."
 msgstr " '#1'ڪالم لاءِ ان سان ميل رکندڙ ڪالم جي قسم ڪونہ ملي سگہيو۔"
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "The file \"$file$\" does not exist."
+msgid "The file \"$file$\" does not exist."
 msgstr "فائل مؤجود ڪانہي \"$file$\" ."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
-msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgid "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr ""
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
-msgid  "The name '$#$' already exists.\nPlease enter another name."
+msgid "The name '$#$' already exists.\nPlease enter another name."
 msgstr ""
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
-msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-msgid  "Apply columns"
+msgid "Apply columns"
 msgstr "ڪالمَ لاڳو ڪريو"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
-msgid  "Type formatting"
+msgid "Type formatting"
 msgstr "قسم رچڻ"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-msgid  "The following fields have already been set as primary keys:\n"
+msgid "The following fields have already been set as primary keys:\n"
 msgstr "هيٺ ڏنل کيترن ۾ اڳ ۾ ئي بنيادي ڪنجين جيا سيٺ ڪيو ويو آهي\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-msgid  "Assign columns"
+msgid "Assign columns"
 msgstr "ڪالم مقرر ڪريو"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
-msgid  "Copy RTF Table"
+msgid "Copy RTF Table"
 msgstr "RTFتختيءَ جو نقل ڪريو"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "مدد (~H)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "خارج ڪريو (~C)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< پٺيان (~B)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next>"
+msgid "~Next>"
 msgstr "اڳتي (~N)>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-msgid  "C~reate"
+msgid "C~reate"
 msgstr "خلقيو (~r)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-msgid  "Existing columns"
+msgid "Existing columns"
 msgstr "مؤجودہ ڪالم"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-msgid  "Column information"
+msgid "Column information"
 msgstr "ڪالم جي معلومات"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
-msgid  "Automatic type recognition"
+msgid "Automatic type recognition"
 msgstr "خود ڪار قسم سُڃاڻڻ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
-msgid  "Lines (ma~x)"
+msgid "Lines (ma~x)"
 msgstr "ليڪون (وَڌِ ۾ وڌ) (~x)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "ڪُنجي"
+msgid "Primary Key"
+msgstr "مکيہ ڪنجي "
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-msgid  "Source table: \n"
+msgid "Source table: \n"
 msgstr "مول تختي \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-msgid  "Destination table: \n"
+msgid "Destination table: \n"
 msgstr "مقرر جڳهہ جي تختي \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
-msgid  "~All"
+msgid "~All"
 msgstr "~سڀ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-msgid  "Non~e"
+msgid "Non~e"
 msgstr "ڪوبہ نہ (~e)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-msgid  "Ta~ble name"
+msgid "Ta~ble name"
 msgstr "تختيءَ جو نالو (~b)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "وڪلپَ"
+msgid "Options"
+msgstr "وڪلپ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-msgid  "De~finition and data"
+msgid "De~finition and data"
 msgstr "وصف ۽ سامگري (~f)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-msgid  "Def~inition"
+msgid "Def~inition"
 msgstr "وصف (~i)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-msgid  "A~s table view"
+msgid "A~s table view"
 msgstr "تختيءَ جي منظر موجب (~s)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
-msgid  "Append ~data"
+msgid "Append ~data"
 msgstr "سامگري شامل ڪريو (~d)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
-msgid  "Use first ~line as column names"
+msgid "Use first ~line as column names"
 msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-msgid  "Crea~te primary key"
+msgid "Crea~te primary key"
 msgstr "شروعاتي ڪنجي خلقيو (~t)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "نالو"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
-msgid  "Copy table"
+msgid "Copy table"
+msgstr "تختيءَ جو نقل ڪريو"
+
+#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
+msgid "Copy table"
 msgstr "تختيءَ جو نقل ڪريو"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
-msgid  "This table name is not valid in the current database."
+msgid "This table name is not valid in the current database."
 msgstr ""
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
-msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgid "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr ""
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
-msgid  "Please change the table name. It is too long."
+msgid "Please change the table name. It is too long."
 msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-msgid  "Options"
+msgid "Options"
 msgstr "وڪلپ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-msgid  "~Type"
+msgid "~Type"
 msgstr "قسم "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
-msgid  "Inner join"
+msgid "Inner join"
 msgstr "اندروني ڳنڍ "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
-msgid  "Left join"
+msgid "Left join"
 msgstr "کاٻي پاسي ڳنڍ "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
-msgid  "Right join"
+msgid "Right join"
 msgstr "ساڄي پاسي ڳنڍ "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
-msgid  "Full (outer) join"
+msgid "Full (outer) join"
 msgstr "پورو (ٻاهريون) ڳنڍ "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
-msgid  "Cross join"
+msgid "Cross join"
 msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
-msgid  "Natural"
+msgid "Natural"
 msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
+msgid "Tables involved"
 msgstr "تختيون رڌل "
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
+msgid "Fields involved"
 msgstr "کيتر رڌم"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-msgid  "Join Properties"
+msgid "Join Properties"
 msgstr "خاصيتون ڳنڍيو "
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
-msgid  "Please note that some databases may not support this join type."
-msgstr "مهرباني ڪري ڌيان ۾ رکو تہ ڪجهہ آڌار سامگريون  هن قسم جي ڳنڍ جو سمرٿن نٿيون ڪري سگهن۔ "
+msgid "Please note that some databases may not support this join type."
+msgstr ""
+"مهرباني ڪري ڌيان ۾ رکو تہ ڪجهہ آڌار سامگريون  هن قسم جي ڳنڍ جو سمرٿن نٿيون "
+"ڪري سگهن۔ "
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
-msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "اهو فقط اُهي رڪارڊ شامل ڪري ٿو جن جو ٻنهي تختين سان واسطو رکندڙ کيتر سمان آهي۔ "
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr ""
+"اهو فقط اُهي رڪارڊ شامل ڪري ٿو جن جو ٻنهي تختين سان واسطو رکندڙ کيتر سمان "
+"آهي۔ "
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
-msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "هن ۾  '%1'  تختيءَ جا سڀ رڪارڊ مؤجود آهن پر  '%2' تختيءَ جا فقط اُهي رڪارڊ مؤجود آہن جن جا واسطو رکندڙن کيترن جا ملهہ ميل کائين ٿا۔ "
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr ""
+"هن ۾  '%1'  تختيءَ جا سڀ رڪارڊ مؤجود آهن پر  '%2' تختيءَ جا فقط اُهي رڪارڊ "
+"مؤجود آہن جن جا واسطو رکندڙن کيترن جا ملهہ ميل کائين ٿا۔ "
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
-msgid  "Contains ALL records from '%1' and from '%2'."
+msgid "Contains ALL records from '%1' and from '%2'."
 msgstr "هن ۾ '%1 مان ۽  '%2' مان سڀ رڪارڊ مؤجود آهن۔ "
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
-msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr ""
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
-msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
-msgid  "Add Table Window"
+msgid "Add Table Window"
 msgstr "تختيءَ جي ونڊ شامل ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-msgid  "Move table window"
+msgid "Move table window"
 msgstr "تختيءَ جي ونڊو اڳتي وڌايو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
-msgid  "Insert Join"
+msgid "Insert Join"
 msgstr "ڳنڍ داخل ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
-msgid  "Delete Join"
+msgid "Delete Join"
 msgstr "ڳنڍ خارج ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-msgid  "Resize table window"
+msgid "Resize table window"
 msgstr "تختيءَ جي ونڊو جو نئين سِرِ آڪار رچيو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-msgid  "Delete Column"
+msgid "Delete Column"
 msgstr "ڪالم خارج ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-msgid  "Move column"
+msgid "Move column"
 msgstr "ڪالم اڳتي وڌايو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-msgid  "Add Column"
+msgid "Add Column"
 msgstr "ڪالم شامل ڪريو "
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
-msgid  "Invalid expression, table '$name$' does not exist."
+msgid "Invalid expression, table '$name$' does not exist."
 msgstr ""
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
-msgid  "Invalid expression, field name '$name$' does not exist."
+msgid "Invalid expression, field name '$name$' does not exist."
 msgstr "نامنظور اِظهار، '$name$'   کيتر جو نالو مؤجود ناهي۔ "
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
-msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgid "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-msgid  "Delete Table Window"
+msgid "Delete Table Window"
 msgstr "تختيءَ جي ونڊو خارج ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
-msgid  "Edit Column Description"
+msgid "Edit Column Description"
 msgstr "ڪالم جو بيان سمپادت ڪريو "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-msgid  "Adjust column width"
+msgid "Adjust column width"
 msgstr "ڪالم جي ويڪر ٺهُڪايو "
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
-msgid  "(not sorted);ascending;descending"
+msgid "(not sorted);ascending;descending"
 msgstr "(چانٽيا نہ ويا)، مٿي چڙهندڙ، هيٺ لهندڙ "
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-msgid  "(no function);Group"
+msgid "(no function);Group"
 msgstr "(ڪاريہ نہ) گروپ "
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
-msgid  "(no table)"
+msgid "(no table)"
 msgstr "(تختي ناهي)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
-msgid  "The database only supports sorting for visible fields."
+msgid "The database only supports sorting for visible fields."
 msgstr "آڌار سامگري فقط نظر ايندڙ کيترن جو سمرٿن ڪري ٿي "
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "ڪاريہ "
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-msgid  "Table Name"
+msgid "Table Name"
 msgstr "تختيءَ جو نالو "
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-msgid  "Alias"
+msgid "Alias"
 msgstr "عرف"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-msgid  "Distinct Values"
+msgid "Distinct Values"
 msgstr "جدا ملهہ "
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
-msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "کيتر، عرف، تختي، ڇانٽڻ، نظر ايندڙ، ڪاريہ، پئمانو، يا، يا "
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
-msgid  "There are too many columns."
+msgid "There are too many columns."
 msgstr "تمام گهڻا ڪالم آهن "
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "A condition cannot be applied to field [*]"
+msgid "A condition cannot be applied to field [*]"
 msgstr "شرط [*] کيتر تي لاڳو نٿي ٿي سگهي "
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
-msgid  "The SQL statement created is too long."
+msgid "The SQL statement created is too long."
 msgstr "خلقيل SQL بيان تمام لنبو آهي۔ "
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-msgid  "Query is too complex"
+msgid "Query is too complex"
 msgstr "پڇا تمام منجهائيندڙ آهي "
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
-msgid  "Nothing has been selected."
+msgid "Nothing has been selected."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-msgid  "Too many search criteria"
+msgid "Too many search criteria"
 msgstr "ڳولا جا تمام گهڻا پئمانا "
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
-msgid  "SQL syntax error"
+msgid "SQL syntax error"
 msgstr "SQL  نحوي رچنا جي چوڪ "
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "[*] cannot be used as a sort criterion."
+msgid "[*] cannot be used as a sort criterion."
 msgstr "ڀنٽڻ جي پئماني جي روپ ۾ [*] جو اِستعمال نٿو ڪري سگهجي۔"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
-msgid  "There are too many tables."
+msgid "There are too many tables."
 msgstr "تختيون تمام گهڻيون آهن۔ "
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
-msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr "بيان تڏهن لاڳو نہ ٿيندو جڏهن آڌار سامگريءَ جي SQL ٻوليءَ ۾ پڇا ڪئي وڃي ٿي۔"
+msgid "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr ""
+"بيان تڏهن لاڳو نہ ٿيندو جڏهن آڌار سامگريءَ جي SQL ٻوليءَ ۾ پڇا ڪئي وڃي ٿي۔"
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-msgid  "Field name not found or not unique"
+msgid "Field name not found or not unique"
 msgstr "کيتر جو نالو نہ مليو يا علحدو ناهي "
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-msgid  "Join could not be processed"
+msgid "Join could not be processed"
 msgstr "ڳنڍ جي ترڪيب نہ ٿي سگهي "
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
-msgid  "Syntax error in SQL statement"
+msgid "Syntax error in SQL statement"
 msgstr "SQL  بيان ۾ نحوي رچنا جي چوڪ "
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
-msgid  "This database does not support table views."
+msgid "This database does not support table views."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
-msgid  "This database does not support altering of existing table views."
+msgid "This database does not support altering of existing table views."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
-msgid  "Do you want to create a query instead?"
+msgid "Do you want to create a query instead?"
 msgstr "اِن بدران ڇا توهين پڇا خلقڻ چاهيو ٿا؟ "
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
-msgid  "No query could be created."
+msgid "No query could be created."
 msgstr "پڇا نہ خلقجي سگهي "
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
-msgid  "No query could be created because no fields were selected."
+msgid "No query could be created because no fields were selected."
 msgstr "پڇا نہ خلقجي سگهي ڇو تہ کيتر نہ چونڊيا ويا هئا۔ "
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
-msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr "موافقت واريءَ سامگريءَ جو مول خارج ڪيو ويو آهي اِن ڪري سامگريءَ جي مول سان واسطو رکندڙ سامگري   نٿي سانڍي سگهجي۔۽"
+msgid "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr ""
+"موافقت واريءَ سامگريءَ جو مول خارج ڪيو ويو آهي اِن ڪري سامگريءَ جي مول سان "
+"واسطو رکندڙ سامگري   نٿي سانڍي سگهجي۔۽"
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
-msgid  "The column '$name$' is unknown."
+msgid "The column '$name$' is unknown."
 msgstr " '$name$' . ڪالم نامعلوم آهي۔ "
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
-msgid  "Columns can only be compared using '='."
+msgid "Columns can only be compared using '='."
 msgstr "ڪالم فقط '=' جو اِستعمال ڪري ڀيٽي سگهجن ٿا۔ "
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
-msgid  "You must use a column name before 'LIKE'."
+msgid "You must use a column name before 'LIKE'."
 msgstr "توهين 'LIKE' کان پهرين ڪالم جو نالو ضرور اِستعمال ڪريو۔ "
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
-msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr "ڪالم جو پتو نہ لڳي سگهيو۔ مهرباني ڪري اِها ڳالهہ ڌيان ۾ رکو تہ آڌار سامگري پوش اثر پذير آهي "
+msgid "The column could not be found. Please note that the database is case-sensitive."
+msgstr ""
+"ڪالم جو پتو نہ لڳي سگهيو۔ مهرباني ڪري اِها ڳالهہ ڌيان ۾ رکو تہ آڌار سامگري "
+"پوش اثر پذير آهي "
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: Query Design"
+msgid " - %PRODUCTNAME Base: Query Design"
 msgstr " آڌار: پڇا جو ڍنچو - %PRODUCTNAME "
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: View Design"
+msgid " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME बेस آڌار: منظر جو ڍانچو"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
+msgid "$object$ has been changed.\nDo you want to save the changes?"
 msgstr ""
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
-msgid  "$object$ is based on an SQL command which could not be parsed."
+msgid "$object$ is based on an SQL command which could not be parsed."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
-msgid  "$object$ will be opened in SQL view."
+msgid "$object$ will be opened in SQL view."
 msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-msgid  "The table view"
+msgid "The table view"
 msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-msgid  "The query"
+msgid "The query"
 msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
-msgid  "The SQL statement"
+msgid "The SQL statement"
 msgstr ""
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
-msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgid "The query does not create a result set, and thus cannot be part of another query."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
-msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr ""
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
-msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgid "This relation already exists. Do you want to edit it or create a new one?"
 msgstr ""
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
-msgid  "Edit..."
+msgid "Edit..."
 msgstr ""
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
-msgid  "Create..."
+msgid "Create..."
 msgstr ""
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: Relation design"
+msgid " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base:  آڌار: سنٻنڌ جو ڍانچو "
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
-msgid  "The database does not support relations."
+msgid "The database does not support relations."
 msgstr "آڌار سامگري سنٻنڌنن جو سمرٿن نہ ٿي ڪري۔ "
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid "The relation design has been changed.\nDo you want to save the changes?"
+msgstr ""
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
-msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr "جڏهن توهين هيءَ تختي خارج ڪندا تڏهن سڀ موافقت رکندڙ سنٻنڌ پڻ خارج ٿي ويندا۔ ڇا جاري رکندا؟ "
+msgid "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr ""
+"جڏهن توهين هيءَ تختي خارج ڪندا تڏهن سڀ موافقت رکندڙ سنٻنڌ پڻ خارج ٿي ويندا۔ "
+"ڇا جاري رکندا؟ "
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgid "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
-msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr "نامعلوم، متن، نمبر، تاريخ/وقت، ها/نہ، ڪرنسي، ميمو، ڪائونٽر، عڪس، ترندڙ، حقيقي، عدد صحيح، ننڍو عدد صحيح ننڍڙ عدد صحيح SQL ڪجهہ نہ، شئہ، فاصلو، سنرچنا، کيتر BLOB;CLOB;REF;OTHER\" ليکڪ"
+msgid "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"نامعلوم، متن، نمبر، تاريخ/وقت، ها/نہ، ڪرنسي، ميمو، ڪائونٽر، عڪس، ترندڙ، "
+"حقيقي، عدد صحيح، ننڍو عدد صحيح ننڍڙ عدد صحيح SQL ڪجهہ نہ، شئہ، فاصلو، "
+"سنرچنا، کيتر BLOB;CLOB;REF;OTHER\" ليکڪ"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
+msgid "Insert/remove primary key"
 msgstr "مکيہ ڪنجي داخل ڪريو/ ڪڍي ڇڏيو "
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "ها "
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "نہ"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "مٿڀي چڙهندڙ "
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-msgid  "Descending"
+msgid "Descending"
 msgstr "هيٺ لهندڙ "
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
-msgid  "<none>"
+msgid "<none>"
 msgstr "<ڪوئي نہ >"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-msgid  "Field name"
+msgid "Field name"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-msgid  "Field Name"
+msgid "Field Name"
 msgstr "کيتر جو نالو "
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-msgid  "Field ~type"
+msgid "Field ~type"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
-msgid  "Field Type"
+msgid "Field Type"
 msgstr "کيتر جو قسم "
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
-msgid  "Field length"
+msgid "Field length"
 msgstr "کيتر جي ڊيگهہ "
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
-msgid  "Column Description"
+msgid "Column Description"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
-msgid  "Input required"
+msgid "Input required"
 msgstr "اِنپت گهرجي "
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-msgid  "~AutoValue"
+msgid "~AutoValue"
 msgstr "خودڪار ملهہ "
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-msgid  "Field Properties"
+msgid "Field Properties"
 msgstr "کيتر جون خاصيتون "
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "عام "
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-msgid  "Description:"
+msgid "Description:"
 msgstr "بيان: "
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-msgid  "Table properties"
+msgid "Table properties"
 msgstr "تختيءَ جون خاصيتون "
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
-msgid  "The text you entered is not a list element. "
+msgid "The text you entered is not a list element. "
 msgstr "جو entered ڪيا آہن اُهي لسٽ ۾ نہ آہن۔ "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
-msgid  "Insert Rows"
+msgid "Insert Rows"
 msgstr "قطارون داخل ڪريو "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
+msgid "Primary Key"
 msgstr "مکيہ ڪنجي "
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-msgid  "Modify cell"
+msgid "Modify cell"
 msgstr "خاني ۾ ڦيرڦار ڪريو "
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-msgid  "Delete row"
+msgid "Delete row"
 msgstr "قطار خارج ڪريو "
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-msgid  "Modify field type"
+msgid "Modify field type"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
-msgid  "Insert row"
+msgid "Insert row"
 msgstr "قطار داخل ڪريو "
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
-msgid  "Insert new row"
+msgid "Insert new row"
 msgstr "نئين قطار داخل ڪريو "
 
+#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
+msgid "Insert/remove primary key"
+msgstr "مکيہ ڪنجي داخل ڪريو/ ڪڍي ڇڏيو "
+
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-msgid  "~Default value"
+msgid "~Default value"
 msgstr "وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل ملهہ "
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-msgid  "~Entry required"
+msgid "~Entry required"
 msgstr "داخلا گهرجي "
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
-msgid  "~Length"
+msgid "~Length"
 msgstr "~Length"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-msgid  "~Type"
+msgid "~Type"
 msgstr "قسم "
 
+#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
+msgid "~Length"
+msgstr "~Length"
+
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-msgid  "Decimal ~places"
+msgid "Decimal ~places"
 msgstr "ڏهائيءَ جا آسٿان "
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-msgid  "Format example"
+msgid "Format example"
 msgstr "رچنا جو مثال "
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "اهو ملهہ چونڊيو جيڪو سڀني نون رڪارڊن ۾ وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل آهي۔ \n اگر کيتر وٽ وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل ملهہ نہ هجي، تہ خالي لڙي چونڊيو "
+msgid "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
+msgstr ""
+"اهو ملهہ چونڊيو جيڪو سڀني نون رڪارڊن ۾ وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي "
+"اپنايل آهي۔ \n"
+" اگر کيتر وٽ وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل ملهہ نہ هجي، تہ خالي "
+"لڙي چونڊيو "
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "هن کيتر لاءِ  وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل ملهہ داخل ڪريو۔ \n \n پوءِ جڏهن توهين تختيءَ ۾ سامگري داخل ڪريو ٿا۔ چونڊيل کيتر لاءِ هر نئين رڪارڊ ۾ هيءَ مڙي اِستعمال ڪيو ويندو۔ ان ڪري ان خاني جي رچنا ۾ هيٺ داخل ڪرڻ جي ضرورت آهي۔ اُهي ٺهڪڻ گهرجي۔ \nबाद में आप सारणी में ड़ॉटा प्रविष्ट करते है, तब हरेक नया अभिलेख में चुने हुए क्षेत्र के लिये इस स्ट्रिंग को उपयोग की जायेगा . यह, इसलिए, नीचे प्रविष्ट किये जानेवाला कोष्ट रचना को अनुरूप होना ज़रूरी है ."
+msgid "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
+"هن کيتر لاءِ  وڪلپ جي غيرمؤجودگيءَ سبب اڳ ۾ ئي اپنايل ملهہ داخل ڪريو۔ \n"
+" \n"
+" پوءِ جڏهن توهين تختيءَ ۾ سامگري داخل ڪريو ٿا۔ چونڊيل کيتر لاءِ هر نئين "
+"رڪارڊ ۾ هيءَ مڙي اِستعمال ڪيو ويندو۔ ان ڪري ان خاني جي رچنا ۾ هيٺ داخل ڪرڻ "
+"جي ضرورت آهي۔ اُهي ٺهڪڻ گهرجي۔ \n"
+"बाद में आप सारणी में ड़ॉटा प्रविष्ट करते है, तब हरेक नया अभिलेख में चुने हुए "
+"क्षेत्र के लिये इस स्ट्रिंग को उपयोग की जायेगा . यह, इसलिए, नीचे प्रविष्ट "
+"किये जानेवाला कोष्ट रचना को अनुरूप होना ज़रूरी है ."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
-msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr "اگر هن کيتر ۾ اَجايا ملهہ مؤجود ناهن، جئن اِستعمال ڪندڙ هميشهہ سامگري ضرور داخل ڪري ٿو تہ هي وڪلپ متحرڪ ڪريو "
+msgid "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr ""
+"اگر هن کيتر ۾ اَجايا ملهہ مؤجود ناهن، جئن اِستعمال ڪندڙ هميشهہ سامگري ضرور "
+"داخل ڪري ٿو تہ هي وڪلپ متحرڪ ڪريو "
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
-msgid  "Enter the maximum text length permitted."
+msgid "Enter the maximum text length permitted."
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
-msgid  "Enter the number format."
+msgid "Enter the number format."
 msgstr "رچنا جو نمبر داخل ڪريو "
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "سامگريءَ جي اُها ڊيگهہ مقرر ڪريو جيڪا هن کيتر ۾ هجي سگهي، اگر ڏهانش کيتر هجن تہ نمبر جي وڌ ۾ وڌ ڊيگهہ تہ سامگريءَ جي بلاڪ جي ڊيگهہ هن آڌار سامگريءَ لاءِ جڏهن وڌ ۾ وڌ تعداد کان اهو وڌي ويندو تڏهن ان موجن ملهہ ۾ سڌارو ڪيو ويندو۔ "
+msgid "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
+"سامگريءَ جي اُها ڊيگهہ مقرر ڪريو جيڪا هن کيتر ۾ هجي سگهي، اگر ڏهانش کيتر هجن "
+"تہ نمبر جي وڌ ۾ وڌ ڊيگهہ تہ سامگريءَ جي بلاڪ جي ڊيگهہ هن آڌار سامگريءَ لاءِ "
+"جڏهن وڌ ۾ وڌ تعداد کان اهو وڌي ويندو تڏهن ان موجن ملهہ ۾ سڌارو ڪيو ويندو۔ "
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
-msgid  "Specify the number of decimal places permitted in this field."
+msgid "Specify the number of decimal places permitted in this field."
 msgstr "هن کيتر ۾ اِجازت مليل ڏهانش جي آسٿان جو تعدادا ڄاڻايو۔ "
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
-msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr "مؤجودهہ رچنا ۾ هي اُهو آسٿان آہي جتي سامگري ڏيکاري ويندي (رچنا ۾ ڦيرڦار ڪرڻ لاءِ ساڄي پاسي جو پٽڻ اِستعمال ڪريو)۔ "
+msgid "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr ""
+"مؤجودهہ رچنا ۾ هي اُهو آسٿان آہي جتي سامگري ڏيکاري ويندي (رچنا ۾ ڦيرڦار ڪرڻ "
+"لاءِ ساڄي پاسي جو پٽڻ اِستعمال ڪريو)۔ "
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
-msgid  "This is where you determine the output format of the data."
+msgid "This is where you determine the output format of the data."
 msgstr "هي اُهو آسٿان آہي جتي توهين سامگريءَ جي رچنا جو آئوٽ پٽ مقرر ڪريو ٿا۔ "
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "اگر هن کيتر ۾ خودڪار واڌاري جا ملهہ هئڻ گهرجن تہ اهو چونڊيو۔ \n\n توهين هن قسم جي کيتر ۾ سامگري داخل نٿا ڪري سگهو۔ خودڪار نموني هر نءين رڪارڊ جو ذاتي ملهہ ڏنو ويندو (اڳوڻي رڪارڊ جي واڌاري مان نتيجو نڪرڻ)۔ \nआप इस वर्ग के क्षेत्रों में ड़ॉटा को प्रविष्ट नहीं कर सकते है . स्वचालित ढंग से हरेक नया अभिलेख के लिये एक भीतरी मूल्य को निर्दिष्ट किया जायेगा (पिछला अभिलेख का बढ़ती के नतीजे पर)."
+msgid "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
+"اگر هن کيتر ۾ خودڪار واڌاري جا ملهہ هئڻ گهرجن تہ اهو چونڊيو۔ \n"
+"\n"
+" توهين هن قسم جي کيتر ۾ سامگري داخل نٿا ڪري سگهو۔ خودڪار نموني هر نءين رڪارڊ "
+"جو ذاتي ملهہ ڏنو ويندو (اڳوڻي رڪارڊ جي واڌاري مان نتيجو نڪرڻ)۔ \n"
+"आप इस वर्ग के क्षेत्रों में ड़ॉटा को प्रविष्ट नहीं कर सकते है . स्वचालित ढंग "
+"से हरेक नया अभिलेख के लिये एक भीतरी मूल्य को निर्दिष्ट किया जायेगा (पिछला "
+"अभिलेख का बढ़ती के नतीजे पर)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
-msgid  "~..."
+msgid "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
-msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgid "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "تختي سانڍجي نہ سگہي ڇو تہ \"$column$\" ڪالم جو نالو ٻہ دفعا ڏنو ويو هو "
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
-msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr "\"$column$\" ڪالم مکيہ ڪنجيءَ جو آہي اگر خارج ڪيو ويو آہي تہ مکيہ ڪنجيءَ خارج ٿي ويندي۔ ڇا توهين سچ پچ جاري رکڻ چاهيو ٿا؟ "
+msgid "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr ""
+"\"$column$\" ڪالم مکيہ ڪنجيءَ جو آہي اگر خارج ڪيو ويو آہي تہ مکيہ ڪنجيءَ خارج "
+"ٿي ويندي۔ ڇا توهين سچ پچ جاري رکڻ چاهيو ٿا؟ "
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-msgid  "Primary Key Affected"
+msgid "Primary Key Affected"
 msgstr "مکيہ ڪنجيءَ تي اثر پيو "
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-msgid  "Column"
+msgid "Column"
 msgstr "ڪالم "
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-msgid  "Continue anyway?"
+msgid "Continue anyway?"
 msgstr "بہ جاري رکندا؟ "
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "چتاءُ! "
 
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid "The table has been changed.\nDo you want to save the changes?"
+msgstr ""
+
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr ""
+
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
-msgid  "The table could not be saved due to problems connecting to the database."
+msgid "The table could not be saved due to problems connecting to the database."
 msgstr "آڌار سامگريءَ سان سنٻنڌ قائم ڪرڻ جي مسءلن سبب تختيءَ نہ سانڍجي سگهي۔ "
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
-msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgid "The table filter could not be adjusted because the data source has been deleted."
 msgstr "تختيءَ جو فلٽر ٺهڪجي نہ سگہيو ڇو تہ سامگريءَ جو مول خارج ڪيو ويو آہي۔ "
 
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr ""
+
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-msgid  "No primary key"
+msgid "No primary key"
 msgstr "مکيہ ڪنجي ناهي "
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "هن آڌار سامگريءَ ۾ سامگريءَ جي رڪارڊ جي تصديق لاءِ علحديءَ فهرست يا مکيہ ڪنجيءَ جي ضرورت آهي۔ \n توهين هن تختيءَ ۾ سامگري فقط تڏهن داخل ڪري سگهو ٿا جڏهن هنن ٻن سٽرچنا جي شرطن مان هک پوري ٿي چڪي آهي۔ \n \n ڇا هاڻي مکيہ ڪنجي خلقجي؟ "
+msgid "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
+msgstr ""
+"هن آڌار سامگريءَ ۾ سامگريءَ جي رڪارڊ جي تصديق لاءِ علحديءَ فهرست يا مکيہ "
+"ڪنجيءَ جي ضرورت آهي۔ \n"
+" توهين هن تختيءَ ۾ سامگري فقط تڏهن داخل ڪري سگهو ٿا جڏهن هنن ٻن سٽرچنا جي "
+"شرطن مان هک پوري ٿي چڪي آهي۔ \n"
+" \n"
+" ڇا هاڻي مکيہ ڪنجي خلقجي؟ "
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: Table Design"
+msgid " - %PRODUCTNAME Base: Table Design"
 msgstr " %PRODUCTNAME  آڌار: تختيءَ جو نمونو "
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
-msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgid "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "\"$column$\" ڪالم نہ بدلجي سگهيو "
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
-msgid  "Error while saving the table design"
+msgid "Error while saving the table design"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
-msgid  "The column $column$ could not be deleted."
+msgid "The column $column$ could not be deleted."
 msgstr ""
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
-msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr "توهين هن تختيءَ جا سڀ ڪالم خارج ڪرڻ جي ڪوشش ڪري رهيا آہيو۔ ڇا آڌار سامگريءَ مان تختي خارج ڪري ڇڏجي؟ اگر نہ تہ تختي بنا ڪنهن تبديل جي رهندي۔ "
+msgid "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr ""
+"توهين هن تختيءَ جا سڀ ڪالم خارج ڪرڻ جي ڪوشش ڪري رهيا آہيو۔ ڇا آڌار سامگريءَ "
+"مان تختي خارج ڪري ڇڏجي؟ اگر نہ تہ تختي بنا ڪنهن تبديل جي رهندي۔ "
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
-msgid  "A~uto-increment statement"
+msgid "A~uto-increment statement"
 msgstr "خودڪار واڌ جو بيان "
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "خودڪار واڌ جي کيتر لاءِ SQL  بيا داخل ڪريو۔ \n\n تختي خلقجڻ وقت هي بيان سڌو آڌار سامگزي ۾ ڦري ويندو۔ "
+msgid "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
+"خودڪار واڌ جي کيتر لاءِ SQL  بيا داخل ڪريو۔ \n"
+"\n"
+" تختي خلقجڻ وقت هي بيان سڌو آڌار سامگزي ۾ ڦري ويندو۔ "
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "آڌار سامگزيءَ مان ٽائيپ جي معلومات کي موٽ نہ کارائجي سگهي۔ \n هن آڌار سامگري لاءِ تختيءَ جي نموني جو ڍنگ مؤجود ناهي The table design mode is not available for this data source."
+msgid "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
+msgstr ""
+"آڌار سامگزيءَ مان ٽائيپ جي معلومات کي موٽ نہ کارائجي سگهي۔ \n"
+" هن آڌار سامگري لاءِ تختيءَ جي نموني جو ڍنگ مؤجود ناهي The table design "
+"mode is not available for this data source."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
-msgid  "change field name"
+msgid "change field name"
 msgstr "کيتر جو نالو بدلايو "
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
-msgid  "change field type"
+msgid "change field type"
 msgstr "کيتر جوقسم بدلايو "
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
-msgid  "change field description"
+msgid "change field description"
 msgstr "کيتر جو بيان بدلايو "
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
-msgid  "change field attribute"
+msgid "change field attribute"
 msgstr "کيتر سان لاڳاپو رکندڙ بدلايو "
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
-msgid  "The destination database does not support views."
+msgid "The destination database does not support views."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
-msgid  "The destination database does not support primary keys."
+msgid "The destination database does not support primary keys."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
-msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgid "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
-msgid  "Only tables and queries are supported at the moment."
+msgid "Only tables and queries are supported at the moment."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
-msgid  "The copy source's result set must support bookmarks."
+msgid "The copy source's result set must support bookmarks."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
-msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgid "Unsupported source column type ($type$) at column position $pos$."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
-msgid  "Illegal number of initialization parameters."
+msgid "Illegal number of initialization parameters."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
-msgid  "An error occurred during initialization."
+msgid "An error occurred during initialization."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
-msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgid "Unsupported setting in the copy source descriptor: $name$."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
-msgid  "To copy a query, your connection must be able to provide queries."
+msgid "To copy a query, your connection must be able to provide queries."
 msgstr ""
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
-msgid  "The given interaction handler is invalid."
+msgid "The given interaction handler is invalid."
 msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-msgid  "~Remember password until end of session"
+msgid "~Remember password until end of session"
 msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-msgid  "~Remember password"
+msgid "~Remember password"
 msgstr "ڳجهو لفظ ياد رکو"

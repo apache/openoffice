@@ -1,916 +1,1277 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-09-04 15:49+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: genLang\n"
-
+"X-POOTLE-MTIME: 1378309776.0\n"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
-msgid  "Sorting and Grouping"
+msgid "Sorting and Grouping"
 msgstr "並べ替えとグループ化"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "グループ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
-msgid  "Group actions"
+msgid "Group actions"
 msgstr "グループアクション"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr "上へ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr "下へ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "削除(~D)"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "Properties"
+msgid "Properties"
 msgstr "プロパティー"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
-msgid  "Sorting"
+msgid "Sorting"
 msgstr "並べ替え"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "昇順"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
-msgid  "Descending"
+msgid "Descending"
 msgstr "降順"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "グループヘッダー"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
+msgid "Present"
 msgstr "存在する"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
+msgid "Not present"
 msgstr "存在しない"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "グループフッター"
 
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Present"
+msgstr "存在する"
+
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Not present"
+msgstr "存在しない"
+
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
-msgid  "Group On"
+msgid "Group On"
 msgstr "グループ化"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Each Value"
+msgid "Each Value"
 msgstr "各値"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
-msgid  "Group Interval"
+msgid "Group Interval"
 msgstr "グループ間隔"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "まとめる"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
-msgid  "No"
+msgid "No"
 msgstr "いいえ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "グループ全体"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "最初の詳細あり"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "ヘルプ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
-msgid  "Field/Expression"
+msgid "Field/Expression"
 msgstr "フィールド/式"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
-msgid  "Sort Order"
+msgid "Sort Order"
 msgstr "ソート順序"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
-msgid  "Prefix Characters"
+msgid "Prefix Characters"
 msgstr "プレフィックス文字"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "年"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
-msgid  "Quarter"
+msgid "Quarter"
 msgstr "四半期"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "月"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "週"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "日"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
-msgid  "Hour"
+msgid "Hour"
 msgstr "時"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
-msgid  "Minute"
+msgid "Minute"
 msgstr "分"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
-msgid  "Interval"
+msgid "Interval"
 msgstr "番号付けの間隔"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
-msgid  "Select a field or type an expression to sort or group on."
+msgid "Select a field or type an expression to sort or group on."
 msgstr "並べ替えまたはグループ化するには、フィールドを選択するか式を入力します。"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
-msgid  "Display a header for this group?"
+msgid "Display a header for this group?"
 msgstr "このグループのヘッダーを表示しますか ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
-msgid  "Display a footer for this group?"
+msgid "Display a footer for this group?"
 msgstr "このグループのフッターを表示しますか。"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
-msgid  "Select the value or range of values that starts a new group."
+msgid "Select the value or range of values that starts a new group."
 msgstr "新しいグループを開始する値または値範囲を選択します。"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
-msgid  "Interval or number of characters to group on."
+msgid "Interval or number of characters to group on."
 msgstr "グループ化する文字列の間隔または文字数。"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
-msgid  "Keep group together on one page?"
+msgid "Keep group together on one page?"
 msgstr "グループを 1 ページにまとめますか ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
-msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgid "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 msgstr "昇順または降順の並べ替え順序を選択します。 昇順は、A から Z または 0 から 9 を意味します"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
-msgid  "Page Numbers"
+msgid "Page Numbers"
 msgstr "ページ番号 "
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "書式"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
-msgid  "Page N"
+msgid "Page N"
 msgstr "N ページ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
-msgid  "Page N of M"
+msgid "Page N of M"
 msgstr "N/M ページ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "位置"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
-msgid  "Top of Page (Header)"
+msgid "Top of Page (Header)"
 msgstr "ページの上部 (ヘッダー)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
-msgid  "Bottom of Page (Footer)"
+msgid "Bottom of Page (Footer)"
 msgstr "ページの下部 (フッター)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "全般"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
-msgid  "Alignment:"
+msgid "Alignment:"
 msgstr "配置:"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
+msgid "Left"
 msgstr "左"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Center"
+msgid "Center"
 msgstr "中央揃え"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
+msgid "Right"
 msgstr "右"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
-msgid  "Show Number on First Page"
+msgid "Show Number on First Page"
 msgstr "最初のページに番号を表示"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ヘルプ(~H)"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
-msgid  "\"Page \" & #PAGENUMBER#"
+msgid "\"Page \" & #PAGENUMBER#"
 msgstr "& #PAGENUMBER# ページ"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
-msgid  " & \" of \" & #PAGECOUNT#"
+msgid " & \" of \" & #PAGECOUNT#"
 msgstr " &/& #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
+msgid "Page Setup"
 msgstr "ページのセットアップ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
+msgid "Page"
 msgstr "ページ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "背景"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
+msgid "Return"
 msgstr "戻る"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
+msgid "Page"
+msgstr "ページ"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
+msgid "Background"
+msgstr "背景"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
-msgid  "Section Setup"
+msgid "Section Setup"
 msgstr "セクション設定"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "戻る"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
+msgid "Background"
+msgstr "背景"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
-msgid  "Character Settings"
+msgid "Character Settings"
 msgstr "文字設定"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "フォント"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "フォントの効果"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "位置"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
-msgid  "Asian Layout"
+msgid "Asian Layout"
 msgstr "日本語レイアウト"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
+msgid "Background"
+msgstr "背景"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "配置"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "戻る"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "文字"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
-msgid  "Line"
+msgid "Line"
+msgstr "線"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
 msgstr "線"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
+msgid "Line Styles"
 msgstr "線スタイル"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
+msgid "Arrow Styles"
 msgstr "矢印スタイル"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "戻る"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
+msgid "Line"
+msgstr "線"
+
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
-msgid  "Report navigator"
+msgid "Report navigator"
 msgstr "レポートナビゲータ"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "関数"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "グループ"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
+msgid "Sorting and Grouping..."
 msgstr "並べ替えとグループ化..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
-msgid  "Page Header/Footer..."
+msgid "Page Header/Footer..."
 msgstr "ページヘッダー/フッター..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
-msgid  "Report Header/Footer..."
+msgid "Report Header/Footer..."
 msgstr "レポートヘッダー/フッター..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
-msgid  "New Function"
+msgid "New Function"
 msgstr "新機能"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "プロパティー..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Field Value Is"
+msgid "Field Value Is"
 msgstr "フィールド値"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Expression Is"
+msgid "Expression Is"
 msgstr "式"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
-msgid  "between"
+msgid "between"
 msgstr "次の日時の間"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
-msgid  "not between"
+msgid "not between"
 msgstr "次の値の間でない"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
-msgid  "equal to"
+msgid "equal to"
 msgstr "次の日付"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
-msgid  "not equal to"
+msgid "not equal to"
 msgstr "次の日付以外"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
-msgid  "greater than"
+msgid "greater than"
 msgstr "次の値より大きい"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
-msgid  "less than"
+msgid "less than"
 msgstr "次の値より小さい"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
-msgid  "greater than or equal to"
+msgid "greater than or equal to"
 msgstr "次の値以上"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
-msgid  "less than or equal to"
+msgid "less than or equal to"
 msgstr "次の値以下"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
-msgid  "and"
+msgid "and"
 msgstr "および"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
-msgid  "Example"
+msgid "Example"
 msgstr "例"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
-msgid  "Conditional Formatting"
+msgid "Conditional Formatting"
 msgstr "条件付き書式設定"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ヘルプ(~H)"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
-msgid  "Condition $number$"
+msgid "Condition $number$"
 msgstr "条件 $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "白"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
-msgid  "Font color"
+msgid "Font color"
 msgstr "フォントの色"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "背景"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
-msgid  "No Fill"
+msgid "No Fill"
 msgstr "塗りつぶしなし"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
-msgid  "Sort Ascending"
+msgid "Sort Ascending"
 msgstr "昇順に並べ替え"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
-msgid  "Sort Descending"
+msgid "Sort Descending"
 msgstr "降順に並べ替え"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
-msgid  "Remove sorting"
+msgid "Remove sorting"
 msgstr "並べ替えの解除"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "挿入"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "ヘルプ"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgid "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr "テンプレートの選択したセクションにフィールドを入れるには、そのフィールドを強調表示して、「挿入」をクリックするか Enter キーを押します。"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "日付と時刻"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
-msgid  "Include Date"
+msgid "Include Date"
 msgstr "日付を含む"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "書式"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
-msgid  "Include Time"
+msgid "Include Time"
 msgstr "時刻を含む"
 
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
+msgid "Format"
+msgstr "書式"
+
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ヘルプ(~H)"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "全般"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "データ"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "いいえ"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "はい"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
-msgid  "Force New Page"
+msgid "Force New Page"
 msgstr "新規ページを強制"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "なし"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
-msgid  "Before Section"
+msgid "Before Section"
 msgstr "セクションの前"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
-msgid  "After Section"
+msgid "After Section"
 msgstr "セクションの後"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
-msgid  "Before & After Section"
+msgid "Before & After Section"
 msgstr "セクションの前後"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
-msgid  "New Row Or Column"
+msgid "New Row Or Column"
 msgstr "新規の行または列"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "まとめる"
 
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
+msgid "No"
+msgstr "いいえ"
+
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "グループ全体"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "最初の詳細あり"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
-msgid  "Can Grow"
+msgid "Can Grow"
 msgstr "拡大可能"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
-msgid  "Can Shrink"
+msgid "Can Shrink"
 msgstr "縮小可能"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
-msgid  "Repeat Section"
+msgid "Repeat Section"
 msgstr "セクションを繰り返し"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
-msgid  "Print repeated values"
+msgid "Print repeated values"
 msgstr "繰り返された値を印刷"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
-msgid  "Conditional Print Expression"
+msgid "Conditional Print Expression"
 msgstr "条件付き印刷式"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
-msgid  "Start new column"
+msgid "Start new column"
 msgstr "新しい列の開始"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
-msgid  "Start new page"
+msgid "Start new page"
 msgstr "新しいページの開始"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
-msgid  "Reset page number"
+msgid "Reset page number"
 msgstr "ページ番号のリセット"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
-msgid  "Chart type"
+msgid "Chart type"
 msgstr "グラフの種類"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
-msgid  "Print When Group Change"
+msgid "Print When Group Change"
 msgstr "グループが変更されたときに印刷"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr "見える状態"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
-msgid  "Group keep together"
+msgid "Group keep together"
 msgstr "グループにまとめる"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "Per Page"
+msgid "Per Page"
 msgstr "ページごと"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Per Column"
+msgid "Per Column"
 msgstr "列ごと"
 
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
+msgid "None"
+msgstr "なし"
+
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
-msgid  "Section"
+msgid "Section"
 msgstr "セクション"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "自動"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
-msgid  "Page header"
+msgid "Page header"
 msgstr "ページヘッダー"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
-msgid  "Page footer"
+msgid "Page footer"
 msgstr "ページフッター"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
-msgid  "All Pages"
+msgid "All Pages"
 msgstr "すべてのページ"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
-msgid  "Not With Report Header"
+msgid "Not With Report Header"
 msgstr "レポートヘッダーなし"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
-msgid  "Not With Report Footer"
+msgid "Not With Report Footer"
 msgstr "レポートフッターなし"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
-msgid  "Not With Report Header/Footer"
+msgid "Not With Report Header/Footer"
 msgstr "レポートヘッダー/フッターなし"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
-msgid  "Deep traversing"
+msgid "Deep traversing"
 msgstr "深いトラバース"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
-msgid  "Pre evaluation"
+msgid "Pre evaluation"
 msgstr "事前評価"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "Position X"
+msgid "Position X"
 msgstr "位置 X"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "Position Y"
+msgid "Position Y"
 msgstr "位置 Y"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "幅"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "高さ"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
-msgid  "Initial value"
+msgid "Initial value"
 msgstr "初期値"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
-msgid  "Preserve as Link"
+msgid "Preserve as Link"
 msgstr "リンクとして保存"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
-msgid  "Formula"
+msgid "Formula"
 msgstr "数式"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "データフィールド"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "フォント"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "背景色"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
+msgid "Background Transparent"
+msgstr "透明な背景"
+
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
+msgid "Background Transparent"
 msgstr "透明な背景"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
-msgid  "This operation is not allowed. The control overlaps with another one."
+msgid "This operation is not allowed. The control overlaps with another one."
 msgstr "この操作は許可されていません。 コントロールがほかのコントロールと重複しています。"
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
-msgid  "This position can not be set. It is invalid."
+msgid "This position can not be set. It is invalid."
 msgstr "この位置は設定できません。 無効です。"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
-msgid  "Group: %1"
+msgid "Group: %1"
 msgstr "グループ: %1"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
-msgid  "Function"
+msgid "Function"
 msgstr "関数"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
-msgid  "Scope"
+msgid "Scope"
 msgstr "範囲"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
-msgid  "Data Field Type"
+msgid "Data Field Type"
 msgstr "データフィールドの種類"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
-msgid  "Field or Formula"
+msgid "Field or Formula"
 msgstr "フィールドまたは数式"
 
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
+msgid "Function"
+msgstr "関数"
+
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
-msgid  "Counter"
+msgid "Counter"
 msgstr "カウンタ"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
-msgid  "User defined Function"
+msgid "User defined Function"
 msgstr "ユーザー定義関数"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "リンク元"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "リンク先"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
-msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "グラフを使用して、レポートの現在のレコードに関する詳細なデータを表示できます。これを行うために、グラフのどの列がレポートのどの列に一致するかを指定できます。"
+msgid "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+"グラフを使用して、レポートの現在のレコードに関する詳細なデータを表示できます。これを行うために、グラフのどの列がレポートのどの列に一致するかを指定できま"
+"す。"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
-msgid  "Chart"
+msgid "Chart"
 msgstr "グラフ"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "レポート"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
-msgid  "Preview Row(s)"
+msgid "Preview Row(s)"
 msgstr "行のプレビュー"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
-msgid  "Area"
+msgid "Area"
 msgstr "範囲"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
-msgid  "Report Output Format"
+msgid "Report Output Format"
 msgstr "レポート出力形式"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr "垂直方向の配置"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "上"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr "中央"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "下"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
-msgid  "Horz. Alignment"
+msgid "Horz. Alignment"
 msgstr "横方向の配置"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr "左"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr "右"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
-msgid  "Block"
+msgid "Block"
 msgstr "ブロック"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
-msgid  "Center"
-msgstr "中央"
+msgid "Center"
+msgstr "中央揃え"
+
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
+msgid "Counter"
+msgstr "カウンタ"
 
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
-msgid  "Accumulation"
+msgid "Accumulation"
 msgstr "集積"
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
-msgid  "Minimum"
+msgid "Minimum"
 msgstr "最小"
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
-msgid  "Maximum"
+msgid "Maximum"
 msgstr "最大"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "プロパティー: "
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "コントロール要素の選択なし"
 
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+msgid "Multiselection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid "Image Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+msgid "Label field"
+msgstr "ラベルフィールド"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
+msgid "Line"
+msgstr "線"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid "Formatted Field"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
+msgid "Shape"
+msgstr "シェイプ"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
+msgid "Report"
+msgstr "レポート"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
+msgid "Section"
+msgstr "セクション"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "関数"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
+msgid "Group"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
+msgid "Show ruler"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
+msgid "Show grid"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
+msgid "Change Object"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
-msgid  "Move Group(s)"
+msgid "Move Group(s)"
 msgstr "グループの移動"
 
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
+msgid "Conditional Formatting"
+msgstr "条件付き書式設定"
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Remove report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Add report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Remove page header / page footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Add page header / page footer"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
-msgid  "Change property '#'"
+msgid "Change property '#'"
 msgstr "プロパティー '#' の変更"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
-msgid  "Add group header "
+msgid "Add group header "
 msgstr "グループヘッダーの追加"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
-msgid  "Remove group header "
+msgid "Remove group header "
 msgstr "グループヘッダーの削除"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
-msgid  "Add group footer "
+msgid "Add group footer "
 msgstr "グループフッターの追加"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
-msgid  "Remove group footer "
+msgid "Remove group footer "
 msgstr "グループフッターの削除"
 
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
+msgid "Add function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
+msgid "Delete function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
+msgid "Design"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
+msgid "Preview"
+msgstr ""
+
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
-msgid  "Report #"
+msgid "Report #"
 msgstr "レポート #"
 
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
+msgid "~Report name"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
+msgid "Add Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
+msgid "Delete Selection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
+msgid "Delete Function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
+msgid "Change Size"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
+msgid "Paste"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
+msgid "Insert Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
+msgid "Delete Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
+msgid "Insert Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
+msgid "GroupHeader"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
+msgid "GroupFooter"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+msgid "Sorting and Grouping..."
+msgstr "並べ替えとグループ化..."
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
+msgid "Background Color..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
+msgid "Ruler..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
+msgid "Grid..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
+msgid "~Arrange"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
+msgid "Bring ~Forward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
+msgid "Send Back~ward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
+msgid "~Object Resizing"
+msgstr ""
+
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to smallest width"
+msgid "~Fit to smallest width"
 msgstr "最小の幅に合わせる(~F)"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to greatest width"
+msgid "~Fit to greatest width"
 msgstr "最大の幅に合わせる(~F)"
 
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
+msgid "~Fit to smallest height"
+msgstr ""
+
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to greatest height"
+msgid "~Fit to greatest height"
 msgstr "最大の高さに合わせる(~F)"
 
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
+msgid "Section"
+msgstr "セクション"
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
+msgid "Shrink"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
+msgid "Shrink from top"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
+msgid "Shrink from bottom"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
+msgid "Distribution..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+msgid "Properties..."
+msgstr "プロパティー..."
+
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
+msgid "Add field:"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
+msgid "Filter"
+msgstr ""
+
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base Report"
+msgid " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME Base レポート"
 
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
+msgid "Untitled"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
+msgid "Change Alignment"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
+msgid "# Header"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
+msgid "# Footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
+msgid "Insert graphics"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
+msgid "Delete"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "関数"
+
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
+msgid "An error occurred while creating the report."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
+msgid "An exception of type $type$ was caught."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
+msgid "Change font"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
+msgid "Change page attributes"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Page Header/Footer"
+msgid "Insert Page Header/Footer"
 msgstr "ページヘッダー/フッターの挿入"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Page Header/Footer"
+msgid "Delete Page Header/Footer"
 msgstr "ページヘッダー/フッターの削除"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Column Header/Footer"
+msgid "Insert Column Header/Footer"
 msgstr "列ヘッダー/フッターの挿入"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Column Header/Footer"
+msgid "Delete Column Header/Footer"
 msgstr "列ヘッダー/フッターの削除"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Report Header/Footer"
+msgid "Insert Report Header/Footer"
 msgstr "レポートヘッダー/フッターの挿入"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Report Header/Footer"
+msgid "Delete Report Header/Footer"
 msgstr "レポートヘッダー/フッターの削除"
 
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
+msgid "The report can not be executed unless it is bound to content."
+msgstr ""
+
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
+msgid "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
+msgid "Shrink Section"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
+msgid "Detail"
+msgstr "詳細"
+
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
+msgid "Page Header"
+msgstr "ページヘッダー"
+
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+msgid "Page Footer"
+msgstr "ページフッター"
+
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
+msgid "Report Header"
+msgstr "レポートヘッダー"
+
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+msgid "Report Footer"
+msgstr "レポートフッター"
+
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
+msgid "Insert"
+msgstr "挿入"
+
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
+msgid "Detail"
 msgstr "詳細"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
+msgid "Page Header"
 msgstr "ページヘッダー"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
+msgid "Page Footer"
 msgstr "ページフッター"
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "グループヘッダー"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "グループフッター"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
+msgid "Report Header"
 msgstr "レポートヘッダー"
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
+msgid "Report Footer"
 msgstr "レポートフッター"
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
-msgid  "The name '#1' already exists and can not be asssigned again."
+msgid "The name '#1' already exists and can not be asssigned again."
 msgstr "名前「#1」はすでに存在し、再割り当てはできません。"
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgid "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr "無効な引数を設定しようとしました。 有効な引数を「#1」で探してください。"
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
-msgid  "The element is invalid."
+msgid "The element is invalid."
 msgstr "要素が無効です。"
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
+msgid "Label field"
 msgstr "ラベルフィールド"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
-msgid  "Formatted field"
+msgid "Formatted field"
 msgstr "書式設定されたフィールド"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
-msgid  "Image control"
+msgid "Image control"
 msgstr "イメージコントロール"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "レポート"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
-msgid  "Shape"
+msgid "Shape"
 msgstr "シェイプ"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
-msgid  "Fixed line"
+msgid "Fixed line"
 msgstr "固定行"

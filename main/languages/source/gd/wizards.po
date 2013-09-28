@@ -1,3392 +1,3920 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: euro/euro.src#STEP_ZERO.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "Sguir d~heth"
 
 #: euro/euro.src#STEP_ZERO___1.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "Cob~hair"
 
 #: euro/euro.src#STEP_ZERO___2.STRING.TEXT
-msgid  "<<~Back"
+msgid "<<~Back"
 msgstr "<<~Air ais"
 
 #: euro/euro.src#STEP_ZERO___3.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "Io~mpaich"
 
 #: euro/euro.src#STEP_ZERO___4.STRING.TEXT
-msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr "An aire: Chan urrainn dhut suimean airgid o cheanglaichean on taobh a-muigh agus factaran iompachadh airgid iompachadh."
+msgid "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr ""
+"An aire: Chan urrainn dhut suimean airgid o cheanglaichean on taobh a-muigh "
+"agus factaran iompachadh airgid iompachadh."
 
 #: euro/euro.src#STEP_ZERO___5.STRING.TEXT
-msgid  "First, unprotect all sheets."
+msgid "First, unprotect all sheets."
 msgstr "Thoir an dìon air falbh o gach siota an toiseach."
 
 #: euro/euro.src#STEP_ZERO___6.STRING.TEXT
-msgid  "Currencies:"
+msgid "Currencies:"
 msgstr "Airgeadrathan:"
 
 #: euro/euro.src#STEP_ZERO___7.STRING.TEXT
-msgid  "C~ontinue>>"
+msgid "C~ontinue>>"
 msgstr "L~ean air adhart>>"
 
 #: euro/euro.src#STEP_ZERO___8.STRING.TEXT
-msgid  "C~lose"
+msgid "C~lose"
 msgstr "Dù~in"
 
 #: euro/euro.src#STEP_CONVERTER.STRING.TEXT
-msgid  "~Entire document"
+msgid "~Entire document"
 msgstr "An ~sgrìobhainn air fad"
 
 #: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "An taghadh"
 
 #: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
-msgid  "Cell S~tyles"
+msgid "Cell S~tyles"
 msgstr "S~toidhlean cealla"
 
 #: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
-msgid  "Currency cells in the current ~sheet"
+msgid "Currency cells in the current ~sheet"
 msgstr "Na ceallan airgeadra ~san t-siota làithreach"
 
 #: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
-msgid  "Currency cells in the entire ~document"
+msgid "Currency cells in the entire ~document"
 msgstr "Na ~ceallan airgeadra san sgrìobhainn air fad"
 
 #: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
-msgid  "~Selected range"
+msgid "~Selected range"
 msgstr "An ~rainse a thagh thu"
 
 #: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
-msgid  "Select Cell Styles"
+msgid "Select Cell Styles"
 msgstr "Tagh stoidhlean nan cealla"
 
 #: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
-msgid  "Select currency cells"
+msgid "Select currency cells"
 msgstr "Tagh na ceallan airgeadra"
 
 #: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
-msgid  "Currency ranges:"
+msgid "Currency ranges:"
 msgstr "Rainsean airgeadra:"
 
 #: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
-msgid  "Templates:"
+msgid "Templates:"
 msgstr "Teamplaidean:"
 
 #: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
-msgid  "Extent"
+msgid "Extent"
 msgstr "Meud"
 
 #: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
-msgid  "~Single %PRODUCTNAME Calc document"
+msgid "~Single %PRODUCTNAME Calc document"
 msgstr "~Sgrìobhainn %PRODUCTNAME Calc shingilte"
 
 #: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
-msgid  "Complete ~directory"
+msgid "Complete ~directory"
 msgstr "An ~t-eòlaire gu lèir"
 
 #: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
-msgid  "Source Document:"
+msgid "Source Document:"
 msgstr "An tùs-sgrìobhainn:"
 
 #: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
-msgid  "Source directory:"
+msgid "Source directory:"
 msgstr "An tùs-eòlaire:"
 
 #: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
-msgid  "~Including subfolders"
+msgid "~Including subfolders"
 msgstr "~Gabh a-steach na fo-phasgan"
 
 #: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
-msgid  "Target directory:"
+msgid "Target directory:"
 msgstr "An t-eòlaire targaid:"
 
 #: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
-msgid  "Temporarily unprotect sheet without query"
+msgid "Temporarily unprotect sheet without query"
 msgstr "Thoir air falbh an dìon rè seal as aonais ceist"
 
 #: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
-msgid  "Also convert fields and tables in text documents"
+msgid "Also convert fields and tables in text documents"
 msgstr "Iompaich na raointean is clàir ann an sgrìobhainnean teacsa cuideachd"
 
 #: euro/euro.src#STATUSLINE.STRING.TEXT
-msgid  "Conversion status: "
+msgid "Conversion status: "
 msgstr "Staid an iompachaidh: "
 
 #: euro/euro.src#STATUSLINE___1.STRING.TEXT
-msgid  "Conversion status of the cell templates:"
+msgid "Conversion status of the cell templates:"
 msgstr "Staid iompachaidh de theamplaidean nan ceallan:"
 
 #: euro/euro.src#STATUSLINE___2.STRING.TEXT
-msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgid "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
 msgstr "Clàradh nan rainsean iomchaidh: Siota %1Number%1 à %2TotPageCount%2"
 
 #: euro/euro.src#STATUSLINE___3.STRING.TEXT
-msgid  "Entry of the ranges to be converted..."
+msgid "Entry of the ranges to be converted..."
 msgstr "Taghadh nan rainsean a thèid iompachadh..."
 
 #: euro/euro.src#STATUSLINE___4.STRING.TEXT
-msgid  "Sheet protection for each sheet will be restored..."
+msgid "Sheet protection for each sheet will be restored..."
 msgstr "Thèid dìon siota aiseag airson gach siota..."
 
 #: euro/euro.src#STATUSLINE___5.STRING.TEXT
-msgid  "Conversion of the currency units in the cell templates..."
+msgid "Conversion of the currency units in the cell templates..."
 msgstr "Iompachadh aonadan an airgeadra ann an teamplaidean nan cealla..."
 
 #: euro/euro.src#MESSAGES.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Crìochnaich"
 
 #: euro/euro.src#MESSAGES___1.STRING.TEXT
-msgid  "Select directory"
+msgid "Select directory"
 msgstr "Tagh eòlaire"
 
 #: euro/euro.src#MESSAGES___2.STRING.TEXT
-msgid  "Select file"
+msgid "Select file"
 msgstr "Tagh faidhle"
 
 #: euro/euro.src#MESSAGES___3.STRING.TEXT
-msgid  "Select target directory"
+msgid "Select target directory"
 msgstr "Tagh eòlaire targaid"
 
 #: euro/euro.src#MESSAGES___4.STRING.TEXT
-msgid  "non-existant"
+msgid "non-existant"
 msgstr "chan eil e ann"
 
 #: euro/euro.src#MESSAGES___5.STRING.TEXT
-msgid  "Euro Converter"
+msgid "Euro Converter"
 msgstr "Iompaichear nan Eòro"
 
 #: euro/euro.src#MESSAGES___6.STRING.TEXT
-msgid  "Should protected spreadsheets be temporarily unprotected?"
-msgstr "A bheil thu airson an dìon a thoirt air falbh o na cliath-dhuilleagan rè seal?"
+msgid "Should protected spreadsheets be temporarily unprotected?"
+msgstr ""
+"A bheil thu airson an dìon a thoirt air falbh o na cliath-dhuilleagan rè "
+"seal?"
 
 #: euro/euro.src#MESSAGES___7.STRING.TEXT
-msgid  "Enter the password to unprotect the table %1TableName%1"
-msgstr "Cuir a-steach am facal-faire gus an dìon a thoirt air falbh on chlàr %1TableName%1"
+msgid "Enter the password to unprotect the table %1TableName%1"
+msgstr ""
+"Cuir a-steach am facal-faire gus an dìon a thoirt air falbh on chlàr %"
+"1TableName%1"
 
 #: euro/euro.src#MESSAGES___8.STRING.TEXT
-msgid  "Wrong Password!"
+msgid "Wrong Password!"
 msgstr "Facal-faire cearr!"
 
 #: euro/euro.src#MESSAGES___9.STRING.TEXT
-msgid  "Protected Sheet"
+msgid "Protected Sheet"
 msgstr "Siota do dhìon"
 
 #: euro/euro.src#MESSAGES___10.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "Rabhadh!"
 
 #: euro/euro.src#MESSAGES___11.STRING.TEXT
-msgid  "Protection for the sheets will not be removed."
+msgid "Protection for the sheets will not be removed."
 msgstr "Cha dèid an dìon a thoirt air falbh o na siotaichean."
 
 #: euro/euro.src#MESSAGES___12.STRING.TEXT
-msgid  "Sheet cannot be unprotected"
+msgid "Sheet cannot be unprotected"
 msgstr "Chan urrainn dhut an dìon a thoirt far an t-siota"
 
 #: euro/euro.src#MESSAGES___13.STRING.TEXT
-msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr "Chan urrainn dhan draoidh an sgrìobhainn seo a dheasachadh a chionn 's nach urrainn dhut fòrmat nan ceallan atharrachadh ann an sgrìobhainnean sa bheil cliath-dhuilleagan fo dhìon."
+msgid "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr ""
+"Chan urrainn dhan draoidh an sgrìobhainn seo a dheasachadh a chionn 's nach "
+"urrainn dhut fòrmat nan ceallan atharrachadh ann an sgrìobhainnean sa bheil "
+"cliath-dhuilleagan fo dhìon."
 
 #: euro/euro.src#MESSAGES___14.STRING.TEXT
-msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr "Thoir an aire nach obraich iompaichear nan Eòro san sgrìobhainn seo ma bhios dìon ann!"
+msgid "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr ""
+"Thoir an aire nach obraich iompaichear nan Eòro san sgrìobhainn seo ma bhios "
+"dìon ann!"
 
 #: euro/euro.src#MESSAGES___15.STRING.TEXT
-msgid  "Please choose a currency to be converted first!"
+msgid "Please choose a currency to be converted first!"
 msgstr "Tagh airgeadra gus iompachadh an toiseach!"
 
 #: euro/euro.src#MESSAGES___16.STRING.TEXT
-msgid  "Password:"
+msgid "Password:"
 msgstr "Facal-faire:"
 
 #: euro/euro.src#MESSAGES___17.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Ceart ma-thà"
 
 #: euro/euro.src#MESSAGES___18.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Sguir dheth"
 
 #: euro/euro.src#MESSAGES___19.STRING.TEXT
-msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
 msgstr "Tagh sgrìobhainn %PRODUCTNAME Calc gus a dheasachadh!"
 
 #: euro/euro.src#MESSAGES___20.STRING.TEXT
-msgid  "'<1>' is not a directory!"
+msgid "'<1>' is not a directory!"
 msgstr "Chan eil '<1>' 'na eòlaire!"
 
 #: euro/euro.src#MESSAGES___21.STRING.TEXT
-msgid  "Document is read-only!"
+msgid "Document is read-only!"
 msgstr "Tha an sgrìobhainn seo ri leughadh a-mhàin!"
 
 #: euro/euro.src#MESSAGES___22.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr "Tha am faidhle '<1>' ann mu thràth.<CR>A bheil thu airson sgrìobhadh thairis air?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr ""
+"Tha am faidhle \"<1>\" ann mu thràth.<CR>A bheil thu airson sgrìobhadh thairis "
+"air?"
 
 #: euro/euro.src#MESSAGES___23.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
-msgstr "A bheil thu cinnteach gu bheil thu airson crìoch a chur air an iompachadh aig an ìre-sa?"
+msgid "Do you really want to terminate conversion at this point?"
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson crìoch a chur air an iompachadh "
+"aig an ìre-sa?"
 
 #: euro/euro.src#MESSAGES___24.STRING.TEXT
-msgid  "Cancel Wizard"
+msgid "Cancel Wizard"
 msgstr "Sguir dhen draoidh"
 
 #: euro/euro.src#CURRENCIES.STRING.TEXT
-msgid  "Portuguese Escudo"
+msgid "Portuguese Escudo"
 msgstr "Escudo na Portagaile"
 
 #: euro/euro.src#CURRENCIES___1.STRING.TEXT
-msgid  "Dutch Guilder"
+msgid "Dutch Guilder"
 msgstr "Guilde nan Tìrean Ìsle"
 
 #: euro/euro.src#CURRENCIES___2.STRING.TEXT
-msgid  "French Franc"
+msgid "French Franc"
 msgstr "Franc na Frainge"
 
 #: euro/euro.src#CURRENCIES___3.STRING.TEXT
-msgid  "Spanish Peseta"
+msgid "Spanish Peseta"
 msgstr "Peseta na Spàinne"
 
 #: euro/euro.src#CURRENCIES___4.STRING.TEXT
-msgid  "Italian Lira"
+msgid "Italian Lira"
 msgstr "Lira na h-Eadailte"
 
 #: euro/euro.src#CURRENCIES___5.STRING.TEXT
-msgid  "German Mark"
+msgid "German Mark"
 msgstr "Mark na Gearmailte"
 
 #: euro/euro.src#CURRENCIES___6.STRING.TEXT
-msgid  "Belgian Franc"
+msgid "Belgian Franc"
 msgstr "Franc na Beilge"
 
 #: euro/euro.src#CURRENCIES___7.STRING.TEXT
-msgid  "Irish Punt"
+msgid "Irish Punt"
 msgstr "Punt na h-Èireann"
 
 #: euro/euro.src#CURRENCIES___8.STRING.TEXT
-msgid  "Luxembourg Franc"
+msgid "Luxembourg Franc"
 msgstr "Franc Lucsamburg"
 
 #: euro/euro.src#CURRENCIES___9.STRING.TEXT
-msgid  "Austrian Schilling"
+msgid "Austrian Schilling"
 msgstr "Schilling na h-Ostaire"
 
 #: euro/euro.src#CURRENCIES___10.STRING.TEXT
-msgid  "Finnish Mark"
+msgid "Finnish Mark"
 msgstr "Mark na Fionnlainne"
 
 #: euro/euro.src#CURRENCIES___11.STRING.TEXT
-msgid  "Greek Drachma"
+msgid "Greek Drachma"
 msgstr "Drachma na Grèige"
 
 #: euro/euro.src#CURRENCIES___12.STRING.TEXT
-msgid  "Slovenian Tolar"
+msgid "Slovenian Tolar"
 msgstr "Tolar na Slòbhaine"
 
 #: euro/euro.src#CURRENCIES___13.STRING.TEXT
-msgid  "Cypriot Pound"
+msgid "Cypriot Pound"
 msgstr "Punnd Chìopras"
 
 #: euro/euro.src#CURRENCIES___14.STRING.TEXT
-msgid  "Maltese Lira"
+msgid "Maltese Lira"
 msgstr "Lira Mhalta"
 
 #: euro/euro.src#CURRENCIES___15.STRING.TEXT
-msgid  "Slovak Koruna"
+msgid "Slovak Koruna"
 msgstr "Koruna na Slòbhaice"
 
 #: euro/euro.src#CURRENCIES___16.STRING.TEXT
-msgid  "The currency set for the document is not a European currency!"
+msgid "The currency set for the document is not a European currency!"
 msgstr "Chan e airgeadra Eòrpach a thagh thu airson na sgrìobhainne seo!"
 
 #: euro/euro.src#CURRENCIES___17.STRING.TEXT
-msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr "Chan e cànan Aonadh Airgead na Roinn-Eòrpa a tha sa chànan a shuidhich thu mar chànan an t-siostaim obrachaidh agad."
+msgid "The language set for your operating system is not a language of the European Monetary Union."
+msgstr ""
+"Chan e cànan Aonadh Airgead na Roinn-Eòrpa a tha sa chànan a shuidhich thu "
+"mar chànan an t-siostaim obrachaidh agad."
 
 #: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Adhartas"
 
 #: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
-msgid  "Retrieving the relevant documents..."
+msgid "Retrieving the relevant documents..."
 msgstr "A' faighinn nan sgrìobhainnean iomchaidh..."
 
 #: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
-msgid  "Converting the documents..."
+msgid "Converting the documents..."
 msgstr "Ag iompachadh nan sgrìobhainnean..."
 
 #: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
-msgid  "Settings:"
+msgid "Settings:"
 msgstr "Roghainnean:"
 
 #: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
-msgid  "Sheet is always unprotected"
+msgid "Sheet is always unprotected"
 msgstr "Bidh an siota gun dìon an-còmhnaidh"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
-msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr "Cha do ghabh an t-eòlaire \"%1\" a chruthachadh.<BR>Faodaidh nach eil àite saor gu leòr air fhàgail air a' chlàr-chruaidh agad."
+msgid "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr ""
+"Cha do ghabh an t-eòlaire \"%1\" a chruthachadh.<BR>Faodaidh nach eil àite "
+"saor gu leòr air fhàgail air a' chlàr-chruaidh agad."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
-msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr "Cha do ghabh an sgrìobhainn teacsa a chruthachadh.<BR>Dèan cinnteach gu bheil am mòideal \"PRODUCTNAME Writer\" air a stàladh."
+msgid "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr ""
+"Cha do ghabh an sgrìobhainn teacsa a chruthachadh.<BR>Dèan cinnteach gu "
+"bheil am mòideal \"PRODUCTNAME Writer\" air a stàladh."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
-msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr "Cha do ghabh a' chliath-dhuilleag a chruthachadh.<BR>Dèan cinnteach gu bheil am mòideal \"PRODUCTNAME Calc\" air a stàladh."
+msgid "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr ""
+"Cha do ghabh a' chliath-dhuilleag a chruthachadh.<BR>Dèan cinnteach gu bheil "
+"am mòideal \"PRODUCTNAME Calc\" air a stàladh."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
-msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr "Cha do ghabh an taisbeanadh a chruthachadh.<BR>Dèan cinnteach gu bheil am mòideal \"PRODUCTNAME Impress\" air a stàladh."
+msgid "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr ""
+"Cha do ghabh an taisbeanadh a chruthachadh.<BR>Dèan cinnteach gu bheil am "
+"mòideal \"PRODUCTNAME Impress\" air a stàladh."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
-msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr "Cha do ghabh an tarraing a chruthachadh.<BR>Dèan cinnteach gu bheil am mòideal \"PRODUCTNAME Draw\" air a stàladh."
+msgid "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr ""
+"Cha do ghabh an tarraing a chruthachadh.<BR>Dèan cinnteach gu bheil am "
+"mòideal \"PRODUCTNAME Draw\" air a stàladh."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
-msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr "Cha do ghabh an fhoirmle a chruthachadh.<BR>Dèan cinnteach gu bheil am mòideal \"PRODUCTNAME Math\" air a stàladh."
+msgid "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr ""
+"Cha do ghabh an fhoirmle a chruthachadh.<BR>Dèan cinnteach gu bheil am "
+"mòideal \"PRODUCTNAME Math\" air a stàladh."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
-msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr "Cha deach na faidhlichean air a bheil feum a lorg.<BR>Tòisich suidheachadh %PRODUCTNAME agus tagh \"Càirich\"."
+msgid "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr ""
+"Cha deach na faidhlichean air a bheil feum a lorg.<BR>Tòisich suidheachadh %"
+"PRODUCTNAME agus tagh \"Càirich\"."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
-msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr "Tha an t-slighe \"<PATH>\" ann mu thràth.<BR><BR>A bheil thu airson sgrìobhadh thairis air an fhaidhle a tha ann mu thràth?"
+msgid "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr ""
+"Tha an t-slighe \"<PATH>\" ann mu thràth.<BR><BR>A bheil thu airson sgrìobhadh "
+"thairis air an fhaidhle a tha ann mu thràth?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Tha"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
-msgid  "Yes to All"
+msgid "Yes to All"
 msgstr "Tha dhan a h-uile"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "Chan eil"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Sguir dheth"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Crìochnaich"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< ~Air ais"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
-msgid  "~Next >"
+msgid "~Next >"
 msgstr "Air a~dhart >"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "Cob~hair"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "Ceuman"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Dùin"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Ceart ma-thà"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
-msgid  "The file already exists. Do you want to overwrite it?"
-msgstr "Tha am faidhle ann mu thràth. A bheil thu airson sgrìobhadh thairis air?"
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr ""
+"Tha am faidhle ann mu thràth. A bheil thu airson sgrìobhadh thairis air?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
-msgid  "Template created via <wizard_name> on <current_date>."
+msgid "Template created via <wizard_name> on <current_date>."
 msgstr "Chaidh an teamplaid a chruthachadh le <wizard_name> <current_date>."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Cha do ghabh an draoidh a chur gu dol a chionn 's gun robh faidhlichean cudromach a dhìth.\nBriog air a' phutan \"Bun-roghainn\" fo \"Innealan - Roghainnean - %PRODUCTNAME - Slighean\" gus na slighean dha na roghainnean bunaiteach tùsail aiseag.\nRuith an draoidh a-rithist an uairsin."
+msgid "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr ""
+"Cha do ghabh an draoidh a chur gu dol a chionn 's gun robh faidhlichean "
+"cudromach a dhìth.\n"
+"Briog air a' phutan \"Bun-roghainn\" fo \"Innealan - Roghainnean - %PRODUCTNAME "
+"- Slighean\" gus na slighean dha na roghainnean bunaiteach tùsail aiseag.\n"
+"Ruith an draoidh a-rithist an uairsin."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
-msgid  "C~reate"
+msgid "C~reate"
 msgstr "C~ruthaich"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "Sguir d~heth"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Air ais"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "Air a~dhart >>"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr "Stòr-~dàta"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
-msgid  "~Table name"
+msgid "~Table name"
 msgstr "Ai~nm a' chlàir"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
-msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgid "An error occurred while running the wizard. The wizard will be terminated."
 msgstr "Thachair mearachd leis an draoidh. Thig an draoidh gu crìoch."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
-msgid  "No connection to the database could be established."
+msgid "No connection to the database could be established."
 msgstr "Cha do ghabh ceangal ris an stòr-dàta a stèidheachadh."
 
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___20.STRING.TEXT
+msgid "~Help"
+msgstr "Cob~hair"
+
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
-msgid  "~Stop"
+msgid "~Stop"
 msgstr "~Sguir dheth"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
-msgid  "The document could not be saved."
+msgid "The document could not be saved."
 msgstr "Cha do ghabh an sgrìobhainn a shàbhaladh."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
-msgid  "Exiting the wizard"
+msgid "Exiting the wizard"
 msgstr "A' fàgail an draoidh"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
-msgid  "Connecting to data source..."
+msgid "Connecting to data source..."
 msgstr "A' ceangal ri tùs an dàta..."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
-msgid  "The connection to the data source could not be established."
+msgid "The connection to the data source could not be established."
 msgstr "Cha do ghabh ceangal a stèidheachadh ri tùs an dàta."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
-msgid  "The file path entered is not valid."
+msgid "The file path entered is not valid."
 msgstr "Chan eil slighe an fhaidhle a chuir thu a-steach dligheach."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
-msgid  "Please select a data source"
+msgid "Please select a data source"
 msgstr "Tagh tùs dàta"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
-msgid  "Please select a table or query"
+msgid "Please select a table or query"
 msgstr "Tagh clàr no ceist"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
-msgid  "Add field"
+msgid "Add field"
 msgstr "Cuir ris raon"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
-msgid  "Remove field"
+msgid "Remove field"
 msgstr "Thoir air falbh an raon"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
-msgid  "Add all fields"
+msgid "Add all fields"
 msgstr "Cuir a h-uile raon ris"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
-msgid  "Remove all fields"
+msgid "Remove all fields"
 msgstr "Thoir air falbh a h-uile raon"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
-msgid  "Move field up"
+msgid "Move field up"
 msgstr "Gluais an raon suas"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
-msgid  "Move field down"
+msgid "Move field down"
 msgstr "Gluais an raon sìos"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
-msgid  "The field names from '%NAME' could not be retrieved."
+msgid "The field names from '%NAME' could not be retrieved."
 msgstr "Cha d' fhuaradh greim air ainmean nan raointean o \"%NAME\"."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
-msgid  "Form Wizard"
+msgid "Form Wizard"
 msgstr "Draoidh nam foirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
-msgid  "Fields in ~the form"
+msgid "Fields in ~the form"
 msgstr "Raoin~tean san fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Chithear raointean bìnearaidh air an liosta an-còmhnaidh 's gabhaidh an taghadh on liosta chlì.\nThèid an làimhseachadh mar dhealbhan, ma ghabhas sin a dhèanamh."
+msgid "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr ""
+"Chithear raointean bìnearaidh air an liosta an-còmhnaidh 's gabhaidh an "
+"taghadh on liosta chlì.\n"
+"Thèid an làimhseachadh mar dhealbhan, ma ghabhas sin a dhèanamh."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "'S e foirm a thèid a chur a-steach ann am foirm eile a tha ann am fo-fhoirm.\nCleachd fo-fhoirmean gus dàta o chlàir no ceistean (aig a bheil dàimh aon-ri-aon) eile a shealltainn."
+msgid "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
+"'S e foirm a thèid a chur a-steach ann am foirm eile a tha ann am fo-fhoirm.\n"
+"Cleachd fo-fhoirmean gus dàta o chlàir no ceistean (aig a bheil dàimh aon-"
+"ri-aon) eile a shealltainn."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
-msgid  "~Add Subform"
+msgid "~Add Subform"
 msgstr "C~uir fo-fhoirm ris"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
-msgid  "~Subform based on existing relation"
+msgid "~Subform based on existing relation"
 msgstr "~Fo-fhoirm stèidhichte air dàimh làithreach"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
-msgid  "Tables or queries"
+msgid "Tables or queries"
 msgstr "Clàir no ceistean"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
-msgid  "Subform based on ~manual selection of fields"
+msgid "Subform based on ~manual selection of fields"
 msgstr "Fo-fhoirm stèidhichte air taghadh lài~mhe de raointean"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
-msgid  "~Which relation do you want to add?"
+msgid "~Which relation do you want to add?"
 msgstr "~Dè an dàimh a bha thu airson a chur ris?"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
-msgid  "Fields in the ~subform"
+msgid "Fields in the ~subform"
 msgstr "Raoin~tean san fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
-msgid  "~Available fields"
+msgid "~Available fields"
 msgstr "~Raointean a tha ri fhaighinn"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
-msgid  "Fields in form"
+msgid "Fields in form"
 msgstr "Raointean san fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Chaidh an t-alt \"<FIELDNAME1>\" agus \"<FIELDNAME2>\" a thaghadh dà thuras\nach chan urrainn dhut alt a chleachdadh ach aon turas."
+msgid "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr ""
+"Chaidh an t-alt \"<FIELDNAME1>\" agus \"<FIELDNAME2>\" a thaghadh dà thuras\n"
+"ach chan urrainn dhut alt a chleachdadh ach aon turas."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
-msgid  "~First joined subform field"
+msgid "~First joined subform field"
 msgstr "~A' chiad raon altaichte dhen fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
-msgid  "~Second joined subform field"
+msgid "~Second joined subform field"
 msgstr "An ~dàrna raon altaichte dhen fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
-msgid  "~Third joined subform field"
+msgid "~Third joined subform field"
 msgstr "An ~treas raon altaichte dhen fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
-msgid  "~Fourth joined subform field"
+msgid "~Fourth joined subform field"
 msgstr "An ~ceathramh raon altaichte dhen fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
-msgid  "F~irst joined main form field"
+msgid "F~irst joined main form field"
 msgstr "A' chia~d raon altaichte dhen phrìomh-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
-msgid  "S~econd joined main form field"
+msgid "S~econd joined main form field"
 msgstr "An dàrna raon altaichte dhen ~phrìomh-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
-msgid  "T~hird joined main form field"
+msgid "T~hird joined main form field"
 msgstr "An treas ra~on altaichte dhen phrìomh-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
-msgid  "F~ourth joined main form field"
+msgid "F~ourth joined main form field"
 msgstr "An ceathram~h raon altaichte dhen phrìomh-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
-msgid  "Field border"
+msgid "Field border"
 msgstr "Le iomall raoin"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
-msgid  "No border"
+msgid "No border"
 msgstr "Gun iomall"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr "Coltas 3D"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
-msgid  "Flat"
+msgid "Flat"
 msgstr "Rèidh"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
-msgid  "Label placement"
+msgid "Label placement"
 msgstr "Ionad na leubail"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "Co-thaobhaich ris an làimh chlì"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "Co-thaobhaich ris an làimh dheas"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
-msgid  "Arrangement of DB fields"
+msgid "Arrangement of DB fields"
 msgstr "Socrachadh raointean an stòir-dhàta"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
-msgid  "Columnar - Labels Left"
+msgid "Columnar - Labels Left"
 msgstr "Ann an colbhan - Leubailean air an taobh chlì"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
-msgid  "Columnar - Labels on Top"
+msgid "Columnar - Labels on Top"
 msgstr "Ann an colbhan - Leubailean air an taobh deas"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
-msgid  "In Blocks - Labels Left"
+msgid "In Blocks - Labels Left"
 msgstr "Ann am blocaichean - Leubailean air an taobh chlì"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
-msgid  "In Blocks - Labels Above"
+msgid "In Blocks - Labels Above"
 msgstr "Ann am blocaichean - Leubailean os a chionn"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
-msgid  "As Data Sheet"
+msgid "As Data Sheet"
 msgstr "Mar shiota dàta"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
-msgid  "Arrangement of the main form"
+msgid "Arrangement of the main form"
 msgstr "Socrachadh a' phrìomh-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
-msgid  "Arrangement of the subform"
+msgid "Arrangement of the subform"
 msgstr "Socrachadh an fho-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
-msgid  "The form is to be ~used for entering new data only."
+msgid "The form is to be ~used for entering new data only."
 msgstr "Cha dèid am ~foirm a chleachdadh ach gus dàta ùr a chur a-steach."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
-msgid  "Existing data will not be displayed "
+msgid "Existing data will not be displayed "
 msgstr "Cha dèid dàta làithreach a shealltainn "
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
-msgid  "T~he form is to display all data"
+msgid "T~he form is to display all data"
 msgstr "~Nochdaidh am foirm an dàta gu lèir"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
-msgid  "Do not allow ~modification of existing data"
+msgid "Do not allow ~modification of existing data"
 msgstr "Na c~eadaich atharrachadh de dhàta làithreach"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
-msgid  "Do not allow ~deletion of existing data"
+msgid "Do not allow ~deletion of existing data"
 msgstr "Na ceadaic~h sguabadh às de dhàta làithreach"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
-msgid  "Do not allow ~addition of new data"
+msgid "Do not allow ~addition of new data"
 msgstr "Na ceadaich cur ris de ~dhàta ùr"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
-msgid  "Name of ~the form"
+msgid "Name of ~the form"
 msgstr "Ainm an fh~oirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
-msgid  "How do you want to proceed after creating the form?"
+msgid "How do you want to proceed after creating the form?"
 msgstr "Dè tha thu airson dèanamh às dèidh dhut am foirm a chruthachadh?"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
-msgid  "~Work with the form"
+msgid "~Work with the form"
 msgstr "Dèa~n obair san fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
-msgid  "~Modify the form"
+msgid "~Modify the form"
 msgstr "Atha~rraich am foirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
-msgid  "~Page Styles"
+msgid "~Page Styles"
 msgstr "Stoidh~lean nan duilleagan"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
-msgid  "Field selection"
+msgid "Field selection"
 msgstr "Taghadh raointean"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
-msgid  "Set up a subform"
+msgid "Set up a subform"
 msgstr "Suidhich fo-fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
-msgid  "Add subform fields"
+msgid "Add subform fields"
 msgstr "Cuir raointean fo-fhoirm ris"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
-msgid  "Get joined fields"
+msgid "Get joined fields"
 msgstr "Faigh raointean altaichte"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
-msgid  "Arrange controls"
+msgid "Arrange controls"
 msgstr "Socraich na h-uidheaman-smachd"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
-msgid  "Set data entry"
+msgid "Set data entry"
 msgstr "Suidhich cur a-steach an dàta"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
-msgid  "Apply styles"
+msgid "Apply styles"
 msgstr "Cuir an sàs na stoidhlean"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
-msgid  "Set name"
+msgid "Set name"
 msgstr "Suidhich ainm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
-msgid  "(Date)"
+msgid "(Date)"
 msgstr "(Ceann-là)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
-msgid  "(Time)"
+msgid "(Time)"
 msgstr "(Àm)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
-msgid  "Select the fields of your form"
+msgid "Select the fields of your form"
 msgstr "Tagh raointean an fhoirm agad"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
-msgid  "Decide if you want to set up a subform"
+msgid "Decide if you want to set up a subform"
 msgstr "Cuir romhad a bheil thu airson fo-fhoirm a shuidheachadh"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
-msgid  "Select the fields of your subform"
+msgid "Select the fields of your subform"
 msgstr "Tagh raointean an fho-fhoirm agad"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
-msgid  "Select the joins between your forms"
+msgid "Select the joins between your forms"
 msgstr "Tagh na h-altan eadar na foirmean agad"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
-msgid  "Arrange the controls on your form"
+msgid "Arrange the controls on your form"
 msgstr "Socraich uidheaman-smachd an fhoirm agad"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
-msgid  "Select the data entry mode"
+msgid "Select the data entry mode"
 msgstr "Tagh modh cur a-steach an dàta"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
-msgid  "Apply the style of your form"
+msgid "Apply the style of your form"
 msgstr "Cuir an sàs stoidhle an fhoirm agad"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
-msgid  "Set the name of the form"
+msgid "Set the name of the form"
 msgstr "Suidhich ainm an fhoirm"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Tha foirm ann mu thràth air a bheil \"%FORMNAME\".\nTagh ainm eile."
+msgid "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr ""
+"Tha foirm ann mu thràth air a bheil \"%FORMNAME\".\n"
+"Tagh ainm eile."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
-msgid  "Query Wizard"
+msgid "Query Wizard"
 msgstr "Draoidh nan ceistean"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr "Ceist"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___2.STRING.TEXT
+msgid "Query Wizard"
+msgstr "Draoidh nan ceistean"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
-msgid  "~Tables"
+msgid "~Tables"
 msgstr "~Clàir"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
-msgid  "A~vailable fields"
+msgid "A~vailable fields"
 msgstr "Ra~ointean a tha ri fhaighinn"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
-msgid  "Name ~of the query"
+msgid "Name ~of the query"
 msgstr "Ainm ~na ceist"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
-msgid  "Display ~Query"
+msgid "Display ~Query"
 msgstr "S~eall a' cheist"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
-msgid  "~Modify Query"
+msgid "~Modify Query"
 msgstr "At~harraich a' cheist"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
-msgid  "~How do you want to proceed after creating the query?"
+msgid "~How do you want to proceed after creating the query?"
 msgstr "Dè ~tha thu airson dèanamh às dèidh dhut a' cheist a chruthachadh?"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
-msgid  "Match ~all of the following"
+msgid "Match ~all of the following"
 msgstr "Co-~fhreagair gach aon dhe na leanas"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
-msgid  "~Match any of the following"
+msgid "~Match any of the following"
 msgstr "Co-fh~reagair gach gin dhe na leanas"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
-msgid  "~Detailed query (Shows all records of the query.)"
+msgid "~Detailed query (Shows all records of the query.)"
 msgstr "Ceist ~mhionaideach (Seall gach reacord na ceist.)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
-msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgid "~Summary query (Shows only results of aggregate functions.)"
 msgstr "Cei~st aithghearr (Na seall ach toraidhean am foincseanan treudaichte.)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
-msgid  "Aggregate functions"
+msgid "Aggregate functions"
 msgstr "Foincseanan treudaichte"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
-msgid  "Fields"
+msgid "Fields"
 msgstr "Raointean"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
-msgid  "~Group by"
+msgid "~Group by"
 msgstr "Bu~idhnich a-rèir"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
-msgid  "Field"
+msgid "Field"
 msgstr "Raon"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
-msgid  "Alias"
+msgid "Alias"
 msgstr "Ainm-brèige"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
-msgid  "Table: "
+msgid "Table: "
 msgstr "Clàr: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
-msgid  "Query: "
+msgid "Query: "
 msgstr "Ceist: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
-msgid  "Condition"
+msgid "Condition"
 msgstr "Cumha"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "Luach"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
-msgid  "is equal to"
+msgid "is equal to"
 msgstr "a tha co-ionnann ri"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
-msgid  "is not equal to"
+msgid "is not equal to"
 msgstr "a tha neo-ionnann ri"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
-msgid  "is smaller than"
+msgid "is smaller than"
 msgstr "a tha nas lugha na"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
-msgid  "is greater than"
+msgid "is greater than"
 msgstr "a tha nas motha na"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
-msgid  "is equal or less than "
+msgid "is equal or less than "
 msgstr "a tha co-ionnann no nas lugha na "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
-msgid  "is equal or greater than"
+msgid "is equal or greater than"
 msgstr "a tha co-ionnann no nas motha na"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
-msgid  "like"
+msgid "like"
 msgstr "coltach ri"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
-msgid  "not like"
+msgid "not like"
 msgstr "eucoltach ri"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
-msgid  "is null"
+msgid "is null"
 msgstr "a tha 'na neoini"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
-msgid  "is not null"
+msgid "is not null"
 msgstr "nach eil 'na neoini"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
-msgid  "true"
+msgid "true"
 msgstr "fìor"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
-msgid  "false"
+msgid "false"
 msgstr "fallsa"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
-msgid  "and"
+msgid "and"
 msgstr "agus"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
-msgid  "or"
+msgid "or"
 msgstr "no"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
-msgid  "get the sum of"
+msgid "get the sum of"
 msgstr "faigh suim"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
-msgid  "get the average of"
+msgid "get the average of"
 msgstr "faigh cuibheas"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
-msgid  "get the minimum of"
+msgid "get the minimum of"
 msgstr "faigh am meud as lugha de"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
-msgid  "get the maximum of"
+msgid "get the maximum of"
 msgstr "faigh am meud as motha de"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
-msgid  "get the sum of <FIELD>"
+msgid "get the sum of <FIELD>"
 msgstr "faigh suim <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
-msgid  "get the average of <FIELD>"
+msgid "get the average of <FIELD>"
 msgstr "faigh cuibheas <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
-msgid  "get the minimum of <FIELD>"
+msgid "get the minimum of <FIELD>"
 msgstr "faigh am meud as lugha de <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
-msgid  "get the maximum of <FIELD>"
+msgid "get the maximum of <FIELD>"
 msgstr "faigh am meud as motha de <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
-msgid  "(none)"
+msgid "(none)"
 msgstr "(chan eil gin)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
-msgid  "Fie~lds in the Query: "
+msgid "Fie~lds in the Query: "
 msgstr "Raoi~ntean sa cheist: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
-msgid  "Sorting order: "
+msgid "Sorting order: "
 msgstr "An t-òrdugh seòrsachaidh: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
-msgid  "No sorting fields were assigned."
+msgid "No sorting fields were assigned."
 msgstr "Cha deach raointean seòrsachaidh a shònrachadh."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
-msgid  "Search conditions: "
+msgid "Search conditions: "
 msgstr "Cumhaichean luirg: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
-msgid  "No conditions were assigned."
+msgid "No conditions were assigned."
 msgstr "Cha deach cumhaichean a shònrachadh."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
-msgid  "Aggregate functions: "
+msgid "Aggregate functions: "
 msgstr "Foincseanan treudaichte: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
-msgid  "No aggregate functions were assigned."
+msgid "No aggregate functions were assigned."
 msgstr "Cha deach foincseanan treudaichte a shònrachadh."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
-msgid  "Grouped by: "
+msgid "Grouped by: "
 msgstr "Buidhnichte a-rèir: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
-msgid  "No Groups were assigned."
+msgid "No Groups were assigned."
 msgstr "Cha deach buidhnean a shònrachadh."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
-msgid  "Grouping conditions: "
+msgid "Grouping conditions: "
 msgstr "Cumhaichean buidhneachaidh: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
-msgid  "No grouping conditions were assigned."
+msgid "No grouping conditions were assigned."
 msgstr "Cha deach cumhaichean buidhneachaidh a shònrachadh."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
-msgid  "Select the fields (columns) for your query"
+msgid "Select the fields (columns) for your query"
 msgstr "Tagh na raointean (colbhan) airson do cheist"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
-msgid  "Select the sorting order"
+msgid "Select the sorting order"
 msgstr "Tagh an t-òrdugh seòrsachaidh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
-msgid  "Select the search conditions"
+msgid "Select the search conditions"
 msgstr "Tagh na cumhaichean luirg"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
-msgid  "Select the type of query"
+msgid "Select the type of query"
 msgstr "Tagh seòrsa na ceist"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
-msgid  "Select the groups"
+msgid "Select the groups"
 msgstr "Tagh na buidhnean"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
-msgid  "Select the grouping conditions"
+msgid "Select the grouping conditions"
 msgstr "Tagh na cumhaichean buidhneachaidh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
-msgid  "Assign aliases if desired"
+msgid "Assign aliases if desired"
 msgstr "Sònraich ainmean-brèige ma thogras tu"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
-msgid  "Check the overview and decide how to proceed"
-msgstr "Thoir sùil air an fhoir-shealladh 's cuir romhad mar a leanas tu air adhart"
+msgid "Check the overview and decide how to proceed"
+msgstr ""
+"Thoir sùil air an fhoir-shealladh 's cuir romhad mar a leanas tu air adhart"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___80.STRING.TEXT
+msgid "Field selection"
+msgstr "Taghadh raointean"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
-msgid  "Sorting order"
+msgid "Sorting order"
 msgstr "An t-òrdugh seòrsachaidh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
-msgid  "Search conditions"
+msgid "Search conditions"
 msgstr "Cumhaichean luirg"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
-msgid  "Detail or summary"
+msgid "Detail or summary"
 msgstr "Mion-fhiosrachadh no gearr-chunntas"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
-msgid  "Grouping"
+msgid "Grouping"
 msgstr "Buidhneachadh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
-msgid  "Grouping conditions"
+msgid "Grouping conditions"
 msgstr "Cumhaichean buidhneachaidh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
-msgid  "Aliases"
+msgid "Aliases"
 msgstr "Ainmean-brèige"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
-msgid  "Overview"
+msgid "Overview"
 msgstr "Foir-shealladh"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
-msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr "Feumaidh raon nach deach foincsean treudaichte a shònrachadh air a shon a bhith ann am buidheann."
+msgid "A field that has not been assigned an aggregate function must be used in a group."
+msgstr ""
+"Feumaidh raon nach deach foincsean treudaichte a shònrachadh air a shon a "
+"bhith ann am buidheann."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
-msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr "Chaidh a' chumha \"<FIELDNAME> <LOGICOPERATOR> <VALUE>\" a thaghadh dà thuras. Chan urrainn dhut cumha a thaghadh ach aon turas"
+msgid "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr ""
+"Chaidh a' chumha \"<FIELDNAME> <LOGICOPERATOR> <VALUE>\" a thaghadh dà thuras. "
+"Chan urrainn dhut cumha a thaghadh ach aon turas"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
-msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr "Chaidh am foincsean treudaichte <FUNCTION> a shònrachadh dhan ainm raoin \"<NUMERICFIELD>\" dà thuras."
+msgid "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr ""
+"Chaidh am foincsean treudaichte <FUNCTION> a shònrachadh dhan ainm raoin "
+"\"<NUMERICFIELD>\" dà thuras."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
-msgid  ", "
+msgid ", "
 msgstr ", "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
-msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgid "<FIELDTITLE> (<FIELDNAME>)"
 msgstr "<FIELDTITLE> (<FIELDNAME>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
-msgid  "<FIELDNAME> (<SORTMODE>)"
+msgid "<FIELDNAME> (<SORTMODE>)"
 msgstr "<FIELDNAME> (<SORTMODE>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
-msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
-msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
 msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___96.STRING.TEXT
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
-msgid  "Report Wizard"
+msgid "Report Wizard"
 msgstr "Draoidh nan aithisg"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
-msgid  "~Table"
+msgid "~Table"
 msgstr "~Clàr"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
-msgid  "Colu~mns"
+msgid "Colu~mns"
 msgstr "C~olbhan"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
-msgid  "Report_"
+msgid "Report_"
 msgstr "Aithisg_"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
-msgid  "- undefined -"
+msgid "- undefined -"
 msgstr "- gun sònrachadh -"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
-msgid  "~Fields in report"
+msgid "~Fields in report"
 msgstr "~Raointean san aithisg"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___11.STRING.TEXT
+msgid "Grouping"
+msgstr "Buidhneachadh"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
-msgid  "Sort options"
+msgid "Sort options"
 msgstr "Roghainnean an t-seòrsachaidh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
-msgid  "Choose layout"
+msgid "Choose layout"
 msgstr "Tagh a' cho-dhealbhachd"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
-msgid  "Create report"
+msgid "Create report"
 msgstr "Cruthaich aithisg"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
-msgid  "Layout of data"
+msgid "Layout of data"
 msgstr "Co-dhealbhachd an dàta"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
-msgid  "Layout of headers and footers"
+msgid "Layout of headers and footers"
 msgstr "Co-dhealbhachd nam bannan-cinn is nam bannan-coise"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___19.STRING.TEXT
+msgid "Fields"
+msgstr "Raointean"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
-msgid  "~Sort by"
+msgid "~Sort by"
 msgstr "~Seòrsaich a-rèir"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
-msgid  "T~hen by"
+msgid "T~hen by"
 msgstr "A~n uairsin a-rèir"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "Comhair"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "Portraid"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "Dreach-tìre"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
-msgid  "Which fields do you want to have in your report?"
+msgid "Which fields do you want to have in your report?"
 msgstr "Dè na raointean a tha thu aig iarraidh 'nad aithisg?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
-msgid  "Do you want to add grouping levels?"
+msgid "Do you want to add grouping levels?"
 msgstr "A bheil thu airson leibheilean buidhneachaidh a chur ris?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
-msgid  "According to which fields do you want to sort the data?"
+msgid "According to which fields do you want to sort the data?"
 msgstr "Dè na raointean a bu toigh leat an dàta a sheòrsachadh d' a reir?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
-msgid  "How do you want your report to look?"
+msgid "How do you want your report to look?"
 msgstr "Dè an coltas a tha thu ag iarraidh airson d' aithisg?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
-msgid  "Decide how you want to proceed"
+msgid "Decide how you want to proceed"
 msgstr "Cuir romhad mar a leanas tu air adhart"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
-msgid  "Title of report"
+msgid "Title of report"
 msgstr "Tiotal na h-aithisge"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
-msgid  "Display report"
+msgid "Display report"
 msgstr "Seall an aithisg"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___35.STRING.TEXT
+msgid "Create report"
+msgstr "Cruthaich aithisg"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "A' dìreadh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
-msgid  "Descending"
+msgid "Descending"
 msgstr "A' teàrnadh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
-msgid  "~Dynamic report"
+msgid "~Dynamic report"
 msgstr "Aithisg ~innsgineach"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
-msgid  "~Create report now"
+msgid "~Create report now"
 msgstr "~Cruthaich aithisg an-dràsta"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
-msgid  "~Modify report layout"
+msgid "~Modify report layout"
 msgstr "Atharraich ~co-dhealbhachd na h-aithisge"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
-msgid  "Static report"
+msgid "Static report"
 msgstr "Aithisg stadaigeach"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
-msgid  "Save as"
+msgid "Save as"
 msgstr "Sàbhail mar"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
-msgid  "Groupings"
+msgid "Groupings"
 msgstr "Buidhneachaidhean"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
-msgid  "Then b~y"
+msgid "Then b~y"
 msgstr "~Agus an uairsin a-rèir"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
-msgid  "~Then by"
+msgid "~Then by"
 msgstr "Ag~us an uairsin a-rèir"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
-msgid  "Asc~ending"
+msgid "Asc~ending"
 msgstr "~A' dìreadh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
-msgid  "Ascend~ing"
+msgid "Ascend~ing"
 msgstr "A' dìrea~dh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
-msgid  "Ascendin~g"
+msgid "Ascendin~g"
 msgstr "A' dìr~eadh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
-msgid  "De~scending"
+msgid "De~scending"
 msgstr "A' teàrnad~h"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
-msgid  "Des~cending"
+msgid "Des~cending"
 msgstr "A' teàr~nadh"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___58.STRING.TEXT
+msgid "De~scending"
+msgstr "A' teàrnad~h"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
-msgid  "Binary fields cannot be displayed in the report."
+msgid "Binary fields cannot be displayed in the report."
 msgstr "Chan urrainn dhut raointean bìnearaidh a shealltainn san aithisg."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
-msgid  "The table '<TABLENAME>' does not exist."
+msgid "The table '<TABLENAME>' does not exist."
 msgstr "Chan eil an clàr \"<TABLENAME>\" ann."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
-msgid  "Creating Report..."
+msgid "Creating Report..."
 msgstr "A' cruthachadh na h-aithisge..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
-msgid  "Number of records inserted: <COUNT>"
+msgid "Number of records inserted: <COUNT>"
 msgstr "Àireamh nan reacordan a chaidh a chur a-steach: <COUNT>"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
-msgid  "The form '<REPORTFORM>' does not exist."
+msgid "The form '<REPORTFORM>' does not exist."
 msgstr "Chan eil am foirm \"<REPORTFORM>\" ann."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
-msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr "Cha do ghabh a' cheist leis an ràdh <BR>\"<STATEMENT>\" <BR> a chur gu dol. <BR> Thoir sùil air tùs an dàta agad."
+msgid "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr ""
+"Cha do ghabh a' cheist leis an ràdh <BR>\"<STATEMENT>\" <BR> a chur gu dol. "
+"<BR> Thoir sùil air tùs an dàta agad."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
-msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr "Cha do ghabh an t-uidheam-smachd falaichte a leanas san fhoirm \"<REPORTFORM>\" a leughadh: \"<CONTROLNAME>\"."
+msgid "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr ""
+"Cha do ghabh an t-uidheam-smachd falaichte a leanas san fhoirm "
+"\"<REPORTFORM>\" a leughadh: \"<CONTROLNAME>\"."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
-msgid  "Importing data..."
+msgid "Importing data..."
 msgstr "Ag ion-phortadh an dàta..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
-msgid  "Labeling fields"
+msgid "Labeling fields"
 msgstr "Raointean leubail"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
-msgid  "How do you want to label the fields?"
+msgid "How do you want to label the fields?"
 msgstr "Dè na leubailean a bu toigh leat air na raointean?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
-msgid  "Label"
+msgid "Label"
 msgstr "Leubail"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___71.STRING.TEXT
+msgid "Field"
+msgstr "Raon"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
-msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr "Thachair mearachd leis an draoidh.<BR>Faodaidh gu bheil an teamplaid \"%PATH\" mearachdach.<BR>Chan eil na h-earrannan no na clàir air a bheil feum ann no tha droch-ainm orra.<BR>Faic a' chobhair airson barrachd fiosrachaidh.<BR>Tagh teamplaid eile."
+msgid "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr ""
+"Thachair mearachd leis an draoidh.<BR>Faodaidh gu bheil an teamplaid \"%PATH\" "
+"mearachdach.<BR>Chan eil na h-earrannan no na clàir air a bheil feum ann no "
+"tha droch-ainm orra.<BR>Faic a' chobhair airson barrachd "
+"fiosrachaidh.<BR>Tagh teamplaid eile."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
-msgid  "There is an invalid user field in a table."
+msgid "There is an invalid user field in a table."
 msgstr "Tha raon cleachdaiche mì-dhligheach ann an clàr."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
-msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr "Chaidh an cuspair-deuchainn \"<FIELDNAME>\" a thaghadh dà thuras. Chan urrainn dhut gach cuspair-dheuchainn a thaghadh ach aon turas."
+msgid "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr ""
+"Chaidh an cuspair-deuchainn \"<FIELDNAME>\" a thaghadh dà thuras. Chan urrainn "
+"dhut gach cuspair-dheuchainn a thaghadh ach aon turas."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
-msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr "An aire: Thèid dàta an stòir-dhàta a chur an àite an teacsa mas-fhìor nuair a thèid an aithisg a chruthachadh."
+msgid "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr ""
+"An aire: Thèid dàta an stòir-dhàta a chur an àite an teacsa mas-fhìor nuair "
+"a thèid an aithisg a chruthachadh."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
-msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr "Tha aithisg air a bheil \"%REPORTNAME\" san stòr-dàta mu thràth. Saoil an sònraich thu ainm eile?"
+msgid "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr ""
+"Tha aithisg air a bheil \"%REPORTNAME\" san stòr-dàta mu thràth. Saoil an "
+"sònraich thu ainm eile?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
-msgid  "How do you want to proceed after creating the report?"
+msgid "How do you want to proceed after creating the report?"
 msgstr "Dè tha thu airson dèanamh às dèidh dhut an aithisg a chruthachadh?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
-msgid  "What kind of report do you want to create?"
+msgid "What kind of report do you want to create?"
 msgstr "Dè seòrsa aithisg a bu toigh leat cruthachadh?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
-msgid  "Tabular"
+msgid "Tabular"
 msgstr "Clàrach"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
-msgid  "Columnar, single-column"
+msgid "Columnar, single-column"
 msgstr "Colbhach, aon cholbh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
-msgid  "Columnar, two columns"
+msgid "Columnar, two columns"
 msgstr "Colbhach, dà cholbh"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
-msgid  "Columnar, three columns"
+msgid "Columnar, three columns"
 msgstr "Colbhach, trì colbhan"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
-msgid  "In blocks, labels left"
+msgid "In blocks, labels left"
 msgstr "Ann am blocaichean, leubailean air an taobh chlì"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
-msgid  "In blocks, labels above"
+msgid "In blocks, labels above"
 msgstr "Ann am blocaichean, leubailean os a chionn"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
-msgid  "Title:"
+msgid "Title:"
 msgstr "Tiotal:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
-msgid  "Author:"
+msgid "Author:"
 msgstr "Ùghdar:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
-msgid  "Date:"
+msgid "Date:"
 msgstr "Ceann-là:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
-msgid  "Page #page# of #count#"
+msgid "Page #page# of #count#"
 msgstr "Duilleag #page# à #count#"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
-msgid  "Page number:"
+msgid "Page number:"
 msgstr "Àireamh na duilleige:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
-msgid  "Page count:"
+msgid "Page count:"
 msgstr "Àireamh de dhuilleagan:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
-msgid  "No valid report template was found."
+msgid "No valid report template was found."
 msgstr "Cha deach teamplaid aithisge dhligheach a lorg."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
-msgid  "Table Wizard"
+msgid "Table Wizard"
 msgstr "Draoidh nan clàr"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
-msgid  "Select fields"
+msgid "Select fields"
 msgstr "Tagh raointean"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
-msgid  "Set types and formats"
+msgid "Set types and formats"
 msgstr "Suidhich seòrsaichean is fòrmatan"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
-msgid  "Set primary key"
+msgid "Set primary key"
 msgstr "Suidhich a' phrìomh-iuchair"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___5.STRING.TEXT
-msgid  "Create table"
+msgid "Create table"
 msgstr "Cruthaich clàr"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
-msgid  "Select fields for your table"
+msgid "Select fields for your table"
 msgstr "Tagh na raointean airson a' chlàir agad"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
-msgid  "Set field types and formats"
+msgid "Set field types and formats"
 msgstr "Suidhich seòrsaichean is fòrmatan nan raointean"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___10.STRING.TEXT
+msgid "Set primary key"
+msgstr "Suidhich a' phrìomh-iuchair"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___11.STRING.TEXT
+msgid "Create table"
+msgstr "Cruthaich clàr"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
-msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr "Cuidichidh an draoidh seo thu le cruthachadh de chlàr airson an stòir-dhàta agad. Às dèidh dhut roinn-seòrsa de chlàr is clàr sampaill a thaghadh, tagh na raointean a tha thu ag iarraidh sa chlàr agad. 'S urrainn dhut raointean a thaghadh o bharrachd air aon chlàr sampaill."
+msgid "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr ""
+"Cuidichidh an draoidh seo thu le cruthachadh de chlàr airson an stòir-dhàta "
+"agad. Às dèidh dhut roinn-seòrsa de chlàr is clàr sampaill a thaghadh, tagh "
+"na raointean a tha thu ag iarraidh sa chlàr agad. 'S urrainn dhut raointean "
+"a thaghadh o bharrachd air aon chlàr sampaill."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
-msgid  "Ca~tegory"
+msgid "Ca~tegory"
 msgstr "~Roinn-seòrsa"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
-msgid  "B~usiness"
+msgid "B~usiness"
 msgstr "~Gnothach"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
-msgid  "P~ersonal"
+msgid "P~ersonal"
 msgstr "P~earsanta"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
-msgid  "~Sample tables"
+msgid "~Sample tables"
 msgstr "Clàir ~shampaill"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___19.STRING.TEXT
+msgid "A~vailable fields"
+msgstr "Ra~ointean a tha ri fhaighinn"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
-msgid  "Field information"
+msgid "Field information"
 msgstr "Fiosrachadh an raoin"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
-msgid  "+"
+msgid "+"
 msgstr "+"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
-msgid  "Field name"
+msgid "Field name"
 msgstr "Ainm an raoin"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
-msgid  "Field type"
+msgid "Field type"
 msgstr "Seòrsa an raoin"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
-msgid  "~Selected fields"
+msgid "~Selected fields"
 msgstr "Na ~raointean a thagh thu"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
-msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr "Tha prìomh-iuchair 'na chomharra àraidh aig gach reacord ann an clàr an stòir-dhàta. Tha e nas fhasa fiosrachadh ann an clàir eadar-dhealaichte a cheangal ri chèile le prìoh-iuchraichean agus mholamaid dhut prìomh-iuchair ann an clàr de sheòrsa sam bith. Chan urrainn dhut dàta a chur a-steach sa chlàr seo as aonais prìomh-iuchrach."
+msgid "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr ""
+"Tha prìomh-iuchair 'na chomharra àraidh aig gach reacord ann an clàr an st"
+"òir-dhàta. Tha e nas fhasa fiosrachadh ann an clàir eadar-dhealaichte a "
+"cheangal ri chèile le prìoh-iuchraichean agus mholamaid dhut prìomh-iuchair "
+"ann an clàr de sheòrsa sam bith. Chan urrainn dhut dàta a chur a-steach sa "
+"chlàr seo as aonais prìomh-iuchrach."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
-msgid  "~Create a primary key"
+msgid "~Create a primary key"
 msgstr "~Cruthaich prìomh-iuchair"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
-msgid  "~Automatically add a primary key"
+msgid "~Automatically add a primary key"
 msgstr "C~uir prìomh-iuchair ris gu fèin-obrachail"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
-msgid  "~Use an existing field as a primary key"
+msgid "~Use an existing field as a primary key"
 msgstr "Cleac~hd raon a tha ann mar phrìomh-iuchair"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
-msgid  "Define p~rimary key as a combination of several fields "
+msgid "Define p~rimary key as a combination of several fields "
 msgstr "Sòn~raich prìomh-iuchair mar mheasgachadh de ghrunn raointean "
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
-msgid  "F~ieldname"
+msgid "F~ieldname"
 msgstr "A~inm an raoin"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
-msgid  "~Primary key fields"
+msgid "~Primary key fields"
 msgstr "Raointean ~prìomh-iuchrach"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
-msgid  "Auto ~value"
+msgid "Auto ~value"
 msgstr "~Fèin-luach"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
-msgid  "What do you want to name your table?"
+msgid "What do you want to name your table?"
 msgstr "Dè an t-ainm a tha thu ag iarraidh airson a' chlàir agad?"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
-msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr "Meal do naidheachd. Chuir thu a-steach am fiosrachadh gu lèir air a bheil feum gus an clàr agad a chruthachadh."
+msgid "Congratulations. You have entered all the information needed to create your table."
+msgstr ""
+"Meal do naidheachd. Chuir thu a-steach am fiosrachadh gu lèir air a bheil "
+"feum gus an clàr agad a chruthachadh."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "Dè bu toigh leat dèanamh a-nis?"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
-msgid  "Modify the table design"
+msgid "Modify the table design"
 msgstr "Atharraich dealbhachd a' chlàir"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
-msgid  "Insert data immediately"
+msgid "Insert data immediately"
 msgstr "Cuir a-steach dàta"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
-msgid  "C~reate a form based on this table"
+msgid "C~reate a form based on this table"
 msgstr "C~ruthaich foirm stèidhichte air a' chlàr seo"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
-msgid  "The table you have created could not be opened."
+msgid "The table you have created could not be opened."
 msgstr "Cha do ghabh an clàr a chruthaich thu fhosgladh."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
-msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "Tha caractair (\"%SPECIALCHAR\") ann an ainm a' chlàir \"%TABLENAME\" agus faodaidh nach obraich e san stòr-dàta."
+msgid "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"Tha caractair (\"%SPECIALCHAR\") ann an ainm a' chlàir \"%TABLENAME\" agus "
+"faodaidh nach obraich e san stòr-dàta."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
-msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "Tha caractair (\"%SPECIALCHAR\") ann an ainm an raoin \"%FIELDNAME\" agus faodaidh nach obraich e san stòr-dàta."
+msgid "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"Tha caractair (\"%SPECIALCHAR\") ann an ainm an raoin \"%FIELDNAME\" agus "
+"faodaidh nach obraich e san stòr-dàta."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___43.STRING.TEXT
+msgid "Field"
+msgstr "Raon"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
-msgid  "MyTable"
+msgid "MyTable"
 msgstr "MoChlàr"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
-msgid  "Add a Field"
+msgid "Add a Field"
 msgstr "Cuir raon ris"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
-msgid  "Remove the selected Field"
+msgid "Remove the selected Field"
 msgstr "Thoir air falbh an raon a thagh thu"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
-msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr "Chan urrainn dhut an raon seo a chur a-steach a chionn 's gun rachadh e thar àireamh nan raointean (%COUNT) a tha ceadaichte ann an clàr an stòir-dhàta"
+msgid "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr ""
+"Chan urrainn dhut an raon seo a chur a-steach a chionn 's gun rachadh e thar "
+"àireamh nan raointean (%COUNT) a tha ceadaichte ann an clàr an stòir-dhàta"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Tha an t-ainm \"%TABLENAME\" ann mu thràth. \nCuir a-steach ainm eile."
+msgid "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr ""
+"Tha an t-ainm \"%TABLENAME\" ann mu thràth. \n"
+"Cuir a-steach ainm eile."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
-msgid  "Catalog of the table"
+msgid "Catalog of the table"
 msgstr "Catalog a' chlàir"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
-msgid  "Schema of the table"
+msgid "Schema of the table"
 msgstr "Sgeama a' chlàir"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
-msgid  "The field '%FIELDNAME' already exists."
+msgid "The field '%FIELDNAME' already exists."
 msgstr "Tha ainm an raoin \"%FIELDNAME\" ann mu thràth."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Letter Wizard"
+msgid "Letter Wizard"
 msgstr "Draoidh nan litrichean"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
-msgid  "Label9"
+msgid "Label9"
 msgstr "Leubail9"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business letter"
+msgid "~Business letter"
 msgstr "~Litir gnothaich"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Formal personal letter"
+msgid "~Formal personal letter"
 msgstr "Litir ~phearsanta fhoirmeil"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
-msgid  "~Personal letter"
+msgid "~Personal letter"
 msgstr "Litir p~hearsanta"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
-msgid  "~Use letterhead paper with pre-printed elements"
+msgid "~Use letterhead paper with pre-printed elements"
 msgstr "~Cleachd pàipear cinn-litreach le eileamaidean ro-chlò-bhuailte"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "~Suaicheantas"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.STRING.TEXT
-msgid  "Return address"
+msgid "Return address"
 msgstr "Seòladh tillidh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
-msgid  "~Include footer"
+msgid "~Include footer"
 msgstr "~Gabh a-steach bann-coise"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
-msgid  "~Return address in envelope window"
+msgid "~Return address in envelope window"
+msgstr "Seòladh tillidh ann an ~uinneag na cèis-litreach"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.STRING.TEXT
+msgid "~Logo"
+msgstr "~Suaicheantas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.STRING.TEXT
+msgid "~Return address in envelope window"
 msgstr "Seòladh tillidh ann an ~uinneag na cèis-litreach"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Letter Signs"
+msgid "Letter Signs"
 msgstr "Comharran litreach"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
-msgid  "S~ubject line"
+msgid "S~ubject line"
 msgstr "~Loidhne a' chuspair"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
-msgid  "Salu~tation"
+msgid "Salu~tation"
 msgstr "An ~fhàilte"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
-msgid  "Fold ~marks"
+msgid "Fold ~marks"
 msgstr "Co~mharran pasgaidh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
-msgid  "~Complimentary close"
+msgid "~Complimentary close"
 msgstr "~Deagh-dhùrachd"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.STRING.TEXT
-msgid  "~Footer"
+msgid "~Footer"
 msgstr "~Bann-coise"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
-msgid  "~Use user data for return address"
+msgid "~Use user data for return address"
 msgstr "Cleac~hd dàta a' chleachdaiche mar sheòladh tillidh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
-msgid  "~New sender address:"
+msgid "~New sender address:"
 msgstr "~Seòladh seòladair ùir:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
-msgid  "Use placeholders for ~recipient's address"
+msgid "Use placeholders for ~recipient's address"
 msgstr "C~leachd glèidheadairean-àite airson seòladh an fhaighteir"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.STRING.TEXT
-msgid  "Use address database for ~mail merge"
+msgid "Use address database for ~mail merge"
 msgstr "Cleachd s~tòr-dàta sheòlaidhean airson post co-aonaichte"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.STRING.TEXT
-msgid  "Include ~only on second and following pages"
+msgid "Include ~only on second and following pages"
 msgstr "~Na cuir ann e ach air an dàrna duilleag 's duilleagan 'na dèidh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "~Include page number"
+msgid "~Include page number"
 msgstr "~Cuir ann àireamh na duilleige"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Letter Template"
+msgid "Letter Template"
 msgstr "Teamplaid litreach"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
-msgid  "Create a ~letter from this template"
+msgid "Create a ~letter from this template"
 msgstr "Crut~haich litir leis an teamplaid seo"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
-msgid  "Make ~manual changes to this letter template"
+msgid "Make ~manual changes to this letter template"
 msgstr "Atharraich an teamplaid litreach seo de lài~mh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
-msgid  "Page design"
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.STRING.TEXT
+msgid "Page design"
 msgstr "Dealbhadh na duilleige"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr "Cuidichidh an draoidh seo thu le cruthachadh teamplaid litreach. 'S urrainn dhut an teamplaid a chleachdadh mar bhunait de litrichean cho tric 's a thogras tu an uairsin."
+msgid "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr ""
+"Cuidichidh an draoidh seo thu le cruthachadh teamplaid litreach. 'S urrainn "
+"dhut an teamplaid a chleachdadh mar bhunait de litrichean cho tric 's a "
+"thogras tu an uairsin."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
-msgid  "~Height:"
+msgid "~Height:"
 msgstr "Àir~de:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
-msgid  "~Width:"
+msgid "~Width:"
 msgstr "Le~ud:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
-msgid  "S~pacing to left margin:"
+msgid "S~pacing to left margin:"
 msgstr "Am ~beàrnadh ris a' mharghan chlì:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.STRING.TEXT
-msgid  "Spacing ~to top margin:"
+msgid "Spacing ~to top margin:"
 msgstr "~Am beàrnadh ri marghan a' bharr:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.STRING.TEXT
-msgid  "Height:"
+msgid "Height:"
 msgstr "Àirde:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Width:"
+msgid "Width:"
 msgstr "Leud:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.STRING.TEXT
+msgid "S~pacing to left margin:"
+msgstr "Am ~beàrnadh ris a' mharghan chlì:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.STRING.TEXT
+msgid "Spacing ~to top margin:"
+msgstr "~Am beàrnadh ri marghan a' bharr:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.STRING.TEXT
+msgid "Height:"
+msgstr "Àirde:"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
-msgid  "Use a typical letter format for this country:"
+msgid "Use a typical letter format for this country:"
 msgstr "Cleachd fòrmat litreach a tha cumanta san dùthaich a leanas:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
-msgid  "Sender's address"
+msgid "Sender's address"
 msgstr "Seòladh an t-seòladair"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
-msgid  "Name:"
+msgid "Name:"
 msgstr "Ainm:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.STRING.TEXT
-msgid  "Street:"
+msgid "Street:"
 msgstr "Sràid:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.STRING.TEXT
-msgid  "ZIP code/State/City:"
+msgid "ZIP code/State/City:"
 msgstr "Còd-puist/Sgìre/Baile:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
-msgid  "Recipient's address"
+msgid "Recipient's address"
 msgstr "Seòladh an fhaighteir"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
-msgid  "Footer"
+msgid "Footer"
 msgstr "Bann-coise"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
-msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr "Cruthaichidh an draoidh seo teamplaid litreach leis an urrainn dhut iomadh litir a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na dearbh-roghainnean."
+msgid "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr ""
+"Cruthaichidh an draoidh seo teamplaid litreach leis an urrainn dhut iomadh "
+"litir a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na dearbh-"
+"roghainnean."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
-msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr "Gus litir ùr a chruthachadh le teamplaid, rach dhan àite far a bheil an teamplaid agus dèan briogadh dùbailte air."
+msgid "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr ""
+"Gus litir ùr a chruthachadh le teamplaid, rach dhan àite far a bheil an "
+"teamplaid agus dèan briogadh dùbailte air."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
-msgid  "Template name:"
+msgid "Template name:"
 msgstr "Ainm na teamplaid:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.STRING.TEXT
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "Àite is ainm an fhaidhle:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
-msgid  "How do you want to proceed?"
+msgid "How do you want to proceed?"
 msgstr "Dè bu mhath leat dèanamh a-nis?"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
-msgid  "Please choose the type of letter and page design"
+msgid "Please choose the type of letter and page design"
 msgstr "Tagh seòrsa na litreach is dealbhadh na duilleige"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
-msgid  "Select the items to be printed"
+msgid "Select the items to be printed"
 msgstr "Tagh na nithean a thèid a chlò-bhualadh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
-msgid  "Specify items already on your letterhead paper"
+msgid "Specify items already on your letterhead paper"
 msgstr "Tagh nithean a tha air a' phàipear cinn-litreach mu thràth"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
-msgid  "Specify the sender and recipient information"
+msgid "Specify the sender and recipient information"
 msgstr "Tagh fiosrachadh an t-seòladair is an fhaighteir"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
-msgid  "Fill in the information you would like in the footer"
+msgid "Fill in the information you would like in the footer"
 msgstr "Cuir a-steach am fiosrachadh a bu chaomh leat sa bhann-choise"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
-msgid  "Please specify last settings"
+msgid "Please specify last settings"
 msgstr "Sònraich na roghainnean mu dheireadh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To Whom it May Concern"
+msgid "To Whom it May Concern"
 msgstr "A charaid chòir"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam"
+msgid "Dear Sir or Madam"
 msgstr "A charaid chòir"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello"
+msgid "Hello"
 msgstr "Halò"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
-msgid  "Sincerely"
+msgid "Sincerely"
 msgstr "Le gach deagh-dhùrachd"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Best regards"
+msgid "Best regards"
 msgstr "Is mise le meas mòr"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Cheers"
+msgid "Cheers"
 msgstr "Mar sin leat"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Letterhead layout"
+msgid "Letterhead layout"
 msgstr "Co-dhealbhachd a' chinn-litreach"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Printed items"
+msgid "Printed items"
 msgstr "Nithean air an clò-bhualadh"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
-msgid  "Recipient and sender"
+msgid "Recipient and sender"
 msgstr "Am faightear 's an seòladair"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.STRING.TEXT
+msgid "Footer"
+msgstr "Bann-coise"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "Ainm is àite"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Fax Wizard"
+msgid "Fax Wizard"
 msgstr "Draoidh nam facs"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___2.STRING.TEXT
+msgid "Label9"
+msgstr "Leubail9"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business Fax"
+msgid "~Business Fax"
 msgstr "~Facs gnothaich"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Personal Fax"
+msgid "~Personal Fax"
 msgstr "F~acs pearsanta"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___5.STRING.TEXT
+msgid "~Logo"
+msgstr "~Suaicheantas"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___6.STRING.TEXT
+msgid "S~ubject line"
+msgstr "~Loidhne a' chuspair"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
-msgid  "S~alutation"
+msgid "S~alutation"
 msgstr "An ~fhàilte"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___8.STRING.TEXT
+msgid "~Complimentary close"
+msgstr "~Deagh-dhùrachd"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___9.STRING.TEXT
+msgid "~Footer"
+msgstr "~Bann-coise"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___10.STRING.TEXT
+msgid "~Use user data for return address"
+msgstr "Cleac~hd dàta a' chleachdaiche mar sheòladh tillidh"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
-msgid  "~New return address"
+msgid "~New return address"
 msgstr "~Seòladh tillidh ùr"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
-msgid  "My Fax Template"
+msgid "My Fax Template"
 msgstr "Mo theamplaid facs"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Create a ~fax from this template"
+msgid "Create a ~fax from this template"
 msgstr "Crut~haich facs leis an teamplaid seo"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
-msgid  "Make ~manual changes to this fax template"
+msgid "Make ~manual changes to this fax template"
 msgstr "Atharraich an teamplaid facs seo de lài~mh"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___15.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___16.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
-msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr "Cuidichidh an draoidh seo thu le cruthachadh teamplaid facs. 'S urrainn dhut an teamplaid a chleachdadh uair sam bith a bhios feum agad air facs an uairsin."
+msgid "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr ""
+"Cuidichidh an draoidh seo thu le cruthachadh teamplaid facs. 'S urrainn dhut "
+"an teamplaid a chleachdadh uair sam bith a bhios feum agad air facs an "
+"uairsin."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___18.STRING.TEXT
+msgid "Return address"
+msgstr "Seòladh tillidh"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___19.STRING.TEXT
+msgid "Name:"
+msgstr "Ainm:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___20.STRING.TEXT
+msgid "Street:"
+msgstr "Sràid:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___21.STRING.TEXT
+msgid "ZIP code/State/City:"
+msgstr "Còd-puist/Sgìre/Baile:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___22.STRING.TEXT
+msgid "Footer"
+msgstr "Bann-coise"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
-msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr "Cruthaichidh an draoidh seo teamplaid facs leis an urrainn dhut iomadh facs a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na dearbh-roghainnean."
+msgid "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr ""
+"Cruthaichidh an draoidh seo teamplaid facs leis an urrainn dhut iomadh facs "
+"a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na dearbh-roghainnean."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Gus facs ùr a chruthachadh le teamplaid, rach dhan àite far an do shàbhail thu an teamplaid agus dèan briogadh dùbailte air an fhaidhle."
+msgid "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Gus facs ùr a chruthachadh le teamplaid, rach dhan àite far an do shàbhail "
+"thu an teamplaid agus dèan briogadh dùbailte air an fhaidhle."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Template Name:"
+msgid "Template Name:"
 msgstr "Ainm na teamplaid:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___26.STRING.TEXT
+msgid "Location and file name:"
+msgstr "Àite is ainm an fhaidhle:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___27.STRING.TEXT
+msgid "What do you want to do next?"
+msgstr "Dè bu toigh leat dèanamh a-nis?"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
-msgid  "Choose the type of fax and a page design"
+msgid "Choose the type of fax and a page design"
 msgstr "Tagh seòrsa an fhacs is dealbhadh na duilleige"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
-msgid  "Select items to include in the fax template"
+msgid "Select items to include in the fax template"
 msgstr "Tagh na nithean a nochdas air teamplaid an fhacs"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
-msgid  "Specify sender and recipient information"
+msgid "Specify sender and recipient information"
 msgstr "Tagh fiosrachadh an t-seòladair is an fhaighteir"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "Enter text for the footer"
+msgid "Enter text for the footer"
 msgstr "Cuir a-steach an teacsa airson a' bhann-choise"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
-msgid  "Choose a name and save the template"
+msgid "Choose a name and save the template"
 msgstr "Tagh ainm is sàbhail an teamplaid"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___33.STRING.TEXT
+msgid "Include ~only on second and following pages"
+msgstr "~Na cuir ann e ach air an dàrna duilleag 's duilleagan 'na dèidh"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___34.STRING.TEXT
+msgid "~Include page number"
+msgstr "~Cuir ann àireamh na duilleige"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
-msgid  "~Date"
+msgid "~Date"
 msgstr "Cea~nn-là"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
-msgid  "~Type of message"
+msgid "~Type of message"
 msgstr "~Seòrsa na teachdaireachd"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Fax Number:"
+msgid "Fax Number:"
 msgstr "An àireamh facs:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___38.STRING.TEXT
+msgid "Use placeholders for ~recipient's address"
+msgstr "C~leachd glèidheadairean-àite airson seòladh an fhaighteir"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___39.STRING.TEXT
+msgid "Use address database for ~mail merge"
+msgstr "Cleachd s~tòr-dàta sheòlaidhean airson post co-aonaichte"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___40.STRING.TEXT
+msgid "~New return address"
+msgstr "~Seòladh tillidh ùr"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
-msgid  "Important Information!"
+msgid "Important Information!"
 msgstr "Fiosrachadh cudromach!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
-msgid  "For your information"
+msgid "For your information"
 msgstr "Mar fhiosrachadh dhuibh"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
-msgid  "News!"
+msgid "News!"
 msgstr "Naidheachd!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To whom it may concern,"
+msgid "To whom it may concern,"
 msgstr "A charaid chòir,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam,"
+msgid "Dear Sir or Madam,"
 msgstr "A charaid chòir,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello,"
+msgid "Hello,"
 msgstr "Halò,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
-msgid  "Hi,"
+msgid "Hi,"
 msgstr "Haidh,"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___1.STRING.TEXT
+msgid "Sincerely"
+msgstr "Le gach deagh-dhùrachd"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Yours faithfully"
+msgid "Yours faithfully"
 msgstr "Leis na dùrachdan"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Regards"
+msgid "Regards"
 msgstr "Le meas"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
-msgid  "Love"
+msgid "Love"
 msgstr "Le gràdh"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___1.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Items to include"
+msgid "Items to include"
 msgstr "Na nithean a thèid a ghabhail a-steagh"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Sender and Recipient"
+msgid "Sender and Recipient"
 msgstr "An seòladair 's am faightear"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___4.STRING.TEXT
+msgid "Footer"
+msgstr "Bann-coise"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___5.STRING.TEXT
+msgid "Name and location"
+msgstr "Ainm is àite"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Web Wizard"
+msgid "Web Wizard"
 msgstr "Draoidh an lìn"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Cuidichidh draoidh an lìn thu le foillseachadh sgrìobhainnean air an eadar-lìon.\n\nIompaichidh e na sgrìobhainnean 'na chruth a ghabhas a shealltainn ann am brabhsair-lìn. A bharrachd air sin, cruthaichidh e duilleag air a bhios clàr-innse le ceanglaichean air gus am faigh thu greim air na sgrìobhainnean agad gu furasta. Bheir e comas dhut cuideachd dealbhadh is co-dhealbhachd na làraich-lìn agad a ghnàthachadh.\n\n'S urrainn dhut na sgrìobhainnean agad 's a dh'fhoillsich thu air an lìon ùrachadh leis no cur ris no feadhainn a thoirt air falbh aig àm sam bith."
+msgid "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
+"Cuidichidh draoidh an lìn thu le foillseachadh sgrìobhainnean air an "
+"eadar-lìon.\n"
+"\n"
+"Iompaichidh e na sgrìobhainnean 'na chruth a ghabhas a shealltainn ann am "
+"brabhsair-lìn. A bharrachd air sin, cruthaichidh e duilleag air a bhios "
+"clàr-innse le ceanglaichean air gus am faigh thu greim air na sgrìobhainnean "
+"agad gu furasta. Bheir e comas dhut cuideachd dealbhadh is co-dhealbhachd "
+"na làraich-lìn agad a ghnàthachadh.\n"
+"\n"
+"'S urrainn dhut na sgrìobhainnean agad 's a dh'fhoillsich thu air an lìon "
+"ùrachadh leis no cur ris no feadhainn a thoirt air falbh aig àm sam bith."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "Sgua~b às"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
-msgid  "Introduction"
+msgid "Introduction"
 msgstr "Ro-ràdh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
-msgid  "Select the documents you want to publish"
+msgid "Select the documents you want to publish"
 msgstr "Tagh na sgrìobhainnean a bu toigh leat fhoillseachadh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
-msgid  "Document information "
+msgid "Document information "
 msgstr "Fiosrachadh na sgrìobhainne "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
-msgid  "~Title:"
+msgid "~Title:"
 msgstr "~Tiotal:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
-msgid  "~Summary: "
+msgid "~Summary: "
 msgstr "~Gearr-chunntas: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
-msgid  "Au~thor:"
+msgid "Au~thor:"
 msgstr "Ùg~hdar:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
-msgid  "~Export to file format:"
+msgid "~Export to file format:"
 msgstr "Às-ph~ortaich mar fhaidhle dhen fhòrmat:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
-msgid  "Enter general information for your web site"
+msgid "Enter general information for your web site"
 msgstr "Cuir a-steach am fiosrachadh coitcheann airson na làraich-lìn agad"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__14.STRING.TEXT
+msgid "Title:"
+msgstr "Tiotal:"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
-msgid  "Description:"
+msgid "Description:"
 msgstr "Tuairisgeul:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
-msgid  "Created:"
+msgid "Created:"
 msgstr "Air a chruthachadh:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
-msgid  "E-mail:"
+msgid "E-mail:"
 msgstr "Post-d:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
-msgid  "Copyright notice:"
+msgid "Copyright notice:"
 msgstr "Sanas na còrach-lethbhreac:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "Air atharrachadh:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
-msgid  "~Preview"
+msgid "~Preview"
 msgstr "Ro-shea~ll"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
-msgid  "Where do you want to publish your web site?"
+msgid "Where do you want to publish your web site?"
 msgstr "Càit am foillsich thu an làrach-lìn agad?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
-msgid  "Publish the new web site:"
+msgid "Publish the new web site:"
 msgstr "Foillsich an làrach-lìn ùr:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
-msgid  "To a ~local folder"
+msgid "To a ~local folder"
 msgstr "Ann am ~pasgan ionadail"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
-msgid  "To a ~web server via FTP"
+msgid "To a ~web server via FTP"
 msgstr "Gu ~frithealaiche-lìn slighe FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
-msgid  "~Configure..."
+msgid "~Configure..."
 msgstr "~Rèitich..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
-msgid  "To a ZIP ~archive"
+msgid "To a ZIP ~archive"
 msgstr "Mar thasg-lann ~ZIP"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__33.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
-msgid  "~Save settings (recommended)"
+msgid "~Save settings (recommended)"
 msgstr "~Sàbhail na roghainnean (mholamaid seo)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
-msgid  "Save ~as:"
+msgid "Save ~as:"
 msgstr "Sàbhail ~mar:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
-msgid  "~Choose settings for the Web Wizard"
+msgid "~Choose settings for the Web Wizard"
 msgstr "~Tagh na roghainnean airson draoidh an lìn"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
-msgid  "Web site content "
+msgid "Web site content "
 msgstr "Susbaint na làraich-lìn "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Cuir ris..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
-msgid  "Remo~ve"
+msgid "Remo~ve"
 msgstr "Th~oir air falbh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
-msgid  "Choose a layout for the table of contents of your web site"
+msgid "Choose a layout for the table of contents of your web site"
 msgstr "Tagh co-dhealbhachd airson clàr-innse na làraich-lìn agad"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
-msgid  "Select a style for the table of contents page"
+msgid "Select a style for the table of contents page"
 msgstr "Tagh stoidhle airson clàr-innse na susbainte"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
-msgid  "~Style:"
+msgid "~Style:"
 msgstr "~Stoidhle:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
-msgid  "~Layouts: "
+msgid "~Layouts: "
 msgstr "Co-~dhealbhachdan: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
-msgid  "~Description"
+msgid "~Description"
 msgstr "T~uairisgeul"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
-msgid  "~Author"
+msgid "~Author"
 msgstr "Ùg~hdar"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
-msgid  "Cr~eation date"
+msgid "Cr~eation date"
 msgstr "Latha a ch~ruthachaidh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
-msgid  "~Last change date"
+msgid "~Last change date"
 msgstr "~Ceann-là an atharrachaidh mu dheireadh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
-msgid  "~File name"
+msgid "~File name"
 msgstr "Ainm an ~fhaidhle"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
-msgid  "File forma~t"
+msgid "File forma~t"
 msgstr "Fòr~mat an fhaidhle"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
-msgid  "File format ~icon"
+msgid "File format ~icon"
 msgstr "Ì~omhaigh fòrmat an fhaidhle"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
-msgid  "Number ~of pages"
+msgid "Number ~of pages"
 msgstr "Àireamh ~de dhuilleagan"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
-msgid  "~Size in KB"
+msgid "~Size in KB"
 msgstr "~Meud ann an KB"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
-msgid  "Click 'Preview' to see a preview in your browser:"
+msgid "Click 'Preview' to see a preview in your browser:"
 msgstr "Briog air \"Ro-sheall\" gus ro-shealladh dheth fhaicinn 'na bhrabhsair:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
-msgid  "Customize the selected layout"
+msgid "Customize the selected layout"
 msgstr "Gnàthaich a' cho-dhealbhachd a thagh thu"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
-msgid  "Include the following information for each document in the table of contents:"
-msgstr "Nochd am fiosrachadh a leanas airson gach sgrìobhainn air a' chlàr-innse:"
+msgid "Include the following information for each document in the table of contents:"
+msgstr ""
+"Nochd am fiosrachadh a leanas airson gach sgrìobhainn air a' chlàr-innse:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
-msgid  "Optimize the layout for screen resolution:"
+msgid "Optimize the layout for screen resolution:"
 msgstr "Tagh a' cho-dhealbhachd as fhearr airson dùmhlachd-bhreacaidh na sgrìn:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
-msgid  "~640x480"
+msgid "~640x480"
 msgstr "~640x480"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
-msgid  "~800x600"
+msgid "~800x600"
 msgstr "~800x600"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
-msgid  "~1024x768"
+msgid "~1024x768"
 msgstr "~1024x768"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
-msgid  "Generating Your Web Site"
+msgid "Generating Your Web Site"
 msgstr "A' cruthachadh na làraich-lìn agad"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
-msgid  "%START - %END/%TOTAL"
+msgid "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
-msgid  "myWebsite"
+msgid "myWebsite"
 msgstr "MoLàrach"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
-msgid  "FTP target '%FILENAME' is a file."
+msgid "FTP target '%FILENAME' is a file."
 msgstr "Tha an targaid FTP \"%FILENAME\" 'na fhaidhle."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
-msgid  "The local target '%FILENAME' is a file."
+msgid "The local target '%FILENAME' is a file."
 msgstr "Tha an targaid ionadail \"%FILENAME\" 'na fhaidhle."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
-msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr "Tha an targaid ZIP \"%FILENAME\" ann mu thràth. A bheil thu airson sgrìobhadh thairis air an targaid sin? "
+msgid "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr ""
+"Tha an targaid ZIP \"%FILENAME\" ann mu thràth. A bheil thu airson sgrìobhadh "
+"thairis air an targaid sin? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
-msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "Chan eil an t-eòlaire targaid FTP \"%FILENAME\" falamh. Faodaidh gun dèid sgrìobhadh thairis air grunn fhaidhlichean. A bheil thu airson leantainn air adhart?"
+msgid "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"Chan eil an t-eòlaire targaid FTP \"%FILENAME\" falamh. Faodaidh gun dèid "
+"sgrìobhadh thairis air grunn fhaidhlichean. A bheil thu airson leantainn air "
+"adhart?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
-msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "Chan eil an t-eòlaire targaid ionadail \"%FILENAME\" falamh. Faodaidh gun dèid sgrìobhadh thairis air grunn fhaidhlichean. A bheil thu airson leantainn air adhart?"
+msgid "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"Chan eil an t-eòlaire targaid ionadail \"%FILENAME\" falamh. Faodaidh gun dèid "
+"sgrìobhadh thairis air grunn fhaidhlichean. A bheil thu airson leantainn "
+"air adhart?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
-msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr "Tha roghainnean ann fon ainm sin mu thràth. A bheil thu airson sgrìobhadh thairis air na roghainnean làithreach? "
+msgid "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr ""
+"Tha roghainnean ann fon ainm sin mu thràth. A bheil thu airson sgrìobhadh "
+"thairis air na roghainnean làithreach? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
-msgid  "Exporting documents..."
+msgid "Exporting documents..."
 msgstr "Ag às-phortadh nan sgrìobhainnean..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
-msgid  "Preparing export..."
+msgid "Preparing export..."
 msgstr "Ag ullachadh an às-phortaidh..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
-msgid  "Copying layout files..."
+msgid "Copying layout files..."
 msgstr "A' dèanamh lethbhreac faidhlichean na co-dhealbhachd..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
-msgid  "Preparing table of contents generation..."
+msgid "Preparing table of contents generation..."
 msgstr "Ag ullachadh cruthachadh a' chlàir-innse..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
-msgid  "Generating table of contents..."
+msgid "Generating table of contents..."
 msgstr "A' cruthachadh a' chlàir-innse..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
-msgid  "Initializing..."
+msgid "Initializing..."
 msgstr "A' tòiseachadh..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
-msgid  "Preparing to publish..."
+msgid "Preparing to publish..."
 msgstr "Ag ullachadh airson foillseachadh..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
-msgid  "Publishing to local directory..."
+msgid "Publishing to local directory..."
 msgstr "'Ga fhoillseachadh ann an eòlaire ionadail..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
-msgid  "Publishing to FTP destination..."
+msgid "Publishing to FTP destination..."
 msgstr "'Ga fhoillseachadh aig a' cheann-uidhe FTP..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
-msgid  "Publishing to a ZIP archive..."
+msgid "Publishing to a ZIP archive..."
 msgstr "'Ga fhoillseachadh mar thasg-lann ZIP..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
-msgid  "Finishing..."
+msgid "Finishing..."
 msgstr "'Ga chrìochnachadh..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
-msgid  "Graphic files"
+msgid "Graphic files"
 msgstr "Faidhlichean ghrafaigean"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
-msgid  "All files"
+msgid "All files"
 msgstr "A h-uile faidhle"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
-msgid  "~ZIP archive files"
+msgid "~ZIP archive files"
 msgstr "Faidhlichean tasg-lainn ~ZIP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
-msgid  "Background images"
+msgid "Background images"
 msgstr "Dealbhan a' chùlaibh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
-msgid  "Choose a background image: "
+msgid "Choose a background image: "
 msgstr "Tagh dealbh airson a' chùlaibh: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
-msgid  "Icon sets"
+msgid "Icon sets"
 msgstr "Seataichean de dh'ìomhaigheagan"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
-msgid  "Choose an icon set:"
+msgid "Choose an icon set:"
 msgstr "Tagh seata de dh'ìomhaigheagan:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
-msgid  "Other..."
+msgid "Other..."
 msgstr "Eile..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Chan eil gin"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
-msgid  "Your web site was created successfully into: %FILENAME"
+msgid "Your web site was created successfully into: %FILENAME"
 msgstr "Chaidh an làrach-lìn agad a chruthachadh ann an: %FILENAME"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
-msgid  "One or more errors occurred when generating the web site."
-msgstr "Thachair aon mhearachd air a' char as lugha nuair a chaidh an làrach-lìn a chruthachadh."
+msgid "One or more errors occurred when generating the web site."
+msgstr ""
+"Thachair aon mhearachd air a' char as lugha nuair a chaidh an làrach-lìn a "
+"chruthachadh."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
-msgid  "An error occurred while generating the table of contents page(s). "
+msgid "An error occurred while generating the table of contents page(s). "
 msgstr "Thachair mearachd rè cruthachadh duilleag(an) a' chlàir-innse. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
-msgid  "An error occurred while copying the layout files. "
-msgstr "Thachair mearachd nuair a chaidh lethbhreac de dh'fhaidhlichean na co-dhealbhachd a dhèanamh. "
+msgid "An error occurred while copying the layout files. "
+msgstr ""
+"Thachair mearachd nuair a chaidh lethbhreac de dh'fhaidhlichean na co-"
+"dhealbhachd a dhèanamh. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
-msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr "Thachair mearachd rè cruinneachadh fiosrachadh na sgrìobhainne airson \"%FILENAME\". "
+msgid "An error occurred while gathering document information for '%FILENAME'. "
+msgstr ""
+"Thachair mearachd rè cruinneachadh fiosrachadh na sgrìobhainne airson \"%"
+"FILENAME\". "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
-msgid  "An error occurred while exporting the document '%FILENAME'."
+msgid "An error occurred while exporting the document '%FILENAME'."
 msgstr "Thachair mearachd rè às-phortadh na sgrìobhainne \"%FILENAME\"."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
-msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr "Thachair mearachd rè cruthachadh an eòlaire airson às-phortadh \"%FILENAME\"."
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr ""
+"Thachair mearachd rè cruthachadh an eòlaire airson às-phortadh \"%FILENAME\"."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
-msgid  "A security error occurred while exporting the document '%FILENAME'."
-msgstr "Thachair mearachd tèarainteachd rè às-phortadh na sgrìobhainne \"%FILENAME\"."
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr ""
+"Thachair mearachd tèarainteachd rè às-phortadh na sgrìobhainne \"%FILENAME\"."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
-msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr "Thachair mearachd ion-chuir/as-chuir rè às-phortadh na sgrìobhainne \"%FILENAME\"."
+msgid "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr ""
+"Thachair mearachd ion-chuir/as-chuir rè às-phortadh na sgrìobhainne \"%"
+"FILENAME\"."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
-msgid  "An error occurred while copying media files to the temporary directory."
-msgstr "Thachair mearachd nuair a chaidh lethbhreac nam faidhlichean meadhain a chur dhan eòlaire sealach."
+msgid "An error occurred while copying media files to the temporary directory."
+msgstr ""
+"Thachair mearachd nuair a chaidh lethbhreac nam faidhlichean meadhain a chur "
+"dhan eòlaire sealach."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
-msgid  "The web site could not be copied to the following destination: %URL"
-msgstr "Cha do ghabh lethbhreac dhen làrach-lìn a chur dhan t-seòladh a leanas: %URL"
+msgid "The web site could not be copied to the following destination: %URL"
+msgstr ""
+"Cha do ghabh lethbhreac dhen làrach-lìn a chur dhan t-seòladh a leanas: %URL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
-msgid  "An unexpected error occurred: %ERROR"
+msgid "An unexpected error occurred: %ERROR"
 msgstr "Thachair mearachd ris nach robh dùil: %ERROR"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
-msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr "Thachair mearachd ris nach robh dùil rè dearbhadh an fhaidhle: \"%FILENAME\""
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr ""
+"Thachair mearachd ris nach robh dùil rè dearbhadh an fhaidhle: \"%FILENAME\""
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
-msgid  "%FILENAME' is a folder."
+msgid "%FILENAME' is a folder."
 msgstr "Tha \"%FILENAME\" 'na phasgan."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
-msgid  "Loading Web Wizard Settings..."
+msgid "Loading Web Wizard Settings..."
 msgstr "A' luchdadh roghainnean draoidh an lìn..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
-msgid  "An unexpected error occurred."
+msgid "An unexpected error occurred."
 msgstr "Thachair mearachd ris nach robh dùil."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
-msgid  "Validating documents..."
+msgid "Validating documents..."
 msgstr "A' dearbhadh nan sgrìobhainnean..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
-msgid  "My Archive"
+msgid "My Archive"
 msgstr "Mo thasg-lann"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
-msgid  "Introduction "
+msgid "Introduction "
 msgstr "Ro-ràdh "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
-msgid  "Documents "
+msgid "Documents "
 msgstr "Sgrìobhainnean "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
-msgid  "Main layout"
+msgid "Main layout"
 msgstr "Prìomh-cho-dhealbhachd"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
-msgid  "Layout details"
+msgid "Layout details"
 msgstr "Mion-fhiosrachadh na co-dhealbhachd"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
-msgid  "Style"
+msgid "Style"
 msgstr "Stoidhle"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
-msgid  "Web site information"
+msgid "Web site information"
 msgstr "Fiosrachadh na làraich-lìn"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Ro-shealladh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Thèid na roghainnean a thagh thu a sguabadh às.\n\nA bheil thu cinnteach gu bheil thu airson na roghainnean seo a sguabadh às? "
+msgid "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr ""
+"Thèid na roghainnean a thagh thu a sguabadh às.\n"
+"\n"
+"A bheil thu cinnteach gu bheil thu airson na roghainnean seo a sguabadh às? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
-msgid  "%NUMBER pages"
+msgid "%NUMBER pages"
 msgstr "%NUMBER duilleag(an)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
-msgid  "%NUMBER slides"
+msgid "%NUMBER slides"
 msgstr "%NUMBER sleamhnag(an)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
-msgid  "Created: %DATE"
+msgid "Created: %DATE"
 msgstr "Air a chruthachadh: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
-msgid  "Last modified: %DATE"
+msgid "Last modified: %DATE"
 msgstr "Atharrachadh mu dheireadh: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
-msgid  "Web Wizard Settings"
+msgid "Web Wizard Settings"
 msgstr "Roghainnean draoidh an lìn"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
-msgid  "Background image:"
+msgid "Background image:"
 msgstr "Dealbh a' chùlaibh:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
-msgid  "Icon set:"
+msgid "Icon set:"
 msgstr "Seataichean de dh'ìomhaigheagan:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
-msgid  "The icon set is used for presentations in HTML format."
-msgstr "Thèid an seata seo de dh'ìomhaigheagan a chleachdadh ann an taisbeanaidhean a bhios san fhòrmat HTML."
+msgid "The icon set is used for presentations in HTML format."
+msgstr ""
+"Thèid an seata seo de dh'ìomhaigheagan a chleachdadh ann an taisbeanaidhean "
+"a bhios san fhòrmat HTML."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
-msgid  "HTML Metadata"
+msgid "HTML Metadata"
 msgstr "Meata-dhàta HTML"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
-msgid  "Choose..."
+msgid "Choose..."
+msgstr "Tagh..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__141.STRING.TEXT
+msgid "Choose..."
 msgstr "Tagh..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
-msgid  "<default>"
+msgid "<default>"
 msgstr "<bun-roghainn>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
-msgid  "Publishing via FTP Proxy is not supported."
+msgid "Publishing via FTP Proxy is not supported."
 msgstr "Chan eil taic ann ri foillseachadh slighe progsaidh FTP."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
-msgid  "<no background image>"
+msgid "<no background image>"
 msgstr "<gun dealbh cùlaibh>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
-msgid  "<no icon set>"
+msgid "<no icon set>"
 msgstr "<gun seata ìomhaigheagan>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' could not be created."
+msgid "The FTP directory '%FILENAME' could not be created."
 msgstr "Cha do ghabh an t-eòlaire FTP \"%FILENAME\" a chruthachadh."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Chan eil an t-eòlaire FTP \"%FILENAME\" ann. \nA bheil thu airson a chruthachadh an-dràsta?"
+msgid "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"Chan eil an t-eòlaire FTP \"%FILENAME\" ann. \n"
+"A bheil thu airson a chruthachadh an-dràsta?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
-msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr "Cha do ghabh am faidhle ZIP \"%FILENAME\" a chruthachadh: tha eòlaire leis an ainm sin ann mu thràth."
+msgid "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr ""
+"Cha do ghabh am faidhle ZIP \"%FILENAME\" a chruthachadh: tha eòlaire leis an "
+"ainm sin ann mu thràth."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Cha do ghabh an t-eòlaire ionadail \"%FILENAME\" a chruthachadh. \nDèan cinnteach gu bheil cead-sgrìobhaidh agad."
+msgid "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr ""
+"Cha do ghabh an t-eòlaire ionadail \"%FILENAME\" a chruthachadh. \n"
+"Dèan cinnteach gu bheil cead-sgrìobhaidh agad."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Chan eil an t-eòlaire ionadail \"%FILENAME\" ann. \nA bheil thu airson a chruthachadh an-dràsta?"
+msgid "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"Chan eil an t-eòlaire ionadail \"%FILENAME\" ann. \n"
+"A bheil thu airson a chruthachadh an-dràsta?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
-msgid  "Size: %NUMBERKB"
+msgid "Size: %NUMBERKB"
 msgstr "Meud: %NUMBERKB"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
-msgid  "File not found. Would you like to specify a new file location?"
+msgid "File not found. Would you like to specify a new file location?"
 msgstr "Cha deach am faidhle a lorg. A bheil thu airson àite ùr a shònrachadh?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
-msgid  "FTP Connection"
+msgid "FTP Connection"
 msgstr "Ceangal FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
-msgid  "~User name:"
+msgid "~User name:"
 msgstr "~Ainm-cleachdaiche:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
-msgid  "~Password:"
+msgid "~Password:"
 msgstr "~Facal-faire:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
-msgid  "Connect"
+msgid "Connect"
 msgstr "Ceangail"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
-msgid  "1. Enter FTP connection information."
+msgid "1. Enter FTP connection information."
 msgstr "1. Cuir a-steach fiosrachadh a' cheangail FTP."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
-msgid  "~Server name or IP address:"
+msgid "~Server name or IP address:"
 msgstr "Ainm an ~fhrithealaiche no an seòladh IP:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
-msgid  "2. Connect to the server."
+msgid "2. Connect to the server."
 msgstr "2. Dèan ceangal ris an fhrithealaiche."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
-msgid  "3. ~Choose a remote directory (optional)."
+msgid "3. ~Choose a remote directory (optional)."
 msgstr "3. ~Tagh eòlaire cèin (roghainneil)."
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
-msgid  "Connection status is unknown"
+msgid "Connection status is unknown"
 msgstr "Chan eil fios dè staid a' cheangail"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
-msgid  "Connection was established successfully"
+msgid "Connection was established successfully"
 msgstr "Chaidh ceangal a stèidheachadh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
-msgid  "Username or password is wrong"
+msgid "Username or password is wrong"
 msgstr "Tha an t-ainm-cleachdaiche no am facal-faire cearr"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
-msgid  "Could not resolve server name"
+msgid "Could not resolve server name"
 msgstr "Cha do ghabh ainm an fhrithealaiche a rèiteachadh"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
-msgid  "You do not have sufficient user rights"
+msgid "You do not have sufficient user rights"
 msgstr "Chan eil cead gu leòr agad"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
-msgid  "Cannot connect to server"
+msgid "Cannot connect to server"
 msgstr "Cha ghabh ceangal a dhèanamh ris an fhrithealaiche"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
-msgid  "Unexpected error"
+msgid "Unexpected error"
 msgstr "Mearachd ris nach robh dùil"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
-msgid  "FTP publishing directory"
+msgid "FTP publishing directory"
 msgstr "Eòlaire foillseachadh FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
-msgid  "This is not an FTP folder"
+msgid "This is not an FTP folder"
 msgstr "Chan e pasgan FTP a tha seo"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
-msgid  "Connecting..."
+msgid "Connecting..."
 msgstr "A' dèanamh ceangal..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Agenda Wizard"
+msgid "Agenda Wizard"
 msgstr "Draoidh nan clàr-gnothaich"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "Make ~manual changes to this agenda template"
+msgid "Make ~manual changes to this agenda template"
 msgstr "Atharraich an teamplaid clàir-ghnothaich seo de lài~mh"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.STRING.TEXT
+msgid "Template name:"
+msgstr "Ainm na teamplaid:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.STRING.TEXT
+msgid "Location and file name:"
+msgstr "Àite is ainm an fhaidhle:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.STRING.TEXT
+msgid "What do you want to do next?"
+msgstr "Dè bu toigh leat dèanamh a-nis?"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
-msgid  "Please choose the page design for the agenda"
+msgid "Please choose the page design for the agenda"
 msgstr "Tagh co-dhealbhachd na duilleige airson a' chlàir-ghnothaich"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
-msgid  "Please select the headings you wish to include in your agenda template"
-msgstr "Tagh na ceann-sgrìobhaidhean a bu toigh leat ann an teamplaid a' chlàir-ghnothaich agad"
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr ""
+"Tagh na ceann-sgrìobhaidhean a bu toigh leat ann an teamplaid a' chlàir-"
+"ghnothaich agad"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
-msgid  "Please enter general information for the event"
+msgid "Please enter general information for the event"
 msgstr "Cuir a-steach fiosrachadh coitcheann mun tachartas"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
-msgid  "Please specify items for the agenda"
+msgid "Please specify items for the agenda"
 msgstr "Tagh nithean airson a' chlàir-ghnothaich"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
-msgid  "Please select the names you wish to include in your agenda template"
-msgstr "Tagh na h-ainmean a bu toigh leat ann an teamplaid a' chlàir-ghnothaich agad"
+msgid "Please select the names you wish to include in your agenda template"
+msgstr ""
+"Tagh na h-ainmean a bu toigh leat ann an teamplaid a' chlàir-ghnothaich agad"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.STRING.TEXT
+msgid "Choose a name and save the template"
+msgstr "Tagh ainm is sàbhail an teamplaid"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
-msgid  "Include form for recording minutes"
+msgid "Include form for recording minutes"
 msgstr "Nochd foirm airson clàradh a' ghearr-chunntais"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
-msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr "Cuidichidh an draoidh seo thu le cruthachadh teamplaid clàir-ghnothaich. 'S urrainn dhut an teamplaid a chleachdadh uair sam bith a bhios feum agad air clàr-gnothaich an uairsin."
+msgid "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr ""
+"Cuidichidh an draoidh seo thu le cruthachadh teamplaid clàir-ghnothaich. 'S "
+"urrainn dhut an teamplaid a chleachdadh uair sam bith a bhios feum agad air "
+"clàr-gnothaich an uairsin."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
-msgid  "Time:"
+msgid "Time:"
 msgstr "Àm:"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.STRING.TEXT
+msgid "Name:"
+msgstr "Ainm:"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "Àite:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
-msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr "Thèid glèidheadairean-àite a chleachdadh ann an raointean bàna. Bidh cothrom agad teacsa a chur 'nan àite an dèidh seo."
+msgid "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr ""
+"Thèid glèidheadairean-àite a chleachdadh ann an raointean bàna. Bidh cothrom "
+"agad teacsa a chur 'nan àite an dèidh seo."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.STRING.TEXT
+msgid "..."
+msgstr "..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
-msgid  "Create an ~agenda from this template"
+msgid "Create an ~agenda from this template"
 msgstr "Crut~haich clàr-gnothaich leis an teamplaid seo"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
-msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Gus clàr-gnothaich ùr a chruthachadh le teamplaid, rach dhan àite far an do shàbhail thu an teamplaid agus dèan briogadh dùbailte air an fhaidhle."
+msgid "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Gus clàr-gnothaich ùr a chruthachadh le teamplaid, rach dhan àite far an do "
+"shàbhail thu an teamplaid agus dèan briogadh dùbailte air an fhaidhle."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
-msgid  "Agenda item"
+msgid "Agenda item"
 msgstr "Nì air a' chlàr-gnothaich"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
-msgid  "Responsible"
+msgid "Responsible"
 msgstr "An urra ri"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
-msgid  "Duration"
+msgid "Duration"
 msgstr "Faid"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
-msgid  "Meeting called by"
+msgid "Meeting called by"
 msgstr "A' choinneamh air a ghairm le"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.STRING.TEXT
-msgid  "Chairperson"
+msgid "Chairperson"
 msgstr "A' chathair"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.STRING.TEXT
-msgid  "Minute keeper"
+msgid "Minute keeper"
 msgstr "Neach a' ghearr-chunntais"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
+msgid "Moderator"
+msgstr ""
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
-msgid  "Attendees"
+msgid "Attendees"
 msgstr "An làthair"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.STRING.TEXT
-msgid  "Observers"
+msgid "Observers"
 msgstr "Coimheadaichean"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.STRING.TEXT
-msgid  "Facility personnel"
+msgid "Facility personnel"
 msgstr "Luchd-obrach nan goireasan"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
-msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr "Bidh glèidheadairean-àite ann an teamplaid a' chlàir-ghnothaich agad seach ainmean ceart nan daoine. Nuair a chruthaicheas tu clàr-gnothaich ceart leis an teamplaid, 's urrainn dhut na h-ainmean iomchaidh a chur ann an uairsin."
+msgid "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr ""
+"Bidh glèidheadairean-àite ann an teamplaid a' chlàir-ghnothaich agad seach "
+"ainmean ceart nan daoine. Nuair a chruthaicheas tu clàr-gnothaich ceart leis "
+"an teamplaid, 's urrainn dhut na h-ainmean iomchaidh a chur ann an uairsin."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
+msgid "Please read"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
-msgid  "Please bring"
+msgid "Please bring"
 msgstr "Thoiribh leibh na leanas"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
+msgid "Notes"
+msgstr "Nòtaichean"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
-msgid  "The agenda template will include placeholders for the selected items."
-msgstr "Bidh glèidheadairean-àite ann an teamplaid a' chlàir-ghnothaich airson nan nithean a thagh thu."
+msgid "The agenda template will include placeholders for the selected items."
+msgstr ""
+"Bidh glèidheadairean-àite ann an teamplaid a' chlàir-ghnothaich airson nan "
+"nithean a thagh thu."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.STRING.TEXT
+msgid "Date:"
+msgstr "Ceann-là:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
-msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr "Cruthaichidh an draoidh seo teamplaid clàir-ghnothaich leis an urrainn dhut iomadh clàr-gnothaich a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na dearbh-roghainnean."
+msgid "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr ""
+"Cruthaichidh an draoidh seo teamplaid clàir-ghnothaich leis an urrainn dhut "
+"iomadh clàr-gnothaich a sgrìobhadh aig a bhios an dearbh-dhealbhadh is na "
+"dearbh-roghainnean."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
-msgid  "Page design:"
+msgid "Page design:"
 msgstr "Dealbhadh na duilleige:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
-msgid  "myAgendaTemplate.stw"
+msgid "myAgendaTemplate.stw"
 msgstr "TeamplaidMoChlàirGnothaich.stw"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
-msgid  "My Agenda Template"
+msgid "My Agenda Template"
 msgstr "Teamplaid mo chlàir-ghnothaich"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
-msgid  "An unexpected error occurred while saving the agenda template."
-msgstr "Thachair mearachd ris nach robh dùil rè sàbhaladh teamplaid a' chlàir-ghnothaich."
+msgid "An unexpected error occurred while saving the agenda template."
+msgstr ""
+"Thachair mearachd ris nach robh dùil rè sàbhaladh teamplaid a' chlàir-"
+"ghnothaich."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "Ainm"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Ceann-là"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "Àm"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "Àite"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
-msgid  "Click to replace this text"
+msgid "Click to replace this text"
 msgstr "Briog air gus rud a chur an àite an teacsa seo"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.STRING.TEXT
+msgid "Page design"
+msgstr "Dealbhadh na duilleige"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
-msgid  "General information"
+msgid "General information"
 msgstr "Fiosrachadh coitcheann"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
-msgid  "Headings to include"
+msgid "Headings to include"
 msgstr "Ceann-sgrìobhaidhean a thèid a ghabhail a-staigh"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
-msgid  "Names"
+msgid "Names"
 msgstr "Ainmean"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
-msgid  "Agenda items"
+msgid "Agenda items"
 msgstr "Nithean air a' chlàr-gnothaich"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.STRING.TEXT
+msgid "Name and location"
+msgstr "Ainm is àite"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
-msgid  "An unexpected error occurred while opening the agenda template."
-msgstr "Thachair mearachd ris nach robh dùil rè fosgladh teamplaid a' chlàir-ghnothaich."
+msgid "An unexpected error occurred while opening the agenda template."
+msgstr ""
+"Thachair mearachd ris nach robh dùil rè fosgladh teamplaid a' chlàir-"
+"ghnothaich."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.STRING.TEXT
+msgid "Please bring"
+msgstr "Thoiribh leibh na leanas"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.STRING.TEXT
+msgid "Please read"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.STRING.TEXT
+msgid "Notes"
+msgstr "Nòtaichean"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.STRING.TEXT
+msgid "Meeting called by"
+msgstr "A' choinneamh air a ghairm le"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.STRING.TEXT
+msgid "Chairperson"
+msgstr "A' chathair"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.STRING.TEXT
+msgid "Attendees"
+msgstr "An làthair"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.STRING.TEXT
+msgid "Minute keeper"
+msgstr "Neach a' ghearr-chunntais"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.STRING.TEXT
+msgid "Moderator"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.STRING.TEXT
+msgid "Observers"
+msgstr "Coimheadaichean"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.STRING.TEXT
+msgid "Facility personnel"
+msgstr "Luchd-obrach nan goireasan"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "Cuir a-steach"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
-msgid  "Remove"
+msgid "Remove"
 msgstr "Thoir air falbh"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr "Gluais suas"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr "Gluais sìos"
 
 #: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "Cob~hair"
 
 #: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "Sguir d~heth"
 
 #: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Air ais"
 
 #: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
-msgid  "Ne~xt >>"
+msgid "Ne~xt >>"
 msgstr "Air a~dhart >>"
 
 #: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "Io~mpaich"
 
 #: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Dùin"
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
-msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr "Iompaichidh an draoidh seo sgrìobhainnean a tha san fhòrmat %PRODUCTNAME agus sgrìobhainnean Microsoft Office dhan fhòrmat OpenDocument ùr."
+msgid "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr ""
+"Iompaichidh an draoidh seo sgrìobhainnean a tha san fhòrmat %PRODUCTNAME "
+"agus sgrìobhainnean Microsoft Office dhan fhòrmat OpenDocument ùr."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
-msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr "Thoir an aire gun caill macrothan VBA an comasan nuair a dh'iompaicheas tu sgrìobhainnean Microsoft."
+msgid "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr ""
+"Thoir an aire gun caill macrothan VBA an comasan nuair a dh'iompaicheas tu "
+"sgrìobhainnean Microsoft."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
-msgid  "Select the document type for conversion:"
+msgid "Select the document type for conversion:"
 msgstr "Tagh seòrsa na sgrìobhainne airson iompachadh:"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Word templates"
+msgid "Word templates"
 msgstr "Teamplaidean Word"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Excel templates"
+msgid "Excel templates"
 msgstr "Teamplaidean Excel"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint templates"
+msgid "PowerPoint templates"
 msgstr "Teamplaidean PowerPoint"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Word documents"
+msgid "Word documents"
 msgstr "Sgrìobhainnean Word"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Excel documents"
+msgid "Excel documents"
 msgstr "Sgrìobhainnean Excel"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint documents"
+msgid "PowerPoint documents"
 msgstr "Sgrìobhainnean PowerPoint"
 
 #: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
-msgid  "Including subdirectories"
+msgid "Including subdirectories"
 msgstr "Gabh a-steach na fo-eòlairean"
 
 #: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
-msgid  "Microsoft Office"
+msgid "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
-msgid  "Summary:"
+msgid "Summary:"
 msgstr "Gearr-chunntas:"
 
 #: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
-msgid  "Import from:"
+msgid "Import from:"
 msgstr "Ion-phortaich:"
 
 #: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
-msgid  "Save to:"
+msgid "Save to:"
 msgstr "Sàbhail ann an:"
 
 #: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
-msgid  "Imported_Templates"
+msgid "Imported_Templates"
 msgstr "Teamplaidean_air_ion-phortadh"
 
 #: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
-msgid  "Progress: "
+msgid "Progress: "
 msgstr "Adhartas: "
 
 #: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
-msgid  "Document"
+msgid "Document"
 msgstr "Sgrìobhainn"
 
 #: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
-msgid  "Documents"
+msgid "Documents"
 msgstr "Sgrìobhainnean"
 
 #: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
-msgid  "Templates"
+msgid "Templates"
 msgstr "Teamplaidean"
 
 #: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
-msgid  "The '%1' directory cannot be created: "
+msgid "The '%1' directory cannot be created: "
 msgstr "Cha ghabh an t-eòlaire \"%1\" a chruthachadh: "
 
 #: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
-msgid  "The '%1' directory does not exist."
+msgid "The '%1' directory does not exist."
 msgstr "Chan eil an t-eòlaire \"%1\" ann."
 
 #: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
-msgid  "Do you want to create it now?"
+msgid "Do you want to create it now?"
 msgstr "A bheil thu airson a chruthachadh an-dràsta?"
 
 #: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr "Tha am faidhle \"<1>\" ann mu thràth.<CR>A bheil thu airson sgrìobhadh thairis air?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr ""
+"Tha am faidhle \"<1>\" ann mu thràth.<CR>A bheil thu airson sgrìobhadh thairis "
+"air?"
 
 #: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
-msgid  "Directories do not exist"
+msgid "Directories do not exist"
 msgstr "Chan eil na h-eòlairean ann"
 
 #: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
-msgid  "Do you want to overwrite documents without being asked?"
-msgstr "A bheil thu airson sgrìobhadh thairis air sgrìobhainnean as aonais rabhaidhean?"
+msgid "Do you want to overwrite documents without being asked?"
+msgstr ""
+"A bheil thu airson sgrìobhadh thairis air sgrìobhainnean as aonais "
+"rabhaidhean?"
 
 #: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
-msgid  "Document macro has to be revised."
+msgid "Document macro has to be revised."
 msgstr "Tha macro na sgrìobhainne feumach air lèirmheas."
 
 #: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be saved."
+msgid "Document '<1>' could not be saved."
 msgstr "Cha ghabh an sgrìobhainn \"<1>\" a shàbhaladh."
 
 #: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be opened."
+msgid "Document '<1>' could not be opened."
 msgstr "Cha ghabh an sgrìobhainn \"<1>\" a fhosgladh."
 
 #: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
-msgstr "A bheil thu cinnteach gu bheil thu airson crìoch a chur air an iompachadh aig an ìre-sa?"
+msgid "Do you really want to terminate conversion at this point?"
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson crìoch a chur air an iompachadh "
+"aig an ìre-sa?"
 
 #: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
-msgid  "Cancel Wizard"
+msgid "Cancel Wizard"
 msgstr "Sguir dhen draoidh"
 
 #: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
-msgid  "An unexpected error has occurred in the wizard."
+msgid "An unexpected error has occurred in the wizard."
 msgstr "Thachair mearachd leis an draoidh ris nach robh dùil."
 
 #: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Mearachd"
 
 #: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
-msgid  "Select a directory"
+msgid "Select a directory"
 msgstr "Tagh eòlaire"
 
 #: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
-msgid  "Document Converter"
+msgid "Document Converter"
 msgstr "Iompaichear sgrìobhainnean"
 
 #: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Adhartas"
 
 #: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
-msgid  "Retrieving the relevant documents:"
+msgid "Retrieving the relevant documents:"
 msgstr "A' faighinn nan sgrìobhainnean iomchaidh:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
-msgid  "Converting the documents"
+msgid "Converting the documents"
 msgstr "Ag iompachadh nan sgrìobhainnean"
 
 #: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
-msgid  "Found:"
+msgid "Found:"
 msgstr "Air a lorg:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
-msgid  "%1 found"
+msgid "%1 found"
 msgstr "%1 air a lorg"
 
 #: importwizard/importwi.src#SREADY.STRING.TEXT
-msgid  "Finished"
+msgid "Finished"
 msgstr "Deiseil"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Text templates"
+msgid "Text templates"
 msgstr "Teamplaidean teacsa"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheet templates"
+msgid "Spreadsheet templates"
 msgstr "Teamplaidean cliath-dhuilleige"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation templates"
+msgid "Drawing/presentation templates"
 msgstr "Teamplaidean tarraing/taisbeanaidh"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
-msgid  "Master documents"
+msgid "Master documents"
 msgstr "Prìomh-sgrìobhainnean"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Text documents"
+msgid "Text documents"
 msgstr "Sgrìobhainnean teacsa"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheets"
+msgid "Spreadsheets"
 msgstr "Cliath-dhuilleagan"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation documents"
+msgid "Drawing/presentation documents"
 msgstr "Sgrìobhainnean tarraing/taisbeanaidh"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
-msgid  "Master documents/formulas"
+msgid "Master documents/formulas"
 msgstr "Prìomh-sgrìobhainnean/foirmlean"
 
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_1.STRING.TEXT
+msgid "Master documents"
+msgstr "Prìomh-sgrìobhainnean"
+
 #: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
-msgid  "Formulas"
+msgid "Formulas"
 msgstr "Foirmlean"
 
 #: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
-msgid  "Source documents"
+msgid "Source documents"
 msgstr "Tùs-sgrìobhainnean"
 
 #: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
-msgid  "Target documents"
+msgid "Target documents"
 msgstr "Sgrìobhainnean targaid"
 
 #: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
-msgid  "Create log file"
+msgid "Create log file"
 msgstr "Cruthaich faidhle loga"
 
 #: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
-msgid  "<COUNT> documents converted"
+msgid "<COUNT> documents converted"
 msgstr "Chaidh <COUNT> iompachadh"
 
 #: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
-msgid  "A log file will be created in your work directory"
+msgid "A log file will be created in your work directory"
 msgstr "Thèid faidhlichea loga a chruthachadh 'nad eòlaire obrach"
 
 #: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
-msgid  "Show log file"
+msgid "Show log file"
 msgstr "Seall am faidhle loga"
 
 #: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
-msgid  "All subdirectories will be taken into account"
+msgid "All subdirectories will be taken into account"
 msgstr "Thèid gach fo-eòlaire a ghabhail a-steach san àireamh"
 
 #: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
-msgid  "These will be exported to the following directory:"
+msgid "These will be exported to the following directory:"
 msgstr "Thèid an às-phortadh dhan eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr "Thèid gach sgrìobhainn teacsa %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach sgrìobhainn teacsa %PRODUCTNAME ion-phortadh a tha san eòlaire a "
+"leanas:"
 
 #: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr "Thèid gach cliath-dhuilleag %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach cliath-dhuilleag %PRODUCTNAME ion-phortadh a tha san eòlaire a "
+"leanas:"
 
 #: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr "Thèid gach sgrìobhainn tarraing is taisbeanadh %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach sgrìobhainn tarraing is taisbeanadh %PRODUCTNAME ion-phortadh a "
+"tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr "Thèid gach sgrìobhainn foirmle %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach sgrìobhainn foirmle %PRODUCTNAME ion-phortadh a tha san eòlaire a "
+"leanas:"
 
 #: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr "Thèid gach teamplaid teacsa %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach teamplaid teacsa %PRODUCTNAME ion-phortadh a tha san eòlaire a "
+"leanas:"
 
 #: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr "Thèid gach teamplaid clàr %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach teamplaid clàr %PRODUCTNAME ion-phortadh a tha san eòlaire a "
+"leanas:"
 
 #: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr "Thèid gach teamplaid tarraing is taisbeanadh %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach teamplaid tarraing is taisbeanadh %PRODUCTNAME ion-phortadh a tha "
+"san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr "Thèid gach sgrìobhainn maighstir %PRODUCTNAME ion-phortadh a tha san eòlaire a leanas:"
+msgid "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach sgrìobhainn maighstir %PRODUCTNAME ion-phortadh a tha san eòlaire "
+"a leanas:"
 
 #: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
-msgid  "All Word documents contained in the following directory will be imported:"
+msgid "All Word documents contained in the following directory will be imported:"
 msgstr "Thèid gach sgrìobhainn Word ion-phortadh a tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
-msgid  "All Excel documents contained in the following directory will be imported:"
+msgid "All Excel documents contained in the following directory will be imported:"
 msgstr "Thèid gach sgrìobhainn Excel ion-phortadh a tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
-msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr "Thèid gach sgrìobhainn PowerPoint ion-phortadh a tha san eòlaire a leanas:"
+msgid "All PowerPoint documents contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach sgrìobhainn PowerPoint ion-phortadh a tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
-msgid  "All Word templates contained in the following directory will be imported:"
+msgid "All Word templates contained in the following directory will be imported:"
 msgstr "Thèid gach teamplaid Word ion-phortadh a tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
-msgid  "All Excel templates contained in the following directory will be imported:"
+msgid "All Excel templates contained in the following directory will be imported:"
 msgstr "Thèid gach teamplaid Excel ion-phortadh a tha san eòlaire a leanas:"
 
 #: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
-msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr "Thèid gach teamplaid PowerPoint ion-phortadh a tha san eòlaire a leanas:"
+msgid "All PowerPoint templates contained in the following directory will be imported:"
+msgstr ""
+"Thèid gach teamplaid PowerPoint ion-phortadh a tha san eòlaire a leanas:"
 
 #: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
-msgid  "%PRODUCTNAME Calendar"
+msgid "%PRODUCTNAME Calendar"
 msgstr "Mìosachan %PRODUCTNAME"
 
 #: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
-msgid  "Back"
+msgid "Back"
 msgstr "Air ais"
 
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "Dàta pearsanta"
 
 #: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
-msgid  "Add Holidays to Calendar"
+msgid "Add Holidays to Calendar"
 msgstr "Cuir làithean-fèille ris a' mhìosachan"
 
 #: schedule/schedule.src#DLGOK.STRING.TEXT
-msgid  "Create"
+msgid "Create"
 msgstr "Cruthaich"
 
 #: schedule/schedule.src#DLGCANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Sguir dheth"
 
 #: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "Mìosachan"
 
 #: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
-msgid  "~Year Overview"
+msgid "~Year Overview"
 msgstr "Sealladh na ~bliadhna"
 
 #: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "~Mìos"
 
 #: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
-msgid  "Add holidays for"
+msgid "Add holidays for"
 msgstr "Cuir ris làithean-fèille airson"
 
 #: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
-msgid  "USA"
+msgid "USA"
 msgstr "SAA"
 
 #: schedule/schedule.src#DLGTIME.STRING.TEXT
-msgid  "Time Frame"
+msgid "Time Frame"
 msgstr "Raon ama"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "Bliadhna"
 
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "Mìos"
 
+#: schedule/schedule.src#DLGCALOWNDATA.STRING.TEXT
+msgid "Personal Data"
+msgstr "Dàta pearsanta"
+
 #: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "Cu~ir a-steach"
 
 #: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "Sgua~b às"
 
 #: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
-msgid  "New Event"
+msgid "New Event"
 msgstr "Tachartas ùr"
 
 #: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
-msgid  "Event"
+msgid "Event"
 msgstr "Tachartas"
 
 #: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
-msgid  "One-Time"
+msgid "One-Time"
 msgstr "Aon turas"
 
 #: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "Latha"
 
+#: schedule/schedule.src#DLGCALEVENTMONTH.STRING.TEXT
+msgid "Month"
+msgstr "Mìos"
+
+#: schedule/schedule.src#DLGCALEVENTYEAR.STRING.TEXT
+msgid "Year"
+msgstr "Bliadhna"
+
 #: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
-msgid  "usa.bmp"
+msgid "usa.bmp"
 msgstr "usa.bmp"
 
 #: schedule/schedule.src#DLGSTATE.STRING.TEXT
-msgid  "Public holidays"
+msgid "Public holidays"
 msgstr "Làithean-fèille poblach"
 
 #: schedule/schedule.src#DLGMONTH.STRING.TEXT
-msgid  "January"
+msgid "January"
 msgstr "Am Faoilleach"
 
 #: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
-msgid  "February"
+msgid "February"
 msgstr "An Gearran"
 
 #: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
-msgid  "March"
+msgid "March"
 msgstr "Am Màrt"
 
 #: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
-msgid  "April"
+msgid "April"
 msgstr "An Giblean"
 
 #: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
-msgid  "May"
+msgid "May"
 msgstr "An Cèitean"
 
 #: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
-msgid  "June"
+msgid "June"
 msgstr "An t-Ògmhios"
 
 #: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
-msgid  "July"
+msgid "July"
 msgstr "An Iuchar"
 
 #: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
-msgid  "August"
+msgid "August"
 msgstr "An Lùnastal"
 
 #: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
-msgid  "September"
+msgid "September"
 msgstr "An t-Sultain"
 
 #: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
-msgid  "October"
+msgid "October"
 msgstr "An Dàmhair"
 
 #: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
-msgid  "November"
+msgid "November"
 msgstr "An t-Samhain"
 
 #: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
-msgid  "December"
+msgid "December"
 msgstr "An Dùbhlachd"
 
 #: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
-msgid  "Yearly / Monthly Calendar"
+msgid "Yearly / Monthly Calendar"
 msgstr "Mìosachan bliadhnail / mìosail"
 
 #: schedule/schedule.src#MSGCALERROR.STRING.TEXT
-msgid  "An error occurred while creating the calendar."
+msgid "An error occurred while creating the calendar."
 msgstr "Thachair mearachd rè cruthachadh a' mhìosachain."
 
 #: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
-msgid  "Delete event entries"
+msgid "Delete event entries"
 msgstr "Sguab às na rudan sa mhìosachan"
 
 #: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
-msgid  "Delete the selected entries?"
+msgid "Delete the selected entries?"
 msgstr "A bheil thu airson na rudan a thagh thu a sguabadh às?"
 
 #: schedule/schedule.src#STLWORKDAY.STRING.TEXT
-msgid  "Workweek"
+msgid "Workweek"
 msgstr "Seachdain-obrach"
 
 #: schedule/schedule.src#STLWEEKEND.STRING.TEXT
-msgid  "Weekend"
+msgid "Weekend"
 msgstr "Deireadh-seachdaine"
 
+#: schedule/schedule.src#NAMECALYEAR.STRING.TEXT
+msgid "Calendar"
+msgstr "Mìosachan"
+
+#: schedule/schedule.src#NAMECALMONTH.STRING.TEXT
+msgid "Month"
+msgstr "Mìos"
+
 #: schedule/schedule.src#SPROGRESS.STRING.TEXT
-msgid  "Progress:"
+msgid "Progress:"
 msgstr "Adhartas:"
 
 #: template/template.src#SAMPLES.STRING.TEXT
-msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr "Gus làn-chumhachd an t-sampaill seo a chur gu feum, cruthaich sgrìobhainn a tha stèidhichte air an teamplaid seo."
+msgid "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr ""
+"Gus làn-chumhachd an t-sampaill seo a chur gu feum, cruthaich sgrìobhainn a "
+"tha stèidhichte air an teamplaid seo."
 
 #: template/template.src#SAMPLES___1.STRING.TEXT
-msgid  "Remarks"
+msgid "Remarks"
 msgstr "Ràdhan"
 
 #: template/template.src#STYLES.STRING.TEXT
-msgid  "Theme Selection"
+msgid "Theme Selection"
 msgstr "Taghadh an ùrlair"
 
 #: template/template.src#STYLES___1.STRING.TEXT
-msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr "Mearachd rè sàbhaladh na sgrìobhainne dhan stòr-bhòrd! Cha ghabh an gnìomh a leanas neo-dhèanamh."
+msgid "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr ""
+"Mearachd rè sàbhaladh na sgrìobhainne dhan stòr-bhòrd! Cha ghabh an gnìomh a "
+"leanas neo-dhèanamh."
 
 #: template/template.src#STYLES___2.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "Sguir d~heth"
 
 #: template/template.src#STYLES___3.STRING.TEXT
-msgid  "~OK"
+msgid "~OK"
 msgstr "~Ceart ma-thà"
 
 #: template/template.src#AGENDADLGNAME.STRING.TEXT
-msgid  "Minutes Template"
+msgid "Minutes Template"
 msgstr "Teamplaid ghearr-chunntasan"
 
 #: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
-msgid  "An option must be confirmed."
+msgid "An option must be confirmed."
 msgstr "Tha roghainn ann a tha feumach air dearbhadh."
 
 #: template/template.src#AGENDADLGFRAME.STRING.TEXT
-msgid  "Minutes Type"
+msgid "Minutes Type"
 msgstr "Seòrsa a' ghearr-chunntais"
 
 #: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
-msgid  "Results Minutes"
+msgid "Results Minutes"
 msgstr "Gearr-chunntas thoraidhean"
 
 #: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
-msgid  "Evaluation Minutes"
+msgid "Evaluation Minutes"
 msgstr "Gearr-chunntas measaidh"
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
-msgid  "The bookmark 'Recipient' is missing."
+msgid "The bookmark 'Recipient' is missing."
 msgstr "Tha an comharra-leabhair \"Faightear\" a dhìth."
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
-msgid  "Form letter fields can not be included."
+msgid "Form letter fields can not be included."
 msgstr "Chan urrainn dhut raointean litrichean foirm a ghabhail a-steach."
 
 #: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
-msgid  "An error has occurred."
+msgid "An error has occurred."
 msgstr "Thachair mearachd."
 
 #: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
-msgid  "Addressee"
+msgid "Addressee"
 msgstr "Faightear"
 
 #: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
-msgid  "One recipient"
+msgid "One recipient"
 msgstr "Aon fhaightear"
 
 #: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
-msgid  "Several recipients (address database)"
+msgid "Several recipients (address database)"
 msgstr "Grunn fhaightearan (stòr-dàta sheòlaidhean)"
 
 #: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
-msgid  "Use of This Template"
+msgid "Use of This Template"
 msgstr "Cleachdadh na teamplaide seo"
 
 #: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
-msgid  "Click placeholder and overwrite"
+msgid "Click placeholder and overwrite"
 msgstr "Briog air a' ghlèidheadair-àite is sgrìobh thairis air"
 
 #: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
-msgid  "Company"
+msgid "Company"
 msgstr "Companaidh"
 
 #: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
-msgid  "Department"
+msgid "Department"
 msgstr "Roinn"
 
 #: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
-msgid  "First Name"
+msgid "First Name"
 msgstr "Ainm"
 
 #: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
-msgid  "Last Name"
+msgid "Last Name"
 msgstr "Sloinneadh"
 
 #: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
-msgid  "Street"
+msgid "Street"
 msgstr "Sràid"
 
 #: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
-msgid  "Country"
+msgid "Country"
 msgstr "Dùthaich"
 
 #: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
-msgid  "ZIP/Postal Code"
+msgid "ZIP/Postal Code"
 msgstr "Còd-puist"
 
 #: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
-msgid  "City"
+msgid "City"
 msgstr "Baile"
 
 #: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Tiotal"
 
 #: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "Ionad"
 
 #: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
-msgid  "Form of Address"
+msgid "Form of Address"
 msgstr "Tiotal urraim"
 
 #: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
-msgid  "Initials"
+msgid "Initials"
 msgstr "Tùs-litrichean"
 
 #: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
-msgid  "Salutation"
+msgid "Salutation"
 msgstr "Fàilte"
 
 #: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
-msgid  "Home Phone"
+msgid "Home Phone"
 msgstr "Fòn-dachaigh"
 
 #: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
-msgid  "Work Phone"
+msgid "Work Phone"
 msgstr "Fòn-obrach"
 
 #: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "Facs"
 
 #: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr "Post-d"
 
 #: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
-msgid  "Notes"
+msgid "Notes"
 msgstr "Nòtaichean"
 
 #: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
-msgid  "Alt. Field 1"
+msgid "Alt. Field 1"
 msgstr "Raon saor 1"
 
 #: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
-msgid  "Alt. Field 2"
+msgid "Alt. Field 2"
 msgstr "Raon saor 2"
 
 #: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
-msgid  "Alt. Field 3"
+msgid "Alt. Field 3"
 msgstr "Raon saor 3"
 
 #: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
-msgid  "Alt. Field 4"
+msgid "Alt. Field 4"
 msgstr "Raon saor 4"
 
 #: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
-msgid  "ID"
+msgid "ID"
 msgstr "ID"
 
 #: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "Sgìre/Còigeamh"
 
 #: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
-msgid  "Office Phone"
+msgid "Office Phone"
 msgstr "Fòn-oifise"
 
 #: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
-msgid  "Pager"
+msgid "Pager"
 msgstr "Pèidsear"
 
 #: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
-msgid  "Mobile Phone"
+msgid "Mobile Phone"
 msgstr "Fòn-làimhe"
 
 #: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
-msgid  "Other Phone"
+msgid "Other Phone"
 msgstr "Fòn eile"
 
 #: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
-msgid  "Calendar URL"
+msgid "Calendar URL"
 msgstr "URL a' mhìosachain"
 
 #: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
-msgid  "Invite"
+msgid "Invite"
 msgstr "Thoir cuireadh"
 
 #: template/template.src#TEXTFIELD.STRING.TEXT
-msgid  "User data field is not defined!"
+msgid "User data field is not defined!"
 msgstr "Cha deach raon dàta a' chleachdaiche a shònrachadh!"
 
 #: template/template.src#NEWSLETTER.STRING.TEXT
-msgid  "General layout"
+msgid "General layout"
 msgstr "A' cho-dhealbhachd choitcheann"
 
 #: template/template.src#NEWSLETTER___1.STRING.TEXT
-msgid  "Default layout"
+msgid "Default layout"
 msgstr "A' cho-dhealbhachd bhunaiteach"
 
 #: template/template.src#NEWSLETTER___2.STRING.TEXT
-msgid  "Commemorative publication layout"
+msgid "Commemorative publication layout"
 msgstr "Co-dhealbhachd foillseachaidh chuimhneachail"
 
 #: template/template.src#NEWSLETTER___3.STRING.TEXT
-msgid  "Brochure layout"
+msgid "Brochure layout"
 msgstr "Co-dhealbhachd leabhrain"
 
 #: template/template.src#NEWSLETTER___10.STRING.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "Fòrmat"
 
 #: template/template.src#NEWSLETTER___11.STRING.TEXT
-msgid  "Single-sided"
+msgid "Single-sided"
 msgstr "Aon-taobhach"
 
 #: template/template.src#NEWSLETTER___12.STRING.TEXT
-msgid  "Double-sided"
+msgid "Double-sided"
 msgstr "Dà-thaobhach"

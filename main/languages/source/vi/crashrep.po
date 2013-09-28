@@ -1,200 +1,256 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Báo cáo lỗi %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Chào mừng đến với Báo cáo lỗi %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "Công cụ thông báo lỗi này tập hợp thông tin về diễn tiến hoạt động của %PRODUCTNAME%, sau đó gửi đến Hiệp Hội Phát Triển Apache OpenOffice để cải tiến trong những phiên bản sau.\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"Công cụ thông báo lỗi này tập hợp thông tin về diễn tiến hoạt động của %"
+"PRODUCTNAME%, sau đó gửi đến Hiệp Hội Phát Triển Apache OpenOffice để cải "
+"tiến trong những phiên bản sau.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "Dễ dùng - chỉ cần gửi báo cáo này, không cần làm gì thêm, bằng cách ấn vào nút \"Gửi\" trong hộp thoại kế tiếp; hoặc bạn có thể diễn tả ngắn trường hợp gây ra lỗi, sau đó ấn vào \"Gửi\". Muốn xem báo cáo thì ấn vào nút \"Hiện báo cáo\". Không có dữ liệu sẽ được gửi nếu bạn ấn vào \"Không gửi\".\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"Dễ dùng - chỉ cần gửi báo cáo này, không cần làm gì thêm, bằng cách ấn vào "
+"nút \"Gửi\" trong hộp thoại kế tiếp; hoặc bạn có thể diễn tả ngắn trường hợp "
+"gây ra lỗi, sau đó ấn vào \"Gửi\". Muốn xem báo cáo thì ấn vào nút \"Hiện báo "
+"cáo\". Không có dữ liệu sẽ được gửi nếu bạn ấn vào \"Không gửi\".\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "Chính sách riêng tư về dữ liệu khách hàng\nThông tin được tập hợp bị hạn chế về dữ liệu do các vấn đề quan ngại về trạng thái %PRODUCTNAME% %PRODUCTVERSION% khi có lỗi xuất hiện. Các thông tin khác về mật khẩu hay nội dung của tài liệu không được tập hợp.\n\nThông tin được thu thập sẽ chỉ được dùng để cải tiến chất lượng của %PRODUCTNAME%; thông tin này sẽ không được chia sẻ với người khác.\nĐể tìm thông tin thêm về chính sách sự riêng tư của công ty Apache OpenOffice, hãy truy cập\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"Chính sách riêng tư về dữ liệu khách hàng\n"
+"Thông tin được tập hợp bị hạn chế về dữ liệu do các vấn đề quan ngại về "
+"trạng thái %PRODUCTNAME% %PRODUCTVERSION% khi có lỗi xuất hiện. Các thông "
+"tin khác về mật khẩu hay nội dung của tài liệu không được tập hợp.\n"
+"\n"
+"Thông tin được thu thập sẽ chỉ được dùng để cải tiến chất lượng của %"
+"PRODUCTNAME%; thông tin này sẽ không được chia sẻ với người khác.\n"
+"Để tìm thông tin thêm về chính sách sự riêng tư của công ty Apache "
+"OpenOffice, hãy truy cập\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Kế >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Thôi"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Báo cáo lỗi %PRODUCTNAME% %PRODUCTVERSION%"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Gặp lỗi trong khi chạy %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "Báo cáo lỗi về %PRODUCTNAME% %PRODUCTVERSION% đã tập hợp thông tin nhằm giúp Apache OpenOffice cải tiến %PRODUCTNAME%.\nTrong các khung thông tin bên dưới, bạn có thể nhập tựa đề cho báo cáo lỗi này, và mô tả lại các thao tác bạn đã tác động khi lỗi xảy ra. Sau đó, ấn vào nút ' Gửi'.\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"Báo cáo lỗi về %PRODUCTNAME% %PRODUCTVERSION% đã tập hợp thông tin nhằm giúp "
+"Apache OpenOffice cải tiến %PRODUCTNAME%.\n"
+"Trong các khung thông tin bên dưới, bạn có thể nhập tựa đề cho báo cáo lỗi "
+"này, và mô tả lại các thao tác bạn đã tác động khi lỗi xảy ra. Sau đó, ấn "
+"vào nút ' Gửi'.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "Kiểu tài liệu nào (v.d. trình chiếu) bạn đang sử dụng khi lỗi xảy ra?"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr "Tô~i cho phép Apache OpenOffice gửi các liên hệ với tôi về vấn đề liên quan đến báo cáo này."
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+"Tô~i cho phép Apache OpenOffice gửi các liên hệ với tôi về vấn đề liên quan "
+"đến báo cáo này."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "Hãy nhập địa chỉ thư điện tử của bạn."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "K~hi lỗi xảy ra, bạn đã sử dụng %PRODUCTNAME% như thế nào?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << ~Lùi"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "~Gửi"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "Khô~ng gửi"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "Hiện ~báo cáo..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "~Lưu báo cáo..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "Lưu báo cáo vào"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "Không thể gửi báo cáo lỗi này vì chương trình thư điện tử mặc định không hỗ trợ MAPI.\nHãy sử dụng chương trình thư điện tử tương thích với MAPI."
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Không thể gửi báo cáo lỗi này vì chương trình thư điện tử mặc định không hỗ "
+"trợ MAPI.\n"
+"Hãy sử dụng chương trình thư điện tử tương thích với MAPI."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Không thể lưu tạm thời báo cáo lỗi nên không thể gửi đi được."
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "Không thể gửi báo cáo lỗi vì không thể khởi chạy phần mềm « sendmail ».\nHãy kiểm tra sendmail đã được thiết lập đúng chưa."
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"Không thể gửi báo cáo lỗi vì không thể khởi chạy phần mềm « sendmail ».\n"
+"Hãy kiểm tra sendmail đã được thiết lập đúng chưa."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "Không thể gửi báo cáo lỗi. Hãy kiểm tra xem thiết lập ủy nhiệm là đúng dưới « Tùy chọn » trong Công Cụ Thông Báo Lỗi."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"Không thể gửi báo cáo lỗi. Hãy kiểm tra xem thiết lập ủy nhiệm là đúng dưới "
+"« Tùy chọn » trong Công Cụ Thông Báo Lỗi."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "Báo cáo lỗi không thể gửi được vì không có kết nối đến Internet. Hãy kiểm tra lại thiết lập Internet."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"Báo cáo lỗi không thể gửi được vì không có kết nối đến Internet. Hãy kiểm "
+"tra lại thiết lập Internet."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "Tù~y chọn..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "Tùy chọn"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "Cấu hình ủy nhiệm"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "Dùng thiết lập ~hệ thống"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "~Dùng kết nối trực tiếp đến Internet"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "Dùng thiết lập tự là~m"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "Ủy nhiệm HT~TP"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "~Cổng"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Công Cụ Báo Cáo Lỗi %PRODUCTNAME% cần phải được kết nối đến Internet để có khả năng gửi báo cáo lỗi.\n\nCông ty thường sử dụng máy phục vụ ủy nhiệm (proxy server) cùng với bức tường lửa (firewall) để bảo vệ mạng cục bộ.\n\nNếu chỗ bạn có trường hợp này, bạn cần phải xác định địa chỉ và cổng cho máy phục vụ đó."
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"Công Cụ Báo Cáo Lỗi %PRODUCTNAME% cần phải được kết nối đến Internet để có "
+"khả năng gửi báo cáo lỗi.\n"
+"\n"
+"Công ty thường sử dụng máy phục vụ ủy nhiệm (proxy server) cùng với bức "
+"tường lửa (firewall) để bảo vệ mạng cục bộ.\n"
+"\n"
+"Nếu chỗ bạn có trường hợp này, bạn cần phải xác định địa chỉ và cổng cho máy "
+"phục vụ đó."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "Đang gửi báo cáo lỗi"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "Trạng thái: đang gửi báo cáo lỗi"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "Trạng thái: báo cáo lỗi đã được gửi."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "Bạn đã đánh dấu chọn trong hộp ở cạnh câu « Tôi cho phép Apache OpenOffice liên hệ với tôi về vấn đề liên quan đến báo cáo lỗi này ».\nXin vui lòng nhập vào địa chỉ email của bạn."
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"Bạn đã đánh dấu chọn trong hộp ở cạnh câu « Tôi cho phép Apache OpenOffice "
+"liên hệ với tôi về vấn đề liên quan đến báo cáo lỗi này ».\n"
+"Xin vui lòng nhập vào địa chỉ email của bạn."
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <mã tiến trình>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Gán mã tiến trình (PID) của %PRODUCTNAME% cho Công cụ báo cáo lỗi"
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "Hiển thị trợ giúp này.\nThông tin chi tiết nằm trong Sổ Tay Thiết Lập."
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"Hiển thị trợ giúp này.\n"
+"Thông tin chi tiết nằm trong Sổ Tay Thiết Lập."

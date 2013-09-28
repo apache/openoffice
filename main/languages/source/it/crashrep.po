@@ -1,200 +1,267 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Notifica errori %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "Benvenuti nel programma di notifica errori di %PRODUCTNAME% %PRODUCTVERSION%."
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr ""
+"Benvenuti nel programma di notifica errori di %PRODUCTNAME% %PRODUCTVERSION%"
+"."
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "Questo strumento di notifica errori raccoglie informazioni sul funzionamento di %PRODUCTNAME% e le invia ad Apache OpenOffice allo scopo di perfezionare le versioni successive del prodotto.\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"Questo strumento di notifica errori raccoglie informazioni sul funzionamento "
+"di %PRODUCTNAME% e le invia ad Apache OpenOffice allo scopo di perfezionare "
+"le versioni successive del prodotto.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "Lo strumento è molto semplice: non dovete far altro che inviare la notifica tramite il pulsante 'Invia' nella finestra di dialogo seguente. Volendo, potete anche dare una breve descrizione dell'errore. Per visualizzare la notifica, fate clic su 'Mostra notifica'. Se preferite non inviare la notifica, fate clic su 'Non inviare'.\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"Lo strumento è molto semplice: non dovete far altro che inviare la notifica "
+"tramite il pulsante 'Invia' nella finestra di dialogo seguente. Volendo, "
+"potete anche dare una breve descrizione dell'errore. Per visualizzare la "
+"notifica, fate clic su 'Mostra notifica'. Se preferite non inviare la "
+"notifica, fate clic su 'Non inviare'.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "Diritto alla privacy\nLe informazioni raccolte si limitano a dati sullo stato di %PRODUCTNAME% %PRODUCTVERSION% al momento dell'errore. Non vengono raccolte informazioni su password o contenuto dei file.\n\nLe informazioni verranno utilizzate solo allo scopo di perfezionare %PRODUCTNAME% e non vengono condivise con terze parti.\nPer maggiori informazioni sul diritto alla privacy di Apache OpenOffice, visitate la pagina\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"Diritto alla privacy\n"
+"Le informazioni raccolte si limitano a dati sullo stato di %PRODUCTNAME% %"
+"PRODUCTVERSION% al momento dell'errore. Non vengono raccolte informazioni su "
+"password o contenuto dei file.\n"
+"\n"
+"Le informazioni verranno utilizzate solo allo scopo di perfezionare %"
+"PRODUCTNAME% e non vengono condivise con terze parti.\n"
+"Per maggiori informazioni sul diritto alla privacy di Apache OpenOffice, "
+"visitate la pagina\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Avanti >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Annulla"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Notifica errori %PRODUCTNAME% %PRODUCTVERSION%"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr "Si è verificato un errore durante l'esecuzione di %PRODUCTNAME% %PRODUCTVERSION%."
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr ""
+"Si è verificato un errore durante l'esecuzione di %PRODUCTNAME% %"
+"PRODUCTVERSION%."
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "La notifica errori %PRODUCTNAME% %PRODUCTVERSION% ha raccolto dati importanti per Apache OpenOffice al fine di perfezionare %PRODUCTNAME%.\nNello spazio sottostante potete indicare un titolo per la notifica e una breve descrizione dell'azione che stavate svolgendo al momento dell'errore. In seguito fate clic su 'Invio'.\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"La notifica errori %PRODUCTNAME% %PRODUCTVERSION% ha raccolto dati "
+"importanti per Apache OpenOffice al fine di perfezionare %PRODUCTNAME%.\n"
+"Nello spazio sottostante potete indicare un titolo per la notifica e una "
+"breve descrizione dell'azione che stavate svolgendo al momento dell'errore. "
+"In seguito fate clic su 'Invio'.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "Che tipo di documento era utilizzato al momento dell'errore (ad esempio Presentazione)?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+"Che tipo di documento era utilizzato al momento dell'errore (ad esempio "
+"Presentazione)?"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr "Autorizzo Apche OpenOffice a mettersi in contatto con me per motivi riguardanti la notifica."
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+"Autorizzo Apche OpenOffice a mettersi in contatto con me per motivi "
+"riguardanti la notifica."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "Inserite il vostro indirizzo e-mail."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "Breve descrizione dell'azione in %PRODUCTNAME% precedente all'errore"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << ~Indietro"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "In~via"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "~Non inviare"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "Most~ra notifica..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "~Salva notifica..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "Salva notifica come"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "Impossibile inviare la notifica errori perché il programma di posta elettronica non supporta MAPI.\nUtilizzate un programma compatibile con MAPI."
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Impossibile inviare la notifica errori perché il programma di posta "
+"elettronica non supporta MAPI.\n"
+"Utilizzate un programma compatibile con MAPI."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "Impossibile inviare la notifica errori in quanto non è stato possibile il salvataggio temporaneo del documento."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
+msgstr ""
+"Impossibile inviare la notifica errori in quanto non è stato possibile il "
+"salvataggio temporaneo del documento."
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "Impossibile inviare la notifica errori in quanto non è stato possibile avviare 'sendmail'.\nControllate le impostazioni di 'sendmail'."
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"Impossibile inviare la notifica errori in quanto non è stato possibile "
+"avviare 'sendmail'.\n"
+"Controllate le impostazioni di 'sendmail'."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "Impossibile inviare la notifica errori. Verificate le impostazioni proxy al menu 'Opzioni' del Programma di notifica errori."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"Impossibile inviare la notifica errori. Verificate le impostazioni proxy al "
+"menu 'Opzioni' del Programma di notifica errori."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "Impossibile inviare la notifica errori in quanto manca il collegamento a Internet. Verificate le impostazioni Internet."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"Impossibile inviare la notifica errori in quanto manca il collegamento a "
+"Internet. Verificate le impostazioni Internet."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "~Opzioni..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "Opzioni"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "Impostazioni Proxy"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "U~sa impostazioni di sistema"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "~Usa il collegamento diretto a Internet"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "Usa impostazioni ~manuali"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "Proxy HT~TP"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "~Porta"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Il programma di notifica errori %PRODUCTNAME% dev'essere collegato a Internet per inviare dati.\n\nMolte aziende usano combinazioni di server proxy e firewall per proteggere la rete.\n\nSe questo è anche il vostro caso, specificate indirizzo e porta del server."
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"Il programma di notifica errori %PRODUCTNAME% dev'essere collegato a "
+"Internet per inviare dati.\n"
+"\n"
+"Molte aziende usano combinazioni di server proxy e firewall per proteggere "
+"la rete.\n"
+"\n"
+"Se questo è anche il vostro caso, specificate indirizzo e porta del server."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "Invio della notifica errori"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "Stato: invio della notifica errori"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "Stato: la notifica errori è stata inviata."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "Avete selezionato l'opzione 'Autorizzo Apache OpenOffice a mettersi in contatto con me per motivi riguardanti questa notifica'.\nIndicate il vostro indirizzo e-mail."
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"Avete selezionato l'opzione 'Autorizzo Apache OpenOffice a mettersi in "
+"contatto con me per motivi riguardanti questa notifica'.\n"
+"Indicate il vostro indirizzo e-mail."
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <identificatore processo>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "Assegna l'identificatore di processo %PRODUCTNAME% (PID) al programma di notifica errori"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Assegna l'identificatore di processo %PRODUCTNAME% (PID) al programma di "
+"notifica errori"
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "Mostra questo testo della Guida.\nInformazioni più dettagliate sono contenute nella Guida all'installazione."
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"Mostra questo testo della Guida.\n"
+"Informazioni più dettagliate sono contenute nella Guida all'installazione."

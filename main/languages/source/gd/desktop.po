@@ -1,708 +1,1252 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Fàilte gu %PRODUCTNAME %PRODUCTVERSION"
 
+#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+msgid "Welcome"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
+msgid "License Agreement"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+msgid "Personal Data"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+msgid "User name"
+msgstr ""
+
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "Ùrachadh air loidhne"
 
+#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+msgid "Registration"
+msgstr ""
+
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Treòraichidh an draoidh seo thu tro aonta a' cheadachais, tar-aiseag an dàta chleachdaiche o %OLD_VERSION agus clàradh %PRODUCTNAME.\n\nBriog air 'Air adhart' gus leantainn air adhart."
+msgid "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Treòraichidh an draoidh seo thu tro aonta a' cheadachais, tar-aiseag an dàta "
+"chleachdaiche o %OLD_VERSION agus clàradh %PRODUCTNAME.\n"
+"\n"
+"Briog air 'Air adhart' gus leantainn air adhart."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Treòraichidh an draoidh seo thu tro chlàradh %PRODUCTNAME.\n\nBriog air 'Air adhart' gus leantainn air adhart."
+msgid "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Treòraichidh an draoidh seo thu tro chlàradh %PRODUCTNAME.\n"
+"\n"
+"Briog air 'Air adhart' gus leantainn air adhart."
+
+#: migration/wizard.src#STR_FINISH.STRING.TEXT
+msgid "~Finish"
+msgstr ""
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "Tha coimhearsnachd %PRODUCTNAME a' fàs nas luaithe na coimhearsnachd sam bith eile a tha an sàs bathar-bog le còd fosgailte 's tha cothrom agad ar cuideachadh a-nis.\n\nMa chlàraicheas tu e, bidh sin 'gar cuideachadh le dearbhadh gu bheil roinn chudromach dhen mhargaid againn.\n\n'S e clàradh saor-thoileach a tha ann agus chan eil uallach clàraidh sam bith ann."
+msgid "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+"Tha coimhearsnachd %PRODUCTNAME a' fàs nas luaithe na coimhearsnachd sam "
+"bith eile a tha an sàs bathar-bog le còd fosgailte 's tha cothrom agad ar "
+"cuideachadh a-nis.\n"
+"\n"
+"Ma chlàraicheas tu e, bidh sin 'gar cuideachadh le dearbhadh gu bheil roinn "
+"chudromach dhen mhargaid againn.\n"
+"\n"
+"'S e clàradh saor-thoileach a tha ann agus chan eil uallach clàraidh sam "
+"bith ann."
 
 #: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "Thachair mearachd le tòiseachadh a' bhrabhsair-lìn.\nThoir sùil air %PRODUCTNAME agus roghainnean a' bhrabhsair-lìn."
+msgid "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"Thachair mearachd le tòiseachadh a' bhrabhsair-lìn.\n"
+"Thoir sùil air %PRODUCTNAME agus roghainnean a' bhrabhsair-lìn."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
-msgid  "Do you really want to decline?"
+msgid "Do you really want to decline?"
 msgstr "A bheil thu cinnteach gu bheil thu airson a dhiùltadh?"
 
+#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Fàilte gu %PRODUCTNAME %PRODUCTVERSION"
+
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Treòraichidh an draoidh seo thu tro aonta a' cheadachais agus clàradh %PRODUCTNAME.\n\nBriog air 'Air adhart' gus leantainn air adhart."
+msgid "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Treòraichidh an draoidh seo thu tro aonta a' cheadachais agus clàradh %"
+"PRODUCTNAME.\n"
+"\n"
+"Briog air 'Air adhart' gus leantainn air adhart."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to accept the license"
+msgid "Please follow these steps to accept the license"
 msgstr "Lean ris na ceuman a leanas gus gabhail ris a' cheadachas"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Seall aonta a' cheadachais gu lèir. Cleachd am bàr-sgrolaidh no am putan '%PAGEDOWN' sa chòmhradh seo gus teacsa iomlan a' cheadachais fhaicinn."
+msgid "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Seall aonta a' cheadachais gu lèir. Cleachd am bàr-sgrolaidh no am putan '%"
+"PAGEDOWN' sa chòmhradh seo gus teacsa iomlan a' cheadachais fhaicinn."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgid "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Briog air 'Gabh ris' gus gabhail ri teirmichean an aonta."
 
+#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "Scroll Do~wn"
+msgstr ""
+
+#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+msgid "~Accept"
+msgstr ""
+
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
-msgid  "~Decline"
+msgid "~Decline"
 msgstr "~Diùlt e"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "Transfer personal data"
+msgid "Transfer personal data"
 msgstr "Tar-aisig an dàta pearsanta"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "Gabhaidh a' mhòrchuid dhen dàta phearsanta o %OLDPRODUCT ath-chleachdadh ann an %PRODUCTNAME %PRODUCTVERSION.\n\nMur eil thu airson roghainn sam bith dheth ath-chleachdadh ann an %PRODUCTNAME %PRODUCTVERSION, thoir air falbh a' chromag on bhogsa."
+msgid "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+"Gabhaidh a' mhòrchuid dhen dàta phearsanta o %OLDPRODUCT ath-chleachdadh ann "
+"an %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Mur eil thu airson roghainn sam bith dheth ath-chleachdadh ann an %"
+"PRODUCTNAME %PRODUCTVERSION, thoir air falbh a' chromag on bhogsa."
+
+#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
+msgid "Transfer personal data"
+msgstr "Tar-aisig an dàta pearsanta"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
+msgid "Online Update"
+msgstr "Ùrachadh air loidhne"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "Bheir %PRODUCTNAME sùil leis fhèin an-dràsta 's a-rithist ach a bheil tionndadh ùr ann.\nCha dèid dàta pearsanta sam bith a chur a-null rè ùrachaidh air loidhne.\nGheibh thu fios cho luath 's a bhios ùrachadh ri fhaighinn.\n\n'S urrainn dhut am feart seo a rèiteachadh fo Innealan / Roghainnean... / %PRODUCTNAME / Ùrachadh air loidhne."
+msgid "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+"Bheir %PRODUCTNAME sùil leis fhèin an-dràsta 's a-rithist ach a bheil "
+"tionndadh ùr ann.\n"
+"Cha dèid dàta pearsanta sam bith a chur a-null rè ùrachaidh air loidhne.\n"
+"Gheibh thu fios cho luath 's a bhios ùrachadh ri fhaighinn.\n"
+"\n"
+"'S urrainn dhut am feart seo a rèiteachadh fo Innealan / Roghainnean... / %"
+"PRODUCTNAME / Ùrachadh air loidhne."
+
+#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
+msgid "~Check for updates automatically"
+msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
-msgid  "Provide your full name and initials below"
+msgid "Provide your full name and initials below"
 msgstr "Cuir a-steach d' ainm iomlan 's tùs-itrichean d' ainm gu h-ìosal"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
-msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr "Thèid an t-ainm cleachdaiche a chleachdadh ann am fiosrachadh de sgrìobhainnean, teamplaidean agus nuair a chlàraicheas tu atharrachaidhean a chuir thu air sgrìobhainnean."
+msgid "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+"Thèid an t-ainm cleachdaiche a chleachdadh ann am fiosrachadh de "
+"sgrìobhainnean, teamplaidean agus nuair a chlàraicheas tu atharrachaidhean a "
+"chuir thu air sgrìobhainnean."
+
+#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+msgid "~First name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+msgid "~Last name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
+msgid "~Initials"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+msgid "~Father's name"
+msgstr ""
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME Registration"
+msgid "%PRODUCTNAME Registration"
 msgstr "Clàradh %PRODUCTNAME"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "Tha cothrom agad a-nis clàradh mar chleachdaiche %PRODUCTNAME. 'S e clàradh saor-thoileach a tha ann agus chan eil uallach sam bith 'na chois.\n\nMa chlàraicheas tu, 's urrainn dhuinn fios a chumail riut mu leasachaidhean a' bhathair seo."
+msgid "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+"Tha cothrom agad a-nis clàradh mar chleachdaiche %PRODUCTNAME. 'S e clàradh "
+"saor-thoileach a tha ann agus chan eil uallach sam bith 'na chois.\n"
+"\n"
+"Ma chlàraicheas tu, 's urrainn dhuinn fios a chumail riut mu leasachaidhean "
+"a' bhathair seo."
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
-msgid  "I want to register ~now"
+msgid "I want to register ~now"
 msgstr "Bu toigh leam clàradh a~n-dràsta"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
-msgid  "I want to register ~later"
+msgid "I want to register ~later"
 msgstr "Bu toigh ~leam clàradh an ceann tàmaill"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
-msgid  "I do not want to ~register"
+msgid "I do not want to ~register"
 msgstr "Chan eil mi airson clà~radh"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "Tha sinn an dòchas gum bi thu air do làn-dòigh ag obair le %PRODUCTNAME.\n\nGus an draoidh fhàgail, briog air 'Crìochnaich'."
+msgid "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+"Tha sinn an dòchas gum bi thu air do làn-dòigh ag obair le %PRODUCTNAME.\n"
+"\n"
+"Gus an draoidh fhàgail, briog air 'Crìochnaich'."
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
-msgid  "Should the file \"$1\" be restored?"
+msgid "Should the file \"$1\" be restored?"
 msgstr "A bheil thu airson am faidhle \"$1\" aiseag?"
 
+#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
+msgid "File Recovery"
+msgstr ""
+
 #: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "Thachair mearachd nach gabh aiseag.\n\nChaidh gach faidhle a dh'atharraich thu a shàbhaladh agus is\nmathaid gun gabh an aiseag nuair a thòisicheas am prògram a-rithist."
+msgid "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr ""
+"Thachair mearachd nach gabh aiseag.\n"
+"\n"
+"Chaidh gach faidhle a dh'atharraich thu a shàbhaladh agus is\n"
+"mathaid gun gabh an aiseag nuair a thòisicheas am prògram a-rithist."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
-msgid  "The application cannot be started. "
+msgid "The application cannot be started. "
 msgstr "Cha ghabh am prògram a thòiseachadh. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
-msgid  "The configuration directory \"$1\" could not be found."
+msgid "The configuration directory \"$1\" could not be found."
 msgstr "Cha deach an t-eòlaire rèiteachaidh \"$1\" a lorg."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
-msgid  "The installation path is invalid."
+msgid "The installation path is invalid."
 msgstr "Tha slighe an stàlaidh mì-dhligheach."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
-msgid  "The installation path is not available."
+msgid "The installation path is not available."
 msgstr "Chan eil slighe an stàlaidh ri làimh."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
-msgid  "An internal error occurred."
+msgid "An internal error occurred."
 msgstr "Thachair mearachd inntearnail."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
-msgid  "The configuration file \"$1\" is corrupt."
+msgid "The configuration file \"$1\" is corrupt."
 msgstr "Tha am faidhle rèiteachaidh \"$1\" air a thruailleadh."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
-msgid  "The configuration file \"$1\" was not found."
+msgid "The configuration file \"$1\" was not found."
 msgstr "Cha deach am faidhle rèiteachaidh \"$1\" a lorg."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
-msgid  "The configuration file \"$1\" does not support the current version."
-msgstr "Chan eil am faidhle rèiteachaidh \"$1\" a' cur taic ris an tionndadh làithreach."
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr ""
+"Chan eil am faidhle rèiteachaidh \"$1\" a' cur taic ris an tionndadh "
+"làithreach."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
-msgid  "The user interface language cannot be determined."
+msgid "The user interface language cannot be determined."
 msgstr "Cha ghabh cànan na h-eadar-aghaidh a thomhas."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
-msgid  "The component manager is not available."
+msgid "The component manager is not available."
 msgstr "Chan eil manaidsear nan co-phàirtean ri làimh."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
-msgid  "The configuration service is not available."
+msgid "The configuration service is not available."
 msgstr "Chan eil an t-seirbheis rèiteachaidh ri làimh."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
-msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr "Tha ionstans eile dheth a' ruith ann an seisean tèirmineil. Dùin sin is feuch ris a-rithist."
+msgid "You have another instance running in a different terminal session. Close that instance and then try again."
+msgstr ""
+"Tha ionstans eile dheth a' ruith ann an seisean tèirmineil. Dùin sin is "
+"feuch ris a-rithist."
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
-msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "Tòisich am prògram suidheachaidh gus an stàladh a chàradh on CD no on phasgan anns a bheil na pacaidean stàlaidh."
+msgid "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr ""
+"Tòisich am prògram suidheachaidh gus an stàladh a chàradh on CD no on "
+"phasgan anns a bheil na pacaidean stàlaidh."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
-msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr "Tha na roghainnean tòiseachaidh a chum inntrigidh dhan phrìomh-rèiteachadh neo-iomlan. "
+msgid "The startup settings for accessing the central configuration are incomplete. "
+msgstr ""
+"Tha na roghainnean tòiseachaidh a chum inntrigidh dhan phrìomh-rèiteachadh "
+"neo-iomlan. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
-msgid  "A connection to the central configuration could not be established. "
+msgid "A connection to the central configuration could not be established. "
 msgstr "Cha ghabh ceangal dhan phrìomh-rèiteachadh a dhèanamh. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
-msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr "Chan urrainn dhut inntrigeadh a dhèanamh dhan phrìomh-rèiteachadh a chionn 's gu bheil còraichean inntrigidh a dhìth. "
+msgid "You cannot access the central configuration because of missing access rights. "
+msgstr ""
+"Chan urrainn dhut inntrigeadh a dhèanamh dhan phrìomh-rèiteachadh a chionn "
+"'s gu bheil còraichean inntrigidh a dhìth. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
-msgid  "A general error occurred while accessing your central configuration. "
-msgstr "Thachair mearachd choitcheann rè inntrigidh dhan phrìomh-rèiteachadh agad. "
+msgid "A general error occurred while accessing your central configuration. "
+msgstr ""
+"Thachair mearachd choitcheann rè inntrigidh dhan phrìomh-rèiteachadh agad. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
-msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "Cha ghabh na h-atharrachaidhean a chuir thu air na roghainnean pearsanta agad a stòradh gu meadhanach a chionn 's gu bheil còraichean a dhìth. "
+msgid "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr ""
+"Cha ghabh na h-atharrachaidhean a chuir thu air na roghainnean pearsanta "
+"agad a stòradh gu meadhanach a chionn 's gu bheil còraichean a dhìth. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "Cha ghabh %PRODUCTNAME a thòiseachadh air sgàth mearachd rè an inntrigidh dhan dàta rèiteachaidh aig %PRODUCTNAME.\n\nBruidhinn ri rianaire an t-siostaim agad."
+msgid "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+"Cha ghabh %PRODUCTNAME a thòiseachadh air sgàth mearachd rè an inntrigidh "
+"dhan dàta rèiteachaidh aig %PRODUCTNAME.\n"
+"\n"
+"Bruidhinn ri rianaire an t-siostaim agad."
+
+#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
+msgid "The following internal error has occurred: "
+msgstr ""
 
 #: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "Tha fear eile de %PRODUCTNAME a' dèanamh inntrigeadh dha na roghainnean pearsanta agad air neo tha na roghainnean pearsanta agad glaiste.\nMa nithear inntrigeadh iomadh turas aig an aon àm, faodaidh gum fàs na roghainnean pearsanta agad mì-chòrdail. Mus lean thu air adhart, bu chòir dhut dèanamh cinnteach gun dùin an cleachdaiche '$u' %PRODUCTNAME air an òstair '$h'.\n\nA bheil thu airson leantainn air adhart?"
+msgid "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr ""
+"Tha fear eile de %PRODUCTNAME a' dèanamh inntrigeadh dha na roghainnean "
+"pearsanta agad air neo tha na roghainnean pearsanta agad glaiste.\n"
+"Ma nithear inntrigeadh iomadh turas aig an aon àm, faodaidh gum fàs na "
+"roghainnean pearsanta agad mì-chòrdail. Mus lean thu air adhart, bu chòir "
+"dhut dèanamh cinnteach gun dùin an cleachdaiche '$u' %PRODUCTNAME air an "
+"òstair '$h'.\n"
+"\n"
+"A bheil thu airson leantainn air adhart?"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
-msgid  "Printing is disabled. No documents can be printed."
-msgstr "Tha an clò-bhualadh à comas. Cha ghabh sgrìobhainn sam bith a chlò-bhualadh."
+msgid "Printing is disabled. No documents can be printed."
+msgstr ""
+"Tha an clò-bhualadh à comas. Cha ghabh sgrìobhainn sam bith a chlò-bhualadh."
 
 #: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr "Dh'fhalbh an ùine air an tionndadh luachaidh. Airson barrachd fiosrachaidh mu %PRODUCTNAME,\ntadhail air http://www.openoffice.org"
+msgid "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
+"Dh'fhalbh an ùine air an tionndadh luachaidh. Airson barrachd fiosrachaidh "
+"mu %PRODUCTNAME,\n"
+"tadhail air http://www.openoffice.org"
+
+#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
-msgid  "The path manager is not available.\n"
+msgid "The path manager is not available.\n"
 msgstr "Chan eil manaidsear nan slighean ri làimh.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Cha ghabh stàladh cleachdaiche %PRODUCTNAME a choileanadh a chionn 's nach robh àite gu leòr ann. Saor barrachd àite air an diosg aig an àite a leanas agus tòisich %PRODUCTNAME a-rithist:\n\n"
+msgid "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Cha ghabh stàladh cleachdaiche %PRODUCTNAME a choileanadh a chionn 's nach "
+"robh àite gu leòr ann. Saor barrachd àite air an diosg aig an àite a leanas "
+"agus tòisich %PRODUCTNAME a-rithist:\n"
+"\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Cha do ghabh stàladh cleachdaiche %PRODUCTNAME a phròiseasadh a chionn 's gu bheil còraichean inntrigidh a dhìth. Dèan cinnteach gu bheil na còraichean inntrigidh ceart agad airson an àite a leanas is tòisich %PRODUCTNAME a-rithist:\n\n"
+msgid "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Cha do ghabh stàladh cleachdaiche %PRODUCTNAME a phròiseasadh a chionn 's gu "
+"bheil còraichean inntrigidh a dhìth. Dèan cinnteach gu bheil na còraichean "
+"inntrigidh ceart agad airson an àite a leanas is tòisich %PRODUCTNAME "
+"a-rithist:\n"
+"\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
-msgid  "Extension Software License Agreement of $NAME:"
+msgid "Extension Software License Agreement of $NAME:"
 msgstr "Aonta Ceadachas Bathar-Bog Leudachan $NAME:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr "Leugh Aonta a' Cheadachais gu lèir a chì thu gu h-àrd. Gabh ri Aonta a' Cheadachais 's a' cur a-steach \"Gabh ris\" air a' chonsoil agus put Return an uairsin. Cuir a-steach \"Diùlt e\" gus a dhiùltadh agus sgur de shuidheachadh an leudachain."
+msgid "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr ""
+"Leugh Aonta a' Cheadachais gu lèir a chì thu gu h-àrd. Gabh ri Aonta a' "
+"Cheadachais 's a' cur a-steach \"Gabh ris\" air a' chonsoil agus put Return an "
+"uairsin. Cuir a-steach \"Diùlt e\" gus a dhiùltadh agus sgur de shuidheachadh "
+"an leudachain."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
-msgid  "[Enter \"yes\" or \"no\"]:"
+msgid "[Enter \"yes\" or \"no\"]:"
 msgstr "[Cuir a-steach \"Gabh ris\" no \"Diùlt e\"]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
-msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Chuir thu a-steach rud cearr. Cuir a-steach \"Gabh ris\" no \"Diùlt e\":"
 
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+msgid "YES"
+msgstr ""
+
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
-msgid  "Y"
+msgid "Y"
 msgstr "G"
 
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+msgid "NO"
+msgstr ""
+
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "D"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
-msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr "Cha ghabh unopkg a thòiseachadh. 'S ciall dhan ghlas gu bheil e 'na ruith mu thràth. Mur eil e 'na ruith, sguab às am faidhle glasaidh aig:"
+msgid "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
+"Cha ghabh unopkg a thòiseachadh. 'S ciall dhan ghlas gu bheil e 'na ruith mu "
+"thràth. Mur eil e 'na ruith, sguab às am faidhle glasaidh aig:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
-msgid  "ERROR: "
+msgid "ERROR: "
 msgstr "MEARACHD: "
 
+#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+msgid "Unknown"
+msgstr ""
+
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
-msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr "Feumaidh an leudachan seo Apache OpenOffice %VERSION air a' char as lugha"
+msgid "Extension requires at least Apache OpenOffice %VERSION"
+msgstr ""
+"Feumaidh an leudachan seo Apache OpenOffice %VERSION air a' char as lugha"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
-msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr "Chan eil an leudachan seo a' cur taic ri tionndaidhean a tha nas ùire na Apache OpenOffice %VERSION"
+msgid "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgstr ""
+"Chan eil an leudachan seo a' cur taic ri tionndaidhean a tha nas ùire na "
+"Apache OpenOffice %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
-msgid  "%PRODUCTNAME Basic Library"
+msgid "%PRODUCTNAME Basic Library"
 msgstr "Leabhar-lann bhunasach %PRODUCTNAME"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
-msgid  "Dialog Library"
+msgid "Dialog Library"
 msgstr "Leabhar-lann nan còmhraidhean"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
-msgid  "The library name could not be determined."
+msgid "The library name could not be determined."
 msgstr "Cha do ghabh ainm na leabhar-lainn a dhearbhadh."
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
-msgid  "This library name already exists. Please choose a different name."
+msgid "This library name already exists. Please choose a different name."
 msgstr "Tha an t-ainm seo air leabhar-lann eile mu thràth. Tagh ainm eile."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
-msgid  "Enabling: "
+msgid "Enabling: "
 msgstr "A' cur an comas: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
-msgid  "Disabling: "
+msgid "Disabling: "
 msgstr "A' cur à comas: "
 
+#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+msgid "Cannot detect media-type: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+msgid "This media-type is not supported: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+msgid "An error occurred while enabling: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+msgid "An error occurred while disabling: "
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
+msgid "Configuration Schema"
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
+msgid "Configuration Data"
+msgstr ""
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
-msgid  "The extension cannot be installed because:\n"
+msgid "The extension cannot be installed because:\n"
 msgstr "Cha do ghabh an leudachan seo a stàladh air sgàth:\n"
 
+#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
+msgid "The extension will not be installed because an error occurred in the Help files:\n"
+msgstr ""
+
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
-msgid  "%MACROLANG Library"
+msgid "%MACROLANG Library"
 msgstr "Leabhar-lann %MACROLANG"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
-msgid  "Extension"
+msgid "Extension"
 msgstr "Leudachan"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
-msgid  "UNO Dynamic Library Component"
+msgid "UNO Dynamic Library Component"
 msgstr "Co-phàirt leabhar-lainn innsgineach UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
-msgid  "UNO Java Component"
+msgid "UNO Java Component"
 msgstr "Co-phàirt Java UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
-msgid  "UNO Python Component"
+msgid "UNO Python Component"
 msgstr "Co-phàirt Python UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
-msgid  "UNO Components"
+msgid "UNO Components"
 msgstr "Co-phàirtean UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
-msgid  "UNO RDB Type Library"
+msgid "UNO RDB Type Library"
 msgstr "Leabhar-lann sheòrsaichean UNO RDB"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
-msgid  "UNO Java Type Library"
+msgid "UNO Java Type Library"
 msgstr "Leabhar-lann sheòrsaichean UNO Java"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
-msgid  "Copying: "
+msgid "Copying: "
 msgstr "A' dèanamh lethbhreac: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
-msgid  "Error while adding: "
+msgid "Error while adding: "
 msgstr "Mearachd 'ga chur ris: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
-msgid  "Error while removing: "
+msgid "Error while removing: "
 msgstr "Mearachd 'ga thoirt air falbh: "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
-msgid  "Extension has already been added: "
+msgid "Extension has already been added: "
 msgstr "Chaidh an leudachan a chur ris mu thràth: "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
-msgid  "There is no such extension deployed: "
+msgid "There is no such extension deployed: "
 msgstr "Chan eil leudachan d' a leithid an sàs: "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
-msgid  "Synchronizing repository for %NAME extensions"
+msgid "Synchronizing repository for %NAME extensions"
 msgstr "A' sioncronachadh stòr-lann nan leudachan %NAME"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha tionndadh nas ùire, $DEPLOYED, air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha tionndadh nas ùire, $DEPLOYED, air a stàladh mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha tionndadh nas ùire, $DEPLOYED, 's air a bheil \\'$OLDNAME\\' air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha tionndadh nas ùire, $DEPLOYED, 's air a bheil \\'$OLDNAME\\' air a stàladh "
+"mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha an tionndadh sin air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha an tionndadh sin air a stàladh mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha an tionndadh sin (air a bheil \\'$OLDNAME\\') air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha an tionndadh sin (air a bheil \\'$OLDNAME\\') air a stàladh mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha tionndadh nas sine, $DEPLOYED, air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha tionndadh nas sine, $DEPLOYED, air a stàladh mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\nTha tionndadh nas sine, $DEPLOYED, 's air a bheil \\'$OLDNAME\\' air a stàladh mu thràth.\nBriog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis tionndadh $NEW an leudachain \\'$NAME\\' a stàladh.\n"
+"Tha tionndadh nas sine, $DEPLOYED, 's air a bheil \\'$OLDNAME\\' air a stàladh "
+"mu thràth.\n"
+"Briog air \\'Ceart ma-thà\\' gus a chur an àite an leudachain a tha air a "
+"stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+
+#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
+msgid "System dependencies check"
+msgstr ""
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "Cha ghabh an leudachan a stàladh a chionn 's nach eil \nan siostam a' coileanadh nan eisimeileachdan a leanas:"
+msgid "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+"Cha ghabh an leudachan a stàladh a chionn 's nach eil \n"
+"an siostam a' coileanadh nan eisimeileachdan a leanas:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
-msgid  "Add Extension(s)"
+msgid "Add Extension(s)"
 msgstr "Cuir leudacha(i)n ris"
 
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
+msgid "~Remove"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
+msgid "~Enable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
+msgid "~Disable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
+msgid "~Update..."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
+msgid "~Options..."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "A' cur ris %EXTENSION_NAME"
 
+#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
+msgid "Removing %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
+msgid "Enabling %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
+msgid "Disabling %EXTENSION_NAME"
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
-msgid  "Accept license for %EXTENSION_NAME"
+msgid "Accept license for %EXTENSION_NAME"
 msgstr "Gabh ris a' cheadachas airson %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
-msgid  "~For all users"
+msgid "~For all users"
 msgstr "A~s leth gach cleachdaiche"
 
+#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
+msgid "~Only for me"
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
-msgid  "Error: The status of this extension is unknown"
+msgid "Error: The status of this extension is unknown"
 msgstr "Mearachd: Chan eil fios dè an inbhe aig an leudachan seo"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Dùin"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
-msgid  "Quit"
+msgid "Quit"
 msgstr "Fàg an-seo"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "Chaidh %PRODUCTNAME ùrachadh gu tionndadh ùr. Chan eil cuid dhen na leudachain cho-roinnte aig %PRODUCTNAME co-chòrdail leis an tionndadh seo agus tha iad feumach air ùrachadh mus tòisich %PRODUCTNAME.\n\nBidh feum air pribhleidean rianaire a chum stàladh de leudachain cho-roinnte. Bruidhinn ri rianaire an t-siostaim agad gus na leudachain cho-roinnte a leanas ùrachadh:"
+msgid "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
+"Chaidh %PRODUCTNAME ùrachadh gu tionndadh ùr. Chan eil cuid dhen na "
+"leudachain cho-roinnte aig %PRODUCTNAME co-chòrdail leis an tionndadh seo "
+"agus tha iad feumach air ùrachadh mus tòisich %PRODUCTNAME.\n"
+"\n"
+"Bidh feum air pribhleidean rianaire a chum stàladh de leudachain cho-"
+"roinnte. Bruidhinn ri rianaire an t-siostaim agad gus na leudachain cho-"
+"roinnte a leanas ùrachadh:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
-msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr "Cha ghabh an leudachan a chur an comas a chionn 's nach eil na h-eisimeileachdan siostaim a leanas air a choileanadh:"
+msgid "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr ""
+"Cha ghabh an leudachan a chur an comas a chionn 's nach eil na "
+"h-eisimeileachdan siostaim a leanas air a choileanadh:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr "Tha an leudachan seo à comas a chionn 's nach do ghabh thu ris a cheadachas fhathast.\n"
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "Tha an leudachan seo à comas a chionn 's nach do ghabh thu ris a cheadachas "
+"fhathast.\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
-msgid  "Show license"
+msgid "Show license"
 msgstr "Seall an ceadachas"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
+msgid "Extension Software License Agreement"
 msgstr "Aonta Ceadachas Bathar-Bog an Leudachain"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr "Lean ris na ceuman a leanas gus leantainn air adhart le stàladh an leudachain:"
+msgid "Please follow these steps to proceed with the installation of the extension:"
+msgstr ""
+"Lean ris na ceuman a leanas gus leantainn air adhart le stàladh an "
+"leudachain:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr "Leugh Aonta a' Cheadachais air fad. Cleachd am bàr-sgrolaidh no am putan \\'Sgrolaich sìos\\' sa chòmhradh seo gus teacsa a' cheadachais gu lèir a leughadh."
+msgid "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
+msgstr ""
+"Leugh Aonta a' Cheadachais air fad. Cleachd am bàr-sgrolaidh no am putan "
+"\\'Sgrolaich sìos\\' sa chòmhradh seo gus teacsa a' cheadachais gu lèir a "
+"leughadh."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr "Gabh ri Aonta a' Cheadachais airson an leudachain 's tu a' putadh air a' phutan \\'Gabh ris\\'."
+msgid "Accept the License Agreement for the extension by pressing the \'Accept\' button."
+msgstr ""
+"Gabh ri Aonta a' Cheadachais airson an leudachain 's tu a' putadh air a' "
+"phutan \\'Gabh ris\\'."
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "~Scroll Down"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
+msgid "Accept"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "Diùlt e"
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
+msgid "Extension Software License Agreement"
+msgstr "Aonta Ceadachas Bathar-Bog an Leudachain"
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Dùin"
+
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Tha thu an impis an leudachan \\'%NAME\\' a stàladh.\nBriog air \\'Ceart ma-thà\\' gus leantainn air adhart leis an stàladh.\nBriog air \\'Sguir dheth\\' gus sgur dhen stàladh."
+msgid "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Tha thu an impis an leudachan \\'%NAME\\' a stàladh.\n"
+"Briog air \\'Ceart ma-thà\\' gus leantainn air adhart leis an stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur dhen stàladh."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Tha thu an impis an leudachan \\'%NAME\\' a thoirt air falbh.\nBriog air \\'Ceart ma-thà\\' gus an leudachan a thoirt air falbh.\nBriog air \\'Sguir dheth\\' gus sgur de thoirt air falbh an leudachain."
+msgid "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Tha thu an impis an leudachan \\'%NAME\\' a thoirt air falbh.\n"
+"Briog air \\'Ceart ma-thà\\' gus an leudachan a thoirt air falbh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur de thoirt air falbh an leudachain."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh cleachdaiche.\nBriog air \\'Ceart ma-thà\\' gus an leudachan a thoirt air falbh.\nBriog air \\'Sguir dheth\\' gus sgur de thoirt air falbh an leudachain."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair "
+"a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh "
+"cleachdaiche.\n"
+"Briog air \\'Ceart ma-thà\\' gus an leudachan a thoirt air falbh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur de thoirt air falbh an leudachain."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr "Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh cleachdaiche.\nBriog air \\'Ceart ma-thà\\' gus an leudachan a chur an comas.\nBriog air \\'Sguir dheth\\' gus sgur de chur an comas an leudachain."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+"Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair "
+"a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh "
+"cleachdaiche.\n"
+"Briog air \\'Ceart ma-thà\\' gus an leudachan a chur an comas.\n"
+"Briog air \\'Sguir dheth\\' gus sgur de chur an comas an leudachain."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr "Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh cleachdaiche.\nBriog air \\'Ceart ma-thà\\' gus an leudachan a chur à comas.\nBriog air \\'Sguir dheth\\' gus sgur de chur à comas an leudachain."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+"Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair "
+"a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh "
+"cleachdaiche.\n"
+"Briog air \\'Ceart ma-thà\\' gus an leudachan a chur à comas.\n"
+"Briog air \\'Sguir dheth\\' gus sgur de chur à comas an leudachain."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
-msgid  "The extension \\'%Name\\' does not work on this computer."
+msgid "The extension \'%Name\' does not work on this computer."
 msgstr "Chan eil an leudachan \\'%Name\\' ag obair air a' choimpiutair seo."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
-msgid  "Download and Installation"
+msgid "Download and Installation"
 msgstr "Luchdadh a-nuas is stàladh"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
-msgid  "Downloading extensions..."
+msgid "Downloading extensions..."
 msgstr "A' luchdadh a-nuas nan leudachan..."
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
+msgid "Result"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Ceart ma-thà"
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
+msgid "Cancel Update"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
-msgid  "Installing extensions..."
+msgid "Installing extensions..."
 msgstr "A' stàladh nan leudachan..."
 
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
+msgid "Installation finished"
+msgstr ""
+
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
-msgid  "No errors."
+msgid "No errors."
 msgstr "Cha robh mearachd sam bith ann."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
-msgid  "Error while downloading extension %NAME. "
+msgid "Error while downloading extension %NAME. "
 msgstr "Mearachd rè luchdadh a-nuas an leudachain %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
-msgid  "The error message is: "
+msgid "The error message is: "
 msgstr "Seo teachdaireachd na mearachd: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
-msgid  "Error while installing extension %NAME. "
+msgid "Error while installing extension %NAME. "
 msgstr "Mearachd rè stàladh an leudachain %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
-msgid  "The license agreement for extension %NAME was refused. "
+msgid "The license agreement for extension %NAME was refused. "
 msgstr "Chaidh aonta a' cheadachais airson an leudachain %NAME a dhiùltadh. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
-msgid  "The extension will not be installed."
+msgid "The extension will not be installed."
 msgstr "Cha dèid an leudachan a stàladh."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
-msgid  "Extension Update"
+msgid "Extension Update"
 msgstr "Ùrachadh leudachain"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
+msgid "Checking..."
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
-msgid  "~Available extension updates"
+msgid "~Available extension updates"
 msgstr "Ùr~achaidhean de leudachain a tha ri fhaighinn"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
+msgid "~Show all updates"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
+msgid "Description"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
+msgid "Publisher:"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
+msgid "What is new:"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
-msgid  "Release Notes"
+msgid "Release Notes"
 msgstr "Nòtaichean sgaoilidh"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
+msgid "~Install"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Dùin"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
-msgid  "No new updates are available."
+msgid "No new updates are available."
 msgstr "Cha eil ùrachadh ri fhaighinn."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
-msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr "Chan eil ùrachadh sam bith ann a ghabhas stàladh. Gus an fheadhainn fhaicinn a chaidh a leigeil seachad no a chaidh a chur à comas, cuir cromag sa bhogsa 'Seall gach ùrachadh'."
+msgid "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+"Chan eil ùrachadh sam bith ann a ghabhas stàladh. Gus an fheadhainn fhaicinn "
+"a chaidh a leigeil seachad no a chaidh a chur à comas, cuir cromag sa "
+"bhogsa 'Seall gach ùrachadh'."
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
+msgid "An error occurred:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
-msgid  "Unknown error."
+msgid "Unknown error."
 msgstr "Thachair mearachd neo-aithnichte."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
-msgid  "No more details are available for this update."
+msgid "No more details are available for this update."
 msgstr "Chan eil fiosrachadh a bharrachd ri fhaighinn airson an ùrachaidh seo."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
-msgid  "The extension cannot be updated because:"
+msgid "The extension cannot be updated because:"
 msgstr "Cha ghabh an leudachadh ùrachadh oir:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
-msgid  "Required Apache OpenOffice version doesn't match:"
+msgid "Required Apache OpenOffice version doesn't match:"
 msgstr "Chan eil an tionndadh iomchaidh de Apache OpenOffice agad:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
-msgid  "You have Apache OpenOffice %VERSION"
+msgid "You have Apache OpenOffice %VERSION"
 msgstr "Tha Apache OpenOffice %VERSION agad"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
-msgid  "browser based update"
+msgid "browser based update"
 msgstr "Ùrachadh stèidhichte air brabhsair"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
+msgid "Version"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
-msgid  "Ignore this Update"
+msgid "Ignore this Update"
 msgstr "Leig seachad an t-ùrachadh seo"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
-msgid  "Ignore all Updates"
+msgid "Ignore all Updates"
 msgstr "Leig seachad a h-uile ùrachadh"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
-msgid  "Enable Updates"
+msgid "Enable Updates"
 msgstr "Cuir ùrachaidhean an comas"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
-msgid  "This update will be ignored.\n"
+msgid "This update will be ignored.\n"
 msgstr "Thèid an t-ùrachadh seo a leigeil seachad.\n"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr "Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh cleachdaiche.\nBriog air \\'Ceart ma-thà\\' gus na leudachain a stàladh.\nBriog air \\'Sguir dheth\\' gus sgur de dh'ùrachadh nan leudachan."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+"Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair "
+"a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh "
+"cleachdaiche.\n"
+"Briog air \\'Ceart ma-thà\\' gus na leudachain a stàladh.\n"
+"Briog air \\'Sguir dheth\\' gus sgur de dh'ùrachadh nan leudachan."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
-msgid  "Extension Manager"
+msgid "Extension Manager"
 msgstr "Manaidsear nan leudachan"
 
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
+msgid "~Add..."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "T~hoir sùil airson ùrachaidhean..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
-msgid  "Get more extensions online..."
+msgid "Get more extensions online..."
 msgstr "Faigh barrachd leudachan air loidhne..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "A' cur ris %EXTENSION_NAME"
 
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Dùin"
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
-msgid  "Extension Update Required"
+msgid "Extension Update Required"
 msgstr "Tha feum air ùrachadh an leudachain"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr "Chaidh %PRODUCTNAME ùrachadh gu tionndadh ùr. Chan eil cuid dhe na leudachain aig %PRODUCTNAME a tha air an stàladh co-chòrdail leis an tionndadh seo 's bidh agad ris an ùrachadh mus obraich iad."
+msgid "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+"Chaidh %PRODUCTNAME ùrachadh gu tionndadh ùr. Chan eil cuid dhe na "
+"leudachain aig %PRODUCTNAME a tha air an stàladh co-chòrdail leis an "
+"tionndadh seo 's bidh agad ris an ùrachadh mus obraich iad."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+msgid "Adding %EXTENSION_NAME"
+msgstr "A' cur ris %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+msgid "Check for ~Updates..."
+msgstr "T~hoir sùil airson ùrachaidhean..."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
+msgid "Disable all"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh cleachdaiche\n\nCò air a shon a thèid an leudachan a stàladh?\n"
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+"Dèan cinnteach nach eil daoine eile ag obair leis an aon %PRODUCTNAME nuair "
+"a dh'atharraicheas tu leudachain cho-roinnte ann an àrainneachd le iomadh "
+"cleachdaiche\n"
+"\n"
+"Cò air a shon a thèid an leudachan a stàladh?\n"
+
+#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
+msgid "Installation Status"
+msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
-msgid  "Installation is optimized for clients."
+msgid "Installation is optimized for clients."
 msgstr "Thèid an stàladh a phiseachadh airson cliantan."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
-msgid  "Installation is optimized for servers."
+msgid "Installation is optimized for servers."
 msgstr "Thèid an stàladh a phiseachadh airson frithealaichean."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
-msgid  "Cannot find Office installation."
+msgid "Cannot find Office installation."
 msgstr "Cha ghabh stàladh Office a lorg."
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
-msgid  "Setup"
+msgid "Setup"
 msgstr "Suidheachadh"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
-msgid  "The %PRODUCTNAME Setup"
+msgid "The %PRODUCTNAME Setup"
 msgstr "Suidheachadh %PRODUCTNAME"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
-msgid  "Out of Memory"
+msgid "Out of Memory"
 msgstr "Gun chuimhne air fhàgail"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
-msgid  "Setup was unable to find the msi package."
+msgid "Setup was unable to find the msi package."
 msgstr "Cha b' urrainn dhan t-suidheachadh a' phacaid msi a lorg."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
-msgid  "Setup was cancelled"
+msgid "Setup was cancelled"
 msgstr "Chaidh sgur dhen t-suidheachadh"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
-msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr "Tha feum air pribhleidean rianadair a gus am Windows Installer ùrachadh."
+msgid "Administrator privileges are required for upgrading the Windows Installer."
+msgstr ""
+"Tha feum air pribhleidean rianadair a gus am Windows Installer ùrachadh."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
-msgid  "Setup was unable to find the file '%s'."
+msgid "Setup was unable to find the file '%s'."
 msgstr "Cha b' urrainn dhan t-suidheachadh am faidhle '%s' a lorg."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
-msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr "Roghainn mhì-dhligheach '%s' san loidhne àithne. Cleachd '/?' airson barrachd fiosrachaidh."
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr ""
+"Roghainn mhì-dhligheach '%s' san loidhne àithne. Cleachd '/?' airson "
+"barrachd fiosrachaidh."
 
 #: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "Feumaidh a' phacaid seo an tionndadh '%s' dhen Windows Installer air a' char as lugha.\nTha Windows Installer '%s' agad air an t-siostam seo!"
+msgid "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+"Feumaidh a' phacaid seo an tionndadh '%s' dhen Windows Installer air a' char "
+"as lugha.\n"
+"Tha Windows Installer '%s' agad air an t-siostam seo!"
 
 #: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "Feumaidh a' phacaid seo am Windows Installer.\nFeumaidh tu Windows Installer '%s' air an t-siostam seo, no fear nas ùire!"
+msgid "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+"Feumaidh a' phacaid seo am Windows Installer.\n"
+"Feumaidh tu Windows Installer '%s' air an t-siostam seo, no fear nas ùire!"
 
 #: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "Cleachdadh:\n   /? :  Seallaidh seo an còmhradh seo.\n   /a :  Nì seo stàladh rianachd.\n   /j[u|m] :  Nì seo stàladh sanasachd.\n   /q[n] : Na seall eadar-aghaidh cleachdaiche sam bith (am modh sàmhach).\n"
+msgid "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"Cleachdadh:\n"
+"   /? :  Seallaidh seo an còmhradh seo.\n"
+"   /a :  Nì seo stàladh rianachd.\n"
+"   /j[u|m] :  Nì seo stàladh sanasachd.\n"
+"   /q[n] : Na seall eadar-aghaidh cleachdaiche sam bith (am modh sàmhach).\n"
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
-msgid  "There is already a setup process running."
+msgid "There is already a setup process running."
 msgstr "Tha pròiseas suidheachaidh 'na ruith mu thràth."
 
+#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
+msgid "An Unknown Error occured!"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
-msgid  "Invalid or incomplete profile."
+msgid "Invalid or incomplete profile."
 msgstr "Pròifil mhì-dhligheach no neo-iomlan."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
-msgid  "Unknown Language: %d"
+msgid "Unknown Language: %d"
 msgstr "Cànan neo-aithnichte: %d"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+msgid "Czech"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+msgid "Danish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+msgid "German (Germany)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+msgid "Greek"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "Beurla (SAA)"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+msgid "Spanish (Spain)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+msgid "Finnish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+msgid "French (France)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+msgid "Hebrew"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+msgid "Hungarian"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+msgid "Italian (Italy)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+msgid "Japanese"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+msgid "Korean"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+msgid "Dutch (Netherlands)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+msgid "Norwegian (Bokmål)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+msgid "Polish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+msgid "Russian"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
-msgid  "Slovak"
+msgid "Slovak"
 msgstr "Slòbhacais"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+msgid "Swedish (Sweden)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+msgid "Thai"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+msgid "Turkish"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "Eastonais"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+msgid "Portuguese (Portugal)"
+msgstr ""

@@ -1,712 +1,940 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Print range"
+msgid "Print range"
 msgstr "Yazdırma aralığı"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "All ~Pages"
+msgid "All ~Pages"
 msgstr "Tüm ~Sayfalar"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Pa~ges"
+msgid "Pa~ges"
 msgstr "Say~falar"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
-msgid  "<All>"
+msgid "<All>"
 msgstr "<Tümü>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
-msgid  "< No Module >"
+msgid "< No Module >"
 msgstr "< Modül Yok >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
-msgid  "Incorrect Password"
+msgid "Incorrect Password"
 msgstr "Yanlış Parola"
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "Load"
+msgid "Load"
 msgstr "Yükle"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Save"
+msgid "Save"
 msgstr "Kaydet"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Kaynak metin çok büyük ve ne derlenebilir ne de kaydedilebilir.\nBazı yorumları silin veya bazı yöntemleri başka bir modülün içine aktarın."
+msgid "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+"Kaynak metin çok büyük ve ne derlenebilir ne de kaydedilebilir.\n"
+"Bazı yorumları silin veya bazı yöntemleri başka bir modülün içine aktarın."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
-msgid  "Error opening file"
+msgid "Error opening file"
 msgstr "Dosya açılırken hata"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
-msgid  "Error loading library"
+msgid "Error loading library"
 msgstr "Kütüphane yüklenirken hata"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
-msgid  "The file does not contain any BASIC libraries"
+msgid "The file does not contain any BASIC libraries"
 msgstr "Dosya, herhangi bir TEMEL kütüphaneyi içermiyor"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
 #, fuzzy
-msgid  "Invalid Name"
+msgid "Invalid Name"
 msgstr "Geçersiz İsim"
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
-msgid  "A library name can have up to 30 characters."
+msgid "A library name can have up to 30 characters."
 msgstr "Bir kütüphane ismi 30 karaktere kadar olabilir."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
-msgid  "Macros from other documents are not accessible."
+msgid "Macros from other documents are not accessible."
 msgstr "Diğer belgelerdeki makrolar erişilebilir değil."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
 #, fuzzy
-msgid  "This library is read-only."
+msgid "This library is read-only."
 msgstr "Bu kütüphane salt okunur."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
-msgid  "'XX' cannot be replaced."
+msgid "'XX' cannot be replaced."
 msgstr "'XX' değiştirilemez."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
 #, fuzzy
-msgid  "'XX' cannot be added."
+msgid "'XX' cannot be added."
 msgstr "'XX' eklenemez."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
-msgid  "'XX' was not added."
+msgid "'XX' was not added."
 msgstr "'XX' eklenmedi."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
-msgid  "Enter password for 'XX'"
+msgid "Enter password for 'XX'"
 msgstr "'XX' için parola girin"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
-msgid  "Name already exists"
+msgid "Name already exists"
 msgstr "İsim zaten var"
 
+#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
+msgid "(Signed)"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
-msgid  "Object with same name already exists"
+msgid "Object with same name already exists"
 msgstr "Aynı isimde nesne zaten var"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
-msgid  "The 'XX' file already exists"
+msgid "The 'XX' file already exists"
 msgstr "'XX' dosyası zaten var"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Güvenlik nedenleriyle, bu makroyu çalıştıramazsınız.\n\nDaha fazla bilgi için güvenlik ayarlarını kontrol edin."
+msgid "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+"Güvenlik nedenleriyle, bu makroyu çalıştıramazsınız.\n"
+"\n"
+"Daha fazla bilgi için güvenlik ayarlarını kontrol edin."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
 #, fuzzy
-msgid  "Compile Error: "
+msgid "Compile Error: "
 msgstr "Derleme Hatası: "
 
 #: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
 #, fuzzy
-msgid  "Runtime Error: #"
+msgid "Runtime Error: #"
 msgstr "Çalışma Hatası: #"
 
 #: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
-msgid  "Search key not found"
+msgid "Search key not found"
 msgstr "Aranan terim bulunamadı"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
-msgid  "Search to last module complete. Continue at first module?"
+msgid "Search to last module complete. Continue at first module?"
 msgstr "Son modüle kadar arama tamamlandı. İlk modülden devam edilsin mi?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
-msgid  "Search key replaced XX times"
+msgid "Search key replaced XX times"
 msgstr "Aranan terim XX defa değiştirildi"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
 #, fuzzy
-msgid  "The file could not be read"
+msgid "The file could not be read"
 msgstr "Dosya okunamadı"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
-msgid  "The file could not be saved"
+msgid "The file could not be saved"
 msgstr "Dosya kaydedilemedi"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
 #, fuzzy
-msgid  "The name of the default library cannot be changed."
+msgid "The name of the default library cannot be changed."
 msgstr "Varsayılan kütüphanenin adı değiştirilemez."
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
-msgid  "The name of a referenced library cannot be changed."
+msgid "The name of a referenced library cannot be changed."
 msgstr "Kaynak gösterilen kütüphanenin adı değiştirilemez."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
-msgid  "The default library cannot be deactivated"
+msgid "The default library cannot be deactivated"
 msgstr "Varsayılan kütüphane devre dışı bırakılamaz"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
-msgid  "Generating source"
+msgid "Generating source"
 msgstr "Kaynak oluşturuluyor"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
 #, fuzzy
-msgid  "File name:"
+msgid "File name:"
 msgstr "Dosya adı:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
-msgid  "Import Libraries"
+msgid "Import Libraries"
 msgstr "Kütüphaneleri İçe Aktar"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the macro XX?"
+msgid "Do you want to delete the macro XX?"
 msgstr "XX makrosunu silmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
-msgid  "Do you want to delete the XX dialog?"
+msgid "Do you want to delete the XX dialog?"
 msgstr "XX iletisini silmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the XX library?"
+msgid "Do you want to delete the XX library?"
 msgstr "XX kütüphanesini silmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
-msgid  "Do you want to delete the reference to the XX library?"
+msgid "Do you want to delete the reference to the XX library?"
 msgstr "XX kütüphanesine gösterilen kaynağı silmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
-msgid  "Do you want to delete the XX module?"
+msgid "Do you want to delete the XX module?"
 msgstr "XX modülünü silmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
-msgid  "Object or method not found"
+msgid "Object or method not found"
 msgstr "Nesne ya da yöntem bulunamadı"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
-msgid  "BASIC"
+msgid "BASIC"
 msgstr "TEMEL"
 
+#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
+msgid "Ln"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
+msgid "Col"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+msgid "Document"
+msgstr ""
+
+#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
+msgid "Macro Bar"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
-msgid  "The window cannot be closed while BASIC is running."
+msgid "The window cannot be closed while BASIC is running."
 msgstr "TEMEL yapı çalışırken pencere kapatılamaz."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 #, fuzzy
-msgid  "The default library cannot be replaced."
+msgid "The default library cannot be replaced."
 msgstr "Varsayılan kütüphane değiştirilemez."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
-msgid  "Reference to 'XX' not possible."
+msgid "Reference to 'XX' not possible."
 msgstr "'XX' e kaynak göstermek mümkün değil."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 #, fuzzy
-msgid  "Watch"
+msgid "Watch"
 msgstr "İzle"
+
+#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+msgid "Variable"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+msgid "Value"
+msgstr ""
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "Tür"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
 #, fuzzy
-msgid  "Call Stack"
+msgid "Call Stack"
 msgstr "Çağrı Yığını"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
-msgid  "BASIC Initialization"
+msgid "BASIC Initialization"
 msgstr "TEMEL Başlatma"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
 #, fuzzy
-msgid  "Module"
+msgid "Module"
 msgstr "Modül"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "İleti"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
 #, fuzzy
-msgid  "Library"
+msgid "Library"
 msgstr "Kütüphane"
 
 #: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
 #, fuzzy
-msgid  "New Library"
+msgid "New Library"
 msgstr "Yeni Kütüphane"
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
 #, fuzzy
-msgid  "New Module"
+msgid "New Module"
 msgstr "Yeni Modül"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
-msgid  "New Dialog"
+msgid "New Dialog"
 msgstr "Yeni İleti"
 
+#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+msgid "All"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
+msgid "Page"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
-msgid  "A name must be entered."
+msgid "A name must be entered."
 msgstr "Bir isim girilmek zorundadır."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Bu düzenlemeden sonra programı yeniden başlatmalısınız.\nDevam edilsin mi?"
+msgid "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
+"Bu düzenlemeden sonra programı yeniden başlatmalısınız.\n"
+"Devam edilsin mi?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
-msgid  "Do you want to replace the text in all active modules?"
+msgid "Do you want to replace the text in all active modules?"
 msgstr "Metni tüm etkin modüllerde değiştirmek istiyor musunuz?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
 #, fuzzy
-msgid  "Remove Watch"
+msgid "Remove Watch"
 msgstr "İzlemeyi Kaldır"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
 #, fuzzy
-msgid  "Watch:"
+msgid "Watch:"
 msgstr "İzle:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
-msgid  "Calls: "
+msgid "Calls: "
 msgstr "Çağrılar: "
 
+#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
+msgid "My Macros"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
-msgid  "My Dialogs"
+msgid "My Dialogs"
 msgstr "İletilerim"
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
-msgid  "My Macros & Dialogs"
+msgid "My Macros & Dialogs"
 msgstr "Makrolarım ve İletilerim"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Macros"
+msgid "%PRODUCTNAME Macros"
 msgstr "%PRODUCTNAME Makroları"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
-msgid  "%PRODUCTNAME Dialogs"
+msgid "%PRODUCTNAME Dialogs"
 msgstr "%PRODUCTNAME İletileri"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros & Dialogs"
+msgid "%PRODUCTNAME Macros & Dialogs"
 msgstr "%PRODUCTNAME Makroları ve İletileri"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
 #, fuzzy
-msgid  "Properties"
+msgid "Properties"
 msgstr "Özellikler"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
 #, fuzzy
-msgid  "Active"
+msgid "Active"
 msgstr "Etkin"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
 #, fuzzy
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "Özellikler..."
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
 #, fuzzy
-msgid  "Manage Breakpoints"
+msgid "Manage Breakpoints"
 msgstr "Kesme Noktalarını Yönet"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "Manage Breakpoints..."
+msgid "Manage Breakpoints..."
 msgstr "Kesme Noktalarını Yönet..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "Ekle"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
-msgid  "BASIC Module"
+msgid "BASIC Module"
 msgstr "TEMEL Modülü"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
-msgid  "BASIC Dialog"
+msgid "BASIC Dialog"
 msgstr "TEMEL İleti"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "Sil"
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+msgid "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+msgid "Hide"
+msgstr ""
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "Modules..."
+msgid "Modules..."
 msgstr "Modüller..."
+
+#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
+msgid "Properties..."
+msgstr "Özellikler..."
+
+#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
+msgid "Do you want to overwrite the XX macro?"
+msgstr ""
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
-msgid  "<Not localized>"
+msgid "<Not localized>"
 msgstr "<Yerelleştirilmemiş>"
+
+#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+msgid "[Default Language]"
+msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 #, fuzzy
-msgid  "Document Objects"
+msgid "Document Objects"
 msgstr "Belge Nesneleri"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
 #, fuzzy
-msgid  "Forms"
+msgid "Forms"
 msgstr "Formlar"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
 #, fuzzy
-msgid  "Modules"
+msgid "Modules"
 msgstr "Modüller"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 #, fuzzy
-msgid  "Class Modules"
+msgid "Class Modules"
 msgstr "Sınıf Modülleri"
 
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
+msgid "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
+msgid "Replace"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Name already used"
+msgid "Dialog Import - Name already used"
 msgstr "İleti İçe Aktarma - İsim zaten kullanılmış"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "Kütüphane şu isimde bir iletiyi zaten içeriyor:\n\n$(ARG1)\n\nŞu anki iletiyi tutmak için iletiyi yeniden adlandırın ya da mevcut iletiyi değiştirin.\n "
+msgid "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
+"Kütüphane şu isimde bir iletiyi zaten içeriyor:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Şu anki iletiyi tutmak için iletiyi yeniden adlandırın ya da mevcut iletiyi "
+"değiştirin.\n"
+" "
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
+msgid "Add"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
+msgid "Omit"
+msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Language Mismatch"
+msgid "Dialog Import - Language Mismatch"
 msgstr "İleti İçe Aktarma - Dil Uyuşmazlığı"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "İçe aktırılacak ileti, hedef kütüphane dışındaki diğer dilleri destekler.\n\nİleti tarafindan sağlanan ilave dil kaynaklarını tutmak için bu dilleri kütüphaneye ekleyin ya da şu anki kütüphane dilleriyle kalması için bunları atlayın.\n\nNot: İleti tarafindan desteklenmeyen diller için iletinin varsayılan dil kaynakları kullanılacaktır.\n "
+msgid "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
+"İçe aktırılacak ileti, hedef kütüphane dışındaki diğer dilleri destekler.\n"
+"\n"
+"İleti tarafindan sağlanan ilave dil kaynaklarını tutmak için bu dilleri "
+"kütüphaneye ekleyin ya da şu anki kütüphane dilleriyle kalması için bunları "
+"atlayın.\n"
+"\n"
+"Not: İleti tarafindan desteklenmeyen diller için iletinin varsayılan dil "
+"kaynakları kullanılacaktır.\n"
+" "
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+msgid "New"
+msgstr ""
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "Sil"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Active"
+msgid "Active"
 msgstr "Etkin"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
-msgid  "Pass Count:"
+msgid "Pass Count:"
 msgstr "Geçiş Sayası:"
 
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
+msgid "Breakpoints"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
+#, fuzzy
+msgid "Manage Breakpoints"
+msgstr "Kesme Noktalarını Yönet"
+
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Basic Macros"
+msgid "%PRODUCTNAME Basic Macros"
 msgstr "%PRODUCTNAME Temel Makroları"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
-msgid  "Existing macros ~in:"
+msgid "Existing macros ~in:"
 msgstr "Mevcut makroların bulunduğu ~yer:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Macro name"
+msgid "~Macro name"
 msgstr "~Makro adı"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
-msgid  "Macro ~from"
+msgid "Macro ~from"
 msgstr "Makronun ~alındığı yer"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
-msgid  "Save m~acro in"
+msgid "Save m~acro in"
 msgstr "Makronun ~kaydedileceği yer"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "De~scription"
+msgid "De~scription"
 msgstr "Açık~lama"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "R~un"
+msgid "R~un"
 msgstr "Çalıştı~r"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Kapat"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Assign..."
+msgid "~Assign..."
 msgstr "~Ata..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Düzenle"
+msgid "~Edit"
+msgstr "Dü~zenle"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "New ~Library"
+msgid "New ~Library"
 msgstr "Yeni ~Kütüphane"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "New M~odule"
+msgid "New M~odule"
 msgstr "Yeni ~Modül"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Sil"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "~Düzenleyici..."
+
+#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
+msgid "Macro"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~Sil"
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
-msgid  "~New"
+msgid "~New"
 msgstr "~Yeni"
 
+#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "Kapat"
+
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
-msgid  "Choose"
+msgid "Choose"
 msgstr "Seçin"
+
+#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+msgid "Run"
+msgstr ""
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "~Kaydet"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
-msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgid "%PRODUCTNAME Basic Macro Organizer"
 msgstr "%PRODUCTNAME Temel Makro Düzenleyicisi"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Modules"
+msgid "Modules"
 msgstr "Modüller"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
-msgid  "Dialogs"
+msgid "Dialogs"
 msgstr "İletiler"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Libraries"
+msgid "Libraries"
 msgstr "Kütüphaneler"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "M~odule"
+msgid "M~odule"
 msgstr "M~odül"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "Dü~zenle"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Kapat"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
+msgstr "~Yeni..."
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
 msgstr "~Yeni..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Sil"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "İleti"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid "~Edit"
+msgstr "Dü~zenle"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "Kapat"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~Yeni..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~Yeni..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~Sil"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "L~ocation"
+msgid "L~ocation"
 msgstr "K~onum"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Library"
+msgid "~Library"
 msgstr "~Kütüphane"
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid "~Edit"
+msgstr "Dü~zenle"
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "Kapat"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Password..."
+msgid "~Password..."
 msgstr "~Parola..."
 
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~Yeni..."
+
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "İçe ak~tar..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
-msgid  "E~xport..."
+msgid "E~xport..."
 msgstr "Dışa ak~tar..."
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~Sil"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "Seçenekler"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
-msgid  "Insert as reference (read-only)"
+msgid "Insert as reference (read-only)"
 msgstr "Kaynak olarak ekle (salt okunur)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Replace existing libraries"
+msgid "Replace existing libraries"
 msgstr "Mevcut kütüphaneleri değiştir"
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
-msgid  "~Name:"
+msgid "~Name:"
 msgstr "~Adı:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
-msgid  "Export Basic library"
+msgid "Export Basic library"
 msgstr "Temel kütüphanesini dışa aktar"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
-msgid  "Export as ~extension"
+msgid "Export as ~extension"
 msgstr "~Uzantı olarak dışa aktar"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
-msgid  "Export as BASIC library"
+msgid "Export as BASIC library"
 msgstr "TEMEL kütüphanesi olarak dışa aktar"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
-msgid  "Export library as extension"
+msgid "Export library as extension"
 msgstr "Uzantı olarak kütüphaneyi dışa aktar"
 
+#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
+msgid "Export as BASIC library"
+msgstr "TEMEL kütüphanesi olarak dışa aktar"
+
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
-msgid  "Extension"
+msgid "Extension"
 msgstr "Uzantı"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "Açıklama"
 
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Description"
+msgstr "Açıklama"
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+msgid "Help information"
+msgstr ""
+
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
-msgid  "Help ID"
+msgid "Help ID"
 msgstr "Yardım KİMLİĞİ"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Help file name"
+msgid "Help file name"
 msgstr "Yardım dosyası adı"
 
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+msgid "Objects"
+msgstr ""
+
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+msgid "Show"
+msgstr ""
+
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
-msgid  "Objects Tree"
+msgid "Objects Tree"
 msgstr "Nesneler Ağacı"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "Özellikler: "
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "İşaretlenmiş Denetim yok"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 #, fuzzy
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "Çoklu seçim"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
-msgid  "Manage User Interface Languages [$1]"
+msgid "Manage User Interface Languages [$1]"
 msgstr "Kullanıcı Arayüzü Dillerini [$1] Yönet"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Present Languages"
+msgid "Present Languages"
 msgstr "Varolan Diller"
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "Sil"
 
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+msgid "Default"
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
-msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr "Eğer kullanıcı arayüzü yerel ayarı için varolan yerelleştirme yoksa varsayılan dil kullanılır. Ayrıca varsayılan dilin tüm satırları yeni olarak eklenen dillerin kaynaklarına kopyalanır."
+msgid "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+"Eğer kullanıcı arayüzü yerel ayarı için varolan yerelleştirme yoksa "
+"varsayılan dil kullanılır. Ayrıca varsayılan dilin tüm satırları yeni olarak "
+"eklenen dillerin kaynaklarına kopyalanır."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Kapat"
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+msgid "[Default Language]"
+msgstr ""
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Sil"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
-msgid  "<Press 'Add' to create language resources>"
+msgid "<Press 'Add' to create language resources>"
 msgstr "<Dil kaynağı oluşturmak için 'Ekle' ye basın>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
 #, fuzzy
-msgid  "Delete Language Resources"
+msgid "Delete Language Resources"
 msgstr "Dil Kaynaklarını Sil"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Seçilen dil(ler) için kaynakları silmek üzeresiniz. Bu dil(ler) için tüm kullanıcı arayüzü satırları silinecektir.\n\nSeçilen dil(ler) için kaynakları silmek istiyor musunuz?"
+msgid "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+"Seçilen dil(ler) için kaynakları silmek üzeresiniz. Bu dil(ler) için tüm "
+"kullanıcı arayüzü satırları silinecektir.\n"
+"\n"
+"Seçilen dil(ler) için kaynakları silmek istiyor musunuz?"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
-msgid  "Set Default User Interface Language"
+msgid "Set Default User Interface Language"
 msgstr "Varsayılan Kullanıcı Arayüzü Dilini Ayarla"
 
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+msgid "Default language"
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
-msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr "Varsayılan kullanıcı arayüzü dilini belirlemek için bir dil seçin. Tüm şu anki satırlar seçilen dil için kaynak oluşturmaya atanacaktır."
+msgid "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+"Varsayılan kullanıcı arayüzü dilini belirlemek için bir dil seçin. Tüm şu "
+"anki satırlar seçilen dil için kaynak oluşturmaya atanacaktır."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
-msgid  "Add User Interface Languages"
+msgid "Add User Interface Languages"
 msgstr "Kullanıcı Arayüzü Dillerini Ekle"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Available Languages"
+msgid "Available Languages"
 msgstr "Kullanılabilir Diller"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
-msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr "Eklenmesi için dilleri seçin. Bu diller için kaynaklar kütüphanede oluşturulacaktır. Şu anki varsayılan kullanıcı arayüzü dilinin satırları varsayılan olarak bu yeni kaynaklara kopyalanacaktır."
+msgid "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+"Eklenmesi için dilleri seçin. Bu diller için kaynaklar kütüphanede "
+"oluşturulacaktır. Şu anki varsayılan kullanıcı arayüzü dilinin satırları "
+"varsayılan olarak bu yeni kaynaklara kopyalanacaktır."

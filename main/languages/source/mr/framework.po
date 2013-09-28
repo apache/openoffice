@@ -1,216 +1,248 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "ऍडऑन"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "ऍडऑन मदत (~O)"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "सर्व"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
+msgid "~Update"
 msgstr "सुधारीत करा (~U)"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "बंद करा व परता (~C)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
+msgid "Visible ~Buttons"
 msgstr "दृश्यमान बटणे (~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "साधनपट्टी मनपसंत करा (~C)..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "साधनपट्टी डॉक करा (~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "सर्व साधनपट्ट्या डॉक करा (~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "साधनपट्टीचे स्थान कुलूपबंद करा (~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "साधनपट्टी बंद करा (~T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "असे साठवा (~a)..."
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
+msgid "No Documents"
 msgstr "कोणतेही कागदपत्र नाही"
 
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid "Clear List"
+msgstr ""
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "ऍडऑन %num%"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "परवाना करार"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "कृपया  स्थापना कार्यान्वित करण्यासाठी ह्या पायरयांचे अनुसरण करा:"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "संपूर्ण परवाना करार  पहा. संपूर्ण परवाना मजकूर पाहण्यासाठी संवाद मधील स्क्रोल पट्टीचा किंवा '%PAGEDOWN' कळ चा उपयोग करा."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"संपूर्ण परवाना करार  पहा. संपूर्ण परवाना मजकूर पाहण्यासाठी संवाद मधील "
+"स्क्रोल पट्टीचा किंवा '%PAGEDOWN' कळ चा उपयोग करा."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "खाली सरकवा"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "परवाना करार स्विकारा."
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "स्वीकारा (~A)"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "नाकारा"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
+msgid "Retry"
 msgstr "पुन्हा प्रयत्न करा"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "खाली दिलेल्या स्थानी  डिस्कच्या अपुरया असणारया मुक्त जागेमुळे %PRODUCTNAME महत्त्वपूर्ण अंतर्गत माहिती जतन करू शकले नाही:\n%PATH\n\nत्या स्थानी अधिक मुक्त डिस्क जागा  नेमून दिल्याशिवाय आपण आता %PRODUCTNAME मध्ये काम करू शकणार नाही.\n\nडाटा जतन करण्याचा पुन्हा प्रयत्न करण्यासाठी आपण अधिक मुक्त डिस्क जागेस नेमून दिल्यानंतर 'पुन्हा प्रयत्न करा' कळ दाबा.\n\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"खाली दिलेल्या स्थानी  डिस्कच्या अपुरया असणारया मुक्त जागेमुळे %PRODUCTNAME "
+"महत्त्वपूर्ण अंतर्गत माहिती जतन करू शकले नाही:\n"
+"%PATH\n"
+"\n"
+"त्या स्थानी अधिक मुक्त डिस्क जागा  नेमून दिल्याशिवाय आपण आता %PRODUCTNAME "
+"मध्ये काम करू शकणार नाही.\n"
+"\n"
+"डाटा जतन करण्याचा पुन्हा प्रयत्न करण्यासाठी आपण अधिक मुक्त डिस्क जागेस नेमून "
+"दिल्यानंतर 'पुन्हा प्रयत्न करा' कळ दाबा.\n"
+"\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "रिसेट (~R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग "
+"आता समाप्त करण्यात येईल.\n"
+" कृपया अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  प्रयत्न करा."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग "
+"आता समाप्त करण्यात येईल.\n"
+" कृपया अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  "
+"प्रयत्न करा."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया प्रथम अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  प्रयत्न करा किंवा अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग "
+"आता समाप्त करण्यात येईल.\n"
+" कृपया प्रथम अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  "
+"प्रयत्न करा किंवा अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "शीर्षकरहित"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "अनेक भाषा"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "काहीही नाही (शब्दलेखन तपासू नका)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr "पूर्वनिर्धारीत भाषाच्या मूळस्थितीत जा"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "अधिक..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "निवडीसाठी भाषेची मांडणी करा"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "परिच्छेदासाठी भाषेची मांडणी करा"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "सर्व मजकूरासाठी भाषेची मांडणी करा"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr "येथे स्वागत आहे"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr "नवीन दस्तऐवज निर्माण करा"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr "साचे (~T)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr "उघडा (~O)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr "%PRODUCTNAME कडे नवीन वैशिष्ट्ये समाविष्ट करा"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr "आपल्या %PRODUCTNAME ची नोंदणी करा"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr "%PRODUCTNAME विषयी अधिक माहिती प्राप्त करा"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr "%PRODUCTNAME साठी अधिक साचे प्राप्त करा"

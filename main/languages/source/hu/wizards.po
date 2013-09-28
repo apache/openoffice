@@ -1,3392 +1,3882 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-09-04 15:46+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: genLang\n"
-
+"X-POOTLE-MTIME: 1378309573.0\n"
 
 #: euro/euro.src#STEP_ZERO.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Mégse"
 
 #: euro/euro.src#STEP_ZERO___1.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Súgó"
 
 #: euro/euro.src#STEP_ZERO___2.STRING.TEXT
-msgid  "<<~Back"
+msgid "<<~Back"
 msgstr "<< ~Vissza"
 
 #: euro/euro.src#STEP_ZERO___3.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "Áta~lakítás"
 
 #: euro/euro.src#STEP_ZERO___4.STRING.TEXT
-msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr "Megjegyzés: A külső hivatkozások pénzösszegei és a képletekben szereplő átváltási arányok nem konvertálhatók."
+msgid "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr ""
+"Megjegyzés: A külső hivatkozások pénzösszegei és a képletekben szereplő "
+"átváltási arányok nem konvertálhatók."
 
 #: euro/euro.src#STEP_ZERO___5.STRING.TEXT
-msgid  "First, unprotect all sheets."
+msgid "First, unprotect all sheets."
 msgstr "Először szüntesse meg a munkalapok védelmét."
 
 #: euro/euro.src#STEP_ZERO___6.STRING.TEXT
-msgid  "Currencies:"
+msgid "Currencies:"
 msgstr "Pénznemek:"
 
 #: euro/euro.src#STEP_ZERO___7.STRING.TEXT
-msgid  "C~ontinue>>"
+msgid "C~ontinue>>"
 msgstr "~Tovább >>"
 
 #: euro/euro.src#STEP_ZERO___8.STRING.TEXT
-msgid  "C~lose"
+msgid "C~lose"
 msgstr "~Bezárás"
 
 #: euro/euro.src#STEP_CONVERTER.STRING.TEXT
-msgid  "~Entire document"
+msgid "~Entire document"
 msgstr "~Teljes dokumentum"
 
 #: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "Kijelölés"
 
 #: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
-msgid  "Cell S~tyles"
+msgid "Cell S~tyles"
 msgstr "Cella~stílusok"
 
 #: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
-msgid  "Currency cells in the current ~sheet"
+msgid "Currency cells in the current ~sheet"
 msgstr "Pénznemcellák az aktuális ~munkalapon"
 
 #: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
-msgid  "Currency cells in the entire ~document"
+msgid "Currency cells in the entire ~document"
 msgstr "Pénznemcellák az egész ~dokumentumban"
 
 #: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
-msgid  "~Selected range"
+msgid "~Selected range"
 msgstr "~Kijelölt tartomány"
 
 #: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
-msgid  "Select Cell Styles"
+msgid "Select Cell Styles"
 msgstr "Cellastílus kiválasztása"
 
 #: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
-msgid  "Select currency cells"
+msgid "Select currency cells"
 msgstr "Valutacellák kiválasztása"
 
 #: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
-msgid  "Currency ranges:"
+msgid "Currency ranges:"
 msgstr "Pénznem formátumú tartomány:"
 
 #: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
-msgid  "Templates:"
+msgid "Templates:"
 msgstr "Sablonok:"
 
 #: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
-msgid  "Extent"
+msgid "Extent"
 msgstr "Hatókör"
 
 #: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
-msgid  "~Single %PRODUCTNAME Calc document"
+msgid "~Single %PRODUCTNAME Calc document"
 msgstr "~Egyetlen %PRODUCTNAME Calc-dokumentum"
 
 #: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
-msgid  "Complete ~directory"
+msgid "Complete ~directory"
 msgstr "~Teljes könyvtár"
 
 #: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
-msgid  "Source Document:"
+msgid "Source Document:"
 msgstr "Forrásdokumentum:"
 
 #: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
-msgid  "Source directory:"
+msgid "Source directory:"
 msgstr "Forráskönyvtár:"
 
 #: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
-msgid  "~Including subfolders"
+msgid "~Including subfolders"
 msgstr "~Alkönyvtárakkal együtt"
 
 #: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
-msgid  "Target directory:"
+msgid "Target directory:"
 msgstr "Célkönyvtár:"
 
 #: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
-msgid  "Temporarily unprotect sheet without query"
+msgid "Temporarily unprotect sheet without query"
 msgstr "A munkalap védelmének kérdés nélküli ideiglenes feloldása"
 
 #: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
-msgid  "Also convert fields and tables in text documents"
+msgid "Also convert fields and tables in text documents"
 msgstr "Konvertálja a mezőket és táblázatokat is a szöveges dokumentumokban"
 
 #: euro/euro.src#STATUSLINE.STRING.TEXT
-msgid  "Conversion status: "
+msgid "Conversion status: "
 msgstr "Az átalakítás állapota: "
 
 #: euro/euro.src#STATUSLINE___1.STRING.TEXT
-msgid  "Conversion status of the cell templates:"
+msgid "Conversion status of the cell templates:"
 msgstr "A cellasablonok átalakításának állapota:"
 
 #: euro/euro.src#STATUSLINE___2.STRING.TEXT
-msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr "A lényeges területek bejegyzései: %1Number%1 munkalapon %2TotPageCount%2"
+msgid "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr ""
+"A lényeges területek bejegyzései: %1Number%1 munkalapon %2TotPageCount%2"
 
 #: euro/euro.src#STATUSLINE___3.STRING.TEXT
-msgid  "Entry of the ranges to be converted..."
+msgid "Entry of the ranges to be converted..."
 msgstr "Átalakítandó tartományok bejegyzése..."
 
 #: euro/euro.src#STATUSLINE___4.STRING.TEXT
-msgid  "Sheet protection for each sheet will be restored..."
+msgid "Sheet protection for each sheet will be restored..."
 msgstr "A védelem visszaállítása valamennyi munkalapra..."
 
 #: euro/euro.src#STATUSLINE___5.STRING.TEXT
-msgid  "Conversion of the currency units in the cell templates..."
+msgid "Conversion of the currency units in the cell templates..."
 msgstr "Pénznemegységek átváltása a cellasablonokban..."
 
 #: euro/euro.src#MESSAGES.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Befejezés"
 
 #: euro/euro.src#MESSAGES___1.STRING.TEXT
-msgid  "Select directory"
+msgid "Select directory"
 msgstr "Könyvtár kiválasztása"
 
 #: euro/euro.src#MESSAGES___2.STRING.TEXT
-msgid  "Select file"
+msgid "Select file"
 msgstr "Fájl kiválasztása"
 
 #: euro/euro.src#MESSAGES___3.STRING.TEXT
-msgid  "Select target directory"
+msgid "Select target directory"
 msgstr "Célkönyvtár kiválasztása"
 
 #: euro/euro.src#MESSAGES___4.STRING.TEXT
-msgid  "non-existant"
+msgid "non-existant"
 msgstr "nemlétező"
 
 #: euro/euro.src#MESSAGES___5.STRING.TEXT
-msgid  "Euro Converter"
+msgid "Euro Converter"
 msgstr "Euróátváltó"
 
 #: euro/euro.src#MESSAGES___6.STRING.TEXT
-msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgid "Should protected spreadsheets be temporarily unprotected?"
 msgstr "Megszünteti-e ideiglenesen a munkafüzetek védelmét?"
 
 #: euro/euro.src#MESSAGES___7.STRING.TEXT
-msgid  "Enter the password to unprotect the table %1TableName%1"
+msgid "Enter the password to unprotect the table %1TableName%1"
 msgstr "Adja meg a jelszót a %1TableName%1 tábla védelmének feloldásához"
 
 #: euro/euro.src#MESSAGES___8.STRING.TEXT
-msgid  "Wrong Password!"
+msgid "Wrong Password!"
 msgstr "Hibás jelszó!"
 
 #: euro/euro.src#MESSAGES___9.STRING.TEXT
-msgid  "Protected Sheet"
+msgid "Protected Sheet"
 msgstr "Védett munkalap"
 
 #: euro/euro.src#MESSAGES___10.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "Figyelem!"
 
 #: euro/euro.src#MESSAGES___11.STRING.TEXT
-msgid  "Protection for the sheets will not be removed."
+msgid "Protection for the sheets will not be removed."
 msgstr "A munkalapvédelem nem távolítható el."
 
 #: euro/euro.src#MESSAGES___12.STRING.TEXT
-msgid  "Sheet cannot be unprotected"
+msgid "Sheet cannot be unprotected"
 msgstr "A munkalap védelme nem távolítható el"
 
 #: euro/euro.src#MESSAGES___13.STRING.TEXT
-msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr "A dokumentum védett munkafüzeteket tartalmaz, ennek cellaformátumai nem módosíthatóak, a Tündér ezért nem tudja szerkeszteni a dokumentumot."
+msgid "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr ""
+"A dokumentum védett munkafüzeteket tartalmaz, ennek cellaformátumai nem "
+"módosíthatóak, a Tündér ezért nem tudja szerkeszteni a dokumentumot."
 
 #: euro/euro.src#MESSAGES___14.STRING.TEXT
-msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgid "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
 msgstr "Az Euróátváltó nem tudja egyébként a dokumentumot szerkeszteni!"
 
 #: euro/euro.src#MESSAGES___15.STRING.TEXT
-msgid  "Please choose a currency to be converted first!"
+msgid "Please choose a currency to be converted first!"
 msgstr "Először az átváltandó valutát kell megadni!"
 
 #: euro/euro.src#MESSAGES___16.STRING.TEXT
-msgid  "Password:"
+msgid "Password:"
 msgstr "Jelszó:"
 
 #: euro/euro.src#MESSAGES___17.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: euro/euro.src#MESSAGES___18.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Mégse"
 
 #: euro/euro.src#MESSAGES___19.STRING.TEXT
-msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
 msgstr "Válassza ki a szerkesztendő %PRODUCTNAME Calc-dokumentumot!"
 
 #: euro/euro.src#MESSAGES___20.STRING.TEXT
-msgid  "'<1>' is not a directory!"
+msgid "'<1>' is not a directory!"
 msgstr "„<1>” nem könyvtár!"
 
 #: euro/euro.src#MESSAGES___21.STRING.TEXT
-msgid  "Document is read-only!"
+msgid "Document is read-only!"
 msgstr "A dokumentum csak olvasható!"
 
 #: euro/euro.src#MESSAGES___22.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "A(z) „<1>” fájl már létezik.<CR>Felülírja?"
 
 #: euro/euro.src#MESSAGES___23.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
+msgid "Do you really want to terminate conversion at this point?"
 msgstr "Biztosan meg akarja szakítani az átváltást?"
 
 #: euro/euro.src#MESSAGES___24.STRING.TEXT
-msgid  "Cancel Wizard"
+msgid "Cancel Wizard"
 msgstr "Tündér leállítása"
 
 #: euro/euro.src#CURRENCIES.STRING.TEXT
-msgid  "Portuguese Escudo"
+msgid "Portuguese Escudo"
 msgstr "Portugál escudo"
 
 #: euro/euro.src#CURRENCIES___1.STRING.TEXT
-msgid  "Dutch Guilder"
+msgid "Dutch Guilder"
 msgstr "Holland gulden"
 
 #: euro/euro.src#CURRENCIES___2.STRING.TEXT
-msgid  "French Franc"
+msgid "French Franc"
 msgstr "Francia frank"
 
 #: euro/euro.src#CURRENCIES___3.STRING.TEXT
-msgid  "Spanish Peseta"
+msgid "Spanish Peseta"
 msgstr "Spanyol pezeta"
 
 #: euro/euro.src#CURRENCIES___4.STRING.TEXT
-msgid  "Italian Lira"
+msgid "Italian Lira"
 msgstr "Olasz líra"
 
 #: euro/euro.src#CURRENCIES___5.STRING.TEXT
-msgid  "German Mark"
+msgid "German Mark"
 msgstr "Német márka"
 
 #: euro/euro.src#CURRENCIES___6.STRING.TEXT
-msgid  "Belgian Franc"
+msgid "Belgian Franc"
 msgstr "Belga frank"
 
 #: euro/euro.src#CURRENCIES___7.STRING.TEXT
-msgid  "Irish Punt"
+msgid "Irish Punt"
 msgstr "Ír font"
 
 #: euro/euro.src#CURRENCIES___8.STRING.TEXT
-msgid  "Luxembourg Franc"
+msgid "Luxembourg Franc"
 msgstr "Luxemburgi frank"
 
 #: euro/euro.src#CURRENCIES___9.STRING.TEXT
-msgid  "Austrian Schilling"
+msgid "Austrian Schilling"
 msgstr "Osztrák schilling"
 
 #: euro/euro.src#CURRENCIES___10.STRING.TEXT
-msgid  "Finnish Mark"
+msgid "Finnish Mark"
 msgstr "Finn márka"
 
 #: euro/euro.src#CURRENCIES___11.STRING.TEXT
-msgid  "Greek Drachma"
+msgid "Greek Drachma"
 msgstr "Görög drachma"
 
 #: euro/euro.src#CURRENCIES___12.STRING.TEXT
-msgid  "Slovenian Tolar"
+msgid "Slovenian Tolar"
 msgstr "Szlovén tolár"
 
 #: euro/euro.src#CURRENCIES___13.STRING.TEXT
-msgid  "Cypriot Pound"
+msgid "Cypriot Pound"
 msgstr "Ciprusi font"
 
 #: euro/euro.src#CURRENCIES___14.STRING.TEXT
-msgid  "Maltese Lira"
+msgid "Maltese Lira"
 msgstr "Máltai líra"
 
 #: euro/euro.src#CURRENCIES___15.STRING.TEXT
-msgid  "Slovak Koruna"
+msgid "Slovak Koruna"
 msgstr "Szlovák korona"
 
 #: euro/euro.src#CURRENCIES___16.STRING.TEXT
-msgid  "The currency set for the document is not a European currency!"
+msgid "The currency set for the document is not a European currency!"
 msgstr "A dokumentumhoz rendelt pénznem nem európai pénznem!"
 
 #: euro/euro.src#CURRENCIES___17.STRING.TEXT
-msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr "Az operációs rendszer nyelve nem tartozik az Európai Monetáris Unió nyelvei közé."
+msgid "The language set for your operating system is not a language of the European Monetary Union."
+msgstr ""
+"Az operációs rendszer nyelve nem tartozik az Európai Monetáris Unió nyelvei "
+"közé."
 
 #: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Folyamat"
 
 #: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
-msgid  "Retrieving the relevant documents..."
+msgid "Retrieving the relevant documents..."
 msgstr "Dokumentumok visszanyerése..."
 
 #: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
-msgid  "Converting the documents..."
+msgid "Converting the documents..."
 msgstr "Dokumentumok konvertálása..."
 
 #: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
-msgid  "Settings:"
+msgid "Settings:"
 msgstr "Beállítások:"
 
 #: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
-msgid  "Sheet is always unprotected"
+msgid "Sheet is always unprotected"
 msgstr "A munkalap mindig módosítható"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
-msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr "A(z) „%1” könyvtár létrehozása nem sikerült.<BR>Lehet, hogy nincs több hely a merevlemezen?"
+msgid "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr ""
+"A(z) „%1” könyvtár létrehozása nem sikerült.<BR>Lehet, hogy nincs több hely "
+"a merevlemezen?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
-msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr "A szöveges dokumentum létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az PRODUCTNAME Writer modul."
+msgid "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr ""
+"A szöveges dokumentum létrehozása nem sikerült.<BR>Ellenőrizze, hogy "
+"telepítve van-e az PRODUCTNAME Writer modul."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
-msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr "A munkafüzet létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az PRODUCTNAME Calc modul."
+msgid "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr ""
+"A munkafüzet létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e "
+"az PRODUCTNAME Calc modul."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
-msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr "A bemutató létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az PRODUCTNAME Impress modul."
+msgid "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr ""
+"A bemutató létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az "
+"PRODUCTNAME Impress modul."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
-msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr "A rajz létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az PRODUCTNAME Draw modul."
+msgid "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr ""
+"A rajz létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az "
+"PRODUCTNAME Draw modul."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
-msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr "A képlet létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az PRODUCTNAME Math modul."
+msgid "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr ""
+"A képlet létrehozása nem sikerült.<BR>Ellenőrizze, hogy telepítve van-e az "
+"PRODUCTNAME Math modul."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
-msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr "A szükséges fájlok nem találhatók. <BR>Indítsa az %PRODUCTNAME telepítőjét és válassza ki a „Javítás” pontot."
+msgid "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr ""
+"A szükséges fájlok nem találhatók. <BR>Indítsa az %PRODUCTNAME telepítőjét "
+"és válassza ki a „Javítás” pontot."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
-msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgid "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
 msgstr "A(z) „<PATH>” fájl már létezik.<BR><BR>Felülírja?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Igen"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
-msgid  "Yes to All"
+msgid "Yes to All"
 msgstr "Igen, mindet"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "Nem"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Mégse"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Befejezés"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< ~Vissza"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
-msgid  "~Next >"
+msgid "~Next >"
 msgstr "~Tovább >"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Súgó"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "Lépések"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Bezárás"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
-msgid  "The file already exists. Do you want to overwrite it?"
+msgid "The file already exists. Do you want to overwrite it?"
 msgstr "A fájl már létezik. Felülírja?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
-msgid  "Template created via <wizard_name> on <current_date>."
+msgid "Template created via <wizard_name> on <current_date>."
 msgstr "A sablont a(z) <wizard_name> hozta létre. Dátum: <current_date>."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "A tündér nem indítható el, mert a szükséges fájlok nem találhatóak meg.\nAz „Eszközök - Beállítások - %PRODUCTNAME - Útvonalak” helyen kattintson az „Alapértelmezett” gombra. Így az útvonal-beállítások az alapértelmezett értékekre állnak vissza. Ezek után futtassa a tündért még egyszer."
+msgid "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr ""
+"A tündér nem indítható el, mert a szükséges fájlok nem találhatóak meg.\n"
+"Az „Eszközök - Beállítások - %PRODUCTNAME - Útvonalak” helyen kattintson az "
+"„Alapértelmezett” gombra. Így az útvonal-beállítások az alapértelmezett "
+"értékekre állnak vissza. Ezek után futtassa a tündért még egyszer."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
-msgid  "C~reate"
+msgid "C~reate"
 msgstr "~Létrehozás"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Mégse"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Vissza"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Tovább >>"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr "~Adatbázis"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
-msgid  "~Table name"
+msgid "~Table name"
 msgstr "~Tábla neve"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
-msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgid "An error occurred while running the wizard. The wizard will be terminated."
 msgstr "Hiba történt a tündér futtatása közben. A tündér futása befejeződik."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
-msgid  "No connection to the database could be established."
+msgid "No connection to the database could be established."
 msgstr "Nem sikerült kapcsolódni az adatbázishoz."
 
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___20.STRING.TEXT
+msgid "~Help"
+msgstr "~Súgó"
+
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
-msgid  "~Stop"
+msgid "~Stop"
 msgstr "Megá~llítás"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
-msgid  "The document could not be saved."
+msgid "The document could not be saved."
 msgstr "A dokumentum nem menthető."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
-msgid  "Exiting the wizard"
+msgid "Exiting the wizard"
 msgstr "Kilépés a tündérből"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
-msgid  "Connecting to data source..."
+msgid "Connecting to data source..."
 msgstr "Kapcsolódás az adatforráshoz..."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
-msgid  "The connection to the data source could not be established."
+msgid "The connection to the data source could not be established."
 msgstr "Nem sikerült létrehozni a kapcsolatot az adatforráshoz."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
-msgid  "The file path entered is not valid."
+msgid "The file path entered is not valid."
 msgstr "A megadott útvonal nem érvényes."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
-msgid  "Please select a data source"
+msgid "Please select a data source"
 msgstr "Válasszon adatforrást"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
-msgid  "Please select a table or query"
+msgid "Please select a table or query"
 msgstr "Válasszon táblát vagy lekérdezést"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
-msgid  "Add field"
+msgid "Add field"
 msgstr "Mező hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
-msgid  "Remove field"
+msgid "Remove field"
 msgstr "Mező eltávolítása"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
-msgid  "Add all fields"
+msgid "Add all fields"
 msgstr "Minden mező hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
-msgid  "Remove all fields"
+msgid "Remove all fields"
 msgstr "Minden mező eltávolítása"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
-msgid  "Move field up"
+msgid "Move field up"
 msgstr "Mező feljebb helyezése"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
-msgid  "Move field down"
+msgid "Move field down"
 msgstr "Mező lejjebb helyezése"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
-msgid  "The field names from '%NAME' could not be retrieved."
+msgid "The field names from '%NAME' could not be retrieved."
 msgstr "Nem sikerült lekérni a mezőneveket innen: %NAME"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
-msgid  "Form Wizard"
+msgid "Form Wizard"
 msgstr "Űrlaptündér"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
-msgid  "Fields in ~the form"
+msgid "Fields in ~the form"
 msgstr "Az űrlap ~mezői"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "A bináris mezők mindig fel vannak sorolva és kiválaszthatók a bal oldali listában.\nHa lehetséges, képként vannak értelmezve."
+msgid "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr ""
+"A bináris mezők mindig fel vannak sorolva és kiválaszthatók a bal oldali "
+"listában.\n"
+"Ha lehetséges, képként vannak értelmezve."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Az alűrlap egy olyan űrlap, amely egy másik űrlapba van beillesztve.\nAz alűrlapot olyan táblák vagy lekérdezések adatainak megjelenítéséhez használhatja, amelyek egy a többhöz típusú függőségi viszonyban vannak."
+msgid "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
+"Az alűrlap egy olyan űrlap, amely egy másik űrlapba van beillesztve.\n"
+"Az alűrlapot olyan táblák vagy lekérdezések adatainak megjelenítéséhez "
+"használhatja, amelyek egy a többhöz típusú függőségi viszonyban vannak."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
-msgid  "~Add Subform"
+msgid "~Add Subform"
 msgstr "Alűrlap ~hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
-msgid  "~Subform based on existing relation"
+msgid "~Subform based on existing relation"
 msgstr "Alűrlap ~létező reláció alapján"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
-msgid  "Tables or queries"
+msgid "Tables or queries"
 msgstr "Táblák vagy lekérdezések"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
-msgid  "Subform based on ~manual selection of fields"
+msgid "Subform based on ~manual selection of fields"
 msgstr "Alűrlap kézzel ~kiválasztott mezők alapján"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
-msgid  "~Which relation do you want to add?"
+msgid "~Which relation do you want to add?"
 msgstr "~Melyik relációt kívánja hozzáadni?"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
-msgid  "Fields in the ~subform"
+msgid "Fields in the ~subform"
 msgstr "~Mezők az alűrlapon"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
-msgid  "~Available fields"
+msgid "~Available fields"
 msgstr "~Elérhető mezők"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
-msgid  "Fields in form"
+msgid "Fields in form"
 msgstr "Mezők az űrlapon"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "A(z) „<FIELDNAME1>” mező és a(z) „<FIELDNAME2>” mező összekapcsolása kétszer került kiválasztásra.\nAz összekapcsolás csak egyszer alkalmazható."
+msgid "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr ""
+"A(z) „<FIELDNAME1>” mező és a(z) „<FIELDNAME2>” mező összekapcsolása kétszer "
+"került kiválasztásra.\n"
+"Az összekapcsolás csak egyszer alkalmazható."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
-msgid  "~First joined subform field"
+msgid "~First joined subform field"
 msgstr "~Első összekapcsolt alűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
-msgid  "~Second joined subform field"
+msgid "~Second joined subform field"
 msgstr "~Második összekapcsolt alűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
-msgid  "~Third joined subform field"
+msgid "~Third joined subform field"
 msgstr "~Harmadik összekapcsolt alűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
-msgid  "~Fourth joined subform field"
+msgid "~Fourth joined subform field"
 msgstr "~Negyedik összekapcsolt alűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
-msgid  "F~irst joined main form field"
+msgid "F~irst joined main form field"
 msgstr "E~lső összekapcsolt főűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
-msgid  "S~econd joined main form field"
+msgid "S~econd joined main form field"
 msgstr "Má~sodik összekapcsolt főűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
-msgid  "T~hird joined main form field"
+msgid "T~hird joined main form field"
 msgstr "Ha~rmadik összekapcsolt főűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
-msgid  "F~ourth joined main form field"
+msgid "F~ourth joined main form field"
 msgstr "Ne~gyedik összekapcsolt főűrlapmező"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
-msgid  "Field border"
+msgid "Field border"
 msgstr "Mezőszegély"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
-msgid  "No border"
+msgid "No border"
 msgstr "Nincs szegély"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr "Térhatású"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
-msgid  "Flat"
+msgid "Flat"
 msgstr "Lapos"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
-msgid  "Label placement"
+msgid "Label placement"
 msgstr "Címke elhelyezése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "Balra igazítás"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "Jobbra igazítás"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
-msgid  "Arrangement of DB fields"
+msgid "Arrangement of DB fields"
 msgstr "Adatbázis mezőinek elrendezése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
-msgid  "Columnar - Labels Left"
+msgid "Columnar - Labels Left"
 msgstr "Hasábos - Címkék a bal oldalon"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
-msgid  "Columnar - Labels on Top"
+msgid "Columnar - Labels on Top"
 msgstr "Hasábos - Címkék felül"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
-msgid  "In Blocks - Labels Left"
+msgid "In Blocks - Labels Left"
 msgstr "Tömbökben - Címkék balra"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
-msgid  "In Blocks - Labels Above"
+msgid "In Blocks - Labels Above"
 msgstr "Tömbökben - Címkék felülre"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
-msgid  "As Data Sheet"
+msgid "As Data Sheet"
 msgstr "Adatlapként"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
-msgid  "Arrangement of the main form"
+msgid "Arrangement of the main form"
 msgstr "Főűrlap elrendezése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
-msgid  "Arrangement of the subform"
+msgid "Arrangement of the subform"
 msgstr "Alűrlap elrendezése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
-msgid  "The form is to be ~used for entering new data only."
+msgid "The form is to be ~used for entering new data only."
 msgstr "Az űrlap csak új adatok bevitelére használható."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
-msgid  "Existing data will not be displayed "
+msgid "Existing data will not be displayed "
 msgstr "Létező adatok elrejtése "
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
-msgid  "T~he form is to display all data"
+msgid "T~he form is to display all data"
 msgstr "Az űrlap az összes ~adatot megjeleníti"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
-msgid  "Do not allow ~modification of existing data"
+msgid "Do not allow ~modification of existing data"
 msgstr "Létező adatok ~módosításának tiltása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
-msgid  "Do not allow ~deletion of existing data"
+msgid "Do not allow ~deletion of existing data"
 msgstr "Létező adatok ~törlésének tiltása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
-msgid  "Do not allow ~addition of new data"
+msgid "Do not allow ~addition of new data"
 msgstr "Új adatok ~hozzáadásának tiltása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
-msgid  "Name of ~the form"
+msgid "Name of ~the form"
 msgstr "Az űrlap ~neve"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
-msgid  "How do you want to proceed after creating the form?"
+msgid "How do you want to proceed after creating the form?"
 msgstr "Hogyan szeretné folytatni az űrlap létrehozása után?"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
-msgid  "~Work with the form"
+msgid "~Work with the form"
 msgstr "~Munka az űrlappal"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
-msgid  "~Modify the form"
+msgid "~Modify the form"
 msgstr "Űrlap ~módosítása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
-msgid  "~Page Styles"
+msgid "~Page Styles"
 msgstr "~Oldalstílusok"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
-msgid  "Field selection"
+msgid "Field selection"
 msgstr "Mező kijelölése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
-msgid  "Set up a subform"
+msgid "Set up a subform"
 msgstr "Alűrlap összeállítása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
-msgid  "Add subform fields"
+msgid "Add subform fields"
 msgstr "Alűrlapmezők hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
-msgid  "Get joined fields"
+msgid "Get joined fields"
 msgstr "Összekapcsolt mezők lekérése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
-msgid  "Arrange controls"
+msgid "Arrange controls"
 msgstr "Vezérlőelemek elrendezése"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
-msgid  "Set data entry"
+msgid "Set data entry"
 msgstr "Adatbejegyzés beállítása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
-msgid  "Apply styles"
+msgid "Apply styles"
 msgstr "Stílusok alkalmazása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
-msgid  "Set name"
+msgid "Set name"
 msgstr "Név beállítása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
-msgid  "(Date)"
+msgid "(Date)"
 msgstr "(Dátum)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
-msgid  "(Time)"
+msgid "(Time)"
 msgstr "(Idő)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
-msgid  "Select the fields of your form"
+msgid "Select the fields of your form"
 msgstr "Mezők kijelölése az űrlaphoz"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
-msgid  "Decide if you want to set up a subform"
+msgid "Decide if you want to set up a subform"
 msgstr "Döntse el, hogy készít-e alűrlapot"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
-msgid  "Select the fields of your subform"
+msgid "Select the fields of your subform"
 msgstr "Mezők kijelölése az alűrlaphoz"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
-msgid  "Select the joins between your forms"
+msgid "Select the joins between your forms"
 msgstr "Az űrlapok összekapcsolási módjának kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
-msgid  "Arrange the controls on your form"
+msgid "Arrange the controls on your form"
 msgstr "Vezérlőelemek elrendezése az űrlapon"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
-msgid  "Select the data entry mode"
+msgid "Select the data entry mode"
 msgstr "Az adatbevitel módjának kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
-msgid  "Apply the style of your form"
+msgid "Apply the style of your form"
 msgstr "Űrlap stílusának alkalmazása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
-msgid  "Set the name of the form"
+msgid "Set the name of the form"
 msgstr "Űrlap nevének beállítása"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Már létezik „%FORMNAME” nevű űrlap.\nVálasszon másik nevet."
+msgid "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr ""
+"Már létezik „%FORMNAME” nevű űrlap.\n"
+"Válasszon másik nevet."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
-msgid  "Query Wizard"
+msgid "Query Wizard"
 msgstr "Lekérdezéstündér"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr "Lekérdezés"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___2.STRING.TEXT
+msgid "Query Wizard"
+msgstr "Lekérdezéstündér"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
-msgid  "~Tables"
+msgid "~Tables"
 msgstr "~Táblák"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
-msgid  "A~vailable fields"
+msgid "A~vailable fields"
 msgstr "Elé~rhető mezők"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
-msgid  "Name ~of the query"
+msgid "Name ~of the query"
 msgstr "~Lekérdezés neve"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
-msgid  "Display ~Query"
+msgid "Display ~Query"
 msgstr "Lekérdezés ~megjelenítése"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
-msgid  "~Modify Query"
+msgid "~Modify Query"
 msgstr "~Lekérdezés szerkesztése"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
-msgid  "~How do you want to proceed after creating the query?"
+msgid "~How do you want to proceed after creating the query?"
 msgstr "~Hogyan szeretné folytatni a lekérdezés létrehozása után?"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
-msgid  "Match ~all of the following"
+msgid "Match ~all of the following"
 msgstr "A következők ~mind illeszkedjenek"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
-msgid  "~Match any of the following"
+msgid "~Match any of the following"
 msgstr "A következők ~bármelyike illeszkedjen"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
-msgid  "~Detailed query (Shows all records of the query.)"
+msgid "~Detailed query (Shows all records of the query.)"
 msgstr "~Részletes lekérdezés (A lekérdezés minden rekordja megjelenik.)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
-msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr "Ö~sszegző lekérdezés (Csak az összesítő függvények eredménye jelenik meg.)"
+msgid "~Summary query (Shows only results of aggregate functions.)"
+msgstr ""
+"Ö~sszegző lekérdezés (Csak az összesítő függvények eredménye jelenik meg.)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
-msgid  "Aggregate functions"
+msgid "Aggregate functions"
 msgstr "Összesítő függvények"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
-msgid  "Fields"
+msgid "Fields"
 msgstr "Mezők"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
-msgid  "~Group by"
+msgid "~Group by"
 msgstr "~Csoportosítási szempont"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
-msgid  "Field"
+msgid "Field"
 msgstr "Mező"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
-msgid  "Alias"
+msgid "Alias"
 msgstr "Álnév"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
-msgid  "Table: "
+msgid "Table: "
 msgstr "Tábla: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
-msgid  "Query: "
+msgid "Query: "
 msgstr "Lekérdezés: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
-msgid  "Condition"
+msgid "Condition"
 msgstr "Feltétel"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "Érték"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
-msgid  "is equal to"
+msgid "is equal to"
 msgstr "egyenlő"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
-msgid  "is not equal to"
+msgid "is not equal to"
 msgstr "nem egyenlő"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
-msgid  "is smaller than"
+msgid "is smaller than"
 msgstr "kisebb, mint"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
-msgid  "is greater than"
+msgid "is greater than"
 msgstr "nagyobb, mint"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
-msgid  "is equal or less than "
+msgid "is equal or less than "
 msgstr "kisebb vagy egyenlő "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
-msgid  "is equal or greater than"
+msgid "is equal or greater than"
 msgstr "nagyobb vagy egyenlő"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
-msgid  "like"
+msgid "like"
 msgstr "hasonló"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
-msgid  "not like"
+msgid "not like"
 msgstr "nem hasonló"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
-msgid  "is null"
+msgid "is null"
 msgstr "null"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
-msgid  "is not null"
+msgid "is not null"
 msgstr "nem null"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
-msgid  "true"
+msgid "true"
 msgstr "igaz"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
-msgid  "false"
+msgid "false"
 msgstr "hamis"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
-msgid  "and"
+msgid "and"
 msgstr "és"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
-msgid  "or"
+msgid "or"
 msgstr "vagy"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
-msgid  "get the sum of"
+msgid "get the sum of"
 msgstr "összegzés:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
-msgid  "get the average of"
+msgid "get the average of"
 msgstr "átlagolás:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
-msgid  "get the minimum of"
+msgid "get the minimum of"
 msgstr "minimuma:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
-msgid  "get the maximum of"
+msgid "get the maximum of"
 msgstr "maximuma:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
-msgid  "get the sum of <FIELD>"
+msgid "get the sum of <FIELD>"
 msgstr "<FIELD> összege"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
-msgid  "get the average of <FIELD>"
+msgid "get the average of <FIELD>"
 msgstr "<FIELD> átlaga"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
-msgid  "get the minimum of <FIELD>"
+msgid "get the minimum of <FIELD>"
 msgstr "<FIELD> minimuma"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
-msgid  "get the maximum of <FIELD>"
+msgid "get the maximum of <FIELD>"
 msgstr "<FIELD> maximuma"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
-msgid  "(none)"
+msgid "(none)"
 msgstr "(nincs)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
-msgid  "Fie~lds in the Query: "
+msgid "Fie~lds in the Query: "
 msgstr "Lekérdezésben használt ~mezők: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
-msgid  "Sorting order: "
+msgid "Sorting order: "
 msgstr "Rendezési sorrend: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
-msgid  "No sorting fields were assigned."
+msgid "No sorting fields were assigned."
 msgstr "Nincsenek rendező mezők megadva."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
-msgid  "Search conditions: "
+msgid "Search conditions: "
 msgstr "Keresési feltételek: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
-msgid  "No conditions were assigned."
+msgid "No conditions were assigned."
 msgstr "Nincsenek feltételek megadva."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
-msgid  "Aggregate functions: "
+msgid "Aggregate functions: "
 msgstr "Összesítő függvények: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
-msgid  "No aggregate functions were assigned."
+msgid "No aggregate functions were assigned."
 msgstr "Nincsenek összesítő függvények megadva."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
-msgid  "Grouped by: "
+msgid "Grouped by: "
 msgstr "Csoportosítva: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
-msgid  "No Groups were assigned."
+msgid "No Groups were assigned."
 msgstr "Nincsenek csoportosítók megadva."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
-msgid  "Grouping conditions: "
+msgid "Grouping conditions: "
 msgstr "Csoportosítási feltételek: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
-msgid  "No grouping conditions were assigned."
+msgid "No grouping conditions were assigned."
 msgstr "Nincsenek csoportosítási feltételek megadva."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
-msgid  "Select the fields (columns) for your query"
+msgid "Select the fields (columns) for your query"
 msgstr "Mezők (oszlopok) kiválasztása a lekérdezéshez"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
-msgid  "Select the sorting order"
+msgid "Select the sorting order"
 msgstr "Rendezési sorrend kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
-msgid  "Select the search conditions"
+msgid "Select the search conditions"
 msgstr "Keresési feltétel kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
-msgid  "Select the type of query"
+msgid "Select the type of query"
 msgstr "Lekérdezés típusának kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
-msgid  "Select the groups"
+msgid "Select the groups"
 msgstr "Csoportok kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
-msgid  "Select the grouping conditions"
+msgid "Select the grouping conditions"
 msgstr "Csoportosítás feltételeinek kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
-msgid  "Assign aliases if desired"
+msgid "Assign aliases if desired"
 msgstr "Kívánság szerint álnevek hozzárendelése"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
-msgid  "Check the overview and decide how to proceed"
+msgid "Check the overview and decide how to proceed"
 msgstr "Olvassa el az áttekintést, és döntsön a folytatásról"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___80.STRING.TEXT
+msgid "Field selection"
+msgstr "Mező kijelölése"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
-msgid  "Sorting order"
+msgid "Sorting order"
 msgstr "Rendezési sorrend"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
-msgid  "Search conditions"
+msgid "Search conditions"
 msgstr "Keresési feltételek"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
-msgid  "Detail or summary"
+msgid "Detail or summary"
 msgstr "Részletezés vagy összegzés"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
-msgid  "Grouping"
+msgid "Grouping"
 msgstr "Csoportosítás"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
-msgid  "Grouping conditions"
+msgid "Grouping conditions"
 msgstr "Csoportosítási feltételek"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
-msgid  "Aliases"
+msgid "Aliases"
 msgstr "Álnevek"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
-msgid  "Overview"
+msgid "Overview"
 msgstr "Áttekintés"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
-msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr "Azokat a mezőket, amelyek nincsenek összesítő függvényhez rendelve csoportban kell használni."
+msgid "A field that has not been assigned an aggregate function must be used in a group."
+msgstr ""
+"Azokat a mezőket, amelyek nincsenek összesítő függvényhez rendelve "
+"csoportban kell használni."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
-msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr "A(z) „<FIELDNAME> <LOGICOPERATOR> <VALUE>” feltételt kétszer adta meg. Minden feltételt csak egyszer adhat meg."
+msgid "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr ""
+"A(z) „<FIELDNAME> <LOGICOPERATOR> <VALUE>” feltételt kétszer adta meg. "
+"Minden feltételt csak egyszer adhat meg."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
-msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr "A(z) <FUNCTION> összesítő függvényt kétszer rendelte hozzá a(z) „<NUMERICFIELD>” mezőhöz."
+msgid "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr ""
+"A(z) <FUNCTION> összesítő függvényt kétszer rendelte hozzá a(z) "
+"„<NUMERICFIELD>” mezőhöz."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
-msgid  ", "
+msgid ", "
 msgstr ", "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
-msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgid "<FIELDTITLE> (<FIELDNAME>)"
 msgstr "<FIELDTITLE> (<FIELDNAME>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
-msgid  "<FIELDNAME> (<SORTMODE>)"
+msgid "<FIELDNAME> (<SORTMODE>)"
 msgstr "<FIELDNAME> (<SORTMODE>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
-msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
-msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
 msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___96.STRING.TEXT
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
-msgid  "Report Wizard"
+msgid "Report Wizard"
 msgstr "Jelentéstündér"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
-msgid  "~Table"
+msgid "~Table"
 msgstr "~Tábla"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
-msgid  "Colu~mns"
+msgid "Colu~mns"
 msgstr "~Oszlopok"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
-msgid  "Report_"
+msgid "Report_"
 msgstr "Jelentés_"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
-msgid  "- undefined -"
+msgid "- undefined -"
 msgstr "- nincs megadva -"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
-msgid  "~Fields in report"
+msgid "~Fields in report"
 msgstr "Me~zők a jelentésben"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___11.STRING.TEXT
+msgid "Grouping"
+msgstr "Csoportosítás"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
-msgid  "Sort options"
+msgid "Sort options"
 msgstr "Rendezési beállítások"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
-msgid  "Choose layout"
+msgid "Choose layout"
 msgstr "Elrendezés kiválasztása"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
-msgid  "Create report"
+msgid "Create report"
 msgstr "Jelentés létrehozása"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
-msgid  "Layout of data"
+msgid "Layout of data"
 msgstr "Adatok elrendezése"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
-msgid  "Layout of headers and footers"
+msgid "Layout of headers and footers"
 msgstr "Élőfej és élőláb elrendezése"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___19.STRING.TEXT
+msgid "Fields"
+msgstr "Mezők"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
-msgid  "~Sort by"
+msgid "~Sort by"
 msgstr "~Rendezés"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
-msgid  "T~hen by"
+msgid "T~hen by"
 msgstr "Az~után"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "Tájolás"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "Álló"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "Fekvő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
-msgid  "Which fields do you want to have in your report?"
+msgid "Which fields do you want to have in your report?"
 msgstr "Melyik mezőket szeretné szerepeltetni a jelentésben?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
-msgid  "Do you want to add grouping levels?"
+msgid "Do you want to add grouping levels?"
 msgstr "Szeretné szintekbe rendezni az adatokat?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
-msgid  "According to which fields do you want to sort the data?"
+msgid "According to which fields do you want to sort the data?"
 msgstr "Melyik mező szerint szeretné rendezni az adatokat?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
-msgid  "How do you want your report to look?"
+msgid "How do you want your report to look?"
 msgstr "Hogyan nézzen ki a jelentés?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
-msgid  "Decide how you want to proceed"
+msgid "Decide how you want to proceed"
 msgstr "Hogyan szeretné folytatni"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
-msgid  "Title of report"
+msgid "Title of report"
 msgstr "Jelentés címe"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
-msgid  "Display report"
+msgid "Display report"
 msgstr "Jelentés megjelenítése"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___35.STRING.TEXT
+msgid "Create report"
+msgstr "Jelentés létrehozása"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "Növekvő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
-msgid  "Descending"
+msgid "Descending"
 msgstr "Csökkenő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
-msgid  "~Dynamic report"
+msgid "~Dynamic report"
 msgstr "~Dinamikus jelentés"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
-msgid  "~Create report now"
+msgid "~Create report now"
 msgstr "~Jelentés létrehozása azonnal"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
-msgid  "~Modify report layout"
+msgid "~Modify report layout"
 msgstr "Jelentés elrendezésének ~módosítása"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
-msgid  "Static report"
+msgid "Static report"
 msgstr "Statikus jelentés"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
-msgid  "Save as"
+msgid "Save as"
 msgstr "Mentés másként"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
-msgid  "Groupings"
+msgid "Groupings"
 msgstr "Csoportosítások"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
-msgid  "Then b~y"
+msgid "Then b~y"
 msgstr "Az~után"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
-msgid  "~Then by"
+msgid "~Then by"
 msgstr "Azu~tán"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
-msgid  "Asc~ending"
+msgid "Asc~ending"
 msgstr "~Növekvő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
-msgid  "Ascend~ing"
+msgid "Ascend~ing"
 msgstr "Nö~vekvő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
-msgid  "Ascendin~g"
+msgid "Ascendin~g"
 msgstr "Növe~kvő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
-msgid  "De~scending"
+msgid "De~scending"
 msgstr "Csökk~enő"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
-msgid  "Des~cending"
+msgid "Des~cending"
 msgstr "C~sökkenő"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___58.STRING.TEXT
+msgid "De~scending"
+msgstr "Csökk~enő"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
-msgid  "Binary fields cannot be displayed in the report."
+msgid "Binary fields cannot be displayed in the report."
 msgstr "A bináris mezőket nem lehet megjeleníteni a jelentésben."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
-msgid  "The table '<TABLENAME>' does not exist."
+msgid "The table '<TABLENAME>' does not exist."
 msgstr "A(z) „<TABLENAME>” tábla nem létezik."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
-msgid  "Creating Report..."
+msgid "Creating Report..."
 msgstr "Jelentés létrehozása..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
-msgid  "Number of records inserted: <COUNT>"
+msgid "Number of records inserted: <COUNT>"
 msgstr "A beillesztett rekordok száma: <COUNT>"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
-msgid  "The form '<REPORTFORM>' does not exist."
+msgid "The form '<REPORTFORM>' does not exist."
 msgstr "A(z) „<REPORTFORM>” űrlap nem létezik."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
-msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr "Nem sikerült a(z) <BR>„<STATEMENT>” <BR> kifejezést tartalmazó lekérdezés futtatása. <BR> Ellenőrizze az adatforrást."
+msgid "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr ""
+"Nem sikerült a(z) <BR>„<STATEMENT>” <BR> kifejezést tartalmazó lekérdezés "
+"futtatása. <BR> Ellenőrizze az adatforrást."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
-msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr "Az alábbi rejtett vezérlőelem olvasása a(z) „<REPORTFORM>” űrlapon nem sikerült: „<CONTROLNAME>”."
+msgid "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr ""
+"Az alábbi rejtett vezérlőelem olvasása a(z) „<REPORTFORM>” űrlapon nem "
+"sikerült: „<CONTROLNAME>”."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
-msgid  "Importing data..."
+msgid "Importing data..."
 msgstr "Adatok importálása..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
-msgid  "Labeling fields"
+msgid "Labeling fields"
 msgstr "Mezők címkézése"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
-msgid  "How do you want to label the fields?"
+msgid "How do you want to label the fields?"
 msgstr "Hogyan szeretné felcímkézni a mezőket?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
-msgid  "Label"
+msgid "Label"
 msgstr "Címke"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___71.STRING.TEXT
+msgid "Field"
+msgstr "Mező"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
-msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr "Hiba történt a tündérben.<BR>A(z) „%PATH” sablon hibás lehet.<BR>Vagy nem léteznek a szükséges szakaszok és táblák, vagy léteznek, de rossz név alatt.<BR>Olvassa el a Súgót részletesebb információkért.<BR>Válasszon másik sablont."
+msgid "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr ""
+"Hiba történt a tündérben.<BR>A(z) „%PATH” sablon hibás lehet.<BR>Vagy nem "
+"léteznek a szükséges szakaszok és táblák, vagy léteznek, de rossz név "
+"alatt.<BR>Olvassa el a Súgót részletesebb információkért.<BR>Válasszon másik "
+"sablont."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
-msgid  "There is an invalid user field in a table."
+msgid "There is an invalid user field in a table."
 msgstr "A tábla érvénytelen felhasználói mezőt tartalmaz."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
-msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr "A(z) „<FIELDNAME>” rendezési szempontot kétszer választotta ki. Egy szempontot csak egyszer választhat ki."
+msgid "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr ""
+"A(z) „<FIELDNAME>” rendezési szempontot kétszer választotta ki. Egy "
+"szempontot csak egyszer választhat ki."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
-msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr "Fontos: A jelentés létrehozásakor a helykitöltő szöveg ki lesz cserélve az adatbázis adataival."
+msgid "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr ""
+"Fontos: A jelentés létrehozásakor a helykitöltő szöveg ki lesz cserélve az "
+"adatbázis adataival."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
-msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr "A választott „%REPORTNAME” jelentésnév már létezik.\nAdjon meg egy másik nevet."
+msgid "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr ""
+"A választott „%REPORTNAME” jelentésnév már létezik.\n"
+"Adjon meg egy másik nevet."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
-msgid  "How do you want to proceed after creating the report?"
+msgid "How do you want to proceed after creating the report?"
 msgstr "Hogyan szeretné folytatni a jelentés létrehozása után?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
-msgid  "What kind of report do you want to create?"
+msgid "What kind of report do you want to create?"
 msgstr "Milyen legyen a jelentés típusa?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
-msgid  "Tabular"
+msgid "Tabular"
 msgstr "Táblázatos"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
-msgid  "Columnar, single-column"
+msgid "Columnar, single-column"
 msgstr "Hasábos, egyhasábos"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
-msgid  "Columnar, two columns"
+msgid "Columnar, two columns"
 msgstr "Hasábos, kéthasábos"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
-msgid  "Columnar, three columns"
+msgid "Columnar, three columns"
 msgstr "Hasábos, háromhasábos"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
-msgid  "In blocks, labels left"
+msgid "In blocks, labels left"
 msgstr "Tömbökben - címkék balra"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
-msgid  "In blocks, labels above"
+msgid "In blocks, labels above"
 msgstr "Tömbökben - címkék fel"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
-msgid  "Title:"
+msgid "Title:"
 msgstr "Cím:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
-msgid  "Author:"
+msgid "Author:"
 msgstr "Szerző:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
-msgid  "Date:"
+msgid "Date:"
 msgstr "Dátum:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
-msgid  "Page #page# of #count#"
+msgid "Page #page# of #count#"
 msgstr "#page# / #count# oldal"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
-msgid  "Page number:"
+msgid "Page number:"
 msgstr "Oldalszám:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
-msgid  "Page count:"
+msgid "Page count:"
 msgstr "Oldalak száma:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
-msgid  "No valid report template was found."
+msgid "No valid report template was found."
 msgstr "Nem található érvényes jelentéssablon."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
-msgid  "Table Wizard"
+msgid "Table Wizard"
 msgstr "Táblatündér"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
-msgid  "Select fields"
+msgid "Select fields"
 msgstr "Mezők kijelölése"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
-msgid  "Set types and formats"
+msgid "Set types and formats"
 msgstr "Típusok és formátumok beállítása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
-msgid  "Set primary key"
+msgid "Set primary key"
 msgstr "Elsődleges kulcs beállítása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___5.STRING.TEXT
-msgid  "Create table"
+msgid "Create table"
 msgstr "Tábla létrehozása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
-msgid  "Select fields for your table"
+msgid "Select fields for your table"
 msgstr "Mezők kijelölése a táblához"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
-msgid  "Set field types and formats"
+msgid "Set field types and formats"
 msgstr "Mezőtípusok és -formátumok beállítása"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___10.STRING.TEXT
+msgid "Set primary key"
+msgstr "Elsődleges kulcs beállítása"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___11.STRING.TEXT
+msgid "Create table"
+msgstr "Tábla létrehozása"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
-msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr "Ez a tündér az adatbázishoz szükséges táblák létrehozásában lesz segítségére. Egy táblakategória és egy mintatábla kiválasztása után a szükséges mezőket hozzáadhatja a táblájához. A táblájának elkészítéséhez több mintatábla mezőit is felhasználhatja."
+msgid "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr ""
+"Ez a tündér az adatbázishoz szükséges táblák létrehozásában lesz "
+"segítségére. Egy táblakategória és egy mintatábla kiválasztása után a "
+"szükséges mezőket hozzáadhatja a táblájához. A táblájának elkészítéséhez "
+"több mintatábla mezőit is felhasználhatja."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
-msgid  "Ca~tegory"
+msgid "Ca~tegory"
 msgstr "Ka~tegória"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
-msgid  "B~usiness"
+msgid "B~usiness"
 msgstr "Ü~zleti"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
-msgid  "P~ersonal"
+msgid "P~ersonal"
 msgstr "~Személyes"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
-msgid  "~Sample tables"
+msgid "~Sample tables"
 msgstr "~Mintatáblák"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___19.STRING.TEXT
+msgid "A~vailable fields"
+msgstr "Elé~rhető mezők"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
-msgid  "Field information"
+msgid "Field information"
 msgstr "Mezőinformáció"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
-msgid  "+"
+msgid "+"
 msgstr "+"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
-msgid  "Field name"
+msgid "Field name"
 msgstr "Mezőnév"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
-msgid  "Field type"
+msgid "Field type"
 msgstr "Mezőtípus"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
-msgid  "~Selected fields"
+msgid "~Selected fields"
 msgstr "~Kijelölt mezők"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
-msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr "Az elsődleges kulcs egyedileg azonosítja az adatbázistábla összes rekordját. Minden táblában ajánlatos létrehozni elsődleges kulcsot, amellyel így több táblában meglévő információkat is összekapcsolhat. Nem vihet fel adatokat ebbe a táblába elsődleges kulcs nélkül."
+msgid "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr ""
+"Az elsődleges kulcs egyedileg azonosítja az adatbázistábla összes rekordját. "
+"Minden táblában ajánlatos létrehozni elsődleges kulcsot, amellyel így több "
+"táblában meglévő információkat is összekapcsolhat. Nem vihet fel adatokat "
+"ebbe a táblába elsődleges kulcs nélkül."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
-msgid  "~Create a primary key"
+msgid "~Create a primary key"
 msgstr "Elsődleges kulcs ~létrehozása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
-msgid  "~Automatically add a primary key"
+msgid "~Automatically add a primary key"
 msgstr "Elsődleges kulcs ~automatikus hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
-msgid  "~Use an existing field as a primary key"
+msgid "~Use an existing field as a primary key"
 msgstr "Meglévő ~mező használata elsődleges kulcsként"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
-msgid  "Define p~rimary key as a combination of several fields "
+msgid "Define p~rimary key as a combination of several fields "
 msgstr "Elsődleges kulcs megadása több mező ~kombinációjaként "
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
-msgid  "F~ieldname"
+msgid "F~ieldname"
 msgstr "~Mezőnév"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
-msgid  "~Primary key fields"
+msgid "~Primary key fields"
 msgstr "~Elsődleges kulcs mezői"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
-msgid  "Auto ~value"
+msgid "Auto ~value"
 msgstr "A~utomatikus érték"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
-msgid  "What do you want to name your table?"
+msgid "What do you want to name your table?"
 msgstr "Mi legyen a tábla neve?"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
-msgid  "Congratulations. You have entered all the information needed to create your table."
+msgid "Congratulations. You have entered all the information needed to create your table."
 msgstr "Gratulálunk. A tábla létrehozásához szükséges összes adatot megadta."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "Mi legyen a következő lépés?"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
-msgid  "Modify the table design"
+msgid "Modify the table design"
 msgstr "Táblaterv módosítása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
-msgid  "Insert data immediately"
+msgid "Insert data immediately"
 msgstr "Adatok azonnali felvitele"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
-msgid  "C~reate a form based on this table"
+msgid "C~reate a form based on this table"
 msgstr "Űrlap ~létrehozása ezen tábla alapján"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
-msgid  "The table you have created could not be opened."
+msgid "The table you have created could not be opened."
 msgstr "A létrehozott tábla nem nyitható meg."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
-msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "A(z) „%TABLENAME” táblanév olyan karaktert („%SPECIALCHAR”) tartalmaz, amelyet az adatbázis nem biztos, hogy támogat."
+msgid "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"A(z) „%TABLENAME” táblanév olyan karaktert („%SPECIALCHAR”) tartalmaz, "
+"amelyet az adatbázis nem biztos, hogy támogat."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
-msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "A(z) „%FIELDNAME” mezőnév olyan karaktert („%SPECIALCHAR”) tartalmaz, amelyet az adatbázis nem biztos, hogy támogat."
+msgid "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"A(z) „%FIELDNAME” mezőnév olyan karaktert („%SPECIALCHAR”) tartalmaz, "
+"amelyet az adatbázis nem biztos, hogy támogat."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___43.STRING.TEXT
+msgid "Field"
+msgstr "Mező"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
-msgid  "MyTable"
+msgid "MyTable"
 msgstr "SajatTabla"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
-msgid  "Add a Field"
+msgid "Add a Field"
 msgstr "Mező hozzáadása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
-msgid  "Remove the selected Field"
+msgid "Remove the selected Field"
 msgstr "Kijelölt mező eltávolítása"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
-msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr "A mező nem adható hozzá, mert a mezők száma elérte az adatbázistáblában felhasználható maximális mezők számát, ami jelenleg %COUNT."
+msgid "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr ""
+"A mező nem adható hozzá, mert a mezők száma elérte az adatbázistáblában "
+"felhasználható maximális mezők számát, ami jelenleg %COUNT."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "A választott „%TABLENAME” táblanév már létezik.\nAdjon meg egy másik nevet."
+msgid "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr ""
+"A választott „%TABLENAME” táblanév már létezik.\n"
+"Adjon meg egy másik nevet."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
-msgid  "Catalog of the table"
+msgid "Catalog of the table"
 msgstr "Tábla katalógusa"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
-msgid  "Schema of the table"
+msgid "Schema of the table"
 msgstr "Tábla sémája"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
-msgid  "The field '%FIELDNAME' already exists."
+msgid "The field '%FIELDNAME' already exists."
 msgstr "Már létezik „%FIELDNAME” mező."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Letter Wizard"
+msgid "Letter Wizard"
 msgstr "Levéltündér"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
-msgid  "Label9"
+msgid "Label9"
 msgstr "Címke9"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business letter"
+msgid "~Business letter"
 msgstr "Ü~zleti levél"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Formal personal letter"
+msgid "~Formal personal letter"
 msgstr "~Formális magánlevél"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
-msgid  "~Personal letter"
+msgid "~Personal letter"
 msgstr "~Magánlevél"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
-msgid  "~Use letterhead paper with pre-printed elements"
+msgid "~Use letterhead paper with pre-printed elements"
 msgstr "Előrenyomtatott elemeket tartalmazó ~fejléces papír használata"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "L~ogó"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.STRING.TEXT
-msgid  "Return address"
+msgid "Return address"
 msgstr "Válaszcím"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
-msgid  "~Include footer"
+msgid "~Include footer"
 msgstr "É~lőláb megjelenítése"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
-msgid  "~Return address in envelope window"
+msgid "~Return address in envelope window"
+msgstr "A ~válaszcím szerepel a levélben"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.STRING.TEXT
+msgid "~Logo"
+msgstr "L~ogó"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.STRING.TEXT
+msgid "~Return address in envelope window"
 msgstr "A ~válaszcím szerepel a levélben"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Letter Signs"
+msgid "Letter Signs"
 msgstr "Jelzések"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
-msgid  "S~ubject line"
+msgid "S~ubject line"
 msgstr "~Tárgy"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
-msgid  "Salu~tation"
+msgid "Salu~tation"
 msgstr "~Megszólítás"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
-msgid  "Fold ~marks"
+msgid "Fold ~marks"
 msgstr "~Hajtási jelek"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
-msgid  "~Complimentary close"
+msgid "~Complimentary close"
 msgstr "~Udvarias befejezés"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.STRING.TEXT
-msgid  "~Footer"
+msgid "~Footer"
 msgstr "É~lőláb"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
-msgid  "~Use user data for return address"
+msgid "~Use user data for return address"
 msgstr "~Felhasználó adatainak felhasználása a feladó címéhez"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
-msgid  "~New sender address:"
+msgid "~New sender address:"
 msgstr "Ú~j feladó címzés:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
-msgid  "Use placeholders for ~recipient's address"
+msgid "Use placeholders for ~recipient's address"
 msgstr "Helykitöltő a ~címzett címe helyett"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.STRING.TEXT
-msgid  "Use address database for ~mail merge"
+msgid "Use address database for ~mail merge"
 msgstr "Cím~adatbázis használata a körlevélhez"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.STRING.TEXT
-msgid  "Include ~only on second and following pages"
+msgid "Include ~only on second and following pages"
 msgstr "~Csak a második és az azt követő oldalakon"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "~Include page number"
+msgid "~Include page number"
 msgstr "~Oldalszám megjelenítése"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Letter Template"
+msgid "Letter Template"
 msgstr "Levélsablon"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
-msgid  "Create a ~letter from this template"
+msgid "Create a ~letter from this template"
 msgstr "~Levél létrehozása ebből a sablonból"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
-msgid  "Make ~manual changes to this letter template"
+msgid "Make ~manual changes to this letter template"
 msgstr "Levélsablon meg~változtatása"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
-msgid  "Page design"
+msgid "Page design"
+msgstr "Oldalterv"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.STRING.TEXT
+msgid "Page design"
 msgstr "Oldalterv"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr "Ez a tündér egy levélsablon létrehozásában lesz segítségére. A sablon bármikor felhasználható levél létrehozásához."
+msgid "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr ""
+"Ez a tündér egy levélsablon létrehozásában lesz segítségére. A sablon "
+"bármikor felhasználható levél létrehozásához."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
-msgid  "~Height:"
+msgid "~Height:"
 msgstr "~Magasság:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
-msgid  "~Width:"
+msgid "~Width:"
 msgstr "~Szélesség:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
-msgid  "S~pacing to left margin:"
+msgid "S~pacing to left margin:"
 msgstr "Távolság a ~bal margótól:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.STRING.TEXT
-msgid  "Spacing ~to top margin:"
+msgid "Spacing ~to top margin:"
 msgstr "Távolság a ~felső margótól:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.STRING.TEXT
-msgid  "Height:"
+msgid "Height:"
 msgstr "Magasság:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Width:"
+msgid "Width:"
 msgstr "Szélesség:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.STRING.TEXT
+msgid "S~pacing to left margin:"
+msgstr "Távolság a ~bal margótól:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.STRING.TEXT
+msgid "Spacing ~to top margin:"
+msgstr "Távolság a ~felső margótól:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.STRING.TEXT
+msgid "Height:"
+msgstr "Magasság:"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
-msgid  "Use a typical letter format for this country:"
+msgid "Use a typical letter format for this country:"
 msgstr "A következő ország jellemző levélformátuma alapján:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
-msgid  "Sender's address"
+msgid "Sender's address"
 msgstr "Feladó címe"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
-msgid  "Name:"
+msgid "Name:"
 msgstr "Név:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.STRING.TEXT
-msgid  "Street:"
+msgid "Street:"
 msgstr "Utca:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.STRING.TEXT
-msgid  "ZIP code/State/City:"
+msgid "ZIP code/State/City:"
 msgstr "Irányítószám/Megye/Város:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
-msgid  "Recipient's address"
+msgid "Recipient's address"
 msgstr "Címzett címe"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
-msgid  "Footer"
+msgid "Footer"
 msgstr "Élőláb"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
-msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr "Ez a tündér egy levélsablon létrehozásában lesz segítségére, amellyel majd számtalan azonos elrendezésű levelet hozhat létre, azonos beállítások mellett."
+msgid "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr ""
+"Ez a tündér egy levélsablon létrehozásában lesz segítségére, amellyel majd "
+"számtalan azonos elrendezésű levelet hozhat létre, azonos beállítások "
+"mellett."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
-msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr "Újabb levelet úgy hozhat létre ebből a sablonból, hogy megkeresi a sablont és dupla kattintással megnyitja."
+msgid "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr ""
+"Újabb levelet úgy hozhat létre ebből a sablonból, hogy megkeresi a sablont "
+"és dupla kattintással megnyitja."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
-msgid  "Template name:"
+msgid "Template name:"
 msgstr "Sablon neve:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.STRING.TEXT
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "Hely és fájlnév:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
-msgid  "How do you want to proceed?"
+msgid "How do you want to proceed?"
 msgstr "Hogyan szeretné folytatni?"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
-msgid  "Please choose the type of letter and page design"
+msgid "Please choose the type of letter and page design"
 msgstr "Válassza ki a levél típusát és oldaltervét"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
-msgid  "Select the items to be printed"
+msgid "Select the items to be printed"
 msgstr "Válassza ki a nyomtatandó elemeket"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
-msgid  "Specify items already on your letterhead paper"
+msgid "Specify items already on your letterhead paper"
 msgstr "Adja meg a fejléces papíron már szereplő elemeket"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
-msgid  "Specify the sender and recipient information"
+msgid "Specify the sender and recipient information"
 msgstr "Adja meg a feladó és a címzett adatait"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
-msgid  "Fill in the information you would like in the footer"
+msgid "Fill in the information you would like in the footer"
 msgstr "Adja meg az élőlábban megjelenő adatokat"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
-msgid  "Please specify last settings"
+msgid "Please specify last settings"
 msgstr "Adja meg a végső beállításokat"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To Whom it May Concern"
+msgid "To Whom it May Concern"
 msgstr "Az érintett részére"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam"
+msgid "Dear Sir or Madam"
 msgstr "Kedves Hölgyem/Uram"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello"
+msgid "Hello"
 msgstr "Helló"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
-msgid  "Sincerely"
+msgid "Sincerely"
 msgstr "Tisztelettel,"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Best regards"
+msgid "Best regards"
 msgstr "Üdvözlettel,"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Cheers"
+msgid "Cheers"
 msgstr "Köszönettel,"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Letterhead layout"
+msgid "Letterhead layout"
 msgstr "Fejléc elrendezése"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Printed items"
+msgid "Printed items"
 msgstr "Nyomtatott elemek"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
-msgid  "Recipient and sender"
+msgid "Recipient and sender"
 msgstr "Címzett és feladó"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.STRING.TEXT
+msgid "Footer"
+msgstr "Élőláb"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "Név és hely"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Fax Wizard"
+msgid "Fax Wizard"
 msgstr "Faxtündér"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___2.STRING.TEXT
+msgid "Label9"
+msgstr "Címke9"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business Fax"
+msgid "~Business Fax"
 msgstr "~Hivatali fax"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Personal Fax"
+msgid "~Personal Fax"
 msgstr "~Magánfax"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___5.STRING.TEXT
+msgid "~Logo"
+msgstr "L~ogó"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___6.STRING.TEXT
+msgid "S~ubject line"
+msgstr "~Tárgy"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
-msgid  "S~alutation"
+msgid "S~alutation"
 msgstr "~Köszöntés"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___8.STRING.TEXT
+msgid "~Complimentary close"
+msgstr "~Udvarias befejezés"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___9.STRING.TEXT
+msgid "~Footer"
+msgstr "É~lőláb"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___10.STRING.TEXT
+msgid "~Use user data for return address"
+msgstr "~Felhasználó adatainak felhasználása a feladó címéhez"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
-msgid  "~New return address"
+msgid "~New return address"
 msgstr "Ú~j válaszcím"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
-msgid  "My Fax Template"
+msgid "My Fax Template"
 msgstr "Saját faxsablon"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Create a ~fax from this template"
+msgid "Create a ~fax from this template"
 msgstr "~Fax létrehozása ebből a sablonból"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
-msgid  "Make ~manual changes to this fax template"
+msgid "Make ~manual changes to this fax template"
 msgstr "Faxsablon meg~változtatása"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___15.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___16.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
-msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr "Ez a tündér egy faxsablon létrehozásában lesz segítségére. A sablon bármikor felhasználható fax létrehozásához."
+msgid "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr ""
+"Ez a tündér egy faxsablon létrehozásában lesz segítségére. A sablon bármikor "
+"felhasználható fax létrehozásához."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___18.STRING.TEXT
+msgid "Return address"
+msgstr "Válaszcím"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___19.STRING.TEXT
+msgid "Name:"
+msgstr "Név:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___20.STRING.TEXT
+msgid "Street:"
+msgstr "Utca:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___21.STRING.TEXT
+msgid "ZIP code/State/City:"
+msgstr "Irányítószám/Megye/Város:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___22.STRING.TEXT
+msgid "Footer"
+msgstr "Élőláb"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
-msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr "Ez a tündér egy faxsablon létrehozásában lesz segítségére, amellyel majd számtalan azonos elrendezésű faxot hozhat létre, azonos beállítások mellett."
+msgid "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr ""
+"Ez a tündér egy faxsablon létrehozásában lesz segítségére, amellyel majd "
+"számtalan azonos elrendezésű faxot hozhat létre, azonos beállítások mellett."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Újabb faxot úgy hozhat létre ebből a sablonból, hogy megkeresi a sablont és dupla kattintással megnyitja."
+msgid "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Újabb faxot úgy hozhat létre ebből a sablonból, hogy megkeresi a sablont és "
+"dupla kattintással megnyitja."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Template Name:"
+msgid "Template Name:"
 msgstr "Sablon neve:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___26.STRING.TEXT
+msgid "Location and file name:"
+msgstr "Hely és fájlnév:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___27.STRING.TEXT
+msgid "What do you want to do next?"
+msgstr "Mi legyen a következő lépés?"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
-msgid  "Choose the type of fax and a page design"
+msgid "Choose the type of fax and a page design"
 msgstr "Válassza ki a fax típusát és oldaltervét"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
-msgid  "Select items to include in the fax template"
+msgid "Select items to include in the fax template"
 msgstr "Válassza ki a faxsablonban megjelenő elemeket"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
-msgid  "Specify sender and recipient information"
+msgid "Specify sender and recipient information"
 msgstr "Adja meg a feladó és a címzett adatait"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "Enter text for the footer"
+msgid "Enter text for the footer"
 msgstr "Adja meg az élőláb szövegét"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
-msgid  "Choose a name and save the template"
+msgid "Choose a name and save the template"
 msgstr "Válasszon egy nevet, és mentse a sablont"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___33.STRING.TEXT
+msgid "Include ~only on second and following pages"
+msgstr "~Csak a második és az azt követő oldalakon"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___34.STRING.TEXT
+msgid "~Include page number"
+msgstr "~Oldalszám megjelenítése"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
-msgid  "~Date"
+msgid "~Date"
 msgstr "~Dátum"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
-msgid  "~Type of message"
+msgid "~Type of message"
 msgstr "Ü~zenet típusa"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Fax Number:"
+msgid "Fax Number:"
 msgstr "Faxszám:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___38.STRING.TEXT
+msgid "Use placeholders for ~recipient's address"
+msgstr "Helykitöltő a ~címzett címe helyett"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___39.STRING.TEXT
+msgid "Use address database for ~mail merge"
+msgstr "Cím~adatbázis használata a körlevélhez"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___40.STRING.TEXT
+msgid "~New return address"
+msgstr "Ú~j válaszcím"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
-msgid  "Important Information!"
+msgid "Important Information!"
 msgstr "Fontos információ!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
-msgid  "For your information"
+msgid "For your information"
 msgstr "Tájékoztatásul"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
-msgid  "News!"
+msgid "News!"
 msgstr "Hírek"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To whom it may concern,"
+msgid "To whom it may concern,"
 msgstr "Az érintett részére,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam,"
+msgid "Dear Sir or Madam,"
 msgstr "Kedves Hölgyem/Uram"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello,"
+msgid "Hello,"
 msgstr "Helló,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
-msgid  "Hi,"
+msgid "Hi,"
 msgstr "Szia,"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___1.STRING.TEXT
+msgid "Sincerely"
+msgstr "Tisztelettel,"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Yours faithfully"
+msgid "Yours faithfully"
 msgstr "Tisztelettel"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Regards"
+msgid "Regards"
 msgstr "Üdvözlettel"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
-msgid  "Love"
+msgid "Love"
 msgstr "Szeretettel"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___1.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Items to include"
+msgid "Items to include"
 msgstr "Megjelenő elemek"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Sender and Recipient"
+msgid "Sender and Recipient"
 msgstr "Címzett és feladó"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___4.STRING.TEXT
+msgid "Footer"
+msgstr "Élőláb"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___5.STRING.TEXT
+msgid "Name and location"
+msgstr "Név és hely"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Web Wizard"
+msgid "Web Wizard"
 msgstr "Webtündér"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "A Webtündér segítségével könnyen közzéteheti dokumentumait az interneten.\n\nA tündér webböngészőben megtekinthető formátumba alakítja a dokumentumot, továbbá elkészíti a dokumentum hivatkozásokkal bővített tartalomjegyzékét. Így a dokumentumon belüli navigáció egyszerűbbé válik. A Webtündér által létrehozott webhely látványterve és elrendezése testreszabható.\n\nAz interneten közzétett dokumentumok frissíthetőek illetve bármikor további dokumentumokat adhat hozzá vagy eltávolíthat dokumentumokat a közzétett dokumentumok közül."
+msgid "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
+"A Webtündér segítségével könnyen közzéteheti dokumentumait az interneten.\n"
+"\n"
+"A tündér webböngészőben megtekinthető formátumba alakítja a dokumentumot, "
+"továbbá elkészíti a dokumentum hivatkozásokkal bővített tartalomjegyzékét. "
+"Így a dokumentumon belüli navigáció egyszerűbbé válik. A Webtündér által "
+"létrehozott webhely látványterve és elrendezése testreszabható.\n"
+"\n"
+"Az interneten közzétett dokumentumok frissíthetőek illetve bármikor további "
+"dokumentumokat adhat hozzá vagy eltávolíthat dokumentumokat a közzétett "
+"dokumentumok közül."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Törlés"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
-msgid  "Introduction"
+msgid "Introduction"
 msgstr "Bevezetés"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
-msgid  "Select the documents you want to publish"
+msgid "Select the documents you want to publish"
 msgstr "Válassza ki a közzétenni kívánt dokumentumokat"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
-msgid  "Document information "
+msgid "Document information "
 msgstr "Dokumentum adatai "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
-msgid  "~Title:"
+msgid "~Title:"
 msgstr "~Cím:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
-msgid  "~Summary: "
+msgid "~Summary: "
 msgstr "Ö~sszegzés: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
-msgid  "Au~thor:"
+msgid "Au~thor:"
 msgstr "~Szerző:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
-msgid  "~Export to file format:"
+msgid "~Export to file format:"
 msgstr "Az e~xportálás fájlformátuma:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
-msgid  "Enter general information for your web site"
+msgid "Enter general information for your web site"
 msgstr "Adja meg a webhelyre vonatkozó általános információkat"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__14.STRING.TEXT
+msgid "Title:"
+msgstr "Cím:"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
-msgid  "Description:"
+msgid "Description:"
 msgstr "Leírás:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
-msgid  "Created:"
+msgid "Created:"
 msgstr "Létrehozva:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
-msgid  "E-mail:"
+msgid "E-mail:"
 msgstr "E-mail:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
-msgid  "Copyright notice:"
+msgid "Copyright notice:"
 msgstr "Copyright-megjegyzés:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "Módosítva:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
-msgid  "~Preview"
+msgid "~Preview"
 msgstr "~Előnézet"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
-msgid  "Where do you want to publish your web site?"
+msgid "Where do you want to publish your web site?"
 msgstr "Hova kívánja közzétenni a webhelyet?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
-msgid  "Publish the new web site:"
+msgid "Publish the new web site:"
 msgstr "Az új webhely közzététele:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
-msgid  "To a ~local folder"
+msgid "To a ~local folder"
 msgstr "~Helyi mappába"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
-msgid  "To a ~web server via FTP"
+msgid "To a ~web server via FTP"
 msgstr "~Webkiszolgálóra FTP-n keresztül"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
-msgid  "~Configure..."
+msgid "~Configure..."
 msgstr "~Testreszabás..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
-msgid  "To a ZIP ~archive"
+msgid "To a ZIP ~archive"
 msgstr "ZIP-~archívumfájlba"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__33.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
-msgid  "~Save settings (recommended)"
+msgid "~Save settings (recommended)"
 msgstr "Beállítások ~mentése (ajánlott)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
-msgid  "Save ~as:"
+msgid "Save ~as:"
 msgstr "Men~tés másként:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
-msgid  "~Choose settings for the Web Wizard"
+msgid "~Choose settings for the Web Wizard"
 msgstr "~Adja meg a Webtündér beállításait"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
-msgid  "Web site content "
+msgid "Web site content "
 msgstr "Webhely tartalma "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Hozzáadás..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
-msgid  "Remo~ve"
+msgid "Remo~ve"
 msgstr "Eltá~volítás"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
-msgid  "Choose a layout for the table of contents of your web site"
+msgid "Choose a layout for the table of contents of your web site"
 msgstr "Válassza ki a webhely tartalomjegyzékének elrendezését"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
-msgid  "Select a style for the table of contents page"
+msgid "Select a style for the table of contents page"
 msgstr "Válassza ki a tartalomjegyzék-oldal stílusát"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
-msgid  "~Style:"
+msgid "~Style:"
 msgstr "~Stílus:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
-msgid  "~Layouts: "
+msgid "~Layouts: "
 msgstr "~Elrendezések: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
-msgid  "~Description"
+msgid "~Description"
 msgstr "~Leírás"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
-msgid  "~Author"
+msgid "~Author"
 msgstr "~Szerző"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
-msgid  "Cr~eation date"
+msgid "Cr~eation date"
 msgstr "~Létrehozás dátuma"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
-msgid  "~Last change date"
+msgid "~Last change date"
 msgstr "~Utolsó módosítás dátuma"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
-msgid  "~File name"
+msgid "~File name"
 msgstr "~Fájlnév"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
-msgid  "File forma~t"
+msgid "File forma~t"
 msgstr "Fájlformá~tum"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
-msgid  "File format ~icon"
+msgid "File format ~icon"
 msgstr "Fájlformátum-~ikon"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
-msgid  "Number ~of pages"
+msgid "Number ~of pages"
 msgstr "~Oldalak száma"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
-msgid  "~Size in KB"
+msgid "~Size in KB"
 msgstr "~Méret KB-ban"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
-msgid  "Click 'Preview' to see a preview in your browser:"
+msgid "Click 'Preview' to see a preview in your browser:"
 msgstr "Böngészőben való megtekintéshez kattintson az „Előnézet” gombra:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
-msgid  "Customize the selected layout"
+msgid "Customize the selected layout"
 msgstr "Kiválasztott elrendezés testreszabása"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
-msgid  "Include the following information for each document in the table of contents:"
-msgstr "Minden dokumentumnál a következő információ szerepeltetése a tartalomjegyzékben:"
+msgid "Include the following information for each document in the table of contents:"
+msgstr ""
+"Minden dokumentumnál a következő információ szerepeltetése a "
+"tartalomjegyzékben:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
-msgid  "Optimize the layout for screen resolution:"
+msgid "Optimize the layout for screen resolution:"
 msgstr "Elrendezés optimalizálása a következő képernyőfelbontáshoz:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
-msgid  "~640x480"
+msgid "~640x480"
 msgstr "~640×480"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
-msgid  "~800x600"
+msgid "~800x600"
 msgstr "~800×600"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
-msgid  "~1024x768"
+msgid "~1024x768"
 msgstr "~1024×768"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
-msgid  "Generating Your Web Site"
+msgid "Generating Your Web Site"
 msgstr "Új webhely létrehozása"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
-msgid  "%START - %END/%TOTAL"
+msgid "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
-msgid  "myWebsite"
+msgid "myWebsite"
 msgstr "Weboldalam"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
-msgid  "FTP target '%FILENAME' is a file."
+msgid "FTP target '%FILENAME' is a file."
 msgstr "A(z) „%FILENAME” FTP-célkönyvtár egy fájl."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
-msgid  "The local target '%FILENAME' is a file."
+msgid "The local target '%FILENAME' is a file."
 msgstr "A(z) „%FILENAME” helyi célkönyvtár egy fájl."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
-msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgid "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
 msgstr "A(z) „%FILENAME” nevű ZIP-archívum már létezik. Felülírja? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
-msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "A(z) „%FILENAME” FTP-célkönyvtár nem üres. Néhány fájl esetleg felülíródhat. Biztosan folytatni kívánja a műveletet?"
+msgid "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"A(z) „%FILENAME” FTP-célkönyvtár nem üres. Néhány fájl esetleg felülíródhat. "
+"Biztosan folytatni kívánja a műveletet?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
-msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "A(z) „%FILENAME” helyi célkönyvtár nem üres. Néhány fájl esetleg felülíródhat. Biztosan folytatni kívánja a műveletet?"
+msgid "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"A(z) „%FILENAME” helyi célkönyvtár nem üres. Néhány fájl esetleg "
+"felülíródhat. Biztosan folytatni kívánja a műveletet?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
-msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr "A megadott néven már el vannak mentve beállítások. Felülírja a már elmentett beállításokat? "
+msgid "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr ""
+"A megadott néven már el vannak mentve beállítások. Felülírja a már elmentett "
+"beállításokat? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
-msgid  "Exporting documents..."
+msgid "Exporting documents..."
 msgstr "Dokumentumok exportálása..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
-msgid  "Preparing export..."
+msgid "Preparing export..."
 msgstr "Exportálás előkészítése..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
-msgid  "Copying layout files..."
+msgid "Copying layout files..."
 msgstr "Elrendezésfájlok másolása..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
-msgid  "Preparing table of contents generation..."
+msgid "Preparing table of contents generation..."
 msgstr "Felkészülés a tartalomjegyzék létrehozására..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
-msgid  "Generating table of contents..."
+msgid "Generating table of contents..."
 msgstr "Tartalomjegyzék létrehozása..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
-msgid  "Initializing..."
+msgid "Initializing..."
 msgstr "Inicializálás..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
-msgid  "Preparing to publish..."
+msgid "Preparing to publish..."
 msgstr "Felkészülés a közzétételre..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
-msgid  "Publishing to local directory..."
+msgid "Publishing to local directory..."
 msgstr "Közzététel helyi mappába..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
-msgid  "Publishing to FTP destination..."
+msgid "Publishing to FTP destination..."
 msgstr "Közzététel FTP-kiszolgálóra..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
-msgid  "Publishing to a ZIP archive..."
+msgid "Publishing to a ZIP archive..."
 msgstr "Közzététel ZIP-archívumfájlba..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
-msgid  "Finishing..."
+msgid "Finishing..."
 msgstr "Befejezés..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
-msgid  "Graphic files"
+msgid "Graphic files"
 msgstr "Képfájlok"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
-msgid  "All files"
+msgid "All files"
 msgstr "Minden fájl"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
-msgid  "~ZIP archive files"
+msgid "~ZIP archive files"
 msgstr "~ZIP-archívumfájlok"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
-msgid  "Background images"
+msgid "Background images"
 msgstr "Háttérképek"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
-msgid  "Choose a background image: "
+msgid "Choose a background image: "
 msgstr "Háttérkép választása: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
-msgid  "Icon sets"
+msgid "Icon sets"
 msgstr "Ikonkészletek"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
-msgid  "Choose an icon set:"
+msgid "Choose an icon set:"
 msgstr "Ikonkészlet választása:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
-msgid  "Other..."
+msgid "Other..."
 msgstr "Egyéb..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Nincs"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
-msgid  "Your web site was created successfully into: %FILENAME"
+msgid "Your web site was created successfully into: %FILENAME"
 msgstr "A webhely sikeresen létre lett hozva ebbe: %FILENAME"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
-msgid  "One or more errors occurred when generating the web site."
+msgid "One or more errors occurred when generating the web site."
 msgstr "Egy vagy több hiba keletkezett a webhely létrehozása során."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
-msgid  "An error occurred while generating the table of contents page(s). "
+msgid "An error occurred while generating the table of contents page(s). "
 msgstr "Hiba történt a tartalomjegyzék létrehozása közben. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
-msgid  "An error occurred while copying the layout files. "
+msgid "An error occurred while copying the layout files. "
 msgstr "Hiba történt az elrendezésfájlok másolása közben. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
-msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgid "An error occurred while gathering document information for '%FILENAME'. "
 msgstr "Hiba történt a(z) „%FILENAME” dokumentum adatai összegyűjtése közben. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
-msgid  "An error occurred while exporting the document '%FILENAME'."
+msgid "An error occurred while exporting the document '%FILENAME'."
 msgstr "Hiba történt a(z) „%FILENAME” dokumentum exportálása közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
-msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr "Hiba történt a(z) „%FILENAME” dokumentum exportálási könyvtárának létrehozása közben."
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr ""
+"Hiba történt a(z) „%FILENAME” dokumentum exportálási könyvtárának "
+"létrehozása közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
-msgid  "A security error occurred while exporting the document '%FILENAME'."
-msgstr "Biztonsági hiba lépett fel a(z) „%FILENAME” dokumentum exportálása közben."
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr ""
+"Biztonsági hiba lépett fel a(z) „%FILENAME” dokumentum exportálása közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
-msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr "Bemeneti/kimeneti hiba történt a(z) „%FILENAME” dokumentum exportálása közben."
+msgid "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr ""
+"Bemeneti/kimeneti hiba történt a(z) „%FILENAME” dokumentum exportálása "
+"közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
-msgid  "An error occurred while copying media files to the temporary directory."
+msgid "An error occurred while copying media files to the temporary directory."
 msgstr "Hiba történt a médiafájlok átmeneti helyre történő másolása közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
-msgid  "The web site could not be copied to the following destination: %URL"
+msgid "The web site could not be copied to the following destination: %URL"
 msgstr "A webhely nem másolható a következő célhelyre: %URL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
-msgid  "An unexpected error occurred: %ERROR"
+msgid "An unexpected error occurred: %ERROR"
 msgstr "Váratlan hiba történt: %ERROR"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
-msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
 msgstr "Váratlan hiba történt a(z) „%FILENAME” fájl érvényesítése közben."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
-msgid  "%FILENAME' is a folder."
+msgid "%FILENAME' is a folder."
 msgstr "A(z) „%FILENAME” egy mappa"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
-msgid  "Loading Web Wizard Settings..."
+msgid "Loading Web Wizard Settings..."
 msgstr "A Webtündér beállításainak betöltése..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
-msgid  "An unexpected error occurred."
+msgid "An unexpected error occurred."
 msgstr "Váratlan hiba történt."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
-msgid  "Validating documents..."
+msgid "Validating documents..."
 msgstr "Dokumentumok érvényesítése..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
-msgid  "My Archive"
+msgid "My Archive"
 msgstr "Saját archívum"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
-msgid  "Introduction "
+msgid "Introduction "
 msgstr "Bevezetés "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
-msgid  "Documents "
+msgid "Documents "
 msgstr "Dokumentumok "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
-msgid  "Main layout"
+msgid "Main layout"
 msgstr "Fő elrendezés"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
-msgid  "Layout details"
+msgid "Layout details"
 msgstr "Elrendezés részletei"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
-msgid  "Style"
+msgid "Style"
 msgstr "Stílus"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
-msgid  "Web site information"
+msgid "Web site information"
 msgstr "Webhely adatai"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Előnézet"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "A kiválasztott beállítások törölve lesznek.\n\nBiztos benne, hogy törli ezeket a beállításokat? "
+msgid "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr ""
+"A kiválasztott beállítások törölve lesznek.\n"
+"\n"
+"Biztos benne, hogy törli ezeket a beállításokat? "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
-msgid  "%NUMBER pages"
+msgid "%NUMBER pages"
 msgstr "%NUMBER oldal"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
-msgid  "%NUMBER slides"
+msgid "%NUMBER slides"
 msgstr "%NUMBER dia"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
-msgid  "Created: %DATE"
+msgid "Created: %DATE"
 msgstr "Létrehozva: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
-msgid  "Last modified: %DATE"
+msgid "Last modified: %DATE"
 msgstr "Utolsó módosítás: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
-msgid  "Web Wizard Settings"
+msgid "Web Wizard Settings"
 msgstr "Webtündér beállításai"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
-msgid  "Background image:"
+msgid "Background image:"
 msgstr "Háttérkép:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
-msgid  "Icon set:"
+msgid "Icon set:"
 msgstr "Ikonkészlet:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
-msgid  "The icon set is used for presentations in HTML format."
+msgid "The icon set is used for presentations in HTML format."
 msgstr "Az ikonkészlet a HTML formátumú bemutatókhoz kerül felhasználásra."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
-msgid  "HTML Metadata"
+msgid "HTML Metadata"
 msgstr "HTML-metaadat"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
-msgid  "Choose..."
+msgid "Choose..."
+msgstr "Kiválasztás..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__141.STRING.TEXT
+msgid "Choose..."
 msgstr "Kiválasztás..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
-msgid  "<default>"
+msgid "<default>"
 msgstr "<alapértelmezett>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
-msgid  "Publishing via FTP Proxy is not supported."
+msgid "Publishing via FTP Proxy is not supported."
 msgstr "FTP-proxyn keresztüli közzététel nem támogatott."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
-msgid  "<no background image>"
+msgid "<no background image>"
 msgstr "<nincs háttérkép>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
-msgid  "<no icon set>"
+msgid "<no icon set>"
 msgstr "<nincs ikonkészlet>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' could not be created."
+msgid "The FTP directory '%FILENAME' could not be created."
 msgstr "A(z) „%FILENAME” FTP-könyvtár nem hozható létre."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "A(z) „%FILENAME” FTP-könyvtár nem létezik.\nLétrehozza a könyvtárat most?"
+msgid "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"A(z) „%FILENAME” FTP-könyvtár nem létezik.\n"
+"Létrehozza a könyvtárat most?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
-msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr "A(z) „%FILENAME” nevű ZIP-archívum nem hozható létre, mert egy vele megegyező nevű könyvtár már létezik."
+msgid "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr ""
+"A(z) „%FILENAME” nevű ZIP-archívum nem hozható létre, mert egy vele "
+"megegyező nevű könyvtár már létezik."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "A(z) „%FILENAME” helyi könyvtár nem hozható létre.\nEllenőrizze az írási jogosultságot."
+msgid "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr ""
+"A(z) „%FILENAME” helyi könyvtár nem hozható létre.\n"
+"Ellenőrizze az írási jogosultságot."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "A(z) „%FILENAME” helyi könyvtár nem létezik.\nLétrehozza a könyvtárat most?"
+msgid "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"A(z) „%FILENAME” helyi könyvtár nem létezik.\n"
+"Létrehozza a könyvtárat most?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
-msgid  "Size: %NUMBERKB"
+msgid "Size: %NUMBERKB"
 msgstr "Méret: %NUMBERKB"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
-msgid  "File not found. Would you like to specify a new file location?"
+msgid "File not found. Would you like to specify a new file location?"
 msgstr "Fájl nem található. Szeretne megadni egy új fájlelérési útvonalat?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
-msgid  "FTP Connection"
+msgid "FTP Connection"
 msgstr "FTP-kapcsolat"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
-msgid  "~User name:"
+msgid "~User name:"
 msgstr "~Felhasználói név:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
-msgid  "~Password:"
+msgid "~Password:"
 msgstr "~Jelszó:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
-msgid  "Connect"
+msgid "Connect"
 msgstr "Kapcsolat"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
-msgid  "1. Enter FTP connection information."
+msgid "1. Enter FTP connection information."
 msgstr "1. Adja meg az FTP-kapcsolat adatait."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
-msgid  "~Server name or IP address:"
+msgid "~Server name or IP address:"
 msgstr "~Kiszolgáló neve vagy IP-címe:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
-msgid  "2. Connect to the server."
+msgid "2. Connect to the server."
 msgstr "2. Kapcsolódás a kiszolgálóhoz."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
-msgid  "3. ~Choose a remote directory (optional)."
+msgid "3. ~Choose a remote directory (optional)."
 msgstr "3. Távoli könyvtár ~kiválasztása (opcionális)."
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
-msgid  "Connection status is unknown"
+msgid "Connection status is unknown"
 msgstr "A kapcsolat állapota ismeretlen"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
-msgid  "Connection was established successfully"
+msgid "Connection was established successfully"
 msgstr "A kapcsolat sikeresen létrejött"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
-msgid  "Username or password is wrong"
+msgid "Username or password is wrong"
 msgstr "Nem megfelelő felhasználói név vagy jelszó"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
-msgid  "Could not resolve server name"
+msgid "Could not resolve server name"
 msgstr "A kiszolgáló nevét nem sikerült feloldani"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
-msgid  "You do not have sufficient user rights"
+msgid "You do not have sufficient user rights"
 msgstr "Nem rendelkezik elegendő jogosultsággal"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
-msgid  "Cannot connect to server"
+msgid "Cannot connect to server"
 msgstr "Nem lehet kapcsolódni a kiszolgálóhoz"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
-msgid  "Unexpected error"
+msgid "Unexpected error"
 msgstr "Nem várt hiba"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
-msgid  "FTP publishing directory"
+msgid "FTP publishing directory"
 msgstr "FTP-közzététel mappája"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
-msgid  "This is not an FTP folder"
+msgid "This is not an FTP folder"
 msgstr "Ez nem egy FTP-mappa"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
-msgid  "Connecting..."
+msgid "Connecting..."
 msgstr "Kapcsolódás..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Agenda Wizard"
+msgid "Agenda Wizard"
 msgstr "Napirend tündér"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "Make ~manual changes to this agenda template"
+msgid "Make ~manual changes to this agenda template"
 msgstr "Napirendsablon meg~változtatása"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.STRING.TEXT
+msgid "Template name:"
+msgstr "Sablon neve:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.STRING.TEXT
+msgid "Location and file name:"
+msgstr "Hely és fájlnév:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.STRING.TEXT
+msgid "What do you want to do next?"
+msgstr "Mi legyen a következő lépés?"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
-msgid  "Please choose the page design for the agenda"
+msgid "Please choose the page design for the agenda"
 msgstr "Válassza ki a napirend oldaltervét"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
-msgid  "Please select the headings you wish to include in your agenda template"
-msgstr "Válassza ki a címsorokat, amelyeket a napirendsablonban szerepeltetni kíván"
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr ""
+"Válassza ki a címsorokat, amelyeket a napirendsablonban szerepeltetni kíván"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
-msgid  "Please enter general information for the event"
+msgid "Please enter general information for the event"
 msgstr "Írja be az esemény általános leírását"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
-msgid  "Please specify items for the agenda"
+msgid "Please specify items for the agenda"
 msgstr "Adja meg a napirendi pontokat"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
-msgid  "Please select the names you wish to include in your agenda template"
+msgid "Please select the names you wish to include in your agenda template"
 msgstr "Válassza ki a napirendsablonban szerepeltetni kívánt neveket"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.STRING.TEXT
+msgid "Choose a name and save the template"
+msgstr "Válasszon egy nevet, és mentse a sablont"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
-msgid  "Include form for recording minutes"
+msgid "Include form for recording minutes"
 msgstr "Űrlap beillesztése a jegyzőkönyv vezetéséhez"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
-msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr "Ez a tündér egy napirendsablon létrehozásában lesz segítségére. A sablon bármikor felhasználható napirend létrehozásához."
+msgid "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr ""
+"Ez a tündér egy napirendsablon létrehozásában lesz segítségére. A sablon "
+"bármikor felhasználható napirend létrehozásához."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
-msgid  "Time:"
+msgid "Time:"
 msgstr "Idő:"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.STRING.TEXT
+msgid "Name:"
+msgstr "Név:"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "Hely:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
-msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr "Az üres mezőkben helykitöltők lesznek használva. A helykitöltőket később szöveggel helyettesítheti."
+msgid "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr ""
+"Az üres mezőkben helykitöltők lesznek használva. A helykitöltőket később "
+"szöveggel helyettesítheti."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.STRING.TEXT
+msgid "..."
+msgstr "..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
-msgid  "Create an ~agenda from this template"
+msgid "Create an ~agenda from this template"
 msgstr "~Napirend létrehozása ebből a sablonból"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
-msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Újabb napirendet úgy hozhat létre ebből a sablonból, hogy megkeresi a sablont és dupla kattintással megnyitja."
+msgid "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Újabb napirendet úgy hozhat létre ebből a sablonból, hogy megkeresi a "
+"sablont és dupla kattintással megnyitja."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
-msgid  "Agenda item"
+msgid "Agenda item"
 msgstr "Napirendi pont"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
-msgid  "Responsible"
+msgid "Responsible"
 msgstr "Illetékes"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
-msgid  "Duration"
+msgid "Duration"
 msgstr "Időtartam"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
-msgid  "Meeting called by"
+msgid "Meeting called by"
 msgstr "Az értekezletet összehívta"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.STRING.TEXT
-msgid  "Chairperson"
+msgid "Chairperson"
 msgstr "Elnök"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.STRING.TEXT
-msgid  "Minute keeper"
+msgid "Minute keeper"
 msgstr "Jegyzőkönyvvezető"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
+msgid "Moderator"
+msgstr ""
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
-msgid  "Attendees"
+msgid "Attendees"
 msgstr "Résztvevők"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.STRING.TEXT
-msgid  "Observers"
+msgid "Observers"
 msgstr "Megfigyelők"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.STRING.TEXT
-msgid  "Facility personnel"
+msgid "Facility personnel"
 msgstr "Kisegítő személyzet"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
-msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr "A napirendsablon tartalmazni fogja a helykitöltőket a kiválasztott emberek neveinek helyén. Amikor a napirendet létrehozza sablonból, kicserélheti ezeket a helykitöltőket a megfelelő nevekre."
+msgid "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr ""
+"A napirendsablon tartalmazni fogja a helykitöltőket a kiválasztott emberek "
+"neveinek helyén. Amikor a napirendet létrehozza sablonból, kicserélheti "
+"ezeket a helykitöltőket a megfelelő nevekre."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
+msgid "Please read"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
-msgid  "Please bring"
+msgid "Please bring"
 msgstr "Elhozandó"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
+msgid "Notes"
+msgstr "Jegyzetek"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
-msgid  "The agenda template will include placeholders for the selected items."
+msgid "The agenda template will include placeholders for the selected items."
 msgstr "A napirendsablon helykitöltőt használ a megadott elemekhez."
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.STRING.TEXT
+msgid "Date:"
+msgstr "Dátum:"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
-msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr "Ez a tündér egy napirendsablon létrehozásában lesz segítségére, amellyel majd számtalan azonos elrendezésű napirendet hozhat létre, azonos beállítások mellett."
+msgid "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr ""
+"Ez a tündér egy napirendsablon létrehozásában lesz segítségére, amellyel "
+"majd számtalan azonos elrendezésű napirendet hozhat létre, azonos "
+"beállítások mellett."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
-msgid  "Page design:"
+msgid "Page design:"
 msgstr "Oldalterv:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
-msgid  "myAgendaTemplate.stw"
+msgid "myAgendaTemplate.stw"
 msgstr "sajatNapirendSablon.stw"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
-msgid  "My Agenda Template"
+msgid "My Agenda Template"
 msgstr "Saját napirendsablon"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
-msgid  "An unexpected error occurred while saving the agenda template."
+msgid "An unexpected error occurred while saving the agenda template."
 msgstr "Váratlan hiba történt a napirendsablon mentése közben."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "Név"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Dátum"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "Idő"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "Hely"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
-msgid  "Click to replace this text"
+msgid "Click to replace this text"
 msgstr "Szöveg beírásához kattintson ide"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.STRING.TEXT
+msgid "Page design"
+msgstr "Oldalterv"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
-msgid  "General information"
+msgid "General information"
 msgstr "Általános információ"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
-msgid  "Headings to include"
+msgid "Headings to include"
 msgstr "Címsor megjelenítése"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
-msgid  "Names"
+msgid "Names"
 msgstr "Nevek"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
-msgid  "Agenda items"
+msgid "Agenda items"
 msgstr "Napirendi pontok"
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.STRING.TEXT
+msgid "Name and location"
+msgstr "Név és hely"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
-msgid  "An unexpected error occurred while opening the agenda template."
+msgid "An unexpected error occurred while opening the agenda template."
 msgstr "Váratlan hiba történt a napirendsablon megnyitása közben."
 
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.STRING.TEXT
+msgid "Please bring"
+msgstr "Elhozandó"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.STRING.TEXT
+msgid "Please read"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.STRING.TEXT
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.STRING.TEXT
+msgid "Meeting called by"
+msgstr "Az értekezletet összehívta"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.STRING.TEXT
+msgid "Chairperson"
+msgstr "Elnök"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.STRING.TEXT
+msgid "Attendees"
+msgstr "Résztvevők"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.STRING.TEXT
+msgid "Minute keeper"
+msgstr "Jegyzőkönyvvezető"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.STRING.TEXT
+msgid "Moderator"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.STRING.TEXT
+msgid "Observers"
+msgstr "Megfigyelők"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.STRING.TEXT
+msgid "Facility personnel"
+msgstr "Kisegítő személyzet"
+
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "Beszúrás"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
-msgid  "Remove"
+msgid "Remove"
 msgstr "Eltávolítás"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr "Felfelé mozgatás"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr "Lefelé mozgatás"
 
 #: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Súgó"
 
 #: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Mégse"
 
 #: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Vissza"
 
 #: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
-msgid  "Ne~xt >>"
+msgid "Ne~xt >>"
 msgstr "~Tovább >>"
 
 #: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "Áta~lakítás"
 
 #: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Bezárás"
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
-msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr "Ez a tündér az %PRODUCTNAME formátumú és Microsoft Office-dokumentumokat konvertálja át az új OpenDocument formátumra."
+msgid "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr ""
+"Ez a tündér az %PRODUCTNAME formátumú és Microsoft Office-dokumentumokat "
+"konvertálja át az új OpenDocument formátumra."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
-msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr "A Microsoft-dokumentumok átalakítása után a VBA-makrók nem fognak működni."
+msgid "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr ""
+"A Microsoft-dokumentumok átalakítása után a VBA-makrók nem fognak működni."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
-msgid  "Select the document type for conversion:"
+msgid "Select the document type for conversion:"
 msgstr "Válassza ki az átalakítandó dokumentum típusát:"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Word templates"
+msgid "Word templates"
 msgstr "Word-sablonok"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Excel templates"
+msgid "Excel templates"
 msgstr "Excel-sablonok"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint templates"
+msgid "PowerPoint templates"
 msgstr "PowerPoint-sablonok"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Word documents"
+msgid "Word documents"
 msgstr "Word-dokumentumok"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Excel documents"
+msgid "Excel documents"
 msgstr "Excel-dokumentumok"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint documents"
+msgid "PowerPoint documents"
 msgstr "PowerPoint-dokumentumok"
 
 #: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
-msgid  "Including subdirectories"
+msgid "Including subdirectories"
 msgstr "Alkönyvtárakkal együtt"
 
 #: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
-msgid  "Microsoft Office"
+msgid "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
-msgid  "Summary:"
+msgid "Summary:"
 msgstr "Összegzés:"
 
 #: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
-msgid  "Import from:"
+msgid "Import from:"
 msgstr "Importálás:"
 
 #: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
-msgid  "Save to:"
+msgid "Save to:"
 msgstr "Mentés fájlba:"
 
 #: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
-msgid  "Imported_Templates"
+msgid "Imported_Templates"
 msgstr "Importált sablonok"
 
 #: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
-msgid  "Progress: "
+msgid "Progress: "
 msgstr "Folyamat: "
 
 #: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
-msgid  "Document"
+msgid "Document"
 msgstr "Dokumentum"
 
 #: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
-msgid  "Documents"
+msgid "Documents"
 msgstr "dokumentum"
 
 #: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
-msgid  "Templates"
+msgid "Templates"
 msgstr "sablon"
 
 #: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
-msgid  "The '%1' directory cannot be created: "
+msgid "The '%1' directory cannot be created: "
 msgstr "A(z) „%1” könyvtár létrehozása sikertelen: "
 
 #: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
-msgid  "The '%1' directory does not exist."
+msgid "The '%1' directory does not exist."
 msgstr "A(z) „%1” könyvtár nem létezik."
 
 #: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
-msgid  "Do you want to create it now?"
+msgid "Do you want to create it now?"
 msgstr "Létrehozza most?"
 
 #: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "A(z) „<1>” fájl már létezik.<CR>Felülírja?"
 
 #: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
-msgid  "Directories do not exist"
+msgid "Directories do not exist"
 msgstr "A könyvtárak nem léteznek"
 
 #: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
-msgid  "Do you want to overwrite documents without being asked?"
+msgid "Do you want to overwrite documents without being asked?"
 msgstr "Rákérdezés nélkül akarja felülírni a dokumentumokat?"
 
 #: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
-msgid  "Document macro has to be revised."
+msgid "Document macro has to be revised."
 msgstr "Át kell dolgozni a dokumentummakrót."
 
 #: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be saved."
+msgid "Document '<1>' could not be saved."
 msgstr "A(z) „<1>” dokumentum mentése nem sikerült."
 
 #: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be opened."
+msgid "Document '<1>' could not be opened."
 msgstr "A(z) „<1>” dokumentum megnyitása nem sikerült."
 
 #: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
-msgstr "Biztosan meg akarja szakítani az átalakítást?"
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Biztosan meg akarja szakítani az átváltást?"
 
 #: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
-msgid  "Cancel Wizard"
-msgstr "Tündér megszakítása"
+msgid "Cancel Wizard"
+msgstr "Tündér leállítása"
 
 #: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
-msgid  "An unexpected error has occurred in the wizard."
+msgid "An unexpected error has occurred in the wizard."
 msgstr "Váratlan hiba történt a tündérben."
 
 #: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Hiba"
 
 #: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
-msgid  "Select a directory"
+msgid "Select a directory"
 msgstr "Könyvtár választása"
 
 #: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
-msgid  "Document Converter"
+msgid "Document Converter"
 msgstr "Dokumentumátalakító"
 
 #: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Folyamat"
 
 #: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
-msgid  "Retrieving the relevant documents:"
+msgid "Retrieving the relevant documents:"
 msgstr "A releváns dokumentumok előkeresése:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
-msgid  "Converting the documents"
+msgid "Converting the documents"
 msgstr "A dokumentumok átalakítása folyamatban"
 
 #: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
-msgid  "Found:"
+msgid "Found:"
 msgstr "Találatlista:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
-msgid  "%1 found"
+msgid "%1 found"
 msgstr "%1 találat"
 
 #: importwizard/importwi.src#SREADY.STRING.TEXT
-msgid  "Finished"
+msgid "Finished"
 msgstr "Kész"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Text templates"
+msgid "Text templates"
 msgstr "Szövegsablonok"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheet templates"
+msgid "Spreadsheet templates"
 msgstr "Munkafüzetsablonok"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation templates"
+msgid "Drawing/presentation templates"
 msgstr "Rajz- és bemutatósablonok"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
-msgid  "Master documents"
+msgid "Master documents"
 msgstr "Fődokumentumok"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Text documents"
+msgid "Text documents"
 msgstr "Szöveges dokumentumok"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheets"
+msgid "Spreadsheets"
 msgstr "Munkafüzetek"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation documents"
+msgid "Drawing/presentation documents"
 msgstr "Rajz- és bemutatódokumentumok"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
-msgid  "Master documents/formulas"
+msgid "Master documents/formulas"
 msgstr "Fődokumentumok és képletek"
 
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_1.STRING.TEXT
+msgid "Master documents"
+msgstr "Fődokumentumok"
+
 #: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
-msgid  "Formulas"
+msgid "Formulas"
 msgstr "Képletek"
 
 #: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
-msgid  "Source documents"
+msgid "Source documents"
 msgstr "Forrásdokumentumok"
 
 #: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
-msgid  "Target documents"
+msgid "Target documents"
 msgstr "Céldokumentumok"
 
 #: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
-msgid  "Create log file"
+msgid "Create log file"
 msgstr "Naplófájl készítése"
 
 #: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
-msgid  "<COUNT> documents converted"
+msgid "<COUNT> documents converted"
 msgstr "<COUNT> dokumentum átalakítva"
 
 #: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
-msgid  "A log file will be created in your work directory"
+msgid "A log file will be created in your work directory"
 msgstr "A munkakönyvtárba naplófájl készül."
 
 #: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
-msgid  "Show log file"
+msgid "Show log file"
 msgstr "Napló megjelenítése"
 
 #: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
-msgid  "All subdirectories will be taken into account"
+msgid "All subdirectories will be taken into account"
 msgstr "Minden alkönyvtárat számításba vesz"
 
 #: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
-msgid  "These will be exported to the following directory:"
+msgid "These will be exported to the following directory:"
 msgstr "Ezek a következő könyvtárba lesznek exportálva:"
 
 #: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-szövegesdokumentum importálása következik:"
+msgid "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-szövegesdokumentum "
+"importálása következik:"
 
 #: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-munkafüzet importálása következik:"
+msgid "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-munkafüzet importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-rajz és -bemutató importálása következik:"
+msgid "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-rajz és -bemutató "
+"importálása következik:"
 
 #: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-képlet importálása következik:"
+msgid "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-képlet importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-szövegsablon importálása következik:"
+msgid "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-szövegsablon "
+"importálása következik:"
 
 #: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-táblázatsablon importálása következik:"
+msgid "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-táblázatsablon "
+"importálása következik:"
 
 #: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME rajz- és bemutatósablon importálása következik:"
+msgid "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME rajz- és "
+"bemutatósablon importálása következik:"
 
 #: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes %PRODUCTNAME-fődokumentum importálása következik:"
+msgid "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes %PRODUCTNAME-fődokumentum "
+"importálása következik:"
 
 #: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
-msgid  "All Word documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes Word-dokumentum importálása következik:"
+msgid "All Word documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes Word-dokumentum importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
-msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes Excel-dokumentum importálása következik:"
+msgid "All Excel documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes Excel-dokumentum importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
-msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes PowerPoint-dokumentum importálása következik:"
+msgid "All PowerPoint documents contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes PowerPoint-dokumentum importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
-msgid  "All Word templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes Word-sablon importálása következik:"
+msgid "All Word templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes Word-sablon importálása következik:"
 
 #: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
-msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes Excel-sablon importálása következik:"
+msgid "All Excel templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes Excel-sablon importálása "
+"következik:"
 
 #: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
-msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr "A következő könyvtárban található összes PowerPoint-sablon importálása következik:"
+msgid "All PowerPoint templates contained in the following directory will be imported:"
+msgstr ""
+"A következő könyvtárban található összes PowerPoint-sablon importálása "
+"következik:"
 
 #: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
-msgid  "%PRODUCTNAME Calendar"
+msgid "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME Naptár"
 
 #: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
-msgid  "Back"
+msgid "Back"
 msgstr "Vissza"
 
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "Személyes adatok"
 
 #: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
-msgid  "Add Holidays to Calendar"
+msgid "Add Holidays to Calendar"
 msgstr "Ünnepnapok hozzáadása a naptárhoz"
 
 #: schedule/schedule.src#DLGOK.STRING.TEXT
-msgid  "Create"
+msgid "Create"
 msgstr "Létrehozás"
 
 #: schedule/schedule.src#DLGCANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Mégse"
 
 #: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "Naptár"
 
 #: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
-msgid  "~Year Overview"
+msgid "~Year Overview"
 msgstr "~Éves áttekintés"
 
 #: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "~Hónap"
 
 #: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
-msgid  "Add holidays for"
+msgid "Add holidays for"
 msgstr "Ünnepnapok felvétele az alábbihoz"
 
 #: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
-msgid  "USA"
+msgid "USA"
 msgstr "USA"
 
 #: schedule/schedule.src#DLGTIME.STRING.TEXT
-msgid  "Time Frame"
+msgid "Time Frame"
 msgstr "Időkeret"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "Év"
 
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "Hónap"
 
+#: schedule/schedule.src#DLGCALOWNDATA.STRING.TEXT
+msgid "Personal Data"
+msgstr "Személyes adatok"
+
 #: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "~Beszúrás"
 
 #: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Törlés"
 
 #: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
-msgid  "New Event"
+msgid "New Event"
 msgstr "Új esemény"
 
 #: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
-msgid  "Event"
+msgid "Event"
 msgstr "Esemény"
 
 #: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
-msgid  "One-Time"
+msgid "One-Time"
 msgstr "Egyszeri"
 
 #: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "Nap"
 
+#: schedule/schedule.src#DLGCALEVENTMONTH.STRING.TEXT
+msgid "Month"
+msgstr "Hónap"
+
+#: schedule/schedule.src#DLGCALEVENTYEAR.STRING.TEXT
+msgid "Year"
+msgstr "Év"
+
 #: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
-msgid  "usa.bmp"
+msgid "usa.bmp"
 msgstr "usa.bmp"
 
 #: schedule/schedule.src#DLGSTATE.STRING.TEXT
-msgid  "Public holidays"
+msgid "Public holidays"
 msgstr "Munkaszüneti nap"
 
 #: schedule/schedule.src#DLGMONTH.STRING.TEXT
-msgid  "January"
+msgid "January"
 msgstr "Január"
 
 #: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
-msgid  "February"
+msgid "February"
 msgstr "Február"
 
 #: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
-msgid  "March"
+msgid "March"
 msgstr "Március"
 
 #: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
-msgid  "April"
+msgid "April"
 msgstr "Április"
 
 #: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
-msgid  "May"
+msgid "May"
 msgstr "Május"
 
 #: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
-msgid  "June"
+msgid "June"
 msgstr "Június"
 
 #: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
-msgid  "July"
+msgid "July"
 msgstr "Július"
 
 #: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
-msgid  "August"
+msgid "August"
 msgstr "Augusztus"
 
 #: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
-msgid  "September"
+msgid "September"
 msgstr "Szeptember"
 
 #: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
-msgid  "October"
+msgid "October"
 msgstr "Október"
 
 #: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
-msgid  "November"
+msgid "November"
 msgstr "November"
 
 #: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
-msgid  "December"
+msgid "December"
 msgstr "December"
 
 #: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
-msgid  "Yearly / Monthly Calendar"
+msgid "Yearly / Monthly Calendar"
 msgstr "Éves / Havi naptár"
 
 #: schedule/schedule.src#MSGCALERROR.STRING.TEXT
-msgid  "An error occurred while creating the calendar."
+msgid "An error occurred while creating the calendar."
 msgstr "Hiba történt a naptár létrehozása közben."
 
 #: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
-msgid  "Delete event entries"
+msgid "Delete event entries"
 msgstr "Az események törlése"
 
 #: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
-msgid  "Delete the selected entries?"
+msgid "Delete the selected entries?"
 msgstr "Törli a kijelölt eseményeket?"
 
 #: schedule/schedule.src#STLWORKDAY.STRING.TEXT
-msgid  "Workweek"
+msgid "Workweek"
 msgstr "Munkahét"
 
 #: schedule/schedule.src#STLWEEKEND.STRING.TEXT
-msgid  "Weekend"
+msgid "Weekend"
 msgstr "Hétvége"
 
+#: schedule/schedule.src#NAMECALYEAR.STRING.TEXT
+msgid "Calendar"
+msgstr "Naptár"
+
+#: schedule/schedule.src#NAMECALMONTH.STRING.TEXT
+msgid "Month"
+msgstr "Hónap"
+
 #: schedule/schedule.src#SPROGRESS.STRING.TEXT
-msgid  "Progress:"
+msgid "Progress:"
 msgstr "Folyamat:"
 
 #: template/template.src#SAMPLES.STRING.TEXT
-msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr "Ahhoz, hogy a minta összes funkcióját használhassa, hozzon létre egy erre a sablonra épülő dokumentumot."
+msgid "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr ""
+"Ahhoz, hogy a minta összes funkcióját használhassa, hozzon létre egy erre a "
+"sablonra épülő dokumentumot."
 
 #: template/template.src#SAMPLES___1.STRING.TEXT
-msgid  "Remarks"
+msgid "Remarks"
 msgstr "Megjegyzések"
 
 #: template/template.src#STYLES.STRING.TEXT
-msgid  "Theme Selection"
+msgid "Theme Selection"
 msgstr "Témaválasztás"
 
 #: template/template.src#STYLES___1.STRING.TEXT
-msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr "Hiba történt a dokumentum vágólapra helyezése közben. A következő művelet nem vonható vissza."
+msgid "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr ""
+"Hiba történt a dokumentum vágólapra helyezése közben. A következő művelet "
+"nem vonható vissza."
 
 #: template/template.src#STYLES___2.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Mégse"
 
 #: template/template.src#STYLES___3.STRING.TEXT
-msgid  "~OK"
+msgid "~OK"
 msgstr "~OK"
 
 #: template/template.src#AGENDADLGNAME.STRING.TEXT
-msgid  "Minutes Template"
+msgid "Minutes Template"
 msgstr "Jegyzőkönyvsablon"
 
 #: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
-msgid  "An option must be confirmed."
+msgid "An option must be confirmed."
 msgstr "Az egyik beállítást jóvá kell hagynia."
 
 #: template/template.src#AGENDADLGFRAME.STRING.TEXT
-msgid  "Minutes Type"
+msgid "Minutes Type"
 msgstr "Jegyzőkönyv típusa"
 
 #: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
-msgid  "Results Minutes"
+msgid "Results Minutes"
 msgstr "Jegyzőkönyv az eredményekről"
 
 #: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
-msgid  "Evaluation Minutes"
+msgid "Evaluation Minutes"
 msgstr "Kiértékelő jegyzőkönyv"
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
-msgid  "The bookmark 'Recipient' is missing."
+msgid "The bookmark 'Recipient' is missing."
 msgstr "A „Címzett” könyvjelző hiányzik."
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
-msgid  "Form letter fields can not be included."
+msgid "Form letter fields can not be included."
 msgstr "A körlevélmezőket nem lehet befoglalni."
 
 #: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
-msgid  "An error has occurred."
+msgid "An error has occurred."
 msgstr "Hiba történt."
 
 #: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
-msgid  "Addressee"
+msgid "Addressee"
 msgstr "Címzett"
 
 #: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
-msgid  "One recipient"
+msgid "One recipient"
 msgstr "Egy címzett"
 
 #: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
-msgid  "Several recipients (address database)"
+msgid "Several recipients (address database)"
 msgstr "Több címzett (címlista-adatbázis)"
 
 #: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
-msgid  "Use of This Template"
+msgid "Use of This Template"
 msgstr "Sablon használata"
 
 #: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
-msgid  "Click placeholder and overwrite"
+msgid "Click placeholder and overwrite"
 msgstr "Kattintson a helykitöltőre, és írja felül"
 
 #: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
-msgid  "Company"
+msgid "Company"
 msgstr "Szervezet"
 
 #: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
-msgid  "Department"
+msgid "Department"
 msgstr "Részleg"
 
 #: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
-msgid  "First Name"
+msgid "First Name"
 msgstr "Utónév"
 
 #: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
-msgid  "Last Name"
+msgid "Last Name"
 msgstr "Vezetéknév"
 
 #: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
-msgid  "Street"
+msgid "Street"
 msgstr "Utca"
 
 #: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
-msgid  "Country"
+msgid "Country"
 msgstr "Ország"
 
 #: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
-msgid  "ZIP/Postal Code"
+msgid "ZIP/Postal Code"
 msgstr "Irányítószám"
 
 #: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
-msgid  "City"
+msgid "City"
 msgstr "Város"
 
 #: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Cím"
 
 #: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "Pozíció"
 
 #: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
-msgid  "Form of Address"
+msgid "Form of Address"
 msgstr "Cím formátuma"
 
 #: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
-msgid  "Initials"
+msgid "Initials"
 msgstr "Monogram"
 
 #: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
-msgid  "Salutation"
+msgid "Salutation"
 msgstr "Megszólítás"
 
 #: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
-msgid  "Home Phone"
+msgid "Home Phone"
 msgstr "Otthoni telefonszám"
 
 #: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
-msgid  "Work Phone"
+msgid "Work Phone"
 msgstr "Munkahelyi telefonszám"
 
 #: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "Fax"
 
 #: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr "E-mail"
 
 #: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
-msgid  "Notes"
+msgid "Notes"
 msgstr "Jegyzetek"
 
 #: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
-msgid  "Alt. Field 1"
+msgid "Alt. Field 1"
 msgstr "1. alt. mező"
 
 #: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
-msgid  "Alt. Field 2"
+msgid "Alt. Field 2"
 msgstr "2. alt. mező"
 
 #: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
-msgid  "Alt. Field 3"
+msgid "Alt. Field 3"
 msgstr "3. alt. mező"
 
 #: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
-msgid  "Alt. Field 4"
+msgid "Alt. Field 4"
 msgstr "4. alt. mező"
 
 #: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
-msgid  "ID"
+msgid "ID"
 msgstr "Azonosító"
 
 #: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "Állam"
 
 #: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
-msgid  "Office Phone"
+msgid "Office Phone"
 msgstr "Munkahelyi telefon"
 
 #: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
-msgid  "Pager"
+msgid "Pager"
 msgstr "Személyhívó"
 
 #: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
-msgid  "Mobile Phone"
+msgid "Mobile Phone"
 msgstr "Mobiltelefon"
 
 #: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
-msgid  "Other Phone"
+msgid "Other Phone"
 msgstr "Egyéb telefonszám"
 
 #: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
-msgid  "Calendar URL"
+msgid "Calendar URL"
 msgstr "Naptár URL"
 
 #: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
-msgid  "Invite"
+msgid "Invite"
 msgstr "Meghívás"
 
 #: template/template.src#TEXTFIELD.STRING.TEXT
-msgid  "User data field is not defined!"
+msgid "User data field is not defined!"
 msgstr "A felhasználói adatmező nincs definiálva!"
 
 #: template/template.src#NEWSLETTER.STRING.TEXT
-msgid  "General layout"
+msgid "General layout"
 msgstr "Általános elrendezés"
 
 #: template/template.src#NEWSLETTER___1.STRING.TEXT
-msgid  "Default layout"
+msgid "Default layout"
 msgstr "Alapértelmezett kiosztás"
 
 #: template/template.src#NEWSLETTER___2.STRING.TEXT
-msgid  "Commemorative publication layout"
+msgid "Commemorative publication layout"
 msgstr "Megemlékezőkiadvány-elrendezés"
 
 #: template/template.src#NEWSLETTER___3.STRING.TEXT
-msgid  "Brochure layout"
+msgid "Brochure layout"
 msgstr "Brosúraelrendezés"
 
 #: template/template.src#NEWSLETTER___10.STRING.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "Formátum"
 
 #: template/template.src#NEWSLETTER___11.STRING.TEXT
-msgid  "Single-sided"
+msgid "Single-sided"
 msgstr "Egyoldalas"
 
 #: template/template.src#NEWSLETTER___12.STRING.TEXT
-msgid  "Double-sided"
+msgid "Double-sided"
 msgstr "Kétoldalas"

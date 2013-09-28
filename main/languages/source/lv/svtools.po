@@ -1,3020 +1,3122 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Virsraksts"
+msgid "Title"
+msgstr "Tituls"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.STRING.TEXT
-msgid  "Size"
+msgid "Size"
 msgstr "Izmērs"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
-msgid  "Date modified"
+msgid "Date modified"
 msgstr "Izmaiņu datums"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "Tips"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
-msgid  "Could not create the folder %1."
+msgid "Could not create the folder %1."
 msgstr "Nevar izveidot mapi %1."
 
 #: contnr/fileview.src#STR_SVT_BYTES.STRING.TEXT
-msgid  "Bytes"
+msgid "Bytes"
 msgstr "Baiti"
 
 #: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
-msgid  "KB"
+msgid "KB"
 msgstr "KB"
 
 #: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
-msgid  "MB"
+msgid "MB"
 msgstr "MB"
 
 #: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
-msgid  "GB"
+msgid "GB"
 msgstr "GB"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Dzēst"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MENUITEM.TEXT
-msgid  "~Rename"
+msgid "~Rename"
 msgstr "Pā~rsaukt"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.MODALDIALOG.TEXT
-msgid  "Confirm Delete"
+msgid "Confirm Delete"
 msgstr "Apstiprināt dzēšanu"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FIXEDTEXT.TEXT
-msgid  "Entry:"
+msgid "Entry:"
 msgstr "Ieraksts:"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
-msgid  "Are you sure you want to delete the selected data?"
+msgid "Are you sure you want to delete the selected data?"
 msgstr "Vai tiešām vēlaties dzēst izvēlētos datus?"
 
+#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
+msgid "~Delete"
+msgstr "~Dzēst"
+
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
-msgid  "Delete ~All"
+msgid "Delete ~All"
 msgstr "Dzēst ~visu"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PUSHBUTTON.TEXT
-msgid  "Do ~Not Delete"
+msgid "Do ~Not Delete"
 msgstr "~Nedzēst"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.STRING.TEXT
-msgid  "Row: %1, Column: %2"
+msgid "Row: %1, Column: %2"
 msgstr "Rinda: %1, Kolonna: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.STRING.TEXT
-msgid  ", Type: %1, URL: %2"
+msgid ", Type: %1, URL: %2"
 msgstr ", Tips: %1, URL: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.STRING.TEXT
-msgid  "Folder"
+msgid "Folder"
 msgstr "Mape"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
-msgid  "File"
+msgid "File"
 msgstr "Fails"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
-msgid  "Empty Field"
+msgid "Empty Field"
 msgstr "Tukšs lauks"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC.STRING.TEXT
-msgid  "New Document"
+msgid "New Document"
 msgstr "Jauns dokuments"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS.STRING.TEXT
-msgid  "My Documents"
+msgid "My Documents"
 msgstr "Mani dokumenti"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES.STRING.TEXT
-msgid  "Templates"
+msgid "Templates"
 msgstr "Sagataves"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES.STRING.TEXT
-msgid  "Samples"
+msgid "Samples"
 msgstr "Piemēri"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
-msgid  "Back"
+msgid "Back"
 msgstr "Atpakaļ"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
-msgid  "Up One Level"
+msgid "Up One Level"
 msgstr "Vienu līmeni augšup"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "Drukāt"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
-msgid  "Document Properties"
+msgid "Document Properties"
 msgstr "Dokumenta īpašības"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Priekšskatījums"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
-msgid  "Templates and Documents"
+msgid "Templates and Documents"
 msgstr "Sagataves un dokumenti"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FIXEDTEXT.TEXT
-msgid  "~Get more templates online..."
+msgid "~Get more templates online..."
 msgstr "Ie~gūt vairāk sagatavju Internetā..."
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organi~ze..."
+msgid "Organi~ze..."
 msgstr "Organi~zēt..."
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "R~ediģēt"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKBUTTON.TEXT
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Atvērt"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ITEMLIST.ITEM
-msgid  "Title"
-msgstr "Virsraksts"
+msgid "Title"
+msgstr "Tituls"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ITEMLIST.ITEM
-msgid  "By"
+msgid "By"
 msgstr "Autors"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
-msgid  "Date"
+msgid "Date"
 msgstr "Datums"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
-msgid  "Keywords"
+msgid "Keywords"
 msgstr "Atslēgvārdi"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
-msgid  "Description"
+msgid "Description"
 msgstr "Apraksts"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
-msgid  "Type"
+msgid "Type"
 msgstr "Tips"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
-msgid  "Modified on"
+msgid "Modified on"
 msgstr "Modificēts uz"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ITEMLIST.ITEM
-msgid  "Modified by"
+msgid "Modified by"
 msgstr "Modificējis"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ITEMLIST.ITEM
-msgid  "Printed on"
+msgid "Printed on"
 msgstr "Drukāts uz"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ITEMLIST.ITEM
-msgid  "Printed by"
+msgid "Printed by"
 msgstr "Drukājis"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
-msgid  "Subject"
+msgid "Subject"
 msgstr "Temats"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
-msgid  "Size"
+msgid "Size"
 msgstr "Izmērs"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
-msgid  "Click here to create new documents."
+msgid "Click here to create new documents."
 msgstr "Spiediet šeit, lai izveidotu jaunus dokumentus."
 
 #: contnr/templwin.src#STR_SVT_MYDOCS_HELP.STRING.TEXT
-msgid  "Contains your letters, reports and other documents"
+msgid "Contains your letters, reports and other documents"
 msgstr "Satur jūsu vēstules, atskaites un citus dokumentus"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES_HELP.STRING.TEXT
-msgid  "Contains templates for creating new documents"
+msgid "Contains templates for creating new documents"
 msgstr "Satur sagataves dokumentu izveidošanai"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES_HELP.STRING.TEXT
-msgid  "Contains a selection of sample letters, reports and other documents"
+msgid "Contains a selection of sample letters, reports and other documents"
 msgstr "Satur vēstuļu, atskaišu un citu dokumentu paraugus"
 
 #: control/calendar.src#STR_SVT_CALENDAR_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "Diena"
 
 #: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "Nedēļa"
 
 #: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
-msgid  "Today"
+msgid "Today"
 msgstr "Šodien"
 
 #: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
-msgid  "None"
-msgstr "Nav"
+msgid "None"
+msgstr "Nekāda"
 
 #: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "Automātisks"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
+msgid "Alphanumeric"
 msgstr "Alfanumerisks"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
-msgid  "Normal"
+msgid "Normal"
 msgstr "Normāls"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
-msgid  "Character set"
+msgid "Character set"
 msgstr "Rakstzīmju kopa"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
+msgid "Dictionary"
 msgstr "Vārdnīca"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.STRING.TEXT
-msgid  "Pinyin"
+msgid "Pinyin"
 msgstr "Pinīnu"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_STROKE.STRING.TEXT
-msgid  "Stroke"
+msgid "Stroke"
 msgstr "Līnija"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.STRING.TEXT
-msgid  "Radical"
+msgid "Radical"
 msgstr "Radikāls"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.STRING.TEXT
-msgid  "Unicode"
+msgid "Unicode"
 msgstr "Unikods"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
+msgid "Zhuyin"
 msgstr "Zhuyin"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.STRING.TEXT
-msgid  "Phone book"
+msgid "Phone book"
 msgstr "Telefonu grāmata"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.STRING.TEXT
-msgid  "Phonetic (alphanumeric first)"
+msgid "Phonetic (alphanumeric first)"
 msgstr "Fonētisks (burti vispirms)"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
-msgid  "Phonetic (alphanumeric last)"
+msgid "Phonetic (alphanumeric last)"
 msgstr "Fonētisks (burti pēdējie)"
 
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
+msgid "Alphanumeric"
+msgstr "Alfanumerisks"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
+msgid "Dictionary"
+msgstr "Vārdnīca"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
+msgid "Pinyin"
+msgstr "Pinīnu"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
+msgid "Radical"
+msgstr "Radikāls"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
+msgid "Stroke"
+msgstr "Līnija"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by syllables)"
+msgid "Phonetic (alphanumeric first, grouped by syllables)"
 msgstr "Fonētiskā (alfabēts sākumā, grupēts pēc zilbēm)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by consonants)"
+msgid "Phonetic (alphanumeric first, grouped by consonants)"
 msgstr "Fonētiskais (alfabēts vispirms, grupēts pēc līdzskaņiem)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by syllables)"
+msgid "Phonetic (alphanumeric last, grouped by syllables)"
 msgstr "Fonētiski (alfabēts sākumā, grupēts pēc zilbēm)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by consonants)"
+msgid "Phonetic (alphanumeric last, grouped by consonants)"
 msgstr "Fonētisks (alfabēts beigās, grupēts pēc līdzskaņiem)"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT.STRING.TEXT
-msgid  "Light"
+msgid "Light"
 msgstr "Viegls"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.STRING.TEXT
-msgid  "Light Italic"
+msgid "Light Italic"
 msgstr "Viegls slīpraksts"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "Parasts"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "Slīpraksts"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "Trekns"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
+msgid "Bold Italic"
 msgstr "Trekns slīpraksts"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK.STRING.TEXT
-msgid  "Black"
+msgid "Black"
 msgstr "Melns"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.STRING.TEXT
-msgid  "Black Italic"
+msgid "Black Italic"
 msgstr "Melns slīpraksts"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_BOTH.STRING.TEXT
-msgid  "The same font will be used on both your printer and your screen."
+msgid "The same font will be used on both your printer and your screen."
 msgstr "Šis fonts tiks lietots gan printerim, gan uz ekrāna."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.STRING.TEXT
-msgid  "This is a printer font. The screen image may differ."
+msgid "This is a printer font. The screen image may differ."
 msgstr "Šis ir printera fonts. Ekrāna attēls var atšķirties."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.STRING.TEXT
-msgid  "This is a screen font. The printer image may differ."
+msgid "This is a screen font. The printer image may differ."
 msgstr "Šis ir ekrāna fonts. Drukātais attēls var izskatīties citādi."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.STRING.TEXT
-msgid  "This font size has not been installed. The closest available size will be used."
+msgid "This font size has not been installed. The closest available size will be used."
 msgstr "Šī izmēra fonts nav instalēts. Tiks lietots tuvākais pieejamais izmērs."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.STRING.TEXT
-msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr "Šis fonta stils tiks simulēts, vai arī tiks lietots tuvākais līdzīgais stils."
+msgid "This font style will be simulated or the closest matching style will be used."
+msgstr ""
+"Šis fonta stils tiks simulēts, vai arī tiks lietots tuvākais līdzīgais "
+"stils."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.STRING.TEXT
-msgid  "This font has not been installed. The closest available font will be used."
+msgid "This font has not been installed. The closest available font will be used."
 msgstr "Šis fonts nav instalēts. Tiks lietots tuvākais līdzīgais fonts."
 
 #: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Pārlūkot..."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
-msgid  "Move To Home"
+msgid "Move To Home"
 msgstr "Pārvietot uz sākumu"
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.STRING.TEXT
-msgid  "Move Left"
+msgid "Move Left"
 msgstr "Pārvietot pa kreisi"
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.STRING.TEXT
-msgid  "Move Right"
+msgid "Move Right"
 msgstr "Pārvietot pa labi"
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.STRING.TEXT
-msgid  "Move To End"
+msgid "Move To End"
 msgstr "Pārvietot uz beigām"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.MODALDIALOG.TEXT
-msgid  "Templates: Address Book Assignment"
+msgid "Templates: Address Book Assignment"
 msgstr "Sagataves: adrešu grāmatas piesaiste"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FIXEDLINE.TEXT
-msgid  "Address Book Source"
+msgid "Address Book Source"
 msgstr "Adrešu grāmatas avots"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "Data source"
+msgid "Data source"
 msgstr "Datu avots"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PUSHBUTTON.TEXT
-msgid  "~Address Data Source..."
+msgid "~Address Data Source..."
 msgstr "~Adrešu grāmatas avots..."
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "Table"
+msgid "Table"
 msgstr "Tabula"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Field assignment"
+msgid "Field assignment"
 msgstr "Lauka piesaiste"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
-msgid  "<none>"
+msgid "<none>"
 msgstr "<nekas>"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
-msgid  "Company"
+msgid "Company"
 msgstr "Firma"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.STRING.TEXT
-msgid  "Department"
+msgid "Department"
 msgstr "Departaments"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
-msgid  "First name"
+msgid "First name"
 msgstr "Vārds"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
-msgid  "Last name"
+msgid "Last name"
 msgstr "Uzvārds"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
-msgid  "Street"
+msgid "Street"
 msgstr "Iela"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
-msgid  "Country"
+msgid "Country"
 msgstr "Valsts"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
-msgid  "ZIP Code"
+msgid "ZIP Code"
 msgstr "Pasta indekss"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
-msgid  "City"
+msgid "City"
 msgstr "Pilsēta"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Tituls"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "Amats"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
-msgid  "Addr. Form"
+msgid "Addr. Form"
 msgstr "Adr. forma"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.STRING.TEXT
-msgid  "Initials"
+msgid "Initials"
 msgstr "Iniciāļi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.STRING.TEXT
-msgid  "Complimentary close"
+msgid "Complimentary close"
 msgstr "Nobeiguma vārdi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.STRING.TEXT
-msgid  "Tel: Home"
+msgid "Tel: Home"
 msgstr "Tālr. (mājas)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.STRING.TEXT
-msgid  "Tel: Work"
+msgid "Tel: Work"
 msgstr "Tālr. (darba)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.STRING.TEXT
-msgid  "FAX"
+msgid "FAX"
 msgstr "Fakss"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
-msgid  "E-mail"
+msgid "E-mail"
 msgstr "E-pasts"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.STRING.TEXT
-msgid  "Note"
+msgid "Note"
 msgstr "Piezīme"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.STRING.TEXT
-msgid  "User 1"
+msgid "User 1"
 msgstr "Lietotāja 1"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.STRING.TEXT
-msgid  "User 2"
+msgid "User 2"
 msgstr "Lietotāja 2"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.STRING.TEXT
-msgid  "User 3"
+msgid "User 3"
 msgstr "Lietotāja 3"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.STRING.TEXT
-msgid  "User 4"
+msgid "User 4"
 msgstr "Lietotāja 4"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.STRING.TEXT
-msgid  "ID"
+msgid "ID"
 msgstr "Id"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "Rajons"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.STRING.TEXT
-msgid  "Tel: Office"
+msgid "Tel: Office"
 msgstr "Tālr. (biroja)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.STRING.TEXT
-msgid  "Pager"
+msgid "Pager"
 msgstr "Peidžeris"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
-msgid  "Mobile"
+msgid "Mobile"
 msgstr "Mob. tālr."
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
-msgid  "Tel: Other"
+msgid "Tel: Other"
 msgstr "Tālr. (cits)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "Kalendārs"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
-msgid  "Invite"
+msgid "Invite"
 msgstr "Uzaicināt"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SELECT.STRING.TEXT
-msgid  "Select Directory"
+msgid "Select Directory"
 msgstr "Izvēlēties mapi"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.STRING.TEXT
-msgid  "Cannot change to directory"
+msgid "Cannot change to directory"
 msgstr "Nevar aiziet uz mapi"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
-msgid  "Open"
+msgid "Open"
 msgstr "Atvērt"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
-msgid  "~File"
+msgid "~File"
 msgstr "~Fails"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DIR.STRING.TEXT
-msgid  "~Directory"
+msgid "~Directory"
 msgstr "~Mape"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_TYPE.STRING.TEXT
-msgid  "File ~type"
+msgid "File ~type"
 msgstr "Faila ~tips"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.STRING.TEXT
-msgid  "Can't open file"
+msgid "Can't open file"
 msgstr "Nevar atvērt failu"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.STRING.TEXT
-msgid  "Can't open directory"
+msgid "Can't open directory"
 msgstr "Nevar atvērt mapi"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.STRING.TEXT
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "Šis fails jau eksistē.\nPārrakstīt?"
+msgid "This file already exists. \nOverwrite ?"
+msgstr ""
+"Šis fails jau eksistē.\n"
+"Pārrakstīt?"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_GOUP.STRING.TEXT
-msgid  "Up One Level"
+msgid "Up One Level"
 msgstr "Vienu līmeni augšup"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
-msgid  "Save"
+msgid "Save"
 msgstr "Saglabāt"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
-msgid  "D~rive"
+msgid "D~rive"
 msgstr "D~isks"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_HOME.STRING.TEXT
-msgid  "User Directory"
+msgid "User Directory"
 msgstr "Lietotāja mape"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.STRING.TEXT
-msgid  "Create Directory"
+msgid "Create Directory"
 msgstr "Izveidot mapi"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.STRING.TEXT
-msgid  "Do you want the directory %s to be created ?"
+msgid "Do you want the directory %s to be created ?"
 msgstr "Vai vēlaties izveidot mapi %s ?"
 
 #: dialogs/formats.src#STR_FORMAT_STRING.STRING.TEXT
-msgid  "Unformatted text"
+msgid "Unformatted text"
 msgstr "Neformatēts teksts"
 
 #: dialogs/formats.src#STR_FORMAT_BITMAP.STRING.TEXT
-msgid  "Bitmap"
+msgid "Bitmap"
 msgstr "Bitkarte"
 
 #: dialogs/formats.src#STR_FORMAT_GDIMETAFILE.STRING.TEXT
-msgid  "GDI metafile"
+msgid "GDI metafile"
 msgstr "GDI metafails"
 
 #: dialogs/formats.src#STR_FORMAT_RTF.STRING.TEXT
-msgid  "Formatted text [RTF]"
+msgid "Formatted text [RTF]"
 msgstr "Formatēts teksts (RTF)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DRAWING.STRING.TEXT
-msgid  "Drawing format"
+msgid "Drawing format"
 msgstr "Zīmējuma formāts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SVXB.STRING.TEXT
-msgid  "SVXB (StarView bitmap/animation)"
+msgid "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (StarView bitkarte/animācija)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.STRING.TEXT
-msgid  "Status Info from Svx Internal Link"
+msgid "Status Info from Svx Internal Link"
 msgstr "Statusa info no Svx iekšējās saites"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SOLK.STRING.TEXT
-msgid  "SOLK (%PRODUCTNAME Link)"
+msgid "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME saite)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.STRING.TEXT
-msgid  "Netscape Bookmark"
+msgid "Netscape Bookmark"
 msgstr "Netscape grāmatzīme"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARSERVER.STRING.TEXT
-msgid  "Star server format"
+msgid "Star server format"
 msgstr "Star servera formāts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.STRING.TEXT
-msgid  "Star object format"
+msgid "Star object format"
 msgstr "Star objekta formāts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.STRING.TEXT
-msgid  "Applet object"
+msgid "Applet object"
 msgstr "Sīklietotnes objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.STRING.TEXT
-msgid  "Plug-in object"
+msgid "Plug-in object"
 msgstr "Spraudņa objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.STRING.TEXT
-msgid  "StarWriter 3.0 object"
+msgid "StarWriter 3.0 object"
 msgstr "StarWriter 3.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.STRING.TEXT
-msgid  "StarWriter 4.0 object"
+msgid "StarWriter 4.0 object"
 msgstr "StarWriter 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.STRING.TEXT
-msgid  "StarWriter 5.0 object"
+msgid "StarWriter 5.0 object"
 msgstr "StarWriter 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.STRING.TEXT
-msgid  "StarWriter/Web 4.0 object"
+msgid "StarWriter/Web 4.0 object"
 msgstr "StarWriter/Web 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.STRING.TEXT
-msgid  "StarWriter/Web 5.0 object"
+msgid "StarWriter/Web 5.0 object"
 msgstr "StarWriter/Web 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.STRING.TEXT
-msgid  "StarWriter/Master 4.0 object"
+msgid "StarWriter/Master 4.0 object"
 msgstr "StarWriter/Master 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.STRING.TEXT
-msgid  "StarWriter/Master 5.0 object"
+msgid "StarWriter/Master 5.0 object"
 msgstr "StarWriter/Master 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW.STRING.TEXT
-msgid  "StarDraw object"
+msgid "StarDraw object"
 msgstr "StarDraw objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.STRING.TEXT
-msgid  "StarDraw 4.0 object"
+msgid "StarDraw 4.0 object"
 msgstr "StarDraw 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.STRING.TEXT
-msgid  "StarImpress 5.0 object"
+msgid "StarImpress 5.0 object"
 msgstr "StarImpress 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.STRING.TEXT
-msgid  "StarDraw 5.0 object"
+msgid "StarDraw 5.0 object"
 msgstr "StarDraw 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC.STRING.TEXT
-msgid  "StarCalc object"
+msgid "StarCalc object"
 msgstr "StarCalc objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.STRING.TEXT
-msgid  "StarCalc  4.0 object"
+msgid "StarCalc  4.0 object"
 msgstr "StarCalc 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.STRING.TEXT
-msgid  "StarCalc 5.0 object"
+msgid "StarCalc 5.0 object"
 msgstr "StarCalc 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART.STRING.TEXT
-msgid  "StarChart object"
+msgid "StarChart object"
 msgstr "StarChart objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.STRING.TEXT
-msgid  "StarChart 4.0 object"
+msgid "StarChart 4.0 object"
 msgstr "StarChart 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
-msgid  "StarChart 5.0 object"
+msgid "StarChart 5.0 object"
 msgstr "StarChart 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.STRING.TEXT
-msgid  "StarImage object"
+msgid "StarImage object"
 msgstr "StarImage objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.STRING.TEXT
-msgid  "StarImage 4.0 object"
+msgid "StarImage 4.0 object"
 msgstr "StarImage 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.STRING.TEXT
-msgid  "StarImage 5.0 object"
+msgid "StarImage 5.0 object"
 msgstr "StarImage 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH.STRING.TEXT
-msgid  "StarMath object"
+msgid "StarMath object"
 msgstr "StarMath objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.STRING.TEXT
-msgid  "StarMath 4.0 object"
+msgid "StarMath 4.0 object"
 msgstr "StarMath 4.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.STRING.TEXT
-msgid  "StarMath 5.0 object"
+msgid "StarMath 5.0 object"
 msgstr "StarMath 5.0 objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.STRING.TEXT
-msgid  "StarObject Paint object"
+msgid "StarObject Paint object"
 msgstr "StarObject Paint objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML.STRING.TEXT
-msgid  "HTML (HyperText Markup Language)"
+msgid "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText Markup Language)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.STRING.TEXT
-msgid  "HTML format"
+msgid "HTML format"
 msgstr "HTML formāts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_5.STRING.TEXT
-msgid  "Biff5 (Microsoft Excel 5.0/95)"
+msgid "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_8.STRING.TEXT
-msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
+msgid "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SYLK.STRING.TEXT
-msgid  "Sylk"
+msgid "Sylk"
 msgstr "Sylk"
 
 #: dialogs/formats.src#STR_FORMAT_ID_LINK.STRING.TEXT
-msgid  "DDE link"
+msgid "DDE link"
 msgstr "DDE saite"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIF.STRING.TEXT
-msgid  "DIF"
+msgid "DIF"
 msgstr "DIF"
 
 #: dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.STRING.TEXT
-msgid  "Microsoft Word object"
+msgid "Microsoft Word object"
 msgstr "Microsoft Word objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.STRING.TEXT
-msgid  "StarFrameSet object"
+msgid "StarFrameSet object"
 msgstr "StarFrameSet objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.STRING.TEXT
-msgid  "Office document object"
+msgid "Office document object"
 msgstr "Biroja dokumenta objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.STRING.TEXT
-msgid  "Notes document info"
+msgid "Notes document info"
 msgstr "Notes dokumenta info"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
-msgid  "Sfx document"
+msgid "Sfx document"
 msgstr "Sfx dokuments"
 
+#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
+msgid "StarChart 5.0 object"
+msgstr "StarChart 5.0 objekts"
+
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
-msgid  "Graphic object"
+msgid "Graphic object"
 msgstr "Grafiskas objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web objekts"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master objekts"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_WMF.STRING.TEXT
-msgid  "Windows metafile"
+msgid "Windows metafile"
 msgstr "Windows metafails"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.STRING.TEXT
-msgid  "Data source object"
+msgid "Data source object"
 msgstr "Datu avota objekts"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.STRING.TEXT
-msgid  "Data source table"
+msgid "Data source table"
 msgstr "Datu avota tabula"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.STRING.TEXT
-msgid  "SQL query"
+msgid "SQL query"
 msgstr "SQL vaicājums"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialogs"
 
 #: dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.STRING.TEXT
-msgid  "Link"
+msgid "Link"
 msgstr "Saite"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.STRING.TEXT
-msgid  "HTML format without comments"
+msgid "HTML format without comments"
 msgstr "HTML formāts bez komentāriem"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.STRING.TEXT
-msgid  "Ready"
+msgid "Ready"
 msgstr "Gatavs"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.STRING.TEXT
-msgid  "Paused"
+msgid "Paused"
 msgstr "Pauzēts"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.STRING.TEXT
-msgid  "Pending deletion"
+msgid "Pending deletion"
 msgstr "Gaida dzēšanu"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
-msgid  "Busy"
+msgid "Busy"
 msgstr "Aizņemts"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
-msgid  "Initializing"
+msgid "Initializing"
 msgstr "Notiek inicializēšana"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.STRING.TEXT
-msgid  "Waiting"
+msgid "Waiting"
 msgstr "Gaida"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.STRING.TEXT
-msgid  "Warming up"
+msgid "Warming up"
 msgstr "Uzsilst"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.STRING.TEXT
-msgid  "Processing"
+msgid "Processing"
 msgstr "Apstrādā"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.STRING.TEXT
-msgid  "Printing"
+msgid "Printing"
 msgstr "Drukā"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
-msgid  "Offline"
+msgid "Offline"
 msgstr "Atslēgts"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Kļūda"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
-msgid  "Unknown Server"
+msgid "Unknown Server"
 msgstr "Nezināms serveris"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.STRING.TEXT
-msgid  "Paper jam"
+msgid "Paper jam"
 msgstr "Iestrēdzis papīrs"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.STRING.TEXT
-msgid  "Not enough paper"
+msgid "Not enough paper"
 msgstr "Nepietiek papīra"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.STRING.TEXT
-msgid  "Manual feed"
+msgid "Manual feed"
 msgstr "Pašrocīgā padeve"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.STRING.TEXT
-msgid  "Paper problem"
+msgid "Paper problem"
 msgstr "Papīra problēma"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.STRING.TEXT
-msgid  "I/O active"
+msgid "I/O active"
 msgstr "I/O aktīvs"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.STRING.TEXT
-msgid  "Output bin full"
+msgid "Output bin full"
 msgstr "Pilna izvades kaste"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.STRING.TEXT
-msgid  "Toner low"
+msgid "Toner low"
 msgstr "Maz tonera"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.STRING.TEXT
-msgid  "No toner"
+msgid "No toner"
 msgstr "Nav krāsas"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.STRING.TEXT
-msgid  "Delete Page"
+msgid "Delete Page"
 msgstr "Dzēst lapu"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.STRING.TEXT
-msgid  "User intervention necessary"
+msgid "User intervention necessary"
 msgstr "Nepieciešama lietotāja iejaukšanās"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.STRING.TEXT
-msgid  "Insufficient memory"
+msgid "Insufficient memory"
 msgstr "Nepietiek atmiņas"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.STRING.TEXT
-msgid  "Cover open"
+msgid "Cover open"
 msgstr "Atvērts vāks"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.STRING.TEXT
-msgid  "Power save mode"
+msgid "Power save mode"
 msgstr "Enerģijas taupīšanas režīms"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "Noklusētais printeris"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.STRING.TEXT
-msgid  "%d documents"
+msgid "%d documents"
 msgstr "%d dokumenti"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.MODALDIALOG.TEXT
-msgid  "Printer Setup"
+msgid "Printer Setup"
 msgstr "Printera iestatīšana"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
-msgid  "Printer"
+msgid "Printer"
 msgstr "Printeris"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
+msgid "~Name"
 msgstr "~Nosaukums"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PUSHBUTTON.TEXT
-msgid  "Propert~ies..."
+msgid "Propert~ies..."
 msgstr "Īpašī~bas..."
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
+msgid "Status"
 msgstr "Statuss"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FIXEDTEXT.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "Tips"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "Atrašanās vieta"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "Comment"
+msgid "Comment"
 msgstr "Komentārs"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PUSHBUTTON.TEXT
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "~Opcijas..."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.STRING.TEXT
-msgid  "General OLE error."
+msgid "General OLE error."
 msgstr "Vispārēja OLE kļūda."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.STRING.TEXT
-msgid  "The connection to the object cannot be established."
+msgid "The connection to the object cannot be established."
 msgstr "Nevar izveidot savienojumu ar objektu."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.STRING.TEXT
-msgid  "No cache files were updated."
+msgid "No cache files were updated."
 msgstr "Nav atjaunoti glabātuves faili."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.STRING.TEXT
-msgid  "Some cache files were not updated."
+msgid "Some cache files were not updated."
 msgstr "Daži glabātuves faili netika atjaunoti."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.STRING.TEXT
-msgid  "Status of object cannot be determined in a timely manner."
+msgid "Status of object cannot be determined in a timely manner."
 msgstr "Objekta statusu nevarēja noteikt saprātīgā laikā."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.STRING.TEXT
-msgid  "Source of the OLE link has been converted."
+msgid "Source of the OLE link has been converted."
 msgstr "OLE saites avots ir pārveidots."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.STRING.TEXT
-msgid  "The object could not be found."
+msgid "The object could not be found."
 msgstr "Objektu nevar atrast."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.STRING.TEXT
-msgid  "The process could not be completed within the specified time period."
+msgid "The process could not be completed within the specified time period."
 msgstr "Procesu nevar pabeigt norādītajā laikā."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.STRING.TEXT
-msgid  "OLE could not connect to a network device (server)."
+msgid "OLE could not connect to a network device (server)."
 msgstr "OLE nevar savienoties ar tīkla iekārtu (serveri)."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.STRING.TEXT
-msgid  "The object found does not support the interface required for the desired operation."
-msgstr "Atrastais objekts neatbalsta nepieciešamo saskarni, kas nepieciešama izvēlētai darbībai."
+msgid "The object found does not support the interface required for the desired operation."
+msgstr ""
+"Atrastais objekts neatbalsta nepieciešamo saskarni, kas nepieciešama "
+"izvēlētai darbībai."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.STRING.TEXT
-msgid  "Interface not supported."
+msgid "Interface not supported."
 msgstr "Saskarne nav atbalstīta."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.STRING.TEXT
-msgid  "Insufficient memory."
+msgid "Insufficient memory."
 msgstr "Nepietiek atmiņas."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.STRING.TEXT
-msgid  "The connection name could not be processed."
+msgid "The connection name could not be processed."
 msgstr "Nevar apstrādāt savienojuma nosaukumu."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.STRING.TEXT
-msgid  "The connection name could not be reduced further."
+msgid "The connection name could not be reduced further."
 msgstr "Savienojuma nosaukumu tālāk vairs nevar reducēt."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.STRING.TEXT
-msgid  "The connection name has no inverse."
+msgid "The connection name has no inverse."
 msgstr "Savienojuma nosaukumam nav inverss."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.STRING.TEXT
-msgid  "No common prefix exists."
+msgid "No common prefix exists."
 msgstr "Nav kopīga prefiksa."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
-msgid  "The connection name is contained in the other one."
+msgid "The connection name is contained in the other one."
 msgstr "Savienojuma nosaukums ir ietverts citā."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.STRING.TEXT
-msgid  "The connection names (the receiver and the other moniker) are identical."
+msgid "The connection names (the receiver and the other moniker) are identical."
 msgstr "Savienojuma nosaukumi (saņēmēja un cita) ir identiski."
 
+#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
+msgid "The connection name is contained in the other one."
+msgstr "Savienojuma nosaukums ir ietverts citā."
+
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
-msgid  "The connection name cannot be connected. This is a relative name."
+msgid "The connection name cannot be connected. This is a relative name."
 msgstr "Savienojuma nosaukumu nevar savienot. Šis ir relatīvs vārds."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.STRING.TEXT
-msgid  "Operation not implemented."
+msgid "Operation not implemented."
 msgstr "Darbība nav ieviesta."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.STRING.TEXT
-msgid  "No storage."
+msgid "No storage."
 msgstr "Nav atmiņas."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.STRING.TEXT
-msgid  "False."
+msgid "False."
 msgstr "Aplams."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.STRING.TEXT
-msgid  "Monikers must be composed generically."
+msgid "Monikers must be composed generically."
 msgstr "Pavārds ir jāveido vispārīgs."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.STRING.TEXT
-msgid  "Data not available at this time."
+msgid "Data not available at this time."
 msgstr "Patreiz dati nav pieejami."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE_&_S_MAX.STRING.TEXT
-msgid  "Object could not be activated InPlace."
+msgid "Object could not be activated InPlace."
 msgstr "Objektu nevar aktivizēt uz vietas."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX_&_S_MAX.STRING.TEXT
-msgid  "Invalid index."
+msgid "Invalid index."
 msgstr "Nederīgs indekss."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW_&_S_MAX.STRING.TEXT
-msgid  "The action cannot be executed in the object's current state."
+msgid "The action cannot be executed in the object's current state."
 msgstr "Šajā objekta stāvoklī darbību nevar izpildīt."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND_&_S_MAX.STRING.TEXT
-msgid  "An invalid window was passed when activated."
+msgid "An invalid window was passed when activated."
 msgstr "Padots nepareizs logs aktivizējot."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS_&_S_MAX.STRING.TEXT
-msgid  "The object does not support any actions."
+msgid "The object does not support any actions."
 msgstr "Objekts neatbalsta nevienu darbību."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB_&_S_MAX.STRING.TEXT
-msgid  "The action is not defined. The default action will be executed."
+msgid "The action is not defined. The default action will be executed."
 msgstr "Darbība nav definēta. Tiks izpildīta noklusētā darbība."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_&_S_MAX.STRING.TEXT
-msgid  "A link to the network could not be re-established."
+msgid "A link to the network could not be re-established."
 msgstr "Nevar atjaunot tīkla saiti."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL_&_S_MAX.STRING.TEXT
-msgid  "Object does not support this action."
+msgid "Object does not support this action."
 msgstr "Objekts neatbalsta šo darbību."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE_&_S_MAX.STRING.TEXT
-msgid  "The specified file could not be opened."
+msgid "The specified file could not be opened."
 msgstr "Norādīto failu nevar atvērt."
 
 #: dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.STRING.TEXT
-msgid  "$(ERR) activating object"
+msgid "$(ERR) activating object"
 msgstr "$(ERR) aktivizējot objektu"
 
 #: dialogs/so3res.src#STR_INS_OBJECT.STRING.TEXT
-msgid  "Inserts a new %1-Object into your document."
+msgid "Inserts a new %1-Object into your document."
 msgstr "Ievieto jaunu %1-objektu jūsu dokumentā."
 
 #: dialogs/so3res.src#STR_INS_OBJECT_ICON.STRING.TEXT
-msgid  "Inserts a new %1-Object into your document as a symbol."
+msgid "Inserts a new %1-Object into your document as a symbol."
 msgstr "Ievieto jaunu %1-objektu kā simbolu jūsu dokumentā."
 
 #: dialogs/so3res.src#STR_INS_FILE.STRING.TEXT
-msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr "Ievieto faila saturu jūsu dokumentā, lai atļautu to vēlāk rediģēt sākotnējā lietotnē."
+msgid "Inserts the contents of the file into your document to enable later editing in the original application."
+msgstr ""
+"Ievieto faila saturu jūsu dokumentā, lai atļautu to vēlāk rediģēt sākotnējā "
+"lietotnē."
 
 #: dialogs/so3res.src#STR_INS_PLUGIN.STRING.TEXT
-msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr "Ievieto spraudņa objektu jūsu dokumentā ar norādi uz spraudņa datiem. Kad objekts tiks aktivizēts, spraudnis automātiski tiks palaists."
+msgid "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
+msgstr ""
+"Ievieto spraudņa objektu jūsu dokumentā ar norādi uz spraudņa datiem. Kad "
+"objekts tiks aktivizēts, spraudnis automātiski tiks palaists."
 
 #: dialogs/so3res.src#STR_INS_APPLET.STRING.TEXT
-msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr "Ievieto sīklietotnes objektu jūsu dokumentā. Kad objekts tiks aktivizēts, sīklietotne tiks automātiski palaista."
+msgid "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
+msgstr ""
+"Ievieto sīklietotnes objektu jūsu dokumentā. Kad objekts tiks aktivizēts, "
+"sīklietotne tiks automātiski palaista."
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON.STRING.TEXT
-msgid  "Inserts the contents of the file as an icon into your document."
+msgid "Inserts the contents of the file as an icon into your document."
 msgstr "Ievieto jūsu dokumentā faila saturu kā ikonu."
 
 #: dialogs/so3res.src#STR_INS_FILE_LINK.STRING.TEXT
-msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr "Ievieto faila saturu jūsu dokumentā un izveido saiti uz avota failu. Izmaiņas kuras veiktas avota failā atsauksies uz jūsu dokumentu."
+msgid "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
+msgstr ""
+"Ievieto faila saturu jūsu dokumentā un izveido saiti uz avota failu. "
+"Izmaiņas kuras veiktas avota failā atsauksies uz jūsu dokumentu."
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON_LINK.STRING.TEXT
-msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr "Ievieto jūsu dokumentā ikonu kas reprezentē failu. Izmaiņas, kuras veiktas avotā, ietekmēs jūsu dokumentu."
+msgid "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
+msgstr ""
+"Ievieto jūsu dokumentā ikonu kas reprezentē failu. Izmaiņas, kuras veiktas "
+"avotā, ietekmēs jūsu dokumentu."
 
 #: dialogs/so3res.src#STR_PASTE.STRING.TEXT
-msgid  "Pastes the contents of the clipboard as %1 in your document."
+msgid "Pastes the contents of the clipboard as %1 in your document."
 msgstr "Ielīmē starpliktuves saturu jūsu dokumentā kā %1."
 
 #: dialogs/so3res.src#STR_CONVERT_TO.STRING.TEXT
-msgid  "Converts the selected %1object to the object type %2."
+msgid "Converts the selected %1object to the object type %2."
 msgstr "Konvertē izvēlēto %1objektu uz objektu ar tipu %2."
 
 #: dialogs/so3res.src#STR_ACTIVATE_AS.STRING.TEXT
-msgid  "All objects of type %1 are activated as %2, but not converted"
+msgid "All objects of type %1 are activated as %2, but not converted"
 msgstr "Visi %1 tipa objekti tiks aktivizēti kā %2, bet ne konvertēti"
 
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Atvērt"
 
 #: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
-msgid  "~Properties"
+msgid "~Properties"
 msgstr "Ī~pašības"
 
 #: dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.STRING.TEXT
-msgid  "Plug-in % cannot be displayed."
+msgid "Plug-in % cannot be displayed."
 msgstr "Spraudni % nevar attēlot."
 
 #: dialogs/so3res.src#STR_ERROR_DDE.STRING.TEXT
-msgid  "DDE link to % for % area % are not available."
+msgid "DDE link to % for % area % are not available."
 msgstr "DDE saite uz % apgabalam % % nav pieejama."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE.STRING.TEXT
-msgid  "Object % could not be inserted."
+msgid "Object % could not be inserted."
 msgstr "Objektu % nevar ievietot."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.STRING.TEXT
-msgid  "Object from file % could not be inserted."
+msgid "Object from file % could not be inserted."
 msgstr "Objektu no faila % nevar ievietot."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.STRING.TEXT
-msgid  "Plug-in from document % could not be inserted."
+msgid "Plug-in from document % could not be inserted."
 msgstr "Spraudni no dokumenta % nevar ievietot."
 
 #: dialogs/so3res.src#STR_QUERYUPDATELINKS.STRING.TEXT
-msgid  "Update all links?"
+msgid "Update all links?"
 msgstr "Atjaunināt visas saites?"
 
 #: dialogs/so3res.src#STR_FURTHER_OBJECT.STRING.TEXT
-msgid  "Further objects"
+msgid "Further objects"
 msgstr "Citi objekti"
 
 #: dialogs/so3res.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
+msgid "Edit Applet"
 msgstr "Rediģēt sīklietotni"
 
 #: dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MENUITEM.TEXT
-msgid  "Deactivate"
+msgid "Deactivate"
 msgstr "Deaktivizēt"
 
 #: dialogs/so3res.src#STR_UNKNOWN_SOURCE.STRING.TEXT
-msgid  "Unknown source"
+msgid "Unknown source"
 msgstr "Nezināms avots"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_FINISH.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Beigt"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_NEXT.STRING.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Nākamais >>"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.STRING.TEXT
-msgid  "<< Bac~k"
+msgid "<< Bac~k"
 msgstr "<< Atpa~kaļ"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "Soļi"
 
 #: filter/exportdialog.src#DLG_EXPORT_TITLE.STRING.TEXT
-msgid  " Options"
+msgid " Options"
 msgstr " Opcijas"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
+msgid "Size"
 msgstr "Izmērs"
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEX.FIXEDTEXT.TEXT
-msgid  "Width:"
+msgid "Width:"
 msgstr "Platums:"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM1.STRINGLIST.ITEM
-msgid  "inches"
+msgid "inches"
 msgstr "collas"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.DEFAULT.STRINGLIST.ITEM
-msgid  "cm"
+msgid "cm"
 msgstr "cm"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM3.STRINGLIST.ITEM
-msgid  "mm"
+msgid "mm"
 msgstr "mm"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM4.STRINGLIST.ITEM
-msgid  "points"
+msgid "points"
 msgstr "punkti"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM5.STRINGLIST.ITEM
-msgid  "pixels"
+msgid "pixels"
 msgstr "pikseļi"
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FIXEDTEXT.TEXT
-msgid  "Height:"
+msgid "Height:"
 msgstr "Augstums:"
 
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
+msgid "inches"
+msgstr "collas"
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
+msgid "cm"
+msgstr "cm"
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
+msgid "mm"
+msgstr "mm"
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
+msgid "points"
+msgstr "punkti"
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
+msgid "pixels"
+msgstr "pikseļi"
+
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
-msgid  "Resolution:"
+msgid "Resolution:"
 msgstr "Izšķirtspēja:"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.ITEM1.STRINGLIST.ITEM
-msgid  "pixels/cm"
+msgid "pixels/cm"
 msgstr "pikseļi/cm"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.DEFAULT.STRINGLIST.ITEM
-msgid  "pixels/inch"
+msgid "pixels/inch"
 msgstr "pikseļi/colla"
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.ITEM3.STRINGLIST.ITEM
-msgid  "pixels/meter"
+msgid "pixels/meter"
 msgstr "pikseļi/metrs"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.FIXEDLINE.TEXT
-msgid  "Color Depth"
+msgid "Color Depth"
 msgstr "Krāsu dziļums"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.STRING.TEXT
-msgid  "1 bit threshold"
+msgid "1 bit threshold"
 msgstr "1 bita slieksnis"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.STRING.TEXT
-msgid  "1 bit dithered"
+msgid "1 bit dithered"
 msgstr "1 bita tonēts"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.STRING.TEXT
-msgid  "4 bit grayscale"
+msgid "4 bit grayscale"
 msgstr "4 bitu pelēktoņu"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.STRING.TEXT
-msgid  "4 bit color"
+msgid "4 bit color"
 msgstr "4 bitu krāsa"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.STRING.TEXT
-msgid  "8 bit grayscale"
+msgid "8 bit grayscale"
 msgstr "8 bitu pelēktoņu"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.STRING.TEXT
-msgid  "8 bit color"
+msgid "8 bit color"
 msgstr "8 bitu krāsa"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.STRING.TEXT
-msgid  "24 bit true color"
+msgid "24 bit true color"
 msgstr "24 bitu dabiskā krāsa"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.FIXEDLINE.TEXT
-msgid  "Quality"
+msgid "Quality"
 msgstr "Kvalitāte"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_COMPRESSION.FIXEDLINE.TEXT
-msgid  "Compression"
+msgid "Compression"
 msgstr "Saspiešana"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_MODE.FIXEDLINE.TEXT
-msgid  "Mode"
+msgid "Mode"
 msgstr "Režīms"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.FIXEDLINE.TEXT
-msgid  "File Format"
+msgid "File Format"
 msgstr "Faila formāts"
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_JPG_MIN.FIXEDTEXT.TEXT
-msgid  "1 is minimum Quality and smallest file size."
+msgid "1 is minimum Quality and smallest file size."
 msgstr "1 ir minimāla kvalitāte un mazākais izmērs."
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_JPG_MAX.FIXEDTEXT.TEXT
-msgid  "100 is maximum Quality and biggest file size."
+msgid "100 is maximum Quality and biggest file size."
 msgstr "100 ir maksimāla kvalitāte un lielākais izmērs."
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_PNG_MIN.FIXEDTEXT.TEXT
-msgid  "0 is biggest file size and fastest loading."
+msgid "0 is biggest file size and fastest loading."
 msgstr "0 ir lielākais faila izmērs un ātrākā ielādēšanās."
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_PNG_MAX.FIXEDTEXT.TEXT
-msgid  "9 is smallest file size and slowest loading."
+msgid "9 is smallest file size and slowest loading."
 msgstr "9 ir mazākais faila izmērs un lēnākā ielādēšanās."
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.CHECKBOX.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Priekšskatījums"
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_INTERLACED.CHECKBOX.TEXT
-msgid  "Interlaced"
+msgid "Interlaced"
 msgstr "Pārklājošs"
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.CHECKBOX.TEXT
-msgid  "RLE encoding"
+msgid "RLE encoding"
 msgstr "RLE kodējums"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.FIXEDLINE.TEXT
-msgid  "Drawing Objects"
+msgid "Drawing Objects"
 msgstr "Zīmēšanas objekti"
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Save transparency"
+msgid "Save transparency"
 msgstr "Saglabāt caurspīdīgumu"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_BINARY.RADIOBUTTON.TEXT
-msgid  "Binary"
+msgid "Binary"
 msgstr "Binārs"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RADIOBUTTON.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr "Teksts"
 
+#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
+msgid "Preview"
+msgstr "Priekšskatījums"
+
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
-msgid  "Image Preview (TIFF)"
+msgid "Image Preview (TIFF)"
 msgstr "Attēla priekšskatījums (TIFF)"
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.CHECKBOX.TEXT
-msgid  "Interchange (EPSI)"
+msgid "Interchange (EPSI)"
 msgstr "Apmaiņai (EPSI)"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.FIXEDLINE.TEXT
-msgid  "Version"
+msgid "Version"
 msgstr "Versija"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.RADIOBUTTON.TEXT
-msgid  "Level 1"
+msgid "Level 1"
 msgstr "Līmenis 1"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.RADIOBUTTON.TEXT
-msgid  "Level 2"
+msgid "Level 2"
 msgstr "Līmenis 2"
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.FIXEDLINE.TEXT
-msgid  "Color format"
+msgid "Color format"
 msgstr "Krāsas formāts"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.RADIOBUTTON.TEXT
-msgid  "Color"
+msgid "Color"
 msgstr "Krāsa"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.RADIOBUTTON.TEXT
-msgid  "Grayscale"
+msgid "Grayscale"
 msgstr "Pelēktoņu"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.RADIOBUTTON.TEXT
-msgid  "LZW encoding"
+msgid "LZW encoding"
 msgstr "LZW kodējums"
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.RADIOBUTTON.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Nekāda"
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.STRING.TEXT
-msgid  "The picture needs about %1 KB of memory."
+msgid "The picture needs about %1 KB of memory."
 msgstr "Attēlam nepieciešams ap %1 KB atmiņas."
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.STRING.TEXT
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
-msgstr "Attēlam nepieciešams ap %1 KB atmiņas,\n faila izmērs ir %2 KB."
+msgid "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgstr ""
+"Attēlam nepieciešams ap %1 KB atmiņas,\n"
+" faila izmērs ir %2 KB."
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.STRING.TEXT
-msgid  "The file size is %1 KB."
+msgid "The file size is %1 KB."
 msgstr "Faila izmērs ir %1 KB."
 
 #: java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WARNINGBOX.MESSAGE
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
-msgstr "%PRODUCTNAME ir nepieciešams JRE (Java runtime environment), lai turpināto šo darbību. Lūdzu, instalējiet JRE un pārstartējiet %PRODUCTNAME."
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME ir nepieciešams JRE (Java runtime environment), lai turpināto "
+"šo darbību. Lūdzu, instalējiet JRE un pārstartējiet %PRODUCTNAME."
 
 #: java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WARNINGBOX.MESSAGE
-msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
-msgstr "%PRODUCTNAME konfigurācija ir mainīta. Ar Rīki - Opcijas - %PRODUCTNAME - norādiet kuru Java palaišanas vidi jūs vēlaties izmantot ar %PRODUCTNAME."
+msgid "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME konfigurācija ir mainīta. Ar Rīki - Opcijas - %PRODUCTNAME - "
+"norādiet kuru Java palaišanas vidi jūs vēlaties izmantot ar %PRODUCTNAME."
 
 #: java/javaerror.src#QBX_JAVADISABLED.QUERYBOX.MESSAGE
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
-msgstr "%PRODUCTNAME nepieciešams JRE (Java runtime environment), lai paveiktu šo uzdevumu. Tomēr, JRE lietošana ir atslēgta. Vai vēlaties atļaut JRE lietošanu?"
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
+msgstr ""
+"%PRODUCTNAME nepieciešams JRE (Java runtime environment), lai paveiktu šo "
+"uzdevumu. Tomēr, JRE lietošana ir atslēgta. Vai vēlaties atļaut JRE "
+"lietošanu?"
 
 #: java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ERRORBOX.MESSAGE
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr "%PRODUCTNAME nepieciešams JRE (Java runtime environment), lai paveiktu šo uzdevumu. Izvēlētais JRE ir defektīvs. Lūdzu, izvēlieties citu versiju vai instalējiet jaunu JRE un izvēlieties to caur Rīki - Opcijas - %PRODUCTNAME - Java."
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+"%PRODUCTNAME nepieciešams JRE (Java runtime environment), lai paveiktu šo "
+"uzdevumu. Izvēlētais JRE ir defektīvs. Lūdzu, izvēlieties citu versiju vai "
+"instalējiet jaunu JRE un izvēlieties to caur Rīki - Opcijas - %PRODUCTNAME - "
+"Java."
 
 #: java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ERRORBOX.MESSAGE
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
-msgstr "Lai korekti strādātu izvēlētā Java palaišanas vide, jāpārstartē %PRODUCTNAME. Lūdzu, pārstartējiet %PRODUCTNAME."
+msgid "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+"Lai korekti strādātu izvēlētā Java palaišanas vide, jāpārstartē %"
+"PRODUCTNAME. Lūdzu, pārstartējiet %PRODUCTNAME."
 
 #: java/javaerror.src#STR_WARNING_JAVANOTFOUND.STRING.TEXT
-msgid  "JRE Required"
+msgid "JRE Required"
 msgstr "Nepieciešams JRE"
 
 #: java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.STRING.TEXT
-msgid  "Select JRE"
+msgid "Select JRE"
 msgstr "Izvēlieties JRE"
 
 #: java/javaerror.src#STR_ERROR_RESTARTREQUIRED.STRING.TEXT
-msgid  "Restart Required"
+msgid "Restart Required"
 msgstr "Nepieciešama pārstartēšana"
 
 #: java/javaerror.src#STR_QUESTION_JAVADISABLED.STRING.TEXT
-msgid  "Enable JRE"
+msgid "Enable JRE"
 msgstr "Atļaut JRE"
 
 #: java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.STRING.TEXT
-msgid  "JRE is Defective"
+msgid "JRE is Defective"
 msgstr "JRE ir bojāts"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
-msgid  "Source code"
+msgid "Source code"
 msgstr "Izejas kods"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
-msgid  "Bookmark file"
+msgid "Bookmark file"
 msgstr "Grāmatzīmju fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.STRING.TEXT
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "Grafika"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.STRING.TEXT
-msgid  "Configuration file"
+msgid "Configuration file"
 msgstr "Konfigurācijas fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
-msgid  "Application"
+msgid "Application"
 msgstr "Lietotne"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
-msgid  "Database table"
+msgid "Database table"
 msgstr "Datubāzes tabula"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
-msgid  "System file"
+msgid "System file"
 msgstr "Sistēmas fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
-msgid  "MS Word document"
+msgid "MS Word document"
 msgstr "MS Word dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.STRING.TEXT
-msgid  "Help file"
+msgid "Help file"
 msgstr "Palīdzības fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
-msgid  "HTML document"
+msgid "HTML document"
 msgstr "HTML dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.STRING.TEXT
-msgid  "Archive file"
+msgid "Archive file"
 msgstr "Arhīva fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.STRING.TEXT
-msgid  "Log file"
+msgid "Log file"
 msgstr "Žurnāla fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.STRING.TEXT
-msgid  "%STAROFFICE Database"
+msgid "%STAROFFICE Database"
 msgstr "%STAROFFICE datubāze"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.STRING.TEXT
-msgid  "StarWriter 4.0 / 5.0 Master Document"
+msgid "StarWriter 4.0 / 5.0 Master Document"
 msgstr "StarWriter 4.0 / 5.0 galvenais dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.STRING.TEXT
-msgid  "%STAROFFICE Image"
+msgid "%STAROFFICE Image"
 msgstr "%STAROFFICE attēls"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.STRING.TEXT
-msgid  "Text file"
+msgid "Text file"
 msgstr "Teksta fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LINK.STRING.TEXT
-msgid  "Link"
+msgid "Link"
 msgstr "Saite"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.STRING.TEXT
-msgid  "%STAROFFICE 3.0 - 5.0 Template"
+msgid "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "%STAROFFICE 3.0 - 5.0 sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.STRING.TEXT
-msgid  "MS Excel document"
+msgid "MS Excel document"
 msgstr "MS Excel dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.STRING.TEXT
-msgid  "MS Excel template"
+msgid "MS Excel template"
 msgstr "MS Excel sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.STRING.TEXT
-msgid  "Batch file"
+msgid "Batch file"
 msgstr "Paketes (batch) fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
-msgid  "File"
+msgid "File"
 msgstr "Fails"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
-msgid  "Folder"
+msgid "Folder"
 msgstr "Mape"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.STRING.TEXT
-msgid  "Text Document"
+msgid "Text Document"
 msgstr "Teksta dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Izklājlapa"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "Prezentācija"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "Zīmējums"
 
+#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
+msgid "HTML document"
+msgstr "HTML dokuments"
+
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
-msgid  "Master document"
+msgid "Master document"
 msgstr "Galvenais dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.STRING.TEXT
-msgid  "Formula"
+msgid "Formula"
 msgstr "Formula"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
-msgid  "Database"
+msgid "Database"
 msgstr "Datubāze"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION izklājlapas sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION zīmējuma sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION prezentācijas sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION teksta dokumenta sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.STRING.TEXT
-msgid  "Local drive"
+msgid "Local drive"
 msgstr "Lokālais disks"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.STRING.TEXT
-msgid  "Disk drive"
+msgid "Disk drive"
 msgstr "Diskiekārta"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.STRING.TEXT
-msgid  "CD-ROM drive"
+msgid "CD-ROM drive"
 msgstr "CD-ROM diskiekārta"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.STRING.TEXT
-msgid  "Network connection"
+msgid "Network connection"
 msgstr "Tīkla savienojums"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.STRING.TEXT
-msgid  "MS PowerPoint Document"
+msgid "MS PowerPoint Document"
 msgstr "MS PowerPoint dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.STRING.TEXT
-msgid  "MS PowerPoint Template"
+msgid "MS PowerPoint Template"
 msgstr "MS PowerPoint sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.STRING.TEXT
-msgid  "MS PowerPoint Show"
+msgid "MS PowerPoint Show"
 msgstr "MS PowerPoint skate"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION formula"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION diagramma"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION zīmējums"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION izklājlapa"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION prezentācija"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION teksta dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION galvenais dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.STRING.TEXT
-msgid  "MathML Document"
+msgid "MathML Document"
 msgstr "MathML dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.STRING.TEXT
-msgid  "OpenDocument Database"
+msgid "OpenDocument Database"
 msgstr "OpenDocument datubāze"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.STRING.TEXT
-msgid  "OpenDocument Drawing"
+msgid "OpenDocument Drawing"
 msgstr "OpenDocument zīmējums"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.STRING.TEXT
-msgid  "OpenDocument Formula"
+msgid "OpenDocument Formula"
 msgstr "OpenDocument formula"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.STRING.TEXT
-msgid  "OpenDocument Master Document"
+msgid "OpenDocument Master Document"
 msgstr "OpenDocument galvenais dokuments"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.STRING.TEXT
-msgid  "OpenDocument Presentation"
+msgid "OpenDocument Presentation"
 msgstr "OpenDocument prezentācija"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.STRING.TEXT
-msgid  "OpenDocument Spreadsheet"
+msgid "OpenDocument Spreadsheet"
 msgstr "OpenDocument izklājlapa"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.STRING.TEXT
-msgid  "OpenDocument Text"
+msgid "OpenDocument Text"
 msgstr "OpenDocument teksts"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.STRING.TEXT
-msgid  "OpenDocument Spreadsheet Template"
+msgid "OpenDocument Spreadsheet Template"
 msgstr "OpenDocument izklājlapas sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.STRING.TEXT
-msgid  "OpenDocument Drawing Template"
+msgid "OpenDocument Drawing Template"
 msgstr "OpenDocument zīmējuma sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.STRING.TEXT
-msgid  "OpenDocument Presentation Template"
+msgid "OpenDocument Presentation Template"
 msgstr "OpenDocument prezentācijas sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.STRING.TEXT
-msgid  "OpenDocument Text Template"
+msgid "OpenDocument Text Template"
 msgstr "OpenDocument teksta sagatave"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.STRING.TEXT
-msgid  "%PRODUCTNAME Extension"
+msgid "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME paplašinājums"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PAIREDLIST.ITEM
-msgid  "[None]"
+msgid "[None]"
 msgstr "[nav]"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PAIREDLIST.ITEM
-msgid  "Unknown"
+msgid "Unknown"
 msgstr "Nezināms"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PAIREDLIST.ITEM
-msgid  "Default"
+msgid "Default"
 msgstr "Noklusētā"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PAIREDLIST.ITEM
-msgid  "Afrikaans (South Africa)"
+msgid "Afrikaans (South Africa)"
 msgstr "Afrikandu (Dienvidāfrika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PAIREDLIST.ITEM
-msgid  "Albanian"
+msgid "Albanian"
 msgstr "Albāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PAIREDLIST.ITEM
-msgid  "Arabic"
+msgid "Arabic"
 msgstr "Arābu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PAIREDLIST.ITEM
-msgid  "Arabic (Algeria)"
+msgid "Arabic (Algeria)"
 msgstr "Arābu (Alžīrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PAIREDLIST.ITEM
-msgid  "Arabic (Bahrain)"
+msgid "Arabic (Bahrain)"
 msgstr "Arābu (Bahreina)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PAIREDLIST.ITEM
-msgid  "Arabic (Chad)"
+msgid "Arabic (Chad)"
 msgstr "Arābu (Čada)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PAIREDLIST.ITEM
-msgid  "Arabic (Comoros)"
+msgid "Arabic (Comoros)"
 msgstr "Arābu (Komoras)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PAIREDLIST.ITEM
-msgid  "Arabic (Djibouti)"
+msgid "Arabic (Djibouti)"
 msgstr "Arābu (Džibutija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PAIREDLIST.ITEM
-msgid  "Arabic (Egypt)"
+msgid "Arabic (Egypt)"
 msgstr "Arābu (Ēģipte)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PAIREDLIST.ITEM
-msgid  "Arabic (Eritrea)"
+msgid "Arabic (Eritrea)"
 msgstr "Arābu (Eritreja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PAIREDLIST.ITEM
-msgid  "Arabic (Iraq)"
+msgid "Arabic (Iraq)"
 msgstr "Arābu (Irāka)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PAIREDLIST.ITEM
-msgid  "Arabic (Israel)"
+msgid "Arabic (Israel)"
 msgstr "Arābu (Izraēla)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PAIREDLIST.ITEM
-msgid  "Arabic (Jordan)"
+msgid "Arabic (Jordan)"
 msgstr "Arābu (Jordānija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PAIREDLIST.ITEM
-msgid  "Arabic (Kuwait)"
+msgid "Arabic (Kuwait)"
 msgstr "Arābu (Kuveita)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PAIREDLIST.ITEM
-msgid  "Arabic (Lebanon)"
+msgid "Arabic (Lebanon)"
 msgstr "Arābu (Libāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PAIREDLIST.ITEM
-msgid  "Arabic (Libya)"
+msgid "Arabic (Libya)"
 msgstr "Arābu (Lībija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PAIREDLIST.ITEM
-msgid  "Arabic (Mauritania)"
+msgid "Arabic (Mauritania)"
 msgstr "Arābu (Mauritānija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PAIREDLIST.ITEM
-msgid  "Arabic (Morocco)"
+msgid "Arabic (Morocco)"
 msgstr "Arābu (Maroka)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PAIREDLIST.ITEM
-msgid  "Arabic (Oman)"
+msgid "Arabic (Oman)"
 msgstr "Arābu (Omāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PAIREDLIST.ITEM
-msgid  "Arabic (Palestine)"
+msgid "Arabic (Palestine)"
 msgstr "Arābu (Palestīna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PAIREDLIST.ITEM
-msgid  "Arabic (Qatar)"
+msgid "Arabic (Qatar)"
 msgstr "Arābu (Katara)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PAIREDLIST.ITEM
-msgid  "Arabic (Saudi Arabia)"
+msgid "Arabic (Saudi Arabia)"
 msgstr "Arābu (Saūda Arābija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PAIREDLIST.ITEM
-msgid  "Arabic (Somalia)"
+msgid "Arabic (Somalia)"
 msgstr "Arābu (Somālija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PAIREDLIST.ITEM
-msgid  "Arabic (Sudan)"
+msgid "Arabic (Sudan)"
 msgstr "Arābu (Sudāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PAIREDLIST.ITEM
-msgid  "Arabic (Syria)"
+msgid "Arabic (Syria)"
 msgstr "Arābu (Sīrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PAIREDLIST.ITEM
-msgid  "Arabic (Tunisia)"
+msgid "Arabic (Tunisia)"
 msgstr "Arābu (Tunisija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PAIREDLIST.ITEM
-msgid  "Arabic (UAE)"
+msgid "Arabic (UAE)"
 msgstr "Arābu (AAE)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PAIREDLIST.ITEM
-msgid  "Arabic (Yemen)"
+msgid "Arabic (Yemen)"
 msgstr "Arābu (Jemena)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PAIREDLIST.ITEM
-msgid  "Armenian"
+msgid "Armenian"
 msgstr "Armēņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PAIREDLIST.ITEM
-msgid  "Assami"
+msgid "Assami"
 msgstr "Asamiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PAIREDLIST.ITEM
-msgid  "Azerbaijani Latin"
+msgid "Azerbaijani Latin"
 msgstr "Azerbaidžāņu latīņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PAIREDLIST.ITEM
-msgid  "Azerbaijani Cyrillic"
+msgid "Azerbaijani Cyrillic"
 msgstr "Azerbaidžāņu kirilica"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PAIREDLIST.ITEM
-msgid  "Basque"
+msgid "Basque"
 msgstr "Basku"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PAIREDLIST.ITEM
-msgid  "Bengali (India)"
+msgid "Bengali (India)"
 msgstr "Bengāļu (Indija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PAIREDLIST.ITEM
-msgid  "Bulgarian"
+msgid "Bulgarian"
 msgstr "Bulgāru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PAIREDLIST.ITEM
-msgid  "Belarusian"
+msgid "Belarusian"
 msgstr "Baltkrievu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PAIREDLIST.ITEM
-msgid  "Catalan"
+msgid "Catalan"
 msgstr "Katalāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PAIREDLIST.ITEM
-msgid  "Chinese (traditional)"
+msgid "Chinese (traditional)"
 msgstr "Ķīniešu (tradicionāla)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PAIREDLIST.ITEM
-msgid  "Chinese (simplified)"
+msgid "Chinese (simplified)"
 msgstr "Ķīniešu (vienkāršota)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PAIREDLIST.ITEM
-msgid  "Chinese (Hong Kong)"
+msgid "Chinese (Hong Kong)"
 msgstr "Ķīniešu (Honkonga)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PAIREDLIST.ITEM
-msgid  "Chinese (Singapore)"
+msgid "Chinese (Singapore)"
 msgstr "Ķīniešu (Singapūra)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PAIREDLIST.ITEM
-msgid  "Chinese (Macau)"
+msgid "Chinese (Macau)"
 msgstr "Ķīniešu (Makao)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PAIREDLIST.ITEM
-msgid  "Croatian"
+msgid "Croatian"
 msgstr "Horvātu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PAIREDLIST.ITEM
-msgid  "Czech"
+msgid "Czech"
 msgstr "Čehu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PAIREDLIST.ITEM
-msgid  "Danish"
+msgid "Danish"
 msgstr "Dāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PAIREDLIST.ITEM
-msgid  "Dutch (Netherlands)"
+msgid "Dutch (Netherlands)"
 msgstr "Holandiešu (Nīderlande)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PAIREDLIST.ITEM
-msgid  "Dutch (Belgium)"
+msgid "Dutch (Belgium)"
 msgstr "Dutch (Beļģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PAIREDLIST.ITEM
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "Angļu (ASV)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PAIREDLIST.ITEM
-msgid  "English (UK)"
+msgid "English (UK)"
 msgstr "Angļu (Apvienotā karaliste)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PAIREDLIST.ITEM
-msgid  "English (Australia)"
+msgid "English (Australia)"
 msgstr "Angļu (Austrālija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PAIREDLIST.ITEM
-msgid  "English (Canada)"
+msgid "English (Canada)"
 msgstr "Angļu (Kanāda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PAIREDLIST.ITEM
-msgid  "English (New Zealand)"
+msgid "English (New Zealand)"
 msgstr "Angļu (Jaunzēlande)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PAIREDLIST.ITEM
-msgid  "English (Eire)"
+msgid "English (Eire)"
 msgstr "Angļu (Īrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PAIREDLIST.ITEM
-msgid  "English (South Africa)"
+msgid "English (South Africa)"
 msgstr "Angļu (Dienvidāfrika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PAIREDLIST.ITEM
-msgid  "English (Jamaica)"
+msgid "English (Jamaica)"
 msgstr "Angļu (Jamaika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PAIREDLIST.ITEM
-msgid  "English (Caribbean)"
+msgid "English (Caribbean)"
 msgstr "Angļu (Karību)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PAIREDLIST.ITEM
-msgid  "English (Belize)"
+msgid "English (Belize)"
 msgstr "Angļu (Belize)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PAIREDLIST.ITEM
-msgid  "English (Trinidad)"
+msgid "English (Trinidad)"
 msgstr "Angļu (Trinidāda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PAIREDLIST.ITEM
-msgid  "English (Zimbabwe)"
+msgid "English (Zimbabwe)"
 msgstr "Angļu (Zimbabve)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PAIREDLIST.ITEM
-msgid  "English (Philippines)"
+msgid "English (Philippines)"
 msgstr "Angļu (Filipīnas)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PAIREDLIST.ITEM
-msgid  "English (India)"
+msgid "English (India)"
 msgstr "Angļu (Indija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PAIREDLIST.ITEM
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "Igauņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PAIREDLIST.ITEM
-msgid  "Finnish"
+msgid "Finnish"
 msgstr "Somu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
-msgid  "Faroese"
+msgid "Faroese"
 msgstr "Fēru"
 
+#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
+msgid "Persian"
+msgstr ""
+
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
-msgid  "French (France)"
+msgid "French (France)"
 msgstr "Franču (Francija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PAIREDLIST.ITEM
-msgid  "French (Belgium)"
+msgid "French (Belgium)"
 msgstr "Franču (Beļģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PAIREDLIST.ITEM
-msgid  "French (Canada)"
+msgid "French (Canada)"
 msgstr "Franču (Kanāda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PAIREDLIST.ITEM
-msgid  "French (Switzerland)"
+msgid "French (Switzerland)"
 msgstr "Franču (Šveice)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PAIREDLIST.ITEM
-msgid  "French (Luxembourg)"
+msgid "French (Luxembourg)"
 msgstr "Franču (Luksemburga)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PAIREDLIST.ITEM
-msgid  "French (Monaco)"
+msgid "French (Monaco)"
 msgstr "Franču (Monako)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PAIREDLIST.ITEM
-msgid  "Gascon"
+msgid "Gascon"
 msgstr "Gascon"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PAIREDLIST.ITEM
-msgid  "German (Germany)"
+msgid "German (Germany)"
 msgstr "Vācu (Vācija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PAIREDLIST.ITEM
-msgid  "German (Switzerland)"
+msgid "German (Switzerland)"
 msgstr "Vācu (Šveice)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PAIREDLIST.ITEM
-msgid  "German (Austria)"
+msgid "German (Austria)"
 msgstr "Vācu (Austrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PAIREDLIST.ITEM
-msgid  "German (Luxembourg)"
+msgid "German (Luxembourg)"
 msgstr "Vācu (Luksemburga)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PAIREDLIST.ITEM
-msgid  "German (Liechtenstein)"
+msgid "German (Liechtenstein)"
 msgstr "Vācu (Lihtenšteina)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PAIREDLIST.ITEM
-msgid  "Greek"
+msgid "Greek"
 msgstr "Grieķu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PAIREDLIST.ITEM
-msgid  "Gujarati"
+msgid "Gujarati"
 msgstr "Gudžaratu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PAIREDLIST.ITEM
-msgid  "Hebrew"
+msgid "Hebrew"
 msgstr "Ivrits"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PAIREDLIST.ITEM
-msgid  "Hindi"
+msgid "Hindi"
 msgstr "Hindu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PAIREDLIST.ITEM
-msgid  "Hungarian"
+msgid "Hungarian"
 msgstr "Ungāru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PAIREDLIST.ITEM
-msgid  "Icelandic"
+msgid "Icelandic"
 msgstr "Īslandiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PAIREDLIST.ITEM
-msgid  "Indonesian"
+msgid "Indonesian"
 msgstr "Indonēziešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PAIREDLIST.ITEM
-msgid  "Italian (Italy)"
+msgid "Italian (Italy)"
 msgstr "Itāļu (Itālija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PAIREDLIST.ITEM
-msgid  "Italian (Switzerland)"
+msgid "Italian (Switzerland)"
 msgstr "Itāļu (Šveice)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PAIREDLIST.ITEM
-msgid  "Japanese"
+msgid "Japanese"
 msgstr "Japāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PAIREDLIST.ITEM
-msgid  "Kannada"
+msgid "Kannada"
 msgstr "Kannadu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PAIREDLIST.ITEM
-msgid  "Kashmiri (Kashmir)"
+msgid "Kashmiri (Kashmir)"
 msgstr "Kašmiriešu (Kašmira)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PAIREDLIST.ITEM
-msgid  "Kashmiri (India)"
+msgid "Kashmiri (India)"
 msgstr "Kašmiriešu (Indija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PAIREDLIST.ITEM
-msgid  "Kazak"
+msgid "Kazak"
 msgstr "Kazahu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PAIREDLIST.ITEM
-msgid  "Konkani"
+msgid "Konkani"
 msgstr "Konkanu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PAIREDLIST.ITEM
-msgid  "Korean (RoK)"
+msgid "Korean (RoK)"
 msgstr "Korejiešu (Dienvidkoreja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PAIREDLIST.ITEM
-msgid  "Latvian"
+msgid "Latvian"
 msgstr "Latviešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PAIREDLIST.ITEM
-msgid  "Lithuanian"
+msgid "Lithuanian"
 msgstr "Lietuviešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PAIREDLIST.ITEM
-msgid  "Macedonian"
+msgid "Macedonian"
 msgstr "Maķedoniešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PAIREDLIST.ITEM
-msgid  "Malay (Malaysia)"
+msgid "Malay (Malaysia)"
 msgstr "Malajiešu (Malaizija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PAIREDLIST.ITEM
-msgid  "Malay (Brunei Darussalam)"
+msgid "Malay (Brunei Darussalam)"
 msgstr "Malajiešu (Bruneja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PAIREDLIST.ITEM
-msgid  "Malayalam"
+msgid "Malayalam"
 msgstr "Malajalu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PAIREDLIST.ITEM
-msgid  "Manipuri"
+msgid "Manipuri"
 msgstr "Manipūru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PAIREDLIST.ITEM
-msgid  "Marathi"
+msgid "Marathi"
 msgstr "Marathu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PAIREDLIST.ITEM
-msgid  "Nepali (Nepal)"
+msgid "Nepali (Nepal)"
 msgstr "Nepāliešu (Nepāla)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PAIREDLIST.ITEM
-msgid  "Nepali (India)"
+msgid "Nepali (India)"
 msgstr "Nepāliešu (Indija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PAIREDLIST.ITEM
-msgid  "Norwegian, Bokmål"
+msgid "Norwegian, Bokmål"
 msgstr "Norvēģu bukmols"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PAIREDLIST.ITEM
-msgid  "Norwegian, Nynorsk"
+msgid "Norwegian, Nynorsk"
 msgstr "Jaunnorvēģu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PAIREDLIST.ITEM
-msgid  "Oriya"
+msgid "Oriya"
 msgstr "Oriju"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PAIREDLIST.ITEM
-msgid  "Polish"
+msgid "Polish"
 msgstr "Poļu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PAIREDLIST.ITEM
-msgid  "Portuguese (Portugal)"
+msgid "Portuguese (Portugal)"
 msgstr "Portugāļu (Portugāle)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PAIREDLIST.ITEM
-msgid  "Portuguese (Brazil)"
+msgid "Portuguese (Brazil)"
 msgstr "Portugāļu (Brazīlija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PAIREDLIST.ITEM
-msgid  "Punjabi"
+msgid "Punjabi"
 msgstr "Pandžabu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PAIREDLIST.ITEM
-msgid  "Rhaeto-Romance"
+msgid "Rhaeto-Romance"
 msgstr "Retoromāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PAIREDLIST.ITEM
-msgid  "Romanian"
+msgid "Romanian"
 msgstr "Rumāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PAIREDLIST.ITEM
-msgid  "Russian"
+msgid "Russian"
 msgstr "Krievu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PAIREDLIST.ITEM
-msgid  "Sanskrit"
+msgid "Sanskrit"
 msgstr "Sanskrits"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Serbia and Montenegro)"
+msgid "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Serbu kirilica (Serbija un Melnkalne)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Serbia and Montenegro)"
+msgid "Serbian Latin (Serbia and Montenegro)"
 msgstr "Serbu latīņu (Serbija un Melnkalne)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Serbia)"
+msgid "Serbian Cyrillic (Serbia)"
 msgstr "Serbu kirilica (Serbija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Serbia)"
+msgid "Serbian Latin (Serbia)"
 msgstr "Serbu latīņu (Serbija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Montenegro)"
+msgid "Serbian Cyrillic (Montenegro)"
 msgstr "Serbu kirilica (Melnkalne)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Montenegro)"
+msgid "Serbian Latin (Montenegro)"
 msgstr "Serbu latīņu (Melnkalne)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PAIREDLIST.ITEM
-msgid  "Sindhi"
+msgid "Sindhi"
 msgstr "Sindhu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PAIREDLIST.ITEM
-msgid  "Slovak"
+msgid "Slovak"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PAIREDLIST.ITEM
-msgid  "Slovenian"
+msgid "Slovenian"
 msgstr "Slovēņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PAIREDLIST.ITEM
-msgid  "Spanish (Spain)"
+msgid "Spanish (Spain)"
 msgstr "Spāņu (Spānija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PAIREDLIST.ITEM
-msgid  "Spanish (Mexico)"
+msgid "Spanish (Mexico)"
 msgstr "Spāņu (Meksika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PAIREDLIST.ITEM
-msgid  "Spanish (Guatemala)"
+msgid "Spanish (Guatemala)"
 msgstr "Spāņu (Gvatemala)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PAIREDLIST.ITEM
-msgid  "Spanish (Costa Rica)"
+msgid "Spanish (Costa Rica)"
 msgstr "Spāņu (Kostarika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PAIREDLIST.ITEM
-msgid  "Spanish (Panama)"
+msgid "Spanish (Panama)"
 msgstr "Spāņu (Panama)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PAIREDLIST.ITEM
-msgid  "Spanish (Dom. Rep.)"
+msgid "Spanish (Dom. Rep.)"
 msgstr "Spāņu (Dominikānas Rep.)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PAIREDLIST.ITEM
-msgid  "Spanish (Venezuela)"
+msgid "Spanish (Venezuela)"
 msgstr "Spāņu (Venecuēla)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PAIREDLIST.ITEM
-msgid  "Spanish (Colombia)"
+msgid "Spanish (Colombia)"
 msgstr "Spāņu (Kolumbija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PAIREDLIST.ITEM
-msgid  "Spanish (Peru)"
+msgid "Spanish (Peru)"
 msgstr "Spāņu (Peru)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PAIREDLIST.ITEM
-msgid  "Spanish (Argentina)"
+msgid "Spanish (Argentina)"
 msgstr "Spāņu (Argentīna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PAIREDLIST.ITEM
-msgid  "Spanish (Ecuador)"
+msgid "Spanish (Ecuador)"
 msgstr "Spāņu (Ekvadora)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PAIREDLIST.ITEM
-msgid  "Spanish (Chile)"
+msgid "Spanish (Chile)"
 msgstr "Spāņu (Čīle)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PAIREDLIST.ITEM
-msgid  "Spanish (Uruguay)"
+msgid "Spanish (Uruguay)"
 msgstr "Spāņu (Urugvaja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PAIREDLIST.ITEM
-msgid  "Spanish (Paraguay)"
+msgid "Spanish (Paraguay)"
 msgstr "Spāņu (Paragvaja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Spanish (Bolivia)"
+msgid "Spanish (Bolivia)"
 msgstr "Spāņu (Bolīvija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PAIREDLIST.ITEM
-msgid  "Spanish (El Salvador)"
+msgid "Spanish (El Salvador)"
 msgstr "Spāņu (Salvadora)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PAIREDLIST.ITEM
-msgid  "Spanish (Honduras)"
+msgid "Spanish (Honduras)"
 msgstr "Spāņu (Hondurasa)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PAIREDLIST.ITEM
-msgid  "Spanish (Nicaragua)"
+msgid "Spanish (Nicaragua)"
 msgstr "Spāņu (Nikaragva)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PAIREDLIST.ITEM
-msgid  "Spanish (Puerto Rico)"
+msgid "Spanish (Puerto Rico)"
 msgstr "Spāņu (Puertoriko)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PAIREDLIST.ITEM
-msgid  "Swahili (Kenya)"
+msgid "Swahili (Kenya)"
 msgstr "Svahili (Kenija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PAIREDLIST.ITEM
-msgid  "Swedish (Sweden)"
+msgid "Swedish (Sweden)"
 msgstr "Zviedru (Zviedrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PAIREDLIST.ITEM
-msgid  "Swedish (Finland)"
+msgid "Swedish (Finland)"
 msgstr "Zviedru (Somija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PAIREDLIST.ITEM
-msgid  "Tajik"
+msgid "Tajik"
 msgstr "Tadžiku"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PAIREDLIST.ITEM
-msgid  "Tamil"
+msgid "Tamil"
 msgstr "Tamilu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PAIREDLIST.ITEM
-msgid  "Tatar"
+msgid "Tatar"
 msgstr "Tatāru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PAIREDLIST.ITEM
-msgid  "Telugu"
+msgid "Telugu"
 msgstr "Telugu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PAIREDLIST.ITEM
-msgid  "Thai"
+msgid "Thai"
 msgstr "Taju"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PAIREDLIST.ITEM
-msgid  "Turkish"
+msgid "Turkish"
 msgstr "Turku"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PAIREDLIST.ITEM
-msgid  "Urdu (Pakistan)"
+msgid "Urdu (Pakistan)"
 msgstr "Urdu (Pakistāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PAIREDLIST.ITEM
-msgid  "Urdu (India)"
+msgid "Urdu (India)"
 msgstr "Urdu (Indija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PAIREDLIST.ITEM
-msgid  "Ukrainian"
+msgid "Ukrainian"
 msgstr "Ukraiņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PAIREDLIST.ITEM
-msgid  "Uzbek Latin"
+msgid "Uzbek Latin"
 msgstr "Uzbeku latīņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PAIREDLIST.ITEM
-msgid  "Welsh"
+msgid "Welsh"
 msgstr "Velsiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PAIREDLIST.ITEM
-msgid  "User 1"
+msgid "User 1"
 msgstr "Lietotāja 1"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PAIREDLIST.ITEM
-msgid  "User 2"
+msgid "User 2"
 msgstr "Lietotāja 2"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PAIREDLIST.ITEM
-msgid  "User 3"
+msgid "User 3"
 msgstr "Lietotāja 3"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PAIREDLIST.ITEM
-msgid  "User 4"
+msgid "User 4"
 msgstr "Lietotāja 4"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PAIREDLIST.ITEM
-msgid  "User 5"
+msgid "User 5"
 msgstr "Lietotāja 5"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PAIREDLIST.ITEM
-msgid  "User 6"
+msgid "User 6"
 msgstr "Lietotāja 6"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PAIREDLIST.ITEM
-msgid  "User 7"
+msgid "User 7"
 msgstr "Lietotāja 7"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PAIREDLIST.ITEM
-msgid  "User 8"
+msgid "User 8"
 msgstr "Lietotāja 8"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PAIREDLIST.ITEM
-msgid  "User 9"
+msgid "User 9"
 msgstr "Lietotāja 9"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PAIREDLIST.ITEM
-msgid  "Latin"
+msgid "Latin"
 msgstr "Latīņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PAIREDLIST.ITEM
-msgid  "Esperanto"
+msgid "Esperanto"
 msgstr "Esperanto"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PAIREDLIST.ITEM
-msgid  "Kinyarwanda (Rwanda)"
+msgid "Kinyarwanda (Rwanda)"
 msgstr "Kiņaruanda (Ruanda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PAIREDLIST.ITEM
-msgid  "Maori (New Zealand)"
+msgid "Maori (New Zealand)"
 msgstr "Maoru (Jaunzēlande)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PAIREDLIST.ITEM
-msgid  "Galician"
+msgid "Galician"
 msgstr "Galisiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PAIREDLIST.ITEM
-msgid  "Dhivehi"
+msgid "Dhivehi"
 msgstr "Maldīviešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PAIREDLIST.ITEM
-msgid  "Northern Sotho"
+msgid "Northern Sotho"
 msgstr "Ziemeļsotu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PAIREDLIST.ITEM
-msgid  "Gaelic (Scotland)"
+msgid "Gaelic (Scotland)"
 msgstr "Gēlu (Skotija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PAIREDLIST.ITEM
-msgid  "Mongolian"
+msgid "Mongolian"
 msgstr "Mongoļu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PAIREDLIST.ITEM
-msgid  "Interlingua"
+msgid "Interlingua"
 msgstr "Interlingva"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PAIREDLIST.ITEM
-msgid  "Bosnian"
+msgid "Bosnian"
 msgstr "Bosniešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PAIREDLIST.ITEM
-msgid  "Bengali (Bangladesh)"
+msgid "Bengali (Bangladesh)"
 msgstr "Bengāļu (Bangladeša)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PAIREDLIST.ITEM
-msgid  "Occitan"
+msgid "Occitan"
 msgstr "Oksitāņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PAIREDLIST.ITEM
-msgid  "Khmer"
+msgid "Khmer"
 msgstr "Khmeru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PAIREDLIST.ITEM
-msgid  "Kurdish (Turkey)"
+msgid "Kurdish (Turkey)"
 msgstr "Kurdu (Turcija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PAIREDLIST.ITEM
-msgid  "Kurdish (Syria)"
+msgid "Kurdish (Syria)"
 msgstr "Kurdu (Sīrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PAIREDLIST.ITEM
-msgid  "Kurdish (Iraq)"
+msgid "Kurdish (Iraq)"
 msgstr "Kurdu (Irāka)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PAIREDLIST.ITEM
-msgid  "Kurdish (Iran)"
+msgid "Kurdish (Iran)"
 msgstr "Kurdu (Irāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PAIREDLIST.ITEM
-msgid  "Sardinian"
+msgid "Sardinian"
 msgstr "Sardīniešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PAIREDLIST.ITEM
-msgid  "Dzongkha"
+msgid "Dzongkha"
 msgstr "Dzongke"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PAIREDLIST.ITEM
-msgid  "Swahili (Tanzania)"
+msgid "Swahili (Tanzania)"
 msgstr "Svahili (Tanzānija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PAIREDLIST.ITEM
-msgid  "Lao"
+msgid "Lao"
 msgstr "Laosiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PAIREDLIST.ITEM
-msgid  "Irish"
+msgid "Irish"
 msgstr "Īru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PAIREDLIST.ITEM
-msgid  "Tibetan (PR China)"
+msgid "Tibetan (PR China)"
 msgstr "Tibetiešu (Ķīna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PAIREDLIST.ITEM
-msgid  "Georgian"
+msgid "Georgian"
 msgstr "Gruzīnu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PAIREDLIST.ITEM
-msgid  "Frisian"
+msgid "Frisian"
 msgstr "Frīzu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PAIREDLIST.ITEM
-msgid  "Tswana (South Africa)"
+msgid "Tswana (South Africa)"
 msgstr "Cvanu (Dienvidāfrika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PAIREDLIST.ITEM
-msgid  "Zulu"
+msgid "Zulu"
 msgstr "Zulu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PAIREDLIST.ITEM
-msgid  "Vietnamese"
+msgid "Vietnamese"
 msgstr "Vjetnamiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PAIREDLIST.ITEM
-msgid  "Breton"
+msgid "Breton"
 msgstr "Bretoņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PAIREDLIST.ITEM
-msgid  "Kalaallisut"
+msgid "Kalaallisut"
 msgstr "Grenlandiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PAIREDLIST.ITEM
-msgid  "Ndebele, South"
+msgid "Ndebele, South"
 msgstr "Dienvidndebelu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PAIREDLIST.ITEM
-msgid  "Southern Sotho"
+msgid "Southern Sotho"
 msgstr "Dienvidsotu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PAIREDLIST.ITEM
-msgid  "Swazi"
+msgid "Swazi"
 msgstr "Svatu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PAIREDLIST.ITEM
-msgid  "Tsonga"
+msgid "Tsonga"
 msgstr "Congu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PAIREDLIST.ITEM
-msgid  "Venda"
+msgid "Venda"
 msgstr "Vendu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PAIREDLIST.ITEM
-msgid  "Tswana (Botswana)"
+msgid "Tswana (Botswana)"
 msgstr "Cvanu (Botsvāna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PAIREDLIST.ITEM
-msgid  "Xhosa"
+msgid "Xhosa"
 msgstr "Khosu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PAIREDLIST.ITEM
-msgid  "Sinhala"
+msgid "Sinhala"
 msgstr "Singāļu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PAIREDLIST.ITEM
-msgid  "Moore"
+msgid "Moore"
 msgstr "Mosu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PAIREDLIST.ITEM
-msgid  "Bambara"
+msgid "Bambara"
 msgstr "Bambaru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PAIREDLIST.ITEM
-msgid  "Akan"
+msgid "Akan"
 msgstr "Akanu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PAIREDLIST.ITEM
-msgid  "Luxembourgish"
+msgid "Luxembourgish"
 msgstr "Luksemburgiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PAIREDLIST.ITEM
-msgid  "Friulian"
+msgid "Friulian"
 msgstr "Friūlu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PAIREDLIST.ITEM
-msgid  "Fijian"
+msgid "Fijian"
 msgstr "Fidžiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PAIREDLIST.ITEM
-msgid  "Afrikaans (Namibia)"
+msgid "Afrikaans (Namibia)"
 msgstr "Afrikandu (Namībija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PAIREDLIST.ITEM
-msgid  "English (Namibia)"
+msgid "English (Namibia)"
 msgstr "Angļu (Namībija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PAIREDLIST.ITEM
-msgid  "Walloon"
+msgid "Walloon"
 msgstr "Valoņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PAIREDLIST.ITEM
-msgid  "Coptic"
+msgid "Coptic"
 msgstr "Koptu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PAIREDLIST.ITEM
-msgid  "Tigrigna (Eritrea)"
+msgid "Tigrigna (Eritrea)"
 msgstr "Tigrinja (Eritreja)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PAIREDLIST.ITEM
-msgid  "Tigrigna (Ethiopia)"
+msgid "Tigrigna (Ethiopia)"
 msgstr "Tigrinja (Etiopija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PAIREDLIST.ITEM
-msgid  "Amharic"
+msgid "Amharic"
 msgstr "Amharu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PAIREDLIST.ITEM
-msgid  "Kirghiz"
+msgid "Kirghiz"
 msgstr "Kirgīzu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PAIREDLIST.ITEM
-msgid  "German (Belgium)"
+msgid "German (Belgium)"
 msgstr "Vācu (Beļģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PAIREDLIST.ITEM
-msgid  "Chuvash"
+msgid "Chuvash"
 msgstr "Čuvašu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PAIREDLIST.ITEM
-msgid  "Burmese"
+msgid "Burmese"
 msgstr "Birmiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PAIREDLIST.ITEM
-msgid  "Hausa (Nigeria)"
+msgid "Hausa (Nigeria)"
 msgstr "Hausu (Nigērija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PAIREDLIST.ITEM
-msgid  "Hausa (Ghana)"
+msgid "Hausa (Ghana)"
 msgstr "Hausu (Gana)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PAIREDLIST.ITEM
-msgid  "Éwé"
+msgid "Éwé"
 msgstr "Evu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PAIREDLIST.ITEM
-msgid  "English (Ghana)"
+msgid "English (Ghana)"
 msgstr "Angļu (Gana)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PAIREDLIST.ITEM
-msgid  "Sango"
+msgid "Sango"
 msgstr "Sangu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PAIREDLIST.ITEM
-msgid  "Tagalog"
+msgid "Tagalog"
 msgstr "Tagalu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PAIREDLIST.ITEM
-msgid  "Ganda"
+msgid "Ganda"
 msgstr "Gandu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PAIREDLIST.ITEM
-msgid  "Lingala"
+msgid "Lingala"
 msgstr "Lingala"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PAIREDLIST.ITEM
-msgid  "Low German"
+msgid "Low German"
 msgstr "Lejasvācu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PAIREDLIST.ITEM
-msgid  "Hiligaynon"
+msgid "Hiligaynon"
 msgstr "Hiligainonu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PAIREDLIST.ITEM
-msgid  "Nyanja"
+msgid "Nyanja"
 msgstr "Čičeva"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PAIREDLIST.ITEM
-msgid  "Kashubian"
+msgid "Kashubian"
 msgstr "Kašubu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PAIREDLIST.ITEM
-msgid  "Spanish (Cuba)"
+msgid "Spanish (Cuba)"
 msgstr "Spāņu (Kuba)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PAIREDLIST.ITEM
-msgid  "Tetun (Indonesia)"
+msgid "Tetun (Indonesia)"
 msgstr "Tetunu (Indonēzija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Quechua (Bolivia, North)"
+msgid "Quechua (Bolivia, North)"
 msgstr "Kečvu (Bolīvija, ziemeļi)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Quechua (Bolivia, South)"
+msgid "Quechua (Bolivia, South)"
 msgstr "Kečvu (Bolīvija, dienvidi)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PAIREDLIST.ITEM
-msgid  "Somali"
+msgid "Somali"
 msgstr "Somāļu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PAIREDLIST.ITEM
-msgid  "Sami, Inari (Finland)"
+msgid "Sami, Inari (Finland)"
 msgstr "Inari sāmu (Somija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Lule (Norway)"
+msgid "Sami, Lule (Norway)"
 msgstr "Luleo sāmu (Norvēģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Lule (Sweden)"
+msgid "Sami, Lule (Sweden)"
 msgstr "Luleo sāmu (Zviedrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Finland)"
+msgid "Sami, Northern (Finland)"
 msgstr "Ziemeļsāmu (Somija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Norway)"
+msgid "Sami, Northern (Norway)"
 msgstr "Ziemeļsāmu (Norvēģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Sweden)"
+msgid "Sami, Northern (Sweden)"
 msgstr "Ziemeļsāmu (Zviedrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PAIREDLIST.ITEM
-msgid  "Sami, Skolt (Finland)"
+msgid "Sami, Skolt (Finland)"
 msgstr "Skoltsāmu (Somija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Southern (Norway)"
+msgid "Sami, Southern (Norway)"
 msgstr "Dienvidsāmu (Norvēģija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Southern (Sweden)"
+msgid "Sami, Southern (Sweden)"
 msgstr "Dienvidsāmu (Zviedrija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PAIREDLIST.ITEM
-msgid  "Sami, Kildin (Russia)"
+msgid "Sami, Kildin (Russia)"
 msgstr "Kildin sāmu (Krievija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PAIREDLIST.ITEM
-msgid  "Guaraní, Paraguayan"
+msgid "Guaraní, Paraguayan"
 msgstr "Gvaranu, paragvajiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PAIREDLIST.ITEM
-msgid  "Bodo"
+msgid "Bodo"
 msgstr "Bodo"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PAIREDLIST.ITEM
-msgid  "Dogri"
+msgid "Dogri"
 msgstr "Dogru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PAIREDLIST.ITEM
-msgid  "Maithili"
+msgid "Maithili"
 msgstr "Maithili"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PAIREDLIST.ITEM
-msgid  "Santali"
+msgid "Santali"
 msgstr "Santalu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PAIREDLIST.ITEM
-msgid  "Tetun (Timor-Leste)"
+msgid "Tetun (Timor-Leste)"
 msgstr "Tetunu (Timora)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PAIREDLIST.ITEM
-msgid  "Turkmen"
+msgid "Turkmen"
 msgstr "Turkmēņu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PAIREDLIST.ITEM
-msgid  "Maltese"
+msgid "Maltese"
 msgstr "Maltiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PAIREDLIST.ITEM
-msgid  "Tok Pisin"
+msgid "Tok Pisin"
 msgstr "Tokpisins"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PAIREDLIST.ITEM
-msgid  "Shuswap"
+msgid "Shuswap"
 msgstr "Shuswap"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PAIREDLIST.ITEM
-msgid  "Oromo"
+msgid "Oromo"
 msgstr "Oromu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PAIREDLIST.ITEM
-msgid  "Greek, Ancient"
+msgid "Greek, Ancient"
 msgstr "Sengrieķu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PAIREDLIST.ITEM
-msgid  "Yiddish (Israel)"
+msgid "Yiddish (Israel)"
 msgstr "Jidišs (Izraēla)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PAIREDLIST.ITEM
-msgid  "Quechua (Ecuador)"
+msgid "Quechua (Ecuador)"
 msgstr "Kečvu (Ekvadora)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PAIREDLIST.ITEM
-msgid  "Uyghur"
+msgid "Uyghur"
 msgstr "Uiguru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PAIREDLIST.ITEM
-msgid  "Asturian"
+msgid "Asturian"
 msgstr "Astūriešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PAIREDLIST.ITEM
-msgid  "Sorbian, Upper"
+msgid "Sorbian, Upper"
 msgstr "Augšassorbu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PAIREDLIST.ITEM
-msgid  "Sorbian, Lower"
+msgid "Sorbian, Lower"
 msgstr "Lejassorbu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PAIREDLIST.ITEM
-msgid  "Latgalian"
+msgid "Latgalian"
 msgstr "Latgaliešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PAIREDLIST.ITEM
-msgid  "Maore"
+msgid "Maore"
 msgstr "Maoru"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PAIREDLIST.ITEM
-msgid  "Bushi"
+msgid "Bushi"
 msgstr "Bušu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PAIREDLIST.ITEM
-msgid  "Tahitian"
+msgid "Tahitian"
 msgstr "Taitiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PAIREDLIST.ITEM
-msgid  "Malagasy, Plateau"
+msgid "Malagasy, Plateau"
 msgstr "Malagasu, plakankalnes"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PAIREDLIST.ITEM
-msgid  "Papiamentu (Netherlands Antilles)"
+msgid "Papiamentu (Netherlands Antilles)"
 msgstr "Papjamento (Nīderlandes Antiļu salas)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PAIREDLIST.ITEM
-msgid  "Papiamento (Aruba)"
+msgid "Papiamento (Aruba)"
 msgstr "Papjamento (Aruba)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PAIREDLIST.ITEM
-msgid  "Sardinian, Campidanese"
+msgid "Sardinian, Campidanese"
 msgstr "Sardīniešu, Kamidanese"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PAIREDLIST.ITEM
-msgid  "Sardinian, Gallurese"
+msgid "Sardinian, Gallurese"
 msgstr "Sardīniešu, Gallurese"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PAIREDLIST.ITEM
-msgid  "Sardinian, Logudorese"
+msgid "Sardinian, Logudorese"
 msgstr "Sardīniešu, Logudorese"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PAIREDLIST.ITEM
-msgid  "Sardinian, Sassarese"
+msgid "Sardinian, Sassarese"
 msgstr "Sardīniešu, Sasarese"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PAIREDLIST.ITEM
-msgid  "Bafia"
+msgid "Bafia"
 msgstr "Bafia"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PAIREDLIST.ITEM
-msgid  "Gikuyu"
+msgid "Gikuyu"
 msgstr "Kikuju"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PAIREDLIST.ITEM
-msgid  "Yoruba"
+msgid "Yoruba"
 msgstr "Jorubu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PAIREDLIST.ITEM
-msgid  "Rusyn (Ukraine)"
+msgid "Rusyn (Ukraine)"
 msgstr "Rusīnu (Ukraina)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PAIREDLIST.ITEM
-msgid  "Rusyn (Slovakia)"
+msgid "Rusyn (Slovakia)"
 msgstr "Rusīnu (Slovākija)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.PAIREDLIST.ITEM
-msgid  "Yiddish (USA)"
+msgid "Yiddish (USA)"
 msgstr "Jidišs (ASV)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.PAIREDLIST.ITEM
-msgid  "Hawaiian"
+msgid "Hawaiian"
 msgstr "Havajiešu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.PAIREDLIST.ITEM
-msgid  "Limbu"
+msgid "Limbu"
 msgstr "Limbu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.PAIREDLIST.ITEM
-msgid  "Lojban"
+msgid "Lojban"
 msgstr "Ložbans"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.PAIREDLIST.ITEM
-msgid  "Kabyle"
+msgid "Kabyle"
 msgstr "Kabilu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.PAIREDLIST.ITEM
-msgid  "Haitian"
+msgid "Haitian"
 msgstr "Haitiešu"
 
 #: misc/undo.src#STR_UNDO.STRING.TEXT
-msgid  "Undo: "
+msgid "Undo: "
 msgstr "Atsaukt: "
 
 #: misc/undo.src#STR_REDO.STRING.TEXT
-msgid  "Re~do: "
+msgid "Re~do: "
 msgstr "A~tatsaukt: "
 
 #: misc/undo.src#STR_REPEAT.STRING.TEXT
-msgid  "~Repeat: "
+msgid "~Repeat: "
 msgstr "~Atkārtot: "
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SHOW.TOOLBOXITEM.TEXT
-msgid  "Display IDs"
+msgid "Display IDs"
 msgstr "Rādīt ID"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_OUTPUT.TOOLBOXITEM.TEXT
-msgid  "This is the input window"
+msgid "This is the input window"
 msgstr "Šis ir ievades logs"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SEND_DATA.TOOLBOXITEM.TEXT
-msgid  "Transfer to TestTool"
+msgid "Transfer to TestTool"
 msgstr "Pārvietot uz testa rīku"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_ALLWIN.TOOLBOXITEM.TEXT
-msgid  "Show all windows"
+msgid "Show all windows"
 msgstr "Rādīt visus logus"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_KURZNAME.TOOLBOXITEM.TEXT
-msgid  "Show short names (if available)"
+msgid "Show short names (if available)"
 msgstr "Rādīt īsos nosaukumus (ja ir pieejami)"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_LANGNAME.TOOLBOXITEM.TEXT
-msgid  "Always show long-name"
+msgid "Always show long-name"
 msgstr "Vienmēr rādīt garo nosaukumu"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TOOLBOXITEM.TEXT
-msgid  "DisplayHID"
+msgid "DisplayHID"
 msgstr "AttēlotHID"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GROUPBOX.TEXT
-msgid  "Translation"
+msgid "Translation"
 msgstr "Tulkojums"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.EDIT.TEXT
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "R~ediģēt"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FIXEDTEXT.TEXT
-msgid  "Original Text"
+msgid "Original Text"
 msgstr "Sākotnējais teksts"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
-msgid  "Comment"
+msgid "Comment"
 msgstr "Komentārs"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
-msgid  "~Comment"
+msgid "~Comment"
 msgstr "~Komentārs"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
-msgid  "~Select"
+msgid "~Select"
 msgstr "Izvēlietie~s"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PUSHBUTTON.TEXT
-msgid  "~Restore"
+msgid "~Restore"
 msgstr "~Atjaunot"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PUSHBUTTON.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "~Pieņemt"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
+msgid "~Next"
 msgstr "~Nākamais"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.PUSHBUTTON.TEXT
-msgid  "Inplace Translation"
+msgid "Inplace Translation"
 msgstr "Tulkojums uz vietas"
 
 #: plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MESSBOX.MESSAGE
-msgid  "The Translation will be lost. Proceed anyway?"
+msgid "The Translation will be lost. Proceed anyway?"
 msgstr "Tulkojums pazudīs. Tiešām turpināt?"
 
 #: plugapp/testtool.src#TT_NO_CONTROL.ERRORBOX.MESSAGE
-msgid  "The Control is no longer valid. The Translation cannot be saved."
+msgid "The Control is no longer valid. The Translation cannot be saved."
 msgstr "Vadīkla nav vairs derīga. Tulkojumu nevar saglabāt."
 
 #: plugapp/testtool.src#TT_GPF.STRING.TEXT
-msgid  "GPF occurred"
+msgid "GPF occurred"
 msgstr "Notika GPF"
 
 #: plugapp/testtool.src#TT_ALTERNATE_CAPTION.STRING.TEXT
-msgid  "HelpID does not match UniqueID: "
+msgid "HelpID does not match UniqueID: "
 msgstr "HelpID neatbilst UniqueID: "
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.STRING.TEXT
-msgid  "Tab Panel Scroll Button, backward"
+msgid "Tab Panel Scroll Button, backward"
 msgstr "Tīku paneļa ritināšanas poga, atpakaļ"
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.STRING.TEXT
-msgid  "Tab Panel Scroll Button, forward"
+msgid "Tab Panel Scroll Button, forward"
 msgstr "Tīku paneļa ritināšanas poga, uz priekšu"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.MODALDIALOG.TEXT
-msgid  "Roadmap Skeleton Demo"
+msgid "Roadmap Skeleton Demo"
 msgstr "Rīcības plāna demonstrācija"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.STRING.TEXT
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Esi sveicināts!"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.STRING.TEXT
-msgid  "Prepare"
+msgid "Prepare"
 msgstr "Sagatavoties"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.STRING.TEXT
-msgid  "Setup"
+msgid "Setup"
 msgstr "Instalēt"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.STRING.TEXT
-msgid  "Finish"
+msgid "Finish"
 msgstr "Pabeigt"

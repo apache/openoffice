@@ -1,724 +1,752 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "אישור"
 
 #: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "ביטול"
 
 #: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "כן"
 
 #: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
-msgid  "~No"
+msgid "~No"
 msgstr "לא"
 
 #: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
-msgid  "~Retry"
+msgid "~Retry"
 msgstr "לנסות שוב"
 
 #: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "עזרה"
 
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
-msgid  "~More"
+msgid "~More"
+msgstr "עוד"
+
+#: src/btntext.src#SV_BUTTONTEXT_LESS.STRING.TEXT
+msgid "~More"
 msgstr "עוד"
 
 #: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "התעלמות"
 
 #: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
-msgid  "~Abort"
+msgid "~Abort"
 msgstr "ביטול"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "סגירה"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
-msgid  "Close Document"
+msgid "Close Document"
 msgstr "סגירת המסמך"
 
 #: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
-msgid  "Minimize"
+msgid "Minimize"
 msgstr "מיזעור"
 
 #: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
-msgid  "Maximize"
+msgid "Maximize"
 msgstr "הגדלה מירבית"
 
 #: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
-msgid  "Restore"
+msgid "Restore"
 msgstr "שיחזור"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
-msgid  "Drop down"
+msgid "Drop down"
 msgstr "נגלל מטה"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
-msgid  "Roll up"
+msgid "Roll up"
 msgstr "נגלל מעלה"
 
+#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
-msgid  "Always visible"
+msgid "Always visible"
 msgstr "תמיד מוצג"
 
 #: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr "הצגה"
 
 #: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr "הסתרה"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
-msgid  "Floating"
+msgid "Floating"
 msgstr "צף"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
-msgid  "Stick"
+msgid "Stick"
 msgstr "קיבוע"
 
+#: src/helptext.src#SV_SHORTCUT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
-msgid  "Context Help"
+msgid "Context Help"
 msgstr "עזרה על פי הקשר"
 
 #: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
-msgid  "Extended Tips"
+msgid "Extended Tips"
 msgstr "עצות מורחבות"
 
 #: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
-msgid  "Dock/Undock Windows"
+msgid "Dock/Undock Windows"
 msgstr "עיגון/ביטול עיגון חלונות"
 
 #: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
-msgid  "To Next Toolbar/Window"
+msgid "To Next Toolbar/Window"
 msgstr "אל סרגל הכלים/החלון הבא"
 
 #: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
-msgid  "To Previous Toolbar/Window"
+msgid "To Previous Toolbar/Window"
 msgstr "אל סרגל הכלים/החלון הקודם"
 
 #: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
-msgid  "To Document"
+msgid "To Document"
 msgstr "אל המסמך"
 
 #: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
-msgid  "To Menu Bar"
+msgid "To Menu Bar"
 msgstr "אל סרגל התפריט"
 
 #: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
-msgid  "Split window separator"
+msgid "Split window separator"
 msgstr "קו הפרדה בין שמשות של חלון"
 
 #: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
-msgid  "<No selection possible>"
+msgid "<No selection possible>"
 msgstr "<אין אפשרות לבחור>"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
-msgid  "~Undo"
+msgid "~Undo"
 msgstr "ביטול פעולה"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "גזירה"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "העתקה"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "הדבקה"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "מחיקה"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
-msgid  "Select ~All"
+msgid "Select ~All"
 msgstr "בחירת הכל"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
-msgid  "~Special Character..."
+msgid "~Special Character..."
 msgstr "תו מיוחד...‏"
 
 #: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
-msgid  "Services"
+msgid "Services"
 msgstr "שירותים"
 
 #: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
-msgid  "Hide %PRODUCTNAME"
+msgid "Hide %PRODUCTNAME"
 msgstr "להסתיר %PRODUCTNAME"
 
 #: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
-msgid  "Hide Others"
+msgid "Hide Others"
 msgstr "להסתיר את האחרים"
 
 #: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
-msgid  "Show All"
+msgid "Show All"
 msgstr "להציג את הכל"
 
 #: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
-msgid  "Quit %PRODUCTNAME"
+msgid "Quit %PRODUCTNAME"
 msgstr "יציאה מ%PRODUCTNAME"
 
 #: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "הדפסה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
-msgid  "~Print"
+msgid "~Print"
 msgstr "~הדפסה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
-msgid  "/ %n"
+msgid "/ %n"
 msgstr "/ %n"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
-msgid  "No pages"
+msgid "No pages"
 msgstr "אין דפים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
-msgid  "Print to File..."
+msgid "Print to File..."
 msgstr "הדפסה לקובץ..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "מדפסת ברירת מחדל"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
-msgid  "Print preview"
+msgid "Print preview"
 msgstr "תצוגה לפני הדפסה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
-msgid  "Page Layout"
+msgid "Page Layout"
 msgstr "פריסת עמוד"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
-msgid  "Layout"
+msgid "Layout"
 msgstr "פריסה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
-msgid  "Pa~ges per sheet"
+msgid "Pa~ges per sheet"
 msgstr "עמו~דים לגליון"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
-msgid  "1"
+msgid "1"
 msgstr "1"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
-msgid  "2"
+msgid "2"
 msgstr "2"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
-msgid  "4"
+msgid "4"
 msgstr "4"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
-msgid  "6"
+msgid "6"
 msgstr "6"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
-msgid  "9"
+msgid "9"
 msgstr "9"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
-msgid  "16"
+msgid "16"
 msgstr "16"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
-msgid  "Custom"
+msgid "Custom"
 msgstr "מותאים אישית"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
-msgid  "P~ages"
+msgid "P~ages"
 msgstr "ע~מודים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
-msgid  "b~y"
+msgid "b~y"
 msgstr "על ידי"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "מ~רחק"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
-msgid  "between pages"
+msgid "between pages"
 msgstr "בין עמודים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Margin"
+msgid "~Margin"
 msgstr "~שוליים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
-msgid  "to sheet border"
+msgid "to sheet border"
 msgstr "לגבול הגליון"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "~כיוון"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "אוטומטי"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "לאורך הדף"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "לרוחב הדף"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
-msgid  "Order"
+msgid "Order"
 msgstr "סדר"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
-msgid  "left to right, then down"
+msgid "left to right, then down"
 msgstr "משמאל לימין, ואז למטה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
-msgid  "top to bottom, then right"
+msgid "top to bottom, then right"
 msgstr "מלמעלה למטה, ואז ימינה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
-msgid  "top to bottom, then left"
+msgid "top to bottom, then left"
 msgstr "מלמעלה למטה, ואז ימינה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
-msgid  "right to left, then down"
+msgid "right to left, then down"
 msgstr "מימין לשמאל, ואז למטה"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
-msgid  "Draw a border around each page"
+msgid "Draw a border around each page"
 msgstr "הצג גבול סביב כל עמוד"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "כללי"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
-msgid  "Prin~ter"
+msgid "Prin~ter"
 msgstr "מ~דפסת"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "פרטים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
-msgid  "Status:"
+msgid "Status:"
 msgstr "מצב:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "מיקום:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "הערה:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "מאפיינים..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
-msgid  "Range and copies"
+msgid "Range and copies"
 msgstr "טווח ומספר עותקים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
-msgid  "Number of copies"
+msgid "Number of copies"
 msgstr "מספר עותקים"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
-msgid  "Collate"
+msgid "Collate"
 msgstr "סידור"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
-msgid  "Print in ~reverse page order"
+msgid "Print in ~reverse page order"
 msgstr "הדפסה בסדר עמודים ~הפוך"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
-msgid  "Options"
+msgid "Options"
+msgstr "אפשרויות"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FIXEDLINE.TEXT
+msgid "Options"
 msgstr "אפשרויות"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "הדפסה ל~קובץ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
-msgid  "~Create single print jobs for collated output"
+msgid "~Create single print jobs for collated output"
 msgstr "~צור משימת הדפסה בודדת עבור השוואת פלט יוצא."
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
-msgid  "Printing"
+msgid "Printing"
 msgstr "מדפיס"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
-msgid  "Page %p of %n"
+msgid "Page %p of %n"
 msgstr "עמוד %p מתוך %n"
 
 #: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "לא נמצאה מדפסת ברירת מחדל.\nנא לבחור מדפסת ולנסות שוב."
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"לא נמצאה מדפסת ברירת מחדל.\n"
+"נא לבחור מדפסת ולנסות שוב."
 
 #: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
-msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgid "There are no pages to be printed. Please check your document for ranges relevant to printing."
 msgstr "אין עמודים להדפסה. נא לבדוק את טווח העמודים להדפסה במסמך."
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
-msgid  "Preview"
+msgid "Preview"
 msgstr "תצוגה מקדימה"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
-msgid  "Page number"
+msgid "Page number"
 msgstr "עמוד מספר"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
-msgid  "Number of pages"
+msgid "Number of pages"
 msgstr "מספר עמודים"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
-msgid  "More"
+msgid "More"
 msgstr "יותר"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
-msgid  "Print selection only"
+msgid "Print selection only"
 msgstr "הדפסת הבחירה בלבד"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
-msgid  "A0"
+msgid "A0"
 msgstr "A0"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
-msgid  "A1"
+msgid "A1"
 msgstr "A1"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
-msgid  "A2"
+msgid "A2"
 msgstr "A2"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
-msgid  "A3"
+msgid "A3"
 msgstr "A3"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
-msgid  "A4"
+msgid "A4"
 msgstr "A4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
-msgid  "A5"
+msgid "A5"
 msgstr "A5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
-msgid  "B4 (ISO)"
+msgid "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
-msgid  "B5 (ISO)"
+msgid "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
-msgid  "Letter"
+msgid "Letter"
 msgstr "מכתב"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
-msgid  "Legal"
+msgid "Legal"
 msgstr "משפטי"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
-msgid  "Tabloid"
+msgid "Tabloid"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
-msgid  "User Defined"
+msgid "User Defined"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
-msgid  "B6 (ISO)"
+msgid "B6 (ISO)"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
-msgid  "C4 Envelope"
+msgid "C4 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
-msgid  "C5 Envelope"
+msgid "C5 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
-msgid  "C6 Envelope"
+msgid "C6 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
-msgid  "C6/5 Envelope"
+msgid "C6/5 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
-msgid  "DL Envelope"
+msgid "DL Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
-msgid  "Dia Slide"
+msgid "Dia Slide"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
-msgid  "Screen"
+msgid "Screen"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
-msgid  "C"
+msgid "C"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
-msgid  "D"
+msgid "D"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
-msgid  "E"
+msgid "E"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
-msgid  "Executive"
+msgid "Executive"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
-msgid  "Long Bond"
+msgid "Long Bond"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
-msgid  "#8 (Monarch) Envelope"
+msgid "#8 (Monarch) Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
-msgid  "#6 3/4 (Personal) Envelope"
+msgid "#6 3/4 (Personal) Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
-msgid  "#9 Envelope"
+msgid "#9 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
-msgid  "#10 Envelope"
+msgid "#10 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
-msgid  "#11 Envelope"
+msgid "#11 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
-msgid  "#12 Envelope"
+msgid "#12 Envelope"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
-msgid  "16 Kai"
+msgid "16 Kai"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
-msgid  "32 Kai"
+msgid "32 Kai"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
-msgid  "Big 32 Kai"
+msgid "Big 32 Kai"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
-msgid  "B4 (JIS)"
+msgid "B4 (JIS)"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
-msgid  "B5 (JIS)"
+msgid "B5 (JIS)"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
-msgid  "B6 (JIS)"
+msgid "B6 (JIS)"
 msgstr ""
 
 #: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "לא ניתן להפעיל את הרכיב ‏‪(%s)‬‏.‏\nנא להפעיל את תוכנית ההתקנה בהתקנת תיקון כדי להוסיף את הרכיב.‏"
+msgid "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr ""
+"לא ניתן להפעיל את הרכיב ‏‪(%s)‬‏.‏\n"
+"נא להפעיל את תוכנית ההתקנה בהתקנת תיקון כדי להוסיף את הרכיב.‏"
 
 #: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
-msgid  "Do not show this information again."
+msgid "Do not show this information again."
 msgstr "אין להציג מידע זה שוב.‏"
 
 #: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
-msgid  "Do not show this question again."
+msgid "Do not show this question again."
 msgstr "אין להציג שאלה זו שוב.‏"
 
 #: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
-msgid  "Do not show warning again."
+msgid "Do not show warning again."
 msgstr "אין להציג אזהרה זו שוב.‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
-msgid  "Wrong Version"
+msgid "Wrong Version"
 msgstr "גרסה שגויה"
 
 #: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr "‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ דורש ‏‪Java Access Bridge‬‏, גרסה 1.0.3 או למעלה כדי לתמוך בתפקודים למוגבלי יכולת.‏"
+msgid "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr ""
+"‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ דורש ‏‪Java Access Bridge‬‏, גרסה 1.0.3 או "
+"למעלה כדי לתמוך בתפקודים למוגבלי יכולת.‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
-msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr "יש ללחוץ ‏‪'%OK'‬‏ כדי להפעיל את ‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ ללא תמיכה למוגבלי יכולת או ללחוץ ‏‪'%CANCEL'‬‏ כדי לצאת מ ‏‪%PRODUCTNAME %PRODUCTVERSION‬‏.‏"
+msgid "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+"יש ללחוץ ‏‪'%OK'‬‏ כדי להפעיל את ‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ ללא תמיכה "
+"למוגבלי יכולת או ללחוץ ‏‪'%CANCEL'‬‏ כדי לצאת מ ‏‪%PRODUCTNAME %"
+"PRODUCTVERSION‬‏.‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
-msgid  "No Java Access Bridge"
+msgid "No Java Access Bridge"
 msgstr "אין ‏‪Java Access Bridge‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
-msgid  "Faulty Java Installation"
+msgid "Faulty Java Installation"
 msgstr "התקנה לקוייה של הג'אווה"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr "‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ דורש ‏‪Java‬‏, גרסה ‏‪1.4.0_02‬‏ או למעלה כדי לתמוך בתפקודים למוגבלי יכולת.‏"
+msgid "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ""
+"‏‪%PRODUCTNAME %PRODUCTVERSION‬‏ דורש ‏‪Java‬‏, גרסה ‏‪1.4.0_02‬‏ או למעלה "
+"כדי לתמוך בתפקודים למוגבלי יכולת.‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
-msgid  "No Java Installation"
+msgid "No Java Installation"
 msgstr "ג'אווה לא מותקנת"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
-msgid  "Missing Java Configuration"
+msgid "Missing Java Configuration"
 msgstr "חסרה תצורת ג'אווה"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
-msgid  "Java Disabled"
+msgid "Java Disabled"
 msgstr "ג'אווה אינה מופעלת"
 
 #: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
-msgid  "The Java Access Bridge could not be started."
+msgid "The Java Access Bridge could not be started."
 msgstr "לא ניתן היה להפעיל את ה ‏‪Java Access Bridge‬‏.‏"
 
 #: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
-msgid  "No fonts could be found on the system."
+msgid "No fonts could be found on the system."
 msgstr "לא נמצאו גופנים במערכת."
 
 #: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
-msgid  "About %PRODUCTNAME"
+msgid "About %PRODUCTNAME"
 msgstr "אודות %PRODUCTNAME"
 
 #: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
-msgid  "Preferences..."
+msgid "Preferences..."
 msgstr "העדפות..."
 
 #: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
-msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgid "The inserted text exceeded the maximum length of this text field. The text was truncated."
 msgstr "אורך הטקסט שהוקלד עובר את האורך המירבי לשדה הזה. הטקסט קוצץ."
 
 #: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
-msgid  "Screen %d"
+msgid "Screen %d"
 msgstr "מסך %d"
 
 #: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
-msgid  "Any type"
+msgid "Any type"
 msgstr "כל סוג"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
-msgid  "mm"
+msgid "mm"
 msgstr "מ\"מ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
-msgid  "cm"
+msgid "cm"
 msgstr "ס\"מ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
-msgid  "m"
+msgid "m"
 msgstr "מ'"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
-msgid  "km"
+msgid "km"
 msgstr "ק\"מ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twips"
+msgid "twips"
 msgstr "twips"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twip"
+msgid "twip"
 msgstr "twip"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
-msgid  "pt"
+msgid "pt"
 msgstr "pt"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
-msgid  "pi"
+msgid "pi"
 msgstr "pi"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "\""
+msgid "\""
 msgstr "\""
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "in"
+msgid "in"
 msgstr "in"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "inch"
+msgid "inch"
 msgstr "אינצ'‏"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "'"
+msgid "'"
 msgstr "'"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "ft"
+msgid "ft"
 msgstr "ft"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "foot"
+msgid "foot"
 msgstr "רגל"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "feet"
+msgid "feet"
 msgstr "רגל"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "miles"
+msgid "miles"
 msgstr "מיל"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "mile"
+msgid "mile"
 msgstr "מיל"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
-msgid  "%"
+msgid "%"
 msgstr "%"

@@ -1,237 +1,241 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
+msgid "Create New Directory"
 msgstr "Krijo një Folder të ri"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "List"
+msgid "List"
 msgstr "Lista"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Details"
+msgid "Details"
 msgstr "Detajet"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
+msgid "Up One Level"
 msgstr "Një  nivel më lartë"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
-msgid  "Default Directory"
+msgid "Default Directory"
 msgstr "Folderi standard"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
+msgid "File ~name:"
 msgstr "~Emri i fajllit:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
-msgid  "File ~type:"
-msgstr "~Lloji i fajllit:"
+#, fuzzy
+msgid "File ~type:"
+msgstr "Lloji i fajllit"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Read-only"
-msgstr "~Vetëm e lexueshme"
+msgid "~Read-only"
+msgstr "Vetëm e lexueshme"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Save with password"
+msgid "Save with password"
 msgstr "Ruaje me fjalëkalim"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "Mbiemër automatik i fajllit"
+msgid "~Automatic file name extension"
+msgstr "Ekstenzion automatik i emrimit të fajllit"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Edit ~filter settings"
+msgid "Edit ~filter settings"
 msgstr "Rregullo përshtatshmërinë e filtrave"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Hape"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "Open"
+msgid "Open"
 msgstr "Hape"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Save as"
+msgid "Save as"
 msgstr "Ruaje si"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "~Ruaje"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
 #, fuzzy
-msgid  "~Path:"
+msgid "~Path:"
 msgstr "~Shtegu:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
 #, fuzzy
-msgid  "Select path"
+msgid "Select path"
 msgstr "Selekto shtegun"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
 #, fuzzy
-msgid  "~Select"
+msgid "~Select"
 msgstr "~Zgjedh"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Current version"
+msgid "Current version"
 msgstr "Versioni i tanishëm"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
-msgid  "File Preview"
+msgid "File Preview"
 msgstr ""
 
 #: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Na~me"
+msgid "Na~me"
 msgstr "E~mri"
 
 #: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Create new folder"
+msgid "Create new folder"
 msgstr "Krijo një folldër të ri"
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 #, fuzzy
-msgid  "$name$ does not exist."
+msgid "$name$ does not exist."
 msgstr "$name$ nuk ekziston."
 
 #: office/iodlg.src#RID_FILEOPEN_NOTEXISTENTFILE.STRING.TEXT
 #, fuzzy
-msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
-msgstr "Fajlli $name$ nuk ekziston.\nSigurohuni se keni futur emrin e saktë të fajllit."
+msgid "The file $name$ does not exist.\nMake sure you have entered the correct file name."
+msgstr ""
+"Fajlli $name$ nuk ekziston.\n"
+"Sigurohuni se keni futur emrin e saktë të fajllit."
 
 #: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
 #, fuzzy
-msgid  "All files (*.*)"
+msgid "All files (*.*)"
 msgstr "Të gjithë fajllat (*.*)"
 
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 #, fuzzy
-msgid  "The file already exists. Overwrite?"
+msgid "The file already exists. Overwrite?"
 msgstr "Fajli tanimë ekziston. Të mbishkruhet?"
 
 #: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
 #, fuzzy
-msgid  "Folder"
+msgid "Folder"
 msgstr "Skedar"
 
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
-msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
+msgid "No removable storage device detected.\nMake sure it is plugged in properly and try again."
 msgstr ""
 
 #: office/iodlg.src#STR_SVT_ALLFORMATS.STRING.TEXT
-msgid  "All Formats"
+msgid "All Formats"
 msgstr ""
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
 #, fuzzy
-msgid  "~Automatic file name extension"
+msgid "~Automatic file name extension"
 msgstr "Ekstenzion automatik i emrimit të fajllit"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Save with pass~word"
+msgid "Save with pass~word"
 msgstr "Ruaje me fjalëkalim"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "~Edit filter settings"
+msgid "~Edit filter settings"
 msgstr "Rregullo përshtatshmërinë e filtrave"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "~Read-only"
+msgid "~Read-only"
 msgstr "Vetëm e lexueshme"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
 #, fuzzy
-msgid  "~Link"
+msgid "~Link"
 msgstr "~Lidhje"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
 #, fuzzy
-msgid  "Pr~eview"
+msgid "Pr~eview"
 msgstr "Shikim ~paraprak"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
 #, fuzzy
-msgid  "~Play"
+msgid "~Play"
 msgstr "~Luaj"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
 #, fuzzy
-msgid  "~Version:"
+msgid "~Version:"
 msgstr "~Verzioni:"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "S~tyles:"
+msgid "S~tyles:"
 msgstr "S~tilet:"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Style:"
+msgid "Style:"
 msgstr "Stili:"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
 #, fuzzy
-msgid  "~Selection"
+msgid "~Selection"
 msgstr "~Zgjedhja"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "File ~type:"
+msgid "File ~type:"
 msgstr "Lloji i fajllit"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Select Path"
+msgid "Select Path"
 msgstr "Selekto shtegun"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Please select a folder."
+msgid "Please select a folder."
 msgstr "Ju lutem zgjidhni një folder."

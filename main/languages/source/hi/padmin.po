@@ -1,816 +1,907 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
-msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "कृपया फ़ोल्डर को चुनिए, जहां से आप फ़ॉन्ट को आयात करना चाहते हैं. चुने हुए फ़ॉन्ट को जोड़ने के लिए ठीक बटन को क्लिक कीजिए ."
+msgid "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr ""
+"कृपया फ़ोल्डर को चुनिए, जहां से आप फ़ॉन्ट को आयात करना चाहते हैं. चुने हुए "
+"फ़ॉन्ट को जोड़ने के लिए ठीक बटन को क्लिक कीजिए ."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
-msgid  "Source directory"
+msgid "Source directory"
 msgstr "स्रोत निर्देशिका"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
-msgid  "Sea~rch Subdirectories"
+msgid "Sea~rch Subdirectories"
 msgstr "उपनिर्देशिका खोजें (~r)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
-msgid  "Target options"
+msgid "Target options"
 msgstr "लक्ष्य विकल्प"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
-msgid  "Create ~soft links only"
+msgid "Create ~soft links only"
 msgstr "केवल सॉफ्ट कड़ी बनाएँ (~s)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
-msgid  "~Select All"
+msgid "~Select All"
 msgstr "सभी चुनें (~S)"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
-msgid  "Add fonts"
+msgid "Add fonts"
 msgstr "फ़ॉन्ट जोड़ें"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "क्या आप वास्तव में इस फ़ॉन्ट फ़ाइल के ऊपर लिखना चाहते हैं?\n   %s"
+msgid "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
+"क्या आप वास्तव में इस फ़ॉन्ट फ़ाइल के ऊपर लिखना चाहते हैं?\n"
+"   %s"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "सभी"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "कोई नहीं"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "एक प्रारूप फ़ाइल (एक .afm विस्तार के साथ) फ़ॉन्ट के लिए नहीं मिला है\n%s\nइसलिये, फ़ॉन्ट को संस्थापित नहीं किया जा सकता. ghostscript से फ़ॉन्ट फ़ाइल नहीं बनाई जा सकती है, उदाहरण के लिये, समान निर्देशिका में अवस्थित फ़ॉन्ट फ़ाइल की तरह या इसके afm उपनिर्देशिका की तरह."
+msgid "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+"एक प्रारूप फ़ाइल (एक .afm विस्तार के साथ) फ़ॉन्ट के लिए नहीं मिला है\n"
+"%s\n"
+"इसलिये, फ़ॉन्ट को संस्थापित नहीं किया जा सकता. ghostscript से फ़ॉन्ट फ़ाइल "
+"नहीं बनाई जा सकती है, उदाहरण के लिये, समान निर्देशिका में अवस्थित फ़ॉन्ट "
+"फ़ाइल की तरह या इसके afm उपनिर्देशिका की तरह."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फ़ॉन्ट फ़ाइल के लिए मेट्रिक फ़ाइल\n   %s\nकॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं किया जायेगा."
+msgid "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"फ़ॉन्ट फ़ाइल के लिए मेट्रिक फ़ाइल\n"
+"   %s\n"
+"कॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं किया जायेगा."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फ़ॉन्ट फ़ाइल\n   %s\nकॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं होगा."
+msgid "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"फ़ॉन्ट फ़ाइल\n"
+"   %s\n"
+"कॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं होगा."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
-msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "फ़ॉन्टपाथ में लिखने योग्य fonts.dir फ़ाइल की निर्देशिका नहीं है . इसलिए, फ़ॉन्ट का संस्थापन नहीं हो सकता है."
+msgid "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
+"फ़ॉन्टपाथ में लिखने योग्य fonts.dir फ़ाइल की निर्देशिका नहीं है . इसलिए, "
+"फ़ॉन्ट का संस्थापन नहीं हो सकता है."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
-msgid  "%d new fonts were added."
+msgid "%d new fonts were added."
 msgstr ""
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
-msgid  "Add Fonts"
+msgid "Add Fonts"
 msgstr "फ़ॉन्ट जोड़ें"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
-msgid  "CUPS support"
+msgid "CUPS support"
 msgstr ""
 
 #: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
-msgid  "Disable CUPS Support"
+msgid "Disable CUPS Support"
 msgstr ""
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "बंद करें"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
-msgid  "Installed ~printers"
+msgid "Installed ~printers"
 msgstr "संस्थापित मुद्रक (~p)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Command:"
+msgid "Command:"
 msgstr "कमांड:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Driver:"
+msgid "Driver:"
 msgstr "ड्राइवर:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "स्थान:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "टिप्पणी:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "विशेषताएं..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "R~ename..."
+msgid "R~ename..."
 msgstr "फिर नाम दें (~e)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "तयशुदा (~D)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
-msgid  "Remo~ve..."
+msgid "Remo~ve..."
 msgstr "हटाएँ (~v)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
-msgid  "Test ~Page"
+msgid "Test ~Page"
 msgstr "जाँच पृष्ठ (~P)"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
-msgid  "Fon~ts..."
+msgid "Fon~ts..."
 msgstr "फ़ॉन्ट (~t)..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "New Printer..."
+msgid "New Printer..."
 msgstr "नया मुद्रक..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "तयशुदा मुद्रक"
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
-msgid  "Rename"
+msgid "Rename"
 msgstr "पुनः नाम दें"
 
 #: padialog.src#RID_PADIALOG.STRING.TEXT
-msgid  "Printer Administration"
+msgid "Printer Administration"
 msgstr "मुद्रक प्रशासन"
 
 #: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
-msgid  "Could not open printer %s."
+msgid "Could not open printer %s."
 msgstr "%s मुद्रक नहीं खोल सका."
 
 #: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
-msgid  "The test page was printed succesfully. Please check the result."
+msgid "The test page was printed succesfully. Please check the result."
 msgstr "जाँच पृष्ठ सफलता से छापा है. कृपया नतीजे की जाँच कीजिए."
 
 #: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
 msgstr ""
 
 #: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
-msgid  "~New printer name"
+msgid "~New printer name"
 msgstr "नया मुद्रक नाम (~N)"
 
 #: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
-msgid  "Model"
+msgid "Model"
 msgstr "नमूना"
 
 #: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "नाम"
 
 #: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
-msgid  "Comment"
+msgid "Comment"
 msgstr "टिप्पणी"
 
 #: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
-msgid  "Queue"
+msgid "Queue"
 msgstr "कतार"
 
 #: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "दिनांक"
 
 #: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "समय"
 
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
+msgid "Close"
+msgstr "बंद करें"
+
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "Re~name..."
+msgid "Re~name..."
 msgstr "फिर नाम दें (~n)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Remove..."
+msgid "~Remove..."
 msgstr "हटाएँ (~R)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "जोड़ें (~A)..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
-msgid  "Note: The fonts are only available to the applications."
+msgid "Note: The fonts are only available to the applications."
 msgstr "नोट: केवल कार्यक्रम के लिए फ़ॉन्ट उपलब्ध है."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
-msgid  "~New name for %s"
+msgid "~New name for %s"
 msgstr "%s के लिए नया नाम (~N)"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
-msgid  "~New name for %s (%d1 of %d2)"
+msgid "~New name for %s (%d1 of %d2)"
 msgstr "%s के लिए नया नाम (%d2 का %d1 ) (~N)"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
-msgid  "The font %s cannot be renamed due to missing write permission."
+msgid "The font %s cannot be renamed due to missing write permission."
 msgstr "लिखने का अधिकार न होने के कारण %s फ़ॉन्ट को पुनः नाम नहीं दे सकते हैं."
 
 #: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
-msgid  "Fonts"
+msgid "Fonts"
 msgstr "फ़ॉन्ट"
 
 #: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
-msgid  "Test page"
+msgid "Test page"
 msgstr "जाँच पृष्ठ"
 
 #: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
-msgid  "Wrong environment"
+msgid "Wrong environment"
 msgstr "गलत वातावरण"
 
 #: padialog.src#RID_YOU_SURE.STRING.TEXT
-msgid  "Are you sure ?"
+msgid "Are you sure ?"
 msgstr "आप निश्चित हैं?"
 
 #: padialog.src#RID_AFMERROR_OK.STRING.TEXT
-msgid  "No error"
+msgid "No error"
 msgstr "कोई त्रुटि नहीं"
 
 #: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FontName' entry."
+msgid "The metric does not contain a 'FontName' entry."
 msgstr "मेट्रिक में 'फ़ॉन्ट नाम' प्रविष्टि नहीं है ."
 
 #: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FullName' entry."
+msgid "The metric does not contain a 'FullName' entry."
 msgstr "मेट्रिक में 'पूरा नाम' प्रविष्टि नहीं है ."
 
 #: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FamilyName' entry."
+msgid "The metric does not contain a 'FamilyName' entry."
 msgstr "मेट्रिक में 'परिवार नाम' प्रविष्टि नहीं है ."
 
 #: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
-msgid  "The converted metric could not be written."
+msgid "The converted metric could not be written."
 msgstr "बदले हुए मेट्रिक को नहीं लिख सकते हैं."
 
 #: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
-msgid  "The metric could not be read."
+msgid "The metric could not be read."
 msgstr "मेट्रिक नहीं पढ़ सकते हैं"
 
 #: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
-msgid  "A temporary file could not be created."
+msgid "A temporary file could not be created."
 msgstr "अस्थायी फ़ाइल उत्पन्न नहीं कर सकते हैं."
 
 #: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
-msgid  "The file does not contain a metric."
+msgid "The file does not contain a metric."
 msgstr "फ़ाइल में मेट्रिक नहीं हैं."
 
 #: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "मेट्रिक\n\n%s\n\nनिम्न कारण से बदला नहीं जा सकता है:\n\n"
+msgid "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+"मेट्रिक\n"
+"\n"
+"%s\n"
+"\n"
+"निम्न कारण से बदला नहीं जा सकता है:\n"
+"\n"
 
 #: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "प्रगति"
 
 #: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
-msgid  "Please wait"
+msgid "Please wait"
 msgstr "कृपया ठहरें"
 
 #: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
-msgid  "Font metrics conversion"
+msgid "Font metrics conversion"
 msgstr "फ़ॉन्ट मेट्रिक्स परिवर्तन"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
-msgid  "Dri~ver directory"
+msgid "Dri~ver directory"
 msgstr "ड्राइवर निर्देशिका (~v)"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
-msgid  "Please select the driver directory."
+msgid "Please select the driver directory."
 msgstr "कृपया ड्राइवर निर्देशिका चुनें ."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "ब्राउज़..."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
-msgid  "~Selection of drivers"
+msgid "~Selection of drivers"
 msgstr "ड्राइवर चुनाव (~S)"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select the drivers to install and press \"%s\"."
+msgid "Please select the drivers to install and press \"%s\"."
 msgstr "कृपया संस्थापन करने के लिए ड्राइवरों को चुनें और \"%s\" को दबायें."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
-msgid  "Searching for drivers"
+msgid "Searching for drivers"
 msgstr "ड्राइवरों के लिए खोज"
 
 #: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
-msgid  "Driver Installation"
+msgid "Driver Installation"
 msgstr "ड्राइवर संस्थापन"
 
 #: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
-msgid  "Do you really want to remove the driver \"%s\"?"
+msgid "Do you really want to remove the driver \"%s\"?"
 msgstr "आप सचमुच में \"%s\" ड्राइवर को हटाना चाहते हैं?"
 
 #: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
-msgid  "Do you really want to remove this printer ?"
+msgid "Do you really want to remove this printer ?"
 msgstr "आप सचमुच में इस मुद्रक को हटाना चाहते हैं?"
 
 #: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
-msgid  "Do you really want to remove the selected fonts ?"
+msgid "Do you really want to remove the selected fonts ?"
 msgstr "आप सचमुच में चुने हुए फ़ॉन्ट को हटाना चाहते हैं?"
 
 #: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
-msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "कई मुद्रक अभी भी हैं जो ड्राइवर \"%s\" का उपयोग कर रहा है . आप उसे सचमुच में हटाना चाहते हैं? तदनुरूप मुद्रक भी हट जायेगा."
+msgid "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+"कई मुद्रक अभी भी हैं जो ड्राइवर \"%s\" का उपयोग कर रहा है . आप उसे सचमुच में "
+"हटाना चाहते हैं? तदनुरूप मुद्रक भी हट जायेगा."
 
 #: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
-msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgid "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "ड्राइवर \"%s\" की हमेशा जरूरत है और इसलिये नहीं हटाया जा रहा है."
 
 #: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "ड्राइवर \"%s1\" हटाया नहीं जा सका. फ़ाइल को हटाना संभव नहीं था\n\n%s2."
+msgid "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+"ड्राइवर \"%s1\" हटाया नहीं जा सका. फ़ाइल को हटाना संभव नहीं था\n"
+"\n"
+"%s2."
 
 #: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
-msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "ड्राइवर \"%s\" को आपका तयशुदा मुद्रक उपयोग करता है. इसलिए, उसे नहीं हटा सकते हैं."
+msgid "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+"ड्राइवर \"%s\" को आपका तयशुदा मुद्रक उपयोग करता है. इसलिए, उसे नहीं हटा सकते "
+"हैं."
 
 #: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
-msgid  "The printer %s cannot be removed."
+msgid "The printer %s cannot be removed."
 msgstr "%s मुद्रक को नहीं हटा सकते हैं."
 
 #: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
-msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "\"%s\" नाम का मुद्रक पहले से ही अस्तित्व में है. इस मुद्रक को आयात नहीं कर सकते हैं."
+msgid "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr ""
+"\"%s\" नाम का मुद्रक पहले से ही अस्तित्व में है. इस मुद्रक को आयात नहीं कर "
+"सकते हैं."
 
 #: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
-msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgid "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
 msgstr "\"%s\" मुद्रक का विन्यास अमान्य है और, इसलिए, आयात नहीं किया जा सकता है."
 
 #: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
-msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "मुद्रक \"%s1\" (%s2) के लिए ड्राइवर को संस्थापित नहीं किया है . इसलिए मुद्रक को आयात नहीं किया जा सकता है."
+msgid "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+"मुद्रक \"%s1\" (%s2) के लिए ड्राइवर को संस्थापित नहीं किया है . इसलिए मुद्रक "
+"को आयात नहीं किया जा सकता है."
 
 #: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
-msgid  "The printer \"%s\" could not be added."
+msgid "The printer \"%s\" could not be added."
 msgstr "मुद्रक \"%s\" जोड़ा नहीं जा सका."
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "समाप्त (~F)"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "आगे (~N) >>"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< पीछे (~B)"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
-msgid  "Add Printer"
+msgid "Add Printer"
 msgstr "मुद्रक जोड़ें"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a driver"
+msgid "Choose a driver"
 msgstr "ड्राइवर को चुनें"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select a s~uitable driver."
+msgid "Please select a s~uitable driver."
 msgstr "कृपया योग्य ड्राइवर को चुनिए (~u)."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "आयात (~I)..."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "मिटाएँ (~D)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
-msgid  "Delete driver"
+msgid "Delete driver"
 msgstr "ड्राइवर मिटाएँ"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a device type"
+msgid "Choose a device type"
 msgstr "एक युक्ति प्रकार चुनें"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
-msgid  "Do you want to"
+msgid "Do you want to"
 msgstr "क्या आप चाहते हैं"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
-msgid  "Add a ~printer"
+msgid "Add a ~printer"
 msgstr "एक मुद्रक को जोड़ें (~p)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
-msgid  "Connect a fa~x device"
+msgid "Connect a fa~x device"
 msgstr "एक फैक्स युक्ति जोड़ें (~x)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
-msgid  "Connect a P~DF converter"
+msgid "Connect a P~DF converter"
 msgstr "एक PDF परिवर्तक जोड़ें (~D)"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
-msgid  "~Import printers from a StarOffice installation"
+msgid "~Import printers from a StarOffice installation"
 msgstr "StarOffice संस्थापन से मुद्रक आयात करें (~I)"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a name"
+msgid "Choose a name"
 msgstr "एक नाम चुनें"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the printer."
+msgid "Please enter a name for the printer."
 msgstr "कृपया मुद्रक के लिए एक नाम प्रविष्ट कीजिए."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the fax connection."
+msgid "Please enter a name for the fax connection."
 msgstr "कृपया फैक्स कनेक्शन के लिए एक नाम प्रविष्ट कीजिए."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the PDF connection."
+msgid "Please enter a name for the PDF connection."
 msgstr "कृपया PDF कनेक्शन के लिए एक नाम प्रविष्ट कीजिए ."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
-msgid  "Fax printer"
+msgid "Fax printer"
 msgstr "फैक्स मुद्रक"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr ""
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
-msgid  "~Use as default printer"
+msgid "~Use as default printer"
 msgstr "तयशुदा मुद्रक जैसे उपयोग करें (~U)"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
-msgid  "Remo~ve fax number from output"
+msgid "Remo~ve fax number from output"
 msgstr "आउटपुट से फैक्स संख्या हटाएँ (~v)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a command line"
+msgid "Choose a command line"
 msgstr "एक कमांड लाइन चुनें"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Please enter a c~ommand line appropriate for this device."
+msgid "Please enter a c~ommand line appropriate for this device."
 msgstr "कृपया इस साधन के लिए एक उचित कमांड लाइन दीजिए."
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF ~target directory"
+msgid "PDF ~target directory"
 msgstr "PDF लक्ष्य निर्देशिका (~t)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "मदद (~H)"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF परिवर्तक के लिए कमांड लाइन इस प्रकार चलता है: हर दस्तावेज़ छपाई के लिये, कमांड लाइन में \"(TMP)\" को एक अस्थायी फ़ाइल के द्वारा प्रतिस्थापित किया जाता है लक्षित PDF फ़ाइल नाम के साथ. यदि \"(TMP)\" कमांड लाइन में है, पोस्ट स्क्रिप्ट कोड को एक फ़ाइल के द्वारा दिया जायेगा, अन्यथा मानक इनपुट से होकर (यानी कि. पाइप के रूप में)."
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"PDF परिवर्तक के लिए कमांड लाइन इस प्रकार चलता है: हर दस्तावेज़ छपाई के लिये, "
+"कमांड लाइन में \"(TMP)\" को एक अस्थायी फ़ाइल के द्वारा प्रतिस्थापित किया जाता "
+"है लक्षित PDF फ़ाइल नाम के साथ. यदि \"(TMP)\" कमांड लाइन में है, पोस्ट "
+"स्क्रिप्ट कोड को एक फ़ाइल के द्वारा दिया जायेगा, अन्यथा मानक इनपुट से होकर "
+"(यानी कि. पाइप के रूप में)."
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "फैक्स कनेक्शनों के लिए कमांड लाइन निम्नलिखित प्रकार से पूरा होगा: भेजे गए हरेक फैक्स के लिये, कमांड लाइन में \"(TMP)\" को अस्थायी फ़ाइल से प्रतिस्थापित किया जायेगा और कमांड लाइन में \"(PHONE)\" को फैक्स संख्या से प्रतिस्थापित किया जायेगा . अगर \"(TMP)\" कमांड लाइन में दिख रहा है, तो पोस्टस्क्रिप्ट कोड को एक फ़ाइल के द्वारा भेजा जायेगा, नहीं तो मानक इनपुट जैसे (एक पाइप) भेजा जायेगा."
+msgid "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"फैक्स कनेक्शनों के लिए कमांड लाइन निम्नलिखित प्रकार से पूरा होगा: भेजे गए "
+"हरेक फैक्स के लिये, कमांड लाइन में \"(TMP)\" को अस्थायी फ़ाइल से प्रतिस्थापित "
+"किया जायेगा और कमांड लाइन में \"(PHONE)\" को फैक्स संख्या से प्रतिस्थापित किया "
+"जायेगा . अगर \"(TMP)\" कमांड लाइन में दिख रहा है, तो पोस्टस्क्रिप्ट कोड को एक "
+"फ़ाइल के द्वारा भेजा जायेगा, नहीं तो मानक इनपुट जैसे (एक पाइप) भेजा जायेगा."
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Import printers from old versions"
+msgid "Import printers from old versions"
 msgstr "मुद्रक पुराने संस्करण से आयात करें"
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
-msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "इन मुद्रकों को आयात किया जा सकता है. कृपया आप जिसको आयात करना चाहते है उसको चुनिए. (~T)"
+msgid "~These printers can be imported. Please select the ones you want to import."
+msgstr ""
+"इन मुद्रकों को आयात किया जा सकता है. कृपया आप जिसको आयात करना चाहते है उसको "
+"चुनिए. (~T)"
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
+msgid "~Select All"
+msgstr "सभी चुनें (~S)"
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "ड्राइवर को चुनें"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this fax connection"
+msgid "Use the following driver for this fax connection"
 msgstr "इस फैक्स कनेक्शन के लिए निम्नलिखित ड्राइवर का उपयोग करें"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
-msgid  "T~he default driver"
+msgid "T~he default driver"
 msgstr "तयशुदा ड्राइवर (~h)"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A speci~fic driver, to adapt the format to another printer"
+msgid "A speci~fic driver, to adapt the format to another printer"
 msgstr "एक निर्दिष्ट ड्राइवर, दूसरे मुद्रक के लिए प्रारूप अनुकूलित करता है"
 
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "ड्राइवर को चुनें"
+
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this PDF converter"
+msgid "Use the following driver for this PDF converter"
 msgstr "इस PDF परिवर्तक के लिए निम्नलिखित ड्राइवर का उपयोग करें"
 
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
+msgid "T~he default driver"
+msgstr "तयशुदा ड्राइवर (~h)"
+
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
-msgid  "The Adobe D~istiller(tm) driver"
+msgid "The Adobe D~istiller(tm) driver"
 msgstr "Adobe डिस्टिलर (tm) ड्राइवर (~i)"
 
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A spec~ific driver, to adapt the format to another printer"
+msgid "A spec~ific driver, to adapt the format to another printer"
 msgstr "एक निर्दिष्ट ड्राइवर, दूसरे मुद्रक के लिए प्रारूप अनुकूलित करता है (~i)"
 
 #: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "तिरक्षा"
 
 #: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
-msgid  "Oblique"
+msgid "Oblique"
 msgstr "तिर्यक"
 
 #: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
-msgid  "Thin"
+msgid "Thin"
 msgstr "पतला"
 
 #: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
-msgid  "Ultralight"
+msgid "Ultralight"
 msgstr "बहुत हल्का"
 
 #: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
-msgid  "Semilight"
+msgid "Semilight"
 msgstr "आधा हल्का"
 
 #: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
-msgid  "Light"
+msgid "Light"
 msgstr "हल्का"
 
 #: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
-msgid  "Semibold"
+msgid "Semibold"
 msgstr "आधा मोटा"
 
 #: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "मोटा"
 
 #: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
-msgid  "Ultrabold"
+msgid "Ultrabold"
 msgstr "अत्यन्त मोटा"
 
 #: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
-msgid  "Ultracondensed"
+msgid "Ultracondensed"
 msgstr "अत्यन्त संघनित"
 
 #: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
-msgid  "Extracondensed"
+msgid "Extracondensed"
 msgstr "अधिक संघनित"
 
 #: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
-msgid  "Condensed"
+msgid "Condensed"
 msgstr "सघन"
 
 #: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
-msgid  "Semicondensed"
+msgid "Semicondensed"
 msgstr "आधा सघन"
 
 #: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
-msgid  "Semiexpanded"
+msgid "Semiexpanded"
 msgstr "आधा विस्तारित"
 
 #: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
-msgid  "Expanded"
+msgid "Expanded"
 msgstr "विस्तारित"
 
 #: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
-msgid  "Extraexpanded"
+msgid "Extraexpanded"
 msgstr "अधिक विस्तारित"
 
 #: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
-msgid  "Ultraexpanded"
+msgid "Ultraexpanded"
 msgstr "अत्यन्त विस्तारित"
 
 #: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "नियमित"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
-msgid  "Command"
+msgid "Command"
 msgstr "कमांड"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
-msgid  "Paper"
+msgid "Paper"
 msgstr "कागज"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
-msgid  "Device"
+msgid "Device"
 msgstr "साधन"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
-msgid  "Font Replacement"
+msgid "Font Replacement"
 msgstr "फ़ॉन्ट प्रतिस्थापन"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
-msgid  "Other Settings"
+msgid "Other Settings"
 msgstr "अन्य सेटिंग"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
-msgid  "from driver"
+msgid "from driver"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
-msgid  "<ignore>"
+msgid "<ignore>"
 msgstr "<ignore>"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
-msgid  "Properties of %s"
+msgid "Properties of %s"
 msgstr "%s की विशेषता"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
-msgid  "~Paper size"
+msgid "~Paper size"
 msgstr "कागज आकार (~P)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "अभिमुखन (~O)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
-msgid  "~Duplex"
+msgid "~Duplex"
 msgstr "दोहरा (~D)"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "कागज की तश्तरी"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
-msgid  "Color"
+msgid "Color"
 msgstr "रंग"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
-msgid  "Grayscale"
+msgid "Grayscale"
 msgstr "धूसर"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
-msgid  "~Option"
+msgid "~Option"
 msgstr "विकल्प (~O)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
-msgid  "Current ~value"
+msgid "Current ~value"
 msgstr "मौजूदा मान (~v)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
-msgid  "Printer ~Language type"
+msgid "Printer ~Language type"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
-msgid  "PostScript (Level from driver)"
+msgid "PostScript (Level from driver)"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
-msgid  "PostScript Level 1"
+msgid "PostScript Level 1"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
-msgid  "PostScript Level 2"
+msgid "PostScript Level 2"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
-msgid  "PostScript Level 3"
+msgid "PostScript Level 3"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
-msgid  "PDF"
+msgid "PDF"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
-msgid  "~Color"
+msgid "~Color"
 msgstr "रंग (~C)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
-msgid  "Color ~depth"
+msgid "Color ~depth"
 msgstr "रंग गहराई (~d)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
-msgid  "~Enable font replacement"
+msgid "~Enable font replacement"
 msgstr "फ़ॉन्ट प्रतिस्थापन सक्रिय करें (~E)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
-msgid  "Replaced ~fonts"
+msgid "Replaced ~fonts"
 msgstr "प्रतिस्थापित फ़ॉन्ट (~f)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr "जोड़ें (~A)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "हटाएं (~R)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
-msgid  "Repla~ce font"
+msgid "Repla~ce font"
 msgstr "फ़ॉन्ट प्रतिस्थापित करें (~c)"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
-msgid  "by ~printer font"
+msgid "by ~printer font"
 msgstr "मुद्रक फ़ॉन्ट से (~p)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
-msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr "तंत्र मुद्रण डायलॉग प्रयोग करें (~U), %PRODUCTNAME कर मुद्रण डायलॉग निष्क्रिय करें"
+msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+"तंत्र मुद्रण डायलॉग प्रयोग करें (~U), %PRODUCTNAME कर मुद्रण डायलॉग "
+"निष्क्रिय करें"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
-msgid  "Command for quick printing without dialog (optional)"
+msgid "Command for quick printing without dialog (optional)"
 msgstr "बिना डायलॉग के तीव्र छपाई के लिए कमांड (वैकल्पिक)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
-msgid  "Select command"
+msgid "Select command"
 msgstr "कमांड चुनें"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
-msgid  "Printer"
+msgid "Printer"
 msgstr "मुद्रक"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "फैक्स"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr ""
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
-msgid  "~Configure as"
+msgid "~Configure as"
 msgstr "ऐसे विन्यस्त करें (~C)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
-msgid  "~Fax number will be removed from output"
+msgid "~Fax number will be removed from output"
 msgstr "आउटपुट से फैक्स संख्या हटा दी जायेगी (~F)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF target directory :"
+msgid "PDF target directory :"
 msgstr "PDF लक्ष्य निर्देशिका (~t)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
-msgid  "Command: "
+msgid "Command: "
 msgstr "कमांड: "
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
+msgid "Printer"
+msgstr "मुद्रक"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "मदद (~H)"
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid "~Remove"
+msgstr "हटाएं (~R)"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF परिवर्तक के लिए कमांड लाइन इस प्रकार चलता है: हर दस्तावेज़ छपाई के लिये, कमांड लाइन में \"(TMP)\" को एक अस्थायी फ़ाइल के द्वारा प्रतिस्थापित किया जाता है लक्षित PDF फ़ाइल नाम के साथ. यदि \"(TMP)\" कमांड लाइन में है, पोस्ट स्क्रिप्ट कोड को एक फ़ाइल के द्वारा दिया जायेगा, अन्यथा मानक इनपुट से होकर (यानी कि. पाइप के रूप में)."
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"PDF परिवर्तक के लिए कमांड लाइन इस प्रकार चलता है: हर दस्तावेज़ छपाई के लिये, "
+"कमांड लाइन में \"(TMP)\" को एक अस्थायी फ़ाइल के द्वारा प्रतिस्थापित किया जाता "
+"है लक्षित PDF फ़ाइल नाम के साथ. यदि \"(TMP)\" कमांड लाइन में है, पोस्ट "
+"स्क्रिप्ट कोड को एक फ़ाइल के द्वारा दिया जायेगा, अन्यथा मानक इनपुट से होकर "
+"(यानी कि. पाइप के रूप में)."
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
-msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "मुद्रक युक्तियों के लिए कमांड लाइन को निम्नलिखित प्रकार से चलाना है: कमांड लाइन को उत्पादित पोस्टस्क्रिप्ट कोड को मानक इनपुट जैसे दिया जायेगा (पाइप जैसे) ."
+msgid "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+"मुद्रक युक्तियों के लिए कमांड लाइन को निम्नलिखित प्रकार से चलाना है: कमांड "
+"लाइन को उत्पादित पोस्टस्क्रिप्ट कोड को मानक इनपुट जैसे दिया जायेगा (पाइप "
+"जैसे) ."
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "फैक्स साधनों के लिए कमांड लाइन निम्नलिखित प्रकार से पूरा होगा: भेजे हुए हरेक फैक्स के लिये, कमांड लाइन में \"(TMP)\" को अल्पकालिक फ़ाइल से प्रतिस्थापित किया जायेगा और कमांड लाइन में \"(PHONE)\" को फैक्स संख्या से प्रतिस्थापित किया जायेगा . अगर \"(TMP)\" कमांड लाइन में दिख रहा है, तो पोस्टस्क्रिप्ट कोड को एक फ़ाइल के द्वारा भेजा जायेगा, नहीं तो मानक इनपुट जैसे (एक पाइप जैसे) भेजा जायेगा ."
+msgid "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"फैक्स साधनों के लिए कमांड लाइन निम्नलिखित प्रकार से पूरा होगा: भेजे हुए हरेक "
+"फैक्स के लिये, कमांड लाइन में \"(TMP)\" को अल्पकालिक फ़ाइल से प्रतिस्थापित "
+"किया जायेगा और कमांड लाइन में \"(PHONE)\" को फैक्स संख्या से प्रतिस्थापित किया "
+"जायेगा . अगर \"(TMP)\" कमांड लाइन में दिख रहा है, तो पोस्टस्क्रिप्ट कोड को एक "
+"फ़ाइल के द्वारा भेजा जायेगा, नहीं तो मानक इनपुट जैसे (एक पाइप जैसे) भेजा "
+"जायेगा ."
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Left margin"
+msgid "~Left margin"
 msgstr "बायां हाशिया (~L)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Top margin"
+msgid "~Top margin"
 msgstr "शीर्ष हाशिया (~T)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Right margin"
+msgid "~Right margin"
 msgstr "दाहिना हाशिया (~R)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Bottom margin"
+msgid "~Bottom margin"
 msgstr "तलवर्ती हाशिया (~B)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "~Comment"
+msgid "~Comment"
 msgstr "टिप्पणी (~C)"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "तयशुदा (~D)"
 
 #: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
-msgid  "Please enter the fax number."
+msgid "Please enter the fax number."
 msgstr "कृपया फैक्स संख्या दीजिए."
 
 #: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
-msgid  "Authentication request"
+msgid "Authentication request"
 msgstr "प्रमाणीकरण आग्रह"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
-msgid  "Please enter your authentication data for server %s"
+msgid "Please enter your authentication data for server %s"
 msgstr "कृपया सर्वर %s के लिए अपना सत्यापन आँकड़ा डालें"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
-msgid  "~User"
+msgid "~User"
 msgstr "उपयोक्ता (~U)"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
-msgid  "~Password"
+msgid "~Password"
 msgstr "कूटशब्द (~P)"

@@ -1,551 +1,780 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ../mediawiki/help/wikiaccount.xhp#TIT
-msgid  "MediaWiki"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: ../mediawiki/help/wikiaccount.xhp#HD_ID960722
+msgid "MediaWiki"
 msgstr "MediaWiki"
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID4571672
-msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
-msgstr "A MediaWiki párbeszédablak használatával hozhatja létre, illetve szerkesztheti a MediaWiki-fiók beállításait."
+msgid "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"A MediaWiki párbeszédablak használatával hozhatja létre, illetve "
+"szerkesztheti a MediaWiki-fiók beállításait."
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID7631458
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, starting with http://</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Írja be a MediaWiki-kiszolgáló URL-jét http:// előtaggal kezdve.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Írja be a MediaWiki-kiszolgáló URL-jét "
+"http:// előtaggal kezdve.</ahelp>"
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID7862483
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt felhasználónevét. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt "
+"felhasználónevét. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID1113010
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt jelszavát. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt "
+"jelszavát. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID656758
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between sessions. The master password must be enabled, see <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Engedélyezze, ha tárolni akarja a jelszavát a munkamenetek között. A mesterjelszónak engedélyezve kell lennie, lásd: <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item>.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between sessions. The master password must be enabled, see <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Engedélyezze, ha tárolni akarja a "
+"jelszavát a munkamenetek között. A mesterjelszónak engedélyezve kell lennie, "
+"lásd: <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - "
+"Biztonság</item>.</ahelp>"
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID3112582
-msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
-msgstr "Adja meg egy wikikiszolgáló internetcímét http://wiki.services.openoffice.org/wiki formában, vagy a webböngészőből másolja át az URL-t."
+msgid "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Adja meg egy wikikiszolgáló internetcímét "
+"http://wiki.services.openoffice.org/wiki formában, vagy a webböngészőből "
+"másolja át az URL-t."
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID628070
-msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
-msgstr "Ha a wiki engedélyez anonim hozzáférést, akkor a fiók szövegmezőit üresen hagyhatja. Egyéb esetben adja meg a felhasználónevét és a jelszavát."
+msgid "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr ""
+"Ha a wiki engedélyez anonim hozzáférést, akkor a fiók szövegmezőit üresen "
+"hagyhatja. Egyéb esetben adja meg a felhasználónevét és a jelszavát."
 
 #: ../mediawiki/help/wikiaccount.xhp#PAR_ID9046601
-msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
-msgstr "Ha az Eszközök - Beállítások - %PRODUCTNAME párbeszédablak Biztonság panellapján engedélyezte a mesterjelszó funkciót, akkor a szoftver tárolni tudja a jelszavát, és automatikusan beilleszti az adatokat, ahová szükséges. A jelszó tárolásához jelölje be a „Jelszó mentése” jelölőnégyzetet."
+msgid "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
+msgstr ""
+"Ha az Eszközök - Beállítások - %PRODUCTNAME párbeszédablak Biztonság "
+"panellapján engedélyezte a mesterjelszó funkciót, akkor a szoftver tárolni "
+"tudja a jelszavát, és automatikusan beilleszti az adatokat, ahová szükséges. "
+"A jelszó tárolásához jelölje be a „Jelszó mentése” jelölőnégyzetet."
 
 #: ../mediawiki/help/wikiformats.xhp#TIT
 #, fuzzy
-msgid  "MediaWiki Formats"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki formátumok"
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID3743095
+#, fuzzy
+msgid "MediaWiki Formats"
 msgstr "MediaWiki formátumok"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID8654133
-msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
-msgstr "Az alábbi lista áttekintést ad azokról a szöveges formátumokról, amelyeket a @WIKIEXTENSIONPRODUCTNAME@ fel tud tölteni a wikikiszolgálóra."
+msgid "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Az alábbi lista áttekintést ad azokról a szöveges formátumokról, amelyeket a "
+"@WIKIEXTENSIONPRODUCTNAME@ fel tud tölteni a wikikiszolgálóra."
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID5630664
-msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
-msgstr "A Writer által használt OpenDocument formátum és a WikiMedia formátum igen különböző. A formázási lehetőségeknek csak egy része alakítható át egyik formátumból a másikba."
+msgid "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr ""
+"A Writer által használt OpenDocument formátum és a WikiMedia formátum igen "
+"különböző. A formázási lehetőségeknek csak egy része alakítható át egyik "
+"formátumból a másikba."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID7178868
-msgid  "Headings"
+msgid "Headings"
 msgstr "Címsorok"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID508133
-msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
-msgstr "Alkalmazzon címsor-bekezdésstílusokat a Writer-dokumentum címsoraihoz. A Wiki a címsorstílusokat ugyanazon a vázlatszinten jeleníti meg a Wiki megjelenítőmotorja által meghatározott formázással."
+msgid "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr ""
+"Alkalmazzon címsor-bekezdésstílusokat a Writer-dokumentum címsoraihoz. A "
+"Wiki a címsorstílusokat ugyanazon a vázlatszinten jeleníti meg a Wiki "
+"megjelenítőmotorja által meghatározott formázással."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID7217627
-msgid  "Hyperlinks"
+msgid "Hyperlinks"
 msgstr "Hiperhivatkozások"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID3735465
-msgid  "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
-msgstr "A natív OpenDocument-hiperhivatkozások „külső” wikihivatkozásokká alakulnak át. Ezért az OpenDocument beépített hivatkozásait csak a wikiweben kívülre mutató hivatkozások létrehozására lehet használni. A wikitartományon belüli célokra mutató hivatkozások létrehozásához használjon wikihivatkozásokat."
+msgid "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr ""
+"A natív OpenDocument-hiperhivatkozások „külső” wikihivatkozásokká alakulnak "
+"át. Ezért az OpenDocument beépített hivatkozásait csak a wikiweben kívülre "
+"mutató hivatkozások létrehozására lehet használni. A wikitartományon belüli "
+"célokra mutató hivatkozások létrehozásához használjon wikihivatkozásokat."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID941190
-msgid  "Lists"
+msgid "Lists"
 msgstr "Listák"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID8942838
-msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
-msgstr "A listák megbízhatóan exportálhatók, ha az egész lista egységes listastílust használ. A Writerben lista létrehozásához használja a Számozás vagy a Felsorolás ikont. Ha számozás vagy felsorolásjel nélküli listára van szüksége, használja a Formátum - Felsorolás és számozás menüparancsot a kívánt listastílus definiálásához és alkalmazásához."
+msgid "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
+msgstr ""
+"A listák megbízhatóan exportálhatók, ha az egész lista egységes listastílust "
+"használ. A Writerben lista létrehozásához használja a Számozás vagy a "
+"Felsorolás ikont. Ha számozás vagy felsorolásjel nélküli listára van "
+"szüksége, használja a Formátum - Felsorolás és számozás menüparancsot a "
+"kívánt listastílus definiálásához és alkalmazásához."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID7026886
-msgid  "Paragraphs"
+msgid "Paragraphs"
 msgstr "Bekezdések"
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID4436475
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "Igazítás"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID376598
-msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
-msgstr "Explicit szövegigazítás nem használható a wikicikkekben. Ennek ellenére, a balra, középre és jobbra igazított szöveg támogatva van."
+msgid "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Explicit szövegigazítás nem használható a wikicikkekben. Ennek ellenére, a "
+"balra, középre és jobbra igazított szöveg támogatva van."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID7486190
-msgid  "Pre-formatted text"
+msgid "Pre-formatted text"
 msgstr "Előformázott szöveg"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID1459395
-msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
-msgstr "A rögzített szélességű karaktereket használó bekezdésstílusok előformázott szöveggé alakulnak át. Az előformázott szöveg a wikiben egy keretben jelenik meg."
+msgid "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"A rögzített szélességű karaktereket használó bekezdésstílusok előformázott "
+"szöveggé alakulnak át. Az előformázott szöveg a wikiben egy keretben jelenik "
+"meg."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID4834131
-msgid  "Character styles"
+msgid "Character styles"
 msgstr "Karakterstílusok"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID6397595
-msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
-msgstr "A karakterstílusok a bekezdés részeinek megjelenését módosítják. Az átalakítás támogatja a félkövér, dőlt, félkövér és dőlt, alsó és felső index stílusokat. Minden rögzített szélességű betű a wiki typewriter (írógép) stílusává alakul át."
+msgid "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
+msgstr ""
+"A karakterstílusok a bekezdés részeinek megjelenését módosítják. Az "
+"átalakítás támogatja a félkövér, dőlt, félkövér és dőlt, alsó és felső index "
+"stílusokat. Minden rögzített szélességű betű a wiki typewriter (írógép) "
+"stílusává alakul át."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID5152745
-msgid  "Footnotes"
+msgid "Footnotes"
 msgstr "Lábjegyzetek"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID5238196
-msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
-msgstr "Megjegyzés: Az átalakítás a lábjegyzetek új stílusát használja a <ref> és <references> kódokkal, amihez a MediaWikire telepíteni kell a Cite.php kiterjesztést. Ha az átalakítás után ezek a kódok egyszerű szövegként jelennek meg, kérje meg a wikiadminisztrátort, hogy telepítse ezt a kiterjesztést."
+msgid "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
+msgstr ""
+"Megjegyzés: Az átalakítás a lábjegyzetek új stílusát használja a <ref> és "
+"<references> kódokkal, amihez a MediaWikire telepíteni kell a Cite.php "
+"kiterjesztést. Ha az átalakítás után ezek a kódok egyszerű szövegként "
+"jelennek meg, kérje meg a wikiadminisztrátort, hogy telepítse ezt a "
+"kiterjesztést."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID9405499
-msgid  "Images"
+msgid "Images"
 msgstr "Képek"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID3541673
-msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
-msgstr "A képek nem exportálhatók olyan átalakítással, amelynek eredménye egyetlen, wikiszöveget tartalmazó fájl. Mindazonáltal, ha a kép már fel van töltve a cél-wikitartományra (például WikiMedia Commons), akkor az átalakítás a képet tartalmazó érvényes képhivatkozást hoz létre. A képfeliratok is támogatva vannak."
+msgid "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
+msgstr ""
+"A képek nem exportálhatók olyan átalakítással, amelynek eredménye egyetlen, "
+"wikiszöveget tartalmazó fájl. Mindazonáltal, ha a kép már fel van töltve a "
+"cél-wikitartományra (például WikiMedia Commons), akkor az átalakítás a képet "
+"tartalmazó érvényes képhivatkozást hoz létre. A képfeliratok is támogatva "
+"vannak."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID2162236
-msgid  "Tables"
+msgid "Tables"
 msgstr "Táblázatok"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID3037202
-msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
-msgstr "Az egyszerű táblázatokat a rendszer támogatja. A táblázatfejléceket a megfelelő wikistílusú táblázatfejlécekké alakulnak át. Mindazonáltal az egyedien formázott táblázatszegélyeket, oszlopméreteket és háttérszíneket a szoftver figyelmen kívül hagyja."
+msgid "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
+msgstr ""
+"Az egyszerű táblázatokat a rendszer támogatja. A táblázatfejléceket a "
+"megfelelő wikistílusú táblázatfejlécekké alakulnak át. Mindazonáltal az "
+"egyedien formázott táblázatszegélyeket, oszlopméreteket és háttérszíneket a "
+"szoftver figyelmen kívül hagyja."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID2954496
-msgid  "Joined Cells"
+msgid "Joined Cells"
 msgstr "Egyesített cellák"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID8253730
-msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
-msgstr "Az OpenDocument és különösen az OpenOffice.org a több soron átnyúló egyesített cellákat tartalmazó táblázatokat beágyazott táblázatot tartalmazó táblázatként reprezentálja. Ezzel szemben a wiki táblázatmodellje az egyesített cellákat átnyúló oszlopokkal és sorokkal határozza meg. "
+msgid "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"Az OpenDocument és különösen az OpenOffice.org a több soron átnyúló "
+"egyesített cellákat tartalmazó táblázatokat beágyazott táblázatot tartalmazó "
+"táblázatként reprezentálja. Ezzel szemben a wiki táblázatmodellje az "
+"egyesített cellákat átnyúló oszlopokkal és sorokkal határozza meg. "
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID8163090
-msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
-msgstr "Ha ugyanabban a sorban van több oszlop egyesítve, akkor az átalakított táblázat igen jól adja vissza az eredetit."
+msgid "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
+msgstr ""
+"Ha ugyanabban a sorban van több oszlop egyesítve, akkor az átalakított "
+"táblázat igen jól adja vissza az eredetit."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID425122
-msgid  "Borders"
+msgid "Borders"
 msgstr "Szegélyek"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID1831110
-msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki engine with simple borders and bold header."
-msgstr "A szegélyre és a háttérre vonatkozó egyedi táblázatstílustól függetlenül a táblázat mindig „<emph>prettytable</emph>”-ként exportálódik, amelyet a wiki megjelenítőmotorja egyszerű szegélyekkel és félkövér fejléccel jelenik meg."
+msgid "Irrespective of custom table styles for border and background, a table is always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki engine with simple borders and bold header."
+msgstr ""
+"A szegélyre és a háttérre vonatkozó egyedi táblázatstílustól függetlenül a "
+"táblázat mindig „<emph>prettytable</emph>”-ként exportálódik, amelyet a wiki "
+"megjelenítőmotorja egyszerű szegélyekkel és félkövér fejléccel jelenik meg."
 
 #: ../mediawiki/help/wikiformats.xhp#HD_ID6255073
-msgid  "Charset and special characters"
+msgid "Charset and special characters"
 msgstr "Karakterkészlet és különleges karakterek"
 
 #: ../mediawiki/help/wikiformats.xhp#PAR_ID8216193
-msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
-msgstr "Az átalakított dokumentum karakterkódolása mindig UTF-8. A rendszertől függően nem biztos, hogy ez az alapértelmezett karakterkódolás. Ezért a „különleges karakterek” az alapértelmezett beállításokkal hibásan jelenhetnek meg. Mindemellett a szövegszerkesztő átkapcsolható UTF-8 kódolásra, így a probléma megoldódik. Ha a szerkesztő nem támogatja a kódolás átkapcsolását, az átalakítás eredménye megjeleníthető Firefox böngészőben, és a kódolás ott UTF-8 lesz. Ezután az átalakítás eredménye átmásolható egy tetszőleges programba."
+msgid "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
+msgstr ""
+"Az átalakított dokumentum karakterkódolása mindig UTF-8. A rendszertől "
+"függően nem biztos, hogy ez az alapértelmezett karakterkódolás. Ezért a "
+"„különleges karakterek” az alapértelmezett beállításokkal hibásan "
+"jelenhetnek meg. Mindemellett a szövegszerkesztő átkapcsolható UTF-8 "
+"kódolásra, így a probléma megoldódik. Ha a szerkesztő nem támogatja a "
+"kódolás átkapcsolását, az átalakítás eredménye megjeleníthető Firefox "
+"böngészőben, és a kódolás ott UTF-8 lesz. Ezután az átalakítás eredménye "
+"átmásolható egy tetszőleges programba."
 
 #: ../mediawiki/help/wikisend.xhp#TIT
-#, fuzzy
-msgid  "Send to MediaWiki"
+msgid "Send to MediaWiki"
+msgstr "Küldés MediaWikire"
+
+#: ../mediawiki/help/wikisend.xhp#HD_ID108340
+msgid "Send to MediaWiki"
 msgstr "Küldés MediaWikire"
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID1743827
-msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
-msgstr "A Küldés MediaWikire párbeszédablakban adja meg az aktuális wikifeltöltés beállításait."
+msgid "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr ""
+"A Küldés MediaWikire párbeszédablakban adja meg az aktuális wikifeltöltés "
+"beállításait."
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID664082
-msgid  "<ahelp hid=\".\">Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.</ahelp>"
-msgstr "<ahelp hid=\".\">Válassza ki a MediaWiki-kiszolgálót, ahol publikálni szeretné a dokumentumot. Ha a listába új kiszolgálót szeretne felvinni, kattintson a Hozzáadás gombra.</ahelp>"
+msgid "<ahelp hid=\".\">Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Válassza ki a MediaWiki-kiszolgálót, ahol publikálni szeretné "
+"a dokumentumot. Ha a listába új kiszolgálót szeretne felvinni, kattintson a "
+"Hozzáadás gombra.</ahelp>"
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID2794885
-msgid  "<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.</ahelp>"
-msgstr "<ahelp hid=\".\">Írja be a wikibejegyzés címét. Ez a wikibejegyzés fő címsora. Új bejegyzés esetén a címnek egyedinek kell lennie ezen a wikin. Ha létező címet ír be, a feltöltéssel felülírja a meglévő wikibejegyzést.</ahelp>"
+msgid "<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Írja be a wikibejegyzés címét. Ez a wikibejegyzés fő címsora. "
+"Új bejegyzés esetén a címnek egyedinek kell lennie ezen a wikin. Ha létező "
+"címet ír be, a feltöltéssel felülírja a meglévő wikibejegyzést.</ahelp>"
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID2486342
-msgid  "<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
-msgstr "<ahelp hid=\".\">Írja be az oldal rövid összefoglalását vagy egy megjegyzést.</ahelp> Lásd: <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
+msgid "<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Írja be az oldal rövid összefoglalását vagy egy "
+"megjegyzést.</ahelp> Lásd: <link href=\"http://meta.wikimedia.org/wiki/Help:E"
+"dit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID823999
-msgid  "<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.</ahelp>"
-msgstr "<emph>Ez egy kis módosítás</emph>: <ahelp hid=\".\">Ha a feltöltött dokumentum egy meglévő, ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a négyzetet.</ahelp>"
+msgid "<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.</ahelp>"
+msgstr ""
+"<emph>Ez egy kis módosítás</emph>: <ahelp hid=\".\">Ha a feltöltött dokumentum "
+"egy meglévő, ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a "
+"négyzetet.</ahelp>"
 
 #: ../mediawiki/help/wikisend.xhp#PAR_ID6592913
-msgid  "<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your system web browser and show the uploaded Wiki page.</ahelp>"
-msgstr "<emph>Megjelenítés a böngészőben</emph>: <ahelp hid=\".\">Ha bejelöli ezt a négyzetet, megnyílik a rendszer webböngészője, és megjeleníti a feltöltött wikioldalt.</ahelp>"
+msgid "<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Megjelenítés a böngészőben</emph>: <ahelp hid=\".\">Ha bejelöli ezt a "
+"négyzetet, megnyílik a rendszer webböngészője, és megjeleníti a feltöltött "
+"wikioldalt.</ahelp>"
 
 #: ../mediawiki/help/wikisettings.xhp#TIT
 #, fuzzy
-msgid  "MediaWiki Options"
+msgid "MediaWiki Options"
+msgstr "MediaWiki-beállítások"
+
+#: ../mediawiki/help/wikisettings.xhp#HD_ID6425672
+#, fuzzy
+msgid "MediaWiki Options"
 msgstr "MediaWiki-beállítások"
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID1188390
-msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr "Új MediaWiki-kiszolgálókat vihet fel, illetve módosíthatja és törölheti azokat. A párbeszédablak az <item type=\"menuitem\">Eszközök- Beállítások - Internet - MediaWiki</item> panelen keresztül érhető el. A másik megoldás, hogy az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> menüparancsot választja, majd a @WIKIEXTENSIONPRODUCTNAME@ elemnél a Beállítások gombra kattint."
+msgid "You can add, edit and remove MediaWiki servers. Open the dialog by <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr ""
+"Új MediaWiki-kiszolgálókat vihet fel, illetve módosíthatja és törölheti "
+"azokat. A párbeszédablak az <item type=\"menuitem\">Eszközök- Beállítások - "
+"Internet - MediaWiki</item> panelen keresztül érhető el. A másik megoldás, "
+"hogy az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> "
+"menüparancsot választja, majd a @WIKIEXTENSIONPRODUCTNAME@ elemnél a "
+"Beállítások gombra kattint."
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID300607
-msgid  "<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and click Edit to edit the account settings.<br/>Select an entry and click Remove to remove the entry from the list.</ahelp>"
-msgstr "<ahelp hid=\".\">A Hozzáadás gombra kattintva új wikikiszolgálót vihet fel.<br/>Válasszon ki egy bejegyzést, és a fiókbeállítások módosításához kattintson a Szerkesztés gombra.<br/>Ha a bejegyzést törölni kívánja a listából, jelölje ki, majd kattintson az Eltávolítás gombra.</ahelp>"
+msgid "<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and click Edit to edit the account settings.<br/>Select an entry and click Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">A Hozzáadás gombra kattintva új wikikiszolgálót vihet "
+"fel.<br/>Válasszon ki egy bejegyzést, és a fiókbeállítások módosításához "
+"kattintson a Szerkesztés gombra.<br/>Ha a bejegyzést törölni kívánja a "
+"listából, jelölje ki, majd kattintson az Eltávolítás gombra.</ahelp>"
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID9786065
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new entry to the list.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, ahol a listába új bejegyzést vihet fel.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, "
+"ahol a listába új bejegyzést vihet fel.</ahelp>"
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID3386333
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the selected entry.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, ahol szerkesztheti a kiválasztott bejegyzést.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, "
+"ahol szerkesztheti a kiválasztott bejegyzést.</ahelp>"
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID7285073
-msgid  "<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the list.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Eltávolítja a kijelölt bejegyzést a listából.</ahelp>"
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Eltávolítja a kijelölt bejegyzést a "
+"listából.</ahelp>"
 
 #: ../mediawiki/help/wikisettings.xhp#PAR_ID1029084
-msgid  "When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
-msgstr "Ha a Hozzáadás vagy a Szerkesztés gombra kattint, a <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> párbeszédablak nyílik meg."
+msgid "When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Ha a Hozzáadás vagy a Szerkesztés gombra kattint, a <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> párbeszédablak "
+"nyílik meg."
 
 #: ../mediawiki/help/wiki.xhp#TIT
-msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: ../mediawiki/help/wiki.xhp#BM_ID3154408
-msgid  "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
-msgstr "<bookmark_value>wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>kiterjesztések;MediaWiki</bookmark_value>"
+msgid "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>kiterjesztése"
+"k;MediaWiki</bookmark_value>"
+
+#: ../mediawiki/help/wiki.xhp#HD_ID5993530
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID9647511
-msgid  "<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.</ahelp>"
-msgstr "<ahelp hid=\".\">A @WIKIEXTENSIONPRODUCTNAME@ használatával az aktuális szöveges dokumentumot feltöltheti egy MediaWiki-kiszolgálóra. A feltöltés után minden wikifelhasználó olvashatja az Ön dokumentumát a wikin.</ahelp>"
+msgid "<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">A @WIKIEXTENSIONPRODUCTNAME@ használatával az aktuális "
+"szöveges dokumentumot feltöltheti egy MediaWiki-kiszolgálóra. A feltöltés "
+"után minden wikifelhasználó olvashatja az Ön dokumentumát a wikin.</ahelp>"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID6468703
-msgid  "<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</item> to upload the current Writer document to a MediaWiki server.</ahelp>"
-msgstr "<ahelp hid=\".\">Válassza a <item type=\"menuitem\">Fájl - Küldés - MediaWikire</item> menüparancsot, ha az aktuális Writer-dokumentumot fel akarja tölteni egy MediaWiki-kiszolgálóra.</ahelp>"
+msgid "<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</item> to upload the current Writer document to a MediaWiki server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Válassza a <item type=\"menuitem\">Fájl - Küldés - "
+"MediaWikire</item> menüparancsot, ha az aktuális Writer-dokumentumot fel "
+"akarja tölteni egy MediaWiki-kiszolgálóra.</ahelp>"
 
 #: ../mediawiki/help/wiki.xhp#HD_ID4554582
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "Rendszerkövetelmények"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID2597430
-msgid  "StarOffice/StarSuite 9"
+msgid "StarOffice/StarSuite 9"
 msgstr "StarOffice/StarSuite 9"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID8430738
-msgid  "OpenOffice.org 3.0"
+msgid "OpenOffice.org 3.0"
 msgstr "OpenOffice.org 3.0"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID9340495
-msgid  "Java Runtime Environment 1.4"
+msgid "Java Runtime Environment 1.4"
 msgstr "Java-futtatókörnyezet 1.4"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID7387615
-msgid  "A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
-msgstr "Wikifiók egy támogatott<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-kiszolgálón"
+msgid "A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"Wikifiók egy támogatott<link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-kiszolgálón"
 
 #: ../mediawiki/help/wiki.xhp#HD_ID8047120
-msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "A @WIKIEXTENSIONPRODUCTNAME@ telepítése"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID4277169
-msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr "A @WIKIEXTENSIONPRODUCTNAME@ kiterjesztés telepítése előtt gondoskodjon arról, hogy az %PRODUCTNAME Java-futtatókörnyezetet (JRE) használjon. A JRE állapotának ellenőrzéséhez nézze meg az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Java</item> panelt. Ellenőrizze, hogy a „Java-futtatókörnyezet használata” négyzet be van-e jelölve, és hogy ki van-e választva egy Java-futtatókörnyezet a nagy listamezőben. Ha egyik JRE sincs aktiválva, akkor aktiváljon egy JRE 1.4-et vagy frissebbet, és indítsa újra az %PRODUCTNAME programot."
+msgid "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"A @WIKIEXTENSIONPRODUCTNAME@ kiterjesztés telepítése előtt gondoskodjon "
+"arról, hogy az %PRODUCTNAME Java-futtatókörnyezetet (JRE) használjon. A JRE "
+"állapotának ellenőrzéséhez nézze meg az <item type=\"menuitem\">Eszközök - "
+"Beállítások - %PRODUCTNAME - Java</item> panelt. Ellenőrizze, hogy a „Java-"
+"futtatókörnyezet használata” négyzet be van-e jelölve, és hogy ki van-e "
+"választva egy Java-futtatókörnyezet a nagy listamezőben. Ha egyik JRE sincs "
+"aktiválva, akkor aktiváljon egy JRE 1.4-et vagy frissebbet, és indítsa újra "
+"az %PRODUCTNAME programot."
 
 #: ../mediawiki/help/wiki.xhp#HD_ID567339
-msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "A @WIKIEXTENSIONPRODUCTNAME@ telepítéséhez:"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID1732230
-msgid  "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
-msgstr "Egy Writer-ablakban válassza az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> menüparancsot."
+msgid "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
+msgstr ""
+"Egy Writer-ablakban válassza az <item type=\"menuitem\">Eszközök - "
+"Kiterjesztéskezelő</item> menüparancsot."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID4338511
-msgid  "In the Extension Manager dialog, click Add."
+msgid "In the Extension Manager dialog, click Add."
 msgstr "A Kiterjesztéskezelő párbeszédablakban kattintson a Hozzáadás gombra."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID5882442
-msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
-msgstr "Keresse meg a @WIKIEXTENSIONFILENAME@.oxt fájlt, kattintson a Megnyitás, majd a Bezárás gombra. "
+msgid "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr ""
+"Keresse meg a @WIKIEXTENSIONFILENAME@.oxt fájlt, kattintson a Megnyitás, "
+"majd a Bezárás gombra. "
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID4008911
-msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
-msgstr "Zárja be az %PRODUCTNAME programot, és ha engedélyezve van, zárja be a gyorsindítót is."
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr ""
+"Zárja be az %PRODUCTNAME programot, és ha engedélyezve van, zárja be a "
+"gyorsindítót is."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID265511
-msgid  "Restart the software, open a text document, then choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr "Indítsa újra a szoftvert, nyisson meg egy szöveges dokumentumot, majd az <item type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> panelen írja be a wiki beállításait. Lásd alább: „Kapcsolódás egy wikihez”."
+msgid "Restart the software, open a text document, then choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Indítsa újra a szoftvert, nyisson meg egy szöveges dokumentumot, majd az "
+"<item type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> "
+"panelen írja be a wiki beállításait. Lásd alább: „Kapcsolódás egy wikihez”."
 
 #: ../mediawiki/help/wiki.xhp#HD_ID3569444
-msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "A @WIKIEXTENSIONPRODUCTNAME@ eltávolításához:"
 
+#: ../mediawiki/help/wiki.xhp#PAR_ID2655110
+msgid "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
+msgstr ""
+"Egy Writer-ablakban válassza az <item type=\"menuitem\">Eszközök - "
+"Kiterjesztéskezelő</item> menüparancsot."
+
 #: ../mediawiki/help/wiki.xhp#PAR_ID9504379
-msgid  "Click the plus sign (+) in front of My Extensions."
+msgid "Click the plus sign (+) in front of My Extensions."
 msgstr "Kattintson a Saját kiterjesztések előtt lévő plusz (+) jelre."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID8431348
-msgid  "Select the extension, click Remove, and then click Close."
-msgstr "Válassza ki a kiterjesztést, kattintson az Eltávolítás gombra, majd kattintson a Bezárás gombra."
+msgid "Select the extension, click Remove, and then click Close."
+msgstr ""
+"Válassza ki a kiterjesztést, kattintson az Eltávolítás gombra, majd "
+"kattintson a Bezárás gombra."
 
 #: ../mediawiki/help/wiki.xhp#HD_ID5316019
-msgid  "To Connect to a Wiki"
+msgid "To Connect to a Wiki"
 msgstr "Kapcsolódás egy wikihez"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID2381969
-msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>."
-msgstr "Megjegyzés: Az %PRODUCTNAME különböző párbeszédablakaiba beírt felhasználóneveket és jelszavakat mentheti. A jelszót a rendszer biztonságosan tárolja, olyan helyen, amelynek eléréséhez mesterjelszó szükséges. Engedélyezze a mesterjelszó használatát az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> panelen."
+msgid "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>."
+msgstr ""
+"Megjegyzés: Az %PRODUCTNAME különböző párbeszédablakaiba beírt "
+"felhasználóneveket és jelszavakat mentheti. A jelszót a rendszer "
+"biztonságosan tárolja, olyan helyen, amelynek eléréséhez mesterjelszó "
+"szükséges. Engedélyezze a mesterjelszó használatát az <item "
+"type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> "
+"panelen."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID3751640
-msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</item>, and restart the software."
-msgstr "Megjegyzés: Ha proxykiszolgáló használatával csatlakozik az internetre, adja meg a proxyadatokat az <item type=\"menuitem\">Eszközök - Beállítások - Internet - Proxy</item> panelen, majd indítsa újra a szoftvert."
+msgid "Note: If you connect to the web using a proxy server, enter the proxy information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</item>, and restart the software."
+msgstr ""
+"Megjegyzés: Ha proxykiszolgáló használatával csatlakozik az internetre, adja "
+"meg a proxyadatokat az <item type=\"menuitem\">Eszközök - Beállítások - "
+"Internet - Proxy</item> panelen, majd indítsa újra a szoftvert."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID9533677
-msgid  "Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>."
-msgstr "Nyisson meg egy Writer-dokumentumot, majd válassza az <item type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> lehetőséget."
+msgid "Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>."
+msgstr ""
+"Nyisson meg egy Writer-dokumentumot, majd válassza az <item "
+"type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> "
+"lehetőséget."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID368968
-msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> dialog, click Add."
-msgstr "A <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Beállítások</link> párbeszédablakban kattintson a Hozzáadás gombra."
+msgid "In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> dialog, click Add."
+msgstr ""
+"A <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Beállítások</link> "
+"párbeszédablakban kattintson a Hozzáadás gombra."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID6962187
-msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog, enter the account information for the Wiki."
-msgstr "A <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> párbeszédablakban adja meg a wikihez tartozó fiókadatait."
+msgid "In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog, enter the account information for the Wiki."
+msgstr ""
+"A <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"párbeszédablakban adja meg a wikihez tartozó fiókadatait."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID5328836
-msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
-msgstr "Az URL szövegmezőben adja meg annak a wikinek a címét, amelyhez csatlakozni kíván."
+msgid "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+"Az URL szövegmezőben adja meg annak a wikinek a címét, amelyhez csatlakozni "
+"kíván."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID389416
-msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgid "You can copy the URL from a web browser and paste it into the textbox."
 msgstr "Az URL-t webböngészőből is átmásolhatja a szövegmezőbe."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID5906552
-msgid  "In the Username box, enter your user ID for your Wiki account."
-msgstr "A Felhasználónév mezőben adja meg a wikifiókjának felhasználói azonosítóját."
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr ""
+"A Felhasználónév mezőben adja meg a wikifiókjának felhasználói azonosítóját."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID9297158
-msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
-msgstr "Ha a wiki engedélyezi az anonim írási hozzáférést, a Felhasználónév és Jelszó, mezőket üresen hagyhatja."
+msgid "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr ""
+"Ha a wiki engedélyezi az anonim írási hozzáférést, a Felhasználónév és "
+"Jelszó, mezőket üresen hagyhatja."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID8869594
-msgid  "In the Password box, enter the password for your Wiki account, then click OK."
-msgstr "A Jelszó mezőben adja meg a wikifiókjának jelszavát, majd kattintson az OK gombra."
+msgid "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr ""
+"A Jelszó mezőben adja meg a wikifiókjának jelszavát, majd kattintson az OK "
+"gombra."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID292062
-msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr "Opcionálisan engedélyezheti a „Jelszó mentése” lehetőséget is, hogy a munkamenetek között mentse a jelszót. A mentett jelszavak elérését a mesterjelszó védi. A mesterjelszó használatát engedélyezze az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> panelen. A „Jelszó mentése” lehetőség nem áll rendelkezésre, ha a mesterjelszó nincs engedélyezve."
+msgid "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
+msgstr ""
+"Opcionálisan engedélyezheti a „Jelszó mentése” lehetőséget is, hogy a "
+"munkamenetek között mentse a jelszót. A mentett jelszavak elérését a "
+"mesterjelszó védi. A mesterjelszó használatát engedélyezze az <item "
+"type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> "
+"panelen. A „Jelszó mentése” lehetőség nem áll rendelkezésre, ha a "
+"mesterjelszó nincs engedélyezve."
 
 #: ../mediawiki/help/wiki.xhp#HD_ID7044892
-msgid  "To Create a New Wiki Page"
+msgid "To Create a New Wiki Page"
 msgstr "Új wikioldal létrehozása"
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID3514206
-msgid  "Open a Writer document."
+msgid "Open a Writer document."
 msgstr "Nyisson meg egy Writer-dokumentumot."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID944853
-msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
-msgstr "Írja meg a wikioldal tartalmát. Használhat formázást, többek között szövegformázást, címsorokat, lábjegyzeteket. Lásd: <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">a támogatott formátumok listája</link>."
+msgid "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Írja meg a wikioldal tartalmát. Használhat formázást, többek között "
+"szövegformázást, címsorokat, lábjegyzeteket. Lásd: <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">a támogatott formátumok "
+"listája</link>."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID4566484
-msgid  "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
-msgstr "Válasza a <item type=\"menuitem\">Fájl - Küldés - MediaWikire</item> menüparancsot."
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr ""
+"Válasza a <item type=\"menuitem\">Fájl - Küldés - MediaWikire</item> "
+"menüparancsot."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID228278
-msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> dialog, specify the settings for your entry."
-msgstr "A <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Küldés MediaWikire</link> párbeszédablakban adja meg a bejegyzésének beállításait."
+msgid "In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> dialog, specify the settings for your entry."
+msgstr ""
+"A <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Küldés MediaWikire</link> "
+"párbeszédablakban adja meg a bejegyzésének beállításait."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID2564165
-msgid  "<emph>MediaWiki server</emph>: Select the Wiki."
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
 msgstr "<emph>MediaWiki-kiszolgáló</emph>: Válassza ki a wikit."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID5566576
-msgid  "<emph>Title</emph>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr "<emph>Cím</emph>: Írja be az oldal címét. Ha egy meglévő oldal címét írja be, akkor az felülíródik az aktuális szöveges dokumentum tartalmával. Ha új címet ír be, akkor egy új oldal jön létre a wikin."
+msgid "<emph>Title</emph>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Cím</emph>: Írja be az oldal címét. Ha egy meglévő oldal címét írja "
+"be, akkor az felülíródik az aktuális szöveges dokumentum tartalmával. Ha új "
+"címet ír be, akkor egy új oldal jön létre a wikin."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID9688711
-msgid  "<emph>Summary</emph>: Enter an optional short summary of your page."
-msgstr "<emph>Összegzés</emph>: Írjon egy rövid összefoglalót az oldalról, de ez nem kötelező."
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr ""
+"<emph>Összegzés</emph>: Írjon egy rövid összefoglalót az oldalról, de ez nem "
+"kötelező."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID4123661
-msgid  "<emph>This is a minor edit</emph>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr "<emph>Ez egy kis módosítás</emph>: Ha a feltöltött dokumentum egy meglévő, ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a mezőt."
+msgid "<emph>This is a minor edit</emph>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Ez egy kis módosítás</emph>: Ha a feltöltött dokumentum egy meglévő, "
+"ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a mezőt."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID452284
-msgid  "<emph>Show in web browser</emph>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr "<emph>Megjelenítés a böngészőben</emph>: Ha bejelöli ezt a négyzetet, megnyílik a rendszer webböngészője, és megjeleníti a feltöltött wikioldalt."
+msgid "<emph>Show in web browser</emph>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Megjelenítés a böngészőben</emph>: Ha bejelöli ezt a négyzetet, "
+"megnyílik a rendszer webböngészője, és megjeleníti a feltöltött wikioldalt."
 
 #: ../mediawiki/help/wiki.xhp#PAR_ID8346812
-msgid  "Click Send."
+msgid "Click Send."
 msgstr "Kattintson a Küldés gombra."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#ADDONS.ADDONUI.OFFICEMENUBARMERGING.COM.SUN.STAR.WIKI.S1.MENUITEMS.M2.TITLE
-msgid  "To Media~Wiki..."
+msgid "To Media~Wiki..."
 msgstr "Media~Wikire..."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.GENERALSENDERROR
-msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
 msgstr "A „Küldés a MediaWikire” művelet nem volt sikeresen végrehajtható."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOWIKIFILTER
-msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
-msgstr "A MediaWiki-exportszűrő nem található. Az „Eszközök - XML-szűrő beállításai” menüparancs használatával telepítse a szűrőt, vagy a telepítővel telepítse a komponenst."
+msgid "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"A MediaWiki-exportszűrő nem található. Az „Eszközök - XML-szűrő beállításai” "
+"menüparancs használatával telepítse a szűrőt, vagy a telepítővel telepítse "
+"a komponenst."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOCONNECTIONTOURL
-msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
-msgstr "Nem sikerült kapcsolatot teremteni a következő helyen található MediaWiki-rendszerrel: „$ARG1”."
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr ""
+"Nem sikerült kapcsolatot teremteni a következő helyen található MediaWiki-"
+"rendszerrel: „$ARG1”."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.WRONGLOGIN
-msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
-msgstr "A felhasználónév vagy a jelszó hibás. Próbálkozzon újra, vagy hagyja üresen ezeket a mezőket az anonim csatlakozáshoz."
+msgid "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr ""
+"A felhasználónév vagy a jelszó hibás. Próbálkozzon újra, vagy hagyja üresen "
+"ezeket a mezőket az anonim csatlakozáshoz."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.INVALIDURL
-msgid  "A connection could not be created because the URL is invalid."
+msgid "A connection could not be created because the URL is invalid."
 msgstr "A kapcsolat nem jött létre, mert az URL érvénytelen."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOURL
-msgid  "Specify a MediaWiki server by providing a URL."
+msgid "Specify a MediaWiki server by providing a URL."
 msgstr "URL megadásával határozzon meg egy MediaWiki-kiszolgálót."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.CANCELSENDING
-msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgid "The transfer has been interrupted. Please check the integrity of the wiki article."
 msgstr "Az átvitel megszakadt. Ellenőrizze a wikicikk integritását."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_URLLABEL
-msgid  "U~RL"
+msgid "U~RL"
 msgstr "U~RL"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_USERNAMELABEL
-msgid  "~Username"
+msgid "~Username"
 msgstr "~Felhasználónév"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_PASSWORDLABEL
-msgid  "~Password"
+msgid "~Password"
 msgstr "~Jelszó"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTITLE
-msgid  "Send to MediaWiki"
+msgid "Send to MediaWiki"
 msgstr "Küldés MediaWikire"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_WIKIARTICLE
-msgid  "Wiki article"
+msgid "Wiki article"
 msgstr "Wikicikk"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_NO
-msgid  "No"
+msgid "No"
 msgstr "Nem"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_OK
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_YES
-msgid  "Yes"
+msgid "Yes"
 msgstr "Igen"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_ADDBUTTON
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Hozzáadás..."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITBUTTON
-msgid  "~Edit..."
+msgid "~Edit..."
 msgstr "S~zerkesztés..."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDBUTTON
-msgid  "~Send"
+msgid "~Send"
 msgstr "~Küldés"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_REMOVEBUTTON
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "~Eltávolítás"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_NEWWIKIPAGE_LABEL1
-msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
-msgstr "„$ARG1” című wikicikk még nem létezik. Szeretne ezzel a névvel új cikket létrehozni?"
+msgid "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr ""
+"„$ARG1” című wikicikk még nem létezik. Szeretne ezzel a névvel új cikket "
+"létrehozni?"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL1
-msgid  "Media~Wiki Server"
+msgid "Media~Wiki Server"
 msgstr "Media~Wiki-kiszolgáló"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL2
-msgid  "~Title"
+msgid "~Title"
 msgstr "~Cím"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL3
-msgid  "S~ummary"
+msgid "S~ummary"
 msgstr "Ö~sszegzés"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_MINORCHECK
-msgid  "This is a ~minor edit"
+msgid "This is a ~minor edit"
 msgstr "Ez egy kis ~módosítás"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_BROWSERCHECK
-msgid  "Show in web ~browser"
+msgid "Show in web ~browser"
 msgstr "Megjelenítés a ~böngészőben"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.UNKNOWNCERT
-msgid  "The certificate of the selected site is unknown."
+msgid "The certificate of the selected site is unknown."
 msgstr "A kiválasztott webhely tanúsítványa ismeretlen."
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_MEDIAWIKI_TITLE
-msgid  "MediaWiki"
+msgid "MediaWiki"
 msgstr "MediaWiki"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_ACCOUNTLINE
-msgid  "Account"
+msgid "Account"
 msgstr "Fiók"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_WIKILINE
-msgid  "MediaWiki Server"
+msgid "MediaWiki Server"
 msgstr "MediaWiki-kiszolgáló"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_SAVEBOX
-msgid  "~Save password"
+msgid "~Save password"
 msgstr "~Jelszó mentése"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_MEDIAWIKI_EXTENSION_STRING
-msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_WIKIPAGEEXISTS_LABEL1
-msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
-msgstr "Már létezik „$ARG1” című wikicikk.&#13;&#13;Szeretné a létező cikket az aktuális cikkel lecserélni?&#13;&#13;"
+msgid "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"Már létezik „$ARG1” című wikicikk.&#13;&#13;Szeretné a létező cikket az "
+"aktuális cikkel lecserélni?&#13;&#13;"
 
 #: ../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OPTIONSDIALOG.NODES.INTERNET.LEAVES.COM.SUN.STAR.WIKI.OPTIONS.LABEL
-msgid  "MediaWiki"
+msgid "MediaWiki"
 msgstr "MediaWiki"

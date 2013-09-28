@@ -1,204 +1,249 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "உபரிகள்"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "உபரி உதவியை சேர் (~O)"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "அனைத்தும்"
 
+#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
+msgid "~Update"
+msgstr ""
+
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "மூடு & பின் திரும்பு (~C)"
 
+#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
+msgid "Visible ~Buttons"
+msgstr ""
+
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "கருவிப்பட்டையைத் தனிப்பயனாக்கு (~C)..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "கருவிப்பட்டையைப் பொருந்து (~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "அனைத்து கருவிப்பட்டைகளையும் பொருத்து (~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "கருவிப்பட்டை இடத்தைப் பூட்டு (~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "கருவிப்பட்டையை மூடு (~T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "நகலை இவ்வாறு சேமி (~a)..."
 
+#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
+msgid "No Documents"
+msgstr ""
+
 #: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
-msgid  "Clear List"
+msgid "Clear List"
 msgstr "பட்டியலை துடை"
 
 #: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
-msgid  "Clears the list with the most recently opened files. This action can not be undone."
-msgstr "மிக சமீபத்தில் திறந்த கோப்புகள் பட்டியலை நிறப்புகின்றன. இரு மீண்டும் பழைய நிலைக்கு மாற்ற முடியாது"
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+"மிக சமீபத்தில் திறந்த கோப்புகள் பட்டியலை நிறப்புகின்றன. இரு மீண்டும் பழைய "
+"நிலைக்கு மாற்ற முடியாது"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "கூடுதல் வசதிகள் %num%"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "உரிம ஒப்பந்தம்"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "நிறுவலைத் தொடர இந்த படிகளைப் பின் தொடரவும்:"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "முழு உரிம ஒப்பந்தத்தையும் பார்க்கவும். அதற்கு உதவ உருள் பட்டை அல்லது இந்த உரையாடலுள்ள '%PAGEDOWN' பொத்தானைப் பயன்படுத்தவும்."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"முழு உரிம ஒப்பந்தத்தையும் பார்க்கவும். அதற்கு உதவ உருள் பட்டை அல்லது இந்த "
+"உரையாடலுள்ள '%PAGEDOWN' பொத்தானைப் பயன்படுத்தவும்."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "கீழே உருட்டு"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "உரிம ஒப்பந்தத்தை ஏற்றுக்கொள்."
 
+#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
+msgid "~Accept"
+msgstr ""
+
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "மறுத்திடு"
 
+#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
+msgid "Retry"
+msgstr ""
+
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "பின்வருமிடத்தில் போதுமான வட்டு இடமில்லாததால் முக்கிய உள் தகவல்களை %PRODUCTNAME ஆல் சேமிக்க இயலவில்லை:\n%PATH\n\nஅவ்விடத்தில் அதிகமான வட்டு இடமளிக்காமல் %PRODUCTNAME ஐ உங்களால் பயன்படுத்த முடியாது.\n\nஆகவே, அத்தரவுகளைச் சேமிக்க அதிகமாக வட்டு இடத்தை அங்கு ஒதுக்கியபின் 'மறு முயற்சி' பொத்தானை அழுத்தவும்.\n\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"பின்வருமிடத்தில் போதுமான வட்டு இடமில்லாததால் முக்கிய உள் தகவல்களை %"
+"PRODUCTNAME ஆல் சேமிக்க இயலவில்லை:\n"
+"%PATH\n"
+"\n"
+"அவ்விடத்தில் அதிகமான வட்டு இடமளிக்காமல் %PRODUCTNAME ஐ உங்களால் பயன்படுத்த "
+"முடியாது.\n"
+"\n"
+"ஆகவே, அத்தரவுகளைச் சேமிக்க அதிகமாக வட்டு இடத்தை அங்கு ஒதுக்கியபின் 'மறு "
+"முயற்சி' பொத்தானை அழுத்தவும்.\n"
+"\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "மறு அமை (~R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "பயனர் இடைமுக கட்டமை தரவை ஏற்றும் போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு இப்போது நிறுத்தப்படும்.\nபயன்பாட்டை மீண்டும் நிறுவவும்."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"பயனர் இடைமுக கட்டமை தரவை ஏற்றும் போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு "
+"இப்போது நிறுத்தப்படும்.\n"
+"பயன்பாட்டை மீண்டும் நிறுவவும்."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "பயனர் இடைமுக  கட்டமை தரவை ஏற்றும் போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு இப்போது நிறுத்தப்படும்.\nமுதலில் உங்கள் பயனர் விவரங்களை பயன்பாட்டிற்காக அகற்றுங்கள்."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"பயனர் இடைமுக  கட்டமை தரவை ஏற்றும் போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு "
+"இப்போது நிறுத்தப்படும்.\n"
+"முதலில் உங்கள் பயனர் விவரங்களை பயன்பாட்டிற்காக அகற்றுங்கள்."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "பயனர் இடைமுக கட்டமைப்பு தரவை ஏற்றும்போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு இப்போது நிறுத்தப்படும்.\nமுதலில் உங்கள் பயனர் விவரங்களை அகற்றுங்கள் அல்லது பயன்பாட்டை மீண்டும் நிறுவுங்கள்."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"பயனர் இடைமுக கட்டமைப்பு தரவை ஏற்றும்போது ஒரு பிழை ஏற்பட்டது. ஆதலால் பயன்பாடு "
+"இப்போது நிறுத்தப்படும்.\n"
+"முதலில் உங்கள் பயனர் விவரங்களை அகற்றுங்கள் அல்லது பயன்பாட்டை மீண்டும் "
+"நிறுவுங்கள்."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "தலைப்பில்லாதது"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "பல மொழிகள்"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "ஒன்றுமில்லை (சொல்திருத்த சரிபார்க்க வேண்டாம்)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr "இயல்பு மொழிக்கு மாற்றப்பட்டுவிட்டது"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "இன்னும்..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "தேர்ந்தெடுப்புக்கு மொழியை அமை"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "பத்திக்கு மொழியை அமை"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "அனைத்து உரைக்கும் மொழியை அமை"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr "இதற்கு வரவேற்கிறோம்"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr "ஒரு புதிய ஆவணத்தை உருவாக்கு"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr "மாதிரியுருகள் (~T)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr "திறந்த..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr "%PRODUCTNAME உடன் புதிய அம்சங்களைச் சேர்"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr "உங்கள் %PRODUCTNAME-ஐ பதிவுசெய்"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr "%PRODUCTNAME தொடர்பான மேலும் விவரங்களைப் பெறவும்"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr "%PRODUCTNAME-க்கான அதிக மாதிரியுருகளைப் பெறவும்"

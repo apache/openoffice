@@ -1,3461 +1,3964 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: euro/euro.src#STEP_ZERO.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Скасувати"
 
 #: euro/euro.src#STEP_ZERO___1.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Довідка"
 
 #: euro/euro.src#STEP_ZERO___2.STRING.TEXT
-msgid  "<<~Back"
+msgid "<<~Back"
 msgstr "<<~Назад"
 
 #: euro/euro.src#STEP_ZERO___3.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "~Перетворити"
 
 #: euro/euro.src#STEP_ZERO___4.STRING.TEXT
-msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr "Примітка: суми валют, які пов'язані із зовнішніми посиланнями, а також коефіцієнти обміну валюти у формулах комірок не перетворюються."
+msgid "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr ""
+"Примітка: суми валют, які пов'язані із зовнішніми посиланнями, а також "
+"коефіцієнти обміну валюти у формулах комірок не перетворюються."
 
 #: euro/euro.src#STEP_ZERO___5.STRING.TEXT
-msgid  "First, unprotect all sheets."
+msgid "First, unprotect all sheets."
 msgstr "Спочатку, зніміть захист з усіх аркушів."
 
 #: euro/euro.src#STEP_ZERO___6.STRING.TEXT
-msgid  "Currencies:"
+msgid "Currencies:"
 msgstr "Валюта:"
 
 #: euro/euro.src#STEP_ZERO___7.STRING.TEXT
-msgid  "C~ontinue>>"
+msgid "C~ontinue>>"
 msgstr "~Далі>>"
 
 #: euro/euro.src#STEP_ZERO___8.STRING.TEXT
-msgid  "C~lose"
+msgid "C~lose"
 msgstr "~Закрити"
 
 #: euro/euro.src#STEP_CONVERTER.STRING.TEXT
-msgid  "~Entire document"
+msgid "~Entire document"
 msgstr "~Весь документ"
 
 #: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "Виділення"
 
 #: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
-msgid  "Cell S~tyles"
+msgid "Cell S~tyles"
 msgstr "Стилі ~комірки"
 
 #: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
-msgid  "Currency cells in the current ~sheet"
+msgid "Currency cells in the current ~sheet"
 msgstr "Комірки валюти в поточному ~аркуші"
 
 #: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
-msgid  "Currency cells in the entire ~document"
+msgid "Currency cells in the entire ~document"
 msgstr "Комірки валюти в усьому ~документі"
 
 #: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
-msgid  "~Selected range"
+msgid "~Selected range"
 msgstr "Виді~лений діапазон"
 
 #: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
-msgid  "Select Cell Styles"
+msgid "Select Cell Styles"
 msgstr "Вибір стилів комірок"
 
 #: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
-msgid  "Select currency cells"
+msgid "Select currency cells"
 msgstr "Виділити комірки валюти"
 
 #: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
-msgid  "Currency ranges:"
+msgid "Currency ranges:"
 msgstr "Курс валюти:"
 
 #: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
-msgid  "Templates:"
+msgid "Templates:"
 msgstr "Шаблони:"
 
 #: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
-msgid  "Extent"
+msgid "Extent"
 msgstr "~Обсяг"
 
 #: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
-msgid  "~Single %PRODUCTNAME Calc document"
+msgid "~Single %PRODUCTNAME Calc document"
 msgstr "~Один документ %PRODUCTNAME Calc"
 
 #: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
-msgid  "Complete ~directory"
+msgid "Complete ~directory"
 msgstr "Весь ~каталог"
 
 #: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
-msgid  "Source Document:"
+msgid "Source Document:"
 msgstr "Первинний документ:"
 
 #: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
-msgid  "Source directory:"
+msgid "Source directory:"
 msgstr "Первинний каталог:"
 
 #: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
-msgid  "~Including subfolders"
+msgid "~Including subfolders"
 msgstr "~Включно з підкаталогами"
 
 #: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
-msgid  "Target directory:"
+msgid "Target directory:"
 msgstr "Цільовий каталог:"
 
 #: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
-msgid  "Temporarily unprotect sheet without query"
+msgid "Temporarily unprotect sheet without query"
 msgstr "Тимчасово зняти захист з аркушу без запиту"
 
 #: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
-msgid  "Also convert fields and tables in text documents"
+msgid "Also convert fields and tables in text documents"
 msgstr "Перетворювати поля та таблиці текстового документу"
 
 #: euro/euro.src#STATUSLINE.STRING.TEXT
-msgid  "Conversion status: "
+msgid "Conversion status: "
 msgstr "Статус перетворення:"
 
 #: euro/euro.src#STATUSLINE___1.STRING.TEXT
-msgid  "Conversion status of the cell templates:"
+msgid "Conversion status of the cell templates:"
 msgstr "Статус перетворення стилів комірок:"
 
 #: euro/euro.src#STATUSLINE___2.STRING.TEXT
-msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgid "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
 msgstr "Запис перетворюваний областей: аркуш %1Number%1 з %2TotPageCount%2"
 
 #: euro/euro.src#STATUSLINE___3.STRING.TEXT
-msgid  "Entry of the ranges to be converted..."
+msgid "Entry of the ranges to be converted..."
 msgstr "Запис перетворюваних областей..."
 
 #: euro/euro.src#STATUSLINE___4.STRING.TEXT
-msgid  "Sheet protection for each sheet will be restored..."
+msgid "Sheet protection for each sheet will be restored..."
 msgstr "Відновлюється захист кожного аркушу..."
 
 #: euro/euro.src#STATUSLINE___5.STRING.TEXT
-msgid  "Conversion of the currency units in the cell templates..."
+msgid "Conversion of the currency units in the cell templates..."
 msgstr "Перетворення грошових одиниць в шаблонах комірок..."
 
 #: euro/euro.src#MESSAGES.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Завершити"
 
 #: euro/euro.src#MESSAGES___1.STRING.TEXT
-msgid  "Select directory"
+msgid "Select directory"
 msgstr "Виберіть каталог"
 
 #: euro/euro.src#MESSAGES___2.STRING.TEXT
-msgid  "Select file"
+msgid "Select file"
 msgstr "Виберіть файл"
 
 #: euro/euro.src#MESSAGES___3.STRING.TEXT
-msgid  "Select target directory"
+msgid "Select target directory"
 msgstr "Виберіть цільовий каталог"
 
 #: euro/euro.src#MESSAGES___4.STRING.TEXT
-msgid  "non-existant"
+msgid "non-existant"
 msgstr "не існує"
 
 #: euro/euro.src#MESSAGES___5.STRING.TEXT
-msgid  "Euro Converter"
+msgid "Euro Converter"
 msgstr "Конвертор Євро"
 
 #: euro/euro.src#MESSAGES___6.STRING.TEXT
-msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgid "Should protected spreadsheets be temporarily unprotected?"
 msgstr "Тимчасово зняти захист з усіх аркушів?"
 
 #: euro/euro.src#MESSAGES___7.STRING.TEXT
-msgid  "Enter the password to unprotect the table %1TableName%1"
+msgid "Enter the password to unprotect the table %1TableName%1"
 msgstr "Введіть пароль щоб зняти захист аркуш %1TableName%1"
 
 #: euro/euro.src#MESSAGES___8.STRING.TEXT
-msgid  "Wrong Password!"
+msgid "Wrong Password!"
 msgstr "Неправильний пароль!"
 
 #: euro/euro.src#MESSAGES___9.STRING.TEXT
-msgid  "Protected Sheet"
+msgid "Protected Sheet"
 msgstr "Захищений аркуш"
 
 #: euro/euro.src#MESSAGES___10.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "Попередження!"
 
 #: euro/euro.src#MESSAGES___11.STRING.TEXT
-msgid  "Protection for the sheets will not be removed."
+msgid "Protection for the sheets will not be removed."
 msgstr "Захист аркушів не буде знято."
 
 #: euro/euro.src#MESSAGES___12.STRING.TEXT
-msgid  "Sheet cannot be unprotected"
+msgid "Sheet cannot be unprotected"
 msgstr "Неможливо зняти захист з аркушу"
 
 #: euro/euro.src#MESSAGES___13.STRING.TEXT
-msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr "Асистент не може змінити цей документ, оскільки не можна змінювати формат комірок у документах із захищеними аркушами."
+msgid "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr ""
+"Асистент не може змінити цей документ, оскільки не можна змінювати формат "
+"комірок у документах із захищеними аркушами."
 
 #: euro/euro.src#MESSAGES___14.STRING.TEXT
-msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr "Зверніть увагу, що у іншому разі конвертер Євро не зможе змінити цей документ."
+msgid "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr ""
+"Зверніть увагу, що у іншому разі конвертер Євро не зможе змінити цей "
+"документ."
 
 #: euro/euro.src#MESSAGES___15.STRING.TEXT
-msgid  "Please choose a currency to be converted first!"
+msgid "Please choose a currency to be converted first!"
 msgstr "Спочатку виберіть валюту, яка треба перетворити!"
 
 #: euro/euro.src#MESSAGES___16.STRING.TEXT
-msgid  "Password:"
+msgid "Password:"
 msgstr "Пароль:"
 
 #: euro/euro.src#MESSAGES___17.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Гаразд"
 
 #: euro/euro.src#MESSAGES___18.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Скасувати"
 
 #: euro/euro.src#MESSAGES___19.STRING.TEXT
-msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
 msgstr "Виберіть документ %PRODUCTNAME Calc для редагування!"
 
 #: euro/euro.src#MESSAGES___20.STRING.TEXT
-msgid  "'<1>' is not a directory!"
+msgid "'<1>' is not a directory!"
 msgstr "'<1>' не є каталогом!"
 
 #: euro/euro.src#MESSAGES___21.STRING.TEXT
-msgid  "Document is read-only!"
+msgid "Document is read-only!"
 msgstr "Документ лише для читання!"
 
 #: euro/euro.src#MESSAGES___22.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Файл '< 1>' вже існує.<СR>Замінити?"
 
 #: euro/euro.src#MESSAGES___23.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
-msgstr "Ви дійсно хочете перервати процес перетворення?"
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Ви дійсно хочете зупинити перетворення у цьому місці?"
 
 #: euro/euro.src#MESSAGES___24.STRING.TEXT
-msgid  "Cancel Wizard"
-msgstr "Скасувати запуск помічника"
+msgid "Cancel Wizard"
+msgstr "Скасувати Помічника"
 
 #: euro/euro.src#CURRENCIES.STRING.TEXT
-msgid  "Portuguese Escudo"
+msgid "Portuguese Escudo"
 msgstr "Португальський ескудо"
 
 #: euro/euro.src#CURRENCIES___1.STRING.TEXT
-msgid  "Dutch Guilder"
+msgid "Dutch Guilder"
 msgstr "Голландський гульден"
 
 #: euro/euro.src#CURRENCIES___2.STRING.TEXT
-msgid  "French Franc"
+msgid "French Franc"
 msgstr "Французький франк"
 
 #: euro/euro.src#CURRENCIES___3.STRING.TEXT
-msgid  "Spanish Peseta"
+msgid "Spanish Peseta"
 msgstr "Іспанська песета"
 
 #: euro/euro.src#CURRENCIES___4.STRING.TEXT
-msgid  "Italian Lira"
+msgid "Italian Lira"
 msgstr "Італійська ліра"
 
 #: euro/euro.src#CURRENCIES___5.STRING.TEXT
-msgid  "German Mark"
+msgid "German Mark"
 msgstr "Німецька марка"
 
 #: euro/euro.src#CURRENCIES___6.STRING.TEXT
-msgid  "Belgian Franc"
+msgid "Belgian Franc"
 msgstr "Бельгійський франк"
 
 #: euro/euro.src#CURRENCIES___7.STRING.TEXT
-msgid  "Irish Punt"
+msgid "Irish Punt"
 msgstr "Ірландський фунт"
 
 #: euro/euro.src#CURRENCIES___8.STRING.TEXT
-msgid  "Luxembourg Franc"
+msgid "Luxembourg Franc"
 msgstr "Люксембурзький франк"
 
 #: euro/euro.src#CURRENCIES___9.STRING.TEXT
-msgid  "Austrian Schilling"
+msgid "Austrian Schilling"
 msgstr "Австрійський шилінг"
 
 #: euro/euro.src#CURRENCIES___10.STRING.TEXT
-msgid  "Finnish Mark"
+msgid "Finnish Mark"
 msgstr "Фінська марка"
 
 #: euro/euro.src#CURRENCIES___11.STRING.TEXT
-msgid  "Greek Drachma"
+msgid "Greek Drachma"
 msgstr "Грецька драхма"
 
 #: euro/euro.src#CURRENCIES___12.STRING.TEXT
-msgid  "Slovenian Tolar"
+msgid "Slovenian Tolar"
 msgstr "Словенський талер"
 
 #: euro/euro.src#CURRENCIES___13.STRING.TEXT
-msgid  "Cypriot Pound"
+msgid "Cypriot Pound"
 msgstr ""
 
 #: euro/euro.src#CURRENCIES___14.STRING.TEXT
-msgid  "Maltese Lira"
+msgid "Maltese Lira"
 msgstr ""
 
 #: euro/euro.src#CURRENCIES___15.STRING.TEXT
-msgid  "Slovak Koruna"
+msgid "Slovak Koruna"
 msgstr ""
 
 #: euro/euro.src#CURRENCIES___16.STRING.TEXT
-msgid  "The currency set for the document is not a European currency!"
+msgid "The currency set for the document is not a European currency!"
 msgstr "Встановлена для цього документу валюта не є Європейською валютою."
 
 #: euro/euro.src#CURRENCIES___17.STRING.TEXT
-msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr "Мова, встановлена для вашої вашої операційної системи є мовою країни, що не входить до Європейського Союзу (ЄС)."
+msgid "The language set for your operating system is not a language of the European Monetary Union."
+msgstr ""
+"Мова, встановлена для вашої вашої операційної системи є мовою країни, що не "
+"входить до Європейського Союзу (ЄС)."
 
 #: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Виконання"
 
 #: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
-msgid  "Retrieving the relevant documents..."
+msgid "Retrieving the relevant documents..."
 msgstr "Отримання релевантних документів..."
 
 #: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
-msgid  "Converting the documents..."
+msgid "Converting the documents..."
 msgstr "Перетворення документів..."
 
 #: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
-msgid  "Settings:"
+msgid "Settings:"
 msgstr "Параметри:"
 
 #: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
-msgid  "Sheet is always unprotected"
+msgid "Sheet is always unprotected"
 msgstr "Аркуш завжди незахищений"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
-msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr "Неможливо створити каталог '%1'.<BR>Можливо недостатньо вільного місця на жорсткому диску."
+msgid "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr ""
+"Неможливо створити каталог '%1'.<BR>Можливо недостатньо вільного місця на "
+"жорсткому диску."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
-msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr "Текстовий документ не може бути створений.<BR>Перевірте, чи встановлений компонент 'PRODUCTNAME Writer'."
+msgid "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr ""
+"Текстовий документ не може бути створений.<BR>Перевірте, чи встановлений "
+"компонент 'PRODUCTNAME Writer'."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
-msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr "Електронна таблиця неможливо створити.<BR>Перевірте, чи встановлений компонент 'PRODUCTNAME Calc'."
+msgid "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr ""
+"Електронна таблиця неможливо створити.<BR>Перевірте, чи встановлений "
+"компонент 'PRODUCTNAME Calc'."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
-msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr "Презентація не може бути створена.<BR>Перевірте, чи встановлений компонент 'PRODUCTNAME Impress'."
+msgid "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr ""
+"Презентація не може бути створена.<BR>Перевірте, чи встановлений компонент "
+"'PRODUCTNAME Impress'."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
-msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr "Малюнок не може бути створений.<BR>Перевірте, чи встановлений компонент 'PRODUCTNAME Draw'."
+msgid "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr ""
+"Малюнок не може бути створений.<BR>Перевірте, чи встановлений компонент "
+"'PRODUCTNAME Draw'."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
-msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr "Формула не може бути створена.<BR>Перевірте, чи встановлений компонент 'PRODUCTNAME Math'."
+msgid "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr ""
+"Формула не може бути створена.<BR>Перевірте, чи встановлений компонент "
+"'PRODUCTNAME Math'."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
-msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr "Необхідні файли не знайдено.<BR>Запустіть встановлення %PRODUCTNAME та виберіть «Відновити»."
+msgid "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr ""
+"Необхідні файли не знайдено.<BR>Запустіть встановлення %PRODUCTNAME та "
+"виберіть «Відновити»."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
-msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgid "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
 msgstr "Файл '<PATH>' вже існує.<BR><BR>Перезаписати існуючий файл?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Так"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
-msgid  "Yes to All"
+msgid "Yes to All"
 msgstr "Так, для усіх"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "Ні"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Скасувати"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Завершити"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< ~Назад"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
-msgid  "~Next >"
+msgid "~Next >"
 msgstr "Да~лі"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Довідка"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "Кроки"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Закрити"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Гаразд"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
-msgid  "The file already exists. Do you want to overwrite it?"
+msgid "The file already exists. Do you want to overwrite it?"
 msgstr "Файл вже існує. Замінити його?"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
-msgid  "Template created via <wizard_name> on <current_date>."
+msgid "Template created via <wizard_name> on <current_date>."
 msgstr "Шаблон створений помічником <wizard_name> у <current_date>."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Не вдається запустити шаблон, оскільки не вдається знайти деякі файли.\nВ меню Сервіс - Параметри - %PRODUCTNAME - Шляхи натисніть кнопку \"Типово\", щоб скинути параметри.\nПотім, запустіть помічника ще раз."
+msgid "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr ""
+"Не вдається запустити шаблон, оскільки не вдається знайти деякі файли.\n"
+"В меню Сервіс - Параметри - %PRODUCTNAME - Шляхи натисніть кнопку \"Типово\", "
+"щоб скинути параметри.\n"
+"Потім, запустіть помічника ще раз."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
-msgid  "C~reate"
+msgid "C~reate"
 msgstr "С~творити"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Скасувати"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Назад"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "Да~лі >>"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr "~База даних"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
-msgid  "~Table name"
+msgid "~Table name"
 msgstr "~Назва таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
-msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgid "An error occurred while running the wizard. The wizard will be terminated."
 msgstr "Помилка у роботі помічника. Помічник буде закритий."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
-msgid  "No connection to the database could be established."
+msgid "No connection to the database could be established."
 msgstr "Не вдається підключитися до бази даних."
 
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___20.STRING.TEXT
+msgid "~Help"
+msgstr "~Довідка"
+
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
-msgid  "~Stop"
+msgid "~Stop"
 msgstr "З~упинити"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
-msgid  "The document could not be saved."
+msgid "The document could not be saved."
 msgstr "Не вдається зберегти документ."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
-msgid  "Exiting the wizard"
+msgid "Exiting the wizard"
 msgstr "Вихід з помічника"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
-msgid  "Connecting to data source..."
+msgid "Connecting to data source..."
 msgstr "З'єднання з джерелом даних..."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
-msgid  "The connection to the data source could not be established."
+msgid "The connection to the data source could not be established."
 msgstr "Підключення до джерела даних не може бути встановлено."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
-msgid  "The file path entered is not valid."
+msgid "The file path entered is not valid."
 msgstr "Введений шлях до файлу є неправильним."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
-msgid  "Please select a data source"
+msgid "Please select a data source"
 msgstr "Виберіть джерело даних"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
-msgid  "Please select a table or query"
+msgid "Please select a table or query"
 msgstr "Виберіть таблицю чи запит"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
-msgid  "Add field"
+msgid "Add field"
 msgstr "Додати поле"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
-msgid  "Remove field"
+msgid "Remove field"
 msgstr "Видалити поле"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
-msgid  "Add all fields"
+msgid "Add all fields"
 msgstr "Додати всі поля"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
-msgid  "Remove all fields"
+msgid "Remove all fields"
 msgstr "Видалити всі поля"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
-msgid  "Move field up"
+msgid "Move field up"
 msgstr "Перемістити поле вгору"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
-msgid  "Move field down"
+msgid "Move field down"
 msgstr "Перемістити поле вниз"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
-msgid  "The field names from '%NAME' could not be retrieved."
+msgid "The field names from '%NAME' could not be retrieved."
 msgstr "Назви полів неможливо отримати з '%NAME'."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
-msgid  "Form Wizard"
+msgid "Form Wizard"
 msgstr "Помічник форм"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
-msgid  "Fields in ~the form"
+msgid "Fields in ~the form"
 msgstr "Поля у ~формі"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Двійкові поля завжди будуть перелічені та їх можна виділити у списку.\nВони відображатимуться як зображення, якщо це можливо."
+msgid "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr ""
+"Двійкові поля завжди будуть перелічені та їх можна виділити у списку.\n"
+"Вони відображатимуться як зображення, якщо це можливо."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Форма є вкладеною у іншу форму.\nВикористовуйте субформу для відображення даних з таблиць чи запитів типу «один до багатьох»."
+msgid "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
+"Форма є вкладеною у іншу форму.\n"
+"Використовуйте субформу для відображення даних з таблиць чи запитів типу "
+"«один до багатьох»."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
-msgid  "~Add Subform"
+msgid "~Add Subform"
 msgstr "~Додати субформу"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
-msgid  "~Subform based on existing relation"
+msgid "~Subform based on existing relation"
 msgstr "~Субформа базується на існуючому зв'язку"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
-msgid  "Tables or queries"
+msgid "Tables or queries"
 msgstr "Таблиці або запити"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
-msgid  "Subform based on ~manual selection of fields"
+msgid "Subform based on ~manual selection of fields"
 msgstr "Субформа, базується на ~вибраних полях"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
-msgid  "~Which relation do you want to add?"
+msgid "~Which relation do you want to add?"
 msgstr "~Яке відношення ви хочете додати?"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
-msgid  "Fields in the ~subform"
+msgid "Fields in the ~subform"
 msgstr "Поля ~субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
-msgid  "~Available fields"
+msgid "~Available fields"
 msgstr "~Існуючі поля"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
-msgid  "Fields in form"
+msgid "Fields in form"
 msgstr "Поля у ~формі"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Об'єднання «<FIELDNAME1>» та «<FIELDNAME2>» було вибрано двічі.\nОб'єднання допустиме лише один раз."
+msgid "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr ""
+"Об'єднання «<FIELDNAME1>» та «<FIELDNAME2>» було вибрано двічі.\n"
+"Об'єднання допустиме лише один раз."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
-msgid  "~First joined subform field"
+msgid "~First joined subform field"
 msgstr "~Перше об'єднане поле субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
-msgid  "~Second joined subform field"
+msgid "~Second joined subform field"
 msgstr "~Друге об'єднане поле субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
-msgid  "~Third joined subform field"
+msgid "~Third joined subform field"
 msgstr "~Третє об'єднане поле субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
-msgid  "~Fourth joined subform field"
+msgid "~Fourth joined subform field"
 msgstr "~Четверте об'єднане поле субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
-msgid  "F~irst joined main form field"
+msgid "F~irst joined main form field"
 msgstr "П~ерше об'єднане головне поле форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
-msgid  "S~econd joined main form field"
+msgid "S~econd joined main form field"
 msgstr "Д~руге об'єднане головне поле форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
-msgid  "T~hird joined main form field"
+msgid "T~hird joined main form field"
 msgstr "~Третє об'єднане головне поле форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
-msgid  "F~ourth joined main form field"
+msgid "F~ourth joined main form field"
 msgstr "~Четверте об'єднане головне поле форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
-msgid  "Field border"
+msgid "Field border"
 msgstr "Рамка поля"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
-msgid  "No border"
+msgid "No border"
 msgstr "Без рамки"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr "Тривимірний вигляд"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
-msgid  "Flat"
+msgid "Flat"
 msgstr "Плаский"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
-msgid  "Label placement"
+msgid "Label placement"
 msgstr "Розташування підписи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "Вирівняти ліворуч"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "Вирівняти праворуч"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
-msgid  "Arrangement of DB fields"
+msgid "Arrangement of DB fields"
 msgstr "Упорядкування полів БД"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
-msgid  "Columnar - Labels Left"
+msgid "Columnar - Labels Left"
 msgstr "Стовпчики - підписи ліворуч"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
-msgid  "Columnar - Labels on Top"
+msgid "Columnar - Labels on Top"
 msgstr "Стовпчики - підписи зверху"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
-msgid  "In Blocks - Labels Left"
+msgid "In Blocks - Labels Left"
 msgstr "Блоки - підписи ліворуч"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
-msgid  "In Blocks - Labels Above"
+msgid "In Blocks - Labels Above"
 msgstr "Блоки - підписи згори"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
-msgid  "As Data Sheet"
+msgid "As Data Sheet"
 msgstr "Як аркуш даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
-msgid  "Arrangement of the main form"
+msgid "Arrangement of the main form"
 msgstr "Розташування головної форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
-msgid  "Arrangement of the subform"
+msgid "Arrangement of the subform"
 msgstr "Розташування субформ"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
-msgid  "The form is to be ~used for entering new data only."
+msgid "The form is to be ~used for entering new data only."
 msgstr "Форма ~використовується лише для вводу нових даних."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
-msgid  "Existing data will not be displayed "
+msgid "Existing data will not be displayed "
 msgstr "Відповідні дані не будуть відображені"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
-msgid  "T~he form is to display all data"
+msgid "T~he form is to display all data"
 msgstr "~Форма для відображення усіх даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
-msgid  "Do not allow ~modification of existing data"
+msgid "Do not allow ~modification of existing data"
 msgstr "Завершити ~зміну існуючих даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
-msgid  "Do not allow ~deletion of existing data"
+msgid "Do not allow ~deletion of existing data"
 msgstr "Не дозволяти в~идалення існуючих даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
-msgid  "Do not allow ~addition of new data"
+msgid "Do not allow ~addition of new data"
 msgstr "Не дозволяти ~додавання нових даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
-msgid  "Name of ~the form"
+msgid "Name of ~the form"
 msgstr "Назва ~форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
-msgid  "How do you want to proceed after creating the form?"
+msgid "How do you want to proceed after creating the form?"
 msgstr "Ігнорувати після заповнення форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
-msgid  "~Work with the form"
+msgid "~Work with the form"
 msgstr "~Робота з формою"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
-msgid  "~Modify the form"
+msgid "~Modify the form"
 msgstr "~Редагувати форму"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
-msgid  "~Page Styles"
+msgid "~Page Styles"
 msgstr "~Стилі сторінок"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
-msgid  "Field selection"
+msgid "Field selection"
 msgstr "Вибір поля"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
-msgid  "Set up a subform"
+msgid "Set up a subform"
 msgstr "Встановлення субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
-msgid  "Add subform fields"
+msgid "Add subform fields"
 msgstr "Додати поля субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
-msgid  "Get joined fields"
+msgid "Get joined fields"
 msgstr "Отримати об'єднані поля"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
-msgid  "Arrange controls"
+msgid "Arrange controls"
 msgstr "Розташувати елементи керування"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
-msgid  "Set data entry"
+msgid "Set data entry"
 msgstr "Встановити джерела даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
-msgid  "Apply styles"
+msgid "Apply styles"
 msgstr "Застосувати стилі"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
-msgid  "Set name"
+msgid "Set name"
 msgstr "Встановити назву"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
-msgid  "(Date)"
+msgid "(Date)"
 msgstr "(Дата)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
-msgid  "(Time)"
+msgid "(Time)"
 msgstr "(Час)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
-msgid  "Select the fields of your form"
+msgid "Select the fields of your form"
 msgstr "Виберіть поля форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
-msgid  "Decide if you want to set up a subform"
+msgid "Decide if you want to set up a subform"
 msgstr "Вирішіть, чи бажаєте встановити субформу"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
-msgid  "Select the fields of your subform"
+msgid "Select the fields of your subform"
 msgstr "Виберіть поля вашої субформи"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
-msgid  "Select the joins between your forms"
+msgid "Select the joins between your forms"
 msgstr "Виберіть об'єднання між вашими формами"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
-msgid  "Arrange the controls on your form"
+msgid "Arrange the controls on your form"
 msgstr "Розташуйте елементи керування на Вашій формі"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
-msgid  "Select the data entry mode"
+msgid "Select the data entry mode"
 msgstr "Вибір режиму джерела даних"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
-msgid  "Apply the style of your form"
+msgid "Apply the style of your form"
 msgstr "Застосувати стиль до форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
-msgid  "Set the name of the form"
+msgid "Set the name of the form"
 msgstr "Вкажіть назву форми"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Форма з назвою \"%FORMNAME\" вже існує.\nВиберіть іншу назву."
+msgid "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr ""
+"Форма з назвою \"%FORMNAME\" вже існує.\n"
+"Виберіть іншу назву."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
-msgid  "Query Wizard"
+msgid "Query Wizard"
 msgstr "Помічник запитів"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr "Запит"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___2.STRING.TEXT
+msgid "Query Wizard"
+msgstr "Помічник запитів"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
-msgid  "~Tables"
+msgid "~Tables"
 msgstr "~Таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
-msgid  "A~vailable fields"
+msgid "A~vailable fields"
 msgstr "~Доступні поля"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
-msgid  "Name ~of the query"
+msgid "Name ~of the query"
 msgstr "~Назва запиту"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
-msgid  "Display ~Query"
+msgid "Display ~Query"
 msgstr "Показати ~запит"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
-msgid  "~Modify Query"
+msgid "~Modify Query"
 msgstr "~Змінити запит"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
-msgid  "~How do you want to proceed after creating the query?"
+msgid "~How do you want to proceed after creating the query?"
 msgstr "~Дії після створення запиту."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
-msgid  "Match ~all of the following"
+msgid "Match ~all of the following"
 msgstr "Відповідність ~усім з наступних"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
-msgid  "~Match any of the following"
+msgid "~Match any of the following"
 msgstr "~Відповідність любому з наступних"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
-msgid  "~Detailed query (Shows all records of the query.)"
+msgid "~Detailed query (Shows all records of the query.)"
 msgstr "~Докладний запит (показувати всі записи запиту)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
-msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgid "~Summary query (Shows only results of aggregate functions.)"
 msgstr "~Підсумковий запит (показувати лише записи агрегатних функцій)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
-msgid  "Aggregate functions"
+msgid "Aggregate functions"
 msgstr "Агрегатні функції"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
-msgid  "Fields"
+msgid "Fields"
 msgstr "Поля"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
-msgid  "~Group by"
+msgid "~Group by"
 msgstr "~Групувати за"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
-msgid  "Field"
+msgid "Field"
 msgstr "Поле"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
-msgid  "Alias"
+msgid "Alias"
 msgstr "Псевдонім"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
-msgid  "Table: "
+msgid "Table: "
 msgstr "Таблиця:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
-msgid  "Query: "
+msgid "Query: "
 msgstr "Запит:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
-msgid  "Condition"
+msgid "Condition"
 msgstr "Умова"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "Значення"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
-msgid  "is equal to"
+msgid "is equal to"
 msgstr "дорівнює"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
-msgid  "is not equal to"
+msgid "is not equal to"
 msgstr "не дорівнює"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
-msgid  "is smaller than"
+msgid "is smaller than"
 msgstr "менше, ніж"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
-msgid  "is greater than"
+msgid "is greater than"
 msgstr "більше, ніж"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
-msgid  "is equal or less than "
+msgid "is equal or less than "
 msgstr "менше або дорівнює"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
-msgid  "is equal or greater than"
+msgid "is equal or greater than"
 msgstr "більше або дорівнює"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
-msgid  "like"
+msgid "like"
 msgstr "як(like)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
-msgid  "not like"
+msgid "not like"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
-msgid  "is null"
+msgid "is null"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
-msgid  "is not null"
+msgid "is not null"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
-msgid  "true"
+msgid "true"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
-msgid  "false"
+msgid "false"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
-msgid  "and"
+msgid "and"
 msgstr "і"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
-msgid  "or"
+msgid "or"
 msgstr "або"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
-msgid  "get the sum of"
+msgid "get the sum of"
 msgstr "отримати суму"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
-msgid  "get the average of"
+msgid "get the average of"
 msgstr "отримати середнє"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
-msgid  "get the minimum of"
+msgid "get the minimum of"
 msgstr "отримати мінімум"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
-msgid  "get the maximum of"
+msgid "get the maximum of"
 msgstr "отримати максимум"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
-msgid  "get the sum of <FIELD>"
+msgid "get the sum of <FIELD>"
 msgstr "отримати суму <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
-msgid  "get the average of <FIELD>"
+msgid "get the average of <FIELD>"
 msgstr "отримати середнє <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
-msgid  "get the minimum of <FIELD>"
+msgid "get the minimum of <FIELD>"
 msgstr "отримати мінімум <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
-msgid  "get the maximum of <FIELD>"
+msgid "get the maximum of <FIELD>"
 msgstr "отримати максимум <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
-msgid  "(none)"
+msgid "(none)"
 msgstr "(нічого)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
-msgid  "Fie~lds in the Query: "
+msgid "Fie~lds in the Query: "
 msgstr "~Поля у запиті: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
-msgid  "Sorting order: "
+msgid "Sorting order: "
 msgstr "Порядок сортування: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
-msgid  "No sorting fields were assigned."
+msgid "No sorting fields were assigned."
 msgstr "Не вказано порядок сортування полів."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
-msgid  "Search conditions: "
+msgid "Search conditions: "
 msgstr "Умова пошуку: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
-msgid  "No conditions were assigned."
+msgid "No conditions were assigned."
 msgstr "Не призначено умову пошуку."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
-msgid  "Aggregate functions: "
+msgid "Aggregate functions: "
 msgstr "Агрегатні функції: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
-msgid  "No aggregate functions were assigned."
+msgid "No aggregate functions were assigned."
 msgstr "Не призначені агрегатні функції."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
-msgid  "Grouped by: "
+msgid "Grouped by: "
 msgstr "Групування по:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
-msgid  "No Groups were assigned."
+msgid "No Groups were assigned."
 msgstr "Не призначено групування."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
-msgid  "Grouping conditions: "
+msgid "Grouping conditions: "
 msgstr "Умови групування:"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
-msgid  "No grouping conditions were assigned."
+msgid "No grouping conditions were assigned."
 msgstr "Не вказано умову групування."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
-msgid  "Select the fields (columns) for your query"
+msgid "Select the fields (columns) for your query"
 msgstr "Виберіть поля (стовпчики) для запиту"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
-msgid  "Select the sorting order"
+msgid "Select the sorting order"
 msgstr "Виберіть порядок сортування"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
-msgid  "Select the search conditions"
+msgid "Select the search conditions"
 msgstr "Виберіть умови пошуку"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
-msgid  "Select the type of query"
+msgid "Select the type of query"
 msgstr "Виберіть тип запиту"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
-msgid  "Select the groups"
+msgid "Select the groups"
 msgstr "Вкажіть групи"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
-msgid  "Select the grouping conditions"
+msgid "Select the grouping conditions"
 msgstr "Виберіть умову групування"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
-msgid  "Assign aliases if desired"
+msgid "Assign aliases if desired"
 msgstr "Якщо бажаєте, вкажіть псевдонім (alias)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
-msgid  "Check the overview and decide how to proceed"
+msgid "Check the overview and decide how to proceed"
 msgstr "Перевірте опис та виберіть потрібну дію"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___80.STRING.TEXT
+msgid "Field selection"
+msgstr "Вибір поля"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
-msgid  "Sorting order"
+msgid "Sorting order"
 msgstr "Порядок сортування"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
-msgid  "Search conditions"
+msgid "Search conditions"
 msgstr "Умова пошуку"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
-msgid  "Detail or summary"
+msgid "Detail or summary"
 msgstr "Повна чи спільна"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
-msgid  "Grouping"
+msgid "Grouping"
 msgstr "Групування"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
-msgid  "Grouping conditions"
+msgid "Grouping conditions"
 msgstr "Умова групування"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
-msgid  "Aliases"
+msgid "Aliases"
 msgstr "Псевдоніми (aliases)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
-msgid  "Overview"
+msgid "Overview"
 msgstr "Огляд"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
-msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr "Поле, яке не назначено функцією агрегування, не може використовуватися у групуванні."
+msgid "A field that has not been assigned an aggregate function must be used in a group."
+msgstr ""
+"Поле, яке не назначено функцією агрегування, не може використовуватися у "
+"групуванні."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
-msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr "Умову «<FIELDNAME> <LOGICOPERATOR> <VALUE>» було вибрано двічі. Кожну умову можна вибирати лише один раз."
+msgid "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr ""
+"Умову «<FIELDNAME> <LOGICOPERATOR> <VALUE>» було вибрано двічі. Кожну умову "
+"можна вибирати лише один раз."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
-msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr "Функцію агрегування <FUNCTION> було призначено двічі полю «<NUMERICFIELD>»."
+msgid "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr ""
+"Функцію агрегування <FUNCTION> було призначено двічі полю «<NUMERICFIELD>»."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
-msgid  ", "
+msgid ", "
 msgstr ", "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
-msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgid "<FIELDTITLE> (<FIELDNAME>)"
 msgstr "<FIELDTITLE> (<FIELDNAME>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
-msgid  "<FIELDNAME> (<SORTMODE>)"
+msgid "<FIELDNAME> (<SORTMODE>)"
 msgstr "<FIELDNAME> (<SORTMODE>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
-msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
-msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
 msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___96.STRING.TEXT
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
-msgid  "Report Wizard"
+msgid "Report Wizard"
 msgstr "Помічник звітів"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
-msgid  "~Table"
+msgid "~Table"
 msgstr "~Таблиця"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
-msgid  "Colu~mns"
+msgid "Colu~mns"
 msgstr "~Стовпчики"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
-msgid  "Report_"
+msgid "Report_"
 msgstr "Звіт_"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
-msgid  "- undefined -"
+msgid "- undefined -"
 msgstr "- невизначений -"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
-msgid  "~Fields in report"
+msgid "~Fields in report"
 msgstr "~Поля у звіті"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___11.STRING.TEXT
+msgid "Grouping"
+msgstr "Групування"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
-msgid  "Sort options"
+msgid "Sort options"
 msgstr "Параметри сортування"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
-msgid  "Choose layout"
+msgid "Choose layout"
 msgstr "Вибір стилю"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
-msgid  "Create report"
+msgid "Create report"
 msgstr "Створити звіт"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
-msgid  "Layout of data"
+msgid "Layout of data"
 msgstr "Розмітка даних"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
-msgid  "Layout of headers and footers"
+msgid "Layout of headers and footers"
 msgstr "Розмітка верх. та нижн. колонтитула"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___19.STRING.TEXT
+msgid "Fields"
+msgstr "Поля"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
-msgid  "~Sort by"
+msgid "~Sort by"
 msgstr "~Сортування"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
-msgid  "T~hen by"
+msgid "T~hen by"
 msgstr "~Потім за"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "Орієнтація"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "Книжна"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "Альбомна"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
-msgid  "Which fields do you want to have in your report?"
+msgid "Which fields do you want to have in your report?"
 msgstr "Які поля ви хочете побачити у звіті?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
-msgid  "Do you want to add grouping levels?"
+msgid "Do you want to add grouping levels?"
 msgstr "Додати рівні групування?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
-msgid  "According to which fields do you want to sort the data?"
+msgid "According to which fields do you want to sort the data?"
 msgstr "У якому порядку сортувати дані?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
-msgid  "How do you want your report to look?"
+msgid "How do you want your report to look?"
 msgstr "Зовнішній вигляд звіту"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
-msgid  "Decide how you want to proceed"
+msgid "Decide how you want to proceed"
 msgstr "Дія після"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
-msgid  "Title of report"
+msgid "Title of report"
 msgstr "Заголовок звіту"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
-msgid  "Display report"
+msgid "Display report"
 msgstr "Показати звіт"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___35.STRING.TEXT
+msgid "Create report"
+msgstr "Створити звіт"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "За зростанням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
-msgid  "Descending"
+msgid "Descending"
 msgstr "За зменшенням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
-msgid  "~Dynamic report"
+msgid "~Dynamic report"
 msgstr "~Динамічний звіт"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
-msgid  "~Create report now"
+msgid "~Create report now"
 msgstr "~Створити звіт зараз"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
-msgid  "~Modify report layout"
+msgid "~Modify report layout"
 msgstr "~Змінити шаблон звіту"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
-msgid  "Static report"
+msgid "Static report"
 msgstr "Статичний звіт"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
-msgid  "Save as"
+msgid "Save as"
 msgstr "Зберегти як"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
-msgid  "Groupings"
+msgid "Groupings"
 msgstr "Групування"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
-msgid  "Then b~y"
+msgid "Then b~y"
 msgstr "~Потім за"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
-msgid  "~Then by"
+msgid "~Then by"
 msgstr "П~отім за"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
-msgid  "Asc~ending"
+msgid "Asc~ending"
 msgstr "За ~зростанням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
-msgid  "Ascend~ing"
+msgid "Ascend~ing"
 msgstr "За з~ростанням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
-msgid  "Ascendin~g"
+msgid "Ascendin~g"
 msgstr "За зр~останням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
-msgid  "De~scending"
+msgid "De~scending"
 msgstr "За сп~аданням"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
-msgid  "Des~cending"
+msgid "Des~cending"
 msgstr "За с~паданням"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___58.STRING.TEXT
+msgid "De~scending"
+msgstr "За сп~аданням"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
-msgid  "Binary fields cannot be displayed in the report."
+msgid "Binary fields cannot be displayed in the report."
 msgstr "Двійкові поля не можуть бути показані у звіті."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
-msgid  "The table '<TABLENAME>' does not exist."
+msgid "The table '<TABLENAME>' does not exist."
 msgstr "Таблиця '<TABLENAME>' не існує."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
-msgid  "Creating Report..."
+msgid "Creating Report..."
 msgstr "Створення звіту..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
-msgid  "Number of records inserted: <COUNT>"
+msgid "Number of records inserted: <COUNT>"
 msgstr "Кількість вставлених записів: <COUNT>"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
-msgid  "The form '<REPORTFORM>' does not exist."
+msgid "The form '<REPORTFORM>' does not exist."
 msgstr "Форма '<REPORTFORM>' не існує."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
-msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr "Запит з твердженням <BR>'<STATEMENT>' <BR> неможливо виконати. <BR> Перевірте ваше джерело даних."
+msgid "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr ""
+"Запит з твердженням <BR>'<STATEMENT>' <BR> неможливо виконати. <BR> "
+"Перевірте ваше джерело даних."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
-msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr "Наступні сховані елем. керування у формі '<REPORTFORM>' неможливо прочитати: '<CONTROLNAME>'."
+msgid "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr ""
+"Наступні сховані елем. керування у формі '<REPORTFORM>' неможливо прочитати: "
+"'<CONTROLNAME>'."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
-msgid  "Importing data..."
+msgid "Importing data..."
 msgstr "Імпортування даних..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
-msgid  "Labeling fields"
+msgid "Labeling fields"
 msgstr "Поля позначок"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
-msgid  "How do you want to label the fields?"
+msgid "How do you want to label the fields?"
 msgstr "Як ви хочете позначити поля?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
-msgid  "Label"
+msgid "Label"
 msgstr "Позначка"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___71.STRING.TEXT
+msgid "Field"
+msgstr "Поле"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
-msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr "Сталася помилка помічника.<BR> Шаблон '%PATH' може містити помилки.<BR>Не існують або потрібні секції або таблиці або існують під неправильною назвою.<BR>Зверніться до довідки за докладнішою інформацією.<BR>Виберіть інший шаблон."
+msgid "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr ""
+"Сталася помилка помічника.<BR> Шаблон '%PATH' може містити помилки.<BR>Не "
+"існують або потрібні секції або таблиці або існують під неправильною "
+"назвою.<BR>Зверніться до довідки за докладнішою інформацією.<BR>Виберіть "
+"інший шаблон."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
-msgid  "There is an invalid user field in a table."
+msgid "There is an invalid user field in a table."
 msgstr "Неправильне поле користувача у таблиці."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
-msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr "Критерій сортування '<FIELDNAME>' був вибраний двічі. Кожен критерій може використовуватись лише один раз."
+msgid "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr ""
+"Критерій сортування '<FIELDNAME>' був вибраний двічі. Кожен критерій може "
+"використовуватись лише один раз."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
-msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr "Увага: фіктивний текст буде замінений даними з бази даних при створенні звіту."
+msgid "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr ""
+"Увага: фіктивний текст буде замінений даними з бази даних при створенні "
+"звіту."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
-msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgid "A report '%REPORTNAME' already exists in the database. Please assign another name."
 msgstr "Звіт «%REPORTNAME» вже є у базі даних. Введіть іншу назву."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
-msgid  "How do you want to proceed after creating the report?"
+msgid "How do you want to proceed after creating the report?"
 msgstr "Що ви збираєтесь робити після створення звіту?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
-msgid  "What kind of report do you want to create?"
+msgid "What kind of report do you want to create?"
 msgstr "Який тип звіту ви хочете створити?"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
-msgid  "Tabular"
+msgid "Tabular"
 msgstr "Табличний"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
-msgid  "Columnar, single-column"
+msgid "Columnar, single-column"
 msgstr "Колонковий"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
-msgid  "Columnar, two columns"
+msgid "Columnar, two columns"
 msgstr "Колонковий, дві колонки"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
-msgid  "Columnar, three columns"
+msgid "Columnar, three columns"
 msgstr "Колонковий, три колонки"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
-msgid  "In blocks, labels left"
+msgid "In blocks, labels left"
 msgstr "Блоки - позначки ліворуч"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
-msgid  "In blocks, labels above"
+msgid "In blocks, labels above"
 msgstr "Блоки - позначки згори"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
-msgid  "Title:"
+msgid "Title:"
 msgstr "Заголовок:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
-msgid  "Author:"
+msgid "Author:"
 msgstr "Автор:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
-msgid  "Date:"
+msgid "Date:"
 msgstr "Дата:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
-msgid  "Page #page# of #count#"
+msgid "Page #page# of #count#"
 msgstr "Сторінка #page# з #count#"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
-msgid  "Page number:"
+msgid "Page number:"
 msgstr "Номер сторінки:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
-msgid  "Page count:"
+msgid "Page count:"
 msgstr "Кількість сторінок:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
-msgid  "No valid report template was found."
+msgid "No valid report template was found."
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
-msgid  "Table Wizard"
+msgid "Table Wizard"
 msgstr "Помічник таблиць"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
-msgid  "Select fields"
+msgid "Select fields"
 msgstr "Вибрати поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
-msgid  "Set types and formats"
+msgid "Set types and formats"
 msgstr "Встановити типи та формат"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
-msgid  "Set primary key"
+msgid "Set primary key"
 msgstr "Виберіть первинний ключ"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___5.STRING.TEXT
-msgid  "Create table"
+msgid "Create table"
 msgstr "Створити таблицю"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
-msgid  "Select fields for your table"
+msgid "Select fields for your table"
 msgstr "Оберіть поля для таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
-msgid  "Set field types and formats"
+msgid "Set field types and formats"
 msgstr "Встановіть типи полів та формати"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___10.STRING.TEXT
+msgid "Set primary key"
+msgstr "Виберіть первинний ключ"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___11.STRING.TEXT
+msgid "Create table"
+msgstr "Створити таблицю"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
-msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr "Помічник поможе створити таблиці для бази даних. Після вибору категорії та прикладу таблиці виберіть поля, які ви хочете включити у таблицю. Можна включати поля з кількох прикладів таблиць."
+msgid "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr ""
+"Помічник поможе створити таблиці для бази даних. Після вибору категорії та "
+"прикладу таблиці виберіть поля, які ви хочете включити у таблицю. Можна "
+"включати поля з кількох прикладів таблиць."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
-msgid  "Ca~tegory"
+msgid "Ca~tegory"
 msgstr "~Категорія"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
-msgid  "B~usiness"
+msgid "B~usiness"
 msgstr "~Діловий"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
-msgid  "P~ersonal"
+msgid "P~ersonal"
 msgstr "~Персональний"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
-msgid  "~Sample tables"
+msgid "~Sample tables"
 msgstr "~Приклади таблиць"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___19.STRING.TEXT
+msgid "A~vailable fields"
+msgstr "~Доступні поля"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
-msgid  "Field information"
+msgid "Field information"
 msgstr "Інформація про поле"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
-msgid  "+"
+msgid "+"
 msgstr "+"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
-msgid  "Field name"
+msgid "Field name"
 msgstr "Назва поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
-msgid  "Field type"
+msgid "Field type"
 msgstr "Тип поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
-msgid  "~Selected fields"
+msgid "~Selected fields"
 msgstr "~Вибрані поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
-msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr "Обмеження первинного ключа ідентифікує кожен запис таблиці бази даних. Первинні ключі полегшують створення зв'язку між окремими таблицями і рекомендується створювати первинні ключі у кожній таблиці. Без первинного ключа буде неможливо вводити дані у цю таблицю."
+msgid "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr ""
+"Обмеження первинного ключа ідентифікує кожен запис таблиці бази даних. "
+"Первинні ключі полегшують створення зв'язку між окремими таблицями і "
+"рекомендується створювати первинні ключі у кожній таблиці. Без первинного "
+"ключа буде неможливо вводити дані у цю таблицю."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
-msgid  "~Create a primary key"
+msgid "~Create a primary key"
 msgstr "~Створити первинний ключ"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
-msgid  "~Automatically add a primary key"
+msgid "~Automatically add a primary key"
 msgstr "~Автоматично додавати первинний ключ"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
-msgid  "~Use an existing field as a primary key"
+msgid "~Use an existing field as a primary key"
 msgstr "~Використовувати існуюче поле як первинний ключ"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
-msgid  "Define p~rimary key as a combination of several fields "
+msgid "Define p~rimary key as a combination of several fields "
 msgstr "Визначити ~первинний ключ як комбінацію кількох полів"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
-msgid  "F~ieldname"
+msgid "F~ieldname"
 msgstr "~Назва поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
-msgid  "~Primary key fields"
+msgid "~Primary key fields"
 msgstr "~Основний ключ поля"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
-msgid  "Auto ~value"
+msgid "Auto ~value"
 msgstr "~Автоматичне значення"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
-msgid  "What do you want to name your table?"
+msgid "What do you want to name your table?"
 msgstr "Назва"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
-msgid  "Congratulations. You have entered all the information needed to create your table."
+msgid "Congratulations. You have entered all the information needed to create your table."
 msgstr "Вітаємо! Ви щойно ввели всю потрібну інформацію для створення таблиці."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 #, fuzzy
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "Що ви хочете зробити дальші?"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
-msgid  "Modify the table design"
+msgid "Modify the table design"
 msgstr "Змінити дизайн таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
-msgid  "Insert data immediately"
+msgid "Insert data immediately"
 msgstr "Негайно вставити дані"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
-msgid  "C~reate a form based on this table"
+msgid "C~reate a form based on this table"
 msgstr "~Створити форму на основі цієї таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
-msgid  "The table you have created could not be opened."
+msgid "The table you have created could not be opened."
 msgstr "Таблицю, яку ви створили, неможливо відкрити."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
-msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "Таблиця '%TABLENAME' містить спецсимвол ('%SPECIALCHAR'), який може не підтримуватися базою даних."
+msgid "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"Таблиця '%TABLENAME' містить спецсимвол ('%SPECIALCHAR'), який може не "
+"підтримуватися базою даних."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
-msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "Поле '%FIELDNAME' містить спецсимвол ('%SPECIALCHAR'), який може не підтримуватися базою даних."
+msgid "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"Поле '%FIELDNAME' містить спецсимвол ('%SPECIALCHAR'), який може не "
+"підтримуватися базою даних."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___43.STRING.TEXT
+msgid "Field"
+msgstr "Поле"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
-msgid  "MyTable"
+msgid "MyTable"
 msgstr "МояТаблиця"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
-msgid  "Add a Field"
+msgid "Add a Field"
 msgstr "Додати поле"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
-msgid  "Remove the selected Field"
+msgid "Remove the selected Field"
 msgstr "Видалити виділене поле"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
-msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr "Поля неможливо вставити через те, що буде перевищено максимальне значення %COUNT полів у базі даних"
+msgid "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr ""
+"Поля неможливо вставити через те, що буде перевищено максимальне значення %"
+"COUNT полів у базі даних"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Назва '%TABLENAME' вже існує.\nВведіть іншу назву."
+msgid "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr ""
+"Назва '%TABLENAME' вже існує.\n"
+"Введіть іншу назву."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
-msgid  "Catalog of the table"
+msgid "Catalog of the table"
 msgstr "Каталог таблиць"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
-msgid  "Schema of the table"
+msgid "Schema of the table"
 msgstr "Схема таблиці"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
-msgid  "The field '%FIELDNAME' already exists."
+msgid "The field '%FIELDNAME' already exists."
 msgstr "Поле \"%FIELDNAME\" вже існує."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Letter Wizard"
+msgid "Letter Wizard"
 msgstr "Помічник листів"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Label9"
+msgid "Label9"
 msgstr "Label9"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business letter"
+msgid "~Business letter"
 msgstr "~Діловий лист"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Formal personal letter"
+msgid "~Formal personal letter"
 msgstr "~Формальний особистий лист"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
-msgid  "~Personal letter"
+msgid "~Personal letter"
 msgstr "~Персональний лист"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
-msgid  "~Use letterhead paper with pre-printed elements"
+msgid "~Use letterhead paper with pre-printed elements"
 msgstr "~Використання фірмового бланку з попередньо надрукованими елементами"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 #, fuzzy
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "~Емблема"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.STRING.TEXT
 #, fuzzy
-msgid  "Return address"
+msgid "Return address"
 msgstr "Зворотна адреса"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
-msgid  "~Include footer"
+msgid "~Include footer"
 msgstr "~Додати нижній колонтитул"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 #, fuzzy
-msgid  "~Return address in envelope window"
+msgid "~Return address in envelope window"
+msgstr "~Зворотна адреса на конверті"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.STRING.TEXT
+#, fuzzy
+msgid "~Logo"
+msgstr "~Емблема"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.STRING.TEXT
+#, fuzzy
+msgid "~Return address in envelope window"
 msgstr "~Зворотна адреса на конверті"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Letter Signs"
+msgid "Letter Signs"
 msgstr "Підпис у листі"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
 #, fuzzy
-msgid  "S~ubject line"
+msgid "S~ubject line"
 msgstr "~Тема"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
-msgid  "Salu~tation"
+msgid "Salu~tation"
 msgstr "~Звернення"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
-msgid  "Fold ~marks"
+msgid "Fold ~marks"
 msgstr "Вказівники ~згину"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 #, fuzzy
-msgid  "~Complimentary close"
+msgid "~Complimentary close"
 msgstr "~Завершення"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.STRING.TEXT
-msgid  "~Footer"
+msgid "~Footer"
 msgstr "Ни~жній колонтитул"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
-msgid  "~Use user data for return address"
+msgid "~Use user data for return address"
 msgstr "Вз~яти з даних користувача"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
-msgid  "~New sender address:"
+msgid "~New sender address:"
 msgstr "~Нова адреса відправника:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
 #, fuzzy
-msgid  "Use placeholders for ~recipient's address"
+msgid "Use placeholders for ~recipient's address"
 msgstr "Використовувати мітку-заповнювач для ~отримувача"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.STRING.TEXT
-msgid  "Use address database for ~mail merge"
+msgid "Use address database for ~mail merge"
 msgstr "Використовуйте базу даних адрес для ~поштової розсилки"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.STRING.TEXT
 #, fuzzy
-msgid  "Include ~only on second and following pages"
+msgid "Include ~only on second and following pages"
 msgstr "Додавати з ~другої сторінки"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "~Include page number"
+msgid "~Include page number"
 msgstr "~Додати номер сторінки"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Letter Template"
+msgid "Letter Template"
 msgstr "Шаблон листа"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
-msgid  "Create a ~letter from this template"
+msgid "Create a ~letter from this template"
 msgstr "Створити ~лист за шаблоном"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
-msgid  "Make ~manual changes to this letter template"
+msgid "Make ~manual changes to this letter template"
 msgstr "Внести зміни в~ручну у шаблон листа"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.STRING.TEXT
+#, fuzzy
+msgid "Page design"
 msgstr "Дизайн сторінки"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr "Помічник допоможе створити шаблон листа. Ви зможете використовувати цей шаблон, як основу для написання листів."
+msgid "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr ""
+"Помічник допоможе створити шаблон листа. Ви зможете використовувати цей "
+"шаблон, як основу для написання листів."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
-msgid  "~Height:"
+msgid "~Height:"
 msgstr "~Висота:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
-msgid  "~Width:"
+msgid "~Width:"
 msgstr "~Ширина:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
 #, fuzzy
-msgid  "S~pacing to left margin:"
+msgid "S~pacing to left margin:"
 msgstr "~Ліве поле:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.STRING.TEXT
 #, fuzzy
-msgid  "Spacing ~to top margin:"
+msgid "Spacing ~to top margin:"
 msgstr "~Верхнє поле:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.STRING.TEXT
 #, fuzzy
-msgid  "Height:"
+msgid "Height:"
 msgstr "Висота:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Width:"
+msgid "Width:"
 msgstr "Ширина:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.STRING.TEXT
+#, fuzzy
+msgid "S~pacing to left margin:"
+msgstr "~Ліве поле:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.STRING.TEXT
+#, fuzzy
+msgid "Spacing ~to top margin:"
+msgstr "~Верхнє поле:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.STRING.TEXT
+#, fuzzy
+msgid "Height:"
+msgstr "Висота:"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
-msgid  "Use a typical letter format for this country:"
+msgid "Use a typical letter format for this country:"
 msgstr "Використання стандартного формату листа для цієї країни:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
-msgid  "Sender's address"
+msgid "Sender's address"
 msgstr "Адреса відправника"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 #, fuzzy
-msgid  "Name:"
+msgid "Name:"
 msgstr "Назва:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.STRING.TEXT
 #, fuzzy
-msgid  "Street:"
+msgid "Street:"
 msgstr "Вулиця:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.STRING.TEXT
-msgid  "ZIP code/State/City:"
+msgid "ZIP code/State/City:"
 msgstr "Індекс, область, місто:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
-msgid  "Recipient's address"
+msgid "Recipient's address"
 msgstr "Адреса отримувача"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 #, fuzzy
-msgid  "Footer"
+msgid "Footer"
 msgstr "Нижній колонтитул"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
-msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr "Помічник створить шаблон листа для створення множини листів з однаковим виглядом та іншими параметрами."
+msgid "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr ""
+"Помічник створить шаблон листа для створення множини листів з однаковим "
+"виглядом та іншими параметрами."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
-msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr "Для створення нового листа на основі створеного шаблону треба вибрати шаблон зі списку та відкрити його."
+msgid "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr ""
+"Для створення нового листа на основі створеного шаблону треба вибрати шаблон "
+"зі списку та відкрити його."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 #, fuzzy
-msgid  "Template name:"
+msgid "Template name:"
 msgstr "Назва шаблону:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.STRING.TEXT
 #, fuzzy
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "Шлях до файлу:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
-msgid  "How do you want to proceed?"
+msgid "How do you want to proceed?"
 msgstr "Продовжити?"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
-msgid  "Please choose the type of letter and page design"
+msgid "Please choose the type of letter and page design"
 msgstr "Будь ласка, виберіть тип листа та дизайн сторінки"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
-msgid  "Select the items to be printed"
+msgid "Select the items to be printed"
 msgstr "Оберіть пункти для друку"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
-msgid  "Specify items already on your letterhead paper"
+msgid "Specify items already on your letterhead paper"
 msgstr "Вкажіть елементи, присутні на вашому фірмовому бланку"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
-msgid  "Specify the sender and recipient information"
+msgid "Specify the sender and recipient information"
 msgstr "Вкажіть інформацію про відправника та отримувача"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
-msgid  "Fill in the information you would like in the footer"
+msgid "Fill in the information you would like in the footer"
 msgstr "Внесіть інформацію, яку ви б хотіли бачити у колонтитулі"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
-msgid  "Please specify last settings"
+msgid "Please specify last settings"
 msgstr "Вкажіть останні параметри"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To Whom it May Concern"
+msgid "To Whom it May Concern"
 msgstr "Увазі зацікавлених осіб"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam"
+msgid "Dear Sir or Madam"
 msgstr "Шановні пані та панове"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello"
+msgid "Hello"
 msgstr "Привіт"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Sincerely"
+msgid "Sincerely"
 msgstr "Щиро Ваш"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Best regards"
+msgid "Best regards"
 msgstr "З найкращими побажаннями"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Cheers"
+msgid "Cheers"
 msgstr "За Ваше здоров'я"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Letterhead layout"
+msgid "Letterhead layout"
 msgstr "Макет фірмового бланку"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Printed items"
+msgid "Printed items"
 msgstr "Елементи для друку"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
-msgid  "Recipient and sender"
+msgid "Recipient and sender"
 msgstr "Відправник та отримувач"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.STRING.TEXT
+#, fuzzy
+msgid "Footer"
+msgstr "Нижній колонтитул"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 #, fuzzy
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "Назва та розташування"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
-msgid  "Fax Wizard"
+msgid "Fax Wizard"
 msgstr "Помічник факсів"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___2.STRING.TEXT
+#, fuzzy
+msgid "Label9"
+msgstr "Label9"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
-msgid  "~Business Fax"
+msgid "~Business Fax"
 msgstr "~Діловий факс"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
-msgid  "~Personal Fax"
+msgid "~Personal Fax"
 msgstr "~Персональний факс"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___5.STRING.TEXT
+#, fuzzy
+msgid "~Logo"
+msgstr "~Емблема"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___6.STRING.TEXT
+#, fuzzy
+msgid "S~ubject line"
+msgstr "~Тема"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
-msgid  "S~alutation"
+msgid "S~alutation"
 msgstr "~Звернення"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___8.STRING.TEXT
+#, fuzzy
+msgid "~Complimentary close"
+msgstr "~Завершення"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___9.STRING.TEXT
+msgid "~Footer"
+msgstr "Ни~жній колонтитул"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___10.STRING.TEXT
+msgid "~Use user data for return address"
+msgstr "Вз~яти з даних користувача"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 #, fuzzy
-msgid  "~New return address"
+msgid "~New return address"
 msgstr "~Нова зворотна адреса"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
-msgid  "My Fax Template"
+msgid "My Fax Template"
 msgstr "Мій шаблон для факсу"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
-msgid  "Create a ~fax from this template"
+msgid "Create a ~fax from this template"
 msgstr "Створити ~факс з шаблону"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
-msgid  "Make ~manual changes to this fax template"
+msgid "Make ~manual changes to this fax template"
 msgstr "Внести зміни в~ручну у шаблон факсу"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___15.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___16.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
-msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr "Помічник допоможе створити шаблон факсу. Надалі, Ви можете використовувати цей шаблон коли буде потрібно."
+msgid "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr ""
+"Помічник допоможе створити шаблон факсу. Надалі, Ви можете використовувати "
+"цей шаблон коли буде потрібно."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___18.STRING.TEXT
+#, fuzzy
+msgid "Return address"
+msgstr "Зворотна адреса"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___19.STRING.TEXT
+#, fuzzy
+msgid "Name:"
+msgstr "Назва:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___20.STRING.TEXT
+#, fuzzy
+msgid "Street:"
+msgstr "Вулиця:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___21.STRING.TEXT
+msgid "ZIP code/State/City:"
+msgstr "Індекс, область, місто:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___22.STRING.TEXT
+#, fuzzy
+msgid "Footer"
+msgstr "Нижній колонтитул"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
-msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr "Помічник створить шаблон факсу для створення багатьох факсів з однаковим виглядом та іншими параметрами."
+msgid "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr ""
+"Помічник створить шаблон факсу для створення багатьох факсів з однаковим "
+"виглядом та іншими параметрами."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
-msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Для створення нового факсу на основі створеного шаблону треба вибрати шаблон зі списку та відкрити його."
+msgid "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Для створення нового факсу на основі створеного шаблону треба вибрати шаблон "
+"зі списку та відкрити його."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
-msgid  "Template Name:"
+msgid "Template Name:"
 msgstr "Назва шаблону:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___26.STRING.TEXT
+#, fuzzy
+msgid "Location and file name:"
+msgstr "Шлях до файлу:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___27.STRING.TEXT
+#, fuzzy
+msgid "What do you want to do next?"
+msgstr "Що ви хочете зробити дальші?"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
-msgid  "Choose the type of fax and a page design"
+msgid "Choose the type of fax and a page design"
 msgstr "Виберіть тип факсу і дизайн сторінки"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
-msgid  "Select items to include in the fax template"
+msgid "Select items to include in the fax template"
 msgstr "Виберіть пункти, які треба включити у шаблон факсу"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
-msgid  "Specify sender and recipient information"
+msgid "Specify sender and recipient information"
 msgstr "Вкажіть інформацію про відправника та отримувача"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
-msgid  "Enter text for the footer"
+msgid "Enter text for the footer"
 msgstr "Введіть текст для нижнього колонтитулу"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 #, fuzzy
-msgid  "Choose a name and save the template"
+msgid "Choose a name and save the template"
 msgstr "Вкажіть назву та збережіть шаблон"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___33.STRING.TEXT
+#, fuzzy
+msgid "Include ~only on second and following pages"
+msgstr "Додавати з ~другої сторінки"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___34.STRING.TEXT
+msgid "~Include page number"
+msgstr "~Додати номер сторінки"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
-msgid  "~Date"
+msgid "~Date"
 msgstr "~Дата"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
-msgid  "~Type of message"
+msgid "~Type of message"
 msgstr "~Тип повідомлення"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
-msgid  "Fax Number:"
+msgid "Fax Number:"
 msgstr "Номер факсу:"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___38.STRING.TEXT
+#, fuzzy
+msgid "Use placeholders for ~recipient's address"
+msgstr "Використовувати мітку-заповнювач для ~отримувача"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___39.STRING.TEXT
+msgid "Use address database for ~mail merge"
+msgstr "Використовуйте базу даних адрес для ~поштової розсилки"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___40.STRING.TEXT
+#, fuzzy
+msgid "~New return address"
+msgstr "~Нова зворотна адреса"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
-msgid  "Important Information!"
+msgid "Important Information!"
 msgstr "Важливо!!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
-msgid  "For your information"
+msgid "For your information"
 msgstr "До вашої уваги"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
-msgid  "News!"
+msgid "News!"
 msgstr "Новини!!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
-msgid  "To whom it may concern,"
+msgid "To whom it may concern,"
 msgstr "Увазі зацікавлених осіб,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
-msgid  "Dear Sir or Madam,"
+msgid "Dear Sir or Madam,"
 msgstr "Шановні пані та панове,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
-msgid  "Hello,"
+msgid "Hello,"
 msgstr "Доброго дня,"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
-msgid  "Hi,"
+msgid "Hi,"
 msgstr "Привіт,"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___1.STRING.TEXT
+#, fuzzy
+msgid "Sincerely"
+msgstr "Щиро Ваш"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
-msgid  "Yours faithfully"
+msgid "Yours faithfully"
 msgstr "Завжди Ваш"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
-msgid  "Regards"
+msgid "Regards"
 msgstr "З найкращими побажаннями"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
-msgid  "Love"
+msgid "Love"
 msgstr "З любов'ю"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___1.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
-msgid  "Items to include"
+msgid "Items to include"
 msgstr "Пункти, що включаються"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
-msgid  "Sender and Recipient"
+msgid "Sender and Recipient"
 msgstr "Відправник та отримувач"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___4.STRING.TEXT
+#, fuzzy
+msgid "Footer"
+msgstr "Нижній колонтитул"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___5.STRING.TEXT
+#, fuzzy
+msgid "Name and location"
+msgstr "Назва та розташування"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Web Wizard"
+msgid "Web Wizard"
 msgstr "Веб-майстер"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Веб-майстер допоможе опублікувати документи у мережі Інтернет.\n\nВін перетворює документи таким чином, щоб вони могли читатися у звичайному веб-оглядачі. Помічник також допоможе створити унікальний дизайн та виглядвеб-сайту.\n\nВи зможете підтримувати документи, опубліковані на веб-сайті, актуальними. Також ви зможете додавати та/або видаляти документи у будь-який час."
+msgid "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
+"Веб-майстер допоможе опублікувати документи у мережі Інтернет.\n"
+"\n"
+"Він перетворює документи таким чином, щоб вони могли читатися у звичайному "
+"веб-оглядачі. Помічник також допоможе створити унікальний дизайн та "
+"виглядвеб-сайту.\n"
+"\n"
+"Ви зможете підтримувати документи, опубліковані на веб-сайті, актуальними. "
+"Також ви зможете додавати та/або видаляти документи у будь-який час."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "В~идалити"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
-msgid  "Introduction"
+msgid "Introduction"
 msgstr "Вступ"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
-msgid  "Select the documents you want to publish"
+msgid "Select the documents you want to publish"
 msgstr "Виберіть документ, який треба опублікувати"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
-msgid  "Document information "
+msgid "Document information "
 msgstr "Інформація про документ"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
-msgid  "~Title:"
+msgid "~Title:"
 msgstr "~Заголовок:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
-msgid  "~Summary: "
+msgid "~Summary: "
 msgstr "~Короткий опис: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
-msgid  "Au~thor:"
+msgid "Au~thor:"
 msgstr "~Автор:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
-msgid  "~Export to file format:"
+msgid "~Export to file format:"
 msgstr "~Експортувати у:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
-msgid  "Enter general information for your web site"
+msgid "Enter general information for your web site"
 msgstr "Введіть загальну інформацію про Ваш веб-сайт"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__14.STRING.TEXT
+msgid "Title:"
+msgstr "Заголовок:"
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
-msgid  "Description:"
+msgid "Description:"
 msgstr "Опис:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
-msgid  "Created:"
+msgid "Created:"
 msgstr "Створено:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
-msgid  "E-mail:"
+msgid "E-mail:"
 msgstr "Електронна адреса:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
-msgid  "Copyright notice:"
+msgid "Copyright notice:"
 msgstr "Авторські права:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "Змінено:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
-msgid  "~Preview"
+msgid "~Preview"
 msgstr "~Перегляд"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
-msgid  "Where do you want to publish your web site?"
+msgid "Where do you want to publish your web site?"
 msgstr "Де хочете опублікувати веб-сайт?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
-msgid  "Publish the new web site:"
+msgid "Publish the new web site:"
 msgstr "Опублікувати новий веб-сайт:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
-msgid  "To a ~local folder"
+msgid "To a ~local folder"
 msgstr "У ~локальний каталог"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
-msgid  "To a ~web server via FTP"
+msgid "To a ~web server via FTP"
 msgstr "На ~Веб-сервер через FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
-msgid  "~Configure..."
+msgid "~Configure..."
 msgstr "~Налаштувати..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
-msgid  "To a ZIP ~archive"
+msgid "To a ZIP ~archive"
 msgstr "У ZIP-~архив"
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__33.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
-msgid  "~Save settings (recommended)"
+msgid "~Save settings (recommended)"
 msgstr "З~берегти параметри (рекомендується)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
-msgid  "Save ~as:"
+msgid "Save ~as:"
 msgstr "Зберегти ~як:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
-msgid  "~Choose settings for the Web Wizard"
+msgid "~Choose settings for the Web Wizard"
 msgstr "~Параметри для Веб-помічника"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
-msgid  "Web site content "
+msgid "Web site content "
 msgstr "Компонент веб-сайту"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Додати..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
-msgid  "Remo~ve"
+msgid "Remo~ve"
 msgstr "Ви~лучити"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
-msgid  "Choose a layout for the table of contents of your web site"
+msgid "Choose a layout for the table of contents of your web site"
 msgstr "Виберіть зовнішній вигляд змісту Вашого веб-сайту"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
-msgid  "Select a style for the table of contents page"
+msgid "Select a style for the table of contents page"
 msgstr "Виберіть стиль для сторінки змісту"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
-msgid  "~Style:"
+msgid "~Style:"
 msgstr "С~тиль:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
-msgid  "~Layouts: "
+msgid "~Layouts: "
 msgstr "~Зовнішній вигляд: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
-msgid  "~Description"
+msgid "~Description"
 msgstr "~Опис"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
-msgid  "~Author"
+msgid "~Author"
 msgstr "~Автор"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
-msgid  "Cr~eation date"
+msgid "Cr~eation date"
 msgstr "Дата ~створення"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
-msgid  "~Last change date"
+msgid "~Last change date"
 msgstr "Дата ~модифікації"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
-msgid  "~File name"
+msgid "~File name"
 msgstr "~Назва файлу"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
-msgid  "File forma~t"
+msgid "File forma~t"
 msgstr "~Формат файла"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
-msgid  "File format ~icon"
+msgid "File format ~icon"
 msgstr "З~начок цього формату файлів"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
-msgid  "Number ~of pages"
+msgid "Number ~of pages"
 msgstr "~Кількість сторінок"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
-msgid  "~Size in KB"
+msgid "~Size in KB"
 msgstr "~Розмір, Кбайт"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
-msgid  "Click 'Preview' to see a preview in your browser:"
+msgid "Click 'Preview' to see a preview in your browser:"
 msgstr "Натисніть \"Перегляд\" для попереднього перегляду у веб-оглядачі"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
-msgid  "Customize the selected layout"
+msgid "Customize the selected layout"
 msgstr "Змініть вибраний зовнішній вигляд"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
-msgid  "Include the following information for each document in the table of contents:"
+msgid "Include the following information for each document in the table of contents:"
 msgstr "Включити наступну інформацію у кожен документ у змісті:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
-msgid  "Optimize the layout for screen resolution:"
+msgid "Optimize the layout for screen resolution:"
 msgstr "Підібрати зовнішній вигляд для роздільної здатності екрану:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
-msgid  "~640x480"
+msgid "~640x480"
 msgstr "~640x480"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
-msgid  "~800x600"
+msgid "~800x600"
 msgstr "~800x600"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
-msgid  "~1024x768"
+msgid "~1024x768"
 msgstr "~1024x768"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
-msgid  "Generating Your Web Site"
+msgid "Generating Your Web Site"
 msgstr "Створення вашого веб-сайту"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
-msgid  "%START - %END/%TOTAL"
+msgid "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
-msgid  "myWebsite"
+msgid "myWebsite"
 msgstr "МійВебСайт"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
-msgid  "FTP target '%FILENAME' is a file."
+msgid "FTP target '%FILENAME' is a file."
 msgstr "Вказана ціль FTP \"%FILENAME\" є файлом."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
-msgid  "The local target '%FILENAME' is a file."
+msgid "The local target '%FILENAME' is a file."
 msgstr "Локальна ціль '%FILENAME' є файлом."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
-msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgid "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
 msgstr "Архів ZIP '%FILENAME' вже існує. Ви хочете його замінити новим?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
-msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "FTP каталог '%FILENAME' не порожній. Деякі файли, можливо, будуть замінені. Продовжити?"
+msgid "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"FTP каталог '%FILENAME' не порожній. Деякі файли, можливо, будуть замінені. "
+"Продовжити?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
-msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "Локальний каталог '%FILENAME' не порожній. Деякі файли можуть бути перезаписані. Продовжити?"
+msgid "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"Локальний каталог '%FILENAME' не порожній. Деякі файли можуть бути "
+"перезаписані. Продовжити?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
-msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgid "Settings already exist under the given name. Do you want to overwrite the existing settings? "
 msgstr "Параметри вже існують під цією назвою. Переписати їх?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
-msgid  "Exporting documents..."
+msgid "Exporting documents..."
 msgstr "Експорт документів..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
-msgid  "Preparing export..."
+msgid "Preparing export..."
 msgstr "Підготовка до експорту..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
-msgid  "Copying layout files..."
+msgid "Copying layout files..."
 msgstr "Копіюються файли розмітки..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
-msgid  "Preparing table of contents generation..."
+msgid "Preparing table of contents generation..."
 msgstr "Підготовка до генерації змісту..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
-msgid  "Generating table of contents..."
+msgid "Generating table of contents..."
 msgstr "Генерація змісту..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
-msgid  "Initializing..."
+msgid "Initializing..."
 msgstr "Інціалізація..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
-msgid  "Preparing to publish..."
+msgid "Preparing to publish..."
 msgstr "Підготовка до публікації..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
-msgid  "Publishing to local directory..."
+msgid "Publishing to local directory..."
 msgstr "Триває публікація у локальний каталог..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
-msgid  "Publishing to FTP destination..."
+msgid "Publishing to FTP destination..."
 msgstr "Публікація на FTP сервер..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
-msgid  "Publishing to a ZIP archive..."
+msgid "Publishing to a ZIP archive..."
 msgstr "Публікація у ZIP-архів..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
-msgid  "Finishing..."
+msgid "Finishing..."
 msgstr "Завершення..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
-msgid  "Graphic files"
+msgid "Graphic files"
 msgstr "Графічні файли"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
-msgid  "All files"
+msgid "All files"
 msgstr "Усі файли"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
-msgid  "~ZIP archive files"
+msgid "~ZIP archive files"
 msgstr "Файли ~ZIP-архівів"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
-msgid  "Background images"
+msgid "Background images"
 msgstr "Зображення для тла"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
-msgid  "Choose a background image: "
+msgid "Choose a background image: "
 msgstr "Виберіть зображення для тла: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
-msgid  "Icon sets"
+msgid "Icon sets"
 msgstr "Набір значків"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
-msgid  "Choose an icon set:"
+msgid "Choose an icon set:"
 msgstr "Вибрати набір значків:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
-msgid  "Other..."
+msgid "Other..."
 msgstr "Інші..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Нічого"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
-msgid  "Your web site was created successfully into: %FILENAME"
+msgid "Your web site was created successfully into: %FILENAME"
 msgstr "Ваш веб-сайт успішно створено у: %FILENAME"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
-msgid  "One or more errors occurred when generating the web site."
+msgid "One or more errors occurred when generating the web site."
 msgstr "Були знайдені помилки при генерації Веб-сайту"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
-msgid  "An error occurred while generating the table of contents page(s). "
+msgid "An error occurred while generating the table of contents page(s). "
 msgstr "Помилка при генерації таблиці змісту."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
-msgid  "An error occurred while copying the layout files. "
+msgid "An error occurred while copying the layout files. "
 msgstr "Помилка при копіюванні файлів розмітки."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
-msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgid "An error occurred while gathering document information for '%FILENAME'. "
 msgstr "Помилка при отриманні інформації для '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
-msgid  "An error occurred while exporting the document '%FILENAME'."
+msgid "An error occurred while exporting the document '%FILENAME'."
 msgstr "Помилка при експорті документу '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
-msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
 msgstr "Помилка при створенні каталогу для експорту '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
-msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgid "A security error occurred while exporting the document '%FILENAME'."
 msgstr "Помилка безпеки при експорті документу '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
-msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgid "An input/output error occurred while exporting the document '%FILENAME'."
 msgstr "Помилка вводу/виводу при експорті документа '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
-msgid  "An error occurred while copying media files to the temporary directory."
+msgid "An error occurred while copying media files to the temporary directory."
 msgstr "Помилка при копіюванні файлів у тимчасовий каталог."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
-msgid  "The web site could not be copied to the following destination: %URL"
+msgid "The web site could not be copied to the following destination: %URL"
 msgstr "Неможливо скопіювати веб-сайт у: %URL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
-msgid  "An unexpected error occurred: %ERROR"
+msgid "An unexpected error occurred: %ERROR"
 msgstr "Несподівана помилка: %ERROR"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
-msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
 msgstr "Несподівана помилка при перевірці файлу: '%FILENAME'"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
-msgid  "%FILENAME' is a folder."
+msgid "%FILENAME' is a folder."
 msgstr "'%FILENAME' є каталогом."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
-msgid  "Loading Web Wizard Settings..."
+msgid "Loading Web Wizard Settings..."
 msgstr "Завантаження параметрів Веб-майстра..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
-msgid  "An unexpected error occurred."
+msgid "An unexpected error occurred."
 msgstr "Несподівана помилка."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
-msgid  "Validating documents..."
+msgid "Validating documents..."
 msgstr "Триває перевірка документів..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
-msgid  "My Archive"
+msgid "My Archive"
 msgstr "Мій архів"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
-msgid  "Introduction "
+msgid "Introduction "
 msgstr "Вступ "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
-msgid  "Documents "
+msgid "Documents "
 msgstr "Документи"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
-msgid  "Main layout"
+msgid "Main layout"
 msgstr "Основна розмітка"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
-msgid  "Layout details"
+msgid "Layout details"
 msgstr "Подробиці розмітки"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
-msgid  "Style"
+msgid "Style"
 msgstr "Стиль"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
-msgid  "Web site information"
+msgid "Web site information"
 msgstr "Інформація про веб-сайт"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Попередній перегляд"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Вибрані параметри будуть видалені.\n\nВи справді хочете видалити ці установки?"
+msgid "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr ""
+"Вибрані параметри будуть видалені.\n"
+"\n"
+"Ви справді хочете видалити ці установки?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
-msgid  "%NUMBER pages"
+msgid "%NUMBER pages"
 msgstr "%NUMBER сторінок"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
-msgid  "%NUMBER slides"
+msgid "%NUMBER slides"
 msgstr "%NUMBER слайдів"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
-msgid  "Created: %DATE"
+msgid "Created: %DATE"
 msgstr "Створено: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
-msgid  "Last modified: %DATE"
+msgid "Last modified: %DATE"
 msgstr "Остання зміна: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
-msgid  "Web Wizard Settings"
+msgid "Web Wizard Settings"
 msgstr "Параметри Веб-майстра"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
-msgid  "Background image:"
+msgid "Background image:"
 msgstr "Тло:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
-msgid  "Icon set:"
+msgid "Icon set:"
 msgstr "Набір значків:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
-msgid  "The icon set is used for presentations in HTML format."
+msgid "The icon set is used for presentations in HTML format."
 msgstr "Набір значків використовується для представлення у HTML-форматі."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
-msgid  "HTML Metadata"
+msgid "HTML Metadata"
 msgstr "Метадані HTML"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
-msgid  "Choose..."
+msgid "Choose..."
+msgstr "Виберіть..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__141.STRING.TEXT
+msgid "Choose..."
 msgstr "Виберіть..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
-msgid  "<default>"
+msgid "<default>"
 msgstr "<стандарт>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
-msgid  "Publishing via FTP Proxy is not supported."
+msgid "Publishing via FTP Proxy is not supported."
 msgstr "Публікація через FTP проксі не підтримується"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
-msgid  "<no background image>"
+msgid "<no background image>"
 msgstr "<без фонового зображення>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
-msgid  "<no icon set>"
+msgid "<no icon set>"
 msgstr "<без набору значків>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' could not be created."
+msgid "The FTP directory '%FILENAME' could not be created."
 msgstr "Не вдається створити FTP-каталог '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP-каталог '%FILENAME' не існує. \nСтворити каталог зараз?"
+msgid "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"FTP-каталог '%FILENAME' не існує. \n"
+"Створити каталог зараз?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
-msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr "Неможливо створити ZIP архів '%FILENAME': існує каталог з тією самою назвою."
+msgid "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr ""
+"Неможливо створити ZIP архів '%FILENAME': існує каталог з тією самою назвою."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Неможливо створити локальний каталог '%FILENAME'. \nПеревірте доступ на запис."
+msgid "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr ""
+"Неможливо створити локальний каталог '%FILENAME'. \n"
+"Перевірте доступ на запис."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Локальний каталог '%FILENAME' не існує.\nСтворити каталог зараз?"
+msgid "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"Локальний каталог '%FILENAME' не існує.\n"
+"Створити каталог зараз?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
-msgid  "Size: %NUMBERKB"
+msgid "Size: %NUMBERKB"
 msgstr "Розмір: %NUMBERKB"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
-msgid  "File not found. Would you like to specify a new file location?"
+msgid "File not found. Would you like to specify a new file location?"
 msgstr "Файл не знайдено. Вкажете нове шлях до нього?"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
-msgid  "FTP Connection"
+msgid "FTP Connection"
 msgstr "З'єднання FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
-msgid  "~User name:"
+msgid "~User name:"
 msgstr "~Ім'я користувача:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
-msgid  "~Password:"
+msgid "~Password:"
 msgstr "~Пароль:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
-msgid  "Connect"
+msgid "Connect"
 msgstr "З'єднатися"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
-msgid  "1. Enter FTP connection information."
+msgid "1. Enter FTP connection information."
 msgstr "1. Введіть інформацію про FTP-з'єднання."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
-msgid  "~Server name or IP address:"
+msgid "~Server name or IP address:"
 msgstr "~Назва сервера та IP-адреса:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
-msgid  "2. Connect to the server."
+msgid "2. Connect to the server."
 msgstr "2, З'єднання з сервером."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
-msgid  "3. ~Choose a remote directory (optional)."
+msgid "3. ~Choose a remote directory (optional)."
 msgstr "3. ~Виберіть віддалений каталог (при потребі)."
 
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.STRING.TEXT
+msgid "..."
+msgstr "..."
+
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
-msgid  "Connection status is unknown"
+msgid "Connection status is unknown"
 msgstr "Статус з'єдання невідомий"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
-msgid  "Connection was established successfully"
+msgid "Connection was established successfully"
 msgstr "З'єднання встановлено успішно"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
-msgid  "Username or password is wrong"
+msgid "Username or password is wrong"
 msgstr "Неправильне ім'я користувач чи пароль"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
-msgid  "Could not resolve server name"
+msgid "Could not resolve server name"
 msgstr "Не вдається визначити назву сервера"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
-msgid  "You do not have sufficient user rights"
+msgid "You do not have sufficient user rights"
 msgstr "У вас немає прав"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
-msgid  "Cannot connect to server"
+msgid "Cannot connect to server"
 msgstr "Не вдається з'єднатися з сервером"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
-msgid  "Unexpected error"
+msgid "Unexpected error"
 msgstr "Несподівана помилка"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
-msgid  "FTP publishing directory"
+msgid "FTP publishing directory"
 msgstr "Каталог FTP для публікації"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
-msgid  "This is not an FTP folder"
+msgid "This is not an FTP folder"
 msgstr "Це не FTP тека"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
-msgid  "Connecting..."
+msgid "Connecting..."
 msgstr "З'єднання..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
-msgid  "Agenda Wizard"
+msgid "Agenda Wizard"
 msgstr "Помічник порядку денного"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
-msgid  "Make ~manual changes to this agenda template"
+msgid "Make ~manual changes to this agenda template"
 msgstr "Внести ~ручні зміни у цьому шаблоні порядку денного"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.STRING.TEXT
+#, fuzzy
+msgid "Template name:"
+msgstr "Назва шаблону:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.STRING.TEXT
+#, fuzzy
+msgid "Location and file name:"
+msgstr "Шлях до файлу:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.STRING.TEXT
+#, fuzzy
+msgid "What do you want to do next?"
+msgstr "Що ви хочете зробити дальші?"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
 #, fuzzy
-msgid  "Please choose the page design for the agenda"
+msgid "Please choose the page design for the agenda"
 msgstr "Вкажіть сторінку дизайну для порядку денного"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
 #, fuzzy
-msgid  "Please select the headings you wish to include in your agenda template"
+msgid "Please select the headings you wish to include in your agenda template"
 msgstr "Вкажіть заголовки, які треба включити у шаблон порядку денного"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
 #, fuzzy
-msgid  "Please enter general information for the event"
+msgid "Please enter general information for the event"
 msgstr "Введіть загальну інформацію про подію"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
 #, fuzzy
-msgid  "Please specify items for the agenda"
+msgid "Please specify items for the agenda"
 msgstr "Вкажіть пункти для списку"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
 #, fuzzy
-msgid  "Please select the names you wish to include in your agenda template"
+msgid "Please select the names you wish to include in your agenda template"
 msgstr "Вкажіть імена, які треба включити у шаблон порядку денного"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.STRING.TEXT
+#, fuzzy
+msgid "Choose a name and save the template"
+msgstr "Вкажіть назву та збережіть шаблон"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
 #, fuzzy
-msgid  "Include form for recording minutes"
+msgid "Include form for recording minutes"
 msgstr "Включити форму для запису протоколу"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
 #, fuzzy
-msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr "Помічник допоможе створити шаблон порядку денного. Такий шаблон можна використовувати знову, коли ви забажаєте."
+msgid "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr ""
+"Помічник допоможе створити шаблон порядку денного. Такий шаблон можна "
+"використовувати знову, коли ви забажаєте."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
 #, fuzzy
-msgid  "Time:"
+msgid "Time:"
 msgstr "Час:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.STRING.TEXT
+#, fuzzy
+msgid "Name:"
+msgstr "Назва:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
 #, fuzzy
-msgid  "Location:"
+msgid "Location:"
 msgstr "Розташування:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
 #, fuzzy
-msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr "Мітки-заповнювачі використовуються для заповнення порожніх полів. Ви можете замінювати мітки на текст наступного разу."
+msgid "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr ""
+"Мітки-заповнювачі використовуються для заповнення порожніх полів. Ви можете "
+"замінювати мітки на текст наступного разу."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.STRING.TEXT
+msgid "..."
+msgstr "..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
 #, fuzzy
-msgid  "Create an ~agenda from this template"
+msgid "Create an ~agenda from this template"
 msgstr "Створити ~порядок денний за шаблоном"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
 #, fuzzy
-msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr "Для створення нового порядку денного з шаблону, вкажіть збережений шаблон та двічі натисніть на кнопку миші."
+msgid "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"Для створення нового порядку денного з шаблону, вкажіть збережений шаблон та "
+"двічі натисніть на кнопку миші."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
 #, fuzzy
-msgid  "Agenda item"
+msgid "Agenda item"
 msgstr "Елемент порядку денного"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
 #, fuzzy
-msgid  "Responsible"
+msgid "Responsible"
 msgstr "Відповідальна особа"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
 #, fuzzy
-msgid  "Duration"
+msgid "Duration"
 msgstr "Тривалість"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 #, fuzzy
-msgid  "Meeting called by"
+msgid "Meeting called by"
 msgstr "Зібрання скликано"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.STRING.TEXT
 #, fuzzy
-msgid  "Chairperson"
+msgid "Chairperson"
 msgstr "Головуючий"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.STRING.TEXT
 #, fuzzy
-msgid  "Minute keeper"
+msgid "Minute keeper"
 msgstr "Секретар"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
+msgid "Moderator"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 #, fuzzy
-msgid  "Attendees"
+msgid "Attendees"
 msgstr "Учасники"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.STRING.TEXT
 #, fuzzy
-msgid  "Observers"
+msgid "Observers"
 msgstr "Спостерігачі"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.STRING.TEXT
 #, fuzzy
-msgid  "Facility personnel"
+msgid "Facility personnel"
 msgstr "Персонал"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
 #, fuzzy
-msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr "Шаблон порядку денного буде містити всі позначки-заповнювачі вибраних людей. При створенні порядку денного з цього шаблону, Ви можете замінити позначки відповідними іменами."
+msgid "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr ""
+"Шаблон порядку денного буде містити всі позначки-заповнювачі вибраних людей. "
+"При створенні порядку денного з цього шаблону, Ви можете замінити позначки "
+"відповідними іменами."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
+msgid "Please read"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 #, fuzzy
-msgid  "Please bring"
+msgid "Please bring"
 msgstr "Принесіть, будь ласка"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
+msgid "Notes"
+msgstr "Примітки"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
 #, fuzzy
-msgid  "The agenda template will include placeholders for the selected items."
-msgstr "Шаблон порядку денного буде містити позначки-заповнювачі для вибраних елементів."
+msgid "The agenda template will include placeholders for the selected items."
+msgstr ""
+"Шаблон порядку денного буде містити позначки-заповнювачі для вибраних "
+"елементів."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.STRING.TEXT
+msgid "Date:"
+msgstr "Дата:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
 #, fuzzy
-msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr "Помічник створює шаблон порядку денного, дозволяючи створювати декілька порядків денних з однаковою розміткою, дизайном та параметрами."
+msgid "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr ""
+"Помічник створює шаблон порядку денного, дозволяючи створювати декілька "
+"порядків денних з однаковою розміткою, дизайном та параметрами."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
 #, fuzzy
-msgid  "Page design:"
+msgid "Page design:"
 msgstr "Дизайн сторінки:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
 #, fuzzy
-msgid  "myAgendaTemplate.stw"
+msgid "myAgendaTemplate.stw"
 msgstr "МійПорядокДеннийШаблон.stw"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
 #, fuzzy
-msgid  "My Agenda Template"
+msgid "My Agenda Template"
 msgstr "Мій шаблон порядку денного"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred while saving the agenda template."
+msgid "An unexpected error occurred while saving the agenda template."
 msgstr "Неочікувана помилка при записі шаблону порядку денного."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "Ім'я"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "Дата"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
 #, fuzzy
-msgid  "Time"
+msgid "Time"
 msgstr "Час"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
 #, fuzzy
-msgid  "Location"
+msgid "Location"
 msgstr "Розташування"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
 #, fuzzy
-msgid  "Click to replace this text"
+msgid "Click to replace this text"
 msgstr "Клацніть для зміни тексту"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.STRING.TEXT
+#, fuzzy
+msgid "Page design"
+msgstr "Дизайн сторінки"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
 #, fuzzy
-msgid  "General information"
+msgid "General information"
 msgstr "Загальна інформація"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
 #, fuzzy
-msgid  "Headings to include"
+msgid "Headings to include"
 msgstr "Включені заголовки"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
 #, fuzzy
-msgid  "Names"
+msgid "Names"
 msgstr "Імена"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
 #, fuzzy
-msgid  "Agenda items"
+msgid "Agenda items"
 msgstr "Елементи порядку денного"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.STRING.TEXT
+#, fuzzy
+msgid "Name and location"
+msgstr "Назва та розташування"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred while opening the agenda template."
+msgid "An unexpected error occurred while opening the agenda template."
 msgstr "Несподівана помилка при відкритті шаблону порядку денного."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.STRING.TEXT
+msgid "Type of meeting"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.STRING.TEXT
+#, fuzzy
+msgid "Please bring"
+msgstr "Принесіть, будь ласка"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.STRING.TEXT
+msgid "Please read"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.STRING.TEXT
+msgid "Notes"
+msgstr "Примітки"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.STRING.TEXT
+#, fuzzy
+msgid "Meeting called by"
+msgstr "Зібрання скликано"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.STRING.TEXT
+#, fuzzy
+msgid "Chairperson"
+msgstr "Головуючий"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.STRING.TEXT
+#, fuzzy
+msgid "Attendees"
+msgstr "Учасники"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.STRING.TEXT
+#, fuzzy
+msgid "Minute keeper"
+msgstr "Секретар"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.STRING.TEXT
+msgid "Moderator"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.STRING.TEXT
+#, fuzzy
+msgid "Observers"
+msgstr "Спостерігачі"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.STRING.TEXT
+#, fuzzy
+msgid "Facility personnel"
+msgstr "Персонал"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "Вставити"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
 #, fuzzy
-msgid  "Remove"
+msgid "Remove"
 msgstr "Вилучити"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
 #, fuzzy
-msgid  "Move up"
+msgid "Move up"
 msgstr "Вгору"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
 #, fuzzy
-msgid  "Move down"
+msgid "Move down"
 msgstr "Вниз"
 
 #: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Довідка"
 
 #: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Скасувати"
 
 #: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Назад"
 
 #: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
-msgid  "Ne~xt >>"
+msgid "Ne~xt >>"
 msgstr "Д~алі >>"
 
 #: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "~Перетворити"
 
 #: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Закрити"
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
-msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr "Цей помічник перетворює документи зі старих форматів StarOffice та документи Microsoft Office у новий XML формат %PRODUCTNAME."
+msgid "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr ""
+"Цей помічник перетворює документи зі старих форматів StarOffice та документи "
+"Microsoft Office у новий XML формат %PRODUCTNAME."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
-msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr "При перетворенні документів Microsoft вбудовані у них макроси VBA втрачають свою функціональність."
+msgid "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr ""
+"При перетворенні документів Microsoft вбудовані у них макроси VBA втрачають "
+"свою функціональність."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
-msgid  "Select the document type for conversion:"
+msgid "Select the document type for conversion:"
 msgstr "Виберіть тип документу для перетворення:"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Word templates"
+msgid "Word templates"
 msgstr "Шаблони Word"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Excel templates"
+msgid "Excel templates"
 msgstr "Шаблони Excel"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint templates"
+msgid "PowerPoint templates"
 msgstr "Шаблони PowerPoint"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Word documents"
+msgid "Word documents"
 msgstr "Документи Word"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Excel documents"
+msgid "Excel documents"
 msgstr "Документи Excel"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "PowerPoint documents"
+msgid "PowerPoint documents"
 msgstr "Документи PowerPoint"
 
 #: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
-msgid  "Including subdirectories"
+msgid "Including subdirectories"
 msgstr "Включаючи підкаталоги"
 
 #: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
-msgid  "Microsoft Office"
+msgid "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
-msgid  "Summary:"
+msgid "Summary:"
 msgstr "Короткий опис:"
 
 #: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
-msgid  "Import from:"
+msgid "Import from:"
 msgstr "Імпорт з:"
 
 #: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
-msgid  "Save to:"
+msgid "Save to:"
 msgstr "Зберегти до:"
 
 #: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
-msgid  "Imported_Templates"
+msgid "Imported_Templates"
 msgstr "Імпортовані_шаблони"
 
 #: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
-msgid  "Progress: "
+msgid "Progress: "
 msgstr "Виконання: "
 
 #: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
-msgid  "Document"
+msgid "Document"
 msgstr "Документ"
 
 #: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
-msgid  "Documents"
+msgid "Documents"
 msgstr "Документи"
 
 #: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
-msgid  "Templates"
+msgid "Templates"
 msgstr "Шаблони"
 
 #: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
-msgid  "The '%1' directory cannot be created: "
+msgid "The '%1' directory cannot be created: "
 msgstr "Неможливо створити каталог '%1':"
 
 #: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
-msgid  "The '%1' directory does not exist."
+msgid "The '%1' directory does not exist."
 msgstr "Каталог '%1' не існує."
 
 #: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
-msgid  "Do you want to create it now?"
+msgid "Do you want to create it now?"
 msgstr "Створити?"
 
 #: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Файл '< 1>' вже існує.<СR>Замінити?"
 
 #: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
-msgid  "Directories do not exist"
+msgid "Directories do not exist"
 msgstr "Каталоги не існують"
 
 #: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
-msgid  "Do you want to overwrite documents without being asked?"
+msgid "Do you want to overwrite documents without being asked?"
 msgstr "Перезаписувати документи без запиту?"
 
 #: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
-msgid  "Document macro has to be revised."
+msgid "Document macro has to be revised."
 msgstr "Макрос документу необхідно перевірити."
 
 #: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be saved."
+msgid "Document '<1>' could not be saved."
 msgstr "Документ '< 1>' не може бути збережений."
 
 #: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
-msgid  "Document '<1>' could not be opened."
+msgid "Document '<1>' could not be opened."
 msgstr "Документ '< 1>' не може бути відкритий."
 
 #: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
+msgid "Do you really want to terminate conversion at this point?"
 msgstr "Ви дійсно хочете зупинити перетворення у цьому місці?"
 
 #: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
-msgid  "Cancel Wizard"
+msgid "Cancel Wizard"
 msgstr "Скасувати Помічника"
 
 #: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
-msgid  "An unexpected error has occurred in the wizard."
+msgid "An unexpected error has occurred in the wizard."
 msgstr "Неочікувана помилка у Помічнику."
 
 #: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Помилка"
 
 #: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
-msgid  "Select a directory"
+msgid "Select a directory"
 msgstr "Виберіть каталог"
 
 #: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
-msgid  "Document Converter"
+msgid "Document Converter"
 msgstr "Конвертор документів"
 
 #: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Виконання"
 
 #: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
-msgid  "Retrieving the relevant documents:"
+msgid "Retrieving the relevant documents:"
 msgstr "Отримання відповідних документів:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
-msgid  "Converting the documents"
+msgid "Converting the documents"
 msgstr "Перетворення документів"
 
 #: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
-msgid  "Found:"
+msgid "Found:"
 msgstr "Знайдено:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
-msgid  "%1 found"
+msgid "%1 found"
 msgstr "%1 знайдено"
 
 #: importwizard/importwi.src#SREADY.STRING.TEXT
-msgid  "Finished"
+msgid "Finished"
 msgstr "Завершено"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
-msgid  "Text templates"
+msgid "Text templates"
 msgstr "Текстові шаблони"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheet templates"
+msgid "Spreadsheet templates"
 msgstr "Шаблони електронних таблиць"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation templates"
+msgid "Drawing/presentation templates"
 msgstr "Шаблони малюнків та презентації"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 #, fuzzy
-msgid  "Master documents"
+msgid "Master documents"
 msgstr "Складані документи"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
-msgid  "Text documents"
+msgid "Text documents"
 msgstr "Текстові документи"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
-msgid  "Spreadsheets"
+msgid "Spreadsheets"
 msgstr "Документи електронних таблиць"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
-msgid  "Drawing/presentation documents"
+msgid "Drawing/presentation documents"
 msgstr "Документи малюнків та презентації"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
-msgid  "Master documents/formulas"
+msgid "Master documents/formulas"
 msgstr "Складані документи та формули"
 
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_1.STRING.TEXT
+#, fuzzy
+msgid "Master documents"
+msgstr "Складані документи"
+
 #: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
-msgid  "Formulas"
+msgid "Formulas"
 msgstr "Формули"
 
 #: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
-msgid  "Source documents"
+msgid "Source documents"
 msgstr "Первинні документи"
 
 #: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
-msgid  "Target documents"
+msgid "Target documents"
 msgstr "Цільові документи"
 
 #: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
-msgid  "Create log file"
+msgid "Create log file"
 msgstr "Створити журнал"
 
 #: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
-msgid  "<COUNT> documents converted"
+msgid "<COUNT> documents converted"
 msgstr "<COUNT> документів перетворено"
 
 #: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
-msgid  "A log file will be created in your work directory"
+msgid "A log file will be created in your work directory"
 msgstr "У вашому робочому каталозі буде створено журнал"
 
 #: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
-msgid  "Show log file"
+msgid "Show log file"
 msgstr "Показати журнал"
 
 #: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
-msgid  "All subdirectories will be taken into account"
+msgid "All subdirectories will be taken into account"
 msgstr "Включно усі підкаталоги"
 
 #: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
-msgid  "These will be exported to the following directory:"
+msgid "These will be exported to the following directory:"
 msgstr "Експорт до наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі текстові документи %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі текстові документи %PRODUCTNAME з наступного "
+"каталогу:"
 
 #: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі документи електронних таблиць %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі документи електронних таблиць %PRODUCTNAME з "
+"наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі рисунки та презентації %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі рисунки та презентації %PRODUCTNAME з наступного "
+"каталогу:"
 
 #: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі документи формул %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі документи формул %PRODUCTNAME з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі текстові шаблони %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі текстові шаблони %PRODUCTNAME з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі шаблони електронних таблиць %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі шаблони електронних таблиць %PRODUCTNAME з наступного "
+"каталогу:"
 
 #: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
-msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі шаблони рисунків та презентацій %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі шаблони рисунків та презентацій %PRODUCTNAME з "
+"наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
-msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr "Будуть імпортовані усі складні документи %PRODUCTNAME з наступного каталогу:"
+msgid "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr ""
+"Будуть імпортовані усі складні документи %PRODUCTNAME з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
-msgid  "All Word documents contained in the following directory will be imported:"
+msgid "All Word documents contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі документи Word з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
-msgid  "All Excel documents contained in the following directory will be imported:"
+msgid "All Excel documents contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі документи Excel з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
-msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgid "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі документи PowerPoint з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
-msgid  "All Word templates contained in the following directory will be imported:"
+msgid "All Word templates contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі шаблони Word з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
-msgid  "All Excel templates contained in the following directory will be imported:"
+msgid "All Excel templates contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі шаблони Excel з наступного каталогу:"
 
 #: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
-msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgid "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "Будуть імпортовані усі шаблони PowerPoint з наступного каталогу:"
 
 #: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
-msgid  "%PRODUCTNAME Calendar"
+msgid "%PRODUCTNAME Calendar"
 msgstr "Календар %PRODUCTNAME"
 
 #: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
-msgid  "Back"
+msgid "Back"
 msgstr "Назад"
 
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 #, fuzzy
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "Особисті дані"
 
 #: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
-msgid  "Add Holidays to Calendar"
+msgid "Add Holidays to Calendar"
 msgstr "Додати свята до календарю"
 
 #: schedule/schedule.src#DLGOK.STRING.TEXT
-msgid  "Create"
+msgid "Create"
 msgstr "Створити"
 
 #: schedule/schedule.src#DLGCANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Скасувати"
 
 #: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "Календар"
 
 #: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
-msgid  "~Year Overview"
+msgid "~Year Overview"
 msgstr "Огляд ~року"
 
 #: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "~Місяць"
 
 #: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
-msgid  "Add holidays for"
+msgid "Add holidays for"
 msgstr "Додати свята для"
 
 #: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
-msgid  "USA"
+msgid "USA"
 msgstr "Україна"
 
 #: schedule/schedule.src#DLGTIME.STRING.TEXT
-msgid  "Time Frame"
+msgid "Time Frame"
 msgstr "Період"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 #, fuzzy
-msgid  "Year"
+msgid "Year"
 msgstr "Рік"
 
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
 #, fuzzy
-msgid  "Month"
+msgid "Month"
 msgstr "Місяць"
 
+#: schedule/schedule.src#DLGCALOWNDATA.STRING.TEXT
+#, fuzzy
+msgid "Personal Data"
+msgstr "Особисті дані"
+
 #: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "Вст~авити"
 
 #: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "В~идалити"
 
 #: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
-msgid  "New Event"
+msgid "New Event"
 msgstr "Створити подію"
 
 #: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
-msgid  "Event"
+msgid "Event"
 msgstr "Подія"
 
 #: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
-msgid  "One-Time"
+msgid "One-Time"
 msgstr "Однократно"
 
 #: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "День"
 
+#: schedule/schedule.src#DLGCALEVENTMONTH.STRING.TEXT
+#, fuzzy
+msgid "Month"
+msgstr "Місяць"
+
+#: schedule/schedule.src#DLGCALEVENTYEAR.STRING.TEXT
+#, fuzzy
+msgid "Year"
+msgstr "Рік"
+
 #: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
-msgid  "usa.bmp"
+msgid "usa.bmp"
 msgstr "usa.bmp"
 
 #: schedule/schedule.src#DLGSTATE.STRING.TEXT
-msgid  "Public holidays"
+msgid "Public holidays"
 msgstr "Офіційні свята"
 
 #: schedule/schedule.src#DLGMONTH.STRING.TEXT
-msgid  "January"
+msgid "January"
 msgstr "Січень"
 
 #: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
-msgid  "February"
+msgid "February"
 msgstr "Лютий"
 
 #: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
-msgid  "March"
+msgid "March"
 msgstr "Березень"
 
 #: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
-msgid  "April"
+msgid "April"
 msgstr "Квітень"
 
 #: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
-msgid  "May"
+msgid "May"
 msgstr "Травень"
 
 #: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
-msgid  "June"
+msgid "June"
 msgstr "Червень"
 
 #: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
-msgid  "July"
+msgid "July"
 msgstr "Липень"
 
 #: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
-msgid  "August"
+msgid "August"
 msgstr "Серпень"
 
 #: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
-msgid  "September"
+msgid "September"
 msgstr "Вересень"
 
 #: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
-msgid  "October"
+msgid "October"
 msgstr "Жовтень"
 
 #: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
-msgid  "November"
+msgid "November"
 msgstr "Листопад"
 
 #: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
-msgid  "December"
+msgid "December"
 msgstr "Грудень"
 
 #: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
-msgid  "Yearly / Monthly Calendar"
+msgid "Yearly / Monthly Calendar"
 msgstr "Календар на рік / на місяць"
 
 #: schedule/schedule.src#MSGCALERROR.STRING.TEXT
-msgid  "An error occurred while creating the calendar."
+msgid "An error occurred while creating the calendar."
 msgstr "Помилка при  створенні календарю."
 
 #: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
-msgid  "Delete event entries"
+msgid "Delete event entries"
 msgstr "Видалити записи події"
 
 #: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
-msgid  "Delete the selected entries?"
+msgid "Delete the selected entries?"
 msgstr "Видалити вибрані записи?"
 
 #: schedule/schedule.src#STLWORKDAY.STRING.TEXT
-msgid  "Workweek"
+msgid "Workweek"
 msgstr "Робочий тиждень"
 
 #: schedule/schedule.src#STLWEEKEND.STRING.TEXT
-msgid  "Weekend"
+msgid "Weekend"
 msgstr "Вихідні"
 
+#: schedule/schedule.src#NAMECALYEAR.STRING.TEXT
+msgid "Calendar"
+msgstr "Календар"
+
+#: schedule/schedule.src#NAMECALMONTH.STRING.TEXT
+#, fuzzy
+msgid "Month"
+msgstr "Місяць"
+
 #: schedule/schedule.src#SPROGRESS.STRING.TEXT
-msgid  "Progress:"
+msgid "Progress:"
 msgstr "Виконання:"
 
 #: template/template.src#SAMPLES.STRING.TEXT
-msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr "Необхідно створити документ на основі цього шаблону, щоб стали доступні всі функції цього прикладу."
+msgid "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr ""
+"Необхідно створити документ на основі цього шаблону, щоб стали доступні всі "
+"функції цього прикладу."
 
 #: template/template.src#SAMPLES___1.STRING.TEXT
-msgid  "Remarks"
+msgid "Remarks"
 msgstr "Зауваження"
 
 #: template/template.src#STYLES.STRING.TEXT
-msgid  "Theme Selection"
+msgid "Theme Selection"
 msgstr "Вибір теми"
 
 #: template/template.src#STYLES___1.STRING.TEXT
-msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr "Помилка при збереженні документу в буферу обміну! Наступна дія не може бути скасована."
+msgid "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr ""
+"Помилка при збереженні документу в буферу обміну! Наступна дія не може бути "
+"скасована."
 
 #: template/template.src#STYLES___2.STRING.TEXT
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Скасувати"
 
 #: template/template.src#STYLES___3.STRING.TEXT
-msgid  "~OK"
+msgid "~OK"
 msgstr "~Гаразд"
 
 #: template/template.src#AGENDADLGNAME.STRING.TEXT
-msgid  "Minutes Template"
+msgid "Minutes Template"
 msgstr "Шаблон протоколу"
 
 #: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
-msgid  "An option must be confirmed."
+msgid "An option must be confirmed."
 msgstr "Необхідно підтвердити параметр."
 
 #: template/template.src#AGENDADLGFRAME.STRING.TEXT
-msgid  "Minutes Type"
+msgid "Minutes Type"
 msgstr "Тип протоколу"
 
 #: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
-msgid  "Results Minutes"
+msgid "Results Minutes"
 msgstr "Протокол зведення"
 
 #: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
-msgid  "Evaluation Minutes"
+msgid "Evaluation Minutes"
 msgstr "Оціночний протокол"
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
-msgid  "The bookmark 'Recipient' is missing."
+msgid "The bookmark 'Recipient' is missing."
 msgstr "Відсутня закладка «Отримувач»."
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
-msgid  "Form letter fields can not be included."
+msgid "Form letter fields can not be included."
 msgstr "Неможливо включити поля стандартного листа."
 
 #: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
-msgid  "An error has occurred."
+msgid "An error has occurred."
 msgstr "Помилка."
 
 #: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
-msgid  "Addressee"
+msgid "Addressee"
 msgstr "Адресат"
 
 #: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
-msgid  "One recipient"
+msgid "One recipient"
 msgstr "Один отримувач"
 
 #: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
-msgid  "Several recipients (address database)"
+msgid "Several recipients (address database)"
 msgstr "Декілька отримувачів (база даних адрес)"
 
 #: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
-msgid  "Use of This Template"
+msgid "Use of This Template"
 msgstr "Вживання цього шаблону"
 
 #: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
-msgid  "Click placeholder and overwrite"
+msgid "Click placeholder and overwrite"
 msgstr "Клацніть на каркасі об'єкту і перезапишіть"
 
 #: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
-msgid  "Company"
+msgid "Company"
 msgstr "Компанія"
 
 #: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
-msgid  "Department"
+msgid "Department"
 msgstr "Відділок"
 
 #: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
-msgid  "First Name"
+msgid "First Name"
 msgstr "Ім'я"
 
 #: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
-msgid  "Last Name"
+msgid "Last Name"
 msgstr "Прізвище"
 
 #: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
-msgid  "Street"
+msgid "Street"
 msgstr "Вулиця"
 
 #: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
-msgid  "Country"
+msgid "Country"
 msgstr "Країна"
 
 #: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
-msgid  "ZIP/Postal Code"
+msgid "ZIP/Postal Code"
 msgstr "Поштовий індекс"
 
 #: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
-msgid  "City"
+msgid "City"
 msgstr "Місто"
 
 #: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Звернення"
 
 #: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "Посада"
 
 #: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
-msgid  "Form of Address"
+msgid "Form of Address"
 msgstr "Форма адреси"
 
 #: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
-msgid  "Initials"
+msgid "Initials"
 msgstr "Ініціали"
 
 #: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
-msgid  "Salutation"
+msgid "Salutation"
 msgstr "Звернення"
 
 #: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
-msgid  "Home Phone"
+msgid "Home Phone"
 msgstr "Домашній телефон"
 
 #: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
-msgid  "Work Phone"
+msgid "Work Phone"
 msgstr "Робочий телефон"
 
 #: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "Факс"
 
 #: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr "Ел.пошта"
 
 #: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
-msgid  "Notes"
+msgid "Notes"
 msgstr "Примітки"
 
 #: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
-msgid  "Alt. Field 1"
+msgid "Alt. Field 1"
 msgstr "Альтерн. поле 1"
 
 #: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
-msgid  "Alt. Field 2"
+msgid "Alt. Field 2"
 msgstr "Альтерн. поле 2"
 
 #: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
-msgid  "Alt. Field 3"
+msgid "Alt. Field 3"
 msgstr "Альтерн. поле 3"
 
 #: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
-msgid  "Alt. Field 4"
+msgid "Alt. Field 4"
 msgstr "Альтерн. поле 4"
 
 #: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
-msgid  "ID"
+msgid "ID"
 msgstr "ID"
 
 #: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "Область"
 
 #: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
-msgid  "Office Phone"
+msgid "Office Phone"
 msgstr "Робочий телефон"
 
 #: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
-msgid  "Pager"
+msgid "Pager"
 msgstr "Пейджер"
 
 #: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
-msgid  "Mobile Phone"
+msgid "Mobile Phone"
 msgstr "Мобільний телефон"
 
 #: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
-msgid  "Other Phone"
+msgid "Other Phone"
 msgstr "Інший телефон"
 
 #: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
-msgid  "Calendar URL"
+msgid "Calendar URL"
 msgstr "URL календаря"
 
 #: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
-msgid  "Invite"
+msgid "Invite"
 msgstr "Запросити"
 
 #: template/template.src#TEXTFIELD.STRING.TEXT
-msgid  "User data field is not defined!"
+msgid "User data field is not defined!"
 msgstr "Не визначено поле користувача!"
 
 #: template/template.src#NEWSLETTER.STRING.TEXT
-msgid  "General layout"
+msgid "General layout"
 msgstr "Загальна розмітка"
 
 #: template/template.src#NEWSLETTER___1.STRING.TEXT
-msgid  "Default layout"
+msgid "Default layout"
 msgstr "Базова розмітка"
 
 #: template/template.src#NEWSLETTER___2.STRING.TEXT
-msgid  "Commemorative publication layout"
+msgid "Commemorative publication layout"
 msgstr "Розмітка ювілейної публікації"
 
 #: template/template.src#NEWSLETTER___3.STRING.TEXT
-msgid  "Brochure layout"
+msgid "Brochure layout"
 msgstr "Розмітка брошури"
 
 #: template/template.src#NEWSLETTER___10.STRING.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "Формат"
 
 #: template/template.src#NEWSLETTER___11.STRING.TEXT
-msgid  "Single-sided"
+msgid "Single-sided"
 msgstr "З одного боку"
 
 #: template/template.src#NEWSLETTER___12.STRING.TEXT
-msgid  "Double-sided"
+msgid "Double-sided"
 msgstr "З двох боків"

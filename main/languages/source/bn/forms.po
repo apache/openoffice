@@ -1,272 +1,282 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
-msgid  "The contents of a combo box or list field could not be determined."
+msgid "The contents of a combo box or list field could not be determined."
 msgstr "কম্বো বাক্স বা তালিকা ক্ষেত্রের উপাদান গুলো নির্দিষ্ট করা যায়নি। "
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
+msgid "Insert graphics"
 msgstr "গ্রাফিক্স প্রবেশ করান"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
-msgid  "substituted"
+msgid "substituted"
 msgstr "প্রতিস্থাপিত"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
-msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr "এই নিয়ন্ত্রনটি লোড করার সময় একটি ত্রুটি তৈরী হয়েছিল। এটি জায়গা ধারক দ্বারা প্রতিস্থাপিত হয়েছিল।"
+msgid "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+"এই নিয়ন্ত্রনটি লোড করার সময় একটি ত্রুটি তৈরী হয়েছিল। এটি জায়গা ধারক "
+"দ্বারা প্রতিস্থাপিত হয়েছিল।"
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
+msgid "Error reading data from database"
 msgstr "উপাত্তধার থেকে উপাত্ত পড়তে সমস্যা হচ্ছে।"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
-msgid  "Connection failed"
+msgid "Connection failed"
 msgstr "সংযোগ স্থাপনে ব্যর্থ"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
-msgid  "The data content could not be loaded."
+msgid "The data content could not be loaded."
 msgstr "উপাত্ত বিষয়বস্তু লোড করতে পারে নি"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
-msgid  "The data content could not be updated"
+msgid "The data content could not be updated"
 msgstr "উপাত্ত বিষয়বস্তু হালনাগাদ করতে পারে নি"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
+msgid "Error inserting the new record"
 msgstr "নতুন রেকর্ড প্রবেশে ত্রুটি"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
+msgid "Error updating the current record"
 msgstr "নতুন রেকর্ড হালনাগাদ করতে ত্রুটি"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
+msgid "Error deleting the current record"
 msgstr "বর্তমান রেকর্ড মুছতে ত্রুটি"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
+msgid "Error deleting the specified records"
 msgstr "সুনির্দিষ্ট রেকর্ড মুছতে ত্রুটি"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
-msgid  "The object cannot be NULL."
+msgid "The object cannot be NULL."
 msgstr "অবজেক্টটি ফাঁকা হতে পারে না।"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
-msgid  "Insert graphics from..."
+msgid "Insert graphics from..."
 msgstr "...হতে গ্রাফিক্স প্রবেশ করান"
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
+msgid "Remove graphics"
 msgstr "গ্রাফিক্স সরিয়ে ফেলুন"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
-msgid  "The given stream is invalid."
+msgid "The given stream is invalid."
 msgstr " দেওয়া স্ট্রীম সঠিক নয়।"
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
+msgid "Syntax error in query expression"
 msgstr " অনুসন্ধান সমীকরনে বাক্যরীতি ত্রুটি রয়েছে।"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
-msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr "এই নিয়ন্ত্রনে সংযুক্তি দ্বারা সমর্থিত মূল্য ধরন উপাত্ত আদান-প্রদানে ব্যবহার করা যায়না।"
+msgid "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+"এই নিয়ন্ত্রনে সংযুক্তি দ্বারা সমর্থিত মূল্য ধরন উপাত্ত আদান-প্রদানে ব্যবহার "
+"করা যায়না।"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
-msgid  "Record"
+msgid "Record"
 msgstr "রেকর্ড"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
-msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr "নিয়ন্ত্রনটি একটি বাহ্যিক মূল্যের সাথে যুক্ত,যেটি কখনও বৈধতা দাতা হিসেবে কাজ করে। নতুন বৈধতা দাতা নিয়োগ করতে চাইলে, আপনাকে প্রথমে মূল্য সংযোজন সরিয়ে ফেলতে হবে।"
+msgid "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+"নিয়ন্ত্রনটি একটি বাহ্যিক মূল্যের সাথে যুক্ত,যেটি কখনও বৈধতা দাতা হিসেবে কাজ "
+"করে। নতুন বৈধতা দাতা নিয়োগ করতে চাইলে, আপনাকে প্রথমে মূল্য সংযোজন সরিয়ে "
+"ফেলতে হবে।"
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
-msgid  "of"
+msgid "of"
 msgstr "এর"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "বর্তমান অবস্থার উপাদান গুলো পরিবর্তিত হয়েছে।\nআপনি কি আপনার পরিবর্তন গুলো সংরক্ষন করতে চান? "
+msgid "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+"বর্তমান অবস্থার উপাদান গুলো পরিবর্তিত হয়েছে।\n"
+"আপনি কি আপনার পরিবর্তন গুলো সংরক্ষন করতে চান? "
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "ভাগে ভাগে সাজানো বিচারধারায় ত্রুটিপূর্ন মানসমূহ"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "পরিশ্রুতক বিচারধারায় ত্রুটিপূর্ন মানসমূহ"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
-msgid  "To execute this function, parameters are needed."
+msgid "To execute this function, parameters are needed."
 msgstr "এই কাজটি চালাতে,প্যারামিটামূহের প্রয়োজন।"
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
-msgid  "This function cannot be executed, but is only for status queries."
+msgid "This function cannot be executed, but is only for status queries."
 msgstr "এই কাজটি চালানো যাবে না, কিন্তু কেবল অবস্থা অনুসন্ধানের জন্য।"
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
-msgid  "Unknown function."
+msgid "Unknown function."
 msgstr "অজানা কাজ।"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
-msgid  "Please enter a binding expression."
+msgid "Please enter a binding expression."
 msgstr "অনুগ্রহ করে একটি বাইন্ডিং সমীকরণ প্রবেশ করুন।"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
-msgid  "This is an invalid binding expression."
+msgid "This is an invalid binding expression."
 msgstr "এটি একটি ভুল বাইন্ডিং সমীকরণ।"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
-msgid  "Value is invalid."
+msgid "Value is invalid."
 msgstr "মান সঠিক নয়।"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
-msgid  "A value is required."
+msgid "A value is required."
 msgstr "একটি মান প্রয়োজন।"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
-msgid  "The constraint '$1' not validated."
+msgid "The constraint '$1' not validated."
 msgstr "বাধ্যতা '$1' বৈধকৃত নয়।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
-msgid  "The value is not of the type '$2'."
+msgid "The value is not of the type '$2'."
 msgstr "মানটি '$2' ধরণের নয়।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
-msgid  "The value must be smaller than or equal to $2."
+msgid "The value must be smaller than or equal to $2."
 msgstr "মানটি অবশ্যই $2 এর সমান বা ছোট হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
-msgid  "The value must be smaller than $2."
+msgid "The value must be smaller than $2."
 msgstr "মানটি অবশ্যই $2 এর ছোট হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
-msgid  "The value must be greater than or equal to $2."
+msgid "The value must be greater than or equal to $2."
 msgstr "মানটি অবশ্যই $2 এর সমান বা বড় হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
-msgid  "The value must be greater than $2."
+msgid "The value must be greater than $2."
 msgstr "মানটি অবশ্যই $2 এর বড় হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
-msgid  "The value does not match the pattern '$2'."
+msgid "The value does not match the pattern '$2'."
 msgstr "মানটি '$2' এর সাথে মেলেনা।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
-msgid  "$2 digits allowed at most."
+msgid "$2 digits allowed at most."
 msgstr "সর্বোচ্চ '$2' অঙ্কসমূহ সমর্থিত।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
-msgid  "$2 fraction digits allowed at most."
+msgid "$2 fraction digits allowed at most."
 msgstr "সর্বোচ্চ '$2' অঙ্ক ভগ্নাংশ সমর্থিত।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
-msgid  "The string must be $2 characters long."
+msgid "The string must be $2 characters long."
 msgstr "পংক্তিটি অবশ্যই '$2' বর্ণ দীর্ঘ হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
-msgid  "The string must be at least $2 characters long."
+msgid "The string must be at least $2 characters long."
 msgstr "পংক্তিটি অবশ্যই কমপক্ষে '$2' বর্ণ দীর্ঘ হবে।"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
-msgid  "The string can only be $2 characters long at most."
+msgid "The string can only be $2 characters long at most."
 msgstr "পংক্তিটি সর্বোচ্চ '$2' বর্ণ দীর্ঘ হবে।"
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
-msgid  "String"
+msgid "String"
 msgstr "পংক্তি"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
+msgid "Hyperlink"
 msgstr "হাইপারলিংক"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
+msgid "True/False (Boolean)"
 msgstr "সত্য/মিথ্যা(বুলিয়ান)"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
+msgid "Decimal"
 msgstr "দশমিক"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
+msgid "Floating point"
 msgstr "ফ্লোটিং পয়েন্ট"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
-msgid  "Double"
+msgid "Double"
 msgstr "দ্বিগুn"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "তারিখ"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "সময়"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "তারিখ এবং সময়"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
-msgid  "Month and year"
+msgid "Month and year"
 msgstr "মাস এবং বছর"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "বছর"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
+msgid "Month and day"
 msgstr "মাসএবং দিন"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "মাস"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "দিন"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
+msgid "Error during evaluation"
 msgstr "নির্ণয় করতে ত্রুটি"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
-msgid  "The string '$1' does not match the required regular expression '$2'."
+msgid "The string '$1' does not match the required regular expression '$2'."
 msgstr "পংক্তি '$1' প্রয়োজনীয় রেগুলার এক্সপ্রেশন '$2' এর সাথে মিলেনা।"
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr "বাইন্ডিং"

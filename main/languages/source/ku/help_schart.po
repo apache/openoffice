@@ -1,32 +1,4597 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+#: 00/00000004.xhp#TIT
+msgid "To access this function..."
+msgstr ""
+
+#: 00/00000004.xhp#HD_ID3156023.1
+msgid "<variable id=\"wie\">To access this function...</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150791.9
+msgid "Choose <emph>View - Chart Data Table</emph> (Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3154686.55
+msgid "On Formatting bar, click"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153728
+msgid "<image id=\"img_id3147428\" src=\"res/commandimagelist/sc_grid.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id3147428\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3154942.11
+msgid "Chart Data"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153160.12
+msgid "<variable id=\"efgttl\">Choose <emph>Insert - Title </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3149121.13
+msgid "Choose <emph>Insert - Legend </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155444.56
+msgid "Choose <emph>Format - Legend - Position</emph> tab (Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3156385.16
+msgid "Choose <emph>Insert - Data Labels </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3147341.68
+msgid "Choose <emph>Format - Format Selection - Data Point/Data Series - Data Labels</emph> tab (for data series and data point) (Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3149565.69
+msgid "<variable id=\"efgaug\">Choose <emph>Insert - Axes </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150297.17
+msgid "Choose <emph>Insert - Grids </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3145789.58
+msgid "On Formatting bar, click"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150307
+msgid "<image id=\"img_id3155111\" src=\"res/commandimagelist/sc_togglegridhorizontal.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3155111\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155378.19
+msgid "Horizontal Grid On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3145384
+msgid "<image id=\"img_id3152989\" src=\"res/commandimagelist/sc_togglegridvertical.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3152989\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153067.20
+msgid "Vertical Grid On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3148869.21
+msgid "<variable id=\"efgsta\">Choose <emph>Insert - Y Error Bars </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID1061738
+msgid "<variable id=\"trendlines\">Choose Insert - Trend Lines (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3154532.67
+msgid "<variable id=\"sonderz\">Choose <emph>Insert - Special Character </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153246.22
+msgid "<variable id=\"frtoes\">Choose <emph>Format - Format Selection </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150214.23
+msgid "<variable id=\"frtodd\">Choose <emph>Format - Format Selection - Data Point</emph> dialog (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3154765.24
+msgid "<variable id=\"frtodr\">Choose <emph>Format - Format Selection - Data Series</emph> dialog (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153009.66
+msgid "<variable id=\"optionen\">Choose <emph>Format - Format Selection - Data Series - Options</emph> tab (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3154707.25
+msgid "<variable id=\"frtttl\">Choose <emph>Format - Title </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155758.26
+msgid "<variable id=\"frtoe\">Choose <emph>Format - Format Selection - Title</emph> dialog (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153075.27
+msgid "<variable id=\"frtegt\">Choose <emph>Format - Format Selection - Title</emph> dialog (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3149048.28
+msgid "<variable id=\"frttya\">Choose <emph>Format - Title </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3147402.70
+msgid "<variable id=\"frttyab\">Choose <emph>Format - Axis </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3147297.29
+msgid "<variable id=\"frtlgd\">Choose <emph>Format - Legend, or Format - Format Selection</emph> - <emph>Legend </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3157876.31
+msgid "<variable id=\"frtaa\">Choose <emph>Format - Axis - X Axis/Secondary X Axis/Z Axis/All Axes </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3146883.32
+msgid "<variable id=\"frtyas\">Choose <emph>Format - Axis - Y Axis/Secondary Y Axis </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3149349.33
+msgid "<variable id=\"frtysk\">Choose <emph>Format - Axis - Y Axis - Scale</emph> tab (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID1006200812385491
+msgid "<variable id=\"positioning\">Choose <emph>Format - Axis - X Axis - Positioning</emph> tab (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID31493459.33
+msgid "<variable id=\"positioningy\">Choose <emph>Format - Axis - Y Axis - Positioning</emph> tab (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150477.34
+msgid "<variable id=\"frtgt\">Choose <emph>Format - Grid </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150746.35
+msgid "<variable id=\"frtgtr\">Choose <emph>Format - Grid - X, Y, Z Axis Major Grid/ X, Y, Z Minor Grid/ All Axis Grids </emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3145828.36
+msgid "<variable id=\"frtdgw\">Choose <emph>Format - Chart Wall - Chart</emph> dialog (Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153039.37
+msgid "<variable id=\"frtdgb\">Choose <emph>Format - Chart Floor</emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150141.38
+msgid "<variable id=\"frtdgf\">Choose <emph>Format - Chart Area</emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155830.39
+msgid "Choose <emph>Format - Chart Type </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3145140.59
+msgid "On Formatting bar, click"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3148582
+msgid "<image id=\"img_id3153124\" src=\"res/commandimagelist/sc_diagramtype.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3153124\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155956.41
+msgid "Edit Chart Type"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3155621.45
+msgid "<variable id=\"frtdda\">Choose <emph>Format - 3D View</emph>(Charts)</variable>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150661.61
+msgid "Choose <emph>Format - Arrangement </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153046.65
+msgid "Open context menu - choose <emph>Arrangement </emph>(Charts)"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3151020
+msgid "<image id=\"img_id3150936\" src=\"res/commandimagelist/sc_toggletitle.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3150936\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150467.48
+msgid "Title On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3149775
+msgid "<image id=\"img_id3149781\" src=\"res/commandimagelist/sc_toggleaxistitle.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3149781\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3147168.49
+msgid "Axis Titles On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3163824
+msgid "<image id=\"img_id3149708\" src=\"res/commandimagelist/sc_togglegridhorizontal.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3149708\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3150962.50
+msgid "Horizontal Grid On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3151183
+msgid "<image id=\"img_id3151189\" src=\"res/commandimagelist/sc_toggleaxisdescr.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3151189\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153210.51
+msgid "Show/Hide Axis Descriptions"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3156315
+msgid "<image id=\"img_id3156322\" src=\"res/commandimagelist/sc_togglegridvertical.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id3156322\">Icon</alt></image>"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID3153153.52
+msgid "Vertical Grid On/Off"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID9631641
+msgid "Choose Insert - <switchinline select=\"appl\"><caseinline select=\"WRITER\"> Object -</caseinline></switchinline> Chart "
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID2985320
+msgid "Choose Insert - <switchinline select=\"appl\"><caseinline select=\"WRITER\"> Object -</caseinline></switchinline> Chart "
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID1096530
+msgid "Double-click a chart, then choose Format - Data Ranges"
+msgstr ""
+
+#: 00/00000004.xhp#PAR_ID733359
+msgid "<variable id=\"slp\">In a chart of Line type or XY type which displays lines, mark Smooth lines and click the Properties button</variable>"
+msgstr ""
+
+#: 01/03010000.xhp#TIT
+msgid "Data Table"
+msgstr ""
+
+#: 01/03010000.xhp#HD_ID3150869.1
+msgid "<link href=\"text/schart/01/03010000.xhp\" name=\"Data Table\">Data Table</link>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3151115.2
+msgid "<ahelp hid=\".uno:DiagramData\">Opens the<emph> Data Table </emph>dialog where you can edit the chart data.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3149667.51
+msgid "The<emph> Data Table </emph>dialog is not available if you insert a chart that is based on a Calc sheet or on a Writer table."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID6746421
+msgid "<link href=\"text/swriter/01/06990000.xhp\">To update a chart manually when a Writer table got changed</link>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID2565996
+msgid "Some changes will become visible only after you close and reopen the dialog."
+msgstr ""
+
+#: 01/03010000.xhp#HD_ID6129947
+msgid "To change chart data"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID8141117
+msgid "When you create a chart that is based on default data, or when you copy a chart into your document, you can open the Data Table dialog to enter your own data. The chart responds to the data in a live preview."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID9487594
+msgid "Close the Chart Data dialog to apply all changes to the chart. Choose <emph>Edit - Undo</emph> to cancel the changes."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID4149906
+msgid "Insert or select a chart that is not based on existing cell data."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID6064943
+msgid "Choose <emph>View - Chart Data Table</emph> to open the Data Table dialog."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3236182
+msgid "The data series are organized in columns. The role of the left most column is set to categories or data labels respectively. The contents of the left most column are always formatted as text. You can insert more text columns to be used as hierarchical labels."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID9799798
+msgid "Click a cell in the dialog and change the contents. Click another cell to see the changed contents in the preview."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID1251258
+msgid "Enter the name of the data series in the text box above the column."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID743430
+msgid "Use the icons above the table to insert or delete rows and columns. For data series with multiple columns, only whole data series can be inserted or deleted. "
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID8111819
+msgid "The order of the data series in the chart is the same as in the data table. Use the <emph>Move Series Right</emph> icon to switch the current column with its neighbor on the right."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID9116794
+msgid "The order of the categories or data points in the chart is the same as in the data table. Use the <emph>Move Row Down</emph> icon to switch the current row with its neighbor below."
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3150297.20
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a new row below the current row.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3145384.23
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a new data series after the current column.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3152297
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a new text column after the current column for hierarchical axes descriptions.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3159231.26
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the current row. It is not possible to delete the label row.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3153336.29
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the current series or text column. It is not possible to delete the first text column.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID4089175
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Switches the current column with its neighbor at the right.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID3949095
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Switches the current row with its neighbor below.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID990949095
+msgid "<ahelp hid=\".\" visibility=\"hidden\">For a category axis that might be a date axis, you can change the formatting of the data from Date to Text.</ahelp>"
+msgstr ""
+
+#: 01/03010000.xhp#PAR_ID6697286
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter names for the data series.</ahelp>"
+msgstr ""
+
+#: 01/04010000.xhp#TIT
+msgid "Titles"
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3147345.1
+msgid "Titles"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3150298.2
+msgid "<variable id=\"titel\"><ahelp hid=\".uno:InsertMenuTitles\">Opens a dialog to enter or modify the titles in a chart.</ahelp></variable> You can define the text for the main title, subtitle and the axis labels, and specify if they are displayed."
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3150207.3
+msgid "Main Title"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3150371.4
+msgid "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_MAINTITLE\">Marking the <emph>Main Title</emph> option activates the main title. Enter the desired title in the corresponding text field.</ahelp>"
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3146980.5
+msgid "Subtitle"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3149404.6
+msgid "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_SUBTITLE\">Marking the <emph>Subtitle</emph> option activates the subtitle. Enter the desired title in the corresponding text field.</ahelp>"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3152901.7
+msgid "<variable id=\"sytexttitel\"><ahelp hid=\".uno:ToggleTitle\">Click <emph>Title On/Off</emph> on the Formatting bar to show or hide the title and subtitle.</ahelp></variable>"
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3156018.8
+msgid "X axis"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3152869.9
+msgid "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_X_AXIS\">Marking the <emph>X axis</emph> option activates the X axis title. Enter the desired title in the corresponding text field.</ahelp>"
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3159226.10
+msgid "Y axis"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3154763.11
+msgid "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_Y_AXIS\">Marking the <emph>Y axis</emph> option activates the Y axis title. Enter the desired title in the corresponding text field.</ahelp>"
+msgstr ""
+
+#: 01/04010000.xhp#HD_ID3153009.12
+msgid "Z axis"
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3154710.13
+msgid "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_Z_AXIS\">Marking the <emph>Z axis</emph> option activates the Z axis title. Enter the desired title in the corresponding text field.</ahelp> This option is only available for 3-D charts."
+msgstr ""
+
+#: 01/04010000.xhp#PAR_ID3153073.14
+msgid "<variable id=\"sytextachse\"><ahelp hid=\".uno:ToggleAxisTitle\">Click <emph>Axes Title On/Off</emph> on the Formatting bar to show or hide the axis labels.</ahelp></variable>"
+msgstr ""
+
+#: 01/04020000.xhp#TIT
+msgid "Legend"
+msgstr ""
+
+#: 01/04020000.xhp#BM_ID3156441
+msgid "<bookmark_value>chart legends; hiding</bookmark_value><bookmark_value>hiding;chart legends</bookmark_value>"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3156441.1
+msgid "Legend"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3155413.2
+msgid "<variable id=\"legende\"><ahelp hid=\".uno:InsertMenuLegend\">Opens the <emph>Legend </emph>dialog, which allows you to change the position of legends in the chart, and to specify whether the legend is displayed.</ahelp></variable>"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3149124.3
+msgid "<variable id=\"sytextlegende\"><ahelp hid=\".uno:ToggleLegend\">To show or hide a legend, click <emph>Legend On/Off</emph> on the <emph>Formatting</emph> bar.</ahelp></variable>"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3145230
+msgid "<image id=\"img_id3147346\" src=\"res/commandimagelist/sc_togglelegend.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id3147346\">Icon</alt></image>"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3149207.16
+msgid "Legend On/Off"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3155114.6
+msgid "Display"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3150206.7
+msgid "<ahelp hid=\"SCH_CHECKBOX_DLG_LEGEND_CBX_SHOW\">Specifies whether to display a legend for the chart.</ahelp> This option is only visible if you call the dialog by choosing <emph>Insert - Legend</emph>."
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3150201.4
+msgid "Position"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3155376.5
+msgid "Select the position for the legend:"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3152988.8
+msgid "Left"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3155087.9
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_LEFT\">Positions the legend at the left of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3153816.10
+msgid "Top"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3153912.11
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_TOP\">Positions the legend at the top of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3144773.12
+msgid "Right"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3155268.13
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_RIGHT\">Positions the legend at the right of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID3152871.14
+msgid "Bottom"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID3153249.15
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_BOTTOM\">Positions the legend at the bottom of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID1106200812072645
+msgid "Text Orientation"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID1106200812072653
+msgid "This feature is only available if complex text layout support is enabled in <item type=\"menuitem\"><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language settings - Languages</item>."
+msgstr ""
+
+#: 01/04020000.xhp#HD_ID1106200812112444
+msgid "Text Direction"
+msgstr ""
+
+#: 01/04020000.xhp#PAR_ID1106200812112530
+msgid "<ahelp hid=\".\">Specify the text direction for a paragraph that uses complex text layout (CTL). This feature is only available if complex text layout support is enabled.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#TIT
+msgid "Data Labels "
+msgstr ""
+
+#: 01/04030000.xhp#BM_ID3150275
+msgid "<bookmark_value>data labels in charts</bookmark_value>      <bookmark_value>labels; for charts</bookmark_value>      <bookmark_value>charts; data labels</bookmark_value>      <bookmark_value>data values in charts</bookmark_value>      <bookmark_value>chart legends; showing icons with labels</bookmark_value>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3150275.1
+msgid "<variable id=\"datenbeschriftung\"><link href=\"text/schart/01/04030000.xhp\" name=\"Data labels\">Data Labels</link></variable>"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID3154684.2
+msgid "<variable id=\"besch\"><ahelp hid=\".uno:InsertMenuDataLabels\">Opens the<emph> Data Labels </emph>dialog, which enables you to set the data labels.</ahelp></variable>"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID0810200912120416
+msgid "If an element of a data series is selected, this command works on that data series only. If no element is selected, this command works on all data series."
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3149401.17
+msgid "Show value as number"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID3150751.18
+msgid "<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER\">Displays the absolute values of the data points.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID5077059
+msgid "Number format"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID9794610
+msgid "<ahelp hid=\".\">Opens a dialog to select the number format.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3145643.9
+msgid "Show value as percentage"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID3156382.10
+msgid "<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT\">Displays the percentage of the data points in each column.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID1316873
+msgid "Percentage format"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID5476241
+msgid "<ahelp hid=\".\">Opens a dialog to select the percentage format.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3145228.11
+msgid "Show category"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID3154702.12
+msgid "<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT\">Shows the data point text labels.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3150298.15
+msgid "Show legend key"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID3150205.16
+msgid "<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL\">Displays the legend icons next to each data point label.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID3836787
+msgid "Separator"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID6668904
+msgid "<ahelp hid=\".\">Selects the separator between multiple text strings for the same object.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID4319284
+msgid "Placement"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID5159459
+msgid "<ahelp hid=\".\">Selects the placement of data labels relative to the objects.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID1106200812280727
+msgid "Text Direction"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID1106200812280719
+msgid "<ahelp hid=\".\">Specify the text direction for a paragraph that uses complex text layout (CTL). This feature is only available if complex text layout support is enabled.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#HD_ID1007200901590713
+msgid "Rotate Text"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID1007200901590752
+msgid "<ahelp hid=\".\">Click in the dial to set the text orientation for the data labels.</ahelp>"
+msgstr ""
+
+#: 01/04030000.xhp#PAR_ID1007200901590757
+msgid "<ahelp hid=\".\">Enter the rotation angle for the data labels. A positive number rotates the text to the left and a negative number rotates the text to the right.</ahelp>"
+msgstr ""
+
+#: 01/04040000.xhp#TIT
+msgid "Axes"
+msgstr ""
+
+#: 01/04040000.xhp#BM_ID3147428
+msgid "<bookmark_value>axes; showing axes in charts</bookmark_value><bookmark_value>charts; showing axes</bookmark_value><bookmark_value>X axes; showing</bookmark_value><bookmark_value>Y axes; showing</bookmark_value><bookmark_value>Z axes; showing</bookmark_value><bookmark_value>axes; better scaling</bookmark_value><bookmark_value>secondary axes in charts</bookmark_value>"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3147428.1
+msgid "Axes"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3150330.2
+msgid "<variable id=\"achsen\"><ahelp hid=\".uno:InsertMenuAxes\">Specifies the axes to be displayed in the chart.</ahelp></variable>"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3156385.46
+msgid "Major axis"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3146316.5
+msgid "X axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3145230.6
+msgid "<ahelp hid=\"SCH_CHECKBOX_DLG_AXIS_CB_X_PRIMARY\">Displays the X axis as a line with subdivisions.</ahelp>"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3147003.17
+msgid "Y axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3154020.18
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_PRIMARY\">Displays the Y axis as a line with subdivisions.</ahelp>"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3150345.28
+msgid "Z axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3155113.29
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Z_PRIMARY\">Displays the Z axis as a line with subdivisions.</ahelp> This axis can only be displayed in 3D charts."
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3150206.36
+msgid "Secondary axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3166428.37
+msgid "Use this area to assign a second axis to your chart. If a data series is already assigned to this axis, $[officename] automatically displays the axis and the label. You can turn off these settings later on. If no data has been assigned to this axis and you activate this area, the values of the primary Y axis are applied to the secondary axis."
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3152988.44
+msgid "X axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3156445.45
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_X_SECONDARY\">Displays a secondary X axis in the chart.</ahelp>"
+msgstr ""
+
+#: 01/04040000.xhp#HD_ID3152896.38
+msgid "Y axis"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3153818.39
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_SECONDARY\">Displays a secondary Y axis in the chart.</ahelp>"
+msgstr ""
+
+#: 01/04040000.xhp#PAR_ID3154762.41
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_SECONDARY\">The major axis and the secondary axis can have different scaling. For example, you can scale one axis to 2 in. and the other to 1.5 in. </ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#TIT
+msgid "Y Error Bars"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3147428.1
+msgid "<link href=\"text/schart/01/04050000.xhp\" name=\"Y Error Bars\">Y Error Bars</link>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3149666.2
+msgid "<variable id=\"statistik\"><ahelp hid=\".\">Use the <emph>Y Error Bars</emph> dialog to display error bars for 2D charts.</ahelp></variable>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3401287
+msgid "An error bar is an indicator line that spans over a range from y - NegativeErrorValue to y + PositiveErrorValue. In this term, y is the value of the data point. When \"standard deviation\" is selected, y is the mean value of the data series. NegativeErrorValue and PositiveErrorValue are the amounts calculated by the error bar function or given explicitly."
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3153965.23
+msgid "The <emph>Insert - Y Error Bars</emph> menu command is only available for 2D charts."
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3150344.5
+msgid "Error category"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3150202.6
+msgid "In the <emph>Error category</emph> area, you can choose different ways to display the error category."
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3152989.7
+msgid "None"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3149409.8
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_STAT:RBT_NONE\">Does not show any error bars.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3145117.17
+msgid "Constant value"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3151390.18
+msgid "<ahelp hid=\"SCH:METRICFIELD:TP_STAT:MTR_FLD_MINUS\">Displays constant values that you specify in the Parameters area.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3159204.13
+msgid "Percentage"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3150048.14
+msgid "<ahelp hid=\"SCH:METRICFIELD:TP_STAT:MTR_FLD_PERCENT\">Displays a percentage. The display refers to the corresponding data point. Set the percentage in the Parameters area.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID8977629
+msgid "Functions"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID7109286
+msgid "<ahelp hid=\".\">Select a function to calculate the error bars.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID5154576
+msgid "Standard Error: Displays the standard error."
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3157979.10
+msgid "<ahelp hid=\".\">Variance: Displays the variance calculated from the number of data points and respective values.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3153249.12
+msgid "<ahelp hid=\".\">Standard Deviation: Displays the standard deviation (square root of the variance).</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3149870.16
+msgid "<ahelp hid=\".\">Error Margin: Displays the highest error margin in percent according to the highest value of the data group. Set the percentage in the Parameters area.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID350962
+msgid "Cell Range"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID6679586
+msgid "<ahelp hid=\".\">Click Cell Range and then specify a cell range from which to take the positive and negative error bar values.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3872188
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Click a button to shrink the dialog, then use the mouse to select the cell range in the spreadsheet. Click the button again to restore the dialog to full size.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID2633747
+msgid "From Data Table"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID6633503
+msgid "<ahelp hid=\".\">For a chart with its own data, the error bar values can be entered in the chart data table. The Data Table dialog shows additional columns titled Positive Y-Error-Bars and Negative Y-Error-Bars.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810573839
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the value to add to the displayed value as the positive error value.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810573862
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the value to subtract from the displayed value as the negative error value.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810573844
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the address range from where to get the positive error values. Use the Shrink button to select the range from a sheet.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810573970
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the address range from where to get the negative error values. Use the Shrink button to select the range from a sheet.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID0428200810573977
+msgid "Same value for both"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810573991
+msgid "<ahelp hid=\".\">Enable to use the positive error values also as negative error values. You can only change the value of the \"Positve (+)\" box. That value gets copied to the \"Negative (-)\" box automatically.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID3156396.19
+msgid "Error indicator"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID3150539.20
+msgid "<ahelp hid=\"HID_SCH_CT_INDICATE2\">Specifies the error indicator.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID0428200810574027
+msgid "Positive and Negative"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0428200810574039
+msgid "<ahelp hid=\".\">Shows positive and negative error bars.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID0428200810574031
+msgid "Positive"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID042820081057411
+msgid "<ahelp hid=\".\">Shows only positive error bars.</ahelp>"
+msgstr ""
+
+#: 01/04050000.xhp#HD_ID0428200810574138
+msgid "Negative"
+msgstr ""
+
+#: 01/04050000.xhp#PAR_ID0522200809110667
+msgid "<ahelp hid=\".\">Shows only negative error bars.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#TIT
+msgid "Trend Lines "
+msgstr ""
+
+#: 01/04050100.xhp#BM_ID1744743
+msgid "<bookmark_value>calculating;regression curves</bookmark_value>      <bookmark_value>regression curves in charts</bookmark_value>      <bookmark_value>trend lines in charts</bookmark_value>      <bookmark_value>mean value lines in charts</bookmark_value>"
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID5409405
+msgid "<variable id=\"regression\"><link href=\"text/schart/01/04050100.xhp\">Trend Lines</link></variable>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7272255
+msgid "<variable id=\"trendlinestext\"><ahelp hid=\".\">Trend lines can be added to all 2D chart types except for Pie and Stock charts.</ahelp></variable>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID143436
+msgid "<ahelp hid=\".\" visibility=\"hidden\">No trend line is shown.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5716727
+msgid "<ahelp hid=\".\" visibility=\"hidden\">A linear trend line is shown.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5840021
+msgid "<ahelp hid=\".\" visibility=\"hidden\">A logarithmic trend line is shown.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9417096
+msgid "<ahelp hid=\".\" visibility=\"hidden\">An exponential trend line is shown.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8482924
+msgid "<ahelp hid=\".\" visibility=\"hidden\">A power trend line is shown.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8962370
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows the trend line equation next to the trend line.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID6889858
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows the coefficient of determination next to the trend line.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8398998
+msgid "If you insert a trend line to a chart type that uses categories, like <emph>Line </emph>or <emph>Column, </emph>then the numbers 1, 2, 3, <emph>…</emph> are used as x-values to calculate the trend line."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5676747
+msgid "To insert trend lines for all data series, double-click the chart to enter edit mode. Choose <item type=\"menuitem\">Insert - Trend Lines</item>, then select the type of trend line from None, Linear, Logarithmic, Exponential, or Power trend line."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4349192
+msgid "To insert a trend line for a single data series, select the data series in the chart, right-click to open the context menu, and choose <item type=\"menuitem\">Insert - Trend Line</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9337443
+msgid "To delete a single trend line or mean value line, click the line, then press the Del key."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4529251
+msgid "To delete all trend lines, choose <item type=\"menuitem\">Insert - Trend Lines</item>, then select <emph>None</emph>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID296334
+msgid "A trend line is shown in the legend automatically."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4072084
+msgid "<ahelp hid=\".\">Mean Value Lines are special trend lines that show the mean value. Use <item type=\"menuitem\">Insert - Mean Value Lines</item> to insert mean value lines for data series.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9569689
+msgid "The trend line has the same color as the corresponding data series. To change the line properties, select the trend line and choose <item type=\"menuitem\">Format - Format Selection - Line</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID846888
+msgid "<ahelp hid=\".\">To show the trend line equation, select the trend line in the chart, right-click to open the context menu, and choose <emph>Insert Trend Line Equation</emph>.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8962065
+msgid "When the chart is in edit mode, %PRODUCTNAME gives you the equation of the trend line and the coefficient of determination R². Click on the trend line to see the information in the status bar."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID1328470
+msgid "For a category chart (for example a line chart), the trend line information is calculated using numbers 1, 2, 3, … as x-values. This is also true if your data series uses other numbers as names for the x-values. For such charts the XY chart type might be more suitable."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8092593
+msgid "To show the equation and the coefficient of determination, select the trend line and choose <item type=\"menuitem\">Format - Format Selection - Equation</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7971434
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enable Show equation to see the equation of the trend line.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID558793
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enable Show Coefficient of Determination to see the determination coefficient of the trend line.</ahelp>"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7735221
+msgid "You can also calculate the parameters using Calc functions as follows."
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID5744193
+msgid "The linear regression equation"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9251991
+msgid "The <emph>linear regression</emph> follows the equation <item type=\"literal\">y=m*x+b</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7951902
+msgid "m = SLOPE(Data_Y;Data_X) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID6637165
+msgid "b = INTERCEPT(Data_Y ;Data_X) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7879268
+msgid "Calculate the coefficient of determination by"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9244361
+msgid "r² = RSQ(Data_Y;Data_X) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID2083498
+msgid "Besides m, b and r² the array function <emph>LINEST</emph> provides additional statistics for a regression analysis."
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID2538834
+msgid "The logarithm regression equation"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID394299
+msgid "The <emph>logarithm regression</emph> follows the equation <item type=\"literal\">y=a*ln(x)+b</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID2134159
+msgid "a = SLOPE(Data_Y;LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5946531
+msgid "b = INTERCEPT(Data_Y ;LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5649281
+msgid "r² = RSQ(Data_Y;LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID7874080
+msgid "The exponential regression equation"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4679097
+msgid " For exponential trend lines a transformation to a linear model takes place. The optimal curve fitting is related to the linear model and the results are interpreted accordingly. "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9112216
+msgid "The exponential regression follows the equation <item type=\"literal\">y=b*exp(a*x)</item> or <item type=\"literal\">y=b*m^x</item>, which is transformed to <item type=\"literal\">ln(y)=ln(b)+a*x</item> or <item type=\"literal\">ln(y)=ln(b)+ln(m)*x</item> respectively."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4416638
+msgid "a = SLOPE(LN(Data_Y);Data_X) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID1039155
+msgid "The variables for the second variation are calculated as follows:"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7184057
+msgid "m = EXP(SLOPE(LN(Data_Y);Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID786767
+msgid "b = EXP(INTERCEPT(LN(Data_Y);Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7127292
+msgid "Calculate the coefficient of determination by"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5437177
+msgid "r² = RSQ(LN(Data_Y);Data_X) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID6946317
+msgid "Besides m, b and r² the array function LOGEST provides additional statistics for a regression analysis."
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID6349375
+msgid "The power regression equation"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID1857661
+msgid " For <emph>power regression</emph> curves a transformation to a linear model takes place. The power regression follows the equation <item type=\"literal\">y=b*x^a</item> , which is transformed to <item type=\"literal\">ln(y)=ln(b)+a*ln(x)</item>."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8517105
+msgid "a = SLOPE(LN(Data_Y);LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID9827265
+msgid "b = EXP(INTERCEPT(LN(Data_Y);LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID2357249
+msgid "r² = RSQ(LN(Data_Y);LN(Data_X)) "
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID9204077
+msgid "Constraints"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7393719
+msgid " The calculation of the trend line considers only data pairs with the following values:"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID7212744
+msgid "logarithm regression: only positive x-values are considered,"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID1664479
+msgid "exponential regression: only positive y-values are considered,"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8734702
+msgid "power regression: only positive x-values and positive y-values are considered."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID181279
+msgid "You should transform your data accordingly; it is best to work on a copy of the original data and transform the copied data."
+msgstr ""
+
+#: 01/04050100.xhp#HD_ID7907040
+msgid "The polynomial regression equation"
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8918729
+msgid "A <emph>polynomial regression</emph> curve cannot be added automatically. You must calculate this curve manually. "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID33875
+msgid "Create a table with the columns x, x², x³, … , xⁿ, y up to the desired degree n. "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8720053
+msgid "Use the formula <item type=\"literal\">=LINEST(Data_Y,Data_X)</item> with the complete range x to xⁿ (without headings) as Data_X. "
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID5068514
+msgid "The first row of the LINEST output contains the coefficients of the regression polynomial, with the coefficient of xⁿ at the leftmost position."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID8202154
+msgid "The first element of the third row of the LINEST output is the value of r². See the <link href=\"text/scalc/01/04060107.xhp#Section8\">LINEST</link> function for details on proper use and an explanation of the other output parameters."
+msgstr ""
+
+#: 01/04050100.xhp#PAR_ID4562211
+msgid "<link href=\"text/schart/01/04050000.xhp\">Y Error Bars tab page</link>"
+msgstr ""
+
+#: 01/04060000.xhp#TIT
+msgid "Options"
+msgstr ""
+
+#: 01/04060000.xhp#BM_ID3149400
+msgid "<bookmark_value>aligning; 2D charts</bookmark_value>         <bookmark_value>charts; aligning</bookmark_value>         <bookmark_value>pie charts;options</bookmark_value>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3149400.1
+msgid "<link href=\"text/schart/01/04060000.xhp\" name=\"Options\">Options</link>"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3155067.2
+msgid "Use this dialog to define some options that are available for specific chart types. The contents of the Options dialog vary with the chart type."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3150043.9
+msgid "Align data series to:"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3145228.10
+msgid "In this area you can choose between two Y axis scaling modes. The axes can only be scaled and given properties separately."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3147346.4
+msgid "Primary Y axis"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3147005.15
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1\">This option is active as default. All data series are aligned to the primary Y axis.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3143221.5
+msgid "Secondary Y axis"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3154656.11
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2\">Changes the scaling of the Y axis. This axis is only visible when at least one data series is assigned to it and the axis view is active.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3166423.6
+msgid "Settings"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3150365.12
+msgid "Define the settings for a bar chart in this area. Any changes apply to all data series of the chart, not to the selected data only."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3145584.7
+msgid "Spacing"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3155376.13
+msgid "<ahelp hid=\"SCH:METRICFIELD:TP_OPTIONS:MT_GAP\">Defines the spacing between the columns in percent.</ahelp> The maximal spacing is 600%."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3145384.8
+msgid "Overlap"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3156447.14
+msgid "<ahelp hid=\"SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP\">Defines the necessary settings for overlapping data series.</ahelp> You can choose between -100 and +100%."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3153305.16
+msgid "Connection Lines"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID3148868.17
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR\">For \"stacked\" and \"percent\" column (vertical bar) charts, mark this check box to connect the column layers that belong together with lines.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID9842219
+msgid "Show bars side by side"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID9800103
+msgid "If two axes are shown in a bar chart, and some data series are attached to the first axis, while some other data series are attached to the second axis, then both sets of data series are shown independently, overlapping each other."
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID2144535
+msgid "As a result, bars attached to the first y-axis are partly or completely hidden by bars attached to the second y-axis. To avoid this, enable the option to display bars side by side. <ahelp hid=\".\">The bars from different data series are shown as if they were attached only to one axis.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID24414
+msgid "Clockwise direction"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID2527237
+msgid "Available for pie and donut charts. <ahelp hid=\".\">The default direction in which the pieces of a pie chart are ordered is counterclockwise. Enable the <emph>Clockwise direction</emph> checkbox to draw the pieces in opposite direction.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID401013
+msgid "Starting angle"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID761131
+msgid "<ahelp hid=\".\">Drag the small dot along the circle or click any position on the circle to set the starting angle of a pie or donut chart. The starting angle is the mathematical angle position where the first piece is drawn. The value of 90 degrees draws the first piece at the 12 o'clock position. A value of 0 degrees starts at the 3 o'clock position.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID553910
+msgid "In 3D pie and donut charts that were created with older versions of the software, the starting angle is 0 degrees instead of 90 degrees. For old and new 2D charts the default starting angle is 90 degrees."
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID1414838
+msgid "When you change the starting angle or the direction, only current versions of the software show the changed values. Older versions of the software display the same document using the default values: Always counterclockwise direction and a starting value of 90 degrees (2D pie charts) or 0 degrees (3D pie charts)."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID3179723
+msgid "Degrees"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID2164067
+msgid "<ahelp hid=\".\">Enter the starting angle between 0 and 359 degrees. You can also click the arrows to change the displayed value.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID0305200910524613
+msgid "Plot missing values"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID0305200910524650
+msgid "Sometimes values are missing in a data series that is shown in a chart. You can select from different options how to plot the missing values. The options are available for some chart types only."
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID0305200910524823
+msgid "Leave gap"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID0305200910524811
+msgid "<ahelp hid=\".\">For a missing value, no data will be shown. This is the default for chart types Column, Bar, Line, Net.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID0305200910524811
+msgid "Assume zero"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID030520091052489
+msgid "<ahelp hid=\".\">For a missing value, the y-value will be shown as zero. This is the default for chart type Area.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID0305200910524837
+msgid "Continue line"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID0305200910524938
+msgid "<ahelp hid=\".\">For a missing value, the interpolation from the neighbor values will be shown. This is the default for chart type XY.</ahelp>"
+msgstr ""
+
+#: 01/04060000.xhp#HD_ID0305200910524937
+msgid "Include values from hidden cells"
+msgstr ""
+
+#: 01/04060000.xhp#PAR_ID030520091052494
+msgid "<ahelp hid=\".\">Check to also show values of currently hidden cells within the source cell range.</ahelp>"
+msgstr ""
+
+#: 01/04070000.xhp#TIT
+msgid "Grids"
+msgstr ""
+
+#: 01/04070000.xhp#BM_ID3147434
+msgid "<bookmark_value>axes; inserting grids</bookmark_value><bookmark_value>grids; inserting in charts</bookmark_value>"
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3147434.1
+msgid "Grids"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3146974.2
+msgid "<variable id=\"gitter\"><ahelp hid=\".\">You can divide the axes into sections by assigning gridlines to them. This allows you to get a better overview of the chart, especially if you are working with large charts.</ahelp></variable> The Y axis major grid is activated by default."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3156286.3
+msgid "Major grids"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3154511.4
+msgid "Defines the axis to be set as the major grid."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3149400.5
+msgid "X axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3150749.6
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_X_MAIN\">Adds gridlines to the X axis of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3154754.7
+msgid "<variable id=\"sytextxgitter\"><ahelp hid=\".uno:ToggleGridHorizontal\">The <emph>Horizontal Grid On/Off</emph> icon on the <emph>Formatting</emph> bar toggles the visibility of the grid display for the X axis. Note: This only works if the <emph>Minor grid</emph> check boxes in <emph>Insert - Grids</emph> are cleared.</ahelp></variable> Otherwise, the minor grid remains visible when the major grid is turned off."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3145228.8
+msgid "Y axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3147004.9
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_MAIN\">Adds gridlines to the Y axis of the chart.</ahelp>"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3150344.10
+msgid "<variable id=\"sytextygitter\"><ahelp hid=\".uno:ToggleGridVertical\">The <emph>Vertical Grid On/Off</emph> icon on the <emph>Formatting</emph> bar toggles the visibility of the grid display for the Y axis. Note: This only works if the X-axis <emph>Minor grid</emph> is not selected in <emph>Insert - Grids</emph>.</ahelp></variable> Otherwise, the minor grid remains visible when the major grid is turned off."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3166430.11
+msgid "Z axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3155378.12
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Z_MAIN\">Adds gridlines to the Z axis of the chart.</ahelp> This option is only available if you're working with 3D charts."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3146978.13
+msgid "Minor grids"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3156449.14
+msgid "Use this area to assign a minor grid for each axis. Assigning minor grids to the axis reduces the distance between the major grids."
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3153308.15
+msgid "X axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3148704.16
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_X_HELP\">Adds gridlines that subdivide the X axis into smaller sections.</ahelp>"
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3153917.17
+msgid "Y axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3154536.18
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_HELP\">Adds gridlines that subdivide the Y axis into smaller sections.</ahelp>"
+msgstr ""
+
+#: 01/04070000.xhp#HD_ID3148607.19
+msgid "Z axis"
+msgstr ""
+
+#: 01/04070000.xhp#PAR_ID3153247.20
+msgid "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Z_HELP\">Adds gridlines that subdivide the Z axis into smaller sections.</ahelp> This option is only available if you're working with 3D charts."
+msgstr ""
+
+#: 01/05010000.xhp#TIT
+msgid "Format Selection"
+msgstr ""
+
+#: 01/05010000.xhp#BM_ID3149666
+msgid "<bookmark_value>objects;properties of charts</bookmark_value><bookmark_value>charts; properties</bookmark_value><bookmark_value>properties;charts</bookmark_value>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3149666.1
+msgid "Format Selection"
+msgstr ""
+
+#: 01/05010000.xhp#PAR_ID3156284.2
+msgid "<variable id=\"objekteigenschaften\"><ahelp hid=\".\">Formats the selected object.</ahelp></variable> Depending on the object selected, the command opens dialogs that you can also open by choosing the following commands from the <emph>Format</emph> menu:"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3153418.3
+msgid "<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\">Chart Wall</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3155766.4
+msgid "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">Chart Area</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3154255.5
+msgid "<link href=\"text/schart/01/05070000.xhp\" name=\"Chart Floor\">Chart Floor</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3146313.6
+msgid "<link href=\"text/schart/01/05020100.xhp\" name=\"Title\">Title</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3150297.7
+msgid "<link href=\"text/schart/01/05030000.xhp\" name=\"Legend\">Legend</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3143219.8
+msgid "<link href=\"text/schart/01/05040100.xhp\" name=\"X Axis\">X Axis</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3150207.9
+msgid "<link href=\"text/schart/01/05040200.xhp\" name=\"Y Axis\">Y Axis</link>"
+msgstr ""
+
+#: 01/05010000.xhp#HD_ID3166432.10
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"Grid\">Grid</link>"
+msgstr ""
+
+#: 01/05010100.xhp#TIT
+msgid "Data Point"
+msgstr ""
+
+#: 01/05010100.xhp#HD_ID3153768.1
+msgid "<link href=\"text/schart/01/05010100.xhp\" name=\"Data Point\">Data Point</link>"
+msgstr ""
+
+#: 01/05010100.xhp#PAR_ID3152577.2
+msgid "This dialog allows you to change the properties of a selected data point. The dialog appears when there is only one data point selected when you choose <emph>Format - Format Selection</emph>. Some of the menu entries are only available for 2D or 3D charts."
+msgstr ""
+
+#: 01/05010100.xhp#PAR_ID3149121.3
+msgid "Any changes made only affect this one data point. For example, if you edit the color of a bar, only the color of that bar will be different."
+msgstr ""
+
+#: 01/05010200.xhp#TIT
+msgid "Data Series"
+msgstr ""
+
+#: 01/05010200.xhp#HD_ID3150449.1
+msgid "<link href=\"text/schart/01/05010200.xhp\" name=\"Data Series\">Data Series</link>"
+msgstr ""
+
+#: 01/05010200.xhp#PAR_ID3145750.2
+msgid "Use this to change the properties of a selected data series. This dialog appears when one data series is selected when you choose <emph>Format - Format Selection</emph>. Some of the menu entries are only available for 2D or 3D charts."
+msgstr ""
+
+#: 01/05010200.xhp#PAR_ID3154015.4
+msgid "Any changes made here affect the entire data series. For example, if you change the color, all elements belonging to this data series will change color."
+msgstr ""
+
+#: 01/05010200.xhp#HD_ID3146916.3
+msgid "<link href=\"text/schart/01/04050000.xhp\" name=\"Y Error Bars\">Y Error Bars</link>"
+msgstr ""
+
+#: 01/05020000.xhp#TIT
+msgid "Title"
+msgstr ""
+
+#: 01/05020000.xhp#BM_ID3150791
+msgid "<bookmark_value>titles; formatting charts</bookmark_value><bookmark_value>formatting; chart titles</bookmark_value>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3150791.1
+msgid "<link href=\"text/schart/01/05020000.xhp\" name=\"Title\">Title</link>"
+msgstr ""
+
+#: 01/05020000.xhp#PAR_ID3125863.2
+msgid "The<emph> Title </emph>menu command opens a submenu for editing the properties of the titles in the chart."
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3155414.3
+msgid "<link href=\"text/schart/01/05020100.xhp\" name=\"Main title\">Main title</link>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3156441.4
+msgid "<link href=\"text/schart/01/05020100.xhp\" name=\"Subtitle\">Subtitle</link>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3151073.5
+msgid "<link href=\"text/schart/01/05020100.xhp\" name=\"X-axis title\">X-axis title</link>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3154732.6
+msgid "<link href=\"text/schart/01/05020200.xhp\" name=\"Y-axis title\">Y-axis title</link>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3154017.7
+msgid "<link href=\"text/schart/01/05020100.xhp\" name=\"Z-axis title\">Z-axis title</link>"
+msgstr ""
+
+#: 01/05020000.xhp#HD_ID3153711.8
+msgid "<link href=\"text/schart/01/05020200.xhp\" name=\"All titles\">All titles</link>"
+msgstr ""
+
+#: 01/05020100.xhp#TIT
+msgid "Title"
+msgstr ""
+
+#: 01/05020100.xhp#BM_ID3150769
+msgid "<bookmark_value>editing; titles</bookmark_value>"
+msgstr ""
+
+#: 01/05020100.xhp#HD_ID3150769.2
+msgid "Title"
+msgstr ""
+
+#: 01/05020100.xhp#PAR_ID3149666.1
+msgid "<variable id=\"titel\"><ahelp hid=\".uno:ZTitle\">Modifies the properties of the selected title.</ahelp></variable>"
+msgstr ""
+
+#: 01/05020100.xhp#HD_ID3149378.3
+msgid "<link href=\"text/shared/01/05020100.xhp\" name=\"Character\">Character</link>"
+msgstr ""
+
+#: 01/05020101.xhp#TIT
+msgid "Alignment"
+msgstr ""
+
+#: 01/05020101.xhp#BM_ID3150793
+msgid "<bookmark_value>aligning;titles in charts</bookmark_value><bookmark_value>titles;alignment (charts)</bookmark_value>"
+msgstr ""
+
+#: 01/05020101.xhp#HD_ID3150793.1
+msgid "<link href=\"text/schart/01/05020101.xhp\" name=\"Alignment\">Alignment</link>"
+msgstr ""
+
+#: 01/05020101.xhp#PAR_ID3125864.2
+msgid "Modifies the alignment of the chart title."
+msgstr ""
+
+#: 01/05020101.xhp#PAR_ID3145748.4
+msgid "Some of the options are not available for all types of labels. For example, there are different options for 2D and 3D object labels."
+msgstr ""
+
+#: 01/05020101.xhp#PAR_ID3150717.3
+msgid "Please note that problems may arise in displaying labels if the size of your chart is too small. You can avoid this by either enlarging the view or decreasing the font size."
+msgstr ""
+
+#: 01/05020200.xhp#TIT
+msgid "Title"
+msgstr ""
+
+#: 01/05020200.xhp#HD_ID3150541.1
+msgid "Title"
+msgstr ""
+
+#: 01/05020200.xhp#PAR_ID3145173.2
+msgid "<variable id=\"titel\"><ahelp hid=\".uno:YTitle\">Modifies the properties of the selected title or the properties of all titles together.</ahelp></variable>"
+msgstr ""
+
+#: 01/05020200.xhp#HD_ID3152596.3
+msgid "<link href=\"text/shared/01/05020100.xhp\" name=\"Character\">Character</link>"
+msgstr ""
+
+#: 01/05020201.xhp#TIT
+msgid "Alignment"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3149656.1
+msgid "<link href=\"text/schart/01/05020201.xhp\" name=\"Alignment\">Alignment</link>"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3156422.2
+msgid "Modifies the alignment of axes or title labels."
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3150439.76
+msgid "Some of the options listed here are not available for all labels. For example, there are different options for 2D and 3D object labels."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3145750.71
+msgid "Show labels"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3154319.72
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_SCHOW_DESCR\">Specifies whether to show or hide the axis labels.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3147436.75
+msgid "<variable id=\"sytextbeschr\"><ahelp hid=\".uno:ToggleAxisDescr\">The<emph> AxesTitle On/Off </emph>icon on the <emph>Formatting</emph> bar switches the labeling of all axes on or off.</ahelp></variable>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3150717.4
+msgid "Rotate text"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3154510.5
+msgid "<ahelp hid=\".uno:ToggleAxisDescr\">Defines the text direction of cell contents.</ahelp> Click one of the ABCD buttons to assign the required direction."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3150327.50
+msgid "ABCD wheel"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3149018.49
+msgid "<ahelp hid=\"HID_SCH_ALIGNMENT_CTR_DIAL\">Clicking anywhere on the wheel defines the variable text orientation.</ahelp> The letters \"ABCD\" on the button correspond to the new setting."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3154254.51
+msgid "ABCD button"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3154702.52
+msgid "<ahelp hid=\"HID_SCH_ALIGNMENT_STACKED\">Assigns vertical text orientation for cell contents.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3150342.53
+msgid "If you define a vertical x-axis label, the text may be cut off by the line of the x-axis."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3166432.54
+msgid "Degrees"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3150199.55
+msgid "<ahelp hid=\"HID_SCH_ALIGNMENT_DEGREES\">Allows you to manually enter the orientation angle.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3152985.73
+msgid "Text flow"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3155089.74
+msgid "Determines the text flow of the data label."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3148837.57
+msgid "Overlap"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3151240.58
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_TEXTOVERLAP\">Specifies that the text in cells may overlap other cells.</ahelp> This can be especially useful if there is a lack of space. This option is not available with different title directions."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3157982.68
+msgid "Break"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3155268.69
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_TEXTBREAK\">Allows a text break.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3159205.56
+msgid "The following options are not available for all chart types:"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3152872.59
+msgid "Order"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3159230.11
+msgid "The options on this tab are only available for a 2D chart, under <emph>Format - Axis - Y Axis</emph> or <emph>X Axis</emph>. In this area, you can define the alignment of the number labels on the X or Y axis."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3146963.60
+msgid "Tile"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3155758.61
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_AXIS_LABEL:RB_AXIS_LABEL_SIDEBYSIDE\">Arranges numbers on the axis side by side.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3151195.62
+msgid "Stagger odd"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3145114.63
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_AXIS_LABEL:RB_AXIS_LABEL_UPDOWN\">Staggers numbers on the axis, even numbers lower than odd numbers.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3147250.64
+msgid "Stagger even"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3153958.65
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_AXIS_LABEL:RB_AXIS_LABEL_DOWNUP\">Stagger numbers on the axes, odd numbers lower than even numbers.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID3147301.66
+msgid "Automatic"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3147404.67
+msgid "<ahelp hid=\"SCH:RADIOBUTTON:TP_AXIS_LABEL:RB_AXIS_LABEL_AUTOORDER\">Automatically arranges numbers on the axis.</ahelp>"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID3149353.70
+msgid "Problems may arise in displaying labels if the size of your chart is too small. You can avoid this by either enlarging the view or decreasing the font size."
+msgstr ""
+
+#: 01/05020201.xhp#HD_ID1106200812235146
+msgid "Text Direction"
+msgstr ""
+
+#: 01/05020201.xhp#PAR_ID1106200812235271
+msgid "<ahelp hid=\".\">Specify the text direction for a paragraph that uses complex text layout (CTL). This feature is only available if complex text layout support is enabled.</ahelp>"
+msgstr ""
+
+#: 01/05030000.xhp#TIT
+msgid "Legend"
+msgstr ""
+
+#: 01/05030000.xhp#HD_ID3145800.1
+msgid "Legend"
+msgstr ""
+
+#: 01/05030000.xhp#PAR_ID3146972.2
+msgid "<variable id=\"legende\"><ahelp hid=\".uno:Legend\">Defines the border, area and character attributes for a legend.</ahelp></variable>"
+msgstr ""
+
+#: 01/05030000.xhp#HD_ID3145232.4
+msgid "<link href=\"text/shared/01/05020100.xhp\" name=\"Character\">Character</link>"
+msgstr ""
+
+#: 01/05030000.xhp#HD_ID3147344.3
+msgid "<link href=\"text/schart/01/04020000.xhp\" name=\"Display\">Display</link>"
+msgstr ""
+
+#: 01/05040000.xhp#TIT
+msgid "Axis"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3149456.1
+msgid "<link href=\"text/schart/01/05040000.xhp\" name=\"Axis\">Axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#PAR_ID3150441.2
+msgid "This opens a submenu to edit axial properties."
+msgstr ""
+
+#: 01/05040000.xhp#PAR_ID3154319.11
+msgid "The tabs in the dialogs depend on the chart type selected."
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3153729.3
+msgid "<link href=\"text/schart/01/05040100.xhp\" name=\"X axis\">X axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3147394.4
+msgid "<link href=\"text/schart/01/05040200.xhp\" name=\"Y axis\">Y axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3153160.9
+msgid "<link href=\"text/schart/01/05040100.xhp\" name=\"Secondary X Axis\">Secondary X Axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#PAR_ID3149401.10
+msgid "<ahelp hid=\".uno:DiagramAxisA\">Opens a dialog where you can edit the properties of the secondary X axis. To insert a secondary X axis, choose <emph>Insert - Axes</emph> and select <emph>X axis</emph>.</ahelp>"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3145640.7
+msgid "<link href=\"text/schart/01/05040200.xhp\" name=\"Secondary Y Axis\">Secondary Y Axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#PAR_ID3159264.8
+msgid "<ahelp hid=\".uno:DiagramAxisB\">Opens a dialog where you can edit the properties of the secondary Y axis. To insert a secondary Y axis, choose <emph>Insert - Axes</emph> and select <emph>Y axis</emph>.</ahelp>"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3145228.5
+msgid "<link href=\"text/schart/01/05040100.xhp\" name=\"Z axis\">Z axis</link>"
+msgstr ""
+
+#: 01/05040000.xhp#HD_ID3147345.6
+msgid "<link href=\"text/schart/01/05040100.xhp\" name=\"All axes\">All axes</link>"
+msgstr ""
+
+#: 01/05040100.xhp#TIT
+msgid "Axes"
+msgstr ""
+
+#: 01/05040100.xhp#BM_ID3153768
+msgid "<bookmark_value>axes;formatting</bookmark_value>"
+msgstr ""
+
+#: 01/05040100.xhp#HD_ID3153768.1
+msgid "Axes"
+msgstr ""
+
+#: 01/05040100.xhp#PAR_ID3154319.2
+msgid "<variable id=\"achsen\"><ahelp hid=\".uno:DiagramAxisAll\">Opens a dialog, where you can edit the properties of the selected axis.</ahelp></variable> The name of the dialog depends on the selected axis."
+msgstr ""
+
+#: 01/05040100.xhp#PAR_ID3149667.3
+msgid "The <link href=\"text/schart/01/05040200.xhp\" name=\"Y axis\">Y axis</link> has an enhanced dialog. For X-Y charts, the X axis chart is also enhanced by the <link href=\"text/schart/01/05040201.xhp\" name=\"Scaling\"><emph>Scaling</emph></link> tab."
+msgstr ""
+
+#: 01/05040100.xhp#PAR_ID3159266.4
+msgid "Scaling the X axis is only possible in the X-Y chart type."
+msgstr ""
+
+#: 01/05040100.xhp#HD_ID3145230.5
+msgid "<link href=\"text/shared/01/05020100.xhp\" name=\"Character\">Character</link>"
+msgstr ""
+
+#: 01/05040200.xhp#TIT
+msgid "Y Axis"
+msgstr ""
+
+#: 01/05040200.xhp#BM_ID3145673
+msgid "<bookmark_value>Y axes; formatting</bookmark_value>"
+msgstr ""
+
+#: 01/05040200.xhp#HD_ID3145673.1
+msgid "Y Axis"
+msgstr ""
+
+#: 01/05040200.xhp#PAR_ID3155628.2
+msgid "<variable id=\"yachse\"><ahelp hid=\".uno:DiagramAxisY\">Opens the<emph> Y Axis </emph>dialog, to change properties of the Y axis.</ahelp></variable>"
+msgstr ""
+
+#: 01/05040200.xhp#HD_ID3145171.3
+msgid "<link href=\"text/shared/01/05020100.xhp\" name=\"Character\">Character</link>"
+msgstr ""
+
+#: 01/05040200.xhp#HD_ID3146119.4
+msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Numbers\">Numbers</link>"
+msgstr ""
+
+#: 01/05040201.xhp#TIT
+msgid "Scale"
+msgstr ""
+
+#: 01/05040201.xhp#BM_ID3150868
+msgid "<bookmark_value>scaling; axes</bookmark_value><bookmark_value>logarithmic scaling along axes</bookmark_value><bookmark_value>charts;scaling axes</bookmark_value><bookmark_value>X axes;scaling</bookmark_value><bookmark_value>Y axes; scaling</bookmark_value>"
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3150868.1
+msgid "<link href=\"text/schart/01/05040201.xhp\" name=\"Scale\">Scale</link>"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3154013.2
+msgid "Controls the scaling of the X or Y axis."
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3148576.79
+msgid "The axes are automatically scaled by $[officename] so that all values are optimally displayed."
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3149379.3
+msgid "To achieve specific results, you can manually change the axis scaling. For example, you can display only the top areas of the columns by shifting the zero line upwards."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3154730.4
+msgid "Scale"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3149400.5
+msgid "You can enter values for subdividing axes in this area. You can automatically set the properties <emph>Minimum, Maximum, Major interval, Minor interval count</emph> and <emph>Reference value</emph>."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3150751.6
+msgid "Minimum"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3153713.7
+msgid "<ahelp hid=\"SCH_SPINFIELD_TP_SCALE_EDT_MIN\">Defines the minimum value for the beginning of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3156385.8
+msgid "Maximum"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3159266.9
+msgid "<ahelp hid=\"SCH_SPINFIELD_TP_SCALE_EDT_MAX\">Defines the maximum value for the end of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3155336.10
+msgid "Major interval"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3143218.11
+msgid "<ahelp hid=\"SCH_SPINFIELD_TP_SCALE_EDT_STEP_MAIN\">Defines the interval for the main division of the axes.</ahelp> The main interval cannot be larger than the value area."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3154020.12
+msgid "Minor interval count"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3154656.13
+msgid "<ahelp hid=\"SCH_SPINFIELD_TP_SCALE_EDT_STEP_HELP\">Defines the interval for the subdivision of the axes.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3150089.14
+msgid "Reference value"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3152990.15
+msgid "<ahelp hid=\"SCH_SPINFIELD_TP_SCALE_EDT_ORIGIN\">Specifies at which position to display the values along the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3166432.62
+msgid "Automatic"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3145389.63
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE:CBX_AUTO_ORIGIN\">You must first deselect the <emph>Automatic</emph> option in order to modify the values.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3149129.64
+msgid "Disable this feature if you are working with \"fixed\" values, as it does not permit automatic scaling."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID3159206.16
+msgid "Logarithmic scale"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3145360.17
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE:CBX_LOGARITHM\">Specifies that you want the axis to be subdivided logarithmically.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3153956.61
+msgid "Use this feature if you are working with values that differ sharply from each other. You can use logarithmic scaling to make the grid lines of the axis equidistant but have values that may increase or decrease."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID9941404
+msgid "Reverse direction"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID5581835
+msgid "<ahelp hid=\".\">Defines where the lower and where the higher values are displayed at the axis. The unchecked state is the mathematical direction.</ahelp> That means for Cartesian coordinate systems that the x-axis shows the lower values on the left and the y-axis shows the lower values at the bottom. For polar coordinate systems the mathematical angle axis direction is counterclockwise and the radial axis is from inner to outer."
+msgstr ""
+
+#: 01/05040201.xhp#HD_ID922204
+msgid "Type"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID59225
+msgid "<ahelp hid=\".\">For some types of axes, you can select to format an axis as text or date, or to detect the type automatically.</ahelp> For the axis type \"Date\" you can set the following options."
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID1159225
+msgid "Minimum and maximum value to be shown on the ends of the scale."
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID2259225
+msgid "<ahelp hid=\".\">Resolution can be set to show days, months, or years as interval steps.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID3359225
+msgid "<ahelp hid=\".\">Major interval can be set to show a certain number of days, months, or years.</ahelp>"
+msgstr ""
+
+#: 01/05040201.xhp#PAR_ID4459225
+msgid "<ahelp hid=\".\">Minor interval can be set to show a certain number of days, months, or years.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#TIT
+msgid "Positioning"
+msgstr ""
+
+#: 01/05040202.xhp#BM_ID3150869
+msgid "<bookmark_value>positioning; axes</bookmark_value><bookmark_value>charts;positioning axes</bookmark_value><bookmark_value>X axes;positioning</bookmark_value><bookmark_value>Y axes;positioning</bookmark_value><bookmark_value>axes;interval marks</bookmark_value>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3150868.1
+msgid "<link href=\"text/schart/01/05040202.xhp\" name=\"positioning\">Positioning</link>"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3154013.2
+msgid "Controls the positioning of the axis."
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID1006200801024782
+msgid "Axis line"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID1006200801024970
+msgid "<ahelp hid=\".\">Select where to cross the other axis: at start, at end, at a specified value, or at a category.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID1006200801024957
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the value where the axis line should cross the other axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID100620080102503
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select the category where the axis line should cross the other axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID100620080102509
+msgid "Labels"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID1006200801523879
+msgid "Place labels"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID1006200801523889
+msgid "<ahelp hid=\".\">Select where to place the labels: near axis, near axis (other side), outside start, or outside end.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID1006200801025030
+msgid "Interval marks"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3149048.65
+msgid "Major:"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3150397.71
+msgid "Specifies whether the marks are to be on the inner or outer side of the axis. It is possible to combine both: you will then see marks on both sides."
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3151387.66
+msgid "Inner"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3156399.72
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_INNER\">Specifies that marks are placed on the inner side of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3166469.67
+msgid "Outer"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3153120.73
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_OUTER\">Specifies that marks are placed on the outer side of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3159128.68
+msgid "Minor:"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3146885.74
+msgid "This area is used to define the marking dashes between the axis marks. It is possible to activate both fields. This will result in a marking line running from the outside to the inside."
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3150654.69
+msgid "Inner"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3146880.75
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_INNER\">Specifies that minor interval marks are placed on the inner side of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID3154677.70
+msgid "Outer"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID3150745.76
+msgid "<ahelp hid=\"SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_OUTER\">Specifies that minor interval marks are placed on the outer side of the axis.</ahelp>"
+msgstr ""
+
+#: 01/05040202.xhp#HD_ID1006200801025271
+msgid "Place marks"
+msgstr ""
+
+#: 01/05040202.xhp#PAR_ID1006200801025278
+msgid "<ahelp hid=\".\">Select where to place the marks: at labels, at axis, or at axis and labels.</ahelp>"
+msgstr ""
+
+#: 01/05050000.xhp#TIT
+msgid "Grid"
+msgstr ""
+
+#: 01/05050000.xhp#BM_ID3155602
+msgid "<bookmark_value>grids; formatting axes</bookmark_value><bookmark_value>axes; formatting grids</bookmark_value>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3155602.1
+msgid "<link href=\"text/schart/01/05050000.xhp\" name=\"Grid\">Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#PAR_ID3155764.2
+msgid "Opens a submenu, where you select the grid you want to format."
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3150045.3
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Major Grid\">X Axis Major Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3145228.4
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Major Grid\">Y Axis Major Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3147346.5
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"Z Axis Major Grid\">Z Axis Major Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3154021.6
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Minor Grid\">X Axis Minor Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3150307.7
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Minor Grid\">Y Axis Minor Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3166428.8
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"Z Axis minor Grid\">Z Axis minor Grid</link>"
+msgstr ""
+
+#: 01/05050000.xhp#HD_ID3145585.9
+msgid "<link href=\"text/schart/01/05050100.xhp\" name=\"All Axis Grids\">All Axis Grids</link>"
+msgstr ""
+
+#: 01/05050100.xhp#TIT
+msgid "Grid"
+msgstr ""
+
+#: 01/05050100.xhp#BM_ID3150398
+msgid "<bookmark_value>X axes;grid formatting</bookmark_value><bookmark_value>Y axes;grid formatting</bookmark_value><bookmark_value>Z axes; grid formatting</bookmark_value>"
+msgstr ""
+
+#: 01/05050100.xhp#HD_ID3150398.2
+msgid "Grid"
+msgstr ""
+
+#: 01/05050100.xhp#PAR_ID3152577.1
+msgid "<variable id=\"gitter\"><ahelp hid=\".uno:DiagramGridAll\">Opens the <emph>Grid</emph> dialog for defining grid properties.</ahelp></variable>"
+msgstr ""
+
+#: 01/05060000.xhp#TIT
+msgid "Chart Wall"
+msgstr ""
+
+#: 01/05060000.xhp#BM_ID3150792
+msgid "<bookmark_value>charts; formatting walls</bookmark_value><bookmark_value>formatting;chart walls</bookmark_value>"
+msgstr ""
+
+#: 01/05060000.xhp#HD_ID3150792.1
+msgid "Chart Wall"
+msgstr ""
+
+#: 01/05060000.xhp#PAR_ID3154685.2
+msgid "<variable id=\"diagramm\"><ahelp visibility=\"visible\" hid=\".uno:DiagramWall\">Opens the<emph> Chart Wall</emph> dialog, where you can modify the properties of the chart wall. The chart wall is the \"vertical\" background behind the data area of the chart.</ahelp></variable>"
+msgstr ""
+
+#: 01/05070000.xhp#TIT
+msgid "Chart Floor"
+msgstr ""
+
+#: 01/05070000.xhp#BM_ID3154346
+msgid "<bookmark_value>charts; formatting floors</bookmark_value><bookmark_value>formatting; chart floors</bookmark_value>"
+msgstr ""
+
+#: 01/05070000.xhp#HD_ID3154346.1
+msgid "Chart Floor"
+msgstr ""
+
+#: 01/05070000.xhp#PAR_ID3150767.2
+msgid "<variable id=\"diagrammboden\"><ahelp hid=\".uno:DiagramFloor\">Opens the<emph> Chart Floor</emph> dialog, where you can modify the properties of the chart floor. The chart floor is the lower area in 3D charts. This function is only available for 3D charts.</ahelp></variable>"
+msgstr ""
+
+#: 01/05080000.xhp#TIT
+msgid "Chart Area"
+msgstr ""
+
+#: 01/05080000.xhp#BM_ID3149670
+msgid "<bookmark_value>charts; formatting areas</bookmark_value><bookmark_value>formatting; chart areas</bookmark_value>"
+msgstr ""
+
+#: 01/05080000.xhp#HD_ID3149670.1
+msgid "Chart Area"
+msgstr ""
+
+#: 01/05080000.xhp#PAR_ID3125864.2
+msgid "<variable id=\"diagrammflaeche\"><ahelp visibility=\"visible\" hid=\".uno:DiagramArea\">Opens the<emph> Chart Area</emph> dialog, where you can modify the properties of the chart area. The chart area is the background behind all elements of the chart.</ahelp></variable>"
+msgstr ""
+
+#: 01/05120000.xhp#TIT
+msgid "Arrangement"
+msgstr ""
+
+#: 01/05120000.xhp#HD_ID3159153.1
+msgid "<link href=\"text/schart/01/05120000.xhp\" name=\"Arrangement\">Arrangement</link>"
+msgstr ""
+
+#: 01/05120000.xhp#PAR_ID3145750.2
+msgid "Allows you to modify the order of the data series already set in the chart."
+msgstr ""
+
+#: 01/05120000.xhp#PAR_ID3155411.8
+msgid "The position of the data in the data table remains unchanged. You can only choose the commands after inserting a chart in $[officename] Calc."
+msgstr ""
+
+#: 01/05120000.xhp#PAR_ID3154757.5
+msgid "This function is only available if you have data displayed in columns. It is not possible to switch to data display in rows."
+msgstr ""
+
+#: 01/05120000.xhp#HD_ID3147339.3
+msgid "Bring Forward"
+msgstr ""
+
+#: 01/05120000.xhp#PAR_ID3149259.6
+msgid "<ahelp hid=\".uno:Forward\">Brings the selected data series forward (to the right).</ahelp>"
+msgstr ""
+
+#: 01/05120000.xhp#HD_ID3146316.4
+msgid "Send Backward"
+msgstr ""
+
+#: 01/05120000.xhp#PAR_ID3147001.7
+msgid "<ahelp hid=\".uno:Backward\">Sends the selected data series backward (to the left).</ahelp>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#TIT
+msgid "Choosing a Chart Type"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#HD_ID9072237
+msgid "<variable id=\"choose_chart_type\"><link href=\"text/schart/01/choose_chart_type.xhp\">Choosing a Chart Type</link></variable>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID7085787
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/choose_chart_type.xhp#HD_ID6820886
+msgid "The available chart types"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID7309488
+msgid "Choose from the following chart types, depending on data type and intended presentation effect."
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID4673604
+msgid "<image id=\"img_id3145172\" src=\"chart2/res/columns_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_id3145172\">Icon</alt></image> and <image id=\"Graphic8\" src=\"chart2/res/bar_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID2586138
+msgid "<link href=\"text/schart/01/type_column_bar.xhp\">Column or Bar</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID4343394
+msgid "<image id=\"Graphic2\" src=\"chart2/res/pie_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID3859065
+msgid "<link href=\"text/schart/01/type_pie.xhp\">Pie</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID292672
+msgid "<image id=\"Graphic21\" src=\"chart2/res/areas_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID4043092
+msgid "<link href=\"text/schart/01/type_area.xhp\">Area</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID2578814
+msgid "<image id=\"Graphic3\" src=\"chart2/res/nostackdirectboth_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID4660481
+msgid "<link href=\"text/schart/01/type_line.xhp\">Line</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID3946653
+msgid "<image id=\"Graphic4\" src=\"chart2/res/valueaxisdirectpoints_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID5882747
+msgid "<link href=\"text/schart/01/type_xy.xhp\">XY (scatter)</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID0526200904431454
+msgid "<image id=\"graphics1\" src=\"chart2/res/bubble_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID0526200904431497
+msgid "<link href=\"text/schart/01/type_bubble.xhp\">Bubble</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID8752403
+msgid "<image id=\"Graphic5\" src=\"chart2/res/net_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID8425550
+msgid "<link href=\"text/schart/01/type_net.xhp\">Net</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID1846369
+msgid "<image id=\"Graphic6\" src=\"chart2/res/stock_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID1680654
+msgid "<link href=\"text/schart/01/type_stock.xhp\">Stock</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID1592150
+msgid "<image id=\"Graphic7\" src=\"chart2/res/columnline_52x60.png\" width=\"0.6252in\" height=\"0.5417in\"><alt id=\"alt_\">Icon</alt></image>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID3308816
+msgid "<link href=\"text/schart/01/type_column_line.xhp\">Column and Line</link>"
+msgstr ""
+
+#: 01/choose_chart_type.xhp#PAR_ID8174687
+msgid " "
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#TIT
+msgid "Smooth Line Properties"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#BM_ID3803827
+msgid "<bookmark_value>curves;properties in line charts/XY charts</bookmark_value><bookmark_value>properties;smooth lines in line charts/XY charts</bookmark_value>"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#HD_ID3050325
+msgid "Smooth Line Properties"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID9421979
+msgid "In a chart that displays lines (Line type or XY type), you can choose to show curves instead of straight lines. Some options control the properties of those curves."
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#HD_ID1228370
+msgid "To change line properties"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID1601611
+msgid "Select Cubic Spline or B-Spline."
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID879848
+msgid "These are mathematical models that influence the display of the curves. The cubic spline line passes through all points, while the B-spline line connects the first and last point and passes by the intermediate points."
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID3464461
+msgid "Optionally set the resolution. A higher value leads to a smoother line."
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID6998809
+msgid "For B-spline lines optionally set the data points order."
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID3424481
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Apply a cubic spline model.</ahelp>"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID1068758
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Apply a B-spline model.</ahelp>"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID2320932
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Set the resolution.</ahelp>"
+msgstr ""
+
+#: 01/smooth_line_properties.xhp#PAR_ID8638874
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Set the data points order.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#TIT
+msgid "3D View "
+msgstr ""
+
+#: 01/three_d_view.xhp#BM_ID3156423
+msgid "<bookmark_value>3D charts</bookmark_value>      <bookmark_value>charts; 3D views</bookmark_value>      <bookmark_value>illumination; 3D charts</bookmark_value>"
+msgstr ""
+
+#: 01/three_d_view.xhp#HD_ID3464461
+msgid "<variable id=\"three_d_view\"><link href=\"text/schart/01/three_d_view.xhp\">3D View</link></variable>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6998809
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> or in the context menu of a chart you can choose a chart type. <ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to edit the properties of a three dimensional view for Column, Bar, Pie, and Area charts. For Line and XY (Scatter) charts you can see 3D lines.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6942045
+msgid "The chart preview responds to the new settings that you enter in the dialog. "
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID3806878
+msgid "When you leave the dialog with OK, the settings are applied permanently. "
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID130619
+msgid "When you leave the dialog with Cancel or Escape, the chart returns to the state when you opened the dialog."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID8081911
+msgid "For a 3D chart you can choose <item type=\"menuitem\">Format - 3D View</item> to set perspective, appearance and illumination."
+msgstr ""
+
+#: 01/three_d_view.xhp#HD_ID2924283
+msgid "Perspective"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID5781731
+msgid "Enter the values for rotation of the chart on the three axes and for a perspective view."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID9999694
+msgid "Set all angles to 0 for a front view of the chart. Pie charts and donut charts are shown as circles."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2861720
+msgid "With Right-angled axes enabled, you can rotate the chart contents only in X and Y direction, that is, parallel to the chart borders."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2216559
+msgid "An x value of 90, with y and z set to 0, provides a view from top down to the chart. With x set to -90, you see the bottom of the chart."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID7869502
+msgid "The rotations are applied in the order first x, then y, last z."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID9852900
+msgid "When shading is enabled and you rotate a chart, the lights are rotated as if they are fixed to the chart."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2578203
+msgid "The rotation axes always relate to the page, not to the chart's axes. This is different from some other chart programs."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID4923245
+msgid "Select the Perspective check box to view the chart in central perspective as through a camera lens instead of using a parallel projection. "
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID3416547
+msgid "Set the focus length with the spin button. 100% gives a perspective view where a far edge in the chart looks approximately half as big as a near edge."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID3791924
+msgid "Older versions of %PRODUCTNAME cannot display the percentage of perspective the same way as the current version."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID7623828
+msgid "<ahelp hid=\".\" visibility=\"hidden\">If Right-angled axes is enabled, you can rotate the chart contents only in X and Y direction, that is, parallel to the chart borders. Right-angled axes is enabled by default for newly created 3D charts. Pie and Donut charts do not support right-angled axes.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID4721823
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Sets the rotation of the chart on the x axis. The preview responds to the new settings.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID5806756
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Sets the rotation of the chart on the y axis. The preview responds to the new settings.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID8915372
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Sets the rotation of the chart on the z axis. The preview responds to the new settings.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6070436
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Mark the Perspective box to view the chart as through a camera lens. Use the spin button to set the percentage. With a high percentage nearer objects look bigger than more distant objects.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#HD_ID7564012
+msgid "Appearance"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID1186254
+msgid "Select a scheme from the list box."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID7432477
+msgid "By selecting a scheme, the check boxes and the light sources are set accordingly."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID7141026
+msgid "If you mark or unmark a combination of check boxes that is not given by the Realistic or Simple scheme, you create a Custom scheme."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID1579027
+msgid "Mark <emph>Shading</emph> to use the Gouraud method for rendering the surface, otherwise a flat method is used. "
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID5624561
+msgid "The flat method sets a single color and brightness for each polygon. The edges are visible, soft gradients and spot lights are not possible. "
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID5901058
+msgid "The Gouraud method applies gradients for a smoother, more realistic look."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID8469191
+msgid "Mark <emph>Object Borders</emph> to draw lines along the edges."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID4407483
+msgid "Mark <emph>Rounded Edges</emph> to smooth the edges of box shapes."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID8531449
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a scheme from the list box, or click any of the check boxes below.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID9183935
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Applies Gouraud shading if marked, or flat shading if unmarked.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID946684
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows borders around the areas by setting the line style to Solid.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID9607226
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Edges are rounded by 5%.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#HD_ID1939451
+msgid "Illumination"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID9038972
+msgid "Set the light sources for the 3D view."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6531266
+msgid "Click any of the eight buttons to switch a directed light source on or off."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6173894
+msgid "By default, the second light source is switched on. It is the first of seven \"normal\", uniform light sources. The light source number one projects a specular light with highlights."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2761314
+msgid "For the selected light source, you can then choose a color and intensity in the list box just below the eight buttons. The brightness values of all lights are added, so use dark colors when you enable multiple lights."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID3912778
+msgid "The small preview inside this tab page has two sliders to set the vertical and horizontal position of the selected light source. The light source always aims to the middle of the object."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID3163853
+msgid "The button in the corner of the small preview switches the internal illumination model between a sphere and a cube."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID121158
+msgid "Use the Ambient light list box to define the ambient light which shines with a uniform intensity from all directions."
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2423780
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Drag the right slider to set the vertical height and direction of the selected light source.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2569658
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Drag the bottom slider to set the horizontal position and direction of the selected light source.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID6394238
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Click to switch between an illumination model of a sphere or a cube.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID533768
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Click to enable or disable the specular light source with highlights.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID7214270
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Click to enable or disable the uniform light source.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID2186346
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a color for the selected light source.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID1331217
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a color using the color dialog.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID393993
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a color for the ambient light.</ahelp>"
+msgstr ""
+
+#: 01/three_d_view.xhp#PAR_ID5871761
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a color using the color dialog.</ahelp>"
+msgstr ""
+
+#: 01/type_area.xhp#TIT
+msgid "Chart Type Area"
+msgstr ""
+
+#: 01/type_area.xhp#BM_ID4130680
+msgid "<bookmark_value>area charts</bookmark_value><bookmark_value>chart types;area</bookmark_value>"
+msgstr ""
+
+#: 01/type_area.xhp#HD_ID310678
+msgid "<variable id=\"type_area\"><link href=\"text/schart/01/type_area.xhp\">Chart Type Area</link></variable>"
+msgstr ""
+
+#: 01/type_area.xhp#PAR_ID916776
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_area.xhp#HD_ID961943
+msgid "Area"
+msgstr ""
+
+#: 01/type_area.xhp#PAR_ID631733
+msgid "An area chart shows values as points on the y axis. The x axis shows categories. The y values of each data series are connected by a line. The area between each two lines is filled with a color. The area chart's focus is to emphasize the changes from one category to the next."
+msgstr ""
+
+#: 01/type_area.xhp#PAR_ID7811822
+msgid "Normal - this subtype plots all values as absolute y values. It first plots the area of the last column in the data range, then the next to last, and so on, and finally the first column of data is drawn. Thus, if the values in the first column are higher than other values, the last drawn area will hide the other areas."
+msgstr ""
+
+#: 01/type_area.xhp#PAR_ID3640247
+msgid "Stacked - this subtypes plots values cumulatively stacked on each other. It ensures that all values are visible, and no data set is hidden by others. However, the y values no longer represent absolute values, except for the last column which is drawn at the bottom of the stacked areas."
+msgstr ""
+
+#: 01/type_area.xhp#PAR_ID4585100
+msgid "Percent - this subtype plots values cumulatively stacked on each other and scaled as percentage of the category total."
+msgstr ""
+
+#: 01/type_bubble.xhp#TIT
+msgid "Chart Type Bubble"
+msgstr ""
+
+#: 01/type_bubble.xhp#BM_ID2183975
+msgid "<bookmark_value>bubble charts</bookmark_value>      <bookmark_value>chart types;bubble</bookmark_value>"
+msgstr ""
+
+#: 01/type_bubble.xhp#HD_ID1970722
+msgid "<variable id=\"type_bubble\"><link href=\"text/schart/01/type_bubble.xhp\">Chart Type Bubble</link></variable>"
+msgstr ""
+
+#: 01/type_bubble.xhp#PAR_ID40589
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type."
+msgstr ""
+
+#: 01/type_bubble.xhp#HD_ID0526200904491284
+msgid "Bubble"
+msgstr ""
+
+#: 01/type_bubble.xhp#PAR_ID0526200904491222
+msgid "A bubble chart shows the relations of three variables. Two variables are used for the position on the X-axis and Y-axis, while the third variable is shown as the relative size of each bubble."
+msgstr ""
+
+#: 01/type_bubble.xhp#PAR_ID0526200906040162
+msgid "The data series dialog for a bubble chart has an entry to define the data range for the Bubble Sizes."
+msgstr ""
+
+#: 01/type_column_bar.xhp#TIT
+msgid "Chart Type Column and Bar"
+msgstr ""
+
+#: 01/type_column_bar.xhp#BM_ID4919583
+msgid "<bookmark_value>column charts</bookmark_value><bookmark_value>bar charts</bookmark_value><bookmark_value>chart types;column and bar</bookmark_value>"
+msgstr ""
+
+#: 01/type_column_bar.xhp#HD_ID649433
+msgid "<variable id=\"type_column_bar\"><link href=\"text/schart/01/type_column_bar.xhp\">Chart Type Column and Bar</link></variable>"
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID3430585
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_column_bar.xhp#HD_ID9826960
+msgid "Column"
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID2244026
+msgid "This type shows a bar chart or bar graph with vertical bars. The height of each bar is proportional to its value. The x axis shows categories. The y axis shows the value for each category."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID1281167
+msgid "Normal - this subtype shows all data values belonging to a category next to each other. Main focus is on the individual absolute values, compared to every other value."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID3249000
+msgid "Stacked - this subtype shows the data values of each category on top of each other. Main focus is the overall category value and the individual contribution of each value within its category."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID6968901
+msgid "Percent - this subtype shows the relative percentage of each data value with regard to the total of its category. Main focus is the relative contribution of each value to the category's total."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID2224494
+msgid "You can enable a <link href=\"text/schart/01/three_d_view.xhp\">3D view</link> of the data values. The \"realistic\" scheme tries to give the best 3D look. The \"simple\" scheme tries to mimic the chart view of other Office products."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID7359233
+msgid "For 3D charts, you can select the shape of each data value from Box, Cylinder, Cone, and Pyramid."
+msgstr ""
+
+#: 01/type_column_bar.xhp#HD_ID955839
+msgid "Bar"
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID6596881
+msgid "This type shows a bar chart or bar graph with horizontal bars. The length of each bar is proportional to its value. The y axis shows categories. The x axis shows the value for each category."
+msgstr ""
+
+#: 01/type_column_bar.xhp#PAR_ID8750572
+msgid "The subtypes are the same as for the Column type."
+msgstr ""
+
+#: 01/type_column_line.xhp#TIT
+msgid "Chart Type Column and Line "
+msgstr ""
+
+#: 01/type_column_line.xhp#BM_ID5976744
+msgid "<bookmark_value>column and line charts</bookmark_value><bookmark_value>chart types;column and line</bookmark_value><bookmark_value>combination charts</bookmark_value>"
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID8596453
+msgid "<variable id=\"type_column_line\"><link href=\"text/schart/01/type_column_line.xhp\">Chart Type Column and Line</link></variable>"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID4818567
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID2451551
+msgid "Column and Line"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID3101901
+msgid "A Column and Line chart is a combination of a <link href=\"text/schart/01/type_column_bar.xhp\">Column chart</link> with a <link href=\"text/schart/01/type_line.xhp\">Line chart</link>."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID7910397
+msgid "Select one of the variants"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID5244300
+msgid "Columns and Lines. The rectangles of the column data series are drawn side by side so that you can easily compare their values."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID7163609
+msgid "Stacked Columns and Lines. The rectangles of the column data series are drawn stacked above each other, so that the height of a column visualizes the sum of the data values."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID1842097
+msgid "You can insert a second y-axis with <link href=\"text/schart/01/04040000.xhp\">Insert - Axes</link> after you finish the wizard."
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID8297677
+msgid "To specify a data range"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID8871120
+msgid "The leftmost columns (or the top rows) of the selected data range provide the data that are shown as Columns objects. The other columns or rows of the data range provide the data for the Lines objects. You can change this assignment in the <emph>Data Series</emph> dialog."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID2952055
+msgid "Select the data range."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID594500
+msgid "Click one of the options for data series in rows or in columns."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID1944944
+msgid "Check whether the data range has labels in the first row or in the first column or both."
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID6667683
+msgid "Organizing data series"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID7616809
+msgid "In the Data Series list box you see a list of all data series in the current chart."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID9770195
+msgid "The column data series are positioned at the top of the list, the line data series at the bottom of the list."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID1446272
+msgid "To organize the data series, select an entry in the list."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID3779717
+msgid "Click Add to add another data series below the selected entry. The new data series has the same type as the selected entry."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID5056611
+msgid "Click Remove to remove the selected entry from the Data Series list."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID7786492
+msgid "Use the Up and Down arrow buttons to move the selected entry in the list up or down. This way you can convert a Column data series to a List data series and back. This does not change the order in the data source table, but changes only the arrangement in the chart."
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID265816
+msgid "Editing data series"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID6768700
+msgid "Click an entry in the list to view and edit the properties for that entry."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID1924497
+msgid "In the Data Ranges list box you see the role names and cell ranges of the data series components. "
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID5081942
+msgid "Click an entry, then edit the contents in the text box below. "
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID2958464
+msgid "The label next to the text box states the currently selected role. "
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID883816
+msgid "Enter the range or click <emph>Select data range</emph> to minimize the dialog and select the range with the mouse."
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID5091708
+msgid "The range for a data role, like Y-Values, must not include a label cell."
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID974456
+msgid "Editing categories or data labels"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID2767113
+msgid "Enter or select a cell range that will be used as text for categories or data labels. "
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID301828
+msgid "The values in the Categories range will be shown as labels on the x axis."
+msgstr ""
+
+#: 01/type_column_line.xhp#HD_ID8996246
+msgid "Inserting chart elements"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID5729544
+msgid "Use the Chart Elements page of the Chart Wizard to insert any of the following elements:"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID2932828
+msgid "Chart titles"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID9449446
+msgid "Legend"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID8122196
+msgid "Visible grid lines"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID9909665
+msgid "For additional elements use the Insert menu of the chart in edit mode. There you can define the following elements:"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID9141819
+msgid "Secondary axes"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID6354869
+msgid "Minor grids"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID2685323
+msgid "Data labels"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID6042664
+msgid "Statistics, for example mean values, y error bars and trend lines"
+msgstr ""
+
+#: 01/type_column_line.xhp#PAR_ID7889950
+msgid "To set different data labels for each data series, use the properties dialog of the data series."
+msgstr ""
+
+#: 01/type_line.xhp#TIT
+msgid "Chart Type Line"
+msgstr ""
+
+#: 01/type_line.xhp#BM_ID2187566
+msgid "<bookmark_value>line charts</bookmark_value><bookmark_value>chart types;line</bookmark_value>"
+msgstr ""
+
+#: 01/type_line.xhp#HD_ID9422894
+msgid "<variable id=\"type_line\"><link href=\"text/schart/01/type_line.xhp\">Chart Type Line</link></variable>"
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID389721
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_line.xhp#HD_ID9826349
+msgid "Line"
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID2334665
+msgid "A line chart shows values as points on the y axis. The x axis shows categories. The y values of each data series can be connected by a line."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID8956572
+msgid "Points only - this subtype plots only points."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID500808
+msgid "Points and lines - this subtype plots points and connects points of the same data series by a line."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID8366649
+msgid "Lines only - this subtype plots only lines."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID476393
+msgid "3D lines - this subtype connects points of the same data series by a 3D line."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID2655720
+msgid "Mark <emph>Stack series</emph> to arrange the points' y values cumulative above each other. The y values no longer represent absolute values, except for the first column which is drawn at the bottom of the stacked points. If you select <emph>Percent</emph>, the y values are scaled as percentage of the category total."
+msgstr ""
+
+#: 01/type_line.xhp#PAR_ID3682058
+msgid "Mark <emph>Smooth lines</emph> to draw curves through the points instead of straight lines. Click <emph>Properties</emph> for a <link href=\"text/schart/01/smooth_line_properties.xhp\">dialog</link> to change the curves' properties."
+msgstr ""
+
+#: 01/type_net.xhp#TIT
+msgid "Chart Type Net"
+msgstr ""
+
+#: 01/type_net.xhp#BM_ID2193975
+msgid "<bookmark_value>net charts</bookmark_value><bookmark_value>chart types;net</bookmark_value><bookmark_value>radar charts, see net charts</bookmark_value>"
+msgstr ""
+
+#: 01/type_net.xhp#HD_ID1990722
+msgid "<variable id=\"type_net\"><link href=\"text/schart/01/type_net.xhp\">Chart Type Net</link></variable>"
+msgstr ""
+
+#: 01/type_net.xhp#PAR_ID40589
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_net.xhp#HD_ID1391338
+msgid "Net"
+msgstr ""
+
+#: 01/type_net.xhp#PAR_ID7812433
+msgid "A Net chart displays data values as points connected by some lines, in a grid net that resembles a spider net or a radar tube display."
+msgstr ""
+
+#: 01/type_net.xhp#PAR_ID3512375
+msgid "For each row of chart data, a radial is shown on which the data is plotted. All data values are shown with the same scale, so all data values should have about the same magnitude."
+msgstr ""
+
+#: 01/type_pie.xhp#TIT
+msgid "Chart Type Pie "
+msgstr ""
+
+#: 01/type_pie.xhp#BM_ID7621997
+msgid "<bookmark_value>donut charts</bookmark_value>      <bookmark_value>pie charts;types</bookmark_value>      <bookmark_value>chart types;pie/donut</bookmark_value>"
+msgstr ""
+
+#: 01/type_pie.xhp#HD_ID3365276
+msgid "<variable id=\"type_pie\"><link href=\"text/schart/01/type_pie.xhp\">Chart Type Pie</link></variable>"
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID245979
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_pie.xhp#HD_ID5799432
+msgid "Pie"
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID6549272
+msgid "A pie chart shows values as circular sectors of the total circle. The length of the arc, or the area of each sector, is proportional to its value."
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID6529740
+msgid "Pie - this subtype shows sectors as colored areas of the total pie, for one data column only. In the created chart, you can click and drag any sector to separate that sector from the remaining pie or to join it back."
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID9121982
+msgid "Exploded pie - this subtype shows the sectors already separated from each other. In the created chart, you can click and drag any sector to move it along a radial from the pie's center."
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID3808404
+msgid "Donut - this subtype can show multiple data columns. Each data column is shown as one donut shape with a hole inside, where the next data column can be shown. In the created chart, you can click and drag an outer sector to move it along a radial from the donut's center."
+msgstr ""
+
+#: 01/type_pie.xhp#PAR_ID2394482
+msgid "Exploded donut - this subtype shows the outer sectors already separated from the remaining donut. In the created chart, you can click and drag an outer sector to move it along a radial from the donut's center."
+msgstr ""
+
+#: 01/type_stock.xhp#TIT
+msgid "Chart Type Stock"
+msgstr ""
+
+#: 01/type_stock.xhp#BM_ID2959990
+msgid "<bookmark_value>stock charts</bookmark_value>      <bookmark_value>chart types;stock</bookmark_value>      <bookmark_value>data sources;setting for stock charts</bookmark_value>"
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID966216
+msgid "<variable id=\"type_stock\"><link href=\"text/schart/01/type_stock.xhp\">Chart Type Stock</link></variable>"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3516953
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID5268410
+msgid "Stock"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID61342
+msgid "A Stock chart illustrates the market trend given by opening price, bottom price, top price and closing price. The transaction volume can also be shown."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2131412
+msgid "For a Stock chart the order of the data series is important. The data should be arranged as shown in the example table below."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1022064
+msgid "A"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1924192
+msgid "B"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3258156
+msgid "C"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3161412
+msgid "D"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5619373
+msgid "E"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6474501
+msgid "F"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7411725
+msgid "1"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1933957
+msgid "Transaction volume"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1274452
+msgid "Opening price"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5044404
+msgid "Low (bottom price)"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3892635
+msgid "High (top price)"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4641865
+msgid "Closing price"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7684560
+msgid "2"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3998840
+msgid "Monday"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7675099
+msgid "2500"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7806329
+msgid "20"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5589159
+msgid "15"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9936216
+msgid "25"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7953123
+msgid "17"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4013794
+msgid "3"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1631824
+msgid "Tuesday"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7271645
+msgid "3500"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2136295
+msgid "32"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4186223
+msgid "22"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1491134
+msgid "37"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2873622
+msgid "30"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2374034
+msgid "4"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1687063
+msgid "Wednesday"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID8982207
+msgid "1000"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7074190
+msgid "15"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5452436
+msgid "15"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9527878
+msgid "17"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6342356
+msgid "17"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID166936
+msgid "5"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6826990
+msgid "Thursday"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6897183
+msgid "2200"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7003387
+msgid "40"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4897915
+msgid "30"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3105868
+msgid "47"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3908810
+msgid "35"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9461653
+msgid "6"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9239173
+msgid "Friday"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2656941
+msgid "4600"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1481063
+msgid "27"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7921079
+msgid "20"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID636921
+msgid "32"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2799157
+msgid "31"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3004547
+msgid "The open, low, high, and closing values of a row build together one data unit in the chart. A stock price data series consists of several rows containing such data units. The column containing the transaction volume builds an optional second data series."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6401867
+msgid "Depending on the chosen variant, you do not need all columns."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID18616
+msgid "Stock Chart Variants"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6138492
+msgid "Choose the <emph>Stock</emph> chart type on the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart wizard</link>. Then select one of the four variants."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID4569231
+msgid "Type 1"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID291451
+msgid "Based on<emph> low</emph>         <emph>and high </emph>column the Type 1 shows the distance between bottom price (low) and top price (high) by a vertical line."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3341776
+msgid "Based on<emph> low, high,</emph> and <emph>close</emph> column Type 1 shows an additional horizontal mark <emph>for</emph> the closing price."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID5947141
+msgid "Type 2"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1911679
+msgid "Based on <emph>open, low, high</emph>, and <emph>close</emph> column Type 2 generates the traditional \"candle stick\" chart. Type 2 draws the vertical line between the bottom and top price and adds a rectangle in front, which visualizes the range between the opening and closing price. If you click on the rectangle you see more information in the status bar. %PRODUCTNAME uses different fill colors for rising values (the opening price is lower than the closing price) and falling values."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID9364909
+msgid "Type 3"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4473403
+msgid "Based on <emph>volume, low, high</emph>, and <emph>close</emph> column chart Type 3 draws a chart like Type 1, with additional columns for the transaction volume."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID4313791
+msgid "Type 4"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4331797
+msgid "Based on all five data columns <emph>volume, open, low, high</emph>, and <emph>close</emph>, Type 4 combines a chart of Type 2 with a column chart for the transaction volume."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4191717
+msgid "Because measurement for transaction volume might be \"units\", a second y axis is introduced in chart Type 3 and Type 4. The price axis is shown on the right side and the volume axis on the left side."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID2318796
+msgid "Setting the Data Source"
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID399182
+msgid "Charts based on its own data"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5298318
+msgid "To change the data series of a chart having its own data, choose <link href=\"text/schart/01/03010000.xhp\">Chart Data Table</link> from the View menu or from the context menu of the chart in edit mode."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7588732
+msgid "In an embedded chart data table, the data series are always organized in columns."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID95828
+msgid "For a new stock chart first use a column chart. Add the columns you need and enter your data in the order which is shown in the example, omitting any columns not required for the desired variant. Use Move Series Right to change the column order. Close the chart data table. Now use the Chart Type dialog to change to the stock chart variant. "
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6182744
+msgid "If you have already got a stock chart and you want to change the variant, then first change the chart type to a column chart, add or remove columns so that it fits to the variant, and then change the chart type back to a stock chart."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3496200
+msgid "Do not write the name of a data series in a row. Write the name into the field above the role name."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7599108
+msgid "The order of the rows determines how the categories are arranged in the chart. Use Move Row Down to change the order."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID888698
+msgid "Charts based on Calc or Writer tables"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3394573
+msgid "You can choose or alter a data range on the second page of the Chart wizard or in the <link href=\"text/schart/01/wiz_data_range.xhp\">Data Range</link> dialog. For fine tuning use the <link href=\"text/schart/01/wiz_data_series.xhp\">Data Series</link> dialog."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7594225
+msgid "To specify a data range do one of the following:"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID5081637
+msgid "Enter the data range in the text box."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9759514
+msgid "In Calc, an example data range would be \"$Sheet1.$B$3:$B$14\". Note that a data range may consist of more than one region in a spreadsheet, e.g. \"$Sheet1.A1:A5;$Sheet1.D1:D5\" is also a valid data range. In Writer, an example data range would be \"Table1.A1:E4\"."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1614429
+msgid "As long as the syntax is not correct, %PRODUCTNAME shows the text in red."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID1589098
+msgid "In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag to select the data range. When you release the mouse, the data are entered. Click <emph>Select </emph>               <emph>data range</emph> again to add a data range. In the input field of the minimized dialog, click after the entry and type a semicolon. Then drag to select the next range."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID8746910
+msgid "Click one of the options for data series in rows or in columns. "
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9636524
+msgid "Your stock chart data are \"in columns\", if the information in a row belongs to the same \"candle stick\"."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID5675527
+msgid "Fine Tuning the Data Ranges of Table Based Stock Charts"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3486434
+msgid "You can organize data series and edit the source for parts of single data series on the third page of the Chart wizard or on the page Data Series in the Data Range dialog."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID3068636
+msgid "Organize Data Series"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2480849
+msgid "In the <emph>data series</emph> area on the left side of the dialog, you can organize the data series of the actual chart. A stock chart has at least one data series containing the prices. It might have a second data series for transaction volume."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID4181951
+msgid "If you have got more than one price data series, use the Up and Down arrow buttons to order them. The order determines the arrangement in the chart. Do the same for volume data series. You cannot switch price and volume data series."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2927335
+msgid "To remove a data series, select the data series in the list and click <emph>Remove</emph>."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2107303
+msgid "To add a data series, select one of the existing data series and click <emph>Add</emph>. You get an empty entry below the selected one, which has the same type. If you have no price data series or no volume data series, you must first select a range for these series in the <emph>Data Range</emph> dialog."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID4071779
+msgid "Setting Data Ranges"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7844477
+msgid "In the <emph>Data Ranges</emph> dialog you can set or change the data range of each component of the selected data series."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID6478469
+msgid "In the upper list you see the role name of the components and the current values. When you have selected a role, you can change the value in the text box below the list. The label shows the selected role."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID9038972
+msgid "Enter the range into the text box or click on <emph>Select data range</emph> to minimize the dialog and select the range with the mouse."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID7985168
+msgid "Select Open Values, Close Values, High Values, and Low Values in any order. Specify only the ranges for those roles which you need for the chosen variant of the stock chart. The ranges need not be next to each other in the table."
+msgstr ""
+
+#: 01/type_stock.xhp#HD_ID876186
+msgid "Legend"
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID3939634
+msgid "The legend displays the labels from the first row or column or from the special range that you have set in the <emph>Data Series</emph> dialog. If your chart does not contain labels, the legend displays text like \"Row 1, Row 2, ...\", or \"Column A, Column B, ...\" according to the row number or column letter of the chart data."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2377697
+msgid "The legend shows the value from the range, which you entered in the <emph>Range for Name</emph> field in the <emph>Data Range</emph> dialog. The default entry is the column header of the closing price column."
+msgstr ""
+
+#: 01/type_stock.xhp#PAR_ID2188787
+msgid "Select one of the position options. When the chart is finished, you can specify other positions using the Format menu."
+msgstr ""
+
+#: 01/type_xy.xhp#TIT
+msgid "Chart Type XY"
+msgstr ""
+
+#: 01/type_xy.xhp#BM_ID84231
+msgid "<bookmark_value>scatter charts</bookmark_value><bookmark_value>XY charts</bookmark_value><bookmark_value>chart types;XY (scatter)</bookmark_value><bookmark_value>error indicators in charts</bookmark_value><bookmark_value>error bars in charts</bookmark_value><bookmark_value>averages in charts</bookmark_value><bookmark_value>statistics in charts</bookmark_value><bookmark_value>variances in charts</bookmark_value><bookmark_value>standard deviation in charts</bookmark_value>"
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID9346598
+msgid "<variable id=\"type_xy\"><link href=\"text/schart/01/type_xy.xhp\">Chart Type XY (Scatter)</link></variable>"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID2003845
+msgid "On the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose a chart type. "
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID7757194
+msgid "XY (Scatter)"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID5977965
+msgid "An XY chart in its basic form is based on one data series consisting of a name, a list of x‑values, and a list of y‑values. Each value pair (x|y) is shown as a point in a coordinate system. The name of the data series is associated with the y‑values and shown in the legend."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID4381847
+msgid "Choose an XY chart for the following example tasks:"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID1336710
+msgid "scale the x‑axis"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID1221655
+msgid "generate a parameter curve, for example a spiral"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID3397320
+msgid "draw the graph of a function"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID7657399
+msgid "explore the statistical association of quantitative variables"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID8925138
+msgid "Your XY chart may have more than one data series."
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID5461897
+msgid "XY Chart Variants"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID8919339
+msgid "You can choose an XY chart variant on the first page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link>, or by choosing <item type=\"menuitem\">Format - Chart Type </item>for a chart in edit mode."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID4634235
+msgid "The chart is created with default settings. After the chart is finished, you can edit its properties to change the appearance. Line styles and icons can be changed on the <emph>Line</emph>tab page of the data series properties dialog."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID5482039
+msgid "Double-click any data point to open the <item type=\"menuitem\">Data Series</item> dialog. In this dialog, you can change many properties of the data series."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID0805200810492449
+msgid "For 2D charts, you can choose <item type=\"menuitem\">Insert - Y Error Bars</item> to enable the display of error bars."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID6221198
+msgid "You can enable the display of mean value lines and trend lines using commands on the Insert menu."
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID1393475
+msgid "Points only"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID6571550
+msgid "Each data point is shown by an icon. %PRODUCTNAME uses default icons with different forms and colors for each data series. The default colors are set in <item type=\"menuitem\"><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Charts - Default Colors</item>. "
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID5376140
+msgid "Lines Only"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID4408093
+msgid "This variant draws straight lines from one data point to the next. The data points are not shown by icons. "
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID7261268
+msgid "The drawing order is the same as the order in the data series. Mark <emph>Sort by X Values</emph> to draw the lines in the order of the x values. This sorting applies only to the chart, not to the data in the table."
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID6949369
+msgid "Points and Lines"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID9611499
+msgid "This variant shows points and lines at the same time."
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID6765953
+msgid "3D Lines"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID7422711
+msgid "The lines are shown like tapes. The data points are not shown by icons. In the finished chart choose <link href=\"text/schart/01/three_d_view.xhp\">3D View</link> to set properties like illumination and angle of view."
+msgstr ""
+
+#: 01/type_xy.xhp#HD_ID239265
+msgid "Smooth Lines"
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID7957396
+msgid "Mark <emph>Smooth Lines</emph> to draw curves instead of straight line segments."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID1202124
+msgid "Click <emph>Properties</emph> to set details for the curves."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID5989562
+msgid "<emph>Cubic Spline</emph> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature. "
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID6128421
+msgid "The <emph>Resolution</emph> determines how many line segments are calculated to draw a piece of polynomial between two data points. You can see the intermediate points if you click any data point."
+msgstr ""
+
+#: 01/type_xy.xhp#PAR_ID9280373
+msgid "<emph>B-Spline</emph> uses the data points as control points to form a B-spline curve. Those curves are built piecewise from polynomials. The <emph>Data points order</emph> sets the degree k of these polynomials. "
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#TIT
+msgid "Chart Wizard - Chart Elements"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#HD_ID70802
+msgid "<variable id=\"wiz_chart_elements\"><link href=\"text/schart/01/wiz_chart_elements.xhp\">Chart Wizard - Chart Elements</link></variable>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID8746604
+msgid "On this page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can choose the chart elements to be shown."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6437269
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a title for your chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID9469893
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a subtitle for your chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID130008
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a label for the x-axis (horizontal).</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID5821710
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a label for the y-axis (vertical).</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID2871791
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a label for the z-axis. This option is only available for three-dimensional charts.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID7333597
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays a legend in your chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID9976195
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Positions the legend to the left of the chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID2507400
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Positions the legend to the top of the chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID216681
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Positions the legend to the right of the chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID7709585
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Positions the legend to the bottom of the chart.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID4309518
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the x-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID206610
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the y-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6917020
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the z-axis. This option is only available for three-dimensional charts.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID9969481
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a label for the secondary x-axis. This option is only available for charts that support a secondary x-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID816675
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter a label for the secondary y-axis. This option is only available for charts that support a secondary y-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#HD_ID4411145
+msgid "To enter chart elements"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID3274941
+msgid "Enter titles or click the elements that you want to be shown on the current chart."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#HD_ID9804681
+msgid "Titles"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID3614917
+msgid "If you enter text for a title, subtitle, or any axis, the necessary space will be reserved to display the text next to the chart. If you do not enter a text, no space will be reserved, leaving more space to display the chart."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID156865
+msgid "It is not possible to link the title text to a cell. You must enter the text directly."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6034424
+msgid "When the chart is finished, you can change the position and other properties by the <emph>Format</emph> menu."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID9033783
+msgid "Legend"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID1069368
+msgid "The legend displays the labels from the first row or column, or from the range that you have set in the Data Series dialog. If your chart does not contain labels, the legend displays text like \"Row 1, Row 2, ...\", or \"Column A, Column B, ...\" according to the row number or column letter of the chart data."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6998809
+msgid "You cannot enter the text directly, it is automatically generated from the Name cell range."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID71413
+msgid "Select one of the position options. When the chart is finished, you can specify other positions using the Format menu."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID4776757
+msgid "Grids"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6737876
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the x-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID1058992
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the y-axis.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID7366557
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays grid lines that are perpendicular to the z-axis. This option is only available for three-dimensional charts.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6527298
+msgid "The visible grid lines can help to estimate the data values in the chart."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID2924283
+msgid "The distance of the grid lines corresponds to the interval settings in the Scale tab of the axis properties."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID5781731
+msgid "Grid lines are not available for pie charts."
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#HD_ID6942045
+msgid "Additional elements"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID4721823
+msgid "For additional elements use the Insert menu of the chart in edit mode. There you can define the following elements:"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID5806756
+msgid "Secondary axes"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID8915372
+msgid "Minor grids"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID6070436
+msgid "Data labels"
+msgstr ""
+
+#: 01/wiz_chart_elements.xhp#PAR_ID7564012
+msgid "Statistics, for example mean values, y error bars and trend lines"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#TIT
+msgid "Chart Wizard - Chart Type"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#BM_ID4266792
+msgid "<bookmark_value>charts;choosing chart types</bookmark_value>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#HD_ID1536606
+msgid "<variable id=\"wiz_chart_type\"><link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard - Chart Type</link></variable>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID6006958
+msgid "On the first page of the Chart Wizard you can <link href=\"text/schart/01/choose_chart_type.xhp\">choose a chart type</link>."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#HD_ID3919186
+msgid "To choose a chart type"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID3453169
+msgid "Choose a basic <link href=\"text/schart/01/choose_chart_type.xhp\">chart type</link>: click any of the entries labeled Column, Bar, Pie, and so on."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID8406933
+msgid "The contents on the right side will change to offer more options depending on the basic chart type."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID8230231
+msgid "Optionally, click any of the options. While you change the settings in the wizard, watch the preview in the document to see how the chart will look."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID3267006
+msgid "Press <item type=\"keycode\">Shift+F1</item> and point to a control to see an extended help text."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID7251503
+msgid "Click <emph>Finish</emph> on any wizard page to close the wizard and create the chart using the current settings."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID3191625
+msgid "Click <emph>Next</emph> to see the next wizard page, or click the entries on the left side of the wizard to go to that page."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID7659535
+msgid "Click <emph>Back</emph> to see the previous wizard page."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID8420056
+msgid "Click <emph>Cancel</emph> to close the wizard without creating a chart."
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID2284920
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Click to go to the named wizard page.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID3184301
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a basic chart type.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID2129276
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a sub type of the basic chart type.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID9719229
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enables a 3D look for the data values.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID3860896
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select the type of 3D look.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID4041871
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Select a shape from the list.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID9930722
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Displays stacked series for Line charts.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID5749687
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Stack series display values on top of each other.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID79348
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Stack series display values as percent.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID2414014
+msgid "<ahelp hid=\".\" visibility=\"hidden\">The lines are shown as curves.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID7617114
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to set the curve properties.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID6649372
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Connects points by ascending X values, even if the order of values is different, in an XY scatter diagram.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID7334208
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Set the number of lines for the Column and Line chart type.</ahelp>"
+msgstr ""
+
+#: 01/wiz_chart_type.xhp#PAR_ID4485000
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens the Chart Type dialog.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#TIT
+msgid "Chart Wizard - Data Range"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#BM_ID2429578
+msgid "<bookmark_value>data ranges in charts</bookmark_value>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#HD_ID8313852
+msgid "<variable id=\"wiz_data_range\"><link href=\"text/schart/01/wiz_data_range.xhp\">Chart Wizard - Data Range</link></variable>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID8829309
+msgid "On this page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can select one single source of data range. This range may consist of more than one rectangular range of cells."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID6401867
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens the Data Ranges dialog where you can edit Data Range and Data Series.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID2025818
+msgid "Use the Chart Wizard - Data Series page if you need more control over the data ranges."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID8466139
+msgid "This dialog is only available for charts based on a Calc or Writer table."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#HD_ID1877193
+msgid "To specify a data range"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID5924863
+msgid "Select the data range. Do one of the following:"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID4357432
+msgid "Enter the data range in the text box."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID5626392
+msgid "In Calc, an example data range would be \"$Sheet1.$B$3:$B$14\". Note that a data range may consist of more than one region in a spreadsheet, e.g. \"$Sheet1.A1:A5;$Sheet1.D1:D5\" is also a valid data range. In Writer, an example data range would be \"Table1.A1:E4\"."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID1363872
+msgid "In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag over a cell area to select the data range."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID6823938
+msgid "If you want a data range of multiple cell areas that are not next to each other, enter the first range, then manually add a semicolon at the end of the text box, then enter the other ranges. Use a semicolon as delimiter between ranges."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID1434369
+msgid "Click one of the options for data series in rows or in columns."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID7524033
+msgid "Check whether the data range has labels in the first row or in the first column or both."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID5256508
+msgid "In the preview you can see how the final chart will look."
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID379650
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Enter the data range that you want to include in your chart. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID953703
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Data series get their data from consecutive rows in the selected range. For scatter charts, the first data series will contain x-values for all series. All other data series are used as y-values, one for each series.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID4496597
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Data series get their data from consecutive columns in the selected range. For scatter charts, the first data column will contain x-values for all series. All other data columns are used as y-values, one for each series.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID2898953
+msgid "<ahelp hid=\".\" visibility=\"hidden\">For data series in columns: The first row in the range is used as names for data series. For data series in rows: The first row in the range is used as categories. The remaining rows comprise the data series. If this check box is not selected, all rows are data series.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_range.xhp#PAR_ID7546311
+msgid "<ahelp hid=\".\" visibility=\"hidden\">For data series in columns: The first column in the range is used as names for data series. For data series in rows: The first column in the range is used as categories. The remaining columns comprise the data columns. If this check box is not selected, all columns are data columns.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#TIT
+msgid "Chart Wizard - Data Series"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#BM_ID8641621
+msgid "<bookmark_value>order of chart data</bookmark_value><bookmark_value>data series</bookmark_value>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#HD_ID6124149
+msgid "<variable id=\"wiz_data_series\"><link href=\"text/schart/01/wiz_data_series.xhp\">Chart Wizard - Data Series</link></variable>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID9651478
+msgid "On this page of the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart Wizard</link> you can change the source range of all data series separately, including their labels. You can also change the range of the categories. You can first select the data range on the Data Range page and then remove unnecessary data series or add data series from other cells here."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID6326487
+msgid "If there seem to be too many options on this page, just define the data range on the Chart Wizard - Data Range page and skip this page."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID686361
+msgid "This dialog is only available for charts based on a Calc or Writer table."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#HD_ID9241615
+msgid "Organizing data series"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID7159337
+msgid "In the Data Series list box you see a list of all data series in the current chart."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID4921720
+msgid "To organize the data series, select an entry in the list."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID6627094
+msgid "Click Add to add another data series below the selected entry. The new data series has the same type as the selected entry."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID2926419
+msgid "Click Remove to remove the selected entry from the Data Series list."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID4443800
+msgid "Use the Up and Down arrow buttons to move the selected entry in the list up or down. This does not change the order in the data source table, but changes only the arrangement in the chart."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#HD_ID9777520
+msgid "Editing data series"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID1474654
+msgid "Click an entry in the list to view and edit the properties for that entry."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID4855189
+msgid "In the Data Ranges list box you see the role names and cell ranges of the data series components. "
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID9475081
+msgid "Click an entry, then edit the contents in the text box below. "
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID4695272
+msgid "The label next to the text box states the currently selected role. "
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID3931699
+msgid "Enter the range or click <emph>Select data range</emph> to minimize the dialog and select the range with the mouse."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID8626667
+msgid "If you want a data range of multiple cell areas that are not next to each other, enter the first range, then manually add a semicolon at the end of the text box, then enter the other ranges. Use a semicolon as delimiter between ranges."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID5971556
+msgid "The range for a data role, like Y-Values, must not include a label cell."
+msgstr ""
+
+#: 01/wiz_data_series.xhp#HD_ID7622608
+msgid "Editing categories or data labels"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID9222693
+msgid "Enter or select a cell range that will be used as text for categories or data labels. "
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID9500106
+msgid "Depending on the chart type, the texts are shown on the X axis or as data labels. "
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID5201879
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows a list of all data series in the chart. Click an entry to view and edit that data series. Click <emph>Add</emph> to insert a new series into the list after the selected entry.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID2571794
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows all the data ranges used by the data series that is selected in the Data Series list box. Each data range shows the role name and the source range address.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID2254402
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows the source range address from the second column of the Data Range list box. You can change the range in the text box or by dragging in the document. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID2419507
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Shows the source range address of the categories (the texts you can see on the x-axis of a category chart). For an XY-chart, the text box contains the source range of the data labels which are displayed for the data points. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID1091647
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Adds a new entry below the current entry in the Data Series list. If an entry is selected, the new data series gets the same chart type.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID8831446
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the Data Series list.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID7022309
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Moves up the selected entry in the Data Series list.</ahelp>"
+msgstr ""
+
+#: 01/wiz_data_series.xhp#PAR_ID2844019
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Moves down the selected entry in the Data Series list.</ahelp>"
+msgstr ""
+
+#: 02/01190000.xhp#TIT
+msgid "Data in Rows"
+msgstr ""
+
+#: 02/01190000.xhp#HD_ID3146976.1
+msgid "<link href=\"text/schart/02/01190000.xhp\" name=\"Data in Rows\">Data in Rows</link>"
+msgstr ""
+
+#: 02/01190000.xhp#PAR_ID3154490.2
+msgid "<ahelp hid=\".uno:DataInRows\">Changes the arrangement of the chart data.</ahelp>"
+msgstr ""
+
+#: 02/01190000.xhp#PAR_ID3150751
+msgid "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_datainrows.png\"  ><alt id=\"alt_id3145643\">Icon</alt></image>"
+msgstr ""
+
+#: 02/01190000.xhp#PAR_ID3154754.3
+msgid "Data in Rows"
+msgstr ""
+
+#: 02/01200000.xhp#TIT
+msgid "Data in Columns"
+msgstr ""
+
+#: 02/01200000.xhp#HD_ID3150868.1
+msgid "<link href=\"text/schart/02/01200000.xhp\" name=\"Data in Columns\">Data in Columns</link>"
+msgstr ""
+
+#: 02/01200000.xhp#PAR_ID3145749.2
+msgid "<ahelp hid=\".uno:DataInColumns\">Changes the arrangement of the chart data.</ahelp>"
+msgstr ""
+
+#: 02/01200000.xhp#PAR_ID3149260
+msgid "<image id=\"img_id3149379\" src=\"res/commandimagelist/sc_dataincolumns.png\"  ><alt id=\"alt_id3149379\">Icon</alt></image>"
+msgstr ""
+
+#: 02/01200000.xhp#PAR_ID3149377.3
+msgid "Data in Columns"
+msgstr ""
+
+#: 02/01210000.xhp#TIT
+msgid "Scale Text"
+msgstr ""
+
+#: 02/01210000.xhp#BM_ID3152996
+msgid "<bookmark_value>text scaling in charts</bookmark_value><bookmark_value>scaling; text in charts</bookmark_value><bookmark_value>charts;scaling text</bookmark_value>"
+msgstr ""
+
+#: 02/01210000.xhp#HD_ID3152996.1
+msgid "<link href=\"text/schart/02/01210000.xhp\" name=\"Scale Text\">Scale Text</link>"
+msgstr ""
+
+#: 02/01210000.xhp#PAR_ID3144510.2
+msgid "<ahelp hid=\".uno:ScaleText\">Rescales the text in the chart when you change the size of the chart.</ahelp>"
+msgstr ""
+
+#: 02/01210000.xhp#PAR_ID3150441
+msgid "<image id=\"img_id3159153\" src=\"res/commandimagelist/sc_scaletext.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3159153\">Icon</alt></image>"
+msgstr ""
+
+#: 02/01210000.xhp#PAR_ID3153190.3
+msgid "Scale Text"
+msgstr ""
+
+#: 02/01220000.xhp#TIT
+msgid "Automatic Layout"
+msgstr ""
+
+#: 02/01220000.xhp#BM_ID3150400
+msgid "<bookmark_value>reorganizing charts</bookmark_value><bookmark_value>charts; reorganizing</bookmark_value>"
+msgstr ""
+
+#: 02/01220000.xhp#HD_ID3150400.1
+msgid "<link href=\"text/schart/02/01220000.xhp\" name=\"Automatic Layout\">Automatic Layout</link>"
+msgstr ""
+
+#: 02/01220000.xhp#PAR_ID3146120.2
+msgid "<ahelp hid=\".uno:NewArrangement\">Moves all chart elements to their default positions inside the current chart. This function does not alter the chart type or any other attributes other than the position of elements.</ahelp>"
+msgstr ""
+
+#: 02/01220000.xhp#PAR_ID3150010
+msgid "<image id=\"img_id3152577\" src=\"res/commandimagelist/sc_newarrangement.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3152577\">Icon</alt></image>"
+msgstr ""
+
+#: 02/01220000.xhp#PAR_ID3153143.3
+msgid "Automatic Layout"
+msgstr ""
+
+#: 02/02020000.xhp#TIT
+msgid "Current Chart Type"
+msgstr ""
+
+#: 02/02020000.xhp#HD_ID3150791.1
+msgid "<link href=\"text/schart/02/02020000.xhp\" name=\"Current Chart Type\">Current Chart Type</link>"
+msgstr ""
+
+#: 02/02020000.xhp#PAR_ID3145173.2
+msgid "<ahelp hid=\".uno:ContextType\" visibility=\"visible\">Displays the name of the current chart type.</ahelp>"
+msgstr ""
+
+#: 04/01020000.xhp#TIT
+msgid "Shortcuts for Charts"
+msgstr ""
+
+#: 04/01020000.xhp#BM_ID3150767
+msgid "<bookmark_value>shortcut keys; charts</bookmark_value><bookmark_value>charts; shortcuts</bookmark_value>"
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3150767.1
+msgid "<variable id=\"Chart_keys\"><link href=\"text/schart/04/01020000.xhp\" name=\"Shortcuts for Charts\">Shortcuts for Charts</link></variable>"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3155412.2
+msgid "You can use the following shortcut keys in charts."
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3159154.3
+msgid "You can also use the general <link href=\"text/shared/04/01010000.xhp\" name=\"shortcut keys\">shortcut keys</link> for $[officename]."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3149262.4
+msgid "Shortcuts in Charts"
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3151073.5
+msgid "Shortcut Keys"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3154490.6
+msgid "Results"
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3154729.7
+msgid "Tab"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3154511.8
+msgid "Select next object."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3155064.9
+msgid "Shift+Tab"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3149020.10
+msgid "Select previous object."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3155443.11
+msgid "Home"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3156382.12
+msgid "Select first object."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3153963.13
+msgid "End"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3154702.14
+msgid "Select last object."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3143218.15
+msgid "Esc"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3147005.16
+msgid "Cancel selection"
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3159239.17
+msgid "up/down/left/right arrow"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3149210.18
+msgid "Move the object in the direction of the arrow."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3150364.19
+msgid "up/down/left/right arrow in pie charts"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3150369.20
+msgid "Moves the selected pie segment in the direction of the arrow."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3145584.21
+msgid "F2 in titles"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3154372.22
+msgid "Enter text input mode."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3146980.23
+msgid "F3"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3152988.24
+msgid "Open group so that you can edit the individual components (in legend and data series)."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3153815.25
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3153915.26
+msgid "Exit group (in legend and data series)."
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3155269.27
+msgid "+/-"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3156016.28
+msgid "Reduce or enlarge the chart"
+msgstr ""
+
+#: 04/01020000.xhp#HD_ID3150210.29
+msgid "+/- in pie charts"
+msgstr ""
+
+#: 04/01020000.xhp#PAR_ID3159204.30
+msgid "Moves the selected pie segment off or into the pie chart."
+msgstr ""
+
+#: main0000.xhp#TIT
+msgid "Charts in $[officename]"
+msgstr ""
+
+#: main0000.xhp#BM_ID3148664
+msgid "<bookmark_value>charts; overview</bookmark_value>      <bookmark_value>HowTos for charts</bookmark_value>"
+msgstr ""
+
+#: main0000.xhp#HD_ID3148664.1
+msgid "<variable id=\"chart_main\"><link href=\"text/schart/main0000.xhp\" name=\"Charts in $[officename]\">Using Charts in %PRODUCTNAME</link></variable>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID3154685.2
+msgid "<variable id=\"chart\">$[officename] lets you present data graphically in a chart, so that you can visually compare data series and view trends in the data. You can insert charts into spreadsheets, text documents, drawings, and presentations. </variable>"
+msgstr ""
+
+#: main0000.xhp#HD_ID3153143.5
+msgid "Chart Data"
+msgstr ""
+
+#: main0000.xhp#PAR_ID5181432
+msgid "Charts can be based on the following data:"
+msgstr ""
+
+#: main0000.xhp#PAR_ID7787102
+msgid "Spreadsheet values from Calc cell ranges"
+msgstr ""
+
+#: main0000.xhp#PAR_ID7929929
+msgid "Cell values from a Writer table"
+msgstr ""
+
+#: main0000.xhp#PAR_ID4727011
+msgid "Values that you enter in the Chart Data Table dialog (you can create these charts in Writer, Draw, or Impress, and you can copy and paste them also to Calc)"
+msgstr ""
+
+#: main0000.xhp#PAR_ID76601
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Creates a chart in the current document. To use a continuous range of cells as the data source for your chart, click inside the cell range, and then choose this command. Alternatively, select some cells and choose this command to create a chart of the selected cells.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#HD_ID5345011
+msgid "To insert a chart"
+msgstr ""
+
+#: main0000.xhp#HD_ID5631580
+msgid "To edit a chart"
+msgstr ""
+
+#: main0000.xhp#PAR_ID7911008
+msgid "Click a chart to edit the object properties:"
+msgstr ""
+
+#: main0000.xhp#PAR_ID9844660
+msgid "Size and position on the current page."
+msgstr ""
+
+#: main0000.xhp#PAR_ID8039796
+msgid "Alignment, text wrap, outer borders, and more."
+msgstr ""
+
+#: main0000.xhp#PAR_ID7986693
+msgid "Double-click a chart to enter the chart edit mode:"
+msgstr ""
+
+#: main0000.xhp#PAR_ID2350840
+msgid "Chart data values (for charts with own data)."
+msgstr ""
+
+#: main0000.xhp#PAR_ID3776055
+msgid "Chart type, axes, titles, walls, grid, and more."
+msgstr ""
+
+#: main0000.xhp#PAR_ID8442335
+msgid "Double-click a chart element in chart edit mode:"
+msgstr ""
+
+#: main0000.xhp#PAR_ID4194769
+msgid "Double-click an axis to edit the scale, type, color, and more."
+msgstr ""
+
+#: main0000.xhp#PAR_ID8644672
+msgid "Double-click a data point to select and edit the data series to which the data point belongs."
+msgstr ""
+
+#: main0000.xhp#PAR_ID6574907
+msgid "With a data series selected, click, then double-click a single data point to edit the properties of this data point (for example, a single bar in a bar chart)."
+msgstr ""
+
+#: main0000.xhp#PAR_ID1019200902360575
+msgid "Double-click the legend to select and edit the legend. Click, then double-click a symbol in the selected legend to edit the associated data series."
+msgstr ""
+
+#: main0000.xhp#PAR_ID7528916
+msgid "Double-click any other chart element, or click the element and open the Format menu, to edit the properties."
+msgstr ""
+
+#: main0000.xhp#PAR_ID8420667
+msgid "Click outside the chart to leave the current edit mode."
+msgstr ""
+
+#: main0000.xhp#PAR_ID4923856
+msgid "To print a chart in high quality, you can export the chart to a PDF file and print that file."
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200912061033
+msgid "In chart edit mode, you see the <link href=\"text/schart/main0202.xhp\">Formatting Bar</link> for charts near the upper border of the document. The Drawing Bar for charts appears near the lower border of the document. The Drawing Bar shows a subset of the icons from the <link href=\"text/simpress/main0210.xhp\">Drawing</link> toolbar of Draw and Impress."
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200902080452
+msgid "You can right-click an element of a chart to open the context menu. The context menu offers many commands to format the selected element."
+msgstr ""
+
+#: main0000.xhp#PAR_ID081020090354489
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the selected title.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903405629
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the chart area.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903544867
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the chart wall.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903544952
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the chart floor.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903544927
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the chart legend.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903544949
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the selected axis.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903544984
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the selected data point.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545096
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the major grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545057
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the minor grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545095
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the data series.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545094
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the stock loss indicators.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545113
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the stock gain indicators.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545149
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the data labels.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545159
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the Y error bars.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID081020090354524
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the mean value line.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200903545274
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the trendline.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904063285
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the trendline equation.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904063252
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Formats the selected data label.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904063239
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to insert chart titles.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233047
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to insert or delete axes.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233058
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to insert an axis.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233089
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Opens a dialog to insert an axis title.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233160
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a major grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233175
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a minor grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233111
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts data labels.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904233174
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts the trendline equation and the coefficient of determination R².</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904265639
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts the coefficient of determination R² value.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362614
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Inserts a single data label.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362666
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the chart legend.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362777
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the selected axis.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362785
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the major grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362748
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the minor grid.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362778
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes all data labels.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362893
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the trendline equation.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362896
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R² value.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904362827
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the selected data label.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904431376
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the mean value line.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID081020090443142
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Deletes the Y error bars.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904393229
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Resets the selected data point to default format.</ahelp>"
+msgstr ""
+
+#: main0000.xhp#PAR_ID0810200904393351
+msgid "<ahelp hid=\".\" visibility=\"hidden\">Resets all data points to default format.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#TIT
+msgid "Formatting Bar"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200911433792
+msgid "<link href=\"text/schart/main0202.xhp\" name=\"Formatting Bar\">Formatting Bar</link>"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200911433835
+msgid "The Formatting Bar is shown when a chart is set to edit mode. Double-click a chart to enter edit mode. Click outside the chart to leave edit mode."
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200911433878
+msgid "You can edit the formatting of a chart using the controls and icons on the Formatting Bar."
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300436
+msgid "Select Chart Element"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300479
+msgid "<ahelp hid=\".\">Select the element from the chart that you want to format. The element gets selected in the chart preview. Click Format Selection to open the properties dialog for the selected element.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300555
+msgid "Format Selection"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300539
+msgid "<ahelp hid=\".\">Opens the properties dialog for the selected element.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300545
+msgid "Chart Type"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300594
+msgid "<ahelp hid=\".\">Opens the Chart Type dialog.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300537
+msgid "Chart Data Table"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300699
+msgid "<ahelp hid=\".\">Opens the Data Table dialog where you can edit the chart data.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300672
+msgid "Horizontal Grid On/Off"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300630
+msgid "<ahelp hid=\".\">The Horizontal Grid On/Off icon on the Formatting bar toggles the visibility of the grid display for the Y axis.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300738
+msgid "Legend On/Off"
+msgstr ""
+
+#: main0202.xhp#PAR_ID081020090230076
+msgid "<ahelp hid=\".\">To show or hide a legend, click Legend On/Off on the Formatting bar.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID0810200902300785
+msgid "Scale Text"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300784
+msgid "<ahelp hid=\".\">Rescales the text in the chart when you change the size of the chart.</ahelp>"
+msgstr ""
+
+#: main0202.xhp#HD_ID081020090230087
+msgid "Automatic Layout"
+msgstr ""
+
+#: main0202.xhp#PAR_ID0810200902300834
+msgid "<ahelp hid=\".\">Moves all chart elements to their default positions inside the current chart. This function does not alter the chart type or any other attributes other than the position of elements.</ahelp>"
+msgstr ""
+
+#: main0503.xhp#TIT
+msgid "$[officename] Chart Features"
+msgstr ""
+
+#: main0503.xhp#HD_ID3150543.1
+msgid "<link href=\"text/schart/main0503.xhp\" name=\"$[officename] Chart Features\">$[officename] Chart Features</link>"
+msgstr ""
+
+#: main0503.xhp#PAR_ID3150868.2
+msgid "Charts allow you to present data so that it is easy to visualize."
+msgstr ""
+
+#: main0503.xhp#PAR_ID3146974.6
+msgid "You can create a chart from source data in a Calc spreadsheet or a Writer table. When the chart is embedded in the same document as the data, it stays linked to the data, so that the chart automatically updates when you change the source data."
+msgstr ""
+
+#: main0503.xhp#HD_ID3153143.7
+msgid "Chart Types"
+msgstr ""
+
+#: main0503.xhp#PAR_ID3151112.8
+msgid "Choose from a variety of 3D charts and 2D charts, such as bar charts, line charts, stock charts. You can change chart types with a few clicks of the mouse."
+msgstr ""
+
+#: main0503.xhp#HD_ID3149665.10
+msgid "Individual Formatting"
+msgstr ""
+
+#: main0503.xhp#PAR_ID3156441.11
+msgid "You can customize individual chart elements, such as axes, data labels, and legends, by right-clicking them in the chart, or with toolbar icons and menu commands."
+msgstr ""

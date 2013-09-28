@@ -1,951 +1,1321 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
-msgid  "Sorting and Grouping"
+msgid "Sorting and Grouping"
 msgstr "מיון וקיבוץ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "קבוצות"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
-msgid  "Group actions"
+msgid "Group actions"
 msgstr "הזזת קבוצה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~מחיקה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "Properties"
+msgid "Properties"
 msgstr "תכונות"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
-msgid  "Sorting"
+msgid "Sorting"
 msgstr "מיון"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "עולה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
-msgid  "Descending"
+msgid "Descending"
 msgstr "יורד"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Group Header"
+#, fuzzy
+msgid "Group Header"
 msgstr "כותר קבוצה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
+msgid "Present"
 msgstr "נוכח"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
+msgid "Not present"
 msgstr "לא נוכח"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Group Footer"
+#, fuzzy
+msgid "Group Footer"
 msgstr "כותר קבוצה תחתון"
 
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Present"
+msgstr "נוכח"
+
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Not present"
+msgstr "לא נוכח"
+
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
-msgid  "Group On"
+msgid "Group On"
 msgstr "לקבץ לפי"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Each Value"
+msgid "Each Value"
 msgstr "כל ערך"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
-msgid  "Group Interval"
+msgid "Group Interval"
 msgstr "מרווח קבוצה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "להשאיר ביחד"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
-msgid  "No"
+msgid "No"
 msgstr "לא"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
-msgid  "Whole Group"
-msgstr "קבוצה שלמה"
+msgid "Whole Group"
+msgstr "כל הקבוצה"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
-msgid  "With First Detail"
-msgstr "עם הפריט הראשון"
+msgid "With First Detail"
+msgstr "בפרט הראשון"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "עזרה"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
-msgid  "Field/Expression"
+msgid "Field/Expression"
 msgstr "שדה/ביטוי"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
-msgid  "Sort Order"
+msgid "Sort Order"
 msgstr "סדר מיון"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
-msgid  "Prefix Characters"
+msgid "Prefix Characters"
 msgstr "תווים תחיליים "
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "שנה"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
-msgid  "Quarter"
+msgid "Quarter"
 msgstr "רבעון"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "חודש"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "שבוע"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "יום"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
-msgid  "Hour"
+msgid "Hour"
 msgstr "שעה"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
-msgid  "Minute"
+msgid "Minute"
 msgstr "דקה"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
-msgid  "Interval"
+msgid "Interval"
 msgstr "מרווח"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
-msgid  "Select a field or type an expression to sort or group on."
+msgid "Select a field or type an expression to sort or group on."
 msgstr "לבחור שדה או להקליד ביטוי למיון או לקיבוץ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
-msgid  "Display a header for this group?"
+msgid "Display a header for this group?"
 msgstr "להציג כותר לקבוצה זו?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
-msgid  "Display a footer for this group?"
+msgid "Display a footer for this group?"
 msgstr "להציג כותר תחתון לקבוצה זו?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
-msgid  "Select the value or range of values that starts a new group."
+msgid "Select the value or range of values that starts a new group."
 msgstr "לבחור את הערך או טווח הערכים שמגדיר קבוצה חדשה."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
-msgid  "Interval or number of characters to group on."
+msgid "Interval or number of characters to group on."
 msgstr "מרווח או מספר תווים לקיבוץ."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
-msgid  "Keep group together on one page?"
+msgid "Keep group together on one page?"
 msgstr "להשאיר קבוצה ביחד על דף אחד?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
-msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgid "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 msgstr "יש לבחור סדר עולה או יורד. סדר עולה הוא מA לZ או מ0 ל9"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
-msgid  "Page Numbers"
+msgid "Page Numbers"
 msgstr "מספרי דף"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "תבנית"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
-msgid  "Page N"
+msgid "Page N"
 msgstr "דף N"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
-msgid  "Page N of M"
+msgid "Page N of M"
 msgstr "דף N מתוך M"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "מיקום"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
-msgid  "Top of Page (Header)"
+msgid "Top of Page (Header)"
 msgstr "בראש הדף (כותר)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
-msgid  "Bottom of Page (Footer)"
+msgid "Bottom of Page (Footer)"
 msgstr "בתחתית הדף (כותר תחתון)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "כללי"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
-msgid  "Alignment:"
+msgid "Alignment:"
 msgstr "יישור"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "שמאל"
+msgid "Left"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "מרכז"
+msgid "Center"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "ימין"
+msgid "Right"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
-msgid  "Show Number on First Page"
+msgid "Show Number on First Page"
 msgstr "הצגת מספר דף בדף הראשון"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "עזרה"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
-msgid  "\"Page \" & #PAGENUMBER#"
+msgid "\"Page \" & #PAGENUMBER#"
 msgstr "\"דף \" & #PAGENUMBER#"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
-msgid  " & \" of \" & #PAGECOUNT#"
+msgid " & \" of \" & #PAGECOUNT#"
 msgstr " & \" מתוך \" & #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
+msgid "Page Setup"
 msgstr "תכונות דף"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
+msgid "Page"
 msgstr "דף"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "רקע"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
+msgid "Return"
 msgstr "חזרה"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
+msgid "Page"
+msgstr "דף"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
+msgid "Background"
+msgstr "רקע"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
-msgid  "Section Setup"
+msgid "Section Setup"
 msgstr "תכונות קטע"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "חזרה"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
+msgid "Background"
+msgstr "רקע"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
-msgid  "Character Settings"
+msgid "Character Settings"
 msgstr "קבועי תו"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "גופן"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "פעלולי גופן"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "מיקום"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
-msgid  "Asian Layout"
+msgid "Asian Layout"
 msgstr "פריסה אסיאתית"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
+msgid "Background"
+msgstr "רקע"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "יישור"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "חזרה"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "תו"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
-msgid  "Line"
+msgid "Line"
+msgstr "קו"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
 msgstr "קו"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
+msgid "Line Styles"
 msgstr "סגנונות קווים"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
+msgid "Arrow Styles"
 msgstr "סגנונות חצים"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "חזרה"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
+msgid "Line"
+msgstr "קו"
+
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
-msgid  "Report navigator"
+msgid "Report navigator"
 msgstr "נווט הדו\"חות"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "פונקציות"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "קבוצות"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
+msgid "Sorting and Grouping..."
 msgstr "מיון הקיבוץ..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
-msgid  "Page Header/Footer..."
+msgid "Page Header/Footer..."
 msgstr "כותר/כותר תחתון של דף"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
-msgid  "Report Header/Footer..."
+msgid "Report Header/Footer..."
 msgstr "כותר/כותר תחתון של דו\"ח"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
-msgid  "New Function"
+msgid "New Function"
 msgstr "פונקציה חדשה"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "תכונות..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Field Value Is"
+msgid "Field Value Is"
 msgstr "ערך השדה הוא"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Expression Is"
+msgid "Expression Is"
 msgstr "הביטוי הוא"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
-msgid  "between"
+msgid "between"
 msgstr "בין"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
-msgid  "not between"
+msgid "not between"
 msgstr "לא בין"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
-msgid  "equal to"
+msgid "equal to"
 msgstr "שווה ל"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
-msgid  "not equal to"
+msgid "not equal to"
 msgstr "לא שווה ל"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
-msgid  "greater than"
+msgid "greater than"
 msgstr "גדול מ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
-msgid  "less than"
+msgid "less than"
 msgstr "פחות מ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
-msgid  "greater than or equal to"
+msgid "greater than or equal to"
 msgstr "גדול או שווה מ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
-msgid  "less than or equal to"
+msgid "less than or equal to"
 msgstr "פחות או שווה מ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
-msgid  "and"
+msgid "and"
 msgstr "ו"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
-msgid  "Example"
+msgid "Example"
 msgstr "דוגמה"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
-msgid  "Conditional Formatting"
+msgid "Conditional Formatting"
 msgstr "עיצוב מותנה"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "עזרה"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
-msgid  "Condition $number$"
+msgid "Condition $number$"
 msgstr "תנאי $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "לבן"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
-msgid  "Font color"
+msgid "Font color"
 msgstr "צבע גופן"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "רקע"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
-msgid  "No Fill"
+msgid "No Fill"
 msgstr "ללא מילוי"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
-msgid  "Sort Ascending"
+msgid "Sort Ascending"
 msgstr "מיון בסדר עולה"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
-msgid  "Sort Descending"
+msgid "Sort Descending"
 msgstr "מיון בסדר יורד"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
-msgid  "Remove sorting"
+msgid "Remove sorting"
 msgstr "הסר מיון"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "הוספה"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "עזרה"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgid "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "תאריך ושעה"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
-msgid  "Include Date"
+msgid "Include Date"
 msgstr "לכלול תאריך"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "תבנית"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
-msgid  "Include Time"
+msgid "Include Time"
 msgstr "לכלול שעה"
 
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
+msgid "Format"
+msgstr "תבנית"
+
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "עזרה"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "כללי"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "נתונים"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "לא"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "כן"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
-msgid  "Force New Page"
+msgid "Force New Page"
 msgstr "לאלץ דף חדש"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "ללא"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
-msgid  "Before Section"
+msgid "Before Section"
 msgstr "לפני מקטע"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
-msgid  "After Section"
+msgid "After Section"
 msgstr "אחרי מקטע"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
-msgid  "Before & After Section"
+msgid "Before & After Section"
 msgstr "לפני ואחרי מקטע"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
-msgid  "New Row Or Column"
+msgid "New Row Or Column"
 msgstr "שורה או עמודה חדשה"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "להשאיר ביחד"
 
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
+msgid "No"
+msgstr "לא"
+
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "כל הקבוצה"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "בפרט הראשון"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
-msgid  "Can Grow"
+msgid "Can Grow"
 msgstr "יכול לגדול"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
-msgid  "Can Shrink"
+msgid "Can Shrink"
 msgstr "יכול להתקווץ"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
-msgid  "Repeat Section"
+msgid "Repeat Section"
 msgstr "חזרה על הקטע"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
-msgid  "Print repeated values"
+msgid "Print repeated values"
 msgstr "הדפסת ערכים חוזרים"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
-msgid  "Conditional Print Expression"
+msgid "Conditional Print Expression"
 msgstr "ביטוי הדפסה מותנת"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
-msgid  "Start new column"
+msgid "Start new column"
 msgstr "התחלת עמודה חדשה"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
-msgid  "Start new page"
+msgid "Start new page"
 msgstr "התחלת דף חדש"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
-msgid  "Reset page number"
+msgid "Reset page number"
 msgstr "איפוס מספור דפים"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
-msgid  "Chart type"
+msgid "Chart type"
 msgstr "סוג התרשים"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
-msgid  "Print When Group Change"
+msgid "Print When Group Change"
 msgstr "הדפסה בעת שינו קבוצה"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr "נראה"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
-msgid  "Group keep together"
+msgid "Group keep together"
 msgstr "להשאיר קבוצה ביחד"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "Per Page"
+msgid "Per Page"
 msgstr "לפי עמוד"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Per Column"
+msgid "Per Column"
 msgstr "לפי עמודה"
 
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
+msgid "None"
+msgstr "ללא"
+
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
-msgid  "Section"
+msgid "Section"
 msgstr "מקטע"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "אוטומטי"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
-msgid  "Page header"
+msgid "Page header"
 msgstr "כותר דף"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
-msgid  "Page footer"
+msgid "Page footer"
 msgstr "כותר דף תחתון"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
-msgid  "All Pages"
+msgid "All Pages"
 msgstr "כל העמודים"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
-msgid  "Not With Report Header"
+msgid "Not With Report Header"
 msgstr "לא עם כותרת הדוח"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
-msgid  "Not With Report Footer"
+msgid "Not With Report Footer"
 msgstr "לא עם שולי הדוח"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
-msgid  "Not With Report Header/Footer"
+msgid "Not With Report Header/Footer"
 msgstr "לא עם כותרת/שולי הדוח"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
-msgid  "Deep traversing"
+msgid "Deep traversing"
 msgstr "צליחה עמוקה"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
-msgid  "Pre evaluation"
+msgid "Pre evaluation"
 msgstr "הערכה מקדימה"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "Position X"
+msgid "Position X"
 msgstr "מיקום X"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "Position Y"
+msgid "Position Y"
 msgstr "מיקום Y"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "רוחב"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "גובה"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
-msgid  "Initial value"
+msgid "Initial value"
 msgstr "ערך אתחלתי"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
-msgid  "Preserve as Link"
+msgid "Preserve as Link"
 msgstr "לשמור כקישור"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
-msgid  "Formula"
+msgid "Formula"
 msgstr "נוסחה"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "שדה נתונים"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "גופן"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "צבע רקע"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
+msgid "Background Transparent"
+msgstr "רקע שקוף"
+
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
+msgid "Background Transparent"
 msgstr "רקע שקוף"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
-msgid  "This operation is not allowed. The control overlaps with another one."
+msgid "This operation is not allowed. The control overlaps with another one."
 msgstr "פעולה זו אינה מותרת. השליטה מתנגשת עם פעולה אחרת."
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
-msgid  "This position can not be set. It is invalid."
+msgid "This position can not be set. It is invalid."
 msgstr "לא ניתן לקבוע מיקום זה, הוא אינו חוקי."
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
-msgid  "Group: %1"
+msgid "Group: %1"
 msgstr "קבוצה: %1"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
-msgid  "Function"
+msgid "Function"
 msgstr "פונקציה"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
-msgid  "Scope"
+msgid "Scope"
 msgstr "היקף"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
-msgid  "Data Field Type"
+msgid "Data Field Type"
 msgstr "סוג שדה נתונים"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
-msgid  "Field or Formula"
+msgid "Field or Formula"
 msgstr "שדה או נוסחה"
 
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
+msgid "Function"
+msgstr "פונקציה"
+
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
-msgid  "Counter"
+msgid "Counter"
 msgstr "מונה"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
-msgid  "User defined Function"
+msgid "User defined Function"
 msgstr "פונקציה מוגדרת על ידי המשתמש"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "קישור שדות שולטים"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "לקשור שדות נשלטים"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
-msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "ניתן להשתמש בתרשימים להציג נתונים מפורטים אודות הרשומה הנוכחית של הדו\"ח. ניתן לשייך בין עמודות התרשים לעמודות הדו\"ח."
+msgid "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+"ניתן להשתמש בתרשימים להציג נתונים מפורטים אודות הרשומה הנוכחית של הדו\"ח. "
+"ניתן לשייך בין עמודות התרשים לעמודות הדו\"ח."
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
-msgid  "Chart"
+msgid "Chart"
 msgstr "תקשים"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
-msgid  "Report"
+#, fuzzy
+msgid "Report"
 msgstr "דו\"ח"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
-msgid  "Preview Row(s)"
+msgid "Preview Row(s)"
 msgstr "הצגה מקדימה של שורות"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
-msgid  "Area"
+msgid "Area"
 msgstr "שטח"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
-msgid  "Report Output Format"
+msgid "Report Output Format"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
-msgid  "Horz. Alignment"
+msgid "Horz. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
-msgid  "Block"
+msgid "Block"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
-msgid  "Center"
+msgid "Center"
 msgstr ""
 
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
+msgid "Counter"
+msgstr "מונה"
+
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
-msgid  "Accumulation"
+msgid "Accumulation"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
-msgid  "Minimum"
+msgid "Minimum"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
-msgid  "Maximum"
+msgid "Maximum"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "תכונות"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "אין בקרה מסומנת"
+
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+msgid "Multiselection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid "Image Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+#, fuzzy
+msgid "Label field"
+msgstr "תווית"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
+msgid "Line"
+msgstr "קו"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid "Formatted Field"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
+#, fuzzy
+msgid "Shape"
+msgstr "צורה"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
+#, fuzzy
+msgid "Report"
+msgstr "דו\"ח"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
+msgid "Section"
+msgstr "מקטע"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "פונקציה"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
+msgid "Group"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
+msgid "Show ruler"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
+msgid "Show grid"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
+msgid "Change Object"
+msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 #, fuzzy
-msgid  "Move Group(s)"
+msgid "Move Group(s)"
 msgstr "הזזת קבוצות"
+
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
+msgid "Conditional Formatting"
+msgstr "עיצוב מותנה"
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Remove report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Add report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Remove page header / page footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Add page header / page footer"
+msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 #, fuzzy
-msgid  "Change property '#'"
+msgid "Change property '#'"
 msgstr "שינוי תכונה"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Add group header "
+msgid "Add group header "
 msgstr "הוספת כותר קבוצה"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Remove group header "
+msgid "Remove group header "
 msgstr "הסרת כותר קבוצה"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid  "Add group footer "
+msgid "Add group footer "
 msgstr "הוספת כותר תחתון לקבוצה"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid  "Remove group footer "
+msgid "Remove group footer "
 msgstr "הסרת כותר תחתון לקבוצה"
+
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
+msgid "Add function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
+msgid "Delete function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
+msgid "Design"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
+msgid "Preview"
+msgstr ""
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Report #"
+msgid "Report #"
 msgstr "דו\"ח"
+
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
+msgid "~Report name"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
+msgid "Add Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
+msgid "Delete Selection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
+msgid "Delete Function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
+msgid "Change Size"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
+msgid "Paste"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
+msgid "Insert Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
+msgid "Delete Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
+msgid "Insert Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
+msgid "GroupHeader"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
+msgid "GroupFooter"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+msgid "Sorting and Grouping..."
+msgstr "מיון הקיבוץ..."
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
+msgid "Background Color..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
+msgid "Ruler..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
+msgid "Grid..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
+msgid "~Arrange"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
+msgid "Bring ~Forward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
+msgid "Send Back~ward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
+msgid "~Object Resizing"
+msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Fit to smallest width"
+msgid "~Fit to smallest width"
 msgstr "התאמה לרוחב המזערי"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Fit to greatest width"
+msgid "~Fit to greatest width"
 msgstr "התאמה לרוחב המירבי"
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
+msgid "~Fit to smallest height"
+msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Fit to greatest height"
+msgid "~Fit to greatest height"
 msgstr "התאמה לגובה הגבוהה ביותר"
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
+msgid "Section"
+msgstr "מקטע"
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
+msgid "Shrink"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
+msgid "Shrink from top"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
+msgid "Shrink from bottom"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
+msgid "Distribution..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+msgid "Properties..."
+msgstr "תכונות..."
+
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
+msgid "Add field:"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
+msgid "Filter"
+msgstr ""
 
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base Report"
+msgid " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME דו\"ח בייס"
+
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
+msgid "Untitled"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
+msgid "Change Alignment"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
+msgid "# Header"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
+msgid "# Footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
+msgid "Insert graphics"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
+msgid "Delete"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "פונקציה"
+
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
+msgid "An error occurred while creating the report."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
+msgid "An exception of type $type$ was caught."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
+msgid "Change font"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
+msgid "Change page attributes"
+msgstr ""
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert Page Header/Footer"
+msgid "Insert Page Header/Footer"
 msgstr "הכנסת כותר/כותר תחתון לדף"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "Delete Page Header/Footer"
+msgid "Delete Page Header/Footer"
 msgstr "הסרת כותר/כותר תחתון לדף"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert Column Header/Footer"
+msgid "Insert Column Header/Footer"
 msgstr "הכנסת כותר/כותר תחתון לעמודה"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "Delete Column Header/Footer"
+msgid "Delete Column Header/Footer"
 msgstr "הסרת כותר/כותר תחתון לעמודה"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert Report Header/Footer"
+msgid "Insert Report Header/Footer"
 msgstr "הכנסת כותר/כותר תחתון לדו\"ח"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "Delete Report Header/Footer"
+msgid "Delete Report Header/Footer"
 msgstr "הכנסת כותר/כותר תחתון לדו\"ח"
+
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
+msgid "The report can not be executed unless it is bound to content."
+msgstr ""
+
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
+msgid "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
+msgid "Shrink Section"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
+#, fuzzy
+msgid "Detail"
+msgstr "פרטים"
+
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
+#, fuzzy
+msgid "Page Header"
+msgstr "כותר דף"
+
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+#, fuzzy
+msgid "Page Footer"
+msgstr "כותר דף תחתון"
+
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
+#, fuzzy
+msgid "Report Header"
+msgstr "כותר דו\"ח"
+
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+#, fuzzy
+msgid "Report Footer"
+msgstr "כותר דו\"ח תחתון"
+
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
+msgid "Insert"
+msgstr "הוספה"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 #, fuzzy
-msgid  "Detail"
+msgid "Detail"
 msgstr "פרטים"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Page Header"
+msgid "Page Header"
 msgstr "כותר דף"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 #, fuzzy
-msgid  "Page Footer"
+msgid "Page Footer"
 msgstr "כותר דף תחתון"
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "כותר קבוצה"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "כותר קבוצה תחתון"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Report Header"
+msgid "Report Header"
 msgstr "כותר דו\"ח"
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 #, fuzzy
-msgid  "Report Footer"
+msgid "Report Footer"
 msgstr "כותר דו\"ח תחתון"
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
 #, fuzzy
-msgid  "The name '#1' already exists and can not be asssigned again."
+msgid "The name '#1' already exists and can not be asssigned again."
 msgstr "השם '#1' כבר הושם ולא ניתן להשמה שוב."
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
 #, fuzzy
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgid "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr "נסיון לקבוע ערך לא חוקי. נא לעיין ב'#1' לערכים חוקיים."
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
 #, fuzzy
-msgid  "The element is invalid."
+msgid "The element is invalid."
 msgstr "פריט לא חוקי"
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Label field"
+msgid "Label field"
 msgstr "תווית"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Formatted field"
+msgid "Formatted field"
 msgstr "שדה מעוצב"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
 #, fuzzy
-msgid  "Image control"
+msgid "Image control"
 msgstr "בקרת תמונות"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 #, fuzzy
-msgid  "Report"
+msgid "Report"
 msgstr "דו\"ח"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
 #, fuzzy
-msgid  "Shape"
+msgid "Shape"
 msgstr "צורה"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
 #, fuzzy
-msgid  "Fixed line"
+msgid "Fixed line"
 msgstr "קו קבוע"

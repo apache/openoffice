@@ -1,200 +1,262 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% का त्रुटि प्रतिवेदन"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% के त्रुटि प्रतिवेदन में आपका स्वागत है"
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "यह त्रुटि प्रतिवेदन औज़ार सूचना इकट्ठा करता है कि कैसे %PRODUCTNAME% काम करता है औऱ इसे Apache OpenOffice को भविष्य के संस्करण को बढ़िया करने के उद्देश्य से भेजता है।\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"यह त्रुटि प्रतिवेदन औज़ार सूचना इकट्ठा करता है कि कैसे %PRODUCTNAME% काम "
+"करता है औऱ इसे Apache OpenOffice को भविष्य के संस्करण को बढ़िया करने के "
+"उद्देश्य से भेजता है।\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "यह आसान है - बिना किसी और कोशिश के 'भेजें' पर अगले संवाद में क्लिक करके प्रतिवेदन भेज दें, या आप संक्षेप में वर्णन कर सकते हैं कि कैसे त्रुटि पैदा हुई और तब 'भेजें' पर क्लिक करें। अगर आप प्रतिवेदन देखना चाहते हैं तो 'प्रतिवेदन दिखाएँ' बटन पर क्लिक कीजिये। अगर आप 'मत भेजें' पर क्लिक करते हैं तो कोई आँकड़ा नहीं भेजा जायेगा।\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"यह आसान है - बिना किसी और कोशिश के 'भेजें' पर अगले संवाद में क्लिक करके "
+"प्रतिवेदन भेज दें, या आप संक्षेप में वर्णन कर सकते हैं कि कैसे त्रुटि पैदा "
+"हुई और तब 'भेजें' पर क्लिक करें। अगर आप प्रतिवेदन देखना चाहते हैं तो "
+"'प्रतिवेदन दिखाएँ' बटन पर क्लिक कीजिये। अगर आप 'मत भेजें' पर क्लिक करते हैं "
+"तो कोई आँकड़ा नहीं भेजा जायेगा।\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "उपभोक्ता गोपनीयता\nजमा सूचना %PRODUCTNAME% %PRODUCTVERSION% की स्थिति से जुड़ी आंकड़ों तक सीमित है जब त्रुटि पैदा हुई थी। कूटशब्द या दस्तावेज़ सामग्री के बारे में कोई सूचना जमा नहीं किया गया है।\n\nसूचना %PRODUCTNAME% की सिर्फ गुणवत्ता सुधारने के लिए प्रयोग किया जायेगा और किसी तीसरी पार्टी से साझा नहीं किया जायेगा।\nApache OpenOffice की गोपनीयता नीति के संबंध में ज्यादा जानकारी के लिये, देखें\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"उपभोक्ता गोपनीयता\n"
+"जमा सूचना %PRODUCTNAME% %PRODUCTVERSION% की स्थिति से जुड़ी आंकड़ों तक सीमित "
+"है जब त्रुटि पैदा हुई थी। कूटशब्द या दस्तावेज़ सामग्री के बारे में कोई "
+"सूचना जमा नहीं किया गया है।\n"
+"\n"
+"सूचना %PRODUCTNAME% की सिर्फ गुणवत्ता सुधारने के लिए प्रयोग किया जायेगा और "
+"किसी तीसरी पार्टी से साझा नहीं किया जायेगा।\n"
+"Apache OpenOffice की गोपनीयता नीति के संबंध में ज्यादा जानकारी के लिये, "
+"देखें\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "आगे (~N)>>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "रद्द करें"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "ठीक"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% का त्रुटि प्रतिवेदन"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% को चलाने में एक त्रुटि उत्पन्न हुई"
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% त्रुटि प्रतिवेदन ने जो सूचना जमा किया है वो Apache OpenOffice को %PRODUCTNAME% को बढ़िया बनाने में मदद कर सकता है।\nनीचे के स्थान में, आप अपने ध्वंस प्रतिवेदन के लिए शीर्षक डाल सकते हैं और क्रियाकलाप का विवरण दे सकते हैं जो आप करना चाहते थे जब त्रुटि पैदा हुई। तब 'भेजें' पर क्लिक करें।\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% त्रुटि प्रतिवेदन ने जो सूचना जमा किया है वो "
+"Apache OpenOffice को %PRODUCTNAME% को बढ़िया बनाने में मदद कर सकता है।\n"
+"नीचे के स्थान में, आप अपने ध्वंस प्रतिवेदन के लिए शीर्षक डाल सकते हैं और "
+"क्रियाकलाप का विवरण दे सकते हैं जो आप करना चाहते थे जब त्रुटि पैदा हुई। तब "
+"'भेजें' पर क्लिक करें।\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "किस प्रकार का दस्तावेज़ (उदा. प्रस्तुतिकरण) आप प्रयोग कर रहे थे, जब त्रुटि उत्पन्न हुई?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+"किस प्रकार का दस्तावेज़ (उदा. प्रस्तुतिकरण) आप प्रयोग कर रहे थे, जब त्रुटि "
+"उत्पन्न हुई?"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr "मैं Apache OpenOffice को इस रिपोर्ट के संबंध में मुझसे संपर्क करने के लिए अनुमति देता/देती हूँ।(~I)"
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+"मैं Apache OpenOffice को इस रिपोर्ट के संबंध में मुझसे संपर्क करने के लिए "
+"अनुमति देता/देती हूँ।(~I)"
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "कृपया अपना ई-मेल पता निविष्ट करें।"
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "त्रुटि आने के समय आप कैसे %PRODUCTNAME% का प्रयोग कर रहे थे (~H)?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << पीछे (~B)"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "भेजें (~e)"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "नहीं भेजें (~N)"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "प्रतिवेदन दिखाएँ (~R)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "प्रतिवेदन सहेजें (~S)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "इसमें प्रतिवेदन सहेजें"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि तयशुदा ई-मेल प्रोग्राम MAPI का समर्थन नहीं करता है।\nएक MAPI-सुसंगत ई-मेल प्रोग्राम का प्रयोग करें।"
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि तयशुदा ई-मेल प्रोग्राम MAPI का "
+"समर्थन नहीं करता है।\n"
+"एक MAPI-सुसंगत ई-मेल प्रोग्राम का प्रयोग करें।"
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "त्रुटि प्रतिवेदन अस्थायी तौर पर सहेजा नहीं जा सका और इसलिये नहीं भेजा जा सका।"
+msgid "The error report could not be temporarily saved and could therefore not be sent."
+msgstr ""
+"त्रुटि प्रतिवेदन अस्थायी तौर पर सहेजा नहीं जा सका और इसलिये नहीं भेजा जा "
+"सका।"
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि 'पत्र भेजें' को आरंभ नहीं किया जा सका। \nकृपया 'पत्र भेजे' विन्यास को जाँचे।"
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि 'पत्र भेजें' को आरंभ नहीं किया जा "
+"सका। \n"
+"कृपया 'पत्र भेजे' विन्यास को जाँचे।"
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "त्रुटि प्रतिवेदन नहीं भेजा जा सका। त्रुटि प्रतिवेदन औज़ार में  विकल्प के अंतर्गत अपना परोक्ष विन्यास जाँचें।"
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"त्रुटि प्रतिवेदन नहीं भेजा जा सका। त्रुटि प्रतिवेदन औज़ार में  विकल्प के "
+"अंतर्गत अपना परोक्ष विन्यास जाँचें।"
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि अंतर्जाल संयोजित नहीं था। अपना अंतर्जाल विन्यास जाँच लें।"
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"त्रुटि प्रतिवेदन नहीं भेजा जा सका क्योंकि अंतर्जाल संयोजित नहीं था। अपना "
+"अंतर्जाल विन्यास जाँच लें।"
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "विकल्प (~O)..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "विकल्प"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "परोक्ष विन्यास"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "तंत्र विन्यास का प्रयोग करें (~s)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "अंतर्जाल से सीधे संयोजित हो(~d)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "हस्तचालित विन्यास का प्रयोग करें (~m)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "HT~TP परोक्ष"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "पोर्ट (~P)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "त्रुटि सूचना भेजने के लिए यह %PRODUCTNAME% त्रुटि सूचना यंत्र अंतर्जाल से संयोजित होना चाहिए।\n\nकंपनियाँ अक्सर परोक्ष सर्वर और फॉयरवाल के सामंजस्य का इस्तेमाल कर अपने संजाल को बचाती है।\n\nअगर यह आप पर लागू है, तो आपको सर्वर का पता और पोर्ट निर्दिष्ट करना होगा।"
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"त्रुटि सूचना भेजने के लिए यह %PRODUCTNAME% त्रुटि सूचना यंत्र अंतर्जाल से "
+"संयोजित होना चाहिए।\n"
+"\n"
+"कंपनियाँ अक्सर परोक्ष सर्वर और फॉयरवाल के सामंजस्य का इस्तेमाल कर अपने संजाल "
+"को बचाती है।\n"
+"\n"
+"अगर यह आप पर लागू है, तो आपको सर्वर का पता और पोर्ट निर्दिष्ट करना होगा।"
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "त्रुटि प्रतिवेदन भेज रहा है"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "स्थिति: त्रुटि प्रतिवेदन भेज रहा है"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "स्थिति: त्रुटि प्रतिवेदन सफलतापूर्वक भेजा गया।"
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "आपने इस विकल्प को चिह्नित किया है 'मैं Apache OpenOffice  को अनुमति देता/देती हूं कि वह इस रिपोर्ट के संबंध में मुझसे संपर्क करे।'\nअपना ई-मेल पता निविष्ट करें।"
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"आपने इस विकल्प को चिह्नित किया है 'मैं Apache OpenOffice  को अनुमति "
+"देता/देती हूं कि वह इस रिपोर्ट के संबंध में मुझसे संपर्क करे।'\n"
+"अपना ई-मेल पता निविष्ट करें।"
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <प्रक्रिया ID>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "%PRODUCTNAME% प्रक्रिया ID (PID)को त्रुटि प्रतिवेदन औजार को निर्धारित करें"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"%PRODUCTNAME% प्रक्रिया ID (PID)को त्रुटि प्रतिवेदन औजार को निर्धारित करें"
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "यह मदद पाठ दिखाता है।\nविस्तृत विवरण व्यवस्था निर्देशिका में पाया जा सकता है।"
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"यह मदद पाठ दिखाता है।\n"
+"विस्तृत विवरण व्यवस्था निर्देशिका में पाया जा सकता है।"

@@ -1,1528 +1,3348 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-msgid  "Calculates the number of weeks in a specific period"
+msgid "Calculates the number of weeks in a specific period"
 msgstr "Izračunava broj tjedana u specifičnom periodu"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-msgid  "Start date"
+msgid "Start date"
 msgstr "Početni datum"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
-msgid  "First day of the period"
+msgid "First day of the period"
 msgstr "Prvi dan perioda"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-msgid  "End date"
+msgid "End date"
 msgstr "Završni datum"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
-msgid  "Last day of the period"
+msgid "Last day of the period"
 msgstr "Zadnji dan perioda"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "Tip"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "Tip izračuna: Tip=0 znači vremenski interval, tip=1 znači kalendarskih tjedana."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
+msgstr ""
+"Tip izračuna: Tip=0 znači vremenski interval, tip=1 znači kalendarskih "
+"tjedana."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-msgid  "Determines the number of months in a specific period."
+msgid "Determines the number of months in a specific period."
 msgstr "Određuje broj mjeseci u zadanome periodu."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-msgid  "First day of the period."
+msgid "First day of the period."
 msgstr "Prvi dan perioda."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
+msgid "End date"
+msgstr "Završni datum"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-msgid  "Last day of the period."
+msgid "Last day of the period."
 msgstr "Zadnji dan perioda."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
+msgid "Type"
+msgstr "Tip"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "Tip izračunavanja: Type=0 znači vremenski interval, Type=1 znači kalendarski mjesec"
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
+msgstr ""
+"Tip izračunavanja: Type=0 znači vremenski interval, Type=1 znači kalendarski "
+"mjesec"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-msgid  "Calculates the number of years in a specific period."
+msgid "Calculates the number of years in a specific period."
 msgstr "Izračunavan broj godina u speficiranom periodu."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
+msgid "First day of the period"
+msgstr "Prvi dan perioda"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
+msgid "End date"
+msgstr "Završni datum"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
+msgid "Last day of the period"
+msgstr "Zadnji dan perioda"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
+msgid "Type"
+msgstr "Tip"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "Vrsta izračuna: Type=0 znači vremenski interval, Type=1 znači kalendarske godine."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
+msgstr ""
+"Vrsta izračuna: Type=0 znači vremenski interval, Type=1 znači kalendarske "
+"godine."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
-msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr "Vraća 1 (ISTINA) ako je datum dan prijestupne godine, odnosno 0 (LAŽ) ako nije."
+msgid "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
+msgstr ""
+"Vraća 1 (ISTINA) ako je datum dan prijestupne godine, odnosno 0 (LAŽ) ako "
+"nije."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Datum"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
+msgid "Any day in the desired year"
 msgstr "Jedan dan u željenoj godini"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
-msgid  "Returns the number of days of the month in which the date entered occurs"
+msgid "Returns the number of days of the month in which the date entered occurs"
 msgstr "Vraća broj dana u mjesecu u kojem se događa uneseni datum"
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
+msgid "Date"
+msgstr "Datum"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-msgid  "Any day in the desired month"
+msgid "Any day in the desired month"
 msgstr "Bilo koji dan u željenom mjesecu"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of days of the year in which the date entered occurs."
+msgid "Returns the number of days of the year in which the date entered occurs."
 msgstr "Vraća broj dana godine u kojoj se uneseni datum događa"
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
+msgid "Date"
+msgstr "Datum"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
+msgid "Any day in the desired year"
+msgstr "Jedan dan u željenoj godini"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
+msgid "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "Vraća broj tjedana godine u kojoj se uneseni datum događa"
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
+msgid "Date"
+msgstr "Datum"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
+msgid "Any day in the desired year"
+msgstr "Jedan dan u željenoj godini"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
+msgid "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "Enkriptira ili dekriptira tekst ROT13 algoritmom"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr "Tekst"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-msgid  "Text to be encrypted or text already encrypted"
+msgid "Text to be encrypted or text already encrypted"
 msgstr "Tekst koji se treba enkriptirati ili tekst koji je već enkriptiran"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-msgid  "WEEKS"
+msgid "WEEKS"
 msgstr "WEEKS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-msgid  "MONTHS"
+msgid "MONTHS"
 msgstr "MONTHS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-msgid  "YEARS"
+msgid "YEARS"
 msgstr "YEARS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-msgid  "ISLEAPYEAR"
+msgid "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
-msgid  "DAYSINMONTH"
+msgid "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
-msgid  "DAYSINYEAR"
+msgid "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-msgid  "WEEKSINYEAR"
+msgid "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-msgid  "ROT13"
+msgid "ROT13"
 msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-msgid  "WORKDAY"
+msgid "WORKDAY"
 msgstr "WORKDAY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-msgid  "YEARFRAC"
+msgid "YEARFRAC"
 msgstr "YEARFRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-msgid  "EDATE"
+msgid "EDATE"
 msgstr "EDATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-msgid  "WEEKNUM"
+msgid "WEEKNUM"
 msgstr "WEEKNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-msgid  "EOMONTH"
+msgid "EOMONTH"
 msgstr "EOMONTH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-msgid  "NETWORKDAYS"
+msgid "NETWORKDAYS"
 msgstr "NETWORKDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-msgid  "AMORDEGRC"
+msgid "AMORDEGRC"
 msgstr "AMORDEGRC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-msgid  "AMORLINC"
+msgid "AMORLINC"
 msgstr "AMORLINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-msgid  "ACCRINT"
+msgid "ACCRINT"
 msgstr "ACCRINT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-msgid  "ACCRINTM"
+msgid "ACCRINTM"
 msgstr "ACCRINTM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-msgid  "RECEIVED"
+msgid "RECEIVED"
 msgstr "Primljeno"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-msgid  "DISC"
+msgid "DISC"
 msgstr "DISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-msgid  "DURATION"
+msgid "DURATION"
 msgstr "DURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-msgid  "EFFECT"
+msgid "EFFECT"
 msgstr "Efekt"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-msgid  "CUMPRINC"
+msgid "CUMPRINC"
 msgstr "CUMPRINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-msgid  "CUMIPMT"
+msgid "CUMIPMT"
 msgstr "CUMIPMT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-msgid  "PRICE"
+msgid "PRICE"
 msgstr "PRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-msgid  "PRICEDISC"
+msgid "PRICEDISC"
 msgstr "PRICEDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-msgid  "PRICEMAT"
+msgid "PRICEMAT"
 msgstr "PRICEMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-msgid  "MDURATION"
+msgid "MDURATION"
 msgstr "MDURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
+msgid "NOMINAL"
 msgstr "NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-msgid  "DOLLARFR"
+msgid "DOLLARFR"
 msgstr "DOLLARFR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-msgid  "DOLLARDE"
+msgid "DOLLARDE"
 msgstr "DOLLARDE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-msgid  "YIELD"
+msgid "YIELD"
 msgstr "YIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-msgid  "YIELDDISC"
+msgid "YIELDDISC"
 msgstr "YIELDDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-msgid  "YIELDMAT"
+msgid "YIELDMAT"
 msgstr "YIELDMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-msgid  "TBILLEQ"
+msgid "TBILLEQ"
 msgstr "TBILLEQ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-msgid  "TBILLPRICE"
+msgid "TBILLPRICE"
 msgstr "TBILLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-msgid  "TBILLYIELD"
+msgid "TBILLYIELD"
 msgstr "TBILLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-msgid  "ODDFPRICE"
+msgid "ODDFPRICE"
 msgstr "ODDFPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-msgid  "ODDFYIELD"
+msgid "ODDFYIELD"
 msgstr "ODDFYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-msgid  "ODDLPRICE"
+msgid "ODDLPRICE"
 msgstr "ODDLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-msgid  "ODDLYIELD"
+msgid "ODDLYIELD"
 msgstr "ODDLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-msgid  "XIRR"
+msgid "XIRR"
 msgstr "XIRR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-msgid  "XNPV"
+msgid "XNPV"
 msgstr "XNPV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-msgid  "INTRATE"
+msgid "INTRATE"
 msgstr "INTRATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-msgid  "COUPNCD"
+msgid "COUPNCD"
 msgstr "COUPNCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-msgid  "COUPDAYS"
+msgid "COUPDAYS"
 msgstr "COUPDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-msgid  "COUPDAYSNC"
+msgid "COUPDAYSNC"
 msgstr "COUPDAYSNC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-msgid  "COUPDAYBS"
+msgid "COUPDAYBS"
 msgstr "COUPDAYBS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-msgid  "COUPPCD"
+msgid "COUPPCD"
 msgstr "COUPPCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-msgid  "COUPNUM"
+msgid "COUPNUM"
 msgstr "COUPNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-msgid  "FVSCHEDULE"
+msgid "FVSCHEDULE"
 msgstr "FVSCHEDULE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
-msgid  "ISEVEN"
+msgid "ISEVEN"
 msgstr "ISEVEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-msgid  "ISODD"
+msgid "ISODD"
 msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
-msgid  "GCD"
+msgid "GCD"
 msgstr "GCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
-msgid  "LCM"
+msgid "LCM"
 msgstr "LCM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-msgid  "MULTINOMIAL"
+msgid "MULTINOMIAL"
 msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-msgid  "SERIESSUM"
+msgid "SERIESSUM"
 msgstr "SERIESSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
-msgid  "QUOTIENT"
+msgid "QUOTIENT"
 msgstr "QUOTIENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-msgid  "MROUND"
+msgid "MROUND"
 msgstr "MROUND"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-msgid  "SQRTPI"
+msgid "SQRTPI"
 msgstr "SQRTPI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-msgid  "RANDBETWEEN"
+msgid "RANDBETWEEN"
 msgstr "RANDBETWEEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-msgid  "BESSELI"
+msgid "BESSELI"
 msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-msgid  "BESSELJ"
+msgid "BESSELJ"
 msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-msgid  "BESSELK"
+msgid "BESSELK"
 msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-msgid  "BESSELY"
+msgid "BESSELY"
 msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
-msgid  "BIN2DEC"
+msgid "BIN2DEC"
 msgstr "BIN2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
-msgid  "BIN2HEX"
+msgid "BIN2HEX"
 msgstr "BIN2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
-msgid  "BIN2OCT"
+msgid "BIN2OCT"
 msgstr "BIN2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-msgid  "DELTA"
+msgid "DELTA"
 msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
-msgid  "DEC2BIN"
+msgid "DEC2BIN"
 msgstr "DEC2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
-msgid  "DEC2HEX"
+msgid "DEC2HEX"
 msgstr "DEC2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
-msgid  "DEC2OCT"
+msgid "DEC2OCT"
 msgstr "DEC2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-msgid  "ERF"
+msgid "ERF"
 msgstr "ERF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-msgid  "ERFC"
+msgid "ERFC"
 msgstr "ERFC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-msgid  "GESTEP"
+msgid "GESTEP"
 msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
-msgid  "HEX2BIN"
+msgid "HEX2BIN"
 msgstr "HEX2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
-msgid  "HEX2DEC"
+msgid "HEX2DEC"
 msgstr "HEX2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
-msgid  "HEX2OCT"
+msgid "HEX2OCT"
 msgstr "HEX2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
-msgid  "IMABS"
+msgid "IMABS"
 msgstr "IMABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-msgid  "IMAGINARY"
+msgid "IMAGINARY"
 msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
-msgid  "IMPOWER"
+msgid "IMPOWER"
 msgstr "IMPOWER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
-msgid  "IMARGUMENT"
+msgid "IMARGUMENT"
 msgstr "IMARGUMENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
-msgid  "IMCOS"
+msgid "IMCOS"
 msgstr "IMCOS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
-msgid  "IMDIV"
+msgid "IMDIV"
 msgstr "IMDIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
-msgid  "IMEXP"
+msgid "IMEXP"
 msgstr "IMEXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
-msgid  "IMCONJUGATE"
+msgid "IMCONJUGATE"
 msgstr "IMCONJUGATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
-msgid  "IMLN"
+msgid "IMLN"
 msgstr "IMLN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
-msgid  "IMLOG10"
+msgid "IMLOG10"
 msgstr "IMLOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
-msgid  "IMLOG2"
+msgid "IMLOG2"
 msgstr "IMLOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
-msgid  "IMPRODUCT"
+msgid "IMPRODUCT"
 msgstr "IMPRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
-msgid  "IMREAL"
+msgid "IMREAL"
 msgstr "IMREAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
-msgid  "IMSIN"
+msgid "IMSIN"
 msgstr "IMSIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
-msgid  "IMSUB"
+msgid "IMSUB"
 msgstr "IMSUB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
-msgid  "IMSUM"
+msgid "IMSUM"
 msgstr "IMSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
-msgid  "IMSQRT"
+msgid "IMSQRT"
 msgstr "IMSQRT"
 
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid "IMCOT"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid "IMSINH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid "IMCOSH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid "IMCSCH"
+msgstr ""
+
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-msgid  "COMPLEX"
+msgid "COMPLEX"
 msgstr "COMPLEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
-msgid  "OCT2BIN"
+msgid "OCT2BIN"
 msgstr "OCT2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
-msgid  "OCT2DEC"
+msgid "OCT2DEC"
 msgstr "OCT2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
-msgid  "OCT2HEX"
+msgid "OCT2HEX"
 msgstr "OCT2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-msgid  "CONVERT"
+msgid "CONVERT"
 msgstr "CONVERT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-msgid  "FACTDOUBLE"
+msgid "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
-msgid  "Returns the serial number of the date before or after a specified number of workdays"
+msgid "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Vraća serijski broj datuma prije ili nakon određenog broja radnih dana"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-msgid  "Start date"
+msgid "Start date"
 msgstr "Početni datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
-msgid  "The start date"
+msgid "The start date"
 msgstr "Početni datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-msgid  "Days"
+msgid "Days"
 msgstr "Dani"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-msgid  "The number of workdays before or after the start date"
+msgid "The number of workdays before or after the start date"
 msgstr "Broj radnih dana prije ili nakon početnog datuma"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
-msgid  "Holidays"
+msgid "Holidays"
 msgstr "Blagdani"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-msgid  "List of date values of days off (vacation, holidays, etc.)"
+msgid "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Lista datuma slobodnih dana (odmor, praznici, itd.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
-msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr "Vraća broj cijelih dana između 'početni datum' i 'krajnji datum' kao dio godine"
+msgid "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
+msgstr ""
+"Vraća broj cijelih dana između 'početni datum' i 'krajnji datum' kao dio "
+"godine"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
+msgid "The start date"
+msgstr "Početni datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
-msgid  "End date"
+msgid "End date"
 msgstr "Završni datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-msgid  "The end date"
+msgid "The end date"
 msgstr "Krajnji datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
-msgid  "Basis"
+msgid "Basis"
 msgstr "Osnova"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-msgid  "Basis for determining the interest days"
+msgid "Basis for determining the interest days"
 msgstr "Osnova za određivanje kamatnih dana"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "Vraća serijski broj datuma koji je određeni broj mjeseci prije ili poslije početnog datuma"
+msgid "Returns the serial number of the date that is a specified number of months before or after the start date"
+msgstr ""
+"Vraća serijski broj datuma koji je određeni broj mjeseci prije ili poslije "
+"početnog datuma"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
+msgid "The start date"
+msgstr "Početni datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-msgid  "Months"
+msgid "Months"
 msgstr "Mjeseci"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
-msgid  "Number of months before or after the start date"
+msgid "Number of months before or after the start date"
 msgstr "Broj dana prije ili poslije početnog dana"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "Vraća broj kalendarskog tjedna u kojem se specificirani datum pojavljuje."
+msgid "Returns the number of the calendar week in which the specified date occurs."
+msgstr ""
+"Vraća broj kalendarskog tjedna u kojem se specificirani datum pojavljuje."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-msgid  "The date"
+msgid "The date"
 msgstr "Datum"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-msgid  "Return type"
+msgid "Return type"
 msgstr "Vrsta vraćenog odgovora"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
+msgid "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Broj od 1 do 3 koji označava kojim danom tjedan počinje."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "Vraća serijski broj zadnjeg dana mjeseca koji dolazi određeni broj mjeseci prije ili poslije početnog datuma"
+msgid "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
+msgstr ""
+"Vraća serijski broj zadnjeg dana mjeseca koji dolazi određeni broj mjeseci "
+"prije ili poslije početnog datuma"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
+msgid "The start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
+msgid "Months"
+msgstr "Mjeseci"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
+msgid "Number of months before or after the start date"
+msgstr "Broj dana prije ili poslije početnog dana"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-msgid  "Returns the number of workdays between two dates"
+msgid "Returns the number of workdays between two dates"
 msgstr "Vraća broj radnih dana između dva dana"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
+msgid "Start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
+msgid "The start date"
+msgstr "Početni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
+msgid "End date"
+msgstr "Završni datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
+msgid "The end date"
+msgstr "Krajnji datum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
+msgid "Holidays"
+msgstr "Blagdani"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
+msgid "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Popis slobodnih dana (praznici, blagdani, itd.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
-msgid  "Returns the value 'true' if the number is even"
+msgid "Returns the value 'true' if the number is even"
 msgstr "Vraća vrijednost 'true' ako je broj paran."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
-msgid  "Number"
+msgid "Number"
 msgstr "Broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
-msgid  "The number"
+msgid "The number"
 msgstr "Broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
-msgid  "Returns the value 'true' if the number is odd"
+msgid "Returns the value 'true' if the number is odd"
 msgstr "Vraća vrijednost 'true' ako je broj neparan."
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
+msgid "The number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-msgid  "Returns the multinomial coefficient of a set of numbers"
+msgid "Returns the multinomial coefficient of a set of numbers"
 msgstr "Vraća multinominalni koeficijent zadanih brojeva"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
-msgid  "Number(s)"
+msgid "Number(s)"
 msgstr "Broj(evi)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
+msgid "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "Broj ili lista brojeva za koje želite multinominalni koeficijent"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-msgid  "Returns the sum of a power series"
+msgid "Returns the sum of a power series"
 msgstr "Vraća zbroj serije eksponenata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
-msgid  "X"
+msgid "X"
 msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-msgid  "The independent variable of the power series"
+msgid "The independent variable of the power series"
 msgstr "Neovisna varijabla serije eksponenata."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-msgid  "The initial power to which x is to be raised"
+msgid "The initial power to which x is to be raised"
 msgstr "Početni eksponent čiji x treba biti rastući"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-msgid  "M"
+msgid "M"
 msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-msgid  "The increment by which to increase n for each term in the series"
+msgid "The increment by which to increase n for each term in the series"
 msgstr "Uvećanje s kojim se povećava n za svaki izraz u seriji"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-msgid  "Coefficients"
+msgid "Coefficients"
 msgstr "Koeficijenti"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "Skup koeficijenata s kojima je svaka sljedeća potencija varijable x pomnožena"
+msgid "Set of coefficients by which each successive power of the variable x is multiplied"
+msgstr ""
+"Skup koeficijenata s kojima je svaka sljedeća potencija varijable x "
+"pomnožena"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-msgid  "Returns the integer portion of a division"
+msgid "Returns the integer portion of a division"
 msgstr "Vraća cjelobrojni dio rezultata dijeljenja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
-msgid  "Numerator"
+msgid "Numerator"
 msgstr "Brojač"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
-msgid  "The dividend"
+msgid "The dividend"
 msgstr "Dividend"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-msgid  "Denominator"
+msgid "Denominator"
 msgstr "Nazivnik"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
-msgid  "The divisor"
+msgid "The divisor"
 msgstr "Djelitelj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-msgid  "Returns a number rounded to a specified multiple"
+msgid "Returns a number rounded to a specified multiple"
 msgstr "Vraća broj zaokružen na dati višekratnik"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
-msgid  "The number to round off"
+msgid "The number to round off"
 msgstr "Broj za zaokruživanje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
-msgid  "Multiple"
+msgid "Multiple"
 msgstr "Višestruko"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-msgid  "The multiple to which you want to round number"
+msgid "The multiple to which you want to round number"
 msgstr "Višekratnik kojim želite zaokružiti broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-msgid  "Returns the square root of a number which has been multiplied by pi"
+msgid "Returns the square root of a number which has been multiplied by pi"
 msgstr "Vraća kvadrat korijena broj koji je bio pomnožen s PI"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-msgid  "The number by which pi is multiplied"
+msgid "The number by which pi is multiplied"
 msgstr "Broj s kojim je pi pomnožen"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
-msgid  "Returns a random integer between the numbers you specify"
+msgid "Returns a random integer between the numbers you specify"
 msgstr "Vraća nasumce odabrani cijeli broj između brojeva koji odredite"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "Dno"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-msgid  "The smallest integer returned"
+msgid "The smallest integer returned"
 msgstr "Najmanji cijeli broj vraćen"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "Vrh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-msgid  "The largest integer returned"
+msgid "The largest integer returned"
 msgstr "Najveći cijeli broj vraćen"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-msgid  "Returns the greatest common divisor"
+msgid "Returns the greatest common divisor"
 msgstr "Vraća najveći zajednički djelitelj"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
+msgid "Number(s)"
+msgstr "Broj(evi)"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
-msgid  "Number or list of numbers"
+msgid "Number or list of numbers"
 msgstr "Broj ili popis brojeva"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-msgid  "Returns the least common multiple"
+msgid "Returns the least common multiple"
 msgstr "Vraća najmanje česti višekratnik"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
+msgid "Number(s)"
+msgstr "Broj(evi)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
+msgid "Number or list of numbers"
+msgstr "Broj ili popis brojeva"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-msgid  "Returns the modified Bessel function In(x)"
+msgid "Returns the modified Bessel function In(x)"
 msgstr "Vraća modificiranu Bessel funkciju In(x)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
+msgid "The value at which the function is to be evaluated"
 msgstr "Vrijednost na kojoj funkcija treba evaluirati"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
-msgid  "The order of the Bessel function"
+msgid "The order of the Bessel function"
 msgstr "Redoslijed Besselove funkcije"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-msgid  "Returns the Bessel function Jn(x)"
+msgid "Returns the Bessel function Jn(x)"
 msgstr "Vraća Bessel funkciju Jn(x)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "Vrijednost na kojoj funkcija treba evaluirati"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "Redoslijed Besselove funkcije"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-msgid  "Returns the Bessel function Kn(x)"
+msgid "Returns the Bessel function Kn(x)"
 msgstr "Vraća Besselovu funkciju Kn(x)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "Vrijednost na kojoj funkcija treba evaluirati"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "Redoslijed Besselove funkcije"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-msgid  "Returns the Bessel function Yn(x)"
+msgid "Returns the Bessel function Yn(x)"
 msgstr "Vraća Besselovu funkciju Yn(x)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "Vrijednost na kojoj funkcija treba evaluirati"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "Redoslijed Besselove funkcije"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
-msgid  "Converts a binary number to an octal number"
+msgid "Converts a binary number to an octal number"
 msgstr "Pretvara binarni broj u oktalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
+msgid "The binary number to be converted (as text)"
 msgstr "Binarni broj koji treba pretvoriti ( kao tekst )"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
-msgid  "Places"
+msgid "Places"
 msgstr "Mjesta"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
-msgid  "Number of places used"
+msgid "Number of places used"
 msgstr "Broj korištenih mjesta"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
-msgid  "Converts a binary number to a decimal number"
+msgid "Converts a binary number to a decimal number"
 msgstr "Pretvara binarni broj u decimalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
+msgid "The binary number to be converted (as text)"
+msgstr "Binarni broj koji treba pretvoriti ( kao tekst )"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-msgid  "Converts a binary number to a hexadecimal number"
+msgid "Converts a binary number to a hexadecimal number"
 msgstr "Pretvara binarni broj u heksadecimalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
+msgid "The binary number to be converted (as text)"
+msgstr "Binarni broj koji treba pretvoriti ( kao tekst )"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-msgid  "Number of places used."
+msgid "Number of places used."
 msgstr "Broj korištenih mjesta."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-msgid  "Converts an octal number to a binary number"
+msgid "Converts an octal number to a binary number"
 msgstr "Pretvara oktalni broj u binarni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
+msgid "The octal number to be converted (as text)"
 msgstr "Oktalni broj koji treba pretvoriti  ( kao tekst )"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-msgid  "Converts an octal number to a decimal number"
+msgid "Converts an octal number to a decimal number"
 msgstr "Pretvara oktalni broj u decimalni broj"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
+msgid "The octal number to be converted (as text)"
+msgstr "Oktalni broj koji treba pretvoriti  ( kao tekst )"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-msgid  "Converts an octal number to a hexadecimal number"
+msgid "Converts an octal number to a hexadecimal number"
 msgstr "Pretvara oktalni broj u heksadecimalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
+msgid "The octal number to be converted (as text)"
+msgstr "Oktalni broj koji treba pretvoriti  ( kao tekst )"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-msgid  "Converts a decimal number to a binary number"
+msgid "Converts a decimal number to a binary number"
 msgstr "Pretvara decimalni broj u binarni"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
-msgid  "The decimal integer to be converted"
+msgid "The decimal integer to be converted"
 msgstr "Cijeli decimalni broj koji treba pretvoriti"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-msgid  "Converts a decimal number to a hexadecimal number"
+msgid "Converts a decimal number to a hexadecimal number"
 msgstr "Pretvara decimalni broj u heksadecimalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
+msgid "The decimal integer to be converted"
+msgstr "Cijeli decimalni broj koji treba pretvoriti"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-msgid  "Converts a decimal number into an octal number"
+msgid "Converts a decimal number into an octal number"
 msgstr "Pretvara decimalni broj u oktalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
-msgid  "The decimal number"
+msgid "The decimal number"
 msgstr "Decimalni broj"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a binary number"
+msgid "Converts a hexadecimal number to a binary number"
 msgstr "Pretvara decimalni broj u binarni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
+msgid "The hexadecimal number to be converted (as text)"
 msgstr "Heksadecimalni broj koji treba pretvoriti ( kao tekst )"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a decimal number"
+msgid "Converts a hexadecimal number to a decimal number"
 msgstr "Pretvara heksadecimalni broj u decimalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "Heksadecimalni broj koji treba pretvoriti ( kao tekst )"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to an octal number"
+msgid "Converts a hexadecimal number to an octal number"
 msgstr "Pretvara heksadecimalni broj u oktalni"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "Heksadecimalni broj koji treba pretvoriti ( kao tekst )"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
+msgid "Places"
+msgstr "Mjesta"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "Broj korištenih mjesta"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-msgid  "Tests whether two values are equal"
+msgid "Tests whether two values are equal"
 msgstr "Provjerava jesu li dvije vrijednosti jednake"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-msgid  "Number 1"
+msgid "Number 1"
 msgstr "Broj_1"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-msgid  "The first number"
+msgid "The first number"
 msgstr "Prvi broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-msgid  "Number 2"
+msgid "Number 2"
 msgstr "Broj_2"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-msgid  "The second number"
+msgid "The second number"
 msgstr "Drugi broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-msgid  "Returns the error function"
+msgid "Returns the error function"
 msgstr "Vraća funkciju greške"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
-msgid  "Lower limit"
+msgid "Lower limit"
 msgstr "Donja granica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
-msgid  "The lower limit for integration"
+msgid "The lower limit for integration"
 msgstr "Donja granica integracije"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-msgid  "Upper limit"
+msgid "Upper limit"
 msgstr "Gornja granica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-msgid  "The upper limit for integration"
+msgid "The upper limit for integration"
 msgstr "Gornja granica integracije"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-msgid  "Returns the complementary error function"
+msgid "Returns the complementary error function"
 msgstr "Vraća komplementarnu funkciju pogreške"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
+msgid "Lower limit"
+msgstr "Donja granica"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
+msgid "The lower limit for integration"
+msgstr "Donja granica integracije"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-msgid  "Tests whether a number is greater than a threshold value"
+msgid "Tests whether a number is greater than a threshold value"
 msgstr "Testira je li broj veći od vrijednosti praga"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-msgid  "The value to test against step"
+msgid "The value to test against step"
 msgstr "Vrijednost koja će se testirati u odnosu na korak"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-msgid  "Step"
+msgid "Step"
 msgstr "Korak"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-msgid  "The threshhold value"
+msgid "The threshhold value"
 msgstr "Vrijednost praga"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-msgid  "Returns the double factorial of Number"
+msgid "Returns the double factorial of Number"
 msgstr "Vraća dupli faktorijel broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
+msgid "The number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
-msgid  "Returns the absolute value (modulus) of a complex number"
+msgid "Returns the absolute value (modulus) of a complex number"
 msgstr "Vraća apsolutnu vrijednost (modul) kompleksnog broja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
-msgid  "Complex number"
+msgid "Complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
-msgid  "The complex number"
+msgid "The complex number"
 msgstr "Kompleksni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-msgid  "Returns the imaginary coefficient of a complex number"
+msgid "Returns the imaginary coefficient of a complex number"
 msgstr "Vraća imaginarni koeficijent kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-msgid  "Returns a complex number raised to an integer power"
+msgid "Returns a complex number raised to an integer power"
 msgstr "Vraća kompleksni broj eksponenciran na cijeli broj"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-msgid  "Power to which the complex number is raised"
+msgid "Power to which the complex number is raised"
 msgstr "Eksponent kompleksnog broja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-msgid  "Returns the argument theta, an angle expressed in radians"
+msgid "Returns the argument theta, an angle expressed in radians"
 msgstr "Vraća argument theta, kut izražen u radijanima"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
-msgid  "A complex number"
+msgid "A complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-msgid  "Returns the cosine of a complex number"
+msgid "Returns the cosine of a complex number"
 msgstr "Vraća kosinus kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-msgid  "Returns the quotient of two complex numbers"
+msgid "Returns the quotient of two complex numbers"
 msgstr "Vraća kvocijent dva kompleksna broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
+msgid "Numerator"
+msgstr "Brojač"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
+msgid "The dividend"
+msgstr "Dividend"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
+msgid "Denominator"
+msgstr "Nazivnik"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
+msgid "The divisor"
+msgstr "Djelitelj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-msgid  "Returns the algebraic form of the exponential of a complex number"
+msgid "Returns the algebraic form of the exponential of a complex number"
 msgstr "Vraća algebarski oblik ekponencijale kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-msgid  "Returns the complex conjugate of a complex number"
+msgid "Returns the complex conjugate of a complex number"
 msgstr "Vraća kompleksnu konjugaciju kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-msgid  "Returns the natural logarithm of a complex number"
+msgid "Returns the natural logarithm of a complex number"
 msgstr "Vraća prirodni logaritam kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
-msgid  "Returns the base-10 logarithm of a complex number"
+msgid "Returns the base-10 logarithm of a complex number"
 msgstr "Vraća dekadski logaritam kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
-msgid  "Returns the base-2 logarithm of a complex number"
+msgid "Returns the base-2 logarithm of a complex number"
 msgstr "Vraća logaritam kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-msgid  "Returns the product of several complex numbers"
+msgid "Returns the product of several complex numbers"
 msgstr "Vraća umnožak dva kompleksna broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-msgid  "The first complex number"
+msgid "The first complex number"
 msgstr "Prvi kompleksni broj"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-msgid  "Another complex number"
+msgid "Another complex number"
 msgstr "Drugi kompleksni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-msgid  "Returns the real coefficient of a complex number"
+msgid "Returns the real coefficient of a complex number"
 msgstr "Vraća realni koeficijent kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-msgid  "Returns the sine of a complex number"
+msgid "Returns the sine of a complex number"
 msgstr "Vraća sinus kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-msgid  "Returns the difference of two complex numbers"
+msgid "Returns the difference of two complex numbers"
 msgstr "Vraća razliku dva kompleksna broja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
-msgid  "Complex number 1"
+msgid "Complex number 1"
+msgstr "Prvi kompleksni broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
+msgid "Complex number 1"
 msgstr "Prvi kompleksni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
-msgid  "Complex number 2"
+msgid "Complex number 2"
+msgstr "Drugi kompleksni broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
+msgid "Complex number 2"
 msgstr "Drugi kompleksni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-msgid  "Returns the square root of a complex number"
+msgid "Returns the square root of a complex number"
 msgstr "Vreća kvadratni korijen kompleksnog broja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-msgid  "Returns the sum of complex numbers"
+msgid "Returns the sum of complex numbers"
 msgstr "Vraća zbroj kompleksnih brojeva"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
+msgid "The complex number"
+msgstr "Kompleksni broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid "Returns the tangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid "Returns the secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid "Returns the cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid "Returns the cotangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid "Returns the hyperbolic sine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid "Returns the hyperbolic secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-msgid  "Converts real and imaginary coefficients into a complex number"
+msgid "Converts real and imaginary coefficients into a complex number"
 msgstr "Pretvara realni i imaginarni koeficijent u kompleksni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-msgid  "Real num"
+msgid "Real num"
 msgstr "Realni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-msgid  "The real coefficient"
+msgid "The real coefficient"
 msgstr "Realni koeficijent"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-msgid  "I num"
+msgid "I num"
 msgstr "I broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-msgid  "The imaginary coefficient"
+msgid "The imaginary coefficient"
 msgstr "Imaginarni koeficijent"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-msgid  "Suffix"
+msgid "Suffix"
 msgstr "Sufiks"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-msgid  "The suffix"
+msgid "The suffix"
 msgstr "Sufiks"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-msgid  "Converts a number from one measurement system to another"
+msgid "Converts a number from one measurement system to another"
 msgstr "Pretvara broj iz jednog mjernog sustava u drugi"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
+msgid "Number"
+msgstr "Broj"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
+msgid "The number"
+msgstr "Broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-msgid  "From unit"
+msgid "From unit"
 msgstr "Iz jedinice"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-msgid  "Unit of measure for number"
+msgid "Unit of measure for number"
 msgstr "Jedinica mjere broja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-msgid  "To unit"
+msgid "To unit"
 msgstr "U jedinicu"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-msgid  "Unit of measure for the result"
+msgid "Unit of measure for the result"
 msgstr "Unit of measure for the result"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "Vraća proratiranu linernu deprecijaciju aktive za svako obračunsko razdoblje"
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"Vraća proratiranu linernu deprecijaciju aktive za svako obračunsko razdoblje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
-msgid  "Cost"
+msgid "Cost"
 msgstr "Cijena"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
-msgid  "Cost of the asset"
+msgid "Cost of the asset"
 msgstr "Cijena imovine"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
-msgid  "Date purchased"
+msgid "Date purchased"
 msgstr "Datum kupovine"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
-msgid  "Purchase date of the asset"
+msgid "Purchase date of the asset"
 msgstr "Datum kupovine imovine"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
-msgid  "First period"
+msgid "First period"
 msgstr "Prvi period"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-msgid  "Date the first period ends"
+msgid "Date the first period ends"
 msgstr "Datum završetka prvog perioda"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-msgid  "Salvage"
+msgid "Salvage"
 msgstr "Popravi"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-msgid  "Salvage value of an asset at the end of its life"
+msgid "Salvage value of an asset at the end of its life"
 msgstr "Zadržana vrijednost imovine na kraju njene upotrebe"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-msgid  "Period"
+msgid "Period"
 msgstr "Razdoblje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
-msgid  "The period"
+msgid "The period"
 msgstr "Period"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
-msgid  "Rate"
+msgid "Rate"
 msgstr "Rata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
-msgid  "The rate of depreciation"
+msgid "The rate of depreciation"
 msgstr "Iznos smanjivanja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
-msgid  "The year basis to be used"
+msgid "The year basis to be used"
 msgstr "Godišnja osnova za korištenje"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"Vraća proratiranu linernu deprecijaciju aktive za svako obračunsko razdoblje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
+msgid "Cost"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
+msgid "Cost of the asset"
+msgstr "Cijena imovine"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
+msgid "Date purchased"
+msgstr "Datum kupovine"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
+msgid "Purchase date of the asset"
+msgstr "Datum kupovine imovine"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
+msgid "First period"
+msgstr "Prvi period"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-msgid  "The date the first period ends"
+msgid "The date the first period ends"
 msgstr "Datum završetka prvog perioda"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
+msgid "Salvage"
+msgstr "Popravi"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-msgid  "The salvage value of an asset at the end of its life"
+msgid "The salvage value of an asset at the end of its life"
 msgstr "Preostala vrijednost investicije na kraju njezinog života"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
+msgid "Period"
+msgstr "Razdoblje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
+msgid "The period"
+msgstr "Period"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
+msgid "The rate of depreciation"
+msgstr "Iznos smanjivanja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
+msgid "The year basis to be used"
+msgstr "Godišnja osnova za korištenje"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays periodic interest"
+msgid "Returns the accrued interest for a security that pays periodic interest"
 msgstr "Vraća nakupljene kamate za sigurnost koja plaća periodičke kamate"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
-msgid  "Issue"
+msgid "Issue"
 msgstr "Izdanje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-msgid  "Issue date of the security"
+msgid "Issue date of the security"
 msgstr "Datum izdavanja sigurnosti"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-msgid  "First interest"
+msgid "First interest"
 msgstr "Prva kamata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-msgid  "First interest date of the security"
+msgid "First interest date of the security"
 msgstr "Početni datum kamata za obveznice"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
-msgid  "Settlement"
+msgid "Settlement"
 msgstr "Naselje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
-msgid  "The settlement"
+msgid "The settlement"
 msgstr "Sporazum"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
-msgid  "The rate"
+msgid "The rate"
 msgstr "Rata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
-msgid  "Par"
+msgid "Par"
 msgstr "Prosjek"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
-msgid  "The par value"
+msgid "The par value"
 msgstr "Prosjek"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-msgid  "Frequency"
+msgid "Frequency"
 msgstr "Frekvencija"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
-msgid  "The frequency"
+msgid "The frequency"
 msgstr "Učestalost"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
-msgid  "The basis"
+msgid "The basis"
 msgstr "Osnovica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays interest at maturity"
+msgid "Returns the accrued interest for a security that pays interest at maturity"
 msgstr "Vraća kamatu za sigurnost koja plaća kamatu pri zrelosti"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
+msgid "Issue"
+msgstr "Izdanje"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
-msgid  "The issue date"
+msgid "The issue date"
 msgstr "Datum izdavanja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
+msgid "Par"
+msgstr "Prosjek"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
+msgid "The par value"
+msgstr "Prosjek"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-msgid  "Returns the amount paid out at maturity for a fully invested security"
+msgid "Returns the amount paid out at maturity for a fully invested security"
 msgstr "Vraća iznos plaćen na dospjelu, u potpunosti uplaćenu, obveznicu"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-msgid  "Maturity"
+msgid "Maturity"
 msgstr "Odraslost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
-msgid  "The maturity"
+msgid "The maturity"
 msgstr "Zrelost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
-msgid  "Investment"
+msgid "Investment"
 msgstr "Ulaganje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
-msgid  "The investment"
+msgid "The investment"
 msgstr "Ulaganje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
-msgid  "Discount"
+msgid "Discount"
 msgstr "Popust"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
-msgid  "The discount"
+msgid "The discount"
 msgstr "Popust"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-msgid  "Returns the discount rate for a security"
+msgid "Returns the discount rate for a security"
 msgstr "Vraća popust za sigurnost"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
-msgid  "Price"
+msgid "Price"
 msgstr "Cijena"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
-msgid  "The price"
+msgid "The price"
 msgstr "Cijena"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
-msgid  "Redemption"
+msgid "Redemption"
 msgstr "Iskupljenje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
-msgid  "The redemption value"
+msgid "The redemption value"
 msgstr "Vrijednost iskupljenja"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
+msgid "Returns the annual Macaulay duration of a security with periodic interest payments"
 msgstr "Vraća godišnje Macaulay trajanje obveznice s periodičkim kamatama"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-msgid  "Coupon"
+msgid "Coupon"
 msgstr "Kupon"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
-msgid  "The coupon rate"
+msgid "The coupon rate"
 msgstr "Kuponska vrijednost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
-msgid  "Yield"
+msgid "Yield"
 msgstr "Yield"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
-msgid  "The yield"
+msgid "The yield"
 msgstr "Dobit"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-msgid  "Returns the effective annual interest rate"
+msgid "Returns the effective annual interest rate"
 msgstr "Vraća efektivnu godišnju vrijednost kamata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-msgid  "Nominal rate"
+msgid "Nominal rate"
 msgstr "Nominalna vrijednost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-msgid  "The nominal rate"
+msgid "The nominal rate"
 msgstr "Nominalna vrijednost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
-msgid  "Npery"
+msgid "Npery"
 msgstr "Npery"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
-msgid  "The periods"
+msgid "The periods"
 msgstr "Periodi"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
+msgid "Returns the cumulative principal on a loan to be paid between two periods"
 msgstr "Vraća akumuliranu vrijednost pozajmice za plaćanje između dva perioda"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-msgid  "Nper"
+msgid "Nper"
 msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
-msgid  "Number of payment periods"
+msgid "Number of payment periods"
 msgstr "Broj rata za plaćanje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
-msgid  "Pv"
+msgid "Pv"
 msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
-msgid  "The present value"
+msgid "The present value"
 msgstr "Sadašnja vrijednost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-msgid  "Start period"
+msgid "Start period"
 msgstr "Početni razdoblje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
-msgid  "The start period"
+msgid "The start period"
 msgstr "Početni razdoblje"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
-msgid  "End period"
+msgid "End period"
 msgstr "Kraj razdoblja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
-msgid  "The end period"
+msgid "The end period"
 msgstr "Kraj razdoblja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "Tip"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
-msgid  "The type of maturity"
+msgid "The type of maturity"
 msgstr "Tip zrelosti"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-msgid  "Returns the cumulative interest to be paid between two periods"
+msgid "Returns the cumulative interest to be paid between two periods"
 msgstr "Vraća kumulativnu kamatu za plaćanje između dva perioda"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
+msgid "Nper"
+msgstr "Nper"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
+msgid "Number of payment periods"
+msgstr "Broj rata za plaćanje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
+msgid "Pv"
+msgstr "Pv"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
+msgid "The present value"
+msgstr "Sadašnja vrijednost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
+msgid "Start period"
+msgstr "Početni razdoblje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
+msgid "The start period"
+msgstr "Početni razdoblje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
+msgid "End period"
+msgstr "Kraj razdoblja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
+msgid "The end period"
+msgstr "Kraj razdoblja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
+msgid "Type"
+msgstr "Tip"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
+msgid "The type of maturity"
+msgstr "Tip zrelosti"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Vraća cijenu po 100 monetarnih jedinica sigurnosti koja plaća periodičnu kamatu"
+msgid "Returns the price per 100 currency units face value of a security that pays periodic interest"
+msgstr ""
+"Vraća cijenu po 100 monetarnih jedinica sigurnosti koja plaća periodičnu "
+"kamatu"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
+msgid "Yield"
+msgstr "Yield"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
+msgid "The yield"
+msgstr "Dobit"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a discounted security"
+msgid "Returns the price per 100 currency units face value of a discounted security"
 msgstr "Vraća cijenu vrijednosnice za 100 jedinica valute"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
+msgid "Discount"
+msgstr "Popust"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
+msgid "The discount"
+msgstr "Popust"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr "Vraća cijenu po vrijednosti 100 valutnih jedinica stvarne vrijednosti vrijednosnog papira koji otplaćuje kamatu po dospijeću"
+msgid "Returns the price per 100 currency units face value of a security that pays interest at maturity"
+msgstr ""
+"Vraća cijenu po vrijednosti 100 valutnih jedinica stvarne vrijednosti "
+"vrijednosnog papira koji otplaćuje kamatu po dospijeću"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
+msgid "Issue"
+msgstr "Izdanje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
+msgid "The issue date"
+msgstr "Datum izdavanja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
+msgid "Yield"
+msgstr "Yield"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
+msgid "The yield"
+msgstr "Dobit"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
-msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr "Vraća izmijenjeno Macaulay-evo trajanje za vrijednosne papire s pretpostavljenom vrijednosti 100 valutnih jedinica"
+msgid "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
+msgstr ""
+"Vraća izmijenjeno Macaulay-evo trajanje za vrijednosne papire s "
+"pretpostavljenom vrijednosti 100 valutnih jedinica"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
+msgid "Coupon"
+msgstr "Kupon"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
+msgid "The coupon rate"
+msgstr "Kuponska vrijednost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
+msgid "Yield"
+msgstr "Yield"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
+msgid "The yield"
+msgstr "Dobit"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-msgid  "Returns the annual nominal interest rate"
+msgid "Returns the annual nominal interest rate"
 msgstr "Vraća godišnju nominalnu vrijednost kamata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-msgid  "Effective rate"
+msgid "Effective rate"
 msgstr "Efektivna vrijednost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-msgid  "The effective interest rate"
+msgid "The effective interest rate"
 msgstr "Efektivna interesna stopa"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
+msgid "Npery"
+msgstr "Npery"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
+msgid "The periods"
+msgstr "Periodi"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "Pretvara cijenu izraženu kao decimalni broj u cijenu izraženu kao razlomak"
+msgid "Converts a price expressed as a decimal into a price expressed as a fraction"
+msgstr ""
+"Pretvara cijenu izraženu kao decimalni broj u cijenu izraženu kao razlomak"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-msgid  "Decimal dollar"
+msgid "Decimal dollar"
 msgstr "Decimalni dolar"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
+msgid "The decimal number"
+msgstr "Decimalni broj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
-msgid  "Fraction"
+msgid "Fraction"
 msgstr "Razlomak"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
+msgid "The divisor"
+msgstr "Djelitelj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "Pretvara cijenu izraženu kao razlomak u cijenu izraženu kao decimalni broj"
+msgid "Converts a price expressed as a fraction into a price expressed as a decimal"
+msgstr ""
+"Pretvara cijenu izraženu kao razlomak u cijenu izraženu kao decimalni broj"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-msgid  "Fractional dollar"
+msgid "Fractional dollar"
 msgstr "Razlomak dolara"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-msgid  "The number as a fraction"
+msgid "The number as a fraction"
 msgstr "Broj kao razlomak"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
+msgid "Fraction"
+msgstr "Razlomak"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
+msgid "The divisor"
+msgstr "Djelitelj"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-msgid  "Returns the yield on a security that pays periodic interest"
+msgid "Returns the yield on a security that pays periodic interest"
 msgstr "Vraća dobit vrijednosnog papira koji otplaćuje periodičnu kamatu"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-msgid  "Returns the annual yield for a discounted security"
+msgid "Returns the annual yield for a discounted security"
 msgstr "Vraća godišnju dobit za novčane papire s popustom"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "Vraća godišnju dobit novčanih papira koji otplaćuju kamate po dospjelosti"
+msgid "Returns the annual yield of a security that pays interest at maturity"
+msgstr ""
+"Vraća godišnju dobit novčanih papira koji otplaćuju kamate po dospjelosti"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
+msgid "Issue"
+msgstr "Izdanje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
+msgid "The issue date"
+msgstr "Datum izdavanja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-msgid  "Returns the bond-equivalent yield for a treasury bill"
+msgid "Returns the bond-equivalent yield for a treasury bill"
 msgstr "Vraća dobit obveznica za blagajnički zapis"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
+msgid "Discount"
+msgstr "Popust"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
-msgid  "The discount rate"
+msgid "The discount rate"
 msgstr "Vrijednost popusta"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
-msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr "Vraća cijenu 100 valutnih jedinica stvarne vrijednost za blagajničke zapise"
+msgid "Returns the price of 100 currency units face value for a treasury bill"
+msgstr ""
+"Vraća cijenu 100 valutnih jedinica stvarne vrijednost za blagajničke zapise"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
+msgid "Discount"
+msgstr "Popust"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
+msgid "The discount rate"
+msgstr "Vrijednost popusta"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-msgid  "Returns the yield for a treasury bill"
+msgid "Returns the yield for a treasury bill"
 msgstr "Vraća dobit za blagajnički zapis"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
-msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr "Vraća cijenu po vrijednosti $100 vrijednosnog papira s neobičnim prvim razdobljem"
+msgid "Returns the price per $100 face value of a security with an odd first period"
+msgstr ""
+"Vraća cijenu po vrijednosti $100 vrijednosnog papira s neobičnim prvim "
+"razdobljem"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
+msgid "Issue"
+msgstr "Izdanje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
+msgid "The issue date"
+msgstr "Datum izdavanja"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
-msgid  "First coupon"
+msgid "First coupon"
 msgstr "Prvi kupon"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
-msgid  "The first coupon date"
+msgid "The first coupon date"
 msgstr "Datum prvog kupona"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
+msgid "Yield"
+msgstr "Yield"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
+msgid "The yield"
+msgstr "Dobit"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd first period"
+msgid "Returns the yield of a security with an odd first period"
 msgstr "sa"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
+msgid "Issue"
+msgstr "Izdanje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
+msgid "The issue date"
+msgstr "Datum izdavanja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
+msgid "First coupon"
+msgstr "Prvi kupon"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
+msgid "The first coupon date"
+msgstr "Datum prvog kupona"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
-msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr "Vraća cijenu po $100 vrijednosti vrijednosnog papira s neobičnim zadnjim razdobljem"
+msgid "Returns the price per $100 face value of a security with an odd last period"
+msgstr ""
+"Vraća cijenu po $100 vrijednosti vrijednosnog papira s neobičnim zadnjim "
+"razdobljem"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-msgid  "Last interest"
+msgid "Last interest"
 msgstr "Zadnja kamata"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
-msgid  "The last interest date"
+msgid "The last interest date"
 msgstr "Zadnji datum kamata"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
+msgid "Yield"
+msgstr "Yield"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
+msgid "The yield"
+msgstr "Dobit"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd last period"
+msgid "Returns the yield of a security with an odd last period"
 msgstr "Vraća dobit obveznice s neparnim zadnjim razdobljem"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
+msgid "Last interest"
+msgstr "Zadnja kamata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
+msgid "The last interest date"
+msgstr "Zadnji datum kamata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
+msgid "Price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
+msgid "The price"
+msgstr "Cijena"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
+msgid "Returns the internal rate of return for a non-periodic schedule of payments"
 msgstr "Vraća internu vrijednost vraćanja za neperiodične planove otplate"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
-msgid  "Values"
+msgid "Values"
 msgstr "Vrijednosti"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
-msgid  "The values"
+msgid "The values"
 msgstr "Vrijednosti"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
-msgid  "Dates"
+msgid "Dates"
 msgstr "Datumi"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
-msgid  "The dates"
+msgid "The dates"
 msgstr "Datumi"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-msgid  "Guess"
+msgid "Guess"
 msgstr "Predloži"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-msgid  "The guess"
+msgid "The guess"
 msgstr "Pretpostavka"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-msgid  "Returns the net present value for a non-periodic schedule of payments"
+msgid "Returns the net present value for a non-periodic schedule of payments"
 msgstr "Vraća mrežnu postotnu vrijednost za neperiodične planove otplate"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
+msgid "Rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
+msgid "The rate"
+msgstr "Rata"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
+msgid "Values"
+msgstr "Vrijednosti"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
+msgid "The values"
+msgstr "Vrijednosti"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
+msgid "Dates"
+msgstr "Datumi"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
+msgid "The dates"
+msgstr "Datumi"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-msgid  "Returns the interest rate for a fully invested security"
+msgid "Returns the interest rate for a fully invested security"
 msgstr "Vraća vrijednost kamata za potpuno uložene vrijednosne papire"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
+msgid "Investment"
+msgstr "Ulaganje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
+msgid "The investment"
+msgstr "Ulaganje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
+msgid "Redemption"
+msgstr "Iskupljenje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "Vrijednost iskupljenja"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
-msgid  "Returns the first coupon date after the settlement date"
+msgid "Returns the first coupon date after the settlement date"
 msgstr "Vraća datum prvog kupona poslije datuma nagodbe"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-msgid  "Returns the number of days in the coupon period containing the settlement date"
+msgid "Returns the number of days in the coupon period containing the settlement date"
 msgstr "Vraća broj dana u kuponskom razdoblju koji sadrži datum nagodbe"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-msgid  "Returns the number of days from the settlement date to the next coupon date"
+msgid "Returns the number of days from the settlement date to the next coupon date"
 msgstr "Vraća broj dana od nagodbe do sljedećeg kuponskog datuma"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
+msgid "Returns the number of days from the beginning of the coupon period to the settlement date"
 msgstr "Vraća broj dana od početka kuponskog razdoblja do dana nagodbe"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-msgid  "Returns the last coupon date preceding the settlement date"
+msgid "Returns the last coupon date preceding the settlement date"
 msgstr "Vraća zadnji datum kupona predkodiranog dogovorenog datuma"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
+msgid "Returns the number of coupons payable between the settlement and maturity dates"
 msgstr "Vraća broj kupona plativih između obračuna i datuma dospijeća"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
+msgid "Settlement"
+msgstr "Naselje"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
+msgid "The settlement"
+msgstr "Sporazum"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
+msgid "Maturity"
+msgstr "Odraslost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
+msgid "The maturity"
+msgstr "Zrelost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
+msgid "Frequency"
+msgstr "Frekvencija"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
+msgid "The frequency"
+msgstr "Učestalost"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
+msgid "Basis"
+msgstr "Osnova"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
+msgid "The basis"
+msgstr "Osnovica"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "Vraća buduću vrijednost početne glavnice nakon niza sjedinjenih vrijednosti kamata koje su primjenjene"
+msgid "Returns the future value of the initial principal after a series of compound interest rates are applied"
+msgstr ""
+"Vraća buduću vrijednost početne glavnice nakon niza sjedinjenih vrijednosti "
+"kamata koje su primjenjene"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-msgid  "Principal"
+msgid "Principal"
 msgstr "Principal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-msgid  "The principal"
+msgid "The principal"
 msgstr "Glavnica"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-msgid  "Schedule"
+msgid "Schedule"
 msgstr "Raspored"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-msgid  "The schedule"
+msgid "The schedule"
 msgstr "Plan"

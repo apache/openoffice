@@ -1,2498 +1,2721 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: cy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
-msgid  "Address Book Data Source Wizard"
+msgid "Address Book Data Source Wizard"
 msgstr "Dewin Ffynhonnell Data Llyfr Cyfeiriadau"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
+msgid "Address book type"
 msgstr "Math o lyfr cyfeiriad."
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr "Gosodiadau cysylltiad"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
+msgid "Table selection"
 msgstr "Dewis Tabl"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
-msgid  "Field Assignment"
+msgid "Field Assignment"
 msgstr "Aseiniad Maes"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
-msgid  "Data Source Title"
+msgid "Data Source Title"
 msgstr "Teitl Ffynhonnell Data "
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "Mae %PRODUCTNAME yn caniatáu i chi gael mynediad at y cyfeiriad ar eich system. I wneud hyn bydd ffynhonnell data %PRODUCTNAME yn cael ei greu lle fydd eich data ar gael ar ffurf tabl.\n\nBydd yr AwtoPeilot hwn yn eich cynorthwyo i greu ffynhonnell data."
+msgid "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+"Mae %PRODUCTNAME yn caniatáu i chi gael mynediad at y cyfeiriad ar eich "
+"system. I wneud hyn bydd ffynhonnell data %PRODUCTNAME yn cael ei greu lle "
+"fydd eich data ar gael ar ffurf tabl.\n"
+"\n"
+"Bydd yr AwtoPeilot hwn yn eich cynorthwyo i greu ffynhonnell data."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
-msgid  "Please select the type of your external address book:"
+msgid "Please select the type of your external address book:"
 msgstr "Dewiswch y math o lyfr cyfeiriadau allanol:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
-msgid  "Evolution"
+msgid "Evolution"
 msgstr "Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
-msgid  "Mozilla / Netscape"
+msgid "Mozilla / Netscape"
 msgstr "Gwe-lywiwr Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
-msgid  "Thunderbird"
+msgid "Thunderbird"
 msgstr "Thunderbird"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
-msgid  "KDE address book"
+msgid "KDE address book"
 msgstr "Llyfr Cyfeiriadau KDE"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
-msgid  "Mac OS X address book"
+msgid "Mac OS X address book"
 msgstr "Llyfr cyfeiriadau Mac OS X"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
-msgid  "LDAP address data"
+msgid "LDAP address data"
 msgstr "Data cyfeiriad LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
-msgid  "Outlook address book"
+msgid "Outlook address book"
 msgstr "Llyfr cyfeiriadau Outlook"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
-msgid  "Windows system address book"
+msgid "Windows system address book"
 msgstr "Llyfr cyfeiriadau system Windows"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
+msgid "Other external data source"
 msgstr "Ffynonellau data allanol eraill."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "I osod y ffynhonnell data newydd, bydd angen gwybodaeth ychwanegol.\n\nCliciwch y botwm canlynol i agor blwch deialog arall lle fyddwch yn rhoi'r wybodaeth."
+msgid "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+"I osod y ffynhonnell data newydd, bydd angen gwybodaeth ychwanegol.\n"
+"\n"
+"Cliciwch y botwm canlynol i agor blwch deialog arall lle fyddwch yn rhoi'r "
+"wybodaeth."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
-msgid  "Settings"
+msgid "Settings"
 msgstr "Gosodiadau"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "Methu creu'r cysylltiad gyda'r ffynhonnell data.\nCyn mynd ymhellach, gwiriwch y gosodiadau wnaed, neu (ar y dudalen flaenorol) dewiswch fath arall o ffynhonnell data cyfeiriadau."
+msgid "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+"Methu creu'r cysylltiad gyda'r ffynhonnell data.\n"
+"Cyn mynd ymhellach, gwiriwch y gosodiadau wnaed, neu (ar y dudalen "
+"flaenorol) dewiswch fath arall o ffynhonnell data cyfeiriadau."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "Mae'r ffynhonnell data allanol rydych wedi ei ddewis yn cynnwys mwy nag un llyfr cyfeiriadau.\nDewiswch yr un byddwch am weithio ohono'n bennaf:"
+msgid "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+"Mae'r ffynhonnell data allanol rydych wedi ei ddewis yn cynnwys mwy nag un "
+"llyfr cyfeiriadau.\n"
+"Dewiswch yr un byddwch am weithio ohono'n bennaf:"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "I ymgorffori'r data cyfeiriad yn eich templedi, mae'n rhaid i, %PRODUCTNAME wybod pa feysydd sy'n cynnwys pa ddata.\n\nEr enghraifft, gallwch fod wedi cadw eich cyfeiriadau e-bost mewn maes o'r enw \"e-bost\", neu \"E-bost\" , neu rywbeth hollol wahanol.\n\nCliciwch y botwm islaw i agor deialog arall lle mae modd nodi gosodiadau eich ffynhonnell data."
+msgid "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+"I ymgorffori'r data cyfeiriad yn eich templedi, mae'n rhaid i, %PRODUCTNAME "
+"wybod pa feysydd sy'n cynnwys pa ddata.\n"
+"\n"
+"Er enghraifft, gallwch fod wedi cadw eich cyfeiriadau e-bost mewn maes o'r "
+"enw \"e-bost\", neu \"E-bost\" , neu rywbeth hollol wahanol.\n"
+"\n"
+"Cliciwch y botwm islaw i agor deialog arall lle mae modd nodi gosodiadau "
+"eich ffynhonnell data."
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
+msgid "Field Assignment"
+msgstr "Aseiniad Maes"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Dyna'r cyfan o'r wybodaeth sy'n angenrheidiol i ymgorffori eich data cyfeiriadau i %PRODUCTNAME.\n\nNesaf, rhowch enw i gofrestru'r ffynhonnell data yn v %PRODUCTNAME."
+msgid "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+"Dyna'r cyfan o'r wybodaeth sy'n angenrheidiol i ymgorffori eich data "
+"cyfeiriadau i %PRODUCTNAME.\n"
+"\n"
+"Nesaf, rhowch enw i gofrestru'r ffynhonnell data yn v %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "Lleoliad"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Pori..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgid "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Mae'r llyfr cyfeiriadau ar gael i bob modiwl yn %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
+msgid "Address book name"
 msgstr "Enw'r llyfr cyfeiriadau"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "Mae'r enw wedi ei roi i ffynhonnell data arall. Gan fod rhaid i ffynonellau data gael enw unigryw bydd rhaid dewis enw arall."
+msgid "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+"Mae'r enw wedi ei roi i ffynhonnell data arall. Gan fod rhaid i ffynonellau "
+"data gael enw unigryw bydd rhaid dewis enw arall."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
-msgid  "Please select a type of address book."
+msgid "Please select a type of address book."
 msgstr "Dewiswch y math o lyfr cyfeiriad."
 
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
+msgid "Addresses"
 msgstr "Cyfeiriadau"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
+msgid "Create Address Data Source"
 msgstr "Creu Ffynhonnell Data Cyfeiriadau"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "Methu creu cysylltiad"
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
-msgid  "Please check the settings made for the data source."
+msgid "Please check the settings made for the data source."
 msgstr "Gwiriwch osodiadau'r ffynhonnell data."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
+msgid "Address Data - Field Assignment"
 msgstr "Data Cyfeiriadau - Aseiniad Maes"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "Nid oes meysydd wedi eu neilltuo ar hyn o bryd.\nMae modd, un ai neilltuo maes neu yn ddiweddarach, drwy ddewis:\n\"Ffeil - Templed - Ffynhonnell Llyfr Cyfeiriadau...\""
+msgid "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
+"Nid oes meysydd wedi eu neilltuo ar hyn o bryd.\n"
+"Mae modd, un ai neilltuo maes neu yn ddiweddarach, drwy ddewis:\n"
+"\"Ffeil - Templed - Ffynhonnell Llyfr Cyfeiriadau...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
+msgid "Field selection:"
 msgstr "Dewis maes:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
+msgid "Table;Query;Sql;Sql [Native]"
 msgstr "Tab; Ymholiad;Sql;Sql[Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
-msgid  "Bibliography Database"
+msgid "Bibliography Database"
 msgstr "Cronfa Ddata Llyfryddiaeth"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
-msgid  "Do you want to edit the column arrangement?"
+msgid "Do you want to edit the column arrangement?"
 msgstr "Hoffech chi olygu trefniant y colofnau?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
+msgid "Column names"
 msgstr "Enwau colofnau"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
-msgid  "<none>"
+msgid "<none>"
 msgstr ""
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
+msgid "Column Layout for Table %1"
 msgstr "Cynllun Colofn ar gyfer Tabl %1"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
+msgid "Choose Data Source"
 msgstr "Dewis Ffynhonnell Data"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
+msgid "Entry"
 msgstr "Cofnod"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
+msgid "The following column names could not be assigned:\n"
 msgstr "Methu neilltuo'r enwau colofn ganlynol:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
+msgid "Article"
 msgstr "Erthygl"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
+msgid "Book"
 msgstr "Llyfr"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
-msgid  "Brochures"
+msgid "Brochures"
 msgstr "Llyfryn"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
-msgid  "Conference proceedings"
+msgid "Conference proceedings"
 msgstr "Gweithrediadau cynhadledd"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
-msgid  "Book excerpt"
+msgid "Book excerpt"
 msgstr "Dyfyniad o lyfr"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
-msgid  "Book excerpt with title"
+msgid "Book excerpt with title"
 msgstr "Dyfyniad o lyfr gyda theitl"
 
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
+msgstr "Gweithrediadau cynhadledd"
+
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
+msgid "Journal"
 msgstr "Siwrnal"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
-msgid  "Techn. documentation"
+msgid "Techn. documentation"
 msgstr "Dogfennaeth dechnegol"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
-msgid  "Thesis"
+msgid "Thesis"
 msgstr "Thesis"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
+msgid "Miscellaneous"
 msgstr "Amrywiol"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
-msgid  "Dissertation"
+msgid "Dissertation"
 msgstr "Traethawd"
 
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
+msgstr "Gweithrediadau cynhadledd"
+
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
-msgid  "Research report"
+msgid "Research report"
 msgstr "Adroddiad ymchwil"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
+msgid "Unpublished"
 msgstr "Heb ei gyhoeddi"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
-msgid  "e-mail"
+msgid "e-mail"
 msgstr "e-bost"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
-msgid  "WWW document"
+msgid "WWW document"
 msgstr "Dogfen WWW"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
+msgid "User-defined1"
 msgstr "Defnyddiwr diffinedig1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
+msgid "User-defined2"
 msgstr "Defnyddiwr diffinedig2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
+msgid "User-defined3"
 msgstr "Defnyddiwr diffinedig3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
+msgid "User-defined4"
 msgstr "Defnyddiwr diffinedig4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
+msgid "User-defined5"
 msgstr "Defnyddiwr diffinedig5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "Cyffredinol"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
+msgid "Insert Section..."
 msgstr "Mewnosod Adran..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
+msgid "Delete Section..."
 msgstr "Dileu Adran..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
+msgid "Modify Name..."
 msgstr "Newid Enw..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
+msgid "~Short name"
 msgstr "~Enw byr"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
+msgid "~Type"
 msgstr "~Math"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
+msgid "~Year"
 msgstr "~Blwyddyn"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
-msgid  "Author(s)"
+msgid "Author(s)"
 msgstr "Awdur(on)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
+msgid "Tit~le"
 msgstr "~Teitl"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
-msgid  "~Publisher"
+msgid "~Publisher"
 msgstr "~Cyhoeddwr"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
+msgid "A~ddress"
 msgstr "C~yfeiriad"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
-msgid  "~ISBN"
+msgid "~ISBN"
 msgstr "~ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
+msgid "~Chapter"
 msgstr "~Pennod"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
-msgid  "Pa~ge(s)"
+msgid "Pa~ge(s)"
 msgstr "Tudalen(au)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
-msgid  "Editor"
+msgid "Editor"
 msgstr "Golygydd"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
-msgid  "Ed~ition"
+msgid "Ed~ition"
 msgstr "~Rhifyn"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
+msgid "~Book title"
 msgstr "Teitl y ~llyfr"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
+msgid "Volume"
 msgstr "C~yfrol"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
-msgid  "Publication t~ype"
+msgid "Publication t~ype"
 msgstr "Math o ~gyhoeddiad"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
+msgid "Organi~zation"
 msgstr "~Corff"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
+msgid "Instit~ution"
 msgstr "~Sefydliad"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
-msgid  "University"
+msgid "University"
 msgstr "Prifysgol"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
-msgid  "Type of re~port"
+msgid "Type of re~port"
 msgstr "~Math o adroddiad"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "M~is"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
+msgid "~Journal"
 msgstr "~Cyhoeddiad"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
-msgid  "Numb~er"
+msgid "Numb~er"
 msgstr "~Rhif"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
+msgid "Se~ries"
 msgstr "C~yfres"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
-msgid  "Ann~otation"
+msgid "Ann~otation"
 msgstr "~Anodiad"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
+msgid "~Note"
 msgstr "~Nodyn"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
-msgid  "URL"
+#, fuzzy
+msgid "URL"
 msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
-msgid  "User-defined field ~1"
+msgid "User-defined field ~1"
 msgstr "Maes diffinio ~1"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
-msgid  "User-defined field ~2"
+msgid "User-defined field ~2"
 msgstr "Maes diffinio ~2"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
-msgid  "User-defined field ~3"
+msgid "User-defined field ~3"
 msgstr "Maes diffinio ~3"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
-msgid  "User-defined field ~4"
+msgid "User-defined field ~4"
 msgstr "Maes diffinio ~4"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
-msgid  "User-defined field ~5"
+msgid "User-defined field ~5"
 msgstr "Maes diffinio ~5"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
+#, fuzzy
+msgid "Table"
 msgstr "Tabl"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
-msgid  "Search Key"
+msgid "Search Key"
 msgstr "Allwedd Chwilio"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
+msgid "AutoFilter"
 msgstr "AwtoHidl"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
-msgid  "Standard Filter"
+msgid "Standard Filter"
 msgstr "Hidl Safonol"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
+msgid "Remove Filter"
 msgstr "Tynnu Hidl"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
-msgid  "Column Arrangement"
+msgid "Column Arrangement"
 msgstr "Trefniant Colofn"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
+msgid "Data Source"
 msgstr "Ffynhonnell Data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
+msgid "Data"
+msgstr "Data"
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+msgid "Data"
 msgstr "Data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "Ar hyn o bryd nid yw'r ffurflen mae'r rheolydd yn perthyn iddi wedi ymglymu (neu ddim yn llwyr) i'r data ffynhonnell.\n\nDewiswch ffynhonnell data a thabl\nSylwch fod y gosodiadau wnaed ar y dudalen hon yn dod i rym yn syth ar ôl gadael y dudalen."
+msgid "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+"Ar hyn o bryd nid yw'r ffurflen mae'r rheolydd yn perthyn iddi wedi ymglymu "
+"(neu ddim yn llwyr) i'r data ffynhonnell.\n"
+"\n"
+"Dewiswch ffynhonnell data a thabl\n"
+"Sylwch fod y gosodiadau wnaed ar y dudalen hon yn dod i rym yn syth ar ôl "
+"gadael y dudalen."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
+msgid "~Data source:"
 msgstr "~Ffynhonnell data:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
+msgid "~..."
 msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
+msgid "~Table / Query:"
 msgstr "~Tabl /  Ymholiad:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
-msgid  "Database Field"
+msgid "Database Field"
 msgstr "Maes Cronfa Ddata"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
+msgid "Do you want to save the value in a database field?"
 msgstr "Hoffech chi gadw'r gwerth mewn maes cronfa ddata?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
-msgid  "~Yes, I want to save it in the following database field:"
+msgid "~Yes, I want to save it in the following database field:"
 msgstr "~Ydw, rwyf am ei gadw yn y maes cronfa ddata canlynol::"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
-msgid  "~No, I only want to save the value in the form."
+msgid "~No, I only want to save the value in the form."
 msgstr "Na, dim ond y gwerth rwyf am ei gadw yn y ffurflen.."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
+msgid "Form"
 msgstr "Ffurflen"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Ffynhonnell data..."
+msgid "Data source"
+msgstr "Ffynhonnell data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
+msgid "Content type"
 msgstr "Math o gynnwys"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
+msgid "Content"
 msgstr "Cynnwys"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
+#, fuzzy
+msgid "Table"
 msgstr "Tabl"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
+#, fuzzy
+msgid "Query"
 msgstr "Ymholiad"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
-msgid  "SQL command"
-msgstr "Gorchymyn SQL"
+msgid "SQL command"
+msgstr "Gorchymyn SQ"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
+msgid "Group Element Wizard"
 msgstr "Dewin Elfen Grŵp"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
+msgid "Table Element Wizard"
 msgstr "Dewin Elfen Tabl"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
+msgid "List Box Wizard"
 msgstr "Dewin Blwch Rhestr"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
+msgid "Combo Box Wizard"
 msgstr "Dewin Blwch Cyfun"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
-msgid  "The table connection to the data source could not be established."
+msgid "The table connection to the data source could not be established."
 msgstr "Methu creu cysylltiad tabl â'r ffynhonnell data."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "Dewis Maes"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
+msgid "Table element"
 msgstr "Elfen tabl"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "Meysydd presennol"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
+msgid "Selected fields"
 msgstr "Meysydd dewis"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
+msgid " (Date)"
 msgstr "(Dyddiad)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
+msgid " (Time)"
 msgstr "(Amser)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "Data"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
+msgid "Which ~names do you want to give the option fields?"
 msgstr "Pa enw i'w roi i'r meysydd dewis?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
+msgid "~Option fields"
 msgstr "~Meysydd dewis"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
+msgid "Default Field Selection"
 msgstr "Dewis Maes Rhagosodedig"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
+msgid "Should one option field be selected as a default?"
 msgstr "A ddylid dewis un maes dewis fel y rhagosodedig?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
-msgid  "~Yes, the following:"
+msgid "~Yes, the following:"
 msgstr "Iawn, i'r canlynol:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
-msgid  "No, one particular field is not going to be selected."
+msgid "No, one particular field is not going to be selected."
 msgstr "Na, nid yw un maes penodol yn mynd i gael ei ddewis.."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
+msgid "Field Values"
 msgstr "Gwerthoedd Maes"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
-msgid  "When you select an option, the option group is given a specific value."
+msgid "When you select an option, the option group is given a specific value."
 msgstr "Pan fyddwch yn dewis, bydd y grŵp dewis yn derbyn gwerth penodol."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
-msgid  "Which ~value do you want to assign to each option?"
+msgid "Which ~value do you want to assign to each option?"
 msgstr "Pa werth hoffech ei roi i bob dewis?"
 
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid "~Option fields"
+msgstr "~Meysydd dewis"
+
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
+msgid "Create Option Group"
 msgstr "Creu Grŵp Dewis "
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
-msgid  "Which ~caption is to be given to your option group?"
+msgid "Which ~caption is to be given to your option group?"
 msgstr "Pa ~bennawd i'w osod yn eich grŵp dewis?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
-msgid  "These were all details needed to create the option group."
+msgid "These were all details needed to create the option group."
 msgstr "Dyna'r holl fanylion angenrheidiol i greu'r grŵp dewis."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr "Gallwch un ai gadw'r gwerth y grŵp dewis mewn maes cronfa ddata neu ei ddefnyddio ar gyfer gweithred ddiweddarach."
+msgid "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+"Gallwch un ai gadw'r gwerth y grŵp dewis mewn maes cronfa ddata neu ei "
+"ddefnyddio ar gyfer gweithred ddiweddarach."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
+msgid "Table Selection"
 msgstr "Dewis Tabl"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
+msgid "Control"
 msgstr "Rheolaeth"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "Ar yr ochr llaw dde, gwelwch yr holl dablau o ffynhonnell ddata'r ffurflen.\n\n\nDewiswch y tabl o le ddaw'r data i'w ddefnyddio fel sail i'r rhestr cynnwys:"
+msgid "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
+"Ar yr ochr llaw dde, gwelwch yr holl dablau o ffynhonnell ddata'r ffurflen.\n"
+"\n"
+"\n"
+"Dewiswch y tabl o le ddaw'r data i'w ddefnyddio fel sail i'r rhestr cynnwys:"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "Dewis Maes"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "Meysydd presennol"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
-msgid  "Display field"
+msgid "Display field"
 msgstr "Maes dangos maes"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
-msgid  "The contents of the field selected will be shown in the combo box list."
+msgid "The contents of the field selected will be shown in the combo box list."
 msgstr "Bydd cynnwys y maes hwn yn cael ei ddangos yn rhestr y blwch cyfun."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr "Bydd cynnwys y meysydd hyn yn cael eu dangos yn y blwch rhestr os yw'r maes cysylltiedig yr un peth."
+msgid "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr ""
+"Bydd cynnwys y meysydd hyn yn cael eu dangos yn y blwch rhestr os yw'r maes "
+"cysylltiedig yr un peth."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
+msgid "Field Link"
 msgstr "Cyswllt Maes"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr "Dyma lle rydych yn dewis meysydd gyda chynnwys sy'n cydweddu fel bo gwerth y maes dangos yn cael ei arddangos."
+msgid "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr ""
+"Dyma lle rydych yn dewis meysydd gyda chynnwys sy'n cydweddu fel bo gwerth y "
+"maes dangos yn cael ei arddangos."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
+msgid "Field from the ~Value Table"
 msgstr "Maes o'r ~Tabl Gwerth"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
+msgid "Field from the ~List Table"
 msgstr "Maes o'r Tabl ~Rhestr"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr "Medrwch un ai gadw gwerth y blwch cyfun mewn maes cronfa ddata neu ei ddefnyddio ar gyfer arddangos."
+msgid "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
+"Medrwch un ai gadw gwerth y blwch cyfun mewn maes cronfa ddata neu ei "
+"ddefnyddio ar gyfer arddangos."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
+msgid "<< Back"
 msgstr "<< Nôl"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
+msgid "Next >>"
 msgstr "Nesaf >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
+msgid "Accept"
 msgstr "Derbyn"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
+msgid "Finish"
 msgstr "Gorffen"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
-msgid  " - Software License Agreement"
+msgid " - Software License Agreement"
 msgstr " - Cytundeb Trwyddedu Meddalwedd"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
-msgid  "- User Data"
+msgid "- User Data"
 msgstr " - Data Defnyddiwr"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Croeso"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr "Croeso i %PRODUCTNAME %PRODUCTVERSION OEM\n\nI gychwyn %PRODUCTNAME %PRODUCTVERSION OEM, rhowch eich gwybodaeth bersonol yn y deialog sy'n dilyn manylion y drwydded. Mae gwybodaeth bwysig i'w gael yn ffeil Darllenfi sydd i'w cael yng nghyfeiriadur rhiant %PRODUCTNAME. Darllenwch y ffeiliau yma'n ofalus. Mae manylion pellach i'w cael ar safle Sun \n\nhttp://www.sun.com/staroffice.\n\nCefnogaeth a Hyfforddiant:\n\nCewch gefnogaeth gyda'r feddalwedd AM DDIM am 60 niwrnod o'r dyddiad prynu. I gymryd mantais o'r cynnig, ewch i'r safle gwe isod.\n\nhttp://www.sun.com/star/service\n\nRydym yn gobeithio y gwnewch chi fwynhau gweithio gyda %PRODUCTNAME."
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgstr ""
+"Croeso i %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"I gychwyn %PRODUCTNAME %PRODUCTVERSION OEM, rhowch eich gwybodaeth bersonol "
+"yn y deialog sy'n dilyn manylion y drwydded. Mae gwybodaeth bwysig i'w gael "
+"yn ffeil Darllenfi sydd i'w cael yng nghyfeiriadur rhiant %PRODUCTNAME. "
+"Darllenwch y ffeiliau yma'n ofalus. Mae manylion pellach i'w cael ar safle "
+"Sun \n"
+"\n"
+"http://www.sun.com/staroffice.\n"
+"\n"
+"Cefnogaeth a Hyfforddiant:\n"
+"\n"
+"Cewch gefnogaeth gyda'r feddalwedd AM DDIM am 60 niwrnod o'r dyddiad prynu. "
+"I gymryd mantais o'r cynnig, ewch i'r safle gwe isod.\n"
+"\n"
+"http://www.sun.com/star/service\n"
+"\n"
+"Rydym yn gobeithio y gwnewch chi fwynhau gweithio gyda %PRODUCTNAME."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "Cytundeb Trwyddedu"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "Ddilynwch y camau canlynol i barhau gyda'r gosod:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Darllen y Cytundeb Trwyddedu cyfan.  Defnyddiwch y bar sgrolio neu'r neu fotwm  '%PAGEDOWN'  yn y deialog i ddarllen y drwydded gyfan."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Darllen y Cytundeb Trwyddedu cyfan.  Defnyddiwch y bar sgrolio neu'r neu "
+"fotwm  '%PAGEDOWN'  yn y deialog i ddarllen y drwydded gyfan."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
+msgid "Page Down"
 msgstr "Page Down"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "Derbyn y Cytundeb Trwyddedu."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
-msgid  "I accept the terms of the Agreement."
+msgid "I accept the terms of the Agreement."
 msgstr "Rwy'n derbyn amodau'r Cytundeb.."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "~Derbyn"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "Gwrthod"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "Nod"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "Ffont"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "Effeithiau"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
-msgid  "Link fields"
+msgid "Link fields"
 msgstr "Meysydd cyswllt"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr "Mae modd defnyddio Is-ffurflen i ddangos data manwl am y cofnod cyfredol yn y brif ffurflen. I wneud hyn , gallwch bennu pa golofnau yn y ffurflen sy'n cydweddu â cholofnau yn y brif ffurflen"
+msgid "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
+"Mae modd defnyddio Is-ffurflen i ddangos data manwl am y cofnod cyfredol yn "
+"y brif ffurflen. I wneud hyn , gallwch bennu pa golofnau yn y ffurflen sy'n "
+"cydweddu â cholofnau yn y brif ffurflen"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-msgid  "Suggest"
+msgid "Suggest"
 msgstr "Cynnig"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
-msgid  "Sub Form"
+msgid "Sub Form"
 msgstr "Is Ffurflen"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
-msgid  "Master Form"
+msgid "Master Form"
 msgstr "Prif Ffurflen"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
-msgid  "The columns of '#' could not be retrieved."
+msgid "The columns of '#' could not be retrieved."
 msgstr "Methu estyn colofnau '#'."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-msgid  "Edit mask"
+msgid "Edit mask"
 msgstr "Golygu masg"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
+msgid "Literal mask"
 msgstr "Masg llythrennydd"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "Read-only"
+msgid "Read-only"
 msgstr "Darllen yn unig"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-msgid  "Enabled"
+msgid "Enabled"
 msgstr "Galluogwyd"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr "Gweladwy"
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-msgid  "AutoFill"
+msgid "AutoFill"
 msgstr "AwtoLanw"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-msgid  "Line count"
+msgid "Line count"
 msgstr "Cyfrif llinell"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-msgid  "Max. text length"
+msgid "Max. text length"
 msgstr "Hyd eithaf testun"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
-msgid  "Spin Button"
+msgid "Spin Button"
 msgstr "Botwm Troilli"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
-msgid  "Strict format"
+msgid "Strict format"
 msgstr "Fformat caeth"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "Ymwahanydd miloedd"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
-msgid  "Printable"
+msgid "Printable"
 msgstr "Argraffadwy"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 #, fuzzy
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
 #, fuzzy
-msgid  "Frame"
+msgid "Frame"
 msgstr "Ffrâm"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-msgid  "Help text"
+msgid "Help text"
 msgstr "Testun cymorth"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-msgid  "Help URL"
+msgid "Help URL"
 msgstr "URL cymorth"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-msgid  "Additional information"
+msgid "Additional information"
 msgstr "Gwybodaeth bellach"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
-msgid  "Password character"
+msgid "Password character"
 msgstr "Cyfrinair"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
-msgid  "Tristate"
+msgid "Tristate"
 msgstr "Trichyflwr"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
-msgid  "Empty string is NULL"
+msgid "Empty string is NULL"
 msgstr "Llinell wag yn ~NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
+msgid "Decimal accuracy"
 msgstr "Cywirdeb degol"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "Graffigau"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-msgid  "Default selection"
+msgid "Default selection"
 msgstr "Dewis Rhagosodedig"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-msgid  "Default button"
+msgid "Default button"
 msgstr "Botwm rhagosodedig"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "Maes Label"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-msgid  "Label"
+msgid "Label"
 msgstr "Label"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "Aliniad"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr "Aliniad Fertigol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "Brig"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr "Canol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "Gwaelod"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-msgid  "Graphics alignment"
+msgid "Graphics alignment"
 msgstr "Aliniad graffigau"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "Ffont"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "Lliw cefndir"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-msgid  "Border"
+msgid "Border"
 msgstr "Border"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-msgid  "Icon size"
+msgid "Icon size"
 msgstr "Eicon maint"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
-msgid  "Small"
+msgid "Small"
 msgstr "Bach"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
-msgid  "Large"
+msgid "Large"
 msgstr "Mawr"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-msgid  "Positioning"
+msgid "Positioning"
 msgstr "Lleoli"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-msgid  "Navigation"
+msgid "Navigation"
 msgstr "Dewis"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
-msgid  "Acting on a record"
+msgid "Acting on a record"
 msgstr "Gweithredu ar gofnod"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-msgid  "Filtering / Sorting"
+msgid "Filtering / Sorting"
 msgstr "Hidlo / Trefnu"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-msgid  "Horizontal scroll bar"
+msgid "Horizontal scroll bar"
 msgstr "Bar sgrolio llorweddol"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-msgid  "Vertical scroll bar"
+msgid "Vertical scroll bar"
 msgstr "Bar sgrolio fertigol"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-msgid  "Word break"
+msgid "Word break"
 msgstr "Toriad gair"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-msgid  "Multiline input"
+msgid "Multiline input"
 msgstr "Mewnbwn Aml-linell"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "Amladran"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "Enw"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
-msgid  "Tab order"
+msgid "Tab order"
 msgstr "Trefn Tabiau"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
-msgid  "Mouse wheel scroll"
+msgid "Mouse wheel scroll"
 msgstr "Olwyn llygoden yn sgrolio:"
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
+msgid "Filter"
 msgstr "Hidl"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-msgid  "Sort"
+msgid "Sort"
 msgstr "Trefnu"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-msgid  "Record marker"
+msgid "Record marker"
 msgstr "Marciwr cofnod"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
+msgid "Filter proposal"
 msgstr "Cynnig hidlo"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
-msgid  "Navigation bar"
+msgid "Navigation bar"
 msgstr "Bar Dewis"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
+msgid "Cycle"
 msgstr "Cylchdroi"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
-msgid  "Tabstop"
+msgid "Tabstop"
 msgstr "Tabstop "
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "Maes data"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-msgid  "Dropdown"
+msgid "Dropdown"
 msgstr "Cwymplen"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
+msgid "Bound field"
 msgstr "Maes rhwymedig"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-msgid  "List content"
+msgid "List content"
 msgstr "Rhestr cynnwys"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-msgid  "Type of list contents"
+msgid "Type of list contents"
 msgstr "Math o gynnwys rhestr"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-msgid  "Content"
+msgid "Content"
 msgstr "Cynnwys"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
-msgid  "Content type"
+msgid "Content type"
 msgstr "Math o gynnwys"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-msgid  "Allow additions"
+msgid "Allow additions"
 msgstr "Caniatáu ychwanegiadau"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-msgid  "Allow deletions"
+msgid "Allow deletions"
 msgstr "Caniatáu dileu"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-msgid  "Allow modifications"
+msgid "Allow modifications"
 msgstr "Caniatáu newidiadau"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-msgid  "Add data only"
+msgid "Add data only"
 msgstr "Ychwanegu data'n unig"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-msgid  "Data source"
+msgid "Data source"
 msgstr "Ffynhonnell data"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "Cysylltu prif feysydd"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "Cysylltu meysydd gwas"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
-msgid  "Value min."
+msgid "Value min."
 msgstr "Gwerth lleiaf"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
-msgid  "Value max."
+msgid "Value max."
 msgstr "Gwerth mwyaf"
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-msgid  "Incr./decrement value"
+msgid "Incr./decrement value"
 msgstr "Gwerth Cynyddol/Gostyngol"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-msgid  "Currency symbol"
+msgid "Currency symbol"
 msgstr "Symbol arian"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
-msgid  "Date min."
+msgid "Date min."
 msgstr "Dyddiad lleiaf:"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
-msgid  "Date max."
+msgid "Date max."
 msgstr "Dyddiad mwyaf"
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-msgid  "Date format"
+msgid "Date format"
 msgstr "Fformat dyddiad"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "Dewis"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
-msgid  "Time min."
+msgid "Time min."
 msgstr "Lleiafswm amser"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
-msgid  "Time max."
+msgid "Time max."
 msgstr "Uchafswm amser"
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-msgid  "Time format"
+msgid "Time format"
 msgstr "Fformat amser"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-msgid  "Prefix symbol"
+msgid "Prefix symbol"
 msgstr "Symbol rhagddodiad"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "Gwerth"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-msgid  "Formatting"
+msgid "Formatting"
 msgstr "Fformatio"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
-msgid  "Class ID"
+msgid "Class ID"
 msgstr "Enw dosbarth"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "Uchder"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "Lled"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-msgid  "List index"
+msgid "List index"
 msgstr "Mynegai rhestr"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
-msgid  "Row height"
+msgid "Row height"
 msgstr "Uchder Rhes"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-msgid  "Fill color"
+msgid "Fill color"
 msgstr "Lliw llanw"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-msgid  "Line color"
+msgid "Line color"
 msgstr "Lliw llinell"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
+msgid "Reference value (on)"
 msgstr "Gwerth cyfeirio (ymlaen)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
+msgid "Reference value (off)"
 msgstr "Gwerth cyfeirio (diffodd)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-msgid  "List entries"
+msgid "List entries"
 msgstr "Rhestru cofnodion"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-msgid  "Action"
+msgid "Action"
 msgstr "Gweithred"
 
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
+msgid "Type of submission"
 msgstr "Math o gyflwyniad"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
-msgid  "Default status"
+msgid "Default status"
 msgstr "Statws rhagosodedig"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
-msgid  "Submission encoding"
+msgid "Submission encoding"
 msgstr "Amgodio cyflwyniad"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-msgid  "Default value"
+msgid "Default value"
 msgstr "Gwerth rhagosodedig"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-msgid  "Default text"
+msgid "Default text"
 msgstr "Rhagosodedig testun"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-msgid  "Default date"
+msgid "Default date"
 msgstr "Rhagosodedig"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-msgid  "Default time"
+msgid "Default time"
 msgstr "Rhagosodedig"
 
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
+#, fuzzy
+msgid "Frame"
+msgstr "Ffrâm"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
-msgid  "Without frame"
+msgid "Without frame"
 msgstr "Heb ffrâm"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr "Golwg 3D"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "Flat"
+msgid "Flat"
 msgstr "Gwastad"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
-msgid  "Valuelist"
+msgid "Valuelist"
 msgstr "Rhestr gwerth"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "Tabl"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "Query"
+msgid "Query"
 msgstr "Ymholiad"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
-msgid  "Sql"
+msgid "Sql"
 msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
-msgid  "Sql [Native]"
+msgid "Sql [Native]"
 msgstr "Sql [Brodorol]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
-msgid  "Tablefields"
+msgid "Tablefields"
 msgstr "Meysydd tablau"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr "Chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-msgid  "Center"
+msgid "Center"
 msgstr "Canol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr "De"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "None"
+msgid "None"
 msgstr "Dim"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
-msgid  "Submit form"
+msgid "Submit form"
 msgstr "Cyflwyno ffurflen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
-msgid  "Reset form"
+msgid "Reset form"
 msgstr "Ailosod ffurflen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
-msgid  "Open document/web page"
+msgid "Open document/web page"
 msgstr "Dogfen/tudalen gwe agored"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
-msgid  "First record"
+msgid "First record"
 msgstr "Cofnod cyntaf"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
-msgid  "Previous record"
+msgid "Previous record"
 msgstr "Cofnod blaenorol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
-msgid  "Next record"
+msgid "Next record"
 msgstr "Cofnod nesaf"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
-msgid  "Last record"
+msgid "Last record"
 msgstr "Cofnod olaf"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
-msgid  "Save record"
+msgid "Save record"
 msgstr "Cadw cofnod"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
-msgid  "Undo data entry"
+msgid "Undo data entry"
 msgstr "Dadwneud cofnodi data"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
-msgid  "New record"
+msgid "New record"
 msgstr "Cofnod newydd"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
-msgid  "Delete record"
+msgid "Delete record"
 msgstr "Dileu cofnod"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
-msgid  "Refresh form"
+msgid "Refresh form"
 msgstr "Adnewyddu'r ffurflen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
-msgid  "Get"
+msgid "Get"
 msgstr "Estyn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
-msgid  "Post"
+msgid "Post"
 msgstr "Anfon"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
-msgid  "Multipart"
+msgid "Multipart"
 msgstr "Aml ddarn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
-#, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Testun"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
-msgid  "Standard (short)"
+msgid "Standard (short)"
 msgstr "Safonol (byr)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
-msgid  "Standard (short YY)"
+msgid "Standard (short YY)"
 msgstr "Safonol (byr YY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
-msgid  "Standard (short YYYY)"
+msgid "Standard (short YYYY)"
 msgstr "Safonol (byr YYY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
-msgid  "Standard (long)"
+msgid "Standard (long)"
 msgstr "Safonol (hir)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
-msgid  "DD/MM/YY"
+msgid "DD/MM/YY"
 msgstr "DD/MM/BB"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
-msgid  "MM/DD/YY"
+msgid "MM/DD/YY"
 msgstr "MM/DD/BB"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
-msgid  "YY/MM/DD"
+msgid "YY/MM/DD"
 msgstr "BB/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
-msgid  "DD/MM/YYYY"
+msgid "DD/MM/YYYY"
 msgstr "DD/MM/BBBB"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
-msgid  "MM/DD/YYYY"
+msgid "MM/DD/YYYY"
 msgstr "MM/DD/BBBB"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
-msgid  "YYYY/MM/DD"
+msgid "YYYY/MM/DD"
 msgstr "BBBB/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
-msgid  "YY-MM-DD"
+msgid "YY-MM-DD"
 msgstr "BB-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
-msgid  "YYYY-MM-DD"
+msgid "YYYY-MM-DD"
 msgstr "BBBB-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
-msgid  "13:45"
+msgid "13:45"
 msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
-msgid  "13:45:00"
+msgid "13:45:00"
 msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
-msgid  "01:45 PM"
+msgid "01:45 PM"
 msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
-msgid  "01:45:00 PM"
+msgid "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
-msgid  "Not Selected"
+msgid "Not Selected"
 msgstr "Deb ddewis"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
-msgid  "Selected"
+msgid "Selected"
 msgstr "Dewiswyd"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
-msgid  "Not Defined"
+msgid "Not Defined"
 msgstr "Heb ei ddiffinio"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
-msgid  "All records"
+msgid "All records"
 msgstr "Pob cofnod"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
-msgid  "Active record"
+msgid "Active record"
 msgstr "Cofnodion byw"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
-msgid  "Current page"
+msgid "Current page"
 msgstr "Tudalen gyfredol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
-#, fuzzy
-msgid  "No"
+msgid "No"
 msgstr "Na"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Iawn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
-msgid  "Parent Form"
+msgid "Parent Form"
 msgstr "Ffurflen Rhiant"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
+#, fuzzy
+msgid "None"
+msgstr "Dim"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
-msgid  "Single"
+msgid "Single"
 msgstr "Semgl"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
-msgid  "Multi"
+msgid "Multi"
 msgstr "Aml"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
-msgid  "Range"
+msgid "Range"
 msgstr "Ystod"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
-msgid  "Fill parameters"
+msgid "Fill parameters"
 msgstr "Paramedrau llanw"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
-msgid  "Execute action"
+msgid "Execute action"
 msgstr "Gweithredu'r weithred"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
+msgid "After updating"
 msgstr "Wedi diweddaru"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-msgid  "Before updating"
+msgid "Before updating"
 msgstr "Cyn diweddaru"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
+msgid "Before record action"
 msgstr "Cyn gweithred cofnodi"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
+msgid "After record action"
 msgstr "Wedi'r weithred gofnodi"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-msgid  "Confirm deletion"
+msgid "Confirm deletion"
 msgstr "Cadarnhau dileu"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
+msgid "Error occurred"
 msgstr "Digwyddodd gwall"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
-msgid  "When receiving focus"
+msgid "When receiving focus"
 msgstr "Wrth dderbyn canolbwynt"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
-msgid  "When losing focus"
+msgid "When losing focus"
 msgstr "Wrth golli canolbwynt"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
-msgid  "Item status changed"
+msgid "Item status changed"
 msgstr "Newidiwyd statws eitem"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
+msgid "Key pressed"
 msgstr "Bysellau pwyswyd"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-msgid  "Key released"
+msgid "Key released"
 msgstr "Bysellau ryddhawyd"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
-msgid  "When loading"
+msgid "When loading"
 msgstr "Wrth lwytho"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
-msgid  "Before reloading"
+msgid "Before reloading"
 msgstr "Cyn ail-lwytho"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
-msgid  "When reloading"
+msgid "When reloading"
 msgstr "Wrth ail-lwytho"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-msgid  "Mouse moved while key pressed"
+msgid "Mouse moved while key pressed"
 msgstr "Symud llygoden wrth bwyso bysell"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-msgid  "Mouse inside"
+msgid "Mouse inside"
 msgstr "Llygoden o fewn"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-msgid  "Mouse outside"
+msgid "Mouse outside"
 msgstr "Llygoden tu allan"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-msgid  "Mouse moved"
+msgid "Mouse moved"
 msgstr "Symud llygoden"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
-msgid  "Mouse button pressed"
+msgid "Mouse button pressed"
 msgstr "Pwyso botwm llygoden"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-msgid  "Mouse button released"
+msgid "Mouse button released"
 msgstr "Rhyddhau botwm llygoden"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
+msgid "Before record change"
 msgstr "Cyn newid cofnod"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-msgid  "After record change"
+msgid "After record change"
 msgstr "Wedi newid cofnod"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-msgid  "After resetting"
+msgid "After resetting"
 msgstr "Wedi ailosod"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-msgid  "Prior to reset"
+msgid "Prior to reset"
 msgstr "Cyn ailosod"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
-msgid  "Approve action"
+msgid "Approve action"
 msgstr "Cymeradwyo'r weithredu"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
+msgid "Before submitting"
 msgstr "Cyn cyflwyno"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
+msgid "Text modified"
 msgstr "Newid testun"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
-msgid  "Before unloading"
+msgid "Before unloading"
 msgstr "Cyn dadlwytho"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
-msgid  "When unloading"
+msgid "When unloading"
 msgstr "Wrth ddadlwytho"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-msgid  "Changed"
+msgid "Changed"
 msgstr "Wedi newid"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-msgid  "Events"
+msgid "Events"
 msgstr "Digwyddiadau"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
-msgid  "Analyze SQL command"
+msgid "Analyze SQL command"
 msgstr "Dadansoddi gorchymyn SQL"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "PositionX"
+msgid "PositionX"
 msgstr "SafleX"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "PositionY"
+msgid "PositionY"
 msgstr "SafleY"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Teitl"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-msgid  "Page (step)"
+msgid "Page (step)"
 msgstr "Tudalen(cam)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-msgid  "Progress value"
+msgid "Progress value"
 msgstr "Gwerth cynnydd"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
-msgid  "Progress value min."
+msgid "Progress value min."
 msgstr "Lleiafswm gwerth cynnydd"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
-msgid  "Progress value max."
+msgid "Progress value max."
 msgstr "Uchafswm gwerth cynnydd"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-msgid  "Scroll value"
+msgid "Scroll value"
 msgstr "Gwerth sgrolio"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
-msgid  "Scroll value max."
+msgid "Scroll value max."
 msgstr "Uchafswm gwerth sgrolio"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
-msgid  "Scroll value min."
+msgid "Scroll value min."
 msgstr "Lleiafswm gwerth cynnydd"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-msgid  "Default scroll value"
+msgid "Default scroll value"
 msgstr "Rhagosodedig gwerth"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-msgid  "Small change"
+msgid "Small change"
 msgstr "Newid bach"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-msgid  "Large change"
+msgid "Large change"
 msgstr "Newid mawr"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-msgid  "Delay"
+msgid "Delay"
 msgstr "Oediad"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
-msgid  "Repeat"
+msgid "Repeat"
 msgstr "Ailadrodd"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
-msgid  "Visible size"
+msgid "Visible size"
 msgstr "Maint gweladwy"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "Cyfeiriadedd"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Horizontal"
+msgid "Horizontal"
 msgstr "Llorweddol"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
 #, fuzzy
-msgid  "Vertical"
+msgid "Vertical"
 msgstr "Fertigol"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
+msgid "While adjusting"
 msgstr "Wrth newid"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Dyddiad"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "Sir/Talaith"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "Amser"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-msgid  "Scale"
+msgid "Scale"
 msgstr "Graddfa"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-msgid  "Button type"
+msgid "Button type"
 msgstr "Math o fotwm"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr "Rhagosodedig"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Iawn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Diddymu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "Cymorth"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "Methu creu cysylltiad â'r ffynhonnell data\"$name$\"."
 
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
+msgid "Text"
+msgstr "Testun"
+
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
-msgid  "Linked cell"
+msgid "Linked cell"
 msgstr "Cell cysylltiedig"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
+msgid "Source cell range"
 msgstr "Ystod cell ffynhonnell"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
-msgid  "Contents of the linked cell"
+msgid "Contents of the linked cell"
 msgstr "Cynnwys cell cysylltiedig"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
-msgid  "The selected entry"
+msgid "The selected entry"
 msgstr "Y cofnod dewiswyd"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
-msgid  "Position of the selected entry"
+msgid "Position of the selected entry"
 msgstr "Safle'r cofnod dewiswyd"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-msgid  "Scrollbars"
+msgid "Scrollbars"
 msgstr "Bariau sgrolio"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-msgid  "Single-line"
+msgid "Single-line"
 msgstr "Llinell sengl"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-msgid  "Multi-line"
+msgid "Multi-line"
 msgstr "Aml-linell"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
+msgid "Multi-line with formatting"
 msgstr "Aml-linell gyda fformatio"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-msgid  "Symbol color"
+msgid "Symbol color"
 msgstr "Lliw symbol"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-msgid  "Text lines end with"
+msgid "Text lines end with"
 msgstr "Testun llinellau diwedd gyda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-msgid  "LF (Unix)"
+msgid "LF (Unix)"
 msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-msgid  "CR+LF (Windows)"
+msgid "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
+#, fuzzy
+msgid "None"
+msgstr "Dim"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
+#, fuzzy
+msgid "Horizontal"
+msgstr "Llorweddol"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
+#, fuzzy
+msgid "Vertical"
+msgstr "Fertigol"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-msgid  "Both"
+msgid "Both"
 msgstr "Y ddau"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
+#, fuzzy
+msgid "Table"
+msgstr "Tabl"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
+#, fuzzy
+msgid "Query"
+msgstr "Ymholiad"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "Gorchymyn SQ"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
+msgid "Toggle"
 msgstr "Newid"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
-msgid  "Take Focus on Click"
+msgid "Take Focus on Click"
 msgstr "Canolbwyntio wrth Glicio"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-msgid  "Hide selection"
+msgid "Hide selection"
 msgstr "Cuddio'r dewis"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-msgid  "Style"
+msgid "Style"
 msgstr "Arddull"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
-msgid  "3D"
+msgid "3D"
 msgstr "3D"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
+#, fuzzy
+msgid "Flat"
+msgstr "Gwastad"
+
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-msgid  "Border color"
+msgid "Border color"
 msgstr "Lliw Border"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
-msgid  "Left top"
+msgid "Left top"
 msgstr "Brig chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
-msgid  "Left centered"
+msgid "Left centered"
 msgstr "Chwith canoli"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
-msgid  "Left bottom"
+msgid "Left bottom"
 msgstr "Gwaelod chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
-msgid  "Right top"
+msgid "Right top"
 msgstr "Brig de"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
-msgid  "Right centered"
+msgid "Right centered"
 msgstr "De canoli"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
-msgid  "Right bottom"
+msgid "Right bottom"
 msgstr "Gwaelod de"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
-msgid  "Above left"
+msgid "Above left"
 msgstr "Uwchlaw chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-msgid  "Above centered"
+msgid "Above centered"
 msgstr "Uwchlaw canoli"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
-msgid  "Above right"
+msgid "Above right"
 msgstr "Uwchlaw de"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
-msgid  "Below left"
+msgid "Below left"
 msgstr "Islaw chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-msgid  "Below centered"
+msgid "Below centered"
 msgstr "Islaw canoli"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
-msgid  "Below right"
+msgid "Below right"
 msgstr "Islaw de"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-msgid  "Centered"
+msgid "Centered"
 msgstr "Canoli"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
+msgid "Wrap text automatically"
 msgstr "Amlapio testun yn awtomatig"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-msgid  "Text type"
+msgid "Text type"
 msgstr "Math o Destun"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr "Cuddio"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr "Dangos"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
-msgid  "XML data model"
+msgid "XML data model"
 msgstr "Model data XML"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
+msgid "Binding expression"
 msgstr "Mynegiant rhwymo"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-msgid  "Required"
+msgid "Required"
 msgstr "Angen"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-msgid  "List entry source"
+msgid "List entry source"
 msgstr "Ffynhonnell cofnod rhestr"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
+msgid "Relevant"
 msgstr "Perthnasol"
 
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
+#, fuzzy
+msgid "Read-only"
+msgstr "Darllen yn unig"
+
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-msgid  "Constraint"
+msgid "Constraint"
 msgstr "Cyfyngiad"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-msgid  "Calculation"
+msgid "Calculation"
 msgstr "Cyfrifo"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
-msgid  "Data type"
+msgid "Data type"
 msgstr "Math o ddata"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
+msgid "Whitespaces"
 msgstr "Bylchau gwyn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-msgid  "Preserve"
+msgid "Preserve"
 msgstr "Diogelu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr "Newid"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
+msgid "Collapse"
 msgstr "Cwympo"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-msgid  "Pattern"
+msgid "Pattern"
 msgstr "Patrwm"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-msgid  "Length"
+msgid "Length"
 msgstr "Hyd"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-msgid  "Length (at least)"
+msgid "Length (at least)"
 msgstr "Hyd (o leiaf)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-msgid  "Length (at most)"
+msgid "Length (at most)"
 msgstr "Hyd (y mwyaf)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
+msgid "Digits (total)"
 msgstr "Digidau (cyfanswm)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
-msgid  "Digits (fraction)"
+msgid "Digits (fraction)"
 msgstr "Digidau (ffractiwn)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
-msgid  "Max. (inclusive)"
+msgid "Max. (inclusive)"
 msgstr "Mwyaf (cynwysiedig)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
-msgid  "Max. (exclusive)"
+msgid "Max. (exclusive)"
 msgstr "Mwyaf (cyfyngedig)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
-msgid  "Min. (inclusive)"
+msgid "Min. (inclusive)"
 msgstr "Lleiaf (cynwysedig)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
-msgid  "Min. (exclusive)"
+msgid "Min. (exclusive)"
 msgstr "Lleiaf (cyfyngedig)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
+msgid "Submission"
 msgstr "Cyflwyniad"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr "Rhwymiad"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
-msgid  "Selection type"
+msgid "Selection type"
 msgstr "Math o ddewis"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
-msgid  "Root displayed"
+msgid "Root displayed"
 msgstr "Dangos root"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
-msgid  "Show handles"
+msgid "Show handles"
 msgstr "Dangos dolenni"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
-msgid  "Show root handles"
+msgid "Show root handles"
 msgstr "Dangos dolenni root"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
-msgid  "Editable"
+msgid "Editable"
 msgstr "Golygadwy"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
-msgid  "Invokes stop node editing"
+msgid "Invokes stop node editing"
 msgstr "Ymgychwyn golygu nod atal"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
-msgid  "With title bar"
+msgid "With title bar"
 msgstr "Guyda bar teitl"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
-msgid  "No Label"
+msgid "No Label"
 msgstr "Dim Label"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
+msgid "No"
+msgstr "Na"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
-msgid  "Keep Ratio"
+msgid "Keep Ratio"
 msgstr "Cadw Cymhareb"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
-msgid  "Fit to Size"
+msgid "Fit to Size"
 msgstr "Ffitio i'r Maint"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
-msgid  "Input required"
+msgid "Input required"
 msgstr "Angen mewnbwn"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
-msgid  "Text direction"
+msgid "Text direction"
 msgstr "Cyfeiriad testun"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
-msgid  "Left-to-right"
+msgid "Left-to-right"
 msgstr "Chwith i'r dde"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
-msgid  "Right-to-left"
+msgid "Right-to-left"
 msgstr "De i'r chwith"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
-msgid  "Use superordinate object settings"
+msgid "Use superordinate object settings"
 msgstr "Defnyddio gosodiadau gwrthrych uwcholyn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
-msgid  "Never"
+msgid "Never"
 msgstr "Byth"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
-msgid  "When focused"
+msgid "When focused"
 msgstr "Wedi ffocysu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
-msgid  "Always"
+msgid "Always"
 msgstr "Bob tro"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
-msgid  "Anchor"
+msgid "Anchor"
 msgstr "Angor"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Paragraph"
+msgid "To Paragraph"
 msgstr "I Paragraff"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
-msgid  "As Character"
+msgid "As Character"
 msgstr "Fel Nod"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "To Page"
+msgid "To Page"
 msgstr "I Dudalen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
-msgid  "To Frame"
+msgid "To Frame"
 msgstr "I Ffrâm"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
-msgid  "To Character"
+msgid "To Character"
 msgstr "I Nod"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
+#, fuzzy
+msgid "To Page"
+msgstr "I Dudalen"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
-msgid  "To Cell"
+msgid "To Cell"
 msgstr "I Gell"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "Rheolaidd"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
+msgid "Bold Italic"
 msgstr "Italig Trwm"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "Italig"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "Trwm"
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-msgid  "(Default)"
+msgid "(Default)"
 msgstr "(Rhagosodiad)"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
-msgid  "New Data Type"
+msgid "New Data Type"
 msgstr "Math Newydd o Ddata"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
-msgid  "Type a name for the new data type:"
+msgid "Type a name for the new data type:"
 msgstr "Teipiwch enw ar gyfer y math newydd o ddata:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "Hoffech chi ddileu'r math o ddata '#type#' o'r model?\nSylwch y bydd hyn yn effeithio ar pob rheolydd sy ynghlwm â'r math yma o ddata."
+msgid "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+"Hoffech chi ddileu'r math o ddata '#type#' o'r model?\n"
+"Sylwch y bydd hyn yn effeithio ar pob rheolydd sy ynghlwm â'r math yma o "
+"ddata."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-msgid  "Button"
+msgid "Button"
 msgstr "Botwm"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-msgid  "Option Button"
+msgid "Option Button"
 msgstr "Botwm Dewis"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-msgid  "Check Box"
+msgid "Check Box"
 msgstr "Blwch Ticio"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "Maes Label"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-msgid  "Group Box"
+msgid "Group Box"
 msgstr "Blwch Grŵp"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-msgid  "Text Box"
+msgid "Text Box"
 msgstr "Blwch Testun"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
+msgid "Formatted Field"
 msgstr "Maes wedi ei Fformatio"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-msgid  "List Box"
+msgid "List Box"
 msgstr "Blwch Rhestr"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-msgid  "Combo Box"
+msgid "Combo Box"
 msgstr "Blwch Cyfun"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-msgid  "Image Button"
+msgid "Image Button"
 msgstr "Botwm Delwedd"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-msgid  "Hidden Control"
+msgid "Hidden Control"
 msgstr "Rheolaeth Gudd"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-msgid  "Control (unknown type)"
+msgid "Control (unknown type)"
 msgstr "Rheolydd (math anhysbys)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
+msgid "Image Control"
 msgstr "Rheolaeth Delwedd"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-msgid  "File Selection"
+msgid "File Selection"
 msgstr "Dewis Ffeil"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-msgid  "Date Field"
+msgid "Date Field"
 msgstr "Maes Dyddiad"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-msgid  "Time Field"
+msgid "Time Field"
 msgstr "Maes Amser"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-msgid  "Numeric Field"
+msgid "Numeric Field"
 msgstr "Maes Rhifol"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-msgid  "Currency Field"
+msgid "Currency Field"
 msgstr "Maes Arian"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-msgid  "Pattern Field"
+msgid "Pattern Field"
 msgstr "Maes Patrwm"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-msgid  "Table Control "
+msgid "Table Control "
 msgstr "Rheolaeth Tabl"
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr "Rhagosodedig"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "Cyffredinol"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "Data"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "Na"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Iawn"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "Cymorth"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
-msgid  "<Embedded-Image>"
+msgid "<Embedded-Image>"
 msgstr "<Embedded-Image>"
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr "Testun"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr "Dyma'r meysydd rheoli y mae modd eu defnyddio fel meysydd labeli ar gyfer $control_class$ $control_name$."
+msgid "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+"Dyma'r meysydd rheoli y mae modd eu defnyddio fel meysydd labeli ar gyfer "
+"$control_class$ $control_name$."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-msgid  "~No assignment"
+msgid "~No assignment"
 msgstr "~Dim aseiniad"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-msgid  "Label Field Selection"
+msgid "Label Field Selection"
 msgstr "Dewis Maes Labeli"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-msgid  "Forms"
+msgid "Forms"
 msgstr "Ffurflenni"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
-msgid  "Tab Order"
+msgid "Tab Order"
 msgstr "Trefn Tab"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-msgid  "Controls"
+msgid "Controls"
 msgstr "Rheolydd"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-msgid  "Move Up"
+msgid "Move Up"
 msgstr "Symud Fyny"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-msgid  "Move Down"
+msgid "Move Down"
 msgstr "Symud Lawr"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-msgid  "Automatic Sort"
+msgid "Automatic Sort"
 msgstr "Trefnu Awtomatig"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
-msgid  "Set"
+msgid "Set"
 msgstr "Gosod"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-msgid  "Linear ascending"
+msgid "Linear ascending"
 msgstr "Llinellol esgynnol"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-msgid  "Linear descending"
+msgid "Linear descending"
 msgstr "Llinellol disgynnol"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-msgid  "Original values"
+msgid "Original values"
 msgstr "Gwerthoedd gwreiddiol"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-msgid  "Exponential increasing"
+msgid "Exponential increasing"
 msgstr "Cynyddiad esbonyddol"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-msgid  "About\n Dev~ice"
-msgstr "Ynghylch\n ~Dyfais"
+msgid "About\n Dev~ice"
+msgstr ""
+"Ynghylch\n"
+" ~Dyfais"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
-msgid  "Create\nPreview"
-msgstr "Creu\nRhagolwg"
+msgid "Create\nPreview"
+msgstr ""
+"Creu\n"
+"Rhagolwg"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "Rhagolwg"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-msgid  "Scan area"
+msgid "Scan area"
 msgstr "Ardal sganio"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
-msgid  "Left:"
+msgid "Left:"
 msgstr "Chwith:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
-msgid  "Top:"
+msgid "Top:"
 msgstr "Brig:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
-msgid  "Right:"
+msgid "Right:"
 msgstr "De:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
-msgid  "Bottom:"
+msgid "Bottom:"
 msgstr "Gwaelod:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
-msgid  "Device used:"
+msgid "Device used:"
 msgstr "Dyfais defnyddiwyd:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
-msgid  "Resolution [~DPI]"
+msgid "Resolution [~DPI]"
 msgstr "Cydraniad [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
-msgid  "Show advanced options"
+msgid "Show advanced options"
 msgstr "Dangos dewisiadau uwch"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-msgid  "Options:"
+msgid "Options:"
 msgstr "Dewisiadau:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
-msgid  "Vector element"
+msgid "Vector element"
 msgstr "Elfen fector"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
-msgid  "Set"
+msgid "Set"
 msgstr "Gosod"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-msgid  "Scanner"
+msgid "Scanner"
 msgstr "Sganiwr"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "Dyfais: %s\nGwerthwr: %s\nModel: %s\nMath: %s"
+msgid "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+"Dyfais: %s\n"
+"Gwerthwr: %s\n"
+"Model: %s\n"
+"Math: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
-msgid  "An error occurred while scanning."
+msgid "An error occurred while scanning."
 msgstr "Digwyddodd gwall wrth sganio"
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "Nid yw'r ddyfais yn cynnig dewis rhagolwg. Felly, bydd sgan arferol yn cael ei ddefnyddio fel rhagolwg. Gall hyn gymryd tipyn o amser."
+msgid "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"Nid yw'r ddyfais yn cynnig dewis rhagolwg. Felly, bydd sgan arferol yn cael "
+"ei ddefnyddio fel rhagolwg. Gall hyn gymryd tipyn o amser."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgid "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "Methu cychwyn rhyngwyneb SANE. Nid yw sganio'n bosibl."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "Gwirio am ~Ddiweddariadau..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
-msgid  "Checking..."
+msgid "Checking..."
 msgstr "Gwirio..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
-msgid  "Checking for an update failed."
+msgid "Checking for an update failed."
 msgstr "Gwirio am ddiweddariad a fethwyd."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "Mae %PRODUCTNAME %PRODUCTVERSION yn gyfoes."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "Mae %PRODUCTNAME %NEXTVERSION ar gael.\n\nY fersiwn presennol yw %PRODUCTNAME %PRODUCTVERSION.\n\nNodyn: Cyn llwytho diweddariad i lawr, gwnewch yn siŵr fod gennych hawliau mynediad digonol i'w osod.\nEfallai bydd angen cyfrinair, cyfrinair y gweinyddwr neu root."
+msgid "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+"Mae %PRODUCTNAME %NEXTVERSION ar gael.\n"
+"\n"
+"Y fersiwn presennol yw %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Nodyn: Cyn llwytho diweddariad i lawr, gwnewch yn siŵr fod gennych hawliau "
+"mynediad digonol i'w osod.\n"
+"Efallai bydd angen cyfrinair, cyfrinair y gweinyddwr neu root."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
-msgid  "Check for Updates"
+msgid "Check for Updates"
 msgstr "Gwirio am Ddiweddariadau"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "Oedwyd llwytho %PRODUCTNAME %NEXTVERSION i lawr yn..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Ataliwyd llwytho %PRODUCTNAME %NEXTVERSION i lawr yn..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "Y lleoliad llwytho i lawr yw: %DOWNLOAD_PATH.\n\nO dan Offer – Dewisiadau... - %PRODUCTNAME – Diweddariad Ar-lein mae modd i chi newid y lleoliad llwytho i lawr."
+msgid "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+"Y lleoliad llwytho i lawr yw: %DOWNLOAD_PATH.\n"
+"\n"
+"O dan Offer – Dewisiadau... - %PRODUCTNAME – Diweddariad Ar-lein mae modd i "
+"chi newid y lleoliad llwytho i lawr."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
-msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "Mae %FILE_NAME wedi ei llwytho i lawr i %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "Nid yw llwytho awtomatig ar gael ar hyn o bryd.\n\nCliciwch Llwytho i Lawr...' i lwytho i lawr to download %PRODUCTNAME %NEXTVERSION gyda llaw o'r safle gwe."
+msgid "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+"Nid yw llwytho awtomatig ar gael ar hyn o bryd.\n"
+"\n"
+"Cliciwch Llwytho i Lawr...' i lwytho i lawr to download %PRODUCTNAME %"
+"NEXTVERSION gyda llaw o'r safle gwe."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Llwytho %PRODUCTNAME %NEXTVERSION  i lawr ..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
-msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgid "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "Cwbwlhawyd Llwytho i Lawr %PRODUCTNAME %NEXTVERSION. Parod i'w osod."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
-msgid  "Do you really want to cancel the download?"
+msgid "Do you really want to cancel the download?"
 msgstr "Ydych chi wir eisiau atal y llwytho i lawr?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
-msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr "Er mwyn gosod y diweddariad rhaid i %PRODUCTNAME %PRODUCTVERSION gael ei gau. Hoffech chi osod y diweddariad nawr?"
+msgid "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+"Er mwyn gosod y diweddariad rhaid i %PRODUCTNAME %PRODUCTVERSION gael ei "
+"gau. Hoffech chi osod y diweddariad nawr?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
-msgid  "Install ~now"
+msgid "Install ~now"
 msgstr "Gosod ~nawr"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
-msgid  "Install ~later"
+msgid "Install ~later"
 msgstr "Gosod yn ~hwyrach"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
-msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr "Methu rhedeg y rhaglen osod, rhedwch %FILE_NAME yn %DOWNLOAD_PATH gyda llaw."
+msgid "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+"Methu rhedeg y rhaglen osod, rhedwch %FILE_NAME yn %DOWNLOAD_PATH gyda llaw."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
-msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr "Mae ffeil gyda'r enw yna'n bodoli eisoes! Hoffech chi ysgrifennu dros y ffeil bresennol?"
+msgid "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+"Mae ffeil gyda'r enw yna'n bodoli eisoes! Hoffech chi ysgrifennu dros y "
+"ffeil bresennol?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
-msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr "Mae ffeil gyda'r enw '%FILENAME' yn bodoli'n barod yn '%DOWNLOAD_PATH'! Hoffech chi barhau gyda'r llwytho i lawr neu ddileu ac ail lwytho'r ffeil?"
+msgid "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+"Mae ffeil gyda'r enw '%FILENAME' yn bodoli'n barod yn '%DOWNLOAD_PATH'! "
+"Hoffech chi barhau gyda'r llwytho i lawr neu ddileu ac ail lwytho'r ffeil?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
-msgid  "Reload File"
+msgid "Reload File"
 msgstr "Ail-lwytho'r Ffeil"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
-msgid  "Continue"
+msgid "Continue"
 msgstr "Parhau"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
-msgid  "%PERCENT%"
+msgid "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
-msgid  "Status"
+msgid "Status"
 msgstr "Statws"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr "Disgrifiad"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Cau"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
-msgid  "~Download"
+msgid "~Download"
 msgstr "~Llwytho i lawr"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
-msgid  "~Install"
+msgid "~Install"
 msgstr "~Gosod"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
-msgid  "~Pause"
+msgid "~Pause"
 msgstr "~Oedi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
-msgid  "~Resume"
+msgid "~Resume"
 msgstr "~Ailgychwyn"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Diddymu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME update available"
+msgid "%PRODUCTNAME update available"
 msgstr "Mae diweddariad %PRODUCTNAME ar gael"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
-msgid  "Click here to start the download."
+msgid "Click here to start the download."
 msgstr "Cliciwch yma i gychwyn llwytho i lawr."
 
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME update available"
+msgstr "Mae diweddariad %PRODUCTNAME ar gael"
+
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "Click here for more information."
+msgid "Click here for more information."
 msgstr "Cliciwch yma am wybodaeth bellach."
 
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME update available"
+msgstr "Mae diweddariad %PRODUCTNAME ar gael"
+
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
-msgid  "Download of update begins."
+msgid "Download of update begins."
 msgstr "Mae'r llwytho i lawr ar fin cychwyn."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
-msgid  "Download of update in progress"
+msgid "Download of update in progress"
 msgstr "Wrthi'n llwytho i lawr."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
-msgid  "Download of update paused"
+msgid "Download of update paused"
 msgstr "Oedwyd y llwytho i lawr."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
-msgid  "Click here to resume."
+msgid "Click here to resume."
 msgstr "Cliciwch yma i ailgychwyn."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Download of update stalled"
+msgid "Download of update stalled"
 msgstr "Ataliwyd y llwytho i lawr"
 
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
+msgid "Click here for more information."
+msgstr "Cliciwch yma am wybodaeth bellach."
+
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
-msgid  "Download of update completed"
+msgid "Download of update completed"
 msgstr "Cwblhawyd y llwytho i lawr"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
-msgid  "Click here to start the installation."
+msgid "Click here to start the installation."
 msgstr "Cliciwch yma i gychwyn gosod."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Updates for extensions available"
+msgid "Updates for extensions available"
 msgstr "Diweddariad ar gyfer estyniadau ar gael."
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
+msgid "Click here for more information."
+msgstr "Cliciwch yma am wybodaeth bellach."

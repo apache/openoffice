@@ -1,296 +1,318 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
-msgid  "Presentation Minimizer"
+msgid "Presentation Minimizer"
 msgstr "Presentation Minimizer"
 
 #: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
-msgid  "Presentation Minimizer - Result"
+msgid "Presentation Minimizer - Result"
 msgstr "Presentation Minimizer - výsledek"
 
 #: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "Kroky"
 
 #: minimizer/minimizer.src#STR_HELP.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "Nápověda"
 
 #: minimizer/minimizer.src#STR_BACK.STRING.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< Zpět"
 
 #: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
-msgid  "~Next >"
+msgid "~Next >"
 msgstr "Další >"
 
 #: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "Dokončit"
 
 #: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Zrušit"
 
 #: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
-msgid  "Introduction"
+msgid "Introduction"
 msgstr "Úvod"
 
 #: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
-msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr "Presentation Minimizer je využíván pro zmenšení velikosti aktuální prezentace. Budou zkomprimovány obrázky a odstraněna data, která již nejsou potřeba.\n V posledním kroku průvodce můžete zvolit, zda se mají provedené změny použít pro aktuální prezentaci, nebo se má vytvořit nová optimalizovaná verze prezentace."
+msgid "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
+"Presentation Minimizer je využíván pro zmenšení velikosti aktuální "
+"prezentace. Budou zkomprimovány obrázky a odstraněna data, která již nejsou "
+"potřeba.\n"
+" V posledním kroku průvodce můžete zvolit, zda se mají provedené změny "
+"použít pro aktuální prezentaci, nebo se má vytvořit nová optimalizovaná "
+"verze prezentace."
 
 #: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
-msgid  "~Choose settings for Presentation Minimizer"
+msgid "~Choose settings for Presentation Minimizer"
 msgstr "Nastavení Presentation Minimizer"
 
 #: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "Smazat"
 
 #: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
-msgid  "Choose settings for optimizing pictures and graphics"
+msgid "Choose settings for optimizing pictures and graphics"
 msgstr "Nastavení optimalizace obrázků a grafiky"
 
 #: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "Grafika"
 
 #: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
-msgid  "~Lossless compression"
+msgid "~Lossless compression"
 msgstr "Bezztrátová komprese"
 
 #: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
-msgid  "~JPEG compression"
+msgid "~JPEG compression"
 msgstr "JPEG komprese"
 
 #: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
-msgid  "~Quality in %"
+msgid "~Quality in %"
 msgstr "Kvalita v %"
 
 #: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
-msgid  "~Delete cropped graphic areas"
+msgid "~Delete cropped graphic areas"
 msgstr "Smazat oříznuté oblasti obrázků"
 
 #: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
-msgid  "Reduce ~image resolution"
+msgid "Reduce ~image resolution"
 msgstr "Snížit rozlišení obrázku"
 
 #: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
-msgid  "<no change>"
+msgid "<no change>"
 msgstr "<beze změny>"
 
 #: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
-msgid  "90;90 DPI (screen resolution)"
+msgid "90;90 DPI (screen resolution)"
 msgstr "90;90 DPI (rozlišení monitoru)"
 
 #: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
-msgid  "150;150 DPI (projector resolution)"
+msgid "150;150 DPI (projector resolution)"
 msgstr "150;150 DPI (rozlišení projektoru)"
 
 #: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
-msgid  "300;300 DPI (print resolution)"
+msgid "300;300 DPI (print resolution)"
 msgstr "300;300 DPI (tiskové rozlišení)"
 
 #: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
-msgid  "~Break links to external graphics"
+msgid "~Break links to external graphics"
 msgstr "Rozpojit odkazy na externí obrázky"
 
 #: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
-msgid  "OLE Objects"
+msgid "OLE Objects"
 msgstr "OLE objekty"
 
 #: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
-msgid  "Choose settings for replacing OLE objects"
+msgid "Choose settings for replacing OLE objects"
 msgstr "Nastavení pro náhradu OLE objektů"
 
 #: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
-msgid  "Create static replacement graphics for OLE objects"
+msgid "Create static replacement graphics for OLE objects"
 msgstr "Vytvořit statickou grafickou náhradu OLE objektů"
 
 #: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
-msgid  "For ~all OLE objects"
+msgid "For ~all OLE objects"
 msgstr "Pro všechny OLE objekty"
 
 #: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
-msgid  "~For OLE objects not based on OpenDocument format"
+msgid "~For OLE objects not based on OpenDocument format"
 msgstr "Pro OLE objekty v jiném formátu než OpenDocument"
 
 #: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
-msgstr "Object Linking and Embedding (OLE) je technologie, která umožňuje vkládání a připojování dokumentů a jiných objektů.\nAktuální prezentace neobsahuje žádné OLE objekty."
+msgid "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
+"Object Linking and Embedding (OLE) je technologie, která umožňuje vkládání a "
+"připojování dokumentů a jiných objektů.\n"
+"Aktuální prezentace neobsahuje žádné OLE objekty."
 
 #: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
-msgstr "Object Linking and Embedding (OLE) je technologie, která umožňuje vkládání a připojování dokumentů a jiných objektů.\nAktuální prezentace neobsahuje žádné OLE objekty."
+msgid "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
+"Object Linking and Embedding (OLE) je technologie, která umožňuje vkládání a "
+"připojování dokumentů a jiných objektů.\n"
+"Aktuální prezentace neobsahuje žádné OLE objekty."
 
 #: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
-msgid  "Slides"
+msgid "Slides"
 msgstr "Snímky"
 
 #: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
-msgid  "Choose which slides to delete"
+msgid "Choose which slides to delete"
 msgstr "Zvolte snímky ke smazání"
 
 #: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
-msgid  "Master Pages"
+msgid "Master Pages"
 msgstr "Předlohy stránek"
 
 #: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
-msgid  "Delete unused ~master pages"
+msgid "Delete unused ~master pages"
 msgstr "Smazat nepoužité předlohy"
 
 #: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
-msgid  "~Clear notes"
+msgid "~Clear notes"
 msgstr "Smazat poznámky"
 
 #: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
-msgid  "Delete hidden ~slides"
+msgid "Delete hidden ~slides"
 msgstr "Smazat skryté snímky"
 
 #: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
-msgid  "Delete slides that are not used for the ~custom slide show"
+msgid "Delete slides that are not used for the ~custom slide show"
 msgstr "Smazat snímky, které nejsou použity ve vlastní prezentaci"
 
 #: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
-msgid  "Summary"
+msgid "Summary"
 msgstr "Souhrn"
 
 #: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
-msgid  "Choose where to apply the following changes"
+msgid "Choose where to apply the following changes"
 msgstr "Zvolte, kde aplikovat následující změny"
 
 #: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Průběh"
 
 #: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
-msgid  "Objects optimized"
+msgid "Objects optimized"
 msgstr "Optimalizováno objektů"
 
 #: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
-msgid  "~Apply changes to current presentation"
+msgid "~Apply changes to current presentation"
 msgstr "Aplikovat změny na aktuální prezentaci"
 
 #: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
-msgid  "~Open newly created presentation"
+msgid "~Open newly created presentation"
 msgstr "Otevřít nově vytvořenou prezentaci"
 
 #: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
-msgid  "~Save settings as"
+msgid "~Save settings as"
 msgstr "Uložit nastavení jako"
 
 #: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
-msgid  "~Duplicate presentation before applying changes"
+msgid "~Duplicate presentation before applying changes"
 msgstr "Před provedením změn prezentaci zkopírovat"
 
 #: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
-msgid  "Delete %SLIDES slides."
+msgid "Delete %SLIDES slides."
 msgstr "Smazat %SLIDES snímků."
 
 #: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
-msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "Optimalizovat %IMAGES obrázků na kvalitu %QUALITY% JPEG při %RESOLUTION DPI."
+msgid "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr ""
+"Optimalizovat %IMAGES obrázků na kvalitu %QUALITY% JPEG při %RESOLUTION DPI."
 
 #: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
-msgid  "Create replacement graphics for %OLE objects."
+msgid "Create replacement graphics for %OLE objects."
 msgstr "Vytvořit náhradní obrázky pro %OLE objektů."
 
 #: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
-msgid  "Current file size:"
+msgid "Current file size:"
 msgstr "Aktuální velikost souboru:"
 
 #: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
-msgid  "Estimated new file size:"
+msgid "Estimated new file size:"
 msgstr "Odhadovaná nová velikost souboru:"
 
 #: minimizer/minimizer.src#STR_MB.STRING.TEXT
-msgid  "%1 MB"
+msgid "%1 MB"
 msgstr "%1 MB"
 
 #: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
-msgid  "My Settings "
+msgid "My Settings "
 msgstr "Moje nastavení "
 
 #: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
-msgid  "default session"
+msgid "default session"
 msgstr "výchozí nastavení"
 
 #: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
-msgid  "The optimization will modify the current document. Do you want to continue?"
+msgid "The optimization will modify the current document. Do you want to continue?"
 msgstr "Optimalizace upraví aktuální dokument. Chcete pokračovat?"
 
 #: minimizer/minimizer.src#STR_YES.STRING.TEXT
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "Ano"
 
 #: minimizer/minimizer.src#STR_OK.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
-msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost souboru se změnila z %OLDFILESIZE MB na %NEWFILESIZE MB."
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
+"Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost "
+"souboru se změnila z %OLDFILESIZE MB na %NEWFILESIZE MB."
 
 #: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
-msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost souboru se změnila z %OLDFILESIZE MB na přibližně %NEWFILESIZE MB."
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
+"Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost "
+"souboru se změnila z %OLDFILESIZE MB na přibližně %NEWFILESIZE MB."
 
 #: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
-msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost souboru se změnila na %NEWFILESIZE MB."
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
+"Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost "
+"souboru se změnila na %NEWFILESIZE MB."
 
 #: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
-msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost souboru se změnila přibližně na %NEWFILESIZE MB."
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
+"Presentation Minimizer úspěšně aktualizoval prezentaci '%TITLE'. Velikost "
+"souboru se změnila přibližně na %NEWFILESIZE MB."
 
 #: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
-msgid  "Duplicating presentation..."
+msgid "Duplicating presentation..."
 msgstr "Kopírování prezentace..."
 
 #: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
-msgid  "Deleting slides..."
+msgid "Deleting slides..."
 msgstr "Mazání snímků..."
 
 #: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
-msgid  "Optimizing graphics..."
+msgid "Optimizing graphics..."
 msgstr "Optimalizace obrázků..."
 
 #: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
-msgid  "Creating replacement graphics for OLE objects..."
+msgid "Creating replacement graphics for OLE objects..."
 msgstr "Vytvoření náhrady OLE objektů..."
 
 #: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
-msgid  "."
+msgid "."
 msgstr "."

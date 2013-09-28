@@ -1,324 +1,381 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-09-14 13:22+0000\n"
+"Last-Translator: Jon Peli <oleaga_jp@hotmail.com>\n"
 "Language-Team: \n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: genLang\n"
-
+"X-POOTLE-MTIME: 1379164978.0\n"
 
 #: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
-msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr "Ezin izan da sinadura digitalen funtzionalitatea erabili, ez baita Mozilla erabiltzaile-profilik aurkitu. Egiaztatu Mozilla-ren instalazioa."
+msgid "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr ""
+"Ezin izan da sinadura digitalen funtzionalitatea erabili, ez baita Mozilla "
+"erabiltzaile-profilik aurkitu. Egiaztatu Mozilla-ren instalazioa."
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
-msgid  "Select Certificate"
+msgid "Select Certificate"
 msgstr "Hautatu ziurtagiria"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
-msgid  "Select the certificate you want to use for signing"
+msgid "Select the certificate you want to use for signing"
 msgstr "Hautatu sinatzeko erabili nahi duzun ziurtagiria"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid "Issued to\tIssued by\tExpiration date"
 msgstr "Jaulkitzea\tJaulkitzailea\tIraungitze-data"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Ikusi ziurtagiria..."
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
-msgid  "View Certificate"
+msgid "View Certificate"
 msgstr "Ikusi ziurtagiria"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
-msgid  "General"
+msgid "General"
 msgstr "Orokorra"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "Xehetasunak"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
-msgid  "Certification Path"
+msgid "Certification Path"
 msgstr "Ziurtagiriaren bide-izena"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
-msgid  " Certificate Information"
+msgid " Certificate Information"
 msgstr " Ziurtagiriari buruzko informazioa"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
-msgid  "This certificate is intended for the following purpose(s):"
+msgid "This certificate is intended for the following purpose(s):"
 msgstr "Ziurtagiri honen helburua da:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
-msgid  "Issued to:"
+msgid "Issued to:"
 msgstr "Jaulkitzea:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
-msgid  "Issued by:"
+msgid "Issued by:"
 msgstr "Jaulkitzailea:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
-msgid  "Valid from %SDATE% to %EDATE%"
+msgid "Valid from %SDATE% to %EDATE%"
 msgstr "Balio-epea: %SDATE%-%EDATE%"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
-msgid  "You have a private key that corresponds to this certificate."
+msgid "You have a private key that corresponds to this certificate."
 msgstr "Ziurtagiri honi dagokion gako pribatua duzu."
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
-#, fuzzy
-msgid  "The certificate could not be validated."
+msgid "The certificate could not be validated."
 msgstr "Ziurtagiria ezin izan da balidatu."
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
-msgid  "Field\tValue"
+msgid "Field\tValue"
 msgstr "Eremua\tBalioa"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
-msgid  "Version"
+msgid "Version"
 msgstr "Bertsioa"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
-msgid  "Serial Number"
+msgid "Serial Number"
 msgstr "Serie-zenbakia"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
-#, fuzzy
-msgid  "Signature Algorithm"
+msgid "Signature Algorithm"
 msgstr "Sinadura-algoritmoa"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
-msgid  "Issuer"
+msgid "Issuer"
 msgstr "Jaulkitzailea"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
-msgid  "Issuer Unique ID"
+msgid "Issuer Unique ID"
 msgstr "Jaulkitzailearen ID bakarra"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
-msgid  "Valid From"
+msgid "Valid From"
 msgstr "Balio-dataren hasiera"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
-msgid  "Valid to"
+msgid "Valid to"
 msgstr "Balio-dataren amaiera"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
-msgid  "Subject"
+msgid "Subject"
 msgstr "Gaia"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
-msgid  "Subject Unique ID"
+msgid "Subject Unique ID"
 msgstr "Gaiaren ID bakarra"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
-msgid  "Subject Algorithm"
+msgid "Subject Algorithm"
 msgstr "Gai-algoritmoa"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
-msgid  "Public Key"
+msgid "Public Key"
 msgstr "Gako publikoa"
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.STRING.TEXT
+msgid "Signature Algorithm"
+msgstr "Sinadura-algoritmoa"
+
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
-msgid  "Thumbprint SHA1"
+msgid "Thumbprint SHA1"
 msgstr "SHA1 hatz-marka"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
-msgid  "Thumbprint MD5"
+msgid "Thumbprint MD5"
 msgstr "MD5 hatz-marka"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
-msgid  "Certification path"
+msgid "Certification path"
 msgstr "Ziurtagiriaren bide-izena"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Ikusi ziurtagiria..."
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
-msgid  "Certification status"
+msgid "Certification status"
 msgstr "Ziurtagiriaren egoera"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
-msgid  "The certificate is OK."
+msgid "The certificate is OK."
 msgstr "Ziurtagiria ondo dago."
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.STRING.TEXT
+msgid "The certificate could not be validated."
+msgstr "Ziurtagiria ezin izan da balidatu."
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
-msgid  "Digital Signatures"
+msgid "Digital Signatures"
 msgstr "Sinadura digitalak"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
-msgid  "The following have signed the document content:"
+msgid "The following have signed the document content:"
 msgstr "Dokumentuaren edukia honako honek sinatu du:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
-msgid  "The following have signed the document macro:"
+msgid "The following have signed the document macro:"
 msgstr "Dokumentuaren makroa honako honek sinatu du:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
-msgid  "The following have signed this package:"
+msgid "The following have signed this package:"
 msgstr "Pakete hau honako honek sinatu du:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
-msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgid "\tSigned by\tDigital ID issued by\tDate"
 msgstr "\tSinatzailea\tID digitalaren jaulkitzailea\tData"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
-msgid  "Valid signature"
+msgid "Valid signature"
 msgstr "Baliozko sinadura"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
-msgid  "Certificate could not be validated"
+msgid "Certificate could not be validated"
 msgstr "Ziurtagiria ezin izan da balidatu"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
-#, fuzzy
-msgid  "The signatures in this document are invalid"
+msgid "The signatures in this document are invalid"
 msgstr "Dokumentu honetako sinadurak baliogabeak dira"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
-msgid  "The signatures in this document are valid"
+msgid "The signatures in this document are valid"
 msgstr "Dokumentu honetako sinadurak baliozkoak dira"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
-msgid  "Not all parts of the document are signed"
+msgid "Not all parts of the document are signed"
 msgstr "Dokumentuko zati guztiak ez daude sinatuta"
 
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FIXEDTEXT.TEXT
+msgid "The signatures in this document are invalid"
+msgstr "Dokumentu honetako sinadurak baliogabeak dira"
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Ikusi ziurtagiria..."
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
-msgid  "Sign Document..."
+msgid "Sign Document..."
 msgstr "Sinatu dokumentua..."
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
-msgid  "Remove"
+msgid "Remove"
 msgstr "Kendu"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Itxi"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
-msgstr "Dokumentu honek ODF 1.1-en (OpenOffice.org 2.x) formatu-bertsioko sinadurak ditu.  %PRODUCTNAME %PRODUCTVERSION-an dokumentuak sinatzeko ODF 1.2-ren formatua-bertsioa erabili behar da. Hori dela eta, ezin dira sinadurarik gehitu edo kendu dokumentu honetatik.\n\nGorde dokumentua ODF 1.2 formatuan eta gehitu nahi diren sinadura guztiak berriro."
+msgid "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"Dokumentu honek ODF 1.1-en (OpenOffice.org 2.x) formatu-bertsioko sinadurak "
+"ditu.  %PRODUCTNAME %PRODUCTVERSION-an dokumentuak sinatzeko ODF 1.2-ren "
+"formatua-bertsioa erabili behar da. Hori dela eta, ezin dira sinadurarik "
+"gehitu edo kendu dokumentu honetatik.\n"
+"\n"
+"Gorde dokumentua ODF 1.2 formatuan eta gehitu nahi diren sinadura guztiak "
+"berriro."
 
 #: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "Makro baten sinadura gehitzean edo kentzean dokumentuko sinadura guztiak kenduko dira.\nJarraitzea nahi duzu?"
+msgid "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr ""
+"Makro baten sinadura gehitzean edo kentzean dokumentuko sinadura guztiak "
+"kenduko dira.\n"
+"Jarraitzea nahi duzu?"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
-msgid  "Macro Security"
+msgid "Macro Security"
 msgstr "Makro-segurtasuna"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
-msgid  "Security Level"
+msgid "Security Level"
 msgstr "Segurtasun-maila"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
-msgid  "Trusted Sources"
+msgid "Trusted Sources"
 msgstr "Iturburu fidagarriak"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
-msgid  "Reset"
+msgid "Reset"
 msgstr "Leheneratu"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "~Oso altua.\nFitxategi-kokaleku fidagarrietako makroak bakarrik exekutatuko dira. Beste makro guztiak desgaitu egingo dira, sinatuta dauden edo ez kontuan hartu gabe."
+msgid "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
+"~Oso altua.\n"
+"Fitxategi-kokaleku fidagarrietako makroak bakarrik exekutatuko dira. Beste "
+"makro guztiak desgaitu egingo dira, sinatuta dauden edo ez kontuan hartu "
+"gabe."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "A~ltua.\nIturburu fidagarrietako sinatutako makroak bakarrik exekutatuko dira. Sinatu gabeko makroak desgaitu egingo dira."
+msgid "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
+"A~ltua.\n"
+"Iturburu fidagarrietako sinatutako makroak bakarrik exekutatuko dira. Sinatu "
+"gabeko makroak desgaitu egingo dira."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~Ertaina.\nBerrespena eskatuko da iturburu ez-fidagarrietako makroak exekutatu aurretik."
+msgid "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
+"~Ertaina.\n"
+"Berrespena eskatuko da iturburu ez-fidagarrietako makroak exekutatu "
+"aurretik."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~Baxua (ez da gomendatzen).\nMakro guztiak berrespenik gabe exekutatuko dira. Irekiko diren dokumentu guztiak seguruak direla ziur bazaude bakarrik erabili ezarpen hori."
+msgid "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
+"~Baxua (ez da gomendatzen).\n"
+"Makro guztiak berrespenik gabe exekutatuko dira. Irekiko diren dokumentu "
+"guztiak seguruak direla ziur bazaude bakarrik erabili ezarpen hori."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
-msgid  "Trusted certificates"
+msgid "Trusted certificates"
 msgstr "Ziurtagiri fidagarriak"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid "Issued to\tIssued by\tExpiration date"
 msgstr "Jaulkitzea\tJaulkitzailea\tIraungitze-data"
 
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
+
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
-msgid  "View..."
+msgid "View..."
 msgstr "Ikusi..."
 
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
+msgid "Remove"
+msgstr "Kendu"
+
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
-msgid  "Trusted file locations"
+msgid "Trusted file locations"
 msgstr "Fitxategi-kokaleku fidagarriak"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
-msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr "Dokumentu-makroak beti exekutatuko dira honako kokalekuetako batetik irekitzen badira."
+msgid "Document macros are always executed if they have been opened from one of the following locations."
+msgstr ""
+"Dokumentu-makroak beti exekutatuko dira honako kokalekuetako batetik "
+"irekitzen badira."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid "Remove"
+msgstr "Kendu"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
-msgid  "This setting is protected by the Administrator"
+msgid "This setting is protected by the Administrator"
 msgstr "Ezarpen hau administratzaileak babestuta dago"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
-msgid  "Security Warning"
+msgid "Security Warning"
 msgstr "Segurtasun-abisua"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
-msgid  "The document contains document macros signed by:"
+msgid "The document contains document macros signed by:"
 msgstr "Dokumentuak honek sinatutako dokumentu-makroak ditu:"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
-msgid  "The document contains document macros."
+msgid "The document contains document macros."
 msgstr "Dokumentuak dokumentu-makroak ditu."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
-msgid  "View Signatures..."
+msgid "View Signatures..."
 msgstr "Ikusi sinadurak..."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr "Makroek birusak eduki ditzakete. Dokumentuetan makroak desgaitzea beti da segurua. Makroak desgaitzen badituzu, dokumentu-makroek eskaintzen dituzten funtzioak gal ditzakezu."
+msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+"Makroek birusak eduki ditzakete. Dokumentuetan makroak desgaitzea beti da "
+"segurua. Makroak desgaitzen badituzu, dokumentu-makroek eskaintzen dituzten "
+"funtzioak gal ditzakezu."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
-msgid  "Always trust macros from this source"
+msgid "Always trust macros from this source"
 msgstr "Iturburu honetako makroez beti fidatu"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
-msgid  "Enable Macros"
+msgid "Enable Macros"
 msgstr "Gaitu makroak"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
-msgid  "Disable Macros"
+msgid "Disable Macros"
 msgstr "Desgaitu makroak"

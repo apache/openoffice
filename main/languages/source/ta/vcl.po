@@ -1,724 +1,756 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "சரி"
 
 #: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "இரத்து செய்க"
 
 #: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "~ஆம்"
 
 #: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
-msgid  "~No"
+msgid "~No"
 msgstr "~இல்லை"
 
 #: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
-msgid  "~Retry"
+msgid "~Retry"
 msgstr "~மறுமுறை முயற்சி செய்க"
 
 #: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~உதவி"
 
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
-msgid  "~More"
+msgid "~More"
+msgstr "இன்னும்"
+
+#: src/btntext.src#SV_BUTTONTEXT_LESS.STRING.TEXT
+msgid "~More"
 msgstr "இன்னும்"
 
 #: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "~ஒதுக்கு"
 
 #: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
-msgid  "~Abort"
+msgid "~Abort"
 msgstr "~நிறுத்திவிடு"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "மூடிடுக"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
-msgid  "Close Document"
+msgid "Close Document"
 msgstr "ஆவணத்தை மூடுக"
 
 #: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
-msgid  "Minimize"
+msgid "Minimize"
 msgstr "சுருக்குக"
 
 #: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
-msgid  "Maximize"
+msgid "Maximize"
 msgstr "பெரிதாக்குக"
 
 #: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
-msgid  "Restore"
+msgid "Restore"
 msgstr "பழைய நிலைக்கு கொணர்க"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
-msgid  "Drop down"
+msgid "Drop down"
 msgstr "கீழ் இழுக்க"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
-msgid  "Roll up"
+msgid "Roll up"
 msgstr "மேல் தள்ளுக"
 
+#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
-msgid  "Always visible"
+msgid "Always visible"
 msgstr "எப்போதும் தெரியும்"
 
 #: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr "காட்சி"
 
 #: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr "மறைக்க"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
-msgid  "Floating"
+msgid "Floating"
 msgstr "மிதக்கும்"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
-msgid  "Stick"
+msgid "Stick"
 msgstr "ஒட்டு"
 
+#: src/helptext.src#SV_SHORTCUT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
-msgid  "Context Help"
+msgid "Context Help"
 msgstr "சூழல் உதவி"
 
 #: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
-msgid  "Extended Tips"
+msgid "Extended Tips"
 msgstr "விரிவான குறிப்புக்கள்"
 
 #: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
-msgid  "Dock/Undock Windows"
+msgid "Dock/Undock Windows"
 msgstr "பூட்டு/சாளரங்களை பூட்டாதே"
 
 #: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
-msgid  "To Next Toolbar/Window"
+msgid "To Next Toolbar/Window"
 msgstr "அடுத்த கருவிப்பட்டிக்கு/சாளரத்துக்கு"
 
 #: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
-msgid  "To Previous Toolbar/Window"
+msgid "To Previous Toolbar/Window"
 msgstr "முந்தைய கருவிப்பட்டிக்கு/சாளரத்துக்கு"
 
 #: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
-msgid  "To Document"
+msgid "To Document"
 msgstr "ஆவணத்துடன்"
 
 #: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
-msgid  "To Menu Bar"
+msgid "To Menu Bar"
 msgstr "பட்டியல் பட்டையுடன்"
 
 #: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
-msgid  "Split window separator"
+msgid "Split window separator"
 msgstr "சாளர பிரிப்பியைப் பிரி"
 
 #: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
-msgid  "<No selection possible>"
+msgid "<No selection possible>"
 msgstr "<No selection possible>"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
-msgid  "~Undo"
+msgid "~Undo"
 msgstr "~செயல்நீக்கு"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "வெ~ட்டு"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "~நகலெடு"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "~ஒட்டு"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~அழி"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
-msgid  "Select ~All"
+msgid "Select ~All"
 msgstr "அ~னைத்தையும் தேர்ந்தெடு"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
-msgid  "~Special Character..."
+msgid "~Special Character..."
 msgstr "~சிறப்பெழுத்து..."
 
 #: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
-msgid  "Services"
+msgid "Services"
 msgstr "செவைகள்"
 
 #: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
-msgid  "Hide %PRODUCTNAME"
+msgid "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME மறை"
 
 #: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
-msgid  "Hide Others"
+msgid "Hide Others"
 msgstr "மற்றதை மறை"
 
 #: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
-msgid  "Show All"
+msgid "Show All"
 msgstr "அனைத்தையும் காட்டு"
 
 #: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
-msgid  "Quit %PRODUCTNAME"
+msgid "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME பற்றி"
 
 #: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "அச்சடி"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
-msgid  "~Print"
+msgid "~Print"
 msgstr "அச்சடி"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
-msgid  "/ %n"
+msgid "/ %n"
 msgstr "/ %n"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
-msgid  "No pages"
+msgid "No pages"
 msgstr "பக்கங்கள் இல்லை"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
-msgid  "Print to File..."
+msgid "Print to File..."
 msgstr "கோப்பிற்கு அச்சடி..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "உள்ளிருப்பு அச்சடிப்பான்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
-msgid  "Print preview"
+msgid "Print preview"
 msgstr "அச்சுப்பொறி முன்காட்சி"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
-msgid  "Page Layout"
+msgid "Page Layout"
 msgstr "பக்க வடிவமைப்பு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
-msgid  "Layout"
+msgid "Layout"
 msgstr "வடிவமைப்பு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
-msgid  "Pa~ges per sheet"
+msgid "Pa~ges per sheet"
 msgstr "ஒரு தாளில் உள்ள பக்கங்கள்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
-msgid  "1"
+msgid "1"
 msgstr "1"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
-msgid  "2"
+msgid "2"
 msgstr "2"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
-msgid  "4"
+msgid "4"
 msgstr "4"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
-msgid  "6"
+msgid "6"
 msgstr "6"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
-msgid  "9"
+msgid "9"
 msgstr "9"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
-msgid  "16"
+msgid "16"
 msgstr "16"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
-msgid  "Custom"
+msgid "Custom"
 msgstr "வழக்கம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
-msgid  "P~ages"
+msgid "P~ages"
 msgstr "பக்கங்கள்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
-msgid  "b~y"
+msgid "b~y"
 msgstr "அதனால்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "தூரம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
-msgid  "between pages"
+msgid "between pages"
 msgstr "பக்கங்களுக்கு இடையே"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Margin"
+msgid "~Margin"
 msgstr "ஓரம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
-msgid  "to sheet border"
+msgid "to sheet border"
 msgstr "தாளிம் ஓரத்திற்கு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "திசையமைப்பு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "தானாக"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "உருவப்படம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "இயற்கைக்காட்சி "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
-msgid  "Order"
+msgid "Order"
 msgstr "உத்தரவு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
-msgid  "left to right, then down"
+msgid "left to right, then down"
 msgstr "இடமிருந்து வலம் பின் கீழே"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
-msgid  "top to bottom, then right"
+msgid "top to bottom, then right"
 msgstr "மேலிருந்து கீழ் பின் வலது பக்கம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
-msgid  "top to bottom, then left"
+msgid "top to bottom, then left"
 msgstr "மேலிருந்து கீழ் பின் இடது பக்கம்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
-msgid  "right to left, then down"
+msgid "right to left, then down"
 msgstr "வலமிருந்து இடம் பின் கீழே"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
-msgid  "Draw a border around each page"
+msgid "Draw a border around each page"
 msgstr "ஒவ்வொரு பக்கத்திரும் கரை வரை"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "பொதுவாக"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
-msgid  "Prin~ter"
+msgid "Prin~ter"
 msgstr "அச்சுப் பொறி"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "விளக்கங்கள்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
-msgid  "Status:"
+msgid "Status:"
 msgstr "நிலை:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "இடம் :"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "கருத்து:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "குணங்கள்..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
-msgid  "Range and copies"
+msgid "Range and copies"
 msgstr "வீச்சு மற்றும் நகல்கள்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
-msgid  "Number of copies"
+msgid "Number of copies"
 msgstr "நகல்கள் எண்ணிக்கை"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
-msgid  "Collate"
+msgid "Collate"
 msgstr "அடுக்கு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
-msgid  "Print in ~reverse page order"
+msgid "Print in ~reverse page order"
 msgstr "தலைகீழாக பக்கங்களை அச்சிடு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
-msgid  "Options"
+msgid "Options"
+msgstr "தேர்வுகள்"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FIXEDLINE.TEXT
+msgid "Options"
 msgstr "தேர்வுகள்"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "கோப்பிற்கு அச்சிடு"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
-msgid  "~Create single print jobs for collated output"
+msgid "~Create single print jobs for collated output"
 msgstr "அடுக்கிய வெளியீட்டிற்கு ஒரு அச்சடிப்பு வேலையை உருவாக்கு"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
-msgid  "Printing"
+msgid "Printing"
 msgstr "அச்சடிக்கப்படுதிறது"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
-msgid  "Page %p of %n"
+msgid "Page %p of %n"
 msgstr "பக்கம் %p of %n"
 
 #: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "உள்ளிருப்பு அச்சடிப்பான் இல்லை\nஒரு அச்சுப் பொறியைத் தேர்ந்தெடுத்து மீண்டும் முயற்சிக்கவும்"
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"உள்ளிருப்பு அச்சடிப்பான் இல்லை\n"
+"ஒரு அச்சுப் பொறியைத் தேர்ந்தெடுத்து மீண்டும் முயற்சிக்கவும்"
 
 #: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
-msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr "அச்சடிக்க வேண்டிய பக்கங்கள் இல்ைல. அச்சடிக்கப் பொருத்தமான வீச்சிற்கு உங்கள் ஆவணத்தைச் சரிபார்க்கவும்"
+msgid "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr ""
+"அச்சடிக்க வேண்டிய பக்கங்கள் இல்ைல. அச்சடிக்கப் பொருத்தமான வீச்சிற்கு உங்கள் "
+"ஆவணத்தைச் சரிபார்க்கவும்"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
-msgid  "Preview"
+msgid "Preview"
 msgstr "முன்காட்சி"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
-msgid  "Page number"
+msgid "Page number"
 msgstr "பக்க எண்"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
-msgid  "Number of pages"
+msgid "Number of pages"
 msgstr "பக்கங்களின் எண்ணிக்கை"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
-msgid  "More"
+msgid "More"
 msgstr "இன்னும்"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
-msgid  "Print selection only"
+msgid "Print selection only"
 msgstr "தேர்ந்தெடுத்ததை மட்டும் அச்சிடு"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
-msgid  "A0"
+msgid "A0"
 msgstr "A0"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
-msgid  "A1"
+msgid "A1"
 msgstr "A1"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
-msgid  "A2"
+msgid "A2"
 msgstr "A2"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
-msgid  "A3"
+msgid "A3"
 msgstr "A3"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
-msgid  "A4"
+msgid "A4"
 msgstr "A4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
-msgid  "A5"
+msgid "A5"
 msgstr "A5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
-msgid  "B4 (ISO)"
+msgid "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
-msgid  "B5 (ISO)"
+msgid "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
-msgid  "Letter"
+msgid "Letter"
 msgstr "கடிதம்"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
-msgid  "Legal"
+msgid "Legal"
 msgstr "சட்டஞ் சார்ந்த"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
-msgid  "Tabloid"
+msgid "Tabloid"
 msgstr "சுறுக்கம்"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
-msgid  "User Defined"
+msgid "User Defined"
 msgstr "உபயோகிப்போர் வரையறுத்தது"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
-msgid  "B6 (ISO)"
+msgid "B6 (ISO)"
 msgstr "B6 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
-msgid  "C4 Envelope"
+msgid "C4 Envelope"
 msgstr "C4 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
-msgid  "C5 Envelope"
+msgid "C5 Envelope"
 msgstr "C5 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
-msgid  "C6 Envelope"
+msgid "C6 Envelope"
 msgstr "C6 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
-msgid  "C6/5 Envelope"
+msgid "C6/5 Envelope"
 msgstr "C6/5 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
-msgid  "DL Envelope"
+msgid "DL Envelope"
 msgstr "DL உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
-msgid  "Dia Slide"
+msgid "Dia Slide"
 msgstr "விட்டம் காட்சிவில்லை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
-msgid  "Screen"
+msgid "Screen"
 msgstr "திரை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
-msgid  "C"
+msgid "C"
 msgstr "C"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
-msgid  "D"
+msgid "D"
 msgstr "D"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
-msgid  "E"
+msgid "E"
 msgstr "E"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
-msgid  "Executive"
+msgid "Executive"
 msgstr "செயற்குழு"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
-msgid  "Long Bond"
+msgid "Long Bond"
 msgstr "பெரிய பத்திரம்"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
-msgid  "#8 (Monarch) Envelope"
+msgid "#8 (Monarch) Envelope"
 msgstr "#8 (Monarch) உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
-msgid  "#6 3/4 (Personal) Envelope"
+msgid "#6 3/4 (Personal) Envelope"
 msgstr "#6 3/4 (தனிப்பட்ட) உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
-msgid  "#9 Envelope"
+msgid "#9 Envelope"
 msgstr "#9 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
-msgid  "#10 Envelope"
+msgid "#10 Envelope"
 msgstr "#10 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
-msgid  "#11 Envelope"
+msgid "#11 Envelope"
 msgstr "#11 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
-msgid  "#12 Envelope"
+msgid "#12 Envelope"
 msgstr "#12 உறை"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
-msgid  "16 Kai"
+msgid "16 Kai"
 msgstr "16 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
-msgid  "32 Kai"
+msgid "32 Kai"
 msgstr "32 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
-msgid  "Big 32 Kai"
+msgid "Big 32 Kai"
 msgstr "Big 32 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
-msgid  "B4 (JIS)"
+msgid "B4 (JIS)"
 msgstr "B4 (JIS)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
-msgid  "B5 (JIS)"
+msgid "B5 (JIS)"
 msgstr "B5 (JIS)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
-msgid  "B6 (JIS)"
+msgid "B6 (JIS)"
 msgstr "B6 (JIS)"
 
 #: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "(%s) என்ற பகுதியை ஏற்ற இயலவில்லை.\nபழுதுபார்க்கும் தேர்வுடன் நிறுவலைத் தொடங்கு."
+msgid "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr ""
+"(%s) என்ற பகுதியை ஏற்ற இயலவில்லை.\n"
+"பழுதுபார்க்கும் தேர்வுடன் நிறுவலைத் தொடங்கு."
 
 #: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
-msgid  "Do not show this information again."
+msgid "Do not show this information again."
 msgstr "இத்தகவலை மீண்டும் காட்டாதே."
 
 #: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
-msgid  "Do not show this question again."
+msgid "Do not show this question again."
 msgstr "இக்கேள்வியை மீண்டும் காட்டாதே."
 
 #: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
-msgid  "Do not show warning again."
+msgid "Do not show warning again."
 msgstr "எச்சரிக்கையை மீண்டும் காட்டாதே"
 
 #: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
-msgid  "Wrong Version"
+msgid "Wrong Version"
 msgstr "தவறான பதிப்பு"
 
 #: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr "%PRODUCTNAME %PRODUCTVERSIONக்கு ஜாவா அனுமதி பாதை 1.0.3 அல்லது அடுத்த பதிப்பு தேவை."
+msgid "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSIONக்கு ஜாவா அனுமதி பாதை 1.0.3 அல்லது அடுத்த "
+"பதிப்பு தேவை."
 
 #: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
-msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr "%PRODUCTNAME %PRODUCTVERSION ஐ அணுகல் ஆதரவில்லாமல் தொடங்க  '%OK' பொத்தானை சொடுக்கு, அல்லது '%CANCEL'ஐச் சொடுக்கி %PRODUCTNAME %PRODUCTVERSION லிருந்து வெளியேறு."
+msgid "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION ஐ அணுகல் ஆதரவில்லாமல் தொடங்க  '%OK' பொத்தானை "
+"சொடுக்கு, அல்லது '%CANCEL'ஐச் சொடுக்கி %PRODUCTNAME %PRODUCTVERSION லிருந்து "
+"வெளியேறு."
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
-msgid  "No Java Access Bridge"
+msgid "No Java Access Bridge"
 msgstr "ஜாவா அனுமதி பாதை இல்லை."
 
 #: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
-msgid  "Faulty Java Installation"
+msgid "Faulty Java Installation"
 msgstr "தவறான ஜாவா நிறுவல்"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr "%PRODUCTNAME %PRODUCTVERSION அணுகல் ஆத்ரவிற்கு ஜாவா 1.4.0_02 அல்லது அடுத்த பதிப்பு தேவை."
+msgid "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION அணுகல் ஆத்ரவிற்கு ஜாவா 1.4.0_02 அல்லது அடுத்த "
+"பதிப்பு தேவை."
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
-msgid  "No Java Installation"
+msgid "No Java Installation"
 msgstr "ஜாவா நிறுவுதல் இல்லை"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
-msgid  "Missing Java Configuration"
+msgid "Missing Java Configuration"
 msgstr "ஜாவா அமைப்பை காணவில்லை"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
-msgid  "Java Disabled"
+msgid "Java Disabled"
 msgstr "ஜாவாவை இயக்க இயலவில்லை"
 
 #: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
-msgid  "The Java Access Bridge could not be started."
+msgid "The Java Access Bridge could not be started."
 msgstr "ஜாவா அனுமதி பாதையை தொடங்க இயலவில்லை."
 
 #: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
-msgid  "No fonts could be found on the system."
+msgid "No fonts could be found on the system."
 msgstr "எழுத்துரு ஏதும் கணணியில் காணவில்லை"
 
 #: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
-msgid  "About %PRODUCTNAME"
+msgid "About %PRODUCTNAME"
 msgstr "%PRODUCTNAME பற்றி"
 
 #: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
-msgid  "Preferences..."
+msgid "Preferences..."
 msgstr "விருப்பங்கள்..."
 
 #: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
-msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr "இவ்வுரை புலத்தின் அதிகபட்ச நீலத்தைவிட நுழைக்கப்பட்ட உரை நீலமாக இருந்ததால், உரை துண்டிக்கப்பட்டது."
+msgid "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr ""
+"இவ்வுரை புலத்தின் அதிகபட்ச நீலத்தைவிட நுழைக்கப்பட்ட உரை நீலமாக இருந்ததால், "
+"உரை துண்டிக்கப்பட்டது."
 
 #: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
-msgid  "Screen %d"
+msgid "Screen %d"
 msgstr "திரை %d"
 
 #: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
-msgid  "Any type"
+msgid "Any type"
 msgstr "எந்த விதம்"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
-msgid  "mm"
+msgid "mm"
 msgstr "மி.மீ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
-msgid  "cm"
+msgid "cm"
 msgstr "செ.மீ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
-msgid  "m"
+msgid "m"
 msgstr "மீ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
-msgid  "km"
+msgid "km"
 msgstr "கி.மீ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twips"
+msgid "twips"
 msgstr "twips"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twip"
+msgid "twip"
 msgstr "twip"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
-msgid  "pt"
+msgid "pt"
 msgstr "pt"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
-msgid  "pi"
+msgid "pi"
 msgstr "pi"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "\""
+msgid "\""
 msgstr "\""
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "in"
+msgid "in"
 msgstr "அங்."
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "inch"
+msgid "inch"
 msgstr "அங்குலம்"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "'"
+msgid "'"
 msgstr "'"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "ft"
+msgid "ft"
 msgstr "அடி"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "foot"
+msgid "foot"
 msgstr "அடி"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "feet"
+msgid "feet"
 msgstr "அடி"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "miles"
+msgid "miles"
 msgstr "கல்"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "mile"
+msgid "mile"
 msgstr "கல்"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
-msgid  "%"
+msgid "%"
 msgstr "%"

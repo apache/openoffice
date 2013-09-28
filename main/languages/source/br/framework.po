@@ -1,216 +1,247 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "Molladoù"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "Skoazell ar mollad"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "Pep tra"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
+msgid "~Update"
 msgstr "~Bremanaat a ra"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "~Serriñ & distreiñ da"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
+msgid "Visible ~Buttons"
 msgstr "~Afelloù hewelus"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "~Personelaat ar varrenn ostilhoù..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "Eoriñ ~ar varrenn ostilhoù"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "Eoriñ an holl varrennoù os~tilhoù"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "Gennañ lec'hiadur ar ~barrennoù ostilhoù"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "Serriñ barrenn ~ostilhoù"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "~Enrollañ an eiladenn dindan..."
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
+msgid "No Documents"
 msgstr "Teul ebet"
 
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid "Clear List"
+msgstr ""
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "Mollad %num%"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "Kevrat lañvaz"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "Heuliit ar pazennoù da-heul a-benn ober ar staliañ :"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Lennit ar gevrat lañvaz. Arverit ar varrenn dibunañ pe ar stokell %PAGEDOWN a-benn skritellañ an destenn a-bezh."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Lennit ar gevrat lañvaz. Arverit ar varrenn dibunañ pe ar stokell %PAGEDOWN "
+"a-benn skritellañ an destenn a-bezh."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "War-lerc'h"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "Asantiñ ar gevrat aotren"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "Asantiñ"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "Nac'h"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
+msgid "Retry"
 msgstr "Arren"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "N'hall ket %PRODUCTNAME gwarediñ titouroù diabarzh a-bouez rak n'eus ket trawalc'h a egor kantenn el lec'hiad da-heul :\n%PATH\n\nN'hallot ket kenderc'hel da labourat gant %PRODUCTNAME hep ouzhpennañ muioc'h a egor kantenn el lec'hiad-se.\n\nPouezit war an afell 'Arren' ur wech m'ho peus ouzhpennet muioc'h a egor kantenn a-benn gwarediñ ar stlennoù.\n\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"N'hall ket %PRODUCTNAME gwarediñ titouroù diabarzh a-bouez rak n'eus ket "
+"trawalc'h a egor kantenn el lec'hiad da-heul :\n"
+"%PATH\n"
+"\n"
+"N'hallot ket kenderc'hel da labourat gant %PRODUCTNAME hep ouzhpennañ "
+"muioc'h a egor kantenn el lec'hiad-se.\n"
+"\n"
+"Pouezit war an afell 'Arren' ur wech m'ho peus ouzhpennet muioc'h a egor "
+"kantenn a-benn gwarediñ ar stlennoù.\n"
+"\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "~Adderaouekaat"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an arveriad. Serret e o an arload bremañ.\nKlaskit adstaliañ an arload."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an "
+"arveriad. Serret e o an arload bremañ.\n"
+"Klaskit adstaliañ an arload."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an arveriad. Serret e o an arload bremañ.\nKlaskit dilemel hoc'h aelad arveriad evit an arload da gentañ."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an "
+"arveriad. Serret e o an arload bremañ.\n"
+"Klaskit dilemel hoc'h aelad arveriad evit an arload da gentañ."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an arveriad. Serret e o an arload bremañ.\nKlaskit dilemel hoc'h aelad arveriad evit an arload da gentañ pe klaskit adstaliañ an arload."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"Degouezhet ez eus ur fazi e-pad ma oa o kargañ roadennoù kefluniañ ketal an "
+"arveriad. Serret e o an arload bremañ.\n"
+"Klaskit dilemel hoc'h aelad arveriad evit an arload da gentañ pe klaskit "
+"adstaliañ an arload."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr ""
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "Yezhoù lies"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "Tra ebet (Na gwirañ ket ar reizhskrivadur)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr ""
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "~All..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "Arventennañ ar yezh evit an diuzad"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "Arventennañ ar yezh evit ar rannbennad"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "Arventennañ ar yezh evit an destenn a-bezh"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr ""

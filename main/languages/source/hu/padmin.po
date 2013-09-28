@@ -1,816 +1,911 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
-msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "Válassza ki azt a könyvtárat, amelyben a telepíteni kívánt betűkészlet található. Az OK gombbal telepítheti a kiválasztott betűkészleteket."
+msgid "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr ""
+"Válassza ki azt a könyvtárat, amelyben a telepíteni kívánt betűkészlet "
+"található. Az OK gombbal telepítheti a kiválasztott betűkészleteket."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
-msgid  "Source directory"
+msgid "Source directory"
 msgstr "Forráskönyvtár"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
-msgid  "Sea~rch Subdirectories"
+msgid "Sea~rch Subdirectories"
 msgstr "Keresés az ~alkönyvtárakban"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
-msgid  "Target options"
+msgid "Target options"
 msgstr "Cél beállításai"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
-msgid  "Create ~soft links only"
+msgid "Create ~soft links only"
 msgstr "C~sak hivatkozások létrehozása"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
-msgid  "~Select All"
+msgid "~Select All"
 msgstr "~Mindent kijelöl"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
-msgid  "Add fonts"
+msgid "Add fonts"
 msgstr "Betűkészletek hozzáadása"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "Valóban felül akarja írni a következő betűkészletfájlt?\n   %s"
+msgid "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
+"Valóban felül akarja írni a következő betűkészletfájlt?\n"
+"   %s"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "Mindet"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Egyiket sem"
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "A formátumfájl (az .afm kiterjesztésű fájl) nem található a következő betűkészlethez:\n%s\nEmiatt nem lehet telepíteni a betűkészletet. Formátumfájlokat például a Ghostscript segítségével lehet létrehozni, és a betűkészlettel azonos könyvtárban vagy a betűkészlet „afm” alkönyvtárában kell elhelyezni."
+msgid "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+"A formátumfájl (az .afm kiterjesztésű fájl) nem található a következő "
+"betűkészlethez:\n"
+"%s\n"
+"Emiatt nem lehet telepíteni a betűkészletet. Formátumfájlokat például a "
+"Ghostscript segítségével lehet létrehozni, és a betűkészlettel azonos "
+"könyvtárban vagy a betűkészlet „afm” alkönyvtárában kell elhelyezni."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "A(z) %s betűkészlethez tartozó metrikafájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
+msgid "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"A(z) %s betűkészlethez tartozó metrikafájlt nem sikerült átmásolni. A "
+"betűkészlet telepítése nem lehetséges."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "A(z) %s betűkészletfájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
+msgid "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+"A(z) %s betűkészletfájlt nem sikerült átmásolni. A betűkészlet telepítése "
+"nem lehetséges."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
-msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "A Fontpath elérési útvonalon nem található olyan könyvtár, amelyben írható fonts.dir fájlok találhatók. Emiatt nem lehet betűkészleteket telepíteni."
+msgid "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
+"A Fontpath elérési útvonalon nem található olyan könyvtár, amelyben írható "
+"fonts.dir fájlok találhatók. Emiatt nem lehet betűkészleteket telepíteni."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
-msgid  "%d new fonts were added."
+msgid "%d new fonts were added."
 msgstr "Sikerült hozzáadni %d új betűkészletet."
 
 #: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
-msgid  "Add Fonts"
+msgid "Add Fonts"
 msgstr "Betűkészletek hozzáadása"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
-msgid  "CUPS support"
+msgid "CUPS support"
 msgstr "CUPS támogatása"
 
 #: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
-msgid  "Disable CUPS Support"
+msgid "Disable CUPS Support"
 msgstr "CUPS támogatásának letiltása"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Bezárás"
 
 #: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
-msgid  "Installed ~printers"
+msgid "Installed ~printers"
 msgstr "Telepített ~nyomtatók"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Command:"
+msgid "Command:"
 msgstr "Parancs:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Driver:"
+msgid "Driver:"
 msgstr "Illesztőprogram:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "Hely:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "Megjegyzés:"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "Tulajdonságok..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "R~ename..."
+msgid "R~ename..."
 msgstr "Átn~evezés..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "~Alapértelmezett"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
-msgid  "Remo~ve..."
+msgid "Remo~ve..."
 msgstr "Eltá~volítás..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
-msgid  "Test ~Page"
+msgid "Test ~Page"
 msgstr "Teszt~oldal"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
-msgid  "Fon~ts..."
+msgid "Fon~ts..."
 msgstr "~Betűkészletek..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "New Printer..."
+msgid "New Printer..."
 msgstr "Új nyomtató..."
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "Alapértelmezett nyomtató"
 
 #: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
-msgid  "Rename"
+msgid "Rename"
 msgstr "Átnevezés"
 
 #: padialog.src#RID_PADIALOG.STRING.TEXT
-msgid  "Printer Administration"
+msgid "Printer Administration"
 msgstr "Nyomtatókezelés"
 
 #: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
-msgid  "Could not open printer %s."
+msgid "Could not open printer %s."
 msgstr "Nem sikerült megnyitni a következő nyomtatót: %s"
 
 #: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
-msgid  "The test page was printed succesfully. Please check the result."
-msgstr "A tesztoldal nyomtatása sikeresen befejeződött. Ellenőrizze az eredményt."
+msgid "The test page was printed succesfully. Please check the result."
+msgstr ""
+"A tesztoldal nyomtatása sikeresen befejeződött. Ellenőrizze az eredményt."
 
 #: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr "A nyomtatókat nem lehet telepíteni, mert a fájl rendszer csak olvasható.\nVegye fel a kapcsolatot a rendszer adminisztrátorával."
+msgid "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+"A nyomtatókat nem lehet telepíteni, mert a fájl rendszer csak olvasható.\n"
+"Vegye fel a kapcsolatot a rendszer adminisztrátorával."
 
 #: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
-msgid  "~New printer name"
+msgid "~New printer name"
 msgstr "Ú~j nyomtató neve"
 
 #: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
-msgid  "Model"
+msgid "Model"
 msgstr "Modell"
 
 #: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "Név"
 
 #: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
-msgid  "Comment"
+msgid "Comment"
 msgstr "Megjegyzés"
 
 #: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
-msgid  "Queue"
+msgid "Queue"
 msgstr "Nyomtatási sor"
 
 #: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "Dátum"
 
 #: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "Idő"
 
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Bezárás"
+
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "Re~name..."
+msgid "Re~name..."
 msgstr "Á~tnevezés..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Remove..."
+msgid "~Remove..."
 msgstr "~Eltávolítás..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Hozzáadás..."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
-msgid  "Note: The fonts are only available to the applications."
+msgid "Note: The fonts are only available to the applications."
 msgstr "Megjegyzés: a betűkészleteket csak az alkalmazások érhetik el."
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
-msgid  "~New name for %s"
+msgid "~New name for %s"
 msgstr "Új ~név %s számára"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
-msgid  "~New name for %s (%d1 of %d2)"
+msgid "~New name for %s (%d1 of %d2)"
 msgstr "Új ~név %s számára (%d1 / %d2)"
 
 #: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
-msgid  "The font %s cannot be renamed due to missing write permission."
+msgid "The font %s cannot be renamed due to missing write permission."
 msgstr "Írásjog hiánya miatt a(z) %s betűkészletet nem lehet átnevezni."
 
 #: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
-msgid  "Fonts"
+msgid "Fonts"
 msgstr "Betűkészletek"
 
 #: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
-msgid  "Test page"
+msgid "Test page"
 msgstr "Tesztoldal"
 
 #: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
-msgid  "Wrong environment"
+msgid "Wrong environment"
 msgstr "Rossz környezet"
 
 #: padialog.src#RID_YOU_SURE.STRING.TEXT
-msgid  "Are you sure ?"
+msgid "Are you sure ?"
 msgstr "Biztos benne?"
 
 #: padialog.src#RID_AFMERROR_OK.STRING.TEXT
-msgid  "No error"
+msgid "No error"
 msgstr "Nincs hiba"
 
 #: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FontName' entry."
+msgid "The metric does not contain a 'FontName' entry."
 msgstr "A metrika nem tartalmaz „FontName” bejegyzést."
 
 #: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FullName' entry."
+msgid "The metric does not contain a 'FullName' entry."
 msgstr "A metrika nem tartalmaz „FullName” bejegyzést."
 
 #: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
-msgid  "The metric does not contain a 'FamilyName' entry."
+msgid "The metric does not contain a 'FamilyName' entry."
 msgstr "A metrika nem tartalmaz „FamilyName” bejegyzést."
 
 #: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
-msgid  "The converted metric could not be written."
+msgid "The converted metric could not be written."
 msgstr "A konvertált metrika nem írható."
 
 #: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
-msgid  "The metric could not be read."
+msgid "The metric could not be read."
 msgstr "A metrika nem olvasható."
 
 #: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
-msgid  "A temporary file could not be created."
+msgid "A temporary file could not be created."
 msgstr "Nem sikerült ideiglenes fájlt létrehozni."
 
 #: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
-msgid  "The file does not contain a metric."
+msgid "The file does not contain a metric."
 msgstr "Az állomány nem tartalmaz metrikát."
 
 #: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "A(z) %s metrika nem konvertálható az alábbiak miatt:\n\n"
+msgid "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+"A(z) %s metrika nem konvertálható az alábbiak miatt:\n"
+"\n"
 
 #: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
-msgid  "Progress"
+msgid "Progress"
 msgstr "Folyamat"
 
 #: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
-msgid  "Please wait"
+msgid "Please wait"
 msgstr "Várjon türelmesen"
 
 #: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
-msgid  "Font metrics conversion"
+msgid "Font metrics conversion"
 msgstr "Betűkészlet-metrika konvertálása"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
-msgid  "Dri~ver directory"
+msgid "Dri~ver directory"
 msgstr "~Illesztőprogram könyvtára"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
-msgid  "Please select the driver directory."
+msgid "Please select the driver directory."
 msgstr "Válassza ki az illesztőprogram könyvtárát."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Tallózás..."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
-msgid  "~Selection of drivers"
+msgid "~Selection of drivers"
 msgstr "~Illesztőprogramok kiválasztása"
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "Válassza ki a telepítendő illesztőprogramokat, és nyomja meg az \"%s\" gombot."
+msgid "Please select the drivers to install and press \"%s\"."
+msgstr ""
+"Válassza ki a telepítendő illesztőprogramokat, és nyomja meg az \"%s\" gombot."
 
 #: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
-msgid  "Searching for drivers"
+msgid "Searching for drivers"
 msgstr "Illesztőprogramok keresése"
 
 #: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
-msgid  "Driver Installation"
+msgid "Driver Installation"
 msgstr "Illesztőprogram telepítése"
 
 #: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
-msgid  "Do you really want to remove the driver \"%s\"?"
+msgid "Do you really want to remove the driver \"%s\"?"
 msgstr "Valóban el akarja távolítani a(z) „%s” illesztőprogramot?"
 
 #: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
-msgid  "Do you really want to remove this printer ?"
+msgid "Do you really want to remove this printer ?"
 msgstr "El akarja távolítani ezt a nyomtatót?"
 
 #: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
-msgid  "Do you really want to remove the selected fonts ?"
+msgid "Do you really want to remove the selected fonts ?"
 msgstr "Tényleg törölni kívánja a kiválasztott betűkészleteket?"
 
 #: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
-msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "Egy vagy több nyomtató a(z) „%s” illesztőprogramot használja. Biztos benne, hogy el akarja távolítani? Az eltávolítással a meghajtót használó nyomtatók is eltávolításra kerülnek."
+msgid "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+"Egy vagy több nyomtató a(z) „%s” illesztőprogramot használja. Biztos benne, "
+"hogy el akarja távolítani? Az eltávolítással a meghajtót használó nyomtatók "
+"is eltávolításra kerülnek."
 
 #: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
-msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "A(z) „%s” illesztőprogramra állandóan szükség van, ezért nem távolítható el."
+msgid "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr ""
+"A(z) „%s” illesztőprogramra állandóan szükség van, ezért nem távolítható el."
 
 #: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "A(z) „%s1” illesztőprogram eltávolítása nem sikerült. Az alábbi fájlt nem sikerült törölni:\n\n%s2."
+msgid "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+"A(z) „%s1” illesztőprogram eltávolítása nem sikerült. Az alábbi fájlt nem "
+"sikerült törölni:\n"
+"\n"
+"%s2."
 
 #: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
-msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "A(z) „%s” illesztőprogramot az alapértelmezett nyomtató használja. Ezért nem lehet eltávolítani."
+msgid "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+"A(z) „%s” illesztőprogramot az alapértelmezett nyomtató használja. Ezért nem "
+"lehet eltávolítani."
 
 #: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
-msgid  "The printer %s cannot be removed."
+msgid "The printer %s cannot be removed."
 msgstr "A(z) „%s” nyomtatót nem lehet eltávolítani."
 
 #: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
-msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgid "A printer named \"%s\" already exists. This printer will not be imported."
 msgstr "A(z) „%s” nevű nyomtató már létezik. Ez a nyomtató nem lesz importálva."
 
 #: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
-msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr "A(z) „%s” nyomtatónak nincsenek érvényes beállításai, ezért nem lehet importálni."
+msgid "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr ""
+"A(z) „%s” nyomtatónak nincsenek érvényes beállításai, ezért nem lehet "
+"importálni."
 
 #: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
-msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "A(z) „%s1” nyomtató illesztőprogramja nincs telepítve. Ezért a nyomtatót nem lehet importálni."
+msgid "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+"A(z) „%s1” nyomtató illesztőprogramja nincs telepítve. Ezért a nyomtatót nem "
+"lehet importálni."
 
 #: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
-msgid  "The printer \"%s\" could not be added."
+msgid "The printer \"%s\" could not be added."
 msgstr "A(z) „%s” nyomtatót nem sikerült hozzáadni."
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Befejezés"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Tovább >>"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< ~Vissza"
 
 #: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
-msgid  "Add Printer"
+msgid "Add Printer"
 msgstr "Nyomtató hozzáadása"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a driver"
+msgid "Choose a driver"
 msgstr "Válasszon egy illesztőprogramot"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Please select a s~uitable driver."
+msgid "Please select a s~uitable driver."
 msgstr "~Válasszon megfelelő illesztőprogramot."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "~Importálás..."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Törlés"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
-msgid  "Delete driver"
+msgid "Delete driver"
 msgstr "Illesztőprogram törlése"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a device type"
+msgid "Choose a device type"
 msgstr "Válassza ki az eszköz típusát."
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
-msgid  "Do you want to"
+msgid "Do you want to"
 msgstr "Válasszon az alábbiak közül:"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
-msgid  "Add a ~printer"
+msgid "Add a ~printer"
 msgstr "Nyomtató ~hozzáadása"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
-msgid  "Connect a fa~x device"
+msgid "Connect a fa~x device"
 msgstr "Fa~xkészülék csatlakoztatása"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
-msgid  "Connect a P~DF converter"
+msgid "Connect a P~DF converter"
 msgstr "P~DF-átalakító csatlakoztatása"
 
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
-msgid  "~Import printers from a StarOffice installation"
+msgid "~Import printers from a StarOffice installation"
 msgstr "Nyomtatók ~importálása egy StarOffice-telepítésből."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a name"
+msgid "Choose a name"
 msgstr "Válasszon egy nevet"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the printer."
+msgid "Please enter a name for the printer."
 msgstr "Írjon be egy nevet a nyomtatónak"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the fax connection."
+msgid "Please enter a name for the fax connection."
 msgstr "Írjon be egy nevet a faxkapcsolathoz."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the PDF connection."
+msgid "Please enter a name for the PDF connection."
 msgstr "Adjon meg egy nevet a PDF-csatlakozás számára."
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
-msgid  "Fax printer"
+msgid "Fax printer"
 msgstr "Faxnyomtató"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr "PDF-átalakító"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
-msgid  "~Use as default printer"
+msgid "~Use as default printer"
 msgstr "~Alapértelmezett nyomtató"
 
 #: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
-msgid  "Remo~ve fax number from output"
+msgid "Remo~ve fax number from output"
 msgstr "A faxszám eltá~volítása a kimenetből"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Choose a command line"
+msgid "Choose a command line"
 msgstr "Parancssor megadása"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
-msgid  "Please enter a c~ommand line appropriate for this device."
+msgid "Please enter a c~ommand line appropriate for this device."
 msgstr "A~dja meg a megfelelő parancssort az eszköz számára."
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF ~target directory"
+msgid "PDF ~target directory"
 msgstr "PDF-célkönyv~tár"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Súgó"
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott "
+"dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl "
+"neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben "
+"szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon "
+"át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "A faxoló parancssor a következőképpen hajtódik végre: minden egyes küldött faxnál a parancssorban levő \"(TMP)\" helyére egy ideiglenes fájl neve, a \"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
+msgid "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"A faxoló parancssor a következőképpen hajtódik végre: minden egyes küldött "
+"faxnál a parancssorban levő \"(TMP)\" helyére egy ideiglenes fájl neve, a "
+"\"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a "
+"parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező "
+"esetben a szabványos bemeneten keresztül zajlik."
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
-msgid  "Import printers from old versions"
+msgid "Import printers from old versions"
 msgstr "Nyomtatók importálása korábbi verziókból"
 
 #: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
-msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "Ezeke~t a nyomtatókat lehet importálni. Adja meg az importálni kívánt nyomtatót."
+msgid "~These printers can be imported. Please select the ones you want to import."
+msgstr ""
+"Ezeke~t a nyomtatókat lehet importálni. Adja meg az importálni kívánt "
+"nyomtatót."
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
+msgid "~Select All"
+msgstr "~Mindent kijelöl"
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "Válasszon egy illesztőprogramot"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this fax connection"
+msgid "Use the following driver for this fax connection"
 msgstr "A következő illesztőprogram használata ehhez a faxkapcsolathoz"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
-msgid  "T~he default driver"
+msgid "T~he default driver"
 msgstr "~Az alapértelmezett illesztőprogram"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen illeszteni"
+msgid "A speci~fic driver, to adapt the format to another printer"
+msgstr ""
+"~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen "
+"illeszteni"
+
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid "Choose a driver"
+msgstr "Válasszon egy illesztőprogramot"
 
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
-msgid  "Use the following driver for this PDF converter"
+msgid "Use the following driver for this PDF converter"
 msgstr "A PDF-átalakítóhoz használja a következő illesztőprogramot"
 
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
+msgid "T~he default driver"
+msgstr "~Az alapértelmezett illesztőprogram"
+
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
-msgid  "The Adobe D~istiller(tm) driver"
+msgid "The Adobe D~istiller(tm) driver"
 msgstr "Az Adobe D~istiller(tm) illesztőprogram"
 
 #: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
-msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen illeszteni"
+msgid "A spec~ific driver, to adapt the format to another printer"
+msgstr ""
+"~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen "
+"illeszteni"
 
 #: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "Kurzív"
 
 #: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
-msgid  "Oblique"
+msgid "Oblique"
 msgstr "Dőlt"
 
 #: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
-msgid  "Thin"
+msgid "Thin"
 msgstr "Vékony"
 
 #: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
-msgid  "Ultralight"
+msgid "Ultralight"
 msgstr "Ultrakönnyű"
 
 #: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
-msgid  "Semilight"
+msgid "Semilight"
 msgstr "Félkönnyű"
 
 #: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
-msgid  "Light"
+msgid "Light"
 msgstr "Könnyű"
 
 #: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
-msgid  "Semibold"
+msgid "Semibold"
 msgstr "Félkövér"
 
 #: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "Kövér"
 
 #: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
-msgid  "Ultrabold"
+msgid "Ultrabold"
 msgstr "Ultrakövér"
 
 #: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
-msgid  "Ultracondensed"
+msgid "Ultracondensed"
 msgstr "Ultrasűrű"
 
 #: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
-msgid  "Extracondensed"
+msgid "Extracondensed"
 msgstr "Extrasűrű"
 
 #: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
-msgid  "Condensed"
+msgid "Condensed"
 msgstr "Sűrű"
 
 #: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
-msgid  "Semicondensed"
+msgid "Semicondensed"
 msgstr "Félsűrű"
 
 #: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
-msgid  "Semiexpanded"
+msgid "Semiexpanded"
 msgstr "Félritka"
 
 #: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
-msgid  "Expanded"
+msgid "Expanded"
 msgstr "Ritka"
 
 #: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
-msgid  "Extraexpanded"
+msgid "Extraexpanded"
 msgstr "Extraritka"
 
 #: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
-msgid  "Ultraexpanded"
+msgid "Ultraexpanded"
 msgstr "Ultraritka"
 
 #: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "Általános"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
-msgid  "Command"
+msgid "Command"
 msgstr "Parancs"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
-msgid  "Paper"
+msgid "Paper"
 msgstr "Papír"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
-msgid  "Device"
+msgid "Device"
 msgstr "Eszköz"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
-msgid  "Font Replacement"
+msgid "Font Replacement"
 msgstr "Betűkészlet-helyettesítés"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
-msgid  "Other Settings"
+msgid "Other Settings"
 msgstr "Egyéb beállítások"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
-msgid  "from driver"
+msgid "from driver"
 msgstr "Nyomtatóból"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
-msgid  "<ignore>"
+msgid "<ignore>"
 msgstr "<mindegy>"
 
 #: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
-msgid  "Properties of %s"
+msgid "Properties of %s"
 msgstr "%s tulajdonságai"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
-msgid  "~Paper size"
+msgid "~Paper size"
 msgstr "~Papírméret"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "~Tájolás"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
-msgid  "~Duplex"
+msgid "~Duplex"
 msgstr "~Kétoldalas"
 
 #: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "Papírtálca"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
-msgid  "Color"
+msgid "Color"
 msgstr "Színes"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
-msgid  "Grayscale"
+msgid "Grayscale"
 msgstr "Szürkeárnyalatos"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
-msgid  "~Option"
+msgid "~Option"
 msgstr "~Beállítás"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
-msgid  "Current ~value"
+msgid "Current ~value"
 msgstr "A~ktuális érték"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
-msgid  "Printer ~Language type"
+msgid "Printer ~Language type"
 msgstr "Nyomtató ~nyelv típusa"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
-msgid  "PostScript (Level from driver)"
+msgid "PostScript (Level from driver)"
 msgstr "PostScript (Level from driver)"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
-msgid  "PostScript Level 1"
+msgid "PostScript Level 1"
 msgstr "PostScript Level 1"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
-msgid  "PostScript Level 2"
+msgid "PostScript Level 2"
 msgstr "PostScript Level 2"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
-msgid  "PostScript Level 3"
+msgid "PostScript Level 3"
 msgstr "PostScript Level 3"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
-msgid  "PDF"
+msgid "PDF"
 msgstr "PDF"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
-msgid  "~Color"
+msgid "~Color"
 msgstr "~Színes"
 
 #: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
-msgid  "Color ~depth"
+msgid "Color ~depth"
 msgstr "~Színmélység"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
-msgid  "~Enable font replacement"
+msgid "~Enable font replacement"
 msgstr "~Betűkészlet-helyettesítés engedélyezése"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
-msgid  "Replaced ~fonts"
+msgid "Replaced ~fonts"
 msgstr "Helyettesített ~betűkészletek"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr "~Hozzáadás"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "~Eltávolítás"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
-msgid  "Repla~ce font"
+msgid "Repla~ce font"
 msgstr "~Helyettesítő betűkészlet"
 
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
-msgid  "by ~printer font"
+msgid "by ~printer font"
 msgstr "a ~nyomtató betűkészletével"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
-msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr "A ~rendszer nyomtatási párbeszédablakának használata, az %PRODUCTNAME nyomtatási párbeszédablakának letiltása"
+msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+"A ~rendszer nyomtatási párbeszédablakának használata, az %PRODUCTNAME "
+"nyomtatási párbeszédablakának letiltása"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
-msgid  "Command for quick printing without dialog (optional)"
+msgid "Command for quick printing without dialog (optional)"
 msgstr "Parancs gyors nyomtatásra a párbeszédablak nélkül (opcionális)"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
-msgid  "Select command"
+msgid "Select command"
 msgstr "Parancs kiválasztása"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
-msgid  "Printer"
+msgid "Printer"
 msgstr "Nyomtató"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
-msgid  "Fax"
+msgid "Fax"
 msgstr "Fax"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
-msgid  "PDF converter"
+msgid "PDF converter"
 msgstr "PDF-átalakító"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
-msgid  "~Configure as"
+msgid "~Configure as"
 msgstr "~Beállítás mint"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
-msgid  "~Fax number will be removed from output"
+msgid "~Fax number will be removed from output"
 msgstr "~A faxszám el lesz távolítva a kimenetről"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
-msgid  "PDF target directory :"
+msgid "PDF target directory :"
 msgstr "PDF-célkönyvtár:"
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
-msgid  "Command: "
+msgid "Command: "
 msgstr "Parancs: "
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
+msgid "Printer"
+msgstr "Nyomtató"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~Súgó"
 
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid "~Remove"
+msgstr "~Eltávolítás"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
+msgid "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+"A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott "
+"dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl "
+"neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben "
+"szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon "
+"át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
-msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "A nyomtató-parancssor a következőképpen fut le: a létrehozott PostScript-kód a szabványos bemeneten át kerül a parancssorba."
+msgid "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+"A nyomtató-parancssor a következőképpen fut le: a létrehozott PostScript-kód "
+"a szabványos bemeneten át kerül a parancssorba."
 
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
-msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "A faxeszköz-kezelő parancssor a következőképpen fut le: minden egyes küldött fax esetén a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, a \"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
+msgid "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+"A faxeszköz-kezelő parancssor a következőképpen fut le: minden egyes küldött "
+"fax esetén a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, a "
+"\"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a "
+"parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező "
+"esetben a szabványos bemeneten keresztül zajlik."
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Left margin"
+msgid "~Left margin"
 msgstr "~Bal margó"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Top margin"
+msgid "~Top margin"
 msgstr "~Felső margó"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Right margin"
+msgid "~Right margin"
 msgstr "~Jobb margó"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
-msgid  "~Bottom margin"
+msgid "~Bottom margin"
 msgstr "~Alsó margó"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "~Comment"
+msgid "~Comment"
 msgstr "~Megjegyzés"
 
 #: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
-msgid  "~Default"
+msgid "~Default"
 msgstr "~Alapértelmezett"
 
 #: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
-msgid  "Please enter the fax number."
+msgid "Please enter the fax number."
 msgstr "Adja meg a faxszámot."
 
 #: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
-msgid  "Authentication request"
+msgid "Authentication request"
 msgstr "Hitelesítési kérés"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
-msgid  "Please enter your authentication data for server %s"
+msgid "Please enter your authentication data for server %s"
 msgstr "Adja meg a hitelesítési adatait a(z) %s kiszolgálóhoz"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
-msgid  "~User"
+msgid "~User"
 msgstr "~Felhasználó"
 
 #: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
-msgid  "~Password"
+msgid "~Password"
 msgstr "~Jelszó"

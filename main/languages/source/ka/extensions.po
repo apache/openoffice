@@ -1,2484 +1,2655 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
-msgid  "Address Book Data Source Wizard"
+msgid "Address Book Data Source Wizard"
 msgstr "მისამართების წიგნის მონაცემთა წყაროს ოსტატი"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
+msgid "Address book type"
 msgstr "მისამართების წიგნის ტიპი"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr "კავშირის პარამერები"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
+msgid "Table selection"
 msgstr "ცხრილის მონიშვნა"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
-msgid  "Field Assignment"
+msgid "Field Assignment"
 msgstr "ველის მინიჭება"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
-msgid  "Data Source Title"
+msgid "Data Source Title"
 msgstr "მონაცემთა წყაროს სათაური"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME საშუალებას გაძლევთ მიწვდეთ თქვენს სისტემაში უკვე არსებულ მონაცემებს. ამისათვის შეიქმნება %PRODUCTNAME მონაცემთა წყარო, რომელშიც მისამართების მონაცემები არსებობს ტაბულარული ფორმით.\n\nეს გიდი დაგეხმარებათ შექმნათ მონაცემთა ახალი წყარო."
+msgid "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+"%PRODUCTNAME საშუალებას გაძლევთ მიწვდეთ თქვენს სისტემაში უკვე არსებულ "
+"მონაცემებს. ამისათვის შეიქმნება %PRODUCTNAME მონაცემთა წყარო, რომელშიც "
+"მისამართების მონაცემები არსებობს ტაბულარული ფორმით.\n"
+"\n"
+"ეს გიდი დაგეხმარებათ შექმნათ მონაცემთა ახალი წყარო."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
-msgid  "Please select the type of your external address book:"
+msgid "Please select the type of your external address book:"
 msgstr "გთხოვთ მონიშნოთ თქვენი გარე მისამართების წიგნის ტიპი:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
-msgid  "Evolution"
+msgid "Evolution"
 msgstr "Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
-msgid  "Mozilla / Netscape"
+msgid "Mozilla / Netscape"
 msgstr "Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
-msgid  "Thunderbird"
+msgid "Thunderbird"
 msgstr "Thunderbird"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
-msgid  "KDE address book"
+msgid "KDE address book"
 msgstr "KDE მისამართების წიგნი"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
-msgid  "Mac OS X address book"
+msgid "Mac OS X address book"
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
-msgid  "LDAP address data"
+msgid "LDAP address data"
 msgstr "LDAP მისართების მონაცემი"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
-msgid  "Outlook address book"
+msgid "Outlook address book"
 msgstr "სხვა მისამართების წიგნის"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
-msgid  "Windows system address book"
+msgid "Windows system address book"
 msgstr "Windows-ის სისტემის მისამართების წიგნი"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
+msgid "Other external data source"
 msgstr "სხვა გარე მონაცემთა წყაროები"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "მონაცემთა ახალი წყაროს დასაყენებლად საჭიროა დამატებითი ინფორმაცია.\n\nდააჭირეთ შემდეგ ღილაკს ახალი დიალოგის გასახსნელად, რომელშიც შეიტანთ საჭირო ინფორმაციას."
+msgid "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+"მონაცემთა ახალი წყაროს დასაყენებლად საჭიროა დამატებითი ინფორმაცია.\n"
+"\n"
+"დააჭირეთ შემდეგ ღილაკს ახალი დიალოგის გასახსნელად, რომელშიც შეიტანთ საჭირო "
+"ინფორმაციას."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
-msgid  "Settings"
+msgid "Settings"
 msgstr "პარამერები"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "კავშირი მონაცემთა წყაროსთან არ შედგა.\nმანამ სანამ თქვენ გააგრძელებთ, შეამოწმეთ დაყენებული პარამეტრები, ან (წინა გვერდზე) აირჩიეთ სხვა მონაცემთა წყაროს ტიპი."
+msgid "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+"კავშირი მონაცემთა წყაროსთან არ შედგა.\n"
+"მანამ სანამ თქვენ გააგრძელებთ, შეამოწმეთ დაყენებული პარამეტრები, ან (წინა "
+"გვერდზე) აირჩიეთ სხვა მონაცემთა წყაროს ტიპი."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "გარე მონაცემთა წყარო რომელიც თქვენ აიჩეთ შეიცავს ერთზე მეტ მისამართების წიგნს .\nგთხოვთ აირჩიოთ რომელმათგანთან სურთ ძირითადად მშაობა:"
+msgid "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+"გარე მონაცემთა წყარო რომელიც თქვენ აიჩეთ შეიცავს ერთზე მეტ მისამართების "
+"წიგნს .\n"
+"გთხოვთ აირჩიოთ რომელმათგანთან სურთ ძირითადად მშაობა:"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "თქვენს შაბლონებში მისამართების მონაცემების გასაერთიანებლად, %PRODUCTNAME -მა უნდა იცოდეს რომელი ველი რა მონაცემს შეიცავს.\n\nმაგალითად, თქვენ შეიძლება შენახული გქონდეთ ელ.ფოსტის მისამართები ველში სახელად \"email\", ან \"E-mail\" ან \"EM\" -ან სრულიათ სულ სხვა.\n\nახალი დიალოგის გასახსნელად, სადაც შეიყვანთ მონაცემთა თქვენი წყაროს პარამეტრებს, დააჭირეთ ქვემოთ მოცემულ ღილაკს."
+msgid "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+"თქვენს შაბლონებში მისამართების მონაცემების გასაერთიანებლად, %PRODUCTNAME -მა "
+"უნდა იცოდეს რომელი ველი რა მონაცემს შეიცავს.\n"
+"\n"
+"მაგალითად, თქვენ შეიძლება შენახული გქონდეთ ელ.ფოსტის მისამართები ველში "
+"სახელად \"email\", ან \"E-mail\" ან \"EM\" -ან სრულიათ სულ სხვა.\n"
+"\n"
+"ახალი დიალოგის გასახსნელად, სადაც შეიყვანთ მონაცემთა თქვენი წყაროს "
+"პარამეტრებს, დააჭირეთ ქვემოთ მოცემულ ღილაკს."
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
+msgid "Field Assignment"
+msgstr "ველის მინიჭება"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "ეს გახლდათ ყველა ინფორმაცია, საჭირო თქვენი მისამართების მონაცემების %PRODUCTNAME -ში ინტეგრაციისთვის.\n\nახლა შეიყვანეთ სახელი, რომლითაც გსურთ დაარეგისტრიროთ მონაცემთა წყარო %PRODUCTNAME -ში."
+msgid "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+"ეს გახლდათ ყველა ინფორმაცია, საჭირო თქვენი მისამართების მონაცემების %"
+"PRODUCTNAME -ში ინტეგრაციისთვის.\n"
+"\n"
+"ახლა შეიყვანეთ სახელი, რომლითაც გსურთ დაარეგისტრიროთ მონაცემთა წყარო %"
+"PRODUCTNAME -ში."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "ადგილმდებარეობა"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "მოძიება..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "გახადეთ ეს მისამართების წიგნი ხელმისაწვდომი ყველა მოდულისათვის %PRODUCTNAME-ში."
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+"გახადეთ ეს მისამართების წიგნი ხელმისაწვდომი ყველა მოდულისათვის %"
+"PRODUCTNAME-ში."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
+msgid "Address book name"
 msgstr "მონაცემთა წიგნის სახელი"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "სხვა მონაცემთა წყაროს გააჩნია ეს სახელი. მონაცემთა წყაროს როგორც ასეთს უნდა ქონდეს უნიკალური სახელი, თქვენ უნდა აირჩიოთ რაიმე სხა."
+msgid "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+"სხვა მონაცემთა წყაროს გააჩნია ეს სახელი. მონაცემთა წყაროს როგორც ასეთს უნდა "
+"ქონდეს უნიკალური სახელი, თქვენ უნდა აირჩიოთ რაიმე სხა."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
-msgid  "Please select a type of address book."
+msgid "Please select a type of address book."
 msgstr "გთხოვთ მონიშვნოთ მისამართების წიგნის ტიპი."
 
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
+msgid "Addresses"
 msgstr "მისამართები"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
+msgid "Create Address Data Source"
 msgstr "მისამართების მონაცემთა წყაროს შექმნა"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "კაშირი ვერ დამყარდა."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
-msgid  "Please check the settings made for the data source."
+msgid "Please check the settings made for the data source."
 msgstr "გთხოვთ შეამოწმოთ დაყენებული პარამერები მონაცემთა წყაროსათვის."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
+msgid "Address Data - Field Assignment"
 msgstr "მისამართების მონაცემების - ველის გადანაწილება"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "ამჟამად ველი არ არის მინიჭებული.\nთქვენ შეგიძლიათ მიანიჭოთ ველი ახლა ან მოგვიანებით თუ აირჩევთ:\n\"ფაილი - შაბლონი - მისამართების წიგნის წყარო...\""
+msgid "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
+"ამჟამად ველი არ არის მინიჭებული.\n"
+"თქვენ შეგიძლიათ მიანიჭოთ ველი ახლა ან მოგვიანებით თუ აირჩევთ:\n"
+"\"ფაილი - შაბლონი - მისამართების წიგნის წყარო...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
+msgid "Field selection:"
 msgstr "ველის შერჩევა:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
+msgid "Table;Query;Sql;Sql [Native]"
 msgstr "ცხრილი;მოთხოვნა;Sql;Sql [Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
-msgid  "Bibliography Database"
+msgid "Bibliography Database"
 msgstr "ბიბლიოგრაფიული მონაცემთა ბაზა"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
-msgid  "Do you want to edit the column arrangement?"
+msgid "Do you want to edit the column arrangement?"
 msgstr "გსურთ სვეტების განლაგების რედაქტირება?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
+msgid "Column names"
 msgstr "სვეტის სახელწოდება"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
-msgid  "<none>"
+msgid "<none>"
 msgstr "<არცერთი>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
+msgid "Column Layout for Table %1"
 msgstr "სვეტის განლაგება %1 ცხრილისათვის"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
+msgid "Choose Data Source"
 msgstr "აირჩიე მონაცემთა წყარო"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
+msgid "Entry"
 msgstr "ჩანაწერი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
+msgid "The following column names could not be assigned:\n"
 msgstr "სვეტებს შემდეგი სახელები ვერ ენიჭება:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
+msgid "Article"
 msgstr "სტატია"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
+msgid "Book"
 msgstr "წიგნი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
-msgid  "Brochures"
+msgid "Brochures"
 msgstr "ბროშურა"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
-msgid  "Conference proceedings"
+msgid "Conference proceedings"
 msgstr "კონფერენციის საქციელი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
-msgid  "Book excerpt"
+msgid "Book excerpt"
 msgstr "წიგნის ამონარიდი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
-msgid  "Book excerpt with title"
+msgid "Book excerpt with title"
 msgstr "წიგნის ამონარიდი სათაურით"
 
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
+msgstr "კონფერენციის საქციელი"
+
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
+msgid "Journal"
 msgstr "ჟურნალი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
-msgid  "Techn. documentation"
+msgid "Techn. documentation"
 msgstr "ტექნიკური დოკუმენტაცია"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
-msgid  "Thesis"
+msgid "Thesis"
 msgstr "თეზისები"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
+msgid "Miscellaneous"
 msgstr "სხვადასხვა"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
-msgid  "Dissertation"
+msgid "Dissertation"
 msgstr "დისერტაცია"
 
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
+msgstr "კონფერენციის საქციელი"
+
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
-msgid  "Research report"
+msgid "Research report"
 msgstr "კვლევის ანგარიში"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
+msgid "Unpublished"
 msgstr "გამოუქვეყნებელი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
-msgid  "e-mail"
+msgid "e-mail"
 msgstr "ელფოსტა"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
-msgid  "WWW document"
+msgid "WWW document"
 msgstr "WWW დოკუმენტი"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
+msgid "User-defined1"
 msgstr "მომხმარებლის მიერ განსაზღვრული1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
+msgid "User-defined2"
 msgstr "მომხმარებლის მიერ განსაზღვრული2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
+msgid "User-defined3"
 msgstr "მომხმარებლის მიერ განსაზღვრული3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
+msgid "User-defined4"
 msgstr "მომხმარებლის მიერ განსაზღვრული4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
+msgid "User-defined5"
 msgstr "მომხმარებლის მიერ განსაზღვრული5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "ზოგადი"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
+msgid "Insert Section..."
 msgstr "ჩასვი განყოფილება... "
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
+msgid "Delete Section..."
 msgstr "წაშალე განყოფილება..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
+msgid "Modify Name..."
 msgstr "შეცვალე სახელი..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
+msgid "~Short name"
 msgstr "~მოკლე სახელი"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
+msgid "~Type"
 msgstr "~ტიპი"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
+msgid "~Year"
 msgstr "წ~ელი"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
-msgid  "Author(s)"
+msgid "Author(s)"
 msgstr "ავტორ(ები)ი"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
+msgid "Tit~le"
 msgstr "სათა~ური"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
-msgid  "~Publisher"
+msgid "~Publisher"
 msgstr "~გამომცემელი"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
+msgid "A~ddress"
 msgstr "~მისამართი"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
-msgid  "~ISBN"
+msgid "~ISBN"
 msgstr "~ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
+msgid "~Chapter"
 msgstr "თ~ავი"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
-msgid  "Pa~ge(s)"
+msgid "Pa~ge(s)"
 msgstr "გ~ვერდ(ებ)ი"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
-msgid  "Editor"
+msgid "Editor"
 msgstr "რედაქტორი"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
-msgid  "Ed~ition"
+msgid "Ed~ition"
 msgstr "გა~მოცემა"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
+msgid "~Book title"
 msgstr "წ~იგნის სათაური"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
+msgid "Volume"
 msgstr "ტომი"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
-msgid  "Publication t~ype"
+msgid "Publication t~ype"
 msgstr "პუბლიკაციი ~ტიპი"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
+msgid "Organi~zation"
 msgstr "ორგანი~ზაცია"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
+msgid "Instit~ution"
 msgstr "ინს~ტიტუტი"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
-msgid  "University"
+msgid "University"
 msgstr "უნივერსიტეტი"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
-msgid  "Type of re~port"
+msgid "Type of re~port"
 msgstr "ა~ნგარიშის ტიპი"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "თ~ვე"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
+msgid "~Journal"
 msgstr "ჟ~ურნალი"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
-msgid  "Numb~er"
+msgid "Numb~er"
 msgstr "ნო~მერი"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
+msgid "Se~ries"
 msgstr "სე~რია"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
-msgid  "Ann~otation"
+msgid "Ann~otation"
 msgstr "ა~ნოტაცია"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
+msgid "~Note"
 msgstr "შ~ენიშვნა"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
-msgid  "User-defined field ~1"
+msgid "User-defined field ~1"
 msgstr "მომხმარებლის მიერ განსაზღვრული ველი ~1"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
-msgid  "User-defined field ~2"
+msgid "User-defined field ~2"
 msgstr "მომხმარებლის მიერ განსაზღვრული ველი ~2"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
-msgid  "User-defined field ~3"
+msgid "User-defined field ~3"
 msgstr "მომხმარებლის მიერ განსაზღვრული ველი ~3"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
-msgid  "User-defined field ~4"
+msgid "User-defined field ~4"
 msgstr "მომხმარებლის მიერ განსაზღვრული ველი ~4"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
-msgid  "User-defined field ~5"
+msgid "User-defined field ~5"
 msgstr "მომხმარებლის მიერ განსაზღვრული ველი ~5"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
-msgstr "ცხრილი"
+msgid "Table"
+msgstr ""
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
-msgid  "Search Key"
+msgid "Search Key"
 msgstr "ძებნის გასაღები"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
+msgid "AutoFilter"
 msgstr "ავტოფილტრი"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
-msgid  "Standard Filter"
+msgid "Standard Filter"
 msgstr ""
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
+msgid "Remove Filter"
 msgstr "ფილტრის მოშორება"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
-msgid  "Column Arrangement"
+msgid "Column Arrangement"
 msgstr "სვეტის განლაგება"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
+msgid "Data Source"
 msgstr "მონაცემთა წყარო"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
+msgid "Data"
+msgstr "მონაცემები"
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+msgid "Data"
 msgstr "მონაცემები"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "ამჟამად კონტროლის ფორმა არ (ან ნაწილობრივ) ეკუთვნის მონაცემთა წყაროს.\n\nგთხოვთ აირჩიოთ მონაცემთა წყარო და ცხრილი.\n\n\nგთხოვთ გაითვალისწინოთ, რომ ამ გვერდზე დაყენებული პარამეტრები ძალაში შევა მყისიერად ამ გვერდის დატოვებისთანავე."
+msgid "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+"ამჟამად კონტროლის ფორმა არ (ან ნაწილობრივ) ეკუთვნის მონაცემთა წყაროს.\n"
+"\n"
+"გთხოვთ აირჩიოთ მონაცემთა წყარო და ცხრილი.\n"
+"\n"
+"\n"
+"გთხოვთ გაითვალისწინოთ, რომ ამ გვერდზე დაყენებული პარამეტრები ძალაში შევა "
+"მყისიერად ამ გვერდის დატოვებისთანავე."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
+msgid "~Data source:"
 msgstr "~მონაცემთა წყარო:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
+msgid "~..."
 msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
+msgid "~Table / Query:"
 msgstr "~ცხრილი /  მოთხოვნა:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
-msgid  "Database Field"
+msgid "Database Field"
 msgstr "მონაცემთა ბაზის ველი"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
+msgid "Do you want to save the value in a database field?"
 msgstr "გსურთ შეინახოთ მნიშვნელობა მონაცემთა ბაზის ველში?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
-msgid  "~Yes, I want to save it in the following database field:"
+msgid "~Yes, I want to save it in the following database field:"
 msgstr "~დიახ, მე მსურს მისი შენახვა შემდეგ მონაცემთა ბაზის ველში:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
-msgid  "~No, I only want to save the value in the form."
+msgid "~No, I only want to save the value in the form."
 msgstr "~არა, მე მხოლოდ მინდა ფორმაში მნიშვნელობის შენახვა."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
+msgid "Form"
 msgstr "ფორმა"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
+msgid "Data source"
 msgstr "მონაცემთა წყარო"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
-msgstr "შინაარსის ტიპი"
+msgid "Content type"
+msgstr "შემადგენლობის ტიპი"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
-msgstr "შინაარსი"
+msgid "Content"
+msgstr "შემადგენლობა"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "ცხრილი"
+msgid "Table"
+msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "მოთხოვნა"
+msgid "Query"
+msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL ბრძანება"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
+msgid "Group Element Wizard"
 msgstr "ჯგუფის ელემენტების ოსტატი"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
+msgid "Table Element Wizard"
 msgstr "ცხრილის ელემენტების გიდი"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
+msgid "List Box Wizard"
 msgstr "სიის ველის გიდი"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
+msgid "Combo Box Wizard"
 msgstr "კომბო-ველის გიდი"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
-msgid  "The table connection to the data source could not be established."
+msgid "The table connection to the data source could not be established."
 msgstr "ცხრილის კავშირი მონაცემთა წყაროსთან ვერ მყარდება."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "ველის მონიშვნა"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
+msgid "Table element"
 msgstr "ცხრილის ელემენტი"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "არსებული ველები"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
+msgid "Selected fields"
 msgstr "არჩეული ველები"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
+msgid " (Date)"
 msgstr " (თარიღი)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
+msgid " (Time)"
 msgstr " (დრო)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "მონაცემები"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
+msgid "Which ~names do you want to give the option fields?"
 msgstr "რა ~სახელები გინდათ მიანიჭოთ ვარიანტის ველებს?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
+msgid "~Option fields"
 msgstr "~პარამეტრების ველები"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
+msgid "Default Field Selection"
 msgstr "ძირითადი ველის არჩევა"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
+msgid "Should one option field be selected as a default?"
 msgstr "იქნეს ერთი ვარიანტის ველი არჩეული როგორც ძირითადი?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
-msgid  "~Yes, the following:"
+msgid "~Yes, the following:"
 msgstr "~დიახ, შემდეგი:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
-msgid  "No, one particular field is not going to be selected."
+msgid "No, one particular field is not going to be selected."
 msgstr "არა, ერთი კონკრეტული ველი არ იქნება არჩეული."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
+msgid "Field Values"
 msgstr "ველის მნიშვნელობები"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
-msgid  "When you select an option, the option group is given a specific value."
-msgstr "როდესაც აირჩევთ ვარიანტს, ვარიანტების ჯგუფს ეძლევა სპეციფიკური მნიშვნელობა."
+msgid "When you select an option, the option group is given a specific value."
+msgstr ""
+"როდესაც აირჩევთ ვარიანტს, ვარიანტების ჯგუფს ეძლევა სპეციფიკური მნიშვნელობა."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
-msgid  "Which ~value do you want to assign to each option?"
+msgid "Which ~value do you want to assign to each option?"
 msgstr "რა ~მნიშვნელობა გინდათ მიანიჭოთ თითოეულ ვარიანტს?"
 
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid "~Option fields"
+msgstr "~პარამეტრების ველები"
+
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
+msgid "Create Option Group"
 msgstr "შექმენი ვარიანტების ჯგუფი"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
-msgid  "Which ~caption is to be given to your option group?"
+msgid "Which ~caption is to be given to your option group?"
 msgstr "რომელი ~წარწერა უნდა დაერქვას თქვენს ვარიანტების ჯგუფს?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
-msgid  "These were all details needed to create the option group."
+msgid "These were all details needed to create the option group."
 msgstr "ეს იყო ვარიანტების ჯგუფის შესაქმნელად საჭირო ყველა დეტალი."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr "თქვენ შეგიძლიათ შეინახოთ ვარიანტების ჯგუფის მნიშვნელობა მონაცემთა ბაზაში ან გამოიყენოთ ის შემდეგი მოქმედებისთვის."
+msgid "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+"თქვენ შეგიძლიათ შეინახოთ ვარიანტების ჯგუფის მნიშვნელობა მონაცემთა ბაზაში ან "
+"გამოიყენოთ ის შემდეგი მოქმედებისთვის."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
+msgid "Table Selection"
 msgstr "ცხრილის მონიშვნა"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
+msgid "Control"
 msgstr "კონტროლი"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "მარჯვენა მხარეს თქვენ ხედავთ ყველა ცხრილს ფორმის მონაცემთა წყაროდან.\n\n\nაირჩიეთ ცხრილი, რომლიდანაც მონაცემები გამოყენებული იქნება როგორც სიის შინაარსის ბაზისი:"
+msgid "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
+"მარჯვენა მხარეს თქვენ ხედავთ ყველა ცხრილს ფორმის მონაცემთა წყაროდან.\n"
+"\n"
+"\n"
+"აირჩიეთ ცხრილი, რომლიდანაც მონაცემები გამოყენებული იქნება როგორც სიის "
+"შინაარსის ბაზისი:"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "ველის მონიშვნა"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "არსებული ველები"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
-msgid  "Display field"
+msgid "Display field"
 msgstr "ველის ჩვენება"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
-msgid  "The contents of the field selected will be shown in the combo box list."
+msgid "The contents of the field selected will be shown in the combo box list."
 msgstr "არჩეული ველის შინაარსი გამოჩნდება როგორც კომბო-ველის სია."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr "თუ დაკავშირებული ველები იდენტურია, მონიშნული ველის შინაარსი სიის ველიში გამოჩნდება."
+msgid "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr ""
+"თუ დაკავშირებული ველები იდენტურია, მონიშნული ველის შინაარსი სიის ველიში "
+"გამოჩნდება."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
+msgid "Field Link"
 msgstr "ველის ბმული"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgid "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
+msgid "Field from the ~Value Table"
 msgstr "ველი ~მნიშვნელობის ცხრილიდან"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
+msgid "Field from the ~List Table"
 msgstr "ველი ~სიის ცხრილიდან"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr "თქვენ შეგიძლიათ შეინახოთ კომბო-ველის მნიშვნელობა მონაცემთა ბაზაში ან გამოიყენოთ იგი ჩვენებისთვის."
+msgid "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
+"თქვენ შეგიძლიათ შეინახოთ კომბო-ველის მნიშვნელობა მონაცემთა ბაზაში ან "
+"გამოიყენოთ იგი ჩვენებისთვის."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
+msgid "<< Back"
 msgstr "<< უკან"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
+msgid "Next >>"
 msgstr "შემდები >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
+msgid "Accept"
 msgstr "თანხმობა"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
+msgid "Finish"
 msgstr "დასრულება"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
-msgid  " - Software License Agreement"
+msgid " - Software License Agreement"
 msgstr "- პროგრამის სალიცენზიო შეთანხმება"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
-msgid  "- User Data"
+msgid "- User Data"
 msgstr "- მომხმარებლის მონაცემები"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "მოგესალმებით"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
 msgstr ""
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "სალიცენზიო შეთანხმება"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "ინსტალაციისთვის მიყევით შემდეგ ნაბიჯებს"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "იხილეთ მთლიანი სალიცენზიო შეთანხმება. ლიცენზიის სრული ტექსტის სანახავად გთხოვთ გამოიყენოთ ცოცია ან '%PAGEDOWN' კლავიში დიალოგში."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"იხილეთ მთლიანი სალიცენზიო შეთანხმება. ლიცენზიის სრული ტექსტის სანახავად "
+"გთხოვთ გამოიყენოთ ცოცია ან '%PAGEDOWN' კლავიში დიალოგში."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
+msgid "Page Down"
 msgstr "Page Down"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "სალიცენზიო შეთანხმებაზე თანხმობა."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
-msgid  "I accept the terms of the Agreement."
+msgid "I accept the terms of the Agreement."
 msgstr "შეთანხმების პირობებს ვეთანხმები."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "თ~ანხმობა"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "უარყოფა"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "თვისებები"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "შრიფტი"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "ფონტის ეფექტები"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
-msgid  "Link fields"
+msgid "Link fields"
 msgstr "კავშირის ველები"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr "ქვეფორმები შეიძლება გამოყენებულ იქნას მასტერ ფორმის შესახებ მიმდინარე ჩანაწერის დეტალური მონაცემების საჩვენებლად."
+msgid "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
+"ქვეფორმები შეიძლება გამოყენებულ იქნას მასტერ ფორმის შესახებ მიმდინარე "
+"ჩანაწერის დეტალური მონაცემების საჩვენებლად."
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-msgid  "Suggest"
+msgid "Suggest"
 msgstr "შეთავაზება"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
-msgid  "Sub Form"
+msgid "Sub Form"
 msgstr "ქვეფორმა"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
-msgid  "Master Form"
+msgid "Master Form"
 msgstr "მთავარი ფორმა"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
-msgid  "The columns of '#' could not be retrieved."
+msgid "The columns of '#' could not be retrieved."
 msgstr "ქვეფორმის სვეტები ვერ მოიძია."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-msgid  "Edit mask"
+msgid "Edit mask"
 msgstr "ნიღბის შეცვლა"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
+msgid "Literal mask"
 msgstr "პირდაპირი ნიღაბი"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
-msgid  "Read-only"
+msgid "Read-only"
 msgstr "მხოლოდ წაკითხვადი"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-msgid  "Enabled"
+msgid "Enabled"
 msgstr "შესაძლებლობის მიცემა"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-msgid  "AutoFill"
+msgid "AutoFill"
 msgstr "ავტო შევსება"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-msgid  "Line count"
+msgid "Line count"
 msgstr "სტრიქონის დათვლა"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-msgid  "Max. text length"
+msgid "Max. text length"
 msgstr "მაქს. ტექსტის სიგრძე"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
-msgid  "Spin Button"
+msgid "Spin Button"
 msgstr "მარეგულირებელი ღილაკი"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
-msgid  "Strict format"
+msgid "Strict format"
 msgstr "მკაცრი ფორმატი"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "ათასების გამყოფი"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
-msgid  "Printable"
+msgid "Printable"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
-msgid  "Frame"
+msgid "Frame"
 msgstr "ჩარჩო"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-msgid  "Help text"
+msgid "Help text"
 msgstr "დახმარების ტექსტი"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-msgid  "Help URL"
+msgid "Help URL"
 msgstr "დახმარების URL"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-msgid  "Additional information"
+msgid "Additional information"
 msgstr "დამატებითი ინფორმაცია"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
-msgid  "Password character"
+msgid "Password character"
 msgstr "პაროლის თვისებები"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
-msgid  "Tristate"
+msgid "Tristate"
 msgstr "სამ მდგომარეობიანი"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
-msgid  "Empty string is NULL"
+msgid "Empty string is NULL"
 msgstr "ცარიელი სტრიქონი არის NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
+msgid "Decimal accuracy"
 msgstr "ათობითი სიზუსტე"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "გრაფიკები"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-msgid  "Default selection"
+msgid "Default selection"
 msgstr "სტანდარტის შერჩევა"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-msgid  "Default button"
+msgid "Default button"
 msgstr "სტანდარტის ბურთულა"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "წარწერის ველი"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-msgid  "Label"
+msgid "Label"
 msgstr "ჭდე"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "გასწორება"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr "ვერტ. სწორება"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "თავი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr "შუა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "ძირი"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-msgid  "Graphics alignment"
+msgid "Graphics alignment"
 msgstr "გრაფიკების გასწორება"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "შრიფტი"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "ფონის ფერი"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-msgid  "Border"
+msgid "Border"
 msgstr "საზღვარი"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-msgid  "Icon size"
+msgid "Icon size"
 msgstr "ხატულის ზომა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
-msgid  "Small"
+msgid "Small"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
-msgid  "Large"
+msgid "Large"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-msgid  "Positioning"
+msgid "Positioning"
 msgstr "პოზიცია"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-msgid  "Navigation"
+msgid "Navigation"
 msgstr "ნავიგაცია"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
-msgid  "Acting on a record"
+msgid "Acting on a record"
 msgstr "ჩანაწერის შესრულება"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-msgid  "Filtering / Sorting"
+msgid "Filtering / Sorting"
 msgstr "ფილტრაცია/სორტირება"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-msgid  "Horizontal scroll bar"
+msgid "Horizontal scroll bar"
 msgstr "ჰორიზონტალური გადაადგილების ზოლი"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-msgid  "Vertical scroll bar"
+msgid "Vertical scroll bar"
 msgstr "ვერტიკალური გადაადგილების ზოლი"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-msgid  "Word break"
+msgid "Word break"
 msgstr "გადამთანი"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-msgid  "Multiline input"
+msgid "Multiline input"
 msgstr "მრავლობითი შეტანა"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "რამდენიმე ასარჩევი"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-msgid  "Name"
+msgid "Name"
 msgstr "სახელი"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
-msgid  "Tab order"
+msgid "Tab order"
 msgstr "ტაბის ბრძანება"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
-msgid  "Mouse wheel scroll"
+msgid "Mouse wheel scroll"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
+msgid "Filter"
 msgstr "ფილტრი"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-msgid  "Sort"
+msgid "Sort"
 msgstr "სორტი"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-msgid  "Record marker"
+msgid "Record marker"
 msgstr "ჩანაწერის მარკერი"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
+msgid "Filter proposal"
 msgstr "ფილტრის ვარიანტი"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
-msgid  "Navigation bar"
+msgid "Navigation bar"
 msgstr "სანავიგაციო ზოლი"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
+msgid "Cycle"
 msgstr "ციკლი"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
-msgid  "Tabstop"
+msgid "Tabstop"
 msgstr "ტაბულაციის ნიშანი"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "მონაცემთა ველი"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-msgid  "Dropdown"
+msgid "Dropdown"
 msgstr "ჩამოშლა"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
+msgid "Bound field"
 msgstr "ზღვრის ველი"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-msgid  "List content"
+msgid "List content"
 msgstr "სიის შემადგენლობა"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-msgid  "Type of list contents"
+msgid "Type of list contents"
 msgstr "სიის შემადგენლობის ტიპი"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-msgid  "Content"
+msgid "Content"
 msgstr "შემადგენლობა"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
-msgid  "Content type"
+msgid "Content type"
 msgstr "შემადგენლობის ტიპი"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-msgid  "Allow additions"
+msgid "Allow additions"
 msgstr "დამატების ნებართვა"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-msgid  "Allow deletions"
+msgid "Allow deletions"
 msgstr "წაშლის ნებართვა"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-msgid  "Allow modifications"
+msgid "Allow modifications"
 msgstr "მოდიფიკაციის ნებართვა"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-msgid  "Add data only"
+msgid "Add data only"
 msgstr "მხოლოდ მონაცემების დამატება"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-msgid  "Data source"
+msgid "Data source"
 msgstr "მონაცემთა წყარო"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "კავშირის მასტერის ველები"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "მეორადი ველების დაკავშირება"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
-msgid  "Value min."
+msgid "Value min."
 msgstr "მნიშვნელობა მინ."
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
-msgid  "Value max."
+msgid "Value max."
 msgstr "მნიშვნელობა მაქს."
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-msgid  "Incr./decrement value"
+msgid "Incr./decrement value"
 msgstr "Incr./დეკრემენტის მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-msgid  "Currency symbol"
+msgid "Currency symbol"
 msgstr "ვალუტის სიმბოლო"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
-msgid  "Date min."
+msgid "Date min."
 msgstr "თარიღი მინ."
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
-msgid  "Date max."
+msgid "Date max."
 msgstr "თარიღი მაქს."
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-msgid  "Date format"
+msgid "Date format"
 msgstr "თარიღის ფორმატი"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "მონიშვნა"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
-msgid  "Time min."
+msgid "Time min."
 msgstr "დრო მინ."
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
-msgid  "Time max."
+msgid "Time max."
 msgstr "დრო მაქს."
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-msgid  "Time format"
+msgid "Time format"
 msgstr "დროის ფორმატი"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-msgid  "Prefix symbol"
+msgid "Prefix symbol"
 msgstr "პრეფიქსის სიმბოლო"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr "მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-msgid  "Formatting"
+msgid "Formatting"
 msgstr "ფორმატირება"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
-msgid  "Class ID"
+msgid "Class ID"
 msgstr "ID კლასი"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "სიმაღლე"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "სიგანე"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-msgid  "List index"
+msgid "List index"
 msgstr "სიის ინდექსი"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
-msgid  "Row height"
+msgid "Row height"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-msgid  "Fill color"
+msgid "Fill color"
 msgstr "ფერის შევსება"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-msgid  "Line color"
+msgid "Line color"
 msgstr "სტრიქონის ფერი"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
+msgid "Reference value (on)"
 msgstr "მოხსენიების მნიშვნელობა (ჩართვა)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
+msgid "Reference value (off)"
 msgstr "მოხსენიების მნიშვნელობა (გამორთვა)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-msgid  "List entries"
+msgid "List entries"
 msgstr "სიის შენატანები"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-msgid  "Action"
+msgid "Action"
 msgstr "მოქმედება"
 
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
+msgid "Type of submission"
 msgstr "დაქვემდებარების ტიპი"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
-msgid  "Default status"
+msgid "Default status"
 msgstr "სტანდარტის სტატუსი"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
-msgid  "Submission encoding"
+msgid "Submission encoding"
 msgstr "კოდირების გადაგზავნა"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-msgid  "Default value"
+msgid "Default value"
 msgstr "სტანდარტული მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-msgid  "Default text"
+msgid "Default text"
 msgstr "სტანდარტული ტექსტი"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-msgid  "Default date"
+msgid "Default date"
 msgstr "სტანდარტული თარიღი"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-msgid  "Default time"
+msgid "Default time"
 msgstr "სტანდარტული დრო"
 
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
+msgid "Frame"
+msgstr "ჩარჩო"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
-msgid  "Without frame"
+msgid "Without frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
-msgid  "Flat"
+msgid "Flat"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
-msgid  "Valuelist"
+msgid "Valuelist"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
-msgid  "Table"
+msgid "Table"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
-msgid  "Sql"
+msgid "Sql"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
-msgid  "Sql [Native]"
+msgid "Sql [Native]"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
-msgid  "Tablefields"
+msgid "Tablefields"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-msgid  "Center"
+msgid "Center"
 msgstr "ცენტრში"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
-msgid  "Submit form"
+msgid "Submit form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
-msgid  "Reset form"
+msgid "Reset form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
-msgid  "Open document/web page"
+msgid "Open document/web page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
-msgid  "First record"
+msgid "First record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
-msgid  "Previous record"
+msgid "Previous record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
-msgid  "Next record"
+msgid "Next record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
-msgid  "Last record"
+msgid "Last record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
-msgid  "Save record"
+msgid "Save record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
-msgid  "Undo data entry"
+msgid "Undo data entry"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
-msgid  "New record"
+msgid "New record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
-msgid  "Delete record"
+msgid "Delete record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
-msgid  "Refresh form"
+msgid "Refresh form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
-msgid  "Get"
+msgid "Get"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
-msgid  "Post"
+msgid "Post"
 msgstr ""
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
-msgid  "Multipart"
+msgid "Multipart"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
-msgid  "Standard (short)"
+msgid "Standard (short)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
-msgid  "Standard (short YY)"
+msgid "Standard (short YY)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
-msgid  "Standard (short YYYY)"
+msgid "Standard (short YYYY)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
-msgid  "Standard (long)"
+msgid "Standard (long)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
-msgid  "DD/MM/YY"
+msgid "DD/MM/YY"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
-msgid  "MM/DD/YY"
+msgid "MM/DD/YY"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
-msgid  "YY/MM/DD"
+msgid "YY/MM/DD"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
-msgid  "DD/MM/YYYY"
+msgid "DD/MM/YYYY"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
-msgid  "MM/DD/YYYY"
+msgid "MM/DD/YYYY"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
-msgid  "YYYY/MM/DD"
+msgid "YYYY/MM/DD"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
-msgid  "YY-MM-DD"
+msgid "YY-MM-DD"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
-msgid  "YYYY-MM-DD"
+msgid "YYYY-MM-DD"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
-msgid  "13:45"
+msgid "13:45"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
-msgid  "13:45:00"
+msgid "13:45:00"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
-msgid  "01:45 PM"
+msgid "01:45 PM"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
-msgid  "01:45:00 PM"
+msgid "01:45:00 PM"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
-msgid  "Not Selected"
+msgid "Not Selected"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
-msgid  "Selected"
+msgid "Selected"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
-msgid  "Not Defined"
+msgid "Not Defined"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
-msgid  "All records"
+msgid "All records"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
-msgid  "Active record"
+msgid "Active record"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
-msgid  "Current page"
+msgid "Current page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
-msgid  "Parent Form"
+msgid "Parent Form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
+msgid "None"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
-msgid  "Single"
+msgid "Single"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
-msgid  "Multi"
+msgid "Multi"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
-msgid  "Range"
+msgid "Range"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
-msgid  "Fill parameters"
+msgid "Fill parameters"
 msgstr "პარამეტრების შევსება"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
-msgid  "Execute action"
+msgid "Execute action"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
+msgid "After updating"
 msgstr "განახლების შემდეგ"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-msgid  "Before updating"
+msgid "Before updating"
 msgstr "განახლებამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
+msgid "Before record action"
 msgstr "ჩაწერის დაწყებამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
+msgid "After record action"
 msgstr "ჩაწერის დაწყების შემდეგ"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-msgid  "Confirm deletion"
+msgid "Confirm deletion"
 msgstr "წაშლის დადასტურება"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
+msgid "Error occurred"
 msgstr "შეცდომაა"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
-msgid  "When receiving focus"
+msgid "When receiving focus"
 msgstr "ფოკუსის მიღებისას"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
-msgid  "When losing focus"
+msgid "When losing focus"
 msgstr "ფოკუსის დაკარგვისას"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
-msgid  "Item status changed"
+msgid "Item status changed"
 msgstr "ელემენტის სტატუსის შეცვლა"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
+msgid "Key pressed"
 msgstr "ღილაკი დაჭერილია"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-msgid  "Key released"
+msgid "Key released"
 msgstr "ღილაკი აშვებულია"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
-msgid  "When loading"
+msgid "When loading"
 msgstr "ჩატვირთვისას"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
-msgid  "Before reloading"
+msgid "Before reloading"
 msgstr "გადატვირთვამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
-msgid  "When reloading"
+msgid "When reloading"
 msgstr "გადატვირთვისას"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-msgid  "Mouse moved while key pressed"
+msgid "Mouse moved while key pressed"
 msgstr "ღილაკის დაჭერისას მაუსი გადაადგილდა"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-msgid  "Mouse inside"
+msgid "Mouse inside"
 msgstr "მაუსი შიგნით"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-msgid  "Mouse outside"
+msgid "Mouse outside"
 msgstr "მაუსი გარეთ"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-msgid  "Mouse moved"
+msgid "Mouse moved"
 msgstr "მაუსი გადაადგილდა"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
-msgid  "Mouse button pressed"
+msgid "Mouse button pressed"
 msgstr "მაუსის ბურთულა დაჭერილია"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-msgid  "Mouse button released"
+msgid "Mouse button released"
 msgstr "მაუსის ბურთულა აშვებულია"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
+msgid "Before record change"
 msgstr "ჩანაწერის შეცვლამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-msgid  "After record change"
+msgid "After record change"
 msgstr "ჩანაწერის შეცვლის შემდეგ"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-msgid  "After resetting"
+msgid "After resetting"
 msgstr "ჩამოყრის შემდეგ"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-msgid  "Prior to reset"
+msgid "Prior to reset"
 msgstr "ჩამოყრემდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
-msgid  "Approve action"
+msgid "Approve action"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
+msgid "Before submitting"
 msgstr "დაწყებამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
+msgid "Text modified"
 msgstr "ტექსტი შეცვლილია"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
-msgid  "Before unloading"
+msgid "Before unloading"
 msgstr "ატვირთვამდე"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
-msgid  "When unloading"
+msgid "When unloading"
 msgstr "ატვირთვისას"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-msgid  "Changed"
+msgid "Changed"
 msgstr "შეცვლილია"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-msgid  "Events"
+msgid "Events"
 msgstr "მოვლენები"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
-msgid  "Analyze SQL command"
+msgid "Analyze SQL command"
 msgstr "SQL ბრძანების ანალიზი"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "PositionX"
+msgid "PositionX"
 msgstr "მდგონარეობაX"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "PositionY"
+msgid "PositionY"
 msgstr "მდგომარეობაY"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "წოდება"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-msgid  "Page (step)"
+msgid "Page (step)"
 msgstr "გვერდი (საფეხური)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-msgid  "Progress value"
+msgid "Progress value"
 msgstr "პროგრასის მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
-msgid  "Progress value min."
+msgid "Progress value min."
 msgstr "პროგრასის მნიშვნელობა მინ."
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
-msgid  "Progress value max."
+msgid "Progress value max."
 msgstr "პროგრასის მნიშვნელობა მაქს."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-msgid  "Scroll value"
+msgid "Scroll value"
 msgstr "გადაადგილების მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
-msgid  "Scroll value max."
+msgid "Scroll value max."
 msgstr "გადაადგილების მნიშვნელობა მაქს."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
-msgid  "Scroll value min."
+msgid "Scroll value min."
 msgstr "გადაადგილების მნიშვნელობა მინ."
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-msgid  "Default scroll value"
+msgid "Default scroll value"
 msgstr "სტანდარტული გადაადგილების მნიშვნელობა"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-msgid  "Small change"
+msgid "Small change"
 msgstr "მცირე ცვლილება"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-msgid  "Large change"
+msgid "Large change"
 msgstr "დიდი ცვლილება"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-msgid  "Delay"
+msgid "Delay"
 msgstr "შეყოვნება"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
-msgid  "Repeat"
+msgid "Repeat"
 msgstr "გამეორება"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
-msgid  "Visible size"
+msgid "Visible size"
 msgstr "ხილული ზომა"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "ორიენტაცია"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
-msgid  "Horizontal"
+msgid "Horizontal"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
-msgid  "Vertical"
+msgid "Vertical"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
+msgid "While adjusting"
 msgstr "მორგებისას"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "თარიღი"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
-msgid  "State"
+msgid "State"
 msgstr "მდგომარეობა"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "დრო"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-msgid  "Scale"
+msgid "Scale"
 msgstr "მასშტაბი"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-msgid  "Button type"
+msgid "Button type"
 msgstr "ბურთულის ტიპი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "მონაცემთა წყაროსთან \"$name$\" კავშირი ვერ დამყარდა."
 
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
+msgid "Text"
+msgstr ""
+
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
-msgid  "Linked cell"
+msgid "Linked cell"
 msgstr "გადაბმული უჯრედი"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
+msgid "Source cell range"
 msgstr "საწყისი უჯრედთა დიაპაზონი"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
-msgid  "Contents of the linked cell"
+msgid "Contents of the linked cell"
 msgstr "გადაბმული უჯრედების შემცველობა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
-msgid  "The selected entry"
+msgid "The selected entry"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
-msgid  "Position of the selected entry"
+msgid "Position of the selected entry"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-msgid  "Scrollbars"
+msgid "Scrollbars"
 msgstr "გადაადგილების ზოლები"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-msgid  "Single-line"
+msgid "Single-line"
 msgstr "ერთ-სტრიქონიანი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-msgid  "Multi-line"
+msgid "Multi-line"
 msgstr "მრავალ-სტრიქონიანი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
+msgid "Multi-line with formatting"
 msgstr "მრავალხაზიანი ფორმატირებით"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-msgid  "Symbol color"
+msgid "Symbol color"
 msgstr "სიმბოლოს ფერი"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-msgid  "Text lines end with"
+msgid "Text lines end with"
 msgstr "ტექსტის ხაზე"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-msgid  "LF (Unix)"
+msgid "LF (Unix)"
 msgstr "LF (უნიქსი)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-msgid  "CR+LF (Windows)"
+msgid "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
+msgid "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
+msgid "Horizontal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
+msgid "Vertical"
+msgstr ""
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-msgid  "Both"
+msgid "Both"
 msgstr "ორივე"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
+msgid "Table"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
+msgid "Query"
+msgstr ""
+
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL ბრძანება"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
+msgid "Toggle"
 msgstr "გადართვა"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
-msgid  "Take Focus on Click"
+msgid "Take Focus on Click"
 msgstr "ფოკუსი დაჭერაზე"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-msgid  "Hide selection"
+msgid "Hide selection"
 msgstr "მონიშვნის დამალვა"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-msgid  "Style"
+msgid "Style"
 msgstr "სტილი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
-msgid  "3D"
+msgid "3D"
 msgstr "3D"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
+msgid "Flat"
+msgstr ""
+
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-msgid  "Border color"
+msgid "Border color"
 msgstr "საზღვრის ფერი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
-msgid  "Left top"
+msgid "Left top"
 msgstr "ზედა მარცხენა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
-msgid  "Left centered"
+msgid "Left centered"
 msgstr "მარცხენა ცენტრში"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
-msgid  "Left bottom"
+msgid "Left bottom"
 msgstr "მარცხნივ ქვედა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
-msgid  "Right top"
+msgid "Right top"
 msgstr "მარჯვნივ ზედა"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
-msgid  "Right centered"
+msgid "Right centered"
 msgstr "მარჯვენა ცენტრში"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
-msgid  "Right bottom"
+msgid "Right bottom"
 msgstr "მარჯვენა ქვემოთ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
-msgid  "Above left"
+msgid "Above left"
 msgstr "მარცხენა ზემოთ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-msgid  "Above centered"
+msgid "Above centered"
 msgstr "ზედა ცენტრში"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
-msgid  "Above right"
+msgid "Above right"
 msgstr "ზედა მარჯვნივ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
-msgid  "Below left"
+msgid "Below left"
 msgstr "ქვედა მარცხნივ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-msgid  "Below centered"
+msgid "Below centered"
 msgstr "ქვედა ცენტრში"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
-msgid  "Below right"
+msgid "Below right"
 msgstr "ქვემოთ მარჯვნივ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-msgid  "Centered"
+msgid "Centered"
 msgstr "ცენტრში"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
+msgid "Wrap text automatically"
 msgstr "ტექსტის ავტომატურად გადატანა"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-msgid  "Text type"
+msgid "Text type"
 msgstr "ტექსტის ტიპი"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
-msgid  "XML data model"
+msgid "XML data model"
 msgstr "XML მონემთა ნიმუში"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
+msgid "Binding expression"
 msgstr "დამაკავშირებელი გამოსახულება"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-msgid  "Required"
+msgid "Required"
 msgstr "სავალდებულოა"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-msgid  "List entry source"
+msgid "List entry source"
 msgstr "სიის შენატანის დასაწყისი"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
+msgid "Relevant"
 msgstr ""
 
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
+msgid "Read-only"
+msgstr "მხოლოდ წაკითხვადი"
+
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-msgid  "Constraint"
+msgid "Constraint"
 msgstr "მუდმივი"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-msgid  "Calculation"
+msgid "Calculation"
 msgstr "გამოთვლა"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
-msgid  "Data type"
+msgid "Data type"
 msgstr "მონაცემთა ტიპი"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
+msgid "Whitespaces"
 msgstr "თეთრი არეალები"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-msgid  "Preserve"
+msgid "Preserve"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr "ჩანაცვლება"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
+msgid "Collapse"
 msgstr "კოლაპსი"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-msgid  "Pattern"
+msgid "Pattern"
 msgstr "შბლონი"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-msgid  "Length"
+msgid "Length"
 msgstr "სიგრძე"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-msgid  "Length (at least)"
+msgid "Length (at least)"
 msgstr "სიგრძე (სულ მცირე)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-msgid  "Length (at most)"
+msgid "Length (at most)"
 msgstr "სიგრძე (ყველაზე დიდი)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
+msgid "Digits (total)"
 msgstr "ციფრები (მთლიანი)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
-msgid  "Digits (fraction)"
+msgid "Digits (fraction)"
 msgstr "ციფრები (ფრაქციები)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
-msgid  "Max. (inclusive)"
+msgid "Max. (inclusive)"
 msgstr "მაქს. (შემავალი)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
-msgid  "Max. (exclusive)"
+msgid "Max. (exclusive)"
 msgstr "მაქს. (გამავალი)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
-msgid  "Min. (inclusive)"
+msgid "Min. (inclusive)"
 msgstr "მინ. (შემავალი)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
-msgid  "Min. (exclusive)"
+msgid "Min. (exclusive)"
 msgstr "მინ. (გამავალი)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
+msgid "Submission"
 msgstr "რეგისტრაცია"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr "გადაბმა"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
-msgid  "Selection type"
+msgid "Selection type"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
-msgid  "Root displayed"
+msgid "Root displayed"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
-msgid  "Show handles"
+msgid "Show handles"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
-msgid  "Show root handles"
+msgid "Show root handles"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
-msgid  "Editable"
+msgid "Editable"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
-msgid  "Invokes stop node editing"
+msgid "Invokes stop node editing"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
-msgid  "With title bar"
+msgid "With title bar"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
-msgid  "No Label"
+msgid "No Label"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
+msgid "No"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
-msgid  "Keep Ratio"
+msgid "Keep Ratio"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
-msgid  "Fit to Size"
+msgid "Fit to Size"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
-msgid  "Input required"
+msgid "Input required"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
-msgid  "Text direction"
+msgid "Text direction"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
-msgid  "Left-to-right"
+msgid "Left-to-right"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
-msgid  "Right-to-left"
+msgid "Right-to-left"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
-msgid  "Use superordinate object settings"
+msgid "Use superordinate object settings"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
-msgid  "Never"
+msgid "Never"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
-msgid  "When focused"
+msgid "When focused"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
-msgid  "Always"
+msgid "Always"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
-msgid  "Anchor"
+msgid "Anchor"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Paragraph"
+msgid "To Paragraph"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
-msgid  "As Character"
+msgid "As Character"
 msgstr "თვისებები"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
-msgid  "To Page"
+msgid "To Page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
-msgid  "To Frame"
+msgid "To Frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
-msgid  "To Character"
+msgid "To Character"
 msgstr "თვისებები"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
+msgid "To Page"
+msgstr ""
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
-msgid  "To Cell"
+msgid "To Cell"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
+msgid "Bold Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-msgid  "(Default)"
+msgid "(Default)"
 msgstr ""
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
-msgid  "New Data Type"
+msgid "New Data Type"
 msgstr "ახალი მონაცემთა ტიპი"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
-msgid  "Type a name for the new data type:"
+msgid "Type a name for the new data type:"
 msgstr "ჩაბეჭდეთ ახალი მონაცემთა ტიპის სახელი:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "გნებავთ მონაცემთა ტიპის '#type#' თარგმნა ნიმუშიდან?\nგახსოვდეთ, რომ ეს დააზიანებს ყველა კონტროლს დაკავშირებულს ამ მონაცემთა ტიპთან."
+msgid "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+"გნებავთ მონაცემთა ტიპის '#type#' თარგმნა ნიმუშიდან?\n"
+"გახსოვდეთ, რომ ეს დააზიანებს ყველა კონტროლს დაკავშირებულს ამ მონაცემთა "
+"ტიპთან."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-msgid  "Button"
+msgid "Button"
 msgstr "ბურთულა"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-msgid  "Option Button"
+msgid "Option Button"
 msgstr "პარამეტრის ბურთულა"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-msgid  "Check Box"
+msgid "Check Box"
 msgstr "თოლია"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "წარწერის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-msgid  "Group Box"
+msgid "Group Box"
 msgstr "ჯგუფის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-msgid  "Text Box"
+msgid "Text Box"
 msgstr "ტესტური ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
+msgid "Formatted Field"
 msgstr "ფორმატირებული ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-msgid  "List Box"
+msgid "List Box"
 msgstr "სიის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-msgid  "Combo Box"
+msgid "Combo Box"
 msgstr "კომბო ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-msgid  "Image Button"
+msgid "Image Button"
 msgstr "გამოსახულების ბურთულა"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-msgid  "Hidden Control"
+msgid "Hidden Control"
 msgstr "დამალული კონტროლი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-msgid  "Control (unknown type)"
+msgid "Control (unknown type)"
 msgstr "კონტროლი (უცნობი ტიპი)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
+msgid "Image Control"
 msgstr "გამოსახულების კონტროლი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-msgid  "File Selection"
+msgid "File Selection"
 msgstr "ფაილის მონიშვნა"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-msgid  "Date Field"
+msgid "Date Field"
 msgstr "მონაცემთა ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-msgid  "Time Field"
+msgid "Time Field"
 msgstr "დროის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-msgid  "Numeric Field"
+msgid "Numeric Field"
 msgstr "ნუმერაციული ვალი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-msgid  "Currency Field"
+msgid "Currency Field"
 msgstr "ვალუტის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-msgid  "Pattern Field"
+msgid "Pattern Field"
 msgstr "შაბლონის ველი"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-msgid  "Table Control "
+msgid "Table Control "
 msgstr "ცხრილის კონტროლი "
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "ზოგადი"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "მონაცემები"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr ""
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr ""
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
-msgid  "<Embedded-Image>"
+msgid "<Embedded-Image>"
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr ""
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr "ეს არის კონტროლის ველები რომლებიც არ გამოიყენება როგორც ჭდის ველები $control_class$ $control_name$ -თვის."
+msgid "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+"ეს არის კონტროლის ველები რომლებიც არ გამოიყენება როგორც ჭდის ველები "
+"$control_class$ $control_name$ -თვის."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-msgid  "~No assignment"
+msgid "~No assignment"
 msgstr "~განაწილების გარეშე"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-msgid  "Label Field Selection"
+msgid "Label Field Selection"
 msgstr "ჭდის ველის მონიშვნა"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-msgid  "Forms"
+msgid "Forms"
 msgstr "ფორმები"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
-msgid  "Tab Order"
+msgid "Tab Order"
 msgstr "ფოკუსის მიმდევრობა"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-msgid  "Controls"
+msgid "Controls"
 msgstr "კონტროლი"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-msgid  "Move Up"
+msgid "Move Up"
 msgstr "გადაადგილება ზემოთ"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-msgid  "Move Down"
+msgid "Move Down"
 msgstr "გადაადგილება ზემოთ"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-msgid  "Automatic Sort"
+msgid "Automatic Sort"
 msgstr "ავტომატური სორტირება"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
-msgid  "Set"
+msgid "Set"
 msgstr "დაყენება"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-msgid  "Linear ascending"
+msgid "Linear ascending"
 msgstr "წრფივი აღმავლობა"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-msgid  "Linear descending"
+msgid "Linear descending"
 msgstr "წრფივი დაღმავლობა"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-msgid  "Original values"
+msgid "Original values"
 msgstr "საწყისი მნიშვნელობა"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-msgid  "Exponential increasing"
+msgid "Exponential increasing"
 msgstr "ექსპონენციალური ზრდა"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-msgid  "About\n Dev~ice"
-msgstr "შესახებ\n მოწ~ყობილობა"
+msgid "About\n Dev~ice"
+msgstr ""
+"შესახებ\n"
+" მოწ~ყობილობა"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
-msgid  "Create\nPreview"
-msgstr "შექმნა\nგადახედვა"
+msgid "Create\nPreview"
+msgstr ""
+"შექმნა\n"
+"გადახედვა"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "გადახედვა"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-msgid  "Scan area"
+msgid "Scan area"
 msgstr "სკანირების არე"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
-msgid  "Left:"
+msgid "Left:"
 msgstr "მარცხენა ნაწილი:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
-msgid  "Top:"
+msgid "Top:"
 msgstr "ზედა:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
-msgid  "Right:"
+msgid "Right:"
 msgstr "მარჯვენა ნაწილი:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
-msgid  "Bottom:"
+msgid "Bottom:"
 msgstr "ქვედა ნაწილი:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
-msgid  "Device used:"
+msgid "Device used:"
 msgstr "გამოყენებული მოწყობილობა:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
-msgid  "Resolution [~DPI]"
+msgid "Resolution [~DPI]"
 msgstr "გარჩევადობა [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
-msgid  "Show advanced options"
+msgid "Show advanced options"
 msgstr "გაფართოებული პარამეტრების ჩვენება"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-msgid  "Options:"
+msgid "Options:"
 msgstr "პარამეტრები:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
-msgid  "Vector element"
+msgid "Vector element"
 msgstr "ვექტორული ელემენტი"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
-msgid  "Set"
+msgid "Set"
 msgstr "დაყენება"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-msgid  "Scanner"
+msgid "Scanner"
 msgstr "სკანერი"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "მოწყობილობა: %s\nმწარმოებელი: %s\nმოდელი: %s\nტიპი: %s"
+msgid "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+"მოწყობილობა: %s\n"
+"მწარმოებელი: %s\n"
+"მოდელი: %s\n"
+"ტიპი: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
-msgid  "An error occurred while scanning."
+msgid "An error occurred while scanning."
 msgstr "შეცდომა წარმოიშვა სკანირების დროს."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "მოწყობილობას არ აქვს გადახედვის პარამეტრი. ამიტომ გადახედვის მაგივრად გამოყენებული იქნება ჩვეულებრივი სკანირება. ამას შეიძლება  დასჭირდეს გარკვეული დრო. "
+msgid "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"მოწყობილობას არ აქვს გადახედვის პარამეტრი. ამიტომ გადახედვის მაგივრად "
+"გამოყენებული იქნება ჩვეულებრივი სკანირება. ამას შეიძლება  დასჭირდეს "
+"გარკვეული დრო. "
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgid "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "SANE-ის ინტერფეისის ინიციალიზაცია არ მოხერხდა. სკანირება შეუძლებელია."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "~განახლებაზე შემოწმება..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
-msgid  "Checking..."
+msgid "Checking..."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
-msgid  "Checking for an update failed."
+msgid "Checking for an update failed."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgid "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
-msgid  "Check for Updates"
+msgid "Check for Updates"
 msgstr "~განახლებაზე შემოწმება..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgid "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
-msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgid "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
-msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgid "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
-msgid  "Do you really want to cancel the download?"
+msgid "Do you really want to cancel the download?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
-msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgid "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
-msgid  "Install ~now"
+msgid "Install ~now"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
-msgid  "Install ~later"
+msgid "Install ~later"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
-msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgid "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
-msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgid "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
-msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgid "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
-msgid  "Reload File"
+msgid "Reload File"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
-msgid  "Continue"
+msgid "Continue"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
-msgid  "%PERCENT%"
+msgid "%PERCENT%"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
-msgid  "Status"
+msgid "Status"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
-msgid  "~Download"
+msgid "~Download"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
-msgid  "~Install"
+msgid "~Install"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
-msgid  "~Pause"
+msgid "~Pause"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
-msgid  "~Resume"
+msgid "~Resume"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
+msgid "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
-msgid  "Click here to start the download."
+msgid "Click here to start the download."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
+msgid "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "Click here for more information."
+msgid "Click here for more information."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
+msgid "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
-msgid  "Download of update begins."
+msgid "Download of update begins."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
-msgid  "Download of update in progress"
+msgid "Download of update in progress"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
-msgid  "Download of update paused"
+msgid "Download of update paused"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
-msgid  "Click here to resume."
+msgid "Click here to resume."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Download of update stalled"
+msgid "Download of update stalled"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
+msgid "Click here for more information."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
-msgid  "Download of update completed"
+msgid "Download of update completed"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
-msgid  "Click here to start the installation."
+msgid "Click here to start the installation."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Updates for extensions available"
+msgid "Updates for extensions available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
+msgid "Click here for more information."
 msgstr ""

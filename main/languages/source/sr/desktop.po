@@ -1,849 +1,1360 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Добро дошли у %PRODUCTNAME %PRODUCTVERSION"
+
+#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+msgid "Welcome"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
+msgid "License Agreement"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+msgid "Personal Data"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+msgid "User name"
+msgstr ""
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 #, fuzzy
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "Мрежно ажурирање"
+
+#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+msgid "Registration"
+msgstr ""
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Овај помоћник ће вас провести кроз Уговор о лиценцирању, пренос података корисника са %OLD_VERSION и поставку %PRODUCTNAME.\n\nКликните „Напред“ да наставите."
+msgid "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Овај помоћник ће вас провести кроз Уговор о лиценцирању, пренос података "
+"корисника са %OLD_VERSION и поставку %PRODUCTNAME.\n"
+"\n"
+"Кликните „Напред“ да наставите."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Овај помоћник ће вас провести кроз процес поставке %PRODUCTNAME.\n\nКликните „Напред“ да наставите."
+msgid "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Овај помоћник ће вас провести кроз процес поставке %PRODUCTNAME.\n"
+"\n"
+"Кликните „Напред“ да наставите."
+
+#: migration/wizard.src#STR_FINISH.STRING.TEXT
+msgid "~Finish"
+msgstr ""
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 #, fuzzy
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "Сада имате прилику да подржите и допринесете најживљој заједници овореног кода у свету.\n\nУписом у списак корисника помозите нам да покажемо да %PRODUCTNAME већ има значајан удео на тржишту.\n\nУпис је добровољан и необавезан."
+msgid "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+"Сада имате прилику да подржите и допринесете најживљој заједници овореног "
+"кода у свету.\n"
+"\n"
+"Уписом у списак корисника помозите нам да покажемо да %PRODUCTNAME већ има "
+"значајан удео на тржишту.\n"
+"\n"
+"Упис је добровољан и необавезан."
 
 #: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "Грешка при покретању веб прегледника.\nПроверите подешавања пакета %PRODUCTNAME и веб прегледника."
+msgid "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"Грешка при покретању веб прегледника.\n"
+"Проверите подешавања пакета %PRODUCTNAME и веб прегледника."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you really want to decline?"
+msgid "Do you really want to decline?"
 msgstr "Заиста не желите да прихватите услове?"
+
+#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Добро дошли у %PRODUCTNAME %PRODUCTVERSION"
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Овај помоћник ће вас провести кроз Уговора о лиценцирању и поставку пакета %PRODUCTNAME.\n\nКликните „Напред“ да наставите."
+msgid "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Овај помоћник ће вас провести кроз Уговора о лиценцирању и поставку пакета %"
+"PRODUCTNAME.\n"
+"\n"
+"Кликните „Напред“ да наставите."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please follow these steps to accept the license"
+msgid "Please follow these steps to accept the license"
 msgstr "Пратите ове кораке како бисте прихватили лиценцу"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Погледајте цео Уговор о лиценцирању. Користите клизач или дугме „%PAGEDOWN“ на овом прозорчету како бисте видели цео текст лиценце."
+msgid "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Погледајте цео Уговор о лиценцирању. Користите клизач или дугме „%PAGEDOWN“ "
+"на овом прозорчету како бисте видели цео текст лиценце."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgid "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Кликните „Прихватам“ ако прихватате услове Уговора."
+
+#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "Scroll Do~wn"
+msgstr ""
+
+#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+msgid "~Accept"
+msgstr ""
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 #, fuzzy
-msgid  "~Decline"
+msgid "~Decline"
 msgstr "~Одбацујем"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Transfer personal data"
+msgid "Transfer personal data"
 msgstr "Пренос личних података"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "Већина личних података из %OLDPRODUCT инсталације може се поново користити у %PRODUCTNAME %PRODUCTVERSION.\n\nПоништите поље за потврду уколико не желите да поново користите било која подешавања из пакета %PRODUCTNAME %PRODUCTVERSION."
+msgid "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+"Већина личних података из %OLDPRODUCT инсталације може се поново користити у "
+"%PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Поништите поље за потврду уколико не желите да поново користите било која "
+"подешавања из пакета %PRODUCTNAME %PRODUCTVERSION."
+
+#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
+#, fuzzy
+msgid "Transfer personal data"
+msgstr "Пренос личних података"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Online Update"
+msgstr "Мрежно ажурирање"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "Након одређеног времена %PRODUCTNAME аутоматски тражи нова издања.\nТоком овог процеса, мрежно ажурирање не преноси ваше личне податке.\nЧим се појави ново издање, бићете обавештени.\n\nМожете подесити ову могућност у „Алатке - Подешавања... - %PRODUCTNAME - Мрежно ажурирање“."
+msgid "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+"Након одређеног времена %PRODUCTNAME аутоматски тражи нова издања.\n"
+"Током овог процеса, мрежно ажурирање не преноси ваше личне податке.\n"
+"Чим се појави ново издање, бићете обавештени.\n"
+"\n"
+"Можете подесити ову могућност у „Алатке - Подешавања... - %PRODUCTNAME - "
+"Мрежно ажурирање“."
+
+#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
+msgid "~Check for updates automatically"
+msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Provide your full name and initials below"
+msgid "Provide your full name and initials below"
 msgstr "Унесите пуно име и иницијале"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr "Име ће се користити при запису својстава докумената, у шаблонима и за обележавање ваших измена у документима."
+msgid "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+"Име ће се користити при запису својстава докумената, у шаблонима и за "
+"обележавање ваших измена у документима."
+
+#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+msgid "~First name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+msgid "~Last name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
+msgid "~Initials"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+msgid "~Father's name"
+msgstr ""
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Registration"
+msgid "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME упис корисника"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "Сада можете да се упишете као корисник пакета %PRODUCTNAME. Овај корак је добровољан и необавезан.\n\nУколико се упишете, бићете у могућности да будете обавештени о току развоја овог производа."
+msgid "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+"Сада можете да се упишете као корисник пакета %PRODUCTNAME. Овај корак је "
+"добровољан и необавезан.\n"
+"\n"
+"Уколико се упишете, бићете у могућности да будете обавештени о току развоја "
+"овог производа."
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I want to register ~now"
+msgid "I want to register ~now"
 msgstr "Желим ~сада да се упишем"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I want to register ~later"
+msgid "I want to register ~later"
 msgstr "Желим да се упишем ~касније"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I do not want to ~register"
+msgid "I do not want to ~register"
 msgstr "~Не желим да се упишем"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "Надамо се да ћете уживати радећи са  %PRODUCTNAME.\n\nЗа напуштање помоћника кликните „Заврши“."
+msgid "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+"Надамо се да ћете уживати радећи са  %PRODUCTNAME.\n"
+"\n"
+"За напуштање помоћника кликните „Заврши“."
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "Should the file \"$1\" be restored?"
+msgid "Should the file \"$1\" be restored?"
 msgstr "Опоравити датотеку „$1“?"
 
+#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
+msgid "File Recovery"
+msgstr ""
+
 #: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "Дошло је до се неповратне грешке у раду програма.\n\nСве измењене датотеке су сачуване и \nвероватно се могу обновити поновним покретањем програма."
+msgid "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr ""
+"Дошло је до се неповратне грешке у раду програма.\n"
+"\n"
+"Све измењене датотеке су сачуване и \n"
+"вероватно се могу обновити поновним покретањем програма."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 #, fuzzy
-msgid  "The application cannot be started. "
+msgid "The application cannot be started. "
 msgstr "Програм не може да се покрене. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The configuration directory \"$1\" could not be found."
+msgid "The configuration directory \"$1\" could not be found."
 msgstr "Директоријум са подешавањима „$1“ није пронађен."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
 #, fuzzy
-msgid  "The installation path is invalid."
+msgid "The installation path is invalid."
 msgstr "Инсталациона путања је неисправна."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
 #, fuzzy
-msgid  "The installation path is not available."
+msgid "The installation path is not available."
 msgstr "Инсталациона путања није доступна."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
 #, fuzzy
-msgid  "An internal error occurred."
+msgid "An internal error occurred."
 msgstr "Појавила се интерна грешка."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" is corrupt."
+msgid "The configuration file \"$1\" is corrupt."
 msgstr "Датотека са подешавањима „$1“ је оштећена."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" was not found."
+msgid "The configuration file \"$1\" was not found."
 msgstr "Датотека са подешавањима „$1“ није пронађена."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" does not support the current version."
+msgid "The configuration file \"$1\" does not support the current version."
 msgstr "Датотека са подешавањима „$1“ не подржава тренутно издање програма."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The user interface language cannot be determined."
+msgid "The user interface language cannot be determined."
 msgstr "Не могу да одредим језик корисничког окружења."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The component manager is not available."
+msgid "The component manager is not available."
 msgstr "Управник компоненти није доступан."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The configuration service is not available."
+msgid "The configuration service is not available."
 msgstr "Сервис за подешавање није доступан."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
-msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr "Имате још једну инстанцу која ради у различитој сесији терминала. Затворите ту инстанцу и потом покушајте поново."
+msgid "You have another instance running in a different terminal session. Close that instance and then try again."
+msgstr ""
+"Имате још једну инстанцу која ради у различитој сесији терминала. Затворите "
+"ту инстанцу и потом покушајте поново."
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 #, fuzzy
-msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "Како бисте поправили инсталатера, покрените програм за подешавање са ЦД-a или из фасцикле која садржи инсталационе пакете."
+msgid "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr ""
+"Како бисте поправили инсталатера, покрените програм за подешавање са ЦД-a "
+"или из фасцикле која садржи инсталационе пакете."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "The startup settings for accessing the central configuration are incomplete. "
+msgid "The startup settings for accessing the central configuration are incomplete. "
 msgstr "Почетна подешавања за приступ централним подешавањима нису потпуна. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 #, fuzzy
-msgid  "A connection to the central configuration could not be established. "
+msgid "A connection to the central configuration could not be established. "
 msgstr "Веза са централним подешавањем није успостављена. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "You cannot access the central configuration because of missing access rights. "
+msgid "You cannot access the central configuration because of missing access rights. "
 msgstr "Не можете приступити централном подешавању јер немате права приступа."
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
 #, fuzzy
-msgid  "A general error occurred while accessing your central configuration. "
+msgid "A general error occurred while accessing your central configuration. "
 msgstr "Дошло је до опште грешке приликом приступања централном подешавању. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 #, fuzzy
-msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "Измене у личним подешавањима не могу се сачувати у централном подешавању јер недостају права приступа. "
+msgid "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr ""
+"Измене у личним подешавањима не могу се сачувати у централном подешавању јер "
+"недостају права приступа. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "%PRODUCTNAME се не може покренути због грешке у приступу подешавањима за %PRODUCTNAME.\n\nКонтактирајте администратора система."
+msgid "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+"%PRODUCTNAME се не може покренути због грешке у приступу подешавањима за %"
+"PRODUCTNAME.\n"
+"\n"
+"Контактирајте администратора система."
+
+#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
+msgid "The following internal error has occurred: "
+msgstr ""
 
 #: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "Или још један исти %PRODUCTNAME приступа вашим личним подешавањима или су лична подешавања закључана.\nИстовремени приступ може довести до недоследности у личним подацима. Пре него што наставите, уверите се да корисник „$u“ не користи %PRODUCTNAME на домаћину „$h“.\n\nЗаиста желите да наставите?"
+msgid "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr ""
+"Или још један исти %PRODUCTNAME приступа вашим личним подешавањима или су "
+"лична подешавања закључана.\n"
+"Истовремени приступ може довести до недоследности у личним подацима. Пре "
+"него што наставите, уверите се да корисник „$u“ не користи %PRODUCTNAME на "
+"домаћину „$h“.\n"
+"\n"
+"Заиста желите да наставите?"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Printing is disabled. No documents can be printed."
+msgid "Printing is disabled. No documents can be printed."
 msgstr "Штампање је искључено. Документи се не могу штампати."
 
 #: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr "Ова пробна верзија је истекла. Да бисте сазнали више о %PRODUCTNAME,\nпосетите http://www.openoffice.org"
+msgid "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
+"Ова пробна верзија је истекла. Да бисте сазнали више о %PRODUCTNAME,\n"
+"посетите http://www.openoffice.org"
+
+#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The path manager is not available.\n"
+msgid "The path manager is not available.\n"
 msgstr "Управник путање није доступан.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Кориснички инсталатер програма %PRODUCTNAME не може да доврши инсталацију због недостастка простора на диску. Ослободите још места на диску на следећој локацији и поново покрените %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Кориснички инсталатер програма %PRODUCTNAME не може да доврши инсталацију "
+"због недостастка простора на диску. Ослободите још места на диску на "
+"следећој локацији и поново покрените %PRODUCTNAME:\n"
+"\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Кориснички инсталатер програма %PRODUCTNAME не може да доврши инсталацију због недостатка права приступа. Проверите да ли имате потребна права приступа за следећу локацију и поново покрените %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"Кориснички инсталатер програма %PRODUCTNAME не може да доврши инсталацију "
+"због недостатка права приступа. Проверите да ли имате потребна права "
+"приступа за следећу локацију и поново покрените %PRODUCTNAME:\n"
+"\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
 #, fuzzy
-msgid  "Extension Software License Agreement of $NAME:"
+msgid "Extension Software License Agreement of $NAME:"
 msgstr "Уговор о лиценцирању додатка за $NAME:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
 #, fuzzy
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr "Прочитајте целокупан приложени Уговор о лиценцирању. За прихватање Уговора о лиценцирању укуцајте „yes“ у терминалу и притисните тастер Enter. За одбацивање Уговора укуцајте „no“ како би напустили инсталирање додатка."
+msgid "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr ""
+"Прочитајте целокупан приложени Уговор о лиценцирању. За прихватање Уговора о "
+"лиценцирању укуцајте „yes“ у терминалу и притисните тастер Enter. За "
+"одбацивање Уговора укуцајте „no“ како би напустили инсталирање додатка."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
 #, fuzzy
-msgid  "[Enter \"yes\" or \"no\"]:"
+msgid "[Enter \"yes\" or \"no\"]:"
 msgstr "[Унесите „yes“ или „no“]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
 #, fuzzy
-msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Ваш унос није коректан унесите „yes“ (да) или „no“ (не):"
+
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+msgid "YES"
+msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y"
+msgid "Y"
 msgstr "Y за ДА"
+
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+msgid "NO"
+msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 #, fuzzy
-msgid  "N"
+msgid "N"
 msgstr "N за НЕ"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
 #, fuzzy
-msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr "Не могу да покренем unopkg. Датотека браве указује да је програм већ покренут, а ако то није случај обришите датотеку са:"
+msgid "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
+"Не могу да покренем unopkg. Датотека браве указује да је програм већ "
+"покренут, а ако то није случај обришите датотеку са:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "ERROR: "
+msgid "ERROR: "
 msgstr "ГРЕШКА: "
 
+#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+msgid "Unknown"
+msgstr ""
+
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
-msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgid "Extension requires at least Apache OpenOffice %VERSION"
 msgstr "Додатак захтева најмање Apache OpenOffice %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
-msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgid "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
 msgstr "Додатак не подржава новија издања од: Apache OpenOffice %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic Library"
+msgid "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME бејзик библиотека"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
 #, fuzzy
-msgid  "Dialog Library"
+msgid "Dialog Library"
 msgstr "Прозорче библиотека"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
 #, fuzzy
-msgid  "The library name could not be determined."
+msgid "The library name could not be determined."
 msgstr "Име библиотеке се не може одредити."
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "This library name already exists. Please choose a different name."
+msgid "This library name already exists. Please choose a different name."
 msgstr "Име библиотеке већ постоји. Унесите друго име."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Enabling: "
+msgid "Enabling: "
 msgstr "Укључивање пакета: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Disabling: "
+msgid "Disabling: "
 msgstr "Искључивање пакета:"
+
+#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+msgid "Cannot detect media-type: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+msgid "This media-type is not supported: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+msgid "An error occurred while enabling: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+msgid "An error occurred while disabling: "
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
+msgid "Configuration Schema"
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
+msgid "Configuration Data"
+msgstr ""
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be installed because:\n"
+msgid "The extension cannot be installed because:\n"
 msgstr "Не могу да инсталирам додатак зато што:\n"
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
+msgid "The extension will not be installed because an error occurred in the Help files:\n"
+msgstr ""
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 #, fuzzy
-msgid  "%MACROLANG Library"
+msgid "%MACROLANG Library"
 msgstr "%MACROLANG Библиотека"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 #, fuzzy
-msgid  "Extension"
+msgid "Extension"
 msgstr "проширење"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Dynamic Library Component"
+msgid "UNO Dynamic Library Component"
 msgstr "UNO Компонента динамичке библиотеке"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Java Component"
+msgid "UNO Java Component"
 msgstr "UNO Java компонента"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Python Component"
+msgid "UNO Python Component"
 msgstr "UNO Питон компонента"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
-msgid  "UNO Components"
+msgid "UNO Components"
 msgstr "UNO компоненте"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
 #, fuzzy
-msgid  "UNO RDB Type Library"
+msgid "UNO RDB Type Library"
 msgstr "UNO Библиотека RDB типа"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
 #, fuzzy
-msgid  "UNO Java Type Library"
+msgid "UNO Java Type Library"
 msgstr "UNO Библиотека Java типа"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Copying: "
+msgid "Copying: "
 msgstr "Копирање: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
 #, fuzzy
-msgid  "Error while adding: "
+msgid "Error while adding: "
 msgstr "Грешка приликом додавања пакета:"
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
 #, fuzzy
-msgid  "Error while removing: "
+msgid "Error while removing: "
 msgstr "Грешка приликом уклањања пакета: "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
 #, fuzzy
-msgid  "Extension has already been added: "
+msgid "Extension has already been added: "
 msgstr "Пакет је већ додат: "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "There is no such extension deployed: "
+msgid "There is no such extension deployed: "
 msgstr "Не постоји размештање пакета: "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
 #, fuzzy
-msgid  "Synchronizing repository for %NAME extensions"
+msgid "Synchronizing repository for %NAME extensions"
 msgstr "Синхронизујем са складиштем за %NAME додатке"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Сада ћете инсталирати издање $NEW пакета „$NAME“.\nНовије издање $DEPLOYED је већ инсталирано.\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Сада ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Новије издање $DEPLOYED је већ инсталирано.\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Овим ћете инсталирати издање $NEW пакета „$NAME“.\nВећ постоји инсталирано новије издање $DEPLOYED (пакет „$OLDNAME“).\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Овим ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Већ постоји инсталирано новије издање $DEPLOYED (пакет „$OLDNAME“).\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Овим ћете инсталирати издање $NEW пакета „$NAME“.\nОвај пакет је већ инсталиран.\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Овим ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Овај пакет је већ инсталиран.\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Овим ћете инсталирати издање $NEW пакета „$NAME“.\nВећ постоји инсталирано издање (пакет „$OLDNAME“).\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Овим ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Већ постоји инсталирано издање (пакет „$OLDNAME“).\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Овим ћете инсталирати издање $NEW пакета „$NAME“.\nВећ постоји инсталирано старије издање $DEPLOYED.\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Овим ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Већ постоји инсталирано старије издање $DEPLOYED.\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Овим ћете инсталирати издање $NEW пакета „$NAME“.\nВећ постоји инсталирано старије издање $DEPLOYED (пакет „$OLDNAME“).\nЗа замену инсталираног пакета кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Овим ћете инсталирати издање $NEW пакета „$NAME“.\n"
+"Већ постоји инсталирано старије издање $DEPLOYED (пакет „$OLDNAME“).\n"
+"За замену инсталираног пакета кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
+
+#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
+msgid "System dependencies check"
+msgstr ""
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "Додатак се не може инсталирати јер следеће\nсистемске зависности нису испуњене:"
+msgid "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+"Додатак се не може инсталирати јер следеће\n"
+"системске зависности нису испуњене:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
 #, fuzzy
-msgid  "Add Extension(s)"
+msgid "Add Extension(s)"
 msgstr "Додај пакет(е)..."
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
+msgid "~Remove"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
+msgid "~Enable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
+msgid "~Disable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
+msgid "~Update..."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
+msgid "~Options..."
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 #, fuzzy
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "Додајем пакет „%EXTENSION_NAME“"
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
+msgid "Removing %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
+msgid "Enabling %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
+msgid "Disabling %EXTENSION_NAME"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "Accept license for %EXTENSION_NAME"
+msgid "Accept license for %EXTENSION_NAME"
 msgstr "Прихватање лиценце за %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
 #, fuzzy
-msgid  "~For all users"
+msgid "~For all users"
 msgstr "~За све кориснике"
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
+msgid "~Only for me"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "Error: The status of this extension is unknown"
+msgid "Error: The status of this extension is unknown"
 msgstr "Грешка: непознато стање пакета"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Затвори"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Quit"
+msgid "Quit"
 msgstr "Напусти"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME је надограђен на ново издање. Неки дељени додаци за %PRODUCTNAME нису сагласни са овим издањем и морају бити надограђени пре него што се покрене %PRODUCTNAME.\n\nНадоградња дељених додатака захтева администраторска овлашћења. Обратите се систем администратору како би следећи додаци били надограђени:"
+msgid "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME је надограђен на ново издање. Неки дељени додаци за %"
+"PRODUCTNAME нису сагласни са овим издањем и морају бити надограђени пре него "
+"што се покрене %PRODUCTNAME.\n"
+"\n"
+"Надоградња дељених додатака захтева администраторска овлашћења. Обратите се "
+"систем администратору како би следећи додаци били надограђени:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr "Додатак се не може инсталирати јер следеће системске зависности нису испуњене:"
+msgid "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr ""
+"Додатак се не може инсталирати јер следеће системске зависности нису "
+"испуњене:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr "Додатак је онемогућен јер још увек нисте прихватили лиценцу.\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
-msgid  "Show license"
+msgid "Show license"
 msgstr "Прикажи лиценцу"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Software License Agreement"
+msgid "Extension Software License Agreement"
 msgstr "Уговор о лиценцирању додатка"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgid "Please follow these steps to proceed with the installation of the extension:"
 msgstr "За наставак инсталирања додатка следите следеће кораке:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr "Погледајте цео Уговор о лиценцирању. Користите клизач или стрелицу надоле на овом прозорчету како бисте видели цео текст лиценце."
+msgid "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
+msgstr ""
+"Погледајте цео Уговор о лиценцирању. Користите клизач или стрелицу надоле на "
+"овом прозорчету како бисте видели цео текст лиценце."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr "Прихватите услове коришћења за овај програм притиском на дугме „Прихватам“."
+msgid "Accept the License Agreement for the extension by pressing the \'Accept\' button."
+msgstr ""
+"Прихватите услове коришћења за овај програм притиском на дугме „Прихватам“."
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "~Scroll Down"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
+msgid "Accept"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Decline"
+msgid "Decline"
 msgstr "Не прихватам"
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
+#, fuzzy
+msgid "Extension Software License Agreement"
+msgstr "Уговор о лиценцирању додатка"
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "Затвори"
+
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Започињете инсталирање пакета „%NAME“.\nЗа наставак инсталирања кликните „У реду“.\nЗа прекид инсталирања кликните „Одустани“."
+msgid "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Започињете инсталирање пакета „%NAME“.\n"
+"За наставак инсталирања кликните „У реду“.\n"
+"За прекид инсталирања кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Започињете уклањање пакета „%NAME“.\nЗа наставак кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Започињете уклањање пакета „%NAME“.\n"
+"За наставак кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "Ако мењате дељени пакет у вишекорисничком окружењу, проверите да корисници не раде са програмом %PRODUCTNAME.\nЗа наставак уклањања кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"Ако мењате дељени пакет у вишекорисничком окружењу, проверите да корисници "
+"не раде са програмом %PRODUCTNAME.\n"
+"За наставак уклањања кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr "Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други корисници немају покренут пакет %PRODUCTNAME.\nЗа укључивање кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+"Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други "
+"корисници немају покренут пакет %PRODUCTNAME.\n"
+"За укључивање кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr "Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други корисници немају покренут пакет %PRODUCTNAME.\nЗа искључивање кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+"Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други "
+"корисници немају покренут пакет %PRODUCTNAME.\n"
+"За искључивање кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 #, fuzzy
-msgid  "The extension \\'%Name\\' does not work on this computer."
+msgid "The extension \'%Name\' does not work on this computer."
 msgstr "Пакет „%Name“ не ради на овом рачунару."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Download and Installation"
+msgid "Download and Installation"
 msgstr "Преузимање и инсталирање"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Downloading extensions..."
+msgid "Downloading extensions..."
 msgstr "Преузимам пакете..."
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
+msgid "Result"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
 #, fuzzy
-msgid  "OK"
+msgid "OK"
 msgstr "У реду"
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
+msgid "Cancel Update"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 #, fuzzy
-msgid  "Installing extensions..."
+msgid "Installing extensions..."
 msgstr "Инсталирам додатке..."
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
+msgid "Installation finished"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 #, fuzzy
-msgid  "No errors."
+msgid "No errors."
 msgstr "Нема грешака."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
 #, fuzzy
-msgid  "Error while downloading extension %NAME. "
+msgid "Error while downloading extension %NAME. "
 msgstr "Грешке при преузимању додатке %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
 #, fuzzy
-msgid  "The error message is: "
+msgid "The error message is: "
 msgstr "Порука о грешци је: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
 #, fuzzy
-msgid  "Error while installing extension %NAME. "
+msgid "Error while installing extension %NAME. "
 msgstr "Грешка при инсталирању додатка %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
 #, fuzzy
-msgid  "The license agreement for extension %NAME was refused. "
+msgid "The license agreement for extension %NAME was refused. "
 msgstr "Није прихваћен Уговор о лиценцирању за %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
 #, fuzzy
-msgid  "The extension will not be installed."
+msgid "The extension will not be installed."
 msgstr "Додатак неће бити инсталиран."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Update"
+msgid "Extension Update"
 msgstr "Надоградња пакета"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
+msgid "Checking..."
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Available extension updates"
+msgid "~Available extension updates"
 msgstr "~Доступне надоградње додаткака"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
+msgid "~Show all updates"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
+msgid "Description"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
+msgid "Publisher:"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
+msgid "What is new:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Release Notes"
+msgid "Release Notes"
 msgstr "Белешке о издању"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
+msgid "~Install"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Затвори"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
 #, fuzzy
-msgid  "No new updates are available."
+msgid "No new updates are available."
 msgstr "Нису доступна нова издања."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 #, fuzzy
-msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr "Нису доступне нове надоградње спремне за инсталирање. За преглед свих надоградњи изаберите опцију „Прикажи све надоградње“."
+msgid "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+"Нису доступне нове надоградње спремне за инсталирање. За преглед свих "
+"надоградњи изаберите опцију „Прикажи све надоградње“."
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
+msgid "An error occurred:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 #, fuzzy
-msgid  "Unknown error."
+msgid "Unknown error."
 msgstr "Непозната грешка."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "No more details are available for this update."
+msgid "No more details are available for this update."
 msgstr "Доступни описи овог додатка."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be updated because:"
+msgid "The extension cannot be updated because:"
 msgstr "Не могу да надоградим додатак јер:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
-msgid  "Required Apache OpenOffice version doesn't match:"
+msgid "Required Apache OpenOffice version doesn't match:"
 msgstr "Не поклапа се неопходно издање пакета Apache OpenOffice:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
-msgid  "You have Apache OpenOffice %VERSION"
+msgid "You have Apache OpenOffice %VERSION"
 msgstr "Користите Apache OpenOffice %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 #, fuzzy
-msgid  "browser based update"
+msgid "browser based update"
 msgstr "ажурирање кроз прегледник"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
+msgid "Version"
+msgstr ""
+
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
-msgid  "Ignore this Update"
+msgid "Ignore this Update"
 msgstr "Прескочи надоградњу"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
-msgid  "Ignore all Updates"
+msgid "Ignore all Updates"
 msgstr "Прескочи све надоградње"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
-msgid  "Enable Updates"
+msgid "Enable Updates"
 msgstr "Омогући надоградње"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
-msgid  "This update will be ignored.\n"
+msgid "This update will be ignored.\n"
 msgstr "Надоградња ће бити прескочена.\n"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr "Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други корисници немају покренут пакет %PRODUCTNAME.\nЗа наставак надоградње кликните „У реду“.\nЗа прекид кликните „Одустани“."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+"Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да други "
+"корисници немају покренут пакет %PRODUCTNAME.\n"
+"За наставак надоградње кликните „У реду“.\n"
+"За прекид кликните „Одустани“."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Manager"
+msgid "Extension Manager"
 msgstr "Управник пакета"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
+msgid "~Add..."
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "Потражи ~надоградње..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Get more extensions online..."
+msgid "Get more extensions online..."
 msgstr "Прибави нове додатке са Интернета..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "Додајем пакет „%EXTENSION_NAME“"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "Затвори"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Update Required"
+msgid "Extension Update Required"
 msgstr "Неопходна надоградња пакета"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr "%PRODUCTNAME је надограђен на ново издање. Неки инсталирани додаци за %PRODUCTNAME нису сагласни са овим издањем и морају бити надограђени пре употребе."
+msgid "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+"%PRODUCTNAME је надограђен на ново издање. Неки инсталирани додаци за %"
+"PRODUCTNAME нису сагласни са овим издањем и морају бити надограђени пре "
+"употребе."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Adding %EXTENSION_NAME"
+msgstr "Додајем пакет „%EXTENSION_NAME“"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Check for ~Updates..."
+msgstr "Потражи ~надоградње..."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
+msgid "Disable all"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да корисници немају покренут пакет %PRODUCTNAME.\n\nКоме све желите да инсталирате пакет?\n"
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+"Ако мењате дељени пакет у вишекорисничком окружењу, уверите се да корисници "
+"немају покренут пакет %PRODUCTNAME.\n"
+"\n"
+"Коме све желите да инсталирате пакет?\n"
+
+#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
+msgid "Installation Status"
+msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 #, fuzzy
-msgid  "Installation is optimized for clients."
+msgid "Installation is optimized for clients."
 msgstr "Инсталација је оптимизована за клијенте."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
 #, fuzzy
-msgid  "Installation is optimized for servers."
+msgid "Installation is optimized for servers."
 msgstr "Инсталација је оптимизована за сервере."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
 #, fuzzy
-msgid  "Cannot find Office installation."
+msgid "Cannot find Office installation."
 msgstr "Не могу да пронађем инсталацију пакета Office."
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
 #, fuzzy
-msgid  "Setup"
+msgid "Setup"
 msgstr "Подешавање"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
 #, fuzzy
-msgid  "The %PRODUCTNAME Setup"
+msgid "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME подешавање"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
 #, fuzzy
-msgid  "Out of Memory"
+msgid "Out of Memory"
 msgstr "Нема довољно меморије"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
 #, fuzzy
-msgid  "Setup was unable to find the msi package."
+msgid "Setup was unable to find the msi package."
 msgstr "Програм за инсталацију није пронашао msi пакет."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
 #, fuzzy
-msgid  "Setup was cancelled"
+msgid "Setup was cancelled"
 msgstr "Инсталација је прекинута"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 #, fuzzy
-msgid  "Administrator privileges are required for upgrading the Windows Installer."
+msgid "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "За Windows Installer надоградњу потребна су администраторска права."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
 #, fuzzy
-msgid  "Setup was unable to find the file '%s'."
+msgid "Setup was unable to find the file '%s'."
 msgstr "Програм за инсталацију није нашао датотеку „%s“."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
 #, fuzzy
-msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr "Неисправна опција „%s“ за линију наредби. За помоћ користите опцију „/?“."
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr ""
+"Неисправна опција „%s“ за линију наредби. За помоћ користите опцију „/?“."
 
 #: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "Овај пакет захтева издање „%s“ Windows Installer компоненте. \nНа систему постоји Windows Installer %s!"
+msgid "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+"Овај пакет захтева издање „%s“ Windows Installer компоненте. \n"
+"На систему постоји Windows Installer %s!"
 
 #: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "Овај пакет захтева Windows Installer компоненту. \nНеопходно је издање „%s“ или новије Windows Installer компоненте на систему!"
+msgid "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+"Овај пакет захтева Windows Installer компоненту. \n"
+"Неопходно је издање „%s“ или новије Windows Installer компоненте на систему!"
 
 #: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "Коришћење:\n   /? :  Приказује ово прозорче.\n   /a :  Извршава административно инсталирање.\n   /j[u|m] :  Извршава рекламно инсталирање.\n   /q[n] : Не приказуј корисничко сучеље (неприметна опција).\n"
+msgid "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"Коришћење:\n"
+"   /? :  Приказује ово прозорче.\n"
+"   /a :  Извршава административно инсталирање.\n"
+"   /j[u|m] :  Извршава рекламно инсталирање.\n"
+"   /q[n] : Не приказуј корисничко сучеље (неприметна опција).\n"
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 #, fuzzy
-msgid  "There is already a setup process running."
+msgid "There is already a setup process running."
 msgstr "Процес инсталације је већ покренут."
+
+#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
+msgid "An Unknown Error occured!"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 #, fuzzy
-msgid  "Invalid or incomplete profile."
+msgid "Invalid or incomplete profile."
 msgstr "Неисправан или непотпун профил."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
 #, fuzzy
-msgid  "Unknown Language: %d"
+msgid "Unknown Language: %d"
 msgstr "Непознат језик: %d"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+msgid "Czech"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+msgid "Danish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+msgid "German (Germany)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+msgid "Greek"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 #, fuzzy
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "енглески (САД)"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+msgid "Spanish (Spain)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+msgid "Finnish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+msgid "French (France)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+msgid "Hebrew"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+msgid "Hungarian"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+msgid "Italian (Italy)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+msgid "Japanese"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+msgid "Korean"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+msgid "Dutch (Netherlands)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+msgid "Norwegian (Bokmål)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+msgid "Polish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+msgid "Russian"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 #, fuzzy
-msgid  "Slovak"
+msgid "Slovak"
 msgstr "словачки"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+msgid "Swedish (Sweden)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+msgid "Thai"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+msgid "Turkish"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 #, fuzzy
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "естонски"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+msgid "Portuguese (Portugal)"
+msgstr ""

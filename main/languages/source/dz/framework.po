@@ -1,216 +1,252 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: dz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "ཨོནསི་ ག་སྐོང་རྐྱབས།"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "ཨོན་གྲོགས་རམ་ ཁ་སྐོང་རྐྱབས།(~O)"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "ཆ་མཉམ།"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
+msgid "~Update"
 msgstr "དུས་མཐུན་བཟོ།(~U)"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "ཁ་བསྡམ་སྟེ་ དེ་ལུ་ སླར་ལོག་སོང་།(~C)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
+msgid "Visible ~Buttons"
 msgstr "མཐོང་ཚུགས་པའི་ གཡེབ་རྟ།(~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "ལག་ཆས་ཕྲ་རིང་ སྲོལ་སྒྲིག་འབད།(~C)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "ལག་ཆས་ཕྲ་རིང་ ཌོག་འབད།(~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "ལག་ཆས་ཕྲ་རིང་ཆ་མཉམ་ ཌོག་འབད།(~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "ལག་ཆས་ཕྲ་རིང་གི་ གནས་ས་ བསྡམ་བཞག(~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "ལག་ཆས་ཕྲ་རིང་ ཁ་བསྡམས་(_T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "བཟུམ་སྦེ་འདྲ་བཤུས་སྲུང་བཞག་འབད།(~a)"
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
+msgid "No Documents"
 msgstr "ཡིག་ཆ་ཚུ་མིན་འདུག་"
 
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid "Clear List"
+msgstr ""
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "%num% གུར་ལུ་ ཁ་སྐོང་རྐྱབས།"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "ཆོག་ཐམ་གྱི་ འགན་འཛིན།"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
-msgstr "འགོ་བཙུགས་དང་གཅིག་ཁར་ འཕྲོ་མཐུད་ནིའི་དོན་ལུ་ འ་ནི་རིམ་པ་གི་རྗེས་སུ་འབྲངས།"
+msgid "Please follow these steps to proceed with the installation:"
+msgstr ""
+"འགོ་བཙུགས་དང་གཅིག་ཁར་ འཕྲོ་མཐུད་ནིའི་དོན་ལུ་ འ་ནི་རིམ་པ་གི་རྗེས་སུ་འབྲངས།"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "༡."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr " ཆོང་ཐམ་གྱི་གན་འཛིན་ ཡོངས་རྫོགས་སྟོན།  ཆོག་ཐམ་ཧྲིལ་བུའི་ ཚིག་ཡིག་སྟོན་ནིའི་དོན་ལུ་ ཌའི་ལོག་འདི་ནང་ལུ་ བཤུད་སྒྲིལ་ཕྲ་རིང་ ཡང་ན་ '%PAGEDOWN' ཀྱི་གཡེབ་རྟ་ ལག་ལེན་འཐབ་གནང་།"
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+" ཆོང་ཐམ་གྱི་གན་འཛིན་ ཡོངས་རྫོགས་སྟོན།  ཆོག་ཐམ་ཧྲིལ་བུའི་ "
+"ཚིག་ཡིག་སྟོན་ནིའི་དོན་ལུ་ ཌའི་ལོག་འདི་ནང་ལུ་ བཤུད་སྒྲིལ་ཕྲ་རིང་ ཡང་ན་ '%"
+"PAGEDOWN' ཀྱི་གཡེབ་རྟ་ ལག་ལེན་འཐབ་གནང་།"
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "མར་བཤུད་སྒྲིལ་འབད།"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "༢."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "ཆོང་ཐམ་ དང་ལེན་འབད།"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "དང་ལེན་འབད།(~A)"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "ཁ་མི་བཟེད་ནི།"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
+msgid "Retry"
 msgstr "སླར་འབད་རྩོལ་བསྐྱེད།"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "འོག་གི་གནས་ཁོངས་ནང་ལུ་ བར་སྟོང་དལཝ་ ལངམ་སྦེ་མེདཔ་ལས་%PRODUCTNAME་གིས་ ནང་འཁོད་ཀྱི་བརྡ་དོན་གལ་ཅན་ སྲུང་བཞག་འབད་མ་ཚུགས།\n%PATH\n\nགྱིས་ གནས་ཁོངས་དེ་ནང་ལུ་ ཌིགསི་གི་བར་སྟོང་ཧེང་བཀལ་བདལཝ་མ་བཞག་པར་%PRODUCTNAME གཅིག་ཁར་ འཕྲོ་མཐུད་དེ་ལཱ་གཡོག་འབད་མི་ཚུགས།\n\nགནད་སྡུད་སྲུང་བཞག་འབད་ནིའི་དོན་ལུ་ སླར་འབད་རྩོལ་བསྐྱེདཟེར་མི་ནང་ལུ་ ཌིགསི་གི་བར་སྟོང་དལཝ་ཧེང་བཀལ་ བཞག་ཚར་བའི་ཤུལ་ལས་ སླར་འབད་རྩོལ་བསྐྱེད་ཟེར་མི་གཡེབ་རྟ་ གཡེབ།\n\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"འོག་གི་གནས་ཁོངས་ནང་ལུ་ བར་སྟོང་དལཝ་ ལངམ་སྦེ་མེདཔ་ལས་%PRODUCTNAME་གིས་ "
+"ནང་འཁོད་ཀྱི་བརྡ་དོན་གལ་ཅན་ སྲུང་བཞག་འབད་མ་ཚུགས།\n"
+"%PATH\n"
+"\n"
+"གྱིས་ གནས་ཁོངས་དེ་ནང་ལུ་ ཌིགསི་གི་བར་སྟོང་ཧེང་བཀལ་བདལཝ་མ་བཞག་པར་%PRODUCTNAME "
+"གཅིག་ཁར་ འཕྲོ་མཐུད་དེ་ལཱ་གཡོག་འབད་མི་ཚུགས།\n"
+"\n"
+"གནད་སྡུད་སྲུང་བཞག་འབད་ནིའི་དོན་ལུ་ སླར་འབད་རྩོལ་བསྐྱེདཟེར་མི་ནང་ལུ་ "
+"ཌིགསི་གི་བར་སྟོང་དལཝ་ཧེང་བཀལ་ བཞག་ཚར་བའི་ཤུལ་ལས་ "
+"སླར་འབད་རྩོལ་བསྐྱེད་ཟེར་མི་གཡེབ་རྟ་ གཡེབ།\n"
+"\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "སླར་སྒྲིག་འབད་(_R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \nགློག་རིམ་གཞི་བཙུགས་འདི་ལོག་འདི་རང་ཚར་ཅིག་འབད་ལྟ་གནང་།"
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ "
+"འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \n"
+"གློག་རིམ་གཞི་བཙུགས་འདི་ལོག་འདི་རང་ཚར་ཅིག་འབད་ལྟ་གནང་།"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \nའཇུག་སྤྱོད་འདི་གི་དོན་ལུ་ ཁྱོད་རའི་ལག་ལེན་པའི་གསལ་སྡུད་དི་རྩ་བསྐྲད་གཏང་སྟེ་ལྟ་གནང།"
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ "
+"འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \n"
+"འཇུག་སྤྱོད་འདི་གི་དོན་ལུ་ "
+"ཁྱོད་རའི་ལག་ལེན་པའི་གསལ་སྡུད་དི་རྩ་བསྐྲད་གཏང་སྟེ་ལྟ་གནང།"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \nའཇུག་སྤྱོད་འདི་གི་དོན་ལུ་ དང་པ་རང་ ཁྱོད་རའི་ལག་ལེན་པའི་གསལ་སྡུད་དི་རྩ་བསྐྲད་གཏང་ ཡང་ན་ འཇུག་སྤྱོད་འདི་ལོག་སྟེ་རང་ཚར་ཅིག་གཞི་བཙུགས་འབད་དེ་ལྟ་གནང་།"
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"ལག་ལེན་པའི་ངོས་འདྲ་བའི་རིམ་སྒྲིག་གནས་སྡུད་ མངོན་གསལ་འབད་བའི་སྐབས་ "
+"འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ། འཇུག་སྤྱོད་འདི་ད་ལྟོ་མཇུག་བསྡུ་ནི་ཨིན། \n"
+"འཇུག་སྤྱོད་འདི་གི་དོན་ལུ་ དང་པ་རང་ "
+"ཁྱོད་རའི་ལག་ལེན་པའི་གསལ་སྡུད་དི་རྩ་བསྐྲད་གཏང་ ཡང་ན་ "
+"འཇུག་སྤྱོད་འདི་ལོག་སྟེ་རང་ཚར་ཅིག་གཞི་བཙུགས་འབད་དེ་ལྟ་གནང་།"
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "མགོ་མིང་མ་བཏགསཔ་"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "སྣ་མང་སྐད་ཡིག་ཚུ་"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "ཅི་མེད་ (ཡིག་སྡེབ་ཞིབ་དཔྱད་མ་འབད)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr ""
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "ལྷག་སྟེ་"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "སེལ་འཐུ་གི་དོན་ལུ་ སྐད་ཡིག་གཞི་སྒྲིག་འབད་"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "དོན་མཚམས་ཀྱི་དོན་ལུ་ སྐད་ཡིག་གཞི་སྒྲིག་འབད་"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "ཚིག་ཡིག་ཆ་མཉམ་གྱི་དོན་ལུ་ སྐད་ཡིག་གཞི་སྒྲིག་འབད་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr "ནང་ལུ་བྱོན་པ་ལེགས་སོ་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr "ཡིག་ཆ་གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr "དཔེ་གཞི་ཚུ་(~T)"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr ""
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr "%PRODUCTNAME ལུ་ཁྱད་རྣམ་གསརཔ་ཅིག་ཁ་སྐོང་་རྐྱབས་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr "ཁྱོད་རའི་ %PRODUCTNAME ཐོག་བཀོད་འབད་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr "%PRODUCTNAME གི་སྐོར་ལས་ བརྡ་དོན་རྒྱས་བཤད་མཁོ་གྲུབ་འབད་"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr "%PRODUCTNAME གི་དོན་ལུ་ དཔེ་གཞི་ཚུ་མངམ་སྦེ་ལེན་"

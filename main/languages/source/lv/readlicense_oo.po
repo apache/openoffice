@@ -1,339 +1,609 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: readme.xrm#WELCOME
-msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "${PRODUCTNAME} ${PRODUCTVERSION} LasiMani"
 
 #: readme.xrm#LATESTUPDATES
-msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
-msgstr "Jaunāko šī faila atjauninājumu meklējiet <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgid "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgstr ""
+"Jaunāko šī faila atjauninājumu meklējiet <a href=\"http://www.openoffice.org/"
+"welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 
 #: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "Šajā failā ir svarīga informācija par šo programmu. Lūdzu, izlasiet to rūpīgi, pirms ķeraties pie darba."
+msgid "This file contains important information about this program. Please read this information very carefully before starting work."
+msgstr ""
+"Šajā failā ir svarīga informācija par šo programmu. Lūdzu, izlasiet to "
+"rūpīgi, pirms ķeraties pie darba."
 
 #: readme.xrm#A7
 #, fuzzy
-msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
-msgstr "OpenOffice.org komūna, kas atbildīga par šī produkta izstrādi, vēlas jūs ielūgt kļūt par komūnas biedru. Kā jauns  lietotājs, varat iepazīties ar ${PRODUCTNAME} vietni, kas satur daudz lietotājiem noderīgas informācijas. Ejiet uz <a href=\"http://www.openoffice.org/about_us/introduction.html\">http://www.openoffice.org/about_us/introduction.html</a>"
+msgid "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgstr ""
+"OpenOffice.org komūna, kas atbildīga par šī produkta izstrādi, vēlas jūs "
+"ielūgt kļūt par komūnas biedru. Kā jauns  lietotājs, varat iepazīties ar "
+"${PRODUCTNAME} vietni, kas satur daudz lietotājiem noderīgas informācijas. "
+"Ejiet uz <a href=\"http://www.openoffice.org/about_us/introduction.html\">http"
+"://www.openoffice.org/about_us/introduction.html</a>"
 
 #: readme.xrm#A9
-msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "Tāpat iepazīstieties arī ar zemāk atrodamo informāciju, kā iesaistīties OpenOffice.org projektā."
+msgid "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+"Tāpat iepazīstieties arī ar zemāk atrodamo informāciju, kā iesaistīties "
+"OpenOffice.org projektā."
 
 #: readme.xrm#A10
-msgid  "Is ${PRODUCTNAME} really free for any user? "
+msgid "Is ${PRODUCTNAME} really free for any user? "
 msgstr "Vai ${PRODUCTNAME} tiešām ir par brīvu visiem lietotājiem? "
 
 #: readme.xrm#A11
-msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr "${PRODUCTNAME} var lietot visi bez maksas. Jūs varat paņemt ${PRODUCTNAME} kopiju un instalēt to uz cik vien daudz datoriem vēlaties un lietot jebkādam mērķim (tai skaitā komerciāliem, valdības, sabiedriskās administrēšanas un izglītības). Vairāk informācijas atrodams licences tekstā, kas nāk kopā ar ${PRODUCTNAME} vai <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgid "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"${PRODUCTNAME} var lietot visi bez maksas. Jūs varat paņemt ${PRODUCTNAME} "
+"kopiju un instalēt to uz cik vien daudz datoriem vēlaties un lietot jebkādam "
+"mērķim (tai skaitā komerciāliem, valdības, sabiedriskās administrēšanas un "
+"izglītības). Vairāk informācijas atrodams licences tekstā, kas nāk kopā ar "
+"${PRODUCTNAME} vai <a href=\"http://www.openoffice.org/license.html\">http://w"
+"ww.openoffice.org/license.html</a>"
 
 #: readme.xrm#A12
-msgid  "Why is ${PRODUCTNAME} free for any user?"
+msgid "Why is ${PRODUCTNAME} free for any user?"
 msgstr "Kāpēc ${PRODUCTNAME} ir par brīvu visiem lietotājiem?"
 
 #: readme.xrm#A13
 #, fuzzy
-msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr "Ja novērtējiet viņu pūles un vēlaties nodrošinātka OpenOffice.org turpina pastāvēt arī turpmāk, lūdzu, apsveriet iespēju palīdzēt projektam - vairāk informācijas <a href=\"http://contributing.openoffice.org\">http://contributing.openoffice.org</a>. Palīdzēt var ikviens."
+msgid "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr ""
+"Ja novērtējiet viņu pūles un vēlaties nodrošinātka OpenOffice.org turpina "
+"pastāvēt arī turpmāk, lūdzu, apsveriet iespēju palīdzēt projektam - vairāk "
+"informācijas <a href=\"http://contributing.openoffice.org\">http://contributin"
+"g.openoffice.org</a>. Palīdzēt var ikviens."
+
+#: readme.xrm#A13B
+msgid "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr ""
 
 #: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
+msgid "Notes on Installation"
 msgstr "Instalēšanas piezīmes"
 
 #: readme.xrm#JAVANEEDED
-msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
-msgstr "${PRODUCTNAME} ir nepieciešama JAVA pilnai funkcionalitātei, kas ir daļa no ${PRODUCTNAME} instalācijas pakotnes."
+msgid "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
+msgstr ""
+"${PRODUCTNAME} ir nepieciešama JAVA pilnai funkcionalitātei, kas ir daļa no "
+"${PRODUCTNAME} instalācijas pakotnes."
 
 #: readme.xrm#SDFSDFGF42R
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "Sistēmas prasības"
 
 #: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
+msgid "MacOSX 10.4 (Tiger) or higher"
 msgstr "Mac OS X 10.4(Tiger) vai jaunāks"
 
 #: readme.xrm#MACXICPU
-msgid  "Intel processor"
+msgid "Intel processor"
 msgstr "Intel procesors"
 
 #: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
+msgid "512 MB RAM"
 msgstr "512 MB RAM"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
-msgid  "Up to 1.5 GB available hard disk space"
+msgid "Up to 1.5 GB available hard disk space"
 msgstr "Līdz 1.5 GB brīvas vietas uz diska"
 
 #: readme.xrm#MACXIVIDEO
-msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr "1024 x 768 liela ekrāna izšķirtspēja (ieteicama lielāka) ar vismaz 256 krāsām"
+msgid "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
+"1024 x 768 liela ekrāna izšķirtspēja (ieteicama lielāka) ar vismaz 256 "
+"krāsām"
 
 #: readme.xrm#S2S3SDF2
 #, fuzzy
-msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr "Microsoft Windows 2000 (Service Pack 4 vai augstāka), XP, Vista vai Windows 7"
+msgid "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
+msgstr ""
+"Microsoft Windows 2000 (Service Pack 4 vai augstāka), XP, Vista vai Windows "
+"7"
 
 #: readme.xrm#UTZU6
 #, fuzzy
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Pentium savietojams dators (ieteicams Pentium III vai Athlon)"
 
 #: readme.xrm#GHUJ67
 #, fuzzy
-msgid  "256 MB RAM (512 MB RAM recommended)"
+msgid "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (ieteicams 512 MB RAM)"
 
+#: readme.xrm#JZJTZU6
+#, fuzzy
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "Līdz 1.5 GB brīvas vietas uz diska"
+
 #: readme.xrm#JTZU56
-msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr "1024x768 liela ekrāna izšķirtspēja (ieteicama lielāka) ar vismaz 256 krāsām"
+msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr ""
+"1024x768 liela ekrāna izšķirtspēja (ieteicama lielāka) ar vismaz 256 krāsām"
 
 #: readme.xrm#EDSSC3D
 #, fuzzy
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr "Lūdzu, ņemiet vērā, ka instalēšanai ir nepieciešama administrātora pieeja."
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Lūdzu, ņemiet vērā, ka instalēšanai ir nepieciešama administrātora pieeja."
 
 #: readme.xrm#MSOREG1
-msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr "${PRODUCTNAME} reģistrēšanu par noklusēto programmu Microsoft Office formātu atvēršanai var uzspiest vai aizliegt, izmantojot šādus instalātora komandrindas parametrus:"
+msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+"${PRODUCTNAME} reģistrēšanu par noklusēto programmu Microsoft Office formātu "
+"atvēršanai var uzspiest vai aizliegt, izmantojot šādus instalātora "
+"komandrindas parametrus:"
 
 #: readme.xrm#MSOREG2
-msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=1</tt> piespiedīs reģistrēt ${PRODUCTNAME} par noklusēto programmu Microsoft Office formātiem."
+msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=1</tt> piespiedīs reģistrēt ${PRODUCTNAME} par noklusēto "
+"programmu Microsoft Office formātiem."
 
 #: readme.xrm#MSOREG3
-msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=0</tt> neļaus reģistrēt ${PRODUCTNAME} par noklusēto programmu Microsoft Office formātiem."
+msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=0</tt> neļaus reģistrēt ${PRODUCTNAME} par noklusēto programmu "
+"Microsoft Office formātiem."
 
 #: readme.xrm#DLLA1
 #, fuzzy
-msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr "Ja veicat administratīvo instalēšanu, izmantojot setup /a, jums jāpārliecinās ka sistēmā ir instaēts fails msvc90.dll. Tas nepieciešams lai varētu palaist ${PRODUCTNAME} pēc administratīvās instalēšanas. Šo failu varat ielādēt no <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgstr ""
+"Ja veicat administratīvo instalēšanu, izmantojot setup /a, jums "
+"jāpārliecinās ka sistēmā ir instaēts fails msvc90.dll. Tas nepieciešams lai "
+"varētu palaist ${PRODUCTNAME} pēc administratīvās instalēšanas. Šo failu "
+"varat ielādēt no <a href=\"http://www.microsoft.com/downloads/details.aspx?fa"
+"milyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downlo"
+"ads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+
+#: readme.xrm#ADMINNEEDED
+#, fuzzy
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Lūdzu, ņemiet vērā, ka instalēšanai ir nepieciešama administrātora pieeja."
 
 #: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
+msgid "Solaris 10 operating system (SPARC platform) or higher"
 msgstr "Solaris 10 operētājsistēma (SPARC platformā) vai jaunāka"
+
+#: readme.xrm#S253
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (ieteicams 512 MB RAM)"
 
 #: readme.xrm#S23SEG
 #, fuzzy
-msgid  "Up to 1.55 GB available hard disk space"
+msgid "Up to 1.55 GB available hard disk space"
 msgstr "Līdz 1.55 GB brīvas vietas uz diska"
 
 #: readme.xrm#S2S43GFE
 #, fuzzy
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "X Serveris ar 1024x768 pikseļus lielu izšķirtspēju (ieteicama lielāka) un vismaz 256 krāsām"
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Serveris ar 1024x768 pikseļus lielu izšķirtspēju (ieteicama lielāka) un "
+"vismaz 256 krāsām"
 
 #: readme.xrm#N4234RW
 #, fuzzy
-msgid  "Window Manager"
+msgid "Window Manager"
 msgstr "Logu pārvaldnieks"
 
 #: readme.xrm#WD2DFF2
 #, fuzzy
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.6 vai jaunāks, ar gail 1.8.6 un at-spi 1.7 pakotnēm, lai darbinātu asistējošās tehnoloģijas rīkus (AT rīki)"
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 vai jaunāks, ar gail 1.8.6 un at-spi 1.7 pakotnēm, lai darbinātu "
+"asistējošās tehnoloģijas rīkus (AT rīki)"
 
 #: readme.xrm#S23H
-msgid  "Solaris 10 operating system (x86 platform) or higher"
+msgid "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 operētājsistēma (x86 platformā) vai jaunāka"
 
+#: readme.xrm#S24F
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (ieteicams 512 MB RAM)"
+
+#: readme.xrm#FGHEG
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Līdz 1.55 GB brīvas vietas uz diska"
+
+#: readme.xrm#FGHFGH
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Serveris ar 1024x768 pikseļus lielu izšķirtspēju (ieteicama lielāka) un "
+"vismaz 256 krāsām"
+
+#: readme.xrm#MGJFG
+#, fuzzy
+msgid "Window Manager"
+msgstr "Logu pārvaldnieks"
+
+#: readme.xrm#WD2DFF1
+#, fuzzy
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 vai jaunāks, ar gail 1.8.6 un at-spi 1.7 pakotnēm, lai darbinātu "
+"asistējošās tehnoloģijas rīkus (AT rīki)"
+
 #: readme.xrm#S2WE35
-msgid  "Linux Kernel version 2.6.18 or higher"
+msgid "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux kodola versija 2.6.18 vai jaunāka"
 
 #: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
+msgid "glibc2 version 2.5 or higher"
 msgstr "glibc2 versija 2.5 vai jaunāka"
 
 #: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
+msgid "gtk version 2.10.4 or higher"
 msgstr "gtk versija 2.10.4 vai jaunāka"
 
 #: readme.xrm#S2ETFSEG
 #, fuzzy
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Pentium savietojams dators (ieteicams Pentium III vai Athlon)"
 
+#: readme.xrm#S2SSDFE
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (ieteicams 512 MB RAM)"
+
+#: readme.xrm#N42DFGF
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Līdz 1.55 GB brīvas vietas uz diska"
+
+#: readme.xrm#GHJHHR
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Serveris ar 1024x768 pikseļus lielu izšķirtspēju (ieteicama lielāka) un "
+"vismaz 256 krāsām"
+
+#: readme.xrm#FHRTZ5
+#, fuzzy
+msgid "Window Manager"
+msgstr "Logu pārvaldnieks"
+
 #: readme.xrm#WD2DFF
-msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.16 vai jaunāks, ar gail 1.8.6 un at-spi 1.7 pakotnēm, lai darbinātu asistējošās tehnoloģijas rīkus (AT rīki)"
+msgid "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.16 vai jaunāks, ar gail 1.8.6 un at-spi 1.7 pakotnēm, lai darbinātu "
+"asistējošās tehnoloģijas rīkus (AT rīki)"
 
 #: readme.xrm#LINUXI3A
-msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr "Linux distribūcijas ir daudz un dažādas un pat vienas distribūcijas ietvaros var būt dažādas instalēšanas opcijas (KDE vai Gnome, utt.). Dažas distribūcijas nodrošina pašas savu 'vietējo'  ${PRODUCTNAME} versiju, kam var būt citādas iespējas nekā Komūnas  ${PRODUCTNAME}. Dažreiz iespējams instalēt Komūnas  ${PRODUCTNAME} blakus 'vietējai' versijai. Bet parasti drošāk ir noņemt 'vietējo' versiju pirms instalēt Komūnas versiju. Vairāk par šo tēmu meklējiet savas distribūcijas dokumentācijā."
+msgid "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+"Linux distribūcijas ir daudz un dažādas un pat vienas distribūcijas ietvaros "
+"var būt dažādas instalēšanas opcijas (KDE vai Gnome, utt.). Dažas "
+"distribūcijas nodrošina pašas savu 'vietējo'  ${PRODUCTNAME} versiju, kam "
+"var būt citādas iespējas nekā Komūnas  ${PRODUCTNAME}. Dažreiz iespējams "
+"instalēt Komūnas  ${PRODUCTNAME} blakus 'vietējai' versijai. Bet parasti "
+"drošāk ir noņemt 'vietējo' versiju pirms instalēt Komūnas versiju. Vairāk "
+"par šo tēmu meklējiet savas distribūcijas dokumentācijā."
 
 #: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "Ieteicams vienmēr izveidot sistēmas rezerves kopiju pirms noņemiet vai instalējiet programmatūru."
+msgid "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+"Ieteicams vienmēr izveidot sistēmas rezerves kopiju pirms noņemiet vai "
+"instalējiet programmatūru."
 
 #: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "Lūdzu, pārliecinieties, ka uz jūsu sistēmas ir pietiekami daudz brīvas vietas, un jums ir piešķirtas gan rakstīšanas, gan lasīšanas gan izpildes tiesības. Pirms instalēšanas aizveriet visas citas programmas."
+msgid "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+"Lūdzu, pārliecinieties, ka uz jūsu sistēmas ir pietiekami daudz brīvas "
+"vietas, un jums ir piešķirtas gan rakstīšanas, gan lasīšanas gan izpildes "
+"tiesības. Pirms instalēšanas aizveriet visas citas programmas."
 
 #: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
+msgid "Problems During Program Startup"
 msgstr "Problēmas ar programmas palaišanu"
 
 #: readme.xrm#NASO02
-msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr "Ja rodas problēmas ar ${PRODUCTNAME} palaišanu (visbiežāk šī problēma gadās Gnome vidē) atceliet (unset) <tt>SESSION_MANAGER</tt> vides mainīgo tajā sistēmas čaulā kuru jūs lietojat, lai palaistu ${PRODUCTNAME}. To var izdarīt soffice shell skripta sākumā pievienojot sekojošu rindiņu \"<tt>unset SESSION_MANAGER</tt>\", šis shell skripts atrodas mapē \"<tt>[office mape]/program</tt>\"."
+msgid "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"Ja rodas problēmas ar ${PRODUCTNAME} palaišanu (visbiežāk šī problēma gadās "
+"Gnome vidē) atceliet (unset) <tt>SESSION_MANAGER</tt> vides mainīgo tajā "
+"sistēmas čaulā kuru jūs lietojat, lai palaistu ${PRODUCTNAME}. To var "
+"izdarīt soffice shell skripta sākumā pievienojot sekojošu rindiņu \"<tt>unset "
+"SESSION_MANAGER</tt>\", šis shell skripts atrodas mapē \"<tt>[office "
+"mape]/program</tt>\"."
 
 #: readme.xrm#ABCDEF
-msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr "Dažādus sarežģījumus ${PRODUCTNAME} palaišanā (piem. programmas uzkāršanos) kā arī problēmas ar datora displeju mēdz radīt video kartes draiveri. Ja rodas šādas problēmas, atjauniniet videokartes draiveri vai arī mēģiniet lietot draiveri, kas tiek piedāvāts kopā ar jūsu operētājsistēmu. Ja rodas problēmas ar 3D objektiem, tās var atrisināt deaktivizējot OpenGL lietošanu, to var izdarīt pie 'Rīki - Opcijas - ${PRODUCTNAME} - Skats - 3D skats'."
+msgid "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
+msgstr ""
+"Dažādus sarežģījumus ${PRODUCTNAME} palaišanā (piem. programmas uzkāršanos) "
+"kā arī problēmas ar datora displeju mēdz radīt video kartes draiveri. Ja "
+"rodas šādas problēmas, atjauniniet videokartes draiveri vai arī mēģiniet "
+"lietot draiveri, kas tiek piedāvāts kopā ar jūsu operētājsistēmu. Ja rodas "
+"problēmas ar 3D objektiem, tās var atrisināt deaktivizējot OpenGL lietošanu, "
+"to var izdarīt pie 'Rīki - Opcijas - ${PRODUCTNAME} - Skats - 3D skats'."
 
 #: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
+msgid "ALPS/Synaptics notebook touchpads in Windows"
 msgstr "ALPS/Synaptics piezīmjdatoru skārienjūtīgie paneļi Windows vidē"
 
 #: readme.xrm#NASO2
-msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr "Dažādu Windows draiveru problēmu dēļ jūs nevarat ritināt ${PRODUCTNAME} dokumentus, slidinot pirkstu pār piezīmjdatoru ALPS/Synaptics skārienpalikņiem."
+msgid "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"Dažādu Windows draiveru problēmu dēļ jūs nevarat ritināt ${PRODUCTNAME} "
+"dokumentus, slidinot pirkstu pār piezīmjdatoru ALPS/Synaptics "
+"skārienpalikņiem."
 
 #: readme.xrm#NASO6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr "Lai aktivizētu ritināšanu ar ALPS/Synaptics skārienpalikņiem, pievienojiet sekojošas rindiņas \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" konfigurācijas failam un pārstartējiet datoru."
+msgid "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr ""
+"Lai aktivizētu ritināšanu ar ALPS/Synaptics skārienpalikņiem, pievienojiet "
+"sekojošas rindiņas \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" "
+"konfigurācijas failam un pārstartējiet datoru."
 
 #: readme.xrm#NASO8
-msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr "Dažādās Windows versijās šī konfigurācijas faila atrašanās vieta var atšķirties."
+msgid "The location of the configuration file might vary on different versions of Windows."
+msgstr ""
+"Dažādās Windows versijās šī konfigurācijas faila atrašanās vieta var "
+"atšķirties."
 
 #: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
+msgid "Mozilla Address Book Driver"
 msgstr "Mozilla adrešu grāmatas draiveris"
 
 #: readme.xrm#SDCC32ASRC
-msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr "Mozilla adrešu grāmatas draiverim ir nepieciešama <tt>SUNWzlib</tt> pakotne. Šī pakotne nav iekļauta minimālajā Solaris operētājsistēmas instalācijā. Ja jums ir vajadzīga Mozilla adrešu grāmatiņa, ar \"<tt>pkgadd</tt>\" komandas palīdzību pievienojiet trūkstošo Solaris operētājsistēmas pakotni."
+msgid "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
+msgstr ""
+"Mozilla adrešu grāmatas draiverim ir nepieciešama <tt>SUNWzlib</tt> pakotne. "
+"Šī pakotne nav iekļauta minimālajā Solaris operētājsistēmas instalācijā. Ja "
+"jums ir vajadzīga Mozilla adrešu grāmatiņa, ar \"<tt>pkgadd</tt>\" komandas "
+"palīdzību pievienojiet trūkstošo Solaris operētājsistēmas pakotni."
 
 #: readme.xrm#AWE1
-msgid  "Shortcut Keys"
+msgid "Shortcut Keys"
 msgstr "Īsinājumtaustiņi"
 
 #: readme.xrm#W32E1
-msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr "${PRODUCTNAME} kā īsinājumtaustiņus  var lietot tikai tās taustiņu kombinācijas, kas netiek lietotas operētājsistēmā. Ja kāda ${PRODUCTNAME} taustiņu kombinācija nedarbojas kā aprakstīs ${PRODUCTNAME} dokumentācijā, pārbaudiet, vai to nav aizņēmusi operētājsistēma. Lai atrisinātu iespējamo konfliktu, varat izmainīt operētājsistēmai piesaistītās taustiņu kombinācijas. Pretējā gadījumā varat izmainīt gandrīz jebkuru ${PRODUCTNAME} taustiņu kombināciju. Sīkāku informāciju lasiet  ${PRODUCTNAME} dokumentācijā vai savas operētājsistēmas dokumentācijā."
+msgid "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+"${PRODUCTNAME} kā īsinājumtaustiņus  var lietot tikai tās taustiņu "
+"kombinācijas, kas netiek lietotas operētājsistēmā. Ja kāda ${PRODUCTNAME} "
+"taustiņu kombinācija nedarbojas kā aprakstīs ${PRODUCTNAME} dokumentācijā, "
+"pārbaudiet, vai to nav aizņēmusi operētājsistēma. Lai atrisinātu iespējamo "
+"konfliktu, varat izmainīt operētājsistēmai piesaistītās taustiņu "
+"kombinācijas. Pretējā gadījumā varat izmainīt gandrīz jebkuru ${PRODUCTNAME} "
+"taustiņu kombināciju. Sīkāku informāciju lasiet  ${PRODUCTNAME} "
+"dokumentācijā vai savas operētājsistēmas dokumentācijā."
 
 #: readme.xrm#MACKEYS1
-msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr "${PRODUCTNAME} lietotnes palīdzības sistēma var izmantot tastatūras kombinācijas, kas pieejamas tikai uz PC tastatūrām."
+msgid "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+"${PRODUCTNAME} lietotnes palīdzības sistēma var izmantot tastatūras "
+"kombinācijas, kas pieejamas tikai uz PC tastatūrām."
 
 #: readme.xrm#GFH6W
-msgid  "File Locking"
+msgid "File Locking"
 msgstr "Failu slēgšana"
 
 #: readme.xrm#PJI76W
-msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
-msgstr "Failu slēgšana noklusēti ir ieslēgta ${PRODUCTNAME}. Tīklā, kas izmanto Network File System protokolu (NFS), jābūt aktīvam slēgšanas dēmonam NFS klientiem. Lai atslēgtu failu slēgšanu, atveriet <tt>soffice</tt> skriptu un izmainiet rindu \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" uz \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". Ja atslēgsiet failu slēgšanu, netiks kontrolēta rakstīšanas piekļuve dokumentiem."
+msgid "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
+msgstr ""
+"Failu slēgšana noklusēti ir ieslēgta ${PRODUCTNAME}. Tīklā, kas izmanto "
+"Network File System protokolu (NFS), jābūt aktīvam slēgšanas dēmonam NFS "
+"klientiem. Lai atslēgtu failu slēgšanu, atveriet <tt>soffice</tt> skriptu un "
+"izmainiet rindu \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" uz \"<tt># export "
+"SAL_ENABLE_FILE_LOCKING</tt>\". Ja atslēgsiet failu slēgšanu, netiks "
+"kontrolēta rakstīšanas piekļuve dokumentiem."
 
 #: readme.xrm#PJI76WSDF
-msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr "Brīdinājums: Aktivizēta failu slēgšanas iespēja var radīt problēmas Solaris operētājsistēmas 2.5.1 un 2.7 versijās, lietojot tās kopā ar Linux NFS 2.0. Ja jūsu sistēma atbilst šiem nosacījumiem, iesakām neizmantot failu slēgšanas iespēju, pretējā gadījumā  ${PRODUCTNAME} uzkārsies katru reizi, kad mēģināsiet atvērt kādu failu mapē, kas piemontēta ar NFS palīdzību."
+msgid "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"Brīdinājums: Aktivizēta failu slēgšanas iespēja var radīt problēmas Solaris "
+"operētājsistēmas 2.5.1 un 2.7 versijās, lietojot tās kopā ar Linux NFS 2.0. "
+"Ja jūsu sistēma atbilst šiem nosacījumiem, iesakām neizmantot failu "
+"slēgšanas iespēju, pretējā gadījumā  ${PRODUCTNAME} uzkārsies katru reizi, "
+"kad mēģināsiet atvērt kādu failu mapē, kas piemontēta ar NFS palīdzību."
 
 #: readme.xrm#GFH6W1
-msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "Problēmas ar dokumentu sūtīšanu pa e-pastu no  ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
-msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr "Problēmas, kas rodas sūtot dažu versiju dokumentus pa e-pastu izmantojot 'Fails - Sūtīt - Dokumentu kā e-pastu' vai 'Dokumentu kā PDF pielikumu' rodas dēļ Windows sistēmas failu \"Mapi\" (Messaging Application Programming Interface), kas rada problēmas ar dažām failu versijām. Diemžēl šo problēmu nevar sašaurināt līdz ierobežotam versiju lokam. Sīkāku informāciju meklējiet <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> zināšanu datubāzē saistībā ar \"mapi dll\""
+msgid "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"Problēmas, kas rodas sūtot dažu versiju dokumentus pa e-pastu izmantojot "
+"'Fails - Sūtīt - Dokumentu kā e-pastu' vai 'Dokumentu kā PDF pielikumu' "
+"rodas dēļ Windows sistēmas failu \"Mapi\" (Messaging Application Programming "
+"Interface), kas rada problēmas ar dažām failu versijām. Diemžēl šo problēmu "
+"nevar sašaurināt līdz ierobežotam versiju lokam. Sīkāku informāciju "
+"meklējiet <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> "
+"zināšanu datubāzē saistībā ar \"mapi dll\""
 
 #: readme.xrm#AW22
-msgid  "Important Accessibility Notes"
+msgid "Important Accessibility Notes"
 msgstr "Svarīgas pieejamības piezīmes"
 
 #: readme.xrm#ACCESS7
-msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
-msgstr "Vairāk informāciju par ${PRODUCTNAME} pieejamības iespējām atradīsiet <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgid "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgstr ""
+"Vairāk informāciju par ${PRODUCTNAME} pieejamības iespējām atradīsiet <a hre"
+"f=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 
 #: readme.xrm#SUPPORT
 #, fuzzy
-msgid  "User Support"
-msgstr "Galvenā atbalsta lapa <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> piedāvā dažādas palīdzības iespējas darbā ar ${PRODUCTNAME}. Jūsu jautājumam varbūt jau ir atbilde - pārbaudiet Komūnas forumu <a href=\"http://user.services.openoffice.org\">http://user.services.openoffice.org</a> vai meklējiet 'users@openoffice.org' e-pasta sarakstes arhīvos <a href=\"http://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. Varat sūtīt jautājumus uz <a href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Kā pierakstīties šim sarakstam (lai saņemtu atbildes) ir aprakstīts šajā lapā: <a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>."
+msgid "User Support"
+msgstr ""
+"Galvenā atbalsta lapa <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"piedāvā dažādas palīdzības iespējas darbā ar ${PRODUCTNAME}. Jūsu jautājumam "
+"varbūt jau ir atbilde - pārbaudiet Komūnas forumu <a href=\"http://user.serv"
+"ices.openoffice.org\">http://user.services.openoffice.org</a> vai meklējiet "
+"'users@openoffice.org' e-pasta sarakstes arhīvos <a href=\"http://www.openoff"
+"ice.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. Varat "
+"sūtīt jautājumus uz <a "
+"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Kā "
+"pierakstīties šim sarakstam (lai saņemtu atbildes) ir aprakstīts šajā lapā: "
+"<a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
+"nglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
+"nglists</a>."
+
+#: readme.xrm#SUPPORT1
+msgid "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr ""
 
 #: readme.xrm#FAQ
 #, fuzzy
-msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
-msgstr "Tāpat ieskatieties mūsu biezāk uzdoto jautājumu sadaļā <a href=\"http://wiki.services.openoffice.org/wiki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentation/FAQ.</a>"
+msgid "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
+msgstr ""
+"Tāpat ieskatieties mūsu biezāk uzdoto jautājumu sadaļā <a href=\"http://wiki."
+"services.openoffice.org/wiki/Documentation/FAQ\">http://wiki.services.openoff"
+"ice.org/wiki/Documentation/FAQ.</a>"
 
 #: readme.xrm#REPORTBUGS
 #, fuzzy
-msgid  "Reporting Bugs &amp; Issues"
-msgstr "${PRODUCTNAME} mājas lapā tiek uzturēta IssueZilla, kas ir īpašs kļūdu un problēmu ziņošanas, izsekošanas un risināšanas mehānisms. Mēs mudinām visus lietotājus iesaistīties kļūdu un problēmu ziņošanā. Aktīva ziņošana par programmas nepilnībām ir viena no vērtīgākajām atbalsta formām šī produkta pilnveidošanai un uzlabošanai, ko var veikt lietotāju komūna. "
+msgid "Reporting Bugs &amp; Issues"
+msgstr ""
+"${PRODUCTNAME} mājas lapā tiek uzturēta IssueZilla, kas ir īpašs kļūdu un "
+"problēmu ziņošanas, izsekošanas un risināšanas mehānisms. Mēs mudinām visus "
+"lietotājus iesaistīties kļūdu un problēmu ziņošanā. Aktīva ziņošana par "
+"programmas nepilnībām ir viena no vērtīgākajām atbalsta formām šī produkta "
+"pilnveidošanai un uzlabošanai, ko var veikt lietotāju komūna. "
+
+#: readme.xrm#REPORTBUGS1
+msgid "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
 
 #: readme.xrm#GETTINGINVOLVED1
-msgid  "Getting Involved"
+msgid "Getting Involved"
 msgstr "Kā iesaistīties "
 
 #: readme.xrm#GETTINGINVOLVED2
-msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr "${PRODUCTNAME} kopiena iegūtu ļoti daudz no jūsu aktīvas līdzdalības šajā svarīgajā atvērtā pirmkoda projektā."
+msgid "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
+msgstr ""
+"${PRODUCTNAME} kopiena iegūtu ļoti daudz no jūsu aktīvas līdzdalības šajā "
+"svarīgajā atvērtā pirmkoda projektā."
 
 #: readme.xrm#GETTINGIMVOLVED3
 #, fuzzy
-msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "Jau kā lietotājam jums ir svarīga loma šīs biroja programmatūras izstrādes procesā, tāpēc mēs gribētu mudināt jūs piedalīties vēl aktīvāk, kļūstot par pastāvīgu mūsu kopienas atbalstītāju. Lūdzu, pievienojieties un aplūkojiet mūsu lietotāju lapu <a href=\"http://www.openoffice.org\">http://www.openoffice.org</a>"
+msgid "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgstr ""
+"Jau kā lietotājam jums ir svarīga loma šīs biroja programmatūras izstrādes "
+"procesā, tāpēc mēs gribētu mudināt jūs piedalīties vēl aktīvāk, kļūstot par "
+"pastāvīgu mūsu kopienas atbalstītāju. Lūdzu, pievienojieties un aplūkojiet "
+"mūsu lietotāju lapu <a "
+"href=\"http://www.openoffice.org\">http://www.openoffice.org</a>"
 
 #: readme.xrm#HOWTOSTART
 #, fuzzy
-msgid  "How to Start"
-msgstr "Labākais veids, kā sākt atbalstīt, ir pierakstīties kādā no adresātu sarakstiem un kādu brīdi sekojot līdzi visam tajā notiekošajam. Tas jums ļaus iepazīties ar dažādiem aktuāliem jautājumiem, kas ir risināti kopš ${PRODUCTNAME} pirmkods tika pirmoreiz publicēts 2000. gada oktobrī. Kad esat iepazinies ar notiekošo, viss, kas jums jāizdara ir jānosūta iepazīšanās e-pasts un jāsāk piedalīties. Ja atklātā pirmkoda vide jums nav sveša, varat ieskatīties mūsu darāmo darbu sarakstā, iespējams, tur ir kas tāds, kur jūs vēlētos palīdzēt <a href=\"http://development.openoffice.org/todo.html\">http://development.openoffice.org/todo.html</a>."
+msgid "How to Start"
+msgstr ""
+"Labākais veids, kā sākt atbalstīt, ir pierakstīties kādā no adresātu "
+"sarakstiem un kādu brīdi sekojot līdzi visam tajā notiekošajam. Tas jums "
+"ļaus iepazīties ar dažādiem aktuāliem jautājumiem, kas ir risināti kopš "
+"${PRODUCTNAME} pirmkods tika pirmoreiz publicēts 2000. gada oktobrī. Kad "
+"esat iepazinies ar notiekošo, viss, kas jums jāizdara ir jānosūta "
+"iepazīšanās e-pasts un jāsāk piedalīties. Ja atklātā pirmkoda vide jums nav "
+"sveša, varat ieskatīties mūsu darāmo darbu sarakstā, iespējams, tur ir kas "
+"tāds, kur jūs vēlētos palīdzēt <a href=\"http://development.openoffice.org/to"
+"do.html\">http://development.openoffice.org/todo.html</a>."
+
+#: readme.xrm#HOWTOSTART1
+msgid "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
 
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
-msgid  "Subscribe"
+msgid "Subscribe"
 msgstr "Galvenā atbalstītāju sarakste: dev@openoffice.org (vidēja/liela plūsma)"
+
+#: readme.xrm#SUBSCRIBE1
+msgid "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST1
+msgid "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST2
+msgid "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#MISSING_ID
+msgid "Joining the Project"
+msgstr ""
 
 #: readme.xrm#JOINING
 #, fuzzy
-msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
-msgstr "Varat palīdzēt, pievienojoties 'Mārketinga komunikāciju un informācijas tīklam' iekš <a href=\"http://marketing.openoffice.org/contacts.html\">http://marketing.openoffice.org/contacts.html</a>, kur varat piedāvāt sazināšanās iespējas ar presi, mēdijiem, valdības aģentūrām, konsultantem, skolām, Linux lietotāju grupām un izstrādātājiem jūsu valstī vai lokālajā komūnā."
+msgid "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+"Varat palīdzēt, pievienojoties 'Mārketinga komunikāciju un informācijas "
+"tīklam' iekš <a href=\"http://marketing.openoffice.org/contacts.html\">http://"
+"marketing.openoffice.org/contacts.html</a>, kur varat piedāvāt sazināšanās "
+"iespējas ar presi, mēdijiem, valdības aģentūrām, konsultantem, skolām, Linux "
+"lietotāju grupām un izstrādātājiem jūsu valstī vai lokālajā komūnā."
+
+#: readme.xrm#JOINING1
+msgid "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+
+#: readme.xrm#JOINING3
+msgid "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
 
 #: readme.xrm#CREDITS
 #, fuzzy
-msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr "Mēs ceram, ka jums patiks strādāt ar jauno ${PRODUCTNAME} ${PRODUCTVERSION} un jūs mums pievienosieties tiešsaistē."
+msgid "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+"Mēs ceram, ka jums patiks strādāt ar jauno ${PRODUCTNAME} ${PRODUCTVERSION} "
+"un jūs mums pievienosieties tiešsaistē."
 
 #: readme.xrm#CREDITS2
 #, fuzzy
-msgid  "The Apache OpenOffice Community"
+msgid "The Apache OpenOffice Community"
 msgstr "OpenOffice.org kopiena"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
 #, fuzzy
-msgid  "Used / Modified Source Code"
+msgid "Used / Modified Source Code"
 msgstr "Lietots / adaptēts pirmkods"

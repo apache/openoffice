@@ -1,2711 +1,4298 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
-msgid  "Tried to open the table $name$."
+msgid "Tried to open the table $name$."
 msgstr "$name$ tablosu açılmaya çalışıldı"
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
-msgid  "No connection could be established."
+msgid "No connection could be established."
 msgstr "Bir bağlantı kurulamadı."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
-msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgid "The table $name$ already exists. It is not visible because it has been filtered out."
 msgstr "$name$ tablosu mevcuttur, sadece süzgeçlenebilir."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
-msgid  "You have no write access to the configuration data the object is based on."
+msgid "You have no write access to the configuration data the object is based on."
 msgstr "Yapılandırma verisinin kurulu olduğu nesneye yazma hakkınız yok."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
-msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr "Harici veri kaynağıyla bağlantı kurulamadı. Bilinmeyen bir hata oluştu. SDBC sürücüsü bozulmuş olabilir."
+msgid "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr ""
+"Harici veri kaynağıyla bağlantı kurulamadı. Bilinmeyen bir hata oluştu. SDBC "
+"sürücüsü bozulmuş olabilir."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr "Harici veri kaynağına bağlantı kurulamadı. Verilen adres için SDBC sürücüsü bulunamadı."
+msgid "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr ""
+"Harici veri kaynağına bağlantı kurulamadı. Verilen adres için SDBC sürücüsü "
+"bulunamadı."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr "Harici veri kaynağına olan bağlantı sağlanamadı. SDBC sürücü yöneticisi yüklenemedi."
+msgid "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr ""
+"Harici veri kaynağına olan bağlantı sağlanamadı. SDBC sürücü yöneticisi "
+"yüklenemedi."
+
+#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
+msgid "Form"
+msgstr ""
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+#, fuzzy
+msgid "Report"
 msgstr "Rapor"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
-msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr "Veri kaynağı kaydedilmedi. Kaydetmek için lütfen XStoreable arayüzünü kullanın."
+msgid "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr ""
+"Veri kaynağı kaydedilmedi. Kaydetmek için lütfen XStoreable arayüzünü "
+"kullanın."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "SELECT ifadesi izin verilmiş bir ifade değildir.\nSadece sorgulamalara izin verilmiştir."
+msgid "The given command is not a SELECT statement.\nOnly queries are allowed."
+msgstr ""
+"SELECT ifadesi izin verilmiş bir ifade değildir.\n"
+"Sadece sorgulamalara izin verilmiştir."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
-msgid  "No values were modified."
+msgid "No values were modified."
 msgstr "Hiçbir değer değiştirilmedi."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgid "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
 msgstr "Değerler eklenmedi. Sonuç kümesi XRowUpdate arayüzünü desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgid "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
 msgstr "Değerler eklenmedi. Sonuç kümesi XRowSetUpdate arayüzünü desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
-msgid  "Values could not be modified, due to a missing condition statement."
+msgid "Values could not be modified, due to a missing condition statement."
 msgstr "Koşul eksikliği nedeniyle değerler değiştirilemedi."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
-msgid  "The adding of columns is not supported."
+msgid "The adding of columns is not supported."
 msgstr "Sütun ekleme desteklenmiyor."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
-msgid  "The dropping of columns is not supported."
+msgid "The dropping of columns is not supported."
 msgstr "Sütun silme desteklenmiyor"
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
-msgid  "The WHERE condition could not be created for the primary key."
+msgid "The WHERE condition could not be created for the primary key."
 msgstr "Birincil anahtar için WHERE koşulu yaratılamadı."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
-msgid  "The column does not support the property '%value'."
+msgid "The column does not support the property '%value'."
 msgstr "Sütun '%value' özelliğini desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
-msgid  "The column is not searchable!"
+msgid "The column is not searchable!"
 msgstr "Sütun aranabilir değil!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
-msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
 msgstr "Sütunların değeri <sal_Int8> Sıralama tipinde değildir."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
-msgid  "The column is not valid."
+msgid "The column is not valid."
 msgstr "Sütun geçerli değildir."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
-msgid  "The column '%name' must be visible as a column."
+msgid "The column '%name' must be visible as a column."
 msgstr "'%name' sütunu, görülebilir sütun olmalıdır."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
-msgid  "The interface XQueriesSupplier is not available."
+msgid "The interface XQueriesSupplier is not available."
 msgstr "XQueriesSupplier arayüzü kullanılabilir değil."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
-msgid  "The driver does not support this function."
+msgid "The driver does not support this function."
 msgstr "Sürücü bu işlevi desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
-msgid  "An 'absolute(0)' call is not allowed."
+msgid "An 'absolute(0)' call is not allowed."
 msgstr "'absolute(0)' çağrımına izin verilmiyor."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
-msgid  "Relative positioning is not allowed in this state."
+msgid "Relative positioning is not allowed in this state."
 msgstr "Bu koşullarda göreli konumlamaya izin verilmiyor."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
-msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgid "A row cannot be refreshed when the ResultSet is positioned after the last row."
 msgstr "Sonuç kümesi en son satırdan sonra gelmişse, satır yenilenemez."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
-msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgid "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
 msgstr "Sonuç kümesi satırı eklenmeden önce yeni satır eklenemez."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
-msgid  "A row cannot be modified in this state"
+msgid "A row cannot be modified in this state"
 msgstr "Bu koşullarda bir satır değişikliği yapılamaz."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
-msgid  "A row cannot be deleted in this state."
+msgid "A row cannot be deleted in this state."
 msgstr "Bu koşullarda satır silinemez."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
-msgid  "The driver does not support table renaming."
+msgid "The driver does not support table renaming."
 msgstr "Sürücü, tablo yeniden isimlendirmeyi desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions."
+msgid "The driver does not support the modification of column descriptions."
 msgstr "Sürücü, sütun açıklamalarının değiştirilmesini desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr "Sürücü, isim değiştirilmesi suretiyle, sütun açıklamalarının değiştirilmesini desteklemiyor."
+msgid "The driver does not support the modification of column descriptions by changing the name."
+msgstr ""
+"Sürücü, isim değiştirilmesi suretiyle, sütun açıklamalarının "
+"değiştirilmesini desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr "Sürücü, dizin değiştirilmesi suretiyle, sütun açıklamalarının değiştirilmesini desteklemiyor."
+msgid "The driver does not support the modification of column descriptions by changing the index."
+msgstr ""
+"Sürücü, dizin değiştirilmesi suretiyle, sütun açıklamalarının "
+"değiştirilmesini desteklemiyor."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "The file \"$file$\" does not exist."
+#, fuzzy
+msgid "The file \"$file$\" does not exist."
 msgstr "\"$file$\" dosyası yok."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no table named \"$table$\"."
+msgid "There exists no table named \"$table$\"."
 msgstr "\"$table$\" isminde bir tablo yok."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no query named \"$table$\"."
+msgid "There exists no query named \"$table$\"."
 msgstr "\"$table$\" isminde bir sorgu yok."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
-msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr "Mevcut sorgu isimleriyle veritabanı tablo isimleri çakışıyor. Bütün tabloları ve sorguları tam olarak kullanabilmek için farklı isimler kullanın."
+msgid "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr ""
+"Mevcut sorgu isimleriyle veritabanı tablo isimleri çakışıyor. Bütün "
+"tabloları ve sorguları tam olarak kullanabilmek için farklı isimler "
+"kullanın."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "Önemli SQL komut hatası:\n\n$command$"
+msgid "The SQL command leading to this error is:\n\n$command$"
+msgstr ""
+"Önemli SQL komut hatası:\n"
+"\n"
+"$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
-msgid  "The SQL command does not describe a result set."
+msgid "The SQL command does not describe a result set."
 msgstr "SQL komudu için bir sonuç kümesi tanımlanamadı."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
-msgid  "The name must not be empty."
+msgid "The name must not be empty."
 msgstr "Ad boş olamaz."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
-msgid  "The container cannot contain NULL objects."
+msgid "The container cannot contain NULL objects."
 msgstr "Taşıyıcı NULL nesneler içeremez."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
-msgid  "There already is an object with the given name."
+msgid "There already is an object with the given name."
 msgstr "Bu isimde bir nesne var."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
-msgid  "This object cannot be part of this container."
+msgid "This object cannot be part of this container."
 msgstr "Bu nesne bu taşıyıcının bir bölümü değil."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
-msgid  "The object already is, with a different name, part of the container."
+msgid "The object already is, with a different name, part of the container."
 msgstr "Nesne farklı bir adla taşıyıcının bir bölümdür."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
-msgid  "Unable to find the document '$name$'."
+msgid "Unable to find the document '$name$'."
 msgstr "'$name$' belgesi bulunamıyor."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "Belge kaydedilemedi:\n\n$except$:\n$message$"
+msgid "Could not save the document to $location$:\n$message$"
+msgstr ""
+"Belge kaydedilemedi:\n"
+"\n"
+"$except$:\n"
+"$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
-msgid  "Error accessing data source '$name$':\n$error$"
-msgstr "Veri kaynağına erişim hatası '$name$':\n$error$"
+msgid "Error accessing data source '$name$':\n$error$"
+msgstr ""
+"Veri kaynağına erişim hatası '$name$':\n"
+"$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
-msgid  "There exists no folder named \"$folder$\"."
+msgid "There exists no folder named \"$folder$\"."
 msgstr "\"$table$\" isminde bir tablo yok."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
-msgid  "Cannot delete the before-first or after-last row."
+msgid "Cannot delete the before-first or after-last row."
 msgstr "İlk sıran öncesini veya son sıradan sonrasını silinmiyor."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
-msgid  "Cannot delete the insert-row."
+msgid "Cannot delete the insert-row."
 msgstr "Ek-sırası silinmiyor"
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
-msgid  "Result set is read only."
+msgid "Result set is read only."
 msgstr "Sonuç sadece okunabilir."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
-msgid  "DELETE privilege not available."
+msgid "DELETE privilege not available."
 msgstr "Silme(DELETE) ayrıcalığı yok."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
-msgid  "Current row is already deleted."
+msgid "Current row is already deleted."
 msgstr "Mevcut sıra zaten silinmiş."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
-msgid  "Current row could not be updated."
+msgid "Current row could not be updated."
 msgstr "Mevcut sıra güncellenemiyor."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
-msgid  "INSERT privilege not available."
+msgid "INSERT privilege not available."
 msgstr "INSERT ayırımı yok"
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
-msgid  "Internal error: no statement object provided by the database driver."
+msgid "Internal error: no statement object provided by the database driver."
 msgstr "Dahili hata: veri tarafından sağlanan öğeler yok."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
-msgid  "Expression1"
+msgid "Expression1"
 msgstr "Tanım1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
-msgid  "No SQL command was provided."
+msgid "No SQL command was provided."
 msgstr "SQL komutu sağlanamadı."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid column index."
+msgid "Invalid column index."
 msgstr "Geçersiz sütun indeksi"
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
-msgid  "Invalid cursor state."
+msgid "Invalid cursor state."
 msgstr "Geçersiz imleç durumu"
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The cursor points to before the first or after the last row."
+msgid "The cursor points to before the first or after the last row."
 msgstr "İmleç birinciden önce veya sonuncudan sonraki yeri gösteriyor."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The rows before the first and after the last row don't have a bookmark."
+msgid "The rows before the first and after the last row don't have a bookmark."
 msgstr "Birinciden önceki yada sonuncudan sonraki satırda yer imi yok."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
-msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgid "The current row is deleted, and thus doesn't have a bookmark."
 msgstr "Mevcut satır silik, ve yer iminide sahip değil."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
-msgid  "Embedding of database documents is not supported."
+msgid "Embedding of database documents is not supported."
 msgstr "Veritabanı dökümanlarının eklenmesi desteklenmiyor."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
-msgid  "A connection for the following URL was requested \"$name$\"."
+msgid "A connection for the following URL was requested \"$name$\"."
 msgstr "Bu URL için bağlantı istendi: \"$name$\""
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
-msgid  "The extension is not installed."
+msgid "The extension is not installed."
 msgstr "Uzantı kurulmadı."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
-msgid  "Database ~name"
+msgid "Database ~name"
 msgstr "Veritabanı a~dı"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
-msgid  "User settings"
+msgid "User settings"
 msgstr "Kullanıcı ayarları"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
-msgid  "~Control user"
+msgid "~Control user"
 msgstr "Denetim Kullanı~cısı"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
-msgid  "~Administrator"
+msgid "~Administrator"
 msgstr "Y~önetici"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
-msgid  "~Domain user"
+msgid "~Domain user"
 msgstr "Alan A~dı Kullanıcısı"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
-msgid  "P~assword..."
+msgid "P~assword..."
 msgstr "P~arola..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
-msgid  "~Password..."
+msgid "~Password..."
 msgstr "~Parola..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
-msgid  "Passwo~rd..."
+msgid "Passwo~rd..."
 msgstr "Pa~rola..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
-msgid  "~Backup file"
+msgid "~Backup file"
 msgstr "Yedek dosyas~ı"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
-msgid  "Database settings"
+msgid "Database settings"
 msgstr "Veritabanı ayarları"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
-msgid  "S~YSDEVSPACE"
+msgid "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
-msgid  "TRANSACTI~ONLOG"
+msgid "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
-msgid  "DATAD~EVSPACE"
+msgid "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
-msgid  "Transaction ~file (MB)"
+msgid "Transaction ~file (MB)"
 msgstr "İ~şlem dosyası (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data~base size (MB)"
+msgid "Data~base size (MB)"
 msgstr "Verita~banı boyutu (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data ~buffer size (MB)"
-msgstr "Veri tam~pon boyutu (MB)"
+#, fuzzy
+msgid "Data ~buffer size (MB)"
+msgstr "Veri tampon ~boyutu (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
-msgid  "Backup file information"
+msgid "Backup file information"
 msgstr "Yedek dosya bilgisi"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
-msgid  "Create New Adabas D Database"
+msgid "Create New Adabas D Database"
 msgstr "Yeni Adabas D Veritabanı Oluştur"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
-msgid  "No entry could be written in the configuration file."
+msgid "No entry could be written in the configuration file."
 msgstr "Yapılandırma dosyasına herhangi bir girdi yazılamadı."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
-msgid  "An error occurred as the DB files were being created."
+msgid "An error occurred as the DB files were being created."
 msgstr "DB dosyaları oluşturulmaya başlanırken bir hata meydana geldi."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
-msgid  "An error occurred as the system tables were being created."
+msgid "An error occurred as the system tables were being created."
 msgstr "Sistem tabloları oluşturulmaya başlanırken bir hata meydana geldi."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
-msgid  "The backup file entered does not exist."
+msgid "The backup file entered does not exist."
 msgstr "Yedek dosyası girilmemiş."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
-msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgid "The fully qualified file cannot be longer than \'#\' characters."
 msgstr "\\'#\\' karakterleri tam yetkili dosyadan daha uzun olamaz."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
-msgid  "The administrator and the control user cannot have the same name!"
+msgid "The administrator and the control user cannot have the same name!"
 msgstr "Yönetici ve denetim kullanıcısı aynı isme sahip olamaz!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
-msgid  "No name has been entered for the $name$ file!"
+msgid "No name has been entered for the $name$ file!"
 msgstr "$name$ dosyası için isim girilmemiş."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
-msgid  "You have to have administrator rights to create a new database!"
-msgstr "Yeni bir veritabanı oluşturmak için yönetici haklarına sahip olmalısınız!"
+msgid "You have to have administrator rights to create a new database!"
+msgstr ""
+"Yeni bir veritabanı oluşturmak için yönetici haklarına sahip olmalısınız!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
-msgid  "The specified file name or directory does not exist."
+msgid "The specified file name or directory does not exist."
 msgstr "Belirlenmiş bir dosya adı ya da dizini yok."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "Yeni bir veritabanı oluşturulamadı.\nLütfen Adabas D kurulumunu ve \"DBROOT\" ve \"DBWORK\" değişkenlerini kontrol ediniz."
+msgid "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
+"Yeni bir veritabanı oluşturulamadı.\n"
+"Lütfen Adabas D kurulumunu ve \"DBROOT\" ve \"DBWORK\" değişkenlerini kontrol "
+"ediniz."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "Uyarı!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
-msgid  "Creating database files."
+msgid "Creating database files."
 msgstr "Veritabanı dosyaları oluşturuluyor."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
-msgid  "Creating database configuration file."
+msgid "Creating database configuration file."
 msgstr "Veritabanı yapılandırma dosyası oluşturuluyor."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
-msgid  "Starting database for the first time."
+msgid "Starting database for the first time."
 msgstr "İlk kez veritabanını başlat."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
-msgid  "The name entered already exists."
+msgid "The name entered already exists."
 msgstr "Bu isim kullanılmaktadır."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
-msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr "Veritabanı dosyaları için varsayılan isimler belirlenmemiş. Uzunluk 40 karakterden uzun olamaz."
+msgid "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr ""
+"Veritabanı dosyaları için varsayılan isimler belirlenmemiş. Uzunluk 40 "
+"karakterden uzun olamaz."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
-msgid  "No default names could be set for the database files. There is no write access."
-msgstr "Veritabanı dosyaları için varsayılan isimler belirlenmemiş. Onlara erişilemedi."
+msgid "No default names could be set for the database files. There is no write access."
+msgstr ""
+"Veritabanı dosyaları için varsayılan isimler belirlenmemiş. Onlara "
+"erişilemedi."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr "Geçerli veritabanı dönüştürülecek. Lütfen kontrol için kullanıcı adı ve parolayı ekleyin."
+msgid "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+"Geçerli veritabanı dönüştürülecek. Lütfen kontrol için kullanıcı adı ve "
+"parolayı ekleyin."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
-msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgid "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Parolada boşluk kullanılamaz. Lütfen yeni bir parola giriniz."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
-msgid  "Database Document Macro Migration"
+msgid "Database Document Macro Migration"
 msgstr "Veritabanı Belge Makrosu Sakla"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
-msgid  "Prepare"
+msgid "Prepare"
 msgstr "Hazırla"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
-msgid  "Backup Document"
+msgid "Backup Document"
 msgstr "Belgeyi Yedekle"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
-msgid  "Migrate"
+msgid "Migrate"
 msgstr "Sakla"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
-msgid  "Summary"
+msgid "Summary"
 msgstr "Özet"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to the Database Macro Migration Wizard"
+msgid "Welcome to the Database Macro Migration Wizard"
 msgstr "Veritabanı Makro Saklama Sihirbazına Hoş Geldiniz"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "Bu sihirbaz makrolarınızı ve betiklerinizi saklamanızda size rehberlik edecektir.\n\nİşlem bittikten sonra, veritabanı belgenizde bulunan bütün makrolar ve betikler, formlardan ve raporlardan taşınmış olacaktır. Bu süreçte, kütüphanelerinizi gerektiğinde yeniden adlandırılabilirsiniz.\n\nEğer makrolar ve betikler, form ve rapor başvuruları içeriyorsa bunların ayarlanması mümkün olacaktır.\n\nSaklama işlemine başlamadan önce bütün formlarınızı,raporlarınızı, sorgularınızı ve tablolarınızı kapatınız. İşleme başlamak için 'İleri' düğmesine tıklayınız."
+msgid "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+"Bu sihirbaz makrolarınızı ve betiklerinizi saklamanızda size rehberlik "
+"edecektir.\n"
+"\n"
+"İşlem bittikten sonra, veritabanı belgenizde bulunan bütün makrolar ve "
+"betikler, formlardan ve raporlardan taşınmış olacaktır. Bu süreçte, "
+"kütüphanelerinizi gerektiğinde yeniden adlandırılabilirsiniz.\n"
+"\n"
+"Eğer makrolar ve betikler, form ve rapor başvuruları içeriyorsa bunların "
+"ayarlanması mümkün olacaktır.\n"
+"\n"
+"Saklama işlemine başlamadan önce bütün formlarınızı,raporlarınızı, "
+"sorgularınızı ve tablolarınızı kapatınız. İşleme başlamak için 'İleri' "
+"düğmesine tıklayınız."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
-msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr "Bütün nesneler kapatılamadı. Lütfen elle kapatın ve sihirbazı tekrar başlatın."
+msgid "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr ""
+"Bütün nesneler kapatılamadı. Lütfen elle kapatın ve sihirbazı tekrar "
+"başlatın."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Backup your Document"
+msgid "Backup your Document"
 msgstr "Belgenizi Yedekleyin"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr "Saklama işlemi için bir konum seçin, burada saklama işleminden önceki duruma dönmenizi sağlayacak veriler saklanacaktır. Her değişim sihirbaz aracılığıyla özgün belgeye yapılacaktır, yedeklenen belgede işlem yapılmayacaktır."
+msgid "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr ""
+"Saklama işlemi için bir konum seçin, burada saklama işleminden önceki duruma "
+"dönmenizi sağlayacak veriler saklanacaktır. Her değişim sihirbaz "
+"aracılığıyla özgün belgeye yapılacaktır, yedeklenen belgede işlem "
+"yapılmayacaktır."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
-msgid  "Save To:"
+msgid "Save To:"
 msgstr "Kaydetme Yeri:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
-msgid  "Browse ..."
+msgid "Browse ..."
 msgstr "Gözat ..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
-msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr "Belgenizin bir kopyasını oluşturmak için 'İleri' düğmesine tıklayın ve saklama işlemine başlayın."
+msgid "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr ""
+"Belgenizin bir kopyasını oluşturmak için 'İleri' düğmesine tıklayın ve "
+"saklama işlemine başlayın."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Migration Progress"
+msgid "Migration Progress"
 msgstr "Taşıma İlerlemesi"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
-msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr "Veritabanı $forms$ formunu(larını) ve $reports$ raporunu(larını) içermektedir, geçerli işlem devam etmektedir:"
+msgid "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr ""
+"Veritabanı $forms$ formunu(larını) ve $reports$ raporunu(larını) "
+"içermektedir, geçerli işlem devam etmektedir:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
-msgid  "Current object:"
+msgid "Current object:"
 msgstr "Geçerli nesne:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Current progress:"
+msgid "Current progress:"
 msgstr "Geçerli ilerleme:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Overall progress:"
+msgid "Overall progress:"
 msgstr "Ayrıntılı ilerleme:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "document $current$ of $overall$"
+msgid "document $current$ of $overall$"
 msgstr "$overall$ 'ın $current$ 'i belge"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
-msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr "Bütün formlarda ve raporlarda işlem başarıyla gerçekleştirildi. Daha ayrıntılı bilgi için 'İleri' düğmesini tıklayın."
+msgid "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr ""
+"Bütün formlarda ve raporlarda işlem başarıyla gerçekleştirildi. Daha "
+"ayrıntılı bilgi için 'İleri' düğmesini tıklayın."
+
+#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
+msgid "Summary"
+msgstr "Özet"
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
-msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr "Taşıma başarılı. Belgede yapılan bütün eylemleri günlük belgesinde bulabilirsiniz."
+msgid "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr ""
+"Taşıma başarılı. Belgede yapılan bütün eylemleri günlük belgesinde "
+"bulabilirsiniz."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
-msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr "Taşıma başarılı değil. Ayrıntılar için taşıma günlüğünü inceleyebilirsiniz."
+msgid "The migration was not successful. Examine the migration log below for details."
+msgstr ""
+"Taşıma başarılı değil. Ayrıntılar için taşıma günlüğünü inceleyebilirsiniz."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
-msgid  "Form '$name$'"
+msgid "Form '$name$'"
 msgstr "Form '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
-msgid  "Report '$name$'"
+msgid "Report '$name$'"
 msgstr "'$name$' Raporu"
 
+#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
+msgid "document $current$ of $overall$"
+msgstr "$overall$ 'ın $current$ 'i belge"
+
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
-msgid  "Database Document"
+msgid "Database Document"
 msgstr "Veritabanı Belgesi"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
-msgid  "saved copy to $location$"
+msgid "saved copy to $location$"
 msgstr "$location$ konumuna kopya olarak kaydedildi"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
-msgid  "migrated $type$ library '$old$' to '$new$'"
+msgid "migrated $type$ library '$old$' to '$new$'"
 msgstr "$type$ kütüphanesi $old$'dan $new$'e taşındı"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
-msgid  "$type$ library '$library$'"
+msgid "$type$ library '$library$'"
 msgstr "$type$ kütüphanesi '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
-msgid  "migrating libraries ..."
+msgid "migrating libraries ..."
 msgstr "kütüphaneler taşınıyor ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
-msgid  "%PRODUCTNAME Basic"
+msgid "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
-msgid  "JavaScript"
+msgid "JavaScript"
 msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
-msgid  "BeanShell"
+msgid "BeanShell"
 msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
-msgid  "Java"
+msgid "Java"
 msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
-msgid  "Python"
+msgid "Python"
 msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
-msgid  "dialog"
+msgid "dialog"
 msgstr "iletişim öğesi"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
-msgid  "Error(s)"
+msgid "Error(s)"
 msgstr "Hata(lar)"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
-msgid  "Warnings"
+msgid "Warnings"
 msgstr "Uyarılar"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
-msgid  "caught exception: "
+msgid "caught exception: "
 msgstr "istisnayı yakala: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
-msgid  "You need to choose a backup location other than the document location itself."
+msgid "You need to choose a backup location other than the document location itself."
 msgstr "Belge konumunun dışında bir yedekleme konumu seçmelisiniz."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
-msgid  "Invalid number of initialization arguments. Expected 1."
+msgid "Invalid number of initialization arguments. Expected 1."
 msgstr "Geçersiz sayıda başlatma argümanları. Tahmini 1."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
-msgid  "No database document found in the initialization arguments."
+msgid "No database document found in the initialization arguments."
 msgstr "Başlatma argümanlarında veritabanı dökümanı bulunamadı."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
-msgid  "Not applicable to read-only documents."
+msgid "Not applicable to read-only documents."
 msgstr "Uygulanabilir bir \"sadece okunur\" dosyası yok."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
-msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr "Adı geçen isimde tablo ve sorgu doğrulanamıyor. Lütfen henüz kullanılmamış sorgu ya da tablo adı kullanın."
+msgid "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr ""
+"Adı geçen isimde tablo ve sorgu doğrulanamıyor. Lütfen henüz kullanılmamış "
+"sorgu ya da tablo adı kullanın."
+
+#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
+msgid "Table"
+msgstr ""
+
+#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
+msgid "Query"
+msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
-msgid  "The given connection is no valid query and/or tables supplier."
+msgid "The given connection is no valid query and/or tables supplier."
 msgstr "Kararlaştırılmış bağlantı da geçerli sorgu ve/ya da tablo yok."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
-msgid  "The given object is no table object."
+msgid "The given object is no table object."
 msgstr "Kararlaştırılmış nesne tablo nesnesi değil."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
-msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr "Geçersiz bileşim türü - com.sun.star.sdb.tools.CompositionType'dan bir değere ihtiyaç duyuluyor."
+msgid "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr ""
+"Geçersiz bileşim türü - com.sun.star.sdb.tools.CompositionType'dan bir "
+"değere ihtiyaç duyuluyor."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
-msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr "Geçersiz komut türü - com.sun.star.sdb.CommandType'da sadece TABLE ve QUERY'ye izin verilmiştir."
+msgid "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr ""
+"Geçersiz komut türü - com.sun.star.sdb.CommandType'da sadece TABLE ve "
+"QUERY'ye izin verilmiştir."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
-msgid  "Create Form in Design View..."
+msgid "Create Form in Design View..."
 msgstr "Tasarım Görünümünde Form Oluştur..."
 
+#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Form..."
+msgstr ""
+
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Report..."
+msgid "Use Wizard to Create Report..."
 msgstr "Sihirbaz Kullanarak Rapor Oluştur..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
-msgid  "Create Report in Design View..."
+msgid "Create Report in Design View..."
 msgstr "Tasarım Görünümünde Rapor Oluştur..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
-msgid  "Create Query in Design View..."
+msgid "Create Query in Design View..."
 msgstr "Tasarım Görünümünde Sorgu Oluştur..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
-msgid  "Create Query in SQL View..."
+msgid "Create Query in SQL View..."
 msgstr "SQL Görünümünde Sorgu Oluştur..."
 
+#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Query..."
+msgstr ""
+
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
-msgid  "Create Table in Design View..."
+msgid "Create Table in Design View..."
 msgstr "Tasarım Görünümünde Tablo Oluştur..."
 
+#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Table..."
+msgstr ""
+
+#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
+msgid "Create View..."
+msgstr ""
+
+#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
+msgid "Forms"
+msgstr ""
+
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
-msgid  "Reports"
+msgid "Reports"
 msgstr "Raporlar"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
-msgid  "Form..."
+msgid "Form..."
 msgstr "Form..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
-msgid  "Report..."
+msgid "Report..."
 msgstr "Rapor..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
-msgid  "View (Simple)..."
+msgid "View (Simple)..."
 msgstr "Görünüm (Basit)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
-msgid  "Paste Special..."
+msgid "Paste Special..."
 msgstr "Özel Yapıştır..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Sil"
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
+msgid "Rename"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
+msgid "Edit"
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
-msgid  "Edit in SQL View..."
+msgid "Edit in SQL View..."
 msgstr "SQL Görünümde Düzenle..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
-msgid  "Open"
+msgid "Open"
 msgstr "Aç"
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
+msgid "Create as View"
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Form Wizard..."
+msgid "Form Wizard..."
 msgstr "Form Sihirbazı..."
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
+msgid "Report..."
+msgstr "Rapor..."
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Report Wizard..."
+#, fuzzy
+msgid "Report Wizard..."
 msgstr "Rapor Sihirbazı..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
-msgid  "Select All"
+msgid "Select All"
 msgstr "Tümünü Seç"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Database"
+msgid "~Database"
 msgstr "~Veritabanı"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "Özellikler..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
-msgid  "Connection Type..."
+msgid "Connection Type..."
 msgstr "Bağlantı Türü..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
-msgid  "Advanced Settings..."
+msgid "Advanced Settings..."
 msgstr "Gelişmiş Ayarlar..."
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the data source '%1'?"
+msgid "Do you want to delete the data source '%1'?"
 msgstr "'%1' veri kaynağını silmek istiyor musunuz?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base"
+msgid " - %PRODUCTNAME Base"
 msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr "Sihirbaz, rapor oluşturulurken gerekli aşamalarda size rehber olacaktır."
+msgid "The wizard will guide you through the steps necessary to create a report."
+msgstr ""
+"Sihirbaz, rapor oluşturulurken gerekli aşamalarda size rehber olacaktır."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr "Kaydın kaynağını, denetimleri ve denetim özelliklerini belirleyerek bir form oluştur."
+msgid "Create a form by specifying the record source, controls, and control properties."
+msgstr ""
+"Kaydın kaynağını, denetimleri ve denetim özelliklerini belirleyerek bir form "
+"oluştur."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr "Kayıtın kaynağını, denetimleri ve denetim özelliklerini belirleyerek bir form oluştur."
+msgid "Create a report by specifying the record source, controls, and control properties."
+msgstr ""
+"Kayıtın kaynağını, denetimleri ve denetim özelliklerini belirleyerek bir "
+"form oluştur."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  "The wizard will guide you through the steps necessary to create a form."
+msgid "The wizard will guide you through the steps necessary to create a form."
 msgstr "Sihirbaz, form oluşturulurken gerekli aşamalarda size rehber olacaktır."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr "Sıralama ya da gruplama yapmak için süzgeçleri, girdi tablolarını, alan adlarını ve özelliklerini tanımlayarak bir sorgu oluştur."
+msgid "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr ""
+"Sıralama ya da gruplama yapmak için süzgeçleri, girdi tablolarını, alan "
+"adlarını ve özelliklerini tanımlayarak bir sorgu oluştur."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 #, fuzzy
-msgid  "Create a query  entering an SQL statement directly."
+msgid "Create a query  entering an SQL statement directly."
 msgstr "Doğrudan SQL komutu yazarak bir sorgu oluştur."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr "Sihirbaz, sorgu oluşturulurken gerekli aşamalarda size rehber olacaktır."
+msgid "The wizard will guide you through the steps necessary to create a query."
+msgstr ""
+"Sihirbaz, sorgu oluşturulurken gerekli aşamalarda size rehber olacaktır."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 #, fuzzy
-msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr "Veri tipleri gibi, alan adlarını ve özelliklerini de tanımlayarak bir tablo oluştur."
+msgid "Create a table by specifying the field names and properties, as well as the data types."
+msgstr ""
+"Veri tipleri gibi, alan adlarını ve özelliklerini de tanımlayarak bir tablo "
+"oluştur."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr "Tablo oluşturmak için özelleştirdiğiniz, iş ve kişisel tablo örneklerinden seçim yapın."
+msgid "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr ""
+"Tablo oluşturmak için özelleştirdiğiniz, iş ve kişisel tablo örneklerinden "
+"seçim yapın."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 #, fuzzy
-msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr "Görülmesini istediğiniz tablo ve alan adlarını belirleyerek bir görünüm oluştur."
+msgid "Create a view by specifying the tables and field names you would like to have visible."
+msgstr ""
+"Görülmesini istediğiniz tablo ve alan adlarını belirleyerek bir görünüm "
+"oluştur."
+
+#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+msgid "Opens the view wizard"
+msgstr ""
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 #, fuzzy
-msgid  "Database"
+msgid "Database"
 msgstr "Veritabanı"
+
+#: ui/app/app.src#STR_TASKS.STRING.TEXT
+msgid "Tasks"
+msgstr ""
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "Açıklama"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 #, fuzzy
-msgid  "Preview"
+msgid "Preview"
 msgstr "Önizleme"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 #, fuzzy
-msgid  "Disable Preview"
+msgid "Disable Preview"
 msgstr "Önizlemeyi Kapat"
 
 #: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "Veritabanı değiştirildi.\nDeğişiklikleri kaydetmek istiyor musunuz?"
+msgid "The database has been modified.\nDo you want to save the changes?"
+msgstr ""
+"Veritabanı değiştirildi.\n"
+"Değişiklikleri kaydetmek istiyor musunuz?"
 
 #: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "Bağlantı türü değiştirildi.\nDeğişikliklerin etkili olması için tüm formlar, raporlar, sorgular ve tablolar kapatılmalıdır.\n\nTüm belgeleri şimdi kapatmak istiyor musunuz?"
+msgid "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr ""
+"Bağlantı türü değiştirildi.\n"
+"Değişikliklerin etkili olması için tüm formlar, raporlar, sorgular ve "
+"tablolar kapatılmalıdır.\n"
+"\n"
+"Tüm belgeleri şimdi kapatmak istiyor musunuz?"
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+msgid "None"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+msgid "Document Information"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+msgid "Document"
+msgstr ""
+
+#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+msgid "Form"
+msgstr ""
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 #, fuzzy
-msgid  "Report"
+msgid "Report"
 msgstr "Rapor"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "F~orm name"
+msgid "F~orm name"
 msgstr "F~orm adı"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "~Report name"
+msgid "~Report name"
 msgstr "~Rapor adı"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "F~older name"
+msgid "F~older name"
 msgstr "K~lasör adı"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 #, fuzzy
-msgid  "The document contains forms or reports with embedded macros."
+msgid "The document contains forms or reports with embedded macros."
 msgstr "Belge form ya da gömülmüş bir rapor makrosu içeriyor."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
 #, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "Makrolar veritabanı belgesi içine gömülü olarak yerleştirilmelidir.\n\nBelgenizi kullanmaya devam etmeden önce makrolarınızı saklamak isteyebilirsiniz. Bu konuda 'Araçlar / Makro Taşı ...' menü öğesi size yardımcı olacaktır.\n\nMakroların gömülmeyeceği not edilerek taşıma işlemi tamamlanır."
+msgid "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
+"Makrolar veritabanı belgesi içine gömülü olarak yerleştirilmelidir.\n"
+"\n"
+"Belgenizi kullanmaya devam etmeden önce makrolarınızı saklamak "
+"isteyebilirsiniz. Bu konuda 'Araçlar / Makro Taşı ...' menü öğesi size "
+"yardımcı olacaktır.\n"
+"\n"
+"Makroların gömülmeyeceği not edilerek taşıma işlemi tamamlanır."
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
 #, fuzzy
-msgid  "Embedded database"
+msgid "Embedded database"
 msgstr "Gömülü veritabanı"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 #, fuzzy
-msgid  "You cannot select different categories."
+msgid "You cannot select different categories."
 msgstr "Farklı katogoriler seçilemez."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Unsupported object type found ($type$)."
+msgid "Unsupported object type found ($type$)."
 msgstr "Desteklenmeyen öge bulundu ($type$)."
 
+#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+msgid "Table #"
+msgstr ""
+
 #: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "Geçerli kayıt değiştirildi.\nDeğişiklikler kaydedilsin mi?"
+msgid "The current record has been changed.\nDo you want to save the changes?"
+msgstr ""
+"Geçerli kayıt değiştirildi.\n"
+"Değişiklikler kaydedilsin mi?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you want to delete the selected data?"
+msgid "Do you want to delete the selected data?"
 msgstr "Seçilen veriyi silmek ister misiniz?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 #, fuzzy
-msgid  "(filtered)"
+msgid "(filtered)"
 msgstr "(süzgeçlenmiş)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 #, fuzzy
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "Sıralama ölçütü hatası"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 #, fuzzy
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "Süzgeç ölçütü ayar hatası"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 #, fuzzy
-msgid  "Connection lost"
+msgid "Connection lost"
 msgstr "Bağlantı koptu"
+
+#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+msgid "Queries"
+msgstr ""
+
+#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+msgid "Tables"
+msgstr ""
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 #, fuzzy
-msgid  "Edit ~Database File..."
+msgid "Edit ~Database File..."
 msgstr "Veritabanı ~Dosyasını Düzenle..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 #, fuzzy
-msgid  "Registered databases ..."
+msgid "Registered databases ..."
 msgstr "Kayıtlı veritabanları ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 #, fuzzy
-msgid  "Disco~nnect"
+msgid "Disco~nnect"
 msgstr "Bağlantıyı kopar"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 #, fuzzy
-msgid  "Confirm Deletion"
+msgid "Confirm Deletion"
 msgstr "Silmeyi Onayla"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the table '%1'?"
+msgid "Do you want to delete the table '%1'?"
 msgstr "'%1' tablosunu silmek istiyor musunuz ?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "The query already exists. Do you want to delete it?"
+msgid "The query already exists. Do you want to delete it?"
 msgstr "Sorgu halihazırda mevcut. Silmek ister misiniz?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgid "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Veritabanına bağlantı kesildi. Yeniden bağlanmak istiyor musunuz?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 #, fuzzy
-msgid  "Warnings encountered"
+msgid "Warnings encountered"
 msgstr "Uyarı alındı"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 #, fuzzy
-msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgid "While retrieving the tables, warnings were reported by the database connection."
 msgstr "Tablo alınırken, uyarılar veritabanı bağlantısı tarafından raporlanır."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Connecting to \"$name$\" ..."
+msgid "Connecting to \"$name$\" ..."
 msgstr "\"$name$\" a bağlanıyor ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "Loading query $name$ ..."
+msgid "Loading query $name$ ..."
 msgstr "$name$ sorgusu yükleniyor..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Loading table $name$ ..."
+msgid "Loading table $name$ ..."
 msgstr "$name$ tablosu yükleniyor..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 #, fuzzy
-msgid  "No table format could be found."
+msgid "No table format could be found."
 msgstr "Tablo biçimi bulunamadı."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 #, fuzzy
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "Veri kaynağına \"$name$\" bağlantısı kurulamadı"
+
+#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+msgid "Rebuild"
+msgstr ""
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 #, fuzzy
-msgid  "Column ~Format..."
+msgid "Column ~Format..."
 msgstr "Sütun ~Biçimi..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 #, fuzzy
-msgid  "Copy Column D~escription"
+msgid "Copy Column D~escription"
 msgstr "Süt~un Açıklamalarını Kopyala"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 #, fuzzy
-msgid  "Table Format..."
+msgid "Table Format..."
 msgstr "Tablo Biçimi..."
+
+#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+msgid "Row Height..."
+msgstr ""
+
+#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+msgid "Undo: Data Input"
+msgstr ""
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 #, fuzzy
-msgid  "Save current record"
+msgid "Save current record"
 msgstr "Geçerli kaydı kaydet"
+
+#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+msgid "Query #"
+msgstr ""
+
+#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+msgid "Table #"
+msgstr ""
+
+#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+msgid "View #"
+msgstr ""
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The name \"#\" already exists."
+msgid "The name \"#\" already exists."
 msgstr "\"#\" bu isim mevcut."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 #, fuzzy
-msgid  "No matching column names were found."
+msgid "No matching column names were found."
 msgstr "Birbirine uyan sütun isimleri bulunamadı."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred. Do you want to continue copying?"
+msgid "An error occurred. Do you want to continue copying?"
 msgstr "Bir hata oluştu. Kopyalamaya devam etmek istiyor musunuz?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Data source table view"
+msgid "Data source table view"
 msgstr "Veri kaynağı tablo görünümü"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 #, fuzzy
-msgid  "Shows the selected table or query."
+msgid "Shows the selected table or query."
 msgstr "Seçili tabloyu ya da sorgulamayı gösterir."
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+msgid "Table name"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+msgid "Insert data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+msgid "Delete data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+msgid "Modify data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+msgid "Alter structure"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+msgid "Read data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+msgid "Modify references"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+msgid "Drop structure"
+msgstr ""
+
+#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+msgid "Sort Ascending"
+msgstr ""
+
+#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+msgid "Sort Descending"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr ""
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 #, fuzzy
-msgid  "A driver is not registered for the URL #connurl#."
+msgid "A driver is not registered for the URL #connurl#."
 msgstr "#connurl# adresi için bir sürücü kayıtlı değil."
+
+#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+msgid "No connection could be established for the URL #connurl#."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+msgid "Please check the current settings, for example user name and password."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+msgid "Successfully connected, but information about database tables is not available."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+msgid "All tables"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+msgid "All views"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+msgid "All tables and views"
+msgstr ""
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 #, fuzzy
-msgid  "Modify SQL statement(s)"
+msgid "Modify SQL statement(s)"
 msgstr "SQL deyimi(leri)ni Değiştir"
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+msgid "Database files"
+msgstr ""
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "S~YSDEVSPACE:"
+msgid "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~TRANSACTIONLOG:"
+msgid "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "DATAD~EVSPACE:"
+msgid "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+msgid "Database sizes"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+msgid "S~ize (MB):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+msgid "~Free memory space (MB):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+msgid "~Memory utilization (in %):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+msgid "Database Statistics"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+msgid "Contains the system tables"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+msgid "Contains information about transaction"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+msgid "Contains all data files"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+msgid "Total size of the database files"
+msgstr ""
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 #, fuzzy
-msgid  "Currently available space before a new datadev file is created."
-msgstr "Yeni bir datadev dosyası oluşturmadan önce kullanılabilir boş bir alan oluşturun."
+msgid "Currently available space before a new datadev file is created."
+msgstr ""
+"Yeni bir datadev dosyası oluşturmadan önce kullanılabilir boş bir alan "
+"oluşturun."
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+msgid "Currently used memory"
+msgstr ""
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 #, fuzzy
-msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr "Hiçbir bilgi gösterilemedi çünkü sistem tablolarına erişim için gerekli haklar yok."
+msgid "No information could be displayed because no access rights exist for the required system tables."
+msgstr ""
+"Hiçbir bilgi gösterilemedi çünkü sistem tablolarına erişim için gerekli "
+"haklar yok."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Database name"
+msgid "~Database name"
 msgstr "~Veritabanı ismi"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Se~rver / Port"
+msgid "Se~rver / Port"
 msgstr "Su~nucu / Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Server"
+msgid "~Server"
 msgstr "~Sunucu"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Port"
+msgid "~Port"
 msgstr "~Port"
+
+#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Default: 3306"
+msgstr "Varsayılan: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "So~cket"
+msgid "So~cket"
 msgstr "So~ket"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Named p~ipe"
+msgid "Named p~ipe"
 msgstr "İsimlendirilmiş b~oru"
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+msgid "Tables"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+msgid "Queries"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+msgid "~Add"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+msgid "~Close"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+msgid "Add Tables"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+msgid "Add Table or Query"
+msgstr ""
+
+#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use SQL92 naming constraints"
+msgid "Use SQL92 naming constraints"
 msgstr "SQL92 adlandırma sınırlamalarını kullanın"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Append the table alias name on SELECT statements"
+msgid "Append the table alias name on SELECT statements"
 msgstr "SELECT ifadelerine tablo takma ismi ekler."
+
+#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
+msgid "Use keyword AS before table alias names"
+msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use Outer Join syntax '{OJ }'"
+msgid "Use Outer Join syntax '{OJ }'"
 msgstr "Harici Birleştirme sözdizimi '{OJ}' kullanın."
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Ignore the privileges from the database driver"
+msgid "Ignore the privileges from the database driver"
 msgstr "Veritabanı sürücü ayrıcalıkları yoksayıldı"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Replace named parameters with '?'"
+msgid "Replace named parameters with '?'"
 msgstr "Adlandırılmış parametreleri '?' ile değiştirin."
+
+#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+msgid "Display version columns (when available)"
+msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use catalog name in SELECT statements"
+msgid "Use catalog name in SELECT statements"
 msgstr "SELECT ifadelerinde katalog ismi kullanın."
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use schema name in SELECT statements"
+msgid "Use schema name in SELECT statements"
 msgstr "SELECT ifadelerinde şema ismi kullanın"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Create index with ASC or DESC statement"
+msgid "Create index with ASC or DESC statement"
 msgstr "ASC veya DESC ifadesiyle indeks oluştur"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "End text lines with CR+LF"
+msgid "End text lines with CR+LF"
 msgstr "CR+LF satır sonu"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Ignore currency field information"
+msgid "Ignore currency field information"
 msgstr "Para birimi alanı bilgisini yoksay"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Form data input checks for required fields"
+msgid "Form data input checks for required fields"
 msgstr "Gerekli alanlar için form veri girişini denetler"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use ODBC conformant date/time literals"
+msgid "Use ODBC conformant date/time literals"
 msgstr "ODBC ile uyumlu olan tarih/zaman'ları göster"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Supports primary keys"
+msgid "Supports primary keys"
 msgstr "Öncelikli tuşları destekler"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Respect the result set type from the database driver"
+msgid "Respect the result set type from the database driver"
 msgstr "Veritabanı sürücüsünden oluşturulan sonucu görüyorsunuz."
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "Varsayılan"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "SQL"
+msgid "SQL"
 msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Mixed"
+msgid "Mixed"
 msgstr "Karışık"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "MS Access"
+msgid "MS Access"
 msgstr "MS Access"
+
+#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+msgid "Comparison of Boolean values"
+msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Rows to scan column types"
+msgid "Rows to scan column types"
 msgstr "Sütun tiplerini tarayan satırlar"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Settings"
+msgid "Settings"
 msgstr "Ayarlar"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Re~trieve generated values"
+msgid "Re~trieve generated values"
 msgstr "Erişim değerleri üretildi"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Auto-increment statement"
+msgid "~Auto-increment statement"
 msgstr "~Otomatik arttırmalı ifade"
+
+#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+msgid "~Query of generated values"
+msgstr ""
+
+#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+msgid "Generated Values"
+msgstr ""
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 #, fuzzy
-msgid  "Special Settings"
+msgid "Special Settings"
 msgstr "Özel Ayarlar"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 #, fuzzy
-msgid  "Advanced Settings"
+msgid "Advanced Settings"
 msgstr "Gelişmiş Ayarlar"
+
+#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the dBASE files"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the text files"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the spreadsheet document"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+msgid "Name of the ODBC data source on your system"
+msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name of the MySQL database"
+msgid "Name of the MySQL database"
 msgstr "MySQL veritabanı ismi"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name of the Oracle database"
+msgid "Name of the Oracle database"
 msgstr "Oracle veritabanı ismi"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name of the Adabas D database"
+msgid "Name of the Adabas D database"
 msgstr "Adabas D veritabanı ismi"
+
+#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+msgid "Microsoft Access database file"
+msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 #, fuzzy
-msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr "Daha fazla ayar gereklidir. Bağlantının çalışıp çalışmadığını kontrol etmek için '%test' düğmesini tıklayın."
+msgid "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr ""
+"Daha fazla ayar gereklidir. Bağlantının çalışıp çalışmadığını kontrol etmek "
+"için '%test' düğmesini tıklayın."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 #, fuzzy
-msgid  "Datasource URL"
+msgid "Datasource URL"
 msgstr "Veri kaynağı adresi"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 #, fuzzy
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "~Makine adı"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "~Mozilla profile name"
+msgid "~Mozilla profile name"
 msgstr "~Mozilla profil ismi"
+
+#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+msgid "~Thunderbird profile name"
+msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Browse"
+msgid "Browse"
 msgstr "Gözat"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Database name"
+msgid "Database name"
 msgstr "Veritabanı ismi"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Server"
+msgid "Server"
 msgstr "Sunucu"
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+msgid "Base ~DN"
+msgstr ""
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~Port number"
+msgstr "~Port numarası"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Data conversion"
+msgid "Data conversion"
 msgstr "Veri dönüştürme"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Character set"
+msgid "~Character set"
 msgstr "~Karakter kümesi"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Specify the type of files you want to access"
+msgid "Specify the type of files you want to access"
 msgstr "Erişmek istediğiniz dosyaların türlerini belirleyin"
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+msgid "Plain text files (*.txt)"
+msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "'Comma separated value' files (*.csv)"
+msgid "'Comma separated value' files (*.csv)"
 msgstr "'Virgülle ayrılmış değer' dosyaları (*.csv)"
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+msgid "Custom:"
+msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Custom: *.abc"
+msgid "Custom: *.abc"
 msgstr "Özel: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Row Format"
+msgid "Row Format"
 msgstr "Satır Biçimi"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Field separator"
+msgid "Field separator"
 msgstr "Alan ayırıcı"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Text separator"
+msgid "Text separator"
 msgstr "Metin ayırıcı"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Decimal separator"
+msgid "Decimal separator"
 msgstr "Ondalık ayırıcı"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "Bindelik ayırıcı"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+msgid "~Text contains headers"
+msgstr ""
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+msgid "{None}"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "#1 must be set."
+msgid "#1 must be set."
 msgstr "#1 belirlenmeli."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 #, fuzzy
-msgid  "#1 and #2 must be different."
+msgid "#1 and #2 must be different."
 msgstr "#1 ve #2 farklı olmalılar."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 #, fuzzy
-msgid  "Wildcards such as ?,* are not allowed in #1."
+msgid "Wildcards such as ?,* are not allowed in #1."
 msgstr "#1 içinde ? ve * gibi joker karakterler kullanılamaz."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "JDBC d~river class"
+msgid "JDBC d~river class"
 msgstr "JDBC sü~rücü sınıfı"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr "Deneme sınıfı"
+#, fuzzy
+msgid "Test class"
+msgstr "Test sınıfı"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Socket"
+msgid "Socket"
 msgstr "Soket"
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+msgid "Save"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Create New Directory"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Up One Level"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+msgid "File ~name:"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
+msgid "Save"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+msgid "~Path:"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+msgid "Folder"
+msgstr ""
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 #, fuzzy
-msgid  "The file already exists. Overwrite?"
+msgid "The file already exists. Overwrite?"
 msgstr "Bu dosya var. Üzerine yazılsın mı?"
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "General"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "~Makine adı"
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "User authentication"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~User name"
+msgid "~User name"
 msgstr "K~ullanıcı adı"
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+msgid "Password required"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "JDBC properties"
+msgid "JDBC properties"
 msgstr "JDBC özellikleri"
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "~JDBC driver class"
+msgstr ""
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+msgid "Test Class"
+msgstr ""
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Test Connection"
+msgid "Test Connection"
 msgstr "Test Bağlantısı"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 #, fuzzy
-msgid  "No Adabas D data sources were found on your system."
+msgid "No Adabas D data sources were found on your system."
 msgstr "Adabas D veri kaynakları sisteminizde bulunamadı."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 #, fuzzy
-msgid  "Connection Test"
+msgid "Connection Test"
 msgstr "Bağlantı Testi"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 #, fuzzy
-msgid  "The connection was established successfully."
+msgid "The connection was established successfully."
 msgstr "Bağlantı başarılı biçimde kuruldu."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 #, fuzzy
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "Bağlantı kurulamadı."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 #, fuzzy
-msgid  "The JDBC driver was loaded successfully."
+msgid "The JDBC driver was loaded successfully."
 msgstr "JDBC sürücüsü başarılı biçimde yüklendi."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 #, fuzzy
-msgid  "The JDBC driver could not be loaded."
+msgid "The JDBC driver could not be loaded."
 msgstr "JDBC sürücüsü yüklenemedi."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 #, fuzzy
-msgid  "MS Access file"
+msgid "MS Access file"
 msgstr "MS Access dosyası"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 #, fuzzy
-msgid  "MS Access 2007 file"
+msgid "MS Access 2007 file"
 msgstr "MS Access 2007 dosyası"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "A password is needed to connect to the data source \"$name$\"."
+msgid "A password is needed to connect to the data source \"$name$\"."
 msgstr "Veri kaynağı \"$name$\" 'e bağlanmak için parola gerekiyor."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 #, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "Dizin\n\n$path\n\nyok. Oluşturulsun mu?"
+msgid "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
+msgstr ""
+"Dizin\n"
+"\n"
+"$path\n"
+"\n"
+"yok. Oluşturulsun mu?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 #, fuzzy
-msgid  "The directory $name$ could not be created."
+msgid "The directory $name$ could not be created."
 msgstr "Dizin $name$ oluşturulamadı."
+
+#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+msgid "Convert Database"
+msgstr ""
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgid "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Lütfen 'DOMAIN' kullanıcısı için ~parola girin."
+
+#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+msgid "Tables Filter"
+msgstr ""
+
+#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Tables and table filter"
+msgstr ""
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Mark the tables that should be visible for the applications."
+msgid "Mark the tables that should be visible for the applications."
 msgstr "Uygulamalar için görülebilir tabloları işaretleyin."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Database Wizard"
+msgid "Database Wizard"
 msgstr "Veritabanı Sihirbazı"
+
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
+#, fuzzy
+msgid "Database Wizard"
+msgstr "Veritabanı Sihirbazı"
+
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+msgid "Select database"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 #, fuzzy
-msgid  "Set up dBASE connection"
+msgid "Set up dBASE connection"
 msgstr "dBASE bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
+msgid "Set up a connection to text files"
 msgstr "Metin dosyalarına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 #, fuzzy
-msgid  "Set up Microsoft Access connection"
+msgid "Set up Microsoft Access connection"
 msgstr "Microsoft Access bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 #, fuzzy
-msgid  "Set up LDAP connection"
+msgid "Set up LDAP connection"
 msgstr "LDAP bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 #, fuzzy
-msgid  "Set up Adabas D connection"
+msgid "Set up Adabas D connection"
 msgstr "Adabas D bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 #, fuzzy
-msgid  "Set up ADO connection"
+msgid "Set up ADO connection"
 msgstr "ADO bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 #, fuzzy
-msgid  "Set up JDBC connection"
+msgid "Set up JDBC connection"
 msgstr "JDBC bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 #, fuzzy
-msgid  "Set up Oracle database connection"
+msgid "Set up Oracle database connection"
 msgstr "Oracle veritabanı bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 #, fuzzy
-msgid  "Set up MySQL connection"
+msgid "Set up MySQL connection"
 msgstr "MySQL bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 #, fuzzy
-msgid  "Set up ODBC connection"
+msgid "Set up ODBC connection"
 msgstr "ODBC bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 #, fuzzy
-msgid  "Set up Spreadsheet connection"
+msgid "Set up Spreadsheet connection"
 msgstr "Hesap tablosu bağlantısı kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 #, fuzzy
-msgid  "Set up user authentication"
+msgid "Set up user authentication"
 msgstr "Kullanıcı kimlik denetimini kur"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 #, fuzzy
-msgid  "Set up MySQL server data"
+msgid "Set up MySQL server data"
 msgstr "MySQL sunucu verisini kur"
+
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+msgid "Save and proceed"
+msgstr ""
+
+#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+msgid "New Database"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Set up a connection to a MySQL database"
+msgid "Set up a connection to a MySQL database"
 msgstr "MySQL veritabanına bir bağlantı kurun"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "MySQL veritabanına bağlanırken ODBC ve JDBC kullanabilirsiniz.\nEğer ayarları değiştirmenize izin verilmiyorsa lütfen sistem yöneticinizle iletişime geçin."
+msgid "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"MySQL veritabanına bağlanırken ODBC ve JDBC kullanabilirsiniz.\n"
+"Eğer ayarları değiştirmenize izin verilmiyorsa lütfen sistem yöneticinizle "
+"iletişime geçin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "How do you want to connect to your MySQL database?"
+msgid "How do you want to connect to your MySQL database?"
 msgstr "MySQL veritabanınıza nasıl bağlanmak istiyorsunuz?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Connect using ODBC (Open Database Connectivity)"
+msgid "Connect using ODBC (Open Database Connectivity)"
 msgstr "ODBC kullanarak bağlan (Açık Veritabanına Bağlanabilirlik)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Connect using JDBC (Java Database Connectivity)"
+msgid "Connect using JDBC (Java Database Connectivity)"
 msgstr "JDBC kullanarak bağlan (Java Veritabanına Bağlanabilirlik)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Connect directly"
+msgid "Connect directly"
 msgstr "Direkt bağlan"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Set up the user authentication"
+msgid "Set up the user authentication"
 msgstr "Kullanıcı kimlik denetimini kurun"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Some databases require you to enter a user name."
+msgid "Some databases require you to enter a user name."
 msgstr "Bazı veritabanları için kullanıcı adı girmeniz gerekir."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~User name"
+msgstr "K~ullanıcı adı"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Password re~quired"
+msgid "Password re~quired"
 msgstr "Parola ge~rekli"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Test Connection"
+msgid "~Test Connection"
 msgstr "~Bağlantı Testi"
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+msgid "Decide how to proceed after saving the database"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr "%PRODUCTNAME 'da veritabanını kaydetmek için sihirbazı kullanmak istiyor musunuz?"
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr ""
+"%PRODUCTNAME 'da veritabanını kaydetmek için sihirbazı kullanmak istiyor "
+"musunuz?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Yes, register the database for me"
+msgid "~Yes, register the database for me"
 msgstr "~Evet, veritabanımı kaydetmek istiyorum"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "N~o, do not register the database"
+msgid "N~o, do not register the database"
 msgstr "Ha~yır, veritabanımı kaydetmek istemiyorum"
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+msgid "After the database file has been saved, what do you want to do?"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Open the database for editing"
+msgid "Open the database for editing"
 msgstr "Düzenleme için veritabanı aç"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Create tables using the table wizard"
+msgid "Create tables using the table wizard"
 msgstr "Tablo sihirbazı kullanarak tablolar oluştur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Click 'Finish' to save the database."
+msgid "Click 'Finish' to save the database."
 msgstr "Veritabanını kaydetmek için 'Bitir' düğmesine tıklayın."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up connection to a MySQL database using JDBC"
+msgid "Set up connection to a MySQL database using JDBC"
 msgstr "JDBC kullanarak bir MySQL veritabanına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "JDBC kullanarak bir MySQL veritabanına bağlanmak için gerekli bilgileri girin. Bir JDBC sürücü sınıfının sistemize ve %PRODUCTNAME 'e kayıtlı olup olmadığına dikkat edin.\nEğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem yöneticinizle iletişime geçin."
+msgid "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"JDBC kullanarak bir MySQL veritabanına bağlanmak için gerekli bilgileri "
+"girin. Bir JDBC sürücü sınıfının sistemize ve %PRODUCTNAME 'e kayıtlı olup "
+"olmadığına dikkat edin.\n"
+"Eğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem "
+"yöneticinizle iletişime geçin."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+msgid "MySQL JDBC d~river class:"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "Default: 3306"
+msgid "Default: 3306"
 msgstr "Varsayılan: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Set up connection to a MySQL database"
+msgid "Set up connection to a MySQL database"
 msgstr "Bir MySQL veritabanına bağlantı kurun"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database."
+msgid "Please enter the required information to connect to a MySQL database."
 msgstr "Lütfen MySQL veritabanına bağlantı için gerekli bilgileri girin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to dBASE files"
+msgid "Set up a connection to dBASE files"
 msgstr "dBASE dosyalarına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Select the folder where the dBASE files are stored."
+msgid "Select the folder where the dBASE files are stored."
 msgstr "dBASE dosyalarının kaydedildiği klasörü seçin"
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
+msgid "Set up a connection to text files"
+msgstr "Metin dosyalarına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr "CSV (Virgülle Ayrılmış Değerler) metin dosyalarının kaydedildiği klasörü seçin. %PRODUCTNAME Base bu dosyaları salt okunur kipte açar."
+msgid "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr ""
+"CSV (Virgülle Ayrılmış Değerler) metin dosyalarının kaydedildiği klasörü "
+"seçin. %PRODUCTNAME Base bu dosyaları salt okunur kipte açar."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+msgid "Path to text files"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to a Microsoft Access database"
+msgid "Set up a connection to a Microsoft Access database"
 msgstr "Bir Microsoft Access veritabanına bağlantı kur"
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+msgid "Please select the Microsoft Access file you want to access."
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Set up a connection to an LDAP directory"
+msgid "Set up a connection to an LDAP directory"
 msgstr "LDAP dizinine bir bağlantı kurun"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Lütfen LDAP dizinine bağlantı da kullanılacak gerekli bilgiler girin.\nEğer ayarları değiştirmenize izin verilmiyorsa lütfen sistem yöneticinizle iletişime geçin."
+msgid "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"Lütfen LDAP dizinine bağlantı da kullanılacak gerekli bilgiler girin.\n"
+"Eğer ayarları değiştirmenize izin verilmiyorsa lütfen sistem yöneticinizle "
+"iletişime geçin."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+msgid "Default: 389"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use ~secure connection (SSL)"
+msgid "Use ~secure connection (SSL)"
 msgstr "~Güvenli bağlantı (SSL) kullan"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to an Adabas D database"
+msgid "Set up a connection to an Adabas D database"
 msgstr "Bir Adabas D veritabanına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Bağlanmak istediğiniz Adabas D veritabanının ismini girin.\n%PRODUCTNAME 'e kaydedilmiş bir Adabas D veritabanını seçmek için 'Gözat...' düğmesini tıklayın. "
+msgid "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
+"Bağlanmak istediğiniz Adabas D veritabanının ismini girin.\n"
+"%PRODUCTNAME 'e kaydedilmiş bir Adabas D veritabanını seçmek için 'Gözat...' "
+"düğmesini tıklayın. "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to an ADO database"
+msgid "Set up a connection to an ADO database"
 msgstr "Bir ADO veritabanına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Bağlanmak istediğiniz ADO veri kaynağının adresini girin.\nSağlanan belirli ayarları yapılandırmak için 'Gözat' düğmesini tıklayın.\nEğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem yöneticinizle iletişime geçin."
+msgid "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"Bağlanmak istediğiniz ADO veri kaynağının adresini girin.\n"
+"Sağlanan belirli ayarları yapılandırmak için 'Gözat' düğmesini tıklayın.\n"
+"Eğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem "
+"yöneticinizle iletişime geçin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to an ODBC database"
+msgid "Set up a connection to an ODBC database"
 msgstr "Bir ODBC veritabanına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Bağlanmak istediğiniz ODBC veritabanının ismini girin.\n%PRODUCTNAME 'da kayıtlı olan bir ODBC veritabanını seçmek için 'Gözat...' düğmesi tıklayın.\nEğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem yöneticinizle iletişime geçin."
+msgid "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"Bağlanmak istediğiniz ODBC veritabanının ismini girin.\n"
+"%PRODUCTNAME 'da kayıtlı olan bir ODBC veritabanını seçmek için 'Gözat...' "
+"düğmesi tıklayın.\n"
+"Eğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem "
+"yöneticinizle iletişime geçin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to a JDBC database"
+msgid "Set up a connection to a JDBC database"
 msgstr "Bir JDBC veritabanına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "JDBC veritabanına bağlanmak için gerekli bilgileri girin.\nEğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem yöneticinizle iletişime geçin."
+msgid "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"JDBC veritabanına bağlanmak için gerekli bilgileri girin.\n"
+"Eğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem "
+"yöneticinizle iletişime geçin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to an Oracle database"
+msgid "Set up a connection to an Oracle database"
 msgstr "Bir Oracle veritabanına bağlantı kur"
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+msgid "Default: 1521"
+msgstr ""
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+msgid "Oracle JDBC ~driver class"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Oracle veritabanına bağlanmak için gerekli bilgileri girin. Bir JDBC sürücü sınıfının sistemize ve %PRODUCTNAME 'e kayıtlı olup olmadığına dikkat edin.\nEğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem yöneticinizle iletişime geçin."
+msgid "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"Oracle veritabanına bağlanmak için gerekli bilgileri girin. Bir JDBC sürücü "
+"sınıfının sistemize ve %PRODUCTNAME 'e kayıtlı olup olmadığına dikkat edin.\n"
+"Eğer takip eden ayarlarda bir aksilik olduğunu düşünüyorsanız, sistem "
+"yöneticinizle iletişime geçin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Set up a connection to spreadsheets"
+msgid "Set up a connection to spreadsheets"
 msgstr "Hesap tablolarına bağlantı kur"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "Bir %PRODUCTNAME hesap tablosunu veya Microsoft Excel çalışma kitabını seçmek için 'Gözat...' düğmesini tıklayın.\n%PRODUCTNAME bu dosyayı salt okunur kipte açar."
+msgid "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+"Bir %PRODUCTNAME hesap tablosunu veya Microsoft Excel çalışma kitabını "
+"seçmek için 'Gözat...' düğmesini tıklayın.\n"
+"%PRODUCTNAME bu dosyayı salt okunur kipte açar."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 #, fuzzy
-msgid  "~Location and file name"
+msgid "~Location and file name"
 msgstr "~Konum ve dosya adı"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Password required"
+msgid "~Password required"
 msgstr "~Parola gerekli"
+
+#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+msgid "Use catalog for file-based databases"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr "Bağlantı Ayarları"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "~Makine adı"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Port number"
+msgid "~Port number"
 msgstr "~Port numarası"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 #, fuzzy
-msgid  "Advanced Properties"
+msgid "Advanced Properties"
 msgstr "Gelişmiş Özellikler"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 #, fuzzy
-msgid  "Additional Settings"
+msgid "Additional Settings"
 msgstr "Ek Ayarlar"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 #, fuzzy
-msgid  "Connection settings"
+msgid "Connection settings"
 msgstr "Bağlantı ayarları"
+
+#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+msgid "Database properties"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
+msgid "Database properties"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "%PRODUCTNAME Veritabanı Sihirbazına Hoş Geldiniz"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr "Yeni veritabanı oluştururken, varolan veritabanı dosyasını açmak için ya da sunucunuzda kayıtlı veritabanına bağlanmak için Veritabanı Sihirbazını kullanın."
+msgid "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr ""
+"Yeni veritabanı oluştururken, varolan veritabanı dosyasını açmak için ya da "
+"sunucunuzda kayıtlı veritabanına bağlanmak için Veritabanı Sihirbazını "
+"kullanın."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+msgid "What do you want to do?"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+msgid "Create a n~ew database"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+msgid "Open an existing database ~file"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+msgid "Recently used"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+msgid "Connect to an e~xisting database"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Select the type of database to which you want to establish a connection."
+msgid "Select the type of database to which you want to establish a connection."
 msgstr "Bağlantı kurmak istediğiniz veritabanı türünü seçin."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+msgid "Database ~type "
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Database"
+msgstr "Veritabanı"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "Takip eden sayfalarda bağlantı için ayrıntılı ayarlar yapabilirsiniz.\n\nYeni yaptığınız ayarlar varolan ayarların üzerine yazılacak."
+msgid "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
+msgstr ""
+"Takip eden sayfalarda bağlantı için ayrıntılı ayarlar yapabilirsiniz.\n"
+"\n"
+"Yeni yaptığınız ayarlar varolan ayarların üzerine yazılacak."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+msgid "MySQL"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+msgid "Data Source Properties: #"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 #, fuzzy
-msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr "Program kütüphanesi #lib# yüklenemedi ya da bir hata meydana geldi. ODBC veri kaynağı seçimi kullanır olmayabilir."
+msgid "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr ""
+"Program kütüphanesi #lib# yüklenemedi ya da bir hata meydana geldi. ODBC "
+"veri kaynağı seçimi kullanır olmayabilir."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "Veri kaynağının türü, bu platformda desteklenmiyor.\nAyarlarını değiştirmenize izin verilir, fakat büyük ihtimalle veritabanınıza bağlanamazsınız."
+msgid "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
+"Veri kaynağının türü, bu platformda desteklenmiyor.\n"
+"Ayarlarını değiştirmenize izin verilir, fakat büyük ihtimalle veritabanınıza "
+"bağlanamazsınız."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+msgid "General"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Optional settings"
+msgid "Optional settings"
 msgstr "Seçimli ayarlar"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Display deleted records as well"
+msgid "Display deleted records as well"
 msgstr "Silinmiş kayıtları gösterin"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr "Not: Silinmiş ve aktif olmayan kayıtlar gösterilir, veri kaynağından kayıtları silmemelisiniz."
+msgid "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr ""
+"Not: Silinmiş ve aktif olmayan kayıtlar gösterilir, veri kaynağından "
+"kayıtları silmemelisiniz."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Indexes..."
+msgid "Indexes..."
 msgstr "Dizinler..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Optional Settings"
+msgid "Optional Settings"
 msgstr "Seçimli Ayarlar"
+
+#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+msgid "ODBC ~options"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Connection Settings"
+msgstr "Bağlantı Ayarları"
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~Host name"
+msgstr "~Makine adı"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data ~buffer size (MB)"
+msgid "Data ~buffer size (MB)"
 msgstr "Veri tampon ~boyutu (MB)"
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+msgid "~Data increment (MB)"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "Administration"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+msgid "Control ~user name"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+msgid "Control ~password"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Shut down service when closing %PRODUCTNAME"
+msgid "~Shut down service when closing %PRODUCTNAME"
 msgstr "%PRODUCTNAME kapatılırken servisi kapat"
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+msgid "E~xtended..."
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "MySQL JDBC d~river class"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Test class"
+msgid "Test class"
 msgstr "Test sınıfı"
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "User authentication"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~User name"
+msgstr "K~ullanıcı adı"
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+msgid "Password required"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "Oracle JDBC d~river class"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Test class"
+msgstr "Test sınıfı"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Connection Settings"
+msgstr "Bağlantı Ayarları"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+msgid "~Base DN"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use secure connection(SSL)"
+msgid "Use secure connection(SSL)"
 msgstr "Güvenli bağlantı (SSL) kullanın"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~Port number"
+msgstr "~Port numarası"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Maximum number of ~records"
+msgid "Maximum number of ~records"
 msgstr "En fazla kayıt ~sayısı"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Hostname"
+msgid "~Hostname"
 msgstr "~Makine adı"
+
+#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~Port number"
+msgstr "~Port numarası"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Driver settings"
+msgid "~Driver settings"
 msgstr "~Sürücü ayarları"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 #, fuzzy
-msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr "Varolan bir veritabanına bağlanmak için 'Varolan veritabanına bağlan' seçeneğini seçin."
+msgid "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr ""
+"Varolan bir veritabanına bağlanmak için 'Varolan veritabanına bağlan' "
+"seçeneğini seçin."
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+msgid "Indexes"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+msgid "~Table"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+msgid "Assignment"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+msgid "T~able indexes"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+msgid "~Free indexes"
+msgstr ""
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL komutu"
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+msgid "Command to execute"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+msgid "Execute"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+msgid "Previous commands"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+msgid "Status"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+msgid "Close"
+msgstr ""
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Execute SQL Statement"
+msgid "Execute SQL Statement"
 msgstr "SQL Deyimi Çalıştır"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 #, fuzzy
-msgid  "Command successfully executed."
+msgid "Command successfully executed."
 msgstr "Komut başarıyla çalıştırıldı."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 #, fuzzy
-msgid  "The connection to the database has been lost. This dialog will be closed."
+msgid "The connection to the database has been lost. This dialog will be closed."
 msgstr "Veritabanına bağlantı koptu. Bu pencereyi kapatabilirsiniz."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Field Format"
+msgid "Field Format"
 msgstr "Alan Biçimi"
+
+#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+msgid "Bac~k"
+msgstr ""
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "Yazı tipi"
+
+#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+msgid "Format"
+msgstr ""
+
+#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+msgid "Alignment"
+msgstr ""
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 #, fuzzy
-msgid  "Table Format"
+msgid "Table Format"
 msgstr "Tablo Biçimi"
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+msgid "Save As"
+msgstr ""
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please enter a name for the object to be created:"
+msgid "Please enter a name for the object to be created:"
 msgstr "Oluşturulan nesne için isim girin:"
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+msgid "~Catalog"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+msgid "~Schema"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+msgid "~Table Name"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+msgid "~Name of table view"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+msgid "~Query name"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+msgid "Rename to"
+msgstr ""
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 #, fuzzy
-msgid  "Insert as"
+msgid "Insert as"
 msgstr "Ekleyin"
+
+#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Height"
+msgstr ""
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr "Otom~atik"
+
+#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+msgid "Row Height"
+msgstr ""
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Width"
+msgstr ""
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
+msgid "~Automatic"
+msgstr "Otom~atik"
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+msgid "Column Width"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+msgid "Data Source"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "Choose a data source:"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+msgid "Organize..."
+msgstr ""
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Create..."
+msgid "Create..."
 msgstr "Oluştur..."
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+msgid "Local Databases"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+msgid "Choose a database"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+msgid "Indexes"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+msgid "New Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+msgid "Delete Current Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+msgid "Rename Current Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+msgid "Save Current Index"
+msgstr ""
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Reset Current Index"
+msgid "Reset Current Index"
 msgstr "Geçerli Dizini İlk Haline Getir"
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+msgid "Index details"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+msgid "Index identifier:"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+msgid "~Unique"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+msgid "Fields"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+msgid "~Close"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+msgid "Sort order"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+msgid "Index field"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+msgid "Ascending"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+msgid "Descending"
+msgstr ""
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to delete the index '$name$'?"
+msgid "Do you really want to delete the index '$name$'?"
 msgstr "'$name$' dizinini gerçekten silmek istiyor musunuz?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 #, fuzzy
-msgid  "index"
+msgid "index"
 msgstr "dizin"
+
+#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+msgid "Save Index"
+msgstr ""
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The index must contain at least one field."
+msgid "The index must contain at least one field."
 msgstr "Dizin en azından bir alan içermeli."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 #, fuzzy
-msgid  "Exit Index Design"
+msgid "Exit Index Design"
 msgstr "Dizin Tasarımından Çık"
+
+#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+msgid "Do you want to save the changes made to the current index?"
+msgstr ""
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 #, fuzzy
-msgid  "There is already another index named \"$name$\"."
+msgid "There is already another index named \"$name$\"."
 msgstr "\"$name$\" dizin ismi daha önceden kullanılmış."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 #, fuzzy
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr "Dizin belirlerken aynı tablo sütun isimleriyle karşılaşıldı. \"$name$\" sütunu birden fazla girilmiş."
+msgid "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr ""
+"Dizin belirlerken aynı tablo sütun isimleriyle karşılaşıldı. \"$name$\" sütunu "
+"birden fazla girilmiş."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "~Parameters"
+msgid "~Parameters"
 msgstr "~Parametreler"
+
+#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Value"
+msgstr ""
+
+#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+msgid "~Next"
+msgstr ""
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Parameter Input"
+msgid "Parameter Input"
 msgstr "Parametre Girişi"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 #, fuzzy
-msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgid "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "\"$name$\" sütunu için giriş geçerli bir değere dönüştürülemedi"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+msgid "Standard Filter"
+msgstr ""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "AND"
+msgid "AND"
 msgstr "VE"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "OR"
+msgid "OR"
 msgstr "VEYA"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "AND"
+msgstr "VE"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "OR"
+msgstr "VEYA"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+msgid "Field name"
+msgstr ""
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+msgid "Condition"
+msgstr ""
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+msgid "Value"
+msgstr ""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Operator"
+msgid "Operator"
 msgstr "İşleç"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+msgid "Criteria"
+msgstr ""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
-msgid  "- none -"
+msgid "- none -"
 msgstr "- hiçbiri -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 #, fuzzy
-msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;benzer;benzer değil;boş;boş değil"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+msgid "Sort Order"
+msgstr ""
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "ascending"
+msgid "ascending"
 msgstr "artan"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "descending"
+msgid "descending"
 msgstr "azalan"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "ascending"
+msgstr "artan"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "descending"
+msgstr "azalan"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "ascending"
+msgstr "artan"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "descending"
+msgstr "azalan"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+msgid "Field name"
+msgstr ""
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "and then"
+msgid "and then"
+msgstr "ve sonra"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "and then"
 msgstr "ve sonra"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Operator"
+msgid "Operator"
 msgstr "İşleç"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+msgid "Order"
+msgstr ""
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+msgid "Sort order"
+msgstr ""
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
-msgid  "<none>"
+msgid "<none>"
 msgstr "<hiçbiri>"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+msgid "Relations"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+msgid "Tables involved"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+msgid "Fields involved"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+msgid "Update options"
+msgstr ""
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~No action"
+msgid "~No action"
 msgstr "Eyle~m yok"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+msgid "~Update cascade"
+msgstr ""
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Set null"
+msgid "~Set null"
 msgstr "Boşu (null) belir~le"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Set ~default"
+msgid "Set ~default"
 msgstr "~Varsayılanı belirle"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+msgid "Delete options"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
+msgid "~No action"
+msgstr "Eyle~m yok"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+msgid "Delete ~cascade"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
+#, fuzzy
+msgid "~Set null"
+msgstr "Boşu (null) belir~le"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
+msgid "Set ~default"
+msgstr "~Varsayılanı belirle"
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+msgid "%PRODUCTNAME Base"
+msgstr ""
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Details"
+msgid "Details"
 msgstr "Ayrıntılar"
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+msgid "Error ~list:"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "~Description:"
+msgstr ""
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "SQL Status"
+msgid "SQL Status"
 msgstr "SQL Durumu"
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+msgid "Error code"
+msgstr ""
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr "Veritabanınızın dili için uygun olmayan bir karakter kümesi ayarı sık sık bu hataya sebep olmaktadır. Bu ayarı kontrol etmek için Düzenle - Veritabanı - Özellikler seçeneğine bakınız."
+msgid "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr ""
+"Veritabanınızın dili için uygun olmayan bir karakter kümesi ayarı sık sık bu "
+"hataya sebep olmaktadır. Bu ayarı kontrol etmek için Düzenle - Veritabanı - "
+"Özellikler seçeneğine bakınız."
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+msgid "Warning"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+msgid "Information"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
+#, fuzzy
+msgid "Details"
+msgstr "Ayrıntılar"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Text Connection Settings"
+msgid "Text Connection Settings"
 msgstr "Metin Bağlantı Ayarları"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 #, fuzzy
-msgid  "User Settings"
+msgid "User Settings"
 msgstr "Kullanıcı Ayarları"
+
+#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+msgid "User administration"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+msgid "User selection"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+msgid "Us~er:"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+msgid "~Add User..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+msgid "Change ~Password..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+msgid "~Delete User..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+msgid "Access rights for selected user"
+msgstr ""
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you really want to delete the user?"
+msgid "Do you really want to delete the user?"
 msgstr "Kullanıcıyı gerçekten silmek istiyor musunuz?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "The database does not support user administration."
+msgid "The database does not support user administration."
 msgstr "Veritabanı kullanıcı yönetimini desteklemiyor."
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+msgid "User \"$name$:  $\""
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+msgid "Old p~assword"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+msgid "~Password"
+msgstr ""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Confirm  password"
+msgid "~Confirm  password"
 msgstr "Parolayı ~onayla"
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+msgid "Change Password"
+msgstr ""
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 #, fuzzy
-msgid  "The passwords do not match. Please enter the password again."
+msgid "The passwords do not match. Please enter the password again."
 msgstr "Parolalar uyuşmuyor. Lütfen parolayı tekrar giriniz."
+
+#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+msgid "Refresh"
+msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 #, fuzzy
-msgid  "New ~View Design"
+msgid "New ~View Design"
 msgstr "Yeni Görünüm Tasarımı"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 #, fuzzy
-msgid  "New ~Table Design"
+msgid "New ~Table Design"
 msgstr "Yeni Tablo Tasarımı"
+
+#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+msgid "Query AutoPilot..."
+msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 #, fuzzy
-msgid  "New ~Query (Design View)"
+msgid "New ~Query (Design View)"
 msgstr "Yeni Sorgu (Tasarım Görünümü)"
+
+#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+msgid "~Edit Query"
+msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 #, fuzzy
-msgid  "New Query (~SQL View)"
+msgid "New Query (~SQL View)"
 msgstr "Yeni Sorgu (~SQL Görünümü)"
+
+#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
+msgid "Edit..."
+msgstr "Düzenle..."
+
+#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+msgid "Column ~Width..."
+msgstr ""
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 #, fuzzy
-msgid  "Report Wizard..."
+msgid "Report Wizard..."
 msgstr "Rapor Sihirbazı..."
+
+#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+msgid "Form AutoPilot..."
+msgstr ""
+
+#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+msgid "System"
+msgstr ""
+
+#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+msgid "Error during creation"
+msgstr ""
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred. The operation could not be performed."
+msgid "An unexpected error occurred. The operation could not be performed."
 msgstr "Beklenmeyen hata oluştu. İşlem tamamlanamadı."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 #, fuzzy
-msgid  "The document \"$file$\" could not be opened."
+msgid "The document \"$file$\" could not be opened."
 msgstr "\"$file$\" belgesi açılamadı."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 #, fuzzy
-msgid  "The table cannot be deleted because the database connection does not support this."
+msgid "The table cannot be deleted because the database connection does not support this."
 msgstr "Veritabanı bağlantısı desteklemediği için tablo silinemiyor."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 #, fuzzy
-msgid  "~All"
-msgstr "~Tümü"
+msgid "~All"
+msgstr "~Hepsi"
+
+#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+msgid "Undo:"
+msgstr ""
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 #, fuzzy
-msgid  "Redo:"
+msgid "Redo:"
 msgstr "Tekrar yükle:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "No corresponding column type could be found for column '#1'."
+msgid "No corresponding column type could be found for column '#1'."
 msgstr "Sütun '#1' için denk gelen bir sütun türü bulunamadı."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 #, fuzzy
-msgid  "The file \"$file$\" does not exist."
+msgid "The file \"$file$\" does not exist."
 msgstr "\"$file$\" dosyası yok."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 #, fuzzy
-msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr "Veri kaynağına bağlanılırken bazı uyarılarla karşılaşıldı. \"$buttontext$\" düğmesine tıklayarak görebilirsiniz."
+msgid "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr ""
+"Veri kaynağına bağlanılırken bazı uyarılarla karşılaşıldı. \"$buttontext$\" "
+"düğmesine tıklayarak görebilirsiniz."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "'$#$' ismi kullanılıyor.\nLütfen başka bir isim girin."
+msgid "The name '$#$' already exists.\nPlease enter another name."
+msgstr ""
+"'$#$' ismi kullanılıyor.\n"
+"Lütfen başka bir isim girin."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
-msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "\"$file$\" raporu, Oracle Report Builder uzantısını gerektirir."
+
+#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+msgid "Apply columns"
+msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 #, fuzzy
-msgid  "Type formatting"
+msgid "Type formatting"
 msgstr "Tür biçimlendir"
+
+#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+msgid "The following fields have already been set as primary keys:\n"
+msgstr ""
+
+#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+msgid "Assign columns"
+msgstr ""
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Copy RTF Table"
+msgid "Copy RTF Table"
 msgstr "RTF Tablosu Kopyala"
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+msgid "~Help"
+msgstr ""
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+msgid "~Cancel"
+msgstr ""
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< ~Geri"
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+msgid "~Next>"
+msgstr ""
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+msgid "C~reate"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+msgid "Existing columns"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+msgid "Column information"
+msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Automatic type recognition"
+msgid "Automatic type recognition"
 msgstr "Türleri otomatik tanı"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Lines (ma~x)"
+msgid "Lines (ma~x)"
 msgstr "Satırlar (azami)"
+
+#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+msgid "Primary Key"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+msgid "Source table: \n"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+msgid "Destination table: \n"
+msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~All"
+msgid "~All"
 msgstr "~Hepsi"
+
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+msgid "Non~e"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+msgid "Ta~ble name"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+msgid "De~finition and data"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+msgid "Def~inition"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+msgid "A~s table view"
+msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Append ~data"
+msgid "Append ~data"
 msgstr "~Veri ekle"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Use first ~line as column names"
+msgid "Use first ~line as column names"
 msgstr "İlk ~satırı sütun isimleri olarak kullan"
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+msgid "Crea~te primary key"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+msgid "Name"
+msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 #, fuzzy
-msgid  "Copy table"
+msgid "Copy table"
+msgstr "Tabloyu kopyala"
+
+#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
+#, fuzzy
+msgid "Copy table"
 msgstr "Tabloyu kopyala"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "This table name is not valid in the current database."
+msgid "This table name is not valid in the current database."
 msgstr "Mevcut veritabanında bu tablo adı geçersizdir."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr "Varolan tablo içine veri eklemek için ilk sayfa da bulunan 'Veri ekle' seçeneğini seçebilirsiniz."
+msgid "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr ""
+"Varolan tablo içine veri eklemek için ilk sayfa da bulunan 'Veri ekle' "
+"seçeneğini seçebilirsiniz."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Please change the table name. It is too long."
+msgid "Please change the table name. It is too long."
 msgstr "Tablo adı çok uzun. Lütfen değiştirin."
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+msgid "~Type"
+msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Inner join"
+msgid "Inner join"
 msgstr "İç birleştirme"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Left join"
+msgid "Left join"
 msgstr "Sol birleştirme"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right join"
+msgid "Right join"
 msgstr "Sağ birleştirme"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Full (outer) join"
+msgid "Full (outer) join"
 msgstr "Tam (dış) birleştirme"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Cross join"
+msgid "Cross join"
 msgstr "Çapraz birleştirme"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Natural"
+msgid "Natural"
 msgstr "Doğal"
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+msgid "Tables involved"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+msgid "Fields involved"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+msgid "Join Properties"
+msgstr ""
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 #, fuzzy
-msgid  "Please note that some databases may not support this join type."
+msgid "Please note that some databases may not support this join type."
 msgstr "Lütfen dikkat, bu ilişki tipini bazı veritabanları desteklemeyebilir."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 #, fuzzy
-msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "Sadece iki tablonun, ilişki kurulmuş alanlarının, değerleri aynı olan kayıtları içerir."
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr ""
+"Sadece iki tablonun, ilişki kurulmuş alanlarının, değerleri aynı olan "
+"kayıtları içerir."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 #, fuzzy
-msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "Tablo '%2' deki ilişkili alanlarla birlikte tablo '%1' deki tüm kayıtları içerir."
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr ""
+"Tablo '%2' deki ilişkili alanlarla birlikte tablo '%1' deki tüm kayıtları "
+"içerir."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 #, fuzzy
-msgid  "Contains ALL records from '%1' and from '%2'."
+msgid "Contains ALL records from '%1' and from '%2'."
 msgstr "'%1' ve '%2' den bütün kayıtları içerir."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 #, fuzzy
-msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "'%1' den ve '%2' den tüm kaydın dekartını içerir."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 #, fuzzy
-msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr "'%2' den ve '%1' den sütunların eşit olarak adlandırılmış her çift için sadece bir sütun içerir."
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr ""
+"'%2' den ve '%1' den sütunların eşit olarak adlandırılmış her çift için "
+"sadece bir sütun içerir."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 #, fuzzy
-msgid  "Add Table Window"
+msgid "Add Table Window"
 msgstr "Tablo Penceresi Ekle"
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+msgid "Move table window"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 #, fuzzy
-msgid  "Insert Join"
+msgid "Insert Join"
 msgstr "Birleştirme Ekle"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 #, fuzzy
-msgid  "Delete Join"
+msgid "Delete Join"
 msgstr "Birleştirmeyi Sil"
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+msgid "Resize table window"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+msgid "Delete Column"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+msgid "Move column"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+msgid "Add Column"
+msgstr ""
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 #, fuzzy
-msgid  "Invalid expression, table '$name$' does not exist."
+msgid "Invalid expression, table '$name$' does not exist."
 msgstr "Geçersiz ifade. Tablo '$name$' içinde bulunmuyor."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 #, fuzzy
-msgid  "Invalid expression, field name '$name$' does not exist."
+msgid "Invalid expression, field name '$name$' does not exist."
 msgstr "Geçersiz ifade. '$name$' alan adı mevcut değil."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 #, fuzzy
-msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr "Sorgu #num tablosunu kapsar. Seçilmiş veritabanı tipi, bununla beraber sadece tablo başına #maxnum# işlem yapabilir."
+msgid "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr ""
+"Sorgu #num tablosunu kapsar. Seçilmiş veritabanı tipi, bununla beraber "
+"sadece tablo başına #maxnum# işlem yapabilir."
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+msgid "Delete Table Window"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 #, fuzzy
-msgid  "Edit Column Description"
+msgid "Edit Column Description"
 msgstr "Sütun Açıklamasını Düzenle"
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+msgid "Adjust column width"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 #, fuzzy
-msgid  "(not sorted);ascending;descending"
+msgid "(not sorted);ascending;descending"
 msgstr "(sıralanmamış);artan;azalan"
+
+#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+msgid "(no function);Group"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 #, fuzzy
-msgid  "(no table)"
+msgid "(no table)"
 msgstr "(tablo yok)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 #, fuzzy
-msgid  "The database only supports sorting for visible fields."
-msgstr "Veritabanı, yalnızca, görünür alanlar üzerinde sıralama yapılmasını destekler."
+msgid "The database only supports sorting for visible fields."
+msgstr ""
+"Veritabanı, yalnızca, görünür alanlar üzerinde sıralama yapılmasını "
+"destekler."
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+msgid "Functions"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+msgid "Table Name"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+msgid "Alias"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+msgid "Distinct Values"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 #, fuzzy
-msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Alan;Takma Ad;Tablo;Sırala;Görünür;İşlev;Kriter;Veya;Veya"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 #, fuzzy
-msgid  "There are too many columns."
+msgid "There are too many columns."
 msgstr "Çok fazla sütun var"
+
+#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+msgid "A condition cannot be applied to field [*]"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 #, fuzzy
-msgid  "The SQL statement created is too long."
+msgid "The SQL statement created is too long."
 msgstr "Oluşturulan SQL yapısı çok uzun."
+
+#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+msgid "Query is too complex"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 #, fuzzy
-msgid  "Nothing has been selected."
+msgid "Nothing has been selected."
 msgstr "Hiçbirşey seçilmemiş."
+
+#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+msgid "Too many search criteria"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 #, fuzzy
-msgid  "SQL syntax error"
+msgid "SQL syntax error"
 msgstr "SQL sözdizimi hatası"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "[*] cannot be used as a sort criterion."
+msgid "[*] cannot be used as a sort criterion."
 msgstr "[*] sıralama ölçütü olarak kullanılamadı."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 #, fuzzy
-msgid  "There are too many tables."
+msgid "There are too many tables."
 msgstr "Çok fazla tablo var."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 #, fuzzy
-msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr "Veritabanındaki SQL yazımı kontrol edilirken bildirim uygulanmayacaktır."
+msgid "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr ""
+"Veritabanındaki SQL yazımı kontrol edilirken bildirim uygulanmayacaktır."
+
+#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+msgid "Field name not found or not unique"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+msgid "Join could not be processed"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "Syntax error in SQL statement"
+msgid "Syntax error in SQL statement"
 msgstr "SQL komutunda sözdizim hatası"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "This database does not support table views."
+msgid "This database does not support table views."
 msgstr "Bu veritabanında tablo görünümü desteklenmiyor."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "This database does not support altering of existing table views."
-msgstr "Bu veritabanı var olan görünümlerin değiştirilmesini desteklememektedir."
+msgid "This database does not support altering of existing table views."
+msgstr ""
+"Bu veritabanı var olan görünümlerin değiştirilmesini desteklememektedir."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to create a query instead?"
+msgid "Do you want to create a query instead?"
 msgstr "Tablo yerine sorgu oluşturmak ister misiniz?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "No query could be created."
+msgid "No query could be created."
 msgstr "Sorgu oluşturulamadı."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "No query could be created because no fields were selected."
+msgid "No query could be created because no fields were selected."
 msgstr "Herhangi bir alan seçilmediği için bir sorgu oluşturulamadı!"
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 #, fuzzy
-msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr "İlgili veri kaynağı silinmiş olduğundan, bu verileri kaydetmek mümkün değildir."
+msgid "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr ""
+"İlgili veri kaynağı silinmiş olduğundan, bu verileri kaydetmek mümkün "
+"değildir."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The column '$name$' is unknown."
+msgid "The column '$name$' is unknown."
 msgstr "Sütun adı '$name$' bilinmiyor."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 #, fuzzy
-msgid  "Columns can only be compared using '='."
+msgid "Columns can only be compared using '='."
 msgstr "Sütunlar sadece '=' kullanılarak karşılaştırılır."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "You must use a column name before 'LIKE'."
+msgid "You must use a column name before 'LIKE'."
 msgstr "Sütun adını 'LIKE' tan önce yazmalısınız."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 #, fuzzy
-msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr "Sütun bulunamadı. Lütfen veritabanının büyük-küçük harf duyarlı olduğunu unutmayın."
+msgid "The column could not be found. Please note that the database is case-sensitive."
+msgstr ""
+"Sütun bulunamadı. Lütfen veritabanının büyük-küçük harf duyarlı olduğunu "
+"unutmayın."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: Query Design"
+msgid " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Tabanlı: Sorgu Tasarımı"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: View Design"
+msgid " - %PRODUCTNAME Base: View Design"
 msgstr "- %PRODUCTNAME Tabanlı: Görünüm Tasarımı"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "$object$ değiştirildi.\nDeğişiklikleri kaydetmek istiyor musunuz?"
+msgid "$object$ has been changed.\nDo you want to save the changes?"
+msgstr ""
+"$object$ değiştirildi.\n"
+"Değişiklikleri kaydetmek istiyor musunuz?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
-msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "$object$, ayrıştırılamayan SQL komutuna dayanır. (burada mantıklı olmayan, \"SQL komutu\" hariç) eklenecektir."
+msgid "$object$ is based on an SQL command which could not be parsed."
+msgstr ""
+"$object$, ayrıştırılamayan SQL komutuna dayanır. (burada mantıklı olmayan, "
+"\"SQL komutu\" hariç) eklenecektir."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "$object$ will be opened in SQL view."
-msgstr "$object$, SQL görünümünde açılacaktır. (burada mantıklı olmayan, \"SQL komutu\" hariç) eklenecektir."
+msgid "$object$ will be opened in SQL view."
+msgstr ""
+"$object$, SQL görünümünde açılacaktır. (burada mantıklı olmayan, \"SQL "
+"komutu\" hariç) eklenecektir."
+
+#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+msgid "The table view"
+msgstr ""
+
+#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+msgid "The query"
+msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "The SQL statement"
+msgid "The SQL statement"
 msgstr "SQL ifadesi"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 #, fuzzy
-msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr "Sorgu oluşturma da bir sonuç belirlenemedi ve bunun sonucu olarak başka bir sorgu bölümü oluşturalamadı."
+msgid "The query does not create a result set, and thus cannot be part of another query."
+msgstr ""
+"Sorgu oluşturma da bir sonuç belirlenemedi ve bunun sonucu olarak başka bir "
+"sorgu bölümü oluşturalamadı."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 #, fuzzy
-msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr "ActiveConnection ve DataSourceName parametreleri eksik ya da sorgu tasarımı başlatılması yanlış."
+msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr ""
+"ActiveConnection ve DataSourceName parametreleri eksik ya da sorgu tasarımı "
+"başlatılması yanlış."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 #, fuzzy
-msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr "Bu ilişki daha önceden oluşturulmuş. İlişkiyi düzenlemek ya da yeni bir tane oluşturmak ister misiniz?"
+msgid "This relation already exists. Do you want to edit it or create a new one?"
+msgstr ""
+"Bu ilişki daha önceden oluşturulmuş. İlişkiyi düzenlemek ya da yeni bir tane "
+"oluşturmak ister misiniz?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit..."
+msgid "Edit..."
 msgstr "Düzenle..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 #, fuzzy
-msgid  "Create..."
+msgid "Create..."
 msgstr "Oluştur..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base: Relation design"
+msgid " - %PRODUCTNAME Base: Relation design"
 msgstr "- %PRODUCTNAME Base: İlişkili tasarım"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "The database does not support relations."
+msgid "The database does not support relations."
 msgstr "Veri tabanı herhangi bir ilişkiyi desteklemiyor."
 
 #: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "İlişki tasarımı değişti.\nDeğişiklikleri kaydetmek ister misiniz?"
+msgid "The relation design has been changed.\nDo you want to save the changes?"
+msgstr ""
+"İlişki tasarımı değişti.\n"
+"Değişiklikleri kaydetmek ister misiniz?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 #, fuzzy
-msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr "Bu tabloyu sildiğiniz zaman ilgili ilişkilerin tümü de silinecektir.Devam etmek istiyor musunuz?"
+msgid "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr ""
+"Bu tabloyu sildiğiniz zaman ilgili ilişkilerin tümü de silinecektir.Devam "
+"etmek istiyor musunuz?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 #, fuzzy
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr "Veritabanı ilişkiyi oluşturamıyor. Yabancı anahtarlar bu tablo tipi için desteklenmiyor olabilir.\nLütfen veritabanı belgelerinizi kontrol ediniz."
+msgid "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgstr ""
+"Veritabanı ilişkiyi oluşturamıyor. Yabancı anahtarlar bu tablo tipi için "
+"desteklenmiyor olabilir.\n"
+"Lütfen veritabanı belgelerinizi kontrol ediniz."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 #, fuzzy
-msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr "Bilinmeyen;Metin;Sayı;Tarih/Zaman;Tarih;Zaman;Boolean;Parabirimi;Yazışma;Sayaç;Resim;Metin (sabit);Ondalık;İkili (sabit);İkili;BigInt;Çift;Float;Gerçek;Tamsayı;Küçük Tamsayı;Ufak Tamsayı;SQL Boş;Nesne;Benzersiz;Yapı;BLOB;CLOB;REF;DİĞER"
+msgid "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"Bilinmeyen;Metin;Sayı;Tarih/Zaman;Tarih;Zaman;Boolean;Parabirimi;Yazışma;Say"
+"aç;Resim;Metin (sabit);Ondalık;İkili "
+"(sabit);İkili;BigInt;Çift;Float;Gerçek;Tamsayı;Küçük Tamsayı;Ufak "
+"Tamsayı;SQL Boş;Nesne;Benzersiz;Yapı;BLOB;CLOB;REF;DİĞER"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
 #, fuzzy
-msgid  "Insert/remove primary key"
+msgid "Insert/remove primary key"
 msgstr "Birincil anahtar ekle/sil"
+
+#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+msgid "Yes"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+msgid "No"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+msgid "Ascending"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+msgid "Descending"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 #, fuzzy
-msgid  "<none>"
+msgid "<none>"
 msgstr "<hiçbiri>"
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+msgid "Field name"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+msgid "Field Name"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+msgid "Field ~type"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 #, fuzzy
-msgid  "Field Type"
+msgid "Field Type"
 msgstr "Alan Türü"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Field length"
+msgid "Field length"
 msgstr "Alan uzunluğu"
+
+#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+#, fuzzy
+msgid "Description"
+msgstr "Açıklama"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Column Description"
+msgid "Column Description"
 msgstr "Sütun Tanımı"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 #, fuzzy
-msgid  "Input required"
+msgid "Input required"
 msgstr "Girdi gerekli"
+
+#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+msgid "~AutoValue"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+msgid "Field Properties"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+msgid "General"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+msgid "Description:"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+msgid "Table properties"
+msgstr ""
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The text you entered is not a list element. "
+msgid "The text you entered is not a list element. "
 msgstr "Girilen metin bir liste öğesi değil."
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 #, fuzzy
-msgid  "Insert Rows"
+msgid "Insert Rows"
 msgstr "Satır Ekle"
+
+#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+msgid "Primary Key"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+msgid "Modify cell"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+msgid "Delete row"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+msgid "Modify field type"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 #, fuzzy
-msgid  "Insert row"
+msgid "Insert row"
 msgstr "Satır ekle"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 #, fuzzy
-msgid  "Insert new row"
+msgid "Insert new row"
 msgstr "Yeni satır ekle"
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
+msgid "Insert/remove primary key"
+msgstr "Birincil anahtar ekle/sil"
+
+#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+msgid "~Default value"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+msgid "~Entry required"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "~Length"
+msgid "~Length"
 msgstr "~Uzunluk"
+
+#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+msgid "~Type"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
+#, fuzzy
+msgid "~Length"
+msgstr "~Uzunluk"
+
+#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+msgid "Decimal ~places"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+msgid "Format example"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "Bütün yeni kayıtlar da gösterilecek varsayılan değeri seçin.\nEğer bu alana varsayılan bir değer atanmaz ise, boş değer bölümünü seçin."
+msgid "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
+msgstr ""
+"Bütün yeni kayıtlar da gösterilecek varsayılan değeri seçin.\n"
+"Eğer bu alana varsayılan bir değer atanmaz ise, boş değer bölümünü seçin."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "Bu alan için varsayılan değeri girin. \n\nTabloya sonradan veri girdiğinizde bu dizin seçilmiş alan için her yeni kayıt içinde kullanılmış olacaktır."
+msgid "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
+"Bu alan için varsayılan değeri girin. \n"
+"\n"
+"Tabloya sonradan veri girdiğinizde bu dizin seçilmiş alan için her yeni "
+"kayıt içinde kullanılmış olacaktır."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 #, fuzzy
-msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr "Bu seçeneğini bir alanın boş bırakılmasını engellemek istediğinizde etkinleştirin. Örneğin kullanıcının her zaman veri girmesini istediğiniz durumlar."
+msgid "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr ""
+"Bu seçeneğini bir alanın boş bırakılmasını engellemek istediğinizde "
+"etkinleştirin. Örneğin kullanıcının her zaman veri girmesini istediğiniz "
+"durumlar."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Enter the maximum text length permitted."
+msgid "Enter the maximum text length permitted."
 msgstr "İzin verilen maksimum metin uzunluğunu giriniz."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Enter the number format."
+msgid "Enter the number format."
 msgstr "Sayı biçimini girin."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "Bu alanın içerebileceği veri uzunluğunu belirleyin.\n\nEğer ondalık alansa, en büyük sayı uzunluğunu, ikilik bir alansa, veri bloğunun uzunluğunu girin.\nBu veritabanında, girilen değer tanımlanan sınırları aşarsa, bu değerlere göre düzenlenecektir."
+msgid "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
+"Bu alanın içerebileceği veri uzunluğunu belirleyin.\n"
+"\n"
+"Eğer ondalık alansa, en büyük sayı uzunluğunu, ikilik bir alansa, veri "
+"bloğunun uzunluğunu girin.\n"
+"Bu veritabanında, girilen değer tanımlanan sınırları aşarsa, bu değerlere "
+"göre düzenlenecektir."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Specify the number of decimal places permitted in this field."
+msgid "Specify the number of decimal places permitted in this field."
 msgstr "Bu alanda izin verilen en fazla ondalık hane sayısını belirtin."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 #, fuzzy
-msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr "Burası geçerli biçimde verinin nasıl görüneceğini gösterir (biçimi değiştirmek için sağdaki düğmeyi kullanın)."
+msgid "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr ""
+"Burası geçerli biçimde verinin nasıl görüneceğini gösterir (biçimi "
+"değiştirmek için sağdaki düğmeyi kullanın)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 #, fuzzy
-msgid  "This is where you determine the output format of the data."
+msgid "This is where you determine the output format of the data."
 msgstr "Burası verinin çıktı biçimini belirlediğiniz yerdir."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 #, fuzzy
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "Eğer bu alan Otomatik Artırmalı değerden oluşuyorsa seçin.\n\nBu türün alanlarına veri giremezsiniz. Gerçek bir değer otomatik olarak yeni kayıt içine eklenecektir (önceki kayıt artımından sonuca)."
+msgid "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
+"Eğer bu alan Otomatik Artırmalı değerden oluşuyorsa seçin.\n"
+"\n"
+"Bu türün alanlarına veri giremezsiniz. Gerçek bir değer otomatik olarak yeni "
+"kayıt içine eklenecektir (önceki kayıt artımından sonuca)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~..."
+msgid "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgid "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Tablo kaydedilemiyor, çünkü \"$column$\" iki kere kullanıldı."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 #, fuzzy
-msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr "\"$column$\" sütunu birincil anahtara aittir. Eğer sütunu silerseniz birincil anahtar da silinecektir. Sütunu silmek istediğinizden emin misiniz?"
+msgid "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr ""
+"\"$column$\" sütunu birincil anahtara aittir. Eğer sütunu silerseniz birincil "
+"anahtar da silinecektir. Sütunu silmek istediğinizden emin misiniz?"
+
+#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+msgid "Primary Key Affected"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+msgid "Column"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+msgid "Continue anyway?"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+msgid "Warning!"
+msgstr "Uyarı!"
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "Tablo değişti.\nDeğişiklikler kayıt edilsin mi?"
+msgid "The table has been changed.\nDo you want to save the changes?"
+msgstr ""
+"Tablo değişti.\n"
+"Değişiklikler kayıt edilsin mi?"
 
 #: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "Veri tabanına bağlantısı koptu! Bağlantı olmadan tablo tasarımı ancak sınırlı işlevleri ile kullanılabilir.\nYeniden bağlantı kurulsun mu?"
+msgid "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr ""
+"Veri tabanına bağlantısı koptu! Bağlantı olmadan tablo tasarımı ancak "
+"sınırlı işlevleri ile kullanılabilir.\n"
+"Yeniden bağlantı kurulsun mu?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The table could not be saved due to problems connecting to the database."
+msgid "The table could not be saved due to problems connecting to the database."
 msgstr "Bağlantı sorunları sebebi ile tablo kaydedilemedi."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 #, fuzzy
-msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgid "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Veri kaynağı silinmiş olduğu için tablo süzgeci ayarlanamadı."
 
 #: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "Bir tablonun dizinlerini düzenleme yapmadan önce kaydetmeniz gerekir.\nDeğişiklikler kaydedilsin mi?"
+msgid "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr ""
+"Bir tablonun dizinlerini düzenleme yapmadan önce kaydetmeniz gerekir.\n"
+"Değişiklikler kaydedilsin mi?"
+
+#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+msgid "No primary key"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 #, fuzzy
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "Bu veritabanında bir kaydı belirleyebilmek için benzersiz bir dizin veya birincil anahtar gereklidir.\nAncak bu yapı kurallarının sağlanması durumunda bu tabloya veri girebilirsiniz. Birincil anahtar yaratılsın mı?"
+msgid "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
+msgstr ""
+"Bu veritabanında bir kaydı belirleyebilmek için benzersiz bir dizin veya "
+"birincil anahtar gereklidir.\n"
+"Ancak bu yapı kurallarının sağlanması durumunda bu tabloya veri "
+"girebilirsiniz. Birincil anahtar yaratılsın mı?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base: Table Design"
+msgid " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: Tablo Tasarımı"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr "\"$column$\" sütunu değiştirilemedi. Bunun yerine sütun silinip, yeni biçimle eklensin mi?"
+msgid "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr ""
+"\"$column$\" sütunu değiştirilemedi. Bunun yerine sütun silinip, yeni biçimle "
+"eklensin mi?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "Error while saving the table design"
+msgid "Error while saving the table design"
 msgstr "Tablo tasarımını kaydederken hata"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 #, fuzzy
-msgid  "The column $column$ could not be deleted."
+msgid "The column $column$ could not be deleted."
 msgstr "$column$ sütunu silinemedi."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr "Tablodaki tüm sütunları silmeye çalışıyorsunuz. Sütunsuz bir tablo olamaz. Tablo veritabanından silinmeli mi? Silinmemeliyse, tablo değiştirilmeden bırakılacaktır."
+msgid "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr ""
+"Tablodaki tüm sütunları silmeye çalışıyorsunuz. Sütunsuz bir tablo olamaz. "
+"Tablo veritabanından silinmeli mi? Silinmemeliyse, tablo değiştirilmeden "
+"bırakılacaktır."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "A~uto-increment statement"
+msgid "A~uto-increment statement"
 msgstr "O~tomatik artırmalı yapı"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "Otomatik artırma alanı için SQL cümlesi gir. \n\nBu cümle tablo oluşturulduğunda doğrudan veritabanına transfer edilmiş olacak."
+msgid "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
+"Otomatik artırma alanı için SQL cümlesi gir. \n"
+"\n"
+"Bu cümle tablo oluşturulduğunda doğrudan veritabanına transfer edilmiş "
+"olacak."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "Tür bilgisi veri tabanından alınamadı.\nTablo tasarımı veri kaynağında mevcut değildir."
+msgid "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
+msgstr ""
+"Tür bilgisi veri tabanından alınamadı.\n"
+"Tablo tasarımı veri kaynağında mevcut değildir."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 #, fuzzy
-msgid  "change field name"
+msgid "change field name"
 msgstr "alan adını değiştir"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "change field type"
+msgid "change field type"
 msgstr "alan türünü değiştir"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "change field description"
+msgid "change field description"
 msgstr "alan açıklamasını değiştir"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 #, fuzzy
-msgid  "change field attribute"
+msgid "change field attribute"
 msgstr "alan niteliğini değiştir"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The destination database does not support views."
+msgid "The destination database does not support views."
 msgstr "Hedef veritabanı görünümleri desteklememektedir."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The destination database does not support primary keys."
+msgid "The destination database does not support primary keys."
 msgstr "Hedef veritabanı birincil anahtar özelliğini desteklememektedir."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 #, fuzzy
-msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr "bulunan tanımlama da veri erişimi yok ya da veri erişimi için gerekli tüm bilgiler yok"
+msgid "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr ""
+"bulunan tanımlama da veri erişimi yok ya da veri erişimi için gerekli tüm "
+"bilgiler yok"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "Only tables and queries are supported at the moment."
+msgid "Only tables and queries are supported at the moment."
 msgstr "Şu anda sadece tablolar ve sorgular desteklenmektedir."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 #, fuzzy
-msgid  "The copy source's result set must support bookmarks."
+msgid "The copy source's result set must support bookmarks."
 msgstr "Kopya kaynağın sonuç kümesi yer imlerini desteklemelidir."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgid "Unsupported source column type ($type$) at column position $pos$."
 msgstr "$pos$ sütun konumu kaynak sütun türünü ($type$) desteklememektedir."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "Illegal number of initialization parameters."
+msgid "Illegal number of initialization parameters."
 msgstr "Başlatma parametresinde geçersiz sayı."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred during initialization."
+msgid "An error occurred during initialization."
 msgstr "Başlatma sırasında bir hata meydana geldi."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 #, fuzzy
-msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgid "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Kopya kaynakta desteklenmeyen ayarlar: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "To copy a query, your connection must be able to provide queries."
+msgid "To copy a query, your connection must be able to provide queries."
 msgstr "Bir sorguyu kpyaalamak için, bağlantınız sorguları sağlamalı."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 #, fuzzy
-msgid  "The given interaction handler is invalid."
+msgid "The given interaction handler is invalid."
 msgstr "Verilen etkileşim işleyici geçersiz."
+
+#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+msgid "~Remember password until end of session"
+msgstr ""
+
+#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+msgid "~Remember password"
+msgstr ""

@@ -1,272 +1,286 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: dz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
-msgid  "The contents of a combo box or list field could not be determined."
+msgid "The contents of a combo box or list field could not be determined."
 msgstr "ཀོམ་བོ་སྒྲོམ་ཡང་ན་ཐོ་ཡིག་ས་སྒོའི་ནང་དོན་ཚུ་ གཏན་འབེབས་བཟོ་མ་ཚུགས།"
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
+msgid "Insert graphics"
 msgstr "ཚད་རིས་ཚུ་བཙུགས།"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
-msgid  "substituted"
+msgid "substituted"
 msgstr "ཚབ་མ་བཙུགས་ཡོདཔ།"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
-msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr "འ་ནི་ཚད་འཛིན་དེ་མངོན་གསལ་འབད་ཡོད་པའི་སྐབས་འཛོལ་བ་ཅིག་བྱུང་ཡོད། དེ་འབདཝ་ལས་ འདི་ས་གནས་འཛིན་མི་ཅིག་གིས་ཚབ་མ་བཙུགས་ཡོད།"
+msgid "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+"འ་ནི་ཚད་འཛིན་དེ་མངོན་གསལ་འབད་ཡོད་པའི་སྐབས་འཛོལ་བ་ཅིག་བྱུང་ཡོད། དེ་འབདཝ་ལས་ "
+"འདི་ས་གནས་འཛིན་མི་ཅིག་གིས་ཚབ་མ་བཙུགས་ཡོད།"
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
+msgid "Error reading data from database"
 msgstr "གནད་སྡུད་གཞི་རྟེན་ལས་གནད་སྡུད་ལྷག་པའི་སྐབས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
-msgid  "Connection failed"
+msgid "Connection failed"
 msgstr "མཐུད་ལམ་འཐུས་ཤོར་བྱུང་ཡོདཔ།"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
-msgid  "The data content could not be loaded."
+msgid "The data content could not be loaded."
 msgstr "གནད་སྡུད་ཀྱི་ནང་དོན་དེ་མངོན་གསལ་འབད་མ་ཚུགས།"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
-msgid  "The data content could not be updated"
+msgid "The data content could not be updated"
 msgstr "གནད་སྡུད་ཀྱི་ནང་དོན་དེ་དུས་མཐུན་བཟོ་མ་ཚུགས།"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
+msgid "Error inserting the new record"
 msgstr "དྲན་ཐོ་གསརཔ་བཙུགས་པའི་སྐབས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
+msgid "Error updating the current record"
 msgstr "ད་ལྟོའི་དྲན་ཐོ་དུས་མཐུན་བཟོ་བའི་སྐབས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
+msgid "Error deleting the current record"
 msgstr "ད་ལྟོའི་དྲན་ཐོ་བཏོན་གཏང་པའི་སྐབས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
+msgid "Error deleting the specified records"
 msgstr "གསལ་བཀོད་འབད་ཡོད་པའི་དྲན་ཐོ་ཚུ་མཏོན་གཏང་པའི་སྐབས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
-msgid  "The object cannot be NULL."
+msgid "The object cannot be NULL."
 msgstr "དངོས་པོ་ སྟོང་ཆ་མེནམ་འོང་།"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
-msgid  "Insert graphics from..."
+msgid "Insert graphics from..."
 msgstr "ལས་ཚད་རིས་ཚུ་བཙུགས..."
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
+msgid "Remove graphics"
 msgstr "ཚད་རིས་ཚུ་རྩ་བསྐྲད་གཏང་།"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
-msgid  "The given stream is invalid."
+msgid "The given stream is invalid."
 msgstr "རྒྱུན་རིམ་བྱིན་ཡོད་མི་དེ་ནུས་མེད་ཨིན་པས།"
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
+msgid "Syntax error in query expression"
 msgstr "འདྲི་དཔྱད་ཀྱི་གསལ་བརྗོད་ནང་ལུ་ཚིག་སྦྱོར་གྱི་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
-msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr "གནས་གོང་གི་དབྱེ་བ་སྡམ་ཐག་གིས་རྒྱབ་སྐྱོར་འབད་མི་དེ་ འ་ནི་ཚད་འཛིན་དང་ཅིག་ཁར་གནད་སྡུད་བརྗེ་སོར་འབད་ནིའི་དོན་ལུ་ལག་ལེན་འཐབ་མི་བཏུབ།"
+msgid "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+"གནས་གོང་གི་དབྱེ་བ་སྡམ་ཐག་གིས་རྒྱབ་སྐྱོར་འབད་མི་དེ་ "
+"འ་ནི་ཚད་འཛིན་དང་ཅིག་ཁར་གནད་སྡུད་བརྗེ་སོར་འབད་ནིའི་དོན་ལུ་ལག་ལེན་འཐབ་མི་བཏུབ།"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
-msgid  "Record"
+msgid "Record"
 msgstr "དྲན་ཐོ།"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
-msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr "ཚད་འཛིན་དེ་ཕྱིའི་གནས་གོང་གི་དམ་ཐག དུས་ཅིག་ལུ་ནུས་ལྡན་བཟོ་མི་འབད་ཡང་ལཱ་འབད་མི་ ནང་ལུ་མཐུད་དེ་ཡོདཔ་ཨིན། ནུས་ལྡན་བཟོ་མི་གསརཔ་ཅིག་གཞི་སྒྲིག་མ་འབད་བའི་ཧེ་མ་ ཁྱོད་ཀྱིས་གནས་གོང་གི་དམ་ཐག་ཆ་མེད་གཏང་གྲུབ་འབད་དགོ"
+msgid "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+"ཚད་འཛིན་དེ་ཕྱིའི་གནས་གོང་གི་དམ་ཐག "
+"དུས་ཅིག་ལུ་ནུས་ལྡན་བཟོ་མི་འབད་ཡང་ལཱ་འབད་མི་ ནང་ལུ་མཐུད་དེ་ཡོདཔ་ཨིན། "
+"ནུས་ལྡན་བཟོ་མི་གསརཔ་ཅིག་གཞི་སྒྲིག་མ་འབད་བའི་ཧེ་མ་ "
+"ཁྱོད་ཀྱིས་གནས་གོང་གི་དམ་ཐག་ཆ་མེད་གཏང་གྲུབ་འབད་དགོ"
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
-msgid  "of"
+msgid "of"
 msgstr "གི"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "ད་ལྟོའི་འབྲི་ཤོག་གི་ནང་དོན་འདི་ལེགས་བཅོས་འབད་ཡོདཔ།\nཁྱོད་ཀྱིས་བསྒྱུར་བཅོས་ཚུ་སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
+msgid "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+"ད་ལྟོའི་འབྲི་ཤོག་གི་ནང་དོན་འདི་ལེགས་བཅོས་འབད་ཡོདཔ།\n"
+"ཁྱོད་ཀྱིས་བསྒྱུར་བཅོས་ཚུ་སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "དབྱེ་སེལ་ཁྱད་ཚད་འདི་གི་སྒྲིག་སྟངས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "ཚགས་མ་ཁྱད་ཚད་འདི་གི་སྒྲིག་སྟངས་འཛོལ་བ།"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
-msgid  "To execute this function, parameters are needed."
+msgid "To execute this function, parameters are needed."
 msgstr "ལས་འགན་འདི་ལག་ལེན་འཐབ་ནི་ལུ་ཚད་བཟུང་ཚུ་དགོཔ་ཨིན།"
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
-msgid  "This function cannot be executed, but is only for status queries."
-msgstr "ལས་འགན་འདི་ལག་ལེན་འཐབ་མི་བཏུབ་ཨིན་རུང་གནས་ཚད་དྲི་བ་ཚུ་གི་དོན་ལུ་རྐྱངམ་ཅིག"
+msgid "This function cannot be executed, but is only for status queries."
+msgstr ""
+"ལས་འགན་འདི་ལག་ལེན་འཐབ་མི་བཏུབ་ཨིན་རུང་གནས་ཚད་དྲི་བ་ཚུ་གི་དོན་ལུ་རྐྱངམ་ཅིག"
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
-msgid  "Unknown function."
+msgid "Unknown function."
 msgstr "ལས་འགན་མ་ཤེསཔ།"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
-msgid  "Please enter a binding expression."
+msgid "Please enter a binding expression."
 msgstr "དམ་ཐག་གི་གསལ་བརྗོད་ཅིག་ཐོ་བཀོད་འབད་གནང་།"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
-msgid  "This is an invalid binding expression."
+msgid "This is an invalid binding expression."
 msgstr "འ་ནི་འདི་ནུས་མེད་དམ་ཐག་གི་གསལ་བརྗོད་ཅིག་ཨིན།"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
-msgid  "Value is invalid."
+msgid "Value is invalid."
 msgstr "གནས་གོང་དེ་ནུས་མེད་ཨིན་པས།"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
-msgid  "A value is required."
+msgid "A value is required."
 msgstr "གནས་གོང་ཅིག་དགོས་མཁོ་ཡོདཔ།"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
-msgid  "The constraint '$1' not validated."
+msgid "The constraint '$1' not validated."
 msgstr "བར་ཆད་ '$1' དེ་ནུས་ལྡན་མ་བཟོ་བས།"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
-msgid  "The value is not of the type '$2'."
+msgid "The value is not of the type '$2'."
 msgstr "གནས་གོང་དེ་ '$2' གི་དབྱེ་མེན་པས།"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
-msgid  "The value must be smaller than or equal to $2."
+msgid "The value must be smaller than or equal to $2."
 msgstr "གནས་གོང་དེ་ '$2' ལས་ཆུང་མི་ཡང་ན་མཉམ་པ་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
-msgid  "The value must be smaller than $2."
+msgid "The value must be smaller than $2."
 msgstr "གནས་གོང་དེ་ '$2' ལས་ཆུང་མི་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
-msgid  "The value must be greater than or equal to $2."
+msgid "The value must be greater than or equal to $2."
 msgstr "གནས་གོང་དེ་ '$2' སྦོམ་མི་ཡང་ན་མཉམ་པ་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
-msgid  "The value must be greater than $2."
+msgid "The value must be greater than $2."
 msgstr "གནས་གོང་དེ་ '$2' ལས་སྦོམ་མི་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
-msgid  "The value does not match the pattern '$2'."
+msgid "The value does not match the pattern '$2'."
 msgstr "གནས་གོང་དེ་དཔེ་གཞི་ '$2' དང་མི་མཐུན་པས།"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
-msgid  "$2 digits allowed at most."
+msgid "$2 digits allowed at most."
 msgstr "'$2' ཨང་ཡིག་ཚུ་མང་ཤོས་འབད་བཅུགཔ་ཨིན།"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
-msgid  "$2 fraction digits allowed at most."
+msgid "$2 fraction digits allowed at most."
 msgstr "'$2' དཔྱ་ཕྲན་ཨང་ཡིག་ཚུ་མང་ཤོས་འབད་བཅུགཔ་ཨིན།"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
-msgid  "The string must be $2 characters long."
+msgid "The string must be $2 characters long."
 msgstr "ཡིག་རྒྱུན་དེ་ '$2' ཡིག་འབྲུ་གིས་རིངམ་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
-msgid  "The string must be at least $2 characters long."
+msgid "The string must be at least $2 characters long."
 msgstr "ཡིག་རྒྱུན་དེ་ཉུང་མཐའ་ '$2' ཡིག་འབྲུ་གིས་རིངམ་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
-msgid  "The string can only be $2 characters long at most."
+msgid "The string can only be $2 characters long at most."
 msgstr "ཡིག་རྒྱུན་དེ་ མང་མཐའ་ '$2' ཡིག་འབྲུ་གིས་རིངམ་ཨིན་དགོ"
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
-msgid  "String"
+msgid "String"
 msgstr "ཡིག་རྒྱུན།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
+msgid "Hyperlink"
 msgstr "ཚད་བརྒལ་འབྲེལ་ལམ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
+msgid "True/False (Boolean)"
 msgstr "བདེན་པ/རྫུན་མ (བུ་ལིན)"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
+msgid "Decimal"
 msgstr "བཅུ་ཚག།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
+msgid "Floating point"
 msgstr "ལྡིང་ཚད།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
-msgid  "Double"
+msgid "Double"
 msgstr "ལོག་བལྟབ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "ཚེས་གྲངས།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "ཆུ་ཚོད།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "ཚེས་གྲངས་དང་ཆུ་ཚོད།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
-msgid  "Month and year"
+msgid "Month and year"
 msgstr "ཟླཝ་དང་ལོ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "ལོ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
+msgid "Month and day"
 msgstr "ཟླཝ་དང་གཟའ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "ཟླཝ།"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "གཟའ།"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
+msgid "Error during evaluation"
 msgstr "བརྟག་ཞིབ་འབད་བའི་སྐབས་འཛོལ་བ།"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
-msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr "ཡིག་རྒྱུན་ '$1' དེ་དགོས་མཁོ་ཡོད་པའི་ཨ་རྟག་རང་གི་གསལ་བརྗོད་ '$2' དང་མི་མཐུན་པས།"
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr ""
+"ཡིག་རྒྱུན་ '$1' དེ་དགོས་མཁོ་ཡོད་པའི་ཨ་རྟག་རང་གི་གསལ་བརྗོད་ '$2' "
+"དང་མི་མཐུན་པས།"
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr "དམ་ཐག"

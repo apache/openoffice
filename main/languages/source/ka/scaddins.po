@@ -1,1902 +1,4145 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
 #, fuzzy
-msgid  "Calculates the number of weeks in a specific period"
+msgid "Calculates the number of weeks in a specific period"
 msgstr "ითვლის კვირების რაოდენობას განსაზღვრულ პერიოდში"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
 #, fuzzy
-msgid  "Start date"
+msgid "Start date"
 msgstr "საწყისი თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 #, fuzzy
-msgid  "First day of the period"
+msgid "First day of the period"
 msgstr "პერიოდის პირველი დღე"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
 #, fuzzy
-msgid  "End date"
-msgstr "დასასრული თარიღი"
+msgid "End date"
+msgstr "ბოლო თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 #, fuzzy
-msgid  "Last day of the period"
+msgid "Last day of the period"
 msgstr "პერიოდის ბოლო დღე"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ტიპი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "გამოთვლის ტიპი: ტიპი=0 ნიშნავს დროის ინტერვალს, ტიპი=1 ნიშნავს კალენდრულ კვირებს. "
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
+msgstr ""
+"გამოთვლის ტიპი: ტიპი=0 ნიშნავს დროის ინტერვალს, ტიპი=1 ნიშნავს კალენდრულ "
+"კვირებს. "
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
 #, fuzzy
-msgid  "Determines the number of months in a specific period."
+msgid "Determines the number of months in a specific period."
 msgstr "ითვლის თვეების რაოდენობას განსაზღვრულ პერიოდში."
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
 #, fuzzy
-msgid  "First day of the period."
+msgid "First day of the period."
 msgstr "პერიოდის პირველი დღე."
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "ბოლო თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
 #, fuzzy
-msgid  "Last day of the period."
+msgid "Last day of the period."
 msgstr "პერიოდის ბოლო დღე."
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ტიპი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "გამოთვლის ტიპი: Type=0 ნიშნავს დროის ინტერვალს,Type=1  ნიშნავს კალენდრულ თვეებს."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
+msgstr ""
+"გამოთვლის ტიპი: Type=0 ნიშნავს დროის ინტერვალს,Type=1  ნიშნავს კალენდრულ "
+"თვეებს."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
 #, fuzzy
-msgid  "Calculates the number of years in a specific period."
+msgid "Calculates the number of years in a specific period."
 msgstr "ითვლის წლების რაოდენობას განსაზღვრულ პერიოდში. "
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
+#, fuzzy
+msgid "First day of the period"
+msgstr "პერიოდის პირველი დღე"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "ბოლო თარიღი"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
+#, fuzzy
+msgid "Last day of the period"
+msgstr "პერიოდის ბოლო დღე"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ტიპი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "გამოთვლის ტიპი: ტიპი=0 ნიშნავს დროის ინტერვალს, ტიპი=1 ნიშნავს კალენდრულ კვირებს. "
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
+msgstr ""
+"გამოთვლის ტიპი: ტიპი=0 ნიშნავს დროის ინტერვალს, ტიპი=1 ნიშნავს კალენდრულ "
+"კვირებს. "
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr "გვიჩვენებს 1 (TRUE) თუ თარიღი არის დღე ნაკიანი წელიწადიდან, სხვა შემთხვევაში 0 (FALSE)."
+msgid "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
+msgstr ""
+"გვიჩვენებს 1 (TRUE) თუ თარიღი არის დღე ნაკიანი წელიწადიდან, სხვა შემთხვევაში "
+"0 (FALSE)."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
 #, fuzzy
-msgid  "Any day in the desired year"
+msgid "Any day in the desired year"
 msgstr "ნებისმიერი დღე სასურველ წელიწადში"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr "გვიჩვენებს თვეში არსებული დღეების რაოდენობას რომელიც ერგება შეყვანილ თარიღს"
+msgid "Returns the number of days of the month in which the date entered occurs"
+msgstr ""
+"გვიჩვენებს თვეში არსებული დღეების რაოდენობას რომელიც ერგება შეყვანილ თარიღს"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "თარიღი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
 #, fuzzy
-msgid  "Any day in the desired month"
+msgid "Any day in the desired month"
 msgstr "ნებისმიერი დღე სასურველ თვეში."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "გვიჩვენებს წელიწადში არსებული დღეების რაოდენობას, რომელიც ერგება შეყვანილ რაოდენობას. "
+msgid "Returns the number of days of the year in which the date entered occurs."
+msgstr ""
+"გვიჩვენებს წელიწადში არსებული დღეების რაოდენობას, რომელიც ერგება შეყვანილ "
+"რაოდენობას. "
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "თარიღი"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
+#, fuzzy
+msgid "Any day in the desired year"
+msgstr "ნებისმიერი დღე სასურველ წელიწადში"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "გვიჩვენებს წელიწადში არსებული კვირების რაოდენობას, რომელსაც ერგება შეყვანილი თარიღი. "
+msgid "Returns the number of weeks of the year in which the date entered occurs"
+msgstr ""
+"გვიჩვენებს წელიწადში არსებული კვირების რაოდენობას, რომელსაც ერგება შეყვანილი "
+"თარიღი. "
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "თარიღი"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
+#, fuzzy
+msgid "Any day in the desired year"
+msgstr "ნებისმიერი დღე სასურველ წელიწადში"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
 #, fuzzy
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
+msgid "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "დაშიფრავს ან გაშიფრავს ტექსტს ROT13 ალგორითმის მეშვეობით."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "ტექსტი"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
 #, fuzzy
-msgid  "Text to be encrypted or text already encrypted"
+msgid "Text to be encrypted or text already encrypted"
 msgstr "დასაშიფრი ან უკვე დაშიფრული ტექსტი. "
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
 #, fuzzy
-msgid  "WEEKS"
+msgid "WEEKS"
 msgstr "WEEKS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
 #, fuzzy
-msgid  "MONTHS"
+msgid "MONTHS"
 msgstr "MONTHS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
 #, fuzzy
-msgid  "YEARS"
+msgid "YEARS"
 msgstr "YEARS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
 #, fuzzy
-msgid  "ISLEAPYEAR"
+msgid "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 #, fuzzy
-msgid  "DAYSINMONTH"
+msgid "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
 #, fuzzy
-msgid  "DAYSINYEAR"
+msgid "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
 #, fuzzy
-msgid  "WEEKSINYEAR"
+msgid "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
 #, fuzzy
-msgid  "ROT13"
+msgid "ROT13"
 msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
 #, fuzzy
-msgid  "WORKDAY"
+msgid "WORKDAY"
 msgstr "WORKDAY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
 #, fuzzy
-msgid  "YEARFRAC"
+msgid "YEARFRAC"
 msgstr "YEARFRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
 #, fuzzy
-msgid  "EDATE"
+msgid "EDATE"
 msgstr "EDATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
 #, fuzzy
-msgid  "WEEKNUM"
+msgid "WEEKNUM"
 msgstr "WEEKNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
 #, fuzzy
-msgid  "EOMONTH"
+msgid "EOMONTH"
 msgstr "EOMONTH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
 #, fuzzy
-msgid  "NETWORKDAYS"
+msgid "NETWORKDAYS"
 msgstr "NETWORKDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
 #, fuzzy
-msgid  "AMORDEGRC"
+msgid "AMORDEGRC"
 msgstr "AMORDEGRC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
 #, fuzzy
-msgid  "AMORLINC"
+msgid "AMORLINC"
 msgstr "AMORLINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
 #, fuzzy
-msgid  "ACCRINT"
+msgid "ACCRINT"
 msgstr "ACCRINT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
 #, fuzzy
-msgid  "ACCRINTM"
+msgid "ACCRINTM"
 msgstr "ACCRINTM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
 #, fuzzy
-msgid  "RECEIVED"
+msgid "RECEIVED"
 msgstr "RECEIVED"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
 #, fuzzy
-msgid  "DISC"
+msgid "DISC"
 msgstr "DISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
 #, fuzzy
-msgid  "DURATION"
+msgid "DURATION"
 msgstr "DURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
 #, fuzzy
-msgid  "EFFECT"
+msgid "EFFECT"
 msgstr "EFFECT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
 #, fuzzy
-msgid  "CUMPRINC"
+msgid "CUMPRINC"
 msgstr "CUMPRINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
 #, fuzzy
-msgid  "CUMIPMT"
+msgid "CUMIPMT"
 msgstr "CUMIPMT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
 #, fuzzy
-msgid  "PRICE"
+msgid "PRICE"
 msgstr "PRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
 #, fuzzy
-msgid  "PRICEDISC"
+msgid "PRICEDISC"
 msgstr "PRICEDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
 #, fuzzy
-msgid  "PRICEMAT"
+msgid "PRICEMAT"
 msgstr "PRICEMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
 #, fuzzy
-msgid  "MDURATION"
+msgid "MDURATION"
 msgstr "MDURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
 #, fuzzy
-msgid  "NOMINAL"
+msgid "NOMINAL"
 msgstr "NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
 #, fuzzy
-msgid  "DOLLARFR"
+msgid "DOLLARFR"
 msgstr "DOLLARFR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
 #, fuzzy
-msgid  "DOLLARDE"
+msgid "DOLLARDE"
 msgstr "DOLLARDE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
 #, fuzzy
-msgid  "YIELD"
+msgid "YIELD"
 msgstr "YIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
 #, fuzzy
-msgid  "YIELDDISC"
+msgid "YIELDDISC"
 msgstr "YIELDDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
 #, fuzzy
-msgid  "YIELDMAT"
+msgid "YIELDMAT"
 msgstr "YIELDMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
 #, fuzzy
-msgid  "TBILLEQ"
+msgid "TBILLEQ"
 msgstr "TBILLEQ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
 #, fuzzy
-msgid  "TBILLPRICE"
+msgid "TBILLPRICE"
 msgstr "TBILLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
 #, fuzzy
-msgid  "TBILLYIELD"
+msgid "TBILLYIELD"
 msgstr "TBILLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
 #, fuzzy
-msgid  "ODDFPRICE"
+msgid "ODDFPRICE"
 msgstr "ODDFPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
 #, fuzzy
-msgid  "ODDFYIELD"
+msgid "ODDFYIELD"
 msgstr "ODDFYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
 #, fuzzy
-msgid  "ODDLPRICE"
+msgid "ODDLPRICE"
 msgstr "ODDLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
 #, fuzzy
-msgid  "ODDLYIELD"
+msgid "ODDLYIELD"
 msgstr "ODDLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
 #, fuzzy
-msgid  "XIRR"
+msgid "XIRR"
 msgstr "XIRR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
 #, fuzzy
-msgid  "XNPV"
+msgid "XNPV"
 msgstr "XNPV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
 #, fuzzy
-msgid  "INTRATE"
+msgid "INTRATE"
 msgstr "INTRATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
 #, fuzzy
-msgid  "COUPNCD"
+msgid "COUPNCD"
 msgstr "COUPNCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYS"
+msgid "COUPDAYS"
 msgstr "COUPDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYSNC"
+msgid "COUPDAYSNC"
 msgstr "COUPDAYSNC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYBS"
+msgid "COUPDAYBS"
 msgstr "COUPDAYBS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
 #, fuzzy
-msgid  "COUPPCD"
+msgid "COUPPCD"
 msgstr "COUPPCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
 #, fuzzy
-msgid  "COUPNUM"
+msgid "COUPNUM"
 msgstr "COUPNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
 #, fuzzy
-msgid  "FVSCHEDULE"
+msgid "FVSCHEDULE"
 msgstr "FVSCHEDULE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 #, fuzzy
-msgid  "ISEVEN"
+msgid "ISEVEN"
 msgstr "ISEVEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
 #, fuzzy
-msgid  "ISODD"
+msgid "ISODD"
 msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 #, fuzzy
-msgid  "GCD"
+msgid "GCD"
 msgstr "GCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
 #, fuzzy
-msgid  "LCM"
+msgid "LCM"
 msgstr "LCM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
 #, fuzzy
-msgid  "MULTINOMIAL"
+msgid "MULTINOMIAL"
 msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
 #, fuzzy
-msgid  "SERIESSUM"
+msgid "SERIESSUM"
 msgstr "SERIESSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 #, fuzzy
-msgid  "QUOTIENT"
+msgid "QUOTIENT"
 msgstr "QUOTIENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
 #, fuzzy
-msgid  "MROUND"
+msgid "MROUND"
 msgstr "MROUND"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
 #, fuzzy
-msgid  "SQRTPI"
+msgid "SQRTPI"
 msgstr "SQRTPI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
 #, fuzzy
-msgid  "RANDBETWEEN"
+msgid "RANDBETWEEN"
 msgstr "RANDBETWEEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
 #, fuzzy
-msgid  "BESSELI"
+msgid "BESSELI"
 msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
 #, fuzzy
-msgid  "BESSELJ"
+msgid "BESSELJ"
 msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
 #, fuzzy
-msgid  "BESSELK"
+msgid "BESSELK"
 msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
 #, fuzzy
-msgid  "BESSELY"
+msgid "BESSELY"
 msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 #, fuzzy
-msgid  "BIN2DEC"
+msgid "BIN2DEC"
 msgstr "BIN2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
 #, fuzzy
-msgid  "BIN2HEX"
+msgid "BIN2HEX"
 msgstr "BIN2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
 #, fuzzy
-msgid  "BIN2OCT"
+msgid "BIN2OCT"
 msgstr "BIN2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
 #, fuzzy
-msgid  "DELTA"
+msgid "DELTA"
 msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 #, fuzzy
-msgid  "DEC2BIN"
+msgid "DEC2BIN"
 msgstr "DEC2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
 #, fuzzy
-msgid  "DEC2HEX"
+msgid "DEC2HEX"
 msgstr "DEC2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 #, fuzzy
-msgid  "DEC2OCT"
+msgid "DEC2OCT"
 msgstr "DEC2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
 #, fuzzy
-msgid  "ERF"
+msgid "ERF"
 msgstr "ERF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
 #, fuzzy
-msgid  "ERFC"
+msgid "ERFC"
 msgstr "ERFC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
 #, fuzzy
-msgid  "GESTEP"
+msgid "GESTEP"
 msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 #, fuzzy
-msgid  "HEX2BIN"
+msgid "HEX2BIN"
 msgstr "HEX2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
 #, fuzzy
-msgid  "HEX2DEC"
+msgid "HEX2DEC"
 msgstr "HEX2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
 #, fuzzy
-msgid  "HEX2OCT"
+msgid "HEX2OCT"
 msgstr "HEX2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 #, fuzzy
-msgid  "IMABS"
+msgid "IMABS"
 msgstr "IMABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
 #, fuzzy
-msgid  "IMAGINARY"
+msgid "IMAGINARY"
 msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 #, fuzzy
-msgid  "IMPOWER"
+msgid "IMPOWER"
 msgstr "IMPOWER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
 #, fuzzy
-msgid  "IMARGUMENT"
+msgid "IMARGUMENT"
 msgstr "IMARGUMENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
 #, fuzzy
-msgid  "IMCOS"
+msgid "IMCOS"
 msgstr "IMCOS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
 #, fuzzy
-msgid  "IMDIV"
+msgid "IMDIV"
 msgstr "IMDIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
 #, fuzzy
-msgid  "IMEXP"
+msgid "IMEXP"
 msgstr "IMEXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
 #, fuzzy
-msgid  "IMCONJUGATE"
+msgid "IMCONJUGATE"
 msgstr "IMCONJUGATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
 #, fuzzy
-msgid  "IMLN"
+msgid "IMLN"
 msgstr "IMLN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
 #, fuzzy
-msgid  "IMLOG10"
+msgid "IMLOG10"
 msgstr "IMLOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
 #, fuzzy
-msgid  "IMLOG2"
+msgid "IMLOG2"
 msgstr "IMLOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
 #, fuzzy
-msgid  "IMPRODUCT"
+msgid "IMPRODUCT"
 msgstr "IMPRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
 #, fuzzy
-msgid  "IMREAL"
+msgid "IMREAL"
 msgstr "IMREAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
 #, fuzzy
-msgid  "IMSIN"
+msgid "IMSIN"
 msgstr "IMSIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
 #, fuzzy
-msgid  "IMSUB"
+msgid "IMSUB"
 msgstr "IMSUB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
 #, fuzzy
-msgid  "IMSUM"
+msgid "IMSUM"
 msgstr "IMSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
 #, fuzzy
-msgid  "IMSQRT"
+msgid "IMSQRT"
 msgstr "IMSQRT"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid "IMCOT"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid "IMSINH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid "IMCOSH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid "IMCSCH"
+msgstr ""
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
 #, fuzzy
-msgid  "COMPLEX"
+msgid "COMPLEX"
 msgstr "COMPLEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 #, fuzzy
-msgid  "OCT2BIN"
+msgid "OCT2BIN"
 msgstr "OCT2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
 #, fuzzy
-msgid  "OCT2DEC"
+msgid "OCT2DEC"
 msgstr "OCT2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
 #, fuzzy
-msgid  "OCT2HEX"
+msgid "OCT2HEX"
 msgstr "OCT2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
 #, fuzzy
-msgid  "CONVERT"
+msgid "CONVERT"
 msgstr "CONVERT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
 #, fuzzy
-msgid  "FACTDOUBLE"
+msgid "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr "გვიჩვენებს თარიღის სერიულ ნომერს სამუშაო დღეების განსაზღვრულ რაოდენობამდე ან შემდეგ.  "
+msgid "Returns the serial number of the date before or after a specified number of workdays"
+msgstr ""
+"გვიჩვენებს თარიღის სერიულ ნომერს სამუშაო დღეების განსაზღვრულ რაოდენობამდე ან "
+"შემდეგ.  "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
 #, fuzzy
-msgid  "Start date"
+msgid "Start date"
 msgstr "საწყისი თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 #, fuzzy
-msgid  "The start date"
+msgid "The start date"
 msgstr "საწყისი თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
 #, fuzzy
-msgid  "Days"
+msgid "Days"
 msgstr "დღეები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
 #, fuzzy
-msgid  "The number of workdays before or after the start date"
+msgid "The number of workdays before or after the start date"
 msgstr "სამუშაო დღეების რაოდენობა დაწყების თარიღამდე ან შემდეგ."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 #, fuzzy
-msgid  "Holidays"
+msgid "Holidays"
 msgstr "დღესასწაულები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
 #, fuzzy
-msgid  "List of date values of days off (vacation, holidays, etc.)"
+msgid "List of date values of days off (vacation, holidays, etc.)"
 msgstr "დასვენების დღეების თარიღთა სიდიდის სია (შვებულება, დღესასწუალები)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr "გვიჩვენებს სრული დღეების რაოდენობას 'დაწყების თარიღსა' და 'დასრულების თარიღს' შორის როგორც წლის ნაწილს. "
+msgid "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
+msgstr ""
+"გვიჩვენებს სრული დღეების რაოდენობას 'დაწყების თარიღსა' და 'დასრულების "
+"თარიღს' შორის როგორც წლის ნაწილს. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "საწყისი თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
 #, fuzzy
-msgid  "End date"
+msgid "End date"
 msgstr "ბოლო თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
 #, fuzzy
-msgid  "The end date"
+msgid "The end date"
 msgstr "ბოლო თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 #, fuzzy
-msgid  "Basis"
+msgid "Basis"
 msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
 #, fuzzy
-msgid  "Basis for determining the interest days"
+msgid "Basis for determining the interest days"
 msgstr "ინტერესის დღეების განსაზღვრის ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "გვიჩვენებს თარიღის სერიულ ნომერს, რაც წარმოადგენს განსაზღვრული თვეების რაოდენობას დაწყების თარიღამდე ან შემდეგ."
+msgid "Returns the serial number of the date that is a specified number of months before or after the start date"
+msgstr ""
+"გვიჩვენებს თარიღის სერიულ ნომერს, რაც წარმოადგენს განსაზღვრული თვეების "
+"რაოდენობას დაწყების თარიღამდე ან შემდეგ."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "საწყისი თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
 #, fuzzy
-msgid  "Months"
+msgid "Months"
 msgstr "თვეები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of months before or after the start date"
+msgid "Number of months before or after the start date"
 msgstr "თვეების რაოდენობა საწყის თარიღამდე ან მის შემდეგ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "გვიჩვენებს კალენდრული კვირის რაოდენობას, რომელშიც მოცემულია განსაზღვრული თარიღი. "
+msgid "Returns the number of the calendar week in which the specified date occurs."
+msgstr ""
+"გვიჩვენებს კალენდრული კვირის რაოდენობას, რომელშიც მოცემულია განსაზღვრული "
+"თარიღი. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
 #, fuzzy
-msgid  "The date"
+msgid "The date"
 msgstr "თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
 #, fuzzy
-msgid  "Return type"
+msgid "Return type"
 msgstr "ჩვენების ტიპი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
 #, fuzzy
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
+msgid "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "რიცხვი 1-დან 3-მდე, რომელიც განსაზღვრავს დღეს, რომლითაც იწყება კვირა. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "გვიჩვენებს იმ თვის ბოლო დღის სერიულ ნომერს, რომელიც დაწყების თარიღამდე თვეების განსაზღვრული რაოდენობით ადრე ან შემდეგ ხდება."
+msgid "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
+msgstr ""
+"გვიჩვენებს იმ თვის ბოლო დღის სერიულ ნომერს, რომელიც დაწყების თარიღამდე "
+"თვეების განსაზღვრული რაოდენობით ადრე ან შემდეგ ხდება."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
+#, fuzzy
+msgid "Months"
+msgstr "თვეები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
+#, fuzzy
+msgid "Number of months before or after the start date"
+msgstr "თვეების რაოდენობა საწყის თარიღამდე ან მის შემდეგ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of workdays between two dates"
+msgid "Returns the number of workdays between two dates"
 msgstr "გვიჩვენებს ორ თარიღს შორის არსებული სამუშაო დღეების რაოდენობას. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "საწყისი თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "ბოლო თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
+#, fuzzy
+msgid "The end date"
+msgstr "ბოლო თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
+#, fuzzy
+msgid "Holidays"
+msgstr "დღესასწაულები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
 #, fuzzy
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
+msgid "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "დასვენების დღეების თარიღთა სიდიდე (შვებულება, დღესასწაულები, ა.შ.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the value 'true' if the number is even"
+msgid "Returns the value 'true' if the number is even"
 msgstr "გვიჩვენებს სიდიდე 'true'-ს, თუ რიცხვი ლუწია."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
 #, fuzzy
-msgid  "Number"
+msgid "Number"
 msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
 #, fuzzy
-msgid  "The number"
+msgid "The number"
 msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the value 'true' if the number is odd"
+msgid "Returns the value 'true' if the number is odd"
 msgstr "გვიჩვენებს სიდიდე 'true'-ს თუ რიცხვი კენტია. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the multinomial coefficient of a set of numbers"
+msgid "Returns the multinomial coefficient of a set of numbers"
 msgstr "გვიჩვენებს რიცხვების კრებულის მრავალწევრ კოეფიციენტს"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 #, fuzzy
-msgid  "Number(s)"
+msgid "Number(s)"
 msgstr "რიცხვ(ები)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
 #, fuzzy
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
+msgid "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "რიცხვი ან რიცხვების სია, რომელთათვისაც გსურთ მრავალწევრა კოეფიციენტი. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sum of a power series"
+msgid "Returns the sum of a power series"
 msgstr "გვიჩვენებს ხარისხობრივი მწკრივის ჯამს"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 #, fuzzy
-msgid  "X"
+msgid "X"
 msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
 #, fuzzy
-msgid  "The independent variable of the power series"
+msgid "The independent variable of the power series"
 msgstr "მათემატიკური ხარისხობრივი მწკრივის დამოუკიდებელი ცვლადი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 #, fuzzy
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
 #, fuzzy
-msgid  "The initial power to which x is to be raised"
+msgid "The initial power to which x is to be raised"
 msgstr "საწყისი ხარისხი, რომლამდეც უნდა გაიზარდოს x"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
 #, fuzzy
-msgid  "M"
+msgid "M"
 msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
 #, fuzzy
-msgid  "The increment by which to increase n for each term in the series"
+msgid "The increment by which to increase n for each term in the series"
 msgstr "n -ის მატების ხარისხი მწკრივის თვითეულ დონეზე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
 #, fuzzy
-msgid  "Coefficients"
+msgid "Coefficients"
 msgstr "კოეფიციენტები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
 #, fuzzy
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "კოეფიციენტების კრებული, რომელზეც მრავლდება ცვლადი x-ის ყოველი შემდეგი ხარისხი. "
+msgid "Set of coefficients by which each successive power of the variable x is multiplied"
+msgstr ""
+"კოეფიციენტების კრებული, რომელზეც მრავლდება ცვლადი x-ის ყოველი შემდეგი "
+"ხარისხი. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the integer portion of a division"
+msgid "Returns the integer portion of a division"
 msgstr "გვიჩვენებს გაყოფის მთელ ნაწილს"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 #, fuzzy
-msgid  "Numerator"
+msgid "Numerator"
 msgstr "მრიცხველი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
 #, fuzzy
-msgid  "The dividend"
+msgid "The dividend"
 msgstr "გასაყოფი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
 #, fuzzy
-msgid  "Denominator"
+msgid "Denominator"
 msgstr "მნიშვნელი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 #, fuzzy
-msgid  "The divisor"
+msgid "The divisor"
 msgstr "გამყოფი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a number rounded to a specified multiple"
+msgid "Returns a number rounded to a specified multiple"
 msgstr "გვიჩვენებს განსაზღვრულ ჯერადამდე დამრგვალებულ რიცხვს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 #, fuzzy
-msgid  "The number to round off"
+msgid "The number to round off"
 msgstr "რიცხვი, რომლამდეც ხდება დამრგვალება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
 #, fuzzy
-msgid  "Multiple"
+msgid "Multiple"
 msgstr "ჯერადი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
 #, fuzzy
-msgid  "The multiple to which you want to round number"
+msgid "The multiple to which you want to round number"
 msgstr "ჯერადი, რომლამდეც გსურთ რიცხვის დამრგვალება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the square root of a number which has been multiplied by pi"
+msgid "Returns the square root of a number which has been multiplied by pi"
 msgstr "გვიჩვენებს pi-ზე გამრავლებული რიცხვის კვადრატულ ფესვსს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
 #, fuzzy
-msgid  "The number by which pi is multiplied"
+msgid "The number by which pi is multiplied"
 msgstr "რიცხვი, რომელზეც მრავლდება pi"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a random integer between the numbers you specify"
-msgstr "გვიჩვენებს შემთხვევით არჩეულ მთელ რიცხვს თქვენს მიერ განსაზღვრულ რიცხვებს შორის. "
+msgid "Returns a random integer between the numbers you specify"
+msgstr ""
+"გვიჩვენებს შემთხვევით არჩეულ მთელ რიცხვს თქვენს მიერ განსაზღვრულ რიცხვებს "
+"შორის. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
 #, fuzzy
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "ბოლო"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
 #, fuzzy
-msgid  "The smallest integer returned"
+msgid "The smallest integer returned"
 msgstr "ნაჩვენები უმცირესი მთელი რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
 #, fuzzy
-msgid  "Top"
+msgid "Top"
 msgstr "დასაწყისი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
 #, fuzzy
-msgid  "The largest integer returned"
+msgid "The largest integer returned"
 msgstr "ნაჩვენები უდიდესი მთელი რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the greatest common divisor"
+msgid "Returns the greatest common divisor"
 msgstr "გვიჩვენებს უდიდეს საერთო გამყოფს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
+#, fuzzy
+msgid "Number(s)"
+msgstr "რიცხვ(ები)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 #, fuzzy
-msgid  "Number or list of numbers"
+msgid "Number or list of numbers"
 msgstr "რიცხვების რაოდენობა ან სია"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the least common multiple"
+msgid "Returns the least common multiple"
 msgstr "გვიჩვენებს უმცირეს საერთო ჯერადს. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
+#, fuzzy
+msgid "Number(s)"
+msgstr "რიცხვ(ები)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
+#, fuzzy
+msgid "Number or list of numbers"
+msgstr "რიცხვების რაოდენობა ან სია"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the modified Bessel function In(x)"
+msgid "Returns the modified Bessel function In(x)"
 msgstr "გვიჩვენებს ბესელის შეცვლილ ფუნქციას In(x)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 #, fuzzy
-msgid  "The value at which the function is to be evaluated"
+msgid "The value at which the function is to be evaluated"
 msgstr "მნიშვნელობა, რომლითაც უნდა შეფასდეს ფუნქცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 #, fuzzy
-msgid  "The order of the Bessel function"
+msgid "The order of the Bessel function"
 msgstr "ბესელის ფუნქციის რიგი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Jn(x)"
+msgid "Returns the Bessel function Jn(x)"
 msgstr "გვიჩვენებს ბესელის ფუნქციას Jn(x)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "მნიშვნელობა, რომლითაც უნდა შეფასდეს ფუნქცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ბესელის ფუნქციის რიგი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Kn(x)"
+msgid "Returns the Bessel function Kn(x)"
 msgstr "გვიჩვენებს ბესელის ფუნქციას Kn(x)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "მნიშვნელობა, რომლითაც უნდა შეფასდეს ფუნქცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ბესელის ფუნქციის რიგი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Yn(x)"
+msgid "Returns the Bessel function Yn(x)"
 msgstr "გვიჩვენებს ბესელის ფუნქციას Yn(x)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "მნიშვნელობა, რომლითაც უნდა შეფასდეს ფუნქცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ბესელის ფუნქციის რიგი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to an octal number"
+msgid "Converts a binary number to an octal number"
 msgstr "ბინარული რიცხვის კონვერტირება რვაობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The binary number to be converted (as text)"
+msgid "The binary number to be converted (as text)"
 msgstr "ბინარული რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
 #, fuzzy
-msgid  "Places"
+msgid "Places"
 msgstr "წილადები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of places used"
+msgid "Number of places used"
 msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to a decimal number"
+msgid "Converts a binary number to a decimal number"
 msgstr "ბინარული რიცხვის კონვერტირება ათობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The binary number to be converted (as text)"
+msgstr "ბინარული რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to a hexadecimal number"
+msgid "Converts a binary number to a hexadecimal number"
 msgstr "ბინარული რიცხვის კონვერტირება თექსვსმეტობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The binary number to be converted (as text)"
+msgstr "ბინარული რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of places used."
+msgid "Number of places used."
 msgstr "გამოყენებული ადგილების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a binary number"
+msgid "Converts an octal number to a binary number"
 msgstr "რვაობითი ჩაწერის რიცხვის კონვერტირება ბინარულ რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The octal number to be converted (as text)"
+msgid "The octal number to be converted (as text)"
 msgstr "რვაობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a decimal number"
+msgid "Converts an octal number to a decimal number"
 msgstr "რვაობითი ჩაწერის რიცხვის კონვერტირება ათობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The octal number to be converted (as text)"
+msgstr "რვაობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a hexadecimal number"
+msgid "Converts an octal number to a hexadecimal number"
 msgstr "რვაობითი ჩაწერის რიცხვის კონვერტირება თექვსმეტობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The octal number to be converted (as text)"
+msgstr "რვაობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმნას (ტექსტად)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number to a binary number"
+msgid "Converts a decimal number to a binary number"
 msgstr "ათობითი ჩაწერის რიცხვის კონვერტირება ბინარულ რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The decimal integer to be converted"
+msgid "The decimal integer to be converted"
 msgstr "ათობითი ჩაწერის მთელი რიცხვი, რომელიც უნდა გარდაიქმნას"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number to a hexadecimal number"
+msgid "Converts a decimal number to a hexadecimal number"
 msgstr "ათობითი ჩაწერის რიცხვის კონვერტირება თექვსმეტობითი ჩაწერის რიცხვად."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The decimal integer to be converted"
+msgstr "ათობითი ჩაწერის მთელი რიცხვი, რომელიც უნდა გარდაიქმნას"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number into an octal number"
+msgid "Converts a decimal number into an octal number"
 msgstr "ათობითი ჩაწერის რიცხვის კონვერტირება რვაობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The decimal number"
+msgid "The decimal number"
 msgstr "ათობითი ჩაწერის რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to a binary number"
+msgid "Converts a hexadecimal number to a binary number"
 msgstr "თექვსმეტობითი ჩაწერის რიცხვის კონვერტირება ბინარულ რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The hexadecimal number to be converted (as text)"
+msgid "The hexadecimal number to be converted (as text)"
 msgstr "თექვსმეტობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმანს (ტექსტად)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to a decimal number"
+msgid "Converts a hexadecimal number to a decimal number"
 msgstr "თექვსმეტობითი რიცხვის კონვერტირება ათობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "თექვსმეტობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმანს (ტექსტად)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to an octal number"
+msgid "Converts a hexadecimal number to an octal number"
 msgstr "თექსვმეტობითი ჩაწერის რიცხვის კონვერტირება რვაობითი ჩაწერის რიცხვად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
+#, fuzzy
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "თექვსმეტობითი ჩაწერის რიცხვი, რომელიც უნდა გარდაიქმანს (ტექსტად)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "წილადები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "გამოყენებული წილადების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
 #, fuzzy
-msgid  "Tests whether two values are equal"
+msgid "Tests whether two values are equal"
 msgstr "ამოწმებს ორი სიდიდის ტოლობას. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
 #, fuzzy
-msgid  "Number 1"
+msgid "Number 1"
 msgstr "Number 1"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
 #, fuzzy
-msgid  "The first number"
+msgid "The first number"
 msgstr "პირველი რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
 #, fuzzy
-msgid  "Number 2"
+msgid "Number 2"
 msgstr "Number 2"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
 #, fuzzy
-msgid  "The second number"
+msgid "The second number"
 msgstr "მეორე რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the error function"
+msgid "Returns the error function"
 msgstr "გვიჩვენებს შეცდომის ფუნქციას"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 #, fuzzy
-msgid  "Lower limit"
+msgid "Lower limit"
 msgstr "ქვედა ლიმიტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
 #, fuzzy
-msgid  "The lower limit for integration"
+msgid "The lower limit for integration"
 msgstr "ქვედა ლიმიტი გაინტეგრალებისთვის"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
 #, fuzzy
-msgid  "Upper limit"
+msgid "Upper limit"
 msgstr "ზედა ლიმიტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
 #, fuzzy
-msgid  "The upper limit for integration"
+msgid "The upper limit for integration"
 msgstr "ზედა ლიმიტი ინტეგრირებისთვის"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the complementary error function"
+msgid "Returns the complementary error function"
 msgstr "გვიჩვენებს დამატებით შეცდომის ფუნქციას"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
+#, fuzzy
+msgid "Lower limit"
+msgstr "ქვედა ლიმიტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
+#, fuzzy
+msgid "The lower limit for integration"
+msgstr "ქვედა ლიმიტი გაინტეგრალებისთვის"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
 #, fuzzy
-msgid  "Tests whether a number is greater than a threshold value"
+msgid "Tests whether a number is greater than a threshold value"
 msgstr "ამოწმებს ზღვრულ სიდიდეზე დიდია თუ არა რიცხვი. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
 #, fuzzy
-msgid  "The value to test against step"
+msgid "The value to test against step"
 msgstr "ოპერაციის საწინააღმდეგო სიდიდის შემოწმება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
 #, fuzzy
-msgid  "Step"
+msgid "Step"
 msgstr "ოპერაცია"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
 #, fuzzy
-msgid  "The threshhold value"
+msgid "The threshhold value"
 msgstr "ზღვრული სიდიდე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the double factorial of Number"
+msgid "Returns the double factorial of Number"
 msgstr "გვიჩვენებს რიცხვის ორმაგ ფაქტორიალს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the absolute value (modulus) of a complex number"
+msgid "Returns the absolute value (modulus) of a complex number"
 msgstr "გვიჩვენებს რთული რიცხვის აბსოლუტურ სიდიდეს (მოდულუსი)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
-#, fuzzy
-msgid  "Complex number"
+msgid "Complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 #, fuzzy
-msgid  "The complex number"
+msgid "The complex number"
 msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the imaginary coefficient of a complex number"
+msgid "Returns the imaginary coefficient of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის წარმოსახვით კოეფიციენტს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a complex number raised to an integer power"
+msgid "Returns a complex number raised to an integer power"
 msgstr "გვიჩვენებს მთლიან ხარისხამდე აყვანილ შედგენილ რიცხვს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
 #, fuzzy
-msgid  "Power to which the complex number is raised"
+msgid "Power to which the complex number is raised"
 msgstr "ხარისხი, რომლამდეც აიყვანება შედგენილი რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the argument theta, an angle expressed in radians"
+msgid "Returns the argument theta, an angle expressed in radians"
 msgstr "გვიჩვენებს არგუმენტ თეტას, რადიანებში გამოსახულ კუთხეს"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
-#, fuzzy
-msgid  "A complex number"
+msgid "A complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cosine of a complex number"
+msgid "Returns the cosine of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის კოსინუსს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the quotient of two complex numbers"
+msgid "Returns the quotient of two complex numbers"
 msgstr "გვიჩვენებს ორი შედგენილი რიცხვის კოეფიციენტს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
+#, fuzzy
+msgid "Numerator"
+msgstr "მრიცხველი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
+#, fuzzy
+msgid "The dividend"
+msgstr "გასაყოფი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
+#, fuzzy
+msgid "Denominator"
+msgstr "მნიშვნელი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "გამყოფი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the algebraic form of the exponential of a complex number"
+msgid "Returns the algebraic form of the exponential of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის ექსპონენციალის ალგებრულ ფორმას"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the complex conjugate of a complex number"
+msgid "Returns the complex conjugate of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის შედგენილ შეუღლებულს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the natural logarithm of a complex number"
+msgid "Returns the natural logarithm of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის ნატურალურ ლოგარითმს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the base-10 logarithm of a complex number"
+msgid "Returns the base-10 logarithm of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის ლოგარითმს ათობითი ფუძით"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the base-2 logarithm of a complex number"
+msgid "Returns the base-2 logarithm of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის ლოგარითმს ორობითი ფუძით"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the product of several complex numbers"
+msgid "Returns the product of several complex numbers"
 msgstr "გვიჩვენებს რამდენიმე შედგენილი რიცხვის ნამრავლს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The first complex number"
+msgid "The first complex number"
 msgstr "პირველი შედგენილი რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
+msgid "Complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
 #, fuzzy
-msgid  "Another complex number"
+msgid "Another complex number"
 msgstr "სხვა შედგენილი რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the real coefficient of a complex number"
+msgid "Returns the real coefficient of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის რეალურ კოეფიციენტს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sine of a complex number"
+msgid "Returns the sine of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის სინუსს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the difference of two complex numbers"
+msgid "Returns the difference of two complex numbers"
 msgstr "გვიჩვენებს ორი შედგენილი რიცხვის სხვაობას"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 #, fuzzy
-msgid  "Complex number 1"
+msgid "Complex number 1"
+msgstr "რთული რიცხვი 1"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
+#, fuzzy
+msgid "Complex number 1"
 msgstr "რთული რიცხვი 1"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
 #, fuzzy
-msgid  "Complex number 2"
+msgid "Complex number 2"
+msgstr "რთული რიცხვი 2"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
+#, fuzzy
+msgid "Complex number 2"
 msgstr "რთული რიცხვი 2"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the square root of a complex number"
+msgid "Returns the square root of a complex number"
 msgstr "გვიჩვენებს შედგენილი რიცხვის კვადრატულ ფესვსს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sum of complex numbers"
+msgid "Returns the sum of complex numbers"
 msgstr "გვიჩვენებს შედგენილი რიცხვების ჯამს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "რთული რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid "Returns the tangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid "Returns the secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid "Returns the cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid "Returns the cotangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid "Returns the hyperbolic sine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid "Returns the hyperbolic secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts real and imaginary coefficients into a complex number"
+msgid "Converts real and imaginary coefficients into a complex number"
 msgstr "გადაჰყავს რეალური და წარმოსახვითი კოეფიციენტები შედგენილ რიცხვად"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
 #, fuzzy
-msgid  "Real num"
+msgid "Real num"
 msgstr "რეალური რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
 #, fuzzy
-msgid  "The real coefficient"
+msgid "The real coefficient"
 msgstr "რეალური კოეფიციენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
 #, fuzzy
-msgid  "I num"
+msgid "I num"
 msgstr "I num"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
 #, fuzzy
-msgid  "The imaginary coefficient"
+msgid "The imaginary coefficient"
 msgstr "წარმოსახვითი კოეფიციენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
 #, fuzzy
-msgid  "Suffix"
+msgid "Suffix"
 msgstr "სუფიქსი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
 #, fuzzy
-msgid  "The suffix"
+msgid "The suffix"
 msgstr "სუფიქსი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a number from one measurement system to another"
+msgid "Converts a number from one measurement system to another"
 msgstr "გადაჰყავს რიცხვი ერთი საზომი სისტემიდან მეორეში"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "რიცხვი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
 #, fuzzy
-msgid  "From unit"
+msgid "From unit"
 msgstr "ერთეულიდან"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
 #, fuzzy
-msgid  "Unit of measure for number"
+msgid "Unit of measure for number"
 msgstr "რიცხვის საზომი ერთეული"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
 #, fuzzy
-msgid  "To unit"
+msgid "To unit"
 msgstr "ერთეულზე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
 #, fuzzy
-msgid  "Unit of measure for the result"
+msgid "Unit of measure for the result"
 msgstr "საზომი ერთეული შედეგისთვის"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "გვიჩვენებს აქტივის პროპორციულ რიგობით გაუფასურებას თითოეული საანგარიშო პერიოდისთვის"
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"გვიჩვენებს აქტივის პროპორციულ რიგობით გაუფასურებას თითოეული საანგარიშო "
+"პერიოდისთვის"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
 #, fuzzy
-msgid  "Cost"
+msgid "Cost"
 msgstr "ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
 #, fuzzy
-msgid  "Cost of the asset"
+msgid "Cost of the asset"
 msgstr "აქტივის ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
 #, fuzzy
-msgid  "Date purchased"
+msgid "Date purchased"
 msgstr "შეძენის თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
 #, fuzzy
-msgid  "Purchase date of the asset"
+msgid "Purchase date of the asset"
 msgstr "აქტივის შეძენის თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
 #, fuzzy
-msgid  "First period"
+msgid "First period"
 msgstr "პირველი პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
 #, fuzzy
-msgid  "Date the first period ends"
+msgid "Date the first period ends"
 msgstr "პირველი პერიოდის დასრულების თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
 #, fuzzy
-msgid  "Salvage"
+msgid "Salvage"
 msgstr "ნარჩენი ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
 #, fuzzy
-msgid  "Salvage value of an asset at the end of its life"
+msgid "Salvage value of an asset at the end of its life"
 msgstr "აქტივის დასრულებისას მისი გადარჩენილი ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
 #, fuzzy
-msgid  "Period"
+msgid "Period"
 msgstr "პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 #, fuzzy
-msgid  "The period"
+msgid "The period"
 msgstr "პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
 #, fuzzy
-msgid  "Rate"
+msgid "Rate"
 msgstr "პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
 #, fuzzy
-msgid  "The rate of depreciation"
+msgid "The rate of depreciation"
 msgstr "გაუფასურების პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
 #, fuzzy
-msgid  "The year basis to be used"
+msgid "The year basis to be used"
 msgstr "საბაზო წელიწადი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
+#, fuzzy
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"გვიჩვენებს აქტივის პროპორციულ რიგობით გაუფასურებას თითოეული საანგარიშო "
+"პერიოდისთვის"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
+#, fuzzy
+msgid "Cost"
+msgstr "ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
+#, fuzzy
+msgid "Cost of the asset"
+msgstr "აქტივის ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
+#, fuzzy
+msgid "Date purchased"
+msgstr "შეძენის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
+#, fuzzy
+msgid "Purchase date of the asset"
+msgstr "აქტივის შეძენის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
+#, fuzzy
+msgid "First period"
+msgstr "პირველი პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
 #, fuzzy
-msgid  "The date the first period ends"
+msgid "The date the first period ends"
 msgstr "პირველი პერიოდის დასრულების თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
+#, fuzzy
+msgid "Salvage"
+msgstr "ნარჩენი ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
 #, fuzzy
-msgid  "The salvage value of an asset at the end of its life"
+msgid "The salvage value of an asset at the end of its life"
 msgstr "აქტივის დასრულებისას მისი გადარჩენილი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
+#, fuzzy
+msgid "Period"
+msgstr "პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
+#, fuzzy
+msgid "The period"
+msgstr "პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
+#, fuzzy
+msgid "The rate of depreciation"
+msgstr "გაუფასურების პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
+#, fuzzy
+msgid "The year basis to be used"
+msgstr "საბაზო წელიწადი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "გვიჩვენებს ნამატ პროცენტს გარანტიისთვის, რომელიც იხდის პერიოდულ პროცენტს."
+msgid "Returns the accrued interest for a security that pays periodic interest"
+msgstr ""
+"გვიჩვენებს ნამატ პროცენტს გარანტიისთვის, რომელიც იხდის პერიოდულ პროცენტს."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 #, fuzzy
-msgid  "Issue"
+msgid "Issue"
 msgstr "გაცემა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
 #, fuzzy
-msgid  "Issue date of the security"
+msgid "Issue date of the security"
 msgstr "გარანტიის გაცემის თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
 #, fuzzy
-msgid  "First interest"
+msgid "First interest"
 msgstr "პირველი პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
 #, fuzzy
-msgid  "First interest date of the security"
+msgid "First interest date of the security"
 msgstr "გარანტიის პირველი საპროცენტო დღე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 #, fuzzy
-msgid  "Settlement"
+msgid "Settlement"
 msgstr "ანგარიშსწორება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
 #, fuzzy
-msgid  "The settlement"
+msgid "The settlement"
 msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
 #, fuzzy
-msgid  "The rate"
+msgid "The rate"
 msgstr "პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
 #, fuzzy
-msgid  "Par"
+msgid "Par"
 msgstr "ნომინალი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
 #, fuzzy
-msgid  "The par value"
+msgid "The par value"
 msgstr "ნომინალური ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
 #, fuzzy
-msgid  "Frequency"
+msgid "Frequency"
 msgstr "სიხშირე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 #, fuzzy
-msgid  "The frequency"
+msgid "The frequency"
 msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
 #, fuzzy
-msgid  "The basis"
+msgid "The basis"
 msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr "გვიჩვენებს ნამატ პროცენტს გარანტიისთვის, რომელიც იხდის პროცენტს სიმწიფისას. "
+msgid "Returns the accrued interest for a security that pays interest at maturity"
+msgstr ""
+"გვიჩვენებს ნამატ პროცენტს გარანტიისთვის, რომელიც იხდის პროცენტს სიმწიფისას. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "გაცემა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 #, fuzzy
-msgid  "The issue date"
+msgid "The issue date"
 msgstr "გაცემის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
+#, fuzzy
+msgid "Par"
+msgstr "ნომინალი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
+#, fuzzy
+msgid "The par value"
+msgstr "ნომინალური ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "გვიჩვენებს სიმწიფისას მთლიანად გადახილი თანხის რაოდენობას ინვესტირების სრული გარანტიისთვის. "
+msgid "Returns the amount paid out at maturity for a fully invested security"
+msgstr ""
+"გვიჩვენებს სიმწიფისას მთლიანად გადახილი თანხის რაოდენობას ინვესტირების სრული "
+"გარანტიისთვის. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
 #, fuzzy
-msgid  "Maturity"
+msgid "Maturity"
 msgstr "სიმწიფე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 #, fuzzy
-msgid  "The maturity"
+msgid "The maturity"
 msgstr "სიმწიფე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
 #, fuzzy
-msgid  "Investment"
+msgid "Investment"
 msgstr "ინვესტიცია"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
 #, fuzzy
-msgid  "The investment"
+msgid "The investment"
 msgstr "ინვესტიცია"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
 #, fuzzy
-msgid  "Discount"
+msgid "Discount"
 msgstr "დისკონტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
 #, fuzzy
-msgid  "The discount"
+msgid "The discount"
 msgstr "დისკონტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the discount rate for a security"
+msgid "Returns the discount rate for a security"
 msgstr "გვიჩვენებს დისკონტის განაკვეთს გარანტიისთვის"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 #, fuzzy
-msgid  "Price"
+msgid "Price"
 msgstr "ფასი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
 #, fuzzy
-msgid  "The price"
+msgid "The price"
 msgstr "ფასი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
 #, fuzzy
-msgid  "Redemption"
+msgid "Redemption"
 msgstr "გამოსყიდვა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
 #, fuzzy
-msgid  "The redemption value"
+msgid "The redemption value"
 msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "გვიჩვენებს გარანტიის წლიურ მაკალეი ხანგრძლივობას პერიოდული პროცენტების გადახდით. "
+msgid "Returns the annual Macaulay duration of a security with periodic interest payments"
+msgstr ""
+"გვიჩვენებს გარანტიის წლიურ მაკალეი ხანგრძლივობას პერიოდული პროცენტების "
+"გადახდით. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
 #, fuzzy
-msgid  "Coupon"
+msgid "Coupon"
 msgstr "კუპონი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 #, fuzzy
-msgid  "The coupon rate"
+msgid "The coupon rate"
 msgstr "კუპონის პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
 #, fuzzy
-msgid  "Yield"
+msgid "Yield"
 msgstr "მოგება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
 #, fuzzy
-msgid  "The yield"
+msgid "The yield"
 msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the effective annual interest rate"
+msgid "Returns the effective annual interest rate"
 msgstr "გვიჩვენებს რეალურ წლიურ საპროცენტო განაკვეთს"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
 #, fuzzy
-msgid  "Nominal rate"
+msgid "Nominal rate"
 msgstr "ნომინალური განაკვეთი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
 #, fuzzy
-msgid  "The nominal rate"
+msgid "The nominal rate"
 msgstr "ნომინალური განაკვეთი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 #, fuzzy
-msgid  "Npery"
+msgid "Npery"
 msgstr "Npery"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 #, fuzzy
-msgid  "The periods"
+msgid "The periods"
 msgstr "პერიოდები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
+msgid "Returns the cumulative principal on a loan to be paid between two periods"
 msgstr "გვიჩვენებს რა მთლიანი თანხაა გადასახდელი სესხზე ორ პერიოდს შორის "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
 #, fuzzy
-msgid  "Nper"
+msgid "Nper"
 msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of payment periods"
+msgid "Number of payment periods"
 msgstr "გადახდის პერიოდების რაოდენობა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
 #, fuzzy
-msgid  "Pv"
+msgid "Pv"
 msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 #, fuzzy
-msgid  "The present value"
+msgid "The present value"
 msgstr "არსებული ღირებულება"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
 #, fuzzy
-msgid  "Start period"
+msgid "Start period"
 msgstr "საწყისი პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 #, fuzzy
-msgid  "The start period"
+msgid "The start period"
 msgstr "საწყისი პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
 #, fuzzy
-msgid  "End period"
+msgid "End period"
 msgstr "საბოლოო პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
 #, fuzzy
-msgid  "The end period"
+msgid "The end period"
 msgstr "საბოლოო პერიოდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ტიპი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
 #, fuzzy
-msgid  "The type of maturity"
+msgid "The type of maturity"
 msgstr "სიმწიფის ტიპი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cumulative interest to be paid between two periods"
+msgid "Returns the cumulative interest to be paid between two periods"
 msgstr "გვიჩვენებს რა საერთო პროცენტია გადასახდელი ორ პერიოდს შორის. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
+#, fuzzy
+msgid "Nper"
+msgstr "Nper"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of payment periods"
+msgstr "გადახდის პერიოდების რაოდენობა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
+#, fuzzy
+msgid "Pv"
+msgstr "Pv"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
+#, fuzzy
+msgid "The present value"
+msgstr "არსებული ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
+#, fuzzy
+msgid "Start period"
+msgstr "საწყისი პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
+#, fuzzy
+msgid "The start period"
+msgstr "საწყისი პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
+#, fuzzy
+msgid "End period"
+msgstr "საბოლოო პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
+#, fuzzy
+msgid "The end period"
+msgstr "საბოლოო პერიოდი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ტიპი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
+#, fuzzy
+msgid "The type of maturity"
+msgstr "სიმწიფის ტიპი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "გვიჩვენებს ფასს გარანტიის 100 სავალუტო ერთეულის ნომინალურ ღირებულებაზე,რომელიც იხდის პერიოდულ პროცენტს."
+msgid "Returns the price per 100 currency units face value of a security that pays periodic interest"
+msgstr ""
+"გვიჩვენებს ფასს გარანტიის 100 სავალუტო ერთეულის ნომინალურ "
+"ღირებულებაზე,რომელიც იხდის პერიოდულ პროცენტს."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr "გვიჩვენებს ფასს გარანტიის 100 სავალუტო ერთეულის ნომინალურ ღირებულებაზე დისკონტირებულ გარანტიაზე"
+msgid "Returns the price per 100 currency units face value of a discounted security"
+msgstr ""
+"გვიჩვენებს ფასს გარანტიის 100 სავალუტო ერთეულის ნომინალურ ღირებულებაზე "
+"დისკონტირებულ გარანტიაზე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "დისკონტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
+#, fuzzy
+msgid "The discount"
+msgstr "დისკონტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr "გვიჩვენებს ფასს გარანტიის 100 სავალუტო  ერთეულის ნომინალურ ღირებულებაზე, რომელიც იხდის პროცენტს სიმწიფისას. "
+msgid "Returns the price per 100 currency units face value of a security that pays interest at maturity"
+msgstr ""
+"გვიჩვენებს ფასს გარანტიის 100 სავალუტო  ერთეულის ნომინალურ ღირებულებაზე, "
+"რომელიც იხდის პროცენტს სიმწიფისას. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "გაცემა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "გაცემის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr "გვიჩვენებს მაკალეის მოდიფიცირებულ ხანგრძლივობას გარანტიისთვის 100 სავალუტო ერთეულის სავარაუდო ნომინალური ღირებულებით.  "
+msgid "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
+msgstr ""
+"გვიჩვენებს მაკალეის მოდიფიცირებულ ხანგრძლივობას გარანტიისთვის 100 სავალუტო "
+"ერთეულის სავარაუდო ნომინალური ღირებულებით.  "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
+#, fuzzy
+msgid "Coupon"
+msgstr "კუპონი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
+#, fuzzy
+msgid "The coupon rate"
+msgstr "კუპონის პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual nominal interest rate"
+msgid "Returns the annual nominal interest rate"
 msgstr "გვიჩვენებს წლიურ ნომინალურ საპროცენტო განაკვეთს"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
 #, fuzzy
-msgid  "Effective rate"
+msgid "Effective rate"
 msgstr "რეალური განაკვეთი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
 #, fuzzy
-msgid  "The effective interest rate"
+msgid "The effective interest rate"
 msgstr "რეალური საპროცენტო განაკვეთი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
+#, fuzzy
+msgid "Npery"
+msgstr "Npery"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
+#, fuzzy
+msgid "The periods"
+msgstr "პერიოდები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
+msgid "Converts a price expressed as a decimal into a price expressed as a fraction"
 msgstr "გადაჰყავს ათობით ჩაწერილი ფასი წილადად ჩაწერილ ფასად"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
 #, fuzzy
-msgid  "Decimal dollar"
+msgid "Decimal dollar"
 msgstr "ათობით ჩაწერილი დოლარი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
+#, fuzzy
+msgid "The decimal number"
+msgstr "ათობითი ჩაწერის რიცხვი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 #, fuzzy
-msgid  "Fraction"
+msgid "Fraction"
 msgstr "წილადი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "გამყოფი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
+msgid "Converts a price expressed as a fraction into a price expressed as a decimal"
 msgstr "გადაჰყავს წილადად ჩაწერილი ფასი ათობით ჩაწერილ ფასად."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
 #, fuzzy
-msgid  "Fractional dollar"
+msgid "Fractional dollar"
 msgstr "წილადად ჩაწერილი დოლარი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
 #, fuzzy
-msgid  "The number as a fraction"
+msgid "The number as a fraction"
 msgstr "რიცხვი წილადად"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
+#, fuzzy
+msgid "Fraction"
+msgstr "წილადი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "გამყოფი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield on a security that pays periodic interest"
+msgid "Returns the yield on a security that pays periodic interest"
 msgstr "გვიჩვენებს მოგებას გარანტიაზე, რომელიც იხდის პერიოდულ პროცენტს. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual yield for a discounted security"
+msgid "Returns the annual yield for a discounted security"
 msgstr "გვიჩვენებს წლიურ მოგებას დისკონტირებულ გარანტიაზე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual yield of a security that pays interest at maturity"
+msgid "Returns the annual yield of a security that pays interest at maturity"
 msgstr "გვიჩვენებს გარანტიის წლიურ მოგებას, რომელიც იხდის პროცენტს სიმწიფისას."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "გაცემა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "გაცემის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the bond-equivalent yield for a treasury bill"
+msgid "Returns the bond-equivalent yield for a treasury bill"
 msgstr "გვიჩვენებს ობლიგაციის ექვივალენტ მოგებას სახაზინო ვალდებულებისთვის"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "დისკონტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 #, fuzzy
-msgid  "The discount rate"
+msgid "The discount rate"
 msgstr "დისკონტის პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr "გვიჩვენებს ფასს 100 სავალუტო ერთეულის ნომინალურ ღირებულებაზე სახაზინო ვალდებულებისთვის. "
+msgid "Returns the price of 100 currency units face value for a treasury bill"
+msgstr ""
+"გვიჩვენებს ფასს 100 სავალუტო ერთეულის ნომინალურ ღირებულებაზე სახაზინო "
+"ვალდებულებისთვის. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "დისკონტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The discount rate"
+msgstr "დისკონტის პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield for a treasury bill"
+msgid "Returns the yield for a treasury bill"
 msgstr "გვიჩვენებს მოგებას სახაზინო ვალდებულებისთვის"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr "გვიჩვენებს ფასს გარანტიის $100 -ის ნომინალურ ღირებულებაზე პირველ კენტ პერიოდში"
+msgid "Returns the price per $100 face value of a security with an odd first period"
+msgstr ""
+"გვიჩვენებს ფასს გარანტიის $100 -ის ნომინალურ ღირებულებაზე პირველ კენტ "
+"პერიოდში"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "გაცემა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "გაცემის თარიღი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
 #, fuzzy
-msgid  "First coupon"
+msgid "First coupon"
 msgstr "პირველი კუპონი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
 #, fuzzy
-msgid  "The first coupon date"
+msgid "The first coupon date"
 msgstr "პირველი კუპონის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield of a security with an odd first period"
+msgid "Returns the yield of a security with an odd first period"
 msgstr "გვიჩვენებს გარანტიის მოგებას პირველ ცალკეულ პერიოდთან ერთად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "გაცემა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "გაცემის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
+#, fuzzy
+msgid "First coupon"
+msgstr "პირველი კუპონი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The first coupon date"
+msgstr "პირველი კუპონის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr "გვიჩვენებს ფასს გარანტიის $100 -ის ნომინალურ ღირებულებაზე პირველ კენტ პერიოდში"
+msgid "Returns the price per $100 face value of a security with an odd last period"
+msgstr ""
+"გვიჩვენებს ფასს გარანტიის $100 -ის ნომინალურ ღირებულებაზე პირველ კენტ "
+"პერიოდში"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
 #, fuzzy
-msgid  "Last interest"
+msgid "Last interest"
 msgstr "ბოლო პროცენტი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 #, fuzzy
-msgid  "The last interest date"
+msgid "The last interest date"
 msgstr "ბოლო პროცენტის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "მოგება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield of a security with an odd last period"
+msgid "Returns the yield of a security with an odd last period"
 msgstr "გვიჩვენებს გარანტიის მოგებას ბოლო საპროცენტო პერიოდთან ერთად. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Last interest"
+msgstr "ბოლო პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The last interest date"
+msgstr "ბოლო პროცენტის თარიღი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ფასი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "გვიჩვენებს მოგების შიდა განაკვეთს გადახდების არაპერიოდული განრიგისთვუს. "
+msgid "Returns the internal rate of return for a non-periodic schedule of payments"
+msgstr ""
+"გვიჩვენებს მოგების შიდა განაკვეთს გადახდების არაპერიოდული განრიგისთვუს. "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 #, fuzzy
-msgid  "Values"
+msgid "Values"
 msgstr "მნიშვნელობები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
 #, fuzzy
-msgid  "The values"
+msgid "The values"
 msgstr "მნიშვნელობები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
 #, fuzzy
-msgid  "Dates"
+msgid "Dates"
 msgstr "თარიღები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
 #, fuzzy
-msgid  "The dates"
+msgid "The dates"
 msgstr "თარიღები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
 #, fuzzy
-msgid  "Guess"
+msgid "Guess"
 msgstr "ვარაუდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
 #, fuzzy
-msgid  "The guess"
+msgid "The guess"
 msgstr "ვარაუდი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "გვიჩვენებს სუფთა ნომინალურ ღირებულებას გადახდების არაპერიოდული განრიგისთვის. "
+msgid "Returns the net present value for a non-periodic schedule of payments"
+msgstr ""
+"გვიჩვენებს სუფთა ნომინალურ ღირებულებას გადახდების არაპერიოდული განრიგისთვის. "
+""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "პროცენტი"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
+#, fuzzy
+msgid "Values"
+msgstr "მნიშვნელობები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
+#, fuzzy
+msgid "The values"
+msgstr "მნიშვნელობები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
+#, fuzzy
+msgid "Dates"
+msgstr "თარიღები"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
+#, fuzzy
+msgid "The dates"
+msgstr "თარიღები"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the interest rate for a fully invested security"
+msgid "Returns the interest rate for a fully invested security"
 msgstr "გვიჩვენებს საპროცენტო განაკვეთს მთლიანად ინვესტირებული გარანტიისთვის"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
+#, fuzzy
+msgid "Investment"
+msgstr "ინვესტიცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
+#, fuzzy
+msgid "The investment"
+msgstr "ინვესტიცია"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "გამოსყიდვა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "გამოსასყიდი ღირებულება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the first coupon date after the settlement date"
+msgid "Returns the first coupon date after the settlement date"
 msgstr "გვიჩვენებს გადახდის შემდეგ პირველი კუპონის თარიღს"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "გვიჩვენებს კუპონის პერიოდში არსებული დღეების რაოდენობას გადახდის დღის ჩათვლით"
+msgid "Returns the number of days in the coupon period containing the settlement date"
+msgstr ""
+"გვიჩვენებს კუპონის პერიოდში არსებული დღეების რაოდენობას გადახდის დღის "
+"ჩათვლით"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "გვიჩვენებს დღეების რაოდენობას გადახდის დღიდან შემდგომი კუპონის თარიღამდე"
+msgid "Returns the number of days from the settlement date to the next coupon date"
+msgstr ""
+"გვიჩვენებს დღეების რაოდენობას გადახდის დღიდან შემდგომი კუპონის თარიღამდე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "გვიჩვენებს დღეების რაოდენობას კუპონის პერიოდის დაწყებიდან გადახდის თარიღამდე"
+msgid "Returns the number of days from the beginning of the coupon period to the settlement date"
+msgstr ""
+"გვიჩვენებს დღეების რაოდენობას კუპონის პერიოდის დაწყებიდან გადახდის თარიღამდე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the last coupon date preceding the settlement date"
+msgid "Returns the last coupon date preceding the settlement date"
 msgstr "გვიჩვენებს ბოლო კუპონის თარიღს გადახდის თარიღამდე."
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "გვიჩვენებს გადასახდელი კუპონების რაოდენობას გადახდის თარიღიდან სიმწიფის თარიღამდე. "
+msgid "Returns the number of coupons payable between the settlement and maturity dates"
+msgstr ""
+"გვიჩვენებს გადასახდელი კუპონების რაოდენობას გადახდის თარიღიდან სიმწიფის "
+"თარიღამდე. "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "ანგარიშსწორება"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "სიმწიფე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "სიხშირე"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "ბაზა"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "ბაზა"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "გვიჩვენებს პირველადი კაპიტალის მომავალ ღირებულებას სხვადასხვა საპროცენტო განაკვეთების შემდეგ"
+msgid "Returns the future value of the initial principal after a series of compound interest rates are applied"
+msgstr ""
+"გვიჩვენებს პირველადი კაპიტალის მომავალ ღირებულებას სხვადასხვა საპროცენტო "
+"განაკვეთების შემდეგ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
 #, fuzzy
-msgid  "Principal"
+msgid "Principal"
 msgstr "საწყისი კაპიტალი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
 #, fuzzy
-msgid  "The principal"
+msgid "The principal"
 msgstr "საწყისი კაპიტალი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
 #, fuzzy
-msgid  "Schedule"
+msgid "Schedule"
 msgstr "განრიგი"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
 #, fuzzy
-msgid  "The schedule"
+msgid "The schedule"
 msgstr "განრიგი"

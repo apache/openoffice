@@ -1,216 +1,246 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: my\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "ထပ်ဖြည့်ပါ"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "ထပ်ဖြည့်ပါ ~ အကူအညီပေါ်တွင်"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "အားလုံး"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
+msgid "~Update"
 msgstr "~နောက်ဆုံးလုပ်ဆောင်ချက်များ"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "~ပိတ်ပြီးပြန်သွားပါ"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
+msgid "Visible ~Buttons"
 msgstr "မြင်နိုင်သော ~ ခလုတ်များ"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "~စိတ်ကြိုက် တူးလ်ဘား..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "~ တူးလ်ဘားကို ဝင်းဒိုးနှင့်ကပ်ပါ"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "~ တူးလ်ဘားများအားလုံး ဝင်းဒိုးနှင့်ကပ်ပါ"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "~ တူးလ်ဘားတည်နေရာကို သော့ခပ်ထားပါ"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "တူးလ်ဘား ပိတ်ပါ"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "အဖြစ် ကော်ပီကူးယူသိမ်းဆည်းပါ..."
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
+msgid "No Documents"
 msgstr "မှတ်တမ်းမှတ်ရာများ မရှိ"
 
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid "Clear List"
+msgstr ""
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "ထပ်ဖြည့်ပါ - %num% ပေါ်တွင်"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "လိုင်စင် သဘောတူညီချက်"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "ထည့်သွင်းမှုများပြုရန် အောက်ပါအဆင့်များအတိုင်း လိုက်ပါဆောင်ရွက်ပါ။"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "၁၊"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "ပြည့်စုံသော လိုင်စင်သဘောတူညီချက် ရှိသည်။ ဒိုင်ယာလော့ဒ် အတွင်းရှိ ခွင့်ပြုချက် စာသားတစ်ခုလုံးကို ကြည့်ရန် '%PAGEDOWN' ကို ကလစ်နှိပ်ပါ။ (သို့) မြင်ကွင်းရွေ့ဘားကို အသုံးပြုပါ။ "
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"ပြည့်စုံသော လိုင်စင်သဘောတူညီချက် ရှိသည်။ ဒိုင်ယာလော့ဒ် အတွင်းရှိ "
+"ခွင့်ပြုချက် စာသားတစ်ခုလုံးကို ကြည့်ရန် '%PAGEDOWN' ကို ကလစ်နှိပ်ပါ။ (သို့) "
+"မြင်ကွင်းရွေ့ဘားကို အသုံးပြုပါ။ "
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "အောက်သို့ ရွှေ့ကြည့်ပါ"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "၂၊"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "လိုင်စင်သဘောတူညီချက် ကိုလက်ခံသည်"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "~လက်ခံပါ"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "ငြင်းပယ်သည်"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
+msgid "Retry"
 msgstr "ပြန်ကြိုးစားပါ"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "အောက်ပါနေရာတွင်ဒစ်ခ်နေရာလွတ် လုံလောက်မှု မရှိသောကြောင့် အရေးကြီးသည့် အတွင်းပိုင်း အချက်အလက်များကို %PRODUCTNAME မှ မသိမ်းဆည်းနိုင်ပါ။ \n%PATH\n\nဒစ်ခ်နေရာလွတ် မရှိလျှင်  %PRODUCTNAME ဆက်လက်အလုပ် လုပ်ဆောင်နိုင်မည် မဟုတ်ပါ။ နေရာလွတ်ရလျှင် ‘ပြန်ကြိုးစားပါ’ ကိုကလစ်နှိပ်ပြီး အချက်အလက်များ ပြန်လည်သိမ်းဆည်းပါ။\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"အောက်ပါနေရာတွင်ဒစ်ခ်နေရာလွတ် လုံလောက်မှု မရှိသောကြောင့် အရေးကြီးသည့် "
+"အတွင်းပိုင်း အချက်အလက်များကို %PRODUCTNAME မှ မသိမ်းဆည်းနိုင်ပါ။ \n"
+"%PATH\n"
+"\n"
+"ဒစ်ခ်နေရာလွတ် မရှိလျှင်  %PRODUCTNAME ဆက်လက်အလုပ် လုပ်ဆောင်နိုင်မည် မဟုတ်ပါ။ "
+"နေရာလွတ်ရလျှင် ‘ပြန်ကြိုးစားပါ’ ကိုကလစ်နှိပ်ပြီး အချက်အလက်များ "
+"ပြန်လည်သိမ်းဆည်းပါ။\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "~ပြန်စပါ"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \nအသုံးချ ပရိုဂရမ်ကို နောက်တစ်ကြိမ် ပြန်လည်ထည့်သွင်းခြင်းဖြင့် ကြိုးစားပါ။ "
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု "
+"ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \n"
+"အသုံးချ ပရိုဂရမ်ကို နောက်တစ်ကြိမ် ပြန်လည်ထည့်သွင်းခြင်းဖြင့် ကြိုးစားပါ။ "
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \nအသုံးချ ပရိုဂရမ်အတွက် အသုံးပြုသူ၏ ဖိုင်များကို ဖယ်ရှားခြင်းဖြင့် နောက်တစ်ကြိမ် ပြန်ကြိုးစားပါ။ "
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု "
+"ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \n"
+"အသုံးချ ပရိုဂရမ်အတွက် အသုံးပြုသူ၏ ဖိုင်များကို ဖယ်ရှားခြင်းဖြင့် "
+"နောက်တစ်ကြိမ် ပြန်ကြိုးစားပါ။ "
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \nအသုံးချ ပရိုဂရမ်အတွက် အသုံးပြုသူ၏ ဖိုင်များကို ဖယ်ရှားပါ။ (သို့) အသုံးချ ပရိုဂရမ်ကို နောက်တစ်ကြိမ် ပြန်လည်ထည့်သွင်းခြင်းဖြင့် ကြိုးစားပါ။ "
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"ကြားခံစနစ်ဖြင့်အသုံးပြုသူ အချက်အလက်များ ဆွဲယူမှုပြုစဉ် အမှားတစ်ခု "
+"ဖြစ်ပွားခဲ့သည်။ အသုံးချ ပရိုဂရမ်ကို ယခု ရပ်တန့်၍ မရပါ။ \n"
+"အသုံးချ ပရိုဂရမ်အတွက် အသုံးပြုသူ၏ ဖိုင်များကို ဖယ်ရှားပါ။ (သို့) အသုံးချ "
+"ပရိုဂရမ်ကို နောက်တစ်ကြိမ် ပြန်လည်ထည့်သွင်းခြင်းဖြင့် ကြိုးစားပါ။ "
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "ခေါင်းစဉ်မဲ့"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "ဘာသာစကားများ"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "မလုပ်ပါ (စာလုံးပေါင်းစစ်ဆေးမှု မလုပ်ပါ)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr "ပုံမှန်ဘာသာစကားအတိုင်းပြန်ထားပါ"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "ပို၍..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "ရွေးချယ်မှုအတွက် ဘာသာစကား စတင်အသုံးပြုပါ"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "စာပိုဒ်အတွက် ဘာသာစကား စတင်အသုံးမပြုပါ"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "စာသားအားလုံးအတွက် ဘာသာစကား စတင်အသုံးပြုပါ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr "ကြိုဆိုပါ၏"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr "%PRODUCTNAME "
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr "မှတ်တမ်းမှတ်ရာ အသစ်တစ်ခု ပြုလုပ်ပါ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr "~ပုံစံမူကြမ်းများ..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr "~ဖွင့်ပါ..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr "%PRODUCTNAME အတွက် လက္ခဏာရပ်အသစ်များ ထပ်ဖြည့်ပါ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr "သင့် %PRODUCTNAME ကိုမှတ်ပုံတင်ပါ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr "%PRODUCTNAME နှင့်ပတ်သတ်သည့် သတင်းအချက်အလက်များ ရယူပါ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr "%PRODUCTNAME အတွက် ပုံစံမူကြမ်းများ ရယူပါ"

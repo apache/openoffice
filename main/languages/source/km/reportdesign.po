@@ -1,916 +1,1284 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: km\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
-msgid  "Sorting and Grouping"
+msgid "Sorting and Grouping"
 msgstr "ការ​តម្រៀប និង​ដាក់​ជា​ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
-msgid  "Group actions"
+msgid "Group actions"
 msgstr "ដាក់សកម្មភាព​ជា​ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr "ផ្លាស់ទី​ឡើងលើ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr "ផ្លាស់ទី​ចុះក្រោម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "លុប"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "Properties"
+msgid "Properties"
 msgstr "លក្ខណសម្បត្តិ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
-msgid  "Sorting"
+msgid "Sorting"
 msgstr "តម្រៀប"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "លំដាប់ឡើង"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
-msgid  "Descending"
+msgid "Descending"
 msgstr "លំដាប់​ចុះ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "បឋមកថា​ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
+msgid "Present"
 msgstr "បង្ហាញ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
+msgid "Not present"
 msgstr "មិន​បង្ហាញ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "បាតកថា​ក្រុម"
 
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Present"
+msgstr "បង្ហាញ"
+
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Not present"
+msgstr "មិន​បង្ហាញ"
+
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
-msgid  "Group On"
+msgid "Group On"
 msgstr "បើក​ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Each Value"
+msgid "Each Value"
 msgstr "តម្លៃ​នីមួយៗ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
-msgid  "Group Interval"
+msgid "Group Interval"
 msgstr "ចន្លោះ​ក្រុម"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
-msgid  "Keep Together"
-msgstr "ទុក​រួម​គ្នា"
+msgid "Keep Together"
+msgstr "ទុក​រួមគ្នា"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
-msgid  "No"
+msgid "No"
 msgstr "ទេ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
-msgid  "Whole Group"
-msgstr "ក្រុម​ទាំង​មូល"
+msgid "Whole Group"
+msgstr "ក្រុម​ទាំងមូល"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
-msgid  "With First Detail"
-msgstr "ជា​មួយ​នឹង​សេចក្ដី​លម្អិត​ដំបូង"
+msgid "With First Detail"
+msgstr "ដោយមាន​សេចក្ដី​លម្អិត​ដំបូង"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "ជំនួយ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
-msgid  "Field/Expression"
+msgid "Field/Expression"
 msgstr "វាល/កន្សោម"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
-msgid  "Sort Order"
+msgid "Sort Order"
 msgstr "លំដាប់​តម្រៀប"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
-msgid  "Prefix Characters"
+msgid "Prefix Characters"
 msgstr "តួអក្សរ​បុព្វបទ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "ឆ្នាំ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
-msgid  "Quarter"
+msgid "Quarter"
 msgstr "មួយ​ភាគ​បួន"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "ខែ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "សប្ដាហ៍"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "ថ្ងៃ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
-msgid  "Hour"
+msgid "Hour"
 msgstr "ម៉ោង"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
-msgid  "Minute"
+msgid "Minute"
 msgstr "នាទី"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
-msgid  "Interval"
+msgid "Interval"
 msgstr "ចន្លោះ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
-msgid  "Select a field or type an expression to sort or group on."
+msgid "Select a field or type an expression to sort or group on."
 msgstr "ជ្រើស​វាល​ ឬ​ប្រភេទ​កន្សោម​មួយ​ដើម្បី​តម្រៀប ឬ​ដាក់​ជា​ក្រុម ។"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
-msgid  "Display a header for this group?"
+msgid "Display a header for this group?"
 msgstr "បង្ហាញ​បឋមកថា​សម្រាប់ក្រុម​នេះ ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
-msgid  "Display a footer for this group?"
+msgid "Display a footer for this group?"
 msgstr "បង្ហាញ​បាតកថា​សម្រាប់​ក្រុមនេះ ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
-msgid  "Select the value or range of values that starts a new group."
+msgid "Select the value or range of values that starts a new group."
 msgstr "ជ្រើស​តម្លៃ ឬ​ជួរ​របស់​តម្លៃ​ដែល​ចាប់ផ្ដើម​ក្រុម​ថ្មី​មួយ ។"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
-msgid  "Interval or number of characters to group on."
+msgid "Interval or number of characters to group on."
 msgstr "ចន្លោះ ឬ​លេខ​របស់តួអក្សរ​ទៅ​ក្រុម ។"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
-msgid  "Keep group together on one page?"
+msgid "Keep group together on one page?"
 msgstr "ទុក​ក្រុម​រួម​គ្នា​នៅ​លើ​ទំព័រ​មួយ ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
-msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr "ជ្រើស​លំដាប់​តម្រៀប​ឡើង ឬ​ចុះ ។ លំដាប់​ឡើង​មាន​ន័យ​ថា​ពី A ទៅ Z ឬពី ០ ទៅ ៩"
+msgid "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr ""
+"ជ្រើស​លំដាប់​តម្រៀប​ឡើង ឬ​ចុះ ។ លំដាប់​ឡើង​មាន​ន័យ​ថា​ពី A ទៅ Z ឬពី ០ ទៅ ៩"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
-msgid  "Page Numbers"
+msgid "Page Numbers"
 msgstr "លេខ​ទំព័រ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "ទ្រង់ទ្រាយ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
-msgid  "Page N"
+msgid "Page N"
 msgstr "ទំព័រ N"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
-msgid  "Page N of M"
+msgid "Page N of M"
 msgstr "ទំព័រ N នៃ M"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "ទីតាំង"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
-msgid  "Top of Page (Header)"
+msgid "Top of Page (Header)"
 msgstr "កំពូល​ទំព័រ (បឋមកថា)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
-msgid  "Bottom of Page (Footer)"
+msgid "Bottom of Page (Footer)"
 msgstr "បាត​ទំព័រ (បាតកថា)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "ទូទៅ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
-msgid  "Alignment:"
+msgid "Alignment:"
 msgstr "តម្រឹម ៖"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
+msgid "Left"
 msgstr "ឆ្វេង"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Center"
+msgid "Center"
 msgstr "កណ្ដាល"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
+msgid "Right"
 msgstr "ស្ដាំ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
-msgid  "Show Number on First Page"
+msgid "Show Number on First Page"
 msgstr "បង្ហាញ​លេខ​នៅ​ទំព័រ​ដំបូង"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ជំនួយ "
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
-msgid  "\"Page \" & #PAGENUMBER#"
+msgid "\"Page \" & #PAGENUMBER#"
 msgstr "\"ទំព័រ \" & #PAGENUMBER#"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
-msgid  " & \" of \" & #PAGECOUNT#"
+msgid " & \" of \" & #PAGECOUNT#"
 msgstr " & \" នៃ\" & #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
+msgid "Page Setup"
 msgstr "រៀបចំ​ទំព័រ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
+msgid "Page"
 msgstr "ទំព័រ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
+msgid "Return"
 msgstr "ត្រឡប់"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
+msgid "Page"
+msgstr "ទំព័រ"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
+msgid "Background"
+msgstr "ផ្ទៃ​ខាង​ក្រោយ"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
-msgid  "Section Setup"
+msgid "Section Setup"
 msgstr "រៀបចំ​ផ្នែក"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "ត្រឡប់"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
+msgid "Background"
+msgstr "ផ្ទៃ​ខាង​ក្រោយ"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
-msgid  "Character Settings"
+msgid "Character Settings"
 msgstr "ការ​កំណត់​តួអក្សរ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "ពុម្ពអក្សរ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "បែបផែន​ពុម្ពអក្សរ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "ទីតាំង"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
-msgid  "Asian Layout"
+msgid "Asian Layout"
 msgstr "ប្លង់​អាស៊ី"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
+msgid "Background"
+msgstr "ផ្ទៃ​ខាង​ក្រោយ"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "តម្រឹម"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "ត្រឡប់"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "តួអក្សរ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
-msgid  "Line"
+msgid "Line"
+msgstr "បន្ទាត់"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
 msgstr "បន្ទាត់"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
+msgid "Line Styles"
 msgstr "រចនាប័ទ្ម​បន្ទាត់"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
+msgid "Arrow Styles"
 msgstr "រចនាប័ទ្ម​ព្រួញ"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "ត្រឡប់"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
+msgid "Line"
+msgstr "បន្ទាត់"
+
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
-msgid  "Report navigator"
+msgid "Report navigator"
 msgstr "កម្មវិធី​រុករក​របាយការណ៍"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "អនុគមន៍"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "ក្រុម"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
+msgid "Sorting and Grouping..."
 msgstr "កំពុង​តម្រៀប និង​ដាក់​ជា​ក្រុម..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
-msgid  "Page Header/Footer..."
+msgid "Page Header/Footer..."
 msgstr "បឋមកថា/​បាតកថា​ទំព័រ..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
-msgid  "Report Header/Footer..."
+msgid "Report Header/Footer..."
 msgstr "បឋមកថា​/បាតកថា​របាយការណ៍..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
-msgid  "New Function"
+msgid "New Function"
 msgstr "អនុគមន៍​ថ្មី"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "លក្ខណសម្បត្តិ..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Field Value Is"
+msgid "Field Value Is"
 msgstr "តម្លៃ​វាល​គឺ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Expression Is"
+msgid "Expression Is"
 msgstr "កន្សោមគឺ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
-msgid  "between"
+msgid "between"
 msgstr "ចន្លោះ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
-msgid  "not between"
+msgid "not between"
 msgstr "មិន​ចន្លោះ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
-msgid  "equal to"
+msgid "equal to"
 msgstr "ស្មើ​នឹង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
-msgid  "not equal to"
+msgid "not equal to"
 msgstr "មិន​ស្មើ​នឹង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
-msgid  "greater than"
+msgid "greater than"
 msgstr "ធំជាង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
-msgid  "less than"
+msgid "less than"
 msgstr "តិច​ជាង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
-msgid  "greater than or equal to"
+msgid "greater than or equal to"
 msgstr "ធំជាង ឬ​ស្មើ​នឹង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
-msgid  "less than or equal to"
+msgid "less than or equal to"
 msgstr "តូច​ជាង ឬ​ស្មើ​នឹង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
-msgid  "and"
+msgid "and"
 msgstr "និង"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
-msgid  "Example"
+msgid "Example"
 msgstr "ឧទារណហ៍"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
-msgid  "Conditional Formatting"
+msgid "Conditional Formatting"
 msgstr "ការ​ធ្វើ​ទ្រង់ទ្រាយ​តាម​លក្ខខណ្ឌ"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ជំនួយ "
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
-msgid  "Condition $number$"
+msgid "Condition $number$"
 msgstr "លក្ខខណ្ឌ $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "ស"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
-msgid  "Font color"
+msgid "Font color"
 msgstr "ពណ៌​ពុម្ពអក្សរ"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
-msgid  "No Fill"
+msgid "No Fill"
 msgstr "មិន​បំពេញ"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
-msgid  "Sort Ascending"
+msgid "Sort Ascending"
 msgstr "តម្រៀប​តាម​លំដាប់​ឡើង"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
-msgid  "Sort Descending"
+msgid "Sort Descending"
 msgstr "តម្រៀប​តាម​លំដាប់​ចុះ"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
-msgid  "Remove sorting"
+msgid "Remove sorting"
 msgstr "យក​ការ​តម្រៀប​ចេញ"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "បញ្ចូល"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "ជំនួយ"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr "បន្លិច​វាល​ ដើម្បី​បញ្ចូល​ទៅ​ក្នុង​ផ្នែក​ដែល​បានជ្រើស​របស់​ពុម្ព បន្ទាប់​មក​ចុច​បញ្ចូល ឬ​ចុច​គ្រាប់​ចុច​បញ្ចូល (Enter) ។"
+msgid "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+"បន្លិច​វាល​ ដើម្បី​បញ្ចូល​ទៅ​ក្នុង​ផ្នែក​ដែល​បានជ្រើស​របស់​ពុម្ព "
+"បន្ទាប់​មក​ចុច​បញ្ចូល ឬ​ចុច​គ្រាប់​ចុច​បញ្ចូល (Enter) ។"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
-msgid  "Include Date"
+msgid "Include Date"
 msgstr "រួម​បញ្ចូល​កាលបរិច្ឆេទ"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "ទ្រង់ទ្រាយ"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
-msgid  "Include Time"
+msgid "Include Time"
 msgstr "រួម​បញ្ចូល​ពេលវេលា"
 
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
+msgid "Format"
+msgstr "ទ្រង់ទ្រាយ"
+
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ជំនួយ "
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "ទូទៅ"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "ទិន្នន័យ"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "ទេ"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "បាទ​/​ចាស"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
-msgid  "Force New Page"
+msgid "Force New Page"
 msgstr "បង្ខំ​ទំព័រ​ថ្មី"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "គ្មាន"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
-msgid  "Before Section"
+msgid "Before Section"
 msgstr "មុន​ផ្នែក"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
-msgid  "After Section"
+msgid "After Section"
 msgstr "បន្ទាប់​ពី​ផ្នែក"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
-msgid  "Before & After Section"
+msgid "Before & After Section"
 msgstr "មុន និង​បន្ទាប់​ពី​ផ្នែក"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
-msgid  "New Row Or Column"
+msgid "New Row Or Column"
 msgstr "ជួរដេក ឬ​ជួរឈរ​ថ្មី"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "ទុក​រួមគ្នា"
 
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
+msgid "No"
+msgstr "ទេ"
+
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "ក្រុម​ទាំងមូល"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "ដោយមាន​សេចក្ដី​លម្អិត​ដំបូង"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
-msgid  "Can Grow"
+msgid "Can Grow"
 msgstr "អាច​ពង្រីក"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
-msgid  "Can Shrink"
+msgid "Can Shrink"
 msgstr "អាច​បង្រួម"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
-msgid  "Repeat Section"
+msgid "Repeat Section"
 msgstr "ធ្វើ​ភាគ​ម្ដង​ទៀត"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
-msgid  "Print repeated values"
+msgid "Print repeated values"
 msgstr "បោះពុម្ព​តម្លៃ​ដដែលៗ"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
-msgid  "Conditional Print Expression"
+msgid "Conditional Print Expression"
 msgstr "បោះពុម្ព​កន្សោម​តាម​លក្ខខណ្ឌ"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
-msgid  "Start new column"
+msgid "Start new column"
 msgstr "ចាប់ផ្ដើម​ជួរឈរ​ថ្មី"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
-msgid  "Start new page"
+msgid "Start new page"
 msgstr "ចាប់ផ្ដើម​ទំព័រ​ថ្មី"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
-msgid  "Reset page number"
+msgid "Reset page number"
 msgstr "កំណត់​លេខ​ទំព័រ​ឡើង​វិញ"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
-msgid  "Chart type"
+msgid "Chart type"
 msgstr "ប្រភេទ​គំនូសតាង"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
-msgid  "Print When Group Change"
+msgid "Print When Group Change"
 msgstr "បោះពុម្ព​នៅ​ពេល​​ក្រុម​ផ្លាស់ប្ដូរ"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr "មើលឃើញ"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
-msgid  "Group keep together"
+msgid "Group keep together"
 msgstr "ក្រុម​ទុក​រួមគ្នា"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "Per Page"
+msgid "Per Page"
 msgstr "ក្នុង​មួយ​ទំព័រ"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Per Column"
+msgid "Per Column"
 msgstr "ក្នុង​មួយ​ជួរ​ឈរ"
 
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
+msgid "None"
+msgstr "គ្មាន"
+
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
-msgid  "Section"
+msgid "Section"
 msgstr "ផ្នែក"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "ស្វ័យប្រវត្តិ"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
-msgid  "Page header"
+msgid "Page header"
 msgstr "បឋមកថា​ទំព័រ"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
-msgid  "Page footer"
+msgid "Page footer"
 msgstr "បាតកថា​ទំព័រ"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
-msgid  "All Pages"
+msgid "All Pages"
 msgstr "ទំព័រ​ទាំងអស់"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
-msgid  "Not With Report Header"
+msgid "Not With Report Header"
 msgstr "ដោយ​គ្មាន​បឋមកថា​របាយការណ៍"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
-msgid  "Not With Report Footer"
+msgid "Not With Report Footer"
 msgstr "ដោយ​គ្មាន​បាតកថា​របាយការណ៍"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
-msgid  "Not With Report Header/Footer"
+msgid "Not With Report Header/Footer"
 msgstr "ដោយគ្មាន​បឋមកថា/​បាតកថា​របាយការណ៍"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
-msgid  "Deep traversing"
+msgid "Deep traversing"
 msgstr "ជម្រៅ​ឆ្លងកាត់"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
-msgid  "Pre evaluation"
+msgid "Pre evaluation"
 msgstr "ការ​វាយតម្លៃ​ជា​មុន"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "Position X"
+msgid "Position X"
 msgstr "ទីតាំង X"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "Position Y"
+msgid "Position Y"
 msgstr "ទីតាំង Y"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "ទទឹង"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "កម្ពស់"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
-msgid  "Initial value"
+msgid "Initial value"
 msgstr "តម្លៃ​ដំបូង"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
-msgid  "Preserve as Link"
+msgid "Preserve as Link"
 msgstr "បង្ការ​ជា​តំណ"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
-msgid  "Formula"
+msgid "Formula"
 msgstr "រូបមន្ត"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "វាល​ទិន្នន័យ"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "ពុម្ពអក្សរ"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
+msgid "Background Transparent"
+msgstr "ភាព​ថ្លានៃ​​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
+msgid "Background Transparent"
 msgstr "ភាព​ថ្លានៃ​​ផ្ទៃ​ខាង​ក្រោយ"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
-msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr "មិន​អនុញ្ញាត​ប្រតិបត្តិការ​នេះ ។ វត្ថុ​បញ្ហា​ត្រួត​លើ​គ្នា​ជា​មួយ​អាមួយ​ផ្សេង ។"
+msgid "This operation is not allowed. The control overlaps with another one."
+msgstr ""
+"មិន​អនុញ្ញាត​ប្រតិបត្តិការ​នេះ ។ "
+"វត្ថុ​បញ្ហា​ត្រួត​លើ​គ្នា​ជា​មួយ​អាមួយ​ផ្សេង ។"
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
-msgid  "This position can not be set. It is invalid."
+msgid "This position can not be set. It is invalid."
 msgstr "ទីតាំង​នេះ​មិន​អាច​ត្រូវ​បាន​កំណត់ ។ វា​មិន​ត្រឹមត្រូវ ។"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
-msgid  "Group: %1"
+msgid "Group: %1"
 msgstr "ក្រុម ៖ %1"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
-msgid  "Function"
+msgid "Function"
 msgstr "មុខងារ"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
-msgid  "Scope"
+msgid "Scope"
 msgstr "វិសាលភាព"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
-msgid  "Data Field Type"
+msgid "Data Field Type"
 msgstr "ប្រភេទ​វាល​ទិន្នន័យ"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
-msgid  "Field or Formula"
+msgid "Field or Formula"
 msgstr "វាល ឬ​រូបមន្ត"
 
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
+msgid "Function"
+msgstr "មុខងារ"
+
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
-msgid  "Counter"
+msgid "Counter"
 msgstr "ច្រាស"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
-msgid  "User defined Function"
+msgid "User defined Function"
 msgstr "អនុគមន៍​ដែល​បាន​កំណត់​ដោយ​អ្នកប្រើ"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "ត​វាល​មេ"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "ត​វាល​កូនចៅ"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
-msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "គំនូសតាង​អាច​ប្រើ​ដើម្បី​បង្ហាញ​ទិន្នន័យ​លម្អិត​អំពី​កំណត់ត្រា​របាយការណ៍​បច្ចុប្បន្ន ។ ដើម្បី​ធ្វើ​ដូចនេះ អ្នក​អាច​បញ្ជាក់​ជួរឈរ​ណាមួយ​នៅ​ក្នុរង​ដំណូច​គំនូសតាង ដែល​ជួរឈរ​នៅ​ក្នុង​របាយការណ៍ ។"
+msgid "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+"គំនូសតាង​អាច​ប្រើ​ដើម្បី​បង្ហាញ​ទិន្នន័យ​លម្អិត​អំពី​កំណត់ត្រា​របាយការណ៍​បច្"
+"ចុប្បន្ន ។ ដើម្បី​ធ្វើ​ដូចនេះ "
+"អ្នក​អាច​បញ្ជាក់​ជួរឈរ​ណាមួយ​នៅ​ក្នុរង​ដំណូច​គំនូសតាង "
+"ដែល​ជួរឈរ​នៅ​ក្នុង​របាយការណ៍ ។"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
-msgid  "Chart"
+msgid "Chart"
 msgstr "គំនូសតាង"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "របាយការណ៍"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
-msgid  "Preview Row(s)"
+msgid "Preview Row(s)"
 msgstr "មើល​ជួរដេក​ជាមុន"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
-msgid  "Area"
+msgid "Area"
 msgstr "ផ្ទៃ"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
-msgid  "Report Output Format"
+msgid "Report Output Format"
 msgstr "ទ្រង់ទ្រាយ​​លទ្ធផល​របាយការណ៍"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr "តម្រឹម​បញ្ឈរ"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "កំពូល"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr "កណ្ដាល"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "បាត"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
-msgid  "Horz. Alignment"
+msgid "Horz. Alignment"
 msgstr "តម្រឹម​ផ្ដេក"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr "ឆ្វេង"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr "ស្ដាំ"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
-msgid  "Block"
+msgid "Block"
 msgstr "ទប់ស្កាត់"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
-msgid  "Center"
+msgid "Center"
 msgstr "កណ្ដាល"
 
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
+msgid "Counter"
+msgstr "ច្រាស"
+
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
-msgid  "Accumulation"
+msgid "Accumulation"
 msgstr "ការ​កើន​ឡើង"
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
-msgid  "Minimum"
+msgid "Minimum"
 msgstr "អប្បបរមា"
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
-msgid  "Maximum"
+msgid "Maximum"
 msgstr "អតិបរមា"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "លក្ខណសម្បត្តិ ៖"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "គ្មាន​វត្ថុ​បញ្ជា​បាន​សម្គាល់"
 
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+msgid "Multiselection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid "Image Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+msgid "Label field"
+msgstr "វាល​ស្លាក"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
+msgid "Line"
+msgstr "បន្ទាត់"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid "Formatted Field"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
+msgid "Shape"
+msgstr "រាង"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
+msgid "Report"
+msgstr "របាយការណ៍"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
+msgid "Section"
+msgstr "ផ្នែក"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "មុខងារ"
+
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
+msgid "Group"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
+msgid "Show ruler"
+msgstr ""
+
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
+msgid "Show grid"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
+msgid "Change Object"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
-msgid  "Move Group(s)"
+msgid "Move Group(s)"
 msgstr "ផ្លាស់ទី​ក្រុម"
 
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
+msgid "Conditional Formatting"
+msgstr "ការ​ធ្វើ​ទ្រង់ទ្រាយ​តាម​លក្ខខណ្ឌ"
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Remove report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
+msgid "Add report header / report footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Remove page header / page footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
+msgid "Add page header / page footer"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
-msgid  "Change property '#'"
+msgid "Change property '#'"
 msgstr "ផ្លាស់ប្ដូរ​លក្ខណសម្បត្តិ '#'"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
-msgid  "Add group header "
+msgid "Add group header "
 msgstr "បន្ថែម​បឋមកថា​ក្រុម"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
-msgid  "Remove group header "
+msgid "Remove group header "
 msgstr "យក​បឋមកថា​ក្រុម​ចេញ"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
-msgid  "Add group footer "
+msgid "Add group footer "
 msgstr "បន្ថែម​បាតកថា​ក្រុម"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
-msgid  "Remove group footer "
+msgid "Remove group footer "
 msgstr "យក​បាតកថា​ក្រុម​ចេញ"
 
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
+msgid "Add function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
+msgid "Delete function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
+msgid "Design"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
+msgid "Preview"
+msgstr ""
+
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
-msgid  "Report #"
+msgid "Report #"
 msgstr "របាយការណ៍ #"
 
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
+msgid "~Report name"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
+msgid "Add Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
+msgid "Delete Selection"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
+msgid "Delete Function"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
+msgid "Change Size"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
+msgid "Paste"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
+msgid "Insert Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
+msgid "Delete Control"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
+msgid "Insert Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
+msgid "GroupHeader"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
+msgid "GroupFooter"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+msgid "Sorting and Grouping..."
+msgstr "កំពុង​តម្រៀប និង​ដាក់​ជា​ក្រុម..."
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
+msgid "Background Color..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
+msgid "Ruler..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
+msgid "Grid..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
+msgid "~Arrange"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
+msgid "Bring ~Forward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
+msgid "Send Back~ward"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
+msgid "~Object Resizing"
+msgstr ""
+
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to smallest width"
+msgid "~Fit to smallest width"
 msgstr "សម​ទៅ​នឹង​ទទឹង​ដែល​តូច​បំផុត "
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to greatest width"
+msgid "~Fit to greatest width"
 msgstr "សម​ទៅ​នឹង​ទទឹង​ដែល​ធំបំផុត "
 
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
+msgid "~Fit to smallest height"
+msgstr ""
+
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to greatest height"
+msgid "~Fit to greatest height"
 msgstr "សម​ទៅ​នឹង​កម្ពស់​ដែលធំបំផុត "
 
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
+msgid "Section"
+msgstr "ផ្នែក"
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
+msgid "Shrink"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
+msgid "Shrink from top"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
+msgid "Shrink from bottom"
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
+msgid "Distribution..."
+msgstr ""
+
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+msgid "Properties..."
+msgstr "លក្ខណសម្បត្តិ..."
+
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
+msgid "Add field:"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
+msgid "Filter"
+msgstr ""
+
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base Report"
+msgid " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME របាយការណ៍​មូលដ្ឋាន"
 
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
+msgid "Untitled"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
+msgid "Change Alignment"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
+msgid "# Header"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
+msgid "# Footer"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
+msgid "Insert graphics"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
+msgid "Delete"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "មុខងារ"
+
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
+msgid "An error occurred while creating the report."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
+msgid "An exception of type $type$ was caught."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
+msgid "Change font"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
+msgid "Change page attributes"
+msgstr ""
+
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Page Header/Footer"
+msgid "Insert Page Header/Footer"
 msgstr "បញ្ចូល​បឋមកថា/បាតកថា​ទំព័រ"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Page Header/Footer"
+msgid "Delete Page Header/Footer"
 msgstr "លុប​បឋមកថា/បាតកថា​ទំព័រ"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Column Header/Footer"
+msgid "Insert Column Header/Footer"
 msgstr "បញ្ចូល​បឋមកថា/បាតកថា​ជួរឈរ"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Column Header/Footer"
+msgid "Delete Column Header/Footer"
 msgstr "លុប​បឋមកថា/បាតកថា​ជួរឈរ"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Report Header/Footer"
+msgid "Insert Report Header/Footer"
 msgstr "បញ្ចូល​បឋមកថា/បាតកថា​របាយការណ៍"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Report Header/Footer"
+msgid "Delete Report Header/Footer"
 msgstr "លុប​បឋមកថា/បាតកថា​របាយការណ៍"
 
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
+msgid "The report can not be executed unless it is bound to content."
+msgstr ""
+
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
+msgid "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
+msgid "Shrink Section"
+msgstr ""
+
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
+msgid "Detail"
+msgstr "សេចក្ដី​លម្អិត"
+
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
+msgid "Page Header"
+msgstr "បឋមកថា​ទំព័រ"
+
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+msgid "Page Footer"
+msgstr "បាតកថា​ទំព័រ"
+
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
+msgid "Report Header"
+msgstr "បឋមកថា​របាយការណ៍"
+
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+msgid "Report Footer"
+msgstr "បាតកថា​របាយការណ៍"
+
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
+msgid "Insert"
+msgstr "បញ្ចូល"
+
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
+msgid "Detail"
 msgstr "សេចក្ដី​លម្អិត"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
+msgid "Page Header"
 msgstr "បឋមកថា​ទំព័រ"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
+msgid "Page Footer"
 msgstr "បាតកថា​ទំព័រ"
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "បឋមកថា​ក្រុម"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "បាតកថា​ក្រុម"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
+msgid "Report Header"
 msgstr "បឋមកថា​របាយការណ៍"
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
+msgid "Report Footer"
 msgstr "បាតកថា​របាយការណ៍"
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
-msgid  "The name '#1' already exists and can not be asssigned again."
+msgid "The name '#1' already exists and can not be asssigned again."
 msgstr "ឈ្មោះ '#1' មាន​រួច​ហើយ ហើយ​មិន​អាច​ត្រូវ​បាន​ផ្ដល់​ម្ដង​ទៀត​ទេ ។"
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr "អ្នក​បាន​ព្យាយាម​កំណត់​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។ សូម​មើលនៅ '#1' សម្រាប់​អាគុយម៉ង់​ដែល​ត្រឹមត្រូវ ។"
+msgid "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr ""
+"អ្នក​បាន​ព្យាយាម​កំណត់​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។ សូម​មើលនៅ '#1' "
+"សម្រាប់​អាគុយម៉ង់​ដែល​ត្រឹមត្រូវ ។"
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
-msgid  "The element is invalid."
+msgid "The element is invalid."
 msgstr "ធាតុ​មិន​ត្រឹមត្រូវ ។"
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
+msgid "Label field"
 msgstr "វាល​ស្លាក"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
-msgid  "Formatted field"
+msgid "Formatted field"
 msgstr "វាល​មានទ្រ់ងទ្រាយ"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
-msgid  "Image control"
+msgid "Image control"
 msgstr "វត្ថុ​បញ្ជា​រូបភាព"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "របាយការណ៍"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
-msgid  "Shape"
+msgid "Shape"
 msgstr "រាង"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
-msgid  "Fixed line"
+msgid "Fixed line"
 msgstr "បន្ទាត់ថេរ"

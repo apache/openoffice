@@ -1,216 +1,247 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "Add-Ons"
+msgid "Add-Ons"
 msgstr "ಆಡ್‌-ಆನ್‌ಗಳು"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "ಆಡ್‌-ಆನ್‌ ಸಹಾಯ(~O)"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
-msgid  "All"
+msgid "All"
 msgstr "ಎಲ್ಲ"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
+msgid "~Update"
 msgstr "ಅಪ್‌ಡೇಟ್‌ ಮಾಡು(~U)"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "ಮುಚ್ಚು ಮತ್ತು ಇದಕ್ಕೆ ಮರಳು(~C)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
+msgid "Visible ~Buttons"
 msgstr "ಗೋಚರಿಸು ಗುಂಡಿಗಳು (~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
-msgid  "~Customize Toolbar..."
+msgid "~Customize Toolbar..."
 msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸು(~C)..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
-msgid  "~Dock Toolbar"
+msgid "~Dock Toolbar"
 msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಹುದುಗಿಸು(~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
-msgid  "Dock ~All Toolbars"
+msgid "Dock ~All Toolbars"
 msgstr "ಎಲ್ಲಾ ಉಪಕರಣಪಟ್ಟಿಗಳನ್ನು ಹುದುಗಿಸು(~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
-msgid  "~Lock Toolbar Position"
+msgid "~Lock Toolbar Position"
 msgstr "ಉಪಕರಣಪಟ್ಟಿಯ ಸ್ಥಾನವನ್ನು ಬಂಧಿಸು(~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Toolbar"
+msgid "Close ~Toolbar"
 msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಮುಚ್ಚು(~T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "ನಕಲು ಪ್ರತಿಯನ್ನು ಹೀಗೆ ಉಳಿಸು(~a)..."
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
+msgid "No Documents"
 msgstr "ಯಾವುದೆ ದಸ್ತಾವೇಜುಗಳಿಲ್ಲ"
 
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid "Clear List"
+msgstr ""
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
-msgid  "Add-On %num%"
+msgid "Add-On %num%"
 msgstr "ಆಡ್‌-ಆನ್‌ %num%"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "ಪರವಾನಗಿ ಒಪ್ಪಂದ"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "ಅನುಸ್ಥಾಪನೆಯಲ್ಲಿ ಮುಂದಿವರೆಯಲು ದಯವಿಟ್ಟು ಈ ಕ್ರಮಗಳನ್ನು ಅನುಸರಿಸಿ:"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "೧."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ನೋಡಿ. ಈ ಸಂವಾದದಲ್ಲಿ ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಪಠ್ಯವನ್ನು ನೋಡಲು ದಯವಿಟ್ಟು ಚಲನಪಟ್ಟಿಕೆ ಅಥವ '%PAGEDOWN' ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ನೋಡಿ. ಈ ಸಂವಾದದಲ್ಲಿ ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಪಠ್ಯವನ್ನು "
+"ನೋಡಲು ದಯವಿಟ್ಟು ಚಲನಪಟ್ಟಿಕೆ ಅಥವ '%PAGEDOWN' ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Down"
+msgid "Scroll Down"
 msgstr "ಕೆಳಕ್ಕೆ ಚಲಿಸು"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "೨."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ಒಪ್ಪಿಕೊ."
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "ಅಂಗೀಕರಿಸು(~A)"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "ನಿರಾಕರಿಸು"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
+msgid "Retry"
 msgstr "ಮರಳಿ ಪ್ರಯತ್ನಿಸಿ"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "ಡಿಸ್ಕಿನ ಈ ಕೆಳಗಿನ ಸ್ಥಳದಲ್ಲಿ ಸಾಕಷ್ಟು ಮುಕ್ತ ಸ್ಥಳವಿರದ ಕಾರಣ %PRODUCTNAME ವು ಪ್ರಮುಖ ಆಂತರಿಕ ಮಾಹಿತಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ:\n%PATH\n\nನೀವು ಈ ಸ್ಥಳದಲ್ಲಿ ಸಾಕಷ್ಟು ಮುಕ್ತ ಸ್ಥಳವನ್ನು ನಿಯೋಜಿಸದ ಹೊರತು %PRODUCTNAME ನೊಂದಿಗೆ ಮುಂದುವರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.\n\nನೀವು ಸಾಕಷ್ಟು ಮುಕ್ತ ಡಿಸ್ಕ್‍ ಸ್ಥಳವನ್ನು ನಿಯೋಜಿಸಿದ ನಂತರ 'ಮರಳಿ ಪ್ರಯತ್ನಿಸು' ಗುಂಡಿಯನ್ನು ಒತ್ತಿ.\n\n"
+msgid "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
+msgstr ""
+"ಡಿಸ್ಕಿನ ಈ ಕೆಳಗಿನ ಸ್ಥಳದಲ್ಲಿ ಸಾಕಷ್ಟು ಮುಕ್ತ ಸ್ಥಳವಿರದ ಕಾರಣ %PRODUCTNAME ವು "
+"ಪ್ರಮುಖ ಆಂತರಿಕ ಮಾಹಿತಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ:\n"
+"%PATH\n"
+"\n"
+"ನೀವು ಈ ಸ್ಥಳದಲ್ಲಿ ಸಾಕಷ್ಟು ಮುಕ್ತ ಸ್ಥಳವನ್ನು ನಿಯೋಜಿಸದ ಹೊರತು %PRODUCTNAME ನೊಂದಿಗೆ "
+"ಮುಂದುವರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.\n"
+"\n"
+"ನೀವು ಸಾಕಷ್ಟು ಮುಕ್ತ ಡಿಸ್ಕ್‍ ಸ್ಥಳವನ್ನು ನಿಯೋಜಿಸಿದ ನಂತರ 'ಮರಳಿ ಪ್ರಯತ್ನಿಸು' "
+"ಗುಂಡಿಯನ್ನು ಒತ್ತಿ.\n"
+"\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "ಮರು ಸಿದ್ಧಗೊಳಿಸು(~R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\nದಯವಿಟ್ಟು ಅನ್ವಯವನ್ನು ಮರಳಿ ಅನುಸ್ಥಾಪಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
+msgstr ""
+"ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು "
+"ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\n"
+"ದಯವಿಟ್ಟು ಅನ್ವಯವನ್ನು ಮರಳಿ ಅನುಸ್ಥಾಪಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\nದಯವಿಟ್ಟು ಅನ್ವಯಕ್ಕಾಗಿನ ನಿಮ್ಮ ಬಳಕೆದಾರ ಪ್ರೊಫೈಲನ್ನು ಮೊದಲು ತೆಗೆದು ಹಾಕಿ."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
+msgstr ""
+"ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು "
+"ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\n"
+"ದಯವಿಟ್ಟು ಅನ್ವಯಕ್ಕಾಗಿನ ನಿಮ್ಮ ಬಳಕೆದಾರ ಪ್ರೊಫೈಲನ್ನು ಮೊದಲು ತೆಗೆದು ಹಾಕಿ."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\nದಯವಿಟ್ಟು ಅನ್ವಯಕ್ಕಾಗಿನ ನಿಮ್ಮ ಬಳಕೆದಾರ ಪ್ರೊಫೈಲನ್ನು ಮೊದಲು ತೆಗೆದು ಹಾಕಿ ಅಥವ ಅನ್ವಯವನ್ನು ಮರಳಿ ಅನುಸ್ಥಾಪಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
+msgid "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
+"ಬಳಕೆದಾರ ಸಂರಚನೆ ದತ್ತಾಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ. ಅನ್ವಯವನ್ನು "
+"ಈಗ ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತದೆ.\n"
+"ದಯವಿಟ್ಟು ಅನ್ವಯಕ್ಕಾಗಿನ ನಿಮ್ಮ ಬಳಕೆದಾರ ಪ್ರೊಫೈಲನ್ನು ಮೊದಲು ತೆಗೆದು ಹಾಕಿ ಅಥವ "
+"ಅನ್ವಯವನ್ನು ಮರಳಿ ಅನುಸ್ಥಾಪಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "ಶೀರ್ಷಿಕೆರಹಿತ"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
-msgid  "Multiple Languages"
+msgid "Multiple Languages"
 msgstr "ಬಹು ಭಾಷೆಗಳು"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
-msgid  "None (Do not check spelling)"
+msgid "None (Do not check spelling)"
 msgstr "ಏನೂ ಇಲ್ಲ (ಕಾಗುಣಿತ ಪರೀಕ್ಷೆಯನ್ನು ಮಾಡಬೇಡ)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
-msgid  "Reset to Default Language"
+msgid "Reset to Default Language"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಭಾಷೆಗೆ ಮರಳಿಹೊಂದಿಸು"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
-msgid  "More..."
+msgid "More..."
 msgstr "ಇನ್ನಷ್ಟು..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
-msgid  "Set Language for Selection"
+msgid "Set Language for Selection"
 msgstr "ಆಯ್ಕೆಗಾಗಿ ಭಾಷೆಯನ್ನು ಹೊಂದಿಸು"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
-msgid  "Set Language for Paragraph"
+msgid "Set Language for Paragraph"
 msgstr "ಪ್ಯಾರಾಗ್ರಾಫಿಗಾಗಿ ಭಾಷೆಯನ್ನು ಹೊಂದಿಸು"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
-msgid  "Set Language for all Text"
+msgid "Set Language for all Text"
 msgstr "ಎಲ್ಲಾ ಪಠ್ಯಕ್ಕಾಗಿ ಭಾಷೆಯನ್ನು ಹೊಂದಿಸು"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
-msgid  "Welcome to"
+msgid "Welcome to"
 msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr "ಗೆ ಸುಸ್ವಾಗತ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
-msgid  "Create a new document"
+msgid "Create a new document"
 msgstr "ಹೊಸ ದಸ್ತಾವೇಜನ್ನು ರಚಿಸಿ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
-msgid  "~Templates..."
+msgid "~Templates..."
 msgstr "ನಮೂನೆಗಳು(~T)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
-msgid  "~Open..."
+msgid "~Open..."
 msgstr "ತೆರೆ(~O)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
-msgid  "Add new features to %PRODUCTNAME"
+msgid "Add new features to %PRODUCTNAME"
 msgstr "%PRODUCTNAME ಗೆ ಹೊಸ ಸವಲತ್ತುಗಳನ್ನು ಸೇರಿಸಿ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
-msgid  "Register your %PRODUCTNAME"
+msgid "Register your %PRODUCTNAME"
 msgstr "ನಿಮ್ಮ %PRODUCTNAME ಅನ್ನು ನೋಂದಾಯಿಸಿ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
-msgid  "Get more information about %PRODUCTNAME"
+msgid "Get more information about %PRODUCTNAME"
 msgstr "%PRODUCTNAME ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
-msgid  "Get more templates for %PRODUCTNAME"
+msgid "Get more templates for %PRODUCTNAME"
 msgstr "%PRODUCTNAME ನ ಇನ್ನಷ್ಟು ನಮೂನೆಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"

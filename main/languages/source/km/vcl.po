@@ -1,724 +1,756 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: km\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "យល់​​ព្រម​"
 
 #: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "បោះបង់"
 
 #: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "បាទ/ចាស "
 
 #: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
-msgid  "~No"
+msgid "~No"
 msgstr "ទេ "
 
 #: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
-msgid  "~Retry"
+msgid "~Retry"
 msgstr "ព្យាយាម​ទៀត "
 
 #: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "ជំនួយ "
 
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
-msgid  "~More"
+msgid "~More"
+msgstr "ច្រើន​ទៀត "
+
+#: src/btntext.src#SV_BUTTONTEXT_LESS.STRING.TEXT
+msgid "~More"
 msgstr "ច្រើន​ទៀត "
 
 #: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "មិន​អើពើ "
 
 #: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
-msgid  "~Abort"
+msgid "~Abort"
 msgstr "បញ្ឈប់ "
 
 #: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "បិទ​"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
-msgid  "Close Document"
+msgid "Close Document"
 msgstr "បិទ​ឯកសារ"
 
 #: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
-msgid  "Minimize"
+msgid "Minimize"
 msgstr "បង្រួម​អប្បបរមា"
 
 #: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
-msgid  "Maximize"
+msgid "Maximize"
 msgstr "ពង្រីក​អតិបរមា"
 
 #: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
-msgid  "Restore"
+msgid "Restore"
 msgstr "ស្តារ"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
-msgid  "Drop down"
+msgid "Drop down"
 msgstr "ទម្លាក់​ចុះ"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
-msgid  "Roll up"
+msgid "Roll up"
 msgstr "រមៀល​ឡើង"
 
+#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
-msgid  "Always visible"
+msgid "Always visible"
 msgstr "មើល​ឃើញ​ជានិច្ច"
 
 #: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr "បង្ហាញ​"
 
 #: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr "លាក់​"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
-msgid  "Floating"
+msgid "Floating"
 msgstr "អណ្តែត"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
-msgid  "Stick"
+msgid "Stick"
 msgstr "បិទភ្ជាប់"
 
+#: src/helptext.src#SV_SHORTCUT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
-msgid  "Context Help"
+msgid "Context Help"
 msgstr "ជំនួយ​បរិបទ"
 
 #: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
-msgid  "Extended Tips"
+msgid "Extended Tips"
 msgstr "ព័ត៌មាន​​ជំនួយ​បន្ថែម"
 
 #: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
-msgid  "Dock/Undock Windows"
+msgid "Dock/Undock Windows"
 msgstr "ចត/លែងចត បង្អួច"
 
 #: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
-msgid  "To Next Toolbar/Window"
+msgid "To Next Toolbar/Window"
 msgstr "ទៅ​​ របារ​ឧបករណ៍/បង្អួច បន្ទាប់"
 
 #: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
-msgid  "To Previous Toolbar/Window"
+msgid "To Previous Toolbar/Window"
 msgstr "ទៅ​ របារ​​ឧបករណ៍/​បង្អួច ​មុន"
 
 #: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
-msgid  "To Document"
+msgid "To Document"
 msgstr "ទៅ​ឯកសារ"
 
 #: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
-msgid  "To Menu Bar"
+msgid "To Menu Bar"
 msgstr "ទៅ​​របារ​​ម៉ឺនុយ"
 
 #: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
-msgid  "Split window separator"
+msgid "Split window separator"
 msgstr "ពុះ​បន្ទាត់​ខណ្ឌចែក​បង្អួច"
 
 #: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
-msgid  "<No selection possible>"
+msgid "<No selection possible>"
 msgstr "<​គ្មាន​ជម្រើស​​អាច​​ទៅ​​រួច​>"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
-msgid  "~Undo"
+msgid "~Undo"
 msgstr "មិន​ធ្វើ​វិញ "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "កាត់ "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "ចម្លង "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "បិទភ្ជាប់ "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "លុប​ "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
-msgid  "Select ~All"
+msgid "Select ~All"
 msgstr "ជ្រើស​ទាំងអស់ "
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
-msgid  "~Special Character..."
+msgid "~Special Character..."
 msgstr "តួអក្សរ​ពិសេស... "
 
 #: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
-msgid  "Services"
+msgid "Services"
 msgstr "សេវា"
 
 #: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
-msgid  "Hide %PRODUCTNAME"
+msgid "Hide %PRODUCTNAME"
 msgstr "លាក់ %PRODUCTNAME"
 
 #: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
-msgid  "Hide Others"
+msgid "Hide Others"
 msgstr "លាក់​ផ្សេងទៀត"
 
 #: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
-msgid  "Show All"
+msgid "Show All"
 msgstr "បង្ហាញ​ទាំងអស់"
 
 #: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
-msgid  "Quit %PRODUCTNAME"
+msgid "Quit %PRODUCTNAME"
 msgstr "ចេញ​ពី %PRODUCTNAME"
 
 #: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "បោះពុម្ព​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
-msgid  "~Print"
+msgid "~Print"
 msgstr "បោះពុម្ព​ "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
-msgid  "/ %n"
+msgid "/ %n"
 msgstr "/ %n"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
-msgid  "No pages"
+msgid "No pages"
 msgstr "គ្មាន​ទំព័រ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
-msgid  "Print to File..."
+msgid "Print to File..."
 msgstr "បោះពុម្ព​ទៅកាន់​ឯកសារ​​..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "ម៉ាស៊ីនបោះពុម្ព​លំនាំដើម​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
-msgid  "Print preview"
+msgid "Print preview"
 msgstr "មើល​មុន​បោះពុម្ព​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
-msgid  "Page Layout"
+msgid "Page Layout"
 msgstr "ប្លង់ទំព័រ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
-msgid  "Layout"
+msgid "Layout"
 msgstr "ប្លង់​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
-msgid  "Pa~ges per sheet"
+msgid "Pa~ges per sheet"
 msgstr "ទំព័រក្នុងមួយ​​​សន្លឹក "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
-msgid  "1"
+msgid "1"
 msgstr "១"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
-msgid  "2"
+msgid "2"
 msgstr "២"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
-msgid  "4"
+msgid "4"
 msgstr "៤"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
-msgid  "6"
+msgid "6"
 msgstr "៦"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
-msgid  "9"
+msgid "9"
 msgstr "៩"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
-msgid  "16"
+msgid "16"
 msgstr "១៦"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
-msgid  "Custom"
+msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
-msgid  "P~ages"
+msgid "P~ages"
 msgstr "ទំព័រ "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
-msgid  "b~y"
+msgid "b~y"
 msgstr "តាម "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "ចម្ងាយ "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
-msgid  "between pages"
+msgid "between pages"
 msgstr "ចន្លោះទំព័រ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Margin"
+msgid "~Margin"
 msgstr "រឹម "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
-msgid  "to sheet border"
+msgid "to sheet border"
 msgstr "ទៅស៊ុមសន្លឹក​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "ទិស "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "ស្វ័យប្រវត្តិ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "បញ្ឈរ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "ផ្តេក​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
-msgid  "Order"
+msgid "Order"
 msgstr "លំដាប់​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
-msgid  "left to right, then down"
+msgid "left to right, then down"
 msgstr "ឆ្វេងទៅស្តាំ បន្ទាប់​មក​ចុះក្រោម​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
-msgid  "top to bottom, then right"
+msgid "top to bottom, then right"
 msgstr "កំពូលទៅ​បាត​ បន្ទាប់មក​ទៅស្តាំ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
-msgid  "top to bottom, then left"
+msgid "top to bottom, then left"
 msgstr "ពី​លើ​ទៅ​ក្រោម ហើយទៅ​ឆ្វេង"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
-msgid  "right to left, then down"
+msgid "right to left, then down"
 msgstr "ពី​ស្ដាំ​ទៅ​ឆ្វេង ហើយ​ចុះក្រោម"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
-msgid  "Draw a border around each page"
+msgid "Draw a border around each page"
 msgstr "គូរស៊ុមជុំវិញទំព័រ​នីមួយៗ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "ទូទៅ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
-msgid  "Prin~ter"
+msgid "Prin~ter"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​ "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "សេចក្តី​លម្អិត "
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
-msgid  "Status:"
+msgid "Status:"
 msgstr "ស្ថានភាព ៖"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
-msgid  "Location:"
+msgid "Location:"
 msgstr "ទីតាំង ៖"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "មតិយោបល់ ៖"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "លក្ខណសម្បត្តិ..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
-msgid  "Range and copies"
+msgid "Range and copies"
 msgstr "ច្បាប់ចម្លង និងជួរ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
-msgid  "Number of copies"
+msgid "Number of copies"
 msgstr "ចំនួនច្បាប់​ចម្លង"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
-msgid  "Collate"
+msgid "Collate"
 msgstr "រៀបតាមលំដាប់​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
-msgid  "Print in ~reverse page order"
+msgid "Print in ~reverse page order"
 msgstr "បោះពុម្ព​ក្នុង​លំដាប់​បញ្ច្រាស"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
-msgid  "Options"
+msgid "Options"
+msgstr "ជម្រើស​"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FIXEDLINE.TEXT
+msgid "Options"
 msgstr "ជម្រើស​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "បោះពុម្ពទៅឯកសារ​ ​"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
-msgid  "~Create single print jobs for collated output"
+msgid "~Create single print jobs for collated output"
 msgstr "បង្កើតការងារបោះពុម្ព​តែមួយ​​សម្រាប់​ទិន្នផលដែល​បាន​រៀបតាមលំដាប់ "
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
-msgid  "Printing"
+msgid "Printing"
 msgstr "ការបោះពុម្ព​"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
-msgid  "Page %p of %n"
+msgid "Page %p of %n"
 msgstr "ទំព័រ %p នៃ​ %n"
 
 #: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "ស្វែងរកមិនឃើញម៉ាស៊ីនបោះពុម្ពលំនាំដើមឡើយ​​ ។\nសូម​ជ្រើស​ម៉ាស៊ីនបោះពុម្ព​ និង​ព្យាយាមម្តងទៀត ។​"
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"ស្វែងរកមិនឃើញម៉ាស៊ីនបោះពុម្ពលំនាំដើមឡើយ​​ ។\n"
+"សូម​ជ្រើស​ម៉ាស៊ីនបោះពុម្ព​ និង​ព្យាយាមម្តងទៀត ។​"
 
 #: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
-msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr "គ្មាន​ទំព័រត្រូវ​​បោះពុម្ព​ឡើយ​ ។ សូមពិនិត្យ​​​ឯកសាររបស់អ្នក​​សម្រាប់ជួរដែលទាក់ទងត្រូវបោះពុម្ព​ ។"
+msgid "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr ""
+"គ្មាន​ទំព័រត្រូវ​​បោះពុម្ព​ឡើយ​ ។ "
+"សូមពិនិត្យ​​​ឯកសាររបស់អ្នក​​សម្រាប់ជួរដែលទាក់ទងត្រូវបោះពុម្ព​ ។"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
-msgid  "Preview"
+msgid "Preview"
 msgstr "មើល​ជាមុន​"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
-msgid  "Page number"
+msgid "Page number"
 msgstr "លេខទំព័រ​"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
-msgid  "Number of pages"
+msgid "Number of pages"
 msgstr "ចំនួនទំព័រ"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
-msgid  "More"
+msgid "More"
 msgstr "ច្រើន​ទៀត​​"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
-msgid  "Print selection only"
+msgid "Print selection only"
 msgstr "បោះពុម្ព​តែ​ជម្រើស"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
-msgid  "A0"
+msgid "A0"
 msgstr "A0"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
-msgid  "A1"
+msgid "A1"
 msgstr "A1"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
-msgid  "A2"
+msgid "A2"
 msgstr "A2"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
-msgid  "A3"
+msgid "A3"
 msgstr "A3"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
-msgid  "A4"
+msgid "A4"
 msgstr "A4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
-msgid  "A5"
+msgid "A5"
 msgstr "A5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
-msgid  "B4 (ISO)"
+msgid "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
-msgid  "B5 (ISO)"
+msgid "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
-msgid  "Letter"
+msgid "Letter"
 msgstr "Letter"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
-msgid  "Legal"
+msgid "Legal"
 msgstr "Legal"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
-msgid  "Tabloid"
+msgid "Tabloid"
 msgstr "Tabloid"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
-msgid  "User Defined"
+msgid "User Defined"
 msgstr "កំណត់​ដោយ​អ្នក​ប្រើ"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
-msgid  "B6 (ISO)"
+msgid "B6 (ISO)"
 msgstr "B6 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
-msgid  "C4 Envelope"
+msgid "C4 Envelope"
 msgstr "ស្រោម​សំបុត្រ C4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
-msgid  "C5 Envelope"
+msgid "C5 Envelope"
 msgstr "ស្រោម​សំបុត្រ C5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
-msgid  "C6 Envelope"
+msgid "C6 Envelope"
 msgstr "ស្រោម​សំបុត្រ C6"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
-msgid  "C6/5 Envelope"
+msgid "C6/5 Envelope"
 msgstr "ស្រោម​សំបុត្រ C6/5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
-msgid  "DL Envelope"
+msgid "DL Envelope"
 msgstr "ស្រោម​សំបុត្រ DL"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
-msgid  "Dia Slide"
+msgid "Dia Slide"
 msgstr "Dia Slide"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
-msgid  "Screen"
+msgid "Screen"
 msgstr "អេក្រង់"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
-msgid  "C"
+msgid "C"
 msgstr "C"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
-msgid  "D"
+msgid "D"
 msgstr "D"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
-msgid  "E"
+msgid "E"
 msgstr "E"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
-msgid  "Executive"
+msgid "Executive"
 msgstr "Executive"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
-msgid  "Long Bond"
+msgid "Long Bond"
 msgstr "Long Bond"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
-msgid  "#8 (Monarch) Envelope"
+msgid "#8 (Monarch) Envelope"
 msgstr "ស្រោម​សំបុត្រ #8 (Monarch)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
-msgid  "#6 3/4 (Personal) Envelope"
+msgid "#6 3/4 (Personal) Envelope"
 msgstr "ស្រោម​សំបុត្រ #6 3/4 (Personal)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
-msgid  "#9 Envelope"
+msgid "#9 Envelope"
 msgstr "ស្រោម​សំបុត្រ #9"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
-msgid  "#10 Envelope"
+msgid "#10 Envelope"
 msgstr "ស្រោម​សំបុត្រ #10"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
-msgid  "#11 Envelope"
+msgid "#11 Envelope"
 msgstr "ស្រោមសំបុត្រ #11"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
-msgid  "#12 Envelope"
+msgid "#12 Envelope"
 msgstr "ស្រោម​សំបុត្រ #12"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
-msgid  "16 Kai"
+msgid "16 Kai"
 msgstr "16 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
-msgid  "32 Kai"
+msgid "32 Kai"
 msgstr "32 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
-msgid  "Big 32 Kai"
+msgid "Big 32 Kai"
 msgstr "Big 32 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
-msgid  "B4 (JIS)"
+msgid "B4 (JIS)"
 msgstr "B4 (JIS)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
-msgid  "B5 (JIS)"
+msgid "B5 (JIS)"
 msgstr "B5 (JIS)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
-msgid  "B6 (JIS)"
+msgid "B6 (JIS)"
 msgstr "B6 (JIS)"
 
 #: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "មិន​​អាច​​ផ្ទុក​​សមាសភាគ (%s) ។​\nសូម​​ចាប់ផ្តើម​​ដំឡើង​​ជាមួយ​​ជម្រើស​​ជួសជុល ។"
+msgid "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr ""
+"មិន​​អាច​​ផ្ទុក​​សមាសភាគ (%s) ។​\n"
+"សូម​​ចាប់ផ្តើម​​ដំឡើង​​ជាមួយ​​ជម្រើស​​ជួសជុល ។"
 
 #: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
-msgid  "Do not show this information again."
+msgid "Do not show this information again."
 msgstr "កុំ​​បង្ហាញ​​ព័ត៌មាន​​នេះ​​ម្តង​​ទៀត​ ។"
 
 #: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
-msgid  "Do not show this question again."
+msgid "Do not show this question again."
 msgstr "កុំ​​បង្ហាញ​​សំណួរ​​នេះ​​ម្តង​ទៀត ។"
 
 #: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
-msgid  "Do not show warning again."
+msgid "Do not show warning again."
 msgstr "កុំ​​បង្ហាញ​​ការ​​ព្រមាន​​នេះ​​ម្តង​​ទៀត ​។"
 
 #: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
-msgid  "Wrong Version"
+msgid "Wrong Version"
 msgstr "ខុស​កំណែ"
 
 #: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr "%PRODUCTNAME %PRODUCTVERSION ត្រូវ​ការកំណែ Java Access Bridge 1.0.3 ឬ ថ្មី​ជាង ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
+msgid "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION ត្រូវ​ការកំណែ Java Access Bridge 1.0.3 ឬ "
+"ថ្មី​ជាង ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
 
 #: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
-msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr "ចុច '%OK' ដើម្បី​ចាប់ផ្តើម %PRODUCTNAME ​%PRODUCTVERSION ​ដោយ​គ្មាន​ការ​គាំទ្រ​​ភាព​ចូល​ដំណើរការ ឬ ​ចុច '%CANCEL' ដើម្បី​ចេញ​ពី %PRODUCTNAME %PRODUCTVERSION ។"
+msgid "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+"ចុច '%OK' ដើម្បី​ចាប់ផ្តើម %PRODUCTNAME ​%PRODUCTVERSION "
+"​ដោយ​គ្មាន​ការ​គាំទ្រ​​ភាព​ចូល​ដំណើរការ ឬ ​ចុច '%CANCEL' ដើម្បី​ចេញ​ពី %"
+"PRODUCTNAME %PRODUCTVERSION ។"
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
-msgid  "No Java Access Bridge"
+msgid "No Java Access Bridge"
 msgstr "គ្មាន Java Access Bridge"
 
 #: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
-msgid  "Faulty Java Installation"
+msgid "Faulty Java Installation"
 msgstr "ដំឡើង Java ខុស"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr "%PRODUCTNAME %PRODUCTVERSION ត្រូវការ​កំណែ Java 1.4.0_02 ឬ ថ្មី​ជាង ​ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
+msgid "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION ត្រូវការ​កំណែ Java 1.4.0_02 ឬ ថ្មី​ជាង "
+"​ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
-msgid  "No Java Installation"
+msgid "No Java Installation"
 msgstr "គ្មាន​ការ​ដំឡើង Java"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
-msgid  "Missing Java Configuration"
+msgid "Missing Java Configuration"
 msgstr "បាត់​​ការ​​កំណត់​​រចនា​សម្ព័ន្ធ Java"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
-msgid  "Java Disabled"
+msgid "Java Disabled"
 msgstr "Java ប្រើ​លែង​បាន"
 
 #: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
-msgid  "The Java Access Bridge could not be started."
+msgid "The Java Access Bridge could not be started."
 msgstr "មិន​អាច​ចាប់ផ្តើម Java Access Bridge ។"
 
 #: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
-msgid  "No fonts could be found on the system."
+msgid "No fonts could be found on the system."
 msgstr "រក​មិន​ឃើញ​ពុម្ពអក្សរ​នៅ​ក្នុង​ប្រព័ន្ធ ។"
 
 #: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
-msgid  "About %PRODUCTNAME"
+msgid "About %PRODUCTNAME"
 msgstr "អំពី %PRODUCTNAME"
 
 #: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
-msgid  "Preferences..."
+msgid "Preferences..."
 msgstr "ចំណូល​ចិត្ត..."
 
 #: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
-msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr "អត្ថបទ​ដែល​បាន​បញ្ចូល​នេះ​លើ​ប្រវែង​អតិបរមា​នៃ​វាល​អត្ថបទ​នេះ ។ អត្ថបទ​ត្រូវ​បាន​កាត់​ឲ្យ​ខ្លី ។"
+msgid "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr ""
+"អត្ថបទ​ដែល​បាន​បញ្ចូល​នេះ​លើ​ប្រវែង​អតិបរមា​នៃ​វាល​អត្ថបទ​នេះ ។ "
+"អត្ថបទ​ត្រូវ​បាន​កាត់​ឲ្យ​ខ្លី ។"
 
 #: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
-msgid  "Screen %d"
+msgid "Screen %d"
 msgstr "អេក្រង់ %d"
 
 #: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
-msgid  "Any type"
+msgid "Any type"
 msgstr "ប្រភេទ​ខ្លះ​"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
-msgid  "mm"
+msgid "mm"
 msgstr "ម.ម."
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
-msgid  "cm"
+msgid "cm"
 msgstr "ស.ម."
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
-msgid  "m"
+msgid "m"
 msgstr "ម."
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
-msgid  "km"
+msgid "km"
 msgstr "គ.ម."
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twips"
+msgid "twips"
 msgstr "ធ្វីប"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
-msgid  "twip"
+msgid "twip"
 msgstr "ធ្វីប"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
-msgid  "pt"
+msgid "pt"
 msgstr "pt"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
-msgid  "pi"
+msgid "pi"
 msgstr "pi"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "\""
+msgid "\""
 msgstr "\""
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "in"
+msgid "in"
 msgstr "គិត​ជា"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
-msgid  "inch"
+msgid "inch"
 msgstr "អ៊ិន្ឈ៍"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "'"
+msgid "'"
 msgstr "'"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "ft"
+msgid "ft"
 msgstr "ft"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "foot"
+msgid "foot"
 msgstr "ហ៊្វុតថ៍"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
-msgid  "feet"
+msgid "feet"
 msgstr "ហ្វ៊ីតថ៍"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "miles"
+msgid "miles"
 msgstr "ម៉ាយល៍"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
-msgid  "mile"
+msgid "mile"
 msgstr "ម៉ាយល៍"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
-msgid  "%"
+msgid "%"
 msgstr "%"

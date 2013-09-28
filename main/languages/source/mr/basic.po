@@ -1,600 +1,605 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Syntax error."
+msgid "Syntax error."
 msgstr "वाक्यरचना त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Return without Gosub."
+msgid "Return without Gosub."
 msgstr "गोसब शिवाय परत करणे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect entry; please retry."
+msgid "Incorrect entry; please retry."
 msgstr "चूकीची नोंद; कृपया पुन्हा प्रयत्न करा."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid procedure call."
+msgid "Invalid procedure call."
 msgstr "अवैध प्रक्रिया कॉल."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Overflow."
+msgid "Overflow."
 msgstr "अतिओघ."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not enough memory."
+msgid "Not enough memory."
 msgstr "पुरेशी स्मृती नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array already dimensioned."
+msgid "Array already dimensioned."
 msgstr "ऐरे आधीपासूनच परिमाणित केलेला आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Index out of defined range."
+msgid "Index out of defined range."
 msgstr "परिभाषित व्याप्ती मधून अनुक्रमणिका."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Duplicate definition."
+msgid "Duplicate definition."
 msgstr "हुबेहुब परिभाषा."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Division by zero."
+msgid "Division by zero."
 msgstr "शून्याने भागणे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable not defined."
+msgid "Variable not defined."
 msgstr "अचल संख्या परिभाषित नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Data type mismatch."
+msgid "Data type mismatch."
 msgstr "विजोड डाटा प्रकार."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid parameter."
+msgid "Invalid parameter."
 msgstr "अवैध परिमाण."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Process interrupted by user."
+msgid "Process interrupted by user."
 msgstr "वापरकर्ता द्वारा प्रक्रियेत व्यत्यय."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Resume without error."
+msgid "Resume without error."
 msgstr "त्रुटीविना पुनः सुरू करा."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not enough stack memory."
+msgid "Not enough stack memory."
 msgstr "स्टॅक स्मृती पुरेशी नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Sub-procedure or function procedure not defined."
+msgid "Sub-procedure or function procedure not defined."
 msgstr "विषय-प्रक्रिया किंवा कार्य प्रक्रिया परिभाषित नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error loading DLL file."
+msgid "Error loading DLL file."
 msgstr "DLL धारिका लोड करताना त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Wrong DLL call convention."
+msgid "Wrong DLL call convention."
 msgstr "चुकीचे DLL कॉल कन्वेनशन."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Internal error $(ARG1)."
+msgid "Internal error $(ARG1)."
 msgstr "अंतर्गत त्रुटी $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid file name or file number."
+msgid "Invalid file name or file number."
 msgstr "अवैध धारिका नाव किंवा धारिका क्रमांक."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File not found."
+msgid "File not found."
 msgstr "धारिका सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect file mode."
+msgid "Incorrect file mode."
 msgstr "चुकीची धारिका अवस्था."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File already open."
+msgid "File already open."
 msgstr "धारिका आधीपासूनच उघडलेली आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Device I/O error."
+msgid "Device I/O error."
 msgstr "साधन I/O त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File already exists."
+msgid "File already exists."
 msgstr "धारिका आधीपासूनच अस्तित्वात आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect record length."
+msgid "Incorrect record length."
 msgstr "चुकीची नोंद लांबी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Disk or hard drive full."
+msgid "Disk or hard drive full."
 msgstr "डिस्क किंवा हार्ड ड्राइव्ह पूर्ण भरली."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Reading exceeds EOF."
+msgid "Reading exceeds EOF."
 msgstr "वाचन EOFपेक्षा जास्त."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect record number."
+msgid "Incorrect record number."
 msgstr "चुकीचा नोंद क्रमांक."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many files."
+msgid "Too many files."
 msgstr "अत्याधिक धारिका."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Device not available."
+msgid "Device not available."
 msgstr "साधन उपलब्ध नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Access denied."
+msgid "Access denied."
 msgstr "प्रवेश नाकारला."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Disk not ready."
+msgid "Disk not ready."
 msgstr "डिस्क तयार नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not implemented."
+msgid "Not implemented."
 msgstr "कार्यान्वित केलेले नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Renaming on different drives impossible."
+msgid "Renaming on different drives impossible."
 msgstr "वेगवेगळ्या ड्राइव्ह वर नवीन नाव देणे अशक्य."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Path/File access error."
+msgid "Path/File access error."
 msgstr "मार्ग/धारिका प्रवेश त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Path not found."
+msgid "Path not found."
 msgstr "मार्ग सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object variable not set."
+msgid "Object variable not set."
 msgstr "वस्तू वेरियेबल सेट केलेले नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid string pattern."
+msgid "Invalid string pattern."
 msgstr "अवैध वर्णाक्षराची पद्धत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Use of zero not permitted."
+msgid "Use of zero not permitted."
 msgstr "शून्याचा उपयोग अनुमतित नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE Error."
+msgid "DDE Error."
 msgstr "DDE त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Awaiting response to DDE connection."
+msgid "Awaiting response to DDE connection."
 msgstr "DDE जुळणीसाठी प्रतिक्रिया अपेक्षित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "No DDE channels available."
+msgid "No DDE channels available."
 msgstr "कोणतीही DDE वाहिनी उपलब्ध नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "No application responded to DDE connect initiation."
+msgid "No application responded to DDE connect initiation."
 msgstr "कोणत्याही अनुप्रयोगाने DDE जुळणी प्रारंभाला प्रतिक्रिया दिली नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many applications responded to DDE connect initiation."
+msgid "Too many applications responded to DDE connect initiation."
 msgstr "अत्याधिक अनुप्रयोगांनी DDE जुळणी प्रारंभाला प्रतिक्रिया दिली."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE channel locked."
+msgid "DDE channel locked."
 msgstr "DDE वाहिनी सुरक्षाबंद केली आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application cannot execute DDE operation."
+msgid "External application cannot execute DDE operation."
 msgstr "बाह्य अनुप्रयोग DDE प्रक्रियाचे कार्यान्वयन करू शकत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Timeout while waiting for DDE response."
+msgid "Timeout while waiting for DDE response."
 msgstr "DDE प्रतिसादाची वाट पहाण्यात वेळ संपली."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "User pressed ESCAPE during DDE operation."
+msgid "User pressed ESCAPE during DDE operation."
 msgstr "वापरकर्त्याने DDE कार्यात ESCAPE ही कळ दाबली."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application busy."
+msgid "External application busy."
 msgstr "बाह्य अनुप्रयोग व्यस्त आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE operation without data."
+msgid "DDE operation without data."
 msgstr "डाटा शिवाय  DDE प्रक्रिया."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Data are in wrong format."
+msgid "Data are in wrong format."
 msgstr "डाटा चुकीच्या स्वरूपणांत आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application has been terminated."
+msgid "External application has been terminated."
 msgstr "बाह्य अनुप्रयोग थांबविण्यात आला आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE connection interrupted or modified."
+msgid "DDE connection interrupted or modified."
 msgstr "DDEजुळणीत व्यत्यय किंवा बदल झाले आहेत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE method invoked with no channel open."
+msgid "DDE method invoked with no channel open."
 msgstr "कोणतीही वाहिनी उघडल्याशिवाय DDE पद्धतीला आव्हान दिले."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid DDE link format."
+msgid "Invalid DDE link format."
 msgstr "अवैध DDE दुवा स्वरूपण."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE message has been lost."
+msgid "DDE message has been lost."
 msgstr "DDE संदेश हरवला आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Paste link already performed."
+msgid "Paste link already performed."
 msgstr "चिटकवा लिंक आधीपासूनच कार्यान्वित झाली आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Link mode cannot be set due to invalid link topic."
+msgid "Link mode cannot be set due to invalid link topic."
 msgstr "अवैध लिंक विषयामूळे लिंक अवस्था सेट करता आली नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE requires the DDEML.DLL file."
+msgid "DDE requires the DDEML.DLL file."
 msgstr "DDE साठी DDEML.DLLधारिका आवश्यक आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Module cannot be loaded; invalid format."
+msgid "Module cannot be loaded; invalid format."
 msgstr "कार्यघटक लोड करता येत नाही; अवैध स्वरूपण."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid object index."
+msgid "Invalid object index."
 msgstr "अवैध वस्तू अनुक्रमणिका."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object is not available."
+msgid "Object is not available."
 msgstr "वस्तू उपलब्ध नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect property value."
+msgid "Incorrect property value."
 msgstr "चुकीचे वैशिष्ट्य मूल्य."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property is read-only."
+msgid "This property is read-only."
 msgstr "हे वैशिष्ट्य केवळ-वाचनीय आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property is write only."
+msgid "This property is write only."
 msgstr "हे वैशिष्ट्य केवळ लेखनिय आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid object reference."
+msgid "Invalid object reference."
 msgstr "अवैध वस्तू संदर्भ."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Property or method not found: $(ARG1)."
+msgid "Property or method not found: $(ARG1)."
 msgstr "गुणधर्म किंवा पद्धत आढळले नाही: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object required."
+msgid "Object required."
 msgstr "वस्तू आवश्यक."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid use of an object."
+msgid "Invalid use of an object."
 msgstr "वस्तूचा अवैध उपयोग."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "OLE Automation is not supported by this object."
+msgid "OLE Automation is not supported by this object."
 msgstr "OLE ऑटोमेशन ह्या वस्तू द्वारा आधार देत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property or method is not supported by the object."
+msgid "This property or method is not supported by the object."
 msgstr "हे वैशिष्ट्य किंवा पद्धत वस्तू द्वारा आधार देत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "OLE Automation Error."
+msgid "OLE Automation Error."
 msgstr "OLE ऑटोमेशन त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This action is not supported by given object."
+msgid "This action is not supported by given object."
 msgstr "ही कृती दिलेल्या वस्तूद्वारा आधार देत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Named arguments are not supported by given object."
+msgid "Named arguments are not supported by given object."
 msgstr "नामांकित युक्तिवाद दिलेल्या वस्तूद्वारा आधार देत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The current locale setting is not supported by the given object."
+msgid "The current locale setting is not supported by the given object."
 msgstr "वर्तमान स्थानिक स्थापिते दिलेल्या वस्तूद्वारा आधार देत  नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Named argument not found."
+msgid "Named argument not found."
 msgstr "नावाचा युक्तिवाद सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Argument is not optional."
+msgid "Argument is not optional."
 msgstr "युक्तिवाद पर्यायी नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid number of arguments."
+msgid "Invalid number of arguments."
 msgstr "युक्तिवादांची अवैध संख्या."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object is not a list."
+msgid "Object is not a list."
 msgstr "वस्तू यादी नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid ordinal number."
+msgid "Invalid ordinal number."
 msgstr "अवैध  क्रमवाचक संख्या."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Specified DLL function not found."
+msgid "Specified DLL function not found."
 msgstr "निर्देशित DLL कार्य सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid clipboard format."
+msgid "Invalid clipboard format."
 msgstr "अवैध क्लिपबोर्डचे स्वरूपण."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object does not have this property."
+msgid "Object does not have this property."
 msgstr "वस्तूमध्ये हे वैशिष्ट्य नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object does not have this method."
+msgid "Object does not have this method."
 msgstr "वस्तूमध्ये ही पद्धत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Required argument lacking."
+msgid "Required argument lacking."
 msgstr "आवश्यक युक्तिवादाचा अभाव."
 
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid "Invalid number of arguments."
+msgstr "युक्तिवादांची अवैध संख्या."
+
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error executing a method."
+msgid "Error executing a method."
 msgstr "पद्धत कार्यान्वित करताना त्रुटी."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unable to set property."
+msgid "Unable to set property."
 msgstr "वैशिष्ट्याची मांडणी करण्यास असमर्थ."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unable to determine property."
+msgid "Unable to determine property."
 msgstr "वैशिष्ट्य निश्चित करणे असमर्थ."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unexpected symbol: $(ARG1)."
+msgid "Unexpected symbol: $(ARG1)."
 msgstr "अनपेक्षित चिन्ह: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Expected: $(ARG1)."
+msgid "Expected: $(ARG1)."
 msgstr "अपेक्षित: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Symbol expected."
+msgid "Symbol expected."
 msgstr "चिन्ह अपेक्षित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable expected."
+msgid "Variable expected."
 msgstr "वेरियेबल अपेक्षित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label expected."
+msgid "Label expected."
 msgstr "नामनिर्देशक पट्टी अपेक्षित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Value cannot be applied."
+msgid "Value cannot be applied."
 msgstr "मूल्य लागू करता येत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable $(ARG1) already defined."
+msgid "Variable $(ARG1) already defined."
 msgstr "वेरियेबल $(ARG1) आधीपासूनच परिभाषित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgid "Sub procedure or function procedure $(ARG1) already defined."
 msgstr "विषय प्रक्रिया किंवा कार्य प्रक्रिया $(ARG1) आधीपासूनच परिभाषित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label $(ARG1) already defined."
+msgid "Label $(ARG1) already defined."
 msgstr "नामनिर्देशक पट्टी $(ARG1) आधीपासूनच परिभाषित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable $(ARG1) not found."
+msgid "Variable $(ARG1) not found."
 msgstr "वेरियेबल $(ARG1) सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array or procedure $(ARG1) not found."
+msgid "Array or procedure $(ARG1) not found."
 msgstr "ऐरे किंवा प्रक्रिया $(ARG1) सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Procedure $(ARG1) not found."
+msgid "Procedure $(ARG1) not found."
 msgstr "प्रक्रिया $(ARG1) सापडत नाही."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label $(ARG1) undefined."
+msgid "Label $(ARG1) undefined."
 msgstr "नामनिर्देशक पट्टी $(ARG1) अपरिभाषित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unknown data type $(ARG1)."
+msgid "Unknown data type $(ARG1)."
 msgstr "अपरिचीत डाटा प्रकार $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Exit $(ARG1) expected."
+msgid "Exit $(ARG1) expected."
 msgstr "  $(ARG1) मधून बाहेर पडणे अपेक्षित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Statement block still open: $(ARG1) missing."
+msgid "Statement block still open: $(ARG1) missing."
 msgstr "निवेदन ब्लॉक अजूनही उघडा: $(ARG1) गहाळ."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Parentheses do not match."
+msgid "Parentheses do not match."
 msgstr "कंस विजोड आहेत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Symbol $(ARG1) already defined differently."
+msgid "Symbol $(ARG1) already defined differently."
 msgstr "चिन्ह $(ARG1) आधीपासूनच वेगळ्याने परिभाषित केलेली आहेत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Parameters do not correspond to procedure."
+msgid "Parameters do not correspond to procedure."
 msgstr "परिमाण प्रक्रियेशी संबंधित नाहीत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid character in number."
+msgid "Invalid character in number."
 msgstr "संख्येत अवैध अक्षर."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array must be dimensioned."
+msgid "Array must be dimensioned."
 msgstr "एर्रे परिमाणित केलाच पाहिजे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Else/Endif without If."
+msgid "Else/Endif without If."
 msgstr "Else/Endif विना If."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1) not allowed within a procedure."
+msgid "$(ARG1) not allowed within a procedure."
 msgstr "$(ARG1) प्रक्रियेत अनुमत नाहीत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1) not allowed outside a procedure."
+msgid "$(ARG1) not allowed outside a procedure."
 msgstr "$(ARG1) प्रक्रिये बाहेर अनुमत नाहीत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Dimension specifications do not match."
+msgid "Dimension specifications do not match."
 msgstr "परिमाण विशेषता अनुरूप नाहीत."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unknown option: $(ARG1)."
+msgid "Unknown option: $(ARG1)."
 msgstr "अपरिचीत पर्याय: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Constant $(ARG1) redefined."
+msgid "Constant $(ARG1) redefined."
 msgstr "स्थिरांक $(ARG1) पुनःपरिभाषित."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Program too large."
+msgid "Program too large."
 msgstr "प्रोग्राम खूपच मोठे आहे."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Strings or arrays not permitted."
+msgid "Strings or arrays not permitted."
 msgstr "वर्णाक्षरे किंवा ऐरेजनां परवानगी नाही."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "An exception occurred $(ARG1)."
+msgid "An exception occurred $(ARG1)."
 msgstr "अपवाद $(ARG1) आढळले."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This array is fixed or temporarily locked."
+msgid "This array is fixed or temporarily locked."
 msgstr "हा अर्रेत जागा नाही किंवा तात्पुर्ते कुलूपबंद केले आहे."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Out of string space."
+msgid "Out of string space."
 msgstr "अक्षर करीता जागा नाही."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Expression Too Complex."
+msgid "Expression Too Complex."
 msgstr "एक्सप्रेशन खूप क्लिष्ठ आहे."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Can't perform requested operation."
+msgid "Can't perform requested operation."
 msgstr "विनंतीकृत कार्यपद्धती कार्यान्वीत करू शकत नाही."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
+msgid "Too many DLL application clients."
 msgstr "खूप जास्त DLL अनुप्रयोग क्लाऐंट."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "For loop not initialized."
+msgid "For loop not initialized."
 msgstr "For लुप सुरू केले नाही."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1)"
+msgid "$(ARG1)"
 msgstr "$(ARG1)"
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
-msgid  "The macro running has been interrupted"
+msgid "The macro running has been interrupted"
 msgstr "चालू असणारा मॅक्रो व्यत्ययित झाला"
 
 #: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
-msgid  "Reference will not be saved: "
+msgid "Reference will not be saved: "
 msgstr "संदर्भ जतन करता येणार नाही: "
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error loading library '$(ARG1)'."
+msgid "Error loading library '$(ARG1)'."
 msgstr "लाइब्ररी '$(ARG1)' लोड करतेवेळी त्रुटी."
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error saving library: '$(ARG1)'."
+msgid "Error saving library: '$(ARG1)'."
 msgstr "लाइब्ररी साठवतेवेळी त्रुटी: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
 msgstr "धारिका '$(ARG1)' मधील BASIC प्रारंभ करता आले नाही."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error saving BASIC: '$(ARG1)'."
+msgid "Error saving BASIC: '$(ARG1)'."
 msgstr "BASIC साठवतेवेळी त्रुटी: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error removing library."
+msgid "Error removing library."
 msgstr "लाइब्ररी काढून टाकतेवेळी त्रुटी."
 
 #: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The library could not be removed from memory."
+msgid "The library could not be removed from memory."
 msgstr "लाइब्ररी स्मृतीतून काढून टाकणे शक्य नाही."
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
-msgid  "On"
+msgid "On"
 msgstr "चालू"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
-msgid  "Off"
+msgid "Off"
 msgstr "बंद"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
-msgid  "True"
+msgid "True"
 msgstr "खरे"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
-msgid  "False"
+msgid "False"
 msgstr "खोटे"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "हो"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "नाही"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
-msgid  "@0.00 $;@(0.00 $)"
+msgid "@0.00 $;@(0.00 $)"
 msgstr "@0.00 $;@(0.00 $)"

@@ -1,3594 +1,3717 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.STRING.TEXT
-msgid  "Title"
+#, fuzzy
+msgid "Title"
 msgstr "Sernav"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.STRING.TEXT
-msgid  "Size"
-msgstr "Mezinahî"
+msgid "Size"
+msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
-msgid  "Date modified"
+msgid "Date modified"
 msgstr "Dîroka sererastkirinê"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
-msgid  "Type"
+#, fuzzy
+msgid "Type"
 msgstr "Cure"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
-msgid  "Could not create the folder %1."
+msgid "Could not create the folder %1."
 msgstr "Afirandina peldanka %1 pêk nehat."
 
 #: contnr/fileview.src#STR_SVT_BYTES.STRING.TEXT
-msgid  "Bytes"
+msgid "Bytes"
 msgstr "Bayt"
 
 #: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
-msgid  "KB"
+msgid "KB"
 msgstr "KB"
 
 #: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
-msgid  "MB"
+msgid "MB"
 msgstr "MB"
 
 #: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
-msgid  "GB"
+msgid "GB"
 msgstr "GB"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Jêbirin"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MENUITEM.TEXT
-msgid  "~Rename"
+msgid "~Rename"
 msgstr "Ji nû ve bi~navîne"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.MODALDIALOG.TEXT
-msgid  "Confirm Delete"
+msgid "Confirm Delete"
 msgstr "Jêbirinê Teyît bike"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FIXEDTEXT.TEXT
-msgid  "Entry:"
+msgid "Entry:"
 msgstr "Têketin:"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
-msgid  "Are you sure you want to delete the selected data?"
+msgid "Are you sure you want to delete the selected data?"
 msgstr "Bi rastî jî tu dixwazî ev daneyên hilbijartî jê bibe?"
 
+#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
+msgid "~Delete"
+msgstr "~Jêbirin"
+
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
-msgid  "Delete ~All"
+msgid "Delete ~All"
 msgstr "~Hemûyan Jê bibe"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PUSHBUTTON.TEXT
-msgid  "Do ~Not Delete"
+msgid "Do ~Not Delete"
 msgstr "Jê ~nebe"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.STRING.TEXT
-msgid  "Row: %1, Column: %2"
+msgid "Row: %1, Column: %2"
 msgstr "Rêz: %1, Stûn: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.STRING.TEXT
-msgid  ", Type: %1, URL: %2"
+msgid ", Type: %1, URL: %2"
 msgstr ", Cure: %1, URL: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.STRING.TEXT
-msgid  "Folder"
+#, fuzzy
+msgid "Folder"
 msgstr "Peldank"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
-msgid  "File"
+#, fuzzy
+msgid "File"
 msgstr "Pel"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
-msgid  "Empty Field"
+msgid "Empty Field"
 msgstr "Qada Vala"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC.STRING.TEXT
-msgid  "New Document"
+msgid "New Document"
 msgstr "Belgeya Nû"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS.STRING.TEXT
-msgid  "My Documents"
+msgid "My Documents"
 msgstr "Belgeyên min"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES.STRING.TEXT
-msgid  "Templates"
+msgid "Templates"
 msgstr "Şablon"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES.STRING.TEXT
-msgid  "Samples"
+msgid "Samples"
 msgstr "Mînak"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
-msgid  "Back"
+msgid "Back"
 msgstr "Paş"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
-msgid  "Up One Level"
+#, fuzzy
+msgid "Up One Level"
 msgstr "Astekî Jor"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "Çap bike"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
-msgid  "Document Properties"
+msgid "Document Properties"
 msgstr "Taybetiyên Belgeyê"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
-msgid  "Preview"
-msgstr "Pêşdîtin"
+msgid "Preview"
+msgstr ""
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
-msgid  "Templates and Documents"
+msgid "Templates and Documents"
 msgstr "Şablon û Belge"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FIXEDTEXT.TEXT
-msgid  "~Get more templates online..."
+msgid "~Get more templates online..."
 msgstr "Zêdetir şablonan ji înternetê ~bîne..."
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organi~ze..."
+msgid "Organi~ze..."
 msgstr "~Rê ve bibe..."
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "~Sererast bike"
+#, fuzzy
+msgid "~Edit"
+msgstr "~Serrrast bike"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKBUTTON.TEXT
-msgid  "~Open"
+#, fuzzy
+msgid "~Open"
 msgstr "~Veke"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ITEMLIST.ITEM
-msgid  "Title"
+#, fuzzy
+msgid "Title"
 msgstr "Sernav"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ITEMLIST.ITEM
-msgid  "By"
+msgid "By"
 msgstr "Amadekar"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
-msgid  "Date"
+msgid "Date"
 msgstr "Dîrok"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
-msgid  "Keywords"
+msgid "Keywords"
 msgstr "Peyvên mifte"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
-msgid  "Description"
+msgid "Description"
 msgstr "Rave"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
-msgid  "Type"
+#, fuzzy
+msgid "Type"
 msgstr "Cure"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
-msgid  "Modified on"
+msgid "Modified on"
 msgstr "Guherî"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ITEMLIST.ITEM
-msgid  "Modified by"
+msgid "Modified by"
 msgstr "Yê guherand"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ITEMLIST.ITEM
-msgid  "Printed on"
+msgid "Printed on"
 msgstr "Hate nivîsandin"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ITEMLIST.ITEM
-msgid  "Printed by"
+msgid "Printed by"
 msgstr "Yê da nivîsîn"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
-msgid  "Subject"
+msgid "Subject"
 msgstr "Mijar"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
-msgid  "Size"
-msgstr "Mezinahî"
+msgid "Size"
+msgstr ""
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
-msgid  "Click here to create new documents."
+msgid "Click here to create new documents."
 msgstr "Ji bo belgeyeke nû vê derê bitikînin."
 
 #: contnr/templwin.src#STR_SVT_MYDOCS_HELP.STRING.TEXT
-msgid  "Contains your letters, reports and other documents"
+msgid "Contains your letters, reports and other documents"
 msgstr "Di naveroka wê de nameyên aîdî we, rapor û belgeyên din heye"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES_HELP.STRING.TEXT
-msgid  "Contains templates for creating new documents"
+msgid "Contains templates for creating new documents"
 msgstr "Di naveroka wê de şablonên ji bo çêkirina belgeyeke nû heye"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES_HELP.STRING.TEXT
-msgid  "Contains a selection of sample letters, reports and other documents"
+msgid "Contains a selection of sample letters, reports and other documents"
 msgstr "Nameyên mînak, rapor û belgeyan dihundirîne"
 
 #: control/calendar.src#STR_SVT_CALENDAR_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "Roj"
 
 #: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "Hefte"
 
 #: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
-msgid  "Today"
+msgid "Today"
 msgstr "Îro"
 
 #: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
-msgid  "None"
-msgstr "Tu yek"
+msgid "None"
+msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "Bixweber"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
+msgid "Alphanumeric"
 msgstr "Alfahejmarîk"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
-msgid  "Normal"
+msgid "Normal"
 msgstr "Asayî"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
-msgid  "Character set"
+msgid "Character set"
 msgstr "Komika karakteran"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
+msgid "Dictionary"
 msgstr "Ferheng"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.STRING.TEXT
-msgid  "Pinyin"
+msgid "Pinyin"
 msgstr "Pinyin"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_STROKE.STRING.TEXT
-msgid  "Stroke"
+msgid "Stroke"
 msgstr "Darbe"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.STRING.TEXT
-msgid  "Radical"
+msgid "Radical"
 msgstr "Radîkal"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.STRING.TEXT
-msgid  "Unicode"
+msgid "Unicode"
 msgstr "Unicode"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
+msgid "Zhuyin"
 msgstr "Zhuyin"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.STRING.TEXT
-msgid  "Phone book"
+msgid "Phone book"
 msgstr "Lênûska telefonan"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.STRING.TEXT
-msgid  "Phonetic (alphanumeric first)"
+msgid "Phonetic (alphanumeric first)"
 msgstr "Fonetîk (berê alfahejmarîk)"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
-msgid  "Phonetic (alphanumeric last)"
+msgid "Phonetic (alphanumeric last)"
 msgstr "Fonetîk (alfahejmarîk dû re)"
 
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
+msgid "Alphanumeric"
+msgstr "Alfahejmarîk"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
+msgid "Dictionary"
+msgstr "Ferheng"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
+msgid "Radical"
+msgstr "Radîkal"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
+msgid "Stroke"
+msgstr "Darbe"
+
+#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by syllables)"
+msgid "Phonetic (alphanumeric first, grouped by syllables)"
 msgstr "Fonetîk (alfahejmarîka pêşîn, bi kîteyan hatiye kategorîkirin)("
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by consonants)"
+msgid "Phonetic (alphanumeric first, grouped by consonants)"
 msgstr "Fonetîk (alfahejmarîk berê, bi dengdaran hatiye kategorîkirin)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by syllables)"
+msgid "Phonetic (alphanumeric last, grouped by syllables)"
 msgstr "Fonetîk (abecehejmariya dawî, bi kîteyan hatiye beşandin)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by consonants)"
+msgid "Phonetic (alphanumeric last, grouped by consonants)"
 msgstr "Fonetîk (abecehejmariya dawî, bi dengdar hatiye beşandin)"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT.STRING.TEXT
-msgid  "Light"
+msgid "Light"
 msgstr "Ronahî"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.STRING.TEXT
-msgid  "Light Italic"
+msgid "Light Italic"
 msgstr "îtalîka zirav"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr "Asayî"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "Îtalîk"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr "Qalind"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
+msgid "Bold Italic"
 msgstr "Qalind îtalîk"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK.STRING.TEXT
-msgid  "Black"
+msgid "Black"
 msgstr "Reş"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.STRING.TEXT
-msgid  "Black Italic"
+msgid "Black Italic"
 msgstr "îtalîka reş"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_BOTH.STRING.TEXT
-msgid  "The same font will be used on both your printer and your screen."
-msgstr "Ji bo nivîsandin û nîşandana dîmenderê de wê heman cureyê nivîsê were bikaranîn."
+msgid "The same font will be used on both your printer and your screen."
+msgstr ""
+"Ji bo nivîsandin û nîşandana dîmenderê de wê heman cureyê nivîsê were "
+"bikaranîn."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.STRING.TEXT
-msgid  "This is a printer font. The screen image may differ."
+msgid "This is a printer font. The screen image may differ."
 msgstr "Cureyê nivîsa nivîsokê. Dibe ku dîmenê di dîmenderê de cuda be."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.STRING.TEXT
-msgid  "This is a screen font. The printer image may differ."
-msgstr "Ev cureyekî nivîsa dîmenderê ye. Dibe ku dîmenê ji nîvîsokê were stendin cuda be."
+msgid "This is a screen font. The printer image may differ."
+msgstr ""
+"Ev cureyekî nivîsa dîmenderê ye. Dibe ku dîmenê ji nîvîsokê were stendin "
+"cuda be."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.STRING.TEXT
-msgid  "This font size has not been installed. The closest available size will be used."
-msgstr "Qama cureyê vê nivîsê nehate barkirin. Ji nav qamên mevcûd ya herî guncav wê were bikaranîn."
+msgid "This font size has not been installed. The closest available size will be used."
+msgstr ""
+"Qama cureyê vê nivîsê nehate barkirin. Ji nav qamên mevcûd ya herî guncav wê "
+"were bikaranîn."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.STRING.TEXT
-msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr "Vî cureyê nivisê wê were teqlîdkirin an jî wê dirûvê herî guncav were bikaranîn."
+msgid "This font style will be simulated or the closest matching style will be used."
+msgstr ""
+"Vî cureyê nivisê wê were teqlîdkirin an jî wê dirûvê herî guncav were "
+"bikaranîn."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.STRING.TEXT
-msgid  "This font has not been installed. The closest available font will be used."
-msgstr "Vî cureyê nivîsê nehate barkirin. Ji nav cureyên nivîsê yên mevcûd ya herî guncav wê were bikaranîn."
+msgid "This font has not been installed. The closest available font will be used."
+msgstr ""
+"Vî cureyê nivîsê nehate barkirin. Ji nav cureyên nivîsê yên mevcûd ya herî "
+"guncav wê were bikaranîn."
 
 #: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Bigere..."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
-msgid  "Move To Home"
+msgid "Move To Home"
 msgstr ""
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.STRING.TEXT
-msgid  "Move Left"
+msgid "Move Left"
 msgstr ""
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.STRING.TEXT
-msgid  "Move Right"
+msgid "Move Right"
 msgstr ""
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.STRING.TEXT
-msgid  "Move To End"
+msgid "Move To End"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Templates: Address Book Assignment"
+msgid "Templates: Address Book Assignment"
 msgstr "Şablon: Tayîna Lênûska Navnîşanan"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Address Book Source"
+msgid "Address Book Source"
 msgstr "Çavkaniya Lênûska Navnîşanan"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data source"
+msgid "Data source"
 msgstr "Çavkaniya Daneyan"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Address Data Source..."
+msgid "~Address Data Source..."
 msgstr "Çavkaniya Daneyên ~Navnîşanan..."
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "Tablo"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Field assignment"
+msgid "Field assignment"
 msgstr "Tayîna qade"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
 #, fuzzy
-msgid  "<none>"
+msgid "<none>"
 msgstr "<none>"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
 #, fuzzy
-msgid  "Company"
+msgid "Company"
 msgstr "Şîrket"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.STRING.TEXT
 #, fuzzy
-msgid  "Department"
+msgid "Department"
 msgstr "Beş"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
 #, fuzzy
-msgid  "First name"
+msgid "First name"
 msgstr "Nav"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
 #, fuzzy
-msgid  "Last name"
+msgid "Last name"
 msgstr "Paşnav"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
 #, fuzzy
-msgid  "Street"
+msgid "Street"
 msgstr "Kuçe"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
 #, fuzzy
-msgid  "Country"
+msgid "Country"
 msgstr "Welat"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
 #, fuzzy
-msgid  "ZIP Code"
+msgid "ZIP Code"
 msgstr "Koda Postê"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
 #, fuzzy
-msgid  "City"
+msgid "City"
 msgstr "Bajar"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "Sernav"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
 #, fuzzy
-msgid  "Position"
+msgid "Position"
 msgstr "Cih"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
 #, fuzzy
-msgid  "Addr. Form"
+msgid "Addr. Form"
 msgstr "Forma Navnîşaniyê"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.STRING.TEXT
 #, fuzzy
-msgid  "Initials"
+msgid "Initials"
 msgstr "Tîpên serî"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.STRING.TEXT
 #, fuzzy
-msgid  "Complimentary close"
+msgid "Complimentary close"
 msgstr "Xilasbûna temamker"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.STRING.TEXT
 #, fuzzy
-msgid  "Tel: Home"
+msgid "Tel: Home"
 msgstr "Telefoan Malê"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.STRING.TEXT
 #, fuzzy
-msgid  "Tel: Work"
+msgid "Tel: Work"
 msgstr "Telefona Kar"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.STRING.TEXT
 #, fuzzy
-msgid  "FAX"
+msgid "FAX"
 msgstr "FAKS"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
 #, fuzzy
-msgid  "E-mail"
+msgid "E-mail"
 msgstr "E-peyam"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
 #, fuzzy
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.STRING.TEXT
 #, fuzzy
-msgid  "Note"
+msgid "Note"
 msgstr "Nîşe"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.STRING.TEXT
 #, fuzzy
-msgid  "User 1"
+msgid "User 1"
 msgstr "Bikarhêner 1"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.STRING.TEXT
 #, fuzzy
-msgid  "User 2"
+msgid "User 2"
 msgstr "Bikarhêner 2"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.STRING.TEXT
 #, fuzzy
-msgid  "User 3"
+msgid "User 3"
 msgstr "Bikarhêner 3"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.STRING.TEXT
 #, fuzzy
-msgid  "User 4"
+msgid "User 4"
 msgstr "Bikarhêner 4"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.STRING.TEXT
 #, fuzzy
-msgid  "ID"
+msgid "ID"
 msgstr "ID"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.STRING.TEXT
 #, fuzzy
-msgid  "State"
+msgid "State"
 msgstr "Eyalet"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.STRING.TEXT
 #, fuzzy
-msgid  "Tel: Office"
+msgid "Tel: Office"
 msgstr "Telefona Kargehê"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.STRING.TEXT
 #, fuzzy
-msgid  "Pager"
+msgid "Pager"
 msgstr "Amûra Bangker"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
 #, fuzzy
-msgid  "Mobile"
+msgid "Mobile"
 msgstr "Telefona Destan"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
 #, fuzzy
-msgid  "Tel: Other"
+msgid "Tel: Other"
 msgstr "Telefonên Din"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
 #, fuzzy
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "Salname"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
 #, fuzzy
-msgid  "Invite"
+msgid "Invite"
 msgstr "Vexwîne"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SELECT.STRING.TEXT
 #, fuzzy
-msgid  "Select Directory"
+msgid "Select Directory"
 msgstr "Pelê Hilbijêre"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.STRING.TEXT
 #, fuzzy
-msgid  "Cannot change to directory"
+msgid "Cannot change to directory"
 msgstr "Pêrist nayê guherandin"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "Open"
+msgid "Open"
 msgstr "Veke"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
 #, fuzzy
-msgid  "~File"
+msgid "~File"
 msgstr "~Pel"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DIR.STRING.TEXT
 #, fuzzy
-msgid  "~Directory"
+msgid "~Directory"
 msgstr "~Peldank"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "File ~type"
+msgid "File ~type"
 msgstr "Cureyê ~Pelê"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.STRING.TEXT
 #, fuzzy
-msgid  "Can't open file"
+msgid "Can't open file"
 msgstr "Pel venabe"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.STRING.TEXT
 #, fuzzy
-msgid  "Can't open directory"
+msgid "Can't open directory"
 msgstr "Pêrist venabe"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.STRING.TEXT
 #, fuzzy
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "Pel mevcûd e. ↵\nBila li ser were nivîsîn?"
+msgid "This file already exists. \nOverwrite ?"
+msgstr ""
+"Pel mevcûd e. ↵\n"
+"Bila li ser were nivîsîn?"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_GOUP.STRING.TEXT
 #, fuzzy
-msgid  "Up One Level"
+msgid "Up One Level"
 msgstr "Astekî Jor"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Save"
+msgid "Save"
 msgstr "Tomar bike"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
 #, fuzzy
-msgid  "D~rive"
+msgid "D~rive"
 msgstr "~Ajokar"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_HOME.STRING.TEXT
 #, fuzzy
-msgid  "User Directory"
+msgid "User Directory"
 msgstr "Pêrista Bikarhêner"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.STRING.TEXT
 #, fuzzy
-msgid  "Create Directory"
+msgid "Create Directory"
 msgstr "Peldankê Biafirîne"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.STRING.TEXT
 #, fuzzy
-msgid  "Do you want the directory %s to be created ?"
+msgid "Do you want the directory %s to be created ?"
 msgstr "Bila %s were pêkanîn?"
 
 #: dialogs/formats.src#STR_FORMAT_STRING.STRING.TEXT
 #, fuzzy
-msgid  "Unformatted text"
+msgid "Unformatted text"
 msgstr "Teksta ku nehatiye dîrûvkirin"
 
 #: dialogs/formats.src#STR_FORMAT_BITMAP.STRING.TEXT
 #, fuzzy
-msgid  "Bitmap"
+msgid "Bitmap"
 msgstr "Bîtmap"
 
 #: dialogs/formats.src#STR_FORMAT_GDIMETAFILE.STRING.TEXT
 #, fuzzy
-msgid  "GDI metafile"
+msgid "GDI metafile"
 msgstr "GDI pela agahiyan"
 
 #: dialogs/formats.src#STR_FORMAT_RTF.STRING.TEXT
 #, fuzzy
-msgid  "Formatted text [RTF]"
+msgid "Formatted text [RTF]"
 msgstr "Nivîsa teşekirî [RTF]"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DRAWING.STRING.TEXT
 #, fuzzy
-msgid  "Drawing format"
+msgid "Drawing format"
 msgstr "Teşeya xêzkirinê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SVXB.STRING.TEXT
 #, fuzzy
-msgid  "SVXB (StarView bitmap/animation)"
+msgid "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (StarView bitmap/animation)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.STRING.TEXT
 #, fuzzy
-msgid  "Status Info from Svx Internal Link"
+msgid "Status Info from Svx Internal Link"
 msgstr "Agahiyên Rewşê ji Girêdana Hundurîn ya Svx"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SOLK.STRING.TEXT
 #, fuzzy
-msgid  "SOLK (%PRODUCTNAME Link)"
+msgid "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (Girêdana bi %PRODUCTNAME)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.STRING.TEXT
 #, fuzzy
-msgid  "Netscape Bookmark"
+msgid "Netscape Bookmark"
 msgstr "Bijareyên Netscape"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARSERVER.STRING.TEXT
 #, fuzzy
-msgid  "Star server format"
+msgid "Star server format"
 msgstr "Teşeya pêşkêşkera Star"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Star object format"
+msgid "Star object format"
 msgstr "Teşeya biresera Star"
 
 #: dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Applet object"
+msgid "Applet object"
 msgstr "Biresera Appletê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Plug-in object"
+msgid "Plug-in object"
 msgstr "Biresera Lehêqê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter 3.0 object"
+msgid "StarWriter 3.0 object"
 msgstr "Biresera StarWriter 3.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter 4.0 object"
+msgid "StarWriter 4.0 object"
 msgstr "Biresera StarWriter 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter 5.0 object"
+msgid "StarWriter 5.0 object"
 msgstr "Biresera StarWriter 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter/Web 4.0 object"
+msgid "StarWriter/Web 4.0 object"
 msgstr "Biresera StarWriter/Web 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter/Web 5.0 object"
+msgid "StarWriter/Web 5.0 object"
 msgstr "Biresera StarWriter/Web 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter/Master 4.0 object"
+msgid "StarWriter/Master 4.0 object"
 msgstr "Biresera StarWriter/Master 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter/Master 5.0 object"
+msgid "StarWriter/Master 5.0 object"
 msgstr "Biresera StarWriter/Global 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW.STRING.TEXT
 #, fuzzy
-msgid  "StarDraw object"
+msgid "StarDraw object"
 msgstr "Biresera StarDraw"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.STRING.TEXT
 #, fuzzy
-msgid  "StarDraw 4.0 object"
+msgid "StarDraw 4.0 object"
 msgstr "Biresera StarDraw 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.STRING.TEXT
 #, fuzzy
-msgid  "StarImpress 5.0 object"
+msgid "StarImpress 5.0 object"
 msgstr "Biresera StarImpress 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.STRING.TEXT
 #, fuzzy
-msgid  "StarDraw 5.0 object"
+msgid "StarDraw 5.0 object"
 msgstr "Biresera StarDraw 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC.STRING.TEXT
 #, fuzzy
-msgid  "StarCalc object"
+msgid "StarCalc object"
 msgstr "Biresera StarCalc"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.STRING.TEXT
 #, fuzzy
-msgid  "StarCalc  4.0 object"
+msgid "StarCalc  4.0 object"
 msgstr "Biresera StarCalc  4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.STRING.TEXT
 #, fuzzy
-msgid  "StarCalc 5.0 object"
+msgid "StarCalc 5.0 object"
 msgstr "Biresera StarCalc 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART.STRING.TEXT
 #, fuzzy
-msgid  "StarChart object"
+msgid "StarChart object"
 msgstr "Biresera StarChart"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.STRING.TEXT
 #, fuzzy
-msgid  "StarChart 4.0 object"
+msgid "StarChart 4.0 object"
 msgstr "Biresera StarChart 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
 #, fuzzy
-msgid  "StarChart 5.0 object"
+msgid "StarChart 5.0 object"
 msgstr "Biresera StarChart 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.STRING.TEXT
 #, fuzzy
-msgid  "StarImage object"
+msgid "StarImage object"
 msgstr "Biresera StarImage"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.STRING.TEXT
 #, fuzzy
-msgid  "StarImage 4.0 object"
+msgid "StarImage 4.0 object"
 msgstr "Biresera StarImage 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.STRING.TEXT
 #, fuzzy
-msgid  "StarImage 5.0 object"
+msgid "StarImage 5.0 object"
 msgstr "Biresera StarImage 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH.STRING.TEXT
 #, fuzzy
-msgid  "StarMath object"
+msgid "StarMath object"
 msgstr "Biresera StarMath"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.STRING.TEXT
 #, fuzzy
-msgid  "StarMath 4.0 object"
+msgid "StarMath 4.0 object"
 msgstr "Biresera StarMath 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.STRING.TEXT
 #, fuzzy
-msgid  "StarMath 5.0 object"
+msgid "StarMath 5.0 object"
 msgstr "Biresera StarMath 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.STRING.TEXT
 #, fuzzy
-msgid  "StarObject Paint object"
+msgid "StarObject Paint object"
 msgstr "Biresera Boyaxkirinê ya StarObject"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML.STRING.TEXT
 #, fuzzy
-msgid  "HTML (HyperText Markup Language)"
+msgid "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText Markup Language)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.STRING.TEXT
 #, fuzzy
-msgid  "HTML format"
+msgid "HTML format"
 msgstr "Teşeya HTML"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_5.STRING.TEXT
 #, fuzzy
-msgid  "Biff5 (Microsoft Excel 5.0/95)"
+msgid "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_8.STRING.TEXT
 #, fuzzy
-msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
+msgid "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SYLK.STRING.TEXT
 #, fuzzy
-msgid  "Sylk"
+msgid "Sylk"
 msgstr "Sylk"
 
 #: dialogs/formats.src#STR_FORMAT_ID_LINK.STRING.TEXT
 #, fuzzy
-msgid  "DDE link"
+msgid "DDE link"
 msgstr "Lînka DDE"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIF.STRING.TEXT
 #, fuzzy
-msgid  "DIF"
+msgid "DIF"
 msgstr "DIF"
 
 #: dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Microsoft Word object"
+msgid "Microsoft Word object"
 msgstr "Biresera Micosoft Word"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.STRING.TEXT
 #, fuzzy
-msgid  "StarFrameSet object"
+msgid "StarFrameSet object"
 msgstr "Biresera StarFrameSet"
 
 #: dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Office document object"
+msgid "Office document object"
 msgstr "Biresera belgeya ofîsê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.STRING.TEXT
 #, fuzzy
-msgid  "Notes document info"
+msgid "Notes document info"
 msgstr "Agahiya belgeya Notesê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Sfx document"
+msgid "Sfx document"
 msgstr "Belgeya Sfx"
+
+#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
+#, fuzzy
+msgid "StarChart 5.0 object"
+msgstr "Biresera StarChart 5.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
 #, fuzzy
-msgid  "Graphic object"
+msgid "Graphic object"
 msgstr "Biresera Grafîkê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr "Biresera Tekstê ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr ""
+"Biresera Tekstê ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr "Biresera tekst/webê ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr ""
+"Biresera tekst/webê ya %PRODUCTXMLFILEFORMATNAME %"
+"PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Nivîs/Tişta tevayî"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Nivîs/Tişta tevayî"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
-msgstr "Biresera Xêzkirinê Ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr ""
+"Biresera Xêzkirinê Ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "Biresera Berhema %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "Biresera Hesêb a %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
-msgstr "Biresera xêzkirinê ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr ""
+"Biresera xêzkirinê ya %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "Biresera Math a %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_WMF.STRING.TEXT
 #, fuzzy
-msgid  "Windows metafile"
+msgid "Windows metafile"
 msgstr "Pela agahiyan ya Wîndowsê"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "Data source object"
+msgid "Data source object"
 msgstr "Biresera çavkaniya doneyan"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Data source table"
+msgid "Data source table"
 msgstr "Tabloya çavkaniya doneyan"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.STRING.TEXT
 #, fuzzy
-msgid  "SQL query"
+msgid "SQL query"
 msgstr "Jêpirsîna SQL"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "Diyaloga %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.STRING.TEXT
 #, fuzzy
-msgid  "Link"
+msgid "Link"
 msgstr "Lînk"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.STRING.TEXT
 #, fuzzy
-msgid  "HTML format without comments"
+msgid "HTML format without comments"
 msgstr "Teşeyê HTML ya bêşîrove"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.STRING.TEXT
-msgid  "Ready"
+msgid "Ready"
 msgstr "Amade"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.STRING.TEXT
-msgid  "Paused"
+msgid "Paused"
 msgstr "Hatiye rawestandin"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.STRING.TEXT
-msgid  "Pending deletion"
+msgid "Pending deletion"
 msgstr "Dike jê were birin"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
-msgid  "Busy"
+msgid "Busy"
 msgstr "Mijûl"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
-msgid  "Initializing"
+msgid "Initializing"
 msgstr "Dest pê bik"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.STRING.TEXT
-msgid  "Waiting"
+msgid "Waiting"
 msgstr "Li hêviyê ye"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.STRING.TEXT
-msgid  "Warming up"
+msgid "Warming up"
 msgstr "Germ dibe"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.STRING.TEXT
-msgid  "Processing"
+msgid "Processing"
 msgstr "Dişixule"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.STRING.TEXT
-msgid  "Printing"
+msgid "Printing"
 msgstr "Tê çapkirin"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
-msgid  "Offline"
+msgid "Offline"
 msgstr "Negirêdayî"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Xeletî"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
-msgid  "Unknown Server"
+msgid "Unknown Server"
 msgstr "Pêşkêşkera nayê zanîn"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.STRING.TEXT
-msgid  "Paper jam"
+msgid "Paper jam"
 msgstr "Şidîna Kaxizê"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.STRING.TEXT
-msgid  "Not enough paper"
+msgid "Not enough paper"
 msgstr "Têra xwe kaxiz tuneye"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.STRING.TEXT
-msgid  "Manual feed"
+msgid "Manual feed"
 msgstr "Têrkirina bi destan"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.STRING.TEXT
-msgid  "Paper problem"
+msgid "Paper problem"
 msgstr "Pirsgirêka kaxizan"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.STRING.TEXT
-msgid  "I/O active"
+msgid "I/O active"
 msgstr "Ketin/Derketin çalak"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.STRING.TEXT
-msgid  "Output bin full"
+msgid "Output bin full"
 msgstr "Çavika derçûnan tije bû"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.STRING.TEXT
-msgid  "Toner low"
+msgid "Toner low"
 msgstr "Toner kêm bû"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.STRING.TEXT
-msgid  "No toner"
+msgid "No toner"
 msgstr "Toner qediya"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.STRING.TEXT
-msgid  "Delete Page"
+msgid "Delete Page"
 msgstr "Rûpelê jê bibe"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.STRING.TEXT
-msgid  "User intervention necessary"
+msgid "User intervention necessary"
 msgstr "Midaxeleya Bikarhêner divê"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.STRING.TEXT
-msgid  "Insufficient memory"
+msgid "Insufficient memory"
 msgstr "Xêv têrê nake"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.STRING.TEXT
-msgid  "Cover open"
+msgid "Cover open"
 msgstr "Devgir vekirî ye"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.STRING.TEXT
-msgid  "Power save mode"
+msgid "Power save mode"
 msgstr "Moda teserrûfa enerjiyê"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "Çapgera standard"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.STRING.TEXT
-msgid  "%d documents"
+msgid "%d documents"
 msgstr "%d belge"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Printer Setup"
+msgid "Printer Setup"
 msgstr "Sazkirina Çaperê"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Printer"
+msgid "Printer"
 msgstr "Çaper"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Name"
+msgid "~Name"
 msgstr "~Nav"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Propert~ies..."
+msgid "Propert~ies..."
 msgstr "~Taybetmendî..."
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Status"
+msgid "Status"
 msgstr "Rewş"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "Cure"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Location"
+msgid "Location"
 msgstr "Cih"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Comment"
-msgstr "Şirove"
+msgid "Comment"
+msgstr "Şîrove"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "~Vebijêrk..."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "General OLE error."
+msgid "General OLE error."
 msgstr "Çewtiya OLE ya giştî."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection to the object cannot be established."
+msgid "The connection to the object cannot be established."
 msgstr "Bi bireser re girêdan pêk nayê."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "No cache files were updated."
+msgid "No cache files were updated."
 msgstr "Tu pelên pêşbîr nehate rojanekirin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Some cache files were not updated."
+msgid "Some cache files were not updated."
 msgstr "Hinek pelên pêşbîr nayên rojanekirin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Status of object cannot be determined in a timely manner."
+msgid "Status of object cannot be determined in a timely manner."
 msgstr "Rewşa bireserê di demekî kêrhatî de nayê diyarbûn."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Source of the OLE link has been converted."
+msgid "Source of the OLE link has been converted."
 msgstr "Çavkaniya girêdana OLE hatiye veguherîn."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The object could not be found."
+msgid "The object could not be found."
 msgstr "Bireser nayê dîtin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The process could not be completed within the specified time period."
+msgid "The process could not be completed within the specified time period."
 msgstr "Pêvajo di demê hatiye taybetkirin de temam nabe."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "OLE could not connect to a network device (server)."
+msgid "OLE could not connect to a network device (server)."
 msgstr "OLE nikare bi cîhaza torê (pêşkêşker) re girêdan çê bike."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The object found does not support the interface required for the desired operation."
-msgstr "Biresera hatiye dîtin piştgirî nade dirûvê yê ji bo karê daxwazkirî hewceye."
+msgid "The object found does not support the interface required for the desired operation."
+msgstr ""
+"Biresera hatiye dîtin piştgirî nade dirûvê yê ji bo karê daxwazkirî hewceye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Interface not supported."
+msgid "Interface not supported."
 msgstr "Dirûv nayê piştgirîdan."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Insufficient memory."
+msgid "Insufficient memory."
 msgstr "Bîr têrê nake."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection name could not be processed."
+msgid "The connection name could not be processed."
 msgstr "Navê girêdanê nayê xebitandin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection name could not be reduced further."
+msgid "The connection name could not be reduced further."
 msgstr "Navê girêdanê nayê kêmtir kirin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection name has no inverse."
+msgid "The connection name has no inverse."
 msgstr "Vajiya navê girêdanê tuneye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "No common prefix exists."
+msgid "No common prefix exists."
 msgstr "Tu pêşgira giştî tuneye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection name is contained in the other one."
+msgid "The connection name is contained in the other one."
 msgstr "Navê girêdanê di ya din de heye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection names (the receiver and the other moniker) are identical."
+msgid "The connection names (the receiver and the other moniker) are identical."
 msgstr "Navên girêdanan (girtiyar û navlêkerê din) wekhevin."
+
+#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
+#, fuzzy
+msgid "The connection name is contained in the other one."
+msgstr "Navê girêdanê di ya din de heye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The connection name cannot be connected. This is a relative name."
+msgid "The connection name cannot be connected. This is a relative name."
 msgstr "Bi navê girêdanê re nayê girêdan. Ev navekî rêjeyî ye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Operation not implemented."
+msgid "Operation not implemented."
 msgstr "Kirarî hê nehatiye sepandin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "No storage."
+msgid "No storage."
 msgstr "Depo tuneye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "False."
+msgid "False."
 msgstr "Şaşiye."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Monikers must be composed generically."
+msgid "Monikers must be composed generically."
 msgstr "Lêker divê bi gîştî bên lihevkirin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Data not available at this time."
+msgid "Data not available at this time."
 msgstr "Vê gavê dane nayên bikaranîn."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Object could not be activated InPlace."
+msgid "Object could not be activated InPlace."
 msgstr "Bireser li vir nayê çalak kirin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Invalid index."
+msgid "Invalid index."
 msgstr "Pêrista nederbasdar."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The action cannot be executed in the object's current state."
+msgid "The action cannot be executed in the object's current state."
 msgstr "Çalakî di cihê bireserê yê niha de nayê xebitandin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "An invalid window was passed when activated."
+msgid "An invalid window was passed when activated."
 msgstr "Demê çalak kirinê de paceyekî nederbasar hate borîn."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The object does not support any actions."
+msgid "The object does not support any actions."
 msgstr "Bireser piştgirî nade tu çalakiyan."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The action is not defined. The default action will be executed."
+msgid "The action is not defined. The default action will be executed."
 msgstr "Çalakî nehatiye danasîn. Çalakiya standard dê were xebitandin."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "A link to the network could not be re-established."
+msgid "A link to the network could not be re-established."
 msgstr "Girêdanekî bi torê re nû ve pêk nayê."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Object does not support this action."
+msgid "Object does not support this action."
 msgstr "Bireser piştgirî nade vê çalakiyê."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE_&_S_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The specified file could not be opened."
+msgid "The specified file could not be opened."
 msgstr "Pela taybetkirî venabe."
 
 #: dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.STRING.TEXT
 #, fuzzy
-msgid  "$(ERR) activating object"
+msgid "$(ERR) activating object"
 msgstr "$(ERR) çalakkirina bireserê"
 
 #: dialogs/so3res.src#STR_INS_OBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Inserts a new %1-Object into your document."
+msgid "Inserts a new %1-Object into your document."
 msgstr "Bireserekî %1 ya nû têxe di belgeyê de."
 
 #: dialogs/so3res.src#STR_INS_OBJECT_ICON.STRING.TEXT
 #, fuzzy
-msgid  "Inserts a new %1-Object into your document as a symbol."
+msgid "Inserts a new %1-Object into your document as a symbol."
 msgstr "Bireserekî %1 ya nû wek sembol têxe di belgeyê de."
 
 #: dialogs/so3res.src#STR_INS_FILE.STRING.TEXT
 #, fuzzy
-msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr "Naveroka belgeyê têxe di belgeya we de ku paşê hun bi sepana orjînal sererast bikin."
+msgid "Inserts the contents of the file into your document to enable later editing in the original application."
+msgstr ""
+"Naveroka belgeyê têxe di belgeya we de ku paşê hun bi sepana orjînal "
+"sererast bikin."
 
 #: dialogs/so3res.src#STR_INS_PLUGIN.STRING.TEXT
 #, fuzzy
-msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr "Bireserekî pêvekê bi çavkaniyekî daneya pêvekê re ditêxe di belgeya we de. Dema bireser dê çalakkirin, pêvek bixweber destpê xebitandinê dike."
+msgid "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
+msgstr ""
+"Bireserekî pêvekê bi çavkaniyekî daneya pêvekê re ditêxe di belgeya we de. "
+"Dema bireser dê çalakkirin, pêvek bixweber destpê xebitandinê dike."
 
 #: dialogs/so3res.src#STR_INS_APPLET.STRING.TEXT
 #, fuzzy
-msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr "Bireserekî sepanok ditêxe di belgeya we de. Dema bireser dê çalakkirin, sepanok bixweber destpê xebitandinê dike."
+msgid "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
+msgstr ""
+"Bireserekî sepanok ditêxe di belgeya we de. Dema bireser dê çalakkirin, "
+"sepanok bixweber destpê xebitandinê dike."
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON.STRING.TEXT
 #, fuzzy
-msgid  "Inserts the contents of the file as an icon into your document."
+msgid "Inserts the contents of the file as an icon into your document."
 msgstr "Naveroka pelê wek îkon ditêxe di belgeya we de."
 
 #: dialogs/so3res.src#STR_INS_FILE_LINK.STRING.TEXT
 #, fuzzy
-msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr "Naveroka pelê ditêxe di belgeya we de û bi çavkaniya pelê re girêdanekî ava dike. Heke pela çavkanî were guherîn, dê belgeya we jî bixweber were guherîn."
+msgid "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
+msgstr ""
+"Naveroka pelê ditêxe di belgeya we de û bi çavkaniya pelê re girêdanekî ava "
+"dike. Heke pela çavkanî were guherîn, dê belgeya we jî bixweber were "
+"guherîn."
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON_LINK.STRING.TEXT
 #, fuzzy
-msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr "Îkona pelê ditêxe di belgeya we de. Heke pela çavkanî were guherîn, dê belgeya we jî bixweber were guherîn."
+msgid "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
+msgstr ""
+"Îkona pelê ditêxe di belgeya we de. Heke pela çavkanî were guherîn, dê "
+"belgeya we jî bixweber were guherîn."
 
 #: dialogs/so3res.src#STR_PASTE.STRING.TEXT
 #, fuzzy
-msgid  "Pastes the contents of the clipboard as %1 in your document."
+msgid "Pastes the contents of the clipboard as %1 in your document."
 msgstr "Naveroka ji pano wek %1 di belgeya we de pêvedike."
 
 #: dialogs/so3res.src#STR_CONVERT_TO.STRING.TEXT
 #, fuzzy
-msgid  "Converts the selected %1object to the object type %2."
+msgid "Converts the selected %1object to the object type %2."
 msgstr "%1object a hilbijartî vediguherîne cureya bireser %2."
 
 #: dialogs/so3res.src#STR_ACTIVATE_AS.STRING.TEXT
 #, fuzzy
-msgid  "All objects of type %1 are activated as %2, but not converted"
+msgid "All objects of type %1 are activated as %2, but not converted"
 msgstr "Hemû bireserên bi cureya %1 wek %2 tên çalakkirin, lê nayên veguherîn"
 
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Veke"
 
 #: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
 #, fuzzy
-msgid  "~Properties"
+msgid "~Properties"
 msgstr "~Taybetmendî"
 
 #: dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.STRING.TEXT
 #, fuzzy
-msgid  "Plug-in % cannot be displayed."
+msgid "Plug-in % cannot be displayed."
 msgstr "Pêveka % nayê nîşandan."
 
 #: dialogs/so3res.src#STR_ERROR_DDE.STRING.TEXT
 #, fuzzy
-msgid  "DDE link to % for % area % are not available."
+msgid "DDE link to % for % area % are not available."
 msgstr "Girêdana DDE ya % ji bo % qad % tuneye."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE.STRING.TEXT
 #, fuzzy
-msgid  "Object % could not be inserted."
+msgid "Object % could not be inserted."
 msgstr "Biresera % lê nayê zêdekirin."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.STRING.TEXT
 #, fuzzy
-msgid  "Object from file % could not be inserted."
+msgid "Object from file % could not be inserted."
 msgstr "Biresera ji pela % lê nayê zêdekirin."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.STRING.TEXT
 #, fuzzy
-msgid  "Plug-in from document % could not be inserted."
+msgid "Plug-in from document % could not be inserted."
 msgstr "Pêveka ji belgeya % lê nayê zêdekîrin."
 
 #: dialogs/so3res.src#STR_QUERYUPDATELINKS.STRING.TEXT
 #, fuzzy
-msgid  "Update all links?"
+msgid "Update all links?"
 msgstr "Bila girêdanan rojane bike?"
 
 #: dialogs/so3res.src#STR_FURTHER_OBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Further objects"
+msgid "Further objects"
 msgstr "Zêdetir bireser"
 
 #: dialogs/so3res.src#STR_EDIT_APPLET.STRING.TEXT
 #, fuzzy
-msgid  "Edit Applet"
+msgid "Edit Applet"
 msgstr "Sepanok Sererast Bike"
 
 #: dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Deactivate"
+msgid "Deactivate"
 msgstr "Neçalak Bike"
 
 #: dialogs/so3res.src#STR_UNKNOWN_SOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Unknown source"
+msgid "Unknown source"
 msgstr "Çavkaniya nenas"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_FINISH.STRING.TEXT
 #, fuzzy
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Biqedîne"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_NEXT.STRING.TEXT
 #, fuzzy
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Pêş ve >>"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.STRING.TEXT
 #, fuzzy
-msgid  "<< Bac~k"
+msgid "<< Bac~k"
 msgstr "<< Paş~de"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Steps"
+msgid "Steps"
 msgstr "Gav"
 
 #: filter/exportdialog.src#DLG_EXPORT_TITLE.STRING.TEXT
-msgid  " Options"
+msgid " Options"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
+msgid "Size"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEX.FIXEDTEXT.TEXT
-msgid  "Width:"
+msgid "Width:"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "inches"
+msgid "inches"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "cm"
+msgid "cm"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "mm"
+msgid "mm"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM4.STRINGLIST.ITEM
-msgid  "points"
+msgid "points"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "pixels"
+msgid "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FIXEDTEXT.TEXT
-msgid  "Height:"
+msgid "Height:"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
+msgid "inches"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
+msgid "cm"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
+msgid "mm"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
+msgid "points"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
+msgid "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
-msgid  "Resolution:"
+msgid "Resolution:"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.ITEM1.STRINGLIST.ITEM
-msgid  "pixels/cm"
+msgid "pixels/cm"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.DEFAULT.STRINGLIST.ITEM
-msgid  "pixels/inch"
+msgid "pixels/inch"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.ITEM3.STRINGLIST.ITEM
-msgid  "pixels/meter"
+msgid "pixels/meter"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.FIXEDLINE.TEXT
-msgid  "Color Depth"
+msgid "Color Depth"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.STRING.TEXT
-msgid  "1 bit threshold"
+msgid "1 bit threshold"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.STRING.TEXT
-msgid  "1 bit dithered"
+msgid "1 bit dithered"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.STRING.TEXT
-msgid  "4 bit grayscale"
+msgid "4 bit grayscale"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.STRING.TEXT
-msgid  "4 bit color"
+msgid "4 bit color"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.STRING.TEXT
-msgid  "8 bit grayscale"
+msgid "8 bit grayscale"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.STRING.TEXT
-msgid  "8 bit color"
+msgid "8 bit color"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.STRING.TEXT
-msgid  "24 bit true color"
+msgid "24 bit true color"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.FIXEDLINE.TEXT
-msgid  "Quality"
+msgid "Quality"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_COMPRESSION.FIXEDLINE.TEXT
-msgid  "Compression"
+msgid "Compression"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_MODE.FIXEDLINE.TEXT
-msgid  "Mode"
+msgid "Mode"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.FIXEDLINE.TEXT
-msgid  "File Format"
+msgid "File Format"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_JPG_MIN.FIXEDTEXT.TEXT
-msgid  "1 is minimum Quality and smallest file size."
+msgid "1 is minimum Quality and smallest file size."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_JPG_MAX.FIXEDTEXT.TEXT
-msgid  "100 is maximum Quality and biggest file size."
+msgid "100 is maximum Quality and biggest file size."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_PNG_MIN.FIXEDTEXT.TEXT
-msgid  "0 is biggest file size and fastest loading."
+msgid "0 is biggest file size and fastest loading."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_PNG_MAX.FIXEDTEXT.TEXT
-msgid  "9 is smallest file size and slowest loading."
+msgid "9 is smallest file size and slowest loading."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.CHECKBOX.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_INTERLACED.CHECKBOX.TEXT
-msgid  "Interlaced"
+msgid "Interlaced"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.CHECKBOX.TEXT
-msgid  "RLE encoding"
+msgid "RLE encoding"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.FIXEDLINE.TEXT
-msgid  "Drawing Objects"
+msgid "Drawing Objects"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Save transparency"
+msgid "Save transparency"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_BINARY.RADIOBUTTON.TEXT
-msgid  "Binary"
+msgid "Binary"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RADIOBUTTON.TEXT
-msgid  "Text"
+msgid "Text"
+msgstr ""
+
+#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
+msgid "Preview"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
-msgid  "Image Preview (TIFF)"
+msgid "Image Preview (TIFF)"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.CHECKBOX.TEXT
-msgid  "Interchange (EPSI)"
+msgid "Interchange (EPSI)"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.FIXEDLINE.TEXT
-msgid  "Version"
+msgid "Version"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.RADIOBUTTON.TEXT
-msgid  "Level 1"
+msgid "Level 1"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.RADIOBUTTON.TEXT
-msgid  "Level 2"
+msgid "Level 2"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.FIXEDLINE.TEXT
-msgid  "Color format"
+msgid "Color format"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.RADIOBUTTON.TEXT
-msgid  "Color"
+msgid "Color"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.RADIOBUTTON.TEXT
-msgid  "Grayscale"
+msgid "Grayscale"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.RADIOBUTTON.TEXT
-msgid  "LZW encoding"
+msgid "LZW encoding"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.RADIOBUTTON.TEXT
-msgid  "None"
+msgid "None"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.STRING.TEXT
-msgid  "The picture needs about %1 KB of memory."
+msgid "The picture needs about %1 KB of memory."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.STRING.TEXT
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgid "The picture needs about %1 KB of memory,\n the file size is %2 KB."
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.STRING.TEXT
-msgid  "The file size is %1 KB."
+msgid "The file size is %1 KB."
 msgstr ""
 
 #: java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
-msgstr "%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga Xebitandina Javayê (JRE) heye. Ji kerema xwe JREyekê bar bikin û %PRODUCTNAME yê ji nû ve bide destpêkirin."
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga "
+"Xebitandina Javayê (JRE) heye. Ji kerema xwe JREyekê bar bikin û %"
+"PRODUCTNAME yê ji nû ve bide destpêkirin."
 
 #: java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
-msgstr "Avakirina %PRODUCTNAME hate guherin. Amûr-Bijartek-%PRODUCTNAME-Java de di binê javayê de, nêvenga Javayê ya ku tu dixwazî bi %PRODUCTNAME re bixebitinê hilbijêre."
+msgid "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
+msgstr ""
+"Avakirina %PRODUCTNAME hate guherin. Amûr-Bijartek-%PRODUCTNAME-Java de di "
+"binê javayê de, nêvenga Javayê ya ku tu dixwazî bi %PRODUCTNAME re "
+"bixebitinê hilbijêre."
 
 #: java/javaerror.src#QBX_JAVADISABLED.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
-msgstr "%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga Xebitandina Javayê (JRE) heye. Teva vê yekê jî xebitandina JRE hatiye xebitandin. Tu dixwazî bikaranîna JREyê çalak bike."
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
+msgstr ""
+"%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga "
+"Xebitandina Javayê (JRE) heye. Teva vê yekê jî xebitandina JRE hatiye "
+"xebitandin. Tu dixwazî bikaranîna JREyê çalak bike."
 
 #: java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr "%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga Xebitandina Javayê (JRE) heye. JREya hatiye hilbijartin jî xerabe ye. Ji kerema xwe guhertoyeke din hilbijêrin an jî JREyekedin lê bar bikin û Amûr - Bijartek-%PRODUCTNAME  ji binê Javayê wê hilbijêrin."
+msgid "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+"%PRODUCTNAME ji bo ku karibe vê peywirê bi cih bîne pêdiviya wê bi Nêvenga "
+"Xebitandina Javayê (JRE) heye. JREya hatiye hilbijartin jî xerabe ye. Ji "
+"kerema xwe guhertoyeke din hilbijêrin an jî JREyekedin lê bar bikin û Amûr - "
+"Bijartek-%PRODUCTNAME  ji binê Javayê wê hilbijêrin."
 
 #: java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
-msgstr "Nêvenga Xebitandina Javaya ku hatiye hilbijartin ji bo rast bixebite divê %PRODUCTNAME ji nû were destpêkirin. Ji kerema xwe %PRODUCTNAME ji nû ve bide destpêkirin."
+msgid "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+"Nêvenga Xebitandina Javaya ku hatiye hilbijartin ji bo rast bixebite divê %"
+"PRODUCTNAME ji nû were destpêkirin. Ji kerema xwe %PRODUCTNAME ji nû ve bide "
+"destpêkirin."
 
 #: java/javaerror.src#STR_WARNING_JAVANOTFOUND.STRING.TEXT
 #, fuzzy
-msgid  "JRE Required"
+msgid "JRE Required"
 msgstr "JRE Pêwist e"
 
 #: java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.STRING.TEXT
 #, fuzzy
-msgid  "Select JRE"
+msgid "Select JRE"
 msgstr "JRE Hilbijêre"
 
 #: java/javaerror.src#STR_ERROR_RESTARTREQUIRED.STRING.TEXT
 #, fuzzy
-msgid  "Restart Required"
+msgid "Restart Required"
 msgstr "Divê Ji Nû Ve Dest Pê Bike"
 
 #: java/javaerror.src#STR_QUESTION_JAVADISABLED.STRING.TEXT
 #, fuzzy
-msgid  "Enable JRE"
+msgid "Enable JRE"
 msgstr "JRE Çalak"
 
 #: java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.STRING.TEXT
 #, fuzzy
-msgid  "JRE is Defective"
+msgid "JRE is Defective"
 msgstr "JRE xerabe ye"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
 #, fuzzy
-msgid  "Source code"
+msgid "Source code"
 msgstr "Koda çavkanî"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
 #, fuzzy
-msgid  "Bookmark file"
+msgid "Bookmark file"
 msgstr "Pelê bijareyan"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "Grafîk"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.STRING.TEXT
 #, fuzzy
-msgid  "Configuration file"
+msgid "Configuration file"
 msgstr "Pelê mîhengan"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
 #, fuzzy
-msgid  "Application"
+msgid "Application"
 msgstr "Sepan"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Database table"
+msgid "Database table"
 msgstr "Tabloya danegirê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
 #, fuzzy
-msgid  "System file"
+msgid "System file"
 msgstr "Pelê pergalê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
 #, fuzzy
-msgid  "MS Word document"
+msgid "MS Word document"
 msgstr "Belgeya MS Word"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Help file"
+msgid "Help file"
 msgstr "Pelê alîkariyê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
 #, fuzzy
-msgid  "HTML document"
+msgid "HTML document"
 msgstr "Belgeya HTML"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.STRING.TEXT
 #, fuzzy
-msgid  "Archive file"
+msgid "Archive file"
 msgstr "Pelê arşîvê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.STRING.TEXT
 #, fuzzy
-msgid  "Log file"
+msgid "Log file"
 msgstr "Pelê tomaran"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%STAROFFICE Database"
+msgid "%STAROFFICE Database"
 msgstr "Danegeha %STAROFFICE"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.STRING.TEXT
 #, fuzzy
-msgid  "StarWriter 4.0 / 5.0 Master Document"
+msgid "StarWriter 4.0 / 5.0 Master Document"
 msgstr "Makebelgeya tekstê ya StarWriter 4.0 / 5.0"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%STAROFFICE Image"
+msgid "%STAROFFICE Image"
 msgstr "Wêne %STAROFFICE"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.STRING.TEXT
 #, fuzzy
-msgid  "Text file"
+msgid "Text file"
 msgstr "Pelê tekstê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LINK.STRING.TEXT
 #, fuzzy
-msgid  "Link"
+msgid "Link"
 msgstr "Lînk"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%STAROFFICE 3.0 - 5.0 Template"
+msgid "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "Şablona %STAROFFICE 3.0 - 5.0"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.STRING.TEXT
 #, fuzzy
-msgid  "MS Excel document"
+msgid "MS Excel document"
 msgstr "Belgeya MS Excel"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "MS Excel template"
+msgid "MS Excel template"
 msgstr "Şablona MS Excel"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.STRING.TEXT
 #, fuzzy
-msgid  "Batch file"
+msgid "Batch file"
 msgstr "Pelgê komikî"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
 #, fuzzy
-msgid  "File"
+msgid "File"
 msgstr "Pel"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
 #, fuzzy
-msgid  "Folder"
+msgid "Folder"
 msgstr "Peldank"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.STRING.TEXT
 #, fuzzy
-msgid  "Text Document"
+msgid "Text Document"
 msgstr "Belgeya Nivîsê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
 #, fuzzy
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Tabloya Hesêb"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
 #, fuzzy
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "Pêşkêşî"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
 #, fuzzy
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "Xêzkêşan"
+
+#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
+#, fuzzy
+msgid "HTML document"
+msgstr "Belgeya HTML"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
 #, fuzzy
-msgid  "Master document"
+msgid "Master document"
 msgstr "Tabloya Hesêb"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.STRING.TEXT
 #, fuzzy
-msgid  "Formula"
+msgid "Formula"
 msgstr "Formul"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
 #, fuzzy
-msgid  "Database"
+msgid "Database"
 msgstr "Danegeh"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 msgstr "Şablona Tabloya Hesêb ya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 msgstr "Şablona Xêzkirinê ya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 msgstr "Şablona Pêşkêşiya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr "Şablona Belgeya Tekste ya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.STRING.TEXT
 #, fuzzy
-msgid  "Local drive"
+msgid "Local drive"
 msgstr "Ajokara herêmî"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.STRING.TEXT
 #, fuzzy
-msgid  "Disk drive"
+msgid "Disk drive"
 msgstr "Ajokara Dîsketê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.STRING.TEXT
 #, fuzzy
-msgid  "CD-ROM drive"
+msgid "CD-ROM drive"
 msgstr "Ajokar CD-ROM"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.STRING.TEXT
 #, fuzzy
-msgid  "Network connection"
+msgid "Network connection"
 msgstr "Girêdana torê"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.STRING.TEXT
 #, fuzzy
-msgid  "MS PowerPoint Document"
+msgid "MS PowerPoint Document"
 msgstr "Belgeya MS PowerPoint"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "MS PowerPoint Template"
+msgid "MS PowerPoint Template"
 msgstr "Şablona MS PowerPoint"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.STRING.TEXT
 #, fuzzy
-msgid  "MS PowerPoint Show"
+msgid "MS PowerPoint Show"
 msgstr "Dîmenê MS PowerPoint"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "Formula %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "Grafîka %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "Xêzkirina %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "Tabloya hesêb a %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "Pêşkêşiya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "Belgeya tekstan a %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "Makebelgeya %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.STRING.TEXT
 #, fuzzy
-msgid  "MathML Document"
+msgid "MathML Document"
 msgstr "Belgeya MathML"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Database"
+msgid "OpenDocument Database"
 msgstr "Danegeha OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Drawing"
+msgid "OpenDocument Drawing"
 msgstr "Xêzkirina OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Formula"
+msgid "OpenDocument Formula"
 msgstr "Formula OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Master Document"
+msgid "OpenDocument Master Document"
 msgstr "Makebelgeya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Presentation"
+msgid "OpenDocument Presentation"
 msgstr "Pêşkêşiya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Spreadsheet"
+msgid "OpenDocument Spreadsheet"
 msgstr "Tabloya Hisaban ya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Text"
+msgid "OpenDocument Text"
 msgstr "Nivîsa OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Spreadsheet Template"
+msgid "OpenDocument Spreadsheet Template"
 msgstr "Şablona Taboya Hisaban ya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Drawing Template"
+msgid "OpenDocument Drawing Template"
 msgstr "Şablona Xêzkirinê ya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Presentation Template"
+msgid "OpenDocument Presentation Template"
 msgstr "Şablona Pêşkêşiyê ya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "OpenDocument Text Template"
+msgid "OpenDocument Text Template"
 msgstr "Şablona Nivîsan ya OpenDocument"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Extension"
+msgid "%PRODUCTNAME Extension"
 msgstr "Pêvekên %PRODUCTNAME"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "[None]"
+msgid "[None]"
 msgstr "[Ne yek]"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Unknown"
+msgid "Unknown"
 msgstr "Nenas"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "Standard"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Afrikaans (South Africa)"
+msgid "Afrikaans (South Africa)"
 msgstr "Afrîkî (Afrîkaya Başûr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Albanian"
+msgid "Albanian"
 msgstr "Albanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic"
+msgid "Arabic"
 msgstr "Erebî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Algeria)"
+msgid "Arabic (Algeria)"
 msgstr "Erebî (Cezayîr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Bahrain)"
+msgid "Arabic (Bahrain)"
 msgstr "Erebî (Bahreyn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Chad)"
+msgid "Arabic (Chad)"
 msgstr "Erebî (Çad)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Comoros)"
+msgid "Arabic (Comoros)"
 msgstr "Erebî (Komor)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Djibouti)"
+msgid "Arabic (Djibouti)"
 msgstr "Erebî (Cîbûtî)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Egypt)"
+msgid "Arabic (Egypt)"
 msgstr "Erebî (Misir)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Eritrea)"
+msgid "Arabic (Eritrea)"
 msgstr "Erebî (Erître)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Iraq)"
+msgid "Arabic (Iraq)"
 msgstr "Erebî (Iraq)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Israel)"
+msgid "Arabic (Israel)"
 msgstr "Erebî (Îsrail)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Jordan)"
+msgid "Arabic (Jordan)"
 msgstr "Erebî (Urdun)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Kuwait)"
+msgid "Arabic (Kuwait)"
 msgstr "Erebî (Kuveyt)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Lebanon)"
+msgid "Arabic (Lebanon)"
 msgstr "Erebî (Lübnan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Libya)"
+msgid "Arabic (Libya)"
 msgstr "Erebî (Libya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Mauritania)"
+msgid "Arabic (Mauritania)"
 msgstr "Erebî (Maûrîtanya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Morocco)"
+msgid "Arabic (Morocco)"
 msgstr "Erebî (Maroko)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Oman)"
+msgid "Arabic (Oman)"
 msgstr "Erebî (Oman)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Palestine)"
+msgid "Arabic (Palestine)"
 msgstr "Erebî (Filîstîn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Qatar)"
+msgid "Arabic (Qatar)"
 msgstr "Erebî (Qatar)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Saudi Arabia)"
+msgid "Arabic (Saudi Arabia)"
 msgstr "Erebî (Suudî Erabîstan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Somalia)"
+msgid "Arabic (Somalia)"
 msgstr "Erebî (Somaliya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Sudan)"
+msgid "Arabic (Sudan)"
 msgstr "Erebî (Sûdan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Syria)"
+msgid "Arabic (Syria)"
 msgstr "Erebî (Sûriye)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Tunisia)"
+msgid "Arabic (Tunisia)"
 msgstr "Erebî (Tûnis)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (UAE)"
+msgid "Arabic (UAE)"
 msgstr "Erebî (YEE)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Arabic (Yemen)"
+msgid "Arabic (Yemen)"
 msgstr "Erebî (Yemen)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Armenian"
+msgid "Armenian"
 msgstr "Ermenî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Assami"
+msgid "Assami"
 msgstr "Assamî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Azerbaijani Latin"
+msgid "Azerbaijani Latin"
 msgstr "Azerîkî (Latîn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Azerbaijani Cyrillic"
+msgid "Azerbaijani Cyrillic"
 msgstr "Azerîkî (Krîl)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Basque"
+msgid "Basque"
 msgstr "Baskî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bengali (India)"
+msgid "Bengali (India)"
 msgstr "Bengalî (Hindistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bulgarian"
+msgid "Bulgarian"
 msgstr "Bulgarî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Belarusian"
+msgid "Belarusian"
 msgstr "Belarûsî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Catalan"
+msgid "Catalan"
 msgstr "Katalan"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chinese (traditional)"
+msgid "Chinese (traditional)"
 msgstr "Çînî (kevneşop)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chinese (simplified)"
+msgid "Chinese (simplified)"
 msgstr "Çînî (hêsankirî)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chinese (Hong Kong)"
+msgid "Chinese (Hong Kong)"
 msgstr "Çînî (Hong Kong)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chinese (Singapore)"
+msgid "Chinese (Singapore)"
 msgstr "Çînî (Singapore)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chinese (Macau)"
+msgid "Chinese (Macau)"
 msgstr "Çînî (Macau)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Croatian"
+msgid "Croatian"
 msgstr "Kroatî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Czech"
+msgid "Czech"
 msgstr "Çekî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Danish"
+msgid "Danish"
 msgstr "Danîmarkî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Dutch (Netherlands)"
+msgid "Dutch (Netherlands)"
 msgstr "Holandî (Hollanda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Dutch (Belgium)"
+msgid "Dutch (Belgium)"
 msgstr "Flemenkî (Belçika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "Îngilîzî (DYE)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (UK)"
+msgid "English (UK)"
 msgstr "Îngilîzî (Îngiltere)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Australia)"
+msgid "English (Australia)"
 msgstr "Îngilîzî (Avustralya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Canada)"
+msgid "English (Canada)"
 msgstr "Îngilîzî (Kanada)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (New Zealand)"
+msgid "English (New Zealand)"
 msgstr "Îngilîzî (Zelandaya Nû)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Eire)"
+msgid "English (Eire)"
 msgstr "Îngilîzî (Îrlanda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (South Africa)"
+msgid "English (South Africa)"
 msgstr "Îngilîzî (Afrîkaya Başûr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Jamaica)"
+msgid "English (Jamaica)"
 msgstr "Îngilîzî (Jamaica)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Caribbean)"
+msgid "English (Caribbean)"
 msgstr "Îngilîzî (Karayîb)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Belize)"
+msgid "English (Belize)"
 msgstr "Îngilîzî (Belîze)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Trinidad)"
+msgid "English (Trinidad)"
 msgstr "Îngilîzî (Trînîdad)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Zimbabwe)"
+msgid "English (Zimbabwe)"
 msgstr "Îngilîzî (Zimbabwe)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Philippines)"
+msgid "English (Philippines)"
 msgstr "Îngilîzî (Fîlîpîn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (India)"
+msgid "English (India)"
 msgstr "Îngilîzî (Hîndistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "Estonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Finnish"
+msgid "Finnish"
 msgstr "Fînikî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Faroese"
+msgid "Faroese"
 msgstr "Faroyî"
+
+#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
+msgid "Persian"
+msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (France)"
+msgid "French (France)"
 msgstr "Fransî (Fransa)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (Belgium)"
+msgid "French (Belgium)"
 msgstr "Fransî (Belçika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (Canada)"
+msgid "French (Canada)"
 msgstr "Fransî (Kanada)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (Switzerland)"
+msgid "French (Switzerland)"
 msgstr "Fransî (İsviçre)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (Luxembourg)"
+msgid "French (Luxembourg)"
 msgstr "Fransizî (Luksenburg)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "French (Monaco)"
+msgid "French (Monaco)"
 msgstr "Fransizî (Monako)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Gascon"
+msgid "Gascon"
 msgstr "Gaskon"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Germany)"
+msgid "German (Germany)"
 msgstr "Almanî (Almanya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Switzerland)"
+msgid "German (Switzerland)"
 msgstr "Almanî (Swîsre)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Austria)"
+msgid "German (Austria)"
 msgstr "Almanî (Avusturya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Luxembourg)"
+msgid "German (Luxembourg)"
 msgstr "Almanî (Luksemburg)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Liechtenstein)"
+msgid "German (Liechtenstein)"
 msgstr "Almanî (Lihtenstayn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Greek"
+msgid "Greek"
 msgstr "Yewnanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Gujarati"
+msgid "Gujarati"
 msgstr "Gujaratî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hebrew"
+msgid "Hebrew"
 msgstr "Ibranî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hindi"
+msgid "Hindi"
 msgstr "Hindî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hungarian"
+msgid "Hungarian"
 msgstr "Macarî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Icelandic"
+msgid "Icelandic"
 msgstr "Îzlandî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Indonesian"
+msgid "Indonesian"
 msgstr "Endonezî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Italian (Italy)"
+msgid "Italian (Italy)"
 msgstr "Italî (İtalya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Italian (Switzerland)"
+msgid "Italian (Switzerland)"
 msgstr "Îtalyanî (Swîsre)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Japanese"
+msgid "Japanese"
 msgstr "Japonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kannada"
+msgid "Kannada"
 msgstr "Kanada"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kashmiri (Kashmir)"
+msgid "Kashmiri (Kashmir)"
 msgstr "Kaşmîrî (Kaşmîr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kashmiri (India)"
+msgid "Kashmiri (India)"
 msgstr "Kaşmîrî (Hindistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kazak"
+msgid "Kazak"
 msgstr "Kazakî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Konkani"
+msgid "Konkani"
 msgstr "Konkanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Korean (RoK)"
+msgid "Korean (RoK)"
 msgstr "Koreyî (RoK)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Latvian"
+msgid "Latvian"
 msgstr "Letonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Lithuanian"
+msgid "Lithuanian"
 msgstr "Lîtwanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Macedonian"
+msgid "Macedonian"
 msgstr "Makedonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Malay (Malaysia)"
+msgid "Malay (Malaysia)"
 msgstr "Malayî (Malezya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Malay (Brunei Darussalam)"
+msgid "Malay (Brunei Darussalam)"
 msgstr "Malayî (Brunei Darusalam)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Malayalam"
+msgid "Malayalam"
 msgstr "Malayalam"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Manipuri"
+msgid "Manipuri"
 msgstr "Manipurî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Marathi"
+msgid "Marathi"
 msgstr "Marathî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Nepali (Nepal)"
+msgid "Nepali (Nepal)"
 msgstr "Nepalî (Nepal)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Nepali (India)"
+msgid "Nepali (India)"
 msgstr "Nepalî (Hîndistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Norwegian, Bokmål"
+msgid "Norwegian, Bokmål"
 msgstr "Norveçî (Bokmål)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Norwegian, Nynorsk"
+msgid "Norwegian, Nynorsk"
 msgstr "Norwecî (Nynorsk)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Oriya"
+msgid "Oriya"
 msgstr "Oriya"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Polish"
+msgid "Polish"
 msgstr "Polonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Portuguese (Portugal)"
+msgid "Portuguese (Portugal)"
 msgstr "Portekîzî (Portugal)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Portuguese (Brazil)"
+msgid "Portuguese (Brazil)"
 msgstr "Portekîzî (Brazil)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Punjabi"
+msgid "Punjabi"
 msgstr "Pencabî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Rhaeto-Romance"
+msgid "Rhaeto-Romance"
 msgstr "Reto-Romanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Romanian"
+msgid "Romanian"
 msgstr "Romenî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Russian"
+msgid "Russian"
 msgstr "Rusî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sanskrit"
+msgid "Sanskrit"
 msgstr "Sanskrîtî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Cyrillic (Serbia and Montenegro)"
+msgid "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Sirbiya kirîlî (Sirbistan û Montenegro)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Latin (Serbia and Montenegro)"
+msgid "Serbian Latin (Serbia and Montenegro)"
 msgstr "Sirbiya latînî (Sirbistan û Montenegro)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Cyrillic (Serbia)"
+msgid "Serbian Cyrillic (Serbia)"
 msgstr "Sirbiya kirîlî (Sirbistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Latin (Serbia)"
+msgid "Serbian Latin (Serbia)"
 msgstr "Sirbiya latînî (Sirbistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Cyrillic (Montenegro)"
+msgid "Serbian Cyrillic (Montenegro)"
 msgstr "Sirbiya kirîlî (Montenegro)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Serbian Latin (Montenegro)"
+msgid "Serbian Latin (Montenegro)"
 msgstr "Sirbiya latînî (Montenegro)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sindhi"
+msgid "Sindhi"
 msgstr "Sindî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PAIREDLIST.ITEM
-msgid  "Slovak"
+msgid "Slovak"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Slovenian"
+msgid "Slovenian"
 msgstr "Slovenî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Spain)"
+msgid "Spanish (Spain)"
 msgstr "Spanî (Spanya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Mexico)"
+msgid "Spanish (Mexico)"
 msgstr "Spanyolî (Meksika)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Guatemala)"
+msgid "Spanish (Guatemala)"
 msgstr "Spanyolî (Guatemala)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Costa Rica)"
+msgid "Spanish (Costa Rica)"
 msgstr "Spanyolî (Kosta Rîka)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Panama)"
+msgid "Spanish (Panama)"
 msgstr "Spanyolî (Panama)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Dom. Rep.)"
+msgid "Spanish (Dom. Rep.)"
 msgstr "Spanyolî (Kom. Dom.)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Venezuela)"
+msgid "Spanish (Venezuela)"
 msgstr "Spanyolî (Venezuela)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Colombia)"
+msgid "Spanish (Colombia)"
 msgstr "Spanyolî (Kolombiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Peru)"
+msgid "Spanish (Peru)"
 msgstr "Spanyolî (Peru)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Argentina)"
+msgid "Spanish (Argentina)"
 msgstr "Spanyolî (Arjantîn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Ecuador)"
+msgid "Spanish (Ecuador)"
 msgstr "Spanyolî (Ekwador)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Chile)"
+msgid "Spanish (Chile)"
 msgstr "Spanyolî (Şîle)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Uruguay)"
+msgid "Spanish (Uruguay)"
 msgstr "Spanyolî (Ûrûguay)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Paraguay)"
+msgid "Spanish (Paraguay)"
 msgstr "Spanyolî (Panama)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Bolivia)"
+msgid "Spanish (Bolivia)"
 msgstr "Spanyolî (Kolombiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (El Salvador)"
+msgid "Spanish (El Salvador)"
 msgstr "Spanyolî (El Salvador)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Honduras)"
+msgid "Spanish (Honduras)"
 msgstr "Spanyolî (Honduras)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Nicaragua)"
+msgid "Spanish (Nicaragua)"
 msgstr "Spanyolî (Nîkaragua)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Puerto Rico)"
+msgid "Spanish (Puerto Rico)"
 msgstr "Spanyolî (Porto Rîko)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Swahili (Kenya)"
+msgid "Swahili (Kenya)"
 msgstr "Swahîlî (Kenya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Swedish (Sweden)"
+msgid "Swedish (Sweden)"
 msgstr "Swêdî (Swêd)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Swedish (Finland)"
+msgid "Swedish (Finland)"
 msgstr "Swêdî (Fînland)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tajik"
+msgid "Tajik"
 msgstr "Tajik"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tamil"
+msgid "Tamil"
 msgstr "Tamîl"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tatar"
+msgid "Tatar"
 msgstr "Tatarî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Telugu"
+msgid "Telugu"
 msgstr "Telugu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Thai"
+msgid "Thai"
 msgstr "Tayî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Turkish"
+msgid "Turkish"
 msgstr "Tirkî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Urdu (Pakistan)"
+msgid "Urdu (Pakistan)"
 msgstr "Urdu (Pakistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Urdu (India)"
+msgid "Urdu (India)"
 msgstr "Urdu (Hîndistan)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Ukrainian"
+msgid "Ukrainian"
 msgstr "Ukraynî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Uzbek Latin"
+msgid "Uzbek Latin"
 msgstr "Ozbekî Latîn"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Welsh"
+msgid "Welsh"
 msgstr "Welşî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 1"
+msgid "User 1"
 msgstr "Bikarhêner 1"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 2"
+msgid "User 2"
 msgstr "Bikarhêner 2"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 3"
+msgid "User 3"
 msgstr "Bikarhêner 3"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 4"
+msgid "User 4"
 msgstr "Bikarhêner 4"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 5"
+msgid "User 5"
 msgstr "Bikarhêner 5"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 6"
+msgid "User 6"
 msgstr "Bikarhêner 6"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 7"
+msgid "User 7"
 msgstr "Bikarhêner 7"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 8"
+msgid "User 8"
 msgstr "Bikarhêner 8"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "User 9"
+msgid "User 9"
 msgstr "Bikarhêner 9"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Latin"
+msgid "Latin"
 msgstr "Latînî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Esperanto"
+msgid "Esperanto"
 msgstr "Esperanto"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kinyarwanda (Rwanda)"
+msgid "Kinyarwanda (Rwanda)"
 msgstr "Kinyarwanda (Rûanda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Maori (New Zealand)"
+msgid "Maori (New Zealand)"
 msgstr "Maorî (Zelandaya Nû)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Galician"
+msgid "Galician"
 msgstr "Galicî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Dhivehi"
+msgid "Dhivehi"
 msgstr "Dîvehî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Northern Sotho"
+msgid "Northern Sotho"
 msgstr "Sothoya Bakur"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Gaelic (Scotland)"
+msgid "Gaelic (Scotland)"
 msgstr "Gelikî (Skoç)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Mongolian"
+msgid "Mongolian"
 msgstr "Mongolî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Interlingua"
+msgid "Interlingua"
 msgstr "Interlingua"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bosnian"
+msgid "Bosnian"
 msgstr "Bosnî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bengali (Bangladesh)"
+msgid "Bengali (Bangladesh)"
 msgstr "Bengalî (Bangladeş)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Occitan"
+msgid "Occitan"
 msgstr "Oksîtan"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Khmer"
+msgid "Khmer"
 msgstr "Khmer"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kurdish (Turkey)"
+msgid "Kurdish (Turkey)"
 msgstr "Kurdî (Tirkiye)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kurdish (Syria)"
+msgid "Kurdish (Syria)"
 msgstr "Kurdî (Sûrî)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kurdish (Iraq)"
+msgid "Kurdish (Iraq)"
 msgstr "Kurdî (Iraq)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kurdish (Iran)"
+msgid "Kurdish (Iran)"
 msgstr "Kurdî (Îran)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sardinian"
+msgid "Sardinian"
 msgstr "Sardî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Dzongkha"
+msgid "Dzongkha"
 msgstr "Dzongkha"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Swahili (Tanzania)"
+msgid "Swahili (Tanzania)"
 msgstr "Swahîlî (Tanzanya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Lao"
+msgid "Lao"
 msgstr "Lao"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Irish"
+msgid "Irish"
 msgstr "Îrlandî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tibetan (PR China)"
+msgid "Tibetan (PR China)"
 msgstr "Tîbetî (Komara Gelê Çîn)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Georgian"
+msgid "Georgian"
 msgstr "Gurcî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Frisian"
+msgid "Frisian"
 msgstr "Frizyanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tswana (South Africa)"
+msgid "Tswana (South Africa)"
 msgstr "Tswana (Afrîkaya Başûr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Zulu"
+msgid "Zulu"
 msgstr "Zûlû"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Vietnamese"
+msgid "Vietnamese"
 msgstr "Vietnamî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Breton"
+msgid "Breton"
 msgstr "Bretonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kalaallisut"
+msgid "Kalaallisut"
 msgstr "Kalaallisut"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Ndebele, South"
+msgid "Ndebele, South"
 msgstr "Ndebele, Başûrî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Southern Sotho"
+msgid "Southern Sotho"
 msgstr "Sothoya Bakur"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Swazi"
+msgid "Swazi"
 msgstr "Swazi"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tsonga"
+msgid "Tsonga"
 msgstr "Tsonga"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Venda"
+msgid "Venda"
 msgstr "Venda"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tswana (Botswana)"
+msgid "Tswana (Botswana)"
 msgstr "Tswana (Botswana)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Xhosa"
+msgid "Xhosa"
 msgstr "Xhosa"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sinhala"
+msgid "Sinhala"
 msgstr "Sinhala"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Moore"
+msgid "Moore"
 msgstr "Moorî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bambara"
+msgid "Bambara"
 msgstr "Bambara"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Akan"
+msgid "Akan"
 msgstr "Akanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Luxembourgish"
+msgid "Luxembourgish"
 msgstr "Luksemburgî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Friulian"
+msgid "Friulian"
 msgstr "Frizyanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Fijian"
+msgid "Fijian"
 msgstr "Fîciyî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Afrikaans (Namibia)"
+msgid "Afrikaans (Namibia)"
 msgstr "Afrîkanî (Namîbiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Namibia)"
+msgid "English (Namibia)"
 msgstr "Îngilîzî (Namîbiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Walloon"
+msgid "Walloon"
 msgstr "Walonî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Coptic"
+msgid "Coptic"
 msgstr "Koptîk"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tigrigna (Eritrea)"
+msgid "Tigrigna (Eritrea)"
 msgstr "Tîgrîgna (Erître)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tigrigna (Ethiopia)"
+msgid "Tigrigna (Ethiopia)"
 msgstr "Tîgrîgna (Etiyopya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Amharic"
+msgid "Amharic"
 msgstr "Amharî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kirghiz"
+msgid "Kirghiz"
 msgstr "Qirgizî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "German (Belgium)"
+msgid "German (Belgium)"
 msgstr "Almanî (Belçîka)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Chuvash"
+msgid "Chuvash"
 msgstr "Çûvaşî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Burmese"
+msgid "Burmese"
 msgstr "Birmanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hausa (Nigeria)"
+msgid "Hausa (Nigeria)"
 msgstr "Huza (Nîjerya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hausa (Ghana)"
+msgid "Hausa (Ghana)"
 msgstr "Huza (Gana)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Éwé"
+msgid "Éwé"
 msgstr "Éwé"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "English (Ghana)"
+msgid "English (Ghana)"
 msgstr "Îngilîzî (Gana)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sango"
+msgid "Sango"
 msgstr "Sango"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tagalog"
+msgid "Tagalog"
 msgstr "Tagalog"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Ganda"
+msgid "Ganda"
 msgstr "Ganda"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Lingala"
+msgid "Lingala"
 msgstr "Lingala"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Low German"
+msgid "Low German"
 msgstr "Almaniya Jêr"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Hiligaynon"
+msgid "Hiligaynon"
 msgstr "Hiligaynon"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Nyanja"
+msgid "Nyanja"
 msgstr "Nyanca"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Kashubian"
+msgid "Kashubian"
 msgstr "Kaşûbanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Spanish (Cuba)"
+msgid "Spanish (Cuba)"
 msgstr "Spanî (Kuba)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tetun (Indonesia)"
+msgid "Tetun (Indonesia)"
 msgstr "Tetunî (Endonezya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Quechua (Bolivia, North)"
+msgid "Quechua (Bolivia, North)"
 msgstr "Queçî (Bolivya, Bakur)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Quechua (Bolivia, South)"
+msgid "Quechua (Bolivia, South)"
 msgstr "Queçî (Bolivya, Başûr)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Somali"
+msgid "Somali"
 msgstr "Somalî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Inari (Finland)"
+msgid "Sami, Inari (Finland)"
 msgstr "Samî, Inarî (Fînlandiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Lule (Norway)"
+msgid "Sami, Lule (Norway)"
 msgstr "Samî, Lule (Norweç)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Lule (Sweden)"
+msgid "Sami, Lule (Sweden)"
 msgstr "Samî, Lule (Swêd)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Northern (Finland)"
+msgid "Sami, Northern (Finland)"
 msgstr "Samî, Bakurî (Fînlandiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Northern (Norway)"
+msgid "Sami, Northern (Norway)"
 msgstr "Samî, Bakurî (Norweç)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Northern (Sweden)"
+msgid "Sami, Northern (Sweden)"
 msgstr "Samî, Bakurî (Swêd)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Skolt (Finland)"
+msgid "Sami, Skolt (Finland)"
 msgstr "Samî, Skolt (Fînlandiya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Southern (Norway)"
+msgid "Sami, Southern (Norway)"
 msgstr "Samî, Başûrî (Norweç)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Southern (Sweden)"
+msgid "Sami, Southern (Sweden)"
 msgstr "Samî, Başûrî (Swêd)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sami, Kildin (Russia)"
+msgid "Sami, Kildin (Russia)"
 msgstr "Samî, Kildin (Rûsya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Guaraní, Paraguayan"
+msgid "Guaraní, Paraguayan"
 msgstr "Guranî (Paraguay)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bodo"
+msgid "Bodo"
 msgstr "Bodo"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Dogri"
+msgid "Dogri"
 msgstr "Dogrî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Maithili"
+msgid "Maithili"
 msgstr "Mathîlî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Santali"
+msgid "Santali"
 msgstr "Santalî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tetun (Timor-Leste)"
+msgid "Tetun (Timor-Leste)"
 msgstr "Tetun (Timor-Leste)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Turkmen"
+msgid "Turkmen"
 msgstr "Tirkmenî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Maltese"
+msgid "Maltese"
 msgstr "Maltayî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tok Pisin"
+msgid "Tok Pisin"
 msgstr "Tok Pisin"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Shuswap"
+msgid "Shuswap"
 msgstr "Şuswap"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Oromo"
+msgid "Oromo"
 msgstr "Oromo"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Greek, Ancient"
+msgid "Greek, Ancient"
 msgstr "Yewnanî, Kevnare"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PAIREDLIST.ITEM
-msgid  "Yiddish (Israel)"
+msgid "Yiddish (Israel)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Quechua (Ecuador)"
+msgid "Quechua (Ecuador)"
 msgstr "Queçî (Ekvador) "
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Uyghur"
+msgid "Uyghur"
 msgstr "Uygur"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Asturian"
+msgid "Asturian"
 msgstr "Asturî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sorbian, Upper"
+msgid "Sorbian, Upper"
 msgstr "Sorbiya Jorîn"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sorbian, Lower"
+msgid "Sorbian, Lower"
 msgstr "Sorbiya Jêrîn"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Latgalian"
+msgid "Latgalian"
 msgstr "Latgalî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Maore"
+msgid "Maore"
 msgstr "Maorî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bushi"
+msgid "Bushi"
 msgstr "Bûşî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Tahitian"
+msgid "Tahitian"
 msgstr "Tahîtî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Malagasy, Plateau"
+msgid "Malagasy, Plateau"
 msgstr "Malagazî, Plateau"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Papiamentu (Netherlands Antilles)"
+msgid "Papiamentu (Netherlands Antilles)"
 msgstr "Papiamento (Antîlên Hollanda)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Papiamento (Aruba)"
+msgid "Papiamento (Aruba)"
 msgstr "Papiamento (Aruba)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sardinian, Campidanese"
+msgid "Sardinian, Campidanese"
 msgstr "Sardunî, Kampîdanî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sardinian, Gallurese"
+msgid "Sardinian, Gallurese"
 msgstr "Sardunî, Gallurî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sardinian, Logudorese"
+msgid "Sardinian, Logudorese"
 msgstr "Sardunî, Logudorî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Sardinian, Sassarese"
+msgid "Sardinian, Sassarese"
 msgstr "Sardunî, Sassarî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Bafia"
+msgid "Bafia"
 msgstr "Bafî"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Gikuyu"
+msgid "Gikuyu"
 msgstr "Gikuyu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Yoruba"
+msgid "Yoruba"
 msgstr "Yoruba"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Rusyn (Ukraine)"
+msgid "Rusyn (Ukraine)"
 msgstr "Rûsî (Ukrayna)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Rusyn (Slovakia)"
+msgid "Rusyn (Slovakia)"
 msgstr "Rûsî (Slovakya)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.PAIREDLIST.ITEM
-msgid  "Yiddish (USA)"
+msgid "Yiddish (USA)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.PAIREDLIST.ITEM
-msgid  "Hawaiian"
+msgid "Hawaiian"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.PAIREDLIST.ITEM
-msgid  "Limbu"
+msgid "Limbu"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.PAIREDLIST.ITEM
-msgid  "Lojban"
+msgid "Lojban"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.PAIREDLIST.ITEM
-msgid  "Kabyle"
+msgid "Kabyle"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.PAIREDLIST.ITEM
 #, fuzzy
-msgid  "Haitian"
+msgid "Haitian"
 msgstr "Tahîtî"
 
 #: misc/undo.src#STR_UNDO.STRING.TEXT
-msgid  "Undo: "
+msgid "Undo: "
 msgstr ""
 
 #: misc/undo.src#STR_REDO.STRING.TEXT
-msgid  "Re~do: "
+msgid "Re~do: "
 msgstr ""
 
 #: misc/undo.src#STR_REPEAT.STRING.TEXT
-msgid  "~Repeat: "
+msgid "~Repeat: "
 msgstr ""
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SHOW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Display IDs"
+msgid "Display IDs"
 msgstr "IDyên Dîmenê"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_OUTPUT.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "This is the input window"
+msgid "This is the input window"
 msgstr "Ev paceya têketinê ye"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SEND_DATA.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Transfer to TestTool"
+msgid "Transfer to TestTool"
 msgstr "Ji AmûraCeribandinê re Veguhezîne"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_ALLWIN.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Show all windows"
+msgid "Show all windows"
 msgstr "Hemû paceyan nîşan bide"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_KURZNAME.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Show short names (if available)"
+msgid "Show short names (if available)"
 msgstr "Navên kurt nîşan bide (heke hebin)"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_LANGNAME.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Always show long-name"
+msgid "Always show long-name"
 msgstr "Herdem navê-dirêj nîşan bide"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "DisplayHID"
+msgid "DisplayHID"
 msgstr "DisplayHID"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GROUPBOX.TEXT
 #, fuzzy
-msgid  "Translation"
+msgid "Translation"
 msgstr "Werger"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.EDIT.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~Serrrast bike"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Original Text"
+msgid "Original Text"
 msgstr "Nivîsa Orjînal"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
 #, fuzzy
-msgid  "Comment"
+msgid "Comment"
 msgstr "Şîrove"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
 #, fuzzy
-msgid  "~Comment"
+msgid "~Comment"
 msgstr "~Şîrove"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Select"
+msgid "~Select"
 msgstr "~Hilbijêre"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Restore"
+msgid "~Restore"
 msgstr "~Vesaz bike"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "~Bipejirîne"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Next"
+msgid "~Next"
 msgstr "~Pêşve"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Inplace Translation"
+msgid "Inplace Translation"
 msgstr "Di cî de wergerandin"
 
 #: plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MESSBOX.MESSAGE
 #, fuzzy
-msgid  "The Translation will be lost. Proceed anyway?"
+msgid "The Translation will be lost. Proceed anyway?"
 msgstr "Werger dê winda be. Bila dîsa jî bidomîne?"
 
 #: plugapp/testtool.src#TT_NO_CONTROL.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The Control is no longer valid. The Translation cannot be saved."
+msgid "The Control is no longer valid. The Translation cannot be saved."
 msgstr "Kontrol êdî nederbasdare. Werger nayên tomarkirin."
 
 #: plugapp/testtool.src#TT_GPF.STRING.TEXT
 #, fuzzy
-msgid  "GPF occurred"
+msgid "GPF occurred"
 msgstr "GPF çêbû"
 
 #: plugapp/testtool.src#TT_ALTERNATE_CAPTION.STRING.TEXT
 #, fuzzy
-msgid  "HelpID does not match UniqueID: "
+msgid "HelpID does not match UniqueID: "
 msgstr "HelpID bi UniqueID re lihev nayên:"
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.STRING.TEXT
 #, fuzzy
-msgid  "Tab Panel Scroll Button, backward"
+msgid "Tab Panel Scroll Button, backward"
 msgstr "Bişkoka Xişkirinê ya Darika Panelê, paşve"
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.STRING.TEXT
 #, fuzzy
-msgid  "Tab Panel Scroll Button, forward"
+msgid "Tab Panel Scroll Button, forward"
 msgstr "Bişkoka Xişkirinê ya Darika Panelê, pêşve"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Roadmap Skeleton Demo"
+msgid "Roadmap Skeleton Demo"
 msgstr "Pêşnumaya Bikaranîna Mînak"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.STRING.TEXT
 #, fuzzy
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Bi xêr hatî"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.STRING.TEXT
 #, fuzzy
-msgid  "Prepare"
+msgid "Prepare"
 msgstr "Amade Bike"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.STRING.TEXT
 #, fuzzy
-msgid  "Setup"
+msgid "Setup"
 msgstr "Saz Bike"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.STRING.TEXT
 #, fuzzy
-msgid  "Finish"
+msgid "Finish"
 msgstr "Biqedine"

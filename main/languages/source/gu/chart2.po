@@ -1,2060 +1,2079 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: gu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Data Table"
+msgid "Data Table"
 msgstr "માહિતી કોષ્ટક"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Row"
+msgid "Insert Row"
 msgstr "હરોળ દાખલ કરો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Series"
+msgid "Insert Series"
 msgstr "શ્રેણીઓ દાખલ કરો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Text Column"
+msgid "Insert Text Column"
 msgstr "લખાણ સ્તંભને દાખલ કરો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Delete Row"
+msgid "Delete Row"
 msgstr "હરોળ કાઢો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Delete Series"
+msgid "Delete Series"
 msgstr "શ્રેણીઓ કાઢો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Move Series Right"
+msgid "Move Series Right"
 msgstr "શ્રેણીઓ જમણે ખસેડો"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Move Row Down"
+msgid "Move Row Down"
 msgstr "હરોળ નીચે ખસેડો"
 
 #: controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Data Ranges"
+msgid "Data Ranges"
 msgstr "માહિતી વિસ્તારો"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Axes"
+msgid "Axes"
 msgstr "અક્ષો"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Major grids"
+msgid "Major grids"
 msgstr "મુખ્ય જાળીઓ"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~X axis"
+msgid "~X axis"
 msgstr "~X અક્ષ"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Y axis"
+msgid "~Y axis"
 msgstr "~Y અક્ષ"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Z axis"
+msgid "~Z axis"
 msgstr "~Z અક્ષ"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Secondary axes"
+msgid "Secondary axes"
 msgstr "ગૌણ અક્ષો"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Minor grids"
+msgid "Minor grids"
 msgstr "નાની જાળીઓ"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Character"
+msgid "Character"
 msgstr "અક્ષર"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "ફોન્ટ"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "ફોન્ટની અસરો"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font Position"
+msgid "Font Position"
 msgstr "ફોન્ટનું સ્થાન"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Paragraph"
+msgid "Paragraph"
 msgstr "ફકરો"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Indents & Spacing"
+msgid "Indents & Spacing"
 msgstr "હાંશિયો અને જગ્યા છોડો"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "ગોઠવણી"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Asian Typography"
+msgid "Asian Typography"
 msgstr "એશિયન છાપકામ"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Tab"
+msgid "Tab"
 msgstr "ટૅબ"
 
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 #, fuzzy
-msgid  "3D View"
+msgid "3D View"
 msgstr "3D દેખાવ"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Box"
+msgid "Box"
 msgstr "બોક્સ"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Cylinder"
+msgid "Cylinder"
 msgstr "નળાકાર"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Cone"
+msgid "Cone"
 msgstr "શંકુ"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Pyramid"
+msgid "Pyramid"
 msgstr "પિરામીડ"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Best fit"
+msgid "Best fit"
 msgstr "સારી રીતે બંધબેસતુ "
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Center"
+msgid "Center"
 msgstr "મધ્ય"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Above"
+msgid "Above"
 msgstr "ઉપર"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Top left"
+msgid "Top left"
 msgstr "ડાબેથી ઊંચે"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Left"
+msgid "Left"
 msgstr "ડાબે"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Bottom left"
+msgid "Bottom left"
 msgstr "ડાબેથી નીચે"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Below"
+msgid "Below"
 msgstr "નીચેનું"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Bottom right"
+msgid "Bottom right"
 msgstr "જમણેથી નીચે"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right"
+msgid "Right"
 msgstr "જમણુ"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Top right"
+msgid "Top right"
 msgstr "જમણે થી ઊંચે"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Inside"
+msgid "Inside"
 msgstr "અંદર"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Outside"
+msgid "Outside"
 msgstr "બહારનું"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Near origin"
+msgid "Near origin"
 msgstr "મૂળભૂતની નજીક"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show value as ~number"
+msgid "Show value as ~number"
 msgstr "નંબર તરીકે મૂલ્ય ને બતાવો (~n)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_NUMBERFORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Number ~format..."
+msgid "Number ~format..."
 msgstr "નંબરનું બંધારણ (~f)..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_PERCENTAGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show value as ~percentage"
+msgid "Show value as ~percentage"
 msgstr "ટકાવારી તરીકે મૂલ્ય ને બતાવો (~p)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_PERCENT_NUMBERFORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Percentage f~ormat..."
+msgid "Percentage f~ormat..."
 msgstr "ટકાવારીનું બંધારણ (~o)..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_CATEGORY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~category"
+msgid "Show ~category"
 msgstr "વર્ગ ને બતાવો (~c)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~legend key"
+msgid "Show ~legend key"
 msgstr "વિજેન્ડ કીને બતાવો (~l)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Place~ment"
+msgid "Place~ment"
 msgstr "નિયુક્તિ (~m)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Rotate Text"
+msgid "Rotate Text"
 msgstr "લખાણને ફેરવો"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ડિગ્રીઓ (~D)"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "લખાણની બાજુ (~x)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Standard Error"
+msgid "Standard Error"
 msgstr "મૂળભૂત ભૂલ"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Standard Deviation"
+msgid "Standard Deviation"
 msgstr "પ્રમાણભૂત ગુણોત્તર"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Variance"
+msgid "Variance"
 msgstr "ચલ"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Error Margin"
+msgid "Error Margin"
 msgstr "ભૂલ અંતર"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Error Category"
+msgid "Error Category"
 msgstr "ભૂલ વર્ગ"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~None"
+msgid "~None"
 msgstr "કંઇ નહિં (~N)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Constant Value"
+msgid "~Constant Value"
 msgstr "અચલ કિંમત(~C)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Percentage"
+msgid "~Percentage"
 msgstr "ટકા(~P)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Cell ~Range"
+msgid "Cell ~Range"
 msgstr "ખાનાંનો વિસ્તાર (~R)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Parameters"
+msgid "Parameters"
 msgstr "પરિણામો"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "P~ositive (+)"
+msgid "P~ositive (+)"
 msgstr "નિશ્ચિત (~o) (+)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Negative (-)"
+msgid "~Negative (-)"
 msgstr "અનિશ્ચિત (~N (-)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Same value for both"
+msgid "Same value for both"
 msgstr "બંને માટે સરખુ મૂલ્ય"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Error Indicator"
+msgid "Error Indicator"
 msgstr "ભૂલ સૂચક"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Positive ~and Negative"
+msgid "Positive ~and Negative"
 msgstr "નિશ્ચિત અને અનિશ્તિત (~a)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Pos~itive"
+msgid "Pos~itive"
 msgstr "નિશ્ચિત (~i)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Ne~gative"
+msgid "Ne~gative"
 msgstr "અનિશ્ચિત (~g)"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Display legend"
+msgid "~Display legend"
 msgstr "દંતકથા દર્શાવો (~D)"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Left"
+msgid "~Left"
 msgstr "ડાબે(~L)"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Right"
+msgid "~Right"
 msgstr "જમણુ(~R)"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Top"
+msgid "~Top"
 msgstr "ઉપર(~T)"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Bottom"
+msgid "~Bottom"
 msgstr "નીચે(~B)"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "X ~axis"
+msgid "X ~axis"
 msgstr "X અક્ષ (~a)"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Y ax~is"
+msgid "Y ax~is"
 msgstr "Y અક્ષ (~i)"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Z axi~s"
+msgid "Z axi~s"
 msgstr "Z અક્ષ (~s)"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Space"
+msgid "Space"
 msgstr "જગ્યા"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Comma"
+msgid "Comma"
 msgstr "અલ્પવિરામ"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Semicolon"
+msgid "Semicolon"
 msgstr "અર્ધવિરામ"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "New line"
+msgid "New line"
 msgstr "નવી લીટી"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "શીર્ષક (~T)"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Subtitle"
+msgid "~Subtitle"
 msgstr "ઉપશીર્ષક(~S)"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Axes"
+msgid "Axes"
 msgstr "અક્ષો"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~X axis"
+msgid "~X axis"
 msgstr "~X અક્ષ"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Y axis"
+msgid "~Y axis"
 msgstr "~Y અક્ષ"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Z axis"
+msgid "~Z axis"
 msgstr "~Z અક્ષ"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Secondary Axes"
+msgid "Secondary Axes"
 msgstr "ગૌણ અક્ષો"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "X ~axis"
+msgid "X ~axis"
 msgstr "X અક્ષ (~a)"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Y ax~is"
+msgid "Y ax~is"
 msgstr "Y અક્ષ (~i)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Regression Type"
+msgid "Regression Type"
 msgstr "રીગ્રેસન પ્રકાર"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~None"
+msgid "~None"
 msgstr "કંઇ નહિં (~N)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LINEAR.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Linear"
+msgid "~Linear"
 msgstr "સુરેખ રીતે (~L)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LOGARITHMIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "L~ogarithmic"
+msgid "L~ogarithmic"
 msgstr "લઘુ ગણકીય (~o)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_EXPONENTIAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "E~xponential"
+msgid "E~xponential"
 msgstr "ઘાતાંક (~x)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_POWER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Power"
+msgid "~Power"
 msgstr "પાવર (~P)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Equation"
+msgid "Equation"
 msgstr "સમીકરણ"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~equation"
+msgid "Show ~equation"
 msgstr "સમીકરણ ને બતાવો (~e)"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_CORRELATION_COEFF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~coefficient of determination (R²)"
+msgid "Show ~coefficient of determination (R²)"
 msgstr "નિર્ધારિત (R²) નાં ગુણક સંખ્યાને બતાવો (~c)"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.STRING.TEXT
 #, fuzzy
-msgid  "Simple"
+msgid "Simple"
 msgstr "સાદું"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.STRING.TEXT
 #, fuzzy
-msgid  "Realistic"
+msgid "Realistic"
 msgstr "વાસ્તવિક"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.STRING.TEXT
 #, fuzzy
-msgid  "Custom"
+msgid "Custom"
 msgstr "વૈવિધ્યપૂર્ણ"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.STRING.TEXT
 #, fuzzy
-msgid  "Shape"
+msgid "Shape"
 msgstr "ઘાટ"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
 #, fuzzy
-msgid  "~Number of lines"
+msgid "~Number of lines"
 msgstr "લીટીઓની સંખ્યા(~N)"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
 #, fuzzy
-msgid  "Separator"
+msgid "Separator"
 msgstr "વિભાજક"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Column"
+msgid "Column"
 msgstr "સ્તંભ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
 #, fuzzy
-msgid  "Bar"
+msgid "Bar"
 msgstr "પટ્ટી"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
 #, fuzzy
-msgid  "Area"
+msgid "Area"
 msgstr "વિસ્તાર"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
 #, fuzzy
-msgid  "Pie"
+msgid "Pie"
 msgstr "ચાપ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 #, fuzzy
-msgid  "Exploded Pie Chart"
+msgid "Exploded Pie Chart"
 msgstr "વિસ્તૃત ચાપ આલેખ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
 #, fuzzy
-msgid  "Exploded Donut Chart"
+msgid "Exploded Donut Chart"
 msgstr "વિસ્તૃત ડોનટ આલેખ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
 #, fuzzy
-msgid  "Donut"
+msgid "Donut"
 msgstr "ડોનલ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Line"
+msgid "Line"
 msgstr "લીટી"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 #, fuzzy
-msgid  "XY (Scatter)"
+msgid "XY (Scatter)"
 msgstr "XY (સ્કેટર)"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.STRING.TEXT
 #, fuzzy
-msgid  "Points and Lines"
+msgid "Points and Lines"
 msgstr "બિંદુઓ અને રેખાઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "Points Only"
+msgid "Points Only"
 msgstr "માત્ર બિંદુઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "Lines Only"
+msgid "Lines Only"
 msgstr "માત્ર લીટીઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 #, fuzzy
-msgid  "3D Lines"
+msgid "3D Lines"
 msgstr "3D લીટીઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Column and Line"
+msgid "Column and Line"
 msgstr "સ્તંભ અને લીટી"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Columns and Lines"
+msgid "Columns and Lines"
 msgstr "સ્તંભો અને લીટીઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Stacked Columns and Lines"
+msgid "Stacked Columns and Lines"
 msgstr "સ્ટેક થયેલ સ્તંભો અને લીટીઓ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
 #, fuzzy
-msgid  "Net"
+msgid "Net"
 msgstr "જાળી"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 #, fuzzy
-msgid  "Stock"
+msgid "Stock"
 msgstr "સ્ટોક"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 1"
+msgid "Stock Chart 1"
 msgstr "શેરબજાર આલેખ ૧"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 2"
+msgid "Stock Chart 2"
 msgstr "શેરબજાર આલેખ ૨"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 3"
+msgid "Stock Chart 3"
 msgstr "શેરબજાર આલેખ ૩"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 4"
+msgid "Stock Chart 4"
 msgstr "શેરબજાર આલેખ ૪"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
 #, fuzzy
-msgid  "Normal"
+msgid "Normal"
 msgstr "સામાન્ય"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
 #, fuzzy
-msgid  "Stacked"
+msgid "Stacked"
 msgstr "સ્ટેક્ડ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
 #, fuzzy
-msgid  "Percent Stacked"
+msgid "Percent Stacked"
 msgstr "સ્ટેક થયેલના ટકા"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
 #, fuzzy
-msgid  "Deep"
+msgid "Deep"
 msgstr "ઊંડુ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
 #, fuzzy
-msgid  "Filled"
+msgid "Filled"
 msgstr "ભરેલ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
 #, fuzzy
-msgid  "Bubble"
+msgid "Bubble"
 msgstr "બબલ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
 #, fuzzy
-msgid  "Bubble Chart"
+msgid "Bubble Chart"
 msgstr "બબલ નક્ષો"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 #, fuzzy
-msgid  "Numbers are required. Check your input."
+msgid "Numbers are required. Check your input."
 msgstr "નંબરો જરૂરરી છે. તમારું ઈનપુટ ચકાસો."
 
 #: controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.STRING.TEXT
 #, fuzzy
-msgid  "The major interval requires a positive number. Check your input."
+msgid "The major interval requires a positive number. Check your input."
 msgstr "મુખ્ય અંતરાલ માટે ધન નંબર જરૂરી છે. તમારું ઈનપુટ ચકાસો."
 
 #: controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.STRING.TEXT
 #, fuzzy
-msgid  "The logarithmic scale requires positive numbers. Check your input."
+msgid "The logarithmic scale requires positive numbers. Check your input."
 msgstr "લોગેરિધમીક સ્કેલ માટે ધન નંબરો જરૂરી છે. તમારું ઈનપુટ ચકાસો."
 
 #: controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The minimum must be lower than the maximum. Check your input."
+msgid "The minimum must be lower than the maximum. Check your input."
 msgstr "ન્યૂનત મહત્તમ કરતાં ઓછો જ હોવો જોઈએ. તમારું ઈનપુટ ચકાસો."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
-msgid  "The major interval needs to be greater than the minor interval. Check your input."
+msgid "The major interval needs to be greater than the minor interval. Check your input."
 msgstr ""
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
-msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
+msgid "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  "Chart Wizard"
+msgid "Chart Wizard"
 msgstr "આલેખ વિઝાર્ડ"
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Smooth Lines"
+msgid "Smooth Lines"
 msgstr "સપાટ લીટીઓ"
 
 #: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Number Format for Percentage Value"
+msgid "Number Format for Percentage Value"
 msgstr "ટકાવારી કિંમત માટે નંબરનું બંધારણ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Chart Type"
+msgid "Chart Type"
 msgstr "આલેખ પ્રકાર"
 
 #: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
 #, fuzzy
-msgid  "Data Range"
+msgid "Data Range"
 msgstr "માહિતી વિસ્તાર"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Chart Elements"
+msgid "Chart Elements"
 msgstr "આલેખ ઘટકો"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
 #, fuzzy
-msgid  "Chart Location"
+msgid "Chart Location"
 msgstr "આલેખ સ્થાન"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Line"
+msgid "Line"
 msgstr "લીટી"
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
 #, fuzzy
-msgid  "Borders"
+msgid "Borders"
 msgstr "કિનારીઓ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 #, fuzzy
-msgid  "Area"
+msgid "Area"
 msgstr "વિસ્તાર"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
 #, fuzzy
-msgid  "Transparency"
+msgid "Transparency"
 msgstr "પારદર્શકતા"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "ફોન્ટ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 #, fuzzy
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "ફોન્ટની અસરો"
 
 #: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
 #, fuzzy
-msgid  "Numbers"
+msgid "Numbers"
 msgstr "સંખ્યાઓ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
 #, fuzzy
-msgid  "Position"
+msgid "Position"
 msgstr "સ્થાન"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
-msgid  "Up"
+msgid "Up"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
-msgid  "Down"
+msgid "Down"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
 #, fuzzy
-msgid  "Layout"
+msgid "Layout"
 msgstr "દેખાવ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "વિકલ્પો"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Scale"
+msgid "Scale"
 msgstr "માપદંડ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
 #, fuzzy
-msgid  "Positioning"
+msgid "Positioning"
 msgstr "સ્થાનિકરણ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "પ્રકાર"
 
 #: controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.STRING.TEXT
 #, fuzzy
-msgid  "Y Error Bars"
+msgid "Y Error Bars"
 msgstr "Y ભૂલ બાર"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
 #, fuzzy
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "ગોઠવણી"
 
 #: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
 #, fuzzy
-msgid  "Perspective"
+msgid "Perspective"
 msgstr "હેતુ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
 #, fuzzy
-msgid  "Appearance"
+msgid "Appearance"
 msgstr "દેખાવ"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 #, fuzzy
-msgid  "Illumination"
+msgid "Illumination"
 msgstr "સમજૂતી"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 #, fuzzy
-msgid  "Asian Typography"
+msgid "Asian Typography"
 msgstr "એશિયન છાપકામ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
 #, fuzzy
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "કિંમત %AVERAGE_VALUE સાથે મધ્ય કિંમત રેખા અને પ્રમાણભૂત ગુણોત્તર %STD_DEVIATION"
+msgid "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
+msgstr ""
+"કિંમત %AVERAGE_VALUE સાથે મધ્ય કિંમત રેખા અને પ્રમાણભૂત ગુણોત્તર %"
+"STD_DEVIATION"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Axis"
+msgid "Axis"
 msgstr "અક્ષો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis"
+msgid "X Axis"
 msgstr "X અક્ષ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis"
+msgid "Y Axis"
 msgstr "Y અક્ષ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis"
+msgid "Z Axis"
 msgstr "Z અક્ષ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary X Axis"
+msgid "Secondary X Axis"
 msgstr "ગૌણ Y અક્ષ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary Y Axis"
+msgid "Secondary Y Axis"
 msgstr "ગૌણ Y અક્ષ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
 #, fuzzy
-msgid  "Axes"
+msgid "Axes"
 msgstr "અક્ષો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 #, fuzzy
-msgid  "Grids"
+msgid "Grids"
 msgstr "જાળીઓ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
 #, fuzzy
-msgid  "Grid"
+msgid "Grid"
 msgstr "જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Major Grid"
+msgid "X Axis Major Grid"
 msgstr "X અક્ષ મુખ્ય જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Major Grid"
+msgid "Y Axis Major Grid"
 msgstr "Y અક્ષ મુખ્ય જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Major Grid"
+msgid "Z Axis Major Grid"
 msgstr "Z અક્ષ મુખ્ય જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Minor Grid"
+msgid "X Axis Minor Grid"
 msgstr "X અક્ષ નાની જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Minor Grid"
+msgid "Y Axis Minor Grid"
 msgstr "Y અક્ષ નાની જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Minor Grid"
+msgid "Z Axis Minor Grid"
 msgstr "Z અક્ષ નાની જાળી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
 #, fuzzy
-msgid  "Legend"
+msgid "Legend"
 msgstr "દંતકથા"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "શીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
 #, fuzzy
-msgid  "Titles"
+msgid "Titles"
 msgstr "શીર્ષકો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 #, fuzzy
-msgid  "Main Title"
+msgid "Main Title"
 msgstr "મુખ્ય શીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
 #, fuzzy
-msgid  "Subtitle"
+msgid "Subtitle"
 msgstr "ઉપશીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Title"
+msgid "X Axis Title"
 msgstr "X અક્ષ શીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Title"
+msgid "Y Axis Title"
 msgstr "Y અક્ષ શીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Title"
+msgid "Z Axis Title"
 msgstr "Z અક્ષ શીર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary X Axis Title"
+msgid "Secondary X Axis Title"
 msgstr "ગૌણ X અક્ષનું શિર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary Y Axis Title"
+msgid "Secondary Y Axis Title"
 msgstr "ગૌણ Y અક્ષનું શિર્ષક"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Label"
+msgid "Label"
 msgstr "લેબલ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
 #, fuzzy
-msgid  "Data Labels"
+msgid "Data Labels"
 msgstr "માહિતી લેબલો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
 #, fuzzy
-msgid  "Data Point"
+msgid "Data Point"
 msgstr "માહિતીનાં બિંદુ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 #, fuzzy
-msgid  "Data Points"
+msgid "Data Points"
 msgstr "માહિતી બિંદુઓ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
 #, fuzzy
-msgid  "Legend Key"
+msgid "Legend Key"
 msgstr "દંતકથા કી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
 #, fuzzy
-msgid  "Data Series"
+msgid "Data Series"
+msgstr "માહિતી શ્રેણીઓ"
+
+#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
+#, fuzzy
+msgid "Data Series"
 msgstr "માહિતી શ્રેણીઓ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
 #, fuzzy
-msgid  "Trend Line"
+msgid "Trend Line"
 msgstr "ધારા રેખા"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVES.STRING.TEXT
 #, fuzzy
-msgid  "Trend Lines"
+msgid "Trend Lines"
 msgstr "ધારા રેખાઓ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.STRING.TEXT
 #, fuzzy
-msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
+msgid "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "ચોકસાઇ R² = %RSQUARED સાથે ધારા રેખા %FORMULA"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Mean Value Line"
+msgid "Mean Value Line"
 msgstr "મધ્ય કિંમત રેખા"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
 #, fuzzy
-msgid  "Equation"
+msgid "Equation"
 msgstr "સમીકરણ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
 #, fuzzy
-msgid  "Error Bars"
+msgid "Error Bars"
 msgstr "ભૂલ બારો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 #, fuzzy
-msgid  "Stock Loss"
+msgid "Stock Loss"
 msgstr "સ્ટૉક નુકશાન"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.STRING.TEXT
 #, fuzzy
-msgid  "Stock Gain"
+msgid "Stock Gain"
 msgstr "સ્ટૉક નફો"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Chart Area"
+msgid "Chart Area"
 msgstr "આલેખ વિસ્તાર"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
 #, fuzzy
-msgid  "Chart"
+msgid "Chart"
 msgstr "આલેખ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
 #, fuzzy
-msgid  "Chart Wall"
+msgid "Chart Wall"
 msgstr "આલેખ દિવાલ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
 #, fuzzy
-msgid  "Chart Floor"
+msgid "Chart Floor"
 msgstr "આલેખ સપાટી"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 #, fuzzy
-msgid  "Drawing Object"
+msgid "Drawing Object"
 msgstr "ઑબ્જેક્ટને દોરી રહ્યા છે"
 
 #: controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.STRING.TEXT
 #, fuzzy
-msgid  "Select data range"
+msgid "Select data range"
 msgstr "માહિતી વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Select a color using the color dialog"
+msgid "Select a color using the color dialog"
 msgstr "રંગ સંવાદ વાપરનો રંગ પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.STRING.TEXT
 #, fuzzy
-msgid  "Light Source %LIGHTNUMBER"
+msgid "Light Source %LIGHTNUMBER"
 msgstr "આછો સ્રોત %LIGHTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 #, fuzzy
-msgid  "Data Series '%SERIESNAME'"
+msgid "Data Series '%SERIESNAME'"
 msgstr "માહિતી શ્રેણીઓ '%SERIESNAME'"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
 #, fuzzy
-msgid  "Data Point %POINTNUMBER"
+msgid "Data Point %POINTNUMBER"
 msgstr "માહિતી બિંદુઓ %POINTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
 #, fuzzy
-msgid  "Values: %POINTVALUES"
+msgid "Values: %POINTVALUES"
 msgstr "મૂલ્યો: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 #, fuzzy
-msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr "માહિતી બિંદુઓ %POINTNUMBER, માહિતી શ્રેણીઓ %SERIESNUMBER, મૂલ્યો %POINTVALUES"
+msgid "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
+msgstr ""
+"માહિતી બિંદુઓ %POINTNUMBER, માહિતી શ્રેણીઓ %SERIESNUMBER, મૂલ્યો %"
+"POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.STRING.TEXT
 #, fuzzy
-msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr "માહિતી શ્રેણીઓ %SERIESNUMBER માં પસંદ થયેલ માહિતી બિંદુઓ %POINTNUMBER, મૂલ્યો: %POINTVALUES"
+msgid "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
+msgstr ""
+"માહિતી શ્રેણીઓ %SERIESNUMBER માં પસંદ થયેલ માહિતી બિંદુઓ %POINTNUMBER, "
+"મૂલ્યો: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME selected"
+msgid "%OBJECTNAME selected"
 msgstr "%OBJECTNAME પસંદિત"
 
 #: controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.STRING.TEXT
 #, fuzzy
-msgid  "Pie exploded by %PERCENTVALUE percent"
+msgid "Pie exploded by %PERCENTVALUE percent"
 msgstr "%PERCENTVALUE ટકા દ્વારા વિસ્તૃત થયેલ ચાર્ટ"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
+msgid "%OBJECTNAME for Data Series '%SERIESNAME'"
 msgstr "માહિતી શ્રેણીઓ '%SERIESNAME' માટે %OBJECTNAME"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME for all Data Series"
+msgid "%OBJECTNAME for all Data Series"
 msgstr "બધી માહિતી શ્રેણીઓ માટે %OBJECTNAME"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Edit chart type"
+msgid "Edit chart type"
 msgstr "આલેખ પ્રકારમાં ફેરફાર કરો"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.STRING.TEXT
 #, fuzzy
-msgid  "Edit data ranges"
+msgid "Edit data ranges"
 msgstr "માહિતી વિસ્તારોમાં ફેરફાર કરો"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "Edit 3D view"
+msgid "Edit 3D view"
 msgstr "3D દેખાવમાં ફેરફાર કરો"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Edit chart data"
+msgid "Edit chart data"
 msgstr "આલેખ માહિતીમાં ફેરફાર કરો"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.STRING.TEXT
 #, fuzzy
-msgid  "Legend on/off"
+msgid "Legend on/off"
 msgstr "દંતકથા ચાલુ/બંધ"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
 #, fuzzy
-msgid  "Horizontal grid on/off"
+msgid "Horizontal grid on/off"
 msgstr "આડી જાળી ચાલુ/બંધ"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Scale Text"
+msgid "Scale Text"
 msgstr "માપદંડ લખાણ"
 
 #: controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.STRING.TEXT
 #, fuzzy
-msgid  "Automatic Layout"
+msgid "Automatic Layout"
 msgstr "આપોઆપ દેખાવ"
 
 #: controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
 #, fuzzy
-msgid  "This function cannot be completed with the selected objects."
+msgid "This function cannot be completed with the selected objects."
 msgstr "આ વિધેય પસંદિત ઓબ્જેક્ટો સાથે સમાપ્ત કરી શકાશે નહિં."
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
-msgid  "Edit text"
+msgid "Edit text"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Column %COLUMNNUMBER"
+msgid "Column %COLUMNNUMBER"
 msgstr "સ્તંભ %COLUMNNUMBER"
 
 #: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Row %ROWNUMBER"
+msgid "Row %ROWNUMBER"
 msgstr "હરોળ %ROWNUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "નામ"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X.STRING.TEXT
 #, fuzzy
-msgid  "X-Values"
+msgid "X-Values"
 msgstr "X-મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y-Values"
+msgid "Y-Values"
 msgstr "Y-મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
 #, fuzzy
-msgid  "Bubble Sizes"
+msgid "Bubble Sizes"
 msgstr "બબલ માપો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "X-Error-Bars"
+msgid "X-Error-Bars"
 msgstr "X-ભૂલ-બાર"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.STRING.TEXT
 #, fuzzy
-msgid  "Positive X-Error-Bars"
+msgid "Positive X-Error-Bars"
 msgstr "નિશ્ચિત X-ભૂલ-બાર"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.STRING.TEXT
 #, fuzzy
-msgid  "Negative X-Error-Bars"
+msgid "Negative X-Error-Bars"
 msgstr "અનિશ્ચિત X-ભૂલ-બાર"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "Y-Error-Bars"
+msgid "Y-Error-Bars"
 msgstr "Y-ભૂલ-બારો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.STRING.TEXT
 #, fuzzy
-msgid  "Positive Y-Error-Bars"
+msgid "Positive Y-Error-Bars"
 msgstr "નિશ્ચિત Y-ભૂલ-બારો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.STRING.TEXT
 #, fuzzy
-msgid  "Negative Y-Error-Bars"
+msgid "Negative Y-Error-Bars"
 msgstr "અનિશ્ચિત Y-ભૂલ-બારો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.STRING.TEXT
 #, fuzzy
-msgid  "Open Values"
+msgid "Open Values"
 msgstr "સ્વતંત્ર મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.STRING.TEXT
 #, fuzzy
-msgid  "Close Values"
+msgid "Close Values"
 msgstr "બંધ મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
 #, fuzzy
-msgid  "Low Values"
+msgid "Low Values"
 msgstr "નીચા મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
 #, fuzzy
-msgid  "High Values"
+msgid "High Values"
 msgstr "ઊંચા મૂલ્યો"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
 #, fuzzy
-msgid  "Categories"
+msgid "Categories"
 msgstr "વર્ગો"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "Unnamed Series"
+msgid "Unnamed Series"
 msgstr "નામવીહિન શ્રેણીઓ"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
 #, fuzzy
-msgid  "Unnamed Series %NUMBER"
+msgid "Unnamed Series %NUMBER"
 msgstr "નામવીહિન શ્રેણીઓ %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for %VALUETYPE of %SERIESNAME"
+msgid "Select Range for %VALUETYPE of %SERIESNAME"
 msgstr "%SERIESNAME ના %VALUETYPE માટે વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Categories"
+msgid "Select Range for Categories"
 msgstr "વર્ગો માટે વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for data labels"
+msgid "Select Range for data labels"
 msgstr "માહિતી લેબલો માટે વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Positive Error Bars"
+msgid "Select Range for Positive Error Bars"
 msgstr "નિશ્ચિત ભૂલ બારો માટે વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Negative Error Bars"
+msgid "Select Range for Negative Error Bars"
 msgstr "ઋણ ભૂલ પટ્ટીઓ માટેનો વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.STRING.TEXT
 #, fuzzy
-msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr "તમારો છેલ્લો ઈનપુટ અયોગ્ય છે.\nશું આ ફેરફાર અવગણીને સંવાદ બંધ કરવો છે?"
+msgid "Your last input is incorrect.\nIgnore this change and close the dialog?"
+msgstr ""
+"તમારો છેલ્લો ઈનપુટ અયોગ્ય છે.\n"
+"શું આ ફેરફાર અવગણીને સંવાદ બંધ કરવો છે?"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
 #, fuzzy
-msgid  "Left-to-right"
+msgid "Left-to-right"
 msgstr "ડાબે-થી-જમણે"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
 #, fuzzy
-msgid  "Right-to-left"
+msgid "Right-to-left"
 msgstr "જમણે-થી-ડાબે"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 #, fuzzy
-msgid  "Use superordinate object settings"
+msgid "Use superordinate object settings"
 msgstr "સુપરઓર્ડિનેટ ઓબ્જેક્ટ સુયોજનો ને વાપરો"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
 #, fuzzy
-msgid  "Negative and Positive"
+msgid "Negative and Positive"
 msgstr "ધન અને ઋણ"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
 #, fuzzy
-msgid  "Negative"
+msgid "Negative"
 msgstr "નકારાત્મક"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
 #, fuzzy
-msgid  "Positive"
+msgid "Positive"
 msgstr "હકારાત્મક"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
 #, fuzzy
-msgid  "From Data Table"
+msgid "From Data Table"
 msgstr "માહિતી કોષ્ટક માંથી"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
-msgid  "Linear (%SERIESNAME)"
+msgid "Linear (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
-msgid  "Logarithmic (%SERIESNAME)"
+msgid "Logarithmic (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
-msgid  "Exponential (%SERIESNAME)"
+msgid "Exponential (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
-msgid  "Power (%SERIESNAME)"
+msgid "Power (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
-msgid  "Mean (%SERIESNAME)"
+msgid "Mean (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Sche~me"
+msgid "Sche~me"
 msgstr "પદ્ધતિ (~m)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Shading"
+msgid "~Shading"
 msgstr "છાયા (~S)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Object borders"
+msgid "~Object borders"
 msgstr "ઓબ્જેક્ટ કિનારીઓ (~O)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Rounded edges"
+msgid "~Rounded edges"
 msgstr "ગોળાકાર બાજુઓ (~R)"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
 #, fuzzy
-msgid  " degrees"
+msgid " degrees"
 msgstr " ડીગ્રીઓ"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Right-angled axes"
+msgid "~Right-angled axes"
 msgstr "જમણા-કોણવાળા અક્ષો (~R)"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~X rotation"
+msgid "~X rotation"
 msgstr "~X ફેરવવાનું"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Y rotation"
+msgid "~Y rotation"
 msgstr "~Y ફેરવવાનું"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Z rotation"
+msgid "~Z rotation"
 msgstr "~Z ફેરવવાનું"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Perspective"
+msgid "~Perspective"
 msgstr "હેતુ (~P)"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Light source"
+msgid "~Light source"
 msgstr "આછો સ્રોત (~L)"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Ambient light"
+msgid "~Ambient light"
 msgstr "ઝાંખો આછો (~A)"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
-msgid  "Light Preview"
+msgid "Light Preview"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Sho~w labels"
+msgid "Sho~w labels"
 msgstr "લેબલોને બતાવો(~w)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
-msgstr "લખાણની દિશા"
+msgid "Text orientation"
+msgstr "લખાણ ની દિશા"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
 #, fuzzy
-msgid  "Ve~rtically stacked"
-msgstr "ઊભી રીતે સ્ટેક થયેલ (~r)"
+msgid "Ve~rtically stacked"
+msgstr "ઊભી રીતે સ્ટેક થયેલ છે (~r)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ડિગ્રીઓ (~D)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text flow"
+msgid "Text flow"
 msgstr "લખાણ ધારા"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 #, fuzzy
-msgid  "O~verlap"
+msgid "O~verlap"
 msgstr "ઉપરાઉપરી(~v)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Break"
+msgid "~Break"
 msgstr "વિભાજક(~B)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Order"
+msgid "Order"
 msgstr "ક્રમસુચિ"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Tile"
+msgid "~Tile"
 msgstr "Tile"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "St~agger odd"
+msgid "St~agger odd"
 msgstr "સ્ટેગર એકી સંખ્યા(~a)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Stagger ~even"
+msgid "Stagger ~even"
 msgstr "સ્ટેગર બેકી(~e)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "A~utomatic"
+msgid "A~utomatic"
 msgstr "આપમેળે (~u)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "લખાણની બાજુ (~x)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Axis line"
+msgid "Axis line"
 msgstr "અક્ષની લીટી"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Cross other axis at"
+msgid "~Cross other axis at"
 msgstr "અન્ય અક્ષોને અંહિ ઓળંગો (~C)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Start"
+msgid "Start"
 msgstr "શરૂ કરો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "End"
+msgid "End"
 msgstr "અંત કરો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Value"
+msgid "Value"
 msgstr "મૂલ્ય"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Category"
+msgid "Category"
 msgstr "વર્ગ"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Axis ~between categories"
+msgid "Axis ~between categories"
 msgstr "અક્ષ વર્ગો વચ્ચે (~b)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Labels"
+msgid "Labels"
 msgstr "લેબલો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Place labels"
+msgid "~Place labels"
 msgstr "લેબલો મૂકો (~P)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Near axis"
+msgid "Near axis"
 msgstr "અક્ષની નજીક"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Near axis (other side)"
+msgid "Near axis (other side)"
 msgstr "અક્ષની નજીક (બીજી બાજુ)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Outside start"
+msgid "Outside start"
 msgstr "બહારથી શરૂ કરો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Outside end"
+msgid "Outside end"
 msgstr "બહારથી અંત કરો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "અંતર (~D)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Interval marks"
+msgid "Interval marks"
 msgstr "અંતરાલ ચિહ્નો"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Major:"
+msgid "Major:"
 msgstr "મુખ્ય:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Inner"
+msgid "~Inner"
 msgstr "અંદરનું (~I)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Outer"
+msgid "~Outer"
 msgstr "બાહ્ય (~O)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Minor:"
+msgid "Minor:"
 msgstr "નાનું:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "I~nner"
+msgid "I~nner"
 msgstr "અંદર (~n)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "O~uter"
+msgid "O~uter"
 msgstr "બહારનું (~u)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Place ~marks"
+msgid "Place ~marks"
 msgstr "ચિહ્નોને સ્થાપિત કરો (~m)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "At labels"
+msgid "At labels"
 msgstr "લેબલો પર"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "At axis"
+msgid "At axis"
 msgstr "અક્ષ પર"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "At axis and labels"
+msgid "At axis and labels"
 msgstr "અક્ષ અને લેબલો પર"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Grids"
+msgid "Grids"
 msgstr "જાળીઓ"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show major ~grid"
+msgid "Show major ~grid"
 msgstr "મુખ્ય જાળી ને બતાવો (~g)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Mo~re..."
+msgid "Mo~re..."
 msgstr "વધારે (~r)..."
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Show minor grid"
+msgid "~Show minor grid"
 msgstr "ગૌણ જાળી ને બતાવો (~S)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Mor~e..."
+msgid "Mor~e..."
 msgstr "વધારે (~e)..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose a chart type"
+msgid "Choose a chart type"
 msgstr "આલેખ પ્રકાર પસંદ કરો"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "X axis with Categories"
+msgid "X axis with Categories"
 msgstr "વર્ગો સાથેનો X અક્ષ"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~3D Look"
+msgid "~3D Look"
 msgstr "~3D દેખાવ"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Stack series"
+msgid "~Stack series"
 msgstr "સ્ટેક શ્રેણીઓ (~S)"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "On top"
+msgid "On top"
 msgstr "ટોચ પર"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Percent"
+msgid "Percent"
 msgstr "ટકા"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Deep"
+msgid "Deep"
 msgstr "ઊંડુ"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "S~mooth lines"
+msgid "S~mooth lines"
 msgstr "લીસી લીટીઓ (~m)"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "ગુણધર્મો..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Sort by X values"
+msgid "~Sort by X values"
 msgstr "X મૂલ્યો પ્રમાણે ક્રમમાં ગોઠવો (~S)"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Cubic spline"
+msgid "Cubic spline"
 msgstr "ઘન spline"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "B-Spline"
+msgid "B-Spline"
 msgstr "B-સ્પ્લાઈન"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Resolution"
+msgid "~Resolution"
 msgstr "રીઝોલ્યુશન(~R)"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degree of polynomials"
+msgid "~Degree of polynomials"
 msgstr "માહિતી બિંદુ ક્રમ(~D)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Customize data ranges for individual data series"
+msgid "Customize data ranges for individual data series"
 msgstr "વ્યક્તિગત માહિતી શ્રેણીઓ માટે માહિતી વિસ્તારો વૈવિધ્યપૂર્ણ બનાવો"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data ~series"
+msgid "Data ~series"
 msgstr "માહિતી શ્રેણીઓ (~s)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Data ranges"
+msgid "~Data ranges"
 msgstr "માહિતી વિસ્તારો (~D)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ran~ge for %VALUETYPE"
+msgid "Ran~ge for %VALUETYPE"
 msgstr "%VALUETYPE માટે વિસ્તાર (~g)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "વર્ગો (~C)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data ~labels"
+msgid "Data ~labels"
 msgstr "માહિતી લેબલો (~l)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Add"
+msgid "~Add"
 msgstr "ઉમેરો (~A)"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "દૂર કરો (~R)"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Position"
+msgid "Position"
 msgstr "સ્થાન"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
-msgstr "લખાણની દિશા"
+msgid "Text orientation"
+msgstr "લખાણ ની દિશા"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "લખાણની બાજુ (~x)"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Place chart"
+msgid "Place chart"
 msgstr "ટકા આલેખ"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Insert in sheet"
+msgid "~Insert in sheet"
 msgstr "શીટમાં દાખલ કરો (~I)"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Clockwise direction"
+msgid "~Clockwise direction"
 msgstr "દિશા ડાબીથી જમણી બાજુ (~C)"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Starting angle"
+msgid "Starting angle"
 msgstr "ખૂણાની શરૂઆત કરી રહ્યા છે"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ડિગ્રીઓ (~D)"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Plot options"
+msgid "Plot options"
 msgstr "પ્લોટ વિકલ્પો"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Include ~values from hidden cells"
-msgstr "છુપાયેલ સેલોમાંથી કિંમતોને સમાવો (~v)"
+msgid "Include ~values from hidden cells"
+msgstr "છુપાયેલ સેલો માંથી કિંમતોને સમાવો (~v)"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose a data range"
+msgid "Choose a data range"
 msgstr "માહિતી વિસ્તાર પસંદ કરો"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Data range"
+msgid "~Data range"
 msgstr "માહિતી વિસ્તાર (~D)"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Data series in ~rows"
+msgid "Data series in ~rows"
 msgstr "હરોળોમાં માહિતી શ્રેણીઓ (~r)"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Data series in ~columns"
+msgid "Data series in ~columns"
 msgstr "સ્તંભોમાં માહિતી શ્રેણીઓ (~c)"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~First row as label"
+msgid "~First row as label"
 msgstr "લેબલ તરીકે પ્રથમ હરોળ (~F)"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "F~irst column as label"
+msgid "F~irst column as label"
 msgstr "લેબલ તરીકે પ્રથમ સ્તંભ (~i)"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
-msgid  "Days"
+msgid "Days"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
-msgid  "Months"
+msgid "Months"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
-msgid  "Years"
+msgid "Years"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Scale"
+msgid "Scale"
 msgstr "માપદંડ"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Reverse direction"
+msgid "~Reverse direction"
 msgstr "વિપરીત દિશા (~R)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Logarithmic scale"
+msgid "~Logarithmic scale"
 msgstr "લોગેરિધમીક માપદંડ (~L)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "T~ype"
+msgid "T~ype"
 msgstr "પ્રકાર"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "આપમેળે (~u)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
-msgid  "Text"
+msgid "Text"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
-msgid  "Date"
+msgid "Date"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Minimum"
+msgid "~Minimum"
 msgstr "ન્યુનતમ(~M):"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr "આપોઆપ (~A)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ma~ximum"
+msgid "Ma~ximum"
 msgstr "મહત્તમ(~x):"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
 #, fuzzy
-msgid  "A~utomatic"
+msgid "A~utomatic"
 msgstr "આપમેળે (~u)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "R~esolution"
+msgid "R~esolution"
 msgstr "રીઝોલ્યુશન(~R)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Automat~ic"
+msgid "Automat~ic"
 msgstr "આપોઆપ (~i)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ma~jor interval"
+msgid "Ma~jor interval"
 msgstr "મુખ્ય અંતરાલ (~j):"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Au~tomatic"
+msgid "Au~tomatic"
 msgstr "આપોઆપ (~t)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Minor inter~val count"
+msgid "Minor inter~val count"
 msgstr "નાની અંતરાલની ગણતરી (~c):"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
-msgid  "Minor inter~val"
+msgid "Minor inter~val"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Aut~omatic"
+msgid "Aut~omatic"
 msgstr "આપોઆપ (~o)"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Re~ference value"
+msgid "Re~ference value"
 msgstr "સંદર્ભ મૂલ્ય (~v):"
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
+#, fuzzy
+msgid "Automat~ic"
+msgstr "આપોઆપ (~i)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Align data series to"
+msgid "Align data series to"
 msgstr "તે દિશામાં માહિતીની શ્રેણી"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Primary Y axis"
+msgid "Primary Y axis"
 msgstr "મુખ્ય Y અક્ષ"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Secondary Y axis"
+msgid "Secondary Y axis"
 msgstr "ગૌણ Y અક્ષ"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Settings"
+msgid "Settings"
 msgstr "સુયોજનાઓ"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Overlap"
+msgid "~Overlap"
 msgstr "ઊપરાઊપરી(~O)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Spacing"
+msgid "~Spacing"
 msgstr "જગ્યા(~S)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Connection lines"
+msgid "Connection lines"
 msgstr "જોડાણ લીટીઓ"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~bars side by side"
+msgid "Show ~bars side by side"
 msgstr "બાજુ દ્દારા પટ્ટીઓની બાજુ ને બતાવો (~b)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Plot options"
+msgid "Plot options"
 msgstr "પ્લોટ વિકલ્પો"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Plot missing values"
+msgid "Plot missing values"
 msgstr "ગુમ થયેલ કિંમતોને પ્લોટ કરો"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Leave gap"
+msgid "~Leave gap"
 msgstr "જગ્યાને છોડો (~L)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Assume zero"
+msgid "~Assume zero"
 msgstr "શૂન્ય ને ધારો (~A)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Continue line"
+msgid "~Continue line"
 msgstr "લીટી ને ચાલુ રાખો (~C)"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Include ~values from hidden cells"
+msgid "Include ~values from hidden cells"
 msgstr "છુપાયેલ સેલો માંથી કિંમતોને સમાવો (~v)"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
 #, fuzzy
-msgid  "Ve~rtically stacked"
+msgid "Ve~rtically stacked"
 msgstr "ઊભી રીતે સ્ટેક થયેલ છે (~r)"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ડિગ્રીઓ (~D)"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
+msgid "Text orientation"
 msgstr "લખાણ ની દિશા"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "લખાણની બાજુ (~x)"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose titles, legend, and grid settings"
+msgid "Choose titles, legend, and grid settings"
 msgstr "શીર્ષકો, દંતકથા, અને જાળી સુયોજનો પસંદ કરો"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Display grids"
+msgid "Display grids"
 msgstr "જાળીઓ દર્શાવો"

@@ -1,584 +1,727 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
+msgid "Back"
 msgstr "Înapoi"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
+msgid "Next"
 msgstr "Înainte"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Renunță"
 
 #: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
+msgid "Finish"
 msgstr "Încheiere"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
+msgid "Decline"
 msgstr "Nu accept"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
+msgid "Install now"
 msgstr "Instalează acum"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
+msgid "Remove Now"
 msgstr "Dezinstalează acum"
 
 #: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
+msgid "Help"
 msgstr "Ajutor"
 
 #: ../src/Localization/setupstrings.ulf#STRING_OK
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
+msgid "Error"
 msgstr "Eroare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
+msgid "Error: File not found"
 msgstr "Eroare: nu s-a găsit fișierul"
 
 #: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
 msgstr "Asistentul de instalare $PRODUCT_FULLNAME"
 
 #: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
 msgstr "Asistentul de dezinstalare $PRODUCT_FULLNAME"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
+msgid "Exit"
 msgstr "Ieșire"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
+msgid "Do you really want to exit the Installation Wizard?"
 msgstr "Sigur doriți să ieșiți din asistentul de instalare?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
+msgid "Do you really want to exit the Uninstallation Wizard?"
 msgstr "Sigur doriți să părăsiți asistentul de instalare?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
+msgid "Do you really want to abort the installation process?"
 msgstr "Sigur doriți să abandonați procesul de instalare?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
+msgid "Abort installation?"
 msgstr "Abandonați instalarea?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
+msgid "Do you really want to abort the uninstallation process?"
 msgstr "Sigur doriți să abandonați procesul de dezinstalare?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
+msgid "Abort uninstallation?"
 msgstr "Abandonați dezinstalarea?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
+msgid "Accept License"
 msgstr "Accept licența"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
+msgid "Software License Agreement"
 msgstr "Acord de licențiere software"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
+msgid "Please read the following license agreement carefully."
 msgstr "Vă rugăm să citiți cu atenție următorul acord de licențiere."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
-msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "Dacă ați citit și acceptați toți termenii acordului de licențiere al programului, apăsați „Accept licența” pentru a continua cu instalarea."
+msgid "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Dacă ați citit și acceptați toți termenii acordului de licențiere al "
+"programului, apăsați „Accept licența” pentru a continua cu instalarea."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
+msgid "Select Installation Directory"
 msgstr "Selectați directorul de instalare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
+msgid "Update the Installed Version"
 msgstr "Actualizează versiunea instalată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
+msgid "Adding Components to the Installed Version"
 msgstr "Adăugare de componente la versiunea instalată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
 msgstr "Instalează $PRODUCT_FULLNAME în acest director"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Răsfoiește..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
+msgid "Create New Directory"
 msgstr "Creare director nou"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Directorul „${DIR}” nu există.\nDoriți să-l creați acum?"
+msgid "The directory '${DIR}' does not exist.\nDo you want to create it now?"
+msgstr ""
+"Directorul „${DIR}” nu există.\n"
+"Doriți să-l creați acum?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Directorul „${DIR}” nu există.\nDoriți să-l creați acum sau să selectați alt director?"
+msgid "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
+msgstr ""
+"Directorul „${DIR}” nu există.\n"
+"Doriți să-l creați acum sau să selectați alt director?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
+msgid "Select root directory"
 msgstr "Selectați directorul rădăcină"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
+msgid "You do not have write access in the directory"
 msgstr "Nu aveți drept de scriere în director"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
+msgid "You are not allowed to create the directory"
 msgstr "Nu vă este permis să creați directorul"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
+msgid "Failed to create the directory"
 msgstr "Eșec la crearea directorului"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
+msgid "Select Components"
 msgstr "Alegeți componentele"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
+msgid "Select Additional Components"
 msgstr "Selectați componente adiționale"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr "Componentele marcate vor fi instalate. Vă rugăm să le marcați după cum doriți"
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr ""
+"Componentele marcate vor fi instalate. Vă rugăm să le marcați după cum "
+"doriți"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
+msgid "Feature Description"
 msgstr "Descrierea funcționalității"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
+msgid "Size (kB):"
 msgstr "Mărime (KO):"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
-msgid  "Select the Type of Installation"
+msgid "Select the Type of Installation"
 msgstr "Selectați tipul instalării"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
-msgid  "Select the type of installation that best suits your needs:"
+msgid "Select the type of installation that best suits your needs:"
 msgstr "Alegeți tipul de instalare care vi se potrivește cel mai bine:"
 
+#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3
+msgid "Select the Type of Installation"
+msgstr "Selectați tipul instalării"
+
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
-msgid  "The main components will be installed. Recommended for most users."
-msgstr "Se vor instala componentele principale. Recomandat pentru majoritatea utilizatorilor."
+msgid "The main components will be installed. Recommended for most users."
+msgstr ""
+"Se vor instala componentele principale. Recomandat pentru majoritatea "
+"utilizatorilor."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "Puteți alege componentele pe care doriți să le instalați și unde să fie instalate. Recomandat pentru utilizatorii avansați."
+msgid "You choose the components you want to install and where they are stored. Recommended for advanced users."
+msgstr ""
+"Puteți alege componentele pe care doriți să le instalați și unde să fie "
+"instalate. Recomandat pentru utilizatorii avansați."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
-msgid  "Typical"
+msgid "Typical"
 msgstr "Tipică"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
-msgid  "Custom"
+msgid "Custom"
 msgstr "Personalizat"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
+msgid "Ready to Install"
 msgstr "Gata pentru instalare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
-msgid  "Ready to Update"
+msgid "Ready to Update"
 msgstr "Gata pentru actualizare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
-msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "Vor fi instalate următoarele componente $PRODUCT_FULLNAME:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
-msgid  "Installing..."
+msgid "Installing..."
 msgstr "Instalare..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
-msgid  "Stop"
+msgid "Stop"
 msgstr "Oprire"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
-msgid  "ERROR: Path with installation packages not found!"
+msgid "ERROR: Path with installation packages not found!"
 msgstr "EROARE: Nu s-a găsit calea către pachetele de instalare!"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Bine ați venit"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "Asistentul de instalare va instala $PRODUCT_FULLNAME pe calculatorul dumneavoastră."
+msgid "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Asistentul de instalare va instala $PRODUCT_FULLNAME pe calculatorul "
+"dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
+msgid "To continue, click 'Next'."
 msgstr "Pentru a continua, apăsați „Înainte”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Notă: Această instalare va fi făcută fără drepturi de root. Ca urmare veți avea o funcționalitate redusă (Java Runtime Environment(JRE) nu va fi instalat, integrarea cu sistemul nu va fi posibilă).\nApăsați „Renunță” și asigurați-vă că aveți drepturi de root dacă doriți să folosiți toate funcționalitățile."
+msgid "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
+"Notă: Această instalare va fi făcută fără drepturi de root. Ca urmare veți "
+"avea o funcționalitate redusă (Java Runtime Environment(JRE) nu va fi "
+"instalat, integrarea cu sistemul nu va fi posibilă).\n"
+"Apăsați „Renunță” și asigurați-vă că aveți drepturi de root dacă doriți să "
+"folosiți toate funcționalitățile."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
-msgid  "Installation Completed"
+msgid "Installation Completed"
 msgstr "Instalare completă"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
-msgid  "Installation Aborted"
+msgid "Installation Aborted"
 msgstr "Instalare abandonată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
-msgid  "Installation Failed"
+msgid "Installation Failed"
 msgstr "Instalare eșuată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "Asistentul de instalare a instalat cu succes $PRODUCT_FULLNAME pe calculatorul dumneavoastră."
+msgid "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Asistentul de instalare a instalat cu succes $PRODUCT_FULLNAME pe "
+"calculatorul dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "Asistentul de instalare a fost abandonat. $PRODUCT_NAME nu este instalat pe calculatorul dumneavoastră."
+msgid "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
+msgstr ""
+"Asistentul de instalare a fost abandonat. $PRODUCT_NAME nu este instalat pe "
+"calculatorul dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "A apărut o eroare. Ca urmare, asistentul de instalare nu poate instala cu succes $PRODUCT_NAME pe calculatorul dumneavoastră. Apăsați „Detalii...” pentru mai multe informații."
+msgid "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
+msgstr ""
+"A apărut o eroare. Ca urmare, asistentul de instalare nu poate instala cu "
+"succes $PRODUCT_NAME pe calculatorul dumneavoastră. Apăsați „Detalii...” "
+"pentru mai multe informații."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
-msgid  "Click 'Finish' to exit the Wizard."
+msgid "Click 'Finish' to exit the Wizard."
 msgstr "Apăsați „Încheiere” pentru a părăsi asistentul."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
-msgid  "Details..."
+msgid "Details..."
 msgstr "Detalii..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
-msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr "Asistentul de dezinstalat $PRODUCT_FULLNAME va elimina $PRODUCT_FULLNAME de pe calculatorul dumneavoastră."
+msgid "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"Asistentul de dezinstalat $PRODUCT_FULLNAME va elimina $PRODUCT_FULLNAME de "
+"pe calculatorul dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "Drepturi necorespunzătoare. Instalarea s-a făcut cu drepturi de utilizator, dar dumneavoastră aveți drepturi de „root”."
+msgid "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
+msgstr ""
+"Drepturi necorespunzătoare. Instalarea s-a făcut cu drepturi de utilizator, "
+"dar dumneavoastră aveți drepturi de „root”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "Drepturi necorespunzătoare. Instalarea s-a făcut cu drepturi de „root”, dar dumneavoastră aveți doar drepturi de utilizator."
+msgid "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
+msgstr ""
+"Drepturi necorespunzătoare. Instalarea s-a făcut cu drepturi de „root”, dar "
+"dumneavoastră aveți doar drepturi de utilizator."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
-msgid  "Select the Type of Uninstallation"
+msgid "Select the Type of Uninstallation"
 msgstr "Alegeți tipul de dezinstalare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
-msgid  "Select the type of uninstallation that best suits your needs:"
+msgid "Select the type of uninstallation that best suits your needs:"
 msgstr "Alegeți tipul de dezinstalare care vi se potrivește mai bine:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
-msgid  "Partial"
+msgid "Partial"
 msgstr "Parțială"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
-msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr "Elimină complet $PRODUCT_FULLNAME și toate componentele sale de pe sistemul dumneavoastră."
+msgid "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
+msgstr ""
+"Elimină complet $PRODUCT_FULLNAME și toate componentele sale de pe sistemul "
+"dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
-msgid  "You choose the program features you want to remove."
+msgid "You choose the program features you want to remove."
 msgstr "Veți alege dumneavoastră componentele pe care doriți să le eliminați."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
-msgid  "Complete"
+msgid "Complete"
 msgstr "Complet"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr "Componentele marcate cu un X vor fi eliminate. Marcați componentele pe care doriți să le eliminați."
+msgid "Components marked with an X will be removed. Mark the components you want to remove."
+msgstr ""
+"Componentele marcate cu un X vor fi eliminate. Marcați componentele pe care "
+"doriți să le eliminați."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
+msgid "Ready to Remove"
 msgstr "Gata de eliminare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
-msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "Următoarele componente ${PRODUCT_FULLNAME} vor fi eliminate: "
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
-msgid  "Uninstalling..."
+msgid "Uninstalling..."
 msgstr "Dezinstalare..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
-msgid  "Uninstallation Completed"
+msgid "Uninstallation Completed"
 msgstr "Dezinstalare completă"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
-msgid  "Uninstallation Aborted"
+msgid "Uninstallation Aborted"
 msgstr "Dezinstalare abandonată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
-msgid  "Uninstallation Failed"
+msgid "Uninstallation Failed"
 msgstr "Dezinstalare eșuată"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "Asistentul de dezinstalare a eliminat cu succes $PRODUCT_FULLNAME de pe calculatorul dumneavoastră."
+msgid "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"Asistentul de dezinstalare a eliminat cu succes $PRODUCT_FULLNAME de pe "
+"calculatorul dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
-msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr "Asistentul de dezinstalare a eliminat cu succes de pe calculatorul dumneavoastră componentele selectate din $PRODUCT_NAME."
+msgid "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Asistentul de dezinstalare a eliminat cu succes de pe calculatorul "
+"dumneavoastră componentele selectate din $PRODUCT_NAME."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "S-a abandonat asistentul de dezinstalare înainte de a elimina complet $PRODUCT_NAME de pe calculatorul dumneavoastră."
+msgid "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
+msgstr ""
+"S-a abandonat asistentul de dezinstalare înainte de a elimina complet "
+"$PRODUCT_NAME de pe calculatorul dumneavoastră."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "A intervenit o eroare. Ca urmare, asistentul de dezinstalare nu a putut elimina cu succes $PRODUCT_NAME de pe calculatorul dumneavoastră. Clic pe „Detalii” pentru mai multe informații."
+msgid "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
+msgstr ""
+"A intervenit o eroare. Ca urmare, asistentul de dezinstalare nu a putut "
+"elimina cu succes $PRODUCT_NAME de pe calculatorul dumneavoastră. Clic pe "
+"„Detalii” pentru mai multe informații."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
-msgid  "Sorry, this Operating System is not supported yet."
+msgid "Sorry, this Operating System is not supported yet."
 msgstr "Ne pare rău, acest sistem de operare nu este încă suportat."
 
 #: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "S-a găsit o versiune mai veche de ${PRODUCT_NAME} pe acest sistem în:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "Trebuie să ștergeți versiunea mai veche de ${PRODUCT_NAME} înainte de a instala una nouă."
+msgid "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
+msgstr ""
+"Trebuie să ștergeți versiunea mai veche de ${PRODUCT_NAME} înainte de a "
+"instala una nouă."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "S-a găsit o versiune mai nouă de $PRODUCT_NAME pe sistemul dumneavoastră în:"
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr ""
+"S-a găsit o versiune mai nouă de $PRODUCT_NAME pe sistemul dumneavoastră în:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "Trebuie să eliminați versiunea mai nouă de $PRODUCT_NAME înainte de a instala cea veche."
+msgid "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
+msgstr ""
+"Trebuie să eliminați versiunea mai nouă de $PRODUCT_NAME înainte de a "
+"instala cea veche."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
-msgid  "Database"
+msgid "Database"
 msgstr "Bază de date"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
-msgid  "Please choose another installation directory."
+msgid "Please choose another installation directory."
 msgstr "Vă rugăm să alegeți un alt director de instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "Utilizatorul cu care sunteți autentificat(ă) nu poate rula asistentul de instalare."
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr ""
+"Utilizatorul cu care sunteți autentificat(ă) nu poate rula asistentul de "
+"instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
-msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr "Vă rugăm să vă autentificați cu un utilizator care are drepturi de administrare."
+msgid "Please log out and log back in as a user with system administrator rights."
+msgstr ""
+"Vă rugăm să vă autentificați cu un utilizator care are drepturi de "
+"administrare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
-msgid  "Not enough discspace available for installation."
+msgid "Not enough discspace available for installation."
 msgstr "Nu există suficient spațiu disponibil pentru instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
-msgid  "Required disc space"
+msgid "Required disc space"
 msgstr "Spațiu necesar pe disc"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
-msgid  "Available disc space"
+msgid "Available disc space"
 msgstr "Spațiu disponibil pe disc"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
-msgid  "Please use another directory for installation or change your module selection."
-msgstr "Vă rugăm să folosiți un alt director pentru instalare sau să modificați selecția de module."
+msgid "Please use another directory for installation or change your module selection."
+msgstr ""
+"Vă rugăm să folosiți un alt director pentru instalare sau să modificați "
+"selecția de module."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
-msgid  "Analyzing ..."
+msgid "Analyzing ..."
 msgstr "Se analizează..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Se analizează baza de date\nVă rugăm să așteptați un moment..."
+msgid "Analyzing database\nPlease wait a moment ..."
+msgstr ""
+"Se analizează baza de date\n"
+"Vă rugăm să așteptați un moment..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
-msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr "Bun venit la asistentul de instalare.<p>Acest asistent vă va oferi niște opțiuni legate de configurare.<p>În partea de jos, la fiecare pas, se află butoane de navigare căre vă permit să navigați înainte și înapoi prin pașii de instalare:"
+msgid "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
+msgstr ""
+"Bun venit la asistentul de instalare.<p>Acest asistent vă va oferi niște "
+"opțiuni legate de configurare.<p>În partea de jos, la fiecare pas, se află "
+"butoane de navigare căre vă permit să navigați înainte și înapoi prin pașii "
+"de instalare:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
-msgid  "'Back' returns you to the previous page."
+msgid "'Back' returns you to the previous page."
 msgstr "Apăsând „Înapoi” vă veți întoarce la pasul precedent."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
-msgid  "'Next' takes you to the next page. "
+msgid "'Next' takes you to the next page. "
 msgstr "„Înainte” vă duce la următorul pas."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
-msgid  "'Cancel' ends the Installation Wizard without installing this software."
+msgid "'Cancel' ends the Installation Wizard without installing this software."
 msgstr "„Renunță” încheie asistentul de instalare fără a instala programul."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
-msgid  "'Help' displays the Help with further information about the page currently displayed."
+msgid "'Help' displays the Help with further information about the page currently displayed."
 msgstr "„Ajutor” afișează informații ajutătoare despre pasul la care vă aflați."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
-msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr "Apăsând „OK”, veți părăsi pagina de ajutor și veți reveni la asistentul de instalare."
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr ""
+"Apăsând „OK”, veți părăsi pagina de ajutor și veți reveni la asistentul de "
+"instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
-msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr "Bine ați venit la asistentul de dezinstalare.<p>Acest asistent vă va cere să furnizați setări legate de configurare.<p>În partea de jos a fiecărei pagini sunt butoane de navigare care vă permit să controlați fiecare pas din asistentul de instalare:"
+msgid "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Bine ați venit la asistentul de dezinstalare.<p>Acest asistent vă va cere să "
+"furnizați setări legate de configurare.<p>În partea de jos a fiecărei "
+"pagini sunt butoane de navigare care vă permit să controlați fiecare pas din "
+"asistentul de instalare:"
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
+msgid "'Back' returns you to the previous page."
+msgstr "Apăsând „Înapoi” vă veți întoarce la pasul precedent."
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3
+msgid "'Next' takes you to the next page. "
+msgstr "„Înainte” vă duce la următorul pas."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
-msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
-msgstr "„Renunță” încheie asistentul de dezinstalare fără a elimina acest program."
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr ""
+"„Renunță” încheie asistentul de dezinstalare fără a elimina acest program."
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
+msgid "'Help' displays the Help with further information about the page currently displayed."
+msgstr "„Ajutor” afișează informații ajutătoare despre pasul la care vă aflați."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
-msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr "Apăsând „OK” veți părăsi pagina de ajutor și veți reveni la asistentul de dezinstalare."
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr ""
+"Apăsând „OK” veți părăsi pagina de ajutor și veți reveni la asistentul de "
+"dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr "Înainte de a instala acest produs, trebuie să citiți și să acceptați în întregime acordul de licențiere al programului, licență sub care programul vă este oferit spre utilizare."
+msgid "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
+msgstr ""
+"Înainte de a instala acest produs, trebuie să citiți și să acceptați în "
+"întregime acordul de licențiere al programului, licență sub care programul "
+"vă este oferit spre utilizare."
+
+#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
+msgid "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Dacă ați citit și acceptați toți termenii acordului de licențiere al "
+"programului, apăsați „Accept licența” pentru a continua cu instalarea."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr "Dacă nu acceptați toți termenii acordului de licențiere al programului, apăsați „Nu accept” pentru a ieși din programul de instalare și a renunța la instalare."
+msgid "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"Dacă nu acceptați toți termenii acordului de licențiere al programului, "
+"apăsați „Nu accept” pentru a ieși din programul de instalare și a renunța la "
+"instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "Alegeți tipul de instalare al produsului din următoarele opțiuni. Această alegere va determina cantitatea de informație pe care va trebui să o furnizați pentru configurarea produsului."
+msgid "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
+msgstr ""
+"Alegeți tipul de instalare al produsului din următoarele opțiuni. Această "
+"alegere va determina cantitatea de informație pe care va trebui să o "
+"furnizați pentru configurarea produsului."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
-msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr "Este recomandat să instalați acest produs în directorul sugerat de asistentul de instalare. <p>Pentru a alege un alt loc, apăsați „Răsfoiește...” sau specificați calea completă a directorului în căsuța text de mai jos. <p>Dacă produsul este deja instalat, nu puteți schimba directorul de destinație."
+msgid "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
+msgstr ""
+"Este recomandat să instalați acest produs în directorul sugerat de "
+"asistentul de instalare. <p>Pentru a alege un alt loc, apăsați "
+"„Răsfoiește...” sau specificați calea completă a directorului în căsuța text "
+"de mai jos. <p>Dacă produsul este deja instalat, nu puteți schimba "
+"directorul de destinație."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr "Se vor instala componentele marcate prin colorare. Clicați iconița unei componente pentru a marca sau a elimina marcarea componentei. <p>Toate componentele deja instalate nu pot fi selectate pentru instalare."
+msgid "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
+msgstr ""
+"Se vor instala componentele marcate prin colorare. Clicați iconița unei "
+"componente pentru a marca sau a elimina marcarea componentei. <p>Toate "
+"componentele deja instalate nu pot fi selectate pentru instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Componentele listate sunt gata pentru a fi instalate conform opțiunilor dumneavoastră anterioare. <p>Dacă opțiunile sunt pe placul dumneavoastră, apăsați „Instalează acum” pentru a începe. <p>Pentru a verifica sau a modifica opțiunile făcute în pașii anterior, apăsați „Înapoi”."
+msgid "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
+msgstr ""
+"Componentele listate sunt gata pentru a fi instalate conform opțiunilor "
+"dumneavoastră anterioare. <p>Dacă opțiunile sunt pe placul dumneavoastră, "
+"apăsați „Instalează acum” pentru a începe. <p>Pentru a verifica sau a "
+"modifica opțiunile făcute în pașii anterior, apăsați „Înapoi”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Componentele listate sunt gata pentru a fi dezinstalate pe baza opțiunilor dumneavoastră. <p>Dacă selecția e pe placul dumneavoastră, apăsați „Dezinstalează acum” pentru a începe. <p>Pentru a verifica sau modifica opțiunile făcute în pașii anteriori, apăsați „Înapoi”."
+msgid "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
+msgstr ""
+"Componentele listate sunt gata pentru a fi dezinstalate pe baza opțiunilor "
+"dumneavoastră. <p>Dacă selecția e pe placul dumneavoastră, apăsați "
+"„Dezinstalează acum” pentru a începe. <p>Pentru a verifica sau modifica "
+"opțiunile făcute în pașii anteriori, apăsați „Înapoi”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "Această pagină indică progresul instalării cu ajutorul unei bare de progres. Pentru a abandona procesul de instalare, apăsați „Stop”."
+msgid "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Această pagină indică progresul instalării cu ajutorul unei bare de progres. "
+"Pentru a abandona procesul de instalare, apăsați „Stop”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "Această pagină indică progresul dezinstalării cu ajutorul unei bare de progres. Pentru a abandona dezinstalarea, apăsați „Stop”."
+msgid "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Această pagină indică progresul dezinstalării cu ajutorul unei bare de "
+"progres. Pentru a abandona dezinstalarea, apăsați „Stop”."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr "Completă: Această opțiune elimină toate componentele instalate.<p>Parțială: Această opțiune elimină componentele pe care le alegeți din lista de componente."
+msgid "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
+msgstr ""
+"Completă: Această opțiune elimină toate componentele instalate.<p>Parțială: "
+"Această opțiune elimină componentele pe care le alegeți din lista de "
+"componente."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr "Componentele marcate cu X vor fi eliminate. Faceți clic în dreptul unei componente pentru marcare sau demarcare."
+msgid "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
+msgstr ""
+"Componentele marcate cu X vor fi eliminate. Faceți clic în dreptul unei "
+"componente pentru marcare sau demarcare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
-msgid  "This package format is currently not supported for your operating system!"
-msgstr "Formatul pachetului nu este actualmente suportat pentru sistemul dumneavoastră de operare!"
+msgid "This package format is currently not supported for your operating system!"
+msgstr ""
+"Formatul pachetului nu este actualmente suportat pentru sistemul "
+"dumneavoastră de operare!"
 
 #: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
-msgid  "Operating system"
+msgid "Operating system"
 msgstr "Sistem de operare"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
-msgid  "Package format"
+msgid "Package format"
 msgstr "Format de pachet"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
-msgid  "Nothing to install"
+msgid "Nothing to install"
 msgstr "Nimic de instalat"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
-msgid  "No components have been selected for installation."
+msgid "No components have been selected for installation."
 msgstr "Nu s-au selectat componente pentru instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
-msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe componente pentru instalare sau pentru a ieși din asistentul de instalare."
+msgid "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe componente pentru instalare "
+"sau pentru a ieși din asistentul de instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
-msgid  "No languages have been selected for installation."
+msgid "No languages have been selected for installation."
 msgstr "Nu s-a selectat nicio limbă pentru instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
-msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe limbi pentru instalare sau pentru a părăsi asistentul de instalare."
+msgid "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe limbi pentru instalare sau "
+"pentru a părăsi asistentul de instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
-msgid  "No applications have been selected for installation."
+msgid "No applications have been selected for installation."
 msgstr "Nu a fost selectată nici o aplicație pentru instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
-msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe aplicații pentru instalare sau pentru a ieși din asistentul de instalare."
+msgid "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe aplicații pentru instalare "
+"sau pentru a ieși din asistentul de instalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
-msgid  "Nothing to uninstall"
+msgid "Nothing to uninstall"
 msgstr "Nimic de dezinstalat"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
-msgid  "No components have been selected for uninstallation."
+msgid "No components have been selected for uninstallation."
 msgstr "Nu s-au selectat componente pentru a fi dezinstalate."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
-msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe componente pentru a fi dezinstalate sau pentru a ieși din asistentul de dezinstalare."
+msgid "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe componente pentru a fi "
+"dezinstalate sau pentru a ieși din asistentul de dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
-msgid  "All language components have been selected for uninstallation."
+msgid "All language components have been selected for uninstallation."
 msgstr "Toate componentele limbii au fost selectate pentru dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
-msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe componente ale limbii pentru a nu fi dezinstalate sau pentru a ieși din asistentul de dezinstalare."
+msgid "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe componente ale limbii pentru "
+"a nu fi dezinstalate sau pentru a ieși din asistentul de dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
-msgid  "All application components have been selected for uninstallation."
+msgid "All application components have been selected for uninstallation."
 msgstr "Toate componentele aplicației au fost selectate pentru dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
-msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Apăsați „OK” pentru a selecta una sau mai multe componente ale aplicației pentru a nu fi dezinstalate sau pentru a ieși din asistentul de dezinstalare."
+msgid "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Apăsați „OK” pentru a selecta una sau mai multe componente ale aplicației "
+"pentru a nu fi dezinstalate sau pentru a ieși din asistentul de "
+"dezinstalare."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
-msgid  "Please change selection"
+msgid "Please change selection"
 msgstr "Vă rugăm să schimbați selecția"

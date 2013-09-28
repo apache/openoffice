@@ -1,344 +1,658 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: readme.xrm#WELCOME
-msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "${PRODUCTNAME} ${PRODUCTVERSION} – Fontos információk"
 
 #: readme.xrm#LATESTUPDATES
-msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
-msgstr "Ennek a fájlnak a legújabb verzióját a <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a> címen érheti el."
+msgid "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgstr ""
+"Ennek a fájlnak a legújabb verzióját a <a href=\"http://www.openoffice.org/we"
+"lcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a> címen "
+"érheti el."
+
+#: readme.xrm#A6
+msgid "This file contains important information about this program. Please read this information very carefully before starting work."
+msgstr ""
 
 #: readme.xrm#A7
-msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
-msgstr "Az Apache OpenOffice közösség, amely ennek a terméknek a fejlesztéséért felelős, Önt is hívja tagjai sorába. Mint új felhasználó, megnézheti az ${PRODUCTNAME} honlapját ahol hasznos információk olvashatók: <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgid "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgstr ""
+"Az Apache OpenOffice közösség, amely ennek a terméknek a fejlesztéséért "
+"felelős, Önt is hívja tagjai sorába. Mint új felhasználó, megnézheti az "
+"${PRODUCTNAME} honlapját ahol hasznos információk olvashatók: <a "
+"href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 
 #: readme.xrm#A9
-msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "Továbbá olvassa el az alábbi bekezdéseket, amelyek az Apache OpenOffice projektben való részvételhez adnak hasznos információkat."
+msgid "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+"Továbbá olvassa el az alábbi bekezdéseket, amelyek az Apache OpenOffice "
+"projektben való részvételhez adnak hasznos információkat."
 
 #: readme.xrm#A10
 #, fuzzy
-msgid  "Is ${PRODUCTNAME} really free for any user? "
+msgid "Is ${PRODUCTNAME} really free for any user? "
 msgstr "Az ${PRODUCTNAME} tényleg minden felhasználónak ingyenes? "
 
 #: readme.xrm#A11
 #, fuzzy
-msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr "Az ${PRODUCTNAME} mindenki számára szabadon használható. Az ${PRODUCTNAME} jelen példányát annyi számítógépre telepíti, amennyire szeretné, és bármilyen célra felhasználhatja (beleértve a kereskedelmi, kormányzati, nyilvános vagy oktatási felhasználást). Bővebb információért olvassa el az ${PRODUCTNAME} termékhez kapott licencet vagy a <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a> weboldalt."
+msgid "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"Az ${PRODUCTNAME} mindenki számára szabadon használható. Az ${PRODUCTNAME} "
+"jelen példányát annyi számítógépre telepíti, amennyire szeretné, és "
+"bármilyen célra felhasználhatja (beleértve a kereskedelmi, kormányzati, "
+"nyilvános vagy oktatási felhasználást). Bővebb információért olvassa el az "
+"${PRODUCTNAME} termékhez kapott licencet vagy a <a href=\"http://www.openoffi"
+"ce.org/license.html\">http://www.openoffice.org/license.html</a> weboldalt."
 
 #: readme.xrm#A12
 #, fuzzy
-msgid  "Why is ${PRODUCTNAME} free for any user?"
+msgid "Why is ${PRODUCTNAME} free for any user?"
 msgstr "Miért ingyenes az ${PRODUCTNAME} minden felhasználó számára?"
 
 #: readme.xrm#A13
-msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr "Az ${PRODUCTNAME}-ot azért használhatja ingyenesen, mert az egyéni hozzájárulók és vállalati szponzorok tervezték, fejlesztették, tesztelték, fordították, dokumentálták, támogatták, marketingelték és más módokon segítették. Az ${PRODUCTNAME} ezért válhatott azzá, ami ma – a világ vezető nyílt forráskódú irodai szoftvere."
+msgid "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr ""
+"Az ${PRODUCTNAME}-ot azért használhatja ingyenesen, mert az egyéni "
+"hozzájárulók és vállalati szponzorok tervezték, fejlesztették, tesztelték, "
+"fordították, dokumentálták, támogatták, marketingelték és más módokon "
+"segítették. Az ${PRODUCTNAME} ezért válhatott azzá, ami ma – a világ vezető "
+"nyílt forráskódú irodai szoftvere."
 
 #: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
-msgstr "Ha elismeri az erőfeszítésüket, és biztos akar lenni abban, hogy az Apache OpenOffice folytatódik a jövőben, kérem gondolja meg a projekt támogatását - tekintse meg a <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> a ráfordított idejével történő támogatás módjait, és a <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> a pénzbeli adományozás részleteiért. Mindenki hozzátudja tenni a sajátját."
+msgid "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr ""
+"Ha elismeri az erőfeszítésüket, és biztos akar lenni abban, hogy az Apache "
+"OpenOffice folytatódik a jövőben, kérem gondolja meg a projekt támogatását - "
+"tekintse meg a <a href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a> a "
+"ráfordított idejével történő támogatás módjait, és a <a href=\"http://www.apa"
+"che.org/foundation/contributing.html\">http://www.apache.org/foundation/contr"
+"ibuting.html</a> a pénzbeli adományozás részleteiért. Mindenki hozzátudja "
+"tenni a sajátját."
+
+#: readme.xrm#RR3FGF42R
+msgid "Notes on Installation"
+msgstr ""
 
 #: readme.xrm#JAVANEEDED
-msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
-msgstr "${PRODUCTNAME} teljes működéséhez szükséges a JAVA legfrissebb verziója; a JAVA letölthető innen: <a href=\"http://java.com\">http://java.com</a>."
+msgid "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
+msgstr ""
+"${PRODUCTNAME} teljes működéséhez szükséges a JAVA legfrissebb verziója; a "
+"JAVA letölthető innen: <a href=\"http://java.com\">http://java.com</a>."
 
 #: readme.xrm#SDFSDFGF42R
 #, fuzzy
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "Rendszerkövetelmények"
+
+#: readme.xrm#MACXIOSX
+msgid "MacOSX 10.4 (Tiger) or higher"
+msgstr ""
+
+#: readme.xrm#MACXICPU
+msgid "Intel processor"
+msgstr ""
+
+#: readme.xrm#MACXIRAM
+msgid "512 MB RAM"
+msgstr ""
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
-msgid  "Up to 1.5 GB available hard disk space"
+msgid "Up to 1.5 GB available hard disk space"
 msgstr "1,5 GB szabad hely a merevlemezen"
 
 #: readme.xrm#MACXIVIDEO
 #, fuzzy
-msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgid "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr "1024 x 768 grafikus eszköz 256 színnel (nagyobb felbontás ajánlott)"
 
 #: readme.xrm#S2S3SDF2
-msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
+msgid "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
 msgstr "Microsoft Windows XP, Vista, Windows 7 vagy Windows 8"
 
 #: readme.xrm#UTZU6
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Pentium III vagy újabb processzor"
 
 #: readme.xrm#GHUJ67
 #, fuzzy
-msgid  "256 MB RAM (512 MB RAM recommended)"
+msgid "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (512 MB RAM javasolt)"
+
+#: readme.xrm#JZJTZU6
+#, fuzzy
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "1,5 GB szabad hely a merevlemezen"
 
 #: readme.xrm#JTZU56
 #, fuzzy
-msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "1024×768 felbontás (nagyobb felbontás javasolt), legalább 256 szín"
 
 #: readme.xrm#EDSSC3D
 #, fuzzy
-msgid  "Please be aware that administrator rights are needed for the installation process."
+msgid "Please be aware that administrator rights are needed for the installation process."
 msgstr "A telepítéshez rendszergazdai jogosultságokra van szükség."
 
 #: readme.xrm#MSOREG1
 #, fuzzy
-msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr "Az ${PRODUCTNAME} regisztrálása a Microsoft Office formátumok megnyitására használt alapértelmezett alkalmazásként a következő parancssori kapcsolókkal kényszeríthető, illetve tiltható:"
+msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+"Az ${PRODUCTNAME} regisztrálása a Microsoft Office formátumok megnyitására "
+"használt alapértelmezett alkalmazásként a következő parancssori kapcsolókkal "
+"kényszeríthető, illetve tiltható:"
 
 #: readme.xrm#MSOREG2
 #, fuzzy
-msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "Az <tt>/msoreg=1</tt> az ${PRODUCTNAME} szoftvert regisztrálja a Microsoft Office formátumok alapértelmezett alkalmazásaként."
+msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"Az <tt>/msoreg=1</tt> az ${PRODUCTNAME} szoftvert regisztrálja a Microsoft "
+"Office formátumok alapértelmezett alkalmazásaként."
 
 #: readme.xrm#MSOREG3
 #, fuzzy
-msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "Az <tt>/msoreg=0</tt> az ${PRODUCTNAME} szoftvert nem regisztrálja a Microsoft Office formátumok alapértelmezett alkalmazásaként."
+msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"Az <tt>/msoreg=0</tt> az ${PRODUCTNAME} szoftvert nem regisztrálja a "
+"Microsoft Office formátumok alapértelmezett alkalmazásaként."
 
 #: readme.xrm#DLLA1
-msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr "Ha rendszergazdai telepítést hajt végre setup /a parancsot használva, akkor az msvcr100.dll fájlnak telepítve kell lennie a rendszeren. Ez a fájl szükséges ahhoz, hogy az ${PRODUCTNAME} elinduljon a rendszergazdai telepítés után. A fájlt a következő weboldalról töltheti le: <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>."
+msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgstr ""
+"Ha rendszergazdai telepítést hajt végre setup /a parancsot használva, akkor "
+"az msvcr100.dll fájlnak telepítve kell lennie a rendszeren. Ez a fájl "
+"szükséges ahhoz, hogy az ${PRODUCTNAME} elinduljon a rendszergazdai "
+"telepítés után. A fájlt a következő weboldalról töltheti le: <a "
+"href=\"http://www.microsoft.com/en-"
+"us/download/details.aspx?id=5555\">http://www.microsoft.com/en-"
+"us/download/details.aspx?id=5555</a>."
+
+#: readme.xrm#ADMINNEEDED
+#, fuzzy
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr "A telepítéshez rendszergazdai jogosultságokra van szükség."
+
+#: readme.xrm#S2335
+msgid "Solaris 10 operating system (SPARC platform) or higher"
+msgstr ""
+
+#: readme.xrm#S253
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (512 MB RAM javasolt)"
 
 #: readme.xrm#S23SEG
 #, fuzzy
-msgid  "Up to 1.55 GB available hard disk space"
+msgid "Up to 1.55 GB available hard disk space"
 msgstr "1,55 GB szabad hely a merevlemezen"
 
 #: readme.xrm#S2S43GFE
 #, fuzzy
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "X Server 1024×768 felbontással (nagyobb felbontás javasolt), legalább 256 színnel"
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Server 1024×768 felbontással (nagyobb felbontás javasolt), legalább 256 "
+"színnel"
 
 #: readme.xrm#N4234RW
 #, fuzzy
-msgid  "Window Manager"
+msgid "Window Manager"
 msgstr "Ablakkezelő"
 
 #: readme.xrm#WD2DFF2
 #, fuzzy
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Az „akadálymentes” használatot lehetővé tevő kisegítő technológiai eszközök támogatásához gail 1.8.6 és at-spi 1.7 csomagokkal ellátott GNOME 2.6 vagy újabb szükséges."
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Az „akadálymentes” használatot lehetővé tevő kisegítő technológiai eszközök "
+"támogatásához gail 1.8.6 és at-spi 1.7 csomagokkal ellátott GNOME 2.6 vagy "
+"újabb szükséges."
 
 #: readme.xrm#S23H
 #, fuzzy
-msgid  "Solaris 10 operating system (x86 platform) or higher"
+msgid "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 operációs rendszer (x86 platform) vagy újabb"
+
+#: readme.xrm#S24F
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (512 MB RAM javasolt)"
+
+#: readme.xrm#FGHEG
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "1,55 GB szabad hely a merevlemezen"
+
+#: readme.xrm#FGHFGH
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Server 1024×768 felbontással (nagyobb felbontás javasolt), legalább 256 "
+"színnel"
+
+#: readme.xrm#MGJFG
+#, fuzzy
+msgid "Window Manager"
+msgstr "Ablakkezelő"
+
+#: readme.xrm#WD2DFF1
+#, fuzzy
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Az „akadálymentes” használatot lehetővé tevő kisegítő technológiai eszközök "
+"támogatásához gail 1.8.6 és at-spi 1.7 csomagokkal ellátott GNOME 2.6 vagy "
+"újabb szükséges."
 
 #: readme.xrm#S2WE35
 #, fuzzy
-msgid  "Linux Kernel version 2.6.18 or higher"
+msgid "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux Kernel 2.6.18 vagy újabb"
+
+#: readme.xrm#S253WE
+msgid "glibc2 version 2.5 or higher"
+msgstr ""
+
+#: readme.xrm#S256WE
+msgid "gtk version 2.10.4 or higher"
+msgstr ""
+
+#: readme.xrm#S2ETFSEG
+msgid "Pentium III or later processor"
+msgstr "Pentium III vagy újabb processzor"
+
+#: readme.xrm#S2SSDFE
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (512 MB RAM javasolt)"
+
+#: readme.xrm#N42DFGF
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "1,55 GB szabad hely a merevlemezen"
+
+#: readme.xrm#GHJHHR
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"X Server 1024×768 felbontással (nagyobb felbontás javasolt), legalább 256 "
+"színnel"
+
+#: readme.xrm#FHRTZ5
+#, fuzzy
+msgid "Window Manager"
+msgstr "Ablakkezelő"
 
 #: readme.xrm#WD2DFF
 #, fuzzy
-msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Az „akadálymentes” használatot lehetővé tevő kisegítő technológiai eszközök támogatásához gail 1.8.6 és at-spi 1.7 csomagokkal ellátott GNOME 2,16 vagy újabb szükséges."
+msgid "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Az „akadálymentes” használatot lehetővé tevő kisegítő technológiai eszközök "
+"támogatásához gail 1.8.6 és at-spi 1.7 csomagokkal ellátott GNOME 2,16 vagy "
+"újabb szükséges."
 
 #: readme.xrm#LINUXI3A
 #, fuzzy
-msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr "Számos Linux-disztribúció létezik, és még egy disztribúción belül is különféle telepítési lehetőségek vannak (KDE vagy Gnome stb.). Egyes disztribúciók az ${PRODUCTNAME} saját „natív” változatát tartalmazzák, és ezek funkcionalitása eltérhet az ${PRODUCTNAME} közösségi verziójáétól. Néha a közösségi ${PRODUCTNAME} telepíthető a „natív” verzió mellé. Mindamellett biztonságosabb eltávolítani a „natív” verziót a közösségi verzió telepítése előtt. Az erre vonatkozó információkért olvassa el a disztribúció dokumentációját."
+msgid "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+"Számos Linux-disztribúció létezik, és még egy disztribúción belül is "
+"különféle telepítési lehetőségek vannak (KDE vagy Gnome stb.). Egyes "
+"disztribúciók az ${PRODUCTNAME} saját „natív” változatát tartalmazzák, és "
+"ezek funkcionalitása eltérhet az ${PRODUCTNAME} közösségi verziójáétól. Néha "
+"a közösségi ${PRODUCTNAME} telepíthető a „natív” verzió mellé. Mindamellett "
+"biztonságosabb eltávolítani a „natív” verziót a közösségi verzió telepítése "
+"előtt. Az erre vonatkozó információkért olvassa el a disztribúció "
+"dokumentációját."
+
+#: readme.xrm#LINUXI4A
+msgid "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+
+#: readme.xrm#PRECAUTIONS
+msgid "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+
+#: readme.xrm#NASO01
+msgid "Problems During Program Startup"
+msgstr ""
 
 #: readme.xrm#NASO02
 #, fuzzy
-msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr "Ha problémákat tapasztal az ${PRODUCTNAME} indításakor (jellemzően Gnome alatt), hatástalanítsa a <tt>SESSION_MANAGER</tt> környezeti változót abban a parancsértelmező héjban, ahol elindítja az ${PRODUCTNAME} programot. Ennek legegyszerűbb módja az, hogy beírja az „<tt>unset SESSION_MANAGER</tt>” sort a programot indító „soffice” parancsfájl elejébe. Ez a parancsfájl az „<tt>[office folder]/program</tt>” könyvtárban található."
+msgid "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"Ha problémákat tapasztal az ${PRODUCTNAME} indításakor (jellemzően Gnome "
+"alatt), hatástalanítsa a <tt>SESSION_MANAGER</tt> környezeti változót abban "
+"a parancsértelmező héjban, ahol elindítja az ${PRODUCTNAME} programot. Ennek "
+"legegyszerűbb módja az, hogy beírja az „<tt>unset SESSION_MANAGER</tt>” "
+"sort a programot indító „soffice” parancsfájl elejébe. Ez a parancsfájl az "
+"„<tt>[office folder]/program</tt>” könyvtárban található."
 
 #: readme.xrm#ABCDEF
 #, fuzzy
-msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr "A ${PRODUCTNAME} indításával kapcsolatos hibák (például egyáltalán nem indul el), sokszor a grafikus kártya beállítására vezethetők vissza. Ebben az esetben frissítse a grafikus kártya illesztőprogramját, vagy használja az operációs rendszer grafikus illesztőprogramját. A 3D objektumokkal kapcsolatos problémák az „OpenGL használata” beállítás tiltásával orvosolhatók (Eszközök → Beállítások → ${PRODUCTNAME} → Nézet → 3D nézet)."
+msgid "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
+msgstr ""
+"A ${PRODUCTNAME} indításával kapcsolatos hibák (például egyáltalán nem indul "
+"el), sokszor a grafikus kártya beállítására vezethetők vissza. Ebben az "
+"esetben frissítse a grafikus kártya illesztőprogramját, vagy használja az "
+"operációs rendszer grafikus illesztőprogramját. A 3D objektumokkal "
+"kapcsolatos problémák az „OpenGL használata” beállítás tiltásával "
+"orvosolhatók (Eszközök → Beállítások → ${PRODUCTNAME} → Nézet → 3D nézet)."
+
+#: readme.xrm#NASO
+msgid "ALPS/Synaptics notebook touchpads in Windows"
+msgstr ""
 
 #: readme.xrm#NASO2
 #, fuzzy
-msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr "A Windows illesztőprogramjának hibája miatt nem tudja görgetni az ${PRODUCTNAME}-dokumentumok, amikor átcsúsztatja az ujját az APLS/Synaptic tapipadján."
+msgid "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"A Windows illesztőprogramjának hibája miatt nem tudja görgetni az "
+"${PRODUCTNAME}-dokumentumok, amikor átcsúsztatja az ujját az APLS/Synaptic "
+"tapipadján."
 
 #: readme.xrm#NASO6
 #, fuzzy
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr "A tapipados görgetés engedélyezéséhez adja a következő sorokat a „<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>” konfigurációs fájlhoz, és indítsa újra a számítógépet:"
+msgid "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr ""
+"A tapipados görgetés engedélyezéséhez adja a következő sorokat a "
+"„<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>” konfigurációs "
+"fájlhoz, és indítsa újra a számítógépet:"
 
 #: readme.xrm#NASO8
 #, fuzzy
-msgid  "The location of the configuration file might vary on different versions of Windows."
+msgid "The location of the configuration file might vary on different versions of Windows."
 msgstr "A konfigurációs fájl helye a különböző Windows-verzióban más-más lehet."
+
+#: readme.xrm#SDFSD32ASRC
+msgid "Mozilla Address Book Driver"
+msgstr ""
 
 #: readme.xrm#SDCC32ASRC
 #, fuzzy
-msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr "A Mozilla címjegyzék-illesztőprogramjának szüksége van a <tt>SUNWzlib</tt> csomagra. Ez a csomag nem része a minimális Solaris-telepítésnek. Amennyiben hozzá szeretne férni a Mozilla címjegyzékéhez, adja hozzá ezt a csomagot a Solaris operációs rendszerhez a telepítő CD-n található „<tt>pkgadd</tt>” program futtatásával."
+msgid "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
+msgstr ""
+"A Mozilla címjegyzék-illesztőprogramjának szüksége van a <tt>SUNWzlib</tt> "
+"csomagra. Ez a csomag nem része a minimális Solaris-telepítésnek. Amennyiben "
+"hozzá szeretne férni a Mozilla címjegyzékéhez, adja hozzá ezt a csomagot a "
+"Solaris operációs rendszerhez a telepítő CD-n található „<tt>pkgadd</tt>” "
+"program futtatásával."
 
 #: readme.xrm#AWE1
 #, fuzzy
-msgid  "Shortcut Keys"
+msgid "Shortcut Keys"
 msgstr "Gyorsbillentyűk"
 
 #: readme.xrm#W32E1
 #, fuzzy
-msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr "Az ${PRODUCTNAME} programjain belül csak olyan gyorsbillentyű-kombinációkat lehet használni, amelyeket az operációs rendszer még nem foglalt le. Amennyiben egy billentyűkombináció nem úgy működne az ${PRODUCTNAME} programban, mint ahogyan az le van írva az ${PRODUCTNAME} súgójában, ellenőrizze, hogy nem foglalt-e a billentyűkombináció. Az ütközések elkerüléséhez két lehetőség van. Módosíthatja az operációs rendszer (grafikus felület) gyorsbillentyű-kombinációit vagy az ${PRODUCTNAME} kombinációit. A gyorsbillentyűk beállításához tekintse meg az ${PRODUCTNAME} súgóját, vagy használja az operációs rendszer súgórendszerét."
+msgid "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+"Az ${PRODUCTNAME} programjain belül csak olyan gyorsbillentyű-kombinációkat "
+"lehet használni, amelyeket az operációs rendszer még nem foglalt le. "
+"Amennyiben egy billentyűkombináció nem úgy működne az ${PRODUCTNAME} "
+"programban, mint ahogyan az le van írva az ${PRODUCTNAME} súgójában, "
+"ellenőrizze, hogy nem foglalt-e a billentyűkombináció. Az ütközések "
+"elkerüléséhez két lehetőség van. Módosíthatja az operációs rendszer "
+"(grafikus felület) gyorsbillentyű-kombinációit vagy az ${PRODUCTNAME} "
+"kombinációit. A gyorsbillentyűk beállításához tekintse meg az ${PRODUCTNAME} "
+"súgóját, vagy használja az operációs rendszer súgórendszerét."
 
 #: readme.xrm#MACKEYS1
 #, fuzzy
-msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr "Az ${PRODUCTNAME} súgója helyenként csak PC billentyűzethez adja meg a billentyűkombinációkat."
+msgid "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+"Az ${PRODUCTNAME} súgója helyenként csak PC billentyűzethez adja meg a "
+"billentyűkombinációkat."
 
 #: readme.xrm#GFH6W
 #, fuzzy
-msgid  "File Locking"
+msgid "File Locking"
 msgstr "Fájlok zárolása"
 
 #: readme.xrm#PJI76W
 #, fuzzy
-msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
-msgstr "Alapértelmezett esetben a fájlzárolás be van kapcsolva az ${PRODUCTNAME} programban. Az NFS-t használó hálózatokban futnia kell az NFS-ügyfeleken az NFS zárolási démonnak. A fájlzárolás kikapcsolásához szerkeszteni kell az <tt>soffice</tt> parancsfájlt, és a „<tt>export SAL_ENABLE_FILE_LOCKING</tt>” sort „<tt># export SAL_ENABLE_FILE_LOCKING</tt>” sorra módosítani. Ha megtiltja a fájlzárolást, a dokumentumra nemcsak annak a felhasználónak lesz írási joga, aki először megnyitotta."
+msgid "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
+msgstr ""
+"Alapértelmezett esetben a fájlzárolás be van kapcsolva az ${PRODUCTNAME} "
+"programban. Az NFS-t használó hálózatokban futnia kell az NFS-ügyfeleken az "
+"NFS zárolási démonnak. A fájlzárolás kikapcsolásához szerkeszteni kell az "
+"<tt>soffice</tt> parancsfájlt, és a „<tt>export "
+"SAL_ENABLE_FILE_LOCKING</tt>” sort „<tt># export "
+"SAL_ENABLE_FILE_LOCKING</tt>” sorra módosítani. Ha megtiltja a fájlzárolást, "
+"a dokumentumra nemcsak annak a felhasználónak lesz írási joga, aki először "
+"megnyitotta."
 
 #: readme.xrm#PJI76WSDF
 #, fuzzy
-msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr "Figyelem: A fájlzárolási funkció Solaris 2.5.1 és Solaris 2.7 alatt problémákat okozhat a Linux NFS 2.0-val. Amennyiben Ön ilyen környezetben dolgozik, erősen ajánlott, hogy NE használja a fájlzárolást. Ellenkező esetben előfordulhat, hogy az ${PRODUCTNAME} lefagy, miközben egy linuxos gépről NFS-en keresztül próbál megnyitni egy fájlt."
+msgid "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"Figyelem: A fájlzárolási funkció Solaris 2.5.1 és Solaris 2.7 alatt "
+"problémákat okozhat a Linux NFS 2.0-val. Amennyiben Ön ilyen környezetben "
+"dolgozik, erősen ajánlott, hogy NE használja a fájlzárolást. Ellenkező "
+"esetben előfordulhat, hogy az ${PRODUCTNAME} lefagy, miközben egy linuxos "
+"gépről NFS-en keresztül próbál megnyitni egy fájlt."
 
 #: readme.xrm#GFH6W1
 #, fuzzy
-msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr "Lehetséges problémák, amikor az ${PRODUCTNAME}-ból egy dokumentumot e-mailként szeretne elküldeni"
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgstr ""
+"Lehetséges problémák, amikor az ${PRODUCTNAME}-ból egy dokumentumot "
+"e-mailként szeretne elküldeni"
 
 #: readme.xrm#PJI76W1
 #, fuzzy
-msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr "Hibák léphetnek fel (a program elszáll vagy lefagy), amikor e-mailként el szeretne küldeni egy dokumentumot a „Fájl - Küldés - Dokumentum e-mailként” vagy „Dokumentum PDF-mellékletként” menüpontot kiválasztva. Ennek oka a Windows „MAPI” rendszerfájlja (Messaging Application Programming Interface), amelynek bizonyos verziói problémákat okoznak. Sajnos a probléma nincs egyértelműen egy verzióhoz kötve. További információkért látogasson el a <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> honlapra, és keressen a Microsoft tudásbázisában a „mapi dll” kulcsszavakra."
+msgid "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"Hibák léphetnek fel (a program elszáll vagy lefagy), amikor e-mailként el "
+"szeretne küldeni egy dokumentumot a „Fájl - Küldés - Dokumentum e-mailként” "
+"vagy „Dokumentum PDF-mellékletként” menüpontot kiválasztva. Ennek oka a "
+"Windows „MAPI” rendszerfájlja (Messaging Application Programming Interface), "
+"amelynek bizonyos verziói problémákat okoznak. Sajnos a probléma nincs "
+"egyértelműen egy verzióhoz kötve. További információkért látogasson el a <a "
+"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> honlapra, és "
+"keressen a Microsoft tudásbázisában a „mapi dll” kulcsszavakra."
 
 #: readme.xrm#AW22
 #, fuzzy
-msgid  "Important Accessibility Notes"
+msgid "Important Accessibility Notes"
 msgstr "Fontos megjegyzések a kisegítő lehetőségekkel kapcsolatosan"
 
 #: readme.xrm#ACCESS7
 #, fuzzy
-msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
-msgstr "Az ${PRODUCTNAME} kisegítő lehetőségeiről bővebben a <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a> oldalon olvashat."
+msgid "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgstr ""
+"Az ${PRODUCTNAME} kisegítő lehetőségeiről bővebben a <a href=\"http://www.ope"
+"noffice.org/access/\">http://www.openoffice.org/access/</a> oldalon olvashat."
 
 #: readme.xrm#SUPPORT
-msgid  "User Support"
+msgid "User Support"
 msgstr "Felhasználói támogatás"
 
 #: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
-msgstr "A fő támogató oldal, a <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> különféle segítségeket ajánl fel az ${PRODUCTNAME} használatához. Lehet, hogy a kérdése meg van már válaszolva – keresse a választ a közösségi fórumon (<a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a>), a magyar közösségi fórumon (http://user.services.openoffice.org/hu/forum/), illetve az angol nyelvű „users@openoffice.apache.org” levelezőlista archívumában a <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a> címen. Ha itt nem találná a választ, kérdését felteheti angolul a <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a> vagy magyarul a <a href=\"mailto:forum@openoffice.hu\">forum@openoffice.hu</a> levelezőlistán. A listákra feliratkozásról a következő oldalak adnak információt: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a> és <a href=\"http://www.openoffice.hu/cgi-bin/mailman/listinfo/forum\">http://www.openoffice.hu/cgi-bin/mailman/listinfo/forum</a>."
+msgid "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr ""
+"A fő támogató oldal, a <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"különféle segítségeket ajánl fel az ${PRODUCTNAME} használatához. Lehet, "
+"hogy a kérdése meg van már válaszolva – keresse a választ a közösségi "
+"fórumon (<a "
+"href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a>), a "
+"magyar közösségi fórumon (http://user.services.openoffice.org/hu/forum/), "
+"illetve az angol nyelvű „users@openoffice.apache.org” levelezőlista "
+"archívumában a <a href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://openoffice.apache.org/mailing-lists.html</a> címen. Ha "
+"itt nem találná a választ, kérdését felteheti angolul a <a "
+"href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a> "
+"vagy magyarul a <a href=\"mailto:forum@openoffice.hu\">forum@openoffice.hu</a> "
+"levelezőlistán. A listákra feliratkozásról a következő oldalak adnak "
+"információt: <a href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://openoffice.apache.org/mailing-lists.html</a> és <a "
+"href=\"http://www.openoffice.hu/cgi-"
+"bin/mailman/listinfo/forum\">http://www.openoffice.hu/cgi-"
+"bin/mailman/listinfo/forum</a>."
 
 #: readme.xrm#FAQ
-msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
-msgstr "Olvassa el a gyakran ismételt kérdéseket is a <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a> oldalon."
+msgid "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
+msgstr ""
+"Olvassa el a gyakran ismételt kérdéseket is a <a href=\"http://wiki.openoffic"
+"e.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/"
+"FAQ</a> oldalon."
 
 #: readme.xrm#REPORTBUGS
-msgid  "Reporting Bugs &amp; Issues"
+msgid "Reporting Bugs &amp; Issues"
 msgstr "Hibák és problémák bejelentése"
 
 #: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr "Az ${PRODUCTNAME} weboldalán érhető el a <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>,, a programhibák és problémák bejelentésére, nyomon követésére és kijavítására szolgáló megoldás. Szeretnénk bátorítani minden felhasználót, hogy jelentse azokat a problémákat, amelyek egy adott platformon jelentkeznek. A hibajelentések elküldése az egyik legnagyobb hozzájárulás, amelyet a felhasználói közösség tehet a programcsomag a folyamatos fejlesztése érdekében."
+msgid "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
+"Az ${PRODUCTNAME} weboldalán érhető el a <a "
+"href=\"https://issues.apache.org/ooo/\">BugZilla</a>,, a programhibák és "
+"problémák bejelentésére, nyomon követésére és kijavítására szolgáló "
+"megoldás. Szeretnénk bátorítani minden felhasználót, hogy jelentse azokat a "
+"problémákat, amelyek egy adott platformon jelentkeznek. A hibajelentések "
+"elküldése az egyik legnagyobb hozzájárulás, amelyet a felhasználói közösség "
+"tehet a programcsomag a folyamatos fejlesztése érdekében."
 
 #: readme.xrm#GETTINGINVOLVED1
 #, fuzzy
-msgid  "Getting Involved"
+msgid "Getting Involved"
 msgstr "Részvétel a projektben"
 
 #: readme.xrm#GETTINGINVOLVED2
 #, fuzzy
-msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr "A ${PRODUCTNAME}-közösség számára igen hasznos, ha Ön aktívan részt vesz ennek a nyílt forráskódú projektnek a fejlesztésében."
+msgid "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
+msgstr ""
+"A ${PRODUCTNAME}-közösség számára igen hasznos, ha Ön aktívan részt vesz "
+"ennek a nyílt forráskódú projektnek a fejlesztésében."
 
 #: readme.xrm#GETTINGIMVOLVED3
-msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "Mint felhasználó, máris résztvevője a szoftvercsomag fejlesztésének. Azonban arra bátorítjuk, hogy vegye ki jobban a részét a fejlesztésekből, s első lépésként tekintse meg a hosszú távú céljainkat, majd legyen aktív társunk ebben a közösségben. Kérjük, csatlakozzon hozzánk, és tekintse meg a felhasználói oldalakat a következő címen: <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgid "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgstr ""
+"Mint felhasználó, máris résztvevője a szoftvercsomag fejlesztésének. Azonban "
+"arra bátorítjuk, hogy vegye ki jobban a részét a fejlesztésekből, s első "
+"lépésként tekintse meg a hosszú távú céljainkat, majd legyen aktív társunk "
+"ebben a közösségben. Kérjük, csatlakozzon hozzánk, és tekintse meg a "
+"felhasználói oldalakat a következő címen: <a "
+"href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a>"
 
 #: readme.xrm#HOWTOSTART
-msgid  "How to Start"
+msgid "How to Start"
 msgstr "Hogyan kezdje?"
 
 #: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr "A hozzájárulás megkezdésének legjobb módja egy vagy több levelező listára való feliratkozás, figyelje egy ideig, hogy mi történik, fokozatosan ismerkedjen meg a levelezési archívumokkal, azokkal a témákkal, amelyek a ${PRODUCTNAME} forráskódjának 2000 októberi kiadásától keletkeztek. Amikor már ismerős a működés, írjon egy bemutatkozó levelet és csak kezdje el. "
+msgid "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
+"A hozzájárulás megkezdésének legjobb módja egy vagy több levelező listára "
+"való feliratkozás, figyelje egy ideig, hogy mi történik, fokozatosan "
+"ismerkedjen meg a levelezési archívumokkal, azokkal a témákkal, amelyek a "
+"${PRODUCTNAME} forráskódjának 2000 októberi kiadásától keletkeztek. Amikor "
+"már ismerős a működés, írjon egy bemutatkozó levelet és csak kezdje el. "
 
 #: readme.xrm#SUBSCRIBE
-msgid  "Subscribe"
+msgid "Subscribe"
 msgstr "Feliratkozás"
 
 #: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr "Íme a projekt néhány levelezőlistája, amelyekre az alábbi címen iratkozhat fel:<a href=\"http://openoffice.apache.org/mailing-lists.html\">http://iopenoffice.apache.org/mailing-lists.html</a>."
+msgid "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+"Íme a projekt néhány levelezőlistája, amelyekre az alábbi címen iratkozhat "
+"fel:<a href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://iopenoffice.apache.org/mailing-lists.html</a>."
 
 #: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr "Hírek (angolul): announce@openoffice.apache.org *minden felhasználó számára ajánlott* (kis forgalom)"
+msgid "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+"Hírek (angolul): announce@openoffice.apache.org *minden felhasználó számára "
+"ajánlott* (kis forgalom)"
 
 #: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr "Fő felhasználói fórum (angolul): users@openoffice.apache.org *egyszerű mód a megbeszélések megfigyelésére* (nagy forgalom)"
+msgid "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+"Fő felhasználói fórum (angolul): users@openoffice.apache.org *egyszerű mód a "
+"megbeszélések megfigyelésére* (nagy forgalom)"
 
 #: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr "Általános projekt fejlesztési és vita lista: dev@openoffice.apache.org (nagy forgalom)"
+msgid "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+"Általános projekt fejlesztési és vita lista: dev@openoffice.apache.org (nagy "
+"forgalom)"
 
 #: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
+msgid "Joining the Project"
 msgstr "Csatlakozás a projekthez"
 
 #: readme.xrm#JOINING
-msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
-msgstr "Ön is sokat hozzátehet ehhez a fontos nyílt forráskódú projekthez, akkor is, ha csak kevéssé ért a szoftverfejlesztéshez vagy a programozáshoz. Igen, pont Ön!"
+msgid "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+"Ön is sokat hozzátehet ehhez a fontos nyílt forráskódú projekthez, akkor is, "
+"ha csak kevéssé ért a szoftverfejlesztéshez vagy a programozáshoz. Igen, "
+"pont Ön!"
 
 #: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr "A <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>címen egy általános leírást találhat, ahol belekezdhet, itt a honosítástól kezdve a minőségbiztosításon át, a felhasználók támogatáson keresztül egészen az „igazi” magprogramozási feladatokig. Ha nincs fejlesztési tapasztalata, csatlakozzon a dokumentációs vagy a marketing projekthez. Az ${PRODUCTNAME} marketingprojektje mind a gerilla, mind a hagyományos marketing módszerekkel terjeszti a nyílt forráskódú szoftvereket. Projektjeink átlépik a nyelvi és kulturális határokat, úgyhogy Ön is csatlakozhat az „ige hirdetéséhez”, például azzal, hogy egy barátjának szól erről az irodai programcsomagról."
+msgid "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+"A <a href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a>címen egy "
+"általános leírást találhat, ahol belekezdhet, itt a honosítástól kezdve a "
+"minőségbiztosításon át, a felhasználók támogatáson keresztül egészen az "
+"„igazi” magprogramozási feladatokig. Ha nincs fejlesztési tapasztalata, "
+"csatlakozzon a dokumentációs vagy a marketing projekthez. Az ${PRODUCTNAME} "
+"marketingprojektje mind a gerilla, mind a hagyományos marketing módszerekkel "
+"terjeszti a nyílt forráskódú szoftvereket. Projektjeink átlépik a nyelvi és "
+"kulturális határokat, úgyhogy Ön is csatlakozhat az „ige hirdetéséhez”, "
+"például azzal, hogy egy barátjának szól erről az irodai programcsomagról."
 
 #: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr "Segíthet a marketing levelezési listához csatlakozva marketing@openoffice.apache.org, ahol a kapcsolódási pontot talál a sajtóval, médiával, tanácsadókkal, iskolákkal, helyi Linux felhasználói csoportokkal, országában lévő fejlesztőkkel és a helyi közösséggel."
+msgid "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
+"Segíthet a marketing levelezési listához csatlakozva "
+"marketing@openoffice.apache.org, ahol a kapcsolódási pontot talál a "
+"sajtóval, médiával, tanácsadókkal, iskolákkal, helyi Linux felhasználói "
+"csoportokkal, országában lévő fejlesztőkkel és a helyi közösséggel."
 
 #: readme.xrm#CREDITS
 #, fuzzy
-msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr "Reméljük, élvezni fogja a munkát az új ${PRODUCTNAME} ${PRODUCTVERSION} szoftvercsomaggal, és csatlakozik hozzánk az interneten."
+msgid "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+"Reméljük, élvezni fogja a munkát az új ${PRODUCTNAME} ${PRODUCTVERSION} "
+"szoftvercsomaggal, és csatlakozik hozzánk az interneten."
 
 #: readme.xrm#CREDITS2
-msgid  "The Apache OpenOffice Community"
+msgid "The Apache OpenOffice Community"
 msgstr "Az Apache OpenOffice közösség"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
 #, fuzzy
-msgid  "Used / Modified Source Code"
+msgid "Used / Modified Source Code"
 msgstr "Használt / módosított forráskód"

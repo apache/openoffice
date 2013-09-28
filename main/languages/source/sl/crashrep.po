@@ -1,200 +1,259 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Poročilo o napaki %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Dobrodošli v poročilu o napaki %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "Orodje poročil o napakah zbira podatke o tem, kako deluje %PRODUCTNAME%, in jih pošlje razvijalcem Apache OpenOffice, da bi lažje izboljšali prihodnje različice.\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"Orodje poročil o napakah zbira podatke o tem, kako deluje %PRODUCTNAME%, in "
+"jih pošlje razvijalcem Apache OpenOffice, da bi lažje izboljšali prihodnje "
+"različice.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "Enostavno je - le pošljite poročilo brez dodatnega naprezanja s klikom gumba 'Pošlji' v naslednjem pogovornem oknu ali pa na kratko opišite, kako je prišlo do napake, in nato kliknite 'Pošlji'. Če si želite ogledati poročilo, kliknite gumb 'Pokaži poročilo'. Če kliknete 'Ne pošlji', podatki ne bodo poslani.\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"Enostavno je - le pošljite poročilo brez dodatnega naprezanja s klikom gumba "
+"'Pošlji' v naslednjem pogovornem oknu ali pa na kratko opišite, kako je "
+"prišlo do napake, in nato kliknite 'Pošlji'. Če si želite ogledati poročilo, "
+"kliknite gumb 'Pokaži poročilo'. Če kliknete 'Ne pošlji', podatki ne bodo "
+"poslani.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "Zasebnost uporabnika\nZbrani podatki so omejeni na podatke o stanju %PRODUCTNAME% %PRODUCTVERSION%, ko je prišlo do napake. Nikakršni drugi podatki o geslih ali vsebini dokumentov niso zbrani.\n\nPodatki bodo uporabljeni zgolj za izboljšanje kakovosti %PRODUCTNAME% in ne bodo na voljo tretjim strankam.\nZa več informacij o politiki zasebnosti Apache OpenOffice obiščite\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"Zasebnost uporabnika\n"
+"Zbrani podatki so omejeni na podatke o stanju %PRODUCTNAME% %PRODUCTVERSION%"
+", ko je prišlo do napake. Nikakršni drugi podatki o geslih ali vsebini "
+"dokumentov niso zbrani.\n"
+"\n"
+"Podatki bodo uporabljeni zgolj za izboljšanje kakovosti %PRODUCTNAME% in ne "
+"bodo na voljo tretjim strankam.\n"
+"Za več informacij o politiki zasebnosti Apache OpenOffice obiščite\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Naprej >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Prekliči"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "V redu"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Poročilo o napaki %PRODUCTNAME% %PRODUCTVERSION%"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Med delovanjem %PRODUCTNAME% %PRODUCTVERSION% je prišlo do napake"
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "Poročilo o napaki %PRODUCTNAME% %PRODUCTVERSION% je zbralo podatke, ki lahko razvijalcem Apache OpenOffice pomagajo izboljšati %PRODUCTNAME%.\nV spodnja polja lahko vnesete naslov za svoje sporočilo o napaki in opišete dejanja, ki ste jih želeli izvesti, ko se je pojavila napaka. Nato kliknite 'Pošlji'.\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"Poročilo o napaki %PRODUCTNAME% %PRODUCTVERSION% je zbralo podatke, ki lahko "
+"razvijalcem Apache OpenOffice pomagajo izboljšati %PRODUCTNAME%.\n"
+"V spodnja polja lahko vnesete naslov za svoje sporočilo o napaki in opišete "
+"dejanja, ki ste jih želeli izvesti, ko se je pojavila napaka. Nato kliknite "
+"'Pošlji'.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "Dokument katere vrste (npr. predstavitev) ste uporabljali, ko se je pojavila napaka?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+"Dokument katere vrste (npr. predstavitev) ste uporabljali, ko se je pojavila "
+"napaka?"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr "Razvijalcem ~Apache OpenOffice dovolim, da stopijo v stik z menoj glede tega poročila o napaki."
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+"Razvijalcem ~Apache OpenOffice dovolim, da stopijo v stik z menoj glede tega "
+"poročila o napaki."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "Vnesite svoj elektronski naslov."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~Na kakšen način ste uporabljali %PRODUCTNAME%, ko se je napaka pojavila?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr ""
+"~Na kakšen način ste uporabljali %PRODUCTNAME%, ko se je napaka pojavila?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << Na~zaj"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "~Pošlji"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "~Ne pošlji"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "Pokaži po~ročilo ..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "~Shrani poročilo ..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "Shrani poročilo kot"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "Poročila o napaki ni mogoče poslati, ker privzeti poštni program ne podpira vmesnika MAPI.\n Prosimo, uporabite poštni program s podporo MAPI."
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Poročila o napaki ni mogoče poslati, ker privzeti poštni program ne podpira "
+"vmesnika MAPI.\n"
+" Prosimo, uporabite poštni program s podporo MAPI."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "Poročila o napaki se ne da trenutno shraniti in zato ne more biti poslano."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
+msgstr ""
+"Poročila o napaki se ne da trenutno shraniti in zato ne more biti poslano."
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "Poročila o napaki ni mogoče poslati, ker ni mogoče zagnati 'sendmail'-a.\nPreverite nastavitve za 'sendmail'."
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"Poročila o napaki ni mogoče poslati, ker ni mogoče zagnati 'sendmail'-a.\n"
+"Preverite nastavitve za 'sendmail'."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "Poročila o napaki ni mogoče poslati. Preverite nastavitve posredovalnega strežnika v 'Možnostih' orodja Poročilo o napaki."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"Poročila o napaki ni mogoče poslati. Preverite nastavitve posredovalnega "
+"strežnika v 'Možnostih' orodja Poročilo o napaki."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "Poročilo o napaki ni mogoče poslati, ker ni povezave z internetom. Preverite nastavitve spletnega dostopa."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"Poročilo o napaki ni mogoče poslati, ker ni povezave z internetom. Preverite "
+"nastavitve spletnega dostopa."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "Mo~žnosti ..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "Možnosti"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "Nastavitve posredovalnega strežnika"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "Uporabi sistemske na~stavitve"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "Uporabi ~neposredno povezavo v internet"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "Uporabi ~ročne nastavitve"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "Posredovanje HT~TP"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "~Vrata"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Orodje za poročila o napaki %PRODUCTNAME% potrebuje za pošiljanje poročil o napaki spletno povezavo.\n\nPodjetja za zaščito svojih omrežij pogosto uporabljajo posredovalne strežnike skupaj s požarnim zidom.\n\nČe to velja za vaš primer, morate navesti naslov in vrata strežnika."
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"Orodje za poročila o napaki %PRODUCTNAME% potrebuje za pošiljanje poročil o "
+"napaki spletno povezavo.\n"
+"\n"
+"Podjetja za zaščito svojih omrežij pogosto uporabljajo posredovalne "
+"strežnike skupaj s požarnim zidom.\n"
+"\n"
+"Če to velja za vaš primer, morate navesti naslov in vrata strežnika."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "Pošiljanje poročila o napaki"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "Stanje: Pošiljanje poročila o napaki"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "Stanje: Poročilo o napaki je bilo uspešno poslano."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "Izbrali ste možnost 'Razvijalcem Apache OpenOffice dovolim, da stopijo v stik z menoj glede tega poročila o napaki.'\nProsimo, vnesite svoj e-poštni naslov."
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"Izbrali ste možnost 'Razvijalcem Apache OpenOffice dovolim, da stopijo v "
+"stik z menoj glede tega poročila o napaki.'\n"
+"Prosimo, vnesite svoj e-poštni naslov."
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <ID procesa>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "V poročilo o napaki vključi tudi ID procesa %PRODUCTNAME% (PID)"
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "Prikaži to besedilo pomoči.\nPodrobne informacije lahko najdete v namestitvenem vodniku."
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"Prikaži to besedilo pomoči.\n"
+"Podrobne informacije lahko najdete v namestitvenem vodniku."

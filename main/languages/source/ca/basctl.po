@@ -1,640 +1,862 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
-msgid  "Print range"
+msgid "Print range"
 msgstr "Àrea d'impressió"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
-msgid  "All ~Pages"
+msgid "All ~Pages"
 msgstr "Totes les ~pàgines"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
-msgid  "Pa~ges"
+msgid "Pa~ges"
 msgstr "Pà~gines"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
-msgid  "<All>"
+msgid "<All>"
 msgstr "<Tot>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
-msgid  "< No Module >"
+msgid "< No Module >"
 msgstr "<Cap mòdul>"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
-msgid  "Incorrect Password"
+msgid "Incorrect Password"
 msgstr "Contrasenya incorrecta"
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
-msgid  "Load"
+msgid "Load"
 msgstr "Carrega"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
-msgid  "Save"
+msgid "Save"
 msgstr "Desa"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "El codi font és massa gran i no es pot compilar ni desar.\nSuprimiu alguns dels comentaris o transferiu alguns mètodes a un altre mòdul."
+msgid "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+"El codi font és massa gran i no es pot compilar ni desar.\n"
+"Suprimiu alguns dels comentaris o transferiu alguns mètodes a un altre "
+"mòdul."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
-msgid  "Error opening file"
+msgid "Error opening file"
 msgstr "S'ha produït un error en obrir el fitxer"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
-msgid  "Error loading library"
+msgid "Error loading library"
 msgstr "S'ha produït un error en carregar la biblioteca"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
-msgid  "The file does not contain any BASIC libraries"
+msgid "The file does not contain any BASIC libraries"
 msgstr "El fitxer no conté cap biblioteca del BASIC"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
-msgid  "Invalid Name"
+msgid "Invalid Name"
 msgstr "El nom no és vàlid"
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
-msgid  "A library name can have up to 30 characters."
+msgid "A library name can have up to 30 characters."
 msgstr "Un nom de biblioteca pot tenir fins a 30 caràcters."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
-msgid  "Macros from other documents are not accessible."
+msgid "Macros from other documents are not accessible."
 msgstr "Les macros d'altres documents no són accessibles."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
-msgid  "This library is read-only."
+msgid "This library is read-only."
 msgstr "Aquesta biblioteca és només de lectura."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
-msgid  "'XX' cannot be replaced."
+msgid "'XX' cannot be replaced."
 msgstr "No es pot reemplaçar 'XX'."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
-msgid  "'XX' cannot be added."
+msgid "'XX' cannot be added."
 msgstr "No es pot afegir 'XX'."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
-msgid  "'XX' was not added."
+msgid "'XX' was not added."
 msgstr "No s'ha afegit 'XX'."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
-msgid  "Enter password for 'XX'"
+msgid "Enter password for 'XX'"
 msgstr "Introduïu la contrasenya per a 'XX'"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
-msgid  "Name already exists"
+msgid "Name already exists"
 msgstr "Aquest nom ja existeix"
 
+#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
+msgid "(Signed)"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
-msgid  "Object with same name already exists"
+msgid "Object with same name already exists"
 msgstr "Ja hi ha un objecte amb el mateix nom"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
-msgid  "The 'XX' file already exists"
+msgid "The 'XX' file already exists"
 msgstr "El fitxer 'XX' ja existeix"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Per raons de seguretat, no podeu executar aquesta macro.\n\nPer a més informació, comproveu els paràmetres de seguretat."
+msgid "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+"Per raons de seguretat, no podeu executar aquesta macro.\n"
+"\n"
+"Per a més informació, comproveu els paràmetres de seguretat."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
-msgid  "Compile Error: "
+msgid "Compile Error: "
 msgstr "S'ha produït un error de compilació: "
 
 #: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
-msgid  "Runtime Error: #"
+msgid "Runtime Error: #"
 msgstr "S'ha produït un error d'execució: #"
 
 #: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
-msgid  "Search key not found"
+msgid "Search key not found"
 msgstr "La clau de cerca no s'ha trobat"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
-msgid  "Search to last module complete. Continue at first module?"
-msgstr "S'ha completat la cerca fins a l'últim mòdul. Voleu continuar des del primer?"
+msgid "Search to last module complete. Continue at first module?"
+msgstr ""
+"S'ha completat la cerca fins a l'últim mòdul. Voleu continuar des del "
+"primer?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
-msgid  "Search key replaced XX times"
+msgid "Search key replaced XX times"
 msgstr "La clau de cerca s'ha reemplaçat XX vegades"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
-msgid  "The file could not be read"
+msgid "The file could not be read"
 msgstr "El fitxer no s'ha pogut llegir"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
-msgid  "The file could not be saved"
+msgid "The file could not be saved"
 msgstr "El fitxer no s'ha pogut desar"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
-msgid  "The name of the default library cannot be changed."
+msgid "The name of the default library cannot be changed."
 msgstr "El nom de la biblioteca per defecte no es pot canviar."
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
-msgid  "The name of a referenced library cannot be changed."
+msgid "The name of a referenced library cannot be changed."
 msgstr "El nom d'una biblioteca referenciada no es pot canviar."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
-msgid  "The default library cannot be deactivated"
+msgid "The default library cannot be deactivated"
 msgstr "La biblioteca per defecte no es pot desactivar"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
-msgid  "Generating source"
+msgid "Generating source"
 msgstr "S'està generant la font"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
-msgid  "File name:"
+msgid "File name:"
 msgstr "Nom del fitxer:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
-msgid  "Import Libraries"
+msgid "Import Libraries"
 msgstr "Importa biblioteques"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
-msgid  "Do you want to delete the macro XX?"
+msgid "Do you want to delete the macro XX?"
 msgstr "Voleu suprimir la macro XX?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
-msgid  "Do you want to delete the XX dialog?"
+msgid "Do you want to delete the XX dialog?"
 msgstr "Voleu suprimir el diàleg XX?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
-msgid  "Do you want to delete the XX library?"
+msgid "Do you want to delete the XX library?"
 msgstr "Voleu suprimir la biblioteca XX?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
-msgid  "Do you want to delete the reference to the XX library?"
+msgid "Do you want to delete the reference to the XX library?"
 msgstr "Voleu suprimir la referència a la biblioteca XX?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
-msgid  "Do you want to delete the XX module?"
+msgid "Do you want to delete the XX module?"
 msgstr "Voleu suprimir el mòdul XX?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
-msgid  "Object or method not found"
+msgid "Object or method not found"
 msgstr "No s'ha trobat l'objecte o el mètode"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
-msgid  "BASIC"
+msgid "BASIC"
 msgstr "BASIC"
 
+#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
+msgid "Ln"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
+msgid "Col"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+msgid "Document"
+msgstr ""
+
+#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
+msgid "Macro Bar"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
-msgid  "The window cannot be closed while BASIC is running."
+msgid "The window cannot be closed while BASIC is running."
 msgstr "La finestra no es pot tancar mentre s'executa el BASIC."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
-msgid  "The default library cannot be replaced."
+msgid "The default library cannot be replaced."
 msgstr "La biblioteca per defecte no es pot reemplaçar."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
-msgid  "Reference to 'XX' not possible."
+msgid "Reference to 'XX' not possible."
 msgstr "La referència a 'XX' no és possible."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
-msgid  "Watch"
+msgid "Watch"
 msgstr "Observador"
 
+#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+msgid "Variable"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+msgid "Value"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "Tipus"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
-msgid  "Call Stack"
+msgid "Call Stack"
 msgstr "Pila de crides"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
-msgid  "BASIC Initialization"
+msgid "BASIC Initialization"
 msgstr "Inicialització del BASIC"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
-msgid  "Module"
+msgid "Module"
 msgstr "Mòdul"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "Quadre de diàleg"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
-msgid  "Library"
+msgid "Library"
 msgstr "Biblioteca"
 
 #: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
-msgid  "New Library"
+msgid "New Library"
 msgstr "Biblioteca nova"
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
-msgid  "New Module"
+msgid "New Module"
 msgstr "Mòdul nou"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
-msgid  "New Dialog"
+msgid "New Dialog"
 msgstr "Diàleg nou"
 
+#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+msgid "All"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
+msgid "Page"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
-msgid  "A name must be entered."
+msgid "A name must be entered."
 msgstr "S'ha d'introduir un nom."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Haureu de reiniciar el programa després d'aquesta edició.\nVoleu continuar?"
+msgid "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
+"Haureu de reiniciar el programa després d'aquesta edició.\n"
+"Voleu continuar?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
-msgid  "Do you want to replace the text in all active modules?"
+msgid "Do you want to replace the text in all active modules?"
 msgstr "Voleu reemplaçar el text de tots els mòduls actius?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Remove Watch"
+msgid "Remove Watch"
 msgstr "Suprimeix l'observador"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
-msgid  "Watch:"
+msgid "Watch:"
 msgstr "Observador:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
-msgid  "Calls: "
+msgid "Calls: "
 msgstr "Crides: "
 
+#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
+msgid "My Macros"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
-msgid  "My Dialogs"
+msgid "My Dialogs"
 msgstr "Els meus diàlegs"
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
-msgid  "My Macros & Dialogs"
+msgid "My Macros & Dialogs"
 msgstr "Les meves macros i els meus diàlegs"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros"
+msgid "%PRODUCTNAME Macros"
 msgstr "Macros de l'%PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
-msgid  "%PRODUCTNAME Dialogs"
+msgid "%PRODUCTNAME Dialogs"
 msgstr "Diàlegs de l'%PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros & Dialogs"
+msgid "%PRODUCTNAME Macros & Dialogs"
 msgstr "Macros i diàlegs de l'%PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
-msgid  "Properties"
+msgid "Properties"
 msgstr "Propietats"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
-msgid  "Active"
+msgid "Active"
 msgstr "Actiu"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "Propietats..."
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
-msgid  "Manage Breakpoints"
+msgid "Manage Breakpoints"
 msgstr "Gestiona els punts de ruptura"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
-msgid  "Manage Breakpoints..."
+msgid "Manage Breakpoints..."
 msgstr "Gestió de punts de ruptura..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "Insereix"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
-msgid  "BASIC Module"
+msgid "BASIC Module"
 msgstr "Mòdul del BASIC"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
-msgid  "BASIC Dialog"
+msgid "BASIC Dialog"
 msgstr "Diàleg del BASIC"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Suprimeix"
 
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+msgid "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+msgid "Hide"
+msgstr ""
+
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
-msgid  "Modules..."
+msgid "Modules..."
 msgstr "Mòduls..."
 
+#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+msgid "Properties..."
+msgstr "Propietats..."
+
+#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
+msgid "Do you want to overwrite the XX macro?"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
-msgid  "<Not localized>"
+msgid "<Not localized>"
 msgstr "<Sense localitzar>"
 
+#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+msgid "[Default Language]"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
-msgid  "Document Objects"
+msgid "Document Objects"
 msgstr "Objectes del document"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
-msgid  "Forms"
+msgid "Forms"
 msgstr "Formularis"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
-msgid  "Modules"
+msgid "Modules"
 msgstr "Mòduls"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
-msgid  "Class Modules"
+msgid "Class Modules"
 msgstr "Mòduls de classe"
 
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
+msgid "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
+msgid "Replace"
+msgstr ""
+
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Name already used"
+msgid "Dialog Import - Name already used"
 msgstr "Importació de diàlegs - El nom ja s'està fent servir"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "La biblioteca ja conté un diàleg amb el nom\n\n$(ARG1)\n\nReanomeneu el nou diàleg per conservar-lo, o bé substituïu el diàleg existent.\n "
+msgid "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
+"La biblioteca ja conté un diàleg amb el nom\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Reanomeneu el nou diàleg per conservar-lo, o bé substituïu el diàleg "
+"existent.\n"
+" "
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
+msgid "Add"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
+msgid "Omit"
+msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Language Mismatch"
+msgid "Dialog Import - Language Mismatch"
 msgstr "Importació de diàlegs - Les llengües no concorden"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "El diàleg que voleu importar és compatible amb llengües diferents de les de la biblioteca de destí.\n\nAfegiu aquestes llengües a la biblioteca per conservar els recursos lingüístics addicionals proporcionats pel diàleg, o ometeu-les per mantenir les llengües actuals de la biblioteca.\n\nNota: En aquelles llengües no compatibles amb el diàleg, s'empraran els recursos de la llengua per defecte del diàleg.\n "
+msgid "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
+"El diàleg que voleu importar és compatible amb llengües diferents de les de "
+"la biblioteca de destí.\n"
+"\n"
+"Afegiu aquestes llengües a la biblioteca per conservar els recursos "
+"lingüístics addicionals proporcionats pel diàleg, o ometeu-les per mantenir "
+"les llengües actuals de la biblioteca.\n"
+"\n"
+"Nota: En aquelles llengües no compatibles amb el diàleg, s'empraran els "
+"recursos de la llengua per defecte del diàleg.\n"
+" "
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+msgid "New"
+msgstr ""
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Suprimeix"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
-msgid  "Active"
+msgid "Active"
 msgstr "Actiu"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
-msgid  "Pass Count:"
+msgid "Pass Count:"
 msgstr "Recompte de passades:"
 
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
+msgid "Breakpoints"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
+msgid "Manage Breakpoints"
+msgstr "Gestiona els punts de ruptura"
+
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Basic Macros"
+msgid "%PRODUCTNAME Basic Macros"
 msgstr "Macros de l'%PRODUCTNAME Basic"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
-msgid  "Existing macros ~in:"
+msgid "Existing macros ~in:"
 msgstr "Macros ex~istents a:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
-msgid  "~Macro name"
+msgid "~Macro name"
 msgstr "Nom de la ~macro"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
-msgid  "Macro ~from"
+msgid "Macro ~from"
 msgstr "Macro ~des de"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
-msgid  "Save m~acro in"
+msgid "Save m~acro in"
 msgstr "Desa la m~acro a"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "De~scription"
+msgid "De~scription"
 msgstr "De~scripció"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
-msgid  "R~un"
+msgid "R~un"
 msgstr "Exec~uta"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Tanca"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
-msgid  "~Assign..."
+msgid "~Assign..."
 msgstr "~Assigna..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~Edita"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
-msgid  "New ~Library"
+msgid "New ~Library"
 msgstr "Bib~lioteca nova"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "New M~odule"
+msgid "New M~odule"
 msgstr "Mòdul n~ou"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Suprimeix"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "~Organitzador..."
 
+#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
+msgid "Macro"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
+msgid "~Delete"
+msgstr "~Suprimeix"
+
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
-msgid  "~New"
+msgid "~New"
 msgstr "~Nou"
 
+#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
+msgid "Close"
+msgstr "Tanca"
+
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
-msgid  "Choose"
+msgid "Choose"
 msgstr "Seleccioneu"
 
+#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+msgid "Run"
+msgstr ""
+
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
-msgid  "~Save"
+msgid "~Save"
 msgstr "~Desa"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
-msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgid "%PRODUCTNAME Basic Macro Organizer"
 msgstr "Organitzador de macros de l'%PRODUCTNAME Basic"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
-msgid  "Modules"
+msgid "Modules"
 msgstr "Mòduls"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
-msgid  "Dialogs"
+msgid "Dialogs"
 msgstr "Diàlegs"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
-msgid  "Libraries"
+msgid "Libraries"
 msgstr "Biblioteques"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
-msgid  "M~odule"
+msgid "M~odule"
 msgstr "Mò~dul"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~Edita"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Tanca"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "~New..."
+msgid "~New..."
+msgstr "~Nou..."
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+msgid "~New..."
 msgstr "~Nou..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Suprimeix"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "Quadre de diàleg"
 
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid "~Edit"
+msgstr "~Edita"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid "Close"
+msgstr "Tanca"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+msgid "~New..."
+msgstr "~Nou..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+msgid "~New..."
+msgstr "~Nou..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
+msgid "~Delete"
+msgstr "~Suprimeix"
+
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
-msgid  "L~ocation"
+msgid "L~ocation"
 msgstr "U~bicació"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
-msgid  "~Library"
+msgid "~Library"
 msgstr "Bib~lioteca"
 
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid "~Edit"
+msgstr "~Edita"
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid "Close"
+msgstr "Tanca"
+
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
-msgid  "~Password..."
+msgid "~Password..."
 msgstr "~Contrasenya..."
 
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+msgid "~New..."
+msgstr "~Nou..."
+
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "~Afegeix..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
-msgid  "E~xport..."
+msgid "E~xport..."
 msgstr "E~xporta..."
 
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
+msgid "~Delete"
+msgstr "~Suprimeix"
+
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
+msgid "Options"
 msgstr "Opcions"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
-msgid  "Insert as reference (read-only)"
+msgid "Insert as reference (read-only)"
 msgstr "Insereix com a referència (només de lectura)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
-msgid  "Replace existing libraries"
+msgid "Replace existing libraries"
 msgstr "Reemplaça les biblioteques existents"
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
-msgid  "~Name:"
+msgid "~Name:"
 msgstr "~Nom:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
-msgid  "Export Basic library"
+msgid "Export Basic library"
 msgstr "Exporta biblioteca de BASIC"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
-msgid  "Export as ~extension"
+msgid "Export as ~extension"
 msgstr "~Exporta com a paquet"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
-msgid  "Export as BASIC library"
+msgid "Export as BASIC library"
 msgstr "Exporta com a biblioteca de BASIC"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
-msgid  "Export library as extension"
+msgid "Export library as extension"
 msgstr "Exporta biblioteca com a paquet"
 
+#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
+msgid "Export as BASIC library"
+msgstr "Exporta com a biblioteca de BASIC"
+
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
-msgid  "Extension"
+msgid "Extension"
 msgstr "Conjunt de paquets UNO"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr "Descripció"
 
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
+msgid "Description"
+msgstr "Descripció"
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+msgid "Help information"
+msgstr ""
+
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
-msgid  "Help ID"
+msgid "Help ID"
 msgstr "Identificador d'ajuda"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
-msgid  "Help file name"
+msgid "Help file name"
 msgstr "Nom del fitxer d'ajuda"
 
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+msgid "Objects"
+msgstr ""
+
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+msgid "Show"
+msgstr ""
+
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
-msgid  "Objects Tree"
+msgid "Objects Tree"
 msgstr "Arbre d'objectes"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "Propietats: "
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "Sense marques de control"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "Selecció múltiple"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
-msgid  "Manage User Interface Languages [$1]"
+msgid "Manage User Interface Languages [$1]"
 msgstr "Gestiona les llengües de la interfície d'usuari [$1]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Present Languages"
+msgid "Present Languages"
 msgstr "Llengües presents"
 
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Suprimeix"
 
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+msgid "Default"
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
-msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr "La llengua per defecte s'utilitza si no hi ha cap localització d'interfície d'usuari local present. A més, totes les cadenes de la llengua per defecte es copien als recursos de les llengües afegides."
+msgid "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+"La llengua per defecte s'utilitza si no hi ha cap localització d'interfície "
+"d'usuari local present. A més, totes les cadenes de la llengua per defecte "
+"es copien als recursos de les llengües afegides."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Tanca"
 
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+msgid "[Default Language]"
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Suprimeix"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
-msgid  "<Press 'Add' to create language resources>"
+msgid "<Press 'Add' to create language resources>"
 msgstr "<Premeu 'Afegeix' per crear recursos de llengua>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
-msgid  "Delete Language Resources"
+msgid "Delete Language Resources"
 msgstr "Elimina els recursos de llengües"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Se suprimiran els recursos de les llengües seleccionades, incloses totes les cadenes de la interfície d'usuari.\n\nVoleu suprimir els recursos de les llengües seleccionades?"
+msgid "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+"Se suprimiran els recursos de les llengües seleccionades, incloses totes les "
+"cadenes de la interfície d'usuari.\n"
+"\n"
+"Voleu suprimir els recursos de les llengües seleccionades?"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
-msgid  "Set Default User Interface Language"
+msgid "Set Default User Interface Language"
 msgstr "Estableix la llengua per defecte de la interfície d'usuari"
 
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+msgid "Default language"
+msgstr ""
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
-msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr "Seleccioneu una llengua per definir la llengua per defecte de la interfície d'usuari. Totes les cadenes actuals s'assignaran als recursos creats per a la llengua seleccionada."
+msgid "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+"Seleccioneu una llengua per definir la llengua per defecte de la interfície "
+"d'usuari. Totes les cadenes actuals s'assignaran als recursos creats per a "
+"la llengua seleccionada."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
-msgid  "Add User Interface Languages"
+msgid "Add User Interface Languages"
 msgstr "Afegeix llengües de la interfície d'usuari"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
-msgid  "Available Languages"
+msgid "Available Languages"
 msgstr "Llengües disponibles"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
-msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr "Seleccioneu les llengües que voleu afegir. Els recursos per aquestes llengües es crearan a la biblioteca. Les cadenes de la llengua per defecte actual de la interfície d'usuari es copiaran a aquests nous recursos per defecte."
+msgid "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+"Seleccioneu les llengües que voleu afegir. Els recursos per aquestes "
+"llengües es crearan a la biblioteca. Les cadenes de la llengua per defecte "
+"actual de la interfície d'usuari es copiaran a aquests nous recursos per "
+"defecte."

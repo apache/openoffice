@@ -1,862 +1,1347 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏"
+
+#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+msgid "Welcome"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
+msgid "License Agreement"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+msgid "Personal Data"
+msgstr ""
+
+#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+msgid "User name"
+msgstr ""
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 #, fuzzy
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "עדכון מקוון"
+
+#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+msgid "Registration"
+msgstr ""
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "האשף ידריך אותך באשיור הרשיון, העברת הגדרות משתמש מ־%OLD_VERSION, והרישום של %PRODUCTNAME.\n\nלחץ על 'הבא' כדי להמשיך."
+msgid "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"האשף ידריך אותך באשיור הרשיון, העברת הגדרות משתמש מ־%OLD_VERSION, והרישום של "
+"%PRODUCTNAME.\n"
+"\n"
+"לחץ על 'הבא' כדי להמשיך."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "אשף זה ינחה אותך דרך ההרשמה של %PRODUCTNAME.\n\nיש ללחוץ 'הבא' כדי להמשיך."
+msgid "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"אשף זה ינחה אותך דרך ההרשמה של %PRODUCTNAME.\n"
+"\n"
+"יש ללחוץ 'הבא' כדי להמשיך."
+
+#: migration/wizard.src#STR_FINISH.STRING.TEXT
+msgid "~Finish"
+msgstr ""
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 #, fuzzy
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "מעכשיו יש לך הזדמנות לתמוך ולתרום לקהילת הקוד הפתוח הגדלה בקצה הכי מהיר בעולם.\n\nעזור לנו להוכיח שהמוצר %PRODUCTNAME כבר צבר נתח שוק משמעותי ע\"י הרשמה.\n\nההרשמה היא בהתנדבות וללא כל מחוייבות."
+msgid "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+"מעכשיו יש לך הזדמנות לתמוך ולתרום לקהילת הקוד הפתוח הגדלה בקצה הכי מהיר "
+"בעולם.\n"
+"\n"
+"עזור לנו להוכיח שהמוצר %PRODUCTNAME כבר צבר נתח שוק משמעותי ע\"י הרשמה.\n"
+"\n"
+"ההרשמה היא בהתנדבות וללא כל מחוייבות."
 
 #: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "ארעה שגיאה בעת הפעלת הדפדפן.‏\nנא לבדוק את הגדרות הדפדפן של ‏‪%PRODUCTNAME‏"
+msgid "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"ארעה שגיאה בעת הפעלת הדפדפן.‏\n"
+"נא לבדוק את הגדרות הדפדפן של ‏‪%PRODUCTNAME‏"
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you really want to decline?"
+msgid "Do you really want to decline?"
 msgstr "נו... את/ה באמת לא מסכימ/ה?‏"
+
+#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏"
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "אשף זה מסביר את תנאי הרישוי ותהליך ההרשמה של ‏‪%PRODUCTNAME‬‏.‏\n\nיש ללחוץ 'הבא' כדי להמשיך."
+msgid "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"אשף זה מסביר את תנאי הרישוי ותהליך ההרשמה של ‏‪%PRODUCTNAME‬‏.‏\n"
+"\n"
+"יש ללחוץ 'הבא' כדי להמשיך."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please follow these steps to accept the license"
+msgid "Please follow these steps to accept the license"
 msgstr "נא לעקוב אחר השלבים הבאים כדי להסכים לרישיון."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1."
-msgstr ".1"
+msgid "1."
+msgstr "1"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "יש לקרוא את כל הסכם הרישוי. נא להשתמש במקש הדפדוף למטה ‏‪(Page Down)‬‏ או בשולי הגלילה כדי לעיין בכל ההסכם.‏"
+msgid "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"יש לקרוא את כל הסכם הרישוי. נא להשתמש במקש הדפדוף למטה ‏‪(Page Down)‬‏ או "
+"בשולי הגלילה כדי לעיין בכל ההסכם.‏"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "2."
-msgstr ".2"
+msgid "2."
+msgstr "2"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgid "Click 'Accept' to accept the terms of the Agreement."
 msgstr "יש ללחוץ 'אישור' כדי לציין קבלת תנאי הרישוי. ‏"
+
+#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "Scroll Do~wn"
+msgstr ""
+
+#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+msgid "~Accept"
+msgstr ""
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 #, fuzzy
-msgid  "~Decline"
+msgid "~Decline"
 msgstr "דחייה"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Transfer personal data"
+msgid "Transfer personal data"
 msgstr "להעביר את הפרטים האישיים"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "ניתן להעביר הגדרות אישיות מ ‏‪%OLDPRODUCT‬‏ ל ‏‪%PRODUCTVERSION‬‏.‏\n\nהסימון בקופסת הסימון למטה יגרום להעברת תבניות, הגדרות גלריה, מילונים וכדומה מהגרסה הישנה לגרסה הנוכחית. להעביר כל ההגדרות האישיות, יש למלא אחרי ההוראות בקובץ ה'קרא אותי'. יש להסיר את הסימון אם אינך רוצה להעביר את ההגדרות האישיות.‏"
+msgid "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+"ניתן להעביר הגדרות אישיות מ ‏‪%OLDPRODUCT‬‏ ל ‏‪%PRODUCTVERSION‬‏.‏\n"
+"\n"
+"הסימון בקופסת הסימון למטה יגרום להעברת תבניות, הגדרות גלריה, מילונים וכדומה "
+"מהגרסה הישנה לגרסה הנוכחית. להעביר כל ההגדרות האישיות, יש למלא אחרי ההוראות "
+"בקובץ ה'קרא אותי'. יש להסיר את הסימון אם אינך רוצה להעביר את ההגדרות "
+"האישיות.‏"
+
+#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
+#, fuzzy
+msgid "Transfer personal data"
+msgstr "להעביר את הפרטים האישיים"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Online Update"
+msgstr "עדכון מקוון"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "העדכון המקוון אינו מעביר מידע פרטי כלשהו מהמחשב שלך בזמן ש ‏‪%PRODUCTNAME‬‏ מחפשת אוטומטית גרסאות חדשות.‏‪\nהמערכת תודיע לך ‬כאשר גרסה חדשה תהיה זמינה.‏‪\n\nבאפשרותך להגדיר תכונה זו בכלים / אפשרויות... / ‏‪ %PRODUCTNAME‬‏/ עדכון מקוון.‏"
+msgid "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+"העדכון המקוון אינו מעביר מידע פרטי כלשהו מהמחשב שלך בזמן ש ‏‪%PRODUCTNAME‬‏ "
+"מחפשת אוטומטית גרסאות חדשות.‏‪\n"
+"המערכת תודיע לך ‬כאשר גרסה חדשה תהיה זמינה.‏‪\n"
+"\n"
+"באפשרותך להגדיר תכונה זו בכלים / אפשרויות... / ‏‪ %PRODUCTNAME‬‏/ עדכון "
+"מקוון.‏"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
+msgid "~Check for updates automatically"
+msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Provide your full name and initials below"
+msgid "Provide your full name and initials below"
 msgstr "יש לציין שם מלא ושם בראשי תיבות למטה"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgid "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "שם המשתמש יופיע בתכונות מסמך, בתבניות וברישום שינויים למסמכים.‏"
+
+#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+msgid "~First name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+msgid "~Last name"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
+msgid "~Initials"
+msgstr ""
+
+#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+msgid "~Father's name"
+msgstr ""
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Registration"
+msgid "%PRODUCTNAME Registration"
 msgstr "רישום ‏‫%PRODUCTNAME‏"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "ניתן להרשם כמשתמש ‏‪%PRODUCTNAME‬‏. ההרשמה אינה חובה ואינה מחייבת.‏\n\nמי שנרשם יקבל הודעות על התפתחויות בפיתוח המוצר.‏"
+msgid "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+"ניתן להרשם כמשתמש ‏‪%PRODUCTNAME‬‏. ההרשמה אינה חובה ואינה מחייבת.‏\n"
+"\n"
+"מי שנרשם יקבל הודעות על התפתחויות בפיתוח המוצר.‏"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I want to register ~now"
+msgid "I want to register ~now"
 msgstr "אני מעוניין להרשם עכשיו"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I want to register ~later"
+msgid "I want to register ~later"
 msgstr "אני ארשם מאוחר יותר"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I do not want to ~register"
+msgid "I do not want to ~register"
 msgstr "אני לא מעוניין להרשם"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "אנו מקווים שתהנו מ-‪%PRODUCTNAME‬‏.‏\n\nליציאה מהאשף יש ללחוץ 'סיום'.‏"
+msgid "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+"אנו מקווים שתהנו מ-‪%PRODUCTNAME‬‏.‏\n"
+"\n"
+"ליציאה מהאשף יש ללחוץ 'סיום'.‏"
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "Should the file \"$1\" be restored?"
+msgid "Should the file \"$1\" be restored?"
 msgstr "האם לשחזר את הקובץ \"$1\"?‏"
 
+#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
+msgid "File Recovery"
+msgstr ""
+
 #: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "ארע כשל במוצר.‏\n\nכל הקבצים נשמרו ויש סיכוי סביר שיהיו שלמים ומעודכנים\nבעת הפעלה מחדש של המוצר. - בהצלחה"
+msgid "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr ""
+"ארע כשל במוצר.‏\n"
+"\n"
+"כל הקבצים נשמרו ויש סיכוי סביר שיהיו שלמים ומעודכנים\n"
+"בעת הפעלה מחדש של המוצר. - בהצלחה"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 #, fuzzy
-msgid  "The application cannot be started. "
+msgid "The application cannot be started. "
 msgstr "אין אפשרות להפעיל את היישום. ‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The configuration directory \"$1\" could not be found."
+msgid "The configuration directory \"$1\" could not be found."
 msgstr "תיקיית התצורה \"$1\" לא אותרה.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
 #, fuzzy
-msgid  "The installation path is invalid."
+msgid "The installation path is invalid."
 msgstr "נתיב ההתקנה אינו תקף.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
 #, fuzzy
-msgid  "The installation path is not available."
+msgid "The installation path is not available."
 msgstr "נתיב ההתקנה אינו זמין.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
 #, fuzzy
-msgid  "An internal error occurred."
+msgid "An internal error occurred."
 msgstr "ארעה שגיאה פנימית.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" is corrupt."
+msgid "The configuration file \"$1\" is corrupt."
 msgstr "קובץ התצורה \"$1\" משובש.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" was not found."
+msgid "The configuration file \"$1\" was not found."
 msgstr "קובץ התצורה \"$1\" לא אותר.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The configuration file \"$1\" does not support the current version."
+msgid "The configuration file \"$1\" does not support the current version."
 msgstr "קובץ התצורה \"$1\" אינו מתאים לגרסא הנוכחית של התוכנה.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The user interface language cannot be determined."
+msgid "The user interface language cannot be determined."
 msgstr "לא ניתן להבחין מהי שפת הממשק למשתמש."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The component manager is not available."
+msgid "The component manager is not available."
 msgstr "מנהל הרכיבים אינו זמין.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The configuration service is not available."
+msgid "The configuration service is not available."
 msgstr "שירות התצורה אינו זמין.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
-msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr "יש לך הרצה נוספת פועלת בהפעלת מסוף שונה. סגור הרצה זו ולאחר מכן נסה שוב."
+msgid "You have another instance running in a different terminal session. Close that instance and then try again."
+msgstr ""
+"יש לך הרצה נוספת פועלת בהפעלת מסוף שונה. סגור הרצה זו ולאחר מכן נסה שוב."
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 #, fuzzy
-msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "כדי לתקן את ההתקנה, יש להפעיל את תוכנית ההתקנה מהתקליטור או מהתיקיה המכילה את חתכולה של מדיית ההתקנה.‏"
+msgid "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr ""
+"כדי לתקן את ההתקנה, יש להפעיל את תוכנית ההתקנה מהתקליטור או מהתיקיה המכילה "
+"את חתכולה של מדיית ההתקנה.‏"
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "The startup settings for accessing the central configuration are incomplete. "
+msgid "The startup settings for accessing the central configuration are incomplete. "
 msgstr "ההגדרות ההתחלתיות לצורך גישה להגדרות המרכזיות אינן שלמות.‏"
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 #, fuzzy
-msgid  "A connection to the central configuration could not be established. "
+msgid "A connection to the central configuration could not be established. "
 msgstr "לא ניתן ליצור קשר עם מאגר התצורה המרכזי.‏"
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "You cannot access the central configuration because of missing access rights. "
+msgid "You cannot access the central configuration because of missing access rights. "
 msgstr "לא ניתן ליצור קשר עם מאגר התצורה המרכזי בגלל העדר הרשאות גישה.‏"
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
 #, fuzzy
-msgid  "A general error occurred while accessing your central configuration. "
+msgid "A general error occurred while accessing your central configuration. "
 msgstr "שגיאה כללית בזמן גישה להגדרות המרכזיות."
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 #, fuzzy
-msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "אין אפשרות לשמור את ההגדרות האישיות שלך במאגר המרכזי כי חסרות הרשאות מתאימות.‏"
+msgid "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr ""
+"אין אפשרות לשמור את ההגדרות האישיות שלך במאגר המרכזי כי חסרות הרשאות "
+"מתאימות.‏"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "אין אפשרות להפעיל את ‏‪%PRODUCTNAME‬‏ בגלל שגיאה בעת גישה לנתוני התצורה.‏\n\nיש להתייעץ עם מנהל הרשת כדי לפתור את הבעיה.‏"
+msgid "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+"אין אפשרות להפעיל את ‏‪%PRODUCTNAME‬‏ בגלל שגיאה בעת גישה לנתוני התצורה.‏\n"
+"\n"
+"יש להתייעץ עם מנהל הרשת כדי לפתור את הבעיה.‏"
+
+#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
+msgid "The following internal error has occurred: "
+msgstr ""
 
 #: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "הרצה אחרת של ‏‪%PRODUCTNAME‬‏ משתמשת בהגדרות האישיות שלך, או שההגדרות האישיות נעולות.‏\nגישה בו זמנית להגדרות האישיות יכולה לגרום לשיבוש בהגדרות. יש לוודא שמשתמש ‏‪'$u'‬‏ סוגר/ת את ‏‪%PRODUCTNAME‬‏ במחשב ‏‪'$h'‬‏.‏\n\nהאם להמשיך עכשיו בכל זאת?‏"
+msgid "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr ""
+"הרצה אחרת של ‏‪%PRODUCTNAME‬‏ משתמשת בהגדרות האישיות שלך, או שההגדרות "
+"האישיות נעולות.‏\n"
+"גישה בו זמנית להגדרות האישיות יכולה לגרום לשיבוש בהגדרות. יש לוודא שמשתמש "
+"‏‪'$u'‬‏ סוגר/ת את ‏‪%PRODUCTNAME‬‏ במחשב ‏‪'$h'‬‏.‏\n"
+"\n"
+"האם להמשיך עכשיו בכל זאת?‏"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "‏‪‏‪‏‪%PRODUCTNAME‬‏‬‏‬‏ %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Printing is disabled. No documents can be printed."
+msgid "Printing is disabled. No documents can be printed."
 msgstr "יכולת ההדפסה חסומה. אין אפשרות להדפיס כעת.‏"
 
 #: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr " תוקף גרסת הערכה זו פג. למצוא מידע נוסף אודות %PRODUCTNAME,\nבקר באתר http://www.openoffice.org"
+msgid "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
+" תוקף גרסת הערכה זו פג. למצוא מידע נוסף אודות %PRODUCTNAME,\n"
+"בקר באתר http://www.openoffice.org"
+
+#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "‏‪‏‪‏‪%PRODUCTNAME‬‏‬‏‬‏ %PRODUCTVERSION"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The path manager is not available.\n"
+msgid "The path manager is not available.\n"
 msgstr "מנהל הנתיבים אינו זמין.‏\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר שטח פנוי בדיסק. נא לשחרר מקום בדיסק ב:‏\n\n"
+msgid "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר שטח פנוי בדיסק. "
+"נא לשחרר מקום בדיסק ב:‏\n"
+"\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר הרשאות. נא לבדוק שיש הרשאות מתאימות להתקנה ב:‏\n\n"
+msgid "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר הרשאות. נא לבדוק "
+"שיש הרשאות מתאימות להתקנה ב:‏\n"
+"\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
-#, fuzzy
-msgid  "Extension Software License Agreement of $NAME:"
+msgid "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
 #, fuzzy
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr "נא לקראו את ההסכם כולו. נא לאשר הסכמה לתנאי ההסכם על ידי הקשת ‏‪yes‬‏ ולחיצת מקש ה‏‪enter‬‏. נא להקיש ‏‪no‬‏ אם אינך מסכימה לתנאי ההסכם או כדי להפסיק את ההתקנה.‏"
+msgid "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr ""
+"נא לקראו את ההסכם כולו. נא לאשר הסכמה לתנאי ההסכם על ידי הקשת ‏‪yes‬‏ ולחיצת "
+"מקש ה‏‪enter‬‏. נא להקיש ‏‪no‬‏ אם אינך מסכימה לתנאי ההסכם או כדי להפסיק את "
+"ההתקנה.‏"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
 #, fuzzy
-msgid  "[Enter \"yes\" or \"no\"]:"
+msgid "[Enter \"yes\" or \"no\"]:"
 msgstr "נא להקיש ‏‪yes‬‏ אן ‏‪no‬‏."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
 #, fuzzy
-msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "נא להקיש ‏‪yes‬‏ או ‏‪no‬‏/"
+
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+msgid "YES"
+msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y"
+msgid "Y"
 msgstr "Y"
+
+#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+msgid "NO"
+msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 #, fuzzy
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
 #, fuzzy
-msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgid "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
 msgstr "כדי להמשיך, צריך לסגור כל הפעלה אחרת של מנהל התוספים."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "ERROR: "
+msgid "ERROR: "
 msgstr "שגיאה:"
+
+#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+msgid "Unknown"
+msgstr ""
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
 #, fuzzy
-msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgid "Extension requires at least Apache OpenOffice %VERSION"
 msgstr "להרחבה דרישה לגרסה מינימום של OpenOffice.org: %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgid "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
 msgstr "להרחבה נדרשת גרסה מינימלית של אורקל משרדפתוח שמספרה %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic Library"
+msgid "%PRODUCTNAME Basic Library"
 msgstr "ספריית בייסיק ‏‪%PRODUCTNAME‏"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
 #, fuzzy
-msgid  "Dialog Library"
+msgid "Dialog Library"
 msgstr "ספריית דו-שיח"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
 #, fuzzy
-msgid  "The library name could not be determined."
+msgid "The library name could not be determined."
 msgstr "לא ניתן לגלות את שם הספריה.‏"
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "This library name already exists. Please choose a different name."
+msgid "This library name already exists. Please choose a different name."
 msgstr "שם זה לספריה כבר קיים. נא לבחור שם אחר.‏"
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Enabling: "
+msgid "Enabling: "
 msgstr "מאפשרת הפעלת חבילה: ‏"
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Disabling: "
+msgid "Disabling: "
 msgstr "חוסמת הפעלת חבילה: ‏"
+
+#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+msgid "Cannot detect media-type: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+msgid "This media-type is not supported: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+msgid "An error occurred while enabling: "
+msgstr ""
+
+#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+msgid "An error occurred while disabling: "
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
+msgid "Configuration Schema"
+msgstr ""
+
+#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
+msgid "Configuration Data"
+msgstr ""
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be installed because:\n"
+msgid "The extension cannot be installed because:\n"
 msgstr "לא ניתן להתקין את התוסף כי:\n"
+
+#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
+msgid "The extension will not be installed because an error occurred in the Help files:\n"
+msgstr ""
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 #, fuzzy
-msgid  "%MACROLANG Library"
+msgid "%MACROLANG Library"
 msgstr "ספריית ‏‪%MACROLANG‏"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 #, fuzzy
-msgid  "Extension"
+msgid "Extension"
 msgstr "אגד חבילות ‏‪UNO‏"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Dynamic Library Component"
+msgid "UNO Dynamic Library Component"
 msgstr "רכיב ספריה דינמי ‏‪UNO‬‏‏"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Java Component"
+msgid "UNO Java Component"
 msgstr "רכיב ג'אווה ‏‪UNO‬‏‏"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
 #, fuzzy
-msgid  "UNO Python Component"
+msgid "UNO Python Component"
 msgstr "רכיב ‏‪Python ‏‪UNO‬‏‏"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
-#, fuzzy
-msgid  "UNO Components"
+msgid "UNO Components"
 msgstr ""
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
 #, fuzzy
-msgid  "UNO RDB Type Library"
+msgid "UNO RDB Type Library"
 msgstr "ספריה מטיפוס ‏‪UNO‏ RDB‏"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
 #, fuzzy
-msgid  "UNO Java Type Library"
+msgid "UNO Java Type Library"
 msgstr "ספריה מטיפוס ‏‪UNO‬‏ Java‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Copying: "
+msgid "Copying: "
 msgstr "העתקת חבילות: ‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
 #, fuzzy
-msgid  "Error while adding: "
+msgid "Error while adding: "
 msgstr "שגיאה בעת הוספת חבילה: ‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
 #, fuzzy
-msgid  "Error while removing: "
+msgid "Error while removing: "
 msgstr "שגיאה בעת החסרת חבילה: ‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
 #, fuzzy
-msgid  "Extension has already been added: "
+msgid "Extension has already been added: "
 msgstr "החבילה כבר כלולה: ‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "There is no such extension deployed: "
+msgid "There is no such extension deployed: "
 msgstr "אין כזאת חבילה: ‏"
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
-msgid  "Synchronizing repository for %NAME extensions"
+msgid "Synchronizing repository for %NAME extensions"
 msgstr "סנכרון מאגר לסיומות %NAME"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nגרסה חדשה יותר, $DEPLOYED, כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה חדשה יותר, $DEPLOYED, כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nגרסה חדשה יותר, $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה חדשה יותר, $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nגרסה הזו כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה הזו כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nגרסה זו, בשם \\'$OLDNAME\\', כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להחליף את הגרסה הקיימת,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה זו, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה הקיימת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nהגרסה הישנה, $DEPLOYED, כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"הגרסה הישנה, $DEPLOYED, כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
 #, fuzzy
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\nהגרסה הישנה, גרסת $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\nיש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\nאו ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"הגרסה הישנה, גרסת $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
+msgid "System dependencies check"
+msgstr ""
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgid "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
 msgstr "לא ניתן להתקין את ההרחבה כי התוכנות הבאות חסרות:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
 #, fuzzy
-msgid  "Add Extension(s)"
+msgid "Add Extension(s)"
 msgstr "הוספת חבילות...‏"
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
+msgid "~Remove"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
+msgid "~Enable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
+msgid "~Disable"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
+msgid "~Update..."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
+msgid "~Options..."
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 #, fuzzy
-msgid  "Adding %EXTENSION_NAME"
-msgstr "הוספת חבילות"
+msgid "Adding %EXTENSION_NAME"
+msgstr "הוספת %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
+msgid "Removing %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
+msgid "Enabling %EXTENSION_NAME"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
+msgid "Disabling %EXTENSION_NAME"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "Accept license for %EXTENSION_NAME"
+msgid "Accept license for %EXTENSION_NAME"
 msgstr "אשר רשיון ל־%EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
 #, fuzzy
-msgid  "~For all users"
+msgid "~For all users"
 msgstr "לכל משתמש"
+
+#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
+msgid "~Only for me"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "Error: The status of this extension is unknown"
+msgid "Error: The status of this extension is unknown"
 msgstr "שגיאה: המצב של תוסף זה אינו ידוע"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "סגירה"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Quit"
+msgid "Quit"
 msgstr "יציאה"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME עודכן לגרסה חדשה. כמה הרחבות משותפות לכמה משתמשים של %PRODUCTNAME אינם תואמות עם גרסה זו, ויש לעדכנם קודם להפעלת %PRODUCTNAME.\n\nעדכון הרחבות משותפות לכמה משתמשים דורש הרשאות ניהוליות. צור קשר עם מנהל המערכת שלך לעדכון ההרחבות הבאות:"
+msgid "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME עודכן לגרסה חדשה. כמה הרחבות משותפות לכמה משתמשים של %"
+"PRODUCTNAME אינם תואמות עם גרסה זו, ויש לעדכנם קודם להפעלת %PRODUCTNAME.\n"
+"\n"
+"עדכון הרחבות משותפות לכמה משתמשים דורש הרשאות ניהוליות. צור קשר עם מנהל "
+"המערכת שלך לעדכון ההרחבות הבאות:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgid "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 msgstr "לא ניתן לאפשר את ההרחבה היות והתלויות הבאות לא מולאו:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
 #, fuzzy
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr "ההרחבה מנוטרלת היות וטרם אושר רשיונה.\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
 #, fuzzy
-msgid  "Show license"
+msgid "Show license"
 msgstr "צפה ברשיון"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Software License Agreement"
+msgid "Extension Software License Agreement"
 msgstr "הסכם הרישוי לתוכנת ההרחבה"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgid "Please follow these steps to proceed with the installation of the extension:"
 msgstr "נא לעקוב אחר השלבים הבאים כדי להמשיך בהתקנת ההרחבה:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1."
+msgid "1."
 msgstr "1"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr "יש לקראו את הסכם הרישוי במלואו. ניתן להשתמש בסרגל הגלילה או בכפתור הדפדוף לראות את כל ההסכם."
+msgid "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
+msgstr ""
+"יש לקראו את הסכם הרישוי במלואו. ניתן להשתמש בסרגל הגלילה או בכפתור הדפדוף "
+"לראות את כל ההסכם."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "2."
+msgid "2."
 msgstr "2"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgid "Accept the License Agreement for the extension by pressing the \'Accept\' button."
 msgstr "ניתן להביע הסכמה להסכם הרישוי על ידי לחיצת כפתור ה'אישור'."
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+msgid "~Scroll Down"
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
+msgid "Accept"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Decline"
+msgid "Decline"
 msgstr "דחייה"
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
+#, fuzzy
+msgid "Extension Software License Agreement"
+msgstr "הסכם הרישוי לתוכנת ההרחבה"
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "סגירה"
+
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr "התקנת התוסף %NAME עומדת להתחיל.\nיש ללחוץ אישור כדי להתקין את התוסף,\nאו ללחוץ ביטול להפסיק את ההתקנה."
+msgid "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"התקנת התוסף %NAME עומדת להתחיל.\n"
+"יש ללחוץ אישור כדי להתקין את התוסף,\n"
+"או ללחוץ ביטול להפסיק את ההתקנה."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "ההרחבה \\'%NAME\\' תוסר כעת.\nלחץ על \\'אישור\\' להסרת ההרחבה.\nלחץ על \\'ביטול\\' לביטול הסרת ההרחבה."
+msgid "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"ההרחבה \\'%NAME\\' תוסר כעת.\n"
+"לחץ על \\'אישור\\' להסרת ההרחבה.\n"
+"לחץ על \\'ביטול\\' לביטול הסרת ההרחבה."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr "יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\nיש ללחוץ \\'אישור\\' כדי להסיר את התוסף,\nאו ללחוץ \\'ביטול\\' להפסיק את ההסרה."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי להסיר את התוסף,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההסרה."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr "יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\nיש ללחוץ \\'אישור\\' כדי לאפשר את התוסף,\nאו ללחוץ \\'ביטול\\' כדי לא לאפשר את התוסף."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לאפשר את התוסף,\n"
+"או ללחוץ \\'ביטול\\' כדי לא לאפשר את התוסף."
 
 #: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr "יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\nיש ללחוץ \\'אישור\\' כדי לחסום את התוסף,\nאו ללחוץ \\'ביטול\\' כדי לא לחסום את התוסף."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לחסום את התוסף,\n"
+"או ללחוץ \\'ביטול\\' כדי לא לחסום את התוסף."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 #, fuzzy
-msgid  "The extension \\'%Name\\' does not work on this computer."
+msgid "The extension \'%Name\' does not work on this computer."
 msgstr "התוסף \\'%Name\\' לא יפעל על מחשב זה."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Download and Installation"
+msgid "Download and Installation"
 msgstr "הורדה והתקנה"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Downloading extensions..."
+msgid "Downloading extensions..."
 msgstr "מוריד חבילות...‏"
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
+msgid "Result"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
 #, fuzzy
-msgid  "OK"
+msgid "OK"
 msgstr "אישור"
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
+msgid "Cancel Update"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 #, fuzzy
-msgid  "Installing extensions..."
+msgid "Installing extensions..."
 msgstr "מתקין חבילות...‏"
+
+#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
+msgid "Installation finished"
+msgstr ""
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 #, fuzzy
-msgid  "No errors."
+msgid "No errors."
 msgstr "אין שגיאות.‏"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
 #, fuzzy
-msgid  "Error while downloading extension %NAME. "
+msgid "Error while downloading extension %NAME. "
 msgstr "שגיאה בזמן הורדת החבילה ‏‪%NAME‬‏.‏"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
 #, fuzzy
-msgid  "The error message is: "
+msgid "The error message is: "
 msgstr "הודעת שגיאה:‏"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
 #, fuzzy
-msgid  "Error while installing extension %NAME. "
+msgid "Error while installing extension %NAME. "
 msgstr "שגיאה בזמן התקנת החבילה ‏‪%NAME‬‏.‏"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
 #, fuzzy
-msgid  "The license agreement for extension %NAME was refused. "
+msgid "The license agreement for extension %NAME was refused. "
 msgstr "הסכם הרשיון לחבילה ‏‪%NAME‬‏ לא אושר.‏"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
 #, fuzzy
-msgid  "The extension will not be installed."
+msgid "The extension will not be installed."
 msgstr "החבילה לא תותקן.‏"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Update"
+msgid "Extension Update"
 msgstr "עדכון חבילה"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
+msgid "Checking..."
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Available extension updates"
+msgid "~Available extension updates"
 msgstr "עדכוני חבילות זמינים"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
+msgid "~Show all updates"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
+msgid "Description"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
+msgid "Publisher:"
+msgstr ""
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
+msgid "What is new:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Release Notes"
+msgid "Release Notes"
 msgstr "הערות שחרור"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
+msgid "~Install"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "סגירה"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
 #, fuzzy
-msgid  "No new updates are available."
+msgid "No new updates are available."
 msgstr "אין עדכונים חדשים זמינים.‏"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 #, fuzzy
-msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr "אין עדכונים זמינים להתקנה.‏ כדי לראות עדכונים מבוטלים או שנזנחו, יש לסמן את תיבת הסימון 'הצגת כל העדכונים'.‏"
+msgid "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+"אין עדכונים זמינים להתקנה.‏ כדי לראות עדכונים מבוטלים או שנזנחו, יש לסמן את "
+"תיבת הסימון 'הצגת כל העדכונים'.‏"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
+msgid "An error occurred:"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 #, fuzzy
-msgid  "Unknown error."
+msgid "Unknown error."
 msgstr "שגיאה לא מזוהה.‏"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "No more details are available for this update."
+msgid "No more details are available for this update."
 msgstr "אין פרטים נוספים זמינים לעדכון זה."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
 #, fuzzy
-msgid  "The extension cannot be updated because:"
+msgid "The extension cannot be updated because:"
 msgstr "אין אפשרות להתקין את החבילה מכיון ש:‏"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
 #, fuzzy
-msgid  "Required Apache OpenOffice version doesn't match:"
+msgid "Required Apache OpenOffice version doesn't match:"
 msgstr "גרסת אורקל משרדפתוח הנדרשת לא מתאימה:‏"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
 #, fuzzy
-msgid  "You have Apache OpenOffice %VERSION"
+msgid "You have Apache OpenOffice %VERSION"
 msgstr "ברשותך גרסת אורקל משרדפתוח שמספרה %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 #, fuzzy
-msgid  "browser based update"
+msgid "browser based update"
 msgstr "עדכון על ידי דפדפן"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
+msgid "Version"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 #, fuzzy
-msgid  "Ignore this Update"
+msgid "Ignore this Update"
 msgstr "התעלם מעדכון זה"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
 #, fuzzy
-msgid  "Ignore all Updates"
+msgid "Ignore all Updates"
 msgstr "התעלם מכל העדכונים"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
 #, fuzzy
-msgid  "Enable Updates"
+msgid "Enable Updates"
 msgstr "אפשר עדכונים"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
 #, fuzzy
-msgid  "This update will be ignored.\n"
+msgid "This update will be ignored.\n"
 msgstr "עדכון זה ייזנח.\n"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr "יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן עדכון התוספים.\nיש ללחוץ \\'אישור\\' כדי לעדכן את התוספים,\nאו ללחוץ \\'ביטול\\' להפסיק את העדכון."
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן עדכון התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לעדכן את התוספים,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את העדכון."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Manager"
+msgid "Extension Manager"
 msgstr "מנהל חבילות"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
+msgid "~Add..."
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "בדיקת עדכונים..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Get more extensions online..."
+msgid "Get more extensions online..."
 msgstr "תוספים נוספים כאן..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "הוספת %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "סגירה"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Extension Update Required"
+msgid "Extension Update Required"
 msgstr "נדרש עדכון הרחבה"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr "%PRODUCTNAME עודכן לגירסה חדשה. כמה מההרחבות המותקנות ב-%PRODUCTNAME אינם תואמות עם גירסה חדשה זו, ודרוש לעדכנם לפני שימוש."
+msgid "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+"%PRODUCTNAME עודכן לגירסה חדשה. כמה מההרחבות המותקנות ב-%PRODUCTNAME אינם "
+"תואמות עם גירסה חדשה זו, ודרוש לעדכנם לפני שימוש."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Adding %EXTENSION_NAME"
+msgstr "הוספת %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Check for ~Updates..."
+msgstr "בדיקת עדכונים..."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
+msgid "Disable all"
+msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "בסביבה של שימוש בו זמני של מספר משתמשים, יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן התקנת תוספים.\n\nעבור מי להתקין את התוסף?\n"
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+"בסביבה של שימוש בו זמני של מספר משתמשים, יש לוודא שאין משתמשי %PRODUCTNAME "
+"אחרים פעילים בזמן התקנת תוספים.\n"
+"\n"
+"עבור מי להתקין את התוסף?\n"
+
+#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
+msgid "Installation Status"
+msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 #, fuzzy
-msgid  "Installation is optimized for clients."
+msgid "Installation is optimized for clients."
 msgstr "ההתקנה מותאמת לשרתים."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
 #, fuzzy
-msgid  "Installation is optimized for servers."
+msgid "Installation is optimized for servers."
 msgstr "ההתקנה מותאמת לשרתים."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
 #, fuzzy
-msgid  "Cannot find Office installation."
+msgid "Cannot find Office installation."
 msgstr "לא ניתן למצוא התקנת Office."
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
 #, fuzzy
-msgid  "Setup"
+msgid "Setup"
 msgstr "התקנה"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
 #, fuzzy
-msgid  "The %PRODUCTNAME Setup"
+msgid "The %PRODUCTNAME Setup"
 msgstr "התקנת ‏‪%PRODUCTNAME‬‏‏"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
 #, fuzzy
-msgid  "Out of Memory"
+msgid "Out of Memory"
 msgstr "אזל הזכרון"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
 #, fuzzy
-msgid  "Setup was unable to find the msi package."
+msgid "Setup was unable to find the msi package."
 msgstr "תוכנית ההתקנה לא הצליחה לאתר את חבילת ה msi.‏"
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
 #, fuzzy
-msgid  "Setup was cancelled"
+msgid "Setup was cancelled"
 msgstr "ההתקנה בוטלה"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 #, fuzzy
-msgid  "Administrator privileges are required for upgrading the Windows Installer."
+msgid "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "נדרש הרשאת מנהל לשדרוג Windows Installer."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
 #, fuzzy
-msgid  "Setup was unable to find the file '%s'."
+msgid "Setup was unable to find the file '%s'."
 msgstr "תוכנית ההתקנה לא מצאה את הקובץ ‏‪'%s'‬‏.‏"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
 #, fuzzy
-msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgid "Invalid command line option '%s'. Please use '/?' for help."
 msgstr ".לא תקנית בשורת הפקודה, אנא השתמש בפרמטר '?/' לעזרה 's%' פקודה"
 
 #: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "חבילה זו דורשת לפחות את הגירסה 's%' של שירות המתקין של חלונות. \nבמערכת שלך קיימת הגירסה 's%' של Windows Installer!"
+msgid "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+"חבילה זו דורשת לפחות את הגירסה 's%' של שירות המתקין של חלונות. \n"
+"במערכת שלך קיימת הגירסה 's%' של Windows Installer!"
 
 #: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "חבילה זו דורשת את Windows Installer. \nדרוש לפחות Windows Installer '%s' במערכת שלך!"
+msgid "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+"חבילה זו דורשת את Windows Installer. \n"
+"דרוש לפחות Windows Installer '%s' במערכת שלך!"
 
 #: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "השימוש:\n   /? :  מראה דו-שיח זה.‏\n   /a :  מבצע התקנה אדמיניסטראטיבית.‏\n   /j[u|m] :  מבצע התקנת פרסומת.‏\n   /q[n] : לא להציג ממשק משתמש (מצב דממה).‏\n‏"
+msgid "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"השימוש:\n"
+"   /? :  מראה דו-שיח זה.‏\n"
+"   /a :  מבצע התקנה אדמיניסטראטיבית.‏\n"
+"   /j[u|m] :  מבצע התקנת פרסומת.‏\n"
+"   /q[n] : לא להציג ממשק משתמש (מצב דממה).‏\n"
+"‏"
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 #, fuzzy
-msgid  "There is already a setup process running."
+msgid "There is already a setup process running."
 msgstr "תהליך התקנה אחר כבר פועל.‏"
+
+#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
+msgid "An Unknown Error occured!"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 #, fuzzy
-msgid  "Invalid or incomplete profile."
+msgid "Invalid or incomplete profile."
 msgstr "פרופיל לא שלם או לא חוקי"
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
 #, fuzzy
-msgid  "Unknown Language: %d"
+msgid "Unknown Language: %d"
 msgstr "שפה ‏‪'%d'‬‏ אינה מוכרת"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+msgid "Czech"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+msgid "Danish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+msgid "German (Germany)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+msgid "Greek"
+msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 #, fuzzy
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "אנגלית (ארה\"ב)‏"
 
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+msgid "Spanish (Spain)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+msgid "Finnish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+msgid "French (France)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+msgid "Hebrew"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+msgid "Hungarian"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+msgid "Italian (Italy)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+msgid "Japanese"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+msgid "Korean"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+msgid "Dutch (Netherlands)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+msgid "Norwegian (Bokmål)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+msgid "Polish"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+msgid "Russian"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
-#, fuzzy
-msgid  "Slovak"
+msgid "Slovak"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+msgid "Swedish (Sweden)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+msgid "Thai"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+msgid "Turkish"
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 #, fuzzy
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "אסטונית"
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+msgid "Portuguese (Portugal)"
+msgstr ""

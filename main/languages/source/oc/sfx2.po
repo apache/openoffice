@@ -1,2659 +1,2894 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
 #, fuzzy
-msgid  "Configuration Menu"
+msgid "Configuration Menu"
 msgstr "Menut"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
 #, fuzzy
-msgid  "~Add-Ons"
+msgid "~Add-Ons"
 msgstr "Add-ons"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "~Copar"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Copy"
-msgstr "Co~piar"
+msgid "~Copy"
+msgstr "~Copiar"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "Em~pegar"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
 #, fuzzy
-msgid  "Leave Full-Screen Mode"
+msgid "Leave Full-Screen Mode"
 msgstr "Quitar lo mòde ecran complet"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "Ajuda de l'add-on"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 #, fuzzy
-msgid  "Synonyms"
+msgid "Synonyms"
 msgstr "Sinonims"
 
 #: menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "(none)"
+msgid "(none)"
 msgstr "(ges)"
 
 #: menu/menu.src#STR_MENU_THESAURUS.STRING.TEXT
 #, fuzzy
-msgid  "~Thesaurus..."
+msgid "~Thesaurus..."
 msgstr "~Thesaurus..."
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "My Templates"
+msgid "My Templates"
 msgstr "Mos modèls"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Business Correspondence"
+msgid "Business Correspondence"
 msgstr "Correspondéncia comerciala"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Other Business Documents"
+msgid "Other Business Documents"
 msgstr "Documents comercials divèrses"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Personal Correspondence and Documents"
+msgid "Personal Correspondence and Documents"
 msgstr "Correspondéncia e documents privats"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Forms and Contracts"
+msgid "Forms and Contracts"
 msgstr "Formularis e contractes"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Finances"
+msgid "Finances"
 msgstr "Economia"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Education"
+msgid "Education"
 msgstr "Educacion"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Presentation Backgrounds"
+msgid "Presentation Backgrounds"
 msgstr "Rèire plans de presentacion"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Presentations"
+msgid "Presentations"
 msgstr "Presentacions"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Miscellaneous"
+msgid "Miscellaneous"
 msgstr "Divèrs"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
 #, fuzzy
-msgid  "The templates are being initialized for first-time usage."
+msgid "The templates are being initialized for first-time usage."
 msgstr "Inicializacion dels modèls per una primièra utilizacion."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "Modèls"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "New template"
+msgid "New template"
 msgstr "Modèl de document novèl"
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Templates"
+msgstr "Modèls"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "~Categorias"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Templates"
+msgid "~Templates"
 msgstr "~Modèls"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~Editar"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "Gerir..."
+
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
-msgid  "Are you sure you want to delete the region \"$1\"?"
+msgid "Are you sure you want to delete the region \"$1\"?"
 msgstr "Sètz segur que volètz suprimir la categoria \"$1\" ?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgid "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Sètz segur que volètz suprimir l'entrada \"$1\" ?"
+
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid "The category is not empty.\nDelete anyway?"
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Lo document \"$(DOC)\" es estat modificat.\nVolètz enregistrar las modificacions aportadas?"
+msgid "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr ""
+"Lo document \"$(DOC)\" es estat modificat.\n"
+"Volètz enregistrar las modificacions aportadas?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
 #, fuzzy
-msgid  "Styles"
+msgid "Styles"
 msgstr "Estils"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
 #, fuzzy
-msgid  "Macros"
+msgid "Macros"
 msgstr "Màcros"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
 #, fuzzy
-msgid  "Configuration"
+msgid "Configuration"
 msgstr "Configuracion"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Styles in "
+msgid "Styles in "
 msgstr "Estils dins "
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
 #, fuzzy
-msgid  "Printing Styles"
+msgid "Printing Styles"
 msgstr "Estampatge dels estils"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The print job could not be started."
+msgid "The print job could not be started."
 msgstr "Lo trabalh d'estampatge a pas pogut èsser aviat."
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
 #, fuzzy
-msgid  "Copy"
+msgid "Copy"
 msgstr "Còpia"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "The template could not be opened."
+msgid "The template could not be opened."
 msgstr "Impossible de dobrir lo modèl de document."
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document already open for editing."
+msgid "Document already open for editing."
 msgstr "Aqueste document ja es dobèrt per l'edicion."
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Error recording document "
+msgid "Error recording document "
 msgstr "Error al moment de l'escritura del document "
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "Modèls"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Error al moment de la còpia del modèl \"$1\". \nEs possible qu'existe ja."
+msgid "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr ""
+"Error al moment de la còpia del modèl \"$1\". \n"
+"Es possible qu'existe ja."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$1\" can not be deleted."
+msgid "The template \"$1\" can not be deleted."
 msgstr "Impossible de suprimir lo modèl \"$1\"."
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error moving template \"$1\"."
+msgid "Error moving template \"$1\"."
 msgstr "Error al moment del desplaçament del modèl \"$1\"."
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The update could not be saved."
+msgid "The update could not be saved."
 msgstr "Impossible d'enregistrar la mesa a jorn."
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error saving template "
-msgstr "Error al moment de l'escritura del modèl "
+msgid "Error saving template "
+msgstr "Error al moment de l'enregistrament del modèl "
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Error renaming template."
+msgid "Error renaming template."
 msgstr "Error al moment del cambiament de nom del modèl."
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Error renaming template category."
+msgid "Error renaming template category."
 msgstr "Error al moment del cambiament de nom de la categoria."
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Please specify a name."
+msgid "Please specify a name."
 msgstr "Indicatz un nom."
+
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgid "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Desiratz far del modèl \"$(TEXT)\" lo modèl per defaut?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you want to reset the default template?"
+msgid "Do you want to reset the default template?"
 msgstr "Volètz restablir lo modèl per defaut?"
+
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document info cannot be read."
+msgid "Document info cannot be read."
 msgstr "Lectura de las infos document impossibla."
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
 #, fuzzy
-msgid  "The selected file has an incorrect format."
+msgid "The selected file has an incorrect format."
 msgstr "Lo fichièr seleccionat a un format incorrècte."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Impossible d'enregistrar los documents al format $(FORMAT).\nVolètz enregistrar lo document al format $(OWNFORMAT)?"
+msgid "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"Impossible d'enregistrar los documents al format $(FORMAT).\n"
+"Volètz enregistrar lo document al format $(OWNFORMAT)?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
-msgstr "~Enregistrar"
+msgid "~Save"
+msgstr "Enregi~strar"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Update"
+msgid "~Update"
 msgstr "Actuali~zar"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
 #, fuzzy
-msgid  "Save ~As..."
+msgid "Save ~As..."
 msgstr "Enregistrar ~jos..."
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
 #, fuzzy
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "Enregistrar la còpia ~jos..."
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Close"
-msgstr "~Tampar"
+msgid "~Close"
+msgstr "Tampar"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 #, fuzzy
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "~Tampar & tornar a "
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  " AutoPilot"
+msgid " AutoPilot"
 msgstr " Assistent"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
 #, fuzzy
-msgid  "Configurations"
+msgid "Configurations"
 msgstr "Configuracions"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic libraries"
+msgid "%PRODUCTNAME Basic libraries"
 msgstr "Bibilotècas %PRODUCTNAME Basic"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
 #, fuzzy
-msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgid "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Sètz segur que volètz remplaçar l'estil \"$(ARG1)\" ?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
 #, fuzzy
-msgid  "Loading Document"
+msgid "Loading Document"
 msgstr "Cargament del document"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
 #, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
+msgid "Connection to: $(HOST). Waiting for response..."
 msgstr "Connexion a : $(HOST). En espèra de responsa..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
 #, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
+msgid "Opening $(TARGET) at $(HOST)"
 msgstr "Dobrir : $(TARGET) a $(HOST)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr "$(TARGET) de $(HOST) transferit. Cargat : $(BYTE)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
 #, fuzzy
-msgid  "Disconnected"
+msgid "Disconnected"
 msgstr "Desconnectat"
+
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit"
-msgstr "Editar"
+msgid "Edit"
+msgstr "Edicion"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Documents"
+msgid "%PRODUCTNAME Documents"
 msgstr "%PRODUCTNAME Documents"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Propert~ies..."
+msgid "Propert~ies..."
 msgstr "Propr~ietats..."
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
 #, fuzzy
-msgid  "HTML (FrameSet)"
+msgid "HTML (FrameSet)"
 msgstr "HTML (FrameSet)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Frame Document"
+msgid "%PRODUCTNAME Frame Document"
 msgstr "Document quadre %PRODUCTNAME"
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Lo modèl \"$(TEMPLATE)\" es pas estat trobat a son emplaçament d'origina. Un modèl del meteis nom es estat detectat sul camin \"$(FOUND)\". Volètz qu'aqueste modèl siá utilizat a l'avenidor en remplaçament del modèl introbable?"
+msgid "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr ""
+"Lo modèl \"$(TEMPLATE)\" es pas estat trobat a son emplaçament d'origina. Un "
+"modèl del meteis nom es estat detectat sul camin \"$(FOUND)\". Volètz "
+"qu'aqueste modèl siá utilizat a l'avenidor en remplaçament del modèl "
+"introbable?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr "Lo modèl \"$(TEMPLATE)\" es introbable. O caldrà recercar a la dobertura del document venenta ?"
+msgid "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+"Lo modèl \"$(TEMPLATE)\" es introbable. O caldrà recercar a la dobertura del "
+"document venenta ?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Automatically saved version"
+msgid "Automatically saved version"
 msgstr "Version enregistrada automaticament"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
 #, fuzzy
-msgid  "Text Document"
+msgid "Text Document"
 msgstr "Document de tèxte"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
 #, fuzzy
-msgid  "HTML Document"
+msgid "HTML Document"
 msgstr "Document HTML"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
 #, fuzzy
-msgid  "Master Document"
+msgid "Master Document"
 msgstr "Document mèstre"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
 #, fuzzy
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Classador"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
 #, fuzzy
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "Presentacion"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
 #, fuzzy
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "Dessenh"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "Message"
+msgid "Message"
 msgstr "Messatge"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
-msgid  "~Discard"
+msgid "~Discard"
 msgstr "~Ignorar"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
 #, fuzzy
-msgid  "Access to the current data medium not possible."
+msgid "Access to the current data medium not possible."
 msgstr "Impossible d'accedir al mèdia actual."
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
 #, fuzzy
-msgid  "Insert the next data carrier and click OK."
+msgid "Insert the next data carrier and click OK."
 msgstr "Inserissètz lo mèdia seguent e clicatz sus OK."
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Object"
+msgid "Object"
 msgstr "Objècte"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
 #, fuzzy
-msgid  "Run Macro"
+msgid "Run Macro"
 msgstr "Executar una màcro"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "This document contains macros. $(TEXT)"
+msgid "This document contains macros. $(TEXT)"
 msgstr "Aqueste document conten de màcros. $(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
 #, fuzzy
-msgid  "Run"
+msgid "Run"
 msgstr "Executar"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
 #, fuzzy
-msgid  "Do Not Run"
+msgid "Do Not Run"
 msgstr "Executar pas"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
-msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr "Los paramètres de seguretat autorizan normalament pas l'execucion de las màcros d'aqueste document. Los executar quitament?"
+msgid "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+"Los paramètres de seguretat autorizan normalament pas l'execucion de las "
+"màcros d'aqueste document. Los executar quitament?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to allow these macros to be run?"
+msgid "Do you want to allow these macros to be run?"
 msgstr "Volètz autorizar l'execucion d'aquestas màcros?"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Export as PDF"
+msgid "Export as PDF"
 msgstr "Exportar al format PDF"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Export..."
+msgid "Export..."
 msgstr "Exportar..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Export"
+msgid "Export"
 msgstr "Exportar"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
 #, fuzzy
-msgid  "Add this directory to the list of secure paths: "
+msgid "Add this directory to the list of secure paths: "
 msgstr "Apondre aqueste repertòri a la tièra dels camins securizats: "
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "File format:"
+msgid "File format:"
 msgstr "Format de fichièr:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
 #, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "Aqueste document conten:\n\n"
+msgid "This document contains:\n\n"
+msgstr ""
+"Aqueste document conten:\n"
+"\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
 #, fuzzy
-msgid  "Recorded changes"
+msgid "Recorded changes"
 msgstr "Modificacions enregistradas"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
+msgid "Notes"
 msgstr "Nòtas"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
 #, fuzzy
-msgid  "Document versions"
+msgid "Document versions"
 msgstr "Versions del document"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
 #, fuzzy
-msgid  "Fields"
+msgid "Fields"
 msgstr "Camps"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
 #, fuzzy
-msgid  "Linked data..."
+msgid "Linked data..."
 msgstr "Donadas associadas..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue saving the document?"
+msgid "Do you want to continue saving the document?"
 msgstr "Volètz perseguir l'enregistrament del document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue printing the document?"
+msgid "Do you want to continue printing the document?"
 msgstr "Volètz perseguir l'estampatge del document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue signing the document?"
+msgid "Do you want to continue signing the document?"
 msgstr "Volètz perseguir la signatura del document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
+msgid "Do you want to continue creating a PDF file?"
 msgstr "Volètz perseguir la creacion del fichièr PDF?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Per espotir pas lo document d'origina, enregistratz lo fichièr jos un nom novèl."
+msgid "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+"Per espotir pas lo document d'origina, enregistratz lo fichièr jos un nom "
+"novèl."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
 #, fuzzy
-msgid  "Some template files are protected and can not be deleted."
+msgid "Some template files are protected and can not be deleted."
 msgstr "Los modèls protegits pòdon pas èsser suprimits."
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Info %1"
+msgid "Info %1"
 msgstr "Info %1"
 
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 #, fuzzy
-msgid  " (shared)"
+msgid " (shared)"
 msgstr " (partejat)"
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
 #, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "La version del format del document es definida sus ODF 1.1 (OpenOffice.org 2.x) dins Espleches-Opcions-Cargament/Enregistrament-General. La signatura del document necessita ODF 1.2 (OpenOffice.org 3.x)."
+msgid "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+"La version del format del document es definida sus ODF 1.1 (OpenOffice.org "
+"2.x) dins Espleches-Opcions-Cargament/Enregistrament-General. La signatura "
+"del document necessita ODF 1.2 (OpenOffice.org 3.x)."
+
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Lo modèl '$(ARG1)'  d'aqueste document es modificat. Volètz actualizar l'estil d'aqueste document amb lo del modèl modificat?"
+msgid "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+"Lo modèl '$(ARG1)'  d'aqueste document es modificat. Volètz actualizar "
+"l'estil d'aqueste document amb lo del modèl modificat?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Update Styles"
+msgid "~Update Styles"
 msgstr "Act~ualizar los estils"
 
 #: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Keep Old Styles"
+msgid "~Keep Old Styles"
 msgstr "Conservar los estils ancians"
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Template Management"
+msgid "Template Management"
 msgstr "Gestion dels modèls"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Tampar"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~File..."
+msgid "~File..."
 msgstr "~Fichièr..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Address Book..."
+msgid "~Address Book..."
 msgstr "Quasernet d'~adreças..."
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "Modèls"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Documents"
+msgid "Documents"
+msgstr "Documents"
+
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "Templates"
+msgstr "Modèls"
+
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "Documents"
 msgstr "Documents"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
-msgid  "Commands"
+msgid "Commands"
 msgstr "Comandas"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "~New"
+msgid "~New"
 msgstr "~Novèl"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete"
-msgstr "Suprimir"
+msgid "~Delete"
+msgstr "~Suprimir"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~Editar"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
-msgid  "Import Template..."
+msgid "Import Template..."
 msgstr "Importar un modèl..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 #, fuzzy
-msgid  "Export Template..."
+msgid "Export Template..."
 msgstr "Exportar un modèl..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Print"
+msgid "~Print"
 msgstr "Estam~par"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
-msgid  "Printer Settings..."
+msgid "Printer Settings..."
 msgstr "Paramètres de l'estampadoira..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
 #, fuzzy
-msgid  "Update"
+msgid "Update"
 msgstr "Actualizar"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Set As Default Template"
+msgid "Set As Default Template"
 msgstr "Definir coma modèl per defaut"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Reset Default Template"
+msgid "Reset Default Template"
 msgstr "Restablir lo modèl per defaut"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "New"
+msgid "New"
 msgstr "Novèl"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "~Categorias"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "T~emplates"
+msgid "T~emplates"
 msgstr "Modèls"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
-msgid  "~More"
+msgid "~More"
 msgstr "Opcions"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Pre~view"
+msgid "Pre~view"
 msgstr "Pre~visualizacion"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "Descripcion"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Te~xt"
+msgid "Te~xt"
 msgstr "Tè~xt"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Frame"
+msgid "~Frame"
 msgstr "~Quadre"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Pages"
+msgid "~Pages"
 msgstr "~Paginas"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "N~umbering"
+msgid "N~umbering"
 msgstr "~Numerotacion"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Overwrite"
+msgid "~Overwrite"
 msgstr "~Espotir"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "From File..."
+msgid "From File..."
 msgstr "A partir d'un fichièr..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Load Styles"
+msgid "Load Styles"
 msgstr "Cargar los estils"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "~Títol"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Subject"
+msgid "Subject"
 msgstr "Subjècte"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Key words"
+msgid "~Key words"
 msgstr "Mots claus"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Description"
+msgid "~Description"
 msgstr "~Descripcion"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
 #, fuzzy
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Lo filtre $(FILTER) seleccionat es pas estat installat.\nO desiratz installar ara ?"
+msgid "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgstr ""
+"Lo filtre $(FILTER) seleccionat es pas estat installat.\n"
+"O desiratz installar ara ?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Lo filtre $(FILTER) qu'aètez seleccionat es pas inclús dins vòstra version.\nTrobaretz las entresenhas necessàrias a una comanda eventuala sus nòstra pagina d'acuèlh."
+msgid "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
+"Lo filtre $(FILTER) qu'aètez seleccionat es pas inclús dins vòstra version.\n"
+"Trobaretz las entresenhas necessàrias a una comanda eventuala sus nòstra "
+"pagina d'acuèlh."
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Reduce print data"
+msgid "Reduce print data"
 msgstr "Reduire las donadas d'estampatge"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Settings for"
+msgid "Settings for"
 msgstr "Paramètres per"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Printer"
+msgid "~Printer"
 msgstr "Estampadoira"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "Estampar dins un ~fichièr"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Reduce transparency"
+msgid "~Reduce transparency"
 msgstr "~Reduire la transparéncia"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Auto~matically"
+msgid "Auto~matically"
 msgstr "Auto~maticament"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~No transparency"
+msgid "~No transparency"
 msgstr "Cap de tra~nsparéncia"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Reduce ~gradients"
+msgid "Reduce ~gradients"
 msgstr "Reduire los de~gradats"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Gradient ~stripes"
+msgid "Gradient ~stripes"
 msgstr "Bendas de degradats"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Intermediate ~color"
+msgid "Intermediate ~color"
 msgstr "Color ~intermediària"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Reduce ~bitmaps"
+msgid "Reduce ~bitmaps"
 msgstr "Reduire los ~bitmaps"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~High print quality"
+msgid "~High print quality"
 msgstr "Qualitat d'estampatge optimala"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "N~ormal print quality"
+msgid "N~ormal print quality"
 msgstr "Qualitat d'estampatge estandarda"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Reso~lution"
+msgid "Reso~lution"
 msgstr "Reso~lucion"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "72 DPI"
+msgid "72 DPI"
 msgstr "72 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "96 DPI"
+msgid "96 DPI"
 msgstr "96 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "150 DPI (Fax)"
+msgid "150 DPI (Fax)"
 msgstr "150 DPI (Fax)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "200 DPI (default)"
+msgid "200 DPI (default)"
 msgstr "200 DPI (per defaut)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "300 DPI"
+msgid "300 DPI"
 msgstr "300 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "600 DPI"
+msgid "600 DPI"
 msgstr "600 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Include transparent ob~jects"
+msgid "Include transparent ob~jects"
 msgstr "Enclure los ob~jèctes transparents"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Con~vert colors to grayscale"
+msgid "Con~vert colors to grayscale"
 msgstr "Con~vertir las colors en nivèls de gris"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Printer warnings"
+msgid "Printer warnings"
 msgstr "Avertiments d'estampatge"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "P~aper size"
+msgid "P~aper size"
 msgstr "~Talha del papièr"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Pap~er orientation"
+msgid "Pap~er orientation"
 msgstr "~Orientacion del papièr"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Transparency"
+msgid "~Transparency"
 msgstr "~Transparéncia"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Warning"
+msgid "Warning"
 msgstr "Avertiment"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr "Lo document conten d'objèctes transparents.\nAquò pòt entrainar una durada d'estampatge mai\nlonga sus cèrtas estampadoiras. Ignorar\nlas entresenhas de transparéncia per l'estampatge?"
+msgid "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
+"Lo document conten d'objèctes transparents.\n"
+"Aquò pòt entrainar una durada d'estampatge mai\n"
+"longa sus cèrtas estampadoiras. Ignorar\n"
+"las entresenhas de transparéncia per l'estampatge?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "Òc"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~No"
+msgid "~No"
 msgstr "~Non"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "~Anullar"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Do not show warning again"
+msgid "~Do not show warning again"
 msgstr "~Afichar pas mai aqueste avertiment"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Style Catalog"
+msgid "Style Catalog"
 msgstr "Catalòg dels estils"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "Gerir..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete..."
+msgid "~Delete..."
 msgstr "Suprimir..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Modify..."
+msgid "~Modify..."
 msgstr "~Modificar..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
 msgstr "~Novèl..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
-msgid  "Style List"
+msgid "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
 #, fuzzy
-msgid  "Hierarchical"
+msgid "Hierarchical"
 msgstr "Ierarquia"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
-msgid  "Styles and Formatting"
+msgid "Styles and Formatting"
 msgstr "Estils e formatatge"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Fill Format Mode"
+msgid "Fill Format Mode"
 msgstr "Mòde Emplenar tot"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "New Style from Selection"
+msgid "New Style from Selection"
 msgstr "Estil novèl a partir de la seleccion"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Update Style"
+msgid "Update Style"
 msgstr "Actualizar l'estil"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "File encryption password"
+msgid "File encryption password"
 msgstr "Senhal criptat del fichièr"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Enter password to open"
+msgid "~Enter password to open"
 msgstr "Sasissètz lo senhal per dobrir"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Reenter password to open"
+msgid "~Reenter password to open"
 msgstr "Tornatz sasir lo senhal per dobrir"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "File sharing password"
+msgid "File sharing password"
 msgstr "Senhal per lo fichièr partejat"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Enter password to modify"
+msgid "Enter password to modify"
 msgstr "Sasissètz lo senhal per modificar"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Reenter password to modify"
+msgid "Reenter password to modify"
 msgstr "Tornar sasir lo senhal per modificar"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "File sharing options"
+msgid "File sharing options"
 msgstr "Opcions de partejament de fichièr"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Open file read-only"
+msgid "~Open file read-only"
 msgstr "D~obrir lo fichièr sonque de lectura"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Record ~changes"
+msgid "Record ~changes"
 msgstr "Cambiaments d'enregistrament"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.STRING.TEXT
 #, fuzzy
-msgid  "~Protect..."
+msgid "~Protect..."
 msgstr "~Protegir..."
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.STRING.TEXT
 #, fuzzy
-msgid  "~Unprotect..."
+msgid "~Unprotect..."
 msgstr "An~ullar la proteccion..."
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
 #, fuzzy
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr "Aquela accion vos farà sortir del mòde d'enregistrament de cambiament.\nLas informacions sus los cambiaments seràn perdudas.\n\nVolètz sortir d'aquel mòde d'enregistrament?\n\n"
+msgid "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+"Aquela accion vos farà sortir del mòde d'enregistrament de cambiament.\n"
+"Las informacions sus los cambiaments seràn perdudas.\n"
+"\n"
+"Volètz sortir d'aquel mòde d'enregistrament?\n"
+"\n"
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
 #, fuzzy
-msgid  "Protect Records"
+msgid "Protect Records"
 msgstr "Protegir los enregistraments"
 
 #: dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.STRING.TEXT
 #, fuzzy
-msgid  "Unprotect Records"
+msgid "Unprotect Records"
 msgstr "Anullar la proteccion dels enregistraments"
 
 #: dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Incorrect password"
+msgid "Incorrect password"
 msgstr "Senhal incorrècte "
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "New versions"
+msgid "New versions"
 msgstr "Versions novèlas"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Save ~New Version"
+msgid "Save ~New Version"
 msgstr "~Enregistrar una version novèla"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Always save a version on closing"
+msgid "~Always save a version on closing"
 msgstr "Enregistrar ~totjorn una version al moment de la tampadura"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Existing versions"
+msgid "Existing versions"
 msgstr "Versions existentas"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Date and time"
+msgid "Date and time"
 msgstr "Data e ora"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Saved by"
+msgid "Saved by"
 msgstr "Enregistrada per"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Comments"
+msgid "Comments"
 msgstr "Comentaris"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Tampar"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Open"
+msgid "Open"
 msgstr "Dobrir"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Show..."
+msgid "~Show..."
 msgstr "~Afichar..."
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~Suprimir"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Compare"
+msgid "Compare"
 msgstr "Comparar"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Versions of"
+msgid "Versions of"
 msgstr "Versions de"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Date and time : "
+msgid "Date and time : "
 msgstr "Data e ora : "
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Saved by "
+msgid "Saved by "
 msgstr "Enregistrat per "
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "Tampar"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Insert Version Comment"
+msgid "Insert Version Comment"
 msgstr "Inserir un comentari de version (facultatiu)"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Version comment"
+msgid "Version comment"
 msgstr "Comentari de version"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Name"
+msgid "~Name"
 msgstr "~Nom"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~AutoUpdate"
+msgid "~AutoUpdate"
 msgstr "Actualizacion ~automatica"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ne~xt Style"
+msgid "Ne~xt Style"
 msgstr "Estil de seguida"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Linked with"
+msgid "Linked with"
 msgstr "Ligat a"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Category"
+msgid "~Category"
 msgstr "~Categoria"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Contains"
+msgid "Contains"
 msgstr "Conten"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Current version"
+msgid "Current version"
 msgstr "Version actuala"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
 #, fuzzy
-msgid  "Export"
+msgid "Export"
 msgstr "Exportar"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "Inserir"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "~Inserir"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
 #, fuzzy
-msgid  "<All formats>"
+msgid "<All formats>"
 msgstr "<Totes los formats>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
 #, fuzzy
-msgid  "~Automatic file name extension"
+msgid "~Automatic file name extension"
 msgstr "~Extension automatica del nom de fichièr"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
 #, fuzzy
-msgid  "~Selection"
+msgid "~Selection"
 msgstr "~Seleccion"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
 #, fuzzy
-msgid  "~Link"
+msgid "~Link"
 msgstr "~Ligam"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
 #, fuzzy
-msgid  "Pr~eview"
+msgid "Pr~eview"
 msgstr "Ap~ercebut"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "~Read-only"
-msgstr "Sonque de lectu~ra"
+msgid "~Read-only"
+msgstr "~En lectura sola"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Save with ~password"
+msgid "Save with ~password"
 msgstr "Enregistrar amb un senhal"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Edit ~filter settings"
+msgid "Edit ~filter settings"
 msgstr "Editar los paramètres de filtre"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
 #, fuzzy
-msgid  "~Play"
+msgid "~Play"
 msgstr "Legir"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
 #, fuzzy
-msgid  "Sto~p"
+msgid "Sto~p"
 msgstr "Arrestar"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Dobrir"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "Enregi~strar"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Style:"
+msgid "Style:"
 msgstr "Estil:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "~Templates:"
+msgid "~Templates:"
 msgstr "Modèls:"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
 #, fuzzy
-msgid  "~Version:"
+msgid "~Version:"
 msgstr "~Version:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
-msgid  "Find on this Page"
+msgid "Find on this Page"
 msgstr "Recercar dins aquesta pagina"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Search for"
+msgid "~Search for"
 msgstr "~Recercar"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Whole words only"
+msgid "~Whole words only"
 msgstr "~Unicament los mots entièrs"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Match case"
+msgid "~Match case"
 msgstr "Respectar la ~cassa"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Wrap ~around"
+msgid "Wrap ~around"
 msgstr "Recerc~a circulara"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Backwards"
+msgid "~Backwards"
 msgstr "~Cap al naut"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Find"
-msgstr "R~ecercar"
+msgid "~Find"
+msgstr "~Recercar"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "Tampar"
+
+#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
+#, fuzzy
+msgid "Wrap ~around"
+msgstr "Recerc~a circulara"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Enter Password"
+msgid "Enter Password"
 msgstr "Picatz lo senhal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~User"
+msgid "~User"
 msgstr "~Utilizaire"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Password"
+msgid "~Password"
 msgstr "Senhal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Confirm"
+msgid "~Confirm"
 msgstr "~Confirmar"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Password"
+msgid "Password"
 msgstr "Senhal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "P~assword"
+msgid "P~assword"
 msgstr "Senhal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Confir~m"
+msgid "Confir~m"
 msgstr "~Confirmar"
+
+#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
+#, fuzzy
+msgid "Password"
+msgstr "Senhal"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME document"
+msgid "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME Document"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "~Títol"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Subject"
+msgid "~Subject"
 msgstr "~Subjècte"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Keywords"
+msgid "~Keywords"
 msgstr "~Mots claus"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Comments"
+msgid "~Comments"
 msgstr "~Comentaris"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Type:"
+msgid "Type:"
 msgstr "Tipe:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Read-only"
+msgid "~Read-only"
 msgstr "~En lectura sola"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Location:"
+msgid "Location:"
 msgstr "Emplaçament:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Size:"
+msgid "Size:"
 msgstr "Talha:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Created:"
+msgid "Created:"
 msgstr "Creat lo:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "Modificat lo:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Digitally signed:"
+msgid "Digitally signed:"
 msgstr "Signat numericament:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Digital Signature..."
+msgid "Digital Signature..."
 msgstr "Signatura numerica..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
 #, fuzzy
-msgid  "Multiply signed document"
+msgid "Multiply signed document"
 msgstr "Document signat mantun còp"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Last printed:"
+msgid "Last printed:"
 msgstr "Estampat lo:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Total editing time:"
+msgid "Total editing time:"
 msgstr "Durada d'edicion:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Revision number:"
+msgid "Revision number:"
 msgstr "Numèro de revision:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Reset"
+msgid "Reset"
 msgstr "Tornar inicializar"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Apply user data"
+msgid "~Apply user data"
 msgstr "~Utilizar las donadas d'identitat"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Template:"
+msgid "Template:"
 msgstr "Modèl:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
 #, fuzzy
-msgid  "unknown"
+msgid "unknown"
 msgstr "desconegut"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
-msgid  "File Name"
+msgid "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Info fields..."
+msgid "~Info fields..."
 msgstr "~Camps d'informacion..."
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Do not refresh automatically"
+msgid "Do not refresh automatically"
 msgstr "Actualizar pas automaticament"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Refresh this document"
+msgid "Refresh this document"
 msgstr "Actualizar aqueste document"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "every"
+msgid "every"
 msgstr "cada"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "seconds"
+msgid "seconds"
 msgstr "segondas"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Redirect from this document"
+msgid "Redirect from this document"
 msgstr "Transferir dempuèi aqueste document"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "after"
+msgid "after"
 msgstr "aprèp"
+
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "seconds"
+msgstr "segondas"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "to URL"
+msgid "to URL"
 msgstr "a l'URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "to frame"
+msgid "to frame"
 msgstr "al quadre"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
 #, fuzzy
-msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "Se seleccionatz l'opcion \"%PLACEHOLDER%\", vos cal especificar una URL."
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Properties"
+msgid "~Properties"
 msgstr "~Proprietats"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "Nom"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "Tipe"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Value"
+msgid "Value"
 msgstr "Valor"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Add"
+msgid "~Add"
 msgstr "~Apondre"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
 #, fuzzy
-msgid  "Property Name"
+msgid "Property Name"
 msgstr "Nom de la proprietat"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Checked by"
+msgid "Checked by"
 msgstr "Verificat per"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Client"
+msgid "Client"
 msgstr "Client"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Date completed"
+msgid "Date completed"
 msgstr "Data completada"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Department"
+msgid "Department"
 msgstr "Departament"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Destinations"
+msgid "Destinations"
 msgstr "Destinacion"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Disposition"
+msgid "Disposition"
 msgstr "Disposicion"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Division"
+msgid "Division"
 msgstr "Division"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Document number"
+msgid "Document number"
 msgstr "Nombre del document"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Editor"
+msgid "Editor"
 msgstr "Editor"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
 #, fuzzy
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr "Mail (corrièr electronic)"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Forward to"
+msgid "Forward to"
 msgstr "Avançar cap a"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Group"
+msgid "Group"
 msgstr "Grop"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Info"
+msgid "Info"
 msgstr "Informacion"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Language"
+msgid "Language"
 msgstr "Lengatge"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Mailstop"
+msgid "Mailstop"
 msgstr "Bóstia postala (BP)"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Matter"
+msgid "Matter"
 msgstr "Affar"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Office"
+msgid "Office"
 msgstr "Burèu"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Owner"
+msgid "Owner"
 msgstr "Proprietari"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Project"
+msgid "Project"
 msgstr "Projècte"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Publisher"
+msgid "Publisher"
 msgstr "Editor"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Purpose"
+msgid "Purpose"
 msgstr "Objèctiu"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Received from"
+msgid "Received from"
 msgstr "Recebut de"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Recorded by"
+msgid "Recorded by"
 msgstr "Salvat per"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Recorded date"
+msgid "Recorded date"
 msgstr "Data del salvament"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Reference"
+msgid "Reference"
 msgstr "Referéncia"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Source"
+msgid "Source"
 msgstr "Font"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Status"
+msgid "Status"
 msgstr "Estatuts"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Telephone number"
+msgid "Telephone number"
 msgstr "Numèro de telefòn"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Typist"
+msgid "Typist"
 msgstr "Dactilò"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
 #, fuzzy
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Tèxte"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 #, fuzzy
-msgid  "DateTime"
+msgid "DateTime"
 msgstr "Data Temps"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "Data"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Duration"
+msgid "Duration"
 msgstr "Durada"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Number"
+msgid "Number"
 msgstr "Nombre"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Yes or no"
+msgid "Yes or no"
 msgstr "Òc o non"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 #, fuzzy
-msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr "Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Yes"
+msgid "Yes"
 msgstr "Òc"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "No"
+msgid "No"
 msgstr "No"
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
-msgid  "Remove Property"
+msgid "Remove Property"
 msgstr "Suprimir la proprietat"
+
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Properties of "
+msgid "Properties of "
 msgstr "Proprietats de "
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
 #, fuzzy
-msgid  "General"
+msgid "General"
 msgstr "General"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "Descripcion"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Custom Properties"
+msgid "Custom Properties"
 msgstr "Proprietats personalizadas"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Internet"
+msgid "Internet"
 msgstr "Internet"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Security"
+msgid "Security"
 msgstr "Securitat"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Edit Duration"
+msgid "Edit Duration"
 msgstr "Ajustar la durada"
+
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Duration"
+msgstr "Durada"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Negative"
+msgid "~Negative"
 msgstr "~Negatiu"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Years"
+msgid "~Years"
 msgstr "Annadas"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Months"
+msgid "~Months"
 msgstr "~Meses"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Days"
+msgid "~Days"
 msgstr "Jorns"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "H~ours"
+msgid "H~ours"
 msgstr "Oras"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Min~utes"
+msgid "Min~utes"
 msgstr "Min~utas"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Seconds"
+msgid "~Seconds"
 msgstr "~Segondas"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Millise~conds"
+msgid "Millise~conds"
 msgstr "Milisegondas"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Edit Field Names"
+msgid "Edit Field Names"
 msgstr "Editar los noms de camp"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Names"
+msgid "Names"
 msgstr "Noms"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Create Style"
+msgid "Create Style"
 msgstr "Crear un estil"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Style name"
+msgid "Style name"
 msgstr "Nom de l'estil"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Style already exists. Overwrite?"
+msgid "Style already exists. Overwrite?"
 msgstr "Aqueste estil existís ja. O volètz remplaçar?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
-msgid  "Record Macro"
+msgid "Record Macro"
 msgstr "Enregistrar una màcro"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr "Sètz segur que volètz anullar l'enregistrament ? Totas las entresenhas enregistradas fins a ara seràn perdudas."
+msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+"Sètz segur que volètz anullar l'enregistrament ? Totas las entresenhas "
+"enregistradas fins a ara seràn perdudas."
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
 #, fuzzy
-msgid  "Cancel Recording"
+msgid "Cancel Recording"
 msgstr "Anullar l'enregistrament"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr "%PRODUCTNAME a pas pogut trobar de configuracion de messatjariá valida. Enregistratz aqueste document dins un repertòri local e mandatz-lo en pèça junta dempuèi lo client de messatjariá."
+msgid "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME a pas pogut trobar de configuracion de messatjariá valida. "
+"Enregistratz aqueste document dins un repertòri local e mandatz-lo en pèça "
+"junta dempuèi lo client de messatjariá."
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
 #, fuzzy
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "~Restablir"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
 #, fuzzy
-msgid  "Apply"
+msgid "Apply"
 msgstr "Aplicar"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
 #, fuzzy
-msgid  "Organizer"
+msgid "Organizer"
 msgstr "Gerir"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This name is already in use."
+msgid "This name is already in use."
 msgstr "Aqueste nom ja es estat atribuit."
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This Style does not exist."
+msgid "This Style does not exist."
 msgstr "Estil inexistent."
+
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to delete Style $1?"
+msgid "Do you really want to delete Style $1?"
 msgstr "Sètz segur que volètz suprimir l'estil $1 ?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
 #, fuzzy
-msgid  "You are deleting an applied Style!\n"
+msgid "You are deleting an applied Style!\n"
 msgstr "Suprimissètz un estil utilizat!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "New..."
+msgid "New..."
 msgstr "Novèl..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Modify..."
+msgid "Modify..."
 msgstr "Modificar..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete..."
+msgid "Delete..."
 msgstr "Suprimir..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
 #, fuzzy
-msgid  "Navigator"
+msgid "Navigator"
 msgstr "Navigador"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 #, fuzzy
-msgid  "Task Pane"
+msgid "Task Pane"
 msgstr "Panèl de tasca"
+
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid "Sidebar"
+msgstr ""
 
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Faulty password confirmation"
+msgid "Faulty password confirmation"
 msgstr "Confirmacion del senhal erronèa"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
 #, fuzzy
-msgid  "Send"
+msgid "Send"
 msgstr "Mandar"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 #, fuzzy
-msgid  "Dock"
+msgid "Dock"
 msgstr "Amarrar"
 
 #: dialog/taskpane.src#STR_SFX_UNDOCK.STRING.TEXT
 #, fuzzy
-msgid  "Undock"
+msgid "Undock"
 msgstr "Desamarrar"
 
 #: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "View"
-msgstr "Visualizacion"
+msgid "View"
+msgstr "Afichatge"
 
 #: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
 #, fuzzy
-msgid  "Tasks"
+msgid "Tasks"
 msgstr "Tascas"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "Es possible qu'una partida del formatatge e del contengut d'aqueste document pòsca pas èsser enregistrada dins lo format de fichièr %FORMATNAME. Volètz çaquelà enregistrar lo document dins aqueste format ?\n\nUtilizatz lo darrièr format de fichièr ODF per vos assegurar que totes los formatatges e lo contengut son enregistrats coma cal."
+msgid "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+"Es possible qu'una partida del formatatge e del contengut d'aqueste document "
+"pòsca pas èsser enregistrada dins lo format de fichièr %FORMATNAME. Volètz "
+"çaquelà enregistrar lo document dins aqueste format ?\n"
+"\n"
+"Utilizatz lo darrièr format de fichièr ODF per vos assegurar que totes los "
+"formatatges e lo contengut son enregistrats coma cal."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Keep Current Format"
+msgid "~Keep Current Format"
 msgstr "~Conservar lo format actual"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Save in ODF Format"
+msgid "~Save in ODF Format"
 msgstr "~Enregistrar al format ODF"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "~More Information..."
+msgid "~More Information..."
 msgstr "Entresenhas co~mplementàrias..."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Ask when not saving in ODF format"
+msgid "~Ask when not saving in ODF format"
 msgstr "~Demandar al moment d'un enregistrament autre que dins lo format ODF"
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
 #, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Impossible de detectar l'estampadoira per defaut.\nSeleccionatz una estampadoira e tornatz començar."
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"Impossible de detectar l'estampadoira per defaut.\n"
+"Seleccionatz una estampadoira e tornatz començar."
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
 #, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Impossible d'aviar l'estampadoira !\nVerificatz-ne la configuracion."
+msgid "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+"Impossible d'aviar l'estampadoira !\n"
+"Verificatz-ne la configuracion."
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "Aqueste document es estat formatat per l'estampadoira $1. L'estampadoira es pas disponibla. \nUtilizar l'estampadoira per defaut $2 ?"
+msgid "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+"Aqueste document es estat formatat per l'estampadoira $1. L'estampadoira es "
+"pas disponibla. \n"
+"Utilizar l'estampadoira per defaut $2 ?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options..."
+msgid "Options..."
 msgstr "Opcions..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Printer Options"
+msgid "Printer Options"
 msgstr "Opcions d'estampatge"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
 #, fuzzy
-msgid  "Printer busy"
+msgid "Printer busy"
 msgstr "Estampadoira ocupada"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
 #, fuzzy
-msgid  "Error while printing"
+msgid "Error while printing"
 msgstr "Error al moment de l'estampatge"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
 #, fuzzy
-msgid  "Printing"
+msgid "Printing"
 msgstr "Estampatge"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Page "
+msgid "Page "
 msgstr "Pagina "
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error saving template "
+msgid "Error saving template "
 msgstr "Error al moment de l'enregistrament del modèl "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
-msgid  " (read-only)"
+msgid " (read-only)"
 msgstr " (lectura sola)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
 #, fuzzy
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "La talha e l'orientacion de la pagina son estats modificats.\nVolètz enregistrar los paramètres novèls dins lo\ndocument actiu ?"
+msgid "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+"La talha e l'orientacion de la pagina son estats modificats.\n"
+"Volètz enregistrar los paramètres novèls dins lo\n"
+"document actiu ?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
 #, fuzzy
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "Lo format de la pagina es estat modificat.\nVolètz enregistrar los paramètres modificats\ndins lo document ?"
+msgid "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+"Lo format de la pagina es estat modificat.\n"
+"Volètz enregistrar los paramètres modificats\n"
+"dins lo document ?"
+
+#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
+#, fuzzy
+msgid "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+"La talha e l'orientacion de la pagina son estats modificats.\n"
+"Volètz enregistrar los paramètres novèls dins lo\n"
+"document actiu ?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
 #, fuzzy
-msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Títol :</b><dd>$(TITEL)<dt><b>Objècte :</b><dd>$(THEME)<dt><b>Mots claus :</b><dd>$(KEYWORDS)<dt><b>Descripcion :</b><dd>$(TEXT)</dl></font></body></html>"
+msgid "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Títol "
+":</b><dd>$(TITEL)<dt><b>Objècte :</b><dd>$(THEME)<dt><b>Mots claus "
+":</b><dd>$(KEYWORDS)<dt><b>Descripcion "
+":</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
 #, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Proprietats de document introbablas.</B></FONT></P></BODY></HTML>"
+msgid "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Proprietats "
+"de document introbablas.</B></FONT></P></BODY></HTML>"
+
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
 #, fuzzy
-msgid  "Print Monitor"
+msgid "Print Monitor"
 msgstr "Monitor d'estampatge"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "is being printed on"
+msgid "is being printed on"
 msgstr "en cors d'estampatge sus"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
 #, fuzzy
-msgid  "is being prepared for printing"
+msgid "is being prepared for printing"
 msgstr "es en cors de preparacion per l'estampatge"
+
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "Aqueste document pòt pas èsser editat (dreches d'accès insufisents). Volètz perseguir vòstre trabalh amb una còpia del document ?"
+msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+"Aqueste document pòt pas èsser editat (dreches d'accès insufisents). Volètz "
+"perseguir vòstre trabalh amb una còpia del document ?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  " (repaired document)"
+msgid " (repaired document)"
 msgstr " (document reparat)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "%PRODUCTNAME a pas detectat cap de navigador Web sul sistèma. Verificatz las preferéncuas del burèu o installatz un navigador Web (per ex. Mozilla) a l'emplaçament prepausat per defaut pendent l'installacion."
+msgid "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME a pas detectat cap de navigador Web sul sistèma. Verificatz las "
+"preferéncias del burèu o installatz un navigador Web (per ex. Mozilla) a "
+"l'emplaçament prepausat per defaut pendent l'installacion."
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid "Customization"
+msgstr ""
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid "Restore Default"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid "Panel: "
+msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Modify Link"
+msgid "Modify Link"
 msgstr "Modificar lo ligam"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Application:"
+msgid "~Application:"
 msgstr "~Aplicacion :"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~File:"
+msgid "~File:"
 msgstr "~Fichièr :"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Category:"
+msgid "~Category:"
 msgstr "~Categoria :"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Modify link"
+msgid "Modify link"
 msgstr "Modificar lo ligam"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
 #, fuzzy
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "Sens nom"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Tampar"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "Automatic"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
 #, fuzzy
-msgid  "Standard"
+msgid "Standard"
 msgstr "Estandard"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
 #, fuzzy
-msgid  "Bytes"
+msgid "Bytes"
 msgstr "Octets"
 
 #: appl/app.src#STR_KB.STRING.TEXT
 #, fuzzy
-msgid  "KB"
+msgid "KB"
 msgstr "Ko"
 
 #: appl/app.src#STR_MB.STRING.TEXT
 #, fuzzy
-msgid  "MB"
+msgid "MB"
 msgstr "Mo"
 
 #: appl/app.src#STR_GB.STRING.TEXT
 #, fuzzy
-msgid  "GB"
+msgid "GB"
 msgstr "Go"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Cancel all changes?"
+msgid "Cancel all changes?"
 msgstr "Anullar totas las modificacions?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document already open."
+msgid "Document already open."
 msgstr "Document ja dobèrt."
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "%PRODUCTNAME a pas detectat cap de navigador Web sul sistèma. Verificatz las preferéncias del burèu o installatz un navigador Web (per ex. Mozilla) a l'emplaçament prepausat per defaut pendent l'installacion."
+msgid "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME a pas detectat cap de navigador Web sul sistèma. Verificatz las "
+"preferéncias del burèu o installatz un navigador Web (per ex. Mozilla) a "
+"l'emplaçament prepausat per defaut pendent l'installacion."
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
 #, fuzzy
-msgid  "Internal"
+msgid "Internal"
 msgstr "Intèrne"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
 #, fuzzy
-msgid  "Application"
+msgid "Application"
 msgstr "Aplicacion"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "View"
+msgid "View"
 msgstr "Afichatge"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "Documents"
+msgid "Documents"
 msgstr "Documents"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit"
+msgid "Edit"
 msgstr "Edicion"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
 #, fuzzy
-msgid  "BASIC"
+msgid "BASIC"
 msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "Opcions"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
 #, fuzzy
-msgid  "Math"
+msgid "Math"
 msgstr "Matematicas"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
 #, fuzzy
-msgid  "Navigate"
+msgid "Navigate"
 msgstr "Navigar"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "Inserir"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Format"
+msgid "Format"
 msgstr "Format"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "Modèls"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Tèxte"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
 #, fuzzy
-msgid  "Frame"
+msgid "Frame"
 msgstr "Quadre"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
 #, fuzzy
-msgid  "Graphic"
+msgid "Graphic"
 msgstr "Imatge"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "Tablèu"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
 #, fuzzy
-msgid  "Numbering"
+msgid "Numbering"
 msgstr "Numerotacion"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Data"
+msgid "Data"
 msgstr "Donadas"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
 #, fuzzy
-msgid  "Special Functions"
+msgid "Special Functions"
 msgstr "Foncions especialas"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 #, fuzzy
-msgid  "Image"
+msgid "Image"
 msgstr "Imatge"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
 #, fuzzy
-msgid  "Chart"
+msgid "Chart"
 msgstr "Chart (Diagrama)"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
 #, fuzzy
-msgid  "Explorer"
+msgid "Explorer"
 msgstr "Explorador"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 #, fuzzy
-msgid  "Connector"
+msgid "Connector"
 msgstr "Connectador"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
 #, fuzzy
-msgid  "Modify"
+msgid "Modify"
 msgstr "Modificar"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
 #, fuzzy
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "Dessenh"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
 #, fuzzy
-msgid  "Controls"
+msgid "Controls"
 msgstr "Contraròtles"
+
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to save the changes to %1?"
+msgid "Do you want to save the changes to %1?"
 msgstr "Volètz enregistrar las modificacions aportadas a %1?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
 #, fuzzy
-msgid  "E~xit"
+msgid "E~xit"
 msgstr "Quitar"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
 #, fuzzy
-msgid  "Help"
+msgid "Help"
 msgstr "Ajuda"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
 #, fuzzy
-msgid  "No automatic start at 'XX'"
+msgid "No automatic start at 'XX'"
 msgstr "Aviar pas automaticament per la foncion 'XX'"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
 #, fuzzy
-msgid  "Help Bar"
+msgid "Help Bar"
 msgstr "Barra de l'ajuda"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
 #, fuzzy
-msgid  "The help file for this topic is not installed."
+msgid "The help file for this topic is not installed."
 msgstr "Avètz pas installat l'ajuda correspondent a aqueste subjècte."
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Function Bar"
+msgid "Function Bar"
 msgstr "Barra de foncions"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "I a agut una error dins la configuracion especiala.\nContactatz vòstre administrator."
+msgid "An error has occurred in the special configuration.\nPlease contact your administrator."
+msgstr ""
+"I a agut una error dins la configuracion especiala.\n"
+"Contactatz vòstre administrator."
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
 #, fuzzy
-msgid  "Exit Quickstarter"
+msgid "Exit Quickstarter"
 msgstr "Quitar l'aviada rapida"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
 msgstr "Aviada rapida de %PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 #, fuzzy
-msgid  "Open Document..."
+msgid "Open Document..."
 msgstr "Dobrir un document..."
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "From Template..."
+msgid "From Template..."
 msgstr "A partir d'un modèl..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
 #, fuzzy
-msgid  "Load %PRODUCTNAME During System Start-Up"
+msgid "Load %PRODUCTNAME During System Start-Up"
 msgstr "Cargar %PRODUCTNAME a l'aviada del sistèma"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 #, fuzzy
-msgid  "Disable Quickstarter"
+msgid "Disable Quickstarter"
 msgstr "Desactivar l'aviada rapida de l'airal de notificacion"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
 #, fuzzy
-msgid  "File"
+msgid "File"
 msgstr "Fichièr"
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
 #, fuzzy
-msgid  "Startcenter"
+msgid "Startcenter"
 msgstr "Centre d'aviada"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 #, fuzzy
-msgid  "Recent Documents"
+msgid "Recent Documents"
 msgstr "Documents recents"
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
 #, fuzzy
-msgid  "Update all links?"
+msgid "Update all links?"
 msgstr "Volètz actualizar totes los ligams?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "DDE link to % for % area % are not available."
+msgid "DDE link to % for % area % are not available."
 msgstr "Los ligams DDE cap a % per l'airal % % son pas disponibles."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Aqueste iperligam dobrís \"%s\". Volètz contunhar?"
+
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Security Warning"
+msgid "Security Warning"
 msgstr "Avertiment de seguretat"
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr "Cal que lo document siá enregistrat al format OpenDocument per èsser signat numericament."
+msgid "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
+"Cal que lo document siá enregistrat al format OpenDocument per èsser signat "
+"numericament."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 #, fuzzy
-msgid  " (Signed)"
+msgid " (Signed)"
 msgstr " (Signat)"
+
+#: appl/app.src#STR_STANDARD.STRING.TEXT
+#, fuzzy
+msgid "Standard"
+msgstr "Estandard"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
 #, fuzzy
-msgid  "Document"
+msgid "Document"
 msgstr "Document"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 #, fuzzy
-msgid  "- None -"
+msgid "- None -"
 msgstr "- Pas cap -"
+
+#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
+#, fuzzy
+msgid "Graphic"
+msgstr "Imatge"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
 #, fuzzy
-msgid  "All files (*.*)"
+msgid "All files (*.*)"
 msgstr "Totes los fichièrs (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 #, fuzzy
-msgid  "Link graphics"
+msgid "Link graphics"
 msgstr "Ligam grafics"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
 #, fuzzy
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr "Lo metòde de compausant adeqüat %1\nes introbable.\n\nVerificatz l'ortografia del nom del metòde."
+msgid "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+"Lo metòde de compausant adeqüat %1\n"
+"es introbable.\n"
+"\n"
+"Verificatz l'ortografia del nom del metòde."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 #, fuzzy
-msgid  "Graphics file cannot be opened"
+msgid "Graphics file cannot be opened"
 msgstr "Pas possible de dobrir lo fichièr imatge"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
 #, fuzzy
-msgid  "Graphics file cannot be read"
+msgid "Graphics file cannot be read"
 msgstr "Pas possible de legir lo fichièr imatge"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
 #, fuzzy
-msgid  "Unknown graphics format"
+msgid "Unknown graphics format"
 msgstr "Format d'imatge inconegut"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
 #, fuzzy
-msgid  "This version of the graphics file is not supported"
+msgid "This version of the graphics file is not supported"
 msgstr "Aquela version de fichièr d'imatges es pas suportat"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
 #, fuzzy
-msgid  "Graphics filter not found"
+msgid "Graphics filter not found"
 msgstr "Lo filtre d'imatges es pas trapat"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
 #, fuzzy
-msgid  "Not enough memory to insert graphic"
+msgid "Not enough memory to insert graphic"
 msgstr "Pas pro de memòria per inserir d'imatges"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Contents"
+msgid "Contents"
 msgstr "Contengut"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Index"
+msgid "Index"
 msgstr "Indèx"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Find"
+msgid "Find"
 msgstr "Recercar"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Bookmarks"
+msgid "Bookmarks"
 msgstr "Marcapaginas"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Search term"
+msgid "~Search term"
 msgstr "~Tèrme recercat"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Display"
+msgid "~Display"
 msgstr "~Afichar"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "S~earch term"
+msgid "S~earch term"
 msgstr "T~èrme recercat"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Find"
+msgid "~Find"
 msgstr "~Recercar"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Complete words only"
+msgid "~Complete words only"
 msgstr "~Unicament los mots entièrs"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Find in ~headings only"
+msgid "Find in ~headings only"
 msgstr "~Recercar unicament dins los títols"
+
+#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Display"
+msgstr "~Afichar"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Bookmarks"
+msgid "~Bookmarks"
 msgstr "~Marcapaginas"
+
+#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Display"
+msgstr "~Afichar"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Help"
+msgid "%PRODUCTNAME Help"
 msgstr "Ajuda de %PRODUCTNAME"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
 #, fuzzy
-msgid  "Show Navigation Pane"
+msgid "Show Navigation Pane"
 msgstr "Afichar lo volet de navigacion"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
 #, fuzzy
-msgid  "Hide Navigation Pane"
+msgid "Hide Navigation Pane"
 msgstr "Amagar lo volet de navigacion"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
 #, fuzzy
-msgid  "First Page"
+msgid "First Page"
 msgstr "Primièra pagina"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
 #, fuzzy
-msgid  "Previous Page"
+msgid "Previous Page"
 msgstr "Pagina precedenta"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
 #, fuzzy
-msgid  "Next Page"
+msgid "Next Page"
 msgstr "Pagina seguenta"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
 #, fuzzy
-msgid  "Print..."
+msgid "Print..."
 msgstr "Estampar..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
 #, fuzzy
-msgid  "Add to Bookmarks..."
+msgid "Add to Bookmarks..."
 msgstr "Apondre als marcapaginas..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 #, fuzzy
-msgid  "Find on this Page..."
+msgid "Find on this Page..."
 msgstr "Recercar dins aquesta pagina..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
 #, fuzzy
-msgid  "HTML Source"
+msgid "HTML Source"
 msgstr "Tèxte font HTML"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "The Help is being started..."
+msgid "The Help is being started..."
 msgstr "Aviada de l'ajuda..."
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
 #, fuzzy
-msgid  "Select Text"
+msgid "Select Text"
 msgstr "Seleccionar lo tèxte"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
 #, fuzzy
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "~Copiar"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Add to Bookmarks"
+msgid "Add to Bookmarks"
 msgstr "Apondre als marcapaginas"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Bookmark:"
+msgid "Bookmark:"
 msgstr "Marcapaginas :"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
 #, fuzzy
-msgid  "Rename Bookmark"
+msgid "Rename Bookmark"
 msgstr "Tornar nomenar lo marcapaginas"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 #, fuzzy
-msgid  "Display"
+msgid "Display"
 msgstr "Afichar"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
 #, fuzzy
-msgid  "Rename..."
+msgid "Rename..."
 msgstr "Tornar nomenar..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "Suprimir"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "No topics found."
+msgid "No topics found."
 msgstr "Pas cap de resultat de recèrca."
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "The text you entered was not found."
+msgid "The text you entered was not found."
 msgstr "Lo tèxte picat es introbable."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "~Afichar l'ajuda de %PRODUCTNAME %MODULENAME a l'aviada"

@@ -1,1333 +1,1577 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: config/fragments/filters/calc8_template_ui.xcu#CALC8_TEMPLATE.UINAME
-msgid  "ODF Spreadsheet Template"
+msgid "ODF Spreadsheet Template"
 msgstr "Шаблон електронної таблиці ODF"
 
 #: config/fragments/filters/calc8_ui.xcu#CALC8.UINAME
-msgid  "ODF Spreadsheet"
+msgid "ODF Spreadsheet"
 msgstr "Електронна таблиця ODF"
 
+#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
+msgid "Web Page Query (%productname% Calc)"
+msgstr ""
+
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
-msgid  "Microsoft Excel 2007 Binary"
+msgid "Microsoft Excel 2007 Binary"
 msgstr "Двійковий файл Microsoft Excel 2007"
 
 #: config/fragments/filters/calc_MS_Excel_2007_XML_Template_ui.xcu#CALC_MS_EXCEL_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Excel 2007 XML Template"
+msgid "Microsoft Excel 2007 XML Template"
 msgstr "Шаблон Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_MS_Excel_2007_XML_ui.xcu#CALC_MS_EXCEL_2007_XML.UINAME
-msgid  "Microsoft Excel 2007 XML"
+msgid "Microsoft Excel 2007 XML"
 msgstr "Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
+msgid "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
 msgstr ""
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
-msgid  "ODF Chart"
+msgid "ODF Chart"
 msgstr "Діаграма ODF"
 
 #: config/fragments/filters/draw8_template_ui.xcu#DRAW8_TEMPLATE.UINAME
-msgid  "ODF Drawing Template"
+msgid "ODF Drawing Template"
 msgstr "Шаблон малюнка ODF"
 
 #: config/fragments/filters/draw8_ui.xcu#DRAW8.UINAME
-msgid  "ODF Drawing"
+msgid "ODF Drawing"
 msgstr "Малюнок ODF"
 
 #: config/fragments/filters/draw_html_Export_ui.xcu#DRAW_HTML_EXPORT.UINAME
-msgid  "HTML Document (%productname% Draw)"
+msgid "HTML Document (%productname% Draw)"
 msgstr "Документ HTML (%productname% Draw)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
+msgid "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
 msgstr ""
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
-msgid  "HTML Document (%productname% Master Document)"
+msgid "HTML Document (%productname% Master Document)"
 msgstr "Документ HTML (складений документ %productname%)"
 
 #: config/fragments/filters/HTML__StarCalc__ui.xcu#HTML_(STARCALC).UINAME
-msgid  "HTML Document (%productname% Calc)"
+msgid "HTML Document (%productname% Calc)"
 msgstr "Документ HTML (%productname% Calc)"
 
 #: config/fragments/filters/HTML__StarWriter__ui.xcu#HTML_(STARWRITER).UINAME
-msgid  "HTML Document (%productname% Writer)"
+msgid "HTML Document (%productname% Writer)"
 msgstr "Документ HTML (%productname% Writer)"
 
 #: config/fragments/filters/HTML_ui.xcu#HTML.UINAME
-msgid  "HTML Document"
+msgid "HTML Document"
 msgstr "Документ HTML"
 
 #: config/fragments/filters/impress8_draw_ui.xcu#IMPRESS8_DRAW.UINAME
-msgid  "ODF Drawing (Impress)"
+msgid "ODF Drawing (Impress)"
 msgstr "Малюнок ODF (Impress)"
 
 #: config/fragments/filters/impress8_template_ui.xcu#IMPRESS8_TEMPLATE.UINAME
-msgid  "ODF Presentation Template"
+msgid "ODF Presentation Template"
 msgstr "Шаблон презентації ODF"
 
 #: config/fragments/filters/impress8_ui.xcu#IMPRESS8.UINAME
-msgid  "ODF Presentation"
+msgid "ODF Presentation"
 msgstr "Презентація ODF"
 
 #: config/fragments/filters/impress_html_Export_ui.xcu#IMPRESS_HTML_EXPORT.UINAME
-msgid  "HTML Document (%productname% Impress)"
+msgid "HTML Document (%productname% Impress)"
 msgstr "Документ HTML (%productname% Impress)"
 
 #: config/fragments/filters/impress_MS_PowerPoint_2007_XML_Template_ui.xcu#IMPRESS_MS_POWERPOINT_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft PowerPoint 2007 XML Template"
+msgid "Microsoft PowerPoint 2007 XML Template"
 msgstr "Шаблон Microsoft PowerPoint 2007 XML"
 
 #: config/fragments/filters/impress_MS_PowerPoint_2007_XML_ui.xcu#IMPRESS_MS_POWERPOINT_2007_XML.UINAME
-msgid  "Microsoft PowerPoint 2007 XML"
+msgid "Microsoft PowerPoint 2007 XML"
 msgstr "Microsoft PowerPoint 2007 XML"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
+msgid "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
 msgstr "Малюнок %productname% %formatversion% (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
-#, fuzzy
-msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
+msgid "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
 msgstr ""
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
-msgid  "ODF Formula"
+msgid "ODF Formula"
 msgstr "Формула ODF"
 
 #: config/fragments/filters/MS_Excel_2003_XML_ui.xcu#MS_EXCEL_2003_XML.UINAME
-msgid  "Microsoft Excel 2003 XML"
+#, fuzzy
+msgid "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
 #: config/fragments/filters/MS_Excel_4_0_Vorlage_Template_ui.xcu#MS_EXCEL_4.0_VORLAGE/TEMPLATE.UINAME
-msgid  "Microsoft Excel 4.0 Template"
+msgid "Microsoft Excel 4.0 Template"
 msgstr "Шаблон Microsoft Excel 4.0"
 
 #: config/fragments/filters/MS_Excel_5_0_95_Vorlage_Template_ui.xcu#MS_EXCEL_5.0/95_VORLAGE/TEMPLATE.UINAME
-msgid  "Microsoft Excel 5.0 Template"
+msgid "Microsoft Excel 5.0 Template"
 msgstr "Шаблон Microsoft Excel 5.0"
 
 #: config/fragments/filters/MS_Excel_95_Vorlage_Template_ui.xcu#MS_EXCEL_95_VORLAGE/TEMPLATE.UINAME
-msgid  "Microsoft Excel 95 Template"
+msgid "Microsoft Excel 95 Template"
 msgstr "Шаблон Microsoft Excel 95"
 
 #: config/fragments/filters/MS_Excel_97_Vorlage_Template_ui.xcu#MS_EXCEL_97_VORLAGE/TEMPLATE.UINAME
-msgid  "Microsoft Excel 97/2000/XP Template"
+msgid "Microsoft Excel 97/2000/XP Template"
 msgstr "Шаблон Microsoft Excel 97/2000/XP"
 
 #: config/fragments/filters/MS_PowerPoint_97_Vorlage_ui.xcu#MS_POWERPOINT_97_VORLAGE.UINAME
-msgid  "Microsoft PowerPoint 97/2000/XP Template"
+msgid "Microsoft PowerPoint 97/2000/XP Template"
 msgstr "Шаблон Microsoft PowerPoint 97/2000/XP"
 
 #: config/fragments/filters/MS_Word_2003_XML_ui.xcu#MS_WORD_2003_XML.UINAME
-msgid  "Microsoft Word 2003 XML"
+#, fuzzy
+msgid "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
+msgid "Microsoft Word 2007 XML Template"
+msgstr ""
+
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
-msgid  "Microsoft Word 2007 XML"
+msgid "Microsoft Word 2007 XML"
 msgstr "Microsoft Word 2007 XML"
 
 #: config/fragments/filters/MS_Word_95_Vorlage_ui.xcu#MS_WORD_95_VORLAGE.UINAME
-msgid  "Microsoft Word 95 Template"
+msgid "Microsoft Word 95 Template"
 msgstr "Шаблон Microsoft Word 95"
 
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
-msgid  "Microsoft Word 97/2000/XP Template"
+msgid "Microsoft Word 97/2000/XP Template"
 msgstr "Шаблон Microsoft Word 97/2000/XP"
 
 #: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
-#, fuzzy
-msgid  "Uniform Office Format 2 spreadsheet"
-msgstr "Електронна таблиця Unified Office Format"
+msgid "Uniform Office Format 2 spreadsheet"
+msgstr ""
 
 #: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
-#, fuzzy
-msgid  "Uniform Office Format 2 presentation"
-msgstr "Презентація Unified Office Format"
+msgid "Uniform Office Format 2 presentation"
+msgstr ""
 
 #: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
 #, fuzzy
-msgid  "Uniform Office Format 2 Text"
+msgid "Uniform Office Format 2 Text"
 msgstr "Текст Unified Office Format"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarCalc 3.0 Template"
+msgid "StarCalc 3.0 Template"
 msgstr "Шаблон StarCalc 3.0"
 
 #: config/fragments/filters/StarCalc_4_0_Vorlage_Template_ui.xcu#STARCALC_4.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarCalc 4.0 Template"
+msgid "StarCalc 4.0 Template"
 msgstr "Шаблон StarCalc 4.0"
 
 #: config/fragments/filters/StarCalc_5_0_Vorlage_Template_ui.xcu#STARCALC_5.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarCalc 5.0 Template"
+msgid "StarCalc 5.0 Template"
 msgstr "Шаблон StarCalc 5.0"
 
 #: config/fragments/filters/StarDraw_3_0_Vorlage__StarImpress__ui.xcu#STARDRAW_3.0_VORLAGE_(STARIMPRESS).UINAME
-msgid  "StarDraw 3.0 Template (%productname% Impress)"
+msgid "StarDraw 3.0 Template (%productname% Impress)"
 msgstr "Шаблон StarDraw 3.0 (%productname% Impress)"
 
 #: config/fragments/filters/StarDraw_3_0_Vorlage_ui.xcu#STARDRAW_3.0_VORLAGE.UINAME
-msgid  "StarDraw 3.0 Template"
+msgid "StarDraw 3.0 Template"
 msgstr "Шаблон StarDraw 3.0"
 
 #: config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#STARDRAW_5.0_VORLAGE_(STARIMPRESS).UINAME
-msgid  "StarDraw 5.0 Template (%productname% Impress)"
+msgid "StarDraw 5.0 Template (%productname% Impress)"
 msgstr "Шаблон StarDraw 5.0 (%productname% Impress)"
 
 #: config/fragments/filters/StarDraw_5_0_Vorlage_ui.xcu#STARDRAW_5.0_VORLAGE.UINAME
-msgid  "StarDraw 5.0 Template"
+msgid "StarDraw 5.0 Template"
 msgstr "Шаблон StarDraw 5.0"
 
 #: config/fragments/filters/StarImpress_4_0_Vorlage_ui.xcu#STARIMPRESS_4.0_VORLAGE.UINAME
-msgid  "StarImpress 4.0 Template"
+msgid "StarImpress 4.0 Template"
 msgstr "Шаблон StarImpress 4.0"
 
 #: config/fragments/filters/StarImpress_5_0__packed__ui.xcu#STARIMPRESS_5.0_(PACKED).UINAME
-msgid  "StarImpress 5.0 Packed"
+msgid "StarImpress 5.0 Packed"
 msgstr "StarImpress 5.0 (стиснений)"
 
 #: config/fragments/filters/StarImpress_5_0_Vorlage_ui.xcu#STARIMPRESS_5.0_VORLAGE.UINAME
-msgid  "StarImpress 5.0 Template"
+msgid "StarImpress 5.0 Template"
 msgstr "Шаблон StarImpress 5.0"
 
 #: config/fragments/filters/StarOffice_XML__Base__ui.xcu#STAROFFICE_XML_(BASE).UINAME
-msgid  "ODF Database"
+msgid "ODF Database"
 msgstr "База даних ODF"
 
 #: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgid "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
 msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgid "%oooxmlformatname% %oooxmlformatversion% Chart"
 msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgid "%oooxmlformatname% %oooxmlformatversion% Drawing"
 msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgid "%oooxmlformatname% %oooxmlformatversion% Presentation"
 msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgid "%oooxmlformatname% %oooxmlformatversion% Formula"
 msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgid "%oooxmlformatname% %oooxmlformatversion% Text Document"
 msgstr ""
 
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarWriter 3.0 Template"
+msgid "StarWriter 3.0 Template"
 msgstr "Шаблон StarWriter 3.0"
 
 #: config/fragments/filters/StarWriter_4_0_GlobalDocument_ui.xcu#STARWRITER_4.0/GLOBALDOCUMENT.UINAME
-msgid  "StarWriter 4.0 Master Document"
+msgid "StarWriter 4.0 Master Document"
 msgstr "Складений документ StarWriter 4.0"
 
 #: config/fragments/filters/StarWriter_4_0_Vorlage_Template_ui.xcu#STARWRITER_4.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarWriter 4.0 Template"
+msgid "StarWriter 4.0 Template"
 msgstr "Шаблон StarWriter 4.0"
 
 #: config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#STARWRITER_5.0/GLOBALDOCUMENT.UINAME
-msgid  "StarWriter 5.0 Master Document"
+msgid "StarWriter 5.0 Master Document"
 msgstr "Складений документ StarWriter 5.0"
 
 #: config/fragments/filters/StarWriter_5_0_Vorlage_Template_ui.xcu#STARWRITER_5.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarWriter 5.0 Template"
+msgid "StarWriter 5.0 Template"
 msgstr "Шаблон StarWriter 5.0"
 
 #: config/fragments/filters/StarWriter_Web_4_0_Vorlage_Template_ui.xcu#STARWRITER/WEB_4.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarWriter/Web 4.0 Template"
+msgid "StarWriter/Web 4.0 Template"
 msgstr "Шаблон StarWriter/Web 4.0"
 
 #: config/fragments/filters/StarWriter_Web_5_0_Vorlage_Template_ui.xcu#STARWRITER/WEB_5.0_VORLAGE/TEMPLATE.UINAME
-msgid  "StarWriter/Web 5.0 Template"
+msgid "StarWriter/Web 5.0 Template"
 msgstr "Шаблон StarWriter/Web 5.0"
 
 #: config/fragments/filters/Text__encoded___StarWriter_GlobalDocument__ui.xcu#TEXT_(ENCODED)_(STARWRITER/GLOBALDOCUMENT).UINAME
-msgid  "Text Encoded (%productname% Master Document)"
+msgid "Text Encoded (%productname% Master Document)"
 msgstr "Кодований текст (Складений документ %productname%)"
 
 #: config/fragments/filters/Text__encoded___StarWriter_Web__ui.xcu#TEXT_(ENCODED)_(STARWRITER/WEB).UINAME
-msgid  "Text Encoded (%productname% Writer/Web)"
+msgid "Text Encoded (%productname% Writer/Web)"
 msgstr "Кодований текст (%productname% Writer/Web)"
 
 #: config/fragments/filters/Text__encoded__ui.xcu#TEXT_(ENCODED).UINAME
-msgid  "Text Encoded"
+msgid "Text Encoded"
 msgstr "Кодований текст"
 
+#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
+msgid "Text (%productname% Writer/Web)"
+msgstr ""
+
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
-msgid  "Text CSV"
+msgid "Text CSV"
 msgstr "Текст CSV"
 
+#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
+msgid "Text"
+msgstr ""
+
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
-msgid  "Unified Office Format presentation"
+msgid "Unified Office Format presentation"
 msgstr "Презентація Unified Office Format"
 
 #: config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF_SPREADSHEET.UINAME
-msgid  "Unified Office Format spreadsheet"
+msgid "Unified Office Format spreadsheet"
 msgstr "Електронна таблиця Unified Office Format"
 
 #: config/fragments/filters/UOF_text_ui.xcu#UOF_TEXT.UINAME
-msgid  "Unified Office Format text"
+msgid "Unified Office Format text"
 msgstr "Текст Unified Office Format"
 
 #: config/fragments/filters/writer8_template_ui.xcu#WRITER8_TEMPLATE.UINAME
-msgid  "ODF Text Document Template"
+msgid "ODF Text Document Template"
 msgstr "Шаблон текстового документу ODF"
 
 #: config/fragments/filters/writer8_ui.xcu#WRITER8.UINAME
-msgid  "ODF Text Document"
+msgid "ODF Text Document"
 msgstr "Текстовий документ ODF"
 
 #: config/fragments/filters/writerglobal8_ui.xcu#WRITERGLOBAL8.UINAME
-msgid  "ODF Master Document"
+msgid "ODF Master Document"
 msgstr "Складений документ ODF"
 
 #: config/fragments/filters/writerglobal8_writer_ui.xcu#WRITERGLOBAL8_WRITER.UINAME
-msgid  "ODF Text Document"
+msgid "ODF Text Document"
 msgstr "Текстовий документ ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
-#, fuzzy
-msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
+msgid "%oooxmlformatname% %oooxmlformatversion% Master Document"
 msgstr ""
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
-#, fuzzy
-msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgid "%oooxmlformatname% %oooxmlformatversion% Text Document"
 msgstr ""
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
-#, fuzzy
-msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
+msgid "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
 msgstr ""
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
-msgid  "HTML Document Template"
+msgid "HTML Document Template"
 msgstr "Шаблон документу HTML"
 
 #: config/fragments/filters/writerweb8_writer_ui.xcu#WRITERWEB8_WRITER.UINAME
-msgid  "%productname% Text (%productname% Writer/Web)"
+msgid "%productname% Text (%productname% Writer/Web)"
 msgstr "Текст %productname% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "Текстовий документ %productname% %formatversion% (%productname% Writer/Web)"
+msgid "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
+msgstr ""
+"Текстовий документ %productname% %formatversion% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
-#, fuzzy
-msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
+msgid "%oooxmlformatname% %oooxmlformatversion% HTML Template"
 msgstr ""
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 #, fuzzy
-msgid  "BMP - Windows Bitmap"
+msgid "BMP - Windows Bitmap"
 msgstr "BMP - Windows Bitmap"
 
 #: config/fragments/internalgraphicfilters/bmp_Import.xcu#BMP_IMPORT.UINAME
 #, fuzzy
-msgid  "BMP - Windows Bitmap"
+msgid "BMP - Windows Bitmap"
 msgstr "BMP - Windows Bitmap"
 
 #: config/fragments/internalgraphicfilters/dxf_Import.xcu#DXF_IMPORT.UINAME
 #, fuzzy
-msgid  "DXF - AutoCAD Interchange Format"
+msgid "DXF - AutoCAD Interchange Format"
 msgstr "DXF - AutoCAD Interchange Format"
 
 #: config/fragments/internalgraphicfilters/emf_Export.xcu#EMF_EXPORT.UINAME
 #, fuzzy
-msgid  "EMF - Enhanced Metafile"
+msgid "EMF - Enhanced Metafile"
 msgstr "EMF - Enhanced Metafile"
 
 #: config/fragments/internalgraphicfilters/emf_Import.xcu#EMF_IMPORT.UINAME
 #, fuzzy
-msgid  "EMF - Enhanced Metafile"
+msgid "EMF - Enhanced Metafile"
 msgstr "EMF - Enhanced Metafile"
 
 #: config/fragments/internalgraphicfilters/eps_Export.xcu#EPS_EXPORT.UINAME
 #, fuzzy
-msgid  "EPS - Encapsulated PostScript"
+msgid "EPS - Encapsulated PostScript"
 msgstr "EPS - Encapsulated PostScript"
 
 #: config/fragments/internalgraphicfilters/eps_Import.xcu#EPS_IMPORT.UINAME
 #, fuzzy
-msgid  "EPS - Encapsulated PostScript"
+msgid "EPS - Encapsulated PostScript"
 msgstr "EPS - Encapsulated PostScript"
 
 #: config/fragments/internalgraphicfilters/gif_Export.xcu#GIF_EXPORT.UINAME
 #, fuzzy
-msgid  "GIF - Graphics Interchange Format"
+msgid "GIF - Graphics Interchange Format"
 msgstr "GIF - Graphics Interchange Format"
 
 #: config/fragments/internalgraphicfilters/gif_Import.xcu#GIF_IMPORT.UINAME
 #, fuzzy
-msgid  "GIF - Graphics Interchange Format"
+msgid "GIF - Graphics Interchange Format"
 msgstr "GIF - Graphics Interchange Format"
 
 #: config/fragments/internalgraphicfilters/jpg_Export.xcu#JPG_EXPORT.UINAME
 #, fuzzy
-msgid  "JPEG - Joint Photographic Experts Group"
+msgid "JPEG - Joint Photographic Experts Group"
 msgstr "JPEG - Joint Photographic Experts Group"
 
 #: config/fragments/internalgraphicfilters/jpg_Import.xcu#JPG_IMPORT.UINAME
 #, fuzzy
-msgid  "JPEG - Joint Photographic Experts Group"
+msgid "JPEG - Joint Photographic Experts Group"
 msgstr "JPEG - Joint Photographic Experts Group"
 
 #: config/fragments/internalgraphicfilters/met_Export.xcu#MET_EXPORT.UINAME
 #, fuzzy
-msgid  "MET - OS/2 Metafile"
+msgid "MET - OS/2 Metafile"
 msgstr "MET - OS/2 Metafile"
 
 #: config/fragments/internalgraphicfilters/met_Import.xcu#MET_IMPORT.UINAME
 #, fuzzy
-msgid  "MET - OS/2 Metafile"
+msgid "MET - OS/2 Metafile"
 msgstr "MET - OS/2 Metafile"
 
 #: config/fragments/internalgraphicfilters/pbm_Export.xcu#PBM_EXPORT.UINAME
 #, fuzzy
-msgid  "PBM - Portable Bitmap"
+msgid "PBM - Portable Bitmap"
 msgstr "PBM - Portable Bitmap"
 
 #: config/fragments/internalgraphicfilters/pbm_Import.xcu#PBM_IMPORT.UINAME
 #, fuzzy
-msgid  "PBM - Portable Bitmap"
+msgid "PBM - Portable Bitmap"
 msgstr "PBM - Portable Bitmap"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base16.xcu#PCD_IMPORT_BASE16.UINAME
 #, fuzzy
-msgid  "PCD - Kodak Photo CD (192x128)"
+msgid "PCD - Kodak Photo CD (192x128)"
 msgstr "PCD - Kodak Photo CD (192x128)"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base4.xcu#PCD_IMPORT_BASE4.UINAME
 #, fuzzy
-msgid  "PCD - Kodak Photo CD (384x256)"
+msgid "PCD - Kodak Photo CD (384x256)"
 msgstr "PCD - Kodak Photo CD (384x256)"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base.xcu#PCD_IMPORT_BASE.UINAME
 #, fuzzy
-msgid  "PCD - Kodak Photo CD (768x512)"
+msgid "PCD - Kodak Photo CD (768x512)"
 msgstr "PCD - Kodak Photo CD (768x512)"
 
 #: config/fragments/internalgraphicfilters/pct_Export.xcu#PCT_EXPORT.UINAME
 #, fuzzy
-msgid  "PCT - Mac Pict"
+msgid "PCT - Mac Pict"
 msgstr "PCT - Mac Pict"
 
 #: config/fragments/internalgraphicfilters/pct_Import.xcu#PCT_IMPORT.UINAME
 #, fuzzy
-msgid  "PCT - Mac Pict"
+msgid "PCT - Mac Pict"
 msgstr "PCT - Mac Pict"
 
 #: config/fragments/internalgraphicfilters/pcx_Import.xcu#PCX_IMPORT.UINAME
 #, fuzzy
-msgid  "PCX - Zsoft Paintbrush"
+msgid "PCX - Zsoft Paintbrush"
 msgstr "PCX - Zsoft Paintbrush"
 
 #: config/fragments/internalgraphicfilters/pgm_Export.xcu#PGM_EXPORT.UINAME
 #, fuzzy
-msgid  "PGM - Portable Graymap"
+msgid "PGM - Portable Graymap"
 msgstr "PGM - Portable Graymap"
 
 #: config/fragments/internalgraphicfilters/pgm_Import.xcu#PGM_IMPORT.UINAME
 #, fuzzy
-msgid  "PGM - Portable Graymap"
+msgid "PGM - Portable Graymap"
 msgstr "PGM - Portable Graymap"
 
 #: config/fragments/internalgraphicfilters/png_Export.xcu#PNG_EXPORT.UINAME
 #, fuzzy
-msgid  "PNG - Portable Network Graphic"
+msgid "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
 #: config/fragments/internalgraphicfilters/png_Import.xcu#PNG_IMPORT.UINAME
 #, fuzzy
-msgid  "PNG - Portable Network Graphic"
+msgid "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
 #: config/fragments/internalgraphicfilters/ppm_Export.xcu#PPM_EXPORT.UINAME
 #, fuzzy
-msgid  "PPM - Portable Pixelmap"
+msgid "PPM - Portable Pixelmap"
 msgstr "PPM - Portable Pixelmap"
 
 #: config/fragments/internalgraphicfilters/ppm_Import.xcu#PPM_IMPORT.UINAME
 #, fuzzy
-msgid  "PPM - Portable Pixelmap"
+msgid "PPM - Portable Pixelmap"
 msgstr "PPM - Portable Pixelmap"
 
 #: config/fragments/internalgraphicfilters/psd_Import.xcu#PSD_IMPORT.UINAME
 #, fuzzy
-msgid  "PSD - Adobe Photoshop"
+msgid "PSD - Adobe Photoshop"
 msgstr "PSD - Adobe Photoshop"
 
 #: config/fragments/internalgraphicfilters/ras_Export.xcu#RAS_EXPORT.UINAME
 #, fuzzy
-msgid  "RAS - Sun Raster Image"
+msgid "RAS - Sun Raster Image"
 msgstr "RAS - Sun Raster Image"
 
 #: config/fragments/internalgraphicfilters/ras_Import.xcu#RAS_IMPORT.UINAME
 #, fuzzy
-msgid  "RAS - Sun Raster Image"
+msgid "RAS - Sun Raster Image"
 msgstr "RAS - Sun Raster Image"
 
 #: config/fragments/internalgraphicfilters/sgf_Import.xcu#SGF_IMPORT.UINAME
 #, fuzzy
-msgid  "SGF - StarWriter Graphics Format"
+msgid "SGF - StarWriter Graphics Format"
 msgstr "SGF - StarWriter Graphics Format"
 
 #: config/fragments/internalgraphicfilters/sgv_Import.xcu#SGV_IMPORT.UINAME
 #, fuzzy
-msgid  "SGV - StarDraw 2.0"
+msgid "SGV - StarDraw 2.0"
 msgstr "SGV - StarDraw 2.0"
 
 #: config/fragments/internalgraphicfilters/svg_Export.xcu#SVG_EXPORT.UINAME
 #, fuzzy
-msgid  "SVG - Scalable Vector Graphics"
+msgid "SVG - Scalable Vector Graphics"
 msgstr "SVG - Scalable Vector Graphics"
 
 #: config/fragments/internalgraphicfilters/svg_Import.xcu#SVG_IMPORT.UINAME
 #, fuzzy
-msgid  "SVG - Scalable Vector Graphics"
+msgid "SVG - Scalable Vector Graphics"
 msgstr "SVG - Scalable Vector Graphics"
 
 #: config/fragments/internalgraphicfilters/svm_Export.xcu#SVM_EXPORT.UINAME
 #, fuzzy
-msgid  "SVM - StarView Metafile"
+msgid "SVM - StarView Metafile"
 msgstr "SVM - StarView Metafile"
 
 #: config/fragments/internalgraphicfilters/svm_Import.xcu#SVM_IMPORT.UINAME
 #, fuzzy
-msgid  "SVM - StarView Metafile"
+msgid "SVM - StarView Metafile"
 msgstr "SVM - StarView Metafile"
 
 #: config/fragments/internalgraphicfilters/tga_Import.xcu#TGA_IMPORT.UINAME
 #, fuzzy
-msgid  "TGA - Truevision Targa"
+msgid "TGA - Truevision Targa"
 msgstr "TGA - Truevision Targa"
 
 #: config/fragments/internalgraphicfilters/tif_Export.xcu#TIF_EXPORT.UINAME
 #, fuzzy
-msgid  "TIFF - Tagged Image File Format"
+msgid "TIFF - Tagged Image File Format"
 msgstr "TIFF - Tagged Image File Format"
 
 #: config/fragments/internalgraphicfilters/tif_Import.xcu#TIF_IMPORT.UINAME
 #, fuzzy
-msgid  "TIFF - Tagged Image File Format"
+msgid "TIFF - Tagged Image File Format"
 msgstr "TIFF - Tagged Image File Format"
 
 #: config/fragments/internalgraphicfilters/wmf_Export.xcu#WMF_EXPORT.UINAME
 #, fuzzy
-msgid  "WMF - Windows Metafile"
+msgid "WMF - Windows Metafile"
 msgstr "WMF - Windows Metafile"
 
 #: config/fragments/internalgraphicfilters/wmf_Import.xcu#WMF_IMPORT.UINAME
 #, fuzzy
-msgid  "WMF - Windows Metafile"
+msgid "WMF - Windows Metafile"
 msgstr "WMF - Windows Metafile"
 
 #: config/fragments/internalgraphicfilters/xbm_Import.xcu#XBM_IMPORT.UINAME
 #, fuzzy
-msgid  "XBM - X Bitmap"
+msgid "XBM - X Bitmap"
 msgstr "XBM - X Bitmap"
 
 #: config/fragments/internalgraphicfilters/xpm_Export.xcu#XPM_EXPORT.UINAME
 #, fuzzy
-msgid  "XPM - X PixMap"
+msgid "XPM - X PixMap"
 msgstr "XPM - X PixMap"
 
 #: config/fragments/internalgraphicfilters/xpm_Import.xcu#XPM_IMPORT.UINAME
 #, fuzzy
-msgid  "XPM - X PixMap"
+msgid "XPM - X PixMap"
 msgstr "XPM - X PixMap"
 
 #: config/fragments/types/calc8_template.xcu#CALC8_TEMPLATE.UINAME
 #, fuzzy
-msgid  "Calc 8 Template"
+msgid "Calc 8 Template"
 msgstr "Шаблон Calc 8"
 
 #: config/fragments/types/calc8.xcu#CALC8.UINAME
 #, fuzzy
-msgid  "Calc 8"
+msgid "Calc 8"
 msgstr "Calc 8"
 
 #: config/fragments/types/calc_MS_Excel_2003_XML.xcu#CALC_MS_EXCEL_2003_XML.UINAME
 #, fuzzy
-msgid  "Microsoft Excel 2003 XML"
+msgid "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
 #: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 spreadsheet"
+msgid "Uniform Office Format 2 spreadsheet"
 msgstr ""
 
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 #, fuzzy
-msgid  "Chart 8"
+msgid "Chart 8"
 msgstr "Chart 8"
 
 #: config/fragments/types/draw8_template.xcu#DRAW8_TEMPLATE.UINAME
 #, fuzzy
-msgid  "Draw 8 Template"
+msgid "Draw 8 Template"
 msgstr "Шаблон Draw 8"
 
 #: config/fragments/types/draw8.xcu#DRAW8.UINAME
 #, fuzzy
-msgid  "Draw 8"
+msgid "Draw 8"
 msgstr "Draw 8"
 
 #: config/fragments/types/impress8_template.xcu#IMPRESS8_TEMPLATE.UINAME
 #, fuzzy
-msgid  "Impress 8 Template"
+msgid "Impress 8 Template"
 msgstr "Шаблон Impress 8"
 
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 #, fuzzy
-msgid  "Impress 8"
+msgid "Impress 8"
 msgstr "Impress 8"
 
 #: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 presentation"
+msgid "Uniform Office Format 2 presentation"
 msgstr ""
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 #, fuzzy
-msgid  "Math 8"
+msgid "Math 8"
 msgstr "Math 8"
 
 #: config/fragments/types/StarBase.xcu#STARBASE.UINAME
 #, fuzzy
-msgid  "OpenDocument Database"
+msgid "OpenDocument Database"
 msgstr "База даних OpenDocument"
 
 #: config/fragments/types/writer8_template.xcu#WRITER8_TEMPLATE.UINAME
 #, fuzzy
-msgid  "Writer 8 Template"
+msgid "Writer 8 Template"
 msgstr "Шаблон Writer 8"
 
 #: config/fragments/types/writer8.xcu#WRITER8.UINAME
 #, fuzzy
-msgid  "Writer 8"
+msgid "Writer 8"
 msgstr "Writer 8"
 
 #: config/fragments/types/writerglobal8.xcu#WRITERGLOBAL8.UINAME
 #, fuzzy
-msgid  "Writer 8 Master Document"
+msgid "Writer 8 Master Document"
 msgstr "Складений документ Writer 8"
 
 #: config/fragments/types/writer_MS_Word_2003_XML.xcu#WRITER_MS_WORD_2003_XML.UINAME
 #, fuzzy
-msgid  "Microsoft Word 2003 XML"
+msgid "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
 #: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 text"
+msgid "Uniform Office Format 2 text"
 msgstr ""
 
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 #, fuzzy
-msgid  "Writer/Web 8 Template"
+msgid "Writer/Web 8 Template"
 msgstr "Шаблон Writer/Web 8"
 
 #: flash/impswfdialog.src#DLG_OPTIONS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Macromedia Flash (SWF) Options"
+msgid "Macromedia Flash (SWF) Options"
 msgstr "Параметри Macromedia Flash (SWF)"
 
 #: flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1: min. quality\n100: max. quality"
-msgstr "1: низка якість\n100: висока якість"
+msgid "1: min. quality\n100: max. quality"
+msgstr ""
+"1: низка якість\n"
+"100: висока якість"
 
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
-#, fuzzy
-msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
+msgid "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
+msgstr ""
+
+#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
+msgid "E~xport"
 msgstr ""
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 #, fuzzy
-msgid  "Set open password"
+msgid "Set open password"
 msgstr "Пароль для відкриття"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_ODPWD.STRING.TEXT
 #, fuzzy
-msgid  "Set permission password"
+msgid "Set permission password"
 msgstr "Пароль для обмеження прав"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.TABPAGE.TEXT
 #, fuzzy
-msgid  "General"
+msgid "General"
 msgstr "Загальні"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_PAGES.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Range"
+msgid "Range"
 msgstr "Сторінки"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_ALL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~All"
+msgid "~All"
 msgstr "~Всі"
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
+msgid "~Pages"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
+msgid "~Selection"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
+msgid "Images"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Lossless compression"
+msgid "~Lossless compression"
 msgstr "Стиснення ~без втрат"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~JPEG compression"
+msgid "~JPEG compression"
 msgstr "стиснення ~JPEG"
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
+msgid "~Quality"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
+msgid "~Reduce image resolution"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_GENERAL.FIXEDLINE.TEXT
+#, fuzzy
+msgid "General"
+msgstr "Загальні"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "P~DF/A-1a"
+msgid "P~DF/A-1a"
 msgstr "PDF/A-1"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_TAGGEDPDF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Tagged PDF"
+msgid "~Tagged PDF"
 msgstr "~Структурований PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTFORMFIELDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Create PDF form"
+msgid "~Create PDF form"
 msgstr "~Створити форму PDF"
 
+#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
+msgid "Submit ~format"
+msgstr ""
+
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Allow duplicate field ~names"
+msgid "Allow duplicate field ~names"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTBOOKMARKS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Export ~bookmarks"
+msgid "Export ~bookmarks"
 msgstr "Експорт ~закладок"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Export comments"
+msgid "~Export comments"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTESPAGES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Export ~notes pages"
+msgid "Export ~notes pages"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTEMPTYPAGES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Exp~ort automatically inserted blank pages"
+msgid "Exp~ort automatically inserted blank pages"
 msgstr "Включати автоматично вставлені ~порожні сторінки"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EMBEDSTANDARDFONTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "E~mbed standard fonts"
+msgid "E~mbed standard fonts"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Embed this document ~inside the PDF"
+msgid "Embed this document ~inside the PDF"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
-#, fuzzy
-msgid  "PDF/A Export"
+msgid "PDF/A Export"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
-#, fuzzy
-msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
+msgid "PDF/A does not allow encryption. The exported PDF file will not be password protected."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TABPAGE.TEXT
 #, fuzzy
-msgid  "Initial View"
+msgid "Initial View"
 msgstr "Початковий вигляд"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Panes"
+msgid "Panes"
 msgstr "Області"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Page only"
+msgid "~Page only"
 msgstr "~Лише сторінки"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Bookmarks and page"
+msgid "~Bookmarks and page"
 msgstr "~Закладки та сторінки"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Thumbnails and page"
+msgid "~Thumbnails and page"
 msgstr "~Мініатюри и сторінки"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Open on page"
+msgid "Open on page"
 msgstr "Відкрити на сторінці"
+
+#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
+msgid "Magnification"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Default"
+msgid "~Default"
 msgstr "~Типово"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Fit in window"
+msgid "~Fit in window"
 msgstr "~За розміром вікна"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Fit ~width"
+msgid "Fit ~width"
 msgstr "По ~ширині"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Fit ~visible"
+msgid "Fit ~visible"
 msgstr "Умістити ~видиме"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Zoom factor"
+msgid "~Zoom factor"
 msgstr "Мас~штаб"
+
+#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
+msgid "Page layout"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "D~efault"
+msgid "D~efault"
 msgstr "~Типово"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Single page"
+msgid "~Single page"
 msgstr "~Одна сторінка"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Continuous"
+msgid "~Continuous"
 msgstr "~Безперервна"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "C~ontinuous facing"
+msgid "C~ontinuous facing"
 msgstr "Б~езперервна плитка"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "First page is ~left"
+msgid "First page is ~left"
 msgstr "Перша сторінка ~ліворуч"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.TABPAGE.TEXT
 #, fuzzy
-msgid  "User Interface"
+msgid "User Interface"
 msgstr "Інтерфейс користувача"
+
+#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
+msgid "Window options"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Resize window to initial page"
+msgid "~Resize window to initial page"
 msgstr "~Змінити розмір вікна за початковою сторінкою"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Center window on screen"
+msgid "~Center window on screen"
 msgstr "Вікно у ~центрі"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Open in full screen mode"
+msgid "~Open in full screen mode"
 msgstr "~Відкрити у повноекранному режимі"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Display document title"
+msgid "~Display document title"
 msgstr "~Показати заголовок документу"
+
+#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
+msgid "User interface options"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Hide ~menubar"
+msgid "Hide ~menubar"
 msgstr "Сховати панель ~меню"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Hide ~toolbar"
+msgid "Hide ~toolbar"
 msgstr "Сховати панель ~інструментів"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Hide ~window controls"
+msgid "Hide ~window controls"
 msgstr "Сховати елементи ~керування вікна"
+
+#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
+msgid "Transitions"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Use transition effects"
+msgid "~Use transition effects"
 msgstr "~Ефекти зміни сторінок"
+
+#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
+msgid "Bookmarks"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
+msgid "All bookmark levels"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Visible bookmark levels"
+msgid "Visible bookmark levels"
 msgstr "Видимі рівні закладок"
 
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
+msgid "Security"
+msgstr ""
+
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "File encryption and permission"
+msgid "File encryption and permission"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Set ~passwords..."
+msgid "Set ~passwords..."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
-#, fuzzy
-msgid  "Set passwords"
+msgid "Set passwords"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
-#, fuzzy
-msgid  "Open password set"
+msgid "Open password set"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will be encrypted"
+msgid "PDF document will be encrypted"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.STRING.TEXT
-#, fuzzy
-msgid  "No open password set"
+msgid "No open password set"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will not be encrypted"
+msgid "PDF document will not be encrypted"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will not be encrypted due to PDF/A export."
+msgid "PDF document will not be encrypted due to PDF/A export."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
-#, fuzzy
-msgid  "Permission password set"
+msgid "Permission password set"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will be restricted"
+msgid "PDF document will be restricted"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.STRING.TEXT
-#, fuzzy
-msgid  "No permission password set"
+msgid "No permission password set"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will be unrestricted"
+msgid "PDF document will be unrestricted"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
-#, fuzzy
-msgid  "PDF document will not be restricted due to PDF/A export."
+msgid "PDF document will not be restricted due to PDF/A export."
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
+msgid "Printing"
+msgstr ""
+
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
+msgid "~Not permitted"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Low resolution (150 dpi)"
+msgid "~Low resolution (150 dpi)"
 msgstr "Н~изька роздільна здатність (150 dpi)"
+
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
+msgid "~High resolution"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Changes"
+msgid "Changes"
 msgstr "Зміни"
+
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
+msgid "No~t permitted"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Inserting, deleting, and rotating pages"
+msgid "~Inserting, deleting, and rotating pages"
 msgstr "~Вставка, видалення та поворот сторінок"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Filling in form fields"
+msgid "~Filling in form fields"
 msgstr "~Заповнення полів форм"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Commenting, filling in form fields"
+msgid "~Commenting, filling in form fields"
 msgstr "~Коментарі, заповнення полів форм"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Any except extracting pages"
+msgid "~Any except extracting pages"
 msgstr "~Всі, за винятком витягування сторінок"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Ena~ble copying of content"
+msgid "Ena~ble copying of content"
 msgstr "~Копіювання змісту"
+
+#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
+msgid "Enable text access for acce~ssibility tools"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
 #, fuzzy
-msgid  "---"
+msgid "---"
 msgstr "---"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Export bookmarks as named destinations"
+msgid "Export bookmarks as named destinations"
 msgstr "Експортувати закладки як іменовані"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Convert document references to PDF targets"
+msgid "Convert document references to PDF targets"
 msgstr "Перетворити перехресні посилання на цілі PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Export URLs relative to file system"
+msgid "Export URLs relative to file system"
 msgstr "Експортувати відносні URL"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Cross-document links"
+msgid "Cross-document links"
 msgstr "Перехресні посилання між документами"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Default mode"
+msgid "Default mode"
 msgstr "Типовий режим"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Open with PDF reader application"
+msgid "Open with PDF reader application"
 msgstr "Відкрити у програмі перегляді PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Open with Internet browser"
+msgid "Open with Internet browser"
 msgstr "Відкрити у веб-навігаторі"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.TABDIALOG.TEXT
 #, fuzzy
-msgid  "PDF Options"
+msgid "PDF Options"
 msgstr "Параметри PDF"
+
+#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_GENER.PAGEITEM.TEXT
+#, fuzzy
+msgid "General"
+msgstr "Загальні"
+
+#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_OPNFTR.PAGEITEM.TEXT
+#, fuzzy
+msgid "Initial View"
+msgstr "Початковий вигляд"
+
+#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_VPREFER.PAGEITEM.TEXT
+#, fuzzy
+msgid "User Interface"
+msgstr "Інтерфейс користувача"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Links"
+msgid "Links"
 msgstr "Посилання"
+
+#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_SECURITY.PAGEITEM.TEXT
+msgid "Security"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Problems during PDF export"
+msgid "Problems during PDF export"
 msgstr "Помилки при експорті PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "During PDF export the following problems occurred:"
+msgid "During PDF export the following problems occurred:"
 msgstr "Помилки при експорті PDF:"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.STRING.TEXT
 #, fuzzy
-msgid  "PDF/A transparency"
+msgid "PDF/A transparency"
 msgstr "Прозорість PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.STRING.TEXT
 #, fuzzy
-msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr "PDF/A забороняє прозорість. Прозорий об'єкт натомість відображатиметься непрозорим."
+msgid "PDF/A forbids transparency. A transparent object was painted opaque instead."
+msgstr ""
+"PDF/A забороняє прозорість. Прозорий об'єкт натомість відображатиметься "
+"непрозорим."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.STRING.TEXT
 #, fuzzy
-msgid  "PDF version conflict"
+msgid "PDF version conflict"
 msgstr "Конфлікт версій PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.STRING.TEXT
 #, fuzzy
-msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr "Прозорість не підтримується PDF у версіях раніше ніж PDF 1.4.  Прозорий об'єкт натомість відображатиметься непрозорим."
+msgid "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
+msgstr ""
+"Прозорість не підтримується PDF у версіях раніше ніж PDF 1.4.  Прозорий "
+"об'єкт натомість відображатиметься непрозорим."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.STRING.TEXT
 #, fuzzy
-msgid  "PDF/A form action"
+msgid "PDF/A form action"
 msgstr "Дія форми PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.STRING.TEXT
 #, fuzzy
-msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr "Елемент форми містить дію,що не підтримується стандартом PDF/A. Дію пропущено"
+msgid "A form control contained an action not supported by the PDF/A standard. The action was skipped"
+msgstr ""
+"Елемент форми містить дію,що не підтримується стандартом PDF/A. Дію "
+"пропущено"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.STRING.TEXT
-#, fuzzy
-msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
+msgid "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.STRING.TEXT
-#, fuzzy
-msgid  "Transparencies removed"
+msgid "Transparencies removed"
 msgstr ""
 
 #: pdf/pdf.src#PDF_PROGRESS_BAR.STRING.TEXT
 #, fuzzy
-msgid  "Export as PDF"
+msgid "Export as PDF"
 msgstr "Експорт у PDF"
 
 #: t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Settings for T602 import"
+msgid "Settings for T602 import"
 msgstr "параметри для імпорту T602"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Encoding"
+msgid "Encoding"
 msgstr "Кодування"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.STRING.TEXT
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "Автоматично"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.STRING.TEXT
 #, fuzzy
-msgid  "CP852 (Latin2)"
+msgid "CP852 (Latin2)"
 msgstr "CP852 (Latin2)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.STRING.TEXT
 #, fuzzy
-msgid  "CP895 (KEYB2CS, Kamenicky)"
+msgid "CP895 (KEYB2CS, Kamenicky)"
 msgstr "CP895 (KEYB2CS, Kamenicky)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.STRING.TEXT
 #, fuzzy
-msgid  "KOI8 CS2"
+msgid "KOI8 CS2"
 msgstr "KOI8 CS2"
 
 #: t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.STRING.TEXT
 #, fuzzy
-msgid  "Mode for Russian language (Cyrillic)"
+msgid "Mode for Russian language (Cyrillic)"
 msgstr "Режим для російської мови (кирилиця)"
 
 #: t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Reformat the text"
+msgid "Reformat the text"
 msgstr "Переформатувати текст"
 
 #: t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.STRING.TEXT
 #, fuzzy
-msgid  "Display dot commands"
+msgid "Display dot commands"
 msgstr "Відображати \"крапка\"-команди"
 
 #: t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Скасувати"
 
 #: t602/t602filter.src#T602FILTER_STR_OK_BUTTON.STRING.TEXT
 #, fuzzy
-msgid  "OK"
+msgid "OK"
 msgstr "Гаразд"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WORKWINDOW.TEXT
 #, fuzzy
-msgid  "XML Filter output"
+msgid "XML Filter output"
 msgstr "Вивід фільтру XML"
+
+#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
+msgid "~Validate"
+msgstr ""
+
+#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
+msgid "Name"
+msgstr ""
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "Тип"
+
+#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
+msgid "Unknown"
+msgstr ""
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "import filter"
+msgid "import filter"
 msgstr "Фільтр імпорту"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.STRING.TEXT
 #, fuzzy
-msgid  "import/export filter"
+msgid "import/export filter"
 msgstr "фільтр імпорту/експорту"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "export filter"
+msgid "export filter"
 msgstr "фільтр експорту"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr "Ви дійсно хочете видалити фільтр XML '%s'? Цю дію буде неможливо скасувати."
+msgid "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
+msgstr ""
+"Ви дійсно хочете видалити фільтр XML '%s'? Цю дію буде неможливо скасувати."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
+msgid "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "XML фільтр з назвою '%s' вже існує. Введіть іншу назву."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr "Назва для інтерфейсу користувача '%s1' вже використовується XML-фільтром '%s2'. Ведіть іншу назву."
+msgid "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
+msgstr ""
+"Назва для інтерфейсу користувача '%s1' вже використовується XML-фільтром '%"
+"s2'. Ведіть іншу назву."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The DTD could not be found. Please enter a valid path."
+msgid "The DTD could not be found. Please enter a valid path."
 msgstr "DTD не знайдено. Вкажіть коректний шлях."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The XSLT for export cannot be found. Please enter a valid path."
+msgid "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "XSLT для експорту не знайдено. Введіть правильний шлях."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The XSLT for import cannot be found. Please enter a valid path."
+msgid "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "XSLT для імпорту не знайдено. Введіть правильний шлях до файлу."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The given import template cannot be found. Please enter a valid path."
+msgid "The given import template cannot be found. Please enter a valid path."
 msgstr "Вказаний шаблон для імпорту не знайдено. Введіть правильний шлях."
+
+#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
+msgid "Not specified"
+msgstr ""
+
+#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
+msgid "New Filter"
+msgstr ""
+
+#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
+msgid "Untitled"
+msgstr ""
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
 #, fuzzy
-msgid  "undefined filter"
+msgid "undefined filter"
 msgstr "невизначений фільтр"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.STRING.TEXT
 #, fuzzy
-msgid  "The XML filter '%s' has been saved as package '%s'. "
+msgid "The XML filter '%s' has been saved as package '%s'. "
 msgstr "Фільтр XML '%s' був збережений у пакеті '%s'."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.STRING.TEXT
 #, fuzzy
-msgid  "%s XML filters have been saved in the package '%s'."
+msgid "%s XML filters have been saved in the package '%s'."
 msgstr "%s Фільтр XML були збережені у пакеті '%s'."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "XSLT filter package"
+msgid "XSLT filter package"
 msgstr "Пакет фільтрів XSLT"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.STRING.TEXT
 #, fuzzy
-msgid  "The XML filter '%s' has been installed successfully."
+msgid "The XML filter '%s' has been installed successfully."
 msgstr "Фільтр XML '%s' був успішно встановлений."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.STRING.TEXT
 #, fuzzy
-msgid  "%s XML filters have been installed successfully."
+msgid "%s XML filters have been installed successfully."
 msgstr "%s XML фільтри були успішно встановлені."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr "XML фільтр не може бути встановлений, оскільки пакет \"%s\" не містить жодного XML фільтру."
+msgid "No XML filter could be installed because the package '%s' does not contain any XML filters."
+msgstr ""
+"XML фільтр не може бути встановлений, оскільки пакет \"%s\" не містить жодного "
+"XML фільтру."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WORKWINDOW.TEXT
 #, fuzzy
-msgid  "XML Filter Settings"
+msgid "XML Filter Settings"
 msgstr "Параметри фільтрів XML"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
 msgstr "~Створити..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Edit..."
+msgid "~Edit..."
 msgstr "~Редагування..."
+
+#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
+msgid "~Test XSLTs..."
+msgstr ""
+
+#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
+msgid "~Delete..."
+msgstr ""
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Save as Package..."
+msgid "~Save as Package..."
 msgstr "З~берегти пакет..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
+#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
+msgid "~Open Package..."
+msgstr ""
+
+#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "XML Filter List"
+msgid "~Close"
+msgstr "~Закрити"
+
+#: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
+msgid "XML Filter List"
 msgstr ""
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
 #, fuzzy
-msgid  "XML Filter: %s"
+msgid "XML Filter: %s"
 msgstr "Фільтр XML:%s"
+
+#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
+#, fuzzy
+msgid "General"
+msgstr "Загальні"
+
+#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
+msgid "Transformation"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
+#, fuzzy
+msgid "General"
+msgstr "Загальні"
+
+#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
+msgid "Filter name"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
+msgid "Application"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
+msgid "Name of\nfile type"
+msgstr ""
 
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "File extension"
+msgid "File extension"
 msgstr "Розширення файлу"
+
+#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "Comments"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
+msgid "Transformation"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
+msgid "DocType"
+msgstr ""
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "DTD"
+msgid "DTD"
 msgstr "DTD"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "~Огляд..."
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
+msgid "XSLT for export"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Browse..."
+msgstr "~Огляд..."
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
+msgid "XSLT for import"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Browse..."
+msgstr "~Огляд..."
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
+msgid "Template for import"
+msgstr ""
+
+#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "Browse..."
+msgstr "~Огляд..."
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
+msgid "Test XML Filter: %s"
+msgstr ""
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
+msgid "Export"
+msgstr ""
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
+msgid "XSLT for export"
+msgstr ""
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
+msgid "Transform document"
+msgstr ""
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Browse..."
+msgid "~Browse..."
 msgstr "О~гляд..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Current Document"
+msgid "~Current Document"
 msgstr "~Поточний документ"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Import"
+msgid "Import"
 msgstr "Імпорт"
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
+msgid "XSLT for import"
+msgstr ""
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
+msgid "Template for import"
+msgstr ""
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
+msgid "Transform file"
+msgstr ""
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Display source"
+msgid "~Display source"
 msgstr "~Показати первинний текст"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "B~rowse..."
+msgid "B~rowse..."
 msgstr "Ог~ляд..."
+
+#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
+msgid "~Recent File"
+msgstr ""
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "~Закрити"

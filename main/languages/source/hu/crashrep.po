@@ -1,200 +1,267 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hibabejelentő"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Üdvözli az %PRODUCTNAME% %PRODUCTVERSION% Hibabejelentő"
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "A hibabejelentő eszköz az %PRODUCTNAME% működéséről gyűjt adatokat, és elküldi ezeket az Apache OpenOffice címére, hogy a későbbi verziók jobbak lehessenek.\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"A hibabejelentő eszköz az %PRODUCTNAME% működéséről gyűjt adatokat, és "
+"elküldi ezeket az Apache OpenOffice címére, hogy a későbbi verziók jobbak "
+"lehessenek.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "A hibabejelentés könnyű - minden külön fáradság nélkül csak küldje el a jelentést a következő párbeszédablakban megjelenő „Küldés” gomb segítségével. Röviden leírhatja a hiba bekövetkeztének körülményeit, mielőtt a „Küldés” gombra kattint. Ha szeretné látni a jelentést, kattintson a „Megjelenítés” gombra. Semmilyen adat nem lesz elküldve, ha a „Ne küldje el” gombra kattint.\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"A hibabejelentés könnyű - minden külön fáradság nélkül csak küldje el a "
+"jelentést a következő párbeszédablakban megjelenő „Küldés” gomb "
+"segítségével. Röviden leírhatja a hiba bekövetkeztének körülményeit, mielőtt "
+"a „Küldés” gombra kattint. Ha szeretné látni a jelentést, kattintson a "
+"„Megjelenítés” gombra. Semmilyen adat nem lesz elküldve, ha a „Ne küldje el” "
+"gombra kattint.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "Adatvédelem\nAz összegyűjtött információ kizárólag az %PRODUCTNAME% %PRODUCTVERSION% a hiba bekövetkeztekor érvényes állapotára korlátozódik. Egyéb adatok, például jelszavak vagy dokumentumok nem kerülnek feljegyzésre.\n\nAz információk kizárólag az %PRODUCTNAME% minőségének javítását szolgálják, és nem kerülnek ki harmadik félhez.\nAz  Apache OpenOffice adatvédelmi irányelveiről a következő weboldalon tudhat meg többet:\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"Adatvédelem\n"
+"Az összegyűjtött információ kizárólag az %PRODUCTNAME% %PRODUCTVERSION% a "
+"hiba bekövetkeztekor érvényes állapotára korlátozódik. Egyéb adatok, például "
+"jelszavak vagy dokumentumok nem kerülnek feljegyzésre.\n"
+"\n"
+"Az információk kizárólag az %PRODUCTNAME% minőségének javítását szolgálják, "
+"és nem kerülnek ki harmadik félhez.\n"
+"Az  Apache OpenOffice adatvédelmi irányelveiről a következő weboldalon "
+"tudhat meg többet:\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "~Tovább >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Mégse"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hibabejelentő"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Hiba történt az %PRODUCTNAME% %PRODUCTVERSION% futása közben."
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "Az %PRODUCTNAME% %PRODUCTVERSION% Hibabejelentő adatokat gyűjtött, amelyek segíthetik az  Apache OpenOffice-t, hogy javítsa az %PRODUCTNAME% programot.\nAz alábbi helyre beírhatja a hibajelentés címét, és leírhatja, hogy milyen műveletek végrehajtása közben következett be a hiba. Ez után kattintson a „Küldés” gombra.\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"Az %PRODUCTNAME% %PRODUCTVERSION% Hibabejelentő adatokat gyűjtött, amelyek "
+"segíthetik az  Apache OpenOffice-t, hogy javítsa az %PRODUCTNAME% programot.\n"
+"Az alábbi helyre beírhatja a hibajelentés címét, és leírhatja, hogy milyen "
+"műveletek végrehajtása közben következett be a hiba. Ez után kattintson a "
+"„Küldés” gombra.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "Milyen dokumentumtípust (például: bemutató) használt, amikor a hiba bekövetkezett?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+"Milyen dokumentumtípust (például: bemutató) használt, amikor a hiba "
+"bekövetkezett?"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr "Az ~Apache OpenOffice kapcsolatba léphet velem a hibajelentéssel kapcsolatban."
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+"Az ~Apache OpenOffice kapcsolatba léphet velem a hibajelentéssel "
+"kapcsolatban."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "Adja meg az e-mail címét."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~Mik voltak az %PRODUCTNAME% használatának körülményei, amikor a hiba bekövetkezett?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr ""
+"~Mik voltak az %PRODUCTNAME% használatának körülményei, amikor a hiba "
+"bekövetkezett?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << ~Vissza"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "~Küldés"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "~Ne küldje el"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "~Jelentés megjelenítése..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "~Jelentés mentése..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "~Jelentés mentése"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "A hibajelentést nem sikerült elküldeni, mert az alapértelmezett levelezőprogram nem támogatja a MAPI-t.\nHasználjon MAPI-kompatibilis levelezőprogramot."
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"A hibajelentést nem sikerült elküldeni, mert az alapértelmezett "
+"levelezőprogram nem támogatja a MAPI-t.\n"
+"Használjon MAPI-kompatibilis levelezőprogramot."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "A hibajelentést nem sikerült átmenetileg menteni, emiatt nem lehet elküldeni sem."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
+msgstr ""
+"A hibajelentést nem sikerült átmenetileg menteni, emiatt nem lehet elküldeni "
+"sem."
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "A hibajelentést nem sikerült elküldeni, mert a „sendmail” program nem indítható.\nEllenőrizze a „sendmail” beállításait."
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"A hibajelentést nem sikerült elküldeni, mert a „sendmail” program nem "
+"indítható.\n"
+"Ellenőrizze a „sendmail” beállításait."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "A hibajelentést nem sikerült elküldeni. Ellenőrizze a proxybeállításokat a Hibabejelentő eszköz „Beállítások” párbeszédablakában."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"A hibajelentést nem sikerült elküldeni. Ellenőrizze a proxybeállításokat a "
+"Hibabejelentő eszköz „Beállítások” párbeszédablakában."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "A hibajelentést nem sikerült elküldeni, mert nincs internetkapcsolat. Ellenőrizze az internetbeállításokat."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"A hibajelentést nem sikerült elküldeni, mert nincs internetkapcsolat. "
+"Ellenőrizze az internetbeállításokat."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "~Beállítások..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "Beállítások"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "Proxybeállítások"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "~Rendszerbeállítások használata"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "~Közvetlen internetkapcsolat használata"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "Kézi ~beállítások használata"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "HT~TP-proxy"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "~Port"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Az %PRODUCTNAME% Hibabejelentő eszköz működő internetkapcsolatot igényel a hibabejelentések elküldéséhez.\n\nA vállalatok gyakran használnak proxykiszolgálókat tűzfallal kombinálva a belső hálózat védelme érdekében.\n\nHa Önnél is ez a helyzet, akkor meg kell adnia a proxykiszolgáló címét és portszámát."
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"Az %PRODUCTNAME% Hibabejelentő eszköz működő internetkapcsolatot igényel a "
+"hibabejelentések elküldéséhez.\n"
+"\n"
+"A vállalatok gyakran használnak proxykiszolgálókat tűzfallal kombinálva a "
+"belső hálózat védelme érdekében.\n"
+"\n"
+"Ha Önnél is ez a helyzet, akkor meg kell adnia a proxykiszolgáló címét és "
+"portszámát."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "Hibajelentés elküldése"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "Állapot: hibajelentés elküldése folyamatban"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "Állapot: a hibajelentés elküldése sikeres volt."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "Ön bejelölte „Az  Apache OpenOffice kapcsolatba léphet velem a hibajelentéssel kapcsolatban.” négyzetet.\nAdja meg az e-mail címét."
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"Ön bejelölte „Az  Apache OpenOffice kapcsolatba léphet velem a "
+"hibajelentéssel kapcsolatban.” négyzetet.\n"
+"Adja meg az e-mail címét."
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <folyamatazonosító>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "Hozzárendeli az %PRODUCTNAME% folyamatazonosítóját (PID) a Hibabejelentő eszközhöz"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Hozzárendeli az %PRODUCTNAME% folyamatazonosítóját (PID) a Hibabejelentő "
+"eszközhöz"
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "Megjeleníti ezt a segítő szöveget.\nRészletes leírást a Telepítési útmutató tartalmaz."
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"Megjeleníti ezt a segítő szöveget.\n"
+"Részletes leírást a Telepítési útmutató tartalmaz."

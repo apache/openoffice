@@ -1,88 +1,210 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Create New Directory"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
+msgid "List"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
+msgid "Details"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
+msgid "Up One Level"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
+msgid "Default Directory"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+msgid "File ~name:"
+msgstr ""
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
-msgid  "File ~type:"
+msgid "File ~type:"
 msgstr "Datei~typ:"
 
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
+msgid "~Read-only"
+msgstr ""
+
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
-msgid  "Save with password"
+msgid "Save with password"
 msgstr "Mit Kennwort speichern"
 
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
+msgid "~Automatic file name extension"
+msgstr ""
+
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
-msgid  "Edit ~filter settings"
+msgid "Edit ~filter settings"
 msgstr "Filtereinstellungen ~bearbeiten"
 
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
+msgid "~Open"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
+msgid "Open"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
+msgid "Save as"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
+msgid "~Save"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
+msgid "~Path:"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
+msgid "Select path"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
+msgid "~Select"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
+msgid "Current version"
+msgstr ""
+
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
-msgid  "File Preview"
+msgid "File Preview"
 msgstr "Vorschau"
 
+#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
+msgid "Na~me"
+msgstr ""
+
+#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
+msgid "Create new folder"
+msgstr ""
+
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
-msgid  "$name$ does not exist."
+msgid "$name$ does not exist."
 msgstr "$name$ existiert nicht."
 
 #: office/iodlg.src#RID_FILEOPEN_NOTEXISTENTFILE.STRING.TEXT
-msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
-msgstr "Die Datei $name$ existiert nicht.\nBitte überprüfen Sie, ob Sie den korrekten Namen angegeben haben."
+msgid "The file $name$ does not exist.\nMake sure you have entered the correct file name."
+msgstr ""
+"Die Datei $name$ existiert nicht.\n"
+"Bitte überprüfen Sie, ob Sie den korrekten Namen angegeben haben."
+
+#: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
+msgid "All files (*.*)"
+msgstr ""
 
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
-msgid  "The file already exists. Overwrite?"
+msgid "The file already exists. Overwrite?"
 msgstr "Die Datei existiert bereits. Soll sie überschrieben werden?"
 
+#: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
+msgid "Folder"
+msgstr ""
+
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
-msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
-msgstr "Kein Wechselspeichergerät gefunden.\nÜberprüfen Sie, ob es korrekt angeschlossen ist und versuchen Sie es dann erneut."
+msgid "No removable storage device detected.\nMake sure it is plugged in properly and try again."
+msgstr ""
+"Kein Wechselspeichergerät gefunden.\n"
+"Überprüfen Sie, ob es korrekt angeschlossen ist und versuchen Sie es dann "
+"erneut."
 
 #: office/iodlg.src#STR_SVT_ALLFORMATS.STRING.TEXT
-msgid  "All Formats"
+msgid "All Formats"
 msgstr "Alle Formate"
 
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
+msgid "~Automatic file name extension"
+msgstr ""
+
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
+msgid "Save with pass~word"
+msgstr ""
+
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
-msgid  "~Edit filter settings"
+msgid "~Edit filter settings"
 msgstr "Filtereinstellungen ~bearbeiten"
 
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
+msgid "~Read-only"
+msgstr ""
+
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
+msgid "~Link"
+msgstr ""
+
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
+msgid "Pr~eview"
+msgstr ""
+
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
-msgid  "~Play"
+msgid "~Play"
 msgstr "Ab~spielen"
 
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
+msgid "~Version:"
+msgstr ""
+
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
+msgid "S~tyles:"
+msgstr ""
+
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
-msgid  "Style:"
+msgid "Style:"
 msgstr "Rahmenvorlage:"
 
+#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
+msgid "~Selection"
+msgstr ""
+
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
-msgid  "File ~type:"
+msgid "File ~type:"
 msgstr "Datei~typ:"
 
+#: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
+msgid "Select Path"
+msgstr ""
+
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
-msgid  "Please select a folder."
+msgid "Please select a folder."
 msgstr "Bitte wählen Sie einen Ordner."

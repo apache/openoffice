@@ -1,272 +1,284 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
-msgid  "The contents of a combo box or list field could not be determined."
-msgstr "కాంబో బాక్స్ లేదా జాబితా క్షేత్రము యొక్క సారములు నిర్ణయించబడలేక పోయినవి."
+msgid "The contents of a combo box or list field could not be determined."
+msgstr ""
+"కాంబో బాక్స్ లేదా జాబితా క్షేత్రము యొక్క సారములు నిర్ణయించబడలేక పోయినవి."
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
+msgid "Insert graphics"
 msgstr "గ్రాఫిక్స్‌ను చేర్చుము"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
-msgid  "substituted"
+msgid "substituted"
 msgstr "ప్రతిక్షేపించిన"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
-msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr "ఈ నియంత్రిక లోడవుతున్నప్పుడు వొక దోషము యెదురైంది. అందుకని యిది ప్లేస్‌హోల్డర్‌తో పునఃస్థాపించబడింది."
+msgid "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+"ఈ నియంత్రిక లోడవుతున్నప్పుడు వొక దోషము యెదురైంది. అందుకని యిది "
+"ప్లేస్‌హోల్డర్‌తో పునఃస్థాపించబడింది."
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
+msgid "Error reading data from database"
 msgstr "డాటాబేస్‌నుండి డాటాను చదువుటలో దోషము"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
-msgid  "Connection failed"
+msgid "Connection failed"
 msgstr "అనుసంధానము విఫలమైంది"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
-msgid  "The data content could not be loaded."
+msgid "The data content could not be loaded."
 msgstr "డాటా సారము లోడు కాలేక పోయినది."
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
-msgid  "The data content could not be updated"
+msgid "The data content could not be updated"
 msgstr "డాటా సారము నవీకరించలేక పోయినది"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
+msgid "Error inserting the new record"
 msgstr "కొత్త రికార్డును చేర్చుటలో దోషము"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
+msgid "Error updating the current record"
 msgstr "ప్రస్తుత రికార్డును నవీకరించుటలో దోషము"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
+msgid "Error deleting the current record"
 msgstr "ప్రస్తుత రికార్డును తొలగించుటలో దోషము"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
+msgid "Error deleting the specified records"
 msgstr "తెలుపబడిన రికార్డులను తొలగించుటలో దోషము"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
-msgid  "The object cannot be NULL."
+msgid "The object cannot be NULL."
 msgstr "ఆబ్జక్టు NULL కాలేదు."
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
-msgid  "Insert graphics from..."
+msgid "Insert graphics from..."
 msgstr "దీనినుండి గ్రాఫిక్స్‌ను చేర్చుము..."
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
+msgid "Remove graphics"
 msgstr "గ్రాఫిక్స్‌ను తీసివేయుము"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
-msgid  "The given stream is invalid."
+msgid "The given stream is invalid."
 msgstr "ఇవ్వబడిన స్ట్రీమ్ చెల్లనిది."
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
+msgid "Syntax error in query expression"
 msgstr "ప్రశ్న వ్యక్తీకరణ లో దోషము"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
-msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr "ఈ నియంత్రికతో డాటాను మార్పిడి చేయుటకు బందనం చేత మద్దతించబడిన విలువ రకములు వుపయోగించలేము."
+msgid "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+"ఈ నియంత్రికతో డాటాను మార్పిడి చేయుటకు బందనం చేత మద్దతించబడిన విలువ రకములు "
+"వుపయోగించలేము."
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
-msgid  "Record"
+msgid "Record"
 msgstr "రికార్డు"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
-msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr "నియంత్రిక బాహ్య విలువ బందనంకు అనుసంధానించబడి వున్నది, అదే నిర్దారకిలా కూడా పనిచేస్తుంది. మీరు విలువ బదనంను తీసివేయవలసి వుంది, కొత్త నిర్దారకిని అమర్చుటకు ముందుగా."
+msgid "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+"నియంత్రిక బాహ్య విలువ బందనంకు అనుసంధానించబడి వున్నది, అదే నిర్దారకిలా కూడా "
+"పనిచేస్తుంది. మీరు విలువ బదనంను తీసివేయవలసి వుంది, కొత్త నిర్దారకిని "
+"అమర్చుటకు ముందుగా."
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
-msgid  "of"
+msgid "of"
 msgstr "కు"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "ప్రస్తుత ఫారము యొక్క సారము మార్చబడెను.\nనీవు మార్పులను దాచాలనుకుంటున్నావ?"
+msgid "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+"ప్రస్తుత ఫారము యొక్క సారము మార్చబడెను.\n"
+"నీవు మార్పులను దాచాలనుకుంటున్నావ?"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "దోషం అమరికలు చక్కదిద్దు ప్రమాణము "
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "దోషం అమరికలు వడపోత ప్రమాణము"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
-msgid  "To execute this function, parameters are needed."
+msgid "To execute this function, parameters are needed."
 msgstr "ఈ ప్రమేయమును నిర్వర్తించుటకు, పారామితులు అవసరము."
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
-msgid  "This function cannot be executed, but is only for status queries."
+msgid "This function cannot be executed, but is only for status queries."
 msgstr "ఈ ప్రమేయం నిర్వర్తించబడలేదు, స్థితి క్వరీల కొరకు మాత్రమే వున్నది."
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
-msgid  "Unknown function."
+msgid "Unknown function."
 msgstr "తెలువనిది ."
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
-msgid  "Please enter a binding expression."
+msgid "Please enter a binding expression."
 msgstr "దయచేసి బందనం సమీకరణమును ప్రవేశపెట్టండి."
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
-msgid  "This is an invalid binding expression."
+msgid "This is an invalid binding expression."
 msgstr "ఇది వొక చెల్లని బందన సమీకరణము."
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
-msgid  "Value is invalid."
+msgid "Value is invalid."
 msgstr "విలువ చెల్లనిది."
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
-msgid  "A value is required."
+msgid "A value is required."
 msgstr "ఒక విలువ అవసరము."
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
-msgid  "The constraint '$1' not validated."
+msgid "The constraint '$1' not validated."
 msgstr "నిర్భందనం '$1' చెల్లనిది."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
-msgid  "The value is not of the type '$2'."
+msgid "The value is not of the type '$2'."
 msgstr "విలువ '$2' రకముది కాదు."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
-msgid  "The value must be smaller than or equal to $2."
+msgid "The value must be smaller than or equal to $2."
 msgstr "విలువ తప్పక $2 కన్నా చిన్నగా లేదా సమానంగా వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
-msgid  "The value must be smaller than $2."
+msgid "The value must be smaller than $2."
 msgstr "విలువ $2 కన్నా చిన్నగా వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
-msgid  "The value must be greater than or equal to $2."
+msgid "The value must be greater than or equal to $2."
 msgstr "విలువ తప్పక $2 కన్నా పెద్దది లేదా సమానమై వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
-msgid  "The value must be greater than $2."
+msgid "The value must be greater than $2."
 msgstr "విలువ తప్పక $2 కన్నా పెద్దగా వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
-msgid  "The value does not match the pattern '$2'."
+msgid "The value does not match the pattern '$2'."
 msgstr "విలువ పాట్రన్‌ '$2'ను సరిపోల లేదు."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
-msgid  "$2 digits allowed at most."
+msgid "$2 digits allowed at most."
 msgstr "గరిష్టంగా $2 అంకెలు అనుమతించబడతాయి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
-msgid  "$2 fraction digits allowed at most."
+msgid "$2 fraction digits allowed at most."
 msgstr "గరిష్టంగా $2 భిన్నము అంకెలు అనుమతించబడతాయి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
-msgid  "The string must be $2 characters long."
+msgid "The string must be $2 characters long."
 msgstr "స్ట్రింగ్ తప్పక $2 అక్షరముల పొడవు వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
-msgid  "The string must be at least $2 characters long."
+msgid "The string must be at least $2 characters long."
 msgstr "స్ట్రింగ్ తప్పక $2 అక్షరముల పొడవు వుండాలి."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
-msgid  "The string can only be $2 characters long at most."
+msgid "The string can only be $2 characters long at most."
 msgstr "గరిష్టంగా స్ట్రింగ్ $2 అక్షరముల పొడవు మాత్రమే వుండాలి."
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
-msgid  "String"
+msgid "String"
 msgstr "సరళి"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
+msgid "Hyperlink"
 msgstr "మహాతలానికి జోడింపు"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
+msgid "True/False (Boolean)"
 msgstr "సత్యము/అసత్యము (బూలియన్)"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
+msgid "Decimal"
 msgstr "దశాంశం"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
+msgid "Floating point"
 msgstr "ఫ్లోటింగ్ పాయింట్"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
-msgid  "Double"
+msgid "Double"
 msgstr "రెండు"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "తేద"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "సమయము"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "తేదీ మరియు సమయం"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
-msgid  "Month and year"
+msgid "Month and year"
 msgstr "సంవత్సరము యొక్క నెల"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "సంవత్సరము"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
+msgid "Month and day"
 msgstr "నెల మరియు రోజు"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "నెల"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "రోజులు"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
+msgid "Error during evaluation"
 msgstr "పరిణామంలో దోషము"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
-msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr "స్ట్రింగ్ '$1' అనునది కావలసిన రెగ్యులర్ ఎక్సుప్రెషన్ '$2'ను సరిపోల లేదు."
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr ""
+"స్ట్రింగ్ '$1' అనునది కావలసిన రెగ్యులర్ ఎక్సుప్రెషన్ '$2'ను సరిపోల లేదు."
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr "కట్టుకుపోవు"

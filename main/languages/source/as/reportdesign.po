@@ -1,1192 +1,1276 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: as\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
-msgid  "Sorting and Grouping"
+msgid "Sorting and Grouping"
 msgstr "বৰ্গীকৰণ কৰি আছে"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "গোটবোৰ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
-msgid  "Group actions"
+msgid "Group actions"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
-msgid  "Move up"
+msgid "Move up"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
-msgid  "Move down"
+msgid "Move down"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "Properties"
+msgid "Properties"
 msgstr "বৈশিষ্ট্যবোৰ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
-msgid  "Sorting"
+msgid "Sorting"
 msgstr "বৰ্গীকৰণ কৰি আছে"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "আৰোহণ কৰি আছে"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
-msgid  "Descending"
+msgid "Descending"
 msgstr "অৱৰোহণ কৰি আছে"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "দলৰ হেডাৰ"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
+msgid "Present"
 msgstr "বৰ্তমানৰ মূল্য. এটা বিনিয়োগৰ বৰ্তমানৰ মূল্যটো গণনা কৰে."
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
+msgid "Not present"
 msgstr "নাই"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "ফুটাৰ"
 
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Present"
+msgstr "বৰ্তমানৰ মূল্য. এটা বিনিয়োগৰ বৰ্তমানৰ মূল্যটো গণনা কৰে."
+
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
+msgid "Not present"
+msgstr "নাই"
+
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
-msgid  "Group On"
+msgid "Group On"
 msgstr "গোট"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Each Value"
+msgid "Each Value"
 msgstr "মূল্য"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
-msgid  "Group Interval"
+msgid "Group Interval"
 msgstr "গোট"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "অনুপাত ৰাখক"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
-msgid  "No"
+msgid "No"
 msgstr "নহয়"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "গোটেই গোটটো"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "প্রথম নাম"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "সহায়"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
-msgid  "Field/Expression"
+msgid "Field/Expression"
 msgstr "নিয়মিত অভিব্যক্তি"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
-msgid  "Sort Order"
+msgid "Sort Order"
 msgstr "ক্ৰম বৰ্গীকৰণ কৰক"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
-msgid  "Prefix Characters"
+msgid "Prefix Characters"
 msgstr "আখৰবোৰ:"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "বছৰ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
-msgid  "Quarter"
+msgid "Quarter"
 msgstr "Quarter"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
-msgid  "Month"
+msgid "Month"
 msgstr "মাহ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
-msgid  "Week"
+msgid "Week"
 msgstr "প্ৰতি সপ্তাহে"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
-msgid  "Day"
+msgid "Day"
 msgstr "দিন"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
-msgid  "Hour"
+msgid "Hour"
 msgstr "ঘন্টা"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
-msgid  "Minute"
+msgid "Minute"
 msgstr "মিনিট"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
-msgid  "Interval"
+msgid "Interval"
 msgstr "গোট"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
-msgid  "Select a field or type an expression to sort or group on."
+msgid "Select a field or type an expression to sort or group on."
 msgstr "নিয়মিত অভিব্যক্তি"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
-msgid  "Display a header for this group?"
+msgid "Display a header for this group?"
 msgstr "প্ৰদৰ্শন"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
-msgid  "Display a footer for this group?"
+msgid "Display a footer for this group?"
 msgstr "প্ৰদৰ্শন"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
-msgid  "Select the value or range of values that starts a new group."
+msgid "Select the value or range of values that starts a new group."
 msgstr "পৰিসৰ বাছনী কৰক"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
-msgid  "Interval or number of characters to group on."
+msgid "Interval or number of characters to group on."
 msgstr "প্ৰতিস্থাপিত কৰিবলগীয়া আখৰবোৰৰ সংখ্যা."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
-msgid  "Keep group together on one page?"
+msgid "Keep group together on one page?"
 msgstr "একে পৃষ্ঠাত একে অনুপাত ৰাখক ?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
-msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr "বৃদ্ধি কৰা বা কম কৰাৰ ক্ৰম নিৰ্ধাৰণ কৰক । Ascending মানে A to Z বা 0 to 9"
+msgid "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr ""
+"বৃদ্ধি কৰা বা কম কৰাৰ ক্ৰম নিৰ্ধাৰণ কৰক । Ascending মানে A to Z বা 0 to 9"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
-msgid  "Page Numbers"
+msgid "Page Numbers"
 msgstr "ঋণাত্মক সংখ্যাবোৰ ৰঙা"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "ফৰমেট"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
-msgid  "Page N"
+msgid "Page N"
 msgstr "পৃষ্ঠা..."
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
-msgid  "Page N of M"
+msgid "Page N of M"
 msgstr "পৃষ্ঠা..."
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "স্থান"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
-msgid  "Top of Page (Header)"
+msgid "Top of Page (Header)"
 msgstr "হেডাৰলৈ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
-msgid  "Bottom of Page (Footer)"
+msgid "Bottom of Page (Footer)"
 msgstr "তলৰ পৃষ্ঠাৰ সীমাৰেখা"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
-msgid  "General"
+msgid "General"
 msgstr "সাধাৰণ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
-msgid  "Alignment:"
+msgid "Alignment:"
 msgstr "শাৰীকৰণ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "বাওঁফাল"
+msgid "Left"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "কেন্দ্ৰ"
+msgid "Center"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "সোঁফাল"
+msgid "Right"
+msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
-msgid  "Show Number on First Page"
+msgid "Show Number on First Page"
 msgstr "প্রথম পৃষ্ঠা"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "সহায়"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
-msgid  "\"Page \" & #PAGENUMBER#"
+msgid "\"Page \" & #PAGENUMBER#"
 msgstr "\"Page \" & #PAGENUMBER#"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
-msgid  " & \" of \" & #PAGECOUNT#"
+msgid " & \" of \" & #PAGECOUNT#"
 msgstr " & \" of \" & #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
+msgid "Page Setup"
 msgstr "পৃষ্ঠা..."
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
+msgid "Page"
 msgstr "পৃষ্ঠা"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "পৃষ্ঠভূমি"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
+msgid "Return"
 msgstr "Return"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
+msgid "Page"
+msgstr "পৃষ্ঠা"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
+msgid "Background"
+msgstr "পৃষ্ঠভূমি"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
-msgid  "Section Setup"
+msgid "Section Setup"
 msgstr "খণ্ড..."
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "Return"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
+msgid "Background"
+msgstr "পৃষ্ঠভূমি"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
-msgid  "Character Settings"
+msgid "Character Settings"
 msgstr "আখৰ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "আখৰ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "আখৰৰ প্ৰভাববোৰ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "স্থান"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
-msgid  "Asian Layout"
+msgid "Asian Layout"
 msgstr "এছীয়ান খচৰাৰ প্রকাৰ "
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
+msgid "Background"
+msgstr "পৃষ্ঠভূমি"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "শাৰীকৰণ"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "Return"
+
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
-msgid  "Character"
+msgid "Character"
 msgstr "আখৰ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
-msgid  "Line"
+msgid "Line"
+msgstr "ৰেখা"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+msgid "Line"
 msgstr "ৰেখা"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
+msgid "Line Styles"
 msgstr "ৰেখা শৈলীবোৰ"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
+msgid "Arrow Styles"
 msgstr "কাঁড়ৰ শৈলীবোৰ"
 
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
+msgid "Return"
+msgstr "Return"
+
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
+msgid "Line"
+msgstr "ৰেখা"
+
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
-msgid  "Report navigator"
+msgid "Report navigator"
 msgstr "প্ৰতিবেদন নেভিগেটৰ"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "ফাংকশ্বনবোৰ"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
-msgid  "Groups"
+msgid "Groups"
 msgstr "গোটবোৰ"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
+msgid "Sorting and Grouping..."
 msgstr "বৰ্গীকৰণ কৰি আছে"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
-msgid  "Page Header/Footer..."
+msgid "Page Header/Footer..."
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
-msgid  "Report Header/Footer..."
+msgid "Report Header/Footer..."
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
-msgid  "New Function"
+msgid "New Function"
 msgstr "ফাংকশ্বন"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "বৈশিষ্ট্যবোৰ..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Field Value Is"
+msgid "Field Value Is"
 msgstr "ক্ষেত্ৰৰ মান হ'ল"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Expression Is"
+msgid "Expression Is"
 msgstr "নিয়মিত অভিব্যক্তি"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
-msgid  "between"
+msgid "between"
 msgstr "মাজত"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
-msgid  "not between"
+msgid "not between"
 msgstr "মাজত নহয়"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
-msgid  "equal to"
+msgid "equal to"
 msgstr "সমান"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
-msgid  "not equal to"
+msgid "not equal to"
 msgstr "সমান নহয়"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
-msgid  "greater than"
+msgid "greater than"
 msgstr "ডাঙৰ  "
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
-msgid  "less than"
+msgid "less than"
 msgstr "সৰু"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
-msgid  "greater than or equal to"
+msgid "greater than or equal to"
 msgstr "ডাঙৰ বা সমান"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
-msgid  "less than or equal to"
+msgid "less than or equal to"
 msgstr "কম বা সমান"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
-msgid  "and"
+msgid "and"
 msgstr "আৰু"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
-msgid  "Example"
+msgid "Example"
 msgstr "উদাহৰণ"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
-msgid  "Conditional Formatting"
+msgid "Conditional Formatting"
 msgstr "চৰ্তসূচক ফৰমেটিং"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "সহায়"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
-msgid  "Condition $number$"
+msgid "Condition $number$"
 msgstr "চৰ্ত $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "বগা"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
-msgid  "Font color"
+msgid "Font color"
 msgstr "আখৰৰ ৰং"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
-msgid  "Background"
+msgid "Background"
 msgstr "পৃষ্ঠভূমি"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
-msgid  "No Fill"
+msgid "No Fill"
 msgstr "পূৰ্ণ কৰক"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
-msgid  "Sort Ascending"
+msgid "Sort Ascending"
 msgstr "আৰোহণ কৰি আছে"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
-msgid  "Sort Descending"
+msgid "Sort Descending"
 msgstr "অৱৰোহণ কৰি আছে"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
-msgid  "Remove sorting"
+msgid "Remove sorting"
 msgstr "বৰ্গীকৰণ কৰি আছে"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "ভৰাওক"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "সহায়"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgid "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "তাৰিখ আৰু সময়"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
-msgid  "Include Date"
+msgid "Include Date"
 msgstr "অন্তর্ভূক্ত কৰক"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
+msgid "Format"
 msgstr "ফৰমেট"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
-msgid  "Include Time"
+msgid "Include Time"
 msgstr "অন্তর্ভূক্ত কৰক"
 
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
+msgid "Format"
+msgstr "ফৰমেট"
+
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "সহায়"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
+msgid "General"
 msgstr "সাধাৰণ"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
+msgid "Data"
 msgstr "ডাটা"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "নহয়"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "হয়"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
-msgid  "Force New Page"
+msgid "Force New Page"
 msgstr "নতুন পৃষ্ঠা বলবৎ কৰক"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "কোনো নহয়"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
-msgid  "Before Section"
+msgid "Before Section"
 msgstr "আগৰ খণ্ড"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
-msgid  "After Section"
+msgid "After Section"
 msgstr "পিছৰ খণ্ড"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
-msgid  "Before & After Section"
+msgid "Before & After Section"
 msgstr "আগৰ & পিছৰ খণ্ড"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
-msgid  "New Row Or Column"
+msgid "New Row Or Column"
 msgstr "শাৰীৰ & স্তম্ভৰ হেডাৰবোৰ"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
-msgid  "Keep Together"
+msgid "Keep Together"
 msgstr "অনুপাত ৰাখক"
 
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
+msgid "No"
+msgstr "নহয়"
+
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Whole Group"
+msgid "Whole Group"
 msgstr "গোটেই গোটটো"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
-msgid  "With First Detail"
+msgid "With First Detail"
 msgstr "প্রথম নাম"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
-msgid  "Can Grow"
+msgid "Can Grow"
 msgstr "ওপৰলৈ যাওক"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
-msgid  "Can Shrink"
+msgid "Can Shrink"
 msgstr "কোঁচ খুৱাওক"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
-msgid  "Repeat Section"
+msgid "Repeat Section"
 msgstr "পুনঃ কৰাৰ খণ্ড"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
-msgid  "Print repeated values"
+msgid "Print repeated values"
 msgstr "মূল্যবোৰ"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
-msgid  "Conditional Print Expression"
+msgid "Conditional Print Expression"
 msgstr "নিয়মিত অভিব্যক্তি"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
-msgid  "Start new column"
+msgid "Start new column"
 msgstr "নতুন স্তম্ভ আৰম্ভ কৰক"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
-msgid  "Start new page"
+msgid "Start new page"
 msgstr "নতুন পৃষ্ঠা আৰম্ভ কৰক"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
-msgid  "Reset page number"
+msgid "Reset page number"
 msgstr "পৃষ্ঠাৰ সংখ্যা পুনঃ স্থাপন কৰক"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
-msgid  "Chart type"
+msgid "Chart type"
 msgstr "ছার্ট ধৰণ"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
-msgid  "Print When Group Change"
+msgid "Print When Group Change"
 msgstr "সলনি কৰক"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr "সদায় দৃষ্টিগোচৰ "
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
-msgid  "Group keep together"
+msgid "Group keep together"
 msgstr "অনুপাত ৰাখক"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "Per Page"
+msgid "Per Page"
 msgstr "প্ৰতি পৃষ্ঠা"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
-msgid  "Per Column"
+msgid "Per Column"
 msgstr "প্ৰতি স্তম্ভ"
 
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
+msgid "None"
+msgstr "কোনো নহয়"
+
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
-msgid  "Section"
+msgid "Section"
 msgstr "খণ্ড..."
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "স্বয়ংক্ৰিয়"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
-msgid  "Page header"
+msgid "Page header"
 msgstr "হেডাৰলৈ"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
-msgid  "Page footer"
+msgid "Page footer"
 msgstr "পৃষ্ঠাৰ ফুটাৰ"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
-msgid  "All Pages"
+msgid "All Pages"
 msgstr "সকলো পৃষ্ঠা"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
-msgid  "Not With Report Header"
+msgid "Not With Report Header"
 msgstr "ৰিপ'ৰ্ট হেডাৰ নোহোৱাকে"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
-msgid  "Not With Report Footer"
+msgid "Not With Report Footer"
 msgstr "ৰিপ'ৰ্ট ফুটাৰ নোহোৱাকে"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
-msgid  "Not With Report Header/Footer"
+msgid "Not With Report Header/Footer"
 msgstr "ৰিপ'ৰ্ট হেডাৰ/ফুটাৰ নোহোৱাকে"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
-msgid  "Deep traversing"
+msgid "Deep traversing"
 msgstr "Deep traversing"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
-msgid  "Pre evaluation"
+msgid "Pre evaluation"
 msgstr "মূল্যায়নৰ আগতে"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "Position X"
+msgid "Position X"
 msgstr "অৱস্থান X"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "Position Y"
+msgid "Position Y"
 msgstr "অৱস্থান Y"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
+msgid "Width"
 msgstr "প্ৰস্থ"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
-msgid  "Height"
+msgid "Height"
 msgstr "উচ্চতা"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
-msgid  "Initial value"
+msgid "Initial value"
 msgstr "মূল্য"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
-msgid  "Preserve as Link"
+msgid "Preserve as Link"
 msgstr "সংযোগ"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
-msgid  "Formula"
+msgid "Formula"
 msgstr "সূত্র"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
-msgid  "Data field"
+msgid "Data field"
 msgstr "ফিল্ডৰ নাম"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "আখৰ"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
-msgid  "Background color"
+msgid "Background color"
 msgstr "পৃষ্ঠভূমিৰ ৰং"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
+msgid "Background Transparent"
+msgstr "স্বচ্ছ"
+
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
+msgid "Background Transparent"
 msgstr "স্বচ্ছ"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
-msgid  "This operation is not allowed. The control overlaps with another one."
+msgid "This operation is not allowed. The control overlaps with another one."
 msgstr "এইটো বৰ্জিত । নিয়ন্ত্ৰণ অন্য এটাৰ লগত সংঘৰ্ষ ।"
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
-msgid  "This position can not be set. It is invalid."
+msgid "This position can not be set. It is invalid."
 msgstr "এই অৱস্থান পোৱা নগ'ল । এইটো অবৈধ ।"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
-msgid  "Group: %1"
+msgid "Group: %1"
 msgstr "গোট: %1"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
-msgid  "Function"
+msgid "Function"
 msgstr "ফাংকশ্বন"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
-msgid  "Scope"
+msgid "Scope"
 msgstr "Scope"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
-msgid  "Data Field Type"
+msgid "Data Field Type"
 msgstr "তথ্য ফিল্ডৰ ধৰণ"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
-msgid  "Field or Formula"
+msgid "Field or Formula"
 msgstr "ক্ষেত্ৰ বা সূত্র"
 
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
+msgid "Function"
+msgstr "ফাংকশ্বন"
+
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
-msgid  "Counter"
+msgid "Counter"
 msgstr "কাউন্টাৰ"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
-msgid  "User defined Function"
+msgid "User defined Function"
 msgstr "ব্যৱহাৰকৰ্তাৰ দ্বাৰা সংজ্ঞা নিৰূপিত"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "লিংক মাস্টাৰ ফিল্ডবোৰ"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr "লিংক স্লেভ ফিল্ডবোৰ"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
-msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "প্ৰতিবেদনৰ বৰ্ত্তমানৰ ৰেক্ৰডৰ বিস্তৃত তথ্য দেখুৱাবলৈ ছাৰ্ট ব্যৱহাৰ কৰা হয় । এইটো কৰিবলৈ, ছাৰ্টৰ কোনবোৰ স্তম্ভ ৰিপৰ্টৰ সৈতে মিলে আপুনি ক'ব পাৰে ।"
+msgid "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+"প্ৰতিবেদনৰ বৰ্ত্তমানৰ ৰেক্ৰডৰ বিস্তৃত তথ্য দেখুৱাবলৈ ছাৰ্ট ব্যৱহাৰ কৰা হয় । "
+"এইটো কৰিবলৈ, ছাৰ্টৰ কোনবোৰ স্তম্ভ ৰিপৰ্টৰ সৈতে মিলে আপুনি ক'ব পাৰে ।"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
-msgid  "Chart"
+msgid "Chart"
 msgstr "ছার্ট"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "ৰিপৰ্ট"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
-msgid  "Preview Row(s)"
+msgid "Preview Row(s)"
 msgstr "পূৰ্বদৃশ্য"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
-msgid  "Area"
+msgid "Area"
 msgstr "এৰিয়া"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
-msgid  "Report Output Format"
+msgid "Report Output Format"
 msgstr "ৰিপৰ্ট নিৰ্গমৰ আকৃতি"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
-msgid  "Middle"
+msgid "Middle"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
-msgid  "Horz. Alignment"
+msgid "Horz. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
-msgid  "Block"
+msgid "Block"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
-msgid  "Center"
+msgid "Center"
 msgstr ""
 
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
+msgid "Counter"
+msgstr "কাউন্টাৰ"
+
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
-msgid  "Accumulation"
+msgid "Accumulation"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
-msgid  "Minimum"
+msgid "Minimum"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
-msgid  "Maximum"
+msgid "Maximum"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "বৈশিষ্ট্যবোৰ:"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "কোনো নিয়ন্ত্রণ নাই"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "বহু অংশবিশিষ্ট নির্বাচন আৰম্ভ"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
+msgid "Image Control"
 msgstr "ছবি নিয়ন্ত্ৰকৰ সৈতে প্ৰতিস্থাপন কৰক"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
+msgid "Label field"
 msgstr "লেবেল ফিল্ড"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
+msgid "Line"
 msgstr "ৰেখা"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
+msgid "Formatted Field"
 msgstr "ফৰমেট কৰা ফিল্ড"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
+msgid "Shape"
 msgstr "আকৃতি"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "ৰিপৰ্ট"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
+msgid "Section"
 msgstr "খণ্ড..."
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
+msgid "Function"
 msgstr "ফাংকশ্বন"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
+msgid "Group"
 msgstr "গোট"
 
 #: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
+msgid "Show ruler"
 msgstr "মাপনী"
 
 #: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
+msgid "Show grid"
 msgstr "জাল"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
+msgid "Change Object"
 msgstr " পৃষ্ঠাবোৰৰ অনুক্ৰম সলনি কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
-msgid  "Move Group(s)"
+msgid "Move Group(s)"
 msgstr "গোট"
 
 #: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
+msgid "Conditional Formatting"
 msgstr "চৰ্তসূচক ফৰমেটিং"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
+msgid "Remove report header / report footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
+msgid "Add report header / report footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
+msgid "Remove page header / page footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
+msgid "Add page header / page footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
-msgid  "Change property '#'"
+msgid "Change property '#'"
 msgstr "সলনি কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
-msgid  "Add group header "
+msgid "Add group header "
 msgstr "দলৰ হেডাৰ"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
-msgid  "Remove group header "
+msgid "Remove group header "
 msgstr "দলৰ হেডাৰ"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
-msgid  "Add group footer "
+msgid "Add group footer "
 msgstr "ফুটাৰ"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
-msgid  "Remove group footer "
+msgid "Remove group footer "
 msgstr "ফুটাৰ"
 
 #: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
+msgid "Add function"
 msgstr "ফাংকশ্বন"
 
 #: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
+msgid "Delete function"
 msgstr "ফাংকশ্বন"
 
 #: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
+msgid "Design"
 msgstr "আর্হি"
 
 #: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "পূৰ্বদৃশ্য"
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
-msgid  "Report #"
+msgid "Report #"
 msgstr "ৰিপৰ্ট"
 
 #: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
+msgid "~Report name"
 msgstr "ৰিপর্টৰ নাম"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
+msgid "Delete Group"
 msgstr "ডিলিট কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
+msgid "Add Group"
 msgstr "ফুটাৰ"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
+msgid "Delete Selection"
 msgstr "নিৰ্বাচন"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
+msgid "Delete Function"
 msgstr "ফাংকশ্বন"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
+msgid "Change Size"
 msgstr "আখৰৰ আকাৰ সলনি কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
+msgid "Paste"
 msgstr "আঠা লগাওক"
 
 #: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
+msgid "Insert Control"
 msgstr "ভৰাওক..."
 
 #: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
+msgid "Delete Control"
 msgstr "ডিলিট কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
+msgid "Insert Group"
 msgstr "ভৰাওক..."
 
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
+msgid "Delete Group"
+msgstr "ডিলিট কৰক"
+
 #: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
+msgid "GroupHeader"
 msgstr "GroupHeader"
 
 #: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
+msgid "GroupFooter"
 msgstr "GroupFooter"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
+msgid "Sorting and Grouping..."
 msgstr "বৰ্গীকৰণ কৰি আছে"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
+msgid "Background Color..."
 msgstr "পৃষ্ঠভূমিৰ ৰং"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
+msgid "Ruler..."
 msgstr "মাপনী"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
+msgid "Grid..."
 msgstr "জাল"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
+msgid "~Arrange"
 msgstr "ক্রম অনুসাৰে ৰাখক"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
+msgid "Bring ~Forward"
 msgstr "আগবঢ়াই আনক"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
+msgid "Send Back~ward"
 msgstr "পাছলৈ পথাওক"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
+msgid "~Object Resizing"
 msgstr "বস্তুৰ পুনঃ আকাৰ দিয়া (~O)"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to smallest width"
+msgid "~Fit to smallest width"
 msgstr "ৰেখা প্ৰস্থত খাপ খুৱাওক "
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
-msgid  "~Fit to greatest width"
+msgid "~Fit to greatest width"
 msgstr "ৰেখা প্ৰস্থত খাপ খুৱাওক "
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
+msgid "~Fit to smallest height"
 msgstr "উচ্চতালৈ টেক্সট খাপ খুৱাওক "
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to greatest height"
+msgid "~Fit to greatest height"
 msgstr "উচ্চতালৈ টেক্সট খাপ খুৱাওক "
 
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
+msgid "Section"
+msgstr "খণ্ড..."
+
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
+msgid "Shrink"
 msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
+msgid "Shrink from top"
 msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
+msgid "Shrink from bottom"
 msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
+msgid "Distribution..."
 msgstr "বিতৰণ "
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "বৈশিষ্ট্যবোৰ..."
 
 #: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
+msgid "Add field:"
 msgstr "ফিল্ড যোগ কৰক..."
 
 #: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
+msgid "Filter"
 msgstr "ফিল্টাৰ"
 
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base Report"
+msgid " - %PRODUCTNAME Base Report"
 msgstr "%PRODUCTNAME আধাৰ"
 
 #: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "শিৰোনাম বিহিন"
 
 #: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
+msgid "Change Alignment"
 msgstr "শাৰীকৰণ"
 
 #: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
+msgid "# Header"
 msgstr "হেডাৰ"
 
 #: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
+msgid "# Footer"
 msgstr "ফুটাৰ"
 
 #: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
+msgid "Insert graphics"
 msgstr "গ্রাফিক্স ভৰাওক"
 
 #: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "ডিলিট কৰক"
 
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
+msgid "Function"
+msgstr "ফাংকশ্বন"
+
 #: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
+msgid "An error occurred while creating the report."
 msgstr "সক্ৰিয় কৰোঁতে এটা ভুল হ'ল:"
 
 #: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
+msgid "An exception of type $type$ was caught."
 msgstr "caught exception: "
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
+msgid "Change font"
 msgstr "ফন্ট সলনি কৰক"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
+msgid "Change page attributes"
 msgstr "টেক্সট এট্ৰিবিয়ুটবোৰ"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Page Header/Footer"
+msgid "Insert Page Header/Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Page Header/Footer"
+msgid "Delete Page Header/Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Column Header/Footer"
+msgid "Insert Column Header/Footer"
 msgstr "স্তম্ভ বিৰতি ভৰাওক"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Column Header/Footer"
+msgid "Delete Column Header/Footer"
 msgstr "স্তম্ভ ডিলিট কৰক"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
-msgid  "Insert Report Header/Footer"
+msgid "Insert Report Header/Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
-msgid  "Delete Report Header/Footer"
+msgid "Delete Report Header/Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
+msgid "The report can not be executed unless it is bound to content."
 msgstr "অনুসন্ধান চলাব নোৱাৰি । এইটো বৰ জটিল ।"
 
 #: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
+msgid "The report can not be executed unless at least one object has been inserted."
 msgstr "অনুসন্ধান চলাব নোৱাৰি । ইয়াক অতি কমেও এটা টেবুলৰ প্ৰয়োজন ।"
 
 #: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
+msgid "Shrink Section"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
+msgid "Detail"
 msgstr "প্রথম নাম"
 
 #: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
+msgid "Page Header"
 msgstr "হেডাৰলৈ"
 
 #: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
+msgid "Page Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
+msgid "Report Header"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
+msgid "Report Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "ভৰাওক"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
+msgid "Detail"
 msgstr "প্রথম নাম"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
+msgid "Page Header"
 msgstr "হেডাৰলৈ"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
+msgid "Page Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
-msgid  "Group Header"
+msgid "Group Header"
 msgstr "দলৰ হেডাৰ"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
-msgid  "Group Footer"
+msgid "Group Footer"
 msgstr "ফুটাৰ"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
+msgid "Report Header"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
+msgid "Report Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
-msgid  "The name '#1' already exists and can not be asssigned again."
+msgid "The name '#1' already exists and can not be asssigned again."
 msgstr "'#1' নামটো ইতিমধ্যে আছেই."
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgid "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr "আপুনি অবৈধ তৰ্ক দিছে । '#1' চাওক বৈধ তৰ্কৰ কাৰণে ।"
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
-msgid  "The element is invalid."
+msgid "The element is invalid."
 msgstr "সংযোগ ফৰমেটটো অকাৰ্যকৰী."
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
+msgid "Label field"
 msgstr "লেবেল ফিল্ড"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
-msgid  "Formatted field"
+msgid "Formatted field"
 msgstr "ফৰমেট কৰি থোৱা ফিল্ড"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
-msgid  "Image control"
+msgid "Image control"
 msgstr "ছবি নিয়ন্ত্ৰণ"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "ৰিপৰ্ট"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
-msgid  "Shape"
+msgid "Shape"
 msgstr "আকৃতি"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
-msgid  "Fixed line"
+msgid "Fixed line"
 msgstr "নিৰ্ধাৰিত"

@@ -1,1082 +1,1104 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_DESCRIPTION.STRING.TEXT
-msgid  "Image bullet in paragraph"
+msgid "Image bullet in paragraph"
 msgstr "Bulatan gambar pada paragraf"
 
 #: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_NAME.STRING.TEXT
-msgid  "Image bullet"
+msgid "Image bullet"
 msgstr "Bulatan gambar"
 
 #: editeng/editeng.src#RID_EDITUNDO_DEL.STRING.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Hapus"
 
 #: editeng/editeng.src#RID_EDITUNDO_MOVE.STRING.TEXT
-msgid  "Move"
-msgstr "Pindahkan"
+#, fuzzy
+msgid "Move"
+msgstr "Pindah"
 
 #: editeng/editeng.src#RID_EDITUNDO_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Masukkan"
+#, fuzzy
+msgid "Insert"
+msgstr "Sisip"
 
 #: editeng/editeng.src#RID_EDITUNDO_REPLACE.STRING.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr "Ganti"
 
 #: editeng/editeng.src#RID_EDITUNDO_SETATTRIBS.STRING.TEXT
-msgid  "Apply attributes"
+#, fuzzy
+msgid "Apply attributes"
 msgstr "Terapkan atribut"
 
 #: editeng/editeng.src#RID_EDITUNDO_RESETATTRIBS.STRING.TEXT
-msgid  "Reset attributes"
+msgid "Reset attributes"
 msgstr "Reset atribut"
 
 #: editeng/editeng.src#RID_EDITUNDO_INDENT.STRING.TEXT
-msgid  "Indent"
-msgstr "Masuk"
+#, fuzzy
+msgid "Indent"
+msgstr "Indentasi"
 
 #: editeng/editeng.src#RID_EDITUNDO_SETSTYLE.STRING.TEXT
-msgid  "Apply Styles"
+msgid "Apply Styles"
 msgstr "Terapkan Gaya"
 
 #: editeng/editeng.src#RID_EDITUNDO_TRANSLITERATE.STRING.TEXT
-msgid  "Case/Characters"
+msgid "Case/Characters"
 msgstr "Huruf/Karakter"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_SPELLING.MENUITEM.TEXT
-msgid  "~Spellcheck..."
+msgid "~Spellcheck..."
 msgstr "~Periksa ejaan..."
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_INSERT.MENUITEM.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr "~Tambah"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_IGNORE.MENUITEM.TEXT
-msgid  "Ignore All"
+msgid "Ignore All"
 msgstr "Abaikan Semua"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_AUTOCORR.MENUITEM.TEXT
-msgid  "AutoCorrect"
+msgid "AutoCorrect"
 msgstr "AutoCorrect"
 
 #: editeng/editeng.src#RID_STR_WORD.STRING.TEXT
-msgid  "Word is %x"
+msgid "Word is %x"
 msgstr "Kata adalah %x"
 
 #: editeng/editeng.src#RID_STR_PARAGRAPH.STRING.TEXT
-msgid  "Paragraph is %x"
+msgid "Paragraph is %x"
 msgstr "Paragraf adalah %x"
 
 #: items/page.src#RID_SVXSTR_PAPERBIN.STRING.TEXT
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "Baki kertas"
 
 #: items/page.src#RID_SVXSTR_PAPERBIN_SETTINGS.STRING.TEXT
-msgid  "[From printer settings]"
+msgid "[From printer settings]"
 msgstr "[Dari pengaturan pencetak]"
 
 #: items/svxitems.src#RID_SVXITEMS_TRUE.STRING.TEXT
-msgid  "True"
+msgid "True"
 msgstr "Benar"
 
 #: items/svxitems.src#RID_SVXITEMS_FALSE.STRING.TEXT
-msgid  "False"
+msgid "False"
 msgstr "Salah"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_NONE.STRING.TEXT
-msgid  "No break"
+msgid "No break"
 msgstr "Menyambung"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BEFORE.STRING.TEXT
-msgid  "Break before new column"
+msgid "Break before new column"
 msgstr "Putus sebelum kolom baru"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_AFTER.STRING.TEXT
-msgid  "Break after new column"
+msgid "Break after new column"
 msgstr "Putus setelah kolom baru"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BOTH.STRING.TEXT
-msgid  "Break before and after new column"
+msgid "Break before and after new column"
 msgstr "Putus sebelum dan sesudah kolom baru"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BEFORE.STRING.TEXT
-msgid  "Break before new page"
+msgid "Break before new page"
 msgstr "Putus sebelum halaman baru"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_AFTER.STRING.TEXT
-msgid  "Break after new page"
+msgid "Break after new page"
 msgstr "Putus setelah kolom baru"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BOTH.STRING.TEXT
-msgid  "Break before and after new page"
+msgid "Break before and after new page"
 msgstr "Putus sebelum dan sesudah halaman baru"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_NONE.STRING.TEXT
-msgid  "No Shadow"
+msgid "No Shadow"
 msgstr "Tanpa Bayangan"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPLEFT.STRING.TEXT
-msgid  "Shadow top left"
+msgid "Shadow top left"
 msgstr "Bayangan di kiri atas"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPRIGHT.STRING.TEXT
-msgid  "Shadow top right"
+msgid "Shadow top right"
 msgstr "Bayangan di kanan atas"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMLEFT.STRING.TEXT
-msgid  "Shadow bottom left"
+msgid "Shadow bottom left"
 msgstr "Bayangan di kiri bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMRIGHT.STRING.TEXT
-msgid  "Shadow bottom right"
+msgid "Shadow bottom right"
 msgstr "Bayangan di kanan bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR.STRING.TEXT
-msgid  "Color "
+msgid "Color "
 msgstr "Warna "
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BLACK.STRING.TEXT
-msgid  "Black"
+msgid "Black"
 msgstr "Hitam"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BLUE.STRING.TEXT
-msgid  "Blue"
+msgid "Blue"
 msgstr "Biru"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_GREEN.STRING.TEXT
-msgid  "Green"
+msgid "Green"
 msgstr "Hijau"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_CYAN.STRING.TEXT
-msgid  "Cyan"
+msgid "Cyan"
 msgstr "Cyan"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_RED.STRING.TEXT
-msgid  "Red"
+msgid "Red"
 msgstr "Merah"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_MAGENTA.STRING.TEXT
-msgid  "Magenta"
+msgid "Magenta"
 msgstr "Magenta"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BROWN.STRING.TEXT
-msgid  "Brown"
+msgid "Brown"
 msgstr "Coklat"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_GRAY.STRING.TEXT
-msgid  "Gray"
+msgid "Gray"
 msgstr "Abu - abu"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGRAY.STRING.TEXT
-msgid  "Light Gray"
+msgid "Light Gray"
 msgstr "Abu-abu Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTBLUE.STRING.TEXT
-msgid  "Light Blue"
+msgid "Light Blue"
 msgstr "Biru Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGREEN.STRING.TEXT
-msgid  "Light Green"
+msgid "Light Green"
 msgstr "Hijau Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTCYAN.STRING.TEXT
-msgid  "Light Cyan"
+msgid "Light Cyan"
 msgstr "Cyan Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTRED.STRING.TEXT
-msgid  "Light Red"
+msgid "Light Red"
 msgstr "Merah Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTMAGENTA.STRING.TEXT
-msgid  "Light Magenta"
+msgid "Light Magenta"
 msgstr "Magenta Terang"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_YELLOW.STRING.TEXT
-msgid  "Yellow"
+msgid "Yellow"
 msgstr "Kuning"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "Putih"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_NONE.STRING.TEXT
-msgid  "Not Italic"
+msgid "Not Italic"
 msgstr "Bukan Italic"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_OBLIQUE.STRING.TEXT
-msgid  "Oblique italic"
+msgid "Oblique italic"
 msgstr "Oblique italic"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_NORMAL.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "italic"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_THIN.STRING.TEXT
-msgid  "thin"
+msgid "thin"
 msgstr "tipis"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRALIGHT.STRING.TEXT
-msgid  "ultra thin"
+msgid "ultra thin"
 msgstr "sangat tipis"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_LIGHT.STRING.TEXT
-msgid  "light"
+msgid "light"
 msgstr "ringan"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMILIGHT.STRING.TEXT
-msgid  "semi light"
+msgid "semi light"
 msgstr "semi ringan"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_NORMAL.STRING.TEXT
-msgid  "normal"
+msgid "normal"
 msgstr "normal"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_MEDIUM.STRING.TEXT
-msgid  "medium"
+msgid "medium"
 msgstr "menengah"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMIBOLD.STRING.TEXT
-msgid  "semi bold"
+msgid "semi bold"
 msgstr "semi tebal"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_BOLD.STRING.TEXT
-msgid  "bold"
+msgid "bold"
 msgstr "tebal"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRABOLD.STRING.TEXT
-msgid  "ultra bold"
+msgid "ultra bold"
 msgstr "sangat tebal"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_BLACK.STRING.TEXT
-msgid  "black"
+msgid "black"
 msgstr "hitam"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_NONE.STRING.TEXT
-msgid  "No underline"
+msgid "No underline"
 msgstr "Tanpa garis bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_SINGLE.STRING.TEXT
-msgid  "Single underline"
+msgid "Single underline"
 msgstr "Garis bawah tunggal"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOUBLE.STRING.TEXT
-msgid  "Double underline"
+msgid "Double underline"
 msgstr "Garis bawah ganda"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOTTED.STRING.TEXT
-msgid  "Dotted underline"
+msgid "Dotted underline"
 msgstr "Garis bawah bertitik"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DONTKNOW.STRING.TEXT
-msgid  "Underline"
+msgid "Underline"
 msgstr "Garis bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASH.STRING.TEXT
-msgid  "Underline (dashes)"
+msgid "Underline (dashes)"
 msgstr "Garis bawah (garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_LONGDASH.STRING.TEXT
-msgid  "Underline (long dashes)"
+msgid "Underline (long dashes)"
 msgstr "Garis bawah (garis panjang)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASHDOT.STRING.TEXT
-msgid  "Underline (dot dash)"
+msgid "Underline (dot dash)"
 msgstr "Garis bawah (titik garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASHDOTDOT.STRING.TEXT
-msgid  "Underline (dot dot dash)"
+msgid "Underline (dot dot dash)"
 msgstr "Garis bawah (titik titik garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_SMALLWAVE.STRING.TEXT
-msgid  "Underline (small wave)"
+msgid "Underline (small wave)"
 msgstr "Garis bawah (ombak kecil)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_WAVE.STRING.TEXT
-msgid  "Underline (Wave)"
+msgid "Underline (Wave)"
 msgstr "Garis bawah (ombak)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOUBLEWAVE.STRING.TEXT
-msgid  "Underline (Double wave)"
+msgid "Underline (Double wave)"
 msgstr "Garis bawah (dua ombak)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLD.STRING.TEXT
-msgid  "Underlined (Bold)"
+msgid "Underlined (Bold)"
 msgstr "Garis bawah (tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDOTTED.STRING.TEXT
-msgid  "Dotted underline (Bold)"
+msgid "Dotted underline (Bold)"
 msgstr "Garis bawah bertitik (tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASH.STRING.TEXT
-msgid  "Underline (Dash bold)"
+msgid "Underline (Dash bold)"
 msgstr "Garis bawah (garis tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDLONGDASH.STRING.TEXT
-msgid  "Underline (long dash, bold)"
+msgid "Underline (long dash, bold)"
 msgstr "Garis bawah (garis panjang, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOT.STRING.TEXT
-msgid  "Underline (dot dash, bold)"
+msgid "Underline (dot dash, bold)"
 msgstr "Garis bawah (titik garis, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOTDOT.STRING.TEXT
-msgid  "Underline (dot dot dash, bold)"
+msgid "Underline (dot dot dash, bold)"
 msgstr "Garis bawah (titik titik garis, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDWAVE.STRING.TEXT
-msgid  "Underline (wave, bold)"
+msgid "Underline (wave, bold)"
 msgstr "Garis bawah (ombak, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_NONE.STRING.TEXT
-msgid  "No overline"
+msgid "No overline"
 msgstr "Tanpa garis atas"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_SINGLE.STRING.TEXT
-msgid  "Single overline"
+msgid "Single overline"
 msgstr "Garis atas tunggal"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOUBLE.STRING.TEXT
-msgid  "Double overline"
+msgid "Double overline"
 msgstr "Garis atas ganda"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOTTED.STRING.TEXT
-msgid  "Dotted overline"
+msgid "Dotted overline"
 msgstr "Garis atas bertitik"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DONTKNOW.STRING.TEXT
-msgid  "Overline"
+msgid "Overline"
 msgstr "Garis atas"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASH.STRING.TEXT
-msgid  "Overline (dashes)"
+msgid "Overline (dashes)"
 msgstr "Garis atas (garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_LONGDASH.STRING.TEXT
-msgid  "Overline (long dashes)"
+msgid "Overline (long dashes)"
 msgstr "Garis atas (garis panjang)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASHDOT.STRING.TEXT
-msgid  "Overline (dot dash)"
+msgid "Overline (dot dash)"
 msgstr "Garis atas (titik garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASHDOTDOT.STRING.TEXT
-msgid  "Overline (dot dot dash)"
+msgid "Overline (dot dot dash)"
 msgstr "Garis atas (titik titik garis)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_SMALLWAVE.STRING.TEXT
-msgid  "Overline (small wave)"
+msgid "Overline (small wave)"
 msgstr "Garis atas (ombak kecil)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_WAVE.STRING.TEXT
-msgid  "Overline (Wave)"
+msgid "Overline (Wave)"
 msgstr "Garis atas (ombak)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOUBLEWAVE.STRING.TEXT
-msgid  "Overline (Double wave)"
+msgid "Overline (Double wave)"
 msgstr "Garis atas (dua ombak)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLD.STRING.TEXT
-msgid  "Overlined (Bold)"
+msgid "Overlined (Bold)"
 msgstr "Garis atas (tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDOTTED.STRING.TEXT
-msgid  "Dotted overline (Bold)"
+msgid "Dotted overline (Bold)"
 msgstr "Garis atas bertitik (tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASH.STRING.TEXT
-msgid  "Overline (Dash bold)"
+msgid "Overline (Dash bold)"
 msgstr "Garis atas (titik tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDLONGDASH.STRING.TEXT
-msgid  "Overline (long dash, bold)"
+msgid "Overline (long dash, bold)"
 msgstr "Garis atas (garis panjang, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOT.STRING.TEXT
-msgid  "Overline (dot dash, bold)"
+msgid "Overline (dot dash, bold)"
 msgstr "Garis atas (titik garis, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOTDOT.STRING.TEXT
-msgid  "Overline (dot dot dash, bold)"
+msgid "Overline (dot dot dash, bold)"
 msgstr "Garis atas (titik titik garis, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDWAVE.STRING.TEXT
-msgid  "Overline (wave, bold)"
+msgid "Overline (wave, bold)"
 msgstr "Garis atas (ombak, tebal)"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_NONE.STRING.TEXT
-msgid  "No strikethrough"
+msgid "No strikethrough"
 msgstr "Tanpa garis tembus"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SINGLE.STRING.TEXT
-msgid  "Single strikethrough"
+msgid "Single strikethrough"
 msgstr "Garis tembus tunggal"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_DOUBLE.STRING.TEXT
-msgid  "Double strikethrough"
+msgid "Double strikethrough"
 msgstr "Garis tembus ganda"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_BOLD.STRING.TEXT
-msgid  "Bold strikethrough"
+msgid "Bold strikethrough"
 msgstr "Garis tembus tebal hitam"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SLASH.STRING.TEXT
-msgid  "Strike through with slash"
+msgid "Strike through with slash"
 msgstr "Garis tembus dengan garis miring"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_X.STRING.TEXT
-msgid  "Strike through with Xes"
+msgid "Strike through with Xes"
 msgstr "Garis tembus dengan X"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_NONE.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Nihil"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_VERSALIEN.STRING.TEXT
-msgid  "Caps"
+msgid "Caps"
 msgstr "Kapital"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_GEMEINE.STRING.TEXT
-msgid  "Lowercase"
+msgid "Lowercase"
 msgstr "Huruf kecil"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_TITEL.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Judul"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_KAPITAELCHEN.STRING.TEXT
-msgid  "Small caps"
+msgid "Small caps"
 msgstr "Kapital kecil"
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_OFF.STRING.TEXT
-msgid  "Normal position"
+msgid "Normal position"
 msgstr "Posisi normal"
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUPER.STRING.TEXT
-msgid  "Superscript "
+msgid "Superscript "
 msgstr "Superskrip "
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUB.STRING.TEXT
-msgid  "Subscript "
+msgid "Subscript "
 msgstr "Subskrip "
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_AUTO.STRING.TEXT
-msgid  "automatic"
+msgid "automatic"
 msgstr "otomatis"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_LEFT.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "Rata kiri"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_RIGHT.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "Rata kanan"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.STRING.TEXT
-msgid  "Justify"
+msgid "Justify"
 msgstr "Rata kiri kanan"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_CENTER.STRING.TEXT
-msgid  "Centered"
+msgid "Centered"
 msgstr "Tengah"
 
+#: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.STRING.TEXT
+msgid "Justify"
+msgstr "Rata kiri kanan"
+
 #: items/svxitems.src#RID_SVXITEMS_TAB_DECIMAL_CHAR.STRING.TEXT
-msgid  "Decimal Symbol:"
+msgid "Decimal Symbol:"
 msgstr "Lambang Desimal:"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_FILL_CHAR.STRING.TEXT
-msgid  "Fill character:"
+msgid "Fill character:"
 msgstr "Karakter isian:"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_LEFT.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr "Kiri"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_RIGHT.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr "Kanan"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DECIMAL.STRING.TEXT
-msgid  "Decimal"
+msgid "Decimal"
 msgstr "Desimal"
 
+#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.STRING.TEXT
+msgid "Centered"
+msgstr "Tengah"
+
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DEFAULT.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr "Baku"
 
 #: items/svxitems.src#RID_SINGLE_LINE0.STRING.TEXT
-msgid  "Single, fine lines"
+msgid "Single, fine lines"
 msgstr "Garis tunggal dan halus"
 
 #: items/svxitems.src#RID_SINGLE_LINE1.STRING.TEXT
-msgid  "Single, thin"
+msgid "Single, thin"
 msgstr "Tunggal, tipis"
 
 #: items/svxitems.src#RID_SINGLE_LINE2.STRING.TEXT
-msgid  "Single, thick"
+msgid "Single, thick"
 msgstr "Tunggal, tebal"
 
 #: items/svxitems.src#RID_SINGLE_LINE3.STRING.TEXT
-msgid  "Single, very thick"
+msgid "Single, very thick"
 msgstr "Tunggal, sangat tebal"
 
 #: items/svxitems.src#RID_SINGLE_LINE4.STRING.TEXT
-msgid  "Single, bold"
+msgid "Single, bold"
 msgstr "Tunggal, tebal padat"
 
 #: items/svxitems.src#RID_DOUBLE_LINE0.STRING.TEXT
-msgid  "Double, fine lines, spacing: small"
+msgid "Double, fine lines, spacing: small"
 msgstr "Garis ganda dan bagus, jarak:kecil"
 
 #: items/svxitems.src#RID_DOUBLE_LINE1.STRING.TEXT
-msgid  "Double, fine line, spacing: large"
+msgid "Double, fine line, spacing: large"
 msgstr "Garis ganda dan bagus, jarak:besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE2.STRING.TEXT
-msgid  "Double, thin, spacing: small"
+msgid "Double, thin, spacing: small"
 msgstr "Ganda, tipis, jarak:kecil"
 
 #: items/svxitems.src#RID_DOUBLE_LINE3.STRING.TEXT
-msgid  "Double, thick, spacing: large"
+msgid "Double, thick, spacing: large"
 msgstr "Ganda, tebal, jarak: besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE4.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: thin, spacing: large"
+msgid "Double, inside: fine lines, outside: thin, spacing: large"
 msgstr "Ganda, dalam: garis halus, luar: tipis, jarak: besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE5.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: thick, spacing: large"
+msgid "Double, inside: fine lines, outside: thick, spacing: large"
 msgstr "Ganda, dalam: garis bagus, luar: tebal, jarak: besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE6.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: very thick, spacing: large"
+msgid "Double, inside: fine lines, outside: very thick, spacing: large"
 msgstr "Ganda, dalam: garis halus, luar: sangat tebal, jarak :besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE7.STRING.TEXT
-msgid  "Double, inside: thin, outside: thick, spacing: large"
+msgid "Double, inside: thin, outside: thick, spacing: large"
 msgstr "Ganda, dalam: tipis, luar: tebal, jarak: besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE8.STRING.TEXT
-msgid  "Double, inside: thick, outside: thin, spacing: small"
+msgid "Double, inside: thick, outside: thin, spacing: small"
 msgstr "Ganda, dalam: tebal, luar:  tipis, jarak: kecil"
 
 #: items/svxitems.src#RID_DOUBLE_LINE9.STRING.TEXT
-msgid  "Double, inside: thick, outside: very thick, spacing: large"
+msgid "Double, inside: thick, outside: very thick, spacing: large"
 msgstr "Ganda, dalam: tebal, luar: sangat tebal, jarak: besar"
 
 #: items/svxitems.src#RID_DOUBLE_LINE10.STRING.TEXT
-msgid  "Double, inside: very thick, outside: thick, Spacing: large"
+msgid "Double, inside: very thick, outside: thick, Spacing: large"
 msgstr "Ganda, dalam: sangat tebal, luar: tebal, jarak: besar"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOWED_TRUE.STRING.TEXT
-msgid  "Shadowed"
+msgid "Shadowed"
 msgstr "Berbayang"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOWED_FALSE.STRING.TEXT
-msgid  "Not Shadowed"
+msgid "Not Shadowed"
 msgstr "Tidak Berbayang"
 
 #: items/svxitems.src#RID_SVXITEMS_BLINK_TRUE.STRING.TEXT
-msgid  "Blinking"
+msgid "Blinking"
 msgstr "Berkedip"
 
 #: items/svxitems.src#RID_SVXITEMS_BLINK_FALSE.STRING.TEXT
-msgid  "Not Blinking"
+msgid "Not Blinking"
 msgstr "Tidak Berkedip"
 
 #: items/svxitems.src#RID_SVXITEMS_AUTOKERN_TRUE.STRING.TEXT
-msgid  "Pair Kerning"
+msgid "Pair Kerning"
 msgstr "Pasangan Kerning"
 
 #: items/svxitems.src#RID_SVXITEMS_AUTOKERN_FALSE.STRING.TEXT
-msgid  "No pair kerning"
+msgid "No pair kerning"
 msgstr "Tanpa pasangan kerning"
 
 #: items/svxitems.src#RID_SVXITEMS_WORDLINE_TRUE.STRING.TEXT
-msgid  "Individual words"
+msgid "Individual words"
 msgstr "Kata individu"
 
 #: items/svxitems.src#RID_SVXITEMS_WORDLINE_FALSE.STRING.TEXT
-msgid  "Not Words Only"
+msgid "Not Words Only"
 msgstr "Tidak Hanya Kata-Kata Saja"
 
 #: items/svxitems.src#RID_SVXITEMS_CONTOUR_TRUE.STRING.TEXT
-msgid  "Outline"
+msgid "Outline"
 msgstr "Kerangka"
 
 #: items/svxitems.src#RID_SVXITEMS_CONTOUR_FALSE.STRING.TEXT
-msgid  "No Outline"
+msgid "No Outline"
 msgstr "Tanpa Kerangka"
 
 #: items/svxitems.src#RID_SVXITEMS_PRINT_TRUE.STRING.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "Cetak"
 
 #: items/svxitems.src#RID_SVXITEMS_PRINT_FALSE.STRING.TEXT
-msgid  "Don't print"
+msgid "Don't print"
 msgstr "Jangan cetak"
 
 #: items/svxitems.src#RID_SVXITEMS_OPAQUE_TRUE.STRING.TEXT
-msgid  "Opaque"
+msgid "Opaque"
 msgstr "Buram"
 
 #: items/svxitems.src#RID_SVXITEMS_OPAQUE_FALSE.STRING.TEXT
-msgid  "Not Opaque"
+msgid "Not Opaque"
 msgstr "Tidak Buram"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTKEEP_TRUE.STRING.TEXT
-msgid  "Keep with next paragraph"
+msgid "Keep with next paragraph"
 msgstr "Pertahankan dengan paragraf selanjutnya"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTKEEP_FALSE.STRING.TEXT
-msgid  "Don't Keep Paragraphs Together"
+msgid "Don't Keep Paragraphs Together"
 msgstr "Jangan Pertahankan Paragraf Bersama-sama"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_TRUE.STRING.TEXT
-msgid  "Split paragraph"
+msgid "Split paragraph"
 msgstr "Pisahkan paragraf"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_FALSE.STRING.TEXT
-msgid  "Don't split paragraph"
+msgid "Don't split paragraph"
 msgstr "Jangan pisahkan paragraf"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_TRUE.STRING.TEXT
-msgid  "Contents protected"
+msgid "Contents protected"
 msgstr "Isi terlindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_FALSE.STRING.TEXT
-msgid  "Contents not protected"
+msgid "Contents not protected"
 msgstr "Isi tidak terlindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_TRUE.STRING.TEXT
-msgid  "Size protected"
+msgid "Size protected"
 msgstr "Ukuran terlindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_FALSE.STRING.TEXT
-msgid  "Size not protected"
+msgid "Size not protected"
 msgstr "Ukuran tidak terlindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_POS_TRUE.STRING.TEXT
-msgid  "Position protected"
+msgid "Position protected"
 msgstr "Posisi dilindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_POS_FALSE.STRING.TEXT
-msgid  "Position not protected"
+msgid "Position not protected"
 msgstr "Posisi tidak dilindungi"
 
 #: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_TRUE.STRING.TEXT
 #, fuzzy
-msgid  "Transparent"
+msgid "Transparent"
 msgstr "Transparan"
 
 #: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_FALSE.STRING.TEXT
-msgid  "Not Transparent"
+msgid "Not Transparent"
 msgstr "Tidak Transparan"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_TRUE.STRING.TEXT
-msgid  "Hyphenation"
+msgid "Hyphenation"
 msgstr "Pengaturan tanda hubung"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_FALSE.STRING.TEXT
-msgid  "No hyphenation"
+msgid "No hyphenation"
 msgstr "Tanpa pengaturan tanda hubung"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGE_END_TRUE.STRING.TEXT
-msgid  "Page End"
+msgid "Page End"
 msgstr "Akhir Halaman"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGE_END_FALSE.STRING.TEXT
-msgid  "No Page End"
+msgid "No Page End"
 msgstr "Tanpa Akhir Halaman"
 
 #: items/svxitems.src#RID_SVXITEMS_SIZE_WIDTH.STRING.TEXT
 #, fuzzy
-msgid  "Width: "
+msgid "Width: "
 msgstr "Lebar: "
 
 #: items/svxitems.src#RID_SVXITEMS_SIZE_HEIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Height: "
+msgid "Height: "
 msgstr "Tinggi: "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_LEFT.STRING.TEXT
 #, fuzzy
-msgid  "Indent left "
+msgid "Indent left "
 msgstr "Indentasi kiri "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_FLINE.STRING.TEXT
 #, fuzzy
-msgid  "First Line "
+msgid "First Line "
 msgstr "Indentasi baris pertama "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_RIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Indent right "
+msgid "Indent right "
 msgstr "Indentasi kanan "
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Shadow: "
+msgid "Shadow: "
 msgstr "Bayangan: "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Borders "
+msgid "Borders "
 msgstr "Bingkai "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_NONE.STRING.TEXT
 #, fuzzy
-msgid  "No border"
+msgid "No border"
 msgstr "Tanpa bingkai"
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_TOP.STRING.TEXT
 #, fuzzy
-msgid  "top "
+msgid "top "
 msgstr "atas "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_BOTTOM.STRING.TEXT
 #, fuzzy
-msgid  "bottom "
+msgid "bottom "
 msgstr "bawah "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_LEFT.STRING.TEXT
 #, fuzzy
-msgid  "left "
+msgid "left "
 msgstr "kiri "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_RIGHT.STRING.TEXT
 #, fuzzy
-msgid  "right "
+msgid "right "
 msgstr "kanan "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_DISTANCE.STRING.TEXT
 #, fuzzy
-msgid  "Spacing "
+msgid "Spacing "
 msgstr "Jarak "
 
 #: items/svxitems.src#RID_SVXITEMS_ULSPACE_UPPER.STRING.TEXT
 #, fuzzy
-msgid  "From top "
+msgid "From top "
 msgstr "Dari atas "
 
 #: items/svxitems.src#RID_SVXITEMS_ULSPACE_LOWER.STRING.TEXT
 #, fuzzy
-msgid  "From bottom "
+msgid "From bottom "
 msgstr "Dari bawah "
 
 #: items/svxitems.src#RID_SVXITEMS_LINES.STRING.TEXT
 #, fuzzy
-msgid  "%1 Lines"
+msgid "%1 Lines"
 msgstr "%1 Baris"
 
 #: items/svxitems.src#RID_SVXITEMS_WIDOWS_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Widow control"
+msgid "Widow control"
 msgstr "Rangkul bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_ORPHANS_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Orphan control"
+msgid "Orphan control"
 msgstr "Rangkul atas"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINLEAD.STRING.TEXT
 #, fuzzy
-msgid  "Characters at end of line"
+msgid "Characters at end of line"
 msgstr "Karakter pada akhir baris"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINTRAIL.STRING.TEXT
 #, fuzzy
-msgid  "Characters at beginning of line"
+msgid "Characters at beginning of line"
 msgstr "Karakter pada awal baris"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Hyphens"
+msgid "Hyphens"
 msgstr "Hipenasi"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGEMODEL_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Page Style: "
+msgid "Page Style: "
 msgstr "Gaya Halaman: "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_COMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "Kerning "
+msgid "Kerning "
 msgstr "Kerning "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_EXPANDED.STRING.TEXT
 #, fuzzy
-msgid  "locked "
+msgid "locked "
 msgstr "dikunci "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_CONDENSED.STRING.TEXT
 #, fuzzy
-msgid  "Condensed "
+msgid "Condensed "
 msgstr "Merapat "
 
 #: items/svxitems.src#RID_SVXITEMS_GRAPHIC.STRING.TEXT
 #, fuzzy
-msgid  "Graphic"
+msgid "Graphic"
 msgstr "Grafik"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_NONE_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "none"
+msgid "none"
 msgstr "nihil"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DOT_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Dots "
+msgid "Dots "
 msgstr "Titik "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_CIRCLE_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Circle "
+msgid "Circle "
 msgstr "Lingkaran "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DISC_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Filled circle "
+msgid "Filled circle "
 msgstr "Lingkaran berisi "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ACCENT_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Accent "
+msgid "Accent "
 msgstr "Aksen "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ABOVE_POS.STRING.TEXT
 #, fuzzy
-msgid  "Above"
+msgid "Above"
 msgstr "Di atas"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_BELOW_POS.STRING.TEXT
 #, fuzzy
-msgid  "Below"
+msgid "Below"
 msgstr "Di bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_TWOLINES_OFF.STRING.TEXT
-msgid  "Double-lined off"
+msgid "Double-lined off"
 msgstr "Bergaris ganda mati"
 
 #: items/svxitems.src#RID_SVXITEMS_TWOLINES.STRING.TEXT
-msgid  "Double-lined"
+msgid "Double-lined"
 msgstr "Bergaris ganda mati"
 
 #: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.STRING.TEXT
 #, fuzzy
-msgid  "No automatic character spacing"
+msgid "No automatic character spacing"
+msgstr "Tanpa jarak antarkarakter otomatis"
+
+#: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.STRING.TEXT
+#, fuzzy
+msgid "No automatic character spacing"
 msgstr "Tanpa jarak antarkarakter otomatis"
 
 #: items/svxitems.src#RID_SVXITEMS_HNGPNCT_OFF.STRING.TEXT
-msgid  "No hanging punctuation at line end"
+msgid "No hanging punctuation at line end"
 msgstr "Tanpa tanda baca menggantung di akhir baris"
 
 #: items/svxitems.src#RID_SVXITEMS_HNGPNCT_ON.STRING.TEXT
-msgid  "Hanging punctuation at line end"
+msgid "Hanging punctuation at line end"
 msgstr "Tanda baca menggantung di akhir baris"
 
 #: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_OFF.STRING.TEXT
 #, fuzzy
-msgid  "Apply list of forbidden characters to beginning and end of lines"
+msgid "Apply list of forbidden characters to beginning and end of lines"
 msgstr "Terapkan larangan karakter di awal dan akhir baris"
 
 #: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_ON.STRING.TEXT
-msgid  "Don't apply list of forbidden characters to beginning and end of lines"
+msgid "Don't apply list of forbidden characters to beginning and end of lines"
 msgstr "Jangan terapkan daftar larangan karakter di awal dan akhir baris"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE_OFF.STRING.TEXT
 #, fuzzy
-msgid  "No rotated characters"
+msgid "No rotated characters"
 msgstr "Tanpa putaran karakter"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE.STRING.TEXT
 #, fuzzy
-msgid  "Character rotated by $(ARG1)°"
+msgid "Character rotated by $(ARG1)°"
 msgstr "Karakter diputar $(ARG1)°"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE_FITLINE.STRING.TEXT
 #, fuzzy
-msgid  "Fit to line"
+msgid "Fit to line"
 msgstr "Sesuai baris"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARSCALE.STRING.TEXT
 #, fuzzy
-msgid  "Characters scaled $(ARG1)%"
+msgid "Characters scaled $(ARG1)%"
 msgstr "Karakter diskala $(ARG1)%"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARSCALE_OFF.STRING.TEXT
 #, fuzzy
-msgid  "No scaled characters"
+msgid "No scaled characters"
 msgstr "Tanpa skala karakter"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_NONE.STRING.TEXT
 #, fuzzy
-msgid  "No relief"
+msgid "No relief"
 msgstr "Tanpa relief"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_EMBOSSED.STRING.TEXT
 #, fuzzy
-msgid  "Relief"
+msgid "Relief"
 msgstr "Relief"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_ENGRAVED.STRING.TEXT
 #, fuzzy
-msgid  "Engraved"
+msgid "Engraved"
 msgstr "Ukiran Pahat"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_AUTO.STRING.TEXT
 #, fuzzy
-msgid  "Automatic text alignment"
+msgid "Automatic text alignment"
 msgstr "Perataan teks otomatis"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BASELINE.STRING.TEXT
 #, fuzzy
-msgid  "Text aligned to base line"
+msgid "Text aligned to base line"
 msgstr "Teks diratakan pada garis dasar"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_TOP.STRING.TEXT
 #, fuzzy
-msgid  "Text aligned top"
+msgid "Text aligned top"
 msgstr "Teks diratakan ke atas"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_CENTER.STRING.TEXT
 #, fuzzy
-msgid  "Text aligned middle"
+msgid "Text aligned middle"
 msgstr "Teks diratakan tengah vertikal"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BOTTOM.STRING.TEXT
 #, fuzzy
-msgid  "Text aligned bottom"
+msgid "Text aligned bottom"
 msgstr "Teks diratakan ke bawah"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_LEFT_TOP.STRING.TEXT
 #, fuzzy
-msgid  "Text direction left-to-right (horizontal)"
+msgid "Text direction left-to-right (horizontal)"
 msgstr "Arah teks dari kiri ke kanan (horisontal)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_RIGHT_TOP.STRING.TEXT
 #, fuzzy
-msgid  "Text direction right-to-left (horizontal)"
+msgid "Text direction right-to-left (horizontal)"
 msgstr "Arah teks dari kanan ke kiri (horisontal)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_RIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Text direction right-to-left (vertical)"
+msgid "Text direction right-to-left (vertical)"
 msgstr "Arah teks dari kanan ke kiri (vertikal)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_LEFT.STRING.TEXT
 #, fuzzy
-msgid  "Text direction left-to-right (vertical)"
+msgid "Text direction left-to-right (vertical)"
 msgstr "Arah teks dari kiri ke kanan (vertikal)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_ENVIRONMENT.STRING.TEXT
-msgid  "Use superordinate object text direction setting"
+msgid "Use superordinate object text direction setting"
 msgstr "Gunakan pengaturan arah teks objek superordinat"
 
 #: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_ON.STRING.TEXT
-msgid  "Paragraph snaps to text grid (if active)"
+msgid "Paragraph snaps to text grid (if active)"
 msgstr "Paragraf meratakan ke kisi teks (jika aktif)"
 
 #: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_OFF.STRING.TEXT
-msgid  "Paragraph does not snap to text grid"
+msgid "Paragraph does not snap to text grid"
 msgstr "Paragraf tidak meratakan ke kisi teks"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_FALSE.STRING.TEXT
-msgid  "Not hidden"
+msgid "Not hidden"
 msgstr "Tidak tersembunyi"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_TRUE.STRING.TEXT
 #, fuzzy
-msgid  "Hidden"
+msgid "Hidden"
 msgstr "Tersembunyi"
 
 #: misc/lingu.src#RID_SVXQB_CONTINUE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Continue checking at beginning of document?"
+msgid "Continue checking at beginning of document?"
 msgstr "Lanjut memeriksa mulai dari awal dokumen?"
 
 #: misc/lingu.src#RID_SVXQB_BW_CONTINUE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Continue checking at end of document?"
+msgid "Continue checking at end of document?"
 msgstr "Lanjut memeriksa mulai dari akhir dokumen?"
 
 #: misc/lingu.src#RID_SVXSTR_HMERR_THESAURUS.STRING.TEXT
 #, fuzzy
-msgid  "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n"
-msgstr "Tidak ada tesaurus untuk bahasa yang dipilih.\nPeriksalah instalasi Anda dan pasang bahasa yang diinginkan\n"
+msgid "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n"
+msgstr ""
+"Tidak ada tesaurus untuk bahasa yang dipilih.\n"
+"Periksalah instalasi Anda dan pasang bahasa yang diinginkan\n"
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_UNKNOWN.STRING.TEXT
 #, fuzzy
-msgid  "Word cannot be added to dictionary\ndue to unknown reason."
-msgstr "Kata tidak dapat ditambahkan pada kamus\ndengan alasan yang tidak diketahu."
+msgid "Word cannot be added to dictionary\ndue to unknown reason."
+msgstr ""
+"Kata tidak dapat ditambahkan pada kamus\n"
+"dengan alasan yang tidak diketahu."
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_FULL.STRING.TEXT
 #, fuzzy
-msgid  "The dictionary is already full."
+msgid "The dictionary is already full."
 msgstr "Kamus telah penuh."
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "The dictionary is read-only."
+msgid "The dictionary is read-only."
 msgstr "Kamus hanya bisa dibaca."
 
 #: outliner/outliner.src#RID_OUTLUNDO_HEIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Move"
+msgid "Move"
 msgstr "Pindah"
 
 #: outliner/outliner.src#RID_OUTLUNDO_DEPTH.STRING.TEXT
 #, fuzzy
-msgid  "Indent"
+msgid "Indent"
 msgstr "Indentasi"
 
 #: outliner/outliner.src#RID_OUTLUNDO_EXPAND.STRING.TEXT
 #, fuzzy
-msgid  "Show subpoints"
+msgid "Show subpoints"
 msgstr "Tampilkan subpoin"
 
 #: outliner/outliner.src#RID_OUTLUNDO_COLLAPSE.STRING.TEXT
 #, fuzzy
-msgid  "Collapse"
+msgid "Collapse"
 msgstr "Tutup"
 
 #: outliner/outliner.src#RID_OUTLUNDO_ATTR.STRING.TEXT
 #, fuzzy
-msgid  "Apply attributes"
+msgid "Apply attributes"
 msgstr "Terapkan atribut"
 
 #: outliner/outliner.src#RID_OUTLUNDO_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "Sisip"

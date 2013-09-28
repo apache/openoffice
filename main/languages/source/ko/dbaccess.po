@@ -1,2387 +1,3808 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
-msgid  "Tried to open the table $name$."
+msgid "Tried to open the table $name$."
 msgstr "$name$ 테이블을 열려고 합니다."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
-msgid  "No connection could be established."
+msgid "No connection could be established."
 msgstr "연결을 설정하지 못했습니다."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
-msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgid "The table $name$ already exists. It is not visible because it has been filtered out."
 msgstr " $name$ 테이블이 이미 존재합니다. 이 테이블은 필터링되었으므로 표시되지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
-msgid  "You have no write access to the configuration data the object is based on."
+msgid "You have no write access to the configuration data the object is based on."
 msgstr "개체의 구성 데이터에 대한 쓰기 권한이 없습니다."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
-msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgid "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
 msgstr "외부 데이터 원본과 연결을 하지 못했습니다. 알 수 없는 오류가 발생했습니다. SDBC 드라이버에 결함이 있을 수 있습니다."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgid "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
 msgstr "외부 데이터 원본과의 연결을 설정하지 못했습니다. 지정된 URL에 대한 SDBC 드라이버를 찾지 못했습니다."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
-msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgid "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "외부 데이터 원본과의 연결을 설정하지 못했습니다. SDBC 드라이버 관리자가 로드되지 못했습니다."
 
+#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
+msgid "Form"
+msgstr ""
+
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "보고서"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
-msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgid "The data source was not saved. Please use the interface XStorable to save the data source."
 msgstr "데이터 원본이 저장되지 않았습니다. 데이터 원본을 저장하려면 인터페이스 XStorable을 사용하십시오."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "지정한 명령은 SELECT 문이 아닙니다.\n쿼리만 허용됩니다."
+msgid "The given command is not a SELECT statement.\nOnly queries are allowed."
+msgstr ""
+"지정한 명령은 SELECT 문이 아닙니다.\n"
+"쿼리만 허용됩니다."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
-msgid  "No values were modified."
+msgid "No values were modified."
 msgstr "수정된 값이 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgid "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
 msgstr "값을 삽입할 수 없습니다. ResultSet에서는 XRowUpdate 인터페이스를 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
-msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgid "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
 msgstr "값을 삽입할 수 없습니다. ResultSet에서는 XRowUpdate 인터페이스를 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
-msgid  "Values could not be modified, due to a missing condition statement."
+msgid "Values could not be modified, due to a missing condition statement."
 msgstr "조건문이 없어서 값을 수정할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
-msgid  "The adding of columns is not supported."
+msgid "The adding of columns is not supported."
 msgstr "열 추가를 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
-msgid  "The dropping of columns is not supported."
+msgid "The dropping of columns is not supported."
 msgstr "열 놓기를 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
-msgid  "The WHERE condition could not be created for the primary key."
+msgid "The WHERE condition could not be created for the primary key."
 msgstr "기본 키의 WHERE 조건을 만들 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
-msgid  "The column does not support the property '%value'."
+msgid "The column does not support the property '%value'."
 msgstr "이 열은 '%value' 속성을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
-msgid  "The column is not searchable!"
+msgid "The column is not searchable!"
 msgstr "열을 찾을 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
-msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
 msgstr "열 값이 시퀀스<sal_Int8> 유형이 아닙니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
-msgid  "The column is not valid."
+msgid "The column is not valid."
 msgstr "열이 유효하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
-msgid  "The column '%name' must be visible as a column."
+msgid "The column '%name' must be visible as a column."
 msgstr "'%name' 열은 열로 표시되어야 합니다."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
-msgid  "The interface XQueriesSupplier is not available."
+msgid "The interface XQueriesSupplier is not available."
 msgstr "XQueriesSupplier 인터페이스를 사용할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
-msgid  "The driver does not support this function."
+msgid "The driver does not support this function."
 msgstr "드라이버에서 이 기능을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
-msgid  "An 'absolute(0)' call is not allowed."
+msgid "An 'absolute(0)' call is not allowed."
 msgstr "'절대값(0)' 호출은 허용되지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
-msgid  "Relative positioning is not allowed in this state."
+msgid "Relative positioning is not allowed in this state."
 msgstr "이 상태에서는 상대 위치 지정을 사용할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
-msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgid "A row cannot be refreshed when the ResultSet is positioned after the last row."
 msgstr "ResultSet을 마지막 행 다음에 배치하면 행을 새로 고칠 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
-msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgid "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
 msgstr "ResultSet을 먼저 삽입 행으로 이동하지 않으면 새 행을 삽입할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
-msgid  "A row cannot be modified in this state"
+msgid "A row cannot be modified in this state"
 msgstr "이 상태에서는 행을 수정할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
-msgid  "A row cannot be deleted in this state."
+msgid "A row cannot be deleted in this state."
 msgstr "이 상태에서는 행을 삭제할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
-msgid  "The driver does not support table renaming."
+msgid "The driver does not support table renaming."
 msgstr "드라이버에서 테이블 이름 바꾸기를 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions."
+msgid "The driver does not support the modification of column descriptions."
 msgstr "드라이버에서 열 설명 수정을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgid "The driver does not support the modification of column descriptions by changing the name."
 msgstr "드라이버에서 이름 변경에 의한 열 설명 수정을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
-msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgid "The driver does not support the modification of column descriptions by changing the index."
 msgstr "드라이버에서 색인 변경에 의한 열 설명 수정을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "The file \"$file$\" does not exist."
+msgid "The file \"$file$\" does not exist."
 msgstr "&quot;$file$&quot; 파일이 없습니다."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no table named \"$table$\"."
+msgid "There exists no table named \"$table$\"."
 msgstr "이름이 \"$table$\"인 테이블이 없습니다."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
-msgid  "There exists no query named \"$table$\"."
+msgid "There exists no query named \"$table$\"."
 msgstr "이름이 \"$table$\"인 테이블이 없습니다."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
-msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr "데이터베이스에 기존 쿼리의 이름과 충돌하는 이름을 가진 테이블이 있습니다. 쿼리와 테이블을 모두 사용하려면 쿼리와 테이블이 고유한 이름을 가지고 있어야 합니다."
+msgid "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr ""
+"데이터베이스에 기존 쿼리의 이름과 충돌하는 이름을 가진 테이블이 있습니다. 쿼리와 테이블을 모두 사용하려면 쿼리와 테이블이 고유한 이름을 "
+"가지고 있어야 합니다."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "이 오류와 관련된 SQL 명령:\n\n$command$"
+msgid "The SQL command leading to this error is:\n\n$command$"
+msgstr ""
+"이 오류와 관련된 SQL 명령:\n"
+"\n"
+"$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
-msgid  "The SQL command does not describe a result set."
+msgid "The SQL command does not describe a result set."
 msgstr "SQL 명령을 실행해도 결과 집합이 표시되지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
-msgid  "The name must not be empty."
+msgid "The name must not be empty."
 msgstr "이름은 비워둘 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
-msgid  "The container cannot contain NULL objects."
+msgid "The container cannot contain NULL objects."
 msgstr "컨테이너에는 NULL 개체가 포함될 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
-msgid  "There already is an object with the given name."
+msgid "There already is an object with the given name."
 msgstr "해당 이름을 가진 개체가 이미 있습니다."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
-msgid  "This object cannot be part of this container."
+msgid "This object cannot be part of this container."
 msgstr "이 개체는 이 컨테이너의 일부가 될 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
-msgid  "The object already is, with a different name, part of the container."
+msgid "The object already is, with a different name, part of the container."
 msgstr "다른 이름을 가진 이 개체는 이미 이 컨테이너의 일부로 지정되어 있습니다."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
-msgid  "Unable to find the document '$name$'."
+msgid "Unable to find the document '$name$'."
 msgstr "'$name$' 문서를 찾을 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "$location$에 문서를 저장할 수 없습니다:\n$message$"
+msgid "Could not save the document to $location$:\n$message$"
+msgstr ""
+"$location$에 문서를 저장할 수 없습니다:\n"
+"$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
-msgid  "Error accessing data source '$name$':\n$error$"
-msgstr "데이터 원본 '$name$' 접근 오류:\n$error$"
+msgid "Error accessing data source '$name$':\n$error$"
+msgstr ""
+"데이터 원본 '$name$' 접근 오류:\n"
+"$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
-msgid  "There exists no folder named \"$folder$\"."
+msgid "There exists no folder named \"$folder$\"."
 msgstr "이름이 \"$folder$\"인 폴더가 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
-msgid  "Cannot delete the before-first or after-last row."
+msgid "Cannot delete the before-first or after-last row."
 msgstr "처음 이전 또는 마지막 이후 행을 삭제할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
-msgid  "Cannot delete the insert-row."
+msgid "Cannot delete the insert-row."
 msgstr "삽입 행을 삭제할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
-msgid  "Result set is read only."
+msgid "Result set is read only."
 msgstr "결과 집합은 읽기 전용입니다."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
-msgid  "DELETE privilege not available."
+msgid "DELETE privilege not available."
 msgstr "DELETE 권한이 없습니다."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
-msgid  "Current row is already deleted."
+msgid "Current row is already deleted."
 msgstr "현재 행이 이미 삭제되었습니다."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
-msgid  "Current row could not be updated."
+msgid "Current row could not be updated."
 msgstr "현재 행을 업데이트할 수 없습니다."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
-msgid  "INSERT privilege not available."
+msgid "INSERT privilege not available."
 msgstr "삽입 권한이 없습니다."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
-msgid  "Internal error: no statement object provided by the database driver."
+msgid "Internal error: no statement object provided by the database driver."
 msgstr "내부 오류: 데이터베이스 드라이버가 제공하는 명령문 개체가 없습니다."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
-msgid  "Expression1"
+msgid "Expression1"
 msgstr "표현식1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
-msgid  "No SQL command was provided."
+msgid "No SQL command was provided."
 msgstr "SQL 명령이 없습니다."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid column index."
+msgid "Invalid column index."
 msgstr "잘못된 열 색인입니다."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
-msgid  "Invalid cursor state."
+msgid "Invalid cursor state."
 msgstr "잘못된 커서 상태입니다."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The cursor points to before the first or after the last row."
+msgid "The cursor points to before the first or after the last row."
 msgstr "커서가 처음 이전 또는 마지막 이후를 가리키고 있습니다."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
-msgid  "The rows before the first and after the last row don't have a bookmark."
+msgid "The rows before the first and after the last row don't have a bookmark."
 msgstr "처음 이전 또는 마지막 이후 행은 북마크를 가지고 있지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
-msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgid "The current row is deleted, and thus doesn't have a bookmark."
 msgstr "현재 행이 삭제되어 북마크를 가지고 있지 않습니다."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
-msgid  "Embedding of database documents is not supported."
+msgid "Embedding of database documents is not supported."
 msgstr "데이터베이스 문서의 내장을 지원하지 않습니다."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
-msgid  "A connection for the following URL was requested \"$name$\"."
+msgid "A connection for the following URL was requested \"$name$\"."
 msgstr "다음 URL에 대한 연결이 요청되었습니다 \"$name$\"."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
-msgid  "The extension is not installed."
+msgid "The extension is not installed."
 msgstr "확장이 설치되지 않았습니다."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
-msgid  "Database ~name"
+msgid "Database ~name"
 msgstr "데이터베이스 이름(~N)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
-msgid  "User settings"
+msgid "User settings"
 msgstr "사용자 설정"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
-msgid  "~Control user"
+msgid "~Control user"
 msgstr "콘트롤 사용자(~C)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
-msgid  "~Administrator"
+msgid "~Administrator"
 msgstr "관리자(~A)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
-msgid  "~Domain user"
+msgid "~Domain user"
 msgstr "도메인 사용자(~D)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
-msgid  "P~assword..."
+msgid "P~assword..."
 msgstr "암호(~A)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
-msgid  "~Password..."
+msgid "~Password..."
 msgstr "암호(~P)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
-msgid  "Passwo~rd..."
+msgid "Passwo~rd..."
 msgstr "암호(~R)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
-msgid  "~Backup file"
+msgid "~Backup file"
 msgstr "백업 파일(~B)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
-msgid  "Database settings"
+msgid "Database settings"
 msgstr "데이터베이스 설정"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
-msgid  "S~YSDEVSPACE"
+msgid "S~YSDEVSPACE"
 msgstr "SYSDEVSPACE(~Y)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
-msgid  "TRANSACTI~ONLOG"
+msgid "TRANSACTI~ONLOG"
 msgstr "TRANSACTIONLOG(~O)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
-msgid  "DATAD~EVSPACE"
+msgid "DATAD~EVSPACE"
 msgstr "DATADEVSPACE(~E)"
 
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
+#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
+msgid "..."
+msgstr "..."
+
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
-msgid  "Transaction ~file (MB)"
+msgid "Transaction ~file (MB)"
 msgstr "트랜잭션 파일(MB)(~F)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data~base size (MB)"
+msgid "Data~base size (MB)"
 msgstr "데이터베이스 크기(MB)(~B)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data ~buffer size (MB)"
-msgstr "데이터 버퍼링 크기(MB)(~B)"
+msgid "Data ~buffer size (MB)"
+msgstr "데이터 버퍼 크기(MB)(~B)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
-msgid  "Backup file information"
+msgid "Backup file information"
 msgstr "백업 파일 정보"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
-msgid  "Create New Adabas D Database"
+msgid "Create New Adabas D Database"
 msgstr "새 Adabas D 데이터베이스 만들기"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
-msgid  "No entry could be written in the configuration file."
+msgid "No entry could be written in the configuration file."
 msgstr "구성 파일에 항목을 쓸 수 없습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
-msgid  "An error occurred as the DB files were being created."
+msgid "An error occurred as the DB files were being created."
 msgstr "DB 파일을 만들 때 오류가 발생했습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
-msgid  "An error occurred as the system tables were being created."
+msgid "An error occurred as the system tables were being created."
 msgstr "시스템 테이블을 만들 때 오류가 발생했습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
-msgid  "The backup file entered does not exist."
+msgid "The backup file entered does not exist."
 msgstr "입력한 백업 파일이 존재하지 않습니다."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
-msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgid "The fully qualified file cannot be longer than \'#\' characters."
 msgstr "정규화된 파일은 \\'#\\'자보다 길어서는 안 됩니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
-msgid  "The administrator and the control user cannot have the same name!"
+msgid "The administrator and the control user cannot have the same name!"
 msgstr "관리자 및 콘트롤 사용자는 같은 이름을 가질 수 없습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
-msgid  "No name has been entered for the $name$ file!"
+msgid "No name has been entered for the $name$ file!"
 msgstr "$name$ 파일에 대한 이름을 입력하지 않았습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
-msgid  "You have to have administrator rights to create a new database!"
+msgid "You have to have administrator rights to create a new database!"
 msgstr "새 데이터베이스를 만들려면 관리자 권한이 있어야 합니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
-msgid  "The specified file name or directory does not exist."
+msgid "The specified file name or directory does not exist."
 msgstr "지정된 파일 이름이나 디렉토리가 존재하지 않습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "새 데이터베이스를 만들 수 없습니다.\nAdabas D 설치, 특히 변수 \"DBROOT\"와 \"DBWORK\"를 확인하십시오."
+msgid "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
+"새 데이터베이스를 만들 수 없습니다.\n"
+"Adabas D 설치, 특히 변수 \"DBROOT\"와 \"DBWORK\"를 확인하십시오."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "경고!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
-msgid  "Creating database files."
+msgid "Creating database files."
 msgstr "데이터베이스 파일을 만드는 중입니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
-msgid  "Creating database configuration file."
+msgid "Creating database configuration file."
 msgstr "데이터베이스 구성 파일을 만드는 중입니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
-msgid  "Starting database for the first time."
+msgid "Starting database for the first time."
 msgstr "데이터베이스를 처음 시작하는 중입니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
-msgid  "The name entered already exists."
+msgid "The name entered already exists."
 msgstr "입력한 이름이 이미 있습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
-msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgid "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "데이터베이스 파일에 기본 이름을 설정할 수 없습니다. 전체 길이가 40자를 초과합니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
-msgid  "No default names could be set for the database files. There is no write access."
+msgid "No default names could be set for the database files. There is no write access."
 msgstr "데이터베이스 파일에 기본 이름을 설정할 수 없습니다. 쓰기 권한이 없습니다."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
+msgid "The current database need to be converted. Please insert control user  and password."
 msgstr "현재 데이터베이스를 변환해야 합니다. 콘트롤 사용자 및 암호를 삽입하십시오."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
-msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgid "Spaces are not permitted in the password. Please enter a new password."
 msgstr "암호에 공백을 사용할 수 없습니다. 새 암호를 입력하십시오."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
-msgid  "Database Document Macro Migration"
+msgid "Database Document Macro Migration"
 msgstr "데이터베이스 문서 매크로 마이그레이션"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
-msgid  "Prepare"
+msgid "Prepare"
 msgstr "준비"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
-msgid  "Backup Document"
+msgid "Backup Document"
 msgstr "문서 백업"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
-msgid  "Migrate"
+msgid "Migrate"
 msgstr "마이그레이션"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
-msgid  "Summary"
+msgid "Summary"
 msgstr "요약"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to the Database Macro Migration Wizard"
+msgid "Welcome to the Database Macro Migration Wizard"
 msgstr "데이터베이스 매크로 마이그레이션 마법사 시작"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "이 마법사는 매크로를 변환하는 작업을 안내합니다.\n\n이 작업을 마치면 이전에 양식 및 보고서에 포함되어 있던 모든 매크로가 데이터베이스 문서로 이동됩니다. 이 과정에서 필요에 따라 라이브러리의 이름이 바뀝니다.\n\n양식 및 보고서에 이러한 매크로와 스크립트에 대한 참조가 포함되어 있으면 가능한 경우 조정됩니다.\n\n마이그레이션을 시작하려면 먼저 모든 양식, 보고서, 쿼리 및 테이블을 닫아야 합니다. 이렇게 하려면 [다음]을 누르십시오."
+msgid "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+"이 마법사는 매크로를 변환하는 작업을 안내합니다.\n"
+"\n"
+"이 작업을 마치면 이전에 양식 및 보고서에 포함되어 있던 모든 매크로가 데이터베이스 문서로 이동됩니다. 이 과정에서 필요에 따라 "
+"라이브러리의 이름이 바뀝니다.\n"
+"\n"
+"양식 및 보고서에 이러한 매크로와 스크립트에 대한 참조가 포함되어 있으면 가능한 경우 조정됩니다.\n"
+"\n"
+"마이그레이션을 시작하려면 먼저 모든 양식, 보고서, 쿼리 및 테이블을 닫아야 합니다. 이렇게 하려면 [다음]을 누르십시오."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
-msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgid "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "일부 개체를 닫지 못했습니다. 이 개체를 수동으로 닫은 다음 마법사를 다시 시작하십시오."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Backup your Document"
+msgid "Backup your Document"
 msgstr "문서 백업"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr "마이그레이션 이전 상태로 돌아갈 수 있도록 사용자가 선택한 위치에 데이터베이스 문서가 백업됩니다. 마법사에서 변경한 모든 내용이 원본 문서에 적용되고 백업은 그대로 유지됩니다."
+msgid "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr ""
+"마이그레이션 이전 상태로 돌아갈 수 있도록 사용자가 선택한 위치에 데이터베이스 문서가 백업됩니다. 마법사에서 변경한 모든 내용이 원본 "
+"문서에 적용되고 백업은 그대로 유지됩니다."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
-msgid  "Save To:"
+msgid "Save To:"
 msgstr "저장 위치:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
-msgid  "Browse ..."
+msgid "Browse ..."
 msgstr "찾아보기..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
-msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgid "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "문서의 사본을 저장하고 마이그레이션을 시작하려면 [다음]을 누르십시오."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Migration Progress"
+msgid "Migration Progress"
 msgstr "마이그레이션 진행률"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
-msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgid "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "데이터베이스 문서에 현재 처리 중인 $forms$ 양식과 $reports$ 보고서가 포함되어 있습니다:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
-msgid  "Current object:"
+msgid "Current object:"
 msgstr "현재 개체:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Current progress:"
+msgid "Current progress:"
 msgstr "현재 진행률:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
-msgid  "Overall progress:"
+msgid "Overall progress:"
 msgstr "전체 진행률:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "document $current$ of $overall$"
+msgid "document $current$ of $overall$"
 msgstr "$overall$의 문서 $current$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
-msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgid "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "모든 문서를 성공적으로 처리했습니다. 자세한 요약을 보려면 [다음]을 누르십시오."
 
+#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
+msgid "Summary"
+msgstr "요약"
+
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
-msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgid "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr "변환이 성공적으로 이루어졌습니다. 아래는 문서에 적용한 동작들의 로그입니다."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
-msgid  "The migration was not successful. Examine the migration log below for details."
+msgid "The migration was not successful. Examine the migration log below for details."
 msgstr "변환이 정상적으로 이루어지지 못했습니다. 더 자세한 내용은 아래의 변환 로그를 확인하십시오."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
-msgid  "Form '$name$'"
+msgid "Form '$name$'"
 msgstr "양식 '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
-msgid  "Report '$name$'"
+msgid "Report '$name$'"
 msgstr "보고서 '$name$'"
 
+#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
+msgid "document $current$ of $overall$"
+msgstr "$overall$의 문서 $current$"
+
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
-msgid  "Database Document"
+msgid "Database Document"
 msgstr "데이터베이스 문서"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
-msgid  "saved copy to $location$"
+msgid "saved copy to $location$"
 msgstr "사본이 $location$에 저장되었습니다."
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
-msgid  "migrated $type$ library '$old$' to '$new$'"
+msgid "migrated $type$ library '$old$' to '$new$'"
 msgstr "$type$ 라이브러리 $old$이(가) $new$(으)로 이동되었습니다."
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
-msgid  "$type$ library '$library$'"
+msgid "$type$ library '$library$'"
 msgstr "$type$ 라이브러리 '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
-msgid  "migrating libraries ..."
+msgid "migrating libraries ..."
 msgstr "라이브러리 변환 ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
-msgid  "%PRODUCTNAME Basic"
+msgid "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME 베이직"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
-msgid  "JavaScript"
+msgid "JavaScript"
 msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
-msgid  "BeanShell"
+msgid "BeanShell"
 msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
-msgid  "Java"
+msgid "Java"
 msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
-msgid  "Python"
+msgid "Python"
 msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
-msgid  "dialog"
+msgid "dialog"
 msgstr "대화 상자"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
-msgid  "Error(s)"
+msgid "Error(s)"
 msgstr "오류"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
-msgid  "Warnings"
+msgid "Warnings"
 msgstr "경고"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
-msgid  "caught exception: "
+msgid "caught exception: "
 msgstr "예외 발생: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
-msgid  "You need to choose a backup location other than the document location itself."
+msgid "You need to choose a backup location other than the document location itself."
 msgstr "문서가 있는 경로가 아닌 다른 백업 경로를 선택하십시오."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
-msgid  "Invalid number of initialization arguments. Expected 1."
+msgid "Invalid number of initialization arguments. Expected 1."
 msgstr "초기화 인수의 수가 올바르지 않습니다. 1이 필요합니다."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
-msgid  "No database document found in the initialization arguments."
+msgid "No database document found in the initialization arguments."
 msgstr "초기화 인수에서 데이터베이스 문서를 찾을 수 없습니다."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
-msgid  "Not applicable to read-only documents."
+msgid "Not applicable to read-only documents."
 msgstr "읽기 전용 문서에 적용할 수 없습니다."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
-msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgid "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "테이블과 쿼리에 같은 이름을 지정할 수 없습니다. 쿼리나 테이블에 아직 사용되지 않은 이름을 사용하십시오."
 
+#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
+msgid "Table"
+msgstr ""
+
+#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
+msgid "Query"
+msgstr ""
+
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
-msgid  "The given connection is no valid query and/or tables supplier."
+msgid "The given connection is no valid query and/or tables supplier."
 msgstr "지정된 연결은 올바른 쿼리 및/또는 테이블 공급자가 아닙니다."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
-msgid  "The given object is no table object."
+msgid "The given object is no table object."
 msgstr "지정된 개체는 테이블 개체가 아닙니다."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
-msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgid "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "잘못된 구성 형식 - com.sun.star.sdb.tools.CompositionType 에 있는 값이 필요합니다."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
-msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgid "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr "잘못된 명령 형식 - com.sun.star.sdb.CommandType 에 있는 테이블과 쿼리만이 허용됩니다."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
-msgid  "Create Form in Design View..."
+msgid "Create Form in Design View..."
 msgstr "디자인 보기에서 양식 만들기..."
 
+#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Form..."
+msgstr ""
+
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Report..."
+msgid "Use Wizard to Create Report..."
 msgstr "마법사를 사용하여 보고서 만들기..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
-msgid  "Create Report in Design View..."
+msgid "Create Report in Design View..."
 msgstr "디자인 보기에서 보고서 만들기..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
-msgid  "Create Query in Design View..."
+msgid "Create Query in Design View..."
 msgstr "디자인 보기에서 쿼리 만들기..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
-msgid  "Create Query in SQL View..."
+msgid "Create Query in SQL View..."
 msgstr "SQL 보기에서 쿼리 만들기..."
 
+#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Query..."
+msgstr ""
+
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
-msgid  "Create Table in Design View..."
+msgid "Create Table in Design View..."
 msgstr "디자인 보기에서 테이블 만들기..."
 
+#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
+msgid "Use Wizard to Create Table..."
+msgstr ""
+
+#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
+msgid "Create View..."
+msgstr ""
+
+#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
+msgid "Forms"
+msgstr ""
+
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
-msgid  "Reports"
+msgid "Reports"
 msgstr "보고서"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
-msgid  "Form..."
+msgid "Form..."
 msgstr "양식..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
-msgid  "Report..."
+msgid "Report..."
 msgstr "보고..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
-msgid  "View (Simple)..."
+msgid "View (Simple)..."
 msgstr "보기(단순)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
-msgid  "Paste Special..."
+msgid "Paste Special..."
 msgstr "선택하여 붙여넣기..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "삭제"
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
+msgid "Rename"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
+msgid "Edit"
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
-msgid  "Edit in SQL View..."
+msgid "Edit in SQL View..."
 msgstr "SQL 보기에서 편집..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
-msgid  "Open"
+msgid "Open"
 msgstr "열기"
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
+msgid "Create as View"
+msgstr ""
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Form Wizard..."
+msgid "Form Wizard..."
 msgstr "양식 마법사..."
 
+#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
+msgid "Report..."
+msgstr "보고..."
+
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
-msgid  "Report Wizard..."
+msgid "Report Wizard..."
 msgstr "보고서 마법사..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
-msgid  "Select All"
+msgid "Select All"
 msgstr "모두 선택"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr "데이터베이스(~D)"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "속성..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
-msgid  "Connection Type..."
+msgid "Connection Type..."
 msgstr "연결 유형..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
-msgid  "Advanced Settings..."
+msgid "Advanced Settings..."
 msgstr "고급 설정..."
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
-msgid  "Do you want to delete the data source '%1'?"
+msgid "Do you want to delete the data source '%1'?"
 msgstr "데이터 원본 '%1'을(를) 삭제하시겠습니까?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
-msgid  " - %PRODUCTNAME Base"
+msgid " - %PRODUCTNAME Base"
 msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a report."
+msgid "The wizard will guide you through the steps necessary to create a report."
 msgstr "마법사는 보고서를 만드는 데 필요한 전반적인 단계를 안내해 줍니다."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
-msgid  "Create a form by specifying the record source, controls, and control properties."
+msgid "Create a form by specifying the record source, controls, and control properties."
 msgstr "레코드 원본, 콘트롤 및 콘트롤 속성을 지정하여 양식을 만듭니다."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
-msgid  "Create a report by specifying the record source, controls, and control properties."
+msgid "Create a report by specifying the record source, controls, and control properties."
 msgstr "레코드 원본, 콘트롤 및 콘트롤 속성을 지정하여 보고서를 만듭니다."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a form."
+msgid "The wizard will guide you through the steps necessary to create a form."
 msgstr "마법사는 양식을 만드는 데 필요한 전반적인 단계를 안내해 줍니다."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
-msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgid "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
 msgstr "정렬 및 그룹화에 필요한 필터, 입력 테이블, 필드 이름 및 속성을 지정하여 쿼리를 만듭니다."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
-msgid  "Create a query  entering an SQL statement directly."
+msgid "Create a query  entering an SQL statement directly."
 msgstr "SQL 문을 직접 입력하여 쿼리를 만듭니다."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "The wizard will guide you through the steps necessary to create a query."
+msgid "The wizard will guide you through the steps necessary to create a query."
 msgstr "마법사는 쿼리를 만드는 데 필요한 전반적인 단계를 안내해 줍니다."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
-msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgid "Create a table by specifying the field names and properties, as well as the data types."
 msgstr "데이터 유형을 비롯하여 필드 이름과 속성을 지정하여 테이블을 만듭니다."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgid "Choose from a selection of business and personal table samples, which you customize to create a table."
 msgstr "업무용 및 개인용 테이블 샘플 문서에서 원하는 항목을 선택하여 테이블 만들기를 사용자 정의합니다."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
-msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgid "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "보고자 하는 테이블과 필드 이름을 지정하여 보기를 만듭니다."
 
+#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+msgid "Opens the view wizard"
+msgstr ""
+
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
-msgid  "Database"
+msgid "Database"
 msgstr "데이터베이스"
 
+#: ui/app/app.src#STR_TASKS.STRING.TEXT
+msgid "Tasks"
+msgstr ""
+
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr "설명"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
-msgid  "Preview"
+msgid "Preview"
 msgstr "미리보기"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
-msgid  "Disable Preview"
+msgid "Disable Preview"
 msgstr "미리보기 비활성화"
 
 #: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "데이터베이스가 수정되었습니다.\n변경 사항을 저장하시겠습니까?"
+msgid "The database has been modified.\nDo you want to save the changes?"
+msgstr ""
+"데이터베이스가 수정되었습니다.\n"
+"변경 사항을 저장하시겠습니까?"
 
 #: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "연결 유형이 수정되었습니다.\n변경 사항을 적용하려면 모든 양식, 보고서, 쿼리 및 테이블을 닫아야 합니다.\n\n지금 모든 문서를 닫으시겠습니까?"
+msgid "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr ""
+"연결 유형이 수정되었습니다.\n"
+"변경 사항을 적용하려면 모든 양식, 보고서, 쿼리 및 테이블을 닫아야 합니다.\n"
+"\n"
+"지금 모든 문서를 닫으시겠습니까?"
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+msgid "None"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+msgid "Document Information"
+msgstr ""
+
+#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+msgid "Document"
+msgstr ""
+
+#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+msgid "Form"
+msgstr ""
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
-msgid  "Report"
+msgid "Report"
 msgstr "보고서"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
-msgid  "F~orm name"
+msgid "F~orm name"
 msgstr "양식 이름(~O)"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
+msgid "~Report name"
 msgstr "보고서 이름(~R)"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
-msgid  "F~older name"
+msgid "F~older name"
 msgstr "폴더 이름(~O)"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
-msgid  "The document contains forms or reports with embedded macros."
+msgid "The document contains forms or reports with embedded macros."
 msgstr "문서에 매크로가 내장된 양식이나 보고서가 포함되어 있습니다."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "매크로가 데이터베이스 문서 자체에 포함되어 있습니다.\n\n문서를 이전과 같이 계속 사용할 수 있지만 매크로를 마이그레이션하는 것이 좋습니다. 메뉴 항목 [도구] / [매크로 마이그레이션...]을 통해 이 과정을 진행할 수 있습니다.\n\n이 마이그레이션이 완료될 때까지는 매크로를 데이터베이스 문서에 포함할 수 없습니다."
+msgid "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
+"매크로가 데이터베이스 문서 자체에 포함되어 있습니다.\n"
+"\n"
+"문서를 이전과 같이 계속 사용할 수 있지만 매크로를 마이그레이션하는 것이 좋습니다. 메뉴 항목 [도구] / [매크로 마이그레이션...]을 "
+"통해 이 과정을 진행할 수 있습니다.\n"
+"\n"
+"이 마이그레이션이 완료될 때까지는 매크로를 데이터베이스 문서에 포함할 수 없습니다."
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
-msgid  "Embedded database"
+msgid "Embedded database"
 msgstr "내장된 데이터베이스"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
-msgid  "You cannot select different categories."
+msgid "You cannot select different categories."
 msgstr "다른 범주를 선택할 수 없습니다."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
-msgid  "Unsupported object type found ($type$)."
+msgid "Unsupported object type found ($type$)."
 msgstr "지원하지 않는 개체 유형을 발견했습니다 ($type$)."
 
+#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+msgid "Table #"
+msgstr ""
+
 #: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "현재 레코드가 변경되었습니다.\n변경 사항을 저장하겠습니까?"
+msgid "The current record has been changed.\nDo you want to save the changes?"
+msgstr ""
+"현재 레코드가 변경되었습니다.\n"
+"변경 사항을 저장하겠습니까?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
-msgid  "Do you want to delete the selected data?"
+msgid "Do you want to delete the selected data?"
 msgstr "선택된 데이터를 삭제하겠습니까?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
-msgid  "(filtered)"
+msgid "(filtered)"
 msgstr "(필터링됨)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "정렬 기준 설정 시 오류"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "필터 기준 설정 시 오류"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
-msgid  "Connection lost"
+msgid "Connection lost"
 msgstr "연결 끊김"
 
+#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+msgid "Queries"
+msgstr ""
+
+#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+msgid "Tables"
+msgstr ""
+
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
-msgid  "Edit ~Database File..."
+msgid "Edit ~Database File..."
 msgstr "데이터베이스 파일 편집(~D)..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
-msgid  "Registered databases ..."
+msgid "Registered databases ..."
 msgstr "등록된 데이터베이스..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
-msgid  "Disco~nnect"
+msgid "Disco~nnect"
 msgstr "연결 끊기(~N)"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
-msgid  "Confirm Deletion"
+msgid "Confirm Deletion"
 msgstr "삭제 확인"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
-msgid  "Do you want to delete the table '%1'?"
+msgid "Do you want to delete the table '%1'?"
 msgstr "'%1' 테이블을 삭제하시겠습니까?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
-msgid  "The query already exists. Do you want to delete it?"
+msgid "The query already exists. Do you want to delete it?"
 msgstr "쿼리가 이미 있습니다. 삭제하시겠습니까?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgid "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "데이터베이스로의 연결이 끊어졌습니다. 다시 연결하시겠습니까?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
-msgid  "Warnings encountered"
+msgid "Warnings encountered"
 msgstr "표시된 경고"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
-msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgid "While retrieving the tables, warnings were reported by the database connection."
 msgstr "테이블 검색 시, 데이터베이스 연결에서 경고가 보고되었습니다."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
-msgid  "Connecting to \"$name$\" ..."
+msgid "Connecting to \"$name$\" ..."
 msgstr "\"$name$\"에 연결 중..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
-msgid  "Loading query $name$ ..."
+msgid "Loading query $name$ ..."
 msgstr "$name$ 쿼리 로드 중..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
-msgid  "Loading table $name$ ..."
+msgid "Loading table $name$ ..."
 msgstr "$name$ 테이블 로드 중..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
-msgid  "No table format could be found."
+msgid "No table format could be found."
 msgstr "테이블 서식을 찾을 수 없습니다."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "데이터 원본 \"$name$\"에 연결하지 못했습니다."
 
+#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+msgid "Rebuild"
+msgstr ""
+
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
-msgid  "Column ~Format..."
+msgid "Column ~Format..."
 msgstr "열 서식(~F)..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
-msgid  "Copy Column D~escription"
+msgid "Copy Column D~escription"
 msgstr "열 설명 복사(~E)"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
-msgid  "Table Format..."
+msgid "Table Format..."
 msgstr "테이블 서식..."
 
+#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+msgid "Row Height..."
+msgstr ""
+
+#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+msgid "Undo: Data Input"
+msgstr ""
+
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
-msgid  "Save current record"
+msgid "Save current record"
 msgstr "현재 레코드 저장"
 
+#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+msgid "Query #"
+msgstr ""
+
+#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+msgid "Table #"
+msgstr ""
+
+#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+msgid "View #"
+msgstr ""
+
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
-msgid  "The name \"#\" already exists."
+msgid "The name \"#\" already exists."
 msgstr "\"#\"(이)라는 이름이 이미 있습니다."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
-msgid  "No matching column names were found."
+msgid "No matching column names were found."
 msgstr "일치하는 열 이름을 찾지 못했습니다."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
-msgid  "An error occurred. Do you want to continue copying?"
+msgid "An error occurred. Do you want to continue copying?"
 msgstr "오류 발생! 복사를 계속하시겠습니까?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
-msgid  "Data source table view"
+msgid "Data source table view"
 msgstr "데이터 원본의 테이블 보기"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
-msgid  "Shows the selected table or query."
+msgid "Shows the selected table or query."
 msgstr "선택된 테이블 또는 쿼리를 표시합니다."
 
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+msgid "Table name"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+msgid "Insert data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+msgid "Delete data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+msgid "Modify data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+msgid "Alter structure"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+msgid "Read data"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+msgid "Modify references"
+msgstr ""
+
+#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+msgid "Drop structure"
+msgstr ""
+
+#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+msgid "Sort Ascending"
+msgstr ""
+
+#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+msgid "Sort Descending"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr ""
+
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
-msgid  "A driver is not registered for the URL #connurl#."
+msgid "A driver is not registered for the URL #connurl#."
 msgstr "URL #connurl#에 대해 등록된 드라이버가 없습니다."
 
+#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+msgid "No connection could be established for the URL #connurl#."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+msgid "Please check the current settings, for example user name and password."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+msgid "Successfully connected, but information about database tables is not available."
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+msgid "All tables"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+msgid "All views"
+msgstr ""
+
+#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+msgid "All tables and views"
+msgstr ""
+
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
-msgid  "Modify SQL statement(s)"
+msgid "Modify SQL statement(s)"
 msgstr "SQL 문 수정"
 
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+msgid "Database files"
+msgstr ""
+
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
-msgid  "S~YSDEVSPACE:"
+msgid "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
-msgid  "~TRANSACTIONLOG:"
+msgid "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
-msgid  "DATAD~EVSPACE:"
+msgid "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+msgid "Database sizes"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+msgid "S~ize (MB):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+msgid "~Free memory space (MB):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+msgid "~Memory utilization (in %):"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+msgid "Database Statistics"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+msgid "Contains the system tables"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+msgid "Contains information about transaction"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+msgid "Contains all data files"
+msgstr ""
+
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+msgid "Total size of the database files"
+msgstr ""
+
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
-msgid  "Currently available space before a new datadev file is created."
+msgid "Currently available space before a new datadev file is created."
 msgstr "새 datadev 파일이 만들어지기 전에 사용할 수 있는 여유 공간."
 
+#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+msgid "Currently used memory"
+msgstr ""
+
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
-msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgid "No information could be displayed because no access rights exist for the required system tables."
 msgstr "정보를 표시할 수 없습니다. 시스템 테이블에 대한 액세스 권한이 없습니다."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
-msgid  "~Database name"
+msgid "~Database name"
 msgstr "데이터베이스 이름(~D)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
-msgid  "Se~rver / Port"
+msgid "Se~rver / Port"
 msgstr "서버/포트(~r)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
-msgid  "~Server"
+msgid "~Server"
 msgstr "서버(~S)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
-msgid  "~Port"
+msgid "~Port"
 msgstr "포트(~P)"
 
+#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+msgid "Default: 3306"
+msgstr "기본값: 3306"
+
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
-msgid  "So~cket"
+msgid "So~cket"
 msgstr "소켓(~C)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
-msgid  "Named p~ipe"
+msgid "Named p~ipe"
 msgstr "명명된 파이프(~i)"
 
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+msgid "Tables"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+msgid "Queries"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+msgid "~Add"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+msgid "~Close"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+msgid "Add Tables"
+msgstr ""
+
+#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+msgid "Add Table or Query"
+msgstr ""
+
+#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
-msgid  "Use SQL92 naming constraints"
+msgid "Use SQL92 naming constraints"
 msgstr "SQL92 이름 제약 조건 사용"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
-msgid  "Append the table alias name on SELECT statements"
+msgid "Append the table alias name on SELECT statements"
 msgstr "SELECT 문에 테이블 별칭 추가"
 
+#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
+msgid "Use keyword AS before table alias names"
+msgstr ""
+
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
-msgid  "Use Outer Join syntax '{OJ }'"
+msgid "Use Outer Join syntax '{OJ }'"
 msgstr "외부 조인 구문 '{OJ }' 사용"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
-msgid  "Ignore the privileges from the database driver"
+msgid "Ignore the privileges from the database driver"
 msgstr "데이터베이스 드라이버의 권한 무시"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
-msgid  "Replace named parameters with '?'"
+msgid "Replace named parameters with '?'"
 msgstr "지정된 매개 변수를 '?'(으)로 바꾸기"
 
+#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+msgid "Display version columns (when available)"
+msgstr ""
+
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
-msgid  "Use catalog name in SELECT statements"
+msgid "Use catalog name in SELECT statements"
 msgstr "SELECT 문에 카탈로그 이름 사용"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
-msgid  "Use schema name in SELECT statements"
+msgid "Use schema name in SELECT statements"
 msgstr "SELECT 문에 스키마 이름 사용"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
-msgid  "Create index with ASC or DESC statement"
+msgid "Create index with ASC or DESC statement"
 msgstr "ASC 또는 DESC 문으로 색인 만들기"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
-msgid  "End text lines with CR+LF"
+msgid "End text lines with CR+LF"
 msgstr "CR+LF로 텍스트 줄 종결"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
-msgid  "Ignore currency field information"
+msgid "Ignore currency field information"
 msgstr "현재 필드 정보 무시"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
-msgid  "Form data input checks for required fields"
+msgid "Form data input checks for required fields"
 msgstr "데이터 입력 형식 체크"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
-msgid  "Use ODBC conformant date/time literals"
+msgid "Use ODBC conformant date/time literals"
 msgstr "ODBC 요소 날짜/시간 문자 사용"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
-msgid  "Supports primary keys"
+msgid "Supports primary keys"
 msgstr "기본 키 지원"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
-msgid  "Respect the result set type from the database driver"
+msgid "Respect the result set type from the database driver"
 msgstr "데이터베이스 드라이버의 결과 집합 유형 사용"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
+msgid "Default"
 msgstr "기본값"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "SQL"
+msgid "SQL"
 msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "Mixed"
+msgid "Mixed"
 msgstr "혼합"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
-msgid  "MS Access"
+msgid "MS Access"
 msgstr "MS Access"
 
+#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+msgid "Comparison of Boolean values"
+msgstr ""
+
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
-msgid  "Rows to scan column types"
+msgid "Rows to scan column types"
 msgstr "열 유형을 탐색하기 위한 행"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
-msgid  "Settings"
+msgid "Settings"
 msgstr "설정"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
-msgid  "Re~trieve generated values"
+msgid "Re~trieve generated values"
 msgstr "생성된 값 검색(~t)"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
-msgid  "~Auto-increment statement"
+msgid "~Auto-increment statement"
 msgstr "자동 증가문(~A)"
 
+#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+msgid "~Query of generated values"
+msgstr ""
+
+#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+msgid "Generated Values"
+msgstr ""
+
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
-msgid  "Special Settings"
+msgid "Special Settings"
 msgstr "특수 설정"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
-msgid  "Advanced Settings"
+msgid "Advanced Settings"
 msgstr "고급 설정"
 
+#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the dBASE files"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the text files"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+msgid "Path to the spreadsheet document"
+msgstr ""
+
+#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+msgid "Name of the ODBC data source on your system"
+msgstr ""
+
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the MySQL database"
+msgid "Name of the MySQL database"
 msgstr "MySQL 데이터베이스 이름"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the Oracle database"
+msgid "Name of the Oracle database"
 msgstr "Oracle 데이터베이스 이름"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
-msgid  "Name of the Adabas D database"
+msgid "Name of the Adabas D database"
 msgstr "Adabas D 데이터베이스 이름"
 
+#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+msgid "Microsoft Access database file"
+msgstr ""
+
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
-msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgid "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "더 이상 설정할 필요가 없습니다. 연결이 제대로 작동하는지 확인하려면 [%test] 버튼을 클릭하십시오."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
-msgid  "Datasource URL"
+msgid "Datasource URL"
 msgstr "데이터 원본 URL"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "호스트 이름(~H)"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
-msgid  "~Mozilla profile name"
+msgid "~Mozilla profile name"
 msgstr "Mozilla 프로파일 이름(~M)"
 
+#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+msgid "~Thunderbird profile name"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
-msgid  "Browse"
+msgid "Browse"
 msgstr "찾아보기"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
-msgid  "Database name"
+msgid "Database name"
 msgstr "데이터베이스 이름"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
-msgid  "Server"
+msgid "Server"
 msgstr "서버"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+msgid "Base ~DN"
+msgstr ""
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+msgid "~Port number"
+msgstr "포트 번호(~P)"
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
-msgid  "Data conversion"
+msgid "Data conversion"
 msgstr "데이터 변환"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
-msgid  "~Character set"
+msgid "~Character set"
 msgstr "문자 집합(~C)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
-msgid  "Specify the type of files you want to access"
+msgid "Specify the type of files you want to access"
 msgstr "액세스하려는 파일 유형 지정"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+msgid "Plain text files (*.txt)"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
-msgid  "'Comma separated value' files (*.csv)"
+msgid "'Comma separated value' files (*.csv)"
 msgstr "'쉼표로 분리되는 값' 파일(*.csv)"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+msgid "Custom:"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Custom: *.abc"
+msgid "Custom: *.abc"
 msgstr "사용자 정의:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
-msgid  "Row Format"
+msgid "Row Format"
 msgstr "원시 형식"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Field separator"
+msgid "Field separator"
 msgstr "필드 구분 기호"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Text separator"
+msgid "Text separator"
 msgstr "텍스트 구분 기호"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Decimal separator"
+msgid "Decimal separator"
 msgstr "소수 구분 기호"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "천단위 구분 기호"
 
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+msgid "~Text contains headers"
+msgstr ""
+
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+msgid "{None}"
+msgstr ""
+
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
-msgid  "#1 must be set."
+msgid "#1 must be set."
 msgstr "#1을(를) 설정해야 합니다."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
-msgid  "#1 and #2 must be different."
+msgid "#1 and #2 must be different."
 msgstr "#1과(와) #2은(는) 달라야 합니다."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
-msgid  "Wildcards such as ?,* are not allowed in #1."
+msgid "Wildcards such as ?,* are not allowed in #1."
 msgstr "#1에서는 ?,* 등의 와일드카드가 허용되지 않습니다."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "JDBC d~river class"
+msgid "JDBC d~river class"
 msgstr "JDBC 드라이버 클래스(~R)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
+msgid "Test class"
 msgstr "테스트 클래스"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
-msgid  "Socket"
+msgid "Socket"
 msgstr "소켓"
 
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+msgid "Save"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Create New Directory"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Up One Level"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+msgid "File ~name:"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
+msgid "Save"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+msgid "~Path:"
+msgstr ""
+
+#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+msgid "Folder"
+msgstr ""
+
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
-msgid  "The file already exists. Overwrite?"
+msgid "The file already exists. Overwrite?"
 msgstr "파일이 이미 있습니다. 덮어쓰시겠습니까?"
 
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "General"
+msgstr ""
+
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "호스트 이름(~H)"
 
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "User authentication"
+msgstr ""
+
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
+msgid "~User name"
 msgstr "사용자 이름(~U)"
 
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+msgid "Password required"
+msgstr ""
+
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
-msgid  "JDBC properties"
+msgid "JDBC properties"
 msgstr "JDBC 속성"
 
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "~JDBC driver class"
+msgstr ""
+
+#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+msgid "Test Class"
+msgstr ""
+
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
-msgid  "Test Connection"
+msgid "Test Connection"
 msgstr "테스트 연결"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
-msgid  "No Adabas D data sources were found on your system."
+msgid "No Adabas D data sources were found on your system."
 msgstr "시스템에 Adabas D 데이터 원본이 없습니다."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
-msgid  "Connection Test"
+msgid "Connection Test"
 msgstr "연결 테스트"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
-msgid  "The connection was established successfully."
+msgid "The connection was established successfully."
 msgstr "성공적으로 연결되었습니다."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "연결을 성공적으로 설정하지 못했습니다."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
-msgid  "The JDBC driver was loaded successfully."
+msgid "The JDBC driver was loaded successfully."
 msgstr "JDBC 드라이버가 성공적으로 로드되었습니다."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
-msgid  "The JDBC driver could not be loaded."
+msgid "The JDBC driver could not be loaded."
 msgstr "JDBC 드라이버를 로드하지 못했습니다."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
-msgid  "MS Access file"
+msgid "MS Access file"
 msgstr "MS Access 파일"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
-msgid  "MS Access 2007 file"
+msgid "MS Access 2007 file"
 msgstr "MS Access 2007 파일"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
-msgid  "A password is needed to connect to the data source \"$name$\"."
+msgid "A password is needed to connect to the data source \"$name$\"."
 msgstr "데이터 원본 \"$name$\" 에 연결하려면 암호를 입력해야 합니다."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "디렉토리\n\n$path$\n\n이(가) 존재하지 않습니다. 새로 만드시겠습니까?"
+msgid "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
+msgstr ""
+"디렉토리\n"
+"\n"
+"$path$\n"
+"\n"
+"이(가) 존재하지 않습니다. 새로 만드시겠습니까?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
-msgid  "The directory $name$ could not be created."
+msgid "The directory $name$ could not be created."
 msgstr "디렉토리 $name$을(를) 만들 수 없습니다."
 
+#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+msgid "Convert Database"
+msgstr ""
+
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
-msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgid "Please enter the ~password for the user 'DOMAIN'."
 msgstr "'DOMAIN' 사용자의 암호를 입력해주십시오(~P)."
 
+#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+msgid "Tables Filter"
+msgstr ""
+
+#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Tables and table filter"
+msgstr ""
+
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Mark the tables that should be visible for the applications."
+msgid "Mark the tables that should be visible for the applications."
 msgstr "응용 프로그램에 표시해야 하는 테이블에 표시하십시오."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
-msgid  "Database Wizard"
+msgid "Database Wizard"
 msgstr "데이터베이스 마법사"
 
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
+msgid "Database Wizard"
+msgstr "데이터베이스 마법사"
+
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+msgid "Select database"
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
-msgid  "Set up dBASE connection"
+msgid "Set up dBASE connection"
 msgstr "dBASE 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
+msgid "Set up a connection to text files"
 msgstr "텍스트 파일에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
-msgid  "Set up Microsoft Access connection"
+msgid "Set up Microsoft Access connection"
 msgstr "Microsoft Access 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
-msgid  "Set up LDAP connection"
+msgid "Set up LDAP connection"
 msgstr "LDAP 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
-msgid  "Set up Adabas D connection"
+msgid "Set up Adabas D connection"
 msgstr "Adabas D 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
-msgid  "Set up ADO connection"
+msgid "Set up ADO connection"
 msgstr "ADO 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
-msgid  "Set up JDBC connection"
+msgid "Set up JDBC connection"
 msgstr "JDBC 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
-msgid  "Set up Oracle database connection"
+msgid "Set up Oracle database connection"
 msgstr "Oracle 데이터베이스 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
-msgid  "Set up MySQL connection"
+msgid "Set up MySQL connection"
 msgstr "MySQL 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
-msgid  "Set up ODBC connection"
+msgid "Set up ODBC connection"
 msgstr "ODBC 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
-msgid  "Set up Spreadsheet connection"
+msgid "Set up Spreadsheet connection"
 msgstr "스프레드시트 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
-msgid  "Set up user authentication"
+msgid "Set up user authentication"
 msgstr "사용자 인증 설정"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
-msgid  "Set up MySQL server data"
+msgid "Set up MySQL server data"
 msgstr "MySQL 서버 데이터 설정"
 
+#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+msgid "Save and proceed"
+msgstr ""
+
+#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+msgid "New Database"
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up a connection to a MySQL database"
+msgid "Set up a connection to a MySQL database"
 msgstr "MySQL 데이터베이스로 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ODBC 또는 JDBC를 사용하여 MySQL 데이터베이스에 연결할 수 있습니다.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"ODBC 또는 JDBC를 사용하여 MySQL 데이터베이스에 연결할 수 있습니다.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
-msgid  "How do you want to connect to your MySQL database?"
+msgid "How do you want to connect to your MySQL database?"
 msgstr "MySQL 데이터베이스에 연결하는 방법을 선택하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
-msgid  "Connect using ODBC (Open Database Connectivity)"
+msgid "Connect using ODBC (Open Database Connectivity)"
 msgstr "ODBC(Open Database Connectivity)를 사용하여 연결"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
-msgid  "Connect using JDBC (Java Database Connectivity)"
+msgid "Connect using JDBC (Java Database Connectivity)"
 msgstr "JDBC(Java Database Connectivity)를 사용하여 연결"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
-msgid  "Connect directly"
+msgid "Connect directly"
 msgstr "직접 연결"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up the user authentication"
+msgid "Set up the user authentication"
 msgstr "사용자 인증 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Some databases require you to enter a user name."
+msgid "Some databases require you to enter a user name."
 msgstr "일부 데이터베이스는 사용자 이름을 입력해야 합니다."
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+msgid "~User name"
+msgstr "사용자 이름(~U)"
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
-msgid  "Password re~quired"
+msgid "Password re~quired"
 msgstr "암호 필요(~Q)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
-msgid  "~Test Connection"
+msgid "~Test Connection"
 msgstr "테스트 연결(~T)"
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+msgid "Decide how to proceed after saving the database"
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
 msgstr "마법사가 데이터베이스를 자동으로 %PRODUCTNAME에 등록하도록 하시겠습니까?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
-msgid  "~Yes, register the database for me"
+msgid "~Yes, register the database for me"
 msgstr "예, 데이터베이스 자동 등록(~Y)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
-msgid  "N~o, do not register the database"
+msgid "N~o, do not register the database"
 msgstr "아니오, 데이터베이스 등록 안 함(~O)"
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+msgid "After the database file has been saved, what do you want to do?"
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
-msgid  "Open the database for editing"
+msgid "Open the database for editing"
 msgstr "데이터베이스를 편집할 수 있도록 엽니다."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
-msgid  "Create tables using the table wizard"
+msgid "Create tables using the table wizard"
 msgstr "테이블 마법사를 사용하여 테이블을 만듭니다."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
-msgid  "Click 'Finish' to save the database."
+msgid "Click 'Finish' to save the database."
 msgstr "데이터베이스를 저장하려면 마침을 클릭하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up connection to a MySQL database using JDBC"
+msgid "Set up connection to a MySQL database using JDBC"
 msgstr "JDBC를 사용하여 MySQL 데이터베이스로 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "JDBC를 사용하여 MySQL 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오. 시스템에 JDBC 드라이버 클래스를 설치하고 %PRODUCTNAME에 등록해야 합니다.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"JDBC를 사용하여 MySQL 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오. 시스템에 JDBC 드라이버 클래스를 설치하고 %"
+"PRODUCTNAME에 등록해야 합니다.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+msgid "MySQL JDBC d~river class:"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
-msgid  "Default: 3306"
+msgid "Default: 3306"
 msgstr "기본값: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
-msgid  "Set up connection to a MySQL database"
+msgid "Set up connection to a MySQL database"
 msgstr "MySQL 데이터베이스에 대한 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
-msgid  "Please enter the required information to connect to a MySQL database."
+msgid "Please enter the required information to connect to a MySQL database."
 msgstr "MySQL 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to dBASE files"
+msgid "Set up a connection to dBASE files"
 msgstr "dBASE 파일에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
-msgid  "Select the folder where the dBASE files are stored."
+msgid "Select the folder where the dBASE files are stored."
 msgstr "dBASE 파일을 저장할 폴더를 선택하십시오."
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
+msgid "Set up a connection to text files"
+msgstr "텍스트 파일에 연결 설정"
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
-msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr "CSV(Comma Separated Values) 텍스트 파일을 저장할 폴더를 선택하십시오. %PRODUCTNAME Base는 이러한 파일을 읽기 전용 모드로 엽니다."
+msgid "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr ""
+"CSV(Comma Separated Values) 텍스트 파일을 저장할 폴더를 선택하십시오. %PRODUCTNAME Base는 이러한 "
+"파일을 읽기 전용 모드로 엽니다."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+msgid "Path to text files"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to a Microsoft Access database"
+msgid "Set up a connection to a Microsoft Access database"
 msgstr "Microsoft Access 데이터베이스에 연결 설정"
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+msgid "Please select the Microsoft Access file you want to access."
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Set up a connection to an LDAP directory"
+msgid "Set up a connection to an LDAP directory"
 msgstr "LDAP 디렉토리에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "LDAP 디렉토리에 연결하는 데 필요한 정보를 입력하십시오.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"LDAP 디렉토리에 연결하는 데 필요한 정보를 입력하십시오.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+msgid "Default: 389"
+msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
-msgid  "Use ~secure connection (SSL)"
+msgid "Use ~secure connection (SSL)"
 msgstr "보안 연결(SSL) 사용(~s)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an Adabas D database"
+msgid "Set up a connection to an Adabas D database"
 msgstr "Adabas D 데이터베이스에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "연결할 Adabas D 데이터베이스의 이름을 입력하십시오.\n이미 %PRODUCTNAME에 등록되어 있는 Adabas D 데이터베이스를 선택하려면 [찾아보기...]를 클릭하십시오."
+msgid "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
+"연결할 Adabas D 데이터베이스의 이름을 입력하십시오.\n"
+"이미 %PRODUCTNAME에 등록되어 있는 Adabas D 데이터베이스를 선택하려면 [찾아보기...]를 클릭하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an ADO database"
+msgid "Set up a connection to an ADO database"
 msgstr "ADO 데이터베이스에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "연결할 ADO 데이터 원본의 URL을 입력하십시오.\n공급자별 설정을 구성하려면 [찾아보기]를 클릭하십시오.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"연결할 ADO 데이터 원본의 URL을 입력하십시오.\n"
+"공급자별 설정을 구성하려면 [찾아보기]를 클릭하십시오.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an ODBC database"
+msgid "Set up a connection to an ODBC database"
 msgstr "ODBC 데이터베이스에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "연결할 ODBC 데이터베이스의 이름을 입력하십시오.\n이미 %PRODUCTNAME에 등록되어 있는 ODBC 데이터베이스를 선택하려면 [찾아보기...]를 클릭하십시오.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"연결할 ODBC 데이터베이스의 이름을 입력하십시오.\n"
+"이미 %PRODUCTNAME에 등록되어 있는 ODBC 데이터베이스를 선택하려면 [찾아보기...]를 클릭하십시오.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to a JDBC database"
+msgid "Set up a connection to a JDBC database"
 msgstr "JDBC 데이터베이스에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "JDBC 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"JDBC 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to an Oracle database"
+msgid "Set up a connection to an Oracle database"
 msgstr "Oracle 데이터베이스에 연결 설정"
 
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+msgid "Default: 1521"
+msgstr ""
+
+#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+msgid "Oracle JDBC ~driver class"
+msgstr ""
+
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Oracle 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오. 시스템에 JDBC 드라이버 클래스를 설치하고 %PRODUCTNAME에 등록해야 합니다.\n다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
+msgid "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
+"Oracle 데이터베이스에 연결하는 데 필요한 정보를 입력하십시오. 시스템에 JDBC 드라이버 클래스를 설치하고 %PRODUCTNAME에 "
+"등록해야 합니다.\n"
+"다음 설정에 대해 잘 모르겠으면 시스템 관리자에게 문의하십시오."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to spreadsheets"
+msgid "Set up a connection to spreadsheets"
 msgstr "스프레드시트에 연결 설정"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "[찾아보기...]를 클릭하여 %PRODUCTNAME 스프레드시트 또는 Microsoft Excel 통합 문서를 선택하십시오.\n%PRODUCTNAME은(는) 이 파일을 읽기 전용 모드로 엽니다."
+msgid "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+"[찾아보기...]를 클릭하여 %PRODUCTNAME 스프레드시트 또는 Microsoft Excel 통합 문서를 선택하십시오.\n"
+"%PRODUCTNAME은(는) 이 파일을 읽기 전용 모드로 엽니다."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
-msgid  "~Location and file name"
+msgid "~Location and file name"
 msgstr "위치 및 파일 이름(~L)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
-msgid  "~Password required"
+msgid "~Password required"
 msgstr "암호 필요(~P)"
 
+#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+msgid "Use catalog for file-based databases"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr "연결 설정"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
+msgid "~Host name"
 msgstr "호스트 이름(~H)"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
+msgid "~Port number"
 msgstr "포트 번호(~P)"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
-msgid  "Advanced Properties"
+msgid "Advanced Properties"
 msgstr "고급 속성"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
-msgid  "Additional Settings"
+msgid "Additional Settings"
 msgstr "추가 설정"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
-msgid  "Connection settings"
+msgid "Connection settings"
 msgstr "연결 설정"
 
+#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+msgid "Database properties"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
+msgid "Database properties"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
-msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "%PRODUCTNAME 데이터베이스 마법사를 시작합니다."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
-msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr "데이터베이스 마법사를 사용하여 새 데이터베이스를 만들거나 기존 데이터베이스 파일을 열거나 서버에 저장된 데이터베이스에 연결할 수 있습니다."
+msgid "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr ""
+"데이터베이스 마법사를 사용하여 새 데이터베이스를 만들거나 기존 데이터베이스 파일을 열거나 서버에 저장된 데이터베이스에 연결할 수 "
+"있습니다."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+msgid "What do you want to do?"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+msgid "Create a n~ew database"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+msgid "Open an existing database ~file"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+msgid "Recently used"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+msgid "Connect to an e~xisting database"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
-msgid  "Select the type of database to which you want to establish a connection."
+msgid "Select the type of database to which you want to establish a connection."
 msgstr "연결하려는 데이터베이스 유형을 선택하십시오."
 
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+msgid "Database ~type "
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+msgid "Database"
+msgstr "데이터베이스"
+
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "다음 페이지에서 연결에 대한 자세한 설정을 지정할 수 있습니다.\n\n새로 지정된 설정이 기존 설정을 대체합니다."
+msgid "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
+msgstr ""
+"다음 페이지에서 연결에 대한 자세한 설정을 지정할 수 있습니다.\n"
+"\n"
+"새로 지정된 설정이 기존 설정을 대체합니다."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+msgid "MySQL"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+msgid "Data Source Properties: #"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
-msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr "프로그램 라이브러리 #lib#을(를) 로드하지 못했거나 라이브러리에 오류가 있습니다. ODBC 데이터 원본을 선택할 수 없습니다."
+msgid "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr ""
+"프로그램 라이브러리 #lib#을(를) 로드하지 못했거나 라이브러리에 오류가 있습니다. ODBC 데이터 원본을 선택할 수 없습니다."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "이러한 종류의 데이터 원본은 이 플랫폼에서 지원되지 않습니다.\n설정을 변경할 수는 있지만 아마도 데이터베이스에 연결하지 못할 것입니다."
+msgid "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
+"이러한 종류의 데이터 원본은 이 플랫폼에서 지원되지 않습니다.\n"
+"설정을 변경할 수는 있지만 아마도 데이터베이스에 연결하지 못할 것입니다."
+
+#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+msgid "General"
+msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Optional settings"
+msgid "Optional settings"
 msgstr "선택적 설정"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
-msgid  "Display deleted records as well"
+msgid "Display deleted records as well"
 msgstr "삭제된 레코드 표시"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
-msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgid "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
 msgstr "참고: 삭제되어 비활성화된 레코드가 표시되는 경우, 데이터 원본에서 레코드를 삭제할 수 없습니다."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
-msgid  "Indexes..."
+msgid "Indexes..."
 msgstr "색인"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Optional Settings"
+msgid "Optional Settings"
 msgstr "선택적 설정"
 
+#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+msgid "ODBC ~options"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Connection Settings"
+msgstr "연결 설정"
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
+msgid "~Host name"
+msgstr "호스트 이름(~H)"
+
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-msgid  "Data ~buffer size (MB)"
+msgid "Data ~buffer size (MB)"
 msgstr "데이터 버퍼 크기(MB)(~B)"
 
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+msgid "~Data increment (MB)"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "Administration"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+msgid "Control ~user name"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+msgid "Control ~password"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
-msgid  "~Shut down service when closing %PRODUCTNAME"
+msgid "~Shut down service when closing %PRODUCTNAME"
 msgstr "%PRODUCTNAME을(를) 닫을 때 서비스 종료(~S)"
 
+#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+msgid "E~xtended..."
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "MySQL JDBC d~river class"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
+msgid "Test class"
 msgstr "테스트 클래스"
 
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+msgid "User authentication"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+msgid "~User name"
+msgstr "사용자 이름(~U)"
+
+#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+msgid "Password required"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+msgid "Oracle JDBC d~river class"
+msgstr ""
+
+#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+msgid "Test class"
+msgstr "테스트 클래스"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
+msgid "Connection Settings"
+msgstr "연결 설정"
+
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+msgid "~Base DN"
+msgstr ""
+
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
-msgid  "Use secure connection(SSL)"
+msgid "Use secure connection(SSL)"
 msgstr "보안 연결(SSL) 사용"
 
+#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
+msgid "~Port number"
+msgstr "포트 번호(~P)"
+
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
-msgid  "Maximum number of ~records"
+msgid "Maximum number of ~records"
 msgstr "최대 레코드 수(~R)"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Hostname"
+msgid "~Hostname"
 msgstr "호스트 이름(~H)"
 
+#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
+msgid "~Port number"
+msgstr "포트 번호(~P)"
+
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "~Driver settings"
+msgid "~Driver settings"
 msgstr "드라이버 설정(~D)"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
-msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgid "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "기존의 데이터베이스에 연결하려면 '기존 데이터베이스에 연결하기'를 선택하십시오."
 
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+msgid "Indexes"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+msgid "~Table"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+msgid "Assignment"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+msgid "T~able indexes"
+msgstr ""
+
+#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+msgid "~Free indexes"
+msgstr ""
+
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL 명령"
 
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+msgid "Command to execute"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+msgid "Execute"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+msgid "Previous commands"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+msgid "Status"
+msgstr ""
+
+#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+msgid "Close"
+msgstr ""
+
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
-msgid  "Execute SQL Statement"
+msgid "Execute SQL Statement"
 msgstr "SQL 문 실행"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
-msgid  "Command successfully executed."
+msgid "Command successfully executed."
 msgstr "명령을 성공적으로 실행하였습니다."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
-msgid  "The connection to the database has been lost. This dialog will be closed."
+msgid "The connection to the database has been lost. This dialog will be closed."
 msgstr "데이터베이스와의 연결이 해제되었습니다. 이 대화 상자가 닫힐 것입니다."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
-msgid  "Field Format"
+msgid "Field Format"
 msgstr "필드 서식"
 
+#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+msgid "Bac~k"
+msgstr ""
+
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
-msgid  "Font"
+msgid "Font"
 msgstr "글꼴"
 
+#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+msgid "Format"
+msgstr ""
+
+#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+msgid "Alignment"
+msgstr ""
+
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
-msgid  "Table Format"
+msgid "Table Format"
 msgstr "표 서식"
 
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+msgid "Save As"
+msgstr ""
+
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Please enter a name for the object to be created:"
+msgid "Please enter a name for the object to be created:"
 msgstr "생성하려는 개체의 이름을 입력하십시오:"
 
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+msgid "~Catalog"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+msgid "~Schema"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+msgid "~Table Name"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+msgid "~Name of table view"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+msgid "~Query name"
+msgstr ""
+
+#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+msgid "Rename to"
+msgstr ""
+
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
-msgid  "Insert as"
+msgid "Insert as"
 msgstr "삽입 형식"
 
+#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Height"
+msgstr ""
+
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr "자동(~A)"
 
+#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+msgid "Row Height"
+msgstr ""
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Width"
+msgstr ""
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
+msgid "~Automatic"
+msgstr "자동(~A)"
+
+#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+msgid "Column Width"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+msgid "Data Source"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "Choose a data source:"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+msgid "Organize..."
+msgstr ""
+
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
-msgid  "Create..."
+#, fuzzy
+msgid "Create..."
 msgstr "만들기..."
 
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+msgid "Local Databases"
+msgstr ""
+
+#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+msgid "Choose a database"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+msgid "Indexes"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+msgid "New Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+msgid "Delete Current Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+msgid "Rename Current Index"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+msgid "Save Current Index"
+msgstr ""
+
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
-msgid  "Reset Current Index"
+msgid "Reset Current Index"
 msgstr "현재의 색인 원래대로"
 
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+msgid "Index details"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+msgid "Index identifier:"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+msgid "~Unique"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+msgid "Fields"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+msgid "~Close"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+msgid "Sort order"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+msgid "Index field"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+msgid "Ascending"
+msgstr ""
+
+#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+msgid "Descending"
+msgstr ""
+
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
-msgid  "Do you really want to delete the index '$name$'?"
+msgid "Do you really want to delete the index '$name$'?"
 msgstr "색인 '$name$'(을)를 정말 삭제하겠습니까?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
-msgid  "index"
+msgid "index"
 msgstr "색인"
 
+#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+msgid "Save Index"
+msgstr ""
+
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
-msgid  "The index must contain at least one field."
+msgid "The index must contain at least one field."
 msgstr "색인에 최소 하나의 필드를 포함해야 합니다."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
-msgid  "Exit Index Design"
+msgid "Exit Index Design"
 msgstr "색인 디자인 종료"
 
+#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+msgid "Do you want to save the changes made to the current index?"
+msgstr ""
+
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
-msgid  "There is already another index named \"$name$\"."
+msgid "There is already another index named \"$name$\"."
 msgstr "이미 \"$name$\"의 다른 색인 이름이 존재합니다."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgid "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
 msgstr "색인 정의에 따라 각 테이블의 열을 한 번만 입력할 수 있는데 사용자가 열 \"$name$\"(을)를 두 번 입력하였습니다."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
-msgid  "~Parameters"
+msgid "~Parameters"
 msgstr "매개 변수(~P)"
 
+#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+msgid "~Value"
+msgstr ""
+
+#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+msgid "~Next"
+msgstr ""
+
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
-msgid  "Parameter Input"
+msgid "Parameter Input"
 msgstr "매개 변수 입력"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
-msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgid "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "항목이 열 \"$name$\"의 유효한 값으로 변환되지 못했습니다."
 
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+msgid "Standard Filter"
+msgstr ""
+
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
+msgid "AND"
 msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
+msgid "OR"
 msgstr "OR"
 
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+msgid "AND"
+msgstr "AND"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
+msgid "OR"
+msgstr "OR"
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+msgid "Field name"
+msgstr ""
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+msgid "Condition"
+msgstr ""
+
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+msgid "Value"
+msgstr ""
+
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
-msgid  "Operator"
+msgid "Operator"
 msgstr "연산자"
 
+#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+msgid "Criteria"
+msgstr ""
+
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
-msgid  "- none -"
+msgid "- none -"
 msgstr "- 없음 -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
-msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+msgid "Sort Order"
+msgstr ""
+
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
+msgid "ascending"
 msgstr "오름차순"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
+msgid "descending"
 msgstr "내림차순"
 
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+msgid "ascending"
+msgstr "오름차순"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
+msgid "descending"
+msgstr "내림차순"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+msgid "ascending"
+msgstr "오름차순"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
+msgid "descending"
+msgstr "내림차순"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+msgid "Field name"
+msgstr ""
+
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
-msgid  "and then"
+msgid "and then"
+msgstr "그 다음"
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
+msgid "and then"
 msgstr "그 다음"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
-msgid  "Operator"
+msgid "Operator"
 msgstr "연산자"
 
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+msgid "Order"
+msgstr ""
+
+#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+msgid "Sort order"
+msgstr ""
+
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
-msgid  "<none>"
+#, fuzzy
+msgid "<none>"
 msgstr "<없음>"
 
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+msgid "Relations"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+msgid "Tables involved"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+msgid "Fields involved"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+msgid "Update options"
+msgstr ""
+
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~No action"
+msgid "~No action"
 msgstr "실행 없음(~N)"
 
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+msgid "~Update cascade"
+msgstr ""
+
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
+msgid "~Set null"
 msgstr "널 설정(~S)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
+msgid "Set ~default"
 msgstr "기본 설정(~D)"
 
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+msgid "Delete options"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
+msgid "~No action"
+msgstr "실행 없음(~N)"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+msgid "Delete ~cascade"
+msgstr ""
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
+msgid "~Set null"
+msgstr "널 설정(~S)"
+
+#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
+msgid "Set ~default"
+msgstr "기본 설정(~D)"
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+msgid "%PRODUCTNAME Base"
+msgstr ""
+
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "자세히"
 
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+msgid "Error ~list:"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid "~Description:"
+msgstr ""
+
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
-msgid  "SQL Status"
+msgid "SQL Status"
 msgstr "SQL-상태"
 
+#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+msgid "Error code"
+msgstr ""
+
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
-msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr "데이터베이스의 언어에 문자 집합 설정이 올바르지 않으면 이러한 오류가 자주 발생합니다. [편집] - [데이터베이스] - [속성]을 선택하여 설정을 확인하십시오."
+msgid "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr ""
+"데이터베이스의 언어에 문자 집합 설정이 올바르지 않으면 이러한 오류가 자주 발생합니다. [편집] - [데이터베이스] - [속성]을 "
+"선택하여 설정을 확인하십시오."
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+msgid "Error"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+msgid "Warning"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+msgid "Information"
+msgstr ""
+
+#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
+msgid "Details"
+msgstr "자세히"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
-msgid  "Text Connection Settings"
+msgid "Text Connection Settings"
 msgstr "텍스트 연결 설정"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
-msgid  "User Settings"
+msgid "User Settings"
 msgstr "사용자 설정"
 
+#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+msgid "User administration"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+msgid "User selection"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+msgid "Us~er:"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+msgid "~Add User..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+msgid "Change ~Password..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+msgid "~Delete User..."
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+msgid "Access rights for selected user"
+msgstr ""
+
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
-msgid  "Do you really want to delete the user?"
+msgid "Do you really want to delete the user?"
 msgstr "선택한 사용자를 정말 삭제하겠습니까?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
-msgid  "The database does not support user administration."
+msgid "The database does not support user administration."
 msgstr "데이터베이스에서 사용자 관리를 지원하지 않습니다."
 
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+msgid "User \"$name$:  $\""
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+msgid "Old p~assword"
+msgstr ""
+
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+msgid "~Password"
+msgstr ""
+
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
-msgid  "~Confirm  password"
+msgid "~Confirm  password"
 msgstr "암호 확인(~C)"
 
+#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+msgid "Change Password"
+msgstr ""
+
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
-msgid  "The passwords do not match. Please enter the password again."
+msgid "The passwords do not match. Please enter the password again."
 msgstr "암호가 다릅니다. 다시 입력하십시오."
 
+#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+msgid "Refresh"
+msgstr ""
+
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
-msgid  "New ~View Design"
+msgid "New ~View Design"
 msgstr "새 보기 디자인(~V)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
-msgid  "New ~Table Design"
+msgid "New ~Table Design"
 msgstr "새 테이블 디자인(~T)"
 
+#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+msgid "Query AutoPilot..."
+msgstr ""
+
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "New ~Query (Design View)"
+msgid "New ~Query (Design View)"
 msgstr "새 쿼리(디자인 보기)(~Q)"
 
+#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+msgid "~Edit Query"
+msgstr ""
+
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
-msgid  "New Query (~SQL View)"
+msgid "New Query (~SQL View)"
 msgstr "새 쿼리(SQL 보기)(~S)"
 
+#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
+msgid "Edit..."
+msgstr "편집..."
+
+#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+msgid "Column ~Width..."
+msgstr ""
+
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
-msgid  "Report Wizard..."
+msgid "Report Wizard..."
 msgstr "보고서 마법사..."
 
+#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+msgid "Form AutoPilot..."
+msgstr ""
+
+#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+msgid "System"
+msgstr ""
+
+#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+msgid "Error during creation"
+msgstr ""
+
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
-msgid  "An unexpected error occurred. The operation could not be performed."
+msgid "An unexpected error occurred. The operation could not be performed."
 msgstr "예상치 못했던 오류가 발생했습니다. 작업을 실행할 수 없습니다."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
-msgid  "The document \"$file$\" could not be opened."
+msgid "The document \"$file$\" could not be opened."
 msgstr "\"$file$\" 문서를 열지 못했습니다."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
-msgid  "The table cannot be deleted because the database connection does not support this."
+msgid "The table cannot be deleted because the database connection does not support this."
 msgstr "데이터베이스 연결에서 지원되지 않기 때문에 테이블을 삭제할 수 없습니다."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
-msgid  "~All"
+msgid "~All"
 msgstr "모두(~A)"
 
+#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+msgid "Undo:"
+msgstr ""
+
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
-msgid  "Redo:"
+msgid "Redo:"
 msgstr "다시 실행:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
-msgid  "No corresponding column type could be found for column '#1'."
+msgid "No corresponding column type could be found for column '#1'."
 msgstr "'#1' 열에 해당하는 열 유형을 찾지 못했습니다."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
-msgid  "The file \"$file$\" does not exist."
+msgid "The file \"$file$\" does not exist."
 msgstr "&quot;$file$&quot; 파일이 없습니다."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
-msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgid "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "데이터 원본에 연결하는 중 경고가 발생했습니다. 내용을 보려면 \"$buttontext$\"을(를) 누르십시오."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "'$#$'(이)라는 이름이 이미 있습니다.\n다른 이름을 입력하십시오."
+msgid "The name '$#$' already exists.\nPlease enter another name."
+msgstr ""
+"'$#$'(이)라는 이름이 이미 있습니다.\n"
+"다른 이름을 입력하십시오."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
-msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "보고서 \"$file$\"는 Oracle Report Builder 확장이 필요합니다."
 
+#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+msgid "Apply columns"
+msgstr ""
+
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
-msgid  "Type formatting"
+msgid "Type formatting"
 msgstr "유형 서식"
 
+#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+msgid "The following fields have already been set as primary keys:\n"
+msgstr ""
+
+#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+msgid "Assign columns"
+msgstr ""
+
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
-msgid  "Copy RTF Table"
+msgid "Copy RTF Table"
 msgstr "RTF 테이블 복사"
 
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+msgid "~Help"
+msgstr ""
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+msgid "~Cancel"
+msgstr ""
+
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< 뒤로(~B)"
 
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+msgid "~Next>"
+msgstr ""
+
+#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+msgid "C~reate"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+msgid "Existing columns"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+msgid "Column information"
+msgstr ""
+
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
-msgid  "Automatic type recognition"
+msgid "Automatic type recognition"
 msgstr "자동 유형 인식"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
-msgid  "Lines (ma~x)"
+msgid "Lines (ma~x)"
 msgstr "(최대)줄(~X):"
 
+#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+msgid "Primary Key"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+msgid "Source table: \n"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+msgid "Destination table: \n"
+msgstr ""
+
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
-msgid  "~All"
+msgid "~All"
 msgstr "모두(~A)"
 
+#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+msgid "Non~e"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+msgid "Ta~ble name"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+msgid "De~finition and data"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+msgid "Def~inition"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+msgid "A~s table view"
+msgstr ""
+
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
-msgid  "Append ~data"
+msgid "Append ~data"
 msgstr "데이터 추가(~D)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
-msgid  "Use first ~line as column names"
+msgid "Use first ~line as column names"
 msgstr "첫번째 줄을 컬럼 이름으로 사용(~l)"
 
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+msgid "Crea~te primary key"
+msgstr ""
+
+#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+msgid "Name"
+msgstr ""
+
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
-msgid  "Copy table"
+msgid "Copy table"
+msgstr "테이블 복사"
+
+#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
+msgid "Copy table"
 msgstr "테이블 복사"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
-msgid  "This table name is not valid in the current database."
+msgid "This table name is not valid in the current database."
 msgstr "현재 데이터베이스에서 유효하지 않은 테이블 이름입니다."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
-msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgid "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "기존 테이블에 데이터를 추가하려면 첫 페이지에서 '데이터 추가' 옵션을 선택합니다."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
-msgid  "Please change the table name. It is too long."
+msgid "Please change the table name. It is too long."
 msgstr "이름이 너무 깁니다. 테이블 이름을 변경해주십시오."
 
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+msgid "Options"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+msgid "~Type"
+msgstr ""
+
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
-msgid  "Inner join"
+msgid "Inner join"
 msgstr "내부 결합"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
-msgid  "Left join"
+msgid "Left join"
 msgstr "왼쪽 결합"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
-msgid  "Right join"
+msgid "Right join"
 msgstr "오른쪽 결합"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
-msgid  "Full (outer) join"
+msgid "Full (outer) join"
 msgstr "전체(외부) 결합"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
-msgid  "Cross join"
+msgid "Cross join"
 msgstr "교차 결합"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
-msgid  "Natural"
+msgid "Natural"
 msgstr "자연적"
 
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+msgid "Tables involved"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+msgid "Fields involved"
+msgstr ""
+
+#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+msgid "Join Properties"
+msgstr ""
+
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
-msgid  "Please note that some databases may not support this join type."
+msgid "Please note that some databases may not support this join type."
 msgstr "일부 데이터베이스는 이런 조인 유형을 지원하지 않을 수 있다는 점에 유의하십시오."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
-msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "두 개 테이블의 링크된 필드 내용이 같은 레코드만을 포함합니다."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
-msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "테이블 '%1'에는 모든 레코드, 테이블 '%2'에는 두 개 테이블의 링크된 필드 내용이 같은 레코드만이 포함됩니다 ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
-msgid  "Contains ALL records from '%1' and from '%2'."
+msgid "Contains ALL records from '%1' and from '%2'."
 msgstr "'%1' 와(과) '%2'의 모든 레코드를 포함합니다."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
-msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "%1'와(과) '%2'의 모든 레코드에 카티션 곱이 포함되어 있습니다."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
-msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "%1'와(과) '%2'에서 같은 이름으로 된 각 쌍에 대한 한 열만 포함합니다."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
-msgid  "Add Table Window"
+msgid "Add Table Window"
 msgstr "테이블 추가 창"
 
+#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+msgid "Move table window"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
-msgid  "Insert Join"
+msgid "Insert Join"
 msgstr "조인 삽입"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
-msgid  "Delete Join"
+msgid "Delete Join"
 msgstr "조인 삭제"
 
+#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+msgid "Resize table window"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+msgid "Delete Column"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+msgid "Move column"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+msgid "Add Column"
+msgstr ""
+
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
-msgid  "Invalid expression, table '$name$' does not exist."
+msgid "Invalid expression, table '$name$' does not exist."
 msgstr "테이블 '$name$'이(가) 없으므로 이 식은 유효하지 않습니다."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
-msgid  "Invalid expression, field name '$name$' does not exist."
+msgid "Invalid expression, field name '$name$' does not exist."
 msgstr "필드 이름 '$name$'이(가) 없으므로 이 식이 유효하지 않습니다."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
-msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr "해당 쿼리는 #num#개의 테이블을 처리합니다. 그러나 현재 데이터베이스 유형은 문당 최대 #maxnum#개의 테이블만 처리할 수 있습니다."
+msgid "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr ""
+"해당 쿼리는 #num#개의 테이블을 처리합니다. 그러나 현재 데이터베이스 유형은 문당 최대 #maxnum#개의 테이블만 처리할 수 "
+"있습니다."
+
+#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+msgid "Delete Table Window"
+msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
-msgid  "Edit Column Description"
+msgid "Edit Column Description"
 msgstr "열 설명 편집"
 
+#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+msgid "Adjust column width"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
-msgid  "(not sorted);ascending;descending"
+msgid "(not sorted);ascending;descending"
 msgstr "(정렬안됨);오름차순;내림차순"
 
+#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+msgid "(no function);Group"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
-msgid  "(no table)"
+msgid "(no table)"
 msgstr "(테이블 없음)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
-msgid  "The database only supports sorting for visible fields."
+msgid "The database only supports sorting for visible fields."
 msgstr "데이터베이스는 표시된 필드에 대한 정렬만 지원됩니다."
 
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+msgid "Functions"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+msgid "Table Name"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+msgid "Alias"
+msgstr ""
+
+#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+msgid "Distinct Values"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
-msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "필드;별칭;테이블;정렬;표시;기능;기준;또는;또는"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
-msgid  "There are too many columns."
+msgid "There are too many columns."
 msgstr "열이 너무 많습니다."
 
+#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+msgid "A condition cannot be applied to field [*]"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
-msgid  "The SQL statement created is too long."
+msgid "The SQL statement created is too long."
 msgstr "작성된 SQL 문장이 너무 깁니다."
 
+#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+msgid "Query is too complex"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
-msgid  "Nothing has been selected."
+msgid "Nothing has been selected."
 msgstr "선택한 것이 없습니다."
 
+#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+msgid "Too many search criteria"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
-msgid  "SQL syntax error"
+msgid "SQL syntax error"
 msgstr "SQL 구문 오류"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "[*] cannot be used as a sort criterion."
+msgid "[*] cannot be used as a sort criterion."
 msgstr "별표[*]는 정렬 기준으로 사용할 수 없습니다."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
-msgid  "There are too many tables."
+msgid "There are too many tables."
 msgstr "테이블의 수가 너무 많습니다."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
-msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgid "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "데이터베이스의 SQL 방언으로 조회하실 경우에는 문장이 적용되지 않습니다."
 
+#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+msgid "Field name not found or not unique"
+msgstr ""
+
+#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+msgid "Join could not be processed"
+msgstr ""
+
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
-msgid  "Syntax error in SQL statement"
+msgid "Syntax error in SQL statement"
 msgstr "SQL 문에 구문 오류"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
-msgid  "This database does not support table views."
+msgid "This database does not support table views."
 msgstr "이 데이터베이스는 테이블 보기를 지원하지 않습니다."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
-msgid  "This database does not support altering of existing table views."
+msgid "This database does not support altering of existing table views."
 msgstr "이 데이터베이스는 기존 테이블 보기로의 전환을 지원하기 않습니다."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
-msgid  "Do you want to create a query instead?"
+msgid "Do you want to create a query instead?"
 msgstr "대신 쿼리를 작성하겠습니까?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
-msgid  "No query could be created."
+msgid "No query could be created."
 msgstr "쿼리를 작성하지 못했습니다."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
-msgid  "No query could be created because no fields were selected."
+msgid "No query could be created because no fields were selected."
 msgstr "필드를 선택하지 않았으므로 쿼리를 작성하지 못했습니다."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
-msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgid "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "해당 데이터 원본이 삭제되었으므로 이 데이터 원본과 연관된 데이터를 저장할 수 없습니다."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
-msgid  "The column '$name$' is unknown."
+msgid "The column '$name$' is unknown."
 msgstr "열 '$name$'은(는) 알 수 없습니다."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
-msgid  "Columns can only be compared using '='."
+msgid "Columns can only be compared using '='."
 msgstr "열은 등호인 '=' 를 사용해야만 비교될 수 있습니다."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
-msgid  "You must use a column name before 'LIKE'."
+msgid "You must use a column name before 'LIKE'."
 msgstr "'LIKE' 앞에 열 이름을 사용해야 합니다."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
-msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgid "The column could not be found. Please note that the database is case-sensitive."
 msgstr "열을 찾지 못했습니다. 데이터베이스가 대소문자를 구분한다는 점에 유의해주십시오."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: Query Design"
+msgid " - %PRODUCTNAME Base: Query Design"
 msgstr "- %PRODUCTNAME Base: 쿼리 디자인"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
-msgid  " - %PRODUCTNAME Base: View Design"
+msgid " - %PRODUCTNAME Base: View Design"
 msgstr "- %PRODUCTNAME Base: 디자인 보기"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "$object$이(가) 변경되었습니다.\n변경 사항을 저장하시겠습니까?"
+msgid "$object$ has been changed.\nDo you want to save the changes?"
+msgstr ""
+"$object$이(가) 변경되었습니다.\n"
+"변경 사항을 저장하시겠습니까?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
-msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "$object$은(는) 구문을 분석할 수 없는 SQL 명령을 바탕으로 합니다.(여기에서는 의미가 없는 \"SQL 명령\"을 제외하고) 삽입됩니다."
+msgid "$object$ is based on an SQL command which could not be parsed."
+msgstr ""
+"$object$은(는) 구문을 분석할 수 없는 SQL 명령을 바탕으로 합니다.(여기에서는 의미가 없는 \"SQL 명령\"을 제외하고) "
+"삽입됩니다."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "$object$ will be opened in SQL view."
+msgid "$object$ will be opened in SQL view."
 msgstr "SQL 보기에서 $object$이(가) 열립니다.(여기에서는 의미가 없는 \"SQL 명령\"을 제외하고) 삽입됩니다."
+
+#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+msgid "The table view"
+msgstr ""
+
+#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+msgid "The query"
+msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "The SQL statement"
+msgid "The SQL statement"
 msgstr "SQL 문"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 #, fuzzy
-msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgid "The query does not create a result set, and thus cannot be part of another query."
 msgstr "쿼리가 결과 집합을 만들지 못하므로 다른 쿼리의 일부가 될 수 없습니다."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 #, fuzzy
-msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr "ActiveConnection 와 DataSourceName 매개변수가 없거나 잘못되었습니다. - 쿼리 디자이너를 초기화할 수 없습니다."
+msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr ""
+"ActiveConnection 와 DataSourceName 매개변수가 없거나 잘못되었습니다. - 쿼리 디자이너를 초기화할 수 없습니다."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 #, fuzzy
-msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgid "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "이 관계가 이미 존재합니다. 이 관계를 편집하거나 새로 만드시겠습니까?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit..."
+msgid "Edit..."
 msgstr "편집..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 #, fuzzy
-msgid  "Create..."
+msgid "Create..."
 msgstr "만들기..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base: Relation design"
+msgid " - %PRODUCTNAME Base: Relation design"
 msgstr "- %PRODUCTNAME Base: 관계 디자인"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "The database does not support relations."
+msgid "The database does not support relations."
 msgstr "데이터베이스는 어떠한 관계도 지원하지 않습니다."
 
 #: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "관계 디자인이 변경되었습니다.\n변경 사항을 저장하겠습니까?"
+msgid "The relation design has been changed.\nDo you want to save the changes?"
+msgstr ""
+"관계 디자인이 변경되었습니다.\n"
+"변경 사항을 저장하겠습니까?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 #, fuzzy
-msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgid "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "이 테이블을 삭제하면 해당하는 모든 관계들도 삭제됩니다. 계속하겠습니까?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 #, fuzzy
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr "데이터베이스 관계를 만들 수 없습니다. 이 테이블 종류는 외래 키를 지원하지 않습니다.\n데이터베이스 문서를 확인하십시오."
+msgid "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgstr ""
+"데이터베이스 관계를 만들 수 없습니다. 이 테이블 종류는 외래 키를 지원하지 않습니다.\n"
+"데이터베이스 문서를 확인하십시오."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 #, fuzzy
-msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr "알 수 없는;텍스트;수;날짜/시간;날짜;시간;예/아니요;화폐;메모;카운터;이미지;텍스트 (고정);10진;2진 (고정);2진;BigInt;더블;부동;Real;정수;정수 (Small);정수 (Tiny);SQL 널;개체;Distinct;Struct;필드;BLOB;CLOB;REF;OTHER;비트 (고정)"
+msgid "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"알 수 없는;텍스트;수;날짜/시간;날짜;시간;예/아니요;화폐;메모;카운터;이미지;텍스트 (고정);10진;2진 "
+"(고정);2진;BigInt;더블;부동;Real;정수;정수 (Small);정수 (Tiny);SQL "
+"널;개체;Distinct;Struct;필드;BLOB;CLOB;REF;OTHER;비트 (고정)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
 #, fuzzy
-msgid  "Insert/remove primary key"
+msgid "Insert/remove primary key"
 msgstr "기본키 삽입/삭제"
+
+#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+msgid "Yes"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+msgid "No"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+msgid "Ascending"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+msgid "Descending"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 #, fuzzy
-msgid  "<none>"
+msgid "<none>"
 msgstr "<없음>"
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+msgid "Field name"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+msgid "Field Name"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+msgid "Field ~type"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 #, fuzzy
-msgid  "Field Type"
+msgid "Field Type"
 msgstr "필드 유형"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Field length"
+msgid "Field length"
 msgstr "필드 길이"
+
+#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+msgid "Description"
+msgstr "설명"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Column Description"
+msgid "Column Description"
 msgstr "열 설명"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 #, fuzzy
-msgid  "Input required"
+msgid "Input required"
 msgstr "입력 필요"
+
+#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+msgid "~AutoValue"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+msgid "Field Properties"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+msgid "General"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+msgid "Description:"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+msgid "Table properties"
+msgstr ""
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The text you entered is not a list element. "
+msgid "The text you entered is not a list element. "
 msgstr "입력된 텍스트는 목록의 항목이 아닙니다."
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 #, fuzzy
-msgid  "Insert Rows"
+msgid "Insert Rows"
 msgstr "행 삽입"
+
+#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+msgid "Primary Key"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+msgid "Modify cell"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+msgid "Delete row"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+msgid "Modify field type"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 #, fuzzy
-msgid  "Insert row"
+msgid "Insert row"
 msgstr "행 삽입"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 #, fuzzy
-msgid  "Insert new row"
+msgid "Insert new row"
 msgstr "새 행을 삽입"
+
+#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
+msgid "Insert/remove primary key"
+msgstr "기본키 삽입/삭제"
+
+#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+msgid "~Default value"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+msgid "~Entry required"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "~Length"
+msgid "~Length"
 msgstr "길이(~L)"
+
+#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+msgid "~Type"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
+#, fuzzy
+msgid "~Length"
+msgstr "길이(~L)"
+
+#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+msgid "Decimal ~places"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+msgid "Format example"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "모든 새 레코드를 위한 초기값을 선택하십시오.\n필드의 초기값을 지정하지 않으려면 빈 문자열을 선택하십시오."
+msgid "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
+msgstr ""
+"모든 새 레코드를 위한 초기값을 선택하십시오.\n"
+"필드의 초기값을 지정하지 않으려면 빈 문자열을 선택하십시오."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "이 필드를 위한 기본 값을 입력하십시오.\n\n나중에 시트에 데이터를 입력하게 되면 모든 새 레코드에서 활성화된 필드에 이 문자열이 사용될 것입니다. 따라서 이 문자열은 아래에 입력할 셀 서식에 적합해야 합니다."
+msgid "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
+"이 필드를 위한 기본 값을 입력하십시오.\n"
+"\n"
+"나중에 시트에 데이터를 입력하게 되면 모든 새 레코드에서 활성화된 필드에 이 문자열이 사용될 것입니다. 따라서 이 문자열은 아래에 입력할 "
+"셀 서식에 적합해야 합니다."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 #, fuzzy
-msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgid "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "이 필드에 NULL 값이 허용되어 있지 않아 사용자가 항상 데이터를 입력해야 할 경우 이 옵션을 활성화하십시오."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Enter the maximum text length permitted."
+msgid "Enter the maximum text length permitted."
 msgstr "최대 허용 텍스트 길이를 입력하십시오."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Enter the number format."
+msgid "Enter the number format."
 msgstr "숫자 표기 형식을 입력하십시오."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "이 필드의 데이터 길이를 지정하십시오.\n\n10진 필드의 경우에는 입력된 수의 최대 길이 이진 필드의 경우에는 데이터 블록의 길이를 입력합니다.\n값이 이 데이터베이스에 최대한으로 허용된 값보다 크면 적절히 수정됩니다."
+msgid "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
+"이 필드의 데이터 길이를 지정하십시오.\n"
+"\n"
+"10진 필드의 경우에는 입력된 수의 최대 길이 이진 필드의 경우에는 데이터 블록의 길이를 입력합니다.\n"
+"값이 이 데이터베이스에 최대한으로 허용된 값보다 크면 적절히 수정됩니다."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Specify the number of decimal places permitted in this field."
+msgid "Specify the number of decimal places permitted in this field."
 msgstr "이 필드의 숫자에 포함될 소수 이하 자리 수를 지정하십시오."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 #, fuzzy
-msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgid "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "여기에서 현재 서식에 대한 데이터 표시 방식을 확인할 수 있습니다(오른쪽에 있는 버튼을 사용하¬ 서식 수정)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 #, fuzzy
-msgid  "This is where you determine the output format of the data."
+msgid "This is where you determine the output format of the data."
 msgstr "이와 같은 방식으로 데이터의 서식 지정 방법을 설정할 수 있습니다."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 #, fuzzy
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "이 필드에 자동 증가값의 포함 여부를 선택하십시오.\n\n이러한 필드에는 데이터를 직접 입력할 수 없으며 새 레코드는 모두 자동으로 고유값(이전의 레코드를 증가시킴으로써 얻게됨)을 할당 받게 됩니다."
+msgid "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
+"이 필드에 자동 증가값의 포함 여부를 선택하십시오.\n"
+"\n"
+"이러한 필드에는 데이터를 직접 입력할 수 없으며 새 레코드는 모두 자동으로 고유값(이전의 레코드를 증가시킴으로써 얻게됨)을 할당 받게 "
+"됩니다."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~..."
+msgid "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 #, fuzzy
-msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgid "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "열 이름 \"$column$\"이 중복으로 할당되어 있어 테이블을 저장할 수 없습니다."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 #, fuzzy
-msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgid "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "열 \"$column$\"은(는) 기본 키에 속합니다. 이 열이 삭제되면 기본 키도 삭제됩니다. 그래도 계속하겠습니까?"
 
+#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+msgid "Primary Key Affected"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+msgid "Column"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+msgid "Continue anyway?"
+msgstr ""
+
+#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+msgid "Warning!"
+msgstr "경고!"
+
 #: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "테이블이 변경되었습니다.\n변경 사항을 저장하겠습니까?"
+msgid "The table has been changed.\nDo you want to save the changes?"
+msgstr ""
+"테이블이 변경되었습니다.\n"
+"변경 사항을 저장하겠습니까?"
 
 #: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "데이터베이스와의 연결이 끊어졌습니다. 연결이 끊어진 상태에서는 테이블 디자인을 제한적으로만 이용할 수 있습니다.\n데이터베이스에 다시 연결하겠습니까?"
+msgid "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr ""
+"데이터베이스와의 연결이 끊어졌습니다. 연결이 끊어진 상태에서는 테이블 디자인을 제한적으로만 이용할 수 있습니다.\n"
+"데이터베이스에 다시 연결하겠습니까?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 #, fuzzy
-msgid  "The table could not be saved due to problems connecting to the database."
+msgid "The table could not be saved due to problems connecting to the database."
 msgstr "데이터베이스와의 연결이 설정되지 않아 테이블을 저장하지 못했습니다."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 #, fuzzy
-msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgid "The table filter could not be adjusted because the data source has been deleted."
 msgstr "이미 데이터 원본이 삭제되었으므로 테이블 필터를 적용하지 못했습니다."
 
 #: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "테이블의 색인을 수정하기 전에 반드시 저장해야 합니다.\n변경 사항을 저장하겠습니까?"
+msgid "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr ""
+"테이블의 색인을 수정하기 전에 반드시 저장해야 합니다.\n"
+"변경 사항을 저장하겠습니까?"
+
+#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+msgid "No primary key"
+msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 #, fuzzy
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "이 데이터베이스에서 데이터 레코드를 식별하려면 단일 색인이나 기본 키가 있어야 합니다.\n이 두 가지 구조 조건 중에서 하나가 충족되어야만 데이터를 테이블에 입력할 수 있습니다.\n\n지금 기본 키를 생성하겠습니까?"
+msgid "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
+msgstr ""
+"이 데이터베이스에서 데이터 레코드를 식별하려면 단일 색인이나 기본 키가 있어야 합니다.\n"
+"이 두 가지 구조 조건 중에서 하나가 충족되어야만 데이터를 테이블에 입력할 수 있습니다.\n"
+"\n"
+"지금 기본 키를 생성하겠습니까?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 #, fuzzy
-msgid  " - %PRODUCTNAME Base: Table Design"
+msgid " - %PRODUCTNAME Base: Table Design"
 msgstr "- %PRODUCTNAME Base: 테이블 디자인"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgid "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "\"$column$\" 열을 변경하지 못했습니다. 대신에 이 열을 삭제하고 새로운 형식을 추가하겠습니까?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "Error while saving the table design"
+msgid "Error while saving the table design"
 msgstr "테이블 디자인을 저장하는 동안 오류가 발생했습니다."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 #, fuzzy
-msgid  "The column $column$ could not be deleted."
+msgid "The column $column$ could not be deleted."
 msgstr "$column$ 열을 삭제하지 못했습니다."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr "지금 모든 열을 삭제하시려고 합니다. 열이 없으면 테이블을 작성할 수 없습니다. 테이블을 데이터베이스로부터 삭제하시겠습니까? 삭제하지 않는 경우 테이블은 변경없이 유지됩니다."
+msgid "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr ""
+"지금 모든 열을 삭제하시려고 합니다. 열이 없으면 테이블을 작성할 수 없습니다. 테이블을 데이터베이스로부터 삭제하시겠습니까? 삭제하지 "
+"않는 경우 테이블은 변경없이 유지됩니다."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "A~uto-increment statement"
+msgid "A~uto-increment statement"
 msgstr "자동 증분 명령문(~U)"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "자동 증분 필드를 위한 SOL 명령문을 여기에 입력해주십시오.\n\n 이 문장은 테이블이 만들어지면 데이터베이스로 곧 전송될 것입니다."
+msgid "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
+"자동 증분 필드를 위한 SOL 명령문을 여기에 입력해주십시오.\n"
+"\n"
+" 이 문장은 테이블이 만들어지면 데이터베이스로 곧 전송될 것입니다."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "데이터베이스에서 유형 정보를 찾을 수 없습니다.\n테이블 디자인 모드는 이 데이터 원본용으로 사용할 수 없습니다."
+msgid "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
+msgstr ""
+"데이터베이스에서 유형 정보를 찾을 수 없습니다.\n"
+"테이블 디자인 모드는 이 데이터 원본용으로 사용할 수 없습니다."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 #, fuzzy
-msgid  "change field name"
+msgid "change field name"
 msgstr "필드 이름 변경"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "change field type"
+msgid "change field type"
 msgstr "필드 유형 변경"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "change field description"
+msgid "change field description"
 msgstr "필드 설명 변경"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 #, fuzzy
-msgid  "change field attribute"
+msgid "change field attribute"
 msgstr "필드 속성 변경"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The destination database does not support views."
+msgid "The destination database does not support views."
 msgstr "대상 데이터베이스가 보기 기능을 지원하지 않습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "The destination database does not support primary keys."
+msgid "The destination database does not support primary keys."
 msgstr "대상 데이터베이스가 기본 키를 지원하지 않습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 #, fuzzy
-msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgid "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "데이터 접근 기술어를 발견할 수 없거나 필요한 정보를 제공할 수 있는 데이터 접근 기술어가 없습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 #, fuzzy
-msgid  "Only tables and queries are supported at the moment."
+msgid "Only tables and queries are supported at the moment."
 msgstr "한번에 하나의 테이블과 쿼리만을 사용할 수 있습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 #, fuzzy
-msgid  "The copy source's result set must support bookmarks."
+msgid "The copy source's result set must support bookmarks."
 msgstr "복사 원본의 결과는 책갈피 기능을 지원하도록 설정됩니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgid "Unsupported source column type ($type$) at column position $pos$."
 msgstr "원본 $pos$ 행의 $type$ 형식은 지원하지 않는 형식입니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "Illegal number of initialization parameters."
+msgid "Illegal number of initialization parameters."
 msgstr "초기화 매개변수에 잘못된 숫자가 있습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred during initialization."
+msgid "An error occurred during initialization."
 msgstr "초기화 중 오류가 발생했습니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 #, fuzzy
-msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgid "Unsupported setting in the copy source descriptor: $name$."
 msgstr "복사 원본 설명자에 지원되지 않는 설정이 있습니다: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "To copy a query, your connection must be able to provide queries."
+msgid "To copy a query, your connection must be able to provide queries."
 msgstr "쿼리를 복사하려면 연결에서 쿼리를 제공할 수 있어야 합니다."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 #, fuzzy
-msgid  "The given interaction handler is invalid."
+msgid "The given interaction handler is invalid."
 msgstr "주어진 상호 작용 처리기가 올바르지 않습니다."
+
+#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+msgid "~Remember password until end of session"
+msgstr ""
+
+#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+msgid "~Remember password"
+msgstr ""

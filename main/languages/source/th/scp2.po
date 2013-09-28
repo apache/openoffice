@@ -1,1652 +1,1816 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
-msgid  "KDE Integration"
+msgid "KDE Integration"
 msgstr "บูรณาการ KDE"
 
 #: kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
-msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
+msgid "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
 msgstr "บูรณาการระบบของ %PRODUCTNAME %PRODUCTVERSION เข้าไปใน KDE"
 
 #: quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-msgid  "Quickstarter"
+msgid "Quickstarter"
 msgstr "Quickstarter"
 
 #: quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
-msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
+msgid "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+"Loads basic components on system start to accelerate start up time of %"
+"PRODUCTNAME %PRODUCTVERSION."
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
-msgid  "Graphics Filters"
+msgid "Graphics Filters"
 msgstr "ตัวกรองกราฟิกส์"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
-msgid  "Additional filters required to read alien graphic formats."
+msgid "Additional filters required to read alien graphic formats."
 msgstr "ต้องการตัวกรองเสริมเพื่ออ่านรูปแบบกราฟิกอื่น"
 
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
+msgid "Adobe Photoshop Import Filter"
+msgstr ""
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ADOBE
+msgid "Adobe Photoshop Import Filter"
+msgstr ""
+
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TGA
-msgid  "TGA Import"
+msgid "TGA Import"
 msgstr "TGA Import"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TGA
-msgid  "TGA TrueVision TARGA Import Filter"
+msgid "TGA TrueVision TARGA Import Filter"
 msgstr "TGA TrueVision TARGA Import Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_EPS
-msgid  "EPS Import/Export Filter"
+msgid "EPS Import/Export Filter"
 msgstr "EPS Import/Export Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_EPS
-msgid  "Encapsulated Postscript Import/Export Filter"
+msgid "Encapsulated Postscript Import/Export Filter"
 msgstr "Encapsulated Postscript Import/Export Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM
 #, fuzzy
-msgid  "XPM Export Filter"
+msgid "XPM Export Filter"
+msgstr "XPM Export Filter"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_XPM
+#, fuzzy
+msgid "XPM Export Filter"
 msgstr "XPM Export Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PBMP
-msgid  "Portable Bitmap Import/Export"
+msgid "Portable Bitmap Import/Export"
 msgstr "Portable Bitmap Import/Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PBMP
-msgid  "Portable Bitmap Import/Export Filters"
+msgid "Portable Bitmap Import/Export Filters"
 msgstr "Portable Bitmap Import/Export Filters"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SUNRST
-msgid  "SUN Rasterfile Import/Export"
+msgid "SUN Rasterfile Import/Export"
 msgstr "SUN Rasterfile Import/Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SUNRST
-msgid  "SUN Rasterfile Import/Export Filters"
+msgid "SUN Rasterfile Import/Export Filters"
 msgstr "SUN Rasterfile Import/Export Filters"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ACAD
-msgid  "AutoCAD Import"
+msgid "AutoCAD Import"
 msgstr "AutoCAD Import"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ACAD
-msgid  "AutoCAD Import Filter"
+msgid "AutoCAD Import Filter"
 msgstr "AutoCAD Import Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_KODAC
-msgid  "Kodak Photo-CD Import"
+msgid "Kodak Photo-CD Import"
 msgstr "Kodak Photo-CD Import"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_KODAC
-msgid  "Kodak Photo-CD Import Filter"
+msgid "Kodak Photo-CD Import Filter"
 msgstr "Kodak Photo-CD Import Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_MACPICT
-msgid  "Mac-Pict Import/Export"
+msgid "Mac-Pict Import/Export"
 msgstr "Mac-Pict Import/Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_MACPICT
-msgid  "Mac-Pict Import/Export Filters"
+msgid "Mac-Pict Import/Export Filters"
 msgstr "Mac-Pict Import/Export Filters"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_OS2META
-msgid  "OS/2 Metafile Import/Export"
+msgid "OS/2 Metafile Import/Export"
 msgstr "OS/2 Metafile Import/Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_OS2META
-msgid  "OS/2 Metafile Import/Export Filters"
+msgid "OS/2 Metafile Import/Export Filters"
 msgstr "OS/2 Metafile Import/Export Filters"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PCX
-msgid  "PCX Import"
+msgid "PCX Import"
 msgstr "PCX Import"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PCX
-msgid  "Z-Soft PCX Import"
+msgid "Z-Soft PCX Import"
 msgstr "Z-Soft PCX Import"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TIFF
-msgid  "TIFF Import/Export"
+msgid "TIFF Import/Export"
 msgstr "TIFF Import/Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TIFF
-msgid  "TIFF Import and Export Filter"
+msgid "TIFF Import and Export Filter"
 msgstr "TIFF Import and Export Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SVG
-msgid  "SVG Export"
+msgid "SVG Export"
 msgstr "SVG Export"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SVG
-msgid  "SVG Export Filter"
+msgid "SVG Export Filter"
 msgstr "SVG Export Filter"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_FLASH
-msgid  "Macromedia Flash (SWF)"
+msgid "Macromedia Flash (SWF)"
 msgstr "Macromedia Flash (SWF)"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_FLASH
-msgid  "Macromedia Flash (SWF) Export Filter"
+msgid "Macromedia Flash (SWF) Export Filter"
 msgstr "Macromedia Flash (SWF) Export Filter"
 
 #: onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "Online Update"
 
 #: onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
-msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+msgid "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+msgstr ""
+"Get automatically notified when a new update of %PRODUCTNAME becomes "
+"available."
 
 #: impress/folderitem_impress.ulf#STR_FI_NAME_PRAESENTATION
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "การนำเสนอ"
 
 #: impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
-msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr "สร้างและแก้ไขงานนำเสนอสำหรับภาพนิ่ง การประชุม และเว็บเพจ โดยใช้โปรแกรมนำเสนอ"
+msgid "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
+msgstr ""
+"สร้างและแก้ไขงานนำเสนอสำหรับภาพนิ่ง การประชุม และเว็บเพจ โดยใช้โปรแกรมนำเสนอ"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
-msgid  "Show"
+msgid "Show"
 msgstr "แสดง"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_PRESENT
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Presentation"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_IMPRESS_TEMPLATE
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Presentation Template"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT
-msgid  "OpenDocument Presentation"
+msgid "OpenDocument Presentation"
 msgstr "OpenDocument Presentation"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT_TEMPLATE
-msgid  "OpenDocument Presentation Template"
+msgid "OpenDocument Presentation Template"
 msgstr "OpenDocument Presentation Template"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION_OLD
-msgid  "Microsoft PowerPoint 97-2003 Presentation"
+msgid "Microsoft PowerPoint 97-2003 Presentation"
 msgstr "การนำเสนอของ Microsoft PowerPoint 97-2003"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_SHOW
-msgid  "Microsoft PowerPoint Show"
+msgid "Microsoft PowerPoint Show"
 msgstr "การแสดงของ Microsoft PowerPoint"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION
-msgid  "Microsoft PowerPoint Presentation"
+msgid "Microsoft PowerPoint Presentation"
 msgstr "การนำเสนอของ Microsoft PowerPoint"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE_OLD
-msgid  "Microsoft PowerPoint 97-2003 Template"
+msgid "Microsoft PowerPoint 97-2003 Template"
 msgstr "แม่แบบการนำเสนอของ Microsoft PowerPoint 97-2003"
 
 #: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
-msgid  "Microsoft PowerPoint Template"
+msgid "Microsoft PowerPoint Template"
 msgstr "แม่แบบการนำเสนอของ Microsoft PowerPoint"
 
 #: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
-msgid  "%PRODUCTNAME Impress"
+msgid "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
-msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr "สร้างและแก้ไขงานนำเสนอสำหรับภาพนิ่ง การประชุม และเว็บเพจ โดยใช้ %PRODUCTNAME Impress"
+msgid "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
+msgstr ""
+"สร้างและแก้ไขงานนำเสนอสำหรับภาพนิ่ง การประชุม และเว็บเพจ โดยใช้ %PRODUCTNAME "
+"Impress"
 
 #: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
-msgid  "Program Module"
-msgstr "มอดูลของโปรแกรม"
+msgid "Program Module"
+msgstr "Program Module"
 
 #: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_BIN
-msgid  "The application %PRODUCTNAME Impress"
+msgid "The application %PRODUCTNAME Impress"
 msgstr "โปรแกรม %PRODUCTNAME Impress"
 
 #: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_HELP
-msgid  "%PRODUCTNAME Impress Help"
+msgid "%PRODUCTNAME Impress Help"
 msgstr "%PRODUCTNAME Impress วิธีใช้"
 
 #: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP
-msgid  "Help about %PRODUCTNAME Impress"
+msgid "Help about %PRODUCTNAME Impress"
 msgstr "วิธีใช้เกี่ยวกับ %PRODUCTNAME Impress "
 
 #: impress/module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS
-msgid  "OpenGL slide transitions for %PRODUCTNAME Impress"
+msgid "OpenGL slide transitions for %PRODUCTNAME Impress"
 msgstr "การเปลี่ยนผ่านภาพนิ่งของ OpenGL สำหรับ %PRODUCTNAME Impress"
 
 #: impress/module_ogltrans.ulf#STR_DESC_MODULE_MODULE_OPTIONAL_OGLTRANS
-msgid  "OpenGL slide transitions for %PRODUCTNAME Impress."
+msgid "OpenGL slide transitions for %PRODUCTNAME Impress."
 msgstr "การเปลี่ยนผ่านภาพนิ่งของ OpenGL สำหรับ %PRODUCTNAME Impress"
 
 #: sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-msgid  "Software Development Kit (SDK)"
+msgid "Software Development Kit (SDK)"
 msgstr "ชุดเครื่องมือพัฒนาซอฟต์แวร์ [Software Development Kit (SDK)]"
 
 #: sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
-msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr "ชุดเครื่องมือพัฒนาซอฟต์แวร์ (SDK) มีเครื่องมือที่จำเป็น ตัวอย่างและเอกสารคู่มือเพื่อให้ในการเขียนโปรแกรมสำนักงานนี้"
+msgid "The SDK provides all necessary tools, examples and documentation to program with and for the office."
+msgstr ""
+"ชุดเครื่องมือพัฒนาซอฟต์แวร์ (SDK) มีเครื่องมือที่จำเป็น "
+"ตัวอย่างและเอกสารคู่มือเพื่อให้ในการเขียนโปรแกรมสำนักงานนี้"
 
 #: writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-msgid  "HTML Document"
+msgid "HTML Document"
 msgstr "เอกสาร HTML"
 
 #: writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-msgid  "Text Document"
+msgid "Text Document"
 msgstr "เอกสารข้อความ"
 
 #: writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
-msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr "สร้างและแก้ไขข้อความและกราฟิกส์ในจดหมาย รายงาน เอกสาร และหน้าเว็บโดยใช้ Writer"
+msgid "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
+msgstr ""
+"สร้างและแก้ไขข้อความและกราฟิกส์ในจดหมาย รายงาน เอกสาร และหน้าเว็บโดยใช้ "
+"Writer"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Text Document"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Master Document"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "แม่แบบเอกสารข้อความ %PRODUCTNAME %SXWFORMATVERSION"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-msgid  "OpenDocument Text"
+msgid "OpenDocument Text"
 msgstr "ข้อความ OpenDocument"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-msgid  "OpenDocument Text Template"
+msgid "OpenDocument Text Template"
 msgstr "แม่แบบข้อความ OpenDocument"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-msgid  "OpenDocument Master Document"
+msgid "OpenDocument Master Document"
 msgstr "OpenDocument Master Document"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-msgid  "HTML Document Template"
+msgid "HTML Document Template"
 msgstr "แม่แบบเอกสาร HTML"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-msgid  "Microsoft Word 97-2003 Document"
+msgid "Microsoft Word 97-2003 Document"
 msgstr "เอกสารไมโครซอฟท์เวิร์ด 97-2003"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-msgid  "Microsoft Word Document"
+msgid "Microsoft Word Document"
 msgstr "เอกสารไมโครซอฟท์เวิร์ด"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-msgid  "Microsoft Word 97-2003 Template"
+msgid "Microsoft Word 97-2003 Template"
 msgstr "แม่แบบเอกสารไมโครซอฟท์เวิร์ด 97-2003"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-msgid  "Microsoft Word Template"
+msgid "Microsoft Word Template"
 msgstr "แม่แบบเอกสารไมโครซอฟท์เวิร์ด"
 
 #: writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-msgid  "Rich Text Document"
+msgid "Rich Text Document"
 msgstr "เอกสารข้อความกำกับรูปแบบ Rich Text Format"
 
 #: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-msgid  "%PRODUCTNAME Writer"
+msgid "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
-msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr "สร้างและแก้ไขข้อความและกราฟิกส์ในจดหมาย รายงาน เอกสาร และหน้าเว็บ โดยใช้ %PRODUCTNAME Writer"
+msgid "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
+msgstr ""
+"สร้างและแก้ไขข้อความและกราฟิกส์ในจดหมาย รายงาน เอกสาร และหน้าเว็บ โดยใช้ %"
+"PRODUCTNAME Writer"
 
 #: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-msgid  "Program Module"
-msgstr "มอดูลของโปรแกรม"
+msgid "Program Module"
+msgstr "Program Module"
 
 #: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-msgid  "The application %PRODUCTNAME Writer"
+msgid "The application %PRODUCTNAME Writer"
 msgstr "โปรแกรม %PRODUCTNAME Writer"
 
 #: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-msgid  "%PRODUCTNAME Writer Help"
+msgid "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME Writer วิธีใช้"
 
 #: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-msgid  "Help about %PRODUCTNAME Writer"
+msgid "Help about %PRODUCTNAME Writer"
 msgstr "วิธีใช้เกี่ยวกับ %PRODUCTNAME Writer"
 
 #: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-msgid  "LaTeX Export"
+msgid "LaTeX Export"
 msgstr "ส่งออกรูปแบบ LaTeX"
 
 #: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-msgid  "LaTeX export filter for Writer documents."
+msgid "LaTeX export filter for Writer documents."
 msgstr "ตัวกรองเพื่อส่งออกรูปแบบ LaTeX สำหรับเอกสาร Writer"
 
 #: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
-msgid  "%PRODUCTNAME Math"
+msgid "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
 
 #: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
-msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
+msgid "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
 msgstr "สร้างและแก้ไขสูตรคำนวณทางวิทยาศาสตร์และโดยใช้ %PRODUCTNAME Math"
 
 #: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
-msgid  "Program Module"
-msgstr "มอดูลของโปรแกรม"
+msgid "Program Module"
+msgstr "Program Module"
 
 #: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_BIN
-msgid  "The application %PRODUCTNAME Math"
+msgid "The application %PRODUCTNAME Math"
 msgstr "โปรแกรม %PRODUCTNAME Math"
 
 #: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_HELP
-msgid  "%PRODUCTNAME Math Help"
+msgid "%PRODUCTNAME Math Help"
 msgstr "%PRODUCTNAME Math วิธีใช้ "
 
 #: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP
-msgid  "Help about %PRODUCTNAME Math"
+msgid "Help about %PRODUCTNAME Math"
 msgstr "วิธีใช้เกี่ยวกับ %PRODUCTNAME Math"
 
 #: math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
-msgid  "Create and edit scientific formulas and equations by using Math."
+msgid "Create and edit scientific formulas and equations by using Math."
 msgstr "สร้างและแก้ไขสูตรคำนวณทางวิทยาศาสตร์และโดยใช้สูตรคำนวณ"
 
 #: math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Formula"
 
 #: math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
-msgid  "OpenDocument Formula"
+msgid "OpenDocument Formula"
 msgstr "OpenDocument Formula"
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER
-msgid  "Mobile Device Filters"
+msgid "Mobile Device Filters"
 msgstr "Mobile Device Filters"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
-msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr "ตัวกรองข้อความและตารางคำนวณเพื่อสนับสนุน การนำเข้า/การส่งออก สำหรับ Palm handheld หรือ Pocket PC (ต้องการ Java)"
+msgid "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
+msgstr ""
+"ตัวกรองข้อความและตารางคำนวณเพื่อสนับสนุน การนำเข้า/การส่งออก สำหรับ Palm "
+"handheld หรือ Pocket PC (ต้องการ Java)"
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
-msgid  "Palm"
+msgid "Palm"
 msgstr "Palm"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM
-msgid  "Filters for Palm OS compatible handhelds"
+msgid "Filters for Palm OS compatible handhelds"
 msgstr "ตัวกรองเพื่อการใช้งานร่วมกันของอุปกรณ์มือถือ Palm OS "
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
-msgid  "AportisDoc"
+msgid "AportisDoc"
 msgstr "AportisDoc"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
-msgid  "Support for the AportisDoc format"
+msgid "Support for the AportisDoc format"
 msgstr "สนับสนุนรูปแบบของ AportisDoc"
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC
-msgid  "Pocket PC"
+msgid "Pocket PC"
 msgstr "Pocket PC"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
-msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr "สนับสนุนตัวกรองและ ActivSync เพื่อการใช้งานร่วมกันของอุปกรณ์มือถือ Pocket PC"
+msgid "Filters and ActiveSync support for Pocket PC compatible handhelds"
+msgstr ""
+"สนับสนุนตัวกรองและ ActivSync เพื่อการใช้งานร่วมกันของอุปกรณ์มือถือ Pocket PC"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
-msgid  "Filters for Pocket PC compatible handhelds."
+msgid "Filters for Pocket PC compatible handhelds."
 msgstr "ตัวกรองเพื่อการใช้งานร่วมกันของอุปกรณ์มือถือ Pocket PC"
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
-msgid  "Pocket Word"
+msgid "Pocket Word"
 msgstr "Pocket Word"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
-msgid  "Support for Pocket Word"
+msgid "Support for Pocket Word"
 msgstr "สนับสนุน Pocket Word"
 
 #: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
-msgid  "Pocket Excel"
+msgid "Pocket Excel"
 msgstr "Pocket Excel"
 
 #: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
-msgid  "Support for Pocket Excel"
+msgid "Support for Pocket Excel"
 msgstr "สนับสนุน Pocket Excel"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_
-msgid  "Pocket Excel"
+msgid "Pocket Excel"
 msgstr "Pocket Excel"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C__PEGASUSFILTER_DESCRIPTION
-msgid  "Pocket Excel Workbook"
+msgid "Pocket Excel Workbook"
 msgstr "Pocket Excel Workbook"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020_
-msgid  "%PRODUCTNAME Writer"
+msgid "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020__PEGASUSFILTER_DESCRIPTION
-msgid  "%PRODUCTNAME Writer XML Document"
+msgid "%PRODUCTNAME Writer XML Document"
 msgstr "%PRODUCTNAME Writer XML Document"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C_
-msgid  "%PRODUCTNAME Calc"
+msgid "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C__PEGASUSFILTER_DESCRIPTION
-msgid  "%PRODUCTNAME Calc XML Document"
+msgid "%PRODUCTNAME Calc XML Document"
 msgstr "%PRODUCTNAME Calc XML Document"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_
-msgid  "Pocket Word"
+msgid "Pocket Word"
 msgstr "Pocket Word"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439__PEGASUSFILTER_DESCRIPTION
-msgid  "Pocket Word Document - Pocket PC"
+msgid "Pocket Word Document - Pocket PC"
 msgstr "Pocket Word Document - Pocket PC"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
-msgid  "The %PRODUCTNAME mobile device filters cannot be located."
+msgid "The %PRODUCTNAME mobile device filters cannot be located."
 msgstr "ไม่สามารถระบุตำแหน่งตัวกรองของอุปกรณ์เคลื่อนที่ %PRODUCTNAME"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
-msgid  "A Java 1.4 installation cannot be located."
+msgid "A Java 1.4 installation cannot be located."
 msgstr "การติดตั้งไม่สามารถหาตำแหน่งของ Java 1.4"
 
 #: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
-msgid  "There was an error while initializing the Java Runtime Environment."
+msgid "There was an error while initializing the Java Runtime Environment."
 msgstr "เกิดข้อผิดพลาดในขณะเริ่มการทำงาน Java Runtime Environment"
 
 #: winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-msgid  "Windows Explorer Extension"
+msgid "Windows Explorer Extension"
 msgstr "Windows Explorer Extension"
 
 #: winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr "เปิดใช้งาน Microsoft Window Explorer เพื่อแสดงข้อมูลเกี่ยวกับเอกสาร %PRODUCTNAME เช่น การแสดงตัวอย่างรูปกราฟิกขนาดย่อ"
+msgid "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
+msgstr ""
+"เปิดใช้งาน Microsoft Window Explorer เพื่อแสดงข้อมูลเกี่ยวกับเอกสาร %"
+"PRODUCTNAME เช่น การแสดงตัวอย่างรูปกราฟิกขนาดย่อ"
+
+#: xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+msgid "XSLT Sample Filters"
+msgstr ""
+
+#: xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+msgid "XSLT Sample Filters"
+msgstr ""
 
 #: draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Drawing"
 
 #: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAW_TEMPLATE
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Drawing Template"
 
 #: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW
-msgid  "OpenDocument Drawing"
+msgid "OpenDocument Drawing"
 msgstr "OpenDocument Drawing"
 
 #: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
-msgid  "OpenDocument Drawing Template"
+msgid "OpenDocument Drawing Template"
 msgstr "OpenDocument Drawing Template"
 
 #: draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "การวาดรูป"
 
 #: draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
-msgid  "Create and edit drawings, flow charts, and logos by using Draw."
+msgid "Create and edit drawings, flow charts, and logos by using Draw."
 msgstr "สร้างและแก้ไขการวาดผังแผนภูมิและโลโก้ โดยใช้ Draw"
 
 #: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
-msgid  "%PRODUCTNAME Draw"
+msgid "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
 #: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
-msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
+msgid "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
 msgstr "สร้างและแก้ไขการวาดผังแผนภูมิและโลโก้ โดยใช้ %PRODUCTNAME Draw"
 
 #: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
-msgid  "Program Module"
-msgstr "มอดูลของโปรแกรม"
+msgid "Program Module"
+msgstr "Program Module"
 
 #: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_BIN
-msgid  "The application %PRODUCTNAME Draw"
+msgid "The application %PRODUCTNAME Draw"
 msgstr "โปรแกรม %PRODUCTNAME Draw"
 
 #: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_HELP
-msgid  "%PRODUCTNAME Draw Help"
+msgid "%PRODUCTNAME Draw Help"
 msgstr "%PRODUCTNAME Draw วิธีใช้ "
 
 #: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP
-msgid  "Help about %PRODUCTNAME Draw"
+msgid "Help about %PRODUCTNAME Draw"
 msgstr "วิธีใช้เกี่ยวกับ %PRODUCTNAME Draw"
 
 #: calc/folderitem_calc.ulf#STR_FI_NAME_TABELLENDOKUMENT
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "ตารางคำนวณ"
 
 #: calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
-msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
+msgid "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
 msgstr "ปฏิบัติการคำนวณ วิเคราะห์ข้อมูลและจัดการรายการในตารางคำนวณโดยใช้ Calc"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Spreadsheet"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_CALC_TEMPLATE
-msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
+msgid "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Spreadsheet Template"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC
-msgid  "OpenDocument Spreadsheet"
+msgid "OpenDocument Spreadsheet"
 msgstr "OpenDocument Spreadsheet"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC_TEMPLATE
-msgid  "OpenDocument Spreadsheet Template"
+msgid "OpenDocument Spreadsheet Template"
 msgstr "OpenDocument Spreadsheet Template"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD
-msgid  "Microsoft Excel 97-2003 Worksheet"
+msgid "Microsoft Excel 97-2003 Worksheet"
 msgstr "ตารางทำการไมโครซอฟท์เอ็กเซล 97-2003"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET
-msgid  "Microsoft Excel Worksheet"
+msgid "Microsoft Excel Worksheet"
 msgstr "ตารางทำการไมโครซอฟท์เอ็กเซล"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE_OLD
-msgid  "Microsoft Excel 97-2003 Template"
+msgid "Microsoft Excel 97-2003 Template"
 msgstr "แม่แบบตารางทำนวณไมโครซอฟท์เอ็กเซล 97-2003"
 
 #: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
-msgid  "Microsoft Excel Template"
+msgid "Microsoft Excel Template"
 msgstr "แม่แบบตารางทำนวณไมโครซอฟท์เอ็กเซล 97-2003"
 
 #: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
-msgid  "%PRODUCTNAME Calc"
+msgid "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
-msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr "ปฏิบัติการคำนวณ วิเคราะห์ข้อมูลและจัดการรายการในตารางคำนวณโดยใช้ %PRODUCTNAME Calc"
+msgid "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
+msgstr ""
+"ปฏิบัติการคำนวณ วิเคราะห์ข้อมูลและจัดการรายการในตารางคำนวณโดยใช้ %"
+"PRODUCTNAME Calc"
 
 #: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
-msgid  "Program Module"
-msgstr "มอดูลของโปรแกรม"
+msgid "Program Module"
+msgstr "Program Module"
 
 #: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_BIN
-msgid  "The application %PRODUCTNAME Calc"
+msgid "The application %PRODUCTNAME Calc"
 msgstr "โปรแกรม %PRODUCTNAME Calc"
 
 #: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_HELP
-msgid  "%PRODUCTNAME Calc Help"
+msgid "%PRODUCTNAME Calc Help"
 msgstr "%PRODUCTNAME Calc วิธีใช้"
 
 #: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP
-msgid  "Help about %PRODUCTNAME Calc"
+msgid "Help about %PRODUCTNAME Calc"
 msgstr "วิธีใช้เกี่ยวกับ %PRODUCTNAME Calc"
 
 #: calc/module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS
-msgid  "Add-in"
+msgid "Add-in"
 msgstr "โปรแกรมเสริม"
 
 #: calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
-msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+msgid "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+msgstr ""
+"Add-ins are additional programs that make new functions available in %"
+"PRODUCTNAME Calc."
 
 #: ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
+msgid "&New"
 msgstr "&ใหม่"
 
 #: ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
-msgid  "&Install"
+msgid "&Install"
 msgstr "&Install"
 
 #: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
-msgid  "OpenOffice.org 1.1 Configuration File"
+msgid "OpenOffice.org 1.1 Configuration File"
 msgstr "ไฟล์โครงแบบของ OpenOffice.org 1.1"
 
 #: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
-msgid  "StarOffice 5.0 Template"
+msgid "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 Template"
 
 #: ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
+msgid "office productivity suite based on Apache OpenOffice project"
 msgstr "ชุดโปรแกรมผลิตภาพสำนักงานที่มีพื้นฐานจากโครงการอะปาเชโอเพนออฟฟิศ"
 
 #: ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
-msgid  "Desktop integration"
+msgid "Desktop integration"
 msgstr "Desktop integration"
 
 #: ooo/module_systemint.ulf#STR_DESC_MODULE_OPTIONAL_SYSTEMINTEGRATION
-msgid  "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
+msgid "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
 
 #: ooo/module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "โอเพนออฟฟิศ"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_ROOT_OSL
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "โอเพนออฟฟิศ"
 
 #: ooo/module_ooo.ulf#STR_NAME_MODULE_PRG
-msgid  "%PRODUCTNAME Program Modules"
+msgid "%PRODUCTNAME Program Modules"
 msgstr "%PRODUCTNAME Program Modules"
 
 #: ooo/module_ooo.ulf#STR_DESC_MODULE_PRG
-msgid  "List of all installable %PRODUCTNAME modules."
+msgid "List of all installable %PRODUCTNAME modules."
 msgstr "รายการทั้งหมดของมอดูล %PRODUCTNAME ที่สามารถติดตั้งได้"
 
 #: ooo/module_ooo.ulf#STR_NAME_MODULE_OPTIONAL
-msgid  "Optional Components"
+msgid "Optional Components"
 msgstr "ส่วนประกอบเผื่อเลือก"
 
 #: ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
-msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr "ส่วนประกอบทั่วไปและโปรแกรมเสริมที่ใช้ร่วมโดยโปรแกรม %PRODUCTNAME ทั้งหมด"
+msgid "Common components and additional programs shared by all %PRODUCTNAME programs."
+msgstr ""
+"ส่วนประกอบทั่วไปและโปรแกรมเสริมที่ใช้ร่วมโดยโปรแกรม %PRODUCTNAME ทั้งหมด"
 
 #: ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
-msgid  "Dictionaries"
+msgid "Dictionaries"
 msgstr "พจนานุกรม"
 
 #: ooo/module_ooo.ulf#STR_DESC_MODULE_DICTIONARIES
-msgid  "Spelling and hyphenation dictionaries and thesauri."
-msgstr "พจนานุกรมการสะกดคำและการแบ่งคำด้วยยัติภังค์และพจนานุกรมคำพ้องคำตรงกันข้าม"
+msgid "Spelling and hyphenation dictionaries and thesauri."
+msgstr ""
+"พจนานุกรมการสะกดคำและการแบ่งคำด้วยยัติภังค์และพจนานุกรมคำพ้องคำตรงกันข้าม"
 
 #: ooo/module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA
-msgid  "Java Runtime Environment (%JAVAVERSION)"
+msgid "Java Runtime Environment (%JAVAVERSION)"
 msgstr "Java Runtime Environment (%JAVAVERSION)"
 
 #: ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
-msgid  "Component for setting up the Java Environment"
+msgid "Component for setting up the Java Environment"
 msgstr "Component for setting up the Java Environment"
 
 #: ooo/module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS
-msgid  "Headless application support"
+msgid "Headless application support"
 msgstr "การสนับสนุนโปรแกรมที่ไม่ต้องแสดงผลทางจอภาพ (Headless application)"
 
 #: ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
-msgid  "Component for enabling use %PRODUCTNAME without a display"
+msgid "Component for enabling use %PRODUCTNAME without a display"
 msgstr "องค์ประกอบสำหรับทำให้สามารถใช้ %PRODUCTNAME โดยปราศจากจอแสดงผล"
 
 #: ooo/directory_ooo.ulf#STR_DIR_INFO
-msgid  "Information"
+msgid "Information"
 msgstr "ข้อมูลข่าวสาร"
 
 #: ooo/directory_ooo.ulf#STR_DIR_INTERNET
-msgid  "Internet"
+msgid "Internet"
 msgstr "อินเทอร์เน็ต"
 
 #: ooo/directory_ooo.ulf#STR_DIR_JAVA
-msgid  "Java"
+msgid "Java"
 msgstr "Java"
 
 #: ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-msgid  "Fun&More"
+msgid "Fun&More"
 msgstr "ความบันเทิงและอื่นๆ"
 
 #: ooo/directory_ooo.ulf#STR_DIR_STARONE
-msgid  "%PRODUCTNAME API"
+msgid "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-msgid  "Travel"
+msgid "Travel"
 msgstr "การท่องเที่ยว"
 
 #: ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-msgid  "Chapters"
+msgid "Chapters"
 msgstr "บท"
 
 #: ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-msgid  "Files"
+msgid "Files"
 msgstr "แฟ้ม"
 
 #: ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-msgid  "From Template"
+msgid "From Template"
 msgstr "จากแม่แบบ"
 
 #: ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-msgid  "Open Document"
+msgid "Open Document"
 msgstr "Open Document"
 
 #: ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
-msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr "ชุดโปรแกรมผลิตภาพสำนักงานทำงานได้กับรูปแบบเอกสารเปิดและเป็นมาตรฐานของ ODF สนับสนุนโดยมูลนิธิซอฟท์แวร์อะปาเช"
+msgid "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
+msgstr ""
+"ชุดโปรแกรมผลิตภาพสำนักงานทำงานได้กับรูปแบบเอกสารเปิดและเป็นมาตรฐานของ ODF "
+"สนับสนุนโดยมูลนิธิซอฟท์แวร์อะปาเช"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
-msgid  "Additional language packs"
+msgid "Additional language packs"
+msgstr "Additional language packs"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
+#, fuzzy
+msgid "Additional language packs"
 msgstr "Additional language packs"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US
-msgid  "English"
+msgid "English"
 msgstr "อังกฤษ"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
-msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอังกฤษใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
-msgid  "German"
+msgid "German"
 msgstr "German"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
-msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเยอรมันใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR
-msgid  "French"
+msgid "French"
 msgstr "ฝรั่งเศส"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
-msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาฝรั่งเศสใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT
-msgid  "Italian"
+msgid "Italian"
 msgstr "Italian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
-msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอิตาลีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
-msgid  "Spanish"
+msgid "Spanish"
 msgstr "สเปน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
-msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสเปนใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
-msgid  "Swedish"
+msgid "Swedish"
 msgstr "สวีดิช"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
-msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสวีดิชใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
-msgid  "Portuguese"
+msgid "Portuguese"
 msgstr "Portuguese"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
-msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโปรตุเกสใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
-msgid  "Portuguese (Brazil)"
+msgid "Portuguese (Brazil)"
 msgstr "Portuguese (Brazil)"
 
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
+msgid "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาโปรตุเกสใน %PRODUCTNAME %PRODUCTVERSION"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
-msgid  "Japanese"
+msgid "Japanese"
 msgstr "Japanese"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
-msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาญี่ปุ่นใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
-msgid  "Korean"
+msgid "Korean"
 msgstr "Korean"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
-msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเกาหลีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
-msgid  "Chinese (simplified)"
+msgid "Chinese (simplified)"
 msgstr "Chinese (simplified)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
-msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาจีน (ตัวย่อ) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
-msgid  "Chinese (traditional)"
+msgid "Chinese (traditional)"
 msgstr "Chinese (tradional)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
-msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาจีน (ตัวเต็ม) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
-msgid  "Dutch"
+msgid "Dutch"
 msgstr "ดัตช์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
-msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาดัตช์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
-msgid  "Hungarian"
+msgid "Hungarian"
 msgstr "ฮังกาเรียน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
-msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาฮังการีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
-msgid  "Polish"
+msgid "Polish"
 msgstr "โปลิช"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL
-msgid  "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโปแลนด์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU
-msgid  "Russian"
+msgid "Russian"
 msgstr "รัสเซีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RU
-msgid  "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษารัสเซียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TR
-msgid  "Turkish"
+msgid "Turkish"
 msgstr "Turkish"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR
-msgid  "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาตุรกีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL
-msgid  "Greek"
+msgid "Greek"
 msgstr "Greek"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EL
-msgid  "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษากรีกใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH
-msgid  "Thai"
+msgid "Thai"
 msgstr "ไทย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH
-msgid  "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาไทยใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS
-msgid  "Czech"
+msgid "Czech"
 msgstr "เช็ค"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS
-msgid  "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเช็กใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK
-msgid  "Slovak"
+msgid "Slovak"
 msgstr "สโลวัค"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
-msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสโลวัคใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
-msgid  "Croatian"
+msgid "Croatian"
 msgstr "Croatian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
-msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโครเอเชียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "เอสโทเนียน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
-msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเอสโทเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
-msgid  "Vietnamese"
+msgid "Vietnamese"
 msgstr "เวียตนาม"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
-msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเวียตนามใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
-msgid  "Bulgarian"
+msgid "Bulgarian"
 msgstr "Bulgarian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
-msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาบัลกาเรียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
-msgid  "Khmer"
+msgid "Khmer"
 msgstr "Khmer"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KM
-msgid  "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเขมรใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PA_IN
-msgid  "Punjabi"
+msgid "Punjabi"
 msgstr "Punjabi"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
-msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาปัญจาบใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
 #, fuzzy
-msgid  "Gujarati"
+msgid "Gujarati"
 msgstr "Gujarati"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
-msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Gujarati ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
-msgid  "Tamil"
+msgid "Tamil"
 msgstr "Tamil"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
-msgid  "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาทมิฬใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN
+msgid "Tamil"
+msgstr "Tamil"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA_IN
+msgid "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาทมิฬใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI
 #, fuzzy
-msgid  "Hindi"
+msgid "Hindi"
 msgstr "Hindi"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI
-msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาฮินดูใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN
+#, fuzzy
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI_IN
+msgid "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาฮินดูใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST
-msgid  "Southern Sotho (Sutu)"
+msgid "Southern Sotho (Sutu)"
 msgstr "Southern Sotho (Sutu)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
-msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษา Southern Sotho (Sutu) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษา Southern Sotho (Sutu) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
-msgid  "Tswana"
+msgid "Tswana"
 msgstr "Tswana"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN
-msgid  "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Tswana ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH
-msgid  "Xhosa"
+msgid "Xhosa"
 msgstr "Xhosa"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH
-msgid  "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Xhosa ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU
-msgid  "Zulu"
+msgid "Zulu"
 msgstr "ซูลู"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZU
-msgid  "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาซูลูใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF
-msgid  "Afrikaans"
+msgid "Afrikaans"
 msgstr "แอฟริคานซ์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
-msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Afrikaans ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
-msgid  "Swahili"
+msgid "Swahili"
 msgstr "Swahili"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
-msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาสวาฮิลีใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ
+msgid "Swahili"
+msgstr "Swahili"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ
+msgid "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสวาฮิลีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
-msgid  "Lao"
+msgid "Lao"
 msgstr "Lao"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO
-msgid  "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาลาวใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS
-msgid  "Northern Sotho"
+msgid "Northern Sotho"
 msgstr "Northern Sotho"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
-msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Northern Sotho ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
-msgid  "Bengali"
+msgid "Bengali"
 msgstr "Bengali"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
-msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเบงกอลใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
-msgid  "Bengali (Bangladesh)"
+msgid "Bengali (Bangladesh)"
 msgstr "Bengali (Bangladesh)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
-msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษาเบงกอล (บังกลาเทศ) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาเบงกอล (บังกลาเทศ) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
-msgid  "Bengali (India)"
+msgid "Bengali (India)"
 msgstr "Bengali (India)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
-msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเบงกอล (อินเดีย) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
-msgid  "Oriya"
+msgid "Oriya"
 msgstr "Oriya"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR
-msgid  "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาโอริยาใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR_IN
+#, fuzzy
+msgid "Oriya"
+msgstr "Oriya"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR_IN
+msgid "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโอริยาใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR
 #, fuzzy
-msgid  "Marathi"
+msgid "Marathi"
 msgstr "Marathi"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR
-msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษามาราธีใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN
+#, fuzzy
+msgid "Marathi"
+msgstr "Marathi"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN
+msgid "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษามาราธีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
-msgid  "Nepali"
+msgid "Nepali"
 msgstr "เนปาล"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
-msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเนปาลใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
 #, fuzzy
-msgid  "Arabic"
+msgid "Arabic"
 msgstr "Arabic"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR
-msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาอาหรับใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR_SA
+#, fuzzy
+msgid "Arabic"
+msgstr "Arabic"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR_SA
+msgid "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอาหรับใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA
-msgid  "Catalan"
+msgid "Catalan"
 msgstr "คาทาลาน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
-msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาคาทาลานใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
-msgid  "Danish"
+msgid "Danish"
 msgstr "เดนมาร์ก"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA
-msgid  "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเดนมาร์กใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI
-msgid  "Finnish"
+msgid "Finnish"
 msgstr "Finnish"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
-msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาฟินแลนด์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
-msgid  "Hebrew"
+msgid "Hebrew"
 msgstr "ฮิบรู"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
-msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาฮีบรูใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
-msgid  "Icelandic"
+msgid "Icelandic"
 msgstr "Icelandic"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
-msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาไอซ์แลนด์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
-msgid  "Norwegian (Bokmål)"
+msgid "Norwegian (Bokmål)"
 msgstr "Norwegian (Bokmal)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
-msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษานอร์เวย์ (Bokmål) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
-msgid  "Norwegian (Nynorsk)"
+msgid "Norwegian (Nynorsk)"
 msgstr "Norwegian (Nynorsk)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
-msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษานอร์เวย์ (Nynorsk) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษานอร์เวย์ (Nynorsk) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
-msgid  "Rhaeto-Romance"
+msgid "Rhaeto-Romance"
 msgstr "Raeto-Romance"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
-msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Rhaeto-Romance ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
-msgid  "Romanian"
+msgid "Romanian"
 msgstr "โรมาเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
-msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโรมาเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
-msgid  "Albanian"
+msgid "Albanian"
 msgstr "Albanian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
-msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอัลบาเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
-msgid  "Urdu"
+msgid "Urdu"
 msgstr "Urdu"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR
-msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอูร์ดูใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID
-msgid  "Indonesian"
+msgid "Indonesian"
 msgstr "Indonesian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
-msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอินโดนีเซียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
-msgid  "Ukrainian"
+msgid "Ukrainian"
 msgstr "Ukrainian"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
-msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษายูเครนใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
-msgid  "Belarusian"
+msgid "Belarusian"
 msgstr "เบลารุส"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
-msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเบลารุสใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
-msgid  "Slovenian"
+msgid "Slovenian"
 msgstr "สโลเวเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
-msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสโลเวเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
-msgid  "Latvian"
+msgid "Latvian"
 msgstr "ลัทเวีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
-msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาลัทเวียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
-msgid  "Lithuanian"
+msgid "Lithuanian"
 msgstr "ลิทัวเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
-msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาลิธัวเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
-msgid  "Armenian"
+msgid "Armenian"
 msgstr "อาร์เมเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
-msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอาร์เมเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
-msgid  "Basque"
+msgid "Basque"
 msgstr "บาสค์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU
-msgid  "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาบาสก์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK
-msgid  "Macedonian"
+msgid "Macedonian"
 msgstr "มาเซโดเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
-msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษามาเซโดเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
-msgid  "Maltese"
+msgid "Maltese"
 msgstr "มอลตา"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
-msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษามอลตาใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
-msgid  "Welsh"
+msgid "Welsh"
 msgstr "เวลส์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY
-msgid  "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเวลช์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL
-msgid  "Galician"
+msgid "Galician"
 msgstr "กาลิเชียน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
-msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษากาลิเชียนใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
-msgid  "Serbian (Latin)"
+msgid "Serbian (Latin)"
 msgstr "เซอร์เบีย (ละติน)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
-msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาเซอร์เบีย (ละติน) ใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
+msgid "Serbian (Latin)"
+msgstr "เซอร์เบีย (ละติน)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+msgid "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเซอร์เบีย (ละติน) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
-msgid  "Irish"
+msgid "Irish"
 msgstr "ไอริช"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
-msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาไอริชใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
-msgid  "Serbian (Cyrillic)"
+msgid "Serbian (Cyrillic)"
 msgstr "เซอร์เบีย (ไซริลลิก)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
-msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษาเซอร์เบีย (ไซริลลิก) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาเซอร์เบีย (ไซริลลิก) ใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
+msgid "Serbian (Cyrillic)"
+msgstr "เซอร์เบีย (ไซริลลิก)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+msgid "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาเซอร์เบีย (ไซริลลิก) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
-msgid  "Bosnian"
+msgid "Bosnian"
 msgstr "บอสเนีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
-msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาบอสเนียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
-msgid  "Assamese"
+msgid "Assamese"
 msgstr "อัสสัม"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN
-msgid  "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอัสสัมใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW
-msgid  "Kinyarwanda"
+msgid "Kinyarwanda"
 msgstr "คินยาร์วันดา"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
-msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาคินยาร์วานดาใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
-msgid  "Sanskrit"
+msgid "Sanskrit"
 msgstr "สันสกฤต"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
-msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสันสกฤตใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
-msgid  "Persian"
+msgid "Persian"
 msgstr "เปอร์เชีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
-msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเปอร์เซียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
-msgid  "Faroese"
+msgid "Faroese"
 msgstr "ฟาโรอีส"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
-msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Faroese ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
-msgid  "Sorbian"
+msgid "Sorbian"
 msgstr "ซอร์เบียน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
-msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาซอร์เบียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
-msgid  "Tatar"
+msgid "Tatar"
 msgstr "ทาทาร์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TT
-msgid  "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาทาทาร์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TS
-msgid  "Tsonga"
+msgid "Tsonga"
 msgstr "Tsonga"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS
-msgid  "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Tsonga ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI
-msgid  "Yiddish"
+msgid "Yiddish"
 msgstr "ยิดดิช"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI
-msgid  "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษายิดดิชใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR
-msgid  "Breton"
+msgid "Breton"
 msgstr "เบรตัน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
-msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเบรตันใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
-msgid  "Ndebele South"
+msgid "Ndebele South"
 msgstr "Ndebele South"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
-msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Ndebele South ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
-msgid  "Swazi"
+msgid "Swazi"
 msgstr "สวาซี"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS
-msgid  "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาสวาซีใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE
-msgid  "Venda"
+msgid "Venda"
 msgstr "เวนดา"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VE
-msgid  "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเวนดาใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KN
-msgid  "Kannada"
+msgid "Kannada"
 msgstr "Kannada"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
-msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Kannada ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
-msgid  "Malay (Malaysian)"
+msgid "Malay (Malaysian)"
 msgstr "มาเลย์ (มาเลเซีย)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
-msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษามาเลย์ (มาเลเซีย) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
-msgid  "Tajik"
+msgid "Tajik"
 msgstr "ทาจิค"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
-msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาทาจิคใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
-msgid  "Kurdish"
+msgid "Kurdish"
 msgstr "เคิร์ด"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU
-msgid  "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเคิร์ดใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ
-msgid  "Dzongkha"
+msgid "Dzongkha"
 msgstr "Dzongkha"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
-msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Dzongkha ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
-msgid  "Georgian"
+msgid "Georgian"
 msgstr "จอร์เจีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
-msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาจอร์เจียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
-msgid  "Esperanto"
+msgid "Esperanto"
 msgstr "เอสเพอรานโต"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
-msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาเอสเพอรานโตใน %PRODUCTNAME %PRODUCTVERSION"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
+#, fuzzy
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
+msgid "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษา Gujarati ใน %PRODUCTNAME %PRODUCTVERSION"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
-msgid  "English (South Africa)"
+msgid "English (South Africa)"
 msgstr "อังกฤษ (อัฟริกาใต้)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
-msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษาอังกฤษ (อัฟริกาใต้) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาอังกฤษ (อัฟริกาใต้) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
-msgid  "English (United Kingdom)"
+msgid "English (United Kingdom)"
 msgstr "อังกฤษ (สหราชอาณาจักร)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
-msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษาอังกฤษ (สหราชอาณาจักร) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาอังกฤษ (สหราชอาณาจักร) ใน %PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
+#, fuzzy
+msgid "Urdu"
+msgstr "Urdu"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR_IN
+msgid "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ติดตั้งการสนับสนุนภาษาอูร์ดูใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN
-msgid  "Malayalam"
+msgid "Malayalam"
 msgstr "Malayalam"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
-msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Malayalam ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
-msgid  "Telugu"
+msgid "Telugu"
 msgstr "Telugu"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN
-msgid  "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Telugu ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER
-msgid  "Tigrinya"
+msgid "Tigrinya"
 msgstr "Tigrinya"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
-msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษา Tigrinya ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
-msgid  "Uzbek"
+msgid "Uzbek"
 msgstr "อุซเบค"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ
-msgid  "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอุสเบคใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN
-msgid  "Mongolian"
+msgid "Mongolian"
 msgstr "มองโกเลีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
-msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษามองโกเลียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
-msgid  "Occitan"
+msgid "Occitan"
 msgstr "อ็อคซิแทน"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
-msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอ็อคซิแทนใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
-msgid  "Uighur"
+msgid "Uighur"
 msgstr "อุยเกอร์"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
-msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาอุยเกอร์ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
-msgid  "Sinhala"
+msgid "Sinhala"
 msgstr "ซินฮาลา"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
-msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาซินฮาลาใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
-msgid  "Oromo"
+msgid "Oromo"
 msgstr "โอโรโม"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OM
-msgid  "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาโอโรโมใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AST
-msgid  "Asturian"
+msgid "Asturian"
 msgstr "แอสทูเรีย"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
-msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ติดตั้งการสนับสนุนภาษาแอสทูเรียใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
-msgid  "Gaelic (Scotland)"
+msgid "Gaelic (Scotland)"
 msgstr "แกลิค (สก็อตแลนด์)"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GD
-msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ติดตั้งการสนับสนุนภาษาแกลิค (สก็อตแลนด์) ใน %PRODUCTNAME %PRODUCTVERSION"
+msgid "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+"ติดตั้งการสนับสนุนภาษาแกลิค (สก็อตแลนด์) ใน %PRODUCTNAME %PRODUCTVERSION"
 
 #: gnome/module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME
-msgid  "GNOME Integration"
+msgid "GNOME Integration"
 msgstr "GNOME Integration"
 
 #: gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
-msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
+msgid "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
+msgstr ""
+"System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop "
+"Environment."
 
 #: base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
-msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr "Manage databases, create queries and reports to track and manage your information by using Base."
+msgid "Manage databases, create queries and reports to track and manage your information by using Base."
+msgstr ""
+"Manage databases, create queries and reports to track and manage your "
+"information by using Base."
 
 #: base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
-msgid  "OpenDocument Database"
+msgid "OpenDocument Database"
 msgstr "OpenDocument Database"
 
 #: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE
-msgid  "%PRODUCTNAME Base"
+msgid "%PRODUCTNAME Base"
 msgstr "%PRODUCTNAME Base"
 
 #: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
-msgid  "Create and edit databases by using %PRODUCTNAME Base."
+msgid "Create and edit databases by using %PRODUCTNAME Base."
 msgstr "Create and edit databases by using %PRODUCTNAME Base."
 
 #: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
-msgid  "Program Module"
+msgid "Program Module"
 msgstr "Program Module"
 
 #: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_BIN
-msgid  "The application %PRODUCTNAME Base"
+msgid "The application %PRODUCTNAME Base"
 msgstr "The application %PRODUCTNAME Base"
 
 #: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_HELP
-msgid  "%PRODUCTNAME Base Help"
+msgid "%PRODUCTNAME Base Help"
 msgstr "%PRODUCTNAME Base Help"
 
 #: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_HELP
-msgid  "Help about %PRODUCTNAME Base"
+msgid "Help about %PRODUCTNAME Base"
 msgstr "Help about %PRODUCTNAME Base"
 
 #: activex/module_activex.ulf#STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL
-msgid  "ActiveX Control"
+msgid "ActiveX Control"
 msgstr "ActiveX Control"
 
 #: activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
-msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr "องค์ประกอบที่จะสามารถใช้งาน Microsoft Internet Explorer เพื่อแสดงเอกสาร %PRODUCTNAME"
+msgid "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
+msgstr ""
+"องค์ประกอบที่จะสามารถใช้งาน Microsoft Internet Explorer เพื่อแสดงเอกสาร %"
+"PRODUCTNAME"
 
 #: python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-msgid  "E-mail Mailmerge"
+msgid "E-mail Mailmerge"
 msgstr "E-mail Mailmerge"
 
 #: python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
+msgid "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "Module for %PRODUCTNAME E-mail Mailmerge feature"
 
 #: python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-msgid  "Python-UNO Bridge"
+msgid "Python-UNO Bridge"
 msgstr "Python-UNO Sprachanbindung"
 
 #: python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
-msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr "เพิ่มเติมความสามารถการทำงานอัตโนมัติของ %PRODUCTNAME ด้วยการใช้ภาษา python scripting ดู http://udk.openoffice.org/python/python-bridge.html สำหรับการทำเอกสารที่สมบูรณ์"
+msgid "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
+msgstr ""
+"เพิ่มเติมความสามารถการทำงานอัตโนมัติของ %PRODUCTNAME ด้วยการใช้ภาษา python "
+"scripting ดู http://udk.openoffice.org/python/python-bridge.html "
+"สำหรับการทำเอกสารที่สมบูรณ์"

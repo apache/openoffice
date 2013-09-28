@@ -1,342 +1,672 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: readme.xrm#WELCOME
-msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "Léame de ${PRODUCTNAME} ${PRODUCTVERSION}"
 
 #: readme.xrm#LATESTUPDATES
-msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
-msgstr "Para ver las últimas actualizaciones de este archivo \"léame\" (en inglés), vea <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgid "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgstr ""
+"Para ver las últimas actualizaciones de este archivo \"léame\" (en inglés), "
+"vea <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openo"
+"ffice.org/welcome/readme.html</a>"
+
+#: readme.xrm#A6
+msgid "This file contains important information about this program. Please read this information very carefully before starting work."
+msgstr ""
 
 #: readme.xrm#A7
-msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
-msgstr "La comunidad de Apache OpenOffice, responsable del desarrollo de este producto, quiere invitarlo a participar como miembro de la comunidad. Los usuarios nuevos pueden visitar el sitio de ${PRODUCTNAME} que contiene información valiosa en <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a> (en inglés)"
+msgid "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgstr ""
+"La comunidad de Apache OpenOffice, responsable del desarrollo de este "
+"producto, quiere invitarlo a participar como miembro de la comunidad. Los "
+"usuarios nuevos pueden visitar el sitio de ${PRODUCTNAME} que contiene "
+"información valiosa en <a "
+"href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a> (en "
+"inglés)"
 
 #: readme.xrm#A9
-msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "Lea además las siguientes secciones acerca de cómo involucrarse en el proyecto Apache OpenOffice. "
+msgid "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+"Lea además las siguientes secciones acerca de cómo involucrarse en el "
+"proyecto Apache OpenOffice. "
 
 #: readme.xrm#A10
 #, fuzzy
-msgid  "Is ${PRODUCTNAME} really free for any user? "
+msgid "Is ${PRODUCTNAME} really free for any user? "
 msgstr "¿${PRODUCTNAME} es de verdad libre para cualquier usuario?"
 
 #: readme.xrm#A11
 #, fuzzy
-msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr "${PRODUCTNAME} es libre para que todos puedan usarlo. Puede tomar esta copia de ${PRODUCTNAME} e instalarlo en tantas computadoras como desee, y utilizarlo para cualquier propósito (incluido el uso comercial, gubernamental, de la administración pública y educacional). Para mayores detalles, vea el texto de la licencia entregada junto con ${PRODUCTNAME} o <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a> (en inglés)"
+msgid "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"${PRODUCTNAME} es libre para que todos puedan usarlo. Puede tomar esta copia "
+"de ${PRODUCTNAME} e instalarlo en tantas computadoras como desee, y "
+"utilizarlo para cualquier propósito (incluido el uso comercial, "
+"gubernamental, de la administración pública y educacional). Para mayores "
+"detalles, vea el texto de la licencia entregada junto con ${PRODUCTNAME} o "
+"<a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/l"
+"icense.html</a> (en inglés)"
 
 #: readme.xrm#A12
 #, fuzzy
-msgid  "Why is ${PRODUCTNAME} free for any user?"
+msgid "Why is ${PRODUCTNAME} free for any user?"
 msgstr "¿Por qué ${PRODUCTNAME} es libre para cualquier usuario?"
 
 #: readme.xrm#A13
-msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr "Puede usar esta copia de ${PRODUCTNAME} en forma gratuita porque los contribuyentes individuales y patrocinadores corporativos han diseñado, desarrollado, probado, traducido, documentado, asistido, promocionado y ayudado de muchas formas para hacer de ${PRODUCTNAME} lo que es hoy - el líder mundial de software de oficina de código abierto."
+msgid "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr ""
+"Puede usar esta copia de ${PRODUCTNAME} en forma gratuita porque los "
+"contribuyentes individuales y patrocinadores corporativos han diseñado, "
+"desarrollado, probado, traducido, documentado, asistido, promocionado y "
+"ayudado de muchas formas para hacer de ${PRODUCTNAME} lo que es hoy - el "
+"líder mundial de software de oficina de código abierto."
 
 #: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
-msgstr "Si aprecia sus esfuerzos y desea asegurarse de que Apache OpenOffice continúe en el futuro, por favor considere contribuir al proyecto - vea <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> para detalles sobre cómo contribuir su tiempo y <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> para detalles sobre cómo realizar donaciones. Todos tienen una contribución para hacer."
+msgid "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr ""
+"Si aprecia sus esfuerzos y desea asegurarse de que Apache OpenOffice "
+"continúe en el futuro, por favor considere contribuir al proyecto - vea <a "
+"href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a> para "
+"detalles sobre cómo contribuir su tiempo y <a href=\"http://www.apache.org/fo"
+"undation/contributing.html\">http://www.apache.org/foundation/contributing.ht"
+"ml</a> para detalles sobre cómo realizar donaciones. Todos tienen una "
+"contribución para hacer."
+
+#: readme.xrm#RR3FGF42R
+msgid "Notes on Installation"
+msgstr ""
 
 #: readme.xrm#JAVANEEDED
-msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
-msgstr "${PRODUCTNAME} necesita de versiones recientes de JAVA para una funcionalidad total; JAVA puede ser descargado de <a href=\"http://java.com\">http://java.com</a>."
+msgid "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
+msgstr ""
+"${PRODUCTNAME} necesita de versiones recientes de JAVA para una "
+"funcionalidad total; JAVA puede ser descargado de <a "
+"href=\"http://java.com\">http://java.com</a>."
 
 #: readme.xrm#SDFSDFGF42R
 #, fuzzy
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "Requerimientos del sistema"
+
+#: readme.xrm#MACXIOSX
+msgid "MacOSX 10.4 (Tiger) or higher"
+msgstr ""
+
+#: readme.xrm#MACXICPU
+msgid "Intel processor"
+msgstr ""
+
+#: readme.xrm#MACXIRAM
+msgid "512 MB RAM"
+msgstr ""
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
-msgid  "Up to 1.5 GB available hard disk space"
+msgid "Up to 1.5 GB available hard disk space"
 msgstr "Espacio disponible en el disco rígido de hasta 1,5 GB"
 
 #: readme.xrm#MACXIVIDEO
 #, fuzzy
-msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr "Dispositivo gráfico de 1024 x 768 con 256 colores (se recomienda una resolución más alta)"
+msgid "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
+"Dispositivo gráfico de 1024 x 768 con 256 colores (se recomienda una "
+"resolución más alta)"
 
 #: readme.xrm#S2S3SDF2
-msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
+msgid "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
 msgstr "Microsoft Windows XP, Vista, Windows 7 o Windows 8"
 
 #: readme.xrm#UTZU6
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Procesador Pentium III o posterior"
 
 #: readme.xrm#GHUJ67
 #, fuzzy
-msgid  "256 MB RAM (512 MB RAM recommended)"
+msgid "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB de RAM (se recomiendan 512 MB de RAM)"
+
+#: readme.xrm#JZJTZU6
+#, fuzzy
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "Espacio disponible en el disco rígido de hasta 1,5 GB"
 
 #: readme.xrm#JTZU56
 #, fuzzy
-msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr "Resolución de 1024x768 (se recomienda una resolución más alta), por lo menos con 256 colores"
+msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr ""
+"Resolución de 1024x768 (se recomienda una resolución más alta), por lo menos "
+"con 256 colores"
 
 #: readme.xrm#EDSSC3D
 #, fuzzy
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr "Tenga en cuenta que se necesitan derechos de administrador para el proceso de instalación."
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Tenga en cuenta que se necesitan derechos de administrador para el proceso "
+"de instalación."
 
 #: readme.xrm#MSOREG1
 #, fuzzy
-msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr "Se puede forzar o evitar que ${PRODUCTNAME} se registre como aplicación predeterminada para los formatos de Microsoft Office usando las opciones siguientes del instalador en la línea de comandos:"
+msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+"Se puede forzar o evitar que ${PRODUCTNAME} se registre como aplicación "
+"predeterminada para los formatos de Microsoft Office usando las opciones "
+"siguientes del instalador en la línea de comandos:"
 
 #: readme.xrm#MSOREG2
 #, fuzzy
-msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=1</tt> forzará que ${PRODUCTNAME} se registre como aplicación predeterminada para los formatos de Microsoft Office."
+msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=1</tt> forzará que ${PRODUCTNAME} se registre como aplicación "
+"predeterminada para los formatos de Microsoft Office."
 
 #: readme.xrm#MSOREG3
 #, fuzzy
-msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=0</tt> evitará que ${PRODUCTNAME} se registre como aplicación predeterminada para los formatos de Microsoft Office."
+msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=0</tt> evitará que ${PRODUCTNAME} se registre como aplicación "
+"predeterminada para los formatos de Microsoft Office."
 
 #: readme.xrm#DLLA1
-msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr "Si realiza una instalación como administrador usando el comando setup /a, debe asegurarse que esté instalado en el sistema el archivo msvcr100.dll. Después de la instalación como administrador, se requiere este archivo para iniciar ${PRODUCTNAME}. Puede obtener el archivo desde <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgstr ""
+"Si realiza una instalación como administrador usando el comando setup /a, "
+"debe asegurarse que esté instalado en el sistema el archivo msvcr100.dll. "
+"Después de la instalación como administrador, se requiere este archivo para "
+"iniciar ${PRODUCTNAME}. Puede obtener el archivo desde <a "
+"href=\"http://www.microsoft.com/en-"
+"us/download/details.aspx?id=5555\">http://www.microsoft.com/en-"
+"us/download/details.aspx?id=5555</a>"
+
+#: readme.xrm#ADMINNEEDED
+#, fuzzy
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Tenga en cuenta que se necesitan derechos de administrador para el proceso "
+"de instalación."
+
+#: readme.xrm#S2335
+msgid "Solaris 10 operating system (SPARC platform) or higher"
+msgstr ""
+
+#: readme.xrm#S253
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB de RAM (se recomiendan 512 MB de RAM)"
 
 #: readme.xrm#S23SEG
 #, fuzzy
-msgid  "Up to 1.55 GB available hard disk space"
+msgid "Up to 1.55 GB available hard disk space"
 msgstr "Espacio disponible en el disco rígido de hasta 1,55 GB"
 
 #: readme.xrm#S2S43GFE
 #, fuzzy
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "Servidor X con resolución de 1024x768 (se recomienda una resolución más alta), por lo menos con 256 colores"
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Servidor X con resolución de 1024x768 (se recomienda una resolución más "
+"alta), por lo menos con 256 colores"
 
 #: readme.xrm#N4234RW
 #, fuzzy
-msgid  "Window Manager"
+msgid "Window Manager"
 msgstr "Gestor de ventanas"
 
 #: readme.xrm#WD2DFF2
 #, fuzzy
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.6 o superior, con los paquetes gail 1.8.6 y at-spi 1.7, necesarios para permitir el uso de herramientas de tecnología de asistencia (herramientas TA)"
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 o superior, con los paquetes gail 1.8.6 y at-spi 1.7, necesarios "
+"para permitir el uso de herramientas de tecnología de asistencia "
+"(herramientas TA)"
 
 #: readme.xrm#S23H
 #, fuzzy
-msgid  "Solaris 10 operating system (x86 platform) or higher"
+msgid "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Sistema operativo Solaris 10 (plataforma x86) o superior"
+
+#: readme.xrm#S24F
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB de RAM (se recomiendan 512 MB de RAM)"
+
+#: readme.xrm#FGHEG
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Espacio disponible en el disco rígido de hasta 1,55 GB"
+
+#: readme.xrm#FGHFGH
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Servidor X con resolución de 1024x768 (se recomienda una resolución más "
+"alta), por lo menos con 256 colores"
+
+#: readme.xrm#MGJFG
+#, fuzzy
+msgid "Window Manager"
+msgstr "Gestor de ventanas"
+
+#: readme.xrm#WD2DFF1
+#, fuzzy
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 o superior, con los paquetes gail 1.8.6 y at-spi 1.7, necesarios "
+"para permitir el uso de herramientas de tecnología de asistencia "
+"(herramientas TA)"
 
 #: readme.xrm#S2WE35
 #, fuzzy
-msgid  "Linux Kernel version 2.6.18 or higher"
+msgid "Linux Kernel version 2.6.18 or higher"
 msgstr "Kernel Linux versión 2.6.18 o superior"
 
+#: readme.xrm#S253WE
+msgid "glibc2 version 2.5 or higher"
+msgstr ""
+
+#: readme.xrm#S256WE
+msgid "gtk version 2.10.4 or higher"
+msgstr ""
+
+#: readme.xrm#S2ETFSEG
+msgid "Pentium III or later processor"
+msgstr "Procesador Pentium III o posterior"
+
+#: readme.xrm#S2SSDFE
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB de RAM (se recomiendan 512 MB de RAM)"
+
+#: readme.xrm#N42DFGF
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Espacio disponible en el disco rígido de hasta 1,55 GB"
+
+#: readme.xrm#GHJHHR
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Servidor X con resolución de 1024x768 (se recomienda una resolución más "
+"alta), por lo menos con 256 colores"
+
+#: readme.xrm#FHRTZ5
+#, fuzzy
+msgid "Window Manager"
+msgstr "Gestor de ventanas"
+
 #: readme.xrm#WD2DFF
-msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.16 o superior, con los paquetes gail 1.8.6 y at-spi 1.7, necesarios para permitir el uso de herramientas de tecnología de asistencia (herramientas TA)"
+msgid "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.16 o superior, con los paquetes gail 1.8.6 y at-spi 1.7, necesarios "
+"para permitir el uso de herramientas de tecnología de asistencia "
+"(herramientas TA)"
 
 #: readme.xrm#LINUXI3A
 #, fuzzy
-msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr "Existe una amplia variedad de distribuciones Linux, e incluso dentro de una misma distribución pueden existir diferentes opciones de instalación (KDE vs Gnome, etc.). Algunas distribuciones vienen con su propia versión 'nativa' de ${PRODUCTNAME}, que pueden tener características distintas al ${PRODUCTNAME} de la comunidad. Algunas veces puede instalar la versión de ${PRODUCTNAME} de la comunidad junto con la versión 'nativa'. Sin embargo, generalmente, es más seguro eliminar la versión 'nativa' antes de instalar la versión de la comunidad. Consulte la documentación de su distribución para obtener detalles sobre cómo hacerlo."
+msgid "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+"Existe una amplia variedad de distribuciones Linux, e incluso dentro de una "
+"misma distribución pueden existir diferentes opciones de instalación (KDE vs "
+"Gnome, etc.). Algunas distribuciones vienen con su propia versión 'nativa' "
+"de ${PRODUCTNAME}, que pueden tener características distintas al "
+"${PRODUCTNAME} de la comunidad. Algunas veces puede instalar la versión de "
+"${PRODUCTNAME} de la comunidad junto con la versión 'nativa'. Sin embargo, "
+"generalmente, es más seguro eliminar la versión 'nativa' antes de instalar "
+"la versión de la comunidad. Consulte la documentación de su distribución "
+"para obtener detalles sobre cómo hacerlo."
+
+#: readme.xrm#LINUXI4A
+msgid "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+
+#: readme.xrm#PRECAUTIONS
+msgid "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+
+#: readme.xrm#NASO01
+msgid "Problems During Program Startup"
+msgstr ""
 
 #: readme.xrm#NASO02
 #, fuzzy
-msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr "Si tiene problemas al iniciar ${PRODUCTNAME} (especialmente durante el uso de Gnome), 'quite' la variable de entorno  <tt>SESSION_MANAGER</tt> dentro de la terminal que utiliza para iniciar ${PRODUCTNAME}. Esto puede hacerse agregando la línea \"<tt>unset SESSION_MANAGER</tt>\" al inicio del archivo de comandos soffice que se encuentra en el directorio \"<tt>[carpeta del office]/program</tt>\"."
+msgid "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"Si tiene problemas al iniciar ${PRODUCTNAME} (especialmente durante el uso "
+"de Gnome), 'quite' la variable de entorno  <tt>SESSION_MANAGER</tt> dentro "
+"de la terminal que utiliza para iniciar ${PRODUCTNAME}. Esto puede hacerse "
+"agregando la línea \"<tt>unset SESSION_MANAGER</tt>\" al inicio del archivo de "
+"comandos soffice que se encuentra en el directorio \"<tt>[carpeta del "
+"office]/program</tt>\"."
 
 #: readme.xrm#ABCDEF
 #, fuzzy
-msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr "Las dificultadas para iniciar ${PRODUCTNAME} (por ejemplo, el cuelgue de la aplicación) y los problemas con la visualización en pantalla son causados, a menudo, por el controlador de la placa de vídeo. Si tiene alguno de estos problemas, actualice el controlador de su placa de vídeo o intente utilizar el que viene con su sistema operativo. Las dificultades relacionadas con la visualización de objetos 3D pueden resolverse, a menudo, desactivando la opción \"Usar la aceleración por hardware\" en 'Herramientas - Opciones - ${PRODUCTNAME} - Ver - Salida gráfica'."
+msgid "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
+msgstr ""
+"Las dificultadas para iniciar ${PRODUCTNAME} (por ejemplo, el cuelgue de la "
+"aplicación) y los problemas con la visualización en pantalla son causados, a "
+"menudo, por el controlador de la placa de vídeo. Si tiene alguno de estos "
+"problemas, actualice el controlador de su placa de vídeo o intente utilizar "
+"el que viene con su sistema operativo. Las dificultades relacionadas con la "
+"visualización de objetos 3D pueden resolverse, a menudo, desactivando la "
+"opción \"Usar la aceleración por hardware\" en 'Herramientas - Opciones - "
+"${PRODUCTNAME} - Ver - Salida gráfica'."
+
+#: readme.xrm#NASO
+msgid "ALPS/Synaptics notebook touchpads in Windows"
+msgstr ""
 
 #: readme.xrm#NASO2
 #, fuzzy
-msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr "Debido a un problema con el controlador de Windows, no puede desplazar por los documentos de ${PRODUCTNAME} al deslizar su dedo en un touchpad ALPS/Synaptics."
+msgid "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"Debido a un problema con el controlador de Windows, no puede desplazar por "
+"los documentos de ${PRODUCTNAME} al deslizar su dedo en un touchpad "
+"ALPS/Synaptics."
 
 #: readme.xrm#NASO6
 #, fuzzy
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr "Para poder desplazarse usando el touchpad, agregue las siguientes líneas al archivo de configuración \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\", y reinicie su computadora:"
+msgid "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr ""
+"Para poder desplazarse usando el touchpad, agregue las siguientes líneas al "
+"archivo de configuración \"<tt>C:\\Program "
+"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\", y reinicie su computadora:"
 
 #: readme.xrm#NASO8
 #, fuzzy
-msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr "La ubicación del archivo de configuración puede variar en diferentes versiones de Windows."
+msgid "The location of the configuration file might vary on different versions of Windows."
+msgstr ""
+"La ubicación del archivo de configuración puede variar en diferentes "
+"versiones de Windows."
+
+#: readme.xrm#SDFSD32ASRC
+msgid "Mozilla Address Book Driver"
+msgstr ""
 
 #: readme.xrm#SDCC32ASRC
 #, fuzzy
-msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr "El controlador de la libreta de direcciones de Mozilla necesita el paquete <tt>SUNWzlib</tt>. Este paquete no es parte de la instalación mínima del sistema operativo Solaris. Si necesita acceder a la libreta de direcciones de Mozilla, agregue este paquete a su sistema operativo Solaris, usando el comando \"<tt>pkgadd</tt>\" desde el CD de instalación."
+msgid "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
+msgstr ""
+"El controlador de la libreta de direcciones de Mozilla necesita el paquete "
+"<tt>SUNWzlib</tt>. Este paquete no es parte de la instalación mínima del "
+"sistema operativo Solaris. Si necesita acceder a la libreta de direcciones "
+"de Mozilla, agregue este paquete a su sistema operativo Solaris, usando el "
+"comando \"<tt>pkgadd</tt>\" desde el CD de instalación."
 
 #: readme.xrm#AWE1
 #, fuzzy
-msgid  "Shortcut Keys"
+msgid "Shortcut Keys"
 msgstr "Atajos de teclado"
 
 #: readme.xrm#W32E1
 #, fuzzy
-msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr "Sólo pueden usarse en ${PRODUCTNAME} los atajos de teclado (combinaciones de teclas) que no son utilizados por el sistema operativo. Si una combinación de teclas en ${PRODUCTNAME} no funciona como está descrito en la ayuda de ${PRODUCTNAME}, verifique si dicha combinación se encuentra en uso por el sistema operativo. Para corregir estos conflictos puede cambiar las combinaciones definidas por el sistema operativo. Si lo prefiere, puede cambiar la mayoría de las asignaciones en ${PRODUCTNAME}. Consulte la ayuda de ${PRODUCTNAME} o la documentación de su sistema operativo para obtener más información sobre este tema."
+msgid "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+"Sólo pueden usarse en ${PRODUCTNAME} los atajos de teclado (combinaciones de "
+"teclas) que no son utilizados por el sistema operativo. Si una combinación "
+"de teclas en ${PRODUCTNAME} no funciona como está descrito en la ayuda de "
+"${PRODUCTNAME}, verifique si dicha combinación se encuentra en uso por el "
+"sistema operativo. Para corregir estos conflictos puede cambiar las "
+"combinaciones definidas por el sistema operativo. Si lo prefiere, puede "
+"cambiar la mayoría de las asignaciones en ${PRODUCTNAME}. Consulte la ayuda "
+"de ${PRODUCTNAME} o la documentación de su sistema operativo para obtener "
+"más información sobre este tema."
 
 #: readme.xrm#MACKEYS1
 #, fuzzy
-msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr "La ayuda de la aplicación de ${PRODUCTNAME} puede usar combinaciones de atajos únicamente en teclados para PC."
+msgid "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+"La ayuda de la aplicación de ${PRODUCTNAME} puede usar combinaciones de "
+"atajos únicamente en teclados para PC."
 
 #: readme.xrm#GFH6W
 #, fuzzy
-msgid  "File Locking"
+msgid "File Locking"
 msgstr "Bloqueo de archivos"
 
 #: readme.xrm#PJI76W
 #, fuzzy
-msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
-msgstr "El bloqueo de archivos está habilitado de manera predeterminada en ${PRODUCTNAME}. En una red que utilice el protocolo de \"Sistema de archivos de red\" (NFS), el demonio de bloqueo para clientes NFS debe estar activo. Para desactivar el bloqueo de archivos edite el archivo de comandos <tt>soffice</tt> y cambie la línea \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" a \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". Si se desactiva el bloqueo de archivos, el acceso de escritura sobre un documento no se restringe únicamente al usuario que lo abrió primero."
+msgid "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
+msgstr ""
+"El bloqueo de archivos está habilitado de manera predeterminada en "
+"${PRODUCTNAME}. En una red que utilice el protocolo de \"Sistema de archivos "
+"de red\" (NFS), el demonio de bloqueo para clientes NFS debe estar activo. "
+"Para desactivar el bloqueo de archivos edite el archivo de comandos "
+"<tt>soffice</tt> y cambie la línea \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" "
+"a \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". Si se desactiva el bloqueo "
+"de archivos, el acceso de escritura sobre un documento no se restringe "
+"únicamente al usuario que lo abrió primero."
 
 #: readme.xrm#PJI76WSDF
 #, fuzzy
-msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr "Advertencia: La característica activada de bloqueo de archivos puede causar problemas con Solaris 2.5.1 y 2.7 si se utilizan en conjunto con la versión 2.0 del sistema NFS de Linux. Si su entorno de sistema tiene estos parámetros, recomendamos encarecidamente que evite utilizar la característica de bloqueo de archivos. En caso contrario, ${PRODUCTNAME} se colgará cuando intente abrir un archivo desde un directorio NFS montado desde una computadora con Linux."
+msgid "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"Advertencia: La característica activada de bloqueo de archivos puede causar "
+"problemas con Solaris 2.5.1 y 2.7 si se utilizan en conjunto con la versión "
+"2.0 del sistema NFS de Linux. Si su entorno de sistema tiene estos "
+"parámetros, recomendamos encarecidamente que evite utilizar la "
+"característica de bloqueo de archivos. En caso contrario, ${PRODUCTNAME} se "
+"colgará cuando intente abrir un archivo desde un directorio NFS montado "
+"desde una computadora con Linux."
 
 #: readme.xrm#GFH6W1
 #, fuzzy
-msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr "Problemas al enviar documentos por correo electrónico desde ${PRODUCTNAME}"
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgstr ""
+"Problemas al enviar documentos por correo electrónico desde ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
 #, fuzzy
-msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr "Al enviar un documento a través de 'Archivo - Enviar - Documento como correo electrónico' o 'Documento adjunto en formato PDF' podrían ocurrir algunos problemas (el programa se bloquea o se cuelga). Esto se debe al archivo de sistema de Windows \"Map\" (Interfaz de programación para aplicaciones de mensajería) que provoca problemas en algunas de sus versiones. Lamentablemente, el problema no puede simplificarse a un único número de versión. Para obtener más información, visite <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> y busque \"mapi dll\" en la base de conocimientos de Microsoft (Microsoft Knowledge Base)."
+msgid "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"Al enviar un documento a través de 'Archivo - Enviar - Documento como correo "
+"electrónico' o 'Documento adjunto en formato PDF' podrían ocurrir algunos "
+"problemas (el programa se bloquea o se cuelga). Esto se debe al archivo de "
+"sistema de Windows \"Map\" (Interfaz de programación para aplicaciones de "
+"mensajería) que provoca problemas en algunas de sus versiones. "
+"Lamentablemente, el problema no puede simplificarse a un único número de "
+"versión. Para obtener más información, visite <a "
+"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> y busque \"mapi "
+"dll\" en la base de conocimientos de Microsoft (Microsoft Knowledge Base)."
 
 #: readme.xrm#AW22
 #, fuzzy
-msgid  "Important Accessibility Notes"
+msgid "Important Accessibility Notes"
 msgstr "Notas importantes acerca de la accesibilidad"
 
 #: readme.xrm#ACCESS7
 #, fuzzy
-msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
-msgstr "Para obtener más información sobre las características de accesibilidad en ${PRODUCTNAME}, vea <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a> (en inglés)"
+msgid "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgstr ""
+"Para obtener más información sobre las características de accesibilidad en "
+"${PRODUCTNAME}, vea <a href=\"http://www.openoffice.org/access/\">http://www.o"
+"penoffice.org/access/</a> (en inglés)"
 
 #: readme.xrm#SUPPORT
-msgid  "User Support"
+msgid "User Support"
 msgstr "Asistencia al usuario"
 
 #: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
-msgstr "La página principal de asistencia <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> ofrece varias posibilidades de ayuda para ${PRODUCTNAME}. Su pregunta ya puede tener una respuesta - verifíquelo en el foro de la comunidad en <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> o busque en los archivos de la lista de correo 'users@openoffice.apache.org' en <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Otra alternativa es enviar sus preguntas a <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. Cómo suscribirse a la lista (para obtener una respuesta por correo electrónico) se explica en esta página: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgid "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr ""
+"La página principal de asistencia <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"ofrece varias posibilidades de ayuda para ${PRODUCTNAME}. Su pregunta ya "
+"puede tener una respuesta - verifíquelo en el foro de la comunidad en <a "
+"href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> o busque "
+"en los archivos de la lista de correo 'users@openoffice.apache.org' en <a "
+"href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Otra "
+"alternativa es enviar sus preguntas a <a "
+"href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. "
+"Cómo suscribirse a la lista (para obtener una respuesta por correo "
+"electrónico) se explica en esta página: <a "
+"href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 
 #: readme.xrm#FAQ
-msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
-msgstr "También verifique la sección de preguntas frecuentes (FAQ) en <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>"
+msgid "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
+msgstr ""
+"También verifique la sección de preguntas frecuentes (FAQ) en <a href=\"http:"
+"//wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wik"
+"i/Documentation/FAQ</a>"
 
 #: readme.xrm#REPORTBUGS
-msgid  "Reporting Bugs &amp; Issues"
+msgid "Reporting Bugs &amp; Issues"
 msgstr "Reportar errores &amp; problemas"
 
 #: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr "El sitio web de ${PRODUCTNAME} alberga <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, nuestro mecanismos para la notificación, seguimiento y resolución de errores y problemas. Alentamos a todos los usuarios a sentirse con derecho y bienvenidos a reportar problemas que puedan surgir en su plataforma particular. Reportar rápidamente los problemas es una de las contribuciones más importantes que la comunidad de usuarios puede hacer al desarrollo continuo y al mejoramiento de las aplicaciones."
+msgid "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
+"El sitio web de ${PRODUCTNAME} alberga <a "
+"href=\"https://issues.apache.org/ooo/\">BugZilla</a>, nuestro mecanismos para "
+"la notificación, seguimiento y resolución de errores y problemas. Alentamos "
+"a todos los usuarios a sentirse con derecho y bienvenidos a reportar "
+"problemas que puedan surgir en su plataforma particular. Reportar "
+"rápidamente los problemas es una de las contribuciones más importantes que "
+"la comunidad de usuarios puede hacer al desarrollo continuo y al "
+"mejoramiento de las aplicaciones."
 
 #: readme.xrm#GETTINGINVOLVED1
 #, fuzzy
-msgid  "Getting Involved"
+msgid "Getting Involved"
 msgstr "Involucrarse"
 
 #: readme.xrm#GETTINGINVOLVED2
 #, fuzzy
-msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr "La comunidad de ${PRODUCTNAME} se beneficiaría mucho con su participación activa en el desarrollo de este importante proyecto de código abierto."
+msgid "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
+msgstr ""
+"La comunidad de ${PRODUCTNAME} se beneficiaría mucho con su participación "
+"activa en el desarrollo de este importante proyecto de código abierto."
 
 #: readme.xrm#GETTINGIMVOLVED3
-msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "Como usuario, usted ya es una parte valiosa del proceso de desarrollo de estas aplicaciones y nos gustaría alentarlo a que tenga un rol aún más activo con miras a ser un contribuyente a largo plazo de la comunidad. Únase y visite la página de usuario en:<a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgid "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgstr ""
+"Como usuario, usted ya es una parte valiosa del proceso de desarrollo de "
+"estas aplicaciones y nos gustaría alentarlo a que tenga un rol aún más "
+"activo con miras a ser un contribuyente a largo plazo de la comunidad. Únase "
+"y visite la página de usuario en:<a href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a>"
 
 #: readme.xrm#HOWTOSTART
-msgid  "How to Start"
+msgid "How to Start"
 msgstr "Cómo comenzar"
 
 #: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr "La mejor forma de comenzar contribuyendo es suscribirse a una o más de las listas de correo, rondar por un tiempo y gradualmente usar los archivos de la lista para familiarizarse con los varios temas cubiertos desde que el código fuente de ${PRODUCTNAME} fue liberado allá por octubre del 2000. Cuando se sienta confortable, todo lo que necesita es enviar un correo electrónico para presentarse y entrar directamente en el tema."
+msgid "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
+"La mejor forma de comenzar contribuyendo es suscribirse a una o más de las "
+"listas de correo, rondar por un tiempo y gradualmente usar los archivos de "
+"la lista para familiarizarse con los varios temas cubiertos desde que el "
+"código fuente de ${PRODUCTNAME} fue liberado allá por octubre del 2000. "
+"Cuando se sienta confortable, todo lo que necesita es enviar un correo "
+"electrónico para presentarse y entrar directamente en el tema."
 
 #: readme.xrm#SUBSCRIBE
-msgid  "Subscribe"
+msgid "Subscribe"
 msgstr "Suscríbirse"
 
 #: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr "Aquí le presentamos algunas de las listas de correo de ${PRODUCTNAME} a las que puede suscribirse en <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a> (en inglés)"
+msgid "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+"Aquí le presentamos algunas de las listas de correo de ${PRODUCTNAME} a las "
+"que puede suscribirse en <a href=\"http://openoffice.apache.org/mailing-"
+"lists.html\">http://openoffice.apache.org/mailing-lists.html</a> (en inglés)"
 
 #: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr "Noticias: announce@openoffice.apache.org *recomendada para todos los usuarios* (escaso tráfico)"
+msgid "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+"Noticias: announce@openoffice.apache.org *recomendada para todos los "
+"usuarios* (escaso tráfico)"
 
 #: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr "Foro principal de usuarios: users@openoffice.apache.org *una forma fácil de observar discusiones* (tráfico abundante) "
+msgid "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+"Foro principal de usuarios: users@openoffice.apache.org *una forma fácil de "
+"observar discusiones* (tráfico abundante) "
 
 #: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr "Lista de discusión del desarrollo general del proyecto: dev@openoffice.apache.org (alto tráfico)"
+msgid "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+"Lista de discusión del desarrollo general del proyecto: "
+"dev@openoffice.apache.org (alto tráfico)"
 
 #: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
+msgid "Joining the Project"
 msgstr "Unirse al proyecto"
 
 #: readme.xrm#JOINING
-msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
-msgstr "Puedes hacer importantes contribuciones a este importante proyecto de código abierto, incluso si tienes poca experiencia en diseño o programación de aplicaciones. ¡Sí, tú!"
+msgid "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+"Puedes hacer importantes contribuciones a este importante proyecto de código "
+"abierto, incluso si tienes poca experiencia en diseño o programación de "
+"aplicaciones. ¡Sí, tú!"
 
 #: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr "En <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> encontrará una primera aproximación a los temas con los que puede comenzar, los cuales van desde la localización, control de calidad (QA) y soporte a usuarios hasta proyectos de código de base real. Si no es un desarrollador, puede ayudar en actividades de documentación o promoción, por ejemplo. La promoción de ${PRODUCTNAME} está aplicando técnicas comerciales tanto tradicionales como de guerrilla para promocionar el software de código abierto, y lo hacemos atravesando las barreras idiomáticas y culturales, por lo que puede ayudar con sólo difundir información sobre el proyecto y contándole a un amigo acerca de esta suite ofimática."
+msgid "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+"En <a href=\"http://openoffice.apache.org/get-"
+"involved.html\">http://openoffice.apache.org/get-involved.html</a> encontrará "
+"una primera aproximación a los temas con los que puede comenzar, los cuales "
+"van desde la localización, control de calidad (QA) y soporte a usuarios "
+"hasta proyectos de código de base real. Si no es un desarrollador, puede "
+"ayudar en actividades de documentación o promoción, por ejemplo. La "
+"promoción de ${PRODUCTNAME} está aplicando técnicas comerciales tanto "
+"tradicionales como de guerrilla para promocionar el software de código "
+"abierto, y lo hacemos atravesando las barreras idiomáticas y culturales, por "
+"lo que puede ayudar con sólo difundir información sobre el proyecto y "
+"contándole a un amigo acerca de esta suite ofimática."
 
 #: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr "Puede brindar su ayuda uniéndose a la lista de correo de marketing marketing@openoffice.apache.org donde podrá ofrecer comunicaciones con la prensa, los medios, agencias de gobierno, consultores, escuelas, grupos de usuarios Linux y desarrolladores en su país y comunidad local."
+msgid "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
+"Puede brindar su ayuda uniéndose a la lista de correo de marketing "
+"marketing@openoffice.apache.org donde podrá ofrecer comunicaciones con la "
+"prensa, los medios, agencias de gobierno, consultores, escuelas, grupos de "
+"usuarios Linux y desarrolladores en su país y comunidad local."
 
 #: readme.xrm#CREDITS
 #, fuzzy
-msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr "Esperamos que le guste trabajar con el nuevo ${PRODUCTNAME} ${PRODUCTVERSION} y se una a nosotros en linea."
+msgid "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+"Esperamos que le guste trabajar con el nuevo ${PRODUCTNAME} "
+"${PRODUCTVERSION} y se una a nosotros en linea."
 
 #: readme.xrm#CREDITS2
-msgid  "The Apache OpenOffice Community"
+msgid "The Apache OpenOffice Community"
 msgstr "La comunidad de Apache OpenOffice"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
-msgid  "Used / Modified Source Code"
+msgid "Used / Modified Source Code"
 msgstr "Código fuente usado / modificado"

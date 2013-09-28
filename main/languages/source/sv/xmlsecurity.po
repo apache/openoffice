@@ -1,323 +1,377 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-09-26 13:50+0000\n"
+"Last-Translator: Vicinity <stefan.hogberg@aol.com>\n"
 "Language-Team: \n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: genLang\n"
-
+"X-POOTLE-MTIME: 1380203434.0\n"
 
 #: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
-msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr "Funktionen för digitala signaturer kan inte användas eftersom det inte finns någon Mozilla-användarprofil. Kontrollera installationen av Mozilla."
+msgid "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr ""
+"Funktionen för digitala signaturer kan inte användas eftersom det inte finns "
+"någon Mozilla-användarprofil. Kontrollera installationen av Mozilla."
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
-msgid  "Select Certificate"
+msgid "Select Certificate"
 msgstr "Välj certifikat"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
-msgid  "Select the certificate you want to use for signing"
+msgid "Select the certificate you want to use for signing"
 msgstr "Välj det certifikat som du vill använda för signering"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid "Issued to\tIssued by\tExpiration date"
 msgstr "Utfärdat till\tUtfärdat av\tFörfallodag"
 
 #: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Visa certifikat…"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
-msgid  "View Certificate"
+msgid "View Certificate"
 msgstr "Visa certifikat"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
-msgid  "General"
+msgid "General"
 msgstr "Allmänt"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
-msgid  "Details"
+msgid "Details"
 msgstr "Detaljer"
 
 #: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
-msgid  "Certification Path"
+msgid "Certification Path"
 msgstr "Sökväg för certifikat"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
-msgid  " Certificate Information"
+msgid " Certificate Information"
 msgstr " Certifikatinformation"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
-msgid  "This certificate is intended for the following purpose(s):"
+msgid "This certificate is intended for the following purpose(s):"
 msgstr "Det här certifikatet används till följande:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
-msgid  "Issued to:"
+msgid "Issued to:"
 msgstr "Utfärdat till:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
-msgid  "Issued by:"
+msgid "Issued by:"
 msgstr "Utfärdat av:"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
-msgid  "Valid from %SDATE% to %EDATE%"
+msgid "Valid from %SDATE% to %EDATE%"
 msgstr "Giltigt från och med %SDATE% till och med %EDATE%"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
-msgid  "You have a private key that corresponds to this certificate."
+msgid "You have a private key that corresponds to this certificate."
 msgstr "Du har en privat nyckel som motsvarar det här certifikatet."
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
-#, fuzzy
-msgid  "The certificate could not be validated."
+msgid "The certificate could not be validated."
 msgstr "Certifikatet kunde inte valideras."
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
-msgid  "Field\tValue"
+msgid "Field\tValue"
 msgstr "Fält\tVärde"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
-msgid  "Version"
+msgid "Version"
 msgstr "Version"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
-msgid  "Serial Number"
+msgid "Serial Number"
 msgstr "Serienummer"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
-#, fuzzy
-msgid  "Signature Algorithm"
+msgid "Signature Algorithm"
 msgstr "Signaturalgoritm"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
-msgid  "Issuer"
+msgid "Issuer"
 msgstr "Utfärdare"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
-msgid  "Issuer Unique ID"
+msgid "Issuer Unique ID"
 msgstr "Utfärdarens unika ID"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
-msgid  "Valid From"
+msgid "Valid From"
 msgstr "Giltigt från och med"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
-msgid  "Valid to"
+msgid "Valid to"
 msgstr "Giltigt till och med"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
-msgid  "Subject"
+msgid "Subject"
 msgstr "Ämne"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
-msgid  "Subject Unique ID"
+msgid "Subject Unique ID"
 msgstr "Ärendets unika ID"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
-msgid  "Subject Algorithm"
+msgid "Subject Algorithm"
 msgstr "Ärendealgoritm"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
-msgid  "Public Key"
+msgid "Public Key"
 msgstr "Offentlig nyckel"
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.STRING.TEXT
+msgid "Signature Algorithm"
+msgstr "Signaturalgoritm"
+
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
-msgid  "Thumbprint SHA1"
+msgid "Thumbprint SHA1"
 msgstr "Stämpel SHA1"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
-msgid  "Thumbprint MD5"
+msgid "Thumbprint MD5"
 msgstr "Stämpel MD5"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
-msgid  "Certification path"
+msgid "Certification path"
 msgstr "Sökväg för certifikat"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Visa certifikat…"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
-msgid  "Certification status"
+msgid "Certification status"
 msgstr "Certifikatstatus"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
-msgid  "The certificate is OK."
+msgid "The certificate is OK."
 msgstr "Certifikatet är OK."
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.STRING.TEXT
+msgid "The certificate could not be validated."
+msgstr "Certifikatet kunde inte valideras."
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
-msgid  "Digital Signatures"
+msgid "Digital Signatures"
 msgstr "Digitala signaturer"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
-msgid  "The following have signed the document content:"
+msgid "The following have signed the document content:"
 msgstr "Följande har signerat dokumentets innehåll:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
-msgid  "The following have signed the document macro:"
+msgid "The following have signed the document macro:"
 msgstr "Följande har signerat dokumentets makro:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
-msgid  "The following have signed this package:"
+msgid "The following have signed this package:"
 msgstr "Följande har signerat det här paketet:"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
-msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgid "\tSigned by\tDigital ID issued by\tDate"
 msgstr "\tSignerat av\tDigitalt ID utfärdat av\tDatum"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
-msgid  "Valid signature"
+msgid "Valid signature"
 msgstr "Giltig signatur"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
-msgid  "Certificate could not be validated"
+msgid "Certificate could not be validated"
 msgstr "Certifikatet kunde inte valideras"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
-msgid  "The signatures in this document are invalid"
+msgid "The signatures in this document are invalid"
 msgstr "Signaturerna i det här dokument är ogiltiga"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
-msgid  "The signatures in this document are valid"
+msgid "The signatures in this document are valid"
 msgstr "Signaturerna i det här dokument är giltiga"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
-msgid  "Not all parts of the document are signed"
+msgid "Not all parts of the document are signed"
 msgstr "Vissa delar är dokumentet är osignerade"
 
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FIXEDTEXT.TEXT
+msgid "The signatures in this document are invalid"
+msgstr "Signaturerna i det här dokument är ogiltiga"
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
-msgid  "View Certificate..."
+msgid "View Certificate..."
 msgstr "Visa certifikat…"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
-msgid  "Sign Document..."
+msgid "Sign Document..."
 msgstr "Signera dokument..."
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
-msgid  "Remove"
+msgid "Remove"
 msgstr "Ta bort"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Stäng"
 
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
-msgstr "Detta dokument innehåller signaturer i ODF 1.1-format (OpenOffice.org 2.x). Dokumentsignering i %PRODUCTNAME %PRODUCTVERSION kräver ODF 1.2-format. Det går därför inte att lägga till eller ta bort dokumentet.\n\nSpara dokumentet i ODF 1.2-format och lägg till de önskade signaturerna på nytt."
+msgid "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"Detta dokument innehåller signaturer i ODF 1.1-format (OpenOffice.org 2.x). "
+"Dokumentsignering i %PRODUCTNAME %PRODUCTVERSION kräver ODF 1.2-format. Det "
+"går därför inte att lägga till eller ta bort dokumentet.\n"
+"\n"
+"Spara dokumentet i ODF 1.2-format och lägg till de önskade signaturerna på "
+"nytt."
 
 #: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "När du lägger till eller tar bort en makrosignatur tas alla dokumentsignaturer bort.\nVill du fortsätta?"
+msgid "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr ""
+"När du lägger till eller tar bort en makrosignatur tas alla "
+"dokumentsignaturer bort.\n"
+"Vill du fortsätta?"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
-msgid  "Macro Security"
+msgid "Macro Security"
 msgstr "Makrosäkerhet"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
-msgid  "Security Level"
+msgid "Security Level"
 msgstr "Säkerhetsnivå"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
-msgid  "Trusted Sources"
+msgid "Trusted Sources"
 msgstr "Betrodda källor"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
-msgid  "Reset"
+msgid "Reset"
 msgstr "Återställ"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "~Mycket hög.\nDet går bara att köra makron från betrodda källor. Alla andra makron inaktiveras, oavsett vem som har signerat dem."
+msgid "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
+"~Mycket hög.\n"
+"Det går bara att köra makron från betrodda källor. Alla andra makron "
+"inaktiveras, oavsett vem som har signerat dem."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "~Hög.\nDet går bara att köra signerade makron från betrodda källor. Osignerade makron inaktiveras."
+msgid "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
+"~Hög.\n"
+"Det går bara att köra signerade makron från betrodda källor. Osignerade "
+"makron inaktiveras."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~Medel.\nDu måste bekräfta innan du kan köra makron från icke-betrodda källor."
+msgid "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
+"~Medel.\n"
+"Du måste bekräfta innan du kan köra makron från icke-betrodda källor."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~Låg (rekommenderas inte).\nAlla makron körs utan bekräftelse. Använd bara den här inställningen om du är säker på att alla dokument som öppnas är säkra."
+msgid "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
+"~Låg (rekommenderas inte).\n"
+"Alla makron körs utan bekräftelse. Använd bara den här inställningen om du "
+"är säker på att alla dokument som öppnas är säkra."
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
-msgid  "Trusted certificates"
+msgid "Trusted certificates"
 msgstr "Betrodda certifikat"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid "Issued to\tIssued by\tExpiration date"
 msgstr "Utfärdat till\tUtfärdat av\tFörfallodag"
 
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
+
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
-msgid  "View..."
+msgid "View..."
 msgstr "Visa…"
 
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
+msgid "Remove"
+msgstr "Ta bort"
+
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
-msgid  "Trusted file locations"
+msgid "Trusted file locations"
 msgstr "Betrodda filsökvägar"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
-msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr "Dokumentmakron körs alltid om de har öppnats från någon av följande platser."
+msgid "Document macros are always executed if they have been opened from one of the following locations."
+msgstr ""
+"Dokumentmakron körs alltid om de har öppnats från någon av följande platser."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid "Add..."
+msgstr ""
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid "Remove"
+msgstr "Ta bort"
 
 #: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
-msgid  "This setting is protected by the Administrator"
+msgid "This setting is protected by the Administrator"
 msgstr "Den här inställningen skyddas av administratören"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
-msgid  "Security Warning"
+msgid "Security Warning"
 msgstr "Säkerhetsvarning"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
-msgid  "The document contains document macros signed by:"
+msgid "The document contains document macros signed by:"
 msgstr "Dokumentet innehåller dokumentmakron signerade av:"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
-msgid  "The document contains document macros."
+msgid "The document contains document macros."
 msgstr "Dokumentet innehåller dokumentmakron."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
-msgid  "View Signatures..."
+msgid "View Signatures..."
 msgstr "Visa signaturer..."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr "Makron kan innehålla virus. Att inaktivera makron för ett dokument är alltid säkert. Om du inaktiverar makron kan du förlora funktioner i dessa makron."
+msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+"Makron kan innehålla virus. Att inaktivera makron för ett dokument är alltid "
+"säkert. Om du inaktiverar makron kan du förlora funktionalitet som dessa "
+"makron tillför."
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
-msgid  "Always trust macros from this source"
+msgid "Always trust macros from this source"
 msgstr "Lita alltid på makron från denna källa"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
-msgid  "Enable Macros"
+msgid "Enable Macros"
 msgstr "Aktivera makron"
 
 #: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
-msgid  "Disable Macros"
+msgid "Disable Macros"
 msgstr "Inaktivera makron"

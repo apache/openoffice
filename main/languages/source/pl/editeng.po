@@ -1,1016 +1,1038 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_DESCRIPTION.STRING.TEXT
-msgid  "Image bullet in paragraph"
+msgid "Image bullet in paragraph"
 msgstr "Wypunktowanie obrazu w akapicie"
 
 #: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_NAME.STRING.TEXT
-msgid  "Image bullet"
+msgid "Image bullet"
 msgstr "Wypunktowanie obrazu"
 
 #: editeng/editeng.src#RID_EDITUNDO_DEL.STRING.TEXT
-msgid  "Delete"
+msgid "Delete"
 msgstr "Usuń"
 
 #: editeng/editeng.src#RID_EDITUNDO_MOVE.STRING.TEXT
-msgid  "Move"
+msgid "Move"
 msgstr "Przesuń"
 
 #: editeng/editeng.src#RID_EDITUNDO_INSERT.STRING.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "Wstaw"
 
 #: editeng/editeng.src#RID_EDITUNDO_REPLACE.STRING.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr "Zamień"
 
 #: editeng/editeng.src#RID_EDITUNDO_SETATTRIBS.STRING.TEXT
-msgid  "Apply attributes"
+msgid "Apply attributes"
 msgstr "Zastosuj atrybuty"
 
 #: editeng/editeng.src#RID_EDITUNDO_RESETATTRIBS.STRING.TEXT
-msgid  "Reset attributes"
+msgid "Reset attributes"
 msgstr "Zastąp atrybuty"
 
 #: editeng/editeng.src#RID_EDITUNDO_INDENT.STRING.TEXT
-msgid  "Indent"
+msgid "Indent"
 msgstr "Wcięcie"
 
 #: editeng/editeng.src#RID_EDITUNDO_SETSTYLE.STRING.TEXT
-msgid  "Apply Styles"
+msgid "Apply Styles"
 msgstr "Zastosuj style"
 
 #: editeng/editeng.src#RID_EDITUNDO_TRANSLITERATE.STRING.TEXT
-msgid  "Case/Characters"
+msgid "Case/Characters"
 msgstr "Wielkie i małe litery"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_SPELLING.MENUITEM.TEXT
-msgid  "~Spellcheck..."
+msgid "~Spellcheck..."
 msgstr "~Pisownia..."
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_INSERT.MENUITEM.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr "~Dodaj"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_IGNORE.MENUITEM.TEXT
-msgid  "Ignore All"
+msgid "Ignore All"
 msgstr "Ignoruj wszystko"
 
 #: editeng/editeng.src#RID_MENU_SPELL.MN_AUTOCORR.MENUITEM.TEXT
-msgid  "AutoCorrect"
+msgid "AutoCorrect"
 msgstr "Autokorekta"
 
 #: editeng/editeng.src#RID_STR_WORD.STRING.TEXT
-msgid  "Word is %x"
+msgid "Word is %x"
 msgstr "Wyraz jest %x"
 
 #: editeng/editeng.src#RID_STR_PARAGRAPH.STRING.TEXT
-msgid  "Paragraph is %x"
+msgid "Paragraph is %x"
 msgstr "Akapit jest %x"
 
 #: items/page.src#RID_SVXSTR_PAPERBIN.STRING.TEXT
-msgid  "Paper tray"
+msgid "Paper tray"
 msgstr "Zasobnik papieru"
 
 #: items/page.src#RID_SVXSTR_PAPERBIN_SETTINGS.STRING.TEXT
-msgid  "[From printer settings]"
+msgid "[From printer settings]"
 msgstr "[Z ustawień drukarki]"
 
 #: items/svxitems.src#RID_SVXITEMS_TRUE.STRING.TEXT
-msgid  "True"
+msgid "True"
 msgstr "Prawda"
 
 #: items/svxitems.src#RID_SVXITEMS_FALSE.STRING.TEXT
-msgid  "False"
+msgid "False"
 msgstr "Fałsz"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_NONE.STRING.TEXT
-msgid  "No break"
+msgid "No break"
 msgstr "Bez podziału"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BEFORE.STRING.TEXT
-msgid  "Break before new column"
+msgid "Break before new column"
 msgstr "Podział przed nową kolumną"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_AFTER.STRING.TEXT
-msgid  "Break after new column"
+msgid "Break after new column"
 msgstr "Podział po nowej kolumnie"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BOTH.STRING.TEXT
-msgid  "Break before and after new column"
+msgid "Break before and after new column"
 msgstr "Podział przed nową kolumną i po niej"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BEFORE.STRING.TEXT
-msgid  "Break before new page"
+msgid "Break before new page"
 msgstr "Podział przed nową stroną"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_AFTER.STRING.TEXT
-msgid  "Break after new page"
+msgid "Break after new page"
 msgstr "Podział po nowej stronie"
 
 #: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BOTH.STRING.TEXT
-msgid  "Break before and after new page"
+msgid "Break before and after new page"
 msgstr "Podział przed nową stroną i po niej"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_NONE.STRING.TEXT
-msgid  "No Shadow"
+msgid "No Shadow"
 msgstr "Bez cienia"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPLEFT.STRING.TEXT
-msgid  "Shadow top left"
+msgid "Shadow top left"
 msgstr "Cień w górze z lewej"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPRIGHT.STRING.TEXT
-msgid  "Shadow top right"
+msgid "Shadow top right"
 msgstr "Cień w górze z prawej"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMLEFT.STRING.TEXT
-msgid  "Shadow bottom left"
+msgid "Shadow bottom left"
 msgstr "Cień w dole z lewej"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMRIGHT.STRING.TEXT
-msgid  "Shadow bottom right"
+msgid "Shadow bottom right"
 msgstr "Cień w dole z prawej"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR.STRING.TEXT
-msgid  "Color "
+msgid "Color "
 msgstr "Kolor "
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BLACK.STRING.TEXT
-msgid  "Black"
+msgid "Black"
 msgstr "Czarny"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BLUE.STRING.TEXT
-msgid  "Blue"
+msgid "Blue"
 msgstr "Niebieski"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_GREEN.STRING.TEXT
-msgid  "Green"
+msgid "Green"
 msgstr "Zielony"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_CYAN.STRING.TEXT
-msgid  "Cyan"
+msgid "Cyan"
 msgstr "Seledynowy"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_RED.STRING.TEXT
-msgid  "Red"
+msgid "Red"
 msgstr "Czerwony"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_MAGENTA.STRING.TEXT
-msgid  "Magenta"
+msgid "Magenta"
 msgstr "Purpurowy"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_BROWN.STRING.TEXT
-msgid  "Brown"
+msgid "Brown"
 msgstr "Brązowy"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_GRAY.STRING.TEXT
-msgid  "Gray"
+msgid "Gray"
 msgstr "Szary"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGRAY.STRING.TEXT
-msgid  "Light Gray"
+msgid "Light Gray"
 msgstr "Jasnoszary"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTBLUE.STRING.TEXT
-msgid  "Light Blue"
+msgid "Light Blue"
 msgstr "Jasnoniebieski"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGREEN.STRING.TEXT
-msgid  "Light Green"
+msgid "Light Green"
 msgstr "Jasnozielony"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTCYAN.STRING.TEXT
-msgid  "Light Cyan"
+msgid "Light Cyan"
 msgstr "Jasnoseledynowy"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTRED.STRING.TEXT
-msgid  "Light Red"
+msgid "Light Red"
 msgstr "Jasnoczerwony"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTMAGENTA.STRING.TEXT
-msgid  "Light Magenta"
+msgid "Light Magenta"
 msgstr "Jasnopurpurowy"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_YELLOW.STRING.TEXT
-msgid  "Yellow"
+msgid "Yellow"
 msgstr "Żółty"
 
 #: items/svxitems.src#RID_SVXITEMS_COLOR_WHITE.STRING.TEXT
-msgid  "White"
+msgid "White"
 msgstr "Biały"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_NONE.STRING.TEXT
-msgid  "Not Italic"
+msgid "Not Italic"
 msgstr "Nie kursywa"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_OBLIQUE.STRING.TEXT
-msgid  "Oblique italic"
+msgid "Oblique italic"
 msgstr "Ukośna kursywa"
 
 #: items/svxitems.src#RID_SVXITEMS_ITALIC_NORMAL.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr "Kursywa"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_THIN.STRING.TEXT
-msgid  "thin"
+msgid "thin"
 msgstr "Cienka"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRALIGHT.STRING.TEXT
-msgid  "ultra thin"
+msgid "ultra thin"
 msgstr "Bardzo cienka"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_LIGHT.STRING.TEXT
-msgid  "light"
+msgid "light"
 msgstr "Lekka"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMILIGHT.STRING.TEXT
-msgid  "semi light"
+msgid "semi light"
 msgstr "Półlekka"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_NORMAL.STRING.TEXT
-msgid  "normal"
+msgid "normal"
 msgstr "Normalna"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_MEDIUM.STRING.TEXT
-msgid  "medium"
+msgid "medium"
 msgstr "Średnia"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMIBOLD.STRING.TEXT
-msgid  "semi bold"
+msgid "semi bold"
 msgstr "Półpogrubiona"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_BOLD.STRING.TEXT
-msgid  "bold"
+msgid "bold"
 msgstr "Pogrubiona"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRABOLD.STRING.TEXT
-msgid  "ultra bold"
+msgid "ultra bold"
 msgstr "Bardzo pogrubiona"
 
 #: items/svxitems.src#RID_SVXITEMS_WEIGHT_BLACK.STRING.TEXT
-msgid  "black"
+msgid "black"
 msgstr "Czarny"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_NONE.STRING.TEXT
-msgid  "No underline"
+msgid "No underline"
 msgstr "Bez podkreślenia"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_SINGLE.STRING.TEXT
-msgid  "Single underline"
+msgid "Single underline"
 msgstr "Pojedyncze podkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOUBLE.STRING.TEXT
-msgid  "Double underline"
+msgid "Double underline"
 msgstr "Podwójne podkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOTTED.STRING.TEXT
-msgid  "Dotted underline"
+msgid "Dotted underline"
 msgstr "Podkreślenie kropkowane"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DONTKNOW.STRING.TEXT
-msgid  "Underline"
+msgid "Underline"
 msgstr "Podkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASH.STRING.TEXT
-msgid  "Underline (dashes)"
+msgid "Underline (dashes)"
 msgstr "Podkreślenie (kreski)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_LONGDASH.STRING.TEXT
-msgid  "Underline (long dashes)"
+msgid "Underline (long dashes)"
 msgstr "Podkreślenie (długie kreski)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASHDOT.STRING.TEXT
-msgid  "Underline (dot dash)"
+msgid "Underline (dot dash)"
 msgstr "Podkreślenie (kropka-kreska)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DASHDOTDOT.STRING.TEXT
-msgid  "Underline (dot dot dash)"
+msgid "Underline (dot dot dash)"
 msgstr "Podkreślenie (kropka-kropka-kreska)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_SMALLWAVE.STRING.TEXT
-msgid  "Underline (small wave)"
+msgid "Underline (small wave)"
 msgstr "Podkreślenie (mała fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_WAVE.STRING.TEXT
-msgid  "Underline (Wave)"
+msgid "Underline (Wave)"
 msgstr "Podkreślenie (fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_DOUBLEWAVE.STRING.TEXT
-msgid  "Underline (Double wave)"
+msgid "Underline (Double wave)"
 msgstr "Podkreślenie (podwójna fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLD.STRING.TEXT
-msgid  "Underlined (Bold)"
+msgid "Underlined (Bold)"
 msgstr "Podkreślenie pogrubione"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDOTTED.STRING.TEXT
-msgid  "Dotted underline (Bold)"
+msgid "Dotted underline (Bold)"
 msgstr "Podkreślenie kropkowane pogrubione"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASH.STRING.TEXT
-msgid  "Underline (Dash bold)"
+msgid "Underline (Dash bold)"
 msgstr "Podkreślenie (pogrubione kreski)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDLONGDASH.STRING.TEXT
-msgid  "Underline (long dash, bold)"
+msgid "Underline (long dash, bold)"
 msgstr "Podkreślenie (pogrubiony długi łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOT.STRING.TEXT
-msgid  "Underline (dot dash, bold)"
+msgid "Underline (dot dash, bold)"
 msgstr "Podkreślenie (kropka-kreska, pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOTDOT.STRING.TEXT
-msgid  "Underline (dot dot dash, bold)"
+msgid "Underline (dot dot dash, bold)"
 msgstr "Podkreślenie (kropka-kropka-kreska, pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_UL_BOLDWAVE.STRING.TEXT
-msgid  "Underline (wave, bold)"
+msgid "Underline (wave, bold)"
 msgstr "Podkreślenie (pogrubiona fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_NONE.STRING.TEXT
-msgid  "No overline"
+msgid "No overline"
 msgstr "Brak nadkreślenia"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_SINGLE.STRING.TEXT
-msgid  "Single overline"
+msgid "Single overline"
 msgstr "Pojedyncze nadkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOUBLE.STRING.TEXT
-msgid  "Double overline"
+msgid "Double overline"
 msgstr "Podwójne nadkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOTTED.STRING.TEXT
-msgid  "Dotted overline"
+msgid "Dotted overline"
 msgstr "Nadkreślenie kropkowane"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DONTKNOW.STRING.TEXT
-msgid  "Overline"
+msgid "Overline"
 msgstr "Nadkreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASH.STRING.TEXT
-msgid  "Overline (dashes)"
+msgid "Overline (dashes)"
 msgstr "Nadkreślenie (łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_LONGDASH.STRING.TEXT
-msgid  "Overline (long dashes)"
+msgid "Overline (long dashes)"
 msgstr "Nadkreślenie (długi łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASHDOT.STRING.TEXT
-msgid  "Overline (dot dash)"
+msgid "Overline (dot dash)"
 msgstr "Nadkreślenie (kropka-łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DASHDOTDOT.STRING.TEXT
-msgid  "Overline (dot dot dash)"
+msgid "Overline (dot dot dash)"
 msgstr "Nadkreślenie (kropka-kropka-łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_SMALLWAVE.STRING.TEXT
-msgid  "Overline (small wave)"
+msgid "Overline (small wave)"
 msgstr "Nadkreślenie (mała fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_WAVE.STRING.TEXT
-msgid  "Overline (Wave)"
+msgid "Overline (Wave)"
 msgstr "Nadkreślenie (fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_DOUBLEWAVE.STRING.TEXT
-msgid  "Overline (Double wave)"
+msgid "Overline (Double wave)"
 msgstr "Nadkreślenie (podwójna fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLD.STRING.TEXT
-msgid  "Overlined (Bold)"
+msgid "Overlined (Bold)"
 msgstr "Nadkreślenie (pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDOTTED.STRING.TEXT
-msgid  "Dotted overline (Bold)"
+msgid "Dotted overline (Bold)"
 msgstr "Nadkreślenie kropkowane (pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASH.STRING.TEXT
-msgid  "Overline (Dash bold)"
+msgid "Overline (Dash bold)"
 msgstr "Nadkreślenie (pogrubiony łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDLONGDASH.STRING.TEXT
-msgid  "Overline (long dash, bold)"
+msgid "Overline (long dash, bold)"
 msgstr "Nadkreślenie (pogrubiony długi łącznik)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOT.STRING.TEXT
-msgid  "Overline (dot dash, bold)"
+msgid "Overline (dot dash, bold)"
 msgstr "Nadkreślenie (kropka-łącznik, pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOTDOT.STRING.TEXT
-msgid  "Overline (dot dot dash, bold)"
+msgid "Overline (dot dot dash, bold)"
 msgstr "Nadkreślenie (kropka-kropka-łącznik, pogrubienie)"
 
 #: items/svxitems.src#RID_SVXITEMS_OL_BOLDWAVE.STRING.TEXT
-msgid  "Overline (wave, bold)"
+msgid "Overline (wave, bold)"
 msgstr "Nadkreślenie (pogrubiona fala)"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_NONE.STRING.TEXT
-msgid  "No strikethrough"
+msgid "No strikethrough"
 msgstr "Nieprzekreślony"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SINGLE.STRING.TEXT
-msgid  "Single strikethrough"
+msgid "Single strikethrough"
 msgstr "Pojedyncze przekreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_DOUBLE.STRING.TEXT
-msgid  "Double strikethrough"
+msgid "Double strikethrough"
 msgstr "Podwójne przekreślenie"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_BOLD.STRING.TEXT
-msgid  "Bold strikethrough"
+msgid "Bold strikethrough"
 msgstr "Przekreślenie pogrubione"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SLASH.STRING.TEXT
-msgid  "Strike through with slash"
+msgid "Strike through with slash"
 msgstr "Przekreślenie znakiem /"
 
 #: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_X.STRING.TEXT
-msgid  "Strike through with Xes"
+msgid "Strike through with Xes"
 msgstr "Przekreślenie znakami X"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_NONE.STRING.TEXT
-msgid  "None"
+msgid "None"
 msgstr "Brak"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_VERSALIEN.STRING.TEXT
-msgid  "Caps"
+msgid "Caps"
 msgstr "Wielkie litery"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_GEMEINE.STRING.TEXT
-msgid  "Lowercase"
+msgid "Lowercase"
 msgstr "Małe litery"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_TITEL.STRING.TEXT
-msgid  "Title"
+msgid "Title"
 msgstr "Tytuł"
 
 #: items/svxitems.src#RID_SVXITEMS_CASEMAP_KAPITAELCHEN.STRING.TEXT
-msgid  "Small caps"
+msgid "Small caps"
 msgstr "Kapitaliki"
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_OFF.STRING.TEXT
-msgid  "Normal position"
+msgid "Normal position"
 msgstr "Normalna pozycja"
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUPER.STRING.TEXT
-msgid  "Superscript "
+msgid "Superscript "
 msgstr "Indeks górny "
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUB.STRING.TEXT
-msgid  "Subscript "
+msgid "Subscript "
 msgstr "Indeks dolny "
 
 #: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_AUTO.STRING.TEXT
-msgid  "automatic"
+msgid "automatic"
 msgstr "automatycznie"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_LEFT.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "Wyrównaj do lewej"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_RIGHT.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "Wyrównaj do prawej"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.STRING.TEXT
-msgid  "Justify"
+msgid "Justify"
 msgstr "Wyrównaj do lewej i prawej"
 
 #: items/svxitems.src#RID_SVXITEMS_ADJUST_CENTER.STRING.TEXT
-msgid  "Centered"
+msgid "Centered"
 msgstr "Do środka"
 
+#: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.STRING.TEXT
+msgid "Justify"
+msgstr "Wyrównaj do lewej i prawej"
+
 #: items/svxitems.src#RID_SVXITEMS_TAB_DECIMAL_CHAR.STRING.TEXT
-msgid  "Decimal Symbol:"
+msgid "Decimal Symbol:"
 msgstr "Znak dziesiętny:"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_FILL_CHAR.STRING.TEXT
-msgid  "Fill character:"
+msgid "Fill character:"
 msgstr "Znak wypełnienia:"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_LEFT.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr "Do lewej"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_RIGHT.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr "Do prawej"
 
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DECIMAL.STRING.TEXT
-msgid  "Decimal"
+msgid "Decimal"
 msgstr "Dziesiętne"
 
+#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.STRING.TEXT
+msgid "Centered"
+msgstr "Do środka"
+
 #: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DEFAULT.STRING.TEXT
-msgid  "Default"
+msgid "Default"
 msgstr "Domyślnie"
 
 #: items/svxitems.src#RID_SINGLE_LINE0.STRING.TEXT
-msgid  "Single, fine lines"
+msgid "Single, fine lines"
 msgstr "Pojedyncza, bardzo cienka linia"
 
 #: items/svxitems.src#RID_SINGLE_LINE1.STRING.TEXT
-msgid  "Single, thin"
+msgid "Single, thin"
 msgstr "Pojedyncza, cienka"
 
 #: items/svxitems.src#RID_SINGLE_LINE2.STRING.TEXT
-msgid  "Single, thick"
+msgid "Single, thick"
 msgstr "Pojedyncza, gruba"
 
 #: items/svxitems.src#RID_SINGLE_LINE3.STRING.TEXT
-msgid  "Single, very thick"
+msgid "Single, very thick"
 msgstr "Pojedyncza, bardzo gruba"
 
 #: items/svxitems.src#RID_SINGLE_LINE4.STRING.TEXT
-msgid  "Single, bold"
+msgid "Single, bold"
 msgstr "Pojedyncza, gruba"
 
 #: items/svxitems.src#RID_DOUBLE_LINE0.STRING.TEXT
-msgid  "Double, fine lines, spacing: small"
+msgid "Double, fine lines, spacing: small"
 msgstr "Podwójne, bardzo cienkie linie, odstęp: mały"
 
 #: items/svxitems.src#RID_DOUBLE_LINE1.STRING.TEXT
-msgid  "Double, fine line, spacing: large"
+msgid "Double, fine line, spacing: large"
 msgstr "Podwójna, bardzo cienka linia, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE2.STRING.TEXT
-msgid  "Double, thin, spacing: small"
+msgid "Double, thin, spacing: small"
 msgstr "Podwójna, cienka, odstęp: mały"
 
 #: items/svxitems.src#RID_DOUBLE_LINE3.STRING.TEXT
-msgid  "Double, thick, spacing: large"
+msgid "Double, thick, spacing: large"
 msgstr "Podwójna, gruba, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE4.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: thin, spacing: large"
-msgstr "Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: cienka, odstęp: duży"
+msgid "Double, inside: fine lines, outside: thin, spacing: large"
+msgstr ""
+"Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: cienka, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE5.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: thick, spacing: large"
-msgstr "Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: gruba, odstęp: duży"
+msgid "Double, inside: fine lines, outside: thick, spacing: large"
+msgstr ""
+"Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: gruba, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE6.STRING.TEXT
-msgid  "Double, inside: fine lines, outside: very thick, spacing: large"
-msgstr "Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: bardzo gruba, odstęp: duży"
+msgid "Double, inside: fine lines, outside: very thick, spacing: large"
+msgstr ""
+"Podwójna, wewnętrzna: bardzo cienkie linie, zewnętrzna: bardzo gruba, "
+"odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE7.STRING.TEXT
-msgid  "Double, inside: thin, outside: thick, spacing: large"
+msgid "Double, inside: thin, outside: thick, spacing: large"
 msgstr "Podwójna, wewnętrzna: cienka, zewnętrzna: gruba, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE8.STRING.TEXT
-msgid  "Double, inside: thick, outside: thin, spacing: small"
+msgid "Double, inside: thick, outside: thin, spacing: small"
 msgstr "Podwójna, wewnętrzna: gruba, zewnętrzna: cienka, odstęp: mały"
 
 #: items/svxitems.src#RID_DOUBLE_LINE9.STRING.TEXT
-msgid  "Double, inside: thick, outside: very thick, spacing: large"
+msgid "Double, inside: thick, outside: very thick, spacing: large"
 msgstr "Podwójna, wewnętrzna: gruba, zewnętrzna: bardzo gruba, odstęp: duży"
 
 #: items/svxitems.src#RID_DOUBLE_LINE10.STRING.TEXT
-msgid  "Double, inside: very thick, outside: thick, Spacing: large"
+msgid "Double, inside: very thick, outside: thick, Spacing: large"
 msgstr "Podwójna, wewnętrzna: bardzo gruba, zewnętrzna: gruba, odstęp: duży"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOWED_TRUE.STRING.TEXT
-msgid  "Shadowed"
+msgid "Shadowed"
 msgstr "Wycieniowany"
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOWED_FALSE.STRING.TEXT
-msgid  "Not Shadowed"
+msgid "Not Shadowed"
 msgstr "Niewycieniowany"
 
 #: items/svxitems.src#RID_SVXITEMS_BLINK_TRUE.STRING.TEXT
-msgid  "Blinking"
+msgid "Blinking"
 msgstr "Miganie"
 
 #: items/svxitems.src#RID_SVXITEMS_BLINK_FALSE.STRING.TEXT
-msgid  "Not Blinking"
+msgid "Not Blinking"
 msgstr "Bez migania"
 
 #: items/svxitems.src#RID_SVXITEMS_AUTOKERN_TRUE.STRING.TEXT
-msgid  "Pair Kerning"
+msgid "Pair Kerning"
 msgstr "Kerning par liter"
 
 #: items/svxitems.src#RID_SVXITEMS_AUTOKERN_FALSE.STRING.TEXT
-msgid  "No pair kerning"
+msgid "No pair kerning"
 msgstr "Bez kerningu"
 
 #: items/svxitems.src#RID_SVXITEMS_WORDLINE_TRUE.STRING.TEXT
-msgid  "Individual words"
+msgid "Individual words"
 msgstr "Poszczególne słowa"
 
 #: items/svxitems.src#RID_SVXITEMS_WORDLINE_FALSE.STRING.TEXT
-msgid  "Not Words Only"
+msgid "Not Words Only"
 msgstr "Nie tylko wyrazy"
 
 #: items/svxitems.src#RID_SVXITEMS_CONTOUR_TRUE.STRING.TEXT
-msgid  "Outline"
+msgid "Outline"
 msgstr "Konspekt"
 
 #: items/svxitems.src#RID_SVXITEMS_CONTOUR_FALSE.STRING.TEXT
-msgid  "No Outline"
+msgid "No Outline"
 msgstr "Bez konspektu"
 
 #: items/svxitems.src#RID_SVXITEMS_PRINT_TRUE.STRING.TEXT
-msgid  "Print"
+msgid "Print"
 msgstr "Drukuj"
 
 #: items/svxitems.src#RID_SVXITEMS_PRINT_FALSE.STRING.TEXT
-msgid  "Don't print"
+msgid "Don't print"
 msgstr "Nie drukuj"
 
 #: items/svxitems.src#RID_SVXITEMS_OPAQUE_TRUE.STRING.TEXT
-msgid  "Opaque"
+msgid "Opaque"
 msgstr "Nieprzezroczysty"
 
 #: items/svxitems.src#RID_SVXITEMS_OPAQUE_FALSE.STRING.TEXT
-msgid  "Not Opaque"
+msgid "Not Opaque"
 msgstr "Przezroczysty"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTKEEP_TRUE.STRING.TEXT
-msgid  "Keep with next paragraph"
+msgid "Keep with next paragraph"
 msgstr "Zachowuj razem z następnym akapitem"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTKEEP_FALSE.STRING.TEXT
-msgid  "Don't Keep Paragraphs Together"
+msgid "Don't Keep Paragraphs Together"
 msgstr "Nie utrzymuj akapitów razem"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_TRUE.STRING.TEXT
-msgid  "Split paragraph"
+msgid "Split paragraph"
 msgstr "Podziel akapit"
 
 #: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_FALSE.STRING.TEXT
-msgid  "Don't split paragraph"
+msgid "Don't split paragraph"
 msgstr "Nie dziel akapitu"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_TRUE.STRING.TEXT
-msgid  "Contents protected"
+msgid "Contents protected"
 msgstr "Zawartość chroniona"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_FALSE.STRING.TEXT
-msgid  "Contents not protected"
+msgid "Contents not protected"
 msgstr "Zawartość niechroniona"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_TRUE.STRING.TEXT
-msgid  "Size protected"
+msgid "Size protected"
 msgstr "Rozmiar chroniony"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_FALSE.STRING.TEXT
-msgid  "Size not protected"
+msgid "Size not protected"
 msgstr "Rozmiar niechroniony"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_POS_TRUE.STRING.TEXT
-msgid  "Position protected"
+msgid "Position protected"
 msgstr "Pozycja chroniona"
 
 #: items/svxitems.src#RID_SVXITEMS_PROT_POS_FALSE.STRING.TEXT
-msgid  "Position not protected"
+msgid "Position not protected"
 msgstr "Pozycja niechroniona"
 
 #: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_TRUE.STRING.TEXT
-msgid  "Transparent"
+msgid "Transparent"
 msgstr "Przezroczysty"
 
 #: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_FALSE.STRING.TEXT
-msgid  "Not Transparent"
+msgid "Not Transparent"
 msgstr "Nieprzezroczysty"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_TRUE.STRING.TEXT
-msgid  "Hyphenation"
+msgid "Hyphenation"
 msgstr "Dzielenie wyrazów"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_FALSE.STRING.TEXT
-msgid  "No hyphenation"
+msgid "No hyphenation"
 msgstr "Bez dzielenia wyrazów"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGE_END_TRUE.STRING.TEXT
-msgid  "Page End"
+msgid "Page End"
 msgstr "Koniec strony"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGE_END_FALSE.STRING.TEXT
-msgid  "No Page End"
+msgid "No Page End"
 msgstr "Brak końca strony"
 
 #: items/svxitems.src#RID_SVXITEMS_SIZE_WIDTH.STRING.TEXT
-msgid  "Width: "
+msgid "Width: "
 msgstr "Szerokość: "
 
 #: items/svxitems.src#RID_SVXITEMS_SIZE_HEIGHT.STRING.TEXT
-msgid  "Height: "
+msgid "Height: "
 msgstr "Wysokość: "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_LEFT.STRING.TEXT
-msgid  "Indent left "
+msgid "Indent left "
 msgstr "Wcięcie z lewej "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_FLINE.STRING.TEXT
-msgid  "First Line "
+msgid "First Line "
 msgstr "Pierwszy wiersz "
 
 #: items/svxitems.src#RID_SVXITEMS_LRSPACE_RIGHT.STRING.TEXT
-msgid  "Indent right "
+msgid "Indent right "
 msgstr "Wcięcie z prawej "
 
 #: items/svxitems.src#RID_SVXITEMS_SHADOW_COMPLETE.STRING.TEXT
-msgid  "Shadow: "
+msgid "Shadow: "
 msgstr "Cień: "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_COMPLETE.STRING.TEXT
-msgid  "Borders "
+msgid "Borders "
 msgstr "Krawędzie "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_NONE.STRING.TEXT
-msgid  "No border"
+msgid "No border"
 msgstr "Bez obramowania"
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_TOP.STRING.TEXT
-msgid  "top "
+msgid "top "
 msgstr "u góry "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_BOTTOM.STRING.TEXT
-msgid  "bottom "
+msgid "bottom "
 msgstr "u dołu "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_LEFT.STRING.TEXT
-msgid  "left "
+msgid "left "
 msgstr "z lewej "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_RIGHT.STRING.TEXT
-msgid  "right "
+msgid "right "
 msgstr "z prawej "
 
 #: items/svxitems.src#RID_SVXITEMS_BORDER_DISTANCE.STRING.TEXT
-msgid  "Spacing "
+msgid "Spacing "
 msgstr "Odstęp "
 
 #: items/svxitems.src#RID_SVXITEMS_ULSPACE_UPPER.STRING.TEXT
-msgid  "From top "
+msgid "From top "
 msgstr "Od góry "
 
 #: items/svxitems.src#RID_SVXITEMS_ULSPACE_LOWER.STRING.TEXT
-msgid  "From bottom "
+msgid "From bottom "
 msgstr "Od dołu "
 
 #: items/svxitems.src#RID_SVXITEMS_LINES.STRING.TEXT
-msgid  "%1 Lines"
+msgid "%1 Lines"
 msgstr "%1 wierszy"
 
 #: items/svxitems.src#RID_SVXITEMS_WIDOWS_COMPLETE.STRING.TEXT
-msgid  "Widow control"
+msgid "Widow control"
 msgstr "Kontrola sierot"
 
 #: items/svxitems.src#RID_SVXITEMS_ORPHANS_COMPLETE.STRING.TEXT
-msgid  "Orphan control"
+msgid "Orphan control"
 msgstr "Kontrola wdów"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINLEAD.STRING.TEXT
-msgid  "Characters at end of line"
+msgid "Characters at end of line"
 msgstr "Liczba znaków na końcu wiersza"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINTRAIL.STRING.TEXT
-msgid  "Characters at beginning of line"
+msgid "Characters at beginning of line"
 msgstr "Liczba znaków na początku wiersza"
 
 #: items/svxitems.src#RID_SVXITEMS_HYPHEN_MAX.STRING.TEXT
-msgid  "Hyphens"
+msgid "Hyphens"
 msgstr "Łączniki"
 
 #: items/svxitems.src#RID_SVXITEMS_PAGEMODEL_COMPLETE.STRING.TEXT
-msgid  "Page Style: "
+msgid "Page Style: "
 msgstr "Styl strony: "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_COMPLETE.STRING.TEXT
-msgid  "Kerning "
+msgid "Kerning "
 msgstr "Kerning "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_EXPANDED.STRING.TEXT
-msgid  "locked "
+msgid "locked "
 msgstr "szerokie "
 
 #: items/svxitems.src#RID_SVXITEMS_KERNING_CONDENSED.STRING.TEXT
-msgid  "Condensed "
+msgid "Condensed "
 msgstr "Ścieśnione "
 
 #: items/svxitems.src#RID_SVXITEMS_GRAPHIC.STRING.TEXT
-msgid  "Graphic"
+msgid "Graphic"
 msgstr "Obraz"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_NONE_STYLE.STRING.TEXT
-msgid  "none"
+msgid "none"
 msgstr "brak"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DOT_STYLE.STRING.TEXT
-msgid  "Dots "
+msgid "Dots "
 msgstr "Kropki "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_CIRCLE_STYLE.STRING.TEXT
-msgid  "Circle "
+msgid "Circle "
 msgstr "Koło "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DISC_STYLE.STRING.TEXT
-msgid  "Filled circle "
+msgid "Filled circle "
 msgstr "Koło wypełnione "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ACCENT_STYLE.STRING.TEXT
-msgid  "Accent "
+msgid "Accent "
 msgstr "Akcent "
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ABOVE_POS.STRING.TEXT
-msgid  "Above"
+msgid "Above"
 msgstr "Powyżej"
 
 #: items/svxitems.src#RID_SVXITEMS_EMPHASIS_BELOW_POS.STRING.TEXT
-msgid  "Below"
+msgid "Below"
 msgstr "Poniżej"
 
 #: items/svxitems.src#RID_SVXITEMS_TWOLINES_OFF.STRING.TEXT
-msgid  "Double-lined off"
+msgid "Double-lined off"
 msgstr "Podwójne wiersze wyłączone"
 
 #: items/svxitems.src#RID_SVXITEMS_TWOLINES.STRING.TEXT
-msgid  "Double-lined"
+msgid "Double-lined"
 msgstr "Podwójne wiersze"
 
 #: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.STRING.TEXT
-msgid  "No automatic character spacing"
+msgid "No automatic character spacing"
+msgstr "Bez automatycznych odstępów między znakami"
+
+#: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.STRING.TEXT
+msgid "No automatic character spacing"
 msgstr "Bez automatycznych odstępów między znakami"
 
 #: items/svxitems.src#RID_SVXITEMS_HNGPNCT_OFF.STRING.TEXT
-msgid  "No hanging punctuation at line end"
+msgid "No hanging punctuation at line end"
 msgstr "Na końcu wiersza nie ma pozostawionych znaków przestankowych"
 
 #: items/svxitems.src#RID_SVXITEMS_HNGPNCT_ON.STRING.TEXT
-msgid  "Hanging punctuation at line end"
+msgid "Hanging punctuation at line end"
 msgstr "Sieroty i wdowy na końcu wiersza"
 
 #: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_OFF.STRING.TEXT
-msgid  "Apply list of forbidden characters to beginning and end of lines"
+msgid "Apply list of forbidden characters to beginning and end of lines"
 msgstr "Uwzględnij listę znaków niedozwolonych na początku i na końcu wierszy"
 
 #: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_ON.STRING.TEXT
-msgid  "Don't apply list of forbidden characters to beginning and end of lines"
-msgstr "Nie uwzględniaj listy znaków niedozwolonych na początku i na końcu wierszy"
+msgid "Don't apply list of forbidden characters to beginning and end of lines"
+msgstr ""
+"Nie uwzględniaj listy znaków niedozwolonych na początku i na końcu wierszy"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE_OFF.STRING.TEXT
-msgid  "No rotated characters"
+msgid "No rotated characters"
 msgstr "Bez obróconych znaków"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE.STRING.TEXT
-msgid  "Character rotated by $(ARG1)°"
+msgid "Character rotated by $(ARG1)°"
 msgstr "Znaki obrócone o $(ARG1)°"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARROTATE_FITLINE.STRING.TEXT
-msgid  "Fit to line"
+msgid "Fit to line"
 msgstr "Dopasuj do wiersza"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARSCALE.STRING.TEXT
-msgid  "Characters scaled $(ARG1)%"
+msgid "Characters scaled $(ARG1)%"
 msgstr "Znaki skalowane do $(ARG1) %"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARSCALE_OFF.STRING.TEXT
-msgid  "No scaled characters"
+msgid "No scaled characters"
 msgstr "Bez skalowanych znaków"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_NONE.STRING.TEXT
-msgid  "No relief"
+msgid "No relief"
 msgstr "Bez uwypuklenia"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_EMBOSSED.STRING.TEXT
-msgid  "Relief"
+msgid "Relief"
 msgstr "Uwypuklenie"
 
 #: items/svxitems.src#RID_SVXITEMS_RELIEF_ENGRAVED.STRING.TEXT
-msgid  "Engraved"
+msgid "Engraved"
 msgstr "Grawerowane"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_AUTO.STRING.TEXT
-msgid  "Automatic text alignment"
+msgid "Automatic text alignment"
 msgstr "Automatyczne wyrównywanie tekstu"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BASELINE.STRING.TEXT
-msgid  "Text aligned to base line"
+msgid "Text aligned to base line"
 msgstr "Wyrównanie tekstu do linii podstawowej"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_TOP.STRING.TEXT
-msgid  "Text aligned top"
+msgid "Text aligned top"
 msgstr "Wyrównanie tekstu do góry"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_CENTER.STRING.TEXT
-msgid  "Text aligned middle"
+msgid "Text aligned middle"
 msgstr "Wyśrodkowanie tekstu"
 
 #: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BOTTOM.STRING.TEXT
-msgid  "Text aligned bottom"
+msgid "Text aligned bottom"
 msgstr "Wyrównanie tekstu do dołu"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_LEFT_TOP.STRING.TEXT
-msgid  "Text direction left-to-right (horizontal)"
+msgid "Text direction left-to-right (horizontal)"
 msgstr "Kierunek tekstu od lewej do prawej (poziomo)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_RIGHT_TOP.STRING.TEXT
-msgid  "Text direction right-to-left (horizontal)"
+msgid "Text direction right-to-left (horizontal)"
 msgstr "Kierunek tekstu od prawej do lewej (poziomo)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_RIGHT.STRING.TEXT
-msgid  "Text direction right-to-left (vertical)"
+msgid "Text direction right-to-left (vertical)"
 msgstr "Kierunek tekstu od prawej do lewej (pionowo)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_LEFT.STRING.TEXT
-msgid  "Text direction left-to-right (vertical)"
+msgid "Text direction left-to-right (vertical)"
 msgstr "Kierunek tekstu od lewej do prawej (pionowo)"
 
 #: items/svxitems.src#RID_SVXITEMS_FRMDIR_ENVIRONMENT.STRING.TEXT
-msgid  "Use superordinate object text direction setting"
+msgid "Use superordinate object text direction setting"
 msgstr "Użyj nadrzędnych ustawień kierunku tekstu obiektu"
 
 #: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_ON.STRING.TEXT
-msgid  "Paragraph snaps to text grid (if active)"
+msgid "Paragraph snaps to text grid (if active)"
 msgstr "Akapit jest przyciągany do siatki tekstu (jeśli aktywna)"
 
 #: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_OFF.STRING.TEXT
-msgid  "Paragraph does not snap to text grid"
+msgid "Paragraph does not snap to text grid"
 msgstr "Akapit nie jest przyciągany do siatki tekstu"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_FALSE.STRING.TEXT
-msgid  "Not hidden"
+msgid "Not hidden"
 msgstr "Nie jest ukryty"
 
 #: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_TRUE.STRING.TEXT
-msgid  "Hidden"
+msgid "Hidden"
 msgstr "Ukryty"
 
 #: misc/lingu.src#RID_SVXQB_CONTINUE.QUERYBOX.MESSAGE
-msgid  "Continue checking at beginning of document?"
+msgid "Continue checking at beginning of document?"
 msgstr "Czy kontynuować sprawdzanie od początku dokumentu?"
 
 #: misc/lingu.src#RID_SVXQB_BW_CONTINUE.QUERYBOX.MESSAGE
-msgid  "Continue checking at end of document?"
+msgid "Continue checking at end of document?"
 msgstr "Czy kontynuować sprawdzanie od końca dokumentu?"
 
 #: misc/lingu.src#RID_SVXSTR_HMERR_THESAURUS.STRING.TEXT
-msgid  "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n"
-msgstr "Dla wybranego języka nie jest dostępny żaden tezaurus. \nSprawdź instalację i zainstaluj potrzebny język\n"
+msgid "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n"
+msgstr ""
+"Dla wybranego języka nie jest dostępny żaden tezaurus. \n"
+"Sprawdź instalację i zainstaluj potrzebny język\n"
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_UNKNOWN.STRING.TEXT
-msgid  "Word cannot be added to dictionary\ndue to unknown reason."
-msgstr "Z nieznanej przyczyny\nwyrazu nie można dodać do słownika."
+msgid "Word cannot be added to dictionary\ndue to unknown reason."
+msgstr ""
+"Z nieznanej przyczyny\n"
+"wyrazu nie można dodać do słownika."
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_FULL.STRING.TEXT
-msgid  "The dictionary is already full."
+msgid "The dictionary is already full."
 msgstr "Słownik jest zapełniony."
 
 #: misc/lingu.src#RID_SVXSTR_DIC_ERR_READONLY.STRING.TEXT
-msgid  "The dictionary is read-only."
+msgid "The dictionary is read-only."
 msgstr "Słownik ma status tylko do odczytu."
 
 #: outliner/outliner.src#RID_OUTLUNDO_HEIGHT.STRING.TEXT
-msgid  "Move"
+msgid "Move"
 msgstr "Przesuń"
 
 #: outliner/outliner.src#RID_OUTLUNDO_DEPTH.STRING.TEXT
-msgid  "Indent"
+msgid "Indent"
 msgstr "Wcięcie"
 
 #: outliner/outliner.src#RID_OUTLUNDO_EXPAND.STRING.TEXT
-msgid  "Show subpoints"
+msgid "Show subpoints"
 msgstr "Pokaż podpunkty"
 
 #: outliner/outliner.src#RID_OUTLUNDO_COLLAPSE.STRING.TEXT
-msgid  "Collapse"
+msgid "Collapse"
 msgstr "Zwiń"
 
 #: outliner/outliner.src#RID_OUTLUNDO_ATTR.STRING.TEXT
-msgid  "Apply attributes"
+msgid "Apply attributes"
 msgstr "Zastosuj atrybuty"
 
 #: outliner/outliner.src#RID_OUTLUNDO_INSERT.STRING.TEXT
-msgid  "Insert"
+msgid "Insert"
 msgstr "Wstaw"

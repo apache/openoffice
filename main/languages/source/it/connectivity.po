@@ -1,791 +1,890 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
-msgid  "Mozilla/Seamonkey Addressbook Directory"
+msgid "Mozilla/Seamonkey Addressbook Directory"
 msgstr "Cartella della rubrica di Mozilla/Seamonkey"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
-msgid  "Thunderbird Addressbook Directory"
+msgid "Thunderbird Addressbook Directory"
 msgstr "Cartella della rubrica di Thunderbird"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook Express Addressbook"
+msgid "Outlook Express Addressbook"
 msgstr "Rubrica di Outlook Express"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook (MAPI) Addressbook"
+msgid "Outlook (MAPI) Addressbook"
 msgstr "Rubrica di Outlook (MAPI)"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
-msgid  "Creating tables is not supported for this kind of address books."
+msgid "Creating tables is not supported for this kind of address books."
 msgstr "La creazione di tabelle non è supportata con questo tipo di rubriche."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
-msgid  "Cannot create new address books while Mozilla is running."
+msgid "Cannot create new address books while Mozilla is running."
 msgstr "Impossibile creare nuove rubriche mentre Mozilla è in esecuzione."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
-msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr "Impossibile recuperare una voce della rubrica, si è verificato un errore sconosciuto."
+msgid "An address book entry could not be retrieved, an unknown error occurred."
+msgstr ""
+"Impossibile recuperare una voce della rubrica, si è verificato un errore "
+"sconosciuto."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
-msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr "Impossibile recuperare il nome della cartella della rubrica, si è verificato un errore sconosciuto."
+msgid "An address book directory name could not be retrieved, an unknown error occurred."
+msgstr ""
+"Impossibile recuperare il nome della cartella della rubrica, si è verificato "
+"un errore sconosciuto."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
-msgid  "Timed out while waiting for the result."
+msgid "Timed out while waiting for the result."
 msgstr "Tempo scaduto in attesa del risultato."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
-msgid  "An error occurred while executing the query."
+msgid "An error occurred while executing the query."
 msgstr "Si è verificato un errore durante l'esecuzione della ricerca."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
-msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr "Impossibile effettuare modifiche alla rubrica di Mozilla mentre Mozilla è in esecuzione."
+msgid "You can't make any changes to mozilla address book when mozilla is running."
+msgstr ""
+"Impossibile effettuare modifiche alla rubrica di Mozilla mentre Mozilla è in "
+"esecuzione."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
-msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr "La rubrica di Mozilla è stata modificata al di fuori di questo processo, impossibile modificarla in queste condizioni."
+msgid "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
+msgstr ""
+"La rubrica di Mozilla è stata modificata al di fuori di questo processo, "
+"impossibile modificarla in queste condizioni."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
-msgid  "Can't find the requested row."
+msgid "Can't find the requested row."
 msgstr "Impossibile trovare la riga richiesta."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
-msgid  "Can't find the card for the requested row."
+msgid "Can't find the card for the requested row."
 msgstr "Impossibile trovare la scheda per la riga richiesta."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It needs at least one table."
+msgid "The query can not be executed. It needs at least one table."
 msgstr "Impossibile eseguire la query. È necessaria almeno una tabella."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
-msgid  "The driver does not support the 'COUNT' function."
+msgid "The driver does not support the 'COUNT' function."
 msgstr "Il driver non supporta la funzione 'CONTA.NUMERI'."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
-msgid  "This statement type not supported by this database driver."
+msgid "This statement type not supported by this database driver."
 msgstr "Questo driver di database non supporta questo tipo di dichiarazione."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid  "An unknown error occured."
+msgid "An unknown error occured."
 msgstr "Si è verificato un errore sconosciuto."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
-msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr "Impossibile creare una nuova rubrica. Il codice errore di Mozilla è $1$."
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr ""
+"Impossibile creare una nuova rubrica. Il codice errore di Mozilla è $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
-msgid  "The library '$libname$' could not be loaded."
+msgid "The library '$libname$' could not be loaded."
 msgstr "La libreria $libname$ non può essere caricata."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid  "An error occured while refreshing the current row."
+msgid "An error occured while refreshing the current row."
 msgstr "Si è verificato un errore durante l'aggiornamento della riga corrente."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid  "An error occured while getting the current row."
+msgid "An error occured while getting the current row."
 msgstr "Si è verificato un errore durante il recupero della riga corrente."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
-msgid  "The row update can not be canceled."
+msgid "The row update can not be canceled."
 msgstr "Impossibile annullare l'aggiornamento della riga."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
-msgid  "A new row can not be created."
+msgid "A new row can not be created."
 msgstr "Impossibile creare una nuova riga."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr "Impossibile eseguire l'interrogazione. 'IS NULL' può essere utilizzato solo con un nome di colonna."
+msgid "The query can not be executed. The 'IS NULL' can only be used with a column name."
+msgstr ""
+"Impossibile eseguire l'interrogazione. 'IS NULL' può essere utilizzato solo "
+"con un nome di colonna."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid  "Illegal cursor movement occured."
+msgid "Illegal cursor movement occured."
 msgstr "Si è verificato un movimento del cursore non consentito."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
-msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr "Assegnate la riga '$position$' prima di aggiornare le righe o di inserirne di nuove."
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Assegnate la riga '$position$' prima di aggiornare le righe o di inserirne "
+"di nuove."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
-msgid  "The update call can not be executed. The row is invalid."
-msgstr "Impossibile eseguire la chiamata di aggiornamento. La riga non è valida."
+msgid "The update call can not be executed. The row is invalid."
+msgstr ""
+"Impossibile eseguire la chiamata di aggiornamento. La riga non è valida."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
-msgid  "The current row can not be saved."
+msgid "The current row can not be saved."
 msgstr "Impossibile salvare la riga attiva."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
-msgid  "No hostname was provided."
+msgid "No hostname was provided."
 msgstr "Non è stato fornito alcun nome host."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
-msgid  "No Base DN was provided."
+msgid "No Base DN was provided."
 msgstr "Non è stato fornito alcun DN di base."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
-msgid  "The connection to the LDAP server could not be established."
+msgid "The connection to the LDAP server could not be established."
 msgstr "Impossibile stabilire il collegamento con il server LDAP."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
-msgid  "It doesn't exist a connection to the database."
+msgid "It doesn't exist a connection to the database."
 msgstr "Non esiste una connessione al database."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "Avete tentato di impostare un parametro nella posizione '$pos$', ma sono consentiti solo '$count$' parametri. Un motivo può essere che la proprietà \"ParameterNameSubstitution\" non è impostata su VERO nel sorgente dati."
+msgid "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Avete tentato di impostare un parametro nella posizione '$pos$', ma sono "
+"consentiti solo '$count$' parametri. Un motivo può essere che la proprietà "
+"\"ParameterNameSubstitution\" non è impostata su VERO nel sorgente dati."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
-msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr "È stata raggiunta la fine di InputStream prima che la lunghezza specificata, impostata in InputStream, venisse soddisfatta."
+msgid "End of InputStream reached before satisfying length specified when InputStream was set."
+msgstr ""
+"È stata raggiunta la fine di InputStream prima che la lunghezza specificata, "
+"impostata in InputStream, venisse soddisfatta."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
-msgid  "The input stream was not set."
+msgid "The input stream was not set."
 msgstr "Il flusso di digitazione non era impostato."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
-msgid  "There is no element named '$name$'."
+msgid "There is no element named '$name$'."
 msgstr "Non esiste alcun elemento denominato '$name$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
-msgid  "Invalid bookmark value"
+msgid "Invalid bookmark value"
 msgstr "Valore di segnalibro non valido"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
-msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr "Privilegio non consentito: solo i privilegi di tabella possono essere consentiti."
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr ""
+"Privilegio non consentito: solo i privilegi di tabella possono essere "
+"consentiti."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
-msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr "Privilegio non revocato: solo i privilegi di tabella possono essere revocati."
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr ""
+"Privilegio non revocato: solo i privilegi di tabella possono essere "
+"revocati."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
-msgid  "The column name '$columnname$' is unknown."
+msgid "The column name '$columnname$' is unknown."
 msgstr "Il nome di colonna '$columnname$' è sconosciuto."
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
-msgid  "Function sequence error."
+msgid "Function sequence error."
 msgstr "Errore di sequenza della funzione."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid descriptor index."
+msgid "Invalid descriptor index."
 msgstr "Indice del descrittore non valido."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
-msgid  "The driver does not support the function '$functionname$'."
+msgid "The driver does not support the function '$functionname$'."
 msgstr "Il driver non supporta la funzione '$functionname$'."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
-msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr "Il driver non supporta la funzionalità per '$featurename$'. Essa non è implementata."
+msgid "The driver does not support the functionality for '$featurename$'. It is not implemented."
+msgstr ""
+"Il driver non supporta la funzionalità per '$featurename$'. Essa non è "
+"implementata."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
-msgid  "The formula for TypeInfoSettings is wrong!"
+msgid "The formula for TypeInfoSettings is wrong!"
 msgstr "La formula per TypeInfoSettings è errata."
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
-msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr "La stringa '$string$' supera la lunghezza massima di $maxlen$ caratteri durante la conversione nel set di caratteri di destinazione '$charset$'."
+msgid "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
+msgstr ""
+"La stringa '$string$' supera la lunghezza massima di $maxlen$ caratteri "
+"durante la conversione nel set di caratteri di destinazione '$charset$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
-msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "La stringa '$string$' non può essere convertita usando la codifica '$charset$'."
+msgid "The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr ""
+"La stringa '$string$' non può essere convertita usando la codifica "
+"'$charset$'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
-msgid  "The connection URL is invalid."
+msgid "The connection URL is invalid."
 msgstr "L'URL del collegamento non è valido."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. It is too complex."
+msgid "The query can not be executed. It is too complex."
 msgstr "Query troppo complessa. Impossibile eseguirla."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The operator is too complex."
+msgid "The query can not be executed. The operator is too complex."
 msgstr "Operatore troppo complesso. Impossibile eseguire la query."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr "La query non può essere eseguita. Non potete usare 'LIKE' con colonne di questo tipo."
+msgid "The query can not be executed. You cannot use 'LIKE' with columns of this type."
+msgstr ""
+"La query non può essere eseguita. Non potete usare 'LIKE' con colonne di "
+"questo tipo."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
-msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr "Impossibile eseguire la query. 'LIKE' può essere utilizzato solo con un argomento di stringa."
+msgid "The query can not be executed. 'LIKE' can be used with a string argument only."
+msgstr ""
+"Impossibile eseguire la query. 'LIKE' può essere utilizzato solo con un "
+"argomento di stringa."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr "Impossibile eseguire la query. La condizione 'NOT LIKE' è troppo complessa."
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr ""
+"Impossibile eseguire la query. La condizione 'NOT LIKE' è troppo complessa."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr "Impossibile eseguire la query. La condizione 'LIKE' contiene caratteri jolly nel mezzo."
+msgid "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
+msgstr ""
+"Impossibile eseguire la query. La condizione 'LIKE' contiene caratteri jolly "
+"nel mezzo."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr "Impossibile eseguire la query. La condizione 'LIKE' contiene troppi caratteri jolly."
+msgid "The query can not be executed. The 'LIKE' condition contains too many wildcards."
+msgstr ""
+"Impossibile eseguire la query. La condizione 'LIKE' contiene troppi "
+"caratteri jolly."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
-msgid  "The column name '$columnname$' is not valid."
+msgid "The column name '$columnname$' is not valid."
 msgstr "Il nome di colonna '$columnname$' non è valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
-msgid  "The statement contains an invalid selection of columns."
+msgid "The statement contains an invalid selection of columns."
 msgstr "La dichiarazione contiene una selezione di colonne non valida."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
-msgid  "The column at position '$position$' could not be updated."
-msgstr "Non è stato possibile aggiornare la colonna alla posizione '$position$'."
+msgid "The column at position '$position$' could not be updated."
+msgstr ""
+"Non è stato possibile aggiornare la colonna alla posizione '$position$'."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be loaded."
+msgid "The file $filename$ could not be loaded."
 msgstr "Il file $filename$ non può essere caricato."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr "Il tentativo di caricare il file ha prodotto il seguente messaggio di errore ($exception_type$):\n\n$error_message$"
+msgid "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
+msgstr ""
+"Il tentativo di caricare il file ha prodotto il seguente messaggio di errore "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
-msgid  "The type could not be converted."
+msgid "The type could not be converted."
 msgstr "Impossibile convertire il tipo."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not append column: invalid column descriptor."
+msgid "Could not append column: invalid column descriptor."
 msgstr "Impossibile concatenare la colonna: descrittore colonna non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create group: invalid object descriptor."
+msgid "Could not create group: invalid object descriptor."
 msgstr "Impossibile creare il gruppo: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create index: invalid object descriptor."
+msgid "Could not create index: invalid object descriptor."
 msgstr "Impossibile creare l'indice: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create key: invalid object descriptor."
+msgid "Could not create key: invalid object descriptor."
 msgstr "Impossibile creare la chiave: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create table: invalid object descriptor."
+msgid "Could not create table: invalid object descriptor."
 msgstr "Impossibile creare la tabella: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create user: invalid object descriptor."
+msgid "Could not create user: invalid object descriptor."
 msgstr "Impossibile creare l'utente: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create view: invalid object descriptor."
+msgid "Could not create view: invalid object descriptor."
 msgstr "Impossibile creare la vista: descrittore oggetto non valido."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
-msgid  "Could not create view: no command object."
+msgid "Could not create view: no command object."
 msgstr "Impossibile creare la vista: nessun oggetto di comando."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
-msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr "Impossibile stabilire una connessione. Il provider dei dati potrebbe non essere installato."
+msgid "The connection could not be created. May be the necessary data provider is not installed."
+msgstr ""
+"Impossibile stabilire una connessione. Il provider dei dati potrebbe non "
+"essere installato."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "Impossibile eliminare l'indice. Si è verificato un errore durante l'accesso al file system."
+msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgstr ""
+"Impossibile eliminare l'indice. Si è verificato un errore durante l'accesso "
+"al file system."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
-msgid  "The index could not be created. Only one column per index is allowed."
+msgid "The index could not be created. Only one column per index is allowed."
 msgstr "Impossibile creare l'indice. È consentita solo una colonna per indice."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
-msgid  "The index could not be created. The values are not unique."
+msgid "The index could not be created. The values are not unique."
 msgstr "Impossibile creare l'indice. I valori non sono univoci."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
-msgid  "The index could not be created. An unknown error appeared."
+msgid "The index could not be created. An unknown error appeared."
 msgstr "Impossibile creare l'indice. Si è verificato un errore sconosciuto."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
-msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr "Impossibile creare l'indice. Il file '$filename$' è utilizzato da un altro indice."
+msgid "The index could not be created. The file '$filename$' is used by an other index."
+msgstr ""
+"Impossibile creare l'indice. Il file '$filename$' è utilizzato da un altro "
+"indice."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
 #, fuzzy
-msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr "Impossibile creare l'indice. La dimensione della colonna scelta è troppo grande"
+msgid "The index could not be created. The size of the chosen column is too big."
+msgstr ""
+"Impossibile creare l'indice. La dimensione della colonna scelta è troppo "
+"grande"
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "The name '$name$' doesn't match SQL naming constraints."
+msgid "The name '$name$' doesn't match SQL naming constraints."
 msgstr "Il nome '$name$' non corrisponde alle limitazioni di nome di SQL."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 #, fuzzy
-msgid  "The file $filename$ could not be deleted."
+msgid "The file $filename$ could not be deleted."
 msgstr "Il file $filename$ non può essere eliminato."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Invalid column type for column '$columnname$'."
+msgid "Invalid column type for column '$columnname$'."
 msgstr "La colonna '$columnname$' è un tipo di colonna non valido."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
 #, fuzzy
-msgid  "Invalid precision for column '$columnname$'."
+msgid "Invalid precision for column '$columnname$'."
 msgstr "Precisione non valida per la colonna '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Precision is less than scale for column '$columnname$'."
+msgid "Precision is less than scale for column '$columnname$'."
 msgstr "Precisione minore della scala per la colonna '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Invalid column name length for column '$columnname$'."
+msgid "Invalid column name length for column '$columnname$'."
 msgstr "Lunghezza nome colonna non valida per la colonna '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Duplicate value found in column '$columnname$'."
+msgid "Duplicate value found in column '$columnname$'."
 msgstr "Trovato valore duplicato nella colonna '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr "La colonna '$columnname$' è stata definita di tipo \"decimale\", la lunghezza massima è di $precision$ caratteri (con $scale$ cifre decimali).\n\nIl valore specificato \"$value$ è più lungo del numero di cifre consentito."
+msgid "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"La colonna '$columnname$' è stata definita di tipo \"decimale\", la lunghezza "
+"massima è di $precision$ caratteri (con $scale$ cifre decimali).\n"
+"\n"
+"Il valore specificato \"$value$ è più lungo del numero di cifre consentito."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr "Impossibile modificare la colonna '$columnname$'. Il file system potrebbe essere protetto da scrittura."
+msgid "The column '$columnname$' could not be altered. May be the file system is write protected."
+msgstr ""
+"Impossibile modificare la colonna '$columnname$'. Il file system potrebbe "
+"essere protetto da scrittura."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr "Impossibile aggiornare la colonna '$columnname$'. Valore non valido per la colonna."
+msgid "The column '$columnname$' could not be updated. The value is invalid for that column."
+msgstr ""
+"Impossibile aggiornare la colonna '$columnname$'. Valore non valido per la "
+"colonna."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 #, fuzzy
-msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr "Impossibile aggiungere la colonna '$columnname$'. Il file system potrebbe essere protetto da scrittura."
+msgid "The column '$columnname$' could not be added. May be the file system is write protected."
+msgstr ""
+"Impossibile aggiungere la colonna '$columnname$'. Il file system potrebbe "
+"essere protetto da scrittura."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 #, fuzzy
-msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr "Impossibile rilasciare la colonna nella posizione '$position$'. Il file system potrebbe essere protetto da scrittura."
+msgid "The column at position '$position$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Impossibile rilasciare la colonna nella posizione '$position$'. Il file "
+"system potrebbe essere protetto da scrittura."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
 #, fuzzy
-msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr "Impossibile rilasciare la tabella '$tablename$'. Il file system potrebbe essere protetto da scrittura."
+msgid "The table '$tablename$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Impossibile rilasciare la tabella '$tablename$'. Il file system potrebbe "
+"essere protetto da scrittura."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "The table could not be altered."
+msgid "The table could not be altered."
 msgstr "Impossibile alterare la tabella."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 #, fuzzy
-msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "Il file '$filename$' è un file dBase non valido o non conosciuto."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 #, fuzzy
-msgid  "Cannot open Evolution address book."
+msgid "Cannot open Evolution address book."
 msgstr "Impossibile aprire la rubrica di Evolution."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "Can only sort by table columns."
+msgid "Can only sort by table columns."
 msgstr "Potete eseguire l'ordinamento solo per le colonne della tabella."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr "La query è troppo complessa per essere eseguita. È supportato solo \"CONTA.NUMERI(*)\"."
+msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr ""
+"La query è troppo complessa per essere eseguita. È supportato solo "
+"\"CONTA.NUMERI(*)\"."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr "Impossibile eseguire la query. Gli argomenti 'BETWEEN' non sono corretti."
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgstr ""
+"Impossibile eseguire la query. Gli argomenti 'BETWEEN' non sono corretti."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. The function is not supported."
+msgid "The query can not be executed. The function is not supported."
 msgstr "Impossibile eseguire la query. La funzione non è supportata."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "The table can not be changed. It is read only."
+msgid "The table can not be changed. It is read only."
 msgstr "La tabella è di sola lettura. Impossibile modificarla."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
 #, fuzzy
-msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr "Impossibile eliminare la riga. È attiva l'opzione \"Mostra record non attivi\"."
+msgid "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Impossibile eliminare la riga. È attiva l'opzione \"Mostra record non "
+"attivi\"."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 #, fuzzy
-msgid  "The row could not be deleted. It is already deleted."
+msgid "The row could not be deleted. It is already deleted."
 msgstr "Impossibile eliminare la riga. È stata già eliminata."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains more than one table."
+msgid "The query can not be executed. It contains more than one table."
 msgstr "Impossibile eseguire la query. È presente più di una tabella."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains no valid table."
+msgid "The query can not be executed. It contains no valid table."
 msgstr "Impossibile eseguire la query. Non contiene alcuna tabella valida."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "The query can not be executed. It contains no valid columns."
+msgid "The query can not be executed. It contains no valid columns."
 msgstr "Impossibile eseguire la query. Non contiene colonne valide."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 #, fuzzy
-msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr "Il conteggio dei valori del parametro dato non corrisponde ai parametri."
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr ""
+"Il conteggio dei valori del parametro dato non corrisponde ai parametri."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 #, fuzzy
-msgid  "The URL '$URL$' is not valid. A connection can not be created."
+msgid "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "L'URL '$URL$' non è valido. Impossibile creare una connessione."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
 #, fuzzy
-msgid  "The driver class '$classname$' could not be loaded."
+msgid "The driver class '$classname$' could not be loaded."
 msgstr "Impossibile caricare la classe del driver '$classname$'."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 #, fuzzy
-msgid  "No Java installation could be found. Please check your installation."
-msgstr "Impossibile trovare un'installazione Java. Verificate la vostra installazione."
+msgid "No Java installation could be found. Please check your installation."
+msgstr ""
+"Impossibile trovare un'installazione Java. Verificate la vostra "
+"installazione."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 #, fuzzy
-msgid  "The execution of the query doesn't return a valid result set."
+msgid "The execution of the query doesn't return a valid result set."
 msgstr "L'esecuzione della query non restituisce alcun risultato valido."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 #, fuzzy
-msgid  "The execution of the update statement doesn't effect any rows."
-msgstr "L'esecuzione dell'istruzione di aggiornamento non influenza alcuna riga."
+msgid "The execution of the update statement doesn't effect any rows."
+msgstr ""
+"L'esecuzione dell'istruzione di aggiornamento non influenza alcuna riga."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 #, fuzzy
-msgid  "The additional driver class path is '$classpath$'."
+msgid "The additional driver class path is '$classpath$'."
 msgstr "Il percorso della classe aggiuntiva del driver è '$classpath$'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "The type of parameter at position '$position$' is unknown."
+msgid "The type of parameter at position '$position$' is unknown."
 msgstr "Il tipo di parametro nella posizione '$position$' è sconosciuto."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "The type of column at position '$position$' is unknown."
+msgid "The type of column at position '$position$' is unknown."
 msgstr "Il tipo di colonna nella posizione '$position$' è sconosciuto."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 #, fuzzy
-msgid  "No suitable KDE installation was found."
+msgid "No suitable KDE installation was found."
 msgstr "Non è stata trovata alcuna installazione di KDE adatta."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 #, fuzzy
-msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr "Per accedere alla rubrica di KDE è richiesta la versione $major$.$minor$ o maggiore di KDE."
+msgid "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
+msgstr ""
+"Per accedere alla rubrica di KDE è richiesta la versione $major$.$minor$ o "
+"maggiore di KDE."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 #, fuzzy
-msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr "La versione di KDE trovata è troppo recente. Solo KDE fino alla versione $major$.$minor$ è in grado di funzionare con questo prodotto.\n"
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
+msgstr "La versione di KDE trovata è troppo recente. Solo KDE fino alla versione "
+"$major$.$minor$ è in grado di funzionare con questo prodotto.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 #, fuzzy
-msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr "Se siete sicuri che la vostra versione di KDE funziona, potete eseguire la macro Basic seguente per disattivare questo controllo di versione:\n\n"
+msgid "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
+msgstr ""
+"Se siete sicuri che la vostra versione di KDE funziona, potete eseguire la "
+"macro Basic seguente per disattivare questo controllo di versione:\n"
+"\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 #, fuzzy
-msgid  "Parameters can appear only in prepared statements."
+msgid "Parameters can appear only in prepared statements."
 msgstr "I parametri possono apparire solo in istruzioni predisposte."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "No such table!"
+msgid "No such table!"
 msgstr "Nessuna tabella di questo tipo."
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "No suitable Mac OS installation was found."
+msgid "No suitable Mac OS installation was found."
 msgstr "Non è stata trovata alcuna installazione di Mac OS adatta."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 #, fuzzy
-msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr "Impossibile creare il file di database '$filename$'. Verificate lo spazio sul vostro disco."
+msgid "The database file '$filename$' could not be created. Please check your disk space."
+msgstr ""
+"Impossibile creare il file di database '$filename$'. Verificate lo spazio "
+"sul vostro disco."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr "Il database '$databasename$' non può essere avviato poiché non è stato possibile eseguire il comando '$progname$'."
+msgid "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
+msgstr ""
+"Il database '$databasename$' non può essere avviato poiché non è stato "
+"possibile eseguire il comando '$progname$'."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 #, fuzzy
-msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr "Il database corrente deve essere convertito. Inserite l'utente di controllo e la password."
+msgid "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+"Il database corrente deve essere convertito. Inserite l'utente di controllo "
+"e la password."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr "Impossibile eliminare l'utente. Il database si troverebbe in uno stato inconsistente."
+msgid "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
+msgstr ""
+"Impossibile eliminare l'utente. Il database si troverebbe in uno stato "
+"inconsistente."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 #, fuzzy
-msgid  "The connection can not be established. No storage or URL was given."
-msgstr "Impossibile stabilire il collegamento. Non è stato indicato alcun dispositivo di memorizzazione o URL."
+msgid "The connection can not be established. No storage or URL was given."
+msgstr ""
+"Impossibile stabilire il collegamento. Non è stato indicato alcun "
+"dispositivo di memorizzazione o URL."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 #, fuzzy
-msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr "L'URL indicato non contiene un percorso al file system locale valido. Verificate la posizione del vostro file di database."
+msgid "The given URL contains no valid local file system path. Please check the location of your database file."
+msgstr ""
+"L'URL indicato non contiene un percorso al file system locale valido. "
+"Verificate la posizione del vostro file di database."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 #, fuzzy
-msgid  "An error occured while obtaining the connection's table container."
-msgstr "Si è verificato un errore durante l'acquisizione del contenitore della tabella di connessione."
+msgid "An error occured while obtaining the connection's table container."
+msgstr ""
+"Si è verificato un errore durante l'acquisizione del contenitore della "
+"tabella di connessione."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 #, fuzzy
-msgid  "An error occured while creating the table editor dialog."
-msgstr "Si è verificato un errore durante la creazione della finestra di modifica della tabella."
+msgid "An error occured while creating the table editor dialog."
+msgstr ""
+"Si è verificato un errore durante la creazione della finestra di modifica "
+"della tabella."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
-msgid  "There is no table named '$tablename$'."
+msgid "There is no table named '$tablename$'."
 msgstr "Non esiste alcuna tabella denominata '$tablename$'."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 #, fuzzy
-msgid  "The provided DocumentUI is not allowed to be NULL."
+msgid "The provided DocumentUI is not allowed to be NULL."
 msgstr "Al DocumentUI fornito non è consentito essere NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 #, fuzzy
-msgid  "The record operation has been vetoed."
+msgid "The record operation has been vetoed."
 msgstr "L'operazione di registrazione è stata vietata."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 #, fuzzy
-msgid  "The statement contains a cyclic reference to one or more sub queries."
+msgid "The statement contains a cyclic reference to one or more sub queries."
 msgstr "La frase contiene un riferimento ciclico a una o più sotto ricerche."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 #, fuzzy
-msgid  "The name must not contain any slashes ('/')."
+msgid "The name must not contain any slashes ('/')."
 msgstr "Il nome non può contenere barre ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 #, fuzzy
-msgid  "$1$ is no SQL conform identifier."
+msgid "$1$ is no SQL conform identifier."
 msgstr "$1$ non è un identificatore SQL conforme."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 #, fuzzy
-msgid  "Query names must not contain quote characters."
+msgid "Query names must not contain quote characters."
 msgstr "I nomi nella ricerca non devono contenere virgolette."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 #, fuzzy
-msgid  "The name '$1$' is already in use in the database."
+msgid "The name '$1$' is already in use in the database."
 msgstr "Il nome '$1$' è già in uso nel database."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 #, fuzzy
-msgid  "No connection to the database exists."
+msgid "No connection to the database exists."
 msgstr "Non esiste la connessione al database."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
 #, fuzzy
-msgid  "No $1$ exists."
+msgid "No $1$ exists."
 msgstr "$1$ non esiste."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 #, fuzzy
-msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr "Impossibile visualizzare completamente il contenuto della tabella. Applicate un filtro."
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr ""
+"Impossibile visualizzare completamente il contenuto della tabella. Applicate "
+"un filtro."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Adabas D"
+msgid "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (JDBC)"
+msgid "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (ODBC)"
+msgid "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "MySQL (Native)"
+msgid "MySQL (Native)"
 msgstr "MySQL (Nativo)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Outlook Address Book"
+msgid "Microsoft Outlook Address Book"
 msgstr "Rubrica di Microsoft Outlook"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Windows Address Book"
+msgid "Microsoft Windows Address Book"
 msgstr "Rubrica di Microsoft Windows"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr "Rubrica di SeaMonkey"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Rubrica di Thunderbird"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Rubrica LDAP"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr "Rubrica di SeaMonkey"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Rubrica di Thunderbird"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Rubrica LDAP"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "HSQL database engine"
+msgid "HSQL database engine"
 msgstr "Motore del database HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Mac OS X Address Book"
+msgid "Mac OS X Address Book"
 msgstr "Rubrica di Mac OS X"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "ODBC"
+msgid "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "KDE Address Book"
+msgid "KDE Address Book"
 msgstr "Rubrica di KDE"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Testo"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Foglio elettronico"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "JDBC"
+msgid "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Oracle JDBC"
+msgid "Oracle JDBC"
 msgstr "JDBC Oracle"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "dBASE"
+msgid "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution Local"
+msgid "Evolution Local"
 msgstr "Evolution locale"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "ADO"
+msgid "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Access"
+msgid "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
-msgid  "Microsoft Access 2007"
+msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

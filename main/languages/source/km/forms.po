@@ -1,204 +1,287 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: km\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
-msgid  "The contents of a combo box or list field could not be determined."
-msgstr "មិន​​​​​អាច​​​​​កំណត់​ ​មាតិកា​​​​របស់​​​​ប្រអប់បន្សំ​​ ឬ​វាល​​បញ្ជី​​​​​បាន​​ទេ​​ ។​"
+msgid "The contents of a combo box or list field could not be determined."
+msgstr ""
+"មិន​​​​​អាច​​​​​កំណត់​ ​មាតិកា​​​​របស់​​​​ប្រអប់បន្សំ​​ "
+"ឬ​វាល​​បញ្ជី​​​​​បាន​​ទេ​​ ។​"
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
+msgid "Insert graphics"
 msgstr "បញ្ចូល​​ក្រាហ្វិក"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
-msgid  "substituted"
+msgid "substituted"
 msgstr "បាន​ជំនួស​"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
-msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr "កំហុស​​មួយ​​បាន​​កើត​ឡើង​​ ខណៈ​​ពេល​​វត្ថុ​​បញ្ជា​នេះ​​កំពុង​​ត្រូវ​​បាន​ផ្ទុក ​។ ដូច្នេះ​​វា​​ត្រូវ​​បាន​​ជំនួស​​ដោយ​​កន្លែង​ដាក់​ ។"
+msgid "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+"កំហុស​​មួយ​​បាន​​កើត​ឡើង​​ "
+"ខណៈ​​ពេល​​វត្ថុ​​បញ្ជា​នេះ​​កំពុង​​ត្រូវ​​បាន​ផ្ទុក ​។ "
+"ដូច្នេះ​​វា​​ត្រូវ​​បាន​​ជំនួស​​ដោយ​​កន្លែង​ដាក់​ ។"
+
+#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
+msgid "Error reading data from database"
+msgstr ""
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
-msgid  "Connection failed"
+msgid "Connection failed"
 msgstr "ការ​​តភ្ជាប់​បាន​​បរា​ជ័យ"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
-msgid  "The data content could not be loaded."
+msgid "The data content could not be loaded."
 msgstr "មិន​​​អាច​​​ផ្ទុក​​​មាតិកា​​​ទិន្ន​​ន័យ​ ។"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
-msgid  "The data content could not be updated"
+msgid "The data content could not be updated"
 msgstr "មិន​​​អាច​​​ធ្វើ​​​​បច្ចុប្បន្នភាព​មាតិកា​​​ទិន្ន​ន័យ​"
 
+#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
+msgid "Error inserting the new record"
+msgstr ""
+
+#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
+msgid "Error updating the current record"
+msgstr ""
+
+#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
+msgid "Error deleting the current record"
+msgstr ""
+
+#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
+msgid "Error deleting the specified records"
+msgstr ""
+
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
-msgid  "The object cannot be NULL."
+msgid "The object cannot be NULL."
 msgstr "វត្ថុ​​​មិន​​អាច​ជា​​ NULL ។"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
-msgid  "Insert graphics from..."
+msgid "Insert graphics from..."
 msgstr "បញ្ចូល​​ក្រាហ្វិក​​​ពី..."
 
+#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
+msgid "Remove graphics"
+msgstr ""
+
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
-msgid  "The given stream is invalid."
+msgid "The given stream is invalid."
 msgstr "លំហូរ​ទិន្នន័យ​ដែល​បាន​ផ្តល់​ មិន​ត្រឹមត្រូវ ។"
 
+#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
+msgid "Syntax error in query expression"
+msgstr ""
+
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
-msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr "មិន​អាច​​ប្រើ​ប្រ​ភេទ​តម្លៃ​ដែល​បាន​គាំទ្រ​ដោយ​ការ​ចង​  សម្រាប់​​​ផ្លាស់ប្តូរ​ទិន្នន័យ​​ជា​មួយ​វ​ត្ថុ​​បញ្ជា​​នេះ​ទេ​ ។"
+msgid "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+"មិន​អាច​​ប្រើ​ប្រ​ភេទ​តម្លៃ​ដែល​បាន​គាំទ្រ​ដោយ​ការ​ចង​  "
+"សម្រាប់​​​ផ្លាស់ប្តូរ​ទិន្នន័យ​​ជា​មួយ​វ​ត្ថុ​​បញ្ជា​​នេះ​ទេ​ ។"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
-msgid  "Record"
+msgid "Record"
 msgstr "កំណត់​​ត្រា"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
-msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr "វត្ថុបញ្ជា​ត្រូវ​បាន​តភ្ជាប់​ទៅ​ការ​ចង​តម្លៃ​ខាងក្រៅ ដែល​ក្នុង​ពេល​ជាមួយ​គ្នា ដើរ​តួជា​អ្នក​ផ្ទៀងផ្ទាត់ ។ អ្នក​ចាំបាច់​ត្រូវ​ដកហូត​ការ​ចង​តម្លៃ​វិញ មុនពេល​អ្នក​អាច​កំណត់​អ្នក​ផ្ទៀង​ផ្ទាត់​ថ្មី​មួយ ។"
+msgid "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+"វត្ថុបញ្ជា​ត្រូវ​បាន​តភ្ជាប់​ទៅ​ការ​ចង​តម្លៃ​ខាងក្រៅ "
+"ដែល​ក្នុង​ពេល​ជាមួយ​គ្នា ដើរ​តួជា​អ្នក​ផ្ទៀងផ្ទាត់ ។ "
+"អ្នក​ចាំបាច់​ត្រូវ​ដកហូត​ការ​ចង​តម្លៃ​វិញ "
+"មុនពេល​អ្នក​អាច​កំណត់​អ្នក​ផ្ទៀង​ផ្ទាត់​ថ្មី​មួយ ។"
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
-msgid  "of"
+msgid "of"
 msgstr "នៃ​"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "មាតិកា​របស់​សំណុំ​បែបបទ​បច្ចុប្បន្ន​ត្រូវ​បានកែប្រែ ។\nតើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ឬទេ ?"
+msgid "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+"មាតិកា​របស់​សំណុំ​បែបបទ​បច្ចុប្បន្ន​ត្រូវ​បានកែប្រែ ។\n"
+"តើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ឬទេ ?"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
-msgid  "Error setting the sort criteria"
+msgid "Error setting the sort criteria"
 msgstr "កំហុស​ក្នុង​ការ​កំណត់​លក្ខខណ្ឌ​តម្រៀប"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
-msgid  "Error setting the filter criteria"
+msgid "Error setting the filter criteria"
 msgstr "កំហុស​ក្នុង​ការ​កំណត់​លក្ខខណ្ឌ​តម្រង"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
-msgid  "To execute this function, parameters are needed."
+msgid "To execute this function, parameters are needed."
 msgstr "ដើម្បី​ប្រតិបត្តិ​អនុគមន៍​​នេះ ត្រូវការ​ប៉ារ៉ាម៉ែត្រ"
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
-msgid  "This function cannot be executed, but is only for status queries."
-msgstr "អនុគមន៍​​នេះ​មិន​អាច​ត្រូវបាន​ប្រតិបត្តិ ប៉ុន្តែ​សម្រាប់​តែ​ស្ថានភាប​សំណួរ ។"
+msgid "This function cannot be executed, but is only for status queries."
+msgstr ""
+"អនុគមន៍​​នេះ​មិន​អាច​ត្រូវបាន​ប្រតិបត្តិ ប៉ុន្តែ​សម្រាប់​តែ​ស្ថានភាប​សំណួរ ។"
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
-msgid  "Unknown function."
+msgid "Unknown function."
 msgstr "មិន​ស្គាល់​អនុគមន៍ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
-msgid  "Please enter a binding expression."
+msgid "Please enter a binding expression."
 msgstr "សូម​បញ្ចូល​កន្សោម​ចង​មួយ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
-msgid  "This is an invalid binding expression."
+msgid "This is an invalid binding expression."
 msgstr "នេះ​គឺ​ជា​កន្សោម​ចង​មិន​ត្រឹម​ត្រូវ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
-msgid  "Value is invalid."
+msgid "Value is invalid."
 msgstr "តម្លៃ​មិន​ត្រឹមត្រូវ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
-msgid  "A value is required."
+msgid "A value is required."
 msgstr "ទាមទារ​តម្លៃ​មួយ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
-msgid  "The constraint '$1' not validated."
+msgid "The constraint '$1' not validated."
 msgstr "បង្ខំ '$1' មិន​​បាន​ផ្ទៀង​ផ្ទាត់ឡើយ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
-msgid  "The value is not of the type '$2'."
+msgid "The value is not of the type '$2'."
 msgstr "តម្លៃ​មិន​មែន​ជា​ប្រភេទ '$2' ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
-msgid  "The value must be smaller than or equal to $2."
+msgid "The value must be smaller than or equal to $2."
 msgstr "តម្លៃ​ត្រូវ​តែ​តូច​ជាង ឬ​ស្មើ​នឹង $2 ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
-msgid  "The value must be smaller than $2."
+msgid "The value must be smaller than $2."
 msgstr "តម្លៃ​ត្រូវ​តែ​តូច​ជាង $2 ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
-msgid  "The value must be greater than or equal to $2."
+msgid "The value must be greater than or equal to $2."
 msgstr "តម្លៃ​ត្រូវ​តែ​ធំជាង​ ឬ​ស្មើ​នឹង $2 ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
-msgid  "The value must be greater than $2."
+msgid "The value must be greater than $2."
 msgstr "តម្លៃ​ត្រូវ​តែ​ធំ​ជាង $2 ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
-msgid  "The value does not match the pattern '$2'."
+msgid "The value does not match the pattern '$2'."
 msgstr "តម្លៃ​មិន​ដូច​​លំនាំ '$2' ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
-msgid  "$2 digits allowed at most."
+msgid "$2 digits allowed at most."
 msgstr "អនុញ្ញាត​បាន​ច្រើន​បំផុត $2 តួ​លេខ"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
-msgid  "$2 fraction digits allowed at most."
+msgid "$2 fraction digits allowed at most."
 msgstr "អនុញ្ញាត​បាន​ច្រើន​បំផុត​ $2 តួ​លេខ​ប្រភាគ "
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
-msgid  "The string must be $2 characters long."
+msgid "The string must be $2 characters long."
 msgstr "ខ្សែ​អក្សរ​ត្រូវ​តែ​ប្រវែង​ $2 តួ​អក្សរ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
-msgid  "The string must be at least $2 characters long."
+msgid "The string must be at least $2 characters long."
 msgstr "ខ្សែ​អក្សរ​ត្រូវ​តែ​យ៉ាង​ហោច​ណាស់​ប្រវែង​ $2 តួ​អក្សរ ។"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
-msgid  "The string can only be $2 characters long at most."
+msgid "The string can only be $2 characters long at most."
 msgstr "ខ្សែ​អក្សរ​អាច​មាន​ប្រវែង​តួអក្សរ​ច្រើន​បំផុត $2 ។"
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
-msgid  "String"
+msgid "String"
 msgstr "ខ្សែ​អក្សរ"
 
+#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
+msgid "Hyperlink"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
+msgid "True/False (Boolean)"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
+msgid "Decimal"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
+msgid "Floating point"
+msgstr ""
+
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
-msgid  "Double"
+msgid "Double"
 msgstr "ទ្វេ"
 
+#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
+msgid "Date"
+msgstr ""
+
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
-msgid  "Time"
+msgid "Time"
 msgstr "ពេល​វេលា​"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
-msgid  "Date and Time"
+msgid "Date and Time"
 msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
-msgid  "Month and year"
+msgid "Month and year"
 msgstr "ខែ និង​ឆ្នាំ"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
-msgid  "Year"
+msgid "Year"
 msgstr "ឆ្នាំ"
 
+#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
+msgid "Month and day"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
+msgid "Month"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
+msgid "Day"
+msgstr ""
+
+#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
+msgid "Error during evaluation"
+msgstr ""
+
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
-msgid  "The string '$1' does not match the required regular expression '$2'."
+msgid "The string '$1' does not match the required regular expression '$2'."
 msgstr "ខ្សែ​អក្សរ '$1' មិន​ផ្គូផ្គង​នឹង​កន្សោម​ធម្មតា '$2' ដែល​ទាមទារ ។"
+
+#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
+msgid "Binding"
+msgstr ""

@@ -1,832 +1,971 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: alreadyopen.src#STR_ALREADYOPEN_MSG.STRING.TEXT
 #, fuzzy
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr "فایل سند '$(ARG1)' به دلیل ویرایش توسط شما روی یک سیستم دیگر از $(ARG2) قفل است\n\nسند را در حالت فقط-خواندن باز کنید, یا از قفل فایل چشم‌پوشی کرده و سند را برای ویرایش باز کنید.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr ""
+"فایل سند '$(ARG1)' به دلیل ویرایش توسط شما روی یک سیستم دیگر از $(ARG2) قفل "
+"است\n"
+"\n"
+"سند را در حالت فقط-خواندن باز کنید, یا از قفل فایل چشم‌پوشی کرده و سند را "
+"برای ویرایش باز کنید.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Open ~Read-Only"
+msgid "Open ~Read-Only"
 msgstr "باز کردن در حالت ~فقط-خواندن"
 
 #: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "~باز‌ کردن"
 
 #: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.STRING.TEXT
 #, fuzzy
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr "فایل سند '$(ARG1)' به دلیل ویرایش توسط شما روی یک سیستم دیگر از $(ARG2) قفل است\n\nسند را روی سیستم دیگر ببندید و برای ذخیره کردن دوباره سعی کنید یا از قفل فایل چشم‌پوشی کرده و سند حاضر را ذخیره کنید.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr ""
+"فایل سند '$(ARG1)' به دلیل ویرایش توسط شما روی یک سیستم دیگر از $(ARG2) قفل "
+"است\n"
+"\n"
+"سند را روی سیستم دیگر ببندید و برای ذخیره کردن دوباره سعی کنید یا از قفل "
+"فایل چشم‌پوشی کرده و سند حاضر را ذخیره کنید.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Retry Saving"
-msgstr "~تلاش مجدد برای ذخیره‌ کردن"
+msgid "~Retry Saving"
+msgstr "~سعی دوباره برای ذخیره"
 
 #: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "~ذخیره"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Send"
+msgid "~Send"
 msgstr "ار~سال"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I~gnore"
+msgid "I~gnore"
 msgstr "~نادیده گرفتن"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "I~nteractive"
+msgid "I~nteractive"
 msgstr "ت~عاملی"
 
 #: cookiedg.src#DLG_COOKIES.GB_INFUTURE.GROUPBOX.TEXT
 #, fuzzy
-msgid  "Future Cookie Handling"
+msgid "Future Cookie Handling"
 msgstr "اداره‌ کردن کوکی‌های آینده"
 
 #: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "~نادیده گرفتن"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Send"
+msgstr "ار~سال"
 
 #: cookiedg.src#STR_COOKIES_RECV_START.STRING.TEXT
 #, fuzzy
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "سرور '${HOST}' قصد دارد یک یا چند کوکی ذخیره کند.\nکوکی‌ها حاوی اطلاعاتی هستند که به کلاس‌های URL خاصی اشاره می‌کنند. اگر %PRODUCTNAME بعداً یک سند متعلق به یک کلاس کوکی ذخیره شده را درخواست کند, %PRODUCTNAME این اطلاعات را به سرور ارسال می‌کند. این عمل به سرور امکان می‌دهد وضعیت یک برنامه تحت وب, مثلا خرید آنلاین, را تشخیص دهد.\n\nکوکی‌های ذیل باید ذخیره شوند:\n\n"
+msgid "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+"سرور '${HOST}' قصد دارد یک یا چند کوکی ذخیره کند.\n"
+"کوکی‌ها حاوی اطلاعاتی هستند که به کلاس‌های URL خاصی اشاره می‌کنند. اگر %"
+"PRODUCTNAME بعداً یک سند متعلق به یک کلاس کوکی ذخیره شده را درخواست کند, %"
+"PRODUCTNAME این اطلاعات را به سرور ارسال می‌کند. این عمل به سرور امکان "
+"می‌دهد وضعیت یک برنامه تحت وب, مثلا خرید آنلاین, را تشخیص دهد.\n"
+"\n"
+"کوکی‌های ذیل باید ذخیره شوند:\n"
+"\n"
 
 #: cookiedg.src#STR_COOKIES_RECV_COOKIES.STRING.TEXT
 #, fuzzy
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "دامنه: ${DOMAIN}, مسیر: ${PATH}, کوکی: ${COOKIE}.\n"
 
 #: cookiedg.src#STR_COOKIES_RECV_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Cookie Reception"
+msgid "Cookie Reception"
 msgstr "دریافت کوکی"
 
 #: cookiedg.src#STR_COOKIES_SEND_START.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME کوکی‌هایی را برای سرور '${HOST}' ذخیره کرده است که در زمان درخواست سند ${PATH} ارسال خواهد شد.\nسرور '${HOST}' قصد دارد یک یا چند کوکی ذخیره کند.\nکوکی‌ها حاوی اطلاعاتی هستند که به کلاس‌های URL خاصی اشاره می‌کنند. اگر %PRODUCTNAME بعداً یک سند متعلق به یک کلاس کوکی ذخیره شده را درخواست کند, %PRODUCTNAME این اطلاعات را به سرور ارسال می‌کند. این عمل به سرور امکان می‌دهد وضعیت یک برنامه تحت وب, مثلا خرید آنلاین, را تشخیص دهد.\n\nکوکی‌های ذیل باید ذخیره شوند:\n\n"
+msgid "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+"%PRODUCTNAME کوکی‌هایی را برای سرور '${HOST}' ذخیره کرده است که در زمان "
+"درخواست سند ${PATH} ارسال خواهد شد.\n"
+"سرور '${HOST}' قصد دارد یک یا چند کوکی ذخیره کند.\n"
+"کوکی‌ها حاوی اطلاعاتی هستند که به کلاس‌های URL خاصی اشاره می‌کنند. اگر %"
+"PRODUCTNAME بعداً یک سند متعلق به یک کلاس کوکی ذخیره شده را درخواست کند, %"
+"PRODUCTNAME این اطلاعات را به سرور ارسال می‌کند. این عمل به سرور امکان "
+"می‌دهد وضعیت یک برنامه تحت وب, مثلا خرید آنلاین, را تشخیص دهد.\n"
+"\n"
+"کوکی‌های ذیل باید ذخیره شوند:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_COOKIES.STRING.TEXT
+#, fuzzy
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "دامنه: ${DOMAIN}, مسیر: ${PATH}, کوکی: ${COOKIE}.\n"
 
 #: cookiedg.src#STR_COOKIES_SEND_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Send Cookies"
+msgid "Send Cookies"
 msgstr "ارسال کوکی‌ها"
 
 #: filechanged.src#STR_FILECHANGED_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Document Has Been Changed by Others"
+msgid "Document Has Been Changed by Others"
 msgstr "سند توسط دیگران تغییر یافته است"
 
 #: filechanged.src#STR_FILECHANGED_MSG.STRING.TEXT
 #, fuzzy
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr "فایل از زمانی که برای ویرایش در %PRODUCTNAME باز شده تغییر کرده است. ذخیره ورژن شما تغییراتی که دیگران اعمال کرده‌اند را پاک می‌کند.\n\nآیا میخواهید در هر صورت ذخیره کنید؟\n\n"
+msgid "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr ""
+"فایل از زمانی که برای ویرایش در %PRODUCTNAME باز شده تغییر کرده است. ذخیره "
+"ورژن شما تغییراتی که دیگران اعمال کرده‌اند را پاک می‌کند.\n"
+"\n"
+"آیا میخواهید در هر صورت ذخیره کنید؟\n"
+"\n"
 
 #: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Save Anyway"
+msgid "~Save Anyway"
 msgstr "~ذخیره در هر صورت"
 
 #: fltdlg.src#DLG_FILTER_SELECT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Filter Selection"
+msgid "Filter Selection"
 msgstr "انتخاب صافی"
 
 #: ids.src#RID_KEEP_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "~Remember password until end of session"
+msgid "~Remember password until end of session"
 msgstr "به ~خاطر سپردن گذرواژه تا پایان نشست"
 
 #: ids.src#RID_SAVE_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "~Remember password"
+msgid "~Remember password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Invalid Document Signature"
+msgid "Invalid Document Signature"
 msgstr "امضای نامعتبر سند"
 
 #: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Non-Encrypted Streams"
+msgid "Non-Encrypted Streams"
 msgstr "جریانِ رمزگذاری نشده"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation executed on $(ARG1) was aborted."
+msgid "The operation executed on $(ARG1) was aborted."
 msgstr "عملیات اجرا شده در $(ARG1) قطع شد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Access to $(ARG1) was denied."
+msgid "Access to $(ARG1) was denied."
 msgstr "اجازه‌ی دسترسی به $(ARG1) داده نشد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) already exists."
+msgid "$(ARG1) already exists."
 msgstr "$(ARG1) از قبل وجود دارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Target already exists."
+msgid "Target already exists."
 msgstr "هدف از قبل وجود دارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "شما در حال ذخیره/صادر کردن یک کتابخانه ساده‌ی حفاظت‌شده با گذرواژه شامل ماژول (های) ذیل هستید \n$(ARG1)\nکه حجم آن‌ها برای ذخیره‌سازی در قالب باینری بسیار بزرگ است. اگر می‌خواهید کاربرانی که به گذرواژه این کتابخانه دسترسی ندارند قادر به اجرای ماکروهای آن ماژول‌ (ها) باشند باید آن ماژول‌ها را به تعدادی ماژول کوچک‌تر تقسیم کنید. آیا می‌خواهید ذخیره/صادر کردن این کتابخانه را ادامه دهید؟"
+msgid "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+"شما در حال ذخیره/صادر کردن یک کتابخانه ساده‌ی حفاظت‌شده با گذرواژه شامل "
+"ماژول (های) ذیل هستید \n"
+"$(ARG1)\n"
+"که حجم آن‌ها برای ذخیره‌سازی در قالب باینری بسیار بزرگ است. اگر می‌خواهید "
+"کاربرانی که به گذرواژه این کتابخانه دسترسی ندارند قادر به اجرای ماکروهای آن "
+"ماژول‌ (ها) باشند باید آن ماژول‌ها را به تعدادی ماژول کوچک‌تر تقسیم کنید. "
+"آیا می‌خواهید ذخیره/صادر کردن این کتابخانه را ادامه دهید؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The data from $(ARG1) has an incorrect checksum."
+msgid "The data from $(ARG1) has an incorrect checksum."
 msgstr "جمع مقابله‌ای داده‌های $(ARG1) نادرست است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "نمی‌توان شیء $(ARG1) را در شاخه‌ی $(ARG2) ایجاد کرد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Data of $(ARG1) could not be read."
+msgid "Data of $(ARG1) could not be read."
 msgstr "خواندن داده‌های $(ARG1) ممکن نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The seek operation on $(ARG1) could not be performed."
+msgid "The seek operation on $(ARG1) could not be performed."
 msgstr "نمی‌توان عملیات seek را روی $(ARG1) انجام داد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The tell operation on $(ARG1) could not be performed."
+msgid "The tell operation on $(ARG1) could not be performed."
 msgstr "نمی‌توان عملیات tell را روی $(ARG1) انجام داد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Data for $(ARG1) could not be written."
+msgid "Data for $(ARG1) could not be written."
 msgstr "نمی‌توان داده‌های $(ARG1) را نوشت"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Action impossible: $(ARG1) is the current directory."
+msgid "Action impossible: $(ARG1) is the current directory."
 msgstr "کنش غیرممکن: $(ARG1) شاخه‌ی فعلی است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is not ready."
+msgid "$(ARG1) is not ready."
 msgstr "$(ARG1) آماده نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr "کنش غیرممکن: $(ARG1) و $(ARG2) دستگاه‌های (دیسک‌گردان‌های) متفاوتی هستند"
+msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr ""
+"کنش غیرممکن: $(ARG1) و $(ARG2) دستگاه‌های (دیسک‌گردان‌های) متفاوتی هستند"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "General input/output error while accessing $(ARG1)."
+msgid "General input/output error while accessing $(ARG1)."
 msgstr "یک تلاش به شکل نامعتبر برای دسترسی به $(ARG1) انجام شد."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgid "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "یک تلاش به شکل نامعتبر برای دسترسی به $(ARG1) انجام شد."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) contains invalid characters."
+msgid "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) حاوی نویسه‌های نامعتبر است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The device (drive) $(ARG1) is invalid."
+msgid "The device (drive) $(ARG1) is invalid."
 msgstr "دستگاه (دیسک‌گردان) $(ARG1) نامعتبر است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The data from $(ARG1) has an invalid length."
+msgid "The data from $(ARG1) has an invalid length."
 msgstr "طول داده‌های $(ARG1) نامعتبر است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgid "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "عملیات در $(ARG1) با پارامتر نامعتبری آغاز شده بود"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgid "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "این عمل به دلیل آنکه $(ARG1) شامل نویسه‌ عام است قابل اجرا نیست. "
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Error during shared access to $(ARG1)."
+msgid "Error during shared access to $(ARG1)."
 msgstr "خطا در زمان دسترسی اشتراکی به $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) contains misplaced characters."
+msgid "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) حاوی نویسه‌های نامعتبر است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The name $(ARG1) contains too many characters."
+msgid "The name $(ARG1) contains too many characters."
 msgstr "تعداد نویسه‌های نام $(ARG1) زیاد است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) does not exist."
+msgid "$(ARG1) does not exist."
 msgstr "$(ARG1) وجود ندارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The path $(ARG1) does not exist."
+msgid "The path $(ARG1) does not exist."
 msgstr "مسیر $(ARG1) وجود ندارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgid "The operation on $(ARG1) is not supported on this operating system."
 msgstr "این عمل روی $(ARG1) برای این سیستم عامل پشتیبانی نشده است."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is not a directory."
+msgid "$(ARG1) is not a directory."
 msgstr "$(ARG1) شاخه نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is not a file."
+msgid "$(ARG1) is not a file."
 msgstr "$(ARG1) پرونده نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "There is no space left on device $(ARG1)."
+msgid "There is no space left on device $(ARG1)."
 msgstr "فضایی در دستگاه $(ARG1) باقی نمانده است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr "نمی‌توان عملیات را در $(ARG1) انجام داد چون تعداد پرونده‌های باز زیاد است"
+msgid "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr ""
+"نمی‌توان عملیات را در $(ARG1) انجام داد چون تعداد پرونده‌های باز زیاد است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgid "The operation on $(ARG1) cannot be performed because there is no more memory available."
 msgstr "نمی‌توان عملیات را در $(ARG1) انجام داد چون حافظه‌ی کافی موجود نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr "این عمل روی $(ARG1) قابل اجرا نیست زیرا داده‌ی بیشتری در حال انتظار است."
+msgid "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr ""
+"این عمل روی $(ARG1) قابل اجرا نیست زیرا داده‌ی بیشتری در حال انتظار است."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) cannot be copied into itself."
+msgid "$(ARG1) cannot be copied into itself."
 msgstr "نمی‌توان $(ARG1) را روی خودش نسخه‌برداری کرد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Unknown input/output error while accessing $(ARG1)."
+msgid "Unknown input/output error while accessing $(ARG1)."
 msgstr "خطای ورودی/خروجی نامعلوم هنگام دسترسی به $(ARG1)"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is write protected."
+msgid "$(ARG1) is write protected."
 msgstr "$(ARG1) در مقابل نوشتن محافظت شده است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is not in the correct format."
+msgid "$(ARG1) is not in the correct format."
 msgstr "قالب $(ARG1) درست نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The version of $(ARG1) is not correct."
+msgid "The version of $(ARG1) is not correct."
 msgstr "نسخه‌ی $(ARG1) درست نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Drive $(ARG1) does not exist."
+msgid "Drive $(ARG1) does not exist."
 msgstr "دیسک‌گردان $(ARG1) وجود ندارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Folder $(ARG1) does not exist."
+msgid "Folder $(ARG1) does not exist."
 msgstr "پوشه‌ی $(ARG1) وجود ندارد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The installed Java version is not supported."
+msgid "The installed Java version is not supported."
 msgstr "نسخه‌ی جاوای نصب شده پشتیبانی نمی‌شود"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The installed Java version $(ARG1) is not supported."
+msgid "The installed Java version $(ARG1) is not supported."
 msgstr "جاوای نصب شده‌ی نسخه‌ی $(ARG1) پشتیبانی نمی‌شود"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr "نسخه‌ی جاوای نصب شده پشتیبانی نمی‌شود، نسخه‌ی $(ARG1) یا بالاتر لازم است"
+msgid "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr ""
+"نسخه‌ی جاوای نصب شده پشتیبانی نمی‌شود، نسخه‌ی $(ARG1) یا بالاتر لازم است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr "جاوای نصب شده‌ی نسخه‌ی $(ARG1) پشتیبانی نمی‌شود، نسخه‌ی $(ARG2) یا بالاتر لازم است"
+msgid "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr ""
+"جاوای نصب شده‌ی نسخه‌ی $(ARG1) پشتیبانی نمی‌شود، نسخه‌ی $(ARG2) یا بالاتر "
+"لازم است"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The data associated with the partnership is corrupted."
+msgid "The data associated with the partnership is corrupted."
 msgstr "اطلاعات متناظر با این همکاری خراب است."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgid "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "اطلاعات متناظر با همکاریِ $(ARG1) خراب است."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Volume $(ARG1) is not ready."
+msgid "Volume $(ARG1) is not ready."
 msgstr "جلد $(ARG1) آماده نیست"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgid "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) آماده نیست؛ لطفاً یک رسانه‌ی ذخیره‌سازی وارد کنید"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgid "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "جلد $(ARG1) آماده نیست؛ لطفاً یک رسانه‌ی ذخیره‌سازی وارد کنید"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Please insert disk $(ARG1)."
+msgid "Please insert disk $(ARG1)."
 msgstr "لطفاً دیسک $(ARG1) را وارد کنید"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The object cannot be created in directory $(ARG1)."
+msgid "The object cannot be created in directory $(ARG1)."
 msgstr "نمی‌توان شیء $(ARG1) را در شاخه‌ی $(ARG2) ایجاد کرد"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr "%PRODUCTNAME نمی‌تواند در زمان اجرای این پروتکلِ انتقال از بازنویسی فایل‌ها جلوگیری کند. آیا می‌خواهید در هر صورت ادامه دهید؟"
+msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr ""
+"%PRODUCTNAME نمی‌تواند در زمان اجرای این پروتکلِ انتقال از بازنویسی فایل‌ها "
+"جلوگیری کند. آیا می‌خواهید در هر صورت ادامه دهید؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "فایل '$(ARG1)' خراب است و در نتیجه نمیتوان آن را باز کرد. %PRODUCTNAME می‌تواند سعی کند این فایل را تعمیر کند.\n\nخرابی می‌تواند نتیجه‌ی دستکاری سند یا خسارت به ساختار سند به دلیل انتقال داده باشد.\n\nپیشنهاد ما آن است که به محتویات سند تعمیر شده اعتماد نکنید.\nاجرای ماکروها برای این سند غیرفعال شده است.\n\nآیا می‌خواهید %PRODUCTNAME این فایل را تعمیر کند؟\n"
+msgid "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr ""
+"فایل '$(ARG1)' خراب است و در نتیجه نمیتوان آن را باز کرد. %PRODUCTNAME "
+"می‌تواند سعی کند این فایل را تعمیر کند.\n"
+"\n"
+"خرابی می‌تواند نتیجه‌ی دستکاری سند یا خسارت به ساختار سند به دلیل انتقال "
+"داده باشد.\n"
+"\n"
+"پیشنهاد ما آن است که به محتویات سند تعمیر شده اعتماد نکنید.\n"
+"اجرای ماکروها برای این سند غیرفعال شده است.\n"
+"\n"
+"آیا می‌خواهید %PRODUCTNAME این فایل را تعمیر کند؟\n"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgid "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "تعمیر پروندهٔ «$(ARG1)» ممکن نیست و بنابراین نمی‌توان آن را باز کرد."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "اطلاعات تنظیمات در '$(ARG1)' خراب است. بدون این اطلاعات ممکن است توابع به صورت درست عمل نکنند.\nآیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات خراب راه‌اندازی شود؟"
+msgid "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+"اطلاعات تنظیمات در '$(ARG1)' خراب است. بدون این اطلاعات ممکن است توابع به "
+"صورت درست عمل نکنند.\n"
+"آیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات خراب راه‌اندازی شود؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "فایل تنظیمات شخصیِ '$(ARG1)' خراب شده است و برای ادامه باید حذف شود. قسمتی از تنظیمات شخصی شما ممکن است از دست برود.\nآیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات خراب راه‌اندازی شود؟"
+msgid "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+"فایل تنظیمات شخصیِ '$(ARG1)' خراب شده است و برای ادامه باید حذف شود. قسمتی "
+"از تنظیمات شخصی شما ممکن است از دست برود.\n"
+"آیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات خراب راه‌اندازی شود؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr "منبع اطلاعات تنظیماتِ '$(ARG1)' در دسترس نیست. بدون این اطلاعات ممکن است توابع به صورت درست عمل نکنند."
+msgid "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr ""
+"منبع اطلاعات تنظیماتِ '$(ARG1)' در دسترس نیست. بدون این اطلاعات ممکن است "
+"توابع به صورت درست عمل نکنند."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "منبع اطلاعات تنظیماتِ '$(ARG1)' در دسترس نیست. بدون این اطلاعات ممکن است توابع به صورت درست عمل نکنند.\nآیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات گم‌شده راه‌اندازی شود؟"
+msgid "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+"منبع اطلاعات تنظیماتِ '$(ARG1)' در دسترس نیست. بدون این اطلاعات ممکن است "
+"توابع به صورت درست عمل نکنند.\n"
+"آیا می‌خواهید %PRODUCTNAME بدون اطلاعات تنظیمات گم‌شده راه‌اندازی شود؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The form contains invalid data. Do you still want to continue?"
+msgid "The form contains invalid data. Do you still want to continue?"
 msgstr "فرم حاوی داده‌های نامعتبر است. با این وجود می‌خواهید ادامه دهید؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr "فایلِ $(ARG1) توسط کاربر دیگری قفل شده است. در حال حاضر اجازه دیگری برای نوشتن در این فایل نمی‌تواند داده شود."
+msgid "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr ""
+"فایلِ $(ARG1) توسط کاربر دیگری قفل شده است. در حال حاضر اجازه دیگری برای "
+"نوشتن در این فایل نمی‌تواند داده شود."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr "فایلِ $(ARG1) توسط شما قفل شده است. در حال حاضر اجازه دیگری برای نوشتن در این فایل نمی‌تواند داده شود."
+msgid "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr ""
+"فایلِ $(ARG1) توسط شما قفل شده است. در حال حاضر اجازه دیگری برای نوشتن در "
+"این فایل نمی‌تواند داده شود."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The file $(ARG1) is currently not locked by yourself."
+msgid "The file $(ARG1) is currently not locked by yourself."
 msgstr "در حال حاضر فایلِ $(ARG1) توسط شما قفل نشده است."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED_&_ERRCODE_RES_MASK).STRING.TEXT
 #, fuzzy
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr "قفل ِ گرفته شده‌ی قبلی برای فایل $(ARG1) منقضی شده است.\nاین اتفاق ممکن است به دلیل مشکلات در سرور مدیریت قفل فایل‌ها رخ داده باشد. نمیتوان تضمین کرد که تغییرات روی این فایل توسط تغییرات کاربران دیگر از بین نرود."
+msgid "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+"قفل ِ گرفته شده‌ی قبلی برای فایل $(ARG1) منقضی شده است.\n"
+"این اتفاق ممکن است به دلیل مشکلات در سرور مدیریت قفل فایل‌ها رخ داده باشد. "
+"نمیتوان تضمین کرد که تغییرات روی این فایل توسط تغییرات کاربران دیگر از بین "
+"نرود."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.TEXT
 #, fuzzy
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "ناتوانی در تأیید هویت سایت $(ARG1).\n\nقبل از قبول این گواهی, شما باید با دقت گواهی این سایت را بررسی کنید. آیا برای شناسایی وبسایت $(ARG1) این گواهی را قبول می‌کنید؟"
+msgid "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+"ناتوانی در تأیید هویت سایت $(ARG1).\n"
+"\n"
+"قبل از قبول این گواهی, شما باید با دقت گواهی این سایت را بررسی کنید. آیا "
+"برای شناسایی وبسایت $(ARG1) این گواهی را قبول می‌کنید؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.TEXT
 #, fuzzy
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "سایت $(ARG1) از یک گواهی برای رمزگذاری اطلاعات در حال انتقال استفاده می‌کند, ولی این گواهی در $(ARG2) منقضی شده است.\n\nبهتر است از صحیح بودن زمان کامپیوتر خود مطمئن شوید."
+msgid "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+"سایت $(ARG1) از یک گواهی برای رمزگذاری اطلاعات در حال انتقال استفاده می‌کند, "
+"ولی این گواهی در $(ARG2) منقضی شده است.\n"
+"\n"
+"بهتر است از صحیح بودن زمان کامپیوتر خود مطمئن شوید."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.TEXT
 #, fuzzy
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "شما برای برقراری ارتباط با $(ARG1) تلاش کرده‌اید. ولی گواهی امنیتی ارائه شده متعلق به $(ARG2) است. امکان دارد فردی سعی در تداخل در ارتباط شما و این وب‌سایت داشته باشد (احتمال خیلی ضعیف).\n\nاگر مشکوک هستید که گواهی نشان‌داده شده متعلق به $(ARG1) نباشد, لطفا ارتباط را لغو کنید و مدیر سایت را در جریان قرار دهید.\n\nآیا می‌خواهید در هر صورت ادامه دهید؟"
+msgid "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr ""
+"شما برای برقراری ارتباط با $(ARG1) تلاش کرده‌اید. ولی گواهی امنیتی ارائه شده "
+"متعلق به $(ARG2) است. امکان دارد فردی سعی در تداخل در ارتباط شما و این "
+"وب‌سایت داشته باشد (احتمال خیلی ضعیف).\n"
+"\n"
+"اگر مشکوک هستید که گواهی نشان‌داده شده متعلق به $(ARG1) نباشد, لطفا ارتباط "
+"را لغو کنید و مدیر سایت را در جریان قرار دهید.\n"
+"\n"
+"آیا می‌خواهید در هر صورت ادامه دهید؟"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.TEXT
 #, fuzzy
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "گواهی معتبر شناخته نشد. بهتر است با دقت گواهی این سایت را بررسی کنید.\n\nاگر به گواهی نشان‌داده شده مشکوک هستید, لطفا ارتباط را لغو کنید و مدیر سایت را در جریان قرار دهید."
+msgid "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+"گواهی معتبر شناخته نشد. بهتر است با دقت گواهی این سایت را بررسی کنید.\n"
+"\n"
+"اگر به گواهی نشان‌داده شده مشکوک هستید, لطفا ارتباط را لغو کنید و مدیر سایت "
+"را در جریان قرار دهید."
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.TEXT
 #, fuzzy
-msgid  "Security Warning: Domain Name Mismatch"
+msgid "Security Warning: Domain Name Mismatch"
 msgstr "اخطار امنیتی: عدم تطبیق نام دامنه"
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.TEXT
 #, fuzzy
-msgid  "Security Warning: Server Certificate Expired"
+msgid "Security Warning: Server Certificate Expired"
 msgstr "اخطار امنیتی: گواهی سرور منقضی شده است"
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.TEXT
 #, fuzzy
-msgid  "Security Warning: Server Certificate Invalid"
+msgid "Security Warning: Server Certificate Invalid"
 msgstr "اخطار امنیتی: گواهی نامعتبرِ سِرور"
 
 #: lockfailed.src#STR_LOCKFAILED_MSG.STRING.TEXT
 #, fuzzy
-msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr "امکان قفل کردن این فایل برای دسترسی اختصاصی توسط %PRODUCTNAME به دلیل عدم وجود اجازه ایجاد قفل در محل این فایل نیست."
+msgid "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr ""
+"امکان قفل کردن این فایل برای دسترسی اختصاصی توسط %PRODUCTNAME به دلیل عدم "
+"وجود اجازه ایجاد قفل در محل این فایل نیست."
 
 #: logindlg.src#DLG_UUI_LOGIN.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Authentication Required"
+msgid "Authentication Required"
 msgstr "نام کاربر و گذرواژه لازم است"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Message from server:"
+msgid "Message from server:"
 msgstr "پیام از سرور:"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Enter user name and password for: \n%1"
+msgid "Enter user name and password for: \n%1"
 msgstr "لطفاً نام کاربر و گذرواژهٔ «%2» در %1 را اینجا وارد کنید."
 
 #: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.STRING.TEXT
 #, fuzzy
-msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgid "Enter user name and password for: \n\"%2\" on %1"
 msgstr "لطفاً نام کاربر و گذرواژهٔ «%2» در %1 را اینجا وارد کنید."
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Path"
+msgid "~Path"
 msgstr "~مسیر"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~User name"
+msgid "~User name"
 msgstr "~نام کاربر"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Pass~word"
+msgid "Pass~word"
 msgstr "گذر~واژه"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "A~ccount"
+msgid "A~ccount"
 msgstr "~حساب"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Remember password"
+msgid "~Remember password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Use system credentials"
+msgid "~Use system credentials"
 msgstr "~استفاده از اعتبار نامه سیستم"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Set Master Password"
+msgid "Set Master Password"
 msgstr "انتخاب گذرواژه مستر"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr "گذرواژه‌های ارتباطات وب به وسیله‌ی یک گذرواژه مستر محافظت می‌شوند. اگر %PRODUCTNAME یک گذرواژه را از لیست گذرواژه‌ها بازیابی کند از شما خواسته خواهد شد تا گذرواژه مستر را وارد کنید."
+msgid "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr ""
+"گذرواژه‌های ارتباطات وب به وسیله‌ی یک گذرواژه مستر محافظت می‌شوند. اگر %"
+"PRODUCTNAME یک گذرواژه را از لیست گذرواژه‌ها بازیابی کند از شما خواسته خواهد "
+"شد تا گذرواژه مستر را وارد کنید."
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Enter password"
+msgid "~Enter password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Reenter password"
+msgid "~Reenter password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr "اخطار: اگر گذرواژه مستر را فراموش کنید نمیتوانید به اطلاعاتی که توسط آن محافظت شده دسترسی پیدا کنید. گذرواژه‌ها به حروف کوچک و بزرگ حساسند."
+msgid "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+"اخطار: اگر گذرواژه مستر را فراموش کنید نمیتوانید به اطلاعاتی که توسط آن "
+"محافظت شده دسترسی پیدا کنید. گذرواژه‌ها به حروف کوچک و بزرگ حساسند."
 
 #: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Enter password"
+msgid "Enter password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Enter Master Password"
+msgid "Enter Master Password"
 msgstr "ورود گذرواژه مستر"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "File Exists"
+msgid "File Exists"
 msgstr "فایل موجود است"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Replace"
+msgid "Replace"
 msgstr "جایگزینی"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Rename"
+msgid "Rename"
 msgstr "تغییر نام"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Update Available"
+msgid "%PRODUCTNAME Update Available"
 msgstr "بروزرسانی %PRODUCTNAME موجود است"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "این سند توسط نسخه جدیدتری از %PRODUCTNAME ایجاد شده است. ممکن است حاوی ویژگی‌هایی باشد که نسخه شما از آن پشتیبانی نمی‌کند.\n\nروی 'بروزرسانی...' کلیک کنید تا بروزرسانی به صورت آنلاین انجام شود و آخرین نسخه‌ی %PRODUCTNAME را دریافت کنید."
+msgid "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
+"این سند توسط نسخه جدیدتری از %PRODUCTNAME ایجاد شده است. ممکن است حاوی "
+"ویژگی‌هایی باشد که نسخه شما از آن پشتیبانی نمی‌کند.\n"
+"\n"
+"روی 'بروزرسانی...' کلیک کنید تا بروزرسانی به صورت آنلاین انجام شود و آخرین "
+"نسخه‌ی %PRODUCTNAME را دریافت کنید."
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Update Now..."
+msgid "~Update Now..."
 msgstr "~بروزرسانی..."
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Later"
+msgid "~Later"
 msgstr "~بعد"
 
 #: openlocked.src#STR_OPENLOCKED_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Document in Use"
+msgid "Document in Use"
 msgstr "سند در حال استفاده"
 
 #: openlocked.src#STR_OPENLOCKED_MSG.STRING.TEXT
 #, fuzzy
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr "فایل سند '$(ARG1)' برای ویرایش قفل شده است. توسط:\n\n$(ARG2)\n\nسند را در حالت فقط-خواندنی یا یک کپی از سند را برای ویرایش باز کنید.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr ""
+"فایل سند '$(ARG1)' برای ویرایش قفل شده است. توسط:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"سند را در حالت فقط-خواندنی یا یک کپی از سند را برای ویرایش باز کنید.\n"
+"\n"
 
 #: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Open ~Read-Only"
+msgid "Open ~Read-Only"
 msgstr "باز کردن در حالت ~فقط-خواندن"
 
 #: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.STRING.TEXT
 #, fuzzy
-msgid  "Open ~Copy"
+msgid "Open ~Copy"
 msgstr "باز کردن در حالت ~کپی"
 
 #: openlocked.src#STR_UNKNOWNUSER.STRING.TEXT
 #, fuzzy
-msgid  "Unknown User"
+msgid "Unknown User"
 msgstr "کاربر ناشناخته"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "Enter password to open file: \n"
+msgid "Enter password to open file: \n"
 msgstr "برای باز کردن فایل گذرواژه را وارد کنید: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.STRING.TEXT
 #, fuzzy
-msgid  "Enter password to modify file: \n"
+msgid "Enter password to modify file: \n"
 msgstr "برای ویرایش فایل گذرواژه را وارد کنید: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Enter password: "
+msgid "Enter password: "
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Confirm password: "
+msgid "Confirm password: "
 msgstr "تایید گذرواژه:"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Set Password"
+msgid "Set Password"
 msgstr "قراردادن گذرواژه"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Enter Password"
+msgid "Enter Password"
 msgstr "به ~خاطر سپردن گذرواژه"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.STRING.TEXT
 #, fuzzy
-msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr "تصدیق گذرواژه با گذرواژه یکسان نبود. دوباره گذرواژه را با وارد کردن گذرواژه یکسان در هر دو جعبه انتخاب کنید."
+msgid "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+"تصدیق گذرواژه با گذرواژه یکسان نبود. دوباره گذرواژه را با وارد کردن گذرواژه "
+"یکسان در هر دو جعبه انتخاب کنید."
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.STRING.TEXT
 #, fuzzy
-msgid  "The password is incorrect. The file cannot be opened."
+msgid "The password is incorrect. The file cannot be opened."
 msgstr "گذرواژه اشتباه است. فایل نمی‌تواند باز شود."
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.STRING.TEXT
 #, fuzzy
-msgid  "The password is incorrect. The file cannot be modified."
+msgid "The password is incorrect. The file cannot be modified."
 msgstr "گذرواژه اشتباه است. فایل نمی‌تواند ویرایش شود."
 
 #: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.STRING.TEXT
 #, fuzzy
-msgid  "The master password is incorrect."
+msgid "The master password is incorrect."
 msgstr "گذرواژه مستر اشتباه است."
 
 #: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.STRING.TEXT
 #, fuzzy
-msgid  "The password is incorrect."
+msgid "The password is incorrect."
 msgstr "گذرواژه اشتباه است."
 
 #: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 #, fuzzy
-msgid  "The password confirmation does not match."
+msgid "The password confirmation does not match."
 msgstr "گذرواژه‌ها مطابقت نمی‌کنند. لطفاً دوباره گذرواژه را وارد کنید."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME - Security Warning"
+msgid "%PRODUCTNAME - Security Warning"
 msgstr "‏%PRODUCTNAME - هشدار امنیتی"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The document contains document macros signed by:"
+msgid "The document contains document macros signed by:"
 msgstr "نوشتار شامل ماکروهای نوشتاری امضا شده توسط:"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The document contains document macros."
+msgid "The document contains document macros."
 msgstr "نوشتار شامل ماکروهای نوشتاری است."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "View Signatures..."
+msgid "View Signatures..."
 msgstr "نمایش امضاها..."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr "ممکن است ماکروها حاوی ویروس باشند. از کار انداختن ماکروها برای یک نوشتار همیشه امن است.اگر ماکروها را از کار بیاندازید ممکن است عملکردهایی را که توسط ماکروهای نوشتار تأمین می‌شود از دست بدهید."
+msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+"ممکن است ماکروها حاوی ویروس باشند. از کار انداختن ماکروها برای یک نوشتار "
+"همیشه امن است.اگر ماکروها را از کار بیاندازید ممکن است عملکردهایی را که توسط "
+"ماکروهای نوشتار تأمین می‌شود از دست بدهید."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Always trust macros from this source"
+msgid "Always trust macros from this source"
 msgstr "همیشه به ماکروهای این مبدأ اعتماد شود "
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Enable Macros"
+msgid "~Enable Macros"
 msgstr "به کار انداختن ماکروها"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Disable Macros"
+msgid "~Disable Macros"
 msgstr "از کار انداختن ماکروها"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Security Warning: "
+msgid "Security Warning: "
 msgstr "اخطار امنیتی:"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "No Text"
+msgid "No Text"
 msgstr "بدون متن"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "View Certificate"
+msgid "View Certificate"
 msgstr "مشاهده‌ی گواهی"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Cancel Connection"
+msgid "Cancel Connection"
 msgstr "لغو ارتباط"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Continue"
+msgid "Continue"
 msgstr "ادامه"
 
 #: trylater.src#STR_TRYLATER_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Document in Use"
+msgid "Document in Use"
 msgstr "سند در حال استفاده"
 
 #: trylater.src#STR_TRYLATER_MSG.STRING.TEXT
 #, fuzzy
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr "فایل سند '$(ARG1)' برای ویرایش قفل شده است. توسط:\n\n$(ARG2)\n\nبعد دوباره سعی کنید سند را ذخیره کنید یا یک کپی از سند را ذخیره کنید.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr ""
+"فایل سند '$(ARG1)' برای ویرایش قفل شده است. توسط:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"بعد دوباره سعی کنید سند را ذخیره کنید یا یک کپی از سند را ذخیره کنید.\n"
+"\n"
 
 #: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Retry Saving"
+msgid "~Retry Saving"
 msgstr "~سعی دوباره برای ذخیره"
 
 #: trylater.src#STR_TRYLATER_SAVEAS_BTN.STRING.TEXT
 #, fuzzy
-msgid  "~Save As..."
+msgid "~Save As..."
 msgstr "~ذخیره به عنوان..."
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Website Certified by an Unknown Authority"
+msgid "Website Certified by an Unknown Authority"
 msgstr "وبسایتِ تاییدشده توسط مقامات ناشناس"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Examine Certificate..."
+msgid "Examine Certificate..."
 msgstr "بررسی گواهی..."
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Help"
+msgid "Help"
 msgstr "کمک"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "OK"
+msgid "OK"
 msgstr "تصویب"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Accept this certificate temporarily for this session"
+msgid "Accept this certificate temporarily for this session"
 msgstr "قبول این گواهی به صورت موقت برای این جلسه"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Do not accept this certificate and do not connect to this Web site"
+msgid "Do not accept this certificate and do not connect to this Web site"
 msgstr "این گواهی را قبول نکن و به این وبسایت متصل نشو"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "No Text"
+msgid "No Text"
 msgstr "بدون متن"

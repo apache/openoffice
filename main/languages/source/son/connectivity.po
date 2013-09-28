@@ -1,700 +1,701 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: son\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
-msgid  "Mozilla/Seamonkey Addressbook Directory"
+msgid "Mozilla/Seamonkey Addressbook Directory"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
-msgid  "Thunderbird Addressbook Directory"
+msgid "Thunderbird Addressbook Directory"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook Express Addressbook"
+msgid "Outlook Express Addressbook"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook (MAPI) Addressbook"
+msgid "Outlook (MAPI) Addressbook"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
-msgid  "Creating tables is not supported for this kind of address books."
+msgid "Creating tables is not supported for this kind of address books."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
-msgid  "Cannot create new address books while Mozilla is running."
+msgid "Cannot create new address books while Mozilla is running."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
-msgid  "An address book entry could not be retrieved, an unknown error occurred."
+msgid "An address book entry could not be retrieved, an unknown error occurred."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
-msgid  "An address book directory name could not be retrieved, an unknown error occurred."
+msgid "An address book directory name could not be retrieved, an unknown error occurred."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
-msgid  "Timed out while waiting for the result."
+msgid "Timed out while waiting for the result."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
-msgid  "An error occurred while executing the query."
+msgid "An error occurred while executing the query."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
-msgid  "You can't make any changes to mozilla address book when mozilla is running."
+msgid "You can't make any changes to mozilla address book when mozilla is running."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
-msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
+msgid "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
-msgid  "Can't find the requested row."
+msgid "Can't find the requested row."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
-msgid  "Can't find the card for the requested row."
+msgid "Can't find the card for the requested row."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It needs at least one table."
+msgid "The query can not be executed. It needs at least one table."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
-msgid  "The driver does not support the 'COUNT' function."
+msgid "The driver does not support the 'COUNT' function."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
-msgid  "This statement type not supported by this database driver."
+msgid "This statement type not supported by this database driver."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid  "An unknown error occured."
+msgid "An unknown error occured."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
-msgid  "Could not create a new address book. Mozilla error code is $1$."
+msgid "Could not create a new address book. Mozilla error code is $1$."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
-msgid  "The library '$libname$' could not be loaded."
+msgid "The library '$libname$' could not be loaded."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid  "An error occured while refreshing the current row."
+msgid "An error occured while refreshing the current row."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid  "An error occured while getting the current row."
+msgid "An error occured while getting the current row."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
-msgid  "The row update can not be canceled."
+msgid "The row update can not be canceled."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
-msgid  "A new row can not be created."
+msgid "A new row can not be created."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
+msgid "The query can not be executed. The 'IS NULL' can only be used with a column name."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid  "Illegal cursor movement occured."
+msgid "Illegal cursor movement occured."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
-msgid  "Please commit row '$position$' before update rows or insert new rows."
+msgid "Please commit row '$position$' before update rows or insert new rows."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
-msgid  "The update call can not be executed. The row is invalid."
+msgid "The update call can not be executed. The row is invalid."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
-msgid  "The current row can not be saved."
+msgid "The current row can not be saved."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
-msgid  "No hostname was provided."
+msgid "No hostname was provided."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
-msgid  "No Base DN was provided."
+msgid "No Base DN was provided."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
-msgid  "The connection to the LDAP server could not be established."
+msgid "The connection to the LDAP server could not be established."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
-msgid  "It doesn't exist a connection to the database."
+msgid "It doesn't exist a connection to the database."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgid "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
-msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
+msgid "End of InputStream reached before satisfying length specified when InputStream was set."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
-msgid  "The input stream was not set."
+msgid "The input stream was not set."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
-msgid  "There is no element named '$name$'."
+msgid "There is no element named '$name$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
-msgid  "Invalid bookmark value"
+msgid "Invalid bookmark value"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
-msgid  "Privilege not granted: Only table privileges can be granted."
+msgid "Privilege not granted: Only table privileges can be granted."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
-msgid  "Privilege not revoked: Only table privileges can be revoked."
+msgid "Privilege not revoked: Only table privileges can be revoked."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
-msgid  "The column name '$columnname$' is unknown."
+msgid "The column name '$columnname$' is unknown."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
-msgid  "Function sequence error."
+msgid "Function sequence error."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid descriptor index."
+msgid "Invalid descriptor index."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
-msgid  "The driver does not support the function '$functionname$'."
+msgid "The driver does not support the function '$functionname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
-msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
+msgid "The driver does not support the functionality for '$featurename$'. It is not implemented."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
-msgid  "The formula for TypeInfoSettings is wrong!"
+msgid "The formula for TypeInfoSettings is wrong!"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
-msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
+msgid "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
-msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
+msgid "The string '$string$' cannot be converted using the encoding '$charset$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
-msgid  "The connection URL is invalid."
+msgid "The connection URL is invalid."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. It is too complex."
+msgid "The query can not be executed. It is too complex."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The operator is too complex."
+msgid "The query can not be executed. The operator is too complex."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
+msgid "The query can not be executed. You cannot use 'LIKE' with columns of this type."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
-msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
+msgid "The query can not be executed. 'LIKE' can be used with a string argument only."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
+msgid "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
+msgid "The query can not be executed. The 'LIKE' condition contains too many wildcards."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
-msgid  "The column name '$columnname$' is not valid."
+msgid "The column name '$columnname$' is not valid."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
-msgid  "The statement contains an invalid selection of columns."
+msgid "The statement contains an invalid selection of columns."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
-msgid  "The column at position '$position$' could not be updated."
+msgid "The column at position '$position$' could not be updated."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be loaded."
+msgid "The file $filename$ could not be loaded."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
+msgid "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
-msgid  "The type could not be converted."
+msgid "The type could not be converted."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not append column: invalid column descriptor."
+msgid "Could not append column: invalid column descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create group: invalid object descriptor."
+msgid "Could not create group: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create index: invalid object descriptor."
+msgid "Could not create index: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create key: invalid object descriptor."
+msgid "Could not create key: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create table: invalid object descriptor."
+msgid "Could not create table: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create user: invalid object descriptor."
+msgid "Could not create user: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create view: invalid object descriptor."
+msgid "Could not create view: invalid object descriptor."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
-msgid  "Could not create view: no command object."
+msgid "Could not create view: no command object."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
-msgid  "The connection could not be created. May be the necessary data provider is not installed."
+msgid "The connection could not be created. May be the necessary data provider is not installed."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occured."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
-msgid  "The index could not be created. Only one column per index is allowed."
+msgid "The index could not be created. Only one column per index is allowed."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
-msgid  "The index could not be created. The values are not unique."
+msgid "The index could not be created. The values are not unique."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
-msgid  "The index could not be created. An unknown error appeared."
+msgid "The index could not be created. An unknown error appeared."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
-msgid  "The index could not be created. The file '$filename$' is used by an other index."
+msgid "The index could not be created. The file '$filename$' is used by an other index."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
-msgid  "The index could not be created. The size of the chosen column is too big."
+msgid "The index could not be created. The size of the chosen column is too big."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
-msgid  "The name '$name$' doesn't match SQL naming constraints."
+msgid "The name '$name$' doesn't match SQL naming constraints."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be deleted."
+msgid "The file $filename$ could not be deleted."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
-msgid  "Invalid column type for column '$columnname$'."
+msgid "Invalid column type for column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
-msgid  "Invalid precision for column '$columnname$'."
+msgid "Invalid precision for column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
-msgid  "Precision is less than scale for column '$columnname$'."
+msgid "Precision is less than scale for column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
-msgid  "Invalid column name length for column '$columnname$'."
+msgid "Invalid column name length for column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
-msgid  "Duplicate value found in column '$columnname$'."
+msgid "Duplicate value found in column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
-msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgid "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
-msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
+msgid "The column '$columnname$' could not be altered. May be the file system is write protected."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
-msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
+msgid "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
-msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
+msgid "The column '$columnname$' could not be added. May be the file system is write protected."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
-msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
+msgid "The column at position '$position$' could not be dropped. May be the file system is write protected."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
-msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
+msgid "The table '$tablename$' could not be dropped. May be the file system is write protected."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
-msgid  "The table could not be altered."
+msgid "The table could not be altered."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
-msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
-msgid  "Cannot open Evolution address book."
+msgid "Cannot open Evolution address book."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
-msgid  "Can only sort by table columns."
+msgid "Can only sort by table columns."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
-msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
-msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
-msgid  "The query can not be executed. The function is not supported."
+msgid "The query can not be executed. The function is not supported."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
-msgid  "The table can not be changed. It is read only."
+msgid "The table can not be changed. It is read only."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
-msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgid "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
-msgid  "The row could not be deleted. It is already deleted."
+msgid "The row could not be deleted. It is already deleted."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It contains more than one table."
+msgid "The query can not be executed. It contains more than one table."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
-msgid  "The query can not be executed. It contains no valid table."
+msgid "The query can not be executed. It contains no valid table."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. It contains no valid columns."
+msgid "The query can not be executed. It contains no valid columns."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
-msgid  "The count of the given parameter values doesn't match the parameters."
+msgid "The count of the given parameter values doesn't match the parameters."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
-msgid  "The URL '$URL$' is not valid. A connection can not be created."
+msgid "The URL '$URL$' is not valid. A connection can not be created."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
-msgid  "The driver class '$classname$' could not be loaded."
+msgid "The driver class '$classname$' could not be loaded."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
-msgid  "No Java installation could be found. Please check your installation."
+msgid "No Java installation could be found. Please check your installation."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
-msgid  "The execution of the query doesn't return a valid result set."
+msgid "The execution of the query doesn't return a valid result set."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
-msgid  "The execution of the update statement doesn't effect any rows."
+msgid "The execution of the update statement doesn't effect any rows."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
-msgid  "The additional driver class path is '$classpath$'."
+msgid "The additional driver class path is '$classpath$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
-msgid  "The type of parameter at position '$position$' is unknown."
+msgid "The type of parameter at position '$position$' is unknown."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
-msgid  "The type of column at position '$position$' is unknown."
+msgid "The type of column at position '$position$' is unknown."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
-msgid  "No suitable KDE installation was found."
+msgid "No suitable KDE installation was found."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
-msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
+msgid "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
-msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
-msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
+msgid "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
-msgid  "Parameters can appear only in prepared statements."
+msgid "Parameters can appear only in prepared statements."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
-msgid  "No such table!"
+msgid "No such table!"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
-msgid  "No suitable Mac OS installation was found."
+msgid "No suitable Mac OS installation was found."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
-msgid  "The database file '$filename$' could not be created. Please check your disk space."
+msgid "The database file '$filename$' could not be created. Please check your disk space."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
-msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
+msgid "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
+msgid "The current database need to be converted. Please insert control user  and password."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
-msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
+msgid "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
-msgid  "The connection can not be established. No storage or URL was given."
+msgid "The connection can not be established. No storage or URL was given."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
-msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
+msgid "The given URL contains no valid local file system path. Please check the location of your database file."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid  "An error occured while obtaining the connection's table container."
+msgid "An error occured while obtaining the connection's table container."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid  "An error occured while creating the table editor dialog."
+msgid "An error occured while creating the table editor dialog."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
-msgid  "There is no table named '$tablename$'."
+msgid "There is no table named '$tablename$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
-msgid  "The provided DocumentUI is not allowed to be NULL."
+msgid "The provided DocumentUI is not allowed to be NULL."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
-msgid  "The record operation has been vetoed."
+msgid "The record operation has been vetoed."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
-msgid  "The statement contains a cyclic reference to one or more sub queries."
+msgid "The statement contains a cyclic reference to one or more sub queries."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
-msgid  "The name must not contain any slashes ('/')."
+msgid "The name must not contain any slashes ('/')."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
-msgid  "$1$ is no SQL conform identifier."
+msgid "$1$ is no SQL conform identifier."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
-msgid  "Query names must not contain quote characters."
+msgid "Query names must not contain quote characters."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
-msgid  "The name '$1$' is already in use in the database."
+msgid "The name '$1$' is already in use in the database."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
-msgid  "No connection to the database exists."
+msgid "No connection to the database exists."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
-msgid  "No $1$ exists."
+msgid "No $1$ exists."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
-msgid  "Unable to display the complete table content. Please apply a filter."
+msgid "Unable to display the complete table content. Please apply a filter."
 msgstr ""
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
-msgid  "Adabas D"
+msgid "Adabas D"
 msgstr ""
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (JDBC)"
+msgid "MySQL (JDBC)"
 msgstr ""
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (ODBC)"
+msgid "MySQL (ODBC)"
 msgstr ""
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (Native)"
+msgid "MySQL (Native)"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Outlook Address Book"
+msgid "Microsoft Outlook Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Windows Address Book"
+msgid "Microsoft Windows Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr ""
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
-msgid  "HSQL database engine"
+msgid "HSQL database engine"
 msgstr ""
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
-msgid  "Mac OS X Address Book"
+msgid "Mac OS X Address Book"
 msgstr ""
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr ""
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr ""
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "ODBC"
+msgid "ODBC"
 msgstr ""
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
-msgid  "KDE Address Book"
+msgid "KDE Address Book"
 msgstr ""
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
-msgid  "Text"
+msgid "Text"
 msgstr ""
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr ""
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "JDBC"
+msgid "JDBC"
 msgstr ""
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
-msgid  "Oracle JDBC"
+msgid "Oracle JDBC"
 msgstr ""
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
-msgid  "dBASE"
+msgid "dBASE"
 msgstr ""
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution Local"
+msgid "Evolution Local"
 msgstr ""
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr ""
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr ""
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
-msgid  "ADO"
+msgid "ADO"
 msgstr ""
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Access"
+msgid "Microsoft Access"
 msgstr ""
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Access 2007"
+msgid "Microsoft Access 2007"
 msgstr ""

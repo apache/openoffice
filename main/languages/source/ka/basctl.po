@@ -1,918 +1,1018 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
-msgid  "Print range"
+msgid "Print range"
 msgstr ""
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
-msgid  "All ~Pages"
+msgid "All ~Pages"
 msgstr ""
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
-msgid  "Pa~ges"
+msgid "Pa~ges"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 #, fuzzy
-msgid  "<All>"
+msgid "<All>"
 msgstr "<ყველა>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
 #, fuzzy
-msgid  "< No Module >"
+msgid "< No Module >"
 msgstr "< უმოდულო >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Incorrect Password"
+msgid "Incorrect Password"
 msgstr "მცდარი პაროლი"
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "Load"
+msgid "Load"
 msgstr "ჩატვირთვა"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Save"
+msgid "Save"
 msgstr "შენახვა"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
 #, fuzzy
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "საწყისი ტექსტი არის ძალიან დიდი და შეუძლებელია მისი შენახვა თუ კომპილაცია.\n წაშალეთ ზოგიერთი კომენტარი ან გადაიტანეთ ზოგი მეთოდი სხვა მოდულში."
+msgid "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+"საწყისი ტექსტი არის ძალიან დიდი და შეუძლებელია მისი შენახვა თუ კომპილაცია.\n"
+" წაშალეთ ზოგიერთი კომენტარი ან გადაიტანეთ ზოგი მეთოდი სხვა მოდულში."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
 #, fuzzy
-msgid  "Error opening file"
+msgid "Error opening file"
 msgstr "შეცდომა ფაილის გახსნისას "
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
 #, fuzzy
-msgid  "Error loading library"
+msgid "Error loading library"
 msgstr "შეცდომა ბიბლიოთეკის ჩატვირთვისას"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
 #, fuzzy
-msgid  "The file does not contain any BASIC libraries"
+msgid "The file does not contain any BASIC libraries"
 msgstr "ფაილი არ შეიცავს BASIC-ის ბიბლიოთეკებს"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
 #, fuzzy
-msgid  "Invalid Name"
+msgid "Invalid Name"
 msgstr "მცდარი სახელი"
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
 #, fuzzy
-msgid  "A library name can have up to 30 characters."
+msgid "A library name can have up to 30 characters."
 msgstr "ბიბლიოთეკის სახელი შეიძლება შეიცავდეს 30-ამდე ასონიშანს."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
 #, fuzzy
-msgid  "Macros from other documents are not accessible."
+msgid "Macros from other documents are not accessible."
 msgstr "მაკროები სხვა დოკუმენტებიდან ხელმისაწვდომი არ არის."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
 #, fuzzy
-msgid  "This library is read-only."
+msgid "This library is read-only."
 msgstr "ეს ბიბლიოთეკა არის მხოლოდ წაკითხვადი."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
 #, fuzzy
-msgid  "'XX' cannot be replaced."
+msgid "'XX' cannot be replaced."
 msgstr "„XX“-ის ჩანაცვლება შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
 #, fuzzy
-msgid  "'XX' cannot be added."
+msgid "'XX' cannot be added."
 msgstr "„XX“-ის დამატება შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
 #, fuzzy
-msgid  "'XX' was not added."
+msgid "'XX' was not added."
 msgstr "ვერ მოხერხდა „XX“-ის დამატება."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Enter password for 'XX'"
+msgid "Enter password for 'XX'"
 msgstr "შეიტანეთ პაროლი „XX“'-სთვის"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
 #, fuzzy
-msgid  "Name already exists"
+msgid "Name already exists"
 msgstr "სახელი უკვე არსებობს"
 
 #: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
 #, fuzzy
-msgid  "(Signed)"
+msgid "(Signed)"
 msgstr "(ხელმოწერილი)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 #, fuzzy
-msgid  "Object with same name already exists"
+msgid "Object with same name already exists"
 msgstr "ობიექტი იგივე სახელით უკვე არსებობს"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The 'XX' file already exists"
+msgid "The 'XX' file already exists"
 msgstr "„XX“ ფაილი უკვე არსებობს"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
 #, fuzzy
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "უსაფრთხოების მოსაზრების გამო ამ მაკროს გაშვება არ შეგიძლიათ.\n\nდამატებითი ინფორმაციისთვის, შეამოწმეთ უსაფრთხოების პარამეტრები."
+msgid "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+"უსაფრთხოების მოსაზრების გამო ამ მაკროს გაშვება არ შეგიძლიათ.\n"
+"\n"
+"დამატებითი ინფორმაციისთვის, შეამოწმეთ უსაფრთხოების პარამეტრები."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
 #, fuzzy
-msgid  "Compile Error: "
+msgid "Compile Error: "
 msgstr "კომპილაციის შეცდომა: "
 
 #: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
 #, fuzzy
-msgid  "Runtime Error: #"
+msgid "Runtime Error: #"
 msgstr "შეცდომა შესრულებისას: #"
 
 #: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
 #, fuzzy
-msgid  "Search key not found"
+msgid "Search key not found"
 msgstr "საძიებო სიტყვა ვერ მოიძებნა"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
 #, fuzzy
-msgid  "Search to last module complete. Continue at first module?"
+msgid "Search to last module complete. Continue at first module?"
 msgstr "ბოლო მოდულის ძიება დასრულებულია. გავაგრძელო პირველი მოდულიდან?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
 #, fuzzy
-msgid  "Search key replaced XX times"
+msgid "Search key replaced XX times"
 msgstr "საძიებო სიტყვა შეიცვალა XX-ჯერ"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
 #, fuzzy
-msgid  "The file could not be read"
+msgid "The file could not be read"
 msgstr "ფაილის წაკითხვა ვერ ხერხდება"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
 #, fuzzy
-msgid  "The file could not be saved"
+msgid "The file could not be saved"
 msgstr "ფაილის დამახსოვრება ვერ ხერხდება"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
 #, fuzzy
-msgid  "The name of the default library cannot be changed."
+msgid "The name of the default library cannot be changed."
 msgstr "ნაგულისხმევი ბიბლიოთეკის სახელის შეცვლა შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
 #, fuzzy
-msgid  "The name of a referenced library cannot be changed."
+msgid "The name of a referenced library cannot be changed."
 msgstr "მიმართული ბიბლიოთეკის სახელის შეცვლა შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
 #, fuzzy
-msgid  "The default library cannot be deactivated"
+msgid "The default library cannot be deactivated"
 msgstr "ნაგულისხმევი ბიბლიოთეკის დეაქტივაცია შეუძლებელია"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Generating source"
+msgid "Generating source"
 msgstr "წყაროს შექმნა"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
 #, fuzzy
-msgid  "File name:"
+msgid "File name:"
 msgstr "ფაილის სახელი:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
 #, fuzzy
-msgid  "Import Libraries"
+msgid "Import Libraries"
 msgstr "ბიბლიოთეკების იმპორტი"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the macro XX?"
+msgid "Do you want to delete the macro XX?"
 msgstr "ნამდვილად გსურთ წაშალოთ  XX მაკრო?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the XX dialog?"
+msgid "Do you want to delete the XX dialog?"
 msgstr "ნამდვილად გსურთ წაშალოთ XX დიალოგი?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the XX library?"
+msgid "Do you want to delete the XX library?"
 msgstr "ნამდვილად გსურთ წაშალოთ XX ბიბლიოთეკა?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the reference to the XX library?"
+msgid "Do you want to delete the reference to the XX library?"
 msgstr "ნამდვილად გსურთ წაშალოთ XX ბიბლიოთეკაზე მიმართვა?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to delete the XX module?"
+msgid "Do you want to delete the XX module?"
 msgstr "ნამდვილად გსურთ XX მოდულის წაშლა?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
 #, fuzzy
-msgid  "Object or method not found"
+msgid "Object or method not found"
 msgstr "ობიექტი ან მეთოდი ვერ მოიძებნა"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
 #, fuzzy
-msgid  "BASIC"
+msgid "BASIC"
 msgstr "BASIC"
 
 #: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Ln"
+msgid "Ln"
 msgstr "სტქ"
 
 #: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
 #, fuzzy
-msgid  "Col"
+msgid "Col"
 msgstr "სვტ"
 
 #: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
 #, fuzzy
-msgid  "Document"
+msgid "Document"
 msgstr "დოკუმენტი"
 
 #: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
 #, fuzzy
-msgid  "Macro Bar"
+msgid "Macro Bar"
 msgstr "მაკროს ზოლი"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 #, fuzzy
-msgid  "The window cannot be closed while BASIC is running."
+msgid "The window cannot be closed while BASIC is running."
 msgstr "ფანჯარა ვერ დაიხურება სანამ BASIC-ია გაშვებული."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 #, fuzzy
-msgid  "The default library cannot be replaced."
+msgid "The default library cannot be replaced."
 msgstr "ნაგულისხმევი ბიბლიოთეკის ჩანაცვლება შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
 #, fuzzy
-msgid  "Reference to 'XX' not possible."
+msgid "Reference to 'XX' not possible."
 msgstr "„XX“-ზე მიმართვა შეუძლებელია."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 #, fuzzy
-msgid  "Watch"
+msgid "Watch"
 msgstr "თვალის დევნა"
 
 #: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
 #, fuzzy
-msgid  "Variable"
+msgid "Variable"
 msgstr "ცვლადი"
 
 #: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
 #, fuzzy
-msgid  "Value"
+msgid "Value"
 msgstr "მნიშვნელობა"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ტიპი"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
 #, fuzzy
-msgid  "Call Stack"
+msgid "Call Stack"
 msgstr "გამოძახების დასტა"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
 #, fuzzy
-msgid  "BASIC Initialization"
+msgid "BASIC Initialization"
 msgstr "BASIC-ის ინიციალიზაცია"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
 #, fuzzy
-msgid  "Module"
+msgid "Module"
 msgstr "მოდული"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
 #, fuzzy
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "დიალოგი"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
 #, fuzzy
-msgid  "Library"
+msgid "Library"
 msgstr "ბიბლიოთეკა"
 
 #: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
 #, fuzzy
-msgid  "New Library"
+msgid "New Library"
 msgstr "ახალი ბიბლიოთეკა"
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
 #, fuzzy
-msgid  "New Module"
+msgid "New Module"
 msgstr "ახალი მოდული"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
 #, fuzzy
-msgid  "New Dialog"
+msgid "New Dialog"
 msgstr "ახალი დიალოგი"
 
 #: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
 #, fuzzy
-msgid  "All"
+msgid "All"
 msgstr "ყველა"
 
 #: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Page"
+msgid "Page"
 msgstr "გვერდი"
 
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 #, fuzzy
-msgid  "A name must be entered."
+msgid "A name must be entered."
 msgstr "სახელის შეტანა აუცილებელია."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
 #, fuzzy
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "ამ რედაქტირების შემდეგ თქვენ საჭიროა პროგრამის კვლავგაშვება.\nგანვაგრძო?"
+msgid "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
+"ამ რედაქტირების შემდეგ თქვენ საჭიროა პროგრამის კვლავგაშვება.\n"
+"განვაგრძო?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to replace the text in all active modules?"
+msgid "Do you want to replace the text in all active modules?"
 msgstr "ტექსტის ჩანაცვლება ყველა აქტიურ მოდულში გნებავთ ?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
 #, fuzzy
-msgid  "Remove Watch"
+msgid "Remove Watch"
 msgstr "თვალის დევნების შეწყვეტა"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
 #, fuzzy
-msgid  "Watch:"
+msgid "Watch:"
 msgstr "მეთვალყურეობა:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 #, fuzzy
-msgid  "Calls: "
+msgid "Calls: "
 msgstr "გამოძახებები:"
 
 #: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
 #, fuzzy
-msgid  "My Macros"
+msgid "My Macros"
 msgstr "ჩემი მაკროები"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 #, fuzzy
-msgid  "My Dialogs"
+msgid "My Dialogs"
 msgstr "ჩემი დიალოგები"
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
 #, fuzzy
-msgid  "My Macros & Dialogs"
+msgid "My Macros & Dialogs"
 msgstr "ჩემი მაკროები და დიალოგები"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Macros"
+msgid "%PRODUCTNAME Macros"
 msgstr "%PRODUCTNAME მაკროები"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Dialogs"
+msgid "%PRODUCTNAME Dialogs"
 msgstr "%PRODUCTNAME დიალოგები"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Macros & Dialogs"
+msgid "%PRODUCTNAME Macros & Dialogs"
 msgstr "%PRODUCTNAME მაკროები და დიალოგები"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
 #, fuzzy
-msgid  "Properties"
+msgid "Properties"
 msgstr "თვისებები"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
 #, fuzzy
-msgid  "Active"
+msgid "Active"
 msgstr "აქტიური"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
 #, fuzzy
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "თვისებები..."
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
 #, fuzzy
-msgid  "Manage Breakpoints"
+msgid "Manage Breakpoints"
 msgstr "წყვეტის წერტილების მართვა"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "Manage Breakpoints..."
+msgid "Manage Breakpoints..."
 msgstr "წყვეტის წერტილების მართვა..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "ჩასმა"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
 #, fuzzy
-msgid  "BASIC Module"
+msgid "BASIC Module"
 msgstr "BASIC-ის მოდული"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
 #, fuzzy
-msgid  "BASIC Dialog"
+msgid "BASIC Dialog"
 msgstr "BASIC-ის დიალოგი"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "წაშლა"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Rename"
+msgid "Rename"
 msgstr "გადარქმევა"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Hide"
+msgid "Hide"
 msgstr "დამალვა"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
-msgid  "Modules..."
+msgid "Modules..."
 msgstr "მოდულები..."
+
+#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
+msgid "Properties..."
+msgstr "თვისებები..."
 
 #: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to overwrite the XX macro?"
+msgid "Do you want to overwrite the XX macro?"
 msgstr "გსურთ ზედ გადააწეროთ XX მაკროს?"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
-msgid  "<Not localized>"
+msgid "<Not localized>"
 msgstr "<ლოკალიზაციის გარეშე>"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "[Default Language]"
-msgstr "[ნაგულისხმევი ენა]"
+msgid "[Default Language]"
+msgstr "[ ნაგულისხმევი ენა ]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
-msgid  "Document Objects"
+msgid "Document Objects"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
-msgid  "Forms"
+msgid "Forms"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
 #, fuzzy
-msgid  "Modules"
+msgid "Modules"
 msgstr "მოდულები"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
-msgid  "Class Modules"
+msgid "Class Modules"
 msgstr ""
 
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
+#, fuzzy
+msgid "Rename"
+msgstr "გადარქმევა"
+
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Name already used"
+msgid "Dialog Import - Name already used"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgid "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
+msgid "Add"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
+msgid "Omit"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
-msgid  "Dialog Import - Language Mismatch"
+msgid "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr ""
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "New"
+msgid "New"
 msgstr "ახალი"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "წაშლა"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Active"
+msgid "Active"
 msgstr "აქტიური"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Pass Count:"
+msgid "Pass Count:"
 msgstr "გატარების ანათვალი:"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Breakpoints"
+msgid "Breakpoints"
 msgstr "წყვეტის წერტილები"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
 #, fuzzy
-msgid  "Manage Breakpoints"
+msgid "Manage Breakpoints"
 msgstr "წყვეტის წერტილების მართვა"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic Macros"
+msgid "%PRODUCTNAME Basic Macros"
 msgstr "%PRODUCTNAME ძირითადი მაკროები"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Existing macros ~in:"
+msgid "Existing macros ~in:"
 msgstr "არსებული მაკროე~ბი:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Macro name"
+msgid "~Macro name"
 msgstr "~მაკროს სახელი"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Macro ~from"
+msgid "Macro ~from"
 msgstr "მაკრო ~დან"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Save m~acro in"
+msgid "Save m~acro in"
 msgstr "შეინახე მა~კრო"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "De~scription"
+msgid "De~scription"
 msgstr "აღწ~ერილობა"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "R~un"
+msgid "R~un"
 msgstr "გაშ~ვება"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "დახურვა"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Assign..."
+msgid "~Assign..."
 msgstr "~მინიჭება..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~რედაქტირება"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "New ~Library"
+msgid "New ~Library"
 msgstr "ახალი ~ბიბლიოთეკა"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "New M~odule"
+msgid "New M~odule"
 msgstr "ახალი მ~ოდული"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~წაშლა"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "~მოწესრიგება..."
 
 #: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
 #, fuzzy
-msgid  "Macro"
+msgid "Macro"
 msgstr "მაკრო"
+
+#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~წაშლა"
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
-msgid  "~New"
+msgid "~New"
 msgstr "~ახალი"
+
+#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "დახურვა"
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 #, fuzzy
-msgid  "Choose"
+msgid "Choose"
 msgstr "არჩევა"
 
 #: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
 #, fuzzy
-msgid  "Run"
+msgid "Run"
 msgstr "გაშვება"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "~შენახვა"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgid "%PRODUCTNAME Basic Macro Organizer"
 msgstr "%PRODUCTNAME მაკროების ძირითადი მნე"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Modules"
+msgid "Modules"
 msgstr "მოდულები"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Dialogs"
+msgid "Dialogs"
 msgstr "დიალოგები"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Libraries"
+msgid "Libraries"
 msgstr "ბიბლიოთეკები"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "M~odule"
+msgid "M~odule"
 msgstr "მ~ოდული"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "~რედაქტირება"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "დახურვა"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
+msgstr "~ახალი..."
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
 msgstr "~ახალი..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~წაშლა"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Dialog"
+msgid "Dialog"
 msgstr "დიალოგი"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Edit"
+msgstr "~რედაქტირება"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "დახურვა"
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~ახალი..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~ახალი..."
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~წაშლა"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "L~ocation"
+msgid "L~ocation"
 msgstr "მდ~ებარეობა"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Library"
+msgid "~Library"
 msgstr "~ბიბლიოთეკა"
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Edit"
+msgstr "~რედაქტირება"
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid "Close"
+msgstr "დახურვა"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Password..."
+msgid "~Password..."
 msgstr "~პაროლი..."
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~New..."
+msgstr "~ახალი..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Import..."
+msgid "~Import..."
 msgstr "~იმპორტი..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "E~xport..."
+msgid "E~xport..."
 msgstr "ე~ქსპორტი..."
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Delete"
+msgstr "~წაშლა"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "პარამეტრები"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Insert as reference (read-only)"
+msgid "Insert as reference (read-only)"
 msgstr "ჩასმა როგორც მიმართვა(მხოლოდ კითხვადი)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Replace existing libraries"
+msgid "Replace existing libraries"
 msgstr "არსებული ბიბლიოთეკების ჩანაცვლება"
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Name:"
+msgid "~Name:"
 msgstr "~სახელი:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Export Basic library"
+msgid "Export Basic library"
 msgstr "ძირითადი ბიბლოთეკის ექსპორტი"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Export as ~extension"
+msgid "Export as ~extension"
 msgstr "გა~ფართოებად ექპორტი"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Export as BASIC library"
+msgid "Export as BASIC library"
 msgstr "BASIC-ის ბიბლიოთეკად ექსპორტი"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
 #, fuzzy
-msgid  "Export library as extension"
+msgid "Export library as extension"
 msgstr "ბიბლიოთეკის გაფართოებად ექპორტი."
+
+#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
+#, fuzzy
+msgid "Export as BASIC library"
+msgstr "BASIC-ის ბიბლიოთეკად ექსპორტი"
 
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 #, fuzzy
-msgid  "Extension"
+msgid "Extension"
 msgstr "გაფართოება"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
+msgstr "აღწერილობა"
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "Description"
 msgstr "აღწერილობა"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Help information"
+msgid "Help information"
 msgstr "დახმარების ინფორმაცია"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Help ID"
+msgid "Help ID"
 msgstr "დახმარების ID"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Help file name"
+msgid "Help file name"
 msgstr "დახმარების ფაილის სახელი"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
 #, fuzzy
-msgid  "Objects"
+msgid "Objects"
 msgstr "ობიექტები"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Show"
+msgid "Show"
 msgstr "ჩვენება"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
-msgid  "Objects Tree"
+msgid "Objects Tree"
 msgstr ""
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Properties: "
+msgid "Properties: "
 msgstr "თვისებები: "
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "No Control marked"
+msgid "No Control marked"
 msgstr "არცერთი კონტროლი არ არის მონიშნული"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 #, fuzzy
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "მრავლობითი არჩევა"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Manage User Interface Languages [$1]"
+msgid "Manage User Interface Languages [$1]"
 msgstr "მომხმარებლის ინტერფეისის ენების მართვა [$1]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Present Languages"
+msgid "Present Languages"
 msgstr "ენების წარმოჩენა"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Add..."
+msgid "Add..."
 msgstr "დამატება..."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "წაშლა"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "ნაგულისხმევი"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr "თუ მომხმარებლის ინტერფეისის ლოკალისათვის ვერ მოიძებნა ლოკალიზაცია, მაშინ ნაგულისხმევი ენა იქნება გამოიყენებული. შემდგომში ყველა პწკარის ასლის გადაღება მოხდება ნაგულისხმევი ენიდან ახლად დამატებული ენის რესურსებში."
+msgid "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+"თუ მომხმარებლის ინტერფეისის ლოკალისათვის ვერ მოიძებნა ლოკალიზაცია, მაშინ "
+"ნაგულისხმევი ენა იქნება გამოიყენებული. შემდგომში ყველა პწკარის ასლის "
+"გადაღება მოხდება ნაგულისხმევი ენიდან ახლად დამატებული ენის რესურსებში."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "~დახურვა"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
 #, fuzzy
-msgid  "[Default Language]"
+msgid "[Default Language]"
 msgstr "[ ნაგულისხმევი ენა ]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~წაშლა"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
 #, fuzzy
-msgid  "<Press 'Add' to create language resources>"
+msgid "<Press 'Add' to create language resources>"
 msgstr "<დაწკაპეთ „დამატება“ ენის რესურსთა შესქმნელად>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
 #, fuzzy
-msgid  "Delete Language Resources"
+msgid "Delete Language Resources"
 msgstr "ენის რესურსების წაშლა"
+
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Set Default User Interface Language"
+msgid "Set Default User Interface Language"
 msgstr "მომხმარებლის ინტერფეისის ნაგულისხმევი ენის დაყენება"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Default language"
+msgid "Default language"
 msgstr "სტანდარტული ენა"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr "ამოირჩიეთ ენა ნაგულისხმევი მომხმარებლის ინტერფეისის ენის განსასაზღვრად. ამჟამად არსებული ყველა პწკარი მიენიჭება არჩეული ენისათვის შექმნილ რესურსებს."
+msgid "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+"ამოირჩიეთ ენა ნაგულისხმევი მომხმარებლის ინტერფეისის ენის განსასაზღვრად. "
+"ამჟამად არსებული ყველა პწკარი მიენიჭება არჩეული ენისათვის შექმნილ რესურსებს."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Add User Interface Languages"
+msgid "Add User Interface Languages"
 msgstr "მომხმარებლის ინტერფეისის ენების დამატება"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Available Languages"
+msgid "Available Languages"
 msgstr "ხელმისაწვდომი ენები"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
 #, fuzzy
-msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr "ამოირჩიეთ დასამატებელი ენები. ბიბლიოთეკაში შეიქმნება რესურსები ამ ენებისათვის. მიმდინარე ნაგულისხმევი მომხმარებლის ინტრეფეისის ენის პწკარების ასლები გადაიღება ამ ახალ რესურსებში ნაგულისხმევად."
+msgid "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+"ამოირჩიეთ დასამატებელი ენები. ბიბლიოთეკაში შეიქმნება რესურსები ამ "
+"ენებისათვის. მიმდინარე ნაგულისხმევი მომხმარებლის ინტრეფეისის ენის პწკარების "
+"ასლები გადაიღება ამ ახალ რესურსებში ნაგულისხმევად."

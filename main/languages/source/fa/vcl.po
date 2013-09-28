@@ -1,833 +1,864 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "تأیید"
 
 #: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "انصراف"
 
 #: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "~بله"
 
 #: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
-msgid  "~No"
+msgid "~No"
 msgstr "~خیر"
 
 #: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
-msgid  "~Retry"
+msgid "~Retry"
 msgstr "~دوباره سعی شود"
 
 #: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
-msgid  "~Help"
+msgid "~Help"
 msgstr "~راهنما"
 
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
 #, fuzzy
-msgid  "~More"
+msgid "~More"
+msgstr "~بیشتر"
+
+#: src/btntext.src#SV_BUTTONTEXT_LESS.STRING.TEXT
+#, fuzzy
+msgid "~More"
 msgstr "~بیشتر"
 
 #: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "~نادیده گرفته شود"
 
 #: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
-msgid  "~Abort"
+msgid "~Abort"
 msgstr "~قطع شود"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "بستن"
 
 #: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
-msgid  "Close Document"
+msgid "Close Document"
 msgstr "بستن نوشتار"
 
 #: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
-msgid  "Minimize"
+msgid "Minimize"
 msgstr "حداقل کردن"
 
 #: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
-msgid  "Maximize"
+msgid "Maximize"
 msgstr "حداکثر کردن"
 
 #: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
-msgid  "Restore"
+msgid "Restore"
 msgstr "بازگرداندن"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
-msgid  "Drop down"
+msgid "Drop down"
 msgstr "جمع کردن"
 
 #: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
-msgid  "Roll up"
+msgid "Roll up"
 msgstr "باز کردن"
 
+#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
-msgid  "Always visible"
+msgid "Always visible"
 msgstr "همیشه مرئی"
 
 #: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
-msgid  "Show"
+msgid "Show"
 msgstr "نشان دادن"
 
 #: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
-msgid  "Hide"
+msgid "Hide"
 msgstr "مخفی کردن"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
-msgid  "Floating"
+msgid "Floating"
 msgstr "شناور"
 
 #: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
-msgid  "Stick"
+msgid "Stick"
 msgstr "چسبیدن"
 
+#: src/helptext.src#SV_SHORTCUT_HELP.STRING.TEXT
+msgid "Help"
+msgstr ""
+
 #: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
-msgid  "Context Help"
+msgid "Context Help"
 msgstr "راهنمای محتوایی"
 
 #: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
-msgid  "Extended Tips"
+msgid "Extended Tips"
 msgstr "راهنمایی‌های مفصل"
 
 #: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
-msgid  "Dock/Undock Windows"
+msgid "Dock/Undock Windows"
 msgstr "وصل/جدا شدن پنجره‌ها"
 
 #: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
-msgid  "To Next Toolbar/Window"
+msgid "To Next Toolbar/Window"
 msgstr "به نوار ابزار/پنجرهٔ بعدی"
 
 #: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
-msgid  "To Previous Toolbar/Window"
+msgid "To Previous Toolbar/Window"
 msgstr "به نوار ابزار/پنجرهٔ قبلی"
 
 #: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
-msgid  "To Document"
+msgid "To Document"
 msgstr "به نوشتار"
 
 #: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
-msgid  "To Menu Bar"
+msgid "To Menu Bar"
 msgstr "به نوار منو"
 
 #: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
-msgid  "Split window separator"
+msgid "Split window separator"
 msgstr "جدا کننده پنجره تقسیم"
 
 #: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
-msgid  "<No selection possible>"
+msgid "<No selection possible>"
 msgstr "<انتخاب امکان ندارد>"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
-msgid  "~Undo"
+msgid "~Undo"
 msgstr "~برگردان"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "بر~ش"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "~نسخه‌برداری"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "~چسباندن"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "~حذف"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
-msgid  "Select ~All"
+msgid "Select ~All"
 msgstr "انتخاب ~همه"
 
 #: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
-msgid  "~Special Character..."
+msgid "~Special Character..."
 msgstr "نویسهٔ ~خاص..."
 
 #: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
-msgid  "Services"
+msgid "Services"
 msgstr "سرویس‌ها"
 
 #: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
-msgid  "Hide %PRODUCTNAME"
+msgid "Hide %PRODUCTNAME"
 msgstr "مخفی کردن %PRODUCTNAME"
 
 #: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
-msgid  "Hide Others"
+msgid "Hide Others"
 msgstr "مخفی کردن سایر"
 
 #: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
-msgid  "Show All"
+msgid "Show All"
 msgstr "نمایش همه"
 
 #: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
-msgid  "Quit %PRODUCTNAME"
+msgid "Quit %PRODUCTNAME"
 msgstr "خروج %PRODUCTNAME"
 
 #: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Print"
+msgid "Print"
 msgstr "چاپ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
-msgid  "~Print"
+msgid "~Print"
 msgstr "~چاپ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
-msgid  "/ %n"
+msgid "/ %n"
 msgstr "/ %n"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
-msgid  "No pages"
+msgid "No pages"
 msgstr "هیچ صفحه‌ای"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
-msgid  "Print to File..."
+msgid "Print to File..."
 msgstr "چاپ در فایل..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
-msgid  "Default printer"
+msgid "Default printer"
 msgstr "چاپگر پیش‌گزیده"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
-msgid  "Print preview"
+msgid "Print preview"
 msgstr "پیش‌نمایش چاپ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
 #, fuzzy
-msgid  "Page Layout"
+msgid "Page Layout"
 msgstr "طرح‌بندی صفحه"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
-msgid  "Layout"
+msgid "Layout"
 msgstr "طرح‌بندی"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
-msgid  "Pa~ges per sheet"
+msgid "Pa~ges per sheet"
 msgstr "صف~حات در هر ورق"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
-msgid  "1"
+msgid "1"
 msgstr "۱"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
-msgid  "2"
+msgid "2"
 msgstr "۲"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
-msgid  "4"
+msgid "4"
 msgstr "۴"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
-msgid  "6"
+msgid "6"
 msgstr "۶"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
-msgid  "9"
+msgid "9"
 msgstr "۹"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
-msgid  "16"
+msgid "16"
 msgstr "۱۶"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
-msgid  "Custom"
+msgid "Custom"
 msgstr "سفارشی"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
-msgid  "P~ages"
+msgid "P~ages"
 msgstr "ص~فحات"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
-msgid  "b~y"
+msgid "b~y"
 msgstr "تو~سط"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "~فاصله"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
-msgid  "between pages"
+msgid "between pages"
 msgstr "بین صفحات"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
-msgid  "~Margin"
+msgid "~Margin"
 msgstr "~حاشیه"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
-msgid  "to sheet border"
+msgid "to sheet border"
 msgstr "به حاشیه‌ی برگ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Orientation"
+msgid "~Orientation"
 msgstr "~جهت"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "خودکار"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "پرتره"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "چشم انداز"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Order"
+msgid "Order"
 msgstr "ترتیب"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
 #, fuzzy
-msgid  "left to right, then down"
+msgid "left to right, then down"
 msgstr "چپ به راست، سپس پایین"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
 #, fuzzy
-msgid  "top to bottom, then right"
+msgid "top to bottom, then right"
 msgstr "بالا به پایین، سپس راست"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
 #, fuzzy
-msgid  "top to bottom, then left"
+msgid "top to bottom, then left"
 msgstr "بالا به پایین، سپس چپ"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
 #, fuzzy
-msgid  "right to left, then down"
+msgid "right to left, then down"
 msgstr "راست به چپ، سپس پایین"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Draw a border around each page"
+msgid "Draw a border around each page"
 msgstr "کشیدن یک کادر اطراف هر صفحه"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
 #, fuzzy
-msgid  "General"
+msgid "General"
 msgstr "عمومی"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Prin~ter"
+msgid "Prin~ter"
 msgstr "چاپ~گر"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Details"
+msgid "Details"
 msgstr "جزئیات"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Status:"
+msgid "Status:"
 msgstr "وضعیت:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Location:"
+msgid "Location:"
 msgstr "مکان:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Comment:"
+msgid "Comment:"
 msgstr "توضیح:"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "مشخصات..."
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Range and copies"
+msgid "Range and copies"
 msgstr "محدوده و رونوشت‌ها"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Number of copies"
+msgid "Number of copies"
 msgstr "تعداد رونوشت‌ها"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Collate"
+msgid "Collate"
 msgstr "تطبیق"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Print in ~reverse page order"
+msgid "Print in ~reverse page order"
 msgstr "چاپ صفحات با ترتیب معکوس"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
+msgstr "گزینه ها"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Options"
 msgstr "گزینه ها"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "چاپ به ~پرونده"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Create single print jobs for collated output"
+msgid "~Create single print jobs for collated output"
 msgstr "~ایجاد چاپگر تک منظوره برای تطبیق خروجی"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
 #, fuzzy
-msgid  "Printing"
+msgid "Printing"
 msgstr "درحال چاپ"
 
 #: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Page %p of %n"
+msgid "Page %p of %n"
 msgstr "چاپ %p از %n"
 
 #: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "هیچ چاپگر پیش‌گزیده‌ی پیدا نشد.\nلطفاً یک چاپگر را انتخاب و دوباره سعی کنید."
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"هیچ چاپگر پیش‌گزیده‌ی پیدا نشد.\n"
+"لطفاً یک چاپگر را انتخاب و دوباره سعی کنید."
 
 #: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr "هیچ صفحه‌ای برای چاپ وجود ندارد. لطفاً سند خود را برای محدوده های مربوط به چاپ کردن بررسی کنید."
+msgid "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr ""
+"هیچ صفحه‌ای برای چاپ وجود ندارد. لطفاً سند خود را برای محدوده های مربوط به "
+"چاپ کردن بررسی کنید."
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Preview"
+msgid "Preview"
 msgstr "پیش‌نمایش"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Page number"
+msgid "Page number"
 msgstr "شماره صفحه"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Number of pages"
+msgid "Number of pages"
 msgstr "تعداد صفحات"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "More"
+msgid "More"
 msgstr "بیشتر"
 
 #: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Print selection only"
+msgid "Print selection only"
 msgstr "چاپ قسمت انتخاب‌شده"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A0"
+msgid "A0"
 msgstr "A0"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A1"
+msgid "A1"
 msgstr "A1"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A2"
+msgid "A2"
 msgstr "A2"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A3"
+msgid "A3"
 msgstr "A3"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A4"
+msgid "A4"
 msgstr "A4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
 #, fuzzy
-msgid  "A5"
+msgid "A5"
 msgstr "A5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B4 (ISO)"
+msgid "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B5 (ISO)"
+msgid "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Letter"
+msgid "Letter"
 msgstr "نامه"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Legal"
+msgid "Legal"
 msgstr "قانونی"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Tabloid"
+msgid "Tabloid"
 msgstr "خلاصه‌شده"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
 #, fuzzy
-msgid  "User Defined"
+msgid "User Defined"
 msgstr "تعریف‌شده توسط کاربر"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B6 (ISO)"
+msgid "B6 (ISO)"
 msgstr "B6 (ISO)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
 #, fuzzy
-msgid  "C4 Envelope"
+msgid "C4 Envelope"
 msgstr "پاکت C4"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
 #, fuzzy
-msgid  "C5 Envelope"
+msgid "C5 Envelope"
 msgstr "پاکت C5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
 #, fuzzy
-msgid  "C6 Envelope"
+msgid "C6 Envelope"
 msgstr "پاکت C6"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
 #, fuzzy
-msgid  "C6/5 Envelope"
+msgid "C6/5 Envelope"
 msgstr "پاکت C6/5"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
 #, fuzzy
-msgid  "DL Envelope"
+msgid "DL Envelope"
 msgstr "پاکت DL"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
-msgid  "Dia Slide"
+msgid "Dia Slide"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Screen"
+msgid "Screen"
 msgstr "صفحه‌ی نمایش"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
 #, fuzzy
-msgid  "C"
+msgid "C"
 msgstr "C"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
 #, fuzzy
-msgid  "D"
+msgid "D"
 msgstr "D"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
 #, fuzzy
-msgid  "E"
+msgid "E"
 msgstr "E"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Executive"
+msgid "Executive"
 msgstr "اجرایی"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
-msgid  "Long Bond"
+msgid "Long Bond"
 msgstr ""
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#8 (Monarch) Envelope"
+msgid "#8 (Monarch) Envelope"
 msgstr "پاکت (سلطان) شماره ۸"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#6 3/4 (Personal) Envelope"
+msgid "#6 3/4 (Personal) Envelope"
 msgstr "پاکت (شخصی) ۳/۴ شماره ۶"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#9 Envelope"
+msgid "#9 Envelope"
 msgstr "پاکت شماره ۹"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#10 Envelope"
+msgid "#10 Envelope"
 msgstr "پاکت شماره ۱۰"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#11 Envelope"
+msgid "#11 Envelope"
 msgstr "پاکت شماره ۱۱"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
 #, fuzzy
-msgid  "#12 Envelope"
+msgid "#12 Envelope"
 msgstr "پاکت شماره ۱۲"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
 #, fuzzy
-msgid  "16 Kai"
+msgid "16 Kai"
 msgstr "16 Kai"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
 #, fuzzy
-msgid  "32 Kai"
+msgid "32 Kai"
 msgstr "Kai 32"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Big 32 Kai"
+msgid "Big 32 Kai"
 msgstr "Kai 32 بزرگ"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B4 (JIS)"
+msgid "B4 (JIS)"
 msgstr "B4 (با تبدیل نیم‌فاصله به فاصله)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B5 (JIS)"
+msgid "B5 (JIS)"
 msgstr "B5 (با تبدیل نیم‌فاصله به فاصله)"
 
 #: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
 #, fuzzy
-msgid  "B6 (JIS)"
+msgid "B6 (JIS)"
 msgstr "B6 (با تبدیل نیم‌فاصله به فاصله)"
 
 #: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
 #, fuzzy
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "بار کردن مؤلفه‌ی (%s) ممکن نبود.\nلطفاً برنامه‌ی برپاسازی را با گزینه‌ی repair آغاز کنید."
+msgid "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr ""
+"بار کردن مؤلفه‌ی (%s) ممکن نبود.\n"
+"لطفاً برنامه‌ی برپاسازی را با گزینه‌ی repair آغاز کنید."
 
 #: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
 #, fuzzy
-msgid  "Do not show this information again."
+msgid "Do not show this information again."
 msgstr "این اطلاعات دیگر نشان داده نشود."
 
 #: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
 #, fuzzy
-msgid  "Do not show this question again."
+msgid "Do not show this question again."
 msgstr "این سؤال دیگر نشان داده نشود."
 
 #: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
 #, fuzzy
-msgid  "Do not show warning again."
+msgid "Do not show warning again."
 msgstr "این اخطار دیگر نشان داده نشود."
 
 #: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
 #, fuzzy
-msgid  "Wrong Version"
+msgid "Wrong Version"
 msgstr "نسخهٔ اشتباه"
 
 #: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr "‏%PRODUCTNAME %PRODUCTVERSION برای پشتیبانی از دسترسی‌پذیری به جاوای نسخهٔ 1.4.0_02 یا جدیدتر نیاز دارد."
+msgid "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr ""
+"‏%PRODUCTNAME %PRODUCTVERSION برای پشتیبانی از دسترسی‌پذیری به جاوای نسخهٔ "
+"1.4.0_02 یا جدیدتر نیاز دارد."
 
 #: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
 #, fuzzy
-msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr "برای آغاز %PRODUCTNAME %PRODUCTVERSION بدون پشتیبانی دسترسی‌پذیری روی «تأیید» و برای خروج از %PRODUCTNAME %PRODUCTVERSION روی «انصراف» کلیک کنید."
+msgid "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+"برای آغاز %PRODUCTNAME %PRODUCTVERSION بدون پشتیبانی دسترسی‌پذیری روی "
+"«تأیید» و برای خروج از %PRODUCTNAME %PRODUCTVERSION روی «انصراف» کلیک کنید."
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
 #, fuzzy
-msgid  "No Java Access Bridge"
+msgid "No Java Access Bridge"
 msgstr "جاوا پل دسترسی ندارد"
 
 #: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
 #, fuzzy
-msgid  "Faulty Java Installation"
+msgid "Faulty Java Installation"
 msgstr "جاوای نصب شده خراب است"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr "‏%PRODUCTNAME %PRODUCTVERSION برای پشتیبانی از دسترسی‌پذیری به جاوای نسخهٔ 1.4.0_02 یا جدیدتر نیاز دارد."
+msgid "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ""
+"‏%PRODUCTNAME %PRODUCTVERSION برای پشتیبانی از دسترسی‌پذیری به جاوای نسخهٔ "
+"1.4.0_02 یا جدیدتر نیاز دارد."
 
 #: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
 #, fuzzy
-msgid  "No Java Installation"
+msgid "No Java Installation"
 msgstr "جاوا نصب نشده است"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
 #, fuzzy
-msgid  "Missing Java Configuration"
+msgid "Missing Java Configuration"
 msgstr "پیکربندی جاوا مفقود است"
 
 #: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
 #, fuzzy
-msgid  "Java Disabled"
+msgid "Java Disabled"
 msgstr "جاوا از کار افتاده است"
 
 #: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
 #, fuzzy
-msgid  "The Java Access Bridge could not be started."
+msgid "The Java Access Bridge could not be started."
 msgstr "پل دسترسی جاوا نمی تواند آغاز شود."
 
 #: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
 #, fuzzy
-msgid  "No fonts could be found on the system."
+msgid "No fonts could be found on the system."
 msgstr "هیچیک از قلم‌ها روی سامانه پیدا نشد.‌"
 
 #: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
 #, fuzzy
-msgid  "About %PRODUCTNAME"
+msgid "About %PRODUCTNAME"
 msgstr "درباره %PRODUCTNAME"
 
 #: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
 #, fuzzy
-msgid  "Preferences..."
+msgid "Preferences..."
 msgstr "تنظیمات..."
 
 #: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgid "The inserted text exceeded the maximum length of this text field. The text was truncated."
 msgstr "متن درج شده بیش از حداکثر طول این رشته متنی است. متن کوتاه شده."
 
 #: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
 #, fuzzy
-msgid  "Screen %d"
+msgid "Screen %d"
 msgstr "صفحه %d"
 
 #: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
 #, fuzzy
-msgid  "Any type"
+msgid "Any type"
 msgstr "هر نوع"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
 #, fuzzy
-msgid  "mm"
+msgid "mm"
 msgstr "میلی‌متر"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
 #, fuzzy
-msgid  "cm"
+msgid "cm"
 msgstr "سانتی‌متر"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
 #, fuzzy
-msgid  "m"
+msgid "m"
 msgstr "متر"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
 #, fuzzy
-msgid  "km"
+msgid "km"
 msgstr "کیلومتر"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
 #, fuzzy
-msgid  "twips"
+msgid "twips"
 msgstr "twips"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
 #, fuzzy
-msgid  "twip"
+msgid "twip"
 msgstr "twip"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "pt"
+msgid "pt"
 msgstr "pt"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
 #, fuzzy
-msgid  "pi"
+msgid "pi"
 msgstr "pi"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
 #, fuzzy
-msgid  "\""
+msgid "\""
 msgstr "\""
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
 #, fuzzy
-msgid  "in"
+msgid "in"
 msgstr "اینچ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
 #, fuzzy
-msgid  "inch"
+msgid "inch"
 msgstr "اینچ"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "'"
+msgid "'"
 msgstr "'"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "ft"
+msgid "ft"
 msgstr "فوت"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "foot"
+msgid "foot"
 msgstr "فوت"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "feet"
+msgid "feet"
 msgstr "فوت"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
 #, fuzzy
-msgid  "miles"
+msgid "miles"
 msgstr "مایل"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
 #, fuzzy
-msgid  "mile"
+msgid "mile"
 msgstr "مایل"
 
 #: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
 #, fuzzy
-msgid  "%"
+msgid "%"
 msgstr "%"

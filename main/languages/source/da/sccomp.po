@@ -1,76 +1,77 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
-msgid  "%PRODUCTNAME Linear Solver"
+msgid "%PRODUCTNAME Linear Solver"
 msgstr "%PRODUCTNAME Lineær problemløser"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
-msgid  "Assume variables as non-negative"
+msgid "Assume variables as non-negative"
 msgstr "Antag variable som ikke-negative"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
-msgid  "Assume variables as integer"
+msgid "Assume variables as integer"
 msgstr "Antag variabler som heltal"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
-msgid  "Solving time limit (seconds)"
+msgid "Solving time limit (seconds)"
 msgstr "Grænse for løsningstid (sekunder)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
-msgid  "Epsilon level (0-3)"
+msgid "Epsilon level (0-3)"
 msgstr "Epsilon niveau (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
-msgid  "Limit branch-and-bound depth"
+msgid "Limit branch-and-bound depth"
 msgstr "Begræns dybden af branch-and-bound"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
-msgid  "The model is not linear."
+msgid "The model is not linear."
 msgstr "Modellen er ikke lineær."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
-msgid  "The epsilon level is invalid."
+msgid "The epsilon level is invalid."
 msgstr "Epsilonniveauet er ugyldigt."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
-msgid  "The model is infeasible. Check limiting conditions."
+msgid "The model is infeasible. Check limiting conditions."
 msgstr "Modellen er ubrugelig. Kontroller begrænsende betingelser."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
-msgid  "The model is unbounded."
+msgid "The model is unbounded."
 msgstr "Modellen er ikke bundet."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
-msgid  "The time limit was reached."
+msgid "The time limit was reached."
 msgstr "Tidsgrænsen blev nået."

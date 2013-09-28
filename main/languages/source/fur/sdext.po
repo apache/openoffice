@@ -1,32 +1,297 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid "Presentation Minimizer"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid "Presentation Minimizer - Result"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
+msgid "Steps"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
+msgid "~Help"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
+msgid "< ~Back"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
+msgid "~Next >"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
+msgid "~Finish"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
+msgid "Cancel"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
+msgid "Introduction"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid "~Choose settings for Presentation Minimizer"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
+msgid "~Delete"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
+msgid "Choose settings for optimizing pictures and graphics"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
+msgid "Graphics"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
+msgid "~Lossless compression"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
+msgid "~JPEG compression"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
+msgid "~Quality in %"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
+msgid "~Delete cropped graphic areas"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
+msgid "Reduce ~image resolution"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid "<no change>"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
+msgid "90;90 DPI (screen resolution)"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
+msgid "150;150 DPI (projector resolution)"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
+msgid "300;300 DPI (print resolution)"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
+msgid "~Break links to external graphics"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
+msgid "OLE Objects"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
+msgid "Choose settings for replacing OLE objects"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
+msgid "Create static replacement graphics for OLE objects"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
+msgid "For ~all OLE objects"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
+msgid "~For OLE objects not based on OpenDocument format"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
+msgid "Slides"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
+msgid "Choose which slides to delete"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
+msgid "Master Pages"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
+msgid "Delete unused ~master pages"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
+msgid "~Clear notes"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
+msgid "Delete hidden ~slides"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
+msgid "Delete slides that are not used for the ~custom slide show"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
+msgid "Summary"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
+msgid "Choose where to apply the following changes"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
+msgid "Progress"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
+msgid "Objects optimized"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
+msgid "~Apply changes to current presentation"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
+msgid "~Open newly created presentation"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
+msgid "~Save settings as"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
+msgid "~Duplicate presentation before applying changes"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
+msgid "Delete %SLIDES slides."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
+msgid "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
+msgid "Create replacement graphics for %OLE objects."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
+msgid "Current file size:"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
+msgid "Estimated new file size:"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
+msgid "%1 MB"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
+msgid "My Settings "
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
+msgid "default session"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
+msgid "The optimization will modify the current document. Do you want to continue?"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
+msgid "~Yes"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
+msgid "OK"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
+msgid "Duplicating presentation..."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
+msgid "Deleting slides..."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
+msgid "Optimizing graphics..."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
+msgid "Creating replacement graphics for OLE objects..."
+msgstr ""
+
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
+msgid "."
+msgstr ""

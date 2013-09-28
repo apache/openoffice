@@ -1,412 +1,469 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_OCTSTREAM.STRING.TEXT
-msgid  "Binary file"
+msgid "Binary file"
 msgstr "Binarna datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_PDF.STRING.TEXT
-msgid  "PDF file"
+msgid "PDF file"
 msgstr "PDF datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_RTF.STRING.TEXT
-msgid  "RTF File"
+msgid "RTF File"
 msgstr "RTF datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSWORD.STRING.TEXT
-msgid  "MS-Word document"
+msgid "MS-Word document"
 msgstr "MS Word dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCALC.STRING.TEXT
-msgid  "%PRODUCTNAME Spreadsheet"
+msgid "%PRODUCTNAME Spreadsheet"
 msgstr "%PRODUCTNAME tablični proračun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCHART.STRING.TEXT
-msgid  "%PRODUCTNAME Chart"
+msgid "%PRODUCTNAME Chart"
 msgstr "%PRODUCTNAME grafikon"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARDRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Drawing"
+msgid "%PRODUCTNAME Drawing"
 msgstr "%PRODUCTNAME crtež"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMAGE.STRING.TEXT
-msgid  "%PRODUCTNAME Image"
+msgid "%PRODUCTNAME Image"
 msgstr "%PRODUCTNAME slika"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARMATH.STRING.TEXT
-msgid  "%PRODUCTNAME Formula"
+msgid "%PRODUCTNAME Formula"
 msgstr "%PRODUCTNAME formula"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARWRITER.STRING.TEXT
-msgid  "%PRODUCTNAME Text"
+msgid "%PRODUCTNAME Text"
 msgstr "%PRODUCTNAME tekst"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_ZIP.STRING.TEXT
-msgid  "ZIP file"
+msgid "ZIP file"
 msgstr "ZIP datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_JAR.STRING.TEXT
-msgid  "JAR file"
+msgid "JAR file"
 msgstr "JAR datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.STRING.TEXT
-msgid  "Audio file"
+msgid "Audio file"
+msgstr "Audio datoteka"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.STRING.TEXT
+msgid "Audio file"
+msgstr "Audio datoteka"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.STRING.TEXT
+msgid "Audio file"
+msgstr "Audio datoteka"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.STRING.TEXT
+msgid "Audio file"
 msgstr "Audio datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.STRING.TEXT
-msgid  "Graphics"
+msgid "Graphics"
+msgstr "Ilustracije"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.STRING.TEXT
+msgid "Graphics"
+msgstr "Ilustracije"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.STRING.TEXT
+msgid "Graphics"
 msgstr "Ilustracije"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_BMP.STRING.TEXT
-msgid  "Bitmap"
+msgid "Bitmap"
 msgstr "Bitmapa"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_HTML.STRING.TEXT
-msgid  "HTML document"
+msgid "HTML document"
 msgstr "HTML dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_PLAIN.STRING.TEXT
-msgid  "Text file"
+msgid "Text file"
 msgstr "Tekstualna datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_URL.STRING.TEXT
-msgid  "Bookmark"
+msgid "Bookmark"
 msgstr "Zabilješka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCARD.STRING.TEXT
-msgid  "vCard file"
+msgid "vCard file"
 msgstr "vCard datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.STRING.TEXT
-msgid  "Video file"
+msgid "Video file"
+msgstr "Video datoteka"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.STRING.TEXT
+msgid "Video file"
 msgstr "Video datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.STRING.TEXT
-msgid  "Message"
+msgid "Message"
 msgstr "Poruka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_X_VRML.STRING.TEXT
-msgid  "VRML file"
+msgid "VRML file"
 msgstr "VRML datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMPRESS.STRING.TEXT
-msgid  "%PRODUCTNAME Presentation"
+msgid "%PRODUCTNAME Presentation"
 msgstr "%PRODUCTNAME prezentacija"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_IMPRESSPACKED.STRING.TEXT
-msgid  "%PRODUCTNAME Presentation (packed)"
+msgid "%PRODUCTNAME Presentation (packed)"
 msgstr "%PRODUCTNAME prezentacija (zapakovana)"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARHELP.STRING.TEXT
-msgid  "%PRODUCTNAME Help"
+msgid "%PRODUCTNAME Help"
 msgstr "Pomoć za %PRODUCTNAME"
 
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.STRING.TEXT
+msgid "Message"
+msgstr "Poruka"
+
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DOCUMENT.STRING.TEXT
-msgid  "Document"
+msgid "Document"
 msgstr "Dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_POP3BOX.STRING.TEXT
-msgid  "POP3 Account"
+msgid "POP3 Account"
 msgstr "POP3 račun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPBOX.STRING.TEXT
-msgid  "IMAP Account"
+msgid "IMAP Account"
 msgstr "IMAP račun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.STRING.TEXT
-msgid  "Folder"
+msgid "Folder"
 msgstr "Direktorij"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMBOX.STRING.TEXT
-msgid  "VIM Account"
+msgid "VIM Account"
 msgstr "VIM račun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMINBOX.STRING.TEXT
-msgid  "Inbox"
+msgid "Inbox"
 msgstr "Dolazna pošta"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BBBOX.STRING.TEXT
-msgid  "Newsgroups"
+msgid "Newsgroups"
 msgstr "Novinske grupe"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIM_BB.STRING.TEXT
-msgid  "Newsgroup"
+msgid "Newsgroup"
 msgstr "Novinska grupa"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSBOX.STRING.TEXT
-msgid  "News"
+msgid "News"
 msgstr "Novosti"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSGRP.STRING.TEXT
-msgid  "Group"
+msgid "Group"
 msgstr "Grupa"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_OUTBOX.STRING.TEXT
-msgid  "Outbox"
+msgid "Outbox"
 msgstr "Izlazna pošta"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPBOX.STRING.TEXT
-msgid  "FTP Account"
+msgid "FTP Account"
 msgstr "FTP račun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFLD.STRING.TEXT
-msgid  "FTP Folder"
+msgid "FTP Folder"
 msgstr "FTP direktorij"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFILE.STRING.TEXT
-msgid  "FTP File"
+msgid "FTP File"
 msgstr "FTP datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPLINK.STRING.TEXT
-msgid  "FTP Link"
+msgid "FTP Link"
 msgstr "FTP link"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_HTTPBOX.STRING.TEXT
-msgid  "HTTP"
+msgid "HTTP"
 msgstr "HTTP"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSBOX.STRING.TEXT
-msgid  "Workplace"
+msgid "Workplace"
 msgstr "Radno mjesto"
 
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.STRING.TEXT
+msgid "Folder"
+msgstr "Direktorij"
+
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFILE.STRING.TEXT
-msgid  "File"
+msgid "File"
 msgstr "Datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSURLFILE.STRING.TEXT
-msgid  "Link"
+msgid "Link"
 msgstr "Veza"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_PUBLBOX.STRING.TEXT
-msgid  "Project"
+msgid "Project"
 msgstr "Projekat"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SRCHBOX.STRING.TEXT
-msgid  "Find"
+msgid "Find"
 msgstr "Nađi"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SUBSCRBOX.STRING.TEXT
-msgid  "Subscriptions"
+msgid "Subscriptions"
 msgstr "Pretplate"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BOOKMARK.STRING.TEXT
-msgid  "Bookmark subscription"
+msgid "Bookmark subscription"
 msgstr "Pretplata na zabilješke"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.STRING.TEXT
-msgid  "Channel subscription"
+msgid "Channel subscription"
+msgstr "Pretplata na kanale"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.STRING.TEXT
+msgid "Channel subscription"
+msgstr "Pretplata na kanale"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.STRING.TEXT
+msgid "Channel subscription"
 msgstr "Pretplata na kanale"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_STARCHANNEL.STRING.TEXT
-msgid  "StarChannel"
+msgid "StarChannel"
 msgstr "Starchannel"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASHBOX.STRING.TEXT
-msgid  "Recycle Bin"
+msgid "Recycle Bin"
 msgstr "Kanta za smeće"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASH.STRING.TEXT
-msgid  "Deleted Object"
+msgid "Deleted Object"
 msgstr "Izbrisani objekt"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.STRING.TEXT
-msgid  "Local drive"
+msgid "Local drive"
+msgstr "Lokalni disk"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.STRING.TEXT
+msgid "Local drive"
 msgstr "Lokalni disk"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REM_VOL.STRING.TEXT
-msgid  "Network connection"
+msgid "Network connection"
 msgstr "Mrežna konekcija"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_RAM_VOL.STRING.TEXT
-msgid  "RAM Disk"
+msgid "RAM Disk"
 msgstr "RAM disk"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDROM.STRING.TEXT
-msgid  "CD-ROM drive"
+msgid "CD-ROM drive"
 msgstr "CD-ROM jedinica"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_35.STRING.TEXT
-msgid  "3.5'' Disk"
+msgid "3.5'' Disk"
 msgstr "3.5'' disketa"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_525.STRING.TEXT
-msgid  "5.25'' Disk"
+msgid "5.25'' Disk"
 msgstr "5.25'' disketa"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TAPEDRIVE.STRING.TEXT
-msgid  "Tape drive"
+msgid "Tape drive"
 msgstr "Kaseta"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL.STRING.TEXT
-msgid  "Gallery"
+msgid "Gallery"
 msgstr "Galerija"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL_THEME.STRING.TEXT
-msgid  "Gallery theme"
+msgid "Gallery theme"
 msgstr "Galerija tema"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_GLOB.STRING.TEXT
-msgid  "%PRODUCTNAME Master Document"
+msgid "%PRODUCTNAME Master Document"
 msgstr "%PRODUCTNAME glavni dokument"
 
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.STRING.TEXT
+msgid "Message"
+msgstr "Poruka"
+
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.STRING.TEXT
+msgid "Message"
+msgstr "Poruka"
+
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_WEB.STRING.TEXT
-msgid  "%PRODUCTNAME Writer/Web"
+msgid "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE.STRING.TEXT
-msgid  "Tasks & Events"
+msgid "Tasks & Events"
 msgstr "Zadaci i događaji"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_EVT.STRING.TEXT
-msgid  "%PRODUCTNAME Events View"
+msgid "%PRODUCTNAME Events View"
 msgstr "%PRODUCTNAME pogled događaja"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_TASK.STRING.TEXT
-msgid  "%PRODUCTNAME Task View"
+msgid "%PRODUCTNAME Task View"
 msgstr "%PRODUCTNAME pogled zadataka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FEVT.STRING.TEXT
-msgid  "%PRODUCTNAME Event"
+msgid "%PRODUCTNAME Event"
 msgstr "%PRODUCTNAME događaj"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FTASK.STRING.TEXT
-msgid  "%PRODUCTNAME Task"
+msgid "%PRODUCTNAME Task"
 msgstr "%PRODUCTNAME zadatak"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_FRAMESET.STRING.TEXT
-msgid  "Frameset Document"
+msgid "Frameset Document"
 msgstr "Dokument sa skupom okvira"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_MACRO.STRING.TEXT
-msgid  "Macro file"
+msgid "Macro file"
 msgstr "Makro datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFOLDER.STRING.TEXT
-msgid  "System folder"
+msgid "System folder"
 msgstr "Sistemski direktorij"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFILE.STRING.TEXT
-msgid  "System object"
+msgid "System object"
 msgstr "Sistemski objekt"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_TEMPLATE.STRING.TEXT
-msgid  "%PRODUCTNAME Template"
+msgid "%PRODUCTNAME Template"
 msgstr "Šablon programa %PRODUCTNAME"
 
+#: misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.STRING.TEXT
+msgid "Graphics"
+msgstr "Ilustracije"
+
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL.STRING.TEXT
-msgid  "MS Excel document"
+msgid "MS Excel document"
 msgstr "MS Excel dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL_TEMPL.STRING.TEXT
-msgid  "MS Excel Template"
+msgid "MS Excel Template"
 msgstr "MS Excel šablon"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSPPOINT.STRING.TEXT
-msgid  "MS PowerPoint document"
+msgid "MS PowerPoint document"
 msgstr "MS PowerPoint dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCALENDAR.STRING.TEXT
-msgid  "vCalendar-file"
+msgid "vCalendar-file"
 msgstr "vCalendar datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_ICALENDAR.STRING.TEXT
-msgid  "iCalendar-File"
+msgid "iCalendar-File"
 msgstr "iCalendar datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_XMLICALENDAR.STRING.TEXT
-msgid  "XML-iCalendar-File"
+msgid "XML-iCalendar-File"
 msgstr "XML iCalendar datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_CDE_CALENDAR_APP.STRING.TEXT
-msgid  "CDE-Calendar-File"
+msgid "CDE-Calendar-File"
 msgstr "CDE Calendar datoteka"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MSG_RFC822.STRING.TEXT
-msgid  "message/rfc822"
+msgid "message/rfc822"
 msgstr "message/rfc822"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_ALTERNATIVE.STRING.TEXT
-msgid  "multipart/alternative"
+msgid "multipart/alternative"
 msgstr "multipart/alternative"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_DIGEST.STRING.TEXT
-msgid  "multipart/digest"
+msgid "multipart/digest"
 msgstr "multipart/digest"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_PARALLEL.STRING.TEXT
-msgid  "multipart/parallel"
+msgid "multipart/parallel"
 msgstr "multipart/parallel"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_RELATED.STRING.TEXT
-msgid  "multipart/related"
+msgid "multipart/related"
 msgstr "multipart/related"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_MIXED.STRING.TEXT
-msgid  "multipart/mixed"
+msgid "multipart/mixed"
 msgstr "multipart/mixed"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION tablični proračun"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION grafikon"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION crtež"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION formula"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION tekst dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION prezentacija"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION glavni dokument"
 
 #: misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION prezentacija (zapakovana)"
 
 #: items/cstitem.src#STR_COLUM_DT_AUTO.STRING.TEXT
-msgid  "automatic"
+msgid "automatic"
 msgstr "automatski"

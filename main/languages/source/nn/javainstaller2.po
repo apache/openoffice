@@ -1,668 +1,754 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
+msgid "Back"
 msgstr "Førre"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
+msgid "Next"
 msgstr "Neste"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Avbryt"
 
 #: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
+msgid "Finish"
 msgstr "Fullfør"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
+msgid "Decline"
 msgstr "Avslå"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
+msgid "Install now"
 msgstr "Installer no"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
+msgid "Remove Now"
 msgstr "Fjern no"
 
 #: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
+msgid "Help"
 msgstr "Hjelp"
 
 #: ../src/Localization/setupstrings.ulf#STRING_OK
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
+msgid "Error"
 msgstr "Feil"
 
 #: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
+msgid "Error: File not found"
 msgstr "Feil: Fann ikkje fila"
 
 #: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
 msgstr "${PRODUCT_FULLNAME} Vegvisar for installasjon"
 
 #: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
 msgstr "${PRODUCT_FULLNAME} Vegvisar for avinstallasjon"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
+msgid "Exit"
 msgstr "Avslutt"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
+msgid "Do you really want to exit the Installation Wizard?"
 msgstr "Vil du verkeleg avslutta vegvisaren for installasjon?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
+msgid "Do you really want to exit the Uninstallation Wizard?"
 msgstr "Vil du verkeleg avslutta vegvisaren for avinstallasjon?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
+msgid "Do you really want to abort the installation process?"
 msgstr "Vil du verkeleg avbryta installasjonen?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
+msgid "Abort installation?"
 msgstr "Avbryt installasjon?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
+msgid "Do you really want to abort the uninstallation process?"
 msgstr "Vil du verkeleg avbryta avinstallasjonen?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
+msgid "Abort uninstallation?"
 msgstr "Avbryt avinstallasjon?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
+msgid "Accept License"
 msgstr "Godta lisens"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
+msgid "Software License Agreement"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
+msgid "Please read the following license agreement carefully."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
-msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "Dersom du har lese og godteke alle vilkåra i lisensavtalen til programmet, trykkjer du «Godta lisens» for å halda fram med installasjonen."
+msgid "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Dersom du har lese og godteke alle vilkåra i lisensavtalen til programmet, "
+"trykkjer du «Godta lisens» for å halda fram med installasjonen."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
+msgid "Select Installation Directory"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
+msgid "Update the Installed Version"
 msgstr "Oppdater den installerte versjonen"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
+msgid "Adding Components to the Installed Version"
 msgstr "Legg til komponentar i den installerte versjonen"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
 msgstr "Installer ${PRODUCT_FULLNAME} i denne mappa"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Bla gjennom …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
+msgid "Create New Directory"
 msgstr "Opprett ny mappe"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Mappa «${DIR}» finst ikkje.\nVil du oppretta henne no?"
+msgid "The directory '${DIR}' does not exist.\nDo you want to create it now?"
+msgstr ""
+"Mappa «${DIR}» finst ikkje.\n"
+"Vil du oppretta henne no?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Mappe «${DIR}» finst ikkje.\nVil du oppretta henne no eller velja ei anna mappe?"
+msgid "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
+msgstr ""
+"Mappe «${DIR}» finst ikkje.\n"
+"Vil du oppretta henne no eller velja ei anna mappe?"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
+msgid "Select root directory"
 msgstr "Vel rotmappe"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
+msgid "You do not have write access in the directory"
 msgstr "Du har ikkje skrivetilgang til mappa"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
+msgid "You are not allowed to create the directory"
 msgstr "Du har ikkje tilgang til å oppretta mappa"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
+msgid "Failed to create the directory"
 msgstr "Klarte ikkje oppretta mappa"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
+msgid "Select Components"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
+msgid "Select Additional Components"
 msgstr "Vel tilleggskomponentar"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
+msgid "Marked components will be installed. Please mark them accordingly"
 msgstr "Kryss av for dei komponentane som skal installerast."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
+msgid "Feature Description"
 msgstr "Funksjonsskildring"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
+msgid "Size (kB):"
 msgstr "Storleik (kB):"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 #, fuzzy
-msgid  "Select the Type of Installation"
+msgid "Select the Type of Installation"
 msgstr "Vel type installasjon"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
 #, fuzzy
-msgid  "Select the type of installation that best suits your needs:"
+msgid "Select the type of installation that best suits your needs:"
 msgstr "Vel kva type installasjon som passar deg best:"
+
+#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3
+#, fuzzy
+msgid "Select the Type of Installation"
+msgstr "Vel type installasjon"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 #, fuzzy
-msgid  "The main components will be installed. Recommended for most users."
+msgid "The main components will be installed. Recommended for most users."
 msgstr "Hovudkomponentane vert installerte. Tilrådd for brukarar flest."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 #, fuzzy
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "Du vel kva komponentar du vil installera og kvar dei skal liggja. Tilrådd for avanserte brukarar."
+msgid "You choose the components you want to install and where they are stored. Recommended for advanced users."
+msgstr ""
+"Du vel kva komponentar du vil installera og kvar dei skal liggja. Tilrådd "
+"for avanserte brukarar."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 #, fuzzy
-msgid  "Typical"
+msgid "Typical"
 msgstr "Typisk"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
 #, fuzzy
-msgid  "Custom"
+msgid "Custom"
 msgstr "Tilpassa"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
+msgid "Ready to Install"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
 #, fuzzy
-msgid  "Ready to Update"
+msgid "Ready to Update"
 msgstr "Klar til å oppdatera"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 #, fuzzy
-msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "Dei følgjande ${PRODUCT_FULLNAME}-komponentane skal installerast:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
 #, fuzzy
-msgid  "Installing..."
+msgid "Installing..."
 msgstr "Avinstallerer …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
 #, fuzzy
-msgid  "Stop"
+msgid "Stop"
 msgstr "Stopp"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
 #, fuzzy
-msgid  "ERROR: Path with installation packages not found!"
+msgid "ERROR: Path with installation packages not found!"
 msgstr "FEIL: Fann ikkje stigen til installasjonspakkane."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
+msgid "Welcome"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 #, fuzzy
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgid "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
 msgstr "Denne vegvisaren vil installera ${PRODUCT_FULLNAME} på datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
+msgid "To continue, click 'Next'."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgid "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 #, fuzzy
-msgid  "Installation Completed"
+msgid "Installation Completed"
 msgstr "Installasjonen er ferdig"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
 #, fuzzy
-msgid  "Installation Aborted"
+msgid "Installation Aborted"
 msgstr "Installasjonen er avbroten"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
 #, fuzzy
-msgid  "Installation Failed"
+msgid "Installation Failed"
 msgstr "Installasjonen mislukkast"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 #, fuzzy
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "Installasjonsvegvisaren har installert ${PRODUCT_FULLNAME} på datamaskina."
+msgid "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Installasjonsvegvisaren har installert ${PRODUCT_FULLNAME} på datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 #, fuzzy
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "Installasjonsvegvisaren vart avbroten. ${PRODUCT_NAME} er ikkje installert på datamaskina."
+msgid "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
+msgstr ""
+"Installasjonsvegvisaren vart avbroten. ${PRODUCT_NAME} er ikkje installert "
+"på datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 #, fuzzy
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "Ein feil har oppstått, så installasjonsvegvisaren klarte ikkje å installera ${PRODUCT_NAME} på datamaskina. Trykk på «Detaljar» for meir informasjon."
+msgid "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
+msgstr ""
+"Ein feil har oppstått, så installasjonsvegvisaren klarte ikkje å installera "
+"${PRODUCT_NAME} på datamaskina. Trykk på «Detaljar» for meir informasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 #, fuzzy
-msgid  "Click 'Finish' to exit the Wizard."
+msgid "Click 'Finish' to exit the Wizard."
 msgstr "Trykk på «Fullfør» for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
 #, fuzzy
-msgid  "Details..."
+msgid "Details..."
 msgstr "Detaljar …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
-msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
+msgid "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 #, fuzzy
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "Feil tilgang. Installasjonen vart gjord med brukartilgang, men du har rot-tilgang."
+msgid "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
+msgstr ""
+"Feil tilgang. Installasjonen vart gjord med brukartilgang, men du har rot-"
+"tilgang."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 #, fuzzy
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "Feil tilgang. Installasjonen vart gjord med rot-tilgang, men du har brukartilgang."
+msgid "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
+msgstr ""
+"Feil tilgang. Installasjonen vart gjord med rot-tilgang, men du har "
+"brukartilgang."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 #, fuzzy
-msgid  "Select the Type of Uninstallation"
+msgid "Select the Type of Uninstallation"
 msgstr "Vel type installasjon"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
 #, fuzzy
-msgid  "Select the type of uninstallation that best suits your needs:"
+msgid "Select the type of uninstallation that best suits your needs:"
 msgstr "Vel kva type avinstallasjon som passar deg best:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
 #, fuzzy
-msgid  "Partial"
+msgid "Partial"
 msgstr "Delvis"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 #, fuzzy
-msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr "Fjernar ${PRODUCT_FULLNAME} og alle komponentane som høyrer til fullstendig frå systemet."
+msgid "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
+msgstr ""
+"Fjernar ${PRODUCT_FULLNAME} og alle komponentane som høyrer til fullstendig "
+"frå systemet."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 #, fuzzy
-msgid  "You choose the program features you want to remove."
+msgid "You choose the program features you want to remove."
 msgstr "Du vel kva programfunksjonar som skal fjernast."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
 #, fuzzy
-msgid  "Complete"
+msgid "Complete"
 msgstr "Fullstendig"
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 #, fuzzy
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
+msgid "Components marked with an X will be removed. Mark the components you want to remove."
 msgstr "Kryss av for dei komponentane du vil fjerna."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
+msgid "Ready to Remove"
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
 #, fuzzy
-msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "Dei følgjande ${PRODUCT_FULLNAME}-komponentane skal fjernast: "
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
 #, fuzzy
-msgid  "Uninstalling..."
+msgid "Uninstalling..."
 msgstr "Avinstallerer …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
 #, fuzzy
-msgid  "Uninstallation Completed"
+msgid "Uninstallation Completed"
 msgstr "Avinstallasjon ferdig"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
 #, fuzzy
-msgid  "Uninstallation Aborted"
+msgid "Uninstallation Aborted"
 msgstr "Avinstallasjon avbroten"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
 #, fuzzy
-msgid  "Uninstallation Failed"
+msgid "Uninstallation Failed"
 msgstr "Avinstallasjon mislukkast"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 #, fuzzy
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "Vegvisaren for avinstallasjon har fjerna ${PRODUCT_FULLNAME} frå datamaskina."
+msgid "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"Vegvisaren for avinstallasjon har fjerna ${PRODUCT_FULLNAME} frå "
+"datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 #, fuzzy
-msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr "Vegvisaren for avinstallasjon har fjerna dei valde komponentane frå ${PRODUCT_NAME} på datamaskina."
+msgid "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Vegvisaren for avinstallasjon har fjerna dei valde komponentane frå "
+"${PRODUCT_NAME} på datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 #, fuzzy
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "Vegvisaren for avinstallasjon vart avbroten før ${PRODUCT_NAME} var fullstendig fjerna frå datamaskina."
+msgid "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Vegvisaren for avinstallasjon vart avbroten før ${PRODUCT_NAME} var "
+"fullstendig fjerna frå datamaskina."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 #, fuzzy
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "Ein feil har oppstått, så vegvisaren for avinstallasjon klarte ikkje å fjerna ${PRODUCT_NAME} frå datamaskina. Trykk på «Detaljar» for meir informasjon."
+msgid "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
+msgstr ""
+"Ein feil har oppstått, så vegvisaren for avinstallasjon klarte ikkje å "
+"fjerna ${PRODUCT_NAME} frå datamaskina. Trykk på «Detaljar» for meir "
+"informasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 #, fuzzy
-msgid  "Sorry, this Operating System is not supported yet."
+msgid "Sorry, this Operating System is not supported yet."
 msgstr "Dette operativsystemet er ikkje støtta enno."
 
 #: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
 #, fuzzy
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Ein eldre versjon av ${PRODUCT_NAME} vart funne på systemet i:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 #, fuzzy
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "Du må fjerna den eldre versjonen av ${PRODUCT_NAME} før du kan installera den nye."
+msgid "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
+msgstr ""
+"Du må fjerna den eldre versjonen av ${PRODUCT_NAME} før du kan installera "
+"den nye."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 #, fuzzy
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Ein nyare versjon av ${PRODUCT_NAME} vart funne på systemet i:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 #, fuzzy
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "Du må fjerna den nyare versjonen av ${PRODUCT_NAME} før du kan installera den gamle."
+msgid "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
+msgstr ""
+"Du må fjerna den nyare versjonen av ${PRODUCT_NAME} før du kan installera "
+"den gamle."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 #, fuzzy
-msgid  "Database"
+msgid "Database"
 msgstr "Database"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
 #, fuzzy
-msgid  "Please choose another installation directory."
+msgid "Please choose another installation directory."
 msgstr "Vel ei anna installasjonsmappe."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 #, fuzzy
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "Den brukaren du er logga inn som kan ikkje køyra installasjonsvegvisaren."
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr ""
+"Den brukaren du er logga inn som kan ikkje køyra installasjonsvegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 #, fuzzy
-msgid  "Please log out and log back in as a user with system administrator rights."
+msgid "Please log out and log back in as a user with system administrator rights."
 msgstr "Logg ut og inn igjen som ein brukar med systemadministratortilgang."
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 #, fuzzy
-msgid  "Not enough discspace available for installation."
+msgid "Not enough discspace available for installation."
 msgstr "Ikkje nok ledig plass til installasjonen."
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
 #, fuzzy
-msgid  "Required disc space"
+msgid "Required disc space"
 msgstr "Plass som trengst"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
 #, fuzzy
-msgid  "Available disc space"
+msgid "Available disc space"
 msgstr "Ledig plass"
 
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 #, fuzzy
-msgid  "Please use another directory for installation or change your module selection."
+msgid "Please use another directory for installation or change your module selection."
 msgstr "Installer i ei anna mappe eller vel bort nokre modular."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 #, fuzzy
-msgid  "Analyzing ..."
+msgid "Analyzing ..."
 msgstr "Analyserer …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 #, fuzzy
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Analyserer database.\nVent litt …"
+msgid "Analyzing database\nPlease wait a moment ..."
+msgstr ""
+"Analyserer database.\n"
+"Vent litt …"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 #, fuzzy
-msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr "Velkommen til vegvisaren for avinstallasjon.<p>Denne vegvisaren vil spørja om innstillingar.<p>Nedst på kvar side finn du navigasjonsknappar til å bla fram og tilbake i vegvisaren med:"
+msgid "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
+msgstr ""
+"Velkommen til vegvisaren for avinstallasjon.<p>Denne vegvisaren vil spørja "
+"om innstillingar.<p>Nedst på kvar side finn du navigasjonsknappar til å bla "
+"fram og tilbake i vegvisaren med:"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
-#, fuzzy
-msgid  "'Back' returns you to the previous page."
+msgid "'Back' returns you to the previous page."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 #, fuzzy
-msgid  "'Next' takes you to the next page. "
+msgid "'Next' takes you to the next page. "
 msgstr "«Neste» tek deg vidare til neste side."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 #, fuzzy
-msgid  "'Cancel' ends the Installation Wizard without installing this software."
+msgid "'Cancel' ends the Installation Wizard without installing this software."
 msgstr "«Avbryt» avsluttar vegvisaren utan å installera programmet."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 #, fuzzy
-msgid  "'Help' displays the Help with further information about the page currently displayed."
+msgid "'Help' displays the Help with further information about the page currently displayed."
 msgstr "«Hjelp» viser meir informasjon om den sida som er vist."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 #, fuzzy
-msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr "«OK» lukkar hjelpesida og sender deg tilbake til installasjonsvegvisaren."
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr ""
+"«OK» lukkar hjelpesida og sender deg tilbake til installasjonsvegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 #, fuzzy
-msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr "Velkommen til vegvisaren for avinstallasjon.<p>Denne vegvisaren vil spørja om innstillingar.<p>Nedst på kvar side finn du navigasjonsknappar til å bla fram og tilbake i vegvisaren med:"
+msgid "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Velkommen til vegvisaren for avinstallasjon.<p>Denne vegvisaren vil spørja "
+"om innstillingar.<p>Nedst på kvar side finn du navigasjonsknappar til å bla "
+"fram og tilbake i vegvisaren med:"
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
+msgid "'Back' returns you to the previous page."
+msgstr ""
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3
+#, fuzzy
+msgid "'Next' takes you to the next page. "
+msgstr "«Neste» tek deg vidare til neste side."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
 #, fuzzy
-msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
 msgstr "«Avbryt» avsluttar vegvisaren utan å installera programmet."
+
+#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
+#, fuzzy
+msgid "'Help' displays the Help with further information about the page currently displayed."
+msgstr "«Hjelp» viser meir informasjon om den sida som er vist."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 #, fuzzy
-msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr "«OK» lukkar hjelpesida og sender deg tilbake til installasjonsvegvisaren."
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr ""
+"«OK» lukkar hjelpesida og sender deg tilbake til installasjonsvegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
+msgid "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
 msgstr ""
 
+#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
+msgid "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Dersom du har lese og godteke alle vilkåra i lisensavtalen til programmet, "
+"trykkjer du «Godta lisens» for å halda fram med installasjonen."
+
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
+msgid "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 #, fuzzy
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "Vel kva type produktinstallasjon du vil gjennomføra. Dette avgjer kor mykje informasjon du må oppgje om produktoppsettet."
+msgid "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
+msgstr ""
+"Vel kva type produktinstallasjon du vil gjennomføra. Dette avgjer kor mykje "
+"informasjon du må oppgje om produktoppsettet."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
-msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
+msgid "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
+msgid "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
+msgid "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
+msgid "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 #, fuzzy
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "Framdriftsvisaren på denne sida viser kor langt installasjonen er komen. Trykk på «Stopp» om du vil avbryta installasjonen."
+msgid "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Framdriftsvisaren på denne sida viser kor langt installasjonen er komen. "
+"Trykk på «Stopp» om du vil avbryta installasjonen."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 #, fuzzy
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "Framdriftsvisaren på denne sida viser kor langt installasjonen er komen. Trykk på «Stopp» om du vil avbryta installasjonen."
+msgid "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Framdriftsvisaren på denne sida viser kor langt installasjonen er komen. "
+"Trykk på «Stopp» om du vil avbryta installasjonen."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
+msgid "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
 msgstr ""
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 #, fuzzy
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
+msgid "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
 msgstr "Kryss av for dei komponentane du vil fjerna."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 #, fuzzy
-msgid  "This package format is currently not supported for your operating system!"
+msgid "This package format is currently not supported for your operating system!"
 msgstr "Dette pakkeformatet er ikkje støtta på dette operativsystemet."
 
 #: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 #, fuzzy
-msgid  "Operating system"
+msgid "Operating system"
 msgstr "Operativsystem"
 
 #: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
 #, fuzzy
-msgid  "Package format"
+msgid "Package format"
 msgstr "Pakkeformat"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
 #, fuzzy
-msgid  "Nothing to install"
+msgid "Nothing to install"
 msgstr "Ingenting å installera"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
 #, fuzzy
-msgid  "No components have been selected for installation."
+msgid "No components have been selected for installation."
 msgstr "Ingen komponentar er valde for installasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr "Trykk «OK» for å velja ein eller fleire komponentar som skal installerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
+msgstr ""
+"Trykk «OK» for å velja ein eller fleire komponentar som skal installerast "
+"eller for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 #, fuzzy
-msgid  "No languages have been selected for installation."
+msgid "No languages have been selected for installation."
 msgstr "Ingen språk er valde for installasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr "Trykk «OK» for å velja eit eller fleire språk som skal installerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
+msgstr ""
+"Trykk «OK» for å velja eit eller fleire språk som skal installerast eller "
+"for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 #, fuzzy
-msgid  "No applications have been selected for installation."
+msgid "No applications have been selected for installation."
 msgstr "Ingen program er valde for installasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr "Trykk «OK» for å velja eit eller fleire program som skal installerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
+msgstr ""
+"Trykk «OK» for å velja eit eller fleire program som skal installerast eller "
+"for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 #, fuzzy
-msgid  "Nothing to uninstall"
+msgid "Nothing to uninstall"
 msgstr "Ingenting å avinstallera"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
 #, fuzzy
-msgid  "No components have been selected for uninstallation."
+msgid "No components have been selected for uninstallation."
 msgstr "Ingen komponentar er valde for avinstallasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Trykk «OK» for å velja ein eller fleire komponentar som skal avinstallerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Trykk «OK» for å velja ein eller fleire komponentar som skal avinstallerast "
+"eller for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 #, fuzzy
-msgid  "All language components have been selected for uninstallation."
+msgid "All language components have been selected for uninstallation."
 msgstr "Alle språkkomponentane er valde for avinstallasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Trykk «OK» for å velja ein eller fleire språkkomponentar som ikkje skal avinstallerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Trykk «OK» for å velja ein eller fleire språkkomponentar som ikkje skal "
+"avinstallerast eller for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 #, fuzzy
-msgid  "All application components have been selected for uninstallation."
+msgid "All application components have been selected for uninstallation."
 msgstr "Alle programkomponentane er valde for avinstallasjon."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 #, fuzzy
-msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr "Trykk «OK» for å velja ein eller fleire programkomponentar som ikkje skal avinstallerast eller for å avslutta vegvisaren."
+msgid "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Trykk «OK» for å velja ein eller fleire programkomponentar som ikkje skal "
+"avinstallerast eller for å avslutta vegvisaren."
 
 #: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 #, fuzzy
-msgid  "Please change selection"
+msgid "Please change selection"
 msgstr "Valet må endrast"

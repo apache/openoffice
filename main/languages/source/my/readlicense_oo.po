@@ -1,336 +1,569 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: my\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: readme.xrm#WELCOME
-msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 
 #: readme.xrm#LATESTUPDATES
-msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgid "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr ""
 
 #: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "ဤဖိုင်တွင် ပရိုဂရမ်နှင့် ပတ်သက်သည့် အရေးကြီး သတင်းအချက်အလက်များ ပါဝင်သည်။ ​လုပ်ငန်းမစတင်မီ ဤသတင်းအချက်များကို သေချာစွာ ဖတ်ပေးပါ။"
+msgid "This file contains important information about this program. Please read this information very carefully before starting work."
+msgstr ""
+"ဤဖိုင်တွင် ပရိုဂရမ်နှင့် ပတ်သက်သည့် အရေးကြီး သတင်းအချက်အလက်များ ပါဝင်သည်။ "
+"​လုပ်ငန်းမစတင်မီ ဤသတင်းအချက်များကို သေချာစွာ ဖတ်ပေးပါ။"
 
 #: readme.xrm#A7
-msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgid "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 msgstr ""
 
 #: readme.xrm#A9
-msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "OpenOffice.org လုပ်ငန်းစဉ်တွင် ပါဝင်သည့် အကြောင်းအချက်များကို အပိုင်းငယ်များပိုင်း၍ ဖတ်ပါ။"
+msgid "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+"OpenOffice.org လုပ်ငန်းစဉ်တွင် ပါဝင်သည့် အကြောင်းအချက်များကို "
+"အပိုင်းငယ်များပိုင်း၍ ဖတ်ပါ။"
 
 #: readme.xrm#A10
-msgid  "Is ${PRODUCTNAME} really free for any user? "
-msgstr "မည်သည့်အသုံးပြုသူအတွက်မဆို ${PRODUCTNAME} ကို လွတ်လပ်စွာ အသုံးပြုနိုင်ပါသလား။"
+msgid "Is ${PRODUCTNAME} really free for any user? "
+msgstr ""
+"မည်သည့်အသုံးပြုသူအတွက်မဆို ${PRODUCTNAME} ကို လွတ်လပ်စွာ "
+"အသုံးပြုနိုင်ပါသလား။"
 
 #: readme.xrm#A11
-msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr "မည်သူမဆို ${PRODUCTNAME} ကို လွတ်လပ်စွာ အသုံးပြုနိုင်ပါသည်။ ${PRODUCTNAME} ကို ကူးယူ၍ သင်နှစ်သက်ရာ ကွန်ပျူတာ အမြောက်အများတွင် စိတ်ကြိုက် ထည့်သွင်းနိုင်ပြီး စီးပွားရေးလုပ်ငန်း၊ အစိုးရဌာနများ၊ အများပြည်သူနှင့်သက်ဆိုင်သောနေရာများ၊ ပညာရေးဆိုင်ရာ နေရာများအပါအဝင် မည်သည့်နေရာတွင်မဆို အသုံးပြုနိုင်ပါသည်။ ပိုမို အသေးစိတ်ကျသော အချက်အလက်များအတွက်  ${PRODUCTNAME} နှင့်အတူ ခွင့်ပြုချက်စာသားတွင် ကြည့်ရှု နိုင်ပါသည်။ (သို့)"
+msgid "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"မည်သူမဆို ${PRODUCTNAME} ကို လွတ်လပ်စွာ အသုံးပြုနိုင်ပါသည်။ ${PRODUCTNAME} "
+"ကို ကူးယူ၍ သင်နှစ်သက်ရာ ကွန်ပျူတာ အမြောက်အများတွင် စိတ်ကြိုက် "
+"ထည့်သွင်းနိုင်ပြီး စီးပွားရေးလုပ်ငန်း၊ အစိုးရဌာနများ၊ "
+"အများပြည်သူနှင့်သက်ဆိုင်သောနေရာများ၊ ပညာရေးဆိုင်ရာ နေရာများအပါအဝင် "
+"မည်သည့်နေရာတွင်မဆို အသုံးပြုနိုင်ပါသည်။ ပိုမို အသေးစိတ်ကျသော "
+"အချက်အလက်များအတွက်  ${PRODUCTNAME} နှင့်အတူ ခွင့်ပြုချက်စာသားတွင် ကြည့်ရှု "
+"နိုင်ပါသည်။ (သို့)"
 
 #: readme.xrm#A12
-msgid  "Why is ${PRODUCTNAME} free for any user?"
-msgstr "${PRODUCTNAME} ကို မည်သူ့အတွက်မဆို လွတ်လပ်စွာ အသုံးပြုခွင့် အဘယ်ကြောင့်ပေးပါသလဲ။"
+msgid "Why is ${PRODUCTNAME} free for any user?"
+msgstr ""
+"${PRODUCTNAME} ကို မည်သူ့အတွက်မဆို လွတ်လပ်စွာ အသုံးပြုခွင့် "
+"အဘယ်ကြောင့်ပေးပါသလဲ။"
 
 #: readme.xrm#A13
-#, fuzzy
-msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgid "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr ""
+
+#: readme.xrm#A13B
+msgid "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
 msgstr ""
 
 #: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
+msgid "Notes on Installation"
 msgstr "ဆောဖ်ဝဲထည့်သွင်းမှုအတွက် မှတ်စုများ"
 
 #: readme.xrm#JAVANEEDED
-msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
+msgid "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
 msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "စနစ်လိုအပ်ချက်များ -"
 
 #: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
+msgid "MacOSX 10.4 (Tiger) or higher"
 msgstr "MacOSX 10.4 (Tiger) (သို့) ပိုမြင့်သော"
 
 #: readme.xrm#MACXICPU
-msgid  "Intel processor"
+msgid "Intel processor"
 msgstr "Intel processor"
 
 #: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
+msgid "512 MB RAM"
 msgstr "512 မီဂါဘိုက် RAM"
 
 #: readme.xrm#MACXHARDDIKSSPACE
-#, fuzzy
-msgid  "Up to 1.5 GB available hard disk space"
+msgid "Up to 1.5 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#MACXIVIDEO
-msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr "အရောင် ၂၅၆ ရောင်အတွက် ရုပ်ထွက်အသုံးပြုကိရိယာ ၁၀၂၄ x ၇၆၈ ကိုအသုံးပြုနိုင်သည်။ (ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်)"
+msgid "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
+"အရောင် ၂၅၆ ရောင်အတွက် ရုပ်ထွက်အသုံးပြုကိရိယာ ၁၀၂၄ x ၇၆၈ ကိုအသုံးပြုနိုင်သည်။ "
+"(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်)"
 
 #: readme.xrm#S2S3SDF2
 #, fuzzy
-msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr "Microsoft Windows 2000 (Service Pack 4 သို့ ပိုမြင့်သော), XP, သို့ Vista"
+msgid "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
+msgstr ""
+"Microsoft Windows 2000 (Service Pack 4 သို့ ပိုမြင့်သော), XP, သို့ Vista"
 
 #: readme.xrm#UTZU6
 #, fuzzy
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Pentium ဆီလျော်သော PC (Pentium III သို့ Athlon ကိုအကြံပြုသည်)"
 
 #: readme.xrm#GHUJ67
 #, fuzzy
-msgid  "256 MB RAM (512 MB RAM recommended)"
+msgid "256 MB RAM (512 MB RAM recommended)"
 msgstr "၂၅၆ မီဂါဘိုက် RAM (၅၁၂ မီဂါဘိုက် RAM အကြံပေးခဲ့သည်)"
 
+#: readme.xrm#JZJTZU6
+msgid "Up to 1.5 GB available hard disk space"
+msgstr ""
+
 #: readme.xrm#JTZU56
-msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr "အနည်းဆုံး အရောင် ၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ ကို (ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) အသုံးပြုနိုင်သည်။"
+msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr ""
+"အနည်းဆုံး အရောင် ၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ ကို "
+"(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) အသုံးပြုနိုင်သည်။"
 
 #: readme.xrm#EDSSC3D
 #, fuzzy
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr "မှတ်ချက် - ထည့်သွင်းလုပ်ဆောင်မှုများ ပြုရန်အတွက် စီမံခန့်ခွဲသူ၏ အခွင့်အရေးများ ရှိရန်လိုအပ်သည်။"
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"မှတ်ချက် - ထည့်သွင်းလုပ်ဆောင်မှုများ ပြုရန်အတွက် စီမံခန့်ခွဲသူ၏ "
+"အခွင့်အရေးများ ရှိရန်လိုအပ်သည်။"
 
 #: readme.xrm#MSOREG1
-msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr "Microsoft Office အတွက် ${PRODUCTNAME}ကို ပုံသေအသုံးချပရိုဂရမ်အဖြစ် မှတ်ပုံတင်ပါ။ (သို့) ထည့်သွင်းသူအနေဖြင့် အောက်ပါ ညွှန်ကြားချက်မျဉ်းတွင် ပြောင်းလဲ ကန့်သတ်မှုများပြုပါ။ "
+msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+"Microsoft Office အတွက် ${PRODUCTNAME}ကို ပုံသေအသုံးချပရိုဂရမ်အဖြစ် "
+"မှတ်ပုံတင်ပါ။ (သို့) ထည့်သွင်းသူအနေဖြင့် အောက်ပါ ညွှန်ကြားချက်မျဉ်းတွင် "
+"ပြောင်းလဲ ကန့်သတ်မှုများပြုပါ။ "
 
 #: readme.xrm#MSOREG2
-msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "Microsoft Office ၏ နဂိုမူလအသုံးချပရိုဂရမ်အဖြစ် ${PRODUCTNAME} မှတ်ပုံတင်ခြင်းတွင် /msoreg=1 သက်ရောက်မှု ရှိလိမ့်မည်။"
+msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"Microsoft Office ၏ နဂိုမူလအသုံးချပရိုဂရမ်အဖြစ် ${PRODUCTNAME} "
+"မှတ်ပုံတင်ခြင်းတွင် /msoreg=1 သက်ရောက်မှု ရှိလိမ့်မည်။"
 
 #: readme.xrm#MSOREG3
-msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "Microsoft Office ၏ နဂိုမူလအသုံးချပရိုဂရမ်အဖြစ် ${PRODUCTNAME} မှတ်ပုံတင်ရန် ကန့်သတ်မှုတွင် /msoreg=0 သက်ရောက်မှု ရှိလိမ့်မည်။"
+msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"Microsoft Office ၏ နဂိုမူလအသုံးချပရိုဂရမ်အဖြစ် ${PRODUCTNAME} မှတ်ပုံတင်ရန် "
+"ကန့်သတ်မှုတွင် /msoreg=0 သက်ရောက်မှု ရှိလိမ့်မည်။"
 
 #: readme.xrm#DLLA1
-msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
 
+#: readme.xrm#ADMINNEEDED
+#, fuzzy
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"မှတ်ချက် - ထည့်သွင်းလုပ်ဆောင်မှုများ ပြုရန်အတွက် စီမံခန့်ခွဲသူ၏ "
+"အခွင့်အရေးများ ရှိရန်လိုအပ်သည်။"
+
 #: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
+msgid "Solaris 10 operating system (SPARC platform) or higher"
 msgstr "Solaris 10 operating system (SPARC platform) (သို့) ပိုမြင့်သော"
 
-#: readme.xrm#S23SEG
+#: readme.xrm#S253
 #, fuzzy
-msgid  "Up to 1.55 GB available hard disk space"
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "၂၅၆ မီဂါဘိုက် RAM (၅၁၂ မီဂါဘိုက် RAM အကြံပေးခဲ့သည်)"
+
+#: readme.xrm#S23SEG
+msgid "Up to 1.55 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#S2S43GFE
 #, fuzzy
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "အနည်းဆုံး အရောင်၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ ကို(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) X ဆာဗာနှင့်အတူ အသုံးပြု နိုင်သည်။ "
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"အနည်းဆုံး အရောင်၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ "
+"ကို(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) X ဆာဗာနှင့်အတူ အသုံးပြု နိုင်သည်။ "
 
 #: readme.xrm#N4234RW
 #, fuzzy
-msgid  "Window Manager"
+msgid "Window Manager"
 msgstr "ဝင်းဒိုး မန်နေဂျာ"
 
 #: readme.xrm#WD2DFF2
 #, fuzzy
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "နည်းပညာအထောက်အကူပြု ကိရိယာများအနေဖြင့် (ကိရိယာများတွင်) Gnome 2.6 (သို့) ပိုမြင့်သော၊ gail 1.8.6 နှင့် at-spi 1.7 packages များလိုအပ်သည်"
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"နည်းပညာအထောက်အကူပြု ကိရိယာများအနေဖြင့် (ကိရိယာများတွင်) Gnome 2.6 (သို့) "
+"ပိုမြင့်သော၊ gail 1.8.6 နှင့် at-spi 1.7 packages များလိုအပ်သည်"
 
 #: readme.xrm#S23H
-msgid  "Solaris 10 operating system (x86 platform) or higher"
+msgid "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 operating system (x86 platform) (သို့) ပိုမြင့်သော"
 
+#: readme.xrm#S24F
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "၂၅၆ မီဂါဘိုက် RAM (၅၁၂ မီဂါဘိုက် RAM အကြံပေးခဲ့သည်)"
+
+#: readme.xrm#FGHEG
+msgid "Up to 1.55 GB available hard disk space"
+msgstr ""
+
+#: readme.xrm#FGHFGH
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"အနည်းဆုံး အရောင်၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ "
+"ကို(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) X ဆာဗာနှင့်အတူ အသုံးပြု နိုင်သည်။ "
+
+#: readme.xrm#MGJFG
+#, fuzzy
+msgid "Window Manager"
+msgstr "ဝင်းဒိုး မန်နေဂျာ"
+
+#: readme.xrm#WD2DFF1
+#, fuzzy
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"နည်းပညာအထောက်အကူပြု ကိရိယာများအနေဖြင့် (ကိရိယာများတွင်) Gnome 2.6 (သို့) "
+"ပိုမြင့်သော၊ gail 1.8.6 နှင့် at-spi 1.7 packages များလိုအပ်သည်"
+
 #: readme.xrm#S2WE35
-msgid  "Linux Kernel version 2.6.18 or higher"
+msgid "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux Kernel ဗားရှင်း 2.4 (သို့) ပိုမြင့်သော"
 
 #: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
+msgid "glibc2 version 2.5 or higher"
 msgstr "glibc2 version 2.3.2 (သို့) ပိုမြင့်သော"
 
 #: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
+msgid "gtk version 2.10.4 or higher"
 msgstr "gtk version 2.2.0 (သို့) ပိုမြင့်သော"
 
 #: readme.xrm#S2ETFSEG
 #, fuzzy
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr "Pentium ဆီလျော်သော PC (Pentium III သို့ Athlon ကိုအကြံပြုသည်)"
 
+#: readme.xrm#S2SSDFE
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "၂၅၆ မီဂါဘိုက် RAM (၅၁၂ မီဂါဘိုက် RAM အကြံပေးခဲ့သည်)"
+
+#: readme.xrm#N42DFGF
+msgid "Up to 1.55 GB available hard disk space"
+msgstr ""
+
+#: readme.xrm#GHJHHR
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"အနည်းဆုံး အရောင်၂၅၆ ရောင်အတွက် ပုံရိပ်ပြတ်သားမှု ၁၀၂၄ x ၇၆၈ "
+"ကို(ပုံရိပ်သားမှု အကောင်းဆုံးအဖြစ်) X ဆာဗာနှင့်အတူ အသုံးပြု နိုင်သည်။ "
+
+#: readme.xrm#FHRTZ5
+#, fuzzy
+msgid "Window Manager"
+msgstr "ဝင်းဒိုး မန်နေဂျာ"
+
 #: readme.xrm#WD2DFF
-msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "နည်းပညာအထောက်အကူပြု ကိရိယာများအနေဖြင့် (ကိရိယာများတွင်) Gnome 2.6 (သို့) ပိုမြင့်သော၊ gail 1.8.6 နှင့် at-spi 1.7 packages များလိုအပ်သည်"
+msgid "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"နည်းပညာအထောက်အကူပြု ကိရိယာများအနေဖြင့် (ကိရိယာများတွင်) Gnome 2.6 (သို့) "
+"ပိုမြင့်သော၊ gail 1.8.6 နှင့် at-spi 1.7 packages များလိုအပ်သည်"
 
 #: readme.xrm#LINUXI3A
-msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr "Linux ကို နည်းမျိုးစုံဖြင့် ဖြန့်ဝေမှု ပြုနိုင်ပါသည်။ ဖြန့်ဝေမှု ပုံစံ တူညီလျှင်သော်မှ ထည့်သွင်းမှု ပုံစံများ ကွဲပြားနိုင်ပါသည်။ (KDE နှင့်Gnome အစရှိသဖြင့်) ${PRODUCTNAME}၏   ‘မူလ’ ဗားရှင်းနှင့်အတူ ဖြန့်ဝေမှုများပြုနိုင်ပြီး Community ${PRODUCTNAME} မှလည်း ကွဲပြားခြားနားသော လက္ခဏာရပ်များ ရရှိနိုင်ပါသည်။ တစ်ခါတစ်ရံတွင် ‘မူလ’ ဗားရှင်းအနေဖြင့် Community ${PRODUCTNAME} ကိုအသုံးပြုနိုင်ပါသည်။ သို့သော် Community ဗားရှင်းကို ထည့်သွင်းမှုမပြုမီ စိတ်ချလုံခြုံမှုရှိစေရန်အတွက် မူလဗားရှင်းကို ဖယ်ရှားရန် လိုအပ်ပါသည်။ သင်၏ ဖြန့်ဝေမှုအတွက် မည်သို့လုပ်ဆောင်ရမည်ဆိုသည့် ပိုမိုအသေးစိတ်ကျသော အချက်အလက်များကို သိရှိနိုင်ရန် မှတ်တမ်းမှတ်ရာများကို လေ့လာမှုပြုပါ။"
+msgid "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+"Linux ကို နည်းမျိုးစုံဖြင့် ဖြန့်ဝေမှု ပြုနိုင်ပါသည်။ ဖြန့်ဝေမှု ပုံစံ "
+"တူညီလျှင်သော်မှ ထည့်သွင်းမှု ပုံစံများ ကွဲပြားနိုင်ပါသည်။ (KDE နှင့်Gnome "
+"အစရှိသဖြင့်) ${PRODUCTNAME}၏   ‘မူလ’ ဗားရှင်းနှင့်အတူ "
+"ဖြန့်ဝေမှုများပြုနိုင်ပြီး Community ${PRODUCTNAME} မှလည်း ကွဲပြားခြားနားသော "
+"လက္ခဏာရပ်များ ရရှိနိုင်ပါသည်။ တစ်ခါတစ်ရံတွင် ‘မူလ’ ဗားရှင်းအနေဖြင့် "
+"Community ${PRODUCTNAME} ကိုအသုံးပြုနိုင်ပါသည်။ သို့သော် Community "
+"ဗားရှင်းကို ထည့်သွင်းမှုမပြုမီ စိတ်ချလုံခြုံမှုရှိစေရန်အတွက် မူလဗားရှင်းကို "
+"ဖယ်ရှားရန် လိုအပ်ပါသည်။ သင်၏ ဖြန့်ဝေမှုအတွက် မည်သို့လုပ်ဆောင်ရမည်ဆိုသည့် "
+"ပိုမိုအသေးစိတ်ကျသော အချက်အလက်များကို သိရှိနိုင်ရန် မှတ်တမ်းမှတ်ရာများကို "
+"လေ့လာမှုပြုပါ။"
 
 #: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "ဆော့ဖ်ဝဲ ထည့်သွင်းမှု (သို့) ဖယ်ရှားမှုများ မပြုမီ သင်၏စနစ်များကို အရံဖိုင်များအနေဖြင့် အမြဲတမ်းကူးယူထားရန် အကြံပေးလိုပါသည်။"
+msgid "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+"ဆော့ဖ်ဝဲ ထည့်သွင်းမှု (သို့) ဖယ်ရှားမှုများ မပြုမီ သင်၏စနစ်များကို "
+"အရံဖိုင်များအနေဖြင့် အမြဲတမ်းကူးယူထားရန် အကြံပေးလိုပါသည်။"
 
 #: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "သင့်စနစ်ရှိ ယာယီ ဒိုင်ယာထရီတွင် မှတ်ညဏ်နေရာလွတ် လုံလောက်မှု ရှိသည်မှာ သေချာပါသလား။ ဖတ်ရန်၊ ရေးသွင်းရန် နှင့် လုပ်ဆောင်မှုများ ပြုရန် အခွင့်အရေး ရှိပါသလား။ ထည့်သွင်းလုပ်ဆောင်မှုများ မပြုမီ အခြား ပရိုဂရမ်များ အားလုံးကို ပိတ်ပါ။"
+msgid "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+"သင့်စနစ်ရှိ ယာယီ ဒိုင်ယာထရီတွင် မှတ်ညဏ်နေရာလွတ် လုံလောက်မှု ရှိသည်မှာ "
+"သေချာပါသလား။ ဖတ်ရန်၊ ရေးသွင်းရန် နှင့် လုပ်ဆောင်မှုများ ပြုရန် အခွင့်အရေး "
+"ရှိပါသလား။ ထည့်သွင်းလုပ်ဆောင်မှုများ မပြုမီ အခြား ပရိုဂရမ်များ အားလုံးကို "
+"ပိတ်ပါ။"
 
 #: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
+msgid "Problems During Program Startup"
 msgstr "ပရိုဂရမ်စတင်လုပ်ဆောင်မှုပြုစဉ် ပြသာနာဖြစ်ပွားသည်"
 
 #: readme.xrm#NASO02
-msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr "${PRODUCTNAME} စတင်အသုံးပြုစဉ် ပြသာနာဖြစ်ပွားပါက (Gnome ကိုအသုံးပြုစဉ် အများဆုံး ဖြစ်နိုင်ချေရှိသည်)ကျေးဇူးပြု၍ SESSION_MANAGER ကို shell အတွင်းတွင် ${PRODUCTNAME} ကိုစတင်အသုံးပြုမှုမှ ‘ထုတ်ပယ်ပါ’ \"[office folder]/program\" ဒိုင်ယာထရီရှိ  soffice shell script  ဖိုင်စတင် အသုံးပြုရန် \"unset SESSION_MANAGER \" ကို ဖြည့်စွက်ပါ။"
+msgid "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"${PRODUCTNAME} စတင်အသုံးပြုစဉ် ပြသာနာဖြစ်ပွားပါက (Gnome ကိုအသုံးပြုစဉ် "
+"အများဆုံး ဖြစ်နိုင်ချေရှိသည်)ကျေးဇူးပြု၍ SESSION_MANAGER ကို shell "
+"အတွင်းတွင် ${PRODUCTNAME} ကိုစတင်အသုံးပြုမှုမှ ‘ထုတ်ပယ်ပါ’ \"[office "
+"folder]/program\" ဒိုင်ယာထရီရှိ  soffice shell script  ဖိုင်စတင် အသုံးပြုရန် "
+"\"unset SESSION_MANAGER \" ကို ဖြည့်စွက်ပါ။"
 
 #: readme.xrm#ABCDEF
-msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr "${PRODUCTNAME} စတင်စဉ် အခက်အခဲများ ဖြစ်ပွားသည်။ (ဥပမာ- အသုံးချပရိုဂရမ် ရပ်တန့်သွားမှု) ဂရပ်ဖစ်ကတ် ဒရိုင်ဘာ ချို့ယွင်းချက် ကဲ့သို့သော ပြဿနာများ ဖြစ်ပွားသည်။ ဤကဲ့သို့ ပြသာနာများ ဖြစ်ပွားပါက သင့် ဂရပ်ဖစ်ကတ်ဒရိုင်ဘာကို နောက်ဆုံးပေါ်အချက်အလက်များဖြင့် ဖြည့်စွက်ပါ (သို့) သင့်လုပ်ဆောင်မှု စနစ်နှင့်အတူ ဂရပ်ဖစ်ကတ် ဒရိုင်ဘာကို အသုံးပြုပါ။ သုံးဖက်မြင် အရာ၀တ္ထုများကို ကြည့်ရှုစဉ် အခက်အခဲများ ဖြစ်ပွားပါက 'ကိရိယာများ - ရွေးပိုင်ခွင့်များ - ${PRODUCTNAME} - မြင်ကွင်း - သုံးဖက်ြမင်ကွင်း' အောက်မှ \"OpenGL\" ကို အသုံးပြု ဖြေရှင်းနိုင်ပါသည်။"
+msgid "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
+msgstr ""
+"${PRODUCTNAME} စတင်စဉ် အခက်အခဲများ ဖြစ်ပွားသည်။ (ဥပမာ- အသုံးချပရိုဂရမ် "
+"ရပ်တန့်သွားမှု) ဂရပ်ဖစ်ကတ် ဒရိုင်ဘာ ချို့ယွင်းချက် ကဲ့သို့သော ပြဿနာများ "
+"ဖြစ်ပွားသည်။ ဤကဲ့သို့ ပြသာနာများ ဖြစ်ပွားပါက သင့် ဂရပ်ဖစ်ကတ်ဒရိုင်ဘာကို "
+"နောက်ဆုံးပေါ်အချက်အလက်များဖြင့် ဖြည့်စွက်ပါ (သို့) သင့်လုပ်ဆောင်မှု "
+"စနစ်နှင့်အတူ ဂရပ်ဖစ်ကတ် ဒရိုင်ဘာကို အသုံးပြုပါ။ သုံးဖက်မြင် အရာ၀တ္ထုများကို "
+"ကြည့်ရှုစဉ် အခက်အခဲများ ဖြစ်ပွားပါက 'ကိရိယာများ - ရွေးပိုင်ခွင့်များ - "
+"${PRODUCTNAME} - မြင်ကွင်း - သုံးဖက်ြမင်ကွင်း' အောက်မှ \"OpenGL\" ကို အသုံးပြု "
+"ဖြေရှင်းနိုင်ပါသည်။"
 
 #: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
+msgid "ALPS/Synaptics notebook touchpads in Windows"
 msgstr "Windows ရှိ ALPS/Synaptics notebook မြှားပြနေရာ"
 
 #: readme.xrm#NASO2
-msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr "ALPS/Synaptics touchpad ကို သင့်လက်ဖြင့် တို့ထိလိုက်သောအခါ ဝင်းဒိုး ဒရိုင်ဘာ ထုတ်ဝေမှုအရ  ${PRODUCTNAME} မှတ်တမ်းမှတ်ရာများကို သင် ဖြတ်သန်းရွေ့လျားမှု မပြုနိုင်ပါ။  "
+msgid "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"ALPS/Synaptics touchpad ကို သင့်လက်ဖြင့် တို့ထိလိုက်သောအခါ ဝင်းဒိုး ဒရိုင်ဘာ "
+"ထုတ်ဝေမှုအရ  ${PRODUCTNAME} မှတ်တမ်းမှတ်ရာများကို သင် ဖြတ်သန်းရွေ့လျားမှု "
+"မပြုနိုင်ပါ။  "
 
 #: readme.xrm#NASO6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr "Touchpad scrolling ကို အသုံးပြုနိုင်ရန် အောက်ပါ \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\" ဖိုင်ကို ထည့်သွင်းပြီး သင့်ကွန်ပျူတာကို ပြန်လည်စတင်မှုပြုပါ။"
+msgid "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr ""
+"Touchpad scrolling ကို အသုံးပြုနိုင်ရန် အောက်ပါ \"C:\\Program "
+"Files\\Synaptics\\SynTP\\SynTPEnh.ini\" ဖိုင်ကို ထည့်သွင်းပြီး သင့်ကွန်ပျူတာကို "
+"ပြန်လည်စတင်မှုပြုပါ။"
 
 #: readme.xrm#NASO8
-msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr "မှတ်ချက် - မတူညီသော ဝင်းဒိုးဗားရှင်းများပေါ်တွင် ပြုပြင်ဖန်တီးမှု ဖိုင်တည်ရှိနိုင်သည်။"
+msgid "The location of the configuration file might vary on different versions of Windows."
+msgstr ""
+"မှတ်ချက် - မတူညီသော ဝင်းဒိုးဗားရှင်းများပေါ်တွင် ပြုပြင်ဖန်တီးမှု "
+"ဖိုင်တည်ရှိနိုင်သည်။"
 
 #: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
+msgid "Mozilla Address Book Driver"
 msgstr "မော်ဇီလာ လိပ်စာစာအုပ် ဒရိုင်ဘာ"
 
 #: readme.xrm#SDCC32ASRC
-msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr "မော်ဇီလာ လိပ်စာစာအုပ် ဒရိုင်ဘာသည်  SUNWzlib packageကို လိုအပ်သည်။ ဤအရာသည် Solaris လည်ပတ်မှုစနစ် ထည့်သွင်းခြင်း၏ အစိတ်အပိုင်းတစ်ခု မဟုတ်ပါ။ မော်ဇီလာ လိပ်စာစာအုပ်ကို အသုံးပြုလိုလျှင် ထည့်သွင်းမှု စီဒီမှတဆင့် ညွှန်ကြားချက် \"pkgadd\" ကို အသုံးပြုပြီး SUNWzlib ကို သင့်၏ Solaris စနစ်လည်ပတ်မှုတွင် ထည့်ပါ။"
+msgid "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
+msgstr ""
+"မော်ဇီလာ လိပ်စာစာအုပ် ဒရိုင်ဘာသည်  SUNWzlib packageကို လိုအပ်သည်။ ဤအရာသည် "
+"Solaris လည်ပတ်မှုစနစ် ထည့်သွင်းခြင်း၏ အစိတ်အပိုင်းတစ်ခု မဟုတ်ပါ။ မော်ဇီလာ "
+"လိပ်စာစာအုပ်ကို အသုံးပြုလိုလျှင် ထည့်သွင်းမှု စီဒီမှတဆင့် ညွှန်ကြားချက် "
+"\"pkgadd\" ကို အသုံးပြုပြီး SUNWzlib ကို သင့်၏ Solaris စနစ်လည်ပတ်မှုတွင် "
+"ထည့်ပါ။"
 
 #: readme.xrm#AWE1
-msgid  "Shortcut Keys"
+msgid "Shortcut Keys"
 msgstr "အတိုနည်းဖြင့် အသုံးပြုနိုင်မှုများ"
 
 #: readme.xrm#W32E1
-msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr "${PRODUCTNAME}တွင် အတိုနည်းများကိုသာ အသုံးပြုရန် လုပ်ဆောင်မှုစနစ်အနေဖြင့် မဖြစ်နိုင်ပါ။ ${PRODUCTNAME}ရှိ အတိုနည်းများ ဖော်ြပလုပ်ဆောင်မှု မပြုလျှင် စနစ်လုပ်ဆောင်မှုအနေဖြင့် အတိုနည်းများ အသုံးပြုပြီး ဖြစ်မဖြစ်ကို စစ်ဆေးပါ။ မှားယွင်းမှုများကို ပြင်ဆင်ရန် သင့်စနစ်လုပ်ဆောင်မှုအနေဖြင့် အချက်အလက်သော့ချက်များ ပြောင်းလဲထည့်သွင်းမှု ပြုပါ။ ${PRODUCTNAME}ရှိ မည်သည့် အချက်အလက်သော့ချက်ကို မဆို ​ပြောင်းလဲထည့်သွင်းနိုင်သည်။ ဤအကြောင်းအရာနှင့်ပတ်သက်၍ အခြားသတင်းအချက်အလက်များကို ရယူရန်  ${PRODUCTNAME}(သို့)သင့်လုပ်ဆောင်မှုစနစ်၏ မှတ်တမ်းမှတ်ရာများမှ အကူအညီယူပါ။ "
+msgid "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+"${PRODUCTNAME}တွင် အတိုနည်းများကိုသာ အသုံးပြုရန် လုပ်ဆောင်မှုစနစ်အနေဖြင့် "
+"မဖြစ်နိုင်ပါ။ ${PRODUCTNAME}ရှိ အတိုနည်းများ ဖော်ြပလုပ်ဆောင်မှု မပြုလျှင် "
+"စနစ်လုပ်ဆောင်မှုအနေဖြင့် အတိုနည်းများ အသုံးပြုပြီး ဖြစ်မဖြစ်ကို စစ်ဆေးပါ။ "
+"မှားယွင်းမှုများကို ပြင်ဆင်ရန် သင့်စနစ်လုပ်ဆောင်မှုအနေဖြင့် "
+"အချက်အလက်သော့ချက်များ ပြောင်းလဲထည့်သွင်းမှု ပြုပါ။ ${PRODUCTNAME}ရှိ မည်သည့် "
+"အချက်အလက်သော့ချက်ကို မဆို ​ပြောင်းလဲထည့်သွင်းနိုင်သည်။ "
+"ဤအကြောင်းအရာနှင့်ပတ်သက်၍ အခြားသတင်းအချက်အလက်များကို ရယူရန်  "
+"${PRODUCTNAME}(သို့)သင့်လုပ်ဆောင်မှုစနစ်၏ မှတ်တမ်းမှတ်ရာများမှ အကူအညီယူပါ။ "
 
 #: readme.xrm#MACKEYS1
-msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr "${PRODUCTNAME}၏ အသုံးချ ပရိုဂရမ်မှ အတိုနည်းများကို အသုံးပြုရန် PC ကီးဘုတ်များကိုသာ ခွင့်ပြုသည်။"
+msgid "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+"${PRODUCTNAME}၏ အသုံးချ ပရိုဂရမ်မှ အတိုနည်းများကို အသုံးပြုရန် PC "
+"ကီးဘုတ်များကိုသာ ခွင့်ပြုသည်။"
 
 #: readme.xrm#GFH6W
-msgid  "File Locking"
+msgid "File Locking"
 msgstr "ဖိုင်သော့ခတ်ထားသည်"
 
 #: readme.xrm#PJI76W
-msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
+msgid "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
 
 #: readme.xrm#PJI76WSDF
-msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr "သတိပေးချက် -  Linux NFS 2.0 ချိတ်ဆက်မှုတွင် Solaris 2.5.1 နှင့် 2.7 အသုံးပြုမှုနှင့်အတူ ဖိုင်ကန့်သတ်တားမြစ်မှုများ ဖြစ်ပေါ်သည်။ သင့်စနစ်ဝန်းကျင်တွင် ဤကိုယ်စားပြုတန်ဖိုးများရှိလျှင် ဖိုင်ကန့်သတ်တားမြစ်မှု လက္ခဏာရပ်များ အသုံးပြုမှုကို ရှောင်ရှားရန် ပြင်းထန်စွာ သတိပေးလိုပါသည်။ အခြားတစ်ခုအနေဖြင့် Linux ကွန်ပျူတာရှိ NFS ဒိုင်ယာထရီမှ ဖိုင်တစ်ခုကို ဖွင့်ရန် ကြိုးပမ်းစဉ် ${PRODUCTNAME} ရပ်တန့်မှု ဖြစ်ပွားလိမ့်မည်။"
+msgid "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"သတိပေးချက် -  Linux NFS 2.0 ချိတ်ဆက်မှုတွင် Solaris 2.5.1 နှင့် 2.7 "
+"အသုံးပြုမှုနှင့်အတူ ဖိုင်ကန့်သတ်တားမြစ်မှုများ ဖြစ်ပေါ်သည်။ "
+"သင့်စနစ်ဝန်းကျင်တွင် ဤကိုယ်စားပြုတန်ဖိုးများရှိလျှင် ဖိုင်ကန့်သတ်တားမြစ်မှု "
+"လက္ခဏာရပ်များ အသုံးပြုမှုကို ရှောင်ရှားရန် ပြင်းထန်စွာ သတိပေးလိုပါသည်။ "
+"အခြားတစ်ခုအနေဖြင့် Linux ကွန်ပျူတာရှိ NFS ဒိုင်ယာထရီမှ ဖိုင်တစ်ခုကို "
+"ဖွင့်ရန် ကြိုးပမ်းစဉ် ${PRODUCTNAME} ရပ်တန့်မှု ဖြစ်ပွားလိမ့်မည်။"
 
 #: readme.xrm#GFH6W1
-msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr "${PRODUCTNAME} မှ မှတ်တမ်းမှတ်ရာများကို အီးမေးလ်များကဲ့သို့ ပေးပို့သောအခါ ပြသနာဖြစ်ပွားသည်"
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgstr ""
+"${PRODUCTNAME} မှ မှတ်တမ်းမှတ်ရာများကို အီးမေးလ်များကဲ့သို့ ပေးပို့သောအခါ "
+"ပြသနာဖြစ်ပွားသည်"
 
 #: readme.xrm#PJI76W1
-msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr "‘ဖိုင်- ပို့ပါ-အီးမေးလ်ကဲ့သို့ မှတ်တမ်းမှတ်ရာ’ (သို့) ‘PDF ကဲ့သို့ မှတ်တမ်းမှတ်ရာ’ များပေးပို့သောအခါ ပြဿနာဖြစ်ပွားသည်။ (ပရိုဂရမ် ပျက်စီးမှု (သို့) ရပ်တန့်မှု) ဖိုင်ဗားရှင်းအချို့တွင် ဝင်းဒိုးစနစ်ဖိုင် \"Mapi\" (Messaging Application Programming Interface) ကြောင့် ပြသနာများ ဖြစ်ပွားသည်။ ကံမကောင်းစွာ အဆိုပါ ပြဿနာကို ဗားရှင်းနံပါတ်တစ်ခုသို့ အကျဉ်းချုံး၍ မရနိုင်ပါ။ အခြားသတင်းအချက်အလက်များ ရယူရန် http://www.microsoft.com ဝင်ရောက်ပြီး \"mapi dll\" အတွက် မိုက်ခရိုဆော့ဖ်နှင့် ပတ်သတ်သည့် အကြောင်းအချက်များကို ရှာဖွေပါ။"
+msgid "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"‘ဖိုင်- ပို့ပါ-အီးမေးလ်ကဲ့သို့ မှတ်တမ်းမှတ်ရာ’ (သို့) ‘PDF ကဲ့သို့ "
+"မှတ်တမ်းမှတ်ရာ’ များပေးပို့သောအခါ ပြဿနာဖြစ်ပွားသည်။ (ပရိုဂရမ် ပျက်စီးမှု "
+"(သို့) ရပ်တန့်မှု) ဖိုင်ဗားရှင်းအချို့တွင် ဝင်းဒိုးစနစ်ဖိုင် \"Mapi\" "
+"(Messaging Application Programming Interface) ကြောင့် ပြသနာများ ဖြစ်ပွားသည်။ "
+"ကံမကောင်းစွာ အဆိုပါ ပြဿနာကို ဗားရှင်းနံပါတ်တစ်ခုသို့ အကျဉ်းချုံး၍ "
+"မရနိုင်ပါ။ အခြားသတင်းအချက်အလက်များ ရယူရန် http://www.microsoft.com "
+"ဝင်ရောက်ပြီး \"mapi dll\" အတွက် မိုက်ခရိုဆော့ဖ်နှင့် ပတ်သတ်သည့် "
+"အကြောင်းအချက်များကို ရှာဖွေပါ။"
 
 #: readme.xrm#AW22
-msgid  "Important Accessibility Notes"
+msgid "Important Accessibility Notes"
 msgstr "အရေးကြီး အချက်အလက်များ ရယူနိုင်မှု မှတ်စုများ"
 
 #: readme.xrm#ACCESS7
-msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgid "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
-#, fuzzy
-msgid  "User Support"
+msgid "User Support"
+msgstr ""
+
+#: readme.xrm#SUPPORT1
+msgid "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
-msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
+msgid "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
 #, fuzzy
-msgid  "Reporting Bugs &amp; Issues"
-msgstr "${PRODUCTNAME} ဝဘ်ဆိုဒ်၏ အိမ်ရှင် IssueZilla သည် ကျွန်ုပ်တို့ စက်ကိရိယာများ မှတ်တမ်းတင်မှုပြုရန်၊ လမ်းကြောင်းသွားလာမှုများပြုရန်၊ အမှားများ ​ဖြေရှင်းမှုပြုရန်နှင့် ထုတ်ဝေမှုများပြုရန်အတွက်ဖြစ်သည်။ အသုံးပြုသူအားလုံး သုံးစွဲခွင့်ရရန်နှင့် သင်၏ သီးခြား ပလက်ဖောင်းပေါ်ရှိ မှတ်တမ်းများ ထုတ်ဝေမှုပြုရန် ကြိုဆိုပါသည်။ အကျိုးသက်ရောက်မှုရှိသည့် မှတ်တမ်းများ ထုတ်ဝေမှုသည် အသုံးပြုအဖွဲ့အစည်း ဖွံ့ ဖြိုးတိုးတက်မှုပြုရန် အရေးကြီးဆုံးသော အကြောင်းအချက်တစ်ခု ဖြစ်သည်။"
+msgid "Reporting Bugs &amp; Issues"
+msgstr ""
+"${PRODUCTNAME} ဝဘ်ဆိုဒ်၏ အိမ်ရှင် IssueZilla သည် ကျွန်ုပ်တို့ စက်ကိရိယာများ "
+"မှတ်တမ်းတင်မှုပြုရန်၊ လမ်းကြောင်းသွားလာမှုများပြုရန်၊ အမှားများ "
+"​ဖြေရှင်းမှုပြုရန်နှင့် ထုတ်ဝေမှုများပြုရန်အတွက်ဖြစ်သည်။ အသုံးပြုသူအားလုံး "
+"သုံးစွဲခွင့်ရရန်နှင့် သင်၏ သီးခြား ပလက်ဖောင်းပေါ်ရှိ မှတ်တမ်းများ "
+"ထုတ်ဝေမှုပြုရန် ကြိုဆိုပါသည်။ အကျိုးသက်ရောက်မှုရှိသည့် မှတ်တမ်းများ "
+"ထုတ်ဝေမှုသည် အသုံးပြုအဖွဲ့အစည်း ဖွံ့ ဖြိုးတိုးတက်မှုပြုရန် အရေးကြီးဆုံးသော "
+"အကြောင်းအချက်တစ်ခု ဖြစ်သည်။"
+
+#: readme.xrm#REPORTBUGS1
+msgid "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
 
 #: readme.xrm#GETTINGINVOLVED1
-msgid  "Getting Involved"
+msgid "Getting Involved"
 msgstr "ပါဝင်နေရာယူမှုများ"
 
 #: readme.xrm#GETTINGINVOLVED2
-msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr "အရေးကြီး ရင်းမြစ် ပရောဂျတ်များ ဖွံ့ဖြိုးတိုးတက်မှုရှိစေရန် သင်၏ပါဝင်လုပ်ဆောင်ချက်များမှ ${PRODUCTNAME} အဖွဲ့အစည်းကို များစွာ အကျိုးကျေးဇူး ရှိစေပါသည်။"
+msgid "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
+msgstr ""
+"အရေးကြီး ရင်းမြစ် ပရောဂျတ်များ ဖွံ့ဖြိုးတိုးတက်မှုရှိစေရန် "
+"သင်၏ပါဝင်လုပ်ဆောင်ချက်များမှ ${PRODUCTNAME} အဖွဲ့အစည်းကို များစွာ "
+"အကျိုးကျေးဇူး ရှိစေပါသည်။"
 
 #: readme.xrm#GETTINGIMVOLVED3
 #, fuzzy
-msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "အသုံးပြုသူတစ်ဦးအနေဖြင့် သင့်တော်မှုရှိသော ဖွံ့ဖြိုးတိုးတက်မှုဖြစ်စဉ်များ၏ တန်ဖိုးရှိသော အစိတ်အပိုင်းများကို ပြုပြီးဖြစ်သည်။ အဖွဲ့အစည်း၏ အရေးကြီးသော အခန်းကဏ္ဏများတွင် ရေရှည် ပါဝင်ကူညီမှု ပြုနိုင်ပါသည်။ ကျေးဇူးပြု၍ ချိတ်ဆက်မှုပြုပြီး အသုံးပြုသူ၏ စာမျက်နှာအား စစ်ဆေးမှုပြုပါ။"
+msgid "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgstr ""
+"အသုံးပြုသူတစ်ဦးအနေဖြင့် သင့်တော်မှုရှိသော ဖွံ့ဖြိုးတိုးတက်မှုဖြစ်စဉ်များ၏ "
+"တန်ဖိုးရှိသော အစိတ်အပိုင်းများကို ပြုပြီးဖြစ်သည်။ အဖွဲ့အစည်း၏ အရေးကြီးသော "
+"အခန်းကဏ္ဏများတွင် ရေရှည် ပါဝင်ကူညီမှု ပြုနိုင်ပါသည်။ ကျေးဇူးပြု၍ "
+"ချိတ်ဆက်မှုပြုပြီး အသုံးပြုသူ၏ စာမျက်နှာအား စစ်ဆေးမှုပြုပါ။"
 
 #: readme.xrm#HOWTOSTART
 #, fuzzy
-msgid  "How to Start"
-msgstr "စတင်ဖြန့်ဝေရန်အကောင်းဆုံးနည်းလမ်းသည် မေးလ်စာရင်းရှိ တစ်ခု(သို့) တစ်ခုထက်ပိုသောမေးလ်များသို့ ဆက်ရန် ဖြစ်သည်။${PRODUCTNAME}ရင်းမြစ်ကုဒ်ကို အောက်တိုဘာ ၂၀၀၀ ကတည်းကထွက်သောခေါင်းစဉ်များနှင့် ရင်းနှီးအောင် သိမ်းထားသောမေးလ်များကို ဖြည်းဖြည်းအသုံးပြုပါ။ အဆင်ပြေသောအခါ လုပ်ရန်လိုအပ်ချက်အားလုံးကို ကိုယ်တိုင်မိတ်ဆက်ခြင်းသို့ မေးလ်တစ်ခု ပို့ပါ။ အကယ်၍သင်သည် Open Source ပရောဂျက်နှင့် ရင်းနှီးလျှင်၊ကူညီရန် တစ်စုံတစ်ခုလိုချင်လျှင် ကျွန်ုပ်တို့၏To-Dos စာရင်းမှ ကြည့်ပါ။"
+msgid "How to Start"
+msgstr ""
+"စတင်ဖြန့်ဝေရန်အကောင်းဆုံးနည်းလမ်းသည် မေးလ်စာရင်းရှိ တစ်ခု(သို့) "
+"တစ်ခုထက်ပိုသောမေးလ်များသို့ ဆက်ရန် ဖြစ်သည်။${PRODUCTNAME}ရင်းမြစ်ကုဒ်ကို "
+"အောက်တိုဘာ ၂၀၀၀ ကတည်းကထွက်သောခေါင်းစဉ်များနှင့် ရင်းနှီးအောင် "
+"သိမ်းထားသောမေးလ်များကို ဖြည်းဖြည်းအသုံးပြုပါ။ အဆင်ပြေသောအခါ "
+"လုပ်ရန်လိုအပ်ချက်အားလုံးကို ကိုယ်တိုင်မိတ်ဆက်ခြင်းသို့ မေးလ်တစ်ခု ပို့ပါ။ "
+"အကယ်၍သင်သည် Open Source ပရောဂျက်နှင့် ရင်းနှီးလျှင်၊ကူညီရန် "
+"တစ်စုံတစ်ခုလိုချင်လျှင် ကျွန်ုပ်တို့၏To-Dos စာရင်းမှ ကြည့်ပါ။"
+
+#: readme.xrm#HOWTOSTART1
+msgid "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
 
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
-msgid  "Subscribe"
-msgstr "ယေဘုယျ ကုဒ်များ ပါဝင်ရေးသားသူ စာရင်း - dev@openoffice.org (သာမာန် / ပိုမိုခက်ခဲသော)"
+msgid "Subscribe"
+msgstr ""
+"ယေဘုယျ ကုဒ်များ ပါဝင်ရေးသားသူ စာရင်း - dev@openoffice.org (သာမာန် / "
+"ပိုမိုခက်ခဲသော)"
+
+#: readme.xrm#SUBSCRIBE1
+msgid "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST1
+msgid "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST2
+msgid "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#MISSING_ID
+msgid "Joining the Project"
+msgstr ""
 
 #: readme.xrm#JOINING
-#, fuzzy
-msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgid "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+
+#: readme.xrm#JOINING1
+msgid "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+
+#: readme.xrm#JOINING3
+msgid "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
 msgstr ""
 
 #: readme.xrm#CREDITS
 #, fuzzy
-msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr "${PRODUCTNAME} ${PRODUCTVERSION} အသစ်ဖြင့် လုပ်ဆောင်ရသည်ကို သင်ကျေနပ်မှု ရှိမည်ဟု မျှော်လင့်ပါသည်။ အွန်လိုင်းမှတဆင့် ချိတ်ဆက်မှုများပြုပါ။"
+msgid "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+"${PRODUCTNAME} ${PRODUCTVERSION} အသစ်ဖြင့် လုပ်ဆောင်ရသည်ကို သင်ကျေနပ်မှု "
+"ရှိမည်ဟု မျှော်လင့်ပါသည်။ အွန်လိုင်းမှတဆင့် ချိတ်ဆက်မှုများပြုပါ။"
 
 #: readme.xrm#CREDITS2
 #, fuzzy
-msgid  "The Apache OpenOffice Community"
+msgid "The Apache OpenOffice Community"
 msgstr "OpenOffice.org အဖွဲ့အစည်း"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
 #, fuzzy
-msgid  "Used / Modified Source Code"
+msgid "Used / Modified Source Code"
 msgstr "အသုံးပြုပါ/အထူးပြုထားသည့်ရင်းမြစ်ကုဒ်နံပါတ်"

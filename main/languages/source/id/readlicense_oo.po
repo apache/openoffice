@@ -1,363 +1,638 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: readme.xrm#WELCOME
-msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "BacaSaya ${PRODUCTNAME} ${PRODUCTVERSION}"
 
 #: readme.xrm#LATESTUPDATES
-msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
-msgstr "Untuk pembaharuan terbaru dari berkas ini, silahkan lihat <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgid "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgstr ""
+"Untuk pembaharuan terbaru dari berkas ini, silahkan lihat <a href=\"http://ww"
+"w.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/read"
+"me.html</a>"
+
+#: readme.xrm#A6
+msgid "This file contains important information about this program. Please read this information very carefully before starting work."
+msgstr ""
 
 #: readme.xrm#A7
-msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
+msgid "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 msgstr ""
 
 #: readme.xrm#A9
 #, fuzzy
-msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "Juga bacalah bagian di bawah ini, mengenai cara Anda untuk terlibat dalam proyek OpenOffice.org. "
+msgid "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+"Juga bacalah bagian di bawah ini, mengenai cara Anda untuk terlibat dalam "
+"proyek OpenOffice.org. "
 
 #: readme.xrm#A10
 #, fuzzy
-msgid  "Is ${PRODUCTNAME} really free for any user? "
+msgid "Is ${PRODUCTNAME} really free for any user? "
 msgstr "Apakah ${PRODUCTNAME} benar-benar bebas untuk siapa saja? "
 
 #: readme.xrm#A11
 #, fuzzy
-msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr "${PRODUCTNAME} bebas digunakan oleh siapa saja. Anda bisa membuat salinan dari ${PRODUCTNAME} dan menginstalnya pada sebanyak komputer yang Anda inginkan dan menggunakannya untuk segala jenis kebutuhan Anda (termasuk komersial, pemerintahan, administrasi publik dan kebutuhan edukasi). Untuk penjelasan lebih lanjut silahkan lihat lisensi yang disertakan pada ${PRODUCTNAME} atau "
+msgid "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"${PRODUCTNAME} bebas digunakan oleh siapa saja. Anda bisa membuat salinan "
+"dari ${PRODUCTNAME} dan menginstalnya pada sebanyak komputer yang Anda "
+"inginkan dan menggunakannya untuk segala jenis kebutuhan Anda (termasuk "
+"komersial, pemerintahan, administrasi publik dan kebutuhan edukasi). Untuk "
+"penjelasan lebih lanjut silahkan lihat lisensi yang disertakan pada "
+"${PRODUCTNAME} atau "
 
 #: readme.xrm#A12
 #, fuzzy
-msgid  "Why is ${PRODUCTNAME} free for any user?"
+msgid "Why is ${PRODUCTNAME} free for any user?"
 msgstr "Kenapa ${PRODUCTNAME} bebas untuk semua pengguna?"
 
 #: readme.xrm#A13
 #, fuzzy
-msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr "Anda bisa menggunakan salinan dari ${PRODUCTNAME} tanpa biaya karena kontributor individual dan sponsor korporat telah mendesain, mengembangkan,  menguji, menterjemahkan, mendokumentasikan, mempromosikan, dan membantu dalam banyak cara untuk membuat ${PRODUCTNAME} menjadi apa yang dapat Anda lihat saat ini - perangkat lunak perkantoran open-source paling unggul di dunia."
+msgid "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr ""
+"Anda bisa menggunakan salinan dari ${PRODUCTNAME} tanpa biaya karena "
+"kontributor individual dan sponsor korporat telah mendesain, mengembangkan, "
+" menguji, menterjemahkan, mendokumentasikan, mempromosikan, dan membantu "
+"dalam banyak cara untuk membuat ${PRODUCTNAME} menjadi apa yang dapat Anda "
+"lihat saat ini - perangkat lunak perkantoran open-source paling unggul di "
+"dunia."
 
 #: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgid "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr ""
+
+#: readme.xrm#RR3FGF42R
+msgid "Notes on Installation"
 msgstr ""
 
 #: readme.xrm#JAVANEEDED
-#, fuzzy
-msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
+msgid "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
 msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
 #, fuzzy
-msgid  "System Requirements"
+msgid "System Requirements"
 msgstr "Keperluan Sistem:"
+
+#: readme.xrm#MACXIOSX
+msgid "MacOSX 10.4 (Tiger) or higher"
+msgstr ""
+
+#: readme.xrm#MACXICPU
+msgid "Intel processor"
+msgstr ""
+
+#: readme.xrm#MACXIRAM
+msgid "512 MB RAM"
+msgstr ""
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
-msgid  "Up to 1.5 GB available hard disk space"
+msgid "Up to 1.5 GB available hard disk space"
 msgstr "Ruang kosong yang tersedia hingga 1,5 GB"
 
 #: readme.xrm#MACXIVIDEO
 #, fuzzy
-msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr "perangkat grafik 1024 x 768 dengan 256 warna (resolusi lebih tinggi lebih disarankan)"
+msgid "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
+"perangkat grafik 1024 x 768 dengan 256 warna (resolusi lebih tinggi lebih "
+"disarankan)"
 
 #: readme.xrm#S2S3SDF2
-#, fuzzy
-msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
+msgid "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
 msgstr ""
 
 #: readme.xrm#UTZU6
-#, fuzzy
-msgid  "Pentium III or later processor"
+msgid "Pentium III or later processor"
 msgstr ""
 
 #: readme.xrm#GHUJ67
 #, fuzzy
-msgid  "256 MB RAM (512 MB RAM recommended)"
+msgid "256 MB RAM (512 MB RAM recommended)"
 msgstr "RAM 256 MB (disarankan RAM 512 MB)"
+
+#: readme.xrm#JZJTZU6
+#, fuzzy
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "Ruang kosong yang tersedia hingga 1,5 GB"
 
 #: readme.xrm#JTZU56
 #, fuzzy
-msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr "Resolusi 1024x768 (disarankan resolusi lebih tinggi), paling tidak 256 warna"
+msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr ""
+"Resolusi 1024x768 (disarankan resolusi lebih tinggi), paling tidak 256 warna"
 
 #: readme.xrm#EDSSC3D
 #, fuzzy
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr "Catatan: Mohon perhatikan bahwa hak akses administrator sangat diperlukan untuk proses pemasangan program."
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Catatan: Mohon perhatikan bahwa hak akses administrator sangat diperlukan "
+"untuk proses pemasangan program."
 
 #: readme.xrm#MSOREG1
 #, fuzzy
-msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr "Registrasi ${PRODUCTNAME} sebagai aplikasi utama untuk format Microsoft Office dapat dipaksa atau dibebaskan dengan menggunakan perintah baris berikut pada installer:"
+msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+"Registrasi ${PRODUCTNAME} sebagai aplikasi utama untuk format Microsoft "
+"Office dapat dipaksa atau dibebaskan dengan menggunakan perintah baris "
+"berikut pada installer:"
 
 #: readme.xrm#MSOREG2
 #, fuzzy
-msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "/msoreg=1 akan memaksa registrasi ${PRODUCTNAME} sebagai aplikasi utama untuk format Microsoft Office."
+msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"/msoreg=1 akan memaksa registrasi ${PRODUCTNAME} sebagai aplikasi utama "
+"untuk format Microsoft Office."
 
 #: readme.xrm#MSOREG3
 #, fuzzy
-msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "/msoreg=1 akan membebaskan registrasi ${PRODUCTNAME} sebagai aplikasi utama untuk format Microsoft Office."
+msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+"/msoreg=1 akan membebaskan registrasi ${PRODUCTNAME} sebagai aplikasi utama "
+"untuk format Microsoft Office."
 
 #: readme.xrm#DLLA1
 #, fuzzy
-msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr "Jika Anda melakukan installasi administratif menggunakan setup /a, Anda perlu memastikan bahwa berkas msvc90.dll sudah terpasang pada sistem. Berkas ini diperlukan ${PRODUCTNAME}. Anda bisa mendapatkan berkas tersebut dari <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
+msgstr ""
+"Jika Anda melakukan installasi administratif menggunakan setup /a, Anda "
+"perlu memastikan bahwa berkas msvc90.dll sudah terpasang pada sistem. Berkas "
+"ini diperlukan ${PRODUCTNAME}. Anda bisa mendapatkan berkas tersebut dari "
+"<a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3"
+"E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?"
+"familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+
+#: readme.xrm#ADMINNEEDED
+#, fuzzy
+msgid "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+"Catatan: Mohon perhatikan bahwa hak akses administrator sangat diperlukan "
+"untuk proses pemasangan program."
+
+#: readme.xrm#S2335
+msgid "Solaris 10 operating system (SPARC platform) or higher"
+msgstr ""
+
+#: readme.xrm#S253
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "RAM 256 MB (disarankan RAM 512 MB)"
 
 #: readme.xrm#S23SEG
 #, fuzzy
-msgid  "Up to 1.55 GB available hard disk space"
+msgid "Up to 1.55 GB available hard disk space"
 msgstr "Ruang kosong yang tersedia hingga 1,55 GB"
 
 #: readme.xrm#S2S43GFE
 #, fuzzy
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "Server X dengan resolusi 1024x768 (disarankan resolusi lebih tinggi), paling tidak 256 warna"
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Server X dengan resolusi 1024x768 (disarankan resolusi lebih tinggi), paling "
+"tidak 256 warna"
 
 #: readme.xrm#N4234RW
 #, fuzzy
-msgid  "Window Manager"
+msgid "Window Manager"
 msgstr "Manajer Jendela"
 
 #: readme.xrm#WD2DFF2
 #, fuzzy
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.6 atau lebih tinggi, dengan paket gail 1.8.6 dan at-spi 1.7, diperlukan untuk mendukung teknologi pendukung (AT)"
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 atau lebih tinggi, dengan paket gail 1.8.6 dan at-spi 1.7, "
+"diperlukan untuk mendukung teknologi pendukung (AT)"
 
 #: readme.xrm#S23H
 #, fuzzy
-msgid  "Solaris 10 operating system (x86 platform) or higher"
+msgid "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Sistem operasi Solaris 10 (platform x86) atau yang lebih tinggi"
+
+#: readme.xrm#S24F
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "RAM 256 MB (disarankan RAM 512 MB)"
+
+#: readme.xrm#FGHEG
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Ruang kosong yang tersedia hingga 1,55 GB"
+
+#: readme.xrm#FGHFGH
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Server X dengan resolusi 1024x768 (disarankan resolusi lebih tinggi), paling "
+"tidak 256 warna"
+
+#: readme.xrm#MGJFG
+#, fuzzy
+msgid "Window Manager"
+msgstr "Manajer Jendela"
+
+#: readme.xrm#WD2DFF1
+#, fuzzy
+msgid "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 atau lebih tinggi, dengan paket gail 1.8.6 dan at-spi 1.7, "
+"diperlukan untuk mendukung teknologi pendukung (AT)"
 
 #: readme.xrm#S2WE35
 #, fuzzy
-msgid  "Linux Kernel version 2.6.18 or higher"
+msgid "Linux Kernel version 2.6.18 or higher"
 msgstr "Kernel Linux versi 2.4 atau lebih tinggi"
+
+#: readme.xrm#S253WE
+msgid "glibc2 version 2.5 or higher"
+msgstr ""
+
+#: readme.xrm#S256WE
+msgid "gtk version 2.10.4 or higher"
+msgstr ""
+
+#: readme.xrm#S2ETFSEG
+msgid "Pentium III or later processor"
+msgstr ""
+
+#: readme.xrm#S2SSDFE
+#, fuzzy
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "RAM 256 MB (disarankan RAM 512 MB)"
+
+#: readme.xrm#N42DFGF
+#, fuzzy
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Ruang kosong yang tersedia hingga 1,55 GB"
+
+#: readme.xrm#GHJHHR
+#, fuzzy
+msgid "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
+msgstr ""
+"Server X dengan resolusi 1024x768 (disarankan resolusi lebih tinggi), paling "
+"tidak 256 warna"
+
+#: readme.xrm#FHRTZ5
+#, fuzzy
+msgid "Window Manager"
+msgstr "Manajer Jendela"
 
 #: readme.xrm#WD2DFF
 #, fuzzy
-msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr "Gnome 2.6 atau lebih tinggi, dengan paket gail 1.8.6 dan at-spi 1.7, diperlukan untuk mendukung teknologi pendukung (AT)"
+msgid "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 atau lebih tinggi, dengan paket gail 1.8.6 dan at-spi 1.7, "
+"diperlukan untuk mendukung teknologi pendukung (AT)"
 
 #: readme.xrm#LINUXI3A
 #, fuzzy
-msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr "Terdapat berbagai jenis distribusi Linux, dan bahkan pada distribusi yang sama bisa terdapat opsi pemasangan yang berbeda (KDE vs Gnome, dll). Beberapa distribusi menyediakan versi native ${PRODUCTNAME}, yang mungkin memiliki beberapa fitur yang berbeda dengan ${PRODUCTNAME} komunitas. Seringkali Anda memasang ${PRODUCTNAME} komunitas bersama dengan versi native. Namun, akan lebih aman untuk menghapus versi native sebelum memasang versi Komunitas. Konsultasikan dengan dokumentasi distribusi Anda untuk detail tentang bagaimana melakukan hal ini."
+msgid "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+"Terdapat berbagai jenis distribusi Linux, dan bahkan pada distribusi yang "
+"sama bisa terdapat opsi pemasangan yang berbeda (KDE vs Gnome, dll). "
+"Beberapa distribusi menyediakan versi native ${PRODUCTNAME}, yang mungkin "
+"memiliki beberapa fitur yang berbeda dengan ${PRODUCTNAME} komunitas. "
+"Seringkali Anda memasang ${PRODUCTNAME} komunitas bersama dengan versi "
+"native. Namun, akan lebih aman untuk menghapus versi native sebelum memasang "
+"versi Komunitas. Konsultasikan dengan dokumentasi distribusi Anda untuk "
+"detail tentang bagaimana melakukan hal ini."
+
+#: readme.xrm#LINUXI4A
+msgid "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+
+#: readme.xrm#PRECAUTIONS
+msgid "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+
+#: readme.xrm#NASO01
+msgid "Problems During Program Startup"
+msgstr ""
 
 #: readme.xrm#NASO02
 #, fuzzy
-msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr "Jika Anda mengalami masalah saat menjalankan ${PRODUCTNAME} (umumnya saat menggunakan Gnome) berikan 'unset' pada variabel lingkungan SESSION_MANAGER di dalam shell di mana Anda menjalankan ${PRODUCTNAME}. Ini dapat dilakukan dengan menambah baris \"unset SESSION_MANAGER\" pada awal skrip shell soffice yang ditemukan pada direktori \"[folder office]/program\"."
+msgid "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"Jika Anda mengalami masalah saat menjalankan ${PRODUCTNAME} (umumnya saat "
+"menggunakan Gnome) berikan 'unset' pada variabel lingkungan SESSION_MANAGER "
+"di dalam shell di mana Anda menjalankan ${PRODUCTNAME}. Ini dapat dilakukan "
+"dengan menambah baris \"unset SESSION_MANAGER\" pada awal skrip shell soffice "
+"yang ditemukan pada direktori \"[folder office]/program\"."
 
 #: readme.xrm#ABCDEF
 #, fuzzy
-msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr "Kesulitan dalam menjalankan ${PRODUCTNAME} (contoh: program berhenti bekerja) seperti pula masalah terhadap tampilan monitor umumnya disebabkan oleh pengandar kartu grafik. Apabila masalah ini terjadi, silakan perbaharui pengandar kartu grafik Anda atau cobalah untuk memakai pengandar grafik yang disertakan dalam sistem operasi milik Anda. Kesulitan dalam menampilkan objek 3D biasanya dapat diatasi dengan menonaktifkan opsi \"Gunakan OpenGL\" dengan cara memilih menu 'Perkakas - Opsi - ${PRODUCTNAME} - Tampilan - Tampilan 3D'."
+msgid "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
+msgstr ""
+"Kesulitan dalam menjalankan ${PRODUCTNAME} (contoh: program berhenti "
+"bekerja) seperti pula masalah terhadap tampilan monitor umumnya disebabkan "
+"oleh pengandar kartu grafik. Apabila masalah ini terjadi, silakan perbaharui "
+"pengandar kartu grafik Anda atau cobalah untuk memakai pengandar grafik "
+"yang disertakan dalam sistem operasi milik Anda. Kesulitan dalam menampilkan "
+"objek 3D biasanya dapat diatasi dengan menonaktifkan opsi \"Gunakan OpenGL\" "
+"dengan cara memilih menu 'Perkakas - Opsi - ${PRODUCTNAME} - Tampilan - "
+"Tampilan 3D'."
+
+#: readme.xrm#NASO
+msgid "ALPS/Synaptics notebook touchpads in Windows"
+msgstr ""
 
 #: readme.xrm#NASO2
 #, fuzzy
-msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr "Berkenaan dengan isu pengandar Windows, Anda tidak bisa menggulung dokumen ${PRODUCTNAME} saat Anda menggeser jari pada pedal-sentuh ALPS/Synaptics."
+msgid "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"Berkenaan dengan isu pengandar Windows, Anda tidak bisa menggulung dokumen "
+"${PRODUCTNAME} saat Anda menggeser jari pada pedal-sentuh ALPS/Synaptics."
 
 #: readme.xrm#NASO6
 #, fuzzy
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr "Untuk mengaktifkan gulung melalui pedal-sentuh, tambah baris berikut pada berkas konfigurasi \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\", dan nyalakan ulang komputer Anda:"
+msgid "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr ""
+"Untuk mengaktifkan gulung melalui pedal-sentuh, tambah baris berikut pada "
+"berkas konfigurasi \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\", dan "
+"nyalakan ulang komputer Anda:"
 
 #: readme.xrm#NASO8
 #, fuzzy
-msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr "Catatan: Lokasi dari berkas konfigurasi dapat beragam pada versi Windows yang berbeda."
+msgid "The location of the configuration file might vary on different versions of Windows."
+msgstr ""
+"Catatan: Lokasi dari berkas konfigurasi dapat beragam pada versi Windows "
+"yang berbeda."
+
+#: readme.xrm#SDFSD32ASRC
+msgid "Mozilla Address Book Driver"
+msgstr ""
 
 #: readme.xrm#SDCC32ASRC
 #, fuzzy
-msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr "Pengandar buku alamat Mozilla memerlukan paket SUNWzlib. Paket ini bukanlah bagian dari pemasangan minimum sistem operasi Solaris. Apabila Anda memerlukan akses ke buku alamat Mozilla, tambahlah paket ini ke sistem operasi Solaris Anda menggunakan perintah \"pkgadd\" dari CD instalasi."
+msgid "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
+msgstr ""
+"Pengandar buku alamat Mozilla memerlukan paket SUNWzlib. Paket ini bukanlah "
+"bagian dari pemasangan minimum sistem operasi Solaris. Apabila Anda "
+"memerlukan akses ke buku alamat Mozilla, tambahlah paket ini ke sistem "
+"operasi Solaris Anda menggunakan perintah \"pkgadd\" dari CD instalasi."
 
 #: readme.xrm#AWE1
 #, fuzzy
-msgid  "Shortcut Keys"
+msgid "Shortcut Keys"
 msgstr "Tombol Pintas"
 
 #: readme.xrm#W32E1
 #, fuzzy
-msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr "Hanya tombol pintas (kombinasi tombol) yang tidak digunakan oleh sistem operasilah yang dapat digunakan pada ${PRODUCTNAME}. Apabila kombinasi tombol pada ${PRODUCTNAME} tidak bekerja seperti yang disebutkan pada Bantuan ${PRODUCTNAME}, periksa apakah pintas tersebut sudah digunakan oleh sistem operasi. Untuk memperbaiki konflik, Anda bisa mengganti tombol pintas sistem operasi yang dimiliki sistem operasi Anda. Atau cara lain, Anda bisa mengganti hampir semua tombol pintas pada ${PRODUCTNAME}. Untuk informasi lebih lanjut tentang topik ini, rujuklah pada Bantuan ${PRODUCTNAME} atau dokumentasi Bantuan milik sistem operasi Anda."
+msgid "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+"Hanya tombol pintas (kombinasi tombol) yang tidak digunakan oleh sistem "
+"operasilah yang dapat digunakan pada ${PRODUCTNAME}. Apabila kombinasi "
+"tombol pada ${PRODUCTNAME} tidak bekerja seperti yang disebutkan pada "
+"Bantuan ${PRODUCTNAME}, periksa apakah pintas tersebut sudah digunakan oleh "
+"sistem operasi. Untuk memperbaiki konflik, Anda bisa mengganti tombol pintas "
+"sistem operasi yang dimiliki sistem operasi Anda. Atau cara lain, Anda bisa "
+"mengganti hampir semua tombol pintas pada ${PRODUCTNAME}. Untuk informasi "
+"lebih lanjut tentang topik ini, rujuklah pada Bantuan ${PRODUCTNAME} atau "
+"dokumentasi Bantuan milik sistem operasi Anda."
 
 #: readme.xrm#MACKEYS1
 #, fuzzy
-msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr "Bantuan aplikasi ${PRODUCTNAME} mungkin hanya menggunakan kombinasi tombol pintas untuk papan ketik PC."
+msgid "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+"Bantuan aplikasi ${PRODUCTNAME} mungkin hanya menggunakan kombinasi tombol "
+"pintas untuk papan ketik PC."
 
 #: readme.xrm#GFH6W
 #, fuzzy
-msgid  "File Locking"
+msgid "File Locking"
 msgstr "Penguncian Berkas"
 
 #: readme.xrm#PJI76W
 #, fuzzy
-msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
-msgstr "Penguncian berkas diaktifkan secara default pada ${PRODUCTNAME}. Pada jaringan yang menggunakan Network File System protocol (NFS), Daemon untuk  klien NFS harus aktif. Untuk menonaktifkan penguncian berkas, edit script <tt>soffice</tt> dan ganti baris \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" menjadi \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". Jika Anda menonaktifkan penguncian berkas, akses tulis pada dokumen tidak dibatasi pada pengguna yang membuka dokumen untuk pertama kalinya."
+msgid "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
+msgstr ""
+"Penguncian berkas diaktifkan secara default pada ${PRODUCTNAME}. Pada "
+"jaringan yang menggunakan Network File System protocol (NFS), Daemon untuk  "
+"klien NFS harus aktif. Untuk menonaktifkan penguncian berkas, edit script "
+"<tt>soffice</tt> dan ganti baris \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" "
+"menjadi \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". Jika Anda menonaktifkan "
+"penguncian berkas, akses tulis pada dokumen tidak dibatasi pada pengguna "
+"yang membuka dokumen untuk pertama kalinya."
 
 #: readme.xrm#PJI76WSDF
 #, fuzzy
-msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr "Peringatan: Mengaktifkan fitur penguncian berkas bisa menyebabkan masalah pada penggunaan Solaris 2.5.1 dan 2.7 beserta Linux NFS 2.0. Apabila lingkungan sistem Anda memiliki parameter ini, kami sangat menyarankan untuk tidak menggunakan fitur penguncian berkas. Jika tidak, ${PRODUCTNAME} akan tersangkut saat Anda mencoba membuka berkas dari direktori NFS yang dikait dari komputer Linux."
+msgid "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"Peringatan: Mengaktifkan fitur penguncian berkas bisa menyebabkan masalah "
+"pada penggunaan Solaris 2.5.1 dan 2.7 beserta Linux NFS 2.0. Apabila "
+"lingkungan sistem Anda memiliki parameter ini, kami sangat menyarankan untuk "
+"tidak menggunakan fitur penguncian berkas. Jika tidak, ${PRODUCTNAME} akan "
+"tersangkut saat Anda mencoba membuka berkas dari direktori NFS yang dikait "
+"dari komputer Linux."
 
 #: readme.xrm#GFH6W1
 #, fuzzy
-msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "Masalah Saat Mengirim Dokumen sebagai Surel dari ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
 #, fuzzy
-msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr "Saat mengirin dokumen via 'Berkas - Kirim - Dokumen sebagai Surel' atau 'Dokumen sebagai Lampiran PDF' beberapa masalah mungkin terjadi (program yang bentrok atau tersangkut). Ini adalah masalah pada sitem berkas \"Mapi\" (Messaging Application Programming Interface) Windows yang menyebabkan masalah pada beberapa versi berkas. Sayangnya, masalah ini tidak dapat ditelusuri pada nomor versi tertentu. Untuk informasi lebih lanjut, kunjungi http://www.microsoft.com untuk mencari Microsoft Knowledge Base bagi \"mapi dll\"."
+msgid "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"Saat mengirin dokumen via 'Berkas - Kirim - Dokumen sebagai Surel' atau "
+"'Dokumen sebagai Lampiran PDF' beberapa masalah mungkin terjadi (program "
+"yang bentrok atau tersangkut). Ini adalah masalah pada sitem berkas \"Mapi\" "
+"(Messaging Application Programming Interface) Windows yang menyebabkan "
+"masalah pada beberapa versi berkas. Sayangnya, masalah ini tidak dapat "
+"ditelusuri pada nomor versi tertentu. Untuk informasi lebih lanjut, kunjungi "
+"http://www.microsoft.com untuk mencari Microsoft Knowledge Base bagi \"mapi "
+"dll\"."
 
 #: readme.xrm#AW22
 #, fuzzy
-msgid  "Important Accessibility Notes"
+msgid "Important Accessibility Notes"
 msgstr "Catatan Penting Aksesibilitas"
 
 #: readme.xrm#ACCESS7
 #, fuzzy
-msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
-msgstr "Untuk informasi lebih lanjut tentang fitur aksesibilitas pada  ${PRODUCTNAME}, lihat <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgid "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
+msgstr ""
+"Untuk informasi lebih lanjut tentang fitur aksesibilitas pada  "
+"${PRODUCTNAME}, lihat <a href=\"http://www.openoffice.org/access/\">http://www"
+".openoffice.org/access/</a>"
 
 #: readme.xrm#SUPPORT
 #, fuzzy
-msgid  "User Support"
+msgid "User Support"
 msgstr "Dukungan Pengguna"
 
 #: readme.xrm#SUPPORT1
 #, fuzzy
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
-msgstr "Halaman dukungan utama <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> menawarkan banyak kemungkinan bantuan dengan ${PRODUCTNAME}. Pertanyaan Anda mungkin sudah dijawab - periksa Forum Komunitas pada <a href=\"http://user.services.openoffice.org\">http://user.services.openoffice.org</a> atau cari arsip dari mailing list 'users@openoffice.org' pada <a href=\"http://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. Alternatif lain, Anda bisa mengirimkan pertanyaan kepada <a href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Bagaimana mendaftarkan diri ke mailing list (untuk mendapatkan respon email) dijelaskan pada halaman ini: <a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>."
+msgid "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr ""
+"Halaman dukungan utama <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"menawarkan banyak kemungkinan bantuan dengan ${PRODUCTNAME}. Pertanyaan Anda "
+"mungkin sudah dijawab - periksa Forum Komunitas pada <a href=\"http://user.s"
+"ervices.openoffice.org\">http://user.services.openoffice.org</a> atau cari "
+"arsip dari mailing list 'users@openoffice.org' pada <a href=\"http://www.open"
+"office.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. "
+"Alternatif lain, Anda bisa mengirimkan pertanyaan kepada <a "
+"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Bagaimana "
+"mendaftarkan diri ke mailing list (untuk mendapatkan respon email) "
+"dijelaskan pada halaman ini: <a href=\"http://wiki.services.openoffice.org/wi"
+"ki/Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wi"
+"ki/Website/Content/help/mailinglists</a>."
 
 #: readme.xrm#FAQ
 #, fuzzy
-msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
-msgstr "Juga periksa bagian FAQ pada <a href=\"http://wiki.services.openoffice.org/wiki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentation/FAQ.</a>"
+msgid "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
+msgstr ""
+"Juga periksa bagian FAQ pada <a href=\"http://wiki.services.openoffice.org/wi"
+"ki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentation"
+"/FAQ.</a>"
 
 #: readme.xrm#REPORTBUGS
 #, fuzzy
-msgid  "Reporting Bugs &amp; Issues"
+msgid "Reporting Bugs &amp; Issues"
 msgstr "Melaporkan Kesalahan &amp; Masalah"
 
 #: readme.xrm#REPORTBUGS1
 #, fuzzy
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr "Situs Web ${PRODUCTNAME} menggunakan IssueZilla, mekanisme kami adalah untuk melaporkan, melacak, dan memecahkan isu atau masalah. Kami menyambut semua pengguna dengan sangat berbangga untuk melaporkan masalah-masalah yang mungkin saja terjadi pada platform Anda yang berbeda satu sama lain. Pelaporan masalah ini adalah satu dari sekian kontribusi yang sangat penting, yang bisa dilakukan oleh komunitas pengguna. Dengan begini, paket kantor ini bisa mengalami peningkatan yang sangat berarti. "
+msgid "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
+"Situs Web ${PRODUCTNAME} menggunakan IssueZilla, mekanisme kami adalah untuk "
+"melaporkan, melacak, dan memecahkan isu atau masalah. Kami menyambut semua "
+"pengguna dengan sangat berbangga untuk melaporkan masalah-masalah yang "
+"mungkin saja terjadi pada platform Anda yang berbeda satu sama lain. "
+"Pelaporan masalah ini adalah satu dari sekian kontribusi yang sangat "
+"penting, yang bisa dilakukan oleh komunitas pengguna. Dengan begini, paket "
+"kantor ini bisa mengalami peningkatan yang sangat berarti. "
 
 #: readme.xrm#GETTINGINVOLVED1
 #, fuzzy
-msgid  "Getting Involved"
+msgid "Getting Involved"
 msgstr "Ikut Terlibat "
 
 #: readme.xrm#GETTINGINVOLVED2
 #, fuzzy
-msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr "Komunitas ${PRODUCTNAME} akan memperoleh banyak keuntungan dari partisipasi aktif Anda dalam pengembangan proyek kode sumber terbuka ini."
+msgid "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
+msgstr ""
+"Komunitas ${PRODUCTNAME} akan memperoleh banyak keuntungan dari partisipasi "
+"aktif Anda dalam pengembangan proyek kode sumber terbuka ini."
 
 #: readme.xrm#GETTINGIMVOLVED3
 #, fuzzy
-msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "Sebagai pengguna, Anda memiliki bagian yang sangat berharga untuk proses pengembangan aplikasi ini. Dan kami sangat berharap bahwa Anda akan berpartisipasi aktif sebagai kontributor jangka panjang kepada komunitas. Kami undang Anda untuk bergabung dan lihatlah halaman pengguna pada: "
+msgid "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
+msgstr ""
+"Sebagai pengguna, Anda memiliki bagian yang sangat berharga untuk proses "
+"pengembangan aplikasi ini. Dan kami sangat berharap bahwa Anda akan "
+"berpartisipasi aktif sebagai kontributor jangka panjang kepada komunitas. "
+"Kami undang Anda untuk bergabung dan lihatlah halaman pengguna pada: "
 
 #: readme.xrm#HOWTOSTART
 #, fuzzy
-msgid  "How to Start"
+msgid "How to Start"
 msgstr "Jalan untuk Memulai"
 
 #: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgid "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
 msgstr ""
 
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
-msgid  "Subscribe"
+msgid "Subscribe"
 msgstr "Mendaftar"
 
 #: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgid "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
 msgstr ""
 
 #: readme.xrm#SUBSCRIBELIST1
 #, fuzzy
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr "Berita: announce@openoffice.org *disarankan bagi semua pengguna* (arus ringan) "
+msgid "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+"Berita: announce@openoffice.org *disarankan bagi semua pengguna* (arus "
+"ringan) "
 
 #: readme.xrm#SUBSCRIBELIST2
 #, fuzzy
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr "Forum utama pengguna: user@openoffice.org *cara mudah untuk terlibat diskusi* (sangat ramai) "
+msgid "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+"Forum utama pengguna: user@openoffice.org *cara mudah untuk terlibat "
+"diskusi* (sangat ramai) "
 
 #: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgid "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
 msgstr ""
 
 #: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
+msgid "Joining the Project"
 msgstr ""
 
 #: readme.xrm#JOINING
 #, fuzzy
-msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
-msgstr "Anda bisa memberikan kontribusi besar untuk proyek kode sumber terbuka ini, meski Anda sendiri adalah orang dengan pengalaman desain peranti lunak atau koding yang terbatas. Ya, Anda bisa!"
+msgid "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+"Anda bisa memberikan kontribusi besar untuk proyek kode sumber terbuka ini, "
+"meski Anda sendiri adalah orang dengan pengalaman desain peranti lunak atau "
+"koding yang terbatas. Ya, Anda bisa!"
 
 #: readme.xrm#JOINING1
 #, fuzzy
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr " Anda akan menjumpai proyek mulai dari Lokalisasi, hingga proyek pembangunan kode yang sesungguhnya. Jika Anda bukan seorang pengembang, cobalah Proyek Dokumentasi atau Pemasaran. Proyek Pemasaran OpenOffice.org menerapkan teknis pemasaran yang cukup tradisional namun cukup efektif, dan kami melakukannya melintas batas bahasa dan budaya, sehingga Anda cukup membantu dengan menyebarkan kata-kata dan memberi tahu teman-teman Anda tentang paket kantor ini."
+msgid "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+" Anda akan menjumpai proyek mulai dari Lokalisasi, hingga proyek pembangunan "
+"kode yang sesungguhnya. Jika Anda bukan seorang pengembang, cobalah Proyek "
+"Dokumentasi atau Pemasaran. Proyek Pemasaran OpenOffice.org menerapkan "
+"teknis pemasaran yang cukup tradisional namun cukup efektif, dan kami "
+"melakukannya melintas batas bahasa dan budaya, sehingga Anda cukup membantu "
+"dengan menyebarkan kata-kata dan memberi tahu teman-teman Anda tentang paket "
+"kantor ini."
 
 #: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgid "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
 msgstr ""
 
 #: readme.xrm#CREDITS
 #, fuzzy
-msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr "Kami harap, Anda bisa bekerja dengan nyaman bersama ${PRODUCTNAME} ${PRODUCTVERSION} yang baru ini dan akan bergabung secara daring bersama kami."
+msgid "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+"Kami harap, Anda bisa bekerja dengan nyaman bersama ${PRODUCTNAME} "
+"${PRODUCTVERSION} yang baru ini dan akan bergabung secara daring bersama "
+"kami."
 
 #: readme.xrm#CREDITS2
-#, fuzzy
-msgid  "The Apache OpenOffice Community"
+msgid "The Apache OpenOffice Community"
 msgstr ""
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
 #, fuzzy
-msgid  "Used / Modified Source Code"
+msgid "Used / Modified Source Code"
 msgstr "Penggunaan / Pengubahan Kode Sumber"

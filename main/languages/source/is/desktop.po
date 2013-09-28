@@ -1,952 +1,1150 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Velkomin í %PRODUCTNAME %PRODUCTVERSION"
 
 #: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Velkomin(n)"
 
 #: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "Leyfissamningur"
 
 #: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "Persónulegar upplýsingar"
 
 #: migration/wizard.src#STR_STATE_USER.STRING.TEXT
-msgid  "User name"
+msgid "User name"
 msgstr "Notandanafn"
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
-msgid  "Online Update"
+msgid "Online Update"
 msgstr "Uppfærsla á netinu"
 
 #: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
-msgid  "Registration"
+msgid "Registration"
 msgstr "Skráning"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Þessi álfur mun hjálpa þér í gegnum notandaleyfið, flutning persónuupplýsinga úr %OLD_VERSION og í gegnum skráningarferli %PRODUCTNAME.\n\nSmelltu á 'Áfram' til að halda áfram."
+msgid "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Þessi álfur mun hjálpa þér í gegnum notandaleyfið, flutning "
+"persónuupplýsinga úr %OLD_VERSION og í gegnum skráningarferli %PRODUCTNAME.\n"
+"\n"
+"Smelltu á 'Áfram' til að halda áfram."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Þessi álfur mun hjálpa þér í gegnum skráningarferli %PRODUCTNAME.\n\nSmelltu á 'Áfram' til að halda áfram."
+msgid "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Þessi álfur mun hjálpa þér í gegnum skráningarferli %PRODUCTNAME.\n"
+"\n"
+"Smelltu á 'Áfram' til að halda áfram."
 
 #: migration/wizard.src#STR_FINISH.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "~Ljúka"
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "Þú hefur núna tækifæri til að styðja og leggja þitt af mörkum til opna hugbúnaðarsamfélagsins sem vex hvað hraðast í heiminum.\n\nHjálpaðu okkur til að sanna að %PRODUCTNAME sé þegar með umtalsverðan hluta notendamarkaðarins með því að skrá þig.\n\nSkráning er algerlega valfrjáls og án nokkurra skilyrða."
+msgid "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+"Þú hefur núna tækifæri til að styðja og leggja þitt af mörkum til opna "
+"hugbúnaðarsamfélagsins sem vex hvað hraðast í heiminum.\n"
+"\n"
+"Hjálpaðu okkur til að sanna að %PRODUCTNAME sé þegar með umtalsverðan hluta "
+"notendamarkaðarins með því að skrá þig.\n"
+"\n"
+"Skráning er algerlega valfrjáls og án nokkurra skilyrða."
+
+#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
+msgid "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
-msgid  "Do you really want to decline?"
+msgid "Do you really want to decline?"
 msgstr "Viltu í alvörunni hafna þessu?"
 
+#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Velkomin í %PRODUCTNAME %PRODUCTVERSION"
+
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Þessi álfur mun hjálpa þér í gegnum notandaleyfi og skráningarferli %PRODUCTNAME.\n\nSmelltu á 'Næst' til að halda áfram."
+msgid "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+"Þessi álfur mun hjálpa þér í gegnum notandaleyfi og skráningarferli %"
+"PRODUCTNAME.\n"
+"\n"
+"Smelltu á 'Næst' til að halda áfram."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to accept the license"
+msgid "Please follow these steps to accept the license"
 msgstr "Farðu í gegnum þessi skref til að samþykkja notandaleyfið"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Lestu yfir allt notandaleyfið (License Agreement). Notaðu skrunslána eða '%PAGEDOWN' hnappinn hér í glugganum til að sjá allann textann."
+msgid "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Lestu yfir allt notandaleyfið (License Agreement). Notaðu skrunslána eða '%"
+"PAGEDOWN' hnappinn hér í glugganum til að sjá allann textann."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgid "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Smelltu á 'Samþykkja' til að samþykkja skilmála notandaleyfisins."
 
 #: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Do~wn"
+msgid "Scroll Do~wn"
 msgstr "~Renna niður"
 
 #: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "~Samþykkja"
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
-msgid  "~Decline"
+msgid "~Decline"
 msgstr "~Hafna"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "Transfer personal data"
+msgid "Transfer personal data"
 msgstr "Flytja persónuupplýsingar"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "Megnið af persónuupplýsingunum úr %OLDPRODUCT uppsetningunni er hægt að nota í %PRODUCTNAME %PRODUCTVERSION.\n\nEf þú vilt ekki nota neitt af þessum stillingum í %PRODUCTNAME %PRODUCTVERSION, taktu þá hakið úr reitnum."
+msgid "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+"Megnið af persónuupplýsingunum úr %OLDPRODUCT uppsetningunni er hægt að nota "
+"í %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Ef þú vilt ekki nota neitt af þessum stillingum í %PRODUCTNAME %"
+"PRODUCTVERSION, taktu þá hakið úr reitnum."
+
+#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
+msgid "Transfer personal data"
+msgstr "Flytja persónuupplýsingar"
+
+#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
+msgid "Online Update"
+msgstr "Uppfærsla á netinu"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "%PRODUCTNAME leitar reglulega eftir nýjum útgáfum.\nVið uppfærslu af netinu eru engin einkagögn gefin upp.\nUm leið og nýjar útgáfur eru tiltækar, ertu látinn vita.\n\nÞú getur stillt þessa hegðun með því að fara í Verkfæri / Valkostir... / %PRODUCTNAME / Uppfærsla af netinu."
+msgid "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+"%PRODUCTNAME leitar reglulega eftir nýjum útgáfum.\n"
+"Við uppfærslu af netinu eru engin einkagögn gefin upp.\n"
+"Um leið og nýjar útgáfur eru tiltækar, ertu látinn vita.\n"
+"\n"
+"Þú getur stillt þessa hegðun með því að fara í Verkfæri / Valkostir... / %"
+"PRODUCTNAME / Uppfærsla af netinu."
 
 #: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
-msgid  "~Check for updates automatically"
+msgid "~Check for updates automatically"
 msgstr "~Leita sjálfkrafa að uppfærslum"
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
-msgid  "Provide your full name and initials below"
+msgid "Provide your full name and initials below"
 msgstr "Settu inn fullt nafn og upphafstafina þína hér að neðan"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
-msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr "Nafn notandans er notað í eiginleikum skjala, í sniðskrám og þegar skráðar eru breytingar á skjölum."
+msgid "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+"Nafn notandans er notað í eiginleikum skjala, í sniðskrám og þegar skráðar "
+"eru breytingar á skjölum."
 
 #: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
-msgid  "~First name"
+msgid "~First name"
 msgstr "~Nafn"
 
 #: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
-msgid  "~Last name"
+msgid "~Last name"
 msgstr "~Eftirnafn"
 
 #: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
-msgid  "~Initials"
+msgid "~Initials"
 msgstr "~Upphafsstafir"
 
 #: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
-msgid  "~Father's name"
+msgid "~Father's name"
 msgstr "~Eftirnafn"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME Registration"
+msgid "%PRODUCTNAME Registration"
 msgstr "Skráning %PRODUCTNAME"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "Þú hefur núna tækifæri til að skrá þig sem notanda %PRODUCTNAME. Skráning er algerlega valfrjáls og án nokkurra skilyrða.\n\nEf þú skráir þig, getum við látið þig vita um ný atriði í þróun hugbúnaðarins."
+msgid "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+"Þú hefur núna tækifæri til að skrá þig sem notanda %PRODUCTNAME. Skráning er "
+"algerlega valfrjáls og án nokkurra skilyrða.\n"
+"\n"
+"Ef þú skráir þig, getum við látið þig vita um ný atriði í þróun "
+"hugbúnaðarins."
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
-msgid  "I want to register ~now"
+msgid "I want to register ~now"
 msgstr "Ég vil skrá mig ~núna"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
-msgid  "I want to register ~later"
+msgid "I want to register ~later"
 msgstr "Ég vil skrá mig ~seinna"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
-msgid  "I do not want to ~register"
+msgid "I do not want to ~register"
 msgstr "Ég ætla ~ekki að skrá mig"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "Við vonum að þú njótir þess að vinna með %PRODUCTNAME.\n\nTil að hætta í álfinum, smelltu á 'Ljúka'."
+msgid "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+"Við vonum að þú njótir þess að vinna með %PRODUCTNAME.\n"
+"\n"
+"Til að hætta í álfinum, smelltu á 'Ljúka'."
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
-msgid  "Should the file \"$1\" be restored?"
+msgid "Should the file \"$1\" be restored?"
 msgstr "Ætti að endurheimta skrána \"$1\"?"
 
 #: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
-msgid  "File Recovery"
+msgid "File Recovery"
 msgstr "Endurheimt skráa"
 
+#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
+msgid "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr ""
+
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
-msgid  "The application cannot be started. "
+msgid "The application cannot be started. "
 msgstr "Ekki er hægt að keyra forritið. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
-msgid  "The configuration directory \"$1\" could not be found."
+msgid "The configuration directory \"$1\" could not be found."
 msgstr "Stillinga mappan \"$1\" fannst ekki."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
-msgid  "The installation path is invalid."
+msgid "The installation path is invalid."
 msgstr "Slóðin fyrir uppsetninguna er röng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
-msgid  "The installation path is not available."
+msgid "The installation path is not available."
 msgstr "Slóð fyrir uppsetninguna er ekki til."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
-msgid  "An internal error occurred."
+msgid "An internal error occurred."
 msgstr "Innri villa kom upp."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
-msgid  "The configuration file \"$1\" is corrupt."
+msgid "The configuration file \"$1\" is corrupt."
 msgstr "Stillinga skráin \"$1\" er skemmd."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
-msgid  "The configuration file \"$1\" was not found."
+msgid "The configuration file \"$1\" was not found."
 msgstr "Stillinga skráin \"$1\" fannst ekki."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
-msgid  "The configuration file \"$1\" does not support the current version."
+msgid "The configuration file \"$1\" does not support the current version."
 msgstr "Stillinga skráin \"$1\" styður ekki þessa útgáfu."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
-msgid  "The user interface language cannot be determined."
+msgid "The user interface language cannot be determined."
 msgstr "Ekki hægt að ákvarða tungumál notandans."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
-msgid  "The component manager is not available."
+msgid "The component manager is not available."
 msgstr "Einingastjórinn er ekki tiltækur."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
-msgid  "The configuration service is not available."
+msgid "The configuration service is not available."
 msgstr "Stilliþjónustan er ekki tiltæk."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
-msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
+msgid "You have another instance running in a different terminal session. Close that instance and then try again."
 msgstr ""
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
-msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "Ræstu uppsetningaforritið til að lagfæra uppsetninguna. Það má finna á geisladisknum eða möppu með uppsetningaskrám."
+msgid "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr ""
+"Ræstu uppsetningaforritið til að lagfæra uppsetninguna. Það má finna á "
+"geisladisknum eða möppu með uppsetningaskrám."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
-msgid  "The startup settings for accessing the central configuration are incomplete. "
+msgid "The startup settings for accessing the central configuration are incomplete. "
 msgstr "Ræsistillingarnar fyrir miðlægar stillingar eru ekki fullbúnar. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
-msgid  "A connection to the central configuration could not be established. "
+msgid "A connection to the central configuration could not be established. "
 msgstr "Tenging við miðlægar stillingar tókst ekki. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
-msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr "Ekki var hægt að nálgast miðlægar stillingar vegna ónógra aðgangsheimilda. "
+msgid "You cannot access the central configuration because of missing access rights. "
+msgstr ""
+"Ekki var hægt að nálgast miðlægar stillingar vegna ónógra aðgangsheimilda. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
-msgid  "A general error occurred while accessing your central configuration. "
+msgid "A general error occurred while accessing your central configuration. "
 msgstr "Almenn villa kom upp þegar reynt var að nálgast miðlægar stillingar. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
-msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "Breytingar á þínum stillingum tókst ekki að geyma miðlægt vegna ónógra aðgangsheimilda. "
+msgid "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr ""
+"Breytingar á þínum stillingum tókst ekki að geyma miðlægt vegna ónógra "
+"aðgangsheimilda. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "Ekki var hægt að ræsa %PRODUCTNAME vegna villu við að nálgast stillingagögn %PRODUCTNAME.\n\nHafðu samband við kerfisstjórann þinn."
+msgid "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+"Ekki var hægt að ræsa %PRODUCTNAME vegna villu við að nálgast stillingagögn "
+"%PRODUCTNAME.\n"
+"\n"
+"Hafðu samband við kerfisstjórann þinn."
 
 #: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
-msgid  "The following internal error has occurred: "
+msgid "The following internal error has occurred: "
 msgstr "Eftirfarandi innri villa kom upp: "
 
+#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
+msgid "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr ""
+
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
-msgid  "Printing is disabled. No documents can be printed."
+msgid "Printing is disabled. No documents can be printed."
 msgstr "Prentun er óvirk. Ekki er hægt að prenta nein skjöl."
 
+#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
+msgid "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
+
+#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
-msgid  "The path manager is not available.\n"
+msgid "The path manager is not available.\n"
 msgstr "Slóðastjórinn er ekki tiltækur.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "%PRODUCTNAME notendauppsetning kláraðist ekki vegna ónógs diskrýmis. Vinsamlega losaði pláss á eftirfarandi staðsetningu og endurræstu %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"%PRODUCTNAME notendauppsetning kláraðist ekki vegna ónógs diskrýmis. "
+"Vinsamlega losaði pláss á eftirfarandi staðsetningu og endurræstu %"
+"PRODUCTNAME:\n"
+"\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "%PRODUCTNAME notendauppsetning var ekki hægt að keyra vegna aðgangsheimilda. Gangið úr skugga um að aðgangsheimildir sé í lagi fyrir viðkomandi staðsetningu og endurræstu %PRODUCTNAME:\n\n"
+msgid "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgstr ""
+"%PRODUCTNAME notendauppsetning var ekki hægt að keyra vegna aðgangsheimilda. "
+"Gangið úr skugga um að aðgangsheimildir sé í lagi fyrir viðkomandi "
+"staðsetningu og endurræstu %PRODUCTNAME:\n"
+"\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
-msgid  "Extension Software License Agreement of $NAME:"
+msgid "Extension Software License Agreement of $NAME:"
 msgstr "Hugbúnaðarleyfi viðbótar $NAME:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr "Lestu allt notkunarleyfið hér að ofan. Samþykktu notkunarleyfið með því að slá inn \"já\" í skjáglugganum og ýta síðan á Enter/Return. Sláðu inn \"nei\" til að hafna og hætta þar með í uppsetningunni."
+msgid "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr ""
+"Lestu allt notkunarleyfið hér að ofan. Samþykktu notkunarleyfið með því að "
+"slá inn \"já\" í skjáglugganum og ýta síðan á Enter/Return. Sláðu inn \"nei\" "
+"til að hafna og hætta þar með í uppsetningunni."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
-msgid  "[Enter \"yes\" or \"no\"]:"
+msgid "[Enter \"yes\" or \"no\"]:"
 msgstr "[Settu inn \"já\" eða \"nei\"]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
-msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Það sem þú settir inn var ekki rétt. Settu inn \"já\" eða \"nei\":"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
-msgid  "YES"
+msgid "YES"
 msgstr "JÁ"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
-msgid  "Y"
+msgid "Y"
 msgstr "J"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
-msgid  "NO"
+msgid "NO"
 msgstr "NEI"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
-msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr "Ekki er hægt að ræsa unopkg. Læsiskráin gefur til kynna að forritið sé þegar í gangi. Ef það er ekki raunin, ætti að eyða læsiskránni hér:"
+msgid "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
+"Ekki er hægt að ræsa unopkg. Læsiskráin gefur til kynna að forritið sé þegar "
+"í gangi. Ef það er ekki raunin, ætti að eyða læsiskránni hér:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
-msgid  "ERROR: "
+msgid "ERROR: "
 msgstr "VILLA: "
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
-msgid  "Unknown"
+msgid "Unknown"
 msgstr "Óþekkt"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
-msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgid "Extension requires at least Apache OpenOffice %VERSION"
 msgstr "Viðbótin krefst að minnsta kosti OpenOffice.org %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
-msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgid "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
 msgstr "Viðbótin styður ekki útgáfur nýrri en: OpenOffice.org %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
-msgid  "%PRODUCTNAME Basic Library"
+msgid "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME grunnskráasafn"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
-msgid  "Dialog Library"
+msgid "Dialog Library"
 msgstr "Skráasafn samskiptaglugga"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
-msgid  "The library name could not be determined."
+msgid "The library name could not be determined."
 msgstr "Ekki tókst að greina heiti skráasafnsins."
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
-msgid  "This library name already exists. Please choose a different name."
+msgid "This library name already exists. Please choose a different name."
 msgstr "Þetta heiti á skráasafni er þegar í notkun. Veldu eitthvað annað."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
-msgid  "Enabling: "
+msgid "Enabling: "
 msgstr "Gert virkt: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
-msgid  "Disabling: "
+msgid "Disabling: "
 msgstr "Gert óvirkt: "
 
 #: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
-msgid  "Cannot detect media-type: "
+msgid "Cannot detect media-type: "
 msgstr "Get ekki fundið út gerð miðils: "
 
 #: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
-msgid  "This media-type is not supported: "
+msgid "This media-type is not supported: "
 msgstr "Þessi gerð miðils er ekki studd: "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
-msgid  "An error occurred while enabling: "
+msgid "An error occurred while enabling: "
 msgstr "Villa við að virkja: "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
-msgid  "An error occurred while disabling: "
+msgid "An error occurred while disabling: "
 msgstr "Villa við að afvirkja: "
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
-msgid  "Configuration Schema"
+msgid "Configuration Schema"
 msgstr "Stillingaskema"
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
-msgid  "Configuration Data"
+msgid "Configuration Data"
 msgstr "Stillingagögn"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "Hjálp"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
-msgid  "The extension cannot be installed because:\n"
+msgid "The extension cannot be installed because:\n"
 msgstr "Ekki var hægt að setja upp viðbótina vegna:\n"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
+msgid "The extension will not be installed because an error occurred in the Help files:\n"
 msgstr "Ekki var hægt að setja upp viðbótina vegna villu í hjálparskránum:\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
-msgid  "%MACROLANG Library"
+msgid "%MACROLANG Library"
 msgstr "%MACROLANG skráasafn"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
-msgid  "Extension"
+msgid "Extension"
 msgstr "Viðbót"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
-msgid  "UNO Dynamic Library Component"
+msgid "UNO Dynamic Library Component"
 msgstr "UNO Dynamic Library skráasafnseining"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
-msgid  "UNO Java Component"
+msgid "UNO Java Component"
 msgstr "UNO Java eining"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
-msgid  "UNO Python Component"
+msgid "UNO Python Component"
 msgstr "UNO Python eining"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
-msgid  "UNO Components"
+msgid "UNO Components"
 msgstr "UNO einingar"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
-msgid  "UNO RDB Type Library"
+msgid "UNO RDB Type Library"
 msgstr "UNO RDB Type skráasafn"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
-msgid  "UNO Java Type Library"
+msgid "UNO Java Type Library"
 msgstr "UNO Java Type skráasafn"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
-msgid  "Copying: "
+msgid "Copying: "
 msgstr "Afrita: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
-msgid  "Error while adding: "
+msgid "Error while adding: "
 msgstr "Villa við að bæta við: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
-msgid  "Error while removing: "
+msgid "Error while removing: "
 msgstr "Villa við að fjarlægja: "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
-msgid  "Extension has already been added: "
+msgid "Extension has already been added: "
 msgstr "Viðbótinni hefur þegar verið bætt við: "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
-msgid  "There is no such extension deployed: "
+msgid "There is no such extension deployed: "
 msgstr "Engin slík viðbót er í notkun: "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
-msgid  "Synchronizing repository for %NAME extensions"
+msgid "Synchronizing repository for %NAME extensions"
 msgstr "Samstilli gagnahirslu fyrir %NAME viðbætur"
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\nNýrri útgáfan $DEPLOYED, kölluð \\'$OLDNAME\\', er þegar uppsett.\nSmelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\nSmelltu á \\'Hætta við\\' til að hætta uppsetningunni."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\n"
+"Nýrri útgáfan $DEPLOYED, kölluð \\'$OLDNAME\\', er þegar uppsett.\n"
+"Smelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\n"
+"Smelltu á \\'Hætta við\\' til að hætta uppsetningunni."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\nSú útgáfa, kölluð \\'$OLDNAME\\', er þegar uppsett.\nSmelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\nSmelltu á \\'Hætta við\\' til að hætta uppsetningunni."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\n"
+"Sú útgáfa, kölluð \\'$OLDNAME\\', er þegar uppsett.\n"
+"Smelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\n"
+"Smelltu á \\'Hætta við\\' til að hætta uppsetningunni."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\nEldri útgáfan $DEPLOYED, kölluð \\'$OLDNAME\\', er þegar uppsett.\nSmelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\nSmelltu á \\'Hætta við\\' til að hætta uppsetningunni."
+msgid "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+"Þú ert að setja upp $NEW útgáfu \\'$NAME\\'-viðbótarinnar.\n"
+"Eldri útgáfan $DEPLOYED, kölluð \\'$OLDNAME\\', er þegar uppsett.\n"
+"Smelltu á \\'Í lagi\\' til að skipta út uppsettri útgáfu viðbótarinnar.\n"
+"Smelltu á \\'Hætta við\\' til að hætta uppsetningunni."
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
-msgid  "System dependencies check"
+msgid "System dependencies check"
 msgstr "Athuga kerfiskröfur"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "Ekki var hægt að setja upp viðbótina þar sem\neftirfarandi kerfiskröfur eru ekki uppfylltar:"
+msgid "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+"Ekki var hægt að setja upp viðbótina þar sem\n"
+"eftirfarandi kerfiskröfur eru ekki uppfylltar:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
-msgid  "Add Extension(s)"
+msgid "Add Extension(s)"
 msgstr "Bæta við viðbót(um)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "~Eyða"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
-msgid  "~Enable"
+msgid "~Enable"
 msgstr "Gera ~virkt"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
-msgid  "~Disable"
+msgid "~Disable"
 msgstr "~Gera óvirkt"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
-msgid  "~Update..."
+msgid "~Update..."
 msgstr "~Uppfærslur..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "~Valkostir..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "Bæti við %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
-msgid  "Removing %EXTENSION_NAME"
+msgid "Removing %EXTENSION_NAME"
 msgstr "Fjarlægi %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
-msgid  "Enabling %EXTENSION_NAME"
+msgid "Enabling %EXTENSION_NAME"
 msgstr "Virkja %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
-msgid  "Disabling %EXTENSION_NAME"
+msgid "Disabling %EXTENSION_NAME"
 msgstr "Afvirkja %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
-msgid  "Accept license for %EXTENSION_NAME"
+msgid "Accept license for %EXTENSION_NAME"
 msgstr "Samþykkja notkunarleyfi fyrir %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
-msgid  "~For all users"
+msgid "~For all users"
 msgstr "~Fyrir alla notendur"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
-msgid  "~Only for me"
+msgid "~Only for me"
 msgstr "~Aðeins fyrir mig"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
-msgid  "Error: The status of this extension is unknown"
+msgid "Error: The status of this extension is unknown"
 msgstr "Villa: staða þessarar viðbótar er óþekkt"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Loka"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
-msgid  "Quit"
+msgid "Quit"
 msgstr "Hætta"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME hefur verið uppfært í nýja útgáfu. Sumar uppsettar %PRODUCTNAME viðbætur eru ekki samhæfðar nýju útgáfunni og þarf að uppfæra þær sérstaklega áður en hægt er að ræsa %PRODUCTNAME aftur.\n\nUppfærsla sameiginlegra viðbóta krefst kerfisstjóraréttinda (administrator). Hafðu samband við kerfisstjórann þinn til að uppfæra eftirtaldar sameiginlegar viðbætur:"
+msgid "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME hefur verið uppfært í nýja útgáfu. Sumar uppsettar %PRODUCTNAME "
+"viðbætur eru ekki samhæfðar nýju útgáfunni og þarf að uppfæra þær "
+"sérstaklega áður en hægt er að ræsa %PRODUCTNAME aftur.\n"
+"\n"
+"Uppfærsla sameiginlegra viðbóta krefst kerfisstjóraréttinda (administrator). "
+"Hafðu samband við kerfisstjórann þinn til að uppfæra eftirtaldar "
+"sameiginlegar viðbætur:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
-msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr "Ekki var hægt að setja upp viðbótina þar sem eftirfarandi kerfiskröfur eru ekki uppfylltar:"
+msgid "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr ""
+"Ekki var hægt að setja upp viðbótina þar sem eftirfarandi kerfiskröfur eru "
+"ekki uppfylltar:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr "Þessi viðbót er óvirk þar sem þú hefur ekki ennþá samþykkt notandaleyfið.\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
-msgid  "Show license"
+msgid "Show license"
 msgstr "Birta notkunarleyfi"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
+msgid "Extension Software License Agreement"
 msgstr "Notandaleyfi viðbótarhugbúnaðar"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
-msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr "Farðu í gegnum þessi skref til að halda áfram með uppsetningu viðbótarinnar:"
+msgid "Please follow these steps to proceed with the installation of the extension:"
+msgstr ""
+"Farðu í gegnum þessi skref til að halda áfram með uppsetningu viðbótarinnar:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
-msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr "Lestu yfir allt notandaleyfið (License Agreement). Notaðu skrunslána eða \\'Renna niður\\' hnappinn hér í glugganum til að sjá allann textann."
+msgid "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
+msgstr ""
+"Lestu yfir allt notandaleyfið (License Agreement). Notaðu skrunslána eða "
+"\\'Renna niður\\' hnappinn hér í glugganum til að sjá allann textann."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr "Smelltu á \\'Samþykkja\\' til að samþykkja skilmála notandaleyfisins fyrir viðbótina."
+msgid "Accept the License Agreement for the extension by pressing the \'Accept\' button."
+msgstr ""
+"Smelltu á \\'Samþykkja\\' til að samþykkja skilmála notandaleyfisins fyrir "
+"viðbótina."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "~Scroll Down"
+msgid "~Scroll Down"
 msgstr "~Renna niður"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
-msgid  "Accept"
+msgid "Accept"
 msgstr "Samþykkja"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
-msgid  "Decline"
+msgid "Decline"
 msgstr "Hafna"
 
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
+msgid "Extension Software License Agreement"
+msgstr "Notandaleyfi viðbótarhugbúnaðar"
+
+#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+msgid "Close"
+msgstr "Loka"
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
+msgid "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
+msgid "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
-msgid  "The extension \\'%Name\\' does not work on this computer."
+msgid "The extension \'%Name\' does not work on this computer."
 msgstr "Viðbótin \\'%Name\\' virkar ekki á þessari tölvu."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
-msgid  "Download and Installation"
+msgid "Download and Installation"
 msgstr "Niðurhal og uppsetning"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
-msgid  "Downloading extensions..."
+msgid "Downloading extensions..."
 msgstr "Hleð niður viðbótum..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
-msgid  "Result"
+msgid "Result"
 msgstr "Útkoma"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Í lagi"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
-msgid  "Cancel Update"
+msgid "Cancel Update"
 msgstr "Hætta við uppfærslu"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
-msgid  "Installing extensions..."
+msgid "Installing extensions..."
 msgstr "Set upp viðbætur..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
-msgid  "Installation finished"
+msgid "Installation finished"
 msgstr "Uppsetningu lokið"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
-msgid  "No errors."
+msgid "No errors."
 msgstr "Engar villur."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
-msgid  "Error while downloading extension %NAME. "
+msgid "Error while downloading extension %NAME. "
 msgstr "Villa við niðurhal viðbótarinnar %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
-msgid  "The error message is: "
+msgid "The error message is: "
 msgstr "Villumeldingin er: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
-msgid  "Error while installing extension %NAME. "
+msgid "Error while installing extension %NAME. "
 msgstr "Villa við uppsetningu viðbótarinnar %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
-msgid  "The license agreement for extension %NAME was refused. "
+msgid "The license agreement for extension %NAME was refused. "
 msgstr "Notandaleyfinu fyrir viðbótina %NAME var hafnað. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
-msgid  "The extension will not be installed."
+msgid "The extension will not be installed."
 msgstr "Viðbótin verður ekki sett upp."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
-msgid  "Extension Update"
+msgid "Extension Update"
 msgstr "Uppfærsla viðbótar"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
-msgid  "Checking..."
+msgid "Checking..."
 msgstr "Athuga..."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
-msgid  "~Available extension updates"
+msgid "~Available extension updates"
 msgstr "~Tiltækar uppfærslur á viðbótum"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
-msgid  "~Show all updates"
+msgid "~Show all updates"
 msgstr "~Sýna allar uppfærslur"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
+msgid "Description"
 msgstr "Lýsing"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
-msgid  "Publisher:"
+msgid "Publisher:"
 msgstr "Útgefandi:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
-msgid  "What is new:"
+msgid "What is new:"
 msgstr "Hvað er nýtt:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
-msgid  "Release Notes"
+msgid "Release Notes"
 msgstr "Útgáfuupplýsingar"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
-msgid  "~Install"
+msgid "~Install"
 msgstr "Setja u~pp"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Loka"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Villa"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
-msgid  "No new updates are available."
+msgid "No new updates are available."
 msgstr "Engar nýjar uppfærslur eru tiltækar."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
-msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr "Engar uppsetjanlegar uppfærslur eru tiltækar. Til að skoða allar uppfærslur ætti að haka við reitinn 'Sýna allar uppfærslur'."
+msgid "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+"Engar uppsetjanlegar uppfærslur eru tiltækar. Til að skoða allar uppfærslur "
+"ætti að haka við reitinn 'Sýna allar uppfærslur'."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
-msgid  "An error occurred:"
+msgid "An error occurred:"
 msgstr "Villa kom upp:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
-msgid  "Unknown error."
+msgid "Unknown error."
 msgstr "Óþekkt villa."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
-msgid  "No more details are available for this update."
+msgid "No more details are available for this update."
 msgstr "Engar nánari upplýsingar eru tiltækar fyrir þessa uppfærslu."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
-msgid  "The extension cannot be updated because:"
+msgid "The extension cannot be updated because:"
 msgstr "Ekki var hægt að uppfæra viðbótina vegna:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
-msgid  "Required Apache OpenOffice version doesn't match:"
+msgid "Required Apache OpenOffice version doesn't match:"
 msgstr "Útgáfa OpenOffice.org sem krafist er, samsvarar ekki:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
-msgid  "You have Apache OpenOffice %VERSION"
+msgid "You have Apache OpenOffice %VERSION"
 msgstr "Þú ert með OpenOffice.org %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
-msgid  "browser based update"
+msgid "browser based update"
 msgstr "uppfærsla með vafra"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
-msgid  "Version"
+msgid "Version"
 msgstr "Útgáfa"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
-msgid  "Ignore this Update"
+msgid "Ignore this Update"
 msgstr "Hunsa þessa uppfærslu"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
-msgid  "Ignore all Updates"
+msgid "Ignore all Updates"
 msgstr "Hunsa allar uppfærslur"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
-msgid  "Enable Updates"
+msgid "Enable Updates"
 msgstr "Virkja uppfærslur"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
-msgid  "This update will be ignored.\n"
+msgid "This update will be ignored.\n"
 msgstr "Þessi uppfærsla verður hunsuð.\n"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
-msgid  "Extension Manager"
+msgid "Extension Manager"
 msgstr "Viðbótastjórnun"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "~Bæta við..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "Athuga með ~uppfærslur..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
-msgid  "Get more extensions online..."
+msgid "Get more extensions online..."
 msgstr "Ná í fleiri viðbætur á netinu..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
+msgid "Adding %EXTENSION_NAME"
 msgstr "Bæti við %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "Loka"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
-msgid  "Extension Update Required"
+msgid "Extension Update Required"
 msgstr "Krafist eru uppfærslu á viðbót"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr "%PRODUCTNAME hefur verið uppfært í nýja útgáfu. Sumar uppsettar %PRODUCTNAME viðbætur eru ekki samhæfðar nýju útgáfunni og þarf að uppfæra þær sérstaklega áður en hægt er að nota þær."
+msgid "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+"%PRODUCTNAME hefur verið uppfært í nýja útgáfu. Sumar uppsettar %PRODUCTNAME "
+"viðbætur eru ekki samhæfðar nýju útgáfunni og þarf að uppfæra þær "
+"sérstaklega áður en hægt er að nota þær."
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+msgid "Adding %EXTENSION_NAME"
+msgstr "Bæti við %EXTENSION_NAME"
+
+#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+msgid "Check for ~Updates..."
+msgstr "Athuga með ~uppfærslur..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
-msgid  "Disable all"
+msgid "Disable all"
 msgstr "Gera allt óvirkt"
 
+#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
+msgid "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+
 #: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
-msgid  "Installation Status"
+msgid "Installation Status"
 msgstr "Staða uppsetningar"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
-msgid  "Installation is optimized for clients."
+msgid "Installation is optimized for clients."
 msgstr "Uppsetningin er aðlöguð notendatölvum (biðlurum)."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
-msgid  "Installation is optimized for servers."
+msgid "Installation is optimized for servers."
 msgstr "Uppsetningin er aðlöguð miðlaratölvum (þjónum)."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
-msgid  "Cannot find Office installation."
+msgid "Cannot find Office installation."
 msgstr "Finn enga Office uppsetningu."
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
-msgid  "Setup"
+msgid "Setup"
 msgstr "Uppsetning"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
-msgid  "The %PRODUCTNAME Setup"
+msgid "The %PRODUCTNAME Setup"
 msgstr "Uppsetning %PRODUCTNAME"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
-msgid  "Out of Memory"
+msgid "Out of Memory"
 msgstr "Ekkert minni eftir"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
-msgid  "Setup was unable to find the msi package."
+msgid "Setup was unable to find the msi package."
 msgstr "Uppsetningarforritið fann ekki msi pakkann."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
-msgid  "Setup was cancelled"
+msgid "Setup was cancelled"
 msgstr "Hætt var við uppsetningu"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
-msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr "Kerfisstjóraheimildir eru nauðsynlegar til að uppfæra Windows Installer."
+msgid "Administrator privileges are required for upgrading the Windows Installer."
+msgstr ""
+"Kerfisstjóraheimildir eru nauðsynlegar til að uppfæra Windows Installer."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
-msgid  "Setup was unable to find the file '%s'."
+msgid "Setup was unable to find the file '%s'."
 msgstr "Uppsetningarforritið fann ekki skrána '%s'."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
-msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgid "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Ógildur skipanalínurofi '%s'. Notaðu '/?' fyrir hjálp."
 
+#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
+msgid "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
+msgid "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+
+#: ../win32/source/setup/setup.ulf#_USAGE_
+msgid "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
-msgid  "There is already a setup process running."
+msgid "There is already a setup process running."
 msgstr "Það er þegar uppsetningarferli í gangi."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
-msgid  "An Unknown Error occured!"
+msgid "An Unknown Error occured!"
 msgstr "Óþekkt villa koma upp!"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
-msgid  "Invalid or incomplete profile."
+msgid "Invalid or incomplete profile."
 msgstr "Ógilt eða ófullkomið snið."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
-msgid  "Unknown Language: %d"
+msgid "Unknown Language: %d"
 msgstr "Óþekkt tungumál: %d"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
-msgid  "Chinese (traditional)"
+msgid "Chinese (traditional)"
 msgstr "Kínverska (hefðbundin)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
-msgid  "Czech"
+msgid "Czech"
 msgstr "Tékkneska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
-msgid  "Danish"
+msgid "Danish"
 msgstr "Danska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
-msgid  "German (Germany)"
+msgid "German (Germany)"
 msgstr "Þýska (Þýskaland)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
-msgid  "Greek"
+msgid "Greek"
 msgstr "Gríska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
-msgid  "English (USA)"
+msgid "English (USA)"
 msgstr "Enska (Bandaríkin)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
-msgid  "Spanish (Spain)"
+msgid "Spanish (Spain)"
 msgstr "Spænska (Spánn)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
-msgid  "Finnish"
+msgid "Finnish"
 msgstr "Finnska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
-msgid  "French (France)"
+msgid "French (France)"
 msgstr "Franska (Frakkland)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
-msgid  "Hebrew"
+msgid "Hebrew"
 msgstr "Hebreska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
-msgid  "Hungarian"
+msgid "Hungarian"
 msgstr "Ungverska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
-msgid  "Italian (Italy)"
+msgid "Italian (Italy)"
 msgstr "Ítalska (Ítalía)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
-msgid  "Japanese"
+msgid "Japanese"
 msgstr "Japanska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
-msgid  "Korean"
+msgid "Korean"
 msgstr "Kóreska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
-msgid  "Dutch (Netherlands)"
+msgid "Dutch (Netherlands)"
 msgstr "Hollenska (Holland)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
-msgid  "Norwegian (Bokmål)"
+msgid "Norwegian (Bokmål)"
 msgstr "Norska (Bókmál)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
-msgid  "Polish"
+msgid "Polish"
 msgstr "Pólska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
-msgid  "Portuguese (Brazil)"
+msgid "Portuguese (Brazil)"
 msgstr "Portúgalska (Brasilía)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
-msgid  "Russian"
+msgid "Russian"
 msgstr "Rússneska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
-msgid  "Slovak"
+msgid "Slovak"
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
-msgid  "Swedish (Sweden)"
+msgid "Swedish (Sweden)"
 msgstr "Sænska (Svíþjóð)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
-msgid  "Thai"
+msgid "Thai"
 msgstr "Tælenska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
-msgid  "Turkish"
+msgid "Turkish"
 msgstr "Tyrkneska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
-msgid  "Estonian"
+msgid "Estonian"
 msgstr "Eistneska"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
-msgid  "Chinese (Simplified)"
+msgid "Chinese (Simplified)"
 msgstr "Kínverska (einfölduð)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
-msgid  "Portuguese (Portugal)"
+msgid "Portuguese (Portugal)"
 msgstr "Portúgalska (Portúgal)"

@@ -1,1902 +1,4135 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: my\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
 #, fuzzy
-msgid  "Calculates the number of weeks in a specific period"
+msgid "Calculates the number of weeks in a specific period"
 msgstr "သီးခြားကာလတစ်ခုအတွင်းရှိ ရက်သတ္တပတ်များ၏ အရေအတွက်ကို တွက်ချက်သည်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
 #, fuzzy
-msgid  "Start date"
+msgid "Start date"
 msgstr "အစ ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 #, fuzzy
-msgid  "First day of the period"
+msgid "First day of the period"
 msgstr "အချိန်ကာလတစ်ခု၏ပထမနေ့ရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
 #, fuzzy
-msgid  "End date"
-msgstr "အဆုံး ရက်စွဲ"
+msgid "End date"
+msgstr "အစ ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 #, fuzzy
-msgid  "Last day of the period"
+msgid "Last day of the period"
 msgstr "အချိန်ကာလတစ်ခု၏နောက်ဆုံးနေ့ရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ပုံသဏ္ဍာန်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် ပြက္ခဒိန်၏ရက်သတ္တပတ်များကိုဆိုလိုသည်။"
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
+msgstr ""
+"တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် "
+"ပြက္ခဒိန်၏ရက်သတ္တပတ်များကိုဆိုလိုသည်။"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
 #, fuzzy
-msgid  "Determines the number of months in a specific period."
+msgid "Determines the number of months in a specific period."
 msgstr "သီးခြားကာလတစ်ခုအတွင်းရှိလများ၏အရေအတွက်ကိုတွက်ချက်သည်။"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
 #, fuzzy
-msgid  "First day of the period."
+msgid "First day of the period."
 msgstr "အချိန်ကာလတစ်ခု၏ပထမနေ့ရက်။"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "အစ ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
 #, fuzzy
-msgid  "Last day of the period."
+msgid "Last day of the period."
 msgstr "အချိန်ကာလတစ်ခု၏နောက်ဆုံးနေ့ရက်။"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ပုံသဏ္ဍာန်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် ပြက္ခဒိန်လများကိုဆိုလိုသည်။"
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
+msgstr ""
+"တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် "
+"ပြက္ခဒိန်လများကိုဆိုလိုသည်။"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
 #, fuzzy
-msgid  "Calculates the number of years in a specific period."
+msgid "Calculates the number of years in a specific period."
 msgstr "သီးခြားကာလတစ်ခုအတွင်းရှိနှစ်များ၏အရေအတွက်ကို တွက်ချက်သည်။"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
+#, fuzzy
+msgid "First day of the period"
+msgstr "အချိန်ကာလတစ်ခု၏ပထမနေ့ရက်"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "အစ ရက်စွဲ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
+#, fuzzy
+msgid "Last day of the period"
+msgstr "အချိန်ကာလတစ်ခု၏နောက်ဆုံးနေ့ရက်"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ပုံသဏ္ဍာန်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
 #, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် ပြက္ခဒိန်နှစ်များကိုဆိုလိုသည်။"
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
+msgstr ""
+"တွက်ချက်မှုပုံစံး အမျိုးအစား=၀သည် ကြားအချိန်ကို ဆိုလိုပြီး၊အမျိုးအစား=၁သည် "
+"ပြက္ခဒိန်နှစ်များကိုဆိုလိုသည်။"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr "ရက်စွဲတစ်ခုသည် ခုန်ကျော်သည့်နှစ်၏ နေ့တစ်နေ့ဖြစ်လျှင် ၁(မှန်သည်)ကိုပြန်ပြီး၊ သို့မဟုတ်ပါက ၀(မှားသည်)ကိုပြန်သည်။"
+msgid "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
+msgstr ""
+"ရက်စွဲတစ်ခုသည် ခုန်ကျော်သည့်နှစ်၏ နေ့တစ်နေ့ဖြစ်လျှင် ၁(မှန်သည်)ကိုပြန်ပြီး၊ "
+"သို့မဟုတ်ပါက ၀(မှားသည်)ကိုပြန်သည်။"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
 #, fuzzy
-msgid  "Any day in the desired year"
+msgid "Any day in the desired year"
 msgstr "ဆန္ဒရှိသောနှစ်အတွင်းမှကြိုက်နှစ်သက်ရာရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days of the month in which the date entered occurs"
+msgid "Returns the number of days of the month in which the date entered occurs"
 msgstr "ဝင်ရောက်ထားသော နေ့စွဲများအတွင်းရှိ လတစ်လ၏ နေ့များအရေအတွက်ကိုပြန်သည်"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "ရက်စွဲ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
 #, fuzzy
-msgid  "Any day in the desired month"
+msgid "Any day in the desired month"
 msgstr "ဆန္ဒရှိသောလအတွင်းမှကြိုက်နှစ်သက်ရာရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "ဝင်ရောက်ထားသော နေ့စွဲများအတွင်းရှိ နှစ်တစ်နှစ်၏ နေ့များအရေအတွက်ကိုပြန်သည်"
+msgid "Returns the number of days of the year in which the date entered occurs."
+msgstr ""
+"ဝင်ရောက်ထားသော နေ့စွဲများအတွင်းရှိ နှစ်တစ်နှစ်၏ နေ့များအရေအတွက်ကိုပြန်သည်"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "ရက်စွဲ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
+#, fuzzy
+msgid "Any day in the desired year"
+msgstr "ဆန္ဒရှိသောနှစ်အတွင်းမှကြိုက်နှစ်သက်ရာရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
+msgid "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "ဝင်ရောက်ထားသော နေ့စွဲများအတွင်းရှိ တစ်ပတ်၏ နေ့များအရေအတွက်ကိုပြန်သည်"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
+#, fuzzy
+msgid "Date"
+msgstr "ရက်စွဲ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
+#, fuzzy
+msgid "Any day in the desired year"
+msgstr "ဆန္ဒရှိသောနှစ်အတွင်းမှကြိုက်နှစ်သက်ရာရက်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
 #, fuzzy
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "ROT13 ညွှန်ကြားချက်အဆင့်များအသုံးပြုထားသော စာသားကို ကုဒ်တစ်ခုအနေဖြင့် ထည့်သွင်း(သို့)ထုတ်ပယ်သည် "
+msgid "Encrypts or decrypts a text using the ROT13 algorithm"
+msgstr ""
+"ROT13 ညွှန်ကြားချက်အဆင့်များအသုံးပြုထားသော စာသားကို ကုဒ်တစ်ခုအနေဖြင့် "
+"ထည့်သွင်း(သို့)ထုတ်ပယ်သည် "
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "စာသား"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
 #, fuzzy
-msgid  "Text to be encrypted or text already encrypted"
+msgid "Text to be encrypted or text already encrypted"
 msgstr "စာသားကိုကုဒ်တစ်ခုအနေဖြင့်ထည့်သွင်းသည်(သို့)ထည့်သွင်းထားပြီးဖြစ်သည်"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
 #, fuzzy
-msgid  "WEEKS"
+msgid "WEEKS"
 msgstr "WEEKS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
 #, fuzzy
-msgid  "MONTHS"
+msgid "MONTHS"
 msgstr "MONTHS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
 #, fuzzy
-msgid  "YEARS"
+msgid "YEARS"
 msgstr "YEARS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
 #, fuzzy
-msgid  "ISLEAPYEAR"
+msgid "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 #, fuzzy
-msgid  "DAYSINMONTH"
+msgid "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
 #, fuzzy
-msgid  "DAYSINYEAR"
+msgid "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
 #, fuzzy
-msgid  "WEEKSINYEAR"
+msgid "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
 #, fuzzy
-msgid  "ROT13"
+msgid "ROT13"
 msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
 #, fuzzy
-msgid  "WORKDAY"
+msgid "WORKDAY"
 msgstr "WORKDAY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
 #, fuzzy
-msgid  "YEARFRAC"
+msgid "YEARFRAC"
 msgstr "YEARFRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
 #, fuzzy
-msgid  "EDATE"
+msgid "EDATE"
 msgstr "EDATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
 #, fuzzy
-msgid  "WEEKNUM"
+msgid "WEEKNUM"
 msgstr "WEEKNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
 #, fuzzy
-msgid  "EOMONTH"
+msgid "EOMONTH"
 msgstr "EOMONTH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
 #, fuzzy
-msgid  "NETWORKDAYS"
+msgid "NETWORKDAYS"
 msgstr "NETWORKDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
 #, fuzzy
-msgid  "AMORDEGRC"
+msgid "AMORDEGRC"
 msgstr "AMORDEGRC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
 #, fuzzy
-msgid  "AMORLINC"
+msgid "AMORLINC"
 msgstr "AMORLINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
 #, fuzzy
-msgid  "ACCRINT"
+msgid "ACCRINT"
 msgstr "ACCRINT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
 #, fuzzy
-msgid  "ACCRINTM"
+msgid "ACCRINTM"
 msgstr "ACCRINTM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
 #, fuzzy
-msgid  "RECEIVED"
+msgid "RECEIVED"
 msgstr "RECEIVED"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
 #, fuzzy
-msgid  "DISC"
+msgid "DISC"
 msgstr "DISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
 #, fuzzy
-msgid  "DURATION"
+msgid "DURATION"
 msgstr "DURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
 #, fuzzy
-msgid  "EFFECT"
+msgid "EFFECT"
 msgstr "EFFECT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
 #, fuzzy
-msgid  "CUMPRINC"
+msgid "CUMPRINC"
 msgstr "CUMPRINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
 #, fuzzy
-msgid  "CUMIPMT"
+msgid "CUMIPMT"
 msgstr "CUMIPMT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
 #, fuzzy
-msgid  "PRICE"
+msgid "PRICE"
 msgstr "PRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
 #, fuzzy
-msgid  "PRICEDISC"
+msgid "PRICEDISC"
 msgstr "PRICEDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
 #, fuzzy
-msgid  "PRICEMAT"
+msgid "PRICEMAT"
 msgstr "PRICEMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
 #, fuzzy
-msgid  "MDURATION"
+msgid "MDURATION"
 msgstr "MDURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
 #, fuzzy
-msgid  "NOMINAL"
+msgid "NOMINAL"
 msgstr "NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
 #, fuzzy
-msgid  "DOLLARFR"
+msgid "DOLLARFR"
 msgstr "DOLLARFR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
 #, fuzzy
-msgid  "DOLLARDE"
+msgid "DOLLARDE"
 msgstr "DOLLARDE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
 #, fuzzy
-msgid  "YIELD"
+msgid "YIELD"
 msgstr "YIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
 #, fuzzy
-msgid  "YIELDDISC"
+msgid "YIELDDISC"
 msgstr "YIELDDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
 #, fuzzy
-msgid  "YIELDMAT"
+msgid "YIELDMAT"
 msgstr "YIELDMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
 #, fuzzy
-msgid  "TBILLEQ"
+msgid "TBILLEQ"
 msgstr "TBILLEQ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
 #, fuzzy
-msgid  "TBILLPRICE"
+msgid "TBILLPRICE"
 msgstr "TBILLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
 #, fuzzy
-msgid  "TBILLYIELD"
+msgid "TBILLYIELD"
 msgstr "TBILLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
 #, fuzzy
-msgid  "ODDFPRICE"
+msgid "ODDFPRICE"
 msgstr "ODDFPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
 #, fuzzy
-msgid  "ODDFYIELD"
+msgid "ODDFYIELD"
 msgstr "ODDFYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
 #, fuzzy
-msgid  "ODDLPRICE"
+msgid "ODDLPRICE"
 msgstr "ODDLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
 #, fuzzy
-msgid  "ODDLYIELD"
+msgid "ODDLYIELD"
 msgstr "ODDLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
 #, fuzzy
-msgid  "XIRR"
+msgid "XIRR"
 msgstr "XIRR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
 #, fuzzy
-msgid  "XNPV"
+msgid "XNPV"
 msgstr "XNPV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
 #, fuzzy
-msgid  "INTRATE"
+msgid "INTRATE"
 msgstr "INTRATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
 #, fuzzy
-msgid  "COUPNCD"
+msgid "COUPNCD"
 msgstr "COUPNCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYS"
+msgid "COUPDAYS"
 msgstr "COUPDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYSNC"
+msgid "COUPDAYSNC"
 msgstr "COUPDAYSNC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
 #, fuzzy
-msgid  "COUPDAYBS"
+msgid "COUPDAYBS"
 msgstr "COUPDAYBS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
 #, fuzzy
-msgid  "COUPPCD"
+msgid "COUPPCD"
 msgstr "COUPPCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
 #, fuzzy
-msgid  "COUPNUM"
+msgid "COUPNUM"
 msgstr "COUPNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
 #, fuzzy
-msgid  "FVSCHEDULE"
+msgid "FVSCHEDULE"
 msgstr "FVSCHEDULE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 #, fuzzy
-msgid  "ISEVEN"
+msgid "ISEVEN"
 msgstr "ISEVEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
 #, fuzzy
-msgid  "ISODD"
+msgid "ISODD"
 msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 #, fuzzy
-msgid  "GCD"
+msgid "GCD"
 msgstr "GCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
 #, fuzzy
-msgid  "LCM"
+msgid "LCM"
 msgstr "LCM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
 #, fuzzy
-msgid  "MULTINOMIAL"
+msgid "MULTINOMIAL"
 msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
 #, fuzzy
-msgid  "SERIESSUM"
+msgid "SERIESSUM"
 msgstr "SERIESSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 #, fuzzy
-msgid  "QUOTIENT"
+msgid "QUOTIENT"
 msgstr "QUOTIENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
 #, fuzzy
-msgid  "MROUND"
+msgid "MROUND"
 msgstr "MROUND"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
 #, fuzzy
-msgid  "SQRTPI"
+msgid "SQRTPI"
 msgstr "SQRTPI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
 #, fuzzy
-msgid  "RANDBETWEEN"
+msgid "RANDBETWEEN"
 msgstr "RANDBETWEEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
 #, fuzzy
-msgid  "BESSELI"
+msgid "BESSELI"
 msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
 #, fuzzy
-msgid  "BESSELJ"
+msgid "BESSELJ"
 msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
 #, fuzzy
-msgid  "BESSELK"
+msgid "BESSELK"
 msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
 #, fuzzy
-msgid  "BESSELY"
+msgid "BESSELY"
 msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 #, fuzzy
-msgid  "BIN2DEC"
+msgid "BIN2DEC"
 msgstr "BIN2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
 #, fuzzy
-msgid  "BIN2HEX"
+msgid "BIN2HEX"
 msgstr "BIN2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
 #, fuzzy
-msgid  "BIN2OCT"
+msgid "BIN2OCT"
 msgstr "BIN2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
 #, fuzzy
-msgid  "DELTA"
+msgid "DELTA"
 msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 #, fuzzy
-msgid  "DEC2BIN"
+msgid "DEC2BIN"
 msgstr "DEC2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
 #, fuzzy
-msgid  "DEC2HEX"
+msgid "DEC2HEX"
 msgstr "DEC2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 #, fuzzy
-msgid  "DEC2OCT"
+msgid "DEC2OCT"
 msgstr "DEC2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
 #, fuzzy
-msgid  "ERF"
+msgid "ERF"
 msgstr "ERF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
 #, fuzzy
-msgid  "ERFC"
+msgid "ERFC"
 msgstr "ERFC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
 #, fuzzy
-msgid  "GESTEP"
+msgid "GESTEP"
 msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 #, fuzzy
-msgid  "HEX2BIN"
+msgid "HEX2BIN"
 msgstr "HEX2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
 #, fuzzy
-msgid  "HEX2DEC"
+msgid "HEX2DEC"
 msgstr "HEX2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
 #, fuzzy
-msgid  "HEX2OCT"
+msgid "HEX2OCT"
 msgstr "HEX2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 #, fuzzy
-msgid  "IMABS"
+msgid "IMABS"
 msgstr "IMABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
 #, fuzzy
-msgid  "IMAGINARY"
+msgid "IMAGINARY"
 msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 #, fuzzy
-msgid  "IMPOWER"
+msgid "IMPOWER"
 msgstr "IMPOWER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
 #, fuzzy
-msgid  "IMARGUMENT"
+msgid "IMARGUMENT"
 msgstr "IMARGUMENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
 #, fuzzy
-msgid  "IMCOS"
+msgid "IMCOS"
 msgstr "IMCOS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
 #, fuzzy
-msgid  "IMDIV"
+msgid "IMDIV"
 msgstr "IMDIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
 #, fuzzy
-msgid  "IMEXP"
+msgid "IMEXP"
 msgstr "IMEXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
 #, fuzzy
-msgid  "IMCONJUGATE"
+msgid "IMCONJUGATE"
 msgstr "IMCONJUGATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
 #, fuzzy
-msgid  "IMLN"
+msgid "IMLN"
 msgstr "IMLN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
 #, fuzzy
-msgid  "IMLOG10"
+msgid "IMLOG10"
 msgstr "IMLOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
 #, fuzzy
-msgid  "IMLOG2"
+msgid "IMLOG2"
 msgstr "IMLOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
 #, fuzzy
-msgid  "IMPRODUCT"
+msgid "IMPRODUCT"
 msgstr "IMPRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
 #, fuzzy
-msgid  "IMREAL"
+msgid "IMREAL"
 msgstr "IMREAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
 #, fuzzy
-msgid  "IMSIN"
+msgid "IMSIN"
 msgstr "IMSIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
 #, fuzzy
-msgid  "IMSUB"
+msgid "IMSUB"
 msgstr "IMSUB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
 #, fuzzy
-msgid  "IMSUM"
+msgid "IMSUM"
 msgstr "IMSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
 #, fuzzy
-msgid  "IMSQRT"
+msgid "IMSQRT"
 msgstr "IMSQRT"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid "IMCOT"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid "IMSINH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid "IMCOSH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid "IMCSCH"
+msgstr ""
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
 #, fuzzy
-msgid  "COMPLEX"
+msgid "COMPLEX"
 msgstr "COMPLEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 #, fuzzy
-msgid  "OCT2BIN"
+msgid "OCT2BIN"
 msgstr "OCT2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
 #, fuzzy
-msgid  "OCT2DEC"
+msgid "OCT2DEC"
 msgstr "OCT2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
 #, fuzzy
-msgid  "OCT2HEX"
+msgid "OCT2HEX"
 msgstr "OCT2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
 #, fuzzy
-msgid  "CONVERT"
+msgid "CONVERT"
 msgstr "CONVERT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
 #, fuzzy
-msgid  "FACTDOUBLE"
+msgid "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr "ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်းတစ်ခု ကို နောက်မှ ပြန်ပါ။  "
+msgid "Returns the serial number of the date before or after a specified number of workdays"
+msgstr ""
+"ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) "
+"အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်းတစ်ခု ကို နောက်မှ "
+"ပြန်ပါ။  "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
 #, fuzzy
-msgid  "Start date"
+msgid "Start date"
 msgstr "အစ ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 #, fuzzy
-msgid  "The start date"
+msgid "The start date"
 msgstr "အစ ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
 #, fuzzy
-msgid  "Days"
+msgid "Days"
 msgstr "နေ့ရက်များ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
 #, fuzzy
-msgid  "The number of workdays before or after the start date"
+msgid "The number of workdays before or after the start date"
 msgstr "အလုပ်လုပ်သောရက်များမတိုင်မီ(သို့)စတင်ပြီးနောက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 #, fuzzy
-msgid  "Holidays"
+msgid "Holidays"
 msgstr "အားလပ်ရက်များ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
 #, fuzzy
-msgid  "List of date values of days off (vacation, holidays, etc.)"
+msgid "List of date values of days off (vacation, holidays, etc.)"
 msgstr "အလုပ်ပိတ်သောရက်များ၏စာရင်း (အားလပ်ရက်တစ်ရက်၊အားလပ်ရက်များ အစရှိသဖြင့်)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr "နှစ်အပိုင်းအခြားတစ်ခု၏ စတင်သောနေ့များနှင့်အဆုံးသတ်နေ့များကြားရှိ နေ့အားလုံးအရေအတွက်ကို ပြန်သည်။"
+msgid "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
+msgstr ""
+"နှစ်အပိုင်းအခြားတစ်ခု၏ စတင်သောနေ့များနှင့်အဆုံးသတ်နေ့များကြားရှိ "
+"နေ့အားလုံးအရေအတွက်ကို ပြန်သည်။"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "အစ ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
 #, fuzzy
-msgid  "End date"
+msgid "End date"
 msgstr "အစ ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
 #, fuzzy
-msgid  "The end date"
+msgid "The end date"
 msgstr "အဆုံး ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 #, fuzzy
-msgid  "Basis"
+msgid "Basis"
 msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
 #, fuzzy
-msgid  "Basis for determining the interest days"
+msgid "Basis for determining the interest days"
 msgstr "အတိုးပေးဆောင်ရမည့်ရက်များဆုံးဖြတ်ရန်အတွက်ရင်းမြစ်အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်း တစ်ခုကို နောက်မှ ပြန်ပါ။  "
+msgid "Returns the serial number of the date that is a specified number of months before or after the start date"
+msgstr ""
+"ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) "
+"အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်း တစ်ခုကို နောက်မှ "
+"ပြန်ပါ။  "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "အစ ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
 #, fuzzy
-msgid  "Months"
+msgid "Months"
 msgstr "လများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of months before or after the start date"
+msgid "Number of months before or after the start date"
 msgstr "အလုပ်လုပ်သောလများမတိုင်မီ(သို့)စတင်ပြီးနောက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "သီးခြားသတ်မှတ်ထားသောရက်များအတွင်းမှ တစ်ပတ်၏ ပြက္ခဒိန်နေ့စွဲများကိုပြန်သည်။ "
+msgid "Returns the number of the calendar week in which the specified date occurs."
+msgstr ""
+"သီးခြားသတ်မှတ်ထားသောရက်များအတွင်းမှ တစ်ပတ်၏ ပြက္ခဒိန်နေ့စွဲများကိုပြန်သည်။ "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
 #, fuzzy
-msgid  "The date"
+msgid "The date"
 msgstr "ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
 #, fuzzy
-msgid  "Return type"
+msgid "Return type"
 msgstr "ပြန်သည့်အမျိုးအစား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
 #, fuzzy
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "တစ်ပတ်၏ သီးခြားသတ်မှတ်ထားသော အစပြုရက်များဖြစ်သည့် ၁မှ၃ထိ ကိန်းဂဏန်းတစ်ခု။"
+msgid "A number from 1 to 3 that specifies the day with which a week begins"
+msgstr ""
+"တစ်ပတ်၏ သီးခြားသတ်မှတ်ထားသော အစပြုရက်များဖြစ်သည့် ၁မှ၃ထိ ကိန်းဂဏန်းတစ်ခု။"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်းတစ်ခုကို နောက်မှ ပြန်ပါ။  "
+msgid "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
+msgstr ""
+"ရက်စွဲအတွက် အစဉ်လိုက်ရှိသော ကိန်းဂဏန်းတစ်ခုကို အရင်ပြန်ပါ။ (သို့) "
+"အလုပ်လုပ်သော ရက်များအတွက် သီးခြားသတ်မှတ်ထားသော ကိန်းဂဏန်းတစ်ခုကို နောက်မှ "
+"ပြန်ပါ။  "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
+#, fuzzy
+msgid "Months"
+msgstr "လများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
+#, fuzzy
+msgid "Number of months before or after the start date"
+msgstr "အလုပ်လုပ်သောလများမတိုင်မီ(သို့)စတင်ပြီးနောက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of workdays between two dates"
+msgid "Returns the number of workdays between two dates"
 msgstr "နေ့စွဲနှစ်ခုကြားရှိအလုပ်လုပ်သောရက်များ၏အရေအတွက်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
+#, fuzzy
+msgid "Start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
+#, fuzzy
+msgid "The start date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
+#, fuzzy
+msgid "End date"
+msgstr "အစ ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
+#, fuzzy
+msgid "The end date"
+msgstr "အဆုံး ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
+#, fuzzy
+msgid "Holidays"
+msgstr "အားလပ်ရက်များ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
 #, fuzzy
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
+msgid "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "အလုပ်ပိတ်သောရက်များ၏စာရင်း (အားလပ်ရက်တစ်ရက်၊အားလပ်ရက်များ အစရှိသဖြင့်)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the value 'true' if the number is even"
+msgid "Returns the value 'true' if the number is even"
 msgstr "ကိန်းဂဏန်းသည်စုံဖြစ်လျှင်‘မှန်သည်’ကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
 #, fuzzy
-msgid  "Number"
+msgid "Number"
 msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
 #, fuzzy
-msgid  "The number"
+msgid "The number"
 msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the value 'true' if the number is odd"
+msgid "Returns the value 'true' if the number is odd"
 msgstr "ကိန်းဂဏန်းသည်မဖြစ်လျှင်‘မှန်သည်’ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the multinomial coefficient of a set of numbers"
+msgid "Returns the multinomial coefficient of a set of numbers"
 msgstr "ကိန်းဂဏန်းများအစုတစ်ခု၏ မာတီနိုမီယယ်မြှောက်ဖော်ကိန်းကိုပြန်သည် "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 #, fuzzy
-msgid  "Number(s)"
+msgid "Number(s)"
 msgstr "နံပါတ်(များ)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
 #, fuzzy
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "သင်အလိုရှိသော မာတီနိုမီယယ်မြှောက်ဖော်ကိန်းအတွက် ကိန်းဂဏန်းတစ်ခု(သို့)ကိန်းဂဏန်းစာရင်း"
+msgid "Number or list of numbers for which you want the multinomial coefficient"
+msgstr ""
+"သင်အလိုရှိသော မာတီနိုမီယယ်မြှောက်ဖော်ကိန်းအတွက် "
+"ကိန်းဂဏန်းတစ်ခု(သို့)ကိန်းဂဏန်းစာရင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sum of a power series"
+msgid "Returns the sum of a power series"
 msgstr "ထပ်ညွှန်းအတွဲတစ်ခု၏ ပေါင်းလဒ်ကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 #, fuzzy
-msgid  "X"
+msgid "X"
 msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
 #, fuzzy
-msgid  "The independent variable of the power series"
+msgid "The independent variable of the power series"
 msgstr "ထပ်ညွှန်းအတွဲ၏ လွတ်လပ်သောကိန်းရှင်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 #, fuzzy
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
 #, fuzzy
-msgid  "The initial power to which x is to be raised"
+msgid "The initial power to which x is to be raised"
 msgstr "x တန်ဖိုးမြှင့်ရန် အစပြုပါဝါ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
 #, fuzzy
-msgid  "M"
+msgid "M"
 msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
 #, fuzzy
-msgid  "The increment by which to increase n for each term in the series"
+msgid "The increment by which to increase n for each term in the series"
 msgstr "အတွဲများအတွင်းရှိ nတန်ဖိုးတိုးရန်အတွက် "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
 #, fuzzy
-msgid  "Coefficients"
+msgid "Coefficients"
 msgstr "မြှောက်ဖော်ကိန်းများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
 #, fuzzy
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "မြှောက်ဖော်ကိန်းအစုကို အစဉ်လိုက်x၏ ထပ်ညွှန်းကိန်းများဖြင့် မြှောက်ခြင်း "
+msgid "Set of coefficients by which each successive power of the variable x is multiplied"
+msgstr ""
+"မြှောက်ဖော်ကိန်းအစုကို အစဉ်လိုက်x၏ ထပ်ညွှန်းကိန်းများဖြင့် မြှောက်ခြင်း "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the integer portion of a division"
+msgid "Returns the integer portion of a division"
 msgstr "စားခြင်း၏ကိန်းအပိုင်းကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 #, fuzzy
-msgid  "Numerator"
+msgid "Numerator"
 msgstr "ပိုင်းဝေ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
 #, fuzzy
-msgid  "The dividend"
+msgid "The dividend"
 msgstr "အမြတ်ဝေစု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
 #, fuzzy
-msgid  "Denominator"
+msgid "Denominator"
 msgstr "ပိုင်းခြေ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 #, fuzzy
-msgid  "The divisor"
+msgid "The divisor"
 msgstr "စားကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a number rounded to a specified multiple"
+msgid "Returns a number rounded to a specified multiple"
 msgstr "သတ်မှတ်ထားသောမြှောက်လဒ်များ၏အနီးစပ်ဆုံးကိန်းတစ်ခုကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 #, fuzzy
-msgid  "The number to round off"
+msgid "The number to round off"
 msgstr "အနီးစပ်ဆုံးကိန်းပြည့်တန်ဖိုးယူခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
 #, fuzzy
-msgid  "Multiple"
+msgid "Multiple"
 msgstr "အများအပြား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
 #, fuzzy
-msgid  "The multiple to which you want to round number"
+msgid "The multiple to which you want to round number"
 msgstr "သင်အလိုရှိသောအနီးစပ်ဆုံးကိန်းများ၏ဆတိုးကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the square root of a number which has been multiplied by pi"
+msgid "Returns the square root of a number which has been multiplied by pi"
 msgstr "ပိုင်ဖြင့်မြှောက်၍ရသောကိန်းဂဏန်းတစ်ခု၏စကွဲရုတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
 #, fuzzy
-msgid  "The number by which pi is multiplied"
+msgid "The number by which pi is multiplied"
 msgstr "ပိုင်ဖြင့်မြှောက်၍ရသောကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a random integer between the numbers you specify"
+msgid "Returns a random integer between the numbers you specify"
 msgstr "သတ်မှတ်ထားသောကိန်းများကြားမှအလျင်းသင့်သောကိန်းဂဏန်းတစ်ခုကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
 #, fuzzy
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "အောက်ခြေ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
 #, fuzzy
-msgid  "The smallest integer returned"
+msgid "The smallest integer returned"
 msgstr "အငယ်ဆုံးကိန်းပြန်ခဲ့သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
 #, fuzzy
-msgid  "Top"
+msgid "Top"
 msgstr "ထိပ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
 #, fuzzy
-msgid  "The largest integer returned"
+msgid "The largest integer returned"
 msgstr "အကြီးဆုံးကိန်းပြန်ခဲ့သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the greatest common divisor"
+msgid "Returns the greatest common divisor"
 msgstr "အကြီးဆုံးဘုံစားကိန်းပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
+#, fuzzy
+msgid "Number(s)"
+msgstr "နံပါတ်(များ)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 #, fuzzy
-msgid  "Number or list of numbers"
+msgid "Number or list of numbers"
 msgstr "ကိန်းဂဏန်းတစ်ခု(သို့)ကိန်းဂဏန်းများစာရင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the least common multiple"
+msgid "Returns the least common multiple"
 msgstr "အငယ်ဆုံးဘုံဆတိုးကိန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
+#, fuzzy
+msgid "Number(s)"
+msgstr "နံပါတ်(များ)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
+#, fuzzy
+msgid "Number or list of numbers"
+msgstr "ကိန်းဂဏန်းတစ်ခု(သို့)ကိန်းဂဏန်းများစာရင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the modified Bessel function In(x)"
+msgid "Returns the modified Bessel function In(x)"
 msgstr "(x)အတွင်းရှိအထူးပြုထားသောဘေဆယ်ဖန်ရှင်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 #, fuzzy
-msgid  "The value at which the function is to be evaluated"
+msgid "The value at which the function is to be evaluated"
 msgstr "တန်ဖိုးသတ်မှတ်ရန်အတွက်ဖန်ရှင်တန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 #, fuzzy
-msgid  "The order of the Bessel function"
+msgid "The order of the Bessel function"
 msgstr "ဘေဆယ်ဖန်ရှင်၏အစီစဉ်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Jn(x)"
+msgid "Returns the Bessel function Jn(x)"
 msgstr "Jn(x)အတွင်းရှိဘေဆယ်ဖန်ရှင်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "တန်ဖိုးသတ်မှတ်ရန်အတွက်ဖန်ရှင်တန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ဘေဆယ်ဖန်ရှင်၏အစီစဉ်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Kn(x)"
+msgid "Returns the Bessel function Kn(x)"
 msgstr "Kn(x)အတွင်းရှိဘေဆယ်ဖန်ရှင်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "တန်ဖိုးသတ်မှတ်ရန်အတွက်ဖန်ရှင်တန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ဘေဆယ်ဖန်ရှင်၏အစီစဉ်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Bessel function Yn(x)"
+msgid "Returns the Bessel function Yn(x)"
 msgstr "Yn(x)အတွင်းရှိဘေဆယ်ဖန်ရှင်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
+#, fuzzy
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
+#, fuzzy
+msgid "The value at which the function is to be evaluated"
+msgstr "တန်ဖိုးသတ်မှတ်ရန်အတွက်ဖန်ရှင်တန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
+#, fuzzy
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
+#, fuzzy
+msgid "The order of the Bessel function"
+msgstr "ဘေဆယ်ဖန်ရှင်၏အစီစဉ်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to an octal number"
+msgid "Converts a binary number to an octal number"
 msgstr "ဂဏန်းနှစ်လုံးစနစ်မှရှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The binary number to be converted (as text)"
+msgid "The binary number to be converted (as text)"
 msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းနှစ်လုံးစနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
 #, fuzzy
-msgid  "Places"
+msgid "Places"
 msgstr "နေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of places used"
+msgid "Number of places used"
 msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to a decimal number"
+msgid "Converts a binary number to a decimal number"
 msgstr "ဂဏန်းနှစ်လုံးစနစ်မှဒဿမကိန်းသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The binary number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းနှစ်လုံးစနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a binary number to a hexadecimal number"
+msgid "Converts a binary number to a hexadecimal number"
 msgstr "ဂဏန်းနှစ်လုံးစနစ်မှဆယ့်ခြောက်အခြေခံကိန်းသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The binary number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းနှစ်လုံးစနစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of places used."
+msgid "Number of places used."
 msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a binary number"
+msgid "Converts an octal number to a binary number"
 msgstr "ဂဏန်းရှစ်လုံးစနစ်မှနှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The octal number to be converted (as text)"
+msgid "The octal number to be converted (as text)"
 msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းရှစ်လုံးစနစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a decimal number"
+msgid "Converts an octal number to a decimal number"
 msgstr "ဂဏန်းရှစ်လုံးစနစ်မှဒဿမကိန်းသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The octal number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းရှစ်လုံးစနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts an octal number to a hexadecimal number"
+msgid "Converts an octal number to a hexadecimal number"
 msgstr "ဂဏန်းရှစ်လုံးစနစ်မှဆယ့်ခြောက်အခြေခံကိန်းသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The octal number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဂဏန်းရှစ်လုံးစနစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number to a binary number"
+msgid "Converts a decimal number to a binary number"
 msgstr "ဒဿမကိန်းမှဂဏန်းနှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The decimal integer to be converted"
+msgid "The decimal integer to be converted"
 msgstr "ဒဿမကိန်းသို့ပြောင်းခဲ့သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number to a hexadecimal number"
+msgid "Converts a decimal number to a hexadecimal number"
 msgstr "ဆယ့်ခြောက်အခြေခံကိန်းမှဂဏန်းရှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
+#, fuzzy
+msgid "The decimal integer to be converted"
+msgstr "ဒဿမကိန်းသို့ပြောင်းခဲ့သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a decimal number into an octal number"
+msgid "Converts a decimal number into an octal number"
 msgstr "ဒဿမကိန်းမှဂဏန်းရှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The decimal number"
+msgid "The decimal number"
 msgstr "ဒဿမကိန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to a binary number"
+msgid "Converts a hexadecimal number to a binary number"
 msgstr "ဆယ့်ခြောက်အခြေခံကိန်းမှဂဏန်းနှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 #, fuzzy
-msgid  "The hexadecimal number to be converted (as text)"
+msgid "The hexadecimal number to be converted (as text)"
 msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဆယ့်ခြောက်အခြေခံကိန်းစနစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to a decimal number"
+msgid "Converts a hexadecimal number to a decimal number"
 msgstr "ဆယ့်ခြောက်အခြေခံကိန်းမှဒဿမကိန်းသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
+#, fuzzy
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဆယ့်ခြောက်အခြေခံကိန်းစနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a hexadecimal number to an octal number"
+msgid "Converts a hexadecimal number to an octal number"
 msgstr "ဆယ့်ခြောက်အခြေခံကိန်းမှဂဏန်းရှစ်လုံးစနစ်သို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
+#, fuzzy
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "စာသားအဖြစ်ပြောင်းလဲရန်ဆယ့်ခြောက်အခြေခံကိန်းစနစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
+#, fuzzy
+msgid "Places"
+msgstr "နေရာများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of places used"
+msgstr "အသုံးပြုမည့်ကိန်းဂဏန်းနေရာများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
 #, fuzzy
-msgid  "Tests whether two values are equal"
+msgid "Tests whether two values are equal"
 msgstr "တန်ဖိုးနှစ်ခုညီမညီကိုစစ်ဆေးသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
 #, fuzzy
-msgid  "Number 1"
+msgid "Number 1"
 msgstr "နံပါတ် ၁"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
 #, fuzzy
-msgid  "The first number"
+msgid "The first number"
 msgstr "ပထမ နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
 #, fuzzy
-msgid  "Number 2"
+msgid "Number 2"
 msgstr "နံပါတ် ၂"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
 #, fuzzy
-msgid  "The second number"
+msgid "The second number"
 msgstr "ဒုတိယ နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the error function"
+msgid "Returns the error function"
 msgstr "အမှားဖန်ရှင်ကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 #, fuzzy
-msgid  "Lower limit"
+msgid "Lower limit"
 msgstr "အနည်းဆုံးကန့်သတ်ချက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
 #, fuzzy
-msgid  "The lower limit for integration"
+msgid "The lower limit for integration"
 msgstr "အင်တီဂတေးရှင်းအတွက်အနည်းဆုံးကန့်သတ်ချက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
 #, fuzzy
-msgid  "Upper limit"
+msgid "Upper limit"
 msgstr "အများဆုံးကန့်သတ်ချက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
 #, fuzzy
-msgid  "The upper limit for integration"
+msgid "The upper limit for integration"
 msgstr "အင်တီဂတေးရှင်းအတွက်အများဆုံးကန့်သတ်ချက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the complementary error function"
+msgid "Returns the complementary error function"
 msgstr "ကွန်ပလီမန်ထရီအမှားဖန်ရှင်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
+#, fuzzy
+msgid "Lower limit"
+msgstr "အနည်းဆုံးကန့်သတ်ချက်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
+#, fuzzy
+msgid "The lower limit for integration"
+msgstr "အင်တီဂတေးရှင်းအတွက်အနည်းဆုံးကန့်သတ်ချက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
 #, fuzzy
-msgid  "Tests whether a number is greater than a threshold value"
+msgid "Tests whether a number is greater than a threshold value"
 msgstr "ကိန်းဂဏန်းတစ်ခုသည်အစဦးတန်ဖိုးတစ်ခုထက်ကြီးသလားစစ်ဆေးသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
 #, fuzzy
-msgid  "The value to test against step"
+msgid "The value to test against step"
 msgstr "စစ်ဆေးမှုအဆင့်များအတွက်တန်ဖိုးတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
 #, fuzzy
-msgid  "Step"
+msgid "Step"
 msgstr "အဆင့်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
 #, fuzzy
-msgid  "The threshhold value"
+msgid "The threshhold value"
 msgstr "အစဦးတန်ဖိုး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the double factorial of Number"
+msgid "Returns the double factorial of Number"
 msgstr "ကိန်းဂဏန်းတစ်ခု၏နှစ်ဆဖက်တိုရီယယ်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the absolute value (modulus) of a complex number"
+msgid "Returns the absolute value (modulus) of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏အကြွင်းမဲ့တန်ဖိုးကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
-#, fuzzy
-msgid  "Complex number"
+msgid "Complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 #, fuzzy
-msgid  "The complex number"
+msgid "The complex number"
 msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the imaginary coefficient of a complex number"
+msgid "Returns the imaginary coefficient of a complex number"
 msgstr "ကိန်းရောတစ်ခုအတွက် မှန်းခြေမြှောက်ဖော်ကိန်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns a complex number raised to an integer power"
+msgid "Returns a complex number raised to an integer power"
 msgstr "ကိန်းဂဏန်းတစ်ခု၏ထပ်ညွှန်းတန်ဖိုးမြှင့်ရန်ကိန်းရောတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
 #, fuzzy
-msgid  "Power to which the complex number is raised"
+msgid "Power to which the complex number is raised"
 msgstr "ကိန်းရော၏ထပ်ညွှန်းကို မြှင့်သည်။"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the argument theta, an angle expressed in radians"
+msgid "Returns the argument theta, an angle expressed in radians"
 msgstr "ရေဒီယမ်နဲ့ပြထားသောထောင့်တစ်ထောင့်ကို ကိန်းရှင်သီတာတန်ဖိုးသို့ပြန်သည်။"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
-#, fuzzy
-msgid  "A complex number"
+msgid "A complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cosine of a complex number"
+msgid "Returns the cosine of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ကိုဆိုင်းတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the quotient of two complex numbers"
+msgid "Returns the quotient of two complex numbers"
 msgstr "ကိန်းရောနှစ်ခု၏စား၍ရသောရလဒ်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
+#, fuzzy
+msgid "Numerator"
+msgstr "ပိုင်းဝေ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
+#, fuzzy
+msgid "The dividend"
+msgstr "အမြတ်ဝေစု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
+#, fuzzy
+msgid "Denominator"
+msgstr "ပိုင်းခြေ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "စားကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the algebraic form of the exponential of a complex number"
+msgid "Returns the algebraic form of the exponential of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ထပ်ညွှန်းဆိုင်ရာအယ်လ်ဂျိဘရစ်ပုံစံကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the complex conjugate of a complex number"
+msgid "Returns the complex conjugate of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ဖလှယ်ရတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the natural logarithm of a complex number"
+msgid "Returns the natural logarithm of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ပုံမှန်လောဂရစ်သမ်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the base-10 logarithm of a complex number"
+msgid "Returns the base-10 logarithm of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ အခြေ၁၀ရှိသည့်လောဂရစ်သမ်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the base-2 logarithm of a complex number"
+msgid "Returns the base-2 logarithm of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ အခြေ၂ရှိသည့်လောဂရစ်သမ်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the product of several complex numbers"
+msgid "Returns the product of several complex numbers"
 msgstr "ကိန်းရောများ၏မြှောက်ခြင်းကိုပြန်သွားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
 #, fuzzy
-msgid  "The first complex number"
+msgid "The first complex number"
 msgstr "ကိန်းရောတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
+msgid "Complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
 #, fuzzy
-msgid  "Another complex number"
+msgid "Another complex number"
 msgstr "အခြားကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the real coefficient of a complex number"
+msgid "Returns the real coefficient of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏မြှောက်ဖော်ကိန်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sine of a complex number"
+msgid "Returns the sine of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏ဆိုင်းတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the difference of two complex numbers"
+msgid "Returns the difference of two complex numbers"
 msgstr "ကိန်းရောနှစ်ခု၏ခြားနားခြင်းတန်ဖိုးကိုပြန်သွားသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 #, fuzzy
-msgid  "Complex number 1"
+msgid "Complex number 1"
+msgstr "ကိန်းရော၁"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
+#, fuzzy
+msgid "Complex number 1"
 msgstr "ကိန်းရော၁"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
 #, fuzzy
-msgid  "Complex number 2"
+msgid "Complex number 2"
+msgstr "ကိန်းရော၂"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
+#, fuzzy
+msgid "Complex number 2"
 msgstr "ကိန်းရော၂"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the square root of a complex number"
+msgid "Returns the square root of a complex number"
 msgstr "ကိန်းရောတစ်ခု၏စကွဲရုတန်ဖိုးကိုပြန်သွားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sum of complex numbers"
+msgid "Returns the sum of complex numbers"
 msgstr "ကိန်းရောများပေါင်းခြင်းကိုပြန်သွားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
+#, fuzzy
+msgid "The complex number"
+msgstr "ကိန်းရောတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid "Returns the tangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid "Returns the secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid "Returns the cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid "Returns the cotangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid "Returns the hyperbolic sine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid "Returns the hyperbolic secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "ကိန်းစစ်သို့ပြောင်းလဲပြီး မှန်းခြေမြှောက်ဖော်ကိန်းကိုလည်းကိန်းရောတစ်ခုအဖြစ်သို့ပြောင်းသည်"
+msgid "Converts real and imaginary coefficients into a complex number"
+msgstr ""
+"ကိန်းစစ်သို့ပြောင်းလဲပြီး "
+"မှန်းခြေမြှောက်ဖော်ကိန်းကိုလည်းကိန်းရောတစ်ခုအဖြစ်သို့ပြောင်းသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
 #, fuzzy
-msgid  "Real num"
+msgid "Real num"
 msgstr "ကိန်းစစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
 #, fuzzy
-msgid  "The real coefficient"
+msgid "The real coefficient"
 msgstr "မြှောက်ဖော်ကိန်းစစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
 #, fuzzy
-msgid  "I num"
+msgid "I num"
 msgstr "iအမည်ရှိကိန်းတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
 #, fuzzy
-msgid  "The imaginary coefficient"
+msgid "The imaginary coefficient"
 msgstr "အီမာဂျင်နရီမြှောက်ဖော်ကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
 #, fuzzy
-msgid  "Suffix"
+msgid "Suffix"
 msgstr "နောက်ဆက်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
 #, fuzzy
-msgid  "The suffix"
+msgid "The suffix"
 msgstr "နောက်ဆက်တွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a number from one measurement system to another"
+msgid "Converts a number from one measurement system to another"
 msgstr "ကိန်းဂဏန်းတစ်ခုကိုအတိုင်းအတာစနစ်တစ်ခုမှအခြားတစ်ခုသို့ပြောင်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
+#, fuzzy
+msgid "Number"
+msgstr "နံပါတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
+#, fuzzy
+msgid "The number"
+msgstr "နံပါတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
 #, fuzzy
-msgid  "From unit"
+msgid "From unit"
 msgstr "ယူနစ်မှ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
 #, fuzzy
-msgid  "Unit of measure for number"
+msgid "Unit of measure for number"
 msgstr "ကိန်းဂဏန်းတစ်ခုအတွက်အတိုင်းအတာယူနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
 #, fuzzy
-msgid  "To unit"
+msgid "To unit"
 msgstr "ယူနစ်သို့"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
 #, fuzzy
-msgid  "Unit of measure for the result"
+msgid "Unit of measure for the result"
 msgstr "ရလဒ်အတွက်အတိုင်းအတာယူနစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
 msgstr "စာရင်းရှိကာလအတွက် ပိုင်ဆိုင်မှုတစ်ခု၏ တန်ဖိုးလျော့မျဉ်းကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
 #, fuzzy
-msgid  "Cost"
+msgid "Cost"
 msgstr "ကုန်ကျစရိတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
 #, fuzzy
-msgid  "Cost of the asset"
+msgid "Cost of the asset"
 msgstr "ပိုင်ဆိုင်မှုတစ်ခုအတွက်ကုန်ကျစရိတ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
 #, fuzzy
-msgid  "Date purchased"
+msgid "Date purchased"
 msgstr "ဝယ်ယူသည့်နေ့စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
 #, fuzzy
-msgid  "Purchase date of the asset"
+msgid "Purchase date of the asset"
 msgstr "ပိုင်ဆိုင်မှုတစ်ခုဝယ်ယူသောရက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
 #, fuzzy
-msgid  "First period"
+msgid "First period"
 msgstr "ပထမဆုံး ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
 #, fuzzy
-msgid  "Date the first period ends"
+msgid "Date the first period ends"
 msgstr "ပထမကာလ၏အဆုံးသတ်နေ့စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
 #, fuzzy
-msgid  "Salvage"
+msgid "Salvage"
 msgstr "ဆယ်တင်မှု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
 #, fuzzy
-msgid  "Salvage value of an asset at the end of its life"
+msgid "Salvage value of an asset at the end of its life"
 msgstr "ပိုင်ဆိုင်မှုတစ်ခု၏သက်တမ်းအဆုံးသတ်၌ဆယ်တင်မှုတန်ဖိုး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
 #, fuzzy
-msgid  "Period"
+msgid "Period"
 msgstr "ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 #, fuzzy
-msgid  "The period"
+msgid "The period"
 msgstr "ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
 #, fuzzy
-msgid  "Rate"
+msgid "Rate"
 msgstr "နှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
 #, fuzzy
-msgid  "The rate of depreciation"
+msgid "The rate of depreciation"
 msgstr "တန်ဖိုးလျော့နှုန်းထား"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
 #, fuzzy
-msgid  "The year basis to be used"
+msgid "The year basis to be used"
 msgstr "အသုံးပြုရန်အခြေခံနှစ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
+#, fuzzy
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr "စာရင်းရှိကာလအတွက် ပိုင်ဆိုင်မှုတစ်ခု၏ တန်ဖိုးလျော့မျဉ်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
+#, fuzzy
+msgid "Cost"
+msgstr "ကုန်ကျစရိတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
+#, fuzzy
+msgid "Cost of the asset"
+msgstr "ပိုင်ဆိုင်မှုတစ်ခုအတွက်ကုန်ကျစရိတ်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
+#, fuzzy
+msgid "Date purchased"
+msgstr "ဝယ်ယူသည့်နေ့စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
+#, fuzzy
+msgid "Purchase date of the asset"
+msgstr "ပိုင်ဆိုင်မှုတစ်ခုဝယ်ယူသောရက်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
+#, fuzzy
+msgid "First period"
+msgstr "ပထမဆုံး ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
 #, fuzzy
-msgid  "The date the first period ends"
+msgid "The date the first period ends"
 msgstr "ပထမကာလ၏အဆုံးသတ်နေ့စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
+#, fuzzy
+msgid "Salvage"
+msgstr "ဆယ်တင်မှု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
 #, fuzzy
-msgid  "The salvage value of an asset at the end of its life"
+msgid "The salvage value of an asset at the end of its life"
 msgstr "ပိုင်ဆိုင်မှုတစ်ခု၏သက်တမ်းအဆုံးသတ်၌ဆယ်တင်မှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
+#, fuzzy
+msgid "Period"
+msgstr "ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
+#, fuzzy
+msgid "The period"
+msgstr "ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
+#, fuzzy
+msgid "The rate of depreciation"
+msgstr "တန်ဖိုးလျော့နှုန်းထား"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
+#, fuzzy
+msgid "The year basis to be used"
+msgstr "အသုံးပြုရန်အခြေခံနှစ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the accrued interest for a security that pays periodic interest"
+msgid "Returns the accrued interest for a security that pays periodic interest"
 msgstr "အာမခံပစ္စည်းအတွက်အတိုးနှုန်းပေးဆောင်ရမည့်ကာလအပိုင်းအခြားကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 #, fuzzy
-msgid  "Issue"
+msgid "Issue"
 msgstr "ခွင့်ပြုသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
 #, fuzzy
-msgid  "Issue date of the security"
+msgid "Issue date of the security"
 msgstr "အာမခံထားရှိခွင့်ပြုသည့်နေ့စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
 #, fuzzy
-msgid  "First interest"
+msgid "First interest"
 msgstr "ပထမဆုံးအတိုး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
 #, fuzzy
-msgid  "First interest date of the security"
+msgid "First interest date of the security"
 msgstr "အာမခံထားရှိမှု၏ပထမဆုံးရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 #, fuzzy
-msgid  "Settlement"
+msgid "Settlement"
 msgstr "နေရာချထားသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
 #, fuzzy
-msgid  "The settlement"
+msgid "The settlement"
 msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
 #, fuzzy
-msgid  "The rate"
+msgid "The rate"
 msgstr "နှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
 #, fuzzy
-msgid  "Par"
+msgid "Par"
 msgstr "ပါ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
 #, fuzzy
-msgid  "The par value"
+msgid "The par value"
 msgstr "တန်ဖိုးတစ်ခု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
 #, fuzzy
-msgid  "Frequency"
+msgid "Frequency"
 msgstr "ကြိမ်နှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 #, fuzzy
-msgid  "The frequency"
+msgid "The frequency"
 msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
 #, fuzzy
-msgid  "The basis"
+msgid "The basis"
 msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the accrued interest for a security that pays interest at maturity"
+msgid "Returns the accrued interest for a security that pays interest at maturity"
 msgstr "အာမခံပစ္စည်းအတွက်အတိုးနှုန်းပေးဆောင်ရမည့်အချိန်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "ခွင့်ပြုသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 #, fuzzy
-msgid  "The issue date"
+msgid "The issue date"
 msgstr "ခွင့်ပြုသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
+#, fuzzy
+msgid "Par"
+msgstr "ပါ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
+#, fuzzy
+msgid "The par value"
+msgstr "တန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "ရင်းနှီးမြုပ်နှံမှုတစ်ခုအတွက်သတ်မှတ်ချိန်အတွင်းအာမခံကြေးပေးဆောင်ရမည့်ပမာဏ"
+msgid "Returns the amount paid out at maturity for a fully invested security"
+msgstr ""
+"ရင်းနှီးမြုပ်နှံမှုတစ်ခုအတွက်သတ်မှတ်ချိန်အတွင်းအာမခံကြေးပေးဆောင်ရမည့်ပမာဏ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
 #, fuzzy
-msgid  "Maturity"
+msgid "Maturity"
 msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 #, fuzzy
-msgid  "The maturity"
+msgid "The maturity"
 msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
 #, fuzzy
-msgid  "Investment"
+msgid "Investment"
 msgstr "ရင်းနှီးမြုပ်နှံမှု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
 #, fuzzy
-msgid  "The investment"
+msgid "The investment"
 msgstr "ရင်းနှီးမြုပ်နှံမှု"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
 #, fuzzy
-msgid  "Discount"
+msgid "Discount"
 msgstr "လျှော့ဈေး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
 #, fuzzy
-msgid  "The discount"
+msgid "The discount"
 msgstr "လျှော့ဈေး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the discount rate for a security"
+msgid "Returns the discount rate for a security"
 msgstr "အာမခံကြေးအတွက်လျော့ချသည့်နှုန်းထားကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 #, fuzzy
-msgid  "Price"
+msgid "Price"
 msgstr "ဈေးနှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
 #, fuzzy
-msgid  "The price"
+msgid "The price"
 msgstr "ဈေးနှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
 #, fuzzy
-msgid  "Redemption"
+msgid "Redemption"
 msgstr "ပြန်ရွေးယူခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
 #, fuzzy
-msgid  "The redemption value"
+msgid "The redemption value"
 msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
+msgid "Returns the annual Macaulay duration of a security with periodic interest payments"
 msgstr "အာမခံကြေးအတွက်နှစ်စဉ်အတိုးနှုန်းပေးဆောင်ရမည့်သတ်မှတ်ချိန်ကာလကိုပြန်သည် "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
 #, fuzzy
-msgid  "Coupon"
+msgid "Coupon"
 msgstr "ကူပွန်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 #, fuzzy
-msgid  "The coupon rate"
+msgid "The coupon rate"
 msgstr "ကူပွန်နှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
 #, fuzzy
-msgid  "Yield"
+msgid "Yield"
 msgstr "ဖြစ်ထွန်းသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
 #, fuzzy
-msgid  "The yield"
+msgid "The yield"
 msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the effective annual interest rate"
+msgid "Returns the effective annual interest rate"
 msgstr "နှစ်စဉ်အတိုးနှုန်းကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
 #, fuzzy
-msgid  "Nominal rate"
+msgid "Nominal rate"
 msgstr "လျာထားချက်နှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
 #, fuzzy
-msgid  "The nominal rate"
+msgid "The nominal rate"
 msgstr "လျာထားချက်နှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 #, fuzzy
-msgid  "Npery"
+msgid "Npery"
 msgstr "Npery"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 #, fuzzy
-msgid  "The periods"
+msgid "The periods"
 msgstr "ကာလများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "ကာလနှစ်ခုကြားရှိ ချေးငွေတစ်ရပ်ပေါ်တွင် တစ်ပေါင်းတစ်စည်းတည်းပေးချေမှုပြုသည့်စည်းမျဉ်းကိုပြန်သည်"
+msgid "Returns the cumulative principal on a loan to be paid between two periods"
+msgstr ""
+"ကာလနှစ်ခုကြားရှိ ချေးငွေတစ်ရပ်ပေါ်တွင် "
+"တစ်ပေါင်းတစ်စည်းတည်းပေးချေမှုပြုသည့်စည်းမျဉ်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
 #, fuzzy
-msgid  "Nper"
+msgid "Nper"
 msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 #, fuzzy
-msgid  "Number of payment periods"
+msgid "Number of payment periods"
 msgstr "ပေးချေမှုပြုသည့်ကာလအရေအတွက်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
 #, fuzzy
-msgid  "Pv"
+msgid "Pv"
 msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 #, fuzzy
-msgid  "The present value"
+msgid "The present value"
 msgstr "လက်ရှိတန်ဖိုး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
 #, fuzzy
-msgid  "Start period"
+msgid "Start period"
 msgstr "အစ ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 #, fuzzy
-msgid  "The start period"
+msgid "The start period"
 msgstr "အစ ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
 #, fuzzy
-msgid  "End period"
+msgid "End period"
 msgstr "အဆုံး ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
 #, fuzzy
-msgid  "The end period"
+msgid "The end period"
 msgstr "အဆုံး ကာလ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ပုံသဏ္ဍာန်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
 #, fuzzy
-msgid  "The type of maturity"
+msgid "The type of maturity"
 msgstr "ကြွေးပေးရန်သတ်မှတ်သည့်ပုံစံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the cumulative interest to be paid between two periods"
+msgid "Returns the cumulative interest to be paid between two periods"
 msgstr "ကာလနှစ်ခုကြားတစ်ပေါင်းတစ်စည်းတည်းပေးချေမှုပြုသည့်အတိုးနှုန်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
+#, fuzzy
+msgid "Nper"
+msgstr "Nper"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
+#, fuzzy
+msgid "Number of payment periods"
+msgstr "ပေးချေမှုပြုသည့်ကာလအရေအတွက်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
+#, fuzzy
+msgid "Pv"
+msgstr "Pv"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
+#, fuzzy
+msgid "The present value"
+msgstr "လက်ရှိတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
+#, fuzzy
+msgid "Start period"
+msgstr "အစ ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
+#, fuzzy
+msgid "The start period"
+msgstr "အစ ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
+#, fuzzy
+msgid "End period"
+msgstr "အဆုံး ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
+#, fuzzy
+msgid "The end period"
+msgstr "အဆုံး ကာလ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
+#, fuzzy
+msgid "Type"
+msgstr "ပုံသဏ္ဍာန်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
+#, fuzzy
+msgid "The type of maturity"
+msgstr "ကြွေးပေးရန်သတ်မှတ်သည့်ပုံစံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "အာမခံကြေး၏ငွေကြေးဆိုင်ရာယူနစ်၁၀၀အတွက်အတိုးနှုန်းပေးဆောင်ရမည့်ကာလကိုပြန်သည်"
+msgid "Returns the price per 100 currency units face value of a security that pays periodic interest"
+msgstr ""
+"အာမခံကြေး၏ငွေကြေးဆိုင်ရာယူနစ်၁၀၀အတွက်အတိုးနှုန်းပေးဆောင်ရမည့်ကာလကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "ဖြစ်ထွန်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a discounted security"
+msgid "Returns the price per 100 currency units face value of a discounted security"
 msgstr "အာမခံကြေး လျော့ချမှု၏ ငွေကြေးဆိုင်ရာယူနစ် ၁၀၀နှုန်းထားကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "လျှော့ဈေး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
+#, fuzzy
+msgid "The discount"
+msgstr "လျှော့ဈေး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr "အာမခံပစ္စည်း၏ငွေကြေးဆိုင်ရာယူနစ်၁၀၀နှုန်းထားအတွက်သတ်မှတ်ချိန်အတွင်းအတိုးနှုန်းပေးဆောင်ရမည့်အချိန်ကိုပြန်သည်"
+msgid "Returns the price per 100 currency units face value of a security that pays interest at maturity"
+msgstr ""
+"အာမခံပစ္စည်း၏ငွေကြေးဆိုင်ရာယူနစ်၁၀၀နှုန်းထားအတွက်သတ်မှတ်ချိန်အတွင်းအတိုးနှုန"
+"်းပေးဆောင်ရမည့်အချိန်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "ခွင့်ပြုသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "ခွင့်ပြုသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "ဖြစ်ထွန်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr "ငွေကြေးဆိုင်ရာယူနစ်၁၀၀၏အာမခံကြေးအတွက် မက်ကောလေး အထူးပြုထားမှု အချိန်အတောအတွင်းကိုပြန်သည်"
+msgid "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
+msgstr ""
+"ငွေကြေးဆိုင်ရာယူနစ်၁၀၀၏အာမခံကြေးအတွက် မက်ကောလေး အထူးပြုထားမှု "
+"အချိန်အတောအတွင်းကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
+#, fuzzy
+msgid "Coupon"
+msgstr "ကူပွန်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
+#, fuzzy
+msgid "The coupon rate"
+msgstr "ကူပွန်နှုန်းထား"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "ဖြစ်ထွန်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual nominal interest rate"
+msgid "Returns the annual nominal interest rate"
 msgstr "နှစ်စဉ်အတိုးနှုန်းလျာထားချက်ကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
 #, fuzzy
-msgid  "Effective rate"
+msgid "Effective rate"
 msgstr "သက်ရောက်မှုနှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
 #, fuzzy
-msgid  "The effective interest rate"
+msgid "The effective interest rate"
 msgstr "သက်ရောက်မှုရှိသည့်အတိုးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
+#, fuzzy
+msgid "Npery"
+msgstr "Npery"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
+#, fuzzy
+msgid "The periods"
+msgstr "ကာလများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "ဒဿမကိန်းအနေဖြင့်ဖော်ြပထားသော နှုန်းထားတစ်ခုကို အပိုင်းကိန်းအဖြစ်သို့ ပြောင်းလဲသည်"
+msgid "Converts a price expressed as a decimal into a price expressed as a fraction"
+msgstr ""
+"ဒဿမကိန်းအနေဖြင့်ဖော်ြပထားသော နှုန်းထားတစ်ခုကို အပိုင်းကိန်းအဖြစ်သို့ "
+"ပြောင်းလဲသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
 #, fuzzy
-msgid  "Decimal dollar"
+msgid "Decimal dollar"
 msgstr "ဒဿမဒေါ်လာ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
+#, fuzzy
+msgid "The decimal number"
+msgstr "ဒဿမကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 #, fuzzy
-msgid  "Fraction"
+msgid "Fraction"
 msgstr "အပိုင်းကိန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "စားကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "အပိုင်းကိန်းအနေဖြင့်ဖော်ပြထားသော နှုန်းထားတစ်ခုကို ဒဿမကိန်းအဖြစ်သို့ ပြောင်းလဲသည်"
+msgid "Converts a price expressed as a fraction into a price expressed as a decimal"
+msgstr ""
+"အပိုင်းကိန်းအနေဖြင့်ဖော်ပြထားသော နှုန်းထားတစ်ခုကို ဒဿမကိန်းအဖြစ်သို့ "
+"ပြောင်းလဲသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
 #, fuzzy
-msgid  "Fractional dollar"
+msgid "Fractional dollar"
 msgstr "ဒေါ်လာအပိုင်းဂဏန်းဆိုင်ရာ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
 #, fuzzy
-msgid  "The number as a fraction"
+msgid "The number as a fraction"
 msgstr "အပိုင်းကိန်းတန်ဖိုးတစ်ခု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
+#, fuzzy
+msgid "Fraction"
+msgstr "အပိုင်းကိန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
+#, fuzzy
+msgid "The divisor"
+msgstr "စားကိန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield on a security that pays periodic interest"
+msgid "Returns the yield on a security that pays periodic interest"
 msgstr "အာမခံကြေးအတိုးနှုန်းပေးဆောင်သည့်ပေါ်တွင်ဖြစ်ထွန်းသည့်တန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual yield for a discounted security"
+msgid "Returns the annual yield for a discounted security"
 msgstr "အာမခံကြေးလျော့ချမှုအတွက်နှစ်စဉ်ဖြစ်ထွန်းမှုတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the annual yield of a security that pays interest at maturity"
+msgid "Returns the annual yield of a security that pays interest at maturity"
 msgstr "အာမခံကြေးအတိုးနှုန်းပေးဆောင်မှု၏နှစ်စဉ်ဖြစ်ထွန်းမှုတန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "ခွင့်ပြုသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "ခွင့်ပြုသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the bond-equivalent yield for a treasury bill"
+msgid "Returns the bond-equivalent yield for a treasury bill"
 msgstr "ဘဏ္ဏရေးဌာန၏တောင်းခံလွှာအတွက်ပေးဆောင်ရန်ခံဝန်ချက်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "လျှော့ဈေး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 #, fuzzy
-msgid  "The discount rate"
+msgid "The discount rate"
 msgstr "လျော့ချသည့်နှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price of 100 currency units face value for a treasury bill"
+msgid "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "ဘဏ္ဏရေးဌာန၏တောင်းခံလွှာအတွက် ငွေကြေးဆိုင်ရာယူနစ်၁၀၀နှုန်းထားကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Discount"
+msgstr "လျှော့ဈေး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The discount rate"
+msgstr "လျော့ချသည့်နှုန်းထား"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield for a treasury bill"
+msgid "Returns the yield for a treasury bill"
 msgstr "ဘဏ္ဏရေးဌာန၏ငွေကြေးတောင်းခံလွှာကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr "ပထမအချိန်ကာလ၏မဂဏန်းဆိုင်ရာရက်များနှင့်အတူအာမခံကြေး၏ $၁၀၀နှုန်းထားကိုပြန်သည်။"
+msgid "Returns the price per $100 face value of a security with an odd first period"
+msgstr ""
+"ပထမအချိန်ကာလ၏မဂဏန်းဆိုင်ရာရက်များနှင့်အတူအာမခံကြေး၏ $၁၀၀နှုန်းထားကိုပြန်သည်။"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "ခွင့်ပြုသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "ခွင့်ပြုသည့်ရက်စွဲ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
 #, fuzzy
-msgid  "First coupon"
+msgid "First coupon"
 msgstr "ပထမကူပွန်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
 #, fuzzy
-msgid  "The first coupon date"
+msgid "The first coupon date"
 msgstr "ပထမဆုံးကူပွန်ပေးသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "ဖြစ်ထွန်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield of a security with an odd first period"
+msgid "Returns the yield of a security with an odd first period"
 msgstr "ပထမကာလ၏ မကိန်းအပိုင်းအခြားရှိအာမခံကြေးဖြစ်ထွန်းသည့်တန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Issue"
+msgstr "ခွင့်ပြုသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The issue date"
+msgstr "ခွင့်ပြုသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
+#, fuzzy
+msgid "First coupon"
+msgstr "ပထမကူပွန်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The first coupon date"
+msgstr "ပထမဆုံးကူပွန်ပေးသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr "နောက်ဆုံးအချိန်ကာလ၏မဂဏန်းဆိုင်ရာရက်များနှင့်အတူအာမခံကြေး၏ $၁၀၀နှုန်းထားကိုပြန်သည်။"
+msgid "Returns the price per $100 face value of a security with an odd last period"
+msgstr ""
+"နောက်ဆုံးအချိန်ကာလ၏မဂဏန်းဆိုင်ရာရက်များနှင့်အတူအာမခံကြေး၏ "
+"$၁၀၀နှုန်းထားကိုပြန်သည်။"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
 #, fuzzy
-msgid  "Last interest"
+msgid "Last interest"
 msgstr "နောက်ဆုံးအတိုး"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 #, fuzzy
-msgid  "The last interest date"
+msgid "The last interest date"
 msgstr "နောက်ဆုံးအတိုးပေးသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
+#, fuzzy
+msgid "Yield"
+msgstr "ဖြစ်ထွန်းသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
+#, fuzzy
+msgid "The yield"
+msgstr "ဖြစ်ထွန်းမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "နောက်ဆုံးကာလ၏ မကိန်းအပိုင်းအခြားရှိအာမခံကြေးဖြစ်ထွန်းသည့်တန်ဖိုးကိုပြန်သည်"
+msgid "Returns the yield of a security with an odd last period"
+msgstr ""
+"နောက်ဆုံးကာလ၏ မကိန်းအပိုင်းအခြားရှိအာမခံကြေးဖြစ်ထွန်းသည့်တန်ဖိုးကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
+#, fuzzy
+msgid "Last interest"
+msgstr "နောက်ဆုံးအတိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
+#, fuzzy
+msgid "The last interest date"
+msgstr "နောက်ဆုံးအတိုးပေးသည့်ရက်စွဲ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
+#, fuzzy
+msgid "Price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
+#, fuzzy
+msgid "The price"
+msgstr "ဈေးနှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "ပေးဆောင်ရန် အစီအစဉ်ရေးဆွဲမထားသည့်ကာလအတွက် ပြန်လည်ပေးဆောင်ရမည့် အတွင်းပိုင်းနှုန်းထားကိုပြန်သည်"
+msgid "Returns the internal rate of return for a non-periodic schedule of payments"
+msgstr ""
+"ပေးဆောင်ရန် အစီအစဉ်ရေးဆွဲမထားသည့်ကာလအတွက် ပြန်လည်ပေးဆောင်ရမည့် "
+"အတွင်းပိုင်းနှုန်းထားကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 #, fuzzy
-msgid  "Values"
+msgid "Values"
 msgstr "တန်ဖိုးများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
 #, fuzzy
-msgid  "The values"
+msgid "The values"
 msgstr "တန်ဖိုးများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
 #, fuzzy
-msgid  "Dates"
+msgid "Dates"
 msgstr "ရက်စွဲများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
 #, fuzzy
-msgid  "The dates"
+msgid "The dates"
 msgstr "ရက်စွဲများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
 #, fuzzy
-msgid  "Guess"
+msgid "Guess"
 msgstr "မှန်းဆသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
 #, fuzzy
-msgid  "The guess"
+msgid "The guess"
 msgstr "မှန်းဆသည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the net present value for a non-periodic schedule of payments"
+msgid "Returns the net present value for a non-periodic schedule of payments"
 msgstr "ပေးဆောင်မှုပြုရန်မလိုသည့်အချိန်ကာလအစီအစဉ်အတွက်လက်ရှိအသားတင်တန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
+#, fuzzy
+msgid "Rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
+#, fuzzy
+msgid "The rate"
+msgstr "နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
+#, fuzzy
+msgid "Values"
+msgstr "တန်ဖိုးများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
+#, fuzzy
+msgid "The values"
+msgstr "တန်ဖိုးများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
+#, fuzzy
+msgid "Dates"
+msgstr "ရက်စွဲများ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
+#, fuzzy
+msgid "The dates"
+msgstr "ရက်စွဲများ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "ရင်းနှီးမြုပ်နှံမှုအားလုံး၏အာမခံကြေးပေးဆောင်မှုအတိုးနှုန်းကိုပြန်သွားသည်"
+msgid "Returns the interest rate for a fully invested security"
+msgstr ""
+"ရင်းနှီးမြုပ်နှံမှုအားလုံး၏အာမခံကြေးပေးဆောင်မှုအတိုးနှုန်းကိုပြန်သွားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
+#, fuzzy
+msgid "Investment"
+msgstr "ရင်းနှီးမြုပ်နှံမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
+#, fuzzy
+msgid "The investment"
+msgstr "ရင်းနှီးမြုပ်နှံမှု"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
+#, fuzzy
+msgid "Redemption"
+msgstr "ပြန်ရွေးယူခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
+#, fuzzy
+msgid "The redemption value"
+msgstr "ပြန်ရွေးယူမှုတန်ဖိုး"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the first coupon date after the settlement date"
+msgid "Returns the first coupon date after the settlement date"
 msgstr "နေရာချထားပြီးနောက်ကူပွန်ပေးသည့်ရက်စွဲကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days in the coupon period containing the settlement date"
+msgid "Returns the number of days in the coupon period containing the settlement date"
 msgstr "နေရာချထားမှုရက်များပါဝင်သည့်ကူပွန်ပေးရမည့်ကာလအတွင်းရှိရက်များကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "နေရာချထားမှုရက်များမှ နောက်ပိုင်းကူပွန်ပေးရမည့်ကာလအတွင်းရှိ ရက်များကိုပြန်သည်"
+msgid "Returns the number of days from the settlement date to the next coupon date"
+msgstr ""
+"နေရာချထားမှုရက်များမှ နောက်ပိုင်းကူပွန်ပေးရမည့်ကာလအတွင်းရှိ "
+"ရက်များကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
+msgid "Returns the number of days from the beginning of the coupon period to the settlement date"
 msgstr "ကူပွန်စတင်ပေးသည့်နေ့မှနေရာချထားသည့်ရက်များအထိရက်များ၏အရေအတွက်ကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the last coupon date preceding the settlement date"
+msgid "Returns the last coupon date preceding the settlement date"
 msgstr "ကြိုတင်နေရာချထားသောနေ့၏နောက်ဆုံးကူပွန်ပေးမည့်ရက်စွဲကိုပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
+msgid "Returns the number of coupons payable between the settlement and maturity dates"
 msgstr "နေရာချထားသောနေ့နှင့်သတ်မှတ်ရက်ကြား ကူပွန်ပေးရမည့် အရေအတွက်ကို ပြန်သည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
+#, fuzzy
+msgid "Settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
+#, fuzzy
+msgid "The settlement"
+msgstr "နေရာချထားသည်"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
+#, fuzzy
+msgid "Maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
+#, fuzzy
+msgid "The maturity"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
+#, fuzzy
+msgid "Frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
+#, fuzzy
+msgid "The frequency"
+msgstr "ကြိမ်နှုန်း"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
+#, fuzzy
+msgid "Basis"
+msgstr "အခြေခံ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
+#, fuzzy
+msgid "The basis"
+msgstr "အခြေခံ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "အတိုးနှုန်းသက်ရောက်မှုရှိသည့် ကာလများပြီးနောက် အစဦးစည်းမျဉ်းစည်းကမ်းများ၏ အနာဂတ်တန်ဖိုးကိုပြန်သည်"
+msgid "Returns the future value of the initial principal after a series of compound interest rates are applied"
+msgstr ""
+"အတိုးနှုန်းသက်ရောက်မှုရှိသည့် ကာလများပြီးနောက် အစဦးစည်းမျဉ်းစည်းကမ်းများ၏ "
+"အနာဂတ်တန်ဖိုးကိုပြန်သည်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
 #, fuzzy
-msgid  "Principal"
+msgid "Principal"
 msgstr "စည်းမျဉ်းစည်းကမ်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
 #, fuzzy
-msgid  "The principal"
+msgid "The principal"
 msgstr "စည်းမျဉ်းစည်းကမ်း"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
 #, fuzzy
-msgid  "Schedule"
+msgid "Schedule"
 msgstr "အစီအစဉ်"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
 #, fuzzy
-msgid  "The schedule"
+msgid "The schedule"
 msgstr "အစီအစဉ်"

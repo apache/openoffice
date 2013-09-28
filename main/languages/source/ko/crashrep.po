@@ -1,200 +1,238 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% 오류 보고"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% 오류 보고를 시작합니다."
 
 #: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr "이 오류 보고 툴은 %PRODUCTNAME% 의 작동 상태에 관한 정보를 수집하고 차후 버전을 강화할 수 있도록 Apache OpenOffice로 보냅니다.\n\n"
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+"이 오류 보고 툴은 %PRODUCTNAME% 의 작동 상태에 관한 정보를 수집하고 차후 버전을 강화할 수 있도록 Apache "
+"OpenOffice로 보냅니다.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "데이터를 보내는 것은 아주 쉽습니다. 보내려면 다음 대화 상자에 있는 [보내기]를 누릅니다. 오류 보고를 둘러 보려면 [보고 표시]를 누릅니다. [보내지 않음]을 누르면 데이터는 전송되지 않습니다.\n\n"
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+"데이터를 보내는 것은 아주 쉽습니다. 보내려면 다음 대화 상자에 있는 [보내기]를 누릅니다. 오류 보고를 둘러 보려면 [보고 표시]를 "
+"누릅니다. [보내지 않음]을 누르면 데이터는 전송되지 않습니다.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr "개인 정보 보호 정책\n%PRODUCTNAME% %PRODUCTVERSION% 상태에 대해 수집된 정보는 발생한 오류에만 해당되며 암호 또는 문서 내용과 같은 다른 정보는 수집되지 않습니다.\n\n모든 정보는 %PRODUCTNAME%의 기능을 강화하는데 사용되며 제3자와 공유하지 않습니다.\nApache OpenOffice의 개인 정보 보호 정책에 관한 자세한 정보를 보려면 다음 사이트를 방문하십시오.\n"
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+"개인 정보 보호 정책\n"
+"%PRODUCTNAME% %PRODUCTVERSION% 상태에 대해 수집된 정보는 발생한 오류에만 해당되며 암호 또는 문서 내용과 같은 "
+"다른 정보는 수집되지 않습니다.\n"
+"\n"
+"모든 정보는 %PRODUCTNAME%의 기능을 강화하는데 사용되며 제3자와 공유하지 않습니다.\n"
+"Apache OpenOffice의 개인 정보 보호 정책에 관한 자세한 정보를 보려면 다음 사이트를 방문하십시오.\n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
+msgid "http://www.openoffice.org/privacy.html"
 msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "다음(~N) >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "취소"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "확인"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% 오류 보고"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% 을(를) 실행하는 중 오류가 발생했습니다."
 
 #: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% 오류 보고는  Apache OpenOffice가 %PRODUCTNAME%의 기능을 강화하는데 도움을 줄 수 있는 정보를 수집합니다.\n아래의 공간에 작업 도중 충돌에 관한 보고 제목 및 오류 발생시 실행 중이던 작동에 대한 설명을 입력할 수 있습니다. 그런 다음 [보내기]를 누릅니다.\n"
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% 오류 보고는  Apache OpenOffice가 %PRODUCTNAME%의 기능을 "
+"강화하는데 도움을 줄 수 있는 정보를 수집합니다.\n"
+"아래의 공간에 작업 도중 충돌에 관한 보고 제목 및 오류 발생시 실행 중이던 작동에 대한 설명을 입력할 수 있습니다. 그런 다음 "
+"[보내기]를 누릅니다.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "오류가 발생했을 때 사용 중이던 문서 유형(예: 프레젠테이션)"
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
 msgstr "이 보고에 관련해서 Apache OpenOffice가 연락하는 것을 허용합니다(~I)."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "전자 메일 주소를 입력하십시오."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "오류 발생 시 %PRODUCTNAME% 사용 상황(~H)"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr "<< 뒤로(~B)"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "보내기(~E)"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "보내지 않음(~N)"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "보고 표시(~R)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "보고 저장(~S)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "보고를 다음 이름으로 저장"
 
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "기본 전자 메일 프로그램이 MAPI를 지원하지 않는 이유로 오류 보고를 보내지 못했습니다.\nMAPI 호환 전자 메일 프로그램을 사용해주십시오."
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+"기본 전자 메일 프로그램이 MAPI를 지원하지 않는 이유로 오류 보고를 보내지 못했습니다.\n"
+"MAPI 호환 전자 메일 프로그램을 사용해주십시오."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "오류 보고를 임시 저장하지 못했습니다. 오류 보고를 보낼 수 없습니다. "
 
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "'sendmail'을 시작하지 못한 이유로 오류 보고를 보내지 못했습니다.\n'sendmail'의 설정을 확인해주십시오."
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
+"'sendmail'을 시작하지 못한 이유로 오류 보고를 보내지 못했습니다.\n"
+"'sendmail'의 설정을 확인해주십시오."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
 msgstr "오류 보고를 보내지 못했습니다. 오류 보고 툴의 [옵션] 메뉴에 있는 프록시 설정을 확인해보십시오. "
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
 msgstr "인터넷이 연결되지 않은 이유로 오류 보고를 보내지 못했습니다. 인터넷 설정을 확인해보십시오."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "옵션(~O)..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "옵션"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "프록시 설정"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "시스템 설정 사용(~S)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "인터넷으로 직접 연결 사용(~D)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "수동 설정 사용(~M)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "HTTP 프록시(~T)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "포트(~P)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "%PRODUCTNAME% 오류 보고 툴이 오류 보고를 보내려면 인터넷으로 연결되어야 합니다.\n\n회사들의 경우 네트워크를 보호하기 위해 방화벽(firewall)이 결합된 프록시 서버를 많이 사용합니다.\n\n이러한 경우, 서버의 포트와 주소를 지정해야 합니다."
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+"%PRODUCTNAME% 오류 보고 툴이 오류 보고를 보내려면 인터넷으로 연결되어야 합니다.\n"
+"\n"
+"회사들의 경우 네트워크를 보호하기 위해 방화벽(firewall)이 결합된 프록시 서버를 많이 사용합니다.\n"
+"\n"
+"이러한 경우, 서버의 포트와 주소를 지정해야 합니다."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "오류 보고 보내는 중"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "상태: 오류 보고 보내는 중"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "상태: 오류 보고를 성공적으로 보냈습니다."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr "'Apache OpenOffice가 연락하도록 허용합니다' 옵션을 선택했습니다.\n전자 메일 주소를 입력해주십시오."
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+"'Apache OpenOffice가 연락하도록 허용합니다' 옵션을 선택했습니다.\n"
+"전자 메일 주소를 입력해주십시오."
+
+#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
+msgid "Usage:"
+msgstr ""
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <프로세스 ID>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "%PRODUCTNAME% 프로세스 ID(PID)를 오류 보고 툴에 할당합니다."
 
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "이 도움말을 표시합니다.\n자세한 정보는 설치 안내서에서 볼 수 있습니다."
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""
+"이 도움말을 표시합니다.\n"
+"자세한 정보는 설치 안내서에서 볼 수 있습니다."

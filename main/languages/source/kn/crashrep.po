@@ -1,160 +1,217 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: all/crashrep.ulf#_WELCOME_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ದೋಷ ವರದಿ"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
-msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ದೋಷ ವರದಿಗೆ ಸ್ವಾಗತ"
 
+#: all/crashrep.ulf#_WELCOME_BODY1_
+msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid "http://www.openoffice.org/privacy.html"
+msgstr ""
+
 #: all/crashrep.ulf#_NEXT_BUTTON_
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "ಮುಂದಿನ(~N) >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "ರದ್ದುಗೊಳಿಸಿ"
 
 #: all/crashrep.ulf#_OK_BUTTON_
-msgid  "OK"
+msgid "OK"
 msgstr "ಸರಿ"
 
+#: all/crashrep.ulf#_REPORT_CAPTION_
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% ದೋಷ ವರದಿ"
+
 #: all/crashrep.ulf#_REPORT_HEADER_
-msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ಅನ್ನು ಚಲಾಯಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+
 #: all/crashrep.ulf#_ENTER_TITLE_
-msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "ದೋಷವು ಎದುರಾದಾಗ ನೀವು ಯಾವ ಬಗೆಯ ದಸ್ತಾವೇಜನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದಿರಿ (ಉದಾ. ಪ್ರೆಸೆಂಟೇಶನ್)?"
+msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+"ದೋಷವು ಎದುರಾದಾಗ ನೀವು ಯಾವ ಬಗೆಯ ದಸ್ತಾವೇಜನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದಿರಿ (ಉದಾ. "
+"ಪ್ರೆಸೆಂಟೇಶನ್)?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+msgid "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
-msgid  "Please enter your e-mail address."
+msgid "Please enter your e-mail address."
 msgstr "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇ-ಮೈಲ್ ವಿಳಾಸ."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
-msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "ದೋಷ ಎದುರಾದಾಗ %PRODUCTNAME% ಅನ್ನು ನೀವು ಹೇಗೆ ಬಳಸುತ್ತಿದ್ದಿರಿ(~H)?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
-msgid  " << ~Back"
+msgid " << ~Back"
 msgstr " << ಹಿಂದಕ್ಕೆ (~B)"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
-msgid  "S~end"
+msgid "S~end"
 msgstr "ಕಳುಹಿಸು(~e)"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
-msgid  "Do ~Not Send"
+msgid "Do ~Not Send"
 msgstr "ಕಳುಹಿಸಬೇಡ(~N)"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
-msgid  "Show ~Report..."
+msgid "Show ~Report..."
 msgstr "ವರದಿಯನ್ನು ತೋರಿಸು(~R)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
-msgid  "~Save Report..."
+msgid "~Save Report..."
 msgstr "ವರದಿಯನ್ನು ಉಳಿಸು(~S)..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
-msgid  "Save Report to"
+msgid "Save Report to"
 msgstr "ವರದಿಯನ್ನು ಇಲ್ಲಿಗೆ ಉಳಿಸು"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
-msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "ದೋಷ ವರದಿಯನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಆದ್ದರಿಂದ ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgid "The error report could not be temporarily saved and could therefore not be sent."
+msgstr ""
+"ದೋಷ ವರದಿಯನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಆದ್ದರಿಂದ ಕಳುಹಿಸಲು "
+"ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr ""
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
-msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ದೋಷ ವರದಿ ಉಪಕರಣದಲ್ಲಿನ ಆಯ್ಕೆಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳನ್ನು ನೋಡಿ."
+msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
+"ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ದೋಷ ವರದಿ ಉಪಕರಣದಲ್ಲಿನ ಆಯ್ಕೆಗಳ "
+"ಅಡಿಯಲ್ಲಿ ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳನ್ನು ನೋಡಿ."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
-msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಯಾವುದೆ ಅಂತರ್ಜಾಲ ಸಂಪರ್ಕವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅಂತರ್ಜಾಲ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ."
+msgid "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+"ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಯಾವುದೆ ಅಂತರ್ಜಾಲ ಸಂಪರ್ಕವಿಲ್ಲ. "
+"ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅಂತರ್ಜಾಲ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
-msgid  "~Options..."
+msgid "~Options..."
 msgstr "ಆಯ್ಕೆಗಳು(~O)..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
-msgid  "Options"
+msgid "Options"
 msgstr "ಆಯ್ಕೆಗಳು"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
-msgid  "Proxy settings"
+msgid "Proxy settings"
 msgstr "ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳು"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
-msgid  "Use ~system settings"
+msgid "Use ~system settings"
 msgstr "ಗಣಕ ಸಿದ್ಧತೆಗಳನ್ನು ಬಳಸು(~s)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
-msgid  "Use ~direct connection to the Internet"
+msgid "Use ~direct connection to the Internet"
 msgstr "ಅಂತರ್ಜಾಲ ಸಂಪರ್ಕಕ್ಕೆ ನೇರ ಸಂಪರ್ಕವನ್ನು ಬಳಸು(~d)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
-msgid  "Use ~manual settings"
+msgid "Use ~manual settings"
 msgstr "ಬಳಕೆದಾರ ಮಾರ್ಗದರ್ಶಿ ಸಿದ್ಧತೆಗಳು(~m)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
-msgid  "HT~TP Proxy"
+msgid "HT~TP Proxy"
 msgstr "HT~TP ಪ್ರಾಕ್ಸಿ"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
-msgid  "~Port"
+msgid "~Port"
 msgstr "ಸಂಪರ್ಕಸ್ಥಾನ(~P)"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
-msgid  "Sending Error Report"
+msgid "Sending Error Report"
 msgstr "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
-msgid  "Status: Sending error report"
+msgid "Status: Sending error report"
 msgstr "ಸ್ಥಿತಿ: ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
-msgid  "Status: The error report has been sent successfully."
+msgid "Status: The error report has been sent successfully."
 msgstr "ಸ್ಥಿತಿ: ದೋಷ ವರದಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ."
 
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+
 #: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
+msgid "Usage:"
 msgstr "ಬಳಕೆ:"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
-msgid  "-p <process ID>"
+msgid "-p <process ID>"
 msgstr "-p <process ID>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
-msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "ದೋಷ ವರದಿ ಉಪಕರಣಕ್ಕೆ %PRODUCTNAME% ಪ್ರಕ್ರಿಯೆ ID (PID) ಅನ್ನು ನಿಯೋಜಿಸಿ"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""

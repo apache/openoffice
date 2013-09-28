@@ -1,116 +1,135 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: mac/macinstall.ulf#OKLABEL
-msgid  "Ok"
+msgid "Ok"
 msgstr "ÒC  "
 
 #: mac/macinstall.ulf#INSTALLLABEL
-msgid  "Install"
+msgid "Install"
 msgstr "Installar"
 
 #: mac/macinstall.ulf#ABORTLABEL
-msgid  "Abort"
+msgid "Abort"
 msgstr "Abandonar"
 
 #: mac/macinstall.ulf#INTROTEXT1
-msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
-msgstr "Planvenguda, planvengut dins l'assistent d'installacion de [FULLPRODUCTNAME]"
+msgid "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
+msgstr ""
+"Planvenguda, planvengut dins l'assistent d'installacion de [FULLPRODUCTNAME]"
 
 #: mac/macinstall.ulf#INTROTEXT2
-msgid  "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr "Aquela installacion actualizarà las versions installadas d'[PRODUCTNAME]"
+msgid "This installation will update your installed versions of [PRODUCTNAME]"
+msgstr ""
+"Aquela installacion actualizarà las versions installadas d'[PRODUCTNAME]"
 
 #: mac/macinstall.ulf#INTROTEXT3
-msgid  "This might take a moment."
+msgid "This might take a moment."
 msgstr "Prendrà un pauc de temps."
 
 #: mac/macinstall.ulf#CHOOSEMYOWNTEXT
-msgid  "Not listed (choose location in an extra step)"
+msgid "Not listed (choose location in an extra step)"
 msgstr "Pas listat (causir una emplaçament dins una estapa suplementària)"
 
 #: mac/macinstall.ulf#LISTPROMPTTEXT
-msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr "Causir per quina installacion de [PRODUCTNAME] [PRODUCTVERSION] volètz d'installar [FULLPRODUCTNAME]"
+msgid "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
+msgstr ""
+"Causir per quina installacion de [PRODUCTNAME] [PRODUCTVERSION] volètz "
+"d'installar [FULLPRODUCTNAME]"
 
 #: mac/macinstall.ulf#CHOOSEMANUALTEXT
-msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "Indica la fenèstra de dialòg per vòstra installacion de [PRODUCTNAME] [PRODUCTVERSION]."
+msgid "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
+msgstr ""
+"Indica la fenèstra de dialòg per vòstra installacion de [PRODUCTNAME] "
+"[PRODUCTVERSION]."
+
+#: mac/macinstall.ulf#LISTOKLABELTEXT
+msgid "Install"
+msgstr "Installar"
+
+#: mac/macinstall.ulf#LISTCANCELLABEL
+msgid "Abort"
+msgstr "Abandonar"
 
 #: mac/macinstall.ulf#APPINVALIDTEXT1
-msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
+msgid "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
 msgstr "Es pas una installacion d'[PRODUCTNAME] [PRODUCTVERSION] valida."
 
 #: mac/macinstall.ulf#APPINVALIDTEXT2
-msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr "Vos calriá tornar aviar l'installador e causir una installacion d'[PRODUCTNAME] [PRODUCTVERSION] valida."
+msgid "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
+msgstr ""
+"Vos calriá tornar aviar l'installador e causir una installacion "
+"d'[PRODUCTNAME] [PRODUCTVERSION] valida."
 
 #: mac/macinstall.ulf#STARTINSTALLTEXT1
-msgid  "Click Install to start the installation"
+msgid "Click Install to start the installation"
 msgstr "Clicatz sus Installar per començar l'installacion"
 
 #: mac/macinstall.ulf#STARTINSTALLTEXT2
-msgid  "Installation might take a minute..."
+msgid "Installation might take a minute..."
 msgstr "L'installacion prendrà qualques minutas..."
 
 #: mac/macinstall.ulf#IDENTIFYQTEXT
-msgid  "Installation failed, most likely your account does not have the necessary privileges."
+msgid "Installation failed, most likely your account does not have the necessary privileges."
 msgstr "Escac de l'installacion, avètz pas los dreches necessaris. "
 
 #: mac/macinstall.ulf#IDENTIFYQTEXT2
-msgid  "Do you want to identify as administrator and try again?"
+msgid "Do you want to identify as administrator and try again?"
 msgstr "Vos volètz identificar coma administrator e assajar un còp de mai ? "
 
 #: mac/macinstall.ulf#IDENTIFYYES
-msgid  "Yes, identify"
+msgid "Yes, identify"
 msgstr "Òc, identificacion"
 
 #: mac/macinstall.ulf#IDENTIFYNO
-msgid  "No, abort installation"
+msgid "No, abort installation"
 msgstr "Non, abandonar l'installacion"
 
 #: mac/macinstall.ulf#INSTALLFAILEDTEXT
-msgid  "Installation failed."
+msgid "Installation failed."
 msgstr "Escac de l'installacion."
 
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXT
-msgid  "Installation of [PRODUCTNAME] language pack completed."
+msgid "Installation of [PRODUCTNAME] language pack completed."
 msgstr "Capitada de l'installacion del paquet de lengatge d'[PRODUCTNAME] "
 
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXT2
-msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
-msgstr "Causir '[PRODUCTNAME]-Preferéncias-Lengatge paramètres-Lengatge' per cambiar la lenga de l'interfàcia usancièra."
+msgid "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
+msgstr ""
+"Causir '[PRODUCTNAME]-Preferéncias-Lengatge paramètres-Lengatge' per cambiar "
+"la lenga de l'interfàcia usancièra."
 
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXTPATCH
-msgid  "Installation of [FULLPRODUCTNAME] completed"
+msgid "Installation of [FULLPRODUCTNAME] completed"
 msgstr "Installacion de [FULLPRODUCTNAME] acabada."

@@ -1,2563 +1,2803 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: dz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
 #, fuzzy
-msgid  "Configuration Menu"
+msgid "Configuration Menu"
 msgstr "རིམ་སྒྲིག་དཀར་ཆག"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
 #, fuzzy
-msgid  "~Add-Ons"
+msgid "~Add-Ons"
 msgstr "བསྣོན་བྱ།"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Cu~t"
+msgid "Cu~t"
 msgstr "བཏོག(~t)"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "འདྲ་བཤུས།(~C)"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Paste"
+msgid "~Paste"
 msgstr "སྦྱར།(~P)"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
 #, fuzzy
-msgid  "Leave Full-Screen Mode"
+msgid "Leave Full-Screen Mode"
 msgstr "གསལ་གཞི་ཆ་ཚང་ ཐབས་ལམ་ནང་བཞག"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
-msgid  "Add-~On Help"
+msgid "Add-~On Help"
 msgstr "གྲོགས་རམ་གུ་ ཁ་སྐོང་རྐྱབས།(~O)"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
-msgid  "Synonyms"
+msgid "Synonyms"
 msgstr ""
 
 #: menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.STRING.TEXT
-msgid  "(none)"
+msgid "(none)"
 msgstr ""
 
 #: menu/menu.src#STR_MENU_THESAURUS.STRING.TEXT
-msgid  "~Thesaurus..."
+msgid "~Thesaurus..."
 msgstr ""
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
 #, fuzzy
-msgid  "My Templates"
+msgid "My Templates"
 msgstr "ངི་གི་ ཊེམ་པེལེཊིསི།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Business Correspondence"
+msgid "Business Correspondence"
 msgstr "ཚོང་འབྲེལ་གྱི་ ཡིག་འགྲུལ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Other Business Documents"
+msgid "Other Business Documents"
 msgstr "ཚོང་འབྲེལ་གྱི་ ཡིག་ཆ་གཞན་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Personal Correspondence and Documents"
+msgid "Personal Correspondence and Documents"
 msgstr "རང་དོན་ཡིག་འགྲུལ་དང་ ཡིག་ཆ་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Forms and Contracts"
+msgid "Forms and Contracts"
 msgstr "འབྲི་ཤོག་ཚུ་དང་ ཁག་འབག་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Finances"
+msgid "Finances"
 msgstr "དངུལ་རྩིས་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Education"
+msgid "Education"
 msgstr "ཤེས་རིག"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Presentation Backgrounds"
+msgid "Presentation Backgrounds"
 msgstr "གསལ་སྟོན་རྒྱབ་གཞི་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Presentations"
+msgid "Presentations"
 msgstr "གསལ་སྟོན་ཚུ།"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
 #, fuzzy
-msgid  "Miscellaneous"
+msgid "Miscellaneous"
 msgstr "སྣ་ཚོགས།"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
 #, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "ཊེམ་པེལེཊིསི་ དེ་ཚུ་ འགོ་དང་པ་ ལག་ལེན་འཐབ་ནི་དོན་ལུ་ གཞི་བཙུགས་འབད་དེ་ཡོད།"
+msgid "The templates are being initialized for first-time usage."
+msgstr ""
+"ཊེམ་པེལེཊིསི་ དེ་ཚུ་ འགོ་དང་པ་ ལག་ལེན་འཐབ་ནི་དོན་ལུ་ གཞི་བཙུགས་འབད་དེ་ཡོད།"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "New template"
+msgid "New template"
 msgstr "ཊེམ་པེལེཊི་ གསརཔ།"
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Templates"
+msgstr "ཊེམ་པེལེཊིསི།"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "དབྱེ་རིམ་ཚུ།(~C)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Templates"
+msgid "~Templates"
 msgstr "ཊེམ་པེལེཊིསི།(~T)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Organizer..."
-msgstr "འགོ་འདྲེན་པ།...(~O)"
+msgid "~Organizer..."
+msgstr "འགོ་འདྲེན་པ།(~O)"
+
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
-msgid  "Are you sure you want to delete the region \"$1\"?"
+msgid "Are you sure you want to delete the region \"$1\"?"
 msgstr "ལུང་ཕྱོགས་ \"$1\"ཁྱོད་ཀྱིས་ བཏོན་གཏང་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgid "Are you sure you want to delete the entry \"$1\"?"
 msgstr "ཁྱོད་ཀྱིས་ \"$1\" ཐོ་བཀོད་བཏོན་གཏང་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
+
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid "The category is not empty.\nDelete anyway?"
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "ཡིག་ཆ་  \"$(DOC)\" འདི་ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\nཁྱོད་ཀྱིས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
+msgid "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr ""
+"ཡིག་ཆ་  \"$(DOC)\" འདི་ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\n"
+"ཁྱོད་ཀྱིས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
 #, fuzzy
-msgid  "Styles"
+msgid "Styles"
 msgstr "བཟོ་རྣམ་ཚུ།"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
 #, fuzzy
-msgid  "Macros"
+msgid "Macros"
 msgstr "མེ་ཀོརོསི།"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
 #, fuzzy
-msgid  "Configuration"
+msgid "Configuration"
 msgstr "རིམ་སྒྲིག"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
-msgid  "Styles in "
+msgid "Styles in "
 msgstr "ནང་ན་ བཟོ་རྣམ་ཚུ།"
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
 #, fuzzy
-msgid  "Printing Styles"
+msgid "Printing Styles"
 msgstr "དཔར་འཕྲུལ་གྱི་ བཟོ་རྣམ་ཚུ།"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The print job could not be started."
+msgid "The print job could not be started."
 msgstr "དཔར་བསྐྲུན་གྱི་ལཱ་འདི་ འགོ་བཙུགས་མི་བཏུབ་པས།"
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
 #, fuzzy
-msgid  "Copy"
+msgid "Copy"
 msgstr "འདྲ་བཤུས།"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "The template could not be opened."
+msgid "The template could not be opened."
 msgstr "ཊེམ་པེལེཊི་ འདི་ ཁ་ཕྱེ་མི་བཏུབ་པས།"
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document already open for editing."
+msgid "Document already open for editing."
 msgstr "ཡིག་ཆ་འདི་ ཞུན་དག་དོན་ལུ་ ཧེ་མ་ལས་རང་ཁ་ཕྱེ་སྟེ་ཡོད།"
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "Error recording document "
+msgid "Error recording document "
 msgstr "ཡིག་ཆའི་ སྒྲ་བཟུང་ནི་ལུ་ འཛོལ་བ།"
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "ཊེམ་པེལེཊི་ \"$1\"འདྲ་བཤུས་རྐྱབས་ནི་འཛོལ་བ་ \nམིང་འདི་དང་གཅིག་ཁར་འབད་མི་ཊེམ་པེལེཊི་ཅིག་ཧེ་མ་ལས་ཡོདཔ་འོང་།"
+msgid "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr ""
+"ཊེམ་པེལེཊི་ \"$1\"འདྲ་བཤུས་རྐྱབས་ནི་འཛོལ་བ་ \n"
+"མིང་འདི་དང་གཅིག་ཁར་འབད་མི་ཊེམ་པེལེཊི་ཅིག་ཧེ་མ་ལས་ཡོདཔ་འོང་།"
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$1\" can not be deleted."
+msgid "The template \"$1\" can not be deleted."
 msgstr "ཊེམ་པེལེཊི་  \"$1\" འདི་ བཏོན་གཏང་མི་བཏུབ་པས།"
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error moving template \"$1\"."
+msgid "Error moving template \"$1\"."
 msgstr "ཊེམ་པེལེཊི་ \"$1\"  སྤོ་ནི་ལུ་འཛོལ་བ།"
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "The update could not be saved."
+msgid "The update could not be saved."
 msgstr "དུས་མཐུན་བཟོ་ནི་འདི་ སྲུང་བཞག་འབད་མི་བཏུབ་པས།"
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error saving template "
-msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ འཛོལ་བ།"
+msgid "Error saving template "
+msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ནི་འཛོལ་བ།"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Error renaming template."
+msgid "Error renaming template."
 msgstr "ཊེམ་པེལེཊི་ བསྐྱར་མིང་བཏགས་ནི་ འཛོལ་བ།"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Error renaming template category."
+msgid "Error renaming template category."
 msgstr "ཊེམ་པེལེཊི་ དབྱེ་རིམ་གྱི་ བསྐྱར་མིང་བཏགས་ནི་ འཛོལ་བ།"
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Please specify a name."
+msgid "Please specify a name."
 msgstr "མིང་གཅིག་ གསལ་བཀོད་འབད་གནང་།"
+
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgid "Should the template \"$(TEXT)\" become the default template?"
 msgstr "ཊེམ་པེལེཊི་  \"$(TEXT)\" འདི་ སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ལུ་ འགྱུར་དགོས་པས་ག?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Do you want to reset the default template?"
+msgid "Do you want to reset the default template?"
 msgstr "ཁྱོད་ཀྱིས་ སྔོན་སྒྲིག་ཊེམ་པེལེཊི་ འདི་ སླར་སྒྲིག་འབད་ནི་ཨིན་ན?"
+
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document info cannot be read."
+msgid "Document info cannot be read."
 msgstr "ཡིག་ཆའི་ བརྡ་དོན་འདི་ ལྷག་མི་བཏུབ་པས།"
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
 #, fuzzy
-msgid  "The selected file has an incorrect format."
+msgid "The selected file has an incorrect format."
 msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ ཡིག་སྣོད་ནང་ལུ་ བདེན་མེད་ རྩ་སྒྲིག་གཅིག་ འདུག"
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "$(FORMAT) རྩ་སྒྲིག་ནང་ལུ་ ཡིག་ཆ་ཚུ་ སྲུངས་བཞག་འབད་མི་བཏུབ་པས། ཁྱོད་ཀྱིས་ $(OWNFORMAT) རྩ་སྒྲིག་ལག་ལེན་ཐོག་ལས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
+msgid "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"$(FORMAT) རྩ་སྒྲིག་ནང་ལུ་ ཡིག་ཆ་ཚུ་ སྲུངས་བཞག་འབད་མི་བཏུབ་པས། ཁྱོད་ཀྱིས་ "
+"$(OWNFORMAT) རྩ་སྒྲིག་ལག་ལེན་ཐོག་ལས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
-msgstr "སྲུངས།(~S)"
+msgid "~Save"
+msgstr "སྲུང་བཞག(~S)"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Update"
+msgid "~Update"
 msgstr "དུས་མཐུན་བཟོ་ནི།(~U)"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
 #, fuzzy
-msgid  "Save ~As..."
+msgid "Save ~As..."
 msgstr "བཟུམ་སྦེ་ སྲུངས།...(~A)"
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
 #, fuzzy
-msgid  "Save Copy ~as..."
+msgid "Save Copy ~as..."
 msgstr "བཟུམ་སྦེ་ འདྲ་བཤུས་ སྲུང་བཞག...(~a)"
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 #, fuzzy
-msgid  "~Close & Return to "
+msgid "~Close & Return to "
 msgstr "ཁ་བསྡམས་ &ལུ་སླར་ལོག (~C)"
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
-msgid  " AutoPilot"
+msgid " AutoPilot"
 msgstr "ཨོ་ཊོ་པའི་ལོཊི།"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
 #, fuzzy
-msgid  "Configurations"
+msgid "Configurations"
 msgstr "རིམ་སྒྲིག་ཚུ།"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Basic libraries"
+msgid "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME གཞི་རྩའི་ དཔེ་མཛོད་ཚུ།"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
 #, fuzzy
-msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgid "Should the \"$(ARG1)\" Style be replaced?"
 msgstr " \"$(ARG1)\" བཟོ་རྣམ་འདི་ ཚབ་སྲུང་འབད་དགོས་པས་ག?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
 #, fuzzy
-msgid  "Loading Document"
+msgid "Loading Document"
 msgstr "ཡིག་ཆ་མངོན་གསལ་འབད་བའི་སྒང་།"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
 #, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
+msgid "Connection to: $(HOST). Waiting for response..."
 msgstr " :$(HOST) ལུ་ མཐུད་ལམ། ལན་ལུ་ བསྒུག་དོ།..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
 #, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
+msgid "Opening $(TARGET) at $(HOST)"
 msgstr "$(HOST) ནང་ལུ་ $(TARGET) ཁ་ཕྱེ་དོ།"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ":$(HOST) ནང་ལས་ $(TARGET) མངོན་གསལ་འབད་དོ།  : $(BYTE) མངོན་གསལ་འབད་ཚར་ཚརཝ།"
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr ""
+":$(HOST) ནང་ལས་ $(TARGET) མངོན་གསལ་འབད་དོ།  : $(BYTE) མངོན་གསལ་འབད་ཚར་ཚརཝ།"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
 #, fuzzy
-msgid  "Disconnected"
+msgid "Disconnected"
 msgstr "མཐུད་ལམ་བཏོག་ཡོདཔ།"
+
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit"
-msgstr "ཞུན་དག་འབད།"
+msgid "Edit"
+msgstr "ཞུན་དག"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Documents"
+msgid "%PRODUCTNAME Documents"
 msgstr "%PRODUCTNAME  ཡིག་ཆ་ཚུ།"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Propert~ies..."
+msgid "Propert~ies..."
 msgstr "རྒྱུ་དངོས་ཚུ།...(~i)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
 #, fuzzy
-msgid  "HTML (FrameSet)"
+msgid "HTML (FrameSet)"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ (གཞི་ཁྲམ་ཚན)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Frame Document"
+msgid "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME གཞི་ཁྲམ་ཡིག་ཆ།"
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་ གནས་ཁོངས་ངོ་མ་ནང་ལུ་ མ་ཐོབ་པས།   མིང་གཅིག་པ་འབད་མི་ ཊེམ་པེལེཊི་ གཅིག་ \"$(FOUND)\" ནང་ལུ་ གནས་ཏེ་འདུག  འ་ནི་ ཊེམ་པེལེཊི་འདི་ མ་འོངས་པ་ནང་ལུ་ ག་བསྡུར་བརྐྱབ་པའི་སྐབས་  ལག་ལེན་འཐབ་དགོས་པས་ག?"
+msgid "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr ""
+"ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་ གནས་ཁོངས་ངོ་མ་ནང་ལུ་ མ་ཐོབ་པས།   "
+"མིང་གཅིག་པ་འབད་མི་ ཊེམ་པེལེཊི་ གཅིག་ \"$(FOUND)\" ནང་ལུ་ གནས་ཏེ་འདུག  འ་ནི་ "
+"ཊེམ་པེལེཊི་འདི་ མ་འོངས་པ་ནང་ལུ་ ག་བསྡུར་བརྐྱབ་པའི་སྐབས་  "
+"ལག་ལེན་འཐབ་དགོས་པས་ག?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
-msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr "ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་མ་ཐོབ་པས།  ལོག་ཤུལ་མ་ ཡིག་ཆ་འདི་ ཁ་ཕྱེཝ་ད་ ཊེམ་པེལེཊི་ འདི་ བལྟ་དགོས་པས་ག ?"
+msgid "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+"ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་མ་ཐོབ་པས།  ལོག་ཤུལ་མ་ ཡིག་ཆ་འདི་ ཁ་ཕྱེཝ་ད་ "
+"ཊེམ་པེལེཊི་ འདི་ བལྟ་དགོས་པས་ག ?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Automatically saved version"
+msgid "Automatically saved version"
 msgstr "རང་བཞིན་གྱིས་སྲུངས་བཞག་འབད་ཡོད་པའི་ ཐོན་རིམ།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
 #, fuzzy
-msgid  "Text Document"
+msgid "Text Document"
 msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
 #, fuzzy
-msgid  "HTML Document"
+msgid "HTML Document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
 #, fuzzy
-msgid  "Master Document"
+msgid "Master Document"
 msgstr "ཡིག་ཆ་ཨམ།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
 #, fuzzy
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "ཤོག་ཁྲམ།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
 #, fuzzy
-msgid  "Presentation"
+msgid "Presentation"
 msgstr "གསལ་སྟོན།"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
 #, fuzzy
-msgid  "Drawing"
-msgstr "པར་རིས།"
+msgid "Drawing"
+msgstr "དཔར་རིས།"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "Message"
+msgid "Message"
 msgstr "འཕྲིན་དོན།"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
-msgid  "~Discard"
+msgid "~Discard"
 msgstr "བཏོན་བཀོག(~D)"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
 #, fuzzy
-msgid  "Access to the current data medium not possible."
+msgid "Access to the current data medium not possible."
 msgstr "ད་ལྟོའི་ གནད་སྡུད་ བརྡ་ལམ་ ནང་འཛུལ་སྤྱོད་འབད་མི་ཚུགས་པས།"
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
 #, fuzzy
-msgid  "Insert the next data carrier and click OK."
+msgid "Insert the next data carrier and click OK."
 msgstr "གནད་སྡུད་འབག་མི་ གཞན་མི་འདི་ བཙུགས་ཏེ་ བཏུབ་(OK) འདི་ཨེབ་གཏང་།"
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
 #, fuzzy
-msgid  "Object"
+msgid "Object"
 msgstr "དངོས་པོ།"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
 #, fuzzy
-msgid  "Run Macro"
+msgid "Run Macro"
 msgstr "མེ་ཀོརོ་ གཡོག་བཀོལ་འབད།"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "This document contains macros. $(TEXT)"
+msgid "This document contains macros. $(TEXT)"
 msgstr "ཡིག་ཆ་འདི་གི་ ནང་ན་ མེ་ཀོརོསི་ཡོད།$(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
 #, fuzzy
-msgid  "Run"
+msgid "Run"
 msgstr "གཡོག་བཀོལ།"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
 #, fuzzy
-msgid  "Do Not Run"
+msgid "Do Not Run"
 msgstr "གཡོག་འབད་མི་ བཏུབ་པས།"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
-msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr "སྲུང་སྐྱོབ་ སྒྲིག་སྟངས་དང་འཁྲིལ་བ་ཅིན་ ཡིག་ཆ་འདི་ནང་ ཡོད་པའི་མེ་ཀོརོསི་ ཚུ་ལུ་ གཡོག་བཀོལ་འབད་མི་བཏུབ་ནི་ཨིན་པས།   ག་དེ་ཨིན་རུང་ ཁྱོད་ཀྱིས་ དེ་ཚུ་ལུ་ གཡོག་བཀོལ་འབད་ནི་ཨིན་ན?"
+msgid "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+"སྲུང་སྐྱོབ་ སྒྲིག་སྟངས་དང་འཁྲིལ་བ་ཅིན་ ཡིག་ཆ་འདི་ནང་ ཡོད་པའི་མེ་ཀོརོསི་ "
+"ཚུ་ལུ་ གཡོག་བཀོལ་འབད་མི་བཏུབ་ནི་ཨིན་པས།   ག་དེ་ཨིན་རུང་ ཁྱོད་ཀྱིས་ དེ་ཚུ་ལུ་ "
+"གཡོག་བཀོལ་འབད་ནི་ཨིན་ན?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to allow these macros to be run?"
+msgid "Do you want to allow these macros to be run?"
 msgstr "ཁྱོད་ཀྱིས་མེ་ཀོརོསི་ དེ་ཚུ་ལུ་ གཡོག་བཀོལ་འབད་བཅུག་ནི་"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Export as PDF"
+msgid "Export as PDF"
 msgstr "པི་ཌི་ཨེཕ་ བཟུམ་སྦེ་ ཕྱིར་འདྲེན་འབད།"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Export..."
+msgid "Export..."
 msgstr "ཕྱིར་འདྲེན།..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Export"
+msgid "Export"
 msgstr "ཕྱིར་འདྲེན།"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
 #, fuzzy
-msgid  "Add this directory to the list of secure paths: "
+msgid "Add this directory to the list of secure paths: "
 msgstr "སྣོད་ཐོ་འདི་ མཐའ་བཙན་བཟོ་བའི་ འགྲུལ་ལམ་ཚུ་ནང་ ཁ་སྐོང་འབད།"
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "File format:"
+msgid "File format:"
 msgstr "ཡིག་སྣོད་ རྩ་སྒྲིག:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
 #, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "ཡིག་ཆ་འདི་གི་ནང་ན་ཡོད་པ།:\n\n"
+msgid "This document contains:\n\n"
+msgstr ""
+"ཡིག་ཆ་འདི་གི་ནང་ན་ཡོད་པ།:\n"
+"\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
 #, fuzzy
-msgid  "Recorded changes"
+msgid "Recorded changes"
 msgstr "སྒྲ་བཟུང་འབད་ཡོད་པའི་བསྒྱུར་བཅོས་ཚུ།"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
+msgid "Notes"
 msgstr "དྲན་འཛིན་ཚུ།"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
 #, fuzzy
-msgid  "Document versions"
+msgid "Document versions"
 msgstr "ཡིག་ཆའི་ཐོན་རིམ་ཚུ།"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
 #, fuzzy
-msgid  "Fields"
+msgid "Fields"
 msgstr "ས་སྒོ་ཚུ།"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
 #, fuzzy
-msgid  "Linked data..."
+msgid "Linked data..."
 msgstr "འབྲེལ་མཐུད་ འབད་ཡོད་པའི་ གནད་སྡུད།..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue saving the document?"
+msgid "Do you want to continue saving the document?"
 msgstr "ཁྱོད་ཀྱིས་ ཡིག་ཆ་སྲུང་བཞག་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་ འབད་ནི་ ཨིན་ན?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue printing the document?"
+msgid "Do you want to continue printing the document?"
 msgstr "ཁྱོད་ ཡིག་ཆ་ དཔར་བསྐྲུན་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue signing the document?"
+msgid "Do you want to continue signing the document?"
 msgstr "ཁྱོད་ ཡིག་ཆ་ནང་ མིང་རྟགས་བཀོད་ནི་འདི་ འཕྲོ་མཐུད་དེ་ འབད་ནི་ ཨིན་ན?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "ཁྱོད་ཀྱིས་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་ གསར་བསྐྲུན་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?"
+msgid "Do you want to continue creating a PDF file?"
+msgstr ""
+"ཁྱོད་ཀྱིས་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་ གསར་བསྐྲུན་འབད་ནི་འདི་ "
+"འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "ཁྱོད་ཀྱིས་ ཡིག་ཆ་ངོ་མ་འདི་ནང་ ཚབ་སྲུང་འབད་དགོསཔ་མ་མནོ་བ་ཅིན་ ཁྱོད་ཀྱི་ལཱ་ཚུ་ ཡིག་སྣོད་གསརཔ་གཅིག་གི་མིང་གི་འོག་ལུ་ སྲུངས་བཞག་དགོས།"
+msgid "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+"ཁྱོད་ཀྱིས་ ཡིག་ཆ་ངོ་མ་འདི་ནང་ ཚབ་སྲུང་འབད་དགོསཔ་མ་མནོ་བ་ཅིན་ ཁྱོད་ཀྱི་ལཱ་ཚུ་ "
+"ཡིག་སྣོད་གསརཔ་གཅིག་གི་མིང་གི་འོག་ལུ་ སྲུངས་བཞག་དགོས།"
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
 #, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "ཊེམ་པེལེཊི་ཡིག་སྣོད་ལ་ལུ་ཅིག་ ཉེན་སྐྱོབ་འབད་ཡོད་ དེ་ལས་བཏོན་གཏང་མི་བཏུབ།"
+msgid "Some template files are protected and can not be deleted."
+msgstr ""
+"ཊེམ་པེལེཊི་ཡིག་སྣོད་ལ་ལུ་ཅིག་ ཉེན་སྐྱོབ་འབད་ཡོད་ དེ་ལས་བཏོན་གཏང་མི་བཏུབ།"
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-msgid  "Info %1"
+msgid "Info %1"
 msgstr ""
 
 #: doc/doc.src#STR_SHARED.STRING.TEXT
-msgid  " (shared)"
+msgid " (shared)"
 msgstr ""
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgid "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
 msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgid "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
-msgid  "~Update Styles"
+msgid "~Update Styles"
 msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
-msgid  "~Keep Old Styles"
+msgid "~Keep Old Styles"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Template Management"
+msgid "Template Management"
 msgstr "ཊེམ་པེལེཊི་ འཛིན་སྐྱོང་།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
-msgstr "ཁ་བསྡམས།"
+msgid "Close"
+msgstr "ཁ་བསྡམ་"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~File..."
+msgid "~File..."
 msgstr "ཡིག་སྣོད།...(~F)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Address Book..."
+msgid "~Address Book..."
 msgstr "ཁ་བྱང་དེབ།...(~A)"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Documents"
+msgid "Documents"
+msgstr "ཡིག་ཆ་ཚུ།"
+
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "Templates"
+msgstr "ཊེམ་པེལེཊིསི།"
+
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
+msgid "Documents"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
-msgid  "Commands"
+msgid "Commands"
 msgstr "བརྡ་བཀོད་ཚུ།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "~New"
+msgid "~New"
 msgstr "གསརཔ།(~N)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Edit"
+msgid "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
-msgid  "Import Template..."
+msgid "Import Template..."
 msgstr "ཊེམ་པེལེཊི་ ནང་འདྲེན་འབད།..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 #, fuzzy
-msgid  "Export Template..."
+msgid "Export Template..."
 msgstr "ཊེམ་པེལེཊི་ ཕྱིར་འདྲེན་འབད།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
 #, fuzzy
-msgid  "~Print"
+msgid "~Print"
 msgstr "དཔར་བསྐྲུན་འབད།(~P)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
-msgid  "Printer Settings..."
+msgid "Printer Settings..."
 msgstr "དཔར་འཕྲུལ་ སྒྲིག་སྟངས་ཚུ།..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
 #, fuzzy
-msgid  "Update"
+msgid "Update"
 msgstr "དུས་མཐུན་བཟོ་ནི།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Set As Default Template"
+msgid "Set As Default Template"
 msgstr "སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ བཟུམ་སྦེ་ གཞི་སྒྲིག་འབད།"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Reset Default Template"
+msgid "Reset Default Template"
 msgstr "སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ སླར་སྒྲིག་འབད།"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "New"
+msgid "New"
 msgstr "གསརཔ།"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "དབྱེ་རིམ་ཚུ།(~C)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "T~emplates"
+msgid "T~emplates"
 msgstr "ཊེམ་པེལེཊིསི་(~e)"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
-msgid  "~More"
+msgid "~More"
 msgstr "ཧེང་བཀལ།(~M)"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Pre~view"
+msgid "Pre~view"
 msgstr "སྔོན་ལྟ།(~v)"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "འགྲེལ་བཤད།"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Te~xt"
+msgid "Te~xt"
 msgstr "ཚིག་ཡིག(~x)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Frame"
+msgid "~Frame"
 msgstr "གཞི་ཁྲམ།(~F)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Pages"
+msgid "~Pages"
 msgstr "ཤོག་ལེབ་ཚུ།(~P)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "N~umbering"
+msgid "N~umbering"
 msgstr "ཨང་བརྐྱབ་ནི།"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Overwrite"
+msgid "~Overwrite"
 msgstr "ཚབ་སྲུང་འབད།(~O)"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "From File..."
+msgid "From File..."
 msgstr "ཡིག་སྣོད་ནང་ལས།..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Load Styles"
+msgid "Load Styles"
 msgstr "བཟོ་རྣམ་ཚུ་ མངོན་གསལ་འབད།"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "མགོ་མིང་།(~T)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Subject"
+msgid "Subject"
 msgstr "དོན་ཚན།"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Key words"
+msgid "~Key words"
 msgstr "གཙོ་ཚིག་ཚུ།(~K)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Description"
+msgid "~Description"
 msgstr "འགྲེལ་བཤད།(~D)"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
 #, fuzzy
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ ཚགས་མ་  $(FILTER) འདི་གཞི་འཛུགས་མ་འབད་བར་ ཡོདཔ་ཨིན།\nའ་ནི་འདི་ ད་ལྟོ་འབད་ནི་ཨིན་ན?"
+msgid "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgstr ""
+"སེལ་འཐུ་འབད་ཡོད་པའི་ ཚགས་མ་  $(FILTER) འདི་གཞི་འཛུགས་མ་འབད་བར་ ཡོདཔ་ཨིན།\n"
+"འ་ནི་འདི་ ད་ལྟོ་འབད་ནི་ཨིན་ན?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
 #, fuzzy
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ཚགས་མ་ $(FILTER) འདི་ ཁྱོད་རའི་དཔར་ཐེངས་གྲངས་སུ་ བཙུགས་ཏེ་མེདཔ་ཨིན།\nཁྱོད་ཀྱིས་ གོ་རིམ་ཚུ་གི་སྐོར་ལས་ བརྡ་དོན་ཚུ་ ང་བཅས་རའི་ ཁྱིམ་གྱི་ཤོག་ལེབ་ ནང་འཚོལ་ཐོབ་ཨིན།"
+msgid "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
+"སེལ་འཐུ་འབད་ཡོད་པའི་ཚགས་མ་ $(FILTER) འདི་ ཁྱོད་རའི་དཔར་ཐེངས་གྲངས་སུ་ "
+"བཙུགས་ཏེ་མེདཔ་ཨིན།\n"
+"ཁྱོད་ཀྱིས་ གོ་རིམ་ཚུ་གི་སྐོར་ལས་ བརྡ་དོན་ཚུ་ ང་བཅས་རའི་ ཁྱིམ་གྱི་ཤོག་ལེབ་ "
+"ནང་འཚོལ་ཐོབ་ཨིན།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Reduce print data"
+msgid "Reduce print data"
 msgstr "དཔར་བསྐྲུན་གནད་སྡུད་ མར་ཕབ་ འབད།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Settings for"
+msgid "Settings for"
 msgstr "དོན་ལུ་ སྒྲིག་སྟངས་ཚུ།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Printer"
+msgid "~Printer"
 msgstr "དཔར་འཕྲུལ།(~P)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Print to ~file"
+msgid "Print to ~file"
 msgstr "ཡིག་སྣོད་ནང་ལུ་ དཔར་བསྐྲུན་འབད།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Reduce transparency"
+msgid "~Reduce transparency"
 msgstr "དྭངས་གསལ་ མར་ཕབ་འབད།(~R)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Auto~matically"
+msgid "Auto~matically"
 msgstr "རང་བཞིན་གྱིས།(~m)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~No transparency"
+msgid "~No transparency"
 msgstr "དྭངས་གསལ་མེདཔ།(~N)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Reduce ~gradients"
+msgid "Reduce ~gradients"
 msgstr "སྟེགས་རིས་ མར་ཕབ་འབད།(~g)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Gradient ~stripes"
+msgid "Gradient ~stripes"
 msgstr "སྟེགས་རིས་ ཐིག་རིས།(~s)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Intermediate ~color"
+msgid "Intermediate ~color"
 msgstr "ཚོས་གཞི་ བར་པ།(~c)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Reduce ~bitmaps"
+msgid "Reduce ~bitmaps"
 msgstr "བིཊི་ས་ཁྲ་ མར་ཕབ་འབད།(~b)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~High print quality"
+msgid "~High print quality"
 msgstr "དཔར་བསྐྲུན་ སྤུས་ཚད་མཐོ་བ །(~H)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "N~ormal print quality"
+msgid "N~ormal print quality"
 msgstr "སྤྱིར་གཏང་དཔར་བསྐྲུན་སྤུས་ཚད།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Reso~lution"
+msgid "Reso~lution"
 msgstr "ཧུམ་ཆ།(~l)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "72 DPI"
+msgid "72 DPI"
 msgstr "ཌི་པི་ཨའི་ ༧༢"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "96 DPI"
+msgid "96 DPI"
 msgstr "ཌི་པི་ཨའི་ ༩༦"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "150 DPI (Fax)"
+msgid "150 DPI (Fax)"
 msgstr "ཌི་པི་ཨའི་ ༡༥༠ (དཔར་འཕྲིན)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "200 DPI (default)"
+msgid "200 DPI (default)"
 msgstr "ཌི་པི་ཨའི་ ༢༠༠(སྔོན་སྒྲིག)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "300 DPI"
+msgid "300 DPI"
 msgstr "ཌི་པི་ཨའི་ ༣༠༠   "
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
-msgid  "600 DPI"
+msgid "600 DPI"
 msgstr "ཌི་པི་ཨའི་ ༦༠༠   "
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Include transparent ob~jects"
+msgid "Include transparent ob~jects"
 msgstr "དྭངས་གསལ་ཅན་གྱི་དངོས་པོ་ཚུ་ གྲངས་སུ་བཙུགས།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Con~vert colors to grayscale"
+msgid "Con~vert colors to grayscale"
 msgstr "ཚོས་གཞི་ཚུ་ གེརེ་སིཀེལ་ལུ་ གཞི་བསྒྱུར་འབད།(~v)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Printer warnings"
+msgid "Printer warnings"
 msgstr "དཔར་འཕྲུལ་ ཉེན་བརྡ་ཚུ།"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "P~aper size"
+msgid "P~aper size"
 msgstr "ཤོག་ཀུ་གི་ཚད།(~a)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Pap~er orientation"
+msgid "Pap~er orientation"
 msgstr "ཤོག་ཀུའི་ཕྱོགས།(~e)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Transparency"
+msgid "~Transparency"
 msgstr "དྭངས་གསལ།(~T)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Warning"
+msgid "Warning"
 msgstr "ཉེན་བརྡ།"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr " དྭངས་གསལ་ཅན་གྱི་དངོས་པོ་ཚུ་ ཁྱོད་ཀྱི་ཡིག་ཆ་ནང་ན་ ཤོམ་ཏེ་ཡོདཔ་ཨིན།\nའ་ནི་འདི་གིས་ དཔར་འཕྲུལ་ལ་ལོ་ཅིག་ནང་ \n དཔར་བསྐྲུན་དུས་ཚོད་རིངམ་ འགོར་ནི་ལུ་འགོ་ཁྲིད་འབད་འོང་།དྭངས་གསལ་ཅན་ \n གྱི་རྣམ་པ་འདི་ མར་ཕབ་འབད་དགོས་པས་ག?"
+msgid "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
+" དྭངས་གསལ་ཅན་གྱི་དངོས་པོ་ཚུ་ ཁྱོད་ཀྱི་ཡིག་ཆ་ནང་ན་ ཤོམ་ཏེ་ཡོདཔ་ཨིན།\n"
+"འ་ནི་འདི་གིས་ དཔར་འཕྲུལ་ལ་ལོ་ཅིག་ནང་ \n"
+" དཔར་བསྐྲུན་དུས་ཚོད་རིངམ་ འགོར་ནི་ལུ་འགོ་ཁྲིད་འབད་འོང་།དྭངས་གསལ་ཅན་ \n"
+" གྱི་རྣམ་པ་འདི་ མར་ཕབ་འབད་དགོས་པས་ག?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
 #, fuzzy
-msgid  "~Yes"
+msgid "~Yes"
 msgstr "ཨིན།(~Y)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~No"
+msgid "~No"
 msgstr "མེན།(~N)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "ཆ་མེད་གཏང་།(~C)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Do not show warning again"
+msgid "~Do not show warning again"
 msgstr " ད་རུང་ ལོག་སྟེ་ ཉེན་བརྡ་ མ་སྟོན།"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Style Catalog"
+msgid "Style Catalog"
 msgstr "ཐོ་གཞུང་བཟོ་རྣམ།"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Organizer..."
+msgid "~Organizer..."
 msgstr "འགོ་འདྲེན་པ།(~O)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete..."
+msgid "~Delete..."
 msgstr "བཏོན་གཏང་།...(~D)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Modify..."
+msgid "~Modify..."
 msgstr "ལེགས་བཅོས་འབད།"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~New..."
+msgid "~New..."
 msgstr "གསརཔ།...(~N)"
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
-msgid  "Style List"
+msgid "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
 #, fuzzy
-msgid  "Hierarchical"
+msgid "Hierarchical"
 msgstr "སྡེ་རིམ་བཞིན།"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
-msgid  "Styles and Formatting"
+msgid "Styles and Formatting"
 msgstr "བཟོ་རྣམ་ཚུ་དང་ རྩ་སྒྲིག་འབད་ཐངས།"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Fill Format Mode"
+msgid "Fill Format Mode"
 msgstr "རྩ་སྒྲིག་ ཐབས་ལམ་བཀང་།"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "New Style from Selection"
+msgid "New Style from Selection"
 msgstr "སེལ་འཐུ་ནང་ལས་ བཟོ་རྣམ་གསརཔ།"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Update Style"
+msgid "Update Style"
 msgstr "བཟོ་རྣམ་ དུས་མཐུན་བཟོ།"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
-msgid  "File encryption password"
+msgid "File encryption password"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
-msgid  "~Enter password to open"
+msgid "~Enter password to open"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
-msgid  "~Reenter password to open"
+msgid "~Reenter password to open"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FIXEDLINE.TEXT
-msgid  "File sharing password"
+msgid "File sharing password"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
-msgid  "Enter password to modify"
+msgid "Enter password to modify"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
-msgid  "Reenter password to modify"
+msgid "Reenter password to modify"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FIXEDLINE.TEXT
-msgid  "File sharing options"
+msgid "File sharing options"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CHECKBOX.TEXT
-msgid  "~Open file read-only"
+msgid "~Open file read-only"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CHECKBOX.TEXT
-msgid  "Record ~changes"
+msgid "Record ~changes"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.STRING.TEXT
-msgid  "~Protect..."
+msgid "~Protect..."
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.STRING.TEXT
-msgid  "~Unprotect..."
+msgid "~Unprotect..."
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgid "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
-msgid  "Protect Records"
+msgid "Protect Records"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.STRING.TEXT
-msgid  "Unprotect Records"
+msgid "Unprotect Records"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.STRING.TEXT
-msgid  "Incorrect password"
+msgid "Incorrect password"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "New versions"
+msgid "New versions"
 msgstr "ཐོན་རིམ་གསརཔ་ཚུ།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Save ~New Version"
+msgid "Save ~New Version"
 msgstr "ཐོན་རིམ་གསརཔ་ སྲུང་བཞག་འབད།(~n)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Always save a version on closing"
+msgid "~Always save a version on closing"
 msgstr "ཁ་བསྡམས་ད་ ཨ་རྟག་རང་ ཐོན་རིམ་སྲུང་བཞག་འབད།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Existing versions"
+msgid "Existing versions"
 msgstr "ཡོད་བཞིན་པའི་ ཐོན་རིམ་ཚུ།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Date and time"
+msgid "Date and time"
 msgstr "ཚེས་གྲངས་དང་ དུས་ཚོད།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Saved by"
+msgid "Saved by"
 msgstr "གྱིས་ སྲུང་བཞག་ནུག"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Comments"
+msgid "Comments"
 msgstr "བསམ་བཀོད་ཚུ།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Close"
-msgstr "ཁ་བསྡམས།"
+msgid "Close"
+msgstr "ཁ་བསྡམ་"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Open"
+msgid "Open"
 msgstr "ཁ་ཕྱེ།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Show..."
+msgid "~Show..."
 msgstr "སྟོན།...(~S)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Compare"
+msgid "Compare"
 msgstr "ག་བསྡུར་བརྐྱབ་ནི།"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Versions of"
+msgid "Versions of"
 msgstr "གྱི་ ཐོན་རིམ་ཚུ།"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Date and time : "
+msgid "Date and time : "
 msgstr "ཚེས་གྲངས་དང་ དུས་ཚོད།"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Saved by "
+msgid "Saved by "
 msgstr "གྱིས་ སྲུང་བཞག་ནུག"
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "Insert Version Comment"
+msgid "Insert Version Comment"
 msgstr "ཐོན་རིམ་བསམ་བཀོད་བཙུགས།"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Version comment"
+msgid "Version comment"
 msgstr "ཐོན་རིམ་བསམ་བཀོད།"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Name"
+msgid "~Name"
 msgstr "མིང་།(~N)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~AutoUpdate"
+msgid "~AutoUpdate"
 msgstr "རང་བཞིན་གྱིས་ དུས་མཐུན་བཟོ་བ།(~A)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ne~xt Style"
+msgid "Ne~xt Style"
 msgstr "བཟོ་རྣམ་གཞན་མི།(~x)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Linked with"
+msgid "Linked with"
 msgstr "གཅིག་ཁར་འབྲེལ་ཡོདཔ།"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Category"
+msgid "~Category"
 msgstr "དབྱེ་རིམ།(~C)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Contains"
+msgid "Contains"
 msgstr "ནང་ན་ཡོད་པ།"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
 #, fuzzy
-msgid  "Current version"
+msgid "Current version"
 msgstr "ད་ལྟོའི་ཐོན་རིམ།"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
 #, fuzzy
-msgid  "Export"
+msgid "Export"
 msgstr "ཕྱིར་འདྲེན།"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
-msgstr "བཙུགས།"
+msgid "Insert"
+msgstr "བཙུགས་།"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "བཙུགས།(~I)"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
 #, fuzzy
-msgid  "<All formats>"
+msgid "<All formats>"
 msgstr "<All formats>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
 #, fuzzy
-msgid  "~Automatic file name extension"
+msgid "~Automatic file name extension"
 msgstr " ཡིག་སྣོད་ཀྱི་ མིང་རང་བཞིན་གྱི་ རྒྱ་བསྐྱེད།"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
 #, fuzzy
-msgid  "~Selection"
+msgid "~Selection"
 msgstr "སེལ་འཐུ།(~S)"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
 #, fuzzy
-msgid  "~Link"
+msgid "~Link"
 msgstr "འབྲེལ་ལམ།(~L)"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
 #, fuzzy
-msgid  "Pr~eview"
+msgid "Pr~eview"
 msgstr "སྔོན་ལྟ།(~e)"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "~Read-only"
-msgstr "ལྷག་ནི་ཙམ་གཅིག(~R)"
+msgid "~Read-only"
+msgstr "ལྷག་ནི་-ཙམ།(~R)"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
 #, fuzzy
-msgid  "Save with ~password"
+msgid "Save with ~password"
 msgstr "ཆོག་ཡིག་དང་གཅིག་ཁར་ སྲུང་བཞག་འབད།(~p)"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Edit ~filter settings"
+msgid "Edit ~filter settings"
 msgstr "ཚགས་མ་ སྒྲིག་སྟངས་ཚུ་ ཞུན་དག་འབད།(~f)"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
 #, fuzzy
-msgid  "~Play"
+msgid "~Play"
 msgstr "གཏང་།(~P)"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
 #, fuzzy
-msgid  "Sto~p"
+msgid "Sto~p"
 msgstr "བཀག(~p)"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
 #, fuzzy
-msgid  "~Open"
+msgid "~Open"
 msgstr "ཁ་ཕྱེ་(~O)"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
 #, fuzzy
-msgid  "~Save"
+msgid "~Save"
 msgstr "སྲུང་བཞག(~S)"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Style:"
+msgid "Style:"
 msgstr "བཟོ་རྣམ:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "~Templates:"
+msgid "~Templates:"
 msgstr "ཊེམ་པེལེཊིསི།(~T)"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
 #, fuzzy
-msgid  "~Version:"
+msgid "~Version:"
 msgstr "ཐོན་རིམ།:(~V)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
-msgid  "Find on this Page"
+msgid "Find on this Page"
 msgstr "ཤོག་ལེབ་ འདི་ཁར་ འཚོལ།"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Search for"
+msgid "~Search for"
 msgstr "དོན་ལུ་ འཚོལ་ཞིབ།(~S)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Whole words only"
+msgid "~Whole words only"
 msgstr "མིང་ཚིག་ཧྲིལ་བུ་ཚུ་ རྐྱངམ་གཅིག(~W)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Match case"
+msgid "~Match case"
 msgstr "གནད་དོན་ མཐུན་སྒྲིག(~M)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Wrap ~around"
+msgid "Wrap ~around"
 msgstr "མཐའ་སྐོར་ ལོག་མཚམས།"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Backwards"
+msgid "~Backwards"
 msgstr "རྒྱབ་བསྐྱོད།"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Find"
+msgid "~Find"
 msgstr "འཚོལ།(~F)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
+
+#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
+#, fuzzy
+msgid "Wrap ~around"
+msgstr "མཐའ་སྐོར་ ལོག་མཚམས།"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Enter Password"
+msgid "Enter Password"
 msgstr "ཆོག་ཡིག་བཙུགས།"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~User"
+msgid "~User"
 msgstr "ལག་ལེན་པ།(~U)"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Password"
+msgid "~Password"
 msgstr "ཆོག་ཡིག (~P)"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Confirm"
+msgid "~Confirm"
 msgstr "ངེས་དཔྱད་འབད།(~C)"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Password"
+msgid "Password"
 msgstr "ཆིག་ཡིག"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "P~assword"
+msgid "P~assword"
 msgstr "ཆིག་ཡིག"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Confir~m"
+msgid "Confir~m"
 msgstr "ངེས་དཔྱད་འབད།(~C)"
+
+#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
+#, fuzzy
+msgid "Password"
+msgstr "ཆིག་ཡིག"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME document"
+msgid "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME ཡིག་ཆ་"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "མགོ་མིང་།(~T)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Subject"
+msgid "~Subject"
 msgstr "དོན་ཚན།(~S)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Keywords"
+msgid "~Keywords"
 msgstr "གཙོ་ཚིག་ཚུ།(~K)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Comments"
+msgid "~Comments"
 msgstr "བསམ་བཀོད་ཚུ།(~C)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Type:"
+msgid "Type:"
 msgstr "ཡིག་དཔར་རྐྱབས།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Read-only"
+msgid "~Read-only"
 msgstr "ལྷག་ནི་-ཙམ།(~R)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Location:"
+msgid "Location:"
 msgstr "གནས་ཁོངས།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Size:"
+msgid "Size:"
 msgstr "ཚད།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Created:"
+msgid "Created:"
 msgstr "གསར་བསྐྲུན་འབད་ཡོདཔ།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "ལེགས་བཅོས་འབད་ཡོདཔ།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Digitally signed:"
+msgid "Digitally signed:"
 msgstr "ཌི་ཇི་ཊཱལ་གྱི་ ཐོག་ལས་ མིང་རྟགས་བཀོད་པ།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Digital Signature..."
+msgid "Digital Signature..."
 msgstr "ཌི་ཇི་ཊཱལ་ མིང་རྟགས།..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
 #, fuzzy
-msgid  "Multiply signed document"
+msgid "Multiply signed document"
 msgstr "མིང་རྟགས་བཀོད་ཡོད་པའི་ ཡིག་ཆ་ དགུ་མཐའ་རྐྱབས།"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Last printed:"
+msgid "Last printed:"
 msgstr "མཇུག་ལུ་དཔར་བསྐྲུན་འབད་འབདཝ།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Total editing time:"
+msgid "Total editing time:"
 msgstr "ཞུན་དག་འབད་ནི་དུས་ཚོད་ཡོངས་བསྡོམས།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Revision number:"
+msgid "Revision number:"
 msgstr "བསྐྱར་སྦྱོང་ཨང་གྲངས།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Reset"
+msgid "Reset"
 msgstr "སླར་སྒྲིག(~e)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Apply user data"
+msgid "~Apply user data"
 msgstr "ལག་ལེན་པའི་ གནད་སྡུད་ འཇུག་སྤྱོད་འབད།(~A)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Template:"
+msgid "Template:"
 msgstr "ཊེམ་པེལེཊི།:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
 #, fuzzy
-msgid  "unknown"
+msgid "unknown"
 msgstr "མ་ཤེསཔ།"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
-msgid  "File Name"
+msgid "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Info fields..."
+msgid "~Info fields..."
 msgstr "བརྡ་དོན་ས་སྒོ་ཚུ།...(~I)"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Do not refresh automatically"
+msgid "Do not refresh automatically"
 msgstr "རང་བཞིན་གྱིས་ ཡང་སེལ་མ་འབད།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Refresh this document"
+msgid "Refresh this document"
 msgstr "ཡིག་ཆ་འདི་ ཡང་སེལ་འབད།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "every"
+msgid "every"
 msgstr "རེ་རེ།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "seconds"
+msgid "seconds"
 msgstr "སྐར་ཆ་ཚུ།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Redirect from this document"
+msgid "Redirect from this document"
 msgstr "ཡིག་ཆ་འདི་ཁར་ལས་ བསྐྱར་ལོག་གཏང་ནི།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "after"
+msgid "after"
 msgstr "ཤུལ་ལས།"
+
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "seconds"
+msgstr "སྐར་ཆ་ཚུ།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "to URL"
+msgid "to URL"
 msgstr "ཡུ་ཨར་ཨེལ་ ལུ།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "to frame"
+msgid "to frame"
 msgstr "གཞི་ཁྲམ་འབད་ནི།"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
 #, fuzzy
-msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr "ཁྱོད་ཀྱིས་ གདམ་ཁ་ \"%PLACEHOLDER%\" འདི་སེལ་འཐུ་འབད་བ་ཅིན་ ཡུ་ཨར་ཨེལ་ ངེས་པར་བཙུགས་དགོས།"
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr ""
+"ཁྱོད་ཀྱིས་ གདམ་ཁ་ \"%PLACEHOLDER%\" འདི་སེལ་འཐུ་འབད་བ་ཅིན་ ཡུ་ཨར་ཨེལ་ "
+"ངེས་པར་བཙུགས་དགོས།"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Properties"
+msgid "~Properties"
 msgstr "རྒྱུ་དངོས་ཚུ།"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "མིང་ཚུ།"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "ཡིག་དཔར་རྐྱབས།:"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-msgid  "Value"
+msgid "Value"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add"
+msgid "~Add"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-msgid  "Property Name"
+msgid "Property Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-msgid  "Checked by"
+msgid "Checked by"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-msgid  "Client"
+msgid "Client"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-msgid  "Date completed"
+msgid "Date completed"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-msgid  "Department"
+msgid "Department"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-msgid  "Destinations"
+msgid "Destinations"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-msgid  "Disposition"
+msgid "Disposition"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-msgid  "Division"
+msgid "Division"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-msgid  "Document number"
+msgid "Document number"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-msgid  "Editor"
+msgid "Editor"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-msgid  "Forward to"
+msgid "Forward to"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-msgid  "Group"
+msgid "Group"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-msgid  "Info"
+msgid "Info"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-msgid  "Language"
+msgid "Language"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-msgid  "Mailstop"
+msgid "Mailstop"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-msgid  "Matter"
+msgid "Matter"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-msgid  "Office"
+msgid "Office"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-msgid  "Owner"
+msgid "Owner"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-msgid  "Project"
+msgid "Project"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-msgid  "Publisher"
+msgid "Publisher"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-msgid  "Purpose"
+msgid "Purpose"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-msgid  "Received from"
+msgid "Received from"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-msgid  "Recorded by"
+msgid "Recorded by"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-msgid  "Recorded date"
+msgid "Recorded date"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-msgid  "Reference"
+msgid "Reference"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-msgid  "Source"
+msgid "Source"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-msgid  "Status"
+msgid "Status"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-msgid  "Telephone number"
+msgid "Telephone number"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-msgid  "Typist"
+msgid "Typist"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-msgid  "URL"
+msgid "URL"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
+#, fuzzy
+msgid "Text"
+msgstr "ཚིག་ཡིག"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
-msgid  "DateTime"
+msgid "DateTime"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-msgid  "Date"
+msgid "Date"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Duration"
+msgid "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-msgid  "Number"
+msgid "Number"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
-msgid  "Yes or no"
+msgid "Yes or no"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
-msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Yes"
+msgid "Yes"
 msgstr "ཨིན།(~Y)"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-msgid  "No"
+msgid "No"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Remove Property"
+msgid "Remove Property"
+msgstr ""
+
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid "The value entered does not match the specified type.\nThe value will be stored as text."
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Properties of "
+msgid "Properties of "
 msgstr "གི་ རྒྱུ་དངོས་ཚུ།"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
 #, fuzzy
-msgid  "General"
+msgid "General"
 msgstr "ཡོངས་ཁྱབ།"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "འགྲེལ་བཤད།"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-msgid  "Custom Properties"
+msgid "Custom Properties"
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Internet"
+msgid "Internet"
 msgstr "ཨིན་ཊར་ནེཊི།"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
-msgid  "Security"
+msgid "Security"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
-msgid  "Edit Duration"
+msgid "Edit Duration"
+msgstr ""
+
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
+msgid "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
-msgid  "~Negative"
+msgid "~Negative"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FIXEDTEXT.TEXT
-msgid  "~Years"
+msgid "~Years"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FIXEDTEXT.TEXT
-msgid  "~Months"
+msgid "~Months"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FIXEDTEXT.TEXT
-msgid  "~Days"
+msgid "~Days"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FIXEDTEXT.TEXT
-msgid  "H~ours"
+msgid "H~ours"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FIXEDTEXT.TEXT
-msgid  "Min~utes"
+msgid "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Seconds"
+msgid "~Seconds"
 msgstr "སྐར་ཆ་ཚུ།"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
-msgid  "Millise~conds"
+msgid "Millise~conds"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Edit Field Names"
+msgid "Edit Field Names"
 msgstr "ས་སྒོའི་མིང་ཚུ་ ཞུན་དག་འབད།"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Names"
+msgid "Names"
 msgstr "མིང་ཚུ།"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Create Style"
+msgid "Create Style"
 msgstr "བཟོ་རྣམ་གསར་བསྐྲུན་འབད།"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Style name"
+msgid "Style name"
 msgstr "བཟོ་རྣམ་གི་མིང་།"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Style already exists. Overwrite?"
+msgid "Style already exists. Overwrite?"
 msgstr "བཟོ་རྣམ་ཧེ་མ་ལས་རང་ གནས་ཡོད། ཚབ་སྲུང་འབད་ག?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
-msgid  "Record Macro"
+msgid "Record Macro"
 msgstr "སྒྲ་བཟུང་ མེཀ་ཀོརོ།"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr "ཁྱོད་ ཐད་རེ་འབའ་རེ་ སྒྲ་བཟུང་འདི་ ཆ་མེད་གཏང་ནི་ཨིན་ན? ད་ལྟོ་ཚུན་ཚོད་ སྒྲ་བཟུང་འབད་ཡོད་པའི་ རིམ་པ་ཚུ་ བརླག་སྟོར་ཞུགས་འོང་།"
+msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+"ཁྱོད་ ཐད་རེ་འབའ་རེ་ སྒྲ་བཟུང་འདི་ ཆ་མེད་གཏང་ནི་ཨིན་ན? ད་ལྟོ་ཚུན་ཚོད་ "
+"སྒྲ་བཟུང་འབད་ཡོད་པའི་ རིམ་པ་ཚུ་ བརླག་སྟོར་ཞུགས་འོང་།"
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
 #, fuzzy
-msgid  "Cancel Recording"
+msgid "Cancel Recording"
 msgstr "སྒྲ་བཟུང་ ཆ་མེད་གཏང་།"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr "%PRODUCTNAME གིས་ ལཱ་འབད་ཡོད་པའི་གློག་འཕྲིན་ རིམ་སྒྲིག་གཅིག་ འཚོལ་མ་ཚུགས་པས། ཡིག་ཆ་འདི་ ཉེ་གནས་ ལུ་སྲུང་བཞག་ འབད་གནང་ཞིནམ་ལས་ གློག་འཕྲིན་ཞབས་ཏོག་སྤྱོད་མི་ནང་འཁོད་ནང་མཉམ་སྦྲགས་འབད་གནང་།"
+msgid "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME གིས་ ལཱ་འབད་ཡོད་པའི་གློག་འཕྲིན་ རིམ་སྒྲིག་གཅིག་ འཚོལ་མ་ཚུགས་པས། "
+"ཡིག་ཆ་འདི་ ཉེ་གནས་ ལུ་སྲུང་བཞག་ འབད་གནང་ཞིནམ་ལས་ "
+"གློག་འཕྲིན་ཞབས་ཏོག་སྤྱོད་མི་ནང་འཁོད་ནང་མཉམ་སྦྲགས་འབད་གནང་།"
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
 #, fuzzy
-msgid  "~Reset"
+msgid "~Reset"
 msgstr "སླར་སྒྲིག(~R)"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
 #, fuzzy
-msgid  "Apply"
+msgid "Apply"
 msgstr "འཇུག་སྤྱོད་འབད།"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
 #, fuzzy
-msgid  "Organizer"
+msgid "Organizer"
 msgstr "འགོ་འདྲེན་པ།"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This name is already in use."
+msgid "This name is already in use."
 msgstr "འ་ནི་མིང་འདི་ ཧེ་མ་ལས་རང་ལག་ལེན་ འཐབ་སྟེ་ཡོད།"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This Style does not exist."
+msgid "This Style does not exist."
 msgstr "བཟོ་རྣམ་འདི་ གནས་ཏེ་མེད།"
+
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to delete Style $1?"
+msgid "Do you really want to delete Style $1?"
 msgstr "བཟོ་རྣམ་$1 འབད་མི་འདི་ ཐད་རི་འབའ་རི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
 #, fuzzy
-msgid  "You are deleting an applied Style!\n"
+msgid "You are deleting an applied Style!\n"
 msgstr "ཁྱོད་ཀྱིས་ འཇུག་སྤྱོད་འབད་ཡོད་པའི་ བཟོ་རྣམ་གཅིག་བཏོན་གཏང་དོ!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
 #, fuzzy
-msgid  "New..."
+msgid "New..."
 msgstr "གསརཔ..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
 #, fuzzy
-msgid  "Modify..."
+msgid "Modify..."
 msgstr "ལེགས་བཅོས..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete..."
+msgid "Delete..."
 msgstr "བཏོན་གཏང་..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
 #, fuzzy
-msgid  "Navigator"
+msgid "Navigator"
 msgstr "འགྲུལ་བསྐྱོདཔ།"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
-msgid  "Task Pane"
+msgid "Task Pane"
+msgstr ""
+
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid "Sidebar"
 msgstr ""
 
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Faulty password confirmation"
+msgid "Faulty password confirmation"
 msgstr "སྐྱོན་ཅན་ཆོག་ཡིག་ངེས་དཔྱད།"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-msgid  "Send"
+msgid "Send"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
-msgid  "Dock"
+msgid "Dock"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_UNDOCK.STRING.TEXT
-msgid  "Undock"
+msgid "Undock"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
-msgid  "View"
-msgstr ""
+#, fuzzy
+msgid "View"
+msgstr "མཐོང་སྣང་།"
 
 #: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
-msgid  "Tasks"
+msgid "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "ཡིག་ཆ་འདི་ནང་རྩ་སྒྲིག་འབད་ནི་ཡོདཔ་འོང་ ཡང་ན་ %FORMATNAME  ཡིག་སྣོད་ རྩ་སྒྲིག་ནང་ལུ་སྲུང་མི་བཏུབ་པའི་ནང་དོན་ཚུ་ཡོདཔ་འོང་།ག་དེ་འབད་རུང་ཁྱོད་ཀྱིས་ཡིག་ཆ་འདི་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?\n\n- %FORMATNAME ཡིག་སྣོད་ རྩ་སྒྲིག་འདི་སྲུང་བཞག་ནི་དོན་ལུ་'Yes' ཨེབ་གཏང་།\n- 'No' འདི་མཐའ་མཇུག་གི་ཁ་ཕྱེ་ཡིག་ཆའི་ རྩ་སྒྲིག་འདི་ལག་ལེན་འཐབ་ད་ཨེབ་གཏང་ནི་དང་ རྩ་སྒྲིག་འབད་ནི་ཡོད་མི་ཚུ་དང་ ནང་དོན་ཚུ་ག་ར་ངེས་བདེན་སྦེ་སྲུང་བཞག་སྟེ་ཡོདཔ་ངེས་ཏིག་འབད་དགོས།"
+msgid "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+"ཡིག་ཆ་འདི་ནང་རྩ་སྒྲིག་འབད་ནི་ཡོདཔ་འོང་ ཡང་ན་ %FORMATNAME  ཡིག་སྣོད་ རྩ་སྒྲིག"
+"་ནང་ལུ་སྲུང་མི་བཏུབ་པའི་ནང་དོན་ཚུ་ཡོདཔ་འོང་།ག་དེ་འབད་རུང་ཁྱོད་ཀྱིས་ཡིག་ཆ་འདི"
+"་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?\n"
+"\n"
+"- %FORMATNAME ཡིག་སྣོད་ རྩ་སྒྲིག་འདི་སྲུང་བཞག་ནི་དོན་ལུ་'Yes' ཨེབ་གཏང་།\n"
+"- 'No' འདི་མཐའ་མཇུག་གི་ཁ་ཕྱེ་ཡིག་ཆའི་ "
+"རྩ་སྒྲིག་འདི་ལག་ལེན་འཐབ་ད་ཨེབ་གཏང་ནི་དང་ རྩ་སྒྲིག་འབད་ནི་ཡོད་མི་ཚུ་དང་ "
+"ནང་དོན་ཚུ་ག་ར་ངེས་བདེན་སྦེ་སྲུང་བཞག་སྟེ་ཡོདཔ་ངེས་ཏིག་འབད་དགོས།"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
-msgid  "~Keep Current Format"
+msgid "~Keep Current Format"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-msgid  "~Save in ODF Format"
+msgid "~Save in ODF Format"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
 #, fuzzy
-msgid  "~More Information..."
+msgid "~More Information..."
 msgstr "བརྡ་དོན་ཧེང་བཀལ།...(~M)"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-msgid  "~Ask when not saving in ODF format"
+msgid "~Ask when not saving in ODF format"
 msgstr ""
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
 #, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "དཔར་འཕྲུལ་སྔོན་སྒྲིག་ འཚོལ་མ་འཐོབ་ཨིན་པས།\nདཔར་འཕྲུལ་ གཅིག་ གདམ་ཏེ་ ལོག་སྟེ་རང་འབད་རྩོལ་བསྐྱེད་གནང་།"
+msgid "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+"དཔར་འཕྲུལ་སྔོན་སྒྲིག་ འཚོལ་མ་འཐོབ་ཨིན་པས།\n"
+"དཔར་འཕྲུལ་ གཅིག་ གདམ་ཏེ་ ལོག་སྟེ་རང་འབད་རྩོལ་བསྐྱེད་གནང་།"
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
 #, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "དཔར་འཕྲུལ་ འགོ་བཙུགས་མི་ཚུགས་པས།\nདཔར་འཕྲུལ་ རིམ་སྒྲིག་ ཞིབ་དཔྱད་འབད་གནང་།"
+msgid "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+"དཔར་འཕྲུལ་ འགོ་བཙུགས་མི་ཚུགས་པས།\n"
+"དཔར་འཕྲུལ་ རིམ་སྒྲིག་ ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "ཡིག་ཆ་འདི་ དཔར་འཕྲུལ་ $1 གི་དོན་ལུ་ རྩ་སྒྲིག་འབད་དེ་ཡོདཔ་ཨིན།  གསལ་བཀོད་འབད་ཡོད་པའི་ དཔར་འཕྲུལ་འདི་ འཐོབ་མི་ཚུགས་པས། \nཚད་ལྡན་ དཔར་འཕྲུལ་ $2 འདི་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
+msgid "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+"ཡིག་ཆ་འདི་ དཔར་འཕྲུལ་ $1 གི་དོན་ལུ་ རྩ་སྒྲིག་འབད་དེ་ཡོདཔ་ཨིན།  "
+"གསལ་བཀོད་འབད་ཡོད་པའི་ དཔར་འཕྲུལ་འདི་ འཐོབ་མི་ཚུགས་པས། \n"
+"ཚད་ལྡན་ དཔར་འཕྲུལ་ $2 འདི་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options..."
+msgid "Options..."
 msgstr "གདམ་ཁ་ཚུ།..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Printer Options"
+msgid "Printer Options"
 msgstr "དཔར་འཕྲུལ་གྱི་ གདམ་ཁ་ཚུ།"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
 #, fuzzy
-msgid  "Printer busy"
+msgid "Printer busy"
 msgstr "དཔར་འཕྲུལ་ ཁོམ་མེད།"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
 #, fuzzy
-msgid  "Error while printing"
+msgid "Error while printing"
 msgstr "དཔར་འཕྲུལ་འབད་བའི་ སྐབས་ལུ་ འཛོལ་བ།"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
 #, fuzzy
-msgid  "Printing"
+msgid "Printing"
 msgstr "དཔར་འཕྲུལ་འབད་ནི།"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Page "
+msgid "Page "
 msgstr "ཤོག་ལེབ།"
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Error saving template "
+msgid "Error saving template "
 msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ནི་འཛོལ་བ།"
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
-msgid  " (read-only)"
+msgid " (read-only)"
 msgstr " (ལྷག་ནི་-ཙམ།)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
 #, fuzzy
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "ཤོག་ལེབ་ཀྱི་ ཚད་དང་ ཕྱོགས་ཚུ་ ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\n\n ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྒྲིག་སྟངས་གསརཔ་ཚུ་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
+msgid "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+"ཤོག་ལེབ་ཀྱི་ ཚད་དང་ ཕྱོགས་ཚུ་ ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\n"
+"\n"
+" ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྒྲིག་སྟངས་གསརཔ་ཚུ་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
 #, fuzzy
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "ཤོག་ལེབ་ཀྱི་ཚད་འདི་ ལེགས་བཅོས་འབད་ཡོདཔ་ཨིན།\nསྒྲིག་སྟངས་གསརཔ་འདི་ ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྲུང་བཞག་\nའབད་དགོས་པས་ག?"
+msgid "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+"ཤོག་ལེབ་ཀྱི་ཚད་འདི་ ལེགས་བཅོས་འབད་ཡོདཔ་ཨིན།\n"
+"སྒྲིག་སྟངས་གསརཔ་འདི་ ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྲུང་བཞག་\n"
+"འབད་དགོས་པས་ག?"
+
+#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
+#, fuzzy
+msgid "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+"ཤོག་ལེབ་ཀྱི་ ཚད་དང་ ཕྱོགས་ཚུ་ ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\n"
+"\n"
+" ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྒྲིག་སྟངས་གསརཔ་ཚུ་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
 #, fuzzy
-msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>མགོ་མིང་:</b><dd>$(TITEL)<dt><b>དོན་ཚན:</b><dd>$(THEME)<dt><b>གཙོ་ཚིག:</b><dd>$(KEYWORDS)<dt><b>འགྲེལ་བཤད:</b><dd>$(TEXT)</dl></font></body></html>"
+msgid "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>མགོ་མིང་:</b><dd"
+">$(TITEL)<dt><b>དོན་ཚན:</b><dd>$(THEME)<dt><b>གཙོ་ཚིག:</b><dd>$(KEYWORDS)<dt"
+"><b>འགྲེལ་བཤད:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
 #, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>ཡིག་ཆའི་ རྒྱུ་དངོས་ཚུ་མ་ཐོབ.</B></FONT></P></BODY></HTML>"
+msgid "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>ཡིག་ཆའི་ "
+"རྒྱུ་དངོས་ཚུ་མ་ཐོབ.</B></FONT></P></BODY></HTML>"
+
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
 #, fuzzy
-msgid  "Print Monitor"
+msgid "Print Monitor"
 msgstr "དཔར་བསྐྲུན་གསལ་འཕྲུལ།"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "is being printed on"
+msgid "is being printed on"
 msgstr "གུ་ལུ་ དཔར་བསྐྲུན་འབད་ཡོདཔ།"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-msgid  "is being prepared for printing"
+msgid "is being prepared for printing"
+msgstr ""
+
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
 msgstr ""
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "ཡིག་ཆ་འདི་ ཞུན་དག་འབད་མི་བཏུབ་པས་ དེ་ཡང་ འཛུལ་སྤྱོད་འབད་ནི་དབང་ཆ་ཚུ་ བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་ བརྟེན་འོང་སྲིད།    ཡིག་ཆ་འདི་གི་ འདྲ་བཤུས་གཅིག་ ཞུན་དག་འབད་ནི་ཨིན་ན?"
+msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+"ཡིག་ཆ་འདི་ ཞུན་དག་འབད་མི་བཏུབ་པས་ དེ་ཡང་ འཛུལ་སྤྱོད་འབད་ནི་དབང་ཆ་ཚུ་ "
+"བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་ བརྟེན་འོང་སྲིད།    ཡིག་ཆ་འདི་གི་ འདྲ་བཤུས་གཅིག་ "
+"ཞུན་དག་འབད་ནི་ཨིན་ན?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  " (repaired document)"
+msgid " (repaired document)"
 msgstr "(ཡིག་ཆ་ ཉམས་བཅོས་འབད་འབདཝ།)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
-msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+#, fuzzy
+msgid "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+"ཁྱོད་རའི་ རིམ་ལུགས་ནང་ལུ་ %PRODUCTNAME གིས་ཝེབ་བརའུ་ཟར་འཚོལ་མ་འཐོབ་པས། "
+"ཁྱོད་རའི་ཌེཀསི་ཊོབ་ དགའ་གདམ་ཚུ་ ཞིབ་དཔྱད་འབད་ད་ ཡང་ན་   "
+"བརའུ་ཟར་བཙུགས་པའི་སྐབས་ སྔོན་སྒྲིག་གནས་ཁོངས་ཞུ་བ་འབད་ཡོདཔ་བཞིན་    "
+"ཝེབ་བརའུ་ཟར་བཙུགས་གནང་དང་(དཔེ་འབད་བ་ཅིན་ མོ་ཛིལ་ལ་ཟེར་མི་བཟུམ)།"
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid "Customization"
+msgstr ""
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid "Restore Default"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid "Panel: "
 msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Modify Link"
+msgid "Modify Link"
 msgstr "འབྲེལ་ལམ་ལེགས་བཅོས་འབད།"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Application:"
+msgid "~Application:"
 msgstr "གློག་རིམ།(~A)"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~File:"
+msgid "~File:"
 msgstr "ཡིག་སྣོད།:(~F)"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Category:"
+msgid "~Category:"
 msgstr "དབྱེ་རིམ།(~C)"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Modify link"
+msgid "Modify link"
 msgstr "འབྲེལ་ལམ་ ལེགས་བཅོས་འབད།"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
-msgid  "%PRODUCTNAME"
+msgid "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
 #, fuzzy
-msgid  "Untitled"
+msgid "Untitled"
 msgstr "མགོ་མིང་མ་བཏགསཔ།"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "ཁ་བསྡམ་"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "རང་བཞིན་གྱི།"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
 #, fuzzy
-msgid  "Standard"
+msgid "Standard"
 msgstr "ཚད་ལྡན།"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
 #, fuzzy
-msgid  "Bytes"
+msgid "Bytes"
 msgstr "བཱའིཊིསི།"
 
 #: appl/app.src#STR_KB.STRING.TEXT
 #, fuzzy
-msgid  "KB"
+msgid "KB"
 msgstr "ཀེབི།"
 
 #: appl/app.src#STR_MB.STRING.TEXT
 #, fuzzy
-msgid  "MB"
+msgid "MB"
 msgstr "ཨེམ་བི།"
 
 #: appl/app.src#STR_GB.STRING.TEXT
 #, fuzzy
-msgid  "GB"
+msgid "GB"
 msgstr "ཇི་བི།"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
 #, fuzzy
-msgid  "Cancel all changes?"
+msgid "Cancel all changes?"
 msgstr "བསྒྱུར་བཅོས་འབད་ཡོད་མི་ག་ར་ ཆ་མེད་གཏང་ག?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Document already open."
+msgid "Document already open."
 msgstr "ཡིག་ཆ་ཧེ་མ་ལས་རང་ ཁར་ཕྱེ་སྟེ་འདུག"
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "ཁྱོད་རའི་ རིམ་ལུགས་ནང་ལུ་ %PRODUCTNAME གིས་ཝེབ་བརའུ་ཟར་འཚོལ་མ་འཐོབ་པས། ཁྱོད་རའི་ཌེཀསི་ཊོབ་ དགའ་གདམ་ཚུ་ ཞིབ་དཔྱད་འབད་ད་ ཡང་ན་   བརའུ་ཟར་བཙུགས་པའི་སྐབས་ སྔོན་སྒྲིག་གནས་ཁོངས་ཞུ་བ་འབད་ཡོདཔ་བཞིན་    ཝེབ་བརའུ་ཟར་བཙུགས་གནང་དང་(དཔེ་འབད་བ་ཅིན་ མོ་ཛིལ་ལ་ཟེར་མི་བཟུམ)།"
+msgid "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+"ཁྱོད་རའི་ རིམ་ལུགས་ནང་ལུ་ %PRODUCTNAME གིས་ཝེབ་བརའུ་ཟར་འཚོལ་མ་འཐོབ་པས། "
+"ཁྱོད་རའི་ཌེཀསི་ཊོབ་ དགའ་གདམ་ཚུ་ ཞིབ་དཔྱད་འབད་ད་ ཡང་ན་   "
+"བརའུ་ཟར་བཙུགས་པའི་སྐབས་ སྔོན་སྒྲིག་གནས་ཁོངས་ཞུ་བ་འབད་ཡོདཔ་བཞིན་    "
+"ཝེབ་བརའུ་ཟར་བཙུགས་གནང་དང་(དཔེ་འབད་བ་ཅིན་ མོ་ཛིལ་ལ་ཟེར་མི་བཟུམ)།"
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
 #, fuzzy
-msgid  "Internal"
+msgid "Internal"
 msgstr "ནང་འཁོད།"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
 #, fuzzy
-msgid  "Application"
+msgid "Application"
 msgstr "གློག་རིམ།"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "View"
+msgid "View"
 msgstr "མཐོང་སྣང་།"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "Documents"
+msgid "Documents"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Edit"
+msgid "Edit"
 msgstr "ཞུན་དག"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
 #, fuzzy
-msgid  "BASIC"
+msgid "BASIC"
 msgstr "གཞི་རྩ།"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "གདམ་ཁ་ཚུ།"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
 #, fuzzy
-msgid  "Math"
+msgid "Math"
 msgstr "ཨང་རྩིས།"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
 #, fuzzy
-msgid  "Navigate"
+msgid "Navigate"
 msgstr "འགྲུལ་བསྐྱོད།"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "བཙུགས་།"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Format"
+msgid "Format"
 msgstr "རྩ་སྒྲིག"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "ཚིག་ཡིག"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
 #, fuzzy
-msgid  "Frame"
+msgid "Frame"
 msgstr "གཞི་ཁྲམ།"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
 #, fuzzy
-msgid  "Graphic"
+msgid "Graphic"
 msgstr "ཚད་རིས།"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "ཐིག་ཁྲམ།"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
 #, fuzzy
-msgid  "Numbering"
+msgid "Numbering"
 msgstr "ཨང་བརྐྱབ་ནི།"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Data"
+msgid "Data"
 msgstr "གནད་སྡུད།"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
 #, fuzzy
-msgid  "Special Functions"
+msgid "Special Functions"
 msgstr "དམིགས་བསལ་ ལས་འགན་ཚུ།"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 #, fuzzy
-msgid  "Image"
+msgid "Image"
 msgstr "གཟུགས་བརྙན།"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
 #, fuzzy
-msgid  "Chart"
+msgid "Chart"
 msgstr "དཔེ་རིས།"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
 #, fuzzy
-msgid  "Explorer"
+msgid "Explorer"
 msgstr "ཐབས་འཚོལ་མི།"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 #, fuzzy
-msgid  "Connector"
+msgid "Connector"
 msgstr "མཐུད་བྱེད།"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
 #, fuzzy
-msgid  "Modify"
+msgid "Modify"
 msgstr "ལེགས་བཅོས་འབད།"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
 #, fuzzy
-msgid  "Drawing"
+msgid "Drawing"
 msgstr "དཔར་རིས།"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
 #, fuzzy
-msgid  "Controls"
+msgid "Controls"
 msgstr "ཚད་འཛིན་ནི།"
+
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to save the changes to %1?"
+msgid "Do you want to save the changes to %1?"
 msgstr "ཁྱོད་ བསྒྱུར་བཅོས་འབད་ཡོད་མི་ཚུ་ %1 ནང་ལུ་སྲུངས་ནི་ ཨིན་ན?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
 #, fuzzy
-msgid  "E~xit"
+msgid "E~xit"
 msgstr "ཕྱིར་ཐོན།(~x)"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
 #, fuzzy
-msgid  "Help"
+msgid "Help"
 msgstr "རོགས་རམ།"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
 #, fuzzy
-msgid  "No automatic start at 'XX'"
+msgid "No automatic start at 'XX'"
 msgstr "'XX' ནང་རང་བཞིན་འགོ་བཙུགས་མེད།"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
 #, fuzzy
-msgid  "Help Bar"
+msgid "Help Bar"
 msgstr "གྲོགས་རམ་ཕྲ་རིང་།"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
 #, fuzzy
-msgid  "The help file for this topic is not installed."
+msgid "The help file for this topic is not installed."
 msgstr "གནད་དོན་འདི་གི་དོན་ལུ་ གྲོགས་རམ་ཡིག་སྣོད་ གཞི་བཙུགས་མ་འབད་བས།"
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
 #, fuzzy
-msgid  "Function Bar"
+msgid "Function Bar"
 msgstr "ལས་འགན་ཕྲ་རིང་།"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "དམིགས་བསལ་རིམ་སྒྲིག་ནང་ལུ་ འཛོལ་བ་གཅིག་བྱུང་ནུག \n བདག་སྐྱོང་པ་དང་གཅིག་ཁར་ འབྲེལ་བ་འཐབ་གནང་།"
+msgid "An error has occurred in the special configuration.\nPlease contact your administrator."
+msgstr ""
+"དམིགས་བསལ་རིམ་སྒྲིག་ནང་ལུ་ འཛོལ་བ་གཅིག་བྱུང་ནུག \n"
+" བདག་སྐྱོང་པ་དང་གཅིག་ཁར་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
 #, fuzzy
-msgid  "Exit Quickstarter"
+msgid "Exit Quickstarter"
 msgstr "འཕྲལ་མགྱོགས་འགོ་བཙུགས་མི་ ཕྱིར་ཐོན།"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
 msgstr "%PRODUCTNAME %PRODUCTVERSION  འཕྲལ་མགྱོགས་འགོ་བཙུགས་མི།"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 #, fuzzy
-msgid  "Open Document..."
+msgid "Open Document..."
 msgstr "ཡིག་ཆ་ཁ་ཕྱེ..."
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
 #, fuzzy
-msgid  "From Template..."
+msgid "From Template..."
 msgstr "ཊེམ་པེལེཏི་ལས..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
 #, fuzzy
-msgid  "Load %PRODUCTNAME During System Start-Up"
+msgid "Load %PRODUCTNAME During System Start-Up"
 msgstr "%PRODUCTNAME འགོ་བཙུགས་རིམ་ལུགས་སྐབས་ མངོན་གསལ་འབད།"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 #, fuzzy
-msgid  "Disable Quickstarter"
+msgid "Disable Quickstarter"
 msgstr "རིམ་ལུགས་ཤོག་སྣོད་ཀུའིཀ་སི་ཊ་ཊར་ ལྕོགས་མིན་བཟོ་"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
+msgid "File"
 msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
+msgid "Startcenter"
 msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
-msgid  "Recent Documents"
+msgid "Recent Documents"
 msgstr ""
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
 #, fuzzy
-msgid  "Update all links?"
+msgid "Update all links?"
 msgstr "འབྲེལ་ལམ་ཚུ་ག་ར་ དུས་མཐུན་བཟོ་ནི་ཨིན་ན?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "DDE link to % for % area % are not available."
+msgid "DDE link to % for % area % are not available."
 msgstr "ཌི་ཌི་ཨི་ འབྲེལ་ལམ་ ལས་ % for % area % དེ་ཚུ་འཐོབ་མི་ཚུགས་པས།"
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "ཚད་བརྒལ་འབྲེལ་ལམ་འདི་གིས་ \"%s\" འདི་ཁ་ཕྱེ་ནི་ཨིན་པས།  འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr ""
+"ཚད་བརྒལ་འབྲེལ་ལམ་འདི་གིས་ \"%s\" འདི་ཁ་ཕྱེ་ནི་ཨིན་པས།  འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
+
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Security Warning"
+msgid "Security Warning"
 msgstr "སྲུང་སྐྱོབ་ཉེན་བརྡ།"
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr "ཡིག་ཆ་འདི་ཌི་ཇི་ཊཱལ་གྱི་དོག་ལས་ མིང་རྟགས་མ་བཀོད་པའི་ཧེ་མ་ ཁ་ཕྱེ་ཡིག་ཆའི་ ཡིག་སྣོད་རྩ་སྒྲིག་ནང་ལུ་ངེས་པར་ སྲུང་བཞག་དགོསཔ་ཨིན།"
+msgid "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
+"ཡིག་ཆ་འདི་ཌི་ཇི་ཊཱལ་གྱི་དོག་ལས་ མིང་རྟགས་མ་བཀོད་པའི་ཧེ་མ་ ཁ་ཕྱེ་ཡིག་ཆའི་ "
+"ཡིག་སྣོད་རྩ་སྒྲིག་ནང་ལུ་ངེས་པར་ སྲུང་བཞག་དགོསཔ་ཨིན།"
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 #, fuzzy
-msgid  " (Signed)"
+msgid " (Signed)"
 msgstr "(མིང་རྟགས་བཀོད་ཡོདཔ།)"
+
+#: appl/app.src#STR_STANDARD.STRING.TEXT
+#, fuzzy
+msgid "Standard"
+msgstr "ཚད་ལྡན།"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
 #, fuzzy
-msgid  "Document"
+msgid "Document"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 #, fuzzy
-msgid  "- None -"
+msgid "- None -"
 msgstr "ཅི་མེད།(-N)"
+
+#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
+#, fuzzy
+msgid "Graphic"
+msgstr "ཚད་རིས།"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
 #, fuzzy
-msgid  "All files (*.*)"
+msgid "All files (*.*)"
 msgstr "ཡིག་སྣོད་ག་ར། (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
-msgid  "Link graphics"
+msgid "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
 #, fuzzy
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr "འོས་ལྡན་ཆ་ཤས་ཐབས་ལམ་ %1 ཅིག་\nའཐོབ་མ་ཚུགས།\n\nཐབས་ལམ་མིང་གི་དོན་ལུ་ཡིག་སྡེབ་ཞིབ་དཔྱད་འབད།"
+msgid "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+"འོས་ལྡན་ཆ་ཤས་ཐབས་ལམ་ %1 ཅིག་\n"
+"འཐོབ་མ་ཚུགས།\n"
+"\n"
+"ཐབས་ལམ་མིང་གི་དོན་ལུ་ཡིག་སྡེབ་ཞིབ་དཔྱད་འབད།"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
-msgid  "Graphics file cannot be opened"
+msgid "Graphics file cannot be opened"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
-msgid  "Graphics file cannot be read"
+msgid "Graphics file cannot be read"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
-msgid  "Unknown graphics format"
+msgid "Unknown graphics format"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
-msgid  "This version of the graphics file is not supported"
+msgid "This version of the graphics file is not supported"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
-msgid  "Graphics filter not found"
+msgid "Graphics filter not found"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
-msgid  "Not enough memory to insert graphic"
+msgid "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Contents"
+msgid "Contents"
 msgstr "ནང་དོན་ཚུ།"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Index"
+msgid "Index"
 msgstr "ཟུར་ཐོ།"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Find"
+msgid "Find"
 msgstr "འཚོལ།"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Bookmarks"
+msgid "Bookmarks"
 msgstr "དེབ་རྟགས་ཚུ།"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Search term"
+msgid "~Search term"
 msgstr "ཐ་སྙད་འཚོལ།(~S)"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Display"
+msgid "~Display"
 msgstr "བཀྲམ་སྟོན།(~D)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "S~earch term"
+msgid "S~earch term"
 msgstr "ཐ་སྙད་འཚོལ།(~e)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Find"
+msgid "~Find"
 msgstr "འཚོལ།(~F)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Complete words only"
+msgid "~Complete words only"
 msgstr "མཇུག་བསྡུའི་མིང་ཚིག་རྐྱངམ་གཅིག(~C)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Find in ~headings only"
+msgid "Find in ~headings only"
 msgstr "མགུ་རྒྱན་དེ་ཚུ་ནང་ རྐྱངམ་གཅིག་འཚོལ།(~h)"
+
+#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Display"
+msgstr "བཀྲམ་སྟོན།(~D)"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Bookmarks"
+msgid "~Bookmarks"
 msgstr "དེབ་རྟགས་ཚུ།(~B)"
+
+#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid "~Display"
+msgstr "བཀྲམ་སྟོན།(~D)"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Help"
+msgid "%PRODUCTNAME Help"
 msgstr "%PRODUCTNAME  རོགས་རམ།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
 #, fuzzy
-msgid  "Show Navigation Pane"
+msgid "Show Navigation Pane"
 msgstr "འགྲུལ་བསྐྱོད་པཱེན་འདི་ སྟོན།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
 #, fuzzy
-msgid  "Hide Navigation Pane"
+msgid "Hide Navigation Pane"
 msgstr "འགྲུལ་བསྐྱོད་པཱེན་འདི་ སྦ་བཞག"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
 #, fuzzy
-msgid  "First Page"
+msgid "First Page"
 msgstr "ཤོག་ལེབ་དང་པམ།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
 #, fuzzy
-msgid  "Previous Page"
+msgid "Previous Page"
 msgstr "ཤོག་ལེབ་ཧེ་མམ།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
 #, fuzzy
-msgid  "Next Page"
+msgid "Next Page"
 msgstr "ཤོག་ལེབ་ཤུལ་མམ།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
 #, fuzzy
-msgid  "Print..."
+msgid "Print..."
 msgstr "དཔར་བསྐྲུན་འབད།..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
 #, fuzzy
-msgid  "Add to Bookmarks..."
+msgid "Add to Bookmarks..."
 msgstr "དེབ་རྟགས་ཚུ་ནང་ཁ་སྐོང་འབད།..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 #, fuzzy
-msgid  "Find on this Page..."
+msgid "Find on this Page..."
 msgstr "ཤོག་ལེབ་འདི་ཁར་འཚོལ།"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
 #, fuzzy
-msgid  "HTML Source"
+msgid "HTML Source"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ གྱི་འབྱུང་ཁུངས།"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "The Help is being started..."
+msgid "The Help is being started..."
 msgstr "རོགས་རམ་འདི་ འགོ་བཙུགས་ཡོདཔ།"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
 #, fuzzy
-msgid  "Select Text"
+msgid "Select Text"
 msgstr "ཚིག་ཡིག་ སེལ་འཐུ་འབད།"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
 #, fuzzy
-msgid  "~Copy"
+msgid "~Copy"
 msgstr "འདྲ་བཤུས།(~C)"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Add to Bookmarks"
+msgid "Add to Bookmarks"
 msgstr "དེབ་རྟགས་ཚུ་ནང་ཁ་སྐོང་རྐྱབ།"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Bookmark:"
+msgid "Bookmark:"
 msgstr "དབ་རྟགས།:"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
 #, fuzzy
-msgid  "Rename Bookmark"
+msgid "Rename Bookmark"
 msgstr "དེབ་རྟགས་ བསྐྱར་མིང་བཏགས།"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 #, fuzzy
-msgid  "Display"
+msgid "Display"
 msgstr "བཀྲམ་སྟོན་འབད།"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
 #, fuzzy
-msgid  "Rename..."
+msgid "Rename..."
 msgstr "བསྐྱར་མིང་བཏགས།..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
 #, fuzzy
-msgid  "Delete"
+msgid "Delete"
 msgstr "བཏོན་གཏང་"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "No topics found."
+msgid "No topics found."
 msgstr "གནད་དོན་ཚུ་ཐོབ་མ་ཚིགས་པས།"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "The text you entered was not found."
+msgid "The text you entered was not found."
 msgstr "ཁྱོད་ཀྱིས་ཐོ་བཀོད་འབད་ཡོད་པའི་ ཚིག་ཡིག་འདི་ ཐོབ་མ་ཚུགས་པས།"
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "%PRODUCTNAME %MODULENAME བཀྲམ་སྟོན་དང་ འགོ་བཙུགས་ནི་ལུ་རོགས་རམ།(~D)"

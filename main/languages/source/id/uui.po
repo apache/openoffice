@@ -1,672 +1,834 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: alreadyopen.src#STR_ALREADYOPEN_MSG.STRING.TEXT
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr "Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) sehingga tidak dapat disunting.\n\nBukalah dokumen sebagai hanya-baca, atau abaikan penguncian tersebut dan buka dokumen untuk segera diubah.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr ""
+"Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) "
+"sehingga tidak dapat disunting.\n"
+"\n"
+"Bukalah dokumen sebagai hanya-baca, atau abaikan penguncian tersebut dan "
+"buka dokumen untuk segera diubah.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.STRING.TEXT
-msgid  "Open ~Read-Only"
+msgid "Open ~Read-Only"
 msgstr "Buka ~Hanya-Baca"
 
 #: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.STRING.TEXT
-msgid  "~Open"
+msgid "~Open"
 msgstr "~Buka"
 
 #: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.STRING.TEXT
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr "Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) sehingga tidak dapat disunting.\n\nTutup dokumen pada sistem lain dan coba lagi untuk menyimpannya, atau abaikan penguncian berkas tersebut dan simpan dokumen yang sekarang.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr ""
+"Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) "
+"sehingga tidak dapat disunting.\n"
+"\n"
+"Tutup dokumen pada sistem lain dan coba lagi untuk menyimpannya, atau "
+"abaikan penguncian berkas tersebut dan simpan dokumen yang sekarang.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.STRING.TEXT
-msgid  "~Retry Saving"
+msgid "~Retry Saving"
 msgstr "~Coba Ulang Menyimpan"
 
 #: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.STRING.TEXT
-msgid  "~Save"
+msgid "~Save"
 msgstr "~Simpan"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RADIOBUTTON.TEXT
-msgid  "~Send"
+msgid "~Send"
 msgstr "~Kirim"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RADIOBUTTON.TEXT
-msgid  "I~gnore"
+msgid "I~gnore"
 msgstr "Aba~ikan"
 
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RADIOBUTTON.TEXT
-msgid  "I~nteractive"
+msgid "I~nteractive"
 msgstr "I~nteraktif"
 
 #: cookiedg.src#DLG_COOKIES.GB_INFUTURE.GROUPBOX.TEXT
-msgid  "Future Cookie Handling"
+msgid "Future Cookie Handling"
 msgstr "Penanganan Kukis Mendatang"
 
 #: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PUSHBUTTON.TEXT
-msgid  "~Ignore"
+msgid "~Ignore"
 msgstr "Aba~ikan"
 
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PUSHBUTTON.TEXT
+msgid "~Send"
+msgstr "~Kirim"
+
 #: cookiedg.src#STR_COOKIES_RECV_START.STRING.TEXT
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "Server '${HOST}' hendak mengirim satu atau lebih kukis.\nKukis berisi informasi yang mengacu ke kelas URL tertentu. Jika %PRODUCTNAME meminta dokumen dengan URL yang berhubungan dengan kelas sebuah kukis yang telah ditentukan sebelumnya, %PRODUCTNAME akan mengirim informasi ini pada server. Hal ini mengizinkan server untuk mengenali status dari sebuah aplikasi WWW, misalnya ketika berbelanja daring di situs.\n\nKukis berikut harus dikirim:\n\n"
+msgid "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+"Server '${HOST}' hendak mengirim satu atau lebih kukis.\n"
+"Kukis berisi informasi yang mengacu ke kelas URL tertentu. Jika %PRODUCTNAME "
+"meminta dokumen dengan URL yang berhubungan dengan kelas sebuah kukis yang "
+"telah ditentukan sebelumnya, %PRODUCTNAME akan mengirim informasi ini pada "
+"server. Hal ini mengizinkan server untuk mengenali status dari sebuah "
+"aplikasi WWW, misalnya ketika berbelanja daring di situs.\n"
+"\n"
+"Kukis berikut harus dikirim:\n"
+"\n"
 
 #: cookiedg.src#STR_COOKIES_RECV_COOKIES.STRING.TEXT
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domain: ${DOMAIN}, Jalur: ${PATH}, Kukis: ${COOKIE}.\n"
 
 #: cookiedg.src#STR_COOKIES_RECV_TITLE.STRING.TEXT
-msgid  "Cookie Reception"
+msgid "Cookie Reception"
 msgstr "Penerimaan Kukis"
 
 #: cookiedg.src#STR_COOKIES_SEND_START.STRING.TEXT
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME telah menyimpan kukis untuk server '${HOST}' yang akan dikirim ketika meminta dokumen ${PATH}.\nKukis berisi informasi yang mengacu ke kelas URL tertentu. Mereka dikirim oleh server tertentu untuk disimpan oleh %PRODUCTNAME ketika dokumen tertentu diakses. Jika %PRODUCTNAME memuat sebuah dokumen yang menurut URL berhubungan dengan sebuah kelas kukis yang telah diterima sebelumnya, %PRODUCTNAME akan mengirim informasi ini pada server. Hal ini mengizinkan server untuk mengenali status dari sebuah aplikasi WWW, misalnya ketika berbelanja daring di situs.\n\nKukis berikut ini harus dikirim:\n\n"
+msgid "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+"%PRODUCTNAME telah menyimpan kukis untuk server '${HOST}' yang akan dikirim "
+"ketika meminta dokumen ${PATH}.\n"
+"Kukis berisi informasi yang mengacu ke kelas URL tertentu. Mereka dikirim "
+"oleh server tertentu untuk disimpan oleh %PRODUCTNAME ketika dokumen "
+"tertentu diakses. Jika %PRODUCTNAME memuat sebuah dokumen yang menurut URL "
+"berhubungan dengan sebuah kelas kukis yang telah diterima sebelumnya, %"
+"PRODUCTNAME akan mengirim informasi ini pada server. Hal ini mengizinkan "
+"server untuk mengenali status dari sebuah aplikasi WWW, misalnya ketika "
+"berbelanja daring di situs.\n"
+"\n"
+"Kukis berikut ini harus dikirim:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_COOKIES.STRING.TEXT
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Domain: ${DOMAIN}, Jalur: ${PATH}, Kukis: ${COOKIE}.\n"
 
 #: cookiedg.src#STR_COOKIES_SEND_TITLE.STRING.TEXT
-msgid  "Send Cookies"
+msgid "Send Cookies"
 msgstr "Kirim Kukis"
 
 #: filechanged.src#STR_FILECHANGED_TITLE.STRING.TEXT
-msgid  "Document Has Been Changed by Others"
+msgid "Document Has Been Changed by Others"
 msgstr "Dokumen Sudah Diubah oleh Orang Lain"
 
 #: filechanged.src#STR_FILECHANGED_MSG.STRING.TEXT
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr "Berkas sudah berubah sejak dibuka dan disunting oleh $PRODUCTNAME. Menyimpan dokumen versi Anda akan menimpa perubahan yang dilakukan oleh orang lain.\n\nApakah Anda tetap ingin menyimpannya?\n\n"
+msgid "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr ""
+"Berkas sudah berubah sejak dibuka dan disunting oleh $PRODUCTNAME. Menyimpan "
+"dokumen versi Anda akan menimpa perubahan yang dilakukan oleh orang lain.\n"
+"\n"
+"Apakah Anda tetap ingin menyimpannya?\n"
+"\n"
 
 #: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.STRING.TEXT
-msgid  "~Save Anyway"
+msgid "~Save Anyway"
 msgstr "~Simpan Saja"
 
 #: fltdlg.src#DLG_FILTER_SELECT.MODALDIALOG.TEXT
-msgid  "Filter Selection"
+msgid "Filter Selection"
 msgstr "Seleksi Penyaring"
 
 #: ids.src#RID_KEEP_PASSWORD.STRING.TEXT
-msgid  "~Remember password until end of session"
+msgid "~Remember password until end of session"
 msgstr "Ingat kata sandi hingga akhi~r sesi"
 
 #: ids.src#RID_SAVE_PASSWORD.STRING.TEXT
-msgid  "~Remember password"
+msgid "~Remember password"
 msgstr "~Ingat kata sandi"
 
 #: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.STRING.TEXT
-msgid  "Invalid Document Signature"
+msgid "Invalid Document Signature"
 msgstr "Tanda Tangan Dokumen Tidak Sah"
 
 #: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.STRING.TEXT
-msgid  "Non-Encrypted Streams"
+msgid "Non-Encrypted Streams"
 msgstr "Penyiaran Tanpa Enkripsi"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation executed on $(ARG1) was aborted."
+msgid "The operation executed on $(ARG1) was aborted."
 msgstr "Operasi yang dieksekusi pada $(ARG1) dibatalkan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Access to $(ARG1) was denied."
+msgid "Access to $(ARG1) was denied."
 msgstr "Akses ke $(ARG1) ditolak."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) already exists."
+msgid "$(ARG1) already exists."
 msgstr "$(ARG1) sudah ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Target already exists."
+msgid "Target already exists."
 msgstr "Target sudah ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "Anda memilih untuk menyimpan/mengekspor pustaka dasar berpelindung sandi yang memiliki modul\n$(ARG1)\nyang terlalu besar untuk disimpan dalam format biner. Jika Anda ingin pengguna biasa tidak dapat mengakses sandi pustaka untuk dapat menjalankan makro di modul-modul tersebut, Anda harus membagi modul-modul itu dalam sejumlah kecil modul. Apakah Anda ingin melanjutkan untuk menyimpan/mengekspor pustaka ini?"
+msgid "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+"Anda memilih untuk menyimpan/mengekspor pustaka dasar berpelindung sandi "
+"yang memiliki modul\n"
+"$(ARG1)\n"
+"yang terlalu besar untuk disimpan dalam format biner. Jika Anda ingin "
+"pengguna biasa tidak dapat mengakses sandi pustaka untuk dapat menjalankan "
+"makro di modul-modul tersebut, Anda harus membagi modul-modul itu dalam "
+"sejumlah kecil modul. Apakah Anda ingin melanjutkan untuk "
+"menyimpan/mengekspor pustaka ini?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The data from $(ARG1) has an incorrect checksum."
+msgid "The data from $(ARG1) has an incorrect checksum."
 msgstr "Data dari $(ARG1) memiliki nilai checksum yang salah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "Objek $(ARG1) tidak dapat dibuat dalam direktori $(ARG2)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Data of $(ARG1) could not be read."
+msgid "Data of $(ARG1) could not be read."
 msgstr "Data $(ARG1) tidak bisa dibaca."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The seek operation on $(ARG1) could not be performed."
+msgid "The seek operation on $(ARG1) could not be performed."
 msgstr "Operasi pencarian pada $(ARG1) tidak bisa dilakukan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The tell operation on $(ARG1) could not be performed."
+msgid "The tell operation on $(ARG1) could not be performed."
 msgstr "Operasi pemberitahuan pada $(ARG1) tidak bisa dilakukan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Data for $(ARG1) could not be written."
+msgid "Data for $(ARG1) could not be written."
 msgstr "Data dari $(ARG1) tidak bisa ditimpa."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Action impossible: $(ARG1) is the current directory."
-msgstr "Aksi tidak mungkin dilakukan: $(ARG1) adalah direktori yang aktif sekarang."
+msgid "Action impossible: $(ARG1) is the current directory."
+msgstr ""
+"Aksi tidak mungkin dilakukan: $(ARG1) adalah direktori yang aktif sekarang."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is not ready."
+msgid "$(ARG1) is not ready."
 msgstr "$(ARG1) tidak siap."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr "Aksi tidak mungkin dilakukan: $(ARG1) dan $(ARG2) adalah perangkat yang berbeda."
+msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr ""
+"Aksi tidak mungkin dilakukan: $(ARG1) dan $(ARG2) adalah perangkat yang "
+"berbeda."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "General input/output error while accessing $(ARG1)."
+msgid "General input/output error while accessing $(ARG1)."
 msgstr "Kesalahan masukan/keluaran umum ketika mengakses $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "An attempt was made to access $(ARG1) in an invalid way."
-msgstr "Sebuah percobaan dilakukan untuk mengakses $(ARG1) dengan cara yang salah."
+msgid "An attempt was made to access $(ARG1) in an invalid way."
+msgstr ""
+"Sebuah percobaan dilakukan untuk mengakses $(ARG1) dengan cara yang salah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) contains invalid characters."
+msgid "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) mengandung karakter tidak sah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The device (drive) $(ARG1) is invalid."
+msgid "The device (drive) $(ARG1) is invalid."
 msgstr "Perangkat $(ARG1) tidak sah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The data from $(ARG1) has an invalid length."
+msgid "The data from $(ARG1) has an invalid length."
 msgstr "Data dari $(ARG1) memiliki panjang yang tidak sah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgid "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "Operasi pada $(ARG1) dimulai dengan parameter yang tidak sah."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgid "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "Operasi tidak bisa dilakukan karena $(ARG1) mengandung wilkar."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Error during shared access to $(ARG1)."
+msgid "Error during shared access to $(ARG1)."
 msgstr "Kesalahan ketika mengakses secara bersamaan pada $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) contains misplaced characters."
+msgid "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) mengandung karakter yang salah letak."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The name $(ARG1) contains too many characters."
+msgid "The name $(ARG1) contains too many characters."
 msgstr "Nama $(ARG1) mengandung terlalu banyak karakter."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) does not exist."
+msgid "$(ARG1) does not exist."
 msgstr "$(ARG1) tidak ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The path $(ARG1) does not exist."
+msgid "The path $(ARG1) does not exist."
 msgstr "Jalur $(ARG1) tidak ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgid "The operation on $(ARG1) is not supported on this operating system."
 msgstr "Operasi pada $(ARG1) tidak didukung pada sistem operasi ini."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is not a directory."
+msgid "$(ARG1) is not a directory."
 msgstr "$(ARG1) bukanlah sebuah direktori."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is not a file."
+msgid "$(ARG1) is not a file."
 msgstr "$(ARG1) bukanlah sebuah berkas."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "There is no space left on device $(ARG1)."
+msgid "There is no space left on device $(ARG1)."
 msgstr "Tidak ada ruang kosong pada perangkat $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr "Operasi pada $(ARG1) tidak bisa dilakukan karena terlalu banyak berkas yang sudah dibuka."
+msgid "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr ""
+"Operasi pada $(ARG1) tidak bisa dilakukan karena terlalu banyak berkas yang "
+"sudah dibuka."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr "Operasi pada $(ARG1) tidak bisa dilakukan karena tidak tersedia memori yang cukup."
+msgid "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr ""
+"Operasi pada $(ARG1) tidak bisa dilakukan karena tidak tersedia memori yang "
+"cukup."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr "Operasi pada $(ARG1) tidak bisa dilanjutkan karena lebih banyak data yang tertunda."
+msgid "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr ""
+"Operasi pada $(ARG1) tidak bisa dilanjutkan karena lebih banyak data yang "
+"tertunda."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) cannot be copied into itself."
+msgid "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) tidak bisa disalin pada dirinya sendiri."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Unknown input/output error while accessing $(ARG1)."
+msgid "Unknown input/output error while accessing $(ARG1)."
 msgstr "Kesalahan masukan/keluaran yang tak dikenal ketika mengakses $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is write protected."
+msgid "$(ARG1) is write protected."
 msgstr "$(ARG1) diproteksi dari penulisan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is not in the correct format."
+msgid "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) tidak dalam format yang benar."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The version of $(ARG1) is not correct."
+msgid "The version of $(ARG1) is not correct."
 msgstr "Versi dari $(ARG1) tidak benar."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Drive $(ARG1) does not exist."
+msgid "Drive $(ARG1) does not exist."
 msgstr "Pengandar $(ARG1) tidak ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Folder $(ARG1) does not exist."
+msgid "Folder $(ARG1) does not exist."
 msgstr "Folder $(ARG1) tidak ada."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The installed Java version is not supported."
+msgid "The installed Java version is not supported."
 msgstr "Versi Java yang terpasang tidak didukung."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The installed Java version $(ARG1) is not supported."
+msgid "The installed Java version $(ARG1) is not supported."
 msgstr "Versi Java $(ARG1) yang terpasang tidak didukung."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr "Versi Java yang terpasang tidak didukung, paling tidak diperlukan versi $(ARG1)."
+msgid "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr ""
+"Versi Java yang terpasang tidak didukung, paling tidak diperlukan versi "
+"$(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr "Versi Java $(ARG1) yang terpasang tidak didukung, paling tidak diperlukan versi $(ARG2)."
+msgid "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr ""
+"Versi Java $(ARG1) yang terpasang tidak didukung, paling tidak diperlukan "
+"versi $(ARG2)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The data associated with the partnership is corrupted."
+msgid "The data associated with the partnership is corrupted."
 msgstr "Data yang diasosiasikan dengan hubungan ternyata cacat."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgid "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "Data yang diasosiasikan dengan hubungan $(ARG1) ternyata cacat."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Volume $(ARG1) is not ready."
+msgid "Volume $(ARG1) is not ready."
 msgstr "Volume $(ARG1) tidak siap."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgid "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) tidak siap; harap masukkan media simpan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgid "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "Volume $(ARG1) tidak siap; harap masukkan media simpan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Please insert disk $(ARG1)."
+msgid "Please insert disk $(ARG1)."
 msgstr "Harap masukkan media $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The object cannot be created in directory $(ARG1)."
+msgid "The object cannot be created in directory $(ARG1)."
 msgstr "Objek tidak bisa dibuat pada direktori $(ARG1)."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr "%PRODUCTNAME tidak bisa mempertahankan berkas dari penimpaan ketika protokol transmisi ini digunakan. Apakah Anda hendak melanjutkan?"
+msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr ""
+"%PRODUCTNAME tidak bisa mempertahankan berkas dari penimpaan ketika protokol "
+"transmisi ini digunakan. Apakah Anda hendak melanjutkan?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "Berkas '$(ARG1)' terkorupsi atau rusak dan tidak bisa dibuka. %PRODUCTNAME bisa mencoba untuk memperbaiki berkas tersebut.\n\nKerusakan yang terjadi bisa disebabkan oleh manipulasi atau kerusakan struktural dokumen akibat adanya masalah dalam transmisi data.\n\nKami menyarankan Anda untuk tidak begitu saja mempercayai isi dokumen yang telah diperbaiki.\nEksekusi makro ditiadakan bagi dokumen tersebut.\n\nApakah %PRODUCTNAME harus memperbaiki berkas ini?\n"
+msgid "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr ""
+"Berkas '$(ARG1)' terkorupsi atau rusak dan tidak bisa dibuka. %PRODUCTNAME "
+"bisa mencoba untuk memperbaiki berkas tersebut.\n"
+"\n"
+"Kerusakan yang terjadi bisa disebabkan oleh manipulasi atau kerusakan "
+"struktural dokumen akibat adanya masalah dalam transmisi data.\n"
+"\n"
+"Kami menyarankan Anda untuk tidak begitu saja mempercayai isi dokumen yang "
+"telah diperbaiki.\n"
+"Eksekusi makro ditiadakan bagi dokumen tersebut.\n"
+"\n"
+"Apakah %PRODUCTNAME harus memperbaiki berkas ini?\n"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgid "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "Berkas '$(ARG1)' tidak bisa diperbaiki sehingga tidak bisa dibuka."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Data konfigurasi pada '$(ARG1)' cacat. Tanpa data ini, beberapa fungsi tidak bisa beroperasi dengan benar.\nApakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi yang cacat?"
+msgid "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+"Data konfigurasi pada '$(ARG1)' cacat. Tanpa data ini, beberapa fungsi tidak "
+"bisa beroperasi dengan benar.\n"
+"Apakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi "
+"yang cacat?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Berkas konfigurasi pribadi $(ARG1) cacat dan harus dihapus untuk melanjutkan. Beberapa pengaturan pribadi Anda mungkin hilang.\nApakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi yang cacat?"
+msgid "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+"Berkas konfigurasi pribadi $(ARG1) cacat dan harus dihapus untuk "
+"melanjutkan. Beberapa pengaturan pribadi Anda mungkin hilang.\n"
+"Apakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi "
+"yang cacat?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr "Sumber data konfigurasi '$(ARG1)' tidak tersedia. Tanpa data ini, beberapa fungsi tidak dapat beroperasi dengan benar."
+msgid "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr ""
+"Sumber data konfigurasi '$(ARG1)' tidak tersedia. Tanpa data ini, beberapa "
+"fungsi tidak dapat beroperasi dengan benar."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "Sumber data konfigurasi '$(ARG1)' tidak tersedia. Tanpa data ini, beberapa fungsi tidak bisa beroperasi dengan benar.\nApakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi yang hilang?"
+msgid "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+"Sumber data konfigurasi '$(ARG1)' tidak tersedia. Tanpa data ini, beberapa "
+"fungsi tidak bisa beroperasi dengan benar.\n"
+"Apakah Anda hendak lanjut menjalankan %PRODUCTNAME tanpa data konfigurasi "
+"yang hilang?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The form contains invalid data. Do you still want to continue?"
+msgid "The form contains invalid data. Do you still want to continue?"
 msgstr "Formulir mengandung data tidak sah. Apakah Anda hendak melanjutkan?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr "Berkas $(ARG1) dikunci oleh pengguna lain. Saat ini, akses tulis lainnya terhadap berkas ini tidak bisa diberikan."
+msgid "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr ""
+"Berkas $(ARG1) dikunci oleh pengguna lain. Saat ini, akses tulis lainnya "
+"terhadap berkas ini tidak bisa diberikan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr "Berkas $(ARG1) dikunci oleh Anda sendiri. Saat ini, akses tulis lainnya terhadap berkas ini tidak bisa diberikan."
+msgid "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr ""
+"Berkas $(ARG1) dikunci oleh Anda sendiri. Saat ini, akses tulis lainnya "
+"terhadap berkas ini tidak bisa diberikan."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The file $(ARG1) is currently not locked by yourself."
+msgid "The file $(ARG1) is currently not locked by yourself."
 msgstr "Berkas $(ARG1) tidak dikunci oleh Anda sendiri."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED_&_ERRCODE_RES_MASK).STRING.TEXT
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr "Kunci untuk berkas $(ARG1) sudah kadaluarsa.\nHal ini bisa terjadi karena masalah pada server yang mengelola pengujian berkas. Ia tidak dapat menjamin bahwa operasi tulis pada berkas tidak akan menimpa perubahan yang dilakukan pengguna lain!"
+msgid "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+"Kunci untuk berkas $(ARG1) sudah kadaluarsa.\n"
+"Hal ini bisa terjadi karena masalah pada server yang mengelola pengujian "
+"berkas. Ia tidak dapat menjamin bahwa operasi tulis pada berkas tidak akan "
+"menimpa perubahan yang dilakukan pengguna lain!"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.TEXT
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "Tidak dapat memastikan identitas dari situs $(ARG1).\n\nSebelum menerima sertifikat ini, Anda harus memeriksa sertifikat situs ini dengan cermat. Apakah Anda ingin menerima sertifikat ini untuk tujuan mengidentifikasi situs Web $(ARG1)?"
+msgid "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+"Tidak dapat memastikan identitas dari situs $(ARG1).\n"
+"\n"
+"Sebelum menerima sertifikat ini, Anda harus memeriksa sertifikat situs ini "
+"dengan cermat. Apakah Anda ingin menerima sertifikat ini untuk tujuan "
+"mengidentifikasi situs Web $(ARG1)?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.TEXT
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "$(ARG1) adalah situs yang menggunakan sertifikat keamanan untuk enkripsi data selama transmisi, tetapi sertifikatnya telah habis masa berlakunya pada $(ARG2).\n\nAnda harus memastikan bahwa pengaturan waktu di komputer Anda telah benar."
+msgid "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+"$(ARG1) adalah situs yang menggunakan sertifikat keamanan untuk enkripsi "
+"data selama transmisi, tetapi sertifikatnya telah habis masa berlakunya pada "
+"$(ARG2).\n"
+"\n"
+"Anda harus memastikan bahwa pengaturan waktu di komputer Anda telah benar."
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.TEXT
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "Anda mencoba membuat koneksi dengan $(ARG1). Namun, sertifikat keamanan yang ada milik $(ARG2). Mungkin, meski kecil kemungkinan, bahwa seseorang mungkin mencoba menginterupsi komunikasi Anda dengan situs web ini.\n\nJika Anda mencurigai sertifikat yang ditampilkan bukan milik $(ARG1), harap batalkan koneksi dan kirim pemberitahuan pada administrator situs.\n\nApakah Anda akan melanjutkan?"
+msgid "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr ""
+"Anda mencoba membuat koneksi dengan $(ARG1). Namun, sertifikat keamanan yang "
+"ada milik $(ARG2). Mungkin, meski kecil kemungkinan, bahwa seseorang "
+"mungkin mencoba menginterupsi komunikasi Anda dengan situs web ini.\n"
+"\n"
+"Jika Anda mencurigai sertifikat yang ditampilkan bukan milik $(ARG1), harap "
+"batalkan koneksi dan kirim pemberitahuan pada administrator situs.\n"
+"\n"
+"Apakah Anda akan melanjutkan?"
 
 #: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.TEXT
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "Sertifikat tersebut tidak akan divalidasi. Anda harus memeriksa sertifikat situs ini secara cermat.\n\nJika Anda mencurigai sertifikat tersebut, batalkan koneksi dan kabari administrator situsnya."
+msgid "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+"Sertifikat tersebut tidak akan divalidasi. Anda harus memeriksa sertifikat "
+"situs ini secara cermat.\n"
+"\n"
+"Jika Anda mencurigai sertifikat tersebut, batalkan koneksi dan kabari "
+"administrator situsnya."
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.TEXT
-msgid  "Security Warning: Domain Name Mismatch"
+msgid "Security Warning: Domain Name Mismatch"
 msgstr "Peringatan Keamanan: Nama Domain Tidak Cocok"
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.TEXT
-msgid  "Security Warning: Server Certificate Expired"
+msgid "Security Warning: Server Certificate Expired"
 msgstr "Peringatan Keamanan: Sertifikat Server Kadaluarsa"
 
 #: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.TEXT
-msgid  "Security Warning: Server Certificate Invalid"
+msgid "Security Warning: Server Certificate Invalid"
 msgstr "Peringatan Keamanan: Sertifikat Server Tidak Sah"
 
 #: lockfailed.src#STR_LOCKFAILED_MSG.STRING.TEXT
-msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr "Berkas tidak bisa dikunci untuk akses eksklusif oleh $PRODUCTNAME, karena hak akses yang hilang untuk menciptakan berkas kunci pada lokasi berkas."
+msgid "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr ""
+"Berkas tidak bisa dikunci untuk akses eksklusif oleh $PRODUCTNAME, karena "
+"hak akses yang hilang untuk menciptakan berkas kunci pada lokasi berkas."
 
 #: logindlg.src#DLG_UUI_LOGIN.MODALDIALOG.TEXT
-msgid  "Authentication Required"
+msgid "Authentication Required"
 msgstr "Dibutuhkan Authentikasi"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FIXEDTEXT.TEXT
-msgid  "Message from server:"
+msgid "Message from server:"
 msgstr "Pesan dari server"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FIXEDTEXT.TEXT
-msgid  "Enter user name and password for: \n%1"
-msgstr "Masukkan nama pengguna dan kata sandi untuk: \n%1"
+msgid "Enter user name and password for: \n%1"
+msgstr ""
+"Masukkan nama pengguna dan kata sandi untuk: \n"
+"%1"
 
 #: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.STRING.TEXT
-msgid  "Enter user name and password for: \n\"%2\" on %1"
-msgstr "Masukkan nama pengguna dan kata sandi untuk: \n\"%2\" pada %1"
+msgid "Enter user name and password for: \n\"%2\" on %1"
+msgstr ""
+"Masukkan nama pengguna dan kata sandi untuk: \n"
+"\"%2\" pada %1"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FIXEDTEXT.TEXT
-msgid  "~Path"
+msgid "~Path"
 msgstr "~Jalur"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
+msgid "~User name"
 msgstr "Nama pengg~una"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FIXEDTEXT.TEXT
-msgid  "Pass~word"
+msgid "Pass~word"
 msgstr "Kata ~sandi"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FIXEDTEXT.TEXT
-msgid  "A~ccount"
+msgid "A~ccount"
 msgstr "A~kun"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CHECKBOX.TEXT
-msgid  "~Remember password"
+msgid "~Remember password"
 msgstr "~Ingat kata sandi"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CHECKBOX.TEXT
-msgid  "~Use system credentials"
+msgid "~Use system credentials"
 msgstr "G~unakan Kepecayaan Sistem"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.MODALDIALOG.TEXT
-msgid  "Set Master Password"
+msgid "Set Master Password"
 msgstr "Tentukan Kata Sandi Utama"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FIXEDTEXT.TEXT
-msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr "Sandi untuk koneksi web diproteksi oleh sandi master. Anda akan diminta untuk memasukkan setiap sesi, jika $PRODUCTNAME menerima sandi dari daftar kata sandi yang diproteksi."
+msgid "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr ""
+"Sandi untuk koneksi web diproteksi oleh sandi master. Anda akan diminta "
+"untuk memasukkan setiap sesi, jika $PRODUCTNAME menerima sandi dari daftar "
+"kata sandi yang diproteksi."
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FIXEDTEXT.TEXT
-msgid  "~Enter password"
+msgid "~Enter password"
 msgstr "~Masukkan kata sandi"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FIXEDTEXT.TEXT
-msgid  "~Reenter password"
+msgid "~Reenter password"
 msgstr "~Masukkan ulang kata sandi"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FIXEDTEXT.TEXT
-msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr "Peringatan: Jika Anda lupa kata sandi utama Anda, Anda tidak akan mampu mengakses informasi yang diproteksi dengan kata sandi tersebut. Kata sandi bersifat sensitif terhadap besar/kecilnya huruf."
+msgid "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+"Peringatan: Jika Anda lupa kata sandi utama Anda, Anda tidak akan mampu "
+"mengakses informasi yang diproteksi dengan kata sandi tersebut. Kata sandi "
+"bersifat sensitif terhadap besar/kecilnya huruf."
 
 #: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FIXEDTEXT.TEXT
-msgid  "Enter password"
+msgid "Enter password"
 msgstr "Masukkan kata sandi"
 
 #: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HELPBUTTON.TEXT
-msgid  "Enter Master Password"
+msgid "Enter Master Password"
 msgstr "Masukkan Kata Sandi Utama"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.MODALDIALOG.TEXT
-msgid  "File Exists"
+msgid "File Exists"
 msgstr "Berkas Ada"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PUSHBUTTON.TEXT
-msgid  "Replace"
+msgid "Replace"
 msgstr "Ganti"
 
 #: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PUSHBUTTON.TEXT
-msgid  "Rename"
+msgid "Rename"
 msgstr "Ganti nama"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Update Available"
+msgid "%PRODUCTNAME Update Available"
 msgstr "Pembaharuan %PRODUCTNAME Tersedia"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FIXEDTEXT.TEXT
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "Dokumen ini dibuat oleh versi baru dari %PRODUCTNAME. Dokumen ini mungkin berisi fitur yang tidak didukung oleh versi Anda yang sekarang.\n\nKlik 'Perbaharui Sekarang...' untuk menjalankan pembaharuan online dan dapatkan versi terbaru %PRODUCTNAME"
+msgid "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
+"Dokumen ini dibuat oleh versi baru dari %PRODUCTNAME. Dokumen ini mungkin "
+"berisi fitur yang tidak didukung oleh versi Anda yang sekarang.\n"
+"\n"
+"Klik 'Perbaharui Sekarang...' untuk menjalankan pembaharuan online dan "
+"dapatkan versi terbaru %PRODUCTNAME"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PUSHBUTTON.TEXT
-msgid  "~Update Now..."
+msgid "~Update Now..."
 msgstr "Perbahar~ui Sekarang..."
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CANCELBUTTON.TEXT
-msgid  "~Later"
+msgid "~Later"
 msgstr "~Nanti"
 
 #: openlocked.src#STR_OPENLOCKED_TITLE.STRING.TEXT
-msgid  "Document in Use"
+msgid "Document in Use"
 msgstr "Dokumen sedang Dipakai"
 
 #: openlocked.src#STR_OPENLOCKED_MSG.STRING.TEXT
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr "Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n\n$(ARG2)\n\nBuka dokumen hanya-baca atau buka salinan dari dokumen untuk disunting.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr ""
+"Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Buka dokumen hanya-baca atau buka salinan dari dokumen untuk disunting.\n"
+"\n"
 
 #: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.STRING.TEXT
-msgid  "Open ~Read-Only"
+msgid "Open ~Read-Only"
 msgstr "Buka ~Hanya-Baca"
 
 #: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.STRING.TEXT
-msgid  "Open ~Copy"
+msgid "Open ~Copy"
 msgstr "Buka ~Salinan"
 
 #: openlocked.src#STR_UNKNOWNUSER.STRING.TEXT
-msgid  "Unknown User"
+msgid "Unknown User"
 msgstr "Pengguna Tak Dikenal"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.STRING.TEXT
-msgid  "Enter password to open file: \n"
+msgid "Enter password to open file: \n"
 msgstr "Masukkan sandi untuk membuka berkas: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.STRING.TEXT
-msgid  "Enter password to modify file: \n"
+msgid "Enter password to modify file: \n"
 msgstr "Masukkan sandi untuk membuka berkas: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.STRING.TEXT
-msgid  "Enter password: "
+msgid "Enter password: "
 msgstr "Masukkan kata sandi:"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.STRING.TEXT
-msgid  "Confirm password: "
+msgid "Confirm password: "
 msgstr "Konfirmasi sandi: "
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.STRING.TEXT
-msgid  "Set Password"
+msgid "Set Password"
 msgstr "Tentukan Kata sandi"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.STRING.TEXT
-msgid  "Enter Password"
+msgid "Enter Password"
 msgstr "Masukkan Kata sandi"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.STRING.TEXT
-msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr "Konfirmasi kata sandi tidak cocok dengan kata sandi. Tentukan kata sandi kembali dengan memasukkan kata sandi yang sama pada kedua kotak."
+msgid "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+"Konfirmasi kata sandi tidak cocok dengan kata sandi. Tentukan kata sandi "
+"kembali dengan memasukkan kata sandi yang sama pada kedua kotak."
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.STRING.TEXT
-msgid  "The password is incorrect. The file cannot be opened."
+msgid "The password is incorrect. The file cannot be opened."
 msgstr "Kata sandi salah. Berkas tidak bisa dibuka."
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.STRING.TEXT
-msgid  "The password is incorrect. The file cannot be modified."
+msgid "The password is incorrect. The file cannot be modified."
 msgstr "Kata sandi salah. Berkas tidak bisa dibuka."
 
 #: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.STRING.TEXT
-msgid  "The master password is incorrect."
+msgid "The master password is incorrect."
 msgstr "Sandi utama salah."
 
 #: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.STRING.TEXT
-msgid  "The password is incorrect."
+msgid "The password is incorrect."
 msgstr "Kata sandi salah."
 
 #: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
-msgid  "The password confirmation does not match."
+msgid "The password confirmation does not match."
 msgstr "Konfirmasi kata sandi tidak cocok."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME - Security Warning"
+msgid "%PRODUCTNAME - Security Warning"
 msgstr "%PRODUCTNAME - Peringatan Keamanan"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
-msgid  "The document contains document macros signed by:"
+msgid "The document contains document macros signed by:"
 msgstr "Dokumen ini mengandung dokumen makro yang ditandatangani oleh:"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
-msgid  "The document contains document macros."
+msgid "The document contains document macros."
 msgstr "Dokumen ini mengandung dokumen makro."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
-msgid  "View Signatures..."
+msgid "View Signatures..."
 msgstr "Tampilkan Tanda Tangan..."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
-msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr "Makro bisa saja mengandung virus. Meniadakan makro untuk dokumen selalu aman. Jika Anda meniadakan makro, Anda mungkin akan kehilangan fungsionalitas yang disediakan oleh dokumen makro."
+msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+"Makro bisa saja mengandung virus. Meniadakan makro untuk dokumen selalu "
+"aman. Jika Anda meniadakan makro, Anda mungkin akan kehilangan "
+"fungsionalitas yang disediakan oleh dokumen makro."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
-msgid  "Always trust macros from this source"
+msgid "Always trust macros from this source"
 msgstr "Percayai terus makro dari sumber ini"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKBUTTON.TEXT
-msgid  "~Enable Macros"
+msgid "~Enable Macros"
 msgstr "~Adakan Makro"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
-msgid  "~Disable Macros"
+msgid "~Disable Macros"
 msgstr "Tia~dakan Makro"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.MODALDIALOG.TEXT
-msgid  "Security Warning: "
+msgid "Security Warning: "
 msgstr "Peringatan Keamanan: "
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FIXEDTEXT.TEXT
-msgid  "No Text"
+msgid "No Text"
 msgstr "Tanpa Teks"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
-msgid  "View Certificate"
+msgid "View Certificate"
 msgstr "Tampilkan Sertifikat"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CANCELBUTTON.TEXT
-msgid  "Cancel Connection"
+msgid "Cancel Connection"
 msgstr "Batalkan Koneksi"
 
 #: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PUSHBUTTON.TEXT
-msgid  "Continue"
+msgid "Continue"
 msgstr "Lanjutkan"
 
 #: trylater.src#STR_TRYLATER_TITLE.STRING.TEXT
-msgid  "Document in Use"
+msgid "Document in Use"
 msgstr "Dokumen sedang Dipakai"
 
 #: trylater.src#STR_TRYLATER_MSG.STRING.TEXT
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr "Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n\n$(ARG2)\n\nCobalah untuk disimpan beberapa saat lagi, atau simpan saja salinan dokumen tersebut.\n\n"
+msgid "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr ""
+"Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Cobalah untuk disimpan beberapa saat lagi, atau simpan saja salinan dokumen "
+"tersebut.\n"
+"\n"
 
 #: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.STRING.TEXT
-msgid  "~Retry Saving"
+msgid "~Retry Saving"
 msgstr "~Coba Ulang Menyimpan"
 
 #: trylater.src#STR_TRYLATER_SAVEAS_BTN.STRING.TEXT
-msgid  "~Save As..."
+msgid "~Save As..."
 msgstr "~Simpan Sebagai..."
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.MODALDIALOG.TEXT
-msgid  "Website Certified by an Unknown Authority"
+msgid "Website Certified by an Unknown Authority"
 msgstr "Situs Web Disertifikasi oleh Otoritas yang Tidak Dikenal"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
-msgid  "Examine Certificate..."
+msgid "Examine Certificate..."
 msgstr "Periksa Sertifikat..."
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HELPBUTTON.TEXT
-msgid  "Help"
+msgid "Help"
 msgstr "Bantuan"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PUSHBUTTON.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "Oke"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RADIOBUTTON.TEXT
-msgid  "Accept this certificate temporarily for this session"
+msgid "Accept this certificate temporarily for this session"
 msgstr "Terima sertifikat ini untuk sementara dalam sesi ini"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RADIOBUTTON.TEXT
-msgid  "Do not accept this certificate and do not connect to this Web site"
+msgid "Do not accept this certificate and do not connect to this Web site"
 msgstr "Jangan menerima sertifikat ini dan jangan menghubungi situs Web ini"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FIXEDTEXT.TEXT
-msgid  "No Text"
+msgid "No Text"
 msgstr "Tanpa Teks"

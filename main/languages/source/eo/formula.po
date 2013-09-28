@@ -1,1284 +1,1385 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IF.STRING.TEXT
-msgid  "IF"
+msgid "IF"
 msgstr "SE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHOSE.STRING.TEXT
-msgid  "CHOOSE"
+msgid "CHOOSE"
 msgstr "ELEKTI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AND.STRING.TEXT
-msgid  "AND"
+msgid "AND"
 msgstr "KAJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_OR.STRING.TEXT
-msgid  "OR"
+msgid "OR"
 msgstr "AŬ"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid "XOR"
+msgstr ""
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
-msgid  "NOT"
+msgid "NOT"
 msgstr "NE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NEG.STRING.TEXT
-msgid  "NEG"
+msgid "NEG"
 msgstr "NEG"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PI.STRING.TEXT
-msgid  "PI"
+msgid "PI"
 msgstr "PI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RANDOM.STRING.TEXT
-msgid  "RAND"
+msgid "RAND"
 msgstr "HAZARD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRUE.STRING.TEXT
-msgid  "TRUE"
+msgid "TRUE"
 msgstr "VERA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FALSE.STRING.TEXT
-msgid  "FALSE"
+msgid "FALSE"
 msgstr "FALSA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_ACT_DATE.STRING.TEXT
-msgid  "TODAY"
+msgid "TODAY"
 msgstr "HODIAŬ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_ACT_TIME.STRING.TEXT
-msgid  "NOW"
+msgid "NOW"
 msgstr "NUN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NO_VALUE.STRING.TEXT
-msgid  "NA"
+msgid "NA"
 msgstr "NA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CURRENT.STRING.TEXT
-msgid  "CURRENT"
+msgid "CURRENT"
 msgstr "AKTUALA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DEG.STRING.TEXT
-msgid  "DEGREES"
+msgid "DEGREES"
 msgstr "GRADOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RAD.STRING.TEXT
-msgid  "RADIANS"
+msgid "RADIANS"
 msgstr "RADIANOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SIN.STRING.TEXT
-msgid  "SIN"
+msgid "SIN"
 msgstr "SIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COS.STRING.TEXT
-msgid  "COS"
+msgid "COS"
 msgstr "KOS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TAN.STRING.TEXT
-msgid  "TAN"
+msgid "TAN"
 msgstr "TAN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COT.STRING.TEXT
-msgid  "COT"
+msgid "COT"
 msgstr "KOT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_SIN.STRING.TEXT
-msgid  "ASIN"
+msgid "ASIN"
 msgstr "ARKSIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COS.STRING.TEXT
-msgid  "ACOS"
+msgid "ACOS"
 msgstr "ARKKOS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN.STRING.TEXT
-msgid  "ATAN"
+msgid "ATAN"
 msgstr "ARKTANG"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT.STRING.TEXT
-msgid  "ACOT"
+msgid "ACOT"
 msgstr "ARKKOTANG"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SIN_HYP.STRING.TEXT
-msgid  "SINH"
+msgid "SINH"
 msgstr "SINH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COS_HYP.STRING.TEXT
-msgid  "COSH"
+msgid "COSH"
 msgstr "KOSH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TAN_HYP.STRING.TEXT
-msgid  "TANH"
+msgid "TANH"
 msgstr "TANGH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COT_HYP.STRING.TEXT
-msgid  "COTH"
+msgid "COTH"
 msgstr "KOTANGH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_SIN_HYP.STRING.TEXT
-msgid  "ASINH"
+msgid "ASINH"
 msgstr "ARKSINH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COS_HYP.STRING.TEXT
-msgid  "ACOSH"
+msgid "ACOSH"
 msgstr "ARKOSH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN_HYP.STRING.TEXT
-msgid  "ATANH"
+msgid "ATANH"
 msgstr "ARTANGH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
-msgid  "ACOTH"
+msgid "ACOTH"
 msgstr "ARKOTANGH"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid "CSC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid "SEC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid "CSCH"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid "SECH"
+msgstr ""
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
-msgid  "EXP"
+msgid "EXP"
 msgstr "EKSP"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LN.STRING.TEXT
-msgid  "LN"
+msgid "LN"
 msgstr "LN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SQRT.STRING.TEXT
-msgid  "SQRT"
+msgid "SQRT"
 msgstr "KVRAD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FACT.STRING.TEXT
-msgid  "FACT"
+msgid "FACT"
 msgstr "FAKT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_YEAR.STRING.TEXT
-msgid  "YEAR"
+msgid "YEAR"
 msgstr "JARO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_MONTH.STRING.TEXT
-msgid  "MONTH"
+msgid "MONTH"
 msgstr "MONATO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DAY.STRING.TEXT
-msgid  "DAY"
+msgid "DAY"
 msgstr "TAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_HOUR.STRING.TEXT
-msgid  "HOUR"
+msgid "HOUR"
 msgstr "HORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_MIN.STRING.TEXT
-msgid  "MINUTE"
+msgid "MINUTE"
 msgstr "MINUTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_SEC.STRING.TEXT
-msgid  "SECOND"
+msgid "SECOND"
 msgstr "SEKUNDO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PLUS_MINUS.STRING.TEXT
-msgid  "SIGN"
+msgid "SIGN"
 msgstr "SIGNUMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ABS.STRING.TEXT
-msgid  "ABS"
+msgid "ABS"
 msgstr "ABS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INT.STRING.TEXT
-msgid  "INT"
+msgid "INT"
 msgstr "ENT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PHI.STRING.TEXT
-msgid  "PHI"
+msgid "PHI"
 msgstr "FI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GAUSS.STRING.TEXT
-msgid  "GAUSS"
+msgid "GAUSS"
 msgstr "GAŬS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_EMPTY.STRING.TEXT
-msgid  "ISBLANK"
+msgid "ISBLANK"
 msgstr "ESTASMALPLENA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_STRING.STRING.TEXT
-msgid  "ISTEXT"
+msgid "ISTEXT"
 msgstr "ESTASTEKSTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_NON_STRING.STRING.TEXT
-msgid  "ISNONTEXT"
+msgid "ISNONTEXT"
 msgstr "ESTASNETEKSTA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_LOGICAL.STRING.TEXT
-msgid  "ISLOGICAL"
+msgid "ISLOGICAL"
 msgstr "ESTASLOGIKA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TYPE.STRING.TEXT
-msgid  "TYPE"
+msgid "TYPE"
 msgstr "TIPO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CELL.STRING.TEXT
-msgid  "CELL"
+msgid "CELL"
 msgstr "ĈELO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_REF.STRING.TEXT
-msgid  "ISREF"
+msgid "ISREF"
 msgstr "ESTASREFERENCO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_VALUE.STRING.TEXT
-msgid  "ISNUMBER"
+msgid "ISNUMBER"
 msgstr "ESTASNUMERO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_FORMULA.STRING.TEXT
-msgid  "ISFORMULA"
+msgid "ISFORMULA"
 msgstr "ESTASFORMULO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_NV.STRING.TEXT
-msgid  "ISNA"
+msgid "ISNA"
 msgstr "ESTASNEDISPONEBLA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_ERR.STRING.TEXT
-msgid  "ISERR"
+msgid "ISERR"
 msgstr "ESTASERARO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_ERROR.STRING.TEXT
-msgid  "ISERROR"
+msgid "ISERROR"
 msgstr "ESTASERARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_EVEN.STRING.TEXT
-msgid  "ISEVEN"
+msgid "ISEVEN"
 msgstr "ESTASPARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_ODD.STRING.TEXT
-msgid  "ISODD"
+msgid "ISODD"
 msgstr "ESTASNEPARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_N.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DATE_VALUE.STRING.TEXT
-msgid  "DATEVALUE"
+msgid "DATEVALUE"
 msgstr "DATOVALORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_TIME_VALUE.STRING.TEXT
-msgid  "TIMEVALUE"
+msgid "TIMEVALUE"
 msgstr "TEMPOVALORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CODE.STRING.TEXT
-msgid  "CODE"
+msgid "CODE"
 msgstr "KODO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRIM.STRING.TEXT
-msgid  "TRIM"
+msgid "TRIM"
 msgstr "STUCI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UPPER.STRING.TEXT
-msgid  "UPPER"
+msgid "UPPER"
 msgstr "MAJUSKLIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PROPPER.STRING.TEXT
-msgid  "PROPER"
+msgid "PROPER"
 msgstr "MAJUSKLIGI.INICIALOJN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOWER.STRING.TEXT
-msgid  "LOWER"
+msgid "LOWER"
 msgstr "MINUSKLIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEN.STRING.TEXT
-msgid  "LEN"
+msgid "LEN"
 msgstr "LONGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_T.STRING.TEXT
-msgid  "T"
+msgid "T"
 msgstr "T"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VALUE.STRING.TEXT
-msgid  "VALUE"
+msgid "VALUE"
 msgstr "VALORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CLEAN.STRING.TEXT
-msgid  "CLEAN"
+msgid "CLEAN"
 msgstr "PURIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHAR.STRING.TEXT
-msgid  "CHAR"
+msgid "CHAR"
 msgstr "SIGNO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_JIS.STRING.TEXT
-msgid  "JIS"
+msgid "JIS"
 msgstr "JIS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ASC.STRING.TEXT
-msgid  "ASC"
+msgid "ASC"
 msgstr "ASKI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UNICODE.STRING.TEXT
-msgid  "UNICODE"
+msgid "UNICODE"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UNICHAR.STRING.TEXT
-msgid  "UNICHAR"
+msgid "UNICHAR"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOG10.STRING.TEXT
-msgid  "LOG10"
+msgid "LOG10"
 msgstr "LOG10"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EVEN.STRING.TEXT
-msgid  "EVEN"
+msgid "EVEN"
 msgstr "PARIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ODD.STRING.TEXT
-msgid  "ODD"
+msgid "ODD"
 msgstr "NEPARIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STD_NORM_DIST.STRING.TEXT
-msgid  "NORMSDIST"
+msgid "NORMSDIST"
 msgstr "NORMNDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FISHER.STRING.TEXT
-msgid  "FISHER"
+msgid "FISHER"
 msgstr "FIŜER"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FISHER_INV.STRING.TEXT
-msgid  "FISHERINV"
+msgid "FISHERINV"
 msgstr "FIŜERINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_S_NORM_INV.STRING.TEXT
-msgid  "NORMSINV"
+msgid "NORMSINV"
 msgstr "NORMSINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GAMMA_LN.STRING.TEXT
-msgid  "GAMMALN"
+msgid "GAMMALN"
 msgstr "GAMALN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_TYPE.STRING.TEXT
-msgid  "ERRORTYPE"
+msgid "ERRORTYPE"
 msgstr "ERARTIPO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FORMULA.STRING.TEXT
-msgid  "FORMULA"
+msgid "FORMULA"
 msgstr "FORMULO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARABIC.STRING.TEXT
-msgid  "ARABIC"
+msgid "ARABIC"
 msgstr "ARABA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN_2.STRING.TEXT
-msgid  "ATAN2"
+msgid "ATAN2"
 msgstr "ARKTANG2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CEIL.STRING.TEXT
-msgid  "CEILING"
+msgid "CEILING"
 msgstr "PLAFONO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FLOOR.STRING.TEXT
-msgid  "FLOOR"
+msgid "FLOOR"
 msgstr "PLANKO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND.STRING.TEXT
-msgid  "ROUND"
+msgid "ROUND"
 msgstr "RONDIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND_UP.STRING.TEXT
-msgid  "ROUNDUP"
+msgid "ROUNDUP"
 msgstr "RONDIGI.SUPREN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND_DOWN.STRING.TEXT
-msgid  "ROUNDDOWN"
+msgid "ROUNDDOWN"
 msgstr "RONDIGI.MALSUPREN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRUNC.STRING.TEXT
-msgid  "TRUNC"
+msgid "TRUNC"
 msgstr "TRUNKI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOG.STRING.TEXT
-msgid  "LOG"
+msgid "LOG"
 msgstr "LOG"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_POWER.STRING.TEXT
-msgid  "POWER"
+msgid "POWER"
 msgstr "POTENCIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GGT.STRING.TEXT
-msgid  "GCD"
+msgid "GCD"
 msgstr "PGKD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KGV.STRING.TEXT
-msgid  "LCM"
+msgid "LCM"
 msgstr "PMKO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MOD.STRING.TEXT
-msgid  "MOD"
+msgid "MOD"
 msgstr "MOD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_PRODUCT.STRING.TEXT
-msgid  "SUMPRODUCT"
+msgid "SUMPRODUCT"
 msgstr "SUMOPRODUTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_SQ.STRING.TEXT
-msgid  "SUMSQ"
+msgid "SUMSQ"
 msgstr "SUMOKV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_X2MY2.STRING.TEXT
-msgid  "SUMX2MY2"
+msgid "SUMX2MY2"
 msgstr "SUMO.X2MY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_X2DY2.STRING.TEXT
-msgid  "SUMX2PY2"
+msgid "SUMX2PY2"
 msgstr "SUMO.X2PY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_XMY2.STRING.TEXT
-msgid  "SUMXMY2"
+msgid "SUMXMY2"
 msgstr "SUMO.XMY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DATE.STRING.TEXT
-msgid  "DATE"
+msgid "DATE"
 msgstr "DATO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_TIME.STRING.TEXT
-msgid  "TIME"
+msgid "TIME"
 msgstr "HORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DIFF_DATE.STRING.TEXT
-msgid  "DAYS"
+msgid "DAYS"
 msgstr "TAGOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DIFF_DATE_360.STRING.TEXT
-msgid  "DAYS360"
+msgid "DAYS360"
 msgstr "TAGOJ360"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIN.STRING.TEXT
-msgid  "MIN"
+msgid "MIN"
 msgstr "MIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIN_A.STRING.TEXT
-msgid  "MINA"
+msgid "MINA"
 msgstr "MINA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX.STRING.TEXT
-msgid  "MAX"
+msgid "MAX"
 msgstr "MAKS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX_A.STRING.TEXT
-msgid  "MAXA"
+msgid "MAXA"
 msgstr "MAKSA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM.STRING.TEXT
-msgid  "SUM"
+msgid "SUM"
 msgstr "SUMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PRODUCT.STRING.TEXT
-msgid  "PRODUCT"
+msgid "PRODUCT"
 msgstr "PRODUTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE.STRING.TEXT
-msgid  "AVERAGE"
+msgid "AVERAGE"
 msgstr "MEZUMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_A.STRING.TEXT
-msgid  "AVERAGEA"
+msgid "AVERAGEA"
 msgstr "MEZUMOA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT.STRING.TEXT
-msgid  "COUNT"
+msgid "COUNT"
 msgstr "NOMBRI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_2.STRING.TEXT
-msgid  "COUNTA"
+msgid "COUNTA"
 msgstr "NOMBRIA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NBW.STRING.TEXT
-msgid  "NPV"
+msgid "NPV"
 msgstr "NNV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IKV.STRING.TEXT
-msgid  "IRR"
+msgid "IRR"
 msgstr "IRK"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIRR.STRING.TEXT
-msgid  "MIRR"
+msgid "MIRR"
 msgstr "MIPR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ISPMT.STRING.TEXT
-msgid  "ISPMT"
+msgid "ISPMT"
 msgstr "ESTASPAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR.STRING.TEXT
-msgid  "VAR"
+msgid "VAR"
 msgstr "VAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR_A.STRING.TEXT
-msgid  "VARA"
+msgid "VARA"
 msgstr "VARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR_P.STRING.TEXT
-msgid  "VARP"
+msgid "VARP"
 msgstr "VARP"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR_P_A.STRING.TEXT
-msgid  "VARPA"
+msgid "VARPA"
 msgstr "VARPA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ST_DEV.STRING.TEXT
-msgid  "STDEV"
+msgid "STDEV"
 msgstr "VAR.RAD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ST_DEV_A.STRING.TEXT
-msgid  "STDEVA"
+msgid "STDEVA"
 msgstr "VAR.RAD.A"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ST_DEV_P.STRING.TEXT
-msgid  "STDEVP"
+msgid "STDEVP"
 msgstr "VAR.RAD.P"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ST_DEV_P_A.STRING.TEXT
-msgid  "STDEVPA"
+msgid "STDEVPA"
 msgstr "VAR.RAD.PA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_B.STRING.TEXT
-msgid  "B"
+msgid "B"
 msgstr "B"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NORM_DIST.STRING.TEXT
-msgid  "NORMDIST"
+msgid "NORMDIST"
 msgstr "NORMDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP_DIST.STRING.TEXT
-msgid  "EXPONDIST"
+msgid "EXPONDIST"
 msgstr "EKSPONDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BINOM_DIST.STRING.TEXT
-msgid  "BINOMDIST"
+msgid "BINOMDIST"
 msgstr "BINOMDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_POISSON_DIST.STRING.TEXT
-msgid  "POISSON"
+msgid "POISSON"
 msgstr "PUASONDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KOMBIN.STRING.TEXT
-msgid  "COMBIN"
+msgid "COMBIN"
 msgstr "KOMBIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KOMBIN_2.STRING.TEXT
-msgid  "COMBINA"
+msgid "COMBINA"
 msgstr "KOMBIN2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VARIATIONEN.STRING.TEXT
-msgid  "PERMUT"
+msgid "PERMUT"
 msgstr "PERMUT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VARIATIONEN_2.STRING.TEXT
-msgid  "PERMUTATIONA"
+msgid "PERMUTATIONA"
 msgstr "PERMUTAĴO.A"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BW.STRING.TEXT
-msgid  "PV"
+msgid "PV"
 msgstr "VA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DIA.STRING.TEXT
-msgid  "SYD"
+msgid "SYD"
 msgstr "DEPRECO.JARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GDA.STRING.TEXT
-msgid  "DDB"
+msgid "DDB"
 msgstr "DEPRECO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GDA_2.STRING.TEXT
-msgid  "DB"
+msgid "DB"
 msgstr "DEPRECO.FIKSITA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VBD.STRING.TEXT
-msgid  "VDB"
+msgid "VDB"
 msgstr "DEPRECO.VAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LAUFZ.STRING.TEXT
-msgid  "DURATION"
+msgid "DURATION"
 msgstr "DAŬRO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LIA.STRING.TEXT
-msgid  "SLN"
+msgid "SLN"
 msgstr "DEPRECO.LINEARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RMZ.STRING.TEXT
-msgid  "PMT"
+msgid "PMT"
 msgstr "PAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COLUMNS.STRING.TEXT
-msgid  "COLUMNS"
+msgid "COLUMNS"
 msgstr "KOLUMNOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROWS.STRING.TEXT
-msgid  "ROWS"
+msgid "ROWS"
 msgstr "VICOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TABLES.STRING.TEXT
-msgid  "SHEETS"
+msgid "SHEETS"
 msgstr "FOLIOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COLUMN.STRING.TEXT
-msgid  "COLUMN"
+msgid "COLUMN"
 msgstr "KOLUMNO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROW.STRING.TEXT
-msgid  "ROW"
+msgid "ROW"
 msgstr "VICO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TABLE.STRING.TEXT
-msgid  "SHEET"
+msgid "SHEET"
 msgstr "FOLIO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZGZ.STRING.TEXT
-msgid  "RRI"
+msgid "RRI"
 msgstr "INVESTA.INTEREZO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZW.STRING.TEXT
-msgid  "FV"
+msgid "FV"
 msgstr "VF"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZZR.STRING.TEXT
-msgid  "NPER"
+msgid "NPER"
 msgstr "NPER"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZINS.STRING.TEXT
-msgid  "RATE"
+msgid "RATE"
 msgstr "PROCENTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZINS_Z.STRING.TEXT
-msgid  "IPMT"
+msgid "IPMT"
 msgstr "IPAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KAPZ.STRING.TEXT
-msgid  "PPMT"
+msgid "PPMT"
 msgstr "KAPITALA.REPAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KUM_ZINS_Z.STRING.TEXT
-msgid  "CUMIPMT"
+msgid "CUMIPMT"
 msgstr "AKUM.INTEREZO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KUM_KAP_Z.STRING.TEXT
-msgid  "CUMPRINC"
+msgid "CUMPRINC"
 msgstr "AKUM.ĈEFA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EFFEKTIV.STRING.TEXT
-msgid  "EFFECTIVE"
+msgid "EFFECTIVE"
 msgstr "EFEKTIVA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
+msgid "NOMINAL"
 msgstr "NOMINAL"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUB_TOTAL.STRING.TEXT
-msgid  "SUBTOTAL"
+msgid "SUBTOTAL"
 msgstr "SUBTOTALO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_SUM.STRING.TEXT
-msgid  "DSUM"
+msgid "DSUM"
 msgstr "DSUMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_COUNT.STRING.TEXT
-msgid  "DCOUNT"
+msgid "DCOUNT"
 msgstr "DB.NOMBRI.NOMBROJN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_COUNT_2.STRING.TEXT
-msgid  "DCOUNTA"
+msgid "DCOUNTA"
 msgstr "DB.NOMBRI.VALOROJN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_AVERAGE.STRING.TEXT
-msgid  "DAVERAGE"
+msgid "DAVERAGE"
 msgstr "DMEZUMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_GET.STRING.TEXT
-msgid  "DGET"
+msgid "DGET"
 msgstr "DB.LEGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_MAX.STRING.TEXT
-msgid  "DMAX"
+msgid "DMAX"
 msgstr "DMAKS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_MIN.STRING.TEXT
-msgid  "DMIN"
+msgid "DMIN"
 msgstr "DMIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_PRODUCT.STRING.TEXT
-msgid  "DPRODUCT"
+msgid "DPRODUCT"
 msgstr "DPRODUTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_STD_DEV.STRING.TEXT
-msgid  "DSTDEV"
+msgid "DSTDEV"
 msgstr "DVAR.RAD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_STD_DEV_P.STRING.TEXT
-msgid  "DSTDEVP"
+msgid "DSTDEVP"
 msgstr "DVAR.RAD.P"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_VAR.STRING.TEXT
-msgid  "DVAR"
+msgid "DVAR"
 msgstr "DVAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_VAR_P.STRING.TEXT
-msgid  "DVARP"
+msgid "DVARP"
 msgstr "DVARP"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INDIRECT.STRING.TEXT
-msgid  "INDIRECT"
+msgid "INDIRECT"
 msgstr "NEREKTA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ADDRESS.STRING.TEXT
-msgid  "ADDRESS"
+msgid "ADDRESS"
 msgstr "ADRESO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MATCH.STRING.TEXT
-msgid  "MATCH"
+msgid "MATCH"
 msgstr "KONGRUI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_EMPTY_CELLS.STRING.TEXT
-msgid  "COUNTBLANK"
+msgid "COUNTBLANK"
 msgstr "NOMBRI.MALPLENAJN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IF.STRING.TEXT
-msgid  "COUNTIF"
+msgid "COUNTIF"
 msgstr "NOMBRI.SE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IF.STRING.TEXT
-msgid  "SUMIF"
+msgid "SUMIF"
 msgstr "SUMO.SE"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+msgid "AVERAGEIF"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+msgid "SUMIFS"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid "AVERAGEIFS"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+msgid "COUNTIFS"
+msgstr ""
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
-msgid  "LOOKUP"
+msgid "LOOKUP"
 msgstr "SERĈI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_V_LOOKUP.STRING.TEXT
-msgid  "VLOOKUP"
+msgid "VLOOKUP"
 msgstr "VSERĈO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_H_LOOKUP.STRING.TEXT
-msgid  "HLOOKUP"
+msgid "HLOOKUP"
 msgstr "HSERĈO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MULTI_AREA.STRING.TEXT
-msgid  "MULTIRANGE"
+msgid "MULTIRANGE"
 msgstr "PLURAMPLEKSA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_OFFSET.STRING.TEXT
-msgid  "OFFSET"
+msgid "OFFSET"
 msgstr "DEŜOVO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INDEX.STRING.TEXT
-msgid  "INDEX"
+msgid "INDEX"
 msgstr "INDEKSO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AREAS.STRING.TEXT
-msgid  "AREAS"
+msgid "AREAS"
 msgstr "AREOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CURRENCY.STRING.TEXT
-msgid  "DOLLAR"
+msgid "DOLLAR"
 msgstr "DOLARO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_REPLACE.STRING.TEXT
-msgid  "REPLACE"
+msgid "REPLACE"
 msgstr "ANSTATAŬIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FIXED.STRING.TEXT
-msgid  "FIXED"
+msgid "FIXED"
 msgstr "FIKSITA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FIND.STRING.TEXT
-msgid  "FIND"
+msgid "FIND"
 msgstr "SERĈI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXACT.STRING.TEXT
-msgid  "EXACT"
+msgid "EXACT"
 msgstr "EKZAKTA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFT.STRING.TEXT
-msgid  "LEFT"
+msgid "LEFT"
 msgstr "MALDEKSTRAJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHT.STRING.TEXT
-msgid  "RIGHT"
+msgid "RIGHT"
 msgstr "DEKSTRAJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SEARCH.STRING.TEXT
-msgid  "SEARCH"
+msgid "SEARCH"
 msgstr "SERĈO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
-msgid  "MID"
+msgid "MID"
 msgstr "MEZO"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+msgid "LENB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+msgid "RIGHTB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+msgid "LEFTB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+msgid "MIDB"
+msgstr ""
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
-msgid  "TEXT"
+msgid "TEXT"
 msgstr "TEKSTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUBSTITUTE.STRING.TEXT
-msgid  "SUBSTITUTE"
+msgid "SUBSTITUTE"
 msgstr "ANSTATAŬIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_REPT.STRING.TEXT
-msgid  "REPT"
+msgid "REPT"
 msgstr "RIPETI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CONCAT.STRING.TEXT
-msgid  "CONCATENATE"
+msgid "CONCATENATE"
 msgstr "KROĈI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAT_VALUE.STRING.TEXT
-msgid  "MVALUE"
+msgid "MVALUE"
 msgstr "MVALORO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAT_DET.STRING.TEXT
-msgid  "MDETERM"
+msgid "MDETERM"
 msgstr "MDETERM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAT_INV.STRING.TEXT
-msgid  "MINVERSE"
+msgid "MINVERSE"
 msgstr "MINVERSIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAT_MULT.STRING.TEXT
-msgid  "MMULT"
+msgid "MMULT"
 msgstr "MMULT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAT_TRANS.STRING.TEXT
-msgid  "TRANSPOSE"
+msgid "TRANSPOSE"
 msgstr "TRANSPONI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MATRIX_UNIT.STRING.TEXT
-msgid  "MUNIT"
+msgid "MUNIT"
 msgstr "MUNIT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BACK_SOLVER.STRING.TEXT
-msgid  "GOALSEEK"
+msgid "GOALSEEK"
 msgstr "SERĈCELVAL"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_HYP_GEOM_DIST.STRING.TEXT
-msgid  "HYPGEOMDIST"
+msgid "HYPGEOMDIST"
 msgstr "HIPGEOMDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOG_NORM_DIST.STRING.TEXT
-msgid  "LOGNORMDIST"
+msgid "LOGNORMDIST"
 msgstr "LOGNORMDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_T_DIST.STRING.TEXT
-msgid  "TDIST"
+msgid "TDIST"
 msgstr "TDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_F_DIST.STRING.TEXT
-msgid  "FDIST"
+msgid "FDIST"
 msgstr "FDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHI_DIST.STRING.TEXT
-msgid  "CHIDIST"
+msgid "CHIDIST"
 msgstr "ĤIDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_WEIBULL.STRING.TEXT
-msgid  "WEIBULL"
+msgid "WEIBULL"
 msgstr "WEIBULL"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NEG_BINOM_VERT.STRING.TEXT
-msgid  "NEGBINOMDIST"
+msgid "NEGBINOMDIST"
 msgstr "NEGBINOMDIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KRIT_BINOM.STRING.TEXT
-msgid  "CRITBINOM"
+msgid "CRITBINOM"
 msgstr "KRITERIO.LEĜO.BINOMIA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KURT.STRING.TEXT
-msgid  "KURT"
+msgid "KURT"
 msgstr "VOLBECO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_HAR_MEAN.STRING.TEXT
-msgid  "HARMEAN"
+msgid "HARMEAN"
 msgstr "HARMEZNB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GEO_MEAN.STRING.TEXT
-msgid  "GEOMEAN"
+msgid "GEOMEAN"
 msgstr "GEOMEZNB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STANDARD.STRING.TEXT
-msgid  "STANDARDIZE"
+msgid "STANDARDIZE"
 msgstr "NORMIGI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVE_DEV.STRING.TEXT
-msgid  "AVEDEV"
+msgid "AVEDEV"
 msgstr "MEZUMA.DEVIO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SCHIEFE.STRING.TEXT
-msgid  "SKEW"
+msgid "SKEW"
 msgstr "NESIMETRIECO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DEV_SQ.STRING.TEXT
-msgid  "DEVSQ"
+msgid "DEVSQ"
 msgstr "DEVKV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MEDIAN.STRING.TEXT
-msgid  "MEDIAN"
+msgid "MEDIAN"
 msgstr "MEDIANO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MODAL_VALUE.STRING.TEXT
-msgid  "MODE"
+msgid "MODE"
 msgstr "MODO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_Z_TEST.STRING.TEXT
-msgid  "ZTEST"
+msgid "ZTEST"
 msgstr "ZTEST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_T_TEST.STRING.TEXT
-msgid  "TTEST"
+msgid "TTEST"
 msgstr "TESTO.STUDENT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RANK.STRING.TEXT
-msgid  "RANK"
+msgid "RANK"
 msgstr "RANGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PERCENTILE.STRING.TEXT
-msgid  "PERCENTILE"
+msgid "PERCENTILE"
 msgstr "CENTILO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PERCENT_RANK.STRING.TEXT
-msgid  "PERCENTRANK"
+msgid "PERCENTRANK"
 msgstr "CENTILRANGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LARGE.STRING.TEXT
-msgid  "LARGE"
+msgid "LARGE"
 msgstr "GRANDA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SMALL.STRING.TEXT
-msgid  "SMALL"
+msgid "SMALL"
 msgstr "MALGRANDA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FREQUENCY.STRING.TEXT
-msgid  "FREQUENCY"
+msgid "FREQUENCY"
 msgstr "FREKVENCO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_QUARTILE.STRING.TEXT
-msgid  "QUARTILE"
+msgid "QUARTILE"
 msgstr "KVARILO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NORM_INV.STRING.TEXT
-msgid  "NORMINV"
+msgid "NORMINV"
 msgstr "NORMINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CONFIDENCE.STRING.TEXT
-msgid  "CONFIDENCE"
+msgid "CONFIDENCE"
 msgstr "INTERVALO.FIDO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_F_TEST.STRING.TEXT
-msgid  "FTEST"
+msgid "FTEST"
 msgstr "FTEST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRIM_MEAN.STRING.TEXT
-msgid  "TRIMMEAN"
+msgid "TRIMMEAN"
 msgstr "MEZUMO.REDUKTITA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PROB.STRING.TEXT
-msgid  "PROB"
+msgid "PROB"
 msgstr "PROB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CORREL.STRING.TEXT
-msgid  "CORREL"
+msgid "CORREL"
 msgstr "KOREL"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COVAR.STRING.TEXT
-msgid  "COVAR"
+msgid "COVAR"
 msgstr "KOV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PEARSON.STRING.TEXT
-msgid  "PEARSON"
+msgid "PEARSON"
 msgstr "PEARSON"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RSQ.STRING.TEXT
-msgid  "RSQ"
+msgid "RSQ"
 msgstr "PEARSON.KVADRATA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STEYX.STRING.TEXT
-msgid  "STEYX"
+msgid "STEYX"
 msgstr "NORMEYX"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SLOPE.STRING.TEXT
-msgid  "SLOPE"
+msgid "SLOPE"
 msgstr "INKLINO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INTERCEPT.STRING.TEXT
-msgid  "INTERCEPT"
+msgid "INTERCEPT"
 msgstr "ĈEORIGINA.ORDINATO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TREND.STRING.TEXT
-msgid  "TREND"
+msgid "TREND"
 msgstr "TENDENCO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GROWTH.STRING.TEXT
-msgid  "GROWTH"
+msgid "GROWTH"
 msgstr "KRESKO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RGP.STRING.TEXT
-msgid  "LINEST"
+msgid "LINEST"
 msgstr "LINSTIM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RKP.STRING.TEXT
-msgid  "LOGEST"
+msgid "LOGEST"
 msgstr "LOGSTIM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FORECAST.STRING.TEXT
-msgid  "FORECAST"
+msgid "FORECAST"
 msgstr "PROGNOZO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHI_INV.STRING.TEXT
-msgid  "CHIINV"
+msgid "CHIINV"
 msgstr "ĤIINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GAMMA_DIST.STRING.TEXT
-msgid  "GAMMADIST"
+msgid "GAMMADIST"
 msgstr "GAMADIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GAMMA_INV.STRING.TEXT
-msgid  "GAMMAINV"
+msgid "GAMMAINV"
 msgstr "GAMAINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_T_INV.STRING.TEXT
-msgid  "TINV"
+msgid "TINV"
 msgstr "TINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_F_INV.STRING.TEXT
-msgid  "FINV"
+msgid "FINV"
 msgstr "FINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHI_TEST.STRING.TEXT
-msgid  "CHITEST"
+msgid "CHITEST"
 msgstr "ĤITESTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOG_INV.STRING.TEXT
-msgid  "LOGINV"
+msgid "LOGINV"
 msgstr "LOGINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TABLE_OP.STRING.TEXT
-msgid  "MULTIPLE.OPERATIONS"
+msgid "MULTIPLE.OPERATIONS"
 msgstr "PLURAJ.OPERACIOJ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BETA_DIST.STRING.TEXT
-msgid  "BETADIST"
+msgid "BETADIST"
 msgstr "BETADIST"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BETA_INV.STRING.TEXT
-msgid  "BETAINV"
+msgid "BETAINV"
 msgstr "BETAINV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_WEEK.STRING.TEXT
-msgid  "WEEKNUM"
+msgid "WEEKNUM"
 msgstr "SEMAJNONUMERO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EASTERSUNDAY.STRING.TEXT
-msgid  "EASTERSUNDAY"
+msgid "EASTERSUNDAY"
 msgstr "PASKADIMANĈO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DAY_OF_WEEK.STRING.TEXT
-msgid  "WEEKDAY"
+msgid "WEEKDAY"
 msgstr "SEMAJNTAGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NO_NAME.STRING.TEXT
-msgid  "#NAME!"
+msgid "#NAME!"
 msgstr "#NOMO!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STYLE.STRING.TEXT
-msgid  "STYLE"
+msgid "STYLE"
 msgstr "STILO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DDE.STRING.TEXT
-msgid  "DDE"
+msgid "DDE"
 msgstr "DDE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BASE.STRING.TEXT
-msgid  "BASE"
+msgid "BASE"
 msgstr "BAZO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DECIMAL.STRING.TEXT
-msgid  "DECIMAL"
+msgid "DECIMAL"
 msgstr "DEKUMA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CONVERT.STRING.TEXT
-msgid  "CONVERT"
+msgid "CONVERT"
 msgstr "KONVERTI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROMAN.STRING.TEXT
-msgid  "ROMAN"
+msgid "ROMAN"
 msgstr "ROMA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_HYPERLINK.STRING.TEXT
-msgid  "HYPERLINK"
+msgid "HYPERLINK"
 msgstr "HIPERLIGILO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INFO.STRING.TEXT
-msgid  "INFO"
+msgid "INFO"
 msgstr "INFO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_BAHTTEXT.STRING.TEXT
-msgid  "BAHTTEXT"
+msgid "BAHTTEXT"
 msgstr "BAHTTEKSTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_PIVOT_DATA.STRING.TEXT
-msgid  "GETPIVOTDATA"
+msgid "GETPIVOTDATA"
 msgstr "PIVOTDATUM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EUROCONVERT.STRING.TEXT
-msgid  "EUROCONVERT"
+msgid "EUROCONVERT"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NUMBERVALUE.STRING.TEXT
-msgid  "NUMBERVALUE"
+msgid "NUMBERVALUE"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GAMMA.STRING.TEXT
-msgid  "GAMMA"
+msgid "GAMMA"
 msgstr "GAMO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHISQ_DIST.STRING.TEXT
-msgid  "CHISQDIST"
+msgid "CHISQDIST"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHISQ_INV.STRING.TEXT
-msgid  "CHISQINV"
+msgid "CHISQINV"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_NULL.STRING.TEXT
-msgid  "#NULL!"
+msgid "#NULL!"
 msgstr "#NULO!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_DIVZERO.STRING.TEXT
-msgid  "#DIV/0!"
+msgid "#DIV/0!"
 msgstr "#DIV/0!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_VALUE.STRING.TEXT
-msgid  "#VALUE!"
+msgid "#VALUE!"
 msgstr "#VALORO!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_REF.STRING.TEXT
-msgid  "#REF!"
+msgid "#REF!"
 msgstr "#REF!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_NAME.STRING.TEXT
-msgid  "#NAME?"
+msgid "#NAME?"
 msgstr "#NOMO?"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_NUM.STRING.TEXT
-msgid  "#NUM!"
+msgid "#NUM!"
 msgstr "#NOMBRO!"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_NA.STRING.TEXT
-msgid  "#N/A"
+msgid "#N/A"
 msgstr "#N/A"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Last Used"
+msgid "Last Used"
 msgstr "Laste uzita"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "All"
+msgid "All"
 msgstr "Ĉio"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.FT_CATEGORY.FIXEDTEXT.TEXT
-msgid  "~Category"
+msgid "~Category"
 msgstr "Kategorio"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.FT_FUNCTION.FIXEDTEXT.TEXT
-msgid  "~Function"
+msgid "~Function"
 msgstr "Funkcio"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.FT_STRUCT.FIXEDTEXT.TEXT
-msgid  "~Structure"
+msgid "~Structure"
 msgstr "Strukturo"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.STR_STRUCT_ERR1.STRING.TEXT
-msgid  "=?"
+msgid "=?"
 msgstr "=?"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.STR_STRUCT_ERR2.STRING.TEXT
-msgid  "Error"
+msgid "Error"
 msgstr "Eraro"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_FUNCTION.PAGEITEM.TEXT
-msgid  "Functions"
+msgid "Functions"
 msgstr "Funkcioj"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_STRUCT.PAGEITEM.TEXT
-msgid  "Structure"
+msgid "Structure"
 msgstr "Strukturo"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA.FIXEDTEXT.TEXT
-msgid  "For~mula"
+msgid "For~mula"
 msgstr "Formulo"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FIXEDTEXT.TEXT
-msgid  "Function result"
+msgid "Function result"
 msgstr "Funkcia rezulto"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
-msgid  "Result"
+msgid "Result"
 msgstr "Rezulto"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_MATRIX.CHECKBOX.TEXT
-msgid  "Array"
+msgid "Array"
 msgstr "Tabelo"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Maximize"
+msgid "Maximize"
 msgstr "Maksimumigi"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr "<< Reen"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PUSHBUTTON.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "Sekva >>"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.STRING.TEXT
-msgid  "Function Wizard"
+msgid "Function Wizard"
 msgstr "Funkcia asistanto"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.STRING.TEXT
-msgid  "Function Wizard  -"
+msgid "Function Wizard  -"
 msgstr "Funkcia asistanto -"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.STRING.TEXT
-msgid  "~End"
+msgid "~End"
+msgstr "Fino"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_FUNCTION.PAGEITEM.TEXT
+msgid "Functions"
+msgstr "Funkcioj"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_STRUCT.PAGEITEM.TEXT
+msgid "Structure"
+msgstr "Strukturo"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA.FIXEDTEXT.TEXT
+msgid "For~mula"
+msgstr "Formulo"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_RESULT.FIXEDTEXT.TEXT
+msgid "Function result"
+msgstr "Funkcia rezulto"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
+msgid "Result"
+msgstr "Rezulto"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_MATRIX.CHECKBOX.TEXT
+msgid "Array"
+msgstr "Tabelo"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
+msgid "Maximize"
+msgstr "Maksimumigi"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_BACKWARD.PUSHBUTTON.TEXT
+msgid "<< ~Back"
+msgstr "<< Reen"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_FORWARD.PUSHBUTTON.TEXT
+msgid "~Next >>"
+msgstr "Sekva >>"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE1.STRING.TEXT
+msgid "Function Wizard"
+msgstr "Funkcia asistanto"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE2.STRING.TEXT
+msgid "Function Wizard  -"
+msgstr "Funkcia asistanto -"
+
+#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_END.STRING.TEXT
+msgid "~End"
 msgstr "Fino"
 
 #: ui/dlg/parawin.src#RB_ARGBLOCK(_Y_).#DEFINE.QUICKHELPTEXT
-msgid  "Select"
+msgid "Select"
 msgstr "Elekti"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FIXEDTEXT.TEXT
-msgid  "Function not known"
+msgid "Function not known"
 msgstr "Funkcio ne konata"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_OPTIONAL.STRING.TEXT
-msgid  "(optional)"
+msgid "(optional)"
 msgstr "(nenepra)"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.STRING.TEXT
-msgid  "(required)"
+msgid "(required)"
 msgstr "(bezonata)"

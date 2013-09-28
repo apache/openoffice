@@ -1,600 +1,605 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Syntax error."
+msgid "Syntax error."
 msgstr "Sintaktik xatolik."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Return without Gosub."
+msgid "Return without Gosub."
 msgstr "Gosub'siz qaytarish."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect entry; please retry."
+msgid "Incorrect entry; please retry."
 msgstr "Xato maʼlumot kiritildi; iltimos boshqatdan kiriting."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid procedure call."
+msgid "Invalid procedure call."
 msgstr "Xato jarayon chaqirigʻi"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Overflow."
+msgid "Overflow."
 msgstr "Toʻlgan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not enough memory."
+msgid "Not enough memory."
 msgstr "Xotira yetarli emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array already dimensioned."
+msgid "Array already dimensioned."
 msgstr "Massiv allaqachon oʻlchamlangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Index out of defined range."
+msgid "Index out of defined range."
 msgstr "Indeks, oʻrnatilgan chegaradan tashqarida."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Duplicate definition."
+msgid "Duplicate definition."
 msgstr "Qayta aniqlashga urinish."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Division by zero."
+msgid "Division by zero."
 msgstr "Nolga boʻlish"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable not defined."
+msgid "Variable not defined."
 msgstr "Oʻzgaruvchi aniqlanmagan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Data type mismatch."
+msgid "Data type mismatch."
 msgstr "Xato maʼlumot turi"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid parameter."
+msgid "Invalid parameter."
 msgstr "Xato parametr."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Process interrupted by user."
+msgid "Process interrupted by user."
 msgstr "Jarayon foydalanuvchi tomonidan toʻxtatildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Resume without error."
+msgid "Resume without error."
 msgstr "Xatosiz tiklash."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not enough stack memory."
+msgid "Not enough stack memory."
 msgstr "Stek xotirasi yetishmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Sub-procedure or function procedure not defined."
+msgid "Sub-procedure or function procedure not defined."
 msgstr "Quyi jarayon yoki jarayon funksiyasi aniqlanmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error loading DLL file."
+msgid "Error loading DLL file."
 msgstr "DLL faylini yuklash xatosi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Wrong DLL call convention."
+msgid "Wrong DLL call convention."
 msgstr "DLL chaqiruvining notoʻgʻri ketma-ketligi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Internal error $(ARG1)."
+msgid "Internal error $(ARG1)."
 msgstr "$(ARG1) ichki xatolik."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid file name or file number."
+msgid "Invalid file name or file number."
 msgstr "Xato fayl nomi yoki raqami."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File not found."
+msgid "File not found."
 msgstr "Fayl topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect file mode."
+msgid "Incorrect file mode."
 msgstr "Xato fayl usuli."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File already open."
+msgid "File already open."
 msgstr "Fayl allaqachon ochiq."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Device I/O error."
+msgid "Device I/O error."
 msgstr "Uskuna K/Ch xatosi.."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "File already exists."
+msgid "File already exists."
 msgstr "Fayl allaqachon mavjud."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect record length."
+msgid "Incorrect record length."
 msgstr "Yozuv uzunligi xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Disk or hard drive full."
+msgid "Disk or hard drive full."
 msgstr "Disk yoki qattiq disk toʻlgan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Reading exceeds EOF."
+msgid "Reading exceeds EOF."
 msgstr "Oʻqish EOF'dan tashqarida."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect record number."
+msgid "Incorrect record number."
 msgstr "Yozuv raqami xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many files."
+msgid "Too many files."
 msgstr "Fayllar soni juda koʻp."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Device not available."
+msgid "Device not available."
 msgstr "Uskuna mavjud emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Access denied."
+msgid "Access denied."
 msgstr "Ruxsat yoʻq."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Disk not ready."
+msgid "Disk not ready."
 msgstr "Disk tayyor emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Not implemented."
+msgid "Not implemented."
 msgstr "Amalga oshirilmagan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Renaming on different drives impossible."
+msgid "Renaming on different drives impossible."
 msgstr "Boshqa-boshqa uskunalarda nomini oʻzgartirish mumkin emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Path/File access error."
+msgid "Path/File access error."
 msgstr "Yoʻl/Faylga kirish xatoligi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Path not found."
+msgid "Path not found."
 msgstr "Yoʻl topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object variable not set."
+msgid "Object variable not set."
 msgstr "Obyekt oʻzgaruvchisi koʻrsatilmagan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid string pattern."
+msgid "Invalid string pattern."
 msgstr "Xato namuna qatori."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Use of zero not permitted."
+msgid "Use of zero not permitted."
 msgstr "Noldan foydalanishga ruxsat etilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE Error."
+msgid "DDE Error."
 msgstr "DDE xatosi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Awaiting response to DDE connection."
+msgid "Awaiting response to DDE connection."
 msgstr "DDE ulanish javobi kutilmoqda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "No DDE channels available."
+msgid "No DDE channels available."
 msgstr "DDE kanali mavjud emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "No application responded to DDE connect initiation."
+msgid "No application responded to DDE connect initiation."
 msgstr "Dastur DDE boʻyicha aloqa oʻrnatishga javob bermayapti."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many applications responded to DDE connect initiation."
+msgid "Too many applications responded to DDE connect initiation."
 msgstr "DDE boʻyicha aloqa oʻrnatishga juda koʻp dasturlar javob beryapti."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE channel locked."
+msgid "DDE channel locked."
 msgstr "DDE kanali qulflangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application cannot execute DDE operation."
+msgid "External application cannot execute DDE operation."
 msgstr "Tashqi dastur DDE operatsiyasini bajara olmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Timeout while waiting for DDE response."
+msgid "Timeout while waiting for DDE response."
 msgstr "DDE javobini kutish vaqti tugadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "User pressed ESCAPE during DDE operation."
+msgid "User pressed ESCAPE during DDE operation."
 msgstr "DDE operatsiyasi davomida foydalanuvchi ESCAPE tugmasini bosdi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application busy."
+msgid "External application busy."
 msgstr "Tashqi dastur band."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE operation without data."
+msgid "DDE operation without data."
 msgstr "Maʼlumotsiz DDE operatsiyasi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Data are in wrong format."
+msgid "Data are in wrong format."
 msgstr "Maʼlumot formati xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "External application has been terminated."
+msgid "External application has been terminated."
 msgstr "Tashqi dastur toʻxtatildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE connection interrupted or modified."
+msgid "DDE connection interrupted or modified."
 msgstr "DDE aloqasi toʻxtatildi yoki oʻzgartirildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE method invoked with no channel open."
+msgid "DDE method invoked with no channel open."
 msgstr "DDE usuli kanal ochilmasdan chqirildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid DDE link format."
+msgid "Invalid DDE link format."
 msgstr "DDE bogʻlamasi formati xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE message has been lost."
+msgid "DDE message has been lost."
 msgstr "DDE xabari yoʻqotildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Paste link already performed."
+msgid "Paste link already performed."
 msgstr "Bogʻlama allaqachon qoʻyildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Link mode cannot be set due to invalid link topic."
+msgid "Link mode cannot be set due to invalid link topic."
 msgstr "Aloqa usulini xato sarlavha sababli oʻrnatib boʻlmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "DDE requires the DDEML.DLL file."
+msgid "DDE requires the DDEML.DLL file."
 msgstr "DDE, DDEML.DLL faylini talab qiladi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Module cannot be loaded; invalid format."
+msgid "Module cannot be loaded; invalid format."
 msgstr "Modulni yuklab boʻlmaydi; xato format."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid object index."
+msgid "Invalid object index."
 msgstr "Obyekt indeksi xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object is not available."
+msgid "Object is not available."
 msgstr "Obyekt mavjud emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Incorrect property value."
+msgid "Incorrect property value."
 msgstr "Xato xossa qiymati."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property is read-only."
+msgid "This property is read-only."
 msgstr "Ushbu xossa faqat oʻqish uchun."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property is write only."
+msgid "This property is write only."
 msgstr "Ushbu xossa faqat yozish uchun."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid object reference."
+msgid "Invalid object reference."
 msgstr "Obyekt bogʻlamasi xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Property or method not found: $(ARG1)."
+msgid "Property or method not found: $(ARG1)."
 msgstr "Xossa yoki usul topilmadi"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object required."
+msgid "Object required."
 msgstr "Obyekt talab qilinadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid use of an object."
+msgid "Invalid use of an object."
 msgstr "Obyektdan notoʻgʻri foydalanish"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "OLE Automation is not supported by this object."
+msgid "OLE Automation is not supported by this object."
 msgstr "OLE ushbu obyekt tomonidan qoʻllanilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This property or method is not supported by the object."
+msgid "This property or method is not supported by the object."
 msgstr "Ushbu xossa yoki usul obyekt tomonidan qoʻllanilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "OLE Automation Error."
+msgid "OLE Automation Error."
 msgstr "OLE xatoligi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This action is not supported by given object."
+msgid "This action is not supported by given object."
 msgstr "Bu operatsiya ushbu obyekt tomonidan qoʻllanilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Named arguments are not supported by given object."
+msgid "Named arguments are not supported by given object."
 msgstr "Nomlangan argumentlar ushbu obyekt tomonidan qoʻllanilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The current locale setting is not supported by the given object."
+msgid "The current locale setting is not supported by the given object."
 msgstr "Joriy lokal moslamalari ushbu obyekt tomonidan qoʻllanilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Named argument not found."
+msgid "Named argument not found."
 msgstr "Nomlangan argument topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Argument is not optional."
+msgid "Argument is not optional."
 msgstr "Argument uncha muhim emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid number of arguments."
+msgid "Invalid number of arguments."
 msgstr "Argumentlar soni xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object is not a list."
+msgid "Object is not a list."
 msgstr "Obyekt roʻyxat emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid ordinal number."
+msgid "Invalid ordinal number."
 msgstr "Asl raqam xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Specified DLL function not found."
+msgid "Specified DLL function not found."
 msgstr "DLL funksiyasi topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid clipboard format."
+msgid "Invalid clipboard format."
 msgstr "Klipbord formati xato."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object does not have this property."
+msgid "Object does not have this property."
 msgstr "Obyektda ushbu xossa mavjud emas."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Object does not have this method."
+msgid "Object does not have this method."
 msgstr "Obyektda ushbu usul yoʻq."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Required argument lacking."
+msgid "Required argument lacking."
 msgstr "Talab qilingan argument topilmadi."
 
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid "Invalid number of arguments."
+msgstr "Argumentlar soni xato."
+
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error executing a method."
+msgid "Error executing a method."
 msgstr "Usulni bajarish xatoligi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unable to set property."
+msgid "Unable to set property."
 msgstr "Xassani oʻrnatib boʻlmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unable to determine property."
+msgid "Unable to determine property."
 msgstr "Xassani aniqlab boʻlmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unexpected symbol: $(ARG1)."
+msgid "Unexpected symbol: $(ARG1)."
 msgstr "kutilmagan belgi: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Expected: $(ARG1)."
+msgid "Expected: $(ARG1)."
 msgstr "Kutilgan natija: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Symbol expected."
+msgid "Symbol expected."
 msgstr "Belgi kutilmoqda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable expected."
+msgid "Variable expected."
 msgstr "Oʻzgaruvchi kutilmoqda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label expected."
+msgid "Label expected."
 msgstr "Yorliq kutilmoqda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Value cannot be applied."
+msgid "Value cannot be applied."
 msgstr "Qiymatni qoʻllab boʻlmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable $(ARG1) already defined."
+msgid "Variable $(ARG1) already defined."
 msgstr "$(ARG1) oʻzgaruvchisi allaqachon aniqlangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgid "Sub procedure or function procedure $(ARG1) already defined."
 msgstr "Quyi jarayon yoki $(ARG1) jarayoni funksiyasi allaqachon aniqlangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label $(ARG1) already defined."
+msgid "Label $(ARG1) already defined."
 msgstr "$(ARG1) yorliq allaqachon aniqlangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Variable $(ARG1) not found."
+msgid "Variable $(ARG1) not found."
 msgstr "$(ARG1) oʻzgaruvchisi topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array or procedure $(ARG1) not found."
+msgid "Array or procedure $(ARG1) not found."
 msgstr "Massiv yoki $(ARG1) jarayon topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Procedure $(ARG1) not found."
+msgid "Procedure $(ARG1) not found."
 msgstr "$(ARG1) jarayoni topilmadi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Label $(ARG1) undefined."
+msgid "Label $(ARG1) undefined."
 msgstr "$(ARG1) yorliq aniqlanmagan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unknown data type $(ARG1)."
+msgid "Unknown data type $(ARG1)."
 msgstr "Nomaʼlum maʼlumot turi $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Exit $(ARG1) expected."
+msgid "Exit $(ARG1) expected."
 msgstr "Exit $(ARG1) kutilmoqda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Statement block still open: $(ARG1) missing."
+msgid "Statement block still open: $(ARG1) missing."
 msgstr "Qoʻllanmaning ochiq blogi mavjud emas: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Parentheses do not match."
+msgid "Parentheses do not match."
 msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Symbol $(ARG1) already defined differently."
+msgid "Symbol $(ARG1) already defined differently."
 msgstr "$(ARG1) belgisi allaqachon aniqlangan."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Parameters do not correspond to procedure."
+msgid "Parameters do not correspond to procedure."
 msgstr "Parametrlar jarayonga mos kelmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid character in number."
+msgid "Invalid character in number."
 msgstr "Raqamda xato belgi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Array must be dimensioned."
+msgid "Array must be dimensioned."
 msgstr "Massiv oʻlchami kiritilishi shart."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Else/Endif without If."
+msgid "Else/Endif without If."
 msgstr "If'siz Else/Endif."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1) not allowed within a procedure."
+msgid "$(ARG1) not allowed within a procedure."
 msgstr "$(ARG1)'ga jarayon ichida ruxsat berilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1) not allowed outside a procedure."
+msgid "$(ARG1) not allowed outside a procedure."
 msgstr "$(ARG1)'ga jarayondan tashqariga ruxsat berilmaydi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Dimension specifications do not match."
+msgid "Dimension specifications do not match."
 msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Unknown option: $(ARG1)."
+msgid "Unknown option: $(ARG1)."
 msgstr "Nomaʼlum parametr: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Constant $(ARG1) redefined."
+msgid "Constant $(ARG1) redefined."
 msgstr "$(ARG1) konstanta qayta aniqlandi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Program too large."
+msgid "Program too large."
 msgstr "Dastur juda katta."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Strings or arrays not permitted."
+msgid "Strings or arrays not permitted."
 msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "An exception occurred $(ARG1)."
+msgid "An exception occurred $(ARG1)."
 msgstr "$(ARG1) mutanosibligi yuz berdi."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "This array is fixed or temporarily locked."
+msgid "This array is fixed or temporarily locked."
 msgstr "Massiv oʻrnatilgan yoki vaqtincha qulflangan."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Out of string space."
+msgid "Out of string space."
 msgstr "Qatordan tashqarida."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Expression Too Complex."
+msgid "Expression Too Complex."
 msgstr "Oʻta qiyin ifoda."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Can't perform requested operation."
+msgid "Can't perform requested operation."
 msgstr "Soʻralgan operatsiyani bajarib boʻlmaydi."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
+msgid "Too many DLL application clients."
 msgstr "Juda koʻp DLL kliyentlari."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "For loop not initialized."
+msgid "For loop not initialized."
 msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "$(ARG1)"
+msgid "$(ARG1)"
 msgstr ""
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
-msgid  "The macro running has been interrupted"
+msgid "The macro running has been interrupted"
 msgstr "Makrosning bajarilishi toʻxtatildi"
 
 #: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
-msgid  "Reference will not be saved: "
+msgid "Reference will not be saved: "
 msgstr "Bogʻlama saqlanmaydi: "
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error loading library '$(ARG1)'."
+msgid "Error loading library '$(ARG1)'."
 msgstr "'$(ARG1)' kutubxonasini yuklash xatosi."
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error saving library: '$(ARG1)'."
+msgid "Error saving library: '$(ARG1)'."
 msgstr "Kutubxonani saqlash xatosi: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
 msgstr "'$(ARG1)' faylidan BASIC'ni initsializatsiya qilib boʻlmadi."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error saving BASIC: '$(ARG1)'."
+msgid "Error saving BASIC: '$(ARG1)'."
 msgstr "BASIC'ni saqlash xatoligi: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Error removing library."
+msgid "Error removing library."
 msgstr "Kutubxonani olib tashlash xatosi."
 
 #: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The library could not be removed from memory."
+msgid "The library could not be removed from memory."
 msgstr "Kutubxonani xotiradan oʻchirib boʻlmaydi."
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
-msgid  "On"
+msgid "On"
 msgstr "Yoqilgan"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
-msgid  "Off"
+msgid "Off"
 msgstr "Oʻchirilgan"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
-msgid  "True"
+msgid "True"
 msgstr "Haqiqiy"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
-msgid  "False"
+msgid "False"
 msgstr "Yolgʻon"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "Ha"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "Yoʻq"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
-msgid  "@0.00 $;@(0.00 $)"
+msgid "@0.00 $;@(0.00 $)"
 msgstr "@0.00 $;@(0.00 $)"

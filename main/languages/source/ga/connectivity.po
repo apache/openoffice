@@ -1,701 +1,777 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
-msgid  "Mozilla/Seamonkey Addressbook Directory"
+msgid "Mozilla/Seamonkey Addressbook Directory"
 msgstr "Comhadlann leabhar seoltaí Mozilla"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
-msgid  "Thunderbird Addressbook Directory"
+msgid "Thunderbird Addressbook Directory"
 msgstr "Comhadlann leabhar seoltaí Thunderbird"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook Express Addressbook"
+msgid "Outlook Express Addressbook"
 msgstr "Leabhar Seoltaí Outlook Express"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
-msgid  "Outlook (MAPI) Addressbook"
+msgid "Outlook (MAPI) Addressbook"
 msgstr "Leabhar Seoltaí Outlook (MAPI)"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
-msgid  "Creating tables is not supported for this kind of address books."
+msgid "Creating tables is not supported for this kind of address books."
 msgstr "Ní thacaítear le cruthú táblaí don chineál seo leabhair sheoltaí."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
-msgid  "Cannot create new address books while Mozilla is running."
+msgid "Cannot create new address books while Mozilla is running."
 msgstr "Ní féidir leabhair sheoltaí nua a chruthú agus Mozilla ag rith."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
-msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr "Níorbh fhéidir iontráil a fháil ón leabhar seoltaí; tharla earráid anaithnid."
+msgid "An address book entry could not be retrieved, an unknown error occurred."
+msgstr ""
+"Níorbh fhéidir iontráil a fháil ón leabhar seoltaí; tharla earráid "
+"anaithnid."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
-msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr "Níorbh fhéidir ainm comhadlainne an leabhair sheoltaí a fháil; tharla earráid anaithnid."
+msgid "An address book directory name could not be retrieved, an unknown error occurred."
+msgstr ""
+"Níorbh fhéidir ainm comhadlainne an leabhair sheoltaí a fháil; tharla "
+"earráid anaithnid."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
-msgid  "Timed out while waiting for the result."
+msgid "Timed out while waiting for the result."
 msgstr "Imithe thar am ag feitheamh leis an toradh."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
-msgid  "An error occurred while executing the query."
+msgid "An error occurred while executing the query."
 msgstr "Tharla earráid agus an t-iarratas á rith."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
-msgid  "You can't make any changes to mozilla address book when mozilla is running."
+msgid "You can't make any changes to mozilla address book when mozilla is running."
 msgstr "Ní féidir leat leabhar seoltaí Mozilla a athrú agus Mozilla ag rith."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
-msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr "Athraíodh Leabhar Seoltaí Mozilla taobh amuigh den phróiseas seo; ní féidir é a athrú agus é sa riocht seo."
+msgid "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
+msgstr ""
+"Athraíodh Leabhar Seoltaí Mozilla taobh amuigh den phróiseas seo; ní féidir "
+"é a athrú agus é sa riocht seo."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
-msgid  "Can't find the requested row."
+msgid "Can't find the requested row."
 msgstr "Ní féidir an ró iarrtha a aimsiú."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
-msgid  "Can't find the card for the requested row."
+msgid "Can't find the card for the requested row."
 msgstr "Ní féidir an cárta a aimsiú don ró iarrtha."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It needs at least one table."
-msgstr "Ní féidir an t-iarratas a rith. Tá tábla amháin ar a laghad de dhíth air."
+msgid "The query can not be executed. It needs at least one table."
+msgstr ""
+"Ní féidir an t-iarratas a rith. Tá tábla amháin ar a laghad de dhíth air."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
-msgid  "The driver does not support the 'COUNT' function."
+msgid "The driver does not support the 'COUNT' function."
 msgstr "Ní thacaíonn an tiománaí leis an bhfeidhm 'COUNT'."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
-msgid  "This statement type not supported by this database driver."
+msgid "This statement type not supported by this database driver."
 msgstr "Ní thacaíonn an tiománaí seo leis an gcineál ráitis seo."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid  "An unknown error occured."
+msgid "An unknown error occured."
 msgstr "Tharla earráid anaithnid."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
-msgid  "Could not create a new address book. Mozilla error code is $1$."
+msgid "Could not create a new address book. Mozilla error code is $1$."
 msgstr "Níorbh fhéidir leabhar seoltaí nua a chruthú. Cód earráide Mozilla $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
-msgid  "The library '$libname$' could not be loaded."
+msgid "The library '$libname$' could not be loaded."
 msgstr "Níorbh fhéidir leabharlann '$libname$' a luchtú."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid  "An error occured while refreshing the current row."
+msgid "An error occured while refreshing the current row."
 msgstr "Tharla earráid agus an ró reatha á athnuachan."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid  "An error occured while getting the current row."
+msgid "An error occured while getting the current row."
 msgstr "Tharla earráid agus an ró reatha á fháil."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
-msgid  "The row update can not be canceled."
+msgid "The row update can not be canceled."
 msgstr "Ní féidir nuashonrú an ró a chealú."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
-msgid  "A new row can not be created."
+msgid "A new row can not be created."
 msgstr "Ní féidir ró nua a chruthú."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr "Ní féidir an t-iarratas a rith. Ní féidir 'IS NULL' a úsáid ach le hainm colúin."
+msgid "The query can not be executed. The 'IS NULL' can only be used with a column name."
+msgstr ""
+"Ní féidir an t-iarratas a rith. Ní féidir 'IS NULL' a úsáid ach le hainm "
+"colúin."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid  "Illegal cursor movement occured."
+msgid "Illegal cursor movement occured."
 msgstr "Bhog an cúrsóir i slí neamhcheadaithe."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
-msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr "Cuir ró '$position$' i bhfeidhm sula ndéanann tú nuashonrú ar rónna agus sula gcuireann tú rónna nua isteach."
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Cuir ró '$position$' i bhfeidhm sula ndéanann tú nuashonrú ar rónna agus "
+"sula gcuireann tú rónna nua isteach."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
-msgid  "The update call can not be executed. The row is invalid."
+msgid "The update call can not be executed. The row is invalid."
 msgstr "Ní féidir an nuashonrú a dhéanamh. Tá an ró neamhbhailí."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
-msgid  "The current row can not be saved."
+msgid "The current row can not be saved."
 msgstr "Ní féidir an ró reatha a shábháil."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
-msgid  "No hostname was provided."
+msgid "No hostname was provided."
 msgstr "Níor tugadh óstainm ar bith."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
-msgid  "No Base DN was provided."
+msgid "No Base DN was provided."
 msgstr "Níor tugadh Base DN ar bith."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
-msgid  "The connection to the LDAP server could not be established."
+msgid "The connection to the LDAP server could not be established."
 msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfreastalaí LDAP."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
-msgid  "It doesn't exist a connection to the database."
+msgid "It doesn't exist a connection to the database."
 msgstr "Níl ceangal leis an mbunachar sonraí ann."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "Rinne tú iarracht paraiméadar shocrú ag ionad '$pos$' ach ní cheadaítear ach '$count$' paraiméadar. Seans nach bhfuil an t-airí \"ParameterNameSubstitution\" socraithe le luach TRUE san fhoinse sonraí."
+msgid "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Rinne tú iarracht paraiméadar shocrú ag ionad '$pos$' ach ní cheadaítear ach "
+"'$count$' paraiméadar. Seans nach bhfuil an t-airí "
+"\"ParameterNameSubstitution\" socraithe le luach TRUE san fhoinse sonraí."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
-msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr "Sroicheadh deireadh an tsrutha isteach sular sroicheadh fad an tsrutha a socraíodh i dtús báire."
+msgid "End of InputStream reached before satisfying length specified when InputStream was set."
+msgstr ""
+"Sroicheadh deireadh an tsrutha isteach sular sroicheadh fad an tsrutha a "
+"socraíodh i dtús báire."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
-msgid  "The input stream was not set."
+msgid "The input stream was not set."
 msgstr "Níor socraíodh an sruth ionchurtha."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
-msgid  "There is no element named '$name$'."
+msgid "There is no element named '$name$'."
 msgstr "Níl aon eilimint darb ainm '$name$' ann."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
-msgid  "Invalid bookmark value"
+msgid "Invalid bookmark value"
 msgstr "Luach neamhbhailí leabharmhairc"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
-msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr "Níor deonaíodh an phribhléid: Ní cheadaítear ach pribhléidí tábla a dheonú."
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr ""
+"Níor deonaíodh an phribhléid: Ní cheadaítear ach pribhléidí tábla a dheonú."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
-msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr "Níor cuireadh an phribhléid ar ceal: Ní cheadaítear ach pribhléidí tábla a chur ar ceal."
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr ""
+"Níor cuireadh an phribhléid ar ceal: Ní cheadaítear ach pribhléidí tábla a "
+"chur ar ceal."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
-msgid  "The column name '$columnname$' is unknown."
+msgid "The column name '$columnname$' is unknown."
 msgstr "Colún anaithnid '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
-msgid  "Function sequence error."
+msgid "Function sequence error."
 msgstr "Earráid seichimh feidhme."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
-msgid  "Invalid descriptor index."
+msgid "Invalid descriptor index."
 msgstr "Innéacs neamhbhailí tuarascálaí."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
-msgid  "The driver does not support the function '$functionname$'."
+msgid "The driver does not support the function '$functionname$'."
 msgstr "Ní thacaíonn an tiománaí leis an bhfeidhm '$functionname$'."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
-msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr "Ní thacaíonn an tiománaí leis an bhfeidhm '$featurename$'. Níl sé ar fáil."
+msgid "The driver does not support the functionality for '$featurename$'. It is not implemented."
+msgstr ""
+"Ní thacaíonn an tiománaí leis an bhfeidhm '$featurename$'. Níl sé ar fáil."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
-msgid  "The formula for TypeInfoSettings is wrong!"
+msgid "The formula for TypeInfoSettings is wrong!"
 msgstr "Foirmle mhícheart le haghaidh TypeInfoSettings!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
-msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr "Téann an teaghrán '$string$' thar uasfhad $maxlen$ carachtar nuair a thiontaítear go dtí an spriocfhoireann charachtar '$charset$'."
+msgid "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
+msgstr ""
+"Téann an teaghrán '$string$' thar uasfhad $maxlen$ carachtar nuair a "
+"thiontaítear go dtí an spriocfhoireann charachtar '$charset$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
-msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "Ní féidir teaghrán '$string$' a thiontú go dtí an t-ionchódú '$charset$'."
+msgid "The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr ""
+"Ní féidir teaghrán '$string$' a thiontú go dtí an t-ionchódú '$charset$'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
-msgid  "The connection URL is invalid."
+msgid "The connection URL is invalid."
 msgstr "Tá URL an cheangail neamhbhailí."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. It is too complex."
+msgid "The query can not be executed. It is too complex."
 msgstr "Ní féidir an t-iarratas a rith.  Tá sé róchasta."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The operator is too complex."
+msgid "The query can not be executed. The operator is too complex."
 msgstr "Ní féidir an t-iarratas a rith. Tá an t-oibreoir róchasta."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr "Ní féidir an t-iarratas a rith.  Ní cheadaítear 'LIKE' le colúin den chineál seo."
+msgid "The query can not be executed. You cannot use 'LIKE' with columns of this type."
+msgstr ""
+"Ní féidir an t-iarratas a rith.  Ní cheadaítear 'LIKE' le colúin den chineál "
+"seo."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
-msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr "Ní féidir an t-iarratas a rith.  Ní cheadaítear 'LIKE' ach amháin le hargóint teaghráin."
+msgid "The query can not be executed. 'LIKE' can be used with a string argument only."
+msgstr ""
+"Ní féidir an t-iarratas a rith.  Ní cheadaítear 'LIKE' ach amháin le "
+"hargóint teaghráin."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
-msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
 msgstr "Ní féidir an t-iarratas a rith.  Tá an coinníoll 'NOT LIKE' róchasta."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
+msgid "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
 msgstr "Ní féidir an t-iarratas a rith. Tá saoróg i lár an ráitis 'LIKE'."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
-msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
+msgid "The query can not be executed. The 'LIKE' condition contains too many wildcards."
 msgstr "Ní féidir an t-iarratas a rith. Tá an iomarca saoróg sa ráiteas 'LIKE'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
-msgid  "The column name '$columnname$' is not valid."
+msgid "The column name '$columnname$' is not valid."
 msgstr "Ainm neamhbhailí ar cholún '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
-msgid  "The statement contains an invalid selection of columns."
+msgid "The statement contains an invalid selection of columns."
 msgstr "Tá roghnú neamhbhailí de cholúin sa ráiteas."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
-msgid  "The column at position '$position$' could not be updated."
+msgid "The column at position '$position$' could not be updated."
 msgstr "Níorbh fhéidir an colún '$position$' a nuashonrú."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be loaded."
+msgid "The file $filename$ could not be loaded."
 msgstr "Níorbh fhéidir comhad $filename$ a luchtú."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr "Gineadh an teachtaireacht earráide seo nuair a iarradh an comhad a luchtú ($exception_type$):\n\n$error_message$"
+msgid "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
+msgstr ""
+"Gineadh an teachtaireacht earráide seo nuair a iarradh an comhad a luchtú "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
-msgid  "The type could not be converted."
+msgid "The type could not be converted."
 msgstr "Níorbh fhéidir an cineál a thiontú."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not append column: invalid column descriptor."
-msgstr "Níorbh fhéidir an colún a iarcheangal: tuarascálaí neamhbhailí ar cholún."
+msgid "Could not append column: invalid column descriptor."
+msgstr ""
+"Níorbh fhéidir an colún a iarcheangal: tuarascálaí neamhbhailí ar cholún."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create group: invalid object descriptor."
+msgid "Could not create group: invalid object descriptor."
 msgstr "Níorbh fhéidir an grúpa a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create index: invalid object descriptor."
+msgid "Could not create index: invalid object descriptor."
 msgstr "Níorbh fhéidir an t-innéacs a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create key: invalid object descriptor."
+msgid "Could not create key: invalid object descriptor."
 msgstr "Níorbh fhéidir an eochair a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create table: invalid object descriptor."
+msgid "Could not create table: invalid object descriptor."
 msgstr "Níorbh fhéidir an tábla a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create user: invalid object descriptor."
+msgid "Could not create user: invalid object descriptor."
 msgstr "Níorbh fhéidir úsáideoir a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
-msgid  "Could not create view: invalid object descriptor."
+msgid "Could not create view: invalid object descriptor."
 msgstr "Níorbh fhéidir amharc a chruthú: tuarascálaí neamhbhailí réada."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
-msgid  "Could not create view: no command object."
+msgid "Could not create view: no command object."
 msgstr "Níorbh fhéidir amharc a chruthú: gan réad ordaithe."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
-msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr "Níorbh fhéidir ceangal a bhunú.  Seans nach bhfuil soláthraí na sonraí suiteáilte mar is gá."
+msgid "The connection could not be created. May be the necessary data provider is not installed."
+msgstr ""
+"Níorbh fhéidir ceangal a bhunú.  Seans nach bhfuil soláthraí na sonraí "
+"suiteáilte mar is gá."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "Níorbh fhéidir an t-innéacs a scriosadh. Tharla earráid anaithnid agus an córas comhad á léamh."
+msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgstr ""
+"Níorbh fhéidir an t-innéacs a scriosadh. Tharla earráid anaithnid agus an "
+"córas comhad á léamh."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
-msgid  "The index could not be created. Only one column per index is allowed."
-msgstr "Níorbh fhéidir an t-innéacs a chruthú. Ní cheadaítear ach colún amháin san innéacs."
+msgid "The index could not be created. Only one column per index is allowed."
+msgstr ""
+"Níorbh fhéidir an t-innéacs a chruthú. Ní cheadaítear ach colún amháin san "
+"innéacs."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
-msgid  "The index could not be created. The values are not unique."
+msgid "The index could not be created. The values are not unique."
 msgstr "Níorbh fhéidir an t-innéacs a chruthú. Ní uathúil iad na luachanna."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
-msgid  "The index could not be created. An unknown error appeared."
+msgid "The index could not be created. An unknown error appeared."
 msgstr "Níorbh fhéidir an t-innéacs a chruthú. Tharla earráid anaithnid."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
-msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr "Níorbh fhéidir an t-innéacs a chruthú. Tá an t-ainm '$filename$' in úsáid ag innéacs eile."
+msgid "The index could not be created. The file '$filename$' is used by an other index."
+msgstr ""
+"Níorbh fhéidir an t-innéacs a chruthú. Tá an t-ainm '$filename$' in úsáid ag "
+"innéacs eile."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
 #, fuzzy
-msgid  "The index could not be created. The size of the chosen column is too big."
+msgid "The index could not be created. The size of the chosen column is too big."
 msgstr "Níorbh fhéidir an t-innéacs a chruthú. Tá an colún roghnaithe rómhór."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
-msgid  "The name '$name$' doesn't match SQL naming constraints."
+msgid "The name '$name$' doesn't match SQL naming constraints."
 msgstr "Ní leanann an t-ainm '$name$' iallach SQL ar ainmniú."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
-msgid  "The file $filename$ could not be deleted."
+msgid "The file $filename$ could not be deleted."
 msgstr "Níorbh fhéidir comhad $filename$ a scriosadh."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
-msgid  "Invalid column type for column '$columnname$'."
+msgid "Invalid column type for column '$columnname$'."
 msgstr "Tá cineál cholún '$columnname$' neamhbhailí."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
-msgid  "Invalid precision for column '$columnname$'."
+msgid "Invalid precision for column '$columnname$'."
 msgstr "Beachtas neamhbhailí ar cholún '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
-msgid  "Precision is less than scale for column '$columnname$'."
+msgid "Precision is less than scale for column '$columnname$'."
 msgstr "Tá an beachtas níos lú ná an scála i gcolún '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
-msgid  "Invalid column name length for column '$columnname$'."
+msgid "Invalid column name length for column '$columnname$'."
 msgstr "Fad neamhbhailí ar ainm cholún '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
-msgid  "Duplicate value found in column '$columnname$'."
+msgid "Duplicate value found in column '$columnname$'."
 msgstr "Aimsíodh luach dúblach i gcolún '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
-msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr "Sainíodh colún '$columnname$' mar cholún de chineál \"Deachúlach\" agus is é $precision$ carachtar an t-uasfhad (le $scale$ ionad deachúlach).\n\nTá an luach \"$value$\" níos faide ná líon na ndigití a cheadaítear."
+msgid "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"Sainíodh colún '$columnname$' mar cholún de chineál \"Deachúlach\" agus is é "
+"$precision$ carachtar an t-uasfhad (le $scale$ ionad deachúlach).\n"
+"\n"
+"Tá an luach \"$value$\" níos faide ná líon na ndigití a cheadaítear."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
-msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr "Níorbh fhéidir colún '$columnname$' a athrú. Seans go bhfuil an córas comhad cosanta ar scríobh."
+msgid "The column '$columnname$' could not be altered. May be the file system is write protected."
+msgstr ""
+"Níorbh fhéidir colún '$columnname$' a athrú. Seans go bhfuil an córas comhad "
+"cosanta ar scríobh."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
-msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr "Níorbh fhéidir colún '$columnname$' a nuashonrú. Tá an luach neamhbhailí le haghaidh an cholúin sin."
+msgid "The column '$columnname$' could not be updated. The value is invalid for that column."
+msgstr ""
+"Níorbh fhéidir colún '$columnname$' a nuashonrú. Tá an luach neamhbhailí le "
+"haghaidh an cholúin sin."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
-msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr "Níorbh fhéidir colún '$columnname$' a chur leis. Seans go bhfuil an córas comhad cosanta ar scríobh."
+msgid "The column '$columnname$' could not be added. May be the file system is write protected."
+msgstr ""
+"Níorbh fhéidir colún '$columnname$' a chur leis. Seans go bhfuil an córas "
+"comhad cosanta ar scríobh."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
-msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr "Níorbh fhéidir colún ag ionad '$position$' a ligint ar lár.  Seans go bhfuil an córas comhad cosanta ar scríobh."
+msgid "The column at position '$position$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Níorbh fhéidir colún ag ionad '$position$' a ligint ar lár.  Seans go bhfuil "
+"an córas comhad cosanta ar scríobh."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
-msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr "Níorbh fhéidir tábla '$tablename$' a ligint ar lár. Seans go bhfuil an córas comhad cosanta ar scríobh."
+msgid "The table '$tablename$' could not be dropped. May be the file system is write protected."
+msgstr ""
+"Níorbh fhéidir tábla '$tablename$' a ligint ar lár. Seans go bhfuil an córas "
+"comhad cosanta ar scríobh."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
-msgid  "The table could not be altered."
+msgid "The table could not be altered."
 msgstr "Níorbh fhéidir an tábla a athrú."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
-msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "Is comhad neamhbhailí (nó anaithnid) dBase é an comhad '$filename$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
-msgid  "Cannot open Evolution address book."
+msgid "Cannot open Evolution address book."
 msgstr "Ní féidir an leabhar seoltaí Evolution a oscailt."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
-msgid  "Can only sort by table columns."
+msgid "Can only sort by table columns."
 msgstr "Is féidir sórtáil de réir colúin amháin."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
-msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr "Ní féidir an t-iarratas a rith. Tá sé róchasta. Ní thacaítear ach le \"COUNT(*)\"."
+msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr ""
+"Ní féidir an t-iarratas a rith. Tá sé róchasta. Ní thacaítear ach le "
+"\"COUNT(*)\"."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
-msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "Ní féidir an t-iarratas a rith. Níl na hargóintí 'BETWEEN' ceart."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
-msgid  "The query can not be executed. The function is not supported."
+msgid "The query can not be executed. The function is not supported."
 msgstr "Ní féidir an t-iarratas a rith. Ní thacaítear leis an bhfeidhm."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
-msgid  "The table can not be changed. It is read only."
+msgid "The table can not be changed. It is read only."
 msgstr "Ní féidir an tábla a athrú. Tá sé inléite amháin."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
-msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr "Níorbh fhéidir an ró a scriosadh. Tá an rogha \"Display inactive records\" socraithe."
+msgid "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Níorbh fhéidir an ró a scriosadh. Tá an rogha \"Display inactive records\" "
+"socraithe."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
-msgid  "The row could not be deleted. It is already deleted."
+msgid "The row could not be deleted. It is already deleted."
 msgstr "Níorbh fhéidir an ró a scriosadh. Bhí sé scriosta cheana."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
-msgid  "The query can not be executed. It contains more than one table."
+msgid "The query can not be executed. It contains more than one table."
 msgstr "Ní féidir an t-iarratas a rith. Tá níos mó ná tábla amháin ann."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
-msgid  "The query can not be executed. It contains no valid table."
+msgid "The query can not be executed. It contains no valid table."
 msgstr "Ní féidir an t-iarratas a rith. Níl tábla bailí ann."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
-msgid  "The query can not be executed. It contains no valid columns."
+msgid "The query can not be executed. It contains no valid columns."
 msgstr "Ní féidir an t-iarratas a rith. Níl aon cholúin bhailí ann."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
-msgid  "The count of the given parameter values doesn't match the parameters."
+msgid "The count of the given parameter values doesn't match the parameters."
 msgstr "Ní ionann líon na bparaiméadar a tugadh agus na paraiméadair féin."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
-msgid  "The URL '$URL$' is not valid. A connection can not be created."
+msgid "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "Níl URL '$URL$' bailí.  Ní féidir ceangal a bhunú."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
-msgid  "The driver class '$classname$' could not be loaded."
+msgid "The driver class '$classname$' could not be loaded."
 msgstr "Níorbh fhéidir aicme tiománaí '$classname$' a luchtú."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
-msgid  "No Java installation could be found. Please check your installation."
+msgid "No Java installation could be found. Please check your installation."
 msgstr "Níorbh fhéidir suiteáil Java a aimsiú. Déan seiceáil ar do chóras."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
-msgid  "The execution of the query doesn't return a valid result set."
+msgid "The execution of the query doesn't return a valid result set."
 msgstr "Ní aischuireann an t-iarratas torthaí bailí."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
-msgid  "The execution of the update statement doesn't effect any rows."
+msgid "The execution of the update statement doesn't effect any rows."
 msgstr "Ní dheachaigh an ráiteas nuashonraithe i bhfeidhm ar aon ró."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
-msgid  "The additional driver class path is '$classpath$'."
+msgid "The additional driver class path is '$classpath$'."
 msgstr "Is é '$classpath$' conair do thiománaithe breise."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
-msgid  "The type of parameter at position '$position$' is unknown."
+msgid "The type of parameter at position '$position$' is unknown."
 msgstr "Ní fios cad é cineál an pharaiméadair in ionad '$position'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
-msgid  "The type of column at position '$position$' is unknown."
+msgid "The type of column at position '$position$' is unknown."
 msgstr "Ní fios cad é cineál an cholúin in ionad '$position'."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
-msgid  "No suitable KDE installation was found."
+msgid "No suitable KDE installation was found."
 msgstr "Níor aimsíodh suiteáil KDE mar is cuí."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
-msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr "Tá leagan $major$.$minor$ nó níos airde de KDE de dhíth ort chun an Leabhar Seoltaí KDE a rochtain."
+msgid "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
+msgstr ""
+"Tá leagan $major$.$minor$ nó níos airde de KDE de dhíth ort chun an Leabhar "
+"Seoltaí KDE a rochtain."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
-msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr "Tá an leagan de KDE a aimsíodh ró-nua. Níl a fhios againn an oibreoidh leaganacha KDE tar éis $major$.$minor$ leis an táirge seo.\n"
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
+msgstr "Tá an leagan de KDE a aimsíodh ró-nua. Níl a fhios againn an oibreoidh "
+"leaganacha KDE tar éis $major$.$minor$ leis an táirge seo.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
-msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr "Má tá tú cinnte go n-oibríonn do leagan de KDE mar is ceart, ba chóir duit an macra BASIC seo a rith sa chaoi nach ndéanfar an tseiceáil seo amach anseo:\n"
+msgid "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
+msgstr "Má tá tú cinnte go n-oibríonn do leagan de KDE mar is ceart, ba chóir duit "
+"an macra BASIC seo a rith sa chaoi nach ndéanfar an tseiceáil seo amach "
+"anseo:\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
-msgid  "Parameters can appear only in prepared statements."
+msgid "Parameters can appear only in prepared statements."
 msgstr "Ní cheadaítear paraiméadar ach i ráitis ullmhaithe."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
-msgid  "No such table!"
+msgid "No such table!"
 msgstr "Níl a leithéid de thábla ann!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
-msgid  "No suitable Mac OS installation was found."
+msgid "No suitable Mac OS installation was found."
 msgstr "Níor aimsíodh aon suiteáil oiriúnach de Mac OS."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
-msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr "Níorbh fhéidir comhad bunachair sonraí '$filename$' a chruthú. Féach an bhfuil go leor spás agat ar do dhiosca."
+msgid "The database file '$filename$' could not be created. Please check your disk space."
+msgstr ""
+"Níorbh fhéidir comhad bunachair sonraí '$filename$' a chruthú. Féach an "
+"bhfuil go leor spás agat ar do dhiosca."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
-msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr "Níorbh fhéidir bunachar sonraí '$databasename$' a thosú toisc nárbh fhéidir ordú '$progname$' a rith."
+msgid "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
+msgstr ""
+"Níorbh fhéidir bunachar sonraí '$databasename$' a thosú toisc nárbh fhéidir "
+"ordú '$progname$' a rith."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
-msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr "Caithfear an bunachar sonraí reatha a thiontú. Iontráil an t-úsáideoir rialaithe agus an focal faire, le do thoil. "
+msgid "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+"Caithfear an bunachar sonraí reatha a thiontú. Iontráil an t-úsáideoir "
+"rialaithe agus an focal faire, le do thoil. "
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
-msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr "Níorbh fhéidir an t-úsáideoir seo a scriosadh. Is é seo nó fanfaidh an bunachar sonraí i staid ar neamhréir."
+msgid "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
+msgstr ""
+"Níorbh fhéidir an t-úsáideoir seo a scriosadh. Is é seo nó fanfaidh an "
+"bunachar sonraí i staid ar neamhréir."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
-msgid  "The connection can not be established. No storage or URL was given."
+msgid "The connection can not be established. No storage or URL was given."
 msgstr "Ní féidir an ceangal a bhunú. Níor tugadh stóras ná URL."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
-msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr "Ní thagraíonn an URL sonraithe do chóras comhad bailí. Deimhnigh suíomh do chomhaid bhunachair sonraí."
+msgid "The given URL contains no valid local file system path. Please check the location of your database file."
+msgstr ""
+"Ní thagraíonn an URL sonraithe do chóras comhad bailí. Deimhnigh suíomh do "
+"chomhaid bhunachair sonraí."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid  "An error occured while obtaining the connection's table container."
+msgid "An error occured while obtaining the connection's table container."
 msgstr "Tharla earráid agus coimeádán táblaí an cheangail á fháil."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid  "An error occured while creating the table editor dialog."
+msgid "An error occured while creating the table editor dialog."
 msgstr "Tharla earráid agus dialóg an eagarthóra táblaí á cruthú."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
-msgid  "There is no table named '$tablename$'."
+msgid "There is no table named '$tablename$'."
 msgstr "Níl aon tábla darb ainm '$tablename$' ann."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
-msgid  "The provided DocumentUI is not allowed to be NULL."
+msgid "The provided DocumentUI is not allowed to be NULL."
 msgstr "Ní cheadaítear an DocumentUI soláthraithe a bheith NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
-msgid  "The record operation has been vetoed."
+msgid "The record operation has been vetoed."
 msgstr "Crosáladh oibríocht an taifid."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
-msgid  "The statement contains a cyclic reference to one or more sub queries."
+msgid "The statement contains a cyclic reference to one or more sub queries."
 msgstr "Tá tagairt chiorclach d'fho-iarratas amháin ar a laghad sa ráiteas."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
-msgid  "The name must not contain any slashes ('/')."
+msgid "The name must not contain any slashes ('/')."
 msgstr "Ní cheadaítear slaiseanna ('/') san ainm."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
-msgid  "$1$ is no SQL conform identifier."
+msgid "$1$ is no SQL conform identifier."
 msgstr "Ní aitheantóir bailí SQL é $1$."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
-msgid  "Query names must not contain quote characters."
+msgid "Query names must not contain quote characters."
 msgstr "Ní cheadaítear carachtair athfhriotail in ainm an iarratais."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
-msgid  "The name '$1$' is already in use in the database."
+msgid "The name '$1$' is already in use in the database."
 msgstr "Tá an t-ainm '$1$' in úsáid cheana sa bhunachar sonraí."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
-msgid  "No connection to the database exists."
+msgid "No connection to the database exists."
 msgstr "Níl aon cheangal leis an mbunachar sonraí."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
-msgid  "No $1$ exists."
+msgid "No $1$ exists."
 msgstr "Níl aon $1$ ann."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
-msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr "Ní féidir inneachar an tábla iomláin a thaispeáint. Cuir scagaire i bhfeidhm."
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr ""
+"Ní féidir inneachar an tábla iomláin a thaispeáint. Cuir scagaire i "
+"bhfeidhm."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
-msgid  "Adabas D"
+msgid "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (JDBC)"
+msgid "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (ODBC)"
+msgid "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
-msgid  "MySQL (Native)"
+msgid "MySQL (Native)"
 msgstr "MySQL (Dúchasach)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Outlook Address Book"
+msgid "Microsoft Outlook Address Book"
 msgstr "Leabhar Seoltaí Microsoft Outlook"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Windows Address Book"
+msgid "Microsoft Windows Address Book"
 msgstr "Leabhar Seoltaí Microsoft Windows"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Leabhar Seoltaí Thunderbird"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Leabhar Seoltaí LDAP"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid  "SeaMonkey Address Book"
+msgid "SeaMonkey Address Book"
 msgstr ""
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid  "Thunderbird Address Book"
+msgid "Thunderbird Address Book"
 msgstr "Leabhar Seoltaí Thunderbird"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid  "LDAP Address Book"
+msgid "LDAP Address Book"
 msgstr "Leabhar Seoltaí LDAP"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
-msgid  "HSQL database engine"
+msgid "HSQL database engine"
 msgstr "Inneall bunachair sonraí HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
-msgid  "Mac OS X Address Book"
+msgid "Mac OS X Address Book"
 msgstr "Leabhar Seoltaí Mac OS X"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "ODBC"
+msgid "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
-msgid  "KDE Address Book"
+msgid "KDE Address Book"
 msgstr "Leabhar Seoltaí KDE"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
-msgid  "Text"
+msgid "Text"
 msgstr "Téacs"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
-msgid  "Spreadsheet"
+msgid "Spreadsheet"
 msgstr "Scarbhileog"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
-msgid  "JDBC"
+msgid "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
-msgid  "Oracle JDBC"
+msgid "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
-msgid  "dBASE"
+msgid "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution Local"
+msgid "Evolution Local"
 msgstr "Evolution Logánta"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
-msgid  "ADO"
+msgid "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Access"
+msgid "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
-msgid  "Microsoft Access 2007"
+msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

@@ -1,2896 +1,3039 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
-msgid  "Address Book Data Source Wizard"
+msgid "Address Book Data Source Wizard"
 msgstr "Manzillar daftarining maʼlumot manbasi ustasi"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
+msgid "Address book type"
 msgstr "Manzillar daftari turi"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
-msgid  "Connection Settings"
+msgid "Connection Settings"
 msgstr "Ulanish parametrlari"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
+msgid "Table selection"
 msgstr "Jadvalni tanlash"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
-msgid  "Field Assignment"
+msgid "Field Assignment"
 msgstr "Maydon tayinlash"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
-msgid  "Data Source Title"
+msgid "Data Source Title"
 msgstr "Maʼlumot manbasi nomi"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgid "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
-msgid  "Please select the type of your external address book:"
+msgid "Please select the type of your external address book:"
 msgstr "Iltimos tashqi manzillar daftari turini koʻrsating:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
-msgid  "Evolution"
+msgid "Evolution"
 msgstr "Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
+msgid "Groupwise"
 msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
-msgid  "Evolution LDAP"
+msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
-msgid  "Mozilla / Netscape"
+msgid "Mozilla / Netscape"
 msgstr "Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
-msgid  "Thunderbird"
+msgid "Thunderbird"
 msgstr "Thunderbird"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
-msgid  "KDE address book"
+msgid "KDE address book"
 msgstr "KDE manzillar daftari"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
-msgid  "Mac OS X address book"
+msgid "Mac OS X address book"
 msgstr "Mac OS X manzillar daftari"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
-msgid  "LDAP address data"
+msgid "LDAP address data"
 msgstr "LDAP manzillar manbasi"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
-msgid  "Outlook address book"
+msgid "Outlook address book"
 msgstr "Outlook manzillar daftari"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
-msgid  "Windows system address book"
+msgid "Windows system address book"
 msgstr "Windows tizim manzillar daftari"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
+msgid "Other external data source"
 msgstr "Boshqa tashqi maʼlumotlar manbasi"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgid "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
-msgid  "Settings"
+msgid "Settings"
 msgstr "Parametrlar"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgid "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgid "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgid "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
 msgstr ""
 
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
+msgid "Field Assignment"
+msgstr "Maydon tayinlash"
+
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgid "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
+msgid "Location"
 msgstr "Manzili"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
+msgid "Browse..."
 msgstr "Tanlash..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "Ushbu manzillar daftarini %PRODUCTNAME dasturida barcha modullar uchun aktivlashtirish."
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+"Ushbu manzillar daftarini %PRODUCTNAME dasturida barcha modullar uchun "
+"aktivlashtirish."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
+msgid "Address book name"
 msgstr "Manzillar daftari nomi"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "Boshqa bir maʼlumot bazasi shunday nomga ega. Maʼlumot manbasi nomi takrorlanmas boʻlishi kerak. Shuning uchun boshqa nom tanlang."
+msgid "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+"Boshqa bir maʼlumot bazasi shunday nomga ega. Maʼlumot manbasi nomi "
+"takrorlanmas boʻlishi kerak. Shuning uchun boshqa nom tanlang."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
-msgid  "Please select a type of address book."
+msgid "Please select a type of address book."
 msgstr "Iltimos manzillar daftari turini tanlang."
 
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
+msgid "Addresses"
 msgstr "Manzillar"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
+msgid "Create Address Data Source"
 msgstr "Manzillar maʼlumot manbasini yaratish"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
-msgid  "The connection could not be established."
+msgid "The connection could not be established."
 msgstr "Aloqa oʻrnatib boʻlmadi."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
-msgid  "Please check the settings made for the data source."
+msgid "Please check the settings made for the data source."
 msgstr "Maʼlumot manbasi moslamalarini tekshiring."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
+msgid "Address Data - Field Assignment"
 msgstr "Manzillar manbasi - Maydonni tayinlash"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "Ayni paytda maydon belgilanmagan.\nMaydonni hozir koʻrsatishingiz mumkin yoki keyinroq menyudan amalga oshirishingiz mumkin:\n\"Fayl - Shablon - Manzillar daftari manbasi...\""
+msgid "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
+"Ayni paytda maydon belgilanmagan.\n"
+"Maydonni hozir koʻrsatishingiz mumkin yoki keyinroq menyudan amalga "
+"oshirishingiz mumkin:\n"
+"\"Fayl - Shablon - Manzillar daftari manbasi...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
+msgid "Field selection:"
 msgstr "Maydon tanlash:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
+msgid "Table;Query;Sql;Sql [Native]"
 msgstr "Jadval;Soʻrov;Sql;Sql [Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
-msgid  "Bibliography Database"
+msgid "Bibliography Database"
 msgstr "Adabiyotlar roʻyxati maʼlumot bazasi"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
-msgid  "Do you want to edit the column arrangement?"
+msgid "Do you want to edit the column arrangement?"
 msgstr "Ustunni tartiblashni oʻzgartirishni istaysizmi?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
+msgid "Column names"
 msgstr "Ustun nomlari"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
-msgid  "<none>"
+msgid "<none>"
 msgstr "<yoʻq>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
+msgid "Column Layout for Table %1"
 msgstr "%1 jadvali uchun ustunning joylashishi"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
+msgid "Choose Data Source"
 msgstr "Maʼlumot manbasini tanlash"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
+msgid "Entry"
 msgstr "Yozuv"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
+msgid "The following column names could not be assigned:\n"
 msgstr "Quyidagi ustun nomlarini tayinlab boʻlmaydi:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
+msgid "Article"
 msgstr "Maqola"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
+msgid "Book"
 msgstr "Kitob"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
-msgid  "Brochures"
+msgid "Brochures"
 msgstr "Risolalar"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
-msgid  "Conference proceedings"
+msgid "Conference proceedings"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
-msgid  "Book excerpt"
+msgid "Book excerpt"
 msgstr "Kitobdan iqtibos"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
-msgid  "Book excerpt with title"
+msgid "Book excerpt with title"
+msgstr ""
+
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
+msgid "Journal"
 msgstr "Jurnal"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
-msgid  "Techn. documentation"
+msgid "Techn. documentation"
 msgstr "Texnik qoʻllanma"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
-msgid  "Thesis"
+msgid "Thesis"
 msgstr "Tezis"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
+msgid "Miscellaneous"
 msgstr "Har xil"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
-msgid  "Dissertation"
+msgid "Dissertation"
 msgstr "Dissertatsiya"
 
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
+msgid "Conference proceedings"
+msgstr ""
+
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
-msgid  "Research report"
+msgid "Research report"
 msgstr "Ilmiy tadqiqot hisoboti"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
+msgid "Unpublished"
 msgstr "Nashr etilmadi"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
-msgid  "e-mail"
+msgid "e-mail"
 msgstr "el.pochta"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
-msgid  "WWW document"
+msgid "WWW document"
 msgstr "WWW hujjat"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
+msgid "User-defined1"
 msgstr "Foydalanuvchi aniqlagan1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
+msgid "User-defined2"
 msgstr "Foydalanuvchi aniqlagan2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
+msgid "User-defined3"
 msgstr "Foydalanuvchi aniqlagan3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
+msgid "User-defined4"
 msgstr "Foydalanuvchi aniqlagan4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
+msgid "User-defined5"
 msgstr "Foydalanuvchi aniqlagan5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
+#, fuzzy
+msgid "General"
 msgstr "Umumiy"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
+msgid "Insert Section..."
 msgstr "Boʻlim qoʻyish..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
+msgid "Delete Section..."
 msgstr "Boʻlimni olib tashlash..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
+msgid "Modify Name..."
 msgstr "Nomini oʻzgartirish..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
+msgid "~Short name"
 msgstr "~Qisqa nomi"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
+msgid "~Type"
 msgstr "Tur~i"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
+msgid "~Year"
 msgstr "~Yil"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
-msgid  "Author(s)"
+msgid "Author(s)"
 msgstr "Muallif(lar)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
+msgid "Tit~le"
 msgstr "Sarla~vha"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
-msgid  "~Publisher"
+msgid "~Publisher"
 msgstr "~Nashriyot"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
+msgid "A~ddress"
 msgstr "M~anzil"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
-msgid  "~ISBN"
+msgid "~ISBN"
 msgstr "~ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
+msgid "~Chapter"
 msgstr "~Bob"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
-msgid  "Pa~ge(s)"
+msgid "Pa~ge(s)"
 msgstr "B~yet(lar)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
-msgid  "Editor"
+msgid "Editor"
 msgstr "Tahrirchi"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
-msgid  "Ed~ition"
+msgid "Ed~ition"
 msgstr "Na~shr"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
+msgid "~Book title"
 msgstr "~Kitobning nomi"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
+msgid "Volume"
 msgstr "Hajmi"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
-msgid  "Publication t~ype"
+msgid "Publication t~ype"
 msgstr "Nashr t~uri"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
+msgid "Organi~zation"
 msgstr "Tashki~lot"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
+msgid "Instit~ution"
 msgstr "Insti~tut"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
-msgid  "University"
+msgid "University"
 msgstr "Universitet"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
-msgid  "Type of re~port"
+msgid "Type of re~port"
 msgstr "Hisobot t~uri"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
+msgid "~Month"
 msgstr "~Oy"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
+msgid "~Journal"
 msgstr "~Jurnal"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
-msgid  "Numb~er"
+msgid "Numb~er"
 msgstr "~Raqam"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
+msgid "Se~ries"
 msgstr "Ser~riya"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
-msgid  "Ann~otation"
+msgid "Ann~otation"
 msgstr "~Taqriz"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
+msgid "~Note"
 msgstr "~Izoh"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
-msgid  "URL"
+#, fuzzy
+msgid "URL"
 msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
-msgid  "User-defined field ~1"
+msgid "User-defined field ~1"
 msgstr "Foydalanuvchi maylni ~1"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
-msgid  "User-defined field ~2"
+msgid "User-defined field ~2"
 msgstr "Foydalanuvchi maylni ~2"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
-msgid  "User-defined field ~3"
+msgid "User-defined field ~3"
 msgstr "Foydalanuvchi maylni ~3"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
-msgid  "User-defined field ~4"
+msgid "User-defined field ~4"
 msgstr "Foydalanuvchi maylni ~4"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
-msgid  "User-defined field ~5"
+msgid "User-defined field ~5"
 msgstr "Foydalanuvchi maylni ~5"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
+#, fuzzy
+msgid "Table"
 msgstr "Jadval"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
-msgid  "Search Key"
+msgid "Search Key"
 msgstr "Qidiriladigan soʻz"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
+msgid "AutoFilter"
 msgstr "Avto-filtr"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
-msgid  "Standard Filter"
+msgid "Standard Filter"
 msgstr "Andza filtr"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
+msgid "Remove Filter"
 msgstr "Filtrni olib tashlash"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
-msgid  "Column Arrangement"
+msgid "Column Arrangement"
 msgstr "Ustunni tartiblash"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
+msgid "Data Source"
 msgstr "Maʼlumot manbasi"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 #, fuzzy
-msgid  "Data"
+msgid "Data"
+msgstr "Maʼlumot"
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+#, fuzzy
+msgid "Data"
 msgstr "Maʼlumot"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgid "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Data source:"
+msgid "~Data source:"
 msgstr "~Maʼlumot manbasi:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~..."
+msgid "~..."
 msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Table / Query:"
+msgid "~Table / Query:"
 msgstr "~Jadval / Soʻrov:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 #, fuzzy
-msgid  "Database Field"
+msgid "Database Field"
 msgstr "Maʼlumot bazasi maydoni"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Do you want to save the value in a database field?"
+msgid "Do you want to save the value in a database field?"
 msgstr "Qiymatni maʼlumot bazasi maydonida saqlashni istaysizmi?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Yes, I want to save it in the following database field:"
+msgid "~Yes, I want to save it in the following database field:"
 msgstr "~Ha, Quyidagi maʼlumot bazasi maydonida saqlashni istayman:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~No, I only want to save the value in the form."
+msgid "~No, I only want to save the value in the form."
 msgstr "~Yoʻq, Qiymatni faqat formada saqlashni istayman."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Form"
+msgid "Form"
 msgstr "Forma"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data source"
+msgid "Data source"
 msgstr "Maʼlumot manbasi"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Content type"
+msgid "Content type"
 msgstr "Tarkibidagini turi"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Content"
+msgid "Content"
 msgstr "Tarkibi"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "Jadval"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 #, fuzzy
-msgid  "Query"
+msgid "Query"
 msgstr "Soʻrov"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 #, fuzzy
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL buyrugʻi"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Group Element Wizard"
+msgid "Group Element Wizard"
 msgstr "Guruh elementi ustasi"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Table Element Wizard"
+msgid "Table Element Wizard"
 msgstr "Jadval elementi ustasi"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "List Box Wizard"
+msgid "List Box Wizard"
 msgstr "Roʻyxat ustasi"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Combo Box Wizard"
+msgid "Combo Box Wizard"
 msgstr "Ochiladigan roʻyxat qutisi ustasi"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 #, fuzzy
-msgid  "The table connection to the data source could not be established."
+msgid "The table connection to the data source could not be established."
 msgstr "Maʼlumot manbasiga jadval ulanishi amalga oshirilmadi."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 #, fuzzy
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "Maydonlarni tanlash"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Table element"
+msgid "Table element"
 msgstr "Jadval elementi"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "Mavjud maydonlar"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Selected fields"
+msgid "Selected fields"
 msgstr "Tanlangan maydonlar"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 #, fuzzy
-msgid  " (Date)"
+msgid " (Date)"
 msgstr " (Sana)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 #, fuzzy
-msgid  " (Time)"
+msgid " (Time)"
 msgstr " (Vaqt)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 #, fuzzy
-msgid  "Data"
+msgid "Data"
 msgstr "Maʼlumot"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Which ~names do you want to give the option fields?"
+msgid "Which ~names do you want to give the option fields?"
 msgstr "Parametr maydonlari uchun qaysi ~nomdan foydalanmoqchisiz?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Option fields"
+msgid "~Option fields"
 msgstr "~Parametrlar maydoni"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 #, fuzzy
-msgid  "Default Field Selection"
+msgid "Default Field Selection"
 msgstr "Maydonni andoza tanlash"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Should one option field be selected as a default?"
+msgid "Should one option field be selected as a default?"
 msgstr "Biror parametr maydoni andoza qilib belgilansinmi?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Yes, the following:"
+msgid "~Yes, the following:"
 msgstr "~Ha, quyidagilar:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
-msgid  "No, one particular field is not going to be selected."
+msgid "No, one particular field is not going to be selected."
 msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 #, fuzzy
-msgid  "Field Values"
+msgid "Field Values"
 msgstr "Maydon qiymatlari"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
-msgid  "When you select an option, the option group is given a specific value."
+msgid "When you select an option, the option group is given a specific value."
 msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Which ~value do you want to assign to each option?"
+msgid "Which ~value do you want to assign to each option?"
 msgstr "Har parametr uchun qanday ~qiymat berishni istaysiz?"
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid "~Option fields"
+msgstr "~Parametrlar maydoni"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 #, fuzzy
-msgid  "Create Option Group"
+msgid "Create Option Group"
 msgstr "Parametrlar guruhini yaratish"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
-msgid  "Which ~caption is to be given to your option group?"
+msgid "Which ~caption is to be given to your option group?"
 msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
-msgid  "These were all details needed to create the option group."
+msgid "These were all details needed to create the option group."
 msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgid "You can either save the value of the option group in a database field or use it for a later action."
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 #, fuzzy
-msgid  "Table Selection"
+msgid "Table Selection"
 msgstr "Jadvalni tanlash"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Control"
+msgid "Control"
 msgstr "Boshqaruv"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgid "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 #, fuzzy
-msgid  "Field Selection"
+msgid "Field Selection"
 msgstr "Maydonlarni tanlash"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Existing fields"
+msgid "Existing fields"
 msgstr "Mavjud maydonlar"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Display field"
+msgid "Display field"
 msgstr "Maydonni koʻrsatish"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
-msgid  "The contents of the field selected will be shown in the combo box list."
+msgid "The contents of the field selected will be shown in the combo box list."
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgid "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 #, fuzzy
-msgid  "Field Link"
+msgid "Field Link"
 msgstr "Maydon bogʻlamasi"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgid "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Field from the ~Value Table"
+msgid "Field from the ~Value Table"
 msgstr "Maydon jadval ~qiymatidan"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Field from the ~List Table"
+msgid "Field from the ~List Table"
 msgstr "Maydon jadval ~roʻyxatidan"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgid "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr ""
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "<< Back"
+msgid "<< Back"
 msgstr "<< Orqaga"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Next >>"
+msgid "Next >>"
 msgstr "Keyingi >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 #, fuzzy
-msgid  "Accept"
+msgid "Accept"
 msgstr "Qabul qilish"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 #, fuzzy
-msgid  "Finish"
+msgid "Finish"
 msgstr "Tayyor"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 #, fuzzy
-msgid  " - Software License Agreement"
+msgid " - Software License Agreement"
 msgstr " - Litsenziya kelishuvi"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 #, fuzzy
-msgid  "- User Data"
+msgid "- User Data"
 msgstr "- Foydalanuvchi maʼlumoti"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 #, fuzzy
-msgid  "Welcome"
+msgid "Welcome"
 msgstr "Marhamat"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
 msgstr ""
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 #, fuzzy
-msgid  "License Agreement"
+msgid "License Agreement"
 msgstr "Litsenziya kelishuvi"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Please follow these steps to proceed with the installation:"
+msgid "Please follow these steps to proceed with the installation:"
 msgstr "Oʻrnatish uchun quyidagilarni bajaring:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "1."
+msgid "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Litsenziya kelishuvini koʻrish. Iltimos ushbu oynadagi litsenziya kelishuvi matnini koʻrib chiqish uchun sichqoncha gʻildiragidan yoki '%PAGEDOWN' tugmasidan foydalaning."
+msgid "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Litsenziya kelishuvini koʻrish. Iltimos ushbu oynadagi litsenziya kelishuvi "
+"matnini koʻrib chiqish uchun sichqoncha gʻildiragidan yoki '%PAGEDOWN' "
+"tugmasidan foydalaning."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Page Down"
+msgid "Page Down"
 msgstr "Keyingi varaq"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "2."
+msgid "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Accept the License Agreement."
+msgid "Accept the License Agreement."
 msgstr "Litsenziya kelishuvini qabul qilish."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 #, fuzzy
-msgid  "I accept the terms of the Agreement."
+msgid "I accept the terms of the Agreement."
 msgstr "Ushbu kelishuv shartlariga roziman."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 #, fuzzy
-msgid  "~Accept"
+msgid "~Accept"
 msgstr "Qa~bul qilish"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 #, fuzzy
-msgid  "Decline"
+msgid "Decline"
 msgstr "Voz kechish"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Character"
+msgid "Character"
 msgstr "Belgi"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "Shrift"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "Shrift effektlari"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Link fields"
+msgid "Link fields"
 msgstr "Bogʻlama maydonlari"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
-msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgid "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr ""
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Suggest"
+msgid "Suggest"
 msgstr "Taklif"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
-msgid  "Sub Form"
+msgid "Sub Form"
 msgstr ""
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
-msgid  "Master Form"
+msgid "Master Form"
 msgstr ""
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
-msgid  "The columns of '#' could not be retrieved."
+msgid "The columns of '#' could not be retrieved."
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 #, fuzzy
-msgid  "Edit mask"
+msgid "Edit mask"
 msgstr "Niqobni tahrirlash"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
+msgid "Literal mask"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
-msgid  "Read-only"
+msgid "Read-only"
 msgstr "Faqat oʻqish uchun"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 #, fuzzy
-msgid  "Enabled"
+msgid "Enabled"
 msgstr "Yoqilgan"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
-msgid  "Visible"
+msgid "Visible"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 #, fuzzy
-msgid  "AutoFill"
+msgid "AutoFill"
 msgstr "Avtotoʻldirish"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 #, fuzzy
-msgid  "Line count"
+msgid "Line count"
 msgstr "Qatorlar soni"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 #, fuzzy
-msgid  "Max. text length"
+msgid "Max. text length"
 msgstr "Matnning maks. uzunligi"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 #, fuzzy
-msgid  "Spin Button"
+msgid "Spin Button"
 msgstr "Moslamalar tugmasi"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
-msgid  "Strict format"
+msgid "Strict format"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 #, fuzzy
-msgid  "Thousands separator"
+msgid "Thousands separator"
 msgstr "Mingni ajratuvchi belgi"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
-msgid  "Printable"
+msgid "Printable"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 #, fuzzy
-msgid  "URL"
+msgid "URL"
 msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
 #, fuzzy
-msgid  "Frame"
+msgid "Frame"
 msgstr "Freym"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Help text"
+msgid "Help text"
 msgstr "Yordam matni"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 #, fuzzy
-msgid  "Help URL"
+msgid "Help URL"
 msgstr "Yordam URL manzili"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 #, fuzzy
-msgid  "Additional information"
+msgid "Additional information"
 msgstr "Qoʻshimcha maʼlumot"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 #, fuzzy
-msgid  "Password character"
+msgid "Password character"
 msgstr "Maxfiy soʻz belgisi"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
-msgid  "Tristate"
+msgid "Tristate"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 #, fuzzy
-msgid  "Empty string is NULL"
+msgid "Empty string is NULL"
 msgstr "Boʻsh qator - NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
+msgid "Decimal accuracy"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 #, fuzzy
-msgid  "Graphics"
+msgid "Graphics"
 msgstr "Rasmlar"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 #, fuzzy
-msgid  "Default selection"
+msgid "Default selection"
 msgstr "Andoza tanlash"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Default button"
+msgid "Default button"
 msgstr "Andoza tugma"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 #, fuzzy
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "Yorliq maydoni"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Label"
+msgid "Label"
 msgstr "Yorliq"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 #, fuzzy
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "Tekislash"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 #, fuzzy
-msgid  "Vert. Alignment"
+msgid "Vert. Alignment"
 msgstr "Vertikal tekislash"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
 #, fuzzy
-msgid  "Top"
+msgid "Top"
 msgstr "Yuqorida"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 #, fuzzy
-msgid  "Middle"
+msgid "Middle"
 msgstr "Oʻrtada"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
 #, fuzzy
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "Pastda"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 #, fuzzy
-msgid  "Graphics alignment"
+msgid "Graphics alignment"
 msgstr "Rasmlarni tekislash"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "Shrift"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Background color"
+msgid "Background color"
 msgstr "Orqa fon rangi"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 #, fuzzy
-msgid  "Border"
+msgid "Border"
 msgstr "Chegara"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 #, fuzzy
-msgid  "Icon size"
+msgid "Icon size"
 msgstr "Nishonchaning oʻlchami"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "Small"
+msgid "Small"
 msgstr "Kichik"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "Large"
+msgid "Large"
 msgstr "Kichik"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 #, fuzzy
-msgid  "Positioning"
+msgid "Positioning"
 msgstr "Joylashuvi"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 #, fuzzy
-msgid  "Navigation"
+msgid "Navigation"
 msgstr "Navigatsiya"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Acting on a record"
+msgid "Acting on a record"
 msgstr "Yozuv ustidagi amal"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 #, fuzzy
-msgid  "Filtering / Sorting"
+msgid "Filtering / Sorting"
 msgstr "Filtrlash / Saralash"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 #, fuzzy
-msgid  "Horizontal scroll bar"
+msgid "Horizontal scroll bar"
 msgstr "Gorizontal varaqlash paneli"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 #, fuzzy
-msgid  "Vertical scroll bar"
+msgid "Vertical scroll bar"
 msgstr "Vertikal varaqlash paneli"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 #, fuzzy
-msgid  "Word break"
+msgid "Word break"
 msgstr "Soʻzni boʻlish"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 #, fuzzy
-msgid  "Multiline input"
+msgid "Multiline input"
 msgstr "Koʻp qatorli kiritish"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 #, fuzzy
-msgid  "Multiselection"
+msgid "Multiselection"
 msgstr "Ommaviy tanlash"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "Nomi"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 #, fuzzy
-msgid  "Tab order"
+msgid "Tab order"
 msgstr "Tab tartibi"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
-msgid  "Mouse wheel scroll"
+msgid "Mouse wheel scroll"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 #, fuzzy
-msgid  "Filter"
+msgid "Filter"
 msgstr "Filtr"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 #, fuzzy
-msgid  "Sort"
+msgid "Sort"
 msgstr "Saralash"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 #, fuzzy
-msgid  "Record marker"
+msgid "Record marker"
 msgstr "Qayd markeri"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
+msgid "Filter proposal"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 #, fuzzy
-msgid  "Navigation bar"
+msgid "Navigation bar"
 msgstr "Navigatsiya paneli"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
+msgid "Cycle"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
-msgid  "Tabstop"
+msgid "Tabstop"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Data field"
+msgid "Data field"
 msgstr "Maʼlumot maydoni"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 #, fuzzy
-msgid  "Dropdown"
+msgid "Dropdown"
 msgstr "Ochiladigan roʻyxat"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
+msgid "Bound field"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 #, fuzzy
-msgid  "List content"
+msgid "List content"
 msgstr "Roʻyxat tarkibi"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type of list contents"
+msgid "Type of list contents"
 msgstr "Roʻyxat tarkibining turi"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Content"
+msgid "Content"
 msgstr "Tarkibi"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 #, fuzzy
-msgid  "Content type"
+msgid "Content type"
 msgstr "Tarkibidagini turi"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 #, fuzzy
-msgid  "Allow additions"
+msgid "Allow additions"
 msgstr "Qoʻshishga ruxsat berish"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 #, fuzzy
-msgid  "Allow deletions"
+msgid "Allow deletions"
 msgstr "Olibtashlashga ruxsat berish"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 #, fuzzy
-msgid  "Allow modifications"
+msgid "Allow modifications"
 msgstr "Oʻzgartirishga ruxsat berish"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 #, fuzzy
-msgid  "Add data only"
+msgid "Add data only"
 msgstr "Faqat maʼlumot qoʻshish"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 #, fuzzy
-msgid  "Data source"
+msgid "Data source"
 msgstr "Maʼlumot manbasi"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 #, fuzzy
-msgid  "Link master fields"
+msgid "Link master fields"
 msgstr "Asosiy maydonlar bilan bogʻlanish"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
+msgid "Link slave fields"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 #, fuzzy
-msgid  "Value min."
+msgid "Value min."
 msgstr "Minimal qiymat"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 #, fuzzy
-msgid  "Value max."
+msgid "Value max."
 msgstr "Maksimal qiymat"
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 #, fuzzy
-msgid  "Incr./decrement value"
+msgid "Incr./decrement value"
 msgstr "Oʻsish/kamayish qiymati"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 #, fuzzy
-msgid  "Currency symbol"
+msgid "Currency symbol"
 msgstr "Pul belgisi"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 #, fuzzy
-msgid  "Date min."
+msgid "Date min."
 msgstr "Minimal maʼlumot"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 #, fuzzy
-msgid  "Date max."
+msgid "Date max."
 msgstr "Masimal maʼlumot"
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Date format"
+msgid "Date format"
 msgstr "Sananing koʻrinishi"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 #, fuzzy
-msgid  "Selection"
+msgid "Selection"
 msgstr "Tanlash"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 #, fuzzy
-msgid  "Time min."
+msgid "Time min."
 msgstr "Minimal vaqt"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 #, fuzzy
-msgid  "Time max."
+msgid "Time max."
 msgstr "Maksimal vaqt"
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Time format"
+msgid "Time format"
 msgstr "Vaqtning koʻrinishi"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 #, fuzzy
-msgid  "Prefix symbol"
+msgid "Prefix symbol"
 msgstr "Prefiks belgisi"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Value"
+msgid "Value"
 msgstr "Qiymati"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 #, fuzzy
-msgid  "Formatting"
+msgid "Formatting"
 msgstr "Formatlash"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 #, fuzzy
-msgid  "Class ID"
+msgid "Class ID"
 msgstr "Sinf ID'si"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Height"
+msgid "Height"
 msgstr "Boʻyi"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 #, fuzzy
-msgid  "Width"
+msgid "Width"
 msgstr "Eni"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 #, fuzzy
-msgid  "List index"
+msgid "List index"
 msgstr "Roʻyxat indeksi"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 #, fuzzy
-msgid  "Row height"
+msgid "Row height"
 msgstr "Satrning balandligi"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Fill color"
+msgid "Fill color"
 msgstr "Toʻldirish rangi"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Line color"
+msgid "Line color"
 msgstr "Chiziqning rangi"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
+msgid "Reference value (on)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
+msgid "Reference value (off)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 #, fuzzy
-msgid  "List entries"
+msgid "List entries"
 msgstr "Roʻyxat elementlari"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Action"
+msgid "Action"
 msgstr "Amal"
 
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
+msgid "Type of submission"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 #, fuzzy
-msgid  "Default status"
+msgid "Default status"
 msgstr "Andoza holat"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
-msgid  "Submission encoding"
+msgid "Submission encoding"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 #, fuzzy
-msgid  "Default value"
+msgid "Default value"
 msgstr "Andoza qiymat"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Default text"
+msgid "Default text"
 msgstr "Andoza matn"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 #, fuzzy
-msgid  "Default date"
+msgid "Default date"
 msgstr "Andoza sana"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 #, fuzzy
-msgid  "Default time"
+msgid "Default time"
 msgstr "Andoza vaqt"
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
+#, fuzzy
+msgid "Frame"
+msgstr "Freym"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "Without frame"
+msgid "Without frame"
 msgstr "Freymsiz"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "3D look"
+msgid "3D look"
 msgstr "3D koʻrinish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "Flat"
+msgid "Flat"
 msgstr "Yassi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "Valuelist"
+msgid "Valuelist"
 msgstr "Qiymat roʻyxati"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "Table"
+msgid "Table"
 msgstr "Jadval"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "Query"
+msgid "Query"
 msgstr "Soʻrov"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
 #, fuzzy
-msgid  "Sql"
+msgid "Sql"
 msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
 #, fuzzy
-msgid  "Sql [Native]"
+msgid "Sql [Native]"
 msgstr "Sql [Native]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
 #, fuzzy
-msgid  "Tablefields"
+msgid "Tablefields"
 msgstr "Jadval maydonlari"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
-msgid  "Left"
+msgid "Left"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
 #, fuzzy
-msgid  "Center"
+msgid "Center"
 msgstr "Markazda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
-msgid  "Right"
+msgid "Right"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "None"
+msgid "None"
 msgstr "Yoʻq"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
-msgid  "Submit form"
+msgid "Submit form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
-msgid  "Reset form"
+msgid "Reset form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 #, fuzzy
-msgid  "Open document/web page"
+msgid "Open document/web page"
 msgstr "Hujjatni/veb sahifani ochish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
 #, fuzzy
-msgid  "First record"
+msgid "First record"
 msgstr "Birinchi yozuv"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 #, fuzzy
-msgid  "Previous record"
+msgid "Previous record"
 msgstr "Oldingi yozuv"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
 #, fuzzy
-msgid  "Next record"
+msgid "Next record"
 msgstr "Keyingi yozuv"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
 #, fuzzy
-msgid  "Last record"
+msgid "Last record"
 msgstr "Oxirigi yozuv"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
 #, fuzzy
-msgid  "Save record"
+msgid "Save record"
 msgstr "Yozuvni saqlash"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
 #, fuzzy
-msgid  "Undo data entry"
+msgid "Undo data entry"
 msgstr "Ma'lumot kiritishni bekor qilish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
 #, fuzzy
-msgid  "New record"
+msgid "New record"
 msgstr "Yangi yozuv"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
 #, fuzzy
-msgid  "Delete record"
+msgid "Delete record"
 msgstr "Yozuvni olib tashlash"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
-msgid  "Refresh form"
+msgid "Refresh form"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
 #, fuzzy
-msgid  "Get"
+msgid "Get"
 msgstr "Get"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
 #, fuzzy
-msgid  "Post"
+msgid "Post"
 msgstr "Post"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
-msgid  "Multipart"
+msgid "Multipart"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Matn"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 #, fuzzy
-msgid  "Standard (short)"
+msgid "Standard (short)"
 msgstr "Andoza (qisqa)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
 #, fuzzy
-msgid  "Standard (short YY)"
+msgid "Standard (short YY)"
 msgstr "Andoza (qisqa YY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
 #, fuzzy
-msgid  "Standard (short YYYY)"
+msgid "Standard (short YYYY)"
 msgstr "Andoza (qisqa YYYY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
 #, fuzzy
-msgid  "Standard (long)"
+msgid "Standard (long)"
 msgstr "Andoza (uzun)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
 #, fuzzy
-msgid  "DD/MM/YY"
+msgid "DD/MM/YY"
 msgstr "DD/MM/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
 #, fuzzy
-msgid  "MM/DD/YY"
+msgid "MM/DD/YY"
 msgstr "MM/DD/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
 #, fuzzy
-msgid  "YY/MM/DD"
+msgid "YY/MM/DD"
 msgstr "YY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
 #, fuzzy
-msgid  "DD/MM/YYYY"
+msgid "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
 #, fuzzy
-msgid  "MM/DD/YYYY"
+msgid "MM/DD/YYYY"
 msgstr "MM/DD/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
 #, fuzzy
-msgid  "YYYY/MM/DD"
+msgid "YYYY/MM/DD"
 msgstr "YYYY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
 #, fuzzy
-msgid  "YY-MM-DD"
+msgid "YY-MM-DD"
 msgstr "YY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
 #, fuzzy
-msgid  "YYYY-MM-DD"
+msgid "YYYY-MM-DD"
 msgstr "YYYY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
 #, fuzzy
-msgid  "13:45"
+msgid "13:45"
 msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
 #, fuzzy
-msgid  "13:45:00"
+msgid "13:45:00"
 msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
 #, fuzzy
-msgid  "01:45 PM"
+msgid "01:45 PM"
 msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
 #, fuzzy
-msgid  "01:45:00 PM"
+msgid "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
 #, fuzzy
-msgid  "Not Selected"
+msgid "Not Selected"
 msgstr "Tanlanmagan"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
 #, fuzzy
-msgid  "Selected"
+msgid "Selected"
 msgstr "Tanlangan"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
 #, fuzzy
-msgid  "Not Defined"
+msgid "Not Defined"
 msgstr "Aniqlanmagan"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
 #, fuzzy
-msgid  "All records"
+msgid "All records"
 msgstr "Hamma yozuvlar"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
 #, fuzzy
-msgid  "Active record"
+msgid "Active record"
 msgstr "Aktiv yozuvlar"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
 #, fuzzy
-msgid  "Current page"
+msgid "Current page"
 msgstr "Joriy sahifa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
 #, fuzzy
-msgid  "No"
+msgid "No"
 msgstr "Yoʻq"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
 #, fuzzy
-msgid  "Yes"
+msgid "Yes"
 msgstr "Ha"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
-msgid  "Parent Form"
+msgid "Parent Form"
 msgstr ""
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
+#, fuzzy
+msgid "None"
+msgstr "Yoʻq"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
-msgid  "Single"
+msgid "Single"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
-msgid  "Multi"
+msgid "Multi"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
 #, fuzzy
-msgid  "Range"
+msgid "Range"
 msgstr "Oraliq"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 #, fuzzy
-msgid  "Fill parameters"
+msgid "Fill parameters"
 msgstr "Toʻldirish parametrlari"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
-msgid  "Execute action"
+msgid "Execute action"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 #, fuzzy
-msgid  "After updating"
+msgid "After updating"
 msgstr "Yangilangandan keyin"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 #, fuzzy
-msgid  "Before updating"
+msgid "Before updating"
 msgstr "Yangilashdan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 #, fuzzy
-msgid  "Before record action"
+msgid "Before record action"
 msgstr "Yozuv amalidan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 #, fuzzy
-msgid  "After record action"
+msgid "After record action"
 msgstr "Yozuv amalidan keyin"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 #, fuzzy
-msgid  "Confirm deletion"
+msgid "Confirm deletion"
 msgstr "Olib tashlashni tasdiqlash"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 #, fuzzy
-msgid  "Error occurred"
+msgid "Error occurred"
 msgstr "Xatolik yuz berdi"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 #, fuzzy
-msgid  "When receiving focus"
+msgid "When receiving focus"
 msgstr "Fokus olinayotganda"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 #, fuzzy
-msgid  "When losing focus"
+msgid "When losing focus"
 msgstr "Fokus yoʻqotilayotganda"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 #, fuzzy
-msgid  "Item status changed"
+msgid "Item status changed"
 msgstr "Element holati oʻzgardi"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 #, fuzzy
-msgid  "Key pressed"
+msgid "Key pressed"
 msgstr "Tugma bosilgan"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 #, fuzzy
-msgid  "Key released"
+msgid "Key released"
 msgstr "Tugma qoʻyib yuborildi"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 #, fuzzy
-msgid  "When loading"
+msgid "When loading"
 msgstr "Yuklanayotganda"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 #, fuzzy
-msgid  "Before reloading"
+msgid "Before reloading"
 msgstr "Qayta yuklashdan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 #, fuzzy
-msgid  "When reloading"
+msgid "When reloading"
 msgstr "Qayta yuklanayotganda"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse moved while key pressed"
+msgid "Mouse moved while key pressed"
 msgstr "Tugma bosilganda sichqonchani qimirlatish"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse inside"
+msgid "Mouse inside"
 msgstr "Sichqoncha ichkarida"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse outside"
+msgid "Mouse outside"
 msgstr "Sichqoncha tashqarida"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse moved"
+msgid "Mouse moved"
 msgstr "Sichqonchani qimirlatish"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse button pressed"
+msgid "Mouse button pressed"
 msgstr "Sichqoncha tugmasi bosilgan"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 #, fuzzy
-msgid  "Mouse button released"
+msgid "Mouse button released"
 msgstr "Sichqoncha tugmasi qoʻyib yuborildi"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 #, fuzzy
-msgid  "Before record change"
+msgid "Before record change"
 msgstr "Yozuv oʻzgarishidan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 #, fuzzy
-msgid  "After record change"
+msgid "After record change"
 msgstr "Yozuv oʻzgarishidan keyin"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 #, fuzzy
-msgid  "After resetting"
+msgid "After resetting"
 msgstr "Tiklangandan keyin"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 #, fuzzy
-msgid  "Prior to reset"
+msgid "Prior to reset"
 msgstr "Tiklashdan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
-msgid  "Approve action"
+msgid "Approve action"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 #, fuzzy
-msgid  "Before submitting"
+msgid "Before submitting"
 msgstr "Tasdiqlashdan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 #, fuzzy
-msgid  "Text modified"
+msgid "Text modified"
 msgstr "Matn oʻzgartirilgan"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 #, fuzzy
-msgid  "Before unloading"
+msgid "Before unloading"
 msgstr "Yopishdan oldin"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 #, fuzzy
-msgid  "When unloading"
+msgid "When unloading"
 msgstr "Yuklanmasa"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 #, fuzzy
-msgid  "Changed"
+msgid "Changed"
 msgstr "Oʻzgartirilgan"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 #, fuzzy
-msgid  "Events"
+msgid "Events"
 msgstr "Hodisalar"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 #, fuzzy
-msgid  "Analyze SQL command"
+msgid "Analyze SQL command"
 msgstr "SQL buyrugʻi tahili"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 #, fuzzy
-msgid  "PositionX"
+msgid "PositionX"
 msgstr "Xholati"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 #, fuzzy
-msgid  "PositionY"
+msgid "PositionY"
 msgstr "Yholati"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "Sarlavha"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 #, fuzzy
-msgid  "Page (step)"
+msgid "Page (step)"
 msgstr "Sahifa (bosqich)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 #, fuzzy
-msgid  "Progress value"
+msgid "Progress value"
 msgstr "Jarayon qiymati"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 #, fuzzy
-msgid  "Progress value min."
+msgid "Progress value min."
 msgstr "Jarayonning minimal qiymati"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Progress value max."
+msgid "Progress value max."
 msgstr "Jarayonning maksimal qiymati"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 #, fuzzy
-msgid  "Scroll value"
+msgid "Scroll value"
 msgstr "Varaqlash qiymati"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 #, fuzzy
-msgid  "Scroll value max."
+msgid "Scroll value max."
 msgstr "Aylantirishning maksimal qiymati"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 #, fuzzy
-msgid  "Scroll value min."
+msgid "Scroll value min."
 msgstr "Aylantirishning minimal qiymati"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 #, fuzzy
-msgid  "Default scroll value"
+msgid "Default scroll value"
 msgstr "Andoza varaqlash qiymati"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 #, fuzzy
-msgid  "Small change"
+msgid "Small change"
 msgstr "Kichik oʻzgarish"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 #, fuzzy
-msgid  "Large change"
+msgid "Large change"
 msgstr "Katta oʻzgarish"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 #, fuzzy
-msgid  "Delay"
+msgid "Delay"
 msgstr "Kechikish"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 #, fuzzy
-msgid  "Repeat"
+msgid "Repeat"
 msgstr "Takrorlash"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 #, fuzzy
-msgid  "Visible size"
+msgid "Visible size"
 msgstr "Koʻrinadigan oʻlcham"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
+msgid "Orientation"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 #, fuzzy
-msgid  "Horizontal"
+msgid "Horizontal"
 msgstr "Gorizontal"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
 #, fuzzy
-msgid  "Vertical"
+msgid "Vertical"
 msgstr "Vertikal"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 #, fuzzy
-msgid  "While adjusting"
+msgid "While adjusting"
 msgstr "Tekislash mobaynida"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "Sana"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 #, fuzzy
-msgid  "State"
+msgid "State"
 msgstr "Viloyat"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 #, fuzzy
-msgid  "Time"
+msgid "Time"
 msgstr "Vaqt"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 #, fuzzy
-msgid  "Scale"
+msgid "Scale"
 msgstr "Masshtab"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Button type"
+msgid "Button type"
 msgstr "Tugma turi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "Andoza"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "OK"
+msgid "OK"
 msgstr "OK"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Bekor qilish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
 #, fuzzy
-msgid  "Help"
+msgid "Help"
 msgstr "Yordam"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 #, fuzzy
-msgid  "The connection to the data source \"$name$\" could not be established."
+msgid "The connection to the data source \"$name$\" could not be established."
 msgstr "\"$name$\" maʼlumot manbasiga ulanib boʻlmadi."
+
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
+#, fuzzy
+msgid "Text"
+msgstr "Matn"
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 #, fuzzy
-msgid  "Linked cell"
+msgid "Linked cell"
 msgstr "Bogʻlangan katak"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
+msgid "Source cell range"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Contents of the linked cell"
+msgid "Contents of the linked cell"
 msgstr "Bogʻlangan kataklarning tarkibi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
-msgid  "The selected entry"
+msgid "The selected entry"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
-msgid  "Position of the selected entry"
+msgid "Position of the selected entry"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 #, fuzzy
-msgid  "Scrollbars"
+msgid "Scrollbars"
 msgstr "Varaqlash panellari"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 #, fuzzy
-msgid  "Single-line"
+msgid "Single-line"
 msgstr "Bitta satr"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "Multi-line"
+msgid "Multi-line"
 msgstr "Koʻp satr"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
+msgid "Multi-line with formatting"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Symbol color"
+msgid "Symbol color"
 msgstr "Belgi rangi"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Text lines end with"
+msgid "Text lines end with"
 msgstr "Matn satrlari quyidagilar bilan tugaydi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 #, fuzzy
-msgid  "LF (Unix)"
+msgid "LF (Unix)"
 msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 #, fuzzy
-msgid  "CR+LF (Windows)"
+msgid "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
+#, fuzzy
+msgid "None"
+msgstr "Yoʻq"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
+#, fuzzy
+msgid "Horizontal"
+msgstr "Gorizontal"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
+#, fuzzy
+msgid "Vertical"
+msgstr "Vertikal"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 #, fuzzy
-msgid  "Both"
+msgid "Both"
 msgstr "Ikkalasi ham"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
+#, fuzzy
+msgid "Table"
+msgstr "Jadval"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
+#, fuzzy
+msgid "Query"
+msgstr "Soʻrov"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 #, fuzzy
-msgid  "SQL command"
+msgid "SQL command"
 msgstr "SQL buyrugʻi"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
+msgid "Toggle"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 #, fuzzy
-msgid  "Take Focus on Click"
+msgid "Take Focus on Click"
 msgstr "Bosilganda fokusni ushlash"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 #, fuzzy
-msgid  "Hide selection"
+msgid "Hide selection"
 msgstr "Tanlashni bekitish"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 #, fuzzy
-msgid  "Style"
+msgid "Style"
 msgstr "Uslub"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 #, fuzzy
-msgid  "3D"
+msgid "3D"
 msgstr "3D"
+
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
+#, fuzzy
+msgid "Flat"
+msgstr "Yassi"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Border color"
+msgid "Border color"
 msgstr "Chegara rangi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 #, fuzzy
-msgid  "Left top"
+msgid "Left top"
 msgstr "Chapdan yuqorida"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 #, fuzzy
-msgid  "Left centered"
+msgid "Left centered"
 msgstr "Chapdan markazda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 #, fuzzy
-msgid  "Left bottom"
+msgid "Left bottom"
 msgstr "Chapdan pastda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 #, fuzzy
-msgid  "Right top"
+msgid "Right top"
 msgstr "Yuqoridan chapda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 #, fuzzy
-msgid  "Right centered"
+msgid "Right centered"
 msgstr "Yuqorida markazda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 #, fuzzy
-msgid  "Right bottom"
+msgid "Right bottom"
 msgstr "Oʻngda pastda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 #, fuzzy
-msgid  "Above left"
+msgid "Above left"
 msgstr "Yuqoridan chapda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 #, fuzzy
-msgid  "Above centered"
+msgid "Above centered"
 msgstr "Yuqoridan markazda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 #, fuzzy
-msgid  "Above right"
+msgid "Above right"
 msgstr "Yuqoridan oʻngda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 #, fuzzy
-msgid  "Below left"
+msgid "Below left"
 msgstr "Pastdan chapda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 #, fuzzy
-msgid  "Below centered"
+msgid "Below centered"
 msgstr "Pastdan markazda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 #, fuzzy
-msgid  "Below right"
+msgid "Below right"
 msgstr "Pastdan oʻngda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 #, fuzzy
-msgid  "Centered"
+msgid "Centered"
 msgstr "Markazda"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
+msgid "Wrap text automatically"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Text type"
+msgid "Text type"
 msgstr "Matnning turi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 #, fuzzy
-msgid  "Hide"
+msgid "Hide"
 msgstr "Bekitish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
 #, fuzzy
-msgid  "Show"
+msgid "Show"
 msgstr "Koʻrsatish"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 #, fuzzy
-msgid  "XML data model"
+msgid "XML data model"
 msgstr "XML maʼlumot modeli"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
+msgid "Binding expression"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 #, fuzzy
-msgid  "Required"
+msgid "Required"
 msgstr "Talab qilinadi"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 #, fuzzy
-msgid  "List entry source"
+msgid "List entry source"
 msgstr "Roʻyxat elementi manbasi"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
+msgid "Relevant"
 msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
+#, fuzzy
+msgid "Read-only"
+msgstr "Faqat oʻqish uchun"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 #, fuzzy
-msgid  "Constraint"
+msgid "Constraint"
 msgstr "Cheklov"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 #, fuzzy
-msgid  "Calculation"
+msgid "Calculation"
 msgstr "Hisoblash"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Data type"
+msgid "Data type"
 msgstr "Sana turi"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
+msgid "Whitespaces"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 #, fuzzy
-msgid  "Preserve"
+msgid "Preserve"
 msgstr "Zahirada saqlash"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 #, fuzzy
-msgid  "Replace"
+msgid "Replace"
 msgstr "Almashtirish"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
+msgid "Collapse"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 #, fuzzy
-msgid  "Pattern"
+msgid "Pattern"
 msgstr "Namuna"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Length"
+msgid "Length"
 msgstr "Uzunligi"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Length (at least)"
+msgid "Length (at least)"
 msgstr "Uzunligi (minimal)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 #, fuzzy
-msgid  "Length (at most)"
+msgid "Length (at most)"
 msgstr "Uzunligi (maksimal)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
+msgid "Digits (total)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
-msgid  "Digits (fraction)"
+msgid "Digits (fraction)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
-msgid  "Max. (inclusive)"
+msgid "Max. (inclusive)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
-msgid  "Max. (exclusive)"
+msgid "Max. (exclusive)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
-msgid  "Min. (inclusive)"
+msgid "Min. (inclusive)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
-msgid  "Min. (exclusive)"
+msgid "Min. (exclusive)"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
+msgid "Submission"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
+msgid "Binding"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Selection type"
+msgid "Selection type"
 msgstr "Tanlash turi"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
-msgid  "Root displayed"
+msgid "Root displayed"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
-msgid  "Show handles"
+msgid "Show handles"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
-msgid  "Show root handles"
+msgid "Show root handles"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
 #, fuzzy
-msgid  "Editable"
+msgid "Editable"
 msgstr "Tahrirlab boʻladigan"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
-msgid  "Invokes stop node editing"
+msgid "Invokes stop node editing"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
-msgid  "With title bar"
+msgid "With title bar"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
-msgid  "No Label"
+msgid "No Label"
 msgstr ""
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
+#, fuzzy
+msgid "No"
+msgstr "Yoʻq"
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
-msgid  "Keep Ratio"
+msgid "Keep Ratio"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
 #, fuzzy
-msgid  "Fit to Size"
+msgid "Fit to Size"
 msgstr "Hajmiga moslash"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
-msgid  "Input required"
+msgid "Input required"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
 #, fuzzy
-msgid  "Text direction"
+msgid "Text direction"
 msgstr "Matnning yoʻnalishi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
 #, fuzzy
-msgid  "Left-to-right"
+msgid "Left-to-right"
 msgstr "Chapdan oʻngga"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
 #, fuzzy
-msgid  "Right-to-left"
+msgid "Right-to-left"
 msgstr "Oʻngdan chapga"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
-msgid  "Use superordinate object settings"
+msgid "Use superordinate object settings"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
-msgid  "Never"
+msgid "Never"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
-msgid  "When focused"
+msgid "When focused"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
-msgid  "Always"
+msgid "Always"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
-msgid  "Anchor"
+msgid "Anchor"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Paragraph"
+msgid "To Paragraph"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
 #, fuzzy
-msgid  "As Character"
+msgid "As Character"
 msgstr "Belgi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
-#, fuzzy
-msgid  "To Page"
+msgid "To Page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
-msgid  "To Frame"
+msgid "To Frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 #, fuzzy
-msgid  "To Character"
+msgid "To Character"
 msgstr "Belgi"
 
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
+msgid "To Page"
+msgstr ""
+
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
-msgid  "To Cell"
+msgid "To Cell"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
-msgid  "Regular"
+msgid "Regular"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
+msgid "Bold Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
-msgid  "Italic"
+msgid "Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
-msgid  "Bold"
+msgid "Bold"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "(Default)"
+msgid "(Default)"
 msgstr "Andoza"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "New Data Type"
+msgid "New Data Type"
 msgstr "Yangi m aʼlumot turi"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Type a name for the new data type:"
+msgid "Type a name for the new data type:"
 msgstr "Yangi maʼlumot turi nomini kiriting:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgid "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 msgstr ""
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Button"
+msgid "Button"
 msgstr "Tugma"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Option Button"
+msgid "Option Button"
 msgstr "Moslamalar tugmasi"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
 #, fuzzy
-msgid  "Check Box"
+msgid "Check Box"
 msgstr "Bayroqcha"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 #, fuzzy
-msgid  "Label Field"
+msgid "Label Field"
 msgstr "Yorliq maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
 #, fuzzy
-msgid  "Group Box"
+msgid "Group Box"
 msgstr "Guruh qutisi"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
 #, fuzzy
-msgid  "Text Box"
+msgid "Text Box"
 msgstr "Matn maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 #, fuzzy
-msgid  "Formatted Field"
+msgid "Formatted Field"
 msgstr "Formatlangan maydon"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
 #, fuzzy
-msgid  "List Box"
+msgid "List Box"
 msgstr "Roʻyxat"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
 #, fuzzy
-msgid  "Combo Box"
+msgid "Combo Box"
 msgstr "Ochiladigan roʻyxat qutisi"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Image Button"
+msgid "Image Button"
 msgstr "Rasm tugmasi"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
 #, fuzzy
-msgid  "Hidden Control"
+msgid "Hidden Control"
 msgstr "Bekitilgan boshqargich"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
 #, fuzzy
-msgid  "Control (unknown type)"
+msgid "Control (unknown type)"
 msgstr "Boshqargichlar (nomaʼlum turi)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
+msgid "Image Control"
 msgstr ""
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
 #, fuzzy
-msgid  "File Selection"
+msgid "File Selection"
 msgstr "Faylni tanlash"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Date Field"
+msgid "Date Field"
 msgstr "Sana maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Time Field"
+msgid "Time Field"
 msgstr "Vaqt maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Numeric Field"
+msgid "Numeric Field"
 msgstr "Son maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Currency Field"
+msgid "Currency Field"
 msgstr "Pul maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
 #, fuzzy
-msgid  "Pattern Field"
+msgid "Pattern Field"
 msgstr "Niqobli kiritish maydoni"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
 #, fuzzy
-msgid  "Table Control "
+msgid "Table Control "
 msgstr "Jadval boshqaruvi"
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
 #, fuzzy
-msgid  "Default"
+msgid "Default"
 msgstr "Andoza"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "General"
+msgid "General"
 msgstr "Umumiy"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Data"
+msgid "Data"
 msgstr "Maʼlumot"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 #, fuzzy
-msgid  "No"
+msgid "No"
 msgstr "Yoʻq"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
 #, fuzzy
-msgid  "Yes"
+msgid "Yes"
 msgstr "Ha"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Help"
+msgid "Help"
 msgstr "Yordam"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 #, fuzzy
-msgid  "<Embedded-Image>"
+msgid "<Embedded-Image>"
 msgstr "<Embedded-Image>"
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
 #, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr "Matn"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgid "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr ""
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~No assignment"
+msgid "~No assignment"
 msgstr "~Tayinlanmasin"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
 #, fuzzy
-msgid  "Label Field Selection"
+msgid "Label Field Selection"
 msgstr "Yorliq maydonini tanlash"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
 #, fuzzy
-msgid  "Forms"
+msgid "Forms"
 msgstr "Formalar"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Tab Order"
+msgid "Tab Order"
 msgstr "Tab tartibi"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Controls"
+msgid "Controls"
 msgstr "Boshqargichlar"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Move Up"
+msgid "Move Up"
 msgstr "Yuqoriga koʻchirish"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Move Down"
+msgid "Move Down"
 msgstr "Pastga koʻchirish"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Automatic Sort"
+msgid "Automatic Sort"
 msgstr "Avtomatik saralash"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Set"
+msgid "Set"
 msgstr "Oʻrnatish"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 #, fuzzy
-msgid  "Linear ascending"
+msgid "Linear ascending"
 msgstr "Chiziqqa nisbatan koʻpayishi boʻyicha"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 #, fuzzy
-msgid  "Linear descending"
+msgid "Linear descending"
 msgstr "Chiziqqa nisbatan kamayishi boʻyicha"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 #, fuzzy
-msgid  "Original values"
+msgid "Original values"
 msgstr "Asl qiymatlar"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 #, fuzzy
-msgid  "Exponential increasing"
+msgid "Exponential increasing"
 msgstr "Eksponenta boʻyicha ortishi"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "About\n Dev~ice"
-msgstr "U~skuna\n haqida"
+msgid "About\n Dev~ice"
+msgstr ""
+"U~skuna\n"
+" haqida"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Create\nPreview"
-msgstr "Koʻrib chiqishni\nyaratish"
+msgid "Create\nPreview"
+msgstr ""
+"Koʻrib chiqishni\n"
+"yaratish"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Preview"
+msgid "Preview"
 msgstr "Koʻrib chiqish"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Scan area"
+msgid "Scan area"
 msgstr "Skan qilish hududi"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Left:"
+msgid "Left:"
 msgstr "Chap:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Top:"
+msgid "Top:"
 msgstr "Yuqorida:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Right:"
+msgid "Right:"
 msgstr "Oʻng:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Bottom:"
+msgid "Bottom:"
 msgstr "Past:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Device used:"
+msgid "Device used:"
 msgstr "Ishlatilayotgan uskuna:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Resolution [~DPI]"
+msgid "Resolution [~DPI]"
 msgstr "Oʻlcham [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Show advanced options"
+msgid "Show advanced options"
 msgstr "Qoʻshimcha parametrlarni koʻrsatish"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Options:"
+msgid "Options:"
 msgstr "Parametrlar:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Vector element"
+msgid "Vector element"
 msgstr "Vektorli element"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Set"
+msgid "Set"
 msgstr "Oʻrnatish"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 #, fuzzy
-msgid  "Scanner"
+msgid "Scanner"
 msgstr "Skaner"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 #, fuzzy
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "Uskuna: %s\nIsh.chiqaruvchi: %s\nRusumi: %s\nTuri: %s"
+msgid "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+"Uskuna: %s\n"
+"Ish.chiqaruvchi: %s\n"
+"Rusumi: %s\n"
+"Turi: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while scanning."
+msgid "An error occurred while scanning."
 msgstr "Skan qilish xatoligi"
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
 #, fuzzy
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "Uskuna koʻrib chiqish usuli uchun moslanmagan. Buning oʻrniga skan qilingan tasvir ishlatiladi. Bu biroz vaqtni olishi mumkin."
+msgid "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"Uskuna koʻrib chiqish usuli uchun moslanmagan. Buning oʻrniga skan qilingan "
+"tasvir ishlatiladi. Bu biroz vaqtni olishi mumkin."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
 #, fuzzy
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgid "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "SANE interfeysi ishga tushirilmadi. Skan qilib boʻlmaydi."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 #, fuzzy
-msgid  "Check for ~Updates..."
+msgid "Check for ~Updates..."
 msgstr "Yangilanishga ~tekshirish..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
 #, fuzzy
-msgid  "Checking..."
+msgid "Checking..."
 msgstr "Tekshirilmoqda..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
 #, fuzzy
-msgid  "Checking for an update failed."
+msgid "Checking for an update failed."
 msgstr "Yangilanishga tekshirib boʻlmadi."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION yangilangan."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgid "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Check for Updates"
+msgid "Check for Updates"
 msgstr "Yangilanishga tekshirish"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
 #, fuzzy
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
 #, fuzzy
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgid "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
 #, fuzzy
-msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME fayli %DOWNLOAD_PATH manziliga yozib olindi."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgid "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
 #, fuzzy
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
 #, fuzzy
-msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgid "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "%PRODUCTNAME %NEXTVERSION yozib olindi. Oʻrnatishga tayyor."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to cancel the download?"
+msgid "Do you really want to cancel the download?"
 msgstr "Rostdan yozib olishni bekor qilmoqchimisiz?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
 #, fuzzy
-msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr "Yangilanishni oʻrnatish uchun, %PRODUCTNAME %PRODUCTVERSION yopilishi kerak. Yangilanishlarni oʻrnatishni istaysizmi?"
+msgid "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+"Yangilanishni oʻrnatish uchun, %PRODUCTNAME %PRODUCTVERSION yopilishi kerak. "
+"Yangilanishlarni oʻrnatishni istaysizmi?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
 #, fuzzy
-msgid  "Install ~now"
+msgid "Install ~now"
 msgstr "~Hozir oʻrnatish"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 #, fuzzy
-msgid  "Install ~later"
+msgid "Install ~later"
 msgstr "~Keyinroq oʻrnatish"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
-msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgid "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
 #, fuzzy
-msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr "Shunday nomli fayl allaqachon mavjud! Mavjud faylni almashtirishni istaysizmi?"
+msgid "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+"Shunday nomli fayl allaqachon mavjud! Mavjud faylni almashtirishni "
+"istaysizmi?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
-msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgid "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
-msgid  "Reload File"
+msgid "Reload File"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
-msgid  "Continue"
+msgid "Continue"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
 #, fuzzy
-msgid  "%PERCENT%"
+msgid "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
 #, fuzzy
-msgid  "Status"
+msgid "Status"
 msgstr "Holati"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Description"
+msgid "Description"
 msgstr "Taʼrifi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 #, fuzzy
-msgid  "Close"
+msgid "Close"
 msgstr "Yopish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 #, fuzzy
-msgid  "~Download"
+msgid "~Download"
 msgstr "~Yozib olish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 #, fuzzy
-msgid  "~Install"
+msgid "~Install"
 msgstr "~Oʻrnatish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
 #, fuzzy
-msgid  "~Pause"
+msgid "~Pause"
 msgstr "~Vaqtincha toʻxtatish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
 #, fuzzy
-msgid  "~Resume"
+msgid "~Resume"
 msgstr "~Davom etish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 #, fuzzy
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "Bekor qilish"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME update available"
+msgid "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME yangilanishi mavjud"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "Click here to start the download."
+msgid "Click here to start the download."
 msgstr "Yozib olishni boshlash uchun shu yerni bosing."
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME yangilanishi mavjud"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
 #, fuzzy
-msgid  "Click here for more information."
+msgid "Click here for more information."
 msgstr "Tafsilot uchun bu yerni bosing."
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
+#, fuzzy
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME yangilanishi mavjud"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
 #, fuzzy
-msgid  "Download of update begins."
+msgid "Download of update begins."
 msgstr "Yangilanish uchun yozib olish boshlandi."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
 #, fuzzy
-msgid  "Download of update in progress"
+msgid "Download of update in progress"
 msgstr "Yangilanish uchun yozib olinmoqda"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
 #, fuzzy
-msgid  "Download of update paused"
+msgid "Download of update paused"
 msgstr "Yangilanish uchun yozib olish vaqtincha toʻxtatildi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
 #, fuzzy
-msgid  "Click here to resume."
+msgid "Click here to resume."
 msgstr "Davom ettirish uchun bosing."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
 #, fuzzy
-msgid  "Download of update stalled"
+msgid "Download of update stalled"
 msgstr "Yangilanish uchun yozib olish toʻxtab qoldi"
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
+#, fuzzy
+msgid "Click here for more information."
+msgstr "Tafsilot uchun bu yerni bosing."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "Download of update completed"
+msgid "Download of update completed"
 msgstr "Yangilanish uchun yozib olish tugadi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "Click here to start the installation."
+msgid "Click here to start the installation."
 msgstr "Oʻrnatishni boshlash uchun shu yerni bosing."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 #, fuzzy
-msgid  "Updates for extensions available"
+msgid "Updates for extensions available"
 msgstr "Kengaytmalar uchun yangilanish mavjud"
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
+#, fuzzy
+msgid "Click here for more information."
+msgstr "Tafsilot uchun bu yerni bosing."

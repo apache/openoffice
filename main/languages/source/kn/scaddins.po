@@ -1,1528 +1,3367 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-msgid  "Calculates the number of weeks in a specific period"
+msgid "Calculates the number of weeks in a specific period"
 msgstr "ನಿರ್ದಿಷ್ಟ ಅವಧಿಯಲ್ಲಿರುವ ವಾರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಗಣಿಸುತ್ತದೆ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-msgid  "Start date"
+msgid "Start date"
 msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
-msgid  "First day of the period"
+msgid "First day of the period"
 msgstr "ಅವಧಿಯ ಮೊದಲ ದಿನ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-msgid  "End date"
+msgid "End date"
 msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
-msgid  "Last day of the period"
+msgid "Last day of the period"
 msgstr "ಅವಧಿಯ ಕೊನೆಯ ದಿನ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "ಬಗೆ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ವಾರಗಳು."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-msgid  "Determines the number of months in a specific period."
+msgid "Determines the number of months in a specific period."
 msgstr "ನಿರ್ದಿಷ್ಟ ಅವಧಿಯಲ್ಲಿರುವ ತಿಂಗಳುಗಳ ಸಂಖ್ಯೆಯನ್ನು ಗಣಿಸುತ್ತದೆ."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-msgid  "First day of the period."
+msgid "First day of the period."
 msgstr "ಅವಧಿಯ ಮೊದಲ ದಿನ."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
+msgid "End date"
+msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-msgid  "Last day of the period."
+msgid "Last day of the period."
 msgstr "ಅವಧಿಯ ಕೊನೆಯ ದಿನ."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
+msgid "Type"
+msgstr "ಬಗೆ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ತಿಂಗಳುಗಳು."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-msgid  "Calculates the number of years in a specific period."
+msgid "Calculates the number of years in a specific period."
 msgstr "ನಿರ್ದಿಷ್ಟ ಅವಧಿಯಲ್ಲಿರುವ ವರ್ಷಗಳ ಸಂಖ್ಯೆಯನ್ನು ಗಣಿಸುತ್ತದೆ."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
+msgid "First day of the period"
+msgstr "ಅವಧಿಯ ಮೊದಲ ದಿನ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
+msgid "End date"
+msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
+msgid "Last day of the period"
+msgstr "ಅವಧಿಯ ಕೊನೆಯ ದಿನ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
+msgid "Type"
+msgstr "ಬಗೆ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
+msgid "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
 msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ವರ್ಷಗಳು."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
-msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr "ದಿನಾಂಕವು ಅಧಿಕವರ್ಷದ ದಿನವಾದರೆ ೧(ಸರಿ), ಇಲ್ಲದಿದ್ದರೆ ೦ (ತಪ್ಪು) ಎಂದು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
+msgid "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
+msgstr ""
+"ದಿನಾಂಕವು ಅಧಿಕವರ್ಷದ ದಿನವಾದರೆ ೧(ಸರಿ), ಇಲ್ಲದಿದ್ದರೆ ೦ (ತಪ್ಪು) ಎಂದು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "ದಿನಾಂಕ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
+msgid "Any day in the desired year"
 msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರೊಂದು ದಿನ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
-msgid  "Returns the number of days of the month in which the date entered occurs"
+msgid "Returns the number of days of the month in which the date entered occurs"
 msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ತಿಂಗಳಿನಲ್ಲಿರುವ ಒಟ್ಟು ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
+msgid "Date"
+msgstr "ದಿನಾಂಕ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-msgid  "Any day in the desired month"
+msgid "Any day in the desired month"
 msgstr "ಅಪೇಕ್ಷಿಸಿದ ತಿಂಗಳ ಯಾವುದಾದರೊಂದು ದಿನ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of days of the year in which the date entered occurs."
+msgid "Returns the number of days of the year in which the date entered occurs."
 msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ವರ್ಷದಲ್ಲಿರುವ ಒಟ್ಟು ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
+msgid "Date"
+msgstr "ದಿನಾಂಕ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
+msgid "Any day in the desired year"
+msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರೊಂದು ದಿನ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
+msgid "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ವರ್ಷದಲ್ಲಿರುವ ಒಟ್ಟು ವಾರಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
+msgid "Date"
+msgstr "ದಿನಾಂಕ"
+
+#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
+msgid "Any day in the desired year"
+msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರೊಂದು ದಿನ"
+
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "ROT13 ಅಲ್ಗಾರಿತಮ್‌ ಬಳಸಿ ಪಠ್ಯವನ್ನು ಗೂಢಲಿಪೀಕರಣಗೊಳಿಸುತ್ತದೆ ಅಥವಾ ಗೂಢಲಿಪಿ ವಿಮುಕ್ತಗೊಳಿಸುತ್ತದೆ"
+msgid "Encrypts or decrypts a text using the ROT13 algorithm"
+msgstr ""
+"ROT13 ಅಲ್ಗಾರಿತಮ್‌ ಬಳಸಿ ಪಠ್ಯವನ್ನು ಗೂಢಲಿಪೀಕರಣಗೊಳಿಸುತ್ತದೆ ಅಥವಾ ಗೂಢಲಿಪಿ "
+"ವಿಮುಕ್ತಗೊಳಿಸುತ್ತದೆ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-msgid  "Text"
+msgid "Text"
 msgstr "ಪಠ್ಯ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-msgid  "Text to be encrypted or text already encrypted"
+msgid "Text to be encrypted or text already encrypted"
 msgstr "ಗೂಢಲಿಪೀಕರಣಗೊಳಿಸಬೇಕಾದ ಪಠ್ಯ ಅಥವಾ ಈಗಾಗಲೇ ಗೂಢಲಿಪೀಕರಣಗೊಳಿಸಿದ ಪಠ್ಯ"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-msgid  "WEEKS"
+msgid "WEEKS"
 msgstr "WEEKS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-msgid  "MONTHS"
+msgid "MONTHS"
 msgstr "MONTHS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-msgid  "YEARS"
+msgid "YEARS"
 msgstr "YEARS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-msgid  "ISLEAPYEAR"
+msgid "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
-msgid  "DAYSINMONTH"
+msgid "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
-msgid  "DAYSINYEAR"
+msgid "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-msgid  "WEEKSINYEAR"
+msgid "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-msgid  "ROT13"
+msgid "ROT13"
 msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-msgid  "WORKDAY"
+msgid "WORKDAY"
 msgstr "WORKDAY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-msgid  "YEARFRAC"
+msgid "YEARFRAC"
 msgstr "YEARFRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-msgid  "EDATE"
+msgid "EDATE"
 msgstr "EDATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-msgid  "WEEKNUM"
+msgid "WEEKNUM"
 msgstr "WEEKNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-msgid  "EOMONTH"
+msgid "EOMONTH"
 msgstr "EOMONTH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-msgid  "NETWORKDAYS"
+msgid "NETWORKDAYS"
 msgstr "NETWORKDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-msgid  "AMORDEGRC"
+msgid "AMORDEGRC"
 msgstr "AMORDEGRC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-msgid  "AMORLINC"
+msgid "AMORLINC"
 msgstr "AMORLINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-msgid  "ACCRINT"
+msgid "ACCRINT"
 msgstr "ACCRINT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-msgid  "ACCRINTM"
+msgid "ACCRINTM"
 msgstr "ACCRINTM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-msgid  "RECEIVED"
+msgid "RECEIVED"
 msgstr "RECEIVED"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-msgid  "DISC"
+msgid "DISC"
 msgstr "DISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-msgid  "DURATION"
+msgid "DURATION"
 msgstr "DURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-msgid  "EFFECT"
+msgid "EFFECT"
 msgstr "EFFECT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-msgid  "CUMPRINC"
+msgid "CUMPRINC"
 msgstr "CUMPRINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-msgid  "CUMIPMT"
+msgid "CUMIPMT"
 msgstr "CUMIPMT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-msgid  "PRICE"
+msgid "PRICE"
 msgstr "PRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-msgid  "PRICEDISC"
+msgid "PRICEDISC"
 msgstr "PRICEDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-msgid  "PRICEMAT"
+msgid "PRICEMAT"
 msgstr "PRICEMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-msgid  "MDURATION"
+msgid "MDURATION"
 msgstr "MDURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
+msgid "NOMINAL"
 msgstr "NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-msgid  "DOLLARFR"
+msgid "DOLLARFR"
 msgstr "DOLLARFR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-msgid  "DOLLARDE"
+msgid "DOLLARDE"
 msgstr "DOLLARDE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-msgid  "YIELD"
+msgid "YIELD"
 msgstr "YIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-msgid  "YIELDDISC"
+msgid "YIELDDISC"
 msgstr "YIELDDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-msgid  "YIELDMAT"
+msgid "YIELDMAT"
 msgstr "YIELDMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-msgid  "TBILLEQ"
+msgid "TBILLEQ"
 msgstr "TBILLEQ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-msgid  "TBILLPRICE"
+msgid "TBILLPRICE"
 msgstr "TBILLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-msgid  "TBILLYIELD"
+msgid "TBILLYIELD"
 msgstr "TBILLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-msgid  "ODDFPRICE"
+msgid "ODDFPRICE"
 msgstr "ODDFPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-msgid  "ODDFYIELD"
+msgid "ODDFYIELD"
 msgstr "ODDFYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-msgid  "ODDLPRICE"
+msgid "ODDLPRICE"
 msgstr "ODDLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-msgid  "ODDLYIELD"
+msgid "ODDLYIELD"
 msgstr "ODDLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-msgid  "XIRR"
+msgid "XIRR"
 msgstr "XIRR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-msgid  "XNPV"
+msgid "XNPV"
 msgstr "XNPV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-msgid  "INTRATE"
+msgid "INTRATE"
 msgstr "INTRATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-msgid  "COUPNCD"
+msgid "COUPNCD"
 msgstr "COUPNCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-msgid  "COUPDAYS"
+msgid "COUPDAYS"
 msgstr "COUPDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-msgid  "COUPDAYSNC"
+msgid "COUPDAYSNC"
 msgstr "COUPDAYSNC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-msgid  "COUPDAYBS"
+msgid "COUPDAYBS"
 msgstr "COUPDAYBS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-msgid  "COUPPCD"
+msgid "COUPPCD"
 msgstr "COUPPCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-msgid  "COUPNUM"
+msgid "COUPNUM"
 msgstr "COUPNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-msgid  "FVSCHEDULE"
+msgid "FVSCHEDULE"
 msgstr "FVSCHEDULE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
-msgid  "ISEVEN"
+msgid "ISEVEN"
 msgstr "ISEVEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-msgid  "ISODD"
+msgid "ISODD"
 msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
-msgid  "GCD"
+msgid "GCD"
 msgstr "GCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
-msgid  "LCM"
+msgid "LCM"
 msgstr "LCM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-msgid  "MULTINOMIAL"
+msgid "MULTINOMIAL"
 msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-msgid  "SERIESSUM"
+msgid "SERIESSUM"
 msgstr "SERIESSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
-msgid  "QUOTIENT"
+msgid "QUOTIENT"
 msgstr "QUOTIENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-msgid  "MROUND"
+msgid "MROUND"
 msgstr "MROUND"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-msgid  "SQRTPI"
+msgid "SQRTPI"
 msgstr "SQRTPI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-msgid  "RANDBETWEEN"
+msgid "RANDBETWEEN"
 msgstr "RANDBETWEEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-msgid  "BESSELI"
+msgid "BESSELI"
 msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-msgid  "BESSELJ"
+msgid "BESSELJ"
 msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-msgid  "BESSELK"
+msgid "BESSELK"
 msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-msgid  "BESSELY"
+msgid "BESSELY"
 msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
-msgid  "BIN2DEC"
+msgid "BIN2DEC"
 msgstr "BIN2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
-msgid  "BIN2HEX"
+msgid "BIN2HEX"
 msgstr "BIN2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
-msgid  "BIN2OCT"
+msgid "BIN2OCT"
 msgstr "BIN2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-msgid  "DELTA"
+msgid "DELTA"
 msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
-msgid  "DEC2BIN"
+msgid "DEC2BIN"
 msgstr "DEC2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
-msgid  "DEC2HEX"
+msgid "DEC2HEX"
 msgstr "DEC2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
-msgid  "DEC2OCT"
+msgid "DEC2OCT"
 msgstr "DEC2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-msgid  "ERF"
+msgid "ERF"
 msgstr "ERF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-msgid  "ERFC"
+msgid "ERFC"
 msgstr "ERFC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-msgid  "GESTEP"
+msgid "GESTEP"
 msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
-msgid  "HEX2BIN"
+msgid "HEX2BIN"
 msgstr "HEX2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
-msgid  "HEX2DEC"
+msgid "HEX2DEC"
 msgstr "HEX2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
-msgid  "HEX2OCT"
+msgid "HEX2OCT"
 msgstr "HEX2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
-msgid  "IMABS"
+msgid "IMABS"
 msgstr "IMABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-msgid  "IMAGINARY"
+msgid "IMAGINARY"
 msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
-msgid  "IMPOWER"
+msgid "IMPOWER"
 msgstr "IMPOWER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
-msgid  "IMARGUMENT"
+msgid "IMARGUMENT"
 msgstr "IMARGUMENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
-msgid  "IMCOS"
+msgid "IMCOS"
 msgstr "IMCOS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
-msgid  "IMDIV"
+msgid "IMDIV"
 msgstr "IMDIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
-msgid  "IMEXP"
+msgid "IMEXP"
 msgstr "IMEXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
-msgid  "IMCONJUGATE"
+msgid "IMCONJUGATE"
 msgstr "IMCONJUGATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
-msgid  "IMLN"
+msgid "IMLN"
 msgstr "IMLN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
-msgid  "IMLOG10"
+msgid "IMLOG10"
 msgstr "IMLOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
-msgid  "IMLOG2"
+msgid "IMLOG2"
 msgstr "IMLOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
-msgid  "IMPRODUCT"
+msgid "IMPRODUCT"
 msgstr "IMPRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
-msgid  "IMREAL"
+msgid "IMREAL"
 msgstr "IMREAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
-msgid  "IMSIN"
+msgid "IMSIN"
 msgstr "IMSIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
-msgid  "IMSUB"
+msgid "IMSUB"
 msgstr "IMSUB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
-msgid  "IMSUM"
+msgid "IMSUM"
 msgstr "IMSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
-msgid  "IMSQRT"
+msgid "IMSQRT"
 msgstr "IMSQRT"
 
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid "IMCOT"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid "IMSINH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid "IMCOSH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid "IMCSCH"
+msgstr ""
+
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-msgid  "COMPLEX"
+msgid "COMPLEX"
 msgstr "COMPLEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
-msgid  "OCT2BIN"
+msgid "OCT2BIN"
 msgstr "OCT2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
-msgid  "OCT2DEC"
+msgid "OCT2DEC"
 msgstr "OCT2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
-msgid  "OCT2HEX"
+msgid "OCT2HEX"
 msgstr "OCT2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-msgid  "CONVERT"
+msgid "CONVERT"
 msgstr "CONVERT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-msgid  "FACTDOUBLE"
+msgid "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
-msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr "ನಿರ್ದಿಷ್ಟ ಸಂಖ್ಯೆಯ ಕಾರ್ಯದಿನಗಳ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the serial number of the date before or after a specified number of workdays"
+msgstr ""
+"ನಿರ್ದಿಷ್ಟ ಸಂಖ್ಯೆಯ ಕಾರ್ಯದಿನಗಳ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ "
+"ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-msgid  "Start date"
+msgid "Start date"
 msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
-msgid  "The start date"
+msgid "The start date"
 msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-msgid  "Days"
+msgid "Days"
 msgstr "ದಿನಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-msgid  "The number of workdays before or after the start date"
+msgid "The number of workdays before or after the start date"
 msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ಕೆಲಸದ ದಿನಗಳ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
-msgid  "Holidays"
+msgid "Holidays"
 msgstr "ರಜಾದಿನಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-msgid  "List of date values of days off (vacation, holidays, etc.)"
+msgid "List of date values of days off (vacation, holidays, etc.)"
 msgstr "ರಜಾ ದಿನಗಳ ದಿನಾಂಕ ಮೌಲ್ಯಗಳ ಪಟ್ಟಿ(ಬಿಡುವು ಕಾಲ, ರಜಾದಿನಗಳು, ಇತ್ಯಾದಿ)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
-msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr "ಆರಂಭ ದಿನಾಂಕ ಮತ್ತು ಅಂತ್ಯ ದಿನಾಂಕದ ನಡುವಿನ ಪೂರ್ಣ ದಿನಗಳನ್ನು ವರ್ಷದ ಭಿನ್ನಾಂಕದಂತೆ ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
+msgstr ""
+"ಆರಂಭ ದಿನಾಂಕ ಮತ್ತು ಅಂತ್ಯ ದಿನಾಂಕದ ನಡುವಿನ ಪೂರ್ಣ ದಿನಗಳನ್ನು ವರ್ಷದ ಭಿನ್ನಾಂಕದಂತೆ "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
+msgid "The start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
-msgid  "End date"
+msgid "End date"
 msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-msgid  "The end date"
+msgid "The end date"
 msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
-msgid  "Basis"
+msgid "Basis"
 msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-msgid  "Basis for determining the interest days"
+msgid "Basis for determining the interest days"
 msgstr "ಬಡ್ಡಿ ನೀಡುವ ದಿನಗಳ ಅವಧಿಯನ್ನು ನಿರ್ಧರಿಸಲು ಬೇಕಾದ ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "ಆರಂಭ ದಿನಾಂಕದ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the serial number of the date that is a specified number of months before or after the start date"
+msgstr ""
+"ಆರಂಭ ದಿನಾಂಕದ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
+msgid "The start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-msgid  "Months"
+msgid "Months"
 msgstr "ತಿಂಗಳುಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
-msgid  "Number of months before or after the start date"
+msgid "Number of months before or after the start date"
 msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ತಿಂಗಳುಗಳ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "ನಿರ್ದಿಷ್ಟ ದಿನಾಂಕವು ಸಂಭವವಾಗುವ ಕ್ಯಾಲೆಂಡರ್ ವಾರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
+msgid "Returns the number of the calendar week in which the specified date occurs."
+msgstr ""
+"ನಿರ್ದಿಷ್ಟ ದಿನಾಂಕವು ಸಂಭವವಾಗುವ ಕ್ಯಾಲೆಂಡರ್ ವಾರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-msgid  "Date"
+msgid "Date"
 msgstr "ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-msgid  "The date"
+msgid "The date"
 msgstr "ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-msgid  "Return type"
+msgid "Return type"
 msgstr "ಹಿಂದಿರುಗುವ ಬಗೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
+msgid "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "ವಾರ ಆರಂಭವಾಗುವ ದಿನವನ್ನು ೧ ರಿಂದ ೩ ರವರೆಗಿನ ಸಂಖ್ಯೆಯನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದೆ ಅಥವಾ ಮುಂದೆ ಬರುವ ನಿರ್ದಿಷ್ಟ ತಿಂಗಳುಗಳಲ್ಲಿನ ತಿಂಗಳಿನ ಕೊನೆಯ ದಿನದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
+msgstr ""
+"ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದೆ ಅಥವಾ ಮುಂದೆ ಬರುವ ನಿರ್ದಿಷ್ಟ ತಿಂಗಳುಗಳಲ್ಲಿನ ತಿಂಗಳಿನ ಕೊನೆಯ "
+"ದಿನದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
+msgid "The start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
+msgid "Months"
+msgstr "ತಿಂಗಳುಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
+msgid "Number of months before or after the start date"
+msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ತಿಂಗಳುಗಳ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-msgid  "Returns the number of workdays between two dates"
+msgid "Returns the number of workdays between two dates"
 msgstr "ಎರಡು ದಿನಾಂಕಗಳ ನಡುವಿನ ಕಾರ್ಯ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
+msgid "Start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
+msgid "The start date"
+msgstr "ಪ್ರಾರಂಭವಾಗುವ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
+msgid "End date"
+msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
+msgid "The end date"
+msgstr "ಕೊನೆಯ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
+msgid "Holidays"
+msgstr "ರಜಾದಿನಗಳು"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
+msgid "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "ರಜಾ ದಿನಗಳ ದಿನಾಂಕ ಮೌಲ್ಯಗಳ ಪಟ್ಟಿ(ಬಿಡುವು ಕಾಲ, ರಜಾದಿನಗಳು, ಇತ್ಯಾದಿ)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
-msgid  "Returns the value 'true' if the number is even"
+msgid "Returns the value 'true' if the number is even"
 msgstr "ಸಂಖ್ಯೆಯು ಸಮಸಂಖ್ಯೆಯಾಗಿದ್ದಲ್ಲಿ ಸರಿ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
-msgid  "Number"
+msgid "Number"
 msgstr "ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
-msgid  "The number"
+msgid "The number"
 msgstr "ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
-msgid  "Returns the value 'true' if the number is odd"
+msgid "Returns the value 'true' if the number is odd"
 msgstr "ಸಂಖ್ಯೆಯು ಬೆಸಸಂಖ್ಯೆಯಾಗಿದ್ದಲ್ಲಿ ಸರಿ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
+msgid "The number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-msgid  "Returns the multinomial coefficient of a set of numbers"
+msgid "Returns the multinomial coefficient of a set of numbers"
 msgstr "ಒಂದು ಗುಂಪಿನ ವಿವಿಧಹೆಸರಿನ ಸಂಖ್ಯೆಗಳ ಸಹಾಂಕಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
-msgid  "Number(s)"
+msgid "Number(s)"
 msgstr "ಸಂಖ್ಯೆ(ಗಳು)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
+msgid "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "ವಿವಿಧಹೆಸರಿನ ಸಹಾಂಕ ಬೇಕಾದ ಸಂಖ್ಯೆ ಅಥವಾ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-msgid  "Returns the sum of a power series"
+msgid "Returns the sum of a power series"
 msgstr "ಘಾತ ಸರಣಿಯ ಮೊತ್ತವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
-msgid  "X"
+msgid "X"
 msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-msgid  "The independent variable of the power series"
+msgid "The independent variable of the power series"
 msgstr "ಘಾತ ಸರಣಿಯ ಸ್ವತಂತ್ರ ಚರಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
-msgid  "N"
+msgid "N"
 msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-msgid  "The initial power to which x is to be raised"
+msgid "The initial power to which x is to be raised"
 msgstr "x ನ್ನು ಮೇಲೆರಿಸುವ ಆರಂಭ ಘಾತ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-msgid  "M"
+msgid "M"
 msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-msgid  "The increment by which to increase n for each term in the series"
+msgid "The increment by which to increase n for each term in the series"
 msgstr "ಸರಣಿಯಲ್ಲಿನ ಪ್ರತಿಯೊಂದು ಬಡ್ತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-msgid  "Coefficients"
+msgid "Coefficients"
 msgstr "ಸಹಾಂಕಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
+msgid "Set of coefficients by which each successive power of the variable x is multiplied"
 msgstr "x ಚರಾಂಶದ ಪ್ರತಿಯೊಂದು ಅನುಕ್ರಮಣಿಕೆ ಘಾತವನ್ನು ಗುಣಿಸಿದ ಸಹಾಂಕಗಳ ಸಮೂಹ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-msgid  "Returns the integer portion of a division"
+msgid "Returns the integer portion of a division"
 msgstr "ಭಾಗಾಕಾರದ ಪೂಣಾಂಕ ಭಾಗವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
-msgid  "Numerator"
+msgid "Numerator"
 msgstr "ಅಂಶ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
-msgid  "The dividend"
+msgid "The dividend"
 msgstr "ಭಾಜ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-msgid  "Denominator"
+msgid "Denominator"
 msgstr "ಛೇದ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
-msgid  "The divisor"
+msgid "The divisor"
 msgstr "ಭಾಜಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-msgid  "Returns a number rounded to a specified multiple"
+msgid "Returns a number rounded to a specified multiple"
 msgstr "ನಿರ್ದಿಷ್ಟ ಅಪವರ್ತ್ಯಕ್ಕೆ ಅಂದಾಜು ಮಾಡಲಾದ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
-msgid  "The number to round off"
+msgid "The number to round off"
 msgstr "ಅಂದಾಜು ಮಾಡಬೇಕಿರುವ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
-msgid  "Multiple"
+msgid "Multiple"
 msgstr "ಅಪವರ್ತ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-msgid  "The multiple to which you want to round number"
+msgid "The multiple to which you want to round number"
 msgstr "ಸಂಖ್ಯೆಯನ್ನು ಅಂದಾಜು ಬೆಲೆಯನ್ನಾಗಿ ಮಾಡಬೇಕಿರುವ ಅಪವರ್ತ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-msgid  "Returns the square root of a number which has been multiplied by pi"
+msgid "Returns the square root of a number which has been multiplied by pi"
 msgstr "ಪೈ ನಿಂದ ಗುಣಿಸಿರುವ ಸಂಖ್ಯೆಯ ವರ್ಗಮೂಲವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-msgid  "The number by which pi is multiplied"
+msgid "The number by which pi is multiplied"
 msgstr "ಪೈ ಯನ್ನು ಗುಣಿಸಬೇಕಾದ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
-msgid  "Returns a random integer between the numbers you specify"
-msgstr "ನೀವು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಸಂಖ್ಯೆಗಳ ಮಧ್ಯದ ಯಾದೃಚ್ಛಿಕ ಪೂರ್ಣಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns a random integer between the numbers you specify"
+msgstr ""
+"ನೀವು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಸಂಖ್ಯೆಗಳ ಮಧ್ಯದ ಯಾದೃಚ್ಛಿಕ ಪೂರ್ಣಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-msgid  "Bottom"
+msgid "Bottom"
 msgstr "ಕೆಳಗೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-msgid  "The smallest integer returned"
+msgid "The smallest integer returned"
 msgstr "ಹಿಂದಿರುಗಿಸಲಾದ ಅತಿ ಚಿಕ್ಕ ಪೂರ್ಣಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-msgid  "Top"
+msgid "Top"
 msgstr "ಮೇಲೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-msgid  "The largest integer returned"
+msgid "The largest integer returned"
 msgstr "ಹಿಂದಿರುಗಿಸಲಾದ ಅತಿ ದೊಡ್ಡ ಪೂರ್ಣಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-msgid  "Returns the greatest common divisor"
+msgid "Returns the greatest common divisor"
 msgstr "ಮಹತ್ತಮ ಸಾಮಾನ್ಯ ಭಾಜಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
+msgid "Number(s)"
+msgstr "ಸಂಖ್ಯೆ(ಗಳು)"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
-msgid  "Number or list of numbers"
+msgid "Number or list of numbers"
 msgstr "ಸಂಖ್ಯೆ ಅಥವಾ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-msgid  "Returns the least common multiple"
+msgid "Returns the least common multiple"
 msgstr "ಲಘುತ್ತಮ ಸಾಮಾನ್ಯ ಅಪವರ್ತ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
+msgid "Number(s)"
+msgstr "ಸಂಖ್ಯೆ(ಗಳು)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
+msgid "Number or list of numbers"
+msgstr "ಸಂಖ್ಯೆ ಅಥವಾ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-msgid  "Returns the modified Bessel function In(x)"
+msgid "Returns the modified Bessel function In(x)"
 msgstr "ಮಾರ್ಪಡಿಸಿದ ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರ In(x) ನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
+msgid "The value at which the function is to be evaluated"
 msgstr "ಕಾರ್ಯಭಾರವನ್ನು ಲೆಕ್ಕಮಾಡಬೇಕಾದ ಮೌಲ್ಯ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
-msgid  "The order of the Bessel function"
+msgid "The order of the Bessel function"
 msgstr "ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರದ ಸ್ತರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-msgid  "Returns the Bessel function Jn(x)"
+msgid "Returns the Bessel function Jn(x)"
 msgstr "Jn(x) ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "ಕಾರ್ಯಭಾರವನ್ನು ಲೆಕ್ಕಮಾಡಬೇಕಾದ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರದ ಸ್ತರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-msgid  "Returns the Bessel function Kn(x)"
+msgid "Returns the Bessel function Kn(x)"
 msgstr "Kn(x) ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "ಕಾರ್ಯಭಾರವನ್ನು ಲೆಕ್ಕಮಾಡಬೇಕಾದ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರದ ಸ್ತರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-msgid  "Returns the Bessel function Yn(x)"
+msgid "Returns the Bessel function Yn(x)"
 msgstr "Yn(x) ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
+msgid "X"
+msgstr "X"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
+msgid "The value at which the function is to be evaluated"
+msgstr "ಕಾರ್ಯಭಾರವನ್ನು ಲೆಕ್ಕಮಾಡಬೇಕಾದ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
+msgid "N"
+msgstr "N"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
+msgid "The order of the Bessel function"
+msgstr "ಬೆಸೆಲ್ ಕಾರ್ಯಭಾರದ ಸ್ತರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
-msgid  "Converts a binary number to an octal number"
+msgid "Converts a binary number to an octal number"
 msgstr "ದ್ವಿಮಾನ ಸಂಖ್ಯೆಯನ್ನು ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
+msgid "The binary number to be converted (as text)"
 msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ದ್ವಿಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
-msgid  "Places"
+msgid "Places"
 msgstr "ಸ್ಥಳಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
-msgid  "Number of places used"
+msgid "Number of places used"
 msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
-msgid  "Converts a binary number to a decimal number"
+msgid "Converts a binary number to a decimal number"
 msgstr "ದ್ವಿಮಾನ ಸಂಖ್ಯೆಯನ್ನು ದಶಮಾಂಶ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
+msgid "The binary number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ದ್ವಿಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-msgid  "Converts a binary number to a hexadecimal number"
+msgid "Converts a binary number to a hexadecimal number"
 msgstr "ದ್ವಿಮಾನ ಸಂಖ್ಯೆಯನ್ನು ಷಷ್ಠದಶಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
+msgid "The binary number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ದ್ವಿಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-msgid  "Number of places used."
+msgid "Number of places used."
 msgstr "ಬಳಸಲಾದ ಸ್ಥಾನಗಳ ಸಂಖ್ಯೆ."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-msgid  "Converts an octal number to a binary number"
+msgid "Converts an octal number to a binary number"
 msgstr "ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಯನ್ನು ದ್ವಿಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
+msgid "The octal number to be converted (as text)"
 msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-msgid  "Converts an octal number to a decimal number"
+msgid "Converts an octal number to a decimal number"
 msgstr "ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಯನ್ನು ದಶಮಾಂಶ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
+msgid "The octal number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-msgid  "Converts an octal number to a hexadecimal number"
+msgid "Converts an octal number to a hexadecimal number"
 msgstr "ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಯನ್ನು ಷೋಡಷಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
+msgid "The octal number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-msgid  "Converts a decimal number to a binary number"
+msgid "Converts a decimal number to a binary number"
 msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆಯನ್ನು ದ್ವಿಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
-msgid  "The decimal integer to be converted"
+msgid "The decimal integer to be converted"
 msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ದಶಮಾಂಶ ಪೂರ್ಣಾಂಕ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-msgid  "Converts a decimal number to a hexadecimal number"
+msgid "Converts a decimal number to a hexadecimal number"
 msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆಯನ್ನು ಷಷ್ಠದಶಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
+msgid "The decimal integer to be converted"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ದಶಮಾಂಶ ಪೂರ್ಣಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-msgid  "Converts a decimal number into an octal number"
+msgid "Converts a decimal number into an octal number"
 msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆಯನ್ನು ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
-msgid  "The decimal number"
+msgid "The decimal number"
 msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a binary number"
+msgid "Converts a hexadecimal number to a binary number"
 msgstr "ಷೋಡಷಮಾನ ಸಂಖ್ಯೆಯನ್ನು ದ್ವಿಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
+msgid "The hexadecimal number to be converted (as text)"
 msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಷೋಡಷಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a decimal number"
+msgid "Converts a hexadecimal number to a decimal number"
 msgstr "ಷೋಡಷಮಾನ  ಸಂಖ್ಯೆಯನ್ನು ದಶಮಾಂಶ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಷೋಡಷಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to an octal number"
+msgid "Converts a hexadecimal number to an octal number"
 msgstr "ಷೋಡಷಮಾನ ಸಂಖ್ಯೆಯನ್ನು ಅಷ್ಟಮಾನ ಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
+msgid "The hexadecimal number to be converted (as text)"
+msgstr "ರೂಪಾಂತರಿಸಬೇಕಾದ ಷೋಡಷಮಾನ ಸಂಖ್ಯೆ (ಪಠ್ಯದಂತೆ)"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
+msgid "Places"
+msgstr "ಸ್ಥಳಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
+msgid "Number of places used"
+msgstr "ಬಳಸಿದ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-msgid  "Tests whether two values are equal"
+msgid "Tests whether two values are equal"
 msgstr "ಎರಡು ಮೌಲ್ಯಗಳು ಸಮನಾಗಿರುವುದನ್ನು ಪರೀಕ್ಷಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-msgid  "Number 1"
+msgid "Number 1"
 msgstr "ಸಂಖ್ಯೆ ೧"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-msgid  "The first number"
+msgid "The first number"
 msgstr "ಮೊದಲ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-msgid  "Number 2"
+msgid "Number 2"
 msgstr "ಸಂಖ್ಯೆ ೨"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-msgid  "The second number"
+msgid "The second number"
 msgstr "ಎರಡನೆಯ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-msgid  "Returns the error function"
+msgid "Returns the error function"
 msgstr "ದೋಷ ಕಾರ್ಯಭಾರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
-msgid  "Lower limit"
+msgid "Lower limit"
 msgstr "ಕೆಳಗಿನ ಮಿತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
-msgid  "The lower limit for integration"
+msgid "The lower limit for integration"
 msgstr "ಸಿದ್ಧತೆಯ ಕೆಳಗಿನ ಮಿತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-msgid  "Upper limit"
+msgid "Upper limit"
 msgstr "ಮೇಲಿನ ಮಿತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-msgid  "The upper limit for integration"
+msgid "The upper limit for integration"
 msgstr "ಸಿದ್ಧತೆಯ ಮೇಲಿನ ಮಿತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-msgid  "Returns the complementary error function"
+msgid "Returns the complementary error function"
 msgstr "ಪೂರಕ ದೋಷ ಕಾರ್ಯಭಾರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
+msgid "Lower limit"
+msgstr "ಕೆಳಗಿನ ಮಿತಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
+msgid "The lower limit for integration"
+msgstr "ಸಿದ್ಧತೆಯ ಕೆಳಗಿನ ಮಿತಿ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-msgid  "Tests whether a number is greater than a threshold value"
+msgid "Tests whether a number is greater than a threshold value"
 msgstr "ಒಂದು ಸಂಖ್ಯೆಯು ಮಿತಿಗಿಂತ ಹೆಚ್ಚಿನ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-msgid  "The value to test against step"
+msgid "The value to test against step"
 msgstr "ಹಂತದ ವಿರುದ್ಧ ಪರೀಕ್ಷಿಸುವ ಮೌಲ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-msgid  "Step"
+msgid "Step"
 msgstr "ಹಂತ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-msgid  "The threshhold value"
+msgid "The threshhold value"
 msgstr "ಮಿತಿಯ ಮೌಲ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-msgid  "Returns the double factorial of Number"
+msgid "Returns the double factorial of Number"
 msgstr "ಸಂಖ್ಯೆಯ ಎರಡು ಬಾರಿಯ ಕ್ರಮಗುಣಿತವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
+msgid "The number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
-msgid  "Returns the absolute value (modulus) of a complex number"
+msgid "Returns the absolute value (modulus) of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ನಿರಪೇಕ್ಷ ಮೌಲ್ಯವನ್ನು (ಮಾಡ್ಯುಲಸ್) ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
-msgid  "Complex number"
+msgid "Complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
-msgid  "The complex number"
+msgid "The complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-msgid  "Returns the imaginary coefficient of a complex number"
+msgid "Returns the imaginary coefficient of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಕಾಲ್ಪನಿಕ ಸಹಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-msgid  "Returns a complex number raised to an integer power"
-msgstr "ಪೂರ್ಣಾಂಕದ ಘಾತಕ್ಕೆ ಮಿಶ್ರಸಂಖ್ಯೆಯನ್ನು ಹಾಕಿದಾಗ ಬರುವ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns a complex number raised to an integer power"
+msgstr ""
+"ಪೂರ್ಣಾಂಕದ ಘಾತಕ್ಕೆ ಮಿಶ್ರಸಂಖ್ಯೆಯನ್ನು ಹಾಕಿದಾಗ ಬರುವ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-msgid  "Power to which the complex number is raised"
+msgid "Power to which the complex number is raised"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯನ್ನು ಏರಿಸಬೇಕಾಗಿರುವ ಘಾತ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-msgid  "Returns the argument theta, an angle expressed in radians"
+msgid "Returns the argument theta, an angle expressed in radians"
 msgstr "ವಾದ ತೀಟಾವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ, ಈ ಕೋನವನ್ನು ರೇಡಿಯನ್‌ಗಳಲ್ಲಿ ಹೇಳಲಾಗುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
-msgid  "A complex number"
+msgid "A complex number"
 msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-msgid  "Returns the cosine of a complex number"
+msgid "Returns the cosine of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಕೊಸೈನ್ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-msgid  "Returns the quotient of two complex numbers"
+msgid "Returns the quotient of two complex numbers"
 msgstr "ಎರಡು ಮಿಶ್ರಸಂಖ್ಯೆಗಳ ಭಾಗಲಬ್ಧವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
+msgid "Numerator"
+msgstr "ಅಂಶ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
+msgid "The dividend"
+msgstr "ಭಾಜ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
+msgid "Denominator"
+msgstr "ಛೇದ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
+msgid "The divisor"
+msgstr "ಭಾಜಕ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-msgid  "Returns the algebraic form of the exponential of a complex number"
+msgid "Returns the algebraic form of the exponential of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಘಾತಾಂಕದ ಬೀಜಗಣಿತೀಯ ನಮೂನೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-msgid  "Returns the complex conjugate of a complex number"
+msgid "Returns the complex conjugate of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಅನುವರ್ತಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-msgid  "Returns the natural logarithm of a complex number"
+msgid "Returns the natural logarithm of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಸ್ವಾಭಾವಿಕ ಲಾಗರಿದಮಿಕ್‌ನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
-msgid  "Returns the base-10 logarithm of a complex number"
+msgid "Returns the base-10 logarithm of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಬೇಸ್‌-೧೦ ಲಾಗರಿದಮ್ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
-msgid  "Returns the base-2 logarithm of a complex number"
+msgid "Returns the base-2 logarithm of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಬೇಸ್-೨ ಲಾಗರಿದಮ್ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-msgid  "Returns the product of several complex numbers"
+msgid "Returns the product of several complex numbers"
 msgstr "ಅನೇಕ ಮಿಶ್ರಸಂಖ್ಯೆಗಳ ಗುಣಲಬ್ಧವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-msgid  "The first complex number"
+msgid "The first complex number"
 msgstr "ಮೊದಲ ಮಿಶ್ರಸಂಖ್ಯೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-msgid  "Another complex number"
+msgid "Another complex number"
 msgstr "ಮತ್ತೊಂದು ಮಿಶ್ರಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-msgid  "Returns the real coefficient of a complex number"
+msgid "Returns the real coefficient of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ನೈಜ ಸಹಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-msgid  "Returns the sine of a complex number"
+msgid "Returns the sine of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ಸೈನ್ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-msgid  "Returns the difference of two complex numbers"
+msgid "Returns the difference of two complex numbers"
 msgstr "ಎರಡು ಮಿಶ್ರಸಂಖ್ಯೆಗಳ ವ್ಯತ್ಯಾಸವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
-msgid  "Complex number 1"
+msgid "Complex number 1"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ ೧"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
+msgid "Complex number 1"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ ೧"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
-msgid  "Complex number 2"
+msgid "Complex number 2"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ ೨"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
+msgid "Complex number 2"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ ೨"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-msgid  "Returns the square root of a complex number"
+msgid "Returns the square root of a complex number"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಯ ವರ್ಗಮೂಲವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-msgid  "Returns the sum of complex numbers"
+msgid "Returns the sum of complex numbers"
 msgstr "ಮಿಶ್ರಸಂಖ್ಯೆಗಳ ಮೊತ್ತವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
+msgid "The complex number"
+msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid "Returns the tangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid "Returns the secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid "Returns the cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid "Returns the cotangent of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid "Returns the hyperbolic sine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosine of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid "Returns the hyperbolic secant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
+msgid "Complex number"
+msgstr ""
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
+msgid "A complex number"
+msgstr ""
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-msgid  "Converts real and imaginary coefficients into a complex number"
+msgid "Converts real and imaginary coefficients into a complex number"
 msgstr "ನೈಜ ಹಾಗೂ ಕಾಲ್ಪನಿಕ ಸಹಾಂಕಗಳನ್ನು ಮಿಶ್ರಸಂಖ್ಯೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-msgid  "Real num"
+msgid "Real num"
 msgstr "ನೈಜಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-msgid  "The real coefficient"
+msgid "The real coefficient"
 msgstr "ನೈಜ ಸಹಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-msgid  "I num"
+msgid "I num"
 msgstr "I num"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-msgid  "The imaginary coefficient"
+msgid "The imaginary coefficient"
 msgstr "ಕಾಲ್ಪನಿಕ ಸಹಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-msgid  "Suffix"
+msgid "Suffix"
 msgstr "ಉತ್ತರ ಪ್ರತ್ಯಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-msgid  "The suffix"
+msgid "The suffix"
 msgstr "ಉತ್ತರ ಪ್ರತ್ಯಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-msgid  "Converts a number from one measurement system to another"
+msgid "Converts a number from one measurement system to another"
 msgstr "ಸಂಖ್ಯೆಯನ್ನು ಒಂದು ಅಳತೆ ವ್ಯವಸ್ಥೆಯಿಂದ ಮತ್ತೊಂದಕ್ಕೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
+msgid "Number"
+msgstr "ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
+msgid "The number"
+msgstr "ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-msgid  "From unit"
+msgid "From unit"
 msgstr "ಅಳತೆಮಾನದಿಂದ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-msgid  "Unit of measure for number"
+msgid "Unit of measure for number"
 msgstr "ಸಂಖ್ಯೆಯ ಅಳತೆಯ ಮಾನ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-msgid  "To unit"
+msgid "To unit"
 msgstr "ಅಳತೆ ಮಾನಕ್ಕೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-msgid  "Unit of measure for the result"
+msgid "Unit of measure for the result"
 msgstr "ಫಲಿತಾಂಶಕ್ಕಾಗಿ ಅಳತೆಯ ಮಾನ\t"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "ಪ್ರತಿಯೊಂದು ಲೆಕ್ಕ ಕಾಲಾವಧಿಗೆ ಆಸ್ತಿಯ ಪೂರ್ವನಿರ್ಧಾರಿತ ರೇಖಾತ್ಮಕ ಸವಕಳಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"ಪ್ರತಿಯೊಂದು ಲೆಕ್ಕ ಕಾಲಾವಧಿಗೆ ಆಸ್ತಿಯ ಪೂರ್ವನಿರ್ಧಾರಿತ ರೇಖಾತ್ಮಕ ಸವಕಳಿಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
-msgid  "Cost"
+msgid "Cost"
 msgstr "ಬೆಲೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
-msgid  "Cost of the asset"
+msgid "Cost of the asset"
 msgstr "ಆಸ್ತಿಯ ಬೆಲೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
-msgid  "Date purchased"
+msgid "Date purchased"
 msgstr "ಖರೀದಿಸಿದ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
-msgid  "Purchase date of the asset"
+msgid "Purchase date of the asset"
 msgstr "ಆಸ್ತಿ ಖರೀದಿಸಿದ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
-msgid  "First period"
+msgid "First period"
 msgstr "ಮೊದಲ ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-msgid  "Date the first period ends"
+msgid "Date the first period ends"
 msgstr "ಮೊದಲ ಅವಧಿಯ ದಿನಾಂಕವು ಕೊನೆಗೊಳ್ಳುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-msgid  "Salvage"
+msgid "Salvage"
 msgstr "ಸಂರಕ್ಷಿಸಿದ ವಸ್ತುಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-msgid  "Salvage value of an asset at the end of its life"
+msgid "Salvage value of an asset at the end of its life"
 msgstr "ಆಸ್ತಿಯ ಜೀವಮಾನದ ಕೊನೆಯಲ್ಲಿ ಅದರ ಅಂತಿಮ ಮೌಲ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-msgid  "Period"
+msgid "Period"
 msgstr "ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
-msgid  "The period"
+msgid "The period"
 msgstr "ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
-msgid  "Rate"
+msgid "Rate"
 msgstr "ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
-msgid  "The rate of depreciation"
+msgid "The rate of depreciation"
 msgstr "ಸವಕಳಿ ದರ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
-msgid  "The year basis to be used"
+msgid "The year basis to be used"
 msgstr "ಬಳಸಬೇಕಾದ ವರ್ಷ ಆಧಾರ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
+msgid "Returns the prorated linear depreciation of an asset for each accounting period"
+msgstr ""
+"ಪ್ರತಿಯೊಂದು ಲೆಕ್ಕ ಕಾಲಾವಧಿಗೆ ಆಸ್ತಿಯ ಪೂರ್ವನಿರ್ಧಾರಿತ ರೇಖಾತ್ಮಕ ಸವಕಳಿಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
+msgid "Cost"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
+msgid "Cost of the asset"
+msgstr "ಆಸ್ತಿಯ ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
+msgid "Date purchased"
+msgstr "ಖರೀದಿಸಿದ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
+msgid "Purchase date of the asset"
+msgstr "ಆಸ್ತಿ ಖರೀದಿಸಿದ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
+msgid "First period"
+msgstr "ಮೊದಲ ಅವಧಿ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-msgid  "The date the first period ends"
+msgid "The date the first period ends"
 msgstr "ಮೊದಲ ಅವಧಿಯ ದಿನಾಂಕವು ಕೊನೆಗೊಳ್ಳುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
+msgid "Salvage"
+msgstr "ಸಂರಕ್ಷಿಸಿದ ವಸ್ತುಗಳು"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-msgid  "The salvage value of an asset at the end of its life"
+msgid "The salvage value of an asset at the end of its life"
 msgstr "ಆಸ್ತಿಯ ಜೀವಮಾನದ ಕೊನೆಯಲ್ಲಿ ಅದರ ಅಂತಿಮ ಮೌಲ್ಯ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
+msgid "Period"
+msgstr "ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
+msgid "The period"
+msgstr "ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
+msgid "The rate of depreciation"
+msgstr "ಸವಕಳಿ ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
+msgid "The year basis to be used"
+msgstr "ಬಳಸಬೇಕಾದ ವರ್ಷ ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the accrued interest for a security that pays periodic interest"
+msgstr ""
+"ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
-msgid  "Issue"
+msgid "Issue"
 msgstr "ನೀಡಿಕೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-msgid  "Issue date of the security"
+msgid "Issue date of the security"
 msgstr "ಭದ್ರತೆಯ ನೀಡಿಕೆ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-msgid  "First interest"
+msgid "First interest"
 msgstr "ಮೊದಲ ಬಡ್ಡಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-msgid  "First interest date of the security"
+msgid "First interest date of the security"
 msgstr "ಭದ್ರತೆಯ ಮೊದಲ ಬಡ್ಡಿ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
-msgid  "Settlement"
+msgid "Settlement"
 msgstr "ಇತ್ಯರ್ಥ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
-msgid  "The settlement"
+msgid "The settlement"
 msgstr "ಇತ್ಯರ್ಥ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
-msgid  "The rate"
+msgid "The rate"
 msgstr "ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
-msgid  "Par"
+msgid "Par"
 msgstr "ಸಮ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
-msgid  "The par value"
+msgid "The par value"
 msgstr "ಸಮ ಮೌಲ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-msgid  "Frequency"
+msgid "Frequency"
 msgstr "ಆವರ್ತನೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
-msgid  "The frequency"
+msgid "The frequency"
 msgstr "ಆವರ್ತನೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
-msgid  "The basis"
+msgid "The basis"
 msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr "ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the accrued interest for a security that pays interest at maturity"
+msgstr ""
+"ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
+msgid "Issue"
+msgstr "ನೀಡಿಕೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
-msgid  "The issue date"
+msgid "The issue date"
 msgstr "ನೀಡಿಕೆ ದಿನಾಂಕ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
+msgid "Par"
+msgstr "ಸಮ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
+msgid "The par value"
+msgstr "ಸಮ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-msgid  "Returns the amount paid out at maturity for a fully invested security"
+msgid "Returns the amount paid out at maturity for a fully invested security"
 msgstr "ಪೂರ್ಣ ತೊಡಗಿಸಿದ ಹಣದ ಭದ್ರತೆಗೆ ಅವಧಿ ಮುಗಿದಾಗ ಕೊಟ್ಟ ಹಣವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-msgid  "Maturity"
+msgid "Maturity"
 msgstr "ಪಕ್ವತೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
-msgid  "The maturity"
+msgid "The maturity"
 msgstr "ಪಕ್ವತೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
-msgid  "Investment"
+msgid "Investment"
 msgstr "ವಿನಿಯೋಜನೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
-msgid  "The investment"
+msgid "The investment"
 msgstr "ವಿನಿಯೋಜನೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
-msgid  "Discount"
+msgid "Discount"
 msgstr "ರಿಯಾಯಿತಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
-msgid  "The discount"
+msgid "The discount"
 msgstr "ರಿಯಾಯಿತಿ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-msgid  "Returns the discount rate for a security"
+msgid "Returns the discount rate for a security"
 msgstr "ಭದ್ರತೆಗೆ ರಿಯಾಯಿತಿ ದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
-msgid  "Price"
+msgid "Price"
 msgstr "ಬೆಲೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
-msgid  "The price"
+msgid "The price"
 msgstr "ಬೆಲೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
-msgid  "Redemption"
+msgid "Redemption"
 msgstr "ವಿಮೋಚನೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
-msgid  "The redemption value"
+msgid "The redemption value"
 msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿ ಪಾವತಿಗಳೊಂದಿಗಿನ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಮ್ಯಾಕ್ಲೆ ಅವಧಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the annual Macaulay duration of a security with periodic interest payments"
+msgstr ""
+"ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿ ಪಾವತಿಗಳೊಂದಿಗಿನ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಮ್ಯಾಕ್ಲೆ ಅವಧಿಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-msgid  "Coupon"
+msgid "Coupon"
 msgstr "ಕೂಪನ್‌"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
-msgid  "The coupon rate"
+msgid "The coupon rate"
 msgstr "ಕೂಪನ್‌ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
-msgid  "Yield"
+msgid "Yield"
 msgstr "ಇಳುವರಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
-msgid  "The yield"
+msgid "The yield"
 msgstr "ಇಳುವರಿ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-msgid  "Returns the effective annual interest rate"
+msgid "Returns the effective annual interest rate"
 msgstr "ಪರಿಣಾಮಕಾರಿ ವಾರ್ಷಿಕ ಬಡ್ಡಿದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-msgid  "Nominal rate"
+msgid "Nominal rate"
 msgstr "ನಾಮಮಾತ್ರ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-msgid  "The nominal rate"
+msgid "The nominal rate"
 msgstr "ನಾಮಮಾತ್ರ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
-msgid  "Npery"
+msgid "Npery"
 msgstr "Npery"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
-msgid  "The periods"
+msgid "The periods"
 msgstr "ಅವಧಿಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "ಎರಡು ಅವಧಿಗಳ ಮಧ್ಯೆ ಪಾವತಿಯಾಗುವ ಸಾಲದ ಮೇಲಿನ ಸಂಚಿತ ಬಂಡವಾಳವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the cumulative principal on a loan to be paid between two periods"
+msgstr ""
+"ಎರಡು ಅವಧಿಗಳ ಮಧ್ಯೆ ಪಾವತಿಯಾಗುವ ಸಾಲದ ಮೇಲಿನ ಸಂಚಿತ ಬಂಡವಾಳವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-msgid  "Nper"
+msgid "Nper"
 msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
-msgid  "Number of payment periods"
+msgid "Number of payment periods"
 msgstr "ಪಾವತಿ ಅವಧಿಗಳ ಸಂಖ್ಯೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
-msgid  "Pv"
+msgid "Pv"
 msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
-msgid  "The present value"
+msgid "The present value"
 msgstr "ಇಂದಿನ ಮೌಲ್ಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-msgid  "Start period"
+msgid "Start period"
 msgstr "ಆರಂಭ ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
-msgid  "The start period"
+msgid "The start period"
 msgstr "ಆರಂಭ ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
-msgid  "End period"
+msgid "End period"
 msgstr "ಅಂತ್ಯ ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
-msgid  "The end period"
+msgid "The end period"
 msgstr "ಅಂತ್ಯ ಅವಧಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
-msgid  "Type"
+msgid "Type"
 msgstr "ಬಗೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
-msgid  "The type of maturity"
+msgid "The type of maturity"
 msgstr "ಪಕ್ವತೆಯ ಬಗೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-msgid  "Returns the cumulative interest to be paid between two periods"
+msgid "Returns the cumulative interest to be paid between two periods"
 msgstr "ಎರಡು ಅವಧಿಗಳ ನಡುವೆ ಪಾವತಿಯಾಗುವ ಸಂಚತ ಬಡ್ಡಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
+msgid "Nper"
+msgstr "Nper"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
+msgid "Number of payment periods"
+msgstr "ಪಾವತಿ ಅವಧಿಗಳ ಸಂಖ್ಯೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
+msgid "Pv"
+msgstr "Pv"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
+msgid "The present value"
+msgstr "ಇಂದಿನ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
+msgid "Start period"
+msgstr "ಆರಂಭ ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
+msgid "The start period"
+msgstr "ಆರಂಭ ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
+msgid "End period"
+msgstr "ಅಂತ್ಯ ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
+msgid "The end period"
+msgstr "ಅಂತ್ಯ ಅವಧಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
+msgid "Type"
+msgstr "ಬಗೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
+msgid "The type of maturity"
+msgstr "ಪಕ್ವತೆಯ ಬಗೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಮುಖಬೆಲೆ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the price per 100 currency units face value of a security that pays periodic interest"
+msgstr ""
+"ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಮುಖಬೆಲೆ ಮೌಲ್ಯವನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
+msgid "Yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
+msgid "The yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a discounted security"
+msgid "Returns the price per 100 currency units face value of a discounted security"
 msgstr "ರಿಯಾಯಿತಿ ಭದ್ರತೆಯ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಮುಖಬೆಲೆ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
+msgid "Discount"
+msgstr "ರಿಯಾಯಿತಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
+msgid "The discount"
+msgstr "ರಿಯಾಯಿತಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr "ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಸಂದಾಯಿಸುವ ಭದ್ರತೆಯ ಮುಖಬೆಲೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮಾನಗಳ ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the price per 100 currency units face value of a security that pays interest at maturity"
+msgstr ""
+"ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಸಂದಾಯಿಸುವ ಭದ್ರತೆಯ ಮುಖಬೆಲೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮಾನಗಳ "
+"ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
+msgid "Issue"
+msgstr "ನೀಡಿಕೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
+msgid "The issue date"
+msgstr "ನೀಡಿಕೆ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
+msgid "Yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
+msgid "The yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
-msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr "ಭಾವಿಸಿದ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಸಮ ಮೌಲ್ಯಗಳೊಂದಿಗಿನ ಭದ್ರತೆಗೆ ಮ್ಯಾಕ್ಲಿ ಮಾರ್ಪಾಡು ಅವಧಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ "
+msgid "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
+msgstr ""
+"ಭಾವಿಸಿದ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಸಮ ಮೌಲ್ಯಗಳೊಂದಿಗಿನ ಭದ್ರತೆಗೆ ಮ್ಯಾಕ್ಲಿ ಮಾರ್ಪಾಡು "
+"ಅವಧಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ "
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
+msgid "Coupon"
+msgstr "ಕೂಪನ್‌"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
+msgid "The coupon rate"
+msgstr "ಕೂಪನ್‌ ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
+msgid "Yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
+msgid "The yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-msgid  "Returns the annual nominal interest rate"
+msgid "Returns the annual nominal interest rate"
 msgstr "ವಾರ್ಷಿಕ ನಾಮಮಾತ್ರ ಬಡ್ಡಿ ದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-msgid  "Effective rate"
+msgid "Effective rate"
 msgstr "ಪರಿಣಾಮಕಾರಿ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-msgid  "The effective interest rate"
+msgid "The effective interest rate"
 msgstr "ಪರಿಣಾಮಕಾರಿ ಬಡ್ಡಿ ದರ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
+msgid "Npery"
+msgstr "Npery"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
+msgid "The periods"
+msgstr "ಅವಧಿಗಳು"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ಅಲ್ಪಭಾಗದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
+msgid "Converts a price expressed as a decimal into a price expressed as a fraction"
+msgstr ""
+"ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ಅಲ್ಪಭಾಗದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ "
+"ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-msgid  "Decimal dollar"
+msgid "Decimal dollar"
 msgstr "ದಶಮಾಂಶ ಡಾಲರ್"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
+msgid "The decimal number"
+msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
-msgid  "Fraction"
+msgid "Fraction"
 msgstr "ಭಿನ್ನಾಂಕ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
+msgid "The divisor"
+msgstr "ಭಾಜಕ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "ಭಿನ್ನಾಂಕದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
+msgid "Converts a price expressed as a fraction into a price expressed as a decimal"
+msgstr ""
+"ಭಿನ್ನಾಂಕದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ "
+"ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-msgid  "Fractional dollar"
+msgid "Fractional dollar"
 msgstr "ಭಿನ್ನಾಂಕದ ಡಾಲರ್"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-msgid  "The number as a fraction"
+msgid "The number as a fraction"
 msgstr "ಅಪವರ್ತದಂತೆ ಸಂಖ್ಯೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
+msgid "Fraction"
+msgstr "ಭಿನ್ನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
+msgid "The divisor"
+msgstr "ಭಾಜಕ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ಮೇಲಿನ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the yield on a security that pays periodic interest"
+msgstr ""
+"ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ಮೇಲಿನ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-msgid  "Returns the annual yield for a discounted security"
+msgid "Returns the annual yield for a discounted security"
 msgstr "ರಿಯಾಯಿತಿ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "ಅವಧಿ ಮುಕ್ತಾಯ ಸಮಯದಲ್ಲಿ ಸಂದಾಯವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಕೊಡುವ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the annual yield of a security that pays interest at maturity"
+msgstr ""
+"ಅವಧಿ ಮುಕ್ತಾಯ ಸಮಯದಲ್ಲಿ ಸಂದಾಯವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಕೊಡುವ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ "
+"ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
+msgid "Issue"
+msgstr "ನೀಡಿಕೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
+msgid "The issue date"
+msgstr "ನೀಡಿಕೆ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-msgid  "Returns the bond-equivalent yield for a treasury bill"
+msgid "Returns the bond-equivalent yield for a treasury bill"
 msgstr "ಖಜಾನೆ ಬಿಲ್ಲಿಗೆ ಇಳುವರಿಗೆ ಸಮನಾದ ಮುಚ್ಚಳಿಕೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
+msgid "Discount"
+msgstr "ರಿಯಾಯಿತಿ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
-msgid  "The discount rate"
+msgid "The discount rate"
 msgstr "ರಿಯಾಯಿತಿ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
-msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr "ಖಜಾನೆ ಬಿಲ್ಲಿಗೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮುಖಬೆಲೆ ಅಳತೆಮಾನ ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the price of 100 currency units face value for a treasury bill"
+msgstr ""
+"ಖಜಾನೆ ಬಿಲ್ಲಿಗೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮುಖಬೆಲೆ ಅಳತೆಮಾನ ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
+msgid "Discount"
+msgstr "ರಿಯಾಯಿತಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
+msgid "The discount rate"
+msgstr "ರಿಯಾಯಿತಿ ದರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-msgid  "Returns the yield for a treasury bill"
+msgid "Returns the yield for a treasury bill"
 msgstr "ಖಜಾನೆ ಬಿಲ್ಲಿನ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
-msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr "ಬೆಸಸಂಖ್ಯೆ ಮೊದಲ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the price per $100 face value of a security with an odd first period"
+msgstr ""
+"ಬೆಸಸಂಖ್ಯೆ ಮೊದಲ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
+msgid "Issue"
+msgstr "ನೀಡಿಕೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
+msgid "The issue date"
+msgstr "ನೀಡಿಕೆ ದಿನಾಂಕ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
-msgid  "First coupon"
+msgid "First coupon"
 msgstr "ಮೊದಲ ಕೂಪನ್‌"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
-msgid  "The first coupon date"
+msgid "The first coupon date"
 msgstr "ಮೊದಲ ಕೂಪನ್‌ ದಿನಾಂಕ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
+msgid "Yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
+msgid "The yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd first period"
+msgid "Returns the yield of a security with an odd first period"
 msgstr "ಬೆಸಸಂಖ್ಯೆ ಮೊದಲ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
+msgid "Issue"
+msgstr "ನೀಡಿಕೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
+msgid "The issue date"
+msgstr "ನೀಡಿಕೆ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
+msgid "First coupon"
+msgstr "ಮೊದಲ ಕೂಪನ್‌"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
+msgid "The first coupon date"
+msgstr "ಮೊದಲ ಕೂಪನ್‌ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
-msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr "ಬೆಸಸಂಖ್ಯೆ ಕೊನೆಯ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the price per $100 face value of a security with an odd last period"
+msgstr ""
+"ಬೆಸಸಂಖ್ಯೆ ಕೊನೆಯ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-msgid  "Last interest"
+msgid "Last interest"
 msgstr "ಕೊನೆಯ ಬಡ್ಡಿ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
-msgid  "The last interest date"
+msgid "The last interest date"
 msgstr "ಕೊನೆಯ ಬಡ್ಡಿಯ ದಿನಾಂಕ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
+msgid "Yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
+msgid "The yield"
+msgstr "ಇಳುವರಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd last period"
+msgid "Returns the yield of a security with an odd last period"
 msgstr "ಬೆಸ ಅಂತ್ಯ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
+msgid "Last interest"
+msgstr "ಕೊನೆಯ ಬಡ್ಡಿ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
+msgid "The last interest date"
+msgstr "ಕೊನೆಯ ಬಡ್ಡಿಯ ದಿನಾಂಕ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
+msgid "The price"
+msgstr "ಬೆಲೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "ನಿಯತಕಾಲಿಕವಲ್ಲದ ಪಾವತಿಗಳ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ  ಹಿಂದಿರುಗಿಸಬೇಕಾದ ಆಂತರಿಕ ದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the internal rate of return for a non-periodic schedule of payments"
+msgstr ""
+"ನಿಯತಕಾಲಿಕವಲ್ಲದ ಪಾವತಿಗಳ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ  ಹಿಂದಿರುಗಿಸಬೇಕಾದ ಆಂತರಿಕ ದರವನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
-msgid  "Values"
+msgid "Values"
 msgstr "ಮೌಲ್ಯಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
-msgid  "The values"
+msgid "The values"
 msgstr "ಮೌಲ್ಯಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
-msgid  "Dates"
+msgid "Dates"
 msgstr "ದಿನಾಂಕಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
-msgid  "The dates"
+msgid "The dates"
 msgstr "ದಿನಾಂಕಗಳು"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-msgid  "Guess"
+msgid "Guess"
 msgstr "ಊಹೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-msgid  "The guess"
+msgid "The guess"
 msgstr "ಊಹೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-msgid  "Returns the net present value for a non-periodic schedule of payments"
+msgid "Returns the net present value for a non-periodic schedule of payments"
 msgstr "ನಿಯತಕಾಲಿಕವಲ್ಲದ ಪಾವತಿಗಳ ಸಮಯದ ವರ್ತಮಾನ ನಿವ್ವಳ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
+msgid "Rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
+msgid "The rate"
+msgstr "ದರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
+msgid "Values"
+msgstr "ಮೌಲ್ಯಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
+msgid "The values"
+msgstr "ಮೌಲ್ಯಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
+msgid "Dates"
+msgstr "ದಿನಾಂಕಗಳು"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
+msgid "The dates"
+msgstr "ದಿನಾಂಕಗಳು"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-msgid  "Returns the interest rate for a fully invested security"
+msgid "Returns the interest rate for a fully invested security"
 msgstr "ಸಂಪೂರ್ಣ ಬಂಡವಾಳ ಭದ್ರತೆಗೆ ಬಡ್ಡಿದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
+msgid "Investment"
+msgstr "ವಿನಿಯೋಜನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
+msgid "The investment"
+msgstr "ವಿನಿಯೋಜನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
+msgid "Redemption"
+msgstr "ವಿಮೋಚನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
+msgid "The redemption value"
+msgstr "ವಿಮೋಚನೆ ಮೌಲ್ಯ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
-msgid  "Returns the first coupon date after the settlement date"
+msgid "Returns the first coupon date after the settlement date"
 msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕದ ನಂತರದ ಮೊದಲ ಕೂಪನ್‌ ದಿನಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕವನ್ನು ಒಳಗೊಂಡ ಕೂಪನ್‌ ಅವಧಿಯಲ್ಲಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the number of days in the coupon period containing the settlement date"
+msgstr ""
+"ಇತ್ಯರ್ಥ ದಿನಾಂಕವನ್ನು ಒಳಗೊಂಡ ಕೂಪನ್‌ ಅವಧಿಯಲ್ಲಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕದಿಂದ ಮುಂದಿನ ಕೂಪನ್‌ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the number of days from the settlement date to the next coupon date"
+msgstr ""
+"ಇತ್ಯರ್ಥ ದಿನಾಂಕದಿಂದ ಮುಂದಿನ ಕೂಪನ್‌ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "ಕೂಪನ್‌ನ ಅವಧಿಯ ಪ್ರಾರಂಭದಿಂದ ಇತ್ಯರ್ಥದ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the number of days from the beginning of the coupon period to the settlement date"
+msgstr ""
+"ಕೂಪನ್‌ನ ಅವಧಿಯ ಪ್ರಾರಂಭದಿಂದ ಇತ್ಯರ್ಥದ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-msgid  "Returns the last coupon date preceding the settlement date"
+msgid "Returns the last coupon date preceding the settlement date"
 msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕದ ಹಿಂದಿರುವ ಕೂಪನ್‌ನ ಕೊನೆಯ ದಿನಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
+
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "ಇತ್ಯರ್ಥ ಮತ್ತು ಪಕ್ವತೆ ದಿನಾಂಕದ ಮಧ್ಯೆ ಪಾವತಿ ಮಾಡಬೇಕಾದ ಕೂಪನ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the number of coupons payable between the settlement and maturity dates"
+msgstr ""
+"ಇತ್ಯರ್ಥ ಮತ್ತು ಪಕ್ವತೆ ದಿನಾಂಕದ ಮಧ್ಯೆ ಪಾವತಿ ಮಾಡಬೇಕಾದ ಕೂಪನ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು "
+"ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
+msgid "Settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
+msgid "The settlement"
+msgstr "ಇತ್ಯರ್ಥ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
+msgid "Maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
+msgid "The maturity"
+msgstr "ಪಕ್ವತೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
+msgid "Frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
+msgid "The frequency"
+msgstr "ಆವರ್ತನೆ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
+msgid "Basis"
+msgstr "ಆಧಾರ"
+
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
+msgid "The basis"
+msgstr "ಆಧಾರ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "ಸರಣಿಯಲ್ಲಿ ಅನೇಕ ಚಕ್ರಬಡ್ಡಿಯ ದರಗಳನ್ನು ಅನ್ವಯಿಸಿದ ನಂತರ ಬರುವ ಮೂಲಧನದ ಭವಿಷ್ಯದ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
+msgid "Returns the future value of the initial principal after a series of compound interest rates are applied"
+msgstr ""
+"ಸರಣಿಯಲ್ಲಿ ಅನೇಕ ಚಕ್ರಬಡ್ಡಿಯ ದರಗಳನ್ನು ಅನ್ವಯಿಸಿದ ನಂತರ ಬರುವ ಮೂಲಧನದ ಭವಿಷ್ಯದ "
+"ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-msgid  "Principal"
+msgid "Principal"
 msgstr "ಮೂಲಧನ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-msgid  "The principal"
+msgid "The principal"
 msgstr "ಮೂಲಧನ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-msgid  "Schedule"
+msgid "Schedule"
 msgstr "ನಿಗದಿತ ಸಮಯ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-msgid  "The schedule"
+msgid "The schedule"
 msgstr "ನಿಗದಿತ ಸಮಯ"
