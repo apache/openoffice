@@ -29,6 +29,7 @@ ENABLE_EXCEPTIONS=TRUE
 
 # --- Settings -----------------------------------------------------
 
+.IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE :  settings.mk
 
 # --- Files --------------------------------------------------------
@@ -101,6 +102,6 @@ $(MISC)$/OpenOffice_%.c : $(MY_BRK_BRKFILES:s/.brk/_brk.c/)
     echo $(USQ)#pragma warning( disable : 4229 4668 )$(USQ) >> $@
     echo $(USQ)#endif$(USQ) >> $@
     $(TYPE) $(@:s/_dat/_tmp/) >> $@
-
+.ENDIF
 .INCLUDE :	target.mk
 

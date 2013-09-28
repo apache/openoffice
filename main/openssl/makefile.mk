@@ -58,7 +58,9 @@ OUT2LIB = libssl.*
 OUT2LIB += libcrypto.*
 OUT2INC += include/openssl/*
 
+.IF "$(MAKETARGETS)"!="genPO"
 UNAME=$(shell uname)
+.ENDIF
 
 .IF "$(OS)" == "LINUX" || "$(OS)" == "FREEBSD"
 	PATCH_FILES=openssllnx.patch
