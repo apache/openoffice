@@ -1,1533 +1,1581 @@
-# ************************************************************
-# 
-#  Licensed to the Apache Software Foundation (ASF) under one
-#  or more contributor license agreements.  See the NOTICE file
-#  distributed with this work for additional information
-#  regarding copyright ownership.  The ASF licenses this file
-#  to you under the Apache License, Version 2.0 (the
-#  "License"); you may not use this file except in compliance
-#  with the License.  You may obtain a copy of the License at
-# 
-#    http://www.apache.org/licenses/LICENSE-2.0
-# 
-#  Unless required by applicable law or agreed to in writing,
-#  software distributed under the License is distributed on an
-#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#  KIND, either express or implied.  See the License for the
-#  specific language governing permissions and limitations
-#  under the License.
-# 
-# ***********************************************************
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
-"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
 #, fuzzy
-msgid "Sorting and Grouping"
+msgid  "Sorting and Grouping"
 msgstr "فرز وتجميع"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Groups"
+msgid  "Groups"
 msgstr "المجموعات"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Group actions"
+msgid  "Group actions"
 msgstr "إجراءات المجموعة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Move up"
+msgid  "Move up"
 msgstr "نقل لأعلى"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Move down"
+msgid  "Move down"
 msgstr "نقل لأسفل"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "~Delete"
+msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Properties"
+msgid  "Properties"
 msgstr "خصائص"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Sorting"
+msgid  "Sorting"
 msgstr "فرز"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
 #, fuzzy
-msgid "Ascending"
+msgid  "Ascending"
 msgstr "تصاعدي"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
 #, fuzzy
-msgid "Descending"
+msgid  "Descending"
 msgstr "تنازلي"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Group Header"
+msgid  "Group Header"
 msgstr "رأس المجموعة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Present"
+msgid  "Present"
 msgstr "حاضر"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Not present"
+msgid  "Not present"
 msgstr "غير حاضر"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Group Footer"
+msgid  "Group Footer"
 msgstr "تذييل المجموعة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Present"
+msgid  "Present"
 msgstr "حاضر"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Not present"
+msgid  "Not present"
 msgstr "غير حاضر"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Group On"
+msgid  "Group On"
 msgstr "تجميع في"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Each Value"
+msgid  "Each Value"
 msgstr "كل قيمة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Group Interval"
+msgid  "Group Interval"
 msgstr "فاصل المجموعة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Keep Together"
+msgid  "Keep Together"
 msgstr "البقاء معًا"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
 #, fuzzy
-msgid "No"
+msgid  "No"
 msgstr "لا"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
 #, fuzzy
-msgid "Whole Group"
+msgid  "Whole Group"
 msgstr "كل المجموعة"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
 #, fuzzy
-msgid "With First Detail"
+msgid  "With First Detail"
 msgstr "مع التفاصيل اﻷولى"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Help"
+msgid  "Help"
 msgstr "تعليمات"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
 #, fuzzy
-msgid "Field/Expression"
+msgid  "Field/Expression"
 msgstr "حقل/تعبير"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
 #, fuzzy
-msgid "Sort Order"
+msgid  "Sort Order"
 msgstr "ترتيب الفرز"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
 #, fuzzy
-msgid "Prefix Characters"
+msgid  "Prefix Characters"
 msgstr "حروف البادئة"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
 #, fuzzy
-msgid "Year"
+msgid  "Year"
 msgstr "السنة"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
 #, fuzzy
-msgid "Quarter"
+msgid  "Quarter"
 msgstr "ربع السنة"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
 #, fuzzy
-msgid "Month"
+msgid  "Month"
 msgstr "الشهر"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
 #, fuzzy
-msgid "Week"
+msgid  "Week"
 msgstr "الأسبوع"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
 #, fuzzy
-msgid "Day"
+msgid  "Day"
 msgstr "اليوم"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
 #, fuzzy
-msgid "Hour"
+msgid  "Hour"
 msgstr "الساعة"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
 #, fuzzy
-msgid "Minute"
+msgid  "Minute"
 msgstr "الدقيقة"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
 #, fuzzy
-msgid "Interval"
+msgid  "Interval"
 msgstr "الفاصل الزمني"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
 #, fuzzy
-msgid "Select a field or type an expression to sort or group on."
+msgid  "Select a field or type an expression to sort or group on."
 msgstr "حدد حقلاً، أو اكتب تعبيرًا للفرز أو التجميع وفقًا له"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Display a header for this group?"
+msgid  "Display a header for this group?"
 msgstr "هل تريد عرض رأس لهذه المجموعة؟"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Display a footer for this group?"
+msgid  "Display a footer for this group?"
 msgstr "هل تريد عرض تذييل لهذه المجموعة؟"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
 #, fuzzy
-msgid "Select the value or range of values that starts a new group."
+msgid  "Select the value or range of values that starts a new group."
 msgstr "حدد قيمة أو نطاق قيم لتبدأ مجموعة جديدة."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
 #, fuzzy
-msgid "Interval or number of characters to group on."
+msgid  "Interval or number of characters to group on."
 msgstr "الفاصل الزمني أو عدد الحروف التي سيتم تجميع الحروف وفقًا لها."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
 #, fuzzy
-msgid "Keep group together on one page?"
+msgid  "Keep group together on one page?"
 msgstr "بقاء المجموعات معًا في صفحة واحدة؟"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
 #, fuzzy
-msgid "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-"حدد ترتيب فرز تصاعديًا أو تنازليًا. التصاعدي يعني من الألف إلى الياء أو من 0 "
-"إلى 9."
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr "حدد ترتيب فرز تصاعديًا أو تنازليًا. التصاعدي يعني من الألف إلى الياء أو من 0 إلى 9."
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
 #, fuzzy
-msgid "Page Numbers"
+msgid  "Page Numbers"
 msgstr "أرقام الصفحات"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Format"
+msgid  "Format"
 msgstr "التنسيق"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
 #, fuzzy
-msgid "Page N"
+msgid  "Page N"
 msgstr "الصفحة N"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
 #, fuzzy
-msgid "Page N of M"
+msgid  "Page N of M"
 msgstr "الصفحة N من M"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Position"
+msgid  "Position"
 msgstr "الموضع"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid "Top of Page (Header)"
+msgid  "Top of Page (Header)"
 msgstr "أعلى الصفحة (الرأس)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid "Bottom of Page (Footer)"
+msgid  "Bottom of Page (Footer)"
 msgstr "أسفل الصفحة (التذييل)"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
 #, fuzzy
-msgid "General"
+msgid  "General"
 msgstr "عام"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Alignment:"
+msgid  "Alignment:"
 msgstr "المحاذاة:"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Left"
-msgstr "اليسار"
+msgid  "Left"
+msgstr "يسار"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Center"
-msgstr "مركز"
+msgid  "Center"
+msgstr "وسط"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Right"
-msgstr "اليمين"
+msgid  "Right"
+msgstr "يمين"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
 #, fuzzy
-msgid "Show Number on First Page"
+msgid  "Show Number on First Page"
 msgstr "إظهار الرقم في الصفحة اﻷولى"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
 #, fuzzy
-msgid "~Help"
+msgid  "~Help"
 msgstr "~تعليمات"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
 #, fuzzy
-msgid "\"Page \" & #PAGENUMBER#"
+msgid  "\"Page \" & #PAGENUMBER#"
 msgstr "\"الصفحة \" & #PAGENUMBER#"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
 #, fuzzy
-msgid " & \" of \" & #PAGECOUNT#"
+msgid  " & \" of \" & #PAGECOUNT#"
 msgstr " & \" من \" & #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
 #, fuzzy
-msgid "Page Setup"
+msgid  "Page Setup"
 msgstr "إعداد الصفحة"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
 #, fuzzy
-msgid "Page"
+msgid  "Page"
 msgstr "الصفحة"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
 #, fuzzy
-msgid "Background"
+msgid  "Background"
 msgstr "الخلفية"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
-msgid "Return"
+msgid  "Return"
 msgstr "رجوع"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
 #, fuzzy
-msgid "Page"
+msgid  "Page"
 msgstr "الصفحة"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
 #, fuzzy
-msgid "Background"
+msgid  "Background"
 msgstr "الخلفية"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 #, fuzzy
-msgid "Section Setup"
+msgid  "Section Setup"
 msgstr "إعداد القسم"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
-msgid "Return"
+#, fuzzy
+msgid  "Return"
 msgstr "رجوع"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
 #, fuzzy
-msgid "Background"
+msgid  "Background"
 msgstr "الخلفية"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
 #, fuzzy
-msgid "Character Settings"
+msgid  "Character Settings"
 msgstr "إعدادات الحروف"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
 #, fuzzy
-msgid "Font"
+msgid  "Font"
 msgstr "الخط"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
 #, fuzzy
-msgid "Font Effects"
+msgid  "Font Effects"
 msgstr "تأثيرات الخطوط"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
 #, fuzzy
-msgid "Position"
+msgid  "Position"
 msgstr "الموضع"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
 #, fuzzy
-msgid "Asian Layout"
+msgid  "Asian Layout"
 msgstr "تخطيط أسيوي"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
 #, fuzzy
-msgid "Background"
+msgid  "Background"
 msgstr "الخلفية"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 #, fuzzy
-msgid "Alignment"
+msgid  "Alignment"
 msgstr "محاذاة"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
-msgid "Return"
+#, fuzzy
+msgid  "Return"
 msgstr "رجوع"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
 #, fuzzy
-msgid "Character"
+msgid  "Character"
 msgstr "الحرف"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
 #, fuzzy
-msgid "Line"
+msgid  "Line"
 msgstr "السطر"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
 #, fuzzy
-msgid "Line"
+msgid  "Line"
 msgstr "السطر"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
 #, fuzzy
-msgid "Line Styles"
+msgid  "Line Styles"
 msgstr "أنماط الخطوط"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 #, fuzzy
-msgid "Arrow Styles"
+msgid  "Arrow Styles"
 msgstr "أنماط الأسهم"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
-msgid "Return"
+#, fuzzy
+msgid  "Return"
 msgstr "رجوع"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
 #, fuzzy
-msgid "Line"
+msgid  "Line"
 msgstr "السطر"
 
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
 #, fuzzy
-msgid "Report navigator"
+msgid  "Report navigator"
 msgstr "مستكشف التقرير"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
 #, fuzzy
-msgid "Functions"
+msgid  "Functions"
 msgstr "الدوال"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
 #, fuzzy
-msgid "Groups"
+msgid  "Groups"
 msgstr "المجموعات"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 #, fuzzy
-msgid "Sorting and Grouping..."
+msgid  "Sorting and Grouping..."
 msgstr "فرز وتجميع..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
 #, fuzzy
-msgid "Page Header/Footer..."
+msgid  "Page Header/Footer..."
 msgstr "رأس/تذييل الصفحة..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
 #, fuzzy
-msgid "Report Header/Footer..."
+msgid  "Report Header/Footer..."
 msgstr "رأس/تذييل التقرير..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
 #, fuzzy
-msgid "New Function"
+msgid  "New Function"
 msgstr "دالة جديدة"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 #, fuzzy
-msgid "Properties..."
+msgid  "Properties..."
 msgstr "خصائص..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Field Value Is"
+msgid  "Field Value Is"
 msgstr "قيمة الحقل هي"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid "Expression Is"
+msgid  "Expression Is"
 msgstr "التعبير هو "
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
 #, fuzzy
-msgid "between"
+msgid  "between"
 msgstr "بين"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
 #, fuzzy
-msgid "not between"
+msgid  "not between"
 msgstr "ليس بين"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
 #, fuzzy
-msgid "equal to"
+msgid  "equal to"
 msgstr "يساوي"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
 #, fuzzy
-msgid "not equal to"
+msgid  "not equal to"
 msgstr "لا يساوي"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
 #, fuzzy
-msgid "greater than"
+msgid  "greater than"
 msgstr "أكبر من"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
 #, fuzzy
-msgid "less than"
+msgid  "less than"
 msgstr "أصغر من"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
 #, fuzzy
-msgid "greater than or equal to"
+msgid  "greater than or equal to"
 msgstr "أكبر من أو يساوي"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
 #, fuzzy
-msgid "less than or equal to"
+msgid  "less than or equal to"
 msgstr "أصغر من أو يساوي"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "and"
+msgid  "and"
 msgstr "و"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
 #, fuzzy
-msgid "Example"
+msgid  "Example"
 msgstr "مثال"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
 #, fuzzy
-msgid "Conditional Formatting"
+msgid  "Conditional Formatting"
 msgstr "تنسيق شرطي"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
 #, fuzzy
-msgid "~Help"
+msgid  "~Help"
 msgstr "~تعليمات"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 #, fuzzy
-msgid "Condition $number$"
+msgid  "Condition $number$"
 msgstr "الشرط $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
 #, fuzzy
-msgid "White"
+msgid  "White"
 msgstr "أبيض"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
 #, fuzzy
-msgid "Font color"
+msgid  "Font color"
 msgstr "لون الخط"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
 #, fuzzy
-msgid "Background"
+msgid  "Background"
 msgstr "الخلفية"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
 #, fuzzy
-msgid "No Fill"
+msgid  "No Fill"
 msgstr "بدون تعبئة"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Sort Ascending"
+msgid  "Sort Ascending"
 msgstr "فرز تصاعدي"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Sort Descending"
+msgid  "Sort Descending"
 msgstr "فرز تنازلي"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Remove sorting"
+msgid  "Remove sorting"
 msgstr "إزالة الفرز"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid "Insert"
+msgid  "Insert"
 msgstr "إدراج"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
 #, fuzzy
-msgid "Help"
+msgid  "Help"
 msgstr "تعليمات"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-"قم بتمييز الحقول لإدراجها في المقطع المحدد للقالب، ثم انقر فوق إدراج أو اضغط "
-"على Enter."
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "قم بتمييز الحقول لإدراجها في المقطع المحدد للقالب، ثم انقر فوق إدراج أو اضغط على Enter."
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
 #, fuzzy
-msgid "Date and Time"
+msgid  "Date and Time"
 msgstr "التاريخ والوقت"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
 #, fuzzy
-msgid "Include Date"
+msgid  "Include Date"
 msgstr "تضمين التاريخ"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Format"
+msgid  "Format"
 msgstr "التنسيق"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
 #, fuzzy
-msgid "Include Time"
+msgid  "Include Time"
 msgstr "تضمين الوقت"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid "Format"
+msgid  "Format"
 msgstr "التنسيق"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
 #, fuzzy
-msgid "~Help"
+msgid  "~Help"
 msgstr "~تعليمات"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 #, fuzzy
-msgid "General"
+msgid  "General"
 msgstr "عام"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 #, fuzzy
-msgid "Data"
+msgid  "Data"
 msgstr "البيانات"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
 #, fuzzy
-msgid "No"
+msgid  "No"
 msgstr "لا"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
 #, fuzzy
-msgid "Yes"
+msgid  "Yes"
 msgstr "نعم"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
 #, fuzzy
-msgid "Force New Page"
+msgid  "Force New Page"
 msgstr "فرض صفحة جديدة"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "None"
+msgid  "None"
 msgstr "بلا"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Before Section"
+msgid  "Before Section"
 msgstr "قبل القسم"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "After Section"
+msgid  "After Section"
 msgstr "بعد القسم"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
 #, fuzzy
-msgid "Before & After Section"
+msgid  "Before & After Section"
 msgstr "قبل القسم وبعده"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
 #, fuzzy
-msgid "New Row Or Column"
+msgid  "New Row Or Column"
 msgstr "صف أو عمود جديد"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 #, fuzzy
-msgid "Keep Together"
+msgid  "Keep Together"
 msgstr "البقاء معًا"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "No"
+msgid  "No"
 msgstr "لا"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Whole Group"
+msgid  "Whole Group"
 msgstr "كل المجموعة"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "With First Detail"
+msgid  "With First Detail"
 msgstr "مع التفاصيل اﻷولى"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
 #, fuzzy
-msgid "Can Grow"
+msgid  "Can Grow"
 msgstr "يمكن أن يزداد"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
 #, fuzzy
-msgid "Can Shrink"
+msgid  "Can Shrink"
 msgstr "يمكن أن يتقلص"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
 #, fuzzy
-msgid "Repeat Section"
+msgid  "Repeat Section"
 msgstr "تكرار القسم"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
 #, fuzzy
-msgid "Print repeated values"
+msgid  "Print repeated values"
 msgstr "طباعة القيم المكررة"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
 #, fuzzy
-msgid "Conditional Print Expression"
+msgid  "Conditional Print Expression"
 msgstr "تعبير الطباعة الشرطي"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
 #, fuzzy
-msgid "Start new column"
+msgid  "Start new column"
 msgstr "بدء عمود جديد"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
 #, fuzzy
-msgid "Start new page"
+msgid  "Start new page"
 msgstr "بدء صفحة جديدة"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
 #, fuzzy
-msgid "Reset page number"
+msgid  "Reset page number"
 msgstr "إعادة تعيين رقم الصفحة"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
 #, fuzzy
-msgid "Chart type"
+msgid  "Chart type"
 msgstr "نوع المخطط"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
 #, fuzzy
-msgid "Print When Group Change"
+msgid  "Print When Group Change"
 msgstr "الطباعة عند تغيير المجموعة"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
 #, fuzzy
-msgid "Visible"
+msgid  "Visible"
 msgstr "مرئي"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
 #, fuzzy
-msgid "Group keep together"
+msgid  "Group keep together"
 msgstr "بقاء المجموعات معًا"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "Per Page"
+msgid  "Per Page"
 msgstr "في الصفحة"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Per Column"
+msgid  "Per Column"
 msgstr "في العمود"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "None"
+msgid  "None"
 msgstr "بلا"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Section"
+msgid  "Section"
 msgstr "المقطع"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "Automatic"
+msgid  "Automatic"
 msgstr "تلقائي"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
 #, fuzzy
-msgid "Page header"
+msgid  "Page header"
 msgstr "رأس الصفحة"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
 #, fuzzy
-msgid "Page footer"
+msgid  "Page footer"
 msgstr "تذييل الصفحة"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "All Pages"
+msgid  "All Pages"
 msgstr "كافة الصفحات"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Not With Report Header"
+msgid  "Not With Report Header"
 msgstr "بدون رأس التقرير"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "Not With Report Footer"
+msgid  "Not With Report Footer"
 msgstr "بدون تذييل التقرير"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
 #, fuzzy
-msgid "Not With Report Header/Footer"
+msgid  "Not With Report Header/Footer"
 msgstr "بدون رأس/تذييل التقرير"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
 #, fuzzy
-msgid "Deep traversing"
+msgid  "Deep traversing"
 msgstr "انتقال عميق"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
 #, fuzzy
-msgid "Pre evaluation"
+msgid  "Pre evaluation"
 msgstr "تقييم مسبق"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
 #, fuzzy
-msgid "Position X"
+msgid  "Position X"
 msgstr "الموضع س"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
 #, fuzzy
-msgid "Position Y"
+msgid  "Position Y"
 msgstr "الموضع ص"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
 #, fuzzy
-msgid "Width"
+msgid  "Width"
 msgstr "العرض"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
 #, fuzzy
-msgid "Height"
+msgid  "Height"
 msgstr "الارتفاع"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
 #, fuzzy
-msgid "Initial value"
+msgid  "Initial value"
 msgstr "القيمة المبدئية"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
 #, fuzzy
-msgid "Preserve as Link"
+msgid  "Preserve as Link"
 msgstr "حفظ كارتباط"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
 #, fuzzy
-msgid "Formula"
+msgid  "Formula"
 msgstr "الصيغة"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
 #, fuzzy
-msgid "Data field"
+msgid  "Data field"
 msgstr "حقل البيانات"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
 #, fuzzy
-msgid "Font"
+msgid  "Font"
 msgstr "الخط"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
 #, fuzzy
-msgid "Background color"
+msgid  "Background color"
 msgstr "لون الخلفية"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
 #, fuzzy
-msgid "Background Transparent"
+msgid  "Background Transparent"
 msgstr "خلفية شفافة"
 
 #: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
 #, fuzzy
-msgid "Background Transparent"
+msgid  "Background Transparent"
 msgstr "خلفية شفافة"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
 #, fuzzy
-msgid "This operation is not allowed. The control overlaps with another one."
+msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr "هذه العملية غير مسموح بها. عنصر التحكم هذا متداخل مع عنصر تحكم آخر."
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
 #, fuzzy
-msgid "This position can not be set. It is invalid."
+msgid  "This position can not be set. It is invalid."
 msgstr "لا يمكن تعيين الموضع. فهو غير صالح."
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
 #, fuzzy
-msgid "Group: %1"
+msgid  "Group: %1"
 msgstr "مجموعة: %1 "
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
 #, fuzzy
-msgid "Function"
+msgid  "Function"
 msgstr "الوظيفة"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
 #, fuzzy
-msgid "Scope"
+msgid  "Scope"
 msgstr "المجال"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
 #, fuzzy
-msgid "Data Field Type"
+msgid  "Data Field Type"
 msgstr "نوع حقل البيانات"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "Field or Formula"
+msgid  "Field or Formula"
 msgstr "حقل أو صيغة"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Function"
+msgid  "Function"
 msgstr "الوظيفة"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "Counter"
+msgid  "Counter"
 msgstr "العداد"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
 #, fuzzy
-msgid "User defined Function"
+msgid  "User defined Function"
 msgstr "وظيفة معرفة من قبل المستخدم"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
 #, fuzzy
-msgid "Link master fields"
+msgid  "Link master fields"
 msgstr "ربط الحقول الرئيسية"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
 #, fuzzy
-msgid "Link slave fields"
+msgid  "Link slave fields"
 msgstr "ربط الحقول التابعة"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
 #, fuzzy
-msgid "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
-"يمكن استخدام المخططات لعرض بيانات تفصيلية حول السجل الحالي للنموذج. وللقيام "
-"بهذا، يمكنك تحديد الأعمدة الموجودة في المخطط التي تتطابق مع الأعمدة في "
-"النموذج."
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr "يمكن استخدام المخططات لعرض بيانات تفصيلية حول السجل الحالي للنموذج. وللقيام بهذا، يمكنك تحديد الأعمدة الموجودة في المخطط التي تتطابق مع الأعمدة في النموذج."
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
 #, fuzzy
-msgid "Chart"
+msgid  "Chart"
 msgstr "المخطط البياني"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
 #, fuzzy
-msgid "Report"
+msgid  "Report"
 msgstr "التقرير"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
 #, fuzzy
-msgid "Preview Row(s)"
+msgid  "Preview Row(s)"
 msgstr "معاينة صف (صفوف)"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
 #, fuzzy
-msgid "Area"
+msgid  "Area"
 msgstr "المنطقة"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
 #, fuzzy
-msgid "Report Output Format"
+msgid  "Report Output Format"
 msgstr "تنسيق إخراج التقرير"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
 #, fuzzy
-msgid "Vert. Alignment"
+msgid  "Vert. Alignment"
 msgstr "رأسي محاذاة"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "Top"
+msgid  "Top"
 msgstr "الجزء العلوي"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Middle"
+msgid  "Middle"
 msgstr "المنتصف"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "Bottom"
+msgid  "Bottom"
 msgstr "الجزء السفلي"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
 #, fuzzy
-msgid "Horz. Alignment"
+msgid  "Horz. Alignment"
 msgstr "أفقي محاذاة"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
 #, fuzzy
-msgid "Left"
+msgid  "Left"
 msgstr "اليسار"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
 #, fuzzy
-msgid "Right"
+msgid  "Right"
 msgstr "اليمين"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
 #, fuzzy
-msgid "Block"
+msgid  "Block"
 msgstr "حظر"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
 #, fuzzy
-msgid "Center"
+msgid  "Center"
 msgstr "مركز"
 
 #: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
 #, fuzzy
-msgid "Counter"
+msgid  "Counter"
 msgstr "العداد"
 
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 #, fuzzy
-msgid "Accumulation"
+msgid  "Accumulation"
 msgstr "تراكم"
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
 #, fuzzy
-msgid "Minimum"
+msgid  "Minimum"
 msgstr "الحد الأدنى"
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
 #, fuzzy
-msgid "Maximum"
+msgid  "Maximum"
 msgstr "الحد الأقصى"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid "Properties: "
+msgid  "Properties: "
 msgstr "الخصائص: "
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid "No Control marked"
+msgid  "No Control marked"
 msgstr "لم يتم وضع علامة على عنصر تحكم"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid "Multiselection"
-msgstr ""
+#, fuzzy
+msgid  "Multiselection"
+msgstr "تحديد متعدد"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid "Image Control"
-msgstr ""
+#, fuzzy
+msgid  "Image Control"
+msgstr "التحكم بالصورة"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 #, fuzzy
-msgid "Label field"
+msgid  "Label field"
 msgstr "حقل تسمية"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
 #, fuzzy
-msgid "Line"
-msgstr "السطر"
+msgid  "Line"
+msgstr "الخط"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid "Formatted Field"
-msgstr ""
+#, fuzzy
+msgid  "Formatted Field"
+msgstr "حقل مُنسَّق"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
 #, fuzzy
-msgid "Shape"
+msgid  "Shape"
 msgstr "شكل"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
 #, fuzzy
-msgid "Report"
+msgid  "Report"
 msgstr "التقرير"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
 #, fuzzy
-msgid "Section"
-msgstr "المقطع"
+msgid  "Section"
+msgstr "تحديد"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
 #, fuzzy
-msgid "Function"
+msgid  "Function"
 msgstr "الوظيفة"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid "Group"
-msgstr ""
+#, fuzzy
+msgid  "Group"
+msgstr "تجميع"
 
 #: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid "Show ruler"
-msgstr ""
+#, fuzzy
+msgid  "Show ruler"
+msgstr "إظهار المسطرة"
 
 #: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid "Show grid"
-msgstr ""
+#, fuzzy
+msgid  "Show grid"
+msgstr "إظهار الشبكة"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid "Change Object"
-msgstr ""
+#, fuzzy
+msgid  "Change Object"
+msgstr "تغيير الكائن"
 
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 #, fuzzy
-msgid "Move Group(s)"
+msgid  "Move Group(s)"
 msgstr "تحريك المجموعة(ات)"
 
 #: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
 #, fuzzy
-msgid "Conditional Formatting"
+msgid  "Conditional Formatting"
 msgstr "تنسيق شرطي"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid "Remove report header / report footer"
-msgstr ""
+#, fuzzy
+msgid  "Remove report header / report footer"
+msgstr "إزالة رأس التقرير/تذييل التقرير"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid "Add report header / report footer"
-msgstr ""
+#, fuzzy
+msgid  "Add report header / report footer"
+msgstr "إضافة رأس التقرير/تذييل التقرير"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid "Remove page header / page footer"
-msgstr ""
+#, fuzzy
+msgid  "Remove page header / page footer"
+msgstr "إزالة رأس الصفحة/تذييل الصفحة"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid "Add page header / page footer"
-msgstr ""
+#, fuzzy
+msgid  "Add page header / page footer"
+msgstr "إضافة رأس الصفحة/تذييل الصفحة"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 #, fuzzy
-msgid "Change property '#'"
+msgid  "Change property '#'"
 msgstr "تغيير الخاصية '#'"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Add group header "
+msgid  "Add group header "
 msgstr "إضافة رأس المجموعة "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Remove group header "
+msgid  "Remove group header "
 msgstr "إزالة رأس المجموعة "
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Add group footer "
+msgid  "Add group footer "
 msgstr "إضافة تذييل المجموعة "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Remove group footer "
+msgid  "Remove group footer "
 msgstr "إزالة تذييل المجموعة "
 
 #: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid "Add function"
-msgstr ""
+#, fuzzy
+msgid  "Add function"
+msgstr "إضافة دالة"
 
 #: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid "Delete function"
-msgstr ""
+#, fuzzy
+msgid  "Delete function"
+msgstr "حذف دالة"
 
 #: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid "Design"
-msgstr ""
+#, fuzzy
+msgid  "Design"
+msgstr "تصميم"
 
 #: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid "Preview"
-msgstr ""
+#, fuzzy
+msgid  "Preview"
+msgstr "معاينة"
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 #, fuzzy
-msgid "Report #"
+msgid  "Report #"
 msgstr "تقرير #"
 
 #: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid "~Report name"
-msgstr ""
+#, fuzzy
+msgid  "~Report name"
+msgstr "ا~سم التقرير"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid "Delete Group"
-msgstr ""
+#, fuzzy
+msgid  "Delete Group"
+msgstr "حذف مجموعة"
 
 #: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid "Add Group"
-msgstr ""
+#, fuzzy
+msgid  "Add Group"
+msgstr "إضافة المجموعة"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid "Delete Selection"
-msgstr ""
+#, fuzzy
+msgid  "Delete Selection"
+msgstr "حذف التحديد"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid "Delete Function"
-msgstr ""
+#, fuzzy
+msgid  "Delete Function"
+msgstr "حذف الدالة"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid "Change Size"
-msgstr ""
+#, fuzzy
+msgid  "Change Size"
+msgstr "تغيير الحجم"
 
 #: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid "Paste"
-msgstr ""
+#, fuzzy
+msgid  "Paste"
+msgstr "لصق"
 
 #: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid "Insert Control"
-msgstr ""
+#, fuzzy
+msgid  "Insert Control"
+msgstr "إدراج عنصر تحكم"
 
 #: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid "Delete Control"
-msgstr ""
+#, fuzzy
+msgid  "Delete Control"
+msgstr "حذف عنصر تحكم"
 
 #: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid "Insert Group"
-msgstr ""
+#, fuzzy
+msgid  "Insert Group"
+msgstr "إدراج مجموعة"
 
 #: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
-msgid "Delete Group"
+#, fuzzy
+msgid  "Delete Group"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid "GroupHeader"
-msgstr ""
+#, fuzzy
+msgid  "GroupHeader"
+msgstr "رأس المجموعة"
 
 #: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid "GroupFooter"
-msgstr ""
+#, fuzzy
+msgid  "GroupFooter"
+msgstr "تذييل المجموعة"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 #, fuzzy
-msgid "Sorting and Grouping..."
+msgid  "Sorting and Grouping..."
 msgstr "فرز وتجميع..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid "Background Color..."
-msgstr ""
+#, fuzzy
+msgid  "Background Color..."
+msgstr "لون الخلفية..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid "Ruler..."
-msgstr ""
+#, fuzzy
+msgid  "Ruler..."
+msgstr "المسطرة..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid "Grid..."
-msgstr ""
+#, fuzzy
+msgid  "Grid..."
+msgstr "الشبكة..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid "~Arrange"
-msgstr ""
+#, fuzzy
+msgid  "~Arrange"
+msgstr "~ترتيب"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid "Bring ~Forward"
-msgstr ""
+#, fuzzy
+msgid  "Bring ~Forward"
+msgstr "إحضار للأ~مام"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid "Send Back~ward"
-msgstr ""
+#, fuzzy
+msgid  "Send Back~ward"
+msgstr "إرسال لل~خلف"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid "~Object Resizing"
-msgstr ""
+#, fuzzy
+msgid  "~Object Resizing"
+msgstr "ت~غيير حجم الكائن"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 #, fuzzy
-msgid "~Fit to smallest width"
+msgid  "~Fit to smallest width"
 msgstr "ت~ناسب ﻷصغر عرض"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
 #, fuzzy
-msgid "~Fit to greatest width"
+msgid  "~Fit to greatest width"
 msgstr "تناسب ﻷ~كبر عرض"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid "~Fit to smallest height"
-msgstr ""
+#, fuzzy
+msgid  "~Fit to smallest height"
+msgstr "تنا~سب لأصغر ارتفاع"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 #, fuzzy
-msgid "~Fit to greatest height"
+msgid  "~Fit to greatest height"
 msgstr "~تناسب ﻷكبر ارتفاع"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
 #, fuzzy
-msgid "Section"
+msgid  "Section"
 msgstr "المقطع"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid "Shrink"
-msgstr ""
+#, fuzzy
+msgid  "Shrink"
+msgstr "تقليص"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid "Shrink from top"
-msgstr ""
+#, fuzzy
+msgid  "Shrink from top"
+msgstr "تقليص من أعلى"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid "Shrink from bottom"
-msgstr ""
+#, fuzzy
+msgid  "Shrink from bottom"
+msgstr "تقليص من أسفل"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid "Distribution..."
-msgstr ""
+#, fuzzy
+msgid  "Distribution..."
+msgstr "التوزيع..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 #, fuzzy
-msgid "Properties..."
+msgid  "Properties..."
 msgstr "خصائص..."
 
 #: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid "Add field:"
-msgstr ""
+#, fuzzy
+msgid  "Add field:"
+msgstr "إضافة حقل:"
 
 #: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid "Filter"
-msgstr ""
+#, fuzzy
+msgid  "Filter"
+msgstr "تصفية"
 
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 #, fuzzy
-msgid " - %PRODUCTNAME Base Report"
+msgid  " - %PRODUCTNAME Base Report"
 msgstr " - تقرير قاعدة %PRODUCTNAME"
 
 #: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid "Untitled"
-msgstr ""
+#, fuzzy
+msgid  "Untitled"
+msgstr "بلا عنوان"
 
 #: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid "Change Alignment"
-msgstr ""
+#, fuzzy
+msgid  "Change Alignment"
+msgstr "غير المحاذاة"
 
 #: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid "# Header"
-msgstr ""
+#, fuzzy
+msgid  "# Header"
+msgstr "رأس #"
 
 #: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid "# Footer"
-msgstr ""
+#, fuzzy
+msgid  "# Footer"
+msgstr "تذييل #"
 
 #: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid "Insert graphics"
-msgstr ""
+#, fuzzy
+msgid  "Insert graphics"
+msgstr "إدراج رسومات"
 
 #: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid "Delete"
-msgstr ""
+#, fuzzy
+msgid  "Delete"
+msgstr "حذف"
 
 #: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
 #, fuzzy
-msgid "Function"
+msgid  "Function"
 msgstr "الوظيفة"
 
 #: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid "An error occurred while creating the report."
-msgstr ""
+#, fuzzy
+msgid  "An error occurred while creating the report."
+msgstr "حدث خطأ أثناء إنشاء التقرير."
 
 #: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid "An exception of type $type$ was caught."
-msgstr ""
+#, fuzzy
+msgid  "An exception of type $type$ was caught."
+msgstr "ظهر استثناء من النوع $type$."
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid "Change font"
-msgstr ""
+#, fuzzy
+msgid  "Change font"
+msgstr "تغيير الخط"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid "Change page attributes"
-msgstr ""
+#, fuzzy
+msgid  "Change page attributes"
+msgstr "تغيير سمات الصفحة"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid "Insert Page Header/Footer"
+msgid  "Insert Page Header/Footer"
 msgstr "إدراج رأس/تذييل الصفحة"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid "Delete Page Header/Footer"
+msgid  "Delete Page Header/Footer"
 msgstr "حذف رأس/تذييل الصفحة"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid "Insert Column Header/Footer"
+msgid  "Insert Column Header/Footer"
 msgstr "إدراج رأس/تذييل العمود"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid "Delete Column Header/Footer"
+msgid  "Delete Column Header/Footer"
 msgstr "حذف رأس/تذييل العمود"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 #, fuzzy
-msgid "Insert Report Header/Footer"
+msgid  "Insert Report Header/Footer"
 msgstr "إدراج رأس/تذييل التقرير"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 #, fuzzy
-msgid "Delete Report Header/Footer"
+msgid  "Delete Report Header/Footer"
 msgstr "حذف رأس/تذييل التقرير"
 
 #: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid "The report can not be executed unless it is bound to content."
-msgstr ""
+#, fuzzy
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "لا يمكن تنفيذ التقرير إلا إذا كان مرتبطًا بالمحتوى."
 
 #: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+#, fuzzy
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr "لا يمكن تنفيذ التقرير إلا إذا تم إدراج كائن واحد على الأقل."
 
 #: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid "Shrink Section"
-msgstr ""
+#, fuzzy
+msgid  "Shrink Section"
+msgstr "تقليص المقطع"
 
 #: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
 #, fuzzy
-msgid "Detail"
+msgid  "Detail"
 msgstr "التفاصيل"
 
 #: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Page Header"
+msgid  "Page Header"
 msgstr "ترويسة الصفحة"
 
 #: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Page Footer"
+msgid  "Page Footer"
 msgstr "تذييل الصفحة"
 
 #: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Report Header"
+msgid  "Report Header"
 msgstr "ترويسة التقرير"
 
 #: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Report Footer"
+msgid  "Report Footer"
 msgstr "تذييل التقرير"
 
 #: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
 #, fuzzy
-msgid "Insert"
+msgid  "Insert"
 msgstr "إدراج"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 #, fuzzy
-msgid "Detail"
+msgid  "Detail"
 msgstr "التفاصيل"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Page Header"
+msgid  "Page Header"
 msgstr "ترويسة الصفحة"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Page Footer"
+msgid  "Page Footer"
 msgstr "تذييل الصفحة"
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Group Header"
+msgid  "Group Header"
 msgstr "رأس المجموعة"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Group Footer"
+msgid  "Group Footer"
 msgstr "تذييل المجموعة"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
 #, fuzzy
-msgid "Report Header"
+msgid  "Report Header"
 msgstr "ترويسة التقرير"
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 #, fuzzy
-msgid "Report Footer"
+msgid  "Report Footer"
 msgstr "تذييل التقرير"
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
 #, fuzzy
-msgid "The name '#1' already exists and can not be asssigned again."
+msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr "الاسم '#1' موجود بالفعل ولا يمكن تعيينه مرة أخرى."
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
 #, fuzzy
-msgid "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
-"لقد حاولت تعيين وسيطة غير مسموح بها. الرجاء إلقاء نظرة على '#1' لمعرفة "
-"الوسائط الصالحة."
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr "لقد حاولت تعيين وسيطة غير مسموح بها. الرجاء إلقاء نظرة على '#1' لمعرفة الوسائط الصالحة."
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
 #, fuzzy
-msgid "The element is invalid."
+msgid  "The element is invalid."
 msgstr "العنصر غير صالح."
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
 #, fuzzy
-msgid "Label field"
+msgid  "Label field"
 msgstr "حقل تسمية"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
 #, fuzzy
-msgid "Formatted field"
+msgid  "Formatted field"
 msgstr "حقل منسق"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
 #, fuzzy
-msgid "Image control"
+msgid  "Image control"
 msgstr "التحكم بالصورة"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 #, fuzzy
-msgid "Report"
+msgid  "Report"
 msgstr "التقرير"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
 #, fuzzy
-msgid "Shape"
+msgid  "Shape"
 msgstr "شكل"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
 #, fuzzy
-msgid "Fixed line"
+msgid  "Fixed line"
 msgstr "سطر ثابت"
