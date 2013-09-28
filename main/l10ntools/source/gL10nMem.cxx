@@ -293,9 +293,14 @@ void l10nMem_impl::saveLanguages(l10nMem& cMem, const std::string& sTargetDir, b
   // save all languages
   for (iL = 1; iL < iLsize; ++iL)
   {
+    // only save language file if modified
+    if (!mcDb.mcLangList[iL].mbChanged)
+      continue;
+
+    mcDb.mcLangList[iL].mbChanged = false;
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave(mcDb.mcLangList[iL] + "/", sFileName);
+    savePo.startSave(mcDb.mcLangList[iL].msName + "/", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
@@ -628,7 +633,7 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     if (sMsgId == curE.msMsgId)
     {
       curENUSindex = ivEntryList[i];
-      if (mcDb.mbStrictMode)
+      if (curE.meState == l10nMem::ENTRY_DELETED)
         curE.meState = l10nMem::ENTRY_NORMAL;
       break;
     }
@@ -671,5 +676,6 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     curL.msMsgStr = sMsgStr;
     curL.mbFuzzy  = bIsFuzzy;
     curE.meState  = l10nMem::ENTRY_CHANGED;
+    mcDb.mcLangList[mcDb.miCurLangInx].mbChanged = true;
   }
 }

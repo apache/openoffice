@@ -84,21 +84,34 @@ class l10nMem_file_entry
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
+class l10nMem_lang_list_entry
+{
+  public:
+    l10nMem_lang_list_entry(const std::string& sName);
+    ~l10nMem_lang_list_entry();
+
+    std::string msName;      // language Name
+    bool        mbChanged;   // used for "convert", true if language is modified
+};
+
+
+
+/********************   C L A S S   D E F I N I T I O N   ********************/
 class l10nMem_db
 {
   public:
     l10nMem_db();
     ~l10nMem_db();
 
-    int                             miCurFileInx;
-    int                             miCurLangInx;
-    int                             miCurENUSinx;
-    bool                            mbNeedWrite;
-    bool                            mbConvertMode;
-    bool                            mbStrictMode;
-    std::vector<l10nMem_enus_entry> mcENUSlist;
-    std::vector<l10nMem_file_entry> mcFileList;
-    std::vector<std::string>        mcLangList;
+    int                                  miCurFileInx;
+    int                                  miCurLangInx;
+    int                                  miCurENUSinx;
+    bool                                 mbNeedWrite;
+    bool                                 mbConvertMode;
+    bool                                 mbStrictMode;
+    std::vector<l10nMem_enus_entry>      mcENUSlist;
+    std::vector<l10nMem_file_entry>      mcFileList;
+    std::vector<l10nMem_lang_list_entry> mcLangList;
 
 
     void loadENUSkey    (int                iLineNo,

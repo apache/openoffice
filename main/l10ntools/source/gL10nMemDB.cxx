@@ -112,6 +112,23 @@ l10nMem_file_entry::~l10nMem_file_entry()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+l10nMem_lang_list_entry::l10nMem_lang_list_entry(const std::string& sName)
+                                                :
+                                                  msName(sName),
+                                                  mbChanged(false)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+l10nMem_lang_list_entry::~l10nMem_lang_list_entry()
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_db::l10nMem_db()
                       :
                        miCurFileInx(0),
@@ -122,7 +139,7 @@ l10nMem_db::l10nMem_db()
                        mbStrictMode(false)
 {
   mcFileList.push_back(l10nMem_file_entry("-genLang-", 0));
-  mcLangList.push_back("-genLang-");
+  mcLangList.push_back(l10nMem_lang_list_entry("-genLang-"));
   mcENUSlist.push_back(l10nMem_enus_entry("-genLang-", "-genLang-", 0, 0, 0, l10nMem::ENTRY_DELETED));
 }
 
@@ -169,7 +186,7 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
 
   // check if language is already loaded
   iSize = mcLangList.size();
-  for (miCurLangInx = 0; miCurLangInx < iSize && mcLangList[miCurLangInx] != sLanguage; ++miCurLangInx) ;
+  for (miCurLangInx = 0; miCurLangInx < iSize && mcLangList[miCurLangInx].msName != sLanguage; ++miCurLangInx) ;
   if (miCurLangInx < iSize)
   {    
     if (bCreate)
@@ -421,7 +438,7 @@ bool l10nMem_db::getMergeLang(std::string& sLang,
   }
   else
   {
-    sLang = mcLangList[miCurLangInx];
+    sLang = mcLangList[miCurLangInx].msName;
     sMsgStr = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msMsgStr;
   }
   return true;
