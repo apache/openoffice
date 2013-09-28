@@ -77,6 +77,7 @@ msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOff
 msgstr "Si aprecia los sos esfuerzos, y quier asegurase de que Apache OpenOffice sigue nel futuru, por favor piense en collaborar col proyeutu - vea <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> pa más detalles de cómo collaborar col so tiempu y <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> pa más detalles sobre cómo facer donaciones. Toos tienen maneres de collaborar."
 
 #: readme.xrm#RR3FGF42R
+#, fuzzy
 msgid  "Notes on Installation"
 msgstr "Notes sobre la instalación"
 
@@ -91,14 +92,17 @@ msgid  "System Requirements"
 msgstr "Requisitos del sistema"
 
 #: readme.xrm#MACXIOSX
+#, fuzzy
 msgid  "MacOSX 10.4 (Tiger) or higher"
 msgstr "MacOSX 10.4 (Tiger) o superior"
 
 #: readme.xrm#MACXICPU
+#, fuzzy
 msgid  "Intel processor"
 msgstr "Procesador Intel"
 
 #: readme.xrm#MACXIRAM
+#, fuzzy
 msgid  "512 MB RAM"
 msgstr "512 MB RAM"
 
@@ -167,6 +171,7 @@ msgid  "Please be aware that administrator rights are needed for the installatio
 msgstr "Pa executar el procesu d'instalación necesites permisos d'alministrador."
 
 #: readme.xrm#S2335
+#, fuzzy
 msgid  "Solaris 10 operating system (SPARC platform) or higher"
 msgstr "Sistema operativu Solaris 10 (plataforma SPARC) o superior"
 
@@ -229,10 +234,12 @@ msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Nucleu Linux versión 2.6.18 ó superior"
 
 #: readme.xrm#S253WE
+#, fuzzy
 msgid  "glibc2 version 2.5 or higher"
 msgstr "Versión glibc2 2.5 o posterior"
 
 #: readme.xrm#S256WE
+#, fuzzy
 msgid  "gtk version 2.10.4 or higher"
 msgstr "gtk version 2.10.4 o posterior"
 
@@ -272,14 +279,17 @@ msgid  "There is a wide variety of Linux distributions, and even within the same
 msgstr "Esiste una amplia variedá de distribuciones Linux, inclusu dientro de la mesma distribución puede haber diferentes opciones d'instalación (KDE vs Gnome, etc). Dalgunes distribuciones vienen coles sos propies versiones 'natives' de ${PRODUCTNAME}, que pueden tener carauterístiques distintes dende esta Comunidá ${PRODUCTNAME}. Dalgunes vegaes puedes instalar la Comunidá ${PRODUCTNAME}, xunto con la versión 'nativa'. Sicasí, ye usualmente más seguro desaniciar les versiones 'natives' enantes d'instalar esta versión. Consulta la documentación de la to distribución pa más detalles de cómo facelo."
 
 #: readme.xrm#LINUXI4A
+#, fuzzy
 msgid  "It is recommended that you always backup your system before you remove or install software."
 msgstr "Ye recomendable que faigas siempres una copia de seguridá del to sistema enantes de desaniciar o instalar software."
 
 #: readme.xrm#PRECAUTIONS
+#, fuzzy
 msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
 msgstr "Comprueba que dispones d'abonda memoria llibre nel direutoriu temporal del sistema y que tenga drechos d'accesu de llectura, escritura y execución. Enantes d'aniciar la instalación, zarra tolos demás programes."
 
 #: readme.xrm#NASO01
+#, fuzzy
 msgid  "Problems During Program Startup"
 msgstr "Problems During Program Startup"
 
@@ -294,6 +304,7 @@ msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as
 msgstr "Les dificultaes al aniciar ${PRODUCTNAME} (por exemplu, aplicaciones colingaes), asina como problemes cola visualización en pantalla de vezu los causa'l controlador de la tarxeta gráfica. Si ocurren estos problemes, por favor, anueva'l controlador de la tarxeta gráfica o intenta usar el controlador de gráficos entregáu col sistema operativu. Les dificultaes p'amosar oxetos en 3D de vezu puen iguase desactivando la opción \"Usar OpenGL\" en \"Ferramientes - Opciones - ${PRODUCTNAME} - Vista - Vista 3D\"."
 
 #: readme.xrm#NASO
+#, fuzzy
 msgid  "ALPS/Synaptics notebook touchpads in Windows"
 msgstr "ALPS/Synaptics notebook touchpads in Windows"
 
@@ -313,6 +324,7 @@ msgid  "The location of the configuration file might vary on different versions 
 msgstr "La llocalización del ficheru de configuración puede camudar dependiendo de les estremaes versiones de Windows."
 
 #: readme.xrm#SDFSD32ASRC
+#, fuzzy
 msgid  "Mozilla Address Book Driver"
 msgstr "Controlador de l'Axenda de Mozilla"
 

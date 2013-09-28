@@ -2337,30 +2337,37 @@ msgid  "Create..."
 msgstr "Crear..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "Local Databases"
 msgstr "Bases de datos llocales"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+#, fuzzy
 msgid  "Choose a database"
 msgstr "Escueyi base de datos"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
 msgstr "Indices"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Index"
 msgstr "Índiz nuevu"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Current Index"
 msgstr "Desaniciar índiz actual"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Rename Current Index"
 msgstr "Renomar índiz actual"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Save Current Index"
 msgstr "Guardar índiz actual"
 
@@ -2370,38 +2377,47 @@ msgid  "Reset Current Index"
 msgstr "Reaniciar índiz actual"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Index details"
 msgstr "Detalles del índiz"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Index identifier:"
 msgstr "Identificador del índiz:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Unique"
 msgstr "Ú~nicu"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fields"
 msgstr "Campos"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "~Zarrar"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+#, fuzzy
 msgid  "Sort order"
 msgstr "Orde"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Index field"
 msgstr "Campu d'índiz"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
 msgstr "Ascendente"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
 msgstr "Descendente"
 
@@ -2416,6 +2432,7 @@ msgid  "index"
 msgstr "índiz"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+#, fuzzy
 msgid  "Save Index"
 msgstr "Guardar índiz"
 
@@ -2430,6 +2447,7 @@ msgid  "Exit Index Design"
 msgstr "Pesllar diseñu d'índiz"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to save the changes made to the current index?"
 msgstr "¿Quies grabar los cambios fechos nel índiz?"
 
@@ -2449,10 +2467,12 @@ msgid  "~Parameters"
 msgstr "~Parámetros"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Value"
 msgstr "~Valor"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
 msgstr "~Siguiente"
 
@@ -2467,6 +2487,7 @@ msgid  "The entry could not be converted to a valid value for the \"$name$\"colu
 msgstr "La entrada nun fue quien a convertir n'un valor válidu pa la columna \"$name$\""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Standard Filter"
 msgstr "Peñera estándar"
 
@@ -2491,14 +2512,17 @@ msgid  "OR"
 msgstr "O"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
 msgstr "Nome del campu"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Condition"
 msgstr "Condición"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Value"
 msgstr "Valor"
 
@@ -2508,6 +2532,7 @@ msgid  "Operator"
 msgstr "Operador"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Criteria"
 msgstr "Criterios"
 
@@ -2522,6 +2547,7 @@ msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;como;non como;vaciu;enllenu"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Sort Order"
 msgstr "Orde de clasificación"
 
@@ -2556,6 +2582,7 @@ msgid  "descending"
 msgstr "descendente"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
 msgstr "Nome de campu"
 
@@ -2574,30 +2601,37 @@ msgid  "Operator"
 msgstr "Operador"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Order"
 msgstr "Orden"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sort order"
 msgstr "Orde"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
 msgstr "<Nengún>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Relations"
 msgstr "Rellaciones"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
 msgstr "Tables implicaes"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
 msgstr "Campos implicaos"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Update options"
 msgstr "Anovar opciones..."
 
@@ -2606,6 +2640,7 @@ msgid  "~No action"
 msgstr "~Nun facer res"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Update cascade"
 msgstr "Ano~var cascada"
 
@@ -2618,6 +2653,7 @@ msgid  "Set ~default"
 msgstr "Establecer pre~determináu"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Delete options"
 msgstr "Quitar opciones"
 
@@ -2627,6 +2663,7 @@ msgid  "~No action"
 msgstr "~Nun facer res"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Delete ~cascade"
 msgstr "Desaniciar ~cascada"
 
@@ -2641,6 +2678,7 @@ msgid  "Set ~default"
 msgstr "Establecer pre~determináu"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
 msgstr "Base %PRODUCTNAME"
 
@@ -2649,10 +2687,12 @@ msgid  "Details"
 msgstr "Detáis"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error ~list:"
 msgstr "L~lista de fallos:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description:"
 msgstr "~Descripción:"
 
@@ -2662,6 +2702,7 @@ msgid  "SQL Status"
 msgstr "Estáu SQL"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+#, fuzzy
 msgid  "Error code"
 msgstr "Códigu de fallu"
 
@@ -2671,14 +2712,17 @@ msgid  "A frequent reason for this error is an inappropriate character set setti
 msgstr "Munches vegaes, esti fallu dalu por una mala configuración de tipos de lletra pal idioma de la base datos. Mira ver la configuración. Pa ello, escueyi: Remanar - Base datos - Propiedaes"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
 msgstr "Fallu"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning"
 msgstr "Avisu"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Information"
 msgstr "Información"
 
@@ -2698,30 +2742,37 @@ msgid  "User Settings"
 msgstr "Configuración d'usuariu"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User administration"
 msgstr "Alministración d'usuariu"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User selection"
 msgstr "Esbilla d'usuariu"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Us~er:"
 msgstr "Us~uariu:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add User..."
 msgstr "~Amestar Usuariu..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Change ~Password..."
 msgstr "Camudar la C~ontraseña..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete User..."
 msgstr "~Desaniciar Usuariu..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Access rights for selected user"
 msgstr "Drechos d'accesu pal usuariu seleicionáu"
 
@@ -2736,14 +2787,17 @@ msgid  "The database does not support user administration."
 msgstr "La base de datos nun soporta l'alministración d'usuariu."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User \"$name$:  $\""
 msgstr "Usuariu \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Old p~assword"
 msgstr "Contr~aseña antigua"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
 msgstr "~Contraseña"
 
@@ -2753,6 +2807,7 @@ msgid  "~Confirm  password"
 msgstr "~Confirmar contraseña"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Change Password"
 msgstr "Camudar la Contraseña"
 
@@ -2762,6 +2817,7 @@ msgid  "The passwords do not match. Please enter the password again."
 msgstr "Les contraseñes nun coinciden. Meta otra vuelta la contraseña."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Refresh"
 msgstr "Anovar"
 
@@ -2776,6 +2832,7 @@ msgid  "New ~Table Design"
 msgstr "Nuevu d~iseñu de tabla"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Consulta Asistente..."
 
@@ -2785,6 +2842,7 @@ msgid  "New ~Query (Design View)"
 msgstr "Nueva ~consulta (vista de diseñu)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Editar consulta"
 
@@ -2799,6 +2857,7 @@ msgid  "Edit..."
 msgstr "Editar..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Anc~hor de columna..."
 
@@ -2808,14 +2867,17 @@ msgid  "Report Wizard..."
 msgstr "Asistente d'Informes..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Formulariu AutoPilot..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+#, fuzzy
 msgid  "System"
 msgstr "Sistema"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "Error during creation"
 msgstr "Fallu al crear"
 
@@ -2840,6 +2902,7 @@ msgid  "~All"
 msgstr "~Too"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Undo:"
 msgstr "Desfacer:"
 
@@ -2874,6 +2937,7 @@ msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "L'informe, \"$file$\", requier la estensión Oracle Report Builder."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Apply columns"
 msgstr "Aplicar columnes"
 
@@ -2883,10 +2947,12 @@ msgid  "Type formatting"
 msgstr "Tipu formatu"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\n"
 msgstr "Yá se definieron los campos que vienen darréu como llaves primaries:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Assign columns"
 msgstr "Asignar columnes"
 
@@ -2896,10 +2962,12 @@ msgid  "Copy RTF Table"
 msgstr "Copiar tabla RTF"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
 msgstr "~Ayuda"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Encaboxar"
 
@@ -2909,18 +2977,22 @@ msgid  "< ~Back"
 msgstr "< ~Atrás"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next>"
 msgstr "~Siguiente>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "C~reate"
 msgstr "~Crear"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing columns"
 msgstr "Columnes existentes"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Column information"
 msgstr "Información de columna"
 
@@ -2935,14 +3007,17 @@ msgid  "Lines (ma~x)"
 msgstr "Llinies (ma~x)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Clave Primaria"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source table: \n"
 msgstr "Tabla d'orixe: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Destination table: \n"
 msgstr "Tabla de destín: \n"
 
@@ -2952,26 +3027,32 @@ msgid  "~All"
 msgstr "~Too"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Non~e"
 msgstr "Den~gún"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Nome de la ta~bla"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr "Opciones"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "De~finition and data"
 msgstr "~Definición y datos"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Def~inition"
 msgstr "Defi~nición"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~s table view"
 msgstr "Como vi~sta de tabla"
 
@@ -2986,10 +3067,12 @@ msgid  "Use first ~line as column names"
 msgstr "Usar la primer ~llinia como nome de columna"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "~Crear llave primaria"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
 msgstr "Nome"
 
@@ -3019,10 +3102,12 @@ msgid  "Please change the table name. It is too long."
 msgstr "Camuda'l nome de la tabla. Ye enforma llargu."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr "Opciones"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Type"
 msgstr "~Triba"
 
@@ -3057,14 +3142,17 @@ msgid  "Natural"
 msgstr "Natural"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
 msgstr "Tables implicaes"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
 msgstr "Campos implicaos"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Join Properties"
 msgstr "Propiedaes d'Accesu"
 
@@ -3104,6 +3192,7 @@ msgid  "Add Table Window"
 msgstr "Amestar ventana de tabla"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Move table window"
 msgstr "Mover la ventana de tabla"
 
@@ -3118,18 +3207,22 @@ msgid  "Delete Join"
 msgstr "Desaniciar Xunión"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Resize table window"
 msgstr "Ventana de tabla - Camudar tamañu"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Desaniciar columna"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Move column"
 msgstr "Mover columna"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Add Column"
 msgstr "Amestar columna"
 
@@ -3149,6 +3242,7 @@ msgid  "The query covers #num# tables. The selected database type, however, can 
 msgstr "La consulta abarca #num# tables. Por embargu, la triba de base de datos escoyida sólo puede procesar como máximu #maxnum# table(s) por instrucción."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Desaniciar ventana de tabla"
 
@@ -3158,6 +3252,7 @@ msgid  "Edit Column Description"
 msgstr "Camudar descripción de columnes"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "Axustar anchor de columnes"
 
@@ -3167,6 +3262,7 @@ msgid  "(not sorted);ascending;descending"
 msgstr "(ensin axeitar);ascendente;descendente"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "(ensin función);Aconceyar"
 
@@ -3181,18 +3277,22 @@ msgid  "The database only supports sorting for visible fields."
 msgstr "La base datos sólo tien por la clasificación pa campos visibles."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Functions"
 msgstr "Funciones"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Name"
 msgstr "Nome de la tabla"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Alias"
 msgstr "Alcuñu"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "Valores inequívocos"
 
@@ -3207,6 +3307,7 @@ msgid  "There are too many columns."
 msgstr "Hai abondes columnes."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Nun val una condición pal campu [*]"
 
@@ -3216,6 +3317,7 @@ msgid  "The SQL statement created is too long."
 msgstr "La espresión SQL creada ye enforma llarga."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "La consulta ye enforma enguedeyada"
 
@@ -3225,6 +3327,7 @@ msgid  "Nothing has been selected."
 msgstr "Nun hai res esbillao."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Abondos criterios de gueta"
 
@@ -3249,10 +3352,12 @@ msgid  "The statement will not be applied when querying in the SQL dialect of th
 msgstr "En casu de consultar nel dialeutu SQL de la base de datos, la instrucción nun s'aceutará."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "El nome del campu nun s'atopó nun ye únicu"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Nun se foi a executar l'enllaz."
 
@@ -3337,10 +3442,12 @@ msgid  "$object$ will be opened in SQL view."
 msgstr "$object$ abriráse na vista SQL.(esceuto \"comandu SQL\", que nun tien sen equí) inxertaráse."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The table view"
 msgstr "La vista de la tabla"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "The query"
 msgstr "La consulta"
 
@@ -3410,18 +3517,22 @@ msgid  "Insert/remove primary key"
 msgstr "Inxertar/desaniciar clave primaria"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Sí"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr "Non"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
 msgstr "Ascendente"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
 msgstr "Descendente"
 
@@ -3431,14 +3542,17 @@ msgid  "<none>"
 msgstr "<nengún>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field name"
 msgstr "Nome del campu"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field Name"
 msgstr "Nome del Campu"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field ~type"
 msgstr "~Tipu de campu"
 
@@ -3468,22 +3582,27 @@ msgid  "Input required"
 msgstr "Necesítase entrada"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "~Valor automáticu"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Field Properties"
 msgstr "Propiedaes del Campu"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
 msgstr "Xeneral"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description:"
 msgstr "Descripción:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Table properties"
 msgstr "Propiedaes de la tabla"
 
@@ -3498,18 +3617,22 @@ msgid  "Insert Rows"
 msgstr "Inxertar Fileres"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Clave Primaria"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Modify cell"
 msgstr "Camudar caxella"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+#, fuzzy
 msgid  "Delete row"
 msgstr "Desaniciar filera"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Modify field type"
 msgstr "Tipu de campu modificáu"
 
@@ -3529,10 +3652,12 @@ msgid  "Insert/remove primary key"
 msgstr "Inxertar/desaniciar clave primaria"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "~Default value"
 msgstr "~Valor predetermináu"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "~Entry required"
 msgstr "~Necesítase una entrada"
 
@@ -3541,6 +3666,7 @@ msgid  "~Length"
 msgstr "~Llargor"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
 msgstr "~Tipu"
 
@@ -3550,10 +3676,12 @@ msgid  "~Length"
 msgstr "~Llargor"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "~Decimales"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format example"
 msgstr "Exemplu de formatu"
 
@@ -3623,18 +3751,22 @@ msgid  "The column \"$column$\" belongs to the primary key. If the column is del
 msgstr "La columna \"$column$\" pertenez a la clave primaria. En casu d'eliminala, va eliminar tamién la clave primaria. ¿Desea continuar?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Clave Principal Afeutada"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Column"
 msgstr "Columna"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "¿Quies siguir de toes maneres?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
 msgstr "¡Curiáu!"
 
@@ -3664,6 +3796,7 @@ msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you
 msgstr "Enantes de camudar los índices d'una tabla tienes que grabala.\n¿Quies grabar agora los cambios na cadarma de la tabla?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+#, fuzzy
 msgid  "No primary key"
 msgstr "Denguna llave primaria"
 
@@ -3788,9 +3921,11 @@ msgid  "The given interaction handler is invalid."
 msgstr "El remanador d'interaición proporcionáu ye inválidu."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Remembra la clave hasta'l final de sesión."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password"
 msgstr "~Remembrar la contraseña"

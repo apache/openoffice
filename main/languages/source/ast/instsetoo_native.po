@@ -1381,70 +1381,87 @@ msgid  "The installation files must be unpacked and copied to your hard disk in 
 msgstr "Los ficheros d'instalación hai que los descomprimir y copiar nel discu duru pa preparar la instalación. Darréu, va entamar de manera automática la instalación de %PRODUCTNAME.\r\n\r\nCalca en \\'Siguiente\\' pa siguir."
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
+#, fuzzy
 msgid  "Select Folder"
 msgstr "Escoyer Carpeta"
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
+#, fuzzy
 msgid  "Select the folder in which to save the unpacked files."
 msgstr "Escueyi una carpeta pa grabar los ficheros descomprimíos."
 
 #: Nsis.ulf#INSTALLBTN
+#, fuzzy
 msgid  "&Unpack"
 msgstr "&Descomprimir"
 
 #: Nsis.ulf#DIRTEXT
+#, fuzzy
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
 msgstr "Los ficheros d'instalación de %PRODUCTNAME %PRODUCTVERSION descomprimiránse y grabaránse na carpeta qu'apaez darréu. Si quies grabar %PRODUCTNAME nuna carpeta diferente, calca en \\'Buscar\\' pa escoyer otra carpeta."
 
 #: Nsis.ulf#DIRSUBTEXT
+#, fuzzy
 msgid  "Destination Folder"
 msgstr "Carpeta de destín"
 
 #: Nsis.ulf#SPACEREQUIRED
+#, fuzzy
 msgid  "Space required: "
 msgstr "Espaciu necesariu: "
 
 #: Nsis.ulf#SPACEAVAILABLE
+#, fuzzy
 msgid  "Space available: "
 msgstr "Espaciu disponible: "
 
 #: Nsis.ulf#MUI_TEXT_INSTALLING_TITLE
+#, fuzzy
 msgid  "Unpacking"
 msgstr "Descomprimiendo"
 
 #: Nsis.ulf#MUI_TEXT_INSTALLING_SUBTITLE
+#, fuzzy
 msgid  "Please wait while the installation files are being unpacked."
 msgstr "Espera a que los ficheros d'instalación se descompriman."
 
 #: Nsis.ulf#EXTRACT
+#, fuzzy
 msgid  "Extract: "
 msgstr "Extrayer: "
 
 #: Nsis.ulf#MUI_TEXT_ABORTWARNING
+#, fuzzy
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
 msgstr "¿Seguru que quies encaboxar la preparación de la instalación de %PRODUCTNAME %PRODUCTVERSION?"
 
 #: SIS.ulf#OOO_SIS_TITLE
+#, fuzzy
 msgid  "Installation database"
 msgstr "Base datos d'instalación"
 
 #: SIS.ulf#OOO_SIS_AUTHOR
+#, fuzzy
 msgid  "Author"
 msgstr "Autor"
 
 #: SIS.ulf#OOO_SIS_SUBJECT
+#, fuzzy
 msgid  "Subject"
 msgstr "Asuntu"
 
 #: SIS.ulf#OOO_SIS_COMMENT
+#, fuzzy
 msgid  "Comment"
 msgstr "Comentariu"
 
 #: SIS.ulf#OOO_SIS_KEYWORDS
+#, fuzzy
 msgid  "Install,MSI"
 msgstr "Instalar,MSI"
 
 #: SIS.ulf#OOO_SIS_APPNAME
+#, fuzzy
 msgid  "Windows Installer"
 msgstr "Instalador de Windows"
 
@@ -1454,330 +1471,412 @@ msgid  "Cancel"
 msgstr "Pa escoyer otra carpeta, calca en "
 
 #: Control.ulf#OOO_CONTROL_5
+#, fuzzy
 msgid  "&Look in:"
 msgstr "&Guetar en:"
 
 #: Control.ulf#OOO_CONTROL_6
+#, fuzzy
 msgid  "Browse to the destination folder."
 msgstr "Guetar la carpeta de destín."
 
 #: Control.ulf#OOO_CONTROL_7
+#, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr "{&MSSansBold8}Cambiar la carpeta de destín actual"
 
 #: Control.ulf#OOO_CONTROL_9
+#, fuzzy
 msgid  "Create new folder|"
 msgstr "Crear carpeta nueva|"
 
 #: Control.ulf#OOO_CONTROL_10
+#, fuzzy
 msgid  "OK"
 msgstr "Aceutar"
 
 #: Control.ulf#OOO_CONTROL_12
+#, fuzzy
 msgid  "&Folder name:"
 msgstr "&Nome de la carpeta:"
 
 #: Control.ulf#OOO_CONTROL_13
+#, fuzzy
 msgid  "Up one level|"
 msgstr "Xubir un nivel|"
 
 #: Control.ulf#OOO_CONTROL_14
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_17
+#, fuzzy
 msgid  "&Change..."
 msgstr "&Camudar..."
 
 #: Control.ulf#OOO_CONTROL_18
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_19
+#, fuzzy
 msgid  "Specify a network location for the server image of the product."
 msgstr "Especificar una unidá de rede pa la imaxe de sirvidor del productu."
 
 #: Control.ulf#OOO_CONTROL_20
+#, fuzzy
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
 msgstr "Pon l'allugamientu de rede o calca en Camudar pa guetar otru allugamientu. Calca n'Instalar pa crear una imaxe de sirvidor de [ProductName] nel allugamientu de rede especificada o Encaboxar pa colar del asistente."
 
 #: Control.ulf#OOO_CONTROL_21
+#, fuzzy
 msgid  "{&MSSansBold8}Network Location"
 msgstr "{&MSSansBold8}Ubicación de rede"
 
 #: Control.ulf#OOO_CONTROL_22
+#, fuzzy
 msgid  "&Install"
 msgstr "&Instalar"
 
 #: Control.ulf#OOO_CONTROL_23
+#, fuzzy
 msgid  "&Network location:"
 msgstr "&Allugamientu de rede:"
 
 #: Control.ulf#OOO_CONTROL_24
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_25
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_26
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_27
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Bienllegáu/ada al asistente d'instalación de [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_28
+#, fuzzy
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
 msgstr "El Asistente d'Instalación creará una imaxe de sirvidor [ProductName] nel allugamientu de rede especificáu. Pa siguir, calca Siguiente."
 
 #: Control.ulf#OOO_CONTROL_29
+#, fuzzy
 msgid  "&No"
 msgstr "&Non"
 
 #: Control.ulf#OOO_CONTROL_30
+#, fuzzy
 msgid  "Are you sure you want to cancel [ProductName] installation?"
 msgstr "¿Tas seguru de que quies encaboxar la instalación de [ProductName]?"
 
 #: Control.ulf#OOO_CONTROL_31
+#, fuzzy
 msgid  "&Yes"
 msgstr "&Sí"
 
 #: Control.ulf#OOO_CONTROL_32
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_35
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_36
+#, fuzzy
 msgid  "{\\Tahoma8}{80}"
 msgstr "{\\Tahoma8}{80}"
 
 #: Control.ulf#OOO_CONTROL_37
+#, fuzzy
 msgid  "&Organization:"
 msgstr "&Organización:"
 
 #: Control.ulf#OOO_CONTROL_38
+#, fuzzy
 msgid  "Please enter your information."
 msgstr "Por favor, meti la información."
 
 #: Control.ulf#OOO_CONTROL_39
+#, fuzzy
 msgid  "Install this application for:"
 msgstr "Instalar esta aplicación pa:"
 
 #: Control.ulf#OOO_CONTROL_40
+#, fuzzy
 msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Información del veceru"
 
 #: Control.ulf#OOO_CONTROL_41
+#, fuzzy
 msgid  "{\\Tahoma8}{50}"
 msgstr "{\\Tahoma8}{50}"
 
 #: Control.ulf#OOO_CONTROL_42
+#, fuzzy
 msgid  "&User Name:"
 msgstr "Nome de &Usuariu:"
 
 #: Control.ulf#OOO_CONTROL_43
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_45
+#, fuzzy
 msgid  "&Serial Number:"
 msgstr "Númberu de &Serie:"
 
 #: Control.ulf#OOO_CONTROL_46
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_49
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_50
+#, fuzzy
 msgid  "&Change..."
 msgstr "&Camudar..."
 
 #: Control.ulf#OOO_CONTROL_51
+#, fuzzy
 msgid  "&Space"
 msgstr "E&spaciu"
 
 #: Control.ulf#OOO_CONTROL_52
+#, fuzzy
 msgid  "Select the program features you want installed."
 msgstr "Escueyi los componentes del programa que quies instalar."
 
 #: Control.ulf#OOO_CONTROL_53
+#, fuzzy
 msgid  "Click on an icon in the list below to change how a feature is installed."
 msgstr "Pa camudar la forma d'instalación d'un componente, calaca un iconu de la llista que va darréu."
 
 #: Control.ulf#OOO_CONTROL_54
+#, fuzzy
 msgid  "{&MSSansBold8}Custom Setup"
 msgstr "{&MSSansBold8}Instalación Personalizada"
 
 #: Control.ulf#OOO_CONTROL_55
+#, fuzzy
 msgid  "Feature Description:"
 msgstr "Descripción de la función:"
 
 #: Control.ulf#OOO_CONTROL_56
+#, fuzzy
 msgid  "&Help"
 msgstr "&Ayuda"
 
 #: Control.ulf#OOO_CONTROL_57
+#, fuzzy
 msgid  "Install to:"
 msgstr "Instalar en:"
 
 #: Control.ulf#OOO_CONTROL_58
+#, fuzzy
 msgid  "Multiline description of the currently selected item"
 msgstr "Descripción multillinia del elementu escoyíu agora"
 
 #: Control.ulf#OOO_CONTROL_59
+#, fuzzy
 msgid  "<selected feature path>"
 msgstr "<camín de la función escoyida>"
 
 #: Control.ulf#OOO_CONTROL_60
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_61
+#, fuzzy
 msgid  "Feature size"
 msgstr "Tamañu del componente"
 
 #: Control.ulf#OOO_CONTROL_64
+#, fuzzy
 msgid  "Custom Setup allows you to selectively install program features."
 msgstr "La instalación personalizada permite instalar componentes del programa esbillando."
 
 #: Control.ulf#OOO_CONTROL_65
+#, fuzzy
 msgid  "{&MSSansBold8}Custom Setup Tips"
 msgstr "{&MSSansBold8}Suxerencies d'instalación personalizada"
 
 #: Control.ulf#OOO_CONTROL_66
+#, fuzzy
 msgid  "Will not be installed."
 msgstr "Nun s'instalarán."
 
 #: Control.ulf#OOO_CONTROL_67
+#, fuzzy
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
 msgstr "Instalaráse la primer vegada que s'use. (Disponible sólo si'l componente almite esta opción)."
 
 #: Control.ulf#OOO_CONTROL_68
+#, fuzzy
 msgid  "This install state means the feature..."
 msgstr "Esti estáu d'instalación indica que'l componente..."
 
 #: Control.ulf#OOO_CONTROL_69
+#, fuzzy
 msgid  "Will be completely installed to the local hard drive."
 msgstr "Va instalase dafechu nel discu duru llocal."
 
 #: Control.ulf#OOO_CONTROL_70
+#, fuzzy
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
 msgstr "L'iconu d'al llau del nome del componente amuesa l'estáu d'instalación del componente. Calca nel iconu pa desendolcar el menú d'estáu d'instalación de cada componente."
 
 #: Control.ulf#OOO_CONTROL_71
+#, fuzzy
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
 msgstr "Instalaráse pa la so execución dende la rede. (Disponible sólo si'l componente almite esta opción)."
 
 #: Control.ulf#OOO_CONTROL_72
+#, fuzzy
 msgid  "OK"
 msgstr "Aceutar"
 
 #: Control.ulf#OOO_CONTROL_73
+#, fuzzy
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
 msgstr "Dellos subcomponentes van instalase nel discu duru llocal. (Disponible sólo si'l componente tien subcompponentes)."
 
 #: Control.ulf#OOO_CONTROL_74
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_77
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_78
+#, fuzzy
 msgid  "&Change..."
 msgstr "&Camudar..."
 
 #: Control.ulf#OOO_CONTROL_79
+#, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "Calca en siguiente pa instalar nesta carpeta o en Camudar pa instalar n'otra carpeta."
 
 #: Control.ulf#OOO_CONTROL_80
+#, fuzzy
 msgid  "{&MSSansBold8}Database Folder"
 msgstr "{&MSSansBold8}Carpeta Base datos"
 
 #: Control.ulf#OOO_CONTROL_81
+#, fuzzy
 msgid  "[DATABASEDIR]"
 msgstr "[DATABASEDIR]"
 
 #: Control.ulf#OOO_CONTROL_82
+#, fuzzy
 msgid  "Install [ProductName] database to:"
 msgstr "Instalar base datos de [ProductName] en:"
 
 #: Control.ulf#OOO_CONTROL_83
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_84
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_87
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_88
+#, fuzzy
 msgid  "&Change..."
 msgstr "&Camudar..."
 
 #: Control.ulf#OOO_CONTROL_89
+#, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "Calca en siguiente pa instalar nesta carpeta o en Camudar pa instalar n'otra carpeta."
 
 #: Control.ulf#OOO_CONTROL_90
+#, fuzzy
 msgid  "{&MSSansBold8}Destination Folder"
 msgstr "{&MSSansBold8}Carpeta de Destín"
 
 #: Control.ulf#OOO_CONTROL_91
+#, fuzzy
 msgid  "[INSTALLDIR]"
 msgstr "[INSTALLDIR]"
 
 #: Control.ulf#OOO_CONTROL_92
+#, fuzzy
 msgid  "Install [ProductName] to:"
 msgstr "Instalar [ProductName] en:"
 
 #: Control.ulf#OOO_CONTROL_93
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_96
+#, fuzzy
 msgid  "The disk space required for the installation of the selected features."
 msgstr "Espaciu en discu necesariu pa instalar los componentes escoyíos."
 
 #: Control.ulf#OOO_CONTROL_97
+#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "Los volúmenes resaltaos nun tienen espaciu abondu pa les funciones escoyíes. Puedes desaniciar ficheros de los volúmenes resaltaos, instalar menos funciones nes unidaes llocales o escoyer otres unidaes de destín."
 
 #: Control.ulf#OOO_CONTROL_98
+#, fuzzy
 msgid  "{&MSSansBold8}Disk Space Requirements"
 msgstr "{&MSSansBold8}Requisitos d'espaciu en discu"
 
 #: Control.ulf#OOO_CONTROL_100
+#, fuzzy
 msgid  "OK"
 msgstr "Aceutar"
 
 #: Control.ulf#OOO_CONTROL_103
+#, fuzzy
 msgid  "Some files that need to be updated are currently in use."
 msgstr "Tán usándose agora dellos ficheros que se necesiten anovar."
 
 #: Control.ulf#OOO_CONTROL_104
+#, fuzzy
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
 msgstr "Estes aplicaciones tán usando ficheeros que se tienen qu'anovar nesta instalación. Zarra estes aplicaciones y calca en Reintentar pa siguir."
 
 #: Control.ulf#OOO_CONTROL_105
+#, fuzzy
 msgid  "{&MSSansBold8}Files in Use"
 msgstr "{&MSSansBold8}Fichero n'usu"
 
 #: Control.ulf#OOO_CONTROL_106
+#, fuzzy
 msgid  "&Exit"
 msgstr "Sa&lir"
 
@@ -1786,645 +1885,806 @@ msgid  "&Ignore"
 msgstr "&Inorar"
 
 #: Control.ulf#OOO_CONTROL_108
+#, fuzzy
 msgid  "&Retry"
 msgstr "&Reintentar"
 
 #: Control.ulf#OOO_CONTROL_111
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_113
+#, fuzzy
 msgid  "&Look in:"
 msgstr "&Guetar en:"
 
 #: Control.ulf#OOO_CONTROL_114
+#, fuzzy
 msgid  "Browse to the destination folder."
 msgstr "Guetar la carpeta de destín."
 
 #: Control.ulf#OOO_CONTROL_115
+#, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr "{&MSSansBold8}Cambiar la carpeta de destín actual"
 
 #: Control.ulf#OOO_CONTROL_117
+#, fuzzy
 msgid  "Create New Folder|"
 msgstr "Crear Carpeta Nueva|"
 
 #: Control.ulf#OOO_CONTROL_118
+#, fuzzy
 msgid  "OK"
 msgstr "Aceutar"
 
 #: Control.ulf#OOO_CONTROL_120
+#, fuzzy
 msgid  "&Folder name:"
 msgstr "&Nome de la carpeta:"
 
 #: Control.ulf#OOO_CONTROL_121
+#, fuzzy
 msgid  "Up One Level|"
 msgstr "Xubir un nivel|"
 
 #: Control.ulf#OOO_CONTROL_122
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_123
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_124
+#, fuzzy
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
 msgstr "Esti Programa ta basáu nel proyeutu 'Apache OpenOffice' que cuenta col sofitu de los miembros de la Comunidá Apache. Pa ver los créditos, visite: http://www.openoffice.org/welcome/credits.html"
 
 #: Control.ulf#OOO_CONTROL_125
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_126
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Bienllegáu/ada al asistente d'instalación de [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_127
+#, fuzzy
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
 msgstr "L'Asistente d'Instalación instalará [ProductName] nel equipu. Pa siguir, calca en Siguiente."
 
 #: Control.ulf#OOO_CONTROL_128
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_131
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_132
+#, fuzzy
 msgid  "Please read the following license agreement carefully."
 msgstr "Por favor, llee con procuru'l siguiente tratu de llicencia"
 
 #: Control.ulf#OOO_CONTROL_133
+#, fuzzy
 msgid  "{&MSSansBold8}License Agreement"
 msgstr "{&MSSansBold8}Tratu de llicencia"
 
 #: Control.ulf#OOO_CONTROL_134
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_135
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_138
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_139
+#, fuzzy
 msgid  "Modify, repair, or remove the program."
 msgstr "Camudar, iguar o desaniciar el programa."
 
 #: Control.ulf#OOO_CONTROL_140
+#, fuzzy
 msgid  "{&MSSansBold8}Program Maintenance"
 msgstr "{&MSSansBold8}Mantenimientu del Programa"
 
 #: Control.ulf#OOO_CONTROL_141
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_143
+#, fuzzy
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
 msgstr "Camudar les funciones del programa que van instalase. Con esta opción ábrese'l diálogu d'escoyeta personalizada na que puedes camudar la manera na que s'instalen les funciones."
 
 #: Control.ulf#OOO_CONTROL_144
+#, fuzzy
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
 msgstr "Igua fallos d'instalación del programa. Con esta opción ígüense o trésnense ficheros, entraes de rexistru y accesos direutos toyíos o perdíos."
 
 #: Control.ulf#OOO_CONTROL_145
+#, fuzzy
 msgid  "Remove [ProductName] from your computer."
 msgstr "Desaniciar [ProductName] del equipu."
 
 #: Control.ulf#OOO_CONTROL_146
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_147
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_148
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_149
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Bienllegáu/ada al asistente d'instalación de [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_150
+#, fuzzy
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr "L'Asistente d'Instalación va ayudate a camudar, iguar o desinstalar [ProductName]. Pa Siguir, calca en Siguiente."
 
 #: Control.ulf#OOO_CONTROL_153
+#, fuzzy
 msgid  "Disk space required for the installation exceeds available disk space."
 msgstr "Nun hai espaciu abondu llibre nel discu duru pa facer la instalación."
 
 #: Control.ulf#OOO_CONTROL_154
+#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "Los volúmenes resaltaos nun tienen espaciu abondu pa les funciones escoyíes. Puedes desaniciar ficheros de los volúmenes resaltaos, instalar menos funciones nes unidaes llocales o escoyer otres unidaes de destín."
 
 #: Control.ulf#OOO_CONTROL_155
+#, fuzzy
 msgid  "{&MSSansBold8}Out of Disk Space"
 msgstr "{&MSSansBold8}Falta espaciu nel discu duru"
 
 #: Control.ulf#OOO_CONTROL_156
+#, fuzzy
 msgid  "{120}{70}{70}{70}{70}"
 msgstr "{120}{70}{70}{70}{70}"
 
 #: Control.ulf#OOO_CONTROL_157
+#, fuzzy
 msgid  "OK"
 msgstr "Aceutar"
 
 #: Control.ulf#OOO_CONTROL_158
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_159
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_160
+#, fuzzy
 msgid  "&Update >"
 msgstr "&Anovar >"
 
 #: Control.ulf#OOO_CONTROL_161
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Patch for [ProductName]"
 msgstr "{&TahomaBold10}Bienllegáu al Parche pa [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_162
+#, fuzzy
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
 msgstr "L'Asistente va instalar el parche pa [ProductName] nel equipu. Pa siguir, calca n'Anovar"
 
 #: Control.ulf#OOO_CONTROL_163
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_166
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_167
+#, fuzzy
 msgid  "The wizard is ready to begin installation."
 msgstr "L'asistente da preparáu pa entamar la instalación."
 
 #: Control.ulf#OOO_CONTROL_168
+#, fuzzy
 msgid  "Click Install to begin the installation."
 msgstr "Calca n'Instalar pa entamar la instalación."
 
 #: Control.ulf#OOO_CONTROL_169
+#, fuzzy
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
 msgstr "Si quies comprobar o camudar les opciones d'instalación, calca n'Anterior. Calca n'Encaboxar pa zarrar l'asistente."
 
 #: Control.ulf#OOO_CONTROL_170
+#, fuzzy
 msgid  "{&MSSansBold8}Ready to Modify the Program"
 msgstr "{&MSSansBold8}Preparáu pa camudar el programa"
 
 #: Control.ulf#OOO_CONTROL_171
+#, fuzzy
 msgid  "{&MSSansBold8}Ready to Repair the Program"
 msgstr "{&MSSansBold8}Preparáu pa iguar el Programa"
 
 #: Control.ulf#OOO_CONTROL_172
+#, fuzzy
 msgid  "{&MSSansBold8}Ready to Install the Program"
 msgstr "{&MSSansBold8}Preparáu pa Instalar el Programa"
 
 #: Control.ulf#OOO_CONTROL_173
+#, fuzzy
 msgid  "&Install"
 msgstr "&Instalar"
 
 #: Control.ulf#OOO_CONTROL_174
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_177
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_178
+#, fuzzy
 msgid  "You have chosen to remove the program from your system."
 msgstr "Escoyiste desaniciar el programa del sistema."
 
 #: Control.ulf#OOO_CONTROL_179
+#, fuzzy
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
 msgstr "Calca Desinstalar pa desaniciar [ProductName] del equipu. Darréu de desanicialu nun vas poder volver a usar el programa."
 
 #: Control.ulf#OOO_CONTROL_180
+#, fuzzy
 msgid  "If you want to review or change any settings, click Back."
 msgstr "Si quies comprobar o camudar daqué opción, calca n'Anterior."
 
 #: Control.ulf#OOO_CONTROL_181
+#, fuzzy
 msgid  "{&MSSansBold8}Remove the Program"
 msgstr "{&MSSansBold8}Desaniciar el Programa"
 
 #: Control.ulf#OOO_CONTROL_182
+#, fuzzy
 msgid  "&Remove"
 msgstr "&Desaniciar"
 
 #: Control.ulf#OOO_CONTROL_183
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_184
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_185
+#, fuzzy
 msgid  "&Finish"
 msgstr "&Acabar"
 
 #: Control.ulf#OOO_CONTROL_186
+#, fuzzy
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
 msgstr "Modificóse'l sistema. Pa completar la instalación otra vez, vuelve a executala."
 
 #: Control.ulf#OOO_CONTROL_187
+#, fuzzy
 msgid  "Click Finish to exit the wizard."
 msgstr "Calaca en Acabar pa colar del asistente."
 
 #: Control.ulf#OOO_CONTROL_188
+#, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
 msgstr "Puedes grabar tolos elementos instalaos nel sistema pa siguir la instalación otra vez o restaurar el sistema al so estáu orixinal."
 
 #: Control.ulf#OOO_CONTROL_189
+#, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
 msgstr "Calca en Restaurar o Siguir dempués pa colar del Asistente d'instalación."
 
 #: Control.ulf#OOO_CONTROL_190
+#, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
 msgstr "{&TahomaBold10}Completáu l'asistente d'instalación"
 
 #: Control.ulf#OOO_CONTROL_191
+#, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "L'asistente cortóse enantes d'acabar la instalación de [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_192
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_193
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_194
+#, fuzzy
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
 msgstr "&Sí, guetar anovamientos de programes (Recomendáu) una vez acabada la instalación."
 
 #: Control.ulf#OOO_CONTROL_195
+#, fuzzy
 msgid  "Launch the program"
 msgstr "Executar programa"
 
 #: Control.ulf#OOO_CONTROL_196
+#, fuzzy
 msgid  "Show the readme file"
 msgstr "Amosar ficheru Lleime"
 
 #: Control.ulf#OOO_CONTROL_197
+#, fuzzy
 msgid  "&Finish"
 msgstr "&Acabar"
 
 #: Control.ulf#OOO_CONTROL_198
+#, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
 msgstr "{&TahomaBold10}Completáu l'asistente d'instalación"
 
 #: Control.ulf#OOO_CONTROL_199
+#, fuzzy
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
 msgstr "L'Asistente instalóse [ProductName] bien. Calca n'Acabar pa colar del asistente."
 
 #: Control.ulf#OOO_CONTROL_200
+#, fuzzy
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
 msgstr "L'Asistente desinstalóse [ProductName] bien. Calca n'Acabar pa colar del asistente."
 
 #: Control.ulf#OOO_CONTROL_201
+#, fuzzy
 msgid  "Setup has finished installing [ProductName]."
 msgstr "El programa d'instalación acabó de instalar [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_202
+#, fuzzy
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
 msgstr "Quiciabes dellos ficheros de programa s'anovaran dende que mercaste la copia de [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_203
+#, fuzzy
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
 msgstr "Puedes usar la conexón a Internet pa asegurate de que tienes les caberes anovaciones."
 
 #: Control.ulf#OOO_CONTROL_204
+#, fuzzy
 msgid  "&Abort"
 msgstr "&Albortar"
 
 #: Control.ulf#OOO_CONTROL_205
+#, fuzzy
 msgid  "&Cancel"
 msgstr "&Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_206
+#, fuzzy
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
 msgstr "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
 
 #: Control.ulf#OOO_CONTROL_207
+#, fuzzy
 msgid  "&Ignore"
 msgstr "&Inorar"
 
 #: Control.ulf#OOO_CONTROL_208
+#, fuzzy
 msgid  "&No"
 msgstr "&Non"
 
 #: Control.ulf#OOO_CONTROL_209
+#, fuzzy
 msgid  "&OK"
 msgstr "&Aceutar"
 
 #: Control.ulf#OOO_CONTROL_210
+#, fuzzy
 msgid  "&Retry"
 msgstr "&Reintentar"
 
 #: Control.ulf#OOO_CONTROL_211
+#, fuzzy
 msgid  "&Yes"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_214
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_215
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_216
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_217
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Bienllegáu/ada al asistente d'instalación de [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_218
+#, fuzzy
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr "Instalación de [ProductName] ta tresnando l'Asistente d'Instalación que t'empobinará pel procesu d'instalar el programa. Por favor, espera."
 
 #: Control.ulf#OOO_CONTROL_219
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_220
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_221
+#, fuzzy
 msgid  "&Finish"
 msgstr "&Acabar"
 
 #: Control.ulf#OOO_CONTROL_222
+#, fuzzy
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
 msgstr "El so sistema modificóse. Pa instalar esti programa otra vez, vuelvi a executar el programa d'instalación."
 
 #: Control.ulf#OOO_CONTROL_223
+#, fuzzy
 msgid  "Click Finish to exit the wizard."
 msgstr "Calaca en Acabar pa colar del asistente."
 
 #: Control.ulf#OOO_CONTROL_224
+#, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
 msgstr "Puedes grabar tolos elementos instalaos nel sistema pa siguir la instalación otra vez o restaurar el sistema al so estáu orixinal."
 
 #: Control.ulf#OOO_CONTROL_225
+#, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
 msgstr "Calca en Restaurar o Siguir dempués pa colar del Asistente d'instalación."
 
 #: Control.ulf#OOO_CONTROL_226
+#, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
 msgstr "{&TahomaBold10}Completáu l'asistente d'instalación"
 
 #: Control.ulf#OOO_CONTROL_227
+#, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "L'asistente cortóse enantes d'acabar la instalación de [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_228
+#, fuzzy
 msgid  "Progress done"
 msgstr "Acabóse"
 
 #: Control.ulf#OOO_CONTROL_230
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_233
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_234
+#, fuzzy
 msgid  "The program features you selected are being installed."
 msgstr "Los componentes del programa escoyíos tán instalándose."
 
 #: Control.ulf#OOO_CONTROL_235
+#, fuzzy
 msgid  "The program features you selected are being uninstalled."
 msgstr "Los componentes del programa escoyíu tán desinstalándose."
 
 #: Control.ulf#OOO_CONTROL_236
+#, fuzzy
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
 msgstr "Por favor, espera mentanto Installation Wizard instala [ProductName]. Esti procesu puede llevar dellos minutos."
 
 #: Control.ulf#OOO_CONTROL_237
+#, fuzzy
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
 msgstr "Por favor, espera mentanto Installation Wizard desinstala [ProductName]. Esti procesu puede llevar dellos minutos."
 
 #: Control.ulf#OOO_CONTROL_238
+#, fuzzy
 msgid  "{&MSSansBold8}Installing [ProductName]"
 msgstr "{&MSSansBold8}Instalando [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_239
+#, fuzzy
 msgid  "{&MSSansBold8}Uninstalling [ProductName]"
 msgstr "{&MSSansBold8}Desinstalando [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_240
+#, fuzzy
 msgid  "Sec."
 msgstr "Seg."
 
 #: Control.ulf#OOO_CONTROL_241
+#, fuzzy
 msgid  "Status:"
 msgstr "Estáu:"
 
 #: Control.ulf#OOO_CONTROL_242
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_244
+#, fuzzy
 msgid  "Estimated time remaining:"
 msgstr "Tiempu restante estimáu:"
 
 #: Control.ulf#OOO_CONTROL_245
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_246
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_247
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_248
+#, fuzzy
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
 msgstr "L'Asistente va acabar la instalación de [ProductName] nel to equipu. Pa siguir, calca en Siguiente."
 
 #: Control.ulf#OOO_CONTROL_249
+#, fuzzy
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
 msgstr "L'Asistente va acabar la instalación suspendida de [ProductName] nel to equipu. Pa siguir, calca en Siguiente."
 
 #: Control.ulf#OOO_CONTROL_250
+#, fuzzy
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Reaniciando l'Asistente d'Instalación de [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_251
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_254
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_255
+#, fuzzy
 msgid  "The main components will be installed. Recommended for most users."
 msgstr "Van instalase los componentes principales. Encamiéntense pa la mayoría d'usuarios."
 
 #: Control.ulf#OOO_CONTROL_256
+#, fuzzy
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
 msgstr "Escueyi les funciones que quies instalar y l'allugamientu nel que van instalase. Recomendada pa usuarios avezaos."
 
 #: Control.ulf#OOO_CONTROL_257
+#, fuzzy
 msgid  "Choose the setup type that best suits your needs."
 msgstr "Escueyi la triba d'instalación que s'axuste a les tos necesidaes."
 
 #: Control.ulf#OOO_CONTROL_258
+#, fuzzy
 msgid  "Please select a setup type."
 msgstr "Escueyi la triba d'instalación."
 
 #: Control.ulf#OOO_CONTROL_259
+#, fuzzy
 msgid  "{&MSSansBold8}Setup Type"
 msgstr "{&MSSansBold8}Triba d'Instalación"
 
 #: Control.ulf#OOO_CONTROL_260
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_262
+#, fuzzy
 msgid  "< &Back"
 msgstr "< &Atrás"
 
 #: Control.ulf#OOO_CONTROL_265
+#, fuzzy
 msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: Control.ulf#OOO_CONTROL_266
+#, fuzzy
 msgid  "&Next >"
 msgstr "&Siguiente >"
 
 #: Control.ulf#OOO_CONTROL_267
+#, fuzzy
 msgid  "Please select the product language for [ProductName]."
 msgstr "Escueyi un idioma pa [ProductName]."
 
 #: Control.ulf#OOO_CONTROL_268
+#, fuzzy
 msgid  "{&MSSansBold8}Language Selection"
 msgstr "{&MSSansBold8}Esbilla d'Idioma"
 
 #: Control.ulf#OOO_CONTROL_269
+#, fuzzy
 msgid  "Repair or remove the program."
 msgstr "Iguar o desaniciar el programa."
 
 #: Control.ulf#OOO_CONTROL_270
+#, fuzzy
 msgid  "&Microsoft Word Documents"
 msgstr "Documentos de &Microsoft Word"
 
 #: Control.ulf#OOO_CONTROL_271
+#, fuzzy
 msgid  "Microsoft &Excel Spreadsheets"
 msgstr "Fueyes de cálculu de Microsoft &Excel"
 
 #: Control.ulf#OOO_CONTROL_272
+#, fuzzy
 msgid  "Microsoft Po&werPoint Presentations"
 msgstr "Presentaciones de Microsoft Po&werPoint"
 
 #: Control.ulf#OOO_CONTROL_273
+#, fuzzy
 msgid  "&[ProductName] Writer/Web"
 msgstr "&[ProductName] Writer/Web"
 
 #: Control.ulf#OOO_CONTROL_274
+#, fuzzy
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
 msgstr "Definir [DEFINEDPRODUCT] como l'aplicación predeterminada pa esta triba de ficheros de Microsoft Office."
 
 #: Control.ulf#OOO_CONTROL_275
+#, fuzzy
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
 msgstr "[ProductName] puede establecese como aplicación predeterminada p'abrir les tribes de ficheros de Microsoft Office. Asina, si calques dos vegaes nun d'estos ficheros, ábrelos [ProductName], non el programa que lo fai anguaño."
 
 #: Control.ulf#OOO_CONTROL_276
+#, fuzzy
 msgid  "File types"
 msgstr "Tribes de ficheru"
 
 #: Control.ulf#OOO_CONTROL_277
+#, fuzzy
 msgid  "Default HTML editor"
 msgstr "Editor HTML predetermináu"
 
 #: Control.ulf#OOO_CONTROL_278
+#, fuzzy
 msgid  "{&MSSansBold8}File Type"
 msgstr "{&MSSansBold8}Triba d'archivu"
 
 #: Control.ulf#OOO_CONTROL_300
+#, fuzzy
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
 msgstr "L'Asistente pa instalar [ProductName] atopó una versión de [DEFINEDPRODUCT] [DEFINEDVERSION]. La versión va anovase."
 
 #: Control.ulf#OOO_CONTROL_301
+#, fuzzy
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
 msgstr "La carpeta de destín especificada darréu nun contién denguna versión de [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: Control.ulf#OOO_CONTROL_302
+#, fuzzy
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
 msgstr "Atopóse una versión de [DEFINEDPRODUCT] [DEFINEDVERSION] más recien."
 
 #: Control.ulf#OOO_CONTROL_303
+#, fuzzy
 msgid  "The version specified in the folder below cannot be updated."
 msgstr "Nun se puede anovar la versión especificada na carpeta siguiente."
 
 #: Control.ulf#OOO_CONTROL_304
+#, fuzzy
 msgid  "Check the destination folder."
 msgstr "Comprueba la carpeta de destín."
 
 #: Control.ulf#OOO_CONTROL_305
+#, fuzzy
 msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_306
+#, fuzzy
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_307
+#, fuzzy
 msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_308
+#, fuzzy
 msgid  "Install [ProductName] to:"
 msgstr "Instalar [ProductName] en:"
 
 #: Control.ulf#OOO_CONTROL_309
+#, fuzzy
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
 msgstr "Si sólo tas probando [ProductName], de xuro que nun quies que pase esto, poro, nun marques la caxella."
 
 #: Control.ulf#OOO_CONTROL_317
+#, fuzzy
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
 msgstr "Nun s'esbillaron llingües pa la instalación. Calque Aceutar pa seleicionar una o más llingües pa la instalación."
 
 #: Control.ulf#OOO_CONTROL_318
+#, fuzzy
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
 msgstr "Nun s'esbillaron aplicaciones pa la instalación. Calque Aceutar pa seleicionar una o más aplicaciones pa la instalación."
 
 #: Control.ulf#OOO_CONTROL_319
+#, fuzzy
 msgid  "Create a start link on desktop"
 msgstr "Crear un enllaz d'aniciu nel escritoriu"
 
 #: Control.ulf#OOO_CONTROL_320
+#, fuzzy
 msgid  "Remove all older product versions"
 msgstr "Desaniciar toles versiones del productu vieyes"
 
 #: Control.ulf#OOO_CONTROL_LANG_1033
+#, fuzzy
 msgid  "English"
 msgstr "Inglés"
 
 #: Control.ulf#OOO_CONTROL_LANG_1031
+#, fuzzy
 msgid  "German"
 msgstr "Alemán"
 
 #: Control.ulf#OOO_CONTROL_LANG_1034
+#, fuzzy
 msgid  "Spanish"
 msgstr "Español"

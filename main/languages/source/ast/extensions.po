@@ -472,6 +472,7 @@ msgid  "Search Key"
 msgstr "Clave de busca"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "AutoFilter"
 msgstr "Filtru automáticu"
 
@@ -481,6 +482,7 @@ msgid  "Standard Filter"
 msgstr "Filtru estándar"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Remove Filter"
 msgstr "Eliminar filtru"
 
@@ -490,10 +492,12 @@ msgid  "Column Arrangement"
 msgstr "Disposición de les columnes"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Data Source"
 msgstr "Orixe de datos"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Data"
 msgstr "Datos"
 
@@ -508,14 +512,17 @@ msgid  "Currently, the form the control belongs to is not (or not completely) bo
 msgstr "Anguaño'l formulariu al que pertenez el control nun ta (o non completamente) venceyáu a una fonte de datos.\n\nPor favor escueyi una fonte de datos y una tabla.\n\n\nTen en cuenta que los parámetros establecíos nesta páxina van tener efeutu en cuantes que salgas de la páxina."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data source:"
 msgstr "Fonte de ~datos:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table / Query:"
 msgstr "~Tabla / Consulta"
 
@@ -525,6 +532,7 @@ msgid  "Database Field"
 msgstr "Campu de la base de datos"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want to save the value in a database field?"
 msgstr "¿Quies guardar el valor nun campu de la base de datos?"
 
@@ -539,18 +547,22 @@ msgid  "~No, I only want to save the value in the form."
 msgstr "~Non, namái quiero guardar el valor nel formulariu."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Form"
 msgstr "Formulariu"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data source"
 msgstr "Fonte de datos"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Content type"
 msgstr "Triba de conteníu"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Content"
 msgstr "Conteníu"
 
@@ -570,18 +582,22 @@ msgid  "SQL command"
 msgstr "Comandu SQL"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Group Element Wizard"
 msgstr "Asistente d'elementos de grupu"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Table Element Wizard"
 msgstr "Asistente d'elementos de tabla"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "List Box Wizard"
 msgstr "Asistente de caxes de llistes"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Combo Box Wizard"
 msgstr "Asistente de caxes combinaes"
 
@@ -596,6 +612,7 @@ msgid  "Field Selection"
 msgstr "Seleición de campos"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Table element"
 msgstr "Elementu de la tabla"
 
@@ -605,22 +622,27 @@ msgid  "Existing fields"
 msgstr "Campos esistentes"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Selected fields"
 msgstr "Campos seleicionaos"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
+#, fuzzy
 msgid  " (Date)"
 msgstr " (Data)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
+#, fuzzy
 msgid  " (Time)"
 msgstr " (Hora)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Data"
 msgstr "Datos"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Which ~names do you want to give the option fields?"
 msgstr "¿Qué ~nomes quies dar a los campos d'opción?"
 
@@ -629,10 +651,12 @@ msgid  "~Option fields"
 msgstr "Campos d'~opción"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Default Field Selection"
 msgstr "Seleición del campu predetermináu"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Should one option field be selected as a default?"
 msgstr "¿Quies que tea seleicionáu un campu d'opción de mou predetermináu?"
 
@@ -647,6 +671,7 @@ msgid  "No, one particular field is not going to be selected."
 msgstr "Non, nun ha seleicionase dengún campu en concretu."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
+#, fuzzy
 msgid  "Field Values"
 msgstr "Valores del campu"
 
@@ -666,6 +691,7 @@ msgid  "~Option fields"
 msgstr "Campos d'~opción"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
+#, fuzzy
 msgid  "Create Option Group"
 msgstr "Crear el grupu d'opciones"
 
@@ -685,10 +711,12 @@ msgid  "You can either save the value of the option group in a database field or
 msgstr "Pues guardar el valor del grupu d'opciones d'una base de datos o usalu pa una aición posterior."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
+#, fuzzy
 msgid  "Table Selection"
 msgstr "Seleición de tabla"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Control"
 msgstr "Control"
 
@@ -723,6 +751,7 @@ msgid  "The contents of the selected field will be shown in the list box if the 
 msgstr "El conteníu del campu seleicionáu amosaráse na caxa de llista si los campos enllaciaos son idénticos."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
+#, fuzzy
 msgid  "Field Link"
 msgstr "Enllaz de campu"
 
@@ -732,10 +761,12 @@ msgid  "This is where you select fields with matching contents so that the value
 msgstr "Equí ye onde seleiciones campos con conteníu coincidente col envís d'amosar el valor del campu de visualización."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field from the ~Value Table"
 msgstr "Campu de la tabla de ~valores"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field from the ~List Table"
 msgstr "Campu de la tabla de ~llista"
 
@@ -745,18 +776,22 @@ msgid  "You can either save the value of the combo box in a database field or us
 msgstr "Pues guardar el valor de la caxa combinada d'una base de datos o bien usalu pa propósitos de visualización."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "<< Back"
 msgstr "<< Tornar"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Next >>"
 msgstr "Siguir >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "Accept"
 msgstr "Aceutar"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "Finish"
 msgstr "Finar"
 
@@ -801,6 +836,7 @@ msgid  "View the complete License Agreement. Please use the scroll bar or the '%
 msgstr "Llei'l contratu de Llicencia dafechu. Emplega la barra de desplazamientu o'l botón '%PAGEDOWN' d'esti diálogu pa ver el testu de la llicencia completu."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Page Down"
 msgstr "Retroceder páxina"
 
@@ -820,6 +856,7 @@ msgid  "I accept the terms of the Agreement."
 msgstr "Aceuto los términos del Contratu."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "~Accept"
 msgstr "~Aceutar"
 
@@ -854,6 +891,7 @@ msgid  "Sub forms can be used to display detailed data about the current record 
 msgstr "Puen usase subformularios p'amosar los detalles sobre'l rexistru activu del formulariu maestru. Pa ello, pue especificar les columnes del subformulariu que concasen coles columnes del formulariu maestru."
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Suggest"
 msgstr "Suxerir"
 
@@ -873,10 +911,12 @@ msgid  "The columns of '#' could not be retrieved."
 msgstr "Les columnes de '#' nun puen ser recuperaes."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
+#, fuzzy
 msgid  "Edit mask"
 msgstr "Editar mázcara"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
+#, fuzzy
 msgid  "Literal mask"
 msgstr "Máscara lliteral"
 
@@ -885,6 +925,7 @@ msgid  "Read-only"
 msgstr "sólo llectura"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
+#, fuzzy
 msgid  "Enabled"
 msgstr "Habilitáu"
 
@@ -894,14 +935,17 @@ msgid  "Visible"
 msgstr "Visible"
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
+#, fuzzy
 msgid  "AutoFill"
 msgstr "Autocompletar"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
+#, fuzzy
 msgid  "Line count"
 msgstr "Cuntar llinies"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
+#, fuzzy
 msgid  "Max. text length"
 msgstr "Llonxitú máxima del testu"
 
@@ -916,6 +960,7 @@ msgid  "Strict format"
 msgstr "Formatu estrictu"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
+#, fuzzy
 msgid  "Thousands separator"
 msgstr "Separtador de miles"
 
@@ -935,14 +980,17 @@ msgid  "Frame"
 msgstr "Marcu"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Help text"
 msgstr "Testu d'ayuda"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
+#, fuzzy
 msgid  "Help URL"
 msgstr "URL d'ayuda"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
+#, fuzzy
 msgid  "Additional information"
 msgstr "Información adicional"
 
@@ -962,30 +1010,37 @@ msgid  "Empty string is NULL"
 msgstr "La cadena balera ye NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
+#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "Precisión decimal"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
+#, fuzzy
 msgid  "Graphics"
 msgstr "Gráficos"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
+#, fuzzy
 msgid  "Default selection"
 msgstr "Seleición predeterminada"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Default button"
 msgstr "Botón predetermináu"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Label Field"
 msgstr "Campu d'etiqueta"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
 msgstr "Etiqueta"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
 msgstr "Alliniamientu"
 
@@ -995,18 +1050,22 @@ msgid  "Vert. Alignment"
 msgstr "Alliniamientu vertical"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
+#, fuzzy
 msgid  "Top"
 msgstr "Cimero"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
+#, fuzzy
 msgid  "Middle"
 msgstr "Mediu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
 msgstr "Cabero"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
+#, fuzzy
 msgid  "Graphics alignment"
 msgstr "Alliniamientu de gráficos"
 
@@ -1016,14 +1075,17 @@ msgid  "Font"
 msgstr "Fonte"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
 msgstr "Color fondu"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Border"
 msgstr "Berbesu"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
+#, fuzzy
 msgid  "Icon size"
 msgstr "Tamañu d'Iconu"
 
@@ -1038,10 +1100,12 @@ msgid  "Large"
 msgstr "Grande"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Positioning"
 msgstr "Allugamientu"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation"
 msgstr "Restolar"
 
@@ -1051,30 +1115,37 @@ msgid  "Acting on a record"
 msgstr "Remanar n'un rexistru"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
+#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "Filtráu / Ordenamientu"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "Barra de movición horizontal"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
+#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "Barra de movición vertical"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
+#, fuzzy
 msgid  "Word break"
 msgstr "Dixebra de pallabra"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
+#, fuzzy
 msgid  "Multiline input"
 msgstr "Entrada multillinia"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Multiselection"
 msgstr "Seleición múltiple"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
 msgstr "Nome"
 
@@ -1089,18 +1160,22 @@ msgid  "Mouse wheel scroll"
 msgstr "Rueda d'eslizamientu del mur"
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Filter"
 msgstr "Filtru"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
+#, fuzzy
 msgid  "Sort"
 msgstr "Axeitar"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
+#, fuzzy
 msgid  "Record marker"
 msgstr "Marcador de rexistros"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
+#, fuzzy
 msgid  "Filter proposal"
 msgstr "Propuesta de peñera"
 
@@ -1110,6 +1185,7 @@ msgid  "Navigation bar"
 msgstr "Barra de ñavegación"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
+#, fuzzy
 msgid  "Cycle"
 msgstr "Ciclu"
 
@@ -1119,26 +1195,32 @@ msgid  "Tabstop"
 msgstr "Tabstop"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Data field"
 msgstr "Campu de datos"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
+#, fuzzy
 msgid  "Dropdown"
 msgstr "Desplegable"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Bound field"
 msgstr "Campu venceyáu"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "List content"
 msgstr "Conteníu de la llista"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type of list contents"
 msgstr "Triba de conteníos de la llista"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Content"
 msgstr "Conteníu"
 
@@ -1148,30 +1230,37 @@ msgid  "Content type"
 msgstr "Tipu de conteníu"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
+#, fuzzy
 msgid  "Allow additions"
 msgstr "Permitir adiciones"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
+#, fuzzy
 msgid  "Allow deletions"
 msgstr "Permitir eliminaciones"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
+#, fuzzy
 msgid  "Allow modifications"
 msgstr "Permitir camudamientos"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
+#, fuzzy
 msgid  "Add data only"
 msgstr "Añader datos namái"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Data source"
 msgstr "Fonte de datos"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link master fields"
 msgstr "Enllaz de"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link slave fields"
 msgstr "Enllazar con"
 
@@ -1186,10 +1275,12 @@ msgid  "Value max."
 msgstr "Valor máx."
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
+#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "Valor d'incrementu/decrementu"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
+#, fuzzy
 msgid  "Currency symbol"
 msgstr "Símbolu de moneda"
 
@@ -1204,10 +1295,12 @@ msgid  "Date max."
 msgstr "Data máx."
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Date format"
 msgstr "Formatu de Data"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
+#, fuzzy
 msgid  "Selection"
 msgstr "Seleición"
 
@@ -1222,18 +1315,22 @@ msgid  "Time max."
 msgstr "Hora máx."
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Time format"
 msgstr "Formatu d'hora"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Prefix symbol"
 msgstr "Símbolu de prefixu"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
 msgstr "Valor"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
+#, fuzzy
 msgid  "Formatting"
 msgstr "Formateando"
 
@@ -1248,10 +1345,12 @@ msgid  "Height"
 msgstr "Altor"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Width"
 msgstr "Anchu"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
+#, fuzzy
 msgid  "List index"
 msgstr "Índiz de la llista"
 
@@ -1261,26 +1360,32 @@ msgid  "Row height"
 msgstr "Altor Filera"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Fill color"
 msgstr "Color de rellenu"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Line color"
 msgstr "Color de la llinia"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Reference value (on)"
 msgstr "Valor de referencia (activao)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Reference value (off)"
 msgstr "Valor de referencia (desactivao)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
+#, fuzzy
 msgid  "List entries"
 msgstr "Entraes de la llista"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Action"
 msgstr "Aición"
 
@@ -1290,6 +1395,7 @@ msgid  "URL"
 msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
+#, fuzzy
 msgid  "Type of submission"
 msgstr "Triba d'unvíu"
 
@@ -1304,18 +1410,22 @@ msgid  "Submission encoding"
 msgstr "Codificación d'unviu"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Default value"
 msgstr "Valor predetermináu"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Default text"
 msgstr "Testu predetermináu"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
+#, fuzzy
 msgid  "Default date"
 msgstr "Data predeterminada"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
+#, fuzzy
 msgid  "Default time"
 msgstr "Hora predeterminada"
 
@@ -1375,6 +1485,7 @@ msgid  "Left"
 msgstr "Esquierda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
+#, fuzzy
 msgid  "Center"
 msgstr "Centrar"
 
@@ -1628,26 +1739,32 @@ msgid  "Execute action"
 msgstr "Executar aición"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
+#, fuzzy
 msgid  "After updating"
 msgstr "Dempués d'anovar"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Before updating"
 msgstr "Enantes d'anovar"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "Before record action"
 msgstr "Enantes de l'aición nel rexistru de datos"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "After record action"
 msgstr "Darréu de l'aición nel rexistru de datos"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Confirm deletion"
 msgstr "Confirmar desaniciu"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
+#, fuzzy
 msgid  "Error occurred"
 msgstr "Hebo un fallu"
 
@@ -1667,10 +1784,12 @@ msgid  "Item status changed"
 msgstr "Elementu col estáu camudáu"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
+#, fuzzy
 msgid  "Key pressed"
 msgstr "Tecla calcada"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
+#, fuzzy
 msgid  "Key released"
 msgstr "Tecla soltada"
 
@@ -1690,18 +1809,22 @@ msgid  "When reloading"
 msgstr "Al recargar"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse moved while key pressed"
 msgstr "Mover el mur pente'l tecláu"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse inside"
 msgstr "Mur dientro"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse outside"
 msgstr "Mur fuera"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse moved"
 msgstr "Movimientu de mur"
 
@@ -1711,22 +1834,27 @@ msgid  "Mouse button pressed"
 msgstr "Botón del mur calcáu"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse button released"
 msgstr "Botón del mur sueltu"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
+#, fuzzy
 msgid  "Before record change"
 msgstr "Enantes del cambiu de rexistros de datos"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
+#, fuzzy
 msgid  "After record change"
 msgstr "Tres el cambiu de rexistru de datos"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
+#, fuzzy
 msgid  "After resetting"
 msgstr "Dempués de resetear"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
+#, fuzzy
 msgid  "Prior to reset"
 msgstr "Enantes de resetear"
 
@@ -1741,6 +1869,7 @@ msgid  "Before submitting"
 msgstr "Enantes d'unviar"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Text modified"
 msgstr "Testu camudáu"
 
@@ -1755,10 +1884,12 @@ msgid  "When unloading"
 msgstr "Al descargar"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Changed"
 msgstr "Modificaos"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
+#, fuzzy
 msgid  "Events"
 msgstr "Eventos"
 
@@ -1768,22 +1899,27 @@ msgid  "Analyze SQL command"
 msgstr "Analizar comandu SQL"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
+#, fuzzy
 msgid  "PositionX"
 msgstr "PosiciónX"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
+#, fuzzy
 msgid  "PositionY"
 msgstr "PosiciónY"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
 msgstr "Títulu"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
+#, fuzzy
 msgid  "Page (step)"
 msgstr "Páxina (Step)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Progress value"
 msgstr "Valor de progresu"
 
@@ -1798,6 +1934,7 @@ msgid  "Progress value max."
 msgstr "Valor máx. de progresu"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value"
 msgstr "Valor"
 
@@ -1812,18 +1949,22 @@ msgid  "Scroll value min."
 msgstr "Valor mín. desplazamientu"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Default scroll value"
 msgstr "Valor predetermináu de desplazamientu"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Small change"
 msgstr "Cambiu pequeñu"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Large change"
 msgstr "Cambéu grande"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
+#, fuzzy
 msgid  "Delay"
 msgstr "Retrasu"
 
@@ -1838,6 +1979,7 @@ msgid  "Visible size"
 msgstr "Tamañu visible"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
+#, fuzzy
 msgid  "Orientation"
 msgstr "Aldu"
 
@@ -1852,10 +1994,12 @@ msgid  "Vertical"
 msgstr "Vertical"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "While adjusting"
 msgstr "Al axustar"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
+#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
@@ -1865,18 +2009,22 @@ msgid  "State"
 msgstr "Estáu"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
+#, fuzzy
 msgid  "Time"
 msgstr "Tiempu"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Scale"
 msgstr "Escala"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Button type"
 msgstr "Triba de botón"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Default"
 msgstr "Predetermináu"
 
@@ -1891,6 +2039,7 @@ msgid  "Cancel"
 msgstr "Encaboxar"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Help"
 msgstr "Ayuda"
 
@@ -1910,6 +2059,7 @@ msgid  "Linked cell"
 msgstr "Caxella enllazada"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
+#, fuzzy
 msgid  "Source cell range"
 msgstr "Rangu de caxelles d'orixe"
 
@@ -1929,34 +2079,42 @@ msgid  "Position of the selected entry"
 msgstr "Posición de la entrada escoyida"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
+#, fuzzy
 msgid  "Scrollbars"
 msgstr "Barres de desplazamientu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Single-line"
 msgstr "Una llinia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Multi-line"
 msgstr "Abondes llinies"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi-line with formatting"
 msgstr "Abondes llines con formatu"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Symbol color"
 msgstr "Color de símbolu"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Text lines end with"
 msgstr "Les llinies de testu acaben con"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
+#, fuzzy
 msgid  "LF (Unix)"
 msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
+#, fuzzy
 msgid  "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
 
@@ -1976,6 +2134,7 @@ msgid  "Vertical"
 msgstr "Vertical"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
+#, fuzzy
 msgid  "Both"
 msgstr "Dambos"
 
@@ -1995,6 +2154,7 @@ msgid  "SQL command"
 msgstr "Comandu SQL"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
+#, fuzzy
 msgid  "Toggle"
 msgstr "Alternar"
 
@@ -2004,10 +2164,12 @@ msgid  "Take Focus on Click"
 msgstr "Activar al calcar"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Hide selection"
 msgstr "Tapecer escoyeta"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
+#, fuzzy
 msgid  "Style"
 msgstr "Estilu"
 
@@ -2022,6 +2184,7 @@ msgid  "Flat"
 msgstr "Planu"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Border color"
 msgstr "Color del berbesu"
 
@@ -2061,6 +2224,7 @@ msgid  "Above left"
 msgstr "Enriba izquierda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
+#, fuzzy
 msgid  "Above centered"
 msgstr "Enriba centru"
 
@@ -2075,6 +2239,7 @@ msgid  "Below left"
 msgstr "Debaxo izquierda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
+#, fuzzy
 msgid  "Below centered"
 msgstr "Debaxo centru"
 
@@ -2084,14 +2249,17 @@ msgid  "Below right"
 msgstr "Debaxo drecha"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
+#, fuzzy
 msgid  "Centered"
 msgstr "Centráu"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
+#, fuzzy
 msgid  "Wrap text automatically"
 msgstr "Axustar testu automáticamente"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Text type"
 msgstr "Triba de testu"
 
@@ -2111,18 +2279,22 @@ msgid  "XML data model"
 msgstr "Modelu de datos XML"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
+#, fuzzy
 msgid  "Binding expression"
 msgstr "Espresión d'enllaz"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Required"
 msgstr "Necesítase"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
+#, fuzzy
 msgid  "List entry source"
 msgstr "Orixe d'entrada de llista"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
+#, fuzzy
 msgid  "Relevant"
 msgstr "Importante"
 
@@ -2132,10 +2304,12 @@ msgid  "Read-only"
 msgstr "sólo llectura"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
+#, fuzzy
 msgid  "Constraint"
 msgstr "Restricción"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
+#, fuzzy
 msgid  "Calculation"
 msgstr "Cálculu"
 
@@ -2145,38 +2319,47 @@ msgid  "Data type"
 msgstr "Triba de datos"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
+#, fuzzy
 msgid  "Whitespaces"
 msgstr "Espacios en blancu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
+#, fuzzy
 msgid  "Preserve"
 msgstr "Caltener"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
+#, fuzzy
 msgid  "Replace"
 msgstr "Trocar"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
+#, fuzzy
 msgid  "Collapse"
 msgstr "contrayer"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
+#, fuzzy
 msgid  "Pattern"
 msgstr "Patrón"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length"
 msgstr "Duración"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length (at least)"
 msgstr "Llargor (como mínimu)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length (at most)"
 msgstr "Llargor (como máximu)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (total)"
 msgstr "Díxitos (total)"
 
@@ -2206,10 +2389,12 @@ msgid  "Min. (exclusive)"
 msgstr "Mín. (ensin incluyir)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
+#, fuzzy
 msgid  "Submission"
 msgstr "Unvíu"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Binding"
 msgstr "Enllaz"
 
@@ -2369,6 +2554,7 @@ msgid  "Bold"
 msgstr "Negrina"
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "(Default)"
 msgstr "(Predetermináu)"
 
@@ -2388,94 +2574,117 @@ msgid  "Do you want to delete the data type '#type#' from the model?\nPlease not
 msgstr "¿Quies desaniciar la triba de datos '#type#' del modelu?\nCuenta qu'esto afeuta a tolos campos de control venceyaos a esta triba de datos."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Button"
 msgstr "Botón"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Option Button"
 msgstr "Botón d'opción"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
+#, fuzzy
 msgid  "Check Box"
 msgstr "Caxellu de verificación"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Label Field"
 msgstr "Campu d'etiqueta"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
+#, fuzzy
 msgid  "Group Box"
 msgstr "Caxa de grupu"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Text Box"
 msgstr "Caxa de testu"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Campu formatiáu"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "List Box"
 msgstr "Caxa de llista"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Caxa combinada"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Image Button"
 msgstr "Botón d'imaxe"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Hidden Control"
 msgstr "Control anubríu"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Control (unknown type)"
 msgstr "Control (triba desconocida)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Image Control"
 msgstr "Control d'imaxe"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "File Selection"
 msgstr "Seleición de ficheru"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Date Field"
 msgstr "Campu de data"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Time Field"
 msgstr "Campu d'hora"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Campu numbéricu"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Campu de moneda"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Campu de patrón"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
+#, fuzzy
 msgid  "Table Control "
 msgstr "Control de tabla "
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+#, fuzzy
 msgid  "Default"
 msgstr "Predetermináu"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
 msgstr "Xeneral"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
 msgstr "Datos"
 
@@ -2490,6 +2699,7 @@ msgid  "Yes"
 msgstr "Sí"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Help"
 msgstr "Ayuda"
 
@@ -2509,14 +2719,17 @@ msgid  "These are control fields that can be used as label fields for the $contr
 msgstr "Estos campos de control puen usase como campos d'etiqueta pal $control_class$ $control_name$."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~No assignment"
 msgstr "~Ensin asignación"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Label Field Selection"
 msgstr "Seleición de campu d'etiqueta"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
+#, fuzzy
 msgid  "Forms"
 msgstr "Formularios"
 
@@ -2526,18 +2739,22 @@ msgid  "Tab Order"
 msgstr "Orde de les llingüetes"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Controls"
 msgstr "Controles"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Up"
 msgstr "Mover p'arriba"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Down"
 msgstr "Mover p'abaxo"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Automatic Sort"
 msgstr "Ordenación automática"
 
@@ -2547,22 +2764,27 @@ msgid  "Set"
 msgstr "Afitar"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Linear ascending"
 msgstr "Llinial ascendente"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Linear descending"
 msgstr "Llinial descendente"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
+#, fuzzy
 msgid  "Original values"
 msgstr "Valores orixinales"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
+#, fuzzy
 msgid  "Exponential increasing"
 msgstr "Exponencial aumentando"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "About\n Dev~ice"
 msgstr "Información sobre'l\n ~preséu"
 
@@ -2572,10 +2794,12 @@ msgid  "Create\nPreview"
 msgstr "Crear\nPrevisualización"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Preview"
 msgstr "Entever"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scan area"
 msgstr "Área a escanear"
 
@@ -2615,6 +2839,7 @@ msgid  "Show advanced options"
 msgstr "Amosar opciones avanzaes"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Options:"
 msgstr "Opciones:"
 
@@ -2629,6 +2854,7 @@ msgid  "Set"
 msgstr "Afitar"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
+#, fuzzy
 msgid  "Scanner"
 msgstr "Escáner"
 

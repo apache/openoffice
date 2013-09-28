@@ -763,6 +763,7 @@ msgid  "Open on page"
 msgstr "Abrir en páxina"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Magnification"
 msgstr "Ampliación"
 
@@ -792,6 +793,7 @@ msgid  "~Zoom factor"
 msgstr "~Factor de zoom"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Page layout"
 msgstr "Diseñu de páxina"
 
@@ -826,6 +828,7 @@ msgid  "User Interface"
 msgstr "Interfaz d'usuariu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Window options"
 msgstr "Opciones de ventana"
 
@@ -850,6 +853,7 @@ msgid  "~Display document title"
 msgstr "~Amosar títulu del documentu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User interface options"
 msgstr "Opciones del interfaz del usuariu"
 
@@ -869,6 +873,7 @@ msgid  "Hide ~window controls"
 msgstr "Tapecer controles de ~ventana"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Transitions"
 msgstr "Transiciones"
 
@@ -878,10 +883,12 @@ msgid  "~Use transition effects"
 msgstr "~Usar efeutos de transición"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Bookmarks"
 msgstr "Marcadores"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "All bookmark levels"
 msgstr "Tolos niveles de marcadores"
 
@@ -891,6 +898,7 @@ msgid  "Visible bookmark levels"
 msgstr "Niveles de marcadores visibles"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
+#, fuzzy
 msgid  "Security"
 msgstr "Seguridá"
 
@@ -960,10 +968,12 @@ msgid  "PDF document will not be restricted due to PDF/A export."
 msgstr "El documentu PDF nun va tener restricciones darréu de la esportación a PDF/A."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printing"
 msgstr "Imprentando"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Not permitted"
 msgstr "~Nun se permite"
 
@@ -973,6 +983,7 @@ msgid  "~Low resolution (150 dpi)"
 msgstr "~Baxa resolución (150 dpi)"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~High resolution"
 msgstr "~Alta resolución"
 
@@ -982,6 +993,7 @@ msgid  "Changes"
 msgstr "Cambeos"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No~t permitted"
 msgstr "Nun ta ~permitíu"
 
@@ -1011,6 +1023,7 @@ msgid  "Ena~ble copying of content"
 msgstr "~Habilitar copia de conteníu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Enable text access for acce~ssibility tools"
 msgstr "Habilitar accesu de testu pa erbíes d'acce~sibilidá"
 
@@ -1200,10 +1213,12 @@ msgid  "XML Filter output"
 msgstr "Salida peñera XML"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Validate"
 msgstr "~Validar"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
 msgstr "Nome"
 
@@ -1213,6 +1228,7 @@ msgid  "Type"
 msgstr "Triba"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Unknown"
 msgstr "Desconocíu"
 
@@ -1267,14 +1283,17 @@ msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "La plantía d'importación especificada nun s'atopa. Pon un camín válidu."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Not specified"
 msgstr "Nun s'especifica"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "New Filter"
 msgstr "Peñera nueva"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
 msgstr "Ensin títulu"
 
@@ -1329,10 +1348,12 @@ msgid  "~Edit..."
 msgstr "~Editar..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Test XSLTs..."
 msgstr "~Probar los XSLTs..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
 msgstr "~Desaniciar..."
 
@@ -1342,6 +1363,7 @@ msgid  "~Save as Package..."
 msgstr "~Grabar como paquete..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Open Package..."
 msgstr "~Abrir paquete..."
 
@@ -1366,6 +1388,7 @@ msgid  "General"
 msgstr "Xeneral"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Transformation"
 msgstr "Tresformación"
 
@@ -1375,14 +1398,17 @@ msgid  "General"
 msgstr "Xeneral"
 
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Filter name"
 msgstr "Nome de la peñera"
 
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Application"
 msgstr "Aplicación"
 
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name of\nfile type"
 msgstr "Nome de la\ntriba d'archivu"
 
@@ -1392,14 +1418,17 @@ msgid  "File extension"
 msgstr "Estensión del ficheru"
 
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comments"
 msgstr "Comentarios"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
+#, fuzzy
 msgid  "Transformation"
 msgstr "Tresformación"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DocType"
 msgstr "TribaDoc"
 
@@ -1413,6 +1442,7 @@ msgid  "Browse..."
 msgstr "Ñavegar..."
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT pa esportación"
 
@@ -1422,6 +1452,7 @@ msgid  "Browse..."
 msgstr "Ñavegar..."
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT pa importación"
 
@@ -1431,6 +1462,7 @@ msgid  "Browse..."
 msgstr "Ñavegar..."
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template for import"
 msgstr "Plantía pa importación"
 
@@ -1440,18 +1472,22 @@ msgid  "Browse..."
 msgstr "Ñavegar..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Test XML Filter: %s"
 msgstr "Prueba de la peñera XML: %s"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Export"
 msgstr "Esportar"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT pa esportación"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transform document"
 msgstr "Tresformar documentu"
 
@@ -1471,14 +1507,17 @@ msgid  "Import"
 msgstr "Importar"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT pa importación"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template for import"
 msgstr "Plantía pa importación"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transform file"
 msgstr "Tresformar ficheru"
 
@@ -1493,6 +1532,7 @@ msgid  "B~rowse..."
 msgstr "Gueta~r..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Recent File"
 msgstr "Ficheru ~reciente"
 
