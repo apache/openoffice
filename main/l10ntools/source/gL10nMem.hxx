@@ -136,7 +136,7 @@ class l10nMem_db
                          const std::string& sKey,
                          const std::string& sMsgId,
                          bool               bThrow);
-    void reorganize     ();
+    void reorganize     (bool               bConvert);
     void addKey         (int                  iLineNo,
                          const std::string&   sSourceFile,
                          const std::string&   sKey,

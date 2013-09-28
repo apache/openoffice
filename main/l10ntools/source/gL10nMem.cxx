@@ -247,7 +247,7 @@ void l10nMem_impl::saveTemplates(l10nMem& cMem, const std::string& sTargetDir, b
 
   // and reorganize db if needed
    mcDb.miCurFileInx = 0;
-   mcDb.reorganize();
+   mcDb.reorganize(false);
 
   // no save if there has been errors
   if(!needWrite(sFileName, bForce))
@@ -284,7 +284,7 @@ void l10nMem_impl::saveLanguages(l10nMem& cMem, const std::string& sTargetDir, b
 
   // and reorganize db if needed
    mcDb.miCurFileInx = 0;
-   mcDb.reorganize();
+   mcDb.reorganize(true);
 
   // no save if there has been errors
   if(!needWrite(sFileName, bForce))
@@ -341,7 +341,7 @@ void l10nMem_impl::showNOconvert ()
 void l10nMem_impl::dumpMem(const std::string& sFileName)
 {
   // and reorganize db if needed
-  mcDb.reorganize();
+  mcDb.reorganize(false);
 
   // no save if there has been errors
   if(!needWrite(sFileName, true))
@@ -384,7 +384,7 @@ bool l10nMem_impl::needWrite(const std::string sFileName, bool bForce)
     if (cur.meState == l10nMem::ENTRY_CHANGED)
     {
       ++iCntChanged;
-      if (mcDb.mbConvertMode)
+      if (mcDb.mbStrictMode)
         cur.meState = l10nMem::ENTRY_NORMAL;
     }
     if (cur.meState == l10nMem::ENTRY_DELETED)

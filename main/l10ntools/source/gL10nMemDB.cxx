@@ -264,7 +264,7 @@ void l10nMem_db::loadLangKey(int                iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_db::reorganize()
+void l10nMem_db::reorganize(bool bConvert)
 {
   int iE, iEsize  = mcENUSlist.size();
   int iD, iDsize;
@@ -278,7 +278,12 @@ void l10nMem_db::reorganize()
     if (cur.meState == l10nMem::ENTRY_ADDED)
       listAdd.push_back(iE);
     if (cur.meState == l10nMem::ENTRY_DELETED)
-      listDel.push_back(iE);
+    {
+      if (bConvert)
+        cur.meState = l10nMem::ENTRY_NORMAL;
+      else
+        listDel.push_back(iE);
+    }
   }
 
   if (!listDel.size() || !listAdd.size())
