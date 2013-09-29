@@ -64,6 +64,7 @@ import static testlib.gui.UIMap.standardFilterDlg;
 import static testlib.gui.UIMap.startCenterOpenButton;
 
 import java.util.HashMap;
+import java.util.logging.Level;
 
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -496,5 +497,6 @@ public class BasicFuncOnCalc {
 		HashMap<String, Object>  perf = aoo.getPerfData();
 		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
 				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
+		log.log( Level.INFO, "\t"+testname.getMethodName()+"["+i+"] took "+(end-start)+"ms");
 	}
 }

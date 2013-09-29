@@ -82,8 +82,6 @@ using namespace std;
 #include "editeng.hrc"
 #include <editeng/eerdll.hxx>
 #include <editeng/numitem.hxx>
-#include <sfx2/viewfrm.hxx>
-#include <sfx2/viewsh.hxx>
 //-----IAccessibility2 Implementation 2009
 
 using namespace ::com::sun::star;

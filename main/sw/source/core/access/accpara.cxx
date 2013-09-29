@@ -1699,7 +1699,7 @@ String SwAccessibleParagraph::GetFieldTypeNameAtIndex(sal_Int32 nIndex)
 	}
 	if (pTxtFld)
 	{
-		const SwField* pField = (pTxtFld->GetFld()).GetFld();
+		const SwField* pField = (pTxtFld->GetFmtFld()).GetField();
 		if (pField)
 		{
 			strTypeName = pField->GetTyp()->GetTypeStr(pField->GetTypeId());

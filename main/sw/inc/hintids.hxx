@@ -134,13 +134,13 @@ RES_TXTATR_WITHEND_END,
 
 // alle TextAttribute ohne ein Ende
 RES_TXTATR_NOEND_BEGIN = RES_TXTATR_WITHEND_END,
-	RES_TXTATR_FIELD = RES_TXTATR_NOEND_BEGIN,		// 53
-	RES_TXTATR_FLYCNT,								// 54
-	RES_TXTATR_FTN, 								// 55
+    RES_TXTATR_FIELD = RES_TXTATR_NOEND_BEGIN,      // 53
+    RES_TXTATR_FLYCNT,                              // 54
+    RES_TXTATR_FTN,                                 // 55
     RES_TXTATR_DUMMY4,                              // 56
     RES_TXTATR_DUMMY3,                              // 57
-	RES_TXTATR_DUMMY1,								// 58
-	RES_TXTATR_DUMMY2,								// 59
+    RES_TXTATR_DUMMY1,                              // 58
+    RES_TXTATR_DUMMY2,                              // 59
 RES_TXTATR_NOEND_END,
 RES_TXTATR_END = RES_TXTATR_NOEND_END
 };

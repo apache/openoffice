@@ -319,12 +319,17 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
                                 {
                                     SwTxtFld* pTxtFld =
                                         static_cast<SwTxtFld*>(pAttr);
-									rNds.GetDoc()->InsDelFldInFldLst( !bToUndo, *pTxtFld );
+                                    rNds.GetDoc()->InsDelFldInFldLst( !bToUndo, *pTxtFld );
 
-									const SwFieldType* pTyp = pTxtFld->GetFld().GetFld()->GetTyp();
-									if ( RES_POSTITFLD == pTyp->Which() )
-									{
-										rNds.GetDoc()->GetDocShell()->Broadcast( SwFmtFldHint( &pTxtFld->GetFld(), pTxtFld->GetFld().IsFldInDoc() ? SWFMTFLD_INSERTED : SWFMTFLD_REMOVED ) );
+                                    const SwFieldType* pTyp = pTxtFld->GetFmtFld().GetField()->GetTyp();
+                                    if ( RES_POSTITFLD == pTyp->Which() )
+                                    {
+                                        rNds.GetDoc()->GetDocShell()->Broadcast(
+                                            SwFmtFldHint(
+                                                &pTxtFld->GetFmtFld(),
+                                                ( pTxtFld->GetFmtFld().IsFldInDoc()
+                                                  ? SWFMTFLD_INSERTED
+                                                  : SWFMTFLD_REMOVED ) ) );
 									}
 									else
 									if( RES_DDEFLD == pTyp->Which() )
