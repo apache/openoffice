@@ -59,6 +59,9 @@ namespace XrmWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm::execute()
 {
+  if (mbMergeMode)
+    throw "Merge not implemented";
+
   XrmWrap::yylex();
 
   // write last part of file.

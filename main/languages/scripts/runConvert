@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+cd ${SOURCE_ROOT_DIR}/main/languages/gCon_test/aoo40
+LANG="ast bg ca cs da de el en-GB es eu fa fi fr gd gl he hi hu id it ja keyid km ko lt nb nl pl pt pt-BR ro ru sh sk sl sr sv ta th tr ug uk vi zh-CN zh-TW"
+for MODULE in `ls da`
+do 
+  echo
+  FILELIST=`cat ../module_lst/${MODULE}.lst`
+  ${SOLARVER}/unxlngx6.pro/bin/genLang convert ${MODULE} ${SOURCE_ROOT_DIR}/main/languages/source \"${LANG}\" -f ${FILELIST} -v 
+  done
+done
+

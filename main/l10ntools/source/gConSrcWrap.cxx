@@ -64,6 +64,9 @@ namespace SrcWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::execute()
 {
+  if (mbMergeMode)
+    throw "Merge not implemented";
+
   SrcWrap::yylex();
 }
 

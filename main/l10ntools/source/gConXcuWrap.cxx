@@ -63,6 +63,9 @@ namespace XcuWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu::execute()
 {
+  if (mbMergeMode)
+    throw "Merge not implemented";
+
   XcuWrap::yylex();
 }
 

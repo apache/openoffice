@@ -74,6 +74,9 @@ void convert_tree::execute()
   std::string sLang;
   std::string sFile, sFile2;
 
+  if (mbMergeMode)
+    throw "Merge not implemented";
+
   // prepare list with languages
   if (mbMergeMode)
   {
