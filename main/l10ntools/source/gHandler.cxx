@@ -154,6 +154,7 @@ void handler::checkCommandLine(int argc, char *argv[])
         case DO_MERGE:
              useSoption  = 0;
              useLangText = 1;
+             useToption  = 1;
              break;
 
         case DO_CONVERT:
@@ -172,9 +173,9 @@ void handler::checkCommandLine(int argc, char *argv[])
       if (msSourceDir.size() && useSoption == 1)
         throw "-s <source dir> is mandatory";
       if (msTargetDir.size() && useToption == -1)
-        throw "-s <target dir> is not valid";
-      if (msTargetDir.size() && useToption == 1)
-        throw "-s <target dir> is mandatory";
+        throw "-t <target dir> is not valid";
+      if (!msTargetDir.size() && useToption == 1)
+        throw "-t <target dir> is mandatory";
     }
 
     if (msTargetDir.size() && !convert_gen::checkAccess(msTargetDir))
@@ -252,7 +253,6 @@ void handler::run()
       case DO_EXTRACT:     runExtract(false); break;
       case DO_EXTRACT_KID: runExtract(true);  break;
       case DO_MERGE:       runMerge();        break;
-      case DO_MERGE_KID:   runMerge();        break;
       case DO_CONVERT:     runConvert(false); break;
       case DO_CONVERT_POT: runConvert(true);  break;
     }
