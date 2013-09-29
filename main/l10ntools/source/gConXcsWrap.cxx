@@ -63,7 +63,7 @@ namespace XcsWrap
 void convert_xcs::execute()
 {
   if (mbMergeMode)
-    throw "Merge not implemented";
+    throw l10nMem::showError("Merge not implemented");
 
   // currently no .xcs files generate en-US translation, so stop trying
   XcsWrap::yylex();

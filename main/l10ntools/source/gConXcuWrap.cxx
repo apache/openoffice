@@ -64,7 +64,7 @@ namespace XcuWrap
 void convert_xcu::execute()
 {
   if (mbMergeMode)
-    throw "Merge not implemented";
+    throw l10nMem::showError("Merge not implemented");
 
   XcuWrap::yylex();
 }

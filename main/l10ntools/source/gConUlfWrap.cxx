@@ -52,9 +52,6 @@ namespace UlfWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_ulf::execute()
 {
-  if (mbMergeMode)
-    throw "Merge not implemented";
-
   UlfWrap::yylex();
 }
 

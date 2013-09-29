@@ -161,7 +161,7 @@ void convert_po::handleNL()
 void convert_po::execute()
 {
   if (mbMergeMode)
-    throw "Merge not implemented";
+    throw l10nMem::showError("Merge not implemented");
 
   PoWrap::yylex();
   startLook();

@@ -104,8 +104,8 @@ void handler::checkCommandLine(int argc, char *argv[])
         // is it a known parameter
         if      (sArg == "-d") {l10nMem::setShowDebug();               }
         else if (sArg == "-f") {eGotArg   = ARG_F;                     }
-        else if (sArg == "-k") {if (meWorkMode == DO_MERGE)
-                                  meWorkMode = DO_MERGE_KID;
+        else if (sArg == "-k") {if (meWorkMode == DO_EXTRACT)
+                                  meWorkMode = DO_EXTRACT_KID;
                                else
                                   throw "-k is not valid";             }
         else if (sArg == "-o") {eGotArg   = ARG_O; mbForceSave = true; }      
@@ -148,10 +148,10 @@ void handler::checkCommandLine(int argc, char *argv[])
       switch (meWorkMode)
       {
         case DO_EXTRACT:
+        case DO_EXTRACT_KID:
              break;
 
         case DO_MERGE:
-        case DO_MERGE_KID:
              useSoption  = 0;
              useLangText = 1;
              break;
@@ -249,9 +249,10 @@ void handler::run()
     // use workMode to start correct control part
     switch (meWorkMode)
     {
-      case DO_EXTRACT:     runExtract();      break;
-      case DO_MERGE:       runMerge(false);   break;
-      case DO_MERGE_KID:   runMerge(true);    break;
+      case DO_EXTRACT:     runExtract(false); break;
+      case DO_EXTRACT_KID: runExtract(true);  break;
+      case DO_MERGE:       runMerge();        break;
+      case DO_MERGE_KID:   runMerge();        break;
       case DO_CONVERT:     runConvert(false); break;
       case DO_CONVERT_POT: runConvert(true);  break;
     }
@@ -265,8 +266,12 @@ void handler::run()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runExtract()
+void handler::runExtract(bool bKid)
 {
+  // just to satisfy compiler
+  if (bKid)
+    return;
+
   // no convert 
   mcMemory.setConvert(false, false);
 
@@ -288,12 +293,8 @@ void handler::runExtract()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runMerge(bool bKid)
+void handler::runMerge()
 {
-  // just to satisfy compiler
-  if (bKid)
-    return;
-
   // no convert 
   mcMemory.setConvert(false, false);
 
@@ -301,7 +302,7 @@ void handler::runMerge(bool bKid)
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
-    l10nMem::showDebug("genLang extracting text from file " + msSourceDir + *siSource);
+    l10nMem::showDebug("genLang merging translated text to file " + msSourceDir + *siSource);
 
     // get converter and extract file
     convert_gen convertObj(mcMemory, msSourceDir, msTargetDir, *siSource);

@@ -60,7 +60,7 @@ namespace XrmWrap
 void convert_xrm::execute()
 {
   if (mbMergeMode)
-    throw "Merge not implemented";
+    throw l10nMem::showError("Merge not implemented");
 
   XrmWrap::yylex();
 

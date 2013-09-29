@@ -65,7 +65,7 @@ namespace SrcWrap
 void convert_src::execute()
 {
   if (mbMergeMode)
-    throw "Merge not implemented";
+    throw l10nMem::showError("Merge not implemented");
 
   SrcWrap::yylex();
 }
