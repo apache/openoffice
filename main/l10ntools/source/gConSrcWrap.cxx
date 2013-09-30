@@ -64,9 +64,6 @@ namespace SrcWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::execute()
 {
-  if (mbMergeMode)
-    throw l10nMem::showError("Merge not implemented");
-
   SrcWrap::yylex();
 }
 
@@ -350,7 +347,8 @@ void convert_src::insertLanguagePart(std::string& sKey, std::string& sTextType)
   for (; mcMemory.getMergeLang(sLang, sText);)
   {
     // Prepare tag start and end
-    sTagText = sTextType + "[ " + sLang + " ] = \"" + sText + "\"\n";
+    sTagText = sTextType + "[ " + sLang + " ] = \"" + sText + "\" ;" + 
+               (mbExpectMacro ? "\\" : "") + "\n";
     writeSourceFile(sTagText);
   }
 }
