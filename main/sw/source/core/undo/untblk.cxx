@@ -219,46 +219,44 @@ void SwUndoInserts::UndoImpl(::sw::UndoRedoContext & rContext)
 		nNdDiff += nTmp - pPam->GetPoint()->nNode.GetIndex();
 	}
 
-	SwNodeIndex& rIdx = pPam->GetPoint()->nNode;
-	SwTxtNode* pTxtNode = rIdx.GetNode().GetTxtNode();
-	if( pTxtNode )
-	{
-		if( !pTxtFmtColl )		// falls 0, dann war hier auch kein TextNode,
-		{                       // dann muss dieser geloescht werden,
-			SwNodeIndex aDelIdx( rIdx );
-			rIdx++;
-			SwCntntNode* pCNd = rIdx.GetNode().GetCntntNode();
-			xub_StrLen nCnt = 0; if( pCNd ) nCnt = pCNd->Len();
-			pPam->GetPoint()->nContent.Assign( pCNd, nCnt );
-			pPam->SetMark();
-			pPam->DeleteMark();
+    SwNodeIndex& rIdx = pPam->GetPoint()->nNode;
+    SwTxtNode* pTxtNode = rIdx.GetNode().GetTxtNode();
+    if( pTxtNode )
+    {
+        if( !pTxtFmtColl )      // falls 0, dann war hier auch kein TextNode,
+        {                       // dann muss dieser geloescht werden,
+            SwNodeIndex aDelIdx( rIdx );
+            rIdx++;
+            SwCntntNode* pCNd = rIdx.GetNode().GetCntntNode();
+            xub_StrLen nCnt = 0; if( pCNd ) nCnt = pCNd->Len();
+            pPam->GetPoint()->nContent.Assign( pCNd, nCnt );
+            pPam->SetMark();
+            pPam->DeleteMark();
 
-			RemoveIdxRel( aDelIdx.GetIndex(), *pPam->GetPoint() );
+            RemoveIdxRel( aDelIdx.GetIndex(), *pPam->GetPoint() );
 
-			pDoc->GetNodes().Delete( aDelIdx, 1 );
-		}
-		else
-		{
-			if( bJoinNext && pTxtNode->CanJoinNext())
-			{
-				{
-					RemoveIdxRel( rIdx.GetIndex()+1, SwPosition( rIdx,
-							SwIndex( pTxtNode, pTxtNode->GetTxt().Len() )));
-				}
-				pTxtNode->JoinNext();
-			}
+            pDoc->GetNodes().Delete( aDelIdx, 1 );
+        }
+        else
+        {
+            if( bJoinNext && pTxtNode->CanJoinNext())
+            {
+                {
+                    RemoveIdxRel( rIdx.GetIndex()+1, SwPosition( rIdx,
+                        SwIndex( pTxtNode, pTxtNode->GetTxt().Len() )));
+                }
+                pTxtNode->JoinNext();
+            }
             // reset all text attributes in the paragraph!
-	//i121897, change the hints clearing method from 'RstAttr' to 'ClarSwpHints' as the certain tox mark index hint reason
-            if( pTxtNode && pTxtNode->GetpSwpHints() )
-                pTxtNode->ClearSwpHintsArr( true );
+            pTxtNode->RstAttr( SwIndex(pTxtNode, 0), pTxtNode->Len(), 0, 0, true );
 
-			// setze alle Attribute im Node zurueck
+            // setze alle Attribute im Node zurueck
             pTxtNode->ResetAllAttr();
 
-			if( USHRT_MAX != pDoc->GetTxtFmtColls()->GetPos( pTxtFmtColl ))
-				pTxtFmtColl = (SwTxtFmtColl*)pTxtNode->ChgFmtColl( pTxtFmtColl );
+            if( USHRT_MAX != pDoc->GetTxtFmtColls()->GetPos( pTxtFmtColl ))
+                pTxtFmtColl = (SwTxtFmtColl*)pTxtNode->ChgFmtColl( pTxtFmtColl );
 
-			pHistory->SetTmpEnd( nSetPos );
+            pHistory->SetTmpEnd( nSetPos );
             pHistory->TmpRollback( pDoc, 0, false );
         }
     }
