@@ -59,9 +59,6 @@ namespace XrmWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm::execute()
 {
-  if (mbMergeMode)
-    throw l10nMem::showError("Merge not implemented");
-
   XrmWrap::yylex();
 
   // write last part of file.
@@ -149,10 +146,7 @@ void convert_xrm::stopCollectData(char *yytext)
   copySource(yytext);
   if (!mbNoCollectingData)
   {
-    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
     mbNoCollectingData = true;
-  
-
     if (mbMergeMode)
     {
       sTagEnd  = "</" + msTag.substr(1,msTag.size()-2) + ">\n";
@@ -171,6 +165,8 @@ void convert_xrm::stopCollectData(char *yytext)
         writeSourceFile(sTagText);
       }
     }
+    else
+      mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
     msKey.clear();
   }
   mbIsTag = false;
