@@ -274,7 +274,7 @@ void convert_xhp::closeTransTag(char *yytext)
   if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
   {
     if (msCollector.size() && msCollector != "-")
-      mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, msCollector);
+      mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, msCollector, mbMergeMode);
     msKey.clear();
     iType = 2;
   }

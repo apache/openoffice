@@ -81,7 +81,8 @@ class l10nMem
     void setSourceKey  (int                iLineNo,
                         const std::string& sFilename,
                         const std::string& sKey,
-                        const std::string& sText);
+                        const std::string& sText,
+                        bool               bMustExist);
 
     void saveTemplates (const std::string& sTargetDir,
                         bool               bKid,

@@ -212,7 +212,7 @@ void convert_src::setNL(char *syyText, bool bMacro)
     sKey += "." + msCmd + "." + msTextName;
     if (msValue.size() && msValue != "-")
     {
-      mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, msValue);
+      mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, msValue, mbMergeMode);
       if (mbMergeMode)
         insertLanguagePart(sKey, msTextName);
     }

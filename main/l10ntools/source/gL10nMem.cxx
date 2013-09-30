@@ -93,8 +93,8 @@ void l10nMem::setConvert(bool bC, bool bS)
      { l10nMem_impl::mcImpl->mcDb.setConvert(bC, bS); }
 void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
-void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
-     { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
+void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT, bool bM)
+     { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT, bM); }
 void l10nMem::saveTemplates(const std::string& sT, bool bK, bool bF)
      { l10nMem_impl::mcImpl->saveTemplates(*this, sT, bK, bF); }
 void l10nMem::saveLanguages(const std::string& sT, bool bF)
@@ -194,11 +194,11 @@ void l10nMem_impl::loadEntryKey(int                iLineNo,
 void l10nMem_impl::setSourceKey(int                iLineNo,
                                 const std::string& sSourceFile,
                                 const std::string& sKey,
-                                const std::string& sMsgId)
+                                const std::string& sMsgId,
+                                bool               bMustExist)
 {
   std::string newText(sMsgId);
   int         i;
-
 
   // time to escape " and \ if contained in text or key
   for (i = 0; (i = newText.find("\\", i)) != (int)std::string::npos;)
@@ -228,8 +228,11 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
   }
   else
   {
-    // add key, if changed text, this is wrong but handled in reorganize
-    mcDb.addKey(iLineNo, sSourceFile, sKey, newText, l10nMem::ENTRY_ADDED);
+    if (bMustExist)
+      throw l10nMem::showError("key " + sKey + " does not exist");
+    else
+      // add key, if changed text, this is wrong but handled in reorganize
+      mcDb.addKey(iLineNo, sSourceFile, sKey, newText, l10nMem::ENTRY_ADDED);
   }
 }
 

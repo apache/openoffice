@@ -130,7 +130,7 @@ void convert_tree::setString(char *yytext)
     case STATE_VAL_TITLE:
          std::string sText = copySourceSpecial(yytext, 1);
          sText.erase(sText.size()-1);
-         mcMemory.setSourceKey(miLineNo, msSourceFile, msId, sText);
+         mcMemory.setSourceKey(miLineNo, msSourceFile, msId, sText, mbMergeMode);
          break;
   }
   meStateVal = STATE_VAL_NONE;
@@ -152,7 +152,7 @@ void convert_tree::setState(char *yytext, STATE_TAG eNewStateTag, STATE_VAL eNew
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_tree::setValue(char *yytext)
 {
-  mcMemory.setSourceKey(miLineNo, msSourceFile, msId, msCollector);
+  mcMemory.setSourceKey(miLineNo, msSourceFile, msId, msCollector, mbMergeMode);
   copySourceSpecial(yytext, 2);
 
   meStateTag = STATE_TAG_NONE;

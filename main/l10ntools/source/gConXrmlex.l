@@ -75,7 +75,7 @@ SP    [ \t]*
 }
 
 
-
+"<title "    |
 "<h"[0-9]" " |
 "<p "        {
   LOCptr->setTag(yytext);
@@ -83,6 +83,7 @@ SP    [ \t]*
 
 
 
+"</title>"[ \t\r]*[\n]    |
 "</h"[0-9]">"[ \t\r]*[\n] |
 "</p>"[ \t\r]*[\n]        {
   LOCptr->stopCollectData(yytext);

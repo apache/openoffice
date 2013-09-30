@@ -146,6 +146,7 @@ void convert_xrm::stopCollectData(char *yytext)
   copySource(yytext);
   if (!mbNoCollectingData)
   {
+    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText, mbMergeMode);
     mbNoCollectingData = true;
     if (mbMergeMode)
     {
@@ -165,8 +166,6 @@ void convert_xrm::stopCollectData(char *yytext)
         writeSourceFile(sTagText);
       }
     }
-    else
-      mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
     msKey.clear();
   }
   mbIsTag = false;

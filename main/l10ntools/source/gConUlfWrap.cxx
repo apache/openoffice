@@ -90,6 +90,8 @@ void convert_ulf::setValue(char *syyText)
   nL = sText.rfind("\"");
   sText.erase(nL);
 
+  mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText, mbMergeMode);
+
   if (mbMergeMode)
   {
     // prepare to read all languages
@@ -97,11 +99,8 @@ void convert_ulf::setValue(char *syyText)
     for (; mcMemory.getMergeLang(sLang, sText);)
     {
       // Prepare tag
-      sText = "\"\n" + sLang + " = \"" + sText;
+      sText = "\n" + sLang + " = \"" + sText + "\"";
       writeSourceFile(sText);
     }
   }
-  else
-    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
-
 }

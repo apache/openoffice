@@ -63,9 +63,6 @@ namespace XcuWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu::execute()
 {
-  if (mbMergeMode)
-    throw l10nMem::showError("Merge not implemented");
-
   XcuWrap::yylex();
 }
 
@@ -163,7 +160,7 @@ void convert_xcu::stopCollectData(char *syyText)
     // locate key and extract it
     for (nL = 0; nL < (int)mcStack.size(); ++nL)
       useKey += (useKey.size() ? "." : "" ) + mcStack[nL];
-    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
+    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText, mbMergeMode);
   }
 
   if (mbMergeMode)

@@ -157,6 +157,6 @@ void convert_xcs::stopCollectData(char *syyText)
 #endif
   }
 
-  mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, sText);
+  mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, sText, mbMergeMode);
   mbCollectingData = false;
 }  
