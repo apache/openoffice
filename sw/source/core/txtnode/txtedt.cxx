@@ -394,26 +394,25 @@ inline sal_Bool InRange(xub_StrLen nIdx, xub_StrLen nStart, xub_StrLen nEnd) {
  *    -> nothing to do
  */
 
-void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
-						const SfxItemSet* pSet, sal_Bool bInclRefToxMark )
+void SwTxtNode::RstAttr(
+    const SwIndex &rIdx,
+    const xub_StrLen nLen,
+    const sal_uInt16 nWhich,
+    const SfxItemSet* pSet,
+    const sal_Bool bInclRefToxMark )
 {
-	// Attribute?
-	if ( !GetpSwpHints() )
-		return;
+    if ( !GetpSwpHints() )
+        return;
 
-	sal_uInt16 i = 0;
-    xub_StrLen nStt = rIdx.GetIndex();
-    xub_StrLen nEnd = nStt + nLen;
-	xub_StrLen nAttrStart;
-	SwTxtAttr *pHt;
+    const xub_StrLen nStt = rIdx.GetIndex();
+    const xub_StrLen nEnd = nStt + nLen;
 
-	sal_Bool	bChanged = sal_False;
+    bool bChanged = false;
 
     // nMin and nMax initialized to maximum / minimum (inverse)
     xub_StrLen nMin = m_Text.Len();
     xub_StrLen nMax = nStt;
-
-	const sal_Bool bNoLen = !nMin;
+    const bool bNoLen = nMin == 0;
 
     // We have to remember the "new" attributes, which have
     // been introduced by splitting surrounding attributes (case 4).
@@ -422,18 +421,30 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
 
     // iterate over attribute array until start of attribute is behind
     // deletion range
+    sal_uInt16 i = 0;
+    xub_StrLen nAttrStart;
+    SwTxtAttr *pHt = NULL;
     while ((i < m_pSwpHints->Count()) &&
         ((( nAttrStart = *(*m_pSwpHints)[i]->GetStart()) < nEnd ) || nLen==0) )
     {
         pHt = m_pSwpHints->GetTextHint(i);
 
         // attributes without end stay in!
-        xub_StrLen * const pAttrEnd = pHt->GetEnd();
-        if ( !pAttrEnd /*|| pHt->HasDummyChar()*/ ) // see bInclRefToxMark
+        // but consider <bInclRefToxMark> used by Undo
+        xub_StrLen* const pAttrEnd = pHt->GetEnd();
+        const bool bKeepAttrWithoutEnd =
+            pAttrEnd == NULL
+            && ( !bInclRefToxMark
+                 || ( RES_TXTATR_REFMARK != pHt->Which()
+                      && RES_TXTATR_TOXMARK != pHt->Which()
+                      && RES_TXTATR_META != pHt->Which()
+                      && RES_TXTATR_METAFIELD != pHt->Which() ) );
+        if ( bKeepAttrWithoutEnd )
         {
-			i++;
-			continue;
-		}
+
+            i++;
+            continue;
+        }
 
         // Default behavior is to process all attributes:
         bool bSkipAttr = false;;
@@ -473,28 +484,29 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
 
         if ( bSkipAttr )
         {
-			i++;
-			continue;
-		}
+            i++;
+            continue;
+        }
 
 
         if( nStt <= nAttrStart )          // Faelle: 1,3,5
-		{
-			if( nEnd > nAttrStart
-				|| ( nEnd == *pAttrEnd && nEnd==nAttrStart ) )
-			{
-				// Faelle: 1,3
-				if ( nMin > nAttrStart )
-					nMin = nAttrStart;
-				if ( nMax < *pAttrEnd )
-					nMax = *pAttrEnd;
-				// Falls wir nur ein nichtaufgespanntes Attribut entfernen,
-				// tun wir mal so, als ob sich nichts geaendert hat.
-				bChanged = bChanged || nEnd > nAttrStart || bNoLen;
-				if( *pAttrEnd <= nEnd )		// Fall: 1
-				{
-                    const xub_StrLen nAttrEnd = *pAttrEnd;
-
+        {
+            const xub_StrLen nAttrEnd = pAttrEnd != NULL
+                                        ? *pAttrEnd
+                                        : nAttrStart;
+            if( nEnd > nAttrStart
+                || ( nEnd == nAttrEnd && nEnd == nAttrStart ) )
+            {
+                // Faelle: 1,3
+                if ( nMin > nAttrStart )
+                    nMin = nAttrStart;
+                if ( nMax < nAttrEnd )
+                    nMax = nAttrEnd;
+                // Falls wir nur ein nichtaufgespanntes Attribut entfernen,
+                // tun wir mal so, als ob sich nichts geaendert hat.
+                bChanged = bChanged || nEnd > nAttrStart || bNoLen;
+                if( nAttrEnd <= nEnd ) // Fall: 1
+                {
                     m_pSwpHints->DeleteAtPos(i);
                     DestroyAttr( pHt );
 
@@ -505,22 +517,21 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
                         InsertHint( pNew, nsSetAttrMode::SETATTR_NOHINTADJUST );
                     }
 
-                    // if the last attribute is a Field, the HintsArray is
-                    // deleted!
+                    // if the last attribute is a Field, the HintsArray is deleted!
                     if ( !m_pSwpHints )
                         break;
 
-					//JP 26.11.96:
-					// beim DeleteAtPos wird ein Resort ausgefuehrt!!
-					// darum muessen wir wieder bei 0 anfangen!!!
-					// ueber den Fall 3 koennen Attribute nach hinten
-					// verschoben worden sein; damit stimmt jetzt das i
-					// nicht mehr!!!
-					i = 0;
+                    //JP 26.11.96:
+                    // beim DeleteAtPos wird ein Resort ausgefuehrt!!
+                    // darum muessen wir wieder bei 0 anfangen!!!
+                    // ueber den Fall 3 koennen Attribute nach hinten
+                    // verschoben worden sein; damit stimmt jetzt das i
+                    // nicht mehr!!!
+                    i = 0;
 
-					continue;
-				}
-				else						// Fall: 3
+                    continue;
+                }
+                else // Fall: 3
                 {
                     m_pSwpHints->NoteInHistory( pHt );
                     *pHt->GetStart() = nEnd;
@@ -533,20 +544,21 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
                         InsertHint( pNew, nsSetAttrMode::SETATTR_NOHINTADJUST );
                     }
 
-					bChanged = sal_True;
-				}
-			}
-		}
-		else								// Faelle: 2,4,5
+                    bChanged = true;
+                }
+            }
+        }
+        else if ( pAttrEnd != NULL )    // Faelle: 2,4,5
+        {
             if( *pAttrEnd > nStt )     // Faelle: 2,4
-			{
-				if( *pAttrEnd < nEnd )		// Fall: 2
-				{
-					if ( nMin > nAttrStart )
-						nMin = nAttrStart;
-					if ( nMax < *pAttrEnd )
-						nMax = *pAttrEnd;
-					bChanged = sal_True;
+            {
+                if( *pAttrEnd < nEnd )  // Fall: 2
+                {
+                    if ( nMin > nAttrStart )
+                        nMin = nAttrStart;
+                    if ( nMax < *pAttrEnd )
+                        nMax = *pAttrEnd;
+                    bChanged = true;
 
                     const xub_StrLen nAttrEnd = *pAttrEnd;
 
@@ -557,19 +569,20 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
                     if ( pStyleHandle.get() )
                     {
                         SwTxtAttr* pNew = MakeTxtAttr( *GetDoc(),
-                                *pStyleHandle, nStt, nAttrEnd );
+                            *pStyleHandle, nStt, nAttrEnd );
                         InsertHint( pNew, nsSetAttrMode::SETATTR_NOHINTADJUST );
                     }
-				}
-				else if( nLen )				// Fall: 4
-				{		// bei Lange 0 werden beide Hints vom Insert(Ht)
-						// wieder zu einem zusammengezogen !!!!
-					if ( nMin > nAttrStart )
-						nMin = nAttrStart;
-					if ( nMax < *pAttrEnd )
-						nMax = *pAttrEnd;
-					bChanged = sal_True;
-					xub_StrLen nTmpEnd = *pAttrEnd;
+                }
+                else if( nLen ) // Fall: 4
+                {
+                    // bei Lange 0 werden beide Hints vom Insert(Ht)
+                    // wieder zu einem zusammengezogen !!!!
+                    if ( nMin > nAttrStart )
+                        nMin = nAttrStart;
+                    if ( nMax < *pAttrEnd )
+                        nMax = *pAttrEnd;
+                    bChanged = true;
+                    xub_StrLen nTmpEnd = *pAttrEnd;
                     m_pSwpHints->NoteInHistory( pHt );
                     *pAttrEnd = nStt;
                     m_pSwpHints->NoteInHistory( pHt, sal_True );
@@ -577,14 +590,14 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
                     if ( pStyleHandle.get() && nStt < nEnd )
                     {
                         SwTxtAttr* pNew = MakeTxtAttr( *GetDoc(),
-                                *pStyleHandle, nStt, nEnd );
+                            *pStyleHandle, nStt, nEnd );
                         InsertHint( pNew, nsSetAttrMode::SETATTR_NOHINTADJUST );
                     }
 
                     if( nEnd < nTmpEnd )
                     {
                         SwTxtAttr* pNew = MakeTxtAttr( *GetDoc(),
-                                pHt->GetAttr(), nEnd, nTmpEnd );
+                            pHt->GetAttr(), nEnd, nTmpEnd );
                         if ( pNew )
                         {
                             SwTxtCharFmt* pCharFmt = dynamic_cast<SwTxtCharFmt*>(pHt);
@@ -597,13 +610,14 @@ void SwTxtNode::RstAttr(const SwIndex &rIdx, xub_StrLen nLen, sal_uInt16 nWhich,
 
 
                         // jetzt kein i+1, weil das eingefuegte Attribut
-						// ein anderes auf die Position geschoben hat !
-						continue;
-					}
-				}
-			}
-		++i;
-	}
+                        // ein anderes auf die Position geschoben hat !
+                        continue;
+                    }
+                }
+            }
+            ++i;
+        }
+    }
 
     TryDeleteSwpHints();
     if (bChanged)
