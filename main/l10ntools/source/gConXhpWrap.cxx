@@ -74,9 +74,6 @@ void convert_xhp::execute()
   std::string sLang;
   std::string sFile, sFile2;
 
-  if (mbMergeMode)
-    throw l10nMem::showError("Merge not implemented");
-
   // prepare list with languages
   miCntLanguages = mcMemory.prepareMerge();
   if (mbMergeMode)
