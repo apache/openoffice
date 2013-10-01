@@ -698,11 +698,14 @@ static const char *newStr[]       = {"&amp;", "&apos;", "&gt;", "&lt;", "&quot;"
 static const int   newLen[]       = {5,       6,        4,      4,      6,        0    };
   int i, pos;
 
-  for (i = pos = 0; replacingStr[i]; i++)
+  for (i = 0; replacingStr[i]; i++)
+  {
+    pos = 0;
     while((pos = sText.find(replacingStr[i], pos)) != std::string::npos) {
          sText.replace(pos, replacingLen[i], newStr[i]);
          pos += newLen[i];
     }
+  }
 }
 
 
@@ -716,9 +719,12 @@ static const char *newStr[]       = {"&",     "\'",     ">",     "<",   "\"",   
 static const int   newLen[]       = {1,       1,        1,      1,      1,        0    };
   int i, pos;
 
-  for (i = pos = 0; replacingStr[i]; i++)
+  for (i = 0; replacingStr[i]; i++)
+  {
+    pos = 0;
     while((pos = sText.find(replacingStr[i], pos)) != std::string::npos) {
          sText.replace(pos, replacingLen[i], newStr[i]);
          pos += newLen[i];
     }
+  }
 }
