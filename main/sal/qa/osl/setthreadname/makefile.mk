@@ -22,7 +22,9 @@
 
 
 .IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-.INCLUDE: target.mk
+genPO:
+
+nothing .PHONY:
 .ELSE
 
 PRJ = ..$/..$/..
