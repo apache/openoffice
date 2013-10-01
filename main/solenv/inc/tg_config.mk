@@ -133,7 +133,9 @@ $(XCU_LANG) : $(LOCALIZESDF)
 
 $(PROCESSOUT)/merge/$(PACKAGEDIR)/%.xcu : %.xcu
 	@-$(MKDIRHIER) $(@:d)
-	$(COMMAND_ECHO)$(CFGEX)  -p $(PRJNAME) -i $(@:f) -o $@ -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(PROCESSOUT)/merge/$(PACKAGEDIR) -v -d -f $<
+
+
 
 .IF "$(XCU_LANG)" != ""
 $(XCU_LANG) : $(XSLDIR)/alllang.xsl

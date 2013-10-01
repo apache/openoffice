@@ -321,14 +321,7 @@ void convert_xhp::handleSpecial(char *yytext)
   if (meExpectValue != VALUE_IS_VALUE || meExpectValue != VALUE_IS_VALUE_TAG)
   {
     msCollector.erase(nX);
-    if      (sText == "&amp;")
-      msCollector += "&";
-    else if (sText == "&lt;")
-      msCollector += "<";
-    else if (sText == "&gt;")
-      msCollector += ">";
-    else if (sText == "&quot;")
-      msCollector += "\"";
+    mcMemory.convertFromInetString(sText);
   }
 }
 

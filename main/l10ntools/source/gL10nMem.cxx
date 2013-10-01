@@ -101,6 +101,10 @@ void l10nMem::saveLanguages(const std::string& sT, bool bF)
      { l10nMem_impl::mcImpl->saveLanguages(*this, sT, bF); }
 void l10nMem::showNOconvert ()
      { l10nMem_impl::mcImpl->showNOconvert(); }
+void l10nMem::convertToInetString(std::string& sT)
+     { l10nMem_impl::mcImpl->convertToInetString(sT); }
+void l10nMem::convertFromInetString(std::string& sT)
+     { l10nMem_impl::mcImpl->convertFromInetString(sT); }
 
 int  l10nMem::prepareMerge()
      { return l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
@@ -681,4 +685,40 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     curE.meState  = l10nMem::ENTRY_CHANGED;
     mcDb.mcLangList[mcDb.miCurLangInx].mbChanged = true;
   }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::convertToInetString(std::string& sText)
+{
+static const char *replacingStr[] = {"&",     "\'",     ">",     "<",   "\"",     NULL };
+static const int   replacingLen[] = {1,       1,        1,      1,      1,        0    };
+static const char *newStr[]       = {"&amp;", "&apos;", "&gt;", "&lt;", "&quot;", NULL };
+static const int   newLen[]       = {5,       6,        4,      4,      6,        0    };
+  int i, pos;
+
+  for (i = pos = 0; replacingStr[i]; i++)
+    while((pos = sText.find(replacingStr[i], pos)) != std::string::npos) {
+         sText.replace(pos, replacingLen[i], newStr[i]);
+         pos += newLen[i];
+    }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::convertFromInetString(std::string& sText)
+{
+static const char *replacingStr[] = {"&amp;", "&apos;", "&gt;", "&lt;", "&quot;", NULL };
+static const int   replacingLen[] = {5,       6,        4,      4,      6,        0    };
+static const char *newStr[]       = {"&",     "\'",     ">",     "<",   "\"",     NULL };
+static const int   newLen[]       = {1,       1,        1,      1,      1,        0    };
+  int i, pos;
+
+  for (i = pos = 0; replacingStr[i]; i++)
+    while((pos = sText.find(replacingStr[i], pos)) != std::string::npos) {
+         sText.replace(pos, replacingLen[i], newStr[i]);
+         pos += newLen[i];
+    }
 }

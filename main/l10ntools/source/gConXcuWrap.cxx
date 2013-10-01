@@ -173,6 +173,7 @@ void convert_xcu::stopCollectData(char *syyText)
     for (; mcMemory.getMergeLang(sLang, sText);)
     {
       sNewLine = "\n<value xml:lang=\"" + sLang + "\">" + sText + "</value>";
+      mcMemory.convertToInetString(sNewLine);
       writeSourceFile(sNewLine);
     }
   }
@@ -183,22 +184,14 @@ void convert_xcu::stopCollectData(char *syyText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu::copySpecial(char *syyText)
 {
-  int         nX    = msCollector.size();
+  int         nx    = msCollector.size();
   std::string sText = copySource(syyText, mbNoCollectingData);
 
   if (!mbNoCollectingData)
   {
-    msCollector.erase(nX);
-    if (sText == "&amp;")
-      msCollector += "&";
-    else if (sText == "&apos;")
-      msCollector += "\'";
-    else if (sText == "&gt;")
-      msCollector += ">";
-    else if (sText == "&lt;")
-      msCollector += "<";
-    else if (sText == "&quot;")
-      msCollector += "\"";
+    msCollector.erase(nx);
+    mcMemory.convertFromInetString(sText);
+    msCollector += sText;
   }
 }  
 

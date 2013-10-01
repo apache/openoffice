@@ -95,6 +95,9 @@ class l10nMem
     bool getMergeLang  (std::string& sLang,
                         std::string& sText);
     void showNOconvert ();
+
+    void convertToInetString(std::string& sText);
+    void convertFromInetString(std::string& sText);
 };
 
 

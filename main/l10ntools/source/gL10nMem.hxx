@@ -189,6 +189,9 @@ class l10nMem_impl
     void dumpMem      (const std::string& sTargetDir);
     void showNOconvert();
 
+    void convertToInetString(std::string& sText);
+    void convertFromInetString(std::string& sText);
+
   private:
     static bool                         mbVerbose;
     static bool                         mbDebug;

@@ -226,13 +226,14 @@ bool l10nMem_db::findFileName(const std::string& sSourceFile)
   int iSize = mcFileList.size();
 
   // Check this or next file
-  if (mcFileList[miCurFileInx].msFileName == sSourceFile)
+  if (mcFileList[miCurFileInx].msFileName == sSourceFile || mcFileList[miCurFileInx].msPureName == sSourceFile)
     return true;
   if (++miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName == sSourceFile)
     return true;
 
   for (miCurFileInx = 1;
-       miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName != sSourceFile;
+       miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName != sSourceFile &&
+       mcFileList[miCurFileInx].msPureName != sSourceFile;
        ++miCurFileInx) ;
   if (miCurFileInx == iSize)
   {
@@ -335,14 +336,6 @@ bool l10nMem_db::locateKey(int                iLineNo,
   if (!findFileName(sSourceFile))
     return false;
 
-  // Fast check, to see if next key is the one (normal with load and source without change)
-  if (++miCurENUSinx < (int)mcENUSlist.size())
-  {
-    l10nMem_enus_entry& nowEntry = mcENUSlist[miCurENUSinx];
-    if (nowEntry.msMsgId == sMsgId && nowEntry.msKey == sKey)
-      return true;
-  }
-
   // convert key to upper case
   for (i = 0; i < iSize; ++i)
   {
@@ -351,6 +344,14 @@ bool l10nMem_db::locateKey(int                iLineNo,
       sUpperKey[i] = '_';
     else
       sUpperKey[i] = toupper(sUpperKey[i]);
+  }
+
+  // Fast check, to see if next key is the one (normal with load and source without change)
+  if (++miCurENUSinx < (int)mcENUSlist.size())
+  {
+    l10nMem_enus_entry& nowEntry = mcENUSlist[miCurENUSinx];
+    if (nowEntry.msMsgId == sMsgId && nowEntry.msKey == sUpperKey)
+      return true;
   }
 
   // Start from beginning of file and to end
