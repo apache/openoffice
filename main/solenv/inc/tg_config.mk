@@ -133,7 +133,7 @@ $(XCU_LANG) : $(LOCALIZESDF)
 
 $(PROCESSOUT)/merge/$(PACKAGEDIR)/%.xcu : %.xcu
 	@-$(MKDIRHIER) $(@:d)
-        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(PROCESSOUT)/merge/$(PACKAGEDIR) -v -d -f $<
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(PROCESSOUT)/merge/$(PACKAGEDIR) -v -f $<
 
 
 

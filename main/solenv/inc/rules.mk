@@ -704,28 +704,6 @@ $(COMMONMISC)/$(TARGET)/%.xrb : %.xrb
 	$(COMMAND_ECHO)$(XMLEX) -t xrb -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
-
-$(COMMONMISC)/$(MYPATH)/%.xrm : %.xrm
-    $(COMMAND_ECHO)-$(MKDIRHIER) $(@:d)
-    $(COMMAND_ECHO)-$(RM) $@
-	@echo trysdf = $(TRYSDF)
-	$(COMMAND_ECHO)$(XRMEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-    $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
-    $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
-
-#$(COMMONMISC)/$(TARGET)/%.xrm : %.xrm
-#    -$(MKDIRHIER) $(@:d)
-#    -$(RM) $@
-#	$(XRMEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-#    $(RENAME) $@.$(INPATH) $@
-#    -$(RM) $@.$(INPATH)
-#
-#$(COMMONMISC)/%.xrm : %.xrm
-#    -$(MKDIR) $(@:d)
-#    -$(RM) $@
-#	$(XRMEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-#    $(RENAME) $@.$(INPATH) $@
-#    -$(RM) $@.$(INPATH)
 .ENDIF			# "$(WITH_LANG)"!=""
 
 .IF "$(WITH_LANG)"!=""
@@ -763,11 +741,18 @@ $(COMMONMISC)/$(TARGET)/%.uulf : $$(@:b).ulf
 
 # This is still needed?????
 $(COMMONMISC)/$(TARGET)/%.xrm : %.xrm
+    @echo jan start
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
-	$(COMMAND_ECHO)$(XRMEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-    $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
-    $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(@:d) -v -d -f $<
+#	$(COMMAND_ECHO)$(XRMEX) -p $(PRJNAME) -i $(@:d) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+#    $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
+#    $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
+
+
+
+
+
 
 # dirty hack
 # if local *.sdf file is missing
