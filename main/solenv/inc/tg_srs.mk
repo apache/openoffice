@@ -35,12 +35,13 @@ $(MISC)/$(TARGET).$(SRS$(TNR)NAME).dprr: $(SRC$(TNR)FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC$(TNR)FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC$(TNR)FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 

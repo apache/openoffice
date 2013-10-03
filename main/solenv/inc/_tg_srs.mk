@@ -31,14 +31,13 @@ $(MISC)/$(TARGET).$(SRS1NAME).dprr: $(SRC1FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRS Localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-    $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
-    $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
 
 $(SRS)/$(SRS1NAME).srs: $(LOCALIZE_ME_DEST)
 
@@ -72,12 +71,13 @@ $(MISC)/$(TARGET).$(SRS2NAME).dprr: $(SRC2FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC LOCALIZE2)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -113,12 +113,13 @@ $(MISC)/$(TARGET).$(SRS3NAME).dprr: $(SRC3FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC3 Localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -154,12 +155,13 @@ $(MISC)/$(TARGET).$(SRS4NAME).dprr: $(SRC4FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC4 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -195,12 +197,13 @@ $(MISC)/$(TARGET).$(SRS5NAME).dprr: $(SRC5FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC5 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -236,12 +239,13 @@ $(MISC)/$(TARGET).$(SRS6NAME).dprr: $(SRC6FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC6 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -277,12 +281,13 @@ $(MISC)/$(TARGET).$(SRS7NAME).dprr: $(SRC7FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC7 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -318,12 +323,13 @@ $(MISC)/$(TARGET).$(SRS8NAME).dprr: $(SRC8FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC8 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -359,12 +365,13 @@ $(MISC)/$(TARGET).$(SRS9NAME).dprr: $(SRC9FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC9 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
@@ -400,12 +407,13 @@ $(MISC)/$(TARGET).$(SRS10NAME).dprr: $(SRC10FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f)
 	@echo "Making: (SRC10 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
-	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(WRAPCMD) $(TRANSEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
     $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 

@@ -1488,12 +1488,13 @@ $(LOCALIZE_ME_DEST) : $(LOCALIZE_ME)
 .IF "$(LASTRUN_MERGED)"=="TRUE"
 $(LOCALIZE_ME_DEST) : $(LOCALIZE_ME) $(LOCALIZESDF) 
 .ELSE			# "$(LASTRUN_MERGED)"=="TRUE"
-$(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME) $(LOCALIZESDF) 
+$(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME)
 	echo LASTRUN_MERGED:=TRUE > $(INCCOM)/$(TARGET)_lastrun.mk
 .ENDIF			# "$(LASTRUN_MERGED)"=="TRUE"
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
-	$(COMMAND_ECHO)$(TRANSEX) -p $(PRJNAME) -i $(@:b:+"_tmpl")$(@:e) -o $(@:d)/$(@:b:+"_tmpl")$(@:e).$(INPATH) -m $(LOCALIZESDF) -l all
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+#	$(COMMAND_ECHO)$(TRANSEX) -p $(PRJNAME) -i $(@:b:+"_tmpl")$(@:e) -o $(@:d)/$(@:b:+"_tmpl")$(@:e).$(INPATH) -m $(LOCALIZESDF) -l all
     $(COMMAND_ECHO)$(RENAME) $(@:d)$(@:b:+"_tmpl")$(@:e).$(INPATH) $@
 
 .ENDIF			# "$(WITH_LANG)"==""
