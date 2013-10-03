@@ -16,4 +16,6 @@ mkdir: %_DEST%\bin%_EXT%\help\com\sun\star\help
 ..\%__SRC%\bin\HelpCompiler.exe %_DEST%\bin%_EXT%\HelpCompiler.exe
 ..\%__SRC%\bin\HelpLinker.exe %_DEST%\bin%_EXT%\HelpLinker.exe
 ..\%__SRC%\bin\HelpLink* %_DEST%\bin%_EXT%
+..\%__SRC%\class\com\sun\star\help\* %_DEST%\bin%_EXT%\help\com\sun\star\help\*
+..\source\help\compilehelp.hxx %_DEST%\inc%_EXT%\l10ntools\compilehelp.hxx
 
