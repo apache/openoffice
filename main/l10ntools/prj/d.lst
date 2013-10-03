@@ -1,4 +1,19 @@
 mkdir: %_DEST%\bin%_EXT%
+mkdir: %_DEST%\bin%_EXT%\help
+mkdir: %_DEST%\bin%_EXT%\help\com
+mkdir: %_DEST%\bin%_EXT%\help\com\sun
+mkdir: %_DEST%\bin%_EXT%\help\com\sun\star
+mkdir: %_DEST%\bin%_EXT%\help\com\sun\star\help
 
 ..\%__SRC%\bin\genLang %_DEST%\bin%_EXT%\genLang
-..\%__SRC%\bin\genLang.exr %_DEST%\bin%_EXT%\genLang.exe
+..\%__SRC%\bin\genLang.exe %_DEST%\bin%_EXT%\genLang.exe
+
+..\%__SRC%\class\FCFGMerge.jar %_DEST%\bin%_EXT%\FCFGMerge.jar
+..\%__SRC%\class\HelpIndexerTool.jar %_DEST%\bin%_EXT%\HelpIndexerTool.jar
+..\%__SRC%\class\jpropex\jpropex.jar %_DEST%\bin%_EXT%\jpropex.jar
+..\%__SRC%\bin\HelpLinker %_DEST%\bin%_EXT%\HelpLinker
+..\%__SRC%\bin\HelpCompiler %_DEST%\bin%_EXT%\HelpCompiler
+..\%__SRC%\bin\HelpCompiler.exe %_DEST%\bin%_EXT%\HelpCompiler.exe
+..\%__SRC%\bin\HelpLinker.exe %_DEST%\bin%_EXT%\HelpLinker.exe
+..\%__SRC%\bin\HelpLink* %_DEST%\bin%_EXT%
+

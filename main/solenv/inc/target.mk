@@ -1495,7 +1495,7 @@ $(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME)
     $(COMMAND_ECHO)-$(RM) $@
         $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
 #	$(COMMAND_ECHO)$(TRANSEX) -p $(PRJNAME) -i $(@:b:+"_tmpl")$(@:e) -o $(@:d)/$(@:b:+"_tmpl")$(@:e).$(INPATH) -m $(LOCALIZESDF) -l all
-    $(COMMAND_ECHO)$(RENAME) $(@:d)$(@:b:+"_tmpl")$(@:e).$(INPATH) $@
+#    $(COMMAND_ECHO)$(RENAME) $(@:d)$(@:b:+"_tmpl")$(@:e).$(INPATH) $@
 
 .ENDIF			# "$(WITH_LANG)"==""
 .ENDIF          # "$(LOCALIZE_ME_DEST)"!=""
