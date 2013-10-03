@@ -693,10 +693,8 @@ $(MISC)/%.sh : %.sh
 $(COMMONMISC)/$(TARGET)/%.ulf : %.ulf
 	@echo "Making: (.ulf)   " $(@:f)
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
-    $(COMMAND_ECHO)-$(RM) $@
-	$(COMMAND_ECHO)$(ULFEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all
-    $(COMMAND_ECHO)$(RENAME) $@.$(INPATH) $@
-    $(COMMAND_ECHO)-$(RM) $@.$(INPATH)
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(COMMONMISC)/$(TARGET) -v -f $<
+
 
 $(COMMONMISC)/$(TARGET)/%.xrb : %.xrb
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
