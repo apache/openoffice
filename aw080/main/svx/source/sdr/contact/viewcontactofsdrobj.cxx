@@ -150,44 +150,52 @@ namespace sdr
 		//////////////////////////////////////////////////////////////////////////////
 		// primitive stuff
 
-		// add Gluepoints (if available)
-		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrObj::createGluePointPrimitive2DSequence() const
-		{
-			drawinglayer::primitive2d::Primitive2DSequence xRetval;
-			const SdrGluePointList* pGluePointList = GetSdrObject().GetGluePointList();
+        // add Gluepoints (if available)
+        drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrObj::createGluePointPrimitive2DSequence() const
+        {
+            drawinglayer::primitive2d::Primitive2DSequence xRetval;
+            const sdr::glue::List* pGluePointList = GetSdrObject().GetGluePointList(false);
 
-			if(pGluePointList)
-			{
-				const sal_uInt32 nCount(pGluePointList->GetCount());
+            if(pGluePointList)
+            {
+                const sdr::glue::PointVector aGluePoints(pGluePointList->getVector());
+                const sal_uInt32 nCount(aGluePoints.size());
 
-				if(nCount)
-				{
-					// prepare point vector
-					std::vector< basegfx::B2DPoint > aGluepointVector;
+                if(nCount)
+                {
+                    // TTTT:GLUE
+                    // prepare primitives; positions are in unit coordinates
+                    const basegfx::B2DHomMatrix& rTransformation = GetSdrObject().getSdrObjectTransformation();
+                    std::vector< basegfx::B2DPoint > aPointVector;
 
-					// create GluePoint primitives. ATM these are relative to the SnapRect
-					for(sal_uInt32 a(0L); a < nCount; a++)
-					{
-						const SdrGluePoint& rCandidate = (*pGluePointList)[(sal_uInt16)a];
-						const basegfx::B2DPoint aPosition(rCandidate.GetAbsolutePos(sdr::legacy::GetSnapRange(GetSdrObject())));
+                    for(sal_uInt32 a(0); a < nCount; a++)
+                    {
+                        const sdr::glue::Point* pCandidate = aGluePoints[a];
 
-						aGluepointVector.push_back(aPosition);
-					}
+                        if(pCandidate)
+                        {
+                            aPointVector.push_back(rTransformation * pCandidate->getUnitPosition());
+                        }
+                        else
+                        {
+                            OSL_ENSURE(false, "sdr::glue::PointVector with empty entries (!)");
+                        }
+                    }
 
-					if(!aGluepointVector.empty())
-					{
-						const basegfx::BColor aBackPen(1.0, 1.0, 1.0);
-						const basegfx::BColor aRGBFrontColor(0.0, 0.0, 1.0); // COL_LIGHTBLUE
-						const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::MarkerArrayPrimitive2D(
-							aGluepointVector, 
-							drawinglayer::primitive2d::createDefaultGluepoint_7x7(aBackPen, aRGBFrontColor)));
+                    if(!aPointVector.empty())
+                    {
+                        const basegfx::BColor aBackPen(1.0, 1.0, 1.0);
+                        const basegfx::BColor aRGBFrontColor(0.0, 0.0, 1.0); // COL_LIGHTBLUE
+                        const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::MarkerArrayPrimitive2D(
+                            aPointVector, 
+                            drawinglayer::primitive2d::createDefaultGluepoint_7x7(aBackPen, aRGBFrontColor)));
                         xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
-					}
-				}
-			}
+                    }
+                }
+            }
 
-			return xRetval;
-		}
+            return xRetval;
+        }
 
         drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrObj::embedToObjectSpecificInformation(const drawinglayer::primitive2d::Primitive2DSequence& rSource) const
         {

@@ -55,6 +55,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#define SDRESC_VERT (sdr::glue::Point::ESCAPE_DIRECTION_TOP|sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM)
+#define SDRESC_HORZ (sdr::glue::Point::ESCAPE_DIRECTION_LEFT|sdr::glue::Point::ESCAPE_DIRECTION_RIGHT)
+#define SDRESC_ALL (SDRESC_HORZ|SDRESC_VERT)
+
 SdrObjConnection::~SdrObjConnection()
 {
 }
@@ -68,43 +72,54 @@ void SdrObjConnection::ResetVars()
 	mbAutoVertex = false;
 }
 
-bool SdrObjConnection::TakeGluePoint(SdrGluePoint& rGP, bool bSetAbsPos) const
+bool SdrObjConnection::TakeGluePoint(sdr::glue::Point& rGP/* TTTT:GLUE, bool bSetAbsPos*/) const
 {
-	bool bRet=false;
-	
-	if(mpConnectedSdrObject) 
-	{ 
-		// Ein Obj muss schon angedockt sein!
-		if(mbAutoVertex) 
-		{
-			rGP = mpConnectedSdrObject->GetVertexGluePoint(mnConnectorId);
-			bRet = true;
-		} 
-		else 
-		{
-			const SdrGluePointList* pGPL = mpConnectedSdrObject->GetGluePointList();
+    bool bRet(false);
 
-			if(pGPL) 
-			{
-				const sal_uInt32 nNum(pGPL->FindGluePoint(mnConnectorId));
-				
-				if(SDRGLUEPOINT_NOTFOUND != nNum) 
-				{
-					rGP=(*pGPL)[nNum];
-					bRet = true;
-				}
-			}
-		}
-	}
+    if(mpConnectedSdrObject) 
+    { 
+        // Ein Obj muss schon angedockt sein!
+        if(mbAutoVertex) 
+        {
+            rGP = mpConnectedSdrObject->GetVertexGluePoint(mnConnectorId);
+            bRet = true;
+        } 
+        else 
+        {
+            const sdr::glue::List* pGPL = mpConnectedSdrObject->GetGluePointList(false);
 
-	if(bRet && bSetAbsPos) 
-	{
-		const basegfx::B2DPoint aPt(rGP.GetAbsolutePos(sdr::legacy::GetSnapRange(*mpConnectedSdrObject)));
-		
-		rGP.SetPos(aPt + maObjOfs);
-	}
+            if(pGPL) 
+            {
+                sdr::glue::Point* pCandidate = pGPL->findByID(mnConnectorId);
 
-	return bRet;
+                if(pCandidate)
+                {
+                    rGP = *pCandidate;
+                    bRet = true;
+                }
+
+                // TTTT:GLUE
+                //const sal_uInt32 nNum(pGPL->FindGluePoint(mnConnectorId));
+                //
+                //if(SDRGLUEPOINT_NOTFOUND != nNum) 
+                //{
+                //    rGP=(*pGPL)[nNum];
+                //    bRet = true;
+                //}
+            }
+        }
+    }
+
+    //if(bRet && bSetAbsPos) 
+    //{
+    //
+    //
+    //    const basegfx::B2DPoint aPt(rGP.GetAbsolutePos(sdr::legacy::GetSnapRange(*mpConnectedSdrObject)));
+    //
+    //    rGP.SetPos(aPt + maObjOfs);
+    //}
+
+    return bRet;
 }
 
 basegfx::B2DPoint& SdrEdgeInfoRec::ImpGetLineVersatzPoint(SdrEdgeLineCode eLineCode)
@@ -120,36 +135,36 @@ basegfx::B2DPoint& SdrEdgeInfoRec::ImpGetLineVersatzPoint(SdrEdgeLineCode eLineC
 	return aMiddleLine;
 }
 
-sal_uInt16 SdrEdgeInfoRec::ImpGetPolyIdx(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const
+sal_uInt32 SdrEdgeInfoRec::ImpGetPolyIdx(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const
 {
-	switch (eLineCode) 
+    switch (eLineCode) 
     {
-		case OBJ1LINE2 : return 1;
-		case OBJ1LINE3 : return 2;
-		case OBJ2LINE2 : return nPointCount - 3;
-		case OBJ2LINE3 : return nPointCount - 4;
-		case MIDDLELINE: return nMiddleLine;
-	} // switch
-	return 0;
+        case OBJ1LINE2 : return 1;
+        case OBJ1LINE3 : return 2;
+        case OBJ2LINE2 : return nPointCount - 3;
+        case OBJ2LINE3 : return nPointCount - 4;
+        case MIDDLELINE: return nMiddleLine;
+    } // switch
+    return 0;
 }
 
 bool SdrEdgeInfoRec::ImpIsHorzLine(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const
 {
-	sal_uInt16 nIdx(ImpGetPolyIdx(eLineCode, nPointCount));
-	bool bHorz(0 == nAngle1 || 18000 == nAngle1);
+    sal_uInt32 nIdx(ImpGetPolyIdx(eLineCode, nPointCount));
+    bool bHorz(0 == nAngle1 || 18000 == nAngle1);
 
     if(OBJ2LINE2 == eLineCode || OBJ2LINE3 == eLineCode) 
     {
-		nIdx = nPointCount - nIdx;
-		bHorz = (0 == nAngle2 || 18000 == nAngle2);
-	}
+        nIdx = nPointCount - nIdx;
+        bHorz = (0 == nAngle2 || 18000 == nAngle2);
+    }
 
     if(1 == (nIdx & 1)) 
     {
         bHorz = !bHorz;
     }
 
-	return bHorz;
+    return bHorz;
 }
 
 void SdrEdgeInfoRec::ImpSetLineVersatz(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount, long nVal)
@@ -453,52 +468,63 @@ sal_uInt16 SdrEdgeObj::GetObjIdentifier() const
 	return sal_uInt16(OBJ_EDGE);
 }
 
-SdrGluePoint SdrEdgeObj::GetVertexGluePoint(sal_uInt32 nNum) const
+sdr::glue::Point SdrEdgeObj::GetVertexGluePoint(sal_uInt32 nNum) const
 {
-	basegfx::B2DPoint aPoint(0.0, 0.0);
-	const sal_uInt32 nPntAnz(maEdgeTrack.count());
+    //basegfx::B2DPoint aPoint(0.0, 0.0);
+    const sal_uInt32 nPntAnz(maEdgeTrack.count());
     basegfx::B2DPoint aOldPoint;
 
-	if(nPntAnz)
-	{
-		if(2 == nNum && !GetConnectedNode(true)) 
+    if(nPntAnz)
+    {
+        if(2 == nNum && !GetConnectedNode(true)) 
         {
-			aOldPoint = maEdgeTrack.getB2DPoint(0);
+            aOldPoint = maEdgeTrack.getB2DPoint(0);
         }
-		else if(3 == nNum && !GetConnectedNode(false)) 
+        else if(3 == nNum && !GetConnectedNode(false)) 
         {
-			aOldPoint = maEdgeTrack.getB2DPoint(nPntAnz - 1);
+            aOldPoint = maEdgeTrack.getB2DPoint(nPntAnz - 1);
         }
-		else 
+        else 
         {
-			if(1 == (nPntAnz & 1)) 
+            if(1 == (nPntAnz & 1)) 
             {
-				aOldPoint = maEdgeTrack.getB2DPoint(nPntAnz / 2);
-			} 
-			else 
-	        {
+                aOldPoint = maEdgeTrack.getB2DPoint(nPntAnz / 2);
+            } 
+            else 
+            {
                 aOldPoint = (maEdgeTrack.getB2DPoint((nPntAnz/2) - 1) + maEdgeTrack.getB2DPoint(nPntAnz/2)) * 0.5;
-			}
-		}
-
-		aOldPoint -= sdr::legacy::GetSnapRange(*this).getCenter();
+            }
+        }
     }
 
-	SdrGluePoint aGP(aOldPoint);
-	aGP.SetPercent(false);
-	
-	return aGP;
+    // TTTT:GLUE
+    //sdr::glue::Point aGP(aOldPoint);
+    //aGP.SetPercent(false);
+
+    // need to make absolute position relative. temporarily correct zero sizes for invert
+    basegfx::B2DHomMatrix aTransform(basegfx::tools::guaranteeMinimalScaling(getSdrObjectTransformation()));
+
+    aTransform.invert();
+    aOldPoint = aTransform * aOldPoint;
+
+    return sdr::glue::Point(
+        aOldPoint,
+        sdr::glue::Point::ESCAPE_DIRECTION_SMART,
+        sdr::glue::Point::Alignment_Center,
+        sdr::glue::Point::Alignment_Center,
+        true,   // mbRelative
+        false); // mbUserDefined
 }
 
-const SdrGluePointList* SdrEdgeObj::GetGluePointList() const
+sdr::glue::List* SdrEdgeObj::GetGluePointList(bool /*bForce*/) const
 {
-	return NULL; // Keine benutzerdefinierten Klebepunkte fuer Verbinder #31671#
+    return NULL; // Keine benutzerdefinierten Klebepunkte fuer Verbinder #31671#
 }
 
-SdrGluePointList* SdrEdgeObj::ForceGluePointList()
-{
-	return NULL; // Keine benutzerdefinierten Klebepunkte fuer Verbinder #31671#
-}
+//sdr::glue::List* SdrEdgeObj::ForceGluePointList()
+//{
+//	return NULL; // Keine benutzerdefinierten Klebepunkte fuer Verbinder #31671#
+//}
 
 void SdrEdgeObj::ConnectToNode(bool bTail1, SdrObject* pObj)
 {
@@ -542,36 +568,46 @@ SdrObject* SdrEdgeObj::GetConnectedNode(bool bTail1) const
 
 bool SdrEdgeObj::CheckNodeConnection(bool bTail1) const
 {
-	bool bRet(false);
-	const SdrObjConnection& rCon = GetConnection(bTail1);
-	const sal_uInt32 nPtAnz(maEdgeTrack.count());
-	
-	if(rCon.mpConnectedSdrObject && rCon.mpConnectedSdrObject->getSdrPageFromSdrObject() == getSdrPageFromSdrObject() && nPtAnz) 
-	{
-		const SdrGluePointList* pGPL = rCon.mpConnectedSdrObject->GetGluePointList();
-		const sal_uInt32 nConAnz(pGPL ? pGPL->GetCount() : 0);
-		const sal_uInt32 nGesAnz(nConAnz + 4);
-		const basegfx::B2DPoint aTail(bTail1 ? maEdgeTrack.getB2DPoint(0) : maEdgeTrack.getB2DPoint(nPtAnz - 1));
+    bool bRet(false);
+    const SdrObjConnection& rCon = GetConnection(bTail1);
+    const sal_uInt32 nPtAnz(maEdgeTrack.count());
+    
+    if(rCon.mpConnectedSdrObject && rCon.mpConnectedSdrObject->getSdrPageFromSdrObject() == getSdrPageFromSdrObject() && nPtAnz) 
+    {
+        const sdr::glue::List* pGPL = rCon.mpConnectedSdrObject->GetGluePointList(false);
+        const sdr::glue::PointVector aGluePointVector(pGPL ? pGPL->getVector() : sdr::glue::PointVector());
+        const sal_uInt32 nConAnz(aGluePointVector.size());
+        const sal_uInt32 nGesAnz(nConAnz + 4);
+        const basegfx::B2DPoint aTail(bTail1 ? maEdgeTrack.getB2DPoint(0) : maEdgeTrack.getB2DPoint(nPtAnz - 1));
 
         for(sal_uInt32 i(0); i < nGesAnz && !bRet; i++) 
-		{
-			if(i < nConAnz) 
-			{ 
-				// UserDefined
-				const basegfx::B2DPoint aGluePos((*pGPL)[i].GetAbsolutePos(sdr::legacy::GetSnapRange(*rCon.mpConnectedSdrObject)));
-				
-                bRet = (aTail == aGluePos);
-			} 
-			else //if (i<nConAnz+4) 
-			{ 
-				// Vertex
-				const SdrGluePoint aPt(rCon.mpConnectedSdrObject->GetVertexGluePoint(i - nConAnz));
-				const basegfx::B2DPoint aGluePos(aPt.GetAbsolutePos(sdr::legacy::GetSnapRange(*rCon.mpConnectedSdrObject)));
+        {
+            if(i < nConAnz) 
+            { 
+                // UserDefined or CustomShape
+                const sdr::glue::Point* pCandidate = aGluePointVector[i];
+
+                if(pCandidate)
+                {
+                    const basegfx::B2DPoint aGluePos(rCon.mpConnectedSdrObject->getSdrObjectTransformation() * pCandidate->getUnitPosition());
+
+                    bRet = (aTail == aGluePos);
+                }
+                else
+                {
+                    OSL_ENSURE(false, "Got sdr::glue::PointVector with emty entries (!)");
+                }
+            } 
+            else //if (i<nConAnz+4) 
+            { 
+                // Vertex
+                const sdr::glue::Point aPt(rCon.mpConnectedSdrObject->GetVertexGluePoint(i - nConAnz));
+                const basegfx::B2DPoint aGluePos(rCon.mpConnectedSdrObject->getSdrObjectTransformation() * aPt.getUnitPosition());
 
                 bRet = (aTail == aGluePos);
-			}
-		}
-	}
+            }
+        }
+    }
 
     return bRet;
 }
@@ -690,22 +726,22 @@ sal_uInt16 SdrEdgeObj::ImpCalcEscAngle(SdrObject* pObj, const basegfx::B2DPoint&
 		if (byMitt) nRet|=SDRESC_VERT;
 		if (bxMitt) nRet|=SDRESC_HORZ;
 		if (dxl<dxr) { // Links
-			if (dyo<dyu) nRet|=SDRESC_LEFT | SDRESC_TOP;
-			else nRet|=SDRESC_LEFT | SDRESC_BOTTOM;
+			if (dyo<dyu) nRet|=sdr::glue::Point::ESCAPE_DIRECTION_LEFT | sdr::glue::Point::ESCAPE_DIRECTION_TOP;
+			else nRet|=sdr::glue::Point::ESCAPE_DIRECTION_LEFT | sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM;
 		} else {       // Rechts
-			if (dyo<dyu) nRet|=SDRESC_RIGHT | SDRESC_TOP;
-			else nRet|=SDRESC_RIGHT | SDRESC_BOTTOM;
+			if (dyo<dyu) nRet|=sdr::glue::Point::ESCAPE_DIRECTION_RIGHT | sdr::glue::Point::ESCAPE_DIRECTION_TOP;
+			else nRet|=sdr::glue::Point::ESCAPE_DIRECTION_RIGHT | sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM;
 		}
 		return nRet;
 	}
 	if (dx<dy) { // waagerecht
 		if (bxMitt) return SDRESC_HORZ;
-		if (dxl<dxr) return SDRESC_LEFT;
-		else return SDRESC_RIGHT;
+		if (dxl<dxr) return sdr::glue::Point::ESCAPE_DIRECTION_LEFT;
+		else return sdr::glue::Point::ESCAPE_DIRECTION_RIGHT;
 	} else {     // senkrecht
 		if (byMitt) return SDRESC_VERT;
-		if (dyo<dyu) return SDRESC_TOP;
-		else return SDRESC_BOTTOM;
+		if (dyo<dyu) return sdr::glue::Point::ESCAPE_DIRECTION_TOP;
+		else return sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM;
 	}
 }
 
@@ -792,7 +828,7 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
 		basegfx::B2DPoint aPt1(maEdgeTrack.getB2DPoint(0));
 		basegfx::B2DPoint aPt2(maEdgeTrack.getB2DPoint(nCount - 1));
         const basegfx::B2DRange aBaseRange(aPt1, aPt2);
-	    SdrGluePoint aGP1,aGP2;
+	    sdr::glue::Point aGP1,aGP2;
 	    sal_uInt16 nEsc1(SDRESC_ALL);
 	    sal_uInt16 nEsc2(SDRESC_ALL);
 	    basegfx::B2DRange aBoundRange1;
@@ -815,7 +851,7 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
 			    aBoundRange1 = rCon1.mpConnectedSdrObject->getObjectRange(0);
 		    }
 	
-		    aBoundRange1.transform(basegfx::tools::createTranslateB2DHomMatrix(rCon1.maObjOfs));
+		    // TTTT:GLUE aBoundRange1.transform(basegfx::tools::createTranslateB2DHomMatrix(rCon1.maObjOfs));
 
 		    const sal_Int32 nH(((SdrEdgeNode1HorzDistItem&)rSet.Get(SDRATTR_EDGENODE1HORZDIST)).GetValue());
 		    const sal_Int32 nV(((SdrEdgeNode1VertDistItem&)rSet.Get(SDRATTR_EDGENODE1VERTDIST)).GetValue());
@@ -826,7 +862,7 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
 	    } 
 	    else 
 	    {
-		    aBewareRange1 = aBoundRange1 = basegfx::B2DRange(aPt1 + rCon1.maObjOfs);
+		    aBewareRange1 = aBoundRange1 = basegfx::B2DRange(aPt1); // TTTT:GLUE + rCon1.maObjOfs);
 	    }
 	
 	    if(bCon2) 
@@ -840,7 +876,7 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
 			    aBoundRange2 = rCon2.mpConnectedSdrObject->getObjectRange(0);
 		    }
 
-		    aBoundRange2.transform(basegfx::tools::createTranslateB2DHomMatrix(rCon2.maObjOfs));
+		    // TTTT:GLUE aBoundRange2.transform(basegfx::tools::createTranslateB2DHomMatrix(rCon2.maObjOfs));
 
 		    const sal_Int32 nH(((SdrEdgeNode2HorzDistItem&)rSet.Get(SDRATTR_EDGENODE2HORZDIST)).GetValue());
 		    const sal_Int32 nV(((SdrEdgeNode2VertDistItem&)rSet.Get(SDRATTR_EDGENODE2VERTDIST)).GetValue());
@@ -851,7 +887,7 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
 	    } 
 	    else 
 	    {
-		    aBewareRange2 = aBoundRange2 = basegfx::B2DRange(aPt2 + rCon2.maObjOfs);
+		    aBewareRange2 = aBoundRange2 = basegfx::B2DRange(aPt2); // TTTT:GLUE + rCon2.maObjOfs);
 	    }
 	
 	    sal_uInt32 nBestQual=0xFFFFFFFF;
@@ -897,14 +933,14 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
                 rCon1.mnConnectorId = nNum1;
             }
 
-		    if(bCon1 && rCon1.TakeGluePoint(aGP1, true)) 
+		    if(bCon1 && rCon1.TakeGluePoint(aGP1/*TTTT:GLUE, true*/)) 
             {
-			    aPt1 = aGP1.GetPos();
-			    nEsc1 = aGP1.GetEscDir();
+			    aPt1 = rCon1.mpConnectedSdrObject->getSdrObjectTransformation() * aGP1.getUnitPosition();
+			    nEsc1 = aGP1.getEscapeDirections();
 
-                if(SDRESC_SMART == nEsc1) 
+                if(sdr::glue::Point::ESCAPE_DIRECTION_SMART == nEsc1) 
                 {
-                    nEsc1 = ImpCalcEscAngle(rCon1.mpConnectedSdrObject, aPt1 - rCon1.maObjOfs);
+                    nEsc1 = ImpCalcEscAngle(rCon1.mpConnectedSdrObject, aPt1); // TTTT:GLUE - rCon1.maObjOfs);
                 }
 		    }
 
@@ -915,24 +951,24 @@ basegfx::B2DPolygon SdrEdgeObj::ImpCalcEdgeTrack(
                     rCon2.mnConnectorId = nNum2;
                 }
 
-			    if(bCon2 && rCon2.TakeGluePoint(aGP2, true)) 
+			    if(bCon2 && rCon2.TakeGluePoint(aGP2/*TTTT:GLUE, true*/)) 
                 {
-				    aPt2 = aGP2.GetPos();
-				    nEsc2 = aGP2.GetEscDir();
+				    aPt2 = rCon2.mpConnectedSdrObject->getSdrObjectTransformation() * aGP2.getUnitPosition();
+				    nEsc2 = aGP2.getEscapeDirections();
 
-                    if(SDRESC_SMART == nEsc2) 
+                    if(sdr::glue::Point::ESCAPE_DIRECTION_SMART == nEsc2) 
                     {
-                        nEsc2 = ImpCalcEscAngle(rCon2.mpConnectedSdrObject, aPt2 - rCon2.maObjOfs);
+                        nEsc2 = ImpCalcEscAngle(rCon2.mpConnectedSdrObject, aPt2); // TTTT:GLUE - rCon2.maObjOfs);
                     }
 			    }
 
                 for(long nA1(0); nA1 < 36000; nA1 += 9000) 
                 {
-				    const sal_uInt16 nE1(!nA1 ? SDRESC_RIGHT : 9000 == nA1 ? SDRESC_TOP : 18000 == nA1 ? SDRESC_LEFT : 27000 == nA1 ? SDRESC_BOTTOM : 0);
+				    const sal_uInt16 nE1(!nA1 ? sdr::glue::Point::ESCAPE_DIRECTION_RIGHT : 9000 == nA1 ? sdr::glue::Point::ESCAPE_DIRECTION_TOP : 18000 == nA1 ? sdr::glue::Point::ESCAPE_DIRECTION_LEFT : 27000 == nA1 ? sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM : 0);
 				    
                     for(long nA2(0); nA2 < 36000; nA2 += 9000) 
                     {
-					    const sal_uInt16 nE2(!nA2 ? SDRESC_RIGHT : 9000 == nA2 ? SDRESC_TOP : 18000 == nA2 ? SDRESC_LEFT : 27000 == nA2 ? SDRESC_BOTTOM : 0);
+					    const sal_uInt16 nE2(!nA2 ? sdr::glue::Point::ESCAPE_DIRECTION_RIGHT : 9000 == nA2 ? sdr::glue::Point::ESCAPE_DIRECTION_TOP : 18000 == nA2 ? sdr::glue::Point::ESCAPE_DIRECTION_LEFT : 27000 == nA2 ? sdr::glue::Point::ESCAPE_DIRECTION_BOTTOM : 0);
 
                         if((nEsc1 & nE1) && (nEsc2 & nE2)) 
                         {
@@ -1554,7 +1590,7 @@ basegfx::B2DPolygon ImpOldCalcEdgeTrack(
 	}
 	if (bInfo) { // nun die Linienversaetze auf aXP1 anwenden
 		if (pInfo->nMiddleLine!=0xFFFF) {
-			sal_uInt16 nIdx=pInfo->ImpGetPolyIdx(MIDDLELINE,aXP1.GetPointCount());
+			const sal_uInt16 nIdx = (sal_uInt16)pInfo->ImpGetPolyIdx(MIDDLELINE,aXP1.GetPointCount());
 			if (pInfo->ImpIsHorzLine(MIDDLELINE,aXP1.GetPointCount())) {
 				aXP1[nIdx].Y()+=pInfo->aMiddleLine.getY();
 				aXP1[nIdx+1].Y()+=pInfo->aMiddleLine.getY();
@@ -1564,7 +1600,7 @@ basegfx::B2DPolygon ImpOldCalcEdgeTrack(
 			}
 		}
 		if (pInfo->nObj1Lines>=2) {
-			sal_uInt16 nIdx=pInfo->ImpGetPolyIdx(OBJ1LINE2,aXP1.GetPointCount());
+			const sal_uInt16 nIdx = (sal_uInt16)pInfo->ImpGetPolyIdx(OBJ1LINE2,aXP1.GetPointCount());
 			if (pInfo->ImpIsHorzLine(OBJ1LINE2,aXP1.GetPointCount())) {
 				aXP1[nIdx].Y()+=pInfo->aObj1Line2.getY();
 				aXP1[nIdx+1].Y()+=pInfo->aObj1Line2.getY();
@@ -1574,7 +1610,7 @@ basegfx::B2DPolygon ImpOldCalcEdgeTrack(
 			}
 		}
 		if (pInfo->nObj1Lines>=3) {
-			sal_uInt16 nIdx=pInfo->ImpGetPolyIdx(OBJ1LINE3,aXP1.GetPointCount());
+			const sal_uInt16 nIdx = (sal_uInt16)pInfo->ImpGetPolyIdx(OBJ1LINE3,aXP1.GetPointCount());
 			if (pInfo->ImpIsHorzLine(OBJ1LINE3,aXP1.GetPointCount())) {
 				aXP1[nIdx].Y()+=pInfo->aObj1Line3.getY();
 				aXP1[nIdx+1].Y()+=pInfo->aObj1Line3.getY();
@@ -1584,7 +1620,7 @@ basegfx::B2DPolygon ImpOldCalcEdgeTrack(
 			}
 		}
 		if (pInfo->nObj2Lines>=2) {
-			sal_uInt16 nIdx=pInfo->ImpGetPolyIdx(OBJ2LINE2,aXP1.GetPointCount());
+			const sal_uInt16 nIdx = (sal_uInt16)pInfo->ImpGetPolyIdx(OBJ2LINE2,aXP1.GetPointCount());
 			if (pInfo->ImpIsHorzLine(OBJ2LINE2,aXP1.GetPointCount())) {
 				aXP1[nIdx].Y()+=pInfo->aObj2Line2.getY();
 				aXP1[nIdx+1].Y()+=pInfo->aObj2Line2.getY();
@@ -1594,7 +1630,7 @@ basegfx::B2DPolygon ImpOldCalcEdgeTrack(
 			}
 		}
 		if (pInfo->nObj2Lines>=3) {
-			sal_uInt16 nIdx=pInfo->ImpGetPolyIdx(OBJ2LINE3,aXP1.GetPointCount());
+			const sal_uInt16 nIdx = (sal_uInt16)pInfo->ImpGetPolyIdx(OBJ2LINE3,aXP1.GetPointCount());
 			if (pInfo->ImpIsHorzLine(OBJ2LINE3,aXP1.GetPointCount())) {
 				aXP1[nIdx].Y()+=pInfo->aObj2Line3.getY();
 				aXP1[nIdx+1].Y()+=pInfo->aObj2Line3.getY();
@@ -2156,15 +2192,16 @@ basegfx::B2DPolygon SdrEdgeObj::ImplAddConnectorOverlay(SdrDragMethod& rDragMeth
 		SdrObjConnection aMyCon1(maCon1);
 		SdrObjConnection aMyCon2(maCon2);
 		
-		if (bTail1) 
-		{
-            aMyCon1.maObjOfs *= rDragMethod.getCurrentTransformation();
-		}
-
-		if (bTail2) 
-		{
-            aMyCon2.maObjOfs *= rDragMethod.getCurrentTransformation();
-		}
+        // TTTT:GLUE
+		//if (bTail1) 
+		//{
+        //    aMyCon1.maObjOfs *= rDragMethod.getCurrentTransformation();
+		//}
+        //
+		//if (bTail2) 
+		//{
+        //    aMyCon2.maObjOfs *= rDragMethod.getCurrentTransformation();
+		//}
 		
 		SdrEdgeInfoRec aInfo(maEdgeInfo);
 		aResult = ImpCalcEdgeTrack(aMyCon1, aMyCon2, &aInfo);
@@ -2283,143 +2320,155 @@ void SdrEdgeObj::FindConnector(
     const SdrEdgeObj* pThis, 
     OutputDevice* pOut)
 {
-	rCon.ResetVars();
+    rCon.ResetVars();
 
-	if(rSdrView.GetSdrPageView())
-	{
-		if(!pOut) 
-			pOut = rSdrView.GetFirstOutputDevice(); // GetWin(0);
+    if(rSdrView.GetSdrPageView())
+    {
+        if(!pOut) 
+            pOut = rSdrView.GetFirstOutputDevice(); // GetWin(0);
 
-		if (!pOut) 
-			return;
+        if (!pOut) 
+            return;
 
         const Point aPt(basegfx::fround(rPt.getX()), basegfx::fround(rPt.getY()));
-		SdrObjList* pOL = rSdrView.GetSdrPageView()->GetCurrentObjectList();
-		const SetOfByte& rVisLayer = rSdrView.GetSdrPageView()->GetVisibleLayers();
-    	// Sensitiver Bereich der Konnektoren ist doppelt so gross wie die Handles:
-		sal_uInt16 nMarkHdSiz = rSdrView.GetMarkHdlSizePixel();
-	    Size aHalfConSiz(nMarkHdSiz,nMarkHdSiz);
-	    aHalfConSiz=pOut->PixelToLogic(aHalfConSiz);
-	    Size aHalfCenterSiz(2*aHalfConSiz.Width(),2*aHalfConSiz.Height());
-		Rectangle aMouseRect(aPt,aPt);
-	    aMouseRect.Left()  -=aHalfConSiz.Width();
-	    aMouseRect.Top()   -=aHalfConSiz.Height();
-	    aMouseRect.Right() +=aHalfConSiz.Width();
-	    aMouseRect.Bottom()+=aHalfConSiz.Height();
-	    sal_uInt16 nBoundHitTol=(sal_uInt16)aHalfConSiz.Width()/2; if (nBoundHitTol==0) nBoundHitTol=1;
-		sal_uInt32 no=pOL->GetObjCount();
-		bool bFnd=false;
-    	SdrObjConnection aTestCon;
-	    SdrObjConnection aBestCon;
-		bool bTestBoundHit=false;
-		//bool bBestBoundHit=false;
+        SdrObjList* pOL = rSdrView.GetSdrPageView()->GetCurrentObjectList();
+        const SetOfByte& rVisLayer = rSdrView.GetSdrPageView()->GetVisibleLayers();
+        // Sensitiver Bereich der Konnektoren ist doppelt so gross wie die Handles:
+        sal_uInt16 nMarkHdSiz = rSdrView.GetMarkHdlSizePixel();
+        Size aHalfConSiz(nMarkHdSiz,nMarkHdSiz);
+        aHalfConSiz=pOut->PixelToLogic(aHalfConSiz);
+        Size aHalfCenterSiz(2*aHalfConSiz.Width(),2*aHalfConSiz.Height());
+        Rectangle aMouseRect(aPt,aPt);
+        aMouseRect.Left()  -=aHalfConSiz.Width();
+        aMouseRect.Top()   -=aHalfConSiz.Height();
+        aMouseRect.Right() +=aHalfConSiz.Width();
+        aMouseRect.Bottom()+=aHalfConSiz.Height();
+        sal_uInt16 nBoundHitTol=(sal_uInt16)aHalfConSiz.Width()/2; if (nBoundHitTol==0) nBoundHitTol=1;
+        sal_uInt32 no=pOL->GetObjCount();
+        bool bFnd=false;
+        SdrObjConnection aTestCon;
+        SdrObjConnection aBestCon;
+        bool bTestBoundHit=false;
+        //bool bBestBoundHit=false;
 
-    	while (no>0 && !bFnd) 
+        while (no>0 && !bFnd) 
         {
-		    // Problem: Gruppenobjekt mit verschiedenen Layern liefert LayerID 0 !!!!
-		    no--;
-		    SdrObject* pObj = pOL->GetObj(no);
-		    if (rVisLayer.IsSet(pObj->GetLayer()) && pObj->IsVisible() &&      // only visible objects
-				    (pThis==NULL || pObj != pThis))  // nicht an mich selbst connecten
-    		{
-				Rectangle aObjBound(sdr::legacy::GetBoundRect(*pObj));
-    			if (aObjBound.IsOver(aMouseRect)) 
+            // Problem: Gruppenobjekt mit verschiedenen Layern liefert LayerID 0 !!!!
+            no--;
+            SdrObject* pObj = pOL->GetObj(no);
+            if (rVisLayer.IsSet(pObj->GetLayer()) && pObj->IsVisible() &&      // only visible objects
+                    (pThis==NULL || pObj != pThis))  // nicht an mich selbst connecten
+            {
+                Rectangle aObjBound(sdr::legacy::GetBoundRect(*pObj));
+                if (aObjBound.IsOver(aMouseRect)) 
                 {
-    				aTestCon.ResetVars();
-					bTestBoundHit=false;
-					const bool bEdge(pObj->IsSdrEdgeObj()); // kein BestCon fuer Edge
-				    // Die Userdefined Konnektoren haben absolute Prioritaet.
-				    // Danach kommt Vertex, Corner und Mitte(Best) gleich priorisiert.
-				    // Zum Schluss kommt noch ein HitTest aufs Obj.
-				    const SdrGluePointList* pGPL = pObj->GetGluePointList();
-				    sal_uInt32 nConAnz=pGPL==NULL ? 0 : pGPL->GetCount();
-					sal_uInt32 nGesAnz=nConAnz+9;
-					bool bUserFnd=false;
-					sal_uInt32 nBestDist=0xFFFFFFFF;
-					for (sal_uInt32 i=0; i<nGesAnz; i++) 
-					{
-						bool bUser=i<nConAnz;
-						bool bVertex=i>=nConAnz+0 && i<nConAnz+4;
-						bool bCenter=i==nConAnz+4;
-						bool bOk=false;
-	    				Point aConPos;
-						sal_uInt32 nConNum=i;
+                    aTestCon.ResetVars();
+                    bTestBoundHit=false;
+                    const bool bEdge(pObj->IsSdrEdgeObj()); // kein BestCon fuer Edge
+                    // Die Userdefined Konnektoren haben absolute Prioritaet.
+                    // Danach kommt Vertex, Corner und Mitte(Best) gleich priorisiert.
+                    // Zum Schluss kommt noch ein HitTest aufs Obj.
+                    const sdr::glue::List* pGPL = pObj->GetGluePointList(false);
+                    const sdr::glue::PointVector aGluePointVector(pGPL ? pGPL->getVector() : sdr::glue::PointVector());
+                    const sal_uInt32 nConAnz(aGluePointVector.size());
+                    sal_uInt32 nGesAnz=nConAnz+9;
+                    bool bUserFnd=false;
+                    sal_uInt32 nBestDist=0xFFFFFFFF;
+                    for (sal_uInt32 i=0; i<nGesAnz; i++) 
+                    {
+                        bool bUser=i<nConAnz;
+                        bool bVertex=i>=nConAnz+0 && i<nConAnz+4;
+                        bool bCenter=i==nConAnz+4;
+                        bool bOk=false;
+                        Point aConPos;
+                        sal_uInt32 nConNum=i;
 
-						if(bUser) 
-						{
-						    const SdrGluePoint& rGP=(*pGPL)[nConNum];
-							const basegfx::B2DPoint aPoint(rGP.GetAbsolutePos(sdr::legacy::GetSnapRange(*pObj)));
-							aConPos=Point(basegfx::fround(aPoint.getX()), basegfx::fround(aPoint.getY()));
-    						nConNum=rGP.GetId();
-							bOk=true;
-						} 
-						else if (bVertex && !bUserFnd) 
-						{
-	    					nConNum=nConNum-nConAnz;
-							SdrGluePoint aLocalPt(pObj->GetVertexGluePoint(nConNum));
-							const basegfx::B2DPoint aPoint(aLocalPt.GetAbsolutePos(sdr::legacy::GetSnapRange(*pObj)));
-							aConPos=Point(basegfx::fround(aPoint.getX()), basegfx::fround(aPoint.getY()));
-							bOk=true;
-		    			}
-			    		else if (bCenter && !bUserFnd && !bEdge)
-				    	{
-    						// #109007#
-	    					// Suppress default connect at object center
-		    				if(!pThis || !pThis->GetSuppressDefaultConnect())
-			    			{
-				    			// Edges nicht!
-					    		nConNum=0;
-						    	aConPos=aObjBound.Center();
-								bOk=true;
-    						}
-	    				}
-		    			if (bOk && aMouseRect.IsInside(aConPos)) 
+                        if(bUser) 
                         {
-							if (bUser) bUserFnd=true;
-							bFnd=true;
-							sal_uInt32 nDist=(sal_uInt32)Abs(aConPos.X()-aPt.X())+(sal_uInt32)Abs(aConPos.Y()-aPt.Y());
-    						
+                            const sdr::glue::Point* pCandidate = aGluePointVector[nConNum];
+
+                            if(pCandidate)
+                            {
+                                const basegfx::B2DPoint aPoint(pObj->getSdrObjectTransformation() * pCandidate->getUnitPosition());
+                                
+                                aConPos = Point(basegfx::fround(aPoint.getX()), basegfx::fround(aPoint.getY()));
+                                nConNum = pCandidate->getID();
+                                bOk = true;
+                            }
+                            else
+                            {
+                                OSL_ENSURE(false, "Got sdr::glue::PointVector with empty entries (!)");
+                            }
+                        } 
+                        else if (bVertex && !bUserFnd) 
+                        {
+                            nConNum = nConNum - nConAnz;
+
+                            const sdr::glue::Point aLocalPt(pObj->GetVertexGluePoint(nConNum));
+                            const basegfx::B2DPoint aPoint(pObj->getSdrObjectTransformation() * aLocalPt.getUnitPosition());
+
+                            aConPos = Point(basegfx::fround(aPoint.getX()), basegfx::fround(aPoint.getY()));
+                            bOk = true;
+                        }
+                        else if (bCenter && !bUserFnd && !bEdge)
+                        {
+                            // #109007#
+                            // Suppress default connect at object center
+                            if(!pThis || !pThis->GetSuppressDefaultConnect())
+                            {
+                                // Edges nicht!
+                                nConNum=0;
+                                aConPos=aObjBound.Center();
+                                bOk=true;
+                            }
+                        }
+                        if (bOk && aMouseRect.IsInside(aConPos)) 
+                        {
+                            if (bUser) bUserFnd=true;
+                            bFnd=true;
+                            sal_uInt32 nDist=(sal_uInt32)Abs(aConPos.X()-aPt.X())+(sal_uInt32)Abs(aConPos.Y()-aPt.Y());
+                            
                             if (nDist<nBestDist) 
                             {
-							    nBestDist = nDist;
-    							aTestCon.mpConnectedSdrObject = pObj;
-	    						aTestCon.mnConnectorId = nConNum;
-		    					aTestCon.mbAutoVertex = bVertex;
-								aTestCon.mbBestConnection = false; // bCenter;
-			    				aTestCon.mbBestVertex = bCenter;
-    						}
-	    				}
-		    		}
-			    	// Falls kein Konnektor getroffen wird nochmal
-				    // HitTest versucht fuer BestConnector (=bCenter)
-					const basegfx::B2DPoint aHitTestPos(aPt.X(), aPt.Y());
-    				if(!bFnd && 
+                                nBestDist = nDist;
+                                aTestCon.mpConnectedSdrObject = pObj;
+                                aTestCon.mnConnectorId = nConNum;
+                                aTestCon.mbAutoVertex = bVertex;
+                                aTestCon.mbBestConnection = false; // bCenter;
+                                aTestCon.mbBestVertex = bCenter;
+                            }
+                        }
+                    }
+                    // Falls kein Konnektor getroffen wird nochmal
+                    // HitTest versucht fuer BestConnector (=bCenter)
+                    const basegfx::B2DPoint aHitTestPos(aPt.X(), aPt.Y());
+                    if(!bFnd && 
                         !bEdge && 
-						SdrObjectPrimitiveHit(*pObj, aHitTestPos, nBoundHitTol, rSdrView, false, 0))
-		    		{
-			    		// #109007#
-				    	// Suppress default connect at object inside bound
-					    if(!pThis || !pThis->GetSuppressDefaultConnect())
-    					{
-							bFnd = true;
-	    					aTestCon.mpConnectedSdrObject = pObj;
-							aTestCon.mbBestConnection = true;
-		    			}
-			    	}
-				    if (bFnd) 
+                        SdrObjectPrimitiveHit(*pObj, aHitTestPos, nBoundHitTol, rSdrView, false, 0))
                     {
-						Rectangle aMouseRect2(aPt,aPt);
-					    aMouseRect.Left()  -=nBoundHitTol;
-					    aMouseRect.Top()   -=nBoundHitTol;
-					    aMouseRect.Right() +=nBoundHitTol;
-					    aMouseRect.Bottom()+=nBoundHitTol;
-					    bTestBoundHit=aObjBound.IsOver(aMouseRect2);
-				    }
-    			}
-	    	}
-	    }
+                        // #109007#
+                        // Suppress default connect at object inside bound
+                        if(!pThis || !pThis->GetSuppressDefaultConnect())
+                        {
+                            bFnd = true;
+                            aTestCon.mpConnectedSdrObject = pObj;
+                            aTestCon.mbBestConnection = true;
+                        }
+                    }
+                    if (bFnd) 
+                    {
+                        Rectangle aMouseRect2(aPt,aPt);
+                        aMouseRect.Left()  -=nBoundHitTol;
+                        aMouseRect.Top()   -=nBoundHitTol;
+                        aMouseRect.Right() +=nBoundHitTol;
+                        aMouseRect.Bottom()+=nBoundHitTol;
+                        bTestBoundHit=aObjBound.IsOver(aMouseRect2);
+                    }
+                }
+            }
+        }
 
-		rCon=aTestCon;
+        rCon=aTestCon;
     }
 }
 
@@ -2687,37 +2736,41 @@ void SdrEdgeObj::SetTailPoint( bool bTail, const basegfx::B2DPoint& rPt )
 }
 
 /** this method is used by the api to set a glue point for a connection
-	nId == -1 :		The best default point is automaticly choosen
-	0 <= nId <= 3 : One of the default points is choosen
-	nId >= 4 :		A user defined glue point is choosen
+    nId == -1 :		The best default point is automaticly choosen
+    0 <= nId <= 3 : One of the default points is choosen
+    nId >= 4 :		A user defined glue point is choosen
 */
 void SdrEdgeObj::setGluePointIndex(bool bTail, sal_Int32 nIndex /* = -1 */ )
 {
-	SdrObjConnection& rConn1 = GetConnection( bTail );
-	rConn1.SetAutoVertex( nIndex >= 0 && nIndex <= 3 );
-	rConn1.SetBestConnection( nIndex < 0 );
-	rConn1.SetBestVertex( nIndex < 0 );
+    SdrObjConnection& rConn1 = GetConnection( bTail );
+    rConn1.SetAutoVertex( nIndex >= 0 && nIndex <= 3 );
+    rConn1.SetBestConnection( nIndex < 0 );
+    rConn1.SetBestVertex( nIndex < 0 );
 
-	if( nIndex > 3 )
-	{
-		nIndex -= 3;		// SJ: the start api index is 0, whereas the implementation in svx starts from 1
+    if( nIndex > 3 )
+    {
+        // TTTT:GLUE no more; check if this works
+        // nIndex -= 3;		// SJ: the start api index is 0, whereas the implementation in svx starts from 1
+        nIndex -= 4;        // SJ: the start api index is 0, whereas the implementation in svx starts from 1
 
-		// for user defined glue points we have
-		// to get the id for this index first
-		const SdrGluePointList* pList = rConn1.GetObject() ? rConn1.GetObject()->GetGluePointList() : NULL;
+        // for user defined glue points we have
+        // to get the id for this index first
+        const sdr::glue::List* pList = rConn1.GetObject() ? rConn1.GetObject()->GetGluePointList(false) : NULL;
 
-        if( pList == NULL || SDRGLUEPOINT_NOTFOUND == pList->FindGluePoint((sal_uInt16)nIndex) )
-			return;
-	}
-	else if( nIndex < 0 )
-	{
-		nIndex = 0;
-	}
+        if(!pList || !pList->findByID(nIndex))
+        {
+            return;
+        }
+    }
+    else if( nIndex < 0 )
+    {
+        nIndex = 0;
+    }
 
-	rConn1.SetConnectorId( (sal_uInt16)nIndex );
+    rConn1.SetConnectorId(nIndex);
 
-	SetChanged();
-	ImpRecalcEdgeTrack();
+    SetChanged();
+    ImpRecalcEdgeTrack();
 }
 
 /** this method is used by the api to return a glue point id for a connection.

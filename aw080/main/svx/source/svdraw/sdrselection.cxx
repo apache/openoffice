@@ -102,59 +102,59 @@ namespace sdr
 			}
 		}
 
-		void Selection::checkGlueIndexCorrection()
-		{
-			for(IndicesMap::iterator aIndices(maGlueIndices.begin()); aIndices != maGlueIndices.end();)
-			{
-				SdrObject* pCandidate = aIndices->first;
-				OSL_ENSURE(pCandidate, "Missing SdrObject pointer in glue selection(!)");
-				bool bErase(false);
-				IndicesMap::iterator aNext(aIndices);
-				const SdrGluePointList* pGPL = pCandidate->GetGluePointList();
+        void Selection::checkGlueIndexCorrection()
+        {
+            for(IndicesMap::iterator aIndices(maGlueIndices.begin()); aIndices != maGlueIndices.end();)
+            {
+                SdrObject* pCandidate = aIndices->first;
+                OSL_ENSURE(pCandidate, "Missing SdrObject pointer in glue selection(!)");
+                bool bErase(false);
+                IndicesMap::iterator aNext(aIndices);
+                const sdr::glue::List* pGPL = pCandidate->GetGluePointList(false);
 
-				aNext++;
+                aNext++;
 
-				// for each SdrObject check if it has GluePoints at all
-				if(pGPL)
-				{
-					Indices aCurrent = aIndices->second;
-					Indices aNewList;
+                // for each SdrObject check if it has GluePoints at all
+                if(pGPL)
+                {
+                    Indices aCurrent = aIndices->second;
+                    Indices aNewList;
 
-					// check for each selected GluePoint if it exists at the SdrObject. If yes, take
-					// it over to a new list. Thus, all no longer existing GluePoints will be erased
-					for(Indices::const_iterator aIter(aCurrent.begin()); aIter != aCurrent.end(); aIter++)
-					{
-						if(SDRGLUEPOINT_NOTFOUND != pGPL->FindGluePoint(*aIter)) 
-						{
-							aNewList.insert(aNewList.end(), *aIter);
-						}
-					}
+                    // check for each selected GluePoint if it exists at the SdrObject. If yes, take
+                    // it over to a new list. Thus, all no longer existing GluePoints will be erased
+                    for(Indices::const_iterator aIter(aCurrent.begin()); aIter != aCurrent.end(); aIter++)
+                    {
+                        if(pGPL->findByID(*aIter))
+                        {
+                            aNewList.insert(aNewList.end(), *aIter);
+                        }
+                    }
 
-					if(aNewList.empty())
-					{
-						// no glues left
-						bErase = true;
-					}
-					else
-					{
-						// copy back new list
-						aIndices->second = aNewList;
-					}
-				}
-				else
-				{
-					// no glues at all
-					bErase = true;
-				}
+                    if(aNewList.empty())
+                    {
+                        // no glues left
+                        bErase = true;
+                    }
+                    else
+                    {
+                        // copy back new list
+                        aIndices->second = aNewList;
+                    }
+                }
+                else
+                {
+                    // no glues at all
+                    bErase = true;
+                }
 
-				if(bErase)
-				{
-					maGlueIndices.erase(aIndices);
-				}
+                if(bErase)
+                {
+                    maGlueIndices.erase(aIndices);
+                }
 
-				aIndices = aNext;
-			}
-		}
+                aIndices = aNext;
+            }
+        }
 
 		void Selection::handleChange()
 		{

@@ -45,7 +45,7 @@
 #include <svx/svdmodel.hxx>
 #include <svx/svdundo.hxx>
 #include <svx/svdview.hxx>
-#include <svx/svdglue.hxx>
+#include <svx/sdrglue.hxx>
 #include <svx/svdobj.hxx>
 #include <svx/svdograf.hxx>
 #include <svx/svdattrx.hxx>
@@ -55,7 +55,7 @@
 #include <svx/sdr/overlay/overlayobjectlist.hxx>
 #include <svx/sdr/overlay/overlayrollingrectangle.hxx>
 #include <svx/sdr/overlay/overlaymanager.hxx>
-#include <svx/svdglue.hxx>
+#include <svx/sdrglue.hxx>
 #include <svx/svdobj.hxx>
 #include <svx/svdview.hxx>
 #include <svl/itemiter.hxx>
@@ -947,44 +947,52 @@ bool SdrPaintView::KeyInput(const KeyEvent& /*rKEvt*/, Window* /*pWin*/)
 
 void SdrPaintView::GlueInvalidate() const
 {
-	const sal_uInt32 nWindowCount(PaintWindowCount());
+    const sal_uInt32 nWindowCount(PaintWindowCount());
 
-	for(sal_uInt32 nWinNum(0); nWinNum < nWindowCount; nWinNum++)
-	{
-		SdrPaintWindow* pPaintWindow = GetPaintWindow(nWinNum);
+    for(sal_uInt32 nWinNum(0); nWinNum < nWindowCount; nWinNum++)
+    {
+        SdrPaintWindow* pPaintWindow = GetPaintWindow(nWinNum);
 
-		if(pPaintWindow->OutputToWindow()) 
-		{
-			OutputDevice& rOutDev = pPaintWindow->GetOutputDevice();
-			const basegfx::B2DVector aLogicHalfSevenPix(rOutDev.GetInverseViewTransformation() * basegfx::B2DVector(3.5, 3.5));
+        if(pPaintWindow->OutputToWindow()) 
+        {
+            OutputDevice& rOutDev = pPaintWindow->GetOutputDevice();
+            const basegfx::B2DVector aLogicHalfSevenPix(rOutDev.GetInverseViewTransformation() * basegfx::B2DVector(3.5, 3.5));
 
-			if(mpPageView)
-			{
-				const SdrObjList* pOL = mpPageView->GetCurrentObjectList();
-				const sal_uInt32 nObjAnz(pOL->GetObjCount());
-				
-				for(sal_uInt32 nObjNum(0); nObjNum < nObjAnz; nObjNum++) 
-				{
-					const SdrObject* pObj=pOL->GetObj(nObjNum);
-					const SdrGluePointList* pGPL=pObj->GetGluePointList();
+            if(mpPageView)
+            {
+                const SdrObjList* pOL = mpPageView->GetCurrentObjectList();
+                const sal_uInt32 nObjAnz(pOL->GetObjCount());
+                
+                for(sal_uInt32 nObjNum(0); nObjNum < nObjAnz; nObjNum++) 
+                {
+                    const SdrObject* pObj = pOL->GetObj(nObjNum);
+                    const sdr::glue::List* pGPL = pObj ? pObj->GetGluePointList(false) : 0;
 
-					if(pGPL && pGPL->GetCount()) 
-					{
-						const basegfx::B2DRange aObjectRange(sdr::legacy::GetSnapRange(*pObj));
+                    if(pGPL) 
+                    {
+                        const sdr::glue::PointVector aGluePointVecor(pGPL->getVector());
 
-						for(sal_uInt32 a(0); a < pGPL->GetCount(); a++)
-						{
-							const SdrGluePoint& rCandidate = (*pGPL)[a];
-							const basegfx::B2DPoint aPos(rCandidate.GetAbsolutePos(aObjectRange));
-							const basegfx::B2DRange aRange(aPos - aLogicHalfSevenPix, aPos + aLogicHalfSevenPix);
+                        for(sal_uInt32 a(0); a < aGluePointVecor.size(); a++)
+                        {
+                            const sdr::glue::Point* pCandidate = aGluePointVecor[a];
 
-							InvalidateOneWin((Window&)rOutDev, aRange);
-						}
-					}
-				}
-			}
-		}
-	}
+                            if(pCandidate)
+                            {
+                                const basegfx::B2DPoint aPos(pObj->getSdrObjectTransformation() * pCandidate->getUnitPosition());
+                                const basegfx::B2DRange aRange(aPos - aLogicHalfSevenPix, aPos + aLogicHalfSevenPix);
+
+                                InvalidateOneWin((Window&)rOutDev, aRange);
+                            }
+                            else
+                            {
+                                OSL_ENSURE(false, "Got sdr::glue::PointVector with empty entries (!)");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 void SdrPaintView::InvalidateAllWin() const

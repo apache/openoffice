@@ -69,40 +69,41 @@ public:
 };
 
 ImplConnectMarkerOverlay::ImplConnectMarkerOverlay(const SdrCreateView& rView, SdrObject& rObject)
-:	mrObject(rObject)
+:   mrObject(rObject)
 {
-	basegfx::B2DPolyPolygon aB2DPolyPolygon(rObject.TakeXorPoly());
+    basegfx::B2DPolyPolygon aB2DPolyPolygon(rObject.TakeXorPoly());
 
-	for(sal_uInt32 a(0); a < rView.PaintWindowCount(); a++)
-	{
-		SdrPaintWindow* pCandidate = rView.GetPaintWindow(a);
-		::sdr::overlay::OverlayManager* pTargetOverlay = pCandidate->GetOverlayManager();
+    for(sal_uInt32 a(0); a < rView.PaintWindowCount(); a++)
+    {
+        SdrPaintWindow* pCandidate = rView.GetPaintWindow(a);
+        ::sdr::overlay::OverlayManager* pTargetOverlay = pCandidate->GetOverlayManager();
 
-		if(pTargetOverlay)
-		{
-			const basegfx::B2DVector aHalfLogicSize(pTargetOverlay->getOutputDevice().GetInverseViewTransformation() * basegfx::B2DVector(4.0, 4.0));
+        if(pTargetOverlay)
+        {
+            const basegfx::B2DVector aHalfLogicSize(pTargetOverlay->getOutputDevice().GetInverseViewTransformation() * basegfx::B2DVector(4.0, 4.0));
 
-			// object
-			::sdr::overlay::OverlayPolyPolygonStripedAndFilled* pNew = new ::sdr::overlay::OverlayPolyPolygonStripedAndFilled(
+            // object
+            ::sdr::overlay::OverlayPolyPolygonStripedAndFilled* pNew = new ::sdr::overlay::OverlayPolyPolygonStripedAndFilled(
                 aB2DPolyPolygon);
-			pTargetOverlay->add(*pNew);
-			maObjects.append(*pNew);
+            pTargetOverlay->add(*pNew);
+            maObjects.append(*pNew);
 
-			// gluepoints
-			for(sal_uInt32 i(0); i < 4; i++) 
-			{
-				const SdrGluePoint aGluePoint(rObject.GetVertexGluePoint(i));
-				const basegfx::B2DPoint& rPosition = aGluePoint.GetAbsolutePos(sdr::legacy::GetSnapRange(rObject));
-				const basegfx::B2DRange aBigRange(rPosition - aHalfLogicSize, rPosition + aHalfLogicSize);
-				const basegfx::B2DPolygon aTempPoly(basegfx::tools::createPolygonFromRect(aBigRange));
+            // TTTT:GLUE
+            // gluepoints
+            for(sal_uInt32 i(0); i < 4; i++) 
+            {
+                const sdr::glue::Point aGluePoint(rObject.GetVertexGluePoint(i));
+                const basegfx::B2DPoint aPosition(rObject.getSdrObjectTransformation() * aGluePoint.getUnitPosition());
+                const basegfx::B2DRange aBigRange(aPosition - aHalfLogicSize, aPosition + aHalfLogicSize);
+                const basegfx::B2DPolygon aTempPoly(basegfx::tools::createPolygonFromRect(aBigRange));
 
                 pNew = new ::sdr::overlay::OverlayPolyPolygonStripedAndFilled(
                     basegfx::B2DPolyPolygon(aTempPoly));
-				pTargetOverlay->add(*pNew);
-				maObjects.append(*pNew);
-			}
-		}
-	}
+                pTargetOverlay->add(*pNew);
+                maObjects.append(*pNew);
+            }
+        }
+    }
 }
 
 ImplConnectMarkerOverlay::~ImplConnectMarkerOverlay()

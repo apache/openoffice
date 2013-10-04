@@ -521,81 +521,101 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 										nConnectorCount++;
 								}
 
-								// #83525# try to re-establish connections at clones
-								if(nConnectorCount)
-								{
-									for(a = 0; a < aConnectorContainer.Count(); a++)
-									{
-										ImpRememberOrigAndClone* pRem = (ImpRememberOrigAndClone*)aConnectorContainer.GetObject(a);
-										SdrEdgeObj* pOrigEdge = dynamic_cast< SdrEdgeObj* >(pRem->pOrig);
-										SdrEdgeObj* pCloneEdge = dynamic_cast< SdrEdgeObj* >(pRem->pClone);
+                                // #83525# try to re-establish connections at clones
+                                if(nConnectorCount)
+                                {
+                                    for(a = 0; a < aConnectorContainer.Count(); a++)
+                                    {
+                                        ImpRememberOrigAndClone* pRem = (ImpRememberOrigAndClone*)aConnectorContainer.GetObject(a);
+                                        SdrEdgeObj* pOrigEdge = dynamic_cast< SdrEdgeObj* >(pRem->pOrig);
+                                        SdrEdgeObj* pCloneEdge = dynamic_cast< SdrEdgeObj* >(pRem->pClone);
 
-										if(pOrigEdge && pCloneEdge)
-										{
-											// test first connection
-											SdrObjConnection& rConn0 = pOrigEdge->GetConnection(false);
-											SdrObject* pConnObj = rConn0.GetObject();
-											if(pConnObj)
-											{
-												SdrObject* pConnClone = ImpGetClone(aConnectorContainer, pConnObj);
-												if(pConnClone)
-												{
-													// if dest obj was cloned, too, re-establish connection
-													pCloneEdge->ConnectToNode(false, pConnClone);
-													pCloneEdge->GetConnection(false).SetConnectorId(rConn0.GetConnectorId());
-												}
-												else
-												{
-													// set position of connection point of original connected object
-													const SdrGluePointList* pGlueList = pConnObj->GetGluePointList();
-													if(pGlueList)
-													{
-														sal_uInt32 nInd = pGlueList->FindGluePoint(rConn0.GetConnectorId());
+                                        if(pOrigEdge && pCloneEdge)
+                                        {
+                                            // test first connection
+                                            SdrObjConnection& rConn0 = pOrigEdge->GetConnection(false);
+                                            SdrObject* pConnObj = rConn0.GetObject();
+                                            if(pConnObj)
+                                            {
+                                                SdrObject* pConnClone = ImpGetClone(aConnectorContainer, pConnObj);
+                                                if(pConnClone)
+                                                {
+                                                    // if dest obj was cloned, too, re-establish connection
+                                                    pCloneEdge->ConnectToNode(false, pConnClone);
+                                                    pCloneEdge->GetConnection(false).SetConnectorId(rConn0.GetConnectorId());
+                                                }
+                                                else
+                                                {
+                                                    // set position of connection point of original connected object
+                                                    const sdr::glue::List* pGlueList = pConnObj->GetGluePointList(false);
+                                                    if(pGlueList)
+                                                    {
+                                                        const sdr::glue::Point* pCandidate = pGlueList->findByID(rConn0.GetConnectorId());
 
-														if(SDRGLUEPOINT_NOTFOUND != nInd)
-														{
-															const SdrGluePoint& rGluePoint = (*pGlueList)[nInd];
-															basegfx::B2DPoint aPosition = rGluePoint.GetAbsolutePos(sdr::legacy::GetSnapRange(*pConnObj));
-															aPosition += aVector;
-															pCloneEdge->SetTailPoint(false, aPosition);
-														}
-													}
-												}
-											}
+                                                        if(pCandidate)
+                                                        {
+                                                            const basegfx::B2DPoint aPosition(pConnObj->getSdrObjectTransformation() * pCandidate->getUnitPosition());
 
-											// test second connection
-											SdrObjConnection& rConn1 = pOrigEdge->GetConnection(true);
-											pConnObj = rConn1.GetObject();
-											if(pConnObj)
-											{
-												SdrObject* pConnClone = ImpGetClone(aConnectorContainer, pConnObj);
-												if(pConnClone)
-												{
-													// if dest obj was cloned, too, re-establish connection
-													pCloneEdge->ConnectToNode(true, pConnClone);
-													pCloneEdge->GetConnection(true).SetConnectorId(rConn1.GetConnectorId());
-												}
-												else
-												{
-													// set position of connection point of original connected object
-													const SdrGluePointList* pGlueList = pConnObj->GetGluePointList();
-													if(pGlueList)
-													{
-														sal_uInt32 nInd = pGlueList->FindGluePoint(rConn1.GetConnectorId());
+                                                            pCloneEdge->SetTailPoint(false, aPosition + aVector);
+                                                        }
 
-														if(SDRGLUEPOINT_NOTFOUND != nInd)
-														{
-															const SdrGluePoint& rGluePoint = (*pGlueList)[nInd];
-															basegfx::B2DPoint aPosition = rGluePoint.GetAbsolutePos(sdr::legacy::GetSnapRange(*pConnObj));
-															aPosition += aVector;
-															pCloneEdge->SetTailPoint(true, aPosition);
-														}
-													}
-												}
-											}
-										}
-									}
-								}
+                                                        // TTTT:GLUE
+                                                        //sal_uInt32 nInd = pGlueList->FindGluePoint(rConn0.GetConnectorId());
+                                                        //
+                                                        //if(SDRGLUEPOINT_NOTFOUND != nInd)
+                                                        //{
+                                                        //    const sdr::glue::Point& rGluePoint = (*pGlueList)[nInd];
+                                                        //    basegfx::B2DPoint aPosition = rGluePoint.GetAbsolutePos(sdr::legacy::GetSnapRange(*pConnObj));
+                                                        //    aPosition += aVector;
+                                                        //    pCloneEdge->SetTailPoint(false, aPosition);
+                                                        //}
+                                                    }
+                                                }
+                                            }
+
+                                            // test second connection
+                                            SdrObjConnection& rConn1 = pOrigEdge->GetConnection(true);
+                                            pConnObj = rConn1.GetObject();
+                                            if(pConnObj)
+                                            {
+                                                SdrObject* pConnClone = ImpGetClone(aConnectorContainer, pConnObj);
+                                                if(pConnClone)
+                                                {
+                                                    // if dest obj was cloned, too, re-establish connection
+                                                    pCloneEdge->ConnectToNode(true, pConnClone);
+                                                    pCloneEdge->GetConnection(true).SetConnectorId(rConn1.GetConnectorId());
+                                                }
+                                                else
+                                                {
+                                                    // set position of connection point of original connected object
+                                                    const sdr::glue::List* pGlueList = pConnObj->GetGluePointList(false);
+                                                    if(pGlueList)
+                                                    {
+                                                        const sdr::glue::Point* pCandidate = pGlueList->findByID(rConn1.GetConnectorId());
+
+                                                        if(pCandidate)
+                                                        {
+                                                            const basegfx::B2DPoint aPosition(pConnObj->getSdrObjectTransformation() * pCandidate->getUnitPosition());
+
+                                                            pCloneEdge->SetTailPoint(true, aPosition + aVector);
+                                                        }
+
+                                                        // TTTT:GLUE
+                                                        //sal_uInt32 nInd = pGlueList->FindGluePoint(rConn1.GetConnectorId());
+                                                        //
+                                                        //if(SDRGLUEPOINT_NOTFOUND != nInd)
+                                                        //{
+                                                        //    const sdr::glue::Point& rGluePoint = (*pGlueList)[nInd];
+                                                        //    basegfx::B2DPoint aPosition = rGluePoint.GetAbsolutePos(sdr::legacy::GetSnapRange(*pConnObj));
+                                                        //    aPosition += aVector;
+                                                        //    pCloneEdge->SetTailPoint(true, aPosition);
+                                                        //}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
 
 								// #83525# cleanup remember classes
 								for(a = 0; a < aConnectorContainer.Count(); a++)
