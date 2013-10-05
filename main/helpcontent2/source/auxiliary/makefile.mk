@@ -55,8 +55,6 @@ aux_alllangiso:=$(foreach,i,$(alllangiso) $(foreach,j,$(aux_langdirs) $(eq,$i,$j
 
 WITH_LANG!:=$(aux_alllangiso)
 
-.EXPORT : WITH_LANG
-
 LOCTREEFILES:=$(foreach,i,$(aux_alllangiso) $(foreach,j,$(TREEFILES) $(COMMONMISC)$/$i$/$j))
 .ELSE			#IF "$(WITH_LANG)"!=""
 aux_langdirs:=en-US
@@ -64,6 +62,7 @@ LOCTREEFILES:=$(foreach,j,$(TREEFILES) $(COMMONMISC)$/en-US$/$j)
 .ENDIF			#IF "$(WITH_LANG)"!=""
 
 $(COMMONMISC)$/treefiles.done : $(LOCTREEFILES)
+        @echo $(LOCTREEEFILES)
 	+$(PERL) $(PRJ)$/helpers$/update_tree.pl && $(TOUCH) $@
 
 %.created:
@@ -76,12 +75,12 @@ $(LOCTREEFILES) : $(TREEFILES) $$(@:d)$/dir.created
 .IF "$(LOCALIZATION_FOUND)"=="YES"
 $(LOCTREEFILES) : $(TRYSDF:d:d:d:d)$/text$/shared/localize.sdf
 .ELSE			# "$(LOCALIZATION_FOUND)"=="YES"
-$(COMMONMISC)/unpack.done : $(SOLARCOMMONSDFDIR)$/$(PRJNAME).zip
-    @@-$(MKDIRHIER) $(COMMONMISC)$/$(PRJNAME)_$(TARGET)
-	unzip -o -d $(COMMONMISC)$/$(PRJNAME) $(SOLARCOMMONSDFDIR)$/$(PRJNAME).zip 
-    $(TOUCH) $@
+#$(COMMONMISC)/unpack.done : $(SOLARCOMMONSDFDIR)$/$(PRJNAME).zip
+#    @@-$(MKDIRHIER) $(COMMONMISC)$/$(PRJNAME)_$(TARGET)
+#	unzip -o -d $(COMMONMISC)$/$(PRJNAME) $(SOLARCOMMONSDFDIR)$/$(PRJNAME).zip 
+#    $(TOUCH) $@
 
-$(LOCTREEFILES) : $(COMMONMISC)/unpack.done
+#$(LOCTREEFILES) : $(COMMONMISC)/unpack.done
 
 .ENDIF			# "$(LOCALIZATION_FOUND)"=="YES"
 .ENDIF			# "$(WITH_LANG)"!=""
