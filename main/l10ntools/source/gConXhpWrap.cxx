@@ -322,6 +322,7 @@ void convert_xhp::handleSpecial(char *yytext)
   {
     msCollector.erase(nX);
     mcMemory.convertFromInetString(sText);
+    msCollector += sText;
   }
 }
 

@@ -8,7 +8,7 @@ h2	helpcontent2\source\text\sdraw                         nmake - all hp2_sdra h
 h2	helpcontent2\source\text\shared                        nmake - all hp2_shar hp2_aux NULL
 h2	helpcontent2\source\text\simpress                      nmake - all hp2_simp hp2_aux NULL
 h2	helpcontent2\source\text\smath                      nmake - all hp2_smat hp2_aux NULL
-h2	helpcontent2\source\text\swrite                      nmake - all hp2_swri hp2_aux NULL
+h2	helpcontent2\source\text\swriter                      nmake - all hp2_swri hp2_aux NULL
 h2	helpcontent2\util\sbasic                               nmake - all hp2_ut_sbas hp2_aux hp2_sbas hp2_scal hp2_scha hp2_sdra hp2_shar hp2_simp hp2_smat hp2_swri NULL
 h2	helpcontent2\util\schart                               nmake - all hp2_ut_scha hp2_ut_sbas NULL
 h2	helpcontent2\util\scalc                               nmake - all hp2_ut_scal hp2_ut_sbas NULL
