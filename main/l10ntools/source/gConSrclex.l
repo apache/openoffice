@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) {IMPLptr->lexRead(buf, &result, max_size);}
+#define YY_INPUT(buf,result,max_size) {int xres; IMPLptr->lexRead(buf, &xres, max_size); result = (yy_size_t)xres;}
 %}
 
 
