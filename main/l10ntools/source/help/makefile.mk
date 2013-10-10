@@ -27,7 +27,9 @@ TARGET  = HelpLinker
 LIBBASENAME = helplinker
 PACKAGE = com$/sun$/star$/help
 TARGETTYPE=CUI
-
+.IF "$(MAKETARGETS)"=="genPO"
+genPO:
+.ELSE
 # --- Settings -----------------------------------------------------
 
 .INCLUDE : settings.mk
@@ -106,3 +108,4 @@ JARCOMPRESS        = TRUE
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
+.ENDIF
