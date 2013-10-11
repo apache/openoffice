@@ -32,6 +32,10 @@ TARGET=ooo_mozab
 
 # --- Files --------------------------------------------------------
 
+.IF "$(MAKETARGETS)"=="genPO"
+genPO:
+.ELSE
+
 .IF "$(WITH_MOZILLA)"=="NO"
 
 all:
@@ -435,4 +439,5 @@ $(OUT)$/zipped$/$(OS)$(COM)UBruntime.zip : zipped$/$(OS)$(COM)Pruntime.zip zippe
 
 .INCLUDE : extractfiles.mk
 
+.ENDIF
 .ENDIF

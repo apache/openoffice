@@ -29,6 +29,9 @@ TARGET=moz_unzip
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :  settings.mk
+.IF "$(MAKETARGETS)"=="genPO"
+genPO:
+.ELSE
 
 # --- Files --------------------------------------------------------
 
@@ -210,4 +213,4 @@ $(MISC)$/unpacked_$(TARGET)_inc $(BIN)$/mozruntime.zip
     $(TOUCH) $@     
 
 .ENDIF   # unpack mozab zips
-
+.ENDIF
