@@ -19,9 +19,11 @@
 #  
 #**************************************************************
 
-PRJ=../../..
+PRJ=..$/..$/..
 PRJNAME=help_sbasic
-TARGET=helper
+PACKAGE = text/sbasic
+TARGET  = text_sbasic
+MODULE  = sbasic
 
 LANGUAGE_FILELIST= guide/create_dialog.xhp \
 guide/insert_control.xhp \
@@ -324,7 +326,14 @@ shared/main0601.xhp \
 guide/control_properties.xhp
 
 
-
+.IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE :	settings.mk
+.INCLUDE : $(PRJ)$/settings.pmk
 
-.INCLUDE :	target.mk
+.INCLUDE :  target.mk
+.INCLUDE : tg_help.mk
+.ELSE
+.INCLUDE :  settings.mk
+.INCLUDE :  target.mk
+.ENDIF
+

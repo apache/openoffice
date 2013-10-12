@@ -23,15 +23,9 @@
 
 # edit to match directory level 
 PRJ		= ..$/..$/..
-# same for all makefiles in "helpcontent2"
 PRJNAME = help_schart
-
-# edit to match the current package
 PACKAGE = text/schart
-# uniqe name (module wide);
-# using a modified form of package should do here
 TARGET  = text_schart
-# edit to match the current module
 MODULE  = schart
 
 # --- Settings -----------------------------------------------------
@@ -94,14 +88,6 @@ main0503.xhp
 .IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : settings.mk
 .INCLUDE : $(PRJ)$/settings.pmk
-
-# this list matches the *.xhp files to process
-XHPFILES = \
-   main0000.xhp \
-   main0202.xhp \
-   main0503.xhp 
-	
-# --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
 .INCLUDE : tg_help.mk
