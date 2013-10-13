@@ -42,7 +42,8 @@ ALLTAR : $(HELP_OUT)$/$(TARGET).done $(HELP_OUT)$/xhp_changed.flag optix
 $(HLANGXHPFILES) : $$(@:d)thisdir.created
 
 $(XHPDEST)$/{$(aux_alllangiso)}$/$(SHELL_PACKAGE)$/%.xhp :| %.xhp
-    @$(TOUCH) $@
+    @$(COMMAND_ECHO) $(COPY) $<  $@
+
 # internal dependencies not sufficient to trigger merge?
 #    @$(NULL)
 
