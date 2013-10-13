@@ -167,6 +167,7 @@ class l10nMem_impl
     void showVerbose   (const std::string& sText, int iLineNo);
 
     void setModuleName (const std::string& sModuleName);
+    const std::string& getModuleName (void);
     void loadEntryKey  (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,

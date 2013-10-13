@@ -87,6 +87,8 @@ bool l10nMem::isError()
      { return l10nMem_impl::mcImpl->mbInError; }
 void l10nMem::setModuleName(const std::string& sM)
      { l10nMem_impl::mcImpl->setModuleName(sM); }
+const std::string& l10nMem::getModuleName ()
+     { return l10nMem_impl::mcImpl->getModuleName(); }
 void l10nMem::setLanguage(const std::string& sL, bool bC)
      { l10nMem_impl::mcImpl->mcDb.setLanguage(sL, bC); }
 void l10nMem::setConvert(bool bC, bool bS)
@@ -172,6 +174,14 @@ void l10nMem_impl::showVerbose(const std::string& sText, int iLineNo)
 void l10nMem_impl::setModuleName(const std::string& sModuleName)
 {
   msModuleName = sModuleName;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+const std::string& l10nMem_impl::getModuleName()
+{
+  return msModuleName;
 }
 
 

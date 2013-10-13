@@ -83,7 +83,7 @@ void convert_xhp::execute()
 
     for (int i = 0; mcMemory.getMergeLang(sLang, sFile); ++i)
     {
-      sFile2 = sLang + "/" + msSourceFile;
+      sFile2 = sLang + "/text/" + mcMemory.getModuleName().substr(5) + "/" + msSourceFile;
       sFile  = msTargetPath + sFile2;
       mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
       if (!mcOutputFiles[i].is_open())

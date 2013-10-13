@@ -67,6 +67,7 @@ class l10nMem
     bool        isError            ();
 
     void setModuleName (const std::string& sModuleName);
+    const std::string& getModuleName (void);
     void setLanguage   (const std::string& sLanguage,
                         bool               bCreate);
     void setConvert    (bool               bConvert,
