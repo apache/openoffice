@@ -35,7 +35,7 @@ HELP_OUT:=$(COMMONMISC)
 HELP_OUT:=$(MISC)
 .ENDIF          # "$(XHPDEST)"==""
 
-HLANGXHPFILES*:=$(foreach,i,$(LANGUAGE_FILELIST) $(foreach,j,$(aux_alllangiso) $(XHPDEST)$/$j$/$(SHELL_PACKAGE)$/$(i:f)))
+HLANGXHPFILES*:=$(foreach,i,$(LANGUAGE_FILELIST) $(foreach,j,$(aux_alllangiso) $(XHPDEST)$/$j$/$(SHELL_PACKAGE)$/$(i)))
 
 ALLTAR : $(HELP_OUT)$/$(TARGET).done $(HELP_OUT)$/xhp_changed.flag optix
 
