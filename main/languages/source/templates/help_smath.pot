@@ -644,7 +644,7 @@ msgid  "Meaning"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN10E08
-msgid  "<item type=\"literal\"><</item> or <item type=\"literal\">lt</item>"
+msgid  "<item type=\"literal\">&lt;<</item> or <item type=\"literal\">lt</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3156247
@@ -656,7 +656,7 @@ msgid  "Less than"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID9464726
-msgid  "<item type=\"literal\"><<</item> or <item type=\"literal\">ll</item>"
+msgid  "<item type=\"literal\">&lt;<&lt;<</item> or <item type=\"literal\">ll</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3149922.80
@@ -664,7 +664,7 @@ msgid  "Much less than"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN11059
-msgid  "<item type=\"literal\"><=</item> or <item type=\"literal\">le</item>"
+msgid  "<item type=\"literal\">&lt;<=</item> or <item type=\"literal\">le</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3153031
@@ -676,7 +676,7 @@ msgid  "Less than or equal to"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN10D00
-msgid  "<item type=\"literal\"><></item> or <item type=\"literal\">neq</item>"
+msgid  "<item type=\"literal\">&lt;<&gt;></item> or <item type=\"literal\">neq</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3155548
@@ -696,7 +696,7 @@ msgid  "Equation"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN10E4D
-msgid  "<item type=\"literal\">></item> or <item type=\"literal\">gt</item>"
+msgid  "<item type=\"literal\">&gt;></item> or <item type=\"literal\">gt</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3152978
@@ -708,7 +708,7 @@ msgid  "Greater than"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN1109E
-msgid  "<item type=\"literal\">>=</item> or <item type=\"literal\">ge</item>"
+msgid  "<item type=\"literal\">&gt;>=</item> or <item type=\"literal\">ge</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3152741
@@ -720,7 +720,7 @@ msgid  "Greater than or equal to"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_IDN11183
-msgid  "<item type=\"literal\">>></item> or <item type=\"literal\">gg</item>"
+msgid  "<item type=\"literal\">&gt;>&gt;></item> or <item type=\"literal\">gg</item>"
 msgstr ""
 
 #: 01/03091502.xhp#PAR_ID3153863.74
@@ -1420,7 +1420,7 @@ msgid  "is included in"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3150706.34
-msgid  "<ahelp hid=\"HID_SMA_XINY\">Use the icon to insert the <emph>is included in</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?> in <?></emph> directly into the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XINY\">Use the icon to insert the <emph>is included in</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;> in &lt;<?&gt;></emph> directly into the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN100BC
@@ -1432,7 +1432,7 @@ msgid  "is not included in"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3150997.36
-msgid  "<ahelp hid=\"HID_SMA_XNOTINY\">Use this icon to insert the <emph>is not included in</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?> notin <?> </emph>in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XNOTINY\">Use this icon to insert the <emph>is not included in</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;> notin &lt;<?&gt;> </emph>in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN100F7
@@ -1444,7 +1444,7 @@ msgid  "includes"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3149338.52
-msgid  "<ahelp hid=\"HID_SMA_XOWNSY\">Use this icon to insert the set operator <emph>includes </emph>with two placeholders.</ahelp> You can also enter <emph><?> owns <?></emph> or <emph><?> ni <?></emph> directly in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XOWNSY\">Use this icon to insert the set operator <emph>includes </emph>with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;> owns &lt;<?&gt;></emph> or <emph>&lt;<?&gt;> ni &lt;<?&gt;></emph> directly in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN10135
@@ -1468,7 +1468,7 @@ msgid  "Intersection"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3147573.54
-msgid  "<ahelp hid=\"HID_SMA_XINTERSECTIONY\">Use this icon to insert two placeholders with the set operator <emph>intersection of sets </emph>.</ahelp> The same happens if you enter <emph><?> intersection <?></emph> Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XINTERSECTIONY\">Use this icon to insert two placeholders with the set operator <emph>intersection of sets </emph>.</ahelp> The same happens if you enter <emph>&lt;<?&gt;> intersection &lt;<?&gt;></emph> Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN101A7
@@ -1480,7 +1480,7 @@ msgid  "Union"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3154376.56
-msgid  "<ahelp hid=\"HID_SMA_XUNIONY\">Use this icon to insert the <emph>union</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?> union <?> </emph>directly in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XUNIONY\">Use this icon to insert the <emph>union</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;> union &lt;<?&gt;> </emph>directly in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN101E0
@@ -1492,7 +1492,7 @@ msgid  "Difference"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3145786.58
-msgid  "<ahelp hid=\"HID_SMA_XSETMINUSY\">Use this icon to insert the <emph>difference</emph> set operator.</ahelp> You can also enter <emph><?> setminus <?></emph> or <emph><?> bslash <?></emph> in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XSETMINUSY\">Use this icon to insert the <emph>difference</emph> set operator.</ahelp> You can also enter <emph>&lt;<?&gt;> setminus &lt;<?&gt;></emph> or <emph>&lt;<?&gt;> bslash &lt;<?&gt;></emph> in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN1021C
@@ -1504,7 +1504,7 @@ msgid  "Quotient set"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3149549.51
-msgid  "<ahelp hid=\"HID_SMA_XSLASHY\">Use this icon to insert a slash for creating a <emph>quotient set</emph> with two placeholders.</ahelp> Enter <emph><?>slash<?></emph> in the Commands window, to achieve the same result."
+msgid  "<ahelp hid=\"HID_SMA_XSLASHY\">Use this icon to insert a slash for creating a <emph>quotient set</emph> with two placeholders.</ahelp> Enter <emph>&lt;<?&gt;>slash&lt;<?&gt;></emph> in the Commands window, to achieve the same result."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN10255
@@ -1528,7 +1528,7 @@ msgid  "Subset"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3156227.61
-msgid  "<ahelp hid=\"HID_SMA_XSUBSETY\">Use this icon to insert the <emph>is a subset of</emph> set operator.</ahelp> You can also enter <emph><?>subset<?></emph> directly in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XSUBSETY\">Use this icon to insert the <emph>is a subset of</emph> set operator.</ahelp> You can also enter <emph>&lt;<?&gt;>subset&lt;<?&gt;></emph> directly in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN102C9
@@ -1540,7 +1540,7 @@ msgid  "Subset or equal to"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3147460.63
-msgid  "<ahelp hid=\"HID_SMA_XSUBSETEQY\">Use this icon to insert the <emph>is a subset or equal to</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?>subseteq<?></emph> in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XSUBSETEQY\">Use this icon to insert the <emph>is a subset or equal to</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;>subseteq&lt;<?&gt;></emph> in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN10304
@@ -1552,7 +1552,7 @@ msgid  "Superset"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3151088.65
-msgid  "<ahelp hid=\"HID_SMA_XSUPSETY\">Use this icon to insert the set operator <emph>is a superset of</emph> and two placeholders.</ahelp> You can also enter <emph><?>supset<?></emph> in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XSUPSETY\">Use this icon to insert the set operator <emph>is a superset of</emph> and two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;>supset&lt;<?&gt;></emph> in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN1033F
@@ -1564,7 +1564,7 @@ msgid  "Superset or equal to"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3151119.67
-msgid  "<ahelp hid=\"HID_SMA_XSUPSETEQY\">Use this icon to insert the set operator <emph>is a super set or equal to</emph> with two placeholders.</ahelp> Alternatively, you can enter <emph><?>supseteq<?> </emph>in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XSUPSETEQY\">Use this icon to insert the set operator <emph>is a super set or equal to</emph> with two placeholders.</ahelp> Alternatively, you can enter <emph>&lt;<?&gt;>supseteq&lt;<?&gt;> </emph>in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN1037A
@@ -1576,7 +1576,7 @@ msgid  "not subset"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3153968.47
-msgid  "<ahelp hid=\"HID_SMA_XNSUBSETY\">Use this icon to insert the <emph>not subset</emph> set operator with two placeholders.</ahelp> Instead of this, you can also enter <emph><?>nsubset<?></emph>."
+msgid  "<ahelp hid=\"HID_SMA_XNSUBSETY\">Use this icon to insert the <emph>not subset</emph> set operator with two placeholders.</ahelp> Instead of this, you can also enter <emph>&lt;<?&gt;>nsubset&lt;<?&gt;></emph>."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN103B7
@@ -1588,7 +1588,7 @@ msgid  "not subset or equal to"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3149249.49
-msgid  "<ahelp hid=\"HID_SMA_XNSUBSETEQY\">Use this icon to insert the <emph>not subset or equal</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?>nsubseteq<?> </emph>in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XNSUBSETEQY\">Use this icon to insert the <emph>not subset or equal</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;>nsubseteq&lt;<?&gt;> </emph>in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN103F4
@@ -1600,7 +1600,7 @@ msgid  "not superset"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3149995.48
-msgid  "<ahelp hid=\"HID_SMA_XNSUPSETY\">Use this icon to insert the <emph>not superset</emph> set operator with two placeholders.</ahelp> You can also enter <emph><?>nsupset<?> </emph>in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XNSUPSETY\">Use this icon to insert the <emph>not superset</emph> set operator with two placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;>nsupset&lt;<?&gt;> </emph>in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN10431
@@ -1612,7 +1612,7 @@ msgid  "not superset or equal to"
 msgstr ""
 
 #: 01/03090800.xhp#PAR_ID3155810.50
-msgid  "<ahelp hid=\"HID_SMA_XNSUPSETEQY\">Use this icon to insert the <emph>not superset or equal</emph> set operator with two placeholders.</ahelp> Instead of this you can type <emph><?>nsupseteq<?> </emph>in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XNSUPSETEQY\">Use this icon to insert the <emph>not superset or equal</emph> set operator with two placeholders.</ahelp> Instead of this you can type <emph>&lt;<?&gt;>nsupseteq&lt;<?&gt;> </emph>in the Commands window."
 msgstr ""
 
 #: 01/03090800.xhp#PAR_IDN1046E
@@ -1844,7 +1844,7 @@ msgid  "is equal"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3152947.6
-msgid  "<ahelp hid=\"HID_SMA_XEQY\">Inserts an equal sign (=) with two placeholders.</ahelp> You can also directly type <emph><?> = <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XEQY\">Inserts an equal sign (=) with two placeholders.</ahelp> You can also directly type <emph>&lt;<?&gt;> = &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN100BF
@@ -1856,7 +1856,7 @@ msgid  "does not equal"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3150976.53
-msgid  "<ahelp hid=\"HID_SMA_XNEQY\">The <emph>neq</emph> icon or command inserts an <emph>inequality</emph> with two placeholders.</ahelp> You can also type <emph><?> neq <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XNEQY\">The <emph>neq</emph> icon or command inserts an <emph>inequality</emph> with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> neq &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN10101
@@ -1868,7 +1868,7 @@ msgid  "identical to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3155181.55
-msgid  "<ahelp hid=\"HID_SMA_XEQUIVY\">Inserts a character for the <emph>identical to</emph> (congruent) relation with two placeholders.</ahelp> You can also type <emph><?> equiv <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XEQUIVY\">Inserts a character for the <emph>identical to</emph> (congruent) relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> equiv &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN10140
@@ -1880,7 +1880,7 @@ msgid  "orthogonal to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3148976.57
-msgid  "<ahelp hid=\"HID_SMA_XORTHOY\">Inserts a character for an <emph>orthogonal</emph> (right angled) relation with two placeholders.</ahelp> You can also type <emph><?> ortho <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XORTHOY\">Inserts a character for an <emph>orthogonal</emph> (right angled) relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> ortho &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN10182
@@ -1892,7 +1892,7 @@ msgid  "divides"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3147079.79
-msgid  "<ahelp hid=\"HID_SMA_XDIVIDESY\">Inserts the <emph>divides</emph> character.</ahelp> You can also type <emph><?> divides <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XDIVIDESY\">Inserts the <emph>divides</emph> character.</ahelp> You can also type <emph>&lt;<?&gt;> divides &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN101BF
@@ -1904,7 +1904,7 @@ msgid  "does not divide"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3149177.81
-msgid  "<ahelp hid=\"HID_SMA_XNDIVIDESY\">This icon inserts the <emph>does not divide</emph> character.</ahelp> You can also type <emph><?>ndivides<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XNDIVIDESY\">This icon inserts the <emph>does not divide</emph> character.</ahelp> You can also type <emph>&lt;<?&gt;>ndivides&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN101FC
@@ -1916,7 +1916,7 @@ msgid  "less than"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3148889.28
-msgid  "<ahelp hid=\"HID_SMA_XLTY\">Inserts the <emph>less than</emph> relation.</ahelp> You can also type <emph><?>lt<?></emph> or <?> < <?> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XLTY\">Inserts the <emph>less than</emph> relation.</ahelp> You can also type <emph>&lt;<?&gt;>lt&lt;<?&gt;></emph> or &lt;<?&gt;> &lt;< &lt;<?&gt;> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN1023B
@@ -1928,7 +1928,7 @@ msgid  "greater than"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3146904.26
-msgid  "<ahelp hid=\"HID_SMA_XGTY\">Inserts the <emph>greater than </emph>relation.</ahelp> You can also type <emph><?> gt <?></emph> or <?> > <?> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XGTY\">Inserts the <emph>greater than </emph>relation.</ahelp> You can also type <emph>&lt;<?&gt;> gt &lt;<?&gt;></emph> or &lt;<?&gt;> &gt;> &lt;<?&gt;> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN10279
@@ -1940,7 +1940,7 @@ msgid  "approximately equal to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3149231.59
-msgid  "<ahelp hid=\"HID_SMA_XAPPROXY\">Inserts the <emph>approximately equal</emph> relation with two placeholders.</ahelp> You can also type <emph><?> approx <?> </emph>in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XAPPROXY\">Inserts the <emph>approximately equal</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> approx &lt;<?&gt;> </emph>in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN102B5
@@ -1952,7 +1952,7 @@ msgid  "parallel to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3147449.61
-msgid  "<ahelp hid=\"HID_SMA_XPARALLELY\">Inserts a <emph>parallel </emph>relation with two placeholders.</ahelp> You can also type <emph><?>parallel<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XPARALLELY\">Inserts a <emph>parallel </emph>relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>parallel&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN102F3
@@ -1964,7 +1964,7 @@ msgid  "less than or equal to (slanted)"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3154078.63
-msgid  "<ahelp hid=\"HID_SMA_XLESLANTY\">Inserts a <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph><?> leslant <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XLESLANTY\">Inserts a <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> leslant &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN10331
@@ -1976,7 +1976,7 @@ msgid  "greater than or equal to (slanted)"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3156098.65
-msgid  "<ahelp hid=\"HID_SMA_XGESLANTY\">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph><?>geslant<?> </emph>in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XGESLANTY\">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>geslant&lt;<?&gt;> </emph>in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN1036F
@@ -1988,7 +1988,7 @@ msgid  "similar or equal to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3155580.67
-msgid  "<ahelp hid=\"HID_SMA_XSIMEQY\">Inserts the <emph>similar or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph><?>simeq<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XSIMEQY\">Inserts the <emph>similar or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>simeq&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN103AD
@@ -2000,7 +2000,7 @@ msgid  "proportional to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3155088.69
-msgid  "<ahelp hid=\"HID_SMA_XPROPY\">Inserts the <emph>proportional to</emph> relation with two placeholders.</ahelp> You can also type <emph><?> prop <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XPROPY\">Inserts the <emph>proportional to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> prop &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN103EB
@@ -2012,7 +2012,7 @@ msgid  "less than or equal to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3150033.32
-msgid  "<ahelp hid=\"HID_SMA_XLEY\">Inserts the <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph><?> le <?></emph> or <emph><?> <= <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XLEY\">Inserts the <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> le &lt;<?&gt;></emph> or <emph>&lt;<?&gt;> &lt;<= &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN1042C
@@ -2024,7 +2024,7 @@ msgid  "greater than or equal to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3155379.30
-msgid  "<ahelp hid=\"HID_SMA_XGEY\">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph><?> ge <?></emph> or <emph><?> >= <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XGEY\">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> ge &lt;<?&gt;></emph> or <emph>&lt;<?&gt;> &gt;>= &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN1046D
@@ -2036,7 +2036,7 @@ msgid  "similar to"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3155947.71
-msgid  "<ahelp hid=\"HID_SMA_XSIMY\">This icon inserts the <emph>similar to</emph> relation with two placeholders.</ahelp> You can also type <emph><?>sim<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XSIMY\">This icon inserts the <emph>similar to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>sim&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN104AB
@@ -2048,7 +2048,7 @@ msgid  "toward"
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3150670.42
-msgid  "<ahelp hid=\"HID_SMA_XTOWARDY\">Inserts a <emph>toward</emph> relation symbol with two placeholders.</ahelp> You can also type <emph><?> toward <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XTOWARDY\">Inserts a <emph>toward</emph> relation symbol with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> toward &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_IDN104E7
@@ -2088,23 +2088,23 @@ msgid  "<ahelp hid=\"HID_SMA_DRARROW\">Inserts the logical operator <emph>arrow 
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3153545.74
-msgid  "To create the <emph>much greater than</emph> relation with two placeholders, type <emph><?> gg <?> </emph>or <emph>>></emph> in the <emph>Commands</emph> window."
+msgid  "To create the <emph>much greater than</emph> relation with two placeholders, type <emph>&lt;<?&gt;> gg &lt;<?&gt;> </emph>or <emph>&gt;>&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3156000.75
-msgid  "Type <emph>ll</emph> or <emph><<</emph> in the <emph>Commands</emph> window to insert the <emph>much less than</emph> relation into the formula."
+msgid  "Type <emph>ll</emph> or <emph>&lt;<&lt;<</emph> in the <emph>Commands</emph> window to insert the <emph>much less than</emph> relation into the formula."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3153749.76
-msgid  "The <emph>is defined as</emph> relation with two placeholders is inserted by typing <emph><?>def<?></emph>."
+msgid  "The <emph>is defined as</emph> relation with two placeholders is inserted by typing <emph>&lt;<?&gt;>def&lt;<?&gt;></emph>."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3154068.77
-msgid  "Insert the <emph>picture by</emph> correspondence character with two placeholders by typing <emph><?> transl <?></emph> in the <emph>Commands</emph> window."
+msgid  "Insert the <emph>picture by</emph> correspondence character with two placeholders by typing <emph>&lt;<?&gt;> transl &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3149592.78
-msgid  "The <emph><?>transr<?></emph> command inserts the <emph>original by</emph> correspondence character with two placeholders."
+msgid  "The <emph>&lt;<?&gt;>transr&lt;<?&gt;></emph> command inserts the <emph>original by</emph> correspondence character with two placeholders."
 msgstr ""
 
 #: 01/03090200.xhp#PAR_ID3154735.52
@@ -2496,7 +2496,7 @@ msgid  "A <emph>back epsilon</emph> can be inserted by typing <emph>backepsilon<
 msgstr ""
 
 #: 01/03091600.xhp#PAR_ID3158042.18
-msgid  "To insert a placeholder into your formula, type <emph><?></emph> in the <emph>Commands</emph> window."
+msgid  "To insert a placeholder into your formula, type <emph>&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#TIT
@@ -2532,7 +2532,7 @@ msgid  "Plus"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3153003.6
-msgid  "<ahelp hid=\"HID_SMA_PLUSX\">Inserts a <emph>plus</emph> with one placeholder.</ahelp> You can also type <emph>+ <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_PLUSX\">Inserts a <emph>plus</emph> with one placeholder.</ahelp> You can also type <emph>+ &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN100C1
@@ -2544,7 +2544,7 @@ msgid  "Minus"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3153717.44
-msgid  "<ahelp hid=\"HID_SMA_MINUSX\">Inserts a <emph>minus</emph> with one placeholder.</ahelp> You can also type <emph>-<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_MINUSX\">Inserts a <emph>minus</emph> with one placeholder.</ahelp> You can also type <emph>-&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN100FD
@@ -2556,7 +2556,7 @@ msgid  "Plus/Minus"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3150260.45
-msgid  "<ahelp hid=\"HID_SMA_PLUSMINUSX\">Inserts a <emph>plus/minus</emph> with one placeholder.</ahelp> You can also type <emph>+-<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_PLUSMINUSX\">Inserts a <emph>plus/minus</emph> with one placeholder.</ahelp> You can also type <emph>+-&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10139
@@ -2568,7 +2568,7 @@ msgid  "Minus/Plus"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3154281.47
-msgid  "<ahelp hid=\"HID_SMA_MINUSPLUSX\">Inserts a <emph>minus/plus</emph> with one placeholder.</ahelp> You can also type <emph>-+<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_MINUSPLUSX\">Inserts a <emph>minus/plus</emph> with one placeholder.</ahelp> You can also type <emph>-+&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10175
@@ -2580,7 +2580,7 @@ msgid  "Addition (plus)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3150351.8
-msgid  "<ahelp hid=\"HID_SMA_XPLUSY\">Inserts a <emph>plus</emph> with two placeholders.</ahelp> You can also type <emph><?>+<?></emph> in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_XPLUSY\">Inserts a <emph>plus</emph> with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>+&lt;<?&gt;></emph> in the Commands window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN101B0
@@ -2592,7 +2592,7 @@ msgid  "Multiplication (dot)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3154196.28
-msgid  "<ahelp hid=\"HID_SMA_XCDOTY\">Inserts a dot operator with two placeholders.</ahelp> You can also type <emph><?>cdot<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XCDOTY\">Inserts a dot operator with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>cdot&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN101E9
@@ -2604,7 +2604,7 @@ msgid  "Multiplication (x)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3149821.20
-msgid  "<ahelp hid=\"HID_SMA_XTIMESY\">Inserts an 'x' <emph>multiplication</emph> with two placeholders.</ahelp> You can also type <emph><?>times<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XTIMESY\">Inserts an 'x' <emph>multiplication</emph> with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>times&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10226
@@ -2616,7 +2616,7 @@ msgid  "Multiplication (*)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3149040.12
-msgid  "<ahelp hid=\"HID_SMA_XSYMTIMESY\">Inserts an asterisk multiplication sign with two placeholders. </ahelp> You can also type <emph><?>*<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XSYMTIMESY\">Inserts an asterisk multiplication sign with two placeholders. </ahelp> You can also type <emph>&lt;<?&gt;>*&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN1025F
@@ -2628,7 +2628,7 @@ msgid  "Subtraction"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3147136.10
-msgid  "<ahelp hid=\"HID_SMA_XMINUSY\">Inserts a subtraction sign with two placeholders.</ahelp> You can also type <emph><?>-<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XMINUSY\">Inserts a subtraction sign with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>-&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10298
@@ -2640,7 +2640,7 @@ msgid  "Division (Fraction)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3155125.18
-msgid  "<ahelp hid=\"HID_SMA_XOVERY\">Inserts a fraction with two placeholders.</ahelp> You can also type <emph><?>over<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XOVERY\">Inserts a fraction with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>over&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN102D1
@@ -2652,7 +2652,7 @@ msgid  "Division"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3149536.14
-msgid  "<ahelp hid=\"HID_SMA_XDIVY\">Inserts a division sign with two placeholders.</ahelp> You can also type <emph><?>div<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XDIVY\">Inserts a division sign with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>div&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN1030A
@@ -2664,7 +2664,7 @@ msgid  "Division (Slash)"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3147500.16
-msgid  "<ahelp hid=\"HID_SMA_XSYMDIVIDEY\">Inserts a slash '/' with two placeholders. </ahelp> You can also type <emph><?>/<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XSYMDIVIDEY\">Inserts a slash '/' with two placeholders. </ahelp> You can also type <emph>&lt;<?&gt;>/&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10343
@@ -2676,7 +2676,7 @@ msgid  "Boolean NOT"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3153505.26
-msgid  "<ahelp hid=\"HID_SMA_NEGX\">Inserts a <emph>Boolean NOT</emph> with one placeholder.</ahelp> You can also type <emph>neg<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_NEGX\">Inserts a <emph>Boolean NOT</emph> with one placeholder.</ahelp> You can also type <emph>neg&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10383
@@ -2688,7 +2688,7 @@ msgid  "Boolean AND"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3147599.22
-msgid  "<ahelp hid=\"HID_SMA_XANDY\">Inserts a <emph>Boolean AND</emph> with two placeholders.</ahelp> You can also type <emph><?>and<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XANDY\">Inserts a <emph>Boolean AND</emph> with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>and&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN103C3
@@ -2700,7 +2700,7 @@ msgid  "Boolean OR"
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3154076.38
-msgid  "<ahelp hid=\"HID_SMA_XORY\">Inserts a <emph>Boolean OR</emph> with two placeholders.</ahelp> You can also type <emph><?>or<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_XORY\">Inserts a <emph>Boolean OR</emph> with two placeholders.</ahelp> You can also type <emph>&lt;<?&gt;>or&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_IDN10403
@@ -2724,19 +2724,19 @@ msgid  " You can also insert user-defined binary commands by typing <emph>boper<
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3150906.32
-msgid  "By typing <emph><?>oplus<?></emph> in the <emph>Commands</emph> window, you insert a <emph>circled plus operator</emph> in your document."
+msgid  "By typing <emph>&lt;<?&gt;>oplus&lt;<?&gt;></emph> in the <emph>Commands</emph> window, you insert a <emph>circled plus operator</emph> in your document."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3151197.33
-msgid  "Type <emph><?>ominus<?></emph> in the <emph>Commands</emph> window to insert a <emph>circled minus operator</emph>."
+msgid  "Type <emph>&lt;<?&gt;>ominus&lt;<?&gt;></emph> in the <emph>Commands</emph> window to insert a <emph>circled minus operator</emph>."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3155082.34
-msgid  "Type <emph><?>odot<?></emph> in the <emph>Commands</emph> window to insert a <emph>circled dot operator</emph> in the formula."
+msgid  "Type <emph>&lt;<?&gt;>odot&lt;<?&gt;></emph> in the <emph>Commands</emph> window to insert a <emph>circled dot operator</emph> in the formula."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3154331.35
-msgid  "Type <emph><?>odivide<?></emph> in the <emph>Commands</emph> window to insert a <emph>circled division operator</emph> in the formula."
+msgid  "Type <emph>&lt;<?&gt;>odivide&lt;<?&gt;></emph> in the <emph>Commands</emph> window to insert a <emph>circled division operator</emph> in the formula."
 msgstr ""
 
 #: 01/03090100.xhp#PAR_ID3150089.42
@@ -2840,7 +2840,7 @@ msgid  "Using the \"csub\" and \"csup\" commands, you can write super- and subsc
 msgstr ""
 
 #: 01/03091200.xhp#PAR_ID3154570.21
-msgid  "Super- and subscripts can be attached to most unary and binary operators. Two examples: \"a div_2 b a<csub n b +_2 h\" and \"a toward csub f b x toward csup f y.\""
+msgid  "Super- and subscripts can be attached to most unary and binary operators. Two examples: \"a div_2 b a&lt;<csub n b +_2 h\" and \"a toward csub f b x toward csup f y.\""
 msgstr ""
 
 #: 01/03091200.xhp#PAR_ID3155904.19
@@ -2872,7 +2872,7 @@ msgid  "Braces \"{}\" are used to group expressions together to form one new exp
 msgstr ""
 
 #: 01/03091100.xhp#PAR_ID3151392.5
-msgid  "Set brackets were previously inserted in the Elements window or directly in the Commands window as \"left lbrace <?> right rbrace\". Now, a left and a right set bracket can also be inserted using \"lbrace\" and \"rbrace\", with or without wildcards."
+msgid  "Set brackets were previously inserted in the Elements window or directly in the Commands window as \"left lbrace &lt;<?&gt;> right rbrace\". Now, a left and a right set bracket can also be inserted using \"lbrace\" and \"rbrace\", with or without wildcards."
 msgstr ""
 
 #: 01/03091100.xhp#PAR_ID3147403.6
@@ -3108,7 +3108,7 @@ msgid  "Acute accent"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3150533.7
-msgid  "<ahelp hid=\"HID_SMA_ACUTEX\">Inserts a placeholder with an acute accent.</ahelp> You can also type <emph>acute <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ACUTEX\">Inserts a placeholder with an acute accent.</ahelp> You can also type <emph>acute &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN100D5
@@ -3120,7 +3120,7 @@ msgid  "Grave accent"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3150018.23
-msgid  "<ahelp hid=\"HID_SMA_GRAVEX\">Inserts a placeholder with a <emph>grave accent</emph> (grave).</ahelp> You can also type <emph>grave <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_GRAVEX\">Inserts a placeholder with a <emph>grave accent</emph> (grave).</ahelp> You can also type <emph>grave &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN10115
@@ -3132,7 +3132,7 @@ msgid  "Reverse Circumflex"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3147167.13
-msgid  "<ahelp hid=\"HID_SMA_CHECKX\">Inserts a placeholder with a reverse circumflex (\"checkmark\") over it.</ahelp> You can also type <emph>check <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_CHECKX\">Inserts a placeholder with a reverse circumflex (\"checkmark\") over it.</ahelp> You can also type <emph>check &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN1014E
@@ -3144,7 +3144,7 @@ msgid  "Breve"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153619.11
-msgid  "<ahelp hid=\"HID_SMA_BREVEX\">Inserts a placeholder with an accent breve.</ahelp> You can also type <emph>breve <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_BREVEX\">Inserts a placeholder with an accent breve.</ahelp> You can also type <emph>breve &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN10187
@@ -3156,7 +3156,7 @@ msgid  "Circle"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153573.15
-msgid  "<ahelp hid=\"HID_SMA_CIRCLEX\">Inserts a placeholder with a circle over it.</ahelp> You can also type <emph>circle <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_CIRCLEX\">Inserts a placeholder with a circle over it.</ahelp> You can also type <emph>circle &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN101C0
@@ -3168,7 +3168,7 @@ msgid  "Vector arrow"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153539.29
-msgid  "<ahelp hid=\"HID_SMA_VECX\">Inserts a placeholder with a vector arrow.</ahelp> You can also type <emph>vec <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_VECX\">Inserts a placeholder with a vector arrow.</ahelp> You can also type <emph>vec &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN101FB
@@ -3180,7 +3180,7 @@ msgid  "Tilde"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3154570.27
-msgid  "<ahelp hid=\"HID_SMA_TILDEX\">Inserts a placeholder with a tilde.</ahelp> You can also type <emph>tilde <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_TILDEX\">Inserts a placeholder with a tilde.</ahelp> You can also type <emph>tilde &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN10236
@@ -3192,7 +3192,7 @@ msgid  "Circumflex"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3159198.25
-msgid  "<ahelp hid=\"HID_SMA_HATX\">Inserts a placeholder with a circumflex (\"hat\").</ahelp> You can also directly enter <emph>hat <?></emph> in the Commands window."
+msgid  "<ahelp hid=\"HID_SMA_HATX\">Inserts a placeholder with a circumflex (\"hat\").</ahelp> You can also directly enter <emph>hat &lt;<?&gt;></emph> in the Commands window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN1026E
@@ -3204,7 +3204,7 @@ msgid  "Line above (bar)"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3149815.9
-msgid  "<ahelp hid=\"HID_SMA_BARX\">Inserts a line (\"bar\") above a placeholder .</ahelp> You can also type <emph>bar <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_BARX\">Inserts a line (\"bar\") above a placeholder .</ahelp> You can also type <emph>bar &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN102A7
@@ -3216,7 +3216,7 @@ msgid  "Dot"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3154900.17
-msgid  "<ahelp hid=\"HID_SMA_DOTX\">Inserts a placeholder with a dot over it.</ahelp> You can also type <emph>dot <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_DOTX\">Inserts a placeholder with a dot over it.</ahelp> You can also type <emph>dot &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN102E0
@@ -3264,7 +3264,7 @@ msgid  "Double dot"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3149541.19
-msgid  "<ahelp hid=\"HID_SMA_DDOTX\">Inserts a placeholder with two dots over it.</ahelp> You can also directly enter <emph>ddot <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_DDOTX\">Inserts a placeholder with two dots over it.</ahelp> You can also directly enter <emph>ddot &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN103C4
@@ -3276,7 +3276,7 @@ msgid  "Line over"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3147492.33
-msgid  "<ahelp hid=\"HID_SMA_OVERLINEX\">Inserts a line over a placeholder.</ahelp> You can also type <emph>overline <?</emph>                  <emph>></emph> in the <emph>Commands</emph> window. The line adjusts itself to correct length."
+msgid  "<ahelp hid=\"HID_SMA_OVERLINEX\">Inserts a line over a placeholder.</ahelp> You can also type <emph>overline &lt;<?</emph>                  <emph>&gt;></emph> in the <emph>Commands</emph> window. The line adjusts itself to correct length."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN103FD
@@ -3288,7 +3288,7 @@ msgid  "Line below"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153269.59
-msgid  "<ahelp hid=\"HID_SMA_UNDERLINEX\">Inserts a line below a placeholder.</ahelp> You can also type <emph>underline <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_UNDERLINEX\">Inserts a line below a placeholder.</ahelp> You can also type <emph>underline &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN10436
@@ -3300,7 +3300,7 @@ msgid  "Line through (overstrike)"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153304.35
-msgid  "<ahelp hid=\"HID_SMA_OVERSTRIKEX\">Inserts a placeholder with a line (or overstrike) through it.</ahelp> You can also type <emph>overstrike <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_OVERSTRIKEX\">Inserts a placeholder with a line (or overstrike) through it.</ahelp> You can also type <emph>overstrike &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN1046F
@@ -3312,7 +3312,7 @@ msgid  "Triple dot"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3154718.21
-msgid  "<ahelp hid=\"HID_SMA_DDDOTX\">Inserts three dots over a placeholder.</ahelp> You can also type <emph>dddot <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_DDDOTX\">Inserts three dots over a placeholder.</ahelp> You can also type <emph>dddot &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN104A8
@@ -3324,7 +3324,7 @@ msgid  "Transparent"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3155074.41
-msgid  "<ahelp hid=\"HID_SMA_PHANTOMX\">Inserts a placeholder for a transparent character. This character takes up the space of \"a\" but does not display it.</ahelp> You can also type <emph>phantom <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_PHANTOMX\">Inserts a placeholder for a transparent character. This character takes up the space of \"a\" but does not display it.</ahelp> You can also type <emph>phantom &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN104E1
@@ -3336,7 +3336,7 @@ msgid  "Bold font"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3150101.39
-msgid  "<ahelp hid=\"HID_SMA_BOLDX\">Inserts a placeholder with bold formatting.</ahelp> You can also type <emph>bold <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_BOLDX\">Inserts a placeholder with bold formatting.</ahelp> You can also type <emph>bold &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN1051C
@@ -3348,7 +3348,7 @@ msgid  "Italic font"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3147355.37
-msgid  "<ahelp hid=\"HID_SMA_ITALX\">Inserts a placeholder with italic formatting.</ahelp> You can also type <emph>ital <?></emph> or <emph>italic <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ITALX\">Inserts a placeholder with italic formatting.</ahelp> You can also type <emph>ital &lt;<?&gt;></emph> or <emph>italic &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN1055A
@@ -3360,7 +3360,7 @@ msgid  "Resize"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3153125.45
-msgid  "<ahelp hid=\"HID_SMA_SIZEXY\">Inserts a command for modifying the font size with two placeholders. The first placeholder refers to the font size (for example, 12) and the second one contains the text.</ahelp> For proper structure, insert a space between the values. You can also directly enter <emph>size <?> <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SIZEXY\">Inserts a command for modifying the font size with two placeholders. The first placeholder refers to the font size (for example, 12) and the second one contains the text.</ahelp> For proper structure, insert a space between the values. You can also directly enter <emph>size &lt;<?&gt;> &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_IDN10595
@@ -3372,7 +3372,7 @@ msgid  "Change font"
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3154371.43
-msgid  "<ahelp hid=\"HID_SMA_FONTXY\">Inserts a command for changing the font type, with two placeholders. Replace the first placeholder with the name of one of the <link href=\"text/smath/01/05010000.xhp\" name=\"custom fonts\">custom fonts</link>, <emph>Serif, Sans</emph> or <emph>Fixed</emph>. Replace the second placeholder with the text.</ahelp> You can also type <emph>font <?> <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_FONTXY\">Inserts a command for changing the font type, with two placeholders. Replace the first placeholder with the name of one of the <link href=\"text/smath/01/05010000.xhp\" name=\"custom fonts\">custom fonts</link>, <emph>Serif, Sans</emph> or <emph>Fixed</emph>. Replace the second placeholder with the text.</ahelp> You can also type <emph>font &lt;<?&gt;> &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090600.xhp#PAR_ID3149626.48
@@ -3604,7 +3604,7 @@ msgid  "<ahelp hid=\"SID_PREVMARK\" visibility=\"visible\">Moves the cursor to t
 msgstr ""
 
 #: 01/02090000.xhp#PAR_ID3148488.3
-msgid  "\"Markers\" are placeholders. They take the form of <?> in the <emph>Commands</emph> window."
+msgid  "\"Markers\" are placeholders. They take the form of &lt;<?&gt;> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090902.xhp#TIT
@@ -3848,7 +3848,7 @@ msgid  "<ahelp hid=\"SID_NEXTMARK\">Moves the cursor to the next marker (to the 
 msgstr ""
 
 #: 01/02080000.xhp#PAR_ID3149051.3
-msgid  "\"Markers\" are placeholders. They take the form of <?> in the <emph>Commands</emph> window."
+msgid  "\"Markers\" are placeholders. They take the form of &lt;<?&gt;> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03091300.xhp#TIT
@@ -4424,7 +4424,7 @@ msgid  "Natural Exponential Function"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3147254.43
-msgid  "<ahelp hid=\"HID_SMA_EX\">Inserts a natural exponential function.</ahelp> You can also type <emph>func e^<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_EX\">Inserts a natural exponential function.</ahelp> You can also type <emph>func e^&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN100BC
@@ -4436,7 +4436,7 @@ msgid  "Natural Logarithm"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3152947.45
-msgid  "<ahelp hid=\"HID_SMA_LNX\">Inserts a natural (base e) logarithm with one placeholder.</ahelp> You can also type <emph>ln(<?>) </emph>in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LNX\">Inserts a natural (base e) logarithm with one placeholder.</ahelp> You can also type <emph>ln(&lt;<?&gt;>) </emph>in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN100F7
@@ -4448,7 +4448,7 @@ msgid  "Exponential Function"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3151309.46
-msgid  "<ahelp hid=\"HID_SMA_EXPX\">Inserts an exponential function with one placeholder.</ahelp> You can also type <emph>exp(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_EXPX\">Inserts an exponential function with one placeholder.</ahelp> You can also type <emph>exp(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10132
@@ -4460,7 +4460,7 @@ msgid  "Logarithm"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3159190.48
-msgid  "<ahelp hid=\"HID_SMA_LOGX\">Inserts a common (base 10) logarithm with one placeholder.</ahelp> You can also type <emph>log(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LOGX\">Inserts a common (base 10) logarithm with one placeholder.</ahelp> You can also type <emph>log(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3149483
@@ -4472,7 +4472,7 @@ msgid  "Power"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3151250.70
-msgid  "<ahelp hid=\".\">Inserts x raised to the yth power.</ahelp> You can also type <emph><?>^{<?>}</emph> in the <emph>Commands</emph> window. You can replace the <emph>^</emph> character with <emph>rsup</emph> or <emph>sup</emph>."
+msgid  "<ahelp hid=\".\">Inserts x raised to the yth power.</ahelp> You can also type <emph>&lt;<?&gt;>^{&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window. You can replace the <emph>^</emph> character with <emph>rsup</emph> or <emph>sup</emph>."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN101B1
@@ -4484,7 +4484,7 @@ msgid  "Sine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3147325.49
-msgid  "<ahelp hid=\"HID_SMA_SINX\">Inserts a sine function with one placeholder.</ahelp> You can also type <emph>sin(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SINX\">Inserts a sine function with one placeholder.</ahelp> You can also type <emph>sin(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN101EA
@@ -4496,7 +4496,7 @@ msgid  "Cosine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3151027.50
-msgid  "<ahelp hid=\"HID_SMA_COSX\">Inserts a cosine function with one placeholder.</ahelp> You can also type <emph>cos(<?>) </emph>in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_COSX\">Inserts a cosine function with one placeholder.</ahelp> You can also type <emph>cos(&lt;<?&gt;>) </emph>in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10223
@@ -4508,7 +4508,7 @@ msgid  "Tangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3156379.51
-msgid  "<ahelp hid=\"HID_SMA_TANX\">Inserts a tangent function with one placeholder.</ahelp> You can also type <emph>tan<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_TANX\">Inserts a tangent function with one placeholder.</ahelp> You can also type <emph>tan&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN1025C
@@ -4520,7 +4520,7 @@ msgid  "Cotangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3150691.52
-msgid  "<ahelp hid=\"HID_SMA_COTX\">Inserts a cotangent symbol with a placeholder.</ahelp> You can also type <emph>cot(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_COTX\">Inserts a cotangent symbol with a placeholder.</ahelp> You can also type <emph>cot(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10295
@@ -4532,7 +4532,7 @@ msgid  "Hyperbolic Sine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3145132.53
-msgid  "<ahelp hid=\"HID_SMA_SINHX\">Inserts a hyperbolic sine with one placeholder.</ahelp> You can also type <emph>sinh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SINHX\">Inserts a hyperbolic sine with one placeholder.</ahelp> You can also type <emph>sinh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN102CE
@@ -4544,7 +4544,7 @@ msgid  "Square Root"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3147746.41
-msgid  "<ahelp hid=\"HID_SMA_SQRTX\">Inserts a square root symbol with one placeholder.</ahelp> You can also type <emph>sqrt(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SQRTX\">Inserts a square root symbol with one placeholder.</ahelp> You can also type <emph>sqrt(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10309
@@ -4556,7 +4556,7 @@ msgid  "Hyperbolic Cosine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3148857.54
-msgid  "<ahelp hid=\"HID_SMA_COSHX\">Inserts a hyperbolic cosine symbol with one placeholder.</ahelp> You can also type <emph>cosh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_COSHX\">Inserts a hyperbolic cosine symbol with one placeholder.</ahelp> You can also type <emph>cosh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10342
@@ -4568,7 +4568,7 @@ msgid  "Hyperbolic Tangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3153791.55
-msgid  "<ahelp hid=\"HID_SMA_TANHX\">Inserts a hyperbolic tangent symbol with one placeholder.</ahelp> You can also type <emph>tanh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_TANHX\">Inserts a hyperbolic tangent symbol with one placeholder.</ahelp> You can also type <emph>tanh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN1037C
@@ -4580,7 +4580,7 @@ msgid  "Hyperbolic Cotangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3156131.56
-msgid  "<ahelp hid=\"HID_SMA_COTHX\">Inserts a hyperbolic cotangent symbol with one placeholder.</ahelp> You can directly type <emph>coth(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_COTHX\">Inserts a hyperbolic cotangent symbol with one placeholder.</ahelp> You can directly type <emph>coth(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN103B5
@@ -4604,7 +4604,7 @@ msgid  "Arc Sine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3149236.57
-msgid  "<ahelp hid=\"HID_SMA_ARCSINX\">Inserts an arc sine function with one placeholder.</ahelp> You can also type <emph>arcsin(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCSINX\">Inserts an arc sine function with one placeholder.</ahelp> You can also type <emph>arcsin(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10427
@@ -4616,7 +4616,7 @@ msgid  "Arc Cosine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3149991.58
-msgid  "<ahelp hid=\"HID_SMA_ARCCOSX\">Inserts an arc cosine symbol with one placeholder.</ahelp> You can also type <emph>arccos(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCCOSX\">Inserts an arc cosine symbol with one placeholder.</ahelp> You can also type <emph>arccos(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10460
@@ -4628,7 +4628,7 @@ msgid  "Arc Tangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3155790.59
-msgid  "<ahelp hid=\"HID_SMA_ARCTANX\">Inserts an arc tangent function with one placeholder.</ahelp> You can also type <emph>arctan(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCTANX\">Inserts an arc tangent function with one placeholder.</ahelp> You can also type <emph>arctan(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10493
@@ -4640,7 +4640,7 @@ msgid  "Arc Cotangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3151006.60
-msgid  "<ahelp hid=\"HID_SMA_ARCCOTX\">Inserts an arc cotangent function with one placeholder.</ahelp> You can directly type <emph>arccot(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCCOTX\">Inserts an arc cotangent function with one placeholder.</ahelp> You can directly type <emph>arccot(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN104CC
@@ -4652,7 +4652,7 @@ msgid  "Absolute Value"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3147395.39
-msgid  "<ahelp hid=\"HID_SMA_ABSX\">Inserts an absolute value sign with one placeholder.</ahelp> You can also type <emph>abs(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ABSX\">Inserts an absolute value sign with one placeholder.</ahelp> You can also type <emph>abs(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10507
@@ -4664,7 +4664,7 @@ msgid  "Area Hyperbolic Sine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3154671.61
-msgid  "<ahelp hid=\"HID_SMA_ARSINHX\">Inserts an area hyperbolic sine function with one placeholder.</ahelp> You can also type <emph>arsinh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARSINHX\">Inserts an area hyperbolic sine function with one placeholder.</ahelp> You can also type <emph>arsinh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN1053A
@@ -4676,7 +4676,7 @@ msgid  "Area Hyperbolic Cosine"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3145652.63
-msgid  "<ahelp hid=\"HID_SMA_ARCOSHX\">Inserts an area hyperbolic cosine function with one placeholder.</ahelp> You can also type <emph>arcosh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCOSHX\">Inserts an area hyperbolic cosine function with one placeholder.</ahelp> You can also type <emph>arcosh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN10573
@@ -4688,7 +4688,7 @@ msgid  "Area Hyperbolic Tangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3155536.65
-msgid  "<ahelp hid=\"HID_SMA_ARTANHX\">Inserts an area hyperbolic tangent function with one placeholder.</ahelp> You can also type <emph>artanh(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARTANHX\">Inserts an area hyperbolic tangent function with one placeholder.</ahelp> You can also type <emph>artanh(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN105AC
@@ -4700,7 +4700,7 @@ msgid  "Area Hyperbolic Cotangent"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3154207.67
-msgid  "<ahelp hid=\"HID_SMA_ARCOTHX\">Inserts an area hyperbolic cotangent function with one placeholder.</ahelp> You can also type <emph>arcoth(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ARCOTHX\">Inserts an area hyperbolic cotangent function with one placeholder.</ahelp> You can also type <emph>arcoth(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_IDN105E5
@@ -4712,7 +4712,7 @@ msgid  "Factorial"
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3156019.40
-msgid  "<ahelp hid=\"HID_SMA_FACTX\">Inserts the factorial sign with one placeholder.</ahelp> You can directly type <emph>fact <?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_FACTX\">Inserts the factorial sign with one placeholder.</ahelp> You can directly type <emph>fact &lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090400.xhp#PAR_ID3147546.38
@@ -4772,7 +4772,7 @@ msgid  "Round brackets (parentheses)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3151102.8
-msgid  "<ahelp hid=\"HID_SMA_LRPARENTX\">Inserts a placeholder within normal round brackets (parentheses).</ahelp> You can also type <emph>(<?>)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRPARENTX\">Inserts a placeholder within normal round brackets (parentheses).</ahelp> You can also type <emph>(&lt;<?&gt;>)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN100BF
@@ -4784,7 +4784,7 @@ msgid  "Square brackets"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3150356.32
-msgid  "<ahelp hid=\"HID_SMA_LRBRACKETX\">Inserts a placeholder within square brackets.</ahelp> You can also type <emph>[<?>]</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRBRACKETX\">Inserts a placeholder within square brackets.</ahelp> You can also type <emph>[&lt;<?&gt;>]</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN100F8
@@ -4796,7 +4796,7 @@ msgid  "Double square brackets"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3155175.51
-msgid  "<ahelp hid=\"HID_SMA_LRDBRACKETX\">Inserts a placeholder within double square brackets.</ahelp> You can also type <emph>ldbracket <?> rdbracket</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRDBRACKETX\">Inserts a placeholder within double square brackets.</ahelp> You can also type <emph>ldbracket &lt;<?&gt;> rdbracket</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10131
@@ -4808,7 +4808,7 @@ msgid  "Braces (curly brackets)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3147101.36
-msgid  "<ahelp hid=\"HID_SMA_LRBRACEX\">Inserts a placeholder withing braces (curly brackets).</ahelp> You can also type <emph>lbrace<?>rbrace</emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRBRACEX\">Inserts a placeholder withing braces (curly brackets).</ahelp> You can also type <emph>lbrace&lt;<?&gt;>rbrace</emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN1016C
@@ -4820,7 +4820,7 @@ msgid  "Single vertical bars"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3155146.38
-msgid  "<ahelp hid=\"HID_SMA_LRLINEX\">Inserts a placeholder within vertical bars.</ahelp> You can also type <emph>lline <?> rline</emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRLINEX\">Inserts a placeholder within vertical bars.</ahelp> You can also type <emph>lline &lt;<?&gt;> rline</emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN101A5
@@ -4832,7 +4832,7 @@ msgid  "Double vertical bars"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3149175.39
-msgid  "<ahelp hid=\"HID_SMA_LRDLINEX\">Inserts a placeholder within double vertical bars.</ahelp> You can also type <emph>ldline <?> rdline</emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRDLINEX\">Inserts a placeholder within double vertical bars.</ahelp> You can also type <emph>ldline &lt;<?&gt;> rdline</emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN101DE
@@ -4844,7 +4844,7 @@ msgid  "Angle brackets"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3155913.34
-msgid  "<ahelp hid=\"HID_SMA_LRANGLEX\">Inserts a placeholder within angle brackets.</ahelp> You can also type <emph>langle <?> rangle</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRANGLEX\">Inserts a placeholder within angle brackets.</ahelp> You can also type <emph>langle &lt;<?&gt;> rangle</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10217
@@ -4856,7 +4856,7 @@ msgid  "Operator brackets"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3147425.47
-msgid  "<ahelp hid=\"HID_SMA_LMRANGLEXY\">Inserts a placeholder within operator brackets.</ahelp> You can also type <emph>langle <?> mline <?> rangle</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LMRANGLEXY\">Inserts a placeholder within operator brackets.</ahelp> You can also type <emph>langle &lt;<?&gt;> mline &lt;<?&gt;> rangle</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10253
@@ -4868,7 +4868,7 @@ msgid  "Group brackets"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3155976.41
-msgid  "<ahelp hid=\"HID_SMA_LRGROUPX\">Inserts group brackets.</ahelp> You can also type <emph>{<?>}</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LRGROUPX\">Inserts group brackets.</ahelp> You can also type <emph>{&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN1028E
@@ -4880,7 +4880,7 @@ msgid  "Round brackets (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3146345.10
-msgid  "<ahelp hid=\"HID_SMA_SLRPARENTX\">Inserts <emph>scalable rounded brackets</emph> with one placeholder.</ahelp> You can also type <emph>left(<?> right)</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SLRPARENTX\">Inserts <emph>scalable rounded brackets</emph> with one placeholder.</ahelp> You can also type <emph>left(&lt;<?&gt;> right)</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN102CC
@@ -4892,7 +4892,7 @@ msgid  "Square brackets (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3148438.12
-msgid  "<ahelp hid=\"HID_SMA_SLRBRACKETX\">Inserts scalable square brackets with placeholders.</ahelp> You can also type <emph>left[<?> right]</emph> in the <emph>Commands</emph> window. The size of the brackets is adjusted automatically."
+msgid  "<ahelp hid=\"HID_SMA_SLRBRACKETX\">Inserts scalable square brackets with placeholders.</ahelp> You can also type <emph>left[&lt;<?&gt;> right]</emph> in the <emph>Commands</emph> window. The size of the brackets is adjusted automatically."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10307
@@ -4904,7 +4904,7 @@ msgid  "Double square brackets (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3150161.53
-msgid  "<ahelp hid=\"HID_SMA_SLRDBRACKETX\">Inserts scalable double square brackets with placeholders.</ahelp> You can also type <emph>left ldbracket <?> right rdbracket</emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
+msgid  "<ahelp hid=\"HID_SMA_SLRDBRACKETX\">Inserts scalable double square brackets with placeholders.</ahelp> You can also type <emph>left ldbracket &lt;<?&gt;> right rdbracket</emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10342
@@ -4916,7 +4916,7 @@ msgid  "Braces (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3154724.14
-msgid  "<ahelp hid=\"HID_SMA_SLRBRACEX\">Inserts scalable braces with a placeholder.</ahelp> You can also type <emph>left lbrace <?> right rbrace</emph> in the <emph>Commands</emph> window. The size of the braces is automatically adjusted."
+msgid  "<ahelp hid=\"HID_SMA_SLRBRACEX\">Inserts scalable braces with a placeholder.</ahelp> You can also type <emph>left lbrace &lt;<?&gt;> right rbrace</emph> in the <emph>Commands</emph> window. The size of the braces is automatically adjusted."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN1037E
@@ -4928,7 +4928,7 @@ msgid  "Single vertical bars (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3145634.18
-msgid  "<ahelp hid=\"HID_SMA_SLRLINEX\">Inserts scalable single vertical bars with a placeholder.</ahelp> You can also type <emph>left lline <?> right rline</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
+msgid  "<ahelp hid=\"HID_SMA_SLRLINEX\">Inserts scalable single vertical bars with a placeholder.</ahelp> You can also type <emph>left lline &lt;<?&gt;> right rline</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN103B7
@@ -4940,7 +4940,7 @@ msgid  "Double vertical bars (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3146950.20
-msgid  "<ahelp hid=\"HID_SMA_SLRDLINEX\">Inserts scalable double vertical bars with a placeholder.</ahelp> You can also type <emph>left ldline <?> right rdline</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
+msgid  "<ahelp hid=\"HID_SMA_SLRDLINEX\">Inserts scalable double vertical bars with a placeholder.</ahelp> You can also type <emph>left ldline &lt;<?&gt;> right rdline</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN103F0
@@ -4952,7 +4952,7 @@ msgid  "Angle brackets (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3149372.16
-msgid  "<ahelp hid=\"HID_SMA_SLRANGLEX\">Inserts scalable angle brackets with a placeholder.</ahelp> You can also type <emph>left langle <?> right rangle</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
+msgid  "<ahelp hid=\"HID_SMA_SLRANGLEX\">Inserts scalable angle brackets with a placeholder.</ahelp> You can also type <emph>left langle &lt;<?&gt;> right rangle</emph> in the <emph>Commands</emph> window. The size of the brackets is automatically adjusted."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10429
@@ -4964,7 +4964,7 @@ msgid  "Operator brackets (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3155388.49
-msgid  "<ahelp hid=\"HID_SMA_SLMRANGLEXY\">Inserts scalable operator brackets with placeholders.</ahelp> You can also type <emph>left langle <?> mline <?> right rangle</emph> in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
+msgid  "<ahelp hid=\"HID_SMA_SLMRANGLEXY\">Inserts scalable operator brackets with placeholders.</ahelp> You can also type <emph>left langle &lt;<?&gt;> mline &lt;<?&gt;> right rangle</emph> in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN10464
@@ -4976,7 +4976,7 @@ msgid  "Brace top (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3154621.55
-msgid  "<ahelp hid=\"HID_SMA_XOVERBRACEY\">Inserts a scalable horizontal upper brace with placeholders.</ahelp> You can also enter <emph><?> overbrace <?></emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
+msgid  "<ahelp hid=\"HID_SMA_XOVERBRACEY\">Inserts a scalable horizontal upper brace with placeholders.</ahelp> You can also enter <emph>&lt;<?&gt;> overbrace &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_IDN104A0
@@ -4988,23 +4988,23 @@ msgid  "Brace bottom (scalable)"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3154023.57
-msgid  "<ahelp hid=\"HID_SMA_XUNDERBRACEY\">Inserts a scalable horizontal lower brace with placeholders.</ahelp> You can also type <emph><?> underbrace <?></emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
+msgid  "<ahelp hid=\"HID_SMA_XUNDERBRACEY\">Inserts a scalable horizontal lower brace with placeholders.</ahelp> You can also type <emph>&lt;<?&gt;> underbrace &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window. The bracket size is adjusted automatically."
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3149954.27
-msgid  "<ahelp hid=\"HID_SMA_LRFLOORX\">To insert floor brackets, type <emph>lfloor<?>rfloor</emph> directly in the <emph>Commands</emph> window.</ahelp>"
+msgid  "<ahelp hid=\"HID_SMA_LRFLOORX\">To insert floor brackets, type <emph>lfloor&lt;<?&gt;>rfloor</emph> directly in the <emph>Commands</emph> window.</ahelp>"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3150592.28
-msgid  "<ahelp hid=\"HID_SMA_LRCEILX\">To insert ceiling brackets, type <emph>lceil<?>rceil</emph> directly in the <emph>Commands</emph> window.</ahelp>"
+msgid  "<ahelp hid=\"HID_SMA_LRCEILX\">To insert ceiling brackets, type <emph>lceil&lt;<?&gt;>rceil</emph> directly in the <emph>Commands</emph> window.</ahelp>"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3149623.45
-msgid  "<ahelp hid=\"HID_SMA_SLRFLOORX\">To insert scalable floor brackets, type <emph>left lfloor<?>right rfloor</emph> directly in the <emph>Commands</emph> window.</ahelp>"
+msgid  "<ahelp hid=\"HID_SMA_SLRFLOORX\">To insert scalable floor brackets, type <emph>left lfloor&lt;<?&gt;>right rfloor</emph> directly in the <emph>Commands</emph> window.</ahelp>"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3145668.46
-msgid  "<ahelp hid=\"HID_SMA_SLRCEILX\">To insert scalable ceiling brackets, type <emph>left lceil<?>right rceil</emph> directly in the <emph>Commands</emph> window.</ahelp>"
+msgid  "<ahelp hid=\"HID_SMA_SLRCEILX\">To insert scalable ceiling brackets, type <emph>left lceil&lt;<?&gt;>right rceil</emph> directly in the <emph>Commands</emph> window.</ahelp>"
 msgstr ""
 
 #: 01/03090500.xhp#PAR_ID3149208.44
@@ -5376,7 +5376,7 @@ msgid  "Limit"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3153540.12
-msgid  "<ahelp hid=\"HID_SMA_LIMX\">Inserts the <emph>limit sign</emph> with one placeholder.</ahelp> You can also enter <emph>lim <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LIMX\">Inserts the <emph>limit sign</emph> with one placeholder.</ahelp> You can also enter <emph>lim &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN100C4
@@ -5388,7 +5388,7 @@ msgid  "Summation"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3147523.6
-msgid  "<ahelp hid=\"HID_SMA_SUMX\">Inserts a <emph>summation sign</emph> with one placeholder.</ahelp> You can also enter <emph>sum <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_SUMX\">Inserts a <emph>summation sign</emph> with one placeholder.</ahelp> You can also enter <emph>sum &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN10102
@@ -5400,7 +5400,7 @@ msgid  "Product"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3151332.39
-msgid  "<ahelp hid=\"HID_SMA_PRODX\">Inserts a <emph>product sign</emph> with one placeholder.</ahelp> You can also type <emph>prod <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_PRODX\">Inserts a <emph>product sign</emph> with one placeholder.</ahelp> You can also type <emph>prod &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN1013E
@@ -5412,7 +5412,7 @@ msgid  "Coproduct"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3147098.10
-msgid  "<ahelp hid=\"HID_SMA_COPRODX\">Inserts a <emph>coproduct symbol</emph> with one placeholder.</ahelp> You can also enter <emph>coprod <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_COPRODX\">Inserts a <emph>coproduct symbol</emph> with one placeholder.</ahelp> You can also enter <emph>coprod &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN1017A
@@ -5424,7 +5424,7 @@ msgid  "Upper and Lower Limit"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3153518.30
-msgid  "<ahelp hid=\"HID_SMA_FROMXTOY\">Inserts a range statement <emph>upper and lower limit</emph> for integral and summation with one placeholder.</ahelp> You can also type <emph>from{<?>} to{<?>} <?></emph> directly in the <emph>Commands</emph> window. Limit statements must be combined with the appropriate operators. The limits will be centered above/below the summation character."
+msgid  "<ahelp hid=\"HID_SMA_FROMXTOY\">Inserts a range statement <emph>upper and lower limit</emph> for integral and summation with one placeholder.</ahelp> You can also type <emph>from{&lt;<?&gt;>} to{&lt;<?&gt;>} &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window. Limit statements must be combined with the appropriate operators. The limits will be centered above/below the summation character."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN101B8
@@ -5436,7 +5436,7 @@ msgid  "Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3156272.16
-msgid  "<ahelp hid=\"HID_SMA_INTX\">Inserts an <emph>integral</emph> sign with one placeholder.</ahelp> You can also type <emph>int <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_INTX\">Inserts an <emph>integral</emph> sign with one placeholder.</ahelp> You can also type <emph>int &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN101F4
@@ -5448,7 +5448,7 @@ msgid  "Double Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3148879.18
-msgid  "<ahelp hid=\"HID_SMA_IINTX\">Inserts a <emph>double integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>iint <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_IINTX\">Inserts a <emph>double integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>iint &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN10230
@@ -5460,7 +5460,7 @@ msgid  "Triple Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3147489.20
-msgid  "<ahelp hid=\"HID_SMA_IIINTX\">Inserts <emph>a triple integral</emph> sign with one placeholder.</ahelp> You can also type <emph>iiint <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_IIINTX\">Inserts <emph>a triple integral</emph> sign with one placeholder.</ahelp> You can also type <emph>iiint &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN1026C
@@ -5472,7 +5472,7 @@ msgid  "Lower Limit"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3150556.32
-msgid  "<ahelp hid=\"HID_SMA_FROMX\">Inserts a <emph>lower limit</emph> range statement for integral and sum with placeholders.</ahelp> You can also type <emph>from {<?>}<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_FROMX\">Inserts a <emph>lower limit</emph> range statement for integral and sum with placeholders.</ahelp> You can also type <emph>from {&lt;<?&gt;>}&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN102AA
@@ -5484,7 +5484,7 @@ msgid  "Curve Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3147592.22
-msgid  "<ahelp hid=\"HID_SMA_LINTX\">Inserts a <emph>curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>lint <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LINTX\">Inserts a <emph>curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>lint &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN102E6
@@ -5496,7 +5496,7 @@ msgid  "Double Curve Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3154770.24
-msgid  "<ahelp hid=\"HID_SMA_LLINTX\">Inserts a <emph>double curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>llint <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LLINTX\">Inserts a <emph>double curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>llint &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN10322
@@ -5508,7 +5508,7 @@ msgid  "Triple Curve Integral"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3150175.26
-msgid  "<ahelp hid=\"HID_SMA_LLLINTX\">Inserts a <emph>triple curve integral</emph> sign with one placeholder.</ahelp> You can also type <emph>lllint <?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LLLINTX\">Inserts a <emph>triple curve integral</emph> sign with one placeholder.</ahelp> You can also type <emph>lllint &lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_IDN1035E
@@ -5520,7 +5520,7 @@ msgid  "Upper Limit"
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3154715.34
-msgid  "<ahelp hid=\"HID_SMA_TOX\">Inserts the range statement <emph>upper limit</emph> for integral and summation with placeholders</ahelp> You can also type <emph>to <?><?></emph> directly in the <emph>Commands</emph> window. Limit statements can only be used if combined with the appropriate operators."
+msgid  "<ahelp hid=\"HID_SMA_TOX\">Inserts the range statement <emph>upper limit</emph> for integral and summation with placeholders</ahelp> You can also type <emph>to &lt;<?&gt;>&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window. Limit statements can only be used if combined with the appropriate operators."
 msgstr ""
 
 #: 01/03090300.xhp#PAR_ID3149233.47
@@ -5584,7 +5584,7 @@ msgid  "Superscript left"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3147531.44
-msgid  "<ahelp hid=\"HID_SMA_LSUPX\">Inserts a superscript to the left of a placeholder.</ahelp> You can also type <emph><?>lsup{<?>}</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LSUPX\">Inserts a superscript to the left of a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>lsup{&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN100C4
@@ -5596,7 +5596,7 @@ msgid  "Superscript top"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3159195.58
-msgid  "<ahelp hid=\"HID_SMA_CSUPX\">Inserts a superscript directly above a placeholder.</ahelp> You can also type <emph><?>csup<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_CSUPX\">Inserts a superscript directly above a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>csup&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN100FF
@@ -5608,7 +5608,7 @@ msgid  "Superscript right"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3151262.40
-msgid  "<ahelp hid=\"HID_SMA_RSUPX\">Inserts a superscript to the right of a placeholder.</ahelp> You can also type <emph><?>^{<?>}</emph> directly in the <emph>Commands</emph> window, or you can use <emph>rsup</emph> or <emph>sup</emph>."
+msgid  "<ahelp hid=\"HID_SMA_RSUPX\">Inserts a superscript to the right of a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>^{&lt;<?&gt;>}</emph> directly in the <emph>Commands</emph> window, or you can use <emph>rsup</emph> or <emph>sup</emph>."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN1013E
@@ -5620,7 +5620,7 @@ msgid  "Vertical stack (2 elements)"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3147326.62
-msgid  "<ahelp hid=\"HID_SMA_BINOMXY\">Inserts a vertical stack (binomial) with two placeholders.</ahelp> You can also type <emph>binom<?><?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_BINOMXY\">Inserts a vertical stack (binomial) with two placeholders.</ahelp> You can also type <emph>binom&lt;<?&gt;>&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN10179
@@ -5644,7 +5644,7 @@ msgid  "Subscript left"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3147309.42
-msgid  "<ahelp hid=\"HID_SMA_LSUBX\">Inserts a subscript to the left of a placeholder.</ahelp> You can also type <emph><?>lsub{<?>}</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_LSUBX\">Inserts a subscript to the left of a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>lsub{&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN101EB
@@ -5656,7 +5656,7 @@ msgid  "Subscript bottom"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3150699.59
-msgid  "<ahelp hid=\"HID_SMA_CSUBX\">Inserts a subscript directly under a placeholder.</ahelp> You can also type <emph><?>csub<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_CSUBX\">Inserts a subscript directly under a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>csub&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN10226
@@ -5668,7 +5668,7 @@ msgid  "Subscript right"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3146913.38
-msgid  "<ahelp hid=\"HID_SMA_RSUBX\">Inserts a subscript to the right of a placeholder.</ahelp> You can also type <emph><?>_{<?>}</emph> in the <emph>Commands</emph> window, and the subscript dash can be replaced by <emph>rsub</emph> or <emph>sub</emph>."
+msgid  "<ahelp hid=\"HID_SMA_RSUBX\">Inserts a subscript to the right of a placeholder.</ahelp> You can also type <emph>&lt;<?&gt;>_{&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window, and the subscript dash can be replaced by <emph>rsub</emph> or <emph>sub</emph>."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN10265
@@ -5680,7 +5680,7 @@ msgid  "Vertical stack (3 elements)"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3146332.64
-msgid  "<ahelp hid=\"HID_SMA_STACK\">Inserts a vertical stack with three placeholders.</ahelp> You can also type <emph>stack {<?>#<?>#<?>}</emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_STACK\">Inserts a vertical stack with three placeholders.</ahelp> You can also type <emph>stack {&lt;<?&gt;>#&lt;<?&gt;>#&lt;<?&gt;>}</emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN102A0
@@ -5704,7 +5704,7 @@ msgid  "Align left"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3154592.6
-msgid  "<ahelp hid=\"HID_SMA_ALIGNLX\">This icon assigns left-alignment to \"a\" and inserts a placeholder.</ahelp> You can type <emph>alignl<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ALIGNLX\">This icon assigns left-alignment to \"a\" and inserts a placeholder.</ahelp> You can type <emph>alignl&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN10317
@@ -5716,7 +5716,7 @@ msgid  "Align to horizontal center"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3149319.10
-msgid  "<ahelp hid=\"HID_SMA_ALIGNCX\">Assigns horizontal central alignment to \"a\" and inserts a placeholder.</ahelp> You can also type <emph>alignc<?></emph> directly in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ALIGNCX\">Assigns horizontal central alignment to \"a\" and inserts a placeholder.</ahelp> You can also type <emph>alignc&lt;<?&gt;></emph> directly in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN10352
@@ -5728,7 +5728,7 @@ msgid  "Align right"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3149780.8
-msgid  "<ahelp hid=\"HID_SMA_ALIGNRX\">Inserts the command for right alignment and a placeholder.</ahelp> You can also type <emph>alignr<?></emph> in the <emph>Commands</emph> window."
+msgid  "<ahelp hid=\"HID_SMA_ALIGNRX\">Inserts the command for right alignment and a placeholder.</ahelp> You can also type <emph>alignr&lt;<?&gt;></emph> in the <emph>Commands</emph> window."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN1038D
@@ -5740,7 +5740,7 @@ msgid  "Matrix stack"
 msgstr ""
 
 #: 01/03090700.xhp#PAR_ID3146941.26
-msgid  "<ahelp hid=\"HID_SMA_MATRIX\">This icon inserts a matrix with four placeholders.</ahelp> You can also type <emph>matrix{<?>#<?>##<?>#<?>}</emph> directly in the <emph>Commands</emph> window. The position of an element inside this diagram is indicated by two coordinates; the first specifies the line number and the second the column number. You can expand this matrix in any direction in the <emph>Commands</emph> window by adding characters."
+msgid  "<ahelp hid=\"HID_SMA_MATRIX\">This icon inserts a matrix with four placeholders.</ahelp> You can also type <emph>matrix{&lt;<?&gt;>#&lt;<?&gt;>##&lt;<?&gt;>#&lt;<?&gt;>}</emph> directly in the <emph>Commands</emph> window. The position of an element inside this diagram is indicated by two coordinates; the first specifies the line number and the second the column number. You can expand this matrix in any direction in the <emph>Commands</emph> window by adding characters."
 msgstr ""
 
 #: 01/03090700.xhp#PAR_IDN103C9
@@ -6152,7 +6152,7 @@ msgid  "Plus/Minus"
 msgstr ""
 
 #: 01/03091501.xhp#PAR_IDN10A6B
-msgid  "<item type=\"literal\">and</item> or <item type=\"literal\">&</item>"
+msgid  "<item type=\"literal\">and</item> or <item type=\"literal\">&amp;&</item>"
 msgstr ""
 
 #: 01/03091501.xhp#PAR_ID3146336
