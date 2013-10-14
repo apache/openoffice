@@ -42,6 +42,7 @@ class convert_xhp : public convert_gen_impl
     void setString(char *yytext);
     void openTag(char *yytext);
     void closeTag(char *yytext);
+    void closeTagNOvalue(char *yytext);
     void setId(char *yytext);
     void setLang(char *yytext);
     void setRef(char *yytext);

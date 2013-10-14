@@ -161,6 +161,15 @@ void convert_xhp::closeTag(char *yytext)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::closeTagNOvalue(char *yytext)
+{
+  copySourceSpecial(yytext, 0);
+  meExpectValue = VALUE_NOT_USED;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setId(char *yytext)
 {
   int          nL, nE;
@@ -314,8 +323,8 @@ void convert_xhp::stopComment(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::handleSpecial(char *yytext)
 {
-  int          nX    = msCollector.size();
   std::string& sText = copySourceSpecial(yytext, 0);
+  int          nX    = msCollector.size();
 
 
   if (meExpectValue != VALUE_IS_VALUE || meExpectValue != VALUE_IS_VALUE_TAG)

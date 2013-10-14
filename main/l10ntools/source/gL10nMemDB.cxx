@@ -438,7 +438,10 @@ bool l10nMem_db::getMergeLang(std::string& sLang,
 
   // update pointers
   sLang = mcLangList[miCurLangInx].msName;
-  sMsgStr = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msMsgStr;
+  if (!sMsgStr.size())
+    sMsgStr = "NOT TRANSLATED";
+  else
+    sMsgStr = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msMsgStr;
   return true;
 }
 

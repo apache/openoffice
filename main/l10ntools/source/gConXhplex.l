@@ -77,6 +77,12 @@ IDENT [\.a-zA-Z0-9_-]+
 
 
 
+\/\> {
+  LOCptr->closeTagNOvalue(yytext);
+}
+
+
+
 \> {
   LOCptr->closeTag(yytext);
 }
