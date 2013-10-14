@@ -512,7 +512,7 @@ msgid  "Tags"
 msgstr ""
 
 #: 00/00000002.xhp#PAR_ID3156360.142
-msgid  "<link href=\"text/shared/00/00000002.xhp#html\" name=\"HTML\">HTML</link> pages contain certain structural and formatting instructions called tags. Tags are code words enclosed by brackets in the document description language HTML. Many tags contain text or hyperlink references between the opening and closing brackets. For example, titles are marked by the tags &lt;<h1&gt;> at the beginning and &lt;</h1&gt;> at the end of the title. Some tags only appear on their own such as &lt;<br&gt;> for a line break or &lt;<img ...&gt;> to link a graphic."
+msgid  "<link href=\"text/shared/00/00000002.xhp#html\" name=\"HTML\">HTML</link> pages contain certain structural and formatting instructions called tags. Tags are code words enclosed by brackets in the document description language HTML. Many tags contain text or hyperlink references between the opening and closing brackets. For example, titles are marked by the tags <h1> at the beginning and </h1> at the end of the title. Some tags only appear on their own such as <br> for a line break or <img ...> to link a graphic."
 msgstr ""
 
 #: 00/00000002.xhp#BM_ID3153766
@@ -616,7 +616,7 @@ msgid  "1 inch = 6 Pica = 72 Point"
 msgstr ""
 
 #: 00/00000003.xhp#PAR_IDN10715
-msgid  "For example, in a text document, open <emph>Format - Paragraph - Indents &amp;& Spacing</emph>. To indent the current paragraph by one inch, enter <item type=\"literal\">1 in</item> or <item type=\"literal\">1\"</item> into the \"Before text\" box. To indent the paragraph by 1 cm, enter <item type=\"literal\">1 cm</item> into the input box."
+msgid  "For example, in a text document, open <emph>Format - Paragraph - Indents & Spacing</emph>. To indent the current paragraph by one inch, enter <item type=\"literal\">1 in</item> or <item type=\"literal\">1\"</item> into the \"Before text\" box. To indent the paragraph by 1 cm, enter <item type=\"literal\">1 cm</item> into the input box."
 msgstr ""
 
 #: 00/00000003.xhp#PAR_IDN1074C
@@ -1460,7 +1460,7 @@ msgid  "With $[officename] Writer, you can insert footnotes and endnotes in your
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3149800.199
-msgid  "Comments are used to include unknown characters in an HTML document. Every note that begins with \"HTML:...\" and ends with \"&gt;>\" is treated as an HTML code, but is exported without these designations. Several tags around text can be included after \"HTML:...\" Accented characters are converted into the ANSI character set. Comments are created during import (for example, for meta tags that have no room in the file properties or unknown tags)."
+msgid  "Comments are used to include unknown characters in an HTML document. Every note that begins with \"HTML:...\" and ends with \">\" is treated as an HTML code, but is exported without these designations. Several tags around text can be included after \"HTML:...\" Accented characters are converted into the ANSI character set. Comments are created during import (for example, for meta tags that have no room in the file properties or unknown tags)."
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3149734.201
@@ -1500,7 +1500,7 @@ msgid  "Text frames are supported with the use of CSS1 extensions for absolute p
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3147530.46
-msgid  "Text frames are exported as \"&lt;<SPAN&gt;>\" or \"&lt;<DIV&gt;>\" tags if they do not contain columns. If they do contain columns then they are exported as \"&lt;<MULTICOL&gt;>\"."
+msgid  "Text frames are exported as \"<SPAN>\" or \"<DIV>\" tags if they do not contain columns. If they do contain columns then they are exported as \"<MULTICOL>\"."
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3153896.202
@@ -1588,7 +1588,7 @@ msgid  "Importing and Exporting Numbering"
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3145591.224
-msgid  "If, in <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>, the export option \"$[officename] Writer\" or \"Internet Explorer\" is selected, the indents of numberings are exported as \"margin-left\" CSS1 property in the STYLE attribute of the &lt;<OL&gt;> and &lt;<UL&gt;> tags. The property indicates the difference relative to the indent of the next higher level."
+msgid  "If, in <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>, the export option \"$[officename] Writer\" or \"Internet Explorer\" is selected, the indents of numberings are exported as \"margin-left\" CSS1 property in the STYLE attribute of the <OL> and <UL> tags. The property indicates the difference relative to the indent of the next higher level."
 msgstr ""
 
 #: 00/00000020.xhp#PAR_ID3153573.225
@@ -2636,7 +2636,7 @@ msgid  "Defines the type of paragraph break for a text line."
 msgstr ""
 
 #: 00/00000215.xhp#HD_ID3150935.13
-msgid  "CR &amp;& LF"
+msgid  "CR & LF"
 msgstr ""
 
 #: 00/00000215.xhp#PAR_ID3145829.14
@@ -3404,7 +3404,7 @@ msgid  "Choose <emph>Edit - Changes - Accept or Reject - List</emph> tab. Click 
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3156297.49
-msgid  "Choose <emph>Edit - Find &amp;& Replace</emph>"
+msgid  "Choose <emph>Edit - Find & Replace</emph>"
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3154503.569
@@ -3420,19 +3420,19 @@ msgid  "<image id=\"img_id3149121\" src=\"res/commandimagelist/sc_recsearch.png\
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3144748.50
-msgid  "Find &amp;& Replace"
+msgid  "Find & Replace"
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3156357.552
-msgid  "<variable id=\"suchenattribute\">Choose <emph>Edit - Find &amp;& Replace - Attributes</emph></variable>"
+msgid  "<variable id=\"suchenattribute\">Choose <emph>Edit - Find & Replace - Attributes</emph></variable>"
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3153840.553
-msgid  "<variable id=\"suchenformat\">Choose <emph>Edit - Find &amp;& Replace - Format</emph> button </variable>"
+msgid  "<variable id=\"suchenformat\">Choose <emph>Edit - Find & Replace - Format</emph> button </variable>"
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3146971.554
-msgid  "Choose <emph>Edit - Find &amp;& Replace - Similarity search</emph> check box and <emph>...</emph> button."
+msgid  "Choose <emph>Edit - Find & Replace - Similarity search</emph> check box and <emph>...</emph> button."
 msgstr ""
 
 #: 00/00000402.xhp#PAR_ID3153709.572
@@ -3556,7 +3556,7 @@ msgid  "Choose <emph>Insert - Hyperlink</emph>"
 msgstr ""
 
 #: 00/00000403.xhp#PAR_ID3153717.38
-msgid  "<variable id=\"hypdiamailnews\">Click <emph>Hyperlink</emph> icon on <emph>Standard</emph> bar, click <emph>Mail &amp;& News</emph></variable>"
+msgid  "<variable id=\"hypdiamailnews\">Click <emph>Hyperlink</emph> icon on <emph>Standard</emph> bar, click <emph>Mail & News</emph></variable>"
 msgstr ""
 
 #: 00/00000403.xhp#PAR_ID3149415.34
@@ -4724,11 +4724,11 @@ msgid  "Choose <emph>Format - Styles and Formatting</emph> - open context menu o
 msgstr ""
 
 #: 00/00040500.xhp#PAR_ID3154640.32
-msgid  "Choose <emph>Format - Paragraph - Indents &amp;& Spacing</emph> tab"
+msgid  "Choose <emph>Format - Paragraph - Indents & Spacing</emph> tab"
 msgstr ""
 
 #: 00/00040500.xhp#PAR_ID3152463.34
-msgid  "Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Indents &amp;& Spacing</emph> tab"
+msgid  "Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Indents & Spacing</emph> tab"
 msgstr ""
 
 #: 00/00040500.xhp#PAR_ID3154319.39
@@ -5800,7 +5800,7 @@ msgid  "Rotate"
 msgstr ""
 
 #: 00/00040502.xhp#PAR_ID3145666.45
-msgid  "<variable id=\"ecke\">Choose <emph>Format - </emph><switchinline select=\"appl\"><caseinline select=\"WRITER\"><emph>Object - </emph></caseinline><caseinline select=\"CALC\"><emph>Graphic - </emph></caseinline></switchinline><emph>Position and Size - Slant &amp;& Corner Radius</emph> tab </variable>"
+msgid  "<variable id=\"ecke\">Choose <emph>Format - </emph><switchinline select=\"appl\"><caseinline select=\"WRITER\"><emph>Object - </emph></caseinline><caseinline select=\"CALC\"><emph>Graphic - </emph></caseinline></switchinline><emph>Position and Size - Slant & Corner Radius</emph> tab </variable>"
 msgstr ""
 
 #: 00/00040502.xhp#PAR_ID3146081.46
@@ -9612,7 +9612,7 @@ msgid  "<ahelp hid=\"SC:CHECKBOX:RID_SCDLG_INSCONT:BTN_INSNUMBERS\"><switchinlin
 msgstr ""
 
 #: 01/02070000.xhp#HD_ID3151054.47
-msgid  "<switchinline select=\"appl\"><caseinline select=\"CALC\">Date &amp;& Time </caseinline></switchinline>"
+msgid  "<switchinline select=\"appl\"><caseinline select=\"CALC\">Date & Time </caseinline></switchinline>"
 msgstr ""
 
 #: 01/02070000.xhp#PAR_ID3154226.48
@@ -9784,11 +9784,11 @@ msgid  "<variable id=\"allestext\"><ahelp hid=\".uno:Select\" visibility=\"visib
 msgstr ""
 
 #: 01/02100000.xhp#TIT
-msgid  "Find &amp;& Replace"
+msgid  "Find & Replace"
 msgstr ""
 
 #: 01/02100000.xhp#HD_ID3154044.1
-msgid  "<variable id=\"02100000\"><link href=\"text/shared/01/02100000.xhp\" name=\"Find &amp;& Replace\">Find &amp;& Replace</link></variable>"
+msgid  "<variable id=\"02100000\"><link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\">Find & Replace</link></variable>"
 msgstr ""
 
 #: 01/02100000.xhp#PAR_ID3149893.2
@@ -9900,7 +9900,7 @@ msgid  "<ahelp hid=\"SVX:CHECKBOX:RID_SVXDLG_SEARCH:BTN_LAYOUTS\">Searches for t
 msgstr ""
 
 #: 01/02100000.xhp#PAR_IDN109CC
-msgid  "After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find &amp;& Replace </emph>dialog changes to <emph>Including Styles</emph>."
+msgid  "After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find & Replace </emph>dialog changes to <emph>Including Styles</emph>."
 msgstr ""
 
 #: 01/02100000.xhp#PAR_IDN109DF
@@ -10092,7 +10092,7 @@ msgid  "<ahelp hid=\".\" visibility=\"hidden\">Searches through all of the sheet
 msgstr ""
 
 #: 01/02100000.xhp#PAR_ID3151101.188
-msgid  "After you close the <emph>Find &amp;& Replace</emph> dialog, you can still search using the last search criteria that you entered, by pressing Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F."
+msgid  "After you close the <emph>Find & Replace</emph> dialog, you can still search using the last search criteria that you entered, by pressing Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F."
 msgstr ""
 
 #: 01/02100001.xhp#TIT
@@ -10180,7 +10180,7 @@ msgid  "\\"
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3147209.159
-msgid  "Search interprets the special character that follows the \"\\\" as a normal character and not as a regular expression (except for the combinations \\n, \\t, \\&gt;>, and \\&lt;<). For example, \"tree\\.\" finds \"tree.\", not \"treed\" or \"trees\"."
+msgid  "Search interprets the special character that follows the \"\\\" as a normal character and not as a regular expression (except for the combinations \\n, \\t, \\>, and \\<). For example, \"tree\\.\" finds \"tree.\", not \"treed\" or \"trees\"."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3152945.166
@@ -10232,7 +10232,7 @@ msgid  "Finds the first character of a paragraph."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3147282.43
-msgid  "&amp;& or $0"
+msgid  "& or $0"
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3153961.44
@@ -10240,11 +10240,11 @@ msgid  "Adds the string that was found by the search criteria in the <emph>Searc
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3149650.201
-msgid  "For example, if you enter \"window\" in the <emph>Search for</emph> box and \"&amp;&frame\" in the <emph>Replace with</emph> box, the word \"window\" is replaced with \"windowframe\"."
+msgid  "For example, if you enter \"window\" in the <emph>Search for</emph> box and \"&frame\" in the <emph>Replace with</emph> box, the word \"window\" is replaced with \"windowframe\"."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3150543.206
-msgid  "You can also enter an \"&amp;&\" in the <emph>Replace with</emph> box to modify the <emph>Attributes</emph> or the <emph>Format</emph> of the string found by the search criteria."
+msgid  "You can also enter an \"&\" in the <emph>Replace with</emph> box to modify the <emph>Attributes</emph> or the <emph>Format</emph> of the string found by the search criteria."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3145419.172
@@ -12504,7 +12504,7 @@ msgid  "<ahelp hid=\".\" visibility=\"hidden\">Inserts a new record into the cur
 msgstr ""
 
 #: 01/03010000.xhp#TIT
-msgid  "Zoom &amp;& View Layout"
+msgid  "Zoom & View Layout"
 msgstr ""
 
 #: 01/03010000.xhp#BM_ID3154682
@@ -12512,7 +12512,7 @@ msgid  "<bookmark_value>zooming;page views</bookmark_value>         <bookmark_va
 msgstr ""
 
 #: 01/03010000.xhp#HD_ID3154682.1
-msgid  "<link href=\"text/shared/01/03010000.xhp\">Zoom &amp;& View Layout</link>"
+msgid  "<link href=\"text/shared/01/03010000.xhp\">Zoom & View Layout</link>"
 msgstr ""
 
 #: 01/03010000.xhp#PAR_ID3149578.2
@@ -12892,7 +12892,7 @@ msgid  "<ahelp hid=\".\">Use <item type=\"menuitem\">View - Comments</item> to s
 msgstr ""
 
 #: 01/04050000.xhp#PAR_ID0302200901430918
-msgid  "In the Find &amp;& Replace dialog of text documents, you can select to include the comments texts in your searches."
+msgid  "In the Find & Replace dialog of text documents, you can select to include the comments texts in your searches."
 msgstr ""
 
 #: 01/04050000.xhp#HD_ID3445539
@@ -13340,7 +13340,7 @@ msgid  "<variable id=\"frameeinfuegentext\"><ahelp hid=\".\">Inserts a floating 
 msgstr ""
 
 #: 01/04160500.xhp#PAR_ID3151100.6
-msgid  "If you want to create HTML pages that use floating frames, choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML compatibility</emph>, and then select the \"MS Internet Explorer\" option. The floating frame is bounded by &lt;<IFRAME&gt;> and &lt;</IFRAME&gt;> tags."
+msgid  "If you want to create HTML pages that use floating frames, choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML compatibility</emph>, and then select the \"MS Internet Explorer\" option. The floating frame is bounded by <IFRAME> and </IFRAME> tags."
 msgstr ""
 
 #: 01/04160500.xhp#PAR_ID3151330
@@ -14128,7 +14128,7 @@ msgid  "You can define a number format so that it only applies when the conditio
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3159179.115
-msgid  "You can use any combination of numbers and the &lt;<, &lt;<=, &gt;>, &gt;>=, = and &lt;<&gt;> operators."
+msgid  "You can use any combination of numbers and the <, <=, >, >=, = and <> operators."
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3159196.236
@@ -14136,7 +14136,7 @@ msgid  "For example, if you want to apply different colors to different temperat
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3150872.113
-msgid  "[BLUE][&lt;<0]#,0 \"°C\";[RED][&gt;>30]#,0 \"°C\";[BLACK]#,0 \"°C\""
+msgid  "[BLUE][<0]#,0 \"°C\";[RED][>30]#,0 \"°C\";[BLACK]#,0 \"°C\""
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3157870.114
@@ -14688,11 +14688,11 @@ msgid  "Date + Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3156290.148
-msgid  "Date&amp;&Time"
+msgid  "Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3152456.149
-msgid  "Date + Date&amp;&Time"
+msgid  "Date + Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3156169.150
@@ -14716,15 +14716,15 @@ msgid  "Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3155500.155
-msgid  "Time + Date&amp;&Time"
+msgid  "Time + Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3155128.156
-msgid  "Date&amp;&Time"
+msgid  "Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3152904.157
-msgid  "Date&amp;&Time + Date&amp;&Time"
+msgid  "Date&Time + Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3159143.158
@@ -14732,11 +14732,11 @@ msgid  "Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3148909.159
-msgid  "Date&amp;&Time + Number"
+msgid  "Date&Time + Number"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3154806.160
-msgid  "Date&amp;&Time"
+msgid  "Date&Time"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3151269.161
@@ -14748,7 +14748,7 @@ msgid  "Number"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3149174.163
-msgid  "<switchinline select=\"appl\"><caseinline select=\"CALC\">The Date&amp;&Time format displays the date and time that an entry was made to a cell with this format. </caseinline></switchinline>"
+msgid  "<switchinline select=\"appl\"><caseinline select=\"CALC\">The Date&Time format displays the date and time that an entry was made to a cell with this format. </caseinline></switchinline>"
 msgstr ""
 
 #: 01/05020301.xhp#PAR_ID3143225.164
@@ -15080,7 +15080,7 @@ msgid  "<ahelp hid=\"SW:EDIT:TP_CHAR_URL:ED_NAME\">Enter a name for the hyperlin
 msgstr ""
 
 #: 01/05020400.xhp#PAR_ID3148943.34
-msgid  "&lt;<A HREF=\"http://www.example.com/\" NAME=\"Nametext\" TARGET=\"_blank\"&gt;>Note&lt;</A&gt;>"
+msgid  "<A HREF=\"http://www.example.com/\" NAME=\"Nametext\" TARGET=\"_blank\">Note</A>"
 msgstr ""
 
 #: 01/05020400.xhp#HD_ID3155923.20
@@ -19268,7 +19268,7 @@ msgid  "<ahelp hid=\"HID_TPROTATION_CTRL2\">Click to specify the rotation angle 
 msgstr ""
 
 #: 01/05230400.xhp#TIT
-msgid  "Slant &amp;& Corner Radius"
+msgid  "Slant & Corner Radius"
 msgstr ""
 
 #: 01/05230400.xhp#BM_ID3149988
@@ -19276,7 +19276,7 @@ msgid  "<bookmark_value>slanting draw objects</bookmark_value><bookmark_value>dr
 msgstr ""
 
 #: 01/05230400.xhp#HD_ID3149988.1
-msgid  "<link href=\"text/shared/01/05230400.xhp\" name=\"Slant &amp;& Corner Radius\">Slant &amp;& Corner Radius</link>"
+msgid  "<link href=\"text/shared/01/05230400.xhp\" name=\"Slant & Corner Radius\">Slant & Corner Radius</link>"
 msgstr ""
 
 #: 01/05230400.xhp#PAR_ID3154788.2
@@ -21208,7 +21208,7 @@ msgid  "Set the color properties of the texture."
 msgstr ""
 
 #: 01/05350500.xhp#HD_ID3150775.8
-msgid  "Black &amp;& White"
+msgid  "Black & White"
 msgstr ""
 
 #: 01/05350500.xhp#PAR_ID3147242.9
@@ -21220,7 +21220,7 @@ msgid  "<image id=\"img_id3150084\" src=\"svx/res/luminanc.png\" width=\"0.1661i
 msgstr ""
 
 #: 01/05350500.xhp#PAR_ID3156156.10
-msgid  "Black &amp;& White"
+msgid  "Black & White"
 msgstr ""
 
 #: 01/05350500.xhp#HD_ID3150670.11
@@ -22696,7 +22696,7 @@ msgid  "To access this menu, right-click a misspelled word in your document. To 
 msgstr ""
 
 #: 01/06040500.xhp#HD_ID3153899.4
-msgid  "&lt;<Replacement Suggestions&gt;>"
+msgid  "<Replacement Suggestions>"
 msgstr ""
 
 #: 01/06040500.xhp#PAR_ID3147000.5
@@ -22736,7 +22736,7 @@ msgid  "<ahelp hid=\"HID_LINGU_AUTOCORR\">To always replace the highlighted word
 msgstr ""
 
 #: 01/06040500.xhp#HD_ID3146797.15
-msgid  "Word is &lt;<name of language&gt;>"
+msgid  "Word is <name of language>"
 msgstr ""
 
 #: 01/06040500.xhp#PAR_ID3150443.16
@@ -22744,7 +22744,7 @@ msgid  "<ahelp hid=\"HID_LINGU_WORD_LANGUAGE\">Changes the language settings for
 msgstr ""
 
 #: 01/06040500.xhp#HD_ID3166411.17
-msgid  "Paragraph is &lt;<name of language&gt;>"
+msgid  "Paragraph is <name of language>"
 msgstr ""
 
 #: 01/06040500.xhp#PAR_ID3148925.18
@@ -23324,7 +23324,7 @@ msgid  "Sets the indent, spacing, and alignment options for the numbered or bull
 msgstr ""
 
 #: 01/06050600.xhp#PAR_ID5004119
-msgid  "The Position tab page looks different for documents using the new position and spacing attributes introduced with OpenOffice.org 3.0, or documents using the old attributes from versions before 3.0. The new version of this tab page shows the controls \"Numbering followed by\", \"Numbering alignment\", \"Aligned at\", and \"Indent at\". The old version of this tab page that can be seen in an old numbered or bulleted list shows the controls \"Indent\", \"Width of numbering\", \"Minimum space numbering &lt;<-&gt;> text\", and \"Numbering alignment\"."
+msgid  "The Position tab page looks different for documents using the new position and spacing attributes introduced with OpenOffice.org 3.0, or documents using the old attributes from versions before 3.0. The new version of this tab page shows the controls \"Numbering followed by\", \"Numbering alignment\", \"Aligned at\", and \"Indent at\". The old version of this tab page that can be seen in an old numbered or bulleted list shows the controls \"Indent\", \"Width of numbering\", \"Minimum space numbering <-> text\", and \"Numbering alignment\"."
 msgstr ""
 
 #: 01/06050600.xhp#HD_ID3149031.3
@@ -23404,7 +23404,7 @@ msgid  "<ahelp hid=\"SW:METRICFIELD:TP_NUM_POSITION:MF_INDENT\">Enter the amount
 msgstr ""
 
 #: 01/06050600.xhp#HD_ID3156194.8
-msgid  "<switchinline select=\"appl\"><caseinline select=\"WRITER\">Minimum space numbering &lt;<-&gt;> text</caseinline></switchinline>"
+msgid  "<switchinline select=\"appl\"><caseinline select=\"WRITER\">Minimum space numbering <-> text</caseinline></switchinline>"
 msgstr ""
 
 #: 01/06050600.xhp#PAR_ID3147574.18
@@ -24380,7 +24380,7 @@ msgid  "Shows text only."
 msgstr ""
 
 #: 01/06140400.xhp#PAR_IDN1065B
-msgid  "Icons &amp;& Text"
+msgid  "Icons & Text"
 msgstr ""
 
 #: 01/06140400.xhp#PAR_IDN1065E
@@ -24828,7 +24828,7 @@ msgid  "The resulting line in the XML document is:"
 msgstr ""
 
 #: 01/06150120.xhp#PAR_ID3152594.7
-msgid  "&lt;<!DOCTYPE article PUBLIC &quot;\"-//OASIS//DTD DocBook XML V4.1.2//EN&quot;\" &quot;\"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd&quot;\"&gt;>"
+msgid  "<!DOCTYPE article PUBLIC \"-//OASIS//DTD DocBook XML V4.1.2//EN\" \"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd\">"
 msgstr ""
 
 #: 01/06150120.xhp#HD_ID3149180.8
@@ -25420,7 +25420,7 @@ msgid  "File Property"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3151056.3
-msgid  "&lt;<TITLE&gt;>"
+msgid  "<TITLE>"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3153778.4
@@ -25428,7 +25428,7 @@ msgid  "Subject"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3147228.5
-msgid  "&lt;<META NAME=\"CLASSIFICATION\" CONTENT=\"Field Content\"&gt;>"
+msgid  "<META NAME=\"CLASSIFICATION\" CONTENT=\"Field Content\">"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3154908.6
@@ -25436,7 +25436,7 @@ msgid  "Keywords"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3156422.7
-msgid  "&lt;<META NAME=\"KEYWORDS\" CONTENT=\"Field Content\"&gt;>"
+msgid  "<META NAME=\"KEYWORDS\" CONTENT=\"Field Content\">"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3151041.8
@@ -25444,7 +25444,7 @@ msgid  "Description"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3125863.9
-msgid  "&lt;<META NAME=\"DESCRIPTION\" CONTENT=\"Field Content\"&gt;>"
+msgid  "<META NAME=\"DESCRIPTION\" CONTENT=\"Field Content\">"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3159149.10
@@ -25452,7 +25452,7 @@ msgid  "Info fields 1...4"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3157892.11
-msgid  "&lt;<META NAME=\"Info field name\" CONTENT=\"Field Content\"&gt;>"
+msgid  "<META NAME=\"Info field name\" CONTENT=\"Field Content\">"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3155855.22
@@ -25468,7 +25468,7 @@ msgid  "Import Tips"
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3155307.13
-msgid  "When you import an HTML document, following META tags are automatically converted to $[officename] fields: &lt;<META HTTP-EQUIV=\"REFRESH\"...&gt;> and &lt;<META NAME=\"...\" ...&gt;> , where NAME equals to AUTHOR, CREATED, CHANGED, CHANGEDBY, DESCRIPTION, KEYWORDS or CLASSIFICATION."
+msgid  "When you import an HTML document, following META tags are automatically converted to $[officename] fields: <META HTTP-EQUIV=\"REFRESH\"...> and <META NAME=\"...\" ...> , where NAME equals to AUTHOR, CREATED, CHANGED, CHANGEDBY, DESCRIPTION, KEYWORDS or CLASSIFICATION."
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3146146.15
@@ -25480,7 +25480,7 @@ msgid  "Scripts and META tags in the header of an HTML document are imported and
 msgstr ""
 
 #: 01/about_meta_tags.xhp#PAR_ID3152885.14
-msgid  "To set the options for importing HTML tags, choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>. A known META tag contains either \"HTTP-EQUIV\" or \"NAME\", and are imported as $[officename] comments. The only exception is &lt;<META NAME=\"GENERATOR\"...&gt;>, which is ignored."
+msgid  "To set the options for importing HTML tags, choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>. A known META tag contains either \"HTTP-EQUIV\" or \"NAME\", and are imported as $[officename] comments. The only exception is <META NAME=\"GENERATOR\"...>, which is ignored."
 msgstr ""
 
 #: 01/about_meta_tags.xhp#HD_ID3163717.17
@@ -27620,7 +27620,7 @@ msgid  "Pattern"
 msgstr ""
 
 #: 01/xformsdatatab.xhp#PAR_ID2318796
-msgid  "<ahelp hid=\".\">Specifies a regular expression pattern. Strings validated against the data type must conform to this pattern to be valid. The XSD data type syntax for regular expressions is different from the regular expression syntax used elseswhere in %PRODUCTNAME, for example in the Find &amp;& Replace dialog.</ahelp>"
+msgid  "<ahelp hid=\".\">Specifies a regular expression pattern. Strings validated against the data type must conform to this pattern to be valid. The XSD data type syntax for regular expressions is different from the regular expression syntax used elseswhere in %PRODUCTNAME, for example in the Find & Replace dialog.</ahelp>"
 msgstr ""
 
 #: 01/xformsdatatab.xhp#HD_ID399182
@@ -29676,7 +29676,7 @@ msgid  "If you do not want the list entries to be written to the database or tra
 msgstr ""
 
 #: 02/01170101.xhp#PAR_ID3150511.189
-msgid  "For HTML documents, a list entry entered on the <emph>General</emph> tab corresponds to the HTML tag &lt;<OPTION&gt;>; an entry of the value list entered on the <emph>Data</emph> tab under <emph>List Contents</emph> corresponds to the &lt;<OPTION VALUE=...&gt;> tag."
+msgid  "For HTML documents, a list entry entered on the <emph>General</emph> tab corresponds to the HTML tag <OPTION>; an entry of the value list entered on the <emph>Data</emph> tab under <emph>List Contents</emph> corresponds to the <OPTION VALUE=...> tag."
 msgstr ""
 
 #: 02/01170101.xhp#HD_ID3154290.121
@@ -30584,11 +30584,11 @@ msgid  "<emph>Value lists for HTML documents</emph>"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3156034.16
-msgid  "For HTML forms, you can enter a value list under <emph>List content</emph>. Select the option \"Valuelist\" under <emph>Type of list contents</emph>. The values entered here will not be visible in the form, and are used to assign values to the visible entries. The entries made under <emph>List content</emph> correspond to the HTML tag &lt;<OPTION VALUE=...&gt;>."
+msgid  "For HTML forms, you can enter a value list under <emph>List content</emph>. Select the option \"Valuelist\" under <emph>Type of list contents</emph>. The values entered here will not be visible in the form, and are used to assign values to the visible entries. The entries made under <emph>List content</emph> correspond to the HTML tag <OPTION VALUE=...>."
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3154855.17
-msgid  "In the data transfer of a selected entry from a list box or a combo box, both the list of the values displayed in the form, which was entered on the <link href=\"text/shared/02/01170101.xhp\" name=\"General\"><emph>General</emph></link> tab under <emph>List entries</emph>, and the value list entered on the <emph>Data</emph> tab under <emph>List content</emph>, are taken into consideration: If a (non-empty) text is at the selected position in the value list (&lt;<OPTION VALUE=...&gt;>), it will be transmitted. Otherwise, the text displayed in the (&lt;<OPTION&gt;>) control is sent."
+msgid  "In the data transfer of a selected entry from a list box or a combo box, both the list of the values displayed in the form, which was entered on the <link href=\"text/shared/02/01170101.xhp\" name=\"General\"><emph>General</emph></link> tab under <emph>List entries</emph>, and the value list entered on the <emph>Data</emph> tab under <emph>List content</emph>, are taken into consideration: If a (non-empty) text is at the selected position in the value list (<OPTION VALUE=...>), it will be transmitted. Otherwise, the text displayed in the (<OPTION>) control is sent."
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3163377.18
@@ -30616,7 +30616,7 @@ msgid  "<emph>Transmitted data</emph>"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3154668.24
-msgid  "&lt;<OPTION&gt;>Item"
+msgid  "<OPTION>Item"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3154269.25
@@ -30632,7 +30632,7 @@ msgid  "the visible list entry (\"ListBox1=Item\")"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3146892.28
-msgid  "&lt;<OPTION VALUE=\"Value\"&gt;>Item"
+msgid  "<OPTION VALUE=\"Value\">Item"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3154604.29
@@ -30648,7 +30648,7 @@ msgid  "The value assigned to the list entry (\"ListBox1=Value\")"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3155944.32
-msgid  "&lt;<OPTION VALUE=\"\"&gt;>Item"
+msgid  "<OPTION VALUE=\"\">Item"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_ID3155147.33
@@ -31332,7 +31332,7 @@ msgid  "<ahelp hid=\"HID_PROP_SUBMIT_METHOD\">Specifies the method to transfer t
 msgstr ""
 
 #: 02/01170201.xhp#PAR_ID3145065.29
-msgid  "Using the \"Get\" method, the data of every control is transmitted as an environment variable. They are appended to the URL in the form \"?Control1=Content1&amp;&Control2=Content2&amp;&...\"; the character string is analyzed by a program on the recipient's server."
+msgid  "Using the \"Get\" method, the data of every control is transmitted as an environment variable. They are appended to the URL in the form \"?Control1=Content1&Control2=Content2&...\"; the character string is analyzed by a program on the recipient's server."
 msgstr ""
 
 #: 02/01170201.xhp#PAR_ID3150443.30
@@ -31360,7 +31360,7 @@ msgid  "Which values are transmitted in each case depends on the respective cont
 msgstr ""
 
 #: 02/01170201.xhp#PAR_ID3150984.51
-msgid  "How this information is transmitted depends on the selected transfer method (Get or Post) and the coding (URL or Multipart). If the Get method and URL encoding are selected, for example, value pairs in the form &lt;<Name&gt;>=&lt;<Value&gt;> are sent."
+msgid  "How this information is transmitted depends on the selected transfer method (Get or Post) and the coding (URL or Multipart). If the Get method and URL encoding are selected, for example, value pairs in the form <Name>=<Value> are sent."
 msgstr ""
 
 #: 02/01170201.xhp#PAR_ID3157909.52
@@ -31412,7 +31412,7 @@ msgid  "Table control"
 msgstr ""
 
 #: 02/01170201.xhp#PAR_ID3152933.49
-msgid  "From the table control, the individual columns are always transmitted. The name of the control, the name of the column, and the value of the column are sent. Using the Get method with URL encoding, the transmission is done in the form &lt;<Name of the table control&gt;>.&lt;<Name of the column&gt;>=&lt;<Value&gt;>, for example, with the value being dependent on the column."
+msgid  "From the table control, the individual columns are always transmitted. The name of the control, the name of the column, and the value of the column are sent. Using the Get method with URL encoding, the transmission is done in the form <Name of the table control>.<Name of the column>=<Value>, for example, with the value being dependent on the column."
 msgstr ""
 
 #: 02/01170202.xhp#TIT
@@ -31824,7 +31824,7 @@ msgid  "The database table on which the form is based is, for example, a custome
 msgstr ""
 
 #: 02/01170203.xhp#PAR_ID3151248.73
-msgid  "The subform should show the appropriate data from the orders table (\"Orders\") for each customer ID (Customer_ID -&gt;> x). This is only possible if each order is uniquely assigned to one customer in the orders table. Alternatively, you can use another field called Customer_ID; however, to make sure that this field is not confused with the same field from the main form, the field is called Customer_Number."
+msgid  "The subform should show the appropriate data from the orders table (\"Orders\") for each customer ID (Customer_ID -> x). This is only possible if each order is uniquely assigned to one customer in the orders table. Alternatively, you can use another field called Customer_ID; however, to make sure that this field is not confused with the same field from the main form, the field is called Customer_Number."
 msgstr ""
 
 #: 02/01170203.xhp#PAR_ID3153537.74
@@ -32132,7 +32132,7 @@ msgid  "The HTML filter now uses precisely these listener interfaces and method 
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3150506.8
-msgid  "&lt;<INPUT TYPE=text ONFOCUS=\"/* code */\""
+msgid  "<INPUT TYPE=text ONFOCUS=\"/* code */\""
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3154289.9
@@ -32140,7 +32140,7 @@ msgid  "rather than through the"
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3155391.10
-msgid  "&lt;<INPUT TYPE=text SDEvent-XFocusListener-focusGained=\"/* code */\""
+msgid  "<INPUT TYPE=text SDEvent-XFocusListener-focusGained=\"/* code */\""
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3152996.11
@@ -32148,7 +32148,7 @@ msgid  "register. Events can therefore be registered as desired, including those
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3150443.12
-msgid  "&lt;<META HTTP-EQUIV=\"content-script-type\" CONTENT=\"...\"&gt;>"
+msgid  "<META HTTP-EQUIV=\"content-script-type\" CONTENT=\"...\">"
 msgstr ""
 
 #: 02/01170700.xhp#PAR_ID3166410.13
@@ -32924,7 +32924,7 @@ msgid  "Increase Spacing"
 msgstr ""
 
 #: 02/03110000.xhp#PAR_ID3155391.4
-msgid  "You can make additional adjustments to the spacing by selecting <link href=\"text/shared/01/05030100.xhp\" name=\"Format - Paragraph - Indents &amp;& Spacing\"><emph>Format - Paragraph - Indents &amp;& Spacing</emph></link>"
+msgid  "You can make additional adjustments to the spacing by selecting <link href=\"text/shared/01/05030100.xhp\" name=\"Format - Paragraph - Indents & Spacing\"><emph>Format - Paragraph - Indents & Spacing</emph></link>"
 msgstr ""
 
 #: 02/03120000.xhp#TIT
@@ -32948,7 +32948,7 @@ msgid  "Decrease Spacing"
 msgstr ""
 
 #: 02/03120000.xhp#PAR_ID3156410.4
-msgid  "You can make additional adjustments to the spacing by selecting <link href=\"text/shared/01/05030100.xhp\" name=\"Format - Paragraph - Indents &amp;& Spacing\"><emph>Format - Paragraph - Indents &amp;& Spacing</emph></link>"
+msgid  "You can make additional adjustments to the spacing by selecting <link href=\"text/shared/01/05030100.xhp\" name=\"Format - Paragraph - Indents & Spacing\"><emph>Format - Paragraph - Indents & Spacing</emph></link>"
 msgstr ""
 
 #: 02/03130000.xhp#TIT
@@ -33816,19 +33816,19 @@ msgid  "<ahelp hid=\".\">Enter a name for the hyperlink.</ahelp> $[officename] i
 msgstr ""
 
 #: 02/09070200.xhp#TIT
-msgid  "Mail &amp;& News"
+msgid  "Mail & News"
 msgstr ""
 
 #: 02/09070200.xhp#HD_ID3147102.1
-msgid  "<link href=\"text/shared/02/09070200.xhp\" name=\"Mail News\">Mail &amp;& News</link>"
+msgid  "<link href=\"text/shared/02/09070200.xhp\" name=\"Mail News\">Mail & News</link>"
 msgstr ""
 
 #: 02/09070200.xhp#PAR_ID3153049.2
-msgid  "On the <emph>Mail &amp;& News</emph> page in the <link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink dialog\">Hyperlink dialog</link> you can edit hyperlinks for e-mail or news addresses."
+msgid  "On the <emph>Mail & News</emph> page in the <link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink dialog\">Hyperlink dialog</link> you can edit hyperlinks for e-mail or news addresses."
 msgstr ""
 
 #: 02/09070200.xhp#HD_ID3153528.3
-msgid  "Mail &amp;& News"
+msgid  "Mail & News"
 msgstr ""
 
 #: 02/09070200.xhp#HD_ID3153748.4
@@ -34348,7 +34348,7 @@ msgid  "<ahelp hid=\"SW:LISTBOX:DLG_AP_INSERT_DB_SEL:LB_TABLE_COL\">Lists all da
 msgstr ""
 
 #: 02/12070100.xhp#HD_ID3146958.5
-msgid  "&gt;>&gt;>"
+msgid  ">>"
 msgstr ""
 
 #: 02/12070100.xhp#PAR_ID3149750.22
@@ -34356,7 +34356,7 @@ msgid  "<ahelp hid=\"SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ALL_TO\">Moves
 msgstr ""
 
 #: 02/12070100.xhp#HD_ID3163802.6
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: 02/12070100.xhp#PAR_ID3153662.23
@@ -34364,7 +34364,7 @@ msgid  "<ahelp hid=\"SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ONE_TO\">Moves
 msgstr ""
 
 #: 02/12070100.xhp#HD_ID3149732.7
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: 02/12070100.xhp#PAR_ID3148685.24
@@ -34372,7 +34372,7 @@ msgid  "<ahelp hid=\"SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ONE_FROM\">Rem
 msgstr ""
 
 #: 02/12070100.xhp#HD_ID3150771.8
-msgid  "&lt;<&lt;<"
+msgid  "<<"
 msgstr ""
 
 #: 02/12070100.xhp#PAR_ID3154897.25
@@ -34496,7 +34496,7 @@ msgid  "Lists all columns of the database table, which can be accepted in the se
 msgstr ""
 
 #: 02/12070200.xhp#HD_ID3152551.4
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: 02/12070200.xhp#PAR_ID3145345.13
@@ -34704,7 +34704,7 @@ msgid  "Shows values equal to the condition."
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3143271.7
-msgid  "Less than (&lt;<)"
+msgid  "Less than (<)"
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3153761.8
@@ -34712,7 +34712,7 @@ msgid  "Shows values less than the condition."
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3146807.9
-msgid  "Greater than (&gt;>)"
+msgid  "Greater than (>)"
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3154852.10
@@ -34720,7 +34720,7 @@ msgid  "Shows values greater than the condition."
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3155342.11
-msgid  "Less than or equal to (&lt;< =)"
+msgid  "Less than or equal to (< =)"
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3154381.12
@@ -34728,7 +34728,7 @@ msgid  "Shows values that are less than or equal to the condition."
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3153823.13
-msgid  "Greater than or equal to (&gt;> =)"
+msgid  "Greater than or equal to (> =)"
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3154143.14
@@ -34736,7 +34736,7 @@ msgid  "Shows values that are greater than or equal to the condition."
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3154811.15
-msgid  "Not equal (&lt;< &gt;>)"
+msgid  "Not equal (< >)"
 msgstr ""
 
 #: 02/12090101.xhp#PAR_ID3148944.16
@@ -35212,7 +35212,7 @@ msgid  "Regular expression"
 msgstr ""
 
 #: 02/12100200.xhp#PAR_ID3150982.50
-msgid  "<ahelp hid=\"HID_SEARCH_REGULAR\">Searches with regular expressions.</ahelp> The same regular expressions that are supported here are also supported in the <item type=\"productname\">%PRODUCTNAME</item> <link href=\"text/shared/01/02100000.xhp\" name=\"Find &amp;& Replace dialog\">Find &amp;& Replace dialog</link>."
+msgid  "<ahelp hid=\"HID_SEARCH_REGULAR\">Searches with regular expressions.</ahelp> The same regular expressions that are supported here are also supported in the <item type=\"productname\">%PRODUCTNAME</item> <link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace dialog\">Find & Replace dialog</link>."
 msgstr ""
 
 #: 02/12100200.xhp#PAR_ID3154718.67
@@ -35644,7 +35644,7 @@ msgid  "<link href=\"text/shared/02/14040000.xhp\" name=\"Functions\">Functions<
 msgstr ""
 
 #: 02/14040000.xhp#PAR_ID3159224.2
-msgid  "<ahelp visibility=\"visible\" hid=\".uno:DBViewFunctions\">Displays the &quot;\"Function&quot;\" row in the lower part of the design view of the <link href=\"text/shared/explorer/database/02010100.xhp\" name=\"Query Design\">Query Design</link> window.</ahelp>"
+msgid  "<ahelp visibility=\"visible\" hid=\".uno:DBViewFunctions\">Displays the \"Function\" row in the lower part of the design view of the <link href=\"text/shared/explorer/database/02010100.xhp\" name=\"Query Design\">Query Design</link> window.</ahelp>"
 msgstr ""
 
 #: 02/14040000.xhp#PAR_ID3149205
@@ -35684,7 +35684,7 @@ msgid  "<link href=\"text/shared/02/14060000.xhp\" name=\"Alias\">Alias</link>"
 msgstr ""
 
 #: 02/14060000.xhp#PAR_ID3148731.2
-msgid  "<ahelp visibility=\"visible\" hid=\".uno:DBViewAliases\">Displays the &quot;\"Alias&quot;\" row in the lower part of the <link href=\"text/shared/explorer/database/02010100.xhp\" name=\"Query Design\">Query Design</link>.</ahelp>"
+msgid  "<ahelp visibility=\"visible\" hid=\".uno:DBViewAliases\">Displays the \"Alias\" row in the lower part of the <link href=\"text/shared/explorer/database/02010100.xhp\" name=\"Query Design\">Query Design</link>.</ahelp>"
 msgstr ""
 
 #: 02/14060000.xhp#PAR_ID3150808
@@ -37060,7 +37060,7 @@ msgid  "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinl
 msgstr ""
 
 #: 04/01010000.xhp#PAR_ID3150090.166
-msgid  "Calls the <emph>Find &amp;& Replace</emph> dialog."
+msgid  "Calls the <emph>Find & Replace</emph> dialog."
 msgstr ""
 
 #: 04/01010000.xhp#HD_ID3148800.167
@@ -40080,7 +40080,7 @@ msgid  "Within each wizard page, you can undo, modify, or skip altogether the ed
 msgstr ""
 
 #: autopi/01050000.xhp#HD_ID3159269.4
-msgid  "&lt;<&lt;< Back"
+msgid  "<< Back"
 msgstr ""
 
 #: autopi/01050000.xhp#PAR_ID3150504.5
@@ -40088,7 +40088,7 @@ msgid  "<ahelp hid=\"SD:PUSHBUTTON:DLG_ASS:BUT_LAST\">Returns to the previous st
 msgstr ""
 
 #: autopi/01050000.xhp#HD_ID3153349.6
-msgid  "Next &gt;>&gt;>"
+msgid  "Next >>"
 msgstr ""
 
 #: autopi/01050000.xhp#PAR_ID3156307.7
@@ -40476,7 +40476,7 @@ msgid  "<ahelp hid=\"HID_DLGFORM_FIELDSAVAILABLE\">Lists the names of the data b
 msgstr ""
 
 #: autopi/01090100.xhp#HD_ID3150443.10
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: autopi/01090100.xhp#PAR_ID3148538.11
@@ -40484,7 +40484,7 @@ msgid  "<ahelp hid=\"HID_DLGFORM_CMDMOVESELECTED\">Click to move the selected fi
 msgstr ""
 
 #: autopi/01090100.xhp#HD_ID3154142.12
-msgid  "&gt;>&gt;>"
+msgid  ">>"
 msgstr ""
 
 #: autopi/01090100.xhp#PAR_ID3145121.13
@@ -40492,7 +40492,7 @@ msgid  "<ahelp hid=\"HID_DLGFORM_CMDMOVEALL\">Click to move all fields to the bo
 msgstr ""
 
 #: autopi/01090100.xhp#HD_ID3155419.14
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: autopi/01090100.xhp#PAR_ID3149763.15
@@ -40500,7 +40500,7 @@ msgid  "<ahelp hid=\"HID_DLGFORM_CMDREMOVESELECTED\">Click to move the selected 
 msgstr ""
 
 #: autopi/01090100.xhp#HD_ID3159399.16
-msgid  "&lt;<&lt;<"
+msgid  "<<"
 msgstr ""
 
 #: autopi/01090100.xhp#PAR_ID3156329.17
@@ -41008,7 +41008,7 @@ msgid  "<ahelp hid=\"HID_DLGREPORT_1_FIELDSSELECTED\">Displays all fields that a
 msgstr ""
 
 #: autopi/01100100.xhp#HD_ID3147209.10
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: autopi/01100100.xhp#PAR_ID3152350.11
@@ -41016,7 +41016,7 @@ msgid  "<ahelp hid=\"HID_DLGREPORT_1_CMDMOVESELECTED\">Click to move the selecte
 msgstr ""
 
 #: autopi/01100100.xhp#HD_ID3159269.12
-msgid  "&gt;>&gt;>"
+msgid  ">>"
 msgstr ""
 
 #: autopi/01100100.xhp#PAR_ID3149784.13
@@ -41024,7 +41024,7 @@ msgid  "<ahelp hid=\"HID_DLGREPORT_1_CMDMOVEALL\">Click to move all fields to th
 msgstr ""
 
 #: autopi/01100100.xhp#HD_ID3153146.14
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: autopi/01100100.xhp#PAR_ID3150275.15
@@ -41032,7 +41032,7 @@ msgid  "<ahelp hid=\"HID_DLGREPORT_1_CMDREMOVESELECTED\">Click to move the selec
 msgstr ""
 
 #: autopi/01100100.xhp#HD_ID3149233.16
-msgid  "&lt;<&lt;<"
+msgid  "<<"
 msgstr ""
 
 #: autopi/01100100.xhp#PAR_ID3150084.17
@@ -41084,7 +41084,7 @@ msgid  "Fields"
 msgstr ""
 
 #: autopi/01100200.xhp#PAR_ID3155805.8
-msgid  "<ahelp hid=\"HID_DLGREPORT_2_GROUPING\">Lists the fields from your selection on the previous page of the Wizard. To group the report by a field, select the field name, then click the <emph>&gt;></emph> button. You may select up to four levels of grouping.</ahelp>"
+msgid  "<ahelp hid=\"HID_DLGREPORT_2_GROUPING\">Lists the fields from your selection on the previous page of the Wizard. To group the report by a field, select the field name, then click the <emph>></emph> button. You may select up to four levels of grouping.</ahelp>"
 msgstr ""
 
 #: autopi/01100200.xhp#HD_ID3155552.3
@@ -41092,11 +41092,11 @@ msgid  "Groupings"
 msgstr ""
 
 #: autopi/01100200.xhp#PAR_ID3155892.9
-msgid  "<ahelp hid=\"HID_DLGREPORT_2_PREGROUPINGDEST\">Lists the fields by which the report will be grouped. To remove one level of grouping, select the field name, then click the <emph>&lt;<</emph> button. You may select up to four levels of grouping.</ahelp>"
+msgid  "<ahelp hid=\"HID_DLGREPORT_2_PREGROUPINGDEST\">Lists the fields by which the report will be grouped. To remove one level of grouping, select the field name, then click the <emph><</emph> button. You may select up to four levels of grouping.</ahelp>"
 msgstr ""
 
 #: autopi/01100200.xhp#HD_ID3154289.4
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: autopi/01100200.xhp#PAR_ID3157958.10
@@ -41104,7 +41104,7 @@ msgid  "<ahelp hid=\"HID_DLGREPORT_2_CMDGROUP\">Click to move the selected field
 msgstr ""
 
 #: autopi/01100200.xhp#HD_ID3154823.5
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: autopi/01100200.xhp#PAR_ID3149811.11
@@ -41288,7 +41288,7 @@ msgid  "The pages displayed differ depending on what you select on the second pa
 msgstr ""
 
 #: autopi/01110000.xhp#HD_ID3146797.3
-msgid  "&lt;<&lt;< Back"
+msgid  "<< Back"
 msgstr ""
 
 #: autopi/01110000.xhp#PAR_ID3150444.4
@@ -41296,7 +41296,7 @@ msgid  "<ahelp hid=\"SD:PUSHBUTTON:DLG_PUBLISHING:BUT_LAST\">Returns to the sele
 msgstr ""
 
 #: autopi/01110000.xhp#HD_ID3147242.5
-msgid  "Next &gt;>&gt;>"
+msgid  "Next >>"
 msgstr ""
 
 #: autopi/01110000.xhp#PAR_ID3147574.6
@@ -41992,7 +41992,7 @@ msgid  "Accept"
 msgstr ""
 
 #: autopi/01120100.xhp#PAR_ID3147008.12
-msgid  "&gt;>&gt;>"
+msgid  ">>"
 msgstr ""
 
 #: autopi/01120100.xhp#PAR_ID3153345.5
@@ -42016,7 +42016,7 @@ msgid  "Remove"
 msgstr ""
 
 #: autopi/01120100.xhp#PAR_ID3153561.13
-msgid  "&lt;<&lt;<"
+msgid  "<<"
 msgstr ""
 
 #: autopi/01120100.xhp#PAR_ID3159157.9
@@ -44216,7 +44216,7 @@ msgid  "Double-click the \"Item_No\" field from the \"Item\" table. Display the 
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3151009.210
-msgid  "Enter &gt;>3 as a criterion and disable the Visible field."
+msgid  "Enter >3 as a criterion and disable the Visible field."
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3145601.211
@@ -44340,7 +44340,7 @@ msgid  "The operator = will not be displayed in the query fields. If you enter a
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3150470.45
-msgid  "&lt;<&gt;>"
+msgid  "<>"
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3145223.46
@@ -44352,7 +44352,7 @@ msgid  "... the content of the field does not correspond to the specified expres
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3153015.48
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3146815.49
@@ -44364,7 +44364,7 @@ msgid  "... the content of the field is greater than the specified expression."
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3147270.51
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3147379.52
@@ -44376,7 +44376,7 @@ msgid  "... the content of the field is less than the specified expression."
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3149787.54
-msgid  "&gt;>="
+msgid  ">="
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3150636.55
@@ -44388,7 +44388,7 @@ msgid  "... the content of the field is greater than or equal to the specified e
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3157964.57
-msgid  "&lt;<="
+msgid  "<="
 msgstr ""
 
 #: explorer/database/02010100.xhp#PAR_ID3154052.58
@@ -45816,7 +45816,7 @@ msgid  "Left list box"
 msgstr ""
 
 #: explorer/database/05030200.xhp#PAR_ID3147088.5
-msgid  "<ahelp hid=\"DBACCESS_MULTILISTBOX_TAB_WIZ_COLUMN_SELECT_LB_ORG_COLUMN_NAMES\">Lists the available data fields that you can include in the copied table. To copy a data field, click its name, and then click the &gt;> button. To copy all of the fields, click the <emph>&gt;>&gt;></emph> button.</ahelp>"
+msgid  "<ahelp hid=\"DBACCESS_MULTILISTBOX_TAB_WIZ_COLUMN_SELECT_LB_ORG_COLUMN_NAMES\">Lists the available data fields that you can include in the copied table. To copy a data field, click its name, and then click the > button. To copy all of the fields, click the <emph>>></emph> button.</ahelp>"
 msgstr ""
 
 #: explorer/database/05030200.xhp#HD_ID3154823.6
@@ -45832,7 +45832,7 @@ msgid  "Buttons"
 msgstr ""
 
 #: explorer/database/05030200.xhp#PAR_ID3146797.9
-msgid  "<ahelp hid=\"DBACCESS_IMAGEBUTTON_TAB_WIZ_COLUMN_SELECT_IB_COLUMNS_LH\">Adds or removes the selected field (&gt;> or &lt;< button) or all of the fields (&lt;<&lt;< or &gt;>&gt;> button).</ahelp>"
+msgid  "<ahelp hid=\"DBACCESS_IMAGEBUTTON_TAB_WIZ_COLUMN_SELECT_IB_COLUMNS_LH\">Adds or removes the selected field (> or < button) or all of the fields (<< or >> button).</ahelp>"
 msgstr ""
 
 #: explorer/database/05030200.xhp#PAR_ID3153561.10
@@ -46332,7 +46332,7 @@ msgid  "<ahelp hid=\"DBACCESS_LISTBOX_DLG_DBASE_INDEXES_LB_FREEINDEXES\">Lists t
 msgstr ""
 
 #: explorer/database/11030100.xhp#HD_ID3156152.6
-msgid  "&lt;<"
+msgid  "<"
 msgstr ""
 
 #: explorer/database/11030100.xhp#PAR_ID3150984.13
@@ -46340,7 +46340,7 @@ msgid  "<ahelp hid=\"DBACCESS_IMAGEBUTTON_DLG_DBASE_INDEXES_IB_ADD\">Moves the s
 msgstr ""
 
 #: explorer/database/11030100.xhp#HD_ID3149416.7
-msgid  "&lt;<&lt;<"
+msgid  "<<"
 msgstr ""
 
 #: explorer/database/11030100.xhp#PAR_ID3145315.14
@@ -46348,7 +46348,7 @@ msgid  "<ahelp hid=\"DBACCESS_IMAGEBUTTON_DLG_DBASE_INDEXES_IB_ADDALL\">Moves al
 msgstr ""
 
 #: explorer/database/11030100.xhp#HD_ID3149579.8
-msgid  "&gt;>"
+msgid  ">"
 msgstr ""
 
 #: explorer/database/11030100.xhp#PAR_ID3149795.15
@@ -46356,7 +46356,7 @@ msgid  "<ahelp hid=\"DBACCESS_IMAGEBUTTON_DLG_DBASE_INDEXES_IB_REMOVE\">Moves th
 msgstr ""
 
 #: explorer/database/11030100.xhp#HD_ID3155629.9
-msgid  "&gt;>&gt;>"
+msgid  ">>"
 msgstr ""
 
 #: explorer/database/11030100.xhp#PAR_ID3151245.16
@@ -47928,7 +47928,7 @@ msgid  "You can use a JDBC driver to access an Oracle database from Solaris or L
 msgstr ""
 
 #: explorer/database/dabawiz02jdbc.xhp#PAR_IDN1064B
-msgid  "On UNIX, ensure that the Oracle database client is installed with JDBC support. The JDBC driver class for the Solaris Oracle client version 8.x is located in the &lt;<Oracle client&gt;>/product/jdbc/lib/classes111.zip directory. You can also download the latest version from the Oracle web site:"
+msgid  "On UNIX, ensure that the Oracle database client is installed with JDBC support. The JDBC driver class for the Solaris Oracle client version 8.x is located in the <Oracle client>/product/jdbc/lib/classes111.zip directory. You can also download the latest version from the Oracle web site:"
 msgstr ""
 
 #: explorer/database/dabawiz02jdbc.xhp#PAR_IDN1064E
@@ -47992,7 +47992,7 @@ msgid  "Data source URL"
 msgstr ""
 
 #: explorer/database/dabawiz02jdbc.xhp#PAR_IDN106A4
-msgid  "<ahelp hid=\"HID_DSADMIN_CONNURL_JDBCPAGE\">Enter the URL for the database. For example, for the MySQL JDBC driver, enter \"jdbc:mysql://&lt;<Servername&gt;>/&lt;<name of the database&gt;>\". For more information on the JDBC driver, consult the documentation that came with the driver.</ahelp>"
+msgid  "<ahelp hid=\"HID_DSADMIN_CONNURL_JDBCPAGE\">Enter the URL for the database. For example, for the MySQL JDBC driver, enter \"jdbc:mysql://<Servername>/<name of the database>\". For more information on the JDBC driver, consult the documentation that came with the driver.</ahelp>"
 msgstr ""
 
 #: explorer/database/dabawiz02jdbc.xhp#PAR_IDN106BB
@@ -48216,7 +48216,7 @@ msgid  "You can use a JDBC driver to access an Oracle database from Solaris or L
 msgstr ""
 
 #: explorer/database/dabawiz02oracle.xhp#PAR_IDN105D4
-msgid  "On UNIX, ensure that the Oracle database client is installed with JDBC support. The JDBC driver class for the Solaris Oracle client version 8.x is located in the &lt;<Oracle client&gt;>/product/jdbc/lib/classes111.zip directory. You can also download the latest version of the driver from the Oracle web site:"
+msgid  "On UNIX, ensure that the Oracle database client is installed with JDBC support. The JDBC driver class for the Solaris Oracle client version 8.x is located in the <Oracle client>/product/jdbc/lib/classes111.zip directory. You can also download the latest version of the driver from the Oracle web site:"
 msgstr ""
 
 #: explorer/database/dabawiz02oracle.xhp#PAR_IDN105D7
@@ -50584,7 +50584,7 @@ msgid  "Available fields"
 msgstr ""
 
 #: explorer/database/tablewizard03.xhp#PAR_IDN10587
-msgid  "<ahelp hid=\".\">Select a field and click &gt;> to add it to the list of primary key fields.</ahelp>"
+msgid  "<ahelp hid=\".\">Select a field and click > to add it to the list of primary key fields.</ahelp>"
 msgstr ""
 
 #: explorer/database/tablewizard03.xhp#PAR_IDN1059A
@@ -50592,7 +50592,7 @@ msgid  "Primary key fields"
 msgstr ""
 
 #: explorer/database/tablewizard03.xhp#PAR_IDN1059E
-msgid  "<ahelp hid=\".\">Select a field and click &lt;< to remove it from the list of primary key fields. The primary key is created as a concatenation of the fields in this list, from top to bottom.</ahelp>"
+msgid  "<ahelp hid=\".\">Select a field and click < to remove it from the list of primary key fields. The primary key is created as a concatenation of the fields in this list, from top to bottom.</ahelp>"
 msgstr ""
 
 #: explorer/database/tablewizard03.xhp#PAR_IDN105A1
@@ -51532,7 +51532,7 @@ msgid  "This will work only with the text edit cursor inside the cell, not at th
 msgstr ""
 
 #: guide/breaking_lines.xhp#PAR_ID0509200914160968
-msgid  "You can search for a newline character in the Find &amp;& Replace dialog by searching for \\n as a regular expression. You can use the text function CHAR(10) to insert a newline character into a text formula."
+msgid  "You can search for a newline character in the Find & Replace dialog by searching for \\n as a regular expression. You can use the text function CHAR(10) to insert a newline character into a text formula."
 msgstr ""
 
 #: guide/breaking_lines.xhp#PAR_IDN106E6
@@ -53164,7 +53164,7 @@ msgid  "In spreadsheets and documents in which form controls are used, you can c
 msgstr ""
 
 #: guide/data_search.xhp#PAR_ID3149811.66
-msgid  "You can search in one or in all data fields. You can select whether the text must be at the beginning, end or any location of the data field. You also can use the ? and * wildcards, as in the <emph>Find &amp;& Replace</emph> dialog. You can find additional information about the database search function in the <link href=\"text/shared/02/12100200.xhp\" name=\"$[officename] Help\">$[officename] Help</link>."
+msgid  "You can search in one or in all data fields. You can select whether the text must be at the beginning, end or any location of the data field. You also can use the ? and * wildcards, as in the <emph>Find & Replace</emph> dialog. You can find additional information about the database search function in the <link href=\"text/shared/02/12100200.xhp\" name=\"$[officename] Help\">$[officename] Help</link>."
 msgstr ""
 
 #: guide/data_tabledefine.xhp#TIT
@@ -53624,7 +53624,7 @@ msgid  "If you have created different profiles in Thunderbird, Mozilla, or Firef
 msgstr ""
 
 #: guide/digitalsign_send.xhp#PAR_ID944242
-msgid  "Open your Web browser's preferences dialog, select the Privacy &amp;& Security tab page, click on Certificates - Manage Certificates. "
+msgid  "Open your Web browser's preferences dialog, select the Privacy & Security tab page, click on Certificates - Manage Certificates. "
 msgstr ""
 
 #: guide/digitalsign_send.xhp#PAR_ID6452223
@@ -54576,7 +54576,7 @@ msgid  "Searching for Attributes"
 msgstr ""
 
 #: guide/find_attributes.xhp#BM_ID5681020
-msgid  "<bookmark_value>fonts;finding</bookmark_value><bookmark_value>font attributes;finding</bookmark_value><bookmark_value>text attributes;finding</bookmark_value><bookmark_value>attributes; finding</bookmark_value><bookmark_value>finding; attributes</bookmark_value><bookmark_value>resetting;Find &amp;& Replace mode</bookmark_value>"
+msgid  "<bookmark_value>fonts;finding</bookmark_value><bookmark_value>font attributes;finding</bookmark_value><bookmark_value>text attributes;finding</bookmark_value><bookmark_value>attributes; finding</bookmark_value><bookmark_value>finding; attributes</bookmark_value><bookmark_value>resetting;Find & Replace mode</bookmark_value>"
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN10663
@@ -54588,11 +54588,11 @@ msgid  "You can search for text with attributes that are applied either by direc
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN10688
-msgid  "If you want to find text with any font by name, click the <emph>Format</emph> button in the <link href=\"text/shared/01/02100000.xhp\">Find &amp;& Replace</link> dialog of %PRODUCTNAME Writer."
+msgid  "If you want to find text with any font by name, click the <emph>Format</emph> button in the <link href=\"text/shared/01/02100000.xhp\">Find & Replace</link> dialog of %PRODUCTNAME Writer."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN1069D
-msgid  "After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find &amp;& Replace </emph>dialog changes to <emph>Including Styles</emph>."
+msgid  "After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find & Replace </emph>dialog changes to <emph>Including Styles</emph>."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106B0
@@ -54608,7 +54608,7 @@ msgid  "To search for all font changes"
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106C5
-msgid  "Choose <emph>Edit - Find &amp;& Replace</emph>."
+msgid  "Choose <emph>Edit - Find & Replace</emph>."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106CD
@@ -54624,7 +54624,7 @@ msgid  "In the <emph>Attributes</emph> dialog, select the <emph>Font</emph> chec
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106E8
-msgid  "In the <emph>Find &amp;& Replace</emph> dialog, you now can read \"Font\" below the <emph>Search for</emph> text box."
+msgid  "In the <emph>Find & Replace</emph> dialog, you now can read \"Font\" below the <emph>Search for</emph> text box."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106F4
@@ -54636,11 +54636,11 @@ msgid  "All places where a font change was applied, either directly or by assign
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN106FE
-msgid  "To reset the Find &amp;& Replace mode"
+msgid  "To reset the Find & Replace mode"
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN10702
-msgid  "To stop searching for the current attributes, reset the <emph>Find &amp;& Replace</emph> dialog to normal mode."
+msgid  "To stop searching for the current attributes, reset the <emph>Find & Replace</emph> dialog to normal mode."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN1070C
@@ -54648,11 +54648,11 @@ msgid  "Click <emph>No Format</emph>."
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_IDN1071E
-msgid  "<link href=\"text/shared/01/02100000.xhp\">Find &amp;& Replace</link> dialog"
+msgid  "<link href=\"text/shared/01/02100000.xhp\">Find & Replace</link> dialog"
 msgstr ""
 
 #: guide/find_attributes.xhp#PAR_ID6837672
-msgid  "Searching for attributes is available in the Find &amp;& Replace dialog for text documents."
+msgid  "Searching for attributes is available in the Find & Replace dialog for text documents."
 msgstr ""
 
 #: guide/flat_icons.xhp#TIT
@@ -55748,7 +55748,7 @@ msgid  "In the large selection field click the desired character or several char
 msgstr ""
 
 #: guide/insert_specialchar.xhp#PAR_ID3153031.4
-msgid  "In any text input field (such as the input fields in the <emph>Find &amp;& Replace</emph> dialog) you can press Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+S to open the <emph>Special Characters</emph> dialog."
+msgid  "In any text input field (such as the input fields in the <emph>Find & Replace</emph> dialog) you can press Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+S to open the <emph>Special Characters</emph> dialog."
 msgstr ""
 
 #: guide/insert_specialchar.xhp#PAR_ID3155630.7
@@ -58284,7 +58284,7 @@ msgid  "Then choose <emph>Print</emph>."
 msgstr ""
 
 #: guide/print_blackwhite.xhp#PAR_ID3147573.12
-msgid  "Under <emph>Quality,</emph> select either <emph>Grayscale</emph> or <emph>Black &amp;& white</emph> and click <emph>OK</emph>."
+msgid  "Under <emph>Quality,</emph> select either <emph>Grayscale</emph> or <emph>Black & white</emph> and click <emph>OK</emph>."
 msgstr ""
 
 #: guide/print_blackwhite.xhp#PAR_ID3154307.13
@@ -58296,7 +58296,7 @@ msgid  "               <emph>Grayscale</emph> converts all colors to a maximum o
 msgstr ""
 
 #: guide/print_blackwhite.xhp#PAR_ID3145610.16
-msgid  "               <emph>Black &amp;& white</emph> converts all colors into the two values black and white. All borders around objects are printed black. All text will be printed in black. A background set by <emph>Format - Page - Background</emph> will not be printed."
+msgid  "               <emph>Black & white</emph> converts all colors into the two values black and white. All borders around objects are printed black. All text will be printed in black. A background set by <emph>Format - Page - Background</emph> will not be printed."
 msgstr ""
 
 #: guide/print_blackwhite.xhp#HD_ID3153896.17
@@ -59420,7 +59420,7 @@ msgid  "Choose whether to use the default driver, the Acrobat Distiller driver o
 msgstr ""
 
 #: guide/spadmin.xhp#PAR_ID3155128.311
-msgid  "In the next dialog, enter a command line for the PostScript-&gt;>PDF Converter. Enter the directory where the PDF files should be saved. If you do not provide a directory, the user's home directory will be used. In the command line \"(TMP)\" is replaced by a temporary file and \"(OUTFILE)\" by the target file, the name of which is created from the document name. If \"(TMP)\" occurs in the command line, the Postscript code is forwarded in a file, otherwise as standard input through a pipe. If Ghostscript or Adobe Acrobat Distiller is in the search path, you can use one of the predefined command lines. Click <emph>Next</emph>."
+msgid  "In the next dialog, enter a command line for the PostScript->PDF Converter. Enter the directory where the PDF files should be saved. If you do not provide a directory, the user's home directory will be used. In the command line \"(TMP)\" is replaced by a temporary file and \"(OUTFILE)\" by the target file, the name of which is created from the document name. If \"(TMP)\" occurs in the command line, the Postscript code is forwarded in a file, otherwise as standard input through a pipe. If Ghostscript or Adobe Acrobat Distiller is in the search path, you can use one of the predefined command lines. Click <emph>Next</emph>."
 msgstr ""
 
 #: guide/spadmin.xhp#PAR_ID3152889.312
@@ -64412,7 +64412,7 @@ msgid  "Font sizes"
 msgstr ""
 
 #: optionen/01030500.xhp#PAR_ID3145673.4
-msgid  "<ahelp hid=\"OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE7\">Use the spin buttons <emph>Size 1</emph> to <emph>Size 7</emph> to define the respective font sizes for the HTML &lt;<font size=1&gt;> to &lt;<font size=7&gt;> tags.</ahelp>"
+msgid  "<ahelp hid=\"OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE7\">Use the spin buttons <emph>Size 1</emph> to <emph>Size 7</emph> to define the respective font sizes for the HTML <font size=1> to <font size=7> tags.</ahelp>"
 msgstr ""
 
 #: optionen/01030500.xhp#HD_ID3148943.5
@@ -66656,11 +66656,11 @@ msgid  "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_CALC:BTN_CALC\">Specifies whether to
 msgstr ""
 
 #: optionen/01060500.xhp#HD_ID3152581.32
-msgid  "Search criteria = and &lt;<&gt;> must apply to whole cells"
+msgid  "Search criteria = and <> must apply to whole cells"
 msgstr ""
 
 #: optionen/01060500.xhp#PAR_ID3149211.33
-msgid  "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_CALC:BTN_MATCH\">Specifies that the search criteria you set for the Calc database functions must match the whole cell exactly. When the <emph>Search criteria = and &lt;<&gt;> must apply to whole cells</emph> box is marked, $[officename] Calc behaves exactly as MS Excel when searching cells in the database functions.</ahelp>"
+msgid  "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_CALC:BTN_MATCH\">Specifies that the search criteria you set for the Calc database functions must match the whole cell exactly. When the <emph>Search criteria = and <> must apply to whole cells</emph> box is marked, $[officename] Calc behaves exactly as MS Excel when searching cells in the database functions.</ahelp>"
 msgstr ""
 
 #: optionen/01060500.xhp#PAR_ID3148422.34
@@ -66704,7 +66704,7 @@ msgid  "Finds win, win95, os2win, and upwind"
 msgstr ""
 
 #: optionen/01060500.xhp#PAR_ID3148814.44
-msgid  "If <emph>Search criteria = and &lt;<&gt;> must apply to whole cells </emph>is not enabled, the \"win\" search pattern acts like \".*win.*\". The search pattern can be at any position within the cell when searching with the Calc database functions."
+msgid  "If <emph>Search criteria = and <> must apply to whole cells </emph>is not enabled, the \"win\" search pattern acts like \".*win.*\". The search pattern can be at any position within the cell when searching with the Calc database functions."
 msgstr ""
 
 #: optionen/01060500.xhp#HD_ID3156448.58
@@ -67112,7 +67112,7 @@ msgid  "<ahelp hid=\"SD_RADIOBUTTON_TP_PRINT_OPTIONS_RBT_GRAYSCALE\">Specifies t
 msgstr ""
 
 #: optionen/01070400.xhp#HD_ID3146975.52
-msgid  "Black &amp;& white"
+msgid  "Black & white"
 msgstr ""
 
 #: optionen/01070400.xhp#PAR_ID3159154.53
@@ -69020,469 +69020,469 @@ msgid  "The dialog has the following tab pages:"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3147571.3
-msgid  "&lt;<help_section application=&quot;\"swriter&quot;\" id=&quot;\"02&quot;\" title=&quot;\"Text Documents&quot;\"&gt;>"
+msgid  "<help_section application=\"swriter\" id=\"02\" title=\"Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3157959.4
-msgid  "&lt;<node id=&quot;\"0201&quot;\" title=&quot;\"General Information and User Interface Usage&quot;\"&gt;>"
+msgid  "<node id=\"0201\" title=\"General Information and User Interface Usage\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153527.5
-msgid  "&lt;<node id=&quot;\"0202&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"0202\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153311.6
-msgid  "&lt;<node id=&quot;\"020201&quot;\" title=&quot;\"Menus&quot;\"&gt;>"
+msgid  "<node id=\"020201\" title=\"Menus\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149182.7
-msgid  "&lt;<node id=&quot;\"020202&quot;\" title=&quot;\"Toolbars&quot;\"&gt;>"
+msgid  "<node id=\"020202\" title=\"Toolbars\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145383.8
-msgid  "&lt;<node id=&quot;\"0203&quot;\" title=&quot;\"Creating Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0203\" title=\"Creating Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149812.9
-msgid  "&lt;<node id=&quot;\"0204&quot;\" title=&quot;\"Graphics in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0204\" title=\"Graphics in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3166461.10
-msgid  "&lt;<node id=&quot;\"0205&quot;\" title=&quot;\"Tables in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0205\" title=\"Tables in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155136.11
-msgid  "&lt;<node id=&quot;\"0206&quot;\" title=&quot;\"Objects in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0206\" title=\"Objects in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155629.12
-msgid  "&lt;<node id=&quot;\"0207&quot;\" title=&quot;\"Sections and Frames in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0207\" title=\"Sections and Frames in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150670.13
-msgid  "&lt;<node id=&quot;\"0208&quot;\" title=&quot;\"Tables of Contents and Indexes&quot;\"&gt;>"
+msgid  "<node id=\"0208\" title=\"Tables of Contents and Indexes\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153349.14
-msgid  "&lt;<node id=&quot;\"0209&quot;\" title=&quot;\"Fields in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0209\" title=\"Fields in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145120.15
-msgid  "&lt;<node id=&quot;\"0210&quot;\" title=&quot;\"Navigating Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0210\" title=\"Navigating Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3159400.16
-msgid  "&lt;<node id=&quot;\"0211&quot;\" title=&quot;\"Calculating in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0211\" title=\"Calculating in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145674.17
-msgid  "&lt;<node id=&quot;\"0212&quot;\" title=&quot;\"Formatting Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0212\" title=\"Formatting Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3143229.18
-msgid  "&lt;<node id=&quot;\"021201&quot;\" title=&quot;\"Templates and Styles&quot;\"&gt;>"
+msgid  "<node id=\"021201\" title=\"Templates and Styles\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3157910.19
-msgid  "&lt;<node id=&quot;\"0213&quot;\" title=&quot;\"Special Text Elements&quot;\"&gt;>"
+msgid  "<node id=\"0213\" title=\"Special Text Elements\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148564.20
-msgid  "&lt;<node id=&quot;\"0214&quot;\" title=&quot;\"Automatic Functions&quot;\"&gt;>"
+msgid  "<node id=\"0214\" title=\"Automatic Functions\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145609.21
-msgid  "&lt;<node id=&quot;\"0215&quot;\" title=&quot;\"Numbering and Lists&quot;\"&gt;>"
+msgid  "<node id=\"0215\" title=\"Numbering and Lists\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146794.22
-msgid  "&lt;<node id=&quot;\"0216&quot;\" title=&quot;\"Spellchecking, Thesaurus, and Languages&quot;\"&gt;>"
+msgid  "<node id=\"0216\" title=\"Spellchecking, Thesaurus, and Languages\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3159413.23
-msgid  "&lt;<node id=&quot;\"0217&quot;\" title=&quot;\"Forms in Text Documents&quot;\"&gt;>"
+msgid  "<node id=\"0217\" title=\"Forms in Text Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149656.24
-msgid  "&lt;<node id=&quot;\"0218&quot;\" title=&quot;\"Troubleshooting Tips&quot;\"&gt;>"
+msgid  "<node id=\"0218\" title=\"Troubleshooting Tips\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150398.25
-msgid  "&lt;<node id=&quot;\"0219&quot;\" title=&quot;\"Loading, Saving, Importing, and Exporting&quot;\"&gt;>"
+msgid  "<node id=\"0219\" title=\"Loading, Saving, Importing, and Exporting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153524.26
-msgid  "&lt;<node id=&quot;\"0220&quot;\" title=&quot;\"Master Documents&quot;\"&gt;>"
+msgid  "<node id=\"0220\" title=\"Master Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154367.27
-msgid  "&lt;<node id=&quot;\"0221&quot;\" title=&quot;\"Links and References&quot;\"&gt;>"
+msgid  "<node id=\"0221\" title=\"Links and References\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3159152.28
-msgid  "&lt;<node id=&quot;\"0222&quot;\" title=&quot;\"Printing&quot;\"&gt;>"
+msgid  "<node id=\"0222\" title=\"Printing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145421.29
-msgid  "&lt;<node id=&quot;\"0223&quot;\" title=&quot;\"Searching and Replacing&quot;\"&gt;>"
+msgid  "<node id=\"0223\" title=\"Searching and Replacing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150871.30
-msgid  "&lt;<help_section application=&quot;\"swriter&quot;\" id=&quot;\"06&quot;\" title=&quot;\"HTML Documents&quot;\"&gt;>"
+msgid  "<help_section application=\"swriter\" id=\"06\" title=\"HTML Documents\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150768.32
-msgid  "&lt;<help_section application=&quot;\"swriter&quot;\" id=&quot;\"01&quot;\" title=&quot;\"Installation&quot;\"&gt;>"
+msgid  "<help_section application=\"swriter\" id=\"01\" title=\"Installation\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3147229.33
-msgid  "&lt;<help_section application=&quot;\"swriter&quot;\" id=&quot;\"10&quot;\" title=&quot;\"Common Help Topics&quot;\"&gt;>"
+msgid  "<help_section application=\"swriter\" id=\"10\" title=\"Common Help Topics\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3152934.34
-msgid  "&lt;<node id=&quot;\"1001&quot;\" title=&quot;\"General Information&quot;\"&gt;>"
+msgid  "<node id=\"1001\" title=\"General Information\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155429.107
-msgid  "&lt;<node id=&quot;\"1002&quot;\" title=&quot;\"%PRODUCTNAME and Microsoft Office&quot;\"&gt;>"
+msgid  "<node id=\"1002\" title=\"%PRODUCTNAME and Microsoft Office\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153368.35
-msgid  "&lt;<node id=&quot;\"1003&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"1003\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146147.36
-msgid  "&lt;<node id=&quot;\"1004&quot;\" title=&quot;\"%PRODUCTNAME Options&quot;\"&gt;>"
+msgid  "<node id=\"1004\" title=\"%PRODUCTNAME Options\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145365.37
-msgid  "&lt;<node id=&quot;\"1005&quot;\" title=&quot;\"Wizards&quot;\"&gt;>"
+msgid  "<node id=\"1005\" title=\"Wizards\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150487.38
-msgid  "&lt;<node id=&quot;\"100501&quot;\" title=&quot;\"Letter Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100501\" title=\"Letter Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3151113.39
-msgid  "&lt;<node id=&quot;\"100502&quot;\" title=&quot;\"Fax Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100502\" title=\"Fax Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156442.41
-msgid  "&lt;<node id=&quot;\"100504&quot;\" title=&quot;\"Agenda Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100504\" title=\"Agenda Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146975.42
-msgid  "&lt;<node id=&quot;\"100505&quot;\" title=&quot;\"Presentation Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100505\" title=\"Presentation Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148617.43
-msgid  "&lt;<node id=&quot;\"100506&quot;\" title=&quot;\"HTML Export Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100506\" title=\"HTML Export Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153143.44
-msgid  "&lt;<node id=&quot;\"100507&quot;\" title=&quot;\"Group Element Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100507\" title=\"Group Element Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153574.46
-msgid  "&lt;<node id=&quot;\"100509&quot;\" title=&quot;\"Forms Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100509\" title=\"Forms Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146921.47
-msgid  "&lt;<node id=&quot;\"100510&quot;\" title=&quot;\"Document Converter Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100510\" title=\"Document Converter Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154096.48
-msgid  "&lt;<node id=&quot;\"100511&quot;\" title=&quot;\"Table Element Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100511\" title=\"Table Element Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3144766.49
-msgid  "&lt;<node id=&quot;\"100512&quot;\" title=&quot;\"Combo Box/List Box Wizard&quot;\"&gt;>"
+msgid  "<node id=\"100512\" title=\"Combo Box/List Box Wizard\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154729.108
-msgid  "&lt;<node id=&quot;\"1006&quot;\" title=&quot;\"Configuring %PRODUCTNAME&quot;\"&gt;>"
+msgid  "<node id=\"1006\" title=\"Configuring %PRODUCTNAME\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3151076.109
-msgid  "&lt;<node id=&quot;\"1007&quot;\" title=&quot;\"Working with the User Interface&quot;\"&gt;>"
+msgid  "<node id=\"1007\" title=\"Working with the User Interface\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3147125.110
-msgid  "&lt;<node id=&quot;\"1008&quot;\" title=&quot;\"Printing, Faxing, Sending&quot;\"&gt;>"
+msgid  "<node id=\"1008\" title=\"Printing, Faxing, Sending\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149418.111
-msgid  "&lt;<node id=&quot;\"1009&quot;\" title=&quot;\"Drag &amp;& Drop&quot;\"&gt;>"
+msgid  "<node id=\"1009\" title=\"Drag & Drop\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154016.112
-msgid  "&lt;<node id=&quot;\"1010&quot;\" title=&quot;\"Copy and Paste&quot;\"&gt;>"
+msgid  "<node id=\"1010\" title=\"Copy and Paste\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156180.113
-msgid  "&lt;<node id=&quot;\"1011&quot;\" title=&quot;\"Databases&quot;\"&gt;>"
+msgid  "<node id=\"1011\" title=\"Databases\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150715.114
-msgid  "&lt;<node id=&quot;\"1012&quot;\" title=&quot;\"Charts and Diagrams&quot;\"&gt;>"
+msgid  "<node id=\"1012\" title=\"Charts and Diagrams\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154164.115
-msgid  "&lt;<node id=&quot;\"1013&quot;\" title=&quot;\"Load, Save, Import, Export&quot;\"&gt;>"
+msgid  "<node id=\"1013\" title=\"Load, Save, Import, Export\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145650.116
-msgid  "&lt;<node id=&quot;\"1014&quot;\" title=&quot;\"Links and References&quot;\"&gt;>"
+msgid  "<node id=\"1014\" title=\"Links and References\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153838.117
-msgid  "&lt;<node id=&quot;\"1015&quot;\" title=&quot;\"Document Version Tracking&quot;\"&gt;>"
+msgid  "<node id=\"1015\" title=\"Document Version Tracking\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150327.118
-msgid  "&lt;<node id=&quot;\"1016&quot;\" title=&quot;\"Labels and Business Cards&quot;\"&gt;>"
+msgid  "<node id=\"1016\" title=\"Labels and Business Cards\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153708.119
-msgid  "&lt;<node id=&quot;\"1018&quot;\" title=&quot;\"Inserting External Data&quot;\"&gt;>"
+msgid  "<node id=\"1018\" title=\"Inserting External Data\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148916.120
-msgid  "&lt;<node id=&quot;\"1019&quot;\" title=&quot;\"Automatic Functions&quot;\"&gt;>"
+msgid  "<node id=\"1019\" title=\"Automatic Functions\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3152964.121
-msgid  "&lt;<node id=&quot;\"1020&quot;\" title=&quot;\"Searching and Replacing&quot;\"&gt;>"
+msgid  "<node id=\"1020\" title=\"Searching and Replacing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153765.50
-msgid  "&lt;<node id=&quot;\"1021&quot;\" title=&quot;\"Guides&quot;\"&gt;>"
+msgid  "<node id=\"1021\" title=\"Guides\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154361.51
-msgid  "&lt;<help_section application=&quot;\"swriter&quot;\" id=&quot;\"09&quot;\" title=&quot;\"Database Functionality&quot;\"&gt;>"
+msgid  "<help_section application=\"swriter\" id=\"09\" title=\"Database Functionality\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150043.122
-msgid  "&lt;<node id=&quot;\"0901&quot;\" title=&quot;\"General Information&quot;\"&gt;>"
+msgid  "<node id=\"0901\" title=\"General Information\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154254.123
-msgid  "&lt;<node id=&quot;\"0902&quot;\" title=&quot;\"Data Sources&quot;\"&gt;>"
+msgid  "<node id=\"0902\" title=\"Data Sources\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149565.124
-msgid  "&lt;<node id=&quot;\"0903&quot;\" title=&quot;\"Forms&quot;\"&gt;>"
+msgid  "<node id=\"0903\" title=\"Forms\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155334.125
-msgid  "&lt;<node id=&quot;\"0904&quot;\" title=&quot;\"Tables, Queries and Indexes&quot;\"&gt;>"
+msgid  "<node id=\"0904\" title=\"Tables, Queries and Indexes\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149107.126
-msgid  "&lt;<node id=&quot;\"0905&quot;\" title=&quot;\"Relations&quot;\"&gt;>"
+msgid  "<node id=\"0905\" title=\"Relations\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155937.127
-msgid  "&lt;<node id=&quot;\"0906&quot;\" title=&quot;\"Reports&quot;\"&gt;>"
+msgid  "<node id=\"0906\" title=\"Reports\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153963.53
-msgid  "&lt;<help_section application=&quot;\"sbasic&quot;\" id=&quot;\"07&quot;\" title=&quot;\"Macros and Programming&quot;\"&gt;>"
+msgid  "<help_section application=\"sbasic\" id=\"07\" title=\"Macros and Programming\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3151248.54
-msgid  "&lt;<node id=&quot;\"0701&quot;\" title=&quot;\"General Information and User Interface Usage&quot;\"&gt;>"
+msgid  "<node id=\"0701\" title=\"General Information and User Interface Usage\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154023.55
-msgid  "&lt;<node id=&quot;\"0702&quot;\" title=&quot;\"Command Reference&quot;\"&gt;>"
+msgid  "<node id=\"0702\" title=\"Command Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149924.56
-msgid  "&lt;<node id=&quot;\"070201&quot;\" title=&quot;\"Alphabetic List of Functions, Statements, and Operators&quot;\"&gt;>"
+msgid  "<node id=\"070201\" title=\"Alphabetic List of Functions, Statements, and Operators\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145769.128
-msgid  "&lt;<node id=&quot;\"070202&quot;\" title=&quot;\"Run-Time Functions, Statements, and Operators&quot;\"&gt;>"
+msgid  "<node id=\"070202\" title=\"Run-Time Functions, Statements, and Operators\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155606.57
-msgid  "&lt;<node id=&quot;\"0703&quot;\" title=&quot;\"Guides&quot;\"&gt;>"
+msgid  "<node id=\"0703\" title=\"Guides\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149210.59
-msgid  "&lt;<help_section application=&quot;\"scalc&quot;\" id=&quot;\"08&quot;\" title=&quot;\"Spreadsheets&quot;\"&gt;>"
+msgid  "<help_section application=\"scalc\" id=\"08\" title=\"Spreadsheets\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155582.60
-msgid  "&lt;<node id=&quot;\"0801&quot;\" title=&quot;\"General Information and User Interface Usage&quot;\"&gt;>"
+msgid  "<node id=\"0801\" title=\"General Information and User Interface Usage\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149033.61
-msgid  "&lt;<node id=&quot;\"0802&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"0802\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148630.62
-msgid  "&lt;<node id=&quot;\"080201&quot;\" title=&quot;\"Menus&quot;\"&gt;>"
+msgid  "<node id=\"080201\" title=\"Menus\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156138.63
-msgid  "&lt;<node id=&quot;\"080202&quot;\" title=&quot;\"Toolbars&quot;\"&gt;>"
+msgid  "<node id=\"080202\" title=\"Toolbars\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3159236.64
-msgid  "&lt;<node id=&quot;\"0803&quot;\" title=&quot;\"Functions Types and Operators&quot;\"&gt;>"
+msgid  "<node id=\"0803\" title=\"Functions Types and Operators\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153197.65
-msgid  "&lt;<node id=&quot;\"0804&quot;\" title=&quot;\"Loading, Saving, Importing, and Exporting&quot;\"&gt;>"
+msgid  "<node id=\"0804\" title=\"Loading, Saving, Importing, and Exporting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153705.66
-msgid  "&lt;<node id=&quot;\"0805&quot;\" title=&quot;\"Formatting&quot;\"&gt;>"
+msgid  "<node id=\"0805\" title=\"Formatting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3166425.67
-msgid  "&lt;<node id=&quot;\"0806&quot;\" title=&quot;\"Filtering and Sorting&quot;\"&gt;>"
+msgid  "<node id=\"0806\" title=\"Filtering and Sorting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154716.68
-msgid  "&lt;<node id=&quot;\"0807&quot;\" title=&quot;\"Printing&quot;\"&gt;>"
+msgid  "<node id=\"0807\" title=\"Printing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150344.69
-msgid  "&lt;<node id=&quot;\"0808&quot;\" title=&quot;\"Data Ranges&quot;\"&gt;>"
+msgid  "<node id=\"0808\" title=\"Data Ranges\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150364.70
-msgid  "&lt;<node id=&quot;\"0809&quot;\" title=&quot;\"Pivot Table&quot;\"&gt;>"
+msgid  "<node id=\"0809\" title=\"Pivot Table\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149966.71
-msgid  "&lt;<node id=&quot;\"0810&quot;\" title=&quot;\"Scenarios&quot;\"&gt;>"
+msgid  "<node id=\"0810\" title=\"Scenarios\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146811.72
-msgid  "&lt;<node id=&quot;\"0811&quot;\" title=&quot;\"References&quot;\"&gt;>"
+msgid  "<node id=\"0811\" title=\"References\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148421.73
-msgid  "&lt;<node id=&quot;\"0812&quot;\" title=&quot;\"Viewing, Selecting, Copying&quot;\"&gt;>"
+msgid  "<node id=\"0812\" title=\"Viewing, Selecting, Copying\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145258.74
-msgid  "&lt;<node id=&quot;\"0813&quot;\" title=&quot;\"Formulas and Calculations&quot;\"&gt;>"
+msgid  "<node id=\"0813\" title=\"Formulas and Calculations\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3145586.75
-msgid  "&lt;<node id=&quot;\"0814&quot;\" title=&quot;\"Protection&quot;\"&gt;>"
+msgid  "<node id=\"0814\" title=\"Protection\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150885.76
-msgid  "&lt;<node id=&quot;\"0815&quot;\" title=&quot;\"Miscellaneous&quot;\"&gt;>"
+msgid  "<node id=\"0815\" title=\"Miscellaneous\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150519.78
-msgid  "&lt;<help_section application=&quot;\"smath&quot;\" id=&quot;\"03&quot;\" title=&quot;\"Formulas&quot;\"&gt;>"
+msgid  "<help_section application=\"smath\" id=\"03\" title=\"Formulas\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155529.79
-msgid  "&lt;<node id=&quot;\"0301&quot;\" title=&quot;\"General Information and User Interface Usage&quot;\"&gt;>"
+msgid  "<node id=\"0301\" title=\"General Information and User Interface Usage\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150522.80
-msgid  "&lt;<node id=&quot;\"0302&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"0302\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146978.81
-msgid  "&lt;<node id=&quot;\"0303&quot;\" title=&quot;\"Working with Formulas&quot;\"&gt;>"
+msgid  "<node id=\"0303\" title=\"Working with Formulas\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156168.83
-msgid  "&lt;<help_section application=&quot;\"simpress&quot;\" id=&quot;\"04&quot;\" title=&quot;\"Presentations and Drawings&quot;\"&gt;>"
+msgid  "<help_section application=\"simpress\" id=\"04\" title=\"Presentations and Drawings\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155129.84
-msgid  "&lt;<node id=&quot;\"0401&quot;\" title=&quot;\"General Information and User Interface Usage&quot;\"&gt;>"
+msgid  "<node id=\"0401\" title=\"General Information and User Interface Usage\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3152890.85
-msgid  "&lt;<node id=&quot;\"0402&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"0402\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155089.86
-msgid  "&lt;<node id=&quot;\"040201&quot;\" title=&quot;\"Presentations (%PRODUCTNAME Impress)&quot;\"&gt;>"
+msgid  "<node id=\"040201\" title=\"Presentations (%PRODUCTNAME Impress)\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153305.87
-msgid  "&lt;<node id=&quot;\"04020101&quot;\" title=&quot;\"Menus&quot;\"&gt;>"
+msgid  "<node id=\"04020101\" title=\"Menus\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148841.88
-msgid  "&lt;<node id=&quot;\"04020102&quot;\" title=&quot;\"Toolbars&quot;\"&gt;>"
+msgid  "<node id=\"04020102\" title=\"Toolbars\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156200.89
-msgid  "&lt;<node id=&quot;\"040202&quot;\" title=&quot;\"Drawings (%PRODUCTNAME Draw)&quot;\"&gt;>"
+msgid  "<node id=\"040202\" title=\"Drawings (%PRODUCTNAME Draw)\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153816.90
-msgid  "&lt;<node id=&quot;\"04020201&quot;\" title=&quot;\"Menus&quot;\"&gt;>"
+msgid  "<node id=\"04020201\" title=\"Menus\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3146154.91
-msgid  "&lt;<node id=&quot;\"04020202&quot;\" title=&quot;\"Toolbars&quot;\"&gt;>"
+msgid  "<node id=\"04020202\" title=\"Toolbars\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148866.92
-msgid  "&lt;<node id=&quot;\"0403&quot;\" title=&quot;\"Loading, Saving, Importing, and Exporting&quot;\"&gt;>"
+msgid  "<node id=\"0403\" title=\"Loading, Saving, Importing, and Exporting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3151244.93
-msgid  "&lt;<node id=&quot;\"0404&quot;\" title=&quot;\"Formatting&quot;\"&gt;>"
+msgid  "<node id=\"0404\" title=\"Formatting\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3149329.94
-msgid  "&lt;<node id=&quot;\"0405&quot;\" title=&quot;\"Printing&quot;\"&gt;>"
+msgid  "<node id=\"0405\" title=\"Printing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150318.95
-msgid  "&lt;<node id=&quot;\"0406&quot;\" title=&quot;\"Effects&quot;\"&gt;>"
+msgid  "<node id=\"0406\" title=\"Effects\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3150107.96
-msgid  "&lt;<node id=&quot;\"0407&quot;\" title=&quot;\"Objects, Graphics, and Bitmaps&quot;\"&gt;>"
+msgid  "<node id=\"0407\" title=\"Objects, Graphics, and Bitmaps\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154343.97
-msgid  "&lt;<node id=&quot;\"0408&quot;\" title=&quot;\"Groups and Layers&quot;\"&gt;>"
+msgid  "<node id=\"0408\" title=\"Groups and Layers\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3148604.98
-msgid  "&lt;<node id=&quot;\"0409&quot;\" title=&quot;\"Text in Presentations and Drawings&quot;\"&gt;>"
+msgid  "<node id=\"0409\" title=\"Text in Presentations and Drawings\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3155269.99
-msgid  "&lt;<node id=&quot;\"0410&quot;\" title=&quot;\"Viewing&quot;\"&gt;>"
+msgid  "<node id=\"0410\" title=\"Viewing\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156351.101
-msgid  "&lt;<help_section application=&quot;\"scalc&quot;\" id=&quot;\"05&quot;\" title=&quot;\"Charts and Diagrams&quot;\"&gt;>"
+msgid  "<help_section application=\"scalc\" id=\"05\" title=\"Charts and Diagrams\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156177.102
-msgid  "&lt;<node id=&quot;\"0501&quot;\" title=&quot;\"General Information&quot;\"&gt;>"
+msgid  "<node id=\"0501\" title=\"General Information\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3156036.103
-msgid  "&lt;<node id=&quot;\"0502&quot;\" title=&quot;\"Command and Menu Reference&quot;\"&gt;>"
+msgid  "<node id=\"0502\" title=\"Command and Menu Reference\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3153285.104
-msgid  "&lt;<node id=&quot;\"050201&quot;\" title=&quot;\"Menus&quot;\"&gt;>"
+msgid  "<node id=\"050201\" title=\"Menus\">"
 msgstr ""
 
 #: tree_strings.xhp#PAR_ID3154959.105
-msgid  "&lt;<node id=&quot;\"050202&quot;\" title=&quot;\"Toolbars&quot;\"&gt;>"
+msgid  "<node id=\"050202\" title=\"Toolbars\">"
 msgstr ""

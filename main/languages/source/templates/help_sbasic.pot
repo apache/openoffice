@@ -336,7 +336,7 @@ msgid  "iCount = oListbox.ItemCount"
 msgstr ""
 
 #: guide/sample_code.xhp#PAR_ID3144504.128
-msgid  "oListbox.additem(\"New Item\" &amp;& iCount,0)"
+msgid  "oListbox.additem(\"New Item\" & iCount,0)"
 msgstr ""
 
 #: guide/sample_code.xhp#PAR_ID3149328.129
@@ -1616,11 +1616,11 @@ msgid  "Long Integer Variables"
 msgstr ""
 
 #: shared/01020100.xhp#PAR_ID3151193.46
-msgid  "Long integer variables range from -2147483648 to 2147483647. If you assign a floating-point value to a long integer variable, the decimal places are rounded to the next integer. Long integer variables are rapidly calculated in procedures and are suitable for counter variables in loops for large values. A long integer variable requires four bytes of memory. \"&amp;&\" is the type-declaration character."
+msgid  "Long integer variables range from -2147483648 to 2147483647. If you assign a floating-point value to a long integer variable, the decimal places are rounded to the next integer. Long integer variables are rapidly calculated in procedures and are suitable for counter variables in loops for large values. A long integer variable requires four bytes of memory. \"&\" is the type-declaration character."
 msgstr ""
 
 #: shared/01020100.xhp#PAR_ID3154708.48
-msgid  "Dim Variable&amp;&"
+msgid  "Dim Variable&"
 msgstr ""
 
 #: shared/01020100.xhp#PAR_ID3156365.49
@@ -2392,7 +2392,7 @@ msgid  "Click the <emph>Libraries</emph> tab."
 msgstr ""
 
 #: shared/01030400.xhp#PAR_ID3149664.9
-msgid  "Select to where you want to attach the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros &amp;& Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be attached to this document and only available from there."
+msgid  "Select to where you want to attach the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros & Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be attached to this document and only available from there."
 msgstr ""
 
 #: shared/01030400.xhp#PAR_ID3153365.10
@@ -2412,7 +2412,7 @@ msgid  "Click the <emph>Libraries</emph> tab."
 msgstr ""
 
 #: shared/01030400.xhp#PAR_ID3145640.51
-msgid  "Select to where you want to append the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros &amp;& Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be appended to this document and only available from there."
+msgid  "Select to where you want to append the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros & Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be appended to this document and only available from there."
 msgstr ""
 
 #: shared/01030400.xhp#PAR_ID3154253.52
@@ -5600,19 +5600,19 @@ msgid  "lVar = rgb(128,0,200)"
 msgstr ""
 
 #: shared/03010301.xhp#PAR_ID3154012.13
-msgid  "MsgBox \"The color \" &amp;& lVar &amp;& \" consists of:\" &amp;& Chr(13) &amp;&_"
+msgid  "MsgBox \"The color \" & lVar & \" consists of:\" & Chr(13) &_"
 msgstr ""
 
 #: shared/03010301.xhp#PAR_ID3148645.14
-msgid  "\"red= \" &amp;& Red(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"red= \" & Red(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010301.xhp#PAR_ID3159155.15
-msgid  "\"green= \" &amp;& Green(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"green= \" & Green(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010301.xhp#PAR_ID3147319.16
-msgid  "\"blue= \" &amp;& Blue(lVar) &amp;& Chr(13) , 64,\"colors\""
+msgid  "\"blue= \" & Blue(lVar) & Chr(13) , 64,\"colors\""
 msgstr ""
 
 #: shared/03010301.xhp#PAR_ID3147434.17
@@ -5676,19 +5676,19 @@ msgid  "lVar = rgb(128,0,200)"
 msgstr ""
 
 #: shared/03010302.xhp#PAR_ID3151117.13
-msgid  "msgbox \"The color \" &amp;& lVar &amp;& \" contains the components:\" &amp;& Chr(13) &amp;&_"
+msgid  "msgbox \"The color \" & lVar & \" contains the components:\" & Chr(13) &_"
 msgstr ""
 
 #: shared/03010302.xhp#PAR_ID3153951.14
-msgid  "\"red = \" &amp;& red(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"red = \" & red(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010302.xhp#PAR_ID3152462.15
-msgid  "\"green = \" &amp;& green(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"green = \" & green(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010302.xhp#PAR_ID3154730.16
-msgid  "\"blue = \" &amp;& blue(lVar) &amp;& Chr(13) , 64,\"colors\""
+msgid  "\"blue = \" & blue(lVar) & Chr(13) , 64,\"colors\""
 msgstr ""
 
 #: shared/03010302.xhp#PAR_ID3144764.17
@@ -5752,19 +5752,19 @@ msgid  "lVar = rgb(128,0,200)"
 msgstr ""
 
 #: shared/03010303.xhp#PAR_ID3147435.13
-msgid  "msgbox \"The color \" &amp;& lVar &amp;& \" consists of:\" &amp;& Chr(13) &amp;&_"
+msgid  "msgbox \"The color \" & lVar & \" consists of:\" & Chr(13) &_"
 msgstr ""
 
 #: shared/03010303.xhp#PAR_ID3155306.14
-msgid  "\"red= \" &amp;& red(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"red= \" & red(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010303.xhp#PAR_ID3149262.15
-msgid  "\"green= \" &amp;& green(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"green= \" & green(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010303.xhp#PAR_ID3147397.16
-msgid  "\"blue= \" &amp;& blue(lVar) &amp;& Chr(13) , 64,\"colors\""
+msgid  "\"blue= \" & blue(lVar) & Chr(13) , 64,\"colors\""
 msgstr ""
 
 #: shared/03010303.xhp#PAR_ID3156286.17
@@ -5900,11 +5900,11 @@ msgid  "iColor = 7"
 msgstr ""
 
 #: shared/03010304.xhp#PAR_ID3145230.32
-msgid  "sText = \"RGB= \" &amp;& Red(QBColor( iColor) ) &amp;& \":\" &amp;& Blue(QBColor( iColor) ) &amp;& \":\" &amp;& Green(QBColor( iColor) )"
+msgid  "sText = \"RGB= \" & Red(QBColor( iColor) ) & \":\" & Blue(QBColor( iColor) ) & \":\" & Green(QBColor( iColor) )"
 msgstr ""
 
 #: shared/03010304.xhp#PAR_ID3149566.33
-msgid  "MsgBox stext,0,\"Color \" &amp;& iColor"
+msgid  "MsgBox stext,0,\"Color \" & iColor"
 msgstr ""
 
 #: shared/03010304.xhp#PAR_ID3154705.34
@@ -5972,19 +5972,19 @@ msgid  "lVar = rgb(128,0,200)"
 msgstr ""
 
 #: shared/03010305.xhp#PAR_ID3145647.15
-msgid  "msgbox \"The color \" &amp;& lVar &amp;& \" consists of:\" &amp;& Chr(13) &amp;&_"
+msgid  "msgbox \"The color \" & lVar & \" consists of:\" & Chr(13) &_"
 msgstr ""
 
 #: shared/03010305.xhp#PAR_ID3154491.16
-msgid  "\"red= \" &amp;& red(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"red= \" & red(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010305.xhp#PAR_ID3149401.17
-msgid  "\"green= \" &amp;& green(lVar) &amp;& Chr(13)&amp;&_"
+msgid  "\"green= \" & green(lVar) & Chr(13)&_"
 msgstr ""
 
 #: shared/03010305.xhp#PAR_ID3150716.18
-msgid  "\"blue= \" &amp;& blue(lVar) &amp;& Chr(13) , 64,\"colors\""
+msgid  "\"blue= \" & blue(lVar) & Chr(13) , 64,\"colors\""
 msgstr ""
 
 #: shared/03010305.xhp#PAR_ID3150752.19
@@ -6116,11 +6116,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020101.xhp#PAR_ID3149581.26
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020101.xhp#PAR_ID3155602.27
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020101.xhp#PAR_ID3154511.29
@@ -6252,11 +6252,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020102.xhp#PAR_ID3148408.28
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020102.xhp#PAR_ID3156385.29
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020102.xhp#PAR_ID3145147.31
@@ -6400,11 +6400,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020103.xhp#PAR_ID3153784.32
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020103.xhp#PAR_ID3149208.33
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020103.xhp#PAR_ID3150304.35
@@ -6516,7 +6516,7 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020104.xhp#PAR_ID3156277.54
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020104.xhp#PAR_ID3153707.55
@@ -6836,11 +6836,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020202.xhp#PAR_ID3147345.31
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020202.xhp#PAR_ID3150298.32
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020202.xhp#PAR_ID3154021.34
@@ -6968,11 +6968,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020203.xhp#PAR_ID3156382.28
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020203.xhp#PAR_ID3147338.29
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020203.xhp#PAR_ID3147362.31
@@ -7376,11 +7376,11 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03020301.xhp#PAR_ID3149203.29
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03020301.xhp#PAR_ID3153770.30
-msgid  "sMsg = sMsg &amp;& sLine &amp;& chr(13)"
+msgid  "sMsg = sMsg & sLine & chr(13)"
 msgstr ""
 
 #: shared/03020301.xhp#PAR_ID3153367.32
@@ -8036,11 +8036,11 @@ msgid  "Do"
 msgstr ""
 
 #: shared/03020404.xhp#PAR_ID3153764.32
-msgid  "If sValue &lt;<&gt;> \".\" and sValue &lt;<&gt;> \"..\" Then"
+msgid  "If sValue <> \".\" and sValue <> \"..\" Then"
 msgstr ""
 
 #: shared/03020404.xhp#PAR_ID3155766.33
-msgid  "if (GetAttr( sPath + getPathSeparator + sValue) AND 16) &gt;>0 then"
+msgid  "if (GetAttr( sPath + getPathSeparator + sValue) AND 16) >0 then"
 msgstr ""
 
 #: shared/03020404.xhp#PAR_ID3154253.34
@@ -8048,7 +8048,7 @@ msgid  "REM get the directories"
 msgstr ""
 
 #: shared/03020404.xhp#PAR_ID3159264.35
-msgid  "sDir = sDir &amp;& chr(13) &amp;& sValue"
+msgid  "sDir = sDir & chr(13) & sValue"
 msgstr ""
 
 #: shared/03020404.xhp#PAR_ID3145148.43
@@ -8664,15 +8664,15 @@ msgid  "MsgBox fSysURL(CurDir()),0,\"Current directory\""
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3159154.27
-msgid  "MsgBox sFile &amp;& Chr(13) &amp;& FileDateTime( sFile ),0,\"Creation time\""
+msgid  "MsgBox sFile & Chr(13) & FileDateTime( sFile ),0,\"Creation time\""
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3149484.28
-msgid  "MsgBox sFile &amp;& Chr(13)&amp;& FileLen( sFile ),0,\"File length\""
+msgid  "MsgBox sFile & Chr(13)& FileLen( sFile ),0,\"File length\""
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3152885.29
-msgid  "MsgBox sFile &amp;& Chr(13)&amp;& GetAttr( sFile ),0,\"File attributes\""
+msgid  "MsgBox sFile & Chr(13)& GetAttr( sFile ),0,\"File attributes\""
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3152596.30
@@ -8692,7 +8692,7 @@ msgid  "SetAttr( sFile, 0 ) 'Delete all attributes"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3148647.35
-msgid  "MsgBox sFile &amp;& Chr(13) &amp;& GetAttr( sFile ),0,\"New file attributes\""
+msgid  "MsgBox sFile & Chr(13) & GetAttr( sFile ),0,\"New file attributes\""
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3153363.36
@@ -8728,7 +8728,7 @@ msgid  "iPos = Instr(iPos,fSysFp, getPathSeparator())"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3153415.45
-msgid  "do while iPos &gt;> 0"
+msgid  "do while iPos > 0"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3153512.46
@@ -8752,11 +8752,11 @@ msgid  "iPos = Instr(1,fSysFp,\":\")"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3145640.51
-msgid  "if iPos &gt;> 0 then mid( fSysFp, iPos , 1,\"|\")"
+msgid  "if iPos > 0 then mid( fSysFp, iPos , 1,\"|\")"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3155443.52
-msgid  "fSysURL = \"file://\" &amp;& fSysFp"
+msgid  "fSysURL = \"file://\" & fSysFp"
 msgstr ""
 
 #: shared/03020411.xhp#PAR_ID3148995.53
@@ -9344,7 +9344,7 @@ msgid  "sub ExampleDay"
 msgstr ""
 
 #: shared/03030103.xhp#PAR_ID3149260.14
-msgid  "Print \"Day \" &amp;& Day(DateSerial(1994, 12, 20)) &amp;& \" of the month\""
+msgid  "Print \"Day \" & Day(DateSerial(1994, 12, 20)) & \" of the month\""
 msgstr ""
 
 #: shared/03030103.xhp#PAR_ID3148645.15
@@ -9412,7 +9412,7 @@ msgid  "Sub ExampleMonth"
 msgstr ""
 
 #: shared/03030104.xhp#PAR_ID3149664.14
-msgid  "MsgBox \"\" &amp;& Month(Now) ,64,\"The current month\""
+msgid  "MsgBox \"\" & Month(Now) ,64,\"The current month\""
 msgstr ""
 
 #: shared/03030104.xhp#PAR_ID3150012.15
@@ -9612,7 +9612,7 @@ msgid  "Sub ExampleYear"
 msgstr ""
 
 #: shared/03030106.xhp#PAR_ID3153363.14
-msgid  "MsgBox \"\" &amp;& Year(Now) ,64,\"Current year\""
+msgid  "MsgBox \"\" & Year(Now) ,64,\"Current year\""
 msgstr ""
 
 #: shared/03030106.xhp#PAR_ID3145274.15
@@ -9668,7 +9668,7 @@ msgid  "Sub ExampleCDateToIso"
 msgstr ""
 
 #: shared/03030107.xhp#PAR_ID3153126.11
-msgid  "MsgBox \"\" &amp;& CDateToIso(Now) ,64,\"ISO Date\""
+msgid  "MsgBox \"\" & CDateToIso(Now) ,64,\"ISO Date\""
 msgstr ""
 
 #: shared/03030107.xhp#PAR_ID3143228.12
@@ -9872,7 +9872,7 @@ msgid  "Sub example_dateadd"
 msgstr ""
 
 #: shared/03030110.xhp#PAR_IDN106CE
-msgid  "msgbox DateAdd(\"m\", 1, \"1/31/2004\") &amp;&\" - \"&amp;& DateAdd(\"m\", 1, \"1/31/2005\")"
+msgid  "msgbox DateAdd(\"m\", 1, \"1/31/2004\") &\" - \"& DateAdd(\"m\", 1, \"1/31/2005\")"
 msgstr ""
 
 #: shared/03030110.xhp#PAR_IDN106D1
@@ -10192,7 +10192,7 @@ msgid  "Sub ExampleHour"
 msgstr ""
 
 #: shared/03030201.xhp#PAR_ID3156441.14
-msgid  "Print \"The current hour is \" &amp;& Hour( Now )"
+msgid  "Print \"The current hour is \" & Hour( Now )"
 msgstr ""
 
 #: shared/03030201.xhp#PAR_ID3153145.15
@@ -10260,7 +10260,7 @@ msgid  "Sub ExampleMinute"
 msgstr ""
 
 #: shared/03030202.xhp#PAR_ID3146119.14
-msgid  "MsgBox \"The current minute is \"&amp;& Minute(Now)&amp;& \".\""
+msgid  "MsgBox \"The current minute is \"& Minute(Now)& \".\""
 msgstr ""
 
 #: shared/03030202.xhp#PAR_ID3153726.15
@@ -10308,7 +10308,7 @@ msgid  "Sub ExampleNow"
 msgstr ""
 
 #: shared/03030203.xhp#PAR_ID3150870.9
-msgid  "msgbox \"It is now \" &amp;& Now"
+msgid  "msgbox \"It is now \" & Now"
 msgstr ""
 
 #: shared/03030203.xhp#PAR_ID3145787.10
@@ -10376,7 +10376,7 @@ msgid  "Sub ExampleSecond"
 msgstr ""
 
 #: shared/03030204.xhp#PAR_ID3156441.14
-msgid  "MsgBox \"The exact second of the current time is \"&amp;& Second( Now )"
+msgid  "MsgBox \"The exact second of the current time is \"& Second( Now )"
 msgstr ""
 
 #: shared/03030204.xhp#PAR_ID3151112.15
@@ -10592,15 +10592,15 @@ msgid  "daDT = TimeValue(b2) - TimeValue(a2)"
 msgstr ""
 
 #: shared/03030206.xhp#PAR_ID3153838.40
-msgid  "c2 = a1 &amp;& \": \" &amp;& a2 &amp;& chr(13)"
+msgid  "c2 = a1 & \": \" & a2 & chr(13)"
 msgstr ""
 
 #: shared/03030206.xhp#PAR_ID3150749.41
-msgid  "c2 = c2 &amp;& b1 &amp;& \": \" &amp;& b2 &amp;& chr(13)"
+msgid  "c2 = c2 & b1 & \": \" & b2 & chr(13)"
 msgstr ""
 
 #: shared/03030206.xhp#PAR_ID3154755.42
-msgid  "c2 = c2 &amp;& c1 &amp;& \": \" &amp;& trim(Str(Hour(daDT))) &amp;& \":\" &amp;& trim(Str(Minute(daDT))) &amp;& \":\" &amp;& trim(Str(Second(daDT)))"
+msgid  "c2 = c2 & c1 & \": \" & trim(Str(Hour(daDT))) & \":\" & trim(Str(Minute(daDT))) & \":\" & trim(Str(Second(daDT)))"
 msgstr ""
 
 #: shared/03030206.xhp#PAR_ID3153714.43
@@ -10664,7 +10664,7 @@ msgid  "Sub ExampleDate"
 msgstr ""
 
 #: shared/03030301.xhp#PAR_ID3156424.9
-msgid  "msgbox \"The date is \" &amp;& Date"
+msgid  "msgbox \"The date is \" & Date"
 msgstr ""
 
 #: shared/03030301.xhp#PAR_ID3145174.10
@@ -10792,7 +10792,7 @@ msgid  "lMin = lMin Mod 60"
 msgstr ""
 
 #: shared/03030303.xhp#PAR_ID3156283.17
-msgid  "MsgBox Right(\"00\" &amp;& lHour , 2) &amp;& \":\"&amp;& Right(\"00\" &amp;& lMin , 2) &amp;& \":\" &amp;& Right(\"00\" &amp;& lSec , 2) ,0,\"The time is\""
+msgid  "MsgBox Right(\"00\" & lHour , 2) & \":\"& Right(\"00\" & lMin , 2) & \":\" & Right(\"00\" & lSec , 2) ,0,\"The time is\""
 msgstr ""
 
 #: shared/03030303.xhp#PAR_ID3153158.18
@@ -10904,7 +10904,7 @@ msgid  "ErrorHandler:"
 msgstr ""
 
 #: shared/03050100.xhp#PAR_ID3155416.21
-msgid  "MsgBox \"Error \" &amp;& err &amp;& \": \" &amp;& error$ + chr(13) + \"In line : \" + Erl + chr(13) + Now , 16 ,\"An error occurred\""
+msgid  "MsgBox \"Error \" & err & \": \" & error$ + chr(13) + \"In line : \" + Erl + chr(13) + Now , 16 ,\"An error occurred\""
 msgstr ""
 
 #: shared/03050100.xhp#PAR_ID3153878.22
@@ -11000,7 +11000,7 @@ msgid  "ErrorHandler:"
 msgstr ""
 
 #: shared/03050200.xhp#PAR_ID3145646.21
-msgid  "MsgBox \"Error \" &amp;& Err &amp;& \": \" &amp;& Error$ + chr(13) + \"At line : \" + Erl + chr(13) + Now , 16 ,\"an error occurred\""
+msgid  "MsgBox \"Error \" & Err & \": \" & Error$ + chr(13) + \"At line : \" + Erl + chr(13) + Now , 16 ,\"an error occurred\""
 msgstr ""
 
 #: shared/03050200.xhp#PAR_ID3155418.22
@@ -11164,7 +11164,7 @@ msgid  "Line Input #iNumber, sLine"
 msgstr ""
 
 #: shared/03050500.xhp#PAR_ID3156276.59
-msgid  "If sLine &lt;<&gt;>\"\" then"
+msgid  "If sLine <>\"\" then"
 msgstr ""
 
 #: shared/03050500.xhp#PAR_ID3148993.60
@@ -11288,19 +11288,19 @@ msgid  "A = 10: B = 8: C = 6: D = Null"
 msgstr ""
 
 #: shared/03060100.xhp#PAR_ID3146984.16
-msgid  "vVarOut = A &gt;> B And B &gt;> C REM returns -1"
+msgid  "vVarOut = A > B And B > C REM returns -1"
 msgstr ""
 
 #: shared/03060100.xhp#PAR_ID3154014.17
-msgid  "vVarOut = B &gt;> A And B &gt;> C REM returns 0"
+msgid  "vVarOut = B > A And B > C REM returns 0"
 msgstr ""
 
 #: shared/03060100.xhp#PAR_ID3149262.18
-msgid  "vVarOut = A &gt;> B And B &gt;> D REM returns 0"
+msgid  "vVarOut = A > B And B > D REM returns 0"
 msgstr ""
 
 #: shared/03060100.xhp#PAR_ID3145751.19
-msgid  "vVarOut = (B &gt;> D And B &gt;> A) REM returns 0"
+msgid  "vVarOut = (B > D And B > A) REM returns 0"
 msgstr ""
 
 #: shared/03060100.xhp#PAR_ID3147394.20
@@ -11376,19 +11376,19 @@ msgid  "A = 10: B = 8: C = 6: D = Null"
 msgstr ""
 
 #: shared/03060200.xhp#PAR_ID3152462.15
-msgid  "vOut = A &gt;> B Eqv B &gt;> C REM returns -1"
+msgid  "vOut = A > B Eqv B > C REM returns -1"
 msgstr ""
 
 #: shared/03060200.xhp#PAR_ID3153191.16
-msgid  "vOut = B &gt;> A Eqv B &gt;> C REM returns 0"
+msgid  "vOut = B > A Eqv B > C REM returns 0"
 msgstr ""
 
 #: shared/03060200.xhp#PAR_ID3145799.17
-msgid  "vOut = A &gt;> B Eqv B &gt;> D REM returns 0"
+msgid  "vOut = A > B Eqv B > D REM returns 0"
 msgstr ""
 
 #: shared/03060200.xhp#PAR_ID3149412.18
-msgid  "vOut = (B &gt;> D Eqv B &gt;> A) REM returns -1"
+msgid  "vOut = (B > D Eqv B > A) REM returns -1"
 msgstr ""
 
 #: shared/03060200.xhp#PAR_ID3149959.19
@@ -11464,19 +11464,19 @@ msgid  "A = 10: B = 8: C = 6: D = Null"
 msgstr ""
 
 #: shared/03060300.xhp#PAR_ID3145750.15
-msgid  "vOut = A &gt;> B Imp B &gt;> C REM returns -1"
+msgid  "vOut = A > B Imp B > C REM returns -1"
 msgstr ""
 
 #: shared/03060300.xhp#PAR_ID3156441.16
-msgid  "vOut = B &gt;> A Imp B &gt;> C REM returns -1"
+msgid  "vOut = B > A Imp B > C REM returns -1"
 msgstr ""
 
 #: shared/03060300.xhp#PAR_ID3152596.17
-msgid  "vOut = A &gt;> B Imp B &gt;> D REM returns 0"
+msgid  "vOut = A > B Imp B > D REM returns 0"
 msgstr ""
 
 #: shared/03060300.xhp#PAR_ID3154942.18
-msgid  "vOut = (B &gt;> D Imp B &gt;> A) REM returns -1"
+msgid  "vOut = (B > D Imp B > A) REM returns -1"
 msgstr ""
 
 #: shared/03060300.xhp#PAR_ID3154492.19
@@ -11556,15 +11556,15 @@ msgid  "vOut = Not vA REM Returns -11"
 msgstr ""
 
 #: shared/03060400.xhp#PAR_ID3148645.16
-msgid  "vOut = Not(vC &gt;> vD) REM Returns -1"
+msgid  "vOut = Not(vC > vD) REM Returns -1"
 msgstr ""
 
 #: shared/03060400.xhp#PAR_ID3156441.17
-msgid  "vOut = Not(vB &gt;> vA) REM Returns -1"
+msgid  "vOut = Not(vB > vA) REM Returns -1"
 msgstr ""
 
 #: shared/03060400.xhp#PAR_ID3152596.18
-msgid  "vOut = Not(vA &gt;> vB) REM Returns 0"
+msgid  "vOut = Not(vA > vB) REM Returns 0"
 msgstr ""
 
 #: shared/03060400.xhp#PAR_ID3154319.19
@@ -11636,19 +11636,19 @@ msgid  "vA = 10: vB = 8: vC = 6: vD = Null"
 msgstr ""
 
 #: shared/03060500.xhp#PAR_ID3152460.15
-msgid  "vOut = vA &gt;> vB Or vB &gt;> vC REM -1"
+msgid  "vOut = vA > vB Or vB > vC REM -1"
 msgstr ""
 
 #: shared/03060500.xhp#PAR_ID3147349.16
-msgid  "vOut = vB &gt;> vA Or vB &gt;> vC REM -1"
+msgid  "vOut = vB > vA Or vB > vC REM -1"
 msgstr ""
 
 #: shared/03060500.xhp#PAR_ID3151114.17
-msgid  "vOut = vA &gt;> vB Or vB &gt;> vD REM -1"
+msgid  "vOut = vA > vB Or vB > vD REM -1"
 msgstr ""
 
 #: shared/03060500.xhp#PAR_ID3153726.18
-msgid  "vOut = (vB &gt;> vD Or vB &gt;> vA) REM 0"
+msgid  "vOut = (vB > vD Or vB > vA) REM 0"
 msgstr ""
 
 #: shared/03060500.xhp#PAR_ID3152598.19
@@ -11724,19 +11724,19 @@ msgid  "vA = 10: vB = 8: vC = 6: vD = Null"
 msgstr ""
 
 #: shared/03060600.xhp#PAR_ID3156442.15
-msgid  "vOut = vA &gt;> vB Xor vB &gt;> vC REM returns 0"
+msgid  "vOut = vA > vB Xor vB > vC REM returns 0"
 msgstr ""
 
 #: shared/03060600.xhp#PAR_ID3153191.16
-msgid  "vOut = vB &gt;> vA Xor vB &gt;> vC REM returns -1"
+msgid  "vOut = vB > vA Xor vB > vC REM returns -1"
 msgstr ""
 
 #: shared/03060600.xhp#PAR_ID3153144.17
-msgid  "vOut = vA &gt;> vB Xor vB &gt;> vD REM returns -1"
+msgid  "vOut = vA > vB Xor vB > vD REM returns -1"
 msgstr ""
 
 #: shared/03060600.xhp#PAR_ID3154944.18
-msgid  "vOut = (vB &gt;> vD Xor vB &gt;> vA) REM returns 0"
+msgid  "vOut = (vB > vD Xor vB > vA) REM returns 0"
 msgstr ""
 
 #: shared/03060600.xhp#PAR_ID3148455.19
@@ -12752,7 +12752,7 @@ msgid  "dValue=Exp( Log(b1)+Log(b2) )"
 msgstr ""
 
 #: shared/03080201.xhp#PAR_ID3161832.15
-msgid  "MsgBox \"\" &amp;& dValue &amp;& chr(13) &amp;& (b1*b2) ,0,\"Multiplication by logarithm\""
+msgid  "MsgBox \"\" & dValue & chr(13) & (b1*b2) ,0,\"Multiplication by logarithm\""
 msgstr ""
 
 #: shared/03080201.xhp#PAR_ID3151112.16
@@ -12836,7 +12836,7 @@ msgid  "a=Exp( Log(b1)+Log(b2) )"
 msgstr ""
 
 #: shared/03080202.xhp#PAR_ID3149262.18
-msgid  "MsgBox \"\" &amp;& a &amp;& chr(13) &amp;& (b1*b2) ,0,\"Multiplication by logarithm function\""
+msgid  "MsgBox \"\" & a & chr(13) & (b1*b2) ,0,\"Multiplication by logarithm function\""
 msgstr ""
 
 #: shared/03080202.xhp#PAR_ID3155411.19
@@ -12932,7 +12932,7 @@ msgid  "For iCount = 0 To 9"
 msgstr ""
 
 #: shared/03080301.xhp#PAR_ID3145748.20
-msgid  "sText = sText &amp;& iSpectral(iCount) &amp;& \" | \""
+msgid  "sText = sText & iSpectral(iCount) & \" | \""
 msgstr ""
 
 #: shared/03080301.xhp#PAR_ID3146921.21
@@ -13032,7 +13032,7 @@ msgid  "Print \"Number from 6 to 8\""
 msgstr ""
 
 #: shared/03080302.xhp#PAR_ID3145800.24
-msgid  "Case Is &gt;> 8 And iVar &lt;< 11"
+msgid  "Case Is > 8 And iVar < 11"
 msgstr ""
 
 #: shared/03080302.xhp#PAR_ID3151074.25
@@ -13540,7 +13540,7 @@ msgid  "Dim a2, b2, c2 as String"
 msgstr ""
 
 #: shared/03080801.xhp#PAR_ID3154909.32
-msgid  "a2 = \"&amp;&H3E8\""
+msgid  "a2 = \"&H3E8\""
 msgstr ""
 
 #: shared/03080801.xhp#PAR_ID3148674.33
@@ -13588,7 +13588,7 @@ msgid  "REM Calculates a hexadecimal value in Integer."
 msgstr ""
 
 #: shared/03080801.xhp#PAR_ID3148575.26
-msgid  "Int2Hex = \"&amp;&H\" &amp;& Hex( iLong )"
+msgid  "Int2Hex = \"&H\" & Hex( iLong )"
 msgstr ""
 
 #: shared/03080801.xhp#PAR_ID3151073.27
@@ -13756,7 +13756,7 @@ msgid  "sToday = Right$(sToday, 4)+ Mid$(sToday, 4, 2) + Left$(sToday, 2)"
 msgstr ""
 
 #: shared/03090101.xhp#PAR_ID3154792.20
-msgid  "If sDate &lt;< sToday Then"
+msgid  "If sDate < sToday Then"
 msgstr ""
 
 #: shared/03090101.xhp#PAR_ID3155601.21
@@ -13764,7 +13764,7 @@ msgid  "MsgBox \"The expiration date has passed\""
 msgstr ""
 
 #: shared/03090101.xhp#PAR_ID3146972.22
-msgid  "ElseIf sDate &gt;> sToday Then"
+msgid  "ElseIf sDate > sToday Then"
 msgstr ""
 
 #: shared/03090101.xhp#PAR_ID3146912.23
@@ -14128,7 +14128,7 @@ msgid  "sFile = Dir$( sPath ,22)"
 msgstr ""
 
 #: shared/03090201.xhp#PAR_ID3146898.54
-msgid  "If sFile &lt;<&gt;> \"\" Then"
+msgid  "If sFile <> \"\" Then"
 msgstr ""
 
 #: shared/03090201.xhp#PAR_ID3156333.55
@@ -14340,7 +14340,7 @@ msgid  "For iCount2 = iCount + 1 To 9"
 msgstr ""
 
 #: shared/03090202.xhp#PAR_ID3155608.46
-msgid  "If sEntry(iCount) &gt;> sEntry(iCount2) Then"
+msgid  "If sEntry(iCount) > sEntry(iCount2) Then"
 msgstr ""
 
 #: shared/03090202.xhp#PAR_ID3150938.47
@@ -14432,7 +14432,7 @@ msgid  "Dim iRun As Integer"
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3155306.11
-msgid  "sText =&quot;\"This is a short text&quot;\""
+msgid  "sText =\"This is a short text\""
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3154011.12
@@ -14440,11 +14440,11 @@ msgid  "iRun = 1"
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3147215.13
-msgid  "while iRun &lt;< Len(sText)"
+msgid  "while iRun < Len(sText)"
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3147427.14
-msgid  "if Mid(sText,iRun,1 )&lt;<&gt;> &quot;\" &quot;\" then Mid( sText ,iRun, 1, Chr( 1 + Asc( Mid(sText,iRun,1 )) )"
+msgid  "if Mid(sText,iRun,1 )<> \" \" then Mid( sText ,iRun, 1, Chr( 1 + Asc( Mid(sText,iRun,1 )) )"
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3149665.15
@@ -14456,7 +14456,7 @@ msgid  "Wend"
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3153189.17
-msgid  "MsgBox sText,0,&quot;\"Text encoded&quot;\""
+msgid  "MsgBox sText,0,\"Text encoded\""
 msgstr ""
 
 #: shared/03090203.xhp#PAR_ID3145251.18
@@ -14796,7 +14796,7 @@ msgid  "Sub1:"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3153948.21
-msgid  "sVar =sVar &amp;& \" From Sub 1 to\" : Return"
+msgid  "sVar =sVar & \" From Sub 1 to\" : Return"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3150750.22
@@ -14804,7 +14804,7 @@ msgid  "Sub2:"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3153708.23
-msgid  "sVar =sVar &amp;& \" From Sub 2 to\" : Return"
+msgid  "sVar =sVar & \" From Sub 2 to\" : Return"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3155067.24
@@ -14812,7 +14812,7 @@ msgid  "Line1:"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3150321.25
-msgid  "sVar =sVar &amp;& \" Label 1\" : GoTo Ende"
+msgid  "sVar =sVar & \" Label 1\" : GoTo Ende"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3149019.26
@@ -14820,7 +14820,7 @@ msgid  "Line2:"
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3155764.27
-msgid  "sVar =sVar &amp;& \" Label 2\""
+msgid  "sVar =sVar & \" Label 2\""
 msgstr ""
 
 #: shared/03090303.xhp#PAR_ID3153711.28
@@ -15192,7 +15192,7 @@ msgid  "Print \"Number from 6 to 8\""
 msgstr ""
 
 #: shared/03090404.xhp#PAR_ID3153144.22
-msgid  "Case Is &gt;> 8 And iVar &lt;< 11"
+msgid  "Case Is > 8 And iVar < 11"
 msgstr ""
 
 #: shared/03090404.xhp#PAR_ID3147436.23
@@ -16096,7 +16096,7 @@ msgid  "Syntax:"
 msgstr ""
 
 #: shared/03100100.xhp#PAR_ID3149514.4
-msgid  "CBool (Expression1 {= | &lt;<&gt;> | &lt;< | &gt;> | &lt;<= | &gt;>=} Expression2) or CBool (Number)"
+msgid  "CBool (Expression1 {= | <> | < | > | <= | >=} Expression2) or CBool (Number)"
 msgstr ""
 
 #: shared/03100100.xhp#HD_ID3156152.5
@@ -16148,7 +16148,7 @@ msgid  "REM Instead of the command line"
 msgstr ""
 
 #: shared/03100100.xhp#PAR_ID3148576.17
-msgid  "REM If Instr(Input, \"and\")&lt;<&gt;>0 Then..."
+msgid  "REM If Instr(Input, \"and\")<>0 Then..."
 msgstr ""
 
 #: shared/03100100.xhp#PAR_ID3154014.18
@@ -16500,7 +16500,7 @@ msgid  "Const sVar = \"Program\", dVar As Double = 1.00"
 msgstr ""
 
 #: shared/03100700.xhp#PAR_ID3149560.15
-msgid  "Msgbox sVar &amp;& \" \" &amp;& dVar"
+msgid  "Msgbox sVar & \" \" & dVar"
 msgstr ""
 
 #: shared/03100700.xhp#PAR_ID3153368.16
@@ -17920,7 +17920,7 @@ msgid  "for ii = 0 to 2"
 msgstr ""
 
 #: shared/03102100.xhp#PAR_ID3152994.50
-msgid  "stext(i,ii) = str(i) &amp;& sDim &amp;& str(ii)"
+msgid  "stext(i,ii) = str(i) & sDim & str(ii)"
 msgstr ""
 
 #: shared/03102100.xhp#PAR_ID3150202.51
@@ -19328,27 +19328,27 @@ msgid  "Dim lVar As Long"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3155509.53
-msgid  "Msgbox TypeName(iVar) &amp;& \" \" &amp;& VarType(iVar) &amp;& Chr(13) &amp;&_"
+msgid  "Msgbox TypeName(iVar) & \" \" & VarType(iVar) & Chr(13) &_"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3150370.54
-msgid  "TypeName(sVar) &amp;& \" \" &amp;& VarType(sVar) &amp;& Chr(13) &amp;&_"
+msgid  "TypeName(sVar) & \" \" & VarType(sVar) & Chr(13) &_"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3155532.55
-msgid  "TypeName(siVar) &amp;& \" \" &amp;& VarType(siVar) &amp;& Chr(13) &amp;&_"
+msgid  "TypeName(siVar) & \" \" & VarType(siVar) & Chr(13) &_"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3152988.56
-msgid  "TypeName(dVar) &amp;& \" \" &amp;& VarType(dVar) &amp;& Chr(13) &amp;&_"
+msgid  "TypeName(dVar) & \" \" & VarType(dVar) & Chr(13) &_"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3156166.57
-msgid  "TypeName(bVar) &amp;& \" \" &amp;& VarType(bVar) &amp;& Chr(13) &amp;&_"
+msgid  "TypeName(bVar) & \" \" & VarType(bVar) & Chr(13) &_"
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3148817.58
-msgid  "TypeName(lVar) &amp;& \" \" &amp;& VarType(lVar),0,\"Some types in $[officename] Basic\""
+msgid  "TypeName(lVar) & \" \" & VarType(lVar),0,\"Some types in $[officename] Basic\""
 msgstr ""
 
 #: shared/03103600.xhp#PAR_ID3154259.59
@@ -19972,7 +19972,7 @@ msgid  "Example:"
 msgstr ""
 
 #: shared/03104600.xhp#PAR_ID3156024.8
-msgid  "// Copy of objects -&gt;> same instance"
+msgid  "// Copy of objects -> same instance"
 msgstr ""
 
 #: shared/03104600.xhp#PAR_ID3154923.9
@@ -19988,7 +19988,7 @@ msgid  "print EqualUnoObjects( oIntrospection, oIntro2 )"
 msgstr ""
 
 #: shared/03104600.xhp#PAR_ID3153525.12
-msgid  "// Copy of structs as value -&gt;> new instance"
+msgid  "// Copy of structs as value -> new instance"
 msgstr ""
 
 #: shared/03104600.xhp#PAR_ID3154366.13
@@ -20068,7 +20068,7 @@ msgid  "Syntax:"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3149177.4
-msgid  "Result = Expression1 { = | &lt;< | &gt;> | &lt;<= | &gt;>= } Expression2"
+msgid  "Result = Expression1 { = | < | > | <= | >= } Expression2"
 msgstr ""
 
 #: shared/03110100.xhp#HD_ID3145316.5
@@ -20092,23 +20092,23 @@ msgid  "= : Equal to"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3154924.10
-msgid  "&lt;< : Less than"
+msgid  "< : Less than"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3146795.11
-msgid  "&gt;> : Greater than"
+msgid  "> : Greater than"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3150541.12
-msgid  "&lt;<= : Less than or equal to"
+msgid  "<= : Less than or equal to"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3150400.13
-msgid  "&gt;>= : Greater than or equal to"
+msgid  ">= : Greater than or equal to"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3148797.14
-msgid  "&lt;<&gt;> : Not equal to"
+msgid  "<> : Not equal to"
 msgstr ""
 
 #: shared/03110100.xhp#HD_ID3154686.15
@@ -20136,7 +20136,7 @@ msgid  "sFile = Dir$( sRoot ,22)"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3150440.21
-msgid  "If sFile &lt;<&gt;> \"\" Then"
+msgid  "If sFile <> \"\" Then"
 msgstr ""
 
 #: shared/03110100.xhp#PAR_ID3147288.22
@@ -20404,7 +20404,7 @@ msgid  "sVar = LTrim(Str(iVar))"
 msgstr ""
 
 #: shared/03120103.xhp#PAR_ID3154924.16
-msgid  "Msgbox sVar &amp;& chr(13) &amp;& Str(iVar)"
+msgid  "Msgbox sVar & chr(13) & Str(iVar)"
 msgstr ""
 
 #: shared/03120103.xhp#PAR_ID3152811.17
@@ -20592,15 +20592,15 @@ msgid  "sText = \"Las Vegas\""
 msgstr ""
 
 #: shared/03120201.xhp#PAR_ID3156282.15
-msgid  "sOut = sText &amp;& Space(iLen) &amp;& sText &amp;& Chr(13) &amp;&_"
+msgid  "sOut = sText & Space(iLen) & sText & Chr(13) &_"
 msgstr ""
 
 #: shared/03120201.xhp#PAR_ID3144760.16
-msgid  "sText &amp;& Space(iLen*2) &amp;& sText &amp;& Chr(13) &amp;&_"
+msgid  "sText & Space(iLen*2) & sText & Chr(13) &_"
 msgstr ""
 
 #: shared/03120201.xhp#PAR_ID3159149.17
-msgid  "sText &amp;& Space(iLen*4) &amp;& sText &amp;& Chr(13)"
+msgid  "sText & Space(iLen*4) & sText & Chr(13)"
 msgstr ""
 
 #: shared/03120201.xhp#PAR_ID3154216.18
@@ -20704,7 +20704,7 @@ msgid  "<link href=\"text/sbasic/shared/03120300.xhp\" name=\"Editing String Con
 msgstr ""
 
 #: shared/03120300.xhp#PAR_ID3149178.2
-msgid  "The following functions edit, format, and align the contents of strings. Use the &amp;& operator to concatenate strings."
+msgid  "The following functions edit, format, and align the contents of strings. Use the & operator to concatenate strings."
 msgstr ""
 
 #: shared/03120301.xhp#TIT
@@ -20824,7 +20824,7 @@ msgid  "Characters in the format code that have a special meaning can only be di
 msgstr ""
 
 #: shared/03120301.xhp#PAR_ID3155411.28
-msgid  "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &amp;&, &lt;<, &gt;>, !)."
+msgid  "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &, <, >, !)."
 msgstr ""
 
 #: shared/03120301.xhp#PAR_ID3145749.30
@@ -21036,19 +21036,19 @@ msgid  "sUS_date = Mid(sInput, 6, 2)"
 msgstr ""
 
 #: shared/03120303.xhp#PAR_ID3150439.17
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120303.xhp#PAR_ID3153770.18
-msgid  "sUS_date = sUS_date &amp;& Right(sInput, 2)"
+msgid  "sUS_date = sUS_date & Right(sInput, 2)"
 msgstr ""
 
 #: shared/03120303.xhp#PAR_ID3161833.19
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120303.xhp#PAR_ID3147215.20
-msgid  "sUS_date = sUS_date &amp;& Left(sInput, 4)"
+msgid  "sUS_date = sUS_date & Left(sInput, 4)"
 msgstr ""
 
 #: shared/03120303.xhp#PAR_ID3149666.21
@@ -21144,7 +21144,7 @@ msgid  "RSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3153365.21
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3149260.23
@@ -21160,7 +21160,7 @@ msgid  "RSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3151114.26
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3155855.28
@@ -21180,7 +21180,7 @@ msgid  "LSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3154792.32
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3154942.34
@@ -21196,7 +21196,7 @@ msgid  "LSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3146969.37
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120304.xhp#PAR_ID3150749.38
@@ -21260,7 +21260,7 @@ msgid  "Dim sText2 As String,sText As String,sOut As String"
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3149204.13
-msgid  "sText2 = \" &lt;<*Las Vegas*&gt;> \""
+msgid  "sText2 = \" <*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3159252.15
@@ -21268,7 +21268,7 @@ msgid  "sOut = \"'\"+sText2 +\"'\"+ Chr(13)"
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3147350.16
-msgid  "sText = Ltrim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;> \""
+msgid  "sText = Ltrim(sText2) REM sText = \"<*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3153951.17
@@ -21276,7 +21276,7 @@ msgid  "sOut = sOut + \"'\"+sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3153363.18
-msgid  "sText = Rtrim(sText2) REM sText = \" &lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Rtrim(sText2) REM sText = \" <*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3159154.19
@@ -21284,7 +21284,7 @@ msgid  "sOut = sOut +\"'\"+ sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3154322.20
-msgid  "sText = Trim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Trim(sText2) REM sText = \"<*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120305.xhp#PAR_ID3146924.21
@@ -21384,19 +21384,19 @@ msgid  "sUS_date = Mid(sInput, 6, 2)"
 msgstr ""
 
 #: shared/03120306.xhp#PAR_ID3153952.20
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120306.xhp#PAR_ID3153364.21
-msgid  "sUS_date = sUS_date &amp;& Right(sInput, 2)"
+msgid  "sUS_date = sUS_date & Right(sInput, 2)"
 msgstr ""
 
 #: shared/03120306.xhp#PAR_ID3146975.22
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120306.xhp#PAR_ID3149665.23
-msgid  "sUS_date = sUS_date &amp;& Left(sInput, 4)"
+msgid  "sUS_date = sUS_date & Left(sInput, 4)"
 msgstr ""
 
 #: shared/03120306.xhp#PAR_ID3150011.24
@@ -21484,19 +21484,19 @@ msgid  "sUS_date = Mid(sInput, 6, 2)"
 msgstr ""
 
 #: shared/03120307.xhp#PAR_ID3146984.18
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120307.xhp#PAR_ID3155308.19
-msgid  "sUS_date = sUS_date &amp;& Right(sInput, 2)"
+msgid  "sUS_date = sUS_date & Right(sInput, 2)"
 msgstr ""
 
 #: shared/03120307.xhp#PAR_ID3153727.20
-msgid  "sUS_date = sUS_date &amp;& \"/\""
+msgid  "sUS_date = sUS_date & \"/\""
 msgstr ""
 
 #: shared/03120307.xhp#PAR_ID3145365.21
-msgid  "sUS_date = sUS_date &amp;& Left(sInput, 4)"
+msgid  "sUS_date = sUS_date & Left(sInput, 4)"
 msgstr ""
 
 #: shared/03120307.xhp#PAR_ID3152940.22
@@ -21600,7 +21600,7 @@ msgid  "RSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3156444.23
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3148575.25
@@ -21616,7 +21616,7 @@ msgid  "RSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3150116.28
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3154491.30
@@ -21636,7 +21636,7 @@ msgid  "LSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3154511.34
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3153839.36
@@ -21652,7 +21652,7 @@ msgid  "LSet sVar = sExpr"
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3154480.39
-msgid  "Print \"&gt;>\"; sVar; \"&lt;<\""
+msgid  "Print \">\"; sVar; \"<\""
 msgstr ""
 
 #: shared/03120308.xhp#PAR_ID3148914.40
@@ -21716,7 +21716,7 @@ msgid  "Dim sText2 as String,sText as String,sOut as String"
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3154125.13
-msgid  "sText2 = \" &lt;<*Las Vegas*&gt;> \""
+msgid  "sText2 = \" <*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3155131.15
@@ -21724,7 +21724,7 @@ msgid  "sOut = \"'\"+sText2 +\"'\"+ Chr(13)"
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3161833.16
-msgid  "sText = Ltrim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;> \""
+msgid  "sText = Ltrim(sText2) REM sText = \"<*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3147317.17
@@ -21732,7 +21732,7 @@ msgid  "sOut = sOut + \"'\"+sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3151112.18
-msgid  "sText = Rtrim(sText2) REM sText = \" &lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Rtrim(sText2) REM sText = \" <*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3149664.19
@@ -21740,7 +21740,7 @@ msgid  "sOut = sOut +\"'\"+ sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3152576.20
-msgid  "sText = Trim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Trim(sText2) REM sText = \"<*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120309.xhp#PAR_ID3153729.21
@@ -21880,7 +21880,7 @@ msgid  "Dim sText2 as String,sText as String,sOut as String"
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3154908.13
-msgid  "sText2 = \" &lt;<*Las Vegas*&gt;> \""
+msgid  "sText2 = \" <*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3144760.15
@@ -21888,7 +21888,7 @@ msgid  "sOut = \"'\"+sText2 +\"'\"+ Chr(13)"
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3151383.16
-msgid  "sText = Ltrim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;> \""
+msgid  "sText = Ltrim(sText2) REM sText = \"<*Las Vegas*> \""
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3151044.17
@@ -21896,7 +21896,7 @@ msgid  "sOut = sOut + \"'\"+sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3159149.18
-msgid  "sText = Rtrim(sText2) REM sText = \" &lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Rtrim(sText2) REM sText = \" <*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3150449.19
@@ -21904,7 +21904,7 @@ msgid  "sOut = sOut +\"'\"+ sText +\"'\" + Chr(13)"
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3149562.20
-msgid  "sText = Trim(sText2) REM sText = \"&lt;<*Las Vegas*&gt;>\""
+msgid  "sText = Trim(sText2) REM sText = \"<*Las Vegas*>\""
 msgstr ""
 
 #: shared/03120311.xhp#PAR_ID3161831.21
@@ -22504,7 +22504,7 @@ msgid  "Return value"
 msgstr ""
 
 #: shared/03120403.xhp#PAR_ID3150358.27
-msgid  "If Text1 &lt;< Text2 the function returns -1"
+msgid  "If Text1 < Text2 the function returns -1"
 msgstr ""
 
 #: shared/03120403.xhp#PAR_ID3151043.28
@@ -22512,7 +22512,7 @@ msgid  "If Text1 = Text2 the function returns 0"
 msgstr ""
 
 #: shared/03120403.xhp#PAR_ID3158410.29
-msgid  "If Text1 &gt;> Text2 the function returns 1"
+msgid  "If Text1 > Text2 the function returns 1"
 msgstr ""
 
 #: shared/03120403.xhp#HD_ID3153968.18
@@ -22796,7 +22796,7 @@ msgid  "lTick = (GetSystemTicks() - lTick)"
 msgstr ""
 
 #: shared/03130600.xhp#PAR_ID3156214.13
-msgid  "MsgBox \"\" &amp;& lTick &amp;& \" Ticks\" ,0,\"The pause lasted\""
+msgid  "MsgBox \"\" & lTick & \" Ticks\" ,0,\"The pause lasted\""
 msgstr ""
 
 #: shared/03130600.xhp#PAR_ID3148922.14
@@ -22860,7 +22860,7 @@ msgid  "lTick = (GetSystemTicks() - lTick)"
 msgstr ""
 
 #: shared/03130700.xhp#PAR_ID3154938.13
-msgid  "MsgBox \"\" &amp;& lTick &amp;& \" Ticks\" ,0,\"The pause lasted\""
+msgid  "MsgBox \"\" & lTick & \" Ticks\" ,0,\"The pause lasted\""
 msgstr ""
 
 #: shared/03130700.xhp#PAR_ID3150542.14
@@ -22928,7 +22928,7 @@ msgid  "If sTemp = \"\" Then sTemp=Environ(\"TMP\")"
 msgstr ""
 
 #: shared/03130800.xhp#PAR_ID3145419.15
-msgid  "MsgBox \"'\" &amp;& sTemp &amp;& \"'\" ,64,\"Directory of temporary files:\""
+msgid  "MsgBox \"'\" & sTemp & \"'\" ,64,\"Directory of temporary files:\""
 msgstr ""
 
 #: shared/03130800.xhp#PAR_ID3154124.16
@@ -23032,7 +23032,7 @@ msgid  "Sub ExamplePixelTwips"
 msgstr ""
 
 #: shared/03131300.xhp#PAR_ID3153061.9
-msgid  "MsgBox \"\" &amp;& TwipsPerPixelX() &amp;& \" Twips * \" &amp;& TwipsPerPixelY() &amp;& \" Twips\",0,\"Pixel size\""
+msgid  "MsgBox \"\" & TwipsPerPixelX() & \" Twips * \" & TwipsPerPixelY() & \" Twips\",0,\"Pixel size\""
 msgstr ""
 
 #: shared/03131300.xhp#PAR_ID3149670.10
@@ -23080,7 +23080,7 @@ msgid  "Sub ExamplePixelTwips"
 msgstr ""
 
 #: shared/03131400.xhp#PAR_ID3154142.9
-msgid  "MsgBox \"\" &amp;& TwipsPerPixelX() &amp;& \" Twips * \" &amp;& TwipsPerPixelY() &amp;& \" Twips\",0,\"Pixel size\""
+msgid  "MsgBox \"\" & TwipsPerPixelX() & \" Twips * \" & TwipsPerPixelY() & \" Twips\",0,\"Pixel size\""
 msgstr ""
 
 #: shared/03131400.xhp#PAR_ID3148944.10
