@@ -164,7 +164,10 @@ void convert_xhp::closeTag(char *yytext)
 void convert_xhp::closeTagNOvalue(char *yytext)
 {
   copySourceSpecial(yytext, 0);
-  meExpectValue = VALUE_NOT_USED;
+ if (meExpectValue == VALUE_IS_VALUE_TAG)
+   meExpectValue = VALUE_IS_VALUE;
+ else
+   meExpectValue = VALUE_NOT_USED;
 }
 
 
@@ -323,16 +326,14 @@ void convert_xhp::stopComment(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::handleSpecial(char *yytext)
 {
-  std::string& sText = copySourceSpecial(yytext, 0);
-  int          nX    = msCollector.size();
-
-
   if (meExpectValue != VALUE_IS_VALUE || meExpectValue != VALUE_IS_VALUE_TAG)
   {
-    msCollector.erase(nX);
+    std::string sText(yytext);
     mcMemory.convertFromInetString(sText);
     msCollector += sText;
   }
+  else
+    copySourceSpecial(yytext, 0);
 }
 
 
