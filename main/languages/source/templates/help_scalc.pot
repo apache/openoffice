@@ -2943,6 +2943,10 @@ msgstr ""
 msgid  "DCOUNT(Database; DatabaseField; SearchCriteria)"
 msgstr ""
 
+#: 01/04060101.xhp#PAR_ID3153273.187
+msgid  "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
+
 #: 01/04060101.xhp#HD_ID3154743.92
 msgid  "Example"
 msgstr ""
@@ -3439,6 +3443,98 @@ msgstr ""
 msgid  "Functions"
 msgstr ""
 
+#: 01/04060102.xhp#PAR_IDN10683
+msgid  "<embedvar href=\"text/scalc/01/func_workday.xhp#workday\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID5189062
+msgid  "<embedvar href=\"text/scalc/01/func_yearfrac.xhp#yearfrac\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID6854457
+msgid  "<embedvar href=\"text/scalc/01/func_date.xhp#date\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID3372295
+msgid  "<embedvar href=\"text/scalc/01/func_datevalue.xhp#datevalue\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID5684377
+msgid  "<embedvar href=\"text/scalc/01/func_edate.xhp#edate\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID7576525
+msgid  "<embedvar href=\"text/scalc/01/func_today.xhp#today\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID641193
+msgid  "<embedvar href=\"text/scalc/01/func_year.xhp#year\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID6501968
+msgid  "<embedvar href=\"text/scalc/01/func_now.xhp#now\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID3886532
+msgid  "<embedvar href=\"text/scalc/01/func_weeknum.xhp#weeknum\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID614947
+msgid  "<embedvar href=\"text/scalc/01/func_weeknumadd.xhp#weeknumadd\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID3953062
+msgid  "<embedvar href=\"text/scalc/01/func_minute.xhp#minute\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID2579729
+msgid  "<embedvar href=\"text/scalc/01/func_month.xhp#month\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID1346781
+msgid  "<embedvar href=\"text/scalc/01/func_eomonth.xhp#eomonth\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID8951384
+msgid  "<embedvar href=\"text/scalc/01/func_networkdays.xhp#networkdays\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID1074251
+msgid  "<embedvar href=\"text/scalc/01/func_eastersunday.xhp#eastersunday\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID372325
+msgid  "<embedvar href=\"text/scalc/01/func_second.xhp#second\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID224005
+msgid  "<embedvar href=\"text/scalc/01/func_hour.xhp#hour\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID5375835
+msgid  "<embedvar href=\"text/scalc/01/func_day.xhp#day\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID1208838
+msgid  "<embedvar href=\"text/scalc/01/func_days.xhp#days\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID7679982
+msgid  "<embedvar href=\"text/scalc/01/func_days360.xhp#days360\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID9172643
+msgid  "<embedvar href=\"text/scalc/01/func_weekday.xhp#weekday\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID2354503
+msgid  "<embedvar href=\"text/scalc/01/func_time.xhp#time\"/>"
+msgstr ""
+
+#: 01/04060102.xhp#PAR_ID7765434
+msgid  "<embedvar href=\"text/scalc/01/func_timevalue.xhp#timevalue\"/>"
+msgstr ""
+
 #: 01/04060103.xhp#TIT
 msgid  "Financial Functions Part One"
 msgstr ""
@@ -3749,6 +3845,10 @@ msgstr ""
 
 #: 01/04060103.xhp#PAR_ID3146883.13
 msgid  "            <emph>Type</emph> (optional) denotes due date for payments. Type = 1 means due at the beginning of a period and Type = 0 (default) means due at the end of the period."
+msgstr ""
+
+#: 01/04060103.xhp#PAR_IDN10B13
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
 msgstr ""
 
 #: 01/04060103.xhp#HD_ID3150037.14
@@ -4585,6 +4685,10 @@ msgstr ""
 
 #: 01/04060104.xhp#PAR_ID8193914
 msgid  "\"system\""
+msgstr ""
+
+#: 01/04060104.xhp#PAR_ID9841608
+msgid  "The type of the operating system. <br/>\"WNT\" for Microsoft Windows <br/>\"LINUX\" for Linux <br/>\"SOLARIS\" for Solaris"
 msgstr ""
 
 #: 01/04060104.xhp#PAR_ID2701803
@@ -5701,6 +5805,10 @@ msgstr ""
 
 #: 01/04060105.xhp#PAR_ID3154811.54
 msgid  "            <emph>OtherwiseValue</emph> (optional) is the value that is returned if the logical test is FALSE."
+msgstr ""
+
+#: 01/04060105.xhp#PAR_IDN107FA
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
 msgstr ""
 
 #: 01/04060105.xhp#HD_ID3149507.55
@@ -8975,6 +9083,10 @@ msgstr ""
 msgid  "You now see a unit array with a range of A1:E5."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN10FA7
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID3159084
 msgid  "<bookmark_value>FREQUENCY function</bookmark_value>"
 msgstr ""
@@ -9167,6 +9279,10 @@ msgstr ""
 msgid  "Select a single column range in which to enter the frequency according to the class limits. You must select one field more than the class ceiling. In this example, select the range C1:C6. Call up the FREQUENCY function in the <emph>Function Wizard</emph>. Select the <emph>Data</emph> range in (A1:A11), and then the <emph>Classes</emph> range in which you entered the class limits (B1:B6). Select the <emph>Array</emph> check box and click <emph>OK</emph>. You will see the frequency count in the range C1:C6."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN11269
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID3151030
 msgid  "<bookmark_value>MDETERM function</bookmark_value><bookmark_value>determinants</bookmark_value>"
 msgstr ""
@@ -9195,6 +9311,10 @@ msgstr ""
 msgid  "You can find a general introduction to using Array functions on top of this page."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN11333
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID3151348
 msgid  "<bookmark_value>MINVERSE function</bookmark_value><bookmark_value>inverse arrays</bookmark_value>"
 msgstr ""
@@ -9217,6 +9337,10 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3157849.43
 msgid  "<emph>Array</emph> represents a square array that is to be inverted."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN113EE
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3157868.44
@@ -9255,6 +9379,10 @@ msgstr ""
 msgid  "<emph>Array</emph> at second place represents the second array with the same number of rows."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN114C3
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#HD_ID3152574.53
 msgid  "Example"
 msgstr ""
@@ -9285,6 +9413,10 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3153857.60
 msgid  "<emph>Array</emph> represents the array in the spreadsheet that is to be transposed."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN115A5
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3159352.61
@@ -9337,6 +9469,14 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID0811200804502261
 msgid  "LINEST returns a table (array) of statistics as below and must be entered as an array formula (for example by using <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Return rather than just Return)."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11416
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN116C6
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3154162.72
@@ -9659,6 +9799,10 @@ msgstr ""
 msgid  "F6: The sum of the squared deviation of the estimated Y value from the given Y values."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN11B04
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID1596728
 msgid  "<bookmark_value>LOGEST function</bookmark_value>"
 msgstr ""
@@ -9693,6 +9837,14 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3163196.157
 msgid  "<emph>Stats</emph> (optional). If Stats=0, only the regression coefficient is calculated."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN118F7
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11BC3
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3163216.158
@@ -9827,6 +9979,10 @@ msgstr ""
 msgid  "SUMPRODUCT returns a single number, it is not necessary to enter the function as an array function."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN11C91
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID3144842
 msgid  "<bookmark_value>SUMX2MY2 function</bookmark_value>"
 msgstr ""
@@ -9853,6 +10009,10 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3144936.174
 msgid  "<emph>ArrayY</emph> represents the second array whose elements are to be squared and subtracted."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11D6B
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#BM_ID3145026
@@ -9883,6 +10043,10 @@ msgstr ""
 msgid  "<emph>ArrayY</emph> represents the second array, whose elements are to be squared and added."
 msgstr ""
 
+#: 01/04060107.xhp#PAR_IDN11E45
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
+msgstr ""
+
 #: 01/04060107.xhp#BM_ID3163527
 msgid  "<bookmark_value>SUMXMY2 function</bookmark_value>"
 msgstr ""
@@ -9909,6 +10073,10 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3163621.192
 msgid  "<emph>ArrayY</emph> represents the second array, whose elements are to be subtracted and squared."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11F1F
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#BM_ID3166062
@@ -9945,6 +10113,14 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3166196.203
 msgid  "<emph>LinearType</emph>(Optional). If LinearType = 0, then lines will be calculated through the zero point. Otherwise, offset lines will also be calculated. The default is LinearType <> 0."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11D2F
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN12019
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3166231.204
@@ -9989,6 +10165,14 @@ msgstr ""
 
 #: 01/04060107.xhp#PAR_ID3173817.214
 msgid  "<emph>FunctionType</emph>(optional). If FunctionType = 0, functions in the form y = m^x will be calculated. Otherwise, y = b*m^x functions will be calculated."
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN11DFD
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
+#: 01/04060107.xhp#PAR_IDN12113
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#moreontop\"/>"
 msgstr ""
 
 #: 01/04060107.xhp#HD_ID3173839.215
@@ -10831,6 +11015,10 @@ msgstr ""
 msgid  "Arguments <emph>Height</emph> and <emph>Width</emph> must not lead to zero or negative count of rows or columns."
 msgstr ""
 
+#: 01/04060109.xhp#PAR_IDN1104B
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
+msgstr ""
+
 #: 01/04060109.xhp#HD_ID3155586.120
 msgid  "Example"
 msgstr ""
@@ -10933,6 +11121,10 @@ msgstr ""
 
 #: 01/04060109.xhp#PAR_ID3149520.139
 msgid  "            <emph>Style2</emph> is the optional name of a cell style assigned to the cell after a certain amount of time has passed. If this parameter is missing \"Default\" is assumed."
+msgstr ""
+
+#: 01/04060109.xhp#PAR_IDN111CA
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
 msgstr ""
 
 #: 01/04060109.xhp#HD_ID3159254.140
@@ -15675,6 +15867,10 @@ msgstr ""
 msgid  "<emph>Type </emph>is an optional parameter. Type = 1 means a switch to linear depreciation. In Type = 0 no switch is made."
 msgstr ""
 
+#: 01/04060118.xhp#PAR_IDN10A0D
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
 #: 01/04060118.xhp#HD_ID3148429.233
 msgid  "Example"
 msgstr ""
@@ -15945,6 +16141,10 @@ msgstr ""
 
 #: 01/04060118.xhp#PAR_ID3146949.258
 msgid  "<emph>Guess</emph> (optional) determines the estimated value of the interest with iterative calculation."
+msgstr ""
+
+#: 01/04060118.xhp#PAR_IDN10E2A
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
 msgstr ""
 
 #: 01/04060118.xhp#HD_ID3149791.259
@@ -16367,6 +16567,10 @@ msgstr ""
 msgid  "<emph>Type</emph> (optional) defines whether the payment is due at the beginning or the end of a period."
 msgstr ""
 
+#: 01/04060118.xhp#PAR_IDN114D8
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
 #: 01/04060118.xhp#HD_ID3146800.286
 msgid  "Example"
 msgstr ""
@@ -16459,6 +16663,10 @@ msgstr ""
 msgid  "<emph>Type</emph> (optional) is the due date of the payment at the beginning or at the end of the period."
 msgstr ""
 
+#: 01/04060118.xhp#PAR_IDN1166C
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
 #: 01/04060118.xhp#HD_ID3155795.299
 msgid  "Example"
 msgstr ""
@@ -16537,6 +16745,10 @@ msgstr ""
 
 #: 01/04060119.xhp#PAR_ID3144744.247
 msgid  "<emph>Type</emph> (optional) defines the due date. F = 1 for payment at the beginning of a period and F = 0 for payment at the end of a period."
+msgstr ""
+
+#: 01/04060119.xhp#PAR_IDN1067C
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
 msgstr ""
 
 #: 01/04060119.xhp#HD_ID3148582.248
@@ -17539,6 +17751,10 @@ msgstr ""
 msgid  "<emph>Type</emph> (optional) is the due date for the periodic payments. Type=1 is payment at the beginning and Type=0 is payment at the end of each period."
 msgstr ""
 
+#: 01/04060119.xhp#PAR_IDN11645
+msgid  "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
+msgstr ""
+
 #: 01/04060119.xhp#HD_ID3152358.339
 msgid  "Example"
 msgstr ""
@@ -17951,6 +18167,10 @@ msgstr ""
 msgid  "            <emph>End</emph> (optional) is the upper bound for <emph>Number</emph>."
 msgstr ""
 
+#: 01/04060181.xhp#PAR_IDN109DF
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
+msgstr ""
+
 #: 01/04060181.xhp#HD_ID3147077.61
 msgid  "Example"
 msgstr ""
@@ -18001,6 +18221,10 @@ msgstr ""
 
 #: 01/04060181.xhp#PAR_ID012020091254453
 msgid  "            <emph>Cumulative</emph> (optional) can be 0 or False to calculate the probability density function. It can be any other value or True or omitted to calculate the cumulative distribution function."
+msgstr ""
+
+#: 01/04060181.xhp#PAR_IDN10AB3
+msgid  "            <embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>         "
 msgstr ""
 
 #: 01/04060181.xhp#HD_ID3145649.73
@@ -21855,6 +22079,10 @@ msgstr ""
 msgid  "You can also open the<emph> Rename Sheet </emph>dialog through the context menu by positioning the mouse pointer over a sheet tab at the bottom of the window and <switchinline select=\"sys\"><caseinline select=\"MAC\">clicking while pressing Control</caseinline><defaultinline>clicking the right mouse button</defaultinline></switchinline>."
 msgstr ""
 
+#: 01/05050100.xhp#PAR_ID3147396.6
+msgid  "Alternatively, click the sheet tab while pressing the <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Alt</defaultinline></switchinline> key. Now you can change the name directly. <switchinline select=\"sys\"><caseinline select=\"UNIX\"><embedvar href=\"text/shared/00/00000099.xhp#winmanager\"/></caseinline></switchinline>"
+msgstr ""
+
 #: 01/05050300.xhp#TIT
 msgid  "Show Sheet"
 msgstr ""
@@ -22173,6 +22401,10 @@ msgstr ""
 
 #: 01/05080300.xhp#PAR_ID3159488.2
 msgid  "<variable id=\"druckbereichetext\"><ahelp hid=\".uno:EditPrintArea\">Opens a dialog where you can specify the print range.</ahelp></variable> You can also set the rows or columns which are to be repeated in every page."
+msgstr ""
+
+#: 01/05080300.xhp#PAR_IDN105AE
+msgid  "<embedvar href=\"text/scalc/guide/printranges.xhp#printranges\"/>"
 msgstr ""
 
 #: 01/05080300.xhp#HD_ID3156281.3
@@ -22579,6 +22811,10 @@ msgstr ""
 msgid  "Formula is SUM($A$1:$A$5)=10: Cell style Result (The selected cells are formatted with the Result style if the sum of the contents in cells A1 to A5 is equal to 10)."
 msgstr ""
 
+#: 01/05120000.xhp#PAR_IDN107E1
+msgid  "            <embedvar href=\"text/scalc/guide/cellstyle_conditional.xhp#cellstyle_conditional\"/>         "
+msgstr ""
+
 #: 01/06020000.xhp#TIT
 msgid  "Hyphenation"
 msgstr ""
@@ -22907,6 +23143,10 @@ msgstr ""
 msgid  "<variable id=\"szenariotext\"><ahelp hid=\".uno:ScenarioManager\">Defines a scenario for the selected sheet area.</ahelp></variable>"
 msgstr ""
 
+#: 01/06050000.xhp#PAR_IDN10637
+msgid  "<embedvar href=\"text/scalc/guide/scenario.xhp#scenario\"/>"
+msgstr ""
+
 #: 01/06050000.xhp#HD_ID3156280.3
 msgid  "Name of scenario"
 msgstr ""
@@ -22993,6 +23233,10 @@ msgstr ""
 
 #: 01/06060000.xhp#HD_ID3153768.4
 msgid  "<link href=\"text/scalc/01/06060200.xhp\" name=\"Documents\">Documents</link>"
+msgstr ""
+
+#: 01/06060000.xhp#PAR_IDN10622
+msgid  "<embedvar href=\"text/scalc/guide/cell_protect.xhp#cell_protect\"/>"
 msgstr ""
 
 #: 01/06060100.xhp#TIT
@@ -23737,6 +23981,10 @@ msgstr ""
 
 #: 01/12040300.xhp#PAR_ID3156281.2
 msgid  "<variable id=\"spezialfilter\"><ahelp hid=\".uno:DataFilterSpecialFilter\">Defines an advanced filter.</ahelp></variable>"
+msgstr ""
+
+#: 01/12040300.xhp#PAR_IDN105EB
+msgid  "<embedvar href=\"text/scalc/guide/filters.xhp#filters\"/>"
 msgstr ""
 
 #: 01/12040300.xhp#HD_ID3153771.25
@@ -25291,6 +25539,10 @@ msgstr ""
 msgid  "In the case of grouping date values, specifies the intervals to group by."
 msgstr ""
 
+#: 01/12090400.xhp#PAR_IDN105B2
+msgid  "<embedvar href=\"text/scalc/guide/datapilot_grouping.xhp#datapilot_grouping\"/>"
+msgstr ""
+
 #: 01/12100000.xhp#TIT
 msgid  "Refresh Range"
 msgstr ""
@@ -26445,6 +26697,10 @@ msgstr ""
 
 #: 01/func_weekday.xhp#PAR_ID3150575.147
 msgid  "=WEEKDAY(NOW()) returns the number of the current day."
+msgstr ""
+
+#: 01/func_weekday.xhp#PAR_ID3150588.171
+msgid  "To obtain a function indicating whether a day in A1 is a business day, use the IF and WEEKDAY functions as follows: <br/>IF(WEEKDAY(A1;2)<6;\"Business day\";\"Weekend\")"
 msgstr ""
 
 #: 01/func_weeknumadd.xhp#TIT
@@ -28491,6 +28747,10 @@ msgstr ""
 msgid  "Division by zero"
 msgstr ""
 
+#: 05/02140000.xhp#PAR_ID5844294
+msgid  "Division operator / if the denominator is 0<br/>Some more functions return this error, for example:<br/>VARP with less than 1 argument<br/>STDEVP with less than 1 argument<br/>VAR with less than 2 arguments<br/>STDEV with less than 2 arguments<br/>STANDARDIZE with stdev=0<br/>NORMDIST with stdev=0"
+msgstr ""
+
 #: 05/empty_cells.xhp#TIT
 msgid  "Handling of Empty Cells"
 msgstr ""
@@ -29611,6 +29871,10 @@ msgstr ""
 msgid  "Click <emph>OK</emph>. "
 msgstr ""
 
+#: guide/cell_protect.xhp#PAR_IDN10B8C
+msgid  "            <embedvar href=\"text/shared/guide/digital_signatures.xhp#digital_signatures\"/>         "
+msgstr ""
+
 #: guide/cellreference_dragdrop.xhp#TIT
 msgid  "Referencing Cells by Drag-and-Drop"
 msgstr ""
@@ -29803,6 +30067,10 @@ msgstr ""
 msgid  "The STYLE() function can be added to an existing formula in a cell. For example, together with the CURRENT function, you can color a cell depending on its value. The formula =...+STYLE(IF(CURRENT()>3; \"Red\"; \"Green\")) applies the cell style \"Red\" to cells if the value is greater than 3, otherwise the cell style \"Green\" is applied."
 msgstr ""
 
+#: guide/cellstyle_by_formula.xhp#PAR_ID3151385.15
+msgid  "If you would like to apply a formula to all cells in a selected area, you can use the<emph/>         <item type=\"menuitem\">Find & Replace</item> dialog."
+msgstr ""
+
 #: guide/cellstyle_by_formula.xhp#PAR_ID3149456.16
 msgid  "Select all the desired cells."
 msgstr ""
@@ -29833,6 +30101,10 @@ msgstr ""
 
 #: guide/cellstyle_by_formula.xhp#PAR_ID3144767.24
 msgid  "All cells with contents that were included in the selection are now highlighted."
+msgstr ""
+
+#: guide/cellstyle_by_formula.xhp#PAR_ID3147127.23
+msgid  "Click<emph/>               <item type=\"menuitem\">Replace all</item>."
 msgstr ""
 
 #: guide/cellstyle_conditional.xhp#TIT
@@ -30341,6 +30613,10 @@ msgstr ""
 
 #: guide/csv_formula.xhp#PAR_ID3148702.9
 msgid  "Choose <emph>File - Save as</emph>. You will see the <emph>Save as</emph> dialog."
+msgstr ""
+
+#: guide/csv_formula.xhp#PAR_ID3153912.10
+msgid  "In the<emph/>               <item type=\"menuitem\">File type</item> field select the format \"Text CSV\"."
 msgstr ""
 
 #: guide/csv_formula.xhp#PAR_ID3157978.13
@@ -34657,6 +34933,10 @@ msgstr ""
 
 #: main0200.xhp#HD_ID3154758.1
 msgid  "<variable id=\"main0200\"><link href=\"text/scalc/main0200.xhp\" name=\"Toolbars\">Toolbars</link></variable>"
+msgstr ""
+
+#: main0200.xhp#PAR_ID3148798.2
+msgid  "This submenu lists the toolbars that are available in spreadsheets.<embedvar href=\"text/shared/00/00000007.xhp#symbolleistenneu\"/>"
 msgstr ""
 
 #: main0202.xhp#TIT

@@ -3147,6 +3147,10 @@ msgstr ""
 msgid  "<variable id=\"main0200\"><link href=\"text/swriter/main0200.xhp\" name=\"Toolbars\">Toolbars</link></variable>"
 msgstr ""
 
+#: main0200.xhp#PAR_ID3145481.2
+msgid  "This section provides an overview of the toolbars available in $[officename] Writer. <embedvar href=\"text/shared/00/00000007.xhp#symbolleistenneu\"/>"
+msgstr ""
+
 #: main0106.xhp#TIT
 msgid  "Tools"
 msgstr ""
@@ -8863,6 +8867,10 @@ msgstr ""
 msgid  "<ahelp hid=\".uno:Ruler\">Shows or hides the horizontal ruler, that you can use to adjust page margins, tab stops, indents, borders, table cells, and to arrange objects on the page.</ahelp> To show the vertical ruler, choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040200.xhp\" name=\"Writer - View\">%PRODUCTNAME Writer - View</link></emph>, and then select the <emph>Vertical ruler</emph> check box in the <emph>Ruler</emph> area."
 msgstr ""
 
+#: 01/03050000.xhp#PAR_IDN1061A
+msgid  "<embedvar href=\"text/swriter/guide/ruler.xhp#ruler\"/>"
+msgstr ""
+
 #: 01/04030000.xhp#TIT
 msgid  "Footnote/Endnote"
 msgstr ""
@@ -13331,6 +13339,10 @@ msgstr ""
 msgid  "<ahelp hid=\"HID_VS_RULER\">Select the type of line that you want to insert, and then click <emph>OK</emph>. The \"Plain\" type inserts an empty paragraph with a line as lower border.</ahelp>"
 msgstr ""
 
+#: 01/04210000.xhp#PAR_IDN10667
+msgid  "<embedvar href=\"text/swriter/guide/insert_line.xhp#insert_line\"/>"
+msgstr ""
+
 #: 01/05090300.xhp#TIT
 msgid  "Text Flow"
 msgstr ""
@@ -17703,6 +17715,14 @@ msgstr ""
 msgid  "Type a name in the <emph>New Section</emph> box, and then select the <emph>Link</emph> check box."
 msgstr ""
 
+#: guide/textdoc_inframe.xhp#PAR_ID3149642.37
+msgid  "In the <item type=\"menuitem\">File Name</item>               <emph/>box, type the name of the file that you want to insert, or click the browse button (<item type=\"menuitem\">...</item>) and locate the file."
+msgstr ""
+
+#: guide/textdoc_inframe.xhp#PAR_ID3149968.38
+msgid  "If the target text document contains sections, you can select the section that you want to insert in the<emph/>               <item type=\"menuitem\">Sections</item> box."
+msgstr ""
+
 #: guide/textdoc_inframe.xhp#PAR_ID3149619.39
 msgid  "If you want, set the formatting options for the section."
 msgstr ""
@@ -17773,6 +17793,14 @@ msgstr ""
 
 #: guide/wrap.xhp#PAR_ID3154860.19
 msgid  "Select the graphic, right-click, and then choose <emph>Wrap - Edit Contour</emph>."
+msgstr ""
+
+#: guide/wrap.xhp#PAR_ID3150231.7
+msgid  "Use the tools to draw a new contour, and then click the <item type=\"menuitem\">Apply</item>               <emph/>icon (green check mark)."
+msgstr ""
+
+#: guide/wrap.xhp#PAR_ID3150947.21
+msgid  "Close the <item type=\"menuitem\">Contour Editor</item>               <emph/>window."
 msgstr ""
 
 #: guide/wrap.xhp#PAR_ID3150520.22
@@ -17875,6 +17903,14 @@ msgstr ""
 msgid  "Open an existing document and choose <emph>File - Send - Create Master Document</emph>."
 msgstr ""
 
+#: guide/globaldoc_howtos.xhp#PAR_ID3149873.28
+msgid  "If you are creating a new master document, the first entry in the Navigator should be a <item type=\"menuitem\">Text</item>               <emph/>entry. Type an introduction or enter some text. This ensures that after having edited an existing style in the master document, you see the changed style when viewing the subdocuments."
+msgstr ""
+
+#: guide/globaldoc_howtos.xhp#PAR_ID3145114.33
+msgid  "In the <item type=\"menuitem\">Navigator</item> for master documents (should open automatically, else press F5 to open), click and hold the <item type=\"menuitem\">Insert</item>               <emph/>icon, and do one of the following:"
+msgstr ""
+
 #: guide/globaldoc_howtos.xhp#PAR_ID3156240.34
 msgid  "To insert an existing file as a subdocument, choose <emph>File</emph>, locate the file that you want to include, and then click <emph>OK</emph>."
 msgstr ""
@@ -17911,6 +17947,10 @@ msgstr ""
 msgid  "To add text to a master document, right-click an item in the Navigator list, and then choose <emph>Insert - Text</emph>. A text section is inserted before the selected item in the master document where you can type the text that you want. You cannot insert text next to an existing text entry in the Navigator."
 msgstr ""
 
+#: guide/globaldoc_howtos.xhp#PAR_ID3149982.10
+msgid  "To reorder the subdocuments in a master document, drag a subdocument to a new location in the Navigator list. You can also select a subdocument in the list, and click the <item type=\"menuitem\">Move down</item> or <item type=\"menuitem\">Move up</item>               <emph/>icon."
+msgstr ""
+
 #: guide/globaldoc_howtos.xhp#PAR_ID3153022.40
 msgid  "To add an index, such as a table of contents, right-click in the Navigator list, and then choose <emph>Insert - Index</emph>."
 msgstr ""
@@ -17941,6 +17981,14 @@ msgstr ""
 
 #: guide/globaldoc_howtos.xhp#PAR_ID3153907.44
 msgid  "Right-click \"Heading 1\" and choose <emph>Modify</emph>."
+msgstr ""
+
+#: guide/globaldoc_howtos.xhp#PAR_ID3147124.45
+msgid  "Click the <item type=\"menuitem\">Text Flow</item>               <emph/>tab."
+msgstr ""
+
+#: guide/globaldoc_howtos.xhp#PAR_ID3149770.46
+msgid  "In the <item type=\"menuitem\">Breaks</item>               <emph/>area, select <item type=\"menuitem\">Insert</item>, and then select “Page”<emph/>in the <item type=\"menuitem\">Type</item>               <emph/>box."
 msgstr ""
 
 #: guide/globaldoc_howtos.xhp#PAR_ID3150224.17
@@ -18045,6 +18093,10 @@ msgstr ""
 
 #: guide/indices_toc.xhp#PAR_ID3146872.19
 msgid  "Click <emph>OK</emph>."
+msgstr ""
+
+#: guide/indices_toc.xhp#PAR_ID3146896.20
+msgid  "If you want to use a different paragraph style as a table of contents entry, select the <item type=\"menuitem\">Additional Styles</item>            <emph/>check box in the <item type=\"menuitem\">Create from</item> area, and then click the (<item type=\"menuitem\">...</item>) button next to the check box. In the <item type=\"menuitem\">Assign Styles</item> dialog, click the style in the list, and then click the <item type=\"menuitem\">>></item>            <emph/>or the <item type=\"menuitem\"><<</item>            <emph/>button to define the outline level for the paragraph style."
 msgstr ""
 
 #: guide/indices_toc.xhp#HD_ID3153148.21
@@ -18181,6 +18233,10 @@ msgstr ""
 
 #: guide/captions.xhp#PAR_ID3155586.25
 msgid  "Choose <emph>Insert - Caption</emph>."
+msgstr ""
+
+#: guide/captions.xhp#PAR_ID3147765.26
+msgid  "Select the options that you want, and then click <item type=\"menuitem\">OK</item>. If you want, you can also enter different text in the <item type=\"menuitem\">Category</item>               <emph/>box, for example <item type=\"literal\">Figure</item>."
 msgstr ""
 
 #: guide/captions.xhp#PAR_ID3147254.27
@@ -18343,6 +18399,10 @@ msgstr ""
 msgid  "Select the text, text with graphics, table, or field that you want to save as an AutoText entry. A graphic can only be stored if it is anchored as a character and is preceded and followed by at least one text character."
 msgstr ""
 
+#: guide/autotext.xhp#PAR_ID3155581.57
+msgid  "Choose<emph/>               <item type=\"menuitem\">Edit - AutoText</item>."
+msgstr ""
+
 #: guide/autotext.xhp#PAR_ID3147761.58
 msgid  "Select the category where you want to store the AutoText."
 msgstr ""
@@ -18369,6 +18429,14 @@ msgstr ""
 
 #: guide/autotext.xhp#PAR_ID3145615.28
 msgid  "Choose <link href=\"text/swriter/01/02120000.xhp\" name=\"Edit - AutoText\"><emph>Edit - AutoText</emph></link>."
+msgstr ""
+
+#: guide/autotext.xhp#PAR_ID3145644.38
+msgid  "Select the AutoText that you want to insert, and then click<emph/>               <item type=\"menuitem\">Insert</item>."
+msgstr ""
+
+#: guide/autotext.xhp#PAR_ID3145668.30
+msgid  "You can also type the shortcut for an AutoText entry, and then press F3, or click the arrow next to the <item type=\"menuitem\">AutoText</item>         <emph/>icon on the <item type=\"menuitem\">Insert</item> bar, and then choose an AutoText entry. "
 msgstr ""
 
 #: guide/autotext.xhp#PAR_ID3155090.43
@@ -18641,6 +18709,10 @@ msgstr ""
 
 #: guide/fields_userdata.xhp#PAR_ID3145273.103
 msgid  "Choose <emph>Insert - Section</emph>."
+msgstr ""
+
+#: guide/fields_userdata.xhp#PAR_ID3145297.104
+msgid  "In the <item type=\"menuitem\">Hide</item>               <emph/>area, select the <item type=\"menuitem\">Hide</item> check box."
 msgstr ""
 
 #: guide/fields_userdata.xhp#PAR_ID3155533.105
@@ -19431,6 +19503,10 @@ msgstr ""
 msgid  "Select the table cells that you want to modify."
 msgstr ""
 
+#: guide/border_object.xhp#PAR_ID3156344.9
+msgid  "Choose <item type=\"menuitem\">Format - (object name) – Borders</item>.<br/>Replace (object name) with the actual name of the object type you selected."
+msgstr ""
+
 #: guide/border_object.xhp#PAR_ID3148797.11
 msgid  "In the <emph>User-defined</emph> area select the edge(s) that you want to appear in a common layout. Click on an edge in the preview to toggle the selection of an edge."
 msgstr ""
@@ -19791,6 +19867,10 @@ msgstr ""
 msgid  "Click in the document where you want to insert the formula, and then press F2."
 msgstr ""
 
+#: guide/calculate_intext.xhp#PAR_ID3156382.28
+msgid  "Click the <item type=\"menuitem\">Formula</item>               <emph/>icon, and choose \"Mean\" from the Statistical Functions list."
+msgstr ""
+
 #: guide/calculate_intext.xhp#PAR_ID3149692.30
 msgid  "Type the three numbers, separated by vertical slashes (|)."
 msgstr ""
@@ -19823,6 +19903,10 @@ msgstr ""
 msgid  "Create an <link href=\"text/swriter/01/04120210.xhp\" name=\"index in each individual document\">index in each individual document</link>, copy and paste the indexes into a single document, and then edit them."
 msgstr ""
 
+#: guide/indices_multidoc.xhp#PAR_ID3147118.45
+msgid  "Select each index, choose <link href=\"text/swriter/01/04020000.xhp\" name=\"Insert - Section\"><item type=\"menuitem\">Insert - Section</item></link>, and then enter a name for the index. In a separate document, choose<emph/>               <item type=\"menuitem\">Insert - Section</item>, select <item type=\"menuitem\">Link</item>, click the browse button (<item type=\"menuitem\">...</item>), and then locate and insert a named index section."
+msgstr ""
+
 #: guide/indices_multidoc.xhp#PAR_ID3150230.46
 msgid  "Create a <link href=\"text/shared/01/01010001.xhp\" name=\"master document\">master document</link>, add as subdocuments the files that you want to include in the index, and then choose <emph>Insert - Index and Tables - Indexes and Tables</emph>."
 msgstr ""
@@ -19841,6 +19925,10 @@ msgstr ""
 
 #: guide/indices_edit.xhp#PAR_ID3155856.57
 msgid  "Place the cursor in the index or table of contents."
+msgstr ""
+
+#: guide/indices_edit.xhp#PAR_ID3155871.59
+msgid  "If you cannot place your cursor in the index or table of contents, choose <item type=\"menuitem\"><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Writer - Formatting Aids</item>, and then select<emph/>               <item type=\"menuitem\">Enable</item> in the<emph/>               <item type=\"menuitem\">Cursor in protected areas</item> section."
 msgstr ""
 
 #: guide/indices_edit.xhp#PAR_ID3154248.58
@@ -19871,6 +19959,14 @@ msgstr ""
 msgid  "Select the drawing object containing the text that you want to animate."
 msgstr ""
 
+#: guide/text_animation.xhp#PAR_ID3155178.20
+msgid  "Choose <item type=\"menuitem\">Format - Object - Text Attributes</item>, and then click the<emph/>               <item type=\"menuitem\">Text Animation</item> tab."
+msgstr ""
+
+#: guide/text_animation.xhp#PAR_ID3149819.21
+msgid  "In the <item type=\"menuitem\">Effect</item>               <emph/>box, select the animation that you want."
+msgstr ""
+
 #: guide/text_animation.xhp#PAR_ID3145786.22
 msgid  "Set the properties of the effect, and then click <emph>OK</emph>."
 msgstr ""
@@ -19895,8 +19991,24 @@ msgstr ""
 msgid  "Choose <emph>Insert - Frame</emph>."
 msgstr ""
 
+#: guide/text_centervert.xhp#PAR_ID3152765.82
+msgid  "In the <item type=\"menuitem\">Anchor</item>               <emph/>area, select <item type=\"menuitem\">To page</item>."
+msgstr ""
+
+#: guide/text_centervert.xhp#PAR_ID3149844.95
+msgid  "In the <item type=\"menuitem\">Size</item>               <emph/>area, set the dimensions of the frame."
+msgstr ""
+
+#: guide/text_centervert.xhp#PAR_ID3156114.96
+msgid  "In the <item type=\"menuitem\">Position</item>               <emph/>area, select \"Center\" in the <item type=\"menuitem\">Horizontal</item>               <emph/>and <item type=\"menuitem\">Vertical</item>               <emph/>boxes."
+msgstr ""
+
 #: guide/text_centervert.xhp#PAR_ID3153410.97
 msgid  "Click <emph>OK</emph>."
+msgstr ""
+
+#: guide/text_centervert.xhp#PAR_ID3149615.84
+msgid  "To hide the borders of the frame, select the frame, and then choose <item type=\"menuitem\">Format - Frame/Object</item>. Click the <item type=\"menuitem\">Borders</item> tab, and then click in the<emph/>         <item type=\"menuitem\">Set No Border</item> box in the<emph/>         <item type=\"menuitem\">Line Arrangement</item> area."
 msgstr ""
 
 #: guide/text_centervert.xhp#PAR_ID3145098.83
@@ -19991,6 +20103,22 @@ msgstr ""
 msgid  "Choose <emph>Tools - Outline Numbering</emph>."
 msgstr ""
 
+#: guide/header_with_chapter.xhp#PAR_ID3155898.25
+msgid  "In the <item type=\"menuitem\">Style</item>               <emph/>box, select the paragraph style that you want to use for chapter titles, for example, \"Heading 1\"."
+msgstr ""
+
+#: guide/header_with_chapter.xhp#PAR_ID3147124.26
+msgid  "Select the numbering style for the chapter titles in the <item type=\"menuitem\">Number</item>               <emph/>box, for example, \"1,2,3...\"."
+msgstr ""
+
+#: guide/header_with_chapter.xhp#PAR_ID3150219.27
+msgid  "Type \"Chapter\" followed by a space in the <item type=\"menuitem\">Before</item>               <emph/>box."
+msgstr ""
+
+#: guide/header_with_chapter.xhp#PAR_ID3150245.28
+msgid  "Enter a space in the <item type=\"menuitem\">After</item>               <emph/>box."
+msgstr ""
+
 #: guide/header_with_chapter.xhp#PAR_ID3150949.29
 msgid  "Click <emph>OK</emph>."
 msgstr ""
@@ -20003,8 +20131,20 @@ msgstr ""
 msgid  "Apply the paragraph style that you defined for chapter titles to the chapter headings in your document."
 msgstr ""
 
+#: guide/header_with_chapter.xhp#PAR_ID3153729.6
+msgid  "Choose <item type=\"menuitem\">Insert - Header</item>               <emph/>or <item type=\"menuitem\">Insert - Footer</item>, and then select the page style for the current page from the submenu."
+msgstr ""
+
 #: guide/header_with_chapter.xhp#PAR_ID3153762.7
 msgid  "Click in the header or footer."
+msgstr ""
+
+#: guide/header_with_chapter.xhp#PAR_ID3146863.9
+msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item> and click the<emph/>               <item type=\"menuitem\">Document</item> tab."
+msgstr ""
+
+#: guide/header_with_chapter.xhp#PAR_ID3153175.10
+msgid  "Click \"Chapter\" in the <item type=\"menuitem\">Type</item>               <emph/>list and \"Chapter number and name\" in the <item type=\"menuitem\">Format</item>               <emph/>list."
 msgstr ""
 
 #: guide/header_with_chapter.xhp#PAR_ID3147065.11
@@ -20179,6 +20319,10 @@ msgstr ""
 msgid  "On the <emph>Index/Table</emph> tab, select \"Alphabetical Index\" in the <emph>Type</emph> box."
 msgstr ""
 
+#: guide/indices_index.xhp#PAR_ID3147114.36
+msgid  "If you want to use a concordance file, select <item type=\"menuitem\">Concordance file</item> in the <item type=\"menuitem\">Options</item>               <emph/>area, click the <item type=\"menuitem\">File</item> button, and then locate an existing file or create a new concordance file."
+msgstr ""
+
 #: guide/indices_index.xhp#PAR_ID3150223.28
 msgid  "Set the formatting options for the index, either on the current tab, or on any of the other tabs of this dialog. For example, if you want to use single letter headings in your index, click the <emph>Entries</emph> tab, and then select <emph>Alphabetical delimiter</emph>. To change the formatting of levels in the index, click the <emph>Styles</emph> tab. "
 msgstr ""
@@ -20291,6 +20435,14 @@ msgstr ""
 msgid  "Do one of the following:"
 msgstr ""
 
+#: guide/dragdroptext.xhp#PAR_ID3154236.13
+msgid  "To move the selected text, drag the text to a different location in the document and release. While you drag, the mouse pointer changes to include a gray box.<br/><image id=\"img_id3153148\" src=\"res/helpimg/movedata.png\" width=\"0.3335in\" height=\"0.3335in\"><alt id=\"alt_id3153148\">Mouse cursor moving data</alt></image>"
+msgstr ""
+
+#: guide/dragdroptext.xhp#PAR_ID3154257.14
+msgid  "To copy the selected text, hold down <switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline> while you drag. The mouse pointer changes to include a plus sign (+).<br/><image id=\"img_id3152868\" src=\"res/helpimg/copydata.png\" width=\"0.3335in\" height=\"0.3335in\"><alt id=\"alt_id3152868\">Mouse cursor copying data</alt></image>"
+msgstr ""
+
 #: guide/change_header.xhp#TIT
 msgid  "Creating a Page Style Based on the Current Page"
 msgstr ""
@@ -20319,6 +20471,10 @@ msgstr ""
 msgid  "Click the <emph>New Style from Selection</emph> icon and select <emph>New Styles from Selection</emph> from the submenu."
 msgstr ""
 
+#: guide/change_header.xhp#PAR_ID3153153.31
+msgid  "Type a name for the page in the <item type=\"menuitem\">Style name</item>               <emph/>box, and then click <item type=\"menuitem\">OK</item>."
+msgstr ""
+
 #: guide/change_header.xhp#PAR_ID3153184.32
 msgid  "Double-click the name in the list to apply the style to the current page. "
 msgstr ""
@@ -20333,6 +20489,10 @@ msgstr ""
 
 #: guide/change_header.xhp#PAR_ID3155592.25
 msgid  "Choose <emph>Insert - Manual Break</emph>."
+msgstr ""
+
+#: guide/change_header.xhp#PAR_ID3147771.28
+msgid  "In the <item type=\"menuitem\">Type</item>               <emph/>area, select <item type=\"menuitem\">Page break</item> and then select “Default” from the <item type=\"menuitem\">Style</item>               <emph/>box."
 msgstr ""
 
 #: guide/change_header.xhp#PAR_ID3147810.29
@@ -20447,12 +20607,20 @@ msgstr ""
 msgid  "Click the <emph>Numbering</emph> tab."
 msgstr ""
 
+#: guide/numbering_lines.xhp#PAR_ID3150956.16
+msgid  "In the <item type=\"menuitem\">Line Numbering</item>               <emph/>area, clear the <item type=\"menuitem\">Include this paragraph in line numbering</item>               <emph/>check box."
+msgstr ""
+
 #: guide/numbering_lines.xhp#PAR_ID3150520.22
 msgid  "Click <emph>OK</emph>."
 msgstr ""
 
 #: guide/numbering_lines.xhp#PAR_ID3151077.18
 msgid  "Select the paragraph(s) where you want to add the line numbers."
+msgstr ""
+
+#: guide/numbering_lines.xhp#PAR_ID3151096.19
+msgid  "Choose <item type=\"menuitem\">Format - Paragraph</item>, and then click the <item type=\"menuitem\">Numbering</item>               <emph/>tab."
 msgstr ""
 
 #: guide/numbering_lines.xhp#PAR_ID3153733.23
@@ -20473,6 +20641,22 @@ msgstr ""
 
 #: guide/numbering_lines.xhp#PAR_ID3150703.26
 msgid  "Click in a paragraph."
+msgstr ""
+
+#: guide/numbering_lines.xhp#PAR_ID3150721.27
+msgid  "Choose <item type=\"menuitem\">Format - Paragraph</item>, and then click the <item type=\"menuitem\">Numbering</item>               <emph/>tab."
+msgstr ""
+
+#: guide/numbering_lines.xhp#PAR_ID3148389.28
+msgid  "Select the <item type=\"menuitem\">Include this paragraph in line numbering</item>               <emph/>check box."
+msgstr ""
+
+#: guide/numbering_lines.xhp#PAR_ID3148414.29
+msgid  "Select <item type=\"menuitem\">Restart at the paragraph</item>               <emph/>check box."
+msgstr ""
+
+#: guide/numbering_lines.xhp#PAR_ID3153779.30
+msgid  "Enter a line number in the <item type=\"menuitem\">Start with</item>               <emph/>box."
 msgstr ""
 
 #: guide/numbering_lines.xhp#PAR_ID3153804.31
@@ -20583,6 +20767,18 @@ msgstr ""
 msgid  "An input field is a variable that you can click in a document to open a dialog where you can edit the variable."
 msgstr ""
 
+#: guide/fields_enter.xhp#PAR_ID3145776.3
+msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item>               <emph/>and click the <item type=\"menuitem\">Functions</item> tab."
+msgstr ""
+
+#: guide/fields_enter.xhp#PAR_ID3155620.5
+msgid  "Click “Input field”<emph/>in the <item type=\"menuitem\">Type</item> list."
+msgstr ""
+
+#: guide/fields_enter.xhp#PAR_ID3154257.6
+msgid  "Click <item type=\"menuitem\">Insert</item>               <emph/>and type the text for the variable."
+msgstr ""
+
 #: guide/fields_enter.xhp#PAR_ID3155888.7
 msgid  "Click <emph>OK</emph>."
 msgstr ""
@@ -20615,6 +20811,10 @@ msgstr ""
 msgid  "Choose <emph>Edit - Paste Special</emph>."
 msgstr ""
 
+#: guide/field_convert.xhp#PAR_ID3154262.10
+msgid  "Click \"Unformatted text\" in the<emph/>               <item type=\"menuitem\">Selection</item> list, and then click<emph/>               <item type=\"menuitem\">OK</item>."
+msgstr ""
+
 #: guide/field_convert.xhp#PAR_ID3157551.11
 msgid  "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Paste Special</link>"
 msgstr ""
@@ -20645,6 +20845,10 @@ msgstr ""
 
 #: guide/header_footer.xhp#PAR_ID3147119.43
 msgid  "To add a footer to a page, choose <emph>Insert - Footer</emph>, and then select the page style for the current page from the submenu."
+msgstr ""
+
+#: guide/header_footer.xhp#PAR_ID3153726.40
+msgid  "You can also choose <item type=\"menuitem\">Format - Page</item>, click the <item type=\"menuitem\">Header</item> or <item type=\"menuitem\">Footer</item>               <emph/>tab, and then select <item type=\"menuitem\">Header on</item>               <emph/>or <item type=\"menuitem\">Footer on</item>. Clear the <item type=\"menuitem\">Same content left/right</item> check box if you want to define different headers and footers for even and odd pages."
 msgstr ""
 
 #: guide/header_footer.xhp#PAR_ID3146876.36
@@ -20695,6 +20899,10 @@ msgstr ""
 msgid  "Choose <emph>Insert - Section</emph>."
 msgstr ""
 
+#: guide/section_insert.xhp#PAR_ID3153404.29
+msgid  "In the <item type=\"menuitem\">New Section</item>               <emph/>box, type a name for the section."
+msgstr ""
+
 #: guide/section_insert.xhp#PAR_ID3153127.25
 msgid  "Set the options for the section, and then click <emph>Insert</emph>."
 msgstr ""
@@ -20723,8 +20931,24 @@ msgstr ""
 msgid  "Choose <emph>Insert - Section</emph>."
 msgstr ""
 
+#: guide/section_insert.xhp#PAR_ID3153363.34
+msgid  "In the <item type=\"menuitem\">New Section</item>               <emph/>box, type a name for the section."
+msgstr ""
+
+#: guide/section_insert.xhp#PAR_ID3153387.35
+msgid  "In the <item type=\"menuitem\">Link</item>               <emph/>area, select the <item type=\"menuitem\">Link</item>               <emph/>check box. <switchinline select=\"sys\"><caseinline select=\"WIN\">Under Windows, you can also select the <item type=\"menuitem\">DDE</item> check box to automatically update the contents of the section when the section in the source document is changed. </caseinline></switchinline>"
+msgstr ""
+
+#: guide/section_insert.xhp#PAR_ID3154852.36
+msgid  "Click the browse button (<item type=\"menuitem\">...</item>) next to the <item type=\"menuitem\">File name</item>               <emph/>box."
+msgstr ""
+
 #: guide/section_insert.xhp#PAR_ID3155882.37
 msgid  "Locate the document containing the section that you want to link to, and then click <emph>Insert</emph>."
+msgstr ""
+
+#: guide/section_insert.xhp#PAR_ID3149978.38
+msgid  "In the <item type=\"menuitem\">Section</item>               <emph/>box, select the section that you want to insert."
 msgstr ""
 
 #: guide/section_insert.xhp#PAR_ID3150003.39
@@ -20829,6 +21053,10 @@ msgstr ""
 
 #: guide/pagebackground.xhp#PAR_IDN108C9
 msgid  "Select <emph>Page break</emph>."
+msgstr ""
+
+#: guide/pagebackground.xhp#PAR_IDN108D1
+msgid  "In the <item type=\"menuitem\">Style</item>               <emph/>box, select a page style that uses the page background."
 msgstr ""
 
 #: guide/pagebackground.xhp#PAR_IDN108DB
@@ -20967,6 +21195,10 @@ msgstr ""
 msgid  "In the Navigator, select the index, then open the context menu in the Navigator and select <emph>Index - Read-only</emph>."
 msgstr ""
 
+#: guide/protection.xhp#PAR_IDN10B8C
+msgid  "         <embedvar href=\"text/shared/guide/digital_signatures.xhp#digital_signatures\"/>      "
+msgstr ""
+
 #: guide/protection.xhp#PAR_ID7858516
 msgid  "<link href=\"text/shared/guide/protection.xhp\">Protecting Other Contents</link>"
 msgstr ""
@@ -20993,6 +21225,10 @@ msgstr ""
 
 #: guide/hyperlinks.xhp#PAR_ID3148846.23
 msgid  "On the Standard bar, click the <emph>Navigator</emph> icon."
+msgstr ""
+
+#: guide/hyperlinks.xhp#PAR_ID3156108.25
+msgid  "Click the arrow next to the <item type=\"menuitem\">Drag Mode</item> icon, and ensure that <item type=\"menuitem\">Insert as Hyperlink</item>               <emph/>is selected."
 msgstr ""
 
 #: guide/hyperlinks.xhp#PAR_ID3153396.31
@@ -21047,6 +21283,10 @@ msgstr ""
 msgid  "You can use different headers and footers on different pages in your document, so long as the pages use different page styles. $[officename] provides several predefined page styles, such as <emph>First page</emph>, <emph>Left page</emph> and <emph>Right page</emph>, or you can create a custom page style."
 msgstr ""
 
+#: guide/header_pagestyles.xhp#PAR_ID3147105.27
+msgid  "You can also use the mirrored page layout if you want to add a header to a page style that has different inner and outer page margins. To apply this option to a page style, choose <item type=\"menuitem\">Format - Page</item>, click the<emph/>         <item type=\"menuitem\">Page</item> tab, and in the<emph/>         <item type=\"menuitem\">Layout settings</item> area, choose “Mirrored” in the<emph/>         <item type=\"menuitem\">Page layout</item> box."
+msgstr ""
+
 #: guide/header_pagestyles.xhp#PAR_ID3150224.28
 msgid  "For example, you can use page styles to define different headers for even and odd pages in a document."
 msgstr ""
@@ -21063,12 +21303,36 @@ msgstr ""
 msgid  "Right-click \"Right Page\" in the list of page styles and choose <emph>Modify</emph>."
 msgstr ""
 
+#: guide/header_pagestyles.xhp#PAR_ID3150536.33
+msgid  "In the <item type=\"menuitem\">Page Styles</item> dialog, click the <item type=\"menuitem\">Header</item>               <emph/>tab."
+msgstr ""
+
+#: guide/header_pagestyles.xhp#PAR_ID3153750.34
+msgid  "Select<emph/>               <item type=\"menuitem\">Header on</item> and click the <item type=\"menuitem\">Organizer</item> tab."
+msgstr ""
+
+#: guide/header_pagestyles.xhp#PAR_ID3146865.35
+msgid  "In the <item type=\"menuitem\">Next Style</item>               <emph/>box, select \"Left Page\"."
+msgstr ""
+
 #: guide/header_pagestyles.xhp#PAR_ID3146889.36
 msgid  "Click <emph>OK</emph>."
 msgstr ""
 
 #: guide/header_pagestyles.xhp#PAR_ID3150714.37
 msgid  "In the <emph>Styles and Formatting</emph> window, right-click \"Left Page\" in the list of page styles and choose <emph>Modify</emph>."
+msgstr ""
+
+#: guide/header_pagestyles.xhp#PAR_ID3150748.38
+msgid  "In the <item type=\"menuitem\">Page Styles</item> dialog, click the <item type=\"menuitem\">Header</item>               <emph/>tab."
+msgstr ""
+
+#: guide/header_pagestyles.xhp#PAR_ID3153172.39
+msgid  "Select<emph/>               <item type=\"menuitem\">Header on</item> and click the <item type=\"menuitem\">Organizer</item> tab."
+msgstr ""
+
+#: guide/header_pagestyles.xhp#PAR_ID3147061.40
+msgid  "In the <item type=\"menuitem\">Next Style</item>               <emph/>box, select \"Right Page\"."
 msgstr ""
 
 #: guide/header_pagestyles.xhp#PAR_ID3147086.41
@@ -21109,6 +21373,10 @@ msgstr ""
 
 #: guide/references_modify.xhp#PAR_ID3145101.7
 msgid  "Set the options that you want, and then click <emph>OK</emph>."
+msgstr ""
+
+#: guide/references_modify.xhp#PAR_ID3154255.5
+msgid  "Use the arrow buttons in the <item type=\"menuitem\">Edit Fields</item>         <emph/>dialog to browse through the cross-references in the current document."
 msgstr ""
 
 #: guide/words_count.xhp#TIT
@@ -21191,6 +21459,14 @@ msgstr ""
 msgid  "Choose <emph>Insert - Record</emph>."
 msgstr ""
 
+#: guide/indices_literature.xhp#PAR_ID3147123.65
+msgid  "Type a name for the bibliography entry in the <item type=\"menuitem\">Short name</item>               <emph/>box, and then add additional information to the record in the remaining boxes."
+msgstr ""
+
+#: guide/indices_literature.xhp#PAR_ID3150219.66
+msgid  "Close the<emph/>               <item type=\"menuitem\">Bibliography Database</item> window. "
+msgstr ""
+
 #: guide/indices_literature.xhp#HD_ID3150242.67
 msgid  "To Store Bibliographic Information in an Individual Document"
 msgstr ""
@@ -21207,8 +21483,20 @@ msgstr ""
 msgid  "Select <emph>From document content</emph> and click <emph>New</emph>."
 msgstr ""
 
+#: guide/indices_literature.xhp#PAR_ID3153738.70
+msgid  "Type a name for the bibliography entry in the <item type=\"menuitem\">Short name</item>               <emph/>box."
+msgstr ""
+
+#: guide/indices_literature.xhp#PAR_ID3153763.71
+msgid  "Select the publication source for the record in the <item type=\"menuitem\">Type</item>               <emph/>box, and then add additional information in the remaining boxes."
+msgstr ""
+
 #: guide/indices_literature.xhp#PAR_ID3146873.72
 msgid  "Click <emph>OK</emph>."
+msgstr ""
+
+#: guide/indices_literature.xhp#PAR_ID3146897.73
+msgid  "In the <item type=\"menuitem\">Insert Bibliography Entry</item>               <emph/>dialog, click <item type=\"menuitem\">Insert</item>, and then <item type=\"menuitem\">Close</item>."
 msgstr ""
 
 #: guide/indices_literature.xhp#HD_ID3150741.74
@@ -21225,6 +21513,10 @@ msgstr ""
 
 #: guide/indices_literature.xhp#PAR_ID3153231.53
 msgid  "Select <emph>From bibliography database</emph>."
+msgstr ""
+
+#: guide/indices_literature.xhp#PAR_ID3147059.54
+msgid  "Select the name of the bibliography entry that you want to insert in the <item type=\"menuitem\">Short name</item>               <emph/>box."
 msgstr ""
 
 #: guide/indices_literature.xhp#PAR_ID3147085.76
@@ -21335,6 +21627,10 @@ msgstr ""
 msgid  "Choose <emph>File - Send - Create HTML Document</emph>."
 msgstr ""
 
+#: guide/send2html.xhp#PAR_ID3149281.7
+msgid  "In the <item type=\"menuitem\">Styles</item>               <emph/>box, select the paragraph style that you want to use to generate a new HTML page."
+msgstr ""
+
 #: guide/send2html.xhp#PAR_ID3153407.9
 msgid  "Enter a path and a name for the HTML document, and then click <emph>Save</emph>."
 msgstr ""
@@ -21367,8 +21663,20 @@ msgstr ""
 msgid  "Choose <emph>Insert - Caption</emph>."
 msgstr ""
 
+#: guide/captions_numbers.xhp#PAR_ID3150527.19
+msgid  "Select a caption title from the <item type=\"menuitem\">Category</item>               <emph/>box, and select a numbering style in the <item type=\"menuitem\">Numbering</item>               <emph/>box. <br/>You also can enter a caption text in this dialog. If you want, enter text in the <item type=\"menuitem\">Caption</item>               <emph/>box."
+msgstr ""
+
 #: guide/captions_numbers.xhp#PAR_ID3153166.39
 msgid  "Click <emph>Options</emph>."
+msgstr ""
+
+#: guide/captions_numbers.xhp#PAR_ID3153190.45
+msgid  "In the <item type=\"menuitem\">Level</item>               <emph/>box, select the number of heading levels to include in the chapter number."
+msgstr ""
+
+#: guide/captions_numbers.xhp#PAR_ID3155553.46
+msgid  "Type the character that you want to separate the chapter number(s) from the caption number in the<emph/>               <item type=\"menuitem\">Separator</item> box, and then click <item type=\"menuitem\">OK</item>."
 msgstr ""
 
 #: guide/captions_numbers.xhp#PAR_ID3155586.40
@@ -21473,6 +21781,10 @@ msgstr ""
 
 #: guide/calculate_clipboard.xhp#PAR_ID3155496.38
 msgid  "Choose <emph>Tools - Calculate</emph>, or press <switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Plus Sign (+)."
+msgstr ""
+
+#: guide/calculate_clipboard.xhp#PAR_ID5172582
+msgid  "Place the cursor where you want to insert the result of the formula, and then choose <item type=\"menuitem\">Edit - Paste</item>, or press <switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+V.<br/>The selected formula is replaced by the result."
 msgstr ""
 
 #: guide/registertrue.xhp#TIT
@@ -21679,6 +21991,10 @@ msgstr ""
 msgid  "Anchors the selected item to the surrounding frame."
 msgstr ""
 
+#: guide/anchor_object.xhp#PAR_ID3145715.59
+msgid  "When you insert an object, graphic, or frame, an anchor icon appears where the item is anchored. You can position an anchored item by dragging the item to another location. To change the anchoring options of an item, right-click the item, and then choose an option from the <item type=\"menuitem\">Anchor</item>         <emph/>submenu."
+msgstr ""
+
 #: guide/conditional_text2.xhp#TIT
 msgid  "Conditional Text for Page Counts"
 msgstr ""
@@ -21705,6 +22021,10 @@ msgstr ""
 
 #: guide/conditional_text2.xhp#PAR_ID3150537.6
 msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item>, and then click the <item type=\"menuitem\">Functions</item> tab."
+msgstr ""
+
+#: guide/conditional_text2.xhp#PAR_ID3153166.9
+msgid  "Click \"Conditional text\" in the <item type=\"menuitem\">Type</item>               <emph/>list."
 msgstr ""
 
 #: guide/conditional_text2.xhp#PAR_ID3145256.7
@@ -21749,6 +22069,14 @@ msgstr ""
 
 #: guide/stylist_fromselect.xhp#PAR_ID3153119.37
 msgid  "Click in the document where you want to copy the style from, for example, in a paragraph that you applied manual formatting to."
+msgstr ""
+
+#: guide/stylist_fromselect.xhp#PAR_ID3153138.38
+msgid  "Click the arrow next to the <item type=\"menuitem\">New Style from Selection</item> icon and choose <item type=\"menuitem\">New Style from Selection</item>               <emph/>from the submenu"
+msgstr ""
+
+#: guide/stylist_fromselect.xhp#PAR_ID3156260.43
+msgid  "Type a name in the <item type=\"menuitem\">Style Name</item>               <emph/>box."
 msgstr ""
 
 #: guide/stylist_fromselect.xhp#PAR_ID3154411.44
@@ -22087,6 +22415,10 @@ msgstr ""
 msgid  "You can only rotate text that is contained in a drawing object."
 msgstr ""
 
+#: guide/text_rotate.xhp#PAR_ID3153130.67
+msgid  "Choose <item type=\"menuitem\">View - Toolbars- Drawing</item> to open the <item type=\"menuitem\">Drawing</item>               <emph/>toolbar."
+msgstr ""
+
 #: guide/text_rotate.xhp#PAR_ID3149866.68
 msgid  "Select the <link href=\"text/shared/02/01140000.xhp\" name=\"Text\"><item type=\"menuitem\">Text</item></link> icon <image id=\"img_id3149600\" src=\"res/commandimagelist/sc_texttoolbox.png\" width=\"0.222in\" height=\"0.222in\"><alt id=\"alt_id3149600\">Icon</alt></image>."
 msgstr ""
@@ -22137,6 +22469,14 @@ msgstr ""
 
 #: guide/footnote_usage.xhp#PAR_ID3147120.26
 msgid  "Choose <link href=\"text/swriter/01/04030000.xhp\" name=\"Insert - Footnote\"><emph>Insert - Footnote/Endnote</emph></link>."
+msgstr ""
+
+#: guide/footnote_usage.xhp#PAR_ID3150937.34
+msgid  "In the <item type=\"menuitem\">Numbering</item>               <emph/>area, select the format that you want to use. If you select <item type=\"menuitem\">Character</item>, click the browse button (<item type=\"menuitem\">...</item>) and select the character that you want to use for the footnote."
+msgstr ""
+
+#: guide/footnote_usage.xhp#PAR_ID3150508.35
+msgid  "In the <item type=\"menuitem\">Type</item>               <emph/>area, select <item type=\"menuitem\">Footnote</item>               <emph/>or <item type=\"menuitem\">Endnote</item>."
 msgstr ""
 
 #: guide/footnote_usage.xhp#PAR_ID3150704.36
@@ -22207,8 +22547,16 @@ msgstr ""
 msgid  "You can apply direct formatting to the text in a header or footer. You can also adjust the spacing of the text relative to the header or footer frame or apply a border to the header or footer."
 msgstr ""
 
+#: guide/header_with_line.xhp#PAR_ID3155873.22
+msgid  "Choose <item type=\"menuitem\">Format - Page</item>               <emph/>and select the <item type=\"menuitem\">Header</item>               <emph/>or <item type=\"menuitem\">Footer</item>               <emph/>tab."
+msgstr ""
+
 #: guide/header_with_line.xhp#PAR_ID3147109.27
 msgid  "Set the spacing options that you want to use."
+msgstr ""
+
+#: guide/header_with_line.xhp#PAR_ID3147128.23
+msgid  "To add a border or a shadow to the header or the footer, click <item type=\"menuitem\">More</item>. The <item type=\"menuitem\">Border/Background</item>               <emph/>dialog opens."
 msgstr ""
 
 #: guide/header_with_line.xhp#PAR_ID3150520.24
@@ -22229,6 +22577,10 @@ msgstr ""
 
 #: guide/indices_delete.xhp#HD_ID3155186.11
 msgid  "<variable id=\"indices_delete\"><link href=\"text/swriter/guide/indices_delete.xhp\" name=\"Editing or Deleting Index and Table Entries\">Editing or Deleting Index and Table Entries</link></variable>"
+msgstr ""
+
+#: guide/indices_delete.xhp#PAR_ID3155855.12
+msgid  "Index entries are inserted as fields into your document. To view fields in your document, choose <item type=\"menuitem\">View</item>         <emph/>and ensure that <item type=\"menuitem\">Field Shadings</item>         <emph/>is selected. "
 msgstr ""
 
 #: guide/indices_delete.xhp#PAR_ID3155507.13
@@ -22447,6 +22799,18 @@ msgstr ""
 msgid  "Type a number in each cell of the column, but leave the last cell in the column empty."
 msgstr ""
 
+#: guide/calculate_intable.xhp#PAR_ID3154222.6
+msgid  "Place the cursor in the last cell of the column, and then click the <item type=\"menuitem\">Sum</item> icon on the <item type=\"menuitem\">Table Bar</item>.<br/>The<emph/>               <item type=\"menuitem\">Formula Bar</item> appears with the entry \"=sum\"."
+msgstr ""
+
+#: guide/calculate_intable.xhp#PAR_ID3147775.15
+msgid  "Click in the first cell of the series you want to sum up, drag to the final cell, and then release.<br/>$[officename] inserts a formula for calculating the sum of the values in the current column."
+msgstr ""
+
+#: guide/calculate_intable.xhp#PAR_ID3150507.8
+msgid  "Press Enter, or click <emph>Apply</emph> in the Formula bar. <br/>The sum of the values in the current column is entered in the cell."
+msgstr ""
+
 #: guide/calculate_intable.xhp#PAR_ID3150533.10
 msgid  "If you enter a different number anywhere in the column, the sum is updated as soon as you click in the last column cell."
 msgstr ""
@@ -22539,6 +22903,22 @@ msgstr ""
 msgid  "Choose <emph>Insert - Indexes and Tables - Entry</emph>."
 msgstr ""
 
+#: guide/indices_userdef.xhp#PAR_ID3154248.50
+msgid  "Click the <item type=\"menuitem\">New User-defined Index</item> button next to the <item type=\"menuitem\">Index</item>               <emph/>box."
+msgstr ""
+
+#: guide/indices_userdef.xhp#PAR_ID3155886.51
+msgid  "Type a name for the index in the <item type=\"menuitem\">Name</item>               <emph/>box and click <item type=\"menuitem\">OK</item>."
+msgstr ""
+
+#: guide/indices_userdef.xhp#PAR_ID3147114.52
+msgid  "Click<emph/>               <item type=\"menuitem\">Insert</item> to add the selected word(s) to the new index. "
+msgstr ""
+
+#: guide/indices_userdef.xhp#PAR_ID3147139.53
+msgid  "Click<emph/>               <item type=\"menuitem\">Close</item>."
+msgstr ""
+
 #: guide/indices_userdef.xhp#HD_ID3150231.54
 msgid  "To Insert a User-Defined Index"
 msgstr ""
@@ -22551,12 +22931,20 @@ msgstr ""
 msgid  "Choose <emph>Insert - Indexes and Tables - Indexes and Tables</emph>."
 msgstr ""
 
+#: guide/indices_userdef.xhp#PAR_ID3150509.55
+msgid  "On the <item type=\"menuitem\">Index/Table</item> tab, select the name of the user-defined index that you created in the <item type=\"menuitem\">Type</item>               <emph/>box."
+msgstr ""
+
 #: guide/indices_userdef.xhp#PAR_ID3146881.56
 msgid  "Select any options that you want."
 msgstr ""
 
 #: guide/indices_userdef.xhp#PAR_ID3146897.34
 msgid  "Click <emph>OK</emph>."
+msgstr ""
+
+#: guide/indices_userdef.xhp#PAR_ID3150720.20
+msgid  "If you want to use a different paragraph style as a table of contents entry, select <item type=\"menuitem\">Styles</item>, and then click the (<item type=\"menuitem\">...</item>) button next to the box. Click the style in the list, and then click the <item type=\"menuitem\">>></item>         <emph/>or the <item type=\"menuitem\"><<</item>         <emph/>button to define the outline level for the paragraph style."
 msgstr ""
 
 #: guide/table_sizing.xhp#TIT
@@ -22747,6 +23135,10 @@ msgstr ""
 msgid  "<variable id=\"navigator\"><link href=\"text/swriter/guide/navigator.xhp\" name=\"Navigator for Text Documents\">Navigator for Text Documents</link></variable>"
 msgstr ""
 
+#: guide/navigator.xhp#PAR_ID3153402.2
+msgid  "The Navigator<emph/>displays the different parts of your document, such as headings, tables, frames, objects, or hyperlinks."
+msgstr ""
+
 #: guide/navigator.xhp#PAR_ID3154247.3
 msgid  "To open the <emph>Navigator</emph>, press F5."
 msgstr ""
@@ -22773,6 +23165,14 @@ msgstr ""
 
 #: guide/pagestyles.xhp#PAR_ID3149846.10
 msgid  "$[officename] uses page styles to specify the layout of a page, including the page orientation, background, margins, headers, footers, and text columns. To change the layout of an individual page in a document, you must create and apply a custom page style to the page."
+msgstr ""
+
+#: guide/pagestyles.xhp#PAR_IDN1071A
+msgid  "         <embedvar href=\"text/swriter/guide/pageorientation.xhp#pageorientation\"/>      "
+msgstr ""
+
+#: guide/pagestyles.xhp#PAR_IDN10722
+msgid  "         <embedvar href=\"text/swriter/guide/pagebackground.xhp#pagebackground\"/>      "
 msgstr ""
 
 #: guide/pagestyles.xhp#HD_ID3156109.11
@@ -22819,6 +23219,10 @@ msgstr ""
 msgid  "Click in the page that you want to apply the page style to."
 msgstr ""
 
+#: guide/pagestyles.xhp#PAR_ID3155888.23
+msgid  "Choose <item type=\"menuitem\">Format - Styles and Formatting</item>, and then click the<emph/>               <item type=\"menuitem\">Page Style</item> icon."
+msgstr ""
+
 #: guide/pagestyles.xhp#PAR_ID3148685.24
 msgid  "Double-click a name in the list."
 msgstr ""
@@ -22837,6 +23241,10 @@ msgstr ""
 
 #: guide/pagestyles.xhp#PAR_ID3150235.6
 msgid  "Select <emph>Page break</emph>."
+msgstr ""
+
+#: guide/pagestyles.xhp#PAR_ID3150939.19
+msgid  "In the <item type=\"menuitem\">Style</item>               <emph/>box, select the page style that you want to apply to the page that follows the manual break."
 msgstr ""
 
 #: guide/pagestyles.xhp#PAR_ID3150965.25
@@ -22867,6 +23275,10 @@ msgstr ""
 msgid  "Select all of the paragraphs in the lists."
 msgstr ""
 
+#: guide/join_numbered_lists.xhp#PAR_ID3155911.36
+msgid  "On the <item type=\"menuitem\">Formatting</item> Bar, click the <item type=\"menuitem\">Numbering On/Off</item>               <emph/>icon twice."
+msgstr ""
+
 #: guide/join_numbered_lists.xhp#HD_ID3155870.37
 msgid  "To Create a Numbered List From Non-consecutive Paragraphs:"
 msgstr ""
@@ -22877,6 +23289,10 @@ msgstr ""
 
 #: guide/join_numbered_lists.xhp#PAR_ID3149644.39
 msgid  "Continue to hold down Ctrl, and drag a selection in each numbered paragraph of the lists you want to combine."
+msgstr ""
+
+#: guide/join_numbered_lists.xhp#PAR_ID3145102.40
+msgid  "On the <item type=\"menuitem\">Formatting</item> Bar, click the <item type=\"menuitem\">Numbering On/Off</item>               <emph/>icon twice."
 msgstr ""
 
 #: guide/template_create.xhp#TIT
@@ -22903,8 +23319,20 @@ msgstr ""
 msgid  "Choose <emph>File - Templates - Save</emph>."
 msgstr ""
 
+#: guide/template_create.xhp#PAR_ID3149829.66
+msgid  "In the <item type=\"menuitem\">New Template</item>               <emph/>box, type a name for the new template."
+msgstr ""
+
+#: guide/template_create.xhp#PAR_ID3156098.70
+msgid  "Select a template category in the <item type=\"menuitem\">Categories</item>               <emph/>list."
+msgstr ""
+
 #: guide/template_create.xhp#PAR_ID3149281.71
 msgid  "Click <emph>OK</emph>."
+msgstr ""
+
+#: guide/template_create.xhp#PAR_ID3153404.67
+msgid  "To create a document based on the template, choose<emph/>         <item type=\"menuitem\">File - New - Templates and Documents</item>, select the template, and then click<emph/>         <item type=\"menuitem\">Open</item>."
 msgstr ""
 
 #: guide/template_create.xhp#PAR_ID3149636.68
@@ -23099,6 +23527,10 @@ msgstr ""
 msgid  "To Set Up Alternating Page Styles"
 msgstr ""
 
+#: guide/even_odd_sdw.xhp#PAR_ID3150526.4
+msgid  "Choose <item type=\"menuitem\">Format - Styles and Formatting</item>, and then click the <item type=\"menuitem\">Page Styles</item>               <emph/>icon."
+msgstr ""
+
 #: guide/even_odd_sdw.xhp#PAR_ID3153153.6
 msgid  "In the list of page styles, right-click \"Left Page\" and choose <emph>Modify</emph>."
 msgstr ""
@@ -23121,6 +23553,14 @@ msgstr ""
 
 #: guide/even_odd_sdw.xhp#PAR_ID3155561.10
 msgid  "Go to the first page in your document, and double-click \"Right Page\" in the list of page styles in the Styles and Formatting window."
+msgstr ""
+
+#: guide/even_odd_sdw.xhp#PAR_ID3155588.19
+msgid  "To add a header to one of the page styles, choose<emph/>         <item type=\"menuitem\">Insert - Header</item>, and choose the page style that you want to add the header to. In the header frame, type the text that you want to use as the header."
+msgstr ""
+
+#: guide/even_odd_sdw.xhp#PAR_ID3147772.20
+msgid  "To add a footer to one of the page styles, choose<emph/>         <item type=\"menuitem\">Insert - Footer</item>, and choose the page style that you want to add the footer to. In the footer frame, type the text that you want to use as a footer."
 msgstr ""
 
 #: guide/even_odd_sdw.xhp#PAR_ID3147254.12
@@ -23315,6 +23755,18 @@ msgstr ""
 msgid  "To Add Automatic Numbering to a Heading Style"
 msgstr ""
 
+#: guide/chapter_numbering.xhp#PAR_ID3154255.36
+msgid  "Choose <item type=\"menuitem\">Tools - Outline Numbering</item>, and then click the <item type=\"menuitem\">Numbering</item>               <emph/>tab."
+msgstr ""
+
+#: guide/chapter_numbering.xhp#PAR_ID3155891.37
+msgid  "In the <item type=\"menuitem\">Paragraph Style</item>               <emph/>box, select the heading style that you want to add chapter numbers to."
+msgstr ""
+
+#: guide/chapter_numbering.xhp#PAR_ID3150513.25
+msgid  "In the<emph/>               <item type=\"menuitem\">Numbers</item> box, select the numbering style that you want to use, and then click<emph/>               <item type=\"menuitem\">OK</item>."
+msgstr ""
+
 #: guide/chapter_numbering.xhp#PAR_IDN107CE
 msgid  "To Remove Automatic Outline Numbering From a Heading Paragraph"
 msgstr ""
@@ -23331,8 +23783,16 @@ msgstr ""
 msgid  "To Use a Custom Paragraph Style as a Heading"
 msgstr ""
 
+#: guide/chapter_numbering.xhp#PAR_ID3155571.38
+msgid  "Choose <item type=\"menuitem\">Tools - Outline Numbering</item>, and then click the <item type=\"menuitem\">Numbering</item>               <emph/>tab."
+msgstr ""
+
 #: guide/chapter_numbering.xhp#PAR_ID3147758.27
 msgid  "Select the custom style in the <emph>Paragraph Style</emph> box."
+msgstr ""
+
+#: guide/chapter_numbering.xhp#PAR_ID3147782.39
+msgid  "Click the heading level that you want to assign to the custom paragraph style in the<emph/>               <item type=\"menuitem\">Level</item> list. "
 msgstr ""
 
 #: guide/chapter_numbering.xhp#PAR_ID3147808.28
@@ -23437,6 +23897,10 @@ msgstr ""
 
 #: guide/spellcheck_dialog.xhp#PAR_ID3149836.44
 msgid  "Choose <emph>Tools - Spelling and Grammar</emph>."
+msgstr ""
+
+#: guide/spellcheck_dialog.xhp#PAR_ID3156104.45
+msgid  "When a possible spelling error is encountered, the <item type=\"menuitem\">Spellcheck</item>               <emph/>dialog opens and $[officename] offers some suggested corrections."
 msgstr ""
 
 #: guide/spellcheck_dialog.xhp#PAR_ID3149861.46
@@ -23615,6 +24079,18 @@ msgstr ""
 msgid  "Type the text that you want to assign numbering to, for example, \"Quotation Number \"."
 msgstr ""
 
+#: guide/number_sequence.xhp#PAR_ID3155048.39
+msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item>, and then click the <item type=\"menuitem\">Variables</item>               <emph/>tab."
+msgstr ""
+
+#: guide/number_sequence.xhp#PAR_ID3156240.40
+msgid  "Click \"Number range\" in the <item type=\"menuitem\">Type</item>               <emph/>list."
+msgstr ""
+
+#: guide/number_sequence.xhp#PAR_ID3153363.61
+msgid  "Type \"Quotation\" in the <item type=\"menuitem\">Name</item>               <emph/>box."
+msgstr ""
+
 #: guide/number_sequence.xhp#PAR_ID3153387.62
 msgid  "Do one of the following:"
 msgstr ""
@@ -23769,6 +24245,10 @@ msgstr ""
 
 #: guide/footer_nextpage.xhp#PAR_ID3150955.8
 msgid  "Click 'Page' in the <emph>Type</emph> list and 'Next page' in the <emph>Select</emph> list."
+msgstr ""
+
+#: guide/footer_nextpage.xhp#PAR_ID3150517.9
+msgid  "Click a numbering style in the <item type=\"menuitem\">Format</item>               <emph/>list."
 msgstr ""
 
 #: guide/footer_nextpage.xhp#PAR_ID3150537.10
@@ -23955,6 +24435,10 @@ msgstr ""
 msgid  "Click <emph>More Options</emph> to expand the dialog."
 msgstr ""
 
+#: guide/finding.xhp#PAR_ID9147007
+msgid  "Check <item type=\"menuitem\">Search for Styles</item>.<br/>The <item type=\"menuitem\">Search for</item> text box now is a list box, where you can select any of the Paragraph Styles that are applied in the current document."
+msgstr ""
+
 #: guide/finding.xhp#PAR_ID679342
 msgid  "Select the style to search for, then click <emph>Find</emph> or <emph>Find All</emph>."
 msgstr ""
@@ -24049,6 +24533,10 @@ msgstr ""
 
 #: guide/calculate.xhp#PAR_ID3155547.10
 msgid  "Type the calculation that you want to insert, for example, <item type=\"literal\">=10000/12</item>, and then press Enter."
+msgstr ""
+
+#: guide/calculate.xhp#PAR_ID3155565.11
+msgid  "You can also click the <item type=\"menuitem\">Formula</item>         <emph/>icon on the <item type=\"menuitem\">Formula Bar</item>, and then choose a function for your formula."
 msgstr ""
 
 #: guide/calculate.xhp#PAR_ID8316904
@@ -24335,6 +24823,18 @@ msgstr ""
 msgid  "Choose <emph>Insert - Fields - Other</emph> and click the <emph>Document</emph> tab."
 msgstr ""
 
+#: guide/fields_date.xhp#PAR_ID3153415.5
+msgid  "Click “Date” in the <item type=\"menuitem\">Type</item>               <emph/>list and do one of the following:"
+msgstr ""
+
+#: guide/fields_date.xhp#PAR_ID3155602.6
+msgid  "To insert the date as a field that updates each time you open the document, click ”Date” in the <item type=\"menuitem\">Select</item>               <emph/>list."
+msgstr ""
+
+#: guide/fields_date.xhp#PAR_ID3154241.4
+msgid  "To insert the date as a field that does not update, click “Date (fixed)” in the <item type=\"menuitem\">Select</item>               <emph/>list."
+msgstr ""
+
 #: guide/references.xhp#TIT
 msgid  "Inserting Cross-References"
 msgstr ""
@@ -24381,6 +24881,10 @@ msgstr ""
 
 #: guide/references.xhp#PAR_ID3149614.43
 msgid  "Type a name for the target in the <emph>Name</emph> box. The selected text is displayed in the <emph>Value</emph> box."
+msgstr ""
+
+#: guide/references.xhp#PAR_ID3145110.44
+msgid  "Click <item type=\"menuitem\">Insert</item>. The name of the target is added to the <item type=\"menuitem\">Selection</item>               <emph/>list."
 msgstr ""
 
 #: guide/references.xhp#PAR_ID3156257.45
@@ -24487,8 +24991,16 @@ msgstr ""
 msgid  "Choose <emph>Format - Styles and Formatting</emph>."
 msgstr ""
 
+#: guide/printer_tray.xhp#PAR_ID3156108.8
+msgid  "Click the <item type=\"menuitem\">Page Styles</item>               <emph/>icon."
+msgstr ""
+
 #: guide/printer_tray.xhp#PAR_ID3155066.9
 msgid  "Right-click the page style in the list that you want to specify the paper source for, and then choose <emph>Modify</emph>."
+msgstr ""
+
+#: guide/printer_tray.xhp#PAR_ID3153416.10
+msgid  "In the <item type=\"menuitem\">Paper tray</item>               <emph/>box, select the paper tray that you want to use."
 msgstr ""
 
 #: guide/printer_tray.xhp#PAR_ID3153140.11
@@ -24647,6 +25159,10 @@ msgstr ""
 msgid  "Opens a dialog to edit the contents of the field."
 msgstr ""
 
+#: guide/fields.xhp#PAR_ID3151244.10
+msgid  "Placeholder, hidden text, insert reference, variable, database, and user-defined fields display a help tip when you rest the mouse pointer over the field in a document. To enable this feature, ensure that the Extended Tips<emph/>option (<item type=\"menuitem\">What's This?</item>) is selected in the <item type=\"menuitem\">Help</item> menu."
+msgstr ""
+
 #: guide/fields.xhp#HD_ID3155937.11
 msgid  "Updating Fields"
 msgstr ""
@@ -24677,6 +25193,10 @@ msgstr ""
 
 #: guide/table_repeat_multiple_headers.xhp#PAR_ID3145098.8
 msgid  "Choose <emph>Table - Insert - Table</emph>."
+msgstr ""
+
+#: guide/table_repeat_multiple_headers.xhp#PAR_ID3156240.9
+msgid  "Select the <item type=\"menuitem\">Heading</item>               <emph/>and the <item type=\"menuitem\">Repeat heading</item>               <emph/>check boxes."
 msgstr ""
 
 #: guide/table_repeat_multiple_headers.xhp#PAR_ID3153376.10
@@ -24927,6 +25447,10 @@ msgstr ""
 msgid  "Choose <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Writing Aids</emph>."
 msgstr ""
 
+#: guide/delete_from_dict.xhp#PAR_ID3151391.16
+msgid  "Select the user-defined dictionary that you want to edit in the <item type=\"menuitem\">User-defined</item>               <emph/>list, and then click <item type=\"menuitem\">Edit</item>."
+msgstr ""
+
 #: guide/delete_from_dict.xhp#PAR_ID3154233.17
 msgid  "Select the word that you want to delete in the <emph>Word</emph> list, and then click <emph>Delete</emph>."
 msgstr ""
@@ -24949,6 +25473,10 @@ msgstr ""
 
 #: guide/using_numbering.xhp#HD_ID6140629
 msgid  "To Apply Numbering Manually"
+msgstr ""
+
+#: guide/using_numbering.xhp#PAR_ID3155866.33
+msgid  "To apply numbering manually, click in the paragraph, and then click the <item type=\"menuitem\">Numbering On/Off</item>         <emph/>icon on the <item type=\"menuitem\">Formatting</item> Bar."
 msgstr ""
 
 #: guide/using_numbering.xhp#PAR_ID3153405.27
@@ -24987,8 +25515,16 @@ msgstr ""
 msgid  "Paragraph Styles give you greater control over numbering that you apply in a document. When you change the numbering format of the style, all paragraphs using the style are automatically updated."
 msgstr ""
 
+#: guide/using_numbering.xhp#PAR_ID3149646.35
+msgid  "Choose <item type=\"menuitem\">Format - Styles and Formatting</item>, and then click the <item type=\"menuitem\">Paragraph Styles</item>               <emph/>icon."
+msgstr ""
+
 #: guide/using_numbering.xhp#PAR_ID3149599.36
 msgid  "Right-click the paragraph style that you want to apply numbering to, and then choose <emph>Modify</emph>."
+msgstr ""
+
+#: guide/using_numbering.xhp#PAR_ID3149850.37
+msgid  "Click the <item type=\"menuitem\">Outline & Numbering</item>               <emph/>tab."
 msgstr ""
 
 #: guide/using_numbering.xhp#PAR_ID3149874.38
@@ -25111,8 +25647,20 @@ msgstr ""
 msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item>, and then click the <item type=\"menuitem\">Variables</item> tab."
 msgstr ""
 
+#: guide/conditional_text.xhp#PAR_ID3147759.9
+msgid  "Click \"Set variable\" in the <item type=\"menuitem\">Type</item>               <emph/>list."
+msgstr ""
+
 #: guide/conditional_text.xhp#PAR_ID3147784.10
 msgid  "Type a name for the variable in the <item type=\"menuitem\">Name</item> box, for example <item type=\"literal\">Reminder</item>."
+msgstr ""
+
+#: guide/conditional_text.xhp#PAR_ID3147810.57
+msgid  "Click \"Text\" in the<emph/>               <item type=\"menuitem\">Format</item> list."
+msgstr ""
+
+#: guide/conditional_text.xhp#PAR_ID7748344
+msgid  "Enter <item type=\"literal\">1</item> in the <item type=\"menuitem\">Value</item> box, and then click <item type=\"menuitem\">Insert</item>.<br/>The Format list now displays a \"General\" format."
 msgstr ""
 
 #: guide/conditional_text.xhp#HD_ID3145645.63
@@ -25129,6 +25677,14 @@ msgstr ""
 
 #: guide/conditional_text.xhp#PAR_ID3151212.65
 msgid  "Choose <item type=\"menuitem\">Insert - Fields - Other</item>, and then click the <item type=\"menuitem\">Functions</item> tab."
+msgstr ""
+
+#: guide/conditional_text.xhp#PAR_ID3151250.13
+msgid  "Click \"Conditional text\" in the <item type=\"menuitem\">Type</item>               <emph/>list."
+msgstr ""
+
+#: guide/conditional_text.xhp#PAR_ID3155936.14
+msgid  "Type <item type=\"literal\">Reminder EQ \"3\"</item> in the <item type=\"menuitem\">Condition</item>               <emph/>box. In other words, the conditional text will be displayed when the variable in the field that you defined in the first part of this example is equal to three."
 msgstr ""
 
 #: guide/conditional_text.xhp#PAR_ID3155969.15
@@ -25153,6 +25709,10 @@ msgstr ""
 
 #: guide/conditional_text.xhp#PAR_ID3155110.19
 msgid  "Place your cursor in front of the field that you defined in the first part of this example, and then choose <emph>Edit - Fields</emph>."
+msgstr ""
+
+#: guide/conditional_text.xhp#PAR_ID3155136.68
+msgid  "Replace the number in the <item type=\"menuitem\">Value</item>               <emph/>box with 3, and then click<emph/>               <item type=\"menuitem\">Close</item>."
 msgstr ""
 
 #: guide/conditional_text.xhp#PAR_ID3155168.20
@@ -25195,8 +25755,24 @@ msgstr ""
 msgid  "Click the <link href=\"text/shared/01/05030500.xhp\" name=\"Borders\"><emph>Borders</emph></link> tab."
 msgstr ""
 
+#: guide/footnote_with_line.xhp#PAR_ID3147110.51
+msgid  "In the <item type=\"menuitem\">Default</item>               <emph/>area, click the <item type=\"menuitem\">Set Top and Bottom Borders Only</item> icon."
+msgstr ""
+
+#: guide/footnote_with_line.xhp#PAR_ID3150931.52
+msgid  "In the <item type=\"menuitem\">Line</item> area, click a line in the <item type=\"menuitem\">Style</item>               <emph/>list."
+msgstr ""
+
+#: guide/footnote_with_line.xhp#PAR_ID3150961.53
+msgid  "Select \"White\" in the <item type=\"menuitem\">Color</item>               <emph/>box. If the background of the page is not white, select the color that best matches the background color."
+msgstr ""
+
 #: guide/footnote_with_line.xhp#PAR_ID3150519.50
 msgid  "In the <emph>Spacing to contents</emph> area, clear the <emph>Synchronize</emph> check box."
+msgstr ""
+
+#: guide/footnote_with_line.xhp#PAR_ID3150709.47
+msgid  "Enter a value in the <item type=\"menuitem\">Top</item>               <emph/>and <item type=\"menuitem\">Bottom</item>               <emph/>boxes."
 msgstr ""
 
 #: guide/footnote_with_line.xhp#PAR_ID3150740.48
@@ -25371,6 +25947,10 @@ msgstr ""
 msgid  "To change the formatting of a bulleted list, choose <item type=\"menuitem\">Format - Bullets and Numbering</item>."
 msgstr ""
 
+#: guide/using_numbered_lists.xhp#PAR_ID3153390.14
+msgid  "For example, to change the bulleting symbol, click the <item type=\"menuitem\">Options</item> tab, click the browse button (<item type=\"menuitem\">...</item>) next to <item type=\"menuitem\">Character</item>, and then select a special character. You can also click the <item type=\"menuitem\">Graphics</item> tab, and then click a symbol style in the <item type=\"menuitem\">Selection</item>         <emph/>area."
+msgstr ""
+
 #: guide/numbering_paras.xhp#TIT
 msgid  "Modifying Numbering in a Numbered List"
 msgstr ""
@@ -25499,6 +26079,10 @@ msgstr ""
 msgid  "Choose <emph>View - Toolbars - Insert</emph> to open the <emph>Insert</emph> toolbar."
 msgstr ""
 
+#: guide/keyboard.xhp#PAR_ID3155870.6
+msgid  "Press F6 until the focus is on the<emph/>               <item type=\"menuitem\">Insert</item> toolbar."
+msgstr ""
+
 #: guide/keyboard.xhp#PAR_ID3149630.8
 msgid  "Press the right arrow key until the <emph>Section</emph> icon is selected."
 msgstr ""
@@ -25517,6 +26101,10 @@ msgstr ""
 
 #: guide/keyboard.xhp#HD_ID3153367.13
 msgid  "To Insert Text Tables"
+msgstr ""
+
+#: guide/keyboard.xhp#PAR_ID3153388.14
+msgid  "Press F6 until the focus is on the<emph/>               <item type=\"menuitem\">Standard</item> toolbar."
 msgstr ""
 
 #: guide/keyboard.xhp#PAR_ID3154849.21
@@ -25651,6 +26239,10 @@ msgstr ""
 msgid  "Language"
 msgstr ""
 
+#: main0208.xhp#PAR_ID8193914
+msgid  "<ahelp hid=\".\">Displays the language for the selected text. <br/>Click to open a menu where you can choose another language for the selected text or for the current paragraph. <br/>Choose None to exclude the text from spellchecking and hyphenation. <br/>Choose Reset to Default Language to re-apply the default language for the selection or the paragraph. <br/>Choose More to open a dialog with more options.</ahelp>"
+msgstr ""
+
 #: main0208.xhp#HD_ID0821200911015962
 msgid  "Digital Signature"
 msgstr ""
@@ -25731,12 +26323,24 @@ msgstr ""
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"No Wrap\">No Wrap</link>"
 msgstr ""
 
+#: main0216.xhp#PAR_ID3153394.5
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#keinumlauftext\"/> You can also choose this setting on the <emph>Wrap</emph> tab page."
+msgstr ""
+
 #: main0216.xhp#HD_ID3147766.6
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap\">Wrap</link>"
 msgstr ""
 
+#: main0216.xhp#PAR_ID3147782.7
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#seitenumlauftext\"/> This icon corresponds to the <emph>Page Wrap</emph> option on the <emph>Wrap</emph> tab page."
+msgstr ""
+
 #: main0216.xhp#HD_ID3147824.8
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap Through\">Wrap Through</link>"
+msgstr ""
+
+#: main0216.xhp#PAR_ID3147218.9
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#durchlauftext\"/> You can also achieve the same effect through the <emph>Wrap</emph> tab page."
 msgstr ""
 
 #: main0216.xhp#HD_ID3151208.10
@@ -25831,12 +26435,24 @@ msgstr ""
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap Off\">Wrap Off</link>"
 msgstr ""
 
+#: main0215.xhp#PAR_ID3147419.5
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#keinumlauftext\"/>You can also choose this setting on the <emph>Wrap</emph> tab page."
+msgstr ""
+
 #: main0215.xhp#HD_ID3153388.6
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap On\">Wrap On</link>"
 msgstr ""
 
+#: main0215.xhp#PAR_ID3153405.7
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#seitenumlauftext\"/>This icon represents the <emph>Page Wrap</emph> option on the <emph>Wrap</emph> tab page."
+msgstr ""
+
 #: main0215.xhp#HD_ID3147782.8
 msgid  "<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap Through\">Wrap Through</link>"
+msgstr ""
+
+#: main0215.xhp#PAR_ID3147799.9
+msgid  "<embedvar href=\"text/swriter/01/05060200.xhp#durchlauftext\"/>You can also define this setting on the <emph>Wrap</emph> tab page."
 msgstr ""
 
 #: main0215.xhp#HD_ID3151285.15

@@ -1931,6 +1931,10 @@ msgstr ""
 msgid  "Variable=FunctionName(Parameter1, Parameter2,...)"
 msgstr ""
 
+#: shared/01020300.xhp#PAR_IDN107B3
+msgid  "You can also use the fully qualified name to call a procedure or function:<br/><item type=\"literal\">Library.Module.Macro()</item><br/> For example, to call the Autotext macro from the Gimmicks library, use the following command:<br/><item type=\"literal\">Gimmicks.AutoText.Main()</item>"
+msgstr ""
+
 #: shared/01020300.xhp#HD_ID3156276.45
 msgid  "Passing Variables by Value or Reference"
 msgstr ""
@@ -13697,6 +13701,10 @@ msgstr ""
 
 #: shared/03090101.xhp#HD_ID3146957.3
 msgid  "Syntax:"
+msgstr ""
+
+#: shared/03090101.xhp#PAR_ID3153126.4
+msgid  "If condition=true Then Statement block [ElseIf condition=true Then] Statement block [Else] Statement block EndIf<br/>Instead of Else If you can write ElseIf, instead of End If you can write EndIf."
 msgstr ""
 
 #: shared/03090101.xhp#HD_ID3155419.5

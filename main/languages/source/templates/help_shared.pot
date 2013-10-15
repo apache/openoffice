@@ -9783,6 +9783,14 @@ msgstr ""
 msgid  "<variable id=\"allestext\"><ahelp hid=\".uno:Select\" visibility=\"visible\">Selects the entire content of the current file, frame, or text object.</ahelp></variable>"
 msgstr ""
 
+#: 01/02090000.xhp#PAR_ID3155261.3
+msgid  "<switchinline select=\"appl\"> <caseinline select=\"CALC\">To select all of the cells on a sheet, click the button at the intersection of the column and row header in the top left corner of the sheet.</caseinline> <defaultinline/> </switchinline>"
+msgstr ""
+
+#: 01/02090000.xhp#PAR_ID3154046.4
+msgid  "<switchinline select=\"appl\"> <caseinline select=\"CALC\">To select all of the sheets in a spreadsheet file, right-click the name tab of a sheet, and then choose <emph>Select All Sheets</emph>.<ahelp hid=\".uno:TableSelectAll\" visibility=\"hidden\">Selects all of the sheets in the current spreadsheet.</ahelp></caseinline> <defaultinline/> </switchinline>"
+msgstr ""
+
 #: 01/02100000.xhp#TIT
 msgid  "Find & Replace"
 msgstr ""
@@ -17115,6 +17123,10 @@ msgstr ""
 msgid  "<ahelp hid=\".uno:AlignHorizontalCenter\">Horizontally centers the selected objects. If only one object is selected in Draw or Impress, the center of the object is aligned to the horizontal center of the page.</ahelp>"
 msgstr ""
 
+#: 01/05070200.xhp#PAR_ID3144336.3
+msgid  "The vertical position of the selected objects is not affected by this command.<embedvar href=\"text/shared/01/05070100.xhp#mehrfachselektion\"/>"
+msgstr ""
+
 #: 01/05070300.xhp#TIT
 msgid  "Align Right"
 msgstr ""
@@ -17143,6 +17155,10 @@ msgstr ""
 msgid  "<ahelp hid=\".uno:AlignTop\">Vertically aligns the top edges of the selected objects. If only one object is selected in Draw or Impress, the top edge of the object is aligned to the upper page margin.</ahelp>"
 msgstr ""
 
+#: 01/05070400.xhp#PAR_ID3154230.3
+msgid  "Objects are aligned to the top edge of the topmost object in the selection. <embedvar href=\"text/shared/01/05070100.xhp#mehrfachselektion\"/>"
+msgstr ""
+
 #: 01/05070500.xhp#TIT
 msgid  "Align Vertical Center"
 msgstr ""
@@ -17165,6 +17181,10 @@ msgstr ""
 
 #: 01/05070600.xhp#PAR_ID3154613.2
 msgid  "<ahelp hid=\".\">Vertically aligns the bottom edges of the selected objects. If only one object is selected in Draw or Impress, the bottom edge of the object is aligned to the lower page margin.</ahelp>"
+msgstr ""
+
+#: 01/05070600.xhp#PAR_ID3151330.4
+msgid  "Objects are aligned to the bottom edge of the bottom most object in the selection. <embedvar href=\"text/shared/01/05070100.xhp#mehrfachselektion\"/>"
 msgstr ""
 
 #: 01/05080000.xhp#TIT
@@ -21783,12 +21803,24 @@ msgstr ""
 msgid  "For Selection"
 msgstr ""
 
+#: 01/06010500.xhp#PAR_ID1507309
+msgid  "<ahelp hid=\".\">Opens a submenu. Choose a language for the selected text. <br/>Choose None to exclude the selected text from spellchecking and hyphenation.<br/>Choose More to open a dialog with more options.</ahelp>"
+msgstr ""
+
 #: 01/06010500.xhp#HD_ID7693411
 msgid  "For Paragraph"
 msgstr ""
 
+#: 01/06010500.xhp#PAR_ID3928952
+msgid  "<ahelp hid=\".\">Opens a submenu. Choose a language for the current paragraph. <br/>Choose None to exclude the current paragraph from spellchecking and hyphenation.<br/>Choose More to open a dialog with more options.</ahelp>"
+msgstr ""
+
 #: 01/06010500.xhp#HD_ID5206762
 msgid  "For all Text"
+msgstr ""
+
+#: 01/06010500.xhp#PAR_ID5735953
+msgid  "<ahelp hid=\".\">Opens a submenu. Choose a language for all text. <br/>Choose None to exclude all text from spellchecking and hyphenation.<br/>Choose More to open a dialog with more options.</ahelp>"
 msgstr ""
 
 #: 01/06010500.xhp#PAR_IDN105AF
@@ -22273,6 +22305,10 @@ msgstr ""
 
 #: 01/06040100.xhp#PAR_ID8703573
 msgid  "A--B (A, minus, minus, B)"
+msgstr ""
+
+#: 01/06040100.xhp#PAR_ID6049684
+msgid  "A—B (A, em-dash, B)<br/>(see note below the table)"
 msgstr ""
 
 #: 01/06040100.xhp#PAR_ID2219916
@@ -23847,12 +23883,20 @@ msgstr ""
 msgid  "<ahelp hid=\".\">Opens a dialog where you can organize scripts.</ahelp>"
 msgstr ""
 
+#: 01/06130200.xhp#PAR_IDN10622
+msgid  "<embedvar href=\"text/shared/guide/scripting.xhp#scripting\"/>"
+msgstr ""
+
 #: 01/06130200.xhp#PAR_IDN10597
 msgid  "<link href=\"text/shared/01/06130000.xhp#script\">BeanShell</link>"
 msgstr ""
 
 #: 01/06130200.xhp#PAR_IDN105A7
 msgid  "<ahelp hid=\".\">Opens a dialog where you can organize scripts.</ahelp>"
+msgstr ""
+
+#: 01/06130200.xhp#PAR_IDN105FB
+msgid  "<embedvar href=\"text/shared/guide/scripting.xhp#scripting\"/>"
 msgstr ""
 
 #: 01/06130500.xhp#TIT
@@ -24957,6 +25001,10 @@ msgstr ""
 
 #: 01/06150200.xhp#HD_ID3147242.16
 msgid  "Display source"
+msgstr ""
+
+#: 01/06150200.xhp#PAR_ID3150444.17
+msgid  "<ahelp hid=\"HID_XML_FILTER_TEST_IMPORT_DISPLAY_SOURCE\">Opens the <embedvar href=\"text/shared/01/06150210.xhp#xmlfilteroutput\"/> window, where the XML source of the selected document is displayed. The document is used to test the import filter.</ahelp> The <emph>Validate</emph> button in the window validates the XML source of the document."
 msgstr ""
 
 #: 01/06150200.xhp#HD_ID3147078.18
@@ -30735,6 +30783,10 @@ msgstr ""
 msgid  "Enter a number or a formula that returns a number in the linked cell"
 msgstr ""
 
+#: 02/01170102.xhp#PAR_IDN10F3E
+msgid  "If entered value is TRUE or not 0: Check box is selected<br/>If entered value is FALSE or 0: Check box is deselected"
+msgstr ""
+
 #: 02/01170102.xhp#PAR_IDN10F47
 msgid  "Clear the linked cell, or enter text, or enter a formula that returns text or an error"
 msgstr ""
@@ -30805,6 +30857,10 @@ msgstr ""
 
 #: 02/01170102.xhp#PAR_IDN10F8C
 msgid  "Enter a number or a formula that returns a number in the linked cell"
+msgstr ""
+
+#: 02/01170102.xhp#PAR_IDN10F92
+msgid  "If entered value is TRUE or not 0: Option button is selected<br/>If entered value is FALSE or 0: Option button is deselected"
 msgstr ""
 
 #: 02/01170102.xhp#PAR_IDN10F9B
@@ -34619,6 +34675,10 @@ msgstr ""
 msgid  "<ahelp hid=\".uno:DataFilterStandardFilter\">Specifies the logical conditions to filter your table data.</ahelp> This dialog is available for spreadsheet documents, database tables and database forms. The dialog for databases does not contain the <emph>More Options</emph> button."
 msgstr ""
 
+#: 02/12090100.xhp#PAR_IDN105EE
+msgid  "         <embedvar href=\"text/scalc/guide/filters.xhp#filters\"/>      "
+msgstr ""
+
 #: 02/12090100.xhp#HD_ID3155555.3
 msgid  "Filter criteria"
 msgstr ""
@@ -36615,6 +36675,10 @@ msgstr ""
 msgid  "<ahelp hid=\".\">The Fontwork Gallery displays previews of Fontwork objects. To insert an object into your document, select the object, and then click OK.</ahelp>"
 msgstr ""
 
+#: 02/fontwork.xhp#PAR_IDN105AF
+msgid  "<embedvar href=\"text/shared/guide/fontwork.xhp#fontwork\"/>"
+msgstr ""
+
 #: 02/fontwork.xhp#PAR_IDN10623
 msgid  "<link href=\"text/shared/fontwork_toolbar.xhp\">Fontwork toolbar</link>"
 msgstr ""
@@ -36745,6 +36809,10 @@ msgstr ""
 
 #: 04/01010000.xhp#HD_ID3147209.105
 msgid  "Shortcut Keys for Mouse Actions"
+msgstr ""
+
+#: 04/01010000.xhp#PAR_ID3154749.106
+msgid  "If you are using drag-and-drop, selecting with the mouse or clicking objects and names, you can use the keys Shift, <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> and occasionally <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> to access additional functionality. The modified functions available when holding down keys during drag-and-drop are indicated by the mouse pointer changing form. When selecting files or other objects, the modifier keys can extend the selection - the functions are explained where applicable. <switchinline select=\"sys\"><caseinline select=\"UNIX\"><embedvar href=\"text/shared/00/00000099.xhp#winmanager\"/></caseinline></switchinline>"
 msgstr ""
 
 #: 04/01010000.xhp#HD_ID3154046.127
@@ -38521,6 +38589,10 @@ msgstr ""
 
 #: 05/err_html.xhp#PAR_ID3147088.2
 msgid  "Unfortunately the Help page you selected was not found. The following data could be helpful in locating the error:"
+msgstr ""
+
+#: 05/err_html.xhp#PAR_ID3143268.3
+msgid  "Help ID: <emph><help-id-missing/></emph>"
 msgstr ""
 
 #: 05/err_html.xhp#PAR_IDN10681
@@ -48563,6 +48635,50 @@ msgstr ""
 msgid  "To open a database file, choose <emph>File - Open</emph>. In the <emph>File type</emph> list box, select to view only \"Database documents\". Select a database document and click <emph>Open</emph>."
 msgstr ""
 
+#: explorer/database/main.xhp#PAR_IDN1075F
+msgid  "<embedvar href=\"text/shared/guide/data_view.xhp#data_view\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN10767
+msgid  "<embedvar href=\"text/shared/guide/data_register.xhp#data_register\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN1076F
+msgid  "<embedvar href=\"text/shared/guide/data_new.xhp#data_new\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN10777
+msgid  "<embedvar href=\"text/shared/guide/data_tables.xhp#data_tables\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN1077F
+msgid  "<embedvar href=\"text/shared/guide/data_queries.xhp#data_queries\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN10787
+msgid  "<embedvar href=\"text/shared/guide/data_forms.xhp#data_forms\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN1078F
+msgid  "<embedvar href=\"text/shared/guide/data_reports.xhp#data_reports\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_ID1311990
+msgid  "<embedvar href=\"text/shared/guide/data_im_export.xhp#data_im_export\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN10797
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN107AD
+msgid  "<embedvar href=\"text/shared/explorer/database/menubar.xhp#titletext\"/>"
+msgstr ""
+
+#: explorer/database/main.xhp#PAR_IDN107BB
+msgid  "<embedvar href=\"text/shared/explorer/database/toolbars.xhp#toolbars\"/>"
+msgstr ""
+
 #: explorer/database/main.xhp#PAR_ID6474806
 msgid  "<link href=\"http://wiki.services.openoffice.org/wiki/Database\">Wiki page about Base</link>"
 msgstr ""
@@ -52771,6 +52887,14 @@ msgstr ""
 msgid  "On Windows systems, you can also use drag-and-drop instead of Copy and Paste. Also, for registered databases, you can open the datasource browser (press F4) instead of opening the Base window."
 msgstr ""
 
+#: guide/data_im_export.xhp#PAR_ID5871761
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_im_export.xhp#PAR_ID6531266
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
+msgstr ""
+
 #: guide/data_new.xhp#TIT
 msgid  "Creating a New Database"
 msgstr ""
@@ -52797,6 +52921,14 @@ msgstr ""
 
 #: guide/data_new.xhp#PAR_IDN105E0
 msgid  "The <link href=\"text/shared/explorer/database/tablewizard00.xhp\">Table Wizard</link> helps you to add a table to the new database file."
+msgstr ""
+
+#: guide/data_new.xhp#PAR_IDN105FC
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_new.xhp#PAR_IDN10604
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
 msgstr ""
 
 #: guide/data_queries.xhp#TIT
@@ -52855,6 +52987,14 @@ msgstr ""
 msgid  "You see the <link href=\"text/shared/explorer/database/02010100.xhp\">Query Design window</link>."
 msgstr ""
 
+#: guide/data_queries.xhp#PAR_IDN1067B
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_queries.xhp#PAR_IDN10683
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
+msgstr ""
+
 #: guide/data_register.xhp#TIT
 msgid  "Registering and Deleting a Database "
 msgstr ""
@@ -52893,6 +53033,14 @@ msgstr ""
 
 #: guide/data_register.xhp#PAR_IDN10719
 msgid  "Select the database file and click <emph>Delete</emph>. "
+msgstr ""
+
+#: guide/data_register.xhp#PAR_IDN105F3
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_register.xhp#PAR_IDN105FB
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
 msgstr ""
 
 #: guide/data_reports.xhp#TIT
@@ -53311,6 +53459,14 @@ msgstr ""
 msgid  "You see the View Design window, which is almost the same as the <link href=\"text/shared/explorer/database/02010100.xhp\">Query Design window</link>."
 msgstr ""
 
+#: guide/data_tables.xhp#PAR_IDN1067B
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_tables.xhp#PAR_IDN10683
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
+msgstr ""
+
 #: guide/data_view.xhp#TIT
 msgid  "Viewing a Database"
 msgstr ""
@@ -53341,6 +53497,14 @@ msgstr ""
 
 #: guide/data_view.xhp#PAR_IDN105EA
 msgid  "The <link href=\"text/shared/guide/database_main.xhp\">data source view</link> can be used to drag-and-drop table fields from registered databases into your documents and to produce mail merges."
+msgstr ""
+
+#: guide/data_view.xhp#PAR_IDN10606
+msgid  "<embedvar href=\"text/shared/explorer/database/main.xhp#base\"/>"
+msgstr ""
+
+#: guide/data_view.xhp#PAR_IDN1060E
+msgid  "<embedvar href=\"text/shared/guide/database_main.xhp#database_main\"/>"
 msgstr ""
 
 #: guide/digital_signatures.xhp#TIT
@@ -54373,6 +54537,10 @@ msgstr ""
 
 #: guide/email.xhp#PAR_ID3150986.5
 msgid  "In your e-mail program, enter the recipient, subject and any text you want to add, then send the e-mail."
+msgstr ""
+
+#: guide/email.xhp#PAR_ID3595385
+msgid  "In case you want to send the e-mail to a recipient who only has software that cannot read the OpenDocument format, you can send the current document in an often used proprietary format.<br/>For a text document, choose <item type=\"menuitem\">File - Send - Document as Microsoft Word</item>. For a spreadsheet, choose <item type=\"menuitem\">File - Send - Document as Microsoft Excel</item>. And for a presentation, choose <item type=\"menuitem\">File - Send - Document as Microsoft PowerPoint</item>. <br/>If you want to send the document as a read-only file, choose <item type=\"menuitem\">File - Send - Document as PDF</item>.<br/>These commands do not change your current document. Only a temporary copy is created and sent."
 msgstr ""
 
 #: guide/error_report.xhp#TIT
@@ -56743,6 +56911,10 @@ msgstr ""
 msgid  "Use the draw functions to create an object to be used as a line end."
 msgstr ""
 
+#: guide/lineend_define.xhp#PAR_ID3149795.17
+msgid  "Select the object and choose <emph>Format - </emph><switchinline select=\"appl\"><caseinline select=\"WRITER\"><emph>Drawing Object - </emph></caseinline><caseinline select=\"CALC\"><emph>Graphic - </emph></caseinline></switchinline><emph/><emph>Line</emph>."
+msgstr ""
+
 #: guide/lineend_define.xhp#PAR_ID3154306.18
 msgid  "In the dialog, click the <emph>Arrow Styles</emph>."
 msgstr ""
@@ -56877,6 +57049,10 @@ msgstr ""
 
 #: guide/linestyle_define.xhp#PAR_ID3153880.10
 msgid  "Select a line drawing object in a document."
+msgstr ""
+
+#: guide/linestyle_define.xhp#PAR_ID3155419.14
+msgid  "Choose <emph>Format - </emph><switchinline select=\"appl\"><caseinline select=\"WRITER\"><emph>Drawing Object</emph> - </caseinline><caseinline select=\"CALC\"><emph>Graphic - </emph></caseinline></switchinline><item type=\"menuitem\"/><emph>Line</emph> and click the <emph>Line Styles</emph> tab."
 msgstr ""
 
 #: guide/linestyle_define.xhp#PAR_ID3155449.15
@@ -57189,6 +57365,10 @@ msgstr ""
 
 #: guide/microsoft_terms.xhp#PAR_ID3153252.4
 msgid  "AutoShapes"
+msgstr ""
+
+#: guide/microsoft_terms.xhp#PAR_ID3154897.5
+msgid  "<link href=\"text/shared/guide/gallery_insert.xhp\" name=\"Gallery Objects\">Gallery Objects</link><br/>Shapes are on the <emph>Drawing</emph> toolbar (menu <item type=\"menuitem\">View - Toolbars - Drawing</item>)"
 msgstr ""
 
 #: guide/microsoft_terms.xhp#PAR_ID3157910.6
@@ -58515,6 +58695,10 @@ msgstr ""
 msgid  "Choose <emph>Format - Object - Position and Size </emph>- <emph>Position and Size</emph> tab. Unmark the <emph>Position</emph> or <emph>Size</emph> check box."
 msgstr ""
 
+#: guide/protection.xhp#PAR_IDN10B8C
+msgid  "<embedvar href=\"text/shared/guide/digital_signatures.xhp#digital_signatures\"/>"
+msgstr ""
+
 #: guide/protection.xhp#PAR_ID4680928
 msgid  "<link href=\"text/swriter/guide/protection.xhp\">Protecting Content in %PRODUCTNAME Writer</link>"
 msgstr ""
@@ -58545,6 +58729,10 @@ msgstr ""
 
 #: guide/redlining_accept.xhp#PAR_ID3147571.24
 msgid  "When you edit a document in which others have made changes, you can accept or reject the changes individually or all together."
+msgstr ""
+
+#: guide/redlining_accept.xhp#PAR_ID3147008.25
+msgid  "If you have put multiple copies of the document in circulation, first merge these into one document (see <embedvar href=\"text/shared/guide/redlining_docmerge.xhp#redlining_docmerge\"/>)."
 msgstr ""
 
 #: guide/redlining_accept.xhp#PAR_ID3153748.26
@@ -60671,6 +60859,10 @@ msgstr ""
 msgid  "<link href=\"http://www.w3.org/XML/\">World Wide Web Consortium Pages on Extensible Markup Language (XML)</link>"
 msgstr ""
 
+#: guide/xsltfilter.xhp#PAR_IDN10D97
+msgid  " <embedvar href=\"text/shared/00/00000021.xhp#xmlformat\"/> "
+msgstr ""
+
 #: guide/xsltfilter.xhp#PAR_ID5569017
 msgid  "<link href=\"text/shared/guide/xsltfilter_distribute.xhp\">Distributing XML filters</link>"
 msgstr ""
@@ -60889,6 +61081,10 @@ msgstr ""
 
 #: main0201.xhp#PAR_IDN10661
 msgid  "<link href=\"text/shared/01/01070000.xhp\">Save As</link>"
+msgstr ""
+
+#: main0201.xhp#PAR_IDN10671
+msgid  "<embedvar href=\"text/shared/01/01070000.xhp#speichernuntertext\"/>"
 msgstr ""
 
 #: main0201.xhp#PAR_IDN106A5
@@ -67095,6 +67291,10 @@ msgstr ""
 msgid  "Quality"
 msgstr ""
 
+#: optionen/01070400.xhp#PAR_ID3147229.54
+msgid  "See also <embedvar href=\"text/shared/guide/print_blackwhite.xhp#print_blackwhite\"/>."
+msgstr ""
+
 #: optionen/01070400.xhp#HD_ID3159149.45
 msgid  "Default"
 msgstr ""
@@ -67737,6 +67937,10 @@ msgstr ""
 
 #: optionen/01140000.xhp#PAR_ID3149763.6
 msgid  "Specifies the languages for spellchecking, thesaurus and hyphenation."
+msgstr ""
+
+#: optionen/01140000.xhp#PAR_ID3148663.8
+msgid  "The spellcheck for the selected language only functions when you have installed the corresponding language module. <embedvar href=\"text/shared/optionen/01010401.xhp#sprachenfeld\"/>         "
 msgstr ""
 
 #: optionen/01140000.xhp#HD_ID3151210.9
