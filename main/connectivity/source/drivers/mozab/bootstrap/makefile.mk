@@ -27,9 +27,9 @@ PRJINC=..$/..$/..
 PRJNAME=connectivity
 TARGET=mozbootstrap
 
-.IF "$(OS)" == "OS2"
+.IF ("$(SYSTEM_MOZILLA)" != "YES") && ("$(WITH_MOZILLA)" != "YES")
 all: 
-	@echo "    Not building under OS/2"
+	@echo "    No mozilla -> No $(TARGET)"
 .ENDIF
 
 # --- Settings ----------------------------------
