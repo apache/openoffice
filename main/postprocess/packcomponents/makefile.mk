@@ -301,7 +301,7 @@ my_components += ScriptProviderForJavaScript
 my_components += ldapbe2
 .END
 
-.IF "$(WITH_MOZILLA)" != "NO"
+.IF "$(ENABLE_NSS_MODULE)" != "NO"
 my_components += \
     xmlsecurity \
     xsec_fw \
@@ -359,13 +359,13 @@ my_components += directx5canvas
 my_components += adabas
 .END
 
-#.IF "$(OS)" != "MACOSX" && "$(SYSTEM_MOZILLA)" != "YES" && \
-#    "$(WITH_MOZILLA)" != "NO"
-#my_components += mozab
-#.ELIF "$(OS)" == "OS2"
-#.ELSE
+.IF ("$(SYSTEM_MOZILLA)" == "YES") || ("$(WITH_MOZILLA)" != "YES")
+.IF "$(OS)" != "MACOSX"
+my_components += mozab
+.ELIF 
 my_components += mozbootstrap
-#.END
+.END
+.END
 
 .IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
 my_components += desktopbe1
