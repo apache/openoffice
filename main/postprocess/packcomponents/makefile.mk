@@ -359,12 +359,11 @@ my_components += directx5canvas
 my_components += adabas
 .END
 
-.IF ("$(SYSTEM_MOZILLA)" == "YES") || ("$(WITH_MOZILLA)" != "YES")
-.IF "$(OS)" != "MACOSX"
-my_components += mozab
-.ELIF 
-my_components += mozbootstrap
-.END
+.IF ("$(SYSTEM_MOZILLA)" == "YES") || ("$(WITH_MOZILLA)" == "YES")
+	my_components += mozbootstrap
+	.IF "$(OS)" != "MACOSX" // #i91209# mozilla address books disabled on OSX
+		my_components += mozab
+	.END
 .END
 
 .IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
