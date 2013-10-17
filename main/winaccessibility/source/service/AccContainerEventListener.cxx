@@ -383,7 +383,9 @@ void AccContainerEventListener::fireStateFocusdChange(bool enable)
         {
             //don't send focused event on PANEL & OPTION_PANE if the parent is not toolbar
             short parentRole = getParentRole();
-            if (parentRole == AccessibleRole::TOOL_BAR)
+            if (parentRole == AccessibleRole::TOOL_BAR 
+				|| parentRole == AccessibleRole::SCROLL_PANE // sidebar
+				|| parentRole == AccessibleRole::PANEL)	// sidebar
                 pAgent->NotifyAccEvent(UM_EVENT_STATE_FOCUSED, pAccessible);
         }
         //to update ComboBox's description
