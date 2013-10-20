@@ -7672,7 +7672,7 @@ AC_SUBST(ADDITIONAL_REPOSITORIES)
 chmod +x ./config.guess
 
 # Create files from their *.in templates.
-AC_CONFIG_FILES([set_soenv Makefile])
+AC_CONFIG_FILES([set_soenv Makefile.gb])
 
 AC_MSG_NOTICE([writing config.status])
 AC_OUTPUT
