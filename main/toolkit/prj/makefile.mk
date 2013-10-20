@@ -41,4 +41,4 @@ DEBUG_ARGUMENT=
 .ENDIF
 
 all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+	cd $(PRJ) && $(GNUMAKE) -f Makefile.gb $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) -f Makefile.gb $(VERBOSEFLAG) -r deliverlog

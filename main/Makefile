@@ -22,17 +22,18 @@
 
 # ========== target function modifiers  ==========
 # target modification, to allow "make prepare" instead of "make prepare all"
-MODULE_TARGET := $(filter-out prepare clean genPO, $(MAKECMDGOALS))
+EXECUTE_TARGET := prepare clean rebuild genPO
+MODULE_TARGET := $(filter-out $(EXECUTE_TARGET), $(MAKECMDGOALS))
 ifeq ($(MODULE_TARGET),)
   MODULE_TARGET := all
 endif
-SUB_TARGET := $(filter prepare clean genPO, $(MAKECMDGOALS))
+SUB_TARGET := $(filter $(EXECUTE_TARGET), $(MAKECMDGOALS))
 
-MAKE_CALL= @echo $@ $(SUB_TARGET)
+MAKE_CALL= @cd $@; Make $(SUB_TARGET)
 
 all: instsetoo_native
 
-prepare clean genPO: $(MODULE_TARGET)
+$(EXECUTE_TARGET) : $(MODULE_TARGET)
 
 
 
