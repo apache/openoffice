@@ -298,6 +298,9 @@ Gdiplus::Bitmap* GdiPlusBitmapBufferNode::createGdiPlusBitmap(
 
     if(pExtraRGB)
     {
+        // shockingly, BitmapBuffer does not free the memory it is controlling
+        // in it's destructor, this *has to be done handish*. Doing it here now
+        delete[] pExtraRGB->mpBits;
         delete pExtraRGB;
     }
     else
@@ -436,6 +439,9 @@ Gdiplus::Bitmap* GdiPlusBitmapBufferNode::createGdiPlusBitmap(
 
     if(pExtraA)
     {
+        // shockingly, BitmapBuffer does not free the memory it is controlling
+        // in it's destructor, this *has to be done handish*. Doing it here now
+        delete[] pExtraA->mpBits;
         delete pExtraA;
     }
     else
@@ -450,6 +456,9 @@ Gdiplus::Bitmap* GdiPlusBitmapBufferNode::createGdiPlusBitmap(
 
     if(pExtraRGB)
     {
+        // shockingly, BitmapBuffer does not free the memory it is controlling
+        // in it's destructor, this *has to be done handish*. Doing it here now
+        delete[] pExtraRGB->mpBits;
         delete pExtraRGB;
     }
     else
