@@ -22,8 +22,8 @@
 
 
 GUI := UNX
-COM := CXX
-COMID := cxx
+COM := S5ABI
+COMID := s5abi
 
 # Darwin mktemp -t expects a prefix, not a pattern
 gb_MKTEMP ?= /usr/bin/mktemp -t gbuild.

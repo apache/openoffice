@@ -130,8 +130,8 @@ COMNAME=MipsPro
 .ENDIF
 
 .IF "$(COM)"=="CLANG"
-COMID=cxx
-COMNAME=cxx
+COMID=s5abi
+COMNAME=s5abi
 .ENDIF
 
 .IF "$(COMNAME)"==""
