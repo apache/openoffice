@@ -171,35 +171,51 @@ __EXPORT ScTabView::~ScTabView()
 
 	DELETEZ(pInputHintWindow);
 
-	if (pDrawView)
-	{
-		for (i=0; i<4; i++)
-			if (pGridWin[i])
-			{
-				pDrawView->VCRemoveWin(pGridWin[i]);
-				pDrawView->DeleteWindowFromPaintView(pGridWin[i]);
-			}
-	}
+    if(pDrawView)
+    {
+        for(i=0; i<4; i++)
+        {
+            if(pGridWin[i])
+            {
+                pDrawView->VCRemoveWin(pGridWin[i]);
+                pDrawView->DeleteWindowFromPaintView(pGridWin[i]);
+            }
+        }
 
-	delete pSelEngine;
+        delete pDrawView;
+        pDrawView = 0;
+    }
 
-	for (i=0; i<4; i++)
-		delete pGridWin[i];
+    delete pSelEngine;
+    pSelEngine = 0;
 
-	delete pHdrSelEng;
+    for (i=0; i<4; i++)
+    {
+        delete pGridWin[i];
+        pGridWin[i] = 0;
+    }
 
-	for (i=0; i<2; i++)
-	{
-		delete pColBar[i];
-		delete pRowBar[i];
-		delete pColOutline[i];
-		delete pRowOutline[i];
-	}
+    delete pHdrSelEng;
+    pHdrSelEng = 0;
 
-	delete pHSplitter;
-	delete pVSplitter;
+    for (i=0; i<2; i++)
+    {
+        delete pColBar[i];
+        pColBar[i] = 0;
+        delete pRowBar[i];
+        pRowBar[i] = 0;
+        delete pColOutline[i];
+        pColOutline[i] = 0;
+        delete pRowOutline[i];
+        pRowOutline[i] = 0;
+    }
 
-	delete pTabControl;
+    delete pHSplitter;
+    pHSplitter = 0;
+    delete pVSplitter;
+    pVSplitter = 0;
+    delete pTabControl;
+    pTabControl = 0;
 }
 
 void ScTabView::MakeDrawView( sal_uInt8 nForceDesignMode )
