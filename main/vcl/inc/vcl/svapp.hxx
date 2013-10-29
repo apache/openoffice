@@ -542,7 +542,6 @@ private:
 
 VCL_DLLPUBLIC bool TestBridgeRegistered();
 VCL_DLLPUBLIC bool IsBridgeRegistered();
-VCL_DLLPUBLIC bool RegAccBridge();
 #endif
 //-----IAccessibility2 Implementation 2009
 #endif // _APP_HXX

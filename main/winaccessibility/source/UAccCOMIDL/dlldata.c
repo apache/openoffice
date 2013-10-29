@@ -62,3 +62,35 @@ DLLDATA_ROUTINES( aProxyFileList, GET_DLL_CLSID )
 #endif
 
 /* end of generated dlldata file */
+ext )
+EXTERN_PROXY_FILE( AccessibleValue )
+EXTERN_PROXY_FILE( UAccCOM )
+
+
+PROXYFILE_LIST_START
+/* Start of list */
+  REFERENCE_PROXY_FILE( Accessible2 ),
+  REFERENCE_PROXY_FILE( AccessibleAction ),
+  REFERENCE_PROXY_FILE( AccessibleApplication ),
+  REFERENCE_PROXY_FILE( AccessibleComponent ),
+  REFERENCE_PROXY_FILE( AccessibleEditableText ),
+  REFERENCE_PROXY_FILE( AccessibleHyperlink ),
+  REFERENCE_PROXY_FILE( AccessibleHypertext ),
+  REFERENCE_PROXY_FILE( AccessibleImage ),
+  REFERENCE_PROXY_FILE( AccessibleKeyBinding ),
+  REFERENCE_PROXY_FILE( AccessibleRelation ),
+  REFERENCE_PROXY_FILE( AccessibleTable ),
+  REFERENCE_PROXY_FILE( AccessibleText ),
+  REFERENCE_PROXY_FILE( AccessibleValue ),
+  REFERENCE_PROXY_FILE( UAccCOM ),
+/* End of list */
+PROXYFILE_LIST_END
+
+
+DLLDATA_ROUTINES( aProxyFileList, GET_DLL_CLSID )
+
+#ifdef __cplusplus
+}  /*extern "C" */
+#endif
+
+/* end of generated dlldata file */

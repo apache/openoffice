@@ -1464,12 +1464,16 @@ rtl_cache_wsupdate_wait (unsigned int seconds)
 static void
 rtl_cache_wsupdate_fini (void)
 {
+	DWORD dwRet = 0;
 	RTL_MEMORY_LOCK_ACQUIRE(&(g_cache_list.m_lock));
 	g_cache_list.m_update_done = 1;
 	SetEvent (g_cache_list.m_update_cond);
 	RTL_MEMORY_LOCK_RELEASE(&(g_cache_list.m_lock));
 
-	WaitForSingleObject (g_cache_list.m_update_thread, INFINITE);
+	dwRet = WaitForSingleObject (g_cache_list.m_update_thread, 0);
+
+	// #i107562#, it seems no need to wait the thread. Windows will do the clean work after terminating the main process.
+	//WaitForSingleObject (g_cache_list.m_update_thread, INFINITE);
 }
 
 #endif /* SAL_UNX || SAL_W32 */
