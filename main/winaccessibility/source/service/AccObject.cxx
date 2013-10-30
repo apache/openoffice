@@ -39,8 +39,6 @@
 #include "AccResource.hxx"
 #include "AccessibleRole.h"
 
-#include "act.hxx"
-
 
 using namespace std;
 using namespace com::sun::star::uno;
