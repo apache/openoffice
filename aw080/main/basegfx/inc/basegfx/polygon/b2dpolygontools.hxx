@@ -537,9 +537,9 @@ namespace basegfx
             const B2DPolygon& rPolygon, 
             com::sun::star::drawing::PointSequence& rPointSequenceRetval);
 
-		/* converters for com::sun::star::drawing::PointSequence and 
-		   com::sun::star::drawing::FlagSequence to B2DPolygon (curved polygons)
-		 */
+        /* converters for com::sun::star::drawing::PointSequence and 
+           com::sun::star::drawing::FlagSequence to B2DPolygon (curved polygons)
+         */
         B2DPolygon UnoPolygonBezierCoordsToB2DPolygon(
             const com::sun::star::drawing::PointSequence& rPointSequenceSource, 
             const com::sun::star::drawing::FlagSequence& rFlagSequenceSource, 
@@ -551,8 +551,8 @@ namespace basegfx
 
         /** Read poly-polygon from SVG.
 
-        	This function imports a poly-polygon from an SVG points
-        	attribute (a plain list of coordinate pairs).
+            This function imports a poly-polygon from an SVG points
+            attribute (a plain list of coordinate pairs).
 
             @param o_rPoly
             The output polygon. Note that svg:points can only define a
@@ -568,8 +568,8 @@ namespace basegfx
 
         /** Write poly-polygon to SVG.
 
-        	This function imports a non-bezier polygon to SVG points
-        	(a plain list of coordinate pairs).
+            This function imports a non-bezier polygon to SVG points
+            (a plain list of coordinate pairs).
 
             @param rPoly
             The polygon to export
