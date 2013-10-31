@@ -60,11 +60,11 @@ public class ShapeTypes {
 
 	@After
 	public void tearDown() throws Exception {
-		sleep(3);
 		//close navigator
 		if (sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
+		AppTool.discard();
 		app.stop();
 	}
 
@@ -78,6 +78,7 @@ public class ShapeTypes {
 		impress.focus();
 		//before insert CallOut Shape
 		sdNavigator.focus();
+		sdNavigator.waitForEnabled( 2.0, 0.1);
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
@@ -91,6 +92,7 @@ public class ShapeTypes {
 		impress.focus();
 		impress.drag(100, 100, 200, 200);
 		sdNavigatorDlg.focus();
+		sdNavigator.waitForEnabled( 2.0, 0.1);
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
@@ -99,9 +101,8 @@ public class ShapeTypes {
 		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
-
-
 	}
+
 	/**
 	 * Insert a new Star shape
 	 * @throws Exception
@@ -112,6 +113,7 @@ public class ShapeTypes {
 		impress.focus();
 		//before insert CallOut Shape
 		sdNavigator.focus();
+		sdNavigator.waitForEnabled( 2.0, 0.1);
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
@@ -125,6 +127,7 @@ public class ShapeTypes {
 		impress.focus();
 		impress.drag(100, 100, 200, 200);
 		sdNavigatorDlg.focus();
+		sdNavigator.waitForEnabled( 2.0, 0.1);
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
@@ -133,7 +136,6 @@ public class ShapeTypes {
 		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
-
 	}
 
 }

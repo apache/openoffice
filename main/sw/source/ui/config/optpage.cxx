@@ -1585,45 +1585,49 @@ void SwShdwCrsrOptionsTabPage::PageCreated( SfxAllItemSet aSet )
 
 sal_Bool SwShdwCrsrOptionsTabPage::FillItemSet( SfxItemSet& rSet )
 {
-	SwShadowCursorItem aOpt;
-	aOpt.SetOn( aOnOffCB.IsChecked() );
+    SwShadowCursorItem aOpt;
+    aOpt.SetOn( aOnOffCB.IsChecked() );
 
-	sal_uInt8 eMode;
-	if( aFillIndentRB.IsChecked() )
-		eMode= FILL_INDENT;
-	else if( aFillMarginRB.IsChecked() )
-		eMode = FILL_MARGIN;
-	else if( aFillTabRB.IsChecked() )
-		eMode = FILL_TAB;
-	else
-		eMode = FILL_SPACE;
-	aOpt.SetMode( eMode );
+    sal_uInt8 eMode;
+    if( aFillIndentRB.IsChecked() )
+        eMode= FILL_INDENT;
+    else if( aFillMarginRB.IsChecked() )
+        eMode = FILL_MARGIN;
+    else if( aFillTabRB.IsChecked() )
+        eMode = FILL_TAB;
+    else
+        eMode = FILL_SPACE;
+    aOpt.SetMode( eMode );
 
-	sal_Bool bRet = sal_False;
-	const SfxPoolItem* pItem = 0;
-	if( SFX_ITEM_SET != rSet.GetItemState( FN_PARAM_SHADOWCURSOR, sal_False, &pItem )
-		||  ((SwShadowCursorItem&)*pItem) != aOpt )
-	{
-		rSet.Put( aOpt );
-		bRet = sal_True;
-	}
+    sal_Bool bRet = sal_False;
+    const SfxPoolItem* pItem = 0;
+    if( SFX_ITEM_SET != rSet.GetItemState( FN_PARAM_SHADOWCURSOR, sal_False, &pItem )
+        ||  ((SwShadowCursorItem&)*pItem) != aOpt )
+    {
+        rSet.Put( aOpt );
+        bRet = sal_True;
+    }
 
-    m_pWrtShell->GetDoc()->set( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT, 
+    if ( m_pWrtShell )
+    {
+        m_pWrtShell->GetDoc()->set(
+            IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT,
             m_aMathBaselineAlignmentCB.IsChecked() );
-    bRet |= m_aMathBaselineAlignmentCB.IsChecked() != m_aMathBaselineAlignmentCB.GetSavedValue();
+        bRet |= m_aMathBaselineAlignmentCB.IsChecked() != m_aMathBaselineAlignmentCB.GetSavedValue();
+    }
 
-	if( aCrsrInProtCB.IsChecked() != aCrsrInProtCB.GetSavedValue())
-	{
-		rSet.Put(SfxBoolItem(FN_PARAM_CRSR_IN_PROTECTED, aCrsrInProtCB.IsChecked()));
-		bRet |= sal_True;
-	}
+    if( aCrsrInProtCB.IsChecked() != aCrsrInProtCB.GetSavedValue())
+    {
+        rSet.Put(SfxBoolItem(FN_PARAM_CRSR_IN_PROTECTED, aCrsrInProtCB.IsChecked()));
+        bRet |= sal_True;
+    }
 
-    const SwDocDisplayItem* pOldAttr = (const SwDocDisplayItem*)
-						GetOldItem(GetItemSet(), FN_PARAM_DOCDISP);
+    const SwDocDisplayItem* pOldAttr =
+        (const SwDocDisplayItem*)GetOldItem(GetItemSet(), FN_PARAM_DOCDISP);
 
-	SwDocDisplayItem aDisp;
-	if(pOldAttr)
-		aDisp = *pOldAttr;
+    SwDocDisplayItem aDisp;
+    if(pOldAttr)
+        aDisp = *pOldAttr;
     //
     aDisp.bParagraphEnd         = aParaCB       .IsChecked();
     aDisp.bTab                  = aTabCB        .IsChecked();
@@ -1636,7 +1640,7 @@ sal_Bool SwShdwCrsrOptionsTabPage::FillItemSet( SfxItemSet& rSet )
     aDisp.bManualBreak          = aBreakCB      .IsChecked();
 
     bRet |= (!pOldAttr || aDisp != *pOldAttr);
-	if(bRet)
+    if(bRet)
         bRet = 0 != rSet.Put(aDisp);
 
     return bRet;
@@ -1644,31 +1648,41 @@ sal_Bool SwShdwCrsrOptionsTabPage::FillItemSet( SfxItemSet& rSet )
 
 void SwShdwCrsrOptionsTabPage::Reset( const SfxItemSet& rSet )
 {
-	const SfxPoolItem* pItem = 0;
+    const SfxPoolItem* pItem = 0;
 
     SwShadowCursorItem aOpt;
-	if( SFX_ITEM_SET == rSet.GetItemState( FN_PARAM_SHADOWCURSOR, sal_False, &pItem ))
-		aOpt = *(SwShadowCursorItem*)pItem;
-	aOnOffCB.Check( aOpt.IsOn() );
+    if( SFX_ITEM_SET == rSet.GetItemState( FN_PARAM_SHADOWCURSOR, sal_False, &pItem ))
+    {
+        aOpt = *(SwShadowCursorItem*)pItem;
+    }
+    aOnOffCB.Check( aOpt.IsOn() );
 
-	sal_uInt8 eMode = aOpt.GetMode();
-	aFillIndentRB.Check( FILL_INDENT == eMode );
-	aFillMarginRB.Check( FILL_MARGIN == eMode );
-	aFillTabRB.Check( FILL_TAB == eMode );
-	aFillSpaceRB.Check( FILL_SPACE == eMode );
+    sal_uInt8 eMode = aOpt.GetMode();
+    aFillIndentRB.Check( FILL_INDENT == eMode );
+    aFillMarginRB.Check( FILL_MARGIN == eMode );
+    aFillTabRB.Check( FILL_TAB == eMode );
+    aFillSpaceRB.Check( FILL_SPACE == eMode );
 
-    m_aMathBaselineAlignmentCB.Check( m_pWrtShell->GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT ) );
-    m_aMathBaselineAlignmentCB.SaveValue();
+    if ( m_pWrtShell )
+    {
+        m_aMathBaselineAlignmentCB.Check( m_pWrtShell->GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT ) );
+        m_aMathBaselineAlignmentCB.SaveValue();
+    }
+    else
+    {
+        m_aMathBaselineAlignmentCB.Disable();
+    }
 
-	if( SFX_ITEM_SET == rSet.GetItemState( FN_PARAM_CRSR_IN_PROTECTED, sal_False, &pItem ))
-		aCrsrInProtCB.Check(((const SfxBoolItem*)pItem)->GetValue());
-	aCrsrInProtCB.SaveValue();
+    if( SFX_ITEM_SET == rSet.GetItemState( FN_PARAM_CRSR_IN_PROTECTED, sal_False, &pItem ))
+    {
+        aCrsrInProtCB.Check(((const SfxBoolItem*)pItem)->GetValue());
+    }
+    aCrsrInProtCB.SaveValue();
 
     const SwDocDisplayItem* pDocDisplayAttr = 0;
 
-	rSet.GetItemState( FN_PARAM_DOCDISP, sal_False,
-									(const SfxPoolItem**)&pDocDisplayAttr );
-	if(pDocDisplayAttr)
+    rSet.GetItemState( FN_PARAM_DOCDISP, sal_False, (const SfxPoolItem**)&pDocDisplayAttr );
+    if(pDocDisplayAttr)
     {
         aParaCB     .Check  (pDocDisplayAttr->bParagraphEnd         );
         aTabCB      .Check  (pDocDisplayAttr->bTab                  );

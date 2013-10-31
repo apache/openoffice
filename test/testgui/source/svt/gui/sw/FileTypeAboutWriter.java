@@ -34,6 +34,7 @@ import static testlib.gui.UIMap.*;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.HashMap;
+import java.util.logging.Level;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -125,8 +126,9 @@ public class FileTypeAboutWriter {
 			swInsertLineButtonOnToolbar.click();
 			writer.focus();
 			for(int j=0;j<10;j++){
-			writer.drag(150+j, 150+j*10, 200+j, 200+j*10);
-			sleep(2);
+				// due to snap-to-grid the lines below will not all be parallel!
+				writer.drag( 150+j, 150+j*10, 200+j, 200+j*10);
+				sleep( 0.5);
 			}
 			typeKeys("<esc>");
 			sleep(2);
@@ -184,6 +186,7 @@ public class FileTypeAboutWriter {
 		HashMap<String, Object>  perf = aoo.getPerfData();
 		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
 				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
+		log.log( Level.INFO, "\t"+testname.getMethodName()+"["+i+"] took "+(end-start)+"ms");
 	}
 
 	

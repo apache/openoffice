@@ -289,12 +289,15 @@ protected:
 	virtual void RestGeoData(const SdrObjGeoData& rGeo);
 	FASTBOOL NbcSetEckenradius(long nRad);
 	FASTBOOL NbcSetAutoGrowHeight(bool bAuto);
-	FASTBOOL NbcSetMinTextFrameHeight(long nHgt);
 	FASTBOOL NbcSetMaxTextFrameHeight(long nHgt);
 	FASTBOOL NbcSetAutoGrowWidth(bool bAuto);
-	FASTBOOL NbcSetMinTextFrameWidth(long nWdt);
 	FASTBOOL NbcSetMaxTextFrameWidth(long nWdt);
 	FASTBOOL NbcSetFitToSize(SdrFitToSizeType eFit);
+
+    // #115391# new method for SdrObjCustomShape and SdrTextObj to correctly handle and set
+    // SdrTextMinFrameWidthItem and SdrTextMinFrameHeightItem based on all settings, necessities
+    // and object sizes
+    virtual void AdaptTextMinSize();
 
 	// Konstruktoren fuer beschriftete Zeichenobjekte
 	SdrTextObj();
@@ -338,7 +341,9 @@ public:
 	FASTBOOL IsOutlText() const { return bTextFrame && (eTextKind==OBJ_OUTLINETEXT || eTextKind==OBJ_TITLETEXT); }
 	SdrObjKind GetTextKind() const { return eTextKind; }
 
-	virtual bool HasText() const;
+    // #121917#
+    virtual bool HasText() const;
+
 	FASTBOOL HasEditText() const;
 	sal_Bool IsTextEditActive() const { return (pEdtOutl != 0L); }
 
