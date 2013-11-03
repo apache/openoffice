@@ -121,7 +121,6 @@ void convert_po::setKey(char *syyText)
   // Activate "look for msg" mode.
   startLook();
 
-
   // skip "#:" and any blanks
   for (syyText += 2; *syyText == ' ' || *syyText == '\t'; ++syyText) ;
   msKey = syyText;

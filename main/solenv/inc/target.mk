@@ -1493,7 +1493,7 @@ $(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME)
 .ENDIF			# "$(LASTRUN_MERGED)"=="TRUE"
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
-        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -v -f $<
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t  $(COMMONMISC)/$(TARGET) -d -v -f $<
 #	$(COMMAND_ECHO)$(TRANSEX) -p $(PRJNAME) -i $(@:b:+"_tmpl")$(@:e) -o $(@:d)/$(@:b:+"_tmpl")$(@:e).$(INPATH) -m $(LOCALIZESDF) -l all
 #    $(COMMAND_ECHO)$(RENAME) $(@:d)$(@:b:+"_tmpl")$(@:e).$(INPATH) $@
 

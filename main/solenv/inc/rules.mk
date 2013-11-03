@@ -693,7 +693,7 @@ $(MISC)/%.sh : %.sh
 $(COMMONMISC)/$(TARGET)/%.ulf : %.ulf
 	@echo "Making: (.ulf)   " $(@:f)
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
-        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(COMMONMISC)/$(TARGET) -v -f $<
+        $(SOLARBINDIR)/genLang merge $(PRJNAME) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -t $(COMMONMISC)/$(TARGET) -v -d -f $<
 
 
 $(COMMONMISC)/$(TARGET)/%.xrb : %.xrb

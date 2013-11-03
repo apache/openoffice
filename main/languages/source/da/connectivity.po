@@ -103,7 +103,7 @@ msgid "This statement type not supported by this database driver."
 msgstr "Denne sætningstype understøttes ikke af denne databasedriver."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
+msgid "An unknown error occurred."
 msgstr "Der opstod en ukendt fejl."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
@@ -115,11 +115,11 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "Biblioteket '$libname$' kunne ikke indlæses."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
+msgid "An error occurred while refreshing the current row."
 msgstr "En fejl opstod under opdatering af den aktuelle række."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
+msgid "An error occurred while getting the current row."
 msgstr "En fejl opstod under læsning af den aktuelle række."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
@@ -136,7 +136,7 @@ msgstr ""
 "Forespørgslen kan ikke udføres. 'IS NULL' kan kun bruges med et kolonnenavn."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
+msgid "Illegal cursor movement occurred."
 msgstr "Der opstod en ulovlig markørbevægelse."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
@@ -347,7 +347,7 @@ msgstr ""
 "installeret."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
 "Indekset kunne ikke slettes. En ukendt fejl opstod under tilgangen til "
 "filsystemet."
@@ -656,14 +656,14 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 #, fuzzy
-msgid "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
 msgstr ""
 "Der opstod en fejl ved forsøg på at oprette forbindelse til "
 "tabelcontaineren."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 #, fuzzy
-msgid "An error occured while creating the table editor dialog."
+msgid "An error occurred while creating the table editor dialog."
 msgstr "En fejl opstod under oprettelse af tabelredigeringsdialogen."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
