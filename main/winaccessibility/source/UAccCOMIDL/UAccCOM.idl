@@ -21,19 +21,9 @@
 
 import "oaidl.idl";
 import "ocidl.idl";
-import "Accessible2.idl";
+
+import "ia2_api_all.idl";
 import "defines.idl";
-import "AccessibleComponent.idl";
-import "AccessibleAction.idl";
-import "AccessibleRelation.idl";
-import "AccessibleTable.idl";
-import "AccessibleText.idl";
-import "AccessibleHyperlink.idl";
-import "AccessibleEditableText.idl";
-import "AccessibleValue.idl";
-import "AccessibleImage.idl";
-import "AccessibleValue.idl";
-import "AccessibleHypertext.idl";
 
 	[
 		object,

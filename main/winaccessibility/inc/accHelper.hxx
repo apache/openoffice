@@ -26,9 +26,6 @@
 #include <com/sun/star/accessibility/AccessibleRole.hpp>
 #include <com/sun/star/accessibility/AccessibleStateType.hpp>
 
-#include "AccessibleRole.h"
-
-
 #include "UAccCOM2.h"
 
 enum DIRECTION

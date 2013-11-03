@@ -26,4 +26,3 @@
 bool IsInMainThread();
 
 vos::IMutex&  GetSolarMutex();
-bool IsBridgeRegisteredAcc();

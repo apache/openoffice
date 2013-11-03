@@ -184,7 +184,6 @@ struct ImplSVAppData
 
 //IAccessibility2 Implementation 2009-----
 	long m_bEnableAccessInterface;
-	long m_mbIsBridgeRegistered;
 //-----IAccessibility2 Implementation 2009
                             DECL_STATIC_LINK( ImplSVAppData, ImplQuitMsg, void* );
                            

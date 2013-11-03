@@ -539,9 +539,6 @@ public:
 private:
 	bool m_bIsEnableAccessInterface;
 };
-
-VCL_DLLPUBLIC bool TestBridgeRegistered();
-VCL_DLLPUBLIC bool IsBridgeRegistered();
 #endif
 //-----IAccessibility2 Implementation 2009
 #endif // _APP_HXX

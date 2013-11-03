@@ -2069,7 +2069,7 @@ sal_Bool InitAccessBridge( sal_Bool bShowCancel, sal_Bool &rCancelled )
 #else
 
 	// Checking TestBridgeRegistered() && HasAtHook() was introduced with IBM's IA2 CWS.
-	if(TestBridgeRegistered() && HasAtHook() )
+	if( HasAtHook() )
 	{
 	    bRet = ImplInitAccessBridge( bShowCancel, rCancelled );
 	    
@@ -2156,31 +2156,3 @@ bool Application::IsEnableAccessInterface()
 void Application::AppEvent( const ApplicationEvent& /*rAppEvent*/ )
 {
 }
-//IAccessible2 Implementation 2009-----
-#ifdef WNT
-bool TestBridgeRegistered()
-{
-	const CLSID CLSID_MAccessible = {0xCF8DF8BA,0x44FE,0x4B10,{0xBD,0x2E,0x8C,0x8C,0xB3,0x22,0x48,0x5F}};
-
-	LPCOLESTR lpMAcc=L"UAccCOM.MAccessible";
-
-	CLSID mid;	
-	bool bReg = false;
-	if(S_OK  == CLSIDFromProgID(lpMAcc,&mid))
-	{
-		if( IsEqualCLSID(mid,CLSID_MAccessible))
-			bReg = true;
-		else
-			bReg = false;
-	}
-
-	ImplGetSVData()->maAppData.m_mbIsBridgeRegistered =bReg;
-	return bReg;
-}
-
-bool IsBridgeRegistered()
-{
-	return ImplGetSVData()->maAppData.m_mbIsBridgeRegistered;;
-}
-#endif
-//-----IAccessible2 Implementation 2009

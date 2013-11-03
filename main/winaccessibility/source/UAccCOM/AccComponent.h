@@ -28,9 +28,6 @@
 
 #include "resource.h"       // main symbols
 
-#include "AccessibleComponent.h"
-
-
 #include <com/sun/star/accessibility/XAccessible.hpp>
 #include <com/sun/star/accessibility/XAccessibleContext.hpp>
 #include <com/sun/star/accessibility/XAccessibleComponent.hpp>

@@ -34,9 +34,6 @@
 #ifndef __ACCCOMMON_H_
 #include "acccommon.h"
 #endif
-#ifndef __AccessibleApplication_h__
-#include "AccessibleApplication.h"
-#endif
 #ifndef _RTL_USTRING_HXX_
 #include <rtl/ustring.hxx>
 #endif

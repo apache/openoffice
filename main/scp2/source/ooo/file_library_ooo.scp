@@ -32,7 +32,7 @@ File gid_File_Lib_Winaccessibility
 End
 File gid_File_Lib_UAccCOM
 	BIN_FILE_BODY;
-	Styles	= (PACKED, SELFREG);
+	Styles	= (PACKED);
 	Dir	= SCP2_OOO_BIN_DIR;
 	Name	= "UAccCOM.dll";
 End

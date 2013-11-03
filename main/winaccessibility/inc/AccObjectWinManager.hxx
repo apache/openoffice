@@ -100,7 +100,6 @@ private:
     mutable ::vos::OMutex maATInterfaceMutex;
 
     AccObjectWinManager(AccObjectManagerAgent* Agent=NULL);
-	bool m_bBridgeRegistered;
 
 private:
     long ImpleGenerateResID();

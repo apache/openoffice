@@ -25,17 +25,7 @@
 #include "UAccCOM2.h"
 
 #include "UAccCOM_i.c"
-#include "Accessible2_i.c"
-#include "AccessibleComponent_i.c"
-#include "AccessibleText_i.c"
-#include "AccessibleEditableText_i.c"
-#include "AccessibleImage_i.c"
-#include "AccessibleTable_i.c"
-#include "AccessibleAction_i.c"
-#include "AccessibleValue_i.c"
-#include "AccessibleHyperText_i.c"
-#include "AccessibleRelation_i.c"
-#include "AccessibleHyperLink_i.c"
+#include "ia2_api_all_i.c"
 
 #include "MAccessible.h"
 #include "EnumVariant.h"

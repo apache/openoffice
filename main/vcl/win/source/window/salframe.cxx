@@ -6219,12 +6219,9 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 				else
 				{
 					if (Application::GetSettings().GetMiscSettings().GetEnableATToolSupport())
-					{						
-						if (!TestBridgeRegistered())
-							break;
+					{
 						// Make sure to launch Accessibiliity only the following criterias are satisfied to avoid RFT interrupts regular acc processing
-						if (g_acc_manager1 == NULL && 
-							IsBridgeRegistered() )
+						if (g_acc_manager1 == NULL)
 						{
 							sal_Bool bCancelled;
 							InitAccessBridge(sal_False,bCancelled);

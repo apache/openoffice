@@ -34,7 +34,3 @@ vos::IMutex& GetSolarMutex()
 {
     return Application::GetSolarMutex();
 }
-bool IsBridgeRegisteredAcc()
-{
-	return IsBridgeRegistered();
-}

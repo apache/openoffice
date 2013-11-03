@@ -37,8 +37,8 @@
 #include "AccEventListener.hxx"
 #include "UAccCOM_i.c"
 #include "AccResource.hxx"
-#include "AccessibleRole.h"
 
+#include "act.hxx"
 
 using namespace std;
 using namespace com::sun::star::uno;
@@ -154,9 +154,11 @@ void AccObject::UpdateValidWindow()
    */
 sal_Bool AccObject::ImplInitilizeCreateObj()
 {
+	ActivateActContext();
 	HRESULT hr = CoCreateInstance( CLSID_MAccessible, NULL, CLSCTX_ALL ,
                                    IID_IMAccessible,
                                    (void **)&m_pIMAcc);
+	DeactivateActContext();
 
     if ( S_OK != hr )
     {

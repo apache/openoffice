@@ -77,16 +77,16 @@ SHL1STDLIBS=\
 				$(CPPUHELPERLIB) \
 				$(TOOLSLIB) \
 				$(TKLIB)		\
-			    uwinapi.lib      \
-				gdi32.lib        \
-				winspool.lib     \
-				ole32.lib        \
-				shell32.lib      \
-				advapi32.lib     \
-				imm32.lib		\
-				uuid.lib			\
-				oleacc.lib			\
 				$(VOSLIB)	\
+			    $(UWINAPILIB)      \
+				$(GDI32LIB)        \
+				$(WINSPOOLLIB)     \
+				$(OLE32LIB)       \
+				$(SHELL32LIB)      \
+				$(ADVAPI32LIB)     \
+				$(IMM32LIB)		\
+				$(UUIDLIB)			\
+				oleacc.lib				
 				
 SHL1OBJS=$(SLOFILES) 
 SHL1VERSIONOBJ=

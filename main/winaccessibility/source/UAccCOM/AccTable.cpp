@@ -28,6 +28,7 @@
 #include <com/sun/star/accessibility/XAccessible.hpp>
 #include "MAccessible.h"
 
+#include "act.hxx"
 
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLETABLEEXTENT_HPP_
 #include <com/sun/star/accessibility/XAccessibleTableSelection.hpp>
@@ -215,10 +216,12 @@ STDMETHODIMP CAccTable::get_columnHeader(IAccessibleTable __RPC_FAR *__RPC_FAR *
     *startingRowIndex = 0 ;
 
     IAccessible* m_pIMacc = NULL;
+	ActivateActContext();
 	HRESULT hr = CoCreateInstance( CLSID_MAccessible, NULL, CLSCTX_ALL ,
                                     IID_IMAccessible,
                                     (void **)&m_pIMacc
                                   );
+	DeactivateActContext();
     ((CMAccessible*)m_pIMacc)->SetXAccessible((long)pRXColumnHeader.get());
     m_pIMacc->QueryInterface(IID_IAccessibleTable,(void **)accessibleTable);
     if( SUCCEEDED(hr) )
@@ -445,10 +448,12 @@ STDMETHODIMP CAccTable::get_rowHeader(IAccessibleTable __RPC_FAR *__RPC_FAR *acc
     *startingColumnIndex = 0 ;
 
     IAccessible* m_pIMacc = NULL;
+	ActivateActContext();
 	HRESULT hr = CoCreateInstance( CLSID_MAccessible, NULL, CLSCTX_ALL ,
                                     IID_IMAccessible,
                                     (void **)&m_pIMacc
                                   );
+	DeactivateActContext();
     ((CMAccessible*)m_pIMacc)->SetXAccessible((long)pRXRowHeader.get());
     m_pIMacc->QueryInterface(IID_IAccessibleTable,(void **)accessibleTable);
     if( SUCCEEDED(hr) )

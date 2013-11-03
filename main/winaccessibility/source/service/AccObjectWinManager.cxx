@@ -44,9 +44,6 @@
 #include "AccTreeEventListener.hxx"
 #include "AccTableEventListener.hxx"
 #include "AccObject.hxx"
-#include "AccessibleEventId.h"
-#include "AccessibleApplication.h"
-#include "AccessibleApplication_i.c"
 #include "unomsaaevent.hxx"
 #include "checkmt.hxx"
 
@@ -90,7 +87,6 @@ AccObjectWinManager::AccObjectWinManager( AccObjectManagerAgent* Agent ):
         pAgent( Agent ),
         oldFocus( NULL )
 {
-	m_bBridgeRegistered =IsBridgeRegisteredAcc();
 }
 
 /**
@@ -223,10 +219,6 @@ sal_Bool AccObjectWinManager::NotifyAccEvent(XAccessible* pXAcc,short state)
 {
     vos::OGuard aGuard(aNotifyMutex);
 
-	if (!m_bBridgeRegistered)
-	{
-		return sal_False;
-	}
     if (!IsInMainThread())
     {
         return sal_False;
@@ -728,10 +720,6 @@ void AccObjectWinManager::InsertAccChildNode( AccObject* pCurObj, AccObject* pPa
    */
 sal_Bool AccObjectWinManager::InsertAccObj( XAccessible* pXAcc,XAccessible* pParentXAcc,HWND pWnd )
 {
-	if (!m_bBridgeRegistered)
-	{
-		return sal_False;
-	}
     XIdToAccObjHash::iterator itXacc = XIdAccList.find( (void*)pXAcc );
     if (itXacc != XIdAccList.end() )
     {

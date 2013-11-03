@@ -97,24 +97,20 @@ EXCEPTIONSFILES= \
 
 SHL1TARGET=$(TARGET)
 SHL1STDLIBS=\
-    oleacc.lib\
-    icuuc.lib\
-    icuin.lib\
+    $(ICUUCLIB)\
+    $(ICUINLIB)\
     $(CPPULIB)\
     $(VCLLIB) \
 	$(SALLIB)\
-	kernel32.lib \
-	user32.lib \
-	advapi32.lib \
-	ole32.lib \
-	oleaut32.lib \
-	delayimp.lib \
-	shlwapi.lib \
-	uuid.lib
+	$(KERNEL32LIB) \
+	$(USER32LIB) \
+	$(ADVAPI32LIB) \
+	$(OLE32LIB) \
+	$(OLEAUT32LIB) \
+	$(SHLWAPILIB) \
+	$(UUIDLIB) \
+	oleacc.lib
 	
-LINKFLAGS += /delayload:sal3.dll \
-             /delayload:cppu3.dll 
-   
 .IF "$(COM)"!="GCC"
 .IF "$(CCNUMVER)" > "001300000000"
 .IF "$(USE_STLP_DEBUG)" != ""
@@ -136,3 +132,11 @@ DEF1NAME= $(TARGET)
 
 # --- Targets ----------------------------------
 .INCLUDE : target.mk
+
+ALLTAR : \
+    $(MISC)/$(TARGET).manifest \
+
+$(MISC)/$(TARGET).manifest: $(BIN)$/$(TARGET)$(DLLPOST)
+	cat *.rgs > $(MISC)$/$(TARGET).rgs
+	mt.exe -rgs:$(MISC)$/$(TARGET).rgs -tlb:$(MISC)$/$(TARGET).tlb -dll:$(TARGET).dll -out:$(MISC)$/$(TARGET).manifest
+	mt.exe -manifest $(MISC)$/$(TARGET).manifest -outputresource:$(BIN)$/$(TARGET)$(DLLPOST)\;\#97
