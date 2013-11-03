@@ -24,7 +24,9 @@
 PRJ=..
 PRJNAME=instsetoo_native
 TARGET=util
-.IF "$(MAKETARGETS)"!="genPO"
+.IF "$(MAKETARGETS)"=="genPO"
+genPO:
+.ELSE
 
 
 .INCLUDE:  settings.mk
@@ -462,3 +464,4 @@ $(MSISDKOOTEMPLATEDIR) $(MSISDKOOTEMPLATEDIR)$/Binary :
 	-$(MKDIRHIER) $@
 $(MSISDKOOTEMPLATEDIR)/% : $(MSISDKOOTEMPLATESOURCE)$/%
 	$(GNUCOPY) $< $@
+.ENDIF
