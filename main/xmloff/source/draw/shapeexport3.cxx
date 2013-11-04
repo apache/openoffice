@@ -19,10 +19,9 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
+
 #include <com/sun/star/drawing/HomogenMatrix.hpp>
 #include <com/sun/star/drawing/PolyPolygonShape3D.hpp>
 #include <com/sun/star/drawing/ProjectionMode.hpp>
@@ -32,10 +31,7 @@
 #include <com/sun/star/drawing/CameraGeometry.hpp>
 #include <com/sun/star/drawing/DoubleSequence.hpp>
 #include <tools/gen.hxx>
-
-#ifndef _XMLOFF_SHAPEEXPORT_HXX
 #include <xmloff/shapeexport.hxx>
-#endif
 #include "sdpropls.hxx"
 #include <tools/debug.hxx>
 #include <rtl/ustrbuf.hxx>
@@ -44,8 +40,12 @@
 #include "xexptran.hxx"
 #include <xmloff/xmltoken.hxx>
 #include <basegfx/vector/b3dvector.hxx>
-
-#include "xmloff/xmlnmspe.hxx"
+#include <xmloff/xmlnmspe.hxx>
+#include <basegfx/polygon/b3dpolypolygon.hxx>
+#include <basegfx/polygon/b3dpolypolygontools.hxx>
+#include <basegfx/matrix/b3dhommatrix.hxx>
+#include <basegfx/polygon/b2dpolypolygon.hxx>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -124,9 +124,6 @@ void XMLShapeExport::ImpExport3DShape(
 		{
 			case XmlShapeTypeDraw3DCubeObject:
 			{
-				// write 3DCube shape
-				SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DR3D, XML_CUBE, sal_True, sal_True);
-
 				// minEdge
 				aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("D3DPosition")));
 				drawing::Position3D aPosition3D;
@@ -158,13 +155,15 @@ void XMLShapeExport::ImpExport3DShape(
 					mrExport.AddAttribute(XML_NAMESPACE_DR3D, XML_MAX_EDGE, aStr);
 				}
 
-				break;
+				// write 3DCube shape
+                // #123542# Do this *after* the attributes are added, else these will be lost since opening
+                // the scope will clear the global attribute list at the exporter
+				SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DR3D, XML_CUBE, sal_True, sal_True);
+
+                break;
 			}
 			case XmlShapeTypeDraw3DSphereObject:
 			{
-				// write 3DSphere shape
-				SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DR3D, XML_SPHERE, sal_True, sal_True);
-
 				// Center
 				aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("D3DPosition")));
 				drawing::Position3D aPosition3D;
@@ -193,109 +192,55 @@ void XMLShapeExport::ImpExport3DShape(
 					mrExport.AddAttribute(XML_NAMESPACE_DR3D, XML_SIZE, aStr);
 				}
 
+				// write 3DSphere shape
+                // #123542# Do this *after* the attributes are added, else these will be lost since opening
+                // the scope will clear the global attribute list at the exporter
+				SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DR3D, XML_SPHERE, sal_True, sal_True);
+
 				break;
 			}
 			case XmlShapeTypeDraw3DLatheObject:
 			case XmlShapeTypeDraw3DExtrudeObject:
 			{
-				// write special 3DLathe/3DExtrude attributes
-				aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("D3DPolyPolygon3D")));
-				drawing::PolyPolygonShape3D xPolyPolygon3D;
-				aAny >>= xPolyPolygon3D;
+                // write special 3DLathe/3DExtrude attributes, get 3D PolyPolygon as drawing::PolyPolygonShape3D
+                aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("D3DPolyPolygon3D")));
+                drawing::PolyPolygonShape3D xPolyPolygon3D;
+                aAny >>= xPolyPolygon3D;
 
-				// look for maximal values
-				double fXMin = 0;
-				double fXMax = 0;
-				double fYMin = 0;
-				double fYMax = 0;
-				sal_Bool bInit(sal_False);
-				sal_Int32 nOuterSequenceCount(xPolyPolygon3D.SequenceX.getLength());
-				drawing::DoubleSequence* pInnerSequenceX = xPolyPolygon3D.SequenceX.getArray();
-				drawing::DoubleSequence* pInnerSequenceY = xPolyPolygon3D.SequenceY.getArray();
+                // convert to 3D PolyPolygon
+                const basegfx::B3DPolyPolygon aPolyPolygon3D(
+                    basegfx::tools::UnoPolyPolygonShape3DToB3DPolyPolygon(
+                        xPolyPolygon3D));
 
-				sal_Int32 a;
-                for (a = 0; a < nOuterSequenceCount; a++)
-				{
-					sal_Int32 nInnerSequenceCount(pInnerSequenceX->getLength());
-					double* pArrayX = pInnerSequenceX->getArray();
-					double* pArrayY = pInnerSequenceY->getArray();
+                // convert to 2D PolyPolygon using identity 3D transformation (just grep X and Y)
+                const basegfx::B3DHomMatrix aB3DHomMatrixFor2DConversion;
+                const basegfx::B2DPolyPolygon aPolyPolygon(
+                    basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(
+                        aPolyPolygon3D,
+                        aB3DHomMatrixFor2DConversion));
 
-					for(sal_Int32 b(0L); b < nInnerSequenceCount; b++)
-					{
-						double fX = *pArrayX++;
-						double fY = *pArrayY++;
+                // get 2D range of it
+                const basegfx::B2DRange aPolyPolygonRange(aPolyPolygon.getB2DRange());
 
-						if(bInit)
-						{
-							if(fX > fXMax)
-								fXMax = fX;
+                // export ViewBox
+                SdXMLImExViewBox aViewBox(
+                    aPolyPolygonRange.getMinX(), 
+                    aPolyPolygonRange.getMinY(), 
+                    aPolyPolygonRange.getWidth(), 
+                    aPolyPolygonRange.getHeight());
 
-							if(fX < fXMin)
-								fXMin = fX;
+                mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString());
 
-							if(fY > fYMax)
-								fYMax = fY;
+                // prepare svg:d string
+                const ::rtl::OUString aPolygonString(
+                    basegfx::tools::exportToSvgD(
+                        aPolyPolygon,
+                        true,           // bUseRelativeCoordinates
+                        false,          // bDetectQuadraticBeziers TTTT: not used in old, but maybe activated now
+                        true));         // bHandleRelativeNextPointCompatible
 
-							if(fY < fYMin)
-								fYMin = fY;
-						}
-						else
-						{
-							fXMin = fXMax = fX;
-							fYMin = fYMax = fY;
-							bInit = sal_True;
-						}
-					}
-
-					pInnerSequenceX++;
-					pInnerSequenceY++;
-				}
-
-				// export ViewBox
-				awt::Point aMinPoint(FRound(fXMin), FRound(fYMin));
-				awt::Size aMaxSize(FRound(fXMax) - aMinPoint.X, FRound(fYMax) - aMinPoint.Y);
-				SdXMLImExViewBox aViewBox(
-					aMinPoint.X, aMinPoint.Y, aMaxSize.Width, aMaxSize.Height);
-				mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, 
-					aViewBox.GetExportString());
-
-				// prepare svx:d element export
-				SdXMLImExSvgDElement aSvgDElement(aViewBox);
-				pInnerSequenceX = xPolyPolygon3D.SequenceX.getArray();
-				pInnerSequenceY = xPolyPolygon3D.SequenceY.getArray();
-
-                for (a = 0; a < nOuterSequenceCount; a++)
-				{
-					sal_Int32 nInnerSequenceCount(pInnerSequenceX->getLength());
-					double* pArrayX = pInnerSequenceX->getArray();
-					double* pArrayY = pInnerSequenceY->getArray();
-					drawing::PointSequence aPoly(nInnerSequenceCount);
-					awt::Point* pInnerSequence = aPoly.getArray();
-
-					for(sal_Int32 b(0L); b < nInnerSequenceCount; b++)
-					{
-						double fX = *pArrayX++;
-						double fY = *pArrayY++;
-
-						*pInnerSequence = awt::Point(FRound(fX), FRound(fY));
-						pInnerSequence++;
-					}
-
-					// calculate closed flag
-					awt::Point* pFirst = aPoly.getArray();
-					awt::Point* pLast = pFirst + (nInnerSequenceCount - 1);
-					sal_Bool bClosed = (pFirst->X == pLast->X && pFirst->Y == pLast->Y);
-
-					aSvgDElement.AddPolygon(&aPoly, 0L, aMinPoint, 
-						aMaxSize, bClosed);
-
-					// #80594# corrected error in PolyPolygon3D export for 3D XML
-					pInnerSequenceX++;
-					pInnerSequenceY++;
-				}
-
-				// write point array
-				mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_D, aSvgDElement.GetExportString());
+                // write point array
+                mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_D, aPolygonString);
 
 				if(eShapeType == XmlShapeTypeDraw3DLatheObject)
 				{

@@ -26,9 +26,10 @@
 
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/vector/b2dvector.hxx>
-#include <vector>
 #include <basegfx/numeric/ftools.hxx>
 #include <basegfx/point/b3dpoint.hxx>
+#include <com/sun/star/drawing/PolyPolygonShape3D.hpp>
+#include <vector>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -144,7 +145,15 @@ namespace basegfx
 		bool equal(const B3DPolyPolygon& rCandidateA, const B3DPolyPolygon& rCandidateB, const double& rfSmallValue);
 		bool equal(const B3DPolyPolygon& rCandidateA, const B3DPolyPolygon& rCandidateB);
 
-	} // end of namespace tools
+        /// converters for com::sun::star::drawing::PolyPolygonShape3D
+        B3DPolyPolygon UnoPolyPolygonShape3DToB3DPolyPolygon(
+            const com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DSource, 
+            bool bCheckClosed = true);
+        void B3DPolyPolygonToUnoPolyPolygonShape3D(
+            const B3DPolyPolygon& rPolyPolygonSource, 
+            com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DRetval);
+
+    } // end of namespace tools
 } // end of namespace basegfx
 
 #endif /* _BGFX_POLYPOLYGON_B3DPOLYGONTOOLS_HXX */
