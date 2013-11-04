@@ -921,26 +921,6 @@ File gid_File_Lib_Mcnttype
   #endif
 End
 
-#if defined(WITH_MOZILLA)
-
-#if !defined(MACOSX) // #i91209# mozilla address books disabled on Mac
-STD_LIB_FILE(gid_File_Lib_Mozab,mozab)
-STD_LIB_FILE(gid_File_Lib_Mozabdrv,mozabdrv)
-#endif
-
-File gid_File_Lib_Mozbootstrap
-    TXT_FILE_BODY;
-    Styles = (PACKED);
-    Dir = SCP2_OOO_BIN_DIR;
-  #ifdef UNX
-    Name = STRING(CONCAT2(libmozbootstrap,UNXSUFFIX));
-  #else
-    Name = "mozbootstrap.dll";
-  #endif
-End
-
-#endif // WITH_MOZILLA 
-
 
 #ifdef SYSTEM_LIBWPD
 STD_LIB_FILE(gid_File_Lib_Wpft,wpft)
@@ -1709,7 +1689,7 @@ STD_LIB_FILE( gid_File_Lib_Smime3, smime3)
 STD_LIB_FILE( gid_File_Lib_Softokn3, softokn3)
 STD_LIB_FILE( gid_File_Lib_Ssl3, ssl3)
 
-#ifndef MACOSX // #i122483# use system sqlite3 on MacOSX
+#ifndef MACOSX // #i108575# use system sqlite3 on MacOSX
 STD_LIB_FILE( gid_File_Lib_Sqlite3, sqlite3)
 #endif
 

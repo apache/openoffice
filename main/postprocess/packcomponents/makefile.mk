@@ -359,13 +359,6 @@ my_components += directx5canvas
 my_components += adabas
 .END
 
-.IF ("$(SYSTEM_MOZILLA)" == "YES") || ("$(WITH_MOZILLA)" == "YES")
-	my_components += mozbootstrap
-	.IF "$(OS)" != "MACOSX" // #i91209# mozilla address books disabled on OSX
-		my_components += mozab
-	.END
-.END
-
 .IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
 my_components += desktopbe1
 .END
