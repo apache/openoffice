@@ -32,314 +32,110 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <rtl/ustring.hxx>
 #include <rtl/math.hxx>
+#include <stringconversiontools.hxx>
 
 namespace basegfx
 {
-	namespace tools
-	{
-        namespace
+    namespace tools
+    {
+        bool PointIndex::operator<(const PointIndex& rComp) const
         {
-            void lcl_skipSpaces(sal_Int32& 				io_rPos, 
-                                const ::rtl::OUString& 	rStr, 
-                                const sal_Int32 		nLen)
+            if(rComp.getPolygonIndex() == getPolygonIndex())
             {
-                while( io_rPos < nLen &&
-                       sal_Unicode(' ') == rStr[io_rPos] )
-                {
-                    ++io_rPos;
-                }
+                return rComp.getPointIndex() < getPointIndex();
             }
 
-            void lcl_skipSpacesAndCommas(sal_Int32& 			io_rPos, 
-                                         const ::rtl::OUString& rStr, 
-                                         const sal_Int32 		nLen)
-            {
-                while(io_rPos < nLen 
-                      && (sal_Unicode(' ') == rStr[io_rPos] || sal_Unicode(',') == rStr[io_rPos]))
-                {
-                    ++io_rPos;
-                }
-            }
-
-            inline bool lcl_isOnNumberChar(const sal_Unicode aChar, bool bSignAllowed = true)
-            {
-                const bool bPredicate( (sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                                       || (bSignAllowed && sal_Unicode('+') == aChar)
-                                       || (bSignAllowed && sal_Unicode('-') == aChar) );
-
-                return bPredicate;
-            }
-
-            inline bool lcl_isOnNumberChar(const ::rtl::OUString& rStr, const sal_Int32 nPos, bool bSignAllowed = true)
-            {
-                return lcl_isOnNumberChar(rStr[nPos],
-                                          bSignAllowed);
-            }
-
-            bool lcl_getDoubleChar(double& 					o_fRetval,
-                                   sal_Int32& 				io_rPos, 
-                                   const ::rtl::OUString& 	rStr, 
-                                   const sal_Int32 			/*nLen*/)
-            {
-                sal_Unicode aChar( rStr[io_rPos] );
-                ::rtl::OUStringBuffer sNumberString;
-
-                if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
-                {
-                    sNumberString.append(rStr[io_rPos]);
-                    aChar = rStr[++io_rPos];
-                }
-
-                while((sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                      || sal_Unicode('.') == aChar)
-                {
-                    sNumberString.append(rStr[io_rPos]);
-                    aChar = rStr[++io_rPos];
-                }
-
-                if(sal_Unicode('e') == aChar || sal_Unicode('E') == aChar)
-                {
-                    sNumberString.append(rStr[io_rPos]);
-                    aChar = rStr[++io_rPos];
-	
-                    if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
-                    {
-                        sNumberString.append(rStr[io_rPos]);
-                        aChar = rStr[++io_rPos];
-                    }
-
-                    while(sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                    {
-                        sNumberString.append(rStr[io_rPos]);
-                        aChar = rStr[++io_rPos];
-                    }
-                }
-
-                if(sNumberString.getLength())
-                {
-                    rtl_math_ConversionStatus eStatus;
-                    o_fRetval = ::rtl::math::stringToDouble( sNumberString.makeStringAndClear(), 
-                                                             (sal_Unicode)('.'), 
-                                                             (sal_Unicode)(','), 
-                                                             &eStatus, 
-                                                             NULL );
-                    return ( eStatus == rtl_math_ConversionStatus_Ok );
-                }
-
-                return false;
-            }
-
-            bool lcl_importDoubleAndSpaces( double& 				o_fRetval, 
-                                            sal_Int32& 				io_rPos, 
-                                            const ::rtl::OUString& 	rStr, 
-                                            const sal_Int32 		nLen )
-            {
-                if( !lcl_getDoubleChar(o_fRetval, io_rPos, rStr, nLen) )
-                    return false;
-
-                lcl_skipSpacesAndCommas(io_rPos, rStr, nLen);
-
-                return true;
-            }
-
-            bool lcl_importNumberAndSpaces(sal_Int32&                o_nRetval,
-                                           sal_Int32& 				io_rPos, 
-                                           const ::rtl::OUString& 	rStr, 
-                                           const sal_Int32 		nLen)
-            {
-                sal_Unicode aChar( rStr[io_rPos] );
-                ::rtl::OUStringBuffer sNumberString;
-
-                if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
-                {
-                    sNumberString.append(rStr[io_rPos]);
-                    aChar = rStr[++io_rPos];
-                }
-
-                while(sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                {
-                    sNumberString.append(rStr[io_rPos]);
-                    aChar = rStr[++io_rPos];
-                }
-
-                if(sNumberString.getLength())
-                {
-                    o_nRetval = sNumberString.makeStringAndClear().toInt32();
-                    lcl_skipSpacesAndCommas(io_rPos, rStr, nLen);
-
-                    return true;
-                }
-
-                return false;
-            }
-
-            void lcl_skipNumber(sal_Int32& 				io_rPos, 
-                                const ::rtl::OUString& 	rStr, 
-                                const sal_Int32 		nLen)
-            {
-                bool bSignAllowed(true);
-
-                while(io_rPos < nLen && lcl_isOnNumberChar(rStr, io_rPos, bSignAllowed))
-                {
-                    bSignAllowed = false;
-                    ++io_rPos;
-                }
-            }
-
-            void lcl_skipDouble(sal_Int32& 				io_rPos, 
-                                const ::rtl::OUString& 	rStr, 
-                                const sal_Int32 		/*nLen*/)
-            {
-                sal_Unicode aChar( rStr[io_rPos] );
-
-                if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
-                    aChar = rStr[++io_rPos];
-
-                while((sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                      || sal_Unicode('.') == aChar)
-                {
-                    aChar = rStr[++io_rPos];
-                }
-
-                if(sal_Unicode('e') == aChar || sal_Unicode('E') == aChar)
-                {
-                    aChar = rStr[++io_rPos];
-	
-                    if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
-                        aChar = rStr[++io_rPos];
-
-                    while(sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
-                    {
-                        aChar = rStr[++io_rPos];
-                    }
-                }
-            }
-            void lcl_skipNumberAndSpacesAndCommas(sal_Int32& 				io_rPos, 
-                                                  const ::rtl::OUString& 	rStr, 
-                                                  const sal_Int32 			nLen)
-            {
-                lcl_skipNumber(io_rPos, rStr, nLen);
-                lcl_skipSpacesAndCommas(io_rPos, rStr, nLen);
-            }
-
-			// #100617# Allow to skip doubles, too.
-            void lcl_skipDoubleAndSpacesAndCommas(sal_Int32& 				io_rPos, 
-                                                  const ::rtl::OUString& 	rStr, 
-                                                  const sal_Int32 			nLen)
-            {
-                lcl_skipDouble(io_rPos, rStr, nLen);
-                lcl_skipSpacesAndCommas(io_rPos, rStr, nLen);
-            }
-
-            void lcl_putNumberChar( ::rtl::OUStringBuffer& rStr, 
-                                    double 		 	       fValue )
-            {
-                rStr.append( fValue );
-            }
-
-            void lcl_putNumberCharWithSpace( ::rtl::OUStringBuffer& rStr, 
-                                             double 		        fValue,
-                                             double 		        fOldValue,
-                                             bool 			        bUseRelativeCoordinates )
-            {
-                if( bUseRelativeCoordinates )
-                    fValue -= fOldValue;
-
-                const sal_Int32 aLen( rStr.getLength() );
-                if(aLen)
-                {
-                    if( lcl_isOnNumberChar(rStr.charAt(aLen - 1), false) && 
-                        fValue >= 0.0 )
-                    {
-                        rStr.append( sal_Unicode(' ') );
-                    }
-                }
-
-                lcl_putNumberChar(rStr, fValue);
-            }
-
-            inline sal_Unicode lcl_getCommand( sal_Char cUpperCaseCommand,
-                                               sal_Char cLowerCaseCommand,
-                                               bool 	bUseRelativeCoordinates )
-            {
-                return bUseRelativeCoordinates ? cLowerCaseCommand : cUpperCaseCommand;
-            }
+            return rComp.getPolygonIndex() < getPolygonIndex();
         }
 
-        bool importFromSvgD(B2DPolyPolygon& o_rPolyPolygon, const ::rtl::OUString& 	rSvgDStatement)
+        bool importFromSvgD(
+            B2DPolyPolygon& o_rPolyPolygon, 
+            const ::rtl::OUString& rSvgDStatement,
+            bool bHandleRelativeNextPointCompatible, 
+            PointIndexSet* pHelpPointIndexSet)
         {
             o_rPolyPolygon.clear();
             const sal_Int32 nLen(rSvgDStatement.getLength());
             sal_Int32 nPos(0);
-            bool bIsClosed(false);
             double nLastX( 0.0 );
             double nLastY( 0.0 );
-			B2DPolygon aCurrPoly;
+            B2DPolygon aCurrPoly;
 
-			// skip initial whitespace
-            lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+            // skip initial whitespace
+            ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
             while(nPos < nLen)
             {
                 bool bRelative(false);
-                bool bMoveTo(false);
                 const sal_Unicode aCurrChar(rSvgDStatement[nPos]);
+
+                if(o_rPolyPolygon.count() && !aCurrPoly.count() && !('m' == aCurrChar || 'M' == aCurrChar))
+                {
+                    // we have a new sub-polygon starting, but without a 'moveto' command.
+                    // this requires to add the current point as start point to the polygon
+                    // (see SVG1.1 8.3.3 The "closepath" command)
+                    aCurrPoly.append(B2DPoint(nLastX, nLastY));
+                }
 
                 switch(aCurrChar)
                 {
                     case 'z' :
                     case 'Z' :
                     {
+                        // consume CurrChar and whitespace
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        // remember closed state of current polygon
-                        bIsClosed = true;
+                        // create closed polygon and reset import values
+                        if(aCurrPoly.count())
+                        {
+                            if(!bHandleRelativeNextPointCompatible)
+                            {
+                                // SVG defines that "the next subpath starts at the 
+                                // same initial point as the current subpath", so set the
+                                // current point if we do not need to be compatible
+                                nLastX = aCurrPoly.getB2DPoint(0).getX();
+                                nLastY = aCurrPoly.getB2DPoint(0).getY();
+                            }
+
+                            aCurrPoly.setClosed(true);
+                            o_rPolyPolygon.append(aCurrPoly);
+                            aCurrPoly.clear();
+                        }
+
                         break;
                     }
-				
+
                     case 'm' :
                     case 'M' :
                     {
-                        bMoveTo = true;
-                        // FALLTHROUGH intended
+                        // create non-closed polygon and reset import values
+                        if(aCurrPoly.count())
+                        {
+                            o_rPolyPolygon.append(aCurrPoly);
+                            aCurrPoly.clear();
+                        }
+
+                        // FALLTHROUGH intended to add coordinate data as 1st point of new polygon
                     }
                     case 'l' :
                     case 'L' :
                     {
                         if('m' == aCurrChar || 'l' == aCurrChar)
-						{
-                            bRelative = true;
-						}
-
-                        if(bMoveTo)
                         {
-							// new polygon start, finish old one
-                            if(aCurrPoly.count())
-                            {
-								// add current polygon
-								if(bIsClosed)
-								{
-									closeWithGeometryChange(aCurrPoly);
-								}
-                                
-								o_rPolyPolygon.append(aCurrPoly);
-                                
-								// reset import values
-								bIsClosed = false;
-                                aCurrPoly.clear();
-                            }
+                            bRelative = true;
                         }
 
+                        // consume CurrChar and whitespace
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
 
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -350,7 +146,7 @@ namespace basegfx
                             // set last position
                             nLastX = nX;
                             nLastY = nY;
-						
+                        
                             // add point
                             aCurrPoly.append(B2DPoint(nX, nY));
                         }
@@ -365,28 +161,28 @@ namespace basegfx
                     case 'H' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY(nLastY);
 
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
-							{
+                            {
                                 nX += nLastX;
-							}
+                            }
 
                             // set last position
                             nLastX = nX;
-						
+                        
                             // add point
                             aCurrPoly.append(B2DPoint(nX, nY));
                         }
                         break;
                     }
-				
+                
                     case 'v' :
                     {
                         bRelative = true;
@@ -395,28 +191,28 @@ namespace basegfx
                     case 'V' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX(nLastX), nY;
 
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
-							{
+                            {
                                 nY += nLastY;
-							}
+                            }
 
                             // set last position
                             nLastY = nY;
-						
+                        
                             // add point
                             aCurrPoly.append(B2DPoint(nX, nY));
                         }
                         break;
                     }
-				
+                
                     case 's' :
                     {
                         bRelative = true;
@@ -425,17 +221,17 @@ namespace basegfx
                     case 'S' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
                             double nX2, nY2;
 
-                            if(!lcl_importDoubleAndSpaces(nX2, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY2, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX2, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY2, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -445,29 +241,29 @@ namespace basegfx
                                 nY += nLastY;
                             }
 
-							// ensure existance of start point
-							if(!aCurrPoly.count())
-							{
+                            // ensure existance of start point
+                            if(!aCurrPoly.count())
+                            {
                                 aCurrPoly.append(B2DPoint(nLastX, nLastY));
-							}
+                            }
 
-							// get first control point. It's the reflection of the PrevControlPoint
-							// of the last point. If not existent, use current point (see SVG)
-							B2DPoint aPrevControl(B2DPoint(nLastX, nLastY));
-							const sal_uInt32 nIndex(aCurrPoly.count() - 1);
+                            // get first control point. It's the reflection of the PrevControlPoint
+                            // of the last point. If not existent, use current point (see SVG)
+                            B2DPoint aPrevControl(B2DPoint(nLastX, nLastY));
+                            const sal_uInt32 nIndex(aCurrPoly.count() - 1);
 
-							if(aCurrPoly.areControlPointsUsed() && aCurrPoly.isPrevControlPointUsed(nIndex))
-							{
-								const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(nIndex));
-								const B2DPoint aPrevControlPoint(aCurrPoly.getPrevControlPoint(nIndex));
+                            if(aCurrPoly.areControlPointsUsed() && aCurrPoly.isPrevControlPointUsed(nIndex))
+                            {
+                                const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(nIndex));
+                                const B2DPoint aPrevControlPoint(aCurrPoly.getPrevControlPoint(nIndex));
 
-								// use mirrored previous control point
-								aPrevControl.setX((2.0 * aPrevPoint.getX()) - aPrevControlPoint.getX());
-								aPrevControl.setY((2.0 * aPrevPoint.getY()) - aPrevControlPoint.getY());
-							}
+                                // use mirrored previous control point
+                                aPrevControl.setX((2.0 * aPrevPoint.getX()) - aPrevControlPoint.getX());
+                                aPrevControl.setY((2.0 * aPrevPoint.getY()) - aPrevControlPoint.getY());
+                            }
 
-							// append curved edge
-							aCurrPoly.appendBezierSegment(aPrevControl, B2DPoint(nX2, nY2), B2DPoint(nX, nY));
+                            // append curved edge
+                            aCurrPoly.appendBezierSegment(aPrevControl, B2DPoint(nX2, nY2), B2DPoint(nX, nY));
 
                             // set last position
                             nLastX = nX;
@@ -475,7 +271,7 @@ namespace basegfx
                         }
                         break;
                     }
-				
+                
                     case 'c' :
                     {
                         bRelative = true;
@@ -484,20 +280,20 @@ namespace basegfx
                     case 'C' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
                             double nX1, nY1;
                             double nX2, nY2;
 
-                            if(!lcl_importDoubleAndSpaces(nX1, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY1, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nX2, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY2, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX1, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY1, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX2, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY2, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -509,14 +305,14 @@ namespace basegfx
                                 nY += nLastY;
                             }
 
-							// ensure existance of start point
-							if(!aCurrPoly.count())
-							{
+                            // ensure existance of start point
+                            if(!aCurrPoly.count())
+                            {
                                 aCurrPoly.append(B2DPoint(nLastX, nLastY));
-							}
+                            }
 
-							// append curved edge
-							aCurrPoly.appendBezierSegment(B2DPoint(nX1, nY1), B2DPoint(nX2, nY2), B2DPoint(nX, nY));
+                            // append curved edge
+                            aCurrPoly.appendBezierSegment(B2DPoint(nX1, nY1), B2DPoint(nX2, nY2), B2DPoint(nX, nY));
 
                             // set last position
                             nLastX = nX;
@@ -524,7 +320,7 @@ namespace basegfx
                         }
                         break;
                     }
-				
+                
                     // #100617# quadratic beziers are imported as cubic ones
                     case 'q' :
                     {
@@ -534,17 +330,17 @@ namespace basegfx
                     case 'Q' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
                             double nX1, nY1;
 
-                            if(!lcl_importDoubleAndSpaces(nX1, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY1, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX1, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY1, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -560,14 +356,14 @@ namespace basegfx
                             const double nX2Prime((nX1 * 2.0 + nX) / 3.0);
                             const double nY2Prime((nY1 * 2.0 + nY) / 3.0);
 
-							// ensure existance of start point
-							if(!aCurrPoly.count())
-							{
+                            // ensure existance of start point
+                            if(!aCurrPoly.count())
+                            {
                                 aCurrPoly.append(B2DPoint(nLastX, nLastY));
-							}
+                            }
 
-							// append curved edge
-							aCurrPoly.appendBezierSegment(B2DPoint(nX1Prime, nY1Prime), B2DPoint(nX2Prime, nY2Prime), B2DPoint(nX, nY));
+                            // append curved edge
+                            aCurrPoly.appendBezierSegment(B2DPoint(nX1Prime, nY1Prime), B2DPoint(nX2Prime, nY2Prime), B2DPoint(nX, nY));
 
                             // set last position
                             nLastX = nX;
@@ -575,7 +371,7 @@ namespace basegfx
                         }
                         break;
                     }
-				
+                
                     // #100617# relative quadratic beziers are imported as cubic
                     case 't' :
                     {
@@ -585,14 +381,14 @@ namespace basegfx
                     case 'T' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
 
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -600,49 +396,49 @@ namespace basegfx
                                 nY += nLastY;
                             }
 
-							// ensure existance of start point
-							if(!aCurrPoly.count())
-							{
+                            // ensure existance of start point
+                            if(!aCurrPoly.count())
+                            {
                                 aCurrPoly.append(B2DPoint(nLastX, nLastY));
-							}
+                            }
 
-							// get first control point. It's the reflection of the PrevControlPoint
-							// of the last point. If not existent, use current point (see SVG)
-							B2DPoint aPrevControl(B2DPoint(nLastX, nLastY));
-							const sal_uInt32 nIndex(aCurrPoly.count() - 1);
-							const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(nIndex));
+                            // get first control point. It's the reflection of the PrevControlPoint
+                            // of the last point. If not existent, use current point (see SVG)
+                            B2DPoint aPrevControl(B2DPoint(nLastX, nLastY));
+                            const sal_uInt32 nIndex(aCurrPoly.count() - 1);
+                            const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(nIndex));
 
-							if(aCurrPoly.areControlPointsUsed() && aCurrPoly.isPrevControlPointUsed(nIndex))
-							{
-								const B2DPoint aPrevControlPoint(aCurrPoly.getPrevControlPoint(nIndex));
+                            if(aCurrPoly.areControlPointsUsed() && aCurrPoly.isPrevControlPointUsed(nIndex))
+                            {
+                                const B2DPoint aPrevControlPoint(aCurrPoly.getPrevControlPoint(nIndex));
 
-								// use mirrored previous control point
-								aPrevControl.setX((2.0 * aPrevPoint.getX()) - aPrevControlPoint.getX());
-								aPrevControl.setY((2.0 * aPrevPoint.getY()) - aPrevControlPoint.getY());
-							}
+                                // use mirrored previous control point
+                                aPrevControl.setX((2.0 * aPrevPoint.getX()) - aPrevControlPoint.getX());
+                                aPrevControl.setY((2.0 * aPrevPoint.getY()) - aPrevControlPoint.getY());
+                            }
 
-							if(!aPrevControl.equal(aPrevPoint))
-							{
-								// there is a prev control point, and we have the already mirrored one
-								// in aPrevControl. We also need the quadratic control point for this
-								// new quadratic segment to calculate the 2nd cubic control point
-								const B2DPoint aQuadControlPoint(
-									((3.0 * aPrevControl.getX()) - aPrevPoint.getX()) / 2.0,
-									((3.0 * aPrevControl.getY()) - aPrevPoint.getY()) / 2.0);
-								
-								// calculate the cubic bezier coefficients from the quadratic ones.
-								const double nX2Prime((aQuadControlPoint.getX() * 2.0 + nX) / 3.0);
-								const double nY2Prime((aQuadControlPoint.getY() * 2.0 + nY) / 3.0);
-								
-								// append curved edge, use mirrored cubic control point directly
-								aCurrPoly.appendBezierSegment(aPrevControl, B2DPoint(nX2Prime, nY2Prime), B2DPoint(nX, nY));
-							}
-							else
-							{
-								// when no previous control, SVG says to use current point -> straight line.
-								// Just add end point
-								aCurrPoly.append(B2DPoint(nX, nY));
-							}
+                            if(!aPrevControl.equal(aPrevPoint))
+                            {
+                                // there is a prev control point, and we have the already mirrored one
+                                // in aPrevControl. We also need the quadratic control point for this
+                                // new quadratic segment to calculate the 2nd cubic control point
+                                const B2DPoint aQuadControlPoint(
+                                    ((3.0 * aPrevControl.getX()) - aPrevPoint.getX()) / 2.0,
+                                    ((3.0 * aPrevControl.getY()) - aPrevPoint.getY()) / 2.0);
+                                
+                                // calculate the cubic bezier coefficients from the quadratic ones.
+                                const double nX2Prime((aQuadControlPoint.getX() * 2.0 + nX) / 3.0);
+                                const double nY2Prime((aQuadControlPoint.getY() * 2.0 + nY) / 3.0);
+                                
+                                // append curved edge, use mirrored cubic control point directly
+                                aCurrPoly.appendBezierSegment(aPrevControl, B2DPoint(nX2Prime, nY2Prime), B2DPoint(nX, nY));
+                            }
+                            else
+                            {
+                                // when no previous control, SVG says to use current point -> straight line.
+                                // Just add end point
+                                aCurrPoly.append(B2DPoint(nX, nY));
+                            }
 
                             // set last position
                             nLastX = nX;
@@ -659,21 +455,21 @@ namespace basegfx
                     case 'A' :
                     {
                         nPos++;
-                        lcl_skipSpaces(nPos, rSvgDStatement, nLen);
+                        ::basegfx::internal::lcl_skipSpaces(nPos, rSvgDStatement, nLen);
 
-                        while(nPos < nLen && lcl_isOnNumberChar(rSvgDStatement, nPos))
+                        while(nPos < nLen && ::basegfx::internal::lcl_isOnNumberChar(rSvgDStatement, nPos))
                         {
                             double nX, nY;
                             double fRX, fRY, fPhi;
                             sal_Int32 bLargeArcFlag, bSweepFlag;
 
-                            if(!lcl_importDoubleAndSpaces(fRX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(fRY, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(fPhi, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importNumberAndSpaces(bLargeArcFlag, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importNumberAndSpaces(bSweepFlag, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
-                            if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(fRX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(fRY, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(fPhi, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importNumberAndSpaces(bLargeArcFlag, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importNumberAndSpaces(bSweepFlag, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgDStatement, nLen)) return false;
+                            if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgDStatement, nLen)) return false;
 
                             if(bRelative)
                             {
@@ -681,7 +477,7 @@ namespace basegfx
                                 nY += nLastY;
                             }
 
-							const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(aCurrPoly.count() - 1));
+                            const B2DPoint aPrevPoint(aCurrPoly.getB2DPoint(aCurrPoly.count() - 1));
 
                             if( nX == nLastX && nY == nLastY )
                                 continue; // start==end -> skip according to SVG spec
@@ -816,7 +612,22 @@ namespace basegfx
                                 // if we swapped angles above
                                 if( bFlipSegment )
                                     aSegment.flip();
+
+                                // remember PointIndex of evtl. added pure helper points
+                                sal_uInt32 nPointIndex(aCurrPoly.count() + 1);
                                 aCurrPoly.append(aSegment);
+
+                                // if asked for, mark pure helper points by adding them to the index list of
+                                // helper points
+                                if(pHelpPointIndexSet && aCurrPoly.count() > 1)
+                                {
+                                    const sal_uInt32 nPolyIndex(o_rPolyPolygon.count());
+
+                                    for(;nPointIndex + 1 < aCurrPoly.count(); nPointIndex++)
+                                    {
+                                        pHelpPointIndexSet->insert(PointIndex(nPolyIndex, nPointIndex));
+                                    }
+                                }
                             }
 
                             // set last position
@@ -836,15 +647,10 @@ namespace basegfx
                 }
             }
 
+            // if there is polygon data, create non-closed polygon
             if(aCurrPoly.count())
             {
-                // end-process last poly
-				if(bIsClosed)
-				{
-					closeWithGeometryChange(aCurrPoly);
-				}
-
-				o_rPolyPolygon.append(aCurrPoly);
+                o_rPolyPolygon.append(aCurrPoly);
             }
 
             return true;
@@ -859,27 +665,51 @@ namespace basegfx
             double nX, nY;
 
             // skip initial whitespace
-            lcl_skipSpaces(nPos, rSvgPointsAttribute, nLen);
+            ::basegfx::internal::lcl_skipSpaces(nPos, rSvgPointsAttribute, nLen);
 
             while(nPos < nLen)
             {
-                if(!lcl_importDoubleAndSpaces(nX, nPos, rSvgPointsAttribute, nLen)) return false;
-                if(!lcl_importDoubleAndSpaces(nY, nPos, rSvgPointsAttribute, nLen)) return false;
+                if(!::basegfx::internal::lcl_importDoubleAndSpaces(nX, nPos, rSvgPointsAttribute, nLen)) return false;
+                if(!::basegfx::internal::lcl_importDoubleAndSpaces(nY, nPos, rSvgPointsAttribute, nLen)) return false;
                 
                 // add point        
                 o_rPoly.append(B2DPoint(nX, nY));
 
                 // skip to next number, or finish
-                lcl_skipSpaces(nPos, rSvgPointsAttribute, nLen);
+                ::basegfx::internal::lcl_skipSpaces(nPos, rSvgPointsAttribute, nLen);
             }
 
             return true;
         }
 
+        ::rtl::OUString exportToSvgPoints( const B2DPolygon& rPoly )
+        {
+            OSL_ENSURE(!rPoly.areControlPointsUsed(), "exportToSvgPoints: Only non-bezier polygons allowed (!)");
+            const sal_uInt32 nPointCount(rPoly.count());
+            ::rtl::OUStringBuffer aResult;
+
+            for(sal_uInt32 a(0); a < nPointCount; a++)
+            {
+                const basegfx::B2DPoint aPoint(rPoly.getB2DPoint(a));
+
+                if(a)
+                {
+                    aResult.append(sal_Unicode(' '));
+                }
+
+                ::basegfx::internal::lcl_putNumberChar(aResult, aPoint.getX());
+                aResult.append(sal_Unicode(','));
+                ::basegfx::internal::lcl_putNumberChar(aResult, aPoint.getY());
+            }
+
+            return aResult.makeStringAndClear();
+        }
+
         ::rtl::OUString exportToSvgD(
-			const B2DPolyPolygon& rPolyPolygon,
-			bool bUseRelativeCoordinates, 
-			bool bDetectQuadraticBeziers)
+            const B2DPolyPolygon& rPolyPolygon,
+            bool bUseRelativeCoordinates, 
+            bool bDetectQuadraticBeziers,
+            bool bHandleRelativeNextPointCompatible)
         {
             const sal_uInt32 nCount(rPolyPolygon.count());
             ::rtl::OUStringBuffer aResult;
@@ -890,217 +720,235 @@ namespace basegfx
                 const B2DPolygon aPolygon(rPolyPolygon.getB2DPolygon(i));
                 const sal_uInt32 nPointCount(aPolygon.count());
 
-				if(nPointCount)
-				{
-					const bool bPolyUsesControlPoints(aPolygon.areControlPointsUsed());
-					const sal_uInt32 nEdgeCount(aPolygon.isClosed() ? nPointCount : nPointCount - 1);
-					sal_Unicode aLastSVGCommand(' '); // last SVG command char
-					B2DPoint aLeft, aRight; // for quadratic bezier test
+                if(nPointCount)
+                {
+                    const bool bPolyUsesControlPoints(aPolygon.areControlPointsUsed());
+                    const sal_uInt32 nEdgeCount(aPolygon.isClosed() ? nPointCount : nPointCount - 1);
+                    sal_Unicode aLastSVGCommand(' '); // last SVG command char
+                    B2DPoint aLeft, aRight; // for quadratic bezier test
 
-					// handle polygon start point
-					B2DPoint aEdgeStart(aPolygon.getB2DPoint(0));
-                    aResult.append(lcl_getCommand('M', 'm', bUseRelativeCoordinates));
-					lcl_putNumberCharWithSpace(aResult, aEdgeStart.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-					lcl_putNumberCharWithSpace(aResult, aEdgeStart.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-					aLastSVGCommand =  lcl_getCommand('L', 'l', bUseRelativeCoordinates);
-					aCurrentSVGPosition = aEdgeStart;
+                    // handle polygon start point
+                    B2DPoint aEdgeStart(aPolygon.getB2DPoint(0));
+                    bool bUseRelativeCoordinatesForFirstPoint(bUseRelativeCoordinates);
 
-					for(sal_uInt32 nIndex(0); nIndex < nEdgeCount; nIndex++)
-					{
-						// prepare access to next point
-						const sal_uInt32 nNextIndex((nIndex + 1) % nPointCount);
-						const B2DPoint aEdgeEnd(aPolygon.getB2DPoint(nNextIndex));
+                    if(bHandleRelativeNextPointCompatible)
+                    {
+                        // To get around the error that the start point for the next polygon is the
+                        // start point of the current one (and not the last as it was handled up to now)
+                        // do force to write an absolute 'M' command as start for the next polygon
+                        bUseRelativeCoordinatesForFirstPoint = false;
+                    }
 
-						// handle edge from (aEdgeStart, aEdgeEnd) using indices (nIndex, nNextIndex)
-						const bool bEdgeIsBezier(bPolyUsesControlPoints 
-							&& (aPolygon.isNextControlPointUsed(nIndex) || aPolygon.isPrevControlPointUsed(nNextIndex)));
+                    // Write 'moveto' and the 1st coordinates, set aLastSVGCommand to 'lineto'
+                    aResult.append(::basegfx::internal::lcl_getCommand('M', 'm', bUseRelativeCoordinatesForFirstPoint));
+                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeStart.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinatesForFirstPoint);
+                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeStart.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinatesForFirstPoint);
+                    aLastSVGCommand =  ::basegfx::internal::lcl_getCommand('L', 'l', bUseRelativeCoordinatesForFirstPoint);
+                    aCurrentSVGPosition = aEdgeStart;
 
-						if(bEdgeIsBezier)
-						{
-							// handle bezier edge
-							const B2DPoint aControlEdgeStart(aPolygon.getNextControlPoint(nIndex));
-							const B2DPoint aControlEdgeEnd(aPolygon.getPrevControlPoint(nNextIndex));
-							bool bIsQuadraticBezier(false);
+                    for(sal_uInt32 nIndex(0); nIndex < nEdgeCount; nIndex++)
+                    {
+                        // prepare access to next point
+                        const sal_uInt32 nNextIndex((nIndex + 1) % nPointCount);
+                        const B2DPoint aEdgeEnd(aPolygon.getB2DPoint(nNextIndex));
 
-							// check continuity at current edge's start point. For SVG, do NOT use an
-							// existing continuity since no 'S' or 's' statement should be written. At 
-							// import, that 'previous' control vector is not available. SVG documentation 
-							// says for interpretation:
-							//
-							// "(If there is no previous command or if the previous command was 
-							// not an C, c, S or s, assume the first control point is coincident 
-							// with the current point.)"
-							//
-							// That's what is done from our import, so avoid exporting it as first statement
-							// is necessary.
-							const bool bSymmetricAtEdgeStart(
-								0 != nIndex 
-								&& CONTINUITY_C2 == aPolygon.getContinuityInPoint(nIndex));
+                        // handle edge from (aEdgeStart, aEdgeEnd) using indices (nIndex, nNextIndex)
+                        const bool bEdgeIsBezier(bPolyUsesControlPoints 
+                            && (aPolygon.isNextControlPointUsed(nIndex) || aPolygon.isPrevControlPointUsed(nNextIndex)));
 
-							if(bDetectQuadraticBeziers)
-							{
-								// check for quadratic beziers - that's
-								// the case if both control points are in
-								// the same place when they are prolonged
-								// to the common quadratic control point
-								//
-								// Left: P = (3P1 - P0) / 2 
-								// Right: P = (3P2 - P3) / 2
-								aLeft = B2DPoint((3.0 * aControlEdgeStart - aEdgeStart) / 2.0);
-								aRight= B2DPoint((3.0 * aControlEdgeEnd - aEdgeEnd) / 2.0);
-								bIsQuadraticBezier = aLeft.equal(aRight);
-							}
+                        if(bEdgeIsBezier)
+                        {
+                            // handle bezier edge
+                            const B2DPoint aControlEdgeStart(aPolygon.getNextControlPoint(nIndex));
+                            const B2DPoint aControlEdgeEnd(aPolygon.getPrevControlPoint(nNextIndex));
+                            bool bIsQuadraticBezier(false);
 
-							if(bIsQuadraticBezier)
-							{
-								// approximately equal, export as quadratic bezier
-								if(bSymmetricAtEdgeStart)
-								{
-									const sal_Unicode aCommand(lcl_getCommand('T', 't', bUseRelativeCoordinates));
+                            // check continuity at current edge's start point. For SVG, do NOT use an
+                            // existing continuity since no 'S' or 's' statement should be written. At 
+                            // import, that 'previous' control vector is not available. SVG documentation 
+                            // says for interpretation:
+                            //
+                            // "(If there is no previous command or if the previous command was 
+                            // not an C, c, S or s, assume the first control point is coincident 
+                            // with the current point.)"
+                            //
+                            // That's what is done from our import, so avoid exporting it as first statement
+                            // is necessary.
+                            const bool bSymmetricAtEdgeStart(
+                                0 != nIndex 
+                                && CONTINUITY_C2 == aPolygon.getContinuityInPoint(nIndex));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                            if(bDetectQuadraticBeziers)
+                            {
+                                // check for quadratic beziers - that's
+                                // the case if both control points are in
+                                // the same place when they are prolonged
+                                // to the common quadratic control point
+                                //
+                                // Left: P = (3P1 - P0) / 2 
+                                // Right: P = (3P2 - P3) / 2
+                                aLeft = B2DPoint((3.0 * aControlEdgeStart - aEdgeStart) / 2.0);
+                                aRight= B2DPoint((3.0 * aControlEdgeEnd - aEdgeEnd) / 2.0);
+                                bIsQuadraticBezier = aLeft.equal(aRight);
+                            }
+
+                            if(bIsQuadraticBezier)
+                            {
+                                // approximately equal, export as quadratic bezier
+                                if(bSymmetricAtEdgeStart)
+                                {
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('T', 't', bUseRelativeCoordinates));
+
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
                                     
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aLastSVGCommand = aCommand;
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-								else
-								{
-									const sal_Unicode aCommand(lcl_getCommand('Q', 'q', bUseRelativeCoordinates));
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aLastSVGCommand = aCommand;
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                                else
+                                {
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('Q', 'q', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
                                     
-									lcl_putNumberCharWithSpace(aResult, aLeft.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aLeft.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aLastSVGCommand = aCommand;
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-							}
-							else
-							{
-								// export as cubic bezier
-								if(bSymmetricAtEdgeStart)
-								{
-									const sal_Unicode aCommand(lcl_getCommand('S', 's', bUseRelativeCoordinates));
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aLeft.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aLeft.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aLastSVGCommand = aCommand;
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                            }
+                            else
+                            {
+                                // export as cubic bezier
+                                if(bSymmetricAtEdgeStart)
+                                {
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('S', 's', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
                                     
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aLastSVGCommand = aCommand;
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-								else
-								{
-									const sal_Unicode aCommand(lcl_getCommand('C', 'c', bUseRelativeCoordinates));
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aLastSVGCommand = aCommand;
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                                else
+                                {
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('C', 'c', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
                                     
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeStart.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeStart.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aLastSVGCommand = aCommand;
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-							}
-						}
-						else
-						{
-							// straight edge
-							if(0 == nNextIndex)
-							{
-								// it's a closed polygon's last edge and it's not a bezier edge, so there is
-								// no need to write it
-							}
-							else
-							{
-								const bool bXEqual(aEdgeStart.getX() == aEdgeEnd.getX());
-								const bool bYEqual(aEdgeStart.getY() == aEdgeEnd.getY());
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeStart.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeStart.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aControlEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aLastSVGCommand = aCommand;
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // straight edge
+                            if(0 == nNextIndex)
+                            {
+                                // it's a closed polygon's last edge and it's not a bezier edge, so there is
+                                // no need to write it
+                            }
+                            else
+                            {
+                                const bool bXEqual(aEdgeStart.getX() == aEdgeEnd.getX());
+                                const bool bYEqual(aEdgeStart.getY() == aEdgeEnd.getY());
 
-								if(bXEqual && bYEqual)
-								{
-									// point is a double point; do not export at all
-								}
-								else if(bXEqual)
-								{
-									// export as vertical line
-									const sal_Unicode aCommand(lcl_getCommand('V', 'v', bUseRelativeCoordinates));
+                                if(bXEqual && bYEqual)
+                                {
+                                    // point is a double point; do not export at all
+                                }
+                                else if(bXEqual)
+                                {
+                                    // export as vertical line
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('V', 'v', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
 
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-								else if(bYEqual)
-								{
-									// export as horizontal line
-									const sal_Unicode aCommand(lcl_getCommand('H', 'h', bUseRelativeCoordinates));
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                                else if(bYEqual)
+                                {
+                                    // export as horizontal line
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('H', 'h', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
 
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-								else
-								{
-									// export as line
-									const sal_Unicode aCommand(lcl_getCommand('L', 'l', bUseRelativeCoordinates));
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                                else
+                                {
+                                    // export as line
+                                    const sal_Unicode aCommand(::basegfx::internal::lcl_getCommand('L', 'l', bUseRelativeCoordinates));
 
-									if(aLastSVGCommand != aCommand)
-									{
+                                    if(aLastSVGCommand != aCommand)
+                                    {
                                         aResult.append(aCommand);
-										aLastSVGCommand = aCommand;
-									}
+                                        aLastSVGCommand = aCommand;
+                                    }
 
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
-									lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
-									aCurrentSVGPosition = aEdgeEnd;
-								}
-							}
-						}
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getX(), aCurrentSVGPosition.getX(), bUseRelativeCoordinates);
+                                    ::basegfx::internal::lcl_putNumberCharWithSpace(aResult, aEdgeEnd.getY(), aCurrentSVGPosition.getY(), bUseRelativeCoordinates);
+                                    aCurrentSVGPosition = aEdgeEnd;
+                                }
+                            }
+                        }
 
-						// prepare edge start for next loop step
-						aEdgeStart = aEdgeEnd;
-					}
+                        // prepare edge start for next loop step
+                        aEdgeStart = aEdgeEnd;
+                    }
 
-					// close path if closed poly (Z and z are equivalent here, but looks nicer when case is matched)
-					if(aPolygon.isClosed())
-					{
-                        aResult.append(lcl_getCommand('Z', 'z', bUseRelativeCoordinates));
-					}
-				}
+                    // close path if closed poly (Z and z are equivalent here, but looks nicer when case is matched)
+                    if(aPolygon.isClosed())
+                    {
+                        aResult.append(::basegfx::internal::lcl_getCommand('Z', 'z', bUseRelativeCoordinates));
+                    }
+
+                    if(!bHandleRelativeNextPointCompatible)
+                    {
+                        // SVG defines that "the next subpath starts at the same initial point as the current subpath",
+                        // so set aCurrentSVGPosition to the 1st point of the current, now ended and written path
+                        aCurrentSVGPosition = aPolygon.getB2DPoint(0);
+                    }
+                }
             }
 
             return aResult.makeStringAndClear();
