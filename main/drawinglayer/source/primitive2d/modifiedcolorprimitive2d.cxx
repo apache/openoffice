@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
@@ -35,32 +33,42 @@ using namespace com::sun::star;
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
-		ModifiedColorPrimitive2D::ModifiedColorPrimitive2D(
-			const Primitive2DSequence& rChildren, 
-			const basegfx::BColorModifier& rColorModifier)
-		:	GroupPrimitive2D(rChildren),
-			maColorModifier(rColorModifier)
-		{
-		}
+    namespace primitive2d
+    {
+        ModifiedColorPrimitive2D::ModifiedColorPrimitive2D(
+            const Primitive2DSequence& rChildren, 
+            const basegfx::BColorModifierSharedPtr& rColorModifier)
+        :   GroupPrimitive2D(rChildren),
+            maColorModifier(rColorModifier)
+        {
+        }
 
-		bool ModifiedColorPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(GroupPrimitive2D::operator==(rPrimitive))
-			{
-				const ModifiedColorPrimitive2D& rCompare = (ModifiedColorPrimitive2D&)rPrimitive;
+        bool ModifiedColorPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
+        {
+            if(GroupPrimitive2D::operator==(rPrimitive))
+            {
+                const ModifiedColorPrimitive2D& rCompare = (ModifiedColorPrimitive2D&)rPrimitive;
 
-				return (getColorModifier() == rCompare.getColorModifier());
-			}
+                if(getColorModifier().get() == rCompare.getColorModifier().get())
+                {
+                    return true;
+                }
 
-			return false;
-		}
+                if(!getColorModifier().get() || !rCompare.getColorModifier().get())
+                {
+                    return false;
+                }
 
-		// provide unique ID
-		ImplPrimitrive2DIDBlock(ModifiedColorPrimitive2D, PRIMITIVE2D_ID_MODIFIEDCOLORPRIMITIVE2D)
+                return *getColorModifier().get() == *rCompare.getColorModifier().get();
+            }
 
-	} // end of namespace primitive2d
+            return false;
+        }
+
+        // provide unique ID
+        ImplPrimitrive2DIDBlock(ModifiedColorPrimitive2D, PRIMITIVE2D_ID_MODIFIEDCOLORPRIMITIVE2D)
+
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
