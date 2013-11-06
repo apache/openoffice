@@ -90,6 +90,7 @@ library UACCCOMLib
 {
 	importlib("stdole32.tlb");
 	importlib("stdole2.tlb");
+	importlib("oleacc.dll");
 
 	[
 		uuid(CF8DF8BA-44FE-4B10-BD2E-8C8CB322485F),
