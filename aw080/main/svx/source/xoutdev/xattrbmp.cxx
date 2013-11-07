@@ -129,10 +129,12 @@ bool SVX_DLLPUBLIC isHistorical8x8(const BitmapEx& rBitmapEx, BitmapColor& o_rBa
                     if(pRead->HasPalette() && 2 == pRead->GetPaletteEntryCount())
                     {
                         const BitmapPalette& rPalette = pRead->GetPalette();
-                        
-                        o_rBack = rPalette[1];
-                        o_rFront = rPalette[0];
-                       
+
+                        // #123564# bachground and foregrund were exchanged; of course
+                        // rPalette[0] is the background color
+                        o_rFront = rPalette[1];
+                        o_rBack = rPalette[0];
+
                         return true;
                     }
                 }

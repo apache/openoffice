@@ -34,7 +34,8 @@ namespace sdr
 	{
 		class CustomShapeProperties : public TextProperties
 		{
-			void UpdateTextFrameStatus();
+        private:
+			void UpdateTextFrameStatus(bool bInvalidateRenderGeometry);
 
 		protected:
 			// create a new itemset
@@ -53,7 +54,7 @@ namespace sdr
 			// specific item changes
 			virtual void PostItemChange(const sal_uInt16 nWhich);
 
-            // clear single item
+			// clear single item
 			virtual void ClearObjectItem(const sal_uInt16 nWhich = 0);
 
 			// clear single item direct, do not do any notifies or things like that.

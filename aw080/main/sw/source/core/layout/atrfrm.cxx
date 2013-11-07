@@ -2796,39 +2796,35 @@ void SwFlyFrmFmt::MakeFrms()
     case FLY_AT_PAGE:
         {
             sal_uInt16 nPgNum = aAnchorAttr.GetPageNum();
-			SwPageFrm *pPage = (SwPageFrm*)GetDoc()->GetCurrentLayout()->Lower();	//swmod 080218
-            if( !nPgNum && aAnchorAttr.GetCntntAnchor() )
-			{
-				SwCntntNode *pCNd =
-                    aAnchorAttr.GetCntntAnchor()->nNode.GetNode().GetCntntNode();
-				SwIterator<SwFrm,SwCntntNode> aIter( *pCNd );
-                for (SwFrm* pFrm = aIter.First(); pFrm; pFrm = aIter.Next() )
-				{
-						pPage = pFrm->FindPageFrm();
-						if( pPage )
-                        {
-							nPgNum = pPage->GetPhyPageNum();
-                            // OD 24.07.2003 #111032# - update anchor attribute
-                            aAnchorAttr.SetPageNum( nPgNum );
-                            aAnchorAttr.SetAnchor( 0 );
-                            SetFmtAttr( aAnchorAttr );
-                        }
-						break;
-					}
-			}
-			while ( pPage )
-			{
-				if ( pPage->GetPhyPageNum() == nPgNum )
-				{
-                    // --> OD 2005-06-09 #i50432# - adjust synopsis of <PlaceFly(..)>
+            SwPageFrm *pPage = (SwPageFrm*)GetDoc()->GetCurrentLayout()->Lower();	//swmod 080218
+            if( nPgNum == 0 && aAnchorAttr.GetCntntAnchor() )
+            {
+                SwCntntNode *pCNd = aAnchorAttr.GetCntntAnchor()->nNode.GetNode().GetCntntNode();
+                SwIterator<SwFrm,SwCntntNode> aIter( *pCNd );
+                for ( SwFrm* pFrm = aIter.First(); pFrm != NULL; pFrm = aIter.Next() )
+                {
+                    pPage = pFrm->FindPageFrm();
+                    if( pPage )
+                    {
+                        nPgNum = pPage->GetPhyPageNum();
+                        aAnchorAttr.SetPageNum( nPgNum );
+                        aAnchorAttr.SetAnchor( 0 );
+                        SetFmtAttr( aAnchorAttr );
+                        break;
+                    }
+                }
+            }
+            while ( pPage )
+            {
+                if ( pPage->GetPhyPageNum() == nPgNum )
+                {
                     pPage->PlaceFly( 0, this );
-                    // <--
                     break;
-				}
-				pPage = (SwPageFrm*)pPage->GetNext();
-			}
-		}
-		break;
+                }
+                pPage = (SwPageFrm*)pPage->GetNext();
+            }
+        }
+        break;
     default:
         break;
 	}
@@ -2931,18 +2927,21 @@ SwAnchoredObject* SwFlyFrmFmt::GetAnchoredObj( const Point* pPoint, const sal_Bo
 
 sal_Bool SwFlyFrmFmt::GetInfo( SfxPoolItem& rInfo ) const
 {
-	switch( rInfo.Which() )
-	{
-	case RES_CONTENT_VISIBLE:
-		{
-			((SwPtrMsgPoolItem&)rInfo).pObject = SwIterator<SwFrm,SwFmt>::FirstElement( *this );
-		}
-		return sal_False;
+    sal_Bool bRet = sal_True;
+    switch( rInfo.Which() )
+    {
+    case RES_CONTENT_VISIBLE:
+        {
+            ((SwPtrMsgPoolItem&)rInfo).pObject = SwIterator<SwFrm,SwFmt>::FirstElement( *this );
+        }
+        bRet = sal_False;
+        break;
 
-	default:
-		return SwFrmFmt::GetInfo( rInfo );
-	}
-	return sal_True;
+    default:
+        bRet = SwFrmFmt::GetInfo( rInfo );
+        break;
+    }
+    return bRet;
 }
 
 // --> OD 2009-07-14 #i73249#

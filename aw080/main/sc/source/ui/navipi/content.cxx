@@ -717,27 +717,28 @@ void ScContentTree::GetAreaNames()
 
 void ScContentTree::GetDbNames()
 {
-	if ( nRootType && nRootType != SC_CONTENT_DBAREA )		// ausgeblendet ?
-		return;
+    if ( nRootType && nRootType != SC_CONTENT_DBAREA )		// ausgeblendet ?
+        return;
 
-	ScDocument* pDoc = GetSourceDocument();
-	if (!pDoc)
-		return;
+    ScDocument* pDoc = GetSourceDocument();
+    if (!pDoc)
+        return;
 
-	ScDBCollection*	pDbNames = pDoc->GetDBCollection();
-	sal_uInt16 nCount = pDbNames->GetCount();
-	if ( nCount > 0 )
-	{
-		String aStrNoName( ScGlobal::GetRscString(STR_DB_NONAME) );
-		for ( sal_uInt16 i=0; i<nCount; i++ )
-		{
-			ScDBData* pData = (*pDbNames)[i];
-			String aStrName = pData->GetName();
-			//if ( aStrName != aStrNoName )
-			if ( !pData->IsBuildin() )
-				InsertContent( SC_CONTENT_DBAREA, aStrName );
-		}
-	}
+    ScDBCollection*	pDbNames = pDoc->GetDBCollection();
+    sal_uInt16 nCount = pDbNames->GetCount();
+    if ( nCount > 0 )
+    {
+        for ( sal_uInt16 i=0; i<nCount; i++ )
+        {
+            ScDBData* pData = (*pDbNames)[i];
+            String aStrName = pData->GetName();
+            if ( !pData->IsInternalUnnamed()
+                 && !pData->IsInternalForAutoFilter() )
+            {
+                InsertContent( SC_CONTENT_DBAREA, aStrName );
+            }
+        }
+    }
 }
 
 bool ScContentTree::IsPartOfType( sal_uInt16 nContentType, sal_uInt16 nObjIdentifier )  // static

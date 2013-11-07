@@ -326,72 +326,78 @@ namespace sdr
 			}
 		}
 
-		drawinglayer::primitive2d::Primitive2DSequence ViewObjectContact::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
-		{
-			// get the view-independent Primitive from the viewContact
-			drawinglayer::primitive2d::Primitive2DSequence xRetval(GetViewContact().getViewIndependentPrimitive2DSequence());
+        drawinglayer::primitive2d::Primitive2DSequence ViewObjectContact::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
+        {
+            // get the view-independent Primitive from the viewContact
+            drawinglayer::primitive2d::Primitive2DSequence xRetval(GetViewContact().getViewIndependentPrimitive2DSequence());
 
 #ifdef DBG_UTIL
-			static bool bShowCoordinateSystem(true);
+            static bool bShowCoordinateSystem(true);
 #endif
 
-			if(xRetval.hasElements())
-			{
-				// handle GluePoint
-				if(!GetObjectContact().isOutputToPrinter() && GetObjectContact().AreGluePointsVisible())
-				{
-					const drawinglayer::primitive2d::Primitive2DSequence xGlue(GetViewContact().createGluePointPrimitive2DSequence());
+            if(xRetval.hasElements())
+            {
+                // handle GluePoint
+                if(!GetObjectContact().isOutputToPrinter() && GetObjectContact().AreGluePointsVisible())
+                {
+                    const drawinglayer::primitive2d::Primitive2DSequence xGlue(GetViewContact().createGluePointPrimitive2DSequence());
 
-					if(xGlue.hasElements())
-					{
+                    if(xGlue.hasElements())
+                    {
                         drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, xGlue);
-					}
-				}
+                    }
+                }
 
 #ifdef DBG_UTIL
-				// for transformation test purposes, add a debug possibility to optically
-				// show the coordiante system axes x in red and y in green
-				if(bShowCoordinateSystem && !GetObjectContact().isOutputToPrinter())
-				{
-					SdrObject* pObj = GetViewContact().TryToGetSdrObject();
+                // for transformation test purposes, add a debug possibility to optically
+                // show the coordiante system axes x in red and y in green
+                if(bShowCoordinateSystem && !GetObjectContact().isOutputToPrinter())
+                {
+                    SdrObject* pObj = GetViewContact().TryToGetSdrObject();
 
-					if(pObj)
-					{
-						const basegfx::B2DHomMatrix& rMatrix = pObj->getSdrObjectTransformation();
-						const basegfx::B2DPoint aTopLeft(rMatrix * basegfx::B2DPoint(0.0, 0.0));
-						const basegfx::B2DPoint aTopRight(rMatrix * basegfx::B2DPoint(1.0, 0.0));
-						const basegfx::B2DPoint aBottomLeft(rMatrix * basegfx::B2DPoint(0.0, 1.0));
-						basegfx::B2DPolygon aXAxis, aYAxis;
+                    if(pObj)
+                    {
+                        const basegfx::B2DHomMatrix& rMatrix = pObj->getSdrObjectTransformation();
+                        const basegfx::B2DPoint aTopLeft(rMatrix * basegfx::B2DPoint(0.0, 0.0));
+                        const basegfx::B2DPoint aTopRight(rMatrix * basegfx::B2DPoint(1.0, 0.0));
+                        const basegfx::B2DPoint aBottomLeft(rMatrix * basegfx::B2DPoint(0.0, 1.0));
+                        basegfx::B2DPolygon aXAxis, aYAxis;
 
-						aXAxis.append(aTopLeft);
-						aXAxis.append(aTopRight);
+                        aXAxis.append(aTopLeft);
+                        aXAxis.append(aTopRight);
 
-						aYAxis.append(aTopLeft);
-						aYAxis.append(aBottomLeft);
+                        aYAxis.append(aTopLeft);
+                        aYAxis.append(aBottomLeft);
 
-						drawinglayer::primitive2d::Primitive2DSequence aCoordinate(2);
+                        drawinglayer::primitive2d::Primitive2DSequence aCoordinate(2);
 
-						aCoordinate[0] = new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
-							aXAxis,
-							basegfx::BColor(1.0, 0.0, 0.0));
-						aCoordinate[1] = new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
-							aYAxis,
-							basegfx::BColor(0.0, 1.0, 0.0));
+                        aCoordinate[0] = new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
+                            aXAxis,
+                            basegfx::BColor(1.0, 0.0, 0.0));
+                        aCoordinate[1] = new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
+                            aYAxis,
+                            basegfx::BColor(0.0, 1.0, 0.0));
 
-						drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, aCoordinate);
-					}
-				}
+                        drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, aCoordinate);
+                    }
+                }
 #endif
 
-				// handle ghosted
-				if(isPrimitiveGhosted(rDisplayInfo))
-				{
-					const basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
-					const basegfx::BColorModifier aBColorModifier(aRGBWhite, 0.5, basegfx::BCOLORMODIFYMODE_INTERPOLATE);
-                    const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::ModifiedColorPrimitive2D(xRetval, aBColorModifier));
+                // handle ghosted
+                if(isPrimitiveGhosted(rDisplayInfo))
+                {
+                    const basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
+                    const drawinglayer::primitive2d::Primitive2DReference xReference(
+                        new drawinglayer::primitive2d::ModifiedColorPrimitive2D(
+                            xRetval, 
+                            basegfx::BColorModifierSharedPtr(
+                                new basegfx::BColorModifier_interpolate(
+                                    aRGBWhite, 
+                                    0.5))));
+
                     xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
-				}
-			}
+                }
+            }
 
 			return xRetval;
 		}

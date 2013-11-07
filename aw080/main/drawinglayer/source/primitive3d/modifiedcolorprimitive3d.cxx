@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
@@ -35,20 +33,20 @@ using namespace com::sun::star;
 
 namespace drawinglayer
 {
-	namespace primitive3d
-	{
-		ModifiedColorPrimitive3D::ModifiedColorPrimitive3D(
-			const Primitive3DSequence& rChildren, 
-			const basegfx::BColorModifier& rColorModifier)
-		:	GroupPrimitive3D(rChildren),
-			maColorModifier(rColorModifier)
-		{
-		}
+    namespace primitive3d
+    {
+        ModifiedColorPrimitive3D::ModifiedColorPrimitive3D(
+            const Primitive3DSequence& rChildren, 
+            const basegfx::BColorModifierSharedPtr& rColorModifier)
+        :   GroupPrimitive3D(rChildren),
+            maColorModifier(rColorModifier)
+        {
+        }
 
-		// provide unique ID
-		ImplPrimitrive3DIDBlock(ModifiedColorPrimitive3D, PRIMITIVE3D_ID_MODIFIEDCOLORPRIMITIVE3D)
+        // provide unique ID
+        ImplPrimitrive3DIDBlock(ModifiedColorPrimitive3D, PRIMITIVE3D_ID_MODIFIEDCOLORPRIMITIVE3D)
 
-	} // end of namespace primitive3d
+    } // end of namespace primitive3d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

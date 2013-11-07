@@ -2776,24 +2776,25 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
                         }
                     }
                     break;
-				case RES_TXTATR_FIELD:
-					{
-						sal_uInt16 nFldWhich =
-							pPostIts ? ((const SwFmtFld *)pAttr->pItem)
-											->GetFld()->GetTyp()->Which() : 0;
-						if( pPostIts && (RES_POSTITFLD == nFldWhich ||
-										 RES_SCRIPTFLD == nFldWhich) )
-						{
-							pPostIts->Insert( pAttr, 0 );
-						}
-						else
-						{
-							aFields.Insert( pAttr, aFields.Count() );
-						}
-					}
-					pAttrPam->DeleteMark();
-					pAttr = pPrev;
-					continue;
+                case RES_TXTATR_FIELD:
+                    {
+                        sal_uInt16 nFldWhich =
+                            pPostIts
+                            ? ((const SwFmtFld *)pAttr->pItem)->GetField()->GetTyp()->Which()
+                            : 0;
+                        if( pPostIts && (RES_POSTITFLD == nFldWhich ||
+                                         RES_SCRIPTFLD == nFldWhich) )
+                        {
+                            pPostIts->Insert( pAttr, 0 );
+                        }
+                        else
+                        {
+                            aFields.Insert( pAttr, aFields.Count() );
+                        }
+                    }
+                    pAttrPam->DeleteMark();
+                    pAttr = pPrev;
+                    continue;
 
 				case RES_LR_SPACE:
 					if( pAttrPam->GetPoint()->nNode.GetIndex() ==

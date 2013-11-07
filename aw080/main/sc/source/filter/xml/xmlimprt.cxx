@@ -2749,9 +2749,9 @@ void ScXMLImport::SetNamedRanges()
                         try
                         {
                             //xNamedRanges->addNewByName((*aItr)->sName, sTempContent, aCellAddress, GetRangeType((*aItr)->sRangeType));//String::CreateFromInt32( (*aItr)->nNameScope)
-							String sTabName;
-							GetDocument()->GetName( (*aItr)->nNameScope, sTabName);
-							xNamedRanges->addNewByScopeName( sTabName, (*aItr)->sName, (*aItr)->sContent, aCellAddress, GetRangeType((*aItr)->sRangeType) );							
+                            String sTabName;
+                            GetDocument()->GetName( (*aItr)->nNameScope, sTabName);
+                            xNamedRanges->addNewByScopeName( sTabName, (*aItr)->sName, sTempContent, aCellAddress, GetRangeType((*aItr)->sRangeType) );
                         }
                         catch( uno::RuntimeException& )
                         {
@@ -2790,12 +2790,11 @@ void ScXMLImport::SetNamedRanges()
                     if (ScRangeStringConverter::GetAddressFromString(
                         aCellAddress, (*aItr)->sBaseCellAddress, GetDocument(), FormulaGrammar::CONV_OOO, nOffset ))
                     {
-						String sTableName;
-						GetDocument()->GetName( (*aItr)->nNameScope,  sTableName );
-						rtl::OUString sRangeScope( sTableName);
                         //uno::Reference <sheet::XNamedRange> xNamedRange(xNamedRanges->getByName((*aItr)->sName), uno::UNO_QUERY);
-						//getByScopeName
-						uno::Reference <sheet::XNamedRange2> xNamedRange(xNamedRanges->getByScopeName( sRangeScope,(*aItr)->sName), uno::UNO_QUERY);
+                        String sTableName;
+                        GetDocument()->GetName( (*aItr)->nNameScope,  sTableName );
+                        rtl::OUString sRangeScope( sTableName);
+                        uno::Reference <sheet::XNamedRange2> xNamedRange(xNamedRanges->getByScopeName( sRangeScope,(*aItr)->sName), uno::UNO_QUERY);
                         if (xNamedRange.is())
                         {
                             LockSolarMutex();

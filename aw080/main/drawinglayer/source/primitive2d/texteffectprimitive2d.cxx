@@ -88,29 +88,53 @@ namespace drawinglayer
 
 					aTransform *= aForwardTransform;
 
-					if(bDefaultTextColor)
-					{
-						// emboss/engrave in black, original forced to white
-						const basegfx::BColorModifier aBColorModifierToGray(basegfx::BColor(0.0));
-						const Primitive2DReference xModifiedColor(new ModifiedColorPrimitive2D(getTextContent(), aBColorModifierToGray));
-						aRetval[0] = Primitive2DReference(new TransformPrimitive2D(aTransform, Primitive2DSequence(&xModifiedColor, 1)));
+                    if(bDefaultTextColor)
+                    {
+                        // emboss/engrave in black, original forced to white
+                        const basegfx::BColorModifierSharedPtr aBColorModifierToGray(
+                            new basegfx::BColorModifier_replace(
+                                basegfx::BColor(0.0)));
+                        const Primitive2DReference xModifiedColor(
+                            new ModifiedColorPrimitive2D(
+                                getTextContent(), 
+                                aBColorModifierToGray));
 
-						// add original, too
-						const basegfx::BColorModifier aBColorModifierToWhite(basegfx::BColor(1.0));
-						aRetval[1] = Primitive2DReference(new ModifiedColorPrimitive2D(getTextContent(), aBColorModifierToWhite));
-					}
-					else
-					{
-						// emboss/engrave in gray, keep original's color
-						const basegfx::BColorModifier aBColorModifierToGray(basegfx::BColor(0.75)); // 192
-						const Primitive2DReference xModifiedColor(new ModifiedColorPrimitive2D(getTextContent(), aBColorModifierToGray));
-						aRetval[0] = Primitive2DReference(new TransformPrimitive2D(aTransform, Primitive2DSequence(&xModifiedColor, 1)));
+                        aRetval[0] = Primitive2DReference(
+                            new TransformPrimitive2D(
+                                aTransform, 
+                                Primitive2DSequence(&xModifiedColor, 1)));
 
-						// add original, too
-						aRetval[1] = Primitive2DReference(new GroupPrimitive2D(getTextContent()));
-					}
-				
-					break;
+                        // add original, too
+                        const basegfx::BColorModifierSharedPtr aBColorModifierToWhite(
+                            new basegfx::BColorModifier_replace(
+                                basegfx::BColor(1.0)));
+
+                        aRetval[1] = Primitive2DReference(
+                            new ModifiedColorPrimitive2D(
+                                getTextContent(), 
+                                aBColorModifierToWhite));
+                    }
+                    else
+                    {
+                        // emboss/engrave in gray, keep original's color
+                        const basegfx::BColorModifierSharedPtr aBColorModifierToGray(
+                            new basegfx::BColorModifier_replace(
+                                basegfx::BColor(0.75))); // 192
+                        const Primitive2DReference xModifiedColor(
+                            new ModifiedColorPrimitive2D(
+                                getTextContent(), 
+                                aBColorModifierToGray));
+
+                        aRetval[0] = Primitive2DReference(
+                            new TransformPrimitive2D(
+                                aTransform, 
+                                Primitive2DSequence(&xModifiedColor, 1)));
+
+                        // add original, too
+                        aRetval[1] = Primitive2DReference(new GroupPrimitive2D(getTextContent()));
+                    }
+
+                    break;
 				}
 				case TEXTEFFECTSTYLE2D_OUTLINE:
 				{
@@ -150,9 +174,14 @@ namespace drawinglayer
 					aTransform.set(1, 2, -aDiagonalDistance.getY());
 					aRetval[7] = Primitive2DReference(new TransformPrimitive2D(aTransform, getTextContent()));
 
-					// at last, place original over it, but force to white
-					const basegfx::BColorModifier aBColorModifierToWhite(basegfx::BColor(1.0, 1.0, 1.0));
-					aRetval[8] = Primitive2DReference(new ModifiedColorPrimitive2D(getTextContent(), aBColorModifierToWhite));
+                    // at last, place original over it, but force to white
+                    const basegfx::BColorModifierSharedPtr aBColorModifierToWhite(
+                        new basegfx::BColorModifier_replace(
+                            basegfx::BColor(1.0, 1.0, 1.0)));
+                    aRetval[8] = Primitive2DReference(
+                        new ModifiedColorPrimitive2D(
+                            getTextContent(), 
+                            aBColorModifierToWhite));
 
 					break;
 				}

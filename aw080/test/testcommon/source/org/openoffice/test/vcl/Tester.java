@@ -102,13 +102,23 @@ public class Tester {
 		robot.mousePress(InputEvent.BUTTON1_MASK);
 		int x = fromX;
 		int y = fromY;
+		// get the direction
 		int dx = toX > fromX ? 1 : -1;
 		int dy = toY > fromY ? 1 : -1;
+		// get the step sizes
+		final int stepTarget = 10;
+		int sx = (toX - fromX) / stepTarget;
+		int sy = (toY - fromY) / stepTarget;
+		if( sx == 0) sx = dx;
+		if( sy == 0) sy = dy;
 		while (x != toX || y != toY) {
-			if (x != toX)
-				x = x + dx;
-			if (y != toY)
-				y = y + dy;
+			x += sx;
+			y += sy;
+			// limit drag pos to target pos
+			if( ((x - toX) * dx) > 0)
+				x = toX;
+			if( ((y - toY) * dy) > 0)
+				y = toY;
 			robot.mouseMove(x, y);
 		}
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);

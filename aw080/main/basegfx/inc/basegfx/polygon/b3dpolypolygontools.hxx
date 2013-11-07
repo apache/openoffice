@@ -153,7 +153,7 @@ namespace basegfx
             const B3DPolyPolygon& rPolyPolygonSource, 
             com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DRetval);
 
-	} // end of namespace tools
+    } // end of namespace tools
 } // end of namespace basegfx
 
 #endif /* _BGFX_POLYPOLYGON_B3DPOLYGONTOOLS_HXX */

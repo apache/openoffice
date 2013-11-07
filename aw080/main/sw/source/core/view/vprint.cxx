@@ -659,19 +659,22 @@ void ViewShell::PrtOle2( SwDoc *pDoc, const SwViewOption *pOpt, const SwPrintDat
 
 sal_Bool ViewShell::IsAnyFieldInDoc() const
 {
-	const SfxPoolItem* pItem;
-	sal_uInt32 nMaxItems = pDoc->GetAttrPool().GetItemCount2( RES_TXTATR_FIELD );
-	for( sal_uInt32 n = 0; n < nMaxItems; ++n )
-		if( 0 != (pItem = pDoc->GetAttrPool().GetItem2( RES_TXTATR_FIELD, n )))
-		{
-			const SwFmtFld* pFmtFld = (SwFmtFld*)pItem;
-			const SwTxtFld* pTxtFld = pFmtFld->GetTxtFld();
-			//#i101026# mod: do not include postits in field check
-			const SwField* pFld = pFmtFld->GetFld();
-			if( pTxtFld && pTxtFld->GetTxtNode().GetNodes().IsDocNodes() && (pFld->Which() != RES_POSTITFLD))
-				return sal_True;
-		}
-	return sal_False;
+    const SfxPoolItem* pItem;
+    sal_uInt32 nMaxItems = pDoc->GetAttrPool().GetItemCount2( RES_TXTATR_FIELD );
+    for( sal_uInt32 n = 0; n < nMaxItems; ++n )
+        if( 0 != (pItem = pDoc->GetAttrPool().GetItem2( RES_TXTATR_FIELD, n )))
+        {
+            const SwFmtFld* pFmtFld = (SwFmtFld*)pItem;
+            const SwTxtFld* pTxtFld = pFmtFld->GetTxtFld();
+            // do not include postits in field check
+            const SwField* pFld = pFmtFld->GetField();
+            if( pTxtFld && pTxtFld->GetTxtNode().GetNodes().IsDocNodes()
+                && (pFld->Which() != RES_POSTITFLD))
+            {
+                return sal_True;
+            }
+        }
+    return sal_False;
 }
 
 

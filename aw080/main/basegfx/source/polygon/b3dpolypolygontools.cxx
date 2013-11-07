@@ -665,7 +665,7 @@ namespace basegfx
             }
         }
 
-	} // end of namespace tools
+    } // end of namespace tools
 } // end of namespace basegfx
 
 //////////////////////////////////////////////////////////////////////////////

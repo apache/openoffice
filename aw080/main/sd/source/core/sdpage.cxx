@@ -2843,20 +2843,67 @@ const HeaderFooterSettings& SdPage::getHeaderFooterSettings() const
 
 void SdPage::setHeaderFooterSettings( const sd::HeaderFooterSettings& rNewSettings )
 {
-	if( mePageKind == PK_HANDOUT && !mbMaster )
-	{
-		(((SdPage&)TRG_GetMasterPage()).maHeaderFooterSettings) = rNewSettings;
-	}
-	else
-	{
-		maHeaderFooterSettings = rNewSettings;
-	}
+    if( mePageKind == PK_HANDOUT && !mbMaster )
+    {
+        (((SdPage&)TRG_GetMasterPage()).maHeaderFooterSettings) = rNewSettings;
+    }
+    else
+    {
+        maHeaderFooterSettings = rNewSettings;
+    }
 
-	SetChanged();
-	if(TRG_HasMasterPage())
-	{
-		TRG_GetMasterPageDescriptorViewContact().ActionChanged();
-	}
+    SetChanged();
+
+    if(TRG_HasMasterPage())
+    {
+        TRG_GetMasterPageDescriptorViewContact().ActionChanged();
+
+        // #119056# For HeaderFooterSettings SdrObjects are used, but the properties
+        // used are not part of their model data, but kept in SD. This data is applied
+        // using a 'backdoor' on primitive creation. Thus, the normal mechanism to detect
+        // object changes does not work here. It is neccessary to trigger updates here
+        // directly. BroadcastObjectChange used for PagePreview invalidations, 
+        // flushViewObjectContacts used to invalidate and flush all visualizations in
+        // edit views.
+        SdPage* pMasterPage = dynamic_cast< SdPage* >(&TRG_GetMasterPage());
+
+        if(pMasterPage)
+        {
+            SdrObject* pCandidate = 0;
+
+            pCandidate = pMasterPage->GetPresObj( PRESOBJ_HEADER );
+
+            if(pCandidate)
+            {
+                const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pCandidate);
+                pCandidate->GetViewContact().flushViewObjectContacts();
+            }
+
+            pCandidate = pMasterPage->GetPresObj( PRESOBJ_DATETIME );
+
+            if(pCandidate)
+            {
+                const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pCandidate);
+                pCandidate->GetViewContact().flushViewObjectContacts();
+            }
+
+            pCandidate = pMasterPage->GetPresObj( PRESOBJ_FOOTER );
+
+            if(pCandidate)
+            {
+                const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pCandidate);
+                pCandidate->GetViewContact().flushViewObjectContacts();
+            }
+
+            pCandidate = pMasterPage->GetPresObj( PRESOBJ_SLIDENUMBER );
+
+            if(pCandidate)
+            {
+                const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pCandidate);
+                pCandidate->GetViewContact().flushViewObjectContacts();
+            }
+        }
+    }
 }
 
 bool SdPage::checkVisibility(

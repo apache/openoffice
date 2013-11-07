@@ -1061,16 +1061,18 @@ namespace
                 {
                     // force content to black
                     rTargetHolders.Current().append(
-			            new drawinglayer::primitive2d::ModifiedColorPrimitive2D(
-				            aSubContent,
-                            basegfx::BColorModifier(basegfx::BColor(0.0, 0.0, 0.0))));
+                        new drawinglayer::primitive2d::ModifiedColorPrimitive2D(
+                            aSubContent,
+                            basegfx::BColorModifierSharedPtr(
+                                new basegfx::BColorModifier_replace(
+                                    basegfx::BColor(0.0, 0.0, 0.0)))));
                 }
                 else // if(rPropertyHolders.Current().isRasterOpInvert())
                 {
                     // invert content
                     rTargetHolders.Current().append(
-			            new drawinglayer::primitive2d::InvertPrimitive2D(
-				            aSubContent));
+                        new drawinglayer::primitive2d::InvertPrimitive2D(
+                            aSubContent));
                 }
             }
         }
