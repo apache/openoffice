@@ -829,7 +829,7 @@ inline double Complex::Imag( void ) const
 
 inline double Complex::Abs( void ) const
 {
-	return std::norm( Num );
+	return std::abs( Num );
 }
 
 

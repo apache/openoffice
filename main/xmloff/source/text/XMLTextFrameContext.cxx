@@ -19,10 +19,9 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
+
 #include <tools/debug.hxx>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/text/TextContentAnchorType.hpp>
@@ -52,14 +51,15 @@
 #include <xmloff/XMLEventsImportContext.hxx>
 #include "XMLImageMapContext.hxx"
 #include "XMLTextFrameContext.hxx"
-
 #include "XMLTextListBlockContext.hxx"
 #include "XMLTextListItemContext.hxx"
 #include <xmloff/attrlist.hxx>
 #include <comphelper/stl_types.hxx>
-
+#include <basegfx/polygon/b2dpolygon.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
 #include <map>
-
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -234,113 +234,130 @@ public:
 TYPEINIT1( XMLTextFrameContourContext_Impl, SvXMLImportContext );
 
 XMLTextFrameContourContext_Impl::XMLTextFrameContourContext_Impl(
-		SvXMLImport& rImport,
-		sal_uInt16 nPrfx, const OUString& rLName,
-		const Reference< XAttributeList > & xAttrList,
-		const Reference < XPropertySet >& rPropSet,
-	    sal_Bool bPath ) :
-	SvXMLImportContext( rImport, nPrfx, rLName ),
-	xPropSet( rPropSet )
+        SvXMLImport& rImport,
+        sal_uInt16 nPrfx, const OUString& rLName,
+        const Reference< XAttributeList > & xAttrList,
+        const Reference < XPropertySet >& rPropSet,
+        sal_Bool bPath ) :
+    SvXMLImportContext( rImport, nPrfx, rLName ),
+    xPropSet( rPropSet )
 {
-	OUString sD, sPoints, sViewBox;
-	sal_Bool bPixelWidth = sal_False, bPixelHeight = sal_False;
-	sal_Bool bAuto = sal_False;
-	sal_Int32 nWidth = 0;
-	sal_Int32 nHeight = 0;
+    OUString sD, sPoints, sViewBox;
+    sal_Bool bPixelWidth = sal_False, bPixelHeight = sal_False;
+    sal_Bool bAuto = sal_False;
+    sal_Int32 nWidth = 0;
+    sal_Int32 nHeight = 0;
 
-	const SvXMLTokenMap& rTokenMap =
-		GetImport().GetTextImport()->GetTextContourAttrTokenMap();
+    const SvXMLTokenMap& rTokenMap =
+        GetImport().GetTextImport()->GetTextContourAttrTokenMap();
 
-	sal_Int16 nAttrCount = xAttrList.is() ? xAttrList->getLength() : 0;
-	for( sal_Int16 i=0; i < nAttrCount; i++ )
-	{
-		const OUString& rAttrName = xAttrList->getNameByIndex( i );
-		const OUString& rValue = xAttrList->getValueByIndex( i );
+    sal_Int16 nAttrCount = xAttrList.is() ? xAttrList->getLength() : 0;
+    for( sal_Int16 i=0; i < nAttrCount; i++ )
+    {
+        const OUString& rAttrName = xAttrList->getNameByIndex( i );
+        const OUString& rValue = xAttrList->getValueByIndex( i );
 
-		OUString aLocalName;
-		sal_uInt16 nPrefix =
-			GetImport().GetNamespaceMap().GetKeyByAttrName( rAttrName,
-															&aLocalName );
-		switch( rTokenMap.Get( nPrefix, aLocalName ) )
-		{
-		case XML_TOK_TEXT_CONTOUR_VIEWBOX:
-			sViewBox = rValue;
-			break;
-		case XML_TOK_TEXT_CONTOUR_D:
-			if( bPath )
-				sD = rValue;
-			break;
-		case XML_TOK_TEXT_CONTOUR_POINTS:
-			if( !bPath )
-				sPoints = rValue;
-			break;
-		case XML_TOK_TEXT_CONTOUR_WIDTH:
-			if( GetImport().GetMM100UnitConverter().convertMeasurePx( nWidth,
-																	  rValue) )
-				bPixelWidth = sal_True;
-			else
-				GetImport().GetMM100UnitConverter().convertMeasure( nWidth,
-																rValue);
-			break;
-		case XML_TOK_TEXT_CONTOUR_HEIGHT:
-			if( GetImport().GetMM100UnitConverter().convertMeasurePx( nHeight,
-																rValue) )
-				bPixelHeight = sal_True;
-			else
-				GetImport().GetMM100UnitConverter().convertMeasure( nHeight,
-																	rValue);
-			break;
-		case XML_TOK_TEXT_CONTOUR_AUTO:
-			bAuto = IsXMLToken(rValue, XML_TRUE);
-			break;
-		}
-	}
+        OUString aLocalName;
+        sal_uInt16 nPrefix =
+            GetImport().GetNamespaceMap().GetKeyByAttrName( rAttrName,
+                                                            &aLocalName );
+        switch( rTokenMap.Get( nPrefix, aLocalName ) )
+        {
+        case XML_TOK_TEXT_CONTOUR_VIEWBOX:
+            sViewBox = rValue;
+            break;
+        case XML_TOK_TEXT_CONTOUR_D:
+            if( bPath )
+                sD = rValue;
+            break;
+        case XML_TOK_TEXT_CONTOUR_POINTS:
+            if( !bPath )
+                sPoints = rValue;
+            break;
+        case XML_TOK_TEXT_CONTOUR_WIDTH:
+            if( GetImport().GetMM100UnitConverter().convertMeasurePx( nWidth,
+                                                                      rValue) )
+                bPixelWidth = sal_True;
+            else
+                GetImport().GetMM100UnitConverter().convertMeasure( nWidth,
+                                                                rValue);
+            break;
+        case XML_TOK_TEXT_CONTOUR_HEIGHT:
+            if( GetImport().GetMM100UnitConverter().convertMeasurePx( nHeight,
+                                                                rValue) )
+                bPixelHeight = sal_True;
+            else
+                GetImport().GetMM100UnitConverter().convertMeasure( nHeight,
+                                                                    rValue);
+            break;
+        case XML_TOK_TEXT_CONTOUR_AUTO:
+            bAuto = IsXMLToken(rValue, XML_TRUE);
+            break;
+        }
+    }
 
-	OUString sContourPolyPolygon(
-			RTL_CONSTASCII_USTRINGPARAM("ContourPolyPolygon") );
-	Reference < XPropertySetInfo > xPropSetInfo =
-		rPropSet->getPropertySetInfo();
-	if( xPropSetInfo->hasPropertyByName(
-													sContourPolyPolygon ) &&
-		nWidth > 0 && nHeight > 0 && bPixelWidth == bPixelHeight &&
-		(bPath ? sD : sPoints).getLength() )
-	{
-		awt::Point aPoint( 0,  0 );
-		awt::Size aSize( nWidth, nHeight );
-		SdXMLImExViewBox aViewBox( sViewBox,
-								   GetImport().GetMM100UnitConverter());
-		Any aAny;
-		if( bPath )
-		{
-			SdXMLImExSvgDElement aPoints( sD, aViewBox, aPoint, aSize,
-										  GetImport().GetMM100UnitConverter() );
-			aAny <<= aPoints.GetPointSequenceSequence();
-		}
-		else
-		{
-			SdXMLImExPointsElement aPoints( sPoints, aViewBox, aPoint, aSize,
-										GetImport().GetMM100UnitConverter() );
-			aAny <<= aPoints.GetPointSequenceSequence();
-		}
+    OUString sContourPolyPolygon(RTL_CONSTASCII_USTRINGPARAM("ContourPolyPolygon"));
+    Reference < XPropertySetInfo > xPropSetInfo = rPropSet->getPropertySetInfo();
 
-		OUString sIsPixelContour(
-				RTL_CONSTASCII_USTRINGPARAM("IsPixelContour") );
-		xPropSet->setPropertyValue( sContourPolyPolygon, aAny );
+    if(xPropSetInfo->hasPropertyByName(sContourPolyPolygon) && nWidth > 0 && nHeight > 0 && bPixelWidth == bPixelHeight && (bPath ? sD : sPoints).getLength())
+    {
+        const SdXMLImExViewBox aViewBox( sViewBox, GetImport().GetMM100UnitConverter());
+        basegfx::B2DPolyPolygon aPolyPolygon;
+        Any aAny;
 
-		if( xPropSetInfo->hasPropertyByName( sIsPixelContour ) )
-		{
-			aAny.setValue( &bPixelWidth, ::getBooleanCppuType() );
-			xPropSet->setPropertyValue( sIsPixelContour, aAny );
-		}
+        if( bPath )
+        {
+            basegfx::tools::importFromSvgD(aPolyPolygon, sD, true, 0);
+        }
+        else
+        {
+            basegfx::B2DPolygon aPolygon;
 
-		OUString sIsAutomaticContour(
-				RTL_CONSTASCII_USTRINGPARAM("IsAutomaticContour") );
-		if( xPropSetInfo->hasPropertyByName( sIsAutomaticContour ) )
-		{
-			aAny.setValue( &bAuto, ::getBooleanCppuType() );
-			xPropSet->setPropertyValue( sIsAutomaticContour, aAny );
-		}
-	}
+            if(basegfx::tools::importFromSvgPoints(aPolygon, sPoints))
+            {
+                aPolyPolygon = basegfx::B2DPolyPolygon(aPolygon);
+            }
+        }
+
+        if(aPolyPolygon.count())
+        {
+            const basegfx::B2DRange aSourceRange(
+                aViewBox.GetX(), aViewBox.GetY(), 
+                aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
+            const basegfx::B2DRange aTargetRange(
+                0.0, 0.0, 
+                nWidth, nHeight);
+
+            if(!aSourceRange.equal(aTargetRange))
+            {
+                aPolyPolygon.transform(
+                    basegfx::tools::createSourceRangeTargetRangeTransform(
+                        aSourceRange,
+                        aTargetRange));
+            }
+
+            com::sun::star::drawing::PointSequenceSequence aPointSequenceSequence;
+            basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(aPolyPolygon, aPointSequenceSequence);
+            aAny <<= aPointSequenceSequence;
+            xPropSet->setPropertyValue( sContourPolyPolygon, aAny );
+        }
+
+        const OUString sIsPixelContour(RTL_CONSTASCII_USTRINGPARAM("IsPixelContour"));
+
+        if( xPropSetInfo->hasPropertyByName( sIsPixelContour ) )
+        {
+            aAny.setValue( &bPixelWidth, ::getBooleanCppuType() );
+            xPropSet->setPropertyValue( sIsPixelContour, aAny );
+        }
+
+        const OUString sIsAutomaticContour(RTL_CONSTASCII_USTRINGPARAM("IsAutomaticContour") );
+
+        if( xPropSetInfo->hasPropertyByName( sIsAutomaticContour ) )
+        {
+            aAny.setValue( &bAuto, ::getBooleanCppuType() );
+            xPropSet->setPropertyValue( sIsAutomaticContour, aAny );
+        }
+    }
 }
 
 XMLTextFrameContourContext_Impl::~XMLTextFrameContourContext_Impl()
@@ -425,6 +442,7 @@ class XMLTextFrameContext_Impl : public SvXMLImportContext
 	sal_Bool	bSyncHeight : 1;
 	sal_Bool	bCreateFailed : 1;
 	sal_Bool	bOwnBase64Stream : 1;
+    bool        mbSetNameForFrame : 1; // #123261# remember if to set the NameForFrame
 
 	void Create( sal_Bool bHRefOrBase64 );
 
@@ -435,16 +453,16 @@ public:
 	sal_Bool CreateIfNotThere();
 	const OUString& GetHRef() const { return sHRef; }
 
-	XMLTextFrameContext_Impl( SvXMLImport& rImport,
-			sal_uInt16 nPrfx,
-			const ::rtl::OUString& rLName,
-			const ::com::sun::star::uno::Reference<
-				::com::sun::star::xml::sax::XAttributeList > & rAttrList,
-			::com::sun::star::text::TextContentAnchorType eAnchorType,
-			sal_uInt16 nType,
-			const ::com::sun::star::uno::Reference<
-				::com::sun::star::xml::sax::XAttributeList > & rFrameAttrList );
-	virtual ~XMLTextFrameContext_Impl();
+    XMLTextFrameContext_Impl( SvXMLImport& rImport,
+        sal_uInt16 nPrfx,
+        const ::rtl::OUString& rLName,
+        const ::com::sun::star::uno::Reference<
+        ::com::sun::star::xml::sax::XAttributeList > & rAttrList,
+        ::com::sun::star::text::TextContentAnchorType eAnchorType,
+        sal_uInt16 nType,
+        const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > & rFrameAttrList,
+        bool bSetNameForFrame); // #123261# control if to set the NameForFrame
+    virtual ~XMLTextFrameContext_Impl();
 
 	virtual void EndElement();
 
@@ -468,9 +486,39 @@ public:
 
 	const ::com::sun::star::uno::Reference <
 		::com::sun::star::beans::XPropertySet >& GetPropSet() const { return xPropSet; }
+
+    // #123261# helper to set the NameForFrame
+    void SetNameForFrameFromPropSet();
 };
 
 TYPEINIT1( XMLTextFrameContext_Impl, SvXMLImportContext );
+
+void XMLTextFrameContext_Impl::SetNameForFrameFromPropSet()
+{
+    // set name
+    UniReference < XMLTextImportHelper > xTextImportHelper = GetImport().GetTextImport();
+    Reference < XNamed > xNamed( xPropSet, UNO_QUERY );
+
+    if( xNamed.is() && xTextImportHelper.is() )
+    {
+        OUString sOrigName( xNamed->getName() );
+        if( !sOrigName.getLength() ||
+            (sName.getLength() && sOrigName != sName) )
+        {
+            OUString sOldName( sName );
+            sal_Int32 i = 0;
+            while( xTextImportHelper->HasFrameByName( sName ) )
+            {
+                sName = sOldName;
+                sName += OUString::valueOf( ++i );
+            }
+            xNamed->setName( sName );
+            if( sName != sOldName )
+                xTextImportHelper->GetRenameMap().Add( XML_TEXT_RENAME_TYPE_FRAME,
+                                             sOldName, sName );
+        }
+    }
+}
 
 void XMLTextFrameContext_Impl::Create( sal_Bool /*bHRefOrBase64*/ )
 {
@@ -581,27 +629,13 @@ void XMLTextFrameContext_Impl::Create( sal_Bool /*bHRefOrBase64*/ )
 
 	Reference< XPropertySetInfo > xPropSetInfo = xPropSet->getPropertySetInfo();
 
-	// set name
-	Reference < XNamed > xNamed( xPropSet, UNO_QUERY );
-	if( xNamed.is() )
-	{
-		OUString sOrigName( xNamed->getName() );
-		if( !sOrigName.getLength() ||
-			(sName.getLength() && sOrigName != sName) )
-		{
-			OUString sOldName( sName );
-			sal_Int32 i = 0;
-			while( xTextImportHelper->HasFrameByName( sName ) )
-			{
-				sName = sOldName;
-				sName += OUString::valueOf( ++i );
-			}
-			xNamed->setName( sName );
-			if( sName != sOldName )
-				xTextImportHelper->GetRenameMap().Add( XML_TEXT_RENAME_TYPE_FRAME,
-											 sOldName, sName );
-		}
-	}
+    // #123261# set name, but only if wanted, e.g. for MultiImageSupport, it will be set after
+    // it is decided which image will be used. This is done e.g. to avoid double stuff and effects
+    // for the target to avoid double names
+    if(mbSetNameForFrame)
+    {
+        SetNameForFrameFromPropSet();
+    }
 
 	// frame style
 	XMLPropStyleContext *pStyle = 0;
@@ -805,42 +839,44 @@ sal_Bool XMLTextFrameContext_Impl::CreateIfNotThere()
 }
 
 XMLTextFrameContext_Impl::XMLTextFrameContext_Impl(
-		SvXMLImport& rImport,
-		sal_uInt16 nPrfx, const OUString& rLName,
-		const Reference< XAttributeList > & rAttrList,
-		TextContentAnchorType eATyp,
-		sal_uInt16 nNewType,
-		const Reference< XAttributeList > & rFrameAttrList )
-:	SvXMLImportContext( rImport, nPrfx, rLName )
+    SvXMLImport& rImport,
+    sal_uInt16 nPrfx, const OUString& rLName,
+    const Reference< XAttributeList > & rAttrList,
+    TextContentAnchorType eATyp,
+    sal_uInt16 nNewType,
+    const Reference< XAttributeList > & rFrameAttrList, 
+    bool bSetNameForFrame)
+:   SvXMLImportContext( rImport, nPrfx, rLName )
 ,   mbListContextPushed( false )
-,	sWidth(RTL_CONSTASCII_USTRINGPARAM("Width"))
-,	sWidthType(RTL_CONSTASCII_USTRINGPARAM("WidthType"))
-,	sRelativeWidth(RTL_CONSTASCII_USTRINGPARAM("RelativeWidth"))
-,	sHeight(RTL_CONSTASCII_USTRINGPARAM("Height"))
-,	sRelativeHeight(RTL_CONSTASCII_USTRINGPARAM("RelativeHeight"))
-,	sSizeType(RTL_CONSTASCII_USTRINGPARAM("SizeType"))
-,	sIsSyncWidthToHeight(RTL_CONSTASCII_USTRINGPARAM("IsSyncWidthToHeight"))
-,	sIsSyncHeightToWidth(RTL_CONSTASCII_USTRINGPARAM("IsSyncHeightToWidth"))
-,	sHoriOrient(RTL_CONSTASCII_USTRINGPARAM("HoriOrient"))
-,	sHoriOrientPosition(RTL_CONSTASCII_USTRINGPARAM("HoriOrientPosition"))
-,	sVertOrient(RTL_CONSTASCII_USTRINGPARAM("VertOrient"))
-,	sVertOrientPosition(RTL_CONSTASCII_USTRINGPARAM("VertOrientPosition"))
-,	sChainNextName(RTL_CONSTASCII_USTRINGPARAM("ChainNextName"))
-,	sAnchorType(RTL_CONSTASCII_USTRINGPARAM("AnchorType"))
-,	sAnchorPageNo(RTL_CONSTASCII_USTRINGPARAM("AnchorPageNo"))
-,	sGraphicURL(RTL_CONSTASCII_USTRINGPARAM("GraphicURL"))
-,	sGraphicFilter(RTL_CONSTASCII_USTRINGPARAM("GraphicFilter"))
+,   sWidth(RTL_CONSTASCII_USTRINGPARAM("Width"))
+,   sWidthType(RTL_CONSTASCII_USTRINGPARAM("WidthType"))
+,   sRelativeWidth(RTL_CONSTASCII_USTRINGPARAM("RelativeWidth"))
+,   sHeight(RTL_CONSTASCII_USTRINGPARAM("Height"))
+,   sRelativeHeight(RTL_CONSTASCII_USTRINGPARAM("RelativeHeight"))
+,   sSizeType(RTL_CONSTASCII_USTRINGPARAM("SizeType"))
+,   sIsSyncWidthToHeight(RTL_CONSTASCII_USTRINGPARAM("IsSyncWidthToHeight"))
+,   sIsSyncHeightToWidth(RTL_CONSTASCII_USTRINGPARAM("IsSyncHeightToWidth"))
+,   sHoriOrient(RTL_CONSTASCII_USTRINGPARAM("HoriOrient"))
+,   sHoriOrientPosition(RTL_CONSTASCII_USTRINGPARAM("HoriOrientPosition"))
+,   sVertOrient(RTL_CONSTASCII_USTRINGPARAM("VertOrient"))
+,   sVertOrientPosition(RTL_CONSTASCII_USTRINGPARAM("VertOrientPosition"))
+,   sChainNextName(RTL_CONSTASCII_USTRINGPARAM("ChainNextName"))
+,   sAnchorType(RTL_CONSTASCII_USTRINGPARAM("AnchorType"))
+,   sAnchorPageNo(RTL_CONSTASCII_USTRINGPARAM("AnchorPageNo"))
+,   sGraphicURL(RTL_CONSTASCII_USTRINGPARAM("GraphicURL"))
+,   sGraphicFilter(RTL_CONSTASCII_USTRINGPARAM("GraphicFilter"))
 // --> OD 2009-07-22 #i73249#
 //,   sAlternativeText(RTL_CONSTASCII_USTRINGPARAM("AlternativeText"))
 ,   sTitle(RTL_CONSTASCII_USTRINGPARAM("Title"))
 ,   sDescription(RTL_CONSTASCII_USTRINGPARAM("Description"))
 // <--
-,	sFrameStyleName(RTL_CONSTASCII_USTRINGPARAM("FrameStyleName"))
-,	sGraphicRotation(RTL_CONSTASCII_USTRINGPARAM("GraphicRotation"))
-,	sTextBoxServiceName(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.TextFrame"))
-,	sGraphicServiceName(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.GraphicObject"))
-,	nType( nNewType )
-,	eAnchorType( eATyp )
+,   sFrameStyleName(RTL_CONSTASCII_USTRINGPARAM("FrameStyleName"))
+,   sGraphicRotation(RTL_CONSTASCII_USTRINGPARAM("GraphicRotation"))
+,   sTextBoxServiceName(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.TextFrame"))
+,   sGraphicServiceName(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.GraphicObject"))
+,   nType( nNewType )
+,   eAnchorType( eATyp )
+,   mbSetNameForFrame(bSetNameForFrame)
 {
 	nX = 0;
 	nY = 0;
@@ -1441,13 +1477,25 @@ void XMLTextFrameContext::EndElement()
 {
     /// solve if multiple image child contexts were imported
     /// the winner is returned, if something has yet to be done with it
-    /*const SvXMLImportContext* pWinner =*/ solveMultipleImages();
+    const SvXMLImportContext* pWinner = solveMultipleImages();
 
-	SvXMLImportContext *pContext = &m_xImplContext;
-	XMLTextFrameContext_Impl *pImpl = PTR_CAST( XMLTextFrameContext_Impl, pContext );
-	if( pImpl )
-	{
-		pImpl->CreateIfNotThere();
+    // #123261# see if the winner is a XMLTextFrameContext_Impl
+    const XMLTextFrameContext_Impl* pImplWinner = dynamic_cast< const XMLTextFrameContext_Impl* >(pWinner);
+
+    if(pImplWinner)
+    {
+        // #123261# if yes, set name now, after the winner is identified (setting at each
+        // candidate may run into problems due to colliding with efforts in the target to
+        // avoid double names, so only set one name at one image and not at each)
+        const_cast< XMLTextFrameContext_Impl* >(pImplWinner)->SetNameForFrameFromPropSet();
+    }
+
+    SvXMLImportContext *pContext = &m_xImplContext;
+    XMLTextFrameContext_Impl *pImpl = dynamic_cast< XMLTextFrameContext_Impl* >(pContext);
+
+    if( pImpl )
+    {
+        pImpl->CreateIfNotThere();
 
         // --> OD 2009-07-22 #i73249#
 //        // alternative text
@@ -1552,32 +1600,41 @@ SvXMLImportContext *XMLTextFrameContext::CreateChildContext(
                     setSupportsMultipleContents(IsXMLToken(rLocalName, XML_IMAGE));
                 }
 
-				if( !pContext )
-				{
+                if( !pContext )
+                {
+                    pContext = new XMLTextFrameContext_Impl( 
+                        GetImport(), 
+                        p_nPrefix,
+                        rLocalName, 
+                        xAttrList,
+                        m_eDefaultAnchorType,
+                        nFrameType,
+                        m_xAttrList,
+                        !getSupportsMultipleContents());
+                }
 
-					pContext = new XMLTextFrameContext_Impl( GetImport(), p_nPrefix,
-														rLocalName, xAttrList,
-														m_eDefaultAnchorType,
-														nFrameType,
-														m_xAttrList	);
-				}
-
-				m_xImplContext = pContext;
+                m_xImplContext = pContext;
 
                 if(getSupportsMultipleContents() && XML_TEXT_FRAME_GRAPHIC == nFrameType)
                 {
                     addContent(*m_xImplContext);
                 }
-			}
-		}
-	}
+            }
+        }
+    }
     else if(getSupportsMultipleContents() && XML_NAMESPACE_DRAW == p_nPrefix && IsXMLToken(rLocalName, XML_IMAGE))
     {
         // read another image
         pContext = new XMLTextFrameContext_Impl(
-            GetImport(), p_nPrefix, rLocalName, xAttrList,
-            m_eDefaultAnchorType, XML_TEXT_FRAME_GRAPHIC, m_xAttrList);
-        
+            GetImport(), 
+            p_nPrefix, 
+            rLocalName, 
+            xAttrList,
+            m_eDefaultAnchorType, 
+            XML_TEXT_FRAME_GRAPHIC, 
+            m_xAttrList,
+            false);
+
         m_xImplContext = pContext;
         addContent(*m_xImplContext);
     }

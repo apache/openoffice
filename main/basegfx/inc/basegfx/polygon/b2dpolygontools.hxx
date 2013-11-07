@@ -29,6 +29,8 @@
 #include <basegfx/range/b2drectangle.hxx>
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 #include <basegfx/polygon/b3dpolygon.hxx>
+#include <com/sun/star/drawing/PointSequence.hpp>
+#include <com/sun/star/drawing/FlagSequence.hpp>
 #include <vector>
 
 //////////////////////////////////////////////////////////////////////////////
@@ -526,6 +528,71 @@ namespace basegfx
 			The modified version of the source polygon
 		*/
 		B2DPolygon snapPointsOfHorizontalOrVerticalEdges(const B2DPolygon& rCandidate);
+
+        /** returns true if the Polygon only contains horizontal or vertical edges
+            so that it could be represented by RegionBands
+        */
+        bool containsOnlyHorizontalAndVerticalEdges(const B2DPolygon& rCandidate);
+
+        /// get the tangent with which the given point is entered seen from the previous 
+        /// polygon path data. Take into account all stuff like closed state, zero-length edges and others.
+        B2DVector getTangentEnteringPoint(const B2DPolygon& rCandidate, sal_uInt32 nIndex);
+
+        /// get the tangent with which the given point is left seen from the following
+        /// polygon path data. Take into account all stuff like closed state, zero-length edges and others.
+        B2DVector getTangentLeavingPoint(const B2DPolygon& rCandidate, sal_uInt32 nIndex);
+
+        /// converters for com::sun::star::drawing::PointSequence
+        B2DPolygon UnoPointSequenceToB2DPolygon(
+            const com::sun::star::drawing::PointSequence& rPointSequenceSource, 
+            bool bCheckClosed = true);
+        void B2DPolygonToUnoPointSequence(
+            const B2DPolygon& rPolygon, 
+            com::sun::star::drawing::PointSequence& rPointSequenceRetval);
+
+        /* converters for com::sun::star::drawing::PointSequence and 
+           com::sun::star::drawing::FlagSequence to B2DPolygon (curved polygons)
+         */
+        B2DPolygon UnoPolygonBezierCoordsToB2DPolygon(
+            const com::sun::star::drawing::PointSequence& rPointSequenceSource, 
+            const com::sun::star::drawing::FlagSequence& rFlagSequenceSource, 
+            bool bCheckClosed = true);
+        void B2DPolygonToUnoPolygonBezierCoords(
+            const B2DPolygon& rPolyPolygon, 
+            com::sun::star::drawing::PointSequence& rPointSequenceRetval, 
+            com::sun::star::drawing::FlagSequence& rFlagSequenceRetval);
+
+        /** Read poly-polygon from SVG.
+
+            This function imports a poly-polygon from an SVG points
+            attribute (a plain list of coordinate pairs).
+
+            @param o_rPoly
+            The output polygon. Note that svg:points can only define a
+            single polygon
+
+            @param rSvgPointsAttribute
+            A valid SVG points attribute string
+
+            @return true, if the string was successfully parsed
+         */
+        bool importFromSvgPoints( B2DPolygon&            o_rPoly,
+                                  const ::rtl::OUString& rSvgPointsAttribute );
+
+        /** Write poly-polygon to SVG.
+
+            This function imports a non-bezier polygon to SVG points
+            (a plain list of coordinate pairs).
+
+            @param rPoly
+            The polygon to export
+
+            @param rSvgPointsAttribute
+            A valid SVG points attribute string
+
+            @return true, if the string was successfully parsed
+         */
+        ::rtl::OUString exportToSvgPoints( const B2DPolygon& rPoly );
 
     } // end of namespace tools
 } // end of namespace basegfx
