@@ -154,7 +154,6 @@ public:
 			throw (::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Event ) 
 			throw (::com::sun::star::uno::RuntimeException);
-	// overwrite the children methods
 	//-----IAccessibility2 Implementation 2009
 
 	//=====  XServiceInfo  ====================================================

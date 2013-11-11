@@ -63,9 +63,6 @@
 #include <svx/unoapi.hxx>
 #include <swmodule.hxx>
 #include <svtools/colorcfg.hxx>
-//for note accessibility
-//#include "postit.hxx"
-//#include "PostItMgr.hxx"
 
 #include <fmtanchr.hxx>
 #include <viewimp.hxx>
