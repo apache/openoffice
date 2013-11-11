@@ -478,7 +478,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             {
 //IAccessible2 Implementation 2009-----
 #ifdef WNT
-                pSVData->mxAccessBridge = xFactory->createInstance(
+				pSVData->mxAccessBridge = xFactory->createInstance(
 			               OUString::createFromAscii( "com.sun.star.accessibility.MSAAService" ) ); 
 			    if( pSVData->mxAccessBridge.is() )
 			    {

@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef INCLUDED_DRAWINGLAYER_PRIMITIVE3D_MODIFIEDCOLORPRIMITIVE3D_HXX
 #define INCLUDED_DRAWINGLAYER_PRIMITIVE3D_MODIFIEDCOLORPRIMITIVE3D_HXX
 
@@ -32,8 +30,8 @@
 
 namespace drawinglayer
 {
-	namespace primitive3d
-	{
+    namespace primitive3d
+    {
         /** ModifiedColorPrimitive3D class
 
             This primitive is a grouping primitive and allows to define
@@ -41,28 +39,28 @@ namespace drawinglayer
             visualisation. Please see the ModifiedColorPrimitive2D
             description for more info.
          */
-		class DRAWINGLAYER_DLLPUBLIC ModifiedColorPrimitive3D : public GroupPrimitive3D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC ModifiedColorPrimitive3D : public GroupPrimitive3D
+        {
+        private:
             /// The ColorModifier to use
-			basegfx::BColorModifier					maColorModifier;
+            basegfx::BColorModifierSharedPtr        maColorModifier;
 
-		public:
+        public:
             /// constructor
-			ModifiedColorPrimitive3D(
-				const Primitive3DSequence& rChildren, 
-				const basegfx::BColorModifier& rColorModifier);
+            ModifiedColorPrimitive3D(
+                const Primitive3DSequence& rChildren, 
+                const basegfx::BColorModifierSharedPtr& rColorModifier);
 
-			/// data read access
-			const basegfx::BColorModifier& getColorModifier() const { return maColorModifier; }
+            /// data read access
+            const basegfx::BColorModifierSharedPtr& getColorModifier() const { return maColorModifier; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
+            /// compare operator
+            virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
 
-			/// provide unique ID
-			DeclPrimitrive3DIDBlock()
-		};
-	} // end of namespace primitive3d
+            /// provide unique ID
+            DeclPrimitrive3DIDBlock()
+        };
+    } // end of namespace primitive3d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
