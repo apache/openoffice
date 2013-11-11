@@ -54,7 +54,6 @@ using namespace com::sun::star::bridge;
 using namespace com::sun::star::awt;
 using namespace rtl;
 using namespace cppu;
-using namespace com::sun::star::accessibility;
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -196,33 +195,7 @@ void AccTopWindowListener::AddAllListeners(com::sun::star::accessibility::XAcces
     if(com::sun::star::accessibility::AccessibleRole::DOCUMENT == role )
     {
         if(accManagerAgent.IsStateManageDescendant(pAccessible))
-        {
-        	// Here, for sw document, the last children may be post it window or ole window, they need to be cached because their focus event
-        	// won't be handled together with other children. 
-        	int count = pAccessibleContext->getAccessibleChildCount();
-			sal_Bool bValid = sal_True; 
-			for (int i = count - 1; i >= 0 && bValid; i--)
-			{
-				Reference<XAccessible> mxAccessible	= pAccessibleContext->getAccessibleChild(i);
-				XAccessible* mpAccessible = mxAccessible.get();
-				if (mpAccessible != NULL)
-				{
-					Reference< XAccessibleContext > xChildContext = mpAccessible->getAccessibleContext();
-					if (xChildContext.is())
-					{
-						short childRole = xChildContext->getAccessibleRole();
-						if (childRole == com::sun::star::accessibility::AccessibleRole::WINDOW || 
-							childRole == com::sun::star::accessibility::AccessibleRole::SCROLL_PANE)
-						{
-							AddAllListeners(mpAccessible,pAccessible,pWND);
-						}
-						else
-							bValid = sal_False;
-					}
-				}
-				else
-					bValid = sal_False;				
-			}
+        {        	
             return ;
         }
     }
