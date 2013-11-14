@@ -74,8 +74,6 @@ BUILD_ACTION+=FREEBL_NO_DEPEND=1 FREEBL_LOWHASH=1
 PATCH_FILES+=nss_linux.patch
 .ENDIF
 
-.ENDIF			# "$(GUI)"=="UNX"
-
 
 .IF "$(GUI)"=="WNT"
 
