@@ -226,24 +226,14 @@ BEGIN
 	@linkrpms = ();
 	$archiveformat = "";
 	$minorupgradekey = "";
-	$updatelastsequence = 0;
-	$updatesequencecounter = 0;
-	$updatedatabase = 0;
-	$updatedatabasepath = "";
 	$pfffileexists = 0;
 	$pffcabfilename = "ooobasis3.0_pff.cab";
-	$mergemodulenumber = 0;
-	%allmergemodulefilesequences = ();
-	%newupdatefiles = ();
-	%allusedupdatesequences = ();
-	%mergemodulefiles = ();
 	$mergefiles_added_into_collector = 0;
 	$creating_windows_installer_patch = 0;
-	
+
 	$strip = 1;
 	
 	$globallogging = 0;
-	$globalloggingform21 = 1;
 	$logfilename = "logfile.log";	# the default logfile name for global errors
 #	@logfileinfo = ();
 #	@errorlogfileinfo = ();
@@ -292,7 +282,6 @@ BEGIN
 	$pwfile = "";
 	$pfxfile = "";
 
-	%mergemodules = ();
 	%merge_media_line = ();
 	%merge_allfeature_hash = ();
 	%merge_alldirectory_hash = ();
@@ -418,13 +407,10 @@ BEGIN
 	%usedtreeconditions = ();
 	%moduledestination = ();
 	
-	$one_cab_file = 0;
 	$fix_number_of_cab_files = 1;
-	$cab_file_per_component = 0;
 	$cabfilecompressionlevel = 2;
 	$number_of_cabfiles = 1;	# only for $fix_number_of_cab_files = 1 
 	$include_cab_in_msi = 0;
-	$use_packages_for_cabs = 0;
 	$msidatabasename = "";
 	$prepare_winpatch = 0;
 	$previous_idt_dir = "";	
@@ -451,7 +437,6 @@ BEGIN
 
 	$postprocess_specialepm = 0;
 	$postprocess_standardepm = 0;
-	$mergemodules_analyzed = 0;
 	
 	$starttime = "";
 
