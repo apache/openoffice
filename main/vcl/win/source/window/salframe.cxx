@@ -6204,6 +6204,13 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 				}
 				else
 				{
+					// IA2 should be enabled automatically
+					AllSettings aSettings = Application::GetSettings();
+					MiscSettings aMisc = aSettings.GetMiscSettings();
+					aMisc.SetEnableATToolSupport( sal_True );
+					aSettings.SetMiscSettings( aMisc );
+					Application::SetSettings( aSettings );
+
 					if (Application::GetSettings().GetMiscSettings().GetEnableATToolSupport())
 					{
 						// Make sure to launch Accessibiliity only the following criterias are satisfied to avoid RFT interrupts regular acc processing
