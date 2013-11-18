@@ -910,45 +910,75 @@ void SdrModel::SetReferenceDevice(OutputDevice* pDev)
 */
 void SdrModel::ImpReformatAllEdgeObjects()
 {
-	if(isLocked())
-	{
-		return;
-	}
+    if(isLocked())
+    {
+        return;
+    }
 
-	sal_uInt32 nAnz(GetMasterPageCount());
-	sal_uInt32 nNum;
-	
-	for(nNum = 0; nNum < nAnz; nNum++)
-	{
-		SdrObjListIter aIter(*GetMasterPage(nNum), IM_DEEPNOGROUPS);
+    sal_uInt32 nAnz(GetMasterPageCount());
+    sal_uInt32 nNum(0);
+    std::vector< SdrEdgeObj* > aSdrEdgeObjVector;
 
-		while(aIter.IsMore())
-		{
-			SdrEdgeObj* pSdrEdgeObj = dynamic_cast< SdrEdgeObj* >(aIter.Next());
+    for(nNum = 0; nNum < nAnz; nNum++)
+    {
+        SdrObjListIter aIter(*GetMasterPage(nNum), IM_DEEPNOGROUPS);
 
-			if(pSdrEdgeObj)
-			{
-				pSdrEdgeObj->ReformatEdge();
-			}
-		}
-	}
+        while(aIter.IsMore())
+        {
+            SdrEdgeObj* pSdrEdgeObj = dynamic_cast< SdrEdgeObj* >(aIter.Next());
 
-	nAnz = GetPageCount();
+            if(pSdrEdgeObj)
+            {
+                aSdrEdgeObjVector.push_back(pSdrEdgeObj);
+            }
+        }
+    }
 
-	for(nNum = 0; nNum < nAnz; nNum++)
-	{
-		SdrObjListIter aIter(*GetPage(nNum), IM_DEEPNOGROUPS);
+    nAnz = GetPageCount();
 
-		while(aIter.IsMore())
-		{
-			SdrEdgeObj* pSdrEdgeObj = dynamic_cast< SdrEdgeObj* >(aIter.Next());
+    for(nNum = 0; nNum < nAnz; nNum++)
+    {
+        SdrObjListIter aIter(*GetPage(nNum), IM_DEEPNOGROUPS);
 
-			if(pSdrEdgeObj)
-			{
-				pSdrEdgeObj->ReformatEdge();
-			}
-		}
-	}
+        while(aIter.IsMore())
+        {
+            SdrEdgeObj* pSdrEdgeObj = dynamic_cast< SdrEdgeObj* >(aIter.Next());
+
+            if(pSdrEdgeObj)
+            {
+                aSdrEdgeObjVector.push_back(pSdrEdgeObj);
+            }
+        }
+    }
+
+    nAnz = aSdrEdgeObjVector.size();
+
+    for(nNum = 0; nNum < nAnz; nNum++)
+    {
+        SdrEdgeObj* pSdrEdgeObj = aSdrEdgeObjVector[nNum];
+        SdrObject* pObjA = pSdrEdgeObj->GetSdrObjectConnection(true);
+        SdrObject* pObjB = pSdrEdgeObj->GetSdrObjectConnection(false);
+
+        // TTTT: check what happens; it might just be a ImpDirtyEdgeTrack()
+        // and ActionChanged() at SdrEdgeObj::Notify
+        if(pObjA || pObjB)
+        {
+            pSdrEdgeObj->SetEdgeTrackDirty();
+            pSdrEdgeObj->ActionChanged();
+        }
+
+        //if(pObjA)
+        //{
+        //    SfxSimpleHint aHint(SFX_HINT_DATACHANGED);
+        //    pSdrEdgeObj->Notify(*pObjA, aHint);
+        //}
+        //
+        //if(pObjB)
+        //{
+        //    SfxSimpleHint aHint(SFX_HINT_DATACHANGED);
+        //    pSdrEdgeObj->Notify(*pObjB, aHint);
+        //}
+    }
 }
 
 SvStream* SdrModel::GetDocumentStream(SdrDocumentStreamInfo& /*rStreamInfo*/) const

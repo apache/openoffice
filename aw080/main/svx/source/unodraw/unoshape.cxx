@@ -2477,7 +2477,7 @@ bool SvxShape::setPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 						    SdrObject* pNode = GetSdrObjectFromXShape( xShape );
 						    if( pNode )
 						    {
-							    pEdgeObj->ConnectToNode( pProperty->nWID == OWN_ATTR_EDGE_START_OBJ, pNode );
+							    pEdgeObj->ConnectToSdrObject( pProperty->nWID == OWN_ATTR_EDGE_START_OBJ, pNode );
 							    pEdgeObj->setGluePointIndex( pProperty->nWID == OWN_ATTR_EDGE_START_OBJ, -1 );
 							    return true;
 						    }
@@ -2517,17 +2517,31 @@ bool SvxShape::setPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 					    }
 					    break;
 				    }
-    			    case OWN_ATTR_EDGE_POLYPOLYGONBEZIER:
-				    {
-					    drawing::PolyPolygonBezierCoords aPolyPoly;
-					    if ( rValue >>= aPolyPoly )
-					    {
-					        basegfx::B2DPolyPolygon aNewPolyPolygon(basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(aPolyPoly));
+                    case OWN_ATTR_EDGE_POLYPOLYGONBEZIER:
+                    {
+                        basegfx::B2DPolyPolygon aNewPolyPolygon;
+
+                        // #123616# be a little bit more flexible regardin gthe data type used
+                        if( rValue.getValueType() == ::getCppuType(( const drawing::PointSequenceSequence*)0))
+                        {
+                            // get polygpon data from PointSequenceSequence
+                            aNewPolyPolygon = basegfx::tools::UnoPointSequenceSequenceToB2DPolyPolygon(
+                                *(const drawing::PointSequenceSequence*)rValue.getValue());
+                        }
+                        else if( rValue.getValueType() == ::getCppuType(( const drawing::PolyPolygonBezierCoords*)0))
+                        {
+                            // get polygpon data from PolyPolygonBezierCoords
+                            aNewPolyPolygon = basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
+                                *(const drawing::PolyPolygonBezierCoords*)rValue.getValue());
+                        }
+
+                        if(aNewPolyPolygon.count())
+                        {
                             ForceMetricToItemPoolMetric( aNewPolyPolygon );
-    			            
+
                             if(isWriterAnchorUsed())
                             {
-						        aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
+                                aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
                             }
 
                             if(aNewPolyPolygon.count())
@@ -2537,9 +2551,9 @@ bool SvxShape::setPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
                             }
 
                             return true;
-					    }
-				    }
-			    }
+                        }
+                    }
+                }
 		    }
 		    break;
 	    }
@@ -3031,7 +3045,7 @@ bool SvxShape::getPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 			        case OWN_ATTR_EDGE_START_OBJ:
 			        case OWN_ATTR_EDGE_END_OBJ:
 				    {
-					    SdrObject* pNode = pEdgeObj->GetConnectedNode(pProperty->nWID == OWN_ATTR_EDGE_START_OBJ);
+					    SdrObject* pNode = pEdgeObj->GetSdrObjectConnection(pProperty->nWID == OWN_ATTR_EDGE_START_OBJ);
 					    if(pNode)
 					    {
 						    Reference< drawing::XShape > xShape( GetXShapeForSdrObject( pNode ) );

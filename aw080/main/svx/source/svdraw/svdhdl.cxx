@@ -1959,7 +1959,7 @@ void ImpEdgeHdl::CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayManag
 		BitmapColorIndex eColIndex = LightCyan;
 		BitmapMarkerKind eKindOfMarker = Rect_7x7;
 
-		if(pEdge->GetConnectedNode(mnObjHdlNum == 0)) 
+		if(pEdge->GetSdrObjectConnection(mnObjHdlNum == 0)) 
 		{
 			eColIndex = LightRed;
         }
@@ -2000,56 +2000,48 @@ void ImpEdgeHdl::SetLineCode(SdrEdgeLineCode eCode)
 
 Pointer ImpEdgeHdl::GetPointer() const
 { 
-	if(!mpSdrHdlObject || !mpSdrHdlObject->IsSdrEdgeObj()) 
-	{
-		return SdrHdl::GetPointer();
-	}
+    if(!mpSdrHdlObject) 
+    {
+        return SdrHdl::GetPointer();
+    }
 
-	if(mnObjHdlNum <= 1) 
-	{
-		return Pointer(POINTER_MOVEPOINT); //Pointer(POINTER_DRAW_CONNECT);
+    const SdrEdgeObj* pSdrEdgeObj = dynamic_cast< const SdrEdgeObj* >(mpSdrHdlObject);
+
+    if(!pSdrEdgeObj) 
+    {
+        return SdrHdl::GetPointer();
+    }
+
+    if(mnObjHdlNum <= 1) 
+    {
+        return Pointer(POINTER_MOVEPOINT); //Pointer(POINTER_DRAW_CONNECT);
     }
 
     if(IsHorzDrag()) 
     {
-		return Pointer(POINTER_ESIZE);
-	}
+        return Pointer(POINTER_ESIZE);
+    }
     else 
-	{
-		return Pointer(POINTER_SSIZE);
-	}
+    {
+        return Pointer(POINTER_SSIZE);
+    }
 }
 
 bool ImpEdgeHdl::IsHorzDrag() const
 {
-	const SdrEdgeObj* pEdge = dynamic_cast< const SdrEdgeObj* >(mpSdrHdlObject);
+    const SdrEdgeObj* pEdge = dynamic_cast< const SdrEdgeObj* >(mpSdrHdlObject);
 
-	if(pEdge) 
-	{
-		if(mnObjHdlNum <= 1) 
-	    {
-			return false;
-	    }
+    if(pEdge) 
+    {
+        if(mnObjHdlNum <= 1) 
+        {
+            return false;
+        }
 
-		SdrEdgeKind eEdgeKind = ((SdrEdgeKindItem&)(pEdge->GetObjectItem(SDRATTR_EDGEKIND))).GetValue();
-		const SdrEdgeInfoRec& rInfo = pEdge->maEdgeInfo;
-
-		if(SDREDGE_ORTHOLINES == eEdgeKind || SDREDGE_BEZIER == eEdgeKind) 
-		{
-			return !rInfo.ImpIsHorzLine(eLineCode, pEdge->maEdgeTrack.count());
-		}
-		else if(SDREDGE_THREELINES == eEdgeKind) 
-		{
-			const sal_Int32 nWink((2 == mnObjHdlNum) ? rInfo.nAngle1 : rInfo.nAngle2);
-
-			if(!nWink || 18000 == nWink) 
-    		{
-				return true;
-		    }
-	    }
+        return pEdge->checkHorizontalDrag(eLineCode, 2 == mnObjHdlNum);
     }
 
-	return false;
+    return false;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

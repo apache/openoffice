@@ -125,14 +125,11 @@ bool FuConstructCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
 	{
 		const basegfx::B2DPoint aPixelPos(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y());
 		const basegfx::B2DPoint aLogicPos(mpWindow->GetInverseViewTransformation() * aPixelPos);
-
 		mpWindow->CaptureMouse();
-		sal_uInt16 nDrgLog = sal_uInt16 ( mpWindow->PixelToLogic(Size(DRGPIX,0)).Width() );
-
-		mpView->BegCreateObj(aLogicPos, nDrgLog);
-
+		mpView->BegCreateObj(aLogicPos, mpView->getMinMovLog());
 		SdrObject* pObj = mpView->GetCreateObj();
-		if ( pObj )
+
+        if ( pObj )
 		{
 			SetAttributes( pObj );
 			sal_Bool bForceFillStyle = sal_True;
