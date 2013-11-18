@@ -180,12 +180,9 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
             if ( rNd.IsTxtNode() )
             {
                 SwTxtNode* pTxtNode = rNd.GetTxtNode();
-                // --> OD 2008-03-13 #refactorlists#
-//                pTxtNode->UnregisterNumber();
                 pTxtNode->RemoveFromList();
-                // <--
 
-				//if ( pTxtNode->GetTxtColl()->GetOutlineLevel() != NO_NUMBERING )//#outline level,zhaojianwei
+                //if ( pTxtNode->GetTxtColl()->GetOutlineLevel() != NO_NUMBERING )//#outline level,zhaojianwei
                 if ( pTxtNode->GetAttrOutlineLevel() != 0 )//<-end,zhaojianwei
                 {
                     const SwNodePtr pSrch = (SwNodePtr)&rNd;
@@ -194,24 +191,21 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
             }
             // <--
 
-			BigPtrArray::Move( aDelIdx.GetIndex(), rInsPos.GetIndex() );
+            BigPtrArray::Move( aDelIdx.GetIndex(), rInsPos.GetIndex() );
 
-			if( rNd.IsTxtNode() )
-			{
-				SwTxtNode& rTxtNd = (SwTxtNode&)rNd;
-                // --> OD 2008-03-13 #refactorlists#
-//                rTxtNd.SyncNumberAndNumRule();
+            if( rNd.IsTxtNode() )
+            {
+                SwTxtNode& rTxtNd = (SwTxtNode&)rNd;
                 rTxtNd.AddToList();
-                // <--
 
                 if( bInsOutlineIdx &&
-					//NO_NUMBERING != rTxtNd.GetTxtColl()->GetOutlineLevel() )//#outline level,zhaojianwei
+                    //NO_NUMBERING != rTxtNd.GetTxtColl()->GetOutlineLevel() )//#outline level,zhaojianwei
                     0 != rTxtNd.GetAttrOutlineLevel() )//<-end,zhaojianwei
-				{
-					const SwNodePtr pSrch = (SwNodePtr)&rNd;
-					pOutlineNds->Insert( pSrch );
-				}
-				rTxtNd.InvalidateNumRule();
+                {
+                    const SwNodePtr pSrch = (SwNodePtr)&rNd;
+                    pOutlineNds->Insert( pSrch );
+                }
+                rTxtNd.InvalidateNumRule();
 
 //FEATURE::CONDCOLL
 				if( RES_CONDTXTFMTCOLL == rTxtNd.GetTxtColl()->Which() )
@@ -273,11 +267,8 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
 					// Numerierungen auch aktualisiert werden.
 					pTxtNd->InvalidateNumRule();
 
-                // --> OD 2008-03-13 #refactorlists#
-//                pTxtNd->UnregisterNumber();
                 pTxtNd->RemoveFromList();
-                // <--
-			}
+            }
 
 			RemoveNode( rDelPos.GetIndex(), 1, sal_False );		// Indizies verschieben !!
 			SwCntntNode * pCNd = pNd->GetCntntNode();
@@ -298,10 +289,7 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
 						rNds.pOutlineNds->Insert( pTxtNd );
                     }
 
-                    // --> OD 2008-03-13 #refactorlists#
-//                    pTxtNd->SyncNumberAndNumRule();
                     pTxtNd->AddToList();
-                    // <--
 
 					// Sonderbehandlung fuer die Felder!
 					if( pHts && pHts->Count() )
@@ -316,9 +304,9 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
                             switch ( pAttr->Which() )
                             {
                             case RES_TXTATR_FIELD:
+                            case RES_TXTATR_INPUTFIELD:
                                 {
-                                    SwTxtFld* pTxtFld =
-                                        static_cast<SwTxtFld*>(pAttr);
+                                    SwTxtFld* pTxtFld = static_cast<SwTxtFld*>(pAttr);
                                     rNds.GetDoc()->InsDelFldInFldLst( !bToUndo, *pTxtFld );
 
                                     const SwFieldType* pTyp = pTxtFld->GetFmtFld().GetField()->GetTyp();

@@ -356,8 +356,8 @@ SwXReferenceMark::getAnchor() throw (uno::RuntimeException)
                     &m_pImpl->m_pDoc->GetNodes()))
             {
                 SwTxtNode const& rTxtNode = pTxtMark->GetTxtNode();
-                const ::std::auto_ptr<SwPaM> pPam( (pTxtMark->GetEnd())
-                    ?   new SwPaM( rTxtNode, *pTxtMark->GetEnd(),
+                const ::std::auto_ptr<SwPaM> pPam( (pTxtMark->End())
+                    ?   new SwPaM( rTxtNode, *pTxtMark->End(),
                                    rTxtNode, *pTxtMark->GetStart())
                     :   new SwPaM( rTxtNode, *pTxtMark->GetStart()) );
 
@@ -387,9 +387,10 @@ void SAL_CALL SwXReferenceMark::dispose() throw (uno::RuntimeException)
                     &m_pImpl->m_pDoc->GetNodes()))
             {
                 SwTxtNode const& rTxtNode = pTxtMark->GetTxtNode();
-				xub_StrLen nStt = *pTxtMark->GetStart(),
-						   nEnd = pTxtMark->GetEnd() ? *pTxtMark->GetEnd()
-												     : nStt + 1;
+                const xub_StrLen nStt = *pTxtMark->GetStart();
+                const xub_StrLen nEnd = pTxtMark->End()
+                                  ? *pTxtMark->End()
+                                  : nStt + 1;
 
 				SwPaM aPam( rTxtNode, nStt, rTxtNode, nEnd );
                 m_pImpl->m_pDoc->DeleteAndJoin( aPam );
@@ -477,17 +478,18 @@ throw (uno::RuntimeException)
                      &m_pImpl->m_pDoc->GetNodes()))
             {
                 SwTxtNode const& rTxtNode = pTxtMark->GetTxtNode();
-				xub_StrLen nStt = *pTxtMark->GetStart(),
-						   nEnd = pTxtMark->GetEnd() ? *pTxtMark->GetEnd()
-												     : nStt + 1;
+                const xub_StrLen nStt = *pTxtMark->GetStart();
+                const xub_StrLen nEnd = pTxtMark->End()
+                                        ? *pTxtMark->End()
+                                        : nStt + 1;
 
-				SwPaM aPam( rTxtNode, nStt, rTxtNode, nEnd );
+                SwPaM aPam( rTxtNode, nStt, rTxtNode, nEnd );
                 // deletes the m_pImpl->m_pDoc member in the SwXReferenceMark!
                 m_pImpl->m_pDoc->DeleteAndJoin( aPam );
                 // The aPam will keep the correct and functional doc though
 
                 m_pImpl->m_sMarkName = rName;
-				//create a new one
+                //create a new one
                 m_pImpl->InsertRefMark( aPam, 0 );
                 m_pImpl->m_pDoc = aPam.GetDoc();
             }
@@ -873,7 +875,7 @@ bool SwXMeta::SetContentRange(
             {
                 // rStart points at the first position _within_ the meta!
                 rStart = *pTxtAttr->GetStart() + 1;
-                rEnd = *pTxtAttr->GetEnd();
+                rEnd = *pTxtAttr->End();
                 return true;
             }
         }

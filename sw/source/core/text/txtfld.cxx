@@ -416,63 +416,57 @@ SwTxtFormatter::TryNewNoLengthPortion(SwTxtFormatInfo & rInfo)
 
 SwLinePortion *SwTxtFormatter::NewExtraPortion( SwTxtFormatInfo &rInf )
 {
-	SwTxtAttr *pHint = GetAttr( rInf.GetIdx() );
-	SwLinePortion *pRet = 0;
-	if( !pHint )
-	{
-#if OSL_DEBUG_LEVEL > 1
-//        aDbstream << "NewExtraPortion: hint not found?" << endl;
-#endif
-		pRet = new SwTxtPortion;
-		pRet->SetLen( 1 );
-		rInf.SetLen( 1 );
-		return pRet;
-	}
+    SwTxtAttr *pHint = GetAttr( rInf.GetIdx() );
+    SwLinePortion *pRet = 0;
+    if( !pHint )
+    {
+        pRet = new SwTxtPortion;
+        pRet->SetLen( 1 );
+        rInf.SetLen( 1 );
+        return pRet;
+    }
 
-	switch( pHint->Which() )
-	{
-		case RES_TXTATR_FLYCNT :
-		{
-			pRet = NewFlyCntPortion( rInf, pHint );
-			break;
-		}
-		case RES_TXTATR_FTN :
-		{
-			pRet = NewFtnPortion( rInf, pHint );
-			break;
-		}
-		case RES_TXTATR_FIELD :
-		{
-			pRet = NewFldPortion( rInf, pHint );
-			break;
-		}
-		case RES_TXTATR_REFMARK :
-		{
-			pRet = new SwIsoRefPortion;
-			break;
-		}
-		case RES_TXTATR_TOXMARK :
-		{
-			pRet = new SwIsoToxPortion;
-			break;
-		}
-        case RES_TXTATR_METAFIELD:
+    switch( pHint->Which() )
+    {
+    case RES_TXTATR_FLYCNT :
+        {
+            pRet = NewFlyCntPortion( rInf, pHint );
+            break;
+        }
+    case RES_TXTATR_FTN :
+        {
+            pRet = NewFtnPortion( rInf, pHint );
+            break;
+        }
+    case RES_TXTATR_FIELD :
+        {
+            pRet = NewFldPortion( rInf, pHint );
+            break;
+        }
+    case RES_TXTATR_REFMARK :
+        {
+            pRet = new SwIsoRefPortion;
+            break;
+        }
+    case RES_TXTATR_TOXMARK :
+        {
+            pRet = new SwIsoToxPortion;
+            break;
+        }
+    case RES_TXTATR_METAFIELD:
         {
             pRet = lcl_NewMetaPortion( *pHint, true );
             break;
         }
-		default: ;
-	}
-	if( !pRet )
-	{
-#if OSL_DEBUG_LEVEL > 1
-//        aDbstream << "NewExtraPortion: unknown hint" << endl;
-#endif
-		const XubString aNothing;
-		pRet = new SwFldPortion( aNothing );
-		rInf.SetLen( 1 );
-	}
-	return pRet;
+    default: ;
+    }
+    if( !pRet )
+    {
+        const XubString aNothing;
+        pRet = new SwFldPortion( aNothing );
+        rInf.SetLen( 1 );
+    }
+    return pRet;
 }
 
 /*************************************************************************
