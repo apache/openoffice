@@ -277,20 +277,18 @@ String SwGetRefField::GetFieldName() const
 	return aStr;
 }
 
-// --> OD 2007-09-07 #i81002# - parameter <pFldTxtAttr> added
 void SwGetRefField::UpdateField( const SwTxtFld* pFldTxtAttr )
 {
-	sTxt.Erase();
+    sTxt.Erase();
 
     SwDoc* pDoc = ((SwGetRefFieldType*)GetTyp())->GetDoc();
     sal_uInt16 nStt = USHRT_MAX;
     sal_uInt16 nEnd = USHRT_MAX;
-	SwTxtNode* pTxtNd = SwGetRefFieldType::FindAnchor( pDoc, sSetRefName,
-										nSubType, nSeqNo, &nStt, &nEnd );
+    SwTxtNode* pTxtNd = SwGetRefFieldType::FindAnchor( pDoc, sSetRefName, nSubType, nSeqNo, &nStt, &nEnd );
     if ( !pTxtNd )
     {
         sTxt = ViewShell::GetShellRes()->aGetRefFld_RefItemNotFound;
-		return ;
+        return ;
     }
 
 	switch( GetFormat() )
@@ -314,8 +312,7 @@ void SwGetRefField::UpdateField( const SwTxtFld* pFldTxtAttr )
 
 				case REF_ONLYCAPTION:
 					{
-                        const SwTxtAttr* const pTxtAttr =
-                            pTxtNd->GetTxtAttrForCharAt(nStt, RES_TXTATR_FIELD);
+                        const SwTxtAttr* const pTxtAttr = pTxtNd->GetTxtAttrForCharAt(nStt, RES_TXTATR_FIELD);
 						if( pTxtAttr )
 							nStt = SwGetExpField::GetReferenceTextPos(
 												pTxtAttr->GetFmtFld(), *pDoc );
@@ -421,34 +418,31 @@ void SwGetRefField::UpdateField( const SwTxtFld* pFldTxtAttr )
 		}
 		break;
 
-	case REF_UPDOWN:
-		{
-            // --> OD 2007-09-07 #i81002#
+    case REF_UPDOWN:
+        {
             // simplified: use parameter <pFldTxtAttr>
             if( !pFldTxtAttr || !pFldTxtAttr->GetpTxtNode() )
-				break;
+                break;
 
-			LocaleDataWrapper aLocaleData(
-							::comphelper::getProcessServiceFactory(),
-							SvxCreateLocale( GetLanguage() ) );
+            LocaleDataWrapper aLocaleData( ::comphelper::getProcessServiceFactory(), SvxCreateLocale( GetLanguage() ) );
 
-			// erstmal ein "Kurz" - Test - falls beide im selben
-			// Node stehen!
+            // erstmal ein "Kurz" - Test - falls beide im selben
+            // Node stehen!
             if( pFldTxtAttr->GetpTxtNode() == pTxtNd )
-			{
+            {
                 sTxt = nStt < *pFldTxtAttr->GetStart()
-							? aLocaleData.getAboveWord()
-							: aLocaleData.getBelowWord();
-				break;
-			}
+                    ? aLocaleData.getAboveWord()
+                    : aLocaleData.getBelowWord();
+                break;
+            }
 
-            sTxt = ::IsFrameBehind( *pFldTxtAttr->GetpTxtNode(), *pFldTxtAttr->GetStart(),
-									*pTxtNd, nStt )
-						? aLocaleData.getAboveWord()
-						: aLocaleData.getBelowWord();
-		}
-		break;
-    // --> OD 2007-08-24 #i81002#
+            sTxt =
+                ::IsFrameBehind( *pFldTxtAttr->GetpTxtNode(), *pFldTxtAttr->GetStart(), *pTxtNd, nStt )
+                ? aLocaleData.getAboveWord()
+                : aLocaleData.getBelowWord();
+        }
+        break;
+
     case REF_NUMBER:
     case REF_NUMBER_NO_CONTEXT:
     case REF_NUMBER_FULL_CONTEXT:
@@ -459,7 +453,7 @@ void SwGetRefField::UpdateField( const SwTxtFld* pFldTxtAttr )
             }
         }
         break;
-    // <--
+
     default:
         DBG_ERROR("<SwGetRefField::UpdateField(..)> - unknown format type");
 	}

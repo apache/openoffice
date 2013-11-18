@@ -2260,23 +2260,19 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 		}
 	}
 
-	if( bUpdateNum )
-	{
-		if( GetNumInfo().GetDepth() )
+    if( bUpdateNum )
+    {
+        if( GetNumInfo().GetDepth() )
         {
             sal_uInt8 nLvl = GetNumInfo().GetLevel();
-            // --> OD 2008-04-02 #refactorlists#
-//            SetNoNum (&nLvl, sal_True);
-//            SetNodeNum( nLvl);
             SetNodeNum( nLvl, false );
-            // <--
         }
-		else
-			pPam->GetNode()->GetTxtNode()->ResetAttr( RES_PARATR_NUMRULE );
-	}
+        else
+            pPam->GetNode()->GetTxtNode()->ResetAttr( RES_PARATR_NUMRULE );
+    }
 
-	// Attrubute im Absatz davor sollte man jetzt setzen (wegen JavaScript)
-	SetAttr();
+    // Attrubute im Absatz davor sollte man jetzt setzen (wegen JavaScript)
+    SetAttr();
 
 	// Now it is time to get rid of all script dependent hints that are
 	// equal to the settings in the style
@@ -2776,6 +2772,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
                     }
                     break;
                 case RES_TXTATR_FIELD:
+                case RES_TXTATR_INPUTFIELD:
                     {
                         sal_uInt16 nFldWhich =
                             pPostIts

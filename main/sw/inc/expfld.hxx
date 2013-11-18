@@ -312,30 +312,50 @@ public:
 
 class SW_DLLPUBLIC SwInputField : public SwField
 {
-	String  aContent;
-	String	aPText;
-    String  aHelp;
-    String  aToolTip;
-	sal_uInt16  nSubType;
+    mutable String aContent;
+    String aPText;
+    String aHelp;
+    String aToolTip;
+    sal_uInt16 nSubType;
+    bool mbIsFormField;
+
+    SwFmtFld* mpFmtFld; // attribute to which the <SwInputField> belongs to
 
     virtual String          Expand() const;
     virtual SwField*        Copy() const;
 
+    // Accessing Input Field's content
+    const String& getContent() const;
+
 public:
-	// Direkte Eingabe ueber Dialog alten Wert loeschen
-	SwInputField(SwInputFieldType*, const String& rContent ,
-				 const String& rPrompt, sal_uInt16 nSubType = 0,
-				 sal_uLong nFmt = 0);
+    // Direkte Eingabe ueber Dialog alten Wert loeschen
+    SwInputField(
+        SwInputFieldType* pFieldType,
+        const String& rContent,
+        const String& rPrompt,
+        sal_uInt16 nSubType = 0,
+        sal_uLong nFmt = 0,
+        bool bIsFormField = true );
+    virtual ~SwInputField();
+
+    void SetFmtFld( SwFmtFld& rFmtFld );
+    SwFmtFld* GetFmtFld();
+
+    // Providing new Input Field's content:
+    // Fill Input Field's content depending on <nSupType>.
+    void applyFieldContent( const String& rNewFieldContent );
+
+    bool isFormField() const;
 
     virtual String          GetFieldName() const;
 
-	// Content
-	virtual const String&	GetPar1() const;
-	virtual void			SetPar1(const String& rStr);
+    // Content
+    virtual const String&   GetPar1() const;
+    virtual void            SetPar1(const String& rStr);
 
-	// aPromptText
-	virtual String			GetPar2() const;
-	virtual void			SetPar2(const String& rStr);
+    // aPromptText
+    virtual String          GetPar2() const;
+    virtual void            SetPar2(const String& rStr);
 
     virtual String          GetHelp() const;
     virtual void            SetHelp(const String & rStr);
@@ -343,10 +363,8 @@ public:
     virtual String          GetToolTip() const;
     virtual void            SetToolTip(const String & rStr);
 
-    virtual sal_Bool            isFormField() const;
-
-	virtual sal_uInt16			GetSubType() const;
-	virtual void			SetSubType(sal_uInt16 nSub);
+    virtual sal_uInt16      GetSubType() const;
+    virtual void            SetSubType(sal_uInt16 nSub);
     virtual sal_Bool        QueryValue( com::sun::star::uno::Any& rVal, sal_uInt16 nWhich ) const;
     virtual sal_Bool        PutValue( const com::sun::star::uno::Any& rVal, sal_uInt16 nWhich );
 };
