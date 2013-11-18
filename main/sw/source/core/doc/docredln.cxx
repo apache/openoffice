@@ -2973,19 +2973,19 @@ SwRedlineExtraData* SwRedlineExtraData_Format::CreateNew() const
 
 void SwRedlineExtraData_Format::Reject( SwPaM& rPam ) const
 {
-	SwDoc* pDoc = rPam.GetDoc();
+    SwDoc* pDoc = rPam.GetDoc();
 
-	RedlineMode_t eOld = pDoc->GetRedlineMode();
-	pDoc->SetRedlineMode_intern((RedlineMode_t)(eOld & ~(nsRedlineMode_t::REDLINE_ON | nsRedlineMode_t::REDLINE_IGNORE)));
+    RedlineMode_t eOld = pDoc->GetRedlineMode();
+    pDoc->SetRedlineMode_intern((RedlineMode_t)(eOld & ~(nsRedlineMode_t::REDLINE_ON | nsRedlineMode_t::REDLINE_IGNORE)));
 
-	// eigentlich muesste hier das Attribut zurueck gesetzt werden!!!
-	for( sal_uInt16 n = 0, nEnd = aWhichIds.Count(); n < nEnd; ++n )
+    // eigentlich muesste hier das Attribut zurueck gesetzt werden!!!
+    for( sal_uInt16 n = 0, nEnd = aWhichIds.Count(); n < nEnd; ++n )
     {
-        pDoc->InsertPoolItem( rPam, *GetDfltAttr( aWhichIds[ n ] ),
-                nsSetAttrMode::SETATTR_DONTEXPAND );
+        pDoc->InsertPoolItem(
+            rPam, *GetDfltAttr( aWhichIds[ n ] ), nsSetAttrMode::SETATTR_DONTEXPAND );
     }
 
-	pDoc->SetRedlineMode_intern( eOld );
+    pDoc->SetRedlineMode_intern( eOld );
 }
 
 int SwRedlineExtraData_Format::operator == ( const SwRedlineExtraData& rCmp ) const

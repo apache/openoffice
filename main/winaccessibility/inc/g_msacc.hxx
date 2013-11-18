@@ -18,35 +18,10 @@
  * under the License.
  * 
  *************************************************************/
+ 
+#ifndef __G_MSACC_HXX
+#define __G_MSACC_HXX
 
+extern AccTopWindowListener* g_pTop;
 
-
-#include "macros.inc"
-
-#ifdef M1500
-MergeModule gid_Mergemodule_Microsoft_Vc90_Crt_X86
-#ifdef _STLP_DEBUG
-	Name = "Microsoft_VC90_DebugCRT_x86.msm";
-#else
-	Name = "Microsoft_VC90_CRT_x86.msm";
-#endif
-	Cabfilename = "openoffice.org-vc90crt.cab";
-	Feature = "gm_Root";
-	RootDir = "TARGETDIR";
-	Styles = (REMOVE_FILE_TABLE);
-End
-#endif
-
-#ifdef M1500
-MergeModule gid_Mergemodule_Policy_Microsoft_Vc90_Crt_X86
-#ifdef _STLP_DEBUG
-	Name = "policy_9_0_Microsoft_VC90_DebugCRT_x86.msm";
-#else
-	Name = "policy_9_0_Microsoft_VC90_CRT_x86.msm";
-#endif
-	Cabfilename = "openoffice.org-policy-vc90crt.cab";
-	Feature = "gm_Root";
-	RootDir = "TARGETDIR";
-	Styles = (REMOVE_FILE_TABLE);
-End
 #endif

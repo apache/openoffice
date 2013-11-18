@@ -417,28 +417,8 @@ void SwWrtShell::InsertObject( const svt::EmbeddedObjectRef& xRef, SvGlobalName 
 				}
 
                 // TODO/LATER: recording! Convert properties to items
-				case SID_INSERT_PLUGIN:
-                    /*
-                    if(pReq)
-                    {
-						INetURLObject* pURL = aDlg.GetURL();
-						if(pURL)
-                            pReq->AppendItem(SfxStringItem(FN_PARAM_2, pURL->GetMainURL(INetURLObject::NO_DECODE)));
-						pReq->AppendItem(SfxStringItem(FN_PARAM_3 , aDlg.GetCommands()));
-                    } */
-				case SID_INSERT_FLOATINGFRAME:
-                    /*
-                    if(pReq && xFloatingFrame.Is())
-                    {
-                        const SfxFrameDescriptor* pDescriptor = xFloatingFrame->GetFrameDescriptor();
-                        pReq->AppendItem(SfxStringItem(FN_PARAM_1, pDescriptor->GetName()));
-                        pReq->AppendItem(
-                                SfxStringItem( FN_PARAM_2,
-                                    pDescriptor->GetURL().GetMainURL(INetURLObject::NO_DECODE)));
-                        pReq->AppendItem(SvxSizeItem(FN_PARAM_3, pDescriptor->GetMargin()));
-                        pReq->AppendItem(SfxByteItem(FN_PARAM_4, pDescriptor->GetScrollingMode()));
-                        pReq->AppendItem(SfxBoolItem(FN_PARAM_5, pDescriptor->HasFrameBorder()));
-                    }*/
+                case SID_INSERT_PLUGIN:
+                case SID_INSERT_FLOATINGFRAME:
                 {
                     SfxSlotPool* pSlotPool = SW_MOD()->GetSlotPool();
                     const SfxSlot* pSlot = pSlotPool->GetSlot(nSlotId);
@@ -959,10 +939,10 @@ void SwWrtShell::InsertPageBreak(const String *pPageDesc, sal_uInt16 nPgNum )
 		{
 			SwFmtPageDesc aDesc( pDesc );
 			aDesc.SetNumOffset( nPgNum );
-			SetAttr( aDesc );
+			SetAttrItem( aDesc );
 		}
 		else
-            SetAttr( SvxFmtBreakItem(SVX_BREAK_PAGE_BEFORE, RES_BREAK) );
+            SetAttrItem( SvxFmtBreakItem(SVX_BREAK_PAGE_BEFORE, RES_BREAK) );
         EndUndo(UNDO_UI_INSERT_PAGE_BREAK);
 	}
 }
@@ -1008,7 +988,7 @@ void SwWrtShell::InsertColumnBreak()
 				DelRight();
 			SwFEShell::SplitNode( sal_False, sal_False );
 		}
-        SetAttr(SvxFmtBreakItem(SVX_BREAK_COLUMN_BEFORE, RES_BREAK));
+        SetAttrItem(SvxFmtBreakItem(SVX_BREAK_COLUMN_BEFORE, RES_BREAK));
 
         EndUndo(UNDO_UI_INSERT_COLUMN_BREAK);
 	}
@@ -1037,7 +1017,7 @@ void SwWrtShell::InsertFootnote(const String &rStr, sal_Bool bEndNote, sal_Bool 
 		if(rStr.Len())
 			aFootNote.SetNumStr( rStr );
 
-		SetAttr(aFootNote);
+		SetAttrItem(aFootNote);
 
 		if( bEdit )
 		{
@@ -1506,94 +1486,86 @@ void SwWrtShell::BulletOn()
 --------------------------------------------------*/
 SelectionType SwWrtShell::GetSelectionType() const
 {
-	// ContentType kann nicht ermittelt werden innerhalb einer
-	// Start-/Endactionklammerung.
-	// Da es keinen ungueltigen Wert gibt, wird TEXT geliefert.
-	// Der Wert ist egal, da in EndAction ohnehin aktualisiert wird.
+    // ContentType kann nicht ermittelt werden innerhalb einer
+    // Start-/Endactionklammerung.
+    // Da es keinen ungueltigen Wert gibt, wird TEXT geliefert.
+    // Der Wert ist egal, da in EndAction ohnehin aktualisiert wird.
 
-	if ( BasicActionPend() )
+    if ( BasicActionPend() )
         return IsSelFrmMode() ? nsSelectionType::SEL_FRM : nsSelectionType::SEL_TXT;
 
-//	if ( IsTableMode() )
-//      return nsSelectionType::SEL_TBL | nsSelectionType::SEL_TBL_CELLS;
-
-	SwView &_rView = ((SwView&)GetView());
+    SwView &_rView = ((SwView&)GetView());
     if (_rView.GetPostItMgr() && _rView.GetPostItMgr()->HasActiveSidebarWin() )
-		return nsSelectionType::SEL_POSTIT;
- 	int nCnt;
+        return nsSelectionType::SEL_POSTIT;
 
-	// Rahmen einfuegen ist kein DrawMode
+    int nCnt;
+    // Insertion of a text frame is not a DrawMode
     if ( !_rView.GetEditWin().IsFrmAction() &&
-            (IsObjSelected() || (_rView.IsDrawMode() && !IsFrmSelected()) ))
-	{
-		if (GetDrawView()->IsTextEdit())
+        (IsObjSelected() || (_rView.IsDrawMode() && !IsFrmSelected()) ))
+    {
+        if (GetDrawView()->IsTextEdit())
             nCnt = nsSelectionType::SEL_DRW_TXT;
-		else
-		{
-			if (GetView().IsFormMode())	// Nur Forms selektiert
+        else
+        {
+            if (GetView().IsFormMode())	// Nur Forms selektiert
                 nCnt = nsSelectionType::SEL_DRW_FORM;
-			else
+            else
                 nCnt = nsSelectionType::SEL_DRW;            // Irgendein Draw-Objekt
 
             if (_rView.IsBezierEditMode())
                 nCnt |= nsSelectionType::SEL_BEZ;
-			else if( GetDrawView()->GetContext() == SDRCONTEXT_MEDIA )
+            else if( GetDrawView()->GetContext() == SDRCONTEXT_MEDIA )
                 nCnt |= nsSelectionType::SEL_MEDIA;
 
             if (svx::checkForSelectedCustomShapes(
-                    const_cast<SdrView *>(GetDrawView()),
-                    true /* bOnlyExtruded */ ))
+                const_cast<SdrView *>(GetDrawView()),
+                true /* bOnlyExtruded */ ))
             {
                 nCnt |= nsSelectionType::SEL_EXTRUDED_CUSTOMSHAPE;
             }
             sal_uInt32 nCheckStatus = 0;
             if (svx::checkForSelectedFontWork(
-                    const_cast<SdrView *>(GetDrawView()), nCheckStatus ))
+                const_cast<SdrView *>(GetDrawView()), nCheckStatus ))
             {
                 nCnt |= nsSelectionType::SEL_FONTWORK;
             }
-		}
+        }
 
-		return nCnt;
-	}
+        return nCnt;
+    }
 
-	nCnt = GetCntType();
+    nCnt = GetCntType();
 
-	if ( IsFrmSelected() )
-	{
+    if ( IsFrmSelected() )
+    {
         if (_rView.IsDrawMode())
             _rView.LeaveDrawCreate();   // Aufraeumen (Bug #45639)
-		if ( !(nCnt & (CNT_GRF | CNT_OLE)) )
+        if ( !(nCnt & (CNT_GRF | CNT_OLE)) )
             return nsSelectionType::SEL_FRM;
-	}
+    }
 
-	if ( IsCrsrInTbl() )
+    if ( IsCrsrInTbl() )
         nCnt |= nsSelectionType::SEL_TBL;
 
-	if ( IsTableMode() )
+    if ( IsTableMode() )
         nCnt |= (nsSelectionType::SEL_TBL | nsSelectionType::SEL_TBL_CELLS);
 
-    // --> FME 2005-01-12 #i39855#
-    // Do not pop up numbering toolbar, if the text node has a numbering
-    // of type SVX_NUM_NUMBER_NONE.
+    // Do not pop up numbering toolbar, if the text node has a numbering of type SVX_NUM_NUMBER_NONE.
     const SwNumRule* pNumRule = GetCurNumRule();
     if ( pNumRule )
     {
         const SwTxtNode* pTxtNd =
             GetCrsr()->GetPoint()->nNode.GetNode().GetTxtNode();
 
-        // --> OD 2008-03-19 #refactorlists#
         if ( pTxtNd && pTxtNd->IsInList() )
-        // <--
         {
             const SwNumFmt& rFmt = pNumRule->Get(sal::static_int_cast< sal_uInt8, sal_Int32>(pTxtNd->GetActualListLevel()));
             if ( SVX_NUM_NUMBER_NONE != rFmt.GetNumberingType() )
                 nCnt |= nsSelectionType::SEL_NUM;
         }
     }
-    // <--
 
-	return nCnt;
+    return nCnt;
 }
 
 /*------------------------------------------------------------------------
@@ -1738,7 +1710,7 @@ void SwWrtShell::AutoUpdatePara(SwTxtFmtColl* pColl, const SfxItemSet& rStyleSet
 	if(bReset)
 	{
 		ResetAttr();
-		SetAttr(aCoreSet);
+		SetAttrSet(aCoreSet);
 	}
 	pDoc->ChgFmt(*pColl, rStyleSet );
 	EndAction();
@@ -1853,11 +1825,6 @@ sal_Bool SwWrtShell::CanInsert()
     return (!(IsSelFrmMode() | IsObjSelected() | (GetView().GetDrawFuncPtr() != NULL) | (GetView().GetPostItMgr()->GetActiveSidebarWin()!= NULL)));
 }
 
-// die Core erzeugt eine Selektion, das SttSelect muss gerufen werden
-void SwWrtShell::NewCoreSelection()
-{
-	SttSelect();
-}
 
 // --------------
 void SwWrtShell::ChgDBData(const SwDBData& aDBData)

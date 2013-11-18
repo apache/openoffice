@@ -51,101 +51,125 @@
 
 class SwASC_AttrIter
 {
-	SwASCWriter& rWrt;
-	const SwTxtNode& rNd;
-	xub_StrLen nAktSwPos;
+    SwASCWriter& rWrt;
+    const SwTxtNode& rNd;
+    xub_StrLen nAktSwPos;
 
-	xub_StrLen SearchNext( xub_StrLen nStartPos );
+    xub_StrLen SearchNext( xub_StrLen nStartPos );
 
 public:
-	SwASC_AttrIter( SwASCWriter& rWrt, const SwTxtNode& rNd, xub_StrLen nStt );
+    SwASC_AttrIter( SwASCWriter& rWrt, const SwTxtNode& rNd, xub_StrLen nStt );
 
-	void NextPos() 		{ nAktSwPos = SearchNext( nAktSwPos + 1 ); }
+    void NextPos()
+    {
+        nAktSwPos = SearchNext( nAktSwPos + 1 );
+    }
 
-	xub_StrLen WhereNext() const		{ return nAktSwPos; }
-	sal_Bool OutAttr( xub_StrLen nSwPos );
+    xub_StrLen WhereNext() const
+    {
+        return nAktSwPos;
+    }
+    
+    sal_Bool OutAttr( xub_StrLen nSwPos );
 };
 
 
-SwASC_AttrIter::SwASC_AttrIter( SwASCWriter& rWr, const SwTxtNode& rTxtNd,
-								xub_StrLen nStt )
-	: rWrt( rWr ), rNd( rTxtNd ), nAktSwPos( 0 )
+SwASC_AttrIter::SwASC_AttrIter(
+    SwASCWriter& rWr,
+    const SwTxtNode& rTxtNd,
+    xub_StrLen nStt )
+    : rWrt( rWr )
+    , rNd( rTxtNd )
+    , nAktSwPos( 0 )
 {
-	nAktSwPos = SearchNext( nStt + 1 );
+    nAktSwPos = SearchNext( nStt + 1 );
 }
 
 
 xub_StrLen SwASC_AttrIter::SearchNext( xub_StrLen nStartPos )
 {
-	xub_StrLen nMinPos = STRING_MAXLEN;
-	const SwpHints* pTxtAttrs = rNd.GetpSwpHints();
-	if( pTxtAttrs )
-	{
-// kann noch optimiert werden, wenn ausgenutzt wird, dass die TxtAttrs
-// nach der Anfangsposition geordnet sind. Dann muessten
-// allerdings noch 2 Indices gemerkt werden
+    xub_StrLen nMinPos = STRING_MAXLEN;
+    const SwpHints* pTxtAttrs = rNd.GetpSwpHints();
+    if( pTxtAttrs )
+    {
         for ( sal_uInt16 i = 0; i < pTxtAttrs->Count(); i++ )
-		{
-			const SwTxtAttr* pHt = (*pTxtAttrs)[i];
-            if (pHt->HasDummyChar())
-			{
+        {
+            const SwTxtAttr* pHt = (*pTxtAttrs)[i];
+            if ( pHt->HasDummyChar() )
+            {
                 xub_StrLen nPos = *pHt->GetStart();
 
-				if( nPos >= nStartPos && nPos <= nMinPos )
-					nMinPos = nPos;
+                if( nPos >= nStartPos && nPos <= nMinPos )
+                    nMinPos = nPos;
 
-				if( ( ++nPos ) >= nStartPos && nPos < nMinPos )
-					nMinPos = nPos;
-			}
-		}
-	}
-	return nMinPos;
+                if( ( ++nPos ) >= nStartPos && nPos < nMinPos )
+                    nMinPos = nPos;
+            }
+            else if ( pHt->HasContent() )
+            {
+                const xub_StrLen nHintStart = *pHt->GetStart();
+                if ( nHintStart >= nStartPos && nHintStart <= nMinPos )
+                {
+                    nMinPos = nHintStart;
+                }
+
+                const xub_StrLen nHintEnd = pHt->End() ? *pHt->End() : STRING_MAXLEN;
+                if ( nHintEnd >= nStartPos && nHintEnd < nMinPos )
+                {
+                    nMinPos = nHintEnd;
+                }
+            }
+        }
+    }
+    return nMinPos;
 }
 
 
 sal_Bool SwASC_AttrIter::OutAttr( xub_StrLen nSwPos )
 {
-	sal_Bool bRet = sal_False;
-	const SwpHints* pTxtAttrs = rNd.GetpSwpHints();
-	if( pTxtAttrs )
-	{
-		sal_uInt16 i;
-		for( i = 0; i < pTxtAttrs->Count(); i++ )
-		{
-			const SwTxtAttr* pHt = (*pTxtAttrs)[i];
-            if ( pHt->HasDummyChar() && nSwPos == *pHt->GetStart() )
-			{
-				bRet = sal_True;
-				String sOut;
-				switch( pHt->Which() )
-				{
-				case RES_TXTATR_FIELD:
-                    sOut =
-                        static_cast<SwTxtFld const*>(pHt)->GetFmtFld().GetField()->ExpandField(true);
-					break;
+    sal_Bool bRet = sal_False;
+    const SwpHints* pTxtAttrs = rNd.GetpSwpHints();
+    if( pTxtAttrs )
+    {
+        sal_uInt16 i;
+        for( i = 0; i < pTxtAttrs->Count(); i++ )
+        {
+            const SwTxtAttr* pHt = (*pTxtAttrs)[i];
+            if ( ( pHt->HasDummyChar()
+                   || pHt->HasContent() )
+                 && nSwPos == *pHt->GetStart() )
+            {
+                bRet = sal_True;
+                String sOut;
+                switch( pHt->Which() )
+                {
+                case RES_TXTATR_FIELD:
+                case RES_TXTATR_INPUTFIELD:
+                    sOut = static_cast<SwTxtFld const*>(pHt)->GetFmtFld().GetField()->ExpandField(true);
+                    break;
 
-				case RES_TXTATR_FTN:
-					{
-						const SwFmtFtn& rFtn = pHt->GetFtn();
-						if( rFtn.GetNumStr().Len() )
-							sOut = rFtn.GetNumStr();
-						else if( rFtn.IsEndNote() )
-							sOut = rWrt.pDoc->GetEndNoteInfo().aFmt.
-											GetNumStr( rFtn.GetNumber() );
-						else
-							sOut = rWrt.pDoc->GetFtnInfo().aFmt.
-											GetNumStr( rFtn.GetNumber() );
-					}
-					break;
-				}
-				if( sOut.Len() )
-					rWrt.Strm().WriteUnicodeOrByteText( sOut );
-			}
-			else if( nSwPos < *pHt->GetStart() )
-				break;
-		}
-	}
-	return bRet;
+                case RES_TXTATR_FTN:
+                    {
+                        const SwFmtFtn& rFtn = pHt->GetFtn();
+                        if( rFtn.GetNumStr().Len() )
+                            sOut = rFtn.GetNumStr();
+                        else if( rFtn.IsEndNote() )
+                            sOut = rWrt.pDoc->GetEndNoteInfo().aFmt.
+                            GetNumStr( rFtn.GetNumber() );
+                        else
+                            sOut = rWrt.pDoc->GetFtnInfo().aFmt.
+                            GetNumStr( rFtn.GetNumber() );
+                    }
+                    break;
+                }
+                if( sOut.Len() )
+                    rWrt.Strm().WriteUnicodeOrByteText( sOut );
+            }
+            else if( nSwPos < *pHt->GetStart() )
+                break;
+        }
+    }
+    return bRet;
 }
 
 
