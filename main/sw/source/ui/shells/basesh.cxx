@@ -295,27 +295,26 @@ void SwBaseShell::ExecClpbrd(SfxRequest &rReq)
 			}
 			return;
 
-		case SID_PASTE:
-			{
-				TransferableDataHelper aDataHelper(
-						TransferableDataHelper::CreateFromSystemClipboard(
-										&rSh.GetView().GetEditWin() ) );
-
-				if( aDataHelper.GetXTransferable().is() &&
-					SwTransferable::IsPaste( rSh, aDataHelper ))
-				{
-					// temp. Variablen, da die Shell nach dem Paste schon
-					// zerstoert sein kann
-					SwView* pView = &rView;
-					SwTransferable::Paste( rSh, aDataHelper );
-					if( rSh.IsFrmSelected() || rSh.IsObjSelected() )
-						rSh.EnterSelFrmMode();
-					pView->AttrChangedNotify( &rSh );
-				}
-				else
-					return;
-			}
-			break;
+        case SID_PASTE:
+            {
+                TransferableDataHelper aDataHelper(
+                    TransferableDataHelper::CreateFromSystemClipboard( &rSh.GetView().GetEditWin() ) );
+                if( aDataHelper.GetXTransferable().is()
+                    && SwTransferable::IsPaste( rSh, aDataHelper )
+                    && !rSh.CrsrInsideInputFld() )
+                {
+                    // temp. Variablen, da die Shell nach dem Paste schon
+                    // zerstoert sein kann
+                    SwView* pView = &rView;
+                    SwTransferable::Paste( rSh, aDataHelper );
+                    if( rSh.IsFrmSelected() || rSh.IsObjSelected() )
+                        rSh.EnterSelFrmMode();
+                    pView->AttrChangedNotify( &rSh );
+                }
+                else
+                    return;
+            }
+            break;
 
 		case SID_CLIPBOARD_FORMAT_ITEMS:
 			{
@@ -347,13 +346,12 @@ void SwBaseShell::ExecClpbrd(SfxRequest &rReq)
 			}
 			break;
 
-		case SID_PASTE_UNFORMATTED:
+        case SID_PASTE_UNFORMATTED:
             {
                 TransferableDataHelper aDataHelper(
-                    TransferableDataHelper::CreateFromSystemClipboard(
-                        &rSh.GetView().GetEditWin()) );
-                if( aDataHelper.GetXTransferable().is() &&
-                    SwTransferable::IsPaste( rSh, aDataHelper ))
+                    TransferableDataHelper::CreateFromSystemClipboard( &rSh.GetView().GetEditWin()) );
+                if( aDataHelper.GetXTransferable().is()
+                    && SwTransferable::IsPaste( rSh, aDataHelper ) )
                 {
                     // temp. Variablen, da die Shell nach dem Paste schon
                     // zerstoert sein kann
@@ -367,60 +365,61 @@ void SwBaseShell::ExecClpbrd(SfxRequest &rReq)
                         uno::Reference< frame::XDispatchRecorder > xRecorder =
                             pViewFrame->GetBindings().GetRecorder();
                         if(xRecorder.is()) {
-							SfxRequest aReq( pViewFrame, SID_CLIPBOARD_FORMAT_ITEMS );
-							aReq.AppendItem( SfxUInt32Item( SID_CLIPBOARD_FORMAT_ITEMS, SOT_FORMAT_STRING ) );
-							aReq.Done();
-						}
+                            SfxRequest aReq( pViewFrame, SID_CLIPBOARD_FORMAT_ITEMS );
+                            aReq.AppendItem( SfxUInt32Item( SID_CLIPBOARD_FORMAT_ITEMS, SOT_FORMAT_STRING ) );
+                            aReq.Done();
+                        }
                     }
 
-					if (rSh.IsFrmSelected() || rSh.IsObjSelected())
-						rSh.EnterSelFrmMode();
-					pView->AttrChangedNotify( &rSh );
-				}
-				else
-					return;
-			}
-			break;
+                    if (rSh.IsFrmSelected() || rSh.IsObjSelected())
+                        rSh.EnterSelFrmMode();
+                    pView->AttrChangedNotify( &rSh );
+                }
+                else
+                    return;
+            }
+            break;
 
         case SID_PASTE_SPECIAL:
-			{
-				TransferableDataHelper aDataHelper(
-						TransferableDataHelper::CreateFromSystemClipboard(
-										&rSh.GetView().GetEditWin()) );
-				if( aDataHelper.GetXTransferable().is() &&
-					SwTransferable::IsPaste( rSh, aDataHelper ))
-				{
-					// temp. Variablen, da die Shell nach dem Paste schon
-					// zerstoert sein kann
-					SwView* pView = &rView;
+            {
+                TransferableDataHelper aDataHelper(
+                    TransferableDataHelper::CreateFromSystemClipboard( &rSh.GetView().GetEditWin()) );
+                if( aDataHelper.GetXTransferable().is()
+                    && SwTransferable::IsPaste( rSh, aDataHelper )
+                    && !rSh.CrsrInsideInputFld() )
+                {
+                    // temp. Variablen, da die Shell nach dem Paste schon
+                    // zerstoert sein kann
+                    SwView* pView = &rView;
                     sal_uLong nFormatId = 0;
                     rReq.Ignore();
                     bIgnore = sal_True;
                     int nRet = SwTransferable::PasteSpecial( rSh, aDataHelper, nFormatId );
                     if(nRet)// && rReq.IsRecording() )
                     {
-		                SfxViewFrame* pViewFrame = pView->GetViewFrame();
+                        SfxViewFrame* pViewFrame = pView->GetViewFrame();
                         uno::Reference< frame::XDispatchRecorder > xRecorder =
-								pViewFrame->GetBindings().GetRecorder();
-						if(xRecorder.is()) {
-							SfxRequest aReq( pViewFrame, SID_CLIPBOARD_FORMAT_ITEMS );
-							aReq.AppendItem( SfxUInt32Item( SID_CLIPBOARD_FORMAT_ITEMS, nFormatId ) );
-							aReq.Done();
-						}
+                            pViewFrame->GetBindings().GetRecorder();
+                        if(xRecorder.is()) {
+                            SfxRequest aReq( pViewFrame, SID_CLIPBOARD_FORMAT_ITEMS );
+                            aReq.AppendItem( SfxUInt32Item( SID_CLIPBOARD_FORMAT_ITEMS, nFormatId ) );
+                            aReq.Done();
+                        }
                     }
 
-					if (rSh.IsFrmSelected() || rSh.IsObjSelected())
-						rSh.EnterSelFrmMode();
-					pView->AttrChangedNotify( &rSh );
-				}
-				else
-					return;
-			}
-			break;
-		default:
-			DBG_ERROR("falscher Dispatcher");
-			return;
-	}
+                    if (rSh.IsFrmSelected() || rSh.IsObjSelected())
+                        rSh.EnterSelFrmMode();
+                    pView->AttrChangedNotify( &rSh );
+                }
+                else
+                    return;
+            }
+            break;
+
+        default:
+            DBG_ERROR("falscher Dispatcher");
+            return;
+    }
     if(!bIgnore)
         rReq.Done();
 }
@@ -453,18 +452,28 @@ void SwBaseShell::StateClpbrd(SfxItemSet &rSet)
 				rSet.DisableItem( nWhich );
 			break;
 
-		case SID_PASTE:
-            if( !GetView().IsPasteAllowed() )
-				rSet.DisableItem( SID_PASTE );
-			break;
+        case SID_PASTE:
+            if( !GetView().IsPasteAllowed()
+                || rSh.CrsrInsideInputFld() )
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
 
         case SID_PASTE_SPECIAL:
+            if( !GetView().IsPasteSpecialAllowed()
+                || rSh.CrsrInsideInputFld() )
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
+
+        case SID_PASTE_UNFORMATTED:
             if( !GetView().IsPasteSpecialAllowed() )
-			{
-                rSet.DisableItem( SID_PASTE_SPECIAL );
-				rSet.DisableItem( SID_PASTE_UNFORMATTED );
-			}
-			break;
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
 
 		case SID_CLIPBOARD_FORMAT_ITEMS:
 			{
@@ -661,9 +670,10 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			}
 			break;
 
-		case FN_UPDATE_INPUTFIELDS:
-			rSh.UpdateInputFlds(NULL, sal_False);
-			break;
+        case FN_UPDATE_INPUTFIELDS:
+            rSh.UpdateInputFlds();
+            break;
+
 		case FN_PREV_BOOKMARK:
 			rReq.SetReturnValue(SfxBoolItem( nSlot, rSh.GoPrevBookmark()));
 			break;
@@ -693,7 +703,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 					rSh.ClearMark();
 					rSh.EndSelect();
 				}
-				sal_Bool bRet = rSh.MoveFldType(pFldType, nSlot == FN_GOTO_NEXT_MARK);
+				sal_Bool bRet = rSh.MoveFldType( pFldType, nSlot == FN_GOTO_NEXT_MARK );
                 SwField* pCurField = bRet ? rSh.GetCurFld() : 0;
                 if (pCurField)
 					rSh.ClickToField(*pCurField);
@@ -1230,7 +1240,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			}
 			else
 			{
-				rSh.SetAttr( *pArgs );
+				rSh.SetAttrSet( *pArgs );
 			}
 			rSh.EndAllAction();
 		}
@@ -1263,7 +1273,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			else
 			{
 				// Umrandungsattribute ganz normal ueber Shell setzen
-				rSh.SetAttr( *pItem );
+				rSh.SetAttrItem( *pItem );
 			}
 		}
 		break;
@@ -1397,10 +1407,14 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 				break;
 
             case FN_INSERT_REGION:
-				if( rSh.IsSelFrmMode() ||
-					!rSh.IsInsRegionAvailable() )
-					rSet.DisableItem( nWhich );
-				break;
+                if( rSh.CrsrInsideInputFld()
+                    || rSh.IsSelFrmMode()
+                    || !rSh.IsInsRegionAvailable() )
+                {
+                    rSet.DisableItem( nWhich );
+                }
+                break;
+
             case FN_CONVERT_TABLE_TO_TEXT:
             {
                 sal_uInt16 eFrmType = rSh.GetFrmType(0,sal_True);
@@ -2129,7 +2143,7 @@ void SwBaseShell::ExecTxtCtrl( SfxRequest& rReq )
 
             if (!bAuto)
             {
-                rSh.SetAttr( *pArgs );
+                rSh.SetAttrSet( *pArgs );
             }
         }
 		delete pSSetItem;
@@ -2392,7 +2406,7 @@ void SwBaseShell::ExecBckCol(SfxRequest& rReq)
 			rSh.AutoUpdatePara( pColl, aSet);
 		}
 		else
-			rSh.SetAttr( aBrushItem );
+			rSh.SetAttrItem( aBrushItem );
 	}
 
     rReq.Done();
@@ -2530,7 +2544,7 @@ void SwBaseShell::ExecDlg(SfxRequest &rReq)
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
 				if ( pDlg->Execute() == RET_OK )
 				{
-					rSh.SetAttr( *pDlg->GetOutputItemSet() );
+					rSh.SetAttrSet( *pDlg->GetOutputItemSet() );
 					pOutSet = pDlg->GetOutputItemSet();
 				}
 			}
@@ -2598,7 +2612,7 @@ void SwBaseShell::ExecDlg(SfxRequest &rReq)
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
 				if ( pDlg->Execute() == RET_OK )
 				{
-					rSh.SetAttr( *pDlg->GetOutputItemSet() );
+					rSh.SetAttrSet( *pDlg->GetOutputItemSet() );
 					pOutSet = pDlg->GetOutputItemSet();
 				}
 			}
@@ -2881,7 +2895,7 @@ void SwBaseShell::ExecuteGallery(SfxRequest &rReq)
 			SvxBrushItem aBrush( *pBrush );
 			aBrush.SetWhich( RES_BACKGROUND );
 			if ( nPos == nParagraphPos )
-				rSh.SetAttr( aBrush );
+				rSh.SetAttrItem( aBrush );
 			else if ( nPos == nTablePos )
 				rSh.SetTabBackground( aBrush );
 			else if ( nPos == nTableRowPos )

@@ -366,7 +366,7 @@ bool l10nMem_db::locateKey(int                iLineNo,
   }
 
   if (bThrow)
-    throw l10nMem::showError("cannot find key(" + sKey +") with text(" + sMsgId + ")", iLineNo);
+    throw l10nMem::showError("cannot find key(" + sUpperKey +") with text(" + sMsgId + ")", iLineNo);
   return false;
 }
 
