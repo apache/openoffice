@@ -43,7 +43,7 @@
 <paragraph role="paragraph" id="par_id3154926" xml-lang="en-US" l10n="U" oldref="2"><variable id="scan"><ahelp hid=".uno:Scan">Inserts a scanned image into your document.</ahelp>
 </variable></paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3153124" xml-lang="en-US" l10n="U" oldref="5">To insert a scanned image, the driver for your scanner must be installed. <switchinline select="sys"><caseinline select="UNIX">Under UNIX systems, install the SANE package found at http://www.mostang.com/sane/. The SANE package must use the same libc as $[officename].
+<paragraph role="paragraph" id="par_id3153124" xml-lang="en-US" l10n="U" oldref="5">To insert a scanned image, the driver for your scanner must be installed. <switchinline select="sys"><caseinline select="UNIX">Under UNIX systems, install the SANE package found at <link href="http://www.sane-project.org/">http://www.sane-project.org/</link>. The SANE package must use the same libc as $[officename].
 </caseinline></switchinline></paragraph>
 <section id="howtoget">
   <embed href="text/shared/00/00000404.xhp#scannen"/>

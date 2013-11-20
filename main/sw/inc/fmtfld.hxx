@@ -39,17 +39,15 @@ class SwFieldType;
 // ATT_FLD ***********************************
 class SW_DLLPUBLIC SwFmtFld : public SfxPoolItem, public SwClient, public SfxBroadcaster
 {
-	friend class SwTxtFld;
-	friend void _InitCore();
+    friend void _InitCore();
+    SwFmtFld( sal_uInt16 nWhich ); // for default-Attibute
 
-	SwField *pField;
-	SwTxtFld* pTxtAttr;		// mein TextAttribut
+    SwField* mpField;
+    SwTxtFld* mpTxtFld; // the TextAttribute
 
-	SwFmtFld();				// das default-Attibut
 
-	// geschuetzter CopyCtor
-	// @@@ copy construction allowed, but copy assignment is not? @@@
-	SwFmtFld& operator=(const SwFmtFld& rFld);
+    // @@@ copy construction allowed, but copy assignment is not? @@@
+    SwFmtFld& operator=(const SwFmtFld& rFld);
 
 protected:
     virtual void Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew);
@@ -74,11 +72,11 @@ public:
 
     const SwField* GetField() const
     {
-        return pField;
+        return mpField;
     }
     SwField* GetField()
     {
-        return pField;
+        return mpField;
     }
 
     // #111840#
@@ -89,14 +87,24 @@ public:
 
        @attention The current field will be destroyed before setting the new field.
      */
-    void SetFld(SwField * pField);
+    void SetField( SwField * pField );
 
-	const SwTxtFld *GetTxtFld() const	{ return pTxtAttr; }
-	SwTxtFld *GetTxtFld()				{ return pTxtAttr; }
+
+    const SwTxtFld* GetTxtFld() const
+    {
+        return mpTxtFld;
+    }
+    SwTxtFld* GetTxtFld()
+    {
+        return mpTxtFld;
+    }
+    void SetTxtFld( SwTxtFld& rTxtFld );
+    void ClearTxtFld();
+
 
     void RegisterToFieldType( SwFieldType& );
-	sal_Bool IsFldInDoc() const;
-	sal_Bool IsProtect() const;
+    bool IsFldInDoc() const;
+    sal_Bool IsProtect() const;
 };
 
 class SW_DLLPUBLIC SwFmtFldHint : public SfxHint
