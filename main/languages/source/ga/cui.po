@@ -6690,6 +6690,30 @@ msgstr ""
 msgid "Delete words with two initial capitals"
 msgstr ""
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+msgid "Single quotes default"
+msgstr ""
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+msgid "Double quotes default"
+msgstr ""
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+msgid "Start quote of single quotes"
+msgstr ""
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+msgid "Start quote of double quotes"
+msgstr ""
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+msgid "End quote of single quotes"
+msgstr ""
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+msgid "End quote of double quotes"
+msgstr ""
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 #, fuzzy
 msgid "Localized Options"
@@ -6781,30 +6805,6 @@ msgstr "Críochnaigh comhartha athfhriotail"
 #, fuzzy
 msgid "Default"
 msgstr "Réamhshocrú"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-msgid "Single quotes default"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-msgid "Double quotes default"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-msgid "Start quote of single quotes"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-msgid "Start quote of double quotes"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-msgid "End quote of single quotes"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-msgid "End quote of double quotes"
-msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -10446,6 +10446,11 @@ msgstr "Airíonna"
 msgid "Pattern Editor"
 msgstr "Eagarthóir Patrún"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Eagarthóir Patrún"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10620,6 +10625,14 @@ msgstr "~Dath"
 #, fuzzy
 msgid "Color table"
 msgstr "Tábla na ndathanna"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

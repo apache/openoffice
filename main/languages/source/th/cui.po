@@ -6861,6 +6861,30 @@ msgstr "คำใหม่ที่มีตัวอักษรใหญ่ข
 msgid "Delete words with two initial capitals"
 msgstr "ลบคำที่มีตัวอักษรใหญ่ขึ้นต้นคำสองตัวอักษร"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+msgid "Single quotes default"
+msgstr "ใช้เครื่องหมายอัญประกาศเดี่ยวโดยปริยาย"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+msgid "Double quotes default"
+msgstr "ใช้เครื่องหมายอัญประกาศคู่โดยปริยาย"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+msgid "Start quote of single quotes"
+msgstr "เริ่มอัญประกาศเดี่ยว"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+msgid "Start quote of double quotes"
+msgstr "เริ่มอัญประกาศคู่"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+msgid "End quote of single quotes"
+msgstr "จบอัญประกาศเดี่ยว"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+msgid "End quote of double quotes"
+msgstr "จบอัญประกาศคู่"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 msgid "Localized Options"
 msgstr "ตัวเลือกตามท้องถิ่น"
@@ -6947,30 +6971,6 @@ msgstr "อัญประกาศปิด"
 #, fuzzy
 msgid "Default"
 msgstr "ค่าปริยาย"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-msgid "Single quotes default"
-msgstr "ใช้เครื่องหมายอัญประกาศเดี่ยวโดยปริยาย"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-msgid "Double quotes default"
-msgstr "ใช้เครื่องหมายอัญประกาศคู่โดยปริยาย"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-msgid "Start quote of single quotes"
-msgstr "เริ่มอัญประกาศเดี่ยว"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-msgid "Start quote of double quotes"
-msgstr "เริ่มอัญประกาศคู่"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-msgid "End quote of single quotes"
-msgstr "จบอัญประกาศเดี่ยว"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-msgid "End quote of double quotes"
-msgstr "จบอัญประกาศคู่"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -10405,6 +10405,11 @@ msgstr "คุณสมบัติ"
 msgid "Pattern Editor"
 msgstr "ตัวแก้ไขลวดลาย!!!!"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "ตัวแก้ไขลวดลาย!!!!"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10575,6 +10580,14 @@ msgstr "~สี"
 #, fuzzy
 msgid "Color table"
 msgstr "ตารางสี!!!!"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

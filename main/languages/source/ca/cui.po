@@ -6216,6 +6216,36 @@ msgstr "Paraules noves amb dues majúscules inicials"
 msgid "Delete words with two initial capitals"
 msgstr "Suprimeix les paraules amb dues majúscules inicials"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
+msgid "Single quotes default"
+msgstr "Cometes senzilles per defecte"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
+msgid "Double quotes default"
+msgstr "Cometes dobles per defecte"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of single quotes"
+msgstr "Cometa inicial de cometes senzilles"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of double quotes"
+msgstr "Cometa inicial de cometes dobles"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of single quotes"
+msgstr "Cometa final de cometes senzilles"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of double quotes"
+msgstr "Cometa final de cometes dobles"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 #, fuzzy
 msgid "Localized Options"
@@ -6305,36 +6335,6 @@ msgstr "Cometa final"
 #, fuzzy
 msgid "Default"
 msgstr "Per defecte"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-#, fuzzy
-msgid "Single quotes default"
-msgstr "Cometes senzilles per defecte"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-#, fuzzy
-msgid "Double quotes default"
-msgstr "Cometes dobles per defecte"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of single quotes"
-msgstr "Cometa inicial de cometes senzilles"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of double quotes"
-msgstr "Cometa inicial de cometes dobles"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of single quotes"
-msgstr "Cometa final de cometes senzilles"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of double quotes"
-msgstr "Cometa final de cometes dobles"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -9876,6 +9876,11 @@ msgstr "Propietats"
 msgid "Pattern Editor"
 msgstr "Editor de patrons"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Editor de patrons"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10048,6 +10053,14 @@ msgstr "C~olor"
 #, fuzzy
 msgid "Color table"
 msgstr "Taula de colors"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

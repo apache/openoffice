@@ -115,8 +115,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "ഈ തരത്തിലുള്ള വാചകം ഈ ഡേറ്റാബെയിസ് ഡ്രൈവര്‍ പിന്തുണയ്ക്കുന്നില്ല."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "ഒരു അപരിചിതമായ പിശക് ഉണ്ടായിരിക്കുന്നു."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -127,12 +127,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "'$libname$' ലൈബ്രറി ലഭ്യമാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "നിലവിലുള്ള നിര പുതുക്കുമ്പോള്‍ പിശക് സംഭവിച്ചിരിക്കുന്നു."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "നിലവിലുള്ള നിര ലഭ്യമാക്കുമ്പോള്‍ പിശക് സംഭവിച്ചിരിക്കുന്നു."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -149,8 +149,8 @@ msgstr ""
 "മാത്രമേ ഉപയോഗിക്കുവാന്‍ പറ്റൂ."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "തെറ്റായ കര്‍സര്‍ നീക്കം ഉണ്ടായിരിക്കുന്നു."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -367,10 +367,8 @@ msgstr ""
 "കണക്ഷന്‍ സ്ഥാപിക്കുവാന്‍ സാധ്യമായില്ല. ആവശ്യമായ ഡേറ്റാ പ്രൊവൈഡര്‍ ലഭ്യമല്ല."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"സൂചിക വെട്ടി നീക്കുവാനായില്ല. ഫയല്‍ സിസ്റ്റമില്‍ പ്രവേശിക്കുമ്പോള്‍ "
-"അസ്വാഭാവികമായ പിശക് ഉണ്ടായിരിക്കുന്നു."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -631,16 +629,12 @@ msgstr ""
 "ദയവായി നിങ്ങളുടെ ഡേറ്റാബെയിസ് ഫയലിനുള്ള സ്ഥാനം പരിശോധിക്കുക."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
 msgstr ""
-"കണക്ഷനുള്ള പട്ടിക കണ്ടെയിനര്‍ ലഭ്യമാക്കുന്നതില്‍ ഒരു പിശക് "
-"സംഭവിച്ചിരിക്കുന്നു."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
+msgid "An error occurred while creating the table editor dialog."
 msgstr ""
-"പട്ടിക ചിട്ടപ്പെടുത്തുന്നതിനുള്ള വാചകം ഉണ്ടാക്കുന്നതിനിടയില്‍ ഒരു പിശക് "
-"ഉണ്ടായിരിക്കുന്നു."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -705,38 +699,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (നേറ്റീവ്)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Outlook Address Book"
-msgstr "മൈക്രോസോഫ്റ്റ് ഔട്ട്ലുക്ക് വിലാസപുസ്തകം"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Windows Address Book"
-msgstr "മൌക്രോസോഫ്റ്റ് വിന്‍ഡോസ് വിലാസപുസ്തകം"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr ""
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "തണ്ടര്‍ബേര്‍ഡ് വിലാസപുസ്തകം"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "എല്‍ഡാപ്പ് വിലാസപുസ്തകം"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr ""
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "തണ്ടര്‍ബേര്‍ഡ് വിലാസപുസ്തകം"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "എല്‍ഡാപ്പ് വിലാസപുസ്തകം"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid "HSQL database engine"
 msgstr "എച്എസ്ക്യൂഎല്‍ ഡേറ്റാബെയിസ് എഞ്ചിന്‍"
@@ -745,11 +707,15 @@ msgstr "എച്എസ്ക്യൂഎല്‍ ഡേറ്റാബെയ�
 msgid "Mac OS X Address Book"
 msgstr "മാക് ഒഎസ് എക്സ് വിലാസപുസ്തകം"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "ഇവല്യൂഷന്‍ ലോക്കല്‍"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid "Evolution LDAP"
 msgstr "ഇവല്യൂഷന്‍ എല്‍ഡാപ്പ്"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid "Groupwise"
 msgstr "ഗ്രൂപ്പനുസരിച്ചു്"
 
@@ -781,18 +747,6 @@ msgstr "ഒറക്കിള്‍ JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "ഇവല്യൂഷന്‍ ലോക്കല്‍"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid "Evolution LDAP"
-msgstr "ഇവല്യൂഷന്‍ എല്‍ഡാപ്പ്"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid "Groupwise"
-msgstr "ഗ്രൂപ്പനുസരിച്ചു്"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid "ADO"
 msgstr "ADO"
@@ -804,3 +758,48 @@ msgstr "മൈക്രോസോഫ്റ്റ് ആക്സസ്സ്"
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid "Microsoft Access 2007"
 msgstr "മൈക്രോസോഫ്റ്റ് ആക്സസ്സ് 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "ഒരു അപരിചിതമായ പിശക് ഉണ്ടായിരിക്കുന്നു."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "നിലവിലുള്ള നിര പുതുക്കുമ്പോള്‍ പിശക് സംഭവിച്ചിരിക്കുന്നു."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "നിലവിലുള്ള നിര ലഭ്യമാക്കുമ്പോള്‍ പിശക് സംഭവിച്ചിരിക്കുന്നു."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "തെറ്റായ കര്‍സര്‍ നീക്കം ഉണ്ടായിരിക്കുന്നു."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "സൂചിക വെട്ടി നീക്കുവാനായില്ല. ഫയല്‍ സിസ്റ്റമില്‍ പ്രവേശിക്കുമ്പോള്‍ "
+#~ "അസ്വാഭാവികമായ പിശക് ഉണ്ടായിരിക്കുന്നു."
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr ""
+#~ "കണക്ഷനുള്ള പട്ടിക കണ്ടെയിനര്‍ ലഭ്യമാക്കുന്നതില്‍ ഒരു പിശക് "
+#~ "സംഭവിച്ചിരിക്കുന്നു."
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr ""
+#~ "പട്ടിക ചിട്ടപ്പെടുത്തുന്നതിനുള്ള വാചകം ഉണ്ടാക്കുന്നതിനിടയില്‍ ഒരു പിശക് "
+#~ "ഉണ്ടായിരിക്കുന്നു."
+
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "മൈക്രോസോഫ്റ്റ് ഔട്ട്ലുക്ക് വിലാസപുസ്തകം"
+
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "മൌക്രോസോഫ്റ്റ് വിന്‍ഡോസ് വിലാസപുസ്തകം"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "തണ്ടര്‍ബേര്‍ഡ് വിലാസപുസ്തകം"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "എല്‍ഡാപ്പ് വിലാസപുസ്തകം"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "തണ്ടര്‍ബേര്‍ഡ് വിലാസപുസ്തകം"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "എല്‍ഡാപ്പ് വിലാസപുസ്തകം"

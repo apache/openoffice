@@ -23,14 +23,17 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-11-01 12:20+0000\n"
+"Last-Translator: Ioana Elena <tisca_ioana@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1383308414.0\n"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
 msgid "Mozilla/Seamonkey Addressbook Directory"
@@ -109,8 +112,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "Acest tip de instrucțiune nu este suportat de driverul bazei de date."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "A intervenit o eroare necunoscută."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -122,12 +125,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "Nu se poate încărca biblioteca „$libname$”."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "A intervenit o eroare la reîmprospătarea rândului curent."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "A intervenit o eroare la obținerea înregistrării curente."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -144,8 +147,8 @@ msgstr ""
 "doar cu un nume de coloană."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "Deplasare nepermisă a cursorului."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -352,10 +355,8 @@ msgstr ""
 "instalat."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"Indexul nu poate fi șters. O eroare necunoscută a intervenit la accesarea "
-"sistemului de fișiere."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -384,7 +385,8 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
 msgid "The name '$name$' doesn't match SQL naming constraints."
-msgstr "Numele „$name$” nu se potrivește cu constrângerile de denumire SQL."
+msgstr ""
+"Indexul nu a putut fi creat. Dimensiunea coloanei selectate este prea mare."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 msgid "The file $filename$ could not be deleted."
@@ -613,14 +615,12 @@ msgstr ""
 "rugăm să verificați calea către fișierul bază de date."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
 msgstr ""
-"A intervenit o eroare în timp ce se încerca obținerea tabelului container al "
-"conexiunii."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
-msgstr "A intervenit o eroare la crearea dialogului de editare tabele."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -686,51 +686,23 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Nativ)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Outlook Address Book"
-msgstr "Agendă de contacte Microsoft Outlook"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Windows Address Book"
-msgstr "Agendă de contacte Microsoft Windows"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "Agendă de contacte Mozilla"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Agendă de contacte Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "Agendă de contacte LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "Agendă de contacte Mozilla"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Agendă de contacte Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "Agendă de contacte LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid "HSQL database engine"
 msgstr "Motor de baze de date HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 msgid "Mac OS X Address Book"
-msgstr ""
+msgstr "Adresa de carte MAC OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "Evolution local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid "Groupwise"
 msgstr "Groupwise"
 
@@ -762,18 +734,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "Evolution local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid "ADO"
 msgstr "ADO"
@@ -785,3 +745,52 @@ msgstr "Microsoft Access"
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "A intervenit o eroare necunoscută."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "A intervenit o eroare la reîmprospătarea rândului curent."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "A intervenit o eroare la obținerea înregistrării curente."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "Deplasare nepermisă a cursorului."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "Indexul nu poate fi șters. O eroare necunoscută a intervenit la accesarea "
+#~ "sistemului de fișiere."
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr ""
+#~ "A intervenit o eroare în timp ce se încerca obținerea tabelului container al "
+#~ "conexiunii."
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "A intervenit o eroare la crearea dialogului de editare tabele."
+
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Agendă de contacte Microsoft Outlook"
+
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Agendă de contacte Microsoft Windows"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Agendă de contacte Mozilla"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Agendă de contacte Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "Agendă de contacte LDAP"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Agendă de contacte Mozilla"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Agendă de contacte Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "Agendă de contacte LDAP"

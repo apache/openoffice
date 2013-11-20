@@ -6218,6 +6218,36 @@ msgstr "Geiriau newydd gyda dau brif lythyren"
 msgid "Delete words with two initial capitals"
 msgstr "Dileu geiriau gyda dwy briflythyren cyntaf"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
+msgid "Single quotes default"
+msgstr "Dyfynodau sengl rhagosodedig"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
+msgid "Double quotes default"
+msgstr "Dyfynodau dwbl rhagosodedig"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of single quotes"
+msgstr "Cychwyn dyfyniad gyda dyfnynodau sengl"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of double quotes"
+msgstr "Cychwyn dyfyniad gyda dyfynodau dwbl"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of single quotes"
+msgstr "Gorffen dyfyniad gyda dyfynodau sengl"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of double quotes"
+msgstr "Gorffen dyfyniad gyda dyfynodau dwbl"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 #, fuzzy
 msgid "Localized Options"
@@ -6308,36 +6338,6 @@ msgstr "Dyfyniad olaf"
 #, fuzzy
 msgid "Default"
 msgstr "Rhagosodedig"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-#, fuzzy
-msgid "Single quotes default"
-msgstr "Dyfynodau sengl rhagosodedig"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-#, fuzzy
-msgid "Double quotes default"
-msgstr "Dyfynodau dwbl rhagosodedig"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of single quotes"
-msgstr "Cychwyn dyfyniad gyda dyfnynodau sengl"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of double quotes"
-msgstr "Cychwyn dyfyniad gyda dyfynodau dwbl"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of single quotes"
-msgstr "Gorffen dyfyniad gyda dyfynodau sengl"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of double quotes"
-msgstr "Gorffen dyfyniad gyda dyfynodau dwbl"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -9982,6 +9982,11 @@ msgstr "Priodweddau"
 msgid "Pattern Editor"
 msgstr "Golygydd Patrwm"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Golygydd Patrwm"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10156,6 +10161,14 @@ msgstr "~Lliw"
 #, fuzzy
 msgid "Color table"
 msgstr "Tabl lliw"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

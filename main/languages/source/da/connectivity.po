@@ -742,46 +742,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook-adressebog"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows-adressebog"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey-adressebog"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird-adressebog"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP-adressebog"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey-adressebog"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird-adressebog"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP-adressebog"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -792,12 +752,16 @@ msgstr "HSQL-databasemotor"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X-adressebog"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "Evolution lokal"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -837,20 +801,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "Evolution lokal"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -865,3 +815,35 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook-adressebog"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows-adressebog"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey-adressebog"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird-adressebog"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP-adressebog"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey-adressebog"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird-adressebog"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP-adressebog"

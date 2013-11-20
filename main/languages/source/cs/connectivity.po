@@ -101,8 +101,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "Databázový ovladač nepodporuje tento typ výrazu."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "Došlo k neznámé chybě."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -113,12 +113,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "Nelze načíst knihovnu '$libname$'."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "Při obnově aktuálního řádku došlo k chybě."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "Při načtení aktuálního řádku došlo k chybě."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -133,8 +133,8 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "Dotaz nelze spustit. 'IS NULL' může být použito jen s jedním sloupcem."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "Neplatný přesun kurzoru."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -330,10 +330,8 @@ msgstr ""
 "Nelze vytvořit spojení. Možná není nainstalován potřebný poskytovatel dat."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"Nelze odstranit index. Při přístupu k souborovému systému došlo k neznámé "
-"chybě."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -629,14 +627,12 @@ msgstr ""
 "umístění databázového souboru."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
-msgstr "Při načítání tabulek spojení došlo k chybě."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
-msgstr "Při vytváření dialogu editoru došlo k chybě."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -713,46 +709,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (nativní)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Databáze kontaktů Microsoft Outlook"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Databáze kontaktů systému Microsoft Windows"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "Databáze kontaktů SeaMonkey"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Databáze kontaktů Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "Databáze kontaktů z LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "Databáze kontaktů SeaMonkey"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Databáze kontaktů Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "Databáze kontaktů z LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -763,12 +719,17 @@ msgstr "Databáze HSQL"
 msgid "Mac OS X Address Book"
 msgstr "Databáze kontaktů Mac OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Místní Evolution"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -808,21 +769,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Místní Evolution"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -837,3 +783,60 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "Došlo k neznámé chybě."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "Při obnově aktuálního řádku došlo k chybě."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "Při načtení aktuálního řádku došlo k chybě."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "Neplatný přesun kurzoru."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "Nelze odstranit index. Při přístupu k souborovému systému došlo k neznámé "
+#~ "chybě."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "Při načítání tabulek spojení došlo k chybě."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "Při vytváření dialogu editoru došlo k chybě."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Databáze kontaktů Microsoft Outlook"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Databáze kontaktů systému Microsoft Windows"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Databáze kontaktů SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Databáze kontaktů Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "Databáze kontaktů z LDAP"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Databáze kontaktů SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Databáze kontaktů Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "Databáze kontaktů z LDAP"

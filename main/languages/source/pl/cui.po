@@ -6026,6 +6026,30 @@ msgstr "Nowe słowa "
 msgid "Delete words with two initial capitals"
 msgstr "Usuń słowa z dwiema pierwszymi wielkimi literami"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+msgid "Single quotes default"
+msgstr "Domyślnie pojedyńczye cudzysłowy (')"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+msgid "Double quotes default"
+msgstr "Domyślnie podwójne cudzysłowy (\")"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+msgid "Start quote of single quotes"
+msgstr "Zaczynaj cytat o pojedyńczych cudzysłowach"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+msgid "Start quote of double quotes"
+msgstr "Zaczynaj cytat o podwójnych cudzysłowach"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+msgid "End quote of single quotes"
+msgstr "Kończ cytat o pojedyńczych cudzysłowach"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+msgid "End quote of double quotes"
+msgstr "Kończ cytat o podwójnych cudzysłowach"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 msgid "Localized Options"
 msgstr "Opcje zlokalizowane"
@@ -6099,30 +6123,6 @@ msgstr "Cudzysłów zamykający"
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
 msgid "Default"
 msgstr "Domyślnie"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-msgid "Single quotes default"
-msgstr "Domyślnie pojedyńczye cudzysłowy (')"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-msgid "Double quotes default"
-msgstr "Domyślnie podwójne cudzysłowy (\")"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-msgid "Start quote of single quotes"
-msgstr "Zaczynaj cytat o pojedyńczych cudzysłowach"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-msgid "Start quote of double quotes"
-msgstr "Zaczynaj cytat o podwójnych cudzysłowach"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-msgid "End quote of single quotes"
-msgstr "Kończ cytat o pojedyńczych cudzysłowach"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-msgid "End quote of double quotes"
-msgstr "Kończ cytat o podwójnych cudzysłowach"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 msgid "Enable word ~completion"
@@ -9052,6 +9052,10 @@ msgstr "Właściwości"
 msgid "Pattern Editor"
 msgstr "Edytor deseni"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+msgid "Pattern Editor"
+msgstr "Edytor deseni"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 msgid "~Foreground color"
 msgstr "~Pierwszy plan"
@@ -9191,6 +9195,14 @@ msgstr "K~olor"
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_TABLE_NAME.FIXEDTEXT.TEXT
 msgid "Color table"
 msgstr "Tabela kolorów"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 msgid "RGB"

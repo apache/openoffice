@@ -7079,6 +7079,36 @@ msgstr "İki büyük harfli yeni kelimeler"
 msgid "Delete words with two initial capitals"
 msgstr "İki büyük harfli kelimeleri sil"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
+msgid "Single quotes default"
+msgstr "Varsayılan tekli alıntı"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
+msgid "Double quotes default"
+msgstr "Varsayılan çiftli alıntı"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of single quotes"
+msgstr "Tekli alıntıların alıntısını başlat"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of double quotes"
+msgstr "Çiftli alıntıların alıntısını başlat"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of single quotes"
+msgstr "Tekli alıntıların alıntısını bitir"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of double quotes"
+msgstr "Çiftli alıntıların alıntısını bitir"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 msgid "Localized Options"
 msgstr "Yerel seçenekler"
@@ -7165,36 +7195,6 @@ msgstr "Son tırnak"
 #, fuzzy
 msgid "Default"
 msgstr "Varsayılan"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-#, fuzzy
-msgid "Single quotes default"
-msgstr "Varsayılan tekli alıntı"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-#, fuzzy
-msgid "Double quotes default"
-msgstr "Varsayılan çiftli alıntı"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of single quotes"
-msgstr "Tekli alıntıların alıntısını başlat"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of double quotes"
-msgstr "Çiftli alıntıların alıntısını başlat"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of single quotes"
-msgstr "Tekli alıntıların alıntısını bitir"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of double quotes"
-msgstr "Çiftli alıntıların alıntısını bitir"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -10715,6 +10715,11 @@ msgstr "Özellikler"
 msgid "Pattern Editor"
 msgstr "Desen Düzenleyici"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Desen Düzenleyici"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10881,6 +10886,14 @@ msgstr "Renk"
 #, fuzzy
 msgid "Color table"
 msgstr "Renk tablosu"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

@@ -23,14 +23,16 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-10-17 21:40+0000\n"
+"Last-Translator: Mauricio <correopublico@mauriciobaeza.org>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1382046023.0\n"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "Syntax error."
@@ -536,7 +538,7 @@ msgstr "No se puede producir la operación solicitada."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "Too many DLL application clients."
-msgstr ""
+msgstr "Demasiadas aplicaciones clientes DLL"
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "For loop not initialized."

@@ -117,8 +117,8 @@ msgstr ""
 "Ce type d'instruction n'est pas supporté par ce pilote de base de données."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "Une erreur inconnue s'est produite."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -131,12 +131,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "La bibliothèque '$libname$' n'a pas pu être chargée."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "Un erreur est survenue pendant le rafraîchissement de la ligne active."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "Une erreur est survenue lors de l'accès à la ligne active."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -153,8 +153,8 @@ msgstr ""
 "un nom de colonne."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "Un mouvement de curseur non autorisé est survenu."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -371,10 +371,8 @@ msgstr ""
 "n'est peut-être pas installé."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"L'index n'a pas pu être supprimé. Une erreur inconnue est survenue lors de "
-"l'accès au système de fichiers."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -676,18 +674,12 @@ msgstr ""
 "Vérifiez l'emplacement de votre fichier de base de données."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
 msgstr ""
-"Une erreur est survenue lors de l'obtention du conteneur de table de "
-"connexion."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
+msgid "An error occurred while creating the table editor dialog."
 msgstr ""
-"Une erreur est survenue lors de la création de la boîte de dialogue "
-"d'éditeur de table."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -768,46 +760,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (natif)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Carnet d'adresses Microsoft Outlook"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Carnet d'adresses Microsoft Windows"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "Carnet d'adresses SeaMonkey"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Carnet d'adresses Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "Carnet d'adresses LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "Carnet d'adresses SeaMonkey"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Carnet d'adresses Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "Carnet d'adresses LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -818,12 +770,17 @@ msgstr "Moteur de base de données HSQL"
 msgid "Mac OS X Address Book"
 msgstr "Carnet d'adresses Mac OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution Local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -863,21 +820,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution Local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -892,3 +834,64 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "Une erreur inconnue s'est produite."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "Un erreur est survenue pendant le rafraîchissement de la ligne active."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "Une erreur est survenue lors de l'accès à la ligne active."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "Un mouvement de curseur non autorisé est survenu."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "L'index n'a pas pu être supprimé. Une erreur inconnue est survenue lors de "
+#~ "l'accès au système de fichiers."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr ""
+#~ "Une erreur est survenue lors de l'obtention du conteneur de table de "
+#~ "connexion."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr ""
+#~ "Une erreur est survenue lors de la création de la boîte de dialogue "
+#~ "d'éditeur de table."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Carnet d'adresses Microsoft Outlook"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Carnet d'adresses Microsoft Windows"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Carnet d'adresses SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Carnet d'adresses Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "Carnet d'adresses LDAP"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Carnet d'adresses SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Carnet d'adresses Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "Carnet d'adresses LDAP"

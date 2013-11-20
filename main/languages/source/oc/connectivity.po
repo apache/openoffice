@@ -115,8 +115,8 @@ msgstr ""
 "donadas."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "Una error desconeguda s'es producha."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -129,12 +129,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "La bibliotèca '$libname$' a pas pogut èsser cargat."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "I a agut una error pendent lo refrescament de la linha en cors."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "I a agut una error pendent la recuperacion de la linha en cors."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -151,8 +151,8 @@ msgstr ""
 "amb lo nom de la colomna."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "Un movement de cursor non autorizat foguèt efectuat."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -369,10 +369,8 @@ msgstr ""
 "installat."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"Se pòt pas escafar l'indèx. I a agut una error desconeguda pendent la "
-"lectura del sistèma de fichièrs."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -634,12 +632,12 @@ msgstr ""
 "plai, verificatz l'emplaçament del fichièr de vòstra banca de donadas."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
-msgstr "I a agut una error pendent la connexion al contenidor de las taulas."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
-msgstr "I a agut una error pendent la creacion del dialòg de l'editor de taula."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -703,38 +701,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Outlook Address Book"
-msgstr "Quasernet d'adreças Microsoft Outlook"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Windows Address Book"
-msgstr "Quasernet d'adreças Microsoft Windows"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "Quasernet d'adreças SeaMonkey"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Quasernet d'adreças Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "Quasernet d'adreças LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "Quasernet d'adreças SeaMonkey"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Quasernet d'adreças Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "Quasernet d'adreças LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid "HSQL database engine"
 msgstr "Motor de banca de donadas HSQL"
@@ -743,11 +709,15 @@ msgstr "Motor de banca de donadas HSQL"
 msgid "Mac OS X Address Book"
 msgstr "Quasernet d'adreças Mac OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "Evolution Local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid "Groupwise"
 msgstr "Groupwise"
 
@@ -779,18 +749,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "Evolution Local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid "ADO"
 msgstr "ADO"
@@ -802,3 +760,50 @@ msgstr "Microsoft Access"
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "Una error desconeguda s'es producha."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "I a agut una error pendent lo refrescament de la linha en cors."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "I a agut una error pendent la recuperacion de la linha en cors."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "Un movement de cursor non autorizat foguèt efectuat."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "Se pòt pas escafar l'indèx. I a agut una error desconeguda pendent la "
+#~ "lectura del sistèma de fichièrs."
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "I a agut una error pendent la connexion al contenidor de las taulas."
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "I a agut una error pendent la creacion del dialòg de l'editor de taula."
+
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Quasernet d'adreças Microsoft Outlook"
+
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Quasernet d'adreças Microsoft Windows"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Quasernet d'adreças SeaMonkey"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Quasernet d'adreças Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "Quasernet d'adreças LDAP"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "Quasernet d'adreças SeaMonkey"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Quasernet d'adreças Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "Quasernet d'adreças LDAP"

@@ -109,8 +109,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "இந்த தரவுத்தள இயக்கியின் படி இந்த அறிக்கை வகை துணைபுரியப்படுவதில்லை."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "ஒரு தெரியாத பிழை ஏற்பட்டுள்ளது."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -122,12 +122,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "நூலகம் '$libname$' ஐ ஏற்ற முடியவில்லை."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "நடப்பு வரியை புதுப்பிக்கும் போது ஒரு பிழை ஏற்பட்டது."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "நடப்பு வரிசையை பெறும் போது ஒரு பிழை ஏற்பட்டது."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -144,8 +144,8 @@ msgstr ""
 "பயன்படுத்தப்படும்."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "தவறான நிலைகாட்டி நகர்த்தல் ஏற்பட்டது."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -352,10 +352,8 @@ msgstr ""
 "நிறுவப்படவில்லை."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"அட்டவணையை அழிக்க முடியவில்லை. கோப்பு முறைமையை அணுகும் போது ஒரு தெரியாத பிழை "
-"ஏற்பட்டது."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -661,14 +659,12 @@ msgstr ""
 "location of your database file."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
-msgstr "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
-msgstr "An error occured while creating the table editor dialog."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -747,44 +743,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook முகவரி புத்தகம்"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows முகவரி புத்தகம்"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey  முகவரிப் புத்தகம்"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird முகவரி புத்தகம்"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP முகவரி புத்தகம்"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey  முகவரிப் புத்தகம்"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird முகவரி புத்தகம்"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP முகவரி புத்தகம்"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -795,12 +753,17 @@ msgstr "HSQL தரவுத்தள எஞ்ஜின்"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X முகவரி புத்தகம்"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution உள்ளமை"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "குழுவாரியாக"
@@ -840,21 +803,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution உள்ளமை"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "குழுவாரியாக"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -869,3 +817,58 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "ஒரு தெரியாத பிழை ஏற்பட்டுள்ளது."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "நடப்பு வரியை புதுப்பிக்கும் போது ஒரு பிழை ஏற்பட்டது."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "நடப்பு வரிசையை பெறும் போது ஒரு பிழை ஏற்பட்டது."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "தவறான நிலைகாட்டி நகர்த்தல் ஏற்பட்டது."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "அட்டவணையை அழிக்க முடியவில்லை. கோப்பு முறைமையை அணுகும் போது ஒரு தெரியாத பிழை "
+#~ "ஏற்பட்டது."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "An error occured while obtaining the connection's table container."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "An error occured while creating the table editor dialog."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook முகவரி புத்தகம்"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows முகவரி புத்தகம்"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey  முகவரிப் புத்தகம்"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird முகவரி புத்தகம்"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP முகவரி புத்தகம்"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey  முகவரிப் புத்தகம்"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird முகவரி புத்தகம்"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP முகவரி புத்தகம்"

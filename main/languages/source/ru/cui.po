@@ -6008,6 +6008,30 @@ msgstr "Добавить слова с ДВумя НАчальными ПРоп�
 msgid "Delete words with two initial capitals"
 msgstr "Удалить слова с ДВумя НАчальными ПРописными"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+msgid "Single quotes default"
+msgstr "Одинарные кавычки по умолчанию"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+msgid "Double quotes default"
+msgstr "Двойные кавычки по умолчанию"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+msgid "Start quote of single quotes"
+msgstr "Открывающая одинарная кавычка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+msgid "Start quote of double quotes"
+msgstr "Открывающая двойная кавычка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+msgid "End quote of single quotes"
+msgstr "Закрывающая одинарная кавычка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+msgid "End quote of double quotes"
+msgstr "Закрывающая двойная кавычка"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 msgid "Localized Options"
 msgstr "Национальные"
@@ -6081,30 +6105,6 @@ msgstr "Закрывающие кавычки"
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
 msgid "Default"
 msgstr "Стандарт"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-msgid "Single quotes default"
-msgstr "Одинарные кавычки по умолчанию"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-msgid "Double quotes default"
-msgstr "Двойные кавычки по умолчанию"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-msgid "Start quote of single quotes"
-msgstr "Открывающая одинарная кавычка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-msgid "Start quote of double quotes"
-msgstr "Открывающая двойная кавычка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-msgid "End quote of single quotes"
-msgstr "Закрывающая одинарная кавычка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-msgid "End quote of double quotes"
-msgstr "Закрывающая двойная кавычка"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 msgid "Enable word ~completion"
@@ -9030,6 +9030,10 @@ msgstr "Свойства"
 msgid "Pattern Editor"
 msgstr "Редактор образца"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+msgid "Pattern Editor"
+msgstr "Редактор образца"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 msgid "~Foreground color"
 msgstr "Передний план"
@@ -9169,6 +9173,14 @@ msgstr "Цв~ет"
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_TABLE_NAME.FIXEDTEXT.TEXT
 msgid "Color table"
 msgstr "Таблица цветов"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 msgid "RGB"

@@ -1,2000 +1,1984 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-msgid  "Data Table"
+msgid "Data Table"
 msgstr "جدول البيانات"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Row"
+msgid "Insert Row"
 msgstr "إدراج صف"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Series"
+msgid "Insert Series"
 msgstr "إدراج سلسلة"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Insert Text Column"
+msgid "Insert Text Column"
 msgstr "إدراج عمود النص"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Delete Row"
+msgid "Delete Row"
 msgstr "حذف صف"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Delete Series"
+msgid "Delete Series"
 msgstr "حذف سلسلة"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Move Series Right"
+msgid "Move Series Right"
 msgstr "تحريك السلسلة لليمين"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
-msgid  "Move Row Down"
+msgid "Move Row Down"
 msgstr "تحريك الصف لأسفل"
 
 #: controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Data Ranges"
+msgid "Data Ranges"
 msgstr "نطاقات البيانات"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-msgid  "Axes"
+msgid "Axes"
 msgstr "المحاور"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Major grids"
+msgid "Major grids"
 msgstr "الشبكات الرئيسية"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~X axis"
+msgid "~X axis"
 msgstr "المحور ~س"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Y axis"
+msgid "~Y axis"
 msgstr "المحور ~ص"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Z axis"
+msgid "~Z axis"
 msgstr "المحور ~ع"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-msgid  "Secondary axes"
+msgid "Secondary axes"
 msgstr "المحاور الثانوية"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Minor grids"
+msgid "Minor grids"
 msgstr "الشبكات الثانوية"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Character"
+msgid "Character"
 msgstr "حرف"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "الخط"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "تأثيرات الخط"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Font Position"
+msgid "Font Position"
 msgstr "موضع الخط"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TABDIALOG.TEXT
 #, fuzzy
-msgid  "Paragraph"
+msgid "Paragraph"
 msgstr "فقرة"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Indents & Spacing"
+msgid "Indents & Spacing"
 msgstr "المسافات البادئة والتباعد"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "محاذاة"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Asian Typography"
+msgid "Asian Typography"
 msgstr "الطباعة الأسيوية"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
 #, fuzzy
-msgid  "Tab"
+msgid "Tab"
 msgstr "جدولة"
 
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 #, fuzzy
-msgid  "3D View"
+msgid "3D View"
 msgstr "عرض ثلاثي الأبعاد"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-msgid  "Box"
+msgid "Box"
 msgstr "مربع"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-msgid  "Cylinder"
+msgid "Cylinder"
 msgstr "أسطوانة"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-msgid  "Cone"
+msgid "Cone"
 msgstr "مخروط"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-msgid  "Pyramid"
+msgid "Pyramid"
 msgstr "هرم"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Best fit"
+msgid "Best fit"
 msgstr "الأفضل ملاءمة"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Center"
+msgid "Center"
 msgstr "وسط"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Above"
+msgid "Above"
 msgstr "فوق"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Top left"
+msgid "Top left"
 msgstr "أعلى اليسار"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Left"
+msgid "Left"
 msgstr "يسار"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Bottom left"
+msgid "Bottom left"
 msgstr "أسفل اليسار"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Below"
+msgid "Below"
 msgstr "تحت"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Bottom right"
+msgid "Bottom right"
 msgstr "أسفل اليمين"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right"
+msgid "Right"
 msgstr "يمين"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Top right"
+msgid "Top right"
 msgstr "أعلى اليمين"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Inside"
+msgid "Inside"
 msgstr "داخل"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Outside"
+msgid "Outside"
 msgstr "خارج"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Near origin"
+msgid "Near origin"
 msgstr "قرب الأصل"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show value as ~number"
+msgid "Show value as ~number"
 msgstr "إظهار القيمة كر~قم"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_NUMBERFORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Number ~format..."
+msgid "Number ~format..."
 msgstr "تنسيق الر~قم..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_PERCENTAGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show value as ~percentage"
+msgid "Show value as ~percentage"
 msgstr "إظهار القيمة كن~سبة مئوية"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_PERCENT_NUMBERFORMAT.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Percentage f~ormat..."
+msgid "Percentage f~ormat..."
 msgstr "تنسيق ال~نسبة المئوية..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_CATEGORY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~category"
+msgid "Show ~category"
 msgstr "إظهار ال~فئة"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~legend key"
+msgid "Show ~legend key"
 msgstr "إظهار مفتاح و~سيلة الإيضاح"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Place~ment"
+msgid "Place~ment"
 msgstr "المو~ضع"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Rotate Text"
+msgid "Rotate Text"
 msgstr "تدوير النص"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ال~درجات"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "اتجاه الن~ص"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Standard Error"
+msgid "Standard Error"
 msgstr "خطأ قياسي"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Standard Deviation"
+msgid "Standard Deviation"
 msgstr "انحراف معياري"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Variance"
+msgid "Variance"
 msgstr "نسبة الفرق"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Error Margin"
+msgid "Error Margin"
 msgstr "هامش الأخطاء"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Error Category"
+msgid "Error Category"
 msgstr "فئة الأخطاء"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~None"
+msgid "~None"
 msgstr "~بدون"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Constant Value"
+msgid "~Constant Value"
 msgstr "~قيمة ثابتة"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Percentage"
+msgid "~Percentage"
 msgstr "مئ~ويّة"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Cell ~Range"
+msgid "Cell ~Range"
 msgstr "نطاق~ الخلية"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Parameters"
+msgid "Parameters"
 msgstr "الوسائط"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "P~ositive (+)"
+msgid "P~ositive (+)"
 msgstr "~موجبة (+)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Negative (-)"
+msgid "~Negative (-)"
 msgstr "~سالبة (-)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Same value for both"
+msgid "Same value for both"
 msgstr "نفس القيمة لكليهما"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Error Indicator"
+msgid "Error Indicator"
 msgstr "مؤشر الخطأ"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Positive ~and Negative"
+msgid "Positive ~and Negative"
 msgstr "سا~لبة وموجبة"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Pos~itive"
+msgid "Pos~itive"
 msgstr "موجب~ة"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Ne~gative"
+msgid "Ne~gative"
 msgstr "س~البة"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Display legend"
+msgid "~Display legend"
 msgstr "~عرض وسيلة الإيضاح"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Left"
+msgid "~Left"
 msgstr "~يسار"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Right"
+msgid "~Right"
 msgstr "ي~مين"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Top"
+msgid "~Top"
 msgstr "أ~على"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Bottom"
+msgid "~Bottom"
 msgstr "أ~سفل"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "X ~axis"
+msgid "X ~axis"
 msgstr "الم~حور س"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Y ax~is"
+msgid "Y ax~is"
 msgstr "ال~محور ص"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Z axi~s"
+msgid "Z axi~s"
 msgstr "ا~لمحور ع"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Space"
+msgid "Space"
 msgstr "مسافة"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-msgid  "Comma"
+msgid "Comma"
 msgstr "فاصلة"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-msgid  "Semicolon"
+msgid "Semicolon"
 msgstr "فاصلة منقوطة"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-msgid  "New line"
+msgid "New line"
 msgstr "سطر جديد"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Title"
+msgid "~Title"
 msgstr "الع~نوان"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Subtitle"
+msgid "~Subtitle"
 msgstr "ال~عنوان الفرعي"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
+msgid "Axes"
 msgstr "المحاور"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~X axis"
+msgid "~X axis"
 msgstr "المحور ~س"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Y axis"
+msgid "~Y axis"
 msgstr "المحور ~ص"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Z axis"
+msgid "~Z axis"
 msgstr "المحور ~ع"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Secondary Axes"
+msgid "Secondary Axes"
 msgstr "محاور ثانوية"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "X ~axis"
+msgid "X ~axis"
 msgstr "الم~حور س"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Y ax~is"
+msgid "Y ax~is"
 msgstr "ال~محور ص"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Regression Type"
+msgid "Regression Type"
 msgstr "نوع الانحدار"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~None"
+msgid "~None"
 msgstr "~بدون"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LINEAR.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Linear"
+msgid "~Linear"
 msgstr "~خطي"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LOGARITHMIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "L~ogarithmic"
+msgid "L~ogarithmic"
 msgstr "~لوغاريتمي"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_EXPONENTIAL.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "E~xponential"
+msgid "E~xponential"
 msgstr "أ~سي"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_POWER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Power"
+msgid "~Power"
 msgstr "ا~لأس"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Equation"
+msgid "Equation"
 msgstr "المعادلة"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~equation"
+msgid "Show ~equation"
 msgstr "أظهر الم~عادلة"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_CORRELATION_COEFF.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~coefficient of determination (R²)"
+msgid "Show ~coefficient of determination (R²)"
 msgstr "إظهار ~معامل التحديد (R²)"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.STRING.TEXT
 #, fuzzy
-msgid  "Simple"
+msgid "Simple"
 msgstr "بسيط"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.STRING.TEXT
 #, fuzzy
-msgid  "Realistic"
+msgid "Realistic"
 msgstr "واقعي"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.STRING.TEXT
 #, fuzzy
-msgid  "Custom"
+msgid "Custom"
 msgstr "مخصص"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.STRING.TEXT
 #, fuzzy
-msgid  "Shape"
+msgid "Shape"
 msgstr "شكل"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
 #, fuzzy
-msgid  "~Number of lines"
+msgid "~Number of lines"
 msgstr "~عدد الأسطر"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
 #, fuzzy
-msgid  "Separator"
+msgid "Separator"
 msgstr "فاصل"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-msgid  "Column"
+msgid "Column"
 msgstr "العمود"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-msgid  "Bar"
+msgid "Bar"
 msgstr "شريط"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
 #, fuzzy
-msgid  "Area"
+msgid "Area"
 msgstr "المنطقة"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-msgid  "Pie"
+msgid "Pie"
 msgstr "تخطيط دائري"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 #, fuzzy
-msgid  "Exploded Pie Chart"
+msgid "Exploded Pie Chart"
 msgstr "مخطط التخطيط الدائري الانفجاري"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-msgid  "Exploded Donut Chart"
+msgid "Exploded Donut Chart"
 msgstr "مخطط الدائرة المجوفة الانفجارية"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-msgid  "Donut"
+msgid "Donut"
 msgstr "الدائرة المجوفة"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Line"
+msgid "Line"
 msgstr "الخط"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 #, fuzzy
-msgid  "XY (Scatter)"
+msgid "XY (Scatter)"
 msgstr "س‏ص (الانتشار)"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.STRING.TEXT
 #, fuzzy
-msgid  "Points and Lines"
+msgid "Points and Lines"
 msgstr "النقاط والسطور"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.STRING.TEXT
 #, fuzzy
-msgid  "Points Only"
+msgid "Points Only"
 msgstr "النقاط فقط"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-msgid  "Lines Only"
+msgid "Lines Only"
 msgstr "السطور فقط"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 #, fuzzy
-msgid  "3D Lines"
+msgid "3D Lines"
 msgstr "السطور ثلاثية الأبعاد"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-msgid  "Column and Line"
+msgid "Column and Line"
 msgstr "العمود والسطر"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-msgid  "Columns and Lines"
+msgid "Columns and Lines"
 msgstr "الأعمدة والسطور"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-msgid  "Stacked Columns and Lines"
+msgid "Stacked Columns and Lines"
 msgstr "الأعمدة والسطور المركبة"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-msgid  "Net"
+msgid "Net"
 msgstr "الشبكة"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 #, fuzzy
-msgid  "Stock"
+msgid "Stock"
 msgstr "المخزون"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 1"
+msgid "Stock Chart 1"
 msgstr "مخطط المخزون 1"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 2"
+msgid "Stock Chart 2"
 msgstr "مخطط المخزون 2"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 3"
+msgid "Stock Chart 3"
 msgstr "مخطط المخزون 3"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 #, fuzzy
-msgid  "Stock Chart 4"
+msgid "Stock Chart 4"
 msgstr "مخطط المخزون 4"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-msgid  "Normal"
+msgid "Normal"
 msgstr "عادي"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-msgid  "Stacked"
+msgid "Stacked"
 msgstr "متراكم"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-msgid  "Percent Stacked"
+msgid "Percent Stacked"
 msgstr "النسبة المئوية للمتراكم"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-msgid  "Deep"
+msgid "Deep"
 msgstr "عميق"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-msgid  "Filled"
+msgid "Filled"
 msgstr "معبأ"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-msgid  "Bubble"
+msgid "Bubble"
 msgstr "فقاعة"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-msgid  "Bubble Chart"
+msgid "Bubble Chart"
 msgstr "مخطط فقاعي"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 #, fuzzy
-msgid  "Numbers are required. Check your input."
+msgid "Numbers are required. Check your input."
 msgstr "الأرقام مطلوبة. راجع البيانات المدخلة."
 
 #: controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.STRING.TEXT
 #, fuzzy
-msgid  "The major interval requires a positive number. Check your input."
+msgid "The major interval requires a positive number. Check your input."
 msgstr "يتطلب الفاصل الرئيسي عددًا موجبًا. راجع البيانات المدخلة."
 
 #: controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.STRING.TEXT
 #, fuzzy
-msgid  "The logarithmic scale requires positive numbers. Check your input."
+msgid "The logarithmic scale requires positive numbers. Check your input."
 msgstr "يتطلب المقياس اللوغاريتمي أعدادًا موجبة. راجع البيانات المدخلة."
 
 #: controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.STRING.TEXT
 #, fuzzy
-msgid  "The minimum must be lower than the maximum. Check your input."
+msgid "The minimum must be lower than the maximum. Check your input."
 msgstr "يجب أن يكون الحد الأدنى أقل من الحد الاقصى. راجع البيانات المدخلة."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
-#, fuzzy
-msgid  "The major interval needs to be greater than the minor interval. Check your input."
+msgid "The major interval needs to be greater than the minor interval. Check your input."
 msgstr ""
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
-#, fuzzy
-msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
+msgid "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-msgid  "Chart Wizard"
+msgid "Chart Wizard"
 msgstr "معالج المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 #, fuzzy
-msgid  "Smooth Lines"
+msgid "Smooth Lines"
 msgstr "خطوط متجانسة"
 
 #: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
 #, fuzzy
-msgid  "Number Format for Percentage Value"
+msgid "Number Format for Percentage Value"
 msgstr "تنسيق الأرقام للقيمة المئوية"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Chart Type"
+msgid "Chart Type"
 msgstr "نوع المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-msgid  "Data Range"
+msgid "Data Range"
 msgstr "نطاق البيانات"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Chart Elements"
+msgid "Chart Elements"
 msgstr "عناصر البيانات"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-msgid  "Chart Location"
+msgid "Chart Location"
 msgstr "موقع المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 #, fuzzy
-msgid  "Line"
+msgid "Line"
 msgstr "الخط"
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-msgid  "Borders"
+msgid "Borders"
 msgstr "الحدود"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 #, fuzzy
-msgid  "Area"
+msgid "Area"
 msgstr "المنطقة"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
 #, fuzzy
-msgid  "Transparency"
+msgid "Transparency"
 msgstr "الشفافية"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
 #, fuzzy
-msgid  "Font"
+msgid "Font"
 msgstr "الخط"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 #, fuzzy
-msgid  "Font Effects"
+msgid "Font Effects"
 msgstr "تأثيرات الخط"
 
 #: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-msgid  "Numbers"
+msgid "Numbers"
 msgstr "الأرقام"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "الموضع"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
-#, fuzzy
-msgid  "Up"
+msgid "Up"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
-#, fuzzy
-msgid  "Down"
+msgid "Down"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
 #, fuzzy
-msgid  "Layout"
+msgid "Layout"
 msgstr "تخطيط"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
 #, fuzzy
-msgid  "Options"
+msgid "Options"
 msgstr "خيارات"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
 #, fuzzy
-msgid  "Scale"
+msgid "Scale"
 msgstr "المقاس"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-msgid  "Positioning"
+msgid "Positioning"
 msgstr "الموضع"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 #, fuzzy
-msgid  "Type"
+msgid "Type"
 msgstr "النوع"
 
 #: controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.STRING.TEXT
 #, fuzzy
-msgid  "Y Error Bars"
+msgid "Y Error Bars"
 msgstr "أشرطة خطأ ص"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-msgid  "Alignment"
+msgid "Alignment"
 msgstr "محاذاة"
 
 #: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-msgid  "Perspective"
+msgid "Perspective"
 msgstr "المنظور"
 
 #: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-msgid  "Appearance"
+msgid "Appearance"
 msgstr "المظهر"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 #, fuzzy
-msgid  "Illumination"
+msgid "Illumination"
 msgstr "الإضاءة"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 #, fuzzy
-msgid  "Asian Typography"
+msgid "Asian Typography"
 msgstr "الطباعة الأسيوية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "سطر القيمة المتوسطة بالقيمة %AVERAGE_VALUE والانحراف المعياري %STD_DEVIATION"
+msgid "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
+msgstr ""
+"سطر القيمة المتوسطة بالقيمة %AVERAGE_VALUE والانحراف المعياري %STD_DEVIATION"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-msgid  "Axis"
+msgid "Axis"
 msgstr "المحور"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis"
+msgid "X Axis"
 msgstr "المحور س"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis"
+msgid "Y Axis"
 msgstr "المحور ص"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis"
+msgid "Z Axis"
 msgstr "المحور ع"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-msgid  "Secondary X Axis"
+msgid "Secondary X Axis"
 msgstr "محور س ثانوي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-msgid  "Secondary Y Axis"
+msgid "Secondary Y Axis"
 msgstr "محور ص ثانوي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-msgid  "Axes"
+msgid "Axes"
 msgstr "المحاور"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 #, fuzzy
-msgid  "Grids"
+msgid "Grids"
 msgstr "الشبكات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
 #, fuzzy
-msgid  "Grid"
+msgid "Grid"
 msgstr "الشبكة"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Major Grid"
+msgid "X Axis Major Grid"
 msgstr "شبكة محور س الرئيسية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Major Grid"
+msgid "Y Axis Major Grid"
 msgstr "شبكة محور ص الرئيسية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Major Grid"
+msgid "Z Axis Major Grid"
 msgstr "شبكة محور ع الرئيسية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Minor Grid"
+msgid "X Axis Minor Grid"
 msgstr "شبكة محور س الثانوية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Minor Grid"
+msgid "Y Axis Minor Grid"
 msgstr "شبكة محور ص الثانوية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Minor Grid"
+msgid "Z Axis Minor Grid"
 msgstr "شبكة محور ع الثانوية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-msgid  "Legend"
+msgid "Legend"
 msgstr "وسيلة الإيضاح"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "المسمى الوظيفي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
 #, fuzzy
-msgid  "Titles"
+msgid "Titles"
 msgstr "العناوين"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 #, fuzzy
-msgid  "Main Title"
+msgid "Main Title"
 msgstr "العنوان الرئيسي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-msgid  "Subtitle"
+msgid "Subtitle"
 msgstr "العنوان الفرعي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "X Axis Title"
+msgid "X Axis Title"
 msgstr "عنوان المحور س"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Y Axis Title"
+msgid "Y Axis Title"
 msgstr "عنوان المحور ص"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Z Axis Title"
+msgid "Z Axis Title"
 msgstr "عنوان المحور ع"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary X Axis Title"
+msgid "Secondary X Axis Title"
 msgstr "عنوان محور س الثانوي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.STRING.TEXT
 #, fuzzy
-msgid  "Secondary Y Axis Title"
+msgid "Secondary Y Axis Title"
 msgstr "عنوان محور ص الثانوي"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Label"
+msgid "Label"
 msgstr "التسمية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
 #, fuzzy
-msgid  "Data Labels"
+msgid "Data Labels"
 msgstr "تسميات البيانات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-msgid  "Data Point"
+msgid "Data Point"
 msgstr "نقطة البيانات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 #, fuzzy
-msgid  "Data Points"
+msgid "Data Points"
 msgstr "نقاط البيانات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
 #, fuzzy
-msgid  "Legend Key"
+msgid "Legend Key"
 msgstr "مفتاح وسيلة الإيضاح"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
 #, fuzzy
-msgid  "Data Series"
+msgid "Data Series"
 msgstr "سلسلة البيانات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
 #, fuzzy
-msgid  "Data Series"
+msgid "Data Series"
 msgstr "سلسلة البيانات"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
 #, fuzzy
-msgid  "Trend Line"
+msgid "Trend Line"
 msgstr "خط الاتجاه"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVES.STRING.TEXT
 #, fuzzy
-msgid  "Trend Lines"
+msgid "Trend Lines"
 msgstr "خطوط الاتجاه"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.STRING.TEXT
 #, fuzzy
-msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
+msgid "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "خط الاتجاه %FORMULA بالدقة R² = %RSQUARED"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-msgid  "Mean Value Line"
+msgid "Mean Value Line"
 msgstr "سطر القيمة المتوسطة"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-msgid  "Equation"
+msgid "Equation"
 msgstr "المعادلة"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-msgid  "Error Bars"
+msgid "Error Bars"
 msgstr "أشرطة الأخطاء"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 #, fuzzy
-msgid  "Stock Loss"
+msgid "Stock Loss"
 msgstr "خسارة الأسهم"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.STRING.TEXT
 #, fuzzy
-msgid  "Stock Gain"
+msgid "Stock Gain"
 msgstr "ربحية الأسهم"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 #, fuzzy
-msgid  "Chart Area"
+msgid "Chart Area"
 msgstr "منطقة المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-msgid  "Chart"
+msgid "Chart"
 msgstr "المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-msgid  "Chart Wall"
+msgid "Chart Wall"
 msgstr "جدار المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-msgid  "Chart Floor"
+msgid "Chart Floor"
 msgstr "أرضية المخطط البياني"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 #, fuzzy
-msgid  "Drawing Object"
+msgid "Drawing Object"
 msgstr "كائن الرسم"
 
 #: controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.STRING.TEXT
 #, fuzzy
-msgid  "Select data range"
+msgid "Select data range"
 msgstr "حدد حدود البيانات"
 
 #: controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.STRING.TEXT
 #, fuzzy
-msgid  "Select a color using the color dialog"
+msgid "Select a color using the color dialog"
 msgstr "حدد لونًا باستخدام مربع حوار اللون"
 
 #: controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.STRING.TEXT
 #, fuzzy
-msgid  "Light Source %LIGHTNUMBER"
+msgid "Light Source %LIGHTNUMBER"
 msgstr "مصدر الضوء %LIGHTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 #, fuzzy
-msgid  "Data Series '%SERIESNAME'"
+msgid "Data Series '%SERIESNAME'"
 msgstr "سلسلة البيانات '%SERIESNAME'"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-msgid  "Data Point %POINTNUMBER"
+msgid "Data Point %POINTNUMBER"
 msgstr "مؤشر البيانات %POINTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-msgid  "Values: %POINTVALUES"
+msgid "Values: %POINTVALUES"
 msgstr "القيم: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 #, fuzzy
-msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr "مؤشر البيانات %POINTNUMBER، سلسلة البيانات %SERIESNUMBER، القيم: %POINTVALUES"
+msgid "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
+msgstr ""
+"مؤشر البيانات %POINTNUMBER، سلسلة البيانات %SERIESNUMBER، القيم: %"
+"POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.STRING.TEXT
 #, fuzzy
-msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr "مؤشر البيانات %POINTNUMBER في سلسلة البيانات %SERIESNUMBER المحددة، القيم: %POINTVALUES"
+msgid "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
+msgstr ""
+"مؤشر البيانات %POINTNUMBER في سلسلة البيانات %SERIESNUMBER المحددة، القيم: %"
+"POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME selected"
+msgid "%OBJECTNAME selected"
 msgstr "%OBJECTNAME محدد"
 
 #: controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.STRING.TEXT
 #, fuzzy
-msgid  "Pie exploded by %PERCENTVALUE percent"
+msgid "Pie exploded by %PERCENTVALUE percent"
 msgstr "تخطيط دائري انفجارٍ بنسبة %PERCENTVALUE مئوية"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
+msgid "%OBJECTNAME for Data Series '%SERIESNAME'"
 msgstr "%OBJECTNAME لسلسلة البيانات '%SERIESNAME'"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "%OBJECTNAME for all Data Series"
+msgid "%OBJECTNAME for all Data Series"
 msgstr "%OBJECTNAME لجميع سلاسل البيانات"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.STRING.TEXT
 #, fuzzy
-msgid  "Edit chart type"
+msgid "Edit chart type"
 msgstr "تحرير نوع المخطط"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.STRING.TEXT
 #, fuzzy
-msgid  "Edit data ranges"
+msgid "Edit data ranges"
 msgstr "تحرير نطاقات البيانات"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
 #, fuzzy
-msgid  "Edit 3D view"
+msgid "Edit 3D view"
 msgstr "تحرير عرض ثلاثي الأبعاد"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
 #, fuzzy
-msgid  "Edit chart data"
+msgid "Edit chart data"
 msgstr "تحرير بيانات المخطط"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.STRING.TEXT
 #, fuzzy
-msgid  "Legend on/off"
+msgid "Legend on/off"
 msgstr "تشغيل/إيقاف تشغيل وسيلة الإيضاح"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
 #, fuzzy
-msgid  "Horizontal grid on/off"
+msgid "Horizontal grid on/off"
 msgstr "تشغيل/إيقاف تشغيل الشبكة الأفقية"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 #, fuzzy
-msgid  "Scale Text"
+msgid "Scale Text"
 msgstr "نص المقياس"
 
 #: controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.STRING.TEXT
 #, fuzzy
-msgid  "Automatic Layout"
+msgid "Automatic Layout"
 msgstr "تخطيط تلقائي"
 
 #: controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
 #, fuzzy
-msgid  "This function cannot be completed with the selected objects."
+msgid "This function cannot be completed with the selected objects."
 msgstr "لا يمكن إكمال هذه الدالة باستخدام الكائنات المحددة."
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Edit text"
+msgid "Edit text"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-msgid  "Column %COLUMNNUMBER"
+msgid "Column %COLUMNNUMBER"
 msgstr "العمود %COLUMNNUMBER"
 
 #: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-msgid  "Row %ROWNUMBER"
+msgid "Row %ROWNUMBER"
 msgstr "السطر %ROWNUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "الاسم"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X.STRING.TEXT
 #, fuzzy
-msgid  "X-Values"
+msgid "X-Values"
 msgstr "قيم س"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 #, fuzzy
-msgid  "Y-Values"
+msgid "Y-Values"
 msgstr "قيم ص"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-msgid  "Bubble Sizes"
+msgid "Bubble Sizes"
 msgstr "أحجام الفقاعات"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "X-Error-Bars"
+msgid "X-Error-Bars"
 msgstr "أشرطة أخطاء س"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.STRING.TEXT
 #, fuzzy
-msgid  "Positive X-Error-Bars"
+msgid "Positive X-Error-Bars"
 msgstr "أشرطة خطأ X الموجبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.STRING.TEXT
 #, fuzzy
-msgid  "Negative X-Error-Bars"
+msgid "Negative X-Error-Bars"
 msgstr "أشرطة خطأ X السالبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.STRING.TEXT
 #, fuzzy
-msgid  "Y-Error-Bars"
+msgid "Y-Error-Bars"
 msgstr "أشرطة أخطاء ص"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.STRING.TEXT
 #, fuzzy
-msgid  "Positive Y-Error-Bars"
+msgid "Positive Y-Error-Bars"
 msgstr "أشرطة خطأ Y الموجبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.STRING.TEXT
 #, fuzzy
-msgid  "Negative Y-Error-Bars"
+msgid "Negative Y-Error-Bars"
 msgstr "أشرطة خطأ Y السالبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.STRING.TEXT
 #, fuzzy
-msgid  "Open Values"
+msgid "Open Values"
 msgstr "قيم مفتوحة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.STRING.TEXT
 #, fuzzy
-msgid  "Close Values"
+msgid "Close Values"
 msgstr "قيم مغلقة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-msgid  "Low Values"
+msgid "Low Values"
 msgstr "قيم منخفضة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-msgid  "High Values"
+msgid "High Values"
 msgstr "قيم مرتفعة"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-msgid  "Categories"
+msgid "Categories"
 msgstr "الفئات"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "Unnamed Series"
+msgid "Unnamed Series"
 msgstr "سلسلة غير مسماة"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-msgid  "Unnamed Series %NUMBER"
+msgid "Unnamed Series %NUMBER"
 msgstr "سلسلة غير مسماة %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for %VALUETYPE of %SERIESNAME"
+msgid "Select Range for %VALUETYPE of %SERIESNAME"
 msgstr "حدد نطاقًا لـ %VALUETYPE of %SERIESNAME"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Categories"
+msgid "Select Range for Categories"
 msgstr "حدد نطاق الفئات"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for data labels"
+msgid "Select Range for data labels"
 msgstr "حدد نطاق تسميات البيانات"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Positive Error Bars"
+msgid "Select Range for Positive Error Bars"
 msgstr "تحديد نطاق لأشرطة الأخطاء الموجبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.STRING.TEXT
 #, fuzzy
-msgid  "Select Range for Negative Error Bars"
+msgid "Select Range for Negative Error Bars"
 msgstr "تحديد نطاق لأشرطة الأخطاء السالبة"
 
 #: controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.STRING.TEXT
 #, fuzzy
-msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr "إدخالك الأخير غير صحيح.\nهل تريد تجاهل هذا التغيير وإغلاق مربع الحوار؟"
+msgid "Your last input is incorrect.\nIgnore this change and close the dialog?"
+msgstr ""
+"إدخالك الأخير غير صحيح.\n"
+"هل تريد تجاهل هذا التغيير وإغلاق مربع الحوار؟"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-msgid  "Left-to-right"
+msgid "Left-to-right"
 msgstr "من اليسار إلى اليمين"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-msgid  "Right-to-left"
+msgid "Right-to-left"
 msgstr "يمين إلى اليسار"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 #, fuzzy
-msgid  "Use superordinate object settings"
+msgid "Use superordinate object settings"
 msgstr "استخدم إعدادات كائن الاحداثيات الرئيسية "
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
 #, fuzzy
-msgid  "Negative and Positive"
+msgid "Negative and Positive"
 msgstr "سالب وموجب"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-msgid  "Negative"
+msgid "Negative"
 msgstr "سالب"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-msgid  "Positive"
+msgid "Positive"
 msgstr "موجب"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-msgid  "From Data Table"
+msgid "From Data Table"
 msgstr "من جدول البيانات"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
-#, fuzzy
-msgid  "Linear (%SERIESNAME)"
+msgid "Linear (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
-#, fuzzy
-msgid  "Logarithmic (%SERIESNAME)"
+msgid "Logarithmic (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
-#, fuzzy
-msgid  "Exponential (%SERIESNAME)"
+msgid "Exponential (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
-#, fuzzy
-msgid  "Power (%SERIESNAME)"
+msgid "Power (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
-#, fuzzy
-msgid  "Mean (%SERIESNAME)"
+msgid "Mean (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Sche~me"
+msgid "Sche~me"
 msgstr "~مخطط"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Shading"
+msgid "~Shading"
 msgstr "ت~ظليل"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Object borders"
+msgid "~Object borders"
 msgstr "~حدود الكائن"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Rounded edges"
+msgid "~Rounded edges"
 msgstr "~تدوير الحواف"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-msgid  " degrees"
+msgid " degrees"
 msgstr " الدرجات"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Right-angled axes"
+msgid "~Right-angled axes"
 msgstr "م~حور أيمن الزاوية"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~X rotation"
+msgid "~X rotation"
 msgstr "~دوران س"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Y rotation"
+msgid "~Y rotation"
 msgstr "دور~ان ص"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Z rotation"
+msgid "~Z rotation"
 msgstr "دورا~ن ع"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Perspective"
+msgid "~Perspective"
 msgstr "المن~ظور"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Light source"
+msgid "~Light source"
 msgstr "مصدر ال~ضوء"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Ambient light"
+msgid "~Ambient light"
 msgstr "إضاءة البي~ئة المحيطة"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Light Preview"
+msgid "Light Preview"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Sho~w labels"
+msgid "Sho~w labels"
 msgstr "إ~ظهار التسميات"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
+msgid "Text orientation"
 msgstr "اتجاه النص"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
 #, fuzzy
-msgid  "Ve~rtically stacked"
+msgid "Ve~rtically stacked"
 msgstr "مترا~صة رأسيًا"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ال~درجات"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-msgid  "Text flow"
+msgid "Text flow"
 msgstr "تدفق النص"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 #, fuzzy
-msgid  "O~verlap"
+msgid "O~verlap"
 msgstr "~تراكب"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Break"
+msgid "~Break"
 msgstr "~فاصل"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Order"
+msgid "Order"
 msgstr "ترتيب"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Tile"
+msgid "~Tile"
 msgstr "تجا~نب"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "St~agger odd"
+msgid "St~agger odd"
 msgstr "ع~لوي ثم سفلي"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Stagger ~even"
+msgid "Stagger ~even"
 msgstr "س~فلي ثم علوي"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "A~utomatic"
+msgid "A~utomatic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "اتجاه الن~ص"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-msgid  "Axis line"
+msgid "Axis line"
 msgstr "خط المحور"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Cross other axis at"
+msgid "~Cross other axis at"
 msgstr "~تخطي المحاور الأخرى عند"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-msgid  "Start"
+msgid "Start"
 msgstr "بدء"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
-msgid  "End"
+msgid "End"
 msgstr "إنهاء"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-msgid  "Value"
+msgid "Value"
 msgstr "القيمة"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-msgid  "Category"
+msgid "Category"
 msgstr "فئة"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Axis ~between categories"
+msgid "Axis ~between categories"
 msgstr "الم~حاور بين الفئات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Labels"
+msgid "Labels"
 msgstr "التسميات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Place labels"
+msgid "~Place labels"
 msgstr "و~ضع التسميات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-msgid  "Near axis"
+msgid "Near axis"
 msgstr "محور مجاور"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-msgid  "Near axis (other side)"
+msgid "Near axis (other side)"
 msgstr "محور مجاور (الجانب الآخر)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-msgid  "Outside start"
+msgid "Outside start"
 msgstr "بداية خارجية"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-msgid  "Outside end"
+msgid "Outside end"
 msgstr "نهاية خارجية"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Distance"
+msgid "~Distance"
 msgstr "ال~بعد"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-msgid  "Interval marks"
+msgid "Interval marks"
 msgstr "علامات فواصل"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-msgid  "Major:"
+msgid "Major:"
 msgstr "رئيسي:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Inner"
+msgid "~Inner"
 msgstr "~داخلي"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Outer"
+msgid "~Outer"
 msgstr "خ~ارجي"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-msgid  "Minor:"
+msgid "Minor:"
 msgstr "ثانوي:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "I~nner"
+msgid "I~nner"
 msgstr "دا~خلي"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
 #, fuzzy
-msgid  "O~uter"
+msgid "O~uter"
 msgstr "خار~جي"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Place ~marks"
+msgid "Place ~marks"
 msgstr "وضع ال~علامات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "At labels"
+msgid "At labels"
 msgstr "عند التسميات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-msgid  "At axis"
+msgid "At axis"
 msgstr "عند المحاور"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 #, fuzzy
-msgid  "At axis and labels"
+msgid "At axis and labels"
 msgstr "عند المحاور والتسميات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Grids"
+msgid "Grids"
 msgstr "الشبكات"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show major ~grid"
+msgid "Show major ~grid"
 msgstr "عرض ال~شبكة الرئيسية"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Mo~re..."
+msgid "Mo~re..."
 msgstr "المزي~د..."
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Show minor grid"
+msgid "~Show minor grid"
 msgstr "عرض الشب~كة الثانوية"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "Mor~e..."
+msgid "Mor~e..."
 msgstr "ال~مزيد..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose a chart type"
+msgid "Choose a chart type"
 msgstr "اختر نوع المخطط البياني"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "X axis with Categories"
+msgid "X axis with Categories"
 msgstr "المحور س مع الفئات"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~3D Look"
+msgid "~3D Look"
 msgstr "من~ظر ثلاثي الأبعاد"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Stack series"
+msgid "~Stack series"
 msgstr "~سلسلة التراكم"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-msgid  "On top"
+msgid "On top"
 msgstr "في المقدمة"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-msgid  "Percent"
+msgid "Percent"
 msgstr "النسبة المئوية"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-msgid  "Deep"
+msgid "Deep"
 msgstr "عميق"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 #, fuzzy
-msgid  "S~mooth lines"
+msgid "S~mooth lines"
 msgstr "خ~طوط متجانسة"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-msgid  "Properties..."
+msgid "Properties..."
 msgstr "خصائص..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Sort by X values"
+msgid "~Sort by X values"
 msgstr "~فرز حسب قيم س"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Cubic spline"
+msgid "Cubic spline"
 msgstr "الشريحة التكعيبية"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "B-Spline"
+msgid "B-Spline"
 msgstr "الشريحة التكعيبية الثنائية"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Resolution"
+msgid "~Resolution"
 msgstr "ال~دقة"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Degree of polynomials"
+msgid "~Degree of polynomials"
 msgstr ""
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-msgid  "Customize data ranges for individual data series"
+msgid "Customize data ranges for individual data series"
 msgstr "تخصيص نطاقات البيانات لسلسلة بيانات فردية"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data ~series"
+msgid "Data ~series"
 msgstr "س~لسلة البيانات"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Data ranges"
+msgid "~Data ranges"
 msgstr "~نطاق البيانات"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Ran~ge for %VALUETYPE"
+msgid "Ran~ge for %VALUETYPE"
 msgstr "ن~طاق %VALUETYPE"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Categories"
+msgid "~Categories"
 msgstr "ال~فئات"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Data ~labels"
+msgid "Data ~labels"
 msgstr "تسميات البيا~نات"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Add"
+msgid "~Add"
 msgstr "إضا~فة"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
-msgid  "~Remove"
+msgid "~Remove"
 msgstr "إ~زالة"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-msgid  "Position"
+msgid "Position"
 msgstr "الموضع"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
+msgid "Text orientation"
 msgstr "اتجاه النص"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "اتجاه الن~ص"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Place chart"
+msgid "Place chart"
 msgstr "مكان المخطط البياني"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Insert in sheet"
+msgid "~Insert in sheet"
 msgstr "إ~دراج في الورقة"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Clockwise direction"
+msgid "~Clockwise direction"
 msgstr "ا~تجاه عقارب الساعة"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Starting angle"
+msgid "Starting angle"
 msgstr "زاوية البدء"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ال~درجات"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Plot options"
+msgid "Plot options"
 msgstr "خيارات الرسم"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
-msgid  "Include ~values from hidden cells"
-msgstr "تضمين ~قيم من خلايا مخفية"
+#, fuzzy
+msgid "Include ~values from hidden cells"
+msgstr "ت~ضمين قيم من خلايا مخفية"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose a data range"
+msgid "Choose a data range"
 msgstr "اختر نطاق البيانات"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Data range"
+msgid "~Data range"
 msgstr "~نطاق البيانات"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Data series in ~rows"
+msgid "Data series in ~rows"
 msgstr "سلسلة بيانات في ~صفوف"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Data series in ~columns"
+msgid "Data series in ~columns"
 msgstr "سلسلة بيانات في أ~عمده"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~First row as label"
+msgid "~First row as label"
 msgstr "الص~ف الأول كتسمية"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "F~irst column as label"
+msgid "F~irst column as label"
 msgstr "العمو~د الأول كتسمية"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Days"
+msgid "Days"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Months"
+msgid "Months"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Years"
+msgid "Years"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Scale"
+msgid "Scale"
 msgstr "المقاس"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Reverse direction"
+msgid "~Reverse direction"
 msgstr "~عكس الاتجاه"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Logarithmic scale"
+msgid "~Logarithmic scale"
 msgstr "المقياس اللو~غاريتمي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "T~ype"
+msgid "T~ype"
 msgstr "النوع"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Automatic"
+msgid "Automatic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
+msgid "Text"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Minimum"
+msgid "~Minimum"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "~Automatic"
+msgid "~Automatic"
 msgstr "تل~قائي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ma~ximum"
+msgid "Ma~ximum"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
 #, fuzzy
-msgid  "A~utomatic"
+msgid "A~utomatic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "R~esolution"
+msgid "R~esolution"
 msgstr "ال~دقة"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Automat~ic"
+msgid "Automat~ic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ma~jor interval"
+msgid "Ma~jor interval"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Au~tomatic"
+msgid "Au~tomatic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minor inter~val count"
+msgid "Minor inter~val count"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minor inter~val"
+msgid "Minor inter~val"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Aut~omatic"
+msgid "Aut~omatic"
 msgstr "تلقا~ئي"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Re~ference value"
+msgid "Re~ference value"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Automat~ic"
+msgid "Automat~ic"
 msgstr "ت~لقائي"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Align data series to"
+msgid "Align data series to"
 msgstr "محاذاة سلسلة البيانات إلى"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Primary Y axis"
+msgid "Primary Y axis"
 msgstr "محور ص الأساسي"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "Secondary Y axis"
+msgid "Secondary Y axis"
 msgstr "المحور ص الثانوي"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Settings"
+msgid "Settings"
 msgstr "إعدادات"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Overlap"
+msgid "~Overlap"
 msgstr "~تراكب"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Spacing"
+msgid "~Spacing"
 msgstr "تبا~عد"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Connection lines"
+msgid "Connection lines"
 msgstr "خطوط الاتصال"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Show ~bars side by side"
+msgid "Show ~bars side by side"
 msgstr "إظهار الأشرطة جنبًا إلى ج~نب"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Plot options"
+msgid "Plot options"
 msgstr "خيارات الرسم"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Plot missing values"
+msgid "Plot missing values"
 msgstr "قيم الرسم مفقودة"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Leave gap"
+msgid "~Leave gap"
 msgstr "~ترك فراغ"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Assume zero"
+msgid "~Assume zero"
 msgstr "ا~فتراض القيمة صفر"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
 #, fuzzy
-msgid  "~Continue line"
+msgid "~Continue line"
 msgstr "ا~ستمرار الخط"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
 #, fuzzy
-msgid  "Include ~values from hidden cells"
+msgid "Include ~values from hidden cells"
 msgstr "ت~ضمين قيم من خلايا مخفية"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
 #, fuzzy
-msgid  "Ve~rtically stacked"
+msgid "Ve~rtically stacked"
 msgstr "مترا~صة رأسيًا"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "~Degrees"
+msgid "~Degrees"
 msgstr "ال~درجات"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Text orientation"
+msgid "Text orientation"
 msgstr "اتجاه النص"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Te~xt direction"
+msgid "Te~xt direction"
 msgstr "اتجاه الن~ص"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Choose titles, legend, and grid settings"
+msgid "Choose titles, legend, and grid settings"
 msgstr "اختر إعدادات العناوين ووسيلة الإيضاح والشبكة"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
-msgid  "Display grids"
+msgid "Display grids"
 msgstr "إخفاء الشبكات"

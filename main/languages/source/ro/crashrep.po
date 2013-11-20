@@ -23,14 +23,17 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-11-01 12:15+0000\n"
+"Last-Translator: Ioana Elena <tisca_ioana@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1383308120.0\n"
 
 #: all/crashrep.ulf#_WELCOME_CAPTION_
 msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
@@ -43,18 +46,36 @@ msgstr "Bun venit la raportorul de erori în %PRODUCTNAME% %PRODUCTVERSION%"
 #: all/crashrep.ulf#_WELCOME_BODY1_
 msgid "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
 msgstr ""
+"Acest instrument de raport eroare adună informaţii despre cum %"
+"NUMELEPRODUSULUI% lucrează şi îl trimite la Apache OpenOffice pentru a "
+"îmbunătăţi versiunile viitoare.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY2_
 msgid "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
 msgstr ""
+"Este uşor - trimite raportul fără nici un efort din partea ta dând click pe "
+"Send in dialogul următor, sau poţi descrie pe scurt cum a apărut eroarea iar "
+"apoi click pe Send. Dacă doreşti să vezi raportul , click pe butonul Arata "
+"Raport. Nici o dată nu va fi trimisă dacă dai click pe Nu trimite.\n"
+"\n"
 
 #: all/crashrep.ulf#_WELCOME_BODY3_
 msgid "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
 msgstr ""
+"Confidenţialitatea ClientuluiInformaţia colectată  este limitată la datele "
+"referitoare la starea de %NUMEPRODUS% %VERSIUNEPRODUS% atunci când se "
+"produce eroarea.Altă informaţie despre conţinutul documentelor sau a "
+"parolelor nu este colectată.\n"
+"\n"
+"Informaţia va fi folosită doar pentru a îmbunătăţi calitatea %NUMEPRODUS% şi "
+"nu va fi împărtăşită unei a treia părţi.\n"
+"Pentru mai multe informaţii despre confidenţialitatea Apache OpenOffice , "
+"vizitaţi \n"
 
 #: all/crashrep.ulf#_PRIVACY_URL_
 msgid "http://www.openoffice.org/privacy.html"
-msgstr ""
+msgstr "http://www.openoffice.org/privacy.html"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid "~Next >>"
@@ -78,7 +99,10 @@ msgstr "A intervenit o eroare în timpul rulării %PRODUCTNAME% %PRODUCTVERSION%
 
 #: all/crashrep.ulf#_REPORT_BODY_
 msgid "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr ""
+msgstr "%NUMEPRODUS% %VERSIUNEPRODUS% Raportul de erori a adunat informaţii care pot "
+"ajuta îmbunătăţirea %NUMEPRODUS% Apache OpenOffice.În spaţiile de mai jos , "
+"poţi introduce un titlu pentru raportul de accident şi să descrii acţiunea "
+"pe care încercai să o întreprinzi când s-a produs eroarea. Apoi click Send.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid "Which type of document (e.g. presentation) were you using when the error occurred?"
@@ -88,7 +112,7 @@ msgstr ""
 
 #: all/crashrep.ulf#_ALLOW_CONTACT_
 msgid "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "Permit Apache OpenOffice să mă contacteze în legătură cu acest raport."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid "Please enter your e-mail address."
@@ -125,6 +149,9 @@ msgstr "Salvează raportul în"
 #: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
 msgid "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
+"Eroarea raportată nu a putut fi trimisă deoarece programul de poştă "
+"electronică implicit nu suportă MAPI.\n"
+"Vă rog utilizaţi un program de poştă electronică compatibil cu MAPI."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid "The error report could not be temporarily saved and could therefore not be sent."
@@ -135,6 +162,8 @@ msgstr ""
 #: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
 msgid "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
+"Eroarea raportată nu a putut fi trimisă deoarece \"trimite mail\" nu a pornit.\n"
+"Vă rog verificaţi setarile \"trimite mail\"."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -183,6 +212,12 @@ msgstr "~Port"
 #: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
 msgid "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
 msgstr ""
+"%NUMEPRODUS% Instrumentul de raportare a erorii trebuie să fie conectat la "
+"Internet pentru a fi posibilă trimiterea erorilor.\n"
+"Companiile folosesc adesea servere proxy în colaborare cu un paravan de "
+"protecţie pentru a proteja reţeaua.\n"
+"Dacă această situaţie ţi se aplică şi ţie , trebuie să specifici adresa si "
+"portul serverului."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid "Sending Error Report"
@@ -199,6 +234,9 @@ msgstr "Stare: Raportul de eroare a fost trimis cu succes."
 #: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
 msgid "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
 msgstr ""
+"Ai marcat opţiunea \" Permit Apache OpenOffice să mă contacteze în legătură "
+"cu acest raport.\"\n"
+"Introdu adresa de e-mail."
 
 #: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
 msgid "Usage:"
@@ -217,3 +255,5 @@ msgstr ""
 #: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
 msgid "Shows this help text.\nDetailed information can be found in the Setup Guide."
 msgstr ""
+"Afişează acest text de ajutor.\n"
+"Informaţii detaliate pot fi găsite în Ghidul de Setare."

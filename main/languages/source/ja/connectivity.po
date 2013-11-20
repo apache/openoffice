@@ -101,8 +101,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "この文の型はデータベースドライバではサポートされていません。"
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "不明なエラーが発生しました。"
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -113,12 +113,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "ライブラリ '$libname$' は読み込みできませんでした。"
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "現在の行を再表示中にエラーが発生しました。"
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "現在の行を取得中にエラーが発生しました。"
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -133,8 +133,8 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "クエリーは実行できません。'IS NULL' にはカラム名だけが使用できます。"
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "不正なカーソルの動きが有りました。"
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -323,8 +323,8 @@ msgid "The connection could not be created. May be the necessary data provider i
 msgstr "接続を作成できませんでした。必要なデータプロバイダがインストールされていない可能性があります。"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "インデックスは削除できませんでした。ファイルシステムにアクセス中に未知のエラーが発生しました。"
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -590,14 +590,12 @@ msgid "The given URL contains no valid local file system path. Please check the 
 msgstr "指定された URL には、無効なローカルファイルシステムパスが含まれています。データベースファイルの場所を確認してください。"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
-msgstr "接続のテーブルコンテナの取得中に、エラーが発生しました。"
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
-msgstr "テーブルエディタダイアログを作成中に、エラーが発生しました。"
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -674,46 +672,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook アドレス帳"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows アドレス帳"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey アドレス帳"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird アドレス帳"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP アドレス帳"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey アドレス帳"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird アドレス帳"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP アドレス帳"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -724,12 +682,17 @@ msgstr "HSQL database engine"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X アドレス帳"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution Local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -769,21 +732,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution Local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -798,3 +746,58 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "不明なエラーが発生しました。"
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "現在の行を再表示中にエラーが発生しました。"
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "現在の行を取得中にエラーが発生しました。"
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "不正なカーソルの動きが有りました。"
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr "インデックスは削除できませんでした。ファイルシステムにアクセス中に未知のエラーが発生しました。"
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "接続のテーブルコンテナの取得中に、エラーが発生しました。"
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "テーブルエディタダイアログを作成中に、エラーが発生しました。"
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook アドレス帳"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows アドレス帳"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey アドレス帳"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird アドレス帳"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP アドレス帳"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey アドレス帳"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird アドレス帳"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP アドレス帳"

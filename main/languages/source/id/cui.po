@@ -6210,6 +6210,36 @@ msgstr "Kata baru dengan dua huruf awal kapital"
 msgid "Delete words with two initial capitals"
 msgstr "Hapus kata dengan dua huruf awal kapital"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
+msgid "Single quotes default"
+msgstr "Petik tunggal baku"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
+msgid "Double quotes default"
+msgstr "Petik ganda baku"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of single quotes"
+msgstr "Mulai kutipan petik tunggal"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of double quotes"
+msgstr "Mulai kutipan petik ganda"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of single quotes"
+msgstr "Akhir kutipan petik tunggal"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of double quotes"
+msgstr "Akhir kutipan petik ganda"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 #, fuzzy
 msgid "Localized Options"
@@ -6297,36 +6327,6 @@ msgstr "Tanda petik akhir"
 #, fuzzy
 msgid "Default"
 msgstr "Default"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-#, fuzzy
-msgid "Single quotes default"
-msgstr "Petik tunggal baku"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-#, fuzzy
-msgid "Double quotes default"
-msgstr "Petik ganda baku"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of single quotes"
-msgstr "Mulai kutipan petik tunggal"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of double quotes"
-msgstr "Mulai kutipan petik ganda"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of single quotes"
-msgstr "Akhir kutipan petik tunggal"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of double quotes"
-msgstr "Akhir kutipan petik ganda"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -9851,6 +9851,11 @@ msgstr "Properti"
 msgid "Pattern Editor"
 msgstr "Penyunting Pola"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Penyunting Pola"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10022,6 +10027,14 @@ msgstr "~Warna"
 #, fuzzy
 msgid "Color table"
 msgstr "Tabel warna"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

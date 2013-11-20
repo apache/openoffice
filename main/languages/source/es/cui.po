@@ -6031,6 +6031,30 @@ msgstr "Nuevas palabras con dos letras mayúsculas iniciales"
 msgid "Delete words with two initial capitals"
 msgstr "Eliminar las palabras con dos letras mayúsculas iniciales"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+msgid "Single quotes default"
+msgstr "Comillas simples en forma predeterminada"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+msgid "Double quotes default"
+msgstr "Comillas dobles en forma predeterminada"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+msgid "Start quote of single quotes"
+msgstr "Comilla inicial para las comillas simples"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+msgid "Start quote of double quotes"
+msgstr "Comilla inicial para las comillas dobles"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+msgid "End quote of single quotes"
+msgstr "Comilla final para las comillas simples"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+msgid "End quote of double quotes"
+msgstr "Comilla final para las comillas dobles"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 msgid "Localized Options"
 msgstr "Opciones regionales"
@@ -6104,30 +6128,6 @@ msgstr "Comilla de cierre"
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
 msgid "Default"
 msgstr "~Predeterminado"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-msgid "Single quotes default"
-msgstr "Comillas simples en forma predeterminada"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-msgid "Double quotes default"
-msgstr "Comillas dobles en forma predeterminada"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-msgid "Start quote of single quotes"
-msgstr "Comilla inicial para las comillas simples"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-msgid "Start quote of double quotes"
-msgstr "Comilla inicial para las comillas dobles"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-msgid "End quote of single quotes"
-msgstr "Comilla final para las comillas simples"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-msgid "End quote of double quotes"
-msgstr "Comilla final para las comillas dobles"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 msgid "Enable word ~completion"
@@ -9048,6 +9048,10 @@ msgstr "Propiedades"
 msgid "Pattern Editor"
 msgstr "Editor de patrones"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+msgid "Pattern Editor"
+msgstr "Editor de patrones"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 msgid "~Foreground color"
 msgstr "Color de ~superficie"
@@ -9187,6 +9191,14 @@ msgstr "C~olor"
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_TABLE_NAME.FIXEDTEXT.TEXT
 msgid "Color table"
 msgstr "Tabla de color"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 msgid "RGB"

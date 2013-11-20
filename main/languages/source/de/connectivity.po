@@ -114,8 +114,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "Diese Abfrageart wird von diesem Datenbanktreiber nicht unterstützt."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "Ein unbekannter Fehler ist aufgetreten."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -128,12 +128,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "Die Bibliothek '$libname$' konnte nicht geladen werden."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "Beim Auffrischen der aktuellen Zeile ist ein Fehler aufgetreten."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "Beim Ermitteln der aktuellen Zeile ist ein Fehler aufgetreten."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -150,8 +150,8 @@ msgstr ""
 "mit einem Spaltennamen genutzt werden."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "Eine ungültige Bewegung des Cursors ist aufgetreten."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -368,10 +368,8 @@ msgstr ""
 "benötigte Datenprovider nicht installiert."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"Der Index konnte nicht gelöscht werden. Es ist ein unbekannter Fehler beim "
-"Zugriff auf das Dateisystem aufgetreten."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -692,18 +690,12 @@ msgstr ""
 "Bitte überprüfen Sie den Speicherort Ihrer Datenbankdatei."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
+msgid "An error occurred while obtaining the connection's table container."
 msgstr ""
-"Es ist ein Fehler beim Beschaffen des Tabellen-Behälters der Verbindung "
-"aufgetreten."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
+msgid "An error occurred while creating the table editor dialog."
 msgstr ""
-"Beim Erzeugen des Dialogs zum Bearbeiten der Tabelle ist ein Fehler "
-"aufgetreten."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -783,46 +775,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (nativ)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook Adressbuch"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows Adressbuch"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey Adressbuch"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird Adressbuch"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP Adressbuch"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey Adressbuch"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird Adressbuch"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP Adressbuch"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -833,12 +785,17 @@ msgstr "HSQL Datenbank-Engine"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X Adressbuch"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution lokal"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -878,21 +835,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution lokal"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -907,3 +849,64 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "Ein unbekannter Fehler ist aufgetreten."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "Beim Auffrischen der aktuellen Zeile ist ein Fehler aufgetreten."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "Beim Ermitteln der aktuellen Zeile ist ein Fehler aufgetreten."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "Eine ungültige Bewegung des Cursors ist aufgetreten."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "Der Index konnte nicht gelöscht werden. Es ist ein unbekannter Fehler beim "
+#~ "Zugriff auf das Dateisystem aufgetreten."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr ""
+#~ "Es ist ein Fehler beim Beschaffen des Tabellen-Behälters der Verbindung "
+#~ "aufgetreten."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr ""
+#~ "Beim Erzeugen des Dialogs zum Bearbeiten der Tabelle ist ein Fehler "
+#~ "aufgetreten."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook Adressbuch"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows Adressbuch"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey Adressbuch"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird Adressbuch"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP Adressbuch"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey Adressbuch"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird Adressbuch"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP Adressbuch"

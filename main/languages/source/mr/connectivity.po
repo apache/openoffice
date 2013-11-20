@@ -105,8 +105,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "प्रविष्ट वाक्य प्रकार या कोष ड्राइवर द्वारे समर्थीत नाही."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "अपरिचीत त्रुटी आढळली."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -117,12 +117,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "लायब्ररी '$libname$' दाखल केले जाऊ शकत नाही."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "वर्तमान ओळ पुन्हा उघडतेवेळी त्रुटी आढळली."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "वर्तमान ओळ प्राप्त करतेवेळी त्रुटी आढळली."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -139,8 +139,8 @@ msgstr ""
 "शकते."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "अवैध कर्सर हालचाल आढळले."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -345,10 +345,8 @@ msgstr ""
 "प्रतिष्ठापीत केले नसावे."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"निर्देशांक नष्ट केले जाऊ शकले नाही. फाइल प्रणाली करीता प्रवेश प्राप्त "
-"करतेवेळी अपरिचीत त्रुटी आढळली."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -604,12 +602,12 @@ msgstr ""
 "फाइलचे ठिकाण तपासा."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
-msgstr "जुळवणीचे तक्ता समावेषक प्राप्त करतेवेळी त्रुटी आढळली."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
-msgstr "तक्ता संपादक संवाद बनवितेवेळी त्रुटी आढळली."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -671,38 +669,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook पत्ता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows पत्ता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr ""
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird पत्ता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "LDAP पत्ता पुस्तिका"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr ""
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird पत्ता पुस्तिका"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "LDAP पत्ता पुस्तिका"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid "HSQL database engine"
 msgstr "HSQL कोष इंजीन"
@@ -711,11 +677,15 @@ msgstr "HSQL कोष इंजीन"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X पत्ता पुस्तिका"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "Evolution Local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid "Groupwise"
 msgstr "Groupwise"
 
@@ -747,18 +717,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "Evolution Local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid "ADO"
 msgstr "ADO"
@@ -770,3 +728,44 @@ msgstr "Microsoft Access"
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "अपरिचीत त्रुटी आढळली."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "वर्तमान ओळ पुन्हा उघडतेवेळी त्रुटी आढळली."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "वर्तमान ओळ प्राप्त करतेवेळी त्रुटी आढळली."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "अवैध कर्सर हालचाल आढळले."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "निर्देशांक नष्ट केले जाऊ शकले नाही. फाइल प्रणाली करीता प्रवेश प्राप्त "
+#~ "करतेवेळी अपरिचीत त्रुटी आढळली."
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "जुळवणीचे तक्ता समावेषक प्राप्त करतेवेळी त्रुटी आढळली."
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "तक्ता संपादक संवाद बनवितेवेळी त्रुटी आढळली."
+
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook पत्ता पुस्तिका"
+
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows पत्ता पुस्तिका"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird पत्ता पुस्तिका"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP पत्ता पुस्तिका"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird पत्ता पुस्तिका"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP पत्ता पुस्तिका"

@@ -23,26 +23,29 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-11-01 09:29+0000\n"
+"Last-Translator: Ioana Elena <tisca_ioana@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1383298198.0\n"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 msgid "Print range"
-msgstr ""
+msgstr "Area de printare"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid "All ~Pages"
-msgstr ""
+msgstr "Toate paginile"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid "Pa~ges"
-msgstr ""
+msgstr "Pagini"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 msgid "<All>"
@@ -80,7 +83,7 @@ msgstr "Eroare la încărcarea bibliotecii"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
 msgid "The file does not contain any BASIC libraries"
-msgstr "Fișierul nu conține nicio librărie BASIC"
+msgstr "Fișierul nu conține nici o librărie BASIC"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
 msgid "Invalid Name"
@@ -92,7 +95,7 @@ msgstr "Numele unei biblioteci poate avea maxim 30 de caractere."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
 msgid "Macros from other documents are not accessible."
-msgstr "Macrocomenzile din alte documente nu sunt accesibile."
+msgstr "Macro-comenzile din alte documente nu sunt accesibile."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
 msgid "This library is read-only."
@@ -320,7 +323,7 @@ msgstr "Doriți să înlocuiți textul în toate modulele active ?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
 msgid "Remove Watch"
-msgstr "Remove Watch"
+msgstr "Sterge ceasul"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
 msgid "Watch:"
@@ -420,11 +423,11 @@ msgstr "[Limba implicită]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid "Document Objects"
-msgstr ""
+msgstr "Document de obiecte"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
 msgid "Forms"
-msgstr ""
+msgstr "Forme"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
 msgid "Modules"
@@ -432,7 +435,7 @@ msgstr "Module"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid "Class Modules"
-msgstr ""
+msgstr "Module de clasa"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
 msgid "Rename"
@@ -512,27 +515,27 @@ msgstr "Macrouri %PRODUCTNAME Basic"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
 msgid "Existing macros ~in:"
-msgstr "Macrour~i existente în:"
+msgstr "Macrouri existente în:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
 msgid "~Macro name"
-msgstr "Nu~mele macro-comenzii"
+msgstr "Numele macro-comenzii"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
 msgid "Macro ~from"
-msgstr "~Macro din"
+msgstr "Macro din"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
 msgid "Save m~acro in"
-msgstr "S~alvează macro în"
+msgstr "Salvează macro în"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid "De~scription"
-msgstr "De~scriere"
+msgstr "Descriere"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
 msgid "R~un"
-msgstr "Exec~ută"
+msgstr "Execută"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid "Close"
@@ -544,23 +547,23 @@ msgstr "~Atribuie..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid "~Edit"
-msgstr "~Editează"
+msgstr "Editează"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 msgid "New ~Library"
-msgstr "Bib~liotecă nouă"
+msgstr "Bibliotecă nouă"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 msgid "New M~odule"
-msgstr "M~odul nou"
+msgstr "Modul nou"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
 msgid "~Organizer..."
-msgstr "~Organizator..."
+msgstr "Organizator..."
 
 #: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
 msgid "Macro"
@@ -568,11 +571,11 @@ msgstr "Macro-comandă"
 
 #: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid "~New"
-msgstr "~Creează"
+msgstr "Creează"
 
 #: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
 msgid "Close"
@@ -608,11 +611,11 @@ msgstr "Biblioteci"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid "M~odule"
-msgstr "M~odul"
+msgstr "Modul"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid "~Edit"
-msgstr "~Editează"
+msgstr "Editează"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid "Close"
@@ -628,7 +631,7 @@ msgstr "~Creează..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid "Dialog"
@@ -636,7 +639,7 @@ msgstr "Dialog"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid "~Edit"
-msgstr "~Editează"
+msgstr "Editează"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid "Close"
@@ -652,19 +655,19 @@ msgstr "~Creează..."
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
 msgid "L~ocation"
-msgstr "~Amplasare"
+msgstr "Amplasare"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid "~Library"
-msgstr "Bib~liotecă"
+msgstr "Bibliotecă"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid "~Edit"
-msgstr "~Editează"
+msgstr "Editează"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid "Close"
@@ -672,7 +675,7 @@ msgstr "Închide"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 msgid "~Password..."
-msgstr "~Parolă..."
+msgstr "Parolă..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 msgid "~New..."
@@ -684,11 +687,11 @@ msgstr "~Importă..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
 msgid "E~xport..."
-msgstr "E~xportă..."
+msgstr "Exportă..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
 msgid "Options"
@@ -712,7 +715,7 @@ msgstr "Exportă ca bibliotecă BASIC"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
 msgid "Export as ~extension"
-msgstr "~Exportă ca extensie"
+msgstr "Exportă ca extensie"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
 msgid "Export as BASIC library"
@@ -760,7 +763,7 @@ msgstr "Arată"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid "Objects Tree"
-msgstr ""
+msgstr "Arborele de obiecte"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid "Properties: "
@@ -772,7 +775,7 @@ msgstr "Marcat fără control"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid "Multiselection"
-msgstr "Selecție multipl"
+msgstr "Selecție multipla"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
 msgid "Manage User Interface Languages [$1]"
@@ -803,7 +806,7 @@ msgstr ""
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid "~Close"
-msgstr "În~chide"
+msgstr "Închide"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
 msgid "[Default Language]"
@@ -811,7 +814,7 @@ msgstr "[Limba implicită]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid "~Delete"
-msgstr "Șter~ge"
+msgstr "Șterge"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
 msgid "<Press 'Add' to create language resources>"
@@ -819,11 +822,15 @@ msgstr "<Apăsați „Adaugă” pentru crearea resurselor limbii>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
 msgid "Delete Language Resources"
-msgstr "Delete Language Resources"
+msgstr "Stergeti resursele limbii de acces "
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
 msgid "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
 msgstr ""
+"Esti pe cale sa stergi toate resursele pentru limba selectata. Toti "
+"utilizatorii interfatei pentru limba selectata vor fi stersi.\n"
+"\n"
+"Vrei sa stergi resursele limbii selectate?"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid "Set Default User Interface Language"

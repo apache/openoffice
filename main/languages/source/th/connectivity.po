@@ -105,8 +105,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "ไดรเวอร์ของฐานข้อมูลไม่สนับสนุนข้อความสั่งชนิดนี้"
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "เกิดการผิดพลาดที่ไม่ทราบสาเหตุ"
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -117,12 +117,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "ไม่สามารถโหลดไลบรารี '$libname$'"
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "เกิดความผิดพลาดขึ้นในขณะที่กำลังรีเฟรชแถวปัจจุบัน"
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "เกิดความผิดพลาดขึ้นในขณะที่กำลังเรียกแถวปัจจุบัน"
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -137,8 +137,8 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "ไม่สามารถปฏิบัติตามข้อคำถาม 'IS NULL' สามารถใช้กับชื่อคอลัมน์เท่านั้น"
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "เกิดการเคลื่อนที่ไม่ถูกต้องของตัวชี้ตำแหน่ง"
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -339,8 +339,8 @@ msgstr ""
 "provider) ที่จำเป็น"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "ไม่สามารถลบดัชนี เกิดความผิดพลาดขณะเข้าถึงระบบไฟล์"
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -579,12 +579,12 @@ msgstr ""
 "โปรดตรวจสอบตำแหน่งของไฟล์ฐานข้อมูล"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
-msgstr "เกิดความผิดพลาดขึ้นขณะจัดหาคอนเทนเนอร์ของตารางของการเชื่อมต่อ"
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
-msgstr "เกิดความผิดพลาดขึ้นขณะสร้างกล่องโต้ตอบตัวแก้ไขตาราง"
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -646,38 +646,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (โดยกำเนิด)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Outlook Address Book"
-msgstr "สมุดที่อยู่ของไมโครซอฟท์เอาท์ลุค"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-msgid "Microsoft Windows Address Book"
-msgstr "สมุดที่อยู่ของไมโครซอฟท์วินโดว์ส"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "สมุดที่อยู่ของ SeaMonkey"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "สมุดที่อยู่ของ Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "สมุดที่อยู่ของ LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "สมุดที่อยู่ของ SeaMonkey"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-msgid "Thunderbird Address Book"
-msgstr "สมุดที่อยู่ของ Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-msgid "LDAP Address Book"
-msgstr "สมุดที่อยู่ของ LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid "HSQL database engine"
 msgstr "เครื่องประมวลฐานข้อมูล HSQL"
@@ -686,11 +654,15 @@ msgstr "เครื่องประมวลฐานข้อมูล HSQL"
 msgid "Mac OS X Address Book"
 msgstr "สมุดที่อยู่ของ Mac OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid "Evolution Local"
+msgstr "อีโวลูชัน โลคอล"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid "Evolution LDAP"
 msgstr "อีโวลูชัน LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid "Groupwise"
 msgstr "กรุ๊ปไวส์"
 
@@ -722,18 +694,6 @@ msgstr "JDBC ของออราเคิล"
 msgid "dBASE"
 msgstr "ดีเบส"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-msgid "Evolution Local"
-msgstr "อีโวลูชัน โลคอล"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-msgid "Evolution LDAP"
-msgstr "อีโวลูชัน LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-msgid "Groupwise"
-msgstr "กรุ๊ปไวส์"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid "ADO"
 msgstr "ADO"
@@ -745,3 +705,48 @@ msgstr "ไมโครซอฟท์แอ็กเซส"
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid "Microsoft Access 2007"
 msgstr "ไมโครซอฟท์แอ็กเซส 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "เกิดการผิดพลาดที่ไม่ทราบสาเหตุ"
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "เกิดความผิดพลาดขึ้นในขณะที่กำลังรีเฟรชแถวปัจจุบัน"
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "เกิดความผิดพลาดขึ้นในขณะที่กำลังเรียกแถวปัจจุบัน"
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "เกิดการเคลื่อนที่ไม่ถูกต้องของตัวชี้ตำแหน่ง"
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr "ไม่สามารถลบดัชนี เกิดความผิดพลาดขณะเข้าถึงระบบไฟล์"
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "เกิดความผิดพลาดขึ้นขณะจัดหาคอนเทนเนอร์ของตารางของการเชื่อมต่อ"
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "เกิดความผิดพลาดขึ้นขณะสร้างกล่องโต้ตอบตัวแก้ไขตาราง"
+
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "สมุดที่อยู่ของไมโครซอฟท์เอาท์ลุค"
+
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "สมุดที่อยู่ของไมโครซอฟท์วินโดว์ส"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "สมุดที่อยู่ของ SeaMonkey"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "สมุดที่อยู่ของ Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "สมุดที่อยู่ของ LDAP"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "สมุดที่อยู่ของ SeaMonkey"
+
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "สมุดที่อยู่ของ Thunderbird"
+
+#~ msgid "LDAP Address Book"
+#~ msgstr "สมุดที่อยู่ของ LDAP"

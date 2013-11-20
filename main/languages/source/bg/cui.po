@@ -6207,6 +6207,36 @@ msgstr "Нови думи с две начални главни букви"
 msgid "Delete words with two initial capitals"
 msgstr "Изтриване на думи с две начални главни букви"
 
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
+msgid "Single quotes default"
+msgstr "Подразбирани единични кавички"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
+msgid "Double quotes default"
+msgstr "Подразбирани двойни кавички"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of single quotes"
+msgstr "Отваряща единична кавичка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
+msgid "Start quote of double quotes"
+msgstr "Отваряща двойна кавичка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of single quotes"
+msgstr "Затваряща единична кавичка"
+
+#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
+msgid "End quote of double quotes"
+msgstr "Затваряща двойна кавичка"
+
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
 #, fuzzy
 msgid "Localized Options"
@@ -6294,36 +6324,6 @@ msgstr "Затваряща кавичка"
 #, fuzzy
 msgid "Default"
 msgstr "По подразбиране"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
-#, fuzzy
-msgid "Single quotes default"
-msgstr "Подразбирани единични кавички"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
-#, fuzzy
-msgid "Double quotes default"
-msgstr "Подразбирани двойни кавички"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of single quotes"
-msgstr "Отваряща единична кавичка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
-#, fuzzy
-msgid "Start quote of double quotes"
-msgstr "Отваряща двойна кавичка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of single quotes"
-msgstr "Затваряща единична кавичка"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
-#, fuzzy
-msgid "End quote of double quotes"
-msgstr "Затваряща двойна кавичка"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -9858,6 +9858,11 @@ msgstr "Свойства"
 msgid "Pattern Editor"
 msgstr "Редактор на шарки"
 
+#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.CTL_PIXEL.CONTROL.TEXT
+#, fuzzy
+msgid "Pattern Editor"
+msgstr "Редактор на шарки"
+
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid "~Foreground color"
@@ -10031,6 +10036,14 @@ msgstr "~Цвят"
 #, fuzzy
 msgid "Color table"
 msgstr "Таблица с цветове"
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_OLD.CONTROL.TEXT
+msgid "Old Color"
+msgstr ""
+
+#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.CTL_PREVIEW_NEW.CONTROL.TEXT
+msgid "New Color"
+msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.DEFAULT.STRINGLIST.ITEM
 #, fuzzy

@@ -32,6 +32,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+#: readme.xrm#TITLE
+msgid "${PRODUCTNAME} Readme File"
+msgstr ""
+
 #: readme.xrm#WELCOME
 msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr ""
@@ -480,7 +484,11 @@ msgstr ""
 msgid "The Apache OpenOffice Community"
 msgstr "OpenOffice.org  വിഭാഗം"
 
-#: readme.xrm#SDFFD23R3CEFWEFEW
+#: readme.xrm#MODIFIEDSOURCECODEHEADING
 #, fuzzy
 msgid "Used / Modified Source Code"
 msgstr "ഉപയോഗിച്ച/ പരിഷ്കരിച്ച ഉറവിട കോഡ്"
+
+#: readme.xrm#MODIFIEDSOURCECODEPARA
+msgid "For detailed information about used and/or modified source code, see the NOTICE file which is part of the installation."
+msgstr ""

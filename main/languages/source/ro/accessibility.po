@@ -23,19 +23,62 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-11-01 08:58+0000\n"
+"Last-Translator: Ioana Elena <tisca_ioana@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1383296332.0\n"
 
 #: helper/accessiblestrings.src#RID_STR_ACC_NAME_BROWSEBUTTON.STRING.TEXT
 msgid "Browse"
 msgstr "Răsfoiește"
 
+#: helper/accessiblestrings.src#STR_SVT_ACC_ACTION_EXPAND.STRING.TEXT
+msgid "Expand"
+msgstr ""
+
+#: helper/accessiblestrings.src#STR_SVT_ACC_ACTION_COLLAPSE.STRING.TEXT
+msgid "Collapse"
+msgstr ""
+
+#: helper/accessiblestrings.src#STR_SVT_ACC_LISTENTRY_SELCTED_STATE.STRING.TEXT
+msgid "(Selected)"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_NAME_PREVIEW.STRING.TEXT
+msgid "Preview"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_ACTION_CHECK.STRING.TEXT
+msgid "Check"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_ACTION_UNCHECK.STRING.TEXT
+msgid "Uncheck"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_ACTION_DOUBLE_CLICK.STRING.TEXT
+msgid "Double click"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_SCROLLBAR_NAME_VERTICAL.STRING.TEXT
+msgid "Vertical scroll bar"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_SCROLLBAR_NAME_HORIZONTAL.STRING.TEXT
+msgid "Horizontal scroll bar"
+msgstr ""
+
+#: helper/accessiblestrings.src#RID_STR_ACC_PANEL_DESCRIPTION.STRING.TEXT
+msgid "Please press enter to go into child control for more operations"
+msgstr ""
+
 #: helper/accessiblestrings.src#RID_STR_ACC_DESC_PANELDECL_TABBAR.STRING.TEXT
 msgid "Panel Deck Tab Bar"
-msgstr ""
+msgstr "Bara panou fila"

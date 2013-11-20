@@ -107,8 +107,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "इस डेटाबेस ड्राइवर के साथ कथन प्रकार समर्थित नहीं।"
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "एक अनजान त्रुटि आई।"
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -119,12 +119,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "'$libname$' लेखागार अभिभारित नहीं किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "मौजूदा पंक्ति ताज़ा करने के दौरान एक त्रुटि आई।"
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "मौजूदा पंक्ति पाने के दौरान एक त्रुटि आई।"
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -141,8 +141,8 @@ msgstr ""
 "ही प्रयोग किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "अवैध संकेतक गति उत्पन्न हुई।"
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -351,10 +351,8 @@ msgstr ""
 "यह संयोजन नहीं बनाई जा सकी। संभवतः जरुरी आकड़ा प्रदाता संस्थापित नहीं है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr ""
-"यह सूची मिटाई नहीं जा सकी। फ़ाइल तंत्र की पहुँच लेने के दौरान एक अनजान "
-"त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -606,12 +604,12 @@ msgstr ""
 "फ़ाइल के स्थान को जाँचें।"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-msgid "An error occured while obtaining the connection's table container."
-msgstr "एक त्रुटि आई जब संयोजन के सारणी कंटेनर को पाया जा रहा था।"
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-msgid "An error occured while creating the table editor dialog."
-msgstr "सारणी संपादक संवाद बनाने के दौरान एक त्रुटि आई।"
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid "There is no table named '$tablename$'."
@@ -674,44 +672,6 @@ msgstr "माइएसक्यूएल (ओडीबीसी)"
 msgid "MySQL (Native)"
 msgstr "माइएसक्यूएल (मूल )"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "माइक्रोसॉफ़्ट आउटलुक पता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "माइक्रोसॉफ़्ट विंडोज़ पता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "सीमंकी पता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "थंडरबर्ड पता पुस्तिका"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "एलडीएपी पता पुस्तिका"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-msgid "SeaMonkey Address Book"
-msgstr "सीमंकी पता पुस्तिका"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "थंडरबर्ड पता पुस्तिका"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "एलडीएपी पता पुस्तिका"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -722,12 +682,17 @@ msgstr "एचएसक्यूएल डेटाबेस इंजन"
 msgid "Mac OS X Address Book"
 msgstr "मैक ओएस एक्स पता पुस्तिका"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "एवोल्यूशन स्थानीय"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "एवोल्यूशन एलडीएपी"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "ग्रूपवाइज"
@@ -767,21 +732,6 @@ msgstr "ओरेकल जेडीबीसी"
 msgid "dBASE"
 msgstr "डीबेस"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "एवोल्यूशन स्थानीय"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "एवोल्यूशन एलडीएपी"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "ग्रूपवाइज"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -796,3 +746,56 @@ msgstr "माइक्रोसॉफ़्ट एक्सेस"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "माइक्रोसॉफ़्ट एक्सेस 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "एक अनजान त्रुटि आई।"
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "मौजूदा पंक्ति ताज़ा करने के दौरान एक त्रुटि आई।"
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "मौजूदा पंक्ति पाने के दौरान एक त्रुटि आई।"
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "अवैध संकेतक गति उत्पन्न हुई।"
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr ""
+#~ "यह सूची मिटाई नहीं जा सकी। फ़ाइल तंत्र की पहुँच लेने के दौरान एक अनजान "
+#~ "त्रुटि आई।"
+
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "एक त्रुटि आई जब संयोजन के सारणी कंटेनर को पाया जा रहा था।"
+
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "सारणी संपादक संवाद बनाने के दौरान एक त्रुटि आई।"
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "माइक्रोसॉफ़्ट आउटलुक पता पुस्तिका"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "माइक्रोसॉफ़्ट विंडोज़ पता पुस्तिका"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "सीमंकी पता पुस्तिका"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "थंडरबर्ड पता पुस्तिका"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "एलडीएपी पता पुस्तिका"
+
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "सीमंकी पता पुस्तिका"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "थंडरबर्ड पता पुस्तिका"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "एलडीएपी पता पुस्तिका"

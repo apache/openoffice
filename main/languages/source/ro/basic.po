@@ -23,14 +23,17 @@ msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: genLang (build process)\n"
+"PO-Revision-Date: 2013-11-01 09:06+0000\n"
+"Last-Translator: Ioana Elena <tisca_ioana@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: genLang\n"
+"X-POOTLE-MTIME: 1383296789.0\n"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "Syntax error."
@@ -538,7 +541,7 @@ msgstr "Prea mulți clienți de aplicații DLL."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "For loop not initialized."
-msgstr "Buclă „for” neinițializată."
+msgstr "Pentru bucla  neinițializată."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "$(ARG1)"
@@ -546,15 +549,16 @@ msgstr ""
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid "The macro running has been interrupted"
-msgstr "Eroare la încărcare bibliotecă '$(ARG1)'"
+msgstr "Macro intrerupt ."
 
 #: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
 msgid "Reference will not be saved: "
-msgstr "Eroare la salvare bibliotecă: '$(ARG1)'"
+msgstr "Referinta nu va fi salvata :"
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid "Error loading library '$(ARG1)'."
-msgstr ""
+msgstr "Referinta nu va fi salvata:~"
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid "Error saving library: '$(ARG1)'."

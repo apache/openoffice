@@ -101,8 +101,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "이 데이터베이스 드라이버에서 지원하지 않는 명령 형식입니다."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-msgid "An unknown error occured."
-msgstr "알 수 없는 오류가 발생했습니다."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid "Could not create a new address book. Mozilla error code is $1$."
@@ -113,12 +113,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "라이브러리 '$libname$' 을(를) 불러올 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-msgid "An error occured while refreshing the current row."
-msgstr "현재 열을 새로 고침하는 도중 오류가 발생하였습니다."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-msgid "An error occured while getting the current row."
-msgstr "현재 열을 가져오는 도중 오류가 발생하였습니다."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid "The row update can not be canceled."
@@ -133,8 +133,8 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "쿼리를 실행할 수 없습니다. 'IS NULL' 은 행 이름으로만 사용될 수 있습니다."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-msgid "Illegal cursor movement occured."
-msgstr "잘못된 커서 이동이 발생되었습니다."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid "Please commit row '$position$' before update rows or insert new rows."
@@ -323,8 +323,8 @@ msgid "The connection could not be created. May be the necessary data provider i
 msgstr "연결이 생성되지 않았습니다. 필요한 데이터 제공자가 설치되어 있는지 확인하십시오."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "인덱스를 삭제할 수 없습니다. 파일 시스템에 접근하는 도중 알 수 없는 오류가 발생하였습니다."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid "The index could not be created. Only one column per index is allowed."
@@ -594,14 +594,12 @@ msgid "The given URL contains no valid local file system path. Please check the 
 msgstr "입력된 URL 에 유효한 로컬 파일 시스템 경로가 없습니다. 데이터베이스 파일의 위치를 확인하십시오."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
-msgstr "연결 테이블 컨테이너를 가져오는 도중 오류가 발생하였습니다."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
-msgstr "테이블 편집기 대화 상자를 생성하던 도중 오류가 발생하였습니다."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -678,46 +676,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "Microsoft Outlook 주소록"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "Microsoft Windows 주소록"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey 주소록"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird 주소록"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP 주소록"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "SeaMonkey 주소록"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "Thunderbird 주소록"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "LDAP 주소록"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -728,12 +686,17 @@ msgstr "HSQL 데이터베이스 엔진"
 msgid "Mac OS X Address Book"
 msgstr "Mac OS X 주소록"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution Local"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -773,21 +736,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution Local"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -802,3 +750,58 @@ msgstr "Microsoft Access"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"
+
+#~ msgid "An unknown error occured."
+#~ msgstr "알 수 없는 오류가 발생했습니다."
+
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "현재 열을 새로 고침하는 도중 오류가 발생하였습니다."
+
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "현재 열을 가져오는 도중 오류가 발생하였습니다."
+
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "잘못된 커서 이동이 발생되었습니다."
+
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr "인덱스를 삭제할 수 없습니다. 파일 시스템에 접근하는 도중 알 수 없는 오류가 발생하였습니다."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "연결 테이블 컨테이너를 가져오는 도중 오류가 발생하였습니다."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "테이블 편집기 대화 상자를 생성하던 도중 오류가 발생하였습니다."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "Microsoft Outlook 주소록"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "Microsoft Windows 주소록"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey 주소록"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird 주소록"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP 주소록"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "SeaMonkey 주소록"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "Thunderbird 주소록"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "LDAP 주소록"

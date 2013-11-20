@@ -1,4422 +1,4551 @@
-#*************************************************************
-#*
-#* Licensed to the Apache Software Foundation (ASF) under one
-#* or more contributor license agreements.  See the NOTICE file
-#* distributed with this work for additional information
-#* regarding copyright ownership.  The ASF licenses this file
-#* to you under the Apache License, Version 2.0 (the
-#* "License"); you may not use this file except in compliance
-#* with the License.  You may obtain a copy of the License at
-#*
-#*   http://www.apache.org/licenses/LICENSE-2.0
-#*
-#* Unless required by applicable law or agreed to in writing,
-#* software distributed under the License is distributed on an
-#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#* KIND, either express or implied.  See the License for the
-#* specific language governing permissions and limitations
-#* under the License.
-#*
-#************************************************************
+# ************************************************************
+# 
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+# 
+#    http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+# 
+# ***********************************************************
 msgid ""
 msgstr ""
 "Project-Id-Version: AOO-4-xx\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: genLang (build process)\n"
 "Language-Team: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
-
 #: euro/euro.src#STEP_ZERO.STRING.TEXT
-msgid  "~Cancel"
+#, fuzzy
+msgid "~Cancel"
 msgstr "إل~غاء الأمر"
 
 #: euro/euro.src#STEP_ZERO___1.STRING.TEXT
-msgid  "~Help"
+#, fuzzy
+msgid "~Help"
 msgstr "~تعليمات"
 
 #: euro/euro.src#STEP_ZERO___2.STRING.TEXT
-msgid  "<<~Back"
+msgid "<<~Back"
 msgstr "<<ال~خلف"
 
 #: euro/euro.src#STEP_ZERO___3.STRING.TEXT
-msgid  "~Convert"
+#, fuzzy
+msgid "~Convert"
 msgstr "~تحويل"
 
 #: euro/euro.src#STEP_ZERO___4.STRING.TEXT
-msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr "ملاحظة: مبالغ العملة المرتبطة بمراجع خارجية ومعاملات تحويل قيم العملة في الصيغ غير قابلة للتحويل."
+msgid "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr ""
+"ملاحظة: مبالغ العملة المرتبطة بمراجع خارجية ومعاملات تحويل قيم العملة في "
+"الصيغ غير قابلة للتحويل."
 
 #: euro/euro.src#STEP_ZERO___5.STRING.TEXT
-msgid  "First, unprotect all sheets."
+msgid "First, unprotect all sheets."
 msgstr "قم أولاً بإلغاء حماية جميع الجداول."
 
 #: euro/euro.src#STEP_ZERO___6.STRING.TEXT
-msgid  "Currencies:"
+msgid "Currencies:"
 msgstr "العملات:"
 
 #: euro/euro.src#STEP_ZERO___7.STRING.TEXT
-msgid  "C~ontinue>>"
+msgid "C~ontinue>>"
 msgstr "ا~ستمرار>>"
 
 #: euro/euro.src#STEP_ZERO___8.STRING.TEXT
-msgid  "C~lose"
+msgid "C~lose"
 msgstr "إ~غلاق"
 
 #: euro/euro.src#STEP_CONVERTER.STRING.TEXT
-msgid  "~Entire document"
+msgid "~Entire document"
 msgstr "~مستند كامل"
 
 #: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
-msgid  "Selection"
+msgid "Selection"
 msgstr "التحديد"
 
 #: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
-msgid  "Cell S~tyles"
+msgid "Cell S~tyles"
 msgstr "أنماط ال~خلايا"
 
 #: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
-msgid  "Currency cells in the current ~sheet"
+msgid "Currency cells in the current ~sheet"
 msgstr "خلايا العملة في ال~ورقة البيانية الحالية"
 
 #: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
-msgid  "Currency cells in the entire ~document"
+msgid "Currency cells in the entire ~document"
 msgstr "خلايا العملة في المستند ~بأكمله"
 
 #: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
-msgid  "~Selected range"
+msgid "~Selected range"
 msgstr "~النطاق المحدد"
 
 #: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
-msgid  "Select Cell Styles"
+msgid "Select Cell Styles"
 msgstr "اختيار أنماط الخلايا"
 
 #: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
-msgid  "Select currency cells"
+msgid "Select currency cells"
 msgstr "اختيار خلايا العملة"
 
 #: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
-msgid  "Currency ranges:"
+msgid "Currency ranges:"
 msgstr "نطاقات العملة:"
 
 #: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
-msgid  "Templates:"
+msgid "Templates:"
 msgstr "قوالب:"
 
 #: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
-msgid  "Extent"
+msgid "Extent"
 msgstr "الامتداد"
 
 #: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
-msgid  "~Single %PRODUCTNAME Calc document"
+msgid "~Single %PRODUCTNAME Calc document"
 msgstr "~مستند %PRODUCTNAME Calc مفرد"
 
 #: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
-msgid  "Complete ~directory"
+msgid "Complete ~directory"
 msgstr "الدليل ~بأكمله"
 
 #: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
-msgid  "Source Document:"
+msgid "Source Document:"
 msgstr "الملف المصدر:"
 
 #: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
-msgid  "Source directory:"
+msgid "Source directory:"
 msgstr "الدليل المصدر:"
 
 #: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
-msgid  "~Including subfolders"
+msgid "~Including subfolders"
 msgstr "~مع المجلدات الفرعية"
 
 #: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
-msgid  "Target directory:"
+msgid "Target directory:"
 msgstr "الدليل الهدف:"
 
 #: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
-msgid  "Temporarily unprotect sheet without query"
+msgid "Temporarily unprotect sheet without query"
 msgstr "إلغاء حماية الجدول مؤقتًا بدون استعلام"
 
 #: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
-msgid  "Also convert fields and tables in text documents"
+msgid "Also convert fields and tables in text documents"
 msgstr "كذلك قم بتحويل الحقول والجداول في المستندات النصية"
 
 #: euro/euro.src#STATUSLINE.STRING.TEXT
-msgid  "Conversion status: "
+msgid "Conversion status: "
 msgstr "وضع عملية التحويل: "
 
 #: euro/euro.src#STATUSLINE___1.STRING.TEXT
-msgid  "Conversion status of the cell templates:"
+msgid "Conversion status of the cell templates:"
 msgstr "وضع عملية تحويل قوالب الخلايا:"
 
 #: euro/euro.src#STATUSLINE___2.STRING.TEXT
-msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgid "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
 msgstr "تسجيل النطاقات المتعلقة: الورقة %1Number%1 of %2TotPageCount%2"
 
 #: euro/euro.src#STATUSLINE___3.STRING.TEXT
-msgid  "Entry of the ranges to be converted..."
+msgid "Entry of the ranges to be converted..."
 msgstr "تسجيل النطاقات المراد تحويلها..."
 
 #: euro/euro.src#STATUSLINE___4.STRING.TEXT
-msgid  "Sheet protection for each sheet will be restored..."
+msgid "Sheet protection for each sheet will be restored..."
 msgstr "إعادة تعيين حماية الجداول سوف تستعاد..."
 
 #: euro/euro.src#STATUSLINE___5.STRING.TEXT
-msgid  "Conversion of the currency units in the cell templates..."
+msgid "Conversion of the currency units in the cell templates..."
 msgstr "تحويل وحدات العملة في قوالب الخلايا..."
 
 #: euro/euro.src#MESSAGES.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "إ~نهاء"
 
 #: euro/euro.src#MESSAGES___1.STRING.TEXT
-msgid  "Select directory"
+msgid "Select directory"
 msgstr "اختيار الدليل"
 
 #: euro/euro.src#MESSAGES___2.STRING.TEXT
-msgid  "Select file"
+msgid "Select file"
 msgstr "اختيار الملف"
 
 #: euro/euro.src#MESSAGES___3.STRING.TEXT
-msgid  "Select target directory"
+msgid "Select target directory"
 msgstr "اختيار الدليل الهدف"
 
 #: euro/euro.src#MESSAGES___4.STRING.TEXT
-msgid  "non-existant"
+msgid "non-existant"
 msgstr "غير موجود"
 
 #: euro/euro.src#MESSAGES___5.STRING.TEXT
-msgid  "Euro Converter"
+msgid "Euro Converter"
 msgstr "محول اليورو"
 
 #: euro/euro.src#MESSAGES___6.STRING.TEXT
-msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgid "Should protected spreadsheets be temporarily unprotected?"
 msgstr "هل تريد إلغاء حماية الجداول مؤقتًا؟"
 
 #: euro/euro.src#MESSAGES___7.STRING.TEXT
-msgid  "Enter the password to unprotect the table %1TableName%1"
+msgid "Enter the password to unprotect the table %1TableName%1"
 msgstr "الرجاء إدخال كلمة المرور الخاصة بإلغاء حماية الجدول %1TableName%1"
 
 #: euro/euro.src#MESSAGES___8.STRING.TEXT
-msgid  "Wrong Password!"
+msgid "Wrong Password!"
 msgstr "كلمة المرور خاطئة!"
 
 #: euro/euro.src#MESSAGES___9.STRING.TEXT
-msgid  "Protected Sheet"
+msgid "Protected Sheet"
 msgstr "مرقة بيانية محمية"
 
 #: euro/euro.src#MESSAGES___10.STRING.TEXT
-msgid  "Warning!"
+msgid "Warning!"
 msgstr "تحذير!"
 
 #: euro/euro.src#MESSAGES___11.STRING.TEXT
-msgid  "Protection for the sheets will not be removed."
+msgid "Protection for the sheets will not be removed."
 msgstr "لن يتم إلغاء حماية الجداول."
 
 #: euro/euro.src#MESSAGES___12.STRING.TEXT
-msgid  "Sheet cannot be unprotected"
+msgid "Sheet cannot be unprotected"
 msgstr "لن يمكن إلغاء حماية الجدول"
 
 #: euro/euro.src#MESSAGES___13.STRING.TEXT
-msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr "لا يستطيع المعالج تحرير هذا المستند حيث إنه لا يمكن تعديل تنسيقات الخلية في المستندات التي تحتوي أوراق بيانية محمية."
+msgid "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr ""
+"لا يستطيع المعالج تحرير هذا المستند حيث إنه لا يمكن تعديل تنسيقات الخلية في "
+"المستندات التي تحتوي أوراق بيانية محمية."
 
 #: euro/euro.src#MESSAGES___14.STRING.TEXT
-msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgid "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
 msgstr "الرجاء ملاحظة أنه بخلاف ذلك لن يتمكن محول اليورو من تحرير المستند!"
 
 #: euro/euro.src#MESSAGES___15.STRING.TEXT
-msgid  "Please choose a currency to be converted first!"
+msgid "Please choose a currency to be converted first!"
 msgstr "الرجاء اختيار العملة المراد تحويلها أولاً!"
 
 #: euro/euro.src#MESSAGES___16.STRING.TEXT
-msgid  "Password:"
+msgid "Password:"
 msgstr "كلمة المرور:"
 
 #: euro/euro.src#MESSAGES___17.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "موافق"
 
 #: euro/euro.src#MESSAGES___18.STRING.TEXT
-msgid  "Cancel"
+#, fuzzy
+msgid "Cancel"
 msgstr "إلغاء الأمر"
 
 #: euro/euro.src#MESSAGES___19.STRING.TEXT
-msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
 msgstr "رجاء اختيار مستند %PRODUCTNAME Calc لتحريره!"
 
 #: euro/euro.src#MESSAGES___20.STRING.TEXT
-msgid  "'<1>' is not a directory!"
+msgid "'<1>' is not a directory!"
 msgstr "'<1>' ليس دليلاً!"
 
 #: euro/euro.src#MESSAGES___21.STRING.TEXT
-msgid  "Document is read-only!"
+msgid "Document is read-only!"
 msgstr "المستند للقراءة فقط!"
 
 #: euro/euro.src#MESSAGES___22.STRING.TEXT
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+#, fuzzy
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "الملف '<1>' موجود بالفعل. <CR>هل تريد الكتابة فوقه؟"
 
 #: euro/euro.src#MESSAGES___23.STRING.TEXT
-msgid  "Do you really want to terminate conversion at this point?"
+#, fuzzy
+msgid "Do you really want to terminate conversion at this point?"
 msgstr "هل حقًا تريد إنهاء عملية التحويل في هذه المرحلة؟"
 
 #: euro/euro.src#MESSAGES___24.STRING.TEXT
-msgid  "Cancel Wizard"
+#, fuzzy
+msgid "Cancel Wizard"
 msgstr "إلغاء المعالج"
 
 #: euro/euro.src#CURRENCIES.STRING.TEXT
-msgid  "Portuguese Escudo"
+msgid "Portuguese Escudo"
 msgstr "أسكود برتغالي"
 
 #: euro/euro.src#CURRENCIES___1.STRING.TEXT
-msgid  "Dutch Guilder"
+msgid "Dutch Guilder"
 msgstr "جيلدر هولندي"
 
 #: euro/euro.src#CURRENCIES___2.STRING.TEXT
-msgid  "French Franc"
+msgid "French Franc"
 msgstr "فرنك فرنسي"
 
 #: euro/euro.src#CURRENCIES___3.STRING.TEXT
-msgid  "Spanish Peseta"
+msgid "Spanish Peseta"
 msgstr "بيزيتا إسبانية"
 
 #: euro/euro.src#CURRENCIES___4.STRING.TEXT
-msgid  "Italian Lira"
+msgid "Italian Lira"
 msgstr "ليرة إيطالية"
 
 #: euro/euro.src#CURRENCIES___5.STRING.TEXT
-msgid  "German Mark"
+msgid "German Mark"
 msgstr "مارك ألماني"
 
 #: euro/euro.src#CURRENCIES___6.STRING.TEXT
-msgid  "Belgian Franc"
+msgid "Belgian Franc"
 msgstr "فرنك بلجيكي"
 
 #: euro/euro.src#CURRENCIES___7.STRING.TEXT
-msgid  "Irish Punt"
+msgid "Irish Punt"
 msgstr "جنيه إيرلندي"
 
 #: euro/euro.src#CURRENCIES___8.STRING.TEXT
-msgid  "Luxembourg Franc"
+msgid "Luxembourg Franc"
 msgstr "فرنك لوكسمبورجي"
 
 #: euro/euro.src#CURRENCIES___9.STRING.TEXT
-msgid  "Austrian Schilling"
+msgid "Austrian Schilling"
 msgstr "شلن نمساوٍ"
 
 #: euro/euro.src#CURRENCIES___10.STRING.TEXT
-msgid  "Finnish Mark"
+msgid "Finnish Mark"
 msgstr "مارك فنلندي"
 
 #: euro/euro.src#CURRENCIES___11.STRING.TEXT
-msgid  "Greek Drachma"
+msgid "Greek Drachma"
 msgstr "دراخما يونانية"
 
 #: euro/euro.src#CURRENCIES___12.STRING.TEXT
-msgid  "Slovenian Tolar"
+msgid "Slovenian Tolar"
 msgstr "العملة السلوفينيّة"
 
 #: euro/euro.src#CURRENCIES___13.STRING.TEXT
-msgid  "Cypriot Pound"
+msgid "Cypriot Pound"
 msgstr "جنيه قبرصي"
 
 #: euro/euro.src#CURRENCIES___14.STRING.TEXT
-msgid  "Maltese Lira"
+msgid "Maltese Lira"
 msgstr "ليرة مالطية"
 
 #: euro/euro.src#CURRENCIES___15.STRING.TEXT
-msgid  "Slovak Koruna"
+msgid "Slovak Koruna"
 msgstr "كورونا سلوفاكية"
 
 #: euro/euro.src#CURRENCIES___16.STRING.TEXT
-msgid  "The currency set for the document is not a European currency!"
+msgid "The currency set for the document is not a European currency!"
 msgstr "العملة المعيّنة لهذا المستند ليست عملة أوروبية!"
 
 #: euro/euro.src#CURRENCIES___17.STRING.TEXT
-msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr "اللغة التي تم تعيينها لنظام التشغيل الخاص بك ليست من لغات دول الاتحاد المالي الأوروبي."
+msgid "The language set for your operating system is not a language of the European Monetary Union."
+msgstr ""
+"اللغة التي تم تعيينها لنظام التشغيل الخاص بك ليست من لغات دول الاتحاد المالي "
+"الأوروبي."
 
 #: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
-msgid  "Progress"
+#, fuzzy
+msgid "Progress"
 msgstr "التقدم"
 
 #: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
-msgid  "Retrieving the relevant documents..."
+msgid "Retrieving the relevant documents..."
 msgstr "تسجيل المستندات وثيقة الصلة..."
 
 #: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
-msgid  "Converting the documents..."
+msgid "Converting the documents..."
 msgstr "تحويل المستندات..."
 
 #: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
-msgid  "Settings:"
+msgid "Settings:"
 msgstr "الإعدادات:"
 
 #: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
-msgid  "Sheet is always unprotected"
+msgid "Sheet is always unprotected"
 msgstr "الورقة البيانية دائمًا غير محمية"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
-msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr "تعذر إنشاء الدليل '%1'.<BR>يحتمل عدم وجود مساحة كافية على القرص الثابت لديك."
+msgid "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr ""
+"تعذر إنشاء الدليل '%1'.<BR>يحتمل عدم وجود مساحة كافية على القرص الثابت لديك."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
-msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr "تعذر إنشاء الملف النصّي.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Writer' مثبّتة."
+msgid "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr ""
+"تعذر إنشاء الملف النصّي.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Writer' "
+"مثبّتة."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
-msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr "تعذر إنشاء الجدول البياني.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Calc' مثبّتة."
+msgid "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr ""
+"تعذر إنشاء الجدول البياني.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Calc' "
+"مثبّتة."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
-msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr "تعذر إنشاء العرض التقديمي.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Impress' مثبتة."
+msgid "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr ""
+"تعذر إنشاء العرض التقديمي.<BR>رجاء التحقق أن الوحدة 'PRODUCTNAME Impress' "
+"مثبتة."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
-msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgid "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
 msgstr "تعذر إنشاء الرسم.<BR>رجاء التحقق من أن الوحدة 'PRODUCTNAME Draw' مثبتة."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
-msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgid "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
 msgstr "تعذر إنشاء الصيغة.<BR>رجاء تحقّق من أن الوحدة 'PRODUCTNAME Math' مثبتة."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
-msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr "تعذر العثور على الملفات المطلوبة.<BR>رجاء بدء إعداد %PRODUCTNAME واختيار \"إصلاح\"."
+msgid "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr ""
+"تعذر العثور على الملفات المطلوبة.<BR>رجاء بدء إعداد %PRODUCTNAME واختيار "
+"\"إصلاح\"."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
-msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgid "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
 msgstr "الملف '<PATH>' موجود بالفعل.<BR><BR>هل تريد استبدال الملف الموجود؟"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
-msgid  "Yes"
+msgid "Yes"
 msgstr "نعم"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
-msgid  "Yes to All"
+msgid "Yes to All"
 msgstr "نعم للكل"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
-msgid  "No"
+msgid "No"
 msgstr "لا"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
-msgid  "Cancel"
+#, fuzzy
+msgid "Cancel"
 msgstr "إلغاء الأمر"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
-msgid  "~Finish"
+msgid "~Finish"
 msgstr "إ~نهاء"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
-msgid  "< ~Back"
+msgid "< ~Back"
 msgstr "< ~السابق"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
-msgid  "~Next >"
+msgid "~Next >"
 msgstr "ال~تالي >"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
-msgid  "~Help"
-msgstr "ت~عليمات"
+#, fuzzy
+msgid "~Help"
+msgstr "~تعليمات"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
-msgid  "Steps"
+msgid "Steps"
 msgstr "الخطوات"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
-msgid  "Close"
+msgid "Close"
 msgstr "إغلاق"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
-msgid  "OK"
+msgid "OK"
 msgstr "موافق"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
-msgid  "The file already exists. Do you want to overwrite it?"
+msgid "The file already exists. Do you want to overwrite it?"
 msgstr "الملف موجود بالفعلً. هل تريد الكتابة عليه؟"
 
 #: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
-msgid  "Template created via <wizard_name> on <current_date>."
+msgid "Template created via <wizard_name> on <current_date>."
 msgstr "أنشئ القالب عبر <wizard_name> في <current_date>."
 
 #: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "تعذر تشغيل المعالج، لعدم العثور على ملفات ضرورية.\nمن 'أدوات - خيارات - %PRODUCTNAME - المسارات' اضغط الزر 'افتراضي' لإعادة تعيين المسارات إلى الإعدادات الأصلية. \nثم قم بتشغيل المعالج مجددًا."
+msgid "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr ""
+"تعذر تشغيل المعالج، لعدم العثور على ملفات ضرورية.\n"
+"من 'أدوات - خيارات - %PRODUCTNAME - المسارات' اضغط الزر 'افتراضي' لإعادة "
+"تعيين المسارات إلى الإعدادات الأصلية. \n"
+"ثم قم بتشغيل المعالج مجددًا."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
-msgid  "C~reate"
+msgid "C~reate"
 msgstr "إ~نشاء"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
-msgid  "~Cancel"
+#, fuzzy
+msgid "~Cancel"
 msgstr "إل~غاء الأمر"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
-msgid  "<< ~Back"
+#, fuzzy
+msgid "<< ~Back"
 msgstr " << الس~ابق"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
-msgid  "~Next >>"
+msgid "~Next >>"
 msgstr "ال~تالي >>"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
-msgid  "~Database"
+msgid "~Database"
 msgstr "~قاعدة البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
-msgid  "~Table name"
+msgid "~Table name"
 msgstr "ا~سم الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
-msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgid "An error occurred while running the wizard. The wizard will be terminated."
 msgstr "حدث خطأ أثناء تشغيل المعالج. سيتم إنهاء المعالج."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
-msgid  "No connection to the database could be established."
+msgid "No connection to the database could be established."
 msgstr "لم يتم إنشاء اتصال بقاعدة البيانات."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___20.STRING.TEXT
-msgid  "~Help"
+#, fuzzy
+msgid "~Help"
 msgstr "~تعليمات"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
-msgid  "~Stop"
+msgid "~Stop"
 msgstr "إ~يقاف"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
-msgid  "The document could not be saved."
+msgid "The document could not be saved."
 msgstr "تعذّر حفظ الملف."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
-msgid  "Exiting the wizard"
+msgid "Exiting the wizard"
 msgstr "الخروج من المعالج"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
-msgid  "Connecting to data source..."
+msgid "Connecting to data source..."
 msgstr "الاتصال بمصدر البيانات..."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
-msgid  "The connection to the data source could not be established."
+msgid "The connection to the data source could not be established."
 msgstr "تعذر إنشاء الاتصال بمصدر البيانات."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
-msgid  "The file path entered is not valid."
+msgid "The file path entered is not valid."
 msgstr "مسار الملف الذي تمه إدخاله غير صالح."
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
-msgid  "Please select a data source"
+msgid "Please select a data source"
 msgstr "رجاء حدّد مصدر البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
-msgid  "Please select a table or query"
+msgid "Please select a table or query"
 msgstr "رجاء حدّد جدول أو استعلام"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
-msgid  "Add field"
+msgid "Add field"
 msgstr "إضافة حقل"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
-msgid  "Remove field"
+msgid "Remove field"
 msgstr "إزالة حقل"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
-msgid  "Add all fields"
+msgid "Add all fields"
 msgstr "اضف كل الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
-msgid  "Remove all fields"
+msgid "Remove all fields"
 msgstr "إزالة كل الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
-msgid  "Move field up"
+msgid "Move field up"
 msgstr "نقل الحقل للأعلى"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
-msgid  "Move field down"
+msgid "Move field down"
 msgstr "نقل الحقل للأسفل"
 
 #: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
-msgid  "The field names from '%NAME' could not be retrieved."
+msgid "The field names from '%NAME' could not be retrieved."
 msgstr "تعذّر الحصول على أسماء الحقول من '%NAME'."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
-msgid  "Form Wizard"
+msgid "Form Wizard"
 msgstr "معالج النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
-msgid  "Fields in ~the form"
+msgid "Fields in ~the form"
 msgstr "ال~حقول في النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "تكون الحقول الثنائية دائمًا مسردة وقابلة للاختيار من القائمة على اليسار.\nإذا كان ممكنًا، فإنها تعرب كالصور."
+msgid "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr ""
+"تكون الحقول الثنائية دائمًا مسردة وقابلة للاختيار من القائمة على اليسار.\n"
+"إذا كان ممكنًا، فإنها تعرب كالصور."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "النموذج الفرعي هو نموذج مدرج داخل نموذج آخر.\nتستخدم النماذج الفرعية لإظهار البيانات من الجداول أو الاستعلامات التي ترتبط بعلاقة واحد إلى متعدد."
+msgid "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
+"النموذج الفرعي هو نموذج مدرج داخل نموذج آخر.\n"
+"تستخدم النماذج الفرعية لإظهار البيانات من الجداول أو الاستعلامات التي ترتبط "
+"بعلاقة واحد إلى متعدد."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
-msgid  "~Add Subform"
+msgid "~Add Subform"
 msgstr "إ~ضافة نموذج فرعي"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
-msgid  "~Subform based on existing relation"
+msgid "~Subform based on existing relation"
 msgstr "الن~موذج الفرعي مبني على العلاقة الموجودة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
-msgid  "Tables or queries"
+msgid "Tables or queries"
 msgstr "جداول أو استعلامات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
-msgid  "Subform based on ~manual selection of fields"
+msgid "Subform based on ~manual selection of fields"
 msgstr "النموذج الفرعي ~مبني على الاختيار اليدوي للحقول"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
-msgid  "~Which relation do you want to add?"
+msgid "~Which relation do you want to add?"
 msgstr "أ~ي العلاقات تريد أن تضيف؟"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
-msgid  "Fields in the ~subform"
+msgid "Fields in the ~subform"
 msgstr "حقول النموذج ال~فرعية"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
-msgid  "~Available fields"
+msgid "~Available fields"
 msgstr "الحقول المت~وفرة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
-msgid  "Fields in form"
+msgid "Fields in form"
 msgstr "حقول النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "الرابط '<FIELDNAME1>' و'<FIELDNAME2>' تم اختره مرتين.\nإلا أن الروابط يمكن اخترها مرة واحدة فقط."
+msgid "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr ""
+"الرابط '<FIELDNAME1>' و'<FIELDNAME2>' تم اختره مرتين.\n"
+"إلا أن الروابط يمكن اخترها مرة واحدة فقط."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
-msgid  "~First joined subform field"
+msgid "~First joined subform field"
 msgstr "~حقل النموذج المرتبط الأول"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
-msgid  "~Second joined subform field"
+msgid "~Second joined subform field"
 msgstr "ح~قل النموذج المرتبط الثاني"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
-msgid  "~Third joined subform field"
+msgid "~Third joined subform field"
 msgstr "حق~ل النموذج المرتبط الثالث"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
-msgid  "~Fourth joined subform field"
+msgid "~Fourth joined subform field"
 msgstr "حقل الا~ستمارة المرتبط الرابع"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
-msgid  "F~irst joined main form field"
+msgid "F~irst joined main form field"
 msgstr "حقل النموذج ال~رئيسي المرتبط الأول"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
-msgid  "S~econd joined main form field"
+msgid "S~econd joined main form field"
 msgstr "حقل النموذج الرئ~يسي المرتبط الثاني"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
-msgid  "T~hird joined main form field"
+msgid "T~hird joined main form field"
 msgstr "حقل النموذج الرئي~سي المرتبط الثالث"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
-msgid  "F~ourth joined main form field"
+msgid "F~ourth joined main form field"
 msgstr "حقل الاست~مارة الرئيسي المرتبط الرابع"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
-msgid  "Field border"
+msgid "Field border"
 msgstr "حدود الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
-msgid  "No border"
+msgid "No border"
 msgstr "بدون حدود"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
-msgid  "3D look"
+msgid "3D look"
 msgstr "مظهر ثلاثي الأبعاد"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
-msgid  "Flat"
+msgid "Flat"
 msgstr "مسطح"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
-msgid  "Label placement"
+msgid "Label placement"
 msgstr "تعيين مكان التسمية"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
-msgid  "Align left"
+msgid "Align left"
 msgstr "محاذاة لليسار"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
-msgid  "Align right"
+msgid "Align right"
 msgstr "محاذاة لليمين"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
-msgid  "Arrangement of DB fields"
+msgid "Arrangement of DB fields"
 msgstr "تنظيم حقول قاعدة البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
-msgid  "Columnar - Labels Left"
+msgid "Columnar - Labels Left"
 msgstr "في أعمدة - تسميات لليسار"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
-msgid  "Columnar - Labels on Top"
+msgid "Columnar - Labels on Top"
 msgstr "في أعمدة - تسميات في الأعلى"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
-msgid  "In Blocks - Labels Left"
+msgid "In Blocks - Labels Left"
 msgstr "في كتل - تسميات لليسار"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
-msgid  "In Blocks - Labels Above"
+msgid "In Blocks - Labels Above"
 msgstr "في كتل - تسميات للأعلى"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
-msgid  "As Data Sheet"
+msgid "As Data Sheet"
 msgstr "كجدول بيانات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
-msgid  "Arrangement of the main form"
+msgid "Arrangement of the main form"
 msgstr "تنظيم النموذج الرئيسية"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
-msgid  "Arrangement of the subform"
+msgid "Arrangement of the subform"
 msgstr "تنظيم النموذج الفرعية"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
-msgid  "The form is to be ~used for entering new data only."
+msgid "The form is to be ~used for entering new data only."
 msgstr "ا~ستخدام النموذج لإدخال البيانات الجديدة فقط."
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
-msgid  "Existing data will not be displayed "
+msgid "Existing data will not be displayed "
 msgstr "لن تعرض البيانات الموجودة "
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
-msgid  "T~he form is to display all data"
+msgid "T~he form is to display all data"
 msgstr "تظ~هر النموذج كل البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
-msgid  "Do not allow ~modification of existing data"
+msgid "Do not allow ~modification of existing data"
 msgstr "~عدم السماح بتعديل البيانات الموجودة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
-msgid  "Do not allow ~deletion of existing data"
+msgid "Do not allow ~deletion of existing data"
 msgstr "عد~م السماح بحذف البيانات الموجودة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
-msgid  "Do not allow ~addition of new data"
+msgid "Do not allow ~addition of new data"
 msgstr "عدم السماح بإضا~فة بيانات جديدة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
-msgid  "Name of ~the form"
+msgid "Name of ~the form"
 msgstr "ا~سم النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
-msgid  "How do you want to proceed after creating the form?"
+msgid "How do you want to proceed after creating the form?"
 msgstr "ما المطلوب القيام به بعد إنشاء النموذج؟"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
-msgid  "~Work with the form"
+msgid "~Work with the form"
 msgstr "العمل باستخدام الا~ستمارة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
-msgid  "~Modify the form"
+msgid "~Modify the form"
 msgstr "تعد~يل النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
-msgid  "~Page Styles"
+msgid "~Page Styles"
 msgstr "أ~نماط الصفحات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
-msgid  "Field selection"
+#, fuzzy
+msgid "Field selection"
 msgstr "تحديد الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
-msgid  "Set up a subform"
+msgid "Set up a subform"
 msgstr "إعداد نموذج فرعي"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
-msgid  "Add subform fields"
+msgid "Add subform fields"
 msgstr "إضافة حقول للنموذج الفرعي"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
-msgid  "Get joined fields"
+msgid "Get joined fields"
 msgstr "جلب الحقول المرتبطة"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
-msgid  "Arrange controls"
+msgid "Arrange controls"
 msgstr "تنظيم عناصر التحكم"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
-msgid  "Set data entry"
+msgid "Set data entry"
 msgstr "وَضْع إدخال البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
-msgid  "Apply styles"
+msgid "Apply styles"
 msgstr "تطبيق أنماط"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
-msgid  "Set name"
+msgid "Set name"
 msgstr "وضع اسم"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
-msgid  "(Date)"
+msgid "(Date)"
 msgstr "(التاريخ)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
-msgid  "(Time)"
+msgid "(Time)"
 msgstr " (الوقت)"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
-msgid  "Select the fields of your form"
+msgid "Select the fields of your form"
 msgstr "اختر الحقول لاستمارتك"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
-msgid  "Decide if you want to set up a subform"
+msgid "Decide if you want to set up a subform"
 msgstr "الحَسْم في إعداد نموذج فرعي"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
-msgid  "Select the fields of your subform"
+msgid "Select the fields of your subform"
 msgstr "اختر الحقول لاستمارتك الفرعية"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
-msgid  "Select the joins between your forms"
+msgid "Select the joins between your forms"
 msgstr "اختر الروابط بين نماذجك"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
-msgid  "Arrange the controls on your form"
+msgid "Arrange the controls on your form"
 msgstr "تنظيم عناصر التحكم في استمارتك"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
-msgid  "Select the data entry mode"
+msgid "Select the data entry mode"
 msgstr "حدّد وضع إدخال البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
-msgid  "Apply the style of your form"
+msgid "Apply the style of your form"
 msgstr "تطبيق نمط استمارتك"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
-msgid  "Set the name of the form"
+msgid "Set the name of the form"
 msgstr "حدّد اسم النموذج"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "الإستمارة بالاسم '%FORMNAME' موجودة بالفعل.\nاختر اسما أخرا؟"
+msgid "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr ""
+"الإستمارة بالاسم '%FORMNAME' موجودة بالفعل.\n"
+"اختر اسما أخرا؟"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
-msgid  "Query Wizard"
+msgid "Query Wizard"
 msgstr "معالج الاستعلامات"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
-msgid  "Query"
+msgid "Query"
 msgstr "الاستعلام"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___2.STRING.TEXT
-msgid  "Query Wizard"
+msgid "Query Wizard"
 msgstr "معالج الاستعلامات"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
-msgid  "~Tables"
+msgid "~Tables"
 msgstr "~جداول"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
-msgid  "A~vailable fields"
+#, fuzzy
+msgid "A~vailable fields"
 msgstr "ال~حقول المتوفرة"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
-msgid  "Name ~of the query"
+msgid "Name ~of the query"
 msgstr "اسم الاس~تعلام"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
-msgid  "Display ~Query"
+msgid "Display ~Query"
 msgstr "~عرض الاستعلام "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
-msgid  "~Modify Query"
+msgid "~Modify Query"
 msgstr "ت~عديل الاستعلام"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
-msgid  "~How do you want to proceed after creating the query?"
+msgid "~How do you want to proceed after creating the query?"
 msgstr "~ما المطلوب عمله بعد إنشاء الاستعلام؟"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
-msgid  "Match ~all of the following"
+msgid "Match ~all of the following"
 msgstr "~مطابقة كل التالي"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
-msgid  "~Match any of the following"
+msgid "~Match any of the following"
 msgstr "م~طابقة أي مما يلي"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
-msgid  "~Detailed query (Shows all records of the query.)"
+msgid "~Detailed query (Shows all records of the query.)"
 msgstr "استعلام تفصيلي (إظهار كل سجلات الاستعلام)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
-msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgid "~Summary query (Shows only results of aggregate functions.)"
 msgstr "استعلام تلخيصي (إظهار نتائج دوال المجاميع فقط)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
-msgid  "Aggregate functions"
+msgid "Aggregate functions"
 msgstr "دوال المجاميع"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
-msgid  "Fields"
+#, fuzzy
+msgid "Fields"
 msgstr "الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
-msgid  "~Group by"
+msgid "~Group by"
 msgstr "تجميع ~حسب"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
 #, fuzzy
-msgid  "Field"
+msgid "Field"
 msgstr "الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
 #, fuzzy
-msgid  "Alias"
+msgid "Alias"
 msgstr "الاسم المستعار"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
 #, fuzzy
-msgid  "Table: "
+msgid "Table: "
 msgstr "جدول: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
 #, fuzzy
-msgid  "Query: "
+msgid "Query: "
 msgstr "استعلام: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
 #, fuzzy
-msgid  "Condition"
+msgid "Condition"
 msgstr "الشرط"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
 #, fuzzy
-msgid  "Value"
+msgid "Value"
 msgstr "القيمة"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
 #, fuzzy
-msgid  "is equal to"
+msgid "is equal to"
 msgstr "تساوي"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
 #, fuzzy
-msgid  "is not equal to"
+msgid "is not equal to"
 msgstr "لا تساوي"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
 #, fuzzy
-msgid  "is smaller than"
+msgid "is smaller than"
 msgstr "أصغر من"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
 #, fuzzy
-msgid  "is greater than"
+msgid "is greater than"
 msgstr "أكبر من"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
 #, fuzzy
-msgid  "is equal or less than "
+msgid "is equal or less than "
 msgstr "أصغر من أو تساوي "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
 #, fuzzy
-msgid  "is equal or greater than"
+msgid "is equal or greater than"
 msgstr "أكبر من أو تساوي"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
 #, fuzzy
-msgid  "like"
+msgid "like"
 msgstr "مثل"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
 #, fuzzy
-msgid  "not like"
+msgid "not like"
 msgstr "غير مشابه"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
 #, fuzzy
-msgid  "is null"
+msgid "is null"
 msgstr "خالٍ"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
 #, fuzzy
-msgid  "is not null"
+msgid "is not null"
 msgstr "غير خالٍ"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
 #, fuzzy
-msgid  "true"
+msgid "true"
 msgstr "صحيح"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
 #, fuzzy
-msgid  "false"
+msgid "false"
 msgstr "خطأ"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
 #, fuzzy
-msgid  "and"
+msgid "and"
 msgstr "و"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
 #, fuzzy
-msgid  "or"
+msgid "or"
 msgstr "أو"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
 #, fuzzy
-msgid  "get the sum of"
+msgid "get the sum of"
 msgstr "احسب المجموع"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
 #, fuzzy
-msgid  "get the average of"
+msgid "get the average of"
 msgstr "احسب المُعدّل"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
 #, fuzzy
-msgid  "get the minimum of"
+msgid "get the minimum of"
 msgstr "احسب القيمة الأدنى"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
 #, fuzzy
-msgid  "get the maximum of"
+msgid "get the maximum of"
 msgstr "احسب القيمة القصوى"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
 #, fuzzy
-msgid  "get the sum of <FIELD>"
+msgid "get the sum of <FIELD>"
 msgstr "احسب مجموع <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
 #, fuzzy
-msgid  "get the average of <FIELD>"
+msgid "get the average of <FIELD>"
 msgstr "احسب معدل <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
 #, fuzzy
-msgid  "get the minimum of <FIELD>"
+msgid "get the minimum of <FIELD>"
 msgstr "احسب أدنى قيمة للحقل <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
 #, fuzzy
-msgid  "get the maximum of <FIELD>"
+msgid "get the maximum of <FIELD>"
 msgstr "احسب أقصى قيمة للحقل <FIELD>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
 #, fuzzy
-msgid  "(none)"
+msgid "(none)"
 msgstr "(بلا)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
 #, fuzzy
-msgid  "Fie~lds in the Query: "
+msgid "Fie~lds in the Query: "
 msgstr "الح~قول في الاستعلام: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
 #, fuzzy
-msgid  "Sorting order: "
+msgid "Sorting order: "
 msgstr "ترتيب الفرز: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
 #, fuzzy
-msgid  "No sorting fields were assigned."
+msgid "No sorting fields were assigned."
 msgstr "لم تُعيّن أي حقول فرز."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
 #, fuzzy
-msgid  "Search conditions: "
+msgid "Search conditions: "
 msgstr "شروط البحث: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
 #, fuzzy
-msgid  "No conditions were assigned."
+msgid "No conditions were assigned."
 msgstr "لم تُعيّن أية شروط."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
 #, fuzzy
-msgid  "Aggregate functions: "
+msgid "Aggregate functions: "
 msgstr "دوال المجاميع "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
 #, fuzzy
-msgid  "No aggregate functions were assigned."
+msgid "No aggregate functions were assigned."
 msgstr "لم تُعيّن أية دوال مجاميع."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
 #, fuzzy
-msgid  "Grouped by: "
+msgid "Grouped by: "
 msgstr "تجميع بحسب: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
 #, fuzzy
-msgid  "No Groups were assigned."
+msgid "No Groups were assigned."
 msgstr "لم تُعيّن أية مجموعات."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
 #, fuzzy
-msgid  "Grouping conditions: "
+msgid "Grouping conditions: "
 msgstr "شروط التجميع: "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
 #, fuzzy
-msgid  "No grouping conditions were assigned."
+msgid "No grouping conditions were assigned."
 msgstr "لم تُعيّن أية شروط تجميع."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
 #, fuzzy
-msgid  "Select the fields (columns) for your query"
+msgid "Select the fields (columns) for your query"
 msgstr "اختر الحقول (الأعمدة) لاستعلامك"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
 #, fuzzy
-msgid  "Select the sorting order"
+msgid "Select the sorting order"
 msgstr "اختر ترتيب الفرز"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
 #, fuzzy
-msgid  "Select the search conditions"
+msgid "Select the search conditions"
 msgstr "اختر شروط البحث"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
 #, fuzzy
-msgid  "Select the type of query"
+msgid "Select the type of query"
 msgstr "اختر نوع الاستعلام"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
 #, fuzzy
-msgid  "Select the groups"
+msgid "Select the groups"
 msgstr "اختر المجموعات"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
 #, fuzzy
-msgid  "Select the grouping conditions"
+msgid "Select the grouping conditions"
 msgstr "اختر شروط التجميع"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
 #, fuzzy
-msgid  "Assign aliases if desired"
+msgid "Assign aliases if desired"
 msgstr "عيِّن الأسماء المستعارة إن رَغبت"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
 #, fuzzy
-msgid  "Check the overview and decide how to proceed"
+msgid "Check the overview and decide how to proceed"
 msgstr "تحقق من التلخيص وقرِّر كيفية الاستمرار"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___80.STRING.TEXT
 #, fuzzy
-msgid  "Field selection"
+msgid "Field selection"
 msgstr "تحديد الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
 #, fuzzy
-msgid  "Sorting order"
+msgid "Sorting order"
 msgstr "ترتيب الفرز"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
 #, fuzzy
-msgid  "Search conditions"
+msgid "Search conditions"
 msgstr "شروط البحث"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
 #, fuzzy
-msgid  "Detail or summary"
+msgid "Detail or summary"
 msgstr "تفصيل أو تلخيص"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
 #, fuzzy
-msgid  "Grouping"
+msgid "Grouping"
 msgstr "التجميع"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
 #, fuzzy
-msgid  "Grouping conditions"
+msgid "Grouping conditions"
 msgstr "شروط التجميع"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
 #, fuzzy
-msgid  "Aliases"
+msgid "Aliases"
 msgstr "الأسماء المستعارة"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
 #, fuzzy
-msgid  "Overview"
+msgid "Overview"
 msgstr "التلخيص"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
 #, fuzzy
-msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgid "A field that has not been assigned an aggregate function must be used in a group."
 msgstr "الحقل الذي لا تُعيّن له دالة مجموع يجب استخدامه في مجموعة."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
 #, fuzzy
-msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr "الشرط '<FIELDNAME> <LOGICOPERATOR> <VALUE>' تم اختياره مرتين. كل شرط يمكن اختياره مرة واحدة فقط"
+msgid "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr ""
+"الشرط '<FIELDNAME> <LOGICOPERATOR> <VALUE>' تم اختياره مرتين. كل شرط يمكن "
+"اختياره مرة واحدة فقط"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
 #, fuzzy
-msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgid "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
 msgstr "تم تعيين دالة المجموع <FUNCTION> مرتين لاسم الحقل '<NUMERICFIELD>'."
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
 #, fuzzy
-msgid  ", "
+msgid ", "
 msgstr ", "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
 #, fuzzy
-msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgid "<FIELDTITLE> (<FIELDNAME>)"
 msgstr "<FIELDTITLE> (<FIELDNAME>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
 #, fuzzy
-msgid  "<FIELDNAME> (<SORTMODE>)"
+msgid "<FIELDNAME> (<SORTMODE>)"
 msgstr "<FIELDNAME> (<SORTMODE>)"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
 #, fuzzy
-msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 msgstr "اسم الحقل> <عامل تشغيل منطقي> <القيمة>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
 #, fuzzy
-msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
 msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___96.STRING.TEXT
 #, fuzzy
-msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
 msgstr "اسم الحقل> <عامل تشغيل منطقي> <القيمة>"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
 #, fuzzy
-msgid  "Report Wizard"
+msgid "Report Wizard"
 msgstr "معالج التقارير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
 #, fuzzy
-msgid  "~Table"
+msgid "~Table"
 msgstr "الج~دول"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Colu~mns"
+msgid "Colu~mns"
 msgstr "أ~عمدة"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
 #, fuzzy
-msgid  "Report_"
+msgid "Report_"
 msgstr "تقرير_"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
 #, fuzzy
-msgid  "- undefined -"
+msgid "- undefined -"
 msgstr "- غير مُعرّف -"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
 #, fuzzy
-msgid  "~Fields in report"
+msgid "~Fields in report"
 msgstr "ال~حقول في التقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___11.STRING.TEXT
 #, fuzzy
-msgid  "Grouping"
+msgid "Grouping"
 msgstr "التجميع"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
 #, fuzzy
-msgid  "Sort options"
+msgid "Sort options"
 msgstr "خيارات الفرز"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
 #, fuzzy
-msgid  "Choose layout"
+msgid "Choose layout"
 msgstr "اختر المظهر"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
 #, fuzzy
-msgid  "Create report"
+msgid "Create report"
 msgstr "إنشاء تقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
 #, fuzzy
-msgid  "Layout of data"
+msgid "Layout of data"
 msgstr "مظهر البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
 #, fuzzy
-msgid  "Layout of headers and footers"
+msgid "Layout of headers and footers"
 msgstr "مظهر الرؤوس والتذييلات"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___19.STRING.TEXT
 #, fuzzy
-msgid  "Fields"
+msgid "Fields"
 msgstr "الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
 #, fuzzy
-msgid  "~Sort by"
+msgid "~Sort by"
 msgstr "~الفرز بحسب"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
 #, fuzzy
-msgid  "T~hen by"
+msgid "T~hen by"
 msgstr "~ثم حسب"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
 #, fuzzy
-msgid  "Orientation"
+msgid "Orientation"
 msgstr "الاتجاه"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
 #, fuzzy
-msgid  "Portrait"
+msgid "Portrait"
 msgstr "بالطول"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
 #, fuzzy
-msgid  "Landscape"
+msgid "Landscape"
 msgstr "بالعرض"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
 #, fuzzy
-msgid  "Which fields do you want to have in your report?"
+msgid "Which fields do you want to have in your report?"
 msgstr "ما الحقول المطلوبة في التقرير؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to add grouping levels?"
+msgid "Do you want to add grouping levels?"
 msgstr "هل تريد إضافة مستويات تجميع؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
 #, fuzzy
-msgid  "According to which fields do you want to sort the data?"
+msgid "According to which fields do you want to sort the data?"
 msgstr "حسب أي من الحقول تريد فرز البيانات؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
 #, fuzzy
-msgid  "How do you want your report to look?"
+msgid "How do you want your report to look?"
 msgstr "ما مظهر التقرير المطلوب؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
 #, fuzzy
-msgid  "Decide how you want to proceed"
+msgid "Decide how you want to proceed"
 msgstr "قرّر كيف تستمر"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
 #, fuzzy
-msgid  "Title of report"
+msgid "Title of report"
 msgstr "عنوان التقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
 #, fuzzy
-msgid  "Display report"
+msgid "Display report"
 msgstr "إظهار التقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___35.STRING.TEXT
 #, fuzzy
-msgid  "Create report"
+msgid "Create report"
 msgstr "إنشاء تقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
 #, fuzzy
-msgid  "Ascending"
+msgid "Ascending"
 msgstr "تصاعدي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
 #, fuzzy
-msgid  "Descending"
+msgid "Descending"
 msgstr "تنازلي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
 #, fuzzy
-msgid  "~Dynamic report"
+msgid "~Dynamic report"
 msgstr "ت~قرير ديناميكي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
 #, fuzzy
-msgid  "~Create report now"
+msgid "~Create report now"
 msgstr "إن~شاء التقرير الآن"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
 #, fuzzy
-msgid  "~Modify report layout"
+msgid "~Modify report layout"
 msgstr "ت~عديل مظهر التقرير"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
 #, fuzzy
-msgid  "Static report"
+msgid "Static report"
 msgstr "تقرير ساكن"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
 #, fuzzy
-msgid  "Save as"
+msgid "Save as"
 msgstr "حفظ باسم"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
 #, fuzzy
-msgid  "Groupings"
+msgid "Groupings"
 msgstr "التجميعات"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
 #, fuzzy
-msgid  "Then b~y"
+msgid "Then b~y"
 msgstr "ثم ~بحسب"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
 #, fuzzy
-msgid  "~Then by"
+msgid "~Then by"
 msgstr "ثم ب~حسب"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
 #, fuzzy
-msgid  "Asc~ending"
+msgid "Asc~ending"
 msgstr "تص~اعدي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
 #, fuzzy
-msgid  "Ascend~ing"
+msgid "Ascend~ing"
 msgstr "تصا~عدي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
 #, fuzzy
-msgid  "Ascendin~g"
+msgid "Ascendin~g"
 msgstr "تصاعد ~ي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
 #, fuzzy
-msgid  "De~scending"
+msgid "De~scending"
 msgstr "تنا~زلي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
 #, fuzzy
-msgid  "Des~cending"
+msgid "Des~cending"
 msgstr "تن~ازلي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___58.STRING.TEXT
 #, fuzzy
-msgid  "De~scending"
+msgid "De~scending"
 msgstr "تنا~زلي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
 #, fuzzy
-msgid  "Binary fields cannot be displayed in the report."
+msgid "Binary fields cannot be displayed in the report."
 msgstr "الحقول الثنائية لا يمكن عرضها في التقرير."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
 #, fuzzy
-msgid  "The table '<TABLENAME>' does not exist."
+msgid "The table '<TABLENAME>' does not exist."
 msgstr "الجدول '<TABLENAME>' غير موجود."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
 #, fuzzy
-msgid  "Creating Report..."
+msgid "Creating Report..."
 msgstr "إنشاء التقرير..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
 #, fuzzy
-msgid  "Number of records inserted: <COUNT>"
+msgid "Number of records inserted: <COUNT>"
 msgstr "عدد السجلات المُدخلة: <COUNT>"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
 #, fuzzy
-msgid  "The form '<REPORTFORM>' does not exist."
+msgid "The form '<REPORTFORM>' does not exist."
 msgstr "النموذج '<REPORTFORM>' غير موجود."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
 #, fuzzy
-msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr "الاستعلام ذو الجملة<BR>'<STATEMENT>'<BR> لا يمكن تنفيذه.<BR>تحقق من مصدر البيانات."
+msgid "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr ""
+"الاستعلام ذو الجملة<BR>'<STATEMENT>'<BR> لا يمكن تنفيذه.<BR>تحقق من مصدر "
+"البيانات."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
 #, fuzzy
-msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr "عنصر التحكم المخفي التالي في النموذج '<REPORTFORM>' لايمكن قراءته: '<CONTROLNAME>'."
+msgid "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr ""
+"عنصر التحكم المخفي التالي في النموذج '<REPORTFORM>' لايمكن قراءته: "
+"'<CONTROLNAME>'."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
 #, fuzzy
-msgid  "Importing data..."
+msgid "Importing data..."
 msgstr "استيراد البيانات..."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
 #, fuzzy
-msgid  "Labeling fields"
+msgid "Labeling fields"
 msgstr "تسمية الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
 #, fuzzy
-msgid  "How do you want to label the fields?"
+msgid "How do you want to label the fields?"
 msgstr "كيف تريد تسمية الحقول؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
 #, fuzzy
-msgid  "Label"
+msgid "Label"
 msgstr "التسمية"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___71.STRING.TEXT
 #, fuzzy
-msgid  "Field"
+msgid "Field"
 msgstr "الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr "حدث خطأ في المعالج.<BR>فقد يكون مسار القالب '%PATH' خاطئًا.<BR>إما أن المقاطع أو الجداول المطلوبة غير موجودة أو هي موجودة ولكن باسم خطأ.<BR>راجع التعليمات لمزيد من المعلومات المفصلة.<BR>رجاء اختر قالبا آخرا."
+msgid "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr ""
+"حدث خطأ في المعالج.<BR>فقد يكون مسار القالب '%PATH' خاطئًا.<BR>إما أن "
+"المقاطع أو الجداول المطلوبة غير موجودة أو هي موجودة ولكن باسم خطأ.<BR>راجع "
+"التعليمات لمزيد من المعلومات المفصلة.<BR>رجاء اختر قالبا آخرا."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
 #, fuzzy
-msgid  "There is an invalid user field in a table."
+msgid "There is an invalid user field in a table."
 msgstr "هنالك حقل مستخدِم غير صالح في الجدول."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
 #, fuzzy
-msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr "تم اختر معيار الفرز '<FIELDNAME>' مرتين. كل معيار يمكن اختره مرة واحدة فقط."
+msgid "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr ""
+"تم اختر معيار الفرز '<FIELDNAME>' مرتين. كل معيار يمكن اختره مرة واحدة فقط."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
 #, fuzzy
-msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr "ملاحظة: النص غير الحقيقي سيتم استبداله ببيانات من قاعدة البيانات عند إنشاء التقرير."
+msgid "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr ""
+"ملاحظة: النص غير الحقيقي سيتم استبداله ببيانات من قاعدة البيانات عند إنشاء "
+"التقرير."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
 #, fuzzy
-msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr "التقرير '%REPORTNAME' موجود بالفعل في قاعدة البيانات. رجاء تعيين اسم آخر."
+msgid "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr ""
+"التقرير '%REPORTNAME' موجود بالفعل في قاعدة البيانات. رجاء تعيين اسم آخر."
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
 #, fuzzy
-msgid  "How do you want to proceed after creating the report?"
+msgid "How do you want to proceed after creating the report?"
 msgstr "ماذا تريد أن تعمل بعد إنشاء التقرير؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
 #, fuzzy
-msgid  "What kind of report do you want to create?"
+msgid "What kind of report do you want to create?"
 msgstr "ما نوع التقرير المطلوب إنشاءه؟"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
 #, fuzzy
-msgid  "Tabular"
+msgid "Tabular"
 msgstr "جدولي"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
 #, fuzzy
-msgid  "Columnar, single-column"
+msgid "Columnar, single-column"
 msgstr "عمودي، عمود واحد"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
 #, fuzzy
-msgid  "Columnar, two columns"
+msgid "Columnar, two columns"
 msgstr "عمودي، عمودان"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
 #, fuzzy
-msgid  "Columnar, three columns"
+msgid "Columnar, three columns"
 msgstr "عمودي، ثلاثة أعمدة"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
 #, fuzzy
-msgid  "In blocks, labels left"
+msgid "In blocks, labels left"
 msgstr "في كتل - تسميات للأيسر"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
 #, fuzzy
-msgid  "In blocks, labels above"
+msgid "In blocks, labels above"
 msgstr "في كتل - تسميات لأعلى"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
 #, fuzzy
-msgid  "Title:"
+msgid "Title:"
 msgstr "العنوان:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
 #, fuzzy
-msgid  "Author:"
+msgid "Author:"
 msgstr "المؤلف:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
 #, fuzzy
-msgid  "Date:"
+msgid "Date:"
 msgstr "التاريخ:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
 #, fuzzy
-msgid  "Page #page# of #count#"
+msgid "Page #page# of #count#"
 msgstr "الصفحة #page# من #count#"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
 #, fuzzy
-msgid  "Page number:"
+msgid "Page number:"
 msgstr "رقم الصفحة: "
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
 #, fuzzy
-msgid  "Page count:"
+msgid "Page count:"
 msgstr "عدد الصفحات:"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
 #, fuzzy
-msgid  "No valid report template was found."
+msgid "No valid report template was found."
 msgstr "لم يتم العثور على قالب تقرير صالح."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Table Wizard"
+msgid "Table Wizard"
 msgstr "معالج الجداول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Select fields"
+msgid "Select fields"
 msgstr "اختر الحقول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Set types and formats"
+msgid "Set types and formats"
 msgstr "تعيين الأنواع والتناسيق"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Set primary key"
+msgid "Set primary key"
 msgstr "تعيين المفتاح الأساسي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___5.STRING.TEXT
 #, fuzzy
-msgid  "Create table"
+msgid "Create table"
 msgstr "إنشاء جدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
 #, fuzzy
-msgid  "Select fields for your table"
+msgid "Select fields for your table"
 msgstr "اختر حقول الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
 #, fuzzy
-msgid  "Set field types and formats"
+msgid "Set field types and formats"
 msgstr "تعيين أنواع الحقول والتناسيق"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___10.STRING.TEXT
 #, fuzzy
-msgid  "Set primary key"
+msgid "Set primary key"
 msgstr "تعيين المفتاح الأساسي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___11.STRING.TEXT
 #, fuzzy
-msgid  "Create table"
+msgid "Create table"
 msgstr "إنشاء جدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
 #, fuzzy
-msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr "سيساعدك هذا المعالج بإنشاء جدول لقاعدة بياناتك. بعد اختر فئة الجدول وجدول مثال. اختر الحقول التي تريد شملها في جدولك. يمكن شمل الحقول من أكثر من جدول مثال واحد."
+msgid "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr ""
+"سيساعدك هذا المعالج بإنشاء جدول لقاعدة بياناتك. بعد اختر فئة الجدول وجدول "
+"مثال. اختر الحقول التي تريد شملها في جدولك. يمكن شمل الحقول من أكثر من جدول "
+"مثال واحد."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
 #, fuzzy
-msgid  "Ca~tegory"
+msgid "Ca~tegory"
 msgstr "ال~فئة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
 #, fuzzy
-msgid  "B~usiness"
+msgid "B~usiness"
 msgstr "ع~مل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
 #, fuzzy
-msgid  "P~ersonal"
+msgid "P~ersonal"
 msgstr "ش~خصي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
 #, fuzzy
-msgid  "~Sample tables"
+msgid "~Sample tables"
 msgstr "~جداول أمثلة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___19.STRING.TEXT
 #, fuzzy
-msgid  "A~vailable fields"
+msgid "A~vailable fields"
 msgstr "ال~حقول المتوفرة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
 #, fuzzy
-msgid  "Field information"
+msgid "Field information"
 msgstr "معلومات الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
 #, fuzzy
-msgid  "+"
+msgid "+"
 msgstr "+"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
 #, fuzzy
-msgid  "Field name"
+msgid "Field name"
 msgstr "اسم الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
 #, fuzzy
-msgid  "Field type"
+msgid "Field type"
 msgstr "نوع الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
 #, fuzzy
-msgid  "~Selected fields"
+msgid "~Selected fields"
 msgstr "الح~قول المُحدّدة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
 #, fuzzy
-msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr "يُميّز المفتاح الأولي كل سجلّ في جدول قاعدة البيانات. وهو تسهلّ ربط المعلومات في الجداول المنفصلة، ومن المستحسن وجوده في كلّ جدول. بدون مفتاح أوّلي، لكن يكون من الممكن إدخال البيانات في هذا الجدول."
+msgid "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr ""
+"يُميّز المفتاح الأولي كل سجلّ في جدول قاعدة البيانات. وهو تسهلّ ربط "
+"المعلومات في الجداول المنفصلة، ومن المستحسن وجوده في كلّ جدول. بدون مفتاح "
+"أوّلي، لكن يكون من الممكن إدخال البيانات في هذا الجدول."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
 #, fuzzy
-msgid  "~Create a primary key"
+msgid "~Create a primary key"
 msgstr "إ~نشاء مفتاح أوّلي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
 #, fuzzy
-msgid  "~Automatically add a primary key"
+msgid "~Automatically add a primary key"
 msgstr "إ~ضافة مفتاح أوّلي تلقائيًّا"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
 #, fuzzy
-msgid  "~Use an existing field as a primary key"
+msgid "~Use an existing field as a primary key"
 msgstr "ا~ستخدام حقل موجود كمفتاح أوّلي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
 #, fuzzy
-msgid  "Define p~rimary key as a combination of several fields "
+msgid "Define p~rimary key as a combination of several fields "
 msgstr "تعريف ~مفتاح أولي كمجموعة من الحقول "
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
 #, fuzzy
-msgid  "F~ieldname"
+msgid "F~ieldname"
 msgstr "اسم الحق~ل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
 #, fuzzy
-msgid  "~Primary key fields"
+msgid "~Primary key fields"
 msgstr "حقول ال~مفتاح الأوّلي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
 #, fuzzy
-msgid  "Auto ~value"
+msgid "Auto ~value"
 msgstr "قي~مة تلقائيّة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
 #, fuzzy
-msgid  "What do you want to name your table?"
+msgid "What do you want to name your table?"
 msgstr "ماذا تريد تسمية جدولك؟"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
 #, fuzzy
-msgid  "Congratulations. You have entered all the information needed to create your table."
+msgid "Congratulations. You have entered all the information needed to create your table."
 msgstr "تهانينا. لقد أدخلت كل المعلومات المطلوبة لإنشاء الجدول."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 #, fuzzy
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "ما الذي تريد القيام به بعد ذلك؟"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
 #, fuzzy
-msgid  "Modify the table design"
+msgid "Modify the table design"
 msgstr "تعديل تصميم الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
 #, fuzzy
-msgid  "Insert data immediately"
+msgid "Insert data immediately"
 msgstr "إدخال البيانات مباشرة"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
 #, fuzzy
-msgid  "C~reate a form based on this table"
+msgid "C~reate a form based on this table"
 msgstr "إن~شاء نموذج بناء على هذا الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
 #, fuzzy
-msgid  "The table you have created could not be opened."
+msgid "The table you have created could not be opened."
 msgstr "تعذّر فتح الجدول الذي أنشأته."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
 #, fuzzy
-msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "اسم الجدول '%TABLENAME' يحتوي على حرف ('%SPECIALCHAR'(قد لا يكون مدعومًا من قبل قاعدة البيانات."
+msgid "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"اسم الجدول '%TABLENAME' يحتوي على حرف ('%SPECIALCHAR'(قد لا يكون مدعومًا من "
+"قبل قاعدة البيانات."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
 #, fuzzy
-msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr "اسم الحقل '%FIELDNAME' يحتوي على حرف ('%SPECIALCHAR'(قد لا يكون مدعومًا من قبل قاعدة البيانات."
+msgid "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr ""
+"اسم الحقل '%FIELDNAME' يحتوي على حرف ('%SPECIALCHAR'(قد لا يكون مدعومًا من "
+"قبل قاعدة البيانات."
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___43.STRING.TEXT
 #, fuzzy
-msgid  "Field"
+msgid "Field"
 msgstr "الحقل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
 #, fuzzy
-msgid  "MyTable"
+msgid "MyTable"
 msgstr "جدولي"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
 #, fuzzy
-msgid  "Add a Field"
+msgid "Add a Field"
 msgstr "إضافة حقل"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
 #, fuzzy
-msgid  "Remove the selected Field"
+msgid "Remove the selected Field"
 msgstr "إزالة الحقل المحدد"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
 #, fuzzy
-msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr "لا يمكن إدراج الحقل لأن هذا يتخطى العدد الأقصى من %COUNT حقل متاح في قاعدة البيانات"
+msgid "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr ""
+"لا يمكن إدراج الحقل لأن هذا يتخطى العدد الأقصى من %COUNT حقل متاح في قاعدة "
+"البيانات"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
 #, fuzzy
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "الاسم '%TABLENAME' موجود بالفعل.\nرجاء أَدخل اسم آخر. "
+msgid "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr ""
+"الاسم '%TABLENAME' موجود بالفعل.\n"
+"رجاء أَدخل اسم آخر. "
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
 #, fuzzy
-msgid  "Catalog of the table"
+msgid "Catalog of the table"
 msgstr "كتالوج الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
 #, fuzzy
-msgid  "Schema of the table"
+msgid "Schema of the table"
 msgstr "مخطّط الجدول"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
 #, fuzzy
-msgid  "The field '%FIELDNAME' already exists."
+msgid "The field '%FIELDNAME' already exists."
 msgstr "الحقل '%FIELDNAME' موجود بالفعل."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Letter Wizard"
+msgid "Letter Wizard"
 msgstr "معالج الرسائل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Label9"
+msgid "Label9"
 msgstr "تسمية 9"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
 #, fuzzy
-msgid  "~Business letter"
+msgid "~Business letter"
 msgstr "~خطاب عمل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
 #, fuzzy
-msgid  "~Formal personal letter"
+msgid "~Formal personal letter"
 msgstr "خطاب ~شخصي رسمي"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
 #, fuzzy
-msgid  "~Personal letter"
+msgid "~Personal letter"
 msgstr "خ~طاب شخصي"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
 #, fuzzy
-msgid  "~Use letterhead paper with pre-printed elements"
+msgid "~Use letterhead paper with pre-printed elements"
 msgstr "ا~ستخدام ورق letterhead ذي عناصر مطبوعة بالفعل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 #, fuzzy
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "الش~عار"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.STRING.TEXT
 #, fuzzy
-msgid  "Return address"
+msgid "Return address"
 msgstr "عنوان المرسل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
 #, fuzzy
-msgid  "~Include footer"
+msgid "~Include footer"
 msgstr "~شمل التذييل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 #, fuzzy
-msgid  "~Return address in envelope window"
+msgid "~Return address in envelope window"
 msgstr "ع~نوان المرسل في نافذة المغلف"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.STRING.TEXT
 #, fuzzy
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "الش~عار"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.STRING.TEXT
 #, fuzzy
-msgid  "~Return address in envelope window"
+msgid "~Return address in envelope window"
 msgstr "ع~نوان المرسل في نافذة المغلف"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
 #, fuzzy
-msgid  "Letter Signs"
+msgid "Letter Signs"
 msgstr "إشارات الخطاب"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
 #, fuzzy
-msgid  "S~ubject line"
+msgid "S~ubject line"
 msgstr "س~طر الموضوع"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
 #, fuzzy
-msgid  "Salu~tation"
+msgid "Salu~tation"
 msgstr "ال~تحية"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
 #, fuzzy
-msgid  "Fold ~marks"
+msgid "Fold ~marks"
 msgstr "علامات ال~طيّ"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 #, fuzzy
-msgid  "~Complimentary close"
+msgid "~Complimentary close"
 msgstr "~ختام إطرائي"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.STRING.TEXT
 #, fuzzy
-msgid  "~Footer"
+msgid "~Footer"
 msgstr "ت~ذييل الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
 #, fuzzy
-msgid  "~Use user data for return address"
+msgid "~Use user data for return address"
 msgstr "ا~ستخدام بيانات المستخدم لعنوان المرسل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
 #, fuzzy
-msgid  "~New sender address:"
+msgid "~New sender address:"
 msgstr "~عنوان مُرسِل جديد:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
 #, fuzzy
-msgid  "Use placeholders for ~recipient's address"
+msgid "Use placeholders for ~recipient's address"
 msgstr "استخدام العناصر النائبة لعنوان المست~لم"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.STRING.TEXT
 #, fuzzy
-msgid  "Use address database for ~mail merge"
+msgid "Use address database for ~mail merge"
 msgstr "استخدام قاعدة بيانات العناوين ل~دمج البريد"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.STRING.TEXT
 #, fuzzy
-msgid  "Include ~only on second and following pages"
+msgid "Include ~only on second and following pages"
 msgstr "تضمين ف~قط على الصفحتين الثانية والتالية"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.STRING.TEXT
 #, fuzzy
-msgid  "~Include page number"
+msgid "~Include page number"
 msgstr "ت~ضمين رقم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
 #, fuzzy
-msgid  "Letter Template"
+msgid "Letter Template"
 msgstr "قالب خطاب"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
 #, fuzzy
-msgid  "Create a ~letter from this template"
+msgid "Create a ~letter from this template"
 msgstr "إنشاء ~خطاب من هذا القالب"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
 #, fuzzy
-msgid  "Make ~manual changes to this letter template"
+msgid "Make ~manual changes to this letter template"
 msgstr "عمل تعديلات ~يدويّة على قالب الخطاب هذا"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
 #, fuzzy
-msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr "يساعدك هذا المعالج بإنشاء قالب خطاب. يمكنك بعد ذلك استخدامه كأساس لكتابة الخطابات أينما شئت."
+msgid "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr ""
+"يساعدك هذا المعالج بإنشاء قالب خطاب. يمكنك بعد ذلك استخدامه كأساس لكتابة "
+"الخطابات أينما شئت."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
 #, fuzzy
-msgid  "~Height:"
+msgid "~Height:"
 msgstr "الإ~رتفاع:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
 #, fuzzy
-msgid  "~Width:"
+msgid "~Width:"
 msgstr "ال~عرض:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
 #, fuzzy
-msgid  "S~pacing to left margin:"
+msgid "S~pacing to left margin:"
 msgstr "الت~باعد إلى الهامش الأيسر:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.STRING.TEXT
 #, fuzzy
-msgid  "Spacing ~to top margin:"
+msgid "Spacing ~to top margin:"
 msgstr "التب~اعد إلى الهامش العلوي:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.STRING.TEXT
 #, fuzzy
-msgid  "Height:"
+msgid "Height:"
 msgstr "الارتفاع:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
 #, fuzzy
-msgid  "Width:"
+msgid "Width:"
 msgstr "العرض:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.STRING.TEXT
 #, fuzzy
-msgid  "S~pacing to left margin:"
+msgid "S~pacing to left margin:"
 msgstr "الت~باعد إلى الهامش الأيسر:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.STRING.TEXT
 #, fuzzy
-msgid  "Spacing ~to top margin:"
+msgid "Spacing ~to top margin:"
 msgstr "التب~اعد إلى الهامش العلوي:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.STRING.TEXT
 #, fuzzy
-msgid  "Height:"
+msgid "Height:"
 msgstr "الارتفاع:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
 #, fuzzy
-msgid  "Use a typical letter format for this country:"
+msgid "Use a typical letter format for this country:"
 msgstr "استخدم تنسيق خطاب اعتيادي لهذه الدولة:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
 #, fuzzy
-msgid  "Sender's address"
+msgid "Sender's address"
 msgstr "عنوان المُرسِل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 #, fuzzy
-msgid  "Name:"
+msgid "Name:"
 msgstr "الاسم:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.STRING.TEXT
 #, fuzzy
-msgid  "Street:"
+msgid "Street:"
 msgstr "الشارع:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.STRING.TEXT
 #, fuzzy
-msgid  "ZIP code/State/City:"
+msgid "ZIP code/State/City:"
 msgstr "الرمز البريدي/المحافظة/المدينة:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
 #, fuzzy
-msgid  "Recipient's address"
+msgid "Recipient's address"
 msgstr "عنوان المُرسَل إليه"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 #, fuzzy
-msgid  "Footer"
+msgid "Footer"
 msgstr "تذييل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
 #, fuzzy
-msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr "يُنشئ هذا المعالج قالب خطاب يُمكّنك من إنشاء خطابات متعدّدة لها نفس المظهر والإعدادات."
+msgid "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr ""
+"يُنشئ هذا المعالج قالب خطاب يُمكّنك من إنشاء خطابات متعدّدة لها نفس المظهر "
+"والإعدادات."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
 #, fuzzy
-msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr "لإنشاء خطاب جديد آخر من القالب انتقل فقط إلى موقع القالب وقم بالضغط المزدوج عليه."
+msgid "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr ""
+"لإنشاء خطاب جديد آخر من القالب انتقل فقط إلى موقع القالب وقم بالضغط المزدوج "
+"عليه."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 #, fuzzy
-msgid  "Template name:"
+msgid "Template name:"
 msgstr "اسم القالب:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.STRING.TEXT
 #, fuzzy
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "الموقع واسم الملف:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
 #, fuzzy
-msgid  "How do you want to proceed?"
+msgid "How do you want to proceed?"
 msgstr "كيف تريد الإستمرار؟"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
 #, fuzzy
-msgid  "Please choose the type of letter and page design"
+msgid "Please choose the type of letter and page design"
 msgstr "رجاء اختر نوع الخطاب وتصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
 #, fuzzy
-msgid  "Select the items to be printed"
+msgid "Select the items to be printed"
 msgstr "اختر العناصر المطلوب طباعتها"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
 #, fuzzy
-msgid  "Specify items already on your letterhead paper"
+msgid "Specify items already on your letterhead paper"
 msgstr "حدّد العناصر الموجودة بالفعل في ورق الخطابات"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
 #, fuzzy
-msgid  "Specify the sender and recipient information"
+msgid "Specify the sender and recipient information"
 msgstr "حدّد معلومات المُرسل والمُرسَل إليه"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
 #, fuzzy
-msgid  "Fill in the information you would like in the footer"
+msgid "Fill in the information you would like in the footer"
 msgstr "املأ المعلومات المُرادة في التذييل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
 #, fuzzy
-msgid  "Please specify last settings"
+msgid "Please specify last settings"
 msgstr "رجاء حدّد التعيينات الأخيرة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
 #, fuzzy
-msgid  "To Whom it May Concern"
+msgid "To Whom it May Concern"
 msgstr "لمن يهمه الأمر"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Dear Sir or Madam"
+msgid "Dear Sir or Madam"
 msgstr "السيد/السيدة العزيزة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Hello"
+msgid "Hello"
 msgstr "مرحبًا"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Sincerely"
+msgid "Sincerely"
 msgstr "مع تحيات"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Best regards"
+msgid "Best regards"
 msgstr "أطيب التمنيات"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Cheers"
+msgid "Cheers"
 msgstr "ابتهج"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Letterhead layout"
+msgid "Letterhead layout"
 msgstr "مظهر ورق الخطاب"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Printed items"
+msgid "Printed items"
 msgstr "العناصر المطبوعة"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Recipient and sender"
+msgid "Recipient and sender"
 msgstr "المُرسَل إليه والمُرسِل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.STRING.TEXT
 #, fuzzy
-msgid  "Footer"
+msgid "Footer"
 msgstr "تذييل"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 #, fuzzy
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "الاسم والموقع"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Fax Wizard"
+msgid "Fax Wizard"
 msgstr "معالج الفاكس"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Label9"
+msgid "Label9"
 msgstr "تسمية 9"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
 #, fuzzy
-msgid  "~Business Fax"
+msgid "~Business Fax"
 msgstr "~فاكس العمل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
 #, fuzzy
-msgid  "~Personal Fax"
+msgid "~Personal Fax"
 msgstr "فاكس ش~خصي"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___5.STRING.TEXT
 #, fuzzy
-msgid  "~Logo"
+msgid "~Logo"
 msgstr "الش~عار"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___6.STRING.TEXT
 #, fuzzy
-msgid  "S~ubject line"
+msgid "S~ubject line"
 msgstr "س~طر الموضوع"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
 #, fuzzy
-msgid  "S~alutation"
+msgid "S~alutation"
 msgstr "ت~حيّة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___8.STRING.TEXT
 #, fuzzy
-msgid  "~Complimentary close"
+msgid "~Complimentary close"
 msgstr "~ختام إطرائي"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___9.STRING.TEXT
 #, fuzzy
-msgid  "~Footer"
+msgid "~Footer"
 msgstr "ت~ذييل الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___10.STRING.TEXT
 #, fuzzy
-msgid  "~Use user data for return address"
+msgid "~Use user data for return address"
 msgstr "ا~ستخدام بيانات المستخدم لعنوان المرسل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 #, fuzzy
-msgid  "~New return address"
+msgid "~New return address"
 msgstr "عنوان مر~سل جديد"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
 #, fuzzy
-msgid  "My Fax Template"
+msgid "My Fax Template"
 msgstr "قالب الفاكس خاصتي"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
 #, fuzzy
-msgid  "Create a ~fax from this template"
+msgid "Create a ~fax from this template"
 msgstr "إنشاء فا~كس من هذا القالب"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
 #, fuzzy
-msgid  "Make ~manual changes to this fax template"
+msgid "Make ~manual changes to this fax template"
 msgstr "عمل تغييرات ~يدويّة على قالب الفاكس هذا"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___15.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___16.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
 #, fuzzy
-msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr "يساعدك هذا المعالج على إنشاء قالب فاكس. يمكن بعدها استخدام القالب لإنشاء فاكس عند الحاجة."
+msgid "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr ""
+"يساعدك هذا المعالج على إنشاء قالب فاكس. يمكن بعدها استخدام القالب لإنشاء "
+"فاكس عند الحاجة."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___18.STRING.TEXT
 #, fuzzy
-msgid  "Return address"
+msgid "Return address"
 msgstr "عنوان المرسل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___19.STRING.TEXT
 #, fuzzy
-msgid  "Name:"
+msgid "Name:"
 msgstr "الاسم:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___20.STRING.TEXT
 #, fuzzy
-msgid  "Street:"
+msgid "Street:"
 msgstr "الشارع:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___21.STRING.TEXT
 #, fuzzy
-msgid  "ZIP code/State/City:"
+msgid "ZIP code/State/City:"
 msgstr "الرمز البريدي/المحافظة/المدينة:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___22.STRING.TEXT
 #, fuzzy
-msgid  "Footer"
+msgid "Footer"
 msgstr "تذييل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
 #, fuzzy
-msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr "يقوم هذا المعالج بإنشاء قالب فاكس يمكنك من إنشاء عدّة فاكسات لها نفس المظهر والإعدادات."
+msgid "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr ""
+"يقوم هذا المعالج بإنشاء قالب فاكس يمكنك من إنشاء عدّة فاكسات لها نفس المظهر "
+"والإعدادات."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
 #, fuzzy
-msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr "لإنشاء فاكس آخر من القالب نفسه، اذهب إلى المكان الذي حفظت القالب فيه وقم بالضغط المزدوج على الملف."
+msgid "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"لإنشاء فاكس آخر من القالب نفسه، اذهب إلى المكان الذي حفظت القالب فيه وقم "
+"بالضغط المزدوج على الملف."
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
 #, fuzzy
-msgid  "Template Name:"
+msgid "Template Name:"
 msgstr "اسم القالب:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___26.STRING.TEXT
 #, fuzzy
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "الموقع واسم الملف:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___27.STRING.TEXT
 #, fuzzy
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "ما الذي تريد القيام به بعد ذلك؟"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
 #, fuzzy
-msgid  "Choose the type of fax and a page design"
+msgid "Choose the type of fax and a page design"
 msgstr "اختر نوع الفاكس وتصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
 #, fuzzy
-msgid  "Select items to include in the fax template"
+msgid "Select items to include in the fax template"
 msgstr "اختر العناصر لشملها في قالب الفاكس"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
 #, fuzzy
-msgid  "Specify sender and recipient information"
+msgid "Specify sender and recipient information"
 msgstr "حدّد معلومات المُرسِل والمُرسَل إليه"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
 #, fuzzy
-msgid  "Enter text for the footer"
+msgid "Enter text for the footer"
 msgstr "أَدْخِل النص للتذييل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 #, fuzzy
-msgid  "Choose a name and save the template"
+msgid "Choose a name and save the template"
 msgstr "اختر اسمًا واحفظ القالب"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___33.STRING.TEXT
 #, fuzzy
-msgid  "Include ~only on second and following pages"
+msgid "Include ~only on second and following pages"
 msgstr "تضمين ف~قط على الصفحتين الثانية والتالية"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___34.STRING.TEXT
 #, fuzzy
-msgid  "~Include page number"
+msgid "~Include page number"
 msgstr "ت~ضمين رقم الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
 #, fuzzy
-msgid  "~Date"
+msgid "~Date"
 msgstr "ال~تاريخ"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
 #, fuzzy
-msgid  "~Type of message"
+msgid "~Type of message"
 msgstr "~نوع الرسالة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
 #, fuzzy
-msgid  "Fax Number:"
+msgid "Fax Number:"
 msgstr "رقم الفاكس:"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___38.STRING.TEXT
 #, fuzzy
-msgid  "Use placeholders for ~recipient's address"
+msgid "Use placeholders for ~recipient's address"
 msgstr "استخدام العناصر النائبة لعنوان المست~لم"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___39.STRING.TEXT
 #, fuzzy
-msgid  "Use address database for ~mail merge"
+msgid "Use address database for ~mail merge"
 msgstr "استخدام قاعدة بيانات العناوين ل~دمج البريد"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___40.STRING.TEXT
 #, fuzzy
-msgid  "~New return address"
+msgid "~New return address"
 msgstr "عنوان مر~سل جديد"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Important Information!"
+msgid "Important Information!"
 msgstr "معلومات هامة!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
 #, fuzzy
-msgid  "For your information"
+msgid "For your information"
 msgstr "لمعلوماتك"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
 #, fuzzy
-msgid  "News!"
+msgid "News!"
 msgstr "أخبار!"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
 #, fuzzy
-msgid  "To whom it may concern,"
+msgid "To whom it may concern,"
 msgstr "لمن يهمه الأمر،"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Dear Sir or Madam,"
+msgid "Dear Sir or Madam,"
 msgstr "السيّد(ة) المحترم(ة)،"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Hello,"
+msgid "Hello,"
 msgstr "مرحبًا،"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Hi,"
+msgid "Hi,"
 msgstr "تحياتي،"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Sincerely"
+msgid "Sincerely"
 msgstr "مع تحيات"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Yours faithfully"
+msgid "Yours faithfully"
 msgstr "المخلص لك"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Regards"
+msgid "Regards"
 msgstr "مع احترامي"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Love"
+msgid "Love"
 msgstr "المحب"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___1.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
 #, fuzzy
-msgid  "Items to include"
+msgid "Items to include"
 msgstr "العناصر لشملها"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
 #, fuzzy
-msgid  "Sender and Recipient"
+msgid "Sender and Recipient"
 msgstr "المُرسِل والمُرسَل إليه"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Footer"
+msgid "Footer"
 msgstr "تذييل"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___5.STRING.TEXT
 #, fuzzy
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "الاسم والموقع"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
 #, fuzzy
-msgid  "Web Wizard"
+msgid "Web Wizard"
 msgstr "معالج الويب"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
 #, fuzzy
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "يقوم هذا المعالج بإعانتك في نشر مستنداتك إلى الإنترنت.\n\nسوف يقوم بتحويل المستندات بحيث يمكن عرضها بمتصفح الويب. بالإضافة إلى ذلك، سيقوم بتوليد صفحة جدول المحتويات بروابط للوصول السهل إلى المستندات. سيسمح لك المعالج أيضًا بتخصيص تصميم ومظهر موقعك.\n\nستكون قادرًا على إبقاء المستندات التي نشرتها على الويب مُحدّثة وإضافة أو إزالة المستندات في أي وقت."
+msgid "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
+"يقوم هذا المعالج بإعانتك في نشر مستنداتك إلى الإنترنت.\n"
+"\n"
+"سوف يقوم بتحويل المستندات بحيث يمكن عرضها بمتصفح الويب. بالإضافة إلى ذلك، "
+"سيقوم بتوليد صفحة جدول المحتويات بروابط للوصول السهل إلى المستندات. سيسمح لك "
+"المعالج أيضًا بتخصيص تصميم ومظهر موقعك.\n"
+"\n"
+"ستكون قادرًا على إبقاء المستندات التي نشرتها على الويب مُحدّثة وإضافة أو "
+"إزالة المستندات في أي وقت."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "ح~ذف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
 #, fuzzy
-msgid  "Introduction"
+msgid "Introduction"
 msgstr "مقدمة"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
 #, fuzzy
-msgid  "Select the documents you want to publish"
+msgid "Select the documents you want to publish"
 msgstr "اختر المستند بغرض نشره"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
 #, fuzzy
-msgid  "Document information "
+msgid "Document information "
 msgstr "معلومات المستند "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
 #, fuzzy
-msgid  "~Title:"
+msgid "~Title:"
 msgstr "ال~عنوان:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
 #, fuzzy
-msgid  "~Summary: "
+msgid "~Summary: "
 msgstr "ال~مُلخص: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
 #, fuzzy
-msgid  "Au~thor:"
+msgid "Au~thor:"
 msgstr "ال~ناشر:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
 #, fuzzy
-msgid  "~Export to file format:"
+msgid "~Export to file format:"
 msgstr "تصدير إلى ن~سق ملف:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
 #, fuzzy
-msgid  "Enter general information for your web site"
+msgid "Enter general information for your web site"
 msgstr "إدخال معلومات عامة حول الموقع"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__14.STRING.TEXT
 #, fuzzy
-msgid  "Title:"
+msgid "Title:"
 msgstr "العنوان:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
 #, fuzzy
-msgid  "Description:"
+msgid "Description:"
 msgstr "الوصف:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
 #, fuzzy
-msgid  "Created:"
+msgid "Created:"
 msgstr "إنشاء:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
 #, fuzzy
-msgid  "E-mail:"
+msgid "E-mail:"
 msgstr "البريد الإلكتروني:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
 #, fuzzy
-msgid  "Copyright notice:"
+msgid "Copyright notice:"
 msgstr "تنبيه حقوق النسخ:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
 #, fuzzy
-msgid  "Modified:"
+msgid "Modified:"
 msgstr "عُدّل:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
 #, fuzzy
-msgid  "~Preview"
+msgid "~Preview"
 msgstr "~معاينة"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
 #, fuzzy
-msgid  "Where do you want to publish your web site?"
+msgid "Where do you want to publish your web site?"
 msgstr "أين تريد نشر موقعك؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
 #, fuzzy
-msgid  "Publish the new web site:"
+msgid "Publish the new web site:"
 msgstr "نَشر الموقع الجديد:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
 #, fuzzy
-msgid  "To a ~local folder"
+msgid "To a ~local folder"
 msgstr "إلى مجلّد م~حلّي"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
 #, fuzzy
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
 #, fuzzy
-msgid  "To a ~web server via FTP"
+msgid "To a ~web server via FTP"
 msgstr "إلى خادم ~ويب عبر FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
 #, fuzzy
-msgid  "~Configure..."
+msgid "~Configure..."
 msgstr "ت~هيئة..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
 #, fuzzy
-msgid  "To a ZIP ~archive"
+msgid "To a ZIP ~archive"
 msgstr "إلى أر~شيف ZIP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__33.STRING.TEXT
 #, fuzzy
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
 #, fuzzy
-msgid  "~Save settings (recommended)"
+msgid "~Save settings (recommended)"
 msgstr "ح~فظ التعيينات (مُستحسن)"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
 #, fuzzy
-msgid  "Save ~as:"
+msgid "Save ~as:"
 msgstr "حفظ با~سم:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
 #, fuzzy
-msgid  "~Choose settings for the Web Wizard"
+msgid "~Choose settings for the Web Wizard"
 msgstr "اختر ت~عيينات معالج الويب"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
 #, fuzzy
-msgid  "Web site content "
+msgid "Web site content "
 msgstr "مُحتويات موقع ويب "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
 #, fuzzy
-msgid  "~Add..."
+msgid "~Add..."
 msgstr "إ~ضافة..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
 #, fuzzy
-msgid  "Remo~ve"
+msgid "Remo~ve"
 msgstr "إ~زالة"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
 #, fuzzy
-msgid  "Choose a layout for the table of contents of your web site"
+msgid "Choose a layout for the table of contents of your web site"
 msgstr "اختر مظهر جدول المحتويات للموقع"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
 #, fuzzy
-msgid  "Select a style for the table of contents page"
+msgid "Select a style for the table of contents page"
 msgstr "اختر نمط صفحة جدول المحتويات"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
 #, fuzzy
-msgid  "~Style:"
+msgid "~Style:"
 msgstr "~نمط:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
 #, fuzzy
-msgid  "~Layouts: "
+msgid "~Layouts: "
 msgstr "~مظاهر: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
 #, fuzzy
-msgid  "~Description"
+msgid "~Description"
 msgstr "ال~وصف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
 #, fuzzy
-msgid  "~Author"
+msgid "~Author"
 msgstr "المؤ~لف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
 #, fuzzy
-msgid  "Cr~eation date"
+msgid "Cr~eation date"
 msgstr "~تاريخ الإنشاء"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
 #, fuzzy
-msgid  "~Last change date"
+msgid "~Last change date"
 msgstr "تاريخ آخر ت~عديل"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
 #, fuzzy
-msgid  "~File name"
+msgid "~File name"
 msgstr "ا~سم الملف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
 #, fuzzy
-msgid  "File forma~t"
+msgid "File forma~t"
 msgstr "ن~سق الملف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
 #, fuzzy
-msgid  "File format ~icon"
+msgid "File format ~icon"
 msgstr "أي~قونة تنسيق الملف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
 #, fuzzy
-msgid  "Number ~of pages"
+msgid "Number ~of pages"
 msgstr "عدد ال~صفحات"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
 #, fuzzy
-msgid  "~Size in KB"
+msgid "~Size in KB"
 msgstr "ال~حجم بالكيلوبايت"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
 #, fuzzy
-msgid  "Click 'Preview' to see a preview in your browser:"
+msgid "Click 'Preview' to see a preview in your browser:"
 msgstr "اضغط 'معاينة' لعرض المعاينة في المتصفح:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
 #, fuzzy
-msgid  "Customize the selected layout"
+msgid "Customize the selected layout"
 msgstr "تخصيص المظهر المُحدّد"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
 #, fuzzy
-msgid  "Include the following information for each document in the table of contents:"
+msgid "Include the following information for each document in the table of contents:"
 msgstr "تضمين المعلومات التالية مع كل مستند في جدول المحتويات:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
 #, fuzzy
-msgid  "Optimize the layout for screen resolution:"
+msgid "Optimize the layout for screen resolution:"
 msgstr "ملائمة المظهر مع دقة الشاشة:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
 #, fuzzy
-msgid  "~640x480"
+msgid "~640x480"
 msgstr "~640x480"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
 #, fuzzy
-msgid  "~800x600"
+msgid "~800x600"
 msgstr "~800x600"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
 #, fuzzy
-msgid  "~1024x768"
+msgid "~1024x768"
 msgstr "~1024x768"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
 #, fuzzy
-msgid  "Generating Your Web Site"
+msgid "Generating Your Web Site"
 msgstr "توليد موقع الويب الخاص بك"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
 #, fuzzy
-msgid  "%START - %END/%TOTAL"
+msgid "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
 #, fuzzy
-msgid  "myWebsite"
+msgid "myWebsite"
 msgstr "موقعي"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
 #, fuzzy
-msgid  "FTP target '%FILENAME' is a file."
+msgid "FTP target '%FILENAME' is a file."
 msgstr "وجهة FTP '%FILENAME' هي ملف."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
 #, fuzzy
-msgid  "The local target '%FILENAME' is a file."
+msgid "The local target '%FILENAME' is a file."
 msgstr "الوجهة المحلية '%FILENAME' هي ملف."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
 #, fuzzy
-msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgid "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
 msgstr "وجهة ZIP '%FILENAME' موجودة بالفعل. هل تريد الكتابة على ما هو موجود؟ "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
 #, fuzzy
-msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "دليل FTP الوجهة '%FILENAME' غير موجود. قد تتم الكتابة فوق بعض الملفات. هل تريد الاستمرار؟"
+msgid "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"دليل FTP الوجهة '%FILENAME' غير موجود. قد تتم الكتابة فوق بعض الملفات. هل "
+"تريد الاستمرار؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
 #, fuzzy
-msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr "الدليل الوجهة المحلي '%FILENAME' غير موجود. قد تتم الكتابة على بعض الملفات. هل تريد الاستمرار؟"
+msgid "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr ""
+"الدليل الوجهة المحلي '%FILENAME' غير موجود. قد تتم الكتابة على بعض الملفات. "
+"هل تريد الاستمرار؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
 #, fuzzy
-msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr "الإعدادات موجودة بالفعل بنفس الاسم المُعطى. هل تريد الكتابة على الإعدادات الموجودة؟ "
+msgid "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr ""
+"الإعدادات موجودة بالفعل بنفس الاسم المُعطى. هل تريد الكتابة على الإعدادات "
+"الموجودة؟ "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
 #, fuzzy
-msgid  "Exporting documents..."
+msgid "Exporting documents..."
 msgstr "تصدير المستندات..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
 #, fuzzy
-msgid  "Preparing export..."
+msgid "Preparing export..."
 msgstr "التحضير للتصدير..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
 #, fuzzy
-msgid  "Copying layout files..."
+msgid "Copying layout files..."
 msgstr "نسخ ملفات المظهر..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
 #, fuzzy
-msgid  "Preparing table of contents generation..."
+msgid "Preparing table of contents generation..."
 msgstr "التحضير لتوليد جدول المحتويات..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
 #, fuzzy
-msgid  "Generating table of contents..."
+msgid "Generating table of contents..."
 msgstr "توليد جدول المحتويات..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
 #, fuzzy
-msgid  "Initializing..."
+msgid "Initializing..."
 msgstr "الابتداء..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
 #, fuzzy
-msgid  "Preparing to publish..."
+msgid "Preparing to publish..."
 msgstr "التحضير للنشر..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
 #, fuzzy
-msgid  "Publishing to local directory..."
+msgid "Publishing to local directory..."
 msgstr "النشر إلى دليل محلي..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
 #, fuzzy
-msgid  "Publishing to FTP destination..."
+msgid "Publishing to FTP destination..."
 msgstr "النشر إلى وجهة FTP..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
 #, fuzzy
-msgid  "Publishing to a ZIP archive..."
+msgid "Publishing to a ZIP archive..."
 msgstr "النشر إلى أرشيف ZIP..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
 #, fuzzy
-msgid  "Finishing..."
+msgid "Finishing..."
 msgstr "الانتهاء..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
 #, fuzzy
-msgid  "Graphic files"
+msgid "Graphic files"
 msgstr "ملفات الرسوم"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
 #, fuzzy
-msgid  "All files"
+msgid "All files"
 msgstr "كل الملفات"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
 #, fuzzy
-msgid  "~ZIP archive files"
+msgid "~ZIP archive files"
 msgstr "ملفات أ~رشيف ZIP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
 #, fuzzy
-msgid  "Background images"
+msgid "Background images"
 msgstr "صور الخلفية"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
 #, fuzzy
-msgid  "Choose a background image: "
+msgid "Choose a background image: "
 msgstr "اختر صورة للخلفية: "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
 #, fuzzy
-msgid  "Icon sets"
+msgid "Icon sets"
 msgstr "مجموعات الأيقونات"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
 #, fuzzy
-msgid  "Choose an icon set:"
+msgid "Choose an icon set:"
 msgstr "اختر مجموعة أيقونات:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
 #, fuzzy
-msgid  "Other..."
+msgid "Other..."
 msgstr "أخرى..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
 #, fuzzy
-msgid  "None"
+msgid "None"
 msgstr "بلا"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
 #, fuzzy
-msgid  "Your web site was created successfully into: %FILENAME"
+msgid "Your web site was created successfully into: %FILENAME"
 msgstr "تم إنشاء موقع الويب بنجاح في: %FILENAME"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
 #, fuzzy
-msgid  "One or more errors occurred when generating the web site."
+msgid "One or more errors occurred when generating the web site."
 msgstr "حدث خطأ أو أكثر أثناء توليد موقع الويب."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while generating the table of contents page(s). "
+msgid "An error occurred while generating the table of contents page(s). "
 msgstr "حدث خطأ أثناء توليد صحفات جدول المحتويات. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while copying the layout files. "
+msgid "An error occurred while copying the layout files. "
 msgstr "حدث خطأ أثناء نسخ ملفات المظهر. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgid "An error occurred while gathering document information for '%FILENAME'. "
 msgstr "حدث خطأ أثناء تجميع معلومات المستند '%FILENAME'. "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while exporting the document '%FILENAME'."
+msgid "An error occurred while exporting the document '%FILENAME'."
 msgstr "حدث خطأ أثناء تصدير المستند '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
 msgstr "حدث خطأ أثناء إنشاء دليل لتصدير '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
 #, fuzzy
-msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgid "A security error occurred while exporting the document '%FILENAME'."
 msgstr "حدث خطا في التأمين أثناء تصدير المستند '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
 #, fuzzy
-msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgid "An input/output error occurred while exporting the document '%FILENAME'."
 msgstr "حدث خطأ إدخال/إخراج أثناء تصدير المستند '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while copying media files to the temporary directory."
+msgid "An error occurred while copying media files to the temporary directory."
 msgstr "حدث خطأ أثناء نسخ ملفات الوسائط إلى الدليل المؤقت."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
 #, fuzzy
-msgid  "The web site could not be copied to the following destination: %URL"
+msgid "The web site could not be copied to the following destination: %URL"
 msgstr "تعذر نسخ موقع الويب إلى الوجهة التالية: %URL"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred: %ERROR"
+msgid "An unexpected error occurred: %ERROR"
 msgstr "حدث خطأ غير متوقع: %ERROR"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
 msgstr "حدث خطأ غير متوقع أثناء مُصادقة الملف: '%FILENAME'"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
 #, fuzzy
-msgid  "%FILENAME' is a folder."
+msgid "%FILENAME' is a folder."
 msgstr "%FILENAME' هو مجلّد."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
 #, fuzzy
-msgid  "Loading Web Wizard Settings..."
+msgid "Loading Web Wizard Settings..."
 msgstr "تحميل إعدادات معالج الويب..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred."
+msgid "An unexpected error occurred."
 msgstr "حدث خطأ غير متوقع."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
 #, fuzzy
-msgid  "Validating documents..."
+msgid "Validating documents..."
 msgstr "مُصادقة الوثائق..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
 #, fuzzy
-msgid  "My Archive"
+msgid "My Archive"
 msgstr "أرشيفي"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
 #, fuzzy
-msgid  "Introduction "
+msgid "Introduction "
 msgstr "مُقدّمة "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
 #, fuzzy
-msgid  "Documents "
+msgid "Documents "
 msgstr "المستندات "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
 #, fuzzy
-msgid  "Main layout"
+msgid "Main layout"
 msgstr "المظهر الأساسي"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
 #, fuzzy
-msgid  "Layout details"
+msgid "Layout details"
 msgstr "تفاصيل المظهر"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
 #, fuzzy
-msgid  "Style"
+msgid "Style"
 msgstr "النمط"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
 #, fuzzy
-msgid  "Web site information"
+msgid "Web site information"
 msgstr "معلومات موقع الويب"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
 #, fuzzy
-msgid  "Preview"
+msgid "Preview"
 msgstr "معاينة"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
 #, fuzzy
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "سيتم حذف الإعدادات المُحدّدة.\n\nهل تريد فعلاً حذف هذه الإعدادات؟ "
+msgid "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr ""
+"سيتم حذف الإعدادات المُحدّدة.\n"
+"\n"
+"هل تريد فعلاً حذف هذه الإعدادات؟ "
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
 #, fuzzy
-msgid  "%NUMBER pages"
+msgid "%NUMBER pages"
 msgstr "%NUMBER صفحات"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
 #, fuzzy
-msgid  "%NUMBER slides"
+msgid "%NUMBER slides"
 msgstr "%NUMBER شرائح"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
 #, fuzzy
-msgid  "Created: %DATE"
+msgid "Created: %DATE"
 msgstr "أنشئ: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
 #, fuzzy
-msgid  "Last modified: %DATE"
+msgid "Last modified: %DATE"
 msgstr "آخر تعديل: %DATE"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
 #, fuzzy
-msgid  "Web Wizard Settings"
+msgid "Web Wizard Settings"
 msgstr "إعدادات معالج الويب"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
 #, fuzzy
-msgid  "Background image:"
+msgid "Background image:"
 msgstr "صورة الخلفية:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
 #, fuzzy
-msgid  "Icon set:"
+msgid "Icon set:"
 msgstr "مجموعة الأيقونات:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
 #, fuzzy
-msgid  "The icon set is used for presentations in HTML format."
+msgid "The icon set is used for presentations in HTML format."
 msgstr "تستخدم مجموعة الأيقونات للعروض بتنسيق HTML."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
 #, fuzzy
-msgid  "HTML Metadata"
+msgid "HTML Metadata"
 msgstr "ما وراء بيانات HTML"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
 #, fuzzy
-msgid  "Choose..."
+msgid "Choose..."
 msgstr "اختيار..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__141.STRING.TEXT
 #, fuzzy
-msgid  "Choose..."
+msgid "Choose..."
 msgstr "اختيار..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
 #, fuzzy
-msgid  "<default>"
+msgid "<default>"
 msgstr "<افتراضي>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
 #, fuzzy
-msgid  "Publishing via FTP Proxy is not supported."
+msgid "Publishing via FTP Proxy is not supported."
 msgstr "النشر عبر بروكسي FTP غير مدعوم."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
 #, fuzzy
-msgid  "<no background image>"
+msgid "<no background image>"
 msgstr "<لا صورة خلفية>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
 #, fuzzy
-msgid  "<no icon set>"
+msgid "<no icon set>"
 msgstr "<لم تحديد أيقونة>"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
 #, fuzzy
-msgid  "The FTP directory '%FILENAME' could not be created."
+msgid "The FTP directory '%FILENAME' could not be created."
 msgstr "تعذر إنشاء دليل FTP '%FILENAME'."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
 #, fuzzy
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "دليل FTP '%FILENAME' غير موجود. \nتريد إنشاء الدليل الآن؟"
+msgid "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"دليل FTP '%FILENAME' غير موجود. \n"
+"تريد إنشاء الدليل الآن؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
 #, fuzzy
-msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr "ملف ZIPP '%FILENAME' لا يمكن إنشاؤه: هناك دليل له نفس الاسم موجود بالفعل."
+msgid "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr ""
+"ملف ZIPP '%FILENAME' لا يمكن إنشاؤه: هناك دليل له نفس الاسم موجود بالفعل."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
 #, fuzzy
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "تعذر إنشاء الدليل المحلي '%FILENAME'. \nرجاء التحقق من حقّك بالكتابة."
+msgid "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr ""
+"تعذر إنشاء الدليل المحلي '%FILENAME'. \n"
+"رجاء التحقق من حقّك بالكتابة."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
 #, fuzzy
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "الدليل المحلي '%FILENAME' غير موجود. \nتريد إنشاء الدليل الآن؟"
+msgid "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr ""
+"الدليل المحلي '%FILENAME' غير موجود. \n"
+"تريد إنشاء الدليل الآن؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
 #, fuzzy
-msgid  "Size: %NUMBERKB"
+msgid "Size: %NUMBERKB"
 msgstr "الحجم: %NUMBERKB"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
 #, fuzzy
-msgid  "File not found. Would you like to specify a new file location?"
+msgid "File not found. Would you like to specify a new file location?"
 msgstr "لم يُعثر على الملف. هل تريد تحديد موقع جديد؟"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
 #, fuzzy
-msgid  "FTP Connection"
+msgid "FTP Connection"
 msgstr "اتصال FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
 #, fuzzy
-msgid  "~User name:"
+msgid "~User name:"
 msgstr "ا~سم المستخدم:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
 #, fuzzy
-msgid  "~Password:"
+msgid "~Password:"
 msgstr "~كلمة المرور:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
 #, fuzzy
-msgid  "Connect"
+msgid "Connect"
 msgstr "اتصال"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
 #, fuzzy
-msgid  "1. Enter FTP connection information."
+msgid "1. Enter FTP connection information."
 msgstr "1. إدخال معلومات اتصال FTP."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
 #, fuzzy
-msgid  "~Server name or IP address:"
+msgid "~Server name or IP address:"
 msgstr "ا~سم الخادم أو عنوان IP:"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
 #, fuzzy
-msgid  "2. Connect to the server."
+msgid "2. Connect to the server."
 msgstr "2. الاتصال بالخادم."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
 #, fuzzy
-msgid  "3. ~Choose a remote directory (optional)."
+msgid "3. ~Choose a remote directory (optional)."
 msgstr "3. ا~ختيار دليل بعيد (اختياري)."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.STRING.TEXT
 #, fuzzy
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
 #, fuzzy
-msgid  "Connection status is unknown"
+msgid "Connection status is unknown"
 msgstr "وضع الاتصال غير معروف"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
 #, fuzzy
-msgid  "Connection was established successfully"
+msgid "Connection was established successfully"
 msgstr "تم إنشاء الاتصال بنجاح"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
 #, fuzzy
-msgid  "Username or password is wrong"
+msgid "Username or password is wrong"
 msgstr "اسم المستخدم أو كلمة المرور خاطئة"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
 #, fuzzy
-msgid  "Could not resolve server name"
+msgid "Could not resolve server name"
 msgstr "تعذر حلّ اسم الخادم"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
 #, fuzzy
-msgid  "You do not have sufficient user rights"
+msgid "You do not have sufficient user rights"
 msgstr "ليست لديك امتيازات مستخدم كافية"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
 #, fuzzy
-msgid  "Cannot connect to server"
+msgid "Cannot connect to server"
 msgstr "تعذر الاتصال بالخادم"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
 #, fuzzy
-msgid  "Unexpected error"
+msgid "Unexpected error"
 msgstr "خطأ غير متوقع"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
 #, fuzzy
-msgid  "FTP publishing directory"
+msgid "FTP publishing directory"
 msgstr "دليل نشر FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
 #, fuzzy
-msgid  "This is not an FTP folder"
+msgid "This is not an FTP folder"
 msgstr "ليس هذا مجلد FTP"
 
 #: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
 #, fuzzy
-msgid  "Connecting..."
+msgid "Connecting..."
 msgstr "الاتصال..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
 #, fuzzy
-msgid  "Agenda Wizard"
+msgid "Agenda Wizard"
 msgstr "معالج المفكرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
 #, fuzzy
-msgid  "Make ~manual changes to this agenda template"
+msgid "Make ~manual changes to this agenda template"
 msgstr "القيام بتعديلات ~يدوية على قالب المفكرة هذا"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.STRING.TEXT
 #, fuzzy
-msgid  "Template name:"
+msgid "Template name:"
 msgstr "اسم القالب:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.STRING.TEXT
 #, fuzzy
-msgid  "Location and file name:"
+msgid "Location and file name:"
 msgstr "الموقع واسم الملف:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.STRING.TEXT
 #, fuzzy
-msgid  "What do you want to do next?"
+msgid "What do you want to do next?"
 msgstr "ما الذي تريد القيام به بعد ذلك؟"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
 #, fuzzy
-msgid  "Please choose the page design for the agenda"
+msgid "Please choose the page design for the agenda"
 msgstr "رجاء اختر تصميم الصفحة للمفكرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
 #, fuzzy
-msgid  "Please select the headings you wish to include in your agenda template"
+msgid "Please select the headings you wish to include in your agenda template"
 msgstr "رجاء اختر الرؤوس التي تريدّ شملها في قالب المفكرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
 #, fuzzy
-msgid  "Please enter general information for the event"
+msgid "Please enter general information for the event"
 msgstr "رجاء إدخال معلومات عامّة عن الحدث"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
 #, fuzzy
-msgid  "Please specify items for the agenda"
+msgid "Please specify items for the agenda"
 msgstr "رجاء حدّد نقاط المفكرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
 #, fuzzy
-msgid  "Please select the names you wish to include in your agenda template"
+msgid "Please select the names you wish to include in your agenda template"
 msgstr "رجاء اختر الأسماء التي تريد شملها في قالب مفكرتك"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.STRING.TEXT
 #, fuzzy
-msgid  "Choose a name and save the template"
+msgid "Choose a name and save the template"
 msgstr "اختر اسمًا واحفظ القالب"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
 #, fuzzy
-msgid  "Include form for recording minutes"
+msgid "Include form for recording minutes"
 msgstr "تضمين نموذج لتسجيل نقاط المحضر"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
 #, fuzzy
-msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr "يساعدك هذا المعالج على إنشاء قالب مفكرة. يمكن استخدام المفكرة بعدها لإنشاء مفكرة عند الحاجة."
+msgid "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr ""
+"يساعدك هذا المعالج على إنشاء قالب مفكرة. يمكن استخدام المفكرة بعدها لإنشاء "
+"مفكرة عند الحاجة."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
 #, fuzzy
-msgid  "Time:"
+msgid "Time:"
 msgstr "الوقت:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.STRING.TEXT
 #, fuzzy
-msgid  "Name:"
+msgid "Name:"
 msgstr "الاسم:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
 #, fuzzy
-msgid  "Location:"
+msgid "Location:"
 msgstr "الموقع:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
 #, fuzzy
-msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr "سيتم استخدام العناصر النائبة في الحقول الفارغة. يمكن استبدال العناصر النائبة بالنصّ لاحقًا."
+msgid "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr ""
+"سيتم استخدام العناصر النائبة في الحقول الفارغة. يمكن استبدال العناصر النائبة "
+"بالنصّ لاحقًا."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.STRING.TEXT
 #, fuzzy
-msgid  "..."
+msgid "..."
 msgstr "..."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
 #, fuzzy
-msgid  "Create an ~agenda from this template"
+msgid "Create an ~agenda from this template"
 msgstr "إنشاء ~مفكرة من هذا القالب"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
 #, fuzzy
-msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr "لإنشاء مفكرة جديدة من القالب، اذهب إلى المكان الذي حفظت فيه القالب وقم بالضغط المزدوج على الملف."
+msgid "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr ""
+"لإنشاء مفكرة جديدة من القالب، اذهب إلى المكان الذي حفظت فيه القالب وقم "
+"بالضغط المزدوج على الملف."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
 #, fuzzy
-msgid  "Agenda item"
+msgid "Agenda item"
 msgstr "نقطة مفكّرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
 #, fuzzy
-msgid  "Responsible"
+msgid "Responsible"
 msgstr "المسؤول"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
 #, fuzzy
-msgid  "Duration"
+msgid "Duration"
 msgstr "المدة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 #, fuzzy
-msgid  "Meeting called by"
+msgid "Meeting called by"
 msgstr "تم استدعاء الاجتماع بواسطة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.STRING.TEXT
 #, fuzzy
-msgid  "Chairperson"
+msgid "Chairperson"
 msgstr "الرئيس"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.STRING.TEXT
 #, fuzzy
-msgid  "Minute keeper"
+msgid "Minute keeper"
 msgstr "برنامج Minute keeper"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
-#, fuzzy
-msgid  "Moderator"
-msgstr "الوسيط"
+msgid "Moderator"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 #, fuzzy
-msgid  "Attendees"
+msgid "Attendees"
 msgstr "الحضور"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.STRING.TEXT
 #, fuzzy
-msgid  "Observers"
+msgid "Observers"
 msgstr "المشرفون"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.STRING.TEXT
 #, fuzzy
-msgid  "Facility personnel"
+msgid "Facility personnel"
 msgstr "موظف المنشأة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
 #, fuzzy
-msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr "سيحتوي القالب على عناصر نائبة لأسماء الأشخاص المحدّدين. عند إنشاء مفكرة من القالب، يمكن استبدال هذه العناصر النائبة بالأسماء المناسبة."
+msgid "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr ""
+"سيحتوي القالب على عناصر نائبة لأسماء الأشخاص المحدّدين. عند إنشاء مفكرة من "
+"القالب، يمكن استبدال هذه العناصر النائبة بالأسماء المناسبة."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
-#, fuzzy
-msgid  "Type of meeting"
-msgstr "نوع الاجتماع"
+msgid "Type of meeting"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
-#, fuzzy
-msgid  "Please read"
-msgstr "يرجى القراءة"
+msgid "Please read"
+msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 #, fuzzy
-msgid  "Please bring"
+msgid "Please bring"
 msgstr "يرجى تقديم"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
+msgid "Notes"
 msgstr "ملاحظات"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
 #, fuzzy
-msgid  "The agenda template will include placeholders for the selected items."
+msgid "The agenda template will include placeholders for the selected items."
 msgstr "سيحتوي قالب المفكرة على عناصر نائبة للنقاط المُحدّدة."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.STRING.TEXT
 #, fuzzy
-msgid  "Date:"
+msgid "Date:"
 msgstr "التاريخ:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
 #, fuzzy
-msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr "يقوم هذا المعالج بإنشاء قالب مفكرة يمكنك من إنشاء عدة مفكرات لها نفس المظهر والإعدادات."
+msgid "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr ""
+"يقوم هذا المعالج بإنشاء قالب مفكرة يمكنك من إنشاء عدة مفكرات لها نفس المظهر "
+"والإعدادات."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
 #, fuzzy
-msgid  "Page design:"
+msgid "Page design:"
 msgstr "تصميم الصفحة:"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
 #, fuzzy
-msgid  "myAgendaTemplate.stw"
+msgid "myAgendaTemplate.stw"
 msgstr "myAgendaTemplate.stw"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
 #, fuzzy
-msgid  "My Agenda Template"
+msgid "My Agenda Template"
 msgstr "قالب مفكرتي"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred while saving the agenda template."
+msgid "An unexpected error occurred while saving the agenda template."
 msgstr "حدث خطأ غير متوقع أثناء حفظ قالب المفكرة."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
 #, fuzzy
-msgid  "Name"
+msgid "Name"
 msgstr "الاسم"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
 #, fuzzy
-msgid  "Date"
+msgid "Date"
 msgstr "التاريخ"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
 #, fuzzy
-msgid  "Time"
+msgid "Time"
 msgstr "الوقت"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
 #, fuzzy
-msgid  "Location"
+msgid "Location"
 msgstr "الموقع"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
 #, fuzzy
-msgid  "Click to replace this text"
+msgid "Click to replace this text"
 msgstr "اضغط لاستبدال هذا النص"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.STRING.TEXT
 #, fuzzy
-msgid  "Page design"
+msgid "Page design"
 msgstr "تصميم الصفحة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
 #, fuzzy
-msgid  "General information"
+msgid "General information"
 msgstr "معلومات عامة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
 #, fuzzy
-msgid  "Headings to include"
+msgid "Headings to include"
 msgstr "الرؤوس المطلوب شملها"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
 #, fuzzy
-msgid  "Names"
+msgid "Names"
 msgstr "الأسماء"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
 #, fuzzy
-msgid  "Agenda items"
+msgid "Agenda items"
 msgstr "نقاط المفكرة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.STRING.TEXT
 #, fuzzy
-msgid  "Name and location"
+msgid "Name and location"
 msgstr "الاسم والموقع"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error occurred while opening the agenda template."
+msgid "An unexpected error occurred while opening the agenda template."
 msgstr "حدث خطأ غير متوقع أثناء فتح قالب المفكرة."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.STRING.TEXT
-#, fuzzy
-msgid  "Type of meeting"
+msgid "Type of meeting"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.STRING.TEXT
 #, fuzzy
-msgid  "Please bring"
+msgid "Please bring"
 msgstr "يرجى تقديم"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.STRING.TEXT
-#, fuzzy
-msgid  "Please read"
+msgid "Please read"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
+msgid "Notes"
 msgstr "ملاحظات"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.STRING.TEXT
 #, fuzzy
-msgid  "Meeting called by"
+msgid "Meeting called by"
 msgstr "تم استدعاء الاجتماع بواسطة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.STRING.TEXT
 #, fuzzy
-msgid  "Chairperson"
+msgid "Chairperson"
 msgstr "الرئيس"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.STRING.TEXT
 #, fuzzy
-msgid  "Attendees"
+msgid "Attendees"
 msgstr "الحضور"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.STRING.TEXT
 #, fuzzy
-msgid  "Minute keeper"
+msgid "Minute keeper"
 msgstr "برنامج Minute keeper"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.STRING.TEXT
-#, fuzzy
-msgid  "Moderator"
+msgid "Moderator"
 msgstr ""
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.STRING.TEXT
 #, fuzzy
-msgid  "Observers"
+msgid "Observers"
 msgstr "المشرفون"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.STRING.TEXT
 #, fuzzy
-msgid  "Facility personnel"
+msgid "Facility personnel"
 msgstr "موظف المنشأة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
 #, fuzzy
-msgid  "Insert"
+msgid "Insert"
 msgstr "إدراج"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
 #, fuzzy
-msgid  "Remove"
+msgid "Remove"
 msgstr "إزالة"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
 #, fuzzy
-msgid  "Move up"
+msgid "Move up"
 msgstr "تحريك للأعلى"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
 #, fuzzy
-msgid  "Move down"
+msgid "Move down"
 msgstr "تحريك للأسفل"
 
 #: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "~Help"
+msgid "~Help"
 msgstr "~تعليمات"
 
 #: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "إل~غاء الأمر"
 
 #: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "<< ~Back"
+msgid "<< ~Back"
 msgstr " << الس~ابق"
 
 #: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "Ne~xt >>"
+msgid "Ne~xt >>"
 msgstr "ال~تّالي >>"
 
 #: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "~Convert"
+msgid "~Convert"
 msgstr "~تحويل"
 
 #: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
 #, fuzzy
-msgid  "~Close"
+msgid "~Close"
 msgstr "إ~غلاق"
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
 #, fuzzy
-msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr "يقوم هذا المعالج بتحويل المستندات من تنسيق %PRODUCTNAME ومستندات Microsoft Office إلى تنسيق OpenDocument الجديد."
+msgid "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr ""
+"يقوم هذا المعالج بتحويل المستندات من تنسيق %PRODUCTNAME ومستندات Microsoft "
+"Office إلى تنسيق OpenDocument الجديد."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
 #, fuzzy
-msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr "الرجاء ملاحظة أنه عند تحويل مستندات Microsoft سوف تفقد وحدات الماكرو VBA التي قد تكون مرفقة وظيفتها."
+msgid "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr ""
+"الرجاء ملاحظة أنه عند تحويل مستندات Microsoft سوف تفقد وحدات الماكرو VBA "
+"التي قد تكون مرفقة وظيفتها."
 
 #: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
 #, fuzzy
-msgid  "Select the document type for conversion:"
+msgid "Select the document type for conversion:"
 msgstr "اختر أنواع المستندات المراد تحويلها:"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
 #, fuzzy
-msgid  "Word templates"
+msgid "Word templates"
 msgstr "قوالب Word"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
 #, fuzzy
-msgid  "Excel templates"
+msgid "Excel templates"
 msgstr "قوالب Excel"
 
 #: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
 #, fuzzy
-msgid  "PowerPoint templates"
+msgid "PowerPoint templates"
 msgstr "قوالب PowerPoint"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
 #, fuzzy
-msgid  "Word documents"
+msgid "Word documents"
 msgstr "مستندات Word"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
 #, fuzzy
-msgid  "Excel documents"
+msgid "Excel documents"
 msgstr "مستندات Excel"
 
 #: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
 #, fuzzy
-msgid  "PowerPoint documents"
+msgid "PowerPoint documents"
 msgstr "مستندات PowerPoint"
 
 #: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
 #, fuzzy
-msgid  "Including subdirectories"
+msgid "Including subdirectories"
 msgstr "تضمين الأدلة الفرعية"
 
 #: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
 #, fuzzy
-msgid  "Microsoft Office"
+msgid "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
 #, fuzzy
-msgid  "Summary:"
+msgid "Summary:"
 msgstr "التلخيص:"
 
 #: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
 #, fuzzy
-msgid  "Import from:"
+msgid "Import from:"
 msgstr "استيراد من:"
 
 #: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
 #, fuzzy
-msgid  "Save to:"
+msgid "Save to:"
 msgstr "حفظ إلى:"
 
 #: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
 #, fuzzy
-msgid  "Imported_Templates"
+msgid "Imported_Templates"
 msgstr "قوالب_نص_مستوردة"
 
 #: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
 #, fuzzy
-msgid  "Progress: "
+msgid "Progress: "
 msgstr "التقدم: "
 
 #: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
 #, fuzzy
-msgid  "Document"
+msgid "Document"
 msgstr "المستند"
 
 #: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
 #, fuzzy
-msgid  "Documents"
+msgid "Documents"
 msgstr "مستندات"
 
 #: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "Templates"
+msgid "Templates"
 msgstr "قوالب"
 
 #: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
 #, fuzzy
-msgid  "The '%1' directory cannot be created: "
+msgid "The '%1' directory cannot be created: "
 msgstr "لا يمكن إنشاء الدليل '%1': "
 
 #: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
 #, fuzzy
-msgid  "The '%1' directory does not exist."
+msgid "The '%1' directory does not exist."
 msgstr "الدليل '%1' غير موجود."
 
 #: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to create it now?"
+msgid "Do you want to create it now?"
 msgstr "هل تريد إنشاءه الآن؟"
 
 #: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
 #, fuzzy
-msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "الملف '<1>' موجود بالفعل. <CR>هل تريد الكتابة فوقه؟"
 
 #: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
 #, fuzzy
-msgid  "Directories do not exist"
+msgid "Directories do not exist"
 msgstr "دلائل غير موجودة"
 
 #: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
 #, fuzzy
-msgid  "Do you want to overwrite documents without being asked?"
+msgid "Do you want to overwrite documents without being asked?"
 msgstr "هل تريد الكتابة على المستندات بدون السؤال؟"
 
 #: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
 #, fuzzy
-msgid  "Document macro has to be revised."
+msgid "Document macro has to be revised."
 msgstr "ماكرو المستند يجب تنقيحه."
 
 #: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "Document '<1>' could not be saved."
+msgid "Document '<1>' could not be saved."
 msgstr "مستند '<1>' لم يتم حفظه."
 
 #: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
 #, fuzzy
-msgid  "Document '<1>' could not be opened."
+msgid "Document '<1>' could not be opened."
 msgstr "المستند '<1>' لم يتم فتحه."
 
 #: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
 #, fuzzy
-msgid  "Do you really want to terminate conversion at this point?"
+msgid "Do you really want to terminate conversion at this point?"
 msgstr "هل حقًا تريد إنهاء عملية التحويل في هذه المرحلة؟"
 
 #: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
 #, fuzzy
-msgid  "Cancel Wizard"
+msgid "Cancel Wizard"
 msgstr "إلغاء المعالج"
 
 #: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
 #, fuzzy
-msgid  "An unexpected error has occurred in the wizard."
+msgid "An unexpected error has occurred in the wizard."
 msgstr "حدث خطأ غير متوقع في المعالج."
 
 #: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
 #, fuzzy
-msgid  "Error"
+msgid "Error"
 msgstr "خطأ"
 
 #: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
 #, fuzzy
-msgid  "Select a directory"
+msgid "Select a directory"
 msgstr "اختيار دليل"
 
 #: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
 #, fuzzy
-msgid  "Document Converter"
+msgid "Document Converter"
 msgstr "محول المستندات"
 
 #: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
 #, fuzzy
-msgid  "Progress"
+msgid "Progress"
 msgstr "التقدم"
 
 #: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
 #, fuzzy
-msgid  "Retrieving the relevant documents:"
+msgid "Retrieving the relevant documents:"
 msgstr "جلب المستندات وثيقة الصلة:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
 #, fuzzy
-msgid  "Converting the documents"
+msgid "Converting the documents"
 msgstr "تحويل المستندات"
 
 #: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
 #, fuzzy
-msgid  "Found:"
+msgid "Found:"
 msgstr "عُثر على:"
 
 #: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
 #, fuzzy
-msgid  "%1 found"
+msgid "%1 found"
 msgstr "عُثر على %1"
 
 #: importwizard/importwi.src#SREADY.STRING.TEXT
 #, fuzzy
-msgid  "Finished"
+msgid "Finished"
 msgstr "تم"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
 #, fuzzy
-msgid  "Text templates"
+msgid "Text templates"
 msgstr "قوالب نص"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
 #, fuzzy
-msgid  "Spreadsheet templates"
+msgid "Spreadsheet templates"
 msgstr "قوالب أوراق بيانية"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
 #, fuzzy
-msgid  "Drawing/presentation templates"
+msgid "Drawing/presentation templates"
 msgstr "قوالب رسمة/عرض تقديمي"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 #, fuzzy
-msgid  "Master documents"
+msgid "Master documents"
 msgstr "المستندات الرئيسية"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
 #, fuzzy
-msgid  "Text documents"
+msgid "Text documents"
 msgstr "مستندات نصية"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
 #, fuzzy
-msgid  "Spreadsheets"
+msgid "Spreadsheets"
 msgstr "أوراق بيانات"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
 #, fuzzy
-msgid  "Drawing/presentation documents"
+msgid "Drawing/presentation documents"
 msgstr "مستندات رسم/عرض تقديمي"
 
 #: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
 #, fuzzy
-msgid  "Master documents/formulas"
+msgid "Master documents/formulas"
 msgstr "مستندات شاملة/صيغ"
 
 #: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_1.STRING.TEXT
 #, fuzzy
-msgid  "Master documents"
+msgid "Master documents"
 msgstr "المستندات الرئيسية"
 
 #: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
 #, fuzzy
-msgid  "Formulas"
+msgid "Formulas"
 msgstr "الصيغ"
 
 #: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Source documents"
+msgid "Source documents"
 msgstr "المستندات المصدرية"
 
 #: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "Target documents"
+msgid "Target documents"
 msgstr "مستندات الهدف"
 
 #: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
 #, fuzzy
-msgid  "Create log file"
+msgid "Create log file"
 msgstr "إنشاء ملف سجل"
 
 #: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
 #, fuzzy
-msgid  "<COUNT> documents converted"
+msgid "<COUNT> documents converted"
 msgstr "<COUNT> مستند تم تحويله"
 
 #: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
 #, fuzzy
-msgid  "A log file will be created in your work directory"
+msgid "A log file will be created in your work directory"
 msgstr "ملف السجل تم إنشائه في دليل عملك"
 
 #: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
 #, fuzzy
-msgid  "Show log file"
+msgid "Show log file"
 msgstr "اظهر ملف التسجيل"
 
 #: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
 #, fuzzy
-msgid  "All subdirectories will be taken into account"
+msgid "All subdirectories will be taken into account"
 msgstr "سيتم مراعاة كل الدلائل الفرعية"
 
 #: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
 #, fuzzy
-msgid  "These will be exported to the following directory:"
+msgid "These will be exported to the following directory:"
 msgstr "سوف يتم تصديرها إلى الدليل التالي:"
 
 #: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr "كل مستندات %PRODUCTNAME النصية الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr ""
+"كل مستندات %PRODUCTNAME النصية الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr "كل جداول %PRODUCTNAME البيانية الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr ""
+"كل جداول %PRODUCTNAME البيانية الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr "كل مستندات %PRODUCTNAME الرسومية والعروض التقديمية الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr ""
+"كل مستندات %PRODUCTNAME الرسومية والعروض التقديمية الموجودة في الدليل التالي "
+"سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr "كل مستندات %PRODUCTNAME الصيغة الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr ""
+"كل مستندات %PRODUCTNAME الصيغة الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgid "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "كل قوالب %PRODUCTNAME النصية الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr "كل قوالب %PRODUCTNAME الجدولية الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr ""
+"كل قوالب %PRODUCTNAME الجدولية الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr "كل قوالب الرسم والعروض التقديمية ل%PRODUCTNAME الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr ""
+"كل قوالب الرسم والعروض التقديمية ل%PRODUCTNAME الموجودة في الدليل التالي "
+"سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr "كل مستندات %PRODUCTNAME الشاملة الموجودة في الدليل التالي سيتم استيرادها:"
+msgid "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr ""
+"كل مستندات %PRODUCTNAME الشاملة الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All Word documents contained in the following directory will be imported:"
+msgid "All Word documents contained in the following directory will be imported:"
 msgstr "كل مستندات Word الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All Excel documents contained in the following directory will be imported:"
+msgid "All Excel documents contained in the following directory will be imported:"
 msgstr "كل مستندات Excel الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
 #, fuzzy
-msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgid "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "كل مستندات PowerPoint الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All Word templates contained in the following directory will be imported:"
+msgid "All Word templates contained in the following directory will be imported:"
 msgstr "كل قوالب Word الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All Excel templates contained in the following directory will be imported:"
+msgid "All Excel templates contained in the following directory will be imported:"
 msgstr "كل قوالب Excel الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
 #, fuzzy
-msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgid "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "كل قوالب PowerPoint الموجودة في الدليل التالي سيتم استيرادها:"
 
 #: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
 #, fuzzy
-msgid  "%PRODUCTNAME Calendar"
+msgid "%PRODUCTNAME Calendar"
 msgstr "تقويم %PRODUCTNAME "
 
 #: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
 #, fuzzy
-msgid  "Back"
+msgid "Back"
 msgstr "السابق"
 
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 #, fuzzy
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "البيانات الشخصية"
 
 #: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
 #, fuzzy
-msgid  "Add Holidays to Calendar"
+msgid "Add Holidays to Calendar"
 msgstr "إضافة العطل في التقويم"
 
 #: schedule/schedule.src#DLGOK.STRING.TEXT
 #, fuzzy
-msgid  "Create"
+msgid "Create"
 msgstr "إنشاء"
 
 #: schedule/schedule.src#DLGCANCEL.STRING.TEXT
 #, fuzzy
-msgid  "Cancel"
+msgid "Cancel"
 msgstr "إلغاء الأمر"
 
 #: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
 #, fuzzy
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "التقويم"
 
 #: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
 #, fuzzy
-msgid  "~Year Overview"
+msgid "~Year Overview"
 msgstr "~ملخص سنة"
 
 #: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
 #, fuzzy
-msgid  "~Month"
+msgid "~Month"
 msgstr "الش~هر"
 
 #: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
 #, fuzzy
-msgid  "Add holidays for"
+msgid "Add holidays for"
 msgstr "إضافة العطل الرسمية لـ"
 
 #: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
 #, fuzzy
-msgid  "USA"
+msgid "USA"
 msgstr "الولايات المتحدة"
 
 #: schedule/schedule.src#DLGTIME.STRING.TEXT
 #, fuzzy
-msgid  "Time Frame"
+msgid "Time Frame"
 msgstr "الفترة الزمنية"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 #, fuzzy
-msgid  "Year"
+msgid "Year"
 msgstr "السنة"
 
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
 #, fuzzy
-msgid  "Month"
+msgid "Month"
 msgstr "الشهر"
 
 #: schedule/schedule.src#DLGCALOWNDATA.STRING.TEXT
 #, fuzzy
-msgid  "Personal Data"
+msgid "Personal Data"
 msgstr "البيانات الشخصية"
 
 #: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
 #, fuzzy
-msgid  "~Insert"
+msgid "~Insert"
 msgstr "إ~دراج"
 
 #: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
 #, fuzzy
-msgid  "~Delete"
+msgid "~Delete"
 msgstr "ح~ذف"
 
 #: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
 #, fuzzy
-msgid  "New Event"
+msgid "New Event"
 msgstr "حدث جديد"
 
 #: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
 #, fuzzy
-msgid  "Event"
+msgid "Event"
 msgstr "حدث"
 
 #: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
 #, fuzzy
-msgid  "One-Time"
+msgid "One-Time"
 msgstr "مرة واحدة"
 
 #: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
 #, fuzzy
-msgid  "Day"
+msgid "Day"
 msgstr "اليوم"
 
 #: schedule/schedule.src#DLGCALEVENTMONTH.STRING.TEXT
 #, fuzzy
-msgid  "Month"
+msgid "Month"
 msgstr "الشهر"
 
 #: schedule/schedule.src#DLGCALEVENTYEAR.STRING.TEXT
 #, fuzzy
-msgid  "Year"
+msgid "Year"
 msgstr "السنة"
 
 #: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
 #, fuzzy
-msgid  "usa.bmp"
+msgid "usa.bmp"
 msgstr "usa.bmp"
 
 #: schedule/schedule.src#DLGSTATE.STRING.TEXT
 #, fuzzy
-msgid  "Public holidays"
+msgid "Public holidays"
 msgstr "عطل عامة"
 
 #: schedule/schedule.src#DLGMONTH.STRING.TEXT
 #, fuzzy
-msgid  "January"
+msgid "January"
 msgstr "يناير"
 
 #: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
 #, fuzzy
-msgid  "February"
+msgid "February"
 msgstr "فبراير"
 
 #: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
 #, fuzzy
-msgid  "March"
+msgid "March"
 msgstr "مارس"
 
 #: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
 #, fuzzy
-msgid  "April"
+msgid "April"
 msgstr "أبريل"
 
 #: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
 #, fuzzy
-msgid  "May"
+msgid "May"
 msgstr "مايو"
 
 #: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
 #, fuzzy
-msgid  "June"
+msgid "June"
 msgstr "يونيو"
 
 #: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
 #, fuzzy
-msgid  "July"
+msgid "July"
 msgstr "يوليو"
 
 #: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
 #, fuzzy
-msgid  "August"
+msgid "August"
 msgstr "أغسطس"
 
 #: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
 #, fuzzy
-msgid  "September"
+msgid "September"
 msgstr "سبتمبر"
 
 #: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
 #, fuzzy
-msgid  "October"
+msgid "October"
 msgstr "أكتوبر"
 
 #: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
 #, fuzzy
-msgid  "November"
+msgid "November"
 msgstr "نوفمبر"
 
 #: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
 #, fuzzy
-msgid  "December"
+msgid "December"
 msgstr "ديسمبر"
 
 #: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
 #, fuzzy
-msgid  "Yearly / Monthly Calendar"
+msgid "Yearly / Monthly Calendar"
 msgstr "تقويم سنوي/شهري"
 
 #: schedule/schedule.src#MSGCALERROR.STRING.TEXT
 #, fuzzy
-msgid  "An error occurred while creating the calendar."
+msgid "An error occurred while creating the calendar."
 msgstr "حدث خطأ أثناء إنشاء التقويم."
 
 #: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
 #, fuzzy
-msgid  "Delete event entries"
+msgid "Delete event entries"
 msgstr "حذف مدخلات الحدث"
 
 #: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
 #, fuzzy
-msgid  "Delete the selected entries?"
+msgid "Delete the selected entries?"
 msgstr "هل تريد حذف المدخالات المحددة؟"
 
 #: schedule/schedule.src#STLWORKDAY.STRING.TEXT
 #, fuzzy
-msgid  "Workweek"
+msgid "Workweek"
 msgstr "أسبوع عمل"
 
 #: schedule/schedule.src#STLWEEKEND.STRING.TEXT
 #, fuzzy
-msgid  "Weekend"
+msgid "Weekend"
 msgstr "عطلة نهاية الأسبوع"
 
 #: schedule/schedule.src#NAMECALYEAR.STRING.TEXT
 #, fuzzy
-msgid  "Calendar"
+msgid "Calendar"
 msgstr "التقويم"
 
 #: schedule/schedule.src#NAMECALMONTH.STRING.TEXT
 #, fuzzy
-msgid  "Month"
+msgid "Month"
 msgstr "الشهر"
 
 #: schedule/schedule.src#SPROGRESS.STRING.TEXT
 #, fuzzy
-msgid  "Progress:"
+msgid "Progress:"
 msgstr "التقدم:"
 
 #: template/template.src#SAMPLES.STRING.TEXT
 #, fuzzy
-msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr "للاستفادة التامة من استخدام هذا المثال، عليك بإنشاء مستند جديد باستخدام هذا القالب."
+msgid "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr ""
+"للاستفادة التامة من استخدام هذا المثال، عليك بإنشاء مستند جديد باستخدام هذا "
+"القالب."
 
 #: template/template.src#SAMPLES___1.STRING.TEXT
 #, fuzzy
-msgid  "Remarks"
+msgid "Remarks"
 msgstr "ملاحظات"
 
 #: template/template.src#STYLES.STRING.TEXT
 #, fuzzy
-msgid  "Theme Selection"
+msgid "Theme Selection"
 msgstr "اختيار السمات"
 
 #: template/template.src#STYLES___1.STRING.TEXT
 #, fuzzy
-msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr "حدث خطأ أثناء حفظ المستند الحالي في الحافظة! لن يمكن التراجع عن الإجراء القادم."
+msgid "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr ""
+"حدث خطأ أثناء حفظ المستند الحالي في الحافظة! لن يمكن التراجع عن الإجراء "
+"القادم."
 
 #: template/template.src#STYLES___2.STRING.TEXT
 #, fuzzy
-msgid  "~Cancel"
+msgid "~Cancel"
 msgstr "إل~غاء الأمر"
 
 #: template/template.src#STYLES___3.STRING.TEXT
 #, fuzzy
-msgid  "~OK"
+msgid "~OK"
 msgstr "~موافق"
 
 #: template/template.src#AGENDADLGNAME.STRING.TEXT
 #, fuzzy
-msgid  "Minutes Template"
+msgid "Minutes Template"
 msgstr "قالب مسودّة"
 
 #: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
 #, fuzzy
-msgid  "An option must be confirmed."
+msgid "An option must be confirmed."
 msgstr "يجب تأكيد أحد الخيارات."
 
 #: template/template.src#AGENDADLGFRAME.STRING.TEXT
 #, fuzzy
-msgid  "Minutes Type"
+msgid "Minutes Type"
 msgstr "نوع المسودّة"
 
 #: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
 #, fuzzy
-msgid  "Results Minutes"
+msgid "Results Minutes"
 msgstr "مسودّة نتائج"
 
 #: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
 #, fuzzy
-msgid  "Evaluation Minutes"
+msgid "Evaluation Minutes"
 msgstr "مسودّة تقييم"
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
 #, fuzzy
-msgid  "The bookmark 'Recipient' is missing."
+msgid "The bookmark 'Recipient' is missing."
 msgstr "العلامة المرجعية 'Recipient' ناقصة."
 
 #: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
 #, fuzzy
-msgid  "Form letter fields can not be included."
+msgid "Form letter fields can not be included."
 msgstr "لا يمكن شمل حقول رسالة النموذج."
 
 #: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
 #, fuzzy
-msgid  "An error has occurred."
+msgid "An error has occurred."
 msgstr "حدث خطأ"
 
 #: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
 #, fuzzy
-msgid  "Addressee"
+msgid "Addressee"
 msgstr "المستلم"
 
 #: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
 #, fuzzy
-msgid  "One recipient"
+msgid "One recipient"
 msgstr "خطاب مفرد"
 
 #: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
 #, fuzzy
-msgid  "Several recipients (address database)"
+msgid "Several recipients (address database)"
 msgstr "خطاب مسلسل (قاعدة بيانات عناوين)"
 
 #: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
 #, fuzzy
-msgid  "Use of This Template"
+msgid "Use of This Template"
 msgstr "استخدام هذا القالب"
 
 #: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
 #, fuzzy
-msgid  "Click placeholder and overwrite"
+msgid "Click placeholder and overwrite"
 msgstr "ضغط العنصر النائب والكتابة عليه"
 
 #: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
 #, fuzzy
-msgid  "Company"
+msgid "Company"
 msgstr "الشركة"
 
 #: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
 #, fuzzy
-msgid  "Department"
+msgid "Department"
 msgstr "القسم"
 
 #: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
 #, fuzzy
-msgid  "First Name"
+msgid "First Name"
 msgstr "الاسم الأول"
 
 #: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
 #, fuzzy
-msgid  "Last Name"
+msgid "Last Name"
 msgstr "اسم العائلة"
 
 #: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
 #, fuzzy
-msgid  "Street"
+msgid "Street"
 msgstr "الشارع"
 
 #: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
 #, fuzzy
-msgid  "Country"
+msgid "Country"
 msgstr "الدولة"
 
 #: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
 #, fuzzy
-msgid  "ZIP/Postal Code"
+msgid "ZIP/Postal Code"
 msgstr "الرمز البريدي"
 
 #: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
 #, fuzzy
-msgid  "City"
+msgid "City"
 msgstr "المدينة"
 
 #: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
 #, fuzzy
-msgid  "Title"
+msgid "Title"
 msgstr "المسمى الوظيفي"
 
 #: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
 #, fuzzy
-msgid  "Position"
+msgid "Position"
 msgstr "الموضع"
 
 #: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
 #, fuzzy
-msgid  "Form of Address"
+msgid "Form of Address"
 msgstr "شَكْل العنوان"
 
 #: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
 #, fuzzy
-msgid  "Initials"
+msgid "Initials"
 msgstr "الحروف البادئة"
 
 #: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
 #, fuzzy
-msgid  "Salutation"
+msgid "Salutation"
 msgstr "رسالة الترحيب"
 
 #: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
 #, fuzzy
-msgid  "Home Phone"
+msgid "Home Phone"
 msgstr "تلفون المنزل"
 
 #: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
 #, fuzzy
-msgid  "Work Phone"
+msgid "Work Phone"
 msgstr "تلفون العمل"
 
 #: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
 #, fuzzy
-msgid  "Fax"
+msgid "Fax"
 msgstr "الفاكس"
 
 #: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
 #, fuzzy
-msgid  "E-Mail"
+msgid "E-Mail"
 msgstr "البريد الإلكتروني"
 
 #: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
 #, fuzzy
-msgid  "URL"
+msgid "URL"
 msgstr "عنوان URL"
 
 #: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
+msgid "Notes"
 msgstr "ملاحظات"
 
 #: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
 #, fuzzy
-msgid  "Alt. Field 1"
+msgid "Alt. Field 1"
 msgstr "الحقل البديل1"
 
 #: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
 #, fuzzy
-msgid  "Alt. Field 2"
+msgid "Alt. Field 2"
 msgstr "الحقل البديل2"
 
 #: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
 #, fuzzy
-msgid  "Alt. Field 3"
+msgid "Alt. Field 3"
 msgstr "الحقل البديل3"
 
 #: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
 #, fuzzy
-msgid  "Alt. Field 4"
+msgid "Alt. Field 4"
 msgstr "الحقل البديل4"
 
 #: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
 #, fuzzy
-msgid  "ID"
+msgid "ID"
 msgstr "المُعرّف"
 
 #: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
 #, fuzzy
-msgid  "State"
+msgid "State"
 msgstr "الولاية"
 
 #: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
 #, fuzzy
-msgid  "Office Phone"
+msgid "Office Phone"
 msgstr "تلفون المكتب"
 
 #: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
 #, fuzzy
-msgid  "Pager"
+msgid "Pager"
 msgstr "جهاز النداء"
 
 #: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
 #, fuzzy
-msgid  "Mobile Phone"
+msgid "Mobile Phone"
 msgstr "رقم الجوّال"
 
 #: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
 #, fuzzy
-msgid  "Other Phone"
+msgid "Other Phone"
 msgstr "رقم آخر"
 
 #: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
 #, fuzzy
-msgid  "Calendar URL"
+msgid "Calendar URL"
 msgstr "عنوان URL للتقويم"
 
 #: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
 #, fuzzy
-msgid  "Invite"
+msgid "Invite"
 msgstr "دعوة"
 
 #: template/template.src#TEXTFIELD.STRING.TEXT
 #, fuzzy
-msgid  "User data field is not defined!"
+msgid "User data field is not defined!"
 msgstr "لم يتم تعيين حقل بيانات المستخدم!"
 
 #: template/template.src#NEWSLETTER.STRING.TEXT
 #, fuzzy
-msgid  "General layout"
+msgid "General layout"
 msgstr "مظهر عام"
 
 #: template/template.src#NEWSLETTER___1.STRING.TEXT
 #, fuzzy
-msgid  "Default layout"
+msgid "Default layout"
 msgstr "مظهر افتراضي"
 
 #: template/template.src#NEWSLETTER___2.STRING.TEXT
 #, fuzzy
-msgid  "Commemorative publication layout"
+msgid "Commemorative publication layout"
 msgstr "مظهر المنشور التذكاري"
 
 #: template/template.src#NEWSLETTER___3.STRING.TEXT
 #, fuzzy
-msgid  "Brochure layout"
+msgid "Brochure layout"
 msgstr "مظهر الكُراسة"
 
 #: template/template.src#NEWSLETTER___10.STRING.TEXT
 #, fuzzy
-msgid  "Format"
+msgid "Format"
 msgstr "التنسيق"
 
 #: template/template.src#NEWSLETTER___11.STRING.TEXT
 #, fuzzy
-msgid  "Single-sided"
+msgid "Single-sided"
 msgstr "ذو جانب واحد"
 
 #: template/template.src#NEWSLETTER___12.STRING.TEXT
 #, fuzzy
-msgid  "Double-sided"
+msgid "Double-sided"
 msgstr "ذو جانبين"

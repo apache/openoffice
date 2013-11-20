@@ -120,9 +120,8 @@ msgid "This statement type not supported by this database driver."
 msgstr "סוג ביטוי זה אינו נתמך ע\"י מנהל ההתקן של מסד נתונים הנוכחי."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
-#, fuzzy
-msgid "An unknown error occured."
-msgstr "אירעה שגיאה לא מוכרת."
+msgid "An unknown error occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 #, fuzzy
@@ -135,14 +134,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "לא ניתן לטעון את הספריה $filename$."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
-#, fuzzy
-msgid "An error occured while refreshing the current row."
-msgstr "התרחשה שגיאה בעת רענון השורה הנוכחית."
+msgid "An error occurred while refreshing the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
-#, fuzzy
-msgid "An error occured while getting the current row."
-msgstr "התרחש שגיאה בעת קבלת השורה הנוכחית."
+msgid "An error occurred while getting the current row."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 #, fuzzy
@@ -160,9 +157,8 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "לא ניתן להריץ את השאילתה. \"'IS NULL\" ניתן לשימוש רק עם שם עמודה."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
-#, fuzzy
-msgid "Illegal cursor movement occured."
-msgstr "אירעה תנועת סמן בלתי חוקית."
+msgid "Illegal cursor movement occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 #, fuzzy
@@ -399,9 +395,8 @@ msgid "The connection could not be created. May be the necessary data provider i
 msgstr "לא ניתן ליצור את החיבור. יכול להיות שספק הנתונים הדרושים לא הותקן."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-#, fuzzy
-msgid "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "לא יכול למחוק את האינדקס. התרחשה שגיאה לא מוכרת בעת גישה למערכת הקבצים."
+msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 #, fuzzy
@@ -688,14 +683,12 @@ msgstr ""
 "קובץ מסד הנתונים."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid "An error occured while obtaining the connection's table container."
-msgstr "התרחשה שגיאה בקבלת טבלת החיבורים."
+msgid "An error occurred while obtaining the connection's table container."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
-#, fuzzy
-msgid "An error occured while creating the table editor dialog."
-msgstr "אירעה שגיאה ביצירת הדו-שיח לעורך הטבלאות."
+msgid "An error occurred while creating the table editor dialog."
+msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 #, fuzzy
@@ -772,46 +765,6 @@ msgstr "MySQL (ODBC)"
 msgid "MySQL (Native)"
 msgstr "MySQL (Native)"
 
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Outlook Address Book"
-msgstr "פנקס הכתובות של Microsoft Outlook"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Microsoft Windows Address Book"
-msgstr "פנקס הכתובות של Microsoft Windows"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "פנקס הכתובות של SeaMonkey"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "פנקס הכתובות של Thunderbird"
-
-#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "פנקס הכתובות של LDAP"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "SeaMonkey Address Book"
-msgstr "פנקס הכתובות של SeaMonkey"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Thunderbird Address Book"
-msgstr "פנקס הכתובות של Thunderbird"
-
-#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "LDAP Address Book"
-msgstr "פנקס הכתובות של LDAP"
-
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "HSQL database engine"
@@ -822,12 +775,17 @@ msgstr "מנוע מסד נתונים HSQL"
 msgid "Mac OS X Address Book"
 msgstr "ספר הכתובות של Mac OS X"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
+msgid "Evolution Local"
+msgstr "Evolution מקומי"
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Evolution LDAP"
 msgstr "Evolution LDAP"
 
-#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "Groupwise"
 msgstr "Groupwise"
@@ -867,21 +825,6 @@ msgstr "Oracle JDBC"
 msgid "dBASE"
 msgstr "dBASE"
 
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution Local"
-msgstr "Evolution מקומי"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
-#, fuzzy
-msgid "Groupwise"
-msgstr "Groupwise"
-
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 #, fuzzy
 msgid "ADO"
@@ -896,3 +839,63 @@ msgstr "מיקרוסופט אקסס"
 #, fuzzy
 msgid "Microsoft Access 2007"
 msgstr "מיקרוסופט אקסס 2007"
+
+#, fuzzy
+#~ msgid "An unknown error occured."
+#~ msgstr "אירעה שגיאה לא מוכרת."
+
+#, fuzzy
+#~ msgid "An error occured while refreshing the current row."
+#~ msgstr "התרחשה שגיאה בעת רענון השורה הנוכחית."
+
+#, fuzzy
+#~ msgid "An error occured while getting the current row."
+#~ msgstr "התרחש שגיאה בעת קבלת השורה הנוכחית."
+
+#, fuzzy
+#~ msgid "Illegal cursor movement occured."
+#~ msgstr "אירעה תנועת סמן בלתי חוקית."
+
+#, fuzzy
+#~ msgid "The index could not be deleted. An unknown error while accessing the file system occured."
+#~ msgstr "לא יכול למחוק את האינדקס. התרחשה שגיאה לא מוכרת בעת גישה למערכת הקבצים."
+
+#, fuzzy
+#~ msgid "An error occured while obtaining the connection's table container."
+#~ msgstr "התרחשה שגיאה בקבלת טבלת החיבורים."
+
+#, fuzzy
+#~ msgid "An error occured while creating the table editor dialog."
+#~ msgstr "אירעה שגיאה ביצירת הדו-שיח לעורך הטבלאות."
+
+#, fuzzy
+#~ msgid "Microsoft Outlook Address Book"
+#~ msgstr "פנקס הכתובות של Microsoft Outlook"
+
+#, fuzzy
+#~ msgid "Microsoft Windows Address Book"
+#~ msgstr "פנקס הכתובות של Microsoft Windows"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "פנקס הכתובות של SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "פנקס הכתובות של Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "פנקס הכתובות של LDAP"
+
+#, fuzzy
+#~ msgid "SeaMonkey Address Book"
+#~ msgstr "פנקס הכתובות של SeaMonkey"
+
+#, fuzzy
+#~ msgid "Thunderbird Address Book"
+#~ msgstr "פנקס הכתובות של Thunderbird"
+
+#, fuzzy
+#~ msgid "LDAP Address Book"
+#~ msgstr "פנקס הכתובות של LDAP"
