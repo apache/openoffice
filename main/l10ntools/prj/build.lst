@@ -1,4 +1,4 @@
-tr  l10ntools		: solenv soltools	NULL
+tr  l10ntools		: solenv soltools LUCENE:lucene 	NULL
 tr  l10ntools			usr1	-  all  tr_mkout NULL
 tr  l10ntools\source		nmake	-  all  tr_src NULL
 tr  l10ntools\source\help	nmake   -  all  tr_help  NULL
