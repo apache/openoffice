@@ -273,9 +273,7 @@ namespace drawinglayer
             }
 		}
 
-		void HitTestProcessor2D::processBasePrimitive2D(
-			const primitive2d::BasePrimitive2D& rCandidate, 
-			const primitive2d::Primitive2DReference& rUnoCandidate)
+		void HitTestProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
 		{
             if(getHit())
 			{
@@ -603,12 +601,22 @@ namespace drawinglayer
 						// process sub-content, the FieldContent itself
 						process(rChildren);
 
-						// if HitState changed, the FieldContent was the reason
-						if(mpRecordFields && bOldHit != getHit())
-						{
-							// record the TextHierarchyFieldPrimitive2D hit
-							primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(*mpRecordFields, rUnoCandidate);
-						}
+                        // if HitState changed, the FieldContent was the reason
+                        if(mpRecordFields && bOldHit != getHit())
+                        {
+                            // record the TextHierarchyFieldPrimitive2D hit
+                            //
+                            // here we need to get back from a implementation object (rCandidate is a
+                            // const primitive2d::BasePrimitive2D&) to a Primitive2DReference. This potentially
+                            // looks like it *could* create a 2nd reference to only one implementation object. Luckily, the 
+                            // ref count and data part for the UNO reference is already part of the BasePrimitive2D class (using
+                            // cppu::WeakComponentImplHelper1 and there WeakComponentImplHelperBase and there
+                            // cppu::OWeakObject) and thus a new UNO reference can be created anytime and will cleanly
+                            // reference the same object
+                            const primitive2d::Primitive2DReference aUnoCandidate(const_cast< primitive2d::BasePrimitive2D* >(&rCandidate));
+
+                            primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(*mpRecordFields, aUnoCandidate);
+                        }
                     }
 
 					break;
