@@ -308,12 +308,6 @@ sub set_important_properties
     $onepropertyline = "DONTOPTIMIZELIBS" . "\t" . "0" . "\n";
     push(@{$propertyfile}, $onepropertyline);
 
-	if ( $installer::globals::sundirexists )
-	{
-		my $onepropertyline = "SUNDIREXISTS" . "\t" . "1" . "\n";
-		push(@{$propertyfile}, $onepropertyline);			
-	}
-
 	if ( $installer::globals::officedirhostname )
 	{
 		my $onepropertyline = "OFFICEDIRHOSTNAME" . "\t" . $installer::globals::officedirhostname . "\n";
@@ -325,12 +319,6 @@ sub set_important_properties
 		push(@{$propertyfile}, $onepropertyline);
 	}
 
-	if ( $installer::globals::sundirhostname )
-	{
-		my $onepropertyline = "SUNDIRHOSTNAME" . "\t" . $installer::globals::sundirhostname . "\n";
-		push(@{$propertyfile}, $onepropertyline);		
-	}
-		
 	if ( $installer::globals::desktoplinkexists )
 	{
 		my $onepropertyline = "DESKTOPLINKEXISTS" . "\t" . "1" . "\n";

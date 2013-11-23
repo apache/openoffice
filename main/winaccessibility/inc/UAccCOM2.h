@@ -19,51 +19,12 @@
  * 
  *************************************************************/
 
+#ifndef __UACCCOM2_H
+#define __UACCCOM2_H
 
+// Just a wrapper header for disabling this warning....
 
-#ifndef ADC_DISPLAY_OUTPUTSTACK_HXX
-#define ADC_DISPLAY_OUTPUTSTACK_HXX
-
-
-// USED SERVICES
-	// BASE CLASSES
-	// COMPONENTS
-#include <estack.hxx>
-	// PARAMETERS
-#include <udm/xml/xmlitem.hxx>
-
-
-class OutputStack
-{
-  public:
-    // LIFECYCLE
-                        OutputStack();
-                        ~OutputStack();
-
-    // OPERATIONS
-    void                Enter(
-                            csi::xml::Element & io_rDestination );
-    void                Leave();
-
-    // ACCESS
-    csi::xml::Element & Out() const;                  // CurOutputNode
-
-  private:
-	EStack< csi::xml::Element * >
-                        aCurDestination;        // The front element is the currently used.
-                                                //   The later ones are the parents.
-};
-
-inline csi::xml::Element &
-OutputStack::Out() const
-{
-    csv_assert( ! aCurDestination.empty() );
-    return *aCurDestination.top();
-}
-
-// IMPLEMENTATION
-
+#pragma warning( disable: 4917 )  /* a GUID can only be associated with a class, interface or namespace */
+#include "UAccCOM.h"
 
 #endif
-
-

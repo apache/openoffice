@@ -18,42 +18,39 @@
  * under the License.
  * 
  *************************************************************/
+ 
+#ifndef __RESIDGENERATOR_HXX
+#define __RESIDGENERATOR_HXX
 
-#include <precomp.h>
-#include "easywri.hxx"
+#define PRIMARY_RESID 0x00000001
+#include <deque>
 
-
-// NOT FULLY DEFINED SERVICES
-
-
-using namespace csi::html;
-
-
-EasyWriter::EasyWriter()
+//ResID i.e. MSAA child ID,
+//this class is responsible for generating a child ID
+class ResIDGenerator
 {
+private:
+
+    long min;
+    long max;
+    std::deque<long> subList;
+
+public:
+
+    ResIDGenerator( long minNum = PRIMARY_RESID,long maxNum = PRIMARY_RESID);
+    long GenerateNewResID();
+    void SetSub(long number)
+    {
+        subList.push_back(number);
+    };
+    virtual ~ResIDGenerator();
+
+};
+
+inline ResIDGenerator::ResIDGenerator( long minNum ,long maxNum )
+{
+    min = minNum;
+    max = maxNum;
 }
 
-EasyWriter::~EasyWriter()
-{
-}
-
-void
-EasyWriter::Open_OutputNode( csi::xml::Element & io_rDestination )
-{
-    aCurDestination.push(&io_rDestination);
-}
-
-void
-EasyWriter::Finish_OutputNode()
-{
-    csv_assert( NOT aCurDestination.empty() );
-    aCurDestination.pop();
-}
-
-csi::xml::Element &
-EasyWriter::Out()
-{
-    csv_assert( ! aCurDestination.empty() );
-    return *aCurDestination.top();
-}
-
+#endif

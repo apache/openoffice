@@ -18,42 +18,10 @@
  * under the License.
  * 
  *************************************************************/
+ 
+#ifndef __G_MSACC_HXX
+#define __G_MSACC_HXX
 
-#include <precomp.h>
-#include "easywri.hxx"
+extern AccTopWindowListener* g_pTop;
 
-
-// NOT FULLY DEFINED SERVICES
-
-
-using namespace csi::html;
-
-
-EasyWriter::EasyWriter()
-{
-}
-
-EasyWriter::~EasyWriter()
-{
-}
-
-void
-EasyWriter::Open_OutputNode( csi::xml::Element & io_rDestination )
-{
-    aCurDestination.push(&io_rDestination);
-}
-
-void
-EasyWriter::Finish_OutputNode()
-{
-    csv_assert( NOT aCurDestination.empty() );
-    aCurDestination.pop();
-}
-
-csi::xml::Element &
-EasyWriter::Out()
-{
-    csv_assert( ! aCurDestination.empty() );
-    return *aCurDestination.top();
-}
-
+#endif
