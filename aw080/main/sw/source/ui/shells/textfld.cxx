@@ -45,6 +45,7 @@
 #include <fldwrap.hxx>
 #include <redline.hxx>
 #include <view.hxx>
+#include <viewopt.hxx>
 #include <wrtsh.hxx>
 #include <basesh.hxx>
 #include <wrtsh.hxx>
@@ -167,22 +168,37 @@ void SwTextShell::ExecField(SfxRequest &rReq)
 		}
 		break;
 
-		case FN_GOTO_NEXT_INPUTFLD:
-		case FN_GOTO_PREV_INPUTFLD:
-			{
-				sal_Bool bRet = sal_False;
-				SwFieldType* pFld = rSh.GetFldType( 0, RES_INPUTFLD );
-				if( pFld && rSh.MoveFldType( pFld,
-							FN_GOTO_NEXT_INPUTFLD == nSlot ))
-				{
-					rSh.ClearMark();
-					rSh.StartInputFldDlg( rSh.GetCurFld(), sal_False );
-					bRet = sal_True;
-				}
+        case FN_GOTO_NEXT_INPUTFLD:
+        case FN_GOTO_PREV_INPUTFLD:
+            {
+                sal_Bool bRet = sal_False;
+                SwFieldType* pFld = rSh.GetFldType( 0, RES_INPUTFLD );
+                const bool bAddSetExpressionFlds = !( rSh.GetViewOptions()->IsReadonly() );
+                if ( pFld != NULL
+                     && rSh.MoveFldType(
+                            pFld,
+                            FN_GOTO_NEXT_INPUTFLD == nSlot,
+                            USHRT_MAX,
+                            bAddSetExpressionFlds ) )
+                {
+                    rSh.ClearMark();
+                    if ( dynamic_cast<SwInputField*>(rSh.GetCurFld( true )) != NULL )
+                    {
+                        rSh.SttSelect();
+                        rSh.SelectTxt(
+                            rSh.StartOfInputFldAtPos( *(rSh.GetCrsr()->Start()) ) + 1,
+                            rSh.EndOfInputFldAtPos( *(rSh.GetCrsr()->Start()) ) - 1 );
+                    }
+                    else
+                    {
+                        rSh.StartInputFldDlg( rSh.GetCurFld( true ), sal_False );
+                    }
+                    bRet = sal_True;
+                }
 
-				rReq.SetReturnValue( SfxBoolItem( nSlot, bRet ));
-			}
-			break;
+                rReq.SetReturnValue( SfxBoolItem( nSlot, bRet ));
+            }
+            break;
 
 		default:
 			bMore = sal_True;
@@ -340,7 +356,7 @@ void SwTextShell::ExecField(SfxRequest &rReq)
 			break;
 			case FN_POSTIT:
 			{
-	            SwPostItField* pPostIt = (SwPostItField*)aFldMgr.GetCurFld();
+	            SwPostItField* pPostIt = dynamic_cast<SwPostItField*>(aFldMgr.GetCurFld());
       	        sal_Bool bNew = !(pPostIt && pPostIt->GetTyp()->Which() == RES_POSTITFLD);
 				if (bNew || GetView().GetPostItMgr()->IsAnswer())
 				{
@@ -605,42 +621,36 @@ FIELD_INSERT:
 
 void SwTextShell::StateField( SfxItemSet &rSet )
 {
-	SwWrtShell& rSh = GetShell();
-	SfxWhichIter aIter( rSet );
-	const SwField* pField = 0;
-	int bGetField = sal_False;
-	sal_uInt16 nWhich = aIter.FirstWhich();
+    SwWrtShell& rSh = GetShell();
+    SfxWhichIter aIter( rSet );
+    const SwField* pField = 0;
+    int bGetField = sal_False;
+    sal_uInt16 nWhich = aIter.FirstWhich();
 
-	while (nWhich)
-	{
-		switch (nWhich)
-		{
-            case FN_DELETE_COMMENT:
-			case FN_DELETE_NOTE_AUTHOR:
-			case FN_DELETE_ALL_NOTES:
-			case FN_HIDE_NOTE:
-			case FN_HIDE_NOTE_AUTHOR:
-			case FN_HIDE_ALL_NOTES:
-				{
-					SwPostItMgr* pPostItMgr = GetView().GetPostItMgr();
-					if ( !pPostItMgr )
-						rSet.InvalidateItem( nWhich );
-                    else if ( !pPostItMgr->HasActiveSidebarWin() )
-					{
-                        rSet.InvalidateItem( FN_DELETE_COMMENT );
-						rSet.InvalidateItem( FN_HIDE_NOTE );
-					}
-				}
-			break;
-			case FN_EDIT_FIELD:
-			{
-                /* #108536# Fields can be selected, too now. Removed
+    while (nWhich)
+    {
+        switch (nWhich)
+        {
+        case FN_DELETE_COMMENT:
+        case FN_DELETE_NOTE_AUTHOR:
+        case FN_DELETE_ALL_NOTES:
+        case FN_HIDE_NOTE:
+        case FN_HIDE_NOTE_AUTHOR:
+        case FN_HIDE_ALL_NOTES:
+            {
+                SwPostItMgr* pPostItMgr = GetView().GetPostItMgr();
+                if ( !pPostItMgr )
+                    rSet.InvalidateItem( nWhich );
+                else if ( !pPostItMgr->HasActiveSidebarWin() )
+                {
+                    rSet.InvalidateItem( FN_DELETE_COMMENT );
+                    rSet.InvalidateItem( FN_HIDE_NOTE );
+                }
+            }
+            break;
 
-                if( rSh.HasSelection() )
- 					rSet.DisableItem(nWhich);
-                else ...
-                */
-
+        case FN_EDIT_FIELD:
+            {
                 if( !bGetField )
                 {
                     pField = rSh.GetCurFld();
@@ -654,65 +664,111 @@ void SwTextShell::StateField( SfxItemSet &rSet )
                     RES_AUTHORITY == nTempWhich )
                     rSet.DisableItem( nWhich );
                 else if( RES_DDEFLD == nTempWhich &&
-                        !((SwDDEFieldType*)pField->GetTyp())->GetBaseLink().IsVisible())
+                    !((SwDDEFieldType*)pField->GetTyp())->GetBaseLink().IsVisible())
                 {
                     // nested links cannot be edited
                     rSet.DisableItem( nWhich );
                 }
-			}
-			break;
-			case FN_EXECUTE_MACROFIELD:
-			{
-				if(!bGetField)
-				{
-					pField = rSh.GetCurFld();
-					bGetField = sal_True;
-				}
-				if(!pField || pField->GetTyp()->Which() != RES_MACROFLD)
-					rSet.DisableItem(nWhich);
-			}
-			break;
+            }
+            break;
 
-			case FN_INSERT_FIELD:
-			{
-				SfxViewFrame* pVFrame = GetView().GetViewFrame();
-                //#i5788# prevent closing of the field dialog while a modal dialog ( Input field dialog ) is active
-                if(!pVFrame->IsInModalMode() &&
+        case FN_EXECUTE_MACROFIELD:
+            {
+                if(!bGetField)
+                {
+                    pField = rSh.GetCurFld();
+                    bGetField = sal_True;
+                }
+                if(!pField || pField->GetTyp()->Which() != RES_MACROFLD)
+                    rSet.DisableItem(nWhich);
+            }
+            break;
+
+        case FN_INSERT_FIELD:
+            {
+                if ( rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+                else
+                {
+                    SfxViewFrame* pVFrame = GetView().GetViewFrame();
+                    //#i5788# prevent closing of the field dialog while a modal dialog ( Input field dialog ) is active
+                    if(!pVFrame->IsInModalMode() &&
                         pVFrame->KnowsChildWindow(FN_INSERT_FIELD) && !pVFrame->HasChildWindow(FN_INSERT_FIELD_DATA_ONLY) )
-					rSet.Put(SfxBoolItem( FN_INSERT_FIELD, pVFrame->HasChildWindow(nWhich)));
-				else
-					rSet.DisableItem(FN_INSERT_FIELD);
-			}
-			break;
-			case FN_INSERT_REF_FIELD:
-			{
-				SfxViewFrame* pVFrame = GetView().GetViewFrame();
-				if (!pVFrame->KnowsChildWindow(FN_INSERT_FIELD))
-					rSet.DisableItem(FN_INSERT_REF_FIELD);
-			}
-			break;
-			case FN_INSERT_FIELD_CTRL:
-				rSet.Put(SfxBoolItem( nWhich, GetView().GetViewFrame()->HasChildWindow(FN_INSERT_FIELD)));
-			break;
-			case FN_REDLINE_COMMENT:
-				if (!rSh.GetCurrRedline())
-					rSet.DisableItem(nWhich);
-				break;
-			case FN_POSTIT :
-			case FN_JAVAEDIT :
-				sal_Bool bCurField = sal_False;
-                pField = rSh.GetCurFld();
-				if(nWhich == FN_POSTIT)
-					bCurField = pField && pField->GetTyp()->Which() == RES_POSTITFLD;
-				else
-					bCurField = pField && pField->GetTyp()->Which() == RES_SCRIPTFLD;
+                        rSet.Put(SfxBoolItem( FN_INSERT_FIELD, pVFrame->HasChildWindow(nWhich)));
+                    else
+                        rSet.DisableItem(FN_INSERT_FIELD);
+                }
+            }
+            break;
 
-				if(!bCurField && rSh.IsReadOnlyAvailable() && rSh.HasReadonlySel() )
-					rSet.DisableItem(nWhich);
-			break;
-		}
-		nWhich = aIter.NextWhich();
-	}
+        case FN_INSERT_REF_FIELD:
+            {
+                SfxViewFrame* pVFrame = GetView().GetViewFrame();
+                if ( !pVFrame->KnowsChildWindow(FN_INSERT_FIELD)
+                     || rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(FN_INSERT_REF_FIELD);
+                }
+            }
+            break;
+
+        case FN_INSERT_FIELD_CTRL:
+                if ( rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+                else
+                {
+                    rSet.Put(SfxBoolItem( nWhich, GetView().GetViewFrame()->HasChildWindow(FN_INSERT_FIELD)));
+                }
+            break;
+
+        case FN_REDLINE_COMMENT:
+            if (!rSh.GetCurrRedline())
+                rSet.DisableItem(nWhich);
+            break;
+
+        case FN_POSTIT :
+        case FN_JAVAEDIT :
+            {
+                sal_Bool bCurField = sal_False;
+                pField = rSh.GetCurFld();
+                if(nWhich == FN_POSTIT)
+                    bCurField = pField && pField->GetTyp()->Which() == RES_POSTITFLD;
+                else
+                    bCurField = pField && pField->GetTyp()->Which() == RES_SCRIPTFLD;
+
+                if( !bCurField && rSh.IsReadOnlyAvailable() && rSh.HasReadonlySel() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+                else if ( rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+            }
+
+            break;
+
+        case FN_INSERT_FLD_AUTHOR:
+        case FN_INSERT_FLD_DATE:
+        case FN_INSERT_FLD_PGCOUNT:
+        case FN_INSERT_FLD_PGNUMBER:
+        case FN_INSERT_FLD_TIME:
+        case FN_INSERT_FLD_TITLE:
+        case FN_INSERT_FLD_TOPIC:
+        case FN_INSERT_DBFIELD:
+            if ( rSh.CrsrInsideInputFld() )
+            {
+                rSet.DisableItem(nWhich);
+            }
+            break;
+
+        }
+        nWhich = aIter.NextWhich();
+    }
 }
 
 /*---------------------------------------------------------------------------

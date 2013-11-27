@@ -264,13 +264,15 @@ sal_Int8 SwEditWin::ExecuteDrop( const ExecuteDropEvent& rEvt )
 
 sal_uInt16 SwEditWin::GetDropDestination( const Point& rPixPnt, SdrObject ** ppObj )
 {
-	SwWrtShell &rSh = rView.GetWrtShell();
-	const Point aDocPt( PixelToLogic( rPixPnt ) );
-	if( rSh.ChgCurrPam( aDocPt ) || rSh.IsOverReadOnlyPos( aDocPt ) )
-		return 0;
+    SwWrtShell &rSh = rView.GetWrtShell();
+    const Point aDocPt( PixelToLogic( rPixPnt ) );
+    if( rSh.ChgCurrPam( aDocPt )
+        || rSh.IsOverReadOnlyPos( aDocPt )
+        || rSh.DocPtInsideInputFld( aDocPt ) )
+        return 0;
 
-	SdrObject *pObj = NULL;
-	const ObjCntType eType = rSh.GetObjCntType( aDocPt, pObj );
+    SdrObject *pObj = NULL;
+    const ObjCntType eType = rSh.GetObjCntType( aDocPt, pObj );
 
 	//Drop auf OutlinerView (TextEdit im Drawing) soll diese selbst entscheiden!
 	if( pObj )

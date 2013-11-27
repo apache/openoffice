@@ -2092,10 +2092,10 @@ CHECKTABLE(pTblNd->GetTable())
 					nDelPos = pUndo->GetDestSttCntnt() - 1;
                 }
                 pUndo->UndoImpl(rContext);
-				if( pUndo->IsMoveRange() )
-				{
-					// den ueberfluessigen Node loeschen
-					aIdx = pUndo->GetEndNode();
+                if( pUndo->IsMoveRange() )
+                {
+                    // den ueberfluessigen Node loeschen
+                    aIdx = pUndo->GetEndNode();
                     SwCntntNode *pCNd = aIdx.GetNode().GetCntntNode();
                     if( pCNd )
                     {
@@ -2104,23 +2104,20 @@ CHECKTABLE(pTblNd->GetTable())
                         if( pMove )
                             pCNd->MoveTo( *pMove );
                     }
-					rDoc.GetNodes().Delete( aIdx, 1 );
-				}
-				else if( pTxtNd )
-				{
-					// evt. noch ueberflussige Attribute loeschen
-					SwIndex aTmpIdx( pTxtNd, nDelPos );
-					if( pTxtNd->GetpSwpHints() && pTxtNd->GetpSwpHints()->Count() )
-						pTxtNd->RstAttr( aTmpIdx, pTxtNd->GetTxt().Len() -
-															nDelPos + 1 );
-					// das Trennzeichen loeschen
+                    rDoc.GetNodes().Delete( aIdx, 1 );
+                }
+                else if( pTxtNd )
+                {
+                    // evt. noch ueberflussige Attribute loeschen
+                    SwIndex aTmpIdx( pTxtNd, nDelPos );
+                    if( pTxtNd->GetpSwpHints() && pTxtNd->GetpSwpHints()->Count() )
+                        pTxtNd->RstTxtAttr( aTmpIdx, pTxtNd->GetTxt().Len() - nDelPos + 1 );
+                    // das Trennzeichen loeschen
                     pTxtNd->EraseText( aTmpIdx, 1 );
                 }
-//				delete pUndo;
 DUMPDOC( &rDoc, String( "d:\\tmp\\tab_") + String( aNewSttNds.Count() - i ) +
 				String(".db") )
 			}
-//			pMoves->Remove( 0, pMoves->Count() );
 			nIdx = pBox->GetSttIdx();
 		}
 		else

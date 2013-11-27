@@ -154,35 +154,39 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
 	if(pArgs)
 		pArgs->GetItemState(nSlot, sal_False, &pItem );
 
-	switch( nSlot )
-	{
+    switch( nSlot )
+    {
     case FN_INSERT_STRING:
-		if( pItem )
-			rSh.InsertByWord(((const SfxStringItem *)pItem)->GetValue());
-    break;
-    case FN_INSERT_SOFT_HYPHEN:
-		if( CHAR_SOFTHYPHEN != rSh.SwCrsrShell::GetChar( sal_True, 0 ) &&
-			CHAR_SOFTHYPHEN != rSh.SwCrsrShell::GetChar( sal_True, -1 ))
-			rSh.Insert( String( CHAR_SOFTHYPHEN ) );
-		break;
+        if( pItem )
+            rSh.InsertByWord(((const SfxStringItem *)pItem)->GetValue());
+        break;
 
-	case FN_INSERT_HARDHYPHEN:
-	case FN_INSERT_HARD_SPACE:
-		{
-			sal_Unicode cIns = FN_INSERT_HARD_SPACE == nSlot ? CHAR_HARDBLANK
-															 : CHAR_HARDHYPHEN;
+    case FN_INSERT_SOFT_HYPHEN:
+        if( CHAR_SOFTHYPHEN != rSh.SwCrsrShell::GetChar( sal_True, 0 ) &&
+            CHAR_SOFTHYPHEN != rSh.SwCrsrShell::GetChar( sal_True, -1 ))
+            rSh.Insert( String( CHAR_SOFTHYPHEN ) );
+        break;
+
+    case FN_INSERT_HARDHYPHEN:
+    case FN_INSERT_HARD_SPACE:
+        {
+            const sal_Unicode cIns = FN_INSERT_HARD_SPACE == nSlot ? CHAR_HARDBLANK : CHAR_HARDHYPHEN;
 
             SvxAutoCorrCfg* pACfg = SvxAutoCorrCfg::Get();
             SvxAutoCorrect* pACorr = pACfg->GetAutoCorrect();
-            if( pACorr && pACfg->IsAutoFmtByInput() &&
-                    pACorr->IsAutoCorrFlag( CptlSttSntnc | CptlSttWrd |
-								AddNonBrkSpace | ChgOrdinalNumber |
-                                ChgToEnEmDash | SetINetAttr | Autocorrect ))
-				rSh.AutoCorrect( *pACorr, cIns );
-			else
-				rSh.Insert( String( cIns ) );
-		}
-		break;
+            if( pACorr && pACfg->IsAutoFmtByInput()
+                && pACorr->IsAutoCorrFlag(
+                    CptlSttSntnc | CptlSttWrd | AddNonBrkSpace | ChgOrdinalNumber | ChgToEnEmDash | SetINetAttr | Autocorrect ) )
+            {
+                rSh.AutoCorrect( *pACorr, cIns );
+            }
+            else
+            {
+                rSh.Insert( String( cIns ) );
+            }
+        }
+        break;
+
     case SID_INSERT_RLM :
     case SID_INSERT_LRM :
     case SID_INSERT_ZWNBSP :
@@ -199,30 +203,46 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
         rSh.Insert( String( cIns ) );
     }
     break;
-	case FN_INSERT_BREAK:
-		rSh.SplitNode();
+
+    case FN_INSERT_BREAK:
+        {
+            if( !rSh.CrsrInsideInputFld() )
+            {
+                rSh.SplitNode();
+            }
+            else
+            {
+                rSh.InsertLineBreak();
+            }
+        }
         rReq.Done();
-	break;
-	case FN_INSERT_PAGEBREAK:
-		rSh.InsertPageBreak();
+        break;
+
+    case FN_INSERT_PAGEBREAK:
+        rSh.InsertPageBreak();
         rReq.Done();
-	break;
-	case FN_INSERT_LINEBREAK:
-		rSh.InsertLineBreak();
+        break;
+
+    case FN_INSERT_LINEBREAK:
+        rSh.InsertLineBreak();
         rReq.Done();
-	break;
-	case FN_INSERT_COLUMN_BREAK:
-		rSh.InsertColumnBreak();
+        break;
+
+    case FN_INSERT_COLUMN_BREAK:
+        rSh.InsertColumnBreak();
         rReq.Done();
-	break;
-	case SID_HYPERLINK_SETLINK:
-		if (pItem)
-			InsertHyperlink(*((const SvxHyperlinkItem *)pItem));
+        break;
+
+    case SID_HYPERLINK_SETLINK:
+        if (pItem)
+            InsertHyperlink(*((const SvxHyperlinkItem *)pItem));
         rReq.Done();
-		break;
-	case SID_INSERT_AVMEDIA:
-		rReq.SetReturnValue(SfxBoolItem(nSlot, InsertMediaDlg( rReq )));
-		break;
+        break;
+
+    case SID_INSERT_AVMEDIA:
+        rReq.SetReturnValue(SfxBoolItem(nSlot, InsertMediaDlg( rReq )));
+        break;
+
 	case  SID_INSERT_SOUND:
 	case  SID_INSERT_VIDEO:
 	{
@@ -262,6 +282,7 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
 		}
 	}
 	break;
+
 	case SID_INSERT_OBJECT:
 	case SID_INSERT_PLUGIN:
     {
@@ -709,7 +730,7 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
 			rSh.SplitNode( sal_False, sal_False );
 			rSh.SplitNode( sal_False, sal_False );
 			rSh.Left(CRSR_SKIP_CHARS, sal_False, 1, sal_False );
-			rSh.SetAttr(SvxAdjustItem(SVX_ADJUST_CENTER,RES_PARATR_ADJUST ));
+			rSh.SetAttrItem(SvxAdjustItem(SVX_ADJUST_CENTER,RES_PARATR_ADJUST ));
             if(GRFILTER_OK == GetView().InsertGraphic(sPath, aEmptyStr, sal_True, 0, 0 ))
 				bRet = sal_True;
 			rSh.EnterStdMode();
@@ -749,144 +770,163 @@ bool lcl_IsMarkInSameSection( SwWrtShell& rWrtSh, const SwSection* pSect )
 
 void SwTextShell::StateInsert( SfxItemSet &rSet )
 {
-	sal_uInt16 nHtmlMode = ::GetHtmlMode(GetView().GetDocShell());
-	SfxWhichIter aIter( rSet );
-	SwWrtShell &rSh = GetShell();
-	sal_uInt16 nWhich = aIter.FirstWhich();
-	SvtModuleOptions aMOpt;
+    sal_uInt16 nHtmlMode = ::GetHtmlMode(GetView().GetDocShell());
+    SfxWhichIter aIter( rSet );
+    SwWrtShell &rSh = GetShell();
+    sal_uInt16 nWhich = aIter.FirstWhich();
+    SvtModuleOptions aMOpt;
     SfxObjectCreateMode eCreateMode =
                         GetView().GetDocShell()->GetCreateMode();
 
     rSh.Push();
     const sal_Bool bCrsrInHidden = rSh.SelectHiddenRange();
-    // --> OD 2009-08-05 #i103839#, #b6855246#
-    // Do not call method <SwCrsrShell::Pop(..)> with 1st parameter = <sal_False>
-    // in order to avoid that the view jumps to the visible cursor.
     rSh.Pop();
-    // <--
 
     while ( nWhich )
-	{
-		switch ( nWhich )
-		{
-			case SID_INSERT_SOUND:
-			case SID_INSERT_VIDEO:
-                /*!SvxPluginFileDlg::IsAvailable( nWhich ) ||
+    {
+        switch ( nWhich )
+        {
+        case SID_INSERT_AVMEDIA:
+        case SID_INSERT_SOUND:
+        case SID_INSERT_VIDEO:
+            if ( GetShell().IsSelFrmMode()
+                 || GetShell().CrsrInsideInputFld()
+                 || SFX_CREATE_MODE_EMBEDDED == eCreateMode
+                 || bCrsrInHidden )
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
 
-                discussed with mba: for performance reasons we skip the IsAvailable call here
-                */
-				if ( GetShell().IsSelFrmMode() ||
-                     SFX_CREATE_MODE_EMBEDDED == eCreateMode || bCrsrInHidden )
-				{
-					rSet.DisableItem( nWhich );
-				}
-				break;
+        case SID_INSERT_DIAGRAM:
+            if( !aMOpt.IsChart()
+                || GetShell().CrsrInsideInputFld()
+                || eCreateMode == SFX_CREATE_MODE_EMBEDDED
+                || bCrsrInHidden )
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
 
-			case SID_INSERT_DIAGRAM:
-                if( !aMOpt.IsChart() || eCreateMode == SFX_CREATE_MODE_EMBEDDED || bCrsrInHidden )
-				{
-					rSet.DisableItem( nWhich );
-				}
-				break;
-
-			case FN_INSERT_SMA:
-                if( !aMOpt.IsMath() || eCreateMode == SFX_CREATE_MODE_EMBEDDED || bCrsrInHidden )
-				{
-					rSet.DisableItem( nWhich );
-				}
-				break;
-
-			case SID_INSERT_FLOATINGFRAME:
-			case SID_INSERT_OBJECT:
-			case SID_INSERT_PLUGIN:
-			{
-				if( eCreateMode == SFX_CREATE_MODE_EMBEDDED || bCrsrInHidden )
+            case FN_INSERT_SMA:
+                if( !aMOpt.IsMath()
+                    || eCreateMode == SFX_CREATE_MODE_EMBEDDED
+                    || bCrsrInHidden
+                    || rSh.CrsrInsideInputFld() )
                 {
-					rSet.DisableItem( nWhich );
+                    rSet.DisableItem( nWhich );
                 }
-				else if( GetShell().IsSelFrmMode())
-					rSet.DisableItem( nWhich );
-				else if(SID_INSERT_FLOATINGFRAME == nWhich && nHtmlMode&HTMLMODE_ON)
-				{
-					SvxHtmlOptions* pHtmlOpt = SvxHtmlOptions::Get();
-					sal_uInt16 nExport = pHtmlOpt->GetExportMode();
-					if(HTML_CFG_MSIE_40 != nExport && HTML_CFG_WRITER != nExport )
-						rSet.DisableItem(nWhich);
-				}
-			}
-			break;
-			case FN_INSERT_FRAME_INTERACT_NOCOL :
-			case FN_INSERT_FRAME_INTERACT:
-			{
-				if ( GetShell().IsSelFrmMode() ||
-					(0 != (nHtmlMode & HTMLMODE_ON) && 0 == (nHtmlMode & HTMLMODE_SOME_ABS_POS)) || bCrsrInHidden )
-					rSet.DisableItem(nWhich);
-			}
-			break;
-			case SID_HYPERLINK_GETLINK:
-				{
-					SfxItemSet aSet(GetPool(), RES_TXTATR_INETFMT, RES_TXTATR_INETFMT);
+                break;
+
+            case SID_INSERT_FLOATINGFRAME:
+            case SID_INSERT_OBJECT:
+            case SID_INSERT_PLUGIN:
+                {
+                    if( eCreateMode == SFX_CREATE_MODE_EMBEDDED || bCrsrInHidden )
+                    {
+                        rSet.DisableItem( nWhich );
+                    }
+                    else if( GetShell().IsSelFrmMode()
+                             || GetShell().CrsrInsideInputFld() )
+                    {
+                        rSet.DisableItem( nWhich );
+                    }
+                    else if(SID_INSERT_FLOATINGFRAME == nWhich && nHtmlMode&HTMLMODE_ON)
+                    {
+                        SvxHtmlOptions* pHtmlOpt = SvxHtmlOptions::Get();
+                        sal_uInt16 nExport = pHtmlOpt->GetExportMode();
+                        if(HTML_CFG_MSIE_40 != nExport && HTML_CFG_WRITER != nExport )
+                            rSet.DisableItem(nWhich);
+                    }
+                }
+                break;
+
+            case FN_INSERT_FRAME_INTERACT_NOCOL :
+            case FN_INSERT_FRAME_INTERACT:
+                {
+                    if( GetShell().IsSelFrmMode()
+                        || GetShell().CrsrInsideInputFld()
+                        || ( 0 != (nHtmlMode & HTMLMODE_ON)
+                             && 0 == (nHtmlMode & HTMLMODE_SOME_ABS_POS) )
+                        || bCrsrInHidden )
+                        rSet.DisableItem(nWhich);
+                }
+                break;
+
+            case SID_HYPERLINK_GETLINK:
+                {
+                    SfxItemSet aSet(GetPool(), RES_TXTATR_INETFMT, RES_TXTATR_INETFMT);
                     rSh.GetCurAttr( aSet );
 
-					SvxHyperlinkItem aHLinkItem;
-					const SfxPoolItem* pItem;
-					if(SFX_ITEM_SET == aSet.GetItemState(RES_TXTATR_INETFMT, sal_False, &pItem))
-					{
-						const SwFmtINetFmt* pINetFmt = (const SwFmtINetFmt*)pItem;
-						aHLinkItem.SetURL(pINetFmt->GetValue());
-						aHLinkItem.SetTargetFrame(pINetFmt->GetTargetFrame());
-						aHLinkItem.SetIntName(pINetFmt->GetName());
-						const SvxMacro *pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSEOVER_OBJECT );
-						if( pMacro )
-							aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSEOVER_OBJECT, *pMacro);
+                    SvxHyperlinkItem aHLinkItem;
+                    const SfxPoolItem* pItem;
+                    if(SFX_ITEM_SET == aSet.GetItemState(RES_TXTATR_INETFMT, sal_False, &pItem))
+                    {
+                        const SwFmtINetFmt* pINetFmt = (const SwFmtINetFmt*)pItem;
+                        aHLinkItem.SetURL(pINetFmt->GetValue());
+                        aHLinkItem.SetTargetFrame(pINetFmt->GetTargetFrame());
+                        aHLinkItem.SetIntName(pINetFmt->GetName());
+                        const SvxMacro *pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSEOVER_OBJECT );
+                        if( pMacro )
+                            aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSEOVER_OBJECT, *pMacro);
 
-						pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSECLICK_OBJECT );
-						if( pMacro )
-							aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSECLICK_OBJECT, *pMacro);
+                        pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSECLICK_OBJECT );
+                        if( pMacro )
+                            aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSECLICK_OBJECT, *pMacro);
 
-						pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSEOUT_OBJECT );
-						if( pMacro )
-							aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSEOUT_OBJECT, *pMacro);
+                        pMacro = pINetFmt->GetMacro( SFX_EVENT_MOUSEOUT_OBJECT );
+                        if( pMacro )
+                            aHLinkItem.SetMacro(HYPERDLG_EVENT_MOUSEOUT_OBJECT, *pMacro);
 
-						// Text des Links besorgen
-						rSh.StartAction();
-						rSh.CreateCrsr();
-						rSh.SwCrsrShell::SelectTxtAttr(RES_TXTATR_INETFMT,sal_True);
-						String sLinkName = rSh.GetSelTxt();
-						aHLinkItem.SetName(sLinkName);
-						aHLinkItem.SetInsertMode(HLINK_FIELD);
-						rSh.DestroyCrsr();
-						rSh.EndAction();
-					}
-					else
-					{
-						String sReturn = rSh.GetSelTxt();
-						sReturn.Erase(255);
-						sReturn.EraseTrailingChars();
-						aHLinkItem.SetName(sReturn);
-					}
+                        // Text des Links besorgen
+                        rSh.StartAction();
+                        rSh.CreateCrsr();
+                        rSh.SwCrsrShell::SelectTxtAttr(RES_TXTATR_INETFMT,sal_True);
+                        String sLinkName = rSh.GetSelTxt();
+                        aHLinkItem.SetName(sLinkName);
+                        aHLinkItem.SetInsertMode(HLINK_FIELD);
+                        rSh.DestroyCrsr();
+                        rSh.EndAction();
+                    }
+                    else
+                    {
+                        String sReturn = rSh.GetSelTxt();
+                        sReturn.Erase(255);
+                        sReturn.EraseTrailingChars();
+                        aHLinkItem.SetName(sReturn);
+                    }
 
-					aHLinkItem.SetInsertMode((SvxLinkInsertMode)(aHLinkItem.GetInsertMode() |
-						((nHtmlMode & HTMLMODE_ON) != 0 ? HLINK_HTMLMODE : 0)));
-					aHLinkItem.SetMacroEvents (	HYPERDLG_EVENT_MOUSEOVER_OBJECT|
-								HYPERDLG_EVENT_MOUSECLICK_OBJECT | HYPERDLG_EVENT_MOUSEOUT_OBJECT );
+                    aHLinkItem.SetInsertMode((SvxLinkInsertMode)(aHLinkItem.GetInsertMode() |
+                        ((nHtmlMode & HTMLMODE_ON) != 0 ? HLINK_HTMLMODE : 0)));
+                    aHLinkItem.SetMacroEvents (	HYPERDLG_EVENT_MOUSEOVER_OBJECT|
+                        HYPERDLG_EVENT_MOUSECLICK_OBJECT | HYPERDLG_EVENT_MOUSEOUT_OBJECT );
 
-					rSet.Put(aHLinkItem);
-				}
-				break;
+                    rSet.Put(aHLinkItem);
+                }
+                break;
 
-			case FN_INSERT_FRAME:
-				if(rSh.IsSelFrmMode())
-				{
-					const int nSel = rSh.GetSelectionType();
-					if( ((nsSelectionType::SEL_GRF | nsSelectionType::SEL_OLE ) & nSel ) || bCrsrInHidden )
-						rSet.DisableItem(nWhich);
-				}
-			break;
-			case FN_INSERT_HRULER :
-                if((rSh.IsReadOnlyAvailable() && rSh.HasReadonlySel()) || bCrsrInHidden )
-					rSet.DisableItem(nWhich);
-			break;
+            case FN_INSERT_FRAME:
+                if (rSh.IsSelFrmMode() )
+                {
+                    const int nSel = rSh.GetSelectionType();
+                    if( ((nsSelectionType::SEL_GRF | nsSelectionType::SEL_OLE ) & nSel ) || bCrsrInHidden )
+                        rSet.DisableItem(nWhich);
+                }
+                else if ( rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+                break;
+
+            case FN_INSERT_HRULER :
+                if( (rSh.IsReadOnlyAvailable() && rSh.HasReadonlySel())
+                    || bCrsrInHidden
+                    || rSh.CrsrInsideInputFld() )
+                {
+                    rSet.DisableItem(nWhich);
+                }
+                break;
+
             case FN_FORMAT_COLUMN :
             {
                 //#i80458# column dialog cannot work if the selection contains different page styles and different sections
@@ -1181,7 +1221,7 @@ void SwTextShell::InsertSymbol( SfxRequest& rReq )
 
 			rSh.SetMark();
 			rSh.ExtendSelection( sal_False, aChars.Len() );
-			rSh.SetAttr( aSet, nsSetAttrMode::SETATTR_DONTEXPAND | nsSetAttrMode::SETATTR_NOFORMATATTR );
+			rSh.SetAttrSet( aSet, nsSetAttrMode::SETATTR_DONTEXPAND | nsSetAttrMode::SETATTR_NOFORMATATTR );
 			if( !rSh.IsCrsrPtAtEnd() )
 				rSh.SwapPam();
 
@@ -1191,7 +1231,7 @@ void SwTextShell::InsertSymbol( SfxRequest& rReq )
             // SETATTR_DONTEXPAND does not work if there are already hard attributes.
             // Therefore we have to restore the font attributes.
             rSh.SetMark();
-            rSh.SetAttr( aRestoreSet );
+            rSh.SetAttrSet( aRestoreSet );
             rSh.ClearMark();
             // <--
 

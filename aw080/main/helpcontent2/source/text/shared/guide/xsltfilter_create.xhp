@@ -45,7 +45,7 @@
 </variable></paragraph>
   <paragraph xml-lang="en-US" id="par_idN1053D" role="heading" level="2" l10n="NEW">Creating an XML Filter for %PRODUCTNAME</paragraph>
   <paragraph xml-lang="en-US" id="par_idN109A9" role="paragraph" l10n="NEW">When you create an XML filter for %PRODUCTNAME, you need to design an <emph>XSLT stylesheet</emph> that can convert to and from the OpenDocument XML file format.</paragraph>
-  <paragraph xml-lang="en-US" id="par_idN109B0" role="tip" l10n="NEW">For more information about the OpenDocument XML format, go to <link href="http://xml.openoffice.org/">http://xml.openoffice.org/</link>.</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN109B0" role="tip" l10n="NEW">For more information about the OpenDocument XML format, go to <link href="https://xml.openoffice.org/">https://xml.openoffice.org/</link>.</paragraph>
   <paragraph xml-lang="en-US" id="par_idN109C5" role="paragraph" l10n="NEW">If you want, you can include a <emph>template</emph> with your filter to apply %PRODUCTNAME styles to an XML document that you import.</paragraph>
   <paragraph xml-lang="en-US" id="par_idN109CC" role="paragraph" l10n="CHG">You can also include the <emph>Document Type Definition</emph> (DTD) for the external XML format so you can validate the XML format, for example, when you test the filter.</paragraph>
   <paragraph xml-lang="en-US" id="par_idN10531" role="heading" level="2" l10n="NEW">To Create an XML Filter</paragraph>

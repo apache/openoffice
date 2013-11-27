@@ -234,21 +234,22 @@ void SwUndoInsSection::RepeatImpl(::sw::RepeatContext & rContext)
 
 void SwUndoInsSection::Join( SwDoc& rDoc, sal_uLong nNode )
 {
-	SwNodeIndex aIdx( rDoc.GetNodes(), nNode );
-	SwTxtNode* pTxtNd = aIdx.GetNode().GetTxtNode();
-	ASSERT( pTxtNd, "wo ist mein TextNode?" );
+    SwNodeIndex aIdx( rDoc.GetNodes(), nNode );
+    SwTxtNode* pTxtNd = aIdx.GetNode().GetTxtNode();
+    ASSERT( pTxtNd, "wo ist mein TextNode?" );
 
-	{
-		RemoveIdxRel( nNode + 1, SwPosition( aIdx,
-							SwIndex( pTxtNd, pTxtNd->GetTxt().Len() )));
-	}
-	pTxtNd->JoinNext();
+    {
+        RemoveIdxRel(
+            nNode + 1,
+            SwPosition( aIdx, SwIndex( pTxtNd, pTxtNd->GetTxt().Len() ) ) );
+    }
+    pTxtNd->JoinNext();
 
     if (m_pHistory.get())
     {
-		SwIndex aCntIdx( pTxtNd, 0 );
-        pTxtNd->RstAttr( aCntIdx, pTxtNd->Len(), 0, 0, true );
-	}
+        SwIndex aCntIdx( pTxtNd, 0 );
+        pTxtNd->RstTxtAttr( aCntIdx, pTxtNd->Len(), 0, 0, true );
+    }
 }
 
 

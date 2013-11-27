@@ -1619,9 +1619,10 @@ void SwXTextField::attachToRange(
 					throw uno::RuntimeException();
                 sal_uInt16 nInpSubType = sal::static_int_cast< sal_uInt16 >(SW_SERVICE_FIELDTYPE_INPUT_USER == m_nServiceId ? INP_USR : INP_TXT);
                 SwInputField * pTxtField =
-                    new SwInputField((SwInputFieldType*)pFldType,
-                                     m_pProps->sPar1, m_pProps->sPar2,
-                                     nInpSubType);
+                    new SwInputField( static_cast<SwInputFieldType*>(pFldType),
+                                      m_pProps->sPar1,
+                                      m_pProps->sPar2,
+                                      nInpSubType );
                 pTxtField->SetHelp(m_pProps->sPar3);
                 pTxtField->SetToolTip(m_pProps->sPar4);
 
@@ -1729,39 +1730,39 @@ void SwXTextField::attachToRange(
 			if(aPam.HasMark())
 				pDoc->DeleteAndJoin(aPam);
 
-            SwXTextCursor const*const pTextCursor(
-                    dynamic_cast<SwXTextCursor*>(pCursor));
-            const bool bForceExpandHints( (pTextCursor)
-                    ? pTextCursor->IsAtEndOfMeta() : false );
-            const SetAttrMode nInsertFlags = (bForceExpandHints)
+            SwXTextCursor const*const pTextCursor( dynamic_cast<SwXTextCursor*>(pCursor) );
+            const bool bForceExpandHints(
+                (pTextCursor)
+                ? pTextCursor->IsAtEndOfMeta()
+                : false );
+            const SetAttrMode nInsertFlags =
+                (bForceExpandHints)
                 ? nsSetAttrMode::SETATTR_FORCEHINTEXPAND
                 : nsSetAttrMode::SETATTR_DEFAULT;
 
             pDoc->InsertPoolItem(aPam, aFmt, nInsertFlags);
 
-            pTxtAttr = aPam.GetNode()->GetTxtNode()->GetTxtAttrForCharAt(
-                    aPam.GetPoint()->nContent.GetIndex()-1, RES_TXTATR_FIELD);
+            pTxtAttr = aPam.GetNode()->GetTxtNode()->GetFldTxtAttrAt( aPam.GetPoint()->nContent.GetIndex()-1, true );
+            // was passiert mit dem Update der Felder ? (siehe fldmgr.cxx)
+            if(pTxtAttr)
+            {
+                const SwFmtFld& rFld = pTxtAttr->GetFmtFld();
+                pFmtFld = &rFld;
+            }
+        }
+        delete pFld;
 
-			// was passiert mit dem Update der Felder ? (siehe fldmgr.cxx)
-			if(pTxtAttr)
-			{
-				const SwFmtFld& rFld = pTxtAttr->GetFmtFld();
-				pFmtFld = &rFld;
-			}
-		}
-		delete pFld;
-
-		m_pDoc = pDoc;
-		m_pDoc->GetUnoCallBack()->Add(this);
-		m_bIsDescriptor = sal_False;
+        m_pDoc = pDoc;
+        m_pDoc->GetUnoCallBack()->Add(this);
+        m_bIsDescriptor = sal_False;
         if(m_aFieldTypeClient.GetRegisteredIn())
             const_cast<SwModify*>(m_aFieldTypeClient.GetRegisteredIn())->Remove(&m_aFieldTypeClient);
-		DELETEZ(m_pProps);
+        DELETEZ(m_pProps);
         if(m_bCallUpdate)
             update();
     }
-	else
-		throw lang::IllegalArgumentException();
+    else
+        throw lang::IllegalArgumentException();
 }
 
 void SwXTextField::attach(const uno::Reference< text::XTextRange > & xTextRange)
@@ -1907,7 +1908,7 @@ void SwXTextField::setPropertyValue(const OUString& rPropertyName, const uno::An
         //#to the SwTxtFld
         if(RES_DBFLD == nWhich && pFmtFld->GetTxtFld())
         {
-            pFmtFld->GetTxtFld()->Expand();
+            pFmtFld->GetTxtFld()->ExpandTxtFld();
         }
 	
 	//#i100374# changing a document field should set the modify flag

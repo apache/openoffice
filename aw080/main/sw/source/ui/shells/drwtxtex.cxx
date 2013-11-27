@@ -986,51 +986,49 @@ void SwDrawTextShell::ExecClpbrd(SfxRequest &rReq)
  --------------------------------------------------------------------*/
 void SwDrawTextShell::StateClpbrd(SfxItemSet &rSet)
 {
-	if (!IsTextEdit())	// Sonst Absturz!
-		return;
+    if (!IsTextEdit())	// Sonst Absturz!
+        return;
 
     OutlinerView* pOLV = pSdrView->GetTextEditOutlinerView();
     ESelection aSel(pOLV->GetSelection());
-	const sal_Bool bCopy = (aSel.nStartPara != aSel.nEndPara) ||
-						   (aSel.nStartPos != aSel.nEndPos);
+    const sal_Bool bCopy = (aSel.nStartPara != aSel.nEndPara) ||
+        (aSel.nStartPos != aSel.nEndPos);
 
 
-	SfxWhichIter aIter(rSet);
-	sal_uInt16 nWhich = aIter.FirstWhich();
+    SfxWhichIter aIter(rSet);
+    sal_uInt16 nWhich = aIter.FirstWhich();
 
-	while(nWhich)
-	{
-		switch(nWhich)
-		{
-			case SID_CUT:
-			case SID_COPY:
-				if( !bCopy )
-					rSet.DisableItem( nWhich );
-				break;
+    while(nWhich)
+    {
+        switch(nWhich)
+        {
+        case SID_CUT:
+        case SID_COPY:
+            if( !bCopy )
+                rSet.DisableItem( nWhich );
+            break;
 
-			case SID_PASTE:
-				{
-					TransferableDataHelper aDataHelper(
-						TransferableDataHelper::CreateFromSystemClipboard(
-								&GetView().GetEditWin() ) );
+        case SID_PASTE:
+            {
+                TransferableDataHelper aDataHelper(
+                    TransferableDataHelper::CreateFromSystemClipboard( &GetView().GetEditWin() ) );
 
-					if( !aDataHelper.GetXTransferable().is() ||
-						!SwTransferable::IsPaste( GetShell(), aDataHelper ))
-						rSet.DisableItem( SID_PASTE );
-				}
-				break;
+                if( !aDataHelper.GetXTransferable().is()
+                    || !SwTransferable::IsPaste( GetShell(), aDataHelper ) )
+                {
+                    rSet.DisableItem( nWhich );
+                }
+            }
+            break;
 
-            case SID_PASTE_SPECIAL:
-                rSet.DisableItem( SID_PASTE_SPECIAL );
-				break;
-            // --> OD 2008-06-20 #151110#
-            case SID_CLIPBOARD_FORMAT_ITEMS:
-                rSet.DisableItem( SID_CLIPBOARD_FORMAT_ITEMS );
-                break;
-            // <--
-		}
-		nWhich = aIter.NextWhich();
-	}
+        case SID_PASTE_SPECIAL:
+        case SID_CLIPBOARD_FORMAT_ITEMS:
+            rSet.DisableItem( nWhich );
+            break;
+        }
+
+        nWhich = aIter.NextWhich();
+    }
 }
 
 /*--------------------------------------------------------------------
