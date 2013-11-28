@@ -269,7 +269,6 @@ sub create_unique_directorynames
 			if ( $installer::globals::installlocationdirectoryset ) { installer::exiter::exit_program("ERROR: Directory with flag ISINSTALLLOCATION alread set: \"$installer::globals::installlocationdirectory\".", "create_unique_directorynames"); }
 			$installer::globals::installlocationdirectory = $uniquename;
 			$installer::globals::installlocationdirectoryset = 1;
-			if ( $installer::globals::installlocationdirectory =~ /oracle_/i ) { $installer::globals::sundirexists = 1; }
 		}
 		
 		# setting the sundirectory
@@ -467,11 +466,6 @@ sub add_root_directories
 		{
 			$productkey = $productkey . " " . $allvariableshashref->{'POSTVERSIONEXTENSION'}; 
 			$realproductkey = $realproductkey . " " . $allvariableshashref->{'POSTVERSIONEXTENSION'}; 
-		}
-		if ( $allvariableshashref->{'NOVERSIONINDIRNAME'} ) 
-		{ 
-			$productkey = $productname; 
-			$realproductkey = $realproductname; 
 		}
 		if ( $allvariableshashref->{'NOSPACEINDIRECTORYNAME'} ) 
 		{

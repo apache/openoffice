@@ -289,7 +289,7 @@ struct GetPPDAttribs
             )
         {
             #if OSL_DEBUG_LEVEL > 1
-            fprintf( stderr, "cupsGetPPD %s timed out\n", m_aParameter.getStr());
+            fprintf( stderr, "cupsGetPPD %s timed out\n", m_aParameter.getStr() );
             #endif
         }
         m_pSyncMutex->acquire();
