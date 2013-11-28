@@ -434,109 +434,104 @@ protected:
 						   ::com::sun::star::beans::XPropertySet > & xPropSet);
 
 
-	/// explode a field master name into field type and field name
-	sal_Bool ExplodeFieldMasterName(
-		const ::rtl::OUString& sMasterName,	/// name as returned by SO API
-		::rtl::OUString& sFieldType,		/// out: field type
-		::rtl::OUString& sVarName);			/// out: variable name
+    /// explode a field master name into field type and field name
+    sal_Bool ExplodeFieldMasterName(
+        const ::rtl::OUString& sMasterName,	/// name as returned by SO API
+        ::rtl::OUString& sFieldType,		/// out: field type
+        ::rtl::OUString& sVarName);			/// out: variable name
 
-	/// make reference name for a foot- or endnote
-	static ::rtl::OUString MakeFootnoteRefName(sal_Int16 nSeqNo);
+    /// make reference name for a foot- or endnote
+    static ::rtl::OUString MakeFootnoteRefName(sal_Int16 nSeqNo);
 
-	/// make reference name for a sequence field
-	static ::rtl::OUString MakeSequenceRefName(sal_Int16 nSeqNo, 
-											  const ::rtl::OUString& rSeqName);
+    /// make reference name for a sequence field
+    static ::rtl::OUString MakeSequenceRefName(
+        sal_Int16 nSeqNo,
+        const ::rtl::OUString& rSeqName );
 
-private:	
-	// constants
+private:
+    // service names
+    const ::rtl::OUString sServicePrefix;
+    const ::rtl::OUString sFieldMasterPrefix;
+    const ::rtl::OUString sPresentationServicePrefix;
 
-	// service names
-	const ::rtl::OUString sServicePrefix;
-	const ::rtl::OUString sFieldMasterPrefix;
-	const ::rtl::OUString sPresentationServicePrefix;
-
-	// property names
-	const ::rtl::OUString sPropertyAdjust;
-	const ::rtl::OUString sPropertyAuthor;
-	const ::rtl::OUString sPropertyChapterFormat;
-	const ::rtl::OUString sPropertyChapterNumberingLevel;
-	const ::rtl::OUString sPropertyCharStyleNames;
-	const ::rtl::OUString sPropertyCondition;
-	const ::rtl::OUString sPropertyContent;
-	const ::rtl::OUString sPropertyDataBaseName;
-	const ::rtl::OUString sPropertyDataBaseURL;
-	const ::rtl::OUString sPropertyDataColumnName;
-	const ::rtl::OUString sPropertyDataCommandType;
-	const ::rtl::OUString sPropertyDataTableName;
-	const ::rtl::OUString sPropertyDate;
-	const ::rtl::OUString sPropertyDateTime;
-	const ::rtl::OUString sPropertyDateTimeValue;
-	const ::rtl::OUString sPropertyDDECommandElement;
-	const ::rtl::OUString sPropertyDDECommandFile;
-	const ::rtl::OUString sPropertyDDECommandType;
-	const ::rtl::OUString sPropertyDependentTextFields;
-	const ::rtl::OUString sPropertyFalseContent;
-	const ::rtl::OUString sPropertyFields;
-	const ::rtl::OUString sPropertyFieldSubType;
-	const ::rtl::OUString sPropertyFileFormat;
-	const ::rtl::OUString sPropertyFullName;
-	const ::rtl::OUString sPropertyHint;
-	const ::rtl::OUString sPropertyInstanceName;
-	const ::rtl::OUString sPropertyIsAutomaticUpdate;
-	const ::rtl::OUString sPropertyIsConditionTrue;
-	const ::rtl::OUString sPropertyIsDataBaseFormat;
-	const ::rtl::OUString sPropertyIsDate;
-	const ::rtl::OUString sPropertyIsExpression;
-	const ::rtl::OUString sPropertyIsFixed;
-	const ::rtl::OUString sPropertyIsFixedLanguage;
-	const ::rtl::OUString sPropertyIsHidden;
-	const ::rtl::OUString sPropertyIsInput;
-	const ::rtl::OUString sPropertyIsShowFormula;
-	const ::rtl::OUString sPropertyIsVisible;
-	const ::rtl::OUString sPropertyItems;
-	const ::rtl::OUString sPropertyLevel;
-	const ::rtl::OUString sPropertyMacro;
-	const ::rtl::OUString sPropertyMeasureKind;
-	const ::rtl::OUString sPropertyName;
-	const ::rtl::OUString sPropertyNumberFormat;
-	const ::rtl::OUString sPropertyNumberingSeparator;
-	const ::rtl::OUString sPropertyNumberingType;
-	const ::rtl::OUString sPropertyOffset;
-	const ::rtl::OUString sPropertyOn;
-	const ::rtl::OUString sPropertyPlaceholder;
-	const ::rtl::OUString sPropertyPlaceholderType;
-	const ::rtl::OUString sPropertyReferenceFieldPart;
-	const ::rtl::OUString sPropertyReferenceFieldSource;
-	const ::rtl::OUString sPropertyReferenceFieldType;
-	const ::rtl::OUString sPropertyRevision;
-	const ::rtl::OUString sPropertyScriptType;
-	const ::rtl::OUString sPropertySelectedItem;
-	const ::rtl::OUString sPropertySequenceNumber;
-	const ::rtl::OUString sPropertySequenceValue;
-	const ::rtl::OUString sPropertySetNumber;
-	const ::rtl::OUString sPropertySourceName;
-	const ::rtl::OUString sPropertySubType;
-	const ::rtl::OUString sPropertyTargetFrame;
-	const ::rtl::OUString sPropertyTrueContent;
-	const ::rtl::OUString sPropertyURL;
-	const ::rtl::OUString sPropertyURLContent;
-	const ::rtl::OUString sPropertyUserText;
-	const ::rtl::OUString sPropertyValue;
-	const ::rtl::OUString sPropertyVariableName;
-	const ::rtl::OUString sPropertyVariableSubType;
+    // property names
+    const ::rtl::OUString sPropertyAdjust;
+    const ::rtl::OUString sPropertyAuthor;
+    const ::rtl::OUString sPropertyChapterFormat;
+    const ::rtl::OUString sPropertyChapterNumberingLevel;
+    const ::rtl::OUString sPropertyCharStyleNames;
+    const ::rtl::OUString sPropertyCondition;
+    const ::rtl::OUString sPropertyContent;
+    const ::rtl::OUString sPropertyDataBaseName;
+    const ::rtl::OUString sPropertyDataBaseURL;
+    const ::rtl::OUString sPropertyDataColumnName;
+    const ::rtl::OUString sPropertyDataCommandType;
+    const ::rtl::OUString sPropertyDataTableName;
+    const ::rtl::OUString sPropertyDate;
+    const ::rtl::OUString sPropertyDateTime;
+    const ::rtl::OUString sPropertyDateTimeValue;
+    const ::rtl::OUString sPropertyDDECommandElement;
+    const ::rtl::OUString sPropertyDDECommandFile;
+    const ::rtl::OUString sPropertyDDECommandType;
+    const ::rtl::OUString sPropertyDependentTextFields;
+    const ::rtl::OUString sPropertyFalseContent;
+    const ::rtl::OUString sPropertyFields;
+    const ::rtl::OUString sPropertyFieldSubType;
+    const ::rtl::OUString sPropertyFileFormat;
+    const ::rtl::OUString sPropertyFullName;
+    const ::rtl::OUString sPropertyHint;
+    const ::rtl::OUString sPropertyInitials;
+    const ::rtl::OUString sPropertyInstanceName;
+    const ::rtl::OUString sPropertyIsAutomaticUpdate;
+    const ::rtl::OUString sPropertyIsConditionTrue;
+    const ::rtl::OUString sPropertyIsDataBaseFormat;
+    const ::rtl::OUString sPropertyIsDate;
+    const ::rtl::OUString sPropertyIsExpression;
+    const ::rtl::OUString sPropertyIsFixed;
+    const ::rtl::OUString sPropertyIsFixedLanguage;
+    const ::rtl::OUString sPropertyIsHidden;
+    const ::rtl::OUString sPropertyIsInput;
+    const ::rtl::OUString sPropertyIsShowFormula;
+    const ::rtl::OUString sPropertyIsVisible;
+    const ::rtl::OUString sPropertyItems;
+    const ::rtl::OUString sPropertyLevel;
+    const ::rtl::OUString sPropertyMacro;
+    const ::rtl::OUString sPropertyMeasureKind;
+    const ::rtl::OUString sPropertyName;
+    const ::rtl::OUString sPropertyNumberFormat;
+    const ::rtl::OUString sPropertyNumberingSeparator;
+    const ::rtl::OUString sPropertyNumberingType;
+    const ::rtl::OUString sPropertyOffset;
+    const ::rtl::OUString sPropertyOn;
+    const ::rtl::OUString sPropertyPlaceholder;
+    const ::rtl::OUString sPropertyPlaceholderType;
+    const ::rtl::OUString sPropertyReferenceFieldPart;
+    const ::rtl::OUString sPropertyReferenceFieldSource;
+    const ::rtl::OUString sPropertyReferenceFieldType;
+    const ::rtl::OUString sPropertyRevision;
+    const ::rtl::OUString sPropertyScriptType;
+    const ::rtl::OUString sPropertySelectedItem;
+    const ::rtl::OUString sPropertySequenceNumber;
+    const ::rtl::OUString sPropertySequenceValue;
+    const ::rtl::OUString sPropertySetNumber;
+    const ::rtl::OUString sPropertySourceName;
+    const ::rtl::OUString sPropertySubType;
+    const ::rtl::OUString sPropertyTargetFrame;
+    const ::rtl::OUString sPropertyTrueContent;
+    const ::rtl::OUString sPropertyURL;
+    const ::rtl::OUString sPropertyURLContent;
+    const ::rtl::OUString sPropertyUserText;
+    const ::rtl::OUString sPropertyValue;
+    const ::rtl::OUString sPropertyVariableName;
+    const ::rtl::OUString sPropertyVariableSubType;
     const ::rtl::OUString sPropertyHelp;
     const ::rtl::OUString sPropertyTooltip;
     const ::rtl::OUString sPropertyTextRange;
 
-	const ::rtl::OUString sEmpty;
+    const ::rtl::OUString sEmpty;
 
-	XMLPropertyState* pCombinedCharactersPropertyState;
+    XMLPropertyState* pCombinedCharactersPropertyState;
 
 };
-
-
-
-
-
 
 #endif
