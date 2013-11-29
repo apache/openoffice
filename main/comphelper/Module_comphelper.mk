@@ -27,6 +27,7 @@ $(eval $(call gb_Module_add_targets,comphelper,\
 	Package_inc \
 	Library_comphelp \
 ))
+exit:
 
 ifneq ($(OOO_JUNIT_JAR),)
 $(eval $(call gb_Module_add_subsequentcheck_targets,comphelper,\
