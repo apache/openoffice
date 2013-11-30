@@ -39,9 +39,9 @@ use installer::windows::language;
 # Sample for a guid: {B68FD953-3CEF-4489-8269-8726848056E8}
 ##############################################################
 
-sub get_component_guid
+sub get_component_guid ($)
 {	
-	my ( $componentname, $componentidhashref ) = @_;
+	my ($componentname) = @_;
 	
 	# At this time only a template
 	my $returnvalue = "\{COMPONENTGUID\}";
@@ -49,6 +49,9 @@ sub get_component_guid
 	# Returning a ComponentID, that is assigned in scp project
 	if ( exists($installer::globals::componentid{$componentname}) )
 	{
+        $installer::logger::Lang->printf("reusing guid %s for component %s\n",
+            $installer::globals::componentid{$componentname},
+            $componentname);
 		$returnvalue = "\{" . $installer::globals::componentid{$componentname} . "\}";
 	}
 	
@@ -59,52 +62,50 @@ sub get_component_guid
 # Returning the directory for a file component.
 ##############################################################
 
-sub get_file_component_directory
+sub get_file_component_directory ($$$)
 {
 	my ($componentname, $filesref, $dirref) = @_; 
 
-	my ($onefile, $component, $onedir, $hostname, $uniquedir);
+	my ($component,  $uniquedir);
 	my $found = 0;
 
-	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
+	foreach my $onefile (@$filesref)
 	{
-		$onefile = 	${$filesref}[$i];
-		$component = $onefile->{'componentname'};
-		
-		if ( $component eq $componentname )
+		if ($onefile->{'componentname'} eq $componentname)
 		{
-			$found = 1;
-			last;
-		}	
-	}
-	
-	if (!($found))
-	{
-		# This component can be ignored, if it exists in a version with extension "_pff" (this was renamed in file::get_sequence_for_file() )
-		my $ignore_this_component = 0;
-		my $origcomponentname = $componentname;
-		my $componentname = $componentname . "_pff";
-		
-		for ( my $j = 0; $j <= $#{$filesref}; $j++ )
-		{
-			$onefile = 	${$filesref}[$j];
-			$component = $onefile->{'componentname'};
-		
-			if ( $component eq $componentname )
-			{
-				$ignore_this_component = 1;
-				last;
-			}	
+            return get_file_component_directory_for_file($onefile, $dirref);
 		}
-		
-		if ( $ignore_this_component ) { return "IGNORE_COMP"; }
-		else { installer::exiter::exit_program("ERROR: Did not find component \"$origcomponentname\" in file collection", "get_file_component_directory"); }
 	}
-
-	my $localstyles = "";
 	
-	if ( $onefile->{'Styles'} ) { $localstyles = $onefile->{'Styles'}; }
 
+    # This component can be ignored, if it exists in a version with
+    # extension "_pff" (this was renamed in file::get_sequence_for_file() )
+    my $ignore_this_component = 0;
+    my $origcomponentname = $componentname;
+    my $componentname_pff = $componentname . "_pff";
+		
+    foreach my $onefile (@$filesref)
+    {
+        if ($onefile->{'componentname'} eq $componentname_pff)
+        {
+            return "IGNORE_COMP";
+        }	
+    }
+		
+    installer::exiter::exit_program(
+        "ERROR: Did not find component \"$origcomponentname\" in file collection",
+        "get_file_component_directory");
+}
+
+
+
+
+sub get_file_component_directory_for_file ($$)
+{
+    my ($onefile, $dirref) = @_;
+
+	my $localstyles = $onefile->{'Styles'} // "";
+	
 	if ( $localstyles =~ /\bFONT\b/ )	# special handling for font files
 	{
 		return $installer::globals::fontsfolder;
@@ -126,7 +127,8 @@ sub get_file_component_directory
 	$destination =~ s/\Q$installer::globals::separator\E\s*$//;
 	
 	# This path has to be defined in the directory collection at "HostName" 
-	
+
+    my $uniquedir = undef;
 	if ($destination eq "")		# files in the installation root
 	{
 		$uniquedir = "INSTALLLOCATION";
@@ -135,24 +137,23 @@ sub get_file_component_directory
 	{
 		$found = 0;
 	
-		for ( my $i = 0; $i <= $#{$dirref}; $i++ )
+		foreach my $directory (@$dirref)
 		{
-			$onedir = 	${$dirref}[$i];
-			$hostname = $onedir->{'HostName'};
-		
-			if ( $hostname eq $destination )
+			if ($directory->{'HostName'} eq $destination )
 			{
 				$found = 1;
+                $uniquedir = $directory->{'uniquename'};
 				last;
 			}	
 		}
 
-		if (!($found))
+		if ( ! $found)
 		{
-			installer::exiter::exit_program("ERROR: Did not find destination $destination in directory collection", "get_file_component_directory");
+			installer::exiter::exit_program(
+                "ERROR: Did not find destination $destination in directory collection",
+                "get_file_component_directory");
 		}
 	
-		$uniquedir = $onedir->{'uniquename'};
 		
 		if ( $uniquedir eq $installer::globals::officeinstalldirectory )
 		{
@@ -226,7 +227,8 @@ sub get_file_component_attributes
 		$attributes = 0;	# Assembly files cannot run from source
 	}
 		
-	if (( $onefile->{'Dir'} =~ /\bPREDEFINED_OSSHELLNEWDIR\b/ ) || ( $onefile->{'needs_user_registry_key'} ))
+	if ((defined $onefile->{'Dir'} && $onefile->{'Dir'} =~ /\bPREDEFINED_OSSHELLNEWDIR\b/)
+        || $onefile->{'needs_user_registry_key'})
 	{
 		$attributes = 4;	# Files in shellnew dir and in non advertised startmenu entries must have user registry key as KeyPath
 	}
@@ -320,54 +322,51 @@ sub get_component_condition
 # real filename!
 ####################################################################
 
-sub get_component_keypath
+sub get_component_keypath ($$)
 {
-	my ($componentname, $itemsref, $componentidkeypathhashref) = @_;
+	my ($componentname, $itemsref) = @_;
 
-	my $oneitem;
 	my $found = 0;
 	my $infoline = "";
 
-	for ( my $i = 0; $i <= $#{$itemsref}; $i++ )
+	foreach my $oneitem (@$itemsref)
 	{
-		$oneitem = 	${$itemsref}[$i];
-		my $component = $oneitem->{'componentname'};
-		
+        my $component = $oneitem->{'componentname'};
+
+		if ( ! defined $component)
+        {
+            installer::scriptitems::print_script_item($oneitem);
+            installer::logger::PrintError("item in get_component_keypath has no 'componentname'\n");
+            return "";
+        }
 		if ( $component eq $componentname )
+		{
+            my $keypath = $oneitem->{'uniquename'};	# "uniquename", not "Name" 
+	
+            # Special handling for components in
+            # PREDEFINED_OSSHELLNEWDIR. These components need as
+            # KeyPath a RegistryItem in HKCU
+            if ($oneitem->{'userregkeypath'})
+            {
+                $keypath = $oneitem->{'userregkeypath'};
+            }
+
+            # saving it in the file and registry collection
+            $oneitem->{'keypath'} = $keypath;
+	
+            return $keypath
+		}
+
+		if ($oneitem->{'componentname'} eq $componentname)
 		{
 			$found = 1;
 			last;
 		}
 	}
-	
-	if (!($found))
-	{
-		installer::exiter::exit_program("ERROR: Did not find component in file/registry collection, function get_component_keypath", "get_component_keypath");
-	}
 
-	my $keypath = $oneitem->{'uniquename'};	# "uniquename", not "Name" 
-	
-	# Special handling for updates from existing databases, because KeyPath must not change
-	if (( $installer::globals::updatedatabase ) && ( exists($componentidkeypathhashref->{$componentname}) ))
-	{
-		$keypath = $componentidkeypathhashref->{$componentname};
-		# -> check, if this is a valid key path?!
-		if ( $keypath ne $oneitem->{'uniquename'} )
-		{
-			# Warning: This keypath was changed because of info from old database
-			$infoline = "WARNING: The KeyPath for component \"$componentname\" was changed from \"$oneitem->{'uniquename'}\" to \"$keypath\" because of information from update database";
-			$installer::logger::Lang->print($infoline);
-		}
-	}
-	
-	# Special handling for components in PREDEFINED_OSSHELLNEWDIR. These components
-	# need as KeyPath a RegistryItem in HKCU
-	if ( $oneitem->{'userregkeypath'} ) { $keypath = $oneitem->{'userregkeypath'}; }
-
-	# saving it in the file and registry collection
-	$oneitem->{'keypath'} = $keypath;
-	
-	return $keypath
+    installer::exiter::exit_program(
+        "ERROR: Did not find component in file/registry collection, function get_component_keypath",
+        "get_component_keypath");
 }
 
 ###################################################################
@@ -376,9 +375,16 @@ sub get_component_keypath
 # Component ComponentId Directory_ Attributes Condition KeyPath
 ###################################################################
 
-sub	create_component_table
+sub	create_component_table ($$$$$$$)
 {
-	my ($filesref, $registryref, $dirref, $allfilecomponentsref, $allregistrycomponents, $basedir, $componentidhashref, $componentidkeypathhashref, $allvariables) = @_;
+	my ($filesref,
+        $registryref,
+        $dirref,
+        $allfilecomponentsref,
+        $allregistrycomponents,
+        $basedir,
+        $allvariables)
+        = @_;
 
 	my @componenttable = ();
 
@@ -396,12 +402,12 @@ sub	create_component_table
 		my %onecomponent = ();
 		
 		$onecomponent{'name'} = ${$allfilecomponentsref}[$i]; 
-		$onecomponent{'guid'} = get_component_guid($onecomponent{'name'}, $componentidhashref); 
+		$onecomponent{'guid'} = get_component_guid($onecomponent{'name'}); 
 		$onecomponent{'directory'} = get_file_component_directory($onecomponent{'name'}, $filesref, $dirref);
 		if ( $onecomponent{'directory'} eq "IGNORE_COMP" ) { next; }
 		$onecomponent{'attributes'} = get_file_component_attributes($onecomponent{'name'}, $filesref, $allvariables); 
 		$onecomponent{'condition'} = get_file_component_condition($onecomponent{'name'}, $filesref); 
-		$onecomponent{'keypath'} = get_component_keypath($onecomponent{'name'}, $filesref, $componentidkeypathhashref); 
+		$onecomponent{'keypath'} = get_component_keypath($onecomponent{'name'}, $filesref); 
 
 		$oneline = $onecomponent{'name'} . "\t" . $onecomponent{'guid'} . "\t" . $onecomponent{'directory'} . "\t"  
 				. $onecomponent{'attributes'} . "\t" . $onecomponent{'condition'} . "\t" . $onecomponent{'keypath'} . "\n";
@@ -416,11 +422,11 @@ sub	create_component_table
 		my %onecomponent = ();
 		
 		$onecomponent{'name'} = ${$allregistrycomponents}[$i]; 
-		$onecomponent{'guid'} = get_component_guid($onecomponent{'name'}, $componentidhashref); 
+		$onecomponent{'guid'} = get_component_guid($onecomponent{'name'}); 
 		$onecomponent{'directory'} = get_registry_component_directory();
 		$onecomponent{'attributes'} = get_registry_component_attributes($onecomponent{'name'}, $allvariables); 
 		$onecomponent{'condition'} = get_component_condition($onecomponent{'name'}); 
-		$onecomponent{'keypath'} = get_component_keypath($onecomponent{'name'}, $registryref, $componentidkeypathhashref); 
+		$onecomponent{'keypath'} = get_component_keypath($onecomponent{'name'}, $registryref); 
 
 		$oneline = $onecomponent{'name'} . "\t" . $onecomponent{'guid'} . "\t" . $onecomponent{'directory'} . "\t"  
 				. $onecomponent{'attributes'} . "\t" . $onecomponent{'condition'} . "\t" . $onecomponent{'keypath'} . "\n";

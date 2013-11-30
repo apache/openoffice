@@ -253,12 +253,12 @@ ResMgr* Desktop::GetDesktopResManager()
 {
     if ( !Desktop::pResMgr )
     {
-        String aMgrName = String::CreateFromAscii( "dkt" );
+        const char* pMgrName = "dkt";
 
         // Create desktop resource manager and bootstrap process
         // was successful. Use default way to get language specific message.
         if ( Application::IsInExecute() )
-            Desktop::pResMgr = ResMgr::CreateResMgr( U2S( aMgrName ));
+            Desktop::pResMgr = ResMgr::CreateResMgr( pMgrName);
 
         if ( !Desktop::pResMgr )
         {
@@ -268,7 +268,7 @@ ResMgr* Desktop::GetDesktopResManager()
 /*
             LanguageType aLanguageType = LANGUAGE_DONTKNOW;
 
-            Desktop::pResMgr = ResMgr::SearchCreateResMgr( U2S( aMgrName ), aLanguageType );
+            Desktop::pResMgr = ResMgr::SearchCreateResMgr( pMgrName, aLanguageType );
             AllSettings as = GetSettings();
             as.SetUILanguage(aLanguageType);
             SetSettings(as);
@@ -282,7 +282,7 @@ ResMgr* Desktop::GetDesktopResManager()
 
             ::com::sun::star::lang::Locale aLocale( aLanguage, aCountry, aVariant );
 
-            Desktop::pResMgr = ResMgr::SearchCreateResMgr( U2S( aMgrName ), aLocale);
+            Desktop::pResMgr = ResMgr::SearchCreateResMgr( pMgrName, aLocale);
             AllSettings as = GetSettings();
             as.SetUILocale(aLocale);
             SetSettings(as);
@@ -1935,17 +1935,14 @@ void Desktop::Main()
 
         // set static variable to enabled/disable crash reporter
         retrieveCrashReporterState();
-        if ( !isCrashReporterEnabled() )
-        {
-            osl_setErrorReporting( sal_False );
-            // disable stack trace feature
-        }
+        const bool bCrashReporterEnabled = isCrashReporterEnabled();
+        osl_setErrorReporting( !bCrashReporterEnabled );
 
         // create title string
         sal_Bool bCheckOk = sal_False;
         ::com::sun::star::lang::Locale aLocale;
-        String aMgrName = String::CreateFromAscii( "ofa" );
-        ResMgr* pLabelResMgr = ResMgr::SearchCreateResMgr( U2S( aMgrName ), aLocale );
+        const char* pMgrName = "ofa";
+	ResMgr* pLabelResMgr = ResMgr::SearchCreateResMgr( pMgrName, aLocale );
         String aTitle = pLabelResMgr ? String( ResId( RID_APPTITLE, *pLabelResMgr ) ) : String();
         delete pLabelResMgr;
 
