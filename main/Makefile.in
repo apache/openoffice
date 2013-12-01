@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,28 +17,21 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
+# just dumb wrapper; make install comes later
 
-
-
-PRJ=..
-TARGET=prj
-
-.INCLUDE : settings.mk
-
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
+SHELL=/bin/sh
 
 all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+	. ./*Env.Set.sh && \
+	./bootstrap && \
+		cd instsetoo_native && ../solenv/bin/build.pl --all
+
+distclean:
+	. ./*Env.Set.sh && \
+	dmake distclean
+
+clean:
+	. ./*Env.Set.sh && \
+	dmake clean
+	
