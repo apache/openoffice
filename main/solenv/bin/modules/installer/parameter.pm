@@ -171,7 +171,7 @@ sub getparameter
 			exit(-1);
 		}
 	}
-	
+
 	# Usage of simple installer (not for Windows):
 	# $PERL -w $SOLARENV/bin/make_installer.pl \
 	# -f openoffice.lst -l en-US -p OpenOffice \
@@ -634,7 +634,6 @@ sub outputparameter ()
 	foreach my $line (@output)
 	{
 	    $installer::logger::Info->print($line);
-	    $installer::logger::Global->print($line);
 	}
 }
 
