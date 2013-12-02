@@ -236,6 +236,14 @@ void SwXMLExport::_InitItemExport()
 	xTableCellItemMap = new SvXMLItemMapEntries( aXMLTableCellItemMap );
 
 	pTableItemMapper = new SwXMLTableItemMapper_Impl( xTableItemMap, *this );
+
+    if( getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+    {
+        _GetNamespaceMap().Add(
+            GetXMLToken(XML_NP_TEXT_EXT),
+            GetXMLToken(XML_N_TEXT_EXT),
+            XML_NAMESPACE_TEXT_EXT);
+    }
 }
 
 void SwXMLExport::_FinitItemExport()
