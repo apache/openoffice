@@ -31,6 +31,8 @@ use installer::globals;
 use installer::windows::idtglobal;
 use installer::windows::language;
 
+use strict;
+
 ##############################################################
 # Returning a globally unique ID (GUID) for a component
 # If the component is new, a unique guid has to be created.
@@ -64,34 +66,32 @@ sub get_component_guid ($)
 
 sub get_file_component_directory ($$$)
 {
-	my ($componentname, $filesref, $dirref) = @_; 
+    my ($componentname, $filesref, $dirref) = @_; 
 
-	my ($component,  $uniquedir);
-	my $found = 0;
+    my ($component,  $uniquedir);
 
-	foreach my $onefile (@$filesref)
-	{
-		if ($onefile->{'componentname'} eq $componentname)
-		{
+    foreach my $onefile (@$filesref)
+    {
+        if ($onefile->{'componentname'} eq $componentname)
+        {
             return get_file_component_directory_for_file($onefile, $dirref);
-		}
-	}
-	
-
+        }
+    }
+    
     # This component can be ignored, if it exists in a version with
     # extension "_pff" (this was renamed in file::get_sequence_for_file() )
     my $ignore_this_component = 0;
     my $origcomponentname = $componentname;
     my $componentname_pff = $componentname . "_pff";
-		
+        
     foreach my $onefile (@$filesref)
     {
         if ($onefile->{'componentname'} eq $componentname_pff)
         {
             return "IGNORE_COMP";
-        }	
+        }
     }
-		
+
     installer::exiter::exit_program(
         "ERROR: Did not find component \"$origcomponentname\" in file collection",
         "get_file_component_directory");
@@ -125,7 +125,7 @@ sub get_file_component_directory_for_file ($$)
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$destination);
 
 	$destination =~ s/\Q$installer::globals::separator\E\s*$//;
-	
+
 	# This path has to be defined in the directory collection at "HostName" 
 
     my $uniquedir = undef;
@@ -135,11 +135,10 @@ sub get_file_component_directory_for_file ($$)
 	}		
 	else
 	{
-		$found = 0;
-	
-		foreach my $directory (@$dirref)
+		my $found = 0;
+        foreach my $directory (@$dirref)
 		{
-			if ($directory->{'HostName'} eq $destination )
+			if ($directory->{'HostName'} eq $destination)
 			{
 				$found = 1;
                 $uniquedir = $directory->{'uniquename'};
@@ -153,16 +152,15 @@ sub get_file_component_directory_for_file ($$)
                 "ERROR: Did not find destination $destination in directory collection",
                 "get_file_component_directory");
 		}
-	
-		
+
 		if ( $uniquedir eq $installer::globals::officeinstalldirectory )
 		{
 			$uniquedir = "INSTALLLOCATION";		
 		}
 	}
-		
+
 	$onefile->{'uniquedirname'} = $uniquedir;		# saving it in the file collection
-	
+
 	return $uniquedir	
 }
 
@@ -326,12 +324,9 @@ sub get_component_keypath ($$)
 {
 	my ($componentname, $itemsref) = @_;
 
-	my $found = 0;
-	my $infoline = "";
-
 	foreach my $oneitem (@$itemsref)
 	{
-        my $component = $oneitem->{'componentname'};
+		my $component = $oneitem->{'componentname'};
 
 		if ( ! defined $component)
         {
@@ -356,14 +351,8 @@ sub get_component_keypath ($$)
 	
             return $keypath
 		}
-
-		if ($oneitem->{'componentname'} eq $componentname)
-		{
-			$found = 1;
-			last;
-		}
 	}
-
+	
     installer::exiter::exit_program(
         "ERROR: Did not find component in file/registry collection, function get_component_keypath",
         "get_component_keypath");

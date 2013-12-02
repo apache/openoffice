@@ -733,11 +733,11 @@ sub remove_all_items_with_special_flag
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'} };
 		if ( $styles =~ /\b$flag\b/ )
 		{
-			$installer::logger::Lang->printf("Attention: Removing from collector: %s\n", $oneitem->{'Name'});
-			if ($flag eq "BINARYTABLE_ONLY")
-            {
-                push(@installer::globals::binarytableonlyfiles, $oneitem);
-            }
+			$installer::logger::Lang->printf(
+                "Attention: Removing from collector '%s' because it has flag %s\n",
+                $oneitem->{'Name'},
+                $flag);
+			if ( $flag eq "BINARYTABLE_ONLY" ) { push(@installer::globals::binarytableonlyfiles, $oneitem); }
 			next;
 		}
 		push( @allitems, $oneitem );
@@ -2712,10 +2712,10 @@ sub generate_cygwin_pathes
 
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
-		my $filename = ${$filesref}[$i]->{'sourcepath'};
-		push(@pathcollector, $filename  . "\n");
+        my $filename = ${$filesref}[$i]->{'sourcepath'};
+		push(@pathcollector, $filename . "\n");
 		$counter++;
-		
+
 		if (( $i == $#{$filesref} ) || ((( $counter % $max ) == 0 ) && ( $i > 0 )))
 		{
 			my $tmpfilename = "cygwinhelper_" . $i . ".txt";
@@ -2741,12 +2741,9 @@ sub generate_cygwin_pathes
 		
 			if ($success)
 			{
-                $installer::logger::Lang->printf(
+				$installer::logger::Lang->printf(
                     "Successfully converted %d paths to cygwin notation\n",
                     $counter);
-                $installer::logger::Lang->printf(
-                    "there where %d unique paths\n",
-                    scalar keys %paths);
 			}
 			else
 			{
