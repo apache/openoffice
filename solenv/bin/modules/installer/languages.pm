@@ -476,8 +476,19 @@ sub get_key_language ($)
 sub get_normalized_language ($)
 {
     my ($language) = @_;
-    
-    if ($language =~ /^.*?_(.*)$/)
+
+    if (ref($language) eq "ARRAY")
+    {
+        if (scalar @$language > 1 && $language->[0] eq "en-US")
+        {
+            return $language->[1];
+        }
+        else
+        {
+            return $language;
+        }
+    }
+    elsif ($language =~ /^.*?_(.*)$/)
     {
         return $1;
     }
