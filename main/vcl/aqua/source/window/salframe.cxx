@@ -142,13 +142,13 @@ void AquaSalFrame::initWindowAndView()
 {
     // initialize mirroring parameters
     // FIXME: screens changing
-    NSScreen * pScreen = [mpNSWindow screen];
-    if( pScreen == nil )
-        pScreen = [NSScreen mainScreen];
-    maScreenRect = [pScreen frame];
+    NSScreen* pNSScreen = [mpNSWindow screen];
+    if( pNSScreen == nil )
+        pNSScreen = [NSScreen mainScreen];
+    maScreenRect = [pNSScreen frame];
 
     // calculate some default geometry
-    NSRect aVisibleRect = [pScreen visibleFrame];
+    NSRect aVisibleRect = [pNSScreen visibleFrame];
     CocoaToVCL( aVisibleRect );
     
     maGeometry.nX = static_cast<int>(aVisibleRect.origin.x + aVisibleRect.size.width / 10);
@@ -194,8 +194,8 @@ void AquaSalFrame::initWindowAndView()
     // #i91990# support GUI-less (daemon) execution
     @try 
     {
-    mpNSWindow = [[SalFrameWindow alloc] initWithSalFrame: this];
-    mpNSView = [[SalFrameView alloc] initWithSalFrame: this];
+        mpNSWindow = [[SalFrameWindow alloc] initWithSalFrame: this];
+        mpNSView = [[SalFrameView alloc] initWithSalFrame: this];
     }
     @catch ( id exception )
     {
@@ -207,15 +207,15 @@ void AquaSalFrame::initWindowAndView()
     else
         [mpNSWindow setAcceptsMouseMovedEvents: YES];
     [mpNSWindow setHasShadow: YES];
-    [mpNSWindow setDelegate: (id<NSWindowDelegate>)mpNSWindow];
-    
+    [mpNSWindow setDelegate: mpNSWindow];
+
     const NSRect aRect = NSMakeRect( 0,0, maGeometry.nWidth, maGeometry.nHeight );
     mnTrackingRectTag = [mpNSView addTrackingRect: aRect owner: mpNSView userData: nil assumeInside: NO];
-    
-    maSysData.pView = mpNSView;
-    
+
+    maSysData.mpNSView = mpNSView;
+
     UpdateFrameGeometry();
-    
+
     [mpNSWindow setContentView: mpNSView];
 }
 

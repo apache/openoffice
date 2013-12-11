@@ -19,8 +19,6 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
 PRJNAME=instsetoo_native
 TARGET=util
@@ -61,6 +59,17 @@ INSTALLDIR=$(OUT)
 
 .INCLUDE: target.mk
 
+.IF "$(FORCE2ARCHIVE)" == "TRUE"
+PKGFORMAT = archive
+.END
+.IF "$(MAKETARGETS:e)"!=""
+PKGFORMAT+=$(MAKETARGETS:e:s/.//)
+.ENDIF
+# PKGFORMAT may contain the standard package format twice at this time.
+# Provide its content with duplicates removed.
+PACKAGE_FORMATS=$(uniq $(PKGFORMAT))
+
+
 # The help target belongs after the inclusion of target.mk to not become the default target.
 help .PHONY :
 	@echo "known targets:"
@@ -74,6 +83,11 @@ help .PHONY :
 	@echo "    sdkoo"
 	@echo "    sdkoodev"
 	@echo 
+	@echo "experimental targets:"
+	@echo "    patch-create           create a patch for updating an installed office (Windows only)"
+	@echo "    patch-apply            apply a previously created patch"
+	@echo "    patch-update-releases-xml"
+	@echo 
 	@echo "Most targets (all except aoo_srcrelease and updatepack) accept suffixes"
 	@echo "    add _<language> to build a target for one language only"
 	@echo "        the default set of languages is alllangiso=$(alllangiso)"
@@ -81,9 +95,9 @@ help .PHONY :
 	@echo "        the default set of package formats is archive and PKGFORMAT=$(PKGFORMAT)"
 
 
-LOCALPYFILES= \
-    $(BIN)$/uno.py \
-	$(BIN)$/unohelper.py \
+LOCALPYFILES=			\
+	$(BIN)$/uno.py		\
+	$(BIN)$/unohelper.py	\
 	$(BIN)$/pythonloader.py \
 	$(BIN)$/pythonscript.py \
 	$(BIN)$/officehelper.py \
@@ -107,13 +121,6 @@ ALLTAR : updatepack
 .ENDIF			# "$(UPDATER)"=="" || "$(USE_PACKAGER)"==""
 .ENDIF			# "$(GUI)"!="WNT" && "$(EPM)"=="NO" && "$(USE_PACKAGER)"==""
 
-.IF "$(FORCE2ARCHIVE)" == "TRUE"
-PKGFORMAT = archive
-.END
-
-.IF "$(MAKETARGETS:e)"!=""
-PKGFORMAT+=$(MAKETARGETS:e:s/.//)
-.ENDIF			# "$(MAKETARGETS:e)"!=""
 
 # Independent of PKGFORMAT, always build a default-language openoffice product
 # also in archive format, so that tests that require an OOo installation (like
@@ -125,6 +132,20 @@ VERBOSESWITCH=-verbose
 .ELIF "$(VERBOSE)"=="FALSE"
 VERBOSESWITCH=-quiet
 .ENDIF
+
+.IF "$(release:U)"=="T"
+RELEASE_SWITCH=-release
+$(foreach,i,$(alllangiso) openoffice_$i.msi) : prepare_release_build
+.ELSE
+RELEASE_SWITCH=
+.ENDIF
+
+prepare_release_build .PHONY:
+	@$(PERL) -w $(SOLARENV)$/bin$/release_prepare.pl 	\
+		--lst-file $(PRJ)$/util$/openoffice.lst 	\
+		--product-name Apache_OpenOffice		\
+		--output-path $(OUT) 				\
+		$(alllangiso)
 
 .IF "$(VERBOSE_INSTALLER)"=="TRUE"
 VERBOSESWITCH+=-log
@@ -140,21 +161,23 @@ aoo_srcrelease: $(SOLARENV)$/bin$/srcrelease.xml
 updatepack:
 	$(PERL) -w $(SOLARENV)$/bin$/packager.pl
 
+
+# The naming schema of targets is this: target_language.package
+# where 'target' is the target base name (as openoffice or sdkoo)
+#       'language' is the language name (like en-US or fr)
+#       'package' is the package format (like msi or deb)
+
 .IF "$(alllangiso)"!=""
 
+# Add dependencies of basic targets on language specific targets.
 openoffice: $(foreach,i,$(alllangiso) openoffice_$i)
-
 openofficedev: $(foreach,i,$(alllangiso) openofficedev_$i)
-
 openofficewithjre: $(foreach,i,$(alllangiso) openofficewithjre_$i)
-
 ooolanguagepack : $(foreach,i,$(alllangiso) ooolanguagepack_$i)
-
 ooodevlanguagepack: $(foreach,i,$(alllangiso) ooodevlanguagepack_$i)
-
 sdkoo: $(foreach,i,$(alllangiso) sdkoo_$i)
-
 sdkoodev: $(foreach,i,$(alllangiso) sdkoodev_$i)
+patch-create: $(foreach,i,$(alllangiso) patch-create_$i)
 
 MSIOFFICETEMPLATESOURCE=$(PRJ)$/inc_openoffice$/windows$/msi_templates
 MSILANGPACKTEMPLATESOURCE=$(PRJ)$/inc_ooolangpack$/windows$/msi_templates
@@ -166,44 +189,47 @@ MSIOFFICETEMPLATEDIR=$(MISC)$/openoffice$/msi_templates
 MSILANGPACKTEMPLATEDIR=$(MISC)$/ooolangpack$/msi_templates
 MSISDKOOTEMPLATEDIR=$(MISC)$/sdkoo$/msi_templates
 
-ADDDEPS=$(NOLOGOSPLASH) $(DEVNOLOGOSPLASH)
+ADDDEPS=adddeps
+adddeps .PHONY : $(NOLOGOSPLASH) $(DEVNOLOGOSPLASH)
 
 .IF "$(OS)" == "WNT"
-ADDDEPS+=msitemplates
+adddeps : msitemplates
 .ENDIF
 
-$(foreach,i,$(alllangiso) openoffice_$i) : $(ADDDEPS)
-openoffice_$(defaultlangiso).archive : $(ADDDEPS)
+.IF "$(LOCALPYFILES)"!=""
+local_python_files .PHONY : $(LOCALPYFILES)
+adddeps : local_python_files
+updatepack : local_python_files
+.ENDIF			# "$(LOCALPYFILES)"!=""
 
-$(foreach,i,$(alllangiso) openofficedev_$i) : $(ADDDEPS)
+# Add dependencies on 'adddeps' where necessary.
+$(foreach,i,$(alllangiso) openoffice_$i) : adddeps
+openoffice_$(defaultlangiso).archive : adddeps
+$(foreach,i,$(alllangiso) openofficedev_$i) : adddeps
+$(foreach,i,$(alllangiso) openofficewithjre_$i) : adddeps
+$(foreach,i,$(alllangiso) ooolanguagepack_$i) : adddeps
+$(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : adddeps
+$(foreach,i,$(alllangiso) sdkoo_$i) : adddeps
+$(foreach,i,$(alllangiso) sdkoodev_$i) : adddeps
 
-$(foreach,i,$(alllangiso) openofficewithjre_$i) : $(ADDDEPS)
-
-$(foreach,i,$(alllangiso) ooolanguagepack_$i) : $(ADDDEPS)
-
-$(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : $(ADDDEPS)
-
-$(foreach,i,$(alllangiso) sdkoo_$i) : $(ADDDEPS)
-
-$(foreach,i,$(alllangiso) sdkoodev_$i) : $(ADDDEPS)
-
-.IF "$(MAKETARGETS)"!=""
-$(MAKETARGETS) : $(ADDDEPS)
-.ENDIF			# "$(MAKETARGETS)"!=""
-
+# Create targets that take the package formats into account.  Together with language dependency we
+# get this transformation: target -> target_$language -> target_$language.$package
+# where $language ranges over all languages in $(alllangiso) 
+# and $package ranges over all package formats in $(PKGFORMAT)
 $(foreach,i,$(alllangiso) openoffice_$i) : $$@{$(PKGFORMAT:^".")}
-.IF "$(MAKETARGETS)"!=""
-.IF "$(MAKETARGETS:e)"=="" && "$(MAKETARGETS:s/_//)"!="$(MAKETARGETS)"
-$(MAKETARGETS) : $$@{$(PKGFORMAT:^".")}
-$(MAKETARGETS){$(PKGFORMAT:^".")} : $(ADDDEPS)
-.ENDIF			# "$(MAKETARGETS:e)"=="" && "$(MAKETARGETS:s/_//)"!="$(MAKETARGETS)"
-.ENDIF			# "$(MAKETARGETS)"!=""
+$(foreach,i,$(alllangiso) openofficewithjre_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) openofficedev_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) ooolanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) sdkoo_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) sdkoodev_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) patch-create_$i) : $$@{$(PKGFORMAT:^".")}
 
 
 # This macro makes calling the make_installer.pl script a bit easier.
 # Just add -p and -msitemplate switches.
 MAKE_INSTALLER_COMMAND=					\
-	@$(PERL) -w $(SOLARENV)$/bin$/make_installer.pl 	\
+	@$(PERL) -w $(SOLARENV)$/bin$/make_installer.pl \
 		-f $(PRJ)$/util$/openoffice.lst 	\
 		-l $(subst,$(@:s/_/ /:1)_, $(@:b)) 	\
 		-u $(OUT) 				\
@@ -215,14 +241,25 @@ MAKE_INSTALLER_COMMAND=					\
 # This macro makes calling gen_update_info.pl a bit easier
 # Just add --product switches, and xml input file and redirect output.
 GEN_UPDATE_INFO_COMMAND=					\
-	@$(PERL) -w $(SOLARENV)$/bin$/gen_update_info.pl		\
+	@$(PERL) -w $(SOLARENV)$/bin$/gen_update_info.pl	\
 		--buildid $(BUILD)				\
 		--arch "$(RTL_ARCH)"				\
 		--os "$(RTL_OS)"				\
 		--lstfile $(PRJ)$/util$/openoffice.lst		\
 		--languages $(subst,$(@:s/_/ /:1)_, $(@:b))
 
-openoffice_%{$(PKGFORMAT:^".")} :
+#openoffice_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openoffice_$L.$P)) .PHONY :
+	$(MAKE_INSTALLER_COMMAND) 			\
+		-p Apache_OpenOffice			\
+		-msitemplate $(MSIOFFICETEMPLATEDIR)	\
+		$(RELEASE_SWITCH)
+	$(GEN_UPDATE_INFO_COMMAND)		\
+		--product Apache_OpenOffice	\
+		$(PRJ)$/util$/update.xml	\
+		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
+
+$(foreach,L,$(alllangiso) openoffice_$L.archive) :
 	$(MAKE_INSTALLER_COMMAND) 		\
 		-p Apache_OpenOffice		\
 		-msitemplate $(MSIOFFICETEMPLATEDIR)
@@ -231,21 +268,12 @@ openoffice_%{$(PKGFORMAT:^".")} :
 		$(PRJ)$/util$/update.xml	\
 		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
 
-openoffice_%{.archive} :
-	$(MAKE_INSTALLER_COMMAND) 		\
-		-p Apache_OpenOffice		\
-		-msitemplate $(MSIOFFICETEMPLATEDIR)
-	$(GEN_UPDATE_INFO_COMMAND)		\
-		--product Apache_OpenOffice	\
-		$(PRJ)$/util$/update.xml	\
-		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
-
-$(foreach,i,$(alllangiso) openofficewithjre_$i) : $$@{$(PKGFORMAT:^".")}
-openofficewithjre_%{$(PKGFORMAT:^".")} :
+#openofficewithjre_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficewithjre_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_wJRE -msitemplate $(MSIOFFICETEMPLATEDIR)
 
-$(foreach,i,$(alllangiso) openofficedev_$i) : $$@{$(PKGFORMAT:^".")}
-openofficedev_%{$(PKGFORMAT:^".")} :
+#openofficedev_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficedev_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND)		\
 		-p Apache_OpenOffice_Dev	\
 		-msitemplate $(MSIOFFICETEMPLATEDIR)
@@ -254,31 +282,24 @@ openofficedev_%{$(PKGFORMAT:^".")} :
 		$(PRJ)$/util$/update.xml 		\
 		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
 
-$(foreach,i,$(alllangiso) ooolanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
-ooolanguagepack_%{$(PKGFORMAT:^".")} :
+#ooolanguagepack_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) ooolanguagepack_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND)			\
 		-p Apache_OpenOffice			\
 		-msitemplate $(MSILANGPACKTEMPLATEDIR)	\
 		-languagepack
 
-$(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
-ooodevlanguagepack_%{$(PKGFORMAT:^".")} :
+#ooodevlanguagepack_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) ooodevlanguagepack_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_Dev -msitemplate $(MSILANGPACKTEMPLATEDIR) -languagepack
 
-$(foreach,i,$(alllangiso) sdkoo_$i) : $$@{$(PKGFORMAT:^".")}
-sdkoo_%{$(PKGFORMAT:^".")} :
+#sdkoo_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) sdkoo_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_SDK -msitemplate $(MSISDKOOTEMPLATEDIR) -dontstrip
 
-$(foreach,i,$(alllangiso) sdkoodev_$i) : $$@{$(PKGFORMAT:^".")}
-sdkoodev_%{$(PKGFORMAT:^".")} :
+#sdkoodev_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) sdkoodev_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_Dev_SDK -msitemplate $(MSISDKOOTEMPLATEDIR) -dontstrip
-
-.IF "$(MAKETARGETS)"!=""
-.IF "$(MAKETARGETS:e)"=="" && "$(MAKETARGETS:s/_//)"!="$(MAKETARGETS)"
-$(MAKETARGETS) : $$@{$(PKGFORMAT:^".")}
-$(MAKETARGETS){$(PKGFORMAT:^".")} : $(ADDDEPS)
-.ENDIF			# "$(MAKETARGETS:e)"=="" && "$(MAKETARGETS:s/_//)"!="$(MAKETARGETS)"
-.ENDIF			# "$(MAKETARGETS)"!=""
 
 .ELSE			# "$(alllangiso)"!=""
 openoffice:
@@ -286,21 +307,55 @@ openoffice:
 
 .ENDIF			# "$(alllangiso)"!=""
 
-.IF "$(LOCALPYFILES)"!=""
-$(foreach,i,$(alllangiso) openoffice_$i{$(PKGFORMAT:^".") .archive} openofficewithjre_$i{$(PKGFORMAT:^".")} openofficedev_$i{$(PKGFORMAT:^".")} sdkoo_$i{$(PKGFORMAT:^".")}) updatepack : $(LOCALPYFILES)
-.ENDIF			# "$(LOCALPYFILES)"!=""
-
 $(BIN)$/%.py : $(SOLARSHAREDBIN)$/pyuno$/%.py
-	@$(COPY) $< $@
+	$(COPY) $< $@
 
-#$(BIN)$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_nologo$/intro.zip
 $(BIN)$/intro.zip : $(SOLARCOMMONPCKDIR)$/intro.zip
 	$(COPY) $< $@
 
-#$(BIN)$/dev$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_dev_nologo$/intro.zip
 $(BIN)$/dev$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_dev$/intro.zip
 	@-$(MKDIR) $(@:d)
 	$(COPY) $< $@
+
+
+.IF "$(OS)" == "WNT"
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-create_$L.$P)) .PHONY :
+	@echo building $@
+	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+		create								\
+		--product-name Apache_OpenOffice				\
+		--output-path $(OUT)						\
+		--data-path $(PRJ)$/data					\
+		--lst-file $(PRJ)$/util$/openoffice.lst				\
+		--language $(subst,$(@:s/_/ /:1)_, $(@:b))			\
+		--package-format $(@:e:s/.//)
+patch-apply .PHONY :
+	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+		apply								\
+		--product-name Apache_OpenOffice				\
+		--output-path $(OUT)						\
+		--lst-file $(PRJ)$/util$/openoffice.lst				\
+		--language en-US						\
+		--package-format msi
+patch-update-releases-xml .PHONY:
+	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+		update-releases-xml						\
+		--product-name Apache_OpenOffice				\
+		--output-path $(OUT)						\
+		--lst-file $(PRJ)$/util$/openoffice.lst\
+		--target-version 4.0.1
+
+$(PRJ)$/data :
+	mkdir $@
+.ELSE
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-create_$L.$P)) .PHONY :
+	@echo "patches can only be created on Windows at the moment"
+patch-apply .PHONY :
+	@echo "patches can only be created on Windows at the moment"
+patch-update-releases-xml .PHONY:
+	@echo "patches can only be created on Windows at the moment"
+.ENDIF
+
 
 msitemplates .PHONY: msi_template_files msi_langpack_template_files msi_sdk_template_files
 
@@ -460,3 +515,8 @@ $(MSISDKOOTEMPLATEDIR) $(MSISDKOOTEMPLATEDIR)$/Binary :
 	-$(MKDIRHIER) $@
 $(MSISDKOOTEMPLATEDIR)/% : $(MSISDKOOTEMPLATESOURCE)$/%
 	$(GNUCOPY) $< $@
+
+
+# Local Variables:
+# tab-width: 8
+# End:

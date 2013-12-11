@@ -31,6 +31,8 @@ BEGIN
 {	
 	$prog="make_installer.pl";
 
+    # WARNING: the following lines are matched verbatim in i18npool/source/isolang/langid.pl
+    
 	@noMSLocaleLangs = (
         "br",
         "bs",
@@ -153,8 +155,8 @@ BEGIN
 	$fontsfolder = "FontsFolder";
 	$fontsfoldername = "Fonts";
 	$fontsdirparent = "";
-	$fontsdirname = "";
 	$fontsdirhostname = "truetype";
+	$fontsdirname = $fontsdirhostname;
 	$officefolder = "OfficeFolder";
 	$officemenufolder = "OfficeMenuFolder";
 	$startupfolder = "StartupFolder";
@@ -232,7 +234,7 @@ BEGIN
 	$creating_windows_installer_patch = 0;
 
 	$strip = 1;
-	
+
 	$globallogging = 0;
 	$logfilename = "logfile.log";	# the default logfile name for global errors
 #	@logfileinfo = ();
@@ -411,8 +413,6 @@ BEGIN
 	$previous_idt_dir = "";	
 	$updatepack = 0;
 	$msitranpath = "";
-	$insert_file_at_end = 0;
-	$newfilesexist = 0;
 	$usesharepointpath = 0;
 	%newfilescollector = ();
 
@@ -489,10 +489,6 @@ BEGIN
 		$isunix = 0;
 		$iswin = 1;
         $archiveformat = ".zip";
-		%savedmapping = ();
-		%savedrevmapping = ();
-		%savedrev83mapping = ();
-		%saved83dirmapping = ();
 	}
 	elsif ( $plat =~ /os2/i )
 	{ 
@@ -539,6 +535,13 @@ BEGIN
 
 	# ToDo: Needs to be expanded for additional platforms
 
+    $is_release = 0;  # Is changed in parameter.pm when the -release option is given.
+    $source_version = undef;
+    $target_version = undef;
+    $source_msi = undef;
+
+    # Is set to 1 when target_version is a major version, ie ?.0.0
+    $is_major_release = 0;
 }
 
 1;
