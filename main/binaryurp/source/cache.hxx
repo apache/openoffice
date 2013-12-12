@@ -94,7 +94,7 @@ private:
 #ifdef URPCACHE_USES_UNORDERED_MAP
     struct HashT{ size_t operator()( const LruListIt& rA) const { return hash(*rA;);};
     struct EqualT{ bool operator()( const LruListIt& rA, const LruListIt& rB) const { return *rA==*rB;}};
-    typedef ::std::hash_map< LruListIt, IdxType, HashT, EqualT > LruItMap; // a map into a LruList
+    typedef ::std::unordered_map< LruListIt, IdxType, HashT, EqualT > LruItMap; // a map into a LruList
 #else
     struct CmpT{ bool operator()( const LruListIt& rA, const LruListIt& rB) const { return (*rA<*rB);}};
     typedef ::std::map< LruListIt, IdxType, CmpT > LruItMap; // a map into a LruList
