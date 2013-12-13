@@ -140,7 +140,7 @@ function refresh() {
 	$('info.os.version').innerHTML = props['info.os.version'] || 'Unknown';
 	$('info.os.arch').innerHTML = props['info.os.arch'] || 'Unknown';
 	if (props['info.app.Revision']) 
-		$('info.app.Revision').innerHTML = '<a href="https://fisheye6.atlassian.com/changelog/~br=trunk/ooo/?showid=' + props['info.app.Revision'] + '">'  + props['info.app.Revision'] + '</a>';
+		$('info.app.Revision').innerHTML = '<a href="http://svn.apache.org/viewvc?view=revision&revision=' + props['info.app.Revision'] + '">'  + props['info.app.Revision'] + '</a>';
 	$('info.hostname').innerHTML = props['info.hostname'] || 'Unknown';
 	$('info.ip').innerHTML = props['info.ip'] || '0.0.0.0';
 	$('java.runtime.version').innerHTML = props['java.runtime.version'] || 'Unknown';
