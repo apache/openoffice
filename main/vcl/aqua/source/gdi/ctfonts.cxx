@@ -174,10 +174,10 @@ void CTTextStyle::GetFontMetric( float fDPIY, ImplFontMetricData& rMetric ) cons
 
 // -----------------------------------------------------------------------
 
-bool CTTextStyle::GetGlyphBoundRect( sal_GlyphId nGlyphId, Rectangle& rRect ) const
+bool CTTextStyle::GetGlyphBoundRect( sal_GlyphId aGlyphId, Rectangle& rRect ) const
 {
 	const DynCoreTextSyms& rCT = DynCoreTextSyms::get();
-	CGGlyph nCGGlyph = nGlyphId & GF_IDXMASK; // NOTE: CoreText handles glyph fallback itself
+	CGGlyph nCGGlyph = aGlyphId & GF_IDXMASK; // NOTE: CoreText handles glyph fallback itself
 	CTFontRef aCTFontRef = (CTFontRef)CFDictionaryGetValue( mpStyleDict, kCTFontAttributeName );
 
 	const CTFontOrientation aFontOrientation = kCTFontDefaultOrientation; // TODO: horz/vert
@@ -232,13 +232,13 @@ static void MyCGPathApplierFunc( void* pData, const CGPathElement* pElement )
 	}
 }
 
-bool CTTextStyle::GetGlyphOutline( sal_GlyphId nGlyphId, basegfx::B2DPolyPolygon& rResult ) const
+bool CTTextStyle::GetGlyphOutline( sal_GlyphId aGlyphId, basegfx::B2DPolyPolygon& rResult ) const
 {
 	rResult.clear();
 
 	const DynCoreTextSyms& rCT = DynCoreTextSyms::get();
 	// TODO: GF_FONTMASK if using non-native glyph fallback
-	CGGlyph nCGGlyph = nGlyphId & GF_IDXMASK;
+	CGGlyph nCGGlyph = aGlyphId & GF_IDXMASK;
 	CTFontRef pCTFont = (CTFontRef)CFDictionaryGetValue( mpStyleDict, kCTFontAttributeName );
 	CGPathRef xPath = rCT.FontCreatePathForGlyph( pCTFont, nCGGlyph, NULL );
 

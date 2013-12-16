@@ -44,7 +44,7 @@ public:
 	virtual void	AdjustLayout( ImplLayoutArgs& );
 	virtual void	DrawText( SalGraphics& ) const;
 
-	virtual int		GetNextGlyphs( int nLen, sal_GlyphId* pGlyphs, Point& rPos, int&,
+	virtual int     GetNextGlyphs( int nLen, sal_GlyphId* pOutGlyphIds, Point& rPos, int&,
 						sal_Int32* pGlyphAdvances, int* pCharIndexes ) const;
 
 	virtual long    GetTextWidth() const;
@@ -469,7 +469,7 @@ void ATSLayout::DrawText( SalGraphics& rGraphics ) const
  *
  * @return : number of glyph details that were provided
 **/
-int ATSLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphIDs, Point& rPos, int& nStart,
+int ATSLayout::GetNextGlyphs( int nLen, sal_GlyphId* pOutGlyphIds, Point& rPos, int& nStart,
 	sal_Int32* pGlyphAdvances, int* pCharIndexes ) const
 {
 	if( nStart < 0 )                // first glyph requested?
@@ -528,7 +528,7 @@ int ATSLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphIDs, Point& rPos, int
 	while( nCount < nLen )
 	{
 		++nCount;
-		sal_GlyphId nGlyphId = mpGlyphIds[nStart];
+		sal_GlyphId aGlyphId = mpGlyphIds[nStart];
 
 		// check if glyph fallback is needed for this glyph
 		// TODO: use ATSUDirectGetLayoutDataArrayPtrFromTextLayout(kATSUDirectDataStyleIndex) API instead?
@@ -546,11 +546,11 @@ int ATSLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphIDs, Point& rPos, int
 			// register fallback font
 			const int nLevel = mpFallbackInfo->AddFallback( nFallbackFontID );
 			// update sal_GlyphId with fallback level
-			nGlyphId |= (nLevel << GF_FONTSHIFT);
+			aGlyphId |= (nLevel << GF_FONTSHIFT);
 		}
 
 		// update resulting glyphid array
-		*(pGlyphIDs++) = nGlyphId;
+		*(pOutGlyphIds++) = aGlyphId;
 
 		// update returned glyph advance array
 		if( pGlyphAdvances )
@@ -1198,13 +1198,13 @@ void ATSLayout::Simplify( bool /*bIsBase*/ ) {}
 
 // get the ImplFontData for a glyph fallback font
 // for a glyphid that was returned by ATSLayout::GetNextGlyphs()
-const ImplFontData* ATSLayout::GetFallbackFontData( sal_GlyphId nGlyphId ) const
+const ImplFontData* ATSLayout::GetFallbackFontData( sal_GlyphId aGlyphId ) const
 {
 	// check if any fallback fonts were needed
 	if( !mpFallbackInfo )
 		return NULL;
 	// check if the current glyph needs a fallback font
-	int nFallbackLevel = (nGlyphId & GF_FONTMASK) >> GF_FONTSHIFT;
+	int nFallbackLevel = (aGlyphId & GF_FONTMASK) >> GF_FONTSHIFT;
 	if( !nFallbackLevel )
 		return NULL;
 	return mpFallbackInfo->GetFallbackFontData( nFallbackLevel );

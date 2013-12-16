@@ -36,6 +36,8 @@
 #include "basegfx/polygon/b2dpolygon.hxx"
 #include "basegfx/matrix/b2dhommatrix.hxx"
 
+typedef GlyphID ATSGlyphID;
+
 // =======================================================================
 
 // mac specific physically available font face
@@ -239,10 +241,10 @@ void AtsTextStyle::SetTextColor( const RGBAColor& rColor )
 
 // -----------------------------------------------------------------------
 
-bool AtsTextStyle::GetGlyphBoundRect( sal_GlyphId nGlyphId, Rectangle& rRect ) const
+bool AtsTextStyle::GetGlyphBoundRect( sal_GlyphId aGlyphId, Rectangle& rRect ) const
 {
 	ATSUStyle rATSUStyle = maATSUStyle;	// TODO: handle glyph fallback
-	GlyphID aGlyphId = nGlyphId;
+	ATSGlyphID aGlyphId = aGlyphId;
 	ATSGlyphScreenMetrics aGlyphMetrics;
 	const bool bNonAntialiasedText = false;
 	OSStatus eStatus = ATSUGlyphGetScreenMetrics( rATSUStyle,
@@ -302,14 +304,14 @@ static OSStatus GgoMoveToProc( const Float32Point* pPoint, void* pData )
 	return eStatus;
 }
 
-bool AtsTextStyle::GetGlyphOutline( sal_GlyphId nGlyphId, basegfx::B2DPolyPolygon& rResult ) const
+bool AtsTextStyle::GetGlyphOutline( sal_GlyphId aGlyphId, basegfx::B2DPolyPolygon& rResult ) const
 {
 	GgoData aGgoData;
 	aGgoData.mpPolyPoly = &rResult;
 	rResult.clear();
 
 	OSStatus eGgoStatus = noErr;
-	OSStatus eStatus = ATSUGlyphGetCubicPaths( maATSUStyle, nGlyphId,
+	OSStatus eStatus = ATSUGlyphGetCubicPaths( maATSUStyle, aGlyphId,
 		GgoMoveToProc, GgoLineToProc, GgoCurveToProc, GgoClosePathProc,
 		&aGgoData, &eGgoStatus );
 	if( (eStatus != noErr) ) // TODO: why is (eGgoStatus!=noErr) when curves are involved?

@@ -327,6 +327,7 @@ void SAL_CALL AccessibleTableShapeImpl::disposing( const EventObject& /*Source*/
 
 AccessibleTableShape::AccessibleTableShape( const AccessibleShapeInfo& rShapeInfo, const AccessibleShapeTreeInfo& rShapeTreeInfo)
 : AccessibleTableShape_Base(rShapeInfo, rShapeTreeInfo)
+, mnPreviousSelectionCount(0)
 , mxImpl( new AccessibleTableShapeImpl( maShapeTreeInfo ) )
 {
 }
@@ -342,8 +343,7 @@ AccessibleTableShape::~AccessibleTableShape (void)
 void AccessibleTableShape::Init()
 {
 	try
-	{
-		mnPreviousSelectionCount = 0;
+	{		
 		Reference< XPropertySet > xSet( mxShape, UNO_QUERY_THROW );
 		Reference< XTable > xTable( xSet->getPropertyValue(C2U("Model")), UNO_QUERY_THROW );
 

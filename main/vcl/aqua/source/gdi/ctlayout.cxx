@@ -37,7 +37,7 @@ public:
 	virtual void	AdjustLayout( ImplLayoutArgs& );
 	virtual void	DrawText( SalGraphics& ) const;
 
-	virtual int     GetNextGlyphs( int nLen, sal_GlyphId* pGlyphs, Point& rPos, int&,
+	virtual int     GetNextGlyphs( int nLen, sal_GlyphId* pOutGlyphIds, Point& rPos, int&,
 						sal_Int32* pGlyphAdvances, int* pCharIndexes ) const;
 
 	virtual long    GetTextWidth() const;
@@ -244,7 +244,7 @@ void CTLayout::DrawText( SalGraphics& rGraphics ) const
 
 // -----------------------------------------------------------------------
 
-int CTLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphIDs, Point& rPos, int& nStart,
+int CTLayout::GetNextGlyphs( int nLen, sal_GlyphId* pOutGlyphIds, Point& rPos, int& nStart,
 	sal_Int32* pGlyphAdvances, int* pCharIndexes ) const
 {
 	if( !mpCTLine )
@@ -320,7 +320,7 @@ int CTLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphIDs, Point& rPos, int&
 		for(; (--nLen >= 0) && (nSubIndex < nGlyphsInRun); ++nSubIndex, ++nStart )
 		{
 			// convert glyph details for VCL
-			*(pGlyphIDs++) = pCGGlyphIdx[ nSubIndex ];
+			*(pOutGlyphIds++) = pCGGlyphIdx[ nSubIndex ];
 			if( pGlyphAdvances )
 				*(pGlyphAdvances++) = pCGGlyphAdvs[ nSubIndex ].width;
 			if( pCharIndexes )
@@ -471,14 +471,14 @@ void CTLayout::Simplify( bool /*bIsBase*/ ) {}
 
 // get the ImplFontData for a glyph fallback font
 // for a glyphid that was returned by CTLayout::GetNextGlyphs()
-const ImplFontData* CTLayout::GetFallbackFontData( sal_GlyphId /*nGlyphId*/ ) const
+const ImplFontData* CTLayout::GetFallbackFontData( sal_GlyphId /*aGlyphId*/ ) const
 {
 #if 0
 	// check if any fallback fonts were needed
 	if( !mpFallbackInfo )
 		return NULL;
 	// check if the current glyph needs a fallback font
-	int nFallbackLevel = (nGlyphId & GF_FONTMASK) >> GF_FONTSHIFT;
+	int nFallbackLevel = (aGlyphId & GF_FONTMASK) >> GF_FONTSHIFT;
 	if( !nFallbackLevel )
 		return NULL;
 	pFallbackFont = mpFallbackInfo->GetFallbackFontData( nFallbackLevel );

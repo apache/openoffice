@@ -22,6 +22,8 @@ package org.openoffice.test.common;
 
 import java.io.File;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -188,7 +190,10 @@ public class XMLReporter extends RunListener {
 				prop.setAttribute("value", "" + e.getValue());
 				props.appendChild(prop);
 			}
-			
+
+			SimpleDateFormat dateFormat = new SimpleDateFormat( "yyyy-MM-dd HH-mm-ss");
+			System.setProperty( "info.test.date", dateFormat.format( new Date()));
+
 			FileUtil.storeXML(doc, file);
 			File htmlFile = new File(outputDir, "result.html");
 			InputStream is = getClass().getResourceAsStream("XMLReporter.xsl");

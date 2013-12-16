@@ -28,6 +28,7 @@
 #include <tools/string.hxx>
 #include <cstdio>
 
+#include "salglyphid.hxx"
 #include "vcl/dllapi.h"
 #include "sallayout.hxx"
 
@@ -59,7 +60,7 @@ public:
 
 	bool		CreateFontSubset( int nOutFontTypeMask,
 					FILE* pOutFile, const char* pOutFontName,
-					const sal_GlyphId* pReqGlyphIds, const sal_uInt8* pEncodedIds,
+					const sal_GlyphId* pGlyphIds, const sal_uInt8* pEncodedIds,
 					int nReqGlyphCount, sal_Int32* pOutGlyphWidths = NULL );
 
 public: // TODO: make subsetter results private and provide accessor methods instead
@@ -82,7 +83,7 @@ private:
 	int						mnReqFontTypeMask;	// allowed subset-target font types
 	FILE*					mpOutFile;
 	const char*				mpReqFontName;
-	const sal_GlyphId*			mpReqGlyphIds;
+	const sal_GlyphId*		mpReqGlyphIds;
 	const sal_uInt8*		mpReqEncodedIds;
 	int						mnReqGlyphCount;
 
