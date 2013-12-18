@@ -32,6 +32,7 @@
 #include <xmloff/xmluconv.hxx>
 #include "xmlexpit.hxx"
 #include <xmloff/nmspmap.hxx>
+#include <xmloff/xmlnmspe.hxx>
 #include <xmloff/xmltabe.hxx>
 #include "xmlbrshe.hxx"
 #include <editeng/tstpitem.hxx>
