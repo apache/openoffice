@@ -53,6 +53,7 @@
 #include <txtrfmrk.hxx>
 #include <txtftn.hxx>
 #include <txtfld.hxx>
+#include <txtannotationfld.hxx>
 #include <charatr.hxx>
 #include <charfmt.hxx>
 #include <frmfmt.hxx>
@@ -1046,12 +1047,21 @@ SwTxtAttr* MakeTxtAttr(
 	case RES_TXTATR_INETFMT:
 		pNew = new SwTxtINetFmt( (SwFmtINetFmt&)rNew, nStt, nEnd );
 		break;
+
     case RES_TXTATR_FIELD:
         pNew = new SwTxtFld( static_cast<SwFmtFld &>(rNew), nStt );
         break;
+
+    case RES_TXTATR_ANNOTATION:
+        {
+            pNew = new SwTxtAnnotationFld( static_cast<SwFmtFld &>(rNew), nStt );
+        }
+        break;
+
     case RES_TXTATR_INPUTFIELD:
         pNew = new SwTxtInputFld( static_cast<SwFmtFld &>(rNew), nStt, nEnd );
         break;
+
 	case RES_TXTATR_FLYCNT:
 		{
 			// erst hier wird das Frame-Format kopiert (mit Inhalt) !!
@@ -1137,6 +1147,7 @@ void SwTxtNode::DestroyAttr( SwTxtAttr* pAttr )
 			break;
 
 		case RES_TXTATR_FIELD:
+		case RES_TXTATR_ANNOTATION:
 		case RES_TXTATR_INPUTFIELD:
 			if( !pDoc->IsInDtor() )
 			{
@@ -1211,16 +1222,24 @@ void SwTxtNode::DestroyAttr( SwTxtAttr* pAttr )
  *						SwTxtNode::Insert()
  *************************************************************************/
 
-SwTxtAttr*
-SwTxtNode::InsertItem( SfxPoolItem& rAttr,
-      const xub_StrLen nStart, const xub_StrLen nEnd, const SetAttrMode nMode )
+SwTxtAttr* SwTxtNode::InsertItem(
+    SfxPoolItem& rAttr,
+    const xub_StrLen nStart,
+    const xub_StrLen nEnd,
+    const SetAttrMode nMode )
 {
    // character attributes will be inserted as automatic styles:
     ASSERT( !isCHRATR(rAttr.Which()), "AUTOSTYLES - "
         "SwTxtNode::InsertItem should not be called with character attributes");
 
-    SwTxtAttr *const pNew = MakeTxtAttr( *GetDoc(), rAttr, nStart, nEnd,
-            (nMode & nsSetAttrMode::SETATTR_IS_COPY) ? COPY : NEW, this );
+    SwTxtAttr *const pNew =
+        MakeTxtAttr(
+            *GetDoc(),
+            rAttr,
+            nStart,
+            nEnd,
+            (nMode & nsSetAttrMode::SETATTR_IS_COPY) ? COPY : NEW,
+            this );
 
     if ( pNew )
     {
@@ -2608,20 +2627,20 @@ bool SwpHints::CalcHiddenParaField()
     m_bCalcHiddenParaField = false;
     bool bOldHasHiddenParaField = m_bHasHiddenParaField;
     bool bNewHasHiddenParaField  = false;
-	const sal_uInt16	nSize = Count();
-	const SwTxtAttr *pTxtHt;
+    const sal_uInt16	nSize = Count();
+    const SwTxtAttr *pTxtHt;
 
-	for( sal_uInt16 nPos = 0; nPos < nSize; ++nPos )
-	{
-		pTxtHt = (*this)[ nPos ];
-		const sal_uInt16 nWhich = pTxtHt->Which();
+    for( sal_uInt16 nPos = 0; nPos < nSize; ++nPos )
+    {
+        pTxtHt = (*this)[ nPos ];
+        const sal_uInt16 nWhich = pTxtHt->Which();
 
-		if( RES_TXTATR_FIELD == nWhich )
-		{
-			const SwFmtFld& rFld = pTxtHt->GetFmtFld();
+        if( RES_TXTATR_FIELD == nWhich )
+        {
+            const SwFmtFld& rFld = pTxtHt->GetFmtFld();
             if( RES_HIDDENPARAFLD == rFld.GetField()->GetTyp()->Which() )
-			{
-				if( !((SwHiddenParaField*)rFld.GetField())->IsHidden() )
+            {
+                if( !((SwHiddenParaField*)rFld.GetField())->IsHidden() )
                 {
                     SetHiddenParaField(false);
                     return bOldHasHiddenParaField != bNewHasHiddenParaField;
@@ -2805,8 +2824,10 @@ void lcl_CheckSortNumber( const SwpHints& rHints, SwTxtCharFmt& rNewCharFmt )
  * overwritten.
  * The return value indicates successful insertion.
  */
-bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
-        const SetAttrMode nMode )
+bool SwpHints::TryInsertHint(
+    SwTxtAttr* const pHint,
+    SwTxtNode &rNode,
+    const SetAttrMode nMode )
 {
     if ( USHRT_MAX == Count() ) // we're sorry, this flight is overbooked...
     {
@@ -2846,10 +2867,13 @@ bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
         break;
     }
     // <--
+
     case RES_TXTATR_INETFMT:
         static_cast<SwTxtINetFmt*>(pHint)->InitINetFmt(rNode);
-		break;
+        break;
+
 	case RES_TXTATR_FIELD:
+	case RES_TXTATR_ANNOTATION:
 	case RES_TXTATR_INPUTFIELD:
 		{
 			sal_Bool bDelFirst = 0 != ((SwTxtFld*)pHint)->GetpTxtNode();
@@ -2919,6 +2943,12 @@ bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
                 case RES_POSTITFLD:
                     if ( pDoc->GetDocShell() )
                         pDoc->GetDocShell()->Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_INSERTED ) );
+                    // For annotations on text ranges the corresponding annotation mark is created afterwards.
+                    // Thus, if there is already an annotation mark, clear the annotation's name in order to cut the relation
+                    if ( dynamic_cast< SwTxtAnnotationFld* >(pHint)->GetAnnotationMark( rNode.GetDoc() ) != NULL )
+                    {
+                        const_cast<SwPostItField*>(dynamic_cast< const SwPostItField* >(pHint->GetFmtFld().GetField()))->SetName( String() );
+                    }
                     break;
                 }
                 if( bInsFldType )
@@ -3118,7 +3148,7 @@ void SwpHints::DeleteAtPos( const sal_uInt16 nPos )
     NoteInHistory( pHint );
     SwpHintsArray::DeleteAtPos( nPos );
 
-    if( RES_TXTATR_FIELD == pHint->Which() )
+    if( pHint->Which() == RES_TXTATR_FIELD )
     {
         const SwFieldType* pFldTyp = ((SwTxtFld*)pHint)->GetFmtFld().GetField()->GetTyp();
         if( RES_DDEFLD == pFldTyp->Which() )
@@ -3128,15 +3158,15 @@ void SwpHints::DeleteAtPos( const sal_uInt16 nPos )
                 ((SwDDEFieldType*)pFldTyp)->DecRefCnt();
             ((SwTxtFld*)pHint)->ChgTxtNode( 0 );
         }
-        else if( RES_POSTITFLD == pFldTyp->Which() )
-        {
-            const_cast<SwFmtFld&>(((SwTxtFld*)pHint)->GetFmtFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_REMOVED ) );
-        }
         else if ( m_bHasHiddenParaField &&
                  RES_HIDDENPARAFLD == pFldTyp->Which() )
         {
             m_bCalcHiddenParaField = true;
         }
+    }
+    else if ( pHint->Which() == RES_TXTATR_ANNOTATION )
+    {
+        const_cast<SwFmtFld&>(((SwTxtFld*)pHint)->GetFmtFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_REMOVED ) );
     }
 
     CalcFlags();
@@ -3172,6 +3202,7 @@ void SwTxtNode::ClearSwpHintsArr( bool bDelFields )
                 break;
 
             case RES_TXTATR_FIELD:
+            case RES_TXTATR_ANNOTATION:
             case RES_TXTATR_INPUTFIELD:
                 if( bDelFields )
                     bDel = true;
@@ -3264,6 +3295,7 @@ sal_Unicode GetCharOfTxtAttr( const SwTxtAttr& rAttr )
         case RES_TXTATR_TOXMARK:
         case RES_TXTATR_META:
         case RES_TXTATR_METAFIELD:
+        case RES_TXTATR_ANNOTATION:
             cRet = CH_TXTATR_INWORD;
         break;
 
@@ -3271,11 +3303,6 @@ sal_Unicode GetCharOfTxtAttr( const SwTxtAttr& rAttr )
         case RES_TXTATR_FLYCNT:
         {
             cRet = CH_TXTATR_BREAKWORD;
-
-            // #i78149: PostIt fields should not break words for spell and grammar checking
-            if (rAttr.Which() == RES_TXTATR_FIELD && 
-                RES_POSTITFLD == rAttr.GetFmtFld().GetField()->GetTyp()->Which())
-                cRet = CH_TXTATR_INWORD;
         }
         break;
 

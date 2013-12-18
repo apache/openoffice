@@ -144,19 +144,23 @@ namespace
 
         typedef ::std::vector< const ::sw::mark::IMark* > mark_vector_t;
         mark_vector_t vMarksToCopy;
-        for(IDocumentMarkAccess::const_iterator_t ppMark = pSrcMarkAccess->getMarksBegin();
-            ppMark != pSrcMarkAccess->getMarksEnd();
-            ppMark++)
+        for ( IDocumentMarkAccess::const_iterator_t ppMark = pSrcMarkAccess->getAllMarksBegin();
+              ppMark != pSrcMarkAccess->getAllMarksEnd();
+              ppMark++ )
         {
             const ::sw::mark::IMark* const pMark = ppMark->get();
+
             const SwPosition& rMarkStart = pMark->GetMarkStart();
             const SwPosition& rMarkEnd = pMark->GetMarkEnd();
-            // only include marks that are in the range and not touching
-            // both start and end
-            bool bIsNotOnBoundary = pMark->IsExpanded()
+            // only include marks that are in the range and not touching both start and end
+            // - not for annotation marks.
+            const bool bIsNotOnBoundary =
+                pMark->IsExpanded()
                 ? (rMarkStart != rStt || rMarkEnd != rEnd)  // rMarkStart != rMarkEnd
                 : (rMarkStart != rStt && rMarkEnd != rEnd); // rMarkStart == rMarkEnd
-            if(rMarkStart >= rStt && rMarkEnd <= rEnd && bIsNotOnBoundary)
+            if ( rMarkStart >= rStt && rMarkEnd <= rEnd
+                 && ( bIsNotOnBoundary
+                      || IDocumentMarkAccess::GetType( *pMark ) == IDocumentMarkAccess::ANNOTATIONMARK ) )
             {
                 vMarksToCopy.push_back(pMark);
             }
@@ -1281,7 +1285,7 @@ bool SwDoc::CopyImpl( SwPaM& rPam, SwPosition& rPos,
 	aCpyPam.Exchange();
 
 	// dann kopiere noch alle Bookmarks
-    if( bCopyBookmarks && getIDocumentMarkAccess()->getMarksCount() )
+    if( bCopyBookmarks && getIDocumentMarkAccess()->getAllMarksCount() )
 		lcl_CopyBookmarks( rPam, aCpyPam );
 
 	if( nsRedlineMode_t::REDLINE_DELETE_REDLINES & eOld )
@@ -1362,7 +1366,7 @@ void SwDoc::CopyWithFlyInFly( const SwNodeRange& rRg, const xub_StrLen nEndConte
 	SwNodeRange aCpyRange( aSavePos, rInsPos );
 
 	// dann kopiere noch alle Bookmarks
-    if( getIDocumentMarkAccess()->getMarksCount() )
+    if( getIDocumentMarkAccess()->getAllMarksCount() )
 	{
 		SwPaM aRgTmp( rRg.aStart, rRg.aEnd );
 		SwPaM aCpyTmp( aCpyRange.aStart, aCpyRange.aEnd );

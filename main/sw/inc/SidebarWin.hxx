@@ -46,9 +46,11 @@ class SwEditWin;
 class SwView;
 class Edit;
 class MenuButton;
-//class SwRedline;
 class SwFrm;
 
+namespace sw { namespace overlay {
+    class OverlayRanges;
+}}
 
 namespace sw { namespace sidebarwindows {
 
@@ -63,7 +65,7 @@ typedef sal_Int64 SwPostItBits;
 
 class SwSidebarWin : public Window
 {
-	public:
+    public:
         SwSidebarWin( SwEditWin& rEditWin,
                       WinBits nBits,
                       SwPostItMgr& aMgr,
@@ -76,7 +78,7 @@ class SwSidebarWin : public Window
                                   long nY,
                                   long nWidth,
                                   long nHeight,
-                                  const SwRect &aRect,
+                                  const SwRect& aAnchorRect,
                                   const long PageBorder);
         void SetPosAndSize();
         void TranslateTopPosition(const long aAmount);
@@ -91,50 +93,57 @@ class SwSidebarWin : public Window
         inline ScrollBar* Scrollbar() { return mpVScrollbar; }
         inline ::sw::sidebarwindows::AnchorOverlayObject* Anchor() { return mpAnchor;}
         inline ::sw::sidebarwindows::ShadowOverlayObject* Shadow() { return mpShadow;}
+        inline ::sw::overlay::OverlayRanges* TextRange() { return mpTextRangeOverlay;}
 
         long            GetPostItTextHeight();
 
-		void			SwitchToPostIt(sal_uInt16 aDirection);
-		virtual void	SwitchToFieldPos();
+        void            SwitchToPostIt(sal_uInt16 aDirection);
+        virtual void    SwitchToFieldPos();
 
         virtual sal_uInt32 MoveCaret() = 0;
 
-		virtual void	UpdateData() = 0;
-		virtual void	SetPostItText() = 0;
-		virtual void	Delete();
-		virtual void	GotoPos() = 0;
+        virtual void    UpdateData() = 0;
+        virtual void    SetPostItText() = 0;
+        virtual void    Delete();
+        virtual void    GotoPos() = 0;
 
         virtual String  GetAuthor() = 0;
         virtual Date    GetDate() = 0;
         virtual Time    GetTime() = 0;
 
-		void			ExecuteCommand(sal_uInt16 nSlot);
-		void			InitControls();
+        void            ExecuteCommand(sal_uInt16 nSlot);
+        void            InitControls();
         void            HidePostIt();
         void            DoResize();
-		void			ResizeIfNeccessary(long aOldHeight, long aNewHeight);
-		void			SetScrollbar();
+        void            ResizeIfNeccessary(long aOldHeight, long aNewHeight);
+        void            SetScrollbar();
 
-		void			SetVirtualPosSize( const Point& aPoint, const Size& aSize);
-		const Point		VirtualPos()	{ return mPosSize.TopLeft(); }
-		const Size		VirtualSize()	{ return mPosSize.GetSize(); }
+        void            SetVirtualPosSize( const Point& aPoint, const Size& aSize);
+        const Point     VirtualPos()	{ return mPosSize.TopLeft(); }
+        const Size      VirtualSize()	{ return mPosSize.GetSize(); }
 
         void            ShowAnchorOnly(const Point &aPoint);
         void            ShowNote();
         void            HideNote();
 
-		void			ResetAttributes();
+        void            ResetAttributes();
 
         void            SetSidebarPosition(sw::sidebarwindows::SidebarPosition eSidebarPosition);
-		void			SetReadonly(sal_Bool bSet);
-		sal_Bool			IsReadOnly()		{ return mbReadonly;}
-		bool			IsPreview()			{ return nFlags & PB_Preview;}
+        void            SetReadonly(sal_Bool bSet);
+        sal_Bool        IsReadOnly()
+        {
+            return mbReadonly;
+        }
+        bool            IsPreview()
+        {
+            return nFlags & PB_Preview;
+        }
 
-        void            SetColor(Color aColorDark,Color aColorLight, Color aColorAnchor);
+        void         SetColor(Color aColorDark,Color aColorLight, Color aColorAnchor);
         const Color& ColorAnchor() { return mColorAnchor; }
         const Color& ColorDark() { return mColorDark; }
         const Color& ColorLight() { return mColorLight; }
-		void			Rescale();
+        void         Rescale();
 
         void            SetViewState(::sw::sidebarwindows::ViewState bViewState);
 
@@ -142,28 +151,28 @@ class SwSidebarWin : public Window
         void            SetFollow( bool bIsFollow) { mbIsFollow = bIsFollow; };
         virtual bool    CalcFollow() = 0;
 
-#if 0
-#endif
+        sal_Int32   GetMetaHeight();
+        sal_Int32   GetMinimumSizeWithMeta();
+        sal_Int32   GetMinimumSizeWithoutMeta();
+        sal_Int32   GetMetaButtonAreaWidth();
+        sal_Int32   GetScrollbarWidth();
 
-		sal_Int32		GetMetaHeight();
-		sal_Int32		GetMinimumSizeWithMeta();
-		sal_Int32		GetMinimumSizeWithoutMeta();
-		sal_Int32		GetMetaButtonAreaWidth();
-		sal_Int32		GetScrollbarWidth();
+        void    SetSpellChecking();
 
-		void			SetSpellChecking();
+        void    ToggleInsMode();
 
-		void			ToggleInsMode();
-
-		virtual	void	ActivatePostIt();
-		virtual void	DeactivatePostIt();
+        virtual void    ActivatePostIt();
+        virtual void    DeactivatePostIt();
 
         void SetChangeTracking( const SwPostItHelper::SwLayoutStatus aStatus,
                                 const Color& aColor);
         SwPostItHelper::SwLayoutStatus GetLayoutStatus() { return mLayoutStatus; }
         Color GetChangeColor() { return mChangeColor; }
 
-		virtual bool	IsProtected() {return mbReadonly;};
+        virtual bool IsProtected()
+        {
+            return mbReadonly;
+        }
 
         DECL_LINK( WindowEventListener, VclSimpleEvent* );
         inline bool IsMouseOverSidebarWin() const { return mbMouseOver; }
@@ -213,6 +222,7 @@ class SwSidebarWin : public Window
 
         sw::sidebarwindows::AnchorOverlayObject* mpAnchor;
         sw::sidebarwindows::ShadowOverlayObject* mpShadow;
+        sw::overlay::OverlayRanges* mpTextRangeOverlay;
 
         Color           mColorAnchor;
         Color           mColorDark;
