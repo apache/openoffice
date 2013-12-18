@@ -177,7 +177,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 #if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
 #endif
-#if 0 // TODO: the derived type_info classes are not directly available => get them indirectly?
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -195,9 +194,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 pair< t_rtti_map::iterator, bool > insertion(
                     m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
                 OSL_ENSURE( insertion.second, "### inserting new generated rtti failed?!" );
-#else
-		return NULL;
-#endif
             }
             else // taking already generated rtti
             {
@@ -217,8 +213,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 static void deleteException( void * pExc )
 {
     __cxa_exception const * header = ((__cxa_exception const *)pExc - 1);
-    if( !header->exceptionType) // TODO: remove this when getRTTI() always returns non-NULL
-        return; // NOTE: leak for now
     typelib_TypeDescription * pTD = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
     ::typelib_typedescription_getByName( &pTD, unoName.pData );

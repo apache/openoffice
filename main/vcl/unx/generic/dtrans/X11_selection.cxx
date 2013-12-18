@@ -739,8 +739,8 @@ Atom SelectionManager::getAtom( const OUString& rString )
 	::std::hash_map< OUString, Atom, OUStringHash >::const_iterator it;
 	if( ( it = m_aStringToAtom.find( rString ) ) == m_aStringToAtom.end() )
 	{
-        static Atom nNoDisplayAtoms = 1;
-		Atom aAtom = m_pDisplay ? XInternAtom( m_pDisplay, OUStringToOString( rString, RTL_TEXTENCODING_ISO_8859_1 ), False ) : nNoDisplayAtoms++;
+		static Atom nNoDisplayAtoms = 1;
+		Atom aAtom = m_pDisplay ? XInternAtom( m_pDisplay, OUStringToOString( rString, RTL_TEXTENCODING_ISO_8859_1).getStr(), False ) : nNoDisplayAtoms++;
 		m_aStringToAtom[ rString ] = aAtom;
 		m_aAtomToString[ aAtom ] = rString;
 	}
