@@ -134,7 +134,7 @@ private:
 
 private:
   ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XMimeContentTypeFactory> mrXMimeCntFactory;
-  typedef ::std::hash_map< rtl::OUString, NSString*, rtl::OUStringHash > OfficeOnlyTypes;
+  typedef std::hash_map< rtl::OUString, NSString*, rtl::OUStringHash > OfficeOnlyTypes;
   mutable OfficeOnlyTypes maOfficeOnlyTypes;
 };
 

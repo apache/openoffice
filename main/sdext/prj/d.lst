@@ -3,6 +3,8 @@ mkdir: %_DEST%\bin%_EXT%\pdfimport
 ..\%__SRC%\bin\pdfunzip.* %_DEST%\bin%_EXT%\pdfunzip.*
 ..\%__SRC%\bin\pdfimport.oxt %_DEST%\bin%_EXT%\pdfimport\pdfimport.oxt
 
+
+
 mkdir: %COMMON_DEST%\res%_EXT%
 ..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
 

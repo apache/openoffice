@@ -33,7 +33,6 @@
 #include "vos/thread.hxx"
 #include "vcl/outdev.hxx"
 #include "vcl/salnativewidgets.hxx"
-#include "sallayout.hxx"
 
 #include <map>
 
@@ -44,6 +43,8 @@ class ImplFontMetricData;
 struct ImplKernPairData;
 class ImplFontData;
 class ImplFontCharMap;
+class SalLayout;
+class ImplLayoutArgs;
 class Rectangle;
 class FontSubsetInfo;
 class OutputDevice;

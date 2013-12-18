@@ -425,7 +425,7 @@ private:
 	const char*	getString( int nStringID);
 	int			getFDSelect( int nGlyphIndex) const;
 	int			getGlyphSID( int nGlyphIndex) const;
-	const char* getGlyphName( sal_GlyphId nGlyphIndex);
+	const char* getGlyphName( int nGlyphIndex);
 
 	void	read2push( void);
 	void	pop2write( void);
@@ -1840,7 +1840,7 @@ int CffSubsetterContext::getGlyphSID( int nGlyphIndex) const
 // --------------------------------------------------------------------
 
 // NOTE: the result becomes invalid with the next call to this method
-const char* CffSubsetterContext::getGlyphName( sal_GlyphId nGlyphIndex)
+const char* CffSubsetterContext::getGlyphName( int nGlyphIndex)
 {
 	// the first glyph is always the .notdef glyph
 	const char* pGlyphName = ".notdef";

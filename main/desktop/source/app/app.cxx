@@ -281,8 +281,8 @@ ResMgr* Desktop::GetDesktopResManager()
             OUString aVariant = aUILocaleString.getToken( 0, '-', nIndex);
 
             ::com::sun::star::lang::Locale aLocale( aLanguage, aCountry, aVariant );
-            Desktop::pResMgr = ResMgr::SearchCreateResMgr( pMgrName, aLocale);
 
+            Desktop::pResMgr = ResMgr::SearchCreateResMgr( pMgrName, aLocale);
             AllSettings as = GetSettings();
             as.SetUILocale(aLocale);
             SetSettings(as);
