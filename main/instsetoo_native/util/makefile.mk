@@ -90,10 +90,12 @@ help .PHONY :
 	@echo "    patch-check            check if patch can be created (part of patch-create)"
 	@echo 
 	@echo "Most targets (all except aoo_srcrelease and updatepack) accept suffixes"
-	@echo "    add _<language> to build a target for one language only"
+	@echo "    append _<language> to build a target for one language only"
 	@echo "        the default set of languages is alllangiso=$(alllangiso)"
-	@echo "    add .<package_format> to build a target for one package format only"
+	@echo "    append .<package_format> to build a target for one package format only"
 	@echo "        the default set of package formats is archive and PKGFORMAT=$(PKGFORMAT)"
+	@echo "        known package formats are: "
+	@echo "        archive, bsd, deb, dmg, installed, msi, native, osx, pkg, portable, rpm"
 
 
 LOCALPYFILES=			\
@@ -443,7 +445,23 @@ MSI_LANGPACK_TEMPLATE_FILES=		\
 	components.txt			\
 	ooo_patchcodes.txt		\
 	ooodev_patchcodes.txt		\
-	Binary/Banner.bmp
+	Binary/Banner.bmp		\
+	Binary/Image.bmp		\
+	Binary/caution.ico		\
+	Binary/dontinstall.ico		\
+	Binary/install.ico		\
+	Binary/installfirstuse.ico	\
+	Binary/installpartial.ico	\
+	Binary/installstatemenu.ico	\
+	Binary/networkinstall.ico	\
+	Binary/newfolder.ico		\
+	Binary/openfolder.ico		\
+	Binary/setup.ico		\
+	Binary/setupcomplete.ico	\
+	Binary/setuppartial.ico		\
+	Binary/setuprepair.ico		\
+	Binary/trashcan.ico		\
+	Binary/up.ico
 
 MSI_SDK_TEMPLATE_FILES=			\
 	ActionTe.idt			\

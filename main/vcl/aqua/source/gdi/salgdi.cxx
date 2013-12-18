@@ -734,13 +734,13 @@ void AquaSalGraphics::drawRect( long nX, long nY, long nWidth, long nHeight )
 
 // -----------------------------------------------------------------------
 
-static void getBoundRect( sal_uLong nPoints, const SalPoint *pPtAry, long &rX, long& rY, long& rWidth, long& rHeight )
+static void getBoundRect( sal_uInt32 nPoints, const SalPoint* pPtAry, long &rX, long& rY, long& rWidth, long& rHeight )
 {
     long nX1 = pPtAry->mnX;
     long nX2 = nX1;
     long nY1 = pPtAry->mnY;
     long nY2 = nY1;
-    for( sal_uLong n = 1; n < nPoints; n++ )
+    for( sal_uInt32 n = 1; n < nPoints; ++n )
     {
         if( pPtAry[n].mnX < nX1 )
             nX1 = pPtAry[n].mnX;
@@ -764,7 +764,7 @@ static inline void alignLinePoint( const SalPoint* i_pIn, float& o_fX, float& o_
     o_fY = static_cast<float>(i_pIn->mnY ) + 0.5;
 }
 
-void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
+void AquaSalGraphics::drawPolyLine( sal_uInt32 nPoints, const SalPoint* pPtAry )
 {
 	if( nPoints < 1 )
 		return;
@@ -780,7 +780,7 @@ void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
 	alignLinePoint( pPtAry, fX, fY );
 	CGContextMoveToPoint( mrContext, fX, fY );
 	pPtAry++;
-	for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	{
 	    alignLinePoint( pPtAry, fX, fY );
 	    CGContextAddLineToPoint( mrContext, fX, fY );
@@ -792,7 +792,7 @@ void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
+void AquaSalGraphics::drawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry )
 {
 	if( nPoints <= 1 )
 		return;
@@ -820,7 +820,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
         alignLinePoint( pPtAry, fX, fY );
         CGContextMoveToPoint( mrContext, fX, fY );
         pPtAry++;
-        for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+        for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
         {
             alignLinePoint( pPtAry, fX, fY );
             CGContextAddLineToPoint( mrContext, fX, fY );
@@ -830,7 +830,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
     {
         CGContextMoveToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
         pPtAry++;
-        for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+        for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
             CGContextAddLineToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
     }
 
@@ -840,7 +840,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32 *pPoints, PCONSTSALPOINT  *ppPtAry )
+void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32* pPoints, PCONSTSALPOINT* ppPtAry )
 {
     if( nPolyCount <= 0 )
 		return;
@@ -887,7 +887,7 @@ void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32 *
 	{
 	    for( sal_uLong nPoly = 0; nPoly < nPolyCount; nPoly++ )
 	    {
-	        const sal_uLong nPoints = pPoints[nPoly];
+	        const sal_uInt32 nPoints = pPoints[nPoly];
 	        if( nPoints > 1 )
 	        {
 	            const SalPoint *pPtAry = ppPtAry[nPoly];
@@ -895,7 +895,7 @@ void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32 *
 	            alignLinePoint( pPtAry, fX, fY );
 	            CGContextMoveToPoint( mrContext, fX, fY );
 	            pPtAry++;
-	            for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	            for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	            {
 	                alignLinePoint( pPtAry, fX, fY );
 	                CGContextAddLineToPoint( mrContext, fX, fY );
@@ -908,13 +908,13 @@ void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32 *
 	{
 	    for( sal_uLong nPoly = 0; nPoly < nPolyCount; nPoly++ )
 	    {
-	        const sal_uLong nPoints = pPoints[nPoly];
+	        const sal_uInt32 nPoints = pPoints[nPoly];
 	        if( nPoints > 1 )
 	        {
 	            const SalPoint *pPtAry = ppPtAry[nPoly];
 	            CGContextMoveToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
 	            pPtAry++;
-	            for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	            for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	                CGContextAddLineToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
 	            CGContextClosePath(mrContext);
 	        }
@@ -1064,14 +1064,14 @@ bool AquaSalGraphics::drawPolyLine(
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::drawPolyLineBezier( sal_uLong, const SalPoint*, const sal_uInt8* )
+sal_Bool AquaSalGraphics::drawPolyLineBezier( sal_uInt32, const SalPoint*, const sal_uInt8* )
 {
     return sal_False;
 }
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::drawPolygonBezier( sal_uLong, const SalPoint*, const sal_uInt8* )
+sal_Bool AquaSalGraphics::drawPolygonBezier( sal_uInt32, const SalPoint*, const sal_uInt8* )
 {
     return sal_False;
 }
@@ -1409,7 +1409,7 @@ void AquaSalGraphics::invert( long nX, long nY, long nWidth, long nHeight, SalIn
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::invert( sal_uLong nPoints, const SalPoint*  pPtAry, SalInvert nSalFlags )
+void AquaSalGraphics::invert( sal_uInt32 nPoints, const SalPoint* pPtAry, SalInvert nSalFlags )
 {
     CGPoint* CGpoints ;
     if ( CheckContext() )
