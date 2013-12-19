@@ -508,45 +508,64 @@ public:
 	SwDoc* GetDoc()			{return mpDoc;};
 };
 
-/*--------------------------------------------------------------------
-	Beschreibung: PostIt
- --------------------------------------------------------------------*/
 
+// representation for a comment/an annotation
 class SW_DLLPUBLIC SwPostItField : public SwField
 {
-	String 		sTxt;		// die Anmerkung
-	String 		sAuthor;	// der Author
-	DateTime	aDateTime;	// Datum und Zeit der Anmerkung
-	OutlinerParaObject*	mpText;
-	SwTextAPIObject* m_pTextObject;
+    String      msCommentContent;   // content of the comment/annotation
+    String      msAuthor;           // author
+    String      msAuthorInitials;   // author's initials
+    String      msName;             // name (identifier) of the comment/annotation
+    DateTime    maDateTime;         // creation date and time
+
+    OutlinerParaObject*	mpText;
+    SwTextAPIObject* m_pTextObject;
 
 public:
-	SwPostItField( SwPostItFieldType*,
-				   const String& rAuthor, const String& rTxt, const DateTime& rDate);
-	~SwPostItField();
+    SwPostItField(
+        SwPostItFieldType*,
+        const String& rCommentContent,
+        const String& rAuthor,
+        const String& rAuthorInitials,
+        const String& rName,
+        const DateTime& rDate);
+    ~SwPostItField();
 
-	virtual String			Expand() const;
-	virtual SwField*		Copy() const;
+    virtual String Expand() const;
+    virtual SwField* Copy() const;
 
-	inline const Date 		GetDate() const					{ return aDateTime.GetDate(); }
-	inline const Time 		GetTime() const					{ return aDateTime.GetTime(); }
+    inline const Date GetDate() const
+    {
+        return maDateTime.GetDate();
+    }
+    inline const Time GetTime() const
+    {
+        return maDateTime.GetTime();
+    }
 
-	// Author
-	virtual const String& 	GetPar1() const;
-	virtual void			SetPar1(const String& rStr);
+    // Author
+    virtual const String& 	GetPar1() const;
+    virtual void			SetPar1(const String& rStr);
 
-	// Text
-	virtual String			GetPar2() const;
-	virtual void			SetPar2(const String& rStr);
-	const String&			GetTxt() const { return sTxt; }
+    // Text
+    virtual String          GetPar2() const;
+    virtual void            SetPar2(const String& rStr);
+    inline const String&    GetContent() const
+    {
+        return msCommentContent;
+    }
 
-	const OutlinerParaObject*	GetTextObject() const;
-	void SetTextObject( OutlinerParaObject* pText );
+    // Name
+    void SetName(const String& rStr);
+    const String& GetName() const;
+
+    const OutlinerParaObject*	GetTextObject() const;
+    void SetTextObject( OutlinerParaObject* pText );
 
     sal_uInt32 GetNumberOfParagraphs() const;
 
-    virtual sal_Bool        QueryValue( com::sun::star::uno::Any& rVal, sal_uInt16 nWhich ) const;
-    virtual sal_Bool        PutValue( const com::sun::star::uno::Any& rVal, sal_uInt16 nWhich );
+    virtual sal_Bool    QueryValue( com::sun::star::uno::Any& rVal, sal_uInt16 nWhich ) const;
+    virtual sal_Bool    PutValue( const com::sun::star::uno::Any& rVal, sal_uInt16 nWhich );
     virtual String      GetDescription() const;
 };
 
