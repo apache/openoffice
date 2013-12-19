@@ -1071,22 +1071,22 @@ void SwTxtNode::Update(
             }
         }
 
-        const IDocumentMarkAccess* const pMarkAccess = getIDocumentMarkAccess();
-        for ( IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->getMarksBegin();
-              ppMark != pMarkAccess->getMarksEnd();
-              ppMark++ )
+        // Bookmarks must never grow to either side, when editing (directly) to the left or right (#i29942#)!
+        // And a bookmark with same start and end must remain to the left of the inserted text (used in XML import).
         {
-            // Bookmarks must never grow to either side, when
-            // editing (directly) to the left or right (#i29942#)!
-            // And a bookmark with same start and end must remain
-            // to the left of the inserted text (used in XML import).
-            const ::sw::mark::IMark* const pMark = ppMark->get();
-            const SwPosition* pEnd = &pMark->GetMarkEnd();
-            SwIndex & rIdx = const_cast<SwIndex&>(pEnd->nContent);
-            if( this == &pEnd->nNode.GetNode() &&
-                rPos.GetIndex() == rIdx.GetIndex() )
+            const IDocumentMarkAccess* const pMarkAccess = getIDocumentMarkAccess();
+            for ( IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->getAllMarksBegin();
+                ppMark != pMarkAccess->getAllMarksEnd();
+                ppMark++ )
             {
-                rIdx.Assign( &aTmpIdxReg, rIdx.GetIndex() );
+                const ::sw::mark::IMark* const pMark = ppMark->get();
+                const SwPosition* pEnd = &pMark->GetMarkEnd();
+                SwIndex & rIdx = const_cast<SwIndex&>(pEnd->nContent);
+                if( this == &pEnd->nNode.GetNode() &&
+                    rPos.GetIndex() == rIdx.GetIndex() )
+                {
+                    rIdx.Assign( &aTmpIdxReg, rIdx.GetIndex() );
+                }
             }
         }
     }
@@ -1320,6 +1320,10 @@ SwTxtFld* SwTxtNode::GetFldTxtAttrAt(
     pTxtFld = dynamic_cast<SwTxtFld*>(GetTxtAttrForCharAt( nIndex, RES_TXTATR_FIELD ));
     if ( pTxtFld == NULL )
     {
+        pTxtFld = dynamic_cast<SwTxtFld*>(GetTxtAttrForCharAt( nIndex, RES_TXTATR_ANNOTATION ));
+    }
+    if ( pTxtFld == NULL )
+    {
         pTxtFld =
             dynamic_cast<SwTxtFld*>( GetTxtAttrAt(
                 nIndex,
@@ -1372,9 +1376,8 @@ void lcl_CopyHint(
 
     // TabellenFormel muessen relativ kopiert werden.
     case RES_TXTATR_FIELD :
-    case RES_TXTATR_INPUTFIELD :
         {
-            if( pOtherDoc )
+            if( pOtherDoc != NULL )
             {
                 static_cast<const SwTxtFld*>(pHt)->CopyTxtFld( static_cast<SwTxtFld*>(pNewHt) );
             }
@@ -1389,11 +1392,20 @@ void lcl_CopyHint(
                     static_cast<const SwTxtFld*>(pHt)->GetTxtNode().FindTableNode();
                 if( pDstTblNd )
                 {
-                    SwTblField* const pTblFld = const_cast<SwTblField*>(
-                        static_cast<const SwTblField*>(pNewHt->GetFmtFld().GetField()));
+                    SwTblField* const pTblFld =
+                        const_cast<SwTblField*>(static_cast<const SwTblField*>(
+                            pNewHt->GetFmtFld().GetField()));
                     pTblFld->PtrToBoxNm( &pDstTblNd->GetTable() );
                 }
             }
+        }
+        break;
+
+    case RES_TXTATR_INPUTFIELD :
+    case RES_TXTATR_ANNOTATION :
+        if( pOtherDoc != NULL )
+        {
+            static_cast<const SwTxtFld*>(pHt)->CopyTxtFld( static_cast<SwTxtFld*>(pNewHt) );
         }
         break;
 
@@ -1758,10 +1770,11 @@ void SwTxtNode::CopyText( SwTxtNode *const pDest,
         }
         else
         {
-            pNewHt = pDest->InsertItem( pHt->GetAttr(), nAttrStt - nDeletedDummyChars,
+            pNewHt = pDest->InsertItem(
+                pHt->GetAttr(),
+                nAttrStt - nDeletedDummyChars,
                 nAttrEnd - nDeletedDummyChars,
-                      nsSetAttrMode::SETATTR_NOTXTATRCHR
-                    | nsSetAttrMode::SETATTR_IS_COPY);
+                nsSetAttrMode::SETATTR_NOTXTATRCHR | nsSetAttrMode::SETATTR_IS_COPY);
             if (pNewHt)
             {
                 lcl_CopyHint( nWhich, pHt, pNewHt, pOtherDoc, pDest );
@@ -2996,69 +3009,74 @@ long SwTxtNode::GetLeftMarginForTabCalculation() const
 }
 // <--
 
-void SwTxtNode::Replace0xFF( XubString& rTxt, xub_StrLen& rTxtStt,
-							xub_StrLen nEndPos, sal_Bool bExpandFlds ) const
+void SwTxtNode::Replace0xFF(
+    XubString& rTxt,
+    xub_StrLen& rTxtStt,
+    xub_StrLen nEndPos,
+    sal_Bool bExpandFlds ) const
 {
-	if( GetpSwpHints() )
-	{
-		sal_Unicode cSrchChr = CH_TXTATR_BREAKWORD;
-		for( int nSrchIter = 0; 2 > nSrchIter; ++nSrchIter,
-								cSrchChr = CH_TXTATR_INWORD )
-		{
-			xub_StrLen nPos = rTxt.Search( cSrchChr );
-			while( STRING_NOTFOUND != nPos && nPos < nEndPos )
+    if( GetpSwpHints() )
+    {
+        sal_Unicode cSrchChr = CH_TXTATR_BREAKWORD;
+        for( int nSrchIter = 0; 2 > nSrchIter; ++nSrchIter, cSrchChr = CH_TXTATR_INWORD )
+        {
+            xub_StrLen nPos = rTxt.Search( cSrchChr );
+            while( STRING_NOTFOUND != nPos && nPos < nEndPos )
             {
                 const SwTxtAttr* const pAttr =
                     GetTxtAttrForCharAt( rTxtStt + nPos );
-				if( pAttr )
-				{
-					switch( pAttr->Which() )
-					{
-					case RES_TXTATR_FIELD:
-						rTxt.Erase( nPos, 1 );
-						if( bExpandFlds )
-						{
+                if( pAttr )
+                {
+                    switch( pAttr->Which() )
+                    {
+                    case RES_TXTATR_FIELD:
+                    case RES_TXTATR_ANNOTATION:
+                        rTxt.Erase( nPos, 1 );
+                        if( bExpandFlds )
+                        {
                             const XubString aExpand(
                                 static_cast<SwTxtFld const*>(pAttr)->GetFmtFld().GetField()->ExpandField(true));
-							rTxt.Insert( aExpand, nPos );
-							nPos = nPos + aExpand.Len();
-							nEndPos = nEndPos + aExpand.Len();
-							rTxtStt = rTxtStt - aExpand.Len();
-						}
-						++rTxtStt;
-						break;
-					case RES_TXTATR_FTN:
-						rTxt.Erase( nPos, 1 );
-						if( bExpandFlds )
-						{
-							const SwFmtFtn& rFtn = pAttr->GetFtn();
-							XubString sExpand;
-							if( rFtn.GetNumStr().Len() )
-								sExpand = rFtn.GetNumStr();
-							else if( rFtn.IsEndNote() )
-								sExpand = GetDoc()->GetEndNoteInfo().aFmt.
-												GetNumStr( rFtn.GetNumber() );
-							else
-								sExpand = GetDoc()->GetFtnInfo().aFmt.
-												GetNumStr( rFtn.GetNumber() );
-							rTxt.Insert( sExpand, nPos );
-							nPos = nPos + sExpand.Len();
-							nEndPos = nEndPos + sExpand.Len();
-							rTxtStt = rTxtStt - sExpand.Len();
-						}
-						++rTxtStt;
-						break;
-					default:
-						rTxt.Erase( nPos, 1 );
-						++rTxtStt;
-					}
-				}
-				else
-					++nPos, ++nEndPos;
-				nPos = rTxt.Search( cSrchChr, nPos );
-			}
-		}
-	}
+                            rTxt.Insert( aExpand, nPos );
+                            nPos = nPos + aExpand.Len();
+                            nEndPos = nEndPos + aExpand.Len();
+                            rTxtStt = rTxtStt - aExpand.Len();
+                        }
+                        ++rTxtStt;
+                        break;
+
+                    case RES_TXTATR_FTN:
+                        rTxt.Erase( nPos, 1 );
+                        if( bExpandFlds )
+                        {
+                            const SwFmtFtn& rFtn = pAttr->GetFtn();
+                            XubString sExpand;
+                            if( rFtn.GetNumStr().Len() )
+                                sExpand = rFtn.GetNumStr();
+                            else if( rFtn.IsEndNote() )
+                                sExpand = GetDoc()->GetEndNoteInfo().aFmt.
+                                GetNumStr( rFtn.GetNumber() );
+                            else
+                                sExpand = GetDoc()->GetFtnInfo().aFmt.
+                                GetNumStr( rFtn.GetNumber() );
+                            rTxt.Insert( sExpand, nPos );
+                            nPos = nPos + sExpand.Len();
+                            nEndPos = nEndPos + sExpand.Len();
+                            rTxtStt = rTxtStt - sExpand.Len();
+                        }
+                        ++rTxtStt;
+                        break;
+
+                    default:
+                        rTxt.Erase( nPos, 1 );
+                        ++rTxtStt;
+                    }
+                }
+                else
+                    ++nPos, ++nEndPos;
+                nPos = rTxt.Search( cSrchChr, nPos );
+            }
+        }
+    }
 }
 
 /*************************************************************************
@@ -3170,28 +3188,29 @@ sal_Bool SwTxtNode::GetExpandTxt( SwTxtNode& rDestNd, const SwIndex* pDestIdx,
                 }
             }
             else if ( pHt->HasDummyChar() && (nAttrStartIdx >= nIdx) )
-			{
-				aDestIdx = nInsPos + nAttrStartIdx;
-				switch( nWhich )
-				{
-				case RES_TXTATR_FIELD:
-					{
+            {
+                aDestIdx = nInsPos + nAttrStartIdx;
+                switch( nWhich )
+                {
+                case RES_TXTATR_FIELD:
+                case RES_TXTATR_ANNOTATION:
+                    {
                         XubString const aExpand(
                             static_cast<SwTxtFld const*>(pHt)->GetFmtFld().GetField()->ExpandField(true) );
-						if( aExpand.Len() )
-						{
-							aDestIdx++;		// dahinter einfuegen;
+                        if( aExpand.Len() )
+                        {
+                            aDestIdx++;		// dahinter einfuegen;
                             rDestNd.InsertText( aExpand, aDestIdx );
-							aDestIdx = nInsPos + nAttrStartIdx;
-							nInsPos = nInsPos + aExpand.Len();
+                            aDestIdx = nInsPos + nAttrStartIdx;
+                            nInsPos = nInsPos + aExpand.Len();
                         }
                         rDestNd.EraseText( aDestIdx, 1 );
-						--nInsPos;
-					}
-					break;
+                        --nInsPos;
+                    }
+                    break;
 
-				case RES_TXTATR_FTN:
-					{
+                case RES_TXTATR_FTN:
+                    {
                         if ( bWithFtn )
                         {
                             const SwFmtFtn& rFtn = pHt->GetFtn();
@@ -3200,42 +3219,42 @@ sal_Bool SwTxtNode::GetExpandTxt( SwTxtNode& rDestNd, const SwIndex* pDestIdx,
                                 sExpand = rFtn.GetNumStr();
                             else if( rFtn.IsEndNote() )
                                 sExpand = GetDoc()->GetEndNoteInfo().aFmt.
-                                                GetNumStr( rFtn.GetNumber() );
+                                GetNumStr( rFtn.GetNumber() );
                             else
                                 sExpand = GetDoc()->GetFtnInfo().aFmt.
-                                                GetNumStr( rFtn.GetNumber() );
+                                GetNumStr( rFtn.GetNumber() );
                             if( sExpand.Len() )
                             {
                                 aDestIdx++;     // insert behind
                                 SvxEscapementItem aItem(
-                                        SVX_ESCAPEMENT_SUPERSCRIPT );
-                                rDestNd.InsertItem(aItem,
-                                        aDestIdx.GetIndex(),
-                                        aDestIdx.GetIndex() );
-                                rDestNd.InsertText( sExpand, aDestIdx,
-                                  IDocumentContentOperations::INS_EMPTYEXPAND);
+                                    SVX_ESCAPEMENT_SUPERSCRIPT );
+                                rDestNd.InsertItem(
+                                    aItem,
+                                    aDestIdx.GetIndex(),
+                                    aDestIdx.GetIndex() );
+                                rDestNd.InsertText( sExpand, aDestIdx, IDocumentContentOperations::INS_EMPTYEXPAND);
                                 aDestIdx = nInsPos + nAttrStartIdx;
                                 nInsPos = nInsPos + sExpand.Len();
                             }
                         }
                         rDestNd.EraseText( aDestIdx, 1 );
-						--nInsPos;
-					}
-					break;
+                        --nInsPos;
+                    }
+                    break;
 
-				default:
+                default:
                     rDestNd.EraseText( aDestIdx, 1 );
-					--nInsPos;
-				}
-			}
-		}
-	}
+                    --nInsPos;
+                }
+            }
+        }
+    }
 
-	if( bWithNum )
-	{
-		aDestIdx = nDestStt;
+    if( bWithNum )
+    {
+        aDestIdx = nDestStt;
         rDestNd.InsertText( GetNumString(), aDestIdx );
-	}
+    }
 
     if ( nHiddenChrs > 0 )
     {
@@ -3271,7 +3290,8 @@ const ModelToViewHelper::ConversionMap*
     for ( sal_uInt16 i = 0; pSwpHints2 && i < pSwpHints2->Count(); ++i )
     {
         const SwTxtAttr* pAttr = (*pSwpHints2)[i];
-        if ( RES_TXTATR_FIELD == pAttr->Which() )
+        if ( pAttr->Which() == RES_TXTATR_FIELD
+             || pAttr->Which() == RES_TXTATR_ANNOTATION )
         {
             const XubString aExpand(
                 static_cast<SwTxtFld const*>(pAttr)->GetFmtFld().GetField()->ExpandField(true));
