@@ -1055,6 +1055,14 @@ SwTxtAttr* MakeTxtAttr(
     case RES_TXTATR_ANNOTATION:
         {
             pNew = new SwTxtAnnotationFld( static_cast<SwFmtFld &>(rNew), nStt );
+            if ( bIsCopy == COPY )
+            {
+                // On copy of the annotation field do not keep the annotated text range by removing
+                // the relation to its annotation mark (relation established via annotation field's name).
+                // If the annotation mark is also copied, the relation and thus the annotated text range will be reestablished,
+                // when the annotation mark is created and inserted into the document.
+                const_cast<SwPostItField*>(dynamic_cast< const SwPostItField* >(pNew->GetFmtFld().GetField()))->SetName( String() );
+            }
         }
         break;
 
@@ -2943,12 +2951,6 @@ bool SwpHints::TryInsertHint(
                 case RES_POSTITFLD:
                     if ( pDoc->GetDocShell() )
                         pDoc->GetDocShell()->Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_INSERTED ) );
-                    // For annotations on text ranges the corresponding annotation mark is created afterwards.
-                    // Thus, if there is already an annotation mark, clear the annotation's name in order to cut the relation
-                    if ( dynamic_cast< SwTxtAnnotationFld* >(pHint)->GetAnnotationMark( rNode.GetDoc() ) != NULL )
-                    {
-                        const_cast<SwPostItField*>(dynamic_cast< const SwPostItField* >(pHint->GetFmtFld().GetField()))->SetName( String() );
-                    }
                     break;
                 }
                 if( bInsFldType )

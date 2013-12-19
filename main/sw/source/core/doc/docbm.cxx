@@ -1360,38 +1360,33 @@ void _SaveCntntIdx(SwDoc* pDoc,
     const sal_Int32 nMarksCount = pMarkAccess->getAllMarksCount();
     for ( ; aSave.GetCount() < nMarksCount; aSave.IncCount() )
     {
-        bool bEqual = false;
-        bool bLower = false;
+        bool bMarkPosEqual = false;
         const ::sw::mark::IMark* pBkmk = (pMarkAccess->getAllMarksBegin() + aSave.GetCount())->get();
         if(pBkmk->GetMarkPos().nNode.GetIndex() == nNode
             && pBkmk->GetMarkPos().nContent.GetIndex() <= nCntnt)
         {
             if(pBkmk->GetMarkPos().nContent.GetIndex() < nCntnt)
             {
-                bLower = true; // a hint for the other position...
                 aSave.SetContent(pBkmk->GetMarkPos().nContent.GetIndex());
                 aSave.Add(rSaveArr);
             }
             else // if a bookmark position is equal nCntnt, the other position
-                bEqual = true; // has to decide if it is added to the array
+                bMarkPosEqual = true; // has to decide if it is added to the array
         }
 
         if(pBkmk->IsExpanded()
             && pBkmk->GetOtherMarkPos().nNode.GetIndex() == nNode
             && pBkmk->GetOtherMarkPos().nContent.GetIndex() <= nCntnt)
         {
-            if(bLower || pBkmk->GetOtherMarkPos().nContent.GetIndex() < nCntnt)
-            {
-                if(bEqual)
-                { // the other position is before, the (main) position is equal
-                    aSave.SetContent(pBkmk->GetMarkPos().nContent.GetIndex());
-                    aSave.Add(rSaveArr);
-                }
-                aSave.SetContent(pBkmk->GetOtherMarkPos().nContent.GetIndex());
-                aSave.IncType();
+            if(bMarkPosEqual)
+            { // the other position is before, the (main) position is equal
+                aSave.SetContent(pBkmk->GetMarkPos().nContent.GetIndex());
                 aSave.Add(rSaveArr);
-                aSave.DecType();
             }
+            aSave.SetContent(pBkmk->GetOtherMarkPos().nContent.GetIndex());
+            aSave.IncType();
+            aSave.Add(rSaveArr);
+            aSave.DecType();
         }
     }
 

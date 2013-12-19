@@ -852,7 +852,7 @@ void SwUndoSaveCntnt::DelCntntIndex( const SwPosition& rMark,
                     {
                         // delete annotation marks, if its end position is covered by the deletion
                         const SwPosition& rAnnotationEndPos = pBkmk->GetMarkEnd();
-                        if ( *pStt <= rAnnotationEndPos && rAnnotationEndPos <= *pEnd )
+                        if ( *pStt < rAnnotationEndPos && rAnnotationEndPos <= *pEnd )
                         {
                             bSavePos = true;
                             bSaveOtherPos = true;

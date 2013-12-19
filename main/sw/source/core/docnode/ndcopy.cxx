@@ -132,7 +132,9 @@ namespace
     }
 
     // TODO: use SaveBookmark (from _DelBookmarks)
-    static void lcl_CopyBookmarks(const SwPaM& rPam, SwPaM& rCpyPam)
+    static void lcl_CopyBookmarks(
+        const SwPaM& rPam,
+        SwPaM& rCpyPam )
     {
         const SwDoc* pSrcDoc = rPam.GetDoc();
         SwDoc* pDestDoc =  rCpyPam.GetDoc();
@@ -1249,13 +1251,13 @@ bool SwDoc::CopyImpl( SwPaM& rPam, SwPosition& rPos,
 			if( aInsPos == pEnd->nNode )
 			{
 				SwNodeIndex aSaveIdx( aInsPos, -1 );
-                CopyWithFlyInFly( aRg, 0,aInsPos, bMakeNewFrms, sal_False );
+                CopyWithFlyInFly( aRg, 0, aInsPos, &rPam, bMakeNewFrms, sal_False );
 				aSaveIdx++;
 				pEnd->nNode = aSaveIdx;
 				pEnd->nContent.Assign( aSaveIdx.GetNode().GetTxtNode(), 0 );
 			}
 			else
-                CopyWithFlyInFly( aRg, pEnd->nContent.GetIndex(), aInsPos, bMakeNewFrms, sal_False );
+                CopyWithFlyInFly( aRg, pEnd->nContent.GetIndex(), aInsPos, &rPam, bMakeNewFrms, sal_False );
 
             bCopyBookmarks = false;
 
@@ -1322,22 +1324,27 @@ bool SwDoc::CopyImpl( SwPaM& rPam, SwPosition& rPos,
 
 //  ----- Copy-Methode vom SwDoc - "kopiere Fly's in Fly's" ------
 
-void SwDoc::CopyWithFlyInFly( const SwNodeRange& rRg, const xub_StrLen nEndContentIndex,
-							const SwNodeIndex& rInsPos, sal_Bool bMakeNewFrms,
-							sal_Bool bDelRedlines, sal_Bool bCopyFlyAtFly ) const
+void SwDoc::CopyWithFlyInFly(
+    const SwNodeRange& rRg,
+    const xub_StrLen nEndContentIndex,
+    const SwNodeIndex& rInsPos,
+    const SwPaM* pCopiedPaM,
+    const sal_Bool bMakeNewFrms,
+    const sal_Bool bDelRedlines,
+    const sal_Bool bCopyFlyAtFly ) const
 {
-	SwDoc* pDest = rInsPos.GetNode().GetDoc();
+    SwDoc* pDest = rInsPos.GetNode().GetDoc();
 
-	_SaveRedlEndPosForRestore aRedlRest( rInsPos, 0 );
+    _SaveRedlEndPosForRestore aRedlRest( rInsPos, 0 );
 
-	SwNodeIndex aSavePos( rInsPos, -1 );
-	sal_Bool bEndIsEqualEndPos = rInsPos == rRg.aEnd;
-	GetNodes()._CopyNodes( rRg, rInsPos, bMakeNewFrms, sal_True );
-	aSavePos++;
-	if( bEndIsEqualEndPos )
-		((SwNodeIndex&)rRg.aEnd) = aSavePos;
+    SwNodeIndex aSavePos( rInsPos, -1 );
+    sal_Bool bEndIsEqualEndPos = rInsPos == rRg.aEnd;
+    GetNodes()._CopyNodes( rRg, rInsPos, bMakeNewFrms, sal_True );
+    aSavePos++;
+    if( bEndIsEqualEndPos )
+        ((SwNodeIndex&)rRg.aEnd) = aSavePos;
 
-	aRedlRest.Restore();
+    aRedlRest.Restore();
 
 #ifdef DBG_UTIL
 	{
@@ -1363,21 +1370,23 @@ void SwDoc::CopyWithFlyInFly( const SwNodeRange& rRg, const xub_StrLen nEndConte
         CopyFlyInFlyImpl( rRg, nEndContentIndex, aSavePos, bCopyFlyAtFly );
     }
 
-	SwNodeRange aCpyRange( aSavePos, rInsPos );
+    SwNodeRange aCpyRange( aSavePos, rInsPos );
 
-	// dann kopiere noch alle Bookmarks
+    // dann kopiere noch alle Bookmarks
     if( getIDocumentMarkAccess()->getAllMarksCount() )
-	{
-		SwPaM aRgTmp( rRg.aStart, rRg.aEnd );
-		SwPaM aCpyTmp( aCpyRange.aStart, aCpyRange.aEnd );
+    {
+        SwPaM aRgTmp( rRg.aStart, rRg.aEnd );
+        SwPaM aCpyTmp( aCpyRange.aStart, aCpyRange.aEnd );
 
-		lcl_CopyBookmarks( aRgTmp, aCpyTmp );
-	}
+        lcl_CopyBookmarks(
+            pCopiedPaM != NULL ? *pCopiedPaM : aRgTmp,
+            aCpyTmp );
+    }
 
-	if( bDelRedlines && ( nsRedlineMode_t::REDLINE_DELETE_REDLINES & pDest->GetRedlineMode() ))
-		lcl_DeleteRedlines( rRg, aCpyRange );
+    if( bDelRedlines && ( nsRedlineMode_t::REDLINE_DELETE_REDLINES & pDest->GetRedlineMode() ))
+        lcl_DeleteRedlines( rRg, aCpyRange );
 
-	pDest->GetNodes()._DelDummyNodes( aCpyRange );
+    pDest->GetNodes()._DelDummyNodes( aCpyRange );
 }
 
 void lcl_ChainFmts( SwFlyFrmFmt *pSrc, SwFlyFrmFmt *pDest )
@@ -1396,9 +1405,11 @@ void lcl_ChainFmts( SwFlyFrmFmt *pSrc, SwFlyFrmFmt *pDest )
 	}
 }
 
-void SwDoc::CopyFlyInFlyImpl( const SwNodeRange& rRg,
-        const xub_StrLen nEndContentIndex, const SwNodeIndex& rStartIdx,
-        const bool bCopyFlyAtFly ) const
+void SwDoc::CopyFlyInFlyImpl(
+    const SwNodeRange& rRg,
+    const xub_StrLen nEndContentIndex,
+    const SwNodeIndex& rStartIdx,
+    const bool bCopyFlyAtFly ) const
 {
 	// Bug 22727: suche erst mal alle Flys zusammen, sortiere sie entsprechend
 	//			  ihrer Ordnungsnummer und kopiere sie erst dann. Damit wird
