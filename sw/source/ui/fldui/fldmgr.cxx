@@ -854,12 +854,14 @@ sal_uInt16 SwFldMgr::GetCurTypeId() const
  --------------------------------------------------------------------*/
 
 
-sal_Bool SwFldMgr::InsertFld(  const SwInsertFld_Data& rData )
+sal_Bool SwFldMgr::InsertFld(
+    const SwInsertFld_Data& rData,
+    const SwPaM *pPam )
 {
     SwField* pFld   = 0;
-	sal_Bool bExp = sal_False;
-	sal_Bool bTbl = sal_False;
-	sal_Bool bPageVar = sal_False;
+    sal_Bool bExp = sal_False;
+    sal_Bool bTbl = sal_False;
+    sal_Bool bPageVar = sal_False;
     sal_uLong nFormatId = rData.nFormatId;
     sal_uInt16 nSubType = rData.nSubType;
     sal_Unicode cSeparator = rData.cSeparator;
@@ -871,13 +873,20 @@ sal_Bool SwFldMgr::InsertFld(  const SwInsertFld_Data& rData )
         return sal_False;
 
     switch(rData.nTypeId)
-	{   // ACHTUNG dieses Feld wird ueber einen gesonderten Dialog eingefuegt
-		case TYP_POSTITFLD:
-		{
-			SwPostItFieldType* pType = (SwPostItFieldType*)pCurShell->GetFldType(0, RES_POSTITFLD);
-			pFld = new SwPostItField(pType, rData.sPar1, rData.sPar2, DateTime());
-			break;
-		}
+    {
+    case TYP_POSTITFLD:
+        {
+            SwPostItFieldType* pType = (SwPostItFieldType*)pCurShell->GetFldType(0, RES_POSTITFLD);
+            pFld = new SwPostItField(
+                pType,
+                rData.sPar2, // content
+                rData.sPar1, // author
+                aEmptyStr, // author's initials
+                aEmptyStr, // name
+                DateTime() );
+            break;
+        }
+
 		case TYP_SCRIPTFLD:
 		{
 			SwScriptFieldType* pType =
@@ -1389,7 +1398,13 @@ sal_Bool SwFldMgr::InsertFld(  const SwInsertFld_Data& rData )
 	// Einfuegen
     pCurShell->StartAllAction();
 
-    pCurShell->Insert(*pFld);
+    const SwPaM* pCommentRange = NULL;
+    if (pPam && *pPam->GetPoint() != *pPam->GetMark() && rData.nTypeId == TYP_POSTITFLD)
+    {
+        pCommentRange = pPam;
+    }
+
+    pCurShell->Insert( *pFld, pCommentRange );
 
 	if(bExp && bEvalExp)
         pCurShell->UpdateExpFlds(sal_True);
