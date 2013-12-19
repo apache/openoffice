@@ -2261,24 +2261,26 @@ SwLinePortion* SwTxtFormatter::MakeRestPortion( const SwLineLayout* pLine,
 	if( pFld && !pFld->HasFollow() )
 		pFld = NULL;
 
-	SwLinePortion *pRest = NULL;
-	if( pFld )
-	{
+    SwLinePortion *pRest = NULL;
+    if( pFld )
+    {
         const SwTxtAttr *pHint = GetAttr( nPosition - 1 );
-		if( pHint && pHint->Which() == RES_TXTATR_FIELD )
-		{
-			pRest = NewFldPortion( GetInfo(), pHint );
-			if( pRest->InFldGrp() )
-				((SwFldPortion*)pRest)->TakeNextOffset( pFld );
-			else
-			{
-				delete pRest;
-				pRest = NULL;
-			}
-		}
-	}
+        if ( pHint
+             && ( pHint->Which() == RES_TXTATR_FIELD
+                  || pHint->Which() == RES_TXTATR_ANNOTATION ) )
+        {
+            pRest = NewFldPortion( GetInfo(), pHint );
+            if( pRest->InFldGrp() )
+                ((SwFldPortion*)pRest)->TakeNextOffset( pFld );
+            else
+            {
+                delete pRest;
+                pRest = NULL;
+            }
+        }
+    }
     if( !pHelpMulti )
-		return pRest;
+        return pRest;
 
     nPosition = nMultiPos + pHelpMulti->GetLen();
     SwMultiCreator* pCreate = GetInfo().GetMultiCreator( nMultiPos, 0 );
