@@ -152,7 +152,6 @@ void CTLayout::AdjustLayout( ImplLayoutArgs& rArgs )
 	const int nTrailingSpaceWidth = rint( mfFontScale * mfTrailingSpaceWidth );
 
 	int nOrigWidth = GetTextWidth();
-	nOrigWidth -= nTrailingSpaceWidth;
 	int nPixelWidth = rArgs.mnLayoutWidth;
 	if( nPixelWidth )
 	{
@@ -180,6 +179,29 @@ void CTLayout::AdjustLayout( ImplLayoutArgs& rArgs )
 	// #i86038# introduced by lossy conversions between integer based coordinate system
 	if( (nOrigWidth >= nPixelWidth-1) && (nOrigWidth <= nPixelWidth+1) )
 		return;
+
+	// if the text to be justified has whitespace in it then
+	// - Writer goes crazy with its HalfSpace magic
+	// - LayoutEngine handles spaces specially (in particular at the text start or end)
+	if( mnTrailingSpaces ) {
+		// adjust for Writer's SwFntObj::DrawText() Halfspace magic at the text end
+		std::vector<sal_Int32> aOrigDXAry;
+		aOrigDXAry.resize( mnCharCount);
+		FillDXArray( &aOrigDXAry[0] );
+		int nLastCharSpace = rArgs.mpDXArray[ mnCharCount-1-mnTrailingSpaces ]
+			- aOrigDXAry[ mnCharCount-1-mnTrailingSpaces ];
+		nPixelWidth -= nLastCharSpace;
+		if( nPixelWidth < 0 )
+			return;
+		// recreate the CoreText line layout without trailing spaces
+		CFRelease( mpCTLine );
+		CFStringRef aCFText = CFStringCreateWithCharactersNoCopy( NULL, rArgs.mpStr + mnMinCharPos,
+			mnCharCount - mnTrailingSpaces, kCFAllocatorNull );
+		CFAttributedStringRef pAttrStr = CFAttributedStringCreate( NULL, aCFText, mpTextStyle->GetStyleDict() );
+		mpCTLine = CTLineCreateWithAttributedString( pAttrStr );
+		CFRelease( aCFText);
+		CFRelease( pAttrStr );
+	}
 
 	CTLineRef pNewCTLine = rCT.LineCreateJustifiedLine( mpCTLine, 1.0, nPixelWidth / mfFontScale );
 	if( !pNewCTLine ) { // CTLineCreateJustifiedLine can and does fail
@@ -344,12 +366,10 @@ long CTLayout::GetTextWidth() const
 	if( (mnCharCount <= 0) || !mpCTLine )
 		return 0;
 
-	if( mfCachedWidth < 0.0 ) {
-		mfCachedWidth = CTLineGetTypographicBounds( mpCTLine, NULL, NULL, NULL);
-		mfTrailingSpaceWidth = CTLineGetTrailingWhitespaceWidth( mpCTLine);
-	}
+	if( mfCachedWidth < 0.0 )
+		mfCachedWidth = CTLineGetTypographicBounds( mpCTLine, NULL, NULL, NULL );
 
-	const long nScaledWidth = lrint( mfFontScale * (mfCachedWidth + mfTrailingSpaceWidth));
+	const long nScaledWidth = lrint( mfFontScale * mfCachedWidth );
 	return nScaledWidth;
 }
 
@@ -360,9 +380,6 @@ long CTLayout::FillDXArray( sal_Int32* pDXArray ) const
 	// short circuit requests which don't need full details
 	if( !pDXArray )
 		return GetTextWidth();
-
-	// check assumptions
-	DBG_ASSERT( mfTrailingSpaceWidth==0.0, "CTLayout::FillDXArray() with fTSW!=0" );
 
 	long nPixWidth = GetTextWidth();
 	if( pDXArray ) {
