@@ -144,12 +144,11 @@ sub printf ($$@)
 {
     my ($self, $format, @arguments) = @_;
 
-    if ($format =~ /\%\{/)
+    my $message = sprintf($format, @arguments);
+    if ($message =~ /\%/)
     {
-        printf(">%s<\n", $format);
         PrintStackTrace();
     }
-    my $message = sprintf($format, @arguments);
     $self->print($message, 0);
 }
 
@@ -659,7 +658,6 @@ sub PrintStackTrace ()
         printf("%s:%s in function %s\n", $call_details[1], $call_details[2], $call_details[3]);
     }
 }
-
 
 sub Die ($)
 {

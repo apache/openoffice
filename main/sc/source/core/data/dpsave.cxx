@@ -1506,6 +1506,7 @@ void ScDPSaveDimension::Refresh( const com::sun::star::uno::Reference<
         };
 
         //remove unused members
+        //SODC_19124
         for (MemberList::iterator i=maMemberList.begin(); i != maMemberList.end() ; )
         {
             rtl::OUString aMemberName = (*i)->GetName();

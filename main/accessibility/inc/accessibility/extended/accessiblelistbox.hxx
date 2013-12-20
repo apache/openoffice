@@ -30,16 +30,14 @@
 #include <vcl/vclevent.hxx>
 #include <toolkit/awt/vclxaccessiblecomponent.hxx>
 
-#include <map>
 
 // class AccessibleListBox -----------------------------------------------
 
 class SvTreeListBox;
-class SvLBoxEntry;
+
 //........................................................................
 namespace accessibility
 {
-	class AccessibleListBoxEntry;
 //........................................................................
 
 	typedef ::cppu::ImplHelper2<  ::com::sun::star::accessibility::XAccessible
@@ -67,8 +65,6 @@ namespace accessibility
 		virtual void	FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet );
 
 		SvTreeListBox*	getListBox() const;
-		
-		void 			RemoveChildEntries(SvLBoxEntry*);
 
 	public:
 		/** OAccessibleBase needs a valid view
@@ -115,19 +111,6 @@ namespace accessibility
 		sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
 		::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
 		void SAL_CALL deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-
-		// IA2 CWS
-		sal_Int32 SAL_CALL getRoleType();
-		
-private:
-
-	typedef std::map< SvLBoxEntry*, ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > > MAP_ENTRY;
-	MAP_ENTRY m_mapEntry;
-
-    ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > m_xFocusedChild; 	
-	
-	accessibility::AccessibleListBoxEntry* GetCurEventEntry( const VclWindowEvent& rVclWindowEvent );
-
 	};
 
 //........................................................................

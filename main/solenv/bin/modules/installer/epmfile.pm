@@ -2312,7 +2312,7 @@ sub log_rpm_info
 
 			$infoline = "$rpmout\n";
 			$infoline =~ s/error/e_r_r_o_r/gi;  # avoiding log problems
-            $installer::logger::Lang->print($infoline);
+            $installer::logger::Lang->printf($infoline);
 		}
 	}
 	else

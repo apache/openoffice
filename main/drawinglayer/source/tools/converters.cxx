@@ -120,12 +120,14 @@ namespace drawinglayer
                     maContent.Erase();
 
                     // embed primitives to paint them black
+                    static basegfx::BColorModifyMode aMode = basegfx::BCOLORMODIFYMODE_REPLACE;
                     const primitive2d::Primitive2DReference xRef(
                         new primitive2d::ModifiedColorPrimitive2D(
                             aSequence,
-                            basegfx::BColorModifierSharedPtr(
-                                new basegfx::BColorModifier_replace(
-                                    basegfx::BColor(0.0, 0.0, 0.0)))));
+                            basegfx::BColorModifier(
+                                basegfx::BColor(0.0, 0.0, 0.0),
+                                0.5,
+                                aMode)));
                     const primitive2d::Primitive2DSequence xSeq(&xRef, 1);
 
                     // render

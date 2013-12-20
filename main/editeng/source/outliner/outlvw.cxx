@@ -1825,6 +1825,7 @@ sal_Bool OutlinerView::IsWrongSpelledWordAtPos( const Point& rPosPixel, sal_Bool
 	return pEditView->IsWrongSpelledWordAtPos( rPosPixel, bMarkIfWrong );
 }
 
+
 void OutlinerView::SpellIgnoreWord()
 {
 	DBG_CHKTHIS(OutlinerView,0);

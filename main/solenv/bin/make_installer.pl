@@ -74,7 +74,9 @@ use installer::windows::idtglobal;
 use installer::windows::inifile;
 use installer::windows::java;
 use installer::windows::media;
+use installer::windows::mergemodule;
 use installer::windows::msiglobal;
+use installer::windows::msp;
 use installer::windows::patch;
 use installer::windows::property;
 use installer::windows::removefile;
@@ -82,6 +84,7 @@ use installer::windows::registry;
 use installer::windows::selfreg;
 use installer::windows::shortcut;
 use installer::windows::strip;
+use installer::windows::update;
 use installer::windows::upgrade;
 use installer::worker;
 use installer::xpdinstaller;
@@ -521,6 +524,7 @@ my $folderinproductarrayref;
 my $folderitemsinproductarrayref;
 my $registryitemsinproductarrayref;
 my $windowscustomactionsarrayref;
+my $mergemodulesarrayref;
 
 if ( $installer::globals::iswindowsbuild )	# Windows specific items: Folder, FolderItem, RegistryItem, WindowsCustomAction
 {
@@ -552,6 +556,11 @@ if ( $installer::globals::iswindowsbuild )	# Windows specific items: Folder, Fol
 
 	$windowscustomactionsarrayref = installer::setupscript::get_all_items_from_script($setupscriptref, "WindowsCustomAction");
 	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "windowscustomactions1.log", $windowscustomactionsarrayref); }
+
+	$installer::logger::Info->print( "... analyzing Windows merge modules ... \n" );
+
+	$mergemodulesarrayref = installer::setupscript::get_all_items_from_script($setupscriptref, "MergeModule");
+	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "mergemodules1.log", $mergemodulesarrayref); }
 }
 
 my $modulesinproductarrayref;
@@ -612,11 +621,10 @@ if ( $installer::globals::debug ) { installer::logger::savedebug($installer::glo
 
 if ( $installer::globals::debug ) { installer::logger::debuginfo("\nPart 1b: The language dependent part\n"); }
 
-# Run the following code block exactly once.
-# This strange version of a do{}while(false) loop exists only to allow (legacy) next statements.
-for (;1;last) 
+
+for ( my $n = 0; $n <= $#installer::globals::languageproducts; $n++ )
 {
-	my $languagesarrayref = installer::languages::get_all_languages_for_one_product($installer::globals::languageproduct, $allvariableshashref);
+	my $languagesarrayref = installer::languages::get_all_languages_for_one_product($installer::globals::languageproducts[$n], $allvariableshashref);
 	if ( $installer::globals::globallogging ) { installer::files::save_file($loggingdir . "languages.log" ,$languagesarrayref); }
 
 	$installer::globals::alllanguagesinproductarrayref = $languagesarrayref;
@@ -708,11 +716,31 @@ for (;1;last)
 	my $uniquefilename = "";
 	my $revuniquefilename = "";
 	my $revshortfilename = "";
+	my $allupdatesequences = "";
+	my $allupdatecomponents = "";
+	my $allupdatefileorder = "";
 	my $allupdatecomponentorder = "";
 	my $shortdirname = "";
 	my $componentid = "";
 	my $componentidkeypath = "";
 	my $alloldproperties = "";
+	my $allupdatelastsequences = "";
+	my $allupdatediskids = "";
+
+	if ( $installer::globals::iswindowsbuild )
+	{
+		if ( $allvariableshashref->{'UPDATE_DATABASE'} )
+		{
+			$installer::logger::Info->print( "... analyzing update database ...\n" );
+			$refdatabase = installer::windows::update::readdatabase($allvariableshashref, $languagestringref, $includepatharrayref);
+
+			if ( $installer::globals::updatedatabase )
+			{
+				($uniquefilename, $revuniquefilename, $revshortfilename, $allupdatesequences, $allupdatecomponents, $allupdatefileorder, $allupdatecomponentorder, $shortdirname, $componentid, $componentidkeypath, $alloldproperties, $allupdatelastsequences, $allupdatediskids) = installer::windows::update::create_database_hashes($refdatabase);
+				if ( $mergemodulesarrayref > -1 ) { installer::windows::update::readmergedatabase($mergemodulesarrayref, $languagestringref, $includepatharrayref); }
+			}
+		}
+	}
 
 	##############################################
 	# Setting global code variables for Windows
@@ -1920,8 +1948,9 @@ for (;1;last)
 		# Collection all available directory trees
 		installer::windows::directory::collectdirectorytrees($directoriesforepmarrayref);
 
-		$filesinproductlanguageresolvedarrayref = installer::windows::file::create_files_table($filesinproductlanguageresolvedarrayref, \@allfilecomponents, $newidtdir, $allvariableshashref, $uniquefilename);
+		$filesinproductlanguageresolvedarrayref = installer::windows::file::create_files_table($filesinproductlanguageresolvedarrayref, \@allfilecomponents, $newidtdir, $allvariableshashref, $uniquefilename, $allupdatesequences, $allupdatecomponents, $allupdatefileorder);
 		if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles17c.log", $filesinproductlanguageresolvedarrayref); }
+		if ( $installer::globals::updatedatabase ) { installer::windows::file::check_file_sequences($allupdatefileorder, $allupdatecomponentorder); }
 
 		installer::windows::directory::create_directory_table($directoriesforepmarrayref, $newidtdir, $allvariableshashref, $shortdirname, $loggingdir);
 		if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles18.log", $filesinproductlanguageresolvedarrayref); }
@@ -1945,7 +1974,7 @@ for (;1;last)
 
 		installer::windows::featurecomponent::create_featurecomponent_table($filesinproductlanguageresolvedarrayref, $registryitemsinproductlanguageresolvedarrayref, $newidtdir);
 
-		installer::windows::media::create_media_table($filesinproductlanguageresolvedarrayref, $newidtdir, $allvariableshashref);
+		installer::windows::media::create_media_table($filesinproductlanguageresolvedarrayref, $newidtdir, $allvariableshashref, $allupdatelastsequences, $allupdatediskids);
 		if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles20.log", $filesinproductlanguageresolvedarrayref); }
 
 		installer::windows::font::create_font_table($filesinproductlanguageresolvedarrayref, $newidtdir);
@@ -2152,6 +2181,12 @@ for (;1;last)
 
 				installer::windows::msiglobal::write_summary_into_msi_database($msifilename, $onelanguage, $languagefile, $allvariableshashref);
 				
+				# if there are Merge Modules, they have to be integrated now
+				$filesinproductlanguageresolvedarrayref = installer::windows::mergemodule::merge_mergemodules_into_msi_database($mergemodulesarrayref, $filesinproductlanguageresolvedarrayref, $msifilename, $languagestringref, $onelanguage, $languagefile, $allvariableshashref, $includepatharrayref, $allupdatesequences, $allupdatelastsequences, $allupdatediskids);
+				if (( $installer::globals::globallogging ) && ($installer::globals::globalloggingform21)) { installer::files::save_array_of_hashes($loggingdir . "productfiles21_" . $onelanguage . ".log", $filesinproductlanguageresolvedarrayref); }
+				$installer::globals::globalloggingform21 = 0;
+				if ( $installer::globals::use_packages_for_cabs ) { installer::windows::media::create_media_table($filesinproductlanguageresolvedarrayref, $newidtdir, $allvariableshashref, $allupdatelastsequences, $allupdatediskids); }
+			
 				# copy msi database into installation directory
 
 				my $msidestfilename = $installdir . $installer::globals::separator . $msidatabasename;
@@ -2191,6 +2226,10 @@ for (;1;last)
 		# ... copying the setup.exe
 
 		installer::windows::msiglobal::copy_windows_installer_files_into_installset($installdir, $includepatharrayref, $allvariableshashref);
+
+		# ... copying MergeModules into installation set
+
+		if ( ! $installer::globals::fix_number_of_cab_files ) { installer::windows::msiglobal::copy_merge_modules_into_installset($installdir); }
 
 		# ... copying the child projects
 
@@ -2234,6 +2273,20 @@ for (;1;last)
 		installer::worker::clean_output_tree();	# removing directories created in the output tree
 		($is_success, $finalinstalldir) = installer::worker::analyze_and_save_logfile($loggingdir, $installdir, $installlogdir, $allsettingsarrayref, $languagestringref, $current_install_number);
 
+		#######################################################
+		# Creating Windows msp patches
+		#######################################################
+		
+		if (( $is_success ) && ( $installer::globals::updatedatabase ) && ( $allvariableshashref->{'CREATE_MSP_INSTALLSET'} ))
+		{
+			# Required:
+			# Temp path for administrative installations: $installer::globals::temppath
+			# Path of new installation set: $finalinstalldir
+			# Path of old installation set: $installer::globals::updatedatabasepath
+			my $mspdir = installer::windows::msp::create_msp_patch($finalinstalldir, $includepatharrayref, $allvariableshashref, $languagestringref, $languagesarrayref, $filesinproductlanguageresolvedarrayref);
+			($is_success, $finalinstalldir) = installer::worker::analyze_and_save_logfile($loggingdir, $mspdir, $installlogdir, $allsettingsarrayref, $languagestringref, $current_install_number);
+			installer::worker::clean_output_tree();	# removing directories created in the output tree
+		}
 		
 		#######################################################
 		# Creating download installation set
@@ -2260,7 +2313,8 @@ for (;1;last)
 	# saving file_info file for later analysis
 	my $speciallogfilename = "fileinfo_" . $installer::globals::product . "\.log";
 	installer::files::save_array_of_hashes($loggingdir . $speciallogfilename, $filesinproductlanguageresolvedarrayref);
-}
+
+}	# end of iteration for one language group
 
 # saving debug info at end
 if ( $installer::globals::debug ) { installer::logger::savedebug($installer::globals::exitlog); }

@@ -43,8 +43,6 @@
 
 #include <boost/noncopyable.hpp>
 
-#include <svx/AccessibleTableShape.hxx>
-
 class SdrObject;
 
 
@@ -82,9 +80,6 @@ public:
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL getAccessibleStateSet(void) throw(::com::sun::star::uno::RuntimeException);
 	virtual	sal_Int32 SAL_CALL getAccessibleIndexInParent(void) throw(::com::sun::star::uno::RuntimeException);
 	virtual ::rtl::OUString SAL_CALL getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException);
-	sdr::table::CellRef getCellRef();
-	void UpdateChildren();
-	::rtl::OUString getCellName( sal_Int32 nCol, sal_Int32 nRow );
 
 	// XAccessibleComponent
     virtual sal_Bool SAL_CALL containsPoint( const ::com::sun::star::awt::Point& aPoint) throw (::com::sun::star::uno::RuntimeException);
@@ -124,8 +119,6 @@ public:
 	*/
 	inline void setIndexInParent(sal_Int32 _nIndex) { mnIndexInParent = _nIndex; }
 
-	//Get the parent table
-	AccessibleTableShape* GetParentTable() { return pAccTable; }
 protected:
     /// Bundle of information passed to all shapes in a document tree.
     AccessibleShapeTreeInfo maShapeTreeInfo;
@@ -140,8 +133,6 @@ protected:
 
     /// This method is called from the component helper base class while disposing.
     virtual void SAL_CALL disposing (void);
-
-	AccessibleTableShape *pAccTable;
 
 private:
     explicit AccessibleCell(void);	// not implemented

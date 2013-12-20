@@ -844,19 +844,7 @@ void SdrOle2Obj::Init()
 }
 
 // -----------------------------------------------------------------------------
-//IAccessibility2 Implementation 2009-----
-String SdrOle2Obj::GetStyleString()
-{
-	String strStyle;
-	if( xObjRef.is() && xObjRef.IsChart() )
-	{
-		strStyle = xObjRef.GetChartType();
-	}
-	return strStyle;
-}
 
-// -----------------------------------------------------------------------------
-//-----IAccessibility2 Implementation 2009
 SdrOle2Obj::~SdrOle2Obj()
 {
     DBG_DTOR( SdrOle2Obj,NULL);

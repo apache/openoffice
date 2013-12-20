@@ -45,7 +45,7 @@ dedr: reviewed</lastedited>
 </section>
 <paragraph role="heading" id="hd_id3152801" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
 <paragraph role="paragraph" id="par_id3153346" xml-lang="en-US" l10n="U" oldref="4">oService = CreateUnoService( Uno service name )</paragraph>
-<paragraph role="paragraph" id="par_idN1060F" xml-lang="en-US" l10n="NEW">For a list of available services, see the <link href="https://api.openoffice.org/docs/common/ref/com/sun/star/module-ix.html">API reference</link>.</paragraph>
+<paragraph role="paragraph" id="par_idN1060F" xml-lang="en-US" l10n="NEW">For a list of available services, go to: http://api.openoffice.org/docs/common/ref/com/sun/star/module-ix.html</paragraph>
 <paragraph role="heading" id="hd_id3151111" xml-lang="en-US" level="2" l10n="U" oldref="5">Examples:</paragraph>
 <paragraph role="paragraph" id="par_id3154046" xml-lang="en-US" l10n="U" oldref="6">oIntrospection = CreateUnoService( "com.sun.star.beans.Introspection" )</paragraph>
 <bookmark xml-lang="en-US" branch="index" id="bm_id8334604"><bookmark_value>filepicker;API service</bookmark_value>

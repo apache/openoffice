@@ -55,6 +55,7 @@ const sal_Char sImplementationNameEndnote[] = "com.sun.star.comp.Writer.SwAccess
 SwAccessibleFootnote::SwAccessibleFootnote(
         SwAccessibleMap* pInitMap,
 		sal_Bool bIsEndnote,
+		sal_Int32 nFootEndNote,
 		const SwFtnFrm *pFtnFrm	) :
     SwAccessibleContext( pInitMap,
 		bIsEndnote ? AccessibleRole::END_NOTE : AccessibleRole::FOOTNOTE,
@@ -64,19 +65,7 @@ SwAccessibleFootnote::SwAccessibleFootnote(
 
 	sal_uInt16 nResId = bIsEndnote ? STR_ACCESS_ENDNOTE_NAME
 								   : STR_ACCESS_FOOTNOTE_NAME;
-	//IAccessibility2 Implementation 2009-----
-	//OUString sArg( OUString::valueOf( nFootEndNote ) );
-	//old codes end
-	OUString sArg;
-	const SwTxtFtn *pTxtFtn =
-		static_cast< const SwFtnFrm *>( GetFrm() )->GetAttr();
-	if( pTxtFtn )
-	{
-		const SwDoc *pDoc = GetShell()->GetDoc();
-		sArg = pTxtFtn->GetFtn().GetViewNumStr( *pDoc );
-	}
-	//-----IAccessibility2 Implementation 2009
-
+	OUString sArg( OUString::valueOf( nFootEndNote ) );
 	SetName( GetResource( nResId, &sArg ) );
 }
 

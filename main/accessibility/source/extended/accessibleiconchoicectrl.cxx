@@ -79,36 +79,11 @@ namespace accessibility
                     // modified selection.  The active descendant event is
                     // send after that so that the receiving AT has time to
                     // read the text or name of the active child.
-//                  NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
-
-					if ( getCtrl() && getCtrl()->HasFocus() )
-					{
-						SvxIconChoiceCtrlEntry* pEntry = static_cast< SvxIconChoiceCtrlEntry* >( rVclWindowEvent.GetData() );
-						if ( pEntry )
-						{
-							sal_uLong nPos = getCtrl()->GetEntryListPos( pEntry );
-							Reference< XAccessible > xChild = new AccessibleIconChoiceCtrlEntry( *getCtrl(), nPos, this );
-							uno::Any aOldValue, aNewValue;
-							aNewValue <<= xChild;
-							NotifyAccessibleEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, aOldValue, aNewValue );
-
-							NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, aOldValue, aNewValue );
-							
-						}
-					}
-					break;
-				}
-				case VCLEVENT_WINDOW_GETFOCUS :
-				{
+                    NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
 					SvtIconChoiceCtrl* pCtrl = getCtrl();
 					if ( pCtrl && pCtrl->HasFocus() )
 					{
 						SvxIconChoiceCtrlEntry* pEntry = static_cast< SvxIconChoiceCtrlEntry* >( rVclWindowEvent.GetData() );
-						if ( pEntry == NULL )
-						{
-							sal_uLong nPos=0;
-							pEntry = getCtrl()->GetSelectedEntry ( nPos );
-						}
 						if ( pEntry )
 						{
 							sal_uLong nPos = pCtrl->GetEntryListPos( pEntry );
@@ -116,7 +91,6 @@ namespace accessibility
 							uno::Any aOldValue, aNewValue;
 							aNewValue <<= xChild;
 							NotifyAccessibleEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, aOldValue, aNewValue );
-							NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, aOldValue, aNewValue );
 						}
 					}
 					break;
@@ -216,8 +190,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	sal_Int16 SAL_CALL AccessibleIconChoiceCtrl::getAccessibleRole(  ) throw (RuntimeException)
 	{
-		//return AccessibleRole::TREE;
-		return AccessibleRole::LIST;
+		return AccessibleRole::TREE;
 	}
 	// -----------------------------------------------------------------------------
 	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getAccessibleDescription(  ) throw (RuntimeException)

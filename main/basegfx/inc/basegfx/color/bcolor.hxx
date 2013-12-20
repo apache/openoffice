@@ -192,22 +192,20 @@ namespace basegfx
 			return (fRetval > fDistB ? fRetval : fDistB);
 		}
 
-        // clamp color to [0.0..1.0] values in all three intensity components
-        BColor& clamp()
-        {
+		// clamp color to [0.0..1.0] values in all three intensity components
+		void clamp()
+		{
             mfX = basegfx::clamp(mfX, 0.0, 1.0);
             mfY = basegfx::clamp(mfY, 0.0, 1.0);
             mfZ = basegfx::clamp(mfZ, 0.0, 1.0);
-            return *this; 
-        }
+		}
 
-        BColor& invert()
-        {
+		void invert()
+		{
             mfX = 1.0 - mfX;
             mfY = 1.0 - mfY;
             mfZ = 1.0 - mfZ;
-            return *this; 
-        }
+		}
 
 		static const BColor& getEmptyBColor()
 		{

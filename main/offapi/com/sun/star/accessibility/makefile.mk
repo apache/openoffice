@@ -47,18 +47,15 @@ IDLFILES=\
     AccessibleTableModelChangeType.idl              \
     AccessibleTextType.idl                          \
     IllegalAccessibleComponentStateException.idl    \
-    MSAAService.idl                                 \
     TextSegment.idl                                 \
     XAccessible.idl                                 \
     XAccessibleAction.idl                           \
     XAccessibleComponent.idl                        \
     XAccessibleContext.idl                          \
     XAccessibleEditableText.idl                     \
-    XAccessibleExtendedAttributes.idl               \
     XAccessibleEventBroadcaster.idl                 \
     XAccessibleEventListener.idl                    \
     XAccessibleExtendedComponent.idl                \
-    XAccessibleGroupPosition.idl                    \
     XAccessibleHyperlink.idl                        \
     XAccessibleHypertext.idl                        \
     XAccessibleImage.idl                            \
@@ -68,15 +65,10 @@ IDLFILES=\
     XAccessibleSelection.idl                        \
     XAccessibleStateSet.idl                         \
     XAccessibleTable.idl                            \
-    XAccessibleTableSelection.idl                   \
     XAccessibleText.idl                             \
     XAccessibleTextAttributes.idl                   \
     XAccessibleTextMarkup.idl                       \
-    XAccessibleTextSelection.idl                    \
-    XAccessibleGetAccFlowTo.idl		            \
-    XAccessibleValue.idl                            \
-    XMSAAService.idl
-
+    XAccessibleValue.idl
 
 # ------------------------------------------------------------------
 

@@ -32,16 +32,16 @@ TARGET=nss
 
 # --- Files --------------------------------------------------------
 
-.IF "$(ENABLE_NSS_MODULE)"!="YES" || "$(SYSTEM_NSS)"=="YES"
+.IF "$(ENABLE_NSS_MODULE)"!="YES"
 
 all:
-	@echo "NSS will not be built because ENABLE_NSS_MODULE='$(ENABLE_NSS_MODULE)' and SYSTEM_NSS='$(SYSTEM_NSS)'"
+	@echo "NSS will not be built. ENABLE_NSS_MODULE is '$(ENABLE_NSS_MODULE)'"
 
 .ELSE
 
-TARFILE_NAME=nss-3.14.4-with-nspr-4.9.5
-TARFILE_MD5=067a04150b1d8b64f7da3019688a7547
-TARFILE_ROOTDIR=nss-3.14.4
+TARFILE_NAME=nss-3.12.6-with-nspr-4.8.4
+TARFILE_MD5=b92261a5679276c400555004937af965
+TARFILE_ROOTDIR=nss-3.12.6
 PATCH_FILES=nss.patch
 
 .IF "$(OS)"=="MACOSX"
@@ -88,8 +88,8 @@ BUILD_DIR=mozilla$/security$/nss
 BUILD_ACTION= $(GNUMAKE) nss_build_all
 #See #i105566# && moz#513024#
 .IF "$(OS)"=="LINUX"
-BUILD_ACTION+=FREEBL_NO_DEPEND=1 FREEBL_LOWHASH=1
-PATCH_FILES+=nss_linux.patch
+BUILD_ACTION+=FREEBL_NO_DEPEND=1
+PATCH_FILES+=nss_linux.patch nspr-4.8.4-clang.patch
 .ENDIF
 
 .ENDIF			# "$(GUI)"=="UNX"

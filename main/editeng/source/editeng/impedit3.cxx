@@ -368,9 +368,7 @@ void ImpEditEngine::FormatFullDoc()
 
 void ImpEditEngine::FormatDoc()
 {
-	// IAccessible2 migration fix
-	//if ( !GetUpdateMode() || IsFormatting() )
-	if ( !GetUpdateMode() || IsFormatting() || !GetUpdateModeForAcc())
+	if ( !GetUpdateMode() || IsFormatting() )
 		return;
 
     EnterBlockNotifications();
@@ -3862,16 +3860,6 @@ EditPaM ImpEditEngine::ConnectContents( sal_uInt16 nLeftNode, sal_Bool bBackward
 	DBG_ASSERT( IsInUndo(), "ConnectContent nur fuer Undo()!" );
 	return ImpConnectParagraphs( pLeftNode, pRightNode, bBackward );
 }
-//IAccessible2 migration fix
-void ImpEditEngine::SetUpdateModeForAcc( sal_Bool bUp)
-{
-	bUpdateForAcc = bUp;
-}
-sal_Bool ImpEditEngine::GetUpdateModeForAcc()
-{
-	return bUpdateForAcc;
-}
-//End
 
 void ImpEditEngine::SetUpdateMode( sal_Bool bUp, EditView* pCurView, sal_Bool bForceUpdate )
 {

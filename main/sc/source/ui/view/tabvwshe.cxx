@@ -48,9 +48,6 @@
 #include "editsh.hxx"
 #include "dociter.hxx"
 #include "inputhdl.hxx"
-//IAccessibility2 Implementation 2009-----
-#include <svx/srchdlg.hxx>
-//-----IAccessibility2 Implementation 2009
 #include "document.hxx"
 
 //==================================================================
@@ -257,29 +254,7 @@ void ScTabViewShell::ExecSearch( SfxRequest& rReq )
 					const SvxSearchItem* pSearchItem = (const SvxSearchItem*) pItem;
 
 					ScGlobal::SetSearchItem( *pSearchItem );
-					//IAccessibility2 Implementation 2009-----
-					//SearchAndReplace( pSearchItem, sal_True, rReq.IsAPI() );
-					sal_Bool bSuccess = SearchAndReplace( pSearchItem, sal_True, rReq.IsAPI() );
-					if ( Application::IsAccessibilityEnabled() )
-					{
-						SvxSearchDialog* pSearchDlg = 
-							((SvxSearchDialog*)(SfxViewFrame::Current()->GetChildWindow(
-							SvxSearchDialogWrapper::GetChildWindowId())->GetWindow()));
-						if( pSearchDlg )
-						{
-							ScTabView* pTabView = GetViewData()->GetView();
-							if( pTabView )
-							{
-								Window* pWin = pTabView->GetActiveWin();
-								if( pWin )
-								{
-									pSearchDlg->SetDocWin( pWin );
-									pSearchDlg->SetSrchFlag( bSuccess );
-								}
-							}
-						}
-					}
-					//-----IAccessibility2 Implementation 2009
+					SearchAndReplace( pSearchItem, sal_True, rReq.IsAPI() );
 					rReq.Done();
 				}
 			}
@@ -331,27 +306,6 @@ void ScTabViewShell::ExecSearch( SfxRequest& rReq )
 							rReq.IsAPI() ? SFX_CALLMODE_API|SFX_CALLMODE_SYNCHRON :
 											SFX_CALLMODE_STANDARD,
 							&aSearchItem, 0L );
-					//IAccessibility2 Implementation 2009-----
-					if ( Application::IsAccessibilityEnabled() )
-					{
-						SvxSearchDialog* pSearchDlg = 
-							((SvxSearchDialog*)(SfxViewFrame::Current()->GetChildWindow(
-							SvxSearchDialogWrapper::GetChildWindowId())->GetWindow()));
-						if( pSearchDlg )
-						{
-							ScTabView* pTabView = GetViewData()->GetView();
-							if( pTabView )
-							{
-								Window* pWin = pTabView->GetActiveWin();
-								if( pWin )
-								{
-									pSearchDlg->SetDocWin( pWin );
-									pSearchDlg->SetSrchFlag();
-								}
-							}
-						}	
-					}
-					//-----IAccessibility2 Implementation 2009
 				}
 				else
 				{

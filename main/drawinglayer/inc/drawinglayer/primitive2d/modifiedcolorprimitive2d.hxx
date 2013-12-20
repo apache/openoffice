@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 #ifndef INCLUDED_DRAWINGLAYER_PRIMITIVE2D_MODIFIEDCOLORPRIMITIVE2D_HXX
 #define INCLUDED_DRAWINGLAYER_PRIMITIVE2D_MODIFIEDCOLORPRIMITIVE2D_HXX
 
@@ -30,8 +32,8 @@
 
 namespace drawinglayer
 {
-    namespace primitive2d
-    {
+	namespace primitive2d
+	{
         /** ModifiedColorPrimitive2D class
 
             This primitive is a grouping primitive and allows to define
@@ -43,34 +45,34 @@ namespace drawinglayer
             For the possibilities of color modifications, please refer
             to the basegfx::BColorModifier definitions in basegfx. For
             processing there is tooling in basegfx to build a stack of
-            BColorModifierSharedPtrs to always be able to proccess the correct 
+            BColorModifiers to always be able to proccess the correct 
             colors.
 
             If a renderer does not handle this primitive, the content will
             be visualized unchanged.
          */
-        class DRAWINGLAYER_DLLPUBLIC ModifiedColorPrimitive2D : public GroupPrimitive2D
-        {
-        private:
+		class DRAWINGLAYER_DLLPUBLIC ModifiedColorPrimitive2D : public GroupPrimitive2D
+		{
+		private:
             /// The ColorModifier to use
-            basegfx::BColorModifierSharedPtr        maColorModifier;
+			basegfx::BColorModifier					maColorModifier;
 
-        public:
+		public:
             /// constructor
-            ModifiedColorPrimitive2D(
-                const Primitive2DSequence& rChildren, 
-                const basegfx::BColorModifierSharedPtr& rColorModifier);
+			ModifiedColorPrimitive2D(
+				const Primitive2DSequence& rChildren, 
+				const basegfx::BColorModifier& rColorModifier);
 
-            /// data read access
-            const basegfx::BColorModifierSharedPtr& getColorModifier() const { return maColorModifier; }
+			/// data read access
+			const basegfx::BColorModifier& getColorModifier() const { return maColorModifier; }
 
-            /// compare operator
-            virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
+			/// compare operator
+			virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
 
-            /// provide unique ID
-            DeclPrimitrive2DIDBlock()
-        };
-    } // end of namespace primitive2d
+			/// provide unique ID
+			DeclPrimitrive2DIDBlock()
+		};
+	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

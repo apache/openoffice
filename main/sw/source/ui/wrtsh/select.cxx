@@ -46,11 +46,6 @@
 #include <swdtflvr.hxx>
 #include <crsskip.hxx>
 
-//IAccessibility2 Implementation 2009-----
-#ifndef _DOC_HXX
-#include <doc.hxx>
-#endif
-//-----IAccessibility2 Implementation 2009
 #if OSL_DEBUG_LEVEL > 1
 #include <pam.hxx>
 #endif
@@ -171,14 +166,6 @@ long SwWrtShell::SelAll()
         }
         SttSelect();
         GoEnd(sal_True, &bMoveTable);
-
-		//IAccessibility2 Implementation 2009-----
-		SwDoc *pDoc = GetDoc();
-		if ( pDoc )
-		{
-			pDoc->SetPrepareSelAll();
-		}
-		//-----IAccessibility2 Implementation 2009
         if( pStartPos )
         {
             pTmpCrsr = getShellCrsr( false );

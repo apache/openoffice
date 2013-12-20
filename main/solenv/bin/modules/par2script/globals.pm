@@ -39,7 +39,8 @@ BEGIN
 
 	@allitems = ("Installation", "ScpAction", "Directory", "File",
 				 "Shortcut", "Unixlink", "Module", "Profile", "ProfileItem",
-				 "Folder", "FolderItem", "RegistryItem", "WindowsCustomAction");
+				 "Folder", "FolderItem", "RegistryItem", "WindowsCustomAction",
+				 "MergeModule");
 
 	@items_assigned_at_modules = ("File", "Directory", "Unixlink");
 	@items_with_directories = ("File", "Profile", "Shortcut", "Unixlink");

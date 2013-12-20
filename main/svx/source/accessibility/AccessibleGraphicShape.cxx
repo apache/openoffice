@@ -29,8 +29,6 @@
 
 #include <svx/ShapeTypeHandler.hxx>
 #include <svx/SvxShapeTypes.hxx>
-#include <svx/svdobj.hxx>
-#include <svx/svdmodel.hxx>
 
 using namespace ::accessibility;
 using namespace ::rtl;
@@ -61,10 +59,6 @@ AccessibleGraphicShape::~AccessibleGraphicShape (void)
 ::rtl::OUString SAL_CALL AccessibleGraphicShape::getAccessibleImageDescription (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
-//IAccessibility2 Implementation 2009-----
-	if(m_pShape)						 
-      		return m_pShape->GetTitle();
-//-----IAccessibility2 Implementation 2009
     return AccessibleShape::getAccessibleDescription ();
 }
 
@@ -210,30 +204,5 @@ uno::Sequence<uno::Type> SAL_CALL
     AccessibleGraphicShape::CreateAccessibleDescription (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
-//IAccessibility2 Implementation 2009-----
-	//Solution: Don't use the same information for accessible name and accessible description.
-      	//return CreateAccessibleName ();
-  	 ::rtl::OUString sDesc;
-		if(m_pShape)						 
-    	sDesc =  m_pShape->GetTitle();
-		if(sDesc.getLength() > 0)
-			return sDesc;
-    	return CreateAccessibleBaseName();
-//-----IAccessibility2 Implementation 2009
+    return CreateAccessibleName ();
 }
-//IAccessibility2 Implementation 2009-----
-//	Return this object's role.
-sal_Int16 SAL_CALL AccessibleGraphicShape::getAccessibleRole (void)
-		throw (::com::sun::star::uno::RuntimeException)
-{
-	sal_Int16 nAccessibleRole =  AccessibleRole::SHAPE;
-	if( m_pShape->GetModel()->GetImageMapForObject(m_pShape) != NULL )
-		return AccessibleRole::IMAGE_MAP;
-	else
-		//return AccessibleRole::SHAPE;
-		return AccessibleShape::getAccessibleRole();
-	return nAccessibleRole;
-}
-//-----IAccessibility2 Implementation 2009
-
-

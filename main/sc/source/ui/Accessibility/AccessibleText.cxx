@@ -1058,10 +1058,8 @@ ScDocShell* ScAccessibleCellTextData::GetDocShell(ScTabViewShell* pViewShell)
 
 
 // ============================================================================
-//IAccessibility2 Implementation 2009-----
-//ScAccessibleEditObjectTextData::ScAccessibleEditObjectTextData(EditView* pEditView, Window* pWin)
-ScAccessibleEditObjectTextData::ScAccessibleEditObjectTextData(EditView* pEditView, Window* pWin, sal_Bool isClone)
-//-----IAccessibility2 Implementation 2009
+
+ScAccessibleEditObjectTextData::ScAccessibleEditObjectTextData(EditView* pEditView, Window* pWin)
 	:
 	mpViewForwarder(NULL),
 	mpEditViewForwarder(NULL),
@@ -1070,22 +1068,13 @@ ScAccessibleEditObjectTextData::ScAccessibleEditObjectTextData(EditView* pEditVi
     mpForwarder(NULL),
     mpWindow(pWin)
 {
-//IAccessibility2 Implementation 2009-----
-	// Solution: If the object is cloned, do NOT add notify hdl.
-	mbIsCloned = isClone;
-    //if (mpEditEngine)
-    if (mpEditEngine && !mbIsCloned)
-//-----IAccessibility2 Implementation 2009
+    if (mpEditEngine)
         mpEditEngine->SetNotifyHdl( LINK(this, ScAccessibleEditObjectTextData, NotifyHdl) );
 }
 
 ScAccessibleEditObjectTextData::~ScAccessibleEditObjectTextData()
 {
-//IAccessibility2 Implementation 2009-----
-	// Solution: If the object is cloned, do NOT set notify hdl.
-    //if (mpEditEngine)
-    if (mpEditEngine && !mbIsCloned)
-//-----IAccessibility2 Implementation 2009
+    if (mpEditEngine)
         mpEditEngine->SetNotifyHdl(Link());
 	if (mpViewForwarder)
 		delete mpViewForwarder;
@@ -1117,11 +1106,7 @@ void ScAccessibleEditObjectTextData::Notify( SfxBroadcaster& rBC, const SfxHint&
 
 ScAccessibleTextData* ScAccessibleEditObjectTextData::Clone() const
 {
-//IAccessibility2 Implementation 2009-----
-	// Solution: Add para to indicate the object is cloned
-	//return new ScAccessibleEditObjectTextData(mpEditView, mpWindow);
-	return new ScAccessibleEditObjectTextData(mpEditView, mpWindow,sal_True);
-//-----IAccessibility2 Implementation 2009
+	return new ScAccessibleEditObjectTextData(mpEditView, mpWindow);
 }
 
 SvxTextForwarder* ScAccessibleEditObjectTextData::GetTextForwarder()
@@ -1130,11 +1115,7 @@ SvxTextForwarder* ScAccessibleEditObjectTextData::GetTextForwarder()
 	{
         if (!mpEditEngine)
             mpEditEngine = mpEditView->GetEditEngine();
-//IAccessibility2 Implementation 2009-----
-			// Solution: If the object is cloned, do NOT add notify hdl.
-        //if (mpEditEngine && !mpEditEngine->GetNotifyHdl().IsSet())
-	if (mpEditEngine && !mpEditEngine->GetNotifyHdl().IsSet()&&!mbIsCloned)
-//-----IAccessibility2 Implementation 2009
+        if (mpEditEngine && !mpEditEngine->GetNotifyHdl().IsSet())
             mpEditEngine->SetNotifyHdl( LINK(this, ScAccessibleEditObjectTextData, NotifyHdl) );
         if(!mpForwarder)
             mpForwarder = new SvxEditEngineForwarder(*mpEditEngine);

@@ -98,10 +98,6 @@ private:
     // <--
 
 	void InitStates();
-	//IAccessibility2 Implementation 2009-----
-	//Solution:Add a member to identify the firt time that document load
-	sal_Bool bBeginDocumentLoad;
-	//-----IAccessibility2 Implementation 2009
 
 protected:
 	void SetName( const ::rtl::OUString& rName ) { sName = rName; }
@@ -109,12 +105,7 @@ protected:
     {
         return nRole;
     }
-	//IAccessibility2 Implementation 2009-----
-	//Solution:Add a member to identify if the document is Asyn load.
-    sal_Bool isIfAsynLoad;
-	//This flag is used to mark the object's selected state.
-	sal_Bool   bIsSeletedInDoc;
-	//-----IAccessibility2 Implementation 2009
+
 	void SetParent( SwAccessibleContext *pParent );
 	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> GetWeakParent() const;
 
@@ -181,9 +172,6 @@ protected:
 
 public:
 
-	//IAccessibility2 Implementation 2009-----
-	void SetMap(SwAccessibleMap *pM){pMap = pM;}
-	//-----IAccessibility2 Implementation 2009
 	void FireAccessibleEvent( ::com::sun::star::accessibility::AccessibleEventObject& rEvent );
 
 protected:
@@ -427,15 +415,12 @@ public:
     {
         return Select( 0, pObj, bAdd );
     }
-	//IAccessibility2 Implementation 2009-----
-	//This method is used to updated the selected state and fire the selected state changed event.
-	virtual sal_Bool SetSelectedState(sal_Bool bSeleted);
-	sal_Bool  IsSeletedInDoc(){  return bIsSeletedInDoc; }
-	//-----IAccessibility2 Implementation 2009
 
     static ::rtl::OUString GetResource( sal_uInt16 nResId,
                                         const ::rtl::OUString *pArg1 = 0,
                                         const ::rtl::OUString *pArg2 = 0 );
+
+
 };
 
 // some heaviliy used exception support

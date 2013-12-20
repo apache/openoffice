@@ -136,8 +136,7 @@ void SvxShowCharSet::MouseButtonDown( const MouseEvent& rMEvt )
             CaptureMouse();
 
             int nIndex = PixelToMapIndex( rMEvt.GetPosPixel() );
-	    // Fire the focus event
-            SelectIndex( nIndex , sal_True);
+            SelectIndex( nIndex );
         }
 
         if ( !(rMEvt.GetClicks() % 2) )
@@ -178,8 +177,7 @@ void SvxShowCharSet::MouseMove( const MouseEvent& rMEvt )
             aPos.Y() = aSize.Height()-5;
 
         int nIndex = PixelToMapIndex( aPos );
-	// Fire the focus event. 
-        SelectIndex( nIndex , sal_True );
+        SelectIndex( nIndex );
     }
 }
 
@@ -587,18 +585,12 @@ void SvxShowCharSet::SelectIndex( int nNewIndex, sal_Bool bFocus )
 		if( m_pAccessible )
 		{
 			::svx::SvxShowCharSetItem* pItem = ImplGetItem(nSelectedIndex);
-			// Don't fire the focus event. 
-			if ( bFocus )
-				m_pAccessible->fireEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, Any(), makeAny(pItem->GetAccessible()) ); // this call asures that m_pItem is set
-			else
-				m_pAccessible->fireEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED_NOFOCUS, Any(), makeAny(pItem->GetAccessible()) ); // this call asures that m_pItem is set
+			m_pAccessible->fireEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, Any(), makeAny(pItem->GetAccessible()) ); // this call asures that m_pItem is set
 
 			OSL_ENSURE(pItem->m_pItem,"No accessible created!");
 			Any aOldAny, aNewAny;
 			aNewAny <<= AccessibleStateType::FOCUSED;
-			// Don't fire the focus event. 
-			if ( bFocus )
-				pItem->m_pItem->fireEvent( AccessibleEventId::STATE_CHANGED, aOldAny, aNewAny );
+			pItem->m_pItem->fireEvent( AccessibleEventId::STATE_CHANGED, aOldAny, aNewAny );
 
 			aNewAny <<= AccessibleStateType::SELECTED;
 			pItem->m_pItem->fireEvent( AccessibleEventId::STATE_CHANGED, aOldAny, aNewAny );

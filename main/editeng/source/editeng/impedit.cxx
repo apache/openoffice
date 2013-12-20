@@ -122,23 +122,7 @@ void ImpEditView::SetEditSelection( const EditSelection& rEditSelection )
 
     if ( pEditEngine->pImpEditEngine->GetNotifyHdl().IsSet() )
     {
-    //IAccessibility2 Implementation 2009-----
-		const EditDoc& rDoc = pEditEngine->pImpEditEngine->GetEditDoc();
-		const EditPaM pmEnd = rDoc.GetEndPaM();
-		EENotifyType eNotifyType;
-		if (rDoc.Count() > 1 && 
-			pmEnd == rEditSelection.Min() && 
-			pmEnd == rEditSelection.Max())//if move cursor to the last para.
-		{
-			eNotifyType = EE_NOTIFY_TEXTVIEWSELECTIONCHANGED_ENDD_PARA;
-		}
-		else 
-		{
-			eNotifyType = EE_NOTIFY_TEXTVIEWSELECTIONCHANGED;
-		}
-        //EENotify aNotify( EE_NOTIFY_TEXTVIEWSELECTIONCHANGED );
-        EENotify aNotify( eNotifyType );
-	//-----IAccessibility2 Implementation 2009
+        EENotify aNotify( EE_NOTIFY_TEXTVIEWSELECTIONCHANGED );
         aNotify.pEditEngine = pEditEngine;
         aNotify.pEditView = GetEditViewPtr();
         pEditEngine->pImpEditEngine->CallNotify( aNotify );

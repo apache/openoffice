@@ -91,7 +91,6 @@ public:
     DECL_LINK(FocusChangeListener, void*);
     DECL_LINK(UpdateChildrenCallback, void*);
 
-    void Activated(void);
 private:
     AccessibleSlideSorterView& mrAccessibleSlideSorter;
     ::sd::slidesorter::SlideSorter& mrSlideSorter;
@@ -834,11 +833,6 @@ void AccessibleSlideSorterView::Implementation::RequestUpdateChildren (void)
 
 void AccessibleSlideSorterView::Implementation::UpdateChildren (void)
 {
-  	//By default, all children should be accessable. So here workaround is to make all children visible. 
-  	// MT: THis was in UpdateVisibility, which has some similarity, and hg merge automatically has put it here. Correct?!
-  	// In the IA2 CWS, also setting mnFirst/LastVisibleChild was commented out!
-  	mnLastVisibleChild = maPageObjects.size();
-
     if (mbModelChangeLocked)
     {
         // Do nothing right now.  When the flag is reset, this method is
@@ -1029,22 +1023,6 @@ void AccessibleSlideSorterView::Implementation::Notify (
 }
 
 
-void AccessibleSlideSorterView::SwitchViewActivated (void)
-{
-	// Firstly, set focus to view
-	this->FireAccessibleEvent(AccessibleEventId::STATE_CHANGED,
-                    Any(),
-                    Any(AccessibleStateType::FOCUSED));
-	
-	mpImpl->Activated();
-}
-
-void AccessibleSlideSorterView::Implementation::Activated()
-{
-	mrSlideSorter.GetController().GetFocusManager().ShowFocus();
-
-}
-
 
 
 IMPL_LINK(AccessibleSlideSorterView::Implementation, WindowEventListener, VclWindowEvent*, pEvent)
@@ -1101,40 +1079,27 @@ IMPL_LINK(AccessibleSlideSorterView::Implementation, FocusChangeListener, void*,
     sal_Int32 nNewFocusedIndex (
         mrSlideSorter.GetController().GetFocusManager().GetFocusedPageIndex());
 
-    sal_Bool bHasFocus = mrSlideSorter.GetController().GetFocusManager().IsFocusShowing();
-    if (!bHasFocus)
-    	nNewFocusedIndex = -1;
-
-    // add a checker whether the focus event is sent out. Only after sent, the mnFocusedIndex should be updated. 
-    sal_Bool bSentFocus = sal_False;
     if (nNewFocusedIndex != mnFocusedIndex)
     {
         if (mnFocusedIndex >= 0)
         {
             AccessibleSlideSorterObject* pObject = GetAccessibleChild(mnFocusedIndex);
             if (pObject != NULL)
-			{
                 pObject->FireAccessibleEvent(
                     AccessibleEventId::STATE_CHANGED,
                     Any(AccessibleStateType::FOCUSED),
                     Any());
-				bSentFocus = sal_True;
-			}
         }
         if (nNewFocusedIndex >= 0)
         {
             AccessibleSlideSorterObject* pObject = GetAccessibleChild(nNewFocusedIndex);
             if (pObject != NULL)
-			{
                 pObject->FireAccessibleEvent(
                     AccessibleEventId::STATE_CHANGED,
                     Any(),
                     Any(AccessibleStateType::FOCUSED));
-				bSentFocus = sal_True;
-			}
         }
-		if (bSentFocus == sal_True)
-			mnFocusedIndex = nNewFocusedIndex;
+        mnFocusedIndex = nNewFocusedIndex;
     }
     return 1;
 }

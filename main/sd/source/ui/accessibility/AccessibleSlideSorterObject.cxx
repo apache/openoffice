@@ -199,9 +199,7 @@ sal_Int16 SAL_CALL AccessibleSlideSorterObject::getAccessibleRole (void)
     throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
-    //set Role = Shape
-    //static sal_Int16 nRole = AccessibleRole::LIST_ITEM;
-    static sal_Int16 nRole = AccessibleRole::SHAPE;
+    static sal_Int16 nRole = AccessibleRole::LIST_ITEM;
     return nRole;
 }
 

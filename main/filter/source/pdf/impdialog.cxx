@@ -643,7 +643,7 @@ SfxTabPage*  ImpPDFTabGeneralPage::Create( Window* pParent,
 IMPL_LINK( ImpPDFTabGeneralPage, TogglePagesHdl, void*, EMPTYARG )
 {
     maEdPages.Enable( maRbRange.IsChecked() );
-    //When the control is disabled, it is also readonly. So here, it is not necessary to set it as readonly.
+    //Sym2_5805, When the control is disabled, it is also readonly. So here, it is not necessary to set it as readonly.
     //maEdPages.SetReadOnly( !maRbRange.IsChecked() );
     return 0;
 }

@@ -3308,14 +3308,3 @@ sal_uLong ScTable::GetColOffset( SCCOL nCol ) const
 	return n;
 }
 
-//IAccessibility2 Implementation 2009-----
-ScColumn* ScTable::GetColumnByIndex(sal_Int32 index)
-{
-	if( index <= MAXCOL && index >= 0 )
-	{
-		return &(aCol[index]);
-	}
-	return NULL;
-}
-//-----IAccessibility2 Implementation 2009
-

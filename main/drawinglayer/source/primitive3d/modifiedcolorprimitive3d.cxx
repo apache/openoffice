@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
@@ -33,42 +35,32 @@ using namespace com::sun::star;
 
 namespace drawinglayer
 {
-    namespace primitive3d
-    {
-        ModifiedColorPrimitive3D::ModifiedColorPrimitive3D(
-            const Primitive3DSequence& rChildren, 
-            const basegfx::BColorModifierSharedPtr& rColorModifier)
-        :   GroupPrimitive3D(rChildren),
-            maColorModifier(rColorModifier)
-        {
-        }
+	namespace primitive3d
+	{
+		ModifiedColorPrimitive3D::ModifiedColorPrimitive3D(
+			const Primitive3DSequence& rChildren, 
+			const basegfx::BColorModifier& rColorModifier)
+		:	GroupPrimitive3D(rChildren),
+			maColorModifier(rColorModifier)
+		{
+		}
 
-        bool ModifiedColorPrimitive3D::operator==(const BasePrimitive3D& rPrimitive) const
-        {
-            if(GroupPrimitive3D::operator==(rPrimitive))
-            {
-                const ModifiedColorPrimitive3D& rCompare = (ModifiedColorPrimitive3D&)rPrimitive;
+		bool ModifiedColorPrimitive3D::operator==(const BasePrimitive3D& rPrimitive) const
+		{
+			if(GroupPrimitive3D::operator==(rPrimitive))
+			{
+				const ModifiedColorPrimitive3D& rCompare = (ModifiedColorPrimitive3D&)rPrimitive;
 
-                if(getColorModifier().get() == rCompare.getColorModifier().get())
-                {
-                    return true;
-                }
+				return (maColorModifier == rCompare.maColorModifier);
+			}
 
-                if(!getColorModifier().get() || !rCompare.getColorModifier().get())
-                {
-                    return false;
-                }
+			return false;
+		}
 
-                return *getColorModifier().get() == *rCompare.getColorModifier().get();
-            }
+		// provide unique ID
+		ImplPrimitrive3DIDBlock(ModifiedColorPrimitive3D, PRIMITIVE3D_ID_MODIFIEDCOLORPRIMITIVE3D)
 
-            return false;
-        }
-
-        // provide unique ID
-        ImplPrimitrive3DIDBlock(ModifiedColorPrimitive3D, PRIMITIVE3D_ID_MODIFIEDCOLORPRIMITIVE3D)
-
-    } // end of namespace primitive3d
+	} // end of namespace primitive3d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

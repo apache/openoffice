@@ -164,9 +164,6 @@ public:
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible>
                     CreateAccessible();
-	//IAccessibility2 Implementation 2009-----
-	virtual void SwitchView();
-	//-----IAccessibility2 Implementation 2009
 };
 
 
@@ -178,7 +175,7 @@ class SW_DLLPUBLIC SwPagePreView: public SfxViewShell
 {
 	// ViewWindow und Henkel zur Core
 	// aktuelle Dispatcher-Shell
-	SwPagePreViewWin*        pViewWin;//IAccessibility2 Implementation 2009
+	SwPagePreViewWin        aViewWin;
 	//viewdata of the previous SwView and the new crsrposition
 	String 					sSwViewData,
 	//and the new cursor position if the user double click in the PagePreView
@@ -254,11 +251,11 @@ public:
 	TYPEINFO();
 
 	inline Window*          GetFrameWindow() const { return &(GetViewFrame())->GetWindow(); }
-    inline ViewShell*       GetViewShell() const { return pViewWin->GetViewShell(); }
+    inline ViewShell*       GetViewShell() const { return aViewWin.GetViewShell(); }
 	inline const Rectangle& GetVisArea() const { return aVisArea; }
-	inline void             GrabFocusViewWin() { pViewWin->GrabFocus(); }
+	inline void             GrabFocusViewWin() { aViewWin.GrabFocus(); }
 	inline void             RepaintCoreRect( const SwRect& rRect )
-								{ pViewWin->RepaintCoreRect( rRect ); }
+								{ aViewWin.RepaintCoreRect( rRect ); }
 
 	void            DocSzChgd(const Size& rNewSize);
 	const Size&     GetDocSz() const { return aDocSz; }

@@ -41,6 +41,7 @@ public:
 
     SwAccessibleFootnote( SwAccessibleMap* pInitMap,
 						  sal_Bool bIsEndnote,
+						  sal_Int32 nFootEndNote,
 						  const SwFtnFrm *pFtnFrm );
 
 

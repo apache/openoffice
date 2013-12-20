@@ -34,9 +34,6 @@
 #include "ControlHelper.hxx"
 #include "ModuleHelper.hxx"
 #include "ForResId.hrc"
-// IAccessibility2 implementation 2009. ------
-#include "com/sun/star/accessibility/AccessibleRole.hpp"
-// ------ IAccessibility2 implementation 2009.
 
 
 namespace formula
@@ -72,7 +69,6 @@ ValWnd::ValWnd( Window* pParent, const ResId& rId ) : Window( pParent, rId )
 	aRectOut = Rectangle( Point( 1, ( nDiff<2 ) ? 1 : nDiff/2),
 						  Size ( aSzWnd.Width()-2, nHeight ) );
 	SetClipRegion( Region( aRectOut ) );
-	SetAccessibleRole( ::com::sun::star::accessibility::AccessibleRole::LABEL );
 }
 
 //----------------------------------------------------------------------------
@@ -476,21 +472,7 @@ void ArgInput::Show()
 		pRefBtn->Show();
 	}
 }
-//IAccessibility2 Implementation 2009-----
-void ArgInput::UpdateAccessibleNames()
-{
-	String aArgName = String::CreateFromAscii(":");
-	aArgName += pFtArg->GetText();
 
-	String aName = pBtnFx->GetQuickHelpText();
-	aName += aArgName;
-	pBtnFx->SetAccessibleName(aName);
-	
-	aName = pRefBtn->GetQuickHelpText();
-	aName += aArgName;
-	pRefBtn->SetAccessibleName(aName);	
-}
-	
 /*************************************************************************
 #*	Member:		FxClick										Datum:13.01.97
 #*------------------------------------------------------------------------

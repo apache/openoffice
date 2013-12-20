@@ -81,8 +81,7 @@ void VCLXAccessibleTabControl::UpdateFocused()
 
 void VCLXAccessibleTabControl::UpdateSelected( sal_Int32 i, bool bSelected )
 {
-	// IAccessible2 implementation, 2009
-	//NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
+	NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
 
 	if ( i >= 0 && i < (sal_Int32)m_aAccessibleChildren.size() )
 	{

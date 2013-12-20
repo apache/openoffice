@@ -286,8 +286,7 @@ public:
     	getSupportedServiceNames (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-	// IAccessibility2 Implementation 2009
-	virtual void SwitchViewActivated (void);
+    
 private:
     class Implementation;
     ::std::auto_ptr<Implementation> mpImpl;

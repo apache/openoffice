@@ -126,7 +126,6 @@ $(eval $(call gb_Library_add_exception_objects,svt,\
 	svtools/source/contnr/templwin \
 	svtools/source/contnr/tooltiplbox \
 	svtools/source/contnr/treelist \
-	svtools/source/control/accessibleruler \
 	svtools/source/control/asynclink \
 	svtools/source/control/calendar \
 	svtools/source/control/collatorres \
@@ -158,8 +157,6 @@ $(eval $(call gb_Library_add_exception_objects,svt,\
 	svtools/source/control/urlcontrol \
 	svtools/source/control/valueacc \
 	svtools/source/control/valueset \
-	svtools/source/control/vclxaccessibleheaderbar \
-	svtools/source/control/vclxaccessibleheaderbaritem \
 	svtools/source/dialogs/addresstemplate \
 	svtools/source/dialogs/colrdlg \
 	svtools/source/dialogs/filedlg \

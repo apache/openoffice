@@ -138,18 +138,8 @@ enum SwFldTypesEnum
     TYP_DROPDOWN,
 	TYP_END
 };
-//IAccessibility2 Implementation 2009-----
-enum SwAttrFieldTYpe
-{
-	ATTR_NONE,
-	ATTR_DATEFLD,
-	ATTR_TIMEFLD,
-	ATTR_PAGENUMBERFLD,
-	ATTR_PAGECOOUNTFLD,
-	ATTR_BOOKMARKFLD,
-	ATTR_SETREFATTRFLD
-};
-//-----IAccessibility2 Implementation 2009
+
+
 enum SwFileNameFormat
 {
 	FF_BEGIN,

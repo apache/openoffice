@@ -170,7 +170,6 @@ SvxSpellWrapper::SvxSpellWrapper( Window* pWn,
 	bAuto		( sal_False ),
 	bStartChk	( bOther ),
     bRevAllowed ( bRevAllow ),
-	mpTextObj( NULL),
     bAllRight   ( bIsAllRight )
 {
 	Reference< beans::XPropertySet >  xProp( SvxGetLinguPropertySet() );
@@ -199,7 +198,6 @@ SvxSpellWrapper::SvxSpellWrapper( Window* pWn,
 	bEndDone	( bReverse && bStart && !bOther ),
 	bStartChk	( bOther ),
     bRevAllowed ( sal_False ),
-	mpTextObj( NULL),
     bAllRight   ( sal_True )
 {
 }

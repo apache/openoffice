@@ -117,12 +117,11 @@ namespace svt
         void            UpdateReplacementOnDemand();
         MapUnit         GetMapUnit() const;
         void            Lock( sal_Bool bLock = sal_True );
-        sal_Bool        IsLocked() const;
+        sal_Bool            IsLocked() const;
         void            Clear();
-        sal_Bool        is() const { return mxObj.is(); }
+        sal_Bool            is() const { return mxObj.is(); }
 
-        sal_Bool        IsChart() const;
-		rtl::OUString	GetChartType();
+        sal_Bool            IsChart() const;
 
         // #i104867#
         // Provides a graphic version number for the fetchable Graphic during this object's lifetime. Internally,

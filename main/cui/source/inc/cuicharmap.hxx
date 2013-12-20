@@ -82,12 +82,7 @@ private:
 friend class SvxCharacterMap;
     SfxModalDialog* mpDialog;
 
-    FixedText       aFontText;
-    ListBox         aFontLB;
-    FixedText       aSubsetText;
-    ListBox         aSubsetLB;
     SvxShowCharSet  aShowSet;
-    FixedText       aSymbolText;
     SvxShowText     aShowText;
 //    SvxShowText     aShowShortcut;
     OKButton        aOKBtn;
@@ -95,6 +90,11 @@ friend class SvxCharacterMap;
     HelpButton      aHelpBtn;
     PushButton      aDeleteBtn;
 //    PushButton		aAssignBtn;
+    FixedText       aFontText;
+    ListBox         aFontLB;
+    FixedText       aSubsetText;
+    ListBox         aSubsetLB;
+    FixedText       aSymbolText;
     SvxShowText     aShowChar;
     FixedText       aCharCodeText;
 //	FixedText		aAssignText;

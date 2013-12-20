@@ -118,7 +118,7 @@ void ScTabView::InitOwnBlockMode()
 }
 
 void ScTabView::InitBlockMode( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ,
-								sal_Bool bTestNeg, sal_Bool bCols, sal_Bool bRows, sal_Bool bForceNeg )
+								sal_Bool bTestNeg, sal_Bool bCols, sal_Bool bRows )
 {
 	if (!bIsBlockMode)
 	{
@@ -129,11 +129,7 @@ void ScTabView::InitBlockMode( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ,
 		SCTAB nTab = aViewData.GetTabNo();
 
 		//	Teil von Markierung aufheben?
-//IAccessibility2 Implementation 2009-----
-		if (bForceNeg)
-			bBlockNeg = sal_True;
-//-----IAccessibility2 Implementation 2009
-		else if (bTestNeg)
+		if (bTestNeg)
 		{
 			if ( bCols )
 				bBlockNeg = rMark.IsColumnMarked( nCurX );

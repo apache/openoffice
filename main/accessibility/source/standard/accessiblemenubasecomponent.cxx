@@ -134,20 +134,15 @@ void OAccessibleMenuBaseComponent::SetEnabled( sal_Bool bEnabled )
 {
 	if ( m_bEnabled != bEnabled )
 	{
-		sal_Int16 nStateType=AccessibleStateType::ENABLED;
-		if (IsMenuHideDisabledEntries())
-		{
-			nStateType = AccessibleStateType::VISIBLE;
-		}
         Any aOldValue[2], aNewValue[2];
 		if ( m_bEnabled )
         {
             aOldValue[0] <<= AccessibleStateType::SENSITIVE;
-            aOldValue[1] <<= nStateType;
+            aOldValue[1] <<= AccessibleStateType::ENABLED;
         }
 		else
         {
-            aNewValue[0] <<= nStateType;
+            aNewValue[0] <<= AccessibleStateType::ENABLED;
             aNewValue[1] <<= AccessibleStateType::SENSITIVE;
         }
 		m_bEnabled = bEnabled;
@@ -782,9 +777,3 @@ Reference< XAccessibleStateSet > OAccessibleMenuBaseComponent::getAccessibleStat
 }
 
 // -----------------------------------------------------------------------------
-
-sal_Bool OAccessibleMenuBaseComponent::IsMenuHideDisabledEntries() 
-{
-	return sal_False;
-}
-

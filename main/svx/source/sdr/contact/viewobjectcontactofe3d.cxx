@@ -50,30 +50,23 @@ namespace sdr
 		{
 		}
 
-        drawinglayer::primitive3d::Primitive3DSequence ViewObjectContactOfE3d::createPrimitive3DSequence(const DisplayInfo& rDisplayInfo) const
-        {
-            // get the view-independent Primitive from the viewContact
-            const ViewContactOfE3d& rViewContactOfE3d(dynamic_cast< const ViewContactOfE3d& >(GetViewContact()));
-            drawinglayer::primitive3d::Primitive3DSequence xRetval(rViewContactOfE3d.getViewIndependentPrimitive3DSequence());
+		drawinglayer::primitive3d::Primitive3DSequence ViewObjectContactOfE3d::createPrimitive3DSequence(const DisplayInfo& rDisplayInfo) const
+		{
+			// get the view-independent Primitive from the viewContact
+			const ViewContactOfE3d& rViewContactOfE3d(dynamic_cast< const ViewContactOfE3d& >(GetViewContact()));
+			drawinglayer::primitive3d::Primitive3DSequence xRetval(rViewContactOfE3d.getViewIndependentPrimitive3DSequence());
 
-            // handle ghosted
-            if(isPrimitiveGhosted(rDisplayInfo))
-            {
-                const ::basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
-                const ::basegfx::BColorModifierSharedPtr aBColorModifier(
-                    new basegfx::BColorModifier_interpolate(
-                        aRGBWhite, 
-                        0.5));
-                const drawinglayer::primitive3d::Primitive3DReference xReference(
-                    new drawinglayer::primitive3d::ModifiedColorPrimitive3D(
-                        xRetval, 
-                        aBColorModifier));
-
+			// handle ghosted
+			if(isPrimitiveGhosted(rDisplayInfo))
+			{
+				const ::basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
+				const ::basegfx::BColorModifier aBColorModifier(aRGBWhite, 0.5, ::basegfx::BCOLORMODIFYMODE_INTERPOLATE);
+				const drawinglayer::primitive3d::Primitive3DReference xReference(new drawinglayer::primitive3d::ModifiedColorPrimitive3D(xRetval, aBColorModifier));
                 xRetval = drawinglayer::primitive3d::Primitive3DSequence(&xReference, 1);
-            }
+			}
 
-            return xRetval;
-        }
+			return xRetval;
+		}
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewObjectContactOfE3d::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
 		{
