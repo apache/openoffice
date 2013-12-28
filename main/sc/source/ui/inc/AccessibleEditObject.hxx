@@ -27,6 +27,8 @@
 
 #include "AccessibleContextBase.hxx"
 
+#include <com/sun/star/accessibility/XAccessibleSelection.hpp>
+#include "global.hxx"
 namespace accessibility
 {
     class AccessibleTextHelper;
@@ -46,7 +48,8 @@ enum EditObjectType
         <code>AccessibleCell</code> service.
 */
 class ScAccessibleEditObject
-	:	public	ScAccessibleContextBase
+	:	public	ScAccessibleContextBase,
+        public ::com::sun::star::accessibility::XAccessibleSelection 
 {
 public:
 	//=====  internal  ========================================================
@@ -71,7 +74,15 @@ public:
     virtual void LostFocus();
 
     virtual void GotFocus();
+///=====  XInterface  =====================================================
 
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
+		::com::sun::star::uno::Type const & rType )
+		throw (::com::sun::star::uno::RuntimeException);
+
+	virtual void SAL_CALL acquire() throw ();
+
+	virtual void SAL_CALL release() throw ();
 	///=====  XAccessibleComponent  ============================================
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
@@ -110,6 +121,31 @@ public:
     	getAccessibleStateSet(void)
         throw (::com::sun::star::uno::RuntimeException);
 
+	//=====  XAccessibleSelection  ============================================
+		
+		virtual void SAL_CALL selectAccessibleChild( 
+			sal_Int32 nChildIndex ) 
+			throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+			::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL isAccessibleChildSelected( 
+			sal_Int32 nChildIndex ) 
+			throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+			::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL clearAccessibleSelection(  ) 
+			throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL selectAllAccessibleChildren(  ) 
+			throw ( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) 
+			throw ( ::com::sun::star::uno::RuntimeException );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( 
+			sal_Int32 nSelectedChildIndex ) 
+			throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+			::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL deselectAccessibleChild( 
+			sal_Int32 nSelectedChildIndex ) 
+			throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+			::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  ) throw (::com::sun::star::uno::RuntimeException);
 protected:
     ///	Return this object's description.
 	virtual ::rtl::OUString SAL_CALL
@@ -168,6 +204,18 @@ private:
 		::com::sun::star::accessibility::XAccessibleStateSet>& rxParentStates);
 
 	void CreateTextHelper();
+	ScDocument *m_pScDoc;
+	ScAddress m_curCellAddress;
+
+
+	///=====  XAccessibleComponent  ============================================
+    virtual sal_Int32 SAL_CALL getForeground(  ) 
+        throw (::com::sun::star::uno::RuntimeException);
+
+    virtual sal_Int32 SAL_CALL getBackground(  ) 
+        throw (::com::sun::star::uno::RuntimeException);
+
+	sal_Int32 GetFgBgColor(  const rtl::OUString &strPropColor) ;
 };
 
 

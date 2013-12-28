@@ -200,6 +200,13 @@ sal_Bool ScDocument::GetTable( const String& rName, SCTAB& rTab ) const
 	return sal_False;
 }
 
+ScTable* ScDocument::GetTableByIndex(sal_Int32 nIndex)
+{
+  if ( nIndex <= MAXTAB && nIndex >= 0)
+     return  pTab[nIndex];
+
+  return NULL;
+}
 
 sal_Bool ScDocument::ValidTabName( const String& rName ) const
 {

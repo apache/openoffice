@@ -44,8 +44,23 @@
 #endif
 
 #define DEBUG_CHANGETRACK 0
+class ScChangeAction;
+class ScAppOptions;
+class ScActionColorChanger
+{
+private:
+	const ScAppOptions&		rOpt;
+	const ScStrCollection&	rUsers;
+	String					aLastUserName;
+	sal_uInt16					nLastUserIndex;
+	ColorData				nColor;
 
-
+public:
+				ScActionColorChanger( const ScChangeTrack& rTrack );
+				~ScActionColorChanger() {}
+				void		Update( const ScChangeAction& rAction );
+				ColorData	GetColor() const	{ return nColor; }
+};
 class ScBaseCell;
 class ScDocument;
 

@@ -32,7 +32,13 @@
 
 #define _SV_RULER_CXX
 #include <svtools/ruler.hxx>
-
+#include <svtools/svtdata.hxx>
+#include <svtools/svtools.hrc>
+using namespace	::rtl;
+using namespace ::com::sun::star;
+using namespace ::com::sun::star::uno;
+using namespace ::com::sun::star::lang;
+using namespace ::com::sun::star::accessibility;
 // =======================================================================
 
 #define RULER_OFF           3
@@ -300,6 +306,7 @@ void Ruler::ImplInit( WinBits nWinBits )
         aDefSize.Width() = nDefHeight;
     SetOutputSizePixel( aDefSize );
 	SetType(WINDOW_RULER);
+	pAccContext = NULL; 
 }
 
 // -----------------------------------------------------------------------
@@ -323,6 +330,8 @@ Ruler::~Ruler()
         Application::RemoveUserEvent( mnUpdateEvtId );
     delete mpSaveData;
     delete mpDragData;
+	if( pAccContext )
+		pAccContext->release();
 }
 
 // -----------------------------------------------------------------------
@@ -3179,3 +3188,29 @@ const RulerBorder*  Ruler::GetBorders() const { return mpData->pBorders; }
 sal_uInt16              Ruler::GetIndentCount() const { return mpData->nIndents; }
 const RulerIndent*  Ruler::GetIndents() const { return mpData->pIndents; }
 
+uno::Reference< XAccessible > Ruler::CreateAccessible()
+{
+	Window*						pParent = GetAccessibleParentWindow();
+	DBG_ASSERT( pParent, "-SvxRuler::CreateAccessible(): No Parent!" );
+	uno::Reference< XAccessible >	xAccParent  = pParent->GetAccessible();
+	if( xAccParent.is() )
+	{
+		// MT: Fixed compiler issue because the address from a temporary object was used.
+		// BUT: Shoudl it really be a Pointer, instead of const&???
+		OUString aStr;
+		if ( mnWinStyle & WB_HORZ )
+		{
+			aStr = OUString(XubString(SvtResId(STR_SVT_ACC_RULER_HORZ_NAME)));
+		}
+		else
+		{
+			aStr = OUString(XubString(SvtResId(STR_SVT_ACC_RULER_VERT_NAME)));
+		}
+		pAccContext = new SvtRulerAccessible( xAccParent, *this, aStr );
+		pAccContext->acquire();
+		this->SetAccessible(pAccContext);
+		return pAccContext;
+	}
+	else
+		return uno::Reference< XAccessible >();
+}

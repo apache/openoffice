@@ -766,7 +766,7 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 		case SID_ATTR_BORDER_OUTER:
 		case SID_ATTR_BORDER_SHADOW:
 			if(pArgs)
-				pWrtShell->SetAttr(*pArgs);
+				pWrtShell->SetAttrSet(*pArgs);
 			break;
 
 		case SID_ATTR_PAGE:
@@ -1179,6 +1179,30 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 	SfxWhichIter aIter( rSet );
 	sal_uInt16 nWhich = aIter.FirstWhich();
 	ASSERT( nWhich, "leeres Set");
+	if (Application::IsAccessibilityEnabled())
+	{
+		//get section chang event
+		const SwSection* CurrSect = rShell.GetCurrSection();
+		if( CurrSect )
+		{
+            String sCurrentSectionName = CurrSect->GetSectionName();
+			if(sCurrentSectionName != nOldSectionName)
+			{
+				rShell.FireSectionChangeEvent(2, 1);
+			}
+			nOldSectionName = sCurrentSectionName;
+		}
+		else if ( !(nOldSectionName.Equals(String()))  )
+		{
+			rShell.FireSectionChangeEvent(2, 1);
+			nOldSectionName = String();
+		}
+		//get column change event
+		if(rShell.bColumnChange())
+		{
+			rShell.FireColumnChangeEvent(2, 1);
+		}
+	}
 
 	while( nWhich )
 	{
@@ -1203,7 +1227,13 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 				rShell.GetPageNumber( -1, rShell.IsCrsrVisible(), nPage, nLogPage, sDisplay );
 				rSet.Put( SfxStringItem( FN_STAT_PAGE,
 							GetPageStr( nPage, nLogPage, sDisplay) ));
-
+				//if existing page number is not equal to old page number, send out this event.
+				if (nOldPageNum != nLogPage )
+				{
+					if (nOldPageNum != 0)
+						rShell.FirePageChangeEvent(nOldPageNum, nLogPage);
+					nOldPageNum = nLogPage;
+				}
 				sal_uInt16 nCnt = GetWrtShell().GetPageCnt();
 				if (nPageCnt != nCnt)	// Basic benachrichtigen
 				{
@@ -1904,7 +1934,7 @@ sal_Bool SwView::JumpToSwMark( const String& rMark )
 					bRet = sal_True;
 				}
 			}
-			else if( pMarkAccess->getMarksEnd() != (ppMark = pMarkAccess->findMark(sMark)) )
+			else if( pMarkAccess->getAllMarksEnd() != (ppMark = pMarkAccess->findMark(sMark)) )
 				pWrtShell->GotoMark( ppMark->get(), sal_False, sal_True ), bRet = sal_True;
 			else if( 0 != ( pINet = pWrtShell->FindINetAttr( sMark ) ))
 				bRet = pWrtShell->GotoINetAttr( *pINet->GetTxtINetFmt() );
@@ -1926,7 +1956,7 @@ sal_Bool SwView::JumpToSwMark( const String& rMark )
 				}
 			}
 		}
-        else if( pMarkAccess->getMarksEnd() != (ppMark = pMarkAccess->findMark(sMark)))
+        else if( pMarkAccess->getAllMarksEnd() != (ppMark = pMarkAccess->findMark(sMark)))
 			pWrtShell->GotoMark( ppMark->get(), sal_False, sal_True ), bRet = sal_True;
 		else if( 0 != ( pINet = pWrtShell->FindINetAttr( sMark ) ))
 			bRet = pWrtShell->GotoINetAttr( *pINet->GetTxtINetFmt() );

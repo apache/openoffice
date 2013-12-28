@@ -52,8 +52,9 @@ protected:
     static sal_Int32 GetChildCount( SwAccessibleMap& rAccMap,
                                     const SwRect& rVisArea,
 									const SwFrm *pFrm,
-                                    sal_Bool bInPagePreview );
-private:
+                                    sal_Bool bInPagePreviewr );
+
+// private:
     static sw::access::SwAccessibleChild GetChild( SwAccessibleMap& rAccMap,
                                                    const SwRect& rVisArea,
                                                    const SwFrm& rFrm,
@@ -104,6 +105,10 @@ protected:
 					   const SwFrm *pFrm,
                        sal_Bool bIsPagePreview );
 	virtual ~SwAccessibleFrame();
+	
+	// MT: Move to private area?
+	sal_Bool bIsAccDocUse;
+	
 
 public:
 	// Return the SwFrm this context is attached to.

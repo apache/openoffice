@@ -155,6 +155,7 @@ public:
 	static ColorData GetCommentColor();
 	static void InitializeColors();
 	static sal_Bool	IsColorsInitialized();
+	static void AppendChangTrackNoteSeparator(String &str);
 };
 
 

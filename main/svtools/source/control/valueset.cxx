@@ -1219,7 +1219,8 @@ sal_uInt16 ValueSet::ImplGetVisibleItemCount() const
     {
         ValueSetItem* pItem = mpImpl->mpItemList->GetObject( n );
 
-        if( pItem->meType != VALUESETITEM_SPACE && !pItem->maRect.IsEmpty() )
+		//IAccessible2 implementation - also count empty rectangles as visible...
+		if( pItem->meType != VALUESETITEM_SPACE )
             nRet++;
     }
 
@@ -1901,6 +1902,22 @@ void ValueSet::InsertItem( sal_uInt16 nItemId, const Color& rColor,
     mpImpl->mpItemList->Insert( pItem, (sal_uLong)nPos );
 
 	mbFormat = true;
+	if ( IsReallyVisible() && IsUpdateMode() )
+		Invalidate();
+}
+
+//method to set accessible when the style is user draw.
+void ValueSet::InsertItem( sal_uInt16 nItemId, const XubString& rText, sal_uInt16 nPos	)
+{
+	DBG_ASSERT( nItemId, "ValueSet::InsertItem(): ItemId == 0" );
+	DBG_ASSERT( GetItemPos( nItemId ) == VALUESET_ITEM_NOTFOUND,
+				"ValueSet::InsertItem(): ItemId already exists" );
+	ValueSetItem* pItem = new ValueSetItem( *this );
+	pItem->mnId 	= nItemId;
+	pItem->meType	= VALUESETITEM_USERDRAW;
+	pItem->maText	= rText;
+	mpImpl->mpItemList->Insert( pItem, (sal_uLong)nPos );
+	mbFormat = sal_True;
 	if ( IsReallyVisible() && IsUpdateMode() )
 		Invalidate();
 }
@@ -2779,6 +2796,58 @@ void ValueSet::SetEdgeBlending(bool bNew)
         }
     }
 }
+//For sending out the focused event on the first focused item when this valueset is first focused.
+// MT: Focus notifications changed in DEV300 meanwhile, so this is not used for now.
+// Just keeping it here for reference, in case something in out implementation doesn't work as expected...
+/*
+void ValueSet::SetFocusedItem(sal_Bool bFocused)
+{
+	if( ImplHasAccessibleListeners() )
+	{
+        // selection event
+        ::com::sun::star::uno::Any aSelOldAny, aSelNewAny;
+		if ( mnSelItemId >= 0)
+		{
+			// focus event (select)
+		    sal_uInt16 nPos = GetItemPos( mnSelItemId );
+
+			ValueSetItem* pItem;
+			if ((GetStyle() & WB_NONEFIELD) != 0
+				&& nPos == VALUESET_ITEM_NOTFOUND 
+				&& mnSelItemId == 0)
+			{
+				// When present the first item is the then allways visible none field.
+				pItem = ImplGetItem (VALUESET_ITEM_NONEITEM);
+			}
+			else
+			{
+				if (nPos == VALUESET_ITEM_NOTFOUND)
+					nPos = 0;
+				pItem = mpImpl->mpItemList->GetObject(nPos);
+			}
+			ValueItemAcc* pItemAcc = NULL;
+			if (pItem != NULL)
+				pItemAcc = ValueItemAcc::getImplementation(pItem->GetAccessible(mpImpl->mbIsTransientChildrenDisabled) );
+			if( pItemAcc )
+			{
+				if (bFocused)
+					aSelNewAny <<= pItem->GetAccessible(mpImpl->mbIsTransientChildrenDisabled);
+				else
+					aSelOldAny <<= pItem->GetAccessible(mpImpl->mbIsTransientChildrenDisabled);
+			}
+			ImplFireAccessibleEvent( ::com::sun::star::accessibility::AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, aSelOldAny, aSelNewAny );
+			if (pItemAcc && bFocused)
+			{
+				pItemAcc->FireAccessibleEvent(
+					::com::sun::star::accessibility::AccessibleEventId::SELECTION_CHANGED,
+					::com::sun::star::uno::Any(),::com::sun::star::uno::Any());
+			}
+		}
+	}
+}
+*/
+//end
+
 
 // -----------------------------------------------------------------------
 // eof

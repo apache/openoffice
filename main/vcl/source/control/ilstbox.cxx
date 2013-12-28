@@ -917,7 +917,9 @@ void ImplListBoxWindow::MouseButtonDown( const MouseEvent& rMEvt )
 
 				mnCurrentPos = nSelect;
 				mbTrackingSelect = true;
-				SelectEntries( nSelect, LET_MBDOWN, rMEvt.IsShift(), rMEvt.IsMod1() );
+				sal_Bool bCurPosChange = (mnCurrentPos != nSelect);
+				//SelectEntries( nSelect, LET_MBDOWN, rMEvt.IsShift(), rMEvt.IsMod1() );
+				SelectEntries( nSelect, LET_MBDOWN, rMEvt.IsShift(), rMEvt.IsMod1() ,bCurPosChange);
 				mbTrackingSelect = false;
 				if ( mbGrabFocus )
 					GrabFocus();
@@ -988,6 +990,12 @@ void ImplListBoxWindow::MouseMove( const MouseEvent& rMEvt )
 			                ImplCallSelect();
 			                mbTravelSelect = false;
                         }
+						// When list box selection change by mouse move, notity  
+						// VCLEVENT_LISTBOX_SELECT vcl event.
+						else
+						{
+							maListItemSelectHdl.Call(NULL);
+						}
 		            }
 					mbTrackingSelect = false;
 				}
@@ -1075,7 +1083,7 @@ void ImplListBoxWindow::SelectEntry( sal_uInt16 nPos, sal_Bool bSelect )
 
 // -----------------------------------------------------------------------
 
-sal_Bool ImplListBoxWindow::SelectEntries( sal_uInt16 nSelect, LB_EVENT_TYPE eLET, sal_Bool bShift, sal_Bool bCtrl )
+sal_Bool ImplListBoxWindow::SelectEntries( sal_uInt16 nSelect, LB_EVENT_TYPE eLET, sal_Bool bShift, sal_Bool bCtrl, sal_Bool bSelectPosChange /*=FALSE*/ )
 {
 	sal_Bool bFocusChanged = sal_False;
 	sal_Bool bSelectionChanged = sal_False;
@@ -1220,6 +1228,10 @@ sal_Bool ImplListBoxWindow::SelectEntries( sal_uInt16 nSelect, LB_EVENT_TYPE eLE
             maFocusRect.SetSize( aSz );
 			if( HasFocus() )
 				ImplShowFocusRect();
+			if (bSelectPosChange)
+			{
+				maFocusHdl.Call(reinterpret_cast<void*>(nSelect));
+			}
 		}
         ImplClearLayoutData();
 	}
@@ -1682,8 +1694,10 @@ sal_Bool ImplListBoxWindow::ProcessKeyInput( const KeyEvent& rKEvt )
 		DBG_ASSERT( !mpEntryList->IsEntryPosSelected( nSelect ) || mbMulti, "ImplListBox: Selecting same Entry" );
 	    if( nSelect >= mpEntryList->GetEntryCount() )
             nSelect = mpEntryList->GetEntryCount()-1;
+		sal_Bool bCurPosChange = (mnCurrentPos != nSelect);
 		mnCurrentPos = nSelect;
-		if ( SelectEntries( nSelect, eLET, bShift, bCtrl ) )
+		//if ( SelectEntries( nSelect, eLET, bShift, bCtrl ) )
+		if(SelectEntries( nSelect, eLET, bShift, bCtrl ,bCurPosChange))
 		{
 			mbTravelSelect = true;
 			mnSelectModifier = rKEvt.GetKeyCode().GetModifier();
@@ -2158,7 +2172,8 @@ Rectangle ImplListBoxWindow::GetBoundingRectangle( sal_uInt16 nItem ) const
 {
     const ImplEntryType* pEntry = mpEntryList->GetEntryPtr( nItem );
     Size aSz( GetSizePixel().Width(), pEntry ? pEntry->mnHeight : GetEntryHeight() );
-    long nY = mpEntryList->GetAddedHeight( nItem, GetTopEntry() ) - mpEntryList->GetAddedHeight( GetTopEntry() );
+    //long nY = mpEntryList->GetAddedHeight( nItem, GetTopEntry() ) - mpEntryList->GetAddedHeight( GetTopEntry() );
+    long nY = mpEntryList->GetAddedHeight( nItem, GetTopEntry() ) + GetEntryList()->GetMRUCount()*GetEntryHeight();
     Rectangle aRect( Point( 0, nY ), aSz );
     return aRect;
 }

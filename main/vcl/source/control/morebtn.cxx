@@ -153,10 +153,6 @@ void MoreButton::Click()
 	mbState = !mbState;
     ShowState();
 
-	// Hier den Click-Handler rufen, damit vorher die Controls initialisiert
-	// werden koennen
-	PushButton::Click();
-
 	// Je nach Status die Fenster updaten
 	if ( mbState )
 	{
@@ -197,6 +193,7 @@ void MoreButton::Click()
 			pWindow = mpMBData->mpItemList->Next();
 		}
 	}
+	PushButton::Click();
 }
 
 // -----------------------------------------------------------------------

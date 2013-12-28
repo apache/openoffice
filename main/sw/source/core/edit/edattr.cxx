@@ -238,18 +238,17 @@ sal_Bool SwEditShell::GetCurFtn( SwFmtFtn* pFillFtn )
 bool SwEditShell::SetCurFtn( const SwFmtFtn& rFillFtn )
 {
     bool bChgd = false;
-	StartAllAction();
+    StartAllAction();
 
-	SwPaM* pCrsr = GetCrsr(), *pFirst = pCrsr;
-	do {
-		bChgd |=  pDoc->SetCurFtn( *pCrsr, rFillFtn.GetNumStr(),
-											rFillFtn.GetNumber(),
-											rFillFtn.IsEndNote() );
+    SwPaM* pCrsr = GetCrsr(), *pFirst = pCrsr;
+    do {
+        bChgd |=
+            pDoc->SetCurFtn( *pCrsr, rFillFtn.GetNumStr(), rFillFtn.GetNumber(), rFillFtn.IsEndNote() );
 
-	} while( pFirst != ( pCrsr = (SwPaM*)pCrsr->GetNext() ));
+    } while( pFirst != ( pCrsr = (SwPaM*)pCrsr->GetNext() ));
 
-	EndAllAction();
-	return bChgd;
+    EndAllAction();
+    return bChgd;
 }
 
 
@@ -423,33 +422,32 @@ sal_Bool lcl_IsNoEndTxtAttrAtPos( const SwTxtNode& rTNd, xub_StrLen nPos,
     {
         bRet = sal_False;
 
-        // --> OD 2008-03-19 #refactorlists#
         if ( rTNd.IsInList() )
         {
             ASSERT( rTNd.GetNumRule(),
                     "<lcl_IsNoEndTxtAttrAtPos(..)> - no list style found at text node. Serious defect -> please inform OD." );
             const SwNumRule* pNumRule = rTNd.GetNumRule();
-			//Modified for i119959,2012.6.12
-			//Under this scenario,this pointer is null,but on win,it doesn't crash immediately
-			//it exits with exception,and associated memory will have problem which leads to crash problem in 
-			//other place in dev env...
-			if ( pNumRule )
-			{
-			//End
-            const SwNumFmt &rNumFmt = pNumRule->Get( static_cast<sal_uInt16>(rTNd.GetActualListLevel()) );
-            if( SVX_NUM_BITMAP != rNumFmt.GetNumberingType() )
+            //Modified for i119959,2012.6.12
+            //Under this scenario,this pointer is null,but on win,it doesn't crash immediately
+            //it exits with exception,and associated memory will have problem which leads to crash problem in 
+            //other place in dev env...
+            if ( pNumRule )
             {
-                if ( SVX_NUM_CHAR_SPECIAL == rNumFmt.GetNumberingType() )
-                    sExp = rNumFmt.GetBulletChar();
-                else
-                    sExp = rTNd.GetNumString();
-				}
-			//Modified for i119959,2012.6.12
-			//Under this scenario,this pointer is null,but on win,it doesn't crash immediately
-			//it exits with exception,and associated memory will have problem which leads to crash problem in 
-			//other place in dev env...
-			}
-			//End
+                //End
+                const SwNumFmt &rNumFmt = pNumRule->Get( static_cast<sal_uInt16>(rTNd.GetActualListLevel()) );
+                if( SVX_NUM_BITMAP != rNumFmt.GetNumberingType() )
+                {
+                    if ( SVX_NUM_CHAR_SPECIAL == rNumFmt.GetNumberingType() )
+                        sExp = rNumFmt.GetBulletChar();
+                    else
+                        sExp = rTNd.GetNumString();
+                }
+                //Modified for i119959,2012.6.12
+                //Under this scenario,this pointer is null,but on win,it doesn't crash immediately
+                //it exits with exception,and associated memory will have problem which leads to crash problem in 
+                //other place in dev env...
+            }
+            //End
         }
     }
 
@@ -491,7 +489,7 @@ sal_Bool lcl_IsNoEndTxtAttrAtPos( const SwTxtNode& rTNd, xub_StrLen nPos,
                                         getScriptType( sExp, nEnd-1 ));
     }
 
-	return bRet;
+    return bRet;
 }
 
 

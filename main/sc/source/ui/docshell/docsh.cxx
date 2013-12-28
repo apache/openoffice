@@ -121,6 +121,7 @@
 
 #include "docsh.hxx"
 #include "docshimp.hxx"
+#include <sfx2/viewfrm.hxx>
 #include <rtl/logfile.hxx>
 
 #include <comphelper/processfactory.hxx>
@@ -203,7 +204,7 @@ namespace
         static const struct
         {
             const char * mpFilterName;
-            unsigned mnFilterNameLen;
+            size_t mnFilterNameLen;
         } szMSFilterNames [] = 
         {
             { pFilterExcel4, strlen( pFilterExcel4 ) },
@@ -1587,6 +1588,21 @@ sal_Bool __EXPORT ScDocShell::SaveAs( SfxMedium& rMedium )
 
     PrepareSaveGuard aPrepareGuard( *this);
 
+	aDocument.setDocAccTitle(String());
+	// SfxViewFrame* pFrame1 = SfxViewFrame::GetFirst( this, TYPE(SfxTopViewFrame));
+	SfxViewFrame* pFrame1 = SfxViewFrame::GetFirst( this );
+	if (pFrame1)
+	{
+		Window* pWindow = &pFrame1->GetWindow();
+		if ( pWindow )
+		{
+			Window* pSysWin = pWindow->GetSystemWindow();
+			if ( pSysWin )
+			{
+				pSysWin->SetAccessibleName(String());
+			}
+		}
+	}
 	//	wait cursor is handled with progress bar
     sal_Bool bRet = SfxObjectShell::SaveAs( rMedium );
 	if( bRet )

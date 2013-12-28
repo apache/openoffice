@@ -51,6 +51,7 @@
 #include <docufld.hxx>
 #include <edtwin.hxx>
 #include <txtfld.hxx>
+#include <txtannotationfld.hxx>
 #include <ndtxt.hxx>
 #include <redline.hxx>
 #include <docary.hxx>
@@ -93,34 +94,11 @@
 
 using namespace sw::sidebarwindows;
 
-/*
-bool comp_author( const SwPostItItem* a, const SwPostItItem* b)
-{
-	return a->pFmtFld->GetFld()->GetPar1() < b->pFmtFld->GetFld()->GetPar1();
-}
 
-bool comp_date( const SwPostItItem* a, const SwPostItItem* b)
-{
-	return static_cast<SwPostItField*>(a->pFmtFld->GetFld())->GetDate()  < static_cast<SwPostItField*>(b->pFmtFld->GetFld())->GetDate();
-}
-*/
-
-//
 bool comp_pos(const SwSidebarItem* a, const SwSidebarItem* b)
 {
-    // --> OD 2010-01-19 #i88070#
     // sort by anchor position
-//// if position is on the same line, sort by x (Left) position, otherwise by y(Bottom) position
-//// if two notes are at the same position, sort by logical node position
-//    return (a->maLayoutInfo.mPosition.Bottom() == b->maLayoutInfo.mPosition.Bottom())
-//            ? ( ( (a->maLayoutInfo.mPosition.Left() == b->maLayoutInfo.mPosition.Left()) &&
-//                  (a->GetBroadCaster()->ISA(SwFmtFld) && b->GetBroadCaster()->ISA(SwFmtFld)) )
-//                ? *(static_cast<SwFmtFld*>(a->GetBroadCaster())->GetTxtFld()->GetStart()) <
-//                    *(static_cast<SwFmtFld*>(b->GetBroadCaster())->GetTxtFld()->GetStart())
-//                : a->maLayoutInfo.mPosition.Left() < b->maLayoutInfo.mPosition.Left() )
-//            : a->maLayoutInfo.mPosition.Bottom() < b->maLayoutInfo.mPosition.Bottom();
     return a->GetAnchorPosition() < b->GetAnchorPosition();
-    // <--
 }
 
 SwPostItMgr::SwPostItMgr(SwView* pView)
@@ -226,7 +204,7 @@ void SwPostItMgr::InsertItem(SfxBroadcaster* pItem, bool bCheckExistance, bool b
 	}
 	mbLayout = bFocus;
 	if (pItem->ISA(SwFmtFld))
-        mvPostItFlds.push_back(new SwAnnotationItem(static_cast<SwFmtFld*>(pItem), true, bFocus) );
+        mvPostItFlds.push_back(new SwAnnotationItem(static_cast<SwFmtFld&>(*pItem), true, bFocus) );
 	/*
 	else
 	if (pItem->ISA(SwRedline))
@@ -407,33 +385,36 @@ void SwPostItMgr::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 				}
 				break;
 			}
-			case SWFMTFLD_LANGUAGE:
-			{
-                		SwFmtFld* pFmtFld = dynamic_cast<SwFmtFld*>(&rBC);
-                for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
-				{
-                    			if ( pFmtFld == (*i)->GetBroadCaster() )
-					{
-						if ((*i)->pPostIt)
-						{
-							sal_uInt16 nScriptType = SvtLanguageOptions::GetScriptTypeOfLanguage( (*i)->GetFmtFld()->GetField()->GetLanguage() );
-							sal_uInt16 nLangWhichId = 0;
-							switch (nScriptType)
-							{
-								case SCRIPTTYPE_LATIN :    nLangWhichId = EE_CHAR_LANGUAGE ; break;
-								case SCRIPTTYPE_ASIAN :    nLangWhichId = EE_CHAR_LANGUAGE_CJK; break;
-								case SCRIPTTYPE_COMPLEX :  nLangWhichId = EE_CHAR_LANGUAGE_CTL; break;
-							}
-                            (*i)->pPostIt->SetLanguage( SvxLanguageItem((*i)->GetFmtFld()->GetField()->GetLanguage(),
-                                                        nLangWhichId) );
-						}
-						break;
-					}
-				}
-				break;
-			}
-		}
-	}
+
+            case SWFMTFLD_LANGUAGE:
+                {
+                    SwFmtFld* pFmtFld = dynamic_cast<SwFmtFld*>(&rBC);
+                    for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
+                    {
+                        if ( pFmtFld == (*i)->GetBroadCaster() )
+                        {
+                            if ((*i)->pPostIt)
+                            {
+                                const sal_uInt16 nScriptType = SvtLanguageOptions::GetScriptTypeOfLanguage( (*i)->GetFmtFld().GetField()->GetLanguage() );
+                                sal_uInt16 nLangWhichId = 0;
+                                switch (nScriptType)
+                                {
+                                case SCRIPTTYPE_LATIN :    nLangWhichId = EE_CHAR_LANGUAGE ; break;
+                                case SCRIPTTYPE_ASIAN :    nLangWhichId = EE_CHAR_LANGUAGE_CJK; break;
+                                case SCRIPTTYPE_COMPLEX :  nLangWhichId = EE_CHAR_LANGUAGE_CTL; break;
+                                }
+                                (*i)->pPostIt->SetLanguage(
+                                    SvxLanguageItem(
+                                    (*i)->GetFmtFld().GetField()->GetLanguage(),
+                                    nLangWhichId) );
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                }
+        }
+    }
 }
 
 void SwPostItMgr::Focus(SfxBroadcaster& rBC)
@@ -465,105 +446,120 @@ void SwPostItMgr::Focus(SfxBroadcaster& rBC)
 
 bool SwPostItMgr::CalcRects()
 {
-	if ( mnEventId )
-	{
-		// if CalcRects() was forced and an event is still pending: remove it
-		// it is superfluous and also may cause reentrance problems if triggered while layouting
-		Application::RemoveUserEvent( mnEventId );
-		mnEventId = 0;
-	}
+    if ( mnEventId )
+    {
+        // if CalcRects() was forced and an event is still pending: remove it
+        // it is superfluous and also may cause reentrance problems if triggered while layouting
+        Application::RemoveUserEvent( mnEventId );
+        mnEventId = 0;
+    }
 
-	bool bChange = false;
-	bool bRepair = false;
-	PreparePageContainer();
-	if ( !mvPostItFlds.empty() )
-	{
+    bool bChange = false;
+    bool bRepair = false;
+    PreparePageContainer();
+    if ( !mvPostItFlds.empty() )
+    {
         for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
-		{
+        {
             SwSidebarItem* pItem = (*i);
-			if ( !pItem->UseElement() )
-			{
-				DBG_ERROR("PostIt is not in doc or other wrong use");
-				bRepair = true;
-				continue;
-			}
-
-			//save old rect and visible state
-            SwRect aOldRect(pItem->maLayoutInfo.mPosition);
-			SwPostItHelper::SwLayoutStatus eOldStatus = pItem->mLayoutStatus;
-			std::vector< SwLayoutInfo > aInfo;
+            if ( !pItem->UseElement() )
             {
-                SwPosition aPosition = pItem->GetAnchorPosition();
-                pItem->mLayoutStatus = SwPostItHelper::getLayoutInfos( aInfo, aPosition );
+                DBG_ERROR("PostIt is not in doc or other wrong use");
+                bRepair = true;
+                continue;
             }
-            if( aInfo.size() )
-			{
-                pItem->maLayoutInfo = aInfo[0];
-            }
-            bChange = bChange ||
-                      ( pItem->maLayoutInfo.mPosition != aOldRect ) ||
-                      ( eOldStatus != pItem->mLayoutStatus );
-		}
 
-		// show notes in right order in navigator
+            const SwRect aOldAnchorRect( pItem->maLayoutInfo.mPosition );
+            const SwPostItHelper::SwLayoutStatus eOldLayoutStatus = pItem->mLayoutStatus;
+            const sal_uLong nOldStartNodeIdx( pItem->maLayoutInfo.mnStartNodeIdx );
+            const xub_StrLen nOldStartContent( pItem->maLayoutInfo.mnStartContent );
+
+            {
+                // update layout information
+                const SwTxtAnnotationFld* pTxtAnnotationFld =
+                    dynamic_cast< const SwTxtAnnotationFld* >( pItem->GetFmtFld().GetTxtFld() );
+                const ::sw::mark::IMark* pAnnotationMark =
+                    pTxtAnnotationFld != NULL ? pTxtAnnotationFld->GetAnnotationMark() : NULL;
+                if ( pAnnotationMark != NULL )
+                {
+                    pItem->mLayoutStatus =
+                        SwPostItHelper::getLayoutInfos(
+                            pItem->maLayoutInfo,
+                            pItem->GetAnchorPosition(),
+                            &pAnnotationMark->GetMarkStart() );
+                }
+                else
+                {
+                    pItem->mLayoutStatus =
+                        SwPostItHelper::getLayoutInfos( pItem->maLayoutInfo, pItem->GetAnchorPosition() );
+                }
+            }
+            bChange = bChange
+                      || pItem->maLayoutInfo.mPosition != aOldAnchorRect
+                      || pItem->mLayoutStatus != eOldLayoutStatus
+                      || pItem->maLayoutInfo.mnStartNodeIdx != nOldStartNodeIdx
+                      || pItem->maLayoutInfo.mnStartContent != nOldStartContent;
+        }
+
+        // show notes in right order in navigator
         //prevent Anchors during layout to overlap, e.g. when moving a frame
-		Sort(SORT_POS);
+        Sort(SORT_POS);
 
-		// sort the items into the right page vector, so layout can be done by page
+        // sort the items into the right page vector, so layout can be done by page
         for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
-		{
+        {
             SwSidebarItem* pItem = (*i);
-			if( SwPostItHelper::INVISIBLE == pItem->mLayoutStatus )
-			{
-				if (pItem->pPostIt)
-					pItem->pPostIt->HideNote();
-				continue;
-			}
+            if( SwPostItHelper::INVISIBLE == pItem->mLayoutStatus )
+            {
+                if (pItem->pPostIt)
+                    pItem->pPostIt->HideNote();
+                continue;
+            }
 
-			if( SwPostItHelper::HIDDEN == pItem->mLayoutStatus )
-			{
-				if (!mpWrtShell->GetViewOptions()->IsShowHiddenChar())
-				{
-					if (pItem->pPostIt)
-						pItem->pPostIt->HideNote();
-					continue;
-				}
-			}
+            if( SwPostItHelper::HIDDEN == pItem->mLayoutStatus )
+            {
+                if (!mpWrtShell->GetViewOptions()->IsShowHiddenChar())
+                {
+                    if (pItem->pPostIt)
+                        pItem->pPostIt->HideNote();
+                    continue;
+                }
+            }
 
             const unsigned long aPageNum = pItem->maLayoutInfo.mnPageNumber;
-			if (aPageNum > mPages.size())
-			{
+            if (aPageNum > mPages.size())
+            {
                 const unsigned long nNumberOfPages = mPages.size();
-				for (unsigned int j=0; j<aPageNum - nNumberOfPages; ++j)
-					mPages.push_back( new SwPostItPageItem());
-			}
-			mPages[aPageNum-1]->mList->push_back(pItem);
+                for (unsigned int j=0; j<aPageNum - nNumberOfPages; ++j)
+                    mPages.push_back( new SwPostItPageItem());
+            }
+            mPages[aPageNum-1]->mList->push_back(pItem);
             mPages[aPageNum-1]->mPageRect = pItem->maLayoutInfo.mPageFrame;
             mPages[aPageNum-1]->eSidebarPosition = pItem->maLayoutInfo.meSidebarPosition;
-		}
+        }
 
-		if (!bChange && mpWrtShell->getIDocumentSettingAccess()->get(IDocumentSettingAccess::BROWSE_MODE))
-		{
+        if (!bChange && mpWrtShell->getIDocumentSettingAccess()->get(IDocumentSettingAccess::BROWSE_MODE))
+        {
             long nLayoutHeight = SwPostItHelper::getLayoutHeight( mpWrtShell->GetLayout() );
-			if( nLayoutHeight > mbLayoutHeight )
-			{
-				if (mPages[0]->bScrollbar || HasScrollbars())
-					bChange = true;
-			}
+            if( nLayoutHeight > mbLayoutHeight )
+            {
+                if (mPages[0]->bScrollbar || HasScrollbars())
+                    bChange = true;
+            }
             else if( nLayoutHeight < mbLayoutHeight )
-			{
-				if (mPages[0]->bScrollbar || !BorderOverPageBorder(1))
-					bChange = true;
-			}
-		}
-	}
+            {
+                if (mPages[0]->bScrollbar || !BorderOverPageBorder(1))
+                    bChange = true;
+            }
+        }
+    }
 
-	if ( bRepair )
-		CheckForRemovedPostIts();
+    if ( bRepair )
+        CheckForRemovedPostIts();
 
-	mbLayoutHeight = SwPostItHelper::getLayoutHeight( mpWrtShell->GetLayout() );
-	mbWaitingForCalcRects = false;
-	return bChange;
+    mbLayoutHeight = SwPostItHelper::getLayoutHeight( mpWrtShell->GetLayout() );
+    mbWaitingForCalcRects = false;
+    return bChange;
 }
 
 bool SwPostItMgr::HasScrollbars() const
@@ -1203,7 +1199,7 @@ void SwPostItMgr::RemoveSidebarWin()
 	{
         for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
 		{
-			EndListening( *((*i)->GetBroadCaster()) );
+			EndListening( *(const_cast<SfxBroadcaster*>((*i)->GetBroadCaster())) );
 			if ((*i)->pPostIt)
 				delete (*i)->pPostIt;
 			delete (*i);
@@ -1231,14 +1227,14 @@ void SwPostItMgr::Delete(String aAuthor)
 	aRewriter.AddRule(UNDO_ARG1, aUndoString);
 	mpWrtShell->StartUndo( UNDO_DELETE, &aRewriter );
 
-	std::vector<SwFmtFld*> aTmp;
+	std::vector<const SwFmtFld*> aTmp;
     aTmp.reserve( mvPostItFlds.size() );
     for(std::list<SwSidebarItem*>::iterator pPostIt = mvPostItFlds.begin(); pPostIt!= mvPostItFlds.end() ; pPostIt++)
 	{
-		if ((*pPostIt)->GetFmtFld() && ((*pPostIt)->pPostIt->GetAuthor() == aAuthor) )
-			aTmp.push_back( (*pPostIt)->GetFmtFld() );
+		if ( (*pPostIt)->pPostIt->GetAuthor() == aAuthor )
+			aTmp.push_back( &(*pPostIt)->GetFmtFld() );
 	}
-	for(std::vector<SwFmtFld*>::iterator i = aTmp.begin(); i!= aTmp.end() ; i++)
+	for(std::vector<const SwFmtFld*>::iterator i = aTmp.begin(); i!= aTmp.end() ; i++)
 	{
 		mpWrtShell->GotoField( *(*i) );
 		mpWrtShell->DelRight();
@@ -1259,14 +1255,13 @@ void SwPostItMgr::Delete()
 	aRewriter.AddRule(UNDO_ARG1, SW_RES(STR_DELETE_ALL_NOTES) );
 	mpWrtShell->StartUndo( UNDO_DELETE, &aRewriter );
 
-    std::vector<SwFmtFld*> aTmp;
+    std::vector<const SwFmtFld*> aTmp;
     aTmp.reserve( mvPostItFlds.size() );
     for(std::list<SwSidebarItem*>::iterator pPostIt = mvPostItFlds.begin(); pPostIt!= mvPostItFlds.end() ; pPostIt++)
-	{
-		if ((*pPostIt)->GetFmtFld())
-			aTmp.push_back( (*pPostIt)->GetFmtFld() );
-	}
-	for(std::vector<SwFmtFld*>::iterator i = aTmp.begin(); i!= aTmp.end() ; i++)
+    {
+        aTmp.push_back( &(*pPostIt)->GetFmtFld() );
+    }
+	for(std::vector<const SwFmtFld*>::iterator i = aTmp.begin(); i!= aTmp.end() ; i++)
 	{
 		mpWrtShell->GotoField( *(*i) );
 		mpWrtShell->DelRight();
@@ -1384,7 +1379,7 @@ sw::annotation::SwAnnotationWin* SwPostItMgr::GetAnnotationWin(const SwPostItFie
 {
     for(const_iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
     {
-        if ( (*i)->GetFmtFld() && ((*i)->GetFmtFld()->GetField() == pFld))
+        if ( (*i)->GetFmtFld().GetField() == pFld )
             return dynamic_cast<sw::annotation::SwAnnotationWin*>((*i)->pPostIt);
     }
     return NULL;
@@ -1628,14 +1623,14 @@ void SwPostItMgr::CorrectPositions()
    SwSidebarWin *pFirstPostIt = 0;
    for(SwSidebarItem_iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
    {
-	   pFirstPostIt = (*i)->pPostIt;
-	   if (pFirstPostIt)
-			break;
+       pFirstPostIt = (*i)->pPostIt;
+       if (pFirstPostIt)
+           break;
    }
 
    //if we have not found a valid note, forget about it and leave
    if (!pFirstPostIt)
-	   return;
+       return;
 
     // yeah, I know,    if this is a left page it could be wrong, but finding the page and the note is probably not even faster than just doing it
     // --> OD 2010-06-03 #i111964# - check, if anchor overlay object exists.
@@ -1654,16 +1649,14 @@ void SwPostItMgr::CorrectPositions()
         {
             for(SwSidebarItem_iterator i = mPages[n]->mList->begin(); i!= mPages[n]->mList->end(); i++)
             {
-                // --> OD 2010-06-03 #i111964# - check, if anchor overlay object exists.
                 if ( (*i)->bShow && (*i)->pPostIt && (*i)->pPostIt->Anchor() )
-                // <--                                    
                 {
                     aAnchorPosX = mPages[n]->eSidebarPosition == sw::sidebarwindows::SIDEBAR_LEFT
                         ? mpEditWin->LogicToPixel( Point((long)((*i)->pPostIt->Anchor()->GetSeventhPosition().getX()),0)).X()
                         : mpEditWin->LogicToPixel( Point((long)((*i)->pPostIt->Anchor()->GetSixthPosition().getX()),0)).X();
                     aAnchorPosY = mpEditWin->LogicToPixel( Point(0,(long)((*i)->pPostIt->Anchor()->GetSixthPosition().getY()))).Y() + 1;
                     (*i)->pPostIt->SetPosPixel(Point(aAnchorPosX,aAnchorPosY));
-			   }
+                }
             }
         }
     }

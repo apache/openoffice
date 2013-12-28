@@ -38,6 +38,12 @@
 #include <flyfrm.hxx>
 
 
+#include <com/sun/star/uno/Reference.hxx>
+#include <com/sun/star/accessibility/AccessibleStateType.hpp>
+#include <com/sun/star/accessibility/XAccessibleStateSet.hpp>
+#include <fmtanchr.hxx>
+
+using namespace ::com::sun::star::accessibility;
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 
@@ -117,6 +123,41 @@ void SwAccessibleSelectionHelper::selectAccessibleChild(
     // return bRet;
 }
 
+//When the selected state of the SwFrmOrObj is setted, return true.
+static sal_Bool lcl_getSelectedState(const SwAccessibleChild& aChild, 
+									 SwAccessibleContext* pContext,
+									 SwAccessibleMap* pMap)
+{
+	Reference< XAccessible > xAcc;
+    if ( aChild.GetSwFrm() )
+    {        
+		xAcc = pMap->GetContext( aChild.GetSwFrm(), sal_False );
+    }
+    else if ( aChild.GetDrawObject() )
+    {
+        xAcc = pMap->GetContext( aChild.GetDrawObject(), pContext, sal_False );
+    }
+	
+	if( xAcc.is() )
+	{
+		Reference< XAccessibleContext > pRContext = xAcc->getAccessibleContext();
+		if(!pRContext.is())
+			return sal_False;
+		Reference<XAccessibleStateSet> pRStateSet = pRContext->getAccessibleStateSet();
+		if( pRStateSet.is() )
+		{
+			Sequence<short> pStates = pRStateSet->getStates();
+			long count = pStates.getLength();
+			for( int i = 0; i < count; i++ )
+			{
+				if( pStates[i] == AccessibleStateType::SELECTED)
+					return sal_True;
+			}
+		}
+	}
+	return sal_False;
+}
+
 sal_Bool SwAccessibleSelectionHelper::isAccessibleChildSelected(
     sal_Int32 nChildIndex )
     throw ( lang::IndexOutOfBoundsException,
@@ -142,6 +183,12 @@ sal_Bool SwAccessibleSelectionHelper::isAccessibleChildSelected(
         else if ( aChild.GetDrawObject() )
 		{
             bRet = pFEShell->IsObjSelected( *aChild.GetDrawObject() );
+		}
+		//If the SwFrmOrObj is not selected directly in the UI, we should check whether it is selected in the selection cursor.
+		if( !bRet )
+		{
+			if( lcl_getSelectedState( aChild, &rContext, rContext.GetMap() ) == sal_True)
+				bRet = sal_True;
 		}
 	}
 
@@ -200,11 +247,9 @@ sal_Int32 SwAccessibleSelectionHelper::getSelectedAccessibleChildCount(  )
         const SwFlyFrm* pFlyFrm = pFEShell->GetCurrFlyFrm();
 		if( pFlyFrm )
 		{
-            if( rContext.GetParent( SwAccessibleChild(pFlyFrm), rContext.IsInPagePreview()) ==
-                    rContext.GetFrm() )
-            {
+            //if( rContext.GetParent( SwAccessibleChild(pFlyFrm), rContext.IsInPagePreview()) ==
+            //        rContext.GetFrm() )
 				nCount = 1;
-            }
 		}
 		else
 		{
@@ -232,6 +277,24 @@ sal_Int32 SwAccessibleSelectionHelper::getSelectedAccessibleChildCount(  )
 				}
 			}
 		}
+		//If the SwFrmOrObj is not selected directly in the UI, 
+		//we should check whether it is selected in the selection cursor.
+		if( nCount == 0 )
+		{
+            ::std::list< SwAccessibleChild > aChildren;
+            rContext.GetChildren( *(rContext.GetMap()), aChildren );
+            ::std::list< SwAccessibleChild >::const_iterator aIter =
+				aChildren.begin();
+            ::std::list< SwAccessibleChild >::const_iterator aEndIter =
+				aChildren.end();
+			while( aIter != aEndIter )
+			{
+                const SwAccessibleChild& aChild = *aIter;
+				if( lcl_getSelectedState( aChild, &rContext, rContext.GetMap() ) )
+					nCount++;
+				++aIter;
+			}
+		}
 	}
     return nCount;
 }
@@ -255,12 +318,26 @@ Reference<XAccessible> SwAccessibleSelectionHelper::getSelectedAccessibleChild(
 	const SwFlyFrm *pFlyFrm = pFEShell->GetCurrFlyFrm();
 	if( pFlyFrm )
 	{
-		if( 0 == nSelectedChildIndex &&
-            rContext.GetParent( SwAccessibleChild(pFlyFrm), rContext.IsInPagePreview()) ==
-                rContext.GetFrm() )
-        {
-        	aChild = pFlyFrm;
-        }
+		if( 0 == nSelectedChildIndex )
+		{
+            if(rContext.GetParent( SwAccessibleChild(pFlyFrm), rContext.IsInPagePreview()) == rContext.GetFrm() )
+			{
+				aChild = pFlyFrm;
+			}
+			else
+			{
+				const SwFrmFmt *pFrmFmt = pFlyFrm->GetFmt();
+				if (pFrmFmt)
+				{
+					const SwFmtAnchor& pAnchor = pFrmFmt->GetAnchor();
+                    if( pAnchor.GetAnchorId() == FLY_AS_CHAR )
+					{
+                        const SwFrm  *pParaFrm =  rContext.GetParent( SwAccessibleChild(pFlyFrm), rContext.IsInPagePreview() );
+						aChild  = pParaFrm;
+					}
+				}
+			}
+		}
 	}
 	else
 	{

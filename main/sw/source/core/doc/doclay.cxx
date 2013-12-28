@@ -389,9 +389,11 @@ void SwDoc::DelLayoutFmt( SwFrmFmt *pFmt )
 |*
 |*************************************************************************/
 
-SwFrmFmt *SwDoc::CopyLayoutFmt( const SwFrmFmt& rSource,
-								const SwFmtAnchor& rNewAnchor,
-                                bool bSetTxtFlyAtt, bool bMakeFrms )
+SwFrmFmt *SwDoc::CopyLayoutFmt(
+    const SwFrmFmt& rSource,
+    const SwFmtAnchor& rNewAnchor,
+    bool bSetTxtFlyAtt,
+    bool bMakeFrms )
 {
     const bool bFly = RES_FLYFRMFMT == rSource.Which();
     const bool bDraw = RES_DRAWFRMFMT == rSource.Which();
@@ -497,7 +499,7 @@ SwFrmFmt *SwDoc::CopyLayoutFmt( const SwFrmFmt& rSource,
 
 		// sorge dafuer das auch Fly's in Fly's kopiert werden
 		aIdx = *pSttNd->EndOfSectionNode();
-        pSrcDoc->CopyWithFlyInFly( aRg, 0, aIdx, sal_False, sal_True, sal_True );
+        pSrcDoc->CopyWithFlyInFly( aRg, 0, aIdx, NULL, sal_False, sal_True, sal_True );
 	}
 	else
 	{
@@ -1416,8 +1418,8 @@ lcl_InsertLabel(SwDoc & rDoc, SwTxtFmtColls *const pTxtFmtCollTbl,
 
 				pNewSet->Put( SwFmtSurround( SURROUND_NONE ) );
 				pNewSet->Put( SvxOpaqueItem( RES_OPAQUE, sal_True ) );
-                pNewSet->Put( SwFmtVertOrient( text::VertOrientation::TOP ) );
-                pNewSet->Put( SwFmtHoriOrient( text::HoriOrientation::CENTER ) );
+                pNewSet->Put( SwFmtVertOrient( 0, text::VertOrientation::TOP, text::RelOrientation::FRAME ) );
+                pNewSet->Put( SwFmtHoriOrient( 0, text::HoriOrientation::CENTER, text::RelOrientation::FRAME ) );
 
 				aFrmSize = pOldFmt->GetFrmSize();
 				aFrmSize.SetWidthPercent( 100 );

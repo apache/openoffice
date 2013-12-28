@@ -130,13 +130,14 @@ namespace accessibility
 		SolarMethodGuard aGuard( *this );
 
         // TODO: localize this!
-        String sName = mpBrowseBox->GetColumnDescription( ::sal::static_int_cast< sal_uInt16 >( getColumnPos() ) );
-        if ( 0 == sName.Len() )
-        {
-            sName = String::CreateFromAscii( "Column " );
-            sName += String::CreateFromInt32( getColumnPos( ) );
-        }
-
+        //String sName = mpBrowseBox->GetColumnDescription( getColumnPos( ) );
+		
+        //if ( 0 == sName.Len() )
+        //{
+        //    sName = String::CreateFromAscii( "Column " );
+			String  sName = String::CreateFromAscii( "Column " );
+            sName += String::CreateFromInt32( getColumnPos( ) - 1 );
+        //}
         sName += String::CreateFromAscii( ", Row " );
         sName += String::CreateFromInt32( getRowPos( ) );
 

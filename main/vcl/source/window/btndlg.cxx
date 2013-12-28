@@ -289,6 +289,13 @@ void ButtonDialog::StateChanged( StateChangedType nType )
 	if ( nType == STATE_CHANGE_INITSHOW )
 	{
 		ImplPosControls();
+		ImplBtnDlgItem* pItem = mpItemList->First();
+		while ( pItem )
+		{
+			if ( pItem->mpPushButton && pItem->mbOwnButton )
+				pItem->mpPushButton->SetZOrder(0, WINDOW_ZORDER_LAST);
+			pItem = mpItemList->Next();
+		}
 
 		// Focus evt. auf den entsprechenden Button setzen
 		if ( mnFocusButtonId != BUTTONDIALOG_BUTTON_NOTFOUND )

@@ -151,6 +151,7 @@ Reference<drawing::XLayer> SdUnoDrawView::getActiveLayer (void) throw ()
             xCurrentLayer = pManager->GetLayer (pLayer);
     }
     while (false);
+	mrController.mpCurrentLayer = &(xCurrentLayer) ;
 
     return xCurrentLayer;
 }

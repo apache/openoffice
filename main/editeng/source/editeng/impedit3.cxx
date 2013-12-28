@@ -368,7 +368,7 @@ void ImpEditEngine::FormatFullDoc()
 
 void ImpEditEngine::FormatDoc()
 {
-	if ( !GetUpdateMode() || IsFormatting() )
+	if ( !GetUpdateMode() || IsFormatting() || !GetUpdateModeForAcc())
 		return;
 
     EnterBlockNotifications();
@@ -3859,6 +3859,16 @@ EditPaM ImpEditEngine::ConnectContents( sal_uInt16 nLeftNode, sal_Bool bBackward
 	DBG_ASSERT( pRightNode, "Ungueltiger rechter Node in ConnectContents" );
 	DBG_ASSERT( IsInUndo(), "ConnectContent nur fuer Undo()!" );
 	return ImpConnectParagraphs( pLeftNode, pRightNode, bBackward );
+}
+
+void ImpEditEngine::SetUpdateModeForAcc( sal_Bool bUp)
+{
+	bUpdateForAcc = bUp;
+}
+
+sal_Bool ImpEditEngine::GetUpdateModeForAcc()
+{
+	return bUpdateForAcc;
 }
 
 void ImpEditEngine::SetUpdateMode( sal_Bool bUp, EditView* pCurView, sal_Bool bForceUpdate )

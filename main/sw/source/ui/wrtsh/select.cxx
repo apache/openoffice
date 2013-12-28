@@ -46,6 +46,9 @@
 #include <swdtflvr.hxx>
 #include <crsskip.hxx>
 
+#ifndef _DOC_HXX
+#include <doc.hxx>
+#endif
 #if OSL_DEBUG_LEVEL > 1
 #include <pam.hxx>
 #endif
@@ -166,6 +169,12 @@ long SwWrtShell::SelAll()
         }
         SttSelect();
         GoEnd(sal_True, &bMoveTable);
+
+		SwDoc *pDoc = GetDoc();
+		if ( pDoc )
+		{
+			pDoc->SetPrepareSelAll();
+		}
         if( pStartPos )
         {
             pTmpCrsr = getShellCrsr( false );

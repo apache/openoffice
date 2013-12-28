@@ -876,6 +876,8 @@ public:
 class TOOLKIT_DLLPUBLIC VCLXDateField :	public ::com::sun::star::awt::XDateField,
 						public VCLXFormattedSpinField
 {
+protected:
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > CreateAccessibleContext();
 public:
 					VCLXDateField();
 					~VCLXDateField();
@@ -922,6 +924,8 @@ public:
 class VCLXTimeField :	public ::com::sun::star::awt::XTimeField,
 						public VCLXFormattedSpinField
 {
+protected:
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > CreateAccessibleContext();
 public:
 					VCLXTimeField();
 					~VCLXTimeField();

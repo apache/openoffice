@@ -91,6 +91,7 @@ private:
 
 	sal_uInt16			nWhich;
 	String			aCmdArr[6];
+	DECL_LINK( ObjectSelectHdl, ScEditWindow* );
 
 private:
 #ifdef _TPHFEDIT_CXX

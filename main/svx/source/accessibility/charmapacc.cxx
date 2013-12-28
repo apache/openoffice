@@ -166,23 +166,22 @@ Reference< XAccessible > SAL_CALL SvxShowCharSetVirtualAcc::getAccessibleParent(
 // -----------------------------------------------------------------------------
 ::com::sun::star::awt::Rectangle SAL_CALL SvxShowCharSetVirtualAcc::implGetBounds(  ) throw (RuntimeException)
 {
-	const Point   aOutPos( mpParent->GetPosPixel() );
-    Size          aOutSize( mpParent->GetOutputSizePixel() );
-	if ( mpParent->getScrollBar()->IsVisible() )
+	::com::sun::star::awt::Rectangle aBounds ( 0, 0, 0, 0 );
+	Window* pWindow = mpParent;
+	if ( pWindow )
 	{
-		const Size aScrollBar = mpParent->getScrollBar()->GetOutputSizePixel();
-		aOutSize.Width() -= aScrollBar.Width();
-		aOutSize.Height() -= aScrollBar.Height();
+		Rectangle aRect = pWindow->GetWindowExtentsRelative( NULL );
+		aBounds = AWTRectangle( aRect );
+		Window* pParent = pWindow->GetAccessibleParentWindow();
+		if ( pParent )
+		{
+			Rectangle aParentRect = pParent->GetWindowExtentsRelative( NULL );
+			::com::sun::star::awt::Point aParentScreenLoc = AWTPoint( aParentRect.TopLeft() );
+			aBounds.X -= aParentScreenLoc.X;
+			aBounds.Y -= aParentScreenLoc.Y;
+		}
 	}
-
-    awt::Rectangle aRet;
-
-    aRet.X = aOutPos.X();
-    aRet.Y = aOutPos.Y();
-    aRet.Width = aOutSize.Width();
-    aRet.Height = aOutSize.Height();
-
-    return aRet;
+	return aBounds;
 }
 // -----------------------------------------------------------------------------
 sal_Int16 SAL_CALL SvxShowCharSetVirtualAcc::getAccessibleRole(  ) throw (RuntimeException)
@@ -346,13 +345,13 @@ void SvxShowCharSetAcc::implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bS
 // -----------------------------------------------------------------------------
 ::com::sun::star::awt::Rectangle SAL_CALL SvxShowCharSetAcc::implGetBounds(  ) throw (RuntimeException)
 {
-	const Point   aOutPos( m_pParent->getCharSetControl()->GetPosPixel() );
+	const Point   aOutPos;//( m_pParent->getCharSetControl()->GetPosPixel() ); 
     Size          aOutSize( m_pParent->getCharSetControl()->GetOutputSizePixel());
 	if ( m_pParent->getCharSetControl()->getScrollBar()->IsVisible() )
 	{
 		const Size aScrollBar = m_pParent->getCharSetControl()->getScrollBar()->GetOutputSizePixel();
 		aOutSize.Width() -= aScrollBar.Width();
-		aOutSize.Height() -= aScrollBar.Height();
+		//aOutSize.Height() -= aScrollBar.Height(); 
 	}
 
     awt::Rectangle aRet;
@@ -694,7 +693,7 @@ uno::Reference< accessibility::XAccessible > SAL_CALL SvxShowCharSetItemAcc::get
 sal_Int16 SAL_CALL SvxShowCharSetItemAcc::getAccessibleRole()
     throw (uno::RuntimeException)
 {
-    return accessibility::AccessibleRole::LABEL;
+    return accessibility::AccessibleRole::TABLE_CELL;
 }
 
 // -----------------------------------------------------------------------------
@@ -709,14 +708,17 @@ sal_Int16 SAL_CALL SvxShowCharSetItemAcc::getAccessibleRole()
 	sal_Unicode c = mpParent->maText.GetChar(0);
 	char buf[16] = "0x0000";
     sal_Unicode c_Shifted = c;
-    for( int i = 0; i < 4; ++i )
+	int tmp_len = 4;
+	if(c_Shifted>0xFFFF) tmp_len = 8;
+    for( int i = 0; i < tmp_len; ++i )
     {
-        char h = (char)(c_Shifted & 0x0F);
-        buf[5-i] = (h > 9) ? (h - 10 + 'A') : (h + '0');
+        char h = c_Shifted & 0x0F;
+		buf[tmp_len+1-i] = (h > 9) ? (h - 10 + 'A') : (h + '0');
         c_Shifted >>= 4;
     }
     if( c < 256 )
         snprintf( buf+6, 10, " (%d)", c );
+	sDescription.AppendAscii(" ");
 	sDescription.AppendAscii(buf);
 
     return sDescription;
@@ -762,9 +764,13 @@ uno::Reference< accessibility::XAccessibleStateSet > SAL_CALL SvxShowCharSetItem
 
     if( mpParent )
     {
-	    // SELECTABLE
-	    pStateSet->AddState( accessibility::AccessibleStateType::SELECTABLE );
-	    pStateSet->AddState( accessibility::AccessibleStateType::FOCUSABLE );
+		if(mpParent->mrParent.IsEnabled())
+		{
+			pStateSet->AddState( accessibility::AccessibleStateType::ENABLED );
+			// SELECTABLE
+			pStateSet->AddState( accessibility::AccessibleStateType::SELECTABLE );
+			pStateSet->AddState( accessibility::AccessibleStateType::FOCUSABLE );
+		}
 
 	    // SELECTED
         if( mpParent->mrParent.GetSelectIndexId() == mpParent->mnId )
@@ -773,7 +779,10 @@ uno::Reference< accessibility::XAccessibleStateSet > SAL_CALL SvxShowCharSetItem
        	    pStateSet->AddState( accessibility::AccessibleStateType::FOCUSED );
         }
 		if ( mpParent->mnId >= mpParent->mrParent.FirstInView() && mpParent->mnId <= mpParent->mrParent.LastInView() )
+		{
 			pStateSet->AddState( AccessibleStateType::VISIBLE );
+			pStateSet->AddState( AccessibleStateType::SHOWING );
+		}
 		pStateSet->AddState( AccessibleStateType::TRANSIENT );
     }
 

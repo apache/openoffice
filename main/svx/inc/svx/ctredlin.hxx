@@ -299,6 +299,8 @@ public:
 	void			Enable( bool bEnable = true, bool bChild = true );
 	void			Disable( bool bChild = true );
 
+	void			SetAccessibleRelationMemberOf( Window* pWindow);
+
 	// } Methoden fuer Calc
 };
 

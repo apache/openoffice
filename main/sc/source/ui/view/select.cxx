@@ -369,6 +369,7 @@ sal_Bool ScViewFunctionSet::SetCursorAtCell( SCsCOL nPosX, SCsROW nPosY, sal_Boo
 			}
 
 			pView->UpdateRef( nPosX, nPosY, pViewData->GetTabNo() );
+			pView->SelectionChanged();
 		}
 	}
 	else if (pViewData->IsFillMode() ||

@@ -230,6 +230,8 @@ public:
 							const Point& rWinPoint, const Window& rCmpWnd );
 
     static ScMacroInfo* GetMacroInfo( SdrObject* pObj, sal_Bool bCreate = sal_False );
+	virtual ImageMap* GetImageMapForObject(SdrObject* pObj);
+	virtual sal_Int32 GetHyperlinkCount(SdrObject* pObj);
 
 private:
 	static SfxObjectShell* pGlobalDrawPersist;			// fuer AllocModel

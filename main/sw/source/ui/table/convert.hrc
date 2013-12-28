@@ -35,12 +35,16 @@
 #define FL_OPTIONS                      17
 #define FT_REPEAT_HEADER	18
 #define NF_REPEAT_HEADER	19
+//Table Row Header for ACC Supporting 2010.02.22
+#define FT_EXPLAIN_REPEAT_HEADER		20
+#define CB_LABEL		21
+#define NF_REPEAT_LABEL		22
+#define FT_REPEAT_LABEL		23
+//End table_row_header
 
 #define BT_OK 			100
 #define BT_CANCEL 		101
 #define BT_AUTOFORMAT	102
 #define BT_HELP 		103
 #define WIN_REPEAT_HEADER   104
-//IAccessibility2 Implementation 2009-----
 #define	STR_SYMBOL		105
-//-----IAccessibility2 Implementation 2009

@@ -221,11 +221,14 @@ Sequence<beans::PropertyValue> SvxUnoNumberingRules::getNumberingRuleByIndex( sa
 	}
 
 	{
+		if(SVX_NUM_CHAR_SPECIAL == rFmt.GetNumberingType())
+		{
 		sal_Unicode nCode = rFmt.GetBulletChar();
 		OUString aStr( &nCode, 1 );
 		aVal <<= aStr;
 		beans::PropertyValue aBulletProp( OUString(RTL_CONSTASCII_USTRINGPARAM("BulletChar")), -1, aVal, beans::PropertyState_DIRECT_VALUE);
 		pArray[nIdx++] = aBulletProp;
+		}
 	}
 
 	if( rFmt.GetBulletFont() )

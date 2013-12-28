@@ -151,7 +151,7 @@ private:
 	sal_uInt16				nMenuFlags;
 	sal_uInt16				nDefaultItem;		// Id vom Default-Item
 	sal_uInt16				nSelectedId;
-
+	sal_uInt16				nHighlightedItem;
 	// Fuer Ausgabe:
 	sal_uInt16				nCheckPos;
 	sal_uInt16				nImagePos;
@@ -242,7 +242,12 @@ public:
 	sal_uInt16				GetItemPos( sal_uInt16 nItemId ) const;
 	MenuItemType		GetItemType( sal_uInt16 nPos ) const;
 	sal_uInt16				GetCurItemId() const;
+	void 					SetHightlightItem( sal_uInt16 nHighlightedItem );
+	sal_uInt16 				GetHighlightItem() const;
 
+	XubString			GetItemAccKeyStrFromPos(sal_uInt16 nPos ) const ;
+
+	sal_Bool				IsTemporaryItemFromPos(sal_uInt16 nPos ) const;
 	void				SetDefaultItem( sal_uInt16 nItemId )	{ nDefaultItem = nItemId; }
 	sal_uInt16				GetDefaultItem() const				{ return nDefaultItem; }
 
@@ -371,6 +376,7 @@ public:
 
 	void				SetAccessibleDescription( sal_uInt16 nItemId, const XubString& rStr );
 	XubString			GetAccessibleDescription( sal_uInt16 nItemId ) const;
+	Menu* GetStartedFromMenu(){ return pStartedFrom ;}
     
     // returns whether the item a position nItemPos is highlighted or not.
     bool  IsHighlighted( sal_uInt16 nItemPos ) const;

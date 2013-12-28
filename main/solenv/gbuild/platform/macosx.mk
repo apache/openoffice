@@ -23,6 +23,8 @@
 
 GUI := UNX
 COM := GCC
+#COM := S5ABI
+#COMID := s5abi
 
 # Darwin mktemp -t expects a prefix, not a pattern
 gb_MKTEMP ?= /usr/bin/mktemp -t gbuild.
@@ -301,19 +303,9 @@ gb_Library_SYSPRE := lib
 gb_Library_UNOVERPRE := $(gb_Library_SYSPRE)uno_
 gb_Library_PLAINEXT := .dylib
 gb_Library_RTEXT := gcc3$(gb_Library_PLAINEXT)
-ifeq ($(gb_PRODUCT),$(true))
-gb_Library_STLEXT := port_gcc$(gb_Library_PLAINEXT)
-else
-gb_Library_STLEXT := port_gcc_stldebug$(gb_Library_PLAINEXT)
-endif
 
-ifeq ($(CPUNAME),INTEL)
 gb_Library_OOOEXT := $(gb_Library_PLAINEXT)
 gb_Library_UNOEXT := .uno$(gb_Library_PLAINEXT)
-else # ifeq ($(CPUNAME),POWERPC)
-gb_Library_OOOEXT := $(gb_Library_PLAINEXT)
-gb_Library_UNOEXT := .uno$(gb_Library_PLAINEXT)
-endif
 
 gb_Library__FRAMEWORKS := \
 	Cocoa \

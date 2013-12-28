@@ -45,3 +45,8 @@ ScAccessibleDocumentBase::ScAccessibleDocumentBase(
 ScAccessibleDocumentBase::~ScAccessibleDocumentBase(void)
 {
 }
+void ScAccessibleDocumentBase::SwitchViewFireFocus()
+{
+	CommitFocusGained();
+}
+

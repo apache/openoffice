@@ -70,6 +70,12 @@
 #include <tools/resary.hxx>
 #include <svx/svxdlg.hxx> //CHINA001
 
+#ifndef _ACCESSIBLESVXFINDREPLACEDIALOG_HXX_
+#include <svx/AccessibleSvxFindReplaceDialog.hxx>
+#endif
+using namespace com::sun::star::uno;
+using namespace com::sun::star::accessibility;
+
 #include <sfx2/layout-pre.hxx>
 
 using namespace com::sun::star::i18n;
@@ -293,6 +299,8 @@ void SearchAttrItemList::Remove( sal_uInt16 nPos, sal_uInt16 nLen )
 
 #undef INI_LIST
 #define INI_LIST() \
+	mpDocWin		(NULL),										\
+	mbSuccess		(sal_False),									\
 	aSearchText 	( this, SVX_RES( FT_SEARCH ) ),							\
 	aSearchLB		( this, SVX_RES( ED_SEARCH ) ),							\
 	aSearchTmplLB	( this, SVX_RES( LB_SEARCH ) ),							\
@@ -2504,6 +2512,21 @@ void SvxSearchDialog::SaveToModule_Impl()
 	nModifyFlag = 0;
     const SfxPoolItem* ppArgs[] = { pSearchItem, 0 };
     rBindings.GetDispatcher()->Execute( SID_SEARCH_ITEM, SFX_CALLMODE_SLOT, ppArgs );
+}
+
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > 
+		SvxSearchDialog::GetComponentInterface( sal_Bool bCreate )
+{
+    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > xPeer 
+		(Window::GetComponentInterface(false));
+	if ( !xPeer.is() && bCreate )
+    {
+		::com::sun::star::awt::XWindowPeer* mxPeer = new VCLXSvxFindReplaceDialog(this);		
+		SetComponentInterface(mxPeer);
+		return mxPeer;
+    }
+	else
+		return xPeer;
 }
 
 // class SvxSearchDialogWrapper ------------------------------------------

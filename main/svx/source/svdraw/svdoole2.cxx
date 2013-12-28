@@ -844,7 +844,17 @@ void SdrOle2Obj::Init()
 }
 
 // -----------------------------------------------------------------------------
+String SdrOle2Obj::GetStyleString()
+{
+	String strStyle;
+	if( xObjRef.is() && xObjRef.IsChart() )
+	{
+		strStyle = xObjRef.GetChartType();
+	}
+	return strStyle;
+}
 
+// -----------------------------------------------------------------------------
 SdrOle2Obj::~SdrOle2Obj()
 {
     DBG_DTOR( SdrOle2Obj,NULL);

@@ -1075,6 +1075,10 @@ void SwWW8FltControlStack::NewAttr(const SwPosition& rPos,
 {
     ASSERT(RES_TXTATR_FIELD != rAttr.Which(), "probably don't want to put"
         "fields into the control stack");
+    ASSERT(RES_TXTATR_ANNOTATION != rAttr.Which(), "probably don't want to put"
+        "annotations into the control stack");
+    ASSERT(RES_TXTATR_INPUTFIELD != rAttr.Which(), "probably don't want to put"
+        "input fields into the control stack");
     ASSERT(RES_FLTR_REDLINE != rAttr.Which(), "probably don't want to put"
         "redlines into the control stack");
     SwFltControlStack::NewAttr(rPos, rAttr);
@@ -1312,10 +1316,22 @@ void SwWW8FltControlStack::SetAttrInDoc(const SwPosition& rTmpPos,
                 }
             }
             break;
+
         case RES_TXTATR_FIELD:
             ASSERT(!this, "What is a field doing in the control stack,"
                 "probably should have been in the endstack");
             break;
+
+        case RES_TXTATR_ANNOTATION:
+            ASSERT(!this, "What is a annotation doing in the control stack,"
+                "probably should have been in the endstack");
+            break;
+
+        case RES_TXTATR_INPUTFIELD:
+            ASSERT(!this, "What is a input field doing in the control stack,"
+                "probably should have been in the endstack");
+            break;
+
         case RES_TXTATR_INETFMT:
             {
                 SwPaM aRegion(rTmpPos);
@@ -1403,7 +1419,9 @@ const SfxPoolItem* SwWW8FltControlStack::GetStackAttr(const SwPosition& rPos,
     return 0;
 }
 
-bool SwWW8FltRefStack::IsFtnEdnBkmField(const SwFmtFld& rFmtFld, sal_uInt16& rBkmNo)
+bool SwWW8FltRefStack::IsFtnEdnBkmField(
+    const SwFmtFld& rFmtFld,
+    sal_uInt16& rBkmNo)
 {
     const SwField* pFld = rFmtFld.GetField();
     sal_uInt16 nSubType;
@@ -1412,12 +1430,12 @@ bool SwWW8FltRefStack::IsFtnEdnBkmField(const SwFmtFld& rFmtFld, sal_uInt16& rBk
         && ((SwGetRefField*)pFld)->GetSetRefName().Len())
     {
         const IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
-        IDocumentMarkAccess::const_iterator_t ppBkmk = pMarkAccess->findMark(
-            ((SwGetRefField*)pFld)->GetSetRefName());
-        if(ppBkmk != pMarkAccess->getMarksEnd())
+        IDocumentMarkAccess::const_iterator_t ppBkmk =
+            pMarkAccess->findMark( ((SwGetRefField*)pFld)->GetSetRefName() );
+        if(ppBkmk != pMarkAccess->getAllMarksEnd())
         {
             // find Sequence No of corresponding Foot-/Endnote
-            rBkmNo = ppBkmk - pMarkAccess->getMarksBegin();
+            rBkmNo = ppBkmk - pMarkAccess->getAllMarksBegin();
             return true;
         }
     }
@@ -1435,6 +1453,8 @@ void SwWW8FltRefStack::SetAttrInDoc(const SwPosition& rTmpPos,
         do normal (?) strange stuff
         */
         case RES_TXTATR_FIELD:
+        case RES_TXTATR_ANNOTATION:
+        case RES_TXTATR_INPUTFIELD:
         {
             SwNodeIndex aIdx(pEntry->nMkNode, 1);
             SwPaM aPaM(aIdx, pEntry->nMkCntnt);
@@ -1447,7 +1467,7 @@ void SwWW8FltRefStack::SetAttrInDoc(const SwPosition& rTmpPos,
                 sal_uInt16 nBkmNo;
                 if( IsFtnEdnBkmField(rFmtFld, nBkmNo) )
                 {
-                    ::sw::mark::IMark const * const pMark = (pDoc->getIDocumentMarkAccess()->getMarksBegin() + nBkmNo)->get();
+                    ::sw::mark::IMark const * const pMark = (pDoc->getIDocumentMarkAccess()->getAllMarksBegin() + nBkmNo)->get();
 
                     const SwPosition& rBkMrkPos = pMark->GetMarkPos();
 
@@ -1772,10 +1792,13 @@ void SwWW8ImplReader::ImportDop()
 
     mpDocShell->SetModifyPasswordHash(pWDop->lKeyProtDoc);
 
-    const SvtFilterOptions* pOpt = SvtFilterOptions::Get();
-    sal_Bool bUseEnhFields=(pOpt && pOpt->IsUseEnhancedFields());
-    if (bUseEnhFields) {
-	rDoc.set(IDocumentSettingAccess::PROTECT_FORM, pWDop->fProtEnabled );
+    {
+        const SvtFilterOptions* pOpt = SvtFilterOptions::Get();
+        const sal_Bool bUseEnhFields=(pOpt && pOpt->IsUseEnhancedFields());
+        if (bUseEnhFields)
+        {
+            rDoc.set(IDocumentSettingAccess::PROTECT_FORM, pWDop->fProtEnabled );
+        }
     }
 
     maTracer.LeaveEnvironment(sw::log::eDocumentProperties);
@@ -1997,8 +2020,12 @@ long SwWW8ImplReader::Read_And(WW8PLCFManResult* pRes)
 
     this->pFmtOfJustInsertedApo = 0;
     SwPostItField aPostIt(
-        (SwPostItFieldType*)rDoc.GetSysFldType(RES_POSTITFLD), sAuthor,
-        sTxt, aDate );
+        (SwPostItFieldType*)rDoc.GetSysFldType(RES_POSTITFLD),
+        sTxt,
+        sAuthor,
+        aEmptyStr,
+        aEmptyStr,
+        aDate );
     aPostIt.SetTextObject(pOutliner);
 
     pCtrlStck->NewAttr(*pPaM->GetPoint(), SvxCharHiddenItem(false, RES_CHRATR_HIDDEN));
@@ -3870,26 +3897,6 @@ void wwSectionManager::SetUseOn(wwSection &rSection)
         rSection.mpTitlePage->WriteUseOn(
             (UseOnPage) (eUseBase | nsUseOnPage::PD_HEADERSHARE | nsUseOnPage::PD_FOOTERSHARE));
     }
-
-	if( nsUseOnPage::PD_MIRROR != (UseOnPage)(eUse & nsUseOnPage::PD_MIRROR) )
-	{
-		if( rSection.maSep.bkc == 3 )
-		{
-			if( rSection.mpPage )
-				rSection.mpPage->SetUseOn( nsUseOnPage::PD_LEFT );
-			if( rSection.mpTitlePage )
-				rSection.mpTitlePage->SetUseOn( nsUseOnPage::PD_LEFT );
-		}
-		else if( rSection.maSep.bkc == 4 )
-		{
-			if( rSection.mpPage )
-				rSection.mpPage->SetUseOn( nsUseOnPage::PD_RIGHT );
-			if( rSection.mpTitlePage )
-				rSection.mpTitlePage->SetUseOn( nsUseOnPage::PD_RIGHT );
-		}
-		
-	}
-    
 }
 
 //Set the page descriptor on this node, handle the different cases for a text
@@ -3969,17 +3976,17 @@ SwFmtPageDesc wwSectionManager::SetSwFmtPageDesc(mySegIter &rIter,
     //Set page before hd/ft
     const wwSection *pPrevious = 0;
 
-	mySegIter aPrev = rIter;
-	while( aPrev!= rStart )
-	{
-		aPrev--;
-		pPrevious = &(*(aPrev));
-		if( aPrev->IsContinous())
-			continue;
-		else{
-			break;
-		}
-	}
+    mySegIter aPrev = rIter;
+    while( aPrev!= rStart )
+    {
+        aPrev--;
+        pPrevious = &(*(aPrev));
+        if( aPrev->IsContinous())
+            continue;
+        else{
+            break;
+        }
+    }
 
     SetHdFt(*rIter, std::distance(rStart, rIter), pPrevious);
     SetUseOn(*rIter);
@@ -4028,7 +4035,8 @@ void wwSectionManager::InsertSegments()
         bool bInsertSection = (aIter != aStart) ? (aIter->IsContinous() &&  bThisAndPreviousAreCompatible): false;
         bool bInsertPageDesc = !bInsertSection;
         bool bProtected = SectionIsProtected(*aIter); // do we really  need this ?? I guess I have a different logic in editshell which disales this...
-        if (bUseEnhFields && mrReader.pWDop->fProtEnabled && aIter->IsNotProtected()) {
+        if (bUseEnhFields && mrReader.pWDop->fProtEnabled && aIter->IsNotProtected())
+        {
             // here we have the special case that the whole document is protected, with the execption of this section.
             // I want to address this when I do the section rework, so for the moment we disable the overall protection then...
             mrReader.rDoc.set(IDocumentSettingAccess::PROTECT_FORM, false );

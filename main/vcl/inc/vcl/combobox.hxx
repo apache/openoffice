@@ -67,6 +67,7 @@ private:
     DECL_DLLPRIVATE_LINK(   ImplSelectionChangedHdl, void* );
     DECL_DLLPRIVATE_LINK(   ImplUserDrawHdl, UserDrawEvent* );
     DECL_DLLPRIVATE_LINK(   ImplAutocompleteHdl, Edit* );
+    DECL_DLLPRIVATE_LINK( ImplListItemSelectHdl , void* );
 
 protected:
     using Window::ImplInit;
@@ -182,7 +183,7 @@ public:
     XubString       GetMRUEntries( xub_Unicode cSep = ';' ) const;
     void            SetMaxMRUCount( sal_uInt16 n );
     sal_uInt16          GetMaxMRUCount() const;
-
+    sal_uInt16 	GetMRUCount() const;
     void            SetEntryData( sal_uInt16 nPos, void* pNewData );
     void*           GetEntryData( sal_uInt16 nPos ) const;
 
@@ -222,6 +223,7 @@ public:
      */
     using Control::GetIndexForPoint;
     long GetIndexForPoint( const Point& rPoint, sal_uInt16& rPos ) const;
+  	void  SetMpSubEditAccessibleName(String &aName);
 };
 
 #endif  // _COMBOBOX_HXX

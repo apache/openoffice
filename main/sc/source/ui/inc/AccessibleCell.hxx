@@ -32,9 +32,15 @@
 #include <unotools/accessiblerelationsethelper.hxx>
 #include <editeng/AccessibleStaticTextBase.hxx>
 #include <comphelper/uno3.hxx>
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_XAccessibleExtendedAttributes_HPP_
+#include <com/sun/star/accessibility/XAccessibleExtendedAttributes.hpp>
+#endif
 
 class ScTabViewShell;
 class ScAccessibleDocument;
+
+typedef cppu::ImplHelper1< ::com::sun::star::accessibility::XAccessibleExtendedAttributes>
+					ScAccessibleCellAttributeImpl;
 
 /**	@descr
         This base class provides an implementation of the
@@ -42,7 +48,8 @@ class ScAccessibleDocument;
 */
 class ScAccessibleCell
 	:	public	ScAccessibleCellBase,
-        public  accessibility::AccessibleStaticTextBase
+        public  accessibility::AccessibleStaticTextBase,
+		public  ScAccessibleCellAttributeImpl
 {
 public:
 	//=====  internal  ========================================================
@@ -134,6 +141,12 @@ public:
     	getSupportedServiceNames(void)
         throw (::com::sun::star::uno::RuntimeException);
 
+    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() 
+		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
+
+	// Override this method to handle cell's ParaIndent attribute specially.
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes ) 
+		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
 private:
 	ScTabViewShell* mpViewShell;
     ScAccessibleDocument* mpAccDoc;
@@ -163,6 +176,8 @@ private:
 	void AddRelation(const ScRange& rRange,
 		const sal_uInt16 aRelationType,
 		::utl::AccessibleRelationSetHelper* pRelationSet);
+	sal_Bool IsFormulaMode();
+	sal_Bool IsDropdown();
 };
 
 

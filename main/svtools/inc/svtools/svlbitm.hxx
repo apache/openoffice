@@ -42,6 +42,7 @@ class SvLBoxEntry;
 #define SV_ITEM_ID_LBOXBMP			2
 #define SV_ITEM_ID_LBOXBUTTON		3
 #define SV_ITEM_ID_LBOXCONTEXTBMP	4
+#define SV_ITEM_ID_EXTENDRLBOXSTRING	5
 
 enum SvButtonState { SV_BUTTON_UNCHECKED, SV_BUTTON_CHECKED, SV_BUTTON_TRISTATE };
 
@@ -130,6 +131,7 @@ public:
 	virtual sal_uInt16	IsA();
 	void			InitViewData( SvLBox*,SvLBoxEntry*,SvViewDataItem* );
 	XubString		GetText() const { return aStr; }
+	virtual XubString		GetExtendText() const {return XubString();}
 	void 			SetText( SvLBoxEntry*, const XubString& rStr );
 	void			Paint( const Point&, SvLBox& rDev, sal_uInt16 nFlags,SvLBoxEntry* );
 	SvLBoxItem* 	Create() const;
@@ -210,6 +212,7 @@ public:
     // Check whether this button can be modified via UI, sounding a beep if it
     // cannot be modified:
     bool            CheckModification() const;
+	SvLBoxButtonData* GetButtonData() const{ return pData;}
 };
 
 inline void	SvLBoxButton::SetStateChecked()

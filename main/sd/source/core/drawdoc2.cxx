@@ -1198,6 +1198,15 @@ IMapObject* SdDrawDocument::GetHitIMapObject( SdrObject* pObj,
 	return pIMapObj;
 }
 
+ImageMap* SdDrawDocument::GetImageMapForObject(SdrObject* pObj)
+{
+	SdIMapInfo* pIMapInfo = GetIMapInfo( pObj );
+	if ( pIMapInfo )
+	{
+		return const_cast<ImageMap*>( &(pIMapInfo->GetImageMap()) );
+	}
+	return NULL;
+}
 /** this method enforces that the masterpages are in the currect order,
 	that is at position 1 is a PK_STANDARD masterpage followed by a
 	PK_NOTES masterpage and so on. #

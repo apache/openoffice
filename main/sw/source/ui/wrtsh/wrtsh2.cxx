@@ -74,27 +74,51 @@
 		Beschreibung:
 ------------------------------------------------------------------------*/
 
-void SwWrtShell::Insert(SwField &rFld)
+void SwWrtShell::Insert( SwField& rFld )
 {
-	ResetCursorStack();
-	if(!_CanInsert())
-		return;
-	StartAllAction();
+    ResetCursorStack();
+    if(!_CanInsert())
+        return;
+    StartAllAction();
 
     SwRewriter aRewriter;
     aRewriter.AddRule(UNDO_ARG1, rFld.GetDescription());
 
-	StartUndo(UNDO_INSERT, &aRewriter);
+    StartUndo(UNDO_INSERT, &aRewriter);
 
     bool bDeleted = false;
-	if( HasSelection() )
+    const SwPaM* pAnnotationTextRange = NULL;
+    if ( HasSelection() )
     {
-        bDeleted = DelRight() != 0;
+        if ( rFld.GetTyp()->Which() == RES_POSTITFLD )
+        {
+            // for annotation fields:
+            // - keep the current selection in order to create a corresponding annotation mark
+            // - collapse cursur to its point
+            const SwPaM& rCurrPaM = GetCurrentShellCursor();
+            pAnnotationTextRange = new SwPaM( *rCurrPaM.GetPoint(), *rCurrPaM.GetMark() );
+            ClearMark();
+        }
+        else
+        {
+            bDeleted = DelRight() != 0;
+        }
     }
 
     SwEditShell::Insert2(rFld, bDeleted);
+
+    if ( pAnnotationTextRange != NULL )
+    {
+        if ( GetDoc() != NULL )
+        {
+            IDocumentMarkAccess* pMarksAccess = GetDoc()->getIDocumentMarkAccess();
+            pMarksAccess->makeAnnotationMark( *pAnnotationTextRange, ::rtl::OUString() );
+        }
+        delete pAnnotationTextRange;
+    }
+
     EndUndo();
-	EndAllAction();
+    EndAllAction();
 }
 
 /*--------------------------------------------------------------------
@@ -103,40 +127,37 @@ void SwWrtShell::Insert(SwField &rFld)
 
 
 
-void SwWrtShell::UpdateInputFlds( SwInputFieldList* pLst, sal_Bool bOnlyInSel )
+void SwWrtShell::UpdateInputFlds( SwInputFieldList* pLst )
 {
-	// ueber die Liste der Eingabefelder gehen und Updaten
-	SwInputFieldList* pTmp = pLst;
-	if( !pTmp )
-		pTmp = new SwInputFieldList( this );
+    // ueber die Liste der Eingabefelder gehen und Updaten
+    SwInputFieldList* pTmp = pLst;
+    if( !pTmp )
+        pTmp = new SwInputFieldList( this );
 
-	if (bOnlyInSel)
-		pTmp->RemoveUnselectedFlds();
+    const sal_uInt16 nCnt = pTmp->Count();
+    if(nCnt)
+    {
+        pTmp->PushCrsr();
 
-	const sal_uInt16 nCnt = pTmp->Count();
-	if(nCnt)
-	{
-		pTmp->PushCrsr();
-
-		sal_Bool bCancel = sal_False;
+        sal_Bool bCancel = sal_False;
         ByteString aDlgPos;
-		for( sal_uInt16 i = 0; i < nCnt && !bCancel; ++i )
-		{
-			pTmp->GotoFieldPos( i );
+        for( sal_uInt16 i = 0; i < nCnt && !bCancel; ++i )
+        {
+            pTmp->GotoFieldPos( i );
             SwField* pField = pTmp->GetField( i );
             if(pField->GetTyp()->Which() == RES_DROPDOWN)
                 bCancel = StartDropDownFldDlg( pField, sal_True, &aDlgPos );
             else
                 bCancel = StartInputFldDlg( pField, sal_True, 0, &aDlgPos);
 
-			// Sonst Updatefehler bei Multiselektion:
-			pTmp->GetField( i )->GetTyp()->UpdateFlds();
-		}
-		pTmp->PopCrsr();
-	}
+            // Sonst Updatefehler bei Multiselektion:
+            pTmp->GetField( i )->GetTyp()->UpdateFlds();
+        }
+        pTmp->PopCrsr();
+    }
 
-	if( !pLst )
-		delete pTmp;
+    if( !pLst )
+        delete pTmp;
 }
 
 
@@ -304,22 +325,27 @@ void SwWrtShell::ClickToField( const SwField& rFld )
 		EndAllAction();
 		break;
 
-	case RES_INPUTFLD:
-		StartInputFldDlg( (SwField*)&rFld, sal_False );
-		break;
+    case RES_INPUTFLD:
+        {
+            const SwInputField* pInputField = dynamic_cast<const SwInputField*>(&rFld);
+            if ( pInputField == NULL )
+            {
+                StartInputFldDlg( (SwField*)&rFld, sal_False );
+            }
+        }
+        break;
 
-	case RES_SETEXPFLD:
-		if( ((SwSetExpField&)rFld).GetInputFlag() )
-			StartInputFldDlg( (SwField*)&rFld, sal_False );
-		break;
+    case RES_SETEXPFLD:
+        if( ((SwSetExpField&)rFld).GetInputFlag() )
+            StartInputFldDlg( (SwField*)&rFld, sal_False );
+        break;
     case RES_DROPDOWN :
         StartDropDownFldDlg( (SwField*)&rFld, sal_False );
     break;
-	}
+    }
 
 	bIsInClickToEdit = sal_False;
 }
-
 
 
 void SwWrtShell::ClickToINetAttr( const SwFmtINetFmt& rItem, sal_uInt16 nFilter )

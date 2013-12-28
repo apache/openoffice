@@ -84,6 +84,7 @@ protected:
 	void Init();
 
 public:
+	String GetStyleString();
 	TYPEINFO();
 
 	SdrOle2Obj(FASTBOOL bFrame_=sal_False);

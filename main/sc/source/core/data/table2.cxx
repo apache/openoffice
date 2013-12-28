@@ -3308,3 +3308,12 @@ sal_uLong ScTable::GetColOffset( SCCOL nCol ) const
 	return n;
 }
 
+ScColumn* ScTable::GetColumnByIndex(sal_Int32 index)
+{
+	if( index <= MAXCOL && index >= 0 )
+	{
+		return &(aCol[index]);
+	}
+	return NULL;
+}
+

@@ -78,7 +78,7 @@ typedef sal_uInt16 CTL_STATE;
 #define CS_NOVERT	2		// no vertikal input information is used
 
 class SvxRectCtlAccessibleContext;
-
+class SvxPixelCtlAccessible;
 class SVX_DLLPUBLIC SvxRectCtl : public Control
 {
 private:
@@ -214,7 +214,9 @@ protected:
 	Size		aRectSize;
 	sal_uInt16* 	pPixel;
 	sal_Bool		bPaintable;
-
+	//Solution:Add member identifying position
+	Point       aFocusPosition;
+	Rectangle   implCalFocusRect( const Point& aPosition );
 	void	ChangePixel( sal_uInt16 nPixel );
 
 public:
@@ -240,6 +242,23 @@ public:
 
 	void	SetPaintable( sal_Bool bTmp ) { bPaintable = bTmp; }
 	void	Reset();
+	SvxPixelCtlAccessible*	m_pAccess;
+	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >		m_xAccess;
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > CreateAccessible();
+	long GetSquares() const { return nSquares ; }
+	long GetWidth() const { return aRectSize.getWidth() ; }
+	long GetHeight() const { return aRectSize.getHeight() ; }
+
+	//Device Pixel .
+	long ShowPosition( const Point &pt);
+	
+	long PointToIndex(const Point &pt) const;
+	Point IndexToPoint(long nIndex) const ;
+	long GetFoucsPosIndex() const ;
+	//Solution:Keyboard fucntion for key input and focus handling function
+	virtual void        KeyInput( const KeyEvent& rKEvt );
+	virtual void        GetFocus();
+    virtual void        LoseFocus();
 };
 
 /*************************************************************************

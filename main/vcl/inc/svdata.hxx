@@ -182,6 +182,7 @@ struct ImplSVAppData
      */
     ImeStatusWindowMode meShowImeStatusWindow;
 
+	long m_bEnableAccessInterface;
                             DECL_STATIC_LINK( ImplSVAppData, ImplQuitMsg, void* );
                            
 };

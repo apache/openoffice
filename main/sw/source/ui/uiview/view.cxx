@@ -537,30 +537,13 @@ IMPL_LINK( SwView, AttrChangedNotify, SwWrtShell *, EMPTYARG )
 
 	}
 
-	//#i6193#, change ui if cursor is at a SwPostItField
-	if (mpPostItMgr)
-	{
-        // --> OD 2008-06-19 #i90516#
-        // only perform the code that is needed to determine, if at the
-        // actual cursor position is a post-it field
-//        SwRect aFldRect;
-//        SwContentAtPos aCntntAtPos( SwContentAtPos::SW_FIELD);
-//        if( pWrtShell->GetContentAtPos( pWrtShell->GetCrsrDocPos(), aCntntAtPos, sal_False, &aFldRect ) )
-//        {
-//            const SwField* pFld = aCntntAtPos.aFnd.pFld;
-//            if (pFld->Which()== RES_POSTITFLD)
-//            {
-//                mpPostItMgr->SetShadowState(reinterpret_cast<const SwPostItField*>(pFld));
-//            }
-//            else
-//                mpPostItMgr->SetShadowState(0);
-//        }
-//        else
-//            mpPostItMgr->SetShadowState(0);
+    //#i6193#, change ui if cursor is at a SwPostItField
+    if (mpPostItMgr)
+    {
         mpPostItMgr->SetShadowState( pWrtShell->GetPostItFieldAtCursor() );
-	}
+    }
 
-	return 0;
+    return 0;
 }
 
 
@@ -744,6 +727,7 @@ SwView::SwView( SfxViewFrame *_pFrame, SfxViewShell* pOldSh )
 	: SfxViewShell( _pFrame, SWVIEWFLAGS ),
 	aPageStr( SW_RES( STR_PAGE )),
     nNewPage(USHRT_MAX),
+	nOldPageNum(0),
     pNumRuleNodeFromDoc(0), // #i23726#
 	pEditWin( new SwEditWin( &_pFrame->GetWindow(), *this ) ),
 	pWrtShell(0),

@@ -95,7 +95,7 @@
 #include <editeng/eeitem.hxx>
 #include <svl/poolitem.hxx>
 #include <glob.hrc>
-
+#include "AccessibleDocumentViewBase.hxx"
 #ifndef SO2_DECL_SVINPLACEOBJECT_DEFINED
 #define SO2_DECL_SVINPLACEOBJECT_DEFINED
 SO2_DECL_REF(SvInPlaceObject)
@@ -479,6 +479,7 @@ sal_Bool ViewShell::KeyInput(const KeyEvent& rKEvt, ::sd::Window* pWin)
 		bReturn = (sal_Bool)GetViewShell()->KeyInput(rKEvt);
 	}
 
+	sal_Int32 OriCount = GetView()->GetMarkedObjectList().GetMarkCount();
 	if(!bReturn)
 	{
 		rtl::Reference< SlideShow > xSlideShow( SlideShow::GetSlideShow( GetViewShellBase() ) );
@@ -507,6 +508,12 @@ sal_Bool ViewShell::KeyInput(const KeyEvent& rKEvt, ::sd::Window* pWin)
 				}
 			}
 		}
+	}
+	sal_Int32 EndCount = GetView()->GetMarkedObjectList().GetMarkCount();
+	// Here, oriCount or endCount must have one value=0, another value > 0, then to switch focus between Document and shape objects
+	if(bReturn &&  (OriCount + EndCount > 0) && (OriCount * EndCount == 0))
+	{
+		SwitchActiveViewFireFocus();
 	}
 
 	if(!bReturn && GetActiveWindow())
@@ -1624,6 +1631,33 @@ bool ViewShell::RelocateToParentWindow (::Window* pParentWindow)
     return true;
 }
 
+void ViewShell::SwitchViewFireFocus(::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > xAcc )
+{
+	if (xAcc.get())
+	{
+		::accessibility::AccessibleDocumentViewBase* pBase = static_cast< ::accessibility::AccessibleDocumentViewBase* >(xAcc.get());	
+		if (pBase)
+		{
+			pBase->SwitchViewActivated();
+		}
+	}
+}
+void ViewShell::SwitchActiveViewFireFocus()
+{
+	if (mpContentWindow)
+	{
+		SwitchViewFireFocus(mpContentWindow->GetAccessible(sal_False));
+	}
+}
+// move these two methods from DrawViewShell. 
+void ViewShell::fireSwitchCurrentPage(sal_Int32 pageIndex)
+{
+	GetViewShellBase().GetDrawController().fireSwitchCurrentPage(pageIndex);
+}
+void ViewShell::NotifyAccUpdate( )
+{
+	GetViewShellBase().GetDrawController().NotifyAccUpdate();
+}
 
 
 } // end of namespace sd

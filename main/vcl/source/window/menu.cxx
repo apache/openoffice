@@ -1573,6 +1573,35 @@ sal_uInt16 Menu::GetCurItemId() const
 {
     return nSelectedId;
 }
+void Menu::SetHightlightItem( sal_uInt16 nHighlightedItem )
+{
+	this->nHighlightedItem = nHighlightedItem;
+}
+sal_uInt16 Menu::GetHighlightItem() const
+{
+	return nHighlightedItem;
+}
+
+
+XubString Menu::GetItemAccKeyStrFromPos(sal_uInt16 nPos) const 
+{
+    MenuItemData* pData = pItemList->GetDataFromPos( nPos );
+	if (pData)
+	{
+		return pData->aAccelKey.GetName();
+	}
+	return XubString();
+}
+
+sal_Bool Menu::IsTemporaryItemFromPos(sal_uInt16 nPos ) const
+{
+    MenuItemData* pData = pItemList->GetDataFromPos( nPos );
+	if (pData)
+	{
+		return pData->bIsTemporary;
+	}
+	return sal_False;
+}
 
 void Menu::SetItemBits( sal_uInt16 nItemId, MenuItemBits nBits )
 {
@@ -3728,7 +3757,10 @@ sal_uInt16 PopupMenu::ImplExecute( Window* pW, const Rectangle& rRect, sal_uLong
             String aTmpEntryText( ResId( SV_RESID_STRING_NOSELECTIONPOSSIBLE, *pResMgr ) );
             MenuItemData* pData = pItemList->Insert(
                 0xFFFF, MENUITEM_STRING, 0, aTmpEntryText, Image(), NULL, 0xFFFF );
+		sal_uInt16          nmPos;
+		pData = pItemList->GetData( pData->nId, nmPos );
                 pData->bIsTemporary = sal_True;
+		ImplCallEventListeners(VCLEVENT_MENU_SUBMENUCHANGED,nmPos);
         }
     }
     else if ( Application::GetSettings().GetStyleSettings().GetAutoMnemonic() && !( nMenuFlags & MENU_FLAG_NOAUTOMNEMONICS ) )
@@ -4005,7 +4037,7 @@ void MenuFloatingWindow::doShutdown()
         // otherwise the entry will not be read when the menu is opened again
         if( nHighlightedItem != ITEMPOS_INVALID )
             pMenu->ImplCallEventListeners( VCLEVENT_MENU_DEHIGHLIGHT, nHighlightedItem );
-    
+	pMenu->SetHightlightItem(ITEMPOS_INVALID);
         if( !bKeyInput && pMenu && pMenu->pStartedFrom && !pMenu->pStartedFrom->bIsMenuBar )
         {
             // #102461# remove highlight in parent
@@ -4676,6 +4708,7 @@ void MenuFloatingWindow::ChangeHighlightItem( sal_uInt16 n, sal_Bool bStartPopup
             }
         }
         HighlightItem( nHighlightedItem, sal_True );
+	pMenu->SetHightlightItem(nHighlightedItem);
         pMenu->ImplCallHighlight( nHighlightedItem );
     }
     else
@@ -4977,6 +5010,8 @@ void MenuFloatingWindow::KeyInput( const KeyEvent& rKEvent )
                     MenuFloatingWindow* pFloat = ((PopupMenu*)pMenu->pStartedFrom)->ImplGetFloatingWindow();
                     pFloat->GrabFocus();
                     pFloat->KillActivePopup();
+  		    sal_uInt16 highlightItem = pFloat->GetHighlightedItem();
+		    pFloat->ChangeHighlightItem(highlightItem, sal_False);
                 }
             }
         }
@@ -5566,6 +5601,7 @@ void MenuBarWindow::ChangeHighlightItem( sal_uInt16 n, sal_Bool bSelectEntry, sa
     nHighlightedItem = (sal_uInt16)n;
     DBG_ASSERT( ( nHighlightedItem == ITEMPOS_INVALID ) || pMenu->ImplIsVisible( nHighlightedItem ), "ChangeHighlightItem: Not visible!" );
     HighlightItem( nHighlightedItem, sal_True );
+    pMenu->SetHightlightItem(nHighlightedItem);
     pMenu->ImplCallHighlight( nHighlightedItem );
 
     if( mbAutoPopup )

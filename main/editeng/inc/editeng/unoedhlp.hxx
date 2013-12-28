@@ -60,7 +60,15 @@ public:
 	void	SetStartValue( sal_uLong n );
 	void	SetEndValue( sal_uLong n );
 };
-
+class SvxEditSourceHintEndPara :public SvxEditSourceHint
+{
+public:
+	TYPEINFO();
+	SvxEditSourceHintEndPara( sal_uInt32 nId )
+		:SvxEditSourceHint(nId) {}
+	SvxEditSourceHintEndPara( sal_uInt32 nId, sal_uInt32 nValue, sal_uInt32 nStart=0, sal_uInt32 nEnd=0 )
+		:SvxEditSourceHint(nId,nValue,nStart){ (void)nEnd; }
+};
 /** Helper class for common functionality in edit sources
  */
 class EDITENG_DLLPUBLIC SvxEditSourceHelper
@@ -97,7 +105,8 @@ public:
 
         @return sal_True, if the range has been successfully determined
      */
-    static sal_Bool GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, const EditEngine& rEE, sal_uInt16 nPara, sal_uInt16 nIndex );
+    //static sal_Bool GetAttributeRun( USHORT& nStartIndex, USHORT& nEndIndex, const EditEngine& rEE, USHORT nPara, USHORT nIndex );
+    static sal_Bool GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, const EditEngine& rEE, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool bInCell=sal_False );
 
     /** Convert point from edit engine to user coordinate space
 

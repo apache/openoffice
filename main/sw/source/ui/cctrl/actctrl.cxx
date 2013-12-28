@@ -105,8 +105,11 @@ void NoSpaceEdit::Modify()
 		SetText(sTemp);
 		SetSelection(aSel);
 	}
+	Edit::Modify();
+	/*
 	if(GetModifyHdl().IsSet())
 		GetModifyHdl().Call(this);
+		*/
 }
 /* -----------------25.06.2003 15:57-----------------
 

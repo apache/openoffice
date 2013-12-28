@@ -1180,6 +1180,7 @@ void SvxIconChoiceCtrl_Impl::SetCursor_Impl( SvxIconChoiceCtrlEntry* pOldCursor,
 		{
 			SelectEntry( pCursor, sal_True, sal_True,  sal_False, bPaintSync );
 			aCurSelectionRect = GetEntryBoundRect( pCursor );
+			CallEventListeners( VCLEVENT_LISTBOX_SELECT, pCursor );
 		}
 	}
 }

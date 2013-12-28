@@ -158,6 +158,7 @@ public:
 	static void StaticInvalidate();
 
     FmFormView* GetDrawView() { return pDrawView; }
+	virtual void SwitchView();
 };
 
 

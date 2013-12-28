@@ -164,6 +164,10 @@ sub getparameter
 			$path =~ s/^\Q$installer::globals::destdir\E//;
 			$installer::globals::rootpath = $path;
 		}
+		elsif ($param eq "-release")
+        {
+            $installer::globals::is_release = 1;
+        }
 		else
 		{
 			installer::logger::print_error( "unknown parameter: $param" );
@@ -171,7 +175,7 @@ sub getparameter
 			exit(-1);
 		}
 	}
-	
+
 	# Usage of simple installer (not for Windows):
 	# $PERL -w $SOLARENV/bin/make_installer.pl \
 	# -f openoffice.lst -l en-US -p OpenOffice \
@@ -618,8 +622,7 @@ sub outputparameter ()
 	else  { push(@output, "Not unzipping ARCHIVE files\n"); }
 	if (!($installer::globals::languages_defined_in_productlist))
 	{
-		push(@output, "Languages:\n");
-		foreach my $element (@installer::globals::languageproducts) { push(@output, "\t$element\n"); }
+		push(@output, sprintf("Languages: %s\n", $installer::globals::languageproduct));
 	}
 	else
 	{
@@ -635,7 +638,6 @@ sub outputparameter ()
 	foreach my $line (@output)
 	{
 	    $installer::logger::Info->print($line);
-	    $installer::logger::Global->print($line);
 	}
 }
 

@@ -161,7 +161,7 @@ private:
 	sal_Bool					bPrintSelected;				// for result of SvxPrtQryBox
 
 	sal_Bool					bReadOnly;					// um Status-Aenderungen zu erkennen
-
+	sal_Bool 					bIsActive;
 	SbxObject*				pScSbxObject;
 
 //UNUSED2008-05  sal_Bool                    bChartDlgIsEdit;            // Datenbereich aendern
@@ -423,6 +423,9 @@ public:
     bool    ExecuteRetypePassDlg(ScPasswordHash eDesiredHash);
 
     using ScTabView::ShowCursor;
+	sal_Bool IsActive(){ return bIsActive; }
+	rtl::OUString GetFormula(ScAddress& rAddress);
+	const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & GetForms() const;
 };
 
 //==================================================================

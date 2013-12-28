@@ -100,6 +100,8 @@ private:
 	ScDBCollection	aLocalDbCol;
 	ScRange			theCurArea;
 	List			aRemoveList;
+	Timer		SynFocusTimer;
+	DECL_LINK( FocusToComoboxHdl, Timer* );
 
 #ifdef _DBNAMDLG_CXX
 private:

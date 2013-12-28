@@ -233,6 +233,7 @@ typedef sal_uInt16 HeaderBarItemBits;
 // - HeaderBar -
 // -------------
 
+class VCLXHeaderBar;
 class SVT_DLLPUBLIC HeaderBar : public Window
 {
 private:
@@ -260,6 +261,8 @@ private:
 	Link				maSelectHdl;
 	Link				maDoubleClickHdl;
 	Link				maCreateAccessibleHdl;
+	
+	VCLXHeaderBar*		m_pVCLXHeaderBar;	
 
 	::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessible >
@@ -385,6 +388,8 @@ public:
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessible >	CreateAccessible();
 	void SetAccessible( ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > GetComponentInterface( sal_Bool bCreate );
+	
 };
 
 #endif	// _HEADBAR_HXX

@@ -142,6 +142,19 @@ private:
 	virtual sal_Bool IsEditable(
 		const com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleStateSet>& rxParentStates);
+protected:
+	virtual ::rtl::OUString SAL_CALL GetNote(void)
+        throw (::com::sun::star::uno::RuntimeException);
+
+	virtual ::rtl::OUString SAL_CALL GetAllDisplayNote(void)
+        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getShadowAttrs(void) 
+		throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getBorderAttrs(void) 
+		throw (::com::sun::star::uno::RuntimeException);
+public:
+	const ScAddress& GetCellAddress() const { return maCellAddress; }
+	sal_Bool IsCellInChangeTrack(const ScAddress &cell,Color *pColCellBoder);
 };
 	
 

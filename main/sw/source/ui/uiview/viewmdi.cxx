@@ -379,7 +379,7 @@ IMPL_STATIC_LINK( SwView, MoveNavigationHdl, bool *, pbNext )
 {
     if ( !pbNext )
         return 0;
-    bool bNext = *pbNext;
+    const bool bNext = *pbNext;
     SwWrtShell& rSh = pThis->GetWrtShell();
 	switch( nMoveType )
 	{
@@ -455,8 +455,8 @@ IMPL_STATIC_LINK( SwView, MoveNavigationHdl, bool *, pbNext )
             // collect navigator reminders
             IDocumentMarkAccess* const pMarkAccess = rSh.getIDocumentMarkAccess();
             ::std::vector< const ::sw::mark::IMark* > vNavMarks;
-            for( IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->getMarksBegin();
-                ppMark != pMarkAccess->getMarksEnd();
+            for( IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->getAllMarksBegin();
+                ppMark != pMarkAccess->getAllMarksEnd();
                 ppMark++)
             {
                 if( IDocumentMarkAccess::GetType(**ppMark) == IDocumentMarkAccess::NAVIGATOR_REMINDER )
@@ -482,19 +482,21 @@ IMPL_STATIC_LINK( SwView, MoveNavigationHdl, bool *, pbNext )
             }
         }
         break;
-		case NID_POSTIT:
-		{
-            sw::sidebarwindows::SwSidebarWin* pPostIt = pThis->GetPostItMgr()->GetActiveSidebarWin();
-			if (pPostIt)
-                pThis->GetPostItMgr()->SetActiveSidebarWin(0);
-			SwFieldType* pFldType = rSh.GetFldType(0, RES_POSTITFLD);
-			if (rSh.MoveFldType(pFldType, bNext))
-				pThis->GetViewFrame()->GetDispatcher()->Execute(FN_POSTIT);
-			else
-				//first/last item
-                pThis->GetPostItMgr()->SetActiveSidebarWin(pPostIt);
-		}
-		break;
+
+        case NID_POSTIT:
+            {
+                sw::sidebarwindows::SwSidebarWin* pPostIt = pThis->GetPostItMgr()->GetActiveSidebarWin();
+                if (pPostIt)
+                    pThis->GetPostItMgr()->SetActiveSidebarWin(0);
+                SwFieldType* pFldType = rSh.GetFldType(0, RES_POSTITFLD);
+                if ( rSh.MoveFldType( pFldType, bNext ) )
+                    pThis->GetViewFrame()->GetDispatcher()->Execute(FN_POSTIT);
+                else
+                    //first/last item
+                    pThis->GetPostItMgr()->SetActiveSidebarWin(pPostIt);
+            }
+            break;
+
 		case NID_SRCH_REP:
 		if(pSrchItem)
 		{

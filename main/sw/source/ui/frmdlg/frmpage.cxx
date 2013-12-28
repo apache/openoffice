@@ -639,10 +639,12 @@ sal_uLong lcl_GetLBRelationsForStrID( const FrmMap* _pMap,
 
 namespace
 {
-	void HandleAutoCB( sal_Bool _bChecked, FixedText& _rFT_man, FixedText& _rFT_auto )
+	void HandleAutoCB( sal_Bool _bChecked, FixedText& _rFT_man, FixedText& _rFT_auto, PercentField& _rPF_Edit)
 	{
 		_rFT_man.Show( !_bChecked );
 		_rFT_auto.Show( _bChecked );
+		String accName = _bChecked ? _rFT_auto.GetText() : _rFT_man.GetText();
+		_rPF_Edit.SetAccessibleName(accName);
 	}
 }
 
@@ -2091,14 +2093,14 @@ IMPL_LINK_INLINE_END( SwFrmPage, RealSizeHdl, Button *, EMPTYARG )
 IMPL_LINK( SwFrmPage, AutoWidthClickHdl, void*, EMPTYARG )
 {
 	if( !IsInGraficMode() )
-		HandleAutoCB( aAutoWidthCB.IsChecked(), aWidthFT, aWidthAutoFT );
+		HandleAutoCB( aAutoWidthCB.IsChecked(), aWidthFT, aWidthAutoFT, aWidthED );
 	return 0;
 }
 
 IMPL_LINK( SwFrmPage, AutoHeightClickHdl, void*, EMPTYARG )
 {
 	if( !IsInGraficMode() )
-		HandleAutoCB( aAutoHeightCB.IsChecked(), aHeightFT, aHeightAutoFT );
+		HandleAutoCB( aAutoHeightCB.IsChecked(), aHeightFT, aHeightAutoFT, aWidthED );
 	return 0;
 }
 
@@ -2247,14 +2249,14 @@ void SwFrmPage::Init(const SfxItemSet& rSet, sal_Bool bReset)
 		SwFrmSize eSize = rSize.GetHeightSizeType();
 		sal_Bool bCheck = eSize != ATT_FIX_SIZE;
 		aAutoHeightCB.Check( bCheck );
-		HandleAutoCB( bCheck, aHeightFT, aHeightAutoFT );
+		HandleAutoCB( bCheck, aHeightFT, aHeightAutoFT, aWidthED );
 		if( eSize == ATT_VAR_SIZE )
 			aHeightED.SetValue( aHeightED.GetMin(), FUNIT_NONE );
 
 		eSize = rSize.GetWidthSizeType();
 		bCheck = eSize != ATT_FIX_SIZE;
 		aAutoWidthCB.Check( bCheck );
-		HandleAutoCB( bCheck, aWidthFT, aWidthAutoFT );
+		HandleAutoCB( bCheck, aWidthFT, aWidthAutoFT, aWidthED );
 		if( eSize == ATT_VAR_SIZE )
 			aWidthED.SetValue( aWidthED.GetMin(), FUNIT_NONE );
 

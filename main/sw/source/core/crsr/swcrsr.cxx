@@ -56,6 +56,7 @@
 #include <mdiexp.hxx>			// ...Percent()
 #include <statstr.hrc>			// ResId fuer Statusleiste
 #include <redline.hxx>      // SwRedline
+#include <txatbase.hxx>
 
 
 using namespace ::com::sun::star::i18n;
@@ -238,124 +239,120 @@ sal_Bool SwCursor::IsSelOvr( int eFlags )
         return sal_True;
     }
 
-// neu: Bereiche ueberpruefen
-// Anfang
-	if( pSavePos->nNode != GetPoint()->nNode.GetIndex() &&
-		//JP 28.10.97: Bug 45129 - im UI-ReadOnly ist alles erlaubt
-		( !pDoc->GetDocShell() || !pDoc->GetDocShell()->IsReadOnlyUI() ))
-	{
-		// teste doch mal die neuen Sections:
-		SwNodeIndex& rPtIdx = GetPoint()->nNode;
-		const SwSectionNode* pSectNd = rPtIdx.GetNode().FindSectionNode();
-		if( pSectNd &&
-			((bSkipOverHiddenSections && pSectNd->GetSection().IsHiddenFlag() ) ||
-			 (bSkipOverProtectSections && pSectNd->GetSection().IsProtectFlag() )))
-		{
+    if( pSavePos->nNode != GetPoint()->nNode.GetIndex()
+        && ( !pDoc->GetDocShell()
+             || !pDoc->GetDocShell()->IsReadOnlyUI() ) )
+    {
+        // teste doch mal die neuen Sections:
+        SwNodeIndex& rPtIdx = GetPoint()->nNode;
+        const SwSectionNode* pSectNd = rPtIdx.GetNode().FindSectionNode();
+        if( pSectNd &&
+            ((bSkipOverHiddenSections && pSectNd->GetSection().IsHiddenFlag() ) ||
+            (bSkipOverProtectSections && pSectNd->GetSection().IsProtectFlag() )))
+        {
             if( 0 == ( nsSwCursorSelOverFlags::SELOVER_CHANGEPOS & eFlags ) )
-			{
-				// dann wars das schon
-				RestoreSavePos();
-				return sal_True;
-			}
+            {
+                // dann wars das schon
+                RestoreSavePos();
+                return sal_True;
+            }
 
-			// dann setze den Cursor auf die neue Position:
-			SwNodeIndex aIdx( rPtIdx );
-			xub_StrLen nCntntPos = pSavePos->nCntnt;
-			int bGoNxt = pSavePos->nNode < rPtIdx.GetIndex();
-			SwCntntNode* pCNd = bGoNxt
-					? rNds.GoNextSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections)
-					: rNds.GoPrevSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections);
+            // dann setze den Cursor auf die neue Position:
+            SwNodeIndex aIdx( rPtIdx );
+            xub_StrLen nCntntPos = pSavePos->nCntnt;
+            int bGoNxt = pSavePos->nNode < rPtIdx.GetIndex();
+            SwCntntNode* pCNd = bGoNxt
+                ? rNds.GoNextSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections)
+                : rNds.GoPrevSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections);
             if( !pCNd && ( nsSwCursorSelOverFlags::SELOVER_ENABLEREVDIREKTION & eFlags ))
-			{
-				bGoNxt = !bGoNxt;
-				pCNd = bGoNxt ? rNds.GoNextSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections)
-							  : rNds.GoPrevSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections);
-			}
+            {
+                bGoNxt = !bGoNxt;
+                pCNd = bGoNxt ? rNds.GoNextSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections)
+                    : rNds.GoPrevSection( &rPtIdx, bSkipOverHiddenSections, bSkipOverProtectSections);
+            }
 
-			int bIsValidPos = 0 != pCNd;
-			sal_Bool bValidNodesRange = bIsValidPos &&
-									::CheckNodesRange( rPtIdx, aIdx, sal_True );
-			if( !bValidNodesRange )
-			{
-				rPtIdx = pSavePos->nNode;
-				if( 0 == ( pCNd = rPtIdx.GetNode().GetCntntNode() ) )
-				{
-					bIsValidPos = sal_False;
-					nCntntPos = 0;
-					rPtIdx = aIdx;
-					if( 0 == ( pCNd = rPtIdx.GetNode().GetCntntNode() ) )
-					{
-						// dann auf den Anfang vom Doc
-						rPtIdx = rNds.GetEndOfExtras();
-						pCNd = rNds.GoNext( &rPtIdx );
-					}
-				}
-			}
+            int bIsValidPos = 0 != pCNd;
+            sal_Bool bValidNodesRange = bIsValidPos &&
+                ::CheckNodesRange( rPtIdx, aIdx, sal_True );
+            if( !bValidNodesRange )
+            {
+                rPtIdx = pSavePos->nNode;
+                if( 0 == ( pCNd = rPtIdx.GetNode().GetCntntNode() ) )
+                {
+                    bIsValidPos = sal_False;
+                    nCntntPos = 0;
+                    rPtIdx = aIdx;
+                    if( 0 == ( pCNd = rPtIdx.GetNode().GetCntntNode() ) )
+                    {
+                        // dann auf den Anfang vom Doc
+                        rPtIdx = rNds.GetEndOfExtras();
+                        pCNd = rNds.GoNext( &rPtIdx );
+                    }
+                }
+            }
 
-			// ContentIndex noch anmelden:
-			xub_StrLen nTmpPos = bIsValidPos ? (bGoNxt ? 0 : pCNd->Len()) : nCntntPos;
-			GetPoint()->nContent.Assign( pCNd, nTmpPos );
-			if( !bIsValidPos || !bValidNodesRange ||
-				// sollten wir in einer Tabelle gelandet sein?
-				IsInProtectTable( sal_True ) )
-				return sal_True;
-		}
+            // ContentIndex noch anmelden:
+            xub_StrLen nTmpPos = bIsValidPos ? (bGoNxt ? 0 : pCNd->Len()) : nCntntPos;
+            GetPoint()->nContent.Assign( pCNd, nTmpPos );
+            if( !bIsValidPos || !bValidNodesRange ||
+                // sollten wir in einer Tabelle gelandet sein?
+                    IsInProtectTable( sal_True ) )
+                    return sal_True;
+        }
 
-		// oder sollte eine geschuetzte Section innerhalb der Selektion liegen?
-		if( HasMark() && bSkipOverProtectSections)
-		{
-			sal_uLong nSttIdx = GetMark()->nNode.GetIndex(),
-				  nEndIdx = GetPoint()->nNode.GetIndex();
-			if( nEndIdx <= nSttIdx )
-			{
-				sal_uLong nTmp = nSttIdx;
-				nSttIdx = nEndIdx;
-				nEndIdx = nTmp;
-			}
+        // oder sollte eine geschuetzte Section innerhalb der Selektion liegen?
+        if( HasMark() && bSkipOverProtectSections)
+        {
+            sal_uLong nSttIdx = GetMark()->nNode.GetIndex(),
+                nEndIdx = GetPoint()->nNode.GetIndex();
+            if( nEndIdx <= nSttIdx )
+            {
+                sal_uLong nTmp = nSttIdx;
+                nSttIdx = nEndIdx;
+                nEndIdx = nTmp;
+            }
 
-			const SwSectionFmts& rFmts = pDoc->GetSections();
-			for( sal_uInt16 n = 0; n < rFmts.Count(); ++n )
-			{
-				const SwSectionFmt* pFmt = rFmts[n];
-				const SvxProtectItem& rProtect = pFmt->GetProtect();
-				if( rProtect.IsCntntProtected() )
-				{
-					const SwFmtCntnt& rCntnt = pFmt->GetCntnt(sal_False);
-					ASSERT( rCntnt.GetCntntIdx(), "wo ist der SectionNode?" );
-					sal_uLong nIdx = rCntnt.GetCntntIdx()->GetIndex();
-					if( nSttIdx <= nIdx && nEndIdx >= nIdx )
-					{
-						// ist es keine gelinkte Section, dann kann sie auch
-						// nicht mitselektiert werden
-						const SwSection& rSect = *pFmt->GetSection();
-						if( CONTENT_SECTION == rSect.GetType() )
-						{
-							RestoreSavePos();
-							return sal_True;
-						}
-					}
-				}
-			}
-		}
+            const SwSectionFmts& rFmts = pDoc->GetSections();
+            for( sal_uInt16 n = 0; n < rFmts.Count(); ++n )
+            {
+                const SwSectionFmt* pFmt = rFmts[n];
+                const SvxProtectItem& rProtect = pFmt->GetProtect();
+                if( rProtect.IsCntntProtected() )
+                {
+                    const SwFmtCntnt& rCntnt = pFmt->GetCntnt(sal_False);
+                    ASSERT( rCntnt.GetCntntIdx(), "wo ist der SectionNode?" );
+                    sal_uLong nIdx = rCntnt.GetCntntIdx()->GetIndex();
+                    if( nSttIdx <= nIdx && nEndIdx >= nIdx )
+                    {
+                        // ist es keine gelinkte Section, dann kann sie auch
+                        // nicht mitselektiert werden
+                        const SwSection& rSect = *pFmt->GetSection();
+                        if( CONTENT_SECTION == rSect.GetType() )
+                        {
+                            RestoreSavePos();
+                            return sal_True;
+                        }
+                    }
+                }
+            }
+        }
 
-	}
-// Ende
-// neu: Bereiche ueberpruefen
+    }
 
-	const SwNode* pNd = &GetPoint()->nNode.GetNode();
+    const SwNode* pNd = &GetPoint()->nNode.GetNode();
     if( pNd->IsCntntNode() && !dynamic_cast<SwUnoCrsr*>(this) )
-	{
-		const SwCntntFrm* pFrm = ((SwCntntNode*)pNd)->getLayoutFrm( pDoc->GetCurrentLayout() );
-		if( pFrm && pFrm->IsValid() && 0 == pFrm->Frm().Height() &&
-            0 != ( nsSwCursorSelOverFlags::SELOVER_CHANGEPOS & eFlags ) )
-		{
+    {
+        const SwCntntFrm* pFrm = ((SwCntntNode*)pNd)->getLayoutFrm( pDoc->GetCurrentLayout() );
+        if( pFrm && pFrm->IsValid()
+            && 0 == pFrm->Frm().Height()
+            && 0 != ( nsSwCursorSelOverFlags::SELOVER_CHANGEPOS & eFlags ) )
+        {
             // skip to the next / prev valid paragraph with a layout
-			SwNodeIndex& rPtIdx = GetPoint()->nNode;
-			int bGoNxt = pSavePos->nNode < rPtIdx.GetIndex();
-			while( 0 != ( pFrm = ( bGoNxt ? pFrm->GetNextCntntFrm()
-										  :	pFrm->GetPrevCntntFrm() )) &&
-					0 == pFrm->Frm().Height() )
-				;
+            SwNodeIndex& rPtIdx = GetPoint()->nNode;
+            int bGoNxt = pSavePos->nNode < rPtIdx.GetIndex();
+            while( 0 != ( pFrm = ( bGoNxt ? pFrm->GetNextCntntFrm() : pFrm->GetPrevCntntFrm() ))
+                   && 0 == pFrm->Frm().Height() )
+                ;
 
             // --> LIJIAN/FME 2007-11-27 #i72394# skip to prev /next valid paragraph
             // with a layout in case the first search did not succeed:
@@ -371,139 +368,189 @@ sal_Bool SwCursor::IsSelOvr( int eFlags )
             }
             // <--
 
-			SwCntntNode* pCNd;
-			if( pFrm && 0 != (pCNd = (SwCntntNode*)pFrm->GetNode()) )
-			{
-				// set this cntntNode as new position
-				rPtIdx = *pCNd;
+            SwCntntNode* pCNd;
+            if( pFrm && 0 != (pCNd = (SwCntntNode*)pFrm->GetNode()) )
+            {
+                // set this cntntNode as new position
+                rPtIdx = *pCNd;
                 pNd = pCNd;
 
-				// ContentIndex noch anmelden:
-				xub_StrLen nTmpPos = bGoNxt ? 0 : pCNd->Len();
-				GetPoint()->nContent.Assign( pCNd, nTmpPos );
+                // ContentIndex noch anmelden:
+                xub_StrLen nTmpPos = bGoNxt ? 0 : pCNd->Len();
+                GetPoint()->nContent.Assign( pCNd, nTmpPos );
 
-					// sollten wir in einer Tabelle gelandet sein?
-				if( IsInProtectTable( sal_True ) )
-					pFrm = 0;
-			}
-		}
+                // sollten wir in einer Tabelle gelandet sein?
+                if( IsInProtectTable( sal_True ) )
+                    pFrm = 0;
+            }
+        }
 
-		if( !pFrm )
-		{
-			DeleteMark();
-			RestoreSavePos();
-			return sal_True;		// ohne Frames geht gar nichts!
-		}
-	}
+        if( !pFrm )
+        {
+            DeleteMark();
+            RestoreSavePos();
+            return sal_True;		// ohne Frames geht gar nichts!
+        }
+    }
 
-	// darf der Cursor in geschuetzen "Nodes" stehen?
+    // darf der Cursor in geschuetzen "Nodes" stehen?
     if( 0 == ( nsSwCursorSelOverFlags::SELOVER_CHANGEPOS & eFlags ) && !IsAtValidPos() )
-	{
-		DeleteMark();
-		RestoreSavePos();
-		return sal_True;
-	}
+    {
+        DeleteMark();
+        RestoreSavePos();
+        return sal_True;
+    }
 
-	if( !HasMark() )
-		return sal_False;
+    if( !HasMark() )
+        return sal_False;
 
-	//JP 19.08.98: teste mal auf ungueltige Selektion - sprich ueber
-	// 				GrundSections:
-	if( !::CheckNodesRange( GetMark()->nNode, GetPoint()->nNode, sal_True ))
-	{
-		DeleteMark();
-		RestoreSavePos();
-		return sal_True;		// ohne Frames geht gar nichts!
-	}
+    //JP 19.08.98: teste mal auf ungueltige Selektion - sprich ueber
+    // 				GrundSections:
+    if( !::CheckNodesRange( GetMark()->nNode, GetPoint()->nNode, sal_True ))
+    {
+        DeleteMark();
+        RestoreSavePos();
+        return sal_True;		// ohne Frames geht gar nichts!
+    }
 
-	const SwTableNode* pPtNd = pNd->FindTableNode();
+    if( (pNd = &GetMark()->nNode.GetNode())->IsCntntNode()
+        && !((SwCntntNode*)pNd)->getLayoutFrm( pDoc->GetCurrentLayout() )
+        && !dynamic_cast<SwUnoCrsr*>(this) )
+    {
+        DeleteMark();
+        RestoreSavePos();
+        return sal_True;		// ohne Frames geht gar nichts!
+    }
 
-	if( (pNd = &GetMark()->nNode.GetNode())->IsCntntNode() &&
-        !((SwCntntNode*)pNd)->getLayoutFrm( pDoc->GetCurrentLayout() ) && !dynamic_cast<SwUnoCrsr*>(this) )
-	{
-		DeleteMark();
-		RestoreSavePos();
-		return sal_True;		// ohne Frames geht gar nichts!
-	}
+    // assure that selection is only inside an InputField or contains the InputField completely
+    {
+        const SwTxtAttr* pInputFldTxtAttrAtPoint = NULL;
+        SwTxtNode* pTxtNdAtPoint = GetPoint()->nNode.GetNode().GetTxtNode();
+        if ( pTxtNdAtPoint != NULL )
+        {
+            pInputFldTxtAttrAtPoint =
+                pTxtNdAtPoint->GetTxtAttrAt( GetPoint()->nContent.GetIndex(), RES_TXTATR_INPUTFIELD, SwTxtNode::PARENT );
+        }
 
-	const SwTableNode* pMrkNd = pNd->FindTableNode();
+        const SwTxtAttr* pInputFldTxtAttrAtMark = NULL;
+        SwTxtNode* pTxtNdAtMark = GetMark()->nNode.GetNode().GetTxtNode();
+        if ( pTxtNdAtMark != NULL )
+        {
+            pInputFldTxtAttrAtMark =
+                pTxtNdAtMark->GetTxtAttrAt( GetMark()->nContent.GetIndex(), RES_TXTATR_INPUTFIELD, SwTxtNode::PARENT );
+        }
 
-	// beide in keinem oder beide im gleichen TableNode
-	if( ( !pMrkNd && !pPtNd ) || pPtNd == pMrkNd )
-		return sal_False;
+        if ( pInputFldTxtAttrAtPoint != pInputFldTxtAttrAtMark )
+        {
+            const sal_uLong nRefNodeIdx =
+                ( nsSwCursorSelOverFlags::SELOVER_TOGGLE & eFlags )
+                ? pSavePos->nNode
+                : GetMark()->nNode.GetIndex();
+            const xub_StrLen nRefContentIdx =
+                ( nsSwCursorSelOverFlags::SELOVER_TOGGLE & eFlags )
+                ? pSavePos->nCntnt
+                : GetMark()->nContent.GetIndex();
+            const bool bIsForwardSelection =
+                nRefNodeIdx < GetPoint()->nNode.GetIndex()
+                || ( nRefNodeIdx == GetPoint()->nNode.GetIndex()
+                     && nRefContentIdx < GetPoint()->nContent.GetIndex() );
 
-	// in unterschiedlichen Tabellen oder nur Mark in der Tabelle
-	if( ( pPtNd && pMrkNd ) || pMrkNd )
-	{						// dann lasse das nicht zu, alte Pos zurueck
-		RestoreSavePos();
-		// Crsr bleibt an der alten Position
-		return sal_True;
-	}
+            if ( pInputFldTxtAttrAtPoint != NULL )
+            {
+                const xub_StrLen nNewPointPos =
+                    bIsForwardSelection ? *(pInputFldTxtAttrAtPoint->End()) : *(pInputFldTxtAttrAtPoint->GetStart());
+                GetPoint()->nContent.Assign( pTxtNdAtPoint, nNewPointPos );
+            }
 
-	// ACHTUNG: dieses kann nicht im TableMode geschehen !!
-	if( pPtNd )		// nur Point in Tabelle, dann gehe hinter/vor diese
-	{
+            if ( pInputFldTxtAttrAtMark != NULL )
+            {
+                const xub_StrLen nNewMarkPos =
+                    bIsForwardSelection ? *(pInputFldTxtAttrAtMark->GetStart()) : *(pInputFldTxtAttrAtMark->End());
+                GetMark()->nContent.Assign( pTxtNdAtMark, nNewMarkPos );
+            }
+        }
+    }
+
+    const SwTableNode* pPtNd = GetPoint()->nNode.GetNode().FindTableNode();
+    const SwTableNode* pMrkNd = GetMark()->nNode.GetNode().FindTableNode();
+    // beide in keinem oder beide im gleichen TableNode
+    if( ( !pMrkNd && !pPtNd ) || pPtNd == pMrkNd )
+        return sal_False;
+
+    // in unterschiedlichen Tabellen oder nur Mark in der Tabelle
+    if( ( pPtNd && pMrkNd ) || pMrkNd )
+    {
+        // dann lasse das nicht zu, alte Pos zurueck
+        RestoreSavePos();
+        // Crsr bleibt an der alten Position
+        return sal_True;
+    }
+
+    // ACHTUNG: dieses kann nicht im TableMode geschehen !!
+    if( pPtNd )		// nur Point in Tabelle, dann gehe hinter/vor diese
+    {
         if( nsSwCursorSelOverFlags::SELOVER_CHANGEPOS & eFlags )
-		{
-			sal_Bool bSelTop = GetPoint()->nNode.GetIndex() <
-                    (( nsSwCursorSelOverFlags::SELOVER_TOGGLE & eFlags ) ? pSavePos->nNode
-												 : GetMark()->nNode.GetIndex());
+        {
+            sal_Bool bSelTop = GetPoint()->nNode.GetIndex() <
+                (( nsSwCursorSelOverFlags::SELOVER_TOGGLE & eFlags ) ? pSavePos->nNode
+                : GetMark()->nNode.GetIndex());
 
-			do {
-				// in Schleife fuer Tabelle hinter Tabelle
-				sal_uLong nSEIdx = pPtNd->EndOfSectionIndex();
-				sal_uLong nSttEndTbl = nSEIdx + 1; // dflt. Sel. nach unten
+            do {
+                // in Schleife fuer Tabelle hinter Tabelle
+                sal_uLong nSEIdx = pPtNd->EndOfSectionIndex();
+                sal_uLong nSttEndTbl = nSEIdx + 1; // dflt. Sel. nach unten
 
-				if( bSelTop )								// Sel. nach oben
-					nSttEndTbl = rNds[ nSEIdx ]->StartOfSectionIndex() - 1;
+                if( bSelTop )								// Sel. nach oben
+                    nSttEndTbl = rNds[ nSEIdx ]->StartOfSectionIndex() - 1;
 
-				GetPoint()->nNode = nSttEndTbl;
+                GetPoint()->nNode = nSttEndTbl;
                 const SwNode* pMyNd = GetNode();
 
                 if( pMyNd->IsSectionNode() || ( pMyNd->IsEndNode() &&
                     pMyNd->StartOfSectionNode()->IsSectionNode() ) )
-				{
-					// die lassen wir zu:
+                {
+                    // die lassen wir zu:
                     pMyNd = bSelTop
-						? rNds.GoPrevSection( &GetPoint()->nNode,sal_True,sal_False )
-						: rNds.GoNextSection( &GetPoint()->nNode,sal_True,sal_False );
+                        ? rNds.GoPrevSection( &GetPoint()->nNode,sal_True,sal_False )
+                        : rNds.GoNextSection( &GetPoint()->nNode,sal_True,sal_False );
 
                     /* #i12312# Handle failure of Go{Prev|Next}Section */
                     if ( 0 == pMyNd)
                         break;
 
                     if( 0 != ( pPtNd = pMyNd->FindTableNode() ))
-						continue;
-				}
+                        continue;
+                }
 
                 if( pMyNd->IsCntntNode() &&      // ist es ein ContentNode ??
-					::CheckNodesRange( GetMark()->nNode,
-									   GetPoint()->nNode, sal_True ))
-				{
+                    ::CheckNodesRange( GetMark()->nNode,
+                    GetPoint()->nNode, sal_True ))
+                {
                     // TABLE IN TABLE
                     const SwTableNode* pOuterTableNd = pMyNd->FindTableNode();
-					if ( pOuterTableNd )
+                    if ( pOuterTableNd )
                         pMyNd = pOuterTableNd;
                     else
                     {
                         SwCntntNode* pCNd = (SwCntntNode*)pMyNd;
-					    xub_StrLen nTmpPos = bSelTop ? pCNd->Len() : 0;
-					    GetPoint()->nContent.Assign( pCNd, nTmpPos );
-					    return sal_False;
+                        xub_StrLen nTmpPos = bSelTop ? pCNd->Len() : 0;
+                        GetPoint()->nContent.Assign( pCNd, nTmpPos );
+                        return sal_False;
                     }
-				}
-				if( bSelTop
+                }
+                if( bSelTop
                     ? ( !pMyNd->IsEndNode() || 0 == ( pPtNd = pMyNd->FindTableNode() ))
                     : 0 == ( pPtNd = pMyNd->GetTableNode() ))
-					break;
-			} while( sal_True );
-		}
+                    break;
+            } while( sal_True );
+        }
 
-		// dann verbleibe auf der alten Position
-		RestoreSavePos();
-		return sal_True;		// Crsr bleibt an der alten Position
-	}
-	return sal_False;		// was bleibt noch ??
+        // dann verbleibe auf der alten Position
+        RestoreSavePos();
+        return sal_True;		// Crsr bleibt an der alten Position
+    }
+
+    return sal_False;
 }
 
 #if defined( UNX )
@@ -1849,11 +1896,11 @@ sal_Bool SwCursor::UpDown( sal_Bool bUp, sal_uInt16 nCnt,
                     aPt.X() = pFrm->Frm().Left() + nUpDownX;
                 }
                 pFrm->GetCrsrOfst( GetPoint(), aPt, &eTmpState );
-			}
-			bRet = sal_True;
-		}
-		else
-			*GetPoint() = aOldPos;
+            }
+            bRet = !IsSelOvr( nsSwCursorSelOverFlags::SELOVER_TOGGLE | nsSwCursorSelOverFlags::SELOVER_CHANGEPOS );
+        }
+        else
+            *GetPoint() = aOldPos;
 
         DoSetBidiLevelUpDown(); // calculate cursor bidi level
     }
@@ -1870,8 +1917,10 @@ sal_Bool SwCursor::LeftRightMargin( sal_Bool bLeft, sal_Bool bAPI )
     if ( pFrm )
         SetCrsrBidiLevel( pFrm->IsRightToLeft() ? 1 : 0 );
 
-    return pFrm && (bLeft ? pFrm->LeftMargin( this ) :
-                            pFrm->RightMargin( this, bAPI ) );
+    SwCrsrSaveState aSave( *this );
+    return pFrm
+           && (bLeft ? pFrm->LeftMargin( this ) : pFrm->RightMargin( this, bAPI ) )
+           && !IsSelOvr( nsSwCursorSelOverFlags::SELOVER_TOGGLE | nsSwCursorSelOverFlags::SELOVER_CHANGEPOS );
 }
 
 sal_Bool SwCursor::IsAtLeftRightMargin( sal_Bool bLeft, sal_Bool bAPI ) const

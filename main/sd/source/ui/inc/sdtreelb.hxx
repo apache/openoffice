@@ -36,6 +36,8 @@
 #include <svl/urlbmk.hxx>
 #include <tools/ref.hxx>
 #include "sdxfer.hxx"
+#include <vector>
+using namespace std;
 #include <boost/scoped_ptr.hpp>
 #include <boost/function.hpp>
 
@@ -70,6 +72,8 @@ private:
 	
 	static sal_Bool  SD_DLLPRIVATE bIsInDrag;      // static, falls der Navigator im ExecuteDrag geloescht wird
 
+	//Solution: set contenttree in SdNavigatorWin
+    sal_Bool                           bisInSdNavigatorWin;
 public:
 
 	// nested class to implement the TransferableHelper
@@ -144,6 +148,9 @@ protected:
 	::sd::DrawDocShell* 		mpDropDocSh;
 	SdNavigatorWin*			mpDropNavWin;
 	SfxViewFrame*           mpFrame;
+	vector<String>			maTreeItem;
+	sal_Bool					mbSaveTreeItemState;
+	String					maSelectionEntryText;
 
 	// DragSourceHelper		
 	virtual void			StartDrag( sal_Int8 nAction, const Point& rPosPixel );
@@ -188,12 +195,16 @@ protected:
     
     using Window::GetDropTarget;
     virtual SvLBoxEntry* GetDropTarget (const Point& rLocation);
+	virtual void 	InitEntry(SvLBoxEntry*,const XubString&,const Image&,const Image&,SvLBoxButtonKind );
 
 public:
 							
 							SdPageObjsTLB( Window* pParent, const SdResId& rSdResId );
 							~SdPageObjsTLB();
-
+   // helper function for 	GetEntryAltText and GetEntryLongDescription
+    String			getAltLongDescText( SvLBoxEntry* pEntry , sal_Bool isAltText) const;
+    String  		GetEntryAltText( SvLBoxEntry* pEntry ) const;
+    String  		GetEntryLongDescription( SvLBoxEntry* pEntry ) const;
 	virtual void			SelectHdl();
 	virtual void			KeyInput( const KeyEvent& rKEvt );
 							
@@ -208,6 +219,14 @@ public:
 	sal_Bool					HasSelectedChilds( const String& rName );
 	sal_Bool					SelectEntry( const String& rName );
 	String					GetSelectEntry();
+	//Solution: Mark Current Entry
+	void                    MarkCurEntry( const String& rName );
+	void                    SetSdNavigatorWinFlag(sal_Bool isInSdNavigatorWin){bisInSdNavigatorWin =isInSdNavigatorWin;};
+	void                    FreshCurEntry();
+
+	void					Clear();
+	void					SetSaveTreeItemStateFlag(sal_Bool bState){mbSaveTreeItemState = bState;}
+	void					SaveExpandedTreeItemState(SvLBoxEntry* pEntry, vector<String>& vectTreeItem);
 	List*					GetSelectEntryList( sal_uInt16 nDepth );
 	SdDrawDocument*			GetBookmarkDoc(SfxMedium* pMedium = NULL);
 	::sd::DrawDocShell*			GetDropDocSh() { return(mpDropDocSh); }

@@ -103,6 +103,7 @@
 #include <unotools/fltrcfg.hxx>
 #include <svtools/htmlcfg.hxx>
 #include <sfx2/fcontnr.hxx>
+#include <sfx2/viewfrm.hxx>
 #include <sfx2/objface.hxx>
 #include <comphelper/storagehelper.hxx>
 
@@ -401,6 +402,20 @@ sal_Bool SwDocShell::SaveAs( SfxMedium& rMedium )
 {
 	RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "SW", "JP93722",  "SwDocShell::SaveAs" );
 
+	pDoc->setDocAccTitle(String());
+    SfxViewFrame* pFrame1 = SfxViewFrame::GetFirst( this );
+	if (pFrame1)
+	{
+		Window* pWindow = &pFrame1->GetWindow();
+		if ( pWindow )
+		{
+			Window* pSysWin = pWindow->GetSystemWindow();
+			if ( pSysWin )
+			{
+				pSysWin->SetAccessibleName(String());
+			}
+		}
+	}
 	SwWait aWait( *this, sal_True );
     //#i3370# remove quick help to prevent saving of autocorrection suggestions
     if(pView)
@@ -1266,6 +1281,41 @@ uno::Reference< frame::XController >
 /* -----------------------------12.02.01 12:08--------------------------------
 
  ---------------------------------------------------------------------------*/
+void SwDocShell::setDocAccTitle( const String& rTitle )
+{ 
+	if (pDoc ) 
+	{
+		pDoc->setDocAccTitle( rTitle );
+	}
+}
+const String SwDocShell::getDocAccTitle() const
+{
+	String sRet;
+	if  (pDoc)
+	{
+		sRet =  pDoc->getDocAccTitle(); 
+	}
+
+	return sRet;
+}
+
+void SwDocShell::setDocReadOnly( sal_Bool bReadOnly)
+{ 
+	if (pDoc ) 
+	{
+		pDoc->setDocReadOnly( bReadOnly );
+	}
+}
+sal_Bool SwDocShell::getDocReadOnly() const
+{
+	if  (pDoc)
+	{
+		return pDoc->getDocReadOnly(); 
+	}
+	
+	return sal_False;
+}
+
 static const char* s_EventNames[] =
 {
 	"OnPageCountChange",

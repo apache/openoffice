@@ -32,6 +32,9 @@
 #endif
 #include <accpreview.hxx>
 
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLESTATETYPE_HPP_
+#include <com/sun/star/accessibility/AccessibleStateType.hpp>
+#endif
 
 const sal_Char sServiceName[] = "com.sun.star.text.AccessibleTextDocumentPageView";
 const sal_Char sImplementationName[] = "com.sun.star.comp.Writer.SwAccessibleDocumentPageView";
@@ -54,7 +57,7 @@ using ::rtl::OUString;
 SwAccessiblePreview::SwAccessiblePreview( SwAccessibleMap *pMp ) :
     SwAccessibleDocumentBase( pMp )
 {
-	SetName( GetResource( STR_ACCESS_DOC_NAME ) );
+	SetName( GetResource( STR_ACCESS_PREVIEW_DOC_NAME ) );
 }
 
 SwAccessiblePreview::~SwAccessiblePreview()
@@ -97,4 +100,20 @@ Sequence< sal_Int8 > SAL_CALL SwAccessiblePreview::getImplementationId()
         bInit = sal_True;
     }
     return aId;
+}
+OUString SAL_CALL SwAccessiblePreview::getAccessibleDescription (void) throw (com::sun::star::uno::RuntimeException)
+{
+	return GetResource( STR_ACCESS_PREVIEW_DOC_NAME );
+}
+
+OUString SAL_CALL SwAccessiblePreview::getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException)
+{
+	OUString sName = SwAccessibleDocumentBase::getAccessibleName();
+	sName += OUString::createFromAscii(" ");
+	sName += GetResource( STR_ACCESS_PREVIEW_DOC_SUFFIX );
+	return sName;
+}
+void SwAccessiblePreview::_InvalidateFocus()
+{
+	FireStateChangedEvent( ::com::sun::star::accessibility::AccessibleStateType::FOCUSED, sal_True );
 }

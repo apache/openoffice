@@ -140,6 +140,7 @@ sal_Bool __EXPORT EditSpellWrapper::SpellMore()
 	if ( pSpellInfo->bMultipleDoc )
 	{
 		bMore = pImpEE->GetEditEnginePtr()->SpellNextDocument();
+		SetCurTextObj( pImpEE->GetEditEnginePtr()->GetCurTextObj() );
 		if ( bMore )
 		{
 			// Der Text wurde in diese Engine getreten, bei Rueckwaerts

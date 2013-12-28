@@ -26,7 +26,16 @@
 #include "acccontext.hxx"
 #endif
 #include <com/sun/star/accessibility/XAccessibleSelection.hpp>
+#include <com/sun/star/document/XEventListener.hpp>
 #include <accselectionhelper.hxx>
+
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_XAccessibleExtendedAttributes_HPP_
+#include <com/sun/star/accessibility/XAccessibleExtendedAttributes.hpp>
+#endif
+
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLEGETACCFLOWTO_HPP_
+#include <com/sun/star/accessibility/XAccessibleGetAccFlowTo.hpp>
+#endif
 
 class VclSimpleEvent;
 
@@ -81,6 +90,7 @@ public:
     ///	Return this object's description.
 	virtual ::rtl::OUString SAL_CALL
     	getAccessibleDescription (void) throw (com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException);
 
 	//=====  XAccessibleComponent  ==============================================
     virtual sal_Bool SAL_CALL containsPoint(
@@ -111,7 +121,10 @@ public:
  * access to an accessible Writer document
  */
 class SwAccessibleDocument : public	SwAccessibleDocumentBase,
-                             public com::sun::star::accessibility::XAccessibleSelection
+                             public com::sun::star::accessibility::XAccessibleSelection,
+                             public com::sun::star::document::XEventListener,
+							 public com::sun::star::accessibility::XAccessibleExtendedAttributes,
+							 public com::sun::star::accessibility::XAccessibleGetAccFlowTo
 {
     // Implementation for XAccessibleSelection interface
     SwAccessibleSelectionHelper maSelectionHelper;
@@ -129,6 +142,11 @@ public:
     SwAccessibleDocument( SwAccessibleMap* pInitMap );
 
 	DECL_LINK( WindowChildEventListener, VclSimpleEvent* );
+	//=====  XEventListener====================================================
+	virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event ) 
+			throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Event ) 
+			throw (::com::sun::star::uno::RuntimeException);
 
 	//=====  XServiceInfo  ====================================================
 
@@ -199,10 +217,21 @@ public:
         throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
                 ::com::sun::star::uno::RuntimeException );
 
+    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() 
+		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
 	//====== thread safe C++ interface ========================================
 
 	// The object is not visible an longer and should be destroyed
 	virtual void Dispose( sal_Bool bRecursive = sal_False );
+
+	//=====  XAccessibleComponent  ============================================
+	sal_Int32 SAL_CALL getBackground() 
+		throw (::com::sun::star::uno::RuntimeException);
+
+	//=====  XAccessibleGetAccFlowTo  ============================================
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
+		SAL_CALL get_AccFlowTo(const ::com::sun::star::uno::Any& rAny, sal_Int32 nType)
+		throw ( ::com::sun::star::uno::RuntimeException );
 };
 
 #endif

@@ -528,6 +528,10 @@ namespace svt { namespace table
             It is legitimate to return <NULL/> here, in this case, the table model does not support sorting.
         */
         virtual ITableDataSort* getSortAdapter() = 0;
+        
+        /** returns enabled state.
+        */
+        virtual bool isEnabled() const = 0;
 
         /// destroys the table model instance
         virtual ~ITableModel() { }

@@ -219,8 +219,12 @@ public:
     */
     sal_Int32 getLength() const SAL_THROW(()) { return pData->length; }
 
+private:
     /**
       Returns a pointer to the characters of this string.
+
+      NOTE: the implicit cast to a char pointer is obsolete
+            because it is too dangerous #i123068#
 
       <p>The returned pointer is not guaranteed to point to a null-terminated
       byte string.  Note that this string object may contain embedded null
@@ -231,6 +235,13 @@ public:
       representing the characters of this string object.
     */
     operator const sal_Char *() const SAL_THROW(()) { return pData->buffer; }
+public:
+    /** Returns a reference to a character of this string. */
+    sal_Char& operator[]( int n ) { return pData->buffer[n]; }
+    /** Returns a const reference to a character of this string. */
+    const sal_Char& operator[]( int n ) const { return pData->buffer[n]; }
+    /** Returns a bool indicating whether this string is empty. */
+    bool isEmpty() const { return (pData->length == 0); }
 
     /**
       Returns a pointer to the characters of this string.
@@ -419,7 +430,7 @@ public:
 
       @return   a hash code value for this object.
 
-      @see rtl::OStringHash for convenient use of STLPort's hash_map
+      @see rtl::OStringHash for convenient use of hash_map / unordered_map
     */
     sal_Int32 hashCode() const SAL_THROW(())
     {
@@ -911,7 +922,7 @@ public:
 /** A helper to use OStrings with hash maps.
 
     Instances of this class are unary function objects that can be used as
-    hash function arguments to STLPort's hash_map and similar constructs.
+    hash function arguments to unordered_map, hash_map and similar constructs.
  */
 struct OStringHash
 {
@@ -953,6 +964,12 @@ struct CStringHash
 };
 
 } /* Namespace */
+
+/* Helper methods to support OString messages in OSL_ENSURE, DBG_ERROR, DBG_WARN, DBG_TRACE, etc. */
+inline sal_Bool SAL_CALL osl_assertFailedLine( const sal_Char* pszFileName, sal_Int32 nLine, const ::rtl::OString& rMessage)
+	{ return osl_assertFailedLine( pszFileName, nLine, rMessage.getStr()); }
+inline void DbgOut( const rtl::OString& rMessage, sal_uInt16 nOutType, const sal_Char* pFileName, sal_uInt16 nLineNum )
+	{ DbgOut( rMessage.getStr(), nOutType, pFileName, nLineNum); }
 
 #endif /* __cplusplus */
 

@@ -29,31 +29,77 @@ use installer::exiter;
 use installer::globals;
 use installer::remover;
 use installer::ziplist;
+use Digest::MD5;
 
-#############################################################################
-# Analyzing the laguage list parameter and language list from zip list file
-#############################################################################
+use strict;
 
-sub analyze_languagelist
-{	
-	my $first = $installer::globals::languagelist;
-	
-	$first =~ s/\_/\,/g;	# substituting "_" by ",", in case of dmake definition 01_49
 
-	# Products are separated by a "#", if defined in zip-list by a "|". But "get_info_about_languages" 
-	# substitutes already "|" to "#". This procedure only knows "#" as product separator.
-	# Different languages for one product are separated by ",". But on the command line the "_" is used.
-	# Therefore "_" is replaced by "," at the beginning of this procedure.
-	
-	while ($first =~ /^(\S+)\#(\S+?)$/)	# Minimal matching, to keep the order of languages
-	{
-		$first = $1;
-		my $last = $2;	
-		unshift(@installer::globals::languageproducts, $last);
-	}	
+=head2 analyze_languagelist()
 
-	unshift(@installer::globals::languageproducts, $first);
+    Convert $installer::globals::languagelist into $installer::globals::languageproduct.
+
+    That is now just a replacement of '_' with ','.
+
+    $installer::globals::languageproduct (specified by the -l option
+    on the command line) can contain multiple languages separated by
+    '_' to specify multilingual builds.
+
+    Separation by '#' to build multiple languages (single or
+    multilingual) in one make_installer.pl run is not supported
+    anymore.  Call make_installer.pl with all languages separately instead:
+    make_installer.pl -l L1#L2
+    ->
+    make_installer.pl -l L1
+    make_installer.pl -l L2
+
+=cut
+sub analyze_languagelist()
+{   
+    my $languageproduct = $installer::globals::languagelist;
+
+    $languageproduct =~ s/\_/\,/g;  # substituting "_" by ",", in case of dmake definition 01_49
+
+    if ($languageproduct =~ /\#/)
+    {
+        installer::exiter::exit_program(
+            "building more than one language (or language set) is not supported anymore\n"
+            ."please replace one call of 'make_installer.pl -l language1#language2'\n"
+            ."with two calls 'make_installer.pl -l language1' and 'make_installer.pl -l language2'",
+            "installer::language::analyze_languagelist");
+    }
+
+    $installer::globals::languageproduct = $languageproduct;
 }
+
+
+
+
+=head2 get_language_directory_name ($language_string)
+
+    Create a directory name that contains the given set of languages.
+    When $language_string exceeds a certain length then it is shortened.
+
+=cut
+sub get_language_directory_name ($)
+{
+    my ($language_string) = @_;
+
+    if (length($language_string) > $installer::globals::max_lang_length)
+	{
+		my $number_of_languages = ($language_string =~ tr/_//);
+        my $digest = new Digest::MD5();
+        $digest->add($language_string);
+        my $short_digest = substr($digest->hexdigest(), 0, 8);
+		return "lang_" . $number_of_languages . "_id_" . $short_digest;
+	}
+    else
+    {
+        return $language_string;
+    }
+}
+
+
+
 
 ####################################################
 # Reading languages from zip list file
@@ -107,28 +153,24 @@ sub all_elements_of_array1_in_array2
 #############################################
 # All languages defined for one product
 #############################################
- 
-sub get_all_languages_for_one_product
+
+=head2 get_all_languages_for_one_product($languagestring, $allvariables)
+
+    $languagestring can be one or more language names, separated by ','.
+
+    $installer::globals::ismultilingual is set to 1 when $languagestring contains more than one languages.
+    
+=cut
+sub get_all_languages_for_one_product ($$)
 {
 	my ( $languagestring, $allvariables ) = @_;
 	
-	my @languagearray = ();
 
-	my $last = $languagestring;
-	
-	$installer::globals::ismultilingual = 0;		# setting the global variable $ismultilingual !
-	if ( $languagestring =~ /\,/ ) { $installer::globals::ismultilingual = 1; }
-	
-	while ( $last =~ /^\s*(.+?)\,(.+)\s*$/)	# "$" for minimal matching, comma separated list
-	{
-		my $first = $1;
-		$last = $2;
-		installer::remover::remove_leading_and_ending_whitespaces(\$first);
-		push(@languagearray, "$first");
-	}	
+	$installer::globals::ismultilingual = ($languagestring =~ /\,/ ) ? 1 : 0;
 
-	installer::remover::remove_leading_and_ending_whitespaces(\$last);
-	push(@languagearray, "$last");	
+	my $languages = $languagestring;
+    $languages =~ s/\s+//g;
+	my @languagearray = split(/,/, $languages);
 
 	if ( $installer::globals::iswindowsbuild )
 	{
@@ -366,10 +408,101 @@ sub get_java_language
 	#	$javalanguage =~ s/\-/\_/;	
 	# }
 
-	$javalanguage = $language;
+	my $javalanguage = $language;
 	$javalanguage =~ s/\-/\_/;	
 
 	return $javalanguage;
+}
+
+
+
+=head2 get_key_language ($languages)
+
+    Determine the key language from the array of @$languages.
+
+    If there is only one language then that is the key language.
+
+    If there are two languages and one is en-US and was automatically
+    added, then the other language is the key language.
+
+    When there is more than one language and the case above does not
+    apply then return either 'multiasia' or 'multiwestern' as key
+    language, depending on whether one of the asian language parts
+    'jp', 'ko', 'zh' appear.
+
+=cut
+sub get_key_language ($)
+{
+    my ($languages) = @_;
+
+    my $language_count = scalar @$languages;
+    
+    if ($language_count == 1)
+    {
+        return $languages->[0];
+    }
+    else
+    {
+		if ($installer::globals::added_english && $language_count==1)
+		{
+            # Only multilingual because of added English.
+			return $languages->[1];
+		}
+		else
+		{
+			if ($languages->[1] =~ /(jp|ko|zh)/)
+			{
+				return "multiasia";
+			}
+			else
+			{
+				return "multiwestern";
+			}
+		}
+	}
+}
+
+
+
+
+=head2 get_normalized_language ($language)
+
+    Transform "..._<language>" into "<language>".
+    The ... part, if it exists, is typically en-US.
+
+    If $language does not contain a '_' then $language is returned unmodified.
+
+=cut
+sub get_normalized_language ($)
+{
+    my ($language) = @_;
+
+    if (ref($language) eq "ARRAY")
+    {
+        if (scalar @$language > 1)
+        {
+            if ($language->[0] eq "en-US")
+            {
+                return $language->[1];
+            }
+            else
+            {
+                return $language->[0];
+            }
+        }
+        else
+        {
+            return join("_", @$language);
+        }
+    }
+    elsif ($language =~ /^.*?_(.*)$/)
+    {
+        return $1;
+    }
+    else
+    {
+        return $language;
+    }
 }
 
 1;

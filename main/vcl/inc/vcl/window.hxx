@@ -629,6 +629,9 @@ public:
     virtual void        DataChanged( const DataChangedEvent& rDCEvt );
     virtual long        PreNotify( NotifyEvent& rNEvt );
     virtual long        Notify( NotifyEvent& rNEvt );
+    virtual void        NotifyVCLEvent( sal_uLong nEvent ,void* pData = NULL);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > > GetAccFlowToSequence();
+	virtual void SwitchView() {}
     virtual Window*     GetPreferredKeyInputWindow();
 
     /*virtual*/ void    AddEventListener( const Link& rEventListener );

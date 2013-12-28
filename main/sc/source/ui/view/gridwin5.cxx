@@ -58,6 +58,7 @@
 #include "tabvwsh.hxx"
 #include "userdat.hxx"
 #include "postit.hxx"
+#include <vcl/svapp.hxx>
 
 // -----------------------------------------------------------------------
 
@@ -423,13 +424,32 @@ void ScGridWindow::HideNoteMarker()
 com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
 	ScGridWindow::CreateAccessible()
 {
+	com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > xAcc= GetAccessible(sal_False);
+	if (xAcc.is())
+	{
+		return xAcc;
+	}
 	ScAccessibleDocument* pAccessibleDocument =
 		new ScAccessibleDocument(GetAccessibleParentWindow()->GetAccessible(),
 			pViewData->GetViewShell(), eWhich);
-
-	com::sun::star::uno::Reference < ::com::sun::star::accessibility::XAccessible > xAccessible = pAccessibleDocument;
+	xAcc = pAccessibleDocument;
+	SetAccessible(xAcc);
 
 	pAccessibleDocument->Init();
-
-	return xAccessible;
+	return xAcc;
 }
+// MT: Removed Windows::SwitchView() introduced with IA2 CWS.
+// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+void ScGridWindow::SwitchView()
+{
+	if (!Application::IsAccessibilityEnabled())
+	{
+		return ;
+	}
+	ScAccessibleDocumentBase* pAccDoc = static_cast<ScAccessibleDocumentBase*>(GetAccessible(sal_False).get());
+	if (pAccDoc)
+	{
+		pAccDoc->SwitchViewFireFocus();
+	}		
+}
+

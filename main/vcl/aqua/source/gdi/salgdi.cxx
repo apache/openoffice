@@ -338,7 +338,7 @@ void AquaSalGraphics::updateResolution()
 {
     DBG_ASSERT( mbWindow, "updateResolution on inappropriate graphics" );
 
-    initResolution( (mbWindow && mpFrame) ?  mpFrame->mpWindow : nil );
+    initResolution( (mbWindow && mpFrame) ? mpFrame->getNSWindow() : nil );
 }
 
 void AquaSalGraphics::initResolution( NSWindow* )
@@ -430,19 +430,19 @@ void AquaSalGraphics::initResolution( NSWindow* )
     mfFakeDPIScale = 1.0;
 }
 
-void AquaSalGraphics::GetResolution( long& rDPIX, long& rDPIY )
+void AquaSalGraphics::GetResolution( sal_Int32& rDPIX, sal_Int32& rDPIY )
 {
     if( !mnRealDPIY )
-        initResolution( (mbWindow && mpFrame) ? mpFrame->mpWindow : nil );
+        initResolution( (mbWindow && mpFrame) ? mpFrame->getNSWindow() : nil );
 
-    rDPIX = static_cast<long>(mfFakeDPIScale * mnRealDPIX);
-    rDPIY = static_cast<long>(mfFakeDPIScale * mnRealDPIY);
+    rDPIX = lrint( mfFakeDPIScale * mnRealDPIX);
+    rDPIY = lrint( mfFakeDPIScale * mnRealDPIY);
 } 
 
 void AquaSalGraphics::copyResolution( AquaSalGraphics& rGraphics )
 {
 	if( !rGraphics.mnRealDPIY && rGraphics.mbWindow && rGraphics.mpFrame )
-		rGraphics.initResolution( rGraphics.mpFrame->mpWindow );
+		rGraphics.initResolution( rGraphics.mpFrame->getNSWindow() );
 
 	mnRealDPIX = rGraphics.mnRealDPIX;
 	mnRealDPIY = rGraphics.mnRealDPIY;
@@ -592,7 +592,7 @@ bool AquaSalGraphics::setClipRegion( const Region& i_rClip )
 
                 if(nH)
                 {
-                    CGRect aRect = {{ aRectIter->Left(), aRectIter->Top() }, { nW, nH }};
+                    const CGRect aRect = CGRectMake( aRectIter->Left(), aRectIter->Top(), nW, nH);
                     CGPathAddRect( mxClipPath, NULL, aRect );
                 }
             }
@@ -676,7 +676,7 @@ void AquaSalGraphics::ImplDrawPixel( long nX, long nY, const RGBAColor& rColor )
 	// overwrite the fill color
 	CGContextSetFillColor( mrContext, rColor.AsArray() );
 	// draw 1x1 rect, there is no pixel drawing in Quartz
-	CGRect aDstRect = {{nX,nY,},{1,1}};
+	const CGRect aDstRect = CGRectMake( nX, nY, 1, 1);
 	CGContextFillRect( mrContext, aDstRect );
     RefreshRect( aDstRect );
     // reset the fill color
@@ -744,13 +744,13 @@ void AquaSalGraphics::drawRect( long nX, long nY, long nWidth, long nHeight )
 
 // -----------------------------------------------------------------------
 
-static void getBoundRect( sal_uLong nPoints, const SalPoint *pPtAry, long &rX, long& rY, long& rWidth, long& rHeight )
+static void getBoundRect( sal_uInt32 nPoints, const SalPoint* pPtAry, long &rX, long& rY, long& rWidth, long& rHeight )
 {
     long nX1 = pPtAry->mnX;
     long nX2 = nX1;
     long nY1 = pPtAry->mnY;
     long nY2 = nY1;
-    for( sal_uLong n = 1; n < nPoints; n++ )
+    for( sal_uInt32 n = 1; n < nPoints; ++n )
     {
         if( pPtAry[n].mnX < nX1 )
             nX1 = pPtAry[n].mnX;
@@ -774,7 +774,7 @@ static inline void alignLinePoint( const SalPoint* i_pIn, float& o_fX, float& o_
     o_fY = static_cast<float>(i_pIn->mnY ) + 0.5;
 }
 
-void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
+void AquaSalGraphics::drawPolyLine( sal_uInt32 nPoints, const SalPoint* pPtAry )
 {
 	if( nPoints < 1 )
 		return;
@@ -790,7 +790,7 @@ void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
 	alignLinePoint( pPtAry, fX, fY );
 	CGContextMoveToPoint( mrContext, fX, fY );
 	pPtAry++;
-	for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	{
 	    alignLinePoint( pPtAry, fX, fY );
 	    CGContextAddLineToPoint( mrContext, fX, fY );
@@ -802,7 +802,7 @@ void AquaSalGraphics::drawPolyLine( sal_uLong nPoints, const SalPoint *pPtAry )
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
+void AquaSalGraphics::drawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry )
 {
 	if( nPoints <= 1 )
 		return;
@@ -830,7 +830,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
         alignLinePoint( pPtAry, fX, fY );
         CGContextMoveToPoint( mrContext, fX, fY );
         pPtAry++;
-        for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+        for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
         {
             alignLinePoint( pPtAry, fX, fY );
             CGContextAddLineToPoint( mrContext, fX, fY );
@@ -840,7 +840,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
     {
         CGContextMoveToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
         pPtAry++;
-        for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+        for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
             CGContextAddLineToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
     }
 
@@ -850,7 +850,7 @@ void AquaSalGraphics::drawPolygon( sal_uLong nPoints, const SalPoint *pPtAry )
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::drawPolyPolygon( sal_uLong nPolyCount, const sal_uLong *pPoints, PCONSTSALPOINT  *ppPtAry )
+void AquaSalGraphics::drawPolyPolygon( sal_uInt32 nPolyCount, const sal_uInt32* pPoints, PCONSTSALPOINT* ppPtAry )
 {
     if( nPolyCount <= 0 )
 		return;
@@ -897,7 +897,7 @@ void AquaSalGraphics::drawPolyPolygon( sal_uLong nPolyCount, const sal_uLong *pP
 	{
 	    for( sal_uLong nPoly = 0; nPoly < nPolyCount; nPoly++ )
 	    {
-	        const sal_uLong nPoints = pPoints[nPoly];
+	        const sal_uInt32 nPoints = pPoints[nPoly];
 	        if( nPoints > 1 )
 	        {
 	            const SalPoint *pPtAry = ppPtAry[nPoly];
@@ -905,7 +905,7 @@ void AquaSalGraphics::drawPolyPolygon( sal_uLong nPolyCount, const sal_uLong *pP
 	            alignLinePoint( pPtAry, fX, fY );
 	            CGContextMoveToPoint( mrContext, fX, fY );
 	            pPtAry++;
-	            for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	            for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	            {
 	                alignLinePoint( pPtAry, fX, fY );
 	                CGContextAddLineToPoint( mrContext, fX, fY );
@@ -918,13 +918,13 @@ void AquaSalGraphics::drawPolyPolygon( sal_uLong nPolyCount, const sal_uLong *pP
 	{
 	    for( sal_uLong nPoly = 0; nPoly < nPolyCount; nPoly++ )
 	    {
-	        const sal_uLong nPoints = pPoints[nPoly];
+	        const sal_uInt32 nPoints = pPoints[nPoly];
 	        if( nPoints > 1 )
 	        {
 	            const SalPoint *pPtAry = ppPtAry[nPoly];
 	            CGContextMoveToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
 	            pPtAry++;
-	            for( sal_uLong nPoint = 1; nPoint < nPoints; nPoint++, pPtAry++ )
+	            for( sal_uInt32 nPoint = 1; nPoint < nPoints; ++nPoint, ++pPtAry )
 	                CGContextAddLineToPoint( mrContext, pPtAry->mnX, pPtAry->mnY );
 	            CGContextClosePath(mrContext);
 	        }
@@ -1074,21 +1074,21 @@ bool AquaSalGraphics::drawPolyLine(
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::drawPolyLineBezier( sal_uLong, const SalPoint*, const sal_uInt8* )
+sal_Bool AquaSalGraphics::drawPolyLineBezier( sal_uInt32, const SalPoint*, const sal_uInt8* )
 {
     return sal_False;
 }
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::drawPolygonBezier( sal_uLong, const SalPoint*, const sal_uInt8* )
+sal_Bool AquaSalGraphics::drawPolygonBezier( sal_uInt32, const SalPoint*, const sal_uInt8* )
 {
     return sal_False;
 }
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::drawPolyPolygonBezier( sal_uLong, const sal_uLong*,
+sal_Bool AquaSalGraphics::drawPolyPolygonBezier( sal_uInt32, const sal_uInt32*,
                                              const SalPoint* const*, const sal_uInt8* const* )
 {
     return sal_False;
@@ -1133,7 +1133,7 @@ void AquaSalGraphics::copyBits( const SalTwoRect& rPosAry, SalGraphics *pSrcGrap
 
 	DBG_ASSERT( pSrc->mxLayer!=NULL, "AquaSalGraphics::copyBits() from non-layered graphics" );
 
-	const CGPoint aDstPoint = { +rPosAry.mnDestX - rPosAry.mnSrcX, rPosAry.mnDestY - rPosAry.mnSrcY };
+	const CGPoint aDstPoint = CGPointMake( +rPosAry.mnDestX - rPosAry.mnSrcX, rPosAry.mnDestY - rPosAry.mnSrcY);
 	if( (rPosAry.mnSrcWidth == rPosAry.mnDestWidth && rPosAry.mnSrcHeight == rPosAry.mnDestHeight) &&
 	    (!mnBitmapDepth || (aDstPoint.x + pSrc->mnWidth) <= mnWidth) ) // workaround a Quartz crasher
     {
@@ -1145,7 +1145,7 @@ void AquaSalGraphics::copyBits( const SalTwoRect& rPosAry, SalGraphics *pSrcGrap
 			    xCopyContext = mpXorEmulation->GetTargetContext();
 
 	    CGContextSaveGState( xCopyContext );
-	    const CGRect aDstRect = { {rPosAry.mnDestX, rPosAry.mnDestY}, {rPosAry.mnDestWidth, rPosAry.mnDestHeight} };
+	    const CGRect aDstRect = CGRectMake( rPosAry.mnDestX, rPosAry.mnDestY, rPosAry.mnDestWidth, rPosAry.mnDestHeight);
 	    CGContextClipToRect( xCopyContext, aDstRect );
 
 	    // draw at new destination
@@ -1211,10 +1211,10 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 	CGLayerRef xSrcLayer = mxLayer;
 	// TODO: if( mnBitmapDepth > 0 )
 	{
-		const CGSize aSrcSize = { nSrcWidth, nSrcHeight };
+		const CGSize aSrcSize = CGSizeMake( nSrcWidth, nSrcHeight);
 		xSrcLayer = ::CGLayerCreateWithContext( xCopyContext, aSrcSize, NULL );
 		const CGContextRef xSrcContext = CGLayerGetContext( xSrcLayer );
-		CGPoint aSrcPoint = { -nSrcX, -nSrcY };
+		CGPoint aSrcPoint = CGPointMake( -nSrcX, -nSrcY);
 		if( IsFlipped() )
 		{
 			::CGContextTranslateCTM( xSrcContext, 0, +nSrcHeight );
@@ -1225,7 +1225,7 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 	}
 
 	// draw at new destination
-	const CGPoint aDstPoint = { +nDstX, +nDstY };
+	const CGPoint aDstPoint = CGPointMake( +nDstX, +nDstY);
 	::CGContextDrawLayerAtPoint( xCopyContext, aDstPoint, xSrcLayer );
 
 	// cleanup
@@ -1249,7 +1249,7 @@ void AquaSalGraphics::drawBitmap( const SalTwoRect& rPosAry, const SalBitmap& rS
 	if( !xImage )
 		return;
 
-	const CGRect aDstRect = {{rPosAry.mnDestX, rPosAry.mnDestY}, {rPosAry.mnDestWidth, rPosAry.mnDestHeight}};
+	const CGRect aDstRect = CGRectMake( rPosAry.mnDestX, rPosAry.mnDestY, rPosAry.mnDestWidth, rPosAry.mnDestHeight);
 	CGContextDrawImage( mrContext, aDstRect, xImage );
 	CGImageRelease( xImage );
 	RefreshRect( aDstRect );
@@ -1259,7 +1259,7 @@ void AquaSalGraphics::drawBitmap( const SalTwoRect& rPosAry, const SalBitmap& rS
 
 void AquaSalGraphics::drawBitmap( const SalTwoRect& rPosAry, const SalBitmap& rSalBitmap,SalColor )
 {
-	DBG_ERROR("not implemented for color masking!");
+	DBG_ERROR( "not implemented for color masking!");
 	drawBitmap( rPosAry, rSalBitmap );
 }
 
@@ -1276,7 +1276,7 @@ void AquaSalGraphics::drawBitmap( const SalTwoRect& rPosAry, const SalBitmap& rS
 	if( !xMaskedImage )
 		return;
 
-	const CGRect aDstRect = {{rPosAry.mnDestX, rPosAry.mnDestY}, {rPosAry.mnDestWidth, rPosAry.mnDestHeight}};
+	const CGRect aDstRect = CGRectMake( rPosAry.mnDestX, rPosAry.mnDestY, rPosAry.mnDestWidth, rPosAry.mnDestHeight);
 	CGContextDrawImage( mrContext, aDstRect, xMaskedImage );
 	CGImageRelease( xMaskedImage );
 	RefreshRect( aDstRect );
@@ -1294,7 +1294,7 @@ void AquaSalGraphics::drawMask( const SalTwoRect& rPosAry, const SalBitmap& rSal
 	if( !xImage )
 		return;
 
-	const CGRect aDstRect = {{rPosAry.mnDestX, rPosAry.mnDestY}, {rPosAry.mnDestWidth, rPosAry.mnDestHeight}};
+	const CGRect aDstRect = CGRectMake( rPosAry.mnDestX, rPosAry.mnDestY, rPosAry.mnDestWidth, rPosAry.mnDestHeight);
 	CGContextDrawImage( mrContext, aDstRect, xImage );
 	CGImageRelease( xImage );
 	RefreshRect( aDstRect );
@@ -1348,7 +1348,7 @@ SalColor AquaSalGraphics::getPixel( long nX, long nY )
 	// copy the requested pixel into the bitmap context
 	if( IsFlipped() )
 		nY = mnHeight - nY;
-	const CGPoint aCGPoint = {-nX, -nY};
+	const CGPoint aCGPoint = CGPointMake( -nX, -nY);
 	CGContextDrawLayerAtPoint( xOnePixelContext, aCGPoint, mxLayer );
 	CGContextRelease( xOnePixelContext );
 
@@ -1419,7 +1419,7 @@ void AquaSalGraphics::invert( long nX, long nY, long nWidth, long nHeight, SalIn
 
 // -----------------------------------------------------------------------
 
-void AquaSalGraphics::invert( sal_uLong nPoints, const SalPoint*  pPtAry, SalInvert nSalFlags )
+void AquaSalGraphics::invert( sal_uInt32 nPoints, const SalPoint* pPtAry, SalInvert nSalFlags )
 {
     CGPoint* CGpoints ;
     if ( CheckContext() )
@@ -1485,7 +1485,7 @@ sal_Bool AquaSalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight,
 	[NSGraphicsContext setCurrentContext: pDrawNSCtx];
 	
 	// draw the EPS
-	const NSRect aDstRect = {{nX,nY},{nWidth,nHeight}};
+	const NSRect aDstRect = NSMakeRect( nX, nY, nWidth, nHeight);
 	const BOOL bOK = [xEpsImage drawInRect: aDstRect];
 
 	// restore the NSGraphicsContext
@@ -1521,7 +1521,7 @@ bool AquaSalGraphics::drawAlphaBitmap( const SalTwoRect& rTR,
 
     if ( CheckContext() )
     {
-		const CGRect aDstRect = {{rTR.mnDestX, rTR.mnDestY}, {rTR.mnDestWidth, rTR.mnDestHeight}};
+		const CGRect aDstRect = CGRectMake( rTR.mnDestX, rTR.mnDestY, rTR.mnDestWidth, rTR.mnDestHeight);
 		CGContextDrawImage( mrContext, aDstRect, xMaskedImage );
 		RefreshRect( aDstRect );
     }
@@ -1562,7 +1562,7 @@ bool AquaSalGraphics::drawTransformedBitmap(
 	CGContextConcatCTM( mrContext, aCGMat );
 
 	// draw the transformed image
-	const CGRect aSrcRect = {{0,0}, {aSize.Width(), aSize.Height()}};
+	const CGRect aSrcRect = CGRectMake( 0, 0, aSize.Width(), aSize.Height());
 	CGContextDrawImage( mrContext, aSrcRect, xImage );
 	CGImageRelease( xImage );
 	// restore the Quartz graphics state
@@ -1578,14 +1578,14 @@ bool AquaSalGraphics::drawTransformedBitmap(
 bool AquaSalGraphics::drawAlphaRect( long nX, long nY, long nWidth,
                                      long nHeight, sal_uInt8 nTransparency )
 {
-    if( !CheckContext() )
-    	return true;
+	if( !CheckContext() )
+		return true;
     	
 	// save the current state
 	CGContextSaveGState( mrContext );
 	CGContextSetAlpha( mrContext, (100-nTransparency) * (1.0/100) ); 
 
-	CGRect aRect = {{nX,nY},{nWidth-1,nHeight-1}};
+	CGRect aRect = CGRectMake( nX, nY, nWidth-1, nHeight-1);
 	if( IsPenVisible() )
 	{
 		aRect.origin.x += 0.5;
@@ -1852,7 +1852,7 @@ static OSStatus GgoMoveToProc( const Float32Point* pPoint, void* pData )
 	return eStatus;
 }
 
-sal_Bool AquaSalGraphics::GetGlyphOutline( long nGlyphId, basegfx::B2DPolyPolygon& rPolyPoly )
+bool AquaSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId, basegfx::B2DPolyPolygon& rPolyPoly )
 {
 	GgoData aGgoData;
 	aGgoData.mpPolyPoly = &rPolyPoly;
@@ -1860,7 +1860,7 @@ sal_Bool AquaSalGraphics::GetGlyphOutline( long nGlyphId, basegfx::B2DPolyPolygo
 
 	ATSUStyle rATSUStyle = maATSUStyle;	// TODO: handle glyph fallback when CWS pdffix02 is integrated
 	OSStatus eGgoStatus = noErr;
-	OSStatus eStatus = ATSUGlyphGetCubicPaths( rATSUStyle, nGlyphId,
+	OSStatus eStatus = ATSUGlyphGetCubicPaths( rATSUStyle, aGlyphId,
 		GgoMoveToProc, GgoLineToProc, GgoCurveToProc, GgoClosePathProc,
 		&aGgoData, &eGgoStatus );
 	if( (eStatus != noErr) ) // TODO: why is (eGgoStatus!=noErr) when curves are involved?
@@ -1894,13 +1894,13 @@ long AquaSalGraphics::GetGraphicsWidth() const
 
 // -----------------------------------------------------------------------
 
-sal_Bool AquaSalGraphics::GetGlyphBoundRect( long nGlyphId, Rectangle& rRect )
+bool AquaSalGraphics::GetGlyphBoundRect( sal_GlyphId aGlyphId, Rectangle& rRect )
 {
 	ATSUStyle rATSUStyle = maATSUStyle;	// TODO: handle glyph fallback
-	GlyphID aGlyphId = nGlyphId;
 	ATSGlyphScreenMetrics aGlyphMetrics;
+	GlyphID nAtsGlyphId = aGlyphId;
 	OSStatus eStatus = ATSUGlyphGetScreenMetrics( rATSUStyle,
-		1, &aGlyphId, 0, FALSE, !mbNonAntialiasedText, &aGlyphMetrics );
+		1, &nAtsGlyphId, 0, FALSE, !mbNonAntialiasedText, &aGlyphMetrics );
 	if( eStatus != noErr )
 		return false;
 
@@ -2248,7 +2248,7 @@ static bool GetRawFontData( const ImplFontData* pFontData,
 }
 
 sal_Bool AquaSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
-	const ImplFontData* pFontData, long* pGlyphIDs, sal_uInt8* pEncoding,
+	const ImplFontData* pFontData, sal_GlyphId* pGlyphIds, sal_uInt8* pEncoding,
 	sal_Int32* pGlyphWidths, int nGlyphCount, FontSubsetInfo& rInfo )
 {
 	// TODO: move more of the functionality here into the generic subsetter code
@@ -2278,7 +2278,7 @@ sal_Bool AquaSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
 		// make the subsetter provide the requested subset
 		FILE* pOutFile = fopen( aToFile.GetBuffer(), "wb" );
 		bool bRC = rInfo.CreateFontSubset( FontSubsetInfo::TYPE1_PFB, pOutFile, NULL,
-			pGlyphIDs, pEncoding, nGlyphCount, pGlyphWidths );
+			pGlyphIds, pEncoding, nGlyphCount, pGlyphWidths );
 		fclose( pOutFile );
 		return bRC;
 	}
@@ -2324,21 +2324,21 @@ sal_Bool AquaSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
     for( int i = 0; i < nGlyphCount; ++i )
     {
         aTempEncs[i] = pEncoding[i];
-        sal_uInt32 nGlyphIdx = pGlyphIDs[i] & GF_IDXMASK;
-        if( pGlyphIDs[i] & GF_ISCHAR )
+        sal_GlyphId aGlyphId( pGlyphIds[i] & GF_IDXMASK);
+        if( pGlyphIds[i] & GF_ISCHAR )
         {
-            bool bVertical = (pGlyphIDs[i] & GF_ROTMASK) != 0;
-            nGlyphIdx = ::MapChar( pSftFont, static_cast<sal_uInt16>(nGlyphIdx), bVertical );
-            if( nGlyphIdx == 0 && pFontData->IsSymbolFont() )
+            bool bVertical = (pGlyphIds[i] & GF_ROTMASK) != 0;
+            aGlyphId = ::MapChar( pSftFont, static_cast<sal_uInt16>(aGlyphId), bVertical );
+            if( aGlyphId == 0 && pFontData->IsSymbolFont() )
             {
                 // #i12824# emulate symbol aliasing U+FXXX <-> U+0XXX
-                nGlyphIdx = pGlyphIDs[i] & GF_IDXMASK;
-                nGlyphIdx = (nGlyphIdx & 0xF000) ? (nGlyphIdx & 0x00FF) : (nGlyphIdx | 0xF000 );
-                nGlyphIdx = ::MapChar( pSftFont, static_cast<sal_uInt16>(nGlyphIdx), bVertical );
+                aGlyphId = pGlyphIds[i] & GF_IDXMASK;
+                aGlyphId = (aGlyphId & 0xF000) ? (aGlyphId & 0x00FF) : (aGlyphId | 0xF000 );
+                aGlyphId = ::MapChar( pSftFont, static_cast<sal_uInt16>(aGlyphId), bVertical );
             }
         }
-        aShortIDs[i] = static_cast<sal_uInt16>( nGlyphIdx );
-        if( !nGlyphIdx )
+        aShortIDs[i] = static_cast<sal_uInt16>( aGlyphId );
+        if( !aGlyphId )
             if( nNotDef < 0 )
                 nNotDef = i; // first NotDef glyph found
     }
@@ -2739,7 +2739,7 @@ bool XorEmulation::UpdateTarget()
 		const int nWidth  = (int)CGImageGetWidth( xXorImage );
 		const int nHeight = (int)CGImageGetHeight( xXorImage );
 		// TODO: update minimal changerect
-		const CGRect aFullRect = {{0,0},{nWidth,nHeight}};
+		const CGRect aFullRect = CGRectMake( 0, 0, nWidth, nHeight);
 		CGContextDrawImage( mxTargetContext, aFullRect, xXorImage );
 		CGImageRelease( xXorImage );
 	}

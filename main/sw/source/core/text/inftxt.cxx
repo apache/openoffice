@@ -37,11 +37,7 @@
 #include <editeng/brshitem.hxx>
 #include <editeng/splwrap.hxx>
 #include <editeng/pgrditem.hxx>
-// --> OD 2008-01-17 #newlistlevelattrs#
-#ifndef _SVX_TSTPITEM_HXX
 #include <editeng/tstpitem.hxx>
-#endif
-// <--
 
 #include <SwSmartTagMgr.hxx>
 #include <linguistic/lngprops.hxx>
@@ -57,9 +53,7 @@
 #include <viewopt.hxx>	// SwViewOptions
 #include <frmtool.hxx>	// DrawGraphic
 #include <IDocumentSettingAccess.hxx>
-#ifndef IDOCUMENTDEVICEACCESS_HXX_INCLUDED
 #include <IDocumentDeviceAccess.hxx>
-#endif
 #include <paratr.hxx>	// SwFmtDrop
 #include <rootfrm.hxx>  // SwRootFrm
 #include <inftxt.hxx>	// SwTxtInfo
@@ -74,9 +68,7 @@
 #include <pam.hxx>
 #include <SwGrammarMarkUp.hxx>
 #include <cstdio>
-// --> FME 2004-06-08 #i12836# enhanced pdf export
 #include <EnhancedPDFExportHelper.hxx>
-// <--
 
 #include <unomid.h>
 
@@ -1271,42 +1263,52 @@ void SwTxtPaintInfo::_DrawBackBrush( const SwLinePortion &rPor ) const
  *************************************************************************/
 
 void SwTxtPaintInfo::DrawViewOpt( const SwLinePortion &rPor,
-								  const MSHORT nWhich ) const
+                                  const MSHORT nWhich ) const
 {
-	if( OnWin() && !IsMulti() )
-	{
-		sal_Bool bDraw = sal_False;
-		switch( nWhich )
-		{
-            case POR_FTN:
-			case POR_QUOVADIS:
-			case POR_NUMBER:
-			case POR_FLD:
-			case POR_URL:
-            case POR_HIDDEN:
-            case POR_TOX:
-            case POR_REF:
-            case POR_META:
-            case POR_CONTROLCHAR:
-                if ( !GetOpt().IsPagePreview() &&
-                     !GetOpt().IsReadonly() &&
-                     SwViewOption::IsFieldShadings() &&
-                     (POR_NUMBER != nWhich ||
-                      pFrm->GetTxtNode()->HasMarkedLabel())) // #i27615#
-                    bDraw = sal_True;
+    if( OnWin() && !IsMulti() )
+    {
+        sal_Bool bDraw = sal_False;
+        switch( nWhich )
+        {
+        case POR_FTN:
+        case POR_QUOVADIS:
+        case POR_NUMBER:
+        case POR_FLD:
+        case POR_URL:
+        case POR_HIDDEN:
+        case POR_TOX:
+        case POR_REF:
+        case POR_META:
+        case POR_CONTROLCHAR:
+            if ( !GetOpt().IsPagePreview()
+                 && !GetOpt().IsReadonly()
+                 && SwViewOption::IsFieldShadings()
+                 && ( POR_NUMBER != nWhich
+                      || pFrm->GetTxtNode()->HasMarkedLabel())) // #i27615#
+            {
+                bDraw = sal_True;
+            }
             break;
-			case POR_TAB:		if ( GetOpt().IsTab() )		bDraw = sal_True; break;
-			case POR_SOFTHYPH:	if ( GetOpt().IsSoftHyph() )bDraw = sal_True; break;
-            case POR_BLANK:     if ( GetOpt().IsHardBlank())bDraw = sal_True; break;
-			default:
-			{
-				ASSERT( !this, "SwTxtPaintInfo::DrawViewOpt: don't know how to draw this" );
-				break;
-			}
-		}
-		if ( bDraw )
-			DrawBackground( rPor );
-	}
+        case POR_INPUTFLD:
+            // input field shading also in read-only mode
+            if ( !GetOpt().IsPagePreview()
+                 && SwViewOption::IsFieldShadings() )
+            {
+                bDraw = sal_True;
+            }
+            break;
+        case POR_TAB:		if ( GetOpt().IsTab() )		bDraw = sal_True; break;
+        case POR_SOFTHYPH:	if ( GetOpt().IsSoftHyph() )bDraw = sal_True; break;
+        case POR_BLANK:     if ( GetOpt().IsHardBlank())bDraw = sal_True; break;
+        default:
+            {
+                ASSERT( !this, "SwTxtPaintInfo::DrawViewOpt: don't know how to draw this" );
+                break;
+            }
+        }
+        if ( bDraw )
+            DrawBackground( rPor );
+    }
 }
 
 /*************************************************************************
@@ -1750,8 +1752,12 @@ sal_Bool SwTxtFormatInfo::LastKernPortion()
  *                      class SwTxtSlot
  *************************************************************************/
 
-SwTxtSlot::SwTxtSlot( const SwTxtSizeInfo *pNew, const SwLinePortion *pPor,
-                      bool bTxtLen, bool bExgLists, const sal_Char *pCh )
+SwTxtSlot::SwTxtSlot(
+    const SwTxtSizeInfo *pNew,
+    const SwLinePortion *pPor,
+    bool bTxtLen,
+    bool bExgLists,
+    const sal_Char *pCh )
     : pOldTxt( 0 ),
       pOldSmartTagList( 0 ),
       pOldGrammarCheckList( 0 ),

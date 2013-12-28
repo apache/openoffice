@@ -44,7 +44,21 @@
 #include <svx/svdpagv.hxx>
 #include "svx/svdstr.hrc"
 #include <algorithm>
-
+#ifndef _COMPHELPER_PROPERTY_HXX_
+#include <comphelper/property.hxx>
+#endif
+#ifndef _COMPHELPER_TYPES_HXX_
+#include <comphelper/types.hxx>
+#endif
+#ifndef _COM_SUN_STAR_CONTAINER_XCHILD_HPP_
+#include <com/sun/star/container/XChild.hpp>
+#endif
+#ifndef _UTL_ACCESSIBLERELATIONSETHELPER_HXX_
+#include <unotools/accessiblerelationsethelper.hxx>
+#endif
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLERELATIONTYPE_HPP_
+#include <com/sun/star/accessibility/AccessibleRelationType.hpp>
+#endif
 using namespace ::comphelper;
 using namespace ::accessibility;
 using namespace	::com::sun::star::accessibility;
@@ -77,6 +91,12 @@ namespace
 	{
 		static ::rtl::OUString s_sLabelPropertyLabel( RTL_CONSTASCII_USTRINGPARAM( "Label" ) );
 		return s_sLabelPropertyLabel;
+	}
+	//................................................................
+	const ::rtl::OUString& lcl_getLabelControlPropertyName( )
+	{
+		static ::rtl::OUString s_sLabelControlPropertyLabel( RTL_CONSTASCII_USTRINGPARAM( "LabelControl" ) );
+		return s_sLabelControlPropertyLabel;
 	}
 	//................................................................
 	// return the property which should be used as AccessibleName
@@ -636,23 +656,53 @@ Reference< XAccessible > SAL_CALL AccessibleControlShape::getAccessibleChild( sa
 Reference< XAccessibleRelationSet > SAL_CALL AccessibleControlShape::getAccessibleRelationSet(  ) throw (RuntimeException)
 {
 	// TODO
-	return AccessibleShape::getAccessibleRelationSet( );
+	// return AccessibleShape::getAccessibleRelationSet( );
+    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	ensureControlModelAccess();
+	AccessibleControlShape* pCtlAccShape = GetLabeledByControlShape();
+	if(pCtlAccShape)
+	{
+		Reference < XAccessible > xAcc (pCtlAccShape->getAccessibleContext(), UNO_QUERY);
+
+		::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > > aSequence(1);
+		aSequence[0] = xAcc;
+		if( getAccessibleRole() == AccessibleRole::RADIO_BUTTON )
+		{
+			pRelationSetHelper->AddRelation( AccessibleRelation( AccessibleRelationType::MEMBER_OF, aSequence ) );
+		}
+		else
+		{
+			pRelationSetHelper->AddRelation( AccessibleRelation( AccessibleRelationType::LABELED_BY, aSequence ) );
+		}
+	}
+	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
+	return xSet;
 }
 
 //--------------------------------------------------------------------
 ::rtl::OUString AccessibleControlShape::CreateAccessibleName (void) throw (RuntimeException)
 {
 	ensureControlModelAccess();
-
-	// check if we can obtain the "Name" resp. "Label" property from the model
-	const ::rtl::OUString& rAccNameProperty = lcl_getPreferredAccNameProperty( m_xModelPropsMeta );
-
-	::rtl::OUString sName( getControlModelStringProperty( rAccNameProperty ) );
-	if ( !sName.getLength() )
-	{	// no -> use the default
-		sName = AccessibleShape::CreateAccessibleName();
+	::rtl::OUString sName;
+	if ( getAccessibleRole() != AccessibleRole::SHAPE	
+		&& getAccessibleRole() != AccessibleRole::RADIO_BUTTON  )
+	{
+		AccessibleControlShape* pCtlAccShape = GetLabeledByControlShape();
+		if(pCtlAccShape)
+		{
+			sName = pCtlAccShape->CreateAccessibleName();
+		}
 	}
-
+	if(sName.getLength() == 0)
+	{
+		// check if we can obtain the "Name" resp. "Label" property from the model
+		const ::rtl::OUString& rAccNameProperty = lcl_getPreferredAccNameProperty( m_xModelPropsMeta );
+		sName = getControlModelStringProperty( rAccNameProperty );
+		if ( !sName.getLength() )
+		{	// no -> use the default
+			sName = AccessibleShape::CreateAccessibleName();
+		}
+	}
 	// now that somebody first asked us for our name, ensure that we are listening to name changes on the model
 	m_bListeningForName = ensureListeningState( m_bListeningForName, sal_True, lcl_getPreferredAccNameProperty( m_xModelPropsMeta ) );
 
@@ -913,4 +963,24 @@ void SAL_CALL AccessibleControlShape::elementRemoved( const ::com::sun::star::co
 void SAL_CALL AccessibleControlShape::elementReplaced( const ::com::sun::star::container::ContainerEvent& ) throw (::com::sun::star::uno::RuntimeException)
 {
     // not interested in
+}
+AccessibleControlShape* SAL_CALL AccessibleControlShape::GetLabeledByControlShape( )
+{
+	if(m_xControlModel.is())
+	{
+		const ::rtl::OUString& rAccLabelControlProperty = lcl_getLabelControlPropertyName();
+		Any sCtlLabelBy;
+		// get the "label by" property value of the control
+		if (::comphelper::hasProperty(rAccLabelControlProperty, m_xControlModel))
+		{
+			m_xControlModel->getPropertyValue( rAccLabelControlProperty ) >>= sCtlLabelBy;
+			if( sCtlLabelBy.hasValue() )
+			{
+				Reference< XPropertySet >  xAsSet (sCtlLabelBy, UNO_QUERY);
+				AccessibleControlShape* pCtlAccShape = mpParent->GetAccControlShapeFromModel(xAsSet.get());
+				return pCtlAccShape;
+			}
+		}
+	}
+	return NULL;
 }

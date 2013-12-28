@@ -187,6 +187,9 @@ css::uno::Reference< css::lang::XComponent > LoadEnv::loadComponentFromURL(const
           css::io::IOException               ,
           css::uno::RuntimeException         )
 {
+#ifdef WNT	
+	CEnableAccessInterface e;
+#endif
     css::uno::Reference< css::lang::XComponent > xComponent;
 
     try

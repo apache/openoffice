@@ -190,7 +190,8 @@ sal_Int32 AccFrameSelector::getAccessibleIndexInParent(  )
 
 sal_Int16 AccFrameSelector::getAccessibleRole(  ) throw (RuntimeException)
 {
-    return AccessibleRole::OPTION_PANE;
+    // return AccessibleRole::OPTION_PANE;
+	return meBorder == FRAMEBORDER_NONE ? AccessibleRole::OPTION_PANE : AccessibleRole::CHECK_BOX;
 }
 
 // ----------------------------------------------------------------------------
@@ -222,18 +223,40 @@ Reference< XAccessibleRelationSet > AccFrameSelector::getAccessibleRelationSet( 
     IsValid();
     utl::AccessibleRelationSetHelper* pHelper;
     Reference< XAccessibleRelationSet > xRet = pHelper = new utl::AccessibleRelationSetHelper;
+    //if(meBorder == FRAMEBORDER_NONE)
+    //{
+    //    //add the label relation
+    //    Window* pPrev = mpFrameSel->GetWindow( WINDOW_PREV );
+    //    if(pPrev && WINDOW_FIXEDTEXT == pPrev->GetType())
+    //    {
+    //        AccessibleRelation aLabelRelation;
+    //        aLabelRelation.RelationType = AccessibleRelationType::LABELED_BY;
+    //        aLabelRelation.TargetSet.realloc(1);
+    //        aLabelRelation.TargetSet.getArray()[0]  = pPrev->GetAccessible();
+    //        pHelper->AddRelation(aLabelRelation);
+    //    }
+    //}
     if(meBorder == FRAMEBORDER_NONE)
     {
         //add the label relation
-        Window* pPrev = mpFrameSel->GetWindow( WINDOW_PREV );
-        if(pPrev && WINDOW_FIXEDTEXT == pPrev->GetType())
-        {
-            AccessibleRelation aLabelRelation;
+		Window *pLabeledBy = mpFrameSel->GetAccessibleRelationLabeledBy();
+		if ( pLabeledBy && pLabeledBy != mpFrameSel )
+		{
+			AccessibleRelation aLabelRelation;
             aLabelRelation.RelationType = AccessibleRelationType::LABELED_BY;
             aLabelRelation.TargetSet.realloc(1);
-            aLabelRelation.TargetSet.getArray()[0]  = pPrev->GetAccessible();
+            aLabelRelation.TargetSet.getArray()[0]  = pLabeledBy->GetAccessible();
             pHelper->AddRelation(aLabelRelation);
-        }
+		}
+		Window* pMemberOf = mpFrameSel->GetAccessibleRelationMemberOf();
+		if ( pMemberOf && pMemberOf != mpFrameSel )
+		{
+			AccessibleRelation aMemberOfRelation;
+            aMemberOfRelation.RelationType = AccessibleRelationType::MEMBER_OF;
+            aMemberOfRelation.TargetSet.realloc(1);
+            aMemberOfRelation.TargetSet.getArray()[0]  = pMemberOf->GetAccessible();
+            pHelper->AddRelation(aMemberOfRelation);
+		}
     }
     return xRet;
 }
@@ -721,6 +744,10 @@ void AccFrameSelector::NotifyAccessibleEvent( const sal_Int16 _nEventId,
 
 void AccFrameSelector::Invalidate()
 {
+	if ( mpFrameSel )
+    {
+        mpFrameSel->RemoveEventListener( LINK( this, AccFrameSelector, WindowEventListener ) );
+    }
     mpFrameSel = 0;
     EventObject aEvent;
     Reference < XAccessibleContext > xThis( this );

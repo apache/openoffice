@@ -313,33 +313,40 @@ namespace sdr
 			}
 		}
 
-		drawinglayer::primitive2d::Primitive2DSequence ViewObjectContact::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
-		{
-			// get the view-independent Primitive from the viewContact
-			drawinglayer::primitive2d::Primitive2DSequence xRetval(GetViewContact().getViewIndependentPrimitive2DSequence());
+        drawinglayer::primitive2d::Primitive2DSequence ViewObjectContact::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
+        {
+            // get the view-independent Primitive from the viewContact
+            drawinglayer::primitive2d::Primitive2DSequence xRetval(GetViewContact().getViewIndependentPrimitive2DSequence());
 
-			if(xRetval.hasElements())
-			{
-				// handle GluePoint
-				if(!GetObjectContact().isOutputToPrinter() && GetObjectContact().AreGluePointsVisible())
-				{
-					const drawinglayer::primitive2d::Primitive2DSequence xGlue(GetViewContact().createGluePointPrimitive2DSequence());
+            if(xRetval.hasElements())
+            {
+                // handle GluePoint
+                if(!GetObjectContact().isOutputToPrinter() && GetObjectContact().AreGluePointsVisible())
+                {
+                    const drawinglayer::primitive2d::Primitive2DSequence xGlue(GetViewContact().createGluePointPrimitive2DSequence());
 
-					if(xGlue.hasElements())
-					{
+                    if(xGlue.hasElements())
+                    {
                         drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, xGlue);
-					}
-				}
+                    }
+                }
 
-				// handle ghosted
-				if(isPrimitiveGhosted(rDisplayInfo))
-				{
-					const basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
-					const basegfx::BColorModifier aBColorModifier(aRGBWhite, 0.5, basegfx::BCOLORMODIFYMODE_INTERPOLATE);
-                    const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::ModifiedColorPrimitive2D(xRetval, aBColorModifier));
+                // handle ghosted
+                if(isPrimitiveGhosted(rDisplayInfo))
+                {
+                    const basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
+                    const basegfx::BColorModifierSharedPtr aBColorModifier(
+                        new basegfx::BColorModifier_interpolate(
+                            aRGBWhite, 
+                            0.5));
+                    const drawinglayer::primitive2d::Primitive2DReference xReference(
+                        new drawinglayer::primitive2d::ModifiedColorPrimitive2D(
+                            xRetval, 
+                            aBColorModifier));
+
                     xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
-				}
-			}
+                }
+            }
 
 			return xRetval;
 		}

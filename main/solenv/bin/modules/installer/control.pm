@@ -76,7 +76,6 @@ sub check_system_path
 {
 	# The following files have to be found in the environment variable PATH
 	# All platforms: zip
-	# Windows only: msvcp70.dll, msvcr70.dll for regcomp.exe
 	# Windows only: "msiinfo.exe", "msidb.exe", "uuidgen.exe", "makecab.exe", "msitran.exe", "expand.exe" for msi database and packaging
 
 	my $onefile;	
@@ -104,19 +103,6 @@ sub check_system_path
 	if (($installer::globals::iswin) && ($installer::globals::iswindowsbuild))
 	{
 		@needed_files_in_path = ("zip.exe", "msiinfo.exe", "msidb.exe", "uuidgen.exe", "makecab.exe", "msitran.exe", "expand.exe");
-		
-		if ( $installer::globals::compiler eq "wntmsci8" )
-		{
-			push(@needed_files_in_path, "msvcp70.dll");
-			push(@needed_files_in_path, "msvcr70.dll");
-		}
-
-		if ( $installer::globals::compiler eq "wntmsci10" )
-		{
-			push(@needed_files_in_path, "msvcp71.dll");
-			push(@needed_files_in_path, "msvcr71.dll");
-		}
-		
 	}
 	elsif ($installer::globals::iswin || $installer::globals::isos2)
 	{	
@@ -335,7 +321,7 @@ sub filter_log_error ($$$$)
 
         # Remove all filenames that contain the word "Error".
 		my $work_string = $message;
-		$work_string =~ s/Error\.(idt|mlf|ulf|html|hpp|ipp)//g;
+		$work_string =~ s/Error\.(idt|mlf|ulf|idl|html|hpp|ipp)//g;
 		
 		if ($work_string =~ /\bError\b/i)
 		{
@@ -442,16 +428,7 @@ sub determine_ship_directory
 
 	my $shipdrive = $ENV{'SHIPDRIVE'};
 
-	my $languagestring = $$languagesref;
-
-	if (length($languagestring) > $installer::globals::max_lang_length )
-	{
-		my $number_of_languages = installer::systemactions::get_number_of_langs($languagestring);
-		chomp(my $shorter = `echo $languagestring | md5sum | sed -e "s/ .*//g"`);
-		# $languagestring = $shorter;
-		my $id = substr($shorter, 0, 8); # taking only the first 8 digits
-		$languagestring = "lang_" . $number_of_languages . "_id_" . $id;				
-	}
+	my $languagestring = installer::languages::get_language_directory_name($$languagesref);
 
 	my $productstring = $installer::globals::product;
 	my $productsubdir = "";
@@ -511,7 +488,7 @@ sub check_updatepack
 
 					# try to write into $shipdrive
 
-					my $directory = $installer::globals::product . "_" . $installer::globals::compiler . "_" . $installer::globals::buildid . "_" . $installer::globals::languageproducts[0] . "_test_$$";
+					my $directory = $installer::globals::product . "_" . $installer::globals::compiler . "_" . $installer::globals::buildid . "_" . $installer::globals::languageproduct . "_test_$$";
 					$directory =~ s/\,/\_/g;	# for the list of languages
 					$directory =~ s/\-/\_/g;	# for en-US, pt-BR, ...
 					$directory = $shipdrive . $installer::globals::separator . $directory;

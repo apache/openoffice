@@ -2481,13 +2481,14 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 		do {
 			aEndPosLst.OutEndAttrs( rHTMLWrt, nStrPos + nOffset );
 
-			nAttrPos++;
-			if( RES_TXTATR_FIELD == pHt->Which() )		// Felder nicht
-				continue;                               // ausgeben
+            nAttrPos++;
+            if( pHt->Which() == RES_TXTATR_FIELD
+                || pHt->Which() == RES_TXTATR_ANNOTATION )
+                continue;
 
-            if ( pHt->GetEnd() && !pHt->HasDummyChar() )
+            if ( pHt->End() && !pHt->HasDummyChar() )
 			{
-				xub_StrLen nHtEnd = *pHt->GetEnd(),
+				const xub_StrLen nHtEnd = *pHt->End(),
 					   nHtStt = *pHt->GetStart();
 				if( !rHTMLWrt.bWriteAll && nHtEnd <= nStrPos )
 					continue;
@@ -2545,11 +2546,11 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 				&& nStrPos != nEnde )
 			{
 				do {
-                    if ( pHt->GetEnd() && !pHt->HasDummyChar() )
+                    if ( pHt->End() && !pHt->HasDummyChar() )
 					{
 						if( RES_CHRATR_KERNING == pHt->Which() &&
 							rHTMLWrt.IsHTMLMode(HTMLMODE_FIRSTLINE) &&
-							*pHt->GetEnd() - nStrPos == 1 &&
+							*pHt->End() - nStrPos == 1 &&
 							' ' == rStr.GetChar(nStrPos) &&
 							((const SvxKerningItem&)pHt->GetAttr()).GetValue() > 0 )
 						{
@@ -2564,36 +2565,37 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 							// Der Hint braucht nun doch nicht weiter
 							// beruecksichtigt werden.
 						}
-						else if( *pHt->GetEnd() != nStrPos )
+						else if( *pHt->End() != nStrPos )
 						{
 							// Hints mit Ende einsortieren, wenn sie keinen
 							// leeren Bereich aufspannen (Hints, die keinen
 							// Bereich aufspannen werden ignoriert
 							aEndPosLst.Insert( pHt->GetAttr(), nStrPos + nOffset,
-											   *pHt->GetEnd() + nOffset,
+											   *pHt->End() + nOffset,
 											   rHTMLWrt.aChrFmtInfos );
 						}
 					}
 					else
 					{
-						// Hints ohne-Ende werden als letztes ausgebeben
-						ASSERT( !pTxtHt,
-								"Wieso gibt es da schon ein Attribut ohne Ende?" );
-						if( rHTMLWrt.nTxtAttrsToIgnore>0 )
-						{
-							rHTMLWrt.nTxtAttrsToIgnore--;
-						}
-						else
-						{
-							pTxtHt = pHt;
-							sal_uInt16 nFldWhich;
-							if( RES_TXTATR_FIELD != pHt->Which() ||
-								( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetField()->Which()) &&
-								RES_SCRIPTFLD != nFldWhich ) )
-								bWriteBreak = sal_False;
-						}
-						bOutChar = sal_False;		// keine 255 ausgeben
-					}
+                        // Hints ohne-Ende werden als letztes ausgebeben
+                        ASSERT( !pTxtHt, "Wieso gibt es da schon ein Attribut ohne Ende?" );
+                        if( rHTMLWrt.nTxtAttrsToIgnore>0 )
+                        {
+                            rHTMLWrt.nTxtAttrsToIgnore--;
+                        }
+                        else
+                        {
+                            pTxtHt = pHt;
+                            sal_uInt16 nFldWhich;
+                            if( RES_TXTATR_FIELD != pHt->Which()
+                                || ( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetField()->Which())
+                                     && RES_SCRIPTFLD != nFldWhich ) )
+                            {
+                                bWriteBreak = sal_False;
+                            }
+                        }
+                        bOutChar = sal_False;		// keine 255 ausgeben
+                    }
 				} while( ++nAttrPos < nCntAttr && nStrPos ==
 					*( pHt = pNd->GetSwpHints()[ nAttrPos ] )->GetStart() );
 			}
@@ -3413,12 +3415,12 @@ SwAttrFnTab aHTMLAttrFnTab = {
 /* RES_TXTATR_CHARFMT */            OutHTML_SwTxtCharFmt,
 /* RES_TXTATR_CJK_RUBY */           0,
 /* RES_TXTATR_UNKNOWN_CONTAINER */  0,
-/* RES_TXTATR_DUMMY5 */             0,
+/* RES_TXTATR_INPUTFIELD */         OutHTML_SwFmtFld,
 
-/* RES_TXTATR_FIELD	*/              OutHTML_SwFmtFld,
+/* RES_TXTATR_FIELD */              OutHTML_SwFmtFld,
 /* RES_TXTATR_FLYCNT */             OutHTML_SwFlyCnt,
 /* RES_TXTATR_FTN */                OutHTML_SwFmtFtn,
-/* RES_TXTATR_DUMMY4 */             0,
+/* RES_TXTATR_ANNOTATION */         OutHTML_SwFmtFld,
 /* RES_TXTATR_DUMMY3 */             0,
 /* RES_TXTATR_DUMMY1 */             0, // Dummy:
 /* RES_TXTATR_DUMMY2 */             0, // Dummy:

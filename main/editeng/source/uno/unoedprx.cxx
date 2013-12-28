@@ -508,21 +508,6 @@ String SvxAccessibleTextAdapter::GetText( const ESelection& rSel ) const
     EBulletInfo aBulletInfo1 = GetBulletInfo( static_cast< sal_uInt16 >(aStartIndex.GetParagraph()) );
     EBulletInfo aBulletInfo2 = GetBulletInfo( static_cast< sal_uInt16 >(aEndIndex.GetParagraph()) );
 
-    if( aStartIndex.InBullet() )
-    {
-        // prepend leading bullet
-        String sBullet = aBulletInfo1.aText;
-
-        DBG_ASSERT(aStartIndex.GetBulletOffset() >= 0 &&
-                   aStartIndex.GetBulletOffset() <= USHRT_MAX,
-                   "SvxAccessibleTextIndex::GetText: index value overflow");
-
-        sBullet.Erase(0, static_cast< sal_uInt16 > (aStartIndex.GetBulletOffset()) );
-
-        sBullet += sStr;
-        sStr = sBullet;
-    }
-
     if( aEndIndex.InBullet() )
     {
         // append trailing bullet
@@ -751,7 +736,14 @@ EBulletInfo SvxAccessibleTextAdapter::GetBulletInfo( sal_uInt16 nPara ) const
 
     return mrTextForwarder->GetBulletInfo( nPara );
 }
-
+void	SvxAccessibleTextAdapter::SetUpdateModeForAcc( sal_Bool bUp)
+{
+	return mrTextForwarder->SetUpdateModeForAcc( bUp );
+}
+sal_Bool	SvxAccessibleTextAdapter::GetUpdateModeForAcc( ) const
+{
+	return mrTextForwarder->GetUpdateModeForAcc( );
+}
 Rectangle SvxAccessibleTextAdapter::GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
@@ -976,8 +968,7 @@ sal_Bool SvxAccessibleTextAdapter::GetWordIndices( sal_uInt16 nPara, sal_uInt16 
 
     return sal_True;
 }
-
-sal_Bool SvxAccessibleTextAdapter::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt16 nPara, sal_uInt16 nIndex ) const
+sal_Bool SvxAccessibleTextAdapter::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool /* bInCell */) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

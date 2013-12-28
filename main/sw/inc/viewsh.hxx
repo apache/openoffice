@@ -353,7 +353,7 @@ public:
     OutputDevice& GetRefDev() const;
     inline Window* GetWin()    const { return pWin; }
     inline OutputDevice* GetOut()     const { return pOut; }
-
+    void SetWin(Window* win) { pWin = win; }
 	static inline sal_Bool IsLstEndAction() { return ViewShell::bLstAct; }
 
     //Andern alle PageDescriptoren

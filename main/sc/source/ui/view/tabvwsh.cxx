@@ -41,6 +41,9 @@
 #include <sfx2/sidebar/SidebarChildWindow.hxx>
 #include <avmedia/mediaplayer.hxx>
 
+#include "cell.hxx"
+#include "docoptio.hxx"
+
 #include "tabvwsh.hxx"
 #include "docsh.hxx"
 #include "reffact.hxx"
@@ -106,3 +109,18 @@ IMPL_LINK( ScTabViewShell, HtmlOptionsHdl, void*, EMPTYARG )
     GetViewFrame()->GetBindings().Invalidate(SID_DRAW_TEXT_MARQUEE);
     return 0;
 }
+
+rtl::OUString ScTabViewShell::GetFormula(ScAddress& rAddress)
+{
+	String sFormula;
+	ScDocument* pDoc = GetViewData()->GetDocument();
+	ScBaseCell* pCell = pDoc->GetCell(rAddress);
+	if (pCell && pCell->GetCellType()==CELLTYPE_FORMULA)
+	{
+		static_cast<ScFormulaCell*>(pCell)->GetFormula(sFormula);
+	}
+	return sFormula;
+}
+
+
+

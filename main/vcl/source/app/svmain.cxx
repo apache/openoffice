@@ -55,6 +55,9 @@
 #include <process.h>    // for _beginthreadex
 #include <ole2.h>   // for _beginthreadex
 #include <tools/postwin.h>
+#include <com/sun/star/accessibility/XMSAAService.hpp>
+#include <win/g_msaasvc.h>
+using namespace com::sun::star::accessibility;
 #endif
 
 // [ed 5/14/02 Add in explicit check for quartz graphics.  OS X will define
@@ -215,6 +218,10 @@ sal_Bool ImplSVMain()
 	}
 
     DeInitVCL();
+	#ifdef WNT
+		if( g_acc_manager1 )
+			g_acc_manager1->release();
+	#endif 
     return bInit;
 }
 

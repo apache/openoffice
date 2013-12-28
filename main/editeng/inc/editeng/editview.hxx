@@ -219,6 +219,8 @@ public:
 
 	sal_Bool			IsCursorAtWrongSpelledWord( sal_Bool bMarkIfWrong = sal_False );
 	sal_Bool			IsWrongSpelledWordAtPos( const Point& rPosPixel, sal_Bool bMarkIfWrong = sal_False );
+    	sal_Bool IsShapeParaFocusable( ) ;
+    sal_Bool WrongSpelledBreakPara(sal_Int32 nPara,sal_uInt16& nStartIndex, sal_uInt16& nEndIndex,sal_Int32 nIndex);
 	void			SpellIgnoreWord();
 	void			ExecuteSpellPopup( const Point& rPosPixel, Link* pCallBack = 0 );
 

@@ -619,6 +619,7 @@ void TabControl::ImplChangeTabPage( sal_uInt16 nId, sal_uInt16 nOldId )
         }
 
         pPage->ActivatePage();
+		pPage->Show();
 
         if ( pOldPage && pOldPage->HasChildPathFocus() )
         {
@@ -630,7 +631,7 @@ void TabControl::ImplChangeTabPage( sal_uInt16 nId, sal_uInt16 nOldId )
                 GrabFocus();
         }
 
-        pPage->Show();
+        // pPage->Show(); 
     }
 
     if ( pOldPage )

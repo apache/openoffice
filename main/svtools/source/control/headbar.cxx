@@ -42,6 +42,8 @@
 #endif
 #include <com/sun/star/accessibility/XAccessible.hpp>
 
+#include <com/sun/star/accessibility/AccessibleRole.hpp>
+#include <vclxaccessibleheaderbar.hxx>
 // =======================================================================
 
 struct ImplHeadItem
@@ -95,6 +97,7 @@ void HeaderBar::ImplInit( WinBits nWinStyle )
 	mbOutDrag		= sal_False;
 	mbItemMode		= sal_False;
 
+	m_pVCLXHeaderBar = NULL;
 	// StyleBits auswerten
 	if ( nWinStyle & WB_DRAG )
 		mbDragable = sal_True;
@@ -116,6 +119,7 @@ void HeaderBar::ImplInit( WinBits nWinStyle )
 	}
 
 	ImplInitSettings( sal_True, sal_True, sal_True );
+	//SetAccessibleRole(com::sun::star::accessibility::AccessibleRole::COLUMN_HEADER);	
 }
 
 // -----------------------------------------------------------------------
@@ -1643,5 +1647,20 @@ Size HeaderBar::CalcWindowSizePixel() const
 void HeaderBar::SetAccessible( ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > _xAccessible )
 {
     mxAccessible = _xAccessible;
+}
+
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > HeaderBar::GetComponentInterface( sal_Bool bCreate )
+{
+    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > xPeer 
+		(Window::GetComponentInterface(false));
+	if ( !xPeer.is() && bCreate )
+    {
+		::com::sun::star::awt::XWindowPeer* mxPeer = new VCLXHeaderBar(this);
+		m_pVCLXHeaderBar = (VCLXHeaderBar*)(mxPeer);
+		SetComponentInterface(mxPeer);
+		return mxPeer;
+    }
+	else
+		return xPeer;
 }
 

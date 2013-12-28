@@ -179,6 +179,8 @@ sal_Bool ScGridWindow::DrawKeyInput(const KeyEvent& rKEvt)
 					if ( !bOldMarked &&
 						rKEvt.GetKeyCode().GetCode() == KEY_DELETE )
 						bUsed = sal_False;					// nichts geloescht
+					if(bOldMarked)
+						GetFocus();					
 				}
 			if (!bLeaveDraw)
 				UpdateStatusPosSize();		// #108137# for moving/resizing etc. by keyboard

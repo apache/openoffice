@@ -33,6 +33,9 @@
 #include "accgraphic.hxx"
 
 using namespace ::com::sun::star;
+#ifndef _FMTURL_HXX //autogen
+#include <fmturl.hxx>
+#endif
 using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::accessibility;
@@ -90,4 +93,14 @@ Sequence< sal_Int8 > SAL_CALL SwAccessibleGraphic::getImplementationId()
         bInit = sal_True;
     }
     return aId;
+}
+//	Return this object's role.
+sal_Int16 SAL_CALL SwAccessibleGraphic::getAccessibleRole (void)
+        throw (::com::sun::star::uno::RuntimeException)
+{
+		SwFmtURL aURL( ((SwLayoutFrm*)GetFrm())->GetFmt()->GetURL() );
+
+		if(aURL.GetMap() )
+			return AccessibleRole::IMAGE_MAP ;
+		return AccessibleRole::GRAPHIC ;
 }

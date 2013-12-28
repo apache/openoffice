@@ -2215,156 +2215,169 @@ void XMLTextParagraphExport::exportParagraph(
 }
 
 void XMLTextParagraphExport::exportTextRangeEnumeration(
-		const Reference < XEnumeration > & rTextEnum,
-		sal_Bool bAutoStyles, sal_Bool bIsProgress,
-		sal_Bool bPrvChrIsSpc )
+    const Reference < XEnumeration > & rTextEnum,
+    sal_Bool bAutoStyles,
+    sal_Bool bIsProgress,
+    sal_Bool bPrvChrIsSpc )
 {
     static OUString sMeta(RTL_CONSTASCII_USTRINGPARAM("InContentMetadata"));
-	sal_Bool bPrevCharIsSpace = bPrvChrIsSpc;
+    static OUString sAnnotation(RTL_CONSTASCII_USTRINGPARAM("Annotation"));
+    static OUString sAnnotationEnd(RTL_CONSTASCII_USTRINGPARAM("AnnotationEnd"));
 
-	while( rTextEnum->hasMoreElements() )
-	{
-		Reference<XPropertySet> xPropSet(rTextEnum->nextElement(), UNO_QUERY);
+    sal_Bool bPrevCharIsSpace = bPrvChrIsSpc;
+
+    while( rTextEnum->hasMoreElements() )
+    {
+        Reference<XPropertySet> xPropSet(rTextEnum->nextElement(), UNO_QUERY);
         Reference < XTextRange > xTxtRange(xPropSet, uno::UNO_QUERY);
-		Reference<XPropertySetInfo> xPropInfo(xPropSet->getPropertySetInfo());
+        Reference<XPropertySetInfo> xPropInfo(xPropSet->getPropertySetInfo());
 
-		if (xPropInfo->hasPropertyByName(sTextPortionType))
-		{
+        if (xPropInfo->hasPropertyByName(sTextPortionType))
+        {
             rtl::OUString sType;
-			xPropSet->getPropertyValue(sTextPortionType) >>= sType;
+            xPropSet->getPropertyValue(sTextPortionType) >>= sType;
 
-			if( sType.equals(sText))
-			{
-				exportTextRange( xTxtRange, bAutoStyles,
-								 bPrevCharIsSpace );
-			}
-			else if( sType.equals(sTextField))
-			{
+            if( sType.equals(sText))
+            {
+                exportTextRange( xTxtRange, bAutoStyles, bPrevCharIsSpace );
+            }
+            else if( sType.equals(sTextField))
+            {
                 exportTextField( xTxtRange, bAutoStyles, bIsProgress );
-				bPrevCharIsSpace = sal_False;
-			}
-			else if( sType.equals( sFrame ) )
-			{
-				Reference < XEnumeration> xContentEnum;
-				Reference < XContentEnumerationAccess > xCEA( xTxtRange,
-															  UNO_QUERY );
-				if( xCEA.is() )
-					xContentEnum.set(xCEA->createContentEnumeration(
-													sTextContentService ));
-				// frames are never in sections
-				Reference<XTextSection> xSection;
-				if( xContentEnum.is() )
-					exportTextContentEnumeration( xContentEnum,
-											  	  bAutoStyles,
-											  	  xSection, bIsProgress, sal_True,
-											   	  &xPropSet	);
+                bPrevCharIsSpace = false;
+            }
+            else if ( sType.equals( sAnnotation ) )
+            {
+                exportTextField( xTxtRange, bAutoStyles, bIsProgress );
+                bPrevCharIsSpace = false;
+            }
+            else if ( sType.equals( sAnnotationEnd ) )
+            {
+                Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                const OUString& rName = xBookmark->getName();
+                if ( rName.getLength() > 0 )
+                {
+                    GetExport().AddAttribute(XML_NAMESPACE_OFFICE, XML_NAME, rName);
+                }
+                SvXMLElementExport aElem( GetExport(), !bAutoStyles, XML_NAMESPACE_OFFICE, XML_ANNOTATION_END, sal_False, sal_False );
+            }
+            else if( sType.equals( sFrame ) )
+            {
+                Reference < XEnumeration> xContentEnum;
+                Reference < XContentEnumerationAccess > xCEA( xTxtRange, UNO_QUERY );
+                if( xCEA.is() )
+                    xContentEnum.set(xCEA->createContentEnumeration( sTextContentService ));
+                // frames are never in sections
+                Reference<XTextSection> xSection;
+                if( xContentEnum.is() )
+                    exportTextContentEnumeration(
+                    xContentEnum,
+                    bAutoStyles,
+                    xSection,
+                    bIsProgress,
+                    sal_True,
+                    &xPropSet );
 
-				bPrevCharIsSpace = sal_False;
-			}
-			else if (sType.equals(sFootnote))
-			{
-				exportTextFootnote(xPropSet,
-								   xTxtRange->getString(),
-								   bAutoStyles, bIsProgress );
-				bPrevCharIsSpace = sal_False;
-			}
-			else if (sType.equals(sBookmark))
-			{
-				exportTextMark(xPropSet,
-							   sBookmark,
-							   lcl_XmlBookmarkElements,
-							   bAutoStyles);
-			}
-			else if (sType.equals(sReferenceMark))
-			{
-				exportTextMark(xPropSet,
-							   sReferenceMark,
-							   lcl_XmlReferenceElements,
-							   bAutoStyles);
-			}
-			else if (sType.equals(sDocumentIndexMark))
-			{
-				pIndexMarkExport->ExportIndexMark(xPropSet,	bAutoStyles);
-			}
-			else if (sType.equals(sRedline))
-			{
-				if (NULL != pRedlineExport)
-					pRedlineExport->ExportChange(xPropSet, bAutoStyles);
-			}
-			else if (sType.equals(sRuby))
-			{
-				exportRuby(xPropSet, bAutoStyles);
-			}
+                bPrevCharIsSpace = sal_False;
+            }
+            else if (sType.equals(sFootnote))
+            {
+                exportTextFootnote( xPropSet, xTxtRange->getString(), bAutoStyles, bIsProgress );
+                bPrevCharIsSpace = sal_False;
+            }
+            else if (sType.equals(sBookmark))
+            {
+                exportTextMark( xPropSet, sBookmark, lcl_XmlBookmarkElements, bAutoStyles );
+            }
+            else if (sType.equals(sReferenceMark))
+            {
+                exportTextMark( xPropSet, sReferenceMark, lcl_XmlReferenceElements, bAutoStyles);
+            }
+            else if (sType.equals(sDocumentIndexMark))
+            {
+                pIndexMarkExport->ExportIndexMark( xPropSet, bAutoStyles);
+            }
+            else if (sType.equals(sRedline))
+            {
+                if (NULL != pRedlineExport)
+                    pRedlineExport->ExportChange( xPropSet, bAutoStyles );
+            }
+            else if (sType.equals(sRuby))
+            {
+                exportRuby( xPropSet, bAutoStyles );
+            }
             else if (sType.equals(sMeta))
             {
-                exportMeta(xPropSet, bAutoStyles, bIsProgress);
+                exportMeta( xPropSet, bAutoStyles, bIsProgress );
             }
-			else if (sType.equals(sTextFieldStart))
-			{
-				Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
-				if (xBookmark.is())
+            else if (sType.equals(sTextFieldStart))
+            {
+                Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                if (xBookmark.is())
                 {
-					GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xBookmark->getName());
-				}
-				Reference< ::com::sun::star::text::XFormField > xFormField(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
-				if (xFormField.is())
+                    GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xBookmark->getName());
+                }
+
+                Reference< ::com::sun::star::text::XFormField > xFormField(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                if (xFormField.is())
                 {
-					GetExport().AddAttribute(XML_NAMESPACE_FIELD, XML_TYPE, xFormField->getFieldType());
-				}
-				GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_START, sal_False);
-				if (xFormField.is())
+                    GetExport().AddAttribute(XML_NAMESPACE_FIELD, XML_TYPE, xFormField->getFieldType());
+                }
+
+                GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_START, sal_False);
+                if (xFormField.is())
                 {
                     FieldParamExporter(&GetExport(), xFormField->getParameters()).Export();
-				}
-				GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_START, sal_False);
-			}
-			else if (sType.equals(sTextFieldEnd))
-			{
-				GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_END, sal_False);
-				GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_END, sal_False);
-			}
-			else if (sType.equals(sTextFieldStartEnd))
-			{
-				Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
-				if (xBookmark.is())
+                }
+                GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_START, sal_False);
+            }
+            else if (sType.equals(sTextFieldEnd))
+            {
+                GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_END, sal_False);
+                GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK_END, sal_False);
+            }
+            else if (sType.equals(sTextFieldStartEnd))
+            {
+                Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                if (xBookmark.is())
                 {
-					GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xBookmark->getName());
-				}
-				Reference< ::com::sun::star::text::XFormField > xFormField(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
-				if (xFormField.is())
+                    GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xBookmark->getName());
+                }
+                Reference< ::com::sun::star::text::XFormField > xFormField(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                if (xFormField.is())
                 {
-				    GetExport().AddAttribute(XML_NAMESPACE_FIELD, XML_TYPE, xFormField->getFieldType());
-				}
-				GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK, sal_False);
-				if (xFormField.is())
+                    GetExport().AddAttribute(XML_NAMESPACE_FIELD, XML_TYPE, xFormField->getFieldType());
+                }
+                GetExport().StartElement(XML_NAMESPACE_FIELD, XML_FIELDMARK, sal_False);
+                if (xFormField.is())
                 {
                     FieldParamExporter(&GetExport(), xFormField->getParameters()).Export();
-				}
-				GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK, sal_False);
-			}
-			else if (sType.equals(sSoftPageBreak))
-			{
-				exportSoftPageBreak(xPropSet,	bAutoStyles);
-			}
-			else {
-				DBG_ERROR("unknown text portion type");
+                }
+                GetExport().EndElement(XML_NAMESPACE_FIELD, XML_FIELDMARK, sal_False);
             }
-		}
-		else
-		{
-			Reference<XServiceInfo> xServiceInfo( xTxtRange, UNO_QUERY );
-			if( xServiceInfo->supportsService( sTextFieldService ) )
-			{
+            else if (sType.equals(sSoftPageBreak))
+            {
+                exportSoftPageBreak(xPropSet,	bAutoStyles);
+            }
+            else {
+                DBG_ERROR("unknown text portion type");
+            }
+        }
+        else
+        {
+            Reference<XServiceInfo> xServiceInfo( xTxtRange, UNO_QUERY );
+            if( xServiceInfo->supportsService( sTextFieldService ) )
+            {
                 exportTextField( xTxtRange, bAutoStyles, bIsProgress );
-				bPrevCharIsSpace = sal_False;
-			}
-			else
-			{
-				// no TextPortionType property -> non-Writer app -> text
-				exportTextRange( xTxtRange, bAutoStyles, bPrevCharIsSpace );
-			}
-		}
-	}
+                bPrevCharIsSpace = sal_False;
+            }
+            else
+            {
+                // no TextPortionType property -> non-Writer app -> text
+                exportTextRange( xTxtRange, bAutoStyles, bPrevCharIsSpace );
+            }
+        }
+    }
 
 // now that there are nested enumerations for meta(-field), this may be valid!
 //	DBG_ASSERT( !bOpenRuby, "Red Alert: Ruby still open!" );

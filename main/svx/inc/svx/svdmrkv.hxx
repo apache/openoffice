@@ -511,6 +511,7 @@ public:
 	// Endpunkt der Spiegelachse
     const Point& GetRef2() const { return aRef1; }
     void SetRef2(const Point& rPt);
+	void UnmarkObj(SdrObject* pObj);
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -92,6 +92,14 @@
 using ::std::max;
 #endif
 
+#ifdef WNT
+#include <oleacc.h>
+#include <com/sun/star/accessibility/XMSAAService.hpp>
+#ifndef _WIN32_WCE
+#define WM_GETOBJECT                    0x003D
+#endif
+#include <win/g_msaasvc.h>
+#endif
 #include <com/sun/star/uno/Exception.hdl>
 
 #include <time.h>
@@ -153,7 +161,10 @@ sal_Bool WinSalFrame::mbInReparent = FALSE;
 #define Uni_SupplementaryPlanesStart    0x10000
 
 // =======================================================================
-
+#ifdef WNT
+using namespace ::com::sun::star::accessibility;
+XMSAAService* g_acc_manager1 = NULL;
+#endif
 static void UpdateFrameGeometry( HWND hWnd, WinSalFrame* pFrame );
 static void SetMaximizedFrameGeometry( HWND hWnd, WinSalFrame* pFrame, RECT* pParentRect = NULL );
 
@@ -6178,6 +6189,60 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
         case WM_IME_NOTIFY:
             ImplHandleIMENotify( hWnd, wParam );
             break;
+
+#ifdef WNT
+		case WM_GETOBJECT:
+			{
+				if (!Application::IsEnableAccessInterface())
+				{
+					break;
+				}
+				else
+				{
+					// IA2 should be enabled automatically
+					AllSettings aSettings = Application::GetSettings();
+					MiscSettings aMisc = aSettings.GetMiscSettings();
+					aMisc.SetEnableATToolSupport( sal_True );
+					aSettings.SetMiscSettings( aMisc );
+					Application::SetSettings( aSettings );
+
+					if (Application::GetSettings().GetMiscSettings().GetEnableATToolSupport())
+					{
+						// Make sure to launch Accessibiliity only the following criterias are satisfied to avoid RFT interrupts regular acc processing
+						if (g_acc_manager1 == NULL)
+						{
+							sal_Bool bCancelled;
+							InitAccessBridge(sal_False,bCancelled);
+							if( bCancelled )
+								break;
+						}
+						if (g_acc_manager1 != NULL)
+						{
+							// MT: mhOnSetTitleWnd not set to reasonable value anywhere...
+							/*
+							sal_Bool bSkipSetTitleClient = sal_False;
+							SalFrame* pFrame = GetWindowPtr( hWnd );
+							if(pFrame)
+							{
+							bSkipSetTitleClient = (lParam == OBJID_CLIENT && hWnd == ((WinSalFrame*)pFrame)->mhOnSetTitleWnd);
+							}
+							*/
+							if ( (lParam == OBJID_CLIENT ) /* && !bSkipSetTitleClient */ )
+							{
+								long RetResult = g_acc_manager1->getAccObjectPtr((long)hWnd, lParam, wParam);
+								if(RetResult != 0)
+								{
+									rDef = FALSE;					
+									return (HRESULT)RetResult;
+								}
+							}
+						}
+					}
+				}
+				break;
+			}
+#endif			
+
         case WM_APPCOMMAND:
             if( ImplHandleAppCommand( hWnd, lParam ) )
             {                
@@ -6398,3 +6463,23 @@ sal_Bool ImplWriteLastError( DWORD lastError, const char *szApiCall )
 
 // -----------------------------------------------------------------------
 
+#ifdef WNT
+bool IsWNTInitAccessBridge()
+{
+	return NULL != g_acc_manager1;
+}
+#endif
+#ifdef WNT
+bool WNTEnableAccessInterface(bool bEnable)
+{
+    ImplSVData* pSVData = ImplGetSVData();
+
+	BOOL bPreVal = pSVData->maAppData.m_bEnableAccessInterface; 
+	long nEnable= bEnable;
+	::InterlockedExchange(
+		(LPLONG)&(pSVData->maAppData.m_bEnableAccessInterface),
+		nEnable);
+	
+	return bPreVal;
+}
+#endif

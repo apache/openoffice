@@ -26,6 +26,8 @@
 
 #include "AccessibleDocumentViewBase.hxx"
 
+#include <com/sun/star/accessibility/XAccessibleGroupPosition.hpp>
+
 namespace accessibility {
 
 
@@ -39,6 +41,7 @@ namespace accessibility {
 */
 class AccessibleDrawDocumentView : 
     public AccessibleDocumentViewBase
+    ,public ::com::sun::star::accessibility::XAccessibleGroupPosition
 {
 public:
     //=====  internal  ========================================================
@@ -73,6 +76,9 @@ public:
         throw (::com::sun::star::uno::RuntimeException,
             ::com::sun::star::lang::IndexOutOfBoundsException);
 
+	virtual ::rtl::OUString SAL_CALL
+		getAccessibleName(void)
+		throw (::com::sun::star::uno::RuntimeException);
 
     //=====  lang::XEventListener  ============================================
 
@@ -86,6 +92,26 @@ public:
 	virtual void SAL_CALL
 		propertyChange (const ::com::sun::star::beans::PropertyChangeEvent& rEventObject)
         throw (::com::sun::star::uno::RuntimeException);
+    //=====  XInterface  ======================================================
+    
+    virtual com::sun::star::uno::Any SAL_CALL
+		queryInterface (const com::sun::star::uno::Type & rType)
+        throw (::com::sun::star::uno::RuntimeException);
+
+    virtual void SAL_CALL
+        acquire (void) 
+        throw ();
+        
+    virtual void SAL_CALL
+        release (void)
+        throw ();
+	
+    //=====  XAccessibleGroupPosition  =========================================
+	virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL
+		getGroupPosition( const ::com::sun::star::uno::Any& rAny )
+        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getObjectLink( const ::com::sun::star::uno::Any& accoject )
+        throw (::com::sun::star::uno::RuntimeException);	
 
 protected:
 
@@ -120,6 +146,8 @@ protected:
     virtual void
         implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect ) 
         throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+private:
+	::sd::ViewShell* mpSdViewSh;
 
 protected:
     /** This object manages the shapes of the represented draw page.  It is
@@ -159,6 +187,13 @@ protected:
     virtual void Deactivated (void);
 
     virtual void impl_dispose (void);
+
+    //=====  XAccessibleGetAccFromXShape  ============================================
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
+		SAL_CALL get_AccFlowTo(const ::com::sun::star::uno::Any& rAny, sal_Int32 nType)
+		throw ( ::com::sun::star::uno::RuntimeException );
+	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
+		GetSelAccContextInTable();
     
 private:
     void UpdateAccessibleName (void);

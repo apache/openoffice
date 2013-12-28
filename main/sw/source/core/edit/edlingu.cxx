@@ -1382,13 +1382,13 @@ void SwEditShell::ApplyChangedSentence(const ::svx::SpellPortions& rNewPortions,
                     pDoc->DeleteAndJoin(*pCrsr);
                     // ... and apply language if necessary
                     if(aCurrentNewPortion->eLanguage != aCurrentOldPortion->eLanguage)
-                        SetAttr( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId), nLangWhichId );
+                        SetAttrItem( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId), nLangWhichId );
                     pDoc->InsertString(*pCrsr, aCurrentNewPortion->sText);
                 }
                 else if(aCurrentNewPortion->eLanguage != aCurrentOldPortion->eLanguage)
                 {
                     //apply language
-                    SetAttr( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId), nLangWhichId );
+                    SetAttrItem( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId), nLangWhichId );
                 }
                 else if( aCurrentNewPortion->bIgnoreThisError )
                 {
@@ -1429,7 +1429,7 @@ void SwEditShell::ApplyChangedSentence(const ::svx::SpellPortions& rNewPortions,
                 GetCurAttr( aSet );
                 const SvxLanguageItem& rLang = static_cast<const SvxLanguageItem& >(aSet.Get(nLangWhichId));
                 if(rLang.GetLanguage() != aCurrentNewPortion->eLanguage)
-					SetAttr( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId) );
+					SetAttrItem( SvxLanguageItem(aCurrentNewPortion->eLanguage, nLangWhichId) );
                 //insert the new string
                 pDoc->InsertString(*pCrsr, aCurrentNewPortion->sText);
 
@@ -1878,6 +1878,7 @@ void    SwSpellIter::AddPortion(uno::Reference< XSpellAlternatives > xAlt,
                     switch (nWhich)
                     {
                         case RES_TXTATR_FIELD:
+                        case RES_TXTATR_ANNOTATION:
                         case RES_TXTATR_FTN:
                         case RES_TXTATR_FLYCNT:
                             bField = true;

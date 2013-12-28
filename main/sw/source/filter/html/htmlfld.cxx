@@ -615,51 +615,55 @@ void SwHTMLParser::InsertCommentText( const sal_Char *pTag )
 
 void SwHTMLParser::InsertComment( const String& rComment, const sal_Char *pTag )
 {
-	String aComment( rComment );
-	if( pTag )
-	{
-		aComment.AppendAscii( "</" );
-		aComment.AppendAscii( pTag );
-		aComment.Append( '>' );
-	}
+    String aComment( rComment );
+    if( pTag )
+    {
+        aComment.AppendAscii( "</" );
+        aComment.AppendAscii( pTag );
+        aComment.Append( '>' );
+    }
 
-	// MIB 24.06.97: Wenn ein PostIt nach einen Space eingefuegt
-	// werden soll, fuegen wir es vor dem Space ein. Dann gibt es
-	// weniger Probleme beim Formatieren (bug #40483#)
-	xub_StrLen nPos = pPam->GetPoint()->nContent.GetIndex();
-	SwTxtNode *pTxtNd = pPam->GetNode()->GetTxtNode();
-	sal_Bool bMoveFwd = sal_False;
-	if( nPos>0 && pTxtNd && ' '==pTxtNd->GetTxt().GetChar(nPos-1) )
-	{
-		bMoveFwd = sal_True;
+    // MIB 24.06.97: Wenn ein PostIt nach einen Space eingefuegt
+    // werden soll, fuegen wir es vor dem Space ein. Dann gibt es
+    // weniger Probleme beim Formatieren (bug #40483#)
+    xub_StrLen nPos = pPam->GetPoint()->nContent.GetIndex();
+    SwTxtNode *pTxtNd = pPam->GetNode()->GetTxtNode();
+    sal_Bool bMoveFwd = sal_False;
+    if( nPos>0 && pTxtNd && ' '==pTxtNd->GetTxt().GetChar(nPos-1) )
+    {
+        bMoveFwd = sal_True;
 
-		sal_uLong nNodeIdx = pPam->GetPoint()->nNode.GetIndex();
-		xub_StrLen nIdx = pPam->GetPoint()->nContent.GetIndex();
-		for( sal_uInt16 i = aSetAttrTab.Count(); i > 0; )
-		{
-			_HTMLAttr *pAttr = aSetAttrTab[--i];
-			if( pAttr->GetSttParaIdx() != nNodeIdx ||
-				pAttr->GetSttCnt() != nIdx )
-				break;
+        sal_uLong nNodeIdx = pPam->GetPoint()->nNode.GetIndex();
+        xub_StrLen nIdx = pPam->GetPoint()->nContent.GetIndex();
+        for( sal_uInt16 i = aSetAttrTab.Count(); i > 0; )
+        {
+            _HTMLAttr *pAttr = aSetAttrTab[--i];
+            if( pAttr->GetSttParaIdx() != nNodeIdx ||
+                pAttr->GetSttCnt() != nIdx )
+                break;
 
-			if( RES_TXTATR_FIELD == pAttr->pItem->Which() &&
-				RES_SCRIPTFLD == ((const SwFmtFld *)pAttr->pItem)->GetField()->GetTyp()->Which() )
-			{
-				bMoveFwd = sal_False;
-				break;
-			}
-		}
+            if( RES_TXTATR_FIELD == pAttr->pItem->Which() &&
+                RES_SCRIPTFLD == ((const SwFmtFld *)pAttr->pItem)->GetField()->GetTyp()->Which() )
+            {
+                bMoveFwd = sal_False;
+                break;
+            }
+        }
 
-		if( bMoveFwd )
-			pPam->Move( fnMoveBackward );
-	}
+        if( bMoveFwd )
+            pPam->Move( fnMoveBackward );
+    }
 
-	SwPostItField aPostItFld(
-					(SwPostItFieldType*)pDoc->GetSysFldType( RES_POSTITFLD ),
-					aEmptyStr, aComment, DateTime() );
-	InsertAttr( SwFmtFld( aPostItFld ) );
+    SwPostItField aPostItFld(
+        (SwPostItFieldType*)pDoc->GetSysFldType( RES_POSTITFLD ),
+        aComment,
+        aEmptyStr,
+        aEmptyStr,
+        aEmptyStr,
+        DateTime() );
+    InsertAttr( SwFmtFld( aPostItFld ) );
 
-	if( bMoveFwd )
-		pPam->Move( fnMoveForward );
+    if( bMoveFwd )
+        pPam->Move( fnMoveForward );
 }
 

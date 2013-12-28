@@ -166,6 +166,16 @@ ScHFEditPage::ScHFEditPage( Window* 			pParent,
 	aWndCenter. SetFont( aPatAttr );
 	aWndRight.	SetFont( aPatAttr );
 
+	aWndLeft.SetObjectSelectHdl( LINK(this,ScHFEditPage,ObjectSelectHdl) );
+	aWndCenter.SetObjectSelectHdl( LINK(this,ScHFEditPage,ObjectSelectHdl) );
+	aWndRight.SetObjectSelectHdl( LINK(this,ScHFEditPage,ObjectSelectHdl) );
+	aBtnText.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnFile.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnTable.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnPage.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnLastPage.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnDate.SetAccessibleRelationMemberOf( &maFtCustomHF );
+	aBtnTime.SetAccessibleRelationMemberOf( &maFtCustomHF );	
 	FillCmdArr();
 
 	aWndLeft.GrabFocus();
@@ -174,6 +184,12 @@ ScHFEditPage::ScHFEditPage( Window* 			pParent,
 
 	FreeResource();
 }
+    IMPL_LINK( ScHFEditPage, ObjectSelectHdl, ScEditWindow*, pEdit )
+	{
+		(void)pEdit;
+	    aBtnText.GrabFocus();
+	    return NULL;	
+	}
 
 // -----------------------------------------------------------------------
 

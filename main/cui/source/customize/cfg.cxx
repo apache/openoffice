@@ -1662,7 +1662,6 @@ SvxConfigPage::SvxConfigPage(
     aDescriptionField.SetControlBackground( GetSettings().GetStyleSettings().GetDialogColor() );
     aDescriptionField.SetAutoScroll( sal_True );
     aDescriptionField.EnableCursor( sal_False );
-
 	aMoveUpButton.SetAccessibleName(String(CUI_RES(BUTTON_STR_UP)));
 	aMoveDownButton.SetAccessibleName(String(CUI_RES(BUTTON_STR_DOWN)));
 	aMoveUpButton.SetAccessibleRelationMemberOf(&aContentsSeparator);
@@ -2929,7 +2928,6 @@ SvxMainMenuOrganizerDialog::SvxMainMenuOrganizerDialog(
 		LINK( this, SvxMainMenuOrganizerDialog, MoveHdl) );
 	aMoveDownButton.SetClickHdl	(
 		LINK( this, SvxMainMenuOrganizerDialog, MoveHdl) );
-
 	aMoveUpButton.SetAccessibleName(String(CUI_RES(BUTTON_STR_UP)));
 	aMoveDownButton.SetAccessibleName(String(CUI_RES(BUTTON_STR_DOWN)));
 }

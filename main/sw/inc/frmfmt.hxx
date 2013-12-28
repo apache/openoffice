@@ -48,11 +48,13 @@ class SW_DLLPUBLIC SwFrmFmt: public SwFmt
         ::com::sun::star::uno::XInterface> m_wXObject;
 
 protected:
+	SwFrmFmt* pCaptionFmt;
 	SwFrmFmt( SwAttrPool& rPool, const sal_Char* pFmtNm,
 				SwFrmFmt *pDrvdFrm, sal_uInt16 nFmtWhich = RES_FRMFMT,
 				const sal_uInt16* pWhichRange = 0 )
 	  	: SwFmt( rPool, pFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange),
 				pDrvdFrm, nFmtWhich )
+				,pCaptionFmt( NULL )
 	{}
 
 	SwFrmFmt( SwAttrPool& rPool, const String &rFmtNm,
@@ -60,6 +62,7 @@ protected:
 				const sal_uInt16* pWhichRange = 0 )
 	  	: SwFmt( rPool, rFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange),
 				pDrvdFrm, nFmtWhich )
+				,pCaptionFmt( NULL )
 	{}
 
    virtual void Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNewValue );
@@ -128,6 +131,9 @@ public:
     // <--
 
     virtual String GetDescription() const;
+	sal_Bool HasCaption() const;
+	void SetCaptionFmt(SwFrmFmt* pFmt);
+	SwFrmFmt* GetCaptionFmt() const;
 
     SW_DLLPRIVATE ::com::sun::star::uno::WeakReference<
         ::com::sun::star::uno::XInterface> const& GetXObject() const
@@ -145,6 +151,8 @@ public:
 class SW_DLLPUBLIC SwFlyFrmFmt: public SwFrmFmt
 {
 	friend class SwDoc;
+	String msTitle;
+	String msDesc;
 
     // #i972:
     // it stores the previous position of Prt rectangle from RequestObjectResize

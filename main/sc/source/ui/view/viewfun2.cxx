@@ -1616,7 +1616,7 @@ void ScViewFunc::AutoFormat( sal_uInt16 nFormatNo, sal_Bool bRecord )
 //----------------------------------------------------------------------------
 //	Suchen & Ersetzen
 
-void ScViewFunc::SearchAndReplace( const SvxSearchItem* pSearchItem,
+sal_Bool ScViewFunc::SearchAndReplace( const SvxSearchItem* pSearchItem,
 										sal_Bool bAddUndo, sal_Bool bIsApi )
 {
 	ScDocShell* pDocSh = GetViewData()->GetDocShell();
@@ -1669,7 +1669,7 @@ void ScViewFunc::SearchAndReplace( const SvxSearchItem* pSearchItem,
 				if ( pOldSelectedTables )
 					delete [] pOldSelectedTables;
 				ErrorMessage(STR_PROTECTIONERR);
-				return;
+				return sal_False;
 			}
 		}
 	}
@@ -1843,6 +1843,7 @@ void ScViewFunc::SearchAndReplace( const SvxSearchItem* pSearchItem,
 
 	delete pUndoDoc;			// loeschen wenn nicht benutzt
 	delete pUndoMark;			// kann immer geloescht werden
+	return bFound;
 }
 
 

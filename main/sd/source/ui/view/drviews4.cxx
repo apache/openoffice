@@ -79,6 +79,7 @@
 // #97016# IV
 #include <svx/svditer.hxx>
 
+#include <navigatr.hxx>
 namespace sd {
 
 #define PIPETTE_RANGE 0
@@ -227,6 +228,12 @@ sal_Bool DrawViewShell::KeyInput (const KeyEvent& rKEvt, ::sd::Window* pWin)
 		else
 		{
 			bRet = ViewShell::KeyInput(rKEvt, pWin);
+    		//Solution: If object is marked , the corresponding entry is set true ,
+    		//else the corresponding entry is set false .
+       	    if(KEY_TAB == rKEvt.GetKeyCode().GetCode())
+       	    {
+   			   FreshNavigatrTree();
+       	    }
 		}
 	}
 
@@ -271,7 +278,31 @@ void DrawViewShell::StartRulerDrag (
         mbIsRulerDrag = sal_True;
 	}
 }
+//Solution: If object is marked , the corresponding entry is set true ,
+//else the corresponding entry is set false .
+void DrawViewShell::FreshNavigatrEntry()
+{
+		sal_uInt16 nId = SID_NAVIGATOR;
+		SfxChildWindow* pWindow = GetViewFrame()->GetChildWindow( nId );
+		if( pWindow )
+		{
+			SdNavigatorWin* pNavWin = (SdNavigatorWin*)( pWindow->GetContextWindow( SD_MOD() ) );
+			if( pNavWin )
+				pNavWin->FreshEntry();
+		}
+}
 
+void DrawViewShell::FreshNavigatrTree()
+{
+		sal_uInt16 nId = SID_NAVIGATOR;
+		SfxChildWindow* pWindow = GetViewFrame()->GetChildWindow( nId );
+		if( pWindow )
+		{
+			SdNavigatorWin* pNavWin = (SdNavigatorWin*)( pWindow->GetContextWindow( SD_MOD() ) );
+			if( pNavWin )
+				pNavWin->FreshTree( GetDoc() );
+		}
+}
 /*************************************************************************
 |*
 |* MouseButtonDown event
@@ -298,6 +329,9 @@ void DrawViewShell::MouseButtonDown(const MouseEvent& rMEvt,
 	{
 		ViewShell::MouseButtonDown(rMEvt, pWin);
 
+		//Solution: If object is marked , the corresponding entry is set true ,
+		//else the corresponding entry is set false .
+              FreshNavigatrTree();
 		if ( mbPipette )
 			( (SvxBmpMask*) GetViewFrame()->GetChildWindow( SvxBmpMaskChildWindow::GetChildWindowId() )->GetWindow() )->PipetteClicked();
 	}
@@ -467,6 +501,9 @@ void DrawViewShell::MouseButtonUp(const MouseEvent& rMEvt, ::sd::Window* pWin)
 		}
 		else
     		ViewShell::MouseButtonUp(rMEvt, pWin);
+		//Solution: If object is marked , the corresponding entry is set true ,
+		//else the corresponding entry is set false .
+		FreshNavigatrTree();
 	}
 }
 

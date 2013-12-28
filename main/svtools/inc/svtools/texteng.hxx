@@ -324,6 +324,7 @@ public:
 	static sal_Bool			DoesKeyChangeText( const KeyEvent& rKeyEvent );
 	static sal_Bool			DoesKeyMoveCursor( const KeyEvent& rKeyEvent );
 	static sal_Bool			IsSimpleCharInput( const KeyEvent& rKeyEvent );
+	Color 				GetTextColor() {return maTextColor; };
 };
 
 #endif // _TEXTENG_HXX

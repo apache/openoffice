@@ -31,17 +31,26 @@
 #include <com/sun/star/accessibility/AccessibleStateType.hpp>
 #include <com/sun/star/accessibility/AccessibleEventId.hpp>
 
+#include <com/sun/star/accessibility/XAccessibleAction.hpp>
+#include <comphelper/accessiblekeybindinghelper.hxx>
+#include <com/sun/star/awt/KeyModifier.hpp>
+#include <vcl/keycodes.hxx>
+#ifndef _UTL_ACCESSIBLESTATESETHELPER_HXX
 #include <unotools/accessiblestatesethelper.hxx>
+#endif
 #include <rtl/uuid.h>
 #include <tools/gen.hxx>
 #include <toolkit/helper/convert.hxx>
 #include <tools/debug.hxx>
 
+#include <com/sun/star/accessibility/AccessibleRelationType.hpp>
+#include <unotools/accessiblerelationsethelper.hxx>
 using namespace	::com::sun::star;
 using namespace	::com::sun::star::accessibility;
 
 class ScAccessibleDataPilotButton
 	:	public ScAccessibleContextBase
+	, public ::com::sun::star::accessibility::XAccessibleAction
 {
 public:
 	//=====  internal  ========================================================
@@ -63,6 +72,17 @@ public:
 protected:
 	virtual ~ScAccessibleDataPilotButton(void);
 public:
+	// XAccessibleAction
+	virtual sal_Int32 SAL_CALL getAccessibleActionCount( ) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL doAccessibleAction ( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription ( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleKeyBinding > SAL_CALL getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+	///=====  XInterface  =====================================================
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( 
+		::com::sun::star::uno::Type const & rType ) 
+		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL acquire() throw ();
+	virtual void SAL_CALL release() throw ();
 	///=====  XAccessibleComponent  ============================================
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
@@ -104,7 +124,8 @@ public:
             ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL
     	getAccessibleStateSet(void)
         throw (::com::sun::star::uno::RuntimeException);
-
+	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > 
+		SAL_CALL getAccessibleRelationSet(	) throw (::com::sun::star::uno::RuntimeException);
 	///=====  XServiceInfo  ====================================================
 
     /**	Returns an identifier for the implementation of this object.
@@ -296,6 +317,8 @@ void ScAccessibleDataPilotControl::GotFocus()
     {
         DBG_ASSERT(mpFieldWindow->GetFieldCount() == maChildren.size(), "did not recognize a child count change");
 
+		if(maChildren.size()==0)
+			return ;
         sal_Int32 nIndex(mpFieldWindow->GetSelectedIndex());
         uno::Reference < XAccessible > xTempAcc = maChildren[nIndex].xWeakAcc;
         if (xTempAcc.is() && maChildren[nIndex].pAcc)
@@ -308,7 +331,8 @@ void ScAccessibleDataPilotControl::LostFocus()
     if (mpFieldWindow)
     {
         DBG_ASSERT(mpFieldWindow->GetFieldCount() == maChildren.size(), "did not recognize a child count change");
-
+		if(maChildren.size()==0)
+			return ;
         sal_Int32 nIndex(mpFieldWindow->GetSelectedIndex());
         uno::Reference < XAccessible > xTempAcc = maChildren[nIndex].xWeakAcc;
         if (xTempAcc.is() && maChildren[nIndex].pAcc)
@@ -518,7 +542,8 @@ ScAccessibleDataPilotButton::ScAccessibleDataPilotButton(
         ::com::sun::star::accessibility::XAccessible>& rxParent,
         ScPivotFieldWindow* pFieldWindow,
         sal_Int32 nIndex)
-    : ScAccessibleContextBase(rxParent, AccessibleRole::PUSH_BUTTON),
+//change role frome PUSH_BUTTON to BUTTON_MENU
+    : ScAccessibleContextBase(rxParent, AccessibleRole::BUTTON_MENU),
     mpFieldWindow(pFieldWindow),
     mnIndex(nIndex)
 {
@@ -657,7 +682,21 @@ uno::Reference<XAccessibleStateSet> SAL_CALL ScAccessibleDataPilotButton::getAcc
 
     return pStateSet;
 }
+::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > 
+	SAL_CALL ScAccessibleDataPilotButton::getAccessibleRelationSet(	) throw (::com::sun::star::uno::RuntimeException)
+{
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	uno::Reference< accessibility::XAccessibleRelationSet > xSet = pRelationSetHelper;
+	if(mxParent.is())
+	{
+		uno::Sequence< uno::Reference< uno::XInterface > > aSequence(1);
+		aSequence[0] = mxParent;
+		pRelationSetHelper->AddRelation( accessibility::AccessibleRelation( accessibility::AccessibleRelationType::MEMBER_OF, aSequence ) );
+	}
 
+	return xSet;
+
+}
 	///=====  XServiceInfo  ====================================================
 
 ::rtl::OUString SAL_CALL ScAccessibleDataPilotButton::getImplementationName(void)
@@ -685,6 +724,8 @@ uno::Sequence<sal_Int8> SAL_CALL ScAccessibleDataPilotButton::getImplementationI
 ::rtl::OUString SAL_CALL ScAccessibleDataPilotButton::createAccessibleDescription(void)
         throw (::com::sun::star::uno::RuntimeException)
 {
+	 if (mpFieldWindow)
+        return mpFieldWindow->GetHelpText();
     return rtl::OUString();
 }
 
@@ -721,3 +762,65 @@ Rectangle ScAccessibleDataPilotButton::GetBoundingBox(void) const
     else
         return Rectangle();
 }
+// -----------------------------------------------------------------------------
+// XAccessibleAction
+// -----------------------------------------------------------------------------
+sal_Int32 ScAccessibleDataPilotButton::getAccessibleActionCount( ) throw (uno::RuntimeException)
+{
+	return 1;
+}
+// -----------------------------------------------------------------------------
+sal_Bool ScAccessibleDataPilotButton::doAccessibleAction ( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+{
+	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
+        throw lang::IndexOutOfBoundsException();
+	return sal_True;
+}
+// -----------------------------------------------------------------------------
+::rtl::OUString ScAccessibleDataPilotButton::getAccessibleActionDescription ( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+{
+	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
+        throw lang::IndexOutOfBoundsException();
+	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(  "press" ) );
+}
+// -----------------------------------------------------------------------------
+::com::sun::star::uno::Reference< XAccessibleKeyBinding > ScAccessibleDataPilotButton::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+{
+    if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
+		throw lang::IndexOutOfBoundsException();
+	  comphelper::OAccessibleKeyBindingHelper* pKeyBindingHelper = new comphelper::OAccessibleKeyBindingHelper();
+    ::com::sun::star::uno::Reference< XAccessibleKeyBinding > xKeyBinding = pKeyBindingHelper;
+    ScPivotFieldWindow* pWindow = mpFieldWindow;
+    if ( pWindow )
+    {
+        awt::KeyStroke aKeyStroke;
+        aKeyStroke.Modifiers = 0;
+        aKeyStroke.KeyCode = KEY_SPACE;
+        pKeyBindingHelper->AddKeyBinding( aKeyStroke );
+    }
+    return xKeyBinding;
+}
+//=====  XInterface  =====================================================
+uno::Any SAL_CALL ScAccessibleDataPilotButton::queryInterface( uno::Type const & rType )
+	throw (::com::sun::star::uno::RuntimeException)
+{
+	uno::Any aAny (ScAccessibleContextBase::queryInterface(rType));
+	if(!aAny.hasValue())
+	{
+	  aAny = ::cppu::queryInterface (rType,
+            static_cast<XAccessibleAction*>(this)
+            );
+	}
+    return aAny;
+}
+void SAL_CALL ScAccessibleDataPilotButton::acquire() 
+	throw ()
+{
+	ScAccessibleContextBase::acquire();
+}
+void SAL_CALL ScAccessibleDataPilotButton::release()
+	throw ()
+{
+	ScAccessibleContextBase::release();
+}
+

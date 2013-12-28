@@ -37,7 +37,16 @@
 
 #include <rtl/ustring.hxx>
 #include <tools/debug.hxx>
+#ifndef _SVX_ACCESSIBILITY_SVX_SHAPE_TYPES_HXX
+#include <svx/SvxShapeTypes.hxx>
+#endif
+#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_
+#include <toolkit/unohlp.hxx>
+#endif
 
+#ifndef _SV_WINDOW_HXX
+#include <vcl/window.hxx>
+#endif
 using namespace ::com::sun::star;
 using namespace	::com::sun::star::accessibility;
 using ::com::sun::star::uno::Reference;
@@ -117,7 +126,19 @@ long ChildrenManagerImpl::GetChildCount (void) const throw ()
 }
 
 
-
+::com::sun::star::uno::Reference<
+        ::com::sun::star::drawing::XShape> ChildrenManagerImpl::GetChildShape(long nIndex)
+    throw (::com::sun::star::uno::RuntimeException)
+{
+	uno::Reference<XAccessible> xAcc = GetChild(nIndex);
+	ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
+    for (I = maVisibleChildren.begin(); I != aEnd; ++I)
+    {
+        if (I->mxAccessibleShape == xAcc)
+            return I->mxShape;
+    }
+	return uno::Reference< drawing::XShape > ();
+}
 
 /** Return the requested accessible child object.  Create it if it is not
     yet in the cache.
@@ -130,8 +151,8 @@ uno::Reference<XAccessible>
     // Check wether the given index is valid.
     if (nIndex < 0 || (unsigned long)nIndex >= maVisibleChildren.size())
         throw lang::IndexOutOfBoundsException (
-            ::rtl::OUString::createFromAscii(
-				"no accessible child with index ") + nIndex,
+            ::rtl::OUString::createFromAscii( "no accessible child with index ")
+                + ::rtl::OUString::valueOf( nIndex, 10),
             mxParent);
 
     return GetChild (maVisibleChildren[nIndex],nIndex);
@@ -871,9 +892,34 @@ sal_Bool ChildrenManagerImpl::ReplaceChild (
 
     return bResult;
 }
-
-
-
+// Add the impl method for IAccessibleParent interface
+AccessibleControlShape * ChildrenManagerImpl::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet) throw (::com::sun::star::uno::RuntimeException)
+{
+	sal_Int32 count = GetChildCount();
+	for (sal_Int32 index=0;index<count;index++)
+	{
+		AccessibleShape* pAccShape = maVisibleChildren[index].GetAccessibleShape();
+      	 	if (pAccShape  && ::accessibility::ShapeTypeHandler::Instance().GetTypeId (pAccShape->GetXShape()) == DRAWING_CONTROL)
+      	  	{
+			::accessibility::AccessibleControlShape *pCtlAccShape = static_cast < ::accessibility::AccessibleControlShape* >(pAccShape);
+			if (pCtlAccShape && pCtlAccShape->GetControlModel() == pSet)
+				return pCtlAccShape;
+            	}
+	}
+	return NULL;
+}
+uno::Reference<XAccessible>
+    ChildrenManagerImpl::GetAccessibleCaption (const uno::Reference<drawing::XShape>& xShape)
+    throw (uno::RuntimeException)
+{
+    ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
+    for (I = maVisibleChildren.begin(); I != aEnd; ++I)
+    {
+        if ( I->mxShape.get() == xShape.get() )
+            return I->mxAccessibleShape;
+    }
+    return uno::Reference<XAccessible> ();
+}
 
 /** Update the <const>SELECTED</const> and the <const>FOCUSED</const> state
     of all visible children.  Maybe this should be changed to all children.
@@ -906,13 +952,26 @@ void ChildrenManagerImpl::UpdateSelection (void)
     // Remember the current and new focused shape.
     AccessibleShape* pCurrentlyFocusedShape = NULL;
     AccessibleShape* pNewFocusedShape = NULL;
-
+	typedef std::pair< AccessibleShape* , sal_Bool > PAIR_SHAPE;//sal_Bool Selected,UnSelected.
+	typedef std::vector< PAIR_SHAPE > VEC_SHAPE;
+	VEC_SHAPE vecSelect;
+	int nAddSelect=0;
+	int nRemoveSelect=0;
+	sal_Bool bHasSelectedShape=sal_False;
     ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
     for (I=maVisibleChildren.begin(); I != aEnd; ++I)
     {
         AccessibleShape* pAccessibleShape = I->GetAccessibleShape();
         if (I->mxAccessibleShape.is() && I->mxShape.is() && pAccessibleShape!=NULL)
         {
+			short nRole = pAccessibleShape->getAccessibleRole();
+			bool bDrawShape = (
+				nRole == AccessibleRole::GRAPHIC || 
+				nRole == AccessibleRole::EMBEDDED_OBJECT || 
+				nRole == AccessibleRole::SHAPE || 
+				nRole == AccessibleRole::IMAGE_MAP || 
+				nRole == AccessibleRole::TABLE_CELL || 
+				nRole == AccessibleRole::TABLE );
             bool bShapeIsSelected = false;
 
             // Look up the shape in the (single or multi-) selection.
@@ -939,16 +998,37 @@ void ChildrenManagerImpl::UpdateSelection (void)
 
             // Set or reset the SELECTED state.
             if (bShapeIsSelected)
-                pAccessibleShape->SetState (AccessibleStateType::SELECTED);
+			{
+				if (pAccessibleShape->SetState (AccessibleStateType::SELECTED))
+				{
+					if (bDrawShape)
+					{
+						vecSelect.push_back(std::make_pair(pAccessibleShape,sal_True));
+						++nAddSelect;
+					}
+				}
+				else
+				{//Selected not change,has selected shape before
+					bHasSelectedShape=sal_True;
+				}
+			}
             else
-                pAccessibleShape->ResetState (AccessibleStateType::SELECTED);
-
+			{
+                if(pAccessibleShape->ResetState (AccessibleStateType::SELECTED))
+				{
+					if(bDrawShape)
+					{
+						vecSelect.push_back(std::make_pair(pAccessibleShape,sal_False));
+						++nRemoveSelect;
+					}
+				}
+			}
             // Does the shape have the current selection?
             if (pAccessibleShape->GetState (AccessibleStateType::FOCUSED))
                 pCurrentlyFocusedShape = pAccessibleShape;
         }
     }
-
+    /*
     // Check if the frame we are in is currently active.  If not then make
     // sure to not send a FOCUSED state change.
     if (xController.is())
@@ -958,15 +1038,67 @@ void ChildrenManagerImpl::UpdateSelection (void)
             if ( ! xFrame->isActive())
                 pNewFocusedShape = NULL;
     }
-
+    */
+	Window *pParentWidow = maShapeTreeInfo.GetWindow();
+	bool bShapeActive= false;
+	// For table cell, the table's parent must be checked to make sure it has focus. 
+	Window *pPWindow = pParentWidow->GetParent();
+	if (pParentWidow && ( pParentWidow->HasFocus() || (pPWindow && pPWindow->HasFocus())))
+	{
+		bShapeActive =true;
+	}
     // Move focus from current to newly focused shape.
     if (pCurrentlyFocusedShape != pNewFocusedShape)
     {
         if (pCurrentlyFocusedShape != NULL)
             pCurrentlyFocusedShape->ResetState (AccessibleStateType::FOCUSED);
-        if (pNewFocusedShape != NULL)
+	if (pNewFocusedShape != NULL && bShapeActive)
             pNewFocusedShape->SetState (AccessibleStateType::FOCUSED);
-    }
+	}
+
+	if (nAddSelect >= 10 )//fire selection  within 
+	{
+		mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED_WITHIN,uno::Any(),uno::Any());
+		nAddSelect =0 ;//not fire selection event
+	}
+	//VEC_SHAPE::iterator vi = vecSelect.begin();
+	//for (; vi != vecSelect.end() ;++vi)
+	VEC_SHAPE::reverse_iterator vi = vecSelect.rbegin();
+	for (; vi != vecSelect.rend() ;++vi)
+
+	{
+		PAIR_SHAPE &pairShape= *vi;
+		Reference< XAccessible > xShape(pairShape.first);
+		uno::Any anyShape;
+		anyShape <<= xShape;
+
+		if (pairShape.second)//Selection add
+		{
+			if (bHasSelectedShape)
+			{
+				if (  nAddSelect > 0 )
+				{
+					mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED_ADD,anyShape,uno::Any());
+				}				
+			}
+			else
+			{
+				//if has not selected shape ,first selected shape is fire selection event;
+				if (nAddSelect > 0 )
+				{
+					mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED,anyShape,uno::Any());
+				}
+				if (nAddSelect > 1 )//check other selected shape fire selection add event
+				{
+					bHasSelectedShape=sal_True;
+				}
+			}
+		}
+		else //selection remove
+		{
+			mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED_REMOVE,anyShape,uno::Any());
+		}
+	}
 
     // Remember whether there is a shape that now has the focus.
     mpFocusedShape = pNewFocusedShape;

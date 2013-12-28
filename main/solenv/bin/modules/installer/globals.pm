@@ -31,6 +31,8 @@ BEGIN
 {	
 	$prog="make_installer.pl";
 
+    # WARNING: the following lines are matched verbatim in i18npool/source/isolang/langid.pl
+    
 	@noMSLocaleLangs = (
         "br",
         "bs",
@@ -113,7 +115,7 @@ BEGIN
 	
 	$required_dotnet_version = "2.0.0.0";
 	$productextension = "";
-	@languageproducts = ();
+	$languageproduct = undef;
 	$build = "";
 	$minor = "";
 	$lastminor = "";
@@ -153,8 +155,8 @@ BEGIN
 	$fontsfolder = "FontsFolder";
 	$fontsfoldername = "Fonts";
 	$fontsdirparent = "";
-	$fontsdirname = "";
 	$fontsdirhostname = "truetype";
+	$fontsdirname = $fontsdirhostname;
 	$officefolder = "OfficeFolder";
 	$officemenufolder = "OfficeMenuFolder";
 	$startupfolder = "StartupFolder";
@@ -226,24 +228,14 @@ BEGIN
 	@linkrpms = ();
 	$archiveformat = "";
 	$minorupgradekey = "";
-	$updatelastsequence = 0;
-	$updatesequencecounter = 0;
-	$updatedatabase = 0;
-	$updatedatabasepath = "";
 	$pfffileexists = 0;
 	$pffcabfilename = "ooobasis3.0_pff.cab";
-	$mergemodulenumber = 0;
-	%allmergemodulefilesequences = ();
-	%newupdatefiles = ();
-	%allusedupdatesequences = ();
-	%mergemodulefiles = ();
 	$mergefiles_added_into_collector = 0;
 	$creating_windows_installer_patch = 0;
-	
+
 	$strip = 1;
-	
+
 	$globallogging = 0;
-	$globalloggingform21 = 1;
 	$logfilename = "logfile.log";	# the default logfile name for global errors
 #	@logfileinfo = ();
 #	@errorlogfileinfo = ();
@@ -273,7 +265,6 @@ BEGIN
 	$isopensourceproduct = 1;
 	$manufacturer = "";
 	$longmanufacturer = "";
-	$sundirname = "Oracle";
 	$codefilename = "codes.txt";
 	$componentfilename = "components.txt";	
 	$productcode = "";
@@ -292,7 +283,6 @@ BEGIN
 	$pwfile = "";
 	$pfxfile = "";
 
-	%mergemodules = ();
 	%merge_media_line = ();
 	%merge_allfeature_hash = ();
 	%merge_alldirectory_hash = ();
@@ -375,7 +365,6 @@ BEGIN
 	@pcfdiffcomment = ();
 	@epmdifflist = ();
 	$desktoplinkexists = 0;
-	$sundirexists = 0;
 	$analyze_spellcheckerlanguage = 0;
 	%spellcheckerlanguagehash = ();
 	%spellcheckerfilehash = ();
@@ -403,11 +392,8 @@ BEGIN
 	$officedirhostname = "";
 	$basisdirhostname = "";
 	$uredirhostname = "";
-	$sundirhostname = "";
 	$officedirgid = "";
 	$basisdirgid = "";
-	$uredirgid = "";
-	$sundirgid = "";
 	
 	%sign_extensions = ("dll" => "1", "exe" => "1", "cab" => "1");
 	%treestyles = ();
@@ -418,20 +404,15 @@ BEGIN
 	%usedtreeconditions = ();
 	%moduledestination = ();
 	
-	$one_cab_file = 0;
 	$fix_number_of_cab_files = 1;
-	$cab_file_per_component = 0;
 	$cabfilecompressionlevel = 2;
 	$number_of_cabfiles = 1;	# only for $fix_number_of_cab_files = 1 
 	$include_cab_in_msi = 0;
-	$use_packages_for_cabs = 0;
 	$msidatabasename = "";
 	$prepare_winpatch = 0;
 	$previous_idt_dir = "";	
 	$updatepack = 0;
 	$msitranpath = "";
-	$insert_file_at_end = 0;
-	$newfilesexist = 0;
 	$usesharepointpath = 0;
 	%newfilescollector = ();
 
@@ -451,7 +432,6 @@ BEGIN
 
 	$postprocess_specialepm = 0;
 	$postprocess_standardepm = 0;
-	$mergemodules_analyzed = 0;
 	
 	$starttime = "";
 
@@ -461,7 +441,7 @@ BEGIN
 	@environmentvariables = ( "SOLARVERSION", "GUI", "WORK_STAMP", "OUTPATH", "LOCAL_OUT", "LOCAL_COMMON_OUT" );
 	@packagelistitems = ("module", "solarispackagename", "packagename", "copyright", "vendor", "description" );
 	@languagepackfeature =();
-	@featurecollector =();
+	%featurecollector =();
 	$msiassemblyfiles = "";
 	$nsisfilename = "Nsis";
 	$macinstallfilename = "macinstall.ulf";
@@ -509,10 +489,6 @@ BEGIN
 		$isunix = 0;
 		$iswin = 1;
         $archiveformat = ".zip";
-		%savedmapping = ();
-		%savedrevmapping = ();
-		%savedrev83mapping = ();
-		%saved83dirmapping = ();
 	}
 	elsif ( $plat =~ /os2/i )
 	{ 
@@ -559,6 +535,13 @@ BEGIN
 
 	# ToDo: Needs to be expanded for additional platforms
 
+    $is_release = 0;  # Is changed in parameter.pm when the -release option is given.
+    $source_version = undef;
+    $target_version = undef;
+    $source_msi = undef;
+
+    # Is set to 1 when target_version is a major version, ie ?.0.0
+    $is_major_release = 0;
 }
 
 1;

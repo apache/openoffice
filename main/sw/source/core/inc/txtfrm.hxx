@@ -26,7 +26,7 @@
 #include <tools/mempool.hxx>
 #include <tools/string.hxx>
 #include "cntfrm.hxx"
-
+#include "com/sun/star/uno/Sequence.hxx"
 #define STRSIZE(x) (sizeof(x)-1)
 
 class SwCharRange;
@@ -229,6 +229,7 @@ protected:
 
 public:
 
+	com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop >  GetTabStopInfo( SwTwips CurrentPos );
 	//public, weil der eine oder andere die Methode rufen darf um das
 	//Prepare zu sparen - mit Vorsicht zu geniessen!
 	void Init();

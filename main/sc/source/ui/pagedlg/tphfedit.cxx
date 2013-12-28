@@ -553,6 +553,8 @@ void __EXPORT ScEditWindow::Paint( const Rectangle& rRec )
 	Control::Paint(	rRec );
 
 	pEdView->Paint( rRec );
+	if( HasFocus() )
+		pEdView->ShowCursor(sal_True,sal_True);
 }
 
 // -----------------------------------------------------------------------
@@ -594,6 +596,12 @@ void __EXPORT ScEditWindow::KeyInput( const KeyEvent& rKEvt )
 	{
 		Control::KeyInput( rKEvt );
 	}
+	else if ( !rKEvt.GetKeyCode().IsMod1() && !rKEvt.GetKeyCode().IsShift() &&
+		    	rKEvt.GetKeyCode().IsMod2() && rKEvt.GetKeyCode().GetCode() == KEY_DOWN )
+	{
+		if (aObjectSelectLink.IsSet() )			
+			aObjectSelectLink.Call(this);
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -607,6 +615,7 @@ void ScEditWindow::Command( const CommandEvent& rCEvt )
 
 void __EXPORT ScEditWindow::GetFocus()
 {
+	pEdView->ShowCursor(sal_True,sal_True);
 	pActiveEdWnd = this;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > xTemp = xAcc;

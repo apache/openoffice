@@ -304,7 +304,11 @@ public:
     // read by the binary filter:
     virtual void UpdateLinks();
     // <--
+	virtual void setDocAccTitle( const String& rTitle );
+	virtual const String getDocAccTitle() const;
 
+	void setDocReadOnly( sal_Bool bReadOnly);
+	sal_Bool getDocReadOnly() const;
     ::com::sun::star::uno::Reference< ::com::sun::star::frame::XController >
                                 GetController();
 

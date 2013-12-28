@@ -26,6 +26,7 @@
 #include <accfrmobj.hxx>
 
 #include <svx/svdtypes.hxx>
+#include <tools/gen.hxx>
 
 #include <map>
 
@@ -43,25 +44,50 @@ public:
     inline SwAccessibleChildMapKey()
         : eLayerId( INVALID )
         , nOrdNum( 0 )
+        , nPosNum( 0, 0 )
     {}
 
     inline SwAccessibleChildMapKey( LayerId eId, sal_uInt32 nOrd )
         : eLayerId( eId )
         , nOrdNum( nOrd )
+        , nPosNum( 0, 0 )
+    {}
+
+    inline SwAccessibleChildMapKey( LayerId eId, sal_uInt32 nOrd, Point nPos )
+        : eLayerId( eId )
+        , nOrdNum( nOrd )
+        , nPosNum( nPos )
     {}
 
     inline bool operator()( const SwAccessibleChildMapKey& r1,
                             const SwAccessibleChildMapKey& r2 ) const
     {
-        return (r1.eLayerId == r2.eLayerId)
-               ? (r1.nOrdNum < r2.nOrdNum)
-               : (r1.eLayerId < r2.eLayerId);
+//        return (r1.eLayerId == r2.eLayerId)
+//               ? (r1.nOrdNum < r2.nOrdNum)
+//               : (r1.eLayerId < r2.eLayerId);
+	return (r1.eLayerId == r2.eLayerId) ? 
+		   ( (r1.nPosNum == r2.nPosNum) ?(r1.nOrdNum < r2.nOrdNum) : 
+		   (r1.nPosNum.getY() == r2.nPosNum.getY()? r1.nPosNum.getX() < r2.nPosNum.getX() : 
+		   	r1.nPosNum.getY() < r2.nPosNum.getY()) ) :
+		   (r1.eLayerId < r2.eLayerId);
     }
+    
+    /* MT: Need to get this position parameter stuff in dev300 somehow...
+	//This methods are used to insert an object to the map, adding a position parameter.
+	::std::pair< iterator, bool > insert( sal_uInt32 nOrd, Point nPos, 
+										  const SwFrmOrObj& rLower );	
+	::std::pair< iterator, bool > insert( const SdrObject *pObj,
+								   	 	  const SwFrmOrObj& rLower,
+									   	  const SwDoc *pDoc,
+									   	  Point nPos);	
+	*/
 
 private:
 
     LayerId eLayerId;
     sal_uInt32 nOrdNum;
+    
+	Point nPosNum; 
 
 };
 

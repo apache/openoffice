@@ -2213,6 +2213,9 @@ IMPL_LINK( SvxAreaTabPage, ClickBitmapHdl_Impl, void *, EMPTYARG )
 	aMtrFldYOffset.Show();
     aFlPosition.Show();
 	aRbtRow.Show();
+	//Solution:Check one when initializing.
+	if(!aRbtRow.IsChecked()&&!aRbtColumn.IsChecked())
+	        aRbtRow.Check();
 	aRbtColumn.Show();
 	aMtrFldOffset.Show();
     aFlOffset.Show();

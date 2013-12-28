@@ -448,6 +448,8 @@ public:
     
     static void                 ShowNativeErrorBox(const String& sTitle  ,
                                                    const String& sMessage);
+	static bool					EnableAccessInterface(bool bEnable);
+	static bool					IsEnableAccessInterface();
 
     // IME Status Window Control:
 
@@ -514,4 +516,25 @@ inline void Application::EndYield()
     PostUserEvent( Link() );
 }
 
+#ifdef WNT
+VCL_DLLPUBLIC sal_Bool HasAtHook();
+VCL_DLLPUBLIC bool IsWNTInitAccessBridge();
+bool WNTEnableAccessInterface(bool bEnable);
+
+class VCL_DLLPUBLIC CEnableAccessInterface
+{
+public:
+	CEnableAccessInterface(bool bEnable = false)
+	{
+		m_bIsEnableAccessInterface = Application::IsEnableAccessInterface();
+		Application::EnableAccessInterface(bEnable);
+	}
+	~CEnableAccessInterface()
+	{
+		Application::EnableAccessInterface(m_bIsEnableAccessInterface);
+	}
+private:
+	bool m_bIsEnableAccessInterface;
+};
+#endif
 #endif // _APP_HXX

@@ -1243,8 +1243,7 @@ void SwXShape::setPropertyValue(const rtl::OUString& rPropertyName, const uno::A
                                     .SetFlyFmt();
 
                                 //The connection is removed now the attribute can be deleted.
-                                pTxtNode->DeleteAttributes(
-                                    RES_TXTATR_FLYCNT, nIdx );
+                                pTxtNode->DeleteAttributes( RES_TXTATR_FLYCNT, nIdx );
                                 //create a new one
                                 SwTxtNode *pNd = pInternalPam->GetNode()->GetTxtNode();
                                 DBG_ASSERT( pNd, "Cursor not at TxtNode." );
@@ -2068,7 +2067,7 @@ void SwXShape::attach(const uno::Reference< text::XTextRange > & xTextRange)
             {
                 uno::Any aPos;
                 aPos <<= xTextRange;
-                setPropertyValue(S2U("TextRange"), aPos);
+                setPropertyValue( C2U("TextRange"), aPos);
                 uno::Reference< drawing::XShape > xTemp( (cppu::OWeakObject*) this, uno::UNO_QUERY );
                 xDP->add( xTemp );
             }

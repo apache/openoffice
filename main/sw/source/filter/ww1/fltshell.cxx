@@ -142,17 +142,24 @@ void SwFltStackEntry::SetEndPos(const SwPosition& rEndPos)
 //because it is beyond the length of para...need special consideration here.
 bool SwFltStackEntry::IsAbleMakeRegion()
 {
-	 SwCntntNode *const pCntntNode(
-        SwNodeIndex(nMkNode, +1).GetNode().GetCntntNode());
-    	if ((nMkNode.GetIndex() == nPtNode.GetIndex()) && (nMkCntnt == nPtCntnt)
-        && ((0 != nPtCntnt) || (pCntntNode && (0 != pCntntNode->Len())))
-        && ((RES_TXTATR_FIELD != pAttr->Which())
-        && !(bIsParaEnd && pCntntNode && pCntntNode->IsTxtNode() && 0 != pCntntNode->Len() )))
-	{
-		return false;
-	}
+    SwCntntNode *const pCntntNode( SwNodeIndex(nMkNode, +1).GetNode().GetCntntNode() );
+    if ( (nMkNode.GetIndex() == nPtNode.GetIndex())
+         && (nMkCntnt == nPtCntnt)
+         && ( (0 != nPtCntnt)
+              || ( pCntntNode
+                   && ( 0 != pCntntNode->Len() ) ) )
+         && ( RES_TXTATR_FIELD != pAttr->Which()
+              && RES_TXTATR_ANNOTATION != pAttr->Which()
+              && RES_TXTATR_INPUTFIELD != pAttr->Which() )
+         && !( bIsParaEnd
+               && pCntntNode
+               && pCntntNode->IsTxtNode()
+               && 0 != pCntntNode->Len() ) )
+    {
+        return false;
+    }
 
-	return true;
+    return true;
 }
 //End
 sal_Bool SwFltStackEntry::MakeRegion(SwDoc* pDoc, SwPaM& rRegion, sal_Bool bCheck )
@@ -479,13 +486,13 @@ bool SwFltControlStack::HasSdOD()
 //End
 void SwFltControlStack::SetAttrInDoc(const SwPosition& rTmpPos, SwFltStackEntry* pEntry)
 {
-	SwPaM aRegion( rTmpPos );
+    SwPaM aRegion( rTmpPos );
 
-	switch(pEntry->pAttr->Which())
-	{
-	case RES_FLTR_ANCHOR:
-		{
-			SwFrmFmt* pFmt = ((SwFltAnchor*)pEntry->pAttr)->GetFrmFmt();
+    switch(pEntry->pAttr->Which())
+    {
+    case RES_FLTR_ANCHOR:
+        {
+            SwFrmFmt* pFmt = ((SwFltAnchor*)pEntry->pAttr)->GetFrmFmt();
             if (pFmt != NULL)
             {
                 MakePoint(pEntry, pDoc, aRegion);
@@ -500,14 +507,19 @@ void SwFltControlStack::SetAttrInDoc(const SwPosition& rTmpPos, SwFltStackEntry*
                     pFmt->MakeFrms();
                 }
             }
-		}
-		break;
-	case RES_FLTR_STYLESHEET:
-		break;
-	case RES_TXTATR_FIELD:
-		break;
-	case RES_TXTATR_TOXMARK:
-		break;
+        }
+        break;
+    case RES_FLTR_STYLESHEET:
+        break;
+
+    case RES_TXTATR_FIELD:
+    case RES_TXTATR_ANNOTATION:
+    case RES_TXTATR_INPUTFIELD:
+        break;
+
+    case RES_TXTATR_TOXMARK:
+        break;
+
 	case RES_FLTR_NUMRULE:			// Numrule 'reinsetzen
 		{
 			const String& rNumNm = ((SfxStringItem*)pEntry->pAttr)->GetValue();

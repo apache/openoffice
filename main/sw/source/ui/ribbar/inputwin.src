@@ -28,6 +28,8 @@
 #include "globals.hrc"
 #include "ribbar.hrc"
 #include "inputwin.hrc"
+#include "access.hrc"
+
 ToolBox RID_TBX_FORMULA
 {
 	Pos = MAP_APPFONT ( 0 , 0 ) ;
@@ -278,6 +280,18 @@ Menu MN_CALC_POPUP
 String STR_TBL_FORMULA
 {
 	Text [ en-US ] = "Text formula" ;
+};
+String STR_ACCESS_FORMULA_TOOLBAR
+{
+	Text [ en-US ] = "Formula Tool Bar" ;
+};
+String STR_ACCESS_FORMULA_TYPE
+{
+	Text [ en-US ] = "Formula Type" ;
+};
+String STR_ACCESS_FORMULA_TEXT
+{
+	Text [ en-US ] = "Formula Text" ;
 };
 #define TB_INPUT  \
     ToolBoxItem\

@@ -257,7 +257,7 @@ SwFmt::~SwFmt()
 		}
 		else
 		{
-			while( GetDepends() )
+			while( GetDepends() && pParentFmt)
 			{
 				SwFmtChg aOldFmt(this);
 				SwFmtChg aNewFmt(pParentFmt);

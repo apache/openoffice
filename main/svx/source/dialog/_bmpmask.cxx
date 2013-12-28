@@ -137,6 +137,7 @@ void MaskSet::Select()
 
 void MaskSet::GetFocus()
 {
+	ValueSet::GetFocus();
 	SelectItem( 1 );
 	pSvxBmpMask->onSelect( this );
 }
@@ -327,10 +328,11 @@ IMPL_LINK( MaskData, CbxTransHdl, CheckBox*, pCbx )
 
 IMPL_LINK( MaskData, FocusLbHdl, ColorLB*, pLb )
 {
-	pMask->pQSet1->SelectItem( pLb == &( pMask->aLbColor1 ) ? 1 : 0 );
-	pMask->pQSet2->SelectItem( pLb == &( pMask->aLbColor2 ) ? 1 : 0 );
-	pMask->pQSet3->SelectItem( pLb == &( pMask->aLbColor3 ) ? 1 : 0 );
-	pMask->pQSet4->SelectItem( pLb == &( pMask->aLbColor4 ) ? 1 : 0 );
+	// MT: bFireFox as API parameter is ugly, find better solution????
+	pMask->pQSet1->SelectItem( pLb == &( pMask->aLbColor1 ) ? 1 : 0 /* , false */ );
+	pMask->pQSet2->SelectItem( pLb == &( pMask->aLbColor2 ) ? 1 : 0 /* , false */ );
+	pMask->pQSet3->SelectItem( pLb == &( pMask->aLbColor3 ) ? 1 : 0 /* , false */ );
+	pMask->pQSet4->SelectItem( pLb == &( pMask->aLbColor4 ) ? 1 : 0 /* , false */ );
 
 	return 0;
 }
@@ -477,35 +479,48 @@ SvxBmpMask::SvxBmpMask( SfxBindings *pBindinx,
 	pQSet1->SetColCount( 1 );
 	pQSet1->SetLineCount( 1 );
 //	pQSet1->SetExtraSpacing( 1 );
-	pQSet1->InsertItem( 1, aPipetteColor );
+	String sColorPalette (BMP_RESID( RID_SVXDLG_BMPMASK_STR_PALETTE));
+    String sColorPaletteN;
+    sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
+	//pQSet1->InsertItem( 1, aPipetteColor );
+	pQSet1->InsertItem( 1, aPipetteColor, sColorPaletteN);
 	pQSet1->SelectItem( 1 );
 
 	pQSet2->SetStyle( pQSet2->GetStyle() | WB_DOUBLEBORDER | WB_ITEMBORDER );
 	pQSet2->SetColCount( 1 );
 	pQSet2->SetLineCount( 1 );
 //	pQSet2->SetExtraSpacing( 1 );
-	pQSet2->InsertItem( 1, aPipetteColor );
+	sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
+	//pQSet2->InsertItem( 1, aPipetteColor );
+	pQSet2->InsertItem( 1, aPipetteColor, sColorPaletteN);
 	pQSet2->SelectItem( 0 );
 
 	pQSet3->SetStyle( pQSet3->GetStyle() | WB_DOUBLEBORDER | WB_ITEMBORDER );
 	pQSet3->SetColCount( 1 );
 	pQSet3->SetLineCount( 1 );
 //	pQSet3->SetExtraSpacing( 1 );
-	pQSet3->InsertItem( 1, aPipetteColor );
+	sColorPaletteN = sColorPalette;
+ 	sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
+	pQSet3->InsertItem( 1, aPipetteColor, sColorPaletteN);
+	//pQSet3->InsertItem( 1, aPipetteColor );
 	pQSet3->SelectItem( 0 );
 
 	pQSet4->SetStyle( pQSet4->GetStyle() | WB_DOUBLEBORDER | WB_ITEMBORDER );
 	pQSet4->SetColCount( 1 );
 	pQSet4->SetLineCount( 1 );
 //	pQSet4->SetExtraSpacing( 1 );
-	pQSet4->InsertItem( 1, aPipetteColor );
+	sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 4"));
+	pQSet4->InsertItem( 1, aPipetteColor, sColorPaletteN);
+	//pQSet4->InsertItem( 1, aPipetteColor );
 	pQSet4->SelectItem( 0 );
 
 	pQSet1->Show();
 	pQSet2->Show();
 	pQSet3->Show();
 	pQSet4->Show();
-
 	aCbx1.SetAccessibleRelationMemberOf( &aGrpQ );
 	pQSet1->SetAccessibleRelationMemberOf( &aGrpQ );
 	aSp1.SetAccessibleRelationMemberOf( &aGrpQ );
@@ -1271,4 +1286,49 @@ void SvxBmpMask::SetAccessibleNames (void)
     sSourceColorN = sSourceColor;
     sSourceColorN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 4"));
     aCbx4.SetAccessibleName (sSourceColorN);
+	// set the accessible name for valueset
+	String sColorPalette (BMP_RESID( RID_SVXDLG_BMPMASK_STR_PALETTE));
+    String sColorPaletteN;
+    sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
+    pQSet1->SetText (sColorPaletteN);
+    sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
+    pQSet2->SetText (sColorPaletteN);
+    sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
+    pQSet3->SetText (sColorPaletteN);
+    sColorPaletteN = sColorPalette;
+    sColorPaletteN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 4"));
+    pQSet4->SetText (sColorPaletteN);
+    // set the accessible for replace with spin boxes.
+	String sTolerance(BMP_RESID( RID_SVXDLG_BMPMASK_STR_TOLERANCE));
+    String sToleranceN;
+    sToleranceN = sTolerance;
+    sToleranceN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
+    aSp1.SetAccessibleName (sToleranceN);
+    sToleranceN = sTolerance;
+    sToleranceN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
+    aSp2.SetAccessibleName (sToleranceN);
+    sToleranceN = sTolerance;
+    sToleranceN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
+    aSp3.SetAccessibleName (sToleranceN);
+    sToleranceN = sTolerance;
+    sToleranceN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 4"));
+    aSp4.SetAccessibleName (sToleranceN);
+    // set the accessible for replace with combo boxes.
+   	String sReplaceWith(BMP_RESID( RID_SVXDLG_BMPMASK_STR_REPLACEWITH));
+    String sReplaceWithN;
+    sReplaceWithN = sReplaceWith;
+    sReplaceWithN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
+    aLbColor1.SetAccessibleName (sReplaceWithN);
+    sReplaceWithN = sReplaceWith;
+    sReplaceWithN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
+    aLbColor2.SetAccessibleName (sReplaceWithN);
+    sReplaceWithN = sReplaceWith;
+    sReplaceWithN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
+    aLbColor3.SetAccessibleName (sReplaceWithN);
+    sReplaceWithN = sReplaceWith;
+    sReplaceWithN.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 4"));
+    aLbColor4.SetAccessibleName (sReplaceWithN); 
 }
