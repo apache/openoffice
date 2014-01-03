@@ -37,11 +37,7 @@
 #include <editeng/brshitem.hxx>
 #include <editeng/splwrap.hxx>
 #include <editeng/pgrditem.hxx>
-// --> OD 2008-01-17 #newlistlevelattrs#
-#ifndef _SVX_TSTPITEM_HXX
 #include <editeng/tstpitem.hxx>
-#endif
-// <--
 
 #include <SwSmartTagMgr.hxx>
 #include <linguistic/lngprops.hxx>
@@ -57,9 +53,7 @@
 #include <viewopt.hxx>	// SwViewOptions
 #include <frmtool.hxx>	// DrawGraphic
 #include <IDocumentSettingAccess.hxx>
-#ifndef IDOCUMENTDEVICEACCESS_HXX_INCLUDED
 #include <IDocumentDeviceAccess.hxx>
-#endif
 #include <paratr.hxx>	// SwFmtDrop
 #include <rootfrm.hxx>  // SwRootFrm
 #include <inftxt.hxx>	// SwTxtInfo
@@ -74,9 +68,7 @@
 #include <pam.hxx>
 #include <SwGrammarMarkUp.hxx>
 #include <cstdio>
-// --> FME 2004-06-08 #i12836# enhanced pdf export
 #include <EnhancedPDFExportHelper.hxx>
-// <--
 
 #include <unomid.h>
 

@@ -770,17 +770,20 @@ void SwTxtNode::GetMinMaxSize( sal_uLong nIndex, sal_uLong& rMin, sal_uLong &rMa
 							nAdd = 20;
 						break;
 					}
-					case RES_TXTATR_FIELD :
-					{
-						SwField *pFld = (SwField*)pHint->GetFmtFld().GetField();
-                        const String aTxt = pFld->ExpandField(true);
-						if( lcl_MinMaxString( aArg, aIter.GetFnt(),	aTxt, 0,
-							aTxt.Len() ) )
-							nAdd = 20;
-						break;
-					}
-					default: aArg.nWordWidth = nOldWidth;
-							 aArg.nWordAdd = nOldAdd;
+
+                    case RES_TXTATR_FIELD :
+                    case RES_TXTATR_ANNOTATION :
+                        {
+                            SwField *pFld = (SwField*)pHint->GetFmtFld().GetField();
+                            const String aTxt = pFld->ExpandField(true);
+                            if( lcl_MinMaxString( aArg, aIter.GetFnt(),	aTxt, 0,
+                                aTxt.Len() ) )
+                                nAdd = 20;
+                            break;
+                        }
+
+                    default: aArg.nWordWidth = nOldWidth;
+                        aArg.nWordAdd = nOldAdd;
 
 				}
 				aIter.SeekAndChgAttrIter( ++nIdx, pOut );
@@ -959,37 +962,40 @@ sal_uInt16 SwTxtNode::GetScalingOfSelectedText(	xub_StrLen nStt, xub_StrLen nEnd
             XubString sTmp( cChar );
             SwDrawTextInfo aDrawInf( pSh, *pOut, 0, sTmp, 0, 1 );
             nProWidth += aIter.GetFnt()->_GetTxtSize( aDrawInf ).Width();
-			nIdx++;
+            nIdx++;
         }
-		else if ( pHint && ( cChar == CH_TXTATR_BREAKWORD || CH_TXTATR_INWORD ) )
-		{
-			switch( pHint->Which() )
-			{
-				case RES_TXTATR_FTN :
-				{
-					const XubString aTxt = pHint->GetFtn().GetNumStr();
+        else if ( pHint && ( cChar == CH_TXTATR_BREAKWORD || CH_TXTATR_INWORD ) )
+        {
+            switch( pHint->Which() )
+            {
+            case RES_TXTATR_FTN :
+                {
+                    const XubString aTxt = pHint->GetFtn().GetNumStr();
                     SwDrawTextInfo aDrawInf( pSh, *pOut, 0, aTxt, 0, aTxt.Len() );
 
                     nProWidth += aIter.GetFnt()->_GetTxtSize( aDrawInf ).Width();
-					break;
-				}
-				case RES_TXTATR_FIELD :
-				{
-					SwField *pFld = (SwField*)pHint->GetFmtFld().GetField();
+                    break;
+                }
+
+            case RES_TXTATR_FIELD :
+            case RES_TXTATR_ANNOTATION :
+                {
+                    SwField *pFld = (SwField*)pHint->GetFmtFld().GetField();
                     String const aTxt = pFld->ExpandField(true);
                     SwDrawTextInfo aDrawInf( pSh, *pOut, 0, aTxt, 0, aTxt.Len() );
 
                     nProWidth += aIter.GetFnt()->_GetTxtSize( aDrawInf ).Width();
-					break;
-				}
-				default:
-				{
-				// any suggestions for a default action?
-				}
-			} // end of switch
-			nIdx++;
-		} // end of while
-	}
+                    break;
+                }
+
+            default:
+                {
+                    // any suggestions for a default action?
+                }
+            } // end of switch
+            nIdx++;
+        } // end of while
+    }
 
 	nWidth = Max( nWidth, nProWidth );
 

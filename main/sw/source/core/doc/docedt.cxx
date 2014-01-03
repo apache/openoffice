@@ -72,6 +72,9 @@
 #include <vcl/msgbox.hxx>
 #include "comcore.hrc"
 #include "editsh.hxx"
+#include <fldbas.hxx>
+#include <fmtfld.hxx>
+#include <docufld.hxx>
 #include <unoflatpara.hxx>
 #include <SwGrammarMarkUp.hxx>
 

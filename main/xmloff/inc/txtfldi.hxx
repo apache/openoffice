@@ -1342,30 +1342,39 @@ protected:
 };
 
 
-/** Import an annotation field (<text:annotation>) */
+/** Import an annotation field (<office:annotation>) */
 class XMLAnnotationImportContext : public XMLTextFieldImportContext
 {
-	const ::rtl::OUString sPropertyAuthor;
-	const ::rtl::OUString sPropertyContent;
-	const ::rtl::OUString sPropertyDate;
-	const ::rtl::OUString sPropertyTextRange;
+    const ::rtl::OUString sPropertyName;
+    const ::rtl::OUString sPropertyAuthor;
+    const ::rtl::OUString sPropertyInitials;
+    const ::rtl::OUString sPropertyContent;
+    const ::rtl::OUString sPropertyDate;
+    const ::rtl::OUString sPropertyTextRange;
 
-	::rtl::OUStringBuffer aAuthorBuffer;
-	::rtl::OUStringBuffer aTextBuffer;
-	::rtl::OUStringBuffer aDateBuffer;
+    ::rtl::OUString aName;
 
-	com::sun::star::uno::Reference < com::sun::star::beans::XPropertySet > mxField;
-	com::sun::star::uno::Reference < com::sun::star::text::XTextCursor >  mxCursor;
-	com::sun::star::uno::Reference < com::sun::star::text::XTextCursor >  mxOldCursor;
+    ::rtl::OUStringBuffer aAuthorBuffer;
+    ::rtl::OUStringBuffer aInitialsBuffer;
+    ::rtl::OUStringBuffer aTextBuffer;
+    ::rtl::OUStringBuffer aDateBuffer;
+
+    com::sun::star::uno::Reference < com::sun::star::beans::XPropertySet > mxField;
+    com::sun::star::uno::Reference < com::sun::star::text::XTextCursor >  mxCursor;
+    com::sun::star::uno::Reference < com::sun::star::text::XTextCursor >  mxOldCursor;
+
+    const sal_uInt16 m_nToken;
 
 public:
 
-	TYPEINFO();
+    TYPEINFO();
 
-	XMLAnnotationImportContext(SvXMLImport& rImport,
-							   XMLTextImportHelper& rHlp,
-							   sal_uInt16 nPrfx,
-							   const ::rtl::OUString& sLocalName);
+    XMLAnnotationImportContext(
+        SvXMLImport& rImport,
+        XMLTextImportHelper& rHlp,
+        sal_uInt16 nToken,
+        sal_uInt16 nPrfx,
+        const ::rtl::OUString& sLocalName);
 
 protected:
 
@@ -1375,8 +1384,7 @@ protected:
 
 	/// set properties
 	virtual void PrepareField(
-		const ::com::sun::star::uno::Reference<
-		::com::sun::star::beans::XPropertySet> & xPropertySet);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & xPropertySet);
 
 	virtual SvXMLImportContext *CreateChildContext(
 		sal_uInt16 nPrefix,

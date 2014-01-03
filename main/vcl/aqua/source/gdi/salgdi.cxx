@@ -45,7 +45,7 @@
 #include "aqua/salframe.h"
 #include "aqua/salcolorutils.hxx"
 #ifdef USE_ATSU
-#include "aqua/salatsuifontutils.hxx"
+#include "atsfonts.hxx"
 #else // !USE_ATSU
 #include "ctfonts.hxx"
 #endif
