@@ -32,8 +32,9 @@ PROJECTPCHSOURCE=..\pch\filt_pch
 
 AUTOSEG=true
 
-
 # --- Settings -----------------------------------------------------
+
+.INCLUDE :  $(PRJ)$/util$/makefile.pmk
 
 .INCLUDE :  scpre.mk
 .INCLUDE :  settings.mk

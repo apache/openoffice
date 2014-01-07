@@ -19,34 +19,19 @@
 #  
 #**************************************************************
 
+# Mac OSX specific defines
 
+PROCESSOR_DEFINES=-DX86_64
 
-PRJ=..$/..$/..
+DLLPOSTFIX=
 
-PRJNAME=sc
-TARGET=scflt
+# flags to enable build with symbols; required by crashdump feature
+.IF "$(ENABLE_SYMBOLS)"=="SMALL"
+CFLAGSENABLESYMBOLS=-g1
+.ELSE
+CFLAGSENABLESYMBOLS=-g
+.ENDIF
 
-PROJECTPCH4DLL=TRUE
-PROJECTPCH=filt_pch
-PROJECTPCHSOURCE=..\pch\filt_pch
-
-AUTOSEG=true
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
-
-.INCLUDE :  scpre.mk
-.INCLUDE :  settings.mk
-.INCLUDE :  sc.mk
-
-# --- Files --------------------------------------------------------
-
-SLOFILES =						\
-		$(SLO)$/scflt.obj		\
-		$(SLO)$/scfobj.obj
-
-# --- Tagets -------------------------------------------------------
-
-.INCLUDE :  target.mk
+# Include generic Mac OS X makefile
+.INCLUDE : unxmacc.mk
 

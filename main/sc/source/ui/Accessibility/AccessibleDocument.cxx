@@ -1014,10 +1014,13 @@ sal_Bool ScChildrenShapes::FindSelectedShapesChanges(const uno::Reference<drawin
             ++aDataItr;
     }
 	bool bWinFocus=false;
-	ScGridWindow* pWin = static_cast<ScGridWindow*>(mpViewShell->GetWindowByPos(meSplitPos));
-	if (pWin)
+	if (mpViewShell)
 	{
-		bWinFocus = pWin->HasFocus();
+		ScGridWindow* pWin = static_cast<ScGridWindow*>(mpViewShell->GetWindowByPos(meSplitPos));
+		if (pWin)
+		{
+			bWinFocus = pWin->HasFocus();
+		}
 	}
 	const SdrMarkList* pMarkList = NULL;
 	SdrObject* pMarkedObj = NULL;
@@ -2263,6 +2266,7 @@ uno::Reference < XAccessible >
 		mpAccessibleSpreadsheet->acquire();
 		mpAccessibleSpreadsheet->Init();
 		mbCompleteSheetSelected = IsTableSelected();
+		mpAccessibleSpreadsheet->FireFirstCellFocus(); // i123622
 	}
 	return mpAccessibleSpreadsheet;
 }
