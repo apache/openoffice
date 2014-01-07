@@ -2274,16 +2274,43 @@ void SwBaseShell::GetBckColState(SfxItemSet &rSet)
     SvxBrushItem aBrushItem( RES_BACKGROUND );
 
 	if( nsSelectionType::SEL_TBL_CELLS & nSelType )
+    {
 		rSh.GetBoxBackground( aBrushItem );
-	else
-	{
-		SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
-		if( nSelType & nsSelectionType::SEL_GRF || nsSelectionType::SEL_FRM & nSelType )
-			rSh.GetFlyFrmAttr( aCoreSet );
-		else
+    }
+    else
+    {
+        //UUUU
+        if(nSelType & nsSelectionType::SEL_GRF)
+        {
+            SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
+
+            rSh.GetFlyFrmAttr( aCoreSet );
+            aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
+        }
+        else if(nsSelectionType::SEL_FRM & nSelType)
+        {
+            SfxItemSet aCoreSet(GetPool(), XATTR_FILL_FIRST, XATTR_FILL_LAST);
+            const XFillStyleItem& rXFillStyleItem(static_cast< const XFillStyleItem&  >(aCoreSet.Get(XATTR_FILLSTYLE)));
+
+            if(XFILL_SOLID == rXFillStyleItem.GetValue())
+            {
+                const Color aFillColor(static_cast< const XFillColorItem& >(aCoreSet.Get(XATTR_FILLCOLOR)).GetColorValue());
+
+                aBrushItem.SetColor(aFillColor);
+            }
+            else
+            {
+                // keep default in SvxBrushItem which equals no fill
+            }
+        }
+        else
+        {
+            SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
+
             rSh.GetCurAttr( aCoreSet );
-		aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
-	}
+            aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
+        }
+    }
 
 	while ( nWhich )
 	{
@@ -2325,18 +2352,43 @@ void SwBaseShell::ExecBckCol(SfxRequest& rReq)
     SvxBrushItem aBrushItem( RES_BACKGROUND );
 
     if( nsSelectionType::SEL_TBL_CELLS & nSelType )
-	{
-		rSh.GetBoxBackground( aBrushItem );
-	}
-	else
-	{
-		SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
-		if( (nsSelectionType::SEL_FRM & nSelType) || (nsSelectionType::SEL_GRF & nSelType) )
-			rSh.GetFlyFrmAttr( aCoreSet );
-		else
+    {
+        rSh.GetBoxBackground( aBrushItem );
+    }
+    else
+    {
+        //UUUU
+        if(nSelType & nsSelectionType::SEL_GRF)
+        {
+            SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
+
+            rSh.GetFlyFrmAttr( aCoreSet );
+            aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
+        }
+        else if(nsSelectionType::SEL_FRM & nSelType)
+        {
+            SfxItemSet aCoreSet(GetPool(), XATTR_FILL_FIRST, XATTR_FILL_LAST);
+            const XFillStyleItem& rXFillStyleItem(static_cast< const XFillStyleItem&  >(aCoreSet.Get(XATTR_FILLSTYLE)));
+
+            if(XFILL_SOLID == rXFillStyleItem.GetValue())
+            {
+                const Color aFillColor(static_cast< const XFillColorItem& >(aCoreSet.Get(XATTR_FILLCOLOR)).GetColorValue());
+
+                aBrushItem.SetColor(aFillColor);
+            }
+            else
+            {
+                // keep default in SvxBrushItem which equals no fill
+            }
+        }
+        else
+        {
+            SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
+
             rSh.GetCurAttr( aCoreSet );
-		aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
-	}
+            aBrushItem = (const SvxBrushItem&)aCoreSet.Get(RES_BACKGROUND);
+        }
+    }
 
 //	sal_Bool bMsgOk = sal_False;
 
@@ -2381,33 +2433,54 @@ void SwBaseShell::ExecBckCol(SfxRequest& rReq)
 	}
 
     if( nsSelectionType::SEL_TBL_CELLS & nSelType )
-	{
-		rSh.SetBoxBackground( aBrushItem );
-	}
-	else if( (nsSelectionType::SEL_FRM & nSelType) ||
-		(nsSelectionType::SEL_GRF & nSelType)  )
-	{
-		SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
-		aCoreSet.Put( aBrushItem );
-		// Vorlagen-AutoUpdate
-		SwFrmFmt* pFmt = rSh.GetCurFrmFmt();
-		if(pFmt && pFmt->IsAutoUpdateFmt())
-			rSh.AutoUpdateFrame( pFmt, aCoreSet);
-		else
-			rSh.SetFlyFrmAttr( aCoreSet );
-	}
-	else
-	{
-		SwTxtFmtColl* pColl = rSh.GetCurTxtFmtColl();
-		if(	pColl && pColl->IsAutoUpdateFmt())
-		{
-			SfxItemSet aSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND );
-			aSet.Put(aBrushItem);
-			rSh.AutoUpdatePara( pColl, aSet);
-		}
-		else
-			rSh.SetAttrItem( aBrushItem );
-	}
+    {
+        rSh.SetBoxBackground( aBrushItem );
+    }
+    //UUUU
+    else if(nsSelectionType::SEL_GRF & nSelType)
+    {
+        SfxItemSet aCoreSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND);
+        aCoreSet.Put( aBrushItem );
+        // Vorlagen-AutoUpdate
+        SwFrmFmt* pFmt = rSh.GetCurFrmFmt();
+        if(pFmt && pFmt->IsAutoUpdateFmt())
+            rSh.AutoUpdateFrame( pFmt, aCoreSet);
+        else
+            rSh.SetFlyFrmAttr( aCoreSet );
+    }
+    else if(nsSelectionType::SEL_FRM & nSelType)
+    {
+        SfxItemSet aCoreSet(GetPool(), XATTR_FILL_FIRST, XATTR_FILL_LAST);
+        const XubString aNullStr;
+
+        // set FillStyle and color when applying
+        aCoreSet.Put(XFillStyleItem(XFILL_SOLID));
+        aCoreSet.Put(XFillColorItem(aNullStr, aBrushItem.GetColor()));
+
+        // Vorlagen-AutoUpdate
+        SwFrmFmt* pFmt = rSh.GetCurFrmFmt();
+
+        if(pFmt && pFmt->IsAutoUpdateFmt())
+        {
+            rSh.AutoUpdateFrame( pFmt, aCoreSet);
+        }
+        else
+        {
+            rSh.SetFlyFrmAttr( aCoreSet );
+        }
+    }
+    else
+    {
+        SwTxtFmtColl* pColl = rSh.GetCurTxtFmtColl();
+        if(	pColl && pColl->IsAutoUpdateFmt())
+        {
+            SfxItemSet aSet(GetPool(), RES_BACKGROUND, RES_BACKGROUND );
+            aSet.Put(aBrushItem);
+            rSh.AutoUpdatePara( pColl, aSet);
+        }
+        else
+            rSh.SetAttrItem( aBrushItem );
+    }
 
     rReq.Done();
 }

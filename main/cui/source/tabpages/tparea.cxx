@@ -2322,92 +2322,117 @@ IMPL_LINK( SvxAreaTabPage, ModifyStepCountHdl_Impl, void *, p )
 
 IMPL_LINK( SvxAreaTabPage, ModifyTileHdl_Impl, void *, EMPTYARG )
 {
-	TriState eState = aTsbTile.GetState();
-	if( eState == STATE_CHECK )
-	{
-		aTsbStretch.Disable();
-		aRbtRow.Enable();
-		aRbtColumn.Enable();
-		aMtrFldOffset.Enable();
+    TriState eState = aTsbTile.GetState();
+    if( eState == STATE_CHECK )
+    {
+        // tiled
+        // disable stretched for tiled graphic
+        aTsbStretch.Disable();
+
+        // allow tile offset
+        aRbtRow.Enable();
+        aRbtColumn.Enable();
+        aMtrFldOffset.Enable();
         aFlOffset.Enable();
 
-		aCtlPosition.Enable();
-		aCtlPosition.Invalidate();
-		aFtXOffset.Enable();
-		aMtrFldXOffset.Enable();
-		aFtYOffset.Enable();
-		aMtrFldYOffset.Enable();
+        // allow positioning
+        aCtlPosition.Enable();
+        aCtlPosition.Invalidate();
+        aFtXOffset.Enable();
+        aMtrFldXOffset.Enable();
+        aFtYOffset.Enable();
+        aMtrFldYOffset.Enable();
         aFlPosition.Enable();
 
-		aTsbScale.Enable();
-		aTsbOriginal.Enable();
-		aFtXSize.Enable();
-		aMtrFldXSize.Enable();
-		aFtYSize.Enable();
-		aMtrFldYSize.Enable();
+        // allow size definitions
+        aTsbScale.Enable();
+        aTsbOriginal.Enable();
+        aFtXSize.Enable();
+        aMtrFldXSize.Enable();
+        aFtYSize.Enable();
+        aMtrFldYSize.Enable();
         aFlSize.Enable();
-	}
-	else if( eState == STATE_NOCHECK )
-	{
-		aTsbStretch.Enable();
-		aRbtRow.Disable();
-		aRbtColumn.Disable();
-		aMtrFldOffset.Disable();
+    }
+    else if( eState == STATE_NOCHECK )
+    {
+        // non-tiled
+        // enable stretch selection
+        aTsbStretch.Enable();
+
+        // no need for tile offset
+        aRbtRow.Disable();
+        aRbtColumn.Disable();
+        aMtrFldOffset.Disable();
         aFlOffset.Disable();
 
-		aCtlPosition.Disable();
-		aCtlPosition.Invalidate();
-		aFtXOffset.Disable();
-		aMtrFldXOffset.Disable();
-		aFtYOffset.Disable();
-		aMtrFldYOffset.Disable();
-        aFlPosition.Disable();
+        if( aTsbStretch.GetState() != STATE_NOCHECK )
+        {
+            // non-tiled, stretched
+            // no need for positioning
+            aCtlPosition.Disable();
+            aCtlPosition.Invalidate();
+            aFtXOffset.Disable();
+            aMtrFldXOffset.Disable();
+            aFtYOffset.Disable();
+            aMtrFldYOffset.Disable();
+            aFlPosition.Disable();
 
-		if( aTsbStretch.GetState() != STATE_NOCHECK )
-		{
-			aTsbScale.Disable();
-			aTsbOriginal.Disable();
-			aFtXSize.Disable();
-			aMtrFldXSize.Disable();
-			aFtYSize.Disable();
-			aMtrFldYSize.Disable();
+            // no need for size definitions
+            aTsbScale.Disable();
+            aTsbOriginal.Disable();
+            aFtXSize.Disable();
+            aMtrFldXSize.Disable();
+            aFtYSize.Disable();
+            aMtrFldYSize.Disable();
             aFlSize.Disable();
-		}
-		else
-		{
-			aTsbScale.Enable();
-			aTsbOriginal.Enable();
-			aFtXSize.Enable();
-			aMtrFldXSize.Enable();
-			aFtYSize.Enable();
-			aMtrFldYSize.Enable();
+        }
+        else
+        {
+            // non-tiled, non-stretched
+            // allow positioning
+            aCtlPosition.Enable();
+            aCtlPosition.Invalidate();
+            aFtXOffset.Enable();
+            aMtrFldXOffset.Enable();
+            aFtYOffset.Enable();
+            aMtrFldYOffset.Enable();
+            aFlPosition.Enable();
+
+            // allow size definitions
+            aTsbScale.Enable();
+            aTsbOriginal.Enable();
+            aFtXSize.Enable();
+            aMtrFldXSize.Enable();
+            aFtYSize.Enable();
+            aMtrFldYSize.Enable();
             aFlSize.Enable();
-		}
-	}
-	else
-	{
-		aTsbStretch.Disable();
-		aRbtRow.Disable();
-		aRbtColumn.Disable();
-		aMtrFldOffset.Disable();
+        }
+    }
+    else
+    {
+        // disable all when tiling is undefined
+        aTsbStretch.Disable();
+        aRbtRow.Disable();
+        aRbtColumn.Disable();
+        aMtrFldOffset.Disable();
         aFlOffset.Disable();
 
-		aCtlPosition.Disable();
-		aCtlPosition.Invalidate();
-		aFtXOffset.Disable();
-		aMtrFldXOffset.Disable();
-		aFtYOffset.Disable();
-		aMtrFldYOffset.Disable();
+        aCtlPosition.Disable();
+        aCtlPosition.Invalidate();
+        aFtXOffset.Disable();
+        aMtrFldXOffset.Disable();
+        aFtYOffset.Disable();
+        aMtrFldYOffset.Disable();
         aFlPosition.Disable();
 
-		aTsbScale.Disable();
-		aTsbOriginal.Disable();
-		aFtXSize.Disable();
-		aMtrFldXSize.Disable();
-		aFtYSize.Disable();
-		aMtrFldYSize.Disable();
+        aTsbScale.Disable();
+        aTsbOriginal.Disable();
+        aFtXSize.Disable();
+        aMtrFldXSize.Disable();
+        aFtYSize.Disable();
+        aMtrFldYSize.Disable();
         aFlSize.Disable();
-	}
+    }
 
 	if( aTsbOriginal.GetState() == STATE_CHECK )
 	{

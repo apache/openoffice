@@ -49,10 +49,12 @@ namespace drawinglayer
 			{
                 // #i108255# no need to use correctOrientations here; target is
                 // straight visualisation
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                basegfx::B2DPolyPolygon aTransformed(getUnitPolyPolygon());
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        getUnitPolyPolygon(), 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -66,22 +68,24 @@ namespace drawinglayer
                         false,
                         getUnitPolyPolygon(),
                         getTransform()));
-			}
-			else
-			{
-				Primitive2DSequence aTemp(getUnitPolyPolygon().count());
+            }
+            else
+            {
+                Primitive2DSequence aTemp(getUnitPolyPolygon().count());
 
-				for(sal_uInt32 a(0); a < getUnitPolyPolygon().count(); a++)
-				{
-					aTemp[a] = createPolygonLinePrimitive(
-                        getUnitPolyPolygon().getB2DPolygon(a), 
-                        getTransform(), 
+                for(sal_uInt32 a(0); a < getUnitPolyPolygon().count(); a++)
+                {
+                    basegfx::B2DPolygon aTransformed(getUnitPolyPolygon().getB2DPolygon(a));
+
+                    aTransformed.transform(getTransform());
+                    aTemp[a] = createPolygonLinePrimitive(
+                        aTransformed, 
                         getSdrLFSTAttribute().getLine(), 
                         getSdrLFSTAttribute().getLineStartEnd());
-				}
+                }
 
-				appendPrimitive2DSequenceToPrimitive2DSequence(aRetval, aTemp);
-			}
+                appendPrimitive2DSequenceToPrimitive2DSequence(aRetval, aTemp);
+            }
 
 			// add text
 			if(!getSdrLFSTAttribute().getText().isDefault())

@@ -1435,93 +1435,102 @@ namespace drawinglayer
 
 					break;
 				}
-				case PRIMITIVE2D_ID_POLYPOLYGONHATCHPRIMITIVE2D :
-				{
-					// need to handle PolyPolygonHatchPrimitive2D here to support XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END
-					const primitive2d::PolyPolygonHatchPrimitive2D& rHatchCandidate = static_cast< const primitive2d::PolyPolygonHatchPrimitive2D& >(rCandidate);
-				    const attribute::FillHatchAttribute& rFillHatchAttribute = rHatchCandidate.getFillHatch();
-					basegfx::B2DPolyPolygon aLocalPolyPolygon(rHatchCandidate.getB2DPolyPolygon());
+                case PRIMITIVE2D_ID_POLYPOLYGONHATCHPRIMITIVE2D :
+                {
+                    // need to handle PolyPolygonHatchPrimitive2D here to support XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END
+                    const primitive2d::PolyPolygonHatchPrimitive2D& rHatchCandidate = static_cast< const primitive2d::PolyPolygonHatchPrimitive2D& >(rCandidate);
+                    const attribute::FillHatchAttribute& rFillHatchAttribute = rHatchCandidate.getFillHatch();
+                    basegfx::B2DPolyPolygon aLocalPolyPolygon(rHatchCandidate.getB2DPolyPolygon());
+
+                    if(aLocalPolyPolygon.getB2DRange() != rHatchCandidate.getDefinitionRange())
+                    {
+                        // the range which defines the hatch is different from the range of the
+                        // geometry (used for writer frames). This cannot be done calling vcl, thus use 
+                        // decomposition here
+                        process(rCandidate.get2DDecomposition(getViewInformation2D()));
+                        break;
+                    }
 
                     // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
                     // per polygon. Split polygon until there are less than that
                     while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
                         ;
 
-					if(rFillHatchAttribute.isFillBackground())
-					{
-						// with fixing #i111954# (see below) the possible background
-						// fill of a hatched object was lost.Generate a background fill 
-						// primitive and render it
-					    const primitive2d::Primitive2DReference xBackground(
-							new primitive2d::PolyPolygonColorPrimitive2D(
-								aLocalPolyPolygon, 
-								rHatchCandidate.getBackgroundColor()));
-						
-						process(primitive2d::Primitive2DSequence(&xBackground, 1));
-					}
+                    if(rFillHatchAttribute.isFillBackground())
+                    {
+                        // with fixing #i111954# (see below) the possible background
+                        // fill of a hatched object was lost.Generate a background fill 
+                        // primitive and render it
+                        const primitive2d::Primitive2DReference xBackground(
+                            new primitive2d::PolyPolygonColorPrimitive2D(
+                                aLocalPolyPolygon, 
+                                rHatchCandidate.getBackgroundColor()));
+                        
+                        process(primitive2d::Primitive2DSequence(&xBackground, 1));
+                    }
 
                     SvtGraphicFill* pSvtGraphicFill = 0;
-				    aLocalPolyPolygon.transform(maCurrentTransformation);
+                    aLocalPolyPolygon.transform(maCurrentTransformation);
 
-				    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
-				    {
-					    // re-create a VCL hatch as base data
-					    SvtGraphicFill::HatchType eHatch(SvtGraphicFill::hatchSingle);
+                    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
+                    {
+                        // re-create a VCL hatch as base data
+                        SvtGraphicFill::HatchType eHatch(SvtGraphicFill::hatchSingle);
 
-					    switch(rFillHatchAttribute.getStyle())
-					    {
-						    default: // attribute::HATCHSTYLE_SINGLE : 
-						    {
-							    eHatch = SvtGraphicFill::hatchSingle;
-							    break;
-						    }
-						    case attribute::HATCHSTYLE_DOUBLE :
-						    {
-							    eHatch = SvtGraphicFill::hatchDouble;
-							    break;
-						    }
-						    case attribute::HATCHSTYLE_TRIPLE :
-						    {
-							    eHatch = SvtGraphicFill::hatchTriple;
-							    break;
-						    }
-					    }
+                        switch(rFillHatchAttribute.getStyle())
+                        {
+                            default: // attribute::HATCHSTYLE_SINGLE : 
+                            {
+                                eHatch = SvtGraphicFill::hatchSingle;
+                                break;
+                            }
+                            case attribute::HATCHSTYLE_DOUBLE :
+                            {
+                                eHatch = SvtGraphicFill::hatchDouble;
+                                break;
+                            }
+                            case attribute::HATCHSTYLE_TRIPLE :
+                            {
+                                eHatch = SvtGraphicFill::hatchTriple;
+                                break;
+                            }
+                        }
 
-					    SvtGraphicFill::Transform aTransform;
-						
-					    // scale
-					    aTransform.matrix[0] *= rFillHatchAttribute.getDistance();
-					    aTransform.matrix[4] *= rFillHatchAttribute.getDistance();
+                        SvtGraphicFill::Transform aTransform;
+                        
+                        // scale
+                        aTransform.matrix[0] *= rFillHatchAttribute.getDistance();
+                        aTransform.matrix[4] *= rFillHatchAttribute.getDistance();
 
-					    // rotate (was never correct in impgrfll anyways, use correct angle now)
-					    aTransform.matrix[0] *= cos(rFillHatchAttribute.getAngle());
-					    aTransform.matrix[1] *= -sin(rFillHatchAttribute.getAngle());
-					    aTransform.matrix[3] *= sin(rFillHatchAttribute.getAngle());
-					    aTransform.matrix[4] *= cos(rFillHatchAttribute.getAngle());
-						
-					    pSvtGraphicFill = new SvtGraphicFill(
-						    PolyPolygon(aLocalPolyPolygon),
-						    Color(),
-						    0.0,
-						    SvtGraphicFill::fillEvenOdd,
-						    SvtGraphicFill::fillHatch,
-						    aTransform,
-						    false,
-						    eHatch,
-						    Color(rFillHatchAttribute.getColor()),
-						    SvtGraphicFill::gradientLinear,
-						    Color(),
-						    Color(),
-						    0,
-						    Graphic());
-				    }
+                        // rotate (was never correct in impgrfll anyways, use correct angle now)
+                        aTransform.matrix[0] *= cos(rFillHatchAttribute.getAngle());
+                        aTransform.matrix[1] *= -sin(rFillHatchAttribute.getAngle());
+                        aTransform.matrix[3] *= sin(rFillHatchAttribute.getAngle());
+                        aTransform.matrix[4] *= cos(rFillHatchAttribute.getAngle());
+                        
+                        pSvtGraphicFill = new SvtGraphicFill(
+                            PolyPolygon(aLocalPolyPolygon),
+                            Color(),
+                            0.0,
+                            SvtGraphicFill::fillEvenOdd,
+                            SvtGraphicFill::fillHatch,
+                            aTransform,
+                            false,
+                            eHatch,
+                            Color(rFillHatchAttribute.getColor()),
+                            SvtGraphicFill::gradientLinear,
+                            Color(),
+                            Color(),
+                            0,
+                            Graphic());
+                    }
 
-				    // Do use decomposition; encapsulate with SvtGraphicFill
-				    impStartSvtGraphicFill(pSvtGraphicFill);
+                    // Do use decomposition; encapsulate with SvtGraphicFill
+                    impStartSvtGraphicFill(pSvtGraphicFill);
 
                     // #i111954# do NOT use decomposition, but use direct VCL-command
-			        // process(rCandidate.get2DDecomposition(getViewInformation2D()));
-			        const PolyPolygon aToolsPolyPolygon(aLocalPolyPolygon);
+                    // process(rCandidate.get2DDecomposition(getViewInformation2D()));
+                    const PolyPolygon aToolsPolyPolygon(aLocalPolyPolygon);
                     const HatchStyle aHatchStyle(
                         attribute::HATCHSTYLE_SINGLE == rFillHatchAttribute.getStyle() ? HATCH_SINGLE :
                         attribute::HATCHSTYLE_DOUBLE == rFillHatchAttribute.getStyle() ? HATCH_DOUBLE :
@@ -1535,9 +1544,9 @@ namespace drawinglayer
 
                     impEndSvtGraphicFill(pSvtGraphicFill);
 
-					break;
-				}
-				case PRIMITIVE2D_ID_POLYPOLYGONGRADIENTPRIMITIVE2D :
+                    break;
+                }
+                case PRIMITIVE2D_ID_POLYPOLYGONGRADIENTPRIMITIVE2D :
                 {
                     basegfx::B2DVector aScale, aTranslate;
                     double fRotate, fShearX;
@@ -1564,77 +1573,85 @@ namespace drawinglayer
                         // BTW: One more example how useful the principles of primitives are; the decomposition
                         // is by definition a simpler, maybe more expensive representation of the same content.
                         process(rCandidate.get2DDecomposition(getViewInformation2D()));
+                        break;
                     }
-                    else
+
+                    const primitive2d::PolyPolygonGradientPrimitive2D& rGradientCandidate = static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate);
+                    basegfx::B2DPolyPolygon aLocalPolyPolygon(rGradientCandidate.getB2DPolyPolygon());
+
+                    if(aLocalPolyPolygon.getB2DRange() != rGradientCandidate.getDefinitionRange())
                     {
-					    const primitive2d::PolyPolygonGradientPrimitive2D& rGradientCandidate = static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate);
-			            basegfx::B2DPolyPolygon aLocalPolyPolygon(rGradientCandidate.getB2DPolyPolygon());
-
-                        // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
-                        // per polygon. Split polygon until there are less than that
-                        while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
-                            ;
-
-                        // for support of MetaCommentActions of the form XGRAD_SEQ_BEGIN, XGRAD_SEQ_END
-                        // it is safest to use the VCL OutputDevice::DrawGradient method which creates those.
-                        // re-create a VCL-gradient from FillGradientPrimitive2D and the needed tools PolyPolygon
-				        Gradient aVCLGradient;
-                        impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
-		                aLocalPolyPolygon.transform(maCurrentTransformation);
-                    
-				        // #i82145# ATM VCL printing of gradients using curved shapes does not work,
-				        // i submitted the bug with the given ID to THB. When that task is fixed it is
-				        // necessary to again remove this subdivision since it decreases possible
-				        // printing quality (not even resolution-dependent for now). THB will tell
-				        // me when that task is fixed in the master
-				        const PolyPolygon aToolsPolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(aLocalPolyPolygon));
-
-				        // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
-				        SvtGraphicFill* pSvtGraphicFill = 0;
-
-				        if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
-				        {
-					        // setup gradient stuff like in like in impgrfll
-					        SvtGraphicFill::GradientType eGrad(SvtGraphicFill::gradientLinear);
-
-					        switch(aVCLGradient.GetStyle())
-					        {
-						        default : // GRADIENT_LINEAR:
-						        case GRADIENT_AXIAL:
-							        eGrad = SvtGraphicFill::gradientLinear;
-							        break;
-						        case GRADIENT_RADIAL:
-						        case GRADIENT_ELLIPTICAL:
-							        eGrad = SvtGraphicFill::gradientRadial;
-							        break;
-						        case GRADIENT_SQUARE:
-						        case GRADIENT_RECT:
-							        eGrad = SvtGraphicFill::gradientRectangular;
-							        break;
-					        }
-						
-					        pSvtGraphicFill = new SvtGraphicFill(
-						        aToolsPolyPolygon,
-						        Color(),
-						        0.0,
-						        SvtGraphicFill::fillEvenOdd,
-						        SvtGraphicFill::fillGradient,
-						        SvtGraphicFill::Transform(),
-						        false,
-						        SvtGraphicFill::hatchSingle,
-						        Color(),
-						        eGrad,
-						        aVCLGradient.GetStartColor(),
-						        aVCLGradient.GetEndColor(),
-						        aVCLGradient.GetSteps(),
-						        Graphic());
-				        }
-
-				        // call VCL directly; encapsulate with SvtGraphicFill
-				        impStartSvtGraphicFill(pSvtGraphicFill);
-		                mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
-				        impEndSvtGraphicFill(pSvtGraphicFill);
+                        // the range which defines the gradient is different from the range of the
+                        // geometry (used for writer frames). This cannot be done calling vcl, thus use 
+                        // decomposition here
+                        process(rCandidate.get2DDecomposition(getViewInformation2D()));
+                        break;
                     }
+
+                    // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
+                    // per polygon. Split polygon until there are less than that
+                    while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
+                        ;
+
+                    // for support of MetaCommentActions of the form XGRAD_SEQ_BEGIN, XGRAD_SEQ_END
+                    // it is safest to use the VCL OutputDevice::DrawGradient method which creates those.
+                    // re-create a VCL-gradient from FillGradientPrimitive2D and the needed tools PolyPolygon
+                    Gradient aVCLGradient;
+                    impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
+                    aLocalPolyPolygon.transform(maCurrentTransformation);
+                    
+                    // #i82145# ATM VCL printing of gradients using curved shapes does not work,
+                    // i submitted the bug with the given ID to THB. When that task is fixed it is
+                    // necessary to again remove this subdivision since it decreases possible
+                    // printing quality (not even resolution-dependent for now). THB will tell
+                    // me when that task is fixed in the master
+                    const PolyPolygon aToolsPolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(aLocalPolyPolygon));
+
+                    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
+                    SvtGraphicFill* pSvtGraphicFill = 0;
+
+                    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
+                    {
+                        // setup gradient stuff like in like in impgrfll
+                        SvtGraphicFill::GradientType eGrad(SvtGraphicFill::gradientLinear);
+
+                        switch(aVCLGradient.GetStyle())
+                        {
+                            default : // GRADIENT_LINEAR:
+                            case GRADIENT_AXIAL:
+                                eGrad = SvtGraphicFill::gradientLinear;
+                                break;
+                            case GRADIENT_RADIAL:
+                            case GRADIENT_ELLIPTICAL:
+                                eGrad = SvtGraphicFill::gradientRadial;
+                                break;
+                            case GRADIENT_SQUARE:
+                            case GRADIENT_RECT:
+                                eGrad = SvtGraphicFill::gradientRectangular;
+                                break;
+                        }
+                        
+                        pSvtGraphicFill = new SvtGraphicFill(
+                            aToolsPolyPolygon,
+                            Color(),
+                            0.0,
+                            SvtGraphicFill::fillEvenOdd,
+                            SvtGraphicFill::fillGradient,
+                            SvtGraphicFill::Transform(),
+                            false,
+                            SvtGraphicFill::hatchSingle,
+                            Color(),
+                            eGrad,
+                            aVCLGradient.GetStartColor(),
+                            aVCLGradient.GetEndColor(),
+                            aVCLGradient.GetSteps(),
+                            Graphic());
+                    }
+
+                    // call VCL directly; encapsulate with SvtGraphicFill
+                    impStartSvtGraphicFill(pSvtGraphicFill);
+                    mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
+                    impEndSvtGraphicFill(pSvtGraphicFill);
 
                     break;
                 }

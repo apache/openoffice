@@ -26,6 +26,8 @@
 
 #include <drawinglayer/primitive2d/baseprimitive2d.hxx>
 
+#include <svx/svxdllapi.h>
+
 //////////////////////////////////////////////////////////////////////////////
 // predefines
 namespace basegfx {
@@ -47,30 +49,34 @@ namespace drawinglayer { namespace attribute {
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
-		Primitive2DReference createPolyPolygonFillPrimitive(
-			const basegfx::B2DPolyPolygon& rUnitPolyPolygon, 
-			const basegfx::B2DHomMatrix& rObjectTransform,
-			const attribute::SdrFillAttribute& rFill,
-			const attribute::FillGradientAttribute& rFillGradient);
+    namespace primitive2d
+    {
+        Primitive2DReference SVX_DLLPUBLIC createPolyPolygonFillPrimitive(
+            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const attribute::SdrFillAttribute& rFill,
+            const attribute::FillGradientAttribute& rFillGradient);
 
-		Primitive2DReference createPolygonLinePrimitive(
-			const basegfx::B2DPolygon& rUnitPolygon, 
-			const basegfx::B2DHomMatrix& rObjectTransform,
-			const attribute::SdrLineAttribute& rLine,
-			const attribute::SdrLineStartEndAttribute& rStroke);
+        Primitive2DReference SVX_DLLPUBLIC createPolyPolygonFillPrimitive(
+            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const attribute::SdrFillAttribute& rFill,
+            const attribute::FillGradientAttribute& rFillGradient);
 
-		Primitive2DReference createTextPrimitive(
-			const basegfx::B2DPolyPolygon& rUnitPolyPolygon, 
-			const basegfx::B2DHomMatrix& rObjectTransform,
-			const attribute::SdrTextAttribute& rText,
-			const attribute::SdrLineAttribute& rStroke,
-			bool bCellText,
+        Primitive2DReference SVX_DLLPUBLIC createPolygonLinePrimitive(
+            const basegfx::B2DPolygon& rPolygon, 
+            const attribute::SdrLineAttribute& rLine,
+            const attribute::SdrLineStartEndAttribute& rStroke);
+
+        Primitive2DReference SVX_DLLPUBLIC createTextPrimitive(
+            const basegfx::B2DPolyPolygon& rUnitPolyPolygon, 
+            const basegfx::B2DHomMatrix& rObjectTransform,
+            const attribute::SdrTextAttribute& rText,
+            const attribute::SdrLineAttribute& rStroke,
+            bool bCellText,
             bool bWordWrap,
-			bool bClipOnBounds);
+            bool bClipOnBounds);
 
-        Primitive2DSequence createEmbeddedShadowPrimitive(
+        Primitive2DSequence SVX_DLLPUBLIC createEmbeddedShadowPrimitive(
             const Primitive2DSequence& rContent, 
             const attribute::SdrShadowAttribute& rShadow);
 

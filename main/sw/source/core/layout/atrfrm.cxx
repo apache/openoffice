@@ -106,6 +106,16 @@
 #include <svl/cjkoptions.hxx>
 #include <switerator.hxx>
 #include <pagedeschint.hxx>
+#include <svx/sdr/primitive2d/sdrattributecreator.hxx>
+
+//UUUU
+#include <svx/sdr/primitive2d/sdrdecompositiontools.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
+#include <basegfx/matrix/b2dhommatrix.hxx>
+#include <basegfx/polygon/b2dpolygon.hxx>
+#include <drawinglayer/attribute/fillhatchattribute.hxx>
+#include <drawinglayer/attribute/sdrfillgraphicattribute.hxx>
+#include <svx/xfillit0.hxx>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -2470,12 +2480,196 @@ SfxPoolItem* SwHeaderAndFooterEatSpacingItem::Clone( SfxItemPool* ) const
     return new SwHeaderAndFooterEatSpacingItem( Which(), GetValue() );
 }
 
+//////////////////////////////////////////////////////////////////////////////
+//UUUU FillAttributes
 
+void FillAttributes::createPrimitive2DSequence(
+    const basegfx::B2DRange& rPaintRange,
+    const basegfx::B2DRange& rDefineRange)
+{
+    // reset and remember new target range for object geometry
+    maLastPaintRange = rPaintRange;
+    maLastDefineRange = rDefineRange;
+
+    if(isUsed())
+    {
+        maPrimitives.realloc(1);
+        maPrimitives[0] = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
+            basegfx::B2DPolyPolygon(
+                basegfx::tools::createPolygonFromRect(
+                    maLastPaintRange)), 
+                maLastDefineRange,
+            maFillAttribute.get() ? *maFillAttribute.get() : drawinglayer::attribute::SdrFillAttribute(),
+            maFillGradientAttribute.get() ? *maFillGradientAttribute.get() : drawinglayer::attribute::FillGradientAttribute());
+    }
+}
+
+FillAttributes::FillAttributes()
+:   maLastPaintRange(),
+    maLastDefineRange(),
+    maFillAttribute(),
+    maFillGradientAttribute(),
+    maPrimitives()
+{
+}
+
+FillAttributes::FillAttributes(const Color& rColor)
+:   maLastPaintRange(),
+    maLastDefineRange(),
+    maFillAttribute(),
+    maFillGradientAttribute(),
+    maPrimitives()
+{
+    maFillAttribute.reset(
+        new drawinglayer::attribute::SdrFillAttribute(
+            0.0,
+            Color(rColor.GetRGBColor()).getBColor(),
+            drawinglayer::attribute::FillGradientAttribute(),
+            drawinglayer::attribute::FillHatchAttribute(),
+            drawinglayer::attribute::SdrFillGraphicAttribute()));
+}
+
+FillAttributes::FillAttributes(const SfxItemSet& rSet)
+:   maLastPaintRange(),
+    maLastDefineRange(),
+    maFillAttribute(
+        new drawinglayer::attribute::SdrFillAttribute(
+            drawinglayer::primitive2d::createNewSdrFillAttribute(rSet))),
+    maFillGradientAttribute(
+        new drawinglayer::attribute::FillGradientAttribute(
+            drawinglayer::primitive2d::createNewTransparenceGradientAttribute(rSet))),
+    maPrimitives()
+{
+}
+
+FillAttributes::~FillAttributes()
+{
+}
+
+bool FillAttributes::isUsed() const
+{
+    // only depends on fill, FillGradientAttribute alone defines no fill
+    return maFillAttribute.get() && !maFillAttribute->isDefault();
+}
+
+bool FillAttributes::isTransparent() const
+{
+    if(hasSdrFillAttribute() && 0.0 != maFillAttribute->getTransparence())
+    {
+        return true;
+    }
+
+    if(hasFillGradientAttribute() && !maFillGradientAttribute->isDefault())
+    {
+        return true;
+    }
+
+    return false;
+}
+
+const drawinglayer::attribute::SdrFillAttribute& FillAttributes::getFillAttribute() const 
+{ 
+    if(!maFillAttribute.get())
+    {
+        const_cast< FillAttributes* >(this)->maFillAttribute.reset(new drawinglayer::attribute::SdrFillAttribute());
+    }
+
+    return *maFillAttribute.get(); 
+}
+
+const drawinglayer::attribute::FillGradientAttribute& FillAttributes::getFillGradientAttribute() const 
+{ 
+    if(!maFillGradientAttribute.get())
+    {
+        const_cast< FillAttributes* >(this)->maFillGradientAttribute.reset(new drawinglayer::attribute::FillGradientAttribute());
+    }
+
+    return *maFillGradientAttribute.get(); 
+}
+
+const drawinglayer::primitive2d::Primitive2DSequence& FillAttributes::getPrimitive2DSequence(
+    const basegfx::B2DRange& rPaintRange,
+    const basegfx::B2DRange& rDefineRange) const
+{
+    if(maPrimitives.getLength() && (maLastPaintRange != rPaintRange || maLastDefineRange != rDefineRange))
+    {
+        const_cast< FillAttributes* >(this)->maPrimitives.realloc(0);
+    }
+
+    if(!maPrimitives.getLength())
+    {
+        const_cast< FillAttributes* >(this)->createPrimitive2DSequence(rPaintRange, rDefineRange);
+    }
+
+    return maPrimitives;
+}
+
+//////////////////////////////////////////////////////////////////////////////
 //  class SwFrmFmt
 //	Implementierung teilweise inline im hxx
 
 TYPEINIT1( SwFrmFmt, SwFmt );
 IMPL_FIXEDMEMPOOL_NEWDEL_DLL( SwFrmFmt, 20, 20 )
+
+SwFrmFmt::SwFrmFmt( 
+    SwAttrPool& rPool, 
+    const sal_Char* pFmtNm,
+    SwFrmFmt *pDrvdFrm, 
+    sal_uInt16 nFmtWhich,
+    const sal_uInt16* pWhichRange)
+:   SwFmt(rPool, pFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange), pDrvdFrm, nFmtWhich),
+    m_wXObject(),
+    maFillAttributes(),
+    pCaptionFmt(0)
+{
+    //UUUU
+    if(RES_FLYFRMFMT == nFmtWhich)
+    {
+        // when its a SwFlyFrmFmt do not do this, this setting
+        // will be derived from the parent style. In the future this
+        // may be needed for more formats; all which use the 
+        // XATTR_FILL_FIRST, XATTR_FILL_LAST range as fill attributes
+#ifdef DBG_UTIL
+        bool bBla = true; // allow setting a breakpoint here in debug mode
+#endif
+    }
+    else
+    {
+        // set FillStyle to none; this is necessary since the pool default is
+        // to fill objects by color (blue8)
+        SetFmtAttr(XFillStyleItem(XFILL_NONE));
+    }
+}
+
+SwFrmFmt::SwFrmFmt( 
+    SwAttrPool& rPool, 
+    const String &rFmtNm,
+    SwFrmFmt *pDrvdFrm, 
+    sal_uInt16 nFmtWhich,
+    const sal_uInt16* pWhichRange)
+:   SwFmt(rPool, rFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange), pDrvdFrm, nFmtWhich),
+    m_wXObject(),
+    maFillAttributes(),
+    pCaptionFmt(0)
+{
+    //UUUU
+    if(RES_FLYFRMFMT == nFmtWhich)
+    {
+        // when its a SwFlyFrmFmt do not do this, this setting
+        // will be derived from the parent style. In the future this
+        // may be needed for more formats; all which use the 
+        // XATTR_FILL_FIRST, XATTR_FILL_LAST range as fill attributes
+#ifdef DBG_UTIL
+        bool bBla = true; // allow setting a breakpoint here in debug mode
+#endif
+    }
+    else
+    {
+        // set FillStyle to none; this is necessary since the pool default is
+        // to fill objects by color (blue8)
+        SetFmtAttr(XFillStyleItem(XFILL_NONE));
+    }
+}
 
 void SwFrmFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
 {
@@ -2490,11 +2684,33 @@ void SwFrmFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
 			RES_HEADER, sal_False, (const SfxPoolItem**)&pH );
 		((SwAttrSetChg*)pNew)->GetChgSet()->GetItemState(
 			RES_FOOTER, sal_False, (const SfxPoolItem**)&pF );
-	}
-	else if( RES_HEADER == nWhich )
-		pH = (SwFmtHeader*)pNew;
-	else if( RES_FOOTER == nWhich )
-		pF = (SwFmtFooter*)pNew;
+
+        //UUUU reset fill information
+        if(maFillAttributes.get())
+        {
+            SfxItemIter aIter(*((SwAttrSetChg*)pNew)->GetChgSet());
+            bool bReset(false);
+
+            for(const SfxPoolItem* pItem = aIter.FirstItem(); pItem && !bReset; pItem = aIter.NextItem())
+            {
+                bReset = !IsInvalidItem(pItem) && pItem->Which() >= XATTR_FILL_FIRST && pItem->Which() <= XATTR_FILL_LAST;
+            }
+
+            if(bReset)
+            {
+                maFillAttributes.reset();
+            }
+        }
+    }
+    else if(RES_FMT_CHG == nWhich) //UUUU
+    {
+        // reset fill information on format change (e.g. style changed)
+        maFillAttributes.reset();
+    }
+    else if( RES_HEADER == nWhich )
+        pH = (SwFmtHeader*)pNew;
+    else if( RES_FOOTER == nWhich )
+        pF = (SwFmtFooter*)pNew;
 
 	if( pH && pH->IsActive() && !pH->GetHeaderFmt() )
 	{	//Hat er keinen, mach ich ihm einen
@@ -3310,3 +3526,16 @@ SwFrmFmt* SwFrmFmt::GetCaptionFmt() const
 {
 	return pCaptionFmt;
 }
+
+//UUUU
+FillAttributesPtr SwFrmFmt::getFillAttributes() const
+{
+    if(!maFillAttributes.get())
+    {
+        const_cast< SwFrmFmt* >(this)->maFillAttributes.reset(new FillAttributes(GetAttrSet()));
+    }
+
+    return maFillAttributes;
+}
+
+// eof

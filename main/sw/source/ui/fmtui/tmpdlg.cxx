@@ -250,7 +250,14 @@ SwTemplateDlg::SwTemplateDlg(Window*			pParent,
 										SwWrapTabPage::GetRanges );
             DBG_ASSERT(pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BACKGROUND ), "GetTabPageCreatorFunc fail!");
             DBG_ASSERT(pFact->GetTabPageRangesFunc( RID_SVXPAGE_BACKGROUND ), "GetTabPageRangesFunc fail!");
-            AddTabPage(TP_BACKGROUND, pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BACKGROUND ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BACKGROUND ) );
+
+            //UUUU remove?
+            //AddTabPage(TP_BACKGROUND, pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BACKGROUND ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BACKGROUND ) );
+
+            //UUUU add Area and Transparence TabPages
+            AddTabPage(RID_SVXPAGE_AREA);
+            AddTabPage(RID_SVXPAGE_TRANSPARENCE);
+
             DBG_ASSERT(pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BORDER ), "GetTabPageCreatorFunc fail!");
             DBG_ASSERT(pFact->GetTabPageRangesFunc( RID_SVXPAGE_BORDER ), "GetTabPageRangesFunc fail!");
             AddTabPage(TP_BORDER, pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BORDER ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BORDER ) );
@@ -510,6 +517,8 @@ void SwTemplateDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 			((SwColumnPage&)rPage).SetFormatUsed( sal_True );
 			break;
 
+        //UUUU do not remove; many other style dialog combinations still use the SfxTabPage
+        // for the SvxBrushItem (see RID_SVXPAGE_BACKGROUND)
 		case TP_BACKGROUND:
         {
             sal_Int32 nFlagType = 0;
@@ -632,6 +641,23 @@ void SwTemplateDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 			}
 			rPage.PageCreated(aSet);
 
+        break;
+
+        //UUUU inits for Area and Transparency TabPages
+        // the selection attribute lists (XPropertyList derivates, e.g. XColorList for
+        // the color table) need to be added as items (e.g. SvxColorTableItem) to make
+        // these pages find the needed attributes for fill style suggestions. These are
+        // added in SwDocStyleSheet::GetItemSet() for the SFX_STYLE_FAMILY_PARA on demand
+        case RID_SVXPAGE_AREA:
+        {
+            rPage.PageCreated(GetStyleSheet().GetItemSet());
+        }
+        break;
+
+        case RID_SVXPAGE_TRANSPARENCE:
+        {
+            rPage.PageCreated(GetStyleSheet().GetItemSet());
+        }
         break;
 	}
 }

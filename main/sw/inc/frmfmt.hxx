@@ -29,6 +29,12 @@
 #include <format.hxx>
 #include "swdllapi.h"
 
+//UUUU
+#include <drawinglayer/attribute/fillgradientattribute.hxx>
+#include <drawinglayer/attribute/sdrfillattribute.hxx>
+#include <drawinglayer/primitive2d/baseprimitive2d.hxx>
+#include <boost/shared_ptr.hpp>
+
 class SwFlyFrm;
 class SwAnchoredObject;
 class Graphic;
@@ -39,6 +45,41 @@ class SwRect;
 class SwContact;
 class SdrObject;
 
+//UUUU
+class FillAttributes
+{
+private:
+    basegfx::B2DRange                                                   maLastPaintRange;
+    basegfx::B2DRange                                                   maLastDefineRange;
+    boost::shared_ptr< drawinglayer::attribute::SdrFillAttribute >      maFillAttribute;
+    boost::shared_ptr< drawinglayer::attribute::FillGradientAttribute > maFillGradientAttribute;
+    drawinglayer::primitive2d::Primitive2DSequence                      maPrimitives;
+
+    void createPrimitive2DSequence(
+        const basegfx::B2DRange& rPaintRange,
+        const basegfx::B2DRange& rDefineRange);
+
+protected:
+public:
+    FillAttributes();
+    FillAttributes(const Color& rColor);
+    FillAttributes(const SfxItemSet& rSet);
+    ~FillAttributes();
+
+    bool isUsed() const;
+    bool hasSdrFillAttribute() const { return maFillAttribute.get(); }
+    bool hasFillGradientAttribute() const { return maFillGradientAttribute.get(); }
+    bool isTransparent() const;
+
+    const drawinglayer::attribute::SdrFillAttribute& getFillAttribute() const;
+    const drawinglayer::attribute::FillGradientAttribute& getFillGradientAttribute() const;
+    const drawinglayer::primitive2d::Primitive2DSequence& getPrimitive2DSequence(
+        const basegfx::B2DRange& rPaintRange,
+        const basegfx::B2DRange& rDefineRange) const;
+};
+
+typedef boost::shared_ptr< FillAttributes > FillAttributesPtr;
+
 class SW_DLLPUBLIC SwFrmFmt: public SwFmt
 {
 	friend class SwDoc;
@@ -47,23 +88,25 @@ class SW_DLLPUBLIC SwFrmFmt: public SwFmt
     ::com::sun::star::uno::WeakReference<
         ::com::sun::star::uno::XInterface> m_wXObject;
 
-protected:
-	SwFrmFmt* pCaptionFmt;
-	SwFrmFmt( SwAttrPool& rPool, const sal_Char* pFmtNm,
-				SwFrmFmt *pDrvdFrm, sal_uInt16 nFmtWhich = RES_FRMFMT,
-				const sal_uInt16* pWhichRange = 0 )
-	  	: SwFmt( rPool, pFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange),
-				pDrvdFrm, nFmtWhich )
-				,pCaptionFmt( NULL )
-	{}
+    //UUUU
+    FillAttributesPtr           maFillAttributes;
 
-	SwFrmFmt( SwAttrPool& rPool, const String &rFmtNm,
-				SwFrmFmt *pDrvdFrm, sal_uInt16 nFmtWhich = RES_FRMFMT,
-				const sal_uInt16* pWhichRange = 0 )
-	  	: SwFmt( rPool, rFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange),
-				pDrvdFrm, nFmtWhich )
-				,pCaptionFmt( NULL )
-	{}
+protected:
+    SwFrmFmt* pCaptionFmt;
+
+    SwFrmFmt( 
+        SwAttrPool& rPool, 
+        const sal_Char* pFmtNm,
+        SwFrmFmt *pDrvdFrm, 
+        sal_uInt16 nFmtWhich = RES_FRMFMT,
+        const sal_uInt16* pWhichRange = 0);
+
+    SwFrmFmt( 
+        SwAttrPool& rPool, 
+        const String &rFmtNm,
+        SwFrmFmt *pDrvdFrm, 
+        sal_uInt16 nFmtWhich = RES_FRMFMT,
+        const sal_uInt16* pWhichRange = 0);
 
    virtual void Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNewValue );
 
@@ -144,6 +187,9 @@ public:
 
 	DECL_FIXEDMEMPOOL_NEWDEL_DLL(SwFrmFmt)
     void RegisterToFormat( SwFmt& rFmt );
+
+    //UUUU
+    FillAttributesPtr getFillAttributes() const;
 };
 
 //Das FlyFrame-Format ------------------------------

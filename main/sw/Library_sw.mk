@@ -449,6 +449,7 @@ $(eval $(call gb_Library_add_exception_objects,sw,\
 	sw/source/core/unocore/unoport \
 	sw/source/core/unocore/unoportenum \
 	sw/source/core/unocore/unoprnms \
+	sw/source/core/unocore/unobrushitemhelper \
 	sw/source/core/unocore/unoredline \
 	sw/source/core/unocore/unoredlines \
 	sw/source/core/unocore/unorefmk \

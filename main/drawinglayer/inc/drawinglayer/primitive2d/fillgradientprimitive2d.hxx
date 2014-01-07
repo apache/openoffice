@@ -55,55 +55,64 @@ namespace drawinglayer
             version is used in the MetafilePrimitive2D decomposition when the old XOR
             paint was recorded.
          */
-		class DRAWINGLAYER_DLLPUBLIC FillGradientPrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
-            /// the geometric definition
-			basegfx::B2DRange						maObjectRange;
+        class DRAWINGLAYER_DLLPUBLIC FillGradientPrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
+            /// the geometrically visible area
+            basegfx::B2DRange                       maOutputRange;
+
+            /// the area the gradient definition is based on
+            /// in the simplest case identical to OutputRange
+            basegfx::B2DRange                       maDefinitionRange;
 
             /// the gradient definition
-			attribute::FillGradientAttribute		maFillGradient;
+            attribute::FillGradientAttribute        maFillGradient;
 
             /// local helpers
             void generateMatricesAndColors(
                 std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries, 
-                basegfx::BColor& rOutmostColor) const;
+                basegfx::BColor& rOuterColor) const;
             Primitive2DSequence createOverlappingFill(
                 const std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries, 
-                const basegfx::BColor& rOutmostColor,
+                const basegfx::BColor& rOuterColor,
                 const basegfx::B2DPolygon& rUnitPolygon) const;
             Primitive2DSequence createNonOverlappingFill(
                 const std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries, 
-                const basegfx::BColor& rOutmostColor,
+                const basegfx::BColor& rOuterColor,
                 const basegfx::B2DPolygon& rUnitPolygon) const;
 
-		protected:
+        protected:
             /// local helper
-    		Primitive2DSequence createFill(bool bOverlapping) const;
+            Primitive2DSequence createFill(bool bOverlapping) const;
 
             /// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
-            /// constructor
-			FillGradientPrimitive2D(
-				const basegfx::B2DRange& rObjectRange, 
-				const attribute::FillGradientAttribute& rFillGradient);
+        public:
+            /// constructors. The one without definition range will use output range as definition range
+            FillGradientPrimitive2D(
+                const basegfx::B2DRange& rOutputRange, 
+                const attribute::FillGradientAttribute& rFillGradient);
+            FillGradientPrimitive2D(
+                const basegfx::B2DRange& rOutputRange, 
+                const basegfx::B2DRange& rDefinitionRange, 
+                const attribute::FillGradientAttribute& rFillGradient);
 
-			/// data read access
-			const basegfx::B2DRange& getObjectRange() const { return maObjectRange; }
-			const attribute::FillGradientAttribute& getFillGradient() const { return maFillGradient; }
+            /// data read access
+            const basegfx::B2DRange& getOutputRange() const { return maOutputRange; }
+            const basegfx::B2DRange& getDefinitionRange() const { return maDefinitionRange; }
+            const attribute::FillGradientAttribute& getFillGradient() const { return maFillGradient; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
+            /// compare operator
+            virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

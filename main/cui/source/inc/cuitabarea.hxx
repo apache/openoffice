@@ -71,9 +71,7 @@ protected:
 #endif
 
 public:
-	SvxAreaTabDialog( Window* pParent,
-					  const SfxItemSet* pAttr, SdrModel* pModel,
-					  const SdrView* pSdrView = NULL );
+	SvxAreaTabDialog( Window* pParent, const SfxItemSet* pAttr, SdrModel* pModel, bool bShadow );
 	~SvxAreaTabDialog();
 
 	void SetNewColorTable( XColorListSharedPtr aColTab ) { maNewColorTab = aColTab; }
