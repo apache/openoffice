@@ -1321,17 +1321,21 @@ void SwFrameShell::ExecDrawDlgTextFrame(SfxRequest& rReq)
                 SdrModel* pDoc = pView->GetModel();
                 SfxItemSet aNewAttr(pDoc->GetItemPool());
 
+                // get attributes from FlyFrame
+                rSh.GetFlyFrmAttr(aNewAttr);
+
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 DBG_ASSERT(pFact, "Dialogdiet Factory fail!");
                 AbstractSvxAreaTabDialog * pDlg = pFact->CreateSvxAreaTabDialog(
                     NULL, 
                     &aNewAttr, 
                     pDoc, 
-false);
+                    false);
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
 
                 if(RET_OK == pDlg->Execute())
                 {
+                    // set attributes at FlyFrame
                     rSh.SetFlyFrmAttr(const_cast< SfxItemSet& >(*pDlg->GetOutputItemSet()));
 
                     static sal_uInt16 __READONLY_DATA aInval[] =
