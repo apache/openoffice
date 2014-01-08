@@ -2338,10 +2338,14 @@ IMPL_LINK( SvxAreaTabPage, ModifyTileHdl_Impl, void *, EMPTYARG )
         // allow positioning
         aCtlPosition.Enable();
         aCtlPosition.Invalidate();
+
+        // allow offsets
         aFtXOffset.Enable();
         aMtrFldXOffset.Enable();
         aFtYOffset.Enable();
         aMtrFldYOffset.Enable();
+
+        // allow 'Position" title
         aFlPosition.Enable();
 
         // allow size definitions
@@ -2365,16 +2369,20 @@ IMPL_LINK( SvxAreaTabPage, ModifyTileHdl_Impl, void *, EMPTYARG )
         aMtrFldOffset.Disable();
         aFlOffset.Disable();
 
+        // no need for offsets, only position is supported in non-tiled
+        aFtXOffset.Disable();
+        aMtrFldXOffset.Disable();
+        aFtYOffset.Disable();
+        aMtrFldYOffset.Disable();
+
         if( aTsbStretch.GetState() != STATE_NOCHECK )
         {
             // non-tiled, stretched
             // no need for positioning
             aCtlPosition.Disable();
             aCtlPosition.Invalidate();
-            aFtXOffset.Disable();
-            aMtrFldXOffset.Disable();
-            aFtYOffset.Disable();
-            aMtrFldYOffset.Disable();
+
+            // no need for 'Position" title, all deactivated
             aFlPosition.Disable();
 
             // no need for size definitions
@@ -2392,10 +2400,8 @@ IMPL_LINK( SvxAreaTabPage, ModifyTileHdl_Impl, void *, EMPTYARG )
             // allow positioning
             aCtlPosition.Enable();
             aCtlPosition.Invalidate();
-            aFtXOffset.Enable();
-            aMtrFldXOffset.Enable();
-            aFtYOffset.Enable();
-            aMtrFldYOffset.Enable();
+
+            // allow 'Position" title, positioning is active
             aFlPosition.Enable();
 
             // allow size definitions
