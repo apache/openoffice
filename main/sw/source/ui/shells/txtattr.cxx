@@ -197,47 +197,52 @@ void SwTextShell::ExecCharAttr(SfxRequest &rReq)
 void SwTextShell::ExecCharAttrArgs(SfxRequest &rReq)
 {
     sal_uInt16 nSlot = rReq.GetSlot();
-	const SfxItemSet* pArgs = rReq.GetArgs();
-	sal_Bool bArgs = pArgs != 0 && pArgs->Count() > 0;
-	int bGrow = sal_False;
-	SwWrtShell& rWrtSh = GetShell();
-	SwTxtFmtColl* pColl = 0;
+    const SfxItemSet* pArgs = rReq.GetArgs();
+    sal_Bool bArgs = pArgs != 0 && pArgs->Count() > 0;
+    int bGrow = sal_False;
+    SwWrtShell& rWrtSh = GetShell();
+    SwTxtFmtColl* pColl = 0;
 
-	// nur gesetzt, wenn gesamter Absatz selektiert ist und AutoUpdateFmt gesetzt ist
-	if( rWrtSh.HasSelection() && rWrtSh.IsSelFullPara() )
-	{
-		pColl = rWrtSh.GetCurTxtFmtColl();
-		if(pColl && !pColl->IsAutoUpdateFmt())
-			pColl = 0;
-	}
-	SfxItemPool& rPool = GetPool();
-	sal_uInt16 nWhich = rPool.GetWhich(nSlot);
-	switch ( nSlot )
-	{
-		case FN_TXTATR_INET:
-		// Sonderbehandlung der PoolId des SwFmtInetFmt
-		if(bArgs)
-		{
-			const SfxPoolItem& rItem = pArgs->Get(nWhich );
+    // nur gesetzt, wenn gesamter Absatz selektiert ist und AutoUpdateFmt gesetzt ist
+    if ( rWrtSh.HasSelection() && rWrtSh.IsSelFullPara() )
+    {
+        pColl = rWrtSh.GetCurTxtFmtColl();
+        if ( pColl && !pColl->IsAutoUpdateFmt() )
+            pColl = 0;
+    }
+    SfxItemPool& rPool = GetPool();
+    sal_uInt16 nWhich = rPool.GetWhich( nSlot );
+    switch (nSlot)
+    {
+    case FN_TXTATR_INET:
+        // Sonderbehandlung der PoolId des SwFmtInetFmt
+        if ( bArgs )
+        {
+            const SfxPoolItem& rItem = pArgs->Get( nWhich );
 
-			SwFmtINetFmt aINetFmt((const SwFmtINetFmt&)rItem);
-			if( USHRT_MAX == aINetFmt.GetVisitedFmtId() )
-			{
-				aINetFmt.SetVisitedFmtId(
-						SwStyleNameMapper::GetPoolIdFromUIName( aINetFmt.GetVisitedFmt(), nsSwGetPoolIdFromName::GET_POOLID_CHRFMT));
-			}
-			if( USHRT_MAX == aINetFmt.GetINetFmtId() )
-			{
-				aINetFmt.SetINetFmtId(
-						SwStyleNameMapper::GetPoolIdFromUIName( aINetFmt.GetINetFmt(), nsSwGetPoolIdFromName::GET_POOLID_CHRFMT));
-			}
+            SwFmtINetFmt aINetFmt( (const SwFmtINetFmt&) rItem );
+            if ( USHRT_MAX == aINetFmt.GetVisitedFmtId() )
+            {
+                ASSERT( false, "<SwTextShell::ExecCharAttrArgs(..)> - unexpected visited character format ID at hyperlink attribute" );
+                aINetFmt.SetVisitedFmtAndId(
+                        aINetFmt.GetVisitedFmt(),
+                        SwStyleNameMapper::GetPoolIdFromUIName( aINetFmt.GetVisitedFmt(), nsSwGetPoolIdFromName::GET_POOLID_CHRFMT ) );
+            }
+            if ( USHRT_MAX == aINetFmt.GetINetFmtId() )
+            {
+                ASSERT( false, "<SwTextShell::ExecCharAttrArgs(..)> - unexpected unvisited character format ID at hyperlink attribute" );
+                aINetFmt.SetINetFmtAndId(
+                        aINetFmt.GetINetFmt(),
+                        SwStyleNameMapper::GetPoolIdFromUIName( aINetFmt.GetINetFmt(), nsSwGetPoolIdFromName::GET_POOLID_CHRFMT ) );
+            }
 
-			if ( pColl )
+            if ( pColl )
                 pColl->SetFmtAttr( aINetFmt );
-			else rWrtSh.SetAttrItem( aINetFmt );
+            else
+                rWrtSh.SetAttrItem( aINetFmt );
             rReq.Done();
-		}
-		break;
+        }
+        break;
 
 		case FN_GROW_FONT_SIZE:
 			bGrow = sal_True;
