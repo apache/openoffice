@@ -226,9 +226,23 @@ void SwFrmDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 		break;
 
         //UUUU inits for Area and Transparency TabPages
+        // The selection attribute lists (XPropertyList derivates, e.g. XColorList for
+        // the color table) need to be added as items (e.g. SvxColorTableItem) to make
+        // these pages find the needed attributes for fill style suggestions.
+        // These are set in preparation to trigger this dialog (FN_FORMAT_FRAME_DLG and 
+        // FN_DRAW_WRAP_DLG), but could also be directly added from the DrawModel.
         case RID_SVXPAGE_AREA:
         {
-            rPage.PageCreated(m_rSet);
+            SfxItemSet aNew(*GetInputSetImpl()->GetPool(),
+                SID_COLOR_TABLE, SID_BITMAP_LIST,
+                SID_OFFER_IMPORT, SID_OFFER_IMPORT, 0, 0);
+
+            aNew.Put(m_rSet);
+
+            // add flag for direct graphic content selection
+            aNew.Put(SfxBoolItem(SID_OFFER_IMPORT, true));
+
+            rPage.PageCreated(aNew);
         }
         break;
 
@@ -240,3 +254,4 @@ void SwFrmDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
     }
 }
 
+// eof
