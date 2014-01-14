@@ -106,15 +106,9 @@
 #include <svl/cjkoptions.hxx>
 #include <switerator.hxx>
 #include <pagedeschint.hxx>
-#include <svx/sdr/primitive2d/sdrattributecreator.hxx>
 
 //UUUU
-#include <svx/sdr/primitive2d/sdrdecompositiontools.hxx>
-#include <basegfx/polygon/b2dpolygontools.hxx>
-#include <basegfx/matrix/b2dhommatrix.hxx>
-#include <basegfx/polygon/b2dpolygon.hxx>
-#include <drawinglayer/attribute/fillhatchattribute.hxx>
-#include <drawinglayer/attribute/sdrfillgraphicattribute.hxx>
+#include <fillattributes.hxx>
 #include <svx/xfillit0.hxx>
 
 using namespace ::com::sun::star;
@@ -2481,130 +2475,6 @@ SfxPoolItem* SwHeaderAndFooterEatSpacingItem::Clone( SfxItemPool* ) const
 }
 
 //////////////////////////////////////////////////////////////////////////////
-//UUUU FillAttributes
-
-void FillAttributes::createPrimitive2DSequence(
-    const basegfx::B2DRange& rPaintRange,
-    const basegfx::B2DRange& rDefineRange)
-{
-    // reset and remember new target range for object geometry
-    maLastPaintRange = rPaintRange;
-    maLastDefineRange = rDefineRange;
-
-    if(isUsed())
-    {
-        maPrimitives.realloc(1);
-        maPrimitives[0] = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
-            basegfx::B2DPolyPolygon(
-                basegfx::tools::createPolygonFromRect(
-                    maLastPaintRange)), 
-                maLastDefineRange,
-            maFillAttribute.get() ? *maFillAttribute.get() : drawinglayer::attribute::SdrFillAttribute(),
-            maFillGradientAttribute.get() ? *maFillGradientAttribute.get() : drawinglayer::attribute::FillGradientAttribute());
-    }
-}
-
-FillAttributes::FillAttributes()
-:   maLastPaintRange(),
-    maLastDefineRange(),
-    maFillAttribute(),
-    maFillGradientAttribute(),
-    maPrimitives()
-{
-}
-
-FillAttributes::FillAttributes(const Color& rColor)
-:   maLastPaintRange(),
-    maLastDefineRange(),
-    maFillAttribute(),
-    maFillGradientAttribute(),
-    maPrimitives()
-{
-    maFillAttribute.reset(
-        new drawinglayer::attribute::SdrFillAttribute(
-            0.0,
-            Color(rColor.GetRGBColor()).getBColor(),
-            drawinglayer::attribute::FillGradientAttribute(),
-            drawinglayer::attribute::FillHatchAttribute(),
-            drawinglayer::attribute::SdrFillGraphicAttribute()));
-}
-
-FillAttributes::FillAttributes(const SfxItemSet& rSet)
-:   maLastPaintRange(),
-    maLastDefineRange(),
-    maFillAttribute(
-        new drawinglayer::attribute::SdrFillAttribute(
-            drawinglayer::primitive2d::createNewSdrFillAttribute(rSet))),
-    maFillGradientAttribute(
-        new drawinglayer::attribute::FillGradientAttribute(
-            drawinglayer::primitive2d::createNewTransparenceGradientAttribute(rSet))),
-    maPrimitives()
-{
-}
-
-FillAttributes::~FillAttributes()
-{
-}
-
-bool FillAttributes::isUsed() const
-{
-    // only depends on fill, FillGradientAttribute alone defines no fill
-    return maFillAttribute.get() && !maFillAttribute->isDefault();
-}
-
-bool FillAttributes::isTransparent() const
-{
-    if(hasSdrFillAttribute() && 0.0 != maFillAttribute->getTransparence())
-    {
-        return true;
-    }
-
-    if(hasFillGradientAttribute() && !maFillGradientAttribute->isDefault())
-    {
-        return true;
-    }
-
-    return false;
-}
-
-const drawinglayer::attribute::SdrFillAttribute& FillAttributes::getFillAttribute() const 
-{ 
-    if(!maFillAttribute.get())
-    {
-        const_cast< FillAttributes* >(this)->maFillAttribute.reset(new drawinglayer::attribute::SdrFillAttribute());
-    }
-
-    return *maFillAttribute.get(); 
-}
-
-const drawinglayer::attribute::FillGradientAttribute& FillAttributes::getFillGradientAttribute() const 
-{ 
-    if(!maFillGradientAttribute.get())
-    {
-        const_cast< FillAttributes* >(this)->maFillGradientAttribute.reset(new drawinglayer::attribute::FillGradientAttribute());
-    }
-
-    return *maFillGradientAttribute.get(); 
-}
-
-const drawinglayer::primitive2d::Primitive2DSequence& FillAttributes::getPrimitive2DSequence(
-    const basegfx::B2DRange& rPaintRange,
-    const basegfx::B2DRange& rDefineRange) const
-{
-    if(maPrimitives.getLength() && (maLastPaintRange != rPaintRange || maLastDefineRange != rDefineRange))
-    {
-        const_cast< FillAttributes* >(this)->maPrimitives.realloc(0);
-    }
-
-    if(!maPrimitives.getLength())
-    {
-        const_cast< FillAttributes* >(this)->createPrimitive2DSequence(rPaintRange, rDefineRange);
-    }
-
-    return maPrimitives;
-}
-
-//////////////////////////////////////////////////////////////////////////////
 //  class SwFrmFmt
 //	Implementierung teilweise inline im hxx
 
@@ -2686,7 +2556,7 @@ void SwFrmFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
 			RES_FOOTER, sal_False, (const SfxPoolItem**)&pF );
 
         //UUUU reset fill information
-        if(maFillAttributes.get())
+        if(RES_FLYFRMFMT == Which() && maFillAttributes.get())
         {
             SfxItemIter aIter(*((SwAttrSetChg*)pNew)->GetChgSet());
             bool bReset(false);
@@ -2704,8 +2574,11 @@ void SwFrmFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
     }
     else if(RES_FMT_CHG == nWhich) //UUUU
     {
-        // reset fill information on format change (e.g. style changed)
-        maFillAttributes.reset();
+        //UUUU reset fill information on format change (e.g. style changed)
+        if(RES_FLYFRMFMT == Which() && maFillAttributes.get())
+        {
+            maFillAttributes.reset();
+        }
     }
     else if( RES_HEADER == nWhich )
         pH = (SwFmtHeader*)pNew;
@@ -3530,9 +3403,18 @@ SwFrmFmt* SwFrmFmt::GetCaptionFmt() const
 //UUUU
 FillAttributesPtr SwFrmFmt::getFillAttributes() const
 {
-    if(!maFillAttributes.get())
+    if(RES_FLYFRMFMT == Which())
     {
-        const_cast< SwFrmFmt* >(this)->maFillAttributes.reset(new FillAttributes(GetAttrSet()));
+        // create FillAttributes on demand
+        if(!maFillAttributes.get())
+        {
+            const_cast< SwFrmFmt* >(this)->maFillAttributes.reset(new FillAttributes(GetAttrSet()));
+        }
+    }
+    else
+    {
+        // FALLBACKBREAKHERE assert wrong usage
+        OSL_ENSURE(false, "getFillAttributes() call only valid for RES_FLYFRMFMT currently (!)");
     }
 
     return maFillAttributes;

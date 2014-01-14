@@ -3663,7 +3663,7 @@ void SwFlyFrm::Paint(SwRect const& rRect, SwPrintData const*const) const
 		{
             const SwFrmFmt* pSwFrmFmt = dynamic_cast< const SwFrmFmt* >(GetFmt());
 
-            if(pSwFrmFmt)
+            if(pSwFrmFmt && RES_FLYFRMFMT == pSwFrmFmt->Which())
             {
                 //UUUU check for transparency
                 const FillAttributesPtr aFillAttributes(pSwFrmFmt->getFillAttributes());
@@ -6702,7 +6702,7 @@ sal_Bool SwFrm::GetBackgroundBrush(
         {
             const SwFrmFmt* pSwFrmFmt = dynamic_cast< const SwFrmFmt* >(pSwLayoutFrm->GetFmt());
 
-            if(pSwFrmFmt)
+            if(pSwFrmFmt  && RES_FLYFRMFMT == pSwFrmFmt->Which())
             {
                 rFillAttributes = pSwFrmFmt->getFillAttributes();
             }

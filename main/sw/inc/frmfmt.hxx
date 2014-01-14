@@ -29,12 +29,6 @@
 #include <format.hxx>
 #include "swdllapi.h"
 
-//UUUU
-#include <drawinglayer/attribute/fillgradientattribute.hxx>
-#include <drawinglayer/attribute/sdrfillattribute.hxx>
-#include <drawinglayer/primitive2d/baseprimitive2d.hxx>
-#include <boost/shared_ptr.hpp>
-
 class SwFlyFrm;
 class SwAnchoredObject;
 class Graphic;
@@ -44,41 +38,6 @@ class IMapObject;
 class SwRect;
 class SwContact;
 class SdrObject;
-
-//UUUU
-class FillAttributes
-{
-private:
-    basegfx::B2DRange                                                   maLastPaintRange;
-    basegfx::B2DRange                                                   maLastDefineRange;
-    boost::shared_ptr< drawinglayer::attribute::SdrFillAttribute >      maFillAttribute;
-    boost::shared_ptr< drawinglayer::attribute::FillGradientAttribute > maFillGradientAttribute;
-    drawinglayer::primitive2d::Primitive2DSequence                      maPrimitives;
-
-    void createPrimitive2DSequence(
-        const basegfx::B2DRange& rPaintRange,
-        const basegfx::B2DRange& rDefineRange);
-
-protected:
-public:
-    FillAttributes();
-    FillAttributes(const Color& rColor);
-    FillAttributes(const SfxItemSet& rSet);
-    ~FillAttributes();
-
-    bool isUsed() const;
-    bool hasSdrFillAttribute() const { return maFillAttribute.get(); }
-    bool hasFillGradientAttribute() const { return maFillGradientAttribute.get(); }
-    bool isTransparent() const;
-
-    const drawinglayer::attribute::SdrFillAttribute& getFillAttribute() const;
-    const drawinglayer::attribute::FillGradientAttribute& getFillGradientAttribute() const;
-    const drawinglayer::primitive2d::Primitive2DSequence& getPrimitive2DSequence(
-        const basegfx::B2DRange& rPaintRange,
-        const basegfx::B2DRange& rDefineRange) const;
-};
-
-typedef boost::shared_ptr< FillAttributes > FillAttributesPtr;
 
 class SW_DLLPUBLIC SwFrmFmt: public SwFmt
 {
@@ -189,7 +148,7 @@ public:
     void RegisterToFormat( SwFmt& rFmt );
 
     //UUUU
-    FillAttributesPtr getFillAttributes() const;
+    virtual FillAttributesPtr getFillAttributes() const;
 };
 
 //Das FlyFrame-Format ------------------------------

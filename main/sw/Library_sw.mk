@@ -281,6 +281,7 @@ $(eval $(call gb_Library_add_exception_objects,sw,\
 	sw/source/core/layout/anchoreddrawobject \
 	sw/source/core/layout/anchoredobject \
 	sw/source/core/layout/atrfrm \
+    sw/source/core/layout/fillattributes \
 	sw/source/core/layout/calcmove \
 	sw/source/core/layout/colfrm \
 	sw/source/core/layout/dbg_lay \

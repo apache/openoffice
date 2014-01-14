@@ -133,11 +133,11 @@ void setSvxBrushItemAsFillAttributesToTargetSet(const SvxBrushItem& rBrush, SfxI
 }
 
 //UUUU
-SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet)
+SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet, sal_Bool bSearchInParents)
 {
     SvxBrushItem aRetval(RES_BACKGROUND);
 
-    const XFillStyleItem* pXFillStyleItem(static_cast< const XFillStyleItem*  >(rSourceSet.GetItem(XATTR_FILLSTYLE, false)));
+    const XFillStyleItem* pXFillStyleItem(static_cast< const XFillStyleItem*  >(rSourceSet.GetItem(XATTR_FILLSTYLE, bSearchInParents)));
 
     if(!pXFillStyleItem)
     {
@@ -154,8 +154,8 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet)
         case XFILL_SOLID:
         {
             // create SvxBrushItem with fill color
-            Color aFillColor(static_cast< const XFillColorItem& >(rSourceSet.Get(XATTR_FILLCOLOR)).GetColorValue());
-            const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE)).GetValue());
+            Color aFillColor(static_cast< const XFillColorItem& >(rSourceSet.Get(XATTR_FILLCOLOR, bSearchInParents)).GetColorValue());
+            const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
 
             if(0 != nFillTransparence)
             {
@@ -174,15 +174,15 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet)
         case XFILL_BITMAP:
         {
             // create SvxBrushItem with bitmap info and flags
-            const XFillBitmapItem& rBmpItm = static_cast< const XFillBitmapItem& >(rSourceSet.Get(XATTR_FILLBITMAP));
+            const XFillBitmapItem& rBmpItm = static_cast< const XFillBitmapItem& >(rSourceSet.Get(XATTR_FILLBITMAP, bSearchInParents));
             const Graphic aGraphic(rBmpItm.GetGraphicObject().GetGraphic());
 
             if(GRAPHIC_NONE != aGraphic.GetType())
             {
                 // get graphic position
                 SvxGraphicPosition aSvxGraphicPosition(GPOS_NONE);
-                const XFillBmpStretchItem& rStretchItem = static_cast< const XFillBmpStretchItem& >(rSourceSet.Get(XATTR_FILLBMP_STRETCH));
-                const XFillBmpTileItem& rTileItem = static_cast< const XFillBmpTileItem& >(rSourceSet.Get(XATTR_FILLBMP_TILE));
+                const XFillBmpStretchItem& rStretchItem = static_cast< const XFillBmpStretchItem& >(rSourceSet.Get(XATTR_FILLBMP_STRETCH, bSearchInParents));
+                const XFillBmpTileItem& rTileItem = static_cast< const XFillBmpTileItem& >(rSourceSet.Get(XATTR_FILLBMP_TILE, bSearchInParents));
 
                 if(rTileItem.GetValue())
                 {
@@ -194,7 +194,7 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet)
                 }
                 else
                 {
-                    const XFillBmpPosItem& rPosItem = static_cast< const XFillBmpPosItem& >(rSourceSet.Get(XATTR_FILLBMP_POS));
+                    const XFillBmpPosItem& rPosItem = static_cast< const XFillBmpPosItem& >(rSourceSet.Get(XATTR_FILLBMP_POS, bSearchInParents));
 
                     switch(rPosItem.GetValue())
                     {
@@ -213,7 +213,7 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet)
                 // create with given graphic and position
                 aRetval = SvxBrushItem(aGraphic, aSvxGraphicPosition, RES_BACKGROUND);
 
-                const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE)).GetValue());
+                const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
 
                 if(0 != nFillTransparence)
                 {
