@@ -624,9 +624,9 @@ sal_Bool SwFmt::SetFmtAttr( const SfxItemSet& rSet )
                     ModifyNotification(&aChgOld, &aChgNew);
                 }
             }
-        }
 
-        return bRet;
+            return bRet;
+        }
     }
 
     // wenn Modify gelockt ist, werden keine Modifies verschickt;
@@ -838,6 +838,7 @@ const SvxBrushItem& SwFmt::GetBackground(sal_Bool bInP) const
         // the fill attributes [XATTR_FILL_FIRST .. XATTR_FILL_LAST] are used
         // as good as possible to create a fallback representation and return that
         aSvxBrushItem = getSvxBrushItemFromSourceSet(aSet, bInP);
+
         return aSvxBrushItem;
     }
 
