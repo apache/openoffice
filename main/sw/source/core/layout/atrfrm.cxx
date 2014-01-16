@@ -3118,7 +3118,11 @@ const String SwFlyFrmFmt::GetObjDescription() const
 */
 sal_Bool SwFlyFrmFmt::IsBackgroundTransparent() const
 {
-    sal_Bool bReturn = sal_False;
+    //UUUU
+    if(RES_FLYFRMFMT == Which() && getFillAttributes())
+    {
+        return getFillAttributes()->isTransparent();
+    }
 
     /// NOTE: If background color is "no fill"/"auto fill" (COL_TRANSPARENT)
     ///     and there is no background graphic, it "inherites" the background
@@ -3127,7 +3131,7 @@ sal_Bool SwFlyFrmFmt::IsBackgroundTransparent() const
          (GetBackground().GetColor() != COL_TRANSPARENT)
        )
     {
-        bReturn = sal_True;
+        return sal_True;
     }
     else
     {
@@ -3137,11 +3141,11 @@ sal_Bool SwFlyFrmFmt::IsBackgroundTransparent() const
              (pTmpGrf->GetAttr().GetTransparency() != 0)
            )
         {
-            bReturn = sal_True;
+            return sal_True;
         }
     }
 
-    return bReturn;
+    return sal_False;
 }
 
 /** SwFlyFrmFmt::IsBackgroundBrushInherited - for #103898#
@@ -3158,15 +3162,18 @@ sal_Bool SwFlyFrmFmt::IsBackgroundTransparent() const
 */
 sal_Bool SwFlyFrmFmt::IsBackgroundBrushInherited() const
 {
-    sal_Bool bReturn = sal_False;
-
-    if ( (GetBackground().GetColor() == COL_TRANSPARENT) &&
+    //UUUU
+    if(RES_FLYFRMFMT == Which() && getFillAttributes())
+    {
+        return !getFillAttributes()->isUsed();
+    }
+    else if ( (GetBackground().GetColor() == COL_TRANSPARENT) &&
          !(GetBackground().GetGraphicObject()) )
     {
-        bReturn = sal_True;
+        return sal_True;
     }
 
-    return bReturn;
+    return sal_False;
 }
 
 // --> OD 2006-02-28 #125892#

@@ -115,6 +115,13 @@ bool FillAttributes::isTransparent() const
         return true;
     }
 
+    if(hasSdrFillAttribute())
+    {
+        const Graphic& rGraphic = getFillAttribute().getFillGraphic().getFillGraphic();
+
+        return rGraphic.IsSupportedGraphic() && rGraphic.IsTransparent();
+    }
+
     return false;
 }
 

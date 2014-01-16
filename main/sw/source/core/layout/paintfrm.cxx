@@ -3422,6 +3422,10 @@ sal_Bool SwFlyFrm::IsBackgroundTransparent() const
             {
                 bBackgroundTransparent = sal_True;
             }
+            else if(aFillAttributes.get() && aFillAttributes->isUsed()) //UUUU
+            {
+                bBackgroundTransparent = aFillAttributes->isTransparent();
+            }
             else if ( pBackgrdBrush )
             {
                 if ( (pBackgrdBrush->GetColor().GetTransparency() != 0) &&
@@ -3440,10 +3444,6 @@ sal_Bool SwFlyFrm::IsBackgroundTransparent() const
                         bBackgroundTransparent = sal_True;
                     }
                 }
-            }
-            else if(aFillAttributes.get() && aFillAttributes->isUsed())
-            {
-                bBackgroundTransparent = aFillAttributes->isTransparent();
             }
         }
     }
