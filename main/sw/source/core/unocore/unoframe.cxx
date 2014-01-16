@@ -2307,10 +2307,20 @@ bool SwXFrame::needToMapFillItemsToSvxBrushItemTypes() const
         return false;
     }
 
-    if(XFILL_SOLID == pXFillStyleItem->GetValue() || XFILL_BITMAP == pXFillStyleItem->GetValue())
+    //UUUU here different FillStyles can be excluded for export; it will depend on the
+    // quality these fallbacks can reach. That again is done in getSvxBrushItemFromSourceSet,
+    // take a look there how the superset of DrawObject FillStyles is mapped to SvxBrushItem.
+    // For now, take them all - except XFILL_NONE
+
+    if(XFILL_NONE != pXFillStyleItem->GetValue())
     {
         return true;
     }
+
+    //if(XFILL_SOLID == pXFillStyleItem->GetValue() || XFILL_BITMAP == pXFillStyleItem->GetValue())
+    //{
+    //    return true;
+    //}
 
     return false;
 }

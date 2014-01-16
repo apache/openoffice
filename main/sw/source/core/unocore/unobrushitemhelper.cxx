@@ -133,6 +133,43 @@ void setSvxBrushItemAsFillAttributesToTargetSet(const SvxBrushItem& rBrush, SfxI
 }
 
 //UUUU
+sal_uInt16 getTransparenceForSvxBrushItem(const SfxItemSet& rSourceSet, sal_Bool bSearchInParents)
+{
+    sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
+    const SfxPoolItem* pGradientItem = 0;
+
+    if(SFX_ITEM_SET == rSourceSet.GetItemState(XATTR_FILLFLOATTRANSPARENCE, bSearchInParents, &pGradientItem) 
+        && static_cast< const XFillFloatTransparenceItem* >(pGradientItem)->IsEnabled())
+    {
+        const XGradient& rGradient = static_cast< const XFillFloatTransparenceItem* >(pGradientItem)->GetGradientValue();
+        const sal_uInt16 nStartLuminance(rGradient.GetStartColor().GetLuminance());
+        const sal_uInt16 nEndLuminance(rGradient.GetEndColor().GetLuminance());
+
+        // luminance is [0..255], transparence needs to be in [0..100].Maximum is 51200, thus sal_uInt16 is okay to use
+        nFillTransparence = static_cast< sal_uInt16 >(((nStartLuminance + nEndLuminance) * 100) / 512);
+    }
+
+    return nFillTransparence;
+}
+
+//UUUU
+SvxBrushItem getSvxBrushItemForSolid(const SfxItemSet& rSourceSet, sal_Bool bSearchInParents)
+{
+    Color aFillColor(static_cast< const XFillColorItem& >(rSourceSet.Get(XATTR_FILLCOLOR, bSearchInParents)).GetColorValue());
+
+    // get evtl. mixed transparence
+    const sal_uInt16 nFillTransparence(getTransparenceForSvxBrushItem(rSourceSet, bSearchInParents));
+
+    if(0 != nFillTransparence)
+    {
+        // nFillTransparence is in range [0..100] and needs to be in [0..255] unsigned
+        aFillColor.SetTransparency(static_cast< sal_uInt8 >((nFillTransparence * 255) / 100));
+    }
+
+    return SvxBrushItem(aFillColor, RES_BACKGROUND);
+}
+
+//UUUU
 SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet, sal_Bool bSearchInParents)
 {
     SvxBrushItem aRetval(RES_BACKGROUND);
@@ -154,21 +191,60 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet, sal_Bool
         case XFILL_SOLID:
         {
             // create SvxBrushItem with fill color
-            Color aFillColor(static_cast< const XFillColorItem& >(rSourceSet.Get(XATTR_FILLCOLOR, bSearchInParents)).GetColorValue());
-            const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
+            aRetval = getSvxBrushItemForSolid(rSourceSet, bSearchInParents);
+            break;
+        }
+        case XFILL_GRADIENT:
+        {
+            // cannot be directly supported, but do the best possible
+            const XGradient aXGradient(static_cast< const XFillGradientItem& >(rSourceSet.Get(XATTR_FILLGRADIENT)).GetGradientValue());
+            const basegfx::BColor aStartColor(aXGradient.GetStartColor().getBColor() * (aXGradient.GetStartIntens() * 0.01));
+            const basegfx::BColor aEndColor(aXGradient.GetEndColor().getBColor() * (aXGradient.GetEndIntens() * 0.01));
+
+            // use half/half mixed color from gradient start and end
+            Color aMixedColor((aStartColor + aEndColor) * 0.5);
+
+            // get evtl. mixed transparence
+            const sal_uInt16 nFillTransparence(getTransparenceForSvxBrushItem(rSourceSet, bSearchInParents));
 
             if(0 != nFillTransparence)
             {
                 // nFillTransparence is in range [0..100] and needs to be in [0..255] unsigned
-                aFillColor.SetTransparency(static_cast< sal_uInt8 >((nFillTransparence * 255) / 100));
+                aMixedColor.SetTransparency(static_cast< sal_uInt8 >((nFillTransparence * 255) / 100));
             }
 
-            aRetval = SvxBrushItem(aFillColor, RES_BACKGROUND);
+            aRetval = SvxBrushItem(aMixedColor, RES_BACKGROUND);
+            break;
         }
-        case XFILL_GRADIENT:
         case XFILL_HATCH:
         {
-            // cannot be supported
+            // cannot be directly supported, but do the best possible
+            const XHatch& rHatch(static_cast< const XFillHatchItem& >(rSourceSet.Get(XATTR_FILLHATCH)).GetHatchValue());
+            const bool bFillBackground(static_cast< const XFillBackgroundItem& >(rSourceSet.Get(XATTR_FILLBACKGROUND)).GetValue());
+
+            if(bFillBackground)
+            {
+                // hatch is background-filled, use FillColor as if XFILL_SOLID
+                aRetval = getSvxBrushItemForSolid(rSourceSet, bSearchInParents);
+            }
+            else
+            {
+                // hatch is not background-filled and using hatch color would be too dark; compensate
+                // somewhat by making it more transparent
+                Color aHatchColor(rHatch.GetColor());
+
+                // get evtl. mixed transparence
+                sal_uInt16 nFillTransparence(getTransparenceForSvxBrushItem(rSourceSet, bSearchInParents));
+
+                // take half orig transparence, add half transparent, clamp result
+                nFillTransparence = basegfx::clamp((sal_uInt16)((nFillTransparence / 2) + 50), (sal_uInt16)0, (sal_uInt16)255);
+
+                // nFillTransparence is in range [0..100] and needs to be in [0..255] unsigned
+                aHatchColor.SetTransparency(static_cast< sal_uInt8 >((nFillTransparence * 255) / 100));
+
+                aRetval = SvxBrushItem(aHatchColor, RES_BACKGROUND);
+            }
+
             break;
         }
         case XFILL_BITMAP:
@@ -213,7 +289,8 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet, sal_Bool
                 // create with given graphic and position
                 aRetval = SvxBrushItem(aGraphic, aSvxGraphicPosition, RES_BACKGROUND);
 
-                const sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
+                // get evtl. mixed transparence
+                const sal_uInt16 nFillTransparence(getTransparenceForSvxBrushItem(rSourceSet, bSearchInParents));
 
                 if(0 != nFillTransparence)
                 {
