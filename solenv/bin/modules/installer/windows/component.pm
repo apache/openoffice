@@ -104,64 +104,65 @@ sub get_file_component_directory_for_file ($$)
 {
     my ($onefile, $dirref) = @_;
 
-	my $localstyles = $onefile->{'Styles'} // "";
-	
-	if ( $localstyles =~ /\bFONT\b/ )	# special handling for font files
-	{
-		return $installer::globals::fontsfolder;
-	}
-	
-	my $destdir = "";
-	
-	if ( $onefile->{'Dir'} ) { $destdir = $onefile->{'Dir'}; }
+    my $localstyles = $onefile->{'Styles'};
+    $localstyles = "" unless defined $localstyles;
+    
+    if ( $localstyles =~ /\bFONT\b/ )	# special handling for font files
+    {
+	return $installer::globals::fontsfolder;
+    }
+    
+    my $destdir = "";
+    
+    if ( $onefile->{'Dir'} ) { $destdir = $onefile->{'Dir'}; }
 
-	if ( $destdir =~ /\bPREDEFINED_OSSHELLNEWDIR\b/ )	# special handling for shellnew files
-	{
-		return $installer::globals::templatefolder;
-	}
+    if ( $destdir =~ /\bPREDEFINED_OSSHELLNEWDIR\b/ )	# special handling for shellnew files
+    {
+	return $installer::globals::templatefolder;
+    }
 
-	my $destination = $onefile->{'destination'};
-	
-	installer::pathanalyzer::get_path_from_fullqualifiedname(\$destination);
+    my $destination = $onefile->{'destination'};
+    
+    installer::pathanalyzer::get_path_from_fullqualifiedname(\$destination);
 
-	$destination =~ s/\Q$installer::globals::separator\E\s*$//;
+    $destination =~ s/\Q$installer::globals::separator\E\s*$//;
 
-	# This path has to be defined in the directory collection at "HostName" 
+    # This path has to be defined in the directory collection at "HostName" 
 
     my $uniquedir = undef;
-	if ($destination eq "")		# files in the installation root
-	{
-		$uniquedir = "INSTALLLOCATION";
-	}		
-	else
-	{
-		my $found = 0;
+    if ($destination eq "")		# files in the installation root
+    {
+	$uniquedir = "INSTALLLOCATION";
+    }		
+    else
+    {
+	my $found = 0;
         foreach my $directory (@$dirref)
-		{
-			if ($directory->{'HostName'} eq $destination)
-			{
-				$found = 1;
+	{
+	    if ($directory->{'HostName'} eq $destination)
+	    {
+		$found = 1;
                 $uniquedir = $directory->{'uniquename'};
-				last;
-			}	
-		}
-
-		if ( ! $found)
-		{
-			installer::exiter::exit_program(
-                "ERROR: Did not find destination $destination in directory collection",
-                "get_file_component_directory");
-		}
-
-		if ( $uniquedir eq $installer::globals::officeinstalldirectory )
-		{
-			$uniquedir = "INSTALLLOCATION";		
-		}
+		last;
+	    }	
 	}
 
-	$onefile->{'uniquedirname'} = $uniquedir;		# saving it in the file collection
+	if ( ! $found)
+	{
+	    installer::exiter::exit_program(
+                "ERROR: Did not find destination $destination in directory collection",
+                "get_file_component_directory");
+	}
 
-	return $uniquedir	
+	if ( $uniquedir eq $installer::globals::officeinstalldirectory )
+	{
+	    $uniquedir = "INSTALLLOCATION";		
+	}
+    }
+
+    $onefile->{'uniquedirname'} = $uniquedir;		# saving it in the file collection
+
+    return $uniquedir	
 }
 
 ##############################################################
