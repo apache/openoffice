@@ -40,12 +40,8 @@ CDEFS+=-DGLIBC=2 -D_PTHREADS -D_REENTRANT -DNO_PTHREAD_PRIORITY $(PROCESSOR_DEFI
 # (safer/easier than dealing with the MAC_OS_X_VERSION_MAX_ALLOWED macro)
 # http://developer.apple.com/technotes/tn2002/tn2064.html
 # done in setsolar/configure now. left here for documentation
-#MACOSX_DEPLOYMENT_TARGET=10.7
-#.EXPORT: MACOSX_DEPLOYMENT_TARGET
 CDEFS+=-DQUARTZ
-#SDK_PATH=`xcodebuild -version -sdk macosx$(MACOSX_DEPLOYMENT_TARGET) Path`
-SDK_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
-EXTRA_CDEFS*=-isysroot $(SDK_PATH)
+EXTRA_CDEFS*=-isysroot $(MACOSX_SDK_PATH)
 
 # Name of library where static data members are initialized
 # STATICLIBNAME=static$(DLLPOSTFIX)
@@ -202,7 +198,7 @@ LINK*=$(CXX)
 LINKC*=$(CC)
 
 # assure backwards-compatibility
-EXTRA_LINKFLAGS*=$(ARCH_FLAGS) -L$(SDK_PATH)
+EXTRA_LINKFLAGS*=$(ARCH_FLAGS) -L$(MACOSX_SDK_PATH)
 # Very long install_names are needed so that install_name_tool -change later on
 # does not complain that "larger updated load commands do not fit:"
 LINKFLAGSRUNPATH_URELIB=-install_name '@__________________________________________________URELIB/$(@:f)'

@@ -71,11 +71,9 @@ gb_CPUDEFS := -DX86_64
 endif
 
 ifeq ($(strip $(SYSBASE)),)
-#SDK_PATH := `xcodebuild -version -sdk macosx$(MACOSX_DEPLOYMENT_TARGET) Path`
-SDK_PATH := /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
-gb_SDKDIR := $(SDK_PATH)
+gb_SDKDIR := $(MACOSX_SDK_PATH)
 else
-gb_SDKDIR := $(SYSBASE)/MacOSX10.7.sdk
+gb_SDKDIR := $(SYSBASE)/MacOSX$(MACOSX_DEPLOYMENT_TARGET).sdk
 endif
 
 
