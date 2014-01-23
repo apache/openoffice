@@ -129,8 +129,8 @@ YJ: checked</lastedited>
 
 <!-- removed HID SC:TRISTATEBOX:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS -->
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS" id="bm_id263985" localize="false"/>
-<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="2" l10n="CHG" oldref="7">Allow blank cells</paragraph>
-<paragraph role="paragraph" id="par_id3153967" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid="SC:TRISTATEBOX:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS">In conjunction with <emph>Tools - Detective - Mark invalid Data</emph>, this defines that blank cells are shown as invalid data (disabled) or not (enabled).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="2" l10n="CHG" oldref="7">Allow empty cells</paragraph>
+<paragraph role="paragraph" id="par_id3153967" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid="SC:TRISTATEBOX:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS">In conjunction with <emph>Tools - Detective - Mark invalid Data</emph>, this defines that empty cells are shown as invalid data (disabled) or not (enabled).</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:TP_VALIDATION_VALUES:CB_SHOWLIST" id="bm_id5339518" localize="false"/>
 <paragraph role="heading" id="par_idN10709" xml-lang="en-US" level="2" l10n="NEW">Show selection list</paragraph>
 <paragraph role="paragraph" id="par_idN1070D" xml-lang="en-US" l10n="NEW"><ahelp hid="sc:CheckBox:TP_VALIDATION_VALUES:CB_SHOWLIST">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing Ctrl+D (Mac: Command+D).</ahelp></paragraph>

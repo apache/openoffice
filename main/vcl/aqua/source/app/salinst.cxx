@@ -190,8 +190,10 @@ static void initNSApp()
     else
         NSLog(@"Unable to obtain system version: %ld", (long)err);
 
-     // Initialize Apple Remote
+    // Initialize Apple Remote
+#if 0 // disabled for now for stability problems
     GetSalData()->mpMainController = [[MainController alloc] init];
+#endif
 
     [[NSDistributedNotificationCenter defaultCenter] addObserver: NSApp
                                            selector: @selector(applicationWillBecomeActive:)
@@ -622,7 +624,7 @@ void AquaSalInstance::handleAppDefinedEvent( NSEvent* pEvent )
         std::list<AquaSalFrame*>::iterator it = pSalData->maFrames.begin();
         while( (*it) &&  ( (it != pSalData->maFrames.end() ) || ( (*it)->mbFullScreen == false ) ) )
         {
-            if ( ((*it)->mbFullScreen == true) )
+            if( (*it)->mbFullScreen )
                 bIsFullScreenMode = true;
             it++;
         }

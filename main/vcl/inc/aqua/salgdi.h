@@ -40,30 +40,41 @@
 class AquaSalFrame;
 class AquaSalBitmap;
 class ImplDevFontAttributes;
+class ImplMacTextStyle;
 
-class CGRect;
+struct CGRect;
+
+typedef std::vector<unsigned char> ByteVector;
+
+#ifndef CGFLOAT_TYPE
+typedef float CGFloat;
+#endif
 
 // mac specific physically available font face
 class ImplMacFontData : public ImplFontData
 {
 public:
-	ImplMacFontData( const ImplDevFontAttributes&, ATSUFontID );
+	ImplMacFontData( const ImplDevFontAttributes&, sal_IntPtr nFontID );
+	virtual ~ImplMacFontData();
 
-    virtual ~ImplMacFontData();
-
-    virtual ImplFontData*   Clone() const;
-    virtual ImplFontEntry*  CreateFontInstance( ImplFontSelectData& ) const;
+	virtual ImplFontData*   Clone() const = 0;
+	virtual ImplFontEntry*  CreateFontInstance( ImplFontSelectData& ) const;
 	virtual sal_IntPtr      GetFontId() const;
+
+	virtual ImplMacTextStyle* CreateMacTextStyle( const ImplFontSelectData& ) const = 0;
+	virtual int             GetFontTable( const char pTagName[5], unsigned char* ) const = 0;
     
-    const ImplFontCharMap*	GetImplFontCharMap() const;
+	const ImplFontCharMap*	GetImplFontCharMap() const;
 	bool					HasChar( sal_uInt32 cChar ) const;
 
 	void					ReadOs2Table() const;
 	void					ReadMacCmapEncoding() const;
 	bool					HasCJKSupport() const;
 
+protected:
+	ImplMacFontData( const ImplMacFontData&);
 private:
-    const ATSUFontID			mnFontId;
+	const sal_IntPtr			mnFontId;
 	mutable const ImplFontCharMap*	mpCharMap;
 	mutable bool				mbOs2Read;		 // true if OS2-table related info is valid
 	mutable bool				mbHasOs2Table;
@@ -77,11 +88,56 @@ class RGBAColor
 public:
 	RGBAColor( SalColor );
 	RGBAColor( float fRed, float fGreen, float fBlue, float fAlpha ); //NOTUSEDYET
-	const float* AsArray() const	{ return &mfRed; }
-	bool IsVisible() const			{ return (mfAlpha > 0); }
-	void SetAlpha( float fAlpha )	{ mfAlpha = fAlpha; }
+	void SetAlpha( float fAlpha ) { mfRGBA[3] = fAlpha; }
+
+	bool IsVisible() const        { return (mfRGBA[3] > 0); }
+	const CGFloat* AsArray() const  { return mfRGBA; }
+	CGFloat GetRed() const   { return mfRGBA[0]; }
+	CGFloat GetGreen() const { return mfRGBA[1]; }
+	CGFloat GetBlue() const  { return mfRGBA[2]; }
+	CGFloat GetAlpha() const { return mfRGBA[3]; }
 private:
-	float mfRed, mfGreen, mfBlue, mfAlpha;
+	CGFloat mfRGBA[4]; // RGBA
+};
+
+// --------------------
+// - ImplMacTextStyle -
+// --------------------
+class ImplMacTextStyle
+{
+public:
+	explicit		ImplMacTextStyle( const ImplFontSelectData& );
+	virtual			~ImplMacTextStyle( void );
+
+	virtual SalLayout* GetTextLayout( void ) const = 0;
+
+	virtual void	GetFontMetric( float fPDIY, ImplFontMetricData& ) const = 0;
+	virtual bool	GetGlyphBoundRect( sal_GlyphId, Rectangle& ) const = 0;
+	virtual bool	GetGlyphOutline( sal_GlyphId, basegfx::B2DPolyPolygon& ) const = 0;
+
+	virtual void	SetTextColor( const RGBAColor& ) = 0;
+
+//###protected:
+	const ImplMacFontData*	mpFontData;
+	/// workaround to prevent overflows for huge font sizes
+	float				mfFontScale;
+	/// <1.0: font is squeezed, >1.0 font is stretched, else 1.0
+	float				mfFontStretch;
+	/// text rotation in radian
+	float				mfFontRotation;
+};
+
+// ------------------
+// - SystemFontList -
+// TODO: move into cross-platform headers
+// ------------------
+class SystemFontList
+{
+public:
+	virtual ~SystemFontList( void );
+
+	virtual void	AnnounceFonts( ImplDevFontList& ) const = 0;
+	virtual ImplMacFontData* GetFontDataFromId( sal_IntPtr nFontId ) const = 0;
 };
 
 // -------------------
@@ -90,6 +146,7 @@ private:
 class AquaSalGraphics : public SalGraphics
 {
     friend class ATSLayout;
+    friend class CTLayout;
 protected:
     AquaSalFrame*                           mpFrame;
 	CGLayerRef								mxLayer;	// Quartz graphics layer
@@ -116,18 +173,12 @@ protected:
     /// brush color RGBA
     RGBAColor                               maFillColor;
 
-    // Device Font settings
+	// Device Font settings
  	const ImplMacFontData*                  mpMacFontData;
-    /// ATSU style object which carries all font attributes
-    ATSUStyle			                    maATSUStyle;
-    /// text rotation as ATSU angle
-    Fixed                                   mnATSUIRotation;
-    /// workaround to prevent ATSU overflows for huge font sizes
-    float                                   mfFontScale;
-    /// <1.0: font is squeezed, >1.0 font is stretched, else 1.0
-    float                                   mfFontStretch;
-    /// allows text to be rendered without antialiasing
-    bool                                    mbNonAntialiasedText;
+	ImplMacTextStyle*                       mpMacTextStyle;
+	RGBAColor                               maTextColor;
+	// allows text to be rendered without antialiasing
+	bool                                    mbNonAntialiasedText;
 
 	// Graphics types
     
@@ -164,7 +215,9 @@ public:
     bool                CheckContext();
     void                UpdateWindow( NSRect& ); // delivered in NSView coordinates
 	void				RefreshRect( const CGRect& );
+#ifndef __x86_64__ // on 64bit OSX NSRect is typedef'ed as CGRect
 	void				RefreshRect( const NSRect& );
+#endif
 	void				RefreshRect(float lX, float lY, float lWidth, float lHeight);
 
     void                SetState();
@@ -396,23 +449,28 @@ inline void AquaSalGraphics::RefreshRect( const CGRect& rRect )
 	RefreshRect( rRect.origin.x, rRect.origin.y, rRect.size.width, rRect.size.height );
 }
 
+#ifndef __x86_64__ // on 64bit OSX NSRect is typedef'ed as CGRect
 inline void AquaSalGraphics::RefreshRect( const NSRect& rRect )
 {
 	RefreshRect( rRect.origin.x, rRect.origin.y, rRect.size.width, rRect.size.height );
 }
+#endif
 
 inline RGBAColor::RGBAColor( SalColor nSalColor )
-:	mfRed( SALCOLOR_RED(nSalColor) * (1.0/255))
-,	mfGreen( SALCOLOR_GREEN(nSalColor) * (1.0/255))
-,	mfBlue( SALCOLOR_BLUE(nSalColor) * (1.0/255))
-,	mfAlpha( 1.0 )	// opaque
-{}
+{
+	mfRGBA[0] = SALCOLOR_RED(  nSalColor) * (1.0/255);
+	mfRGBA[1] = SALCOLOR_GREEN(nSalColor) * (1.0/255);
+	mfRGBA[2] = SALCOLOR_BLUE( nSalColor) * (1.0/255);
+	mfRGBA[3] = 1.0; // default to opaque
+}
 
 inline RGBAColor::RGBAColor( float fRed, float fGreen, float fBlue, float fAlpha )
-:	mfRed( fRed )
-,	mfGreen( fGreen )
-,	mfBlue( fBlue )
-,	mfAlpha( fAlpha )
-{}
+{
+	mfRGBA[0] = fRed;
+	mfRGBA[1] = fGreen;
+	mfRGBA[2] = fBlue;
+	mfRGBA[3] = fAlpha;
+}
 
 #endif // _SV_SALGDI_H
+

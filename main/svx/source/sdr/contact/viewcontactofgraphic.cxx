@@ -93,8 +93,7 @@ namespace sdr
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfGraphic::createVIP2DSForPresObj(
 			const basegfx::B2DHomMatrix& rObjectMatrix,
-			const drawinglayer::attribute::SdrLineFillShadowTextAttribute& rAttribute,
-			const GraphicAttr& rLocalGrafInfo) const
+			const drawinglayer::attribute::SdrLineFillShadowTextAttribute& rAttribute) const
 		{
 			drawinglayer::primitive2d::Primitive2DSequence xRetval;
             GraphicObject aEmptyGraphicObject;
@@ -143,11 +142,12 @@ namespace sdr
 					* aSmallerMatrix;
 
 				const GraphicObject& rGraphicObject = GetGrafObject().GetGraphicObject(false);
+                const GraphicAttr aLocalGrafInfo;
                 const drawinglayer::primitive2d::Primitive2DReference xReferenceB(new drawinglayer::primitive2d::SdrGrafPrimitive2D(
-				    aSmallerMatrix, 
-					drawinglayer::attribute::SdrLineFillShadowTextAttribute(), 
-					rGraphicObject, 
-					rLocalGrafInfo));
+                    aSmallerMatrix, 
+                    drawinglayer::attribute::SdrLineFillShadowTextAttribute(), 
+                    rGraphicObject, 
+                    aLocalGrafInfo));
 
                 drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, xReferenceB);
             }
@@ -379,7 +379,7 @@ namespace sdr
             {
                 // it's an EmptyPresObj, create the SdrGrafPrimitive2D without content and another scaled one
                 // with the content which is the placeholder graphic
-				xRetval = createVIP2DSForPresObj(aObjectMatrix, aAttribute, aLocalGrafInfo);
+				xRetval = createVIP2DSForPresObj(aObjectMatrix, aAttribute);
             }
             else if(visualisationUsesDraft())
             {
@@ -392,16 +392,16 @@ namespace sdr
             }
             else
             {
-			    // create primitive. Info: Calling the copy-constructor of GraphicObject in this
-				// SdrGrafPrimitive2D constructor will force a full swap-in of the graphic
-			    const drawinglayer::primitive2d::Primitive2DReference xReference(
+                // create primitive. Info: Calling the copy-constructor of GraphicObject in this
+                // SdrGrafPrimitive2D constructor will force a full swap-in of the graphic
+                const drawinglayer::primitive2d::Primitive2DReference xReference(
                     new drawinglayer::primitive2d::SdrGrafPrimitive2D(
                         aObjectMatrix, 
                         aAttribute, 
                         rGraphicObject, 
                         aLocalGrafInfo));
 
-			    xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
+                xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
             }
 
 			// always append an invisible outline for the cases where no visible content exists
