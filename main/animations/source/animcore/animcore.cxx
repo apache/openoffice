@@ -2078,7 +2078,19 @@ void AnimationNode::fireChangeListener()
 		}
 	}
 
-	if( mpParent )
+    // #i123585# check mpParent, it is extracted from mxParent (see AnimationNode::setParent)
+    // and may be invalid when mxParent got deleted in the meantime
+    if(mpParent)
+    {
+        Reference< XInterface > xCheckReference(mxParent);
+
+        if(!xCheckReference.is())
+        {
+            mpParent = 0;
+        }
+    }
+
+    if( mpParent )
 		mpParent->fireChangeListener();
 }
 
