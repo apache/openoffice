@@ -271,7 +271,7 @@ struct WRITERFILTER_DLLPRIVATE TableInfo
     PropertyMapPtr pTableBorders;
     TableStyleSheetEntry* pTableStyle;
     TablePropertyValues_t aTableProperties;
-    
+
     TableInfo()
     : nLeftBorderDistance(DEF_BORDER_DIST)
     , nRightBorderDistance(DEF_BORDER_DIST)
@@ -282,10 +282,12 @@ struct WRITERFILTER_DLLPRIVATE TableInfo
     , pTableStyle(NULL)
     {
     }
-        
+
 };
-    
-TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(TableInfo & rInfo)
+
+TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(
+    TableInfo & rInfo,
+    const bool bAdjustLeftMarginByDefaultValue )
 {
     // will receive the table style if any
     TableStyleSheetEntry* pTableStyle = NULL;
@@ -310,17 +312,17 @@ TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(TableInfo
             const StyleSheetEntryPtr pStyleSheet = pStyleSheetTable->FindStyleSheetByISTD( sTableStyleName );
             pTableStyle = dynamic_cast<TableStyleSheetEntry*>( pStyleSheet.get( ) );
             m_aTableProperties->erase( aTableStyleIter );
-            
+
             if( pStyleSheet )
             {
                 // First get the style properties, then the table ones
                 PropertyMapPtr pTableProps( m_aTableProperties );
                 TablePropertyMapPtr pEmptyProps( new TablePropertyMap );
-                
+
                 m_aTableProperties = pEmptyProps;
-                
+
                 PropertyMapPtr pMergedProperties = lcl_SearchParentStyleSheetAndMergeProperties(pStyleSheet, pStyleSheetTable);
-                
+
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
                 dmapper_logger->startElement("mergedProps");
                 dmapper_logger->addTag(pMergedProperties->toTag());
@@ -335,12 +337,12 @@ TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(TableInfo
                 dmapper_logger->addTag(m_aTableProperties->toTag());
                 dmapper_logger->endElement("TableProperties");
 #endif
-            }    
+            }
         }
-        
+
         // Set the table default attributes for the cells
         rInfo.pTableDefaults->insert( m_aTableProperties );
-        
+
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
         dmapper_logger->startElement("TableDefaults");
         dmapper_logger->addTag(rInfo.pTableDefaults->toTag());
@@ -463,12 +465,19 @@ TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(TableInfo
         lcl_debug_TableBorder(aTableBorder);
 #endif
         
-        m_aTableProperties->Insert( PROP_LEFT_MARGIN, false, uno::makeAny( nLeftMargin - nGapHalf - rInfo.nLeftBorderDistance));
-        
+        m_aTableProperties->Insert(
+            PROP_LEFT_MARGIN,
+            false,
+            uno::makeAny( nLeftMargin - nGapHalf - ( bAdjustLeftMarginByDefaultValue ? rInfo.nLeftBorderDistance : 0 ) ) );
+
+        // no bottom margin - set it explicitly to avoid inheritance from a set dynamic pool default
+        // which might be provided via document default paragraph properties.
+        m_aTableProperties->Insert( PROP_BOTTOM_MARGIN, false, uno::makeAny( (sal_Int32)0 ) );
+
         m_aTableProperties->getValue( TablePropertyMap::TABLE_WIDTH, nTableWidth );
         if( nTableWidth > 0 )
             m_aTableProperties->Insert( PROP_WIDTH, false, uno::makeAny( nTableWidth ));
-        
+
         sal_Int32 nHoriOrient = text::HoriOrientation::LEFT_AND_WIDTH;
         m_aTableProperties->getValue( TablePropertyMap::HORI_ORIENT, nHoriOrient ) ;
         m_aTableProperties->Insert( PROP_HORI_ORIENT, false, uno::makeAny( sal_Int16(nHoriOrient) ) );
@@ -478,22 +487,22 @@ TableStyleSheetEntry * DomainMapperTableHandler::endTableGetTableStyle(TableInfo
         m_aTableProperties->find( PropertyDefinition( PROP_HEADER_ROW_COUNT, false ) );
         if( aRepeatIter == m_aTableProperties->end() )
             m_aTableProperties->Insert( PROP_HEADER_ROW_COUNT, false, uno::makeAny( (sal_Int32)0 ));
-        
+
         // Remove the PROP_HEADER_ROW_COUNT from the table default to avoid
         // propagating it to the cells
         PropertyMap::iterator aDefaultRepeatIt =
         rInfo.pTableDefaults->find( PropertyDefinition( PROP_HEADER_ROW_COUNT, false ) );
         if ( aDefaultRepeatIt != rInfo.pTableDefaults->end( ) )
             rInfo.pTableDefaults->erase( aDefaultRepeatIt );
-        
+
         rInfo.aTableProperties = m_aTableProperties->GetPropertyValues();
-        
+
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
         dmapper_logger->startElement("debug.tableprops");
         dmapper_logger->addTag(m_aTableProperties->toTag());
         dmapper_logger->endElement("debug.tableprops");
 #endif
-        
+
     }
  
     return pTableStyle;
@@ -702,14 +711,18 @@ RowPropertyValuesSeq_t DomainMapperTableHandler::endTableGetRowProperties()
     return aRowProperties;
 }
     
-void DomainMapperTableHandler::endTable()
+void DomainMapperTableHandler::endTable(
+    const unsigned int nDepth )
 {
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
     dmapper_logger->startElement("tablehandler.endTable");
 #endif
 
     TableInfo aTableInfo;
-    aTableInfo.pTableStyle = endTableGetTableStyle(aTableInfo);
+    // adjust left margin only for tables in the body text, not for sub tables.
+    const bool bAdjustLeftMarginByDefaultValue = (nDepth == 0);
+    aTableInfo.pTableStyle =
+            endTableGetTableStyle( aTableInfo, bAdjustLeftMarginByDefaultValue );
     //  expands to uno::Sequence< Sequence< beans::PropertyValues > > 
 
     CellPropertyValuesSeq_t aCellProperties = endTableGetCellProperties(aTableInfo);
@@ -724,10 +737,12 @@ void DomainMapperTableHandler::endTable()
     {
         try
         {
-            uno::Reference<text::XTextTable> xTable = m_xText->convertToTable(*m_pTableSeq, 
-                                    aCellProperties,
-                                    aRowProperties,
-                                    aTableInfo.aTableProperties);
+            uno::Reference< text::XTextTable > xTable =
+                    m_xText->convertToTable(
+                        *m_pTableSeq,
+                        aCellProperties,
+                        aRowProperties,
+                        aTableInfo.aTableProperties );
 
             m_xTableRange = xTable->getAnchor( );
         }
