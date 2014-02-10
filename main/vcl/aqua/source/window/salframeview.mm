@@ -1716,9 +1716,9 @@ private:
     return [ super accessibleContext ];
 }
 
--(NSView*)viewElementForParent
+-(NSWindow*)windowForParent
 {
-    return mpFrame->getNSView();
+    return mpFrame->getNSWindow();
 }
 
 -(void)registerMouseEventListener: (id)theListener

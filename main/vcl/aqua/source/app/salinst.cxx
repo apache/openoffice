@@ -178,22 +178,19 @@ static void initNSApp()
                                           object: nil ];
 
     // get System Version and store the value in GetSalData()->mnSystemVersion
-    OSErr err = noErr;
-    SInt32 systemVersion = VER_TIGER; // Initialize with minimal requirement
-    if( (err = Gestalt(gestaltSystemVersion, &systemVersion)) == noErr ) 
+    SInt32 systemVersion = OSX_VER_LION; // initialize with the minimal requirement
+    const OSErr err = Gestalt( gestaltSystemVersion, &systemVersion);
+    if( err == noErr ) 
     {
         GetSalData()->mnSystemVersion = systemVersion;
 #if OSL_DEBUG_LEVEL > 1
-        fprintf( stderr, "System Version %x\n", (unsigned int)systemVersion);
+        fprintf( stderr, "OSX System Version 0x%04x\n", (unsigned int)systemVersion);
 #endif
     }
     else
         NSLog(@"Unable to obtain system version: %ld", (long)err);
 
-    // Initialize Apple Remote
-#if 0 // disabled for now for stability problems
-    GetSalData()->mpMainController = [[MainController alloc] init];
-#endif
+    GetSalData()->mpAppleRemoteMainController = [[AppleRemoteMainController alloc] init];
 
     [[NSDistributedNotificationCenter defaultCenter] addObserver: NSApp
                                            selector: @selector(applicationWillBecomeActive:)
@@ -622,11 +619,10 @@ void AquaSalInstance::handleAppDefinedEvent( NSEvent* pEvent )
         bool bIsFullScreenMode = false;
 
         std::list<AquaSalFrame*>::iterator it = pSalData->maFrames.begin();
-        while( (*it) &&  ( (it != pSalData->maFrames.end() ) || ( (*it)->mbFullScreen == false ) ) )
+        for(; it != pSalData->maFrames.end(); ++it )
         {
             if( (*it)->mbFullScreen )
                 bIsFullScreenMode = true;
-            it++;
         }
 
         switch ([pEvent data1]) 
@@ -663,7 +659,7 @@ void AquaSalInstance::handleAppDefinedEvent( NSEvent* pEvent )
                 break;
         }
         AquaSalFrame* pFrame = pSalData->maFrames.front();
-        Window * pWindow = pFrame->GetWindow() ? pSalData->maFrames.front()->GetWindow() : NULL;
+        Window* pWindow = pFrame ? pFrame->GetWindow() : NULL;
 
         if( pWindow )
         {

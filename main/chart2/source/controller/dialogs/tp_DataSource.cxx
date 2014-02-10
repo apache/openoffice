@@ -69,7 +69,10 @@ const OUString lcl_aLabelRole( RTL_CONSTASCII_USTRINGPARAM( "label" ));
 String lcl_GetRoleLBEntry(
     const OUString & rRole, const OUString & rRange )
 {
-    String aEntry(::chart::DialogModel::ConvertRoleFromInternalToUI( rRole ));
+    String aEntry( rRole );
+    aEntry += '\t';
+    aEntry += String(
+        ::chart::DialogModel::ConvertRoleFromInternalToUI( rRole ));
     aEntry += '\t';
     aEntry += String( rRange );
 
@@ -137,8 +140,8 @@ OUString lcl_GetSequenceNameForLabel( ::chart::SeriesEntry * pEntry )
 }
 
 static long lcl_pRoleListBoxTabs[] =
-	{	2,        // Number of Tabs
-		0, 75
+    {   3,        // Number of Tabs
+        0, 0, 75
 	};
 
 void lcl_ShowChooserButton(
@@ -395,7 +398,7 @@ sal_Bool DataSourceTabPage::commitPage( ::svt::WizardTypes::CommitPageReason /*e
 bool DataSourceTabPage::isRangeFieldContentValid( Edit & rEdit )
 {
     OUString aRange( rEdit.GetText());
-    bool bIsValid = ( aRange.getLength() == 0 ) ||
+    bool bIsValid = aRange.isEmpty() ||
         m_rDialogModel.getRangeSelectionHelper()->verifyCellRange( aRange );
 
     if( bIsValid )
@@ -900,7 +903,7 @@ bool DataSourceTabPage::updateModelFromControl( Edit * pField )
         if( xDataProvider.is())
         {
             OUString aRange( m_aEDT_CATEGORIES.GetText());
-            if( aRange.getLength())
+            if( !aRange.isEmpty() )
             {
                 // create or change categories
                 if( !xLabeledSeq.is())
@@ -966,7 +969,7 @@ bool DataSourceTabPage::updateModelFromControl( Edit * pField )
                         }
                         if( xLabeledSeq.is())
                         {
-                            if( aRange.getLength())
+                            if( !aRange.isEmpty() )
                             {
                                 Reference< data::XDataSequence > xNewSeq;
                                 try
@@ -997,7 +1000,7 @@ bool DataSourceTabPage::updateModelFromControl( Edit * pField )
                     }
                     else
                     {
-                        if( aRange.getLength())
+                        if( !aRange.isEmpty() )
                         {
                             Reference< data::XDataSequence > xNewSeq;
                             try

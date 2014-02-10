@@ -109,6 +109,15 @@ CTTextStyle::CTTextStyle( const ImplFontSelectData& rFSD )
 		pMatrix = &aMatrix;
 	}
 
+	// handle emulation of italic/oblique styles if requested and the font doesn't provide them
+	if( ((pReqFont->meItalic == ITALIC_NORMAL) || (pReqFont->meItalic == ITALIC_OBLIQUE))
+	&& (mpFontData->meItalic == ITALIC_NONE))
+	{
+		if( !pMatrix)
+			pMatrix = &(aMatrix = CGAffineTransformIdentity);
+		aMatrix = CGAffineTransformConcat(aMatrix, CGAffineTransformMake( 1, 0, 0.375F, 1, 0, 0));
+	}
+
 	// create the style object for CoreText font attributes
 	static const CFIndex nMaxDictSize = 16; // TODO: does this really suffice?
 	mpStyleDict = CFDictionaryCreateMutable( NULL, nMaxDictSize,
@@ -130,6 +139,16 @@ CTTextStyle::CTTextStyle( const ImplFontSelectData& rFSD )
 	CTFontRef pNewCTFont = CTFontCreateWithFontDescriptor( pFontDesc, fScaledFontHeight, pMatrix );
 	CFDictionarySetValue( mpStyleDict, kCTFontAttributeName, pNewCTFont );
 	CFRelease( pNewCTFont);
+
+	// handle emulation of bold styles if requested and the font that doesn't provide them
+	if( (pReqFont->meWeight > WEIGHT_MEDIUM)
+	&&  (mpFontData->meWeight <= WEIGHT_MEDIUM)
+	&&  (mpFontData->meWeight != WEIGHT_DONTKNOW))
+	{
+		const int nBoldFactor = -lrint( (3.5F * pReqFont->meWeight) / mpFontData->meWeight);
+		CFNumberRef pCFIntBold = CFNumberCreate( NULL, kCFNumberIntType, &nBoldFactor);
+		CFDictionarySetValue( mpStyleDict, kCTStrokeWidthAttributeName, pCFIntBold);
+	}
 
 #if 0 // LastResort is implicit in CoreText's font cascading
 	const void* aGFBDescriptors[] = { CTFontDescriptorCreateWithNameAndSize( CFSTR("LastResort"), 0) }; // TODO: use the full GFB list

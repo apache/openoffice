@@ -3622,6 +3622,7 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 			{
 				if ( IsDropFormatSupported(SOT_FORMATSTR_ID_SVXB)
 					|| IsDropFormatSupported(SOT_FORMAT_GDIMETAFILE)
+					|| IsDropFormatSupported(SOT_FORMATSTR_ID_PNG)
 					|| IsDropFormatSupported(SOT_FORMAT_BITMAP) )
 				{
 					//	graphic dragged onto drawing object
@@ -3656,6 +3657,7 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 								 IsDropFormatSupported( SOT_FORMATSTR_ID_SVXB ) ||
 								 IsDropFormatSupported( SOT_FORMAT_RTF ) ||
 								 IsDropFormatSupported( SOT_FORMAT_GDIMETAFILE ) ||
+								 IsDropFormatSupported( SOT_FORMATSTR_ID_PNG ) ||
 								 IsDropFormatSupported( SOT_FORMAT_BITMAP ) ||
 								 IsDropFormatSupported( SOT_FORMATSTR_ID_SBA_DATAEXCHANGE ) ||
 								 IsDropFormatSupported( SOT_FORMATSTR_ID_SBA_FIELDDATAEXCHANGE ) ||
@@ -3796,6 +3798,8 @@ sal_uLong lcl_GetDropFormatId( const uno::Reference<datatransfer::XTransferable>
 		nFormatId = SOT_FORMAT_STRING;
 	else if ( aDataHelper.HasFormat( SOT_FORMAT_GDIMETAFILE ) )
 		nFormatId = SOT_FORMAT_GDIMETAFILE;
+	else if ( aDataHelper.HasFormat( SOT_FORMATSTR_ID_PNG ) )
+		nFormatId = SOT_FORMATSTR_ID_PNG;
 	else if ( aDataHelper.HasFormat( SOT_FORMAT_BITMAP ) )
 		nFormatId = SOT_FORMAT_BITMAP;
 
@@ -4279,8 +4283,8 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	if ( pHitObj && bIsLink )
 	{
 		//	dropped on drawing object
-		//	PasteOnDrawObject checks for valid formats
-		if ( pViewData->GetView()->PasteOnDrawObject( rEvt.maDropEvent.Transferable, pHitObj, sal_True ) )
+		//	PasteOnDrawObjectLinked checks for valid formats
+		if ( pViewData->GetView()->PasteOnDrawObjectLinked( rEvt.maDropEvent.Transferable, *pHitObj ) )
 			return rEvt.mnAction;
 	}
 
