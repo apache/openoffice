@@ -230,12 +230,18 @@ const String& SwUserFieldType::GetName() const
 
 void SwUserFieldType::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
 {
-	if( !pOld && !pNew )
-		ChgValid( sal_False );
+    if( !pOld && !pNew )
+        ChgValid( sal_False );
 
-	NotifyClients( pOld, pNew );
-	// und ggfs. am UserFeld haengende InputFelder updaten!
-	GetDoc()->GetSysFldType( RES_INPUTFLD )->UpdateFlds();
+    NotifyClients( pOld, pNew );
+
+    // update Input Fields as there might be Input Fields depending on this User Field
+    if ( !IsModifyLocked() )
+    {
+        LockModify();
+        GetDoc()->GetSysFldType( RES_INPUTFLD )->UpdateFlds();
+        UnlockModify();
+    }
 }
 
 double SwUserFieldType::GetValue( SwCalc& rCalc )
