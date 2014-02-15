@@ -55,6 +55,9 @@
 #include <vcl/svapp.hxx>
 #endif
 
+// #42894# 
+#include <EffectMigration.hxx>
+
 #include <string>
 #include <algorithm>
 
@@ -1232,39 +1235,46 @@ void AnimationWindow::CreateAnimObj (::sd::View& rView )
 			pClone->NbcMove( aMoveSize );
 		}
 
-		// Animationsgruppe erzeugen
-		SdrObjGroup* pGroup   = new SdrObjGroup;
-		SdrObjList*  pObjList = pGroup->GetSubList();
+        // #42894# Caution(!) variable pPage looks right, but it is a page from the local
+        // document the dialog is using (!), so get the target page from the target view
+        SdPage* pTargetSdPage = dynamic_cast< SdPage* >(rView.GetSdrPageView() ? rView.GetSdrPageView()->GetPage() : 0);
 
-		for (i = 0; i < nCount; i++)
-		{
-			// der Clone verbleibt im Animator; in die Gruppe kommt ein Clone
-			// des Clones
-			pClone = pPage->GetObj(i);
-			SdrObject* pCloneOfClone = pClone->Clone();
-			//SdrObject* pCloneOfClone = pPage->GetObj(i)->Clone();
-			pObjList->InsertObject(pCloneOfClone, LIST_APPEND);
-		}
+        if(pTargetSdPage)
+        {
+            // Animationsgruppe erzeugen
+            SdrObjGroup* pGroup   = new SdrObjGroup;
+            SdrObjList*  pObjList = pGroup->GetSubList();
 
-		// bis jetzt liegt die linke obere Ecke der Gruppe in der Fenstermitte;
-		// jetzt noch um die Haelfte der Groesse nach oben und links korrigieren
-		aTemp = aMaxSizeLog;
-		aTemp.Height() = - aTemp.Height() / 2;
-		aTemp.Width()  = - aTemp.Width() / 2;
-		pGroup->NbcMove(aTemp);
+            for (i = 0; i < nCount; i++)
+            {
+                // der Clone verbleibt im Animator; in die Gruppe kommt ein Clone
+                // des Clones
+                pClone = pPage->GetObj(i);
+                SdrObject* pCloneOfClone = pClone->Clone();
+                //SdrObject* pCloneOfClone = pPage->GetObj(i)->Clone();
+                pObjList->InsertObject(pCloneOfClone, LIST_APPEND);
+            }
 
-		// Animationsinformation erzeugen
-		SdAnimationInfo* pInfo = SdDrawDocument::GetShapeUserData(*pGroup,true);
-		pInfo->meEffect = presentation::AnimationEffect_NONE;
-		pInfo->meSpeed = presentation::AnimationSpeed_MEDIUM;
-		pInfo->mbActive = sal_True;
-		pInfo->mbIsMovie = sal_True;
-		pInfo->maBlueScreen = COL_WHITE;
+            // bis jetzt liegt die linke obere Ecke der Gruppe in der Fenstermitte;
+            // jetzt noch um die Haelfte der Groesse nach oben und links korrigieren
+            aTemp = aMaxSizeLog;
+            aTemp.Height() = - aTemp.Height() / 2;
+            aTemp.Width()  = - aTemp.Width() / 2;
+            pGroup->NbcMove(aTemp);
 
-		rView.InsertObjectAtView( pGroup, *pPV, SDRINSERT_SETDEFLAYER);
-	}
+            // #42894# create needed SMIL stuff and move child objects to page directly (see
+            // comments at EffectMigration::CreateAnimatedGroup why this has to be done).
+            EffectMigration::CreateAnimatedGroup(*pGroup, *pTargetSdPage);
 
-	ClickFirstHdl( this );
+            // #42894# if that worked, delete the group again
+            if(!pGroup->GetSubList()->GetObjCount())
+            {
+                delete pGroup;
+            }
+        }
+    }
+
+    ClickFirstHdl( this );
 }
 
 void AnimationWindow::DataChanged( const DataChangedEvent& rDCEvt )
