@@ -2429,9 +2429,7 @@ sal_Bool SwCrsrShell::IsOverReadOnlyPos( const Point& rPt ) const
 	Point aPt( rPt );
 	SwPaM aPam( *pCurCrsr->GetPoint() );
     GetLayout()->GetCrsrOfst( aPam.GetPoint(), aPt );
-    // --> FME 2004-06-29 #114856# Formular view
     return aPam.HasReadonlySel( GetViewOptions()->IsFormView() );
-    // <--
 }
 
 
@@ -3058,32 +3056,30 @@ void SwCrsrShell::SetReadOnlyAvailable( sal_Bool bFlag )
 
 sal_Bool SwCrsrShell::HasReadonlySel() const
 {
-	sal_Bool bRet = sal_False;
-	if( IsReadOnlyAvailable() ||
-        // --> FME 2004-06-29 #114856# Formular view
-        GetViewOptions()->IsFormView() )
-        // <--
-	{
-		if( pTblCrsr )
-			bRet = pTblCrsr->HasReadOnlyBoxSel() ||
-                   pTblCrsr->HasReadonlySel(
-                            // --> FME 2004-06-29 #114856# Formular view
-                            GetViewOptions()->IsFormView() );
-                            // <--
+    sal_Bool bRet = sal_False;
+    if ( IsReadOnlyAvailable() || GetViewOptions()->IsFormView() )
+    {
+        if ( pTblCrsr != NULL )
+        {
+            bRet = pTblCrsr->HasReadOnlyBoxSel()
+                   || pTblCrsr->HasReadonlySel( GetViewOptions()->IsFormView() );
+        }
         else
-		{
-			const SwPaM* pCrsr = pCurCrsr;
+        {
+            const SwPaM* pCrsr = pCurCrsr;
 
-			do {
-                if( pCrsr->HasReadonlySel(
-                        // --> FME 2004-06-29 #114856# Formular view
-                        GetViewOptions()->IsFormView() ) )
-                        // <--
-					bRet = sal_True;
-			} while( !bRet && pCurCrsr != ( pCrsr = (SwPaM*)pCrsr->GetNext() ));
-		}
-	}
-	return bRet;
+            do
+            {
+                if ( pCrsr->HasReadonlySel( GetViewOptions()->IsFormView() ) )
+                {
+                    bRet = sal_True;
+                }
+
+                pCrsr = (SwPaM*)pCrsr->GetNext();
+            } while ( !bRet && pCrsr != pCurCrsr );
+        }
+    }
+    return bRet;
 }
 
 sal_Bool SwCrsrShell::IsSelFullPara() const
