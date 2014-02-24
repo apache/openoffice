@@ -156,7 +156,8 @@ public class TableGeneral {
 		// set line style
 		swTableBorderLineStyle.select(8);
 		// set line color
-		swTableBorderLineColor.select(5);
+		final int nMagentaIndex = 16; // for AOO's colorpicker as of #i118828#
+		swTableBorderLineColor.select( nMagentaIndex);
 		// set spacing to content
 		swTableSTCLeft.focus();
 		typeKeys("<ctrl a>");
@@ -169,20 +170,20 @@ public class TableGeneral {
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
-		swTableShadowColor.select(5);
+		swTableShadowColor.select( nMagentaIndex);
 		swTableBorder.ok();
 		// verify the setting property of table
 		writer.focus();
 		app.dispatch(".uno:TableDialog");
 		swTableBorder.select();
 		assertEquals("2.60 pt", swTableBorderLineStyle.getItemText(8));
-		assertEquals("Magenta", swTableBorderLineColor.getItemText(5));
+		assertEquals("Magenta", swTableBorderLineColor.getItemText( nMagentaIndex));
 		assertEquals("0.50\"", swTableSTCLeft.getText());
 		assertEquals("0.50\"", swTableSTCRight.getText());
 		assertEquals("0.50\"", swTableSTCTop.getText());
 		assertEquals("0.50\"", swTableSTCBottom.getText());
 		assertEquals("1.97\"", swTableShadowSize.getText());
-		assertEquals("Magenta", swTableShadowColor.getItemText(5));
+		assertEquals("Magenta", swTableShadowColor.getItemText( nMagentaIndex));
 		assertTrue("SWTableSTC_SYNC", swTableSTCSYNC.isChecked());
 		swTableBorder.close();
 
