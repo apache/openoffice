@@ -147,10 +147,21 @@ public class GraphicBulletFromFile {
 		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
 		            XIndexReplace.class, numberingrules2);
 			
-		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);  
-		assertEquals("NumberingType should be BITMAP", NumberingType.BITMAP, proValues2[0].Value);
+		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
+		int nNumTypeItemIndex = -1;
+		int nGraphObjItemIndex = -1;
+		for( int i = 0; i < proValues2.length; ++i) { 
+				final String aPropName = proValues2[i].Name;
+				if( aPropName.equals( "GraphicURL"))
+						nGraphObjItemIndex = i;
+				else if( aPropName.equals( "NumberingType"))
+						nNumTypeItemIndex = i;
+		}
+		assertEquals("NumberingType should be BITMAP",
+				NumberingType.BITMAP, proValues2[ nNumTypeItemIndex].Value);
 		String uniqueID = getUniqueIDOfGraphicFile(app, m_GraphicPath);
-		assertEquals("Graphic should be the one with uniqueID"+uniqueID, "vnd.sun.star.GraphicObject:"+uniqueID, proValues2[6].Value);
-
+		assertEquals("Graphic should be the one with uniqueID"+uniqueID,
+				"vnd.sun.star.GraphicObject:"+uniqueID, proValues2[ nGraphObjItemIndex].Value);
 	}
 }
+
