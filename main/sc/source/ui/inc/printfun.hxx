@@ -209,10 +209,12 @@ private:
 	SCCOL				nEndCol;
 	SCROW				nEndRow;
 
-	SCCOL*              pPageEndX;			// Seitenaufteilung
-	SCROW*              pPageEndY;
-	ScPageRowEntry*		pPageRows;
-	size_t				nPagesX;
+    // #123672# use dynamic mem to react on size changes
+    std::vector< SCCOL >            maPageEndX;
+    std::vector< SCROW >            maPageEndY;
+    std::vector< ScPageRowEntry>    maPageRows;
+
+    size_t				nPagesX;
 	size_t				nPagesY;
 	size_t				nTotalY;
 
