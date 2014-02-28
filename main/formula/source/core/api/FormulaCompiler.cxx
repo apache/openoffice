@@ -25,6 +25,7 @@
 #include "formula/errorcodes.hxx"
 #include "formula/token.hxx"
 #include "formula/tokenarray.hxx"
+#include "formula/grammar.hxx"
 #include "core_resource.hxx"
 #include "core_resource.hrc"
 
@@ -152,7 +153,7 @@ class OpCodeList : public Resource        // temp object for resource
 {
 public:
 
-    OpCodeList( sal_uInt16, FormulaCompiler::NonConstOpCodeMapPtr );
+    OpCodeList( sal_uInt16, FormulaCompiler::NonConstOpCodeMapPtr, bool bOOXML = false );
 
 private:
     bool getOpCodeString( String& rStr, sal_uInt16 nOp );
@@ -167,9 +168,9 @@ private:
     SeparatorType meSepType;
 };
 
-OpCodeList::OpCodeList( sal_uInt16 nRID, FormulaCompiler::NonConstOpCodeMapPtr xMap ) :
+OpCodeList::OpCodeList( sal_uInt16 nRID, FormulaCompiler::NonConstOpCodeMapPtr xMap, bool bOOXML ) :
     Resource( ResId(nRID,*ResourceManager::getResManager()) )
-    ,meSepType(SEMICOLON_BASE)
+    ,meSepType( bOOXML ? COMMA_BASE : SEMICOLON_BASE)
 {
      for (sal_uInt16 i = 0; i <= SC_OPCODE_LAST_OPCODE_ID; ++i)
     {
@@ -225,6 +226,47 @@ bool OpCodeList::getOpCodeString( String& rStr, sal_uInt16 nOp )
             else if (meSepType == SEMICOLON_BASE)
             {
                 rStr = String::CreateFromAscii("|");
+                return true;
+            }
+        }
+        break;
+        case SC_OPCODE_UNION:
+        {
+            if ( meSepType == COMMA_BASE )
+            {
+                rStr = String::CreateFromAscii( "," );
+                return true;
+            }
+            else if ( meSepType == SEMICOLON_BASE )
+            {
+                rStr = String::CreateFromAscii( "~" );
+                return true;
+            }
+        }
+        break;
+        case SC_OPCODE_INTERSECT:
+        {
+            if ( meSepType == COMMA_BASE )
+            {
+                rStr = String::CreateFromAscii( " " );
+                return true;
+            }
+            else if ( meSepType == SEMICOLON_BASE )
+            {
+                rStr = String::CreateFromAscii( "!" );
+                return true;
+            }
+        }
+        break;
+        case SC_OPCODE_ERROR_TYPE:
+        {
+            // Only handle comma(Excel) mode.
+            // For calc mode, it will use different string for this Op on importing 
+            // which can be obtained from resource file directly
+            if ( meSepType == COMMA_BASE )
+            {
+                //Calc name: ERRORTYPE    Excel name: ERROR.TYPE
+                rStr = String::CreateFromAscii( "ERROR.TYPE" );
                 return true;
             }
         }
@@ -564,6 +606,11 @@ FormulaCompiler::OpCodeMapPtr FormulaCompiler::GetOpCodeMap( const sal_Int32 nLa
                 InitSymbolsNative();
             xMap = mxSymbolsNative;
             break;
+        case FormulaLanguage::OOXML :
+            if (!mxSymbolsOOXML)
+                InitSymbolsOOXML();
+            xMap = mxSymbolsOOXML;
+            break;
         default:
             ;   // nothing, NULL map returned
     }
@@ -652,6 +699,19 @@ void FormulaCompiler::InitSymbolsNative() const
 	    lcl_fillNativeSymbols(s_sSymbol);
 	mxSymbolsNative = s_sSymbol;
 }
+
+// -----------------------------------------------------------------------------
+void FormulaCompiler::InitSymbolsOOXML() const
+{
+    static NonConstOpCodeMapPtr s_sSymbol;
+    if ( !s_sSymbol.get() )
+    {
+        s_sSymbol.reset( new FormulaCompiler::OpCodeMap( SC_OPCODE_LAST_OPCODE_ID + 1, true, FormulaGrammar::GRAM_OOXML ) );
+        OpCodeList aOpCodeListNative( RID_STRLIST_FUNCTION_NAMES, s_sSymbol, true );
+    }
+    mxSymbolsOOXML = s_sSymbol;
+}
+
 // -----------------------------------------------------------------------------
 void FormulaCompiler::InitSymbolsEnglish() const
 {
@@ -1450,6 +1510,47 @@ void FormulaCompiler::PopTokenArray()
         delete p;
     }
 }
+
+void FormulaCompiler::CreateStringFromTokenArrayOOXML( String& rFormula )
+{
+    rtl::OUStringBuffer aBuffer( pArr->GetLen() * 5 );
+    CreateStringFromTokenArrayOOXML( aBuffer);
+    rFormula = aBuffer;
+}
+
+void FormulaCompiler::CreateStringFromTokenArrayOOXML( rtl::OUStringBuffer& rBuffer )
+{
+    rBuffer.setLength(0);
+    if( !pArr->GetLen() )
+        return;
+
+    FormulaTokenArray* pSaveArr = pArr;
+    bool bODFF = FormulaGrammar::isODFF( meGrammar );
+    if ( bODFF || FormulaGrammar::isPODF( meGrammar ) )
+    {
+        // Scan token array for missing args and re-write if present.
+        MissingConvention aConv( bODFF);
+        if (pArr->NeedsPofRewrite( aConv ) )
+            pArr = pArr->RewriteMissingToPof( aConv );
+    }
+
+    // At least one character per token, plus some are references, some are
+    // function names, some are numbers, ...
+    rBuffer.ensureCapacity( pArr->GetLen() * 5 );
+
+    if ( pArr->IsRecalcModeForced() )
+        rBuffer.append( sal_Unicode( '=' ) );
+    FormulaToken* t = pArr->First();
+    while( t )
+        t = CreateStringFromTokenOOXML( rBuffer, t, sal_True );
+
+    if ( pSaveArr != pArr )
+    {
+        delete pArr;
+        pArr = pSaveArr;
+    }
+}
+
 // -----------------------------------------------------------------------------
 void FormulaCompiler::CreateStringFromTokenArray( String& rFormula )
 {
@@ -1490,8 +1591,152 @@ void FormulaCompiler::CreateStringFromTokenArray( rtl::OUStringBuffer& rBuffer )
         pArr = pSaveArr;
     }
 }
+
+FormulaToken* FormulaCompiler::CreateStringFromTokenOOXML( String& rFormula, FormulaToken* pTokenP, sal_Bool bAllowArrAdvance )
+{
+    rtl::OUStringBuffer aBuffer;
+    FormulaToken* p = CreateStringFromTokenOOXML( aBuffer, pTokenP, bAllowArrAdvance );
+    rFormula += aBuffer;
+    return p;
+}
+
+FormulaToken* FormulaCompiler::CreateStringFromTokenOOXML( rtl::OUStringBuffer& rBuffer, FormulaToken* pTokenP, sal_Bool bAllowArrAdvance )
+{
+    sal_Bool bNext = sal_True;
+    sal_Bool bSpaces = sal_False;
+    FormulaToken* t = pTokenP;
+    
+    bool bCalcOnly = t->GetCalcOnly();
+    if(bCalcOnly)//If this token is calc only not for excel, ingnore this token
+    {
+        t = pArr->Next();
+        return t;
+    }
+    
+    OpCode eOp = t->GetOpCode();
+    if( eOp >= ocAnd && eOp <= ocOr )
+    {
+        // AND, OR infix?
+        if ( bAllowArrAdvance )
+            t = pArr->Next();
+        else
+            t = pArr->PeekNext();
+        bNext = sal_False;
+        bSpaces = ( !t || t->GetOpCode() != ocOpen );
+    }
+    if( bSpaces )
+        rBuffer.append(sal_Unicode(' '));
+
+    if( eOp == ocSpaces )
+    {
+        bool bIntersectionOp = mxSymbols->isODFF();
+        if (bIntersectionOp)
+        {
+            const FormulaToken* p = pArr->PeekPrevNoSpaces();
+            bIntersectionOp = (p && p->GetOpCode() == ocColRowName);
+            if (bIntersectionOp)
+            {
+                p = pArr->PeekNextNoSpaces();
+                bIntersectionOp = (p && p->GetOpCode() == ocColRowName);
+            }
+        }
+        if (bIntersectionOp)
+            rBuffer.appendAscii( "!!");
+        else
+        {
+            // most times it's just one blank
+            sal_uInt8 n = t->GetByte();
+            for ( sal_uInt8 j=0; j<n; ++j )
+            {
+                rBuffer.append(sal_Unicode(' '));
+            }
+        }
+    }
+    else if( eOp >= ocInternalBegin && eOp <= ocInternalEnd )
+        rBuffer.appendAscii( pInternal[ eOp - ocInternalBegin ] );
+    else if( (sal_uInt16) eOp < mxSymbols->getSymbolCount())        // Keyword:
+        rBuffer.append(mxSymbols->getSymbol(eOp));
+    else
+    {
+        DBG_ERRORFILE("unknown OpCode");
+        rBuffer.append(GetNativeSymbol( ocErrName ));
+    }
+    if( bNext ) 
+    {
+        if (eOp == ocExternalRef)
+        {
+            CreateStringFromExternal(rBuffer, pTokenP);
+        }
+        else
+        {
+            switch( t->GetType() )
+            {
+            case svDouble:
+                AppendDouble( rBuffer, t->GetDouble() );
+            break;
+
+            case svString:
+                if( eOp == ocBad )
+                    rBuffer.append(t->GetString());
+                else
+                    AppendString( rBuffer, t->GetString() );
+                break;
+            case svSingleRef:
+                CreateStringFromSingleRef(rBuffer,t);
+                break;
+            case svDoubleRef:
+                CreateStringFromDoubleRef(rBuffer,t);
+                break;
+            case svMatrix:
+                CreateStringFromMatrix( rBuffer, t );
+                break;
+
+            case svIndex:
+                CreateStringFromIndex( rBuffer, t );
+                break;
+            case svExternal:
+            {
+                // mapped or translated name of AddIns
+                String aAddIn( t->GetExternal() );
+                bool bMapped = mxSymbols->isPODF();     // ODF 1.1 directly uses programmatical name
+                if (!bMapped && mxSymbols->hasExternals())
+                {
+                    ExternalHashMap::const_iterator iLook = mxSymbols->getReverseExternalHashMap()->find( aAddIn);
+                    if (iLook != mxSymbols->getReverseExternalHashMap()->end())
+                    {
+                        aAddIn = (*iLook).second;
+                        bMapped = true;
+                    }
+                }
+                if (!bMapped && !mxSymbols->isEnglish())
+                    LoadExcelString( aAddIn );//If this token is external, use Excel String
+                rBuffer.append(aAddIn);
+             }
+            break;
+            case svByte:
+            case svJump:
+            case svFAP:
+            case svMissing:
+            case svSep:
+                break;      // Opcodes
+            default:
+                DBG_ERROR("FormulaCompiler:: GetStringFromToken errUnknownVariable");
+            } // of switch
+        }
+    }
+    if( bSpaces )
+        rBuffer.append(sal_Unicode(' '));
+    if ( bAllowArrAdvance )
+    {
+        if( bNext )
+            t = pArr->Next();
+        return t;
+    }
+    return pTokenP;
+}
+
 // -----------------------------------------------------------------------------
-FormulaToken* FormulaCompiler::CreateStringFromToken( String& rFormula, FormulaToken* pTokenP,sal_Bool bAllowArrAdvance )
+FormulaToken* FormulaCompiler::CreateStringFromToken( String& rFormula, FormulaToken* pTokenP, sal_Bool bAllowArrAdvance )
 {
     rtl::OUStringBuffer aBuffer;
     FormulaToken* p = CreateStringFromToken( aBuffer, pTokenP, bAllowArrAdvance );
@@ -1499,7 +1744,7 @@ FormulaToken* FormulaCompiler::CreateStringFromToken( String& rFormula, FormulaT
     return p;
 }
 
-FormulaToken* FormulaCompiler::CreateStringFromToken( rtl::OUStringBuffer& rBuffer, FormulaToken* pTokenP,sal_Bool bAllowArrAdvance )
+FormulaToken* FormulaCompiler::CreateStringFromToken( rtl::OUStringBuffer& rBuffer, FormulaToken* pTokenP, sal_Bool bAllowArrAdvance )
 {
     sal_Bool bNext = sal_True;
     sal_Bool bSpaces = sal_False;
@@ -1591,7 +1836,7 @@ FormulaToken* FormulaCompiler::CreateStringFromToken( rtl::OUStringBuffer& rBuff
             	String aAddIn( t->GetExternal() );
 	            bool bMapped = mxSymbols->isPODF();     // ODF 1.1 directly uses programmatical name
     	        if (!bMapped && mxSymbols->hasExternals())
-        	    {
+                {
             	    ExternalHashMap::const_iterator iLook = mxSymbols->getReverseExternalHashMap()->find( aAddIn);
 	                if (iLook != mxSymbols->getReverseExternalHashMap()->end())
     	            {
@@ -1600,9 +1845,9 @@ FormulaToken* FormulaCompiler::CreateStringFromToken( rtl::OUStringBuffer& rBuff
 	                }
 	            }
 	            if (!bMapped && !mxSymbols->isEnglish())
-   		             LocalizeString( aAddIn );
-	   	         rBuffer.append(aAddIn);
-   		     }
+   		        LocalizeString( aAddIn );
+                    rBuffer.append(aAddIn);
+                }
             break;
         	case svByte:
 	        case svJump:
@@ -1835,6 +2080,11 @@ void FormulaCompiler::CreateStringFromExternal(rtl::OUStringBuffer& /*rBuffer*/,
 void FormulaCompiler::LocalizeString( String& /*rName*/ )
 {
 }
+
+void FormulaCompiler::LoadExcelString( String& /*rName*/ )
+{
+}
+
 void FormulaCompiler::PushTokenArray( FormulaTokenArray* pa, sal_Bool bTemp )
 {
     if ( bAutoCorrect && !pStack )

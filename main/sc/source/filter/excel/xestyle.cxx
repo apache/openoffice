@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 #include "xestyle.hxx"
@@ -804,8 +802,20 @@ void XclExpPalette::Save( XclExpStream& rStrm )
 
 void XclExpPalette::SaveXml( XclExpXmlStream& rStrm )
 {
-    if( !mxImpl->IsDefaultPalette() )
-        mxImpl->SaveXml( rStrm );
+    //The following is the description about colors attribute in book<<ECMA-376>> Page2892
+    // "This collection is written whenever the legacy color palette has been modified 
+    //(backwards compatibility settings) or a custom color has been selected while using this workbook.
+    //When the color palette is modified, the indexedColors collection is written. 
+    //When a custom color has been selected, the mruColors collection is written."
+
+    //This color palette will be use if and only if the indexed attribute of color has been writen.
+    //and indexed color value only be used for backwards compatibility.
+    //However, when export color attributes, always write the rgb value of color, and never write the indexed of color in this collection,
+    //So no need to write this collection.
+    //when export Excel 2003, need this class ,so I kept this class and did not remove it.
+
+    /*if( !mxImpl->IsDefaultPalette() )
+        mxImpl->SaveXml( rStrm );*/
 }
 
 void XclExpPalette::WriteBody( XclExpStream& rStrm )
@@ -1386,15 +1396,15 @@ bool XclExpCellAlign::FillFromItemSet(
             long nTmpIndent = GETITEMVALUE( rItemSet, SfxUInt16Item, ATTR_INDENT, sal_Int32 );
             (nTmpIndent += 100) /= 200; // 1 Excel unit == 10 pt == 200 twips
             mnIndent = limit_cast< sal_uInt8 >( nTmpIndent, 0, 15 );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_INDENT, bStyle );
+            bUsed |= (0 != mnIndent) || ScfTools::CheckItem( rItemSet, ATTR_INDENT, bStyle );
 
             // shrink to fit
             mbShrink = GETITEMVALUE( rItemSet, SfxBoolItem, ATTR_SHRINKTOFIT, sal_Bool );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_SHRINKTOFIT, bStyle );
+            bUsed |= mbShrink || ScfTools::CheckItem( rItemSet, ATTR_SHRINKTOFIT, bStyle );
 
             // CTL text direction
             SetScFrameDir( GETITEMVALUE( rItemSet, SvxFrameDirectionItem, ATTR_WRITINGDIR, SvxFrameDirection ) );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_WRITINGDIR, bStyle );
+            bUsed |= (EXC_XF_TEXTDIR_CONTEXT != mnTextDir) || ScfTools::CheckItem( rItemSet, ATTR_WRITINGDIR, bStyle );
         }
 
         case EXC_BIFF5: // attributes new in BIFF5
@@ -1402,11 +1412,11 @@ bool XclExpCellAlign::FillFromItemSet(
         {
             // vertical alignment
             SetScVerAlign( GETITEMVALUE( rItemSet, SvxVerJustifyItem, ATTR_VER_JUSTIFY, SvxCellVerJustify ) );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_VER_JUSTIFY, bStyle );
+            bUsed |= (EXC_XF_VER_BOTTOM != mnVerAlign) || ScfTools::CheckItem( rItemSet, ATTR_VER_JUSTIFY, bStyle );
 
             // stacked/rotation
             bool bStacked = GETITEMVALUE( rItemSet, SfxBoolItem, ATTR_STACKED, sal_Bool );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_STACKED, bStyle );
+            bUsed |= bStacked || ScfTools::CheckItem( rItemSet, ATTR_STACKED, bStyle );
             if( bStacked )
             {
                 mnRotation = EXC_ROT_STACKED;
@@ -1416,7 +1426,7 @@ bool XclExpCellAlign::FillFromItemSet(
                 // rotation
                 sal_Int32 nScRot = GETITEMVALUE( rItemSet, SfxInt32Item, ATTR_ROTATE_VALUE, sal_Int32 );
                 mnRotation = XclTools::GetXclRotation( nScRot );
-                bUsed |= ScfTools::CheckItem( rItemSet, ATTR_ROTATE_VALUE, bStyle );
+                bUsed |= (EXC_ROT_NONE != mnRotation) || ScfTools::CheckItem( rItemSet, ATTR_ROTATE_VALUE, bStyle );
             }
             mnOrient = XclTools::GetXclOrientFromRot( mnRotation );
         }
@@ -1425,14 +1435,14 @@ bool XclExpCellAlign::FillFromItemSet(
         {
             // text wrap
             mbLineBreak = bForceLineBreak || GETITEMBOOL( rItemSet, ATTR_LINEBREAK );
-            bUsed |= bForceLineBreak || ScfTools::CheckItem( rItemSet, ATTR_LINEBREAK, bStyle );
+            bUsed |= mbLineBreak || ScfTools::CheckItem( rItemSet, ATTR_LINEBREAK, bStyle );
         }
 
         case EXC_BIFF2: // attributes new in BIFF2
         {
             // horizontal alignment
             SetScHorAlign( GETITEMVALUE( rItemSet, SvxHorJustifyItem, ATTR_HOR_JUSTIFY, SvxCellHorJustify ) );
-            bUsed |= ScfTools::CheckItem( rItemSet, ATTR_HOR_JUSTIFY, bStyle );
+            bUsed |= (EXC_XF_HOR_GENERAL != mnHorAlign) || ScfTools::CheckItem( rItemSet, ATTR_HOR_JUSTIFY, bStyle );
         }
 
         break;
@@ -1900,6 +1910,7 @@ XclExpXF::XclExpXF(
 :   XclXFBase(true),
     XclExpRecord(),
     XclExpRoot(rRoot),
+    mbIsUsed( true ),
     mpItemSet(0),
     maProtection(),
     maAlignment(),
@@ -1921,6 +1932,7 @@ XclExpXF::XclExpXF( const XclExpRoot& rRoot, const SfxStyleSheetBase& rStyleShee
 :   XclXFBase(false),
     XclExpRecord(),
     XclExpRoot(rRoot),
+    mbIsUsed ( true ),
     mpItemSet(0),
     maProtection(),
     maAlignment(),
@@ -1944,6 +1956,7 @@ XclExpXF::XclExpXF( const XclExpRoot& rRoot, bool bCellXF )
 :   XclXFBase(bCellXF),
     XclExpRecord(),
     XclExpRoot(rRoot),
+    mbIsUsed ( true ),
     mpItemSet(0),
     maProtection(),
     maAlignment(),
@@ -2107,6 +2120,7 @@ void XclExpXF::SetXmlIds( sal_uInt32 nBorderId, sal_uInt32 nFillId )
 
 void XclExpXF::SaveXml( XclExpXmlStream& rStrm )
 {
+    if ( !mbIsUsed && IsStyleXF() ) return;
     sax_fastparser::FSHelperPtr& rStyleSheet = rStrm.GetCurrentStream();
 
     sal_Int32 nXfId = 0;
@@ -2247,39 +2261,37 @@ void XclExpStyle::WriteBody( XclExpStream& rStrm )
     }
 }
 
-static const char* lcl_StyleNameFromId( sal_Int32 nStyleId )
-{
-    switch( nStyleId )
-    {
-        case 0:     return "Normal";
-        case 3:     return "Comma";
-        case 4:     return "Currency";
-        case 5:     return "Percent";
-        case 6:     return "Comma [0]";
-        case 7:     return "Currency [0]";
-    }
-    return "*unknown*";
-}
 
 void XclExpStyle::SaveXml( XclExpXmlStream& rStrm )
 {
     OString sName;
     if( IsBuiltIn() )
     {
-        sName = OString( lcl_StyleNameFromId( mnStyleId ) );
+        //In style.xml,the following item describe a cellstyle, the iLevel is low one than name level.
+        //<cellStyle name="RowLevel_3" xfId="5" builtinId="1" iLevel="2"/>
+        //so when get cell style name,level should add one
+        sName = XclXmlUtils::ToOString( XclTools::GetBuiltinStyleNameFromId( mnStyleId , mnLevel+1) );
     }
     else
         sName = XclXmlUtils::ToOString( maName );
-    sal_Int32 nXFId = rStrm.GetRoot().GetXFBuffer().GetXmlStyleIndex( maXFId.mnXFId );
-    rStrm.GetCurrentStream()->singleElement( XML_cellStyle,
-            XML_name,           sName.getStr(),
-            XML_xfId,           OString::valueOf( nXFId ).getStr(),
-            XML_builtinId,      OString::valueOf( (sal_Int32) mnStyleId ).getStr(),
-            // OOXTODO: XML_iLevel,
-            // OOXTODO: XML_hidden,
-            XML_customBuiltin,  XclXmlUtils::ToPsz( ! IsBuiltIn() ),
-            FSEND );
+    sal_uInt16 nXFIndex = rStrm.GetRoot().GetXFBuffer().GetXFIndex( maXFId.mnXFId );
+    sal_Int32 nXFId = rStrm.GetRoot().GetXFBuffer().GetXmlStyleIndex( nXFIndex );
+    sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();
+    ::sax_fastparser::FastAttributeList *attrList = rWorksheet->createAttrList();
+    attrList->add(XML_name,sName.getStr());
+    attrList->add( XML_xfId,OString::valueOf( nXFId ).getStr());
+    if ( IsBuiltIn())
+    {
+        attrList->add( XML_builtinId,OString::valueOf( (sal_Int32) mnStyleId ).getStr());
+        if ( mnLevel>=1 && mnLevel<=7)
+        {
+            attrList->add( XML_iLevel,OString::valueOf( (sal_Int32) mnLevel ).getStr() );
+        }
+    }
+    attrList->add( XML_customBuiltin,XclXmlUtils::ToPsz( ! IsBuiltIn() ));
     // OOXTODO: XML_extLst
+    rWorksheet->startElementV(XML_cellStyle,attrList);
+    rWorksheet->endElement(XML_cellStyle);
 }
 
 // ----------------------------------------------------------------------------
@@ -2484,7 +2496,7 @@ void XclExpXFBuffer::Finalize()
             sal_uInt16 nFoundIndex = EXC_XF_NOTFOUND;
 
             // first try if it is equal to the default cell XF
-            if( xDefCellXF->Equals( *xXF ) )
+            if( xDefCellXF.is() && xDefCellXF->Equals( *xXF ) )
             {
                 nFoundIndex = EXC_XF_DEFAULTCELL;
             }
@@ -2510,9 +2522,9 @@ void XclExpXFBuffer::Finalize()
     for( size_t i = 0; i < nXFCount; ++i )
     {
         XclExpXFList::RecordRefType xXF = maSortedXFList.GetRecord( i );
-        if( xXF->IsStyleXF() )
+        if( xXF->IsStyleXF() && xXF->GetIsUsed())
             maStyleIndexes[ i ] = nXmlStyleIndex++;
-        else
+        else if ( xXF->IsCellXF() )
             maCellIndexes[ i ] = nXmlCellIndex++;
     }
 }
@@ -2561,7 +2573,7 @@ static void lcl_GetCellCounts( const XclExpRecordList< XclExpXF >& rXFList, sal_
         XclExpRecordList< XclExpXF >::RecordRefType xXF = rXFList.GetRecord( i );
         if( xXF->IsCellXF() )
             ++rCells;
-        else if( xXF->IsStyleXF() )
+        else if( xXF->IsStyleXF() && xXF->GetIsUsed())
             ++rStyles;
     }
 }
@@ -2743,8 +2755,23 @@ sal_uInt32 XclExpXFBuffer::FindXF( const SfxStyleSheetBase& rStyleSheet ) const
 sal_uInt32 XclExpXFBuffer::FindBuiltInXF( sal_uInt8 nStyleId, sal_uInt8 nLevel ) const
 {
     for( XclExpBuiltInMap::const_iterator aIt = maBuiltInMap.begin(), aEnd = maBuiltInMap.end(); aIt != aEnd; ++aIt )
-        if( (aIt->second.mnStyleId == nStyleId) && (aIt->second.mnLevel == nLevel) )
-            return aIt->first;
+    {
+        if( aIt->second.mnStyleId == nStyleId )
+        {
+            if( (nStyleId == EXC_STYLE_ROWLEVEL) || 
+                (nStyleId == EXC_STYLE_COLLEVEL) )
+            {
+                if (aIt->second.mnLevel == nLevel )
+                {
+                    return aIt->first;
+                }
+            }
+            else
+            {
+                return aIt->first;
+            }
+        }
+    }
     return EXC_XFID_NOTFOUND;
 }
 
@@ -2872,7 +2899,7 @@ void XclExpXFBuffer::InsertUserStyles()
 {
     SfxStyleSheetIterator aStyleIter( GetDoc().GetStyleSheetPool(), SFX_STYLE_FAMILY_PARA );
     for( SfxStyleSheetBase* pStyleSheet = aStyleIter.First(); pStyleSheet; pStyleSheet = aStyleIter.Next() )
-        if( pStyleSheet->IsUserDefined() && !lclIsBuiltInStyle( pStyleSheet->GetName() ) )
+        if( pStyleSheet->IsUserDefined() )
             InsertStyleXF( *pStyleSheet );
 }
 
@@ -2934,6 +2961,7 @@ void XclExpXFBuffer::InsertDefaultRecords()
 
     // index 1-14: RowLevel and ColLevel styles (without STYLE records)
     XclExpDefaultXF aLevelStyle( GetRoot(), false );
+    aLevelStyle.SetIsUsed( false );
     // RowLevel_1, ColLevel_1
     aLevelStyle.SetFont( 1 );
     AppendBuiltInXF( XclExpXFRef( new XclExpDefaultXF( aLevelStyle ) ), EXC_STYLE_ROWLEVEL, 0 );
@@ -2953,7 +2981,7 @@ void XclExpXFBuffer::InsertDefaultRecords()
     // index 15: default hard cell format, placeholder to be able to add more built-in styles
     maXFList.AppendNewRecord( new XclExpDefaultXF( GetRoot(), true ) );
     maBuiltInMap[ EXC_XF_DEFAULTCELL ].mbPredefined = true;
-
+/*
     // index 16-20: other built-in styles
     XclExpDefaultXF aFormatStyle( GetRoot(), false );
     aFormatStyle.SetFont( 1 );
@@ -2967,7 +2995,7 @@ void XclExpXFBuffer::InsertDefaultRecords()
     AppendBuiltInXFWithStyle( XclExpXFRef( new XclExpDefaultXF( aFormatStyle ) ), EXC_STYLE_CURRENCY_0 );
     aFormatStyle.SetNumFmt( 9 );
     AppendBuiltInXFWithStyle( XclExpXFRef( new XclExpDefaultXF( aFormatStyle ) ), EXC_STYLE_PERCENT );
-
+*/
     // other built-in style XF records (i.e. Hyperlink styles) are created on demand
 
     /*  Insert the real default hard cell format -> 0 is document default pattern.

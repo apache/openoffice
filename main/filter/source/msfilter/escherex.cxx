@@ -2613,19 +2613,10 @@ void ConvertEnhancedCustomShapeEquation( SdrObjCustomShape* pCustoShape,
 		}
 	}
 }
-
-sal_Bool EscherPropertyContainer::IsDefaultObject( SdrObjCustomShape* pCustoShape , const MSO_SPT eShapeType )
+//zhaosz_xml
+sal_Bool EscherPropertyContainer::IsDefaultObject( SdrObjCustomShape* pCustoShape )
 {
     sal_Bool bIsDefaultObject = sal_False;
-	switch(eShapeType)
-	{
-		//if the custom shape is not default shape of ppt, return sal_Fasle;
-		case mso_sptTearDrop:
-			return bIsDefaultObject;
-			
-		default:
-			break;
-	}
 	
     if ( pCustoShape )
     {
@@ -2714,7 +2705,7 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 			sal_Int32 nAdjustmentsWhichNeedsToBeConverted = 0;
 			uno::Sequence< beans::PropertyValues > aHandlesPropSeq;
 			sal_Bool bPredefinedHandlesUsed = sal_True;
-			sal_Bool bIsDefaultObject = IsDefaultObject( pCustoShape , eShapeType);
+			sal_Bool bIsDefaultObject = IsDefaultObject( pCustoShape);
 
 			// convert property "Equations" into std::vector< EnhancedCustomShapeEquationEquation >
 			std::vector< EnhancedCustomShapeEquation >	aEquations;

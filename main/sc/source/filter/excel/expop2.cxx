@@ -188,7 +188,7 @@ FltError ExportXml2007::Write()
     }
 
     pExcDoc->ReadDoc();         // ScDoc -> ExcDoc
-    pExcDoc->WriteXml( aOut );  // wechstreamen
+//    pExcDoc->WriteXml( aOut );  // wechstreamen
 
     if( pDocShell && xRootStrg.Is() )
     {

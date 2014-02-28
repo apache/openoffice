@@ -19,10 +19,7 @@
 #  
 #**************************************************************
 
-
-
 $(eval $(call gb_Helper_register_repository,SRCDIR))
-
 
 $(eval $(call gb_Helper_register_executables,NONE, \
 	bmp \
@@ -59,6 +56,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	lng \
 	msfilter \
 	msword \
+	oox \
 	qstart_gtk \
 	sax \
 	sb \

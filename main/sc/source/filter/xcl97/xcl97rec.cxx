@@ -72,6 +72,10 @@
 #include "docoptio.hxx"
 #include "patattr.hxx"
 #include "tabprotection.hxx"
+#include <oox/export/utils.hxx>
+#include <oox/export/vmlexport.hxx>
+#include <oox/export/shapes.hxx>
+#include "oox/token/tokens.hxx"
 
 using namespace ::oox;
 
@@ -83,10 +87,23 @@ using ::com::sun::star::uno::UNO_QUERY;
 using ::com::sun::star::beans::XPropertySet;
 using ::com::sun::star::drawing::XShape;
 
+using ::oox::drawingml::ShapeExport;
+using ::oox::drawingml::DrawingML;
+
+int XclExpObjList::mnDrawingMLCount=0;
+int XclExpObjList::mnVmlCount=0;
+
+void XclExpObjList::ResetCounters()
+{
+    mnDrawingMLCount    = 0;
+    mnVmlCount          = 0;
+}
+
 // ============================================================================
 
 XclExpObjList::XclExpObjList( const XclExpRoot& rRoot, XclEscherEx& rEscherEx ) :
     XclExpRoot( rRoot ),
+	mnScTab( rRoot.GetCurrScTab() ),
     mrEscherEx( rEscherEx ),
     pSolverContainer( 0 )
 {
@@ -114,6 +131,8 @@ sal_uInt16 XclExpObjList::Add( XclObj* pObj )
 		Insert( pObj, LIST_APPEND );
 		sal_uInt16 nCnt = (sal_uInt16) Count();
 		pObj->SetId( nCnt );
+		pObj->SetTab( mnScTab );
+		
 		return nCnt;
 	}
 	else
@@ -143,6 +162,69 @@ void XclExpObjList::Save( XclExpStream& rStrm )
 
     if( pSolverContainer )
         pSolverContainer->Save( rStrm );
+}
+
+static bool IsVmlObject( const XclObj& rObj )
+{
+    switch( rObj.GetObjType() )
+    {
+        case EXC_OBJTYPE_NOTE:
+            return true;
+        default:
+            return false;
+    }
+}
+
+static void SaveDrawingMLObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, int& nDrawingMLCount )
+{
+  
+
+    sal_Int32 nDrawing = ++nDrawingMLCount;
+    OUString sId;
+    sax_fastparser::FSHelperPtr pDrawing = rStrm.CreateOutputStream(
+            XclXmlUtils::GetStreamName( "xl/", "drawings/drawing", nDrawing ),
+            XclXmlUtils::GetStreamName( "../", "drawings/drawing", nDrawing ),
+            rStrm.GetCurrentStream()->getOutputStream(),
+            "application/vnd.openxmlformats-officedocument.drawing+xml",
+            "http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing",
+            &sId );
+
+    rStrm.GetCurrentStream()->singleElement( XML_drawing,
+            FSNS( XML_r, XML_id ),  XclXmlUtils::ToOString( sId ).getStr(),
+            FSEND );
+
+    rStrm.PushStream( pDrawing );
+    pDrawing->startElement( FSNS( XML_xdr, XML_wsDr ),
+            FSNS( XML_xmlns, XML_xdr ), "http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing",
+            FSNS( XML_xmlns, XML_a ),   "http://schemas.openxmlformats.org/drawingml/2006/main",
+            FSNS( XML_xmlns, XML_r ),   "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+            FSEND );
+
+    for ( XclObj* p = rList.First(); p; p = rList.Next() )
+    {
+      	// if( p->GetObjType() != 0 ) //zhaosz_xml, obj is a group
+        if( IsVmlObject( *p ) || p->GetObjType()==0)
+            continue;
+		p->SaveXml( rStrm );
+    }
+
+    pDrawing->endElement( FSNS( XML_xdr, XML_wsDr ) );
+
+    rStrm.PopStream();
+}
+
+void XclExpObjList::SaveXml( XclExpXmlStream& rStrm )
+{
+    
+    if( pSolverContainer )
+         pSolverContainer->SaveXml( rStrm );
+
+    if( Count() == 0 )
+        return;
+
+    SaveDrawingMLObjects( *this, rStrm, mnDrawingMLCount );
+    //SaveVmlObjects( *this, rStrm, mnVmlCount );
+    
 }
 
 // --- class XclObj --------------------------------------------------
@@ -673,6 +755,12 @@ XclObjAny::XclObjAny( XclExpObjectManager& rObjMgr ) :
 {
 }
 
+XclObjAny::XclObjAny( XclExpObjectManager& rObjMgr,Reference< XShape > xShape ) :
+    XclObj( rObjMgr, EXC_OBJTYPE_UNKNOWN ),
+	mxShape( xShape)
+{
+}
+
 XclObjAny::~XclObjAny()
 {
 }
@@ -692,6 +780,85 @@ void XclObjAny::Save( XclExpStream& rStrm )
 
 	// content of this record
 	XclObj::Save( rStrm );
+}
+
+static const char* GetEditAs( XclObjAny& rObj )
+{
+    if( const SdrObject* pShape = EscherEx::GetSdrObject( rObj.GetShape() ) )
+    {
+        // OOXTODO: returning "twoCell"
+        switch( ScDrawLayer::GetAnchorType( *pShape ) )
+        {
+            case SCA_CELL:  return "oneCell";
+            default:        break;
+        }
+    }
+    return "absolute";
+}
+
+void XclObjAny::WriteFromTo( XclExpXmlStream& rStrm, const Reference< XShape >& rShape, SCTAB nTab )
+{
+    sax_fastparser::FSHelperPtr pDrawing = rStrm.GetCurrentStream();
+
+    awt::Point  aTopLeft    = rShape->getPosition();
+    awt::Size   aSize       = rShape->getSize();
+    Rectangle   aLocation( aTopLeft.X, aTopLeft.Y, aTopLeft.X + aSize.Width, aTopLeft.Y + aSize.Height );
+    ScRange     aRange      = rStrm.GetRoot().GetDoc().GetRange( nTab, aLocation );
+    Rectangle   aRangeRect  = rStrm.GetRoot().GetDoc().GetMMRect( aRange.aStart.Col(), aRange.aStart.Row(),
+            aRange.aEnd.Col()-1, aRange.aEnd.Row()-1,
+            nTab );
+
+
+    pDrawing->startElement( FSNS( XML_xdr, XML_from ),
+            FSEND );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_col ), (sal_Int32) aRange.aStart.Col() );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_colOff ),
+            MM100toEMU( aLocation.Left() - aRangeRect.Left() ) );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_row ), (sal_Int32) aRange.aStart.Row() );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_rowOff ),
+            MM100toEMU( aLocation.Top() - aRangeRect.Top() ) );
+    pDrawing->endElement( FSNS( XML_xdr, XML_from ) );
+
+    pDrawing->startElement( FSNS( XML_xdr, XML_to ),
+            FSEND );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_col ), (sal_Int32) aRange.aEnd.Col() );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_colOff ),
+            MM100toEMU( aLocation.Right() - aRangeRect.Right() ) );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_row ), (sal_Int32) aRange.aEnd.Row() );
+    XclXmlUtils::WriteElement( pDrawing, FSNS( XML_xdr, XML_rowOff ),
+            MM100toEMU( aLocation.Bottom() - aRangeRect.Bottom() ) );
+    pDrawing->endElement( FSNS( XML_xdr, XML_to ) );
+}
+
+void XclObjAny::WriteFromTo( XclExpXmlStream& rStrm, const XclObjAny& rObj )
+{
+    WriteFromTo( rStrm, rObj.GetShape(), rObj.GetTab() );
+}
+
+void XclObjAny::SaveXml( XclExpXmlStream& rStrm )
+{
+    if( !mxShape.is() )
+        return;
+
+    sax_fastparser::FSHelperPtr pDrawing = rStrm.GetCurrentStream();
+
+    ShapeExport aDML( XML_xdr, pDrawing, NULL, &rStrm, DrawingML::DOCUMENT_XLSX );
+	
+    pDrawing->startElement( FSNS( XML_xdr, XML_twoCellAnchor ), // OOXTODO: oneCellAnchor, absoluteAnchor
+            XML_editAs, GetEditAs( *this ),
+            FSEND );
+    Reference< XPropertySet > xPropSet( mxShape, UNO_QUERY );
+    if (xPropSet.is())
+    {
+        WriteFromTo( rStrm, *this );
+        aDML.WriteShape( mxShape );
+    }
+
+    pDrawing->singleElement( FSNS( XML_xdr, XML_clientData),
+            // OOXTODO: XML_fLocksWithSheet
+            // OOXTODO: XML_fPrintsWithSheet
+            FSEND );
+    pDrawing->endElement( FSNS( XML_xdr, XML_twoCellAnchor ) );
 }
 
 // --- class ExcBof8_Base --------------------------------------------

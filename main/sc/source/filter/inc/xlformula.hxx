@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_XLFORMULA_HXX
 #define SC_XLFORMULA_HXX
 
@@ -371,7 +369,7 @@ public:
     /** Creates an empty token array. */
     explicit            XclTokenArray( bool bVolatile = false );
     /** Creates a token array, swaps passed token vector into own data. */
-    explicit            XclTokenArray( ScfUInt8Vec& rTokVec, bool bVolatile = false );
+    explicit            XclTokenArray( ScfUInt8Vec& rTokVec, bool bVolatile = false, bool bRecoverable = true );
     /** Creates a token array, swaps passed token vectors into own data. */
     explicit            XclTokenArray( ScfUInt8Vec& rTokVec, ScfUInt8Vec& rExtDataVec, bool bVolatile = false );
 
@@ -383,6 +381,7 @@ public:
     inline const sal_uInt8* GetData() const { return maTokVec.empty() ? 0 : &maTokVec.front(); }
     /** Returns true, if the formula contains a volatile function. */
     inline bool         IsVolatile() const { return mbVolatile; }
+    inline bool         IsRecoverable() const { return mbRecoverable; }
 
     /** Reads the size field of the token array. */
     void                ReadSize( XclImpStream& rStrm );
@@ -405,6 +404,7 @@ private:
     ScfUInt8Vec         maTokVec;       /// Byte vector containing token data.
     ScfUInt8Vec         maExtDataVec;   /// Byte vector containing extended data (arrays, stacked NLRs).
     bool                mbVolatile;     /// True = Formula contains volatile function.
+    bool                mbRecoverable;  /// True = The formula is invalid but can be recovered
 };
 
 typedef ScfRef< XclTokenArray > XclTokenArrayRef;
@@ -451,10 +451,13 @@ public:
     inline const ::formula::FormulaToken& operator*() const { return *Get(); }
 
     XclTokenArrayIterator& operator++();
+    XclTokenArrayIterator& operator--();
 
 private:
     void                NextRawToken();
+    void                PrevRawToken();
     void                SkipSpaces();
+    void                SkipSpacesBack();
 
 private:
     const ::formula::FormulaToken*const* mppScTokenBeg;     /// Pointer to first token pointer of token array.

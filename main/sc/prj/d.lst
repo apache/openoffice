@@ -34,4 +34,5 @@ mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\scalc\statusbar
 ..\%__SRC%\bin\*-layout.zip %_DEST%\pck%_EXT%\*.*
 ..\%__SRC%\misc\sc.component %_DEST%\xml%_EXT%\sc.component
 ..\%__SRC%\misc\scd.component %_DEST%\xml%_EXT%\scd.component
+..\%__SRC%\misc\scfilt.component %_DEST%\xml%_EXT%\scfilt.component
 ..\%__SRC%\misc\vbaobj.component %_DEST%\xml%_EXT%\vbaobj.component

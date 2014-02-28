@@ -1792,13 +1792,14 @@ ScCompiler::ScCompiler( ScDocument* pDocument, const ScAddress& rPos,ScTokenArra
         pDoc( pDocument ),
         aPos( rPos ),
         pCharClass( ScGlobal::pCharClass ),
-        mnPredetectedReference(0),
-        mnRangeOpPosInSymbol(-1),
+        mnPredetectedReference( 0 ),
+        mnRangeOpPosInSymbol( -1 ),
         pConv( pConvOOO_A1 ),
         meEncodeUrlMode( ENCODE_BY_GRAMMAR ),
         mbCloseBrackets( true ),
         mbExtendedErrorDetection( false ),
-        mbRewind( false )
+        mbRewind( false ),
+        mnLang( LANGUAGE_SYSTEM )
 {
     nMaxTab = pDoc ? pDoc->GetTableCount() - 1 : 0;
 }
@@ -1814,7 +1815,8 @@ ScCompiler::ScCompiler( ScDocument* pDocument, const ScAddress& rPos)
         meEncodeUrlMode( ENCODE_BY_GRAMMAR ),
         mbCloseBrackets( true ),
         mbExtendedErrorDetection( false ),
-        mbRewind( false )
+        mbRewind( false ),
+        mnLang( LANGUAGE_SYSTEM )
 {
     nMaxTab = pDoc ? pDoc->GetTableCount() - 1 : 0;
 }
@@ -5183,6 +5185,12 @@ void ScCompiler::LocalizeString( String& rName )
 {
     ScGlobal::GetAddInCollection()->LocalizeString( rName );
 }
+
+void ScCompiler::LoadExcelString(String& rName)
+{
+    ScGlobal::GetAddInCollection()->GetExcelName( rName, mnLang, rName );
+}
+
 // -----------------------------------------------------------------------------
 sal_Bool ScCompiler::IsImportingXML() const
 {

@@ -49,7 +49,8 @@ LIB1FILES=	\
     $(SLB)$/table.lib\
     $(SLB)$/shape.lib\
     $(SLB)$/dump.lib\
-    $(SLB)$/docprop.lib
+    $(SLB)$/docprop.lib\
+    $(SLB)$/export.lib
 
 # --- Shared-Library -----------------------------------------------
 
@@ -62,9 +63,17 @@ SHL1STDLIBS= \
 		$(CPPUHELPERLIB)\
 		$(COMPHELPERLIB)\
 		$(RTLLIB)		\
+		$(TOOLSLIB) \
 		$(SALLIB)		\
 		$(BASEGFXLIB)	\
+		$(VCLLIB) \
 		$(SAXLIB)       \
+		$(MSFILTERLIB)	\
+		$(SVTOOLLIB)	\
+		$(SVXLIB)  \
+		$(SVXCORELIB)  \
+		$(UNOTOOLSLIB)	\
+		$(SVLLIB) \
         $(XMLSCRIPTLIB)
 
 # link openssl, copied this bit from ucb/source/ucp/webdav/makefile.mk
@@ -95,6 +104,6 @@ ALLTAR : $(MISC)/oox.component
 
 $(MISC)/oox.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         oox.component
-    $(XSLTPROC) --nonet --stringparam uri \
+        $(XSLTPROC) --nonet --stringparam uri \
         '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt oox.component

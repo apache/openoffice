@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 #include "xlformula.hxx"
@@ -493,18 +491,21 @@ void XclFunctionProvider::FillScFuncMap( const XclFunctionInfo* pBeg, const XclF
 // Token array ================================================================
 
 XclTokenArray::XclTokenArray( bool bVolatile ) :
-    mbVolatile( bVolatile )
+    mbVolatile( bVolatile ),
+    mbRecoverable( true )
 {
 }
 
-XclTokenArray::XclTokenArray( ScfUInt8Vec& rTokVec, bool bVolatile ) :
-    mbVolatile( bVolatile )
+XclTokenArray::XclTokenArray( ScfUInt8Vec& rTokVec, bool bVolatile, bool bRecoverable ) :
+    mbVolatile( bVolatile ),
+    mbRecoverable( bRecoverable )
 {
     maTokVec.swap( rTokVec );
 }
 
 XclTokenArray::XclTokenArray( ScfUInt8Vec& rTokVec, ScfUInt8Vec& rExtDataVec, bool bVolatile ) :
-    mbVolatile( bVolatile )
+    mbVolatile( bVolatile ),
+    mbRecoverable( true )
 {
     maTokVec.swap( rTokVec );
     maExtDataVec.swap( rExtDataVec );
@@ -634,6 +635,13 @@ XclTokenArrayIterator& XclTokenArrayIterator::operator++()
     return *this;
 }
 
+XclTokenArrayIterator& XclTokenArrayIterator::operator--()
+{
+    PrevRawToken();
+    SkipSpacesBack();
+    return *this;
+}
+
 void XclTokenArrayIterator::NextRawToken()
 {
     if( mppScToken )
@@ -641,11 +649,30 @@ void XclTokenArrayIterator::NextRawToken()
             mppScToken = 0;
 }
 
+void XclTokenArrayIterator::PrevRawToken()
+{
+    if( mppScToken )
+    {
+        if( mppScToken == mppScTokenBeg )
+            mppScToken = 0;
+        --mppScToken;
+        if( !*mppScToken )
+            mppScToken = 0;
+    }
+}
+
 void XclTokenArrayIterator::SkipSpaces()
 {
     if( mbSkipSpaces )
         while( Is() && ((*this)->GetOpCode() == ocSpaces) )
             NextRawToken();
+}
+
+void XclTokenArrayIterator::SkipSpacesBack()
+{
+    if( mbSkipSpaces )
+        while( Is() && ((*this)->GetOpCode() == ocSpaces) )
+            PrevRawToken();
 }
 
 // strings and string lists ---------------------------------------------------

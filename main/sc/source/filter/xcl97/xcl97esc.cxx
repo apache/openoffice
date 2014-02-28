@@ -270,7 +270,7 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
         {
             // #107540# ignore permanent note shapes
             // #i12190# do not ignore callouts (do not filter by object type ID)
-            pCurrXclObj = new XclObjAny( mrObjMgr );   // just a metafile
+            pCurrXclObj = new XclObjAny( mrObjMgr ,rxShape );   // just a metafile
         }
 	}
 	if ( pCurrXclObj )

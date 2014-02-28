@@ -19,11 +19,8 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
 
 //------------------------------------------------------------------------
 
@@ -80,6 +77,11 @@
 
 #include <math.h>
 
+#include <com/sun/star/document/XDocumentProperties.hpp>
+#include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
+
+#include <com/sun/star/document/XDocumentProperties.hpp>
+#include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
 using namespace ::oox;
 using ::rtl::OString;
 
@@ -403,8 +405,9 @@ void ExcTable::FillAsHeader( ExcBoundsheetList& rBoundsheetList )
 
         Add( new XclExpRecalcId );
 
-		// MSODRAWINGGROUP per-document data
-        aRecList.AppendRecord( GetObjectManager().CreateDrawingGroup() );
+        // MSODRAWINGGROUP per-document data
+        if( GetOutput() == EXC_OUTPUT_BINARY )
+            aRecList.AppendRecord( GetObjectManager().CreateDrawingGroup() );
         // Shared string table: SST, EXTSST
         aRecList.AppendRecord( CreateRecord( EXC_ID_SST ) );
 
@@ -427,7 +430,7 @@ void ExcTable::FillAsTable( SCTAB nCodeNameIdx )
     DBG_ASSERT( nExcTab <= static_cast<sal_uInt16>(MAXTAB), "-ExcTable::Table(): nExcTab - no ordinary table!" );
 
     // create a new OBJ list for this sheet (may be used by notes, autofilter, data validation)
-    if( eBiff == EXC_BIFF8 )
+    if( eBiff == EXC_BIFF8 && ( GetOutput() == EXC_OUTPUT_BINARY || GetOutput() == EXC_OUTPUT_XML_2007 ) )
         GetObjectManager().StartSheet();
 
     // cell table: DEFROWHEIGHT, DEFCOLWIDTH, COLINFO, DIMENSIONS, ROW, cell records
@@ -438,7 +441,6 @@ void ExcTable::FillAsTable( SCTAB nCodeNameIdx )
         FillAsXmlTable( nCodeNameIdx );
         return;
     }
-
 
     // WSBOOL needs data from page settings, create it here, add it later
     ScfRef< XclExpPageSettings > xPageSett( new XclExpPageSettings( GetRoot() ) );
@@ -630,6 +632,9 @@ void ExcTable::FillAsXmlTable( SCTAB nCodeNameIdx )
         }
     }
 
+	if (GetOutput() == EXC_OUTPUT_XML_2007 )//call mxObjList->EndSheet();
+		   aRecList.AppendRecord( GetObjectManager().ProcessDrawing( GetSdrPage( mnScTab ) ) );
+
     // EOF
     Add( new ExcEof );
 }
@@ -737,15 +742,15 @@ void ExcDocument::ReadDoc( void )
         xTab->FillAsEmptyTable( nCodeNameIdx );
     }
 
-    if ( GetBiff() == EXC_BIFF8 )
-	{
-		// complete temporary Escher stream
+    if ( GetOutput() == EXC_OUTPUT_BINARY && GetBiff() == EXC_BIFF8 )
+    {
+        // complete temporary Escher stream
         GetObjectManager().EndDocument();
 
-		// change tracking
+        // change tracking
         if ( GetDoc().GetChangeTrack() )
             pExpChangeTrack = new XclExpChangeTrack( GetRoot() );
-	}
+    }
 }
 
 
@@ -780,48 +785,45 @@ void ExcDocument::Write( SvStream& rSvStrm )
 		pExpChangeTrack->Write();
 }
 
-void ExcDocument::WriteXml( SvStream& rStrm )
+void ExcDocument::WriteXml( XclExpXmlStream& rStrm )
 {
+    SfxObjectShell* pDocShell = GetDocShell();
+
+    using namespace ::com::sun::star;
+    uno::Reference<document::XDocumentPropertiesSupplier> xDPS( pDocShell->GetModel(), uno::UNO_QUERY_THROW );
+    uno::Reference<document::XDocumentProperties> xDocProps = xDPS->getDocumentProperties();
+
+    rStrm.exportDocumentProperties( xDocProps );
+
+    sax_fastparser::FSHelperPtr& rWorkbook = rStrm.GetCurrentStream();
+    rWorkbook->startElement( XML_workbook,
+            XML_xmlns, "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+            FSNS(XML_xmlns, XML_r), "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+            FSEND );
+    rWorkbook->singleElement( XML_fileVersion,
+            XML_appName, "Calc",
+            // OOXTODO: XML_codeName
+            // OOXTODO: XML_lastEdited
+            // OOXTODO: XML_lowestEdited
+            // OOXTODO: XML_rupBuild
+            FSEND );
+
     if( !maTableList.IsEmpty() )
     {
         InitializeSave();
 
-        XclExpXmlStream aStrm( ::comphelper::getProcessComponentContext(), rStrm, GetRoot() );
-
-        sax_fastparser::FSHelperPtr& rWorkbook = aStrm.GetCurrentStream();
-        rWorkbook->startElement( XML_workbook,
-                XML_xmlns, "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
-                FSNS(XML_xmlns, XML_r), "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
-                FSEND );
-        rWorkbook->singleElement( XML_fileVersion,
-                XML_appName, "Calc",
-                // OOXTODO: XML_codeName
-                // OOXTODO: XML_lastEdited
-                // OOXTODO: XML_lowestEdited
-                // OOXTODO: XML_rupBuild
-                FSEND );
-
-        aHeader.WriteXml( aStrm );
+        aHeader.WriteXml( rStrm );
 
         for( size_t nTab = 0, nTabCount = maTableList.GetSize(); nTab < nTabCount; ++nTab )
         {
-            // set current stream position in BOUNDSHEET record
-#if 0
-            ExcBoundsheetRef xBoundsheet = maBoundsheetList.GetRecord( nTab );
-            if( xBoundsheet.get() )
-                xBoundsheet->SetStreamPos( aXclStrm.GetSvStreamPos() );
-#endif
             // write the table
-            maTableList.GetRecord( nTab )->WriteXml( aStrm );
+            maTableList.GetRecord( nTab )->WriteXml( rStrm );
         }
-
-        rWorkbook->endElement( XML_workbook );
-        rWorkbook.reset();
-        aStrm.commitStorage();
     }
-#if 0
-    if( pExpChangeTrack )
-        pExpChangeTrack->WriteXml();
-#endif
+
+    rWorkbook->endElement( XML_workbook );
+    rWorkbook.reset();
+
+    rStrm.commitStorage();
 }
 

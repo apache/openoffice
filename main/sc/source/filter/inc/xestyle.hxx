@@ -512,6 +512,9 @@ public:
 
     virtual void        SaveXml( XclExpXmlStream& rStrm );
 
+    void                SetIsUsed( bool bIsUsed ){ mbIsUsed = bIsUsed; }
+    bool                GetIsUsed(  ){ return mbIsUsed; }
+
     // for buffered FindXF
     const SfxItemSet* getItemSet() const { return mpItemSet; }
     sal_uInt32 getIndexInXFList() const { return mnIndexInXFList; }
@@ -539,6 +542,7 @@ protected:  // access for XclExpDefaultXF
 
 private:
     using               XclXFBase::Equals;
+    bool                mbIsUsed:1;
 
     /** Initializes with default values. */
     void                InitDefault();

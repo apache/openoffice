@@ -97,13 +97,14 @@ class FORMULA_DLLPUBLIC FormulaToken : public IFormulaToken
 protected:
 
             const StackVar      eType;          // type of data
-            mutable sal_uInt16      nRefCnt;        // reference count
+            mutable sal_uInt16  nRefCnt;        // reference count
+            bool                mbCalcOnly;
 
 public:
                                 FormulaToken( StackVar eTypeP,OpCode e = ocPush ) :
-                                    eOp(e), eType( eTypeP ), nRefCnt(0) {}
+                                    eOp(e), eType( eTypeP ), nRefCnt(0), mbCalcOnly(false){}
                                 FormulaToken( const FormulaToken& r ) : IFormulaToken(),
-                                    eOp(r.eOp), eType( r.eType ), nRefCnt(0) {}
+                                    eOp(r.eOp), eType( r.eType ), nRefCnt(0), mbCalcOnly(false){}
 
     virtual                     ~FormulaToken();
 
@@ -136,6 +137,8 @@ public:
         Any other non-overloaded method pops up an assertion.
      */
 
+    void SetCalcOnly(bool bCalcOnly) {mbCalcOnly = bCalcOnly;}
+    const bool GetCalcOnly() const {return mbCalcOnly;}
     virtual sal_uInt8                GetByte() const;
     virtual void                SetByte( sal_uInt8 n );
     virtual bool                HasForceArray() const;
@@ -180,7 +183,7 @@ public:
 class FORMULA_DLLPUBLIC FormulaByteToken : public FormulaToken
 {
 private:
-            sal_uInt8                nByte;
+            sal_uInt8           nByte;
             bool                bHasForceArray;
 protected:
                                 FormulaByteToken( OpCode e, sal_uInt8 n, StackVar v, bool b ) :
@@ -201,11 +204,11 @@ public:
                                     bHasForceArray( r.bHasForceArray ) {}
 
     virtual FormulaToken*       Clone() const { return new FormulaByteToken(*this); }
-    virtual sal_uInt8                GetByte() const;
+    virtual sal_uInt8           GetByte() const;
     virtual void                SetByte( sal_uInt8 n );
     virtual bool                HasForceArray() const;
     virtual void                SetForceArray( bool b );
-    virtual sal_Bool                operator==( const FormulaToken& rToken ) const;
+    virtual sal_Bool            operator==( const FormulaToken& rToken ) const;
 
     DECL_FIXEDMEMPOOL_NEWDEL_DLL( FormulaByteToken )
 };

@@ -19,8 +19,6 @@
 #  
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,msword))
 
 $(eval $(call gb_Library_set_componentfile,msword,sw/util/msword))
@@ -53,16 +51,17 @@ $(eval $(call gb_Library_add_linked_libs,msword,\
 	icuuc \
 	msfilter \
 	sal \
+	sax \
 	sfx \
 	sot \
 	stl \
 	svl \
 	svt \
 	svx \
-	svx \
 	svxcore \
 	sw \
 	ootk \
+	oox \
 	tl \
 	ucbhelper \
 	utl \
@@ -76,6 +75,9 @@ $(eval $(call gb_Library_add_exception_objects,msword,\
 	sw/source/filter/rtf/rtfnum \
 	sw/source/filter/rtf/rtftbl \
 	sw/source/filter/rtf/swparrtf \
+	sw/source/filter/ww8/docxattributeoutput \
+	sw/source/filter/ww8/docxexport \
+	sw/source/filter/ww8/docxexportfilter \
 	sw/source/filter/ww8/rtfattributeoutput \
 	sw/source/filter/ww8/rtfexport \
 	sw/source/filter/ww8/rtfexportfilter \

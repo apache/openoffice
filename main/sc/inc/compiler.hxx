@@ -320,6 +320,7 @@ private:
     bool        mbCloseBrackets;            // whether to close open brackets automatically, default TRUE
     bool        mbExtendedErrorDetection;
     bool        mbRewind;                   // whether symbol is to be rewound to some step during lexical analysis
+    LanguageType mnLang;
 
     sal_Bool   NextNewToken(bool bInArray = false);
 
@@ -351,6 +352,7 @@ public:
     ScCompiler( ScDocument* pDocument, const ScAddress&,ScTokenArray& rArr);
 
 public:
+    void SetUILang(LanguageType nLang) {mnLang = nLang;}
     static void DeInit();               /// all
 
     // for ScAddress::Format()
@@ -530,6 +532,7 @@ private:
     virtual void CreateStringFromMatrix( rtl::OUStringBuffer& rBuffer, formula::FormulaToken* _pTokenP);
     virtual void CreateStringFromIndex(rtl::OUStringBuffer& rBuffer,formula::FormulaToken* _pTokenP);
     virtual void LocalizeString( String& rName );	// modify rName - input: exact name
+    virtual void LoadExcelString(String& rName);
     virtual sal_Bool IsImportingXML() const;
 
     /// Access the CharTable flags

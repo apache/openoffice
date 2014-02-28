@@ -24,6 +24,8 @@
 #include "oox/core/xmlfilterbase.hxx"
 #include "oox/export/drawingml.hxx"
 #include "oox/export/utils.hxx"
+//zhaosz_xml
+#include "oox/token/tokens.hxx"
 
 #include <cstdio>
 #include <com/sun/star/awt/CharSet.hpp>
@@ -35,6 +37,9 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/beans/XPropertyState.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
+//zhaosz_xml
+#include <com/sun/star/container/XIndexAccess.hpp>
+
 #include <com/sun/star/drawing/BitmapMode.hpp>
 #include <com/sun/star/drawing/EnhancedCustomShapeAdjustmentValue.hpp>
 #include <com/sun/star/drawing/LineDash.hpp>
@@ -42,6 +47,12 @@
 #include <com/sun/star/drawing/LineStyle.hpp>
 #include <com/sun/star/drawing/TextHorizontalAdjust.hpp>
 #include <com/sun/star/drawing/TextVerticalAdjust.hpp>
+
+//zhaosz_xml
+#include <com/sun/star/drawing/XShape.hpp>
+#include <com/sun/star/drawing/FillStyle.hpp>
+
+
 #include <com/sun/star/i18n/ScriptType.hpp>
 #include <com/sun/star/io/XOutputStream.hpp>
 #include <com/sun/star/style/ParagraphAdjust.hpp>
@@ -58,13 +69,23 @@
 #include <rtl/strbuf.hxx>
 #include <sfx2/app.hxx>
 #include <svl/languageoptions.hxx>
-#include <svx/escherex.hxx>
-#include <svx/svxenum.hxx>
+//zhaosz_xml
+//#include <svx/escherex.hxx>
+#include <filter/msfilter/escherex.hxx>
+#include <unotools/fontcvt.hxx>
+#include <unotools/fontdefs.hxx>
+#include <editeng/svxenum.hxx>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::drawing;
 using namespace ::com::sun::star::i18n;
+//zhaosz_xml
+using namespace ::com::sun::star::beans;
+using namespace ::com::sun::star::style;
+using namespace ::com::sun::star::text;
+using namespace ::com::sun::star::drawing;
+
 using ::com::sun::star::beans::PropertyState;
 using ::com::sun::star::beans::PropertyValue;
 using ::com::sun::star::beans::XPropertySet;
@@ -313,10 +334,10 @@ void DrawingML::WriteOutline( Reference< XPropertySet > rXPropSet )
 
     sal_uInt32 nLineWidth = 0;
     sal_uInt32 nColor = 0;
-    sal_Bool bColorSet = FALSE;
+    sal_Bool bColorSet = sal_False; //zhaosz_xml
     const char* cap = NULL;
     drawing::LineDash aLineDash;
-    sal_Bool bDashSet = FALSE;
+    sal_Bool bDashSet = sal_False;
 
     GET( nLineWidth, LineWidth );
 
@@ -324,7 +345,7 @@ void DrawingML::WriteOutline( Reference< XPropertySet > rXPropSet )
         case drawing::LineStyle_DASH:
             if( GETA( LineDash ) ) {
                 aLineDash = *(drawing::LineDash*) mAny.getValue();
-                bDashSet = TRUE;
+                bDashSet = sal_True;
                 if( aLineDash.Style == DashStyle_ROUND || aLineDash.Style == DashStyle_ROUNDRELATIVE )
                     cap = "rnd";
 
@@ -336,7 +357,7 @@ void DrawingML::WriteOutline( Reference< XPropertySet > rXPropSet )
         default:
             if ( GETA( LineColor ) ) {
                 nColor = *((sal_uInt32*) mAny.getValue()) & 0xffffff;
-                bColorSet = TRUE;
+                bColorSet = sal_True;
             }
             break;
     }
@@ -466,7 +487,9 @@ OUString DrawingML::WriteImage( const Graphic& rGraphic )
             }
 
             aData = aStream.GetData();
-            nDataSize = aStream.GetSize();
+            //nDataSize = aStream.GetSize();
+			//zhaosz_xml
+			nDataSize = aStream.GetEndOfData();//just function replacing
             break;
             }
     }
@@ -478,8 +501,27 @@ OUString DrawingML::WriteImage( const Graphic& rGraphic )
         case DOCUMENT_PPTX: pComponent = "ppt"; break;
         case DOCUMENT_XLSX: pComponent = "xl"; break;
     }
-
-    Reference< XOutputStream > xOutStream = mpFB->openOutputStream( OUStringBuffer()
+//zhaosz_xml 
+    /*Reference< XOutputStream > xOutStream = mpFB->openOutputStream( OUStringBuffer()
+                                                                    .appendAscii( pComponent )
+                                                                    .appendAscii( "/media/image" )
+                                                                    .append( (sal_Int32) mnImageCounter )
+                                                                    .appendAscii( sExtension )
+                                                                    .makeStringAndClear(),
+                                                                    sMediaType );
+                                                                    */
+     /*
+     
+		Reference< XOutputStream > XmlFilterBase::openFragmentStream( const OUString& rStreamName, const OUString& rMediaType )
+		{
+			Reference< XOutputStream > xOutputStream = openOutputStream( rStreamName );
+			PropertySet aPropSet( xOutputStream );
+			aPropSet.setProperty( PROP_MediaType, rMediaType );
+			return xOutputStream;
+		}
+                                                                    
+        */
+    Reference< XOutputStream > xOutStream = mpFB->openFragmentStream( OUStringBuffer()
                                                                     .appendAscii( pComponent )
                                                                     .appendAscii( "/media/image" )
                                                                     .append( (sal_Int32) mnImageCounter )
@@ -791,7 +833,7 @@ const char* DrawingML::GetFieldType( ::com::sun::star::uno::Reference< ::com::su
         if( rXTextField.is() ) {
             rXPropSet.set( rXTextField, UNO_QUERY );
             if( rXPropSet.is() ) {
-                String aFieldKind( rXTextField->getPresentation( TRUE ) );
+                String aFieldKind( rXTextField->getPresentation( sal_True ) );
                 DBG(printf ("field kind: %s\n", ST(aFieldKind) ));
                 if( aFieldKind == S( "Page" ) ) {
                     return "slidenum";
@@ -1092,7 +1134,7 @@ void DrawingML::WriteParagraph( Reference< XTextContent > rParagraph )
 
     mpFS->startElementNS( XML_a, XML_p, FSEND );
 
-    sal_Bool bPropertiesWritten = FALSE;
+    sal_Bool bPropertiesWritten = sal_False;
     while( enumeration->hasMoreElements() ) {
         Reference< XTextRange > run;
         Any any ( enumeration->nextElement() );
@@ -1100,7 +1142,7 @@ void DrawingML::WriteParagraph( Reference< XTextContent > rParagraph )
         if (any >>= run) {
             if( !bPropertiesWritten && run->getString().getLength() ) {
                 WriteParagraphProperties( rParagraph );
-                bPropertiesWritten = TRUE;
+                bPropertiesWritten = sal_True;
             }
             WriteRun( run );
         }
@@ -1152,11 +1194,11 @@ void DrawingML::WriteText( Reference< XShape > rXShape  )
     if( eHorizontalAlignment == TextHorizontalAdjust_CENTER )
         bHorizontalCenter = true;
 
-    sal_Bool bHasWrap = FALSE;
-    sal_Bool bWrap = FALSE;
+    sal_Bool bHasWrap = sal_False;
+    sal_Bool bWrap = sal_False;
     if( GETA( TextWordWrap ) ) {
         mAny >>= bWrap;
-        bHasWrap = TRUE;
+        bHasWrap = sal_True;
         //DBG(printf("wrap: %d\n", bWrap));
     }
 
@@ -1241,11 +1283,11 @@ void DrawingML::WritePolyPolygon( const PolyPolygon& rPolyPolygon )
 
     mpFS->startElementNS( XML_a, XML_pathLst, FSEND );
 
-    for( USHORT i = 0; i < rPolyPolygon.Count(); i ++ ) {
+    for( sal_uInt16 i = 0; i < rPolyPolygon.Count(); i ++ ) {
 
         const Polygon& rPoly = rPolyPolygon[ i ];
         Rectangle aRect( rPoly.GetBoundRect() );
-        sal_Bool bBezier = FALSE;
+        sal_Bool bBezier = sal_False;
 
         mpFS->startElementNS( XML_a, XML_path,
                               XML_w, I64S( aRect.GetWidth() ),
@@ -1264,13 +1306,13 @@ void DrawingML::WritePolyPolygon( const PolyPolygon& rPolyPolygon )
             mpFS->endElementNS( XML_a, XML_moveTo );
         }
 
-        for( USHORT j = 1; j < rPoly.GetSize(); j ++ )
+        for( sal_uInt16 j = 1; j < rPoly.GetSize(); j ++ )
         {
             enum PolyFlags flags = rPoly.GetFlags(j);
             if( flags == POLY_CONTROL && !bBezier )
             {
                 mpFS->startElementNS( XML_a, XML_cubicBezTo, FSEND );
-                bBezier = TRUE;
+                bBezier = sal_True;
             }
             else if( flags == POLY_NORMAL && !bBezier )
                 mpFS->startElementNS( XML_a, XML_lnTo, FSEND );
@@ -1283,7 +1325,7 @@ void DrawingML::WritePolyPolygon( const PolyPolygon& rPolyPolygon )
             if( ( flags == POLY_NORMAL || flags == POLY_SYMMTR ) && bBezier )
             {
                 mpFS->endElementNS( XML_a, XML_cubicBezTo );
-                bBezier = FALSE;
+                bBezier = sal_False;
             }
             else if( flags == POLY_NORMAL && !bBezier )
                 mpFS->endElementNS( XML_a, XML_lnTo );
@@ -1323,11 +1365,11 @@ void DrawingML::WriteConnectorConnections( EscherConnectorListEntry& rConnectorE
 {
     mpFS->singleElementNS( XML_a, XML_stCxn,
                            XML_id, I32S( nStartID ),
-                           XML_idx, I64S( rConnectorEntry.GetConnectorRule( TRUE ) ),
+                           XML_idx, I64S( rConnectorEntry.GetConnectorRule( sal_True ) ),
                            FSEND );
     mpFS->singleElementNS( XML_a, XML_endCxn,
                            XML_id, I32S( nEndID ),
-                           XML_idx, I64S( rConnectorEntry.GetConnectorRule( FALSE ) ),
+                           XML_idx, I64S( rConnectorEntry.GetConnectorRule( sal_False ) ),
                            FSEND );
 }
 

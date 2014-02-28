@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -348,10 +346,13 @@ private:
     // XclExpScToken: pass-by-value and return-by-value is intended
 
     const FormulaToken* GetNextRawToken();
+    const FormulaToken* GetPrevRawToken();
     const FormulaToken* PeekNextRawToken( bool bSkipSpaces ) const;
 
     bool                GetNextToken( XclExpScToken& rTokData );
+    bool                GetPrevToken( XclExpScToken& rTokData );
     XclExpScToken       GetNextToken();
+    XclExpScToken       GetPrevToken();
 
     XclExpScToken       Expression( XclExpScToken aTokData, bool bInParentheses, bool bStopAtSep );
     XclExpScToken       SkipExpression( XclExpScToken aTokData, bool bStopAtSep );
@@ -818,6 +819,13 @@ const FormulaToken* XclExpFmlaCompImpl::GetNextRawToken()
     return pScToken;
 }
 
+const formula::FormulaToken* XclExpFmlaCompImpl::GetPrevRawToken()
+{
+    --mxData->maTokArrIt;
+    const FormulaToken* pScToken = mxData->maTokArrIt.Get();
+    return pScToken;
+}
+
 const FormulaToken* XclExpFmlaCompImpl::PeekNextRawToken( bool bSkipSpaces ) const
 {
     /*  Returns pointer to next raw token in the token array. The token array
@@ -840,10 +848,26 @@ bool XclExpFmlaCompImpl::GetNextToken( XclExpScToken& rTokData )
     return rTokData.Is();
 }
 
+bool XclExpFmlaCompImpl::GetPrevToken( XclExpScToken& rTokData )
+{
+    rTokData.mpScToken = GetPrevRawToken();
+    rTokData.mnSpaces = (rTokData.GetOpCode() == ocSpaces) ? rTokData.mpScToken->GetByte() : 0;
+    while( rTokData.GetOpCode() == ocSpaces )
+        rTokData.mpScToken = GetPrevRawToken();
+    return rTokData.Is();
+}
+
 XclExpScToken XclExpFmlaCompImpl::GetNextToken()
 {
     XclExpScToken aTokData;
     GetNextToken( aTokData );
+    return aTokData;
+}
+
+XclExpScToken XclExpFmlaCompImpl::GetPrevToken()
+{
+    XclExpScToken aTokData;
+    GetPrevToken( aTokData );
     return aTokData;
 }
 
@@ -957,12 +981,41 @@ XclExpScToken XclExpFmlaCompImpl::Expression( XclExpScToken aTokData, bool bInPa
 
 XclExpScToken XclExpFmlaCompImpl::SkipExpression( XclExpScToken aTokData, bool bStopAtSep )
 {
+    bool bSepHandled = false;
     while( mxData->mbOk && aTokData.Is() && (aTokData.GetOpCode() != ocClose) && (!bStopAtSep || (aTokData.GetOpCode() != ocSep)) )
     {
         if( aTokData.GetOpCode() == ocOpen )
         {
+            // Add a flag for the token which will be skipped.
+            (const_cast<FormulaToken*>(aTokData.mpScToken))->SetCalcOnly(true);
+            if(!bSepHandled && bStopAtSep)
+            {
+                GetPrevToken();
+                aTokData = GetPrevToken();
+                if(aTokData.GetOpCode() == ocSep)
+                {
+                    bSepHandled = true;
+                    (const_cast<FormulaToken*>(aTokData.mpScToken))->SetCalcOnly(true);
+                }
+                GetNextToken();
+                GetNextToken();
+            }
             aTokData = SkipExpression( GetNextToken(), false );
             if( mxData->mbOk ) mxData->mbOk = aTokData.GetOpCode() == ocClose;
+        }
+        // Add a flag for the token which will be skipped.
+        (const_cast<FormulaToken*>(aTokData.mpScToken))->SetCalcOnly(true);
+        if(!bSepHandled && bStopAtSep)//Make sure only in the call outside below calls will be called. In the recursion, ingnore them
+        {//Only for the first token we need come into this part 
+            GetPrevToken();//To comply with the "GetNextToken", must go to prev twice to get its previous token
+            aTokData = GetPrevToken();
+            if(aTokData.GetOpCode() == ocSep)//The parameter will be ingored, so ingnore the sep before it.
+            {
+                bSepHandled = true;
+                (const_cast<FormulaToken*>(aTokData.mpScToken))->SetCalcOnly(true);
+            }
+            GetNextToken();//call twice to restore the state for above actions
+    		GetNextToken();
         }
         aTokData = GetNextToken();
     }

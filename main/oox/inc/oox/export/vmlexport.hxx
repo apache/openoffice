@@ -23,7 +23,7 @@
 
 #include <oox/dllapi.h>
 #include <sax/fshelper.hxx>
-#include <svx/escherex.hxx>
+#include <filter/msfilter/escherex.hxx> //zhaosz_xml
 
 namespace rtl {
     class OString;
@@ -87,13 +87,13 @@ protected:
 
 private:
 
-    virtual void OpenContainer( UINT16 nEscherContainer, int nRecInstance = 0 );
+    virtual void OpenContainer( sal_Int16 nEscherContainer, int nRecInstance = 0 );
     virtual void CloseContainer();
 
-    virtual UINT32 EnterGroup( const String& rShapeName, const Rectangle* pBoundRect = 0 );
+    virtual sal_uInt32 EnterGroup( const String& rShapeName, const Rectangle* pBoundRect = 0 );
     virtual void LeaveGroup();
 
-    virtual void AddShape( UINT32 nShapeType, UINT32 nShapeFlags, UINT32 nShapeId = 0 );
+    virtual void AddShape( sal_Int32 nShapeType, sal_Int32 nShapeFlags, sal_Int32 nShapeId = 0 );
 
 private:
     /// Create an OString representing the id from a numerical id.

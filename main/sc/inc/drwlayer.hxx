@@ -208,6 +208,7 @@ public:
 	// Verankerung setzen und ermitteln
 	static void		SetAnchor( SdrObject*, ScAnchorType );
 	static ScAnchorType	GetAnchor( const SdrObject* );
+	static ScAnchorType GetAnchorType( const SdrObject& );
 
 	// Positionen fuer Detektivlinien
 	static ScDrawObjData* GetObjData( SdrObject* pObj, sal_Bool bCreate=sal_False );

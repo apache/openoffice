@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // ============================================================================
 
 #ifndef SC_XESTREAM_HXX
@@ -40,6 +38,8 @@
 #include "xestring.hxx"
 
 #include <filter/msfilter/mscodec.hxx>
+#include <i18npool/lang.h>
+#include <formula/grammar.hxx>
 #include <vector>
 
 /* ============================================================================
@@ -264,6 +264,7 @@ private:
     (s.Len() && s.GetChar( 0 ) != 0 ? XclXmlUtils::ToOString( s ).getStr() : NULL)
 
 class ScAddress;
+class ScDocShell;
 class ScDocument;
 class ScRange;
 class ScRangeList;
@@ -271,6 +272,7 @@ class ScTokenArray;
 struct XclAddress;
 struct XclFontData;
 class XclRangeList;
+class XclRange;
 
 class XclXmlUtils
 {
@@ -291,23 +293,31 @@ public:
     static ::rtl::OString ToOString( const XclAddress& rAddress );
     static ::rtl::OString ToOString( const XclExpString& s );
     static ::rtl::OString ToOString( const XclRangeList& rRangeList );
+    static ::rtl::OString ToOString( const XclRange& rRangeList );
 
     static ::rtl::OUString ToOUString( const char* s );
     static ::rtl::OUString ToOUString( const ScfUInt16Vec& rBuffer, sal_Int32 nStart = 0, sal_Int32 nLength = -1 );
     static ::rtl::OUString ToOUString( const String& s );
     static ::rtl::OUString ToOUString( ScDocument& rDocument, const ScAddress& rAddress, ScTokenArray* pTokenArray );
+    static ::rtl::OUString ToOUString( ScDocument& rDocument, const ScAddress& rAddress, 
+                    ScTokenArray* pTokenArray, ::formula::FormulaGrammar::Grammar eGrammar, LanguageType nLang, bool bIsRecoverable = true);
     static ::rtl::OUString ToOUString( const XclExpString& s );
     static const char* ToPsz( bool b );
+
+	static sax_fastparser::FSHelperPtr  WriteElement( sax_fastparser::FSHelperPtr pStream, sal_Int32 nElement, sal_Int32 nValue );
+    static sax_fastparser::FSHelperPtr  WriteElement( sax_fastparser::FSHelperPtr pStream, sal_Int32 nElement, sal_Int64 nValue );
+    static sax_fastparser::FSHelperPtr  WriteElement( sax_fastparser::FSHelperPtr pStream, sal_Int32 nElement, const char* sValue );
+    
 };
 
 class XclExpXmlStream : public oox::core::XmlFilterBase
 {
 public:
-    XclExpXmlStream( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext, SvStream& rStrm, const XclExpRoot& rRoot );
+    XclExpXmlStream( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext );
     virtual ~XclExpXmlStream();
 
     /** Returns the filter root data. */
-    inline const XclExpRoot& GetRoot() const { return mrRoot; }
+    inline const XclExpRoot& GetRoot() const { return *mpRoot; }
 
     sax_fastparser::FSHelperPtr& GetCurrentStream();
     void PushStream( sax_fastparser::FSHelperPtr aStream );
@@ -341,12 +351,13 @@ public:
 private:
     virtual ::oox::ole::VbaProject* implCreateVbaProject() const;
     virtual ::rtl::OUString implGetImplementationName() const;
+    ScDocShell *getDocShell();
 
     typedef std::map< ::rtl::OUString,
         std::pair< ::rtl::OUString,
             sax_fastparser::FSHelperPtr > >     XclExpXmlPathToStateMap;
 
-    const XclExpRoot&                           mrRoot;         /// Filter root data.
+    const XclExpRoot *                          mpRoot;         /// Filter root data.
     std::stack< sax_fastparser::FSHelperPtr >   maStreams;
     XclExpXmlPathToStateMap                     maOpenedStreamMap;
 };

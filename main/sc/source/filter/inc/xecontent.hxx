@@ -240,7 +240,7 @@ class ScValidationData;
 class XclExpDV : public XclExpRecord, protected XclExpRoot
 {
 public:
-    explicit            XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle );
+    explicit            XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle, const ScRange& rRange );
     virtual             ~XclExpDV();
 
     /** Returns the core handle of the validation data. */
@@ -292,7 +292,7 @@ public:
 
 private:
     /** Searches for or creates a XclExpDV record object with the specified handle. */
-    XclExpDV&           SearchOrCreateDv( sal_uLong nScHandle );
+    XclExpDV&           SearchOrCreateDv( sal_uLong nScHandle, const ScRange& rRange );
 
     /** Writes the body of the DVAL record. */
     virtual void        WriteBody( XclExpStream& rStrm );

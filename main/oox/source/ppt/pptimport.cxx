@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "oox/ppt/pptimport.hxx"
 #include "oox/drawingml/chart/chartconverter.hxx"
 #include "oox/dump/pptxdumper.hxx"
@@ -29,6 +27,7 @@
 #include "oox/ole/vbaproject.hxx"
 
 using ::rtl::OUString;
+using ::com::sun::star::lang::XComponent;
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::xml::sax;
@@ -64,6 +63,32 @@ PowerPointImport::~PowerPointImport()
 {
 }
 
+sal_Bool SAL_CALL PowerPointImport::filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rDescriptor ) throw( ::com::sun::star::uno::RuntimeException )
+{
+     if ( XmlFilterBase::filter( rDescriptor ) )
+         return true;
+ 
+     if ( isExportFilter() )
+     {
+         Reference< XExporter > xExporter( getServiceFactory()->createInstance( CREATE_OUSTRING( "com.sun.star.comp.Impress.OOXMLExporter" ) ), UNO_QUERY );
+ 
+         if ( xExporter.is() )
+         {
+             Reference< XComponent > xDocument( getModel(), UNO_QUERY );
+             Reference< XFilter > xFilter( xExporter, UNO_QUERY );
+ 
+             if ( xFilter.is() )
+             {
+                 xExporter->setSourceDocument( xDocument );
+                 if ( xFilter->filter( rDescriptor ) )
+                     return true;
+             }
+         }
+     }
+ 
+     return false;
+}
+
 bool PowerPointImport::importDocument() throw()
 {
     /*  to activate the PPTX dumper, define the environment variable
@@ -75,8 +100,6 @@ bool PowerPointImport::importDocument() throw()
 	FragmentHandlerRef xPresentationFragmentHandler( new PresentationFragmentHandler( *this, aFragmentPath ) );
     maTableStyleListPath = xPresentationFragmentHandler->getFragmentPathFromFirstType( CREATE_OFFICEDOC_RELATION_TYPE( "tableStyles" ) );
     return importFragment( xPresentationFragmentHandler );
-
-
 }
 
 bool PowerPointImport::exportDocument() throw()

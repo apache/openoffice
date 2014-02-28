@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef FORMULA_COMPILER_HXX_INCLUDED
 #define FORMULA_COMPILER_HXX_INCLUDED
 
@@ -223,6 +221,12 @@ public:
     short GetNumFormatType() const { return nNumFmt; }
     sal_Bool  CompileTokenArray();
 
+    void CreateStringFromTokenArrayOOXML( String& rFormula );
+    void CreateStringFromTokenArrayOOXML( rtl::OUStringBuffer& rBuffer);
+    FormulaToken* CreateStringFromTokenOOXML( String& rFormula, FormulaToken* pToken,
+                                    sal_Bool bAllowArrAdvance = sal_False );
+    FormulaToken* CreateStringFromTokenOOXML( rtl::OUStringBuffer& rBuffer, FormulaToken* pToken,
+                                    sal_Bool bAllowArrAdvance = sal_False );
     void CreateStringFromTokenArray( String& rFormula );
     void CreateStringFromTokenArray( rtl::OUStringBuffer& rBuffer );
     FormulaToken* CreateStringFromToken( String& rFormula, FormulaToken* pToken,
@@ -258,6 +262,7 @@ protected:
     virtual void CreateStringFromMatrix(rtl::OUStringBuffer& rBuffer,FormulaToken* pTokenP);
     virtual void CreateStringFromIndex(rtl::OUStringBuffer& rBuffer,FormulaToken* pTokenP);
     virtual void LocalizeString( String& rName );	// modify rName - input: exact name
+    virtual void LoadExcelString( String& rName );
     virtual sal_Bool IsImportingXML() const;
 
     sal_Bool   GetToken();
@@ -297,23 +302,24 @@ protected:
     OpCode              eLastOp;
     short               nRecursion;                 // GetToken() recursions
     short               nNumFmt;                    // set during CompileTokenArray()
-    sal_uInt16              pc;
+    sal_uInt16          pc;
 
     FormulaGrammar::Grammar  
-                        meGrammar;          // The grammar used, language plus convention.
+                        meGrammar;                  // The grammar used, language plus convention.
 
-    sal_Bool                bAutoCorrect;               // whether to apply AutoCorrection
-    sal_Bool                bCorrected;                 // AutoCorrection was applied
-    sal_Bool                bCompileForFAP;             //! not real RPN but names, for FunctionAutoPilot,
+    sal_Bool            bAutoCorrect;               // whether to apply AutoCorrection
+    sal_Bool            bCorrected;                 // AutoCorrection was applied
+    sal_Bool            bCompileForFAP;             //! not real RPN but names, for FunctionAutoPilot,
                                                     // will not be resolved
-    sal_Bool                bIgnoreErrors;              // on AutoCorrect and CompileForFAP
+    sal_Bool            bIgnoreErrors;              // on AutoCorrect and CompileForFAP
                                                     // ignore errors and create RPN nevertheless
-    sal_Bool                glSubTotal;                 // if code contains one or more subtotal functions
+    sal_Bool            glSubTotal;                 // if code contains one or more subtotal functions
 private:
     void InitSymbolsNative() const;    /// only SymbolsNative, on first document creation
     void InitSymbolsEnglish() const;   /// only SymbolsEnglish, maybe later
     void InitSymbolsPODF() const;      /// only SymbolsPODF, on demand
     void InitSymbolsODFF() const;      /// only SymbolsODFF, on demand
+    void InitSymbolsOOXML() const;     /// only SymbolsOOXML
 
     void loadSymbols(sal_uInt16 _nSymbols,FormulaGrammar::Grammar _eGrammar,NonConstOpCodeMapPtr& _xMap) const;
 
@@ -362,11 +368,11 @@ private:
             { return operator->(); }
     };
     
-
     mutable NonConstOpCodeMapPtr  mxSymbolsODFF;                          // ODFF symbols
     mutable NonConstOpCodeMapPtr  mxSymbolsPODF;                          // ODF 1.1 symbols
     mutable NonConstOpCodeMapPtr  mxSymbolsNative;                        // native symbols
     mutable NonConstOpCodeMapPtr  mxSymbolsEnglish;                       // English symbols
+    mutable NonConstOpCodeMapPtr  mxSymbolsOOXML;                         // OOXML symbols
 };
 // =============================================================================
 } // formula

@@ -128,56 +128,57 @@ uno::Reference< uno::XInterface > SAL_CALL RtfExport_createInstance(const uno::R
 {
     return (cppu::OWeakObject*) new RtfExportFilter( rSMgr );
 }
-#ifdef __cplusplus
-extern "C"
-{
-#endif
 
-SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment( const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
-{
-    *ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
-}
+//#ifdef __cplusplus
+//extern "C"
+//{
+//#endif
+
+//SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment( const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
+//{
+//    *ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
+//}
 
 // ------------------------
 // - component_getFactory -
 // ------------------------
 
-SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* /* pRegistryKey */ )
-{
-    OSL_TRACE("%s, pImplName is '%s'", OSL_THIS_FUNC, pImplName);
-    uno::Reference< lang::XSingleServiceFactory > xFactory;
-    void* pRet = 0;
+//SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* /* pRegistryKey */ )
+//{
+//    OSL_TRACE("%s, pImplName is '%s'", OSL_THIS_FUNC, pImplName);
+//    uno::Reference< lang::XSingleServiceFactory > xFactory;
+//    void* pRet = 0;
 
-    if ( rtl_str_compare( pImplName, IMPL_NAME_RTFEXPORT ) == 0 ) {
-        const OUString aServiceName( OUString::createFromAscii( IMPL_NAME_RTFEXPORT ) );
+//    if ( rtl_str_compare( pImplName, IMPL_NAME_RTFEXPORT ) == 0 ) {
+//        const OUString aServiceName( OUString::createFromAscii( IMPL_NAME_RTFEXPORT ) );
 
-        xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
-                    reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-                    RtfExport_getImplementationName(),
-                    RtfExport_createInstance,
-                    RtfExport_getSupportedServiceNames() ) );
-    } 
-    else if ( rtl_str_compare( pImplName, IMPL_NAME_RTFIMPORT ) == 0 ) {
-        const OUString aServiceName( OUString::createFromAscii( IMPL_NAME_RTFIMPORT ) );
+//        xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
+//                    reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
+//                    RtfExport_getImplementationName(),
+//                    RtfExport_createInstance,
+//                    RtfExport_getSupportedServiceNames() ) );
+//    } 
+//    else if ( rtl_str_compare( pImplName, IMPL_NAME_RTFIMPORT ) == 0 ) {
+//        const OUString aServiceName( OUString::createFromAscii( IMPL_NAME_RTFIMPORT ) );
 
-        xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
-                    reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-                    RtfImport_getImplementationName(),
-                    RtfImport_createInstance,
-                    RtfImport_getSupportedServiceNames() ) );
-    }
+//        xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
+//                    reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
+//                    RtfImport_getImplementationName(),
+//                    RtfImport_createInstance,
+//                    RtfImport_getSupportedServiceNames() ) );
+//    }
 
-    if ( xFactory.is() )
-    {
-        xFactory->acquire();
-        pRet = xFactory.get();
-    }
+//    if ( xFactory.is() )
+//    {
+//        xFactory->acquire();
+//        pRet = xFactory.get();
+//    }
 
-    return pRet;
-}
+//    return pRet;
+//}
 
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//}
+//#endif
 
 /* vi:set shiftwidth=4 expandtab: */

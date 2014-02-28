@@ -181,6 +181,10 @@ public:
         @descr  Adds a prefix to the representation returned by GetXclBuiltInDefName().
         @param cBuiltIn  Excel index of the built-in name. */
     static String       GetBuiltInDefName( sal_Unicode cBuiltIn );
+    /** Returns the Calc UI representation of a built-in defined name used in NAME records.
+        @descr  get built in style name from builtid.
+        @param cBuiltIn  Excel index of the built-in name. */
+    static String       GetBuiltinStyleNameFromId( sal_Int32 nBuiltinId, sal_Int32 nLevel = 0 );
     /** Returns the Excel built-in name index of the passed defined name from Calc.
         @descr  Ignores any characters following a valid representation of a built-in name.
         @param pcBuiltIn  (out-param) If not 0, the index of the built-in name will be returned here.
@@ -245,6 +249,7 @@ private:
     static const String maCFStyleNamePrefix2;       /// Prefix for cond. formatting style names from OOX filter.
     static const ::rtl::OUString maSbMacroPrefix;   /// Prefix for StarBasic macros.
     static const ::rtl::OUString maSbMacroSuffix;   /// Suffix for StarBasic macros.
+    static const sal_Int32 snStyleNamesCount;
 };
 
 // read/write colors ----------------------------------------------------------

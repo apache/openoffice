@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 #include "xecontent.hxx"
@@ -956,11 +954,21 @@ const char* lcl_GetOperatorType( sal_uInt32 nFlags )
     return NULL;
 }
 
+const char* lcl_GetErrorStyle( sal_uInt32 nFlags )
+{
+    switch( nFlags & EXC_DV_ERROR_MASK )
+    {
+        case EXC_DV_ERROR_STOP:         return "stop";
+        case EXC_DV_ERROR_WARNING:      return "warning";
+        case EXC_DV_ERROR_INFO:         return "information";
+    }
+    return NULL;
+}
 } // namespace
 
 // ----------------------------------------------------------------------------
 
-XclExpDV::XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle ) :
+XclExpDV::XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle, const ScRange& rRange ) :
     XclExpRecord( EXC_ID_DV ),
     XclExpRoot( rRoot ),
     mnFlags( 0 ),
@@ -1085,14 +1093,25 @@ XclExpDV::XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle ) :
                         Formula compiler supports this by offering two different functions
                         CreateDataValFormula() and CreateListValFormula(). */
                     mxTokArr1 = rFmlaComp.CreateFormula( EXC_FMLATYPE_LISTVAL, *xScTokArr );
-                    msFormula1 = XclXmlUtils::ToOUString( GetDoc(), pValData->GetSrcPos(), xScTokArr.get() );
+                    /* Later the second param will be used to get the absolute position for the formula
+                    range parameter. At last this absolute position will be formated as string range such as B4:B8.
+                    Absolut position = relative position + DV positon(the second param).
+                    But we cannot get a correct DV position form "pValData->GetSrcPos()". Because on importing 2007
+                    file, the src pos for a DV obj is always be set as (0, 0, 0).
+                    Here I pass the range start. It will be OK both for a single cell and a rang cell DV(Select a rang cell and 
+                    set DV for them together. It does not mean the range for formula). */
+                    msFormula1 = XclXmlUtils::ToOUString( GetDoc(), rRange.aStart, xScTokArr.get(),  
+                                formula::FormulaGrammar::GRAM_OOXML, rRoot.GetUILanguage(), mxTokArr1.is() && mxTokArr1->IsRecoverable());
                 }
             }
             else
             {
                 // no list validation -> convert the formula
                 mxTokArr1 = rFmlaComp.CreateFormula( EXC_FMLATYPE_DATAVAL, *xScTokArr );
-                msFormula1 = XclXmlUtils::ToOUString( GetDoc(), pValData->GetSrcPos(), xScTokArr.get() );
+                // Below is another selection to pass the recoverable  param
+                // (EXC_TOKID_ERR == mxTokArr1->GetData()[0]) && (EXC_ERR_NA == mxTokArr1->GetData()[1])
+                msFormula1 = XclXmlUtils::ToOUString( GetDoc(), rRange.aStart, xScTokArr.get(), 
+                            formula::FormulaGrammar::GRAM_OOXML, rRoot.GetUILanguage(), mxTokArr1.is() && mxTokArr1->IsRecoverable() );
             }
         }
 
@@ -1101,7 +1120,8 @@ XclExpDV::XclExpDV( const XclExpRoot& rRoot, sal_uLong nScHandle ) :
         if( xScTokArr.get() )
         {
             mxTokArr2 = rFmlaComp.CreateFormula( EXC_FMLATYPE_DATAVAL, *xScTokArr );
-            msFormula2 = XclXmlUtils::ToOUString( GetDoc(), pValData->GetSrcPos(), xScTokArr.get() );
+            msFormula2 = XclXmlUtils::ToOUString( GetDoc(), rRange.aStart, xScTokArr.get(),  
+                        formula::FormulaGrammar::GRAM_OOXML, rRoot.GetUILanguage(), mxTokArr1.is() && mxTokArr1->IsRecoverable());
         }
     }
     else
@@ -1146,13 +1166,13 @@ void XclExpDV::SaveXml( XclExpXmlStream& rStrm )
     rWorksheet->startElement( XML_dataValidation,
             XML_allowBlank,         XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_DV_IGNOREBLANK ) ),
             XML_error,              XESTRING_TO_PSZ( maErrorText ),
-            // OOXTODO: XML_errorStyle, 
+            XML_errorStyle,         lcl_GetErrorStyle( mnFlags ),//lijiany_ms_2007_dv
             XML_errorTitle,         XESTRING_TO_PSZ( maErrorTitle ),
             // OOXTODO: XML_imeMode,
             XML_operator,           lcl_GetOperatorType( mnFlags ),
             XML_prompt,             XESTRING_TO_PSZ( maPromptText ),
             XML_promptTitle,        XESTRING_TO_PSZ( maPromptTitle ),
-            XML_showDropDown,       XclXmlUtils::ToPsz( ! ::get_flag( mnFlags, EXC_DV_SUPPRESSDROPDOWN ) ),
+            XML_showDropDown,       XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_DV_SUPPRESSDROPDOWN ) ),
             XML_showErrorMessage,   XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_DV_SHOWERROR ) ),
             XML_showInputMessage,   XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_DV_SHOWPROMPT ) ),
             XML_sqref,              XclXmlUtils::ToOString( maScRanges ).getStr(),
@@ -1189,7 +1209,7 @@ void XclExpDval::InsertCellRange( const ScRange& rRange, sal_uLong nScHandle )
 {
     if( GetBiff() == EXC_BIFF8 )
     {
-        XclExpDV& rDVRec = SearchOrCreateDv( nScHandle );
+        XclExpDV& rDVRec = SearchOrCreateDv( nScHandle, rRange );
         rDVRec.InsertCellRange( rRange );
     }
 }
@@ -1230,7 +1250,7 @@ void XclExpDval::SaveXml( XclExpXmlStream& rStrm )
     rWorksheet->endElement( XML_dataValidations );
 }
 
-XclExpDV& XclExpDval::SearchOrCreateDv( sal_uLong nScHandle )
+XclExpDV& XclExpDval::SearchOrCreateDv( sal_uLong nScHandle, const ScRange& rRange )
 {
     // test last found record
     if( mxLastFoundDV.get() && (mxLastFoundDV->GetScHandle() == nScHandle) )
@@ -1265,7 +1285,7 @@ XclExpDV& XclExpDval::SearchOrCreateDv( sal_uLong nScHandle )
     }
 
     // create new DV record
-    mxLastFoundDV.reset( new XclExpDV( *this, nScHandle ) );
+    mxLastFoundDV.reset( new XclExpDV( *this, nScHandle, rRange ) );
     maDVList.InsertRecord( mxLastFoundDV, nCurrPos );
     return *mxLastFoundDV;
 }

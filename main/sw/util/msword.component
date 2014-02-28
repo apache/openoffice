@@ -20,8 +20,6 @@
  * 
  ***********************************************************-->
 
-
-
 <component loader="com.sun.star.loader.SharedLibrary"
     xmlns="http://openoffice.org/2010/uno-components">
   <implementation name="com.sun.star.comp.Writer.RtfExport">
@@ -29,5 +27,8 @@
   </implementation>
   <implementation name="com.sun.star.comp.Writer.RtfImport">
     <service name="com.sun.star.comp.Writer.RtfImport"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.writer.OOXMLExporter">
+    <service name="com.sun.star.document.ExportFilter"/>
   </implementation>
 </component>

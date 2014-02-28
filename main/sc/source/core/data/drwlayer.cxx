@@ -1892,6 +1892,13 @@ ScAnchorType ScDrawLayer::GetAnchor( const SdrObject* pObj )
 	return ( aAnchor.Y() != 0 ) ? SCA_PAGE : SCA_CELL;
 }
 
+ScAnchorType ScDrawLayer::GetAnchorType( const SdrObject &rObj )
+{
+    //If this object has a cell anchor associated with it
+    //then its cell-anchored, otherwise its page-anchored
+    return ScDrawLayer::GetObjData(const_cast<SdrObject*>(&rObj)) ? SCA_CELL : SCA_PAGE;
+}
+
 ScDrawObjData* ScDrawLayer::GetObjData( SdrObject* pObj, sal_Bool bCreate )		// static
 {
 	sal_uInt16 nCount = pObj ? pObj->GetUserDataCount() : 0;

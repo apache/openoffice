@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_EXCRECDS_HXX
 #define SC_EXCRECDS_HXX
 
@@ -29,7 +27,6 @@
 #include <tools/string.hxx>
 #include <vcl/vclenum.hxx>
 #include <tools/color.hxx>
-
 
 #include <vector>
 #include "olinetab.hxx"
@@ -414,30 +411,51 @@ public:
 
 // ----------------------------------------------------------------------------
 
+class ExcFiltersAttr : public XclExpRecord
+{
+private:
+    String              msValue;
+public:
+    ExcFiltersAttr( const String& rValue);
+    ~ExcFiltersAttr();
+    void                SetValue( const String& rValue) {  msValue = rValue; }
+    String              GetValue() const { return msValue; }
+    void                SaveXml( XclExpXmlStream& rStrm );
+};
+
+// ----------------------------------------------------------------------------
+
 class XclExpAutofilter : public XclExpRecord, protected XclExpRoot
 {
 private:
-	sal_uInt16					nCol;
-	sal_uInt16					nFlags;
-	ExcFilterCondition		aCond[ 2 ];
+    sal_uInt16          nCol;
+    sal_uInt16          nFlags;
+    ExcFilterCondition  aCond[ 2 ];
+	// true if data filter have a 'or' relation in two column. default is false 
+	sal_Bool            bHasOr;
 
-	sal_Bool					AddCondition( ScQueryConnect eConn, sal_uInt8 nType,
-								sal_uInt8 nOp, double fVal, String* pText,
-								sal_Bool bSimple = sal_False );
+    typedef XclExpRecordList< ExcFiltersAttr >    ExcFiltersAttrList;
+    ExcFiltersAttrList  maFiltersAttrList;
+    sal_Bool            AddCondition( ScQueryConnect eConn, sal_uInt8 nType,
+                                     sal_uInt8 nOp, double fVal, String* pText,
+                                     sal_Bool bSimple = sal_False );
 
-    virtual void            WriteBody( XclExpStream& rStrm );
+    virtual void        WriteBody( XclExpStream& rStrm );
 
 protected:
 public:
-                            XclExpAutofilter( const XclExpRoot& rRoot, sal_uInt16 nC );
+                        XclExpAutofilter( const XclExpRoot& rRoot, sal_uInt16 nC );
 
-	inline sal_uInt16			GetCol() const			{ return nCol; }
-	inline sal_Bool				HasCondition() const	{ return !aCond[ 0 ].IsEmpty(); }
-    inline sal_Bool             HasTop10() const        { return ::get_flag( nFlags, EXC_AFFLAG_TOP10 ); }
+    inline sal_uInt16   GetCol() const          { return nCol; }
+    inline sal_Bool     HasCondition() const    { return !aCond[ 0 ].IsEmpty(); }
+    inline sal_Bool     HasTop10() const        { return ::get_flag( nFlags, EXC_AFFLAG_TOP10 ); }
 
-    sal_Bool                    AddEntry( const ScQueryEntry& rEntry );
+    sal_Bool            AddEntry( const ScQueryEntry& rEntry );
 
-    virtual void            SaveXml( XclExpXmlStream& rStrm );
+    virtual void        SaveXml( XclExpXmlStream& rStrm );
+    sal_Bool            GetHasOr() const { return bHasOr; }
+    void                SetHasOr( sal_Bool bIsOr ){ bHasOr = bIsOr; }
+    void                AddFiltersAttrList( const String& rValue );
 };
 
 // ----------------------------------------------------------------------------
@@ -457,16 +475,17 @@ public:
 
 private:
     XclExpAutofilter*   GetByCol( SCCOL nCol ); // always 0-based
-    sal_Bool                IsFiltered( SCCOL nCol );
+    sal_Bool            IsFiltered( SCCOL nCol );
 
 private:
     typedef XclExpRecordList< XclExpAutofilter >    XclExpAutofilterList;
     typedef XclExpAutofilterList::RecordRefType     XclExpAutofilterRef;
 
-    XclExpAutofilterList maFilterList;
-    XclExpFiltermode*   pFilterMode;
+    XclExpAutofilterList  maFilterList;
+    XclExpFiltermode*     pFilterMode;
     XclExpAutofilterinfo* pFilterInfo;
-    ScRange                 maRef;
+    ScRange               maRef;
+    sal_Bool              mbHasFilter;
 };
 
 // ----------------------------------------------------------------------------

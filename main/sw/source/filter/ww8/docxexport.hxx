@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _DOCXEXPORT_HXX_
 #define _DOCXEXPORT_HXX_
 
@@ -93,6 +91,8 @@ public:
 
     virtual void AppendBookmark( const rtl::OUString& rName, bool bSkip = false );
 
+    virtual void ExportGrfBullet( const SwTxtNode & );
+
     /// Returns the relationd id
     rtl::OString AddRelation( const rtl::OUString& rType, const rtl::OUString& rTarget, const rtl::OUString& rMode );
 
@@ -104,7 +104,7 @@ public:
 
     /// Output the actual headers and footers.
     virtual void WriteHeadersFooters( sal_uInt8 nHeadFootFlags,
-            const SwFrmFmt& rFmt, const SwFrmFmt& rLeftFmt, const SwFrmFmt& rFirstPageFmt );
+            const SwFrmFmt& rFmt, const SwFrmFmt& rLeftFmt, const SwFrmFmt& rFirstPageFmt, sal_uInt8 nBreakCode );
 
     /// Write the field
     virtual void OutputField( const SwField* pFld, ww::eField eFldType,
@@ -112,7 +112,8 @@ public:
 
     /// Write the data of the form field
     virtual void WriteFormData( const ::sw::mark::IFieldmark& rFieldmark );
-    
+    virtual void WriteHyperlinkData( const ::sw::mark::IFieldmark& rFieldmark );
+
     virtual void DoComboBox(const rtl::OUString &rName,
                     const rtl::OUString &rHelp,
                     const rtl::OUString &ToolTip,

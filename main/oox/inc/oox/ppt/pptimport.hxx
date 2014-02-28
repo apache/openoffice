@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef OOX_POWERPOINT_POWERPOINTIMPORT_HXX
 #define OOX_POWERPOINT_POWERPOINTIMPORT_HXX
 
@@ -41,9 +39,13 @@ class PowerPointImport : public oox::core::XmlFilterBase
 {
 public:
 
-	PowerPointImport( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext )
+    PowerPointImport( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext )
         throw( ::com::sun::star::uno::RuntimeException );
-	virtual ~PowerPointImport();
+    virtual ~PowerPointImport();
+
+    virtual sal_Bool SAL_CALL filter(
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescSeq )
+        throw( ::com::sun::star::uno::RuntimeException );
 
     // from FilterBase
     virtual bool importDocument() throw();
@@ -51,14 +53,14 @@ public:
 
     virtual const ::oox::drawingml::Theme* getCurrentTheme() const;
     virtual ::oox::vml::Drawing* getVmlDrawing();
-	virtual const oox::drawingml::table::TableStyleListPtr getTableStyles();
+    virtual const oox::drawingml::table::TableStyleListPtr getTableStyles();
     virtual ::oox::drawingml::chart::ChartConverter& getChartConverter();
 
-	void													setActualSlidePersist( SlidePersistPtr pActualSlidePersist ){ mpActualSlidePersist = pActualSlidePersist; };
-	std::map< rtl::OUString, oox::drawingml::ThemePtr >&	getThemes(){ return maThemes; };
-	std::vector< SlidePersistPtr >&							getDrawPages(){ return maDrawPages; };
-	std::vector< SlidePersistPtr >&							getMasterPages(){ return maMasterPages; };
-	std::vector< SlidePersistPtr >&							getNotesPages(){ return maNotesPages; };
+    void													setActualSlidePersist( SlidePersistPtr pActualSlidePersist ){ mpActualSlidePersist = pActualSlidePersist; };
+    std::map< rtl::OUString, oox::drawingml::ThemePtr >&	getThemes(){ return maThemes; };
+    std::vector< SlidePersistPtr >&							getDrawPages(){ return maDrawPages; };
+    std::vector< SlidePersistPtr >&							getMasterPages(){ return maMasterPages; };
+    std::vector< SlidePersistPtr >&							getNotesPages(){ return maNotesPages; };
 
     sal_Int32 getSchemeColor( sal_Int32 nToken ) const;
 
@@ -68,15 +70,15 @@ private:
     virtual ::rtl::OUString implGetImplementationName() const;
 
 private:
-	rtl::OUString										maTableStyleListPath;
-	oox::drawingml::table::TableStyleListPtr			mpTableStyleList;
+    rtl::OUString										maTableStyleListPath;
+    oox::drawingml::table::TableStyleListPtr			mpTableStyleList;
 
-	SlidePersistPtr										mpActualSlidePersist;
-	std::map< rtl::OUString, oox::drawingml::ThemePtr > maThemes;
+    SlidePersistPtr										mpActualSlidePersist;
+    std::map< rtl::OUString, oox::drawingml::ThemePtr > maThemes;
 
-	std::vector< SlidePersistPtr > maDrawPages;
-	std::vector< SlidePersistPtr > maMasterPages;
-	std::vector< SlidePersistPtr > maNotesPages;
+    std::vector< SlidePersistPtr > maDrawPages;
+    std::vector< SlidePersistPtr > maMasterPages;
+    std::vector< SlidePersistPtr > maNotesPages;
 
     ::boost::shared_ptr< ::oox::drawingml::chart::ChartConverter > mxChartConv;
 };

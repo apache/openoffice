@@ -317,11 +317,12 @@ void XclExpName::Save( XclExpStream& rStrm )
 
 void XclExpName::SaveXml( XclExpXmlStream& rStrm )
 {
-    // For some reason, AutoFilter creates exportable names where maOrigName==""
-    if( maOrigName.Len() == 0 )
+    // For some reason, AutoFilter creates exportable names where maOrigName=="" or msSymbol==""
+    if( maOrigName.Len() == 0 || msSymbol.Len() == 0 )
         return;
 
     sax_fastparser::FSHelperPtr& rWorkbook = rStrm.GetCurrentStream();
+
     rWorkbook->startElement( XML_definedName,
             // OOXTODO: XML_comment, "",
             // OOXTODO: XML_customMenu, "",

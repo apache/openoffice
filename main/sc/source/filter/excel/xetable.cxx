@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 #include "xetable.hxx"
@@ -129,6 +127,11 @@ bool XclExpArray::IsVolatile() const
     return mxTokArr->IsVolatile();
 }
 
+bool XclExpArray::IsRecoverable() const
+{
+    return mxTokArr->IsRecoverable();
+}
+
 void XclExpArray::WriteBody( XclExpStream& rStrm )
 {
     WriteRangeAddress( rStrm );
@@ -176,10 +179,11 @@ XclExpArrayRef XclExpArrayBuffer::FindArray( const ScTokenArray& rScTokArr ) con
 
 // Shared formulas ============================================================
 
-XclExpShrfmla::XclExpShrfmla( XclTokenArrayRef xTokArr, const ScAddress& rScPos ) :
+XclExpShrfmla::XclExpShrfmla( XclTokenArrayRef xTokArr, const ScAddress& rScPos, const sal_uInt32 nIndex ) :
     XclExpRangeFmlaBase( EXC_ID_SHRFMLA, 10 + xTokArr->GetSize(), rScPos ),
     mxTokArr( xTokArr ),
-    mnUsedCount( 1 )
+    mnUsedCount( 1 ),
+    mnIndex( nIndex )
 {
 }
 
@@ -197,6 +201,11 @@ XclTokenArrayRef XclExpShrfmla::CreateCellTokenArray( const XclExpRoot& rRoot ) 
 bool XclExpShrfmla::IsVolatile() const
 {
     return mxTokArr->IsVolatile();
+}
+
+bool XclExpShrfmla::IsRecoverable() const
+{
+    return mxTokArr->IsRecoverable();
 }
 
 void XclExpShrfmla::WriteBody( XclExpStream& rStrm )
@@ -223,7 +232,13 @@ XclExpShrfmlaRef XclExpShrfmlaBuffer::CreateOrExtendShrfmla(
         {
             // create a new record
             XclTokenArrayRef xTokArr = GetFormulaCompiler().CreateFormula( EXC_FMLATYPE_SHARED, *pShrdScTokArr, &rScPos );
-            xRec.reset( new XclExpShrfmla( xTokArr, rScPos ) );
+            sal_Int16 nIndex = rScPos.Tab();            
+            XclExpShrfmlaIndexMap::iterator aIt = mnTabSFIndexMap.find( nIndex );
+            if(aIt == mnTabSFIndexMap.end())
+                mnTabSFIndexMap[nIndex] = 0;
+            else
+                mnTabSFIndexMap[nIndex]++;
+            xRec.reset( new XclExpShrfmla( xTokArr, rScPos, mnTabSFIndexMap[nIndex] ) );
             maRecMap[ pShrdScTokArr ] = xRec;
         }
         else
@@ -356,6 +371,11 @@ XclTokenArrayRef XclExpTableop::CreateCellTokenArray( const XclExpRoot& rRoot ) 
 }
 
 bool XclExpTableop::IsVolatile() const
+{
+    return true;
+}
+
+bool XclExpTableop::IsRecoverable() const
 {
     return true;
 }
@@ -969,9 +989,19 @@ static void lcl_GetFormulaInfo( ScFormulaCell& rCell, const char** pType, OUStri
         default:
         {
             *pType = "inlineStr";
+            // By default, take value as string. if not string, take it as a double
             String aResult;
             rCell.GetString( aResult );
-            rValue = XclXmlUtils::ToOUString( aResult );
+            if ( aResult != EMPTY_STRING || rCell.IsEmpty() ) // String or empty
+            {
+                *pType = "str";
+                rValue = XclXmlUtils::ToOUString( aResult );
+            }
+            else//double
+            {
+                *pType = "n";
+                rValue = OUString::valueOf( rCell.GetValue() );
+            }
         }
         break;
     }
@@ -991,9 +1021,11 @@ void XclExpFormulaCell::SaveXml( XclExpXmlStream& rStrm )
             // OOXTODO: XML_cm, XML_vm, XML_ph
             FSEND );
 
-    rWorksheet->startElement( XML_f,
+    if(mxTokArr.is())
+    {
+        rWorksheet->startElement( XML_f,
             // OOXTODO: XML_t,      ST_CellFormulaType
-            XML_aca,    XclXmlUtils::ToPsz( mxTokArr->IsVolatile() || (mxAddRec.is() && mxAddRec->IsVolatile()) ),
+            XML_aca,    XclXmlUtils::ToPsz( (mxTokArr.is() && mxTokArr->IsVolatile()) || (mxAddRec.is() && mxAddRec->IsVolatile()) ),
             // OOXTODO: XML_ref,    ST_Ref
             // OOXTODO: XML_dt2D,   bool
             // OOXTODO: XML_dtr,    bool
@@ -1005,8 +1037,96 @@ void XclExpFormulaCell::SaveXml( XclExpXmlStream& rStrm )
             // OOXTODO: XML_si,     uint
             // OOXTODO: XML_bx      bool
             FSEND );
-    rWorksheet->writeEscaped( XclXmlUtils::ToOUString( *mrScFmlaCell.GetDocument(), mrScFmlaCell.aPos, mrScFmlaCell.GetCode() ) );
-    rWorksheet->endElement( XML_f );
+        rWorksheet->writeEscaped( XclXmlUtils::ToOUString( *mrScFmlaCell.GetDocument(), mrScFmlaCell.aPos, 
+                mrScFmlaCell.GetCode(), formula::FormulaGrammar::GRAM_OOXML, rStrm.GetRoot().GetUILanguage(), mxTokArr->IsRecoverable() ) );
+        rWorksheet->endElement( XML_f );
+    }
+    else if(mxAddRec.is())
+    {
+        if(EXC_ID_SHRFMLA == mxAddRec->GetRecId())
+        {
+            XclExpShrfmla* pShrfmla = dynamic_cast<XclExpShrfmla*>( mxAddRec.get());
+            DBG_ASSERT( pShrfmla, "XclExpFormulaCell::SaveXml - Dynamic_cast to shared formula failed" );
+            if(mxAddRec->IsBasePos( GetXclCol(), GetXclRow() ))
+            {
+                rWorksheet->startElement( XML_f,
+                    XML_t,      "shared",
+                    XML_ref,    XclXmlUtils::ToOString(mxAddRec->GetXclRange()).getStr(),
+                    XML_si,     OString::valueOf((sal_Int32)(pShrfmla->GetIndex())).getStr(),
+                    FSEND );
+                //lijiany_ms_2007_dv
+                rWorksheet->writeEscaped( XclXmlUtils::ToOUString( *mrScFmlaCell.GetDocument(), mrScFmlaCell.aPos, 
+                       mrScFmlaCell.GetCode(), formula::FormulaGrammar::GRAM_OOXML, rStrm.GetRoot().GetUILanguage(), mxAddRec->IsRecoverable()) );
+                rWorksheet->endElement( XML_f );
+            }
+            else
+            {
+                rWorksheet->singleElement( XML_f,
+                    XML_t,      "shared",
+                    XML_si,     OString::valueOf((sal_Int32)(pShrfmla->GetIndex())).getStr(),
+                    FSEND );
+            }
+        }
+        else if(EXC_ID3_ARRAY == mxAddRec->GetRecId())
+        {
+            if(mxAddRec->IsBasePos( GetXclCol(), GetXclRow()))
+            {
+                rWorksheet->startElement( XML_f,
+                    XML_t,      "array",
+                    XML_ref,    XclXmlUtils::ToOString(mxAddRec->GetXclRange()).getStr(),
+                    FSEND );
+                rWorksheet->writeEscaped( XclXmlUtils::ToOUString( *mrScFmlaCell.GetDocument(), mrScFmlaCell.aPos, 
+                    mrScFmlaCell.GetCode(), formula::FormulaGrammar::GRAM_OOXML, rStrm.GetRoot().GetUILanguage(), mxAddRec->IsRecoverable() ) );
+                rWorksheet->endElement( XML_f );
+            }//else do nothing for the non-first items
+        }
+        else if(EXC_ID3_TABLEOP == mxAddRec->GetRecId())
+        {
+            XclExpTableop* pTableOp = dynamic_cast<XclExpTableop*>( mxAddRec.get());
+            DBG_ASSERT( pTableOp, "XclExpFormulaCell::SaveXml - Dynamic_cast to TableOp formula failed" );
+            if(mxAddRec->IsBasePos( GetXclCol(), GetXclRow()))
+            {
+                switch(pTableOp->GetMOType())
+                {
+                    case 0://col
+                    {
+                        rWorksheet->singleElement( XML_f,
+                            XML_t,      "dataTable",
+                            XML_ref,    XclXmlUtils::ToOString(mxAddRec->GetXclRange()).getStr(),
+                            XML_dt2D,   "0",
+                            XML_dtr,    "0",
+                            XML_r1,     XclXmlUtils::ToOString(pTableOp->GetColRef()).getStr(),
+                            FSEND );
+                        break;
+                    }
+                    case 1://row
+                    {
+                        rWorksheet->singleElement( XML_f,
+                            XML_t,      "dataTable",
+                            XML_ref,    XclXmlUtils::ToOString(mxAddRec->GetXclRange()).getStr(),
+                            XML_dt2D,   "0",
+                            XML_dtr,    "1",
+                            XML_r1,     XclXmlUtils::ToOString(pTableOp->GetColRef()).getStr(),
+                            FSEND );
+                        break;
+                    }
+                    case 2://col and row
+                    {
+                        rWorksheet->singleElement( XML_f,
+                            XML_t,      "dataTable",
+                            XML_ref,    XclXmlUtils::ToOString(mxAddRec->GetXclRange()).getStr(),
+                            XML_dt2D,   "1",
+                            XML_dtr,    "1",
+                            XML_r1,     XclXmlUtils::ToOString(pTableOp->GetRowRef()).getStr(),
+                            XML_r2,     XclXmlUtils::ToOString(pTableOp->GetColRef()).getStr(),
+                            FSEND );
+                        break;
+                    }
+                }      
+            }
+        }
+    }
+    
     if( strcmp( sType, "inlineStr" ) == 0 )
     {
         rWorksheet->startElement( XML_is, FSEND );

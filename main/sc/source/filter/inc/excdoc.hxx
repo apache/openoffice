@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_EXCDOC_HXX
 #define SC_EXCDOC_HXX
 
@@ -93,24 +91,21 @@ private:
     typedef XclExpRecordList< ExcBundlesheetBase >  ExcBoundsheetList;
     typedef ExcBoundsheetList::RecordRefType        ExcBoundsheetRef;
 
-	ExcTable			aHeader;
+    ExcTable            aHeader;
 
     ExcTableList        maTableList;
     ExcBoundsheetList   maBoundsheetList;
 
-	XclExpChangeTrack*	pExpChangeTrack;
+    XclExpChangeTrack*	pExpChangeTrack;
 
 public:
-    explicit                    ExcDocument( const XclExpRoot& rRoot );
-    virtual                     ~ExcDocument();
+    explicit            ExcDocument( const XclExpRoot& rRoot );
+    virtual             ~ExcDocument();
 
-	void				ReadDoc( void );
-	void				Write( SvStream& rSvStrm );
-	void				WriteXml( SvStream& rSvStrm );
+    void                ReadDoc( void );
+    void                Write( SvStream& rSvStrm );
+    void                WriteXml( XclExpXmlStream& );
 };
-
-
-
 
 #endif
 

@@ -19,8 +19,6 @@
 #  
 #**************************************************************
 
-
-
 PRJ = ..
 PRJNAME = postprocess
 TARGET = packcomponents
@@ -153,12 +151,14 @@ my_components = \
     sb \
     sc \
     scd \
+    scfilt \
     scn \
     scriptframe \
     sd \
     sdbc2 \
     sdbt \
     sdd \
+    sdfilt \
     simplecanvas \
     slideshow \
     sm \

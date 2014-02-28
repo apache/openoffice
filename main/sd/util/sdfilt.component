@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,13 +20,9 @@
  * 
  ***********************************************************-->
 
-<node oor:name="MS Excel 2007 XML" oor:op="replace" >
-	<prop oor:name="DetectService"><value>com.sun.star.comp.oox.FormatDetector</value></prop>
-	<prop oor:name="URLPattern"/>
-	<prop oor:name="Extensions"><value>xlsx xlsm</value></prop>
-	<prop oor:name="MediaType"/>
-	<prop oor:name="Preferred"><value>false</value></prop>
-	<prop oor:name="PreferredFilter"><value>Calc MS Excel 2007 XML</value></prop>
-	<prop oor:name="UIName"><value xml:lang="x-default">Microsoft Excel 2007 XML</value></prop>
-	<prop oor:name="ClipboardFormat"/>
-</node>
+<component loader="com.sun.star.loader.SharedLibrary"
+    xmlns="http://openoffice.org/2010/uno-components">
+  <implementation name="com.sun.star.comp.Impress.OOXMLExporter">
+    <service name="com.sun.star.document.ExportFilter"/>
+  </implementation>
+</component>

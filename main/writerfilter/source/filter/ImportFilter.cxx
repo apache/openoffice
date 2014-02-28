@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include <osl/diagnose.h>
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/drawing/XDrawPageSupplier.hpp>
@@ -47,21 +45,21 @@ using ::comphelper::MediaDescriptor;
 sal_Bool WriterFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
    throw (uno::RuntimeException)
 {
-    if( m_xSrcDoc.is() )
+    if ( m_xSrcDoc.is() )
     {
-		uno::Reference< lang::XMultiServiceFactory > xMSF(m_xContext->getServiceManager(), uno::UNO_QUERY_THROW);
-		uno::Reference< uno::XInterface > xIfc( xMSF->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.Writer.DocxExport" ))), uno::UNO_QUERY_THROW);
-		if (!xIfc.is())
-			return sal_False;
-		uno::Reference< document::XExporter > xExprtr(xIfc, uno::UNO_QUERY_THROW);
-		uno::Reference< document::XFilter > xFltr(xIfc, uno::UNO_QUERY_THROW);
-		if (!xExprtr.is() || !xFltr.is())
-			return sal_False;
-		xExprtr->setSourceDocument(m_xSrcDoc);
+        uno::Reference< lang::XMultiServiceFactory > xMSF(m_xContext->getServiceManager(), uno::UNO_QUERY_THROW);
+        uno::Reference< uno::XInterface > xIfc( xMSF->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.writer.OOXMLExporter" ))), uno::UNO_QUERY_THROW);
+        if (!xIfc.is())
+            return sal_False;
+        uno::Reference< document::XExporter > xExprtr(xIfc, uno::UNO_QUERY_THROW);
+        uno::Reference< document::XFilter > xFltr(xIfc, uno::UNO_QUERY_THROW);
+        if (!xExprtr.is() || !xFltr.is())
+            return sal_False;
+        xExprtr->setSourceDocument(m_xSrcDoc);
         return xFltr->filter(aDescriptor);
-	}
-	else if (m_xDstDoc.is())
-	{
+    }
+    else if ( m_xDstDoc.is() )
+    {
         MediaDescriptor aMediaDesc( aDescriptor );
         OUString sFilterName = aMediaDesc.getUnpackedValueOrDefault( MediaDescriptor::PROP_FILTERNAME(), OUString() );
 
@@ -84,56 +82,56 @@ sal_Bool WriterFilter::filter( const uno::Sequence< beans::PropertyValue >& aDes
 #ifdef DEBUG_IMPORT
         OUString sURL = aMediaDesc.getUnpackedValueOrDefault( MediaDescriptor::PROP_URL(), OUString() );
         ::std::string sURLc = OUStringToOString(sURL, RTL_TEXTENCODING_ASCII_US).getStr();
-        
+
         writerfilter::TagLogger::Pointer_t debugLogger
-        (writerfilter::TagLogger::getInstance("DEBUG"));
+            (writerfilter::TagLogger::getInstance("DEBUG"));
         debugLogger->setFileName(sURLc);
         debugLogger->startDocument();
-        
+
         writerfilter::TagLogger::Pointer_t dmapperLogger
-        (writerfilter::TagLogger::getInstance("DOMAINMAPPER"));
+            (writerfilter::TagLogger::getInstance("DOMAINMAPPER"));
         dmapperLogger->setFileName(sURLc);
         dmapperLogger->startDocument();
 #endif
 
-    writerfilter::dmapper::SourceDocumentType eType =
-        (m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007" ) ) ||
-         m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007_Template" ) )) ?
-                writerfilter::dmapper::DOCUMENT_OOXML : writerfilter::dmapper::DOCUMENT_DOC;
-    writerfilter::Stream::Pointer_t pStream(new writerfilter::dmapper::DomainMapper(m_xContext, xInputStream, m_xDstDoc, eType));
-    //create the tokenizer and domain mapper
-    if( eType == writerfilter::dmapper::DOCUMENT_OOXML )
-    {
-        writerfilter::ooxml::OOXMLStream::Pointer_t pDocStream = writerfilter::ooxml::OOXMLDocumentFactory::createStream(m_xContext, xInputStream);
-        writerfilter::ooxml::OOXMLDocument::Pointer_t pDocument(writerfilter::ooxml::OOXMLDocumentFactory::createDocument(pDocStream));
+        writerfilter::dmapper::SourceDocumentType eType =
+            (m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007" ) ) ||
+            m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007_Template" ) )) ?
+            writerfilter::dmapper::DOCUMENT_OOXML : writerfilter::dmapper::DOCUMENT_DOC;
+        writerfilter::Stream::Pointer_t pStream(new writerfilter::dmapper::DomainMapper(m_xContext, xInputStream, m_xDstDoc, eType));
+        //create the tokenizer and domain mapper
+        if( eType == writerfilter::dmapper::DOCUMENT_OOXML )
+        {
+            writerfilter::ooxml::OOXMLStream::Pointer_t pDocStream = writerfilter::ooxml::OOXMLDocumentFactory::createStream(m_xContext, xInputStream);
+            writerfilter::ooxml::OOXMLDocument::Pointer_t pDocument(writerfilter::ooxml::OOXMLDocumentFactory::createDocument(pDocStream));
 
-        uno::Reference<frame::XModel> xModel(m_xDstDoc, uno::UNO_QUERY_THROW);
-        pDocument->setModel(xModel);
+            uno::Reference<frame::XModel> xModel(m_xDstDoc, uno::UNO_QUERY_THROW);
+            pDocument->setModel(xModel);
 
-        uno::Reference<drawing::XDrawPageSupplier> xDrawings
-            (m_xDstDoc, uno::UNO_QUERY_THROW);
-        uno::Reference<drawing::XDrawPage> xDrawPage
-            (xDrawings->getDrawPage(), uno::UNO_SET_THROW);
-        pDocument->setDrawPage(xDrawPage);
+            uno::Reference<drawing::XDrawPageSupplier> xDrawings
+                (m_xDstDoc, uno::UNO_QUERY_THROW);
+            uno::Reference<drawing::XDrawPage> xDrawPage
+                (xDrawings->getDrawPage(), uno::UNO_SET_THROW);
+            pDocument->setDrawPage(xDrawPage);
 
-        pDocument->resolve(*pStream);
-    }
-    else
-    {
-        writerfilter::doctok::WW8Stream::Pointer_t pDocStream = writerfilter::doctok::WW8DocumentFactory::createStream(m_xContext, xInputStream);
-        writerfilter::doctok::WW8Document::Pointer_t pDocument(writerfilter::doctok::WW8DocumentFactory::createDocument(pDocStream));
+            pDocument->resolve(*pStream);
+        }
+        else
+        {
+            writerfilter::doctok::WW8Stream::Pointer_t pDocStream = writerfilter::doctok::WW8DocumentFactory::createStream(m_xContext, xInputStream);
+            writerfilter::doctok::WW8Document::Pointer_t pDocument(writerfilter::doctok::WW8DocumentFactory::createDocument(pDocStream));
 
-        pDocument->resolve(*pStream);
-    }
+            pDocument->resolve(*pStream);
+        }
 
 #ifdef DEBUG_IMPORT
-    writerfilter::TagLogger::dump("DOMAINMAPPER");
-    dmapperLogger->endDocument();
-    writerfilter::TagLogger::dump("DEBUG");
-    debugLogger->endDocument();
+        writerfilter::TagLogger::dump("DOMAINMAPPER");
+        dmapperLogger->endDocument();
+        writerfilter::TagLogger::dump("DEBUG");
+        debugLogger->endDocument();
 #endif
 
-    return sal_True;
+        return sal_True;
     }
     return sal_False;
 }
@@ -190,6 +188,7 @@ OUString WriterFilter_getImplementationName () throw (uno::RuntimeException)
 
 #define SERVICE_NAME1 "com.sun.star.document.ImportFilter"
 #define SERVICE_NAME2 "com.sun.star.document.ExportFilter"
+
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/

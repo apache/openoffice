@@ -19,8 +19,6 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
 
 PRJNAME=sd
@@ -163,9 +161,9 @@ SHL2STDLIBS= \
 			$(SVTOOLLIB) \
 			$(SVLLIB) \
 			$(VCLLIB) \
-                        $(SOTLIB) \
+            $(SOTLIB) \
 			$(TOOLSLIB) \
-              $(UNOTOOLSLIB)      \
+            $(UNOTOOLSLIB) \
 			$(UCBHELPERLIB) \
 			$(CPPUHELPERLIB) \
 			$(CPPULIB) \
@@ -181,7 +179,7 @@ SHL4TARGET= sdui$(DLLPOSTFIX)
 SHL4IMPLIB= sduiimp
 SHL4VERSIONMAP= sdui.map
 SHL4DEF=$(MISC)$/$(SHL4TARGET).def
-DEF4NAME=       $(SHL4TARGET)
+DEF4NAME=   $(SHL4TARGET)
 SHL4LIBS=   $(SLB)$/sdui_all.lib
 
 LIB4TARGET=	$(SLB)$/sdui_all.lib
@@ -243,10 +241,10 @@ SHL5LIBS      = $(SLB)$/ppt.lib $(SLB)$/eppt.lib
 
 DEF5NAME=$(SHL5TARGET)
 
-SHL5STDLIBS = $(ISDLIB) \
+SHL5STDLIBS = $(ISDLIB)           \
               $(EDITENGLIB)       \
               $(SVXCORELIB)       \
-              $(MSFILTERLIB)   \
+              $(MSFILTERLIB)      \
               $(SFX2LIB)          \
               $(SVTOOLLIB)        \
               $(SOTLIB)           \
@@ -260,6 +258,8 @@ SHL5STDLIBS = $(ISDLIB) \
               $(CPPULIB)          \
               $(SALLIB)           \
               $(COMPHELPERLIB)    \
+              $(OOXLIB)           \
+              $(SAXLIB)           \
               $(I18NISOLANGLIB)
 
 # --- Targets -------------------------------------------------------------
@@ -271,13 +271,19 @@ $(MISC)$/$(SHL1TARGET).flt: makefile.mk
     @echo Making: $@
     @$(TYPE) sd.flt > $@
 
-ALLTAR : $(MISC)/sd.component $(MISC)/sdd.component
+ALLTAR : $(MISC)/sd.component $(MISC)/sdfilt.component $(MISC)/sdd.component
 
 $(MISC)/sd.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         sd.component
     $(XSLTPROC) --nonet --stringparam uri \
         '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt sd.component
+
+$(MISC)/sdfilt.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
+        sdfilt.component
+    $(XSLTPROC) --nonet --stringparam uri \
+        '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL5TARGETN:f)' -o $@ \
+        $(SOLARENV)/bin/createcomponent.xslt sdfilt.component
 
 $(MISC)/sdd.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         sdd.component

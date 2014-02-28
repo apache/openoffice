@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "oox/xls/excelfilter.hxx"
 
 #include <com/sun/star/sheet/XSpreadsheetDocument.hpp>
@@ -47,6 +45,8 @@ using namespace ::com::sun::star::xml::sax;
 using namespace ::oox::core;
 
 using ::rtl::OUString;
+using ::com::sun::star::uno::UNO_QUERY;
+using ::com::sun::star::lang::XComponent;
 using ::oox::drawingml::table::TableStyleListPtr;
 
 // ============================================================================
@@ -107,6 +107,33 @@ ExcelFilter::ExcelFilter( const Reference< XComponentContext >& rxContext ) thro
 
 ExcelFilter::~ExcelFilter()
 {
+}
+
+sal_Bool SAL_CALL ExcelFilter::filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rDescriptor ) throw( ::com::sun::star::uno::RuntimeException )
+{
+    if ( XmlFilterBase::filter( rDescriptor ) )
+        return true;
+ 
+    if ( isExportFilter() )
+    {
+        const Reference< XMultiServiceFactory > xFactory = getServiceFactory();
+        Reference< XExporter > xExporter( xFactory->createInstance( CREATE_OUSTRING( "com.sun.star.comp.Calc.OOXMLExporter" ) ), UNO_QUERY );
+ 
+        if ( xExporter.is() )
+        {
+            Reference< XFilter > xFilter( xExporter, UNO_QUERY );
+ 
+            if ( xFilter.is() )
+            {
+                Reference< XComponent > xDocument( getModel(), UNO_QUERY );
+                xExporter->setSourceDocument( xDocument );
+                if ( xFilter->filter( rDescriptor ) )
+                    return true;
+            }
+        }
+    }
+ 
+    return false;
 }
 
 bool ExcelFilter::importDocument() throw()

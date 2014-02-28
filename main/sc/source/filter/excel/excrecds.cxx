@@ -96,6 +96,7 @@ using namespace ::oox;
 
 using ::com::sun::star::uno::Sequence;
 using ::rtl::OString;
+using ::rtl::OUString;
 
 //--------------------------------------------------------- class ExcDummy_00 -
 const sal_uInt8		ExcDummy_00::pMyData[] = {
@@ -625,15 +626,37 @@ static OString lcl_GetValue( sal_uInt8 nType, double fVal, XclExpString* pStr )
     }
 }
 
+static const char* lcl_GetAndValue( sal_uInt16 nflag , bool bempty )
+{
+    if ( ((nflag & EXC_AFFLAG_ANDORMASK) == EXC_AFFLAG_AND ) && !bempty)
+        return "1";
+    return NULL;  
+}
+
 void ExcFilterCondition::SaveXml( XclExpXmlStream& rStrm )
 {
     if( IsEmpty() )
         return;
 
-    rStrm.GetCurrentStream()->singleElement( XML_customFilter,
-            XML_operator,   lcl_GetOperator( nOper ),
-            XML_val,        lcl_GetValue( nType, fVal, pText ).getStr(),
+    OString val = lcl_GetValue( nType, fVal, pText );
+    //restore the original excel format, according the imported logic
+    if ( EXC_AFOPER_EQUAL == nOper &&
+         EXC_AFTYPE_STRING == nType && 
+         ( val.match("*",0)|| 
+            val.match("*",(val.getLength()-1) )) )
+    {
+        rStrm.GetCurrentStream()->singleElement( XML_customFilter,
+            XML_val,        val.getStr(),
             FSEND );
+
+    }
+    else 
+    {
+       rStrm.GetCurrentStream()->singleElement( XML_customFilter,
+            XML_operator,   lcl_GetOperator( nOper ),
+            XML_val,        val.getStr(),
+            FSEND );
+    }
 }
 
 void ExcFilterCondition::SaveText( XclExpStream& rStrm )
@@ -648,10 +671,32 @@ void ExcFilterCondition::SaveText( XclExpStream& rStrm )
 
 // ----------------------------------------------------------------------------
 
+ExcFiltersAttr::ExcFiltersAttr(  const String& rValue ) :
+XclExpRecord( EXC_ID_AUTOFILTER, 24 )
+{
+    if ( rValue.Len() > 0 )
+        msValue.Assign( rValue ); 
+}
+
+ExcFiltersAttr::~ExcFiltersAttr()
+{
+}
+
+void ExcFiltersAttr::SaveXml( XclExpXmlStream& rStrm )
+{
+    if ( 0 == msValue.Len() )
+        return;
+    rStrm.GetCurrentStream()->singleElement( XML_filter,
+        XML_val,       XclXmlUtils::ToOString( msValue).getStr(), 
+        FSEND );
+}
+
+// ----------------------------------------------------------------------------
 XclExpAutofilter::XclExpAutofilter( const XclExpRoot& rRoot, sal_uInt16 nC ) :
     XclExpRecord( EXC_ID_AUTOFILTER, 24 ),
     XclExpRoot( rRoot ),
     nCol( nC ),
+    bHasOr( sal_False ),
     nFlags( 0 )
 {
 }
@@ -659,49 +704,81 @@ XclExpAutofilter::XclExpAutofilter( const XclExpRoot& rRoot, sal_uInt16 nC ) :
 sal_Bool XclExpAutofilter::AddCondition( ScQueryConnect eConn, sal_uInt8 nType, sal_uInt8 nOp,
 									double fVal, String* pText, sal_Bool bSimple )
 {
-	if( !aCond[ 1 ].IsEmpty() )
-		return sal_False;
+    if( !aCond[ 1 ].IsEmpty() )
+        return sal_False;
 
-	sal_uInt16 nInd = aCond[ 0 ].IsEmpty() ? 0 : 1;
+    sal_uInt16 nInd = aCond[ 0 ].IsEmpty() ? 0 : 1;
 
-	if( nInd == 1 )
-		nFlags |= (eConn == SC_OR) ? EXC_AFFLAG_OR : EXC_AFFLAG_AND;
-	if( bSimple )
-		nFlags |= (nInd == 0) ? EXC_AFFLAG_SIMPLE1 : EXC_AFFLAG_SIMPLE2;
+    if( nInd == 1 )
+        nFlags |= (eConn == SC_OR) ? EXC_AFFLAG_OR : EXC_AFFLAG_AND;
+    if( bSimple )
+        nFlags |= (nInd == 0) ? EXC_AFFLAG_SIMPLE1 : EXC_AFFLAG_SIMPLE2;
 
-	aCond[ nInd ].SetCondition( nType, nOp, fVal, pText );
+    aCond[ nInd ].SetCondition( nType, nOp, fVal, pText );
 
     AddRecSize( aCond[ nInd ].GetTextBytes() );
 
-	return sal_True;
+    return sal_True;
+}
+void XclExpAutofilter::AddFiltersAttrList( const String& rValue)
+{
+    if ( rValue.Len() <=0 )
+        return ;
+    OUString str = XclXmlUtils::ToOUString( rValue );
+    if ( 0 == str.indexOf(OUString::createFromAscii("^(")) &&
+        str.endsWithAsciiL(")$", 2))
+    {
+        //remove "^(" at the begin
+        str = str.replaceAt(0,2,OUString::createFromAscii(""));
+
+        //remove ")$" at the end
+        sal_Int32 tmpCount = str.getLength()-2;
+        str = str.replaceAt(tmpCount,2,OUString::createFromAscii(""));
+        if ( str.getLength() >0 && 
+            -1 != str.indexOf(OUString::createFromAscii("|")))
+        {
+            OUString tempStr = OUString::createFromAscii("");
+            //separate str with "|", add separate word to maFiltersAttrList in turn
+            sal_Int32 nIndex = 0;
+            do
+            {
+                tempStr = str.getToken( 0, '|', nIndex );
+                if ( tempStr.getLength() > 0 )
+                {
+                    maFiltersAttrList.AppendNewRecord( new ExcFiltersAttr( tempStr)); 
+                    tempStr = OUString::createFromAscii("");
+                }
+            } while( nIndex >=0 );
+        } 
+    }
 }
 
 sal_Bool XclExpAutofilter::AddEntry( const ScQueryEntry& rEntry )
 {
-	sal_Bool	bConflict = sal_False;
-	String	sText;
+    sal_Bool	bConflict = sal_False;
+    String	sText;
 
-	if( rEntry.pStr )
+    if( rEntry.pStr )
     {
         sText.Assign( *rEntry.pStr );
         switch( rEntry.eOp )
         {
-            case SC_CONTAINS:
-            case SC_DOES_NOT_CONTAIN:
+        case SC_CONTAINS:
+        case SC_DOES_NOT_CONTAIN:
             {
                 sText.InsertAscii( "*" , 0 );
                 sText.AppendAscii( "*" );
             }
             break;
-            case SC_BEGINS_WITH:
-            case SC_DOES_NOT_BEGIN_WITH:
-                sText.AppendAscii( "*" );
+        case SC_BEGINS_WITH:
+        case SC_DOES_NOT_BEGIN_WITH:
+            sText.AppendAscii( "*" );
             break;
-            case SC_ENDS_WITH:
-            case SC_DOES_NOT_END_WITH:
-                sText.InsertAscii( "*" , 0 );
+        case SC_ENDS_WITH:
+        case SC_DOES_NOT_END_WITH:
+            sText.InsertAscii( "*" , 0 );
             break;
-            default:
+        default:
             {
                 //nothing
             }
@@ -710,91 +787,98 @@ sal_Bool XclExpAutofilter::AddEntry( const ScQueryEntry& rEntry )
 
     sal_Bool bLen = sText.Len() > 0;
 
-	// empty/nonempty fields
-	if( !bLen && (rEntry.nVal == SC_EMPTYFIELDS) )
-		bConflict = !AddCondition( rEntry.eConnect, EXC_AFTYPE_EMPTY, EXC_AFOPER_NONE, 0.0, NULL, sal_True );
-	else if( !bLen && (rEntry.nVal == SC_NONEMPTYFIELDS) )
-		bConflict = !AddCondition( rEntry.eConnect, EXC_AFTYPE_NOTEMPTY, EXC_AFOPER_NONE, 0.0, NULL, sal_True );
-	// other conditions
-	else
-	{
-		double	fVal	= 0.0;
-		sal_uInt32	nIndex	= 0;
-        sal_Bool    bIsNum  = bLen ? GetFormatter().IsNumberFormat( sText, nIndex, fVal ) : sal_True;
-		String*	pText	= bIsNum ? NULL : &sText;
+    // empty/nonempty fields
+    if( !bLen && (rEntry.nVal == SC_EMPTYFIELDS) )
+        bConflict = !AddCondition( rEntry.eConnect, EXC_AFTYPE_EMPTY, EXC_AFOPER_NONE, 0.0, NULL, sal_True );
+    else if( !bLen && (rEntry.nVal == SC_NONEMPTYFIELDS) )
+        bConflict = !AddCondition( rEntry.eConnect, EXC_AFTYPE_NOTEMPTY, EXC_AFOPER_NONE, 0.0, NULL, sal_True );
+    // other conditions
+    else
+    {
+        double	    fVal   = 0.0;
+        sal_uInt32  nIndex = 0;
+        sal_Bool    bIsNum = sal_False;
+        if ( SC_EQUAL != rEntry.eOp )
+            bIsNum  = bLen ? GetFormatter().IsNumberFormat( sText, nIndex, fVal ) : sal_True;
+        String*	pText	= bIsNum ? NULL : &sText;
 
-		// top10 flags
-		sal_uInt16 nNewFlags = 0x0000;
-		switch( rEntry.eOp )
-		{
-			case SC_TOPVAL:
-				nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10TOP);
-			break;
-			case SC_BOTVAL:
-				nNewFlags = EXC_AFFLAG_TOP10;
-			break;
-			case SC_TOPPERC:
-				nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10TOP | EXC_AFFLAG_TOP10PERC);
-			break;
-			case SC_BOTPERC:
-				nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10PERC);
-			break;
-            default:;
-		}
+        // top10 flags
+        sal_uInt16 nNewFlags = 0x0000;
+        switch( rEntry.eOp )
+        {
+        case SC_TOPVAL:
+            nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10TOP);
+            break;
+        case SC_BOTVAL:
+            nNewFlags = EXC_AFFLAG_TOP10;
+            break;
+        case SC_TOPPERC:
+            nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10TOP | EXC_AFFLAG_TOP10PERC);
+            break;
+        case SC_BOTPERC:
+            nNewFlags = (EXC_AFFLAG_TOP10 | EXC_AFFLAG_TOP10PERC);
+            break;
+        default:;
+        }
         sal_Bool bNewTop10 = ::get_flag( nNewFlags, EXC_AFFLAG_TOP10 );
 
-		bConflict = HasTop10() && bNewTop10;
-		if( !bConflict )
-		{
-			if( bNewTop10 )
-			{
-				if( fVal < 0 )		fVal = 0;
-				if( fVal >= 501 )	fVal = 500;
-				nFlags |= (nNewFlags | (sal_uInt16)(fVal) << 7);
-			}
-			// normal condition
-			else
-			{
-				sal_uInt8 nType = bIsNum ? EXC_AFTYPE_DOUBLE : EXC_AFTYPE_STRING;
-				sal_uInt8 nOper = EXC_AFOPER_NONE;
+        bConflict = HasTop10() && bNewTop10;
+        if( !bConflict )
+        {
+            if( bNewTop10 )
+            {
+                if( fVal < 0 )		fVal = 0;
+                if( fVal >= 501 )	fVal = 500;
+                nFlags |= (nNewFlags | (sal_uInt16)(fVal) << 7);
+            }
+            // normal condition
+            else
+            {
+                sal_uInt8 nType = bIsNum ? EXC_AFTYPE_DOUBLE : EXC_AFTYPE_STRING;
+                sal_uInt8 nOper = EXC_AFOPER_NONE;
 
-				switch( rEntry.eOp )
-				{
-					case SC_EQUAL:			nOper = EXC_AFOPER_EQUAL;			break;
-					case SC_LESS:			nOper = EXC_AFOPER_LESS;			break;
-					case SC_GREATER:		nOper = EXC_AFOPER_GREATER;			break;
-					case SC_LESS_EQUAL:		nOper = EXC_AFOPER_LESSEQUAL;		break;
-					case SC_GREATER_EQUAL:	nOper = EXC_AFOPER_GREATEREQUAL;	break;
-					case SC_NOT_EQUAL:		nOper = EXC_AFOPER_NOTEQUAL;		break;
-                    case SC_CONTAINS:
-                    case SC_BEGINS_WITH:
-                    case SC_ENDS_WITH:
-                                            nOper = EXC_AFOPER_EQUAL;           break;
-                    case SC_DOES_NOT_CONTAIN:
-                    case SC_DOES_NOT_BEGIN_WITH:
-                    case SC_DOES_NOT_END_WITH:
-                                            nOper = EXC_AFOPER_NOTEQUAL;        break;
-                    default:;
-				}
-				bConflict = !AddCondition( rEntry.eConnect, nType, nOper, fVal, pText );
-			}
-		}
-	}
-	return bConflict;
+                switch( rEntry.eOp )
+                {
+                case SC_EQUAL:			nOper = EXC_AFOPER_EQUAL;			break;
+                case SC_LESS:			nOper = EXC_AFOPER_LESS;			break;
+                case SC_GREATER:		nOper = EXC_AFOPER_GREATER;			break;
+                case SC_LESS_EQUAL:		nOper = EXC_AFOPER_LESSEQUAL;		break;
+                case SC_GREATER_EQUAL:	nOper = EXC_AFOPER_GREATEREQUAL;	break;
+                case SC_NOT_EQUAL:		nOper = EXC_AFOPER_NOTEQUAL;		break;
+                case SC_CONTAINS:
+                case SC_BEGINS_WITH:
+                case SC_ENDS_WITH:
+                    nOper = EXC_AFOPER_EQUAL;           break;
+                case SC_DOES_NOT_CONTAIN:
+                case SC_DOES_NOT_BEGIN_WITH:
+                case SC_DOES_NOT_END_WITH:
+                    nOper = EXC_AFOPER_NOTEQUAL;        break;
+                default:;
+                }
+                bConflict = !AddCondition( rEntry.eConnect, nType, nOper, fVal, pText );
+            }
+        }
+    }
+    if ( SC_EQUAL == rEntry.eOp && !bHasOr )
+        AddFiltersAttrList( sText );
+    return bConflict;
 }
 
 void XclExpAutofilter::WriteBody( XclExpStream& rStrm )
 {
-	rStrm << nCol << nFlags;
-	aCond[ 0 ].Save( rStrm );
-	aCond[ 1 ].Save( rStrm );
-	aCond[ 0 ].SaveText( rStrm );
-	aCond[ 1 ].SaveText( rStrm );
+    if ( bHasOr )
+        return;
+    rStrm << nCol << nFlags;
+    aCond[ 0 ].Save( rStrm );
+    aCond[ 1 ].Save( rStrm );
+    aCond[ 0 ].SaveText( rStrm );
+    aCond[ 1 ].SaveText( rStrm );
 }
 
 void XclExpAutofilter::SaveXml( XclExpXmlStream& rStrm )
 {
-    if( !HasCondition() )
+    //the condition and top10 is two attribute,so the two attribute need to save    
+    if( !HasCondition() && !HasTop10() && maFiltersAttrList.IsEmpty() ) 
         return;
 
     sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();
@@ -814,13 +898,28 @@ void XclExpAutofilter::SaveXml( XclExpXmlStream& rStrm )
                 // OOXTODO: XML_filterVal,
                 FSEND );
     }
+    if (HasCondition() )
+    {
+        // when maFiltersAttrList is empty and bHasOr is false, customFilters attr should be writen
+        // both filters attr and customFilters attr are conflict.
+        if ( bHasOr || maFiltersAttrList.IsEmpty())
+        {
 
-    rWorksheet->startElement( XML_customFilters,
-            XML_and,    XclXmlUtils::ToPsz( (nFlags & EXC_AFFLAG_ANDORMASK) == EXC_AFFLAG_AND ),
+            rWorksheet->startElement( XML_customFilters,
+                XML_and,    XclXmlUtils::ToPsz( (nFlags & EXC_AFFLAG_ANDORMASK) == EXC_AFFLAG_AND ),
+                FSEND );
+            aCond[ 0 ].SaveXml( rStrm );
+            aCond[ 1 ].SaveXml( rStrm );
+            rWorksheet->endElement( XML_customFilters );
+        }
+    }
+    if ( !maFiltersAttrList.IsEmpty() && !bHasOr )
+    {
+        rWorksheet->startElement( XML_filters,
             FSEND );
-    aCond[ 0 ].SaveXml( rStrm );
-    aCond[ 1 ].SaveXml( rStrm );
-    rWorksheet->endElement( XML_customFilters );
+        maFiltersAttrList.SaveXml(rStrm);
+        rWorksheet->endElement( XML_filters);
+    }
     // OOXTODO: XLM_colorFilter, XML_dynamicFilter,
     // XML_extLst, XML_filters, XML_iconFilter, XML_top10
     rWorksheet->endElement( XML_filterColumn );
@@ -830,6 +929,7 @@ void XclExpAutofilter::SaveXml( XclExpXmlStream& rStrm )
 
 ExcAutoFilterRecs::ExcAutoFilterRecs( const XclExpRoot& rRoot, SCTAB nTab ) :
     XclExpRoot( rRoot ),
+    mbHasFilter( sal_False ),
     pFilterMode( NULL ),
     pFilterInfo( NULL )
 {
@@ -837,9 +937,9 @@ ExcAutoFilterRecs::ExcAutoFilterRecs( const XclExpRoot& rRoot, SCTAB nTab ) :
     XclExpNameManager& rNameMgr = GetNameManager();
 
 	// search for first DB-range with filter
-	sal_uInt16		nIndex	= 0;
-	sal_Bool		bFound	= sal_False;
-	sal_Bool		bAdvanced = sal_False;
+	sal_uInt16	nIndex	= 0;
+	sal_Bool	bFound	= sal_False;
+	sal_Bool	bAdvanced = sal_False;
 	ScDBData*	pData	= NULL;
 	ScRange		aAdvRange;
 	while( (nIndex < rDBColl.GetCount()) && !bFound )
@@ -857,83 +957,88 @@ ExcAutoFilterRecs::ExcAutoFilterRecs( const XclExpRoot& rRoot, SCTAB nTab ) :
 			nIndex++;
 	}
 
-	if( pData && bFound )
-	{
-		ScQueryParam	aParam;
-		pData->GetQueryParam( aParam );
+    if( pData && bFound )
+    {
+        ScQueryParam	aParam;
+        mbHasFilter = sal_True;
+        pData->GetQueryParam( aParam );
 
-		ScRange	aRange( aParam.nCol1, aParam.nRow1, aParam.nTab,
-						aParam.nCol2, aParam.nRow2, aParam.nTab );
-		SCCOL	nColCnt = aParam.nCol2 - aParam.nCol1 + 1;
+        ScRange	aRange( aParam.nCol1, aParam.nRow1, aParam.nTab,
+            aParam.nCol2, aParam.nRow2, aParam.nTab );
+        SCCOL	nColCnt = aParam.nCol2 - aParam.nCol1 + 1;
 
         maRef = aRange;
 
         // #i2394# #100489# built-in defined names must be sorted by containing sheet name
         rNameMgr.InsertBuiltInName( EXC_BUILTIN_FILTERDATABASE, aRange );
 
-		// advanced filter
-		if( bAdvanced )
-		{
-			// filter criteria, excel allows only same table
-			if( aAdvRange.aStart.Tab() == nTab )
+        // advanced filter
+        if( bAdvanced )
+        {
+            // filter criteria, excel allows only same table
+            if( aAdvRange.aStart.Tab() == nTab )
                 rNameMgr.InsertBuiltInName( EXC_BUILTIN_CRITERIA, aAdvRange );
 
-			// filter destination range, excel allows only same table
-			if( !aParam.bInplace )
-			{
-				ScRange aDestRange( aParam.nDestCol, aParam.nDestRow, aParam.nDestTab );
-				aDestRange.aEnd.IncCol( nColCnt - 1 );
-				if( aDestRange.aStart.Tab() == nTab )
+            // filter destination range, excel allows only same table
+            if( !aParam.bInplace )
+            {
+                ScRange aDestRange( aParam.nDestCol, aParam.nDestRow, aParam.nDestTab );
+                aDestRange.aEnd.IncCol( nColCnt - 1 );
+                if( aDestRange.aStart.Tab() == nTab )
                     rNameMgr.InsertBuiltInName( EXC_BUILTIN_EXTRACT, aDestRange );
-			}
+            }
 
             pFilterMode = new XclExpFiltermode;
-		}
-		// AutoFilter
-		else
-		{
-			sal_Bool	bConflict	= sal_False;
-			sal_Bool	bContLoop	= sal_True;
-			sal_Bool	bHasOr		= sal_False;
-			SCCOLROW nFirstField = aParam.GetEntry( 0 ).nField;
+        }
+        // AutoFilter
+        else
+        {
+            sal_Bool	bConflict	= sal_False;
+            sal_Bool	bContLoop	= sal_True;
+            sal_Bool	bHasOr		= sal_False;
+            SCCOLROW nFirstField = aParam.GetEntry( 0 ).nField;
 
-			// create AUTOFILTER records for filtered columns
-			for( SCSIZE nEntry = 0; !bConflict && bContLoop && (nEntry < aParam.GetEntryCount()); nEntry++ )
-			{
-				const ScQueryEntry& rEntry	= aParam.GetEntry( nEntry );
+            // create AUTOFILTER records for filtered columns
+            for( SCSIZE nEntry = 0; !bConflict && bContLoop && (nEntry < aParam.GetEntryCount()); nEntry++ )
+            {
+                const ScQueryEntry& rEntry	= aParam.GetEntry( nEntry );
 
-				bContLoop = rEntry.bDoQuery;
-				if( bContLoop )
-				{
+                bContLoop = rEntry.bDoQuery;
+                if( bContLoop )
+                {
                     XclExpAutofilter* pFilter = GetByCol( static_cast<SCCOL>(rEntry.nField) - aRange.aStart.Col() );
+                    //only have "or" relation in two columns 
+                    if( nEntry > 0 && 
+                        rEntry.eConnect == SC_OR &&
+                        pFilter != GetByCol( static_cast<SCCOL>((aParam.GetEntry(nEntry - 1)).nField) - aRange.aStart.Col() ))
+                        bHasOr = true;
 
-					if( nEntry > 0 )
-						bHasOr |= (rEntry.eConnect == SC_OR);
-
-					bConflict = (nEntry > 1) && bHasOr;
-					if( !bConflict )
-						bConflict = (nEntry == 1) && (rEntry.eConnect == SC_OR) &&
-									(nFirstField != rEntry.nField);
-					if( !bConflict )
+                    bConflict = (nEntry > 1) && bHasOr;
+                    if( !bConflict )
+                    bConflict = (nEntry == 1) && (rEntry.eConnect == SC_OR) &&
+                    (nFirstField != rEntry.nField);
+                    if( !bConflict )
                         bConflict = pFilter->AddEntry( rEntry );
-				}
-			}
+                }
+            }
 
-			// additional tests for conflicts
+            // additional tests for conflicts
             for( size_t nPos = 0, nSize = maFilterList.GetSize(); !bConflict && (nPos < nSize); ++nPos )
             {
                 XclExpAutofilterRef xFilter = maFilterList.GetRecord( nPos );
+                if ( bHasOr )
+                    xFilter->SetHasOr( sal_True );
                 bConflict = xFilter->HasCondition() && xFilter->HasTop10();
             }
 
-			if( bConflict )
+            if( bConflict )
                 maFilterList.RemoveAllRecords();
 
             if( !maFilterList.IsEmpty() )
                 pFilterMode = new XclExpFiltermode;
             pFilterInfo = new XclExpAutofilterinfo( aRange.aStart, nColCnt );
-		}
-	}
+        }
+    }
 }
 
 ExcAutoFilterRecs::~ExcAutoFilterRecs()
@@ -989,7 +1094,8 @@ void ExcAutoFilterRecs::Save( XclExpStream& rStrm )
 
 void ExcAutoFilterRecs::SaveXml( XclExpXmlStream& rStrm )
 {
-    if( maFilterList.IsEmpty() )
+    // data filter may be haven't filterlist, there are only one filter mark
+    if( !mbHasFilter)        
         return;
 
     sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();

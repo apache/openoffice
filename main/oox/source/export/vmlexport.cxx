@@ -19,11 +19,10 @@
  * 
  *************************************************************/
 
-
-
 #include <oox/export/vmlexport.hxx>
 
-#include <tokens.hxx>
+//#include <tokens.hxx>
+#include "oox/token/tokens.hxx"
 
 #include <rtl/strbuf.hxx>
 #include <rtl/ustring.hxx>
@@ -60,7 +59,9 @@ public:
 };
 
 VMLExport::VMLExport( ::sax_fastparser::FSHelperPtr pSerializer )
-    : EscherEx( *( new SvNullStream ), 0 ),
+    //: EscherEx( *( new SvNullStream ), 0 ),
+    //zhaosz_xml
+    : EscherEx( EscherExGlobalRef(new EscherExGlobal(0)), *( new SvNullStream ) ),
       m_pSerializer( pSerializer ),
       m_pShapeAttrList( NULL ),
       m_nShapeType( ESCHER_ShpInst_Nil ),
@@ -78,7 +79,7 @@ VMLExport::~VMLExport()
     delete[] m_pShapeTypeWritten, m_pShapeTypeWritten = NULL;
 }
 
-void VMLExport::OpenContainer( UINT16 nEscherContainer, int nRecInstance )
+void VMLExport::OpenContainer( sal_Int16 nEscherContainer, int nRecInstance )
 {
     EscherEx::OpenContainer( nEscherContainer, nRecInstance );
 
@@ -122,9 +123,9 @@ void VMLExport::CloseContainer()
     EscherEx::CloseContainer();
 }
 
-UINT32 VMLExport::EnterGroup( const String& rShapeName, const Rectangle* pRect )
+sal_uInt32 VMLExport::EnterGroup( const String& rShapeName, const Rectangle* pRect )
 {
-    UINT32 nShapeId = GetShapeID();
+    sal_Int32 nShapeId = GenerateShapeId();//zhaosz_xml,just function replacing 
 
     OStringBuffer aStyle( 200 );
     FastAttributeList *pAttrList = m_pSerializer->createAttrList();
@@ -167,7 +168,7 @@ void VMLExport::LeaveGroup()
     m_pSerializer->endElementNS( XML_v, XML_group );
 }
 
-void VMLExport::AddShape( UINT32 nShapeType, UINT32 nShapeFlags, UINT32 nShapeId )
+void VMLExport::AddShape( sal_Int32 nShapeType, sal_Int32 nShapeFlags, sal_Int32 nShapeId )
 {
     m_nShapeType = nShapeType;
     m_nShapeFlags = nShapeFlags;
@@ -771,6 +772,7 @@ sal_Int32 VMLExport::StartShape()
     // some of the shapes have their own name ;-)
     sal_Int32 nShapeElement = -1;
     bool bReferToShapeType = false;
+/* clarence_guo temporarily comment for enable build
     switch ( m_nShapeType )
     {
         case ESCHER_ShpInst_NotPrimitive:   nShapeElement = XML_shape;     break;
@@ -819,7 +821,7 @@ sal_Int32 VMLExport::StartShape()
         // start of the shape
         m_pSerializer->startElementNS( XML_v, nShapeElement, XFastAttributeListRef( m_pShapeAttrList ) );
     }
-
+*/
     return nShapeElement;
 }
 

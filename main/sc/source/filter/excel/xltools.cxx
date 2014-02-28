@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -539,6 +537,8 @@ static const sal_Char* const ppcStyleNames[] =
     "Followed_Hyperlink"
 };
 
+const sal_Int32 XclTools::snStyleNamesCount = static_cast< sal_Int32 >( STATIC_ARRAY_SIZE( ppcStyleNames ) );
+
 String XclTools::GetBuiltInStyleName( sal_uInt8 nStyleId, const String& rName, sal_uInt8 nLevel )
 {
     String aStyleName;
@@ -550,7 +550,7 @@ String XclTools::GetBuiltInStyleName( sal_uInt8 nStyleId, const String& rName, s
     else
     {
         aStyleName = maStyleNamePrefix1;
-        if( nStyleId < STATIC_ARRAY_SIZE( ppcStyleNames ) )
+        if( nStyleId < snStyleNamesCount  )
             aStyleName.AppendAscii( ppcStyleNames[ nStyleId ] );
         else if( rName.Len() > 0 )
             aStyleName.Append( rName );
@@ -563,6 +563,20 @@ String XclTools::GetBuiltInStyleName( sal_uInt8 nStyleId, const String& rName, s
     return aStyleName;
 }
 
+String XclTools::GetBuiltinStyleNameFromId( sal_Int32 nBuiltinId, sal_Int32 nLevel )
+{
+    String aStyleName;
+    OSL_ENSURE( (0 <= nBuiltinId) && (nBuiltinId < snStyleNamesCount), "lclGetBuiltinStyleName - unknown builtin style" );
+    //aStyleName.appendAscii( spcStyleNamePrefix );
+    if( (0 <= nBuiltinId) && (nBuiltinId < snStyleNamesCount) && (ppcStyleNames[ nBuiltinId ][ 0 ] != 0) )
+        aStyleName.AppendAscii( ppcStyleNames[ nBuiltinId ] );
+    else
+        aStyleName.Append( String::CreateFromInt32(nBuiltinId) );
+    if( (nBuiltinId == EXC_STYLE_ROWLEVEL) || (nBuiltinId == EXC_STYLE_COLLEVEL) )
+        aStyleName.Append( String::CreateFromInt32(nLevel) );
+    return aStyleName;
+}
+
 String XclTools::GetBuiltInStyleName( const String& rStyleName )
 {
     return String( maStyleNamePrefix1 ).Append( rStyleName );
@@ -570,14 +584,6 @@ String XclTools::GetBuiltInStyleName( const String& rStyleName )
 
 bool XclTools::IsBuiltInStyleName( const String& rStyleName, sal_uInt8* pnStyleId, xub_StrLen* pnNextChar )
 {
-    // "Default" becomes "Normal"
-    if( rStyleName == ScGlobal::GetRscString( STR_STYLENAME_STANDARD ) )
-    {
-        if( pnStyleId ) *pnStyleId = EXC_STYLE_NORMAL;
-        if( pnNextChar ) *pnNextChar = rStyleName.Len();
-        return true;
-    }
-
     // try the other built-in styles
     sal_uInt8 nFoundId = 0;
     xub_StrLen nNextChar = 0;
@@ -592,15 +598,12 @@ bool XclTools::IsBuiltInStyleName( const String& rStyleName, sal_uInt8* pnStyleI
         String aShortName;
         for( sal_uInt8 nId = 0; nId < STATIC_ARRAY_SIZE( ppcStyleNames ); ++nId )
         {
-            if( nId != EXC_STYLE_NORMAL )
+            aShortName.AssignAscii( ppcStyleNames[ nId ] );
+            if( rStyleName.EqualsIgnoreCaseAscii( aShortName, nPrefixLen, aShortName.Len() ) &&
+                (nNextChar < nPrefixLen + aShortName.Len()) )
             {
-                aShortName.AssignAscii( ppcStyleNames[ nId ] );
-                if( rStyleName.EqualsIgnoreCaseAscii( aShortName, nPrefixLen, aShortName.Len() ) &&
-                    (nNextChar < nPrefixLen + aShortName.Len()) )
-                {
-                    nFoundId = nId;
-                    nNextChar = nPrefixLen + aShortName.Len();
-                }
+                nFoundId = nId;
+                nNextChar = nPrefixLen + aShortName.Len();
             }
         }
     }

@@ -19,29 +19,28 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _DOCXEXPORTFILTER_HXX_
 #define _DOCXEXPORTFILTER_HXX_
 
 #include <oox/core/xmlfilterbase.hxx>
 #include <oox/drawingml/chart/chartconverter.hxx>
-#include <oox/vml/drawing.hxx>
+#include <oox/vml/vmldrawing.hxx>
 
 #include <com/sun/star/beans/PropertyValue.hpp>
+#include <com/sun/star/uno/XComponentContext.hpp>
 
 /// The physical access to the DOCX document (for writing).
 class DocxExportFilter : public oox::core::XmlFilterBase
 {
 public:
-    DocxExportFilter( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rMSF );
+    DocxExportFilter( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& xCtx );
 
     // FIXME these should not even exist for the export-only filter!
     // For now, let's just do empty implementations of those.
     virtual bool        importDocument() { return false; }
     virtual const ::oox::drawingml::Theme* getCurrentTheme() const { return NULL; }
     virtual sal_Int32   getSchemeClr( sal_Int32 ) const { return 0; }
-    virtual const ::oox::vml::DrawingPtr getDrawings() { return ::oox::vml::DrawingPtr(); }
+    virtual ::oox::vml::Drawing* getVmlDrawing() { return NULL; }
     virtual ::oox::drawingml::chart::ChartConverter& getChartConverter() { static ::oox::drawingml::chart::ChartConverter aConverter; return aConverter; }
     virtual const ::oox::drawingml::table::TableStyleListPtr getTableStyles() { return ::oox::drawingml::table::TableStyleListPtr(); }
 
@@ -52,6 +51,11 @@ private:
 
     /// Implementatio of the filter abstract method.
     virtual ::rtl::OUString implGetImplementationName() const;
+
+    virtual ::oox::ole::VbaProject* implCreateVbaProject() const
+    {
+        return NULL;
+    }
 };
 
 #endif // _DOCXEXPORTFILTER_HXX_

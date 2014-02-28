@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "docxexportfilter.hxx"
 #include "rtfexportfilter.hxx"
 #include "rtfimportfilter.hxx"
@@ -35,17 +33,18 @@
 using namespace ::comphelper;
 using namespace ::com::sun::star;
 using ::rtl::OUString;
+using ::com::sun::star::lang::XComponent;
 
 #define S( x ) OUString( RTL_CONSTASCII_USTRINGPARAM( x ) )
 
-DocxExportFilter::DocxExportFilter( const uno::Reference< lang::XMultiServiceFactory >& rMSF )
-    : oox::core::XmlFilterBase( rMSF )
+DocxExportFilter::DocxExportFilter( const uno::Reference< uno::XComponentContext >& xCtx )
+    : oox::core::XmlFilterBase( xCtx )
 {
 }
 
 bool DocxExportFilter::exportDocument()
 {
-    OSL_TRACE(, "DocxExportFilter::exportDocument()\n" ); // DEBUG remove me
+    OSL_TRACE( "DocxExportFilter::exportDocument()\n" ); // DEBUG remove me
 
     // get SwDoc*
     uno::Reference< uno::XInterface > xIfc( getModel(), uno::UNO_QUERY );
@@ -74,7 +73,7 @@ bool DocxExportFilter::exportDocument()
         aExport.ExportDocument( true ); // FIXME support exporting selection only
     }
 
-    commit();
+    commitStorage();
 
     // delete the pCurPam
     if ( pCurPam )
@@ -91,28 +90,43 @@ bool DocxExportFilter::exportDocument()
 // UNO stuff so that the filter is registered
 //////////////////////////////////////////////////////////////////////////
 
-#define IMPL_NAME "com.sun.star.comp.Writer.DocxExport"
+#define IMPL_NAME "com.sun.star.comp.writer.OOXMLExporter"
 
-OUString DocxExport_getImplementationName()
+OUString SwOOXMLExport_getImplementationName()
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM( IMPL_NAME ) );
 }
 
 OUString DocxExportFilter::implGetImplementationName() const
 {
-    return DocxExport_getImplementationName();
+    return SwOOXMLExport_getImplementationName();
 }
 
-uno::Sequence< OUString > SAL_CALL DocxExport_getSupportedServiceNames() throw()
+uno::Sequence< OUString > SAL_CALL SwOOXMLExport_getSupportedServiceNames() throw()
 {
     const OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.ExportFilter" ) );
     const uno::Sequence< OUString > aSeq( &aServiceName, 1 );
     return aSeq;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL DocxExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+uno::Reference< uno::XInterface > SAL_CALL SwOOXMLExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
 {
-    return (cppu::OWeakObject*) new DocxExportFilter( rSMgr );
+    uno::Reference< uno::XInterface > xRet;
+    uno::Reference< uno::XComponentContext > xCtx;
+    uno::Reference< beans::XPropertySet > const xProps( rSMgr, uno::UNO_QUERY );
+    if ( xProps.is() )
+    {
+        try 
+        {
+            xCtx.set( xProps->getPropertyValue( rtl::OUString::createFromAscii( "DefaultContext" ) ), uno::UNO_QUERY );
+        }
+        catch ( beans::UnknownPropertyException & e ) 
+        {
+        }
+    }
+    if ( xCtx.is() )
+        xRet.set( (cppu::OWeakObject*) new DocxExportFilter( xCtx ) );
+	return xRet;
 }
 
 #ifdef __cplusplus
@@ -123,6 +137,30 @@ extern "C"
 SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment( const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
 {
     *ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
+}
+
+SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_writeInfo( void* /* pServiceManager */, void* pRegistryKey )
+{
+    sal_Bool bRet = sal_False;
+
+    if( pRegistryKey )
+    {
+        try
+        {
+            uno::Reference< registry::XRegistryKey > xNewKey1(
+                    static_cast< registry::XRegistryKey* >( pRegistryKey )->createKey(                                
+                        OUString::createFromAscii( "com.sun.star.comp.writer.OOXMLExporter/UNO/SERVICES/" ) ) );
+            xNewKey1->createKey( SwOOXMLExport_getSupportedServiceNames().getConstArray()[0] );
+
+            bRet = sal_True;
+        }
+        catch( registry::InvalidRegistryException& )
+        {
+            OSL_ENSURE( sal_False, "### InvalidRegistryException!" );
+        }
+    }
+
+    return bRet;
 }
 
 // ------------------------
@@ -141,9 +179,9 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplN
 
         xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
                     reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-                    DocxExport_getImplementationName(),
-                    DocxExport_createInstance,
-                    DocxExport_getSupportedServiceNames() ) );
+                    SwOOXMLExport_getImplementationName(),
+                    SwOOXMLExport_createInstance,
+                    SwOOXMLExport_getSupportedServiceNames() ) );
     } else if ( rtl_str_compare( pImplName, IMPL_NAME_RTFEXPORT ) == 0 ) {
         const OUString aServiceName( OUString::createFromAscii( IMPL_NAME_RTFEXPORT ) );
 

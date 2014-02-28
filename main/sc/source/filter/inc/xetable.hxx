@@ -72,6 +72,8 @@ public:
     virtual XclTokenArrayRef CreateCellTokenArray( const XclExpRoot& rRoot ) const = 0;
     /** Derived classes return true, if the own formula contains volatile functions. */
     virtual bool        IsVolatile() const = 0;
+    virtual bool        IsRecoverable() const = 0;
+    const XclRange&     GetXclRange() const {return maXclRange;}
 
 protected:
     /** Constructs the record with a single cell. */
@@ -114,6 +116,7 @@ public:
     virtual XclTokenArrayRef CreateCellTokenArray( const XclExpRoot& rRoot ) const;
     /** Returns true, if the array formula contains volatile functions. */
     virtual bool        IsVolatile() const;
+    virtual bool        IsRecoverable() const;
 
 private:
     virtual void        WriteBody( XclExpStream& rStrm );
@@ -155,7 +158,7 @@ class XclExpShrfmla : public XclExpRangeFmlaBase
 {
 public:
     /** Creates a SHRFMLA record that consists of the passed cell address only. */
-    explicit            XclExpShrfmla( XclTokenArrayRef xTokArr, const ScAddress& rScPos );
+    explicit            XclExpShrfmla( XclTokenArrayRef xTokArr, const ScAddress& rScPos, const sal_uInt32 nIndex );
 
     /** Extends the cell range to include the passed cell address. */
     void                ExtendRange( const ScAddress& rScPos );
@@ -164,6 +167,8 @@ public:
     virtual XclTokenArrayRef CreateCellTokenArray( const XclExpRoot& rRoot ) const;
     /** Returns true, if the shared formula contains volatile functions. */
     virtual bool        IsVolatile() const;
+    virtual bool        IsRecoverable() const;
+    const sal_uInt32    GetIndex() const {return mnIndex;}
 
 private:
     virtual void        WriteBody( XclExpStream& rStrm );
@@ -171,6 +176,7 @@ private:
 private:
     XclTokenArrayRef    mxTokArr;       /// The token array of a shared formula.
     sal_uInt8           mnUsedCount;    /// Number of FORMULA records referring to this record.
+    const sal_uInt32    mnIndex;        /// The Nth shared formula in a sheet
 };
 
 typedef ScfRef< XclExpShrfmla > XclExpShrfmlaRef;
@@ -195,6 +201,8 @@ public:
 private:
     typedef ::std::map< const ScTokenArray*, XclExpShrfmlaRef > XclExpShrfmlaMap;
     XclExpShrfmlaMap    maRecMap;       /// Map containing the SHRFMLA records.
+    typedef ::std::map<sal_Int16, sal_uInt32> XclExpShrfmlaIndexMap;
+    XclExpShrfmlaIndexMap         mnTabSFIndexMap;///All shared formula are created from its buffer. Here use its buffer to save the last shared formula index for each sheet
 };
 
 // Multiple operations ========================================================
@@ -219,8 +227,12 @@ public:
     virtual XclTokenArrayRef CreateCellTokenArray( const XclExpRoot& rRoot ) const;
     /** Returns true, if the multiple operations range is volatile. */
     virtual bool        IsVolatile() const;
+    virtual bool        IsRecoverable() const;
     /** Writes the record if it is valid. */
     virtual void        Save( XclExpStream& rStrm );
+    const ScAddress&    GetRowRef() const {return ScAddress(mnRowInpXclCol, mnRowInpXclRow, mnScTab);}
+    const ScAddress&    GetColRef() const {return ScAddress(mnColInpXclCol, mnColInpXclRow, mnScTab);}
+    const sal_uInt8     GetMOType() const {return mnScMode;}
 
 private:
     /** Returns true, if the passed cell position can be appended to this record. */

@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _DOCXATTRIBUTEOUTPUT_HXX_
 #define _DOCXATTRIBUTEOUTPUT_HXX_
 
@@ -160,6 +158,8 @@ public:
 
     virtual void TableOrientation( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
 
+    virtual void TableSpacing( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
+
     virtual void TableRowEnd( sal_uInt32 nDepth = 1 );
 
     /// Start of the styles table.
@@ -263,7 +263,8 @@ public:
         sal_Int16 nIndentAt,
         sal_Int16 nFirstLineIndex,
         sal_Int16 nListTabPos,
-        const String &rNumberingString );
+        const String &rNumberingString ,
+        const SvxBrushItem* pBrush = 0);
 
     void WriteField_Impl( const SwField* pFld, ww::eField eType, const String& rFldCmd, sal_uInt8 nMode );
 
@@ -401,6 +402,12 @@ protected:
     /// Sfx item RES_CHRATR_CTL_WEIGHT
     virtual void CharWeightCTL( const SvxWeightItem& rWeight );
 
+	/// Sfx item RES_CHRATR_BidiRTL
+    virtual void CharBidiRTL( const SfxPoolItem& );
+
+    /// Sfx item RES_CHRATR_IdctHint
+    virtual void CharIdctHint( const SfxPoolItem& );
+
     /// Sfx item RES_CHRATR_ROTATE
     virtual void CharRotate( const SvxCharRotateItem& rRotate );
 
@@ -529,7 +536,7 @@ protected:
 private:
 
     void DoWriteBookmarks( );
-    void WriteCommentRanges();
+    //void WriteCommentRanges();    // clarence_guo: because this method contained semi code of m_postitFieldsMaxId, temporarily comment it.
 
     void StartField_Impl( FieldInfos& rInfos, sal_Bool bWriteRun = sal_False );
     void DoWriteCmd( String& rCmd );

@@ -36,8 +36,8 @@ ENABLE_EXCEPTIONS=TRUE
 SLOFILES =	\
 		$(SLO)$/drawingml.obj \
 		$(SLO)$/shapes.obj \
-		$(SLO)$/vmlexport.obj \
-		$(SLO)$/vmlexport-shape-types.obj
+		$(SLO)$/vmlexport.obj 
+#		$(SLO)$/vmlexport-shape-types.obj
 
 # --- Targets -------------------------------------------------------
 

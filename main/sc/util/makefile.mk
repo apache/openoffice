@@ -19,8 +19,6 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
 
 PRJNAME=sc
@@ -48,7 +46,6 @@ RESLIB1LIST=\
 	$(SRS)$/pagedlg.srs	\
 	$(SRS)$/navipi.srs	\
 	$(SRS)$/cctrl.srs	\
-
 
 RESLIB1NAME=sc
 RESLIB1IMAGES=\
@@ -330,13 +327,19 @@ SHL9LIBS=$(SLB)$/$(TARGET_VBA).lib
 
 ALLTAR:	$(MISC)$/linkinc.ls  $(COMP)
 
-ALLTAR : $(MISC)/sc.component $(MISC)/scd.component $(MISC)/vbaobj.component
+ALLTAR : $(MISC)/sc.component $(MISC)/scfilt.component $(MISC)/scd.component $(MISC)/vbaobj.component
 
 $(MISC)/sc.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         sc.component
     $(XSLTPROC) --nonet --stringparam uri \
         '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt sc.component
+
+$(MISC)/scfilt.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
+        scfilt.component
+    $(XSLTPROC) --nonet --stringparam uri \
+        '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL6TARGETN:f)' -o $@ \
+        $(SOLARENV)/bin/createcomponent.xslt scfilt.component
 
 $(MISC)/scd.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         scd.component

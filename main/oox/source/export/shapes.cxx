@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "oox/core/xmlfilterbase.hxx"
 #include "oox/export/shapes.hxx"
 #include "oox/export/utils.hxx"
@@ -61,10 +59,13 @@
 #include <rtl/strbuf.hxx>
 #include <sfx2/app.hxx>
 #include <svl/languageoptions.hxx>
-#include <svx/escherex.hxx>
+#include <filter/msfilter/escherex.hxx>
+#include <editeng/svxenum.hxx>
 #include <svx/svdoashp.hxx>
-#include <svx/svxenum.hxx>
 #include <svx/unoapi.hxx>
+#include "oox/token/tokens.hxx"
+
+#include <hash_map>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -89,6 +90,8 @@ using ::rtl::OStringBuffer;
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
 using ::sax_fastparser::FSHelperPtr;
+using ::oox::core::XmlFilterBase;
+using ::std::hash_map;
 
 DBG(extern void dump_pset(Reference< XPropertySet > rXPropSet));
 
@@ -306,8 +309,24 @@ static const CustomShapeTypeTranslationTable pCustomShapeTypeTranslationTable[] 
     { "mso-spt201", "hostControl" },
     { "mso-spt202", "rect" }
 };
+//zhaosz_xml
+struct ShapeHash
+{
+    size_t operator()( const char* s ) const
+    {
+        return rtl_str_hashCode(s);
+    }
+};
 
-typedef std::hash_map< const char*, const char*, CStringHash, CStringEqual> CustomShapeTypeTranslationHashMap;
+struct ShapeCheck
+{
+    bool operator()( const char* s1, const char* s2 ) const
+    {
+        return strcmp( s1, s2 ) == 0;
+    }
+};
+
+typedef hash_map< const char*, const char*, rtl::CStringHash, rtl::CStringEqual> CustomShapeTypeTranslationHashMap;
 static CustomShapeTypeTranslationHashMap* pCustomShapeTypeTranslationHashMap = NULL;
 
 static const char* lcl_GetPresetGeometry( const char* sShapeType )
@@ -344,14 +363,16 @@ namespace oox { namespace drawingml {
     if ( GETA(propName) ) \
         mAny >>= variable;
 
-ShapeExport::ShapeExport( sal_Int32 nXmlNamespace, FSHelperPtr pFS, ::oox::core::XmlFilterBase* pFB, DocumentType eDocumentType )
+ShapeExport::ShapeExport( sal_Int32 nXmlNamespace, FSHelperPtr pFS,
+	ShapeHashMap* pShapeMap, XmlFilterBase* pFB, DocumentType eDocumentType )
     : DrawingML( pFS, pFB, eDocumentType )
-    , mnXmlNamespace( nXmlNamespace )
     , mnShapeIdMax( 1 )
     , mnPictureIdMax( 1 )
+    , mnXmlNamespace( nXmlNamespace )
     , maFraction( 1, 576 )
     , maMapModeSrc( MAP_100TH_MM )
     , maMapModeDest( MAP_INCH, Point(), maFraction, maFraction )
+    , mpShapeMap( pShapeMap ? pShapeMap : &maShapeMap )
 {
 }
 
@@ -430,12 +451,12 @@ ShapeExport& ShapeExport::WriteBezierShape( Reference< XShape > xShape, sal_Bool
 
 ShapeExport& ShapeExport::WriteClosedBezierShape( Reference< XShape > xShape )
 {
-    return WriteBezierShape( xShape, TRUE );
+    return WriteBezierShape( xShape, sal_True );
 }
 
 ShapeExport& ShapeExport::WriteOpenBezierShape( Reference< XShape > xShape )
 {
-    return WriteBezierShape( xShape, FALSE );
+    return WriteBezierShape( xShape, sal_False );
 }
 
 ShapeExport& ShapeExport::WriteCustomShape( Reference< XShape > xShape )
@@ -445,7 +466,7 @@ ShapeExport& ShapeExport::WriteCustomShape( Reference< XShape > xShape )
     Reference< XPropertySet > rXPropSet( xShape, UNO_QUERY );
     SdrObjCustomShape* pShape = (SdrObjCustomShape*) GetSdrObjectFromXShape( xShape );
     sal_Bool bIsDefaultObject = EscherPropertyContainer::IsDefaultObject( pShape );
-    sal_Bool bPredefinedHandlesUsed = TRUE;
+    sal_Bool bPredefinedHandlesUsed = sal_True;
     OUString sShapeType;
     sal_uInt32 nMirrorFlags = 0;
     MSO_SPT eShapeType = EscherPropertyContainer::GetCustomShapeType( xShape, nMirrorFlags, sShapeType );
@@ -468,7 +489,7 @@ ShapeExport& ShapeExport::WriteCustomShape( Reference< XShape > xShape )
                     nAdjustmentValuesIndex = i;
                 else if( rProp.Name.equalsAscii( "Handles" )) {
                     if( !bIsDefaultObject )
-                        bPredefinedHandlesUsed = FALSE;
+                        bPredefinedHandlesUsed = sal_False;
                     // TODO: update nAdjustmentsWhichNeedsToBeConverted here
                 }
             }
@@ -702,13 +723,13 @@ ShapeExport& ShapeExport::WriteConnectorShape( Reference< XShape > xShape )
 
     Rectangle aRect( Point( aStartPoint.X, aStartPoint.Y ), Point( aEndPoint.X, aEndPoint.Y ) );
     if( aRect.getWidth() < 0 ) {
-        bFlipH = TRUE;
+        bFlipH = sal_True;
         aRect.setX( aEndPoint.X );
         aRect.setWidth( aStartPoint.X - aEndPoint.X );
     }
 
     if( aRect.getHeight() < 0 ) {
-        bFlipV = TRUE;
+        bFlipV = sal_True;
         aRect.setY( aEndPoint.Y );
         aRect.setHeight( aStartPoint.Y - aEndPoint.Y );
     }
@@ -861,7 +882,7 @@ ShapeExport& ShapeExport::WriteRectangleShape( Reference< XShape > xShape )
 }
 
 typedef ShapeExport& (ShapeExport::*ShapeConverter)( Reference< XShape > );
-typedef std::hash_map< const char*, ShapeConverter, CStringHash, CStringEqual> NameToConvertMapType;
+typedef std::hash_map< const char*, ShapeConverter, ShapeHash, ShapeCheck> NameToConvertMapType;
 
 static const NameToConvertMapType& lcl_GetConverters()
 {

@@ -52,13 +52,16 @@ public:
     void                EndSheet();
 
     virtual void        Save( XclExpStream& rStrm );
+	virtual void        SaveXml( XclExpXmlStream& rStrm );
+	static  void        ResetCounters();
 
 private:
     XclEscherEx&        mrEscherEx;
     XclExpMsoDrawing*   pMsodrawingPerSheet;
     XclExpMsoDrawing*   pSolverContainer;
+	static int          mnDrawingMLCount, mnVmlCount;
+	SCTAB               mnScTab;
 };
-
 
 // --- class XclObj --------------------------------------------------
 
@@ -68,16 +71,17 @@ class SdrTextObj;
 class XclObj : public XclExpRecord
 {
 protected:
-        XclEscherEx&        mrEscherEx;
-        XclExpMsoDrawing*   pMsodrawing;
-        XclExpMsoDrawing*   pClientTextbox;
-		XclTxo*				pTxo;
-        sal_uInt16          mnObjType;
-		sal_uInt16				nObjId;
-		sal_uInt16				nGrbit;
-		sal_Bool				bFirstOnSheet;
+    XclEscherEx&        mrEscherEx;
+    XclExpMsoDrawing*   pMsodrawing;
+    XclExpMsoDrawing*   pClientTextbox;
+    XclTxo*             pTxo;
+    sal_uInt16          mnObjType;
+    sal_uInt16          nObjId;
+    sal_uInt16          nGrbit;
+    sal_Bool            bFirstOnSheet;
 
-        bool                    mbOwnEscher;    /// true = Escher part created on the fly.
+    bool                mbOwnEscher;    /// true = Escher part created on the fly.
+    SCTAB               mnScTab;
 
     /** @param bOwnEscher  If set to true, this object will create its escher data.
         See SetOwnEscher() for details. */
@@ -96,6 +100,8 @@ public:
     inline sal_uInt16           GetObjType() const { return mnObjType; }
 
 	inline	void				SetId( sal_uInt16 nId )	{ nObjId = nId; }
+	inline	void				SetTab( SCTAB nScTab )	{ mnScTab = nScTab; }
+	inline	SCTAB				GetTab() const			{ return mnScTab; }
 
 	inline	void				SetLocked( sal_Bool b )
 									{ b ? nGrbit |= 0x0001 : nGrbit &= ~0x0001; }
@@ -217,13 +223,21 @@ public:
 class XclObjAny : public XclObj
 {
 private:
+    com::sun::star::uno::Reference< com::sun::star::drawing::XShape >  mxShape;
     virtual void                WriteSubRecs( XclExpStream& rStrm );
 
 public:
                                 XclObjAny( XclExpObjectManager& rObjMgr );
+								XclObjAny( XclExpObjectManager& rObjMgr , 
+									com::sun::star::uno::Reference< com::sun::star::drawing::XShape > xShape);
 	virtual						~XclObjAny();
 
 	virtual	void				Save( XclExpStream& rStrm );
+	
+	void SaveXml( XclExpXmlStream& rStrm );
+	com::sun::star::uno::Reference< com::sun::star::drawing::XShape >  GetShape() const { return mxShape; }
+	static void                 WriteFromTo( XclExpXmlStream& rStrm, const XclObjAny& rObj );
+       static void                 WriteFromTo( XclExpXmlStream& rStrm, const com::sun::star::uno::Reference< com::sun::star::drawing::XShape >& rShape, SCTAB nTab );
 };
 
 

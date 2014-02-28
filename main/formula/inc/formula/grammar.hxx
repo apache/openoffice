@@ -123,6 +123,10 @@ public:
         GRAM_NATIVE_XL_R1C1 = ::com::sun::star::sheet::FormulaLanguage::NATIVE  |
                                 ((CONV_XL_R1C1       +
                                   kConventionOffset) << kConventionShift),
+        /// OOXML
+        GRAM_OOXML          = ::com::sun::star::sheet::FormulaLanguage::OOXML  |
+                                ((CONV_XL_OOX        +
+                                  kConventionOffset) << kConventionShift),
         /// Central definition of the default grammar to be used.
         GRAM_DEFAULT        = GRAM_NATIVE_UI,
 
@@ -173,6 +177,7 @@ public:
             case GRAM_NATIVE_ODF     :
             case GRAM_NATIVE_XL_A1   :
             case GRAM_NATIVE_XL_R1C1 :
+            case GRAM_OOXML          :
                 return true;
             default:
                 return extractFormulaLanguage( eGrammar) == GRAM_EXTERNAL;

@@ -37,7 +37,7 @@ class WRITERFILTER_DLLPUBLIC WriterFilter : public cppu::WeakImplHelper5
 <
     com::sun::star::document::XFilter,
     com::sun::star::document::XImporter,
-	com::sun::star::document::XExporter,
+    com::sun::star::document::XExporter,
     com::sun::star::lang::XInitialization,
     com::sun::star::lang::XServiceInfo
 >

@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "oox/xls/stylesbuffer.hxx"
 
 #include <com/sun/star/awt/FontDescriptor.hpp>
@@ -2765,7 +2763,7 @@ OUString lclGetBuiltinStyleName( sal_Int32 nBuiltinId, const OUString& rName, sa
     else
         aStyleName.append( nBuiltinId );
     if( (nBuiltinId == OOX_STYLE_ROWLEVEL) || (nBuiltinId == OOX_STYLE_COLLEVEL) )
-        aStyleName.append( nLevel );
+        aStyleName.append( nLevel + 1 );
     return aStyleName.makeStringAndClear();
 }
 

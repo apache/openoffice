@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
- 
 #ifndef WW8_TABLE_INFO_HXX
 #define WW8_TABLE_INFO_HXX
 #include <hash_map>
@@ -31,6 +29,7 @@
 #include <boost/shared_ptr.hpp>
 #include <sal/types.h>
 #include <swrect.hxx>
+#include <set>
 
 class SwTable;
 class SwTableLine;

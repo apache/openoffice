@@ -19,7 +19,6 @@
  * 
  *************************************************************/
 
-
 /* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef _WRTWW8_HXX
@@ -305,9 +304,7 @@ public:
     wwFont( const String &rFamilyName, FontPitch ePitch, FontFamily eFamily,
         rtl_TextEncoding eChrSet, bool bWrtWW8 );
     bool Write( SvStream *pTableStram ) const;
-#ifdef DOCX
     void WriteDocx( const DocxAttributeOutput* rAttrOutput ) const;
-#endif
     void WriteRtf( const RtfAttributeOutput* rAttrOutput ) const;
     rtl::OUString GetFamilyName() const { return rtl::OUString( msFamilyNm ); }
     friend bool operator < (const wwFont &r1, const wwFont &r2);
@@ -331,9 +328,7 @@ public:
     sal_uInt16 GetId(const SvxFontItem& rFont);
     sal_uInt16 GetId(const wwFont& rFont);
     void WriteFontTable( SvStream *pTableStream, WW8Fib& pFib );
-#ifdef DOCX
     void WriteFontTable( const DocxAttributeOutput& rAttrOutput );
-#endif
     void WriteFontTable( const RtfAttributeOutput& rAttrOutput );
 
     /// If true, all fonts are loaded before processing the document.
@@ -727,7 +722,7 @@ public:
     /// Output the actual headers and footers.
     virtual void WriteHeadersFooters( sal_uInt8 nHeadFootFlags,
             const SwFrmFmt& rFmt, const SwFrmFmt& rLeftFmt, const SwFrmFmt& rFirstPageFmt,
-	    sal_uInt8 nBreakCode) = 0;
+            sal_uInt8 nBreakCode ) = 0;
 
     /// Write the field
     virtual void OutputField( const SwField* pFld, ww::eField eFldType,

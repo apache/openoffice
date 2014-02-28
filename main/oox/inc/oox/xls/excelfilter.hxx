@@ -61,7 +61,9 @@ public:
 
     virtual bool        importDocument() throw();
     virtual bool        exportDocument() throw();
-
+    virtual sal_Bool SAL_CALL filter(
+                            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescSeq )
+                            throw( ::com::sun::star::uno::RuntimeException );
     virtual const ::oox::drawingml::Theme* getCurrentTheme() const;
     virtual ::oox::vml::Drawing* getVmlDrawing();
 	virtual const ::oox::drawingml::table::TableStyleListPtr getTableStyles();
