@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef __com_sun_star_sheet_FormulaLanguage_idl__
 #define __com_sun_star_sheet_FormulaLanguage_idl__
 
@@ -56,6 +54,9 @@ constants FormulaLanguage
      */
     const long NATIVE   = 3;
 
+    /** Function names and operators as used in the OOXML format.
+    */
+    const long OOXML    = 4;
 };
 
 //=============================================================================
