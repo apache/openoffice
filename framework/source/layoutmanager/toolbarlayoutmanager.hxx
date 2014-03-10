@@ -219,6 +219,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         rtl::OUString    implts_generateGenericAddonToolbarTitle( sal_Int32 nNumber ) const;
         void             implts_setElementData( UIElement& rUIElement, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XDockableWindow >& rDockWindow );
         void             implts_destroyDockingAreaWindows();
+        bool             implts_setToolbarVisibility( bool bVisible, UIElement aUIElement );
 
         //---------------------------------------------------------------------------------------------------------
         // layout methods
@@ -233,7 +234,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         void             implts_setLayoutDirty();
         void             implts_setLayoutInProgress( bool bInProgress = true );
         bool             implts_isLayoutInProgress() const { return m_bLayoutInProgress; }
-        
+
         //---------------------------------------------------------------------------------------------------------
         // lookup/container methods
         //---------------------------------------------------------------------------------------------------------
@@ -246,7 +247,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         void             implts_setToolbar( const UIElement& rUIElement );
         ::Size           implts_getTopBottomDockingAreaSizes();
         void             implts_getUIElementVectorCopy( UIElementVector& rCopy );
-        
+
         //---------------------------------------------------------------------------------------------------------
         // internal docking methods
         //---------------------------------------------------------------------------------------------------------
@@ -265,12 +266,12 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
                                                             const ::Rectangle& rTrackingRect,
                                                             const ::Rectangle& rRowColumnRect,
                                                             const ::Size& rContainerWinSize );
-        
+
         void             implts_getDockingAreaElementInfos( ::com::sun::star::ui::DockingArea DockingArea, std::vector< SingleRowColumnWindowData >& rRowColumnsWindowData );
         void             implts_getDockingAreaElementInfoOnSingleRowCol( ::com::sun::star::ui::DockingArea, sal_Int32 nRowCol, SingleRowColumnWindowData& rRowColumnWindowData );
         void             implts_findNextDockingPos( ::com::sun::star::ui::DockingArea DockingArea, const ::Size& aUIElementSize, ::Point& rVirtualPos, ::Point& rPixelPos );
         void             implts_setTrackingRect( ::com::sun::star::ui::DockingArea eDockingArea, const ::Point& rMousePos, ::Rectangle& rTrackingRect );
-        
+
         //---------------------------------------------------------------------------------------------------------
         // creation methods
         //---------------------------------------------------------------------------------------------------------
@@ -283,14 +284,14 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         css::uno::Reference< css::ui::XUIElement > implts_createElement( const ::rtl::OUString& aName );
         void             implts_setToolbarCreation( bool bStart = true );
         bool             implts_isToolbarCreationActive();
-        
+
         //---------------------------------------------------------------------------------------------------------
         // persistence methods
         //---------------------------------------------------------------------------------------------------------
         sal_Bool         implts_readWindowStateData( const rtl::OUString& aName, UIElement& rElementData );
         void             implts_writeWindowStateData( const UIElement& rElementData );
         void             implts_writeNewWindowStateData( const rtl::OUString aName, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& xWindow );
-        
+
         //---------------------------------------------------------------------------------------------------------
         // members
         //---------------------------------------------------------------------------------------------------------
