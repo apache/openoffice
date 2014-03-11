@@ -1647,10 +1647,12 @@ void ScAccessibleDocument::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 			        aEvent.EventId = AccessibleEventId::BOUNDRECT_CHANGED;
 			        aEvent.Source = uno::Reference< XAccessibleContext >(this);
 
-			        CommitChange(aEvent);
+			        CommitChange(aEvent);					
 
                     if (mpAccessibleSpreadsheet)
                         mpAccessibleSpreadsheet->BoundingBoxChanged();
+					if (mpAccessibleSpreadsheet && mpViewShell->IsActive())
+						mpAccessibleSpreadsheet->FireFirstCellFocus();
                 }
                 else if (mpAccessibleSpreadsheet)
                 {
@@ -2266,7 +2268,6 @@ uno::Reference < XAccessible >
 		mpAccessibleSpreadsheet->acquire();
 		mpAccessibleSpreadsheet->Init();
 		mbCompleteSheetSelected = IsTableSelected();
-		mpAccessibleSpreadsheet->FireFirstCellFocus(); // i123622
 	}
 	return mpAccessibleSpreadsheet;
 }
