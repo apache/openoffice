@@ -493,11 +493,19 @@ sub setup_global_font_directory_name ($)
 {
 	my ($directories) = @_;
 
+    $installer::logger::Info->printf("setup_global_font_directory_name, checking %d entries\n",
+        scalar @$directories);
+    $installer::logger::Info->printf(" fontsdirhostname is %s\n",
+        $installer::globals::fontsdirhostname);
+    $installer::logger::Info->printf(" fontsdirname is %s\n",
+        $installer::globals::fontsdirname);
 	foreach my $directory (@$directories)
 	{		
         next unless defined $directory->{'Dir'};
         next unless defined $directory->{'defaultdir'};
 
+        $installer::logger::Info->printf("    Dir is %s\n", $directory->{'Dir'});
+        $installer::logger::Info->printf("    defaultdir is %s\n", $directory->{'defaultdir'});
         next if $directory->{'Dir'} ne "PREDEFINED_OSSYSTEMFONTDIR";
         next if $directory->{'defaultdir'} ne $installer::globals::fontsdirhostname;
 
@@ -512,6 +520,22 @@ sub setup_global_font_directory_name ($)
             $directory->{'HostName'});
         installer::scriptitems::print_script_item($directory);
 	}
+	foreach my $onedir (@$directories)
+    {
+    	my $fontdir = "";
+		if ( $onedir->{'Dir'} ) { $fontdir = $onedir->{'Dir'}; }
+
+		my $fontdefaultdir = "";
+		if ( $onedir->{'defaultdir'} ) { $fontdefaultdir = $onedir->{'defaultdir'}; }
+
+		if (( $fontdir eq "PREDEFINED_OSSYSTEMFONTDIR" ) && ( $fontdefaultdir eq $installer::globals::fontsdirhostname ))
+		{
+            $installer::logger::Info->printf("fontsdirname   = %s\n", $onedir->{'defaultdir'});
+            $installer::logger::Info->printf("              is %s\n", $installer::globals::fontsdirname);
+            $installer::logger::Info->printf("fontsdirparent = %s\n", $onedir->{'uniqueparentname'});
+            $installer::logger::Info->printf("              is %s\n", $installer::globals::fontsdirparent);
+		}
+    }
 }
 
 #####################################################
@@ -658,6 +682,9 @@ sub process_root_directories ($$)
     }
 	&$functor($installer::globals::templatefolder, "TARGETDIR", $directorytableentry);
 
+    $installer::logger::Info->printf("process_root_directories: fontsdirname=%s, fontsfoldername=%s\n",
+        $installer::globals::fontsdirname,
+        $installer::globals::fontsfoldername);
 	if ( $installer::globals::fontsdirname )
 	{
 		&$functor(
