@@ -58,13 +58,17 @@ public:
     virtual ~SvNullStream() {}
 };
 
-VMLExport::VMLExport( ::sax_fastparser::FSHelperPtr pSerializer )
+VMLExport::VMLExport( ::sax_fastparser::FSHelperPtr pSerializer, sal_uInt32 nShapeType, sal_uInt32 nShapeFlags )
     //: EscherEx( *( new SvNullStream ), 0 ),
-    //zhaosz_xml
     : EscherEx( EscherExGlobalRef(new EscherExGlobal(0)), *( new SvNullStream ) ),
       m_pSerializer( pSerializer ),
       m_pShapeAttrList( NULL ),
-      m_nShapeType( ESCHER_ShpInst_Nil ),
+      m_nShapeType( nShapeType ),
+      m_bHasFill( true ),
+      m_bHasLine( true ),
+      m_nFillColor( -1 ),
+      m_nLineWidth( -1 ),
+      m_nLineColor( -1 ),
       m_pShapeStyle( new OStringBuffer( 200 ) ),
       m_pShapeTypeWritten( new bool[ ESCHER_ShpInst_COUNT ] )
 {
@@ -79,7 +83,7 @@ VMLExport::~VMLExport()
     delete[] m_pShapeTypeWritten, m_pShapeTypeWritten = NULL;
 }
 
-void VMLExport::OpenContainer( sal_Int16 nEscherContainer, int nRecInstance )
+void VMLExport::OpenContainer( sal_uInt16 nEscherContainer, int nRecInstance )
 {
     EscherEx::OpenContainer( nEscherContainer, nRecInstance );
 
@@ -90,7 +94,7 @@ void VMLExport::OpenContainer( sal_Int16 nEscherContainer, int nRecInstance )
         if ( m_nShapeType != ESCHER_ShpInst_Nil )
             fprintf( stderr, "Warning!  VMLExport::OpenContainer(): opening shape inside a shape.\n" );
 #endif
-        m_nShapeType = ESCHER_ShpInst_Nil;
+        //m_nShapeType = ESCHER_ShpInst_Nil;
         m_pShapeAttrList = m_pSerializer->createAttrList();
 
         if ( m_pShapeStyle->getLength() )
@@ -540,18 +544,33 @@ void VMLExport::Commit( EscherPropertyContainer& rProps, const Rectangle& rRect 
                     }
 
                     if ( rProps.GetOpt( ESCHER_Prop_fillColor, nValue ) )
+                    {
+                        m_nFillColor = nValue;
                         impl_AddColor( pAttrList, XML_color, nValue );
+                    }
+                    // add for fill transparency
+                    if (rProps.GetOpt( ESCHER_Prop_fillOpacity, nValue ))
+                    {
+                        OString sOpacity = OString::valueOf((sal_Int32)nValue) + "f";
+                        pAttrList->add( XML_opacity,  sOpacity.getStr());
+                    }
 
                     if ( rProps.GetOpt( ESCHER_Prop_fillBackColor, nValue ) )
                         impl_AddColor( pAttrList, XML_color2, nValue );
 
                     if ( rProps.GetOpt( ESCHER_Prop_fNoFillHitTest, nValue ) )
+                    {
+                        // if fill is none, ESCHER_Prop_fNoFillHitTest will be set as 0x100000
+                        if(0x100000 == nValue) m_bHasFill = false;
                         impl_AddBool( pAttrList, XML_detectmouseclick, nValue );
+                    }
 
                     m_pSerializer->singleElementNS( XML_v, XML_fill, XFastAttributeListRef( pAttrList ) );
                 }
                 bAlreadyWritten[ ESCHER_Prop_fillType ] = true;
                 bAlreadyWritten[ ESCHER_Prop_fillColor ] = true;
+                // If new prop is added in function, please set flag as below. Or repeat record will be written into xml file.
+                bAlreadyWritten[ ESCHER_Prop_fillOpacity ] = true;
                 bAlreadyWritten[ ESCHER_Prop_fillBackColor ] = true;
                 bAlreadyWritten[ ESCHER_Prop_fNoFillHitTest ] = true;
                 break;
@@ -567,32 +586,41 @@ void VMLExport::Commit( EscherPropertyContainer& rProps, const Rectangle& rRect 
             case ESCHER_Prop_lineEndArrowLength: // 469
             case ESCHER_Prop_lineJoinStyle: // 470
             case ESCHER_Prop_lineEndCapStyle: // 471
+            case ESCHER_Prop_fNoLineDrawDash: //511
                 {
                     sal_uInt32 nValue;
                     sax_fastparser::FastAttributeList *pAttrList = m_pSerializer->createAttrList();
 
                     if ( rProps.GetOpt( ESCHER_Prop_lineColor, nValue ) )
+                    {
+                        m_nLineColor = nValue;
                         impl_AddColor( pAttrList, XML_color, nValue );
+                    }
 
                     if ( rProps.GetOpt( ESCHER_Prop_lineWidth, nValue ) )
+                    {
+                        m_nLineWidth = nValue;
                         impl_AddInt( pAttrList, XML_weight, nValue );
+                    }
 
                     if ( rProps.GetOpt( ESCHER_Prop_lineDashing, nValue ) )
                     {
                         const char *pDashStyle = NULL;
+                        //(1)Modify lower to upper for the second word and after. Or import can not recognize it.
+                        //(2)Modify shortDot to "1 1". Or import can not recognize it.
                         switch ( nValue )
                         {
                             case ESCHER_LineSolid:             pDashStyle = "solid"; break;
                             case ESCHER_LineDashSys:           pDashStyle = "shortdash"; break;
                             case ESCHER_LineDotSys:            pDashStyle = "shortdot"; break;
-                            case ESCHER_LineDashDotSys:        pDashStyle = "shortdashdot"; break;
-                            case ESCHER_LineDashDotDotSys:     pDashStyle = "shortdashdotdot"; break;
+                            case ESCHER_LineDashDotSys:        pDashStyle = "shortDashDot"; break;
+                            case ESCHER_LineDashDotDotSys:     pDashStyle = "shortDashDotDot"; break;
                             case ESCHER_LineDotGEL:            pDashStyle = "dot"; break;
                             case ESCHER_LineDashGEL:           pDashStyle = "dash"; break;
-                            case ESCHER_LineLongDashGEL:       pDashStyle = "longdash"; break;
-                            case ESCHER_LineDashDotGEL:        pDashStyle = "dashdot"; break;
-                            case ESCHER_LineLongDashDotGEL:    pDashStyle = "longdashdot"; break;
-                            case ESCHER_LineLongDashDotDotGEL: pDashStyle = "longdashdotdot"; break;
+                            case ESCHER_LineLongDashGEL:       pDashStyle = "longDash"; break;
+                            case ESCHER_LineDashDotGEL:        pDashStyle = "dashDot"; break;
+                            case ESCHER_LineLongDashDotGEL:    pDashStyle = "longDashDot"; break;
+                            case ESCHER_LineLongDashDotDotGEL: pDashStyle = "longDashDotDot"; break;
                         }
                         if ( pDashStyle )
                             pAttrList->add( XML_dashstyle, pDashStyle );
@@ -642,6 +670,10 @@ void VMLExport::Commit( EscherPropertyContainer& rProps, const Rectangle& rRect 
                             pAttrList->add( XML_endcap, pEndCap );
                     }
 
+                    if ( rProps.GetOpt( ESCHER_Prop_fNoLineDrawDash, nValue ) )
+                        if(0x90000 == nValue)
+                            m_bHasLine = false;
+
                     m_pSerializer->singleElementNS( XML_v, XML_stroke, XFastAttributeListRef( pAttrList ) );
                 }
                 bAlreadyWritten[ ESCHER_Prop_lineColor ] = true;
@@ -655,6 +687,7 @@ void VMLExport::Commit( EscherPropertyContainer& rProps, const Rectangle& rRect 
                 bAlreadyWritten[ ESCHER_Prop_lineEndArrowLength ] = true;
                 bAlreadyWritten[ ESCHER_Prop_lineJoinStyle ] = true;
                 bAlreadyWritten[ ESCHER_Prop_lineEndCapStyle ] = true;
+                bAlreadyWritten[ ESCHER_Prop_fNoLineDrawDash ] = true;
                 break;
 
             case ESCHER_Prop_fHidden:
@@ -772,7 +805,6 @@ sal_Int32 VMLExport::StartShape()
     // some of the shapes have their own name ;-)
     sal_Int32 nShapeElement = -1;
     bool bReferToShapeType = false;
-/* clarence_guo temporarily comment for enable build
     switch ( m_nShapeType )
     {
         case ESCHER_ShpInst_NotPrimitive:   nShapeElement = XML_shape;     break;
@@ -808,20 +840,47 @@ sal_Int32 VMLExport::StartShape()
 
     // add style
     m_pShapeAttrList->add( XML_style, m_pShapeStyle->makeStringAndClear() );
+    
+    // For fill color of text box. This attr should be set first.
+    // It will associated with the attr "color2" which will set in commit function. The two are
+    // used to set the text box fill color.
+    if(!m_bHasFill)
+        m_pShapeAttrList->add( XML_filled, "f" );//If not fillcolor, set filled as false
+    //Even if no fill, a comment can have fill color
+    if(-1 != m_nFillColor)
+        impl_AddColor( m_pShapeAttrList, XML_fillcolor, m_nFillColor );
+    
+    if(!m_bHasLine)
+        m_pShapeAttrList->add( XML_stroked, "f" );
+    //Even if no line, a comment can have line color
+    if(-1 != m_nLineColor)
+        impl_AddColor( m_pShapeAttrList, XML_strokecolor, m_nLineColor );
+    if(-1 != m_nLineWidth)
+    {
+        //lijiany_ms_2007_comments here tranlate emu to pt. Or import cannot work for our export result.
+        //Actually import should do this according to stardard doc. We can just write the emu value to xml file.
+        double fLineWidth = (double)m_nLineWidth/12700;//from emu to pt
+        OString sLineWidth = OString::valueOf((double)fLineWidth) + "pt";//add unit
+        m_pShapeAttrList->add( XML_strokeweight, sLineWidth.getStr() );
+    }
 
     if ( nShapeElement >= 0 )
     {
         if ( bReferToShapeType )
         {
+            // modify "shapetype_" to "_x0000_t".
+            // In ECMA doc, latter prefix is used. Former prefix cannot be found. Now this functin only called by comments
             m_pShapeAttrList->add( XML_type, OStringBuffer( 20 )
-                    .append( "shapetype_" ).append( sal_Int32( m_nShapeType ) )
+                    .append( "#_x0000_t" ).append( sal_Int32( m_nShapeType ) )
                     .makeStringAndClear() );
         }
 
         // start of the shape
-        m_pSerializer->startElementNS( XML_v, nShapeElement, XFastAttributeListRef( m_pShapeAttrList ) );
+        // Modify this or will crash on exporting
+        // m_pSerializer->startElementNS( XML_v, nShapeElement, XFastAttributeListRef( m_pShapeAttrList ) );
+        m_pSerializer->startElementV( FSNS( XML_v, nShapeElement), m_pShapeAttrList );
     }
-*/
+
     return nShapeElement;
 }
 

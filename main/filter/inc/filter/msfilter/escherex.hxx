@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _SVX_ESCHEREX_HXX
 #define _SVX_ESCHEREX_HXX
 
@@ -1226,10 +1224,10 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
         void        CreateGradientProperties( const ::com::sun::star::awt::Gradient & rGradient );
 		void		CreateGradientProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & , sal_Bool bTransparentGradient = sal_False );
 		void		CreateLineProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge );
-		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge , sal_Bool bTransparentGradient = sal_False );
+		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge , sal_Bool bTransparentGradient = sal_False, sal_Bool bWrap = sal_True );
 		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge ,  const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape );
 		void		CreateTextProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_uInt32 nText,
-						const sal_Bool bIsCustomShape = sal_False, const sal_Bool bIsTextFrame = sal_True );
+						const sal_Bool bIsCustomShape = sal_False, const sal_Bool bIsTextFrame = sal_True, const sal_Bool bHaveWrapProp = sal_True );
 
 		sal_Bool	CreateConnectorProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape,
 												EscherSolverContainer& rSolver, ::com::sun::star::awt::Rectangle& rGeoRect,
@@ -1238,6 +1236,8 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 					// Because shadow properties depends to the line and fillstyle, the CreateShadowProperties method should be called at last.
 					// It activ only when at least a FillStyle or LineStyle is set.
 		sal_Bool	CreateShadowProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & );
+
+		void        CreateProtectionProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & );
 
 		sal_Int32	GetValueForEnhancedCustomShapeParameter( const ::com::sun::star::drawing::EnhancedCustomShapeParameter& rParameter, 
 							const std::vector< sal_Int32 >& rEquationOrder, sal_Bool bAdjustTrans = sal_False );

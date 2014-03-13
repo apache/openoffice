@@ -36,12 +36,19 @@ ENABLE_EXCEPTIONS=TRUE
 SLOFILES =	\
 		$(SLO)$/drawingml.obj \
 		$(SLO)$/shapes.obj \
-		$(SLO)$/vmlexport.obj 
-#		$(SLO)$/vmlexport-shape-types.obj
+		$(SLO)$/vmlexport.obj \
+		$(SLO)$/vmlexport-shape-types.obj
 
 # --- Targets -------------------------------------------------------
 
 .INCLUDE :  target.mk
 
+#$(MISC)$/vmlexport-shape-types.cxx : preset-definitions-to-shape-types.pl presetShapeDefinitions.xml presetTextWarpDefinitions.xml
+#	$(PERL) $< > $@.in_progress 2> $(MISC)$/vmlexport-shape-types.log && mv $@.in_progress $@
 $(MISC)$/vmlexport-shape-types.cxx : preset-definitions-to-shape-types.pl presetShapeDefinitions.xml presetTextWarpDefinitions.xml
-	$(PERL) $< > $@.in_progress 2> $(MISC)$/vmlexport-shape-types.log && mv $@.in_progress $@
+#    $(PERL) $< > $@.in_progress 2> $(MISC)$/vmlexport-shape-types.log && mv $@.in_progress $@
+# just remove the rederect for 2, there is a build break on Mac, not know the rootcause
+     $(PERL) $< > $@.in_progress && mv $@.in_progress $@
+
+$(SLO)$/vmlexport-shape-types.obj : $(MISC)$/vmlexport-shape-types.cxx
+

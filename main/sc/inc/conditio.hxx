@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_CONDITIO_HXX
 #define SC_CONDITIO_HXX
 
@@ -67,66 +65,66 @@ enum ScConditionValType
 };
 
 class SC_DLLPUBLIC ScConditionEntry
-{
-										// gespeicherte Daten:
-	ScConditionMode		eOp;
-	sal_uInt16				nOptions;
-	double				nVal1;			// eingegeben oder berechnet
-	double				nVal2;
-	String				aStrVal1;		// eingegeben oder berechnet
-	String				aStrVal2;
+{						
+    // gespeicherte Daten:
+    ScConditionMode     eOp;
+    sal_uInt16          nOptions;
+    double              nVal1;          // eingegeben oder berechnet
+    double              nVal2;
+    String              aStrVal1;       // eingegeben oder berechnet
+    String              aStrVal2;
     String              aStrNmsp1;      // namespace to be used on (re)compilation, e.g. in XML import
     String              aStrNmsp2;      // namespace to be used on (re)compilation, e.g. in XML import
     formula::FormulaGrammar::Grammar eTempGrammar1;  // grammar to be used on (re)compilation, e.g. in XML import
     formula::FormulaGrammar::Grammar eTempGrammar2;  // grammar to be used on (re)compilation, e.g. in XML import
-	sal_Bool				bIsStr1;		// um auch leere Strings zu erkennen
-	sal_Bool				bIsStr2;
-	ScTokenArray*		pFormula1;		// eingegebene Formel
-	ScTokenArray*		pFormula2;
+    sal_Bool            bIsStr1;        // um auch leere Strings zu erkennen
+    sal_Bool            bIsStr2;
+    ScTokenArray*       pFormula1;      // eingegebene Formel
+    ScTokenArray*       pFormula2;
     ScAddress           aSrcPos;        // source position for formulas
-                                        // temporary data:
+    // temporary data:
     String              aSrcString;     // formula source position as text during XML import
-	ScFormulaCell*		pFCell1;
-	ScFormulaCell*		pFCell2;
-	ScDocument*			pDoc;
-	sal_Bool				bRelRef1;
-	sal_Bool				bRelRef2;
-	sal_Bool				bFirstRun;
+    ScFormulaCell*      pFCell1;
+    ScFormulaCell*      pFCell2;
+    ScDocument*         pDoc;
+    sal_Bool            bRelRef1;
+    sal_Bool            bRelRef2;
+    sal_Bool            bFirstRun;
 
-	void	MakeCells( const ScAddress& rPos );
-	void	Compile( const String& rExpr1, const String& rExpr2,
-                        const String& rExprNmsp1, const String& rExprNmsp2,
-                        formula::FormulaGrammar::Grammar eGrammar1,
-                        formula::FormulaGrammar::Grammar eGrammar2,
-                        sal_Bool bTextToReal );
-	void	Interpret( const ScAddress& rPos );
+    void	MakeCells( const ScAddress& rPos );
+    void	Compile( const String& rExpr1, const String& rExpr2,
+                const String& rExprNmsp1, const String& rExprNmsp2,
+                formula::FormulaGrammar::Grammar eGrammar1,
+                formula::FormulaGrammar::Grammar eGrammar2,
+                sal_Bool bTextToReal );
+    void	Interpret( const ScAddress& rPos );
 
-	sal_Bool	IsValid( double nArg ) const;
-	sal_Bool	IsValidStr( const String& rArg ) const;
+    sal_Bool	IsValid( double nArg ) const;
+    sal_Bool	IsValidStr( const String& rArg ) const;
 
 public:
-			ScConditionEntry( ScConditionMode eOper,
-								const String& rExpr1, const String& rExpr2,
-								ScDocument* pDocument, const ScAddress& rPos,
-                                const String& rExprNmsp1, const String& rExprNmsp2,
-                                formula::FormulaGrammar::Grammar eGrammar1,
-                                formula::FormulaGrammar::Grammar eGrammar2 );
-			ScConditionEntry( ScConditionMode eOper,
-								const ScTokenArray* pArr1, const ScTokenArray* pArr2,
-								ScDocument* pDocument, const ScAddress& rPos );
-			ScConditionEntry( const ScConditionEntry& r );	// flache Kopie der Formeln
-			// echte Kopie der Formeln (fuer Ref-Undo):
-			ScConditionEntry( ScDocument* pDocument, const ScConditionEntry& r );
-	virtual ~ScConditionEntry();
+    ScConditionEntry( ScConditionMode eOper,
+        const String& rExpr1, const String& rExpr2,
+        ScDocument* pDocument, const ScAddress& rPos,
+        const String& rExprNmsp1, const String& rExprNmsp2,
+        formula::FormulaGrammar::Grammar eGrammar1,
+        formula::FormulaGrammar::Grammar eGrammar2 );
+    ScConditionEntry( ScConditionMode eOper,
+        const ScTokenArray* pArr1, const ScTokenArray* pArr2,
+        ScDocument* pDocument, const ScAddress& rPos );
+    ScConditionEntry( const ScConditionEntry& r );	// flache Kopie der Formeln
+    // echte Kopie der Formeln (fuer Ref-Undo):
+    ScConditionEntry( ScDocument* pDocument, const ScConditionEntry& r );
+    virtual ~ScConditionEntry();
 
-	int				operator== ( const ScConditionEntry& r ) const;
+    int				operator== ( const ScConditionEntry& r ) const;
 
-	sal_Bool			IsCellValid( ScBaseCell* pCell, const ScAddress& rPos ) const;
+    sal_Bool        IsCellValid( ScBaseCell* pCell, const ScAddress& rPos ) const;
 
-	ScConditionMode	GetOperation() const		{ return eOp; }
-	sal_Bool			IsIgnoreBlank() const		{ return ( nOptions & SC_COND_NOBLANKS ) == 0; }
-	void			SetIgnoreBlank(sal_Bool bSet);
-	ScAddress		GetSrcPos() const			{ return aSrcPos; }
+    ScConditionMode GetOperation() const		{ return eOp; }
+    sal_Bool        IsIgnoreBlank() const		{ return ( nOptions & SC_COND_NOBLANKS ) == 0; }
+    void            SetIgnoreBlank(sal_Bool bSet);
+    ScAddress       GetSrcPos() const			{ return aSrcPos; }
 
     ScAddress       GetValidSrcPos() const;     // adjusted to allow textual representation of expressions
 
@@ -135,24 +133,31 @@ public:
     void            SetFormula1( const ScTokenArray& rArray );
     void            SetFormula2( const ScTokenArray& rArray );
 
-	String			GetExpression( const ScAddress& rCursor, sal_uInt16 nPos, sal_uLong nNumFmt = 0,
-									const formula::FormulaGrammar::Grammar eGrammar = formula::FormulaGrammar::GRAM_DEFAULT ) const;
+    String          GetExpression( const ScAddress& rCursor, sal_uInt16 nPos, sal_uLong nNumFmt = 0,
+                        const formula::FormulaGrammar::Grammar eGrammar = formula::FormulaGrammar::GRAM_DEFAULT ) const;
 
-	ScTokenArray*	CreateTokenArry( sal_uInt16 nPos ) const;
+    ScTokenArray*	CreateTokenArry( sal_uInt16 nPos ) const;
 
-	void			CompileAll();
-	void			CompileXML();
-	void			UpdateReference( UpdateRefMode eUpdateRefMode,
-								const ScRange& rRange, SCsCOL nDx, SCsROW nDy, SCsTAB nDz );
-	void			UpdateMoveTab( SCTAB nOldPos, SCTAB nNewPos );
+    void			CompileAll();
+    void			CompileXML();
+    void			UpdateReference( UpdateRefMode eUpdateRefMode,
+                        const ScRange& rRange, SCsCOL nDx, SCsROW nDy, SCsTAB nDz );
+    void			UpdateMoveTab( SCTAB nOldPos, SCTAB nNewPos );
 
-	void			SourceChanged( const ScAddress& rChanged );
+    void			SourceChanged( const ScAddress& rChanged );
 
     bool            MarkUsedExternalReferences() const;
 
+    const String    GetStrVal1() const { return aStrVal1; }
+    const String    GetStrVal2() const { return aStrVal2; }
+    const double    GetDoubleVal1() const { return nVal1; }
+    const double    GetDoubleVal2() const { return nVal2; }
+    const bool      GetBoolIsStr1() const { return bIsStr1; }
+    const bool      GetBoolIsStr2() const { return bIsStr2; }
+
 protected:
-	virtual void	DataChanged( const ScRange* pModified ) const;
-	ScDocument*		GetDocument() const		{ return pDoc; }
+    virtual void	DataChanged( const ScRange* pModified ) const;
+    ScDocument*		GetDocument() const	{ return pDoc; }
 };
 
 //

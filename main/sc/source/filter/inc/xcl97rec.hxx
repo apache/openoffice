@@ -19,14 +19,13 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_XCL97REC_HXX
 #define SC_XCL97REC_HXX
 
 #include "excrecds.hxx"
 #include "xcl97esc.hxx"
 #include "xlstyle.hxx"
+#include <svx/svdocapt.hxx>
 
 // ============================================================================
 
@@ -59,7 +58,8 @@ private:
     XclEscherEx&        mrEscherEx;
     XclExpMsoDrawing*   pMsodrawingPerSheet;
     XclExpMsoDrawing*   pSolverContainer;
-	static int          mnDrawingMLCount, mnVmlCount;
+	static sal_uInt32   mnDrawingMLCount;
+    static sal_uInt32   mnVmlCount;
 	SCTAB               mnScTab;
 };
 
@@ -138,10 +138,16 @@ public:
 
 class XclObjComment : public XclObj
 {
+    ScAddress                   maAnchorCell;
+    std::auto_ptr< SdrCaptionObj >	mpCaption;
+    bool                        mbVisible;
+    Rectangle                   maStart;
+    Rectangle                   maEnd;
 public:
                                 XclObjComment( XclExpObjectManager& rObjMgr,
-                                    const Rectangle& rRect, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible );
-	virtual						~XclObjComment();
+                                    const Rectangle& rRect, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible, 
+                                    const ScAddress& rAddress, Rectangle &rStart, Rectangle &rEnd );
+    virtual                     ~XclObjComment();
 
     /** c'tor process for formatted text objects above .
        @descr used to construct the MSODRAWING Escher object properties. */
@@ -149,25 +155,24 @@ public:
                                     const Rectangle& rRect, SdrObject* pCaption, bool bVisible );
 
 
-	virtual	void				Save( XclExpStream& rStrm );
+    virtual void                Save( XclExpStream& rStrm );
+    virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
-
 
 // --- class XclObjDropDown ------------------------------------------
 
 class XclObjDropDown : public XclObj
 {
 private:
-	sal_Bool						bIsFiltered;
+    sal_Bool                    bIsFiltered;
 
     virtual void                WriteSubRecs( XclExpStream& rStrm );
 
 protected:
 public:
                                 XclObjDropDown( XclExpObjectManager& rObjMgr, const ScAddress& rPos, sal_Bool bFilt );
-	virtual						~XclObjDropDown();
+    virtual                     ~XclObjDropDown();
 };
-
 
 // --- class XclTxo --------------------------------------------------
 
@@ -182,10 +187,12 @@ public:
 
     inline void                 SetHorAlign( sal_uInt8 nHorAlign ) { mnHorAlign = nHorAlign; }
     inline void                 SetVerAlign( sal_uInt8 nVerAlign ) { mnVerAlign = nVerAlign; }
+    inline sal_uInt8            GetHorAlign() const { return mnHorAlign; }
+    inline sal_uInt8            GetVerAlign() const { return mnVerAlign; }
 
-	virtual	void				Save( XclExpStream& rStrm );
+    virtual void                Save( XclExpStream& rStrm );
 
-	virtual	sal_uInt16				GetNum() const;
+    virtual sal_uInt16          GetNum() const;
     virtual sal_Size            GetLen() const;
 
 private:
@@ -197,7 +204,6 @@ private:
     sal_uInt8                   mnHorAlign;     /// Horizontal alignment.
     sal_uInt8                   mnVerAlign;     /// Vertical alignment.
 };
-
 
 // --- class XclObjOle -----------------------------------------------
 
@@ -216,7 +222,6 @@ public:
 
 	virtual	void				Save( XclExpStream& rStrm );
 };
-
 
 // --- class XclObjAny -----------------------------------------------
 
@@ -258,7 +263,6 @@ public:
     virtual sal_Size            GetLen() const;
 };
 
-
 // --- class ExcBofW8 ------------------------------------------------
 // Header Record fuer WORKBOOKS
 
@@ -268,7 +272,6 @@ public:
 								ExcBofW8();
 };
 
-
 // --- class ExcBof8 -------------------------------------------------
 // Header Record fuer WORKSHEETS
 
@@ -277,7 +280,6 @@ class ExcBof8 : public ExcBof8_Base
 public:
 								ExcBof8();
 };
-
 
 // --- class ExcBundlesheet8 -----------------------------------------
 
@@ -298,7 +300,6 @@ public:
     virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
 
-
 // --- class XclObproj -----------------------------------------------
 
 class XclObproj : public ExcRecord
@@ -307,7 +308,6 @@ public:
 	virtual	sal_uInt16				GetNum() const;
     virtual sal_Size            GetLen() const;
 };
-
 
 // ---- class XclCodename --------------------------------------------
 
@@ -322,7 +322,6 @@ public:
 	virtual	sal_uInt16				GetNum() const;
     virtual sal_Size            GetLen() const;
 };
-
 
 // ---- Scenarios ----------------------------------------------------
 // - ExcEScenarioCell			a cell of a scenario range
@@ -348,8 +347,6 @@ public:
 
     void                        SaveXml( XclExpXmlStream& rStrm );
 };
-
-
 
 class ExcEScenario : public ExcRecord, private List
 {
@@ -377,8 +374,6 @@ public:
 
     virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
-
-
 
 class ExcEScenarioManager : public ExcRecord, private List
 {
@@ -439,9 +434,6 @@ public:
     virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
 
-
-
-
 class XclIteration : public ExcRecord
 {
 private:
@@ -457,9 +449,6 @@ public:
     virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
 
-
-
-
 class XclDelta : public ExcRecord
 {
 private:
@@ -474,9 +463,6 @@ public:
 
     virtual void                SaveXml( XclExpXmlStream& rStrm );
 };
-
-
-
 
 class XclRefmode : public XclExpBoolRecord
 {

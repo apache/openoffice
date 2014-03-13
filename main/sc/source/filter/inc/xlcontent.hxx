@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_XLCONTENT_HXX
 #define SC_XLCONTENT_HXX
 
@@ -73,6 +71,32 @@ const sal_uInt8 EXC_CF_CMP_GREATER          = 0x05;
 const sal_uInt8 EXC_CF_CMP_LESS             = 0x06;
 const sal_uInt8 EXC_CF_CMP_GREATER_EQUAL    = 0x07;
 const sal_uInt8 EXC_CF_CMP_LESS_EQUAL       = 0x08;
+
+struct XlsExpCondfmtMap
+{
+    char *value;
+    sal_uInt8  key;
+};
+
+const  XlsExpCondfmtMap cf_typelist[]=
+{
+    {"no",EXC_CF_TYPE_NONE},
+    {"cellIs",EXC_CF_TYPE_CELL},
+    {"formula",EXC_CF_TYPE_FMLA}
+};
+
+const XlsExpCondfmtMap cf_cmplist[]=
+{
+    {"no", EXC_CF_CMP_NONE},
+    {"between", EXC_CF_CMP_BETWEEN},
+    {"notBetween", EXC_CF_CMP_NOT_BETWEEN},
+    {"equal", EXC_CF_CMP_EQUAL},
+    {"notEqual", EXC_CF_CMP_NOT_EQUAL},
+    {"greaterThan", EXC_CF_CMP_GREATER},
+    {"lessThan", EXC_CF_CMP_LESS},
+    {"greaterThanOrEqual", EXC_CF_CMP_GREATER_EQUAL},
+    {"lessThanOrEqual", EXC_CF_CMP_LESS_EQUAL}
+};
 
 const sal_uInt32 EXC_CF_BORDER_LEFT         = 0x00000400;   /// Left border line modified?
 const sal_uInt32 EXC_CF_BORDER_RIGHT        = 0x00000800;   /// Right border line modified?

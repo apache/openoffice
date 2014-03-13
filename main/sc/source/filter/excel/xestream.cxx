@@ -783,7 +783,7 @@ static ScRange lcl_ToRange( const XclRange& rRange )
 OString XclXmlUtils::ToOString( const XclRangeList& rRanges )
 {
     ScRangeList aRanges;
-    for( XclRangeList::const_iterator i = rRanges.begin(), end = rRanges.end();
+    for ( XclRangeList::const_iterator i = rRanges.begin(), end = rRanges.end();
             i != end; ++i )
     {
         aRanges.Append( lcl_ToRange( *i ) );
@@ -803,10 +803,10 @@ OUString XclXmlUtils::ToOUString( const char* s )
 
 OUString XclXmlUtils::ToOUString( const ScfUInt16Vec& rBuf, sal_Int32 nStart, sal_Int32 nLength )
 {
-    if( nLength == -1 )
+    if ( nLength == -1 )
         nLength = rBuf.size();
 
-    return OUString( &rBuf[nStart], nLength );
+    return nLength > 0 ? OUString( &rBuf[nStart], nLength ) : OUString();
 }
 
 OUString XclXmlUtils::ToOUString( const String& s )
@@ -1093,7 +1093,7 @@ bool XclExpXmlStream::exportDocument() throw()
     // SfxMedium::GetOutStream() anywhere in the xlsx export filter code!
     // Instead, write via XOutputStream instance.
     SotStorageRef rStorage = static_cast<SotStorage*>(NULL);
-    //XclObjList::ResetCounters();
+    XclExpObjList::ResetCounters();
 
     XclExpRootData aData( EXC_BIFF8, *pShell->GetMedium (), rStorage, *pDoc, RTL_TEXTENCODING_DONTKNOW );
     aData.meOutput = EXC_OUTPUT_XML_2007;

@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -86,17 +84,17 @@ using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::UNO_QUERY;
 using ::com::sun::star::beans::XPropertySet;
 using ::com::sun::star::drawing::XShape;
-
+using oox::vml::VMLExport;
 using ::oox::drawingml::ShapeExport;
 using ::oox::drawingml::DrawingML;
 
-int XclExpObjList::mnDrawingMLCount=0;
-int XclExpObjList::mnVmlCount=0;
+sal_uInt32 XclExpObjList::mnDrawingMLCount = 0;
+sal_uInt32 XclExpObjList::mnVmlCount = 0;
 
 void XclExpObjList::ResetCounters()
 {
-    mnDrawingMLCount    = 0;
-    mnVmlCount          = 0;
+    mnDrawingMLCount = 0;
+    mnVmlCount = 0;
 }
 
 // ============================================================================
@@ -175,11 +173,24 @@ static bool IsVmlObject( const XclObj& rObj )
     }
 }
 
-static void SaveDrawingMLObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, int& nDrawingMLCount )
+static sal_Int32 GetVmlObjectCount( XclExpObjList& rList )
 {
-  
+    sal_Int32 nNumVml = 0;
 
-    sal_Int32 nDrawing = ++nDrawingMLCount;
+    for ( XclObj* p = rList.First(); p; p = rList.Next() )
+        if( IsVmlObject( *p ) )
+            ++nNumVml;
+
+    return nNumVml;
+}
+
+static void SaveDrawingMLObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, sal_uInt32& nDrawingMLCount )
+{
+    sal_uInt32 nVmlObjects = GetVmlObjectCount( rList );
+    if ( (rList.Count() - nVmlObjects) == 0 )
+        return;
+
+    sal_uInt32 nDrawing = ++nDrawingMLCount;
     OUString sId;
     sax_fastparser::FSHelperPtr pDrawing = rStrm.CreateOutputStream(
             XclXmlUtils::GetStreamName( "xl/", "drawings/drawing", nDrawing ),
@@ -202,8 +213,7 @@ static void SaveDrawingMLObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, 
 
     for ( XclObj* p = rList.First(); p; p = rList.Next() )
     {
-      	// if( p->GetObjType() != 0 ) //zhaosz_xml, obj is a group
-        if( IsVmlObject( *p ) || p->GetObjType()==0)
+      	if( p->GetObjType() != 0 )
             continue;
 		p->SaveXml( rStrm );
     }
@@ -213,9 +223,46 @@ static void SaveDrawingMLObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, 
     rStrm.PopStream();
 }
 
+static void SaveVmlObjects( XclExpObjList& rList, XclExpXmlStream& rStrm, sal_uInt32& nVmlCount )
+{
+    if( GetVmlObjectCount( rList ) == 0 )
+        return;
+
+    sal_uInt32 nDrawing = ++nVmlCount;
+    OUString sId;
+    sax_fastparser::FSHelperPtr pVmlDrawing = rStrm.CreateOutputStream(
+            XclXmlUtils::GetStreamName( "xl/", "drawings/vmlDrawing", nDrawing ),
+            XclXmlUtils::GetStreamName( "../", "drawings/vmlDrawing", nDrawing ),
+            rStrm.GetCurrentStream()->getOutputStream(),
+            "application/vnd.openxmlformats-officedocument.vmlDrawing",
+            "http://schemas.openxmlformats.org/officeDocument/2006/relationships/vmlDrawing",
+            &sId );
+
+    rStrm.GetCurrentStream()->singleElement( XML_legacyDrawing,
+            FSNS( XML_r, XML_id ),  XclXmlUtils::ToOString( sId ).getStr(),
+            FSEND );
+
+    rStrm.PushStream( pVmlDrawing );
+    pVmlDrawing->startElement( XML_xml,
+            FSNS( XML_xmlns, XML_v ),   "urn:schemas-microsoft-com:vml",
+            FSNS( XML_xmlns, XML_o ),   "urn:schemas-microsoft-com:office:office",
+            FSNS( XML_xmlns, XML_x ),   "urn:schemas-microsoft-com:office:excel",
+            FSEND );
+
+    for ( XclObj* p = rList.First(); p; p = rList.Next() )
+    {
+        if( !IsVmlObject( *p ) )
+            continue;
+        p->SaveXml( rStrm );
+    }
+
+    pVmlDrawing->endElement( XML_xml );
+
+    rStrm.PopStream();
+}
+
 void XclExpObjList::SaveXml( XclExpXmlStream& rStrm )
 {
-    
     if( pSolverContainer )
          pSolverContainer->SaveXml( rStrm );
 
@@ -223,8 +270,7 @@ void XclExpObjList::SaveXml( XclExpXmlStream& rStrm )
         return;
 
     SaveDrawingMLObjects( *this, rStrm, mnDrawingMLCount );
-    //SaveVmlObjects( *this, rStrm, mnVmlCount );
-    
+    SaveVmlObjects( *this, rStrm, mnVmlCount );
 }
 
 // --- class XclObj --------------------------------------------------
@@ -366,11 +412,16 @@ void XclObj::SaveTextRecs( XclExpStream& rStrm )
 
 // --- class XclObjComment -------------------------------------------
 
-XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const Rectangle& rRect, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
-    XclObj( rObjMgr, EXC_OBJTYPE_NOTE, true )
+XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const Rectangle& rRect, const EditTextObject& rEditObj, 
+                             SdrObject* pCaption, bool bVisible, const ScAddress& rAddress, Rectangle &rStart, Rectangle &rEnd )
+                             : XclObj( rObjMgr, EXC_OBJTYPE_NOTE, true )
+                             , maAnchorCell( rAddress )
+                             , mpCaption( static_cast<SdrCaptionObj*>(pCaption->Clone()) )
+                             , mbVisible( bVisible )
+                             , maStart( rStart )
+                             , maEnd( rEnd )
 {
-    ProcessEscherObj( rObjMgr.GetRoot(), rRect, pCaption, bVisible);
-	// TXO
+    // TXO
     pTxo = new XclTxo( rObjMgr.GetRoot(), rEditObj, pCaption );
 }
 
@@ -379,7 +430,7 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const Rectangle& 
     Reference<XShape> aXShape;
     EscherPropertyContainer aPropOpt;
 
-    if(pCaption)
+    if ( pCaption )
     {
         aXShape = GetXShapeForSdrObject(pCaption);
         Reference< XPropertySet > aXPropSet( aXShape, UNO_QUERY );
@@ -388,20 +439,20 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const Rectangle& 
             aPropOpt.CreateFillProperties( aXPropSet,  sal_True);
 
             aPropOpt.AddOpt( ESCHER_Prop_lTxid, 0 );						// undocumented
-	    aPropOpt.AddOpt( 0x0158, 0x00000000 );							// undocumented
+            aPropOpt.AddOpt( 0x0158, 0x00000000 );							// undocumented
 
             sal_uInt32 nValue = 0;
-            if(!aPropOpt.GetOpt( ESCHER_Prop_FitTextToShape, nValue ))
-                aPropOpt.AddOpt( ESCHER_Prop_FitTextToShape, 0x00080008 );		// bool field
+            if( !aPropOpt.GetOpt( ESCHER_Prop_FitTextToShape, nValue ) )
+                aPropOpt.AddOpt( ESCHER_Prop_FitTextToShape, 0x00080008 );	// bool field
 
-            if(aPropOpt.GetOpt( ESCHER_Prop_fillColor, nValue ))
+            if( aPropOpt.GetOpt( ESCHER_Prop_fillColor, nValue ) )
             {
                 // If the Colour is the same as the 'ToolTip' System colour then
                 // use the default rather than the explicit colour value. This will
                 // be incorrect where user has chosen to use this colour explicity.
                 Color aColor = Color( (sal_uInt8)nValue, (sal_uInt8)( nValue >> 8 ), (sal_uInt8)( nValue >> 16 ) );
                 const StyleSettings& rSett = Application::GetSettings().GetStyleSettings();
-                if(aColor == rSett.GetHelpColor().GetColor())
+                if( aColor == rSett.GetHelpColor().GetColor() )
                 {
                     aPropOpt.AddOpt( ESCHER_Prop_fillColor, 0x08000050 );
                     aPropOpt.AddOpt( ESCHER_Prop_fillBackColor, 0x08000050 );
@@ -412,11 +463,11 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const Rectangle& 
 
             if(!aPropOpt.GetOpt( ESCHER_Prop_fillBackColor, nValue ))
                 aPropOpt.AddOpt( ESCHER_Prop_fillBackColor, 0x08000050 );
-	    if(!aPropOpt.GetOpt( ESCHER_Prop_fNoFillHitTest, nValue ))
+            if(!aPropOpt.GetOpt( ESCHER_Prop_fNoFillHitTest, nValue ) )
                 aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x00110010 );		// bool field
-	    if(!aPropOpt.GetOpt( ESCHER_Prop_shadowColor, nValue ))
+            if(!aPropOpt.GetOpt( ESCHER_Prop_shadowColor, nValue ) )
                 aPropOpt.AddOpt( ESCHER_Prop_shadowColor, 0x00000000 );
-	    if(!aPropOpt.GetOpt( ESCHER_Prop_fshadowObscured, nValue ))		// bool field
+            if(!aPropOpt.GetOpt( ESCHER_Prop_fshadowObscured, nValue ) )		// bool field
                 aPropOpt.AddOpt( ESCHER_Prop_fshadowObscured, 0x00030003 );		// bool field
         }
     }
@@ -448,8 +499,168 @@ XclObjComment::~XclObjComment()
 
 void XclObjComment::Save( XclExpStream& rStrm )
 {
-	// content of this record
-	XclObj::Save( rStrm );
+    // content of this record
+    XclObj::Save( rStrm );
+}
+
+class OoxmlCommentExporter : public VMLExport
+{
+    ScAddress           maCellAddr;
+    SdrCaptionObj*      mpCapObj;
+    sal_Bool            mbVisible;
+    Rectangle           maStart;
+    Rectangle           maEnd;
+    sal_uInt8           mnTHA;          /// text horizontal adjust
+    sal_uInt8           mnTVA;          /// text vertical adjust
+    sal_Bool            mbLocked;       /// Text box locked or not. Not for text
+
+public:
+                        OoxmlCommentExporter ( sax_fastparser::FSHelperPtr p, ScAddress aScPos, SdrCaptionObj* pCaption, 
+                            const XclTxo* pTxo, sal_Bool bVisible, Rectangle &aStart, Rectangle &aEnd );
+protected:
+    virtual void        Commit( EscherPropertyContainer& rPropOpt, const Rectangle& rRect );
+using VMLExport::StartShape;
+    virtual sal_Int32   StartShape();
+using VMLExport::EndShape;
+    virtual void        EndShape( sal_Int32 nShapeElement );
+};
+
+OoxmlCommentExporter::OoxmlCommentExporter( sax_fastparser::FSHelperPtr p, ScAddress aCellAddr, 
+                                           SdrCaptionObj* pCaption, const XclTxo* pTxo, sal_Bool bVisible, 
+                                           Rectangle &aStart, Rectangle &aEnd )
+    // Pass the shape type and flay to VMLExport. Will be used on exporting(VMLExport::StartShape)
+    : VMLExport( p, ESCHER_ShpInst_TextBox, SHAPEFLAG_HAVEANCHOR | SHAPEFLAG_HAVESPT ),
+    maCellAddr( aCellAddr ),
+    mpCapObj( pCaption ),
+    mbVisible( bVisible ),
+    maStart( aStart ),
+    maEnd( aEnd ),
+    mnTHA( pTxo ? pTxo->GetHorAlign() : 0 ),
+    mnTVA( pTxo ? pTxo->GetVerAlign() : 0 ),
+    mbLocked(sal_False)
+{
+}
+
+void OoxmlCommentExporter::Commit( EscherPropertyContainer& rPropOpt, const Rectangle& rRect )
+{
+    if ( mpCapObj )
+    {
+        Reference< XShape > aXShape = GetXShapeForSdrObject( mpCapObj );
+        Reference< XPropertySet > aXPropSet( aXShape, UNO_QUERY );
+        if ( aXPropSet.is() )
+        {
+            rPropOpt.CreateFillProperties( aXPropSet, sal_True, sal_False, sal_False );
+            rPropOpt.CreateProtectionProperties( aXPropSet );
+            rPropOpt.CreateTextProperties( aXPropSet, 0, sal_False, sal_False, sal_False );
+            // If not visible, add hidden property below. If not added, default is visible.
+            if ( !mbVisible )
+                rPropOpt.AddOpt( ESCHER_Prop_fHidden, 1 );            
+
+            rPropOpt.AddOpt( ESCHER_Prop_lTxid, 0 );
+            rPropOpt.AddOpt( 0x0158, 0x00000000 );
+
+            sal_uInt32 nValue = 0;
+            if( !rPropOpt.GetOpt( ESCHER_Prop_FitTextToShape, nValue ) )
+                rPropOpt.AddOpt( ESCHER_Prop_FitTextToShape, 0x00080008 );
+            if( !rPropOpt.GetOpt( ESCHER_Prop_fillBackColor, nValue ) )
+                rPropOpt.AddOpt( ESCHER_Prop_fillBackColor, 0x08000050 );
+            if( !rPropOpt.GetOpt( ESCHER_Prop_fNoFillHitTest, nValue ) )
+                rPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x00110010 );
+            if( !rPropOpt.GetOpt( ESCHER_Prop_shadowColor, nValue ) )
+                rPropOpt.AddOpt( ESCHER_Prop_shadowColor, 0x00000000 );
+            if( !rPropOpt.GetOpt( ESCHER_Prop_fshadowObscured, nValue ) )
+                rPropOpt.AddOpt( ESCHER_Prop_fshadowObscured, 0x00030003 );
+        }
+    }
+
+    sal_uInt32 nFlags = 0x000A0000;
+    ::set_flag( nFlags, sal_uInt32(2), !mbVisible );
+    rPropOpt.AddOpt( ESCHER_Prop_fPrint, nFlags ); 
+
+    // aoo size lock + pos lock = Excel Lock
+    // Hesitate to add "mbLocked" to VmlExporter or not. Seems all client(EndShape) info will be kept by self.
+    sal_uInt32 nPosLock = 0, nSizeLock = 0;
+    rPropOpt.GetOpt( ESCHER_Prop_LockAdjustHandles, nSizeLock );
+    rPropOpt.GetOpt( ESCHER_Prop_LockPosition, nPosLock );
+    mbLocked = nPosLock && nSizeLock;
+
+    VMLExport::Commit( rPropOpt, rRect );
+}
+
+sal_Int32 OoxmlCommentExporter::StartShape()
+{
+    sal_Int32 nId = VMLExport::StartShape();
+    return nId;
+}
+
+void OoxmlCommentExporter::EndShape( sal_Int32 nShapeElement )
+{
+    char pAnchorPos[128];
+    sax_fastparser::FSHelperPtr pVmlDrawing = GetFS();
+    // add a fixed shadow for Excel comments
+    pVmlDrawing->singleElement( FSNS( XML_v, XML_shadow ),
+        XML_on, "t", XML_color, "black", XML_obscured, "t", FSEND );
+
+    snprintf( pAnchorPos, 128, "%ld, %ld, %ld, %ld, %ld, %ld, %ld, %ld",
+        maStart.Left(), maStart.Top(), maStart.Right(), maStart.Bottom(),
+        maEnd.Left(), maEnd.Top(), maEnd.Right(), maEnd.Bottom() );
+
+    pVmlDrawing->startElement( FSNS( XML_x, XML_ClientData ), XML_ObjectType, "Note", FSEND );
+    pVmlDrawing->singleElement( FSNS( XML_x, XML_MoveWithCells ), FSEND );
+    pVmlDrawing->singleElement( FSNS( XML_x, XML_SizeWithCells ), FSEND );
+    XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_Anchor ), pAnchorPos );
+    XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_AutoFill ), "False" );
+    XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_Row ), maCellAddr.Row() );
+    XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_Column ), sal_Int32( maCellAddr.Col() ) );
+    // Text cannot be locked. If omitting this prop, text will be locked defaultly.
+    XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_LockText ), "False" );
+    // for this text box lock. Default is true
+    if( !mbLocked )   //Only if position and size lock both be set, it will be true.
+        XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_Locked ), "False" );
+    switch(mnTHA)
+    {
+		case EXC_OBJ_HOR_CENTER:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextHAlign), "Center" );
+            break;
+		case EXC_OBJ_HOR_RIGHT:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextHAlign), "Right" );
+            break;
+        case EXC_OBJ_HOR_JUSTIFY:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextHAlign), "Justify" );
+            break;
+		case EXC_OBJ_HOR_LEFT://default is break
+        default:
+            break;
+    }
+    switch( mnTVA )
+    {
+		case EXC_OBJ_VER_CENTER:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextVAlign), "Center" );
+            break;
+		case EXC_OBJ_VER_BOTTOM:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextVAlign), "Bottom" );
+            break;
+        case EXC_OBJ_VER_JUSTIFY:
+            XclXmlUtils::WriteElement( pVmlDrawing, FSNS( XML_x, XML_TextVAlign), "Justify" );
+            break;
+		case EXC_OBJ_VER_TOP://default is break
+        default:
+            break;
+    }
+    // If omitted, the comment is assumed to be invisible. If this
+    // element is specified without a value, it is assumed to be true. cannot write true for this element.
+    // Or 2007 will hide it on right-clicking the cell
+    if( mbVisible )
+        pVmlDrawing->singleElement( FSNS( XML_x, XML_Visible ), FSEND );
+    pVmlDrawing->endElement( FSNS( XML_x, XML_ClientData ) );
+
+    VMLExport::EndShape( nShapeElement );
+}
+
+void XclObjComment::SaveXml( XclExpXmlStream& rStrm )
+{
+    OoxmlCommentExporter aCommentExporter( rStrm.GetCurrentStream(), maAnchorCell, mpCaption.get(), pTxo, mbVisible, maStart, maEnd );
+    aCommentExporter.AddSdrObject( *mpCaption );
 }
 
 // --- class XclObjDropDown ------------------------------------------

@@ -19,11 +19,9 @@
  * 
  *************************************************************/
 
-
-
 #include <oox/dllapi.h>
 #include <sax/fshelper.hxx>
-#include <filter/msfilter/escherex.hxx> //zhaosz_xml
+#include <filter/msfilter/escherex.hxx>
 
 namespace rtl {
     class OString;
@@ -44,6 +42,11 @@ class OOX_DLLPUBLIC VMLExport : public EscherEx
 
     /// Remember the shape type.
     sal_uInt32 m_nShapeType;
+    bool m_bHasFill;
+    bool m_bHasLine;
+    sal_uInt32 m_nFillColor;
+    sal_uInt32 m_nLineWidth;
+    sal_uInt32 m_nLineColor;
     
     /// Remember the shape flags.
     sal_uInt32 m_nShapeFlags;
@@ -55,7 +58,7 @@ class OOX_DLLPUBLIC VMLExport : public EscherEx
     bool *m_pShapeTypeWritten;
 
 public:
-                        VMLExport( ::sax_fastparser::FSHelperPtr pSerializer );
+    VMLExport( ::sax_fastparser::FSHelperPtr pSerializer, sal_uInt32 nShapeType = ESCHER_ShpInst_Nil, sal_uInt32 nShapeFlags = 0);
     virtual             ~VMLExport();
 
     ::sax_fastparser::FSHelperPtr
@@ -87,7 +90,7 @@ protected:
 
 private:
 
-    virtual void OpenContainer( sal_Int16 nEscherContainer, int nRecInstance = 0 );
+    virtual void OpenContainer( sal_uInt16 nEscherContainer, int nRecInstance = 0 );
     virtual void CloseContainer();
 
     virtual sal_uInt32 EnterGroup( const String& rShapeName, const Rectangle* pBoundRect = 0 );

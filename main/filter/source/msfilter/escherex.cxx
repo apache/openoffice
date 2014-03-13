@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 #include "eschesdo.hxx"
@@ -587,11 +585,14 @@ void	EscherPropertyContainer::CreateFillProperties(
 
 void EscherPropertyContainer::CreateFillProperties(
 	const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
-	sal_Bool bEdge , sal_Bool bTransparentGradient)
+	sal_Bool bEdge , sal_Bool bTransparentGradient, sal_Bool bWrap )
 
 {
-	::com::sun::star::uno::Any aAny;
-    AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapNone );
+    ::com::sun::star::uno::Any aAny;
+    // add parameter "bWrap". For comments, wrap text prop should not
+    // be set. Or transparency can not work.
+    if(bWrap)
+        AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapNone );
     AddOpt( ESCHER_Prop_AnchorText, ESCHER_AnchorMiddle );
 
     sal_uInt32 nFillBackColor = 0;
@@ -667,7 +668,7 @@ void EscherPropertyContainer::CreateFillProperties(
 
 void EscherPropertyContainer::CreateTextProperties(
 	const uno::Reference< beans::XPropertySet > & rXPropSet, sal_uInt32 nTextId,
-		const sal_Bool bIsCustomShape, const sal_Bool bIsTextFrame )
+		const sal_Bool bIsCustomShape, const sal_Bool bIsTextFrame, const sal_Bool bHaveWrapProp )
 {
     uno::Any aAny;
 	text::WritingMode				eWM( text::WritingMode_LR_TB );
@@ -852,12 +853,14 @@ void EscherPropertyContainer::CreateTextProperties(
     AddOpt( ESCHER_Prop_dyTextTop, nTop * 360 );
     AddOpt( ESCHER_Prop_dyTextBottom, nBottom * 360 );
 
-	AddOpt( ESCHER_Prop_WrapText, eWrapMode );
-	AddOpt( ESCHER_Prop_AnchorText, eAnchor );
+    // there is no wrap prop for comment text box
+    if( bHaveWrapProp )
+        AddOpt( ESCHER_Prop_WrapText, eWrapMode );
+    AddOpt( ESCHER_Prop_AnchorText, eAnchor );
     AddOpt( ESCHER_Prop_FitTextToShape, nTextAttr );
 
-	if ( nTextId )
-		AddOpt( ESCHER_Prop_lTxid, nTextId );
+    if ( nTextId )
+        AddOpt( ESCHER_Prop_lTxid, nTextId );
 }
 
 sal_Bool EscherPropertyContainer::GetLineArrow( const sal_Bool bLineStart,
@@ -2444,6 +2447,25 @@ sal_Bool EscherPropertyContainer::CreateShadowProperties(
 	return bHasShadow;
 }
 
+void EscherPropertyContainer::CreateProtectionProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet)
+{
+    ::com::sun::star::uno::Any aAny;
+    sal_Int8 nLocked = 0;
+    //  size lock + position lock = Excel Lock
+    if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+            String( RTL_CONSTASCII_USTRINGPARAM( "MoveProtect" ) ), sal_True ) )
+    {
+        nLocked = *((sal_Int8*)aAny.getValue());
+        AddOpt(ESCHER_Prop_LockPosition, nLocked);
+    }
+    if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+            String( RTL_CONSTASCII_USTRINGPARAM( "SizeProtect" ) ), sal_True ) )
+    {
+        nLocked = *((sal_Int8*)aAny.getValue());
+        AddOpt(ESCHER_Prop_LockAdjustHandles, nLocked);
+    }
+}
+
 // ---------------------------------------------------------------------------------------------
 
 sal_Int32 EscherPropertyContainer::GetValueForEnhancedCustomShapeParameter( const ::com::sun::star::drawing::EnhancedCustomShapeParameter& rParameter, 
@@ -2613,7 +2635,7 @@ void ConvertEnhancedCustomShapeEquation( SdrObjCustomShape* pCustoShape,
 		}
 	}
 }
-//zhaosz_xml
+
 sal_Bool EscherPropertyContainer::IsDefaultObject( SdrObjCustomShape* pCustoShape )
 {
     sal_Bool bIsDefaultObject = sal_False;

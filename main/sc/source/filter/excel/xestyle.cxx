@@ -1837,6 +1837,17 @@ void XclExpCellArea::FillToCF8( sal_uInt16& rnPattern, sal_uInt16& rnColor ) con
     ::insert_value( rnPattern, aTmp.mnPattern,   10, 6 );
 }
 
+//in order to save the cellArea,the XclExpDxf need the three parameter,
+//this class have a saveXml() function,but when XclExpDxf call this function to save cellArea,
+//there are a wrong result, the bgColor and foreColor is  reversal, 
+//now I haven't find this reason,and add this function to resolve it ,but this isn't a good solution 
+void XclExpCellArea::FillToCF8( sal_uInt16& rnForeColor, sal_uInt16& rnBackColor, sal_uInt8& rnPattern ) const
+{
+    rnForeColor = mnForeColor;
+    rnBackColor = mnBackColor;
+    rnPattern = mnPattern;
+}
+
 static const char* ToPatternType( sal_uInt8 nPattern )
 {
     switch( nPattern )
@@ -2293,6 +2304,109 @@ void XclExpStyle::SaveXml( XclExpXmlStream& rStrm )
     rWorksheet->startElementV(XML_cellStyle,attrList);
     rWorksheet->endElement(XML_cellStyle);
 }
+XclExpDxf::XclExpDxf( const XclExpRoot& rRoot, const String& rStyleName ) :
+    XclExpRoot(rRoot),
+    XclExpRecord( EXC_ID_STYLE, 4 ),
+    mbFontUsed( false ),
+    mbBorderUsed( false ),
+    mbPattUsed( false ),
+    maName( rStyleName )
+{
+    /*  Get formatting attributes here */
+
+    if( SfxStyleSheetBase* pStyleSheet = GetDoc().GetStyleSheetPool()->Find(rStyleName, SFX_STYLE_FAMILY_PARA ) )
+    {
+        const SfxItemSet& rItemSet = pStyleSheet->GetItemSet();
+
+        // font
+        mbFontUsed =  ScfTools::CheckItem( rItemSet, ATTR_FONT_HEIGHT,     true ) || 
+            ScfTools::CheckItem( rItemSet, ATTR_FONT_WEIGHT,     true ) ||
+            ScfTools::CheckItem( rItemSet, ATTR_FONT_COLOR,      true ) ||
+            ScfTools::CheckItem( rItemSet, ATTR_FONT_UNDERLINE,  true )||
+            ScfTools::CheckItem( rItemSet, ATTR_FONT_POSTURE,    true )||
+            ScfTools::CheckItem( rItemSet, ATTR_FONT_CROSSEDOUT, true );
+        if( mbFontUsed )
+        {
+            Font aFont;
+            ScPatternAttr::GetFont( aFont, rItemSet, SC_AUTOCOL_RAW );
+            maFontData.FillFromVclFont( aFont );
+        }
+
+        // pattern
+        mbPattUsed = ScfTools::CheckItem( rItemSet, ATTR_BACKGROUND, true );
+        if( mbPattUsed )
+            maArea.FillFromItemSet( rItemSet, GetPalette(), GetBiff());
+
+        // border
+        mbBorderUsed = ScfTools::CheckItem( rItemSet, ATTR_BORDER, true );
+        if( mbBorderUsed )
+            maBorder.FillFromItemSet( rItemSet, GetPalette(), GetBiff() );
+    }
+}
+
+void XclExpDxf::SaveXml( XclExpXmlStream& rStrm )
+{
+    rStrm.GetCurrentStream()->startElement( XML_dxf,FSEND );
+
+    // *** formatting blocks ***
+    if( mbFontUsed || mbBorderUsed || mbPattUsed )
+    {
+        if (mbFontUsed ) 
+        {
+            rStrm.GetCurrentStream()->startElement( XML_font,FSEND );
+            rStrm.WriteFontData(maFontData,  XML_rFont);
+            rStrm.GetCurrentStream()->endElement( XML_font );
+        }
+
+        // must be first save area and second save border
+        if( mbPattUsed )
+        {    
+            maArea.SetFinalColors( GetPalette() );
+            sal_uInt16 nForeColor, nBackColor;
+            sal_uInt8 nPattern;
+            maArea.FillToCF8(nBackColor, nForeColor, nPattern);
+            sax_fastparser::FSHelperPtr& rStyleSheet = rStrm.GetCurrentStream();
+            rStyleSheet->startElement( XML_fill,
+                FSEND );
+
+            // OOXTODO: XML_gradientFill
+
+            XclExpPalette& rPalette = rStrm.GetRoot().GetPalette();
+
+            if( nPattern == EXC_PATT_NONE || ( nForeColor == 0 && nBackColor == 0 ) )
+                rStyleSheet->singleElement( XML_patternFill,
+                XML_patternType,    ToPatternType( nPattern ),
+                FSEND );
+            else
+            {
+                rStyleSheet->startElement( XML_patternFill,
+                    XML_patternType,    ToPatternType( nPattern ),
+                    FSEND );
+                rStyleSheet->singleElement( XML_fgColor,
+                    XML_rgb,    XclXmlUtils::ToOString( rPalette.GetColor( nForeColor ) ).getStr(),
+                    FSEND );
+                rStyleSheet->singleElement( XML_bgColor,
+                    XML_rgb,    XclXmlUtils::ToOString( rPalette.GetColor( nBackColor ) ).getStr(),
+                    FSEND );
+                rStyleSheet->endElement( XML_patternFill );
+            }
+
+            rStyleSheet->endElement( XML_fill );
+            //maArea.SaveXml( rStrm);
+        } 
+
+        if( mbBorderUsed )
+        {
+            maBorder.SetFinalColors( GetPalette() );
+            maBorder.SaveXml( rStrm);
+        }
+    }
+    else
+    {
+        // no data blocks at all
+    }
+    rStrm.GetCurrentStream()->endElement( XML_dxf );
+}
 
 // ----------------------------------------------------------------------------
 
@@ -2372,6 +2486,8 @@ bool XclExpFillPred::operator()( const XclExpCellArea& rFill ) const
         mrFill.mnBackColorId    == rFill.mnBackColorId;
 }
 
+XclExpDxfIdMap XclExpXFBuffer::maDxfIdMap;
+
 static bool XclExpXFBuffer_mbUseMultimapBuffer = true;
 
 XclExpXFBuffer::XclExpXFBuffer( const XclExpRoot& rRoot ) 
@@ -2394,6 +2510,7 @@ void XclExpXFBuffer::Initialize()
 {
     InsertDefaultRecords();
     InsertUserStyles();
+    InsertDxf();
 }
 
 sal_uInt32 XclExpXFBuffer::Insert( const ScPatternAttr* pPattern, sal_Int16 nScript )
@@ -2644,6 +2761,12 @@ void XclExpXFBuffer::SaveXml( XclExpXmlStream& rStrm )
             FSEND );
     maStyleList.SaveXml( rStrm );
     rStyleSheet->endElement( XML_cellStyles );
+    // save all STYLE records
+    rStyleSheet->startElement( XML_dxfs,
+        XML_count,  OString::valueOf( (sal_Int32) maDxfList.GetSize() ).getStr(),
+        FSEND );
+    maDxfList.SaveXml( rStrm );
+    rStyleSheet->endElement( XML_dxfs);
 }
 
 void XclExpXFBuffer::SaveXFXml( XclExpXmlStream& rStrm, XclExpXF& rXF )
@@ -2901,6 +3024,38 @@ void XclExpXFBuffer::InsertUserStyles()
     for( SfxStyleSheetBase* pStyleSheet = aStyleIter.First(); pStyleSheet; pStyleSheet = aStyleIter.Next() )
         if( pStyleSheet->IsUserDefined() )
             InsertStyleXF( *pStyleSheet );
+}
+
+//Inserts Dxf record for all conditional format. 
+void  XclExpXFBuffer::InsertDxf()
+{
+    maDxfIdMap.clear();
+    if( const ScConditionalFormatList* pCondFmtList = GetDoc().GetCondFormList() )
+    {
+        const ScConditionalFormatPtr* ppCondFmt = pCondFmtList->GetData(); 
+        if( ppCondFmt )
+        {
+            const ScConditionalFormatPtr* ppCondEnd = ppCondFmt + pCondFmtList->Count();
+            // for all conditiongformat
+            for( ; ppCondFmt < ppCondEnd; ++ppCondFmt )
+            {
+                if( *ppCondFmt )
+                {
+                    ScRangeList aScRanges;
+                    {
+                        // for all cfRule with one conditionformat
+                        for( sal_uInt16 nIndex = 0, nCount = (*ppCondFmt)->Count(); nIndex < nCount; ++nIndex )
+                            if( const ScCondFormatEntry* pEntry = (*ppCondFmt)->GetEntry( nIndex ) )
+                            {
+                                sal_uInt32  tid= maDxfIdMap.size();
+                                maDxfIdMap[pEntry->GetStyle()] = tid;
+                                maDxfList.AppendNewRecord(new XclExpDxf(GetRoot(),pEntry->GetStyle()));
+                            }
+                    }
+                }
+            }
+        }
+    }
 }
 
 sal_uInt32 XclExpXFBuffer::AppendBuiltInXF( XclExpXFRef xXF, sal_uInt8 nStyleId, sal_uInt8 nLevel )

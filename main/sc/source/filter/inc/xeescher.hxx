@@ -339,6 +339,9 @@ private:
     ScAddress           maScPos;        /// Calc cell address of the note.
     sal_uInt16          mnObjId;        /// Escher object ID (BIFF8).
     bool                mbVisible;      /// true = permanently visible.
+    Rectangle           maCommentFrom;
+    Rectangle           maCommentTo;
+    XclExpStringRef     mpNoteFmtConts; /// The note content and format
 };
 
 // ============================================================================

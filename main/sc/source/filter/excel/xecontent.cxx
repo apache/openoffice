@@ -583,10 +583,11 @@ void XclExpLabelranges::Save( XclExpStream& rStrm )
 class XclExpCFImpl : protected XclExpRoot
 {
 public:
-    explicit            XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry );
+    explicit            XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry, const ScAddress &rSrcPos = ScAddress() );
 
     /** Writes the body of the CF record. */
     void                WriteBody( XclExpStream& rStrm );
+    void                SaveXml( XclExpXmlStream &rStrm );
 
 private:
     const ScCondFormatEntry& mrFormatEntry; /// Calc conditional format entry.
@@ -607,13 +608,24 @@ private:
     bool                mbStrikeUsed;       /// true = Font strikeout used.
     bool                mbBorderUsed;       /// true = Border attribute used.
     bool                mbPattUsed;         /// true = Pattern attribute used.
+    String msVal1;
+    String msVal2;
+    String msFormula1;
+    String msFormula2;
+    bool mbIsStr1;
+    bool mbIsStr2;
+    double mnVal1;
+    double mnVal2;
+    bool mbFmla2;
+    static sal_uInt32 mnCount;
 };
 
 // ----------------------------------------------------------------------------
+sal_uInt32 XclExpCFImpl::mnCount = 0;
 
-XclExpCFImpl::XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry ) :
+XclExpCFImpl::XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry , const ScAddress &rSrcPos) :
     XclExpRoot( rRoot ),
-    mrFormatEntry( rFormatEntry ),
+    mrFormatEntry( ( ScCondFormatEntry &)rFormatEntry ),
     mnFontColorId( 0 ),
     mnType( EXC_CF_TYPE_CELL ),
     mnOperator( EXC_CF_CMP_NONE ),
@@ -624,6 +636,7 @@ XclExpCFImpl::XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rF
     mbUnderlUsed( false ),
     mbItalicUsed( false ),
     mbStrikeUsed( false ),
+    mbFmla2( false ),
     mbBorderUsed( false ),
     mbPattUsed( false )
 {
@@ -680,6 +693,13 @@ XclExpCFImpl::XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rF
             DBG_ERRORFILE( "XclExpCF::WriteBody - unknown condition type" );
     }
 
+    msVal1 = ( (const ScCondFormatEntry&)rFormatEntry ).GetStrVal1();
+    msVal2 = ( (const ScCondFormatEntry&)rFormatEntry ).GetStrVal2();
+    mnVal1 = ( (const ScCondFormatEntry&)rFormatEntry ).GetDoubleVal1();
+    mnVal2 = ( (const ScCondFormatEntry&)rFormatEntry ).GetDoubleVal2();
+    mbIsStr1 = ( (const ScCondFormatEntry&)rFormatEntry ).GetBoolIsStr1();
+    mbIsStr2 = ( (const ScCondFormatEntry&)rFormatEntry ).GetBoolIsStr2();
+    mnCount++;
     // *** formulas ***
 
     XclExpFormulaCompiler& rFmlaComp = GetFormulaCompiler();
@@ -687,11 +707,13 @@ XclExpCFImpl::XclExpCFImpl( const XclExpRoot& rRoot, const ScCondFormatEntry& rF
     ::std::auto_ptr< ScTokenArray > xScTokArr( mrFormatEntry.CreateTokenArry( 0 ) );
     mxTokArr1 = rFmlaComp.CreateFormula( EXC_FMLATYPE_CONDFMT, *xScTokArr );
 
-    if( bFmla2 )
+    if( mbFmla2 )
     {
         xScTokArr.reset( mrFormatEntry.CreateTokenArry( 1 ) );
         mxTokArr2 = rFmlaComp.CreateFormula( EXC_FMLATYPE_CONDFMT, *xScTokArr );
     }
+    msFormula1 = XclXmlUtils::ToOUString( GetDoc(), rSrcPos, mrFormatEntry.CreateTokenArry( 0 ),
+        formula::FormulaGrammar::GRAM_OOXML, GetRoot().GetUILanguage(), mxTokArr1->IsRecoverable() );
 }
 
 void XclExpCFImpl::WriteBody( XclExpStream& rStrm )
@@ -786,12 +808,70 @@ void XclExpCFImpl::WriteBody( XclExpStream& rStrm )
         mxTokArr2->WriteArray( rStrm );
 }
 
-// ----------------------------------------------------------------------------
+void XclExpCFImpl::SaveXml( XclExpXmlStream &rStrm )
+{
+    sax_fastparser::FSHelperPtr &rWorksheet = rStrm.GetCurrentStream();
+    sal_Int32 dxfid = XclExpXFBuffer::GetDxfIdMap()[mrFormatEntry.GetStyle()];
 
-XclExpCF::XclExpCF( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry ) :
+    if ( EXC_CF_TYPE_FMLA == mnType )
+    {
+        rWorksheet->startElement( XML_cfRule,
+            XML_priority, OString::valueOf((sal_Int32) mnCount).getStr(),
+            XML_dxfId, OString::valueOf((sal_Int32)dxfid).getStr(),
+            XML_type, "expression",
+            //XML_stopIfTrue, "1",
+            FSEND );
+
+        rWorksheet->startElement( XML_formula, FSEND );
+        rWorksheet->writeEscaped( XclXmlUtils::ToOUString(msFormula1).getStr() );
+        rWorksheet->endElement( XML_formula );
+    }
+    else
+    {
+        rWorksheet->startElement( XML_cfRule,
+            XML_operator, cf_cmplist[mnOperator].value,
+            XML_priority, OString::valueOf((sal_Int32) mnCount).getStr(),
+            XML_dxfId, OString::valueOf((sal_Int32)dxfid).getStr(),
+            XML_type, cf_typelist[mnType].value,
+            FSEND );
+
+        rWorksheet->startElement( XML_formula, FSEND );
+        if ( mbIsStr1 )
+        {
+            rWorksheet->write( XclXmlUtils::ToOUString("\"") );
+            rWorksheet->write( XclXmlUtils::ToOUString(msVal1) );
+            rWorksheet->write( XclXmlUtils::ToOUString("\"") );
+        }
+        else
+        {
+            rWorksheet->write( mnVal1 );
+        }
+        rWorksheet->endElement( XML_formula );
+        if (mbFmla2)
+        {
+            rWorksheet->startElement( XML_formula, FSEND );
+            if ( mbIsStr2 )
+            {
+                rWorksheet->write( XclXmlUtils::ToOUString("\"") );
+                rWorksheet->write( XclXmlUtils::ToOUString(msVal2) );
+                rWorksheet->write( XclXmlUtils::ToOUString("\"") );
+            }
+            else
+            {
+                rWorksheet->write( mnVal2 );
+            }
+            rWorksheet->endElement( XML_formula );
+        }
+    }
+    mnCount--;
+    rWorksheet->endElement( XML_cfRule );
+}
+
+// ----------------------------------------------------------------------------
+XclExpCF::XclExpCF( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry, const ScAddress &rSrcPos ) :
     XclExpRecord( EXC_ID_CF ),
     XclExpRoot( rRoot ),
-    mxImpl( new XclExpCFImpl( rRoot, rFormatEntry ) )
+    mxImpl( new XclExpCFImpl( rRoot, rFormatEntry, rSrcPos) )
 {
 }
 
@@ -804,6 +884,11 @@ void XclExpCF::WriteBody( XclExpStream& rStrm )
     mxImpl->WriteBody( rStrm );
 }
 
+void XclExpCF::SaveXml(XclExpXmlStream &rStrm)
+{
+    mxImpl->SaveXml(rStrm);
+}
+
 // ----------------------------------------------------------------------------
 
 XclExpCondfmt::XclExpCondfmt( const XclExpRoot& rRoot, const ScConditionalFormat& rCondFormat ) :
@@ -813,11 +898,23 @@ XclExpCondfmt::XclExpCondfmt( const XclExpRoot& rRoot, const ScConditionalFormat
     ScRangeList aScRanges;
     GetDoc().FindConditionalFormat( rCondFormat.GetKey(), aScRanges, GetCurrScTab() );
     GetAddressConverter().ConvertRangeList( maXclRanges, aScRanges, true );
+    ScRange *pScRange = NULL;
+    for (sal_uInt32 nPos = 0, nCount = aScRanges.Count(); nPos < nCount; ++nPos)
+    {
+        if (ScRange *tmpScRange = aScRanges.GetObject(nPos))
+        {
+            //firstly assign for pScRange  or now ScRange  less than pScRange
+            if (!pScRange  || (*tmpScRange < *pScRange))
+            {
+                pScRange = tmpScRange;
+            }
+        }
+    }
     if( !maXclRanges.empty() )
     {
         for( sal_uInt16 nIndex = 0, nCount = rCondFormat.Count(); nIndex < nCount; ++nIndex )
             if( const ScCondFormatEntry* pEntry = rCondFormat.GetEntry( nIndex ) )
-                maCFList.AppendNewRecord( new XclExpCF( GetRoot(), *pEntry ) );
+                maCFList.AppendNewRecord( new XclExpCF( GetRoot(), *pEntry, pScRange->aStart ) );
         aScRanges.Format( msSeqRef, SCA_VALID, NULL, formula::FormulaGrammar::CONV_XL_A1 );
     }
 }
@@ -861,7 +958,16 @@ void XclExpCondfmt::SaveXml( XclExpXmlStream& rStrm )
             XML_sqref, XclXmlUtils::ToOString( msSeqRef ).getStr(),
             // OOXTODO: XML_pivot,
             FSEND );
-    maCFList.SaveXml( rStrm );
+    if ( !maCFList.IsEmpty())
+    {
+        //Reversed save CFRule,in list
+        //the more front CFRule, the higher the priority, the smaller the value	
+        for ( size_t i = maCFList.GetSize(); i > 0; --i )
+        {
+            maCFList.GetRecord(i-1)->SaveXml(rStrm);
+        }
+    }
+    
     // OOXTODO: XML_extLst
     rWorksheet->endElement( XML_conditionalFormatting );
 }

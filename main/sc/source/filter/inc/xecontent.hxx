@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_XECONTENT_HXX
 #define SC_XECONTENT_HXX
 
@@ -168,8 +166,9 @@ class XclExpCFImpl;
 class XclExpCF : public XclExpRecord, protected XclExpRoot
 {
 public:
-    explicit            XclExpCF( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry );
+    explicit            XclExpCF( const XclExpRoot& rRoot, const ScCondFormatEntry& rFormatEntry,const ScAddress& rSrcPos = ScAddress());
     virtual             ~XclExpCF();
+    virtual void        SaveXml(XclExpXmlStream & rStrm);
 
 private:
     /** Writes the body of the CF record. */

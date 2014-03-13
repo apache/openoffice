@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 #include "eschesdo.hxx"
@@ -93,7 +91,6 @@ Point ImplEESdrWriter::ImplMapPoint( const Point& rPoint )
 {
 	return OutputDevice::LogicToLogic( rPoint, maMapModeSrc, maMapModeDest );
 }
-
 
 // -------------------------------------------------------------------
 

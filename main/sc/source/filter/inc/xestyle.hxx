@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_XESTYLE_HXX
 #define SC_XESTYLE_HXX
 
@@ -33,6 +31,13 @@
 #include "xerecord.hxx"
 #include "xlstyle.hxx"
 #include "xeroot.hxx"
+
+#include "conditio.hxx"
+#include "xlcontent.hxx"
+#include "xladdress.hxx"
+#include "xehelper.hxx"
+#include <string>
+#include <map>
 
 /* ============================================================================
 - Buffers for style records (PALETTE, FONT, FORMAT, XF, STYLE).
@@ -442,6 +447,7 @@ struct XclExpCellArea : public XclCellArea
     /** Fills the data to the passed fields of a BIFF8 CF (conditional format) record. */
     void                FillToCF8( sal_uInt16& rnPattern, sal_uInt16& rnColor ) const;
 
+    void                FillToCF8( sal_uInt16& rforecolor, sal_uInt16& rbackcolor,  sal_uInt8& rpattern ) const;
     void                SaveXml( XclExpXmlStream& rStrm ) const;
 };
 
@@ -630,6 +636,32 @@ private:
 
 // ----------------------------------------------------------------------------
 
+/** Represents a dxf record for condition format.
+@descr  The calss is able to store format for all condition. */
+class XclExpDxf : public XclExpRecord, protected XclExpRoot
+{
+public:
+    explicit            XclExpDxf( const XclExpRoot& rRoot,  const String& rStyleName );
+
+    inline const String&    GetName() const
+    {
+        return maName;
+    }
+
+    virtual void        SaveXml( XclExpXmlStream& rStrm );
+
+private:
+    String              maName;         /// Name of the cell style.s
+    XclFontData         maFontData;     /// Font formatting attributes.
+    XclExpCellBorder    maBorder;       /// Border formatting attributes.
+    XclExpCellArea      maArea;         /// Pattern formatting attributes.
+
+    bool                mbFontUsed;     /// true = Any font attribute used.
+    bool                mbBorderUsed;   /// true = Border attribute used.
+    bool                mbPattUsed;     /// true = Pattern attribute used.
+};
+// ----------------------------------------------------------------------------
+
 /** Stores all XF records (cell formats and cell styles) in the document.
 
     Stores also the names of user defined cell styles (STYLE records). Supports
@@ -645,6 +677,12 @@ private:
     Then, in the streaming phase, the function GetXFIndex() returns the real
     Excel XF index for all XF identifiers.
  */
+ 
+// exprot 2007 condition format,define a dxfmap ,the key is the stylename for conditonal format
+// the value is the id for stylename,
+// the reason for add this map, in order to add a dxfid when save cfRule
+typedef ::std::map< String, sal_Int32 > XclExpDxfIdMap;
+
 class XclExpXFBuffer : public XclExpRecordBase, protected XclExpRoot
 {
 public:
@@ -700,11 +738,18 @@ public:
     /** Writes all XF records contained in this buffer. */
     virtual void        Save( XclExpStream& rStrm );
     virtual void        SaveXml( XclExpXmlStream& rStrm );
+    /**add static function,in order to  when save cfRule , easily get map */
+    inline static XclExpDxfIdMap GetDxfIdMap()
+    {
+        return maDxfIdMap;
+    }
 
 private:
     typedef XclExpRecordList< XclExpXF >    XclExpXFList;
     typedef XclExpXFList::RecordRefType     XclExpXFRef;
     typedef XclExpRecordList< XclExpStyle > XclExpStyleList;
+    //for save formats of all conditonal format
+    typedef XclExpRecordList< XclExpDxf > XclExpDxfList;
 
 private:
     // helper to update the buffer for maXFList
@@ -731,6 +776,8 @@ private:
     /** Inserts an XF and a STYLE record for all user defined style sheets. */
     void                InsertUserStyles();
 
+    /** Inserts Dxf record for all conditional format. */
+    void                InsertDxf();
     /** Inserts a built-in XF record without a STYLE record and returns the XF ID.
         @param bCreateStyleRec  true = Creates the related STYLE record. */
     sal_uInt32          AppendBuiltInXF( XclExpXFRef xXF,
@@ -773,6 +820,9 @@ private:
     XclExpBorderList    maBorders;          /// List of borders used by XF records
     XclExpFillList      maFills;            /// List of fills used by XF records
 
+    static XclExpDxfIdMap maDxfIdMap;
+    // list of all dxf records for all conditional format
+    XclExpDxfList maDxfList;
     // for optimized FindXF, buffered version of maXFList for fast access
     std::multimap< const SfxItemSet*, XclExpXF* > maXclExpXFMap;
 };

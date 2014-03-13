@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -59,6 +57,7 @@
 #include "xelink.hxx"
 #include "xename.hxx"
 #include "xestyle.hxx"
+#include "document.hxx"
 
 using namespace ::oox;
 
@@ -82,6 +81,55 @@ using ::com::sun::star::form::binding::XListEntrySource;
 using ::com::sun::star::script::ScriptEventDescriptor;
 using ::com::sun::star::table::CellAddress;
 using ::com::sun::star::table::CellRangeAddress;
+
+#define  HMM2XL(x)        ((x)/26.5)+0.5
+
+namespace{
+    static void lcl_GetFromTo( const XclExpRoot& rRoot, const Rectangle &aRect, sal_Int32 nTab, Rectangle &aFrom, Rectangle &aTo )
+    {
+        bool bTo = false;
+        sal_Int32 nCol = 0, nRow = 0;
+        sal_Int32 nColOff = 0, nRowOff= 0;
+
+        while(1)
+        {
+            Rectangle r = rRoot.GetDocPtr()->GetMMRect( nCol,nRow,nCol,nRow,nTab );
+            if( !bTo )
+            {
+                if( r.Left() <= aRect.Left() )
+                {
+                    nCol++;
+                    nColOff = aRect.Left() - r.Left();
+                }
+                if( r.Top() <= aRect.Top() )
+                {
+                    nRow++;
+                    nRowOff = aRect.Top() - r.Top();
+                }
+                if( r.Left() > aRect.Left() && r.Top() > aRect.Top() )
+                {
+                    aFrom = Rectangle( nCol-1, HMM2XL( nColOff ),
+                                       nRow-1, HMM2XL( nRowOff ) );
+                    bTo=true;
+                }
+            }
+            if( bTo )
+            {
+                if( r.Right() < aRect.Right() )
+                    nCol++;
+                if( r.Bottom() < aRect.Bottom() )
+                    nRow++;
+                if( r.Right() >= aRect.Right() && r.Bottom() >= aRect.Bottom() )
+                {
+                    aTo = Rectangle( nCol, HMM2XL( aRect.Right() - r.Left() ),
+                                     nRow, HMM2XL( aRect.Bottom() - r.Top() ));
+                    break;
+                }
+            }
+        }
+        return;
+    }
+};
 
 // Escher client anchor =======================================================
 
@@ -980,6 +1028,7 @@ void XclExpChartObj::Save( XclExpStream& rStrm )
 
 XclExpNote::XclExpNote( const XclExpRoot& rRoot, const ScAddress& rScPos,
         const ScPostIt* pScNote, const String& rAddText ) :
+    maAuthor( pScNote ? pScNote->GetAuthor() : String::CreateFromAscii("") ),
     XclExpRecord( EXC_ID_NOTE ),
     maScPos( rScPos ),
     mnObjId( EXC_OBJ_INVALID_ID ),
@@ -988,7 +1037,12 @@ XclExpNote::XclExpNote( const XclExpRoot& rRoot, const ScAddress& rScPos,
     // get the main note text
     String aNoteText;
     if( pScNote )
+    {
         aNoteText = pScNote->GetText();
+        const EditTextObject *pETextObj = pScNote->GetEditTextObject();
+        if( pETextObj )
+            mpNoteFmtConts = XclExpStringHelper::CreateString(rRoot, *pETextObj);
+    }
     // append additional text
     ScGlobal::AddToken( aNoteText, rAddText, '\n', 2 );
     maOrigNoteText = aNoteText;
@@ -1004,9 +1058,22 @@ XclExpNote::XclExpNote( const XclExpRoot& rRoot, const ScAddress& rScPos,
         {
             // TODO: additional text
             if( pScNote )
-                if( SdrCaptionObj* pCaption = pScNote->GetOrCreateCaption( maScPos ) )
+                if( SdrCaptionObj* pCaption = pScNote->GetCaption() )
                     if( const OutlinerParaObject* pOPO = pCaption->GetOutlinerParaObject() )
-                        mnObjId = rRoot.GetObjectManager().AddObj( new XclObjComment( rRoot.GetObjectManager(), pCaption->GetLogicRect(), pOPO->GetTextObject(), pCaption, mbVisible ) );
+                    {
+                        switch(rRoot.GetOutput())
+                        {
+                        case EXC_OUTPUT_BINARY:
+                            mnObjId = rRoot.GetObjectManager().AddObj( new XclObjComment( rRoot.GetObjectManager(), pCaption->GetLogicRect(), pOPO->GetTextObject(), pCaption, mbVisible, maScPos, maCommentFrom, maCommentTo) );
+                            break;
+                        case EXC_OUTPUT_XML_2007:
+                            lcl_GetFromTo( rRoot, pCaption->GetLogicRect(), maScPos.Tab(), maCommentFrom, maCommentTo );
+                            mnObjId = rRoot.GetObjectManager().AddObj( new XclObjComment( rRoot.GetObjectManager(), pCaption->GetLogicRect(), pOPO->GetTextObject(), pCaption, mbVisible, maScPos, maCommentFrom, maCommentTo) );
+                            break;
+                        default:
+                            break;
+                        }
+                    }
 
             SetRecSize( 9 + maAuthor.GetSize() );
         }
@@ -1090,9 +1157,8 @@ void XclExpNote::WriteXml( sal_Int32 nAuthorId, XclExpXmlStream& rStrm )
             FSEND );
     rComments->startElement( XML_text, FSEND );
     // OOXTODO: phoneticPr, rPh, r
-    rComments->startElement( XML_t, FSEND );
-    rComments->writeEscaped( XclXmlUtils::ToOUString( maOrigNoteText ) );
-    rComments->endElement ( XML_t );
+    if( mpNoteFmtConts.get() ) // export text content and format
+        mpNoteFmtConts->WriteXml( rStrm );
     rComments->endElement( XML_text );
     rComments->endElement( XML_comment );
 }
@@ -1130,13 +1196,19 @@ void XclExpComments::SaveXml( XclExpXmlStream& rStrm )
             FSEND );
     rComments->startElement( XML_authors, FSEND );
 
+    // OUStringLess is removed from the second parameter
+    // If it is exists, "aAuthors.find" cannot find any author name. It will return "end". SO
+    // the index will be always the set size. After being removed, all works well. Elements
+    // will be sorted ascendingly on inserting. No repeated element will be inserted. It complies
+    // the rule that no repeated authors for a sheet(Page 2872 in ECMA doc)
     typedef std::set< OUString, OUStringLess > Authors;
     Authors aAuthors;
 
     size_t nNotes = mrNotes.GetSize();
     for( size_t i = 0; i < nNotes; ++i )
     {
-        aAuthors.insert( XclXmlUtils::ToOUString( mrNotes.GetRecord( i )->GetAuthor() ) );
+        XclExpNoteList::RecordRefType xNote = mrNotes.GetRecord( i );
+        aAuthors.insert( XclXmlUtils::ToOUString( xNote->GetAuthor() ) );
     }
 
     for( Authors::const_iterator b = aAuthors.begin(), e = aAuthors.end(); b != e; ++b )
@@ -1150,12 +1222,13 @@ void XclExpComments::SaveXml( XclExpXmlStream& rStrm )
     rComments->startElement( XML_commentList, FSEND );
 
     Authors::const_iterator aAuthorsBegin = aAuthors.begin();
-    for( size_t i = 0; i < nNotes; ++i )
+    Authors::const_iterator aAuthorsEnd = aAuthors.end();
+    for ( size_t i = 0; i < nNotes; ++i )
     {
         XclExpNoteList::RecordRefType xNote = mrNotes.GetRecord( i );
         Authors::const_iterator aAuthor = aAuthors.find(
                 XclXmlUtils::ToOUString( xNote->GetAuthor() ) );
-        sal_Int32 nAuthorId = distance( aAuthorsBegin, aAuthor );
+        sal_Int32 nAuthorId = ( aAuthor == aAuthorsEnd ? 0 : distance( aAuthorsBegin, aAuthor ) );
         xNote->WriteXml( nAuthorId, rStrm );
     }
 
