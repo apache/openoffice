@@ -941,33 +941,39 @@ void TextWindow::Command( const CommandEvent& rCEvt )
 
 void TextWindow::GetFocus()
 {
-	//Window::GetFocus();
-	if ( !mbActivePopup )
-	{
-		sal_Bool bGotoCursor = !mpExtTextView->IsReadOnly();
-		if ( mbFocusSelectionHide && IsReallyVisible() && !mpExtTextView->IsReadOnly()
-                && ( mbSelectOnTab &&
-                    (!mbInMBDown || ( GetSettings().GetStyleSettings().GetSelectionOptions() & SELECTION_OPTION_FOCUS ) )) )
-		{
-			// Alles selektieren, aber nicht scrollen
-			sal_Bool bAutoScroll = mpExtTextView->IsAutoScroll();
-			mpExtTextView->SetAutoScroll( sal_False );
-			mpExtTextView->SetSelection( TextSelection( TextPaM( 0, 0 ), TextPaM( 0xFFFF, 0xFFFF ) ) );
-			mpExtTextView->SetAutoScroll( bAutoScroll );
-			bGotoCursor = sal_False;
-		}
-		mpExtTextView->SetPaintSelection( sal_True );
-		mpExtTextView->ShowCursor( bGotoCursor );
-	}
+    Window::GetFocus();
+
+    if ( !mbActivePopup )
+    {
+        sal_Bool bGotoCursor = !mpExtTextView->IsReadOnly();
+        if ( mbFocusSelectionHide
+             && IsReallyVisible()
+             && !mpExtTextView->IsReadOnly()
+             && ( mbSelectOnTab
+                  && ( !mbInMBDown
+                       || ( GetSettings().GetStyleSettings().GetSelectionOptions() & SELECTION_OPTION_FOCUS ) ) ) )
+        {
+            // Alles selektieren, aber nicht scrollen
+            sal_Bool bAutoScroll = mpExtTextView->IsAutoScroll();
+            mpExtTextView->SetAutoScroll( sal_False );
+            mpExtTextView->SetSelection( TextSelection( TextPaM( 0, 0 ), TextPaM( 0xFFFF, 0xFFFF ) ) );
+            mpExtTextView->SetAutoScroll( bAutoScroll );
+            bGotoCursor = sal_False;
+        }
+        mpExtTextView->SetPaintSelection( sal_True );
+        mpExtTextView->ShowCursor( bGotoCursor );
+    }
 }
+
 
 void TextWindow::LoseFocus()
 {
-	Window::LoseFocus();
+    Window::LoseFocus();
 
-	if ( mbFocusSelectionHide && !mbActivePopup )
-		mpExtTextView->SetPaintSelection( sal_False );
+    if ( mbFocusSelectionHide && !mbActivePopup )
+        mpExtTextView->SetPaintSelection( sal_False );
 }
+
 
 // virtual
 ::css::uno::Reference< ::css::awt::XWindowPeer >
@@ -1246,12 +1252,14 @@ void MultiLineEdit::Resize()
 
 void MultiLineEdit::GetFocus()
 {
-    if ( !pImpSvMEdit )  // might be called from within the dtor, when pImpSvMEdit == NULL is a valid state
+    if ( pImpSvMEdit == NULL )  // might be called from within the dtor, when pImpSvMEdit == NULL is a valid state
         return;
-	//Disable the focused event on scroll pane
-	//Edit::GetFocus();
+
+    Edit::GetFocus();
+
     pImpSvMEdit->GetFocus();
 }
+
 
 void MultiLineEdit::SetSelection( const Selection& rSelection )
 {
