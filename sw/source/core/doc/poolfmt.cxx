@@ -1285,35 +1285,38 @@ SwFmt* SwDoc::GetFmtFromPool( sal_uInt16 nId )
 //			break;
 
 
-	case RES_POOLFRM_FRAME:
-		{
+    case RES_POOLFRM_FRAME:
+        {
             if ( get(IDocumentSettingAccess::HTML_MODE) )
-			{
+            {
                 aSet.Put( SwFmtAnchor( FLY_AS_CHAR ));
                 aSet.Put( SwFmtVertOrient( 0, text::VertOrientation::LINE_CENTER, text::RelOrientation::PRINT_AREA ) );
-				aSet.Put( SwFmtSurround( SURROUND_NONE ) );
-			}
-			else
-			{
+                aSet.Put( SwFmtSurround( SURROUND_NONE ) );
+            }
+            else
+            {
                 aSet.Put( SwFmtAnchor( FLY_AT_PARA ));
-				aSet.Put( SwFmtSurround( SURROUND_PARALLEL ) );
+                aSet.Put( SwFmtSurround( SURROUND_PARALLEL ) );
                 aSet.Put( SwFmtHoriOrient( 0, text::HoriOrientation::CENTER, text::RelOrientation::PRINT_AREA ) );
                 aSet.Put( SwFmtVertOrient( 0, text::VertOrientation::TOP, text::RelOrientation::PRINT_AREA ) );
-				Color aCol( COL_BLACK );
-				SvxBorderLine aLine( &aCol, DEF_LINE_WIDTH_0 );
+                Color aCol( COL_BLACK );
+                SvxBorderLine aLine( &aCol, DEF_LINE_WIDTH_0 );
                 SvxBoxItem aBox( RES_BOX );
-				aBox.SetLine( &aLine, BOX_LINE_TOP );
-				aBox.SetLine( &aLine, BOX_LINE_BOTTOM );
-				aBox.SetLine( &aLine, BOX_LINE_LEFT );
-				aBox.SetLine( &aLine, BOX_LINE_RIGHT );
-				aBox.SetDistance( 85 );
-				aSet.Put( aBox );
+                aBox.SetLine( &aLine, BOX_LINE_TOP );
+                aBox.SetLine( &aLine, BOX_LINE_BOTTOM );
+                aBox.SetLine( &aLine, BOX_LINE_LEFT );
+                aBox.SetLine( &aLine, BOX_LINE_RIGHT );
+                aBox.SetDistance( 85 );
+                aSet.Put( aBox );
                 aSet.Put( SvxLRSpaceItem( 114, 114, 0, 0, RES_LR_SPACE ) );
                 aSet.Put( SvxULSpaceItem( 114, 114, RES_UL_SPACE ) );
-			}
-		}
-		break;
-	case RES_POOLFRM_GRAPHIC:
+            }
+
+            //UUUU for styles of FlyFrames do not set the FillStyle to make it a derived attribute
+            aSet.ClearItem(XATTR_FILLSTYLE);
+        }
+        break;
+    case RES_POOLFRM_GRAPHIC:
 	case RES_POOLFRM_OLE:
 		{
             aSet.Put( SwFmtAnchor( FLY_AT_PARA ));

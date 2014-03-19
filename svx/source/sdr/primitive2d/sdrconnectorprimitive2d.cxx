@@ -51,14 +51,13 @@ namespace drawinglayer
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
 					createHiddenGeometryPrimitives2D(
                         false,
-						basegfx::B2DPolyPolygon(getUnitPolygon())));
-			}
-			else
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                        basegfx::B2DPolyPolygon(getUnitPolygon())));
+            }
+            else
+            {
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
                         getUnitPolygon(), 
-                        basegfx::B2DHomMatrix(), 
                         getSdrLSTAttribute().getLine(), 
                         getSdrLSTAttribute().getLineStartEnd()));
 			}

@@ -40,79 +40,124 @@ using namespace com::sun::star;
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         void FillGradientPrimitive2D::generateMatricesAndColors(
             std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries, 
-            basegfx::BColor& rOutmostColor) const
+            basegfx::BColor& rOuterColor) const
         {
             rEntries.clear();
 
-			// make sure steps is not too high/low
-			const basegfx::BColor aStart(getFillGradient().getStartColor());
-			const basegfx::BColor aEnd(getFillGradient().getEndColor());
-			const sal_uInt32 nMaxSteps(sal_uInt32((aStart.getMaximumDistance(aEnd) * 127.5) + 0.5));
-			sal_uInt32 nSteps(getFillGradient().getSteps());
+            // make sure steps is not too high/low
+            const basegfx::BColor aStart(getFillGradient().getStartColor());
+            const basegfx::BColor aEnd(getFillGradient().getEndColor());
+            const sal_uInt32 nMaxSteps(sal_uInt32((aStart.getMaximumDistance(aEnd) * 127.5) + 0.5));
+            sal_uInt32 nSteps(getFillGradient().getSteps());
 
-			if(nSteps == 0)
-			{
-				nSteps = nMaxSteps;
-			}
+            if(nSteps == 0)
+            {
+                nSteps = nMaxSteps;
+            }
 
-			if(nSteps < 2)
-			{
-				nSteps = 2;
-			}
+            if(nSteps < 2)
+            {
+                nSteps = 2;
+            }
 
-			if(nSteps > nMaxSteps)
-			{
-				nSteps = nMaxSteps;
-			}
+            if(nSteps > nMaxSteps)
+            {
+                nSteps = nMaxSteps;
+            }
 
-			switch(getFillGradient().getStyle())
-			{
-				case attribute::GRADIENTSTYLE_LINEAR:
-				{
-					texture::GeoTexSvxGradientLinear aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getAngle());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-				case attribute::GRADIENTSTYLE_AXIAL:
-				{
-					texture::GeoTexSvxGradientAxial aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getAngle());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-				case attribute::GRADIENTSTYLE_RADIAL:
-				{
-					texture::GeoTexSvxGradientRadial aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getOffsetX(), getFillGradient().getOffsetY());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-				case attribute::GRADIENTSTYLE_ELLIPTICAL:
-				{
-					texture::GeoTexSvxGradientElliptical aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getOffsetX(), getFillGradient().getOffsetY(), getFillGradient().getAngle());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-				case attribute::GRADIENTSTYLE_SQUARE:
-				{
-					texture::GeoTexSvxGradientSquare aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getOffsetX(), getFillGradient().getOffsetY(), getFillGradient().getAngle());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-				case attribute::GRADIENTSTYLE_RECT:
-				{
-					texture::GeoTexSvxGradientRect aGradient(getObjectRange(), aStart, aEnd, nSteps, getFillGradient().getBorder(), getFillGradient().getOffsetX(), getFillGradient().getOffsetY(), getFillGradient().getAngle());
-					aGradient.appendTransformationsAndColors(rEntries, rOutmostColor);
-					break;
-				}
-			}
+            switch(getFillGradient().getStyle())
+            {
+                case attribute::GRADIENTSTYLE_LINEAR:
+                {
+                    texture::GeoTexSvxGradientLinear aGradient(
+                        getDefinitionRange(), 
+                        getOutputRange(),
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getAngle());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+                case attribute::GRADIENTSTYLE_AXIAL:
+                {
+                    texture::GeoTexSvxGradientAxial aGradient(
+                        getDefinitionRange(), 
+                        getOutputRange(),
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getAngle());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+                case attribute::GRADIENTSTYLE_RADIAL:
+                {
+                    texture::GeoTexSvxGradientRadial aGradient(
+                        getDefinitionRange(), 
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getOffsetX(), 
+                        getFillGradient().getOffsetY());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+                case attribute::GRADIENTSTYLE_ELLIPTICAL:
+                {
+                    texture::GeoTexSvxGradientElliptical aGradient(
+                        getDefinitionRange(), 
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getOffsetX(), 
+                        getFillGradient().getOffsetY(), 
+                        getFillGradient().getAngle());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+                case attribute::GRADIENTSTYLE_SQUARE:
+                {
+                    texture::GeoTexSvxGradientSquare aGradient(
+                        getDefinitionRange(), 
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getOffsetX(), 
+                        getFillGradient().getOffsetY(), 
+                        getFillGradient().getAngle());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+                case attribute::GRADIENTSTYLE_RECT:
+                {
+                    texture::GeoTexSvxGradientRect aGradient(
+                        getDefinitionRange(), 
+                        aStart, 
+                        aEnd, 
+                        nSteps, 
+                        getFillGradient().getBorder(), 
+                        getFillGradient().getOffsetX(), 
+                        getFillGradient().getOffsetY(), 
+                        getFillGradient().getAngle());
+                    aGradient.appendTransformationsAndColors(rEntries, rOuterColor);
+                    break;
+                }
+            }
         }
 
         Primitive2DSequence FillGradientPrimitive2D::createOverlappingFill(
             const std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries,
-            const basegfx::BColor& rOutmostColor,
+            const basegfx::BColor& rOuterColor,
             const basegfx::B2DPolygon& rUnitPolygon) const
         {
             // prepare return value
@@ -121,8 +166,9 @@ namespace drawinglayer
             // create solid fill with outmost color
             aRetval[0] = Primitive2DReference(
                 new PolyPolygonColorPrimitive2D(
-                    basegfx::B2DPolyPolygon(basegfx::tools::createPolygonFromRect(getObjectRange())), 
-                    rOutmostColor));
+                    basegfx::B2DPolyPolygon(
+                        basegfx::tools::createPolygonFromRect(getOutputRange())), 
+                    rOuterColor));
 
             // create solid fill steps
             for(sal_uInt32 a(0); a < rEntries.size(); a++)
@@ -144,14 +190,14 @@ namespace drawinglayer
 
         Primitive2DSequence FillGradientPrimitive2D::createNonOverlappingFill(
             const std::vector< drawinglayer::texture::B2DHomMatrixAndBColor >& rEntries, 
-            const basegfx::BColor& rOutmostColor,
+            const basegfx::BColor& rOuterColor,
             const basegfx::B2DPolygon& rUnitPolygon) const
         {
             // prepare return value
             Primitive2DSequence aRetval(rEntries.size() + 1);
 
-            // get outmost range from object
-            basegfx::B2DRange aOutmostRange(getObjectRange());
+            // get outmost viusible range from object
+            basegfx::B2DRange aOutmostRange(getOutputRange());
             basegfx::B2DPolyPolygon aCombinedPolyPoly;
 
             if(rEntries.size())
@@ -169,7 +215,7 @@ namespace drawinglayer
             aRetval[0] = Primitive2DReference(
                 new PolyPolygonColorPrimitive2D(
                     aCombinedPolyPoly, 
-                    rOutmostColor));
+                    rOuterColor));
 
             if(rEntries.size())
             {
@@ -204,10 +250,10 @@ namespace drawinglayer
             return aRetval;
         }
 
-		Primitive2DSequence FillGradientPrimitive2D::createFill(bool bOverlapping) const
-		{
+        Primitive2DSequence FillGradientPrimitive2D::createFill(bool bOverlapping) const
+        {
             // prepare shape of the Unit Polygon
-			basegfx::B2DPolygon aUnitPolygon;
+            basegfx::B2DPolygon aUnitPolygon;
 
             switch(getFillGradient().getStyle())
             {
@@ -227,22 +273,22 @@ namespace drawinglayer
             // get the transform matrices and colors (where colors
             // will have one more entry that matrices)
             std::vector< drawinglayer::texture::B2DHomMatrixAndBColor > aEntries;
-            basegfx::BColor aOutmostColor;
+            basegfx::BColor aOuterColor;
 
-            generateMatricesAndColors(aEntries, aOutmostColor);
+            generateMatricesAndColors(aEntries, aOuterColor);
 
             if(bOverlapping)
             {
-                return createOverlappingFill(aEntries, aOutmostColor, aUnitPolygon);
+                return createOverlappingFill(aEntries, aOuterColor, aUnitPolygon);
             }
             else
             {
-                return createNonOverlappingFill(aEntries, aOutmostColor, aUnitPolygon);
+                return createNonOverlappingFill(aEntries, aOuterColor, aUnitPolygon);
             }
         }
 
-		Primitive2DSequence FillGradientPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& /*rViewInformation*/) const
-		{
+        Primitive2DSequence FillGradientPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& /*rViewInformation*/) const
+        {
             // default creates overlapping fill which works with AntiAliasing and without.
             // The non-overlapping version does not create single filled polygons, but
             // PolyPolygons where each one describes a 'ring' for the gradient such
@@ -254,46 +300,59 @@ namespace drawinglayer
             {
                 static bool bOverlapping(true); // allow to test non-overlapping in the debugger
 
-        		return createFill(bOverlapping);
+                return createFill(bOverlapping);
             }
             else
             {
                 return Primitive2DSequence();
             }
-		}
+        }
 
-		FillGradientPrimitive2D::FillGradientPrimitive2D(
-			const basegfx::B2DRange& rObjectRange, 
-			const attribute::FillGradientAttribute& rFillGradient)
-		:	BufferedDecompositionPrimitive2D(),
-			maObjectRange(rObjectRange),
-			maFillGradient(rFillGradient)
-		{
-		}
+        FillGradientPrimitive2D::FillGradientPrimitive2D(
+            const basegfx::B2DRange& rOutputRange, 
+            const attribute::FillGradientAttribute& rFillGradient)
+        :   BufferedDecompositionPrimitive2D(),
+            maOutputRange(rOutputRange),
+            maDefinitionRange(rOutputRange),
+            maFillGradient(rFillGradient)
+        {
+        }
 
-		bool FillGradientPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
-			{
-				const FillGradientPrimitive2D& rCompare = (FillGradientPrimitive2D&)rPrimitive;
+        FillGradientPrimitive2D::FillGradientPrimitive2D(
+            const basegfx::B2DRange& rOutputRange, 
+            const basegfx::B2DRange& rDefinitionRange, 
+            const attribute::FillGradientAttribute& rFillGradient)
+        :   BufferedDecompositionPrimitive2D(),
+            maOutputRange(rOutputRange),
+            maDefinitionRange(rDefinitionRange),
+            maFillGradient(rFillGradient)
+        {
+        }
 
-				return (getObjectRange() == rCompare.getObjectRange() 
-					&& getFillGradient() == rCompare.getFillGradient());
-			}
+        bool FillGradientPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
+        {
+            if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
+            {
+                const FillGradientPrimitive2D& rCompare = (FillGradientPrimitive2D&)rPrimitive;
 
-			return false;
-		}
+                return (getOutputRange() == rCompare.getOutputRange() 
+                    && getDefinitionRange() == rCompare.getDefinitionRange()
+                    && getFillGradient() == rCompare.getFillGradient());
+            }
 
-		basegfx::B2DRange FillGradientPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
-		{
-			// return ObjectRange
-			return getObjectRange();
-		}
+            return false;
+        }
 
-		// provide unique ID
-		ImplPrimitrive2DIDBlock(FillGradientPrimitive2D, PRIMITIVE2D_ID_FILLGRADIENTPRIMITIVE2D)
+        basegfx::B2DRange FillGradientPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
+        {
+            // return the geometrically visible area
+            return getOutputRange();
+        }
 
-	} // end of namespace primitive2d
+        // provide unique ID
+        ImplPrimitrive2DIDBlock(FillGradientPrimitive2D, PRIMITIVE2D_ID_FILLGRADIENTPRIMITIVE2D)
+
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
