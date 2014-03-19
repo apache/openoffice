@@ -19,9 +19,6 @@
  * 
  *************************************************************/
 
-//#include "salgdi.hxx"
-#include "tools/debug.hxx"
-
 #include "ctfonts.hxx"
 
 // =======================================================================
@@ -62,7 +59,8 @@ private:
 	CTLineRef mpCTLine;
 
 	int mnCharCount;		// ==mnEndCharPos-mnMinCharPos
-	int mnTrailingSpaces;
+	int mnTrailingSpaceCount;
+	double mfTrailingSpaceWidth;	// preserves the width of stripped-off trailing space
 					
 	// to prevent overflows
 	// font requests get size limited by downscaling huge fonts
@@ -72,7 +70,6 @@ private:
 	// cached details about the resulting layout
 	// mutable members since these details are all lazy initialized
 	mutable double	mfCachedWidth;			// cached value of resulting typographical width
-	mutable double	mfTrailingSpaceWidth;   // in Pixels
 
 	// x-offset relative to layout origin
 	// currently only used in RTL-layouts
@@ -86,10 +83,10 @@ CTLayout::CTLayout( const CTTextStyle* pTextStyle )
 ,	mpAttrString( NULL )
 ,	mpCTLine( NULL )
 ,	mnCharCount( 0 )
-,	mnTrailingSpaces( 0 )
+,	mnTrailingSpaceCount( 0 )
+,	mfTrailingSpaceWidth( 0.0 )
 ,	mfFontScale( pTextStyle->mfFontScale )
 ,	mfCachedWidth( -1 )
-,	mfTrailingSpaceWidth( 0 )
 ,	mnBaseAdv( 0 )
 {
 	CFRetain( mpTextStyle->GetStyleDict() );
@@ -131,9 +128,10 @@ bool CTLayout::LayoutText( ImplLayoutArgs& rArgs )
 	CFRelease( aCFText);
 
 	// get info about trailing whitespace to prepare for text justification in AdjustLayout()
-	mnTrailingSpaces = 0;
-	for( int i = mnEndCharPos; --i >= mnMinCharPos; ++mnTrailingSpaces )
-		if( !IsSpacingGlyph( rArgs.mpStr[i] | GF_ISCHAR ))
+	mnTrailingSpaceCount = 0;
+	for( int i = mnEndCharPos; --i >= mnMinCharPos; ++mnTrailingSpaceCount )
+		if( !IsSpacingGlyph( rArgs.mpStr[i] | GF_ISCHAR )
+		&&  (rArgs.mpStr[i] != 0x00A0) )
 			break;
 	return true;
 }
@@ -145,38 +143,22 @@ void CTLayout::AdjustLayout( ImplLayoutArgs& rArgs )
 	if( !mpCTLine)
 		return;
 
-	const DynCoreTextSyms& rCT = DynCoreTextSyms::get();
-	// CoreText fills trailing space during justification so we have to
-	// take that into account when requesting CT to justify something
-	mfTrailingSpaceWidth = rCT.LineGetTrailingWhitespaceWidth( mpCTLine );
-	const int nTrailingSpaceWidth = rint( mfFontScale * mfTrailingSpaceWidth );
-
-	int nOrigWidth = GetTextWidth();
 	int nPixelWidth = rArgs.mnLayoutWidth;
-	if( nPixelWidth )
-	{
-		nPixelWidth -= nTrailingSpaceWidth;
-		if( nPixelWidth <= 0)
-			return;
-	}
-	else if( rArgs.mpDXArray )
+	if( rArgs.mpDXArray )
 	{
 		// for now we are only interested in the layout width
 		// TODO: use all mpDXArray elements for layouting
-		nPixelWidth = rArgs.mpDXArray[ mnCharCount - 1 - mnTrailingSpaces ];
+		nPixelWidth = rArgs.mpDXArray[ mnCharCount-1 ];
 	}
+	else if( !nPixelWidth ) // short-circuit if there is nothing to adjust
+		return;
 
 	// short-circuit when justifying an all-whitespace string
-	if( mnTrailingSpaces >= mnCharCount)
+	if( mnTrailingSpaceCount >= mnCharCount)
 	{
-		mfCachedWidth = mfTrailingSpaceWidth = nPixelWidth / mfFontScale;
+		mfCachedWidth = nPixelWidth / mfFontScale;
 		return;
 	}
-
-	// in RTL-layouts trailing spaces are leftmost
-	// TODO: use BiDi-algorithm to thoroughly check this assumption
-	if( rArgs.mnFlags & SAL_LAYOUT_BIDI_RTL)
-		mnBaseAdv = nTrailingSpaceWidth;
 
 	// return early if there is nothing to do
 	if( nPixelWidth <= 0 )
@@ -184,33 +166,46 @@ void CTLayout::AdjustLayout( ImplLayoutArgs& rArgs )
 
 	// HACK: justification requests which change the width by just one pixel are probably
 	// #i86038# introduced by lossy conversions between integer based coordinate system
+	const int nOrigWidth = GetTextWidth();
 	if( (nOrigWidth >= nPixelWidth-1) && (nOrigWidth <= nPixelWidth+1) )
 		return;
 
 	// if the text to be justified has whitespace in it then
 	// - Writer goes crazy with its HalfSpace magic
-	// - LayoutEngine handles spaces specially (in particular at the text start or end)
-	if( mnTrailingSpaces ) {
-		// adjust for Writer's SwFntObj::DrawText() Halfspace magic at the text end
-		std::vector<sal_Int32> aOrigDXAry;
-		aOrigDXAry.resize( mnCharCount);
-		FillDXArray( &aOrigDXAry[0] );
-		int nLastCharSpace = rArgs.mpDXArray[ mnCharCount-1-mnTrailingSpaces ]
-			- aOrigDXAry[ mnCharCount-1-mnTrailingSpaces ];
-		nPixelWidth -= nLastCharSpace;
-		if( nPixelWidth < 0 )
+	// - CoreText handles spaces specially (in particular at the text end)
+	if( mnTrailingSpaceCount ) {
+		int nTrailingSpaceWidth = 0;
+		if( rArgs.mpDXArray) {
+			const int nFullPixWidth = nPixelWidth;
+			nPixelWidth = rArgs.mpDXArray[ mnCharCount-1-mnTrailingSpaceCount ];
+			nTrailingSpaceWidth = nFullPixWidth - nPixelWidth;
+			mfTrailingSpaceWidth = nTrailingSpaceWidth;
+		} else {
+			if( mfTrailingSpaceWidth <= 0.0 )
+				mfTrailingSpaceWidth = CTLineGetTrailingWhitespaceWidth( mpCTLine );
+			nTrailingSpaceWidth = rint( mfTrailingSpaceWidth );
+			nPixelWidth -= nTrailingSpaceWidth;
+		}
+		if( nPixelWidth <= 0 )
 			return;
+
 		// recreate the CoreText line layout without trailing spaces
 		CFRelease( mpCTLine );
 		CFStringRef aCFText = CFStringCreateWithCharactersNoCopy( NULL, rArgs.mpStr + mnMinCharPos,
-			mnCharCount - mnTrailingSpaces, kCFAllocatorNull );
+			mnCharCount - mnTrailingSpaceCount, kCFAllocatorNull );
 		CFAttributedStringRef pAttrStr = CFAttributedStringCreate( NULL, aCFText, mpTextStyle->GetStyleDict() );
 		mpCTLine = CTLineCreateWithAttributedString( pAttrStr );
 		CFRelease( aCFText);
 		CFRelease( pAttrStr );
+
+		// in RTL-layouts trailing spaces are leftmost
+		// TODO: use BiDi-algorithm to thoroughly check this assumption
+		if( rArgs.mnFlags & SAL_LAYOUT_BIDI_RTL)
+			mnBaseAdv = nTrailingSpaceWidth;
 	}
 
-	CTLineRef pNewCTLine = rCT.LineCreateJustifiedLine( mpCTLine, 1.0, nPixelWidth / mfFontScale );
+	const double fAdjustedWidth = nPixelWidth / mfFontScale;
+	CTLineRef pNewCTLine = CTLineCreateJustifiedLine( mpCTLine, 1.0, fAdjustedWidth );
 	if( !pNewCTLine ) { // CTLineCreateJustifiedLine can and does fail
 		// handle failure by keeping the unjustified layout
 		// TODO: a better solution such as
@@ -221,8 +216,7 @@ void CTLayout::AdjustLayout( ImplLayoutArgs& rArgs )
 	}
 	CFRelease( mpCTLine );
 	mpCTLine = pNewCTLine;
-	mfCachedWidth = -1; // TODO: can we set it directly to target width we requested? For now we re-measure
-	mfTrailingSpaceWidth = 0;
+	mfCachedWidth = fAdjustedWidth + mfTrailingSpaceWidth;
 }
 
 // -----------------------------------------------------------------------
@@ -390,10 +384,14 @@ long CTLayout::FillDXArray( sal_Int32* pDXArray ) const
 
 	long nPixWidth = GetTextWidth();
 	if( pDXArray ) {
-		// initialize the result array
-		for( int i = 0; i < mnCharCount; ++i)
-			pDXArray[i] = 0;
-		// handle each glyph run
+		// prepare the sub-pixel accurate logical-width array
+		::std::vector<float> aWidthVector( mnCharCount );
+		if( mnTrailingSpaceCount && (mfTrailingSpaceWidth > 0.0) ) {
+			const double fOneWidth = mfTrailingSpaceWidth / mnTrailingSpaceCount;
+			for( int i = 1; i <= mnTrailingSpaceCount; ++i)
+				aWidthVector[ mnCharCount - i ] = fOneWidth;
+		}
+		// measure advances in each glyph run
 		CFArrayRef aGlyphRuns = CTLineGetGlyphRuns( mpCTLine );
 		const int nRunCount = CFArrayGetCount( aGlyphRuns );
 		typedef std::vector<CGSize> CGSizeVector;
@@ -404,14 +402,23 @@ long CTLayout::FillDXArray( sal_Int32* pDXArray ) const
 			CTRunRef pGlyphRun = (CTRunRef)CFArrayGetValueAtIndex( aGlyphRuns, nRunIndex );
 			const CFIndex nGlyphCount = CTRunGetGlyphCount( pGlyphRun );
 			const CFRange aFullRange = CFRangeMake( 0, nGlyphCount );
-			aSizeVec.reserve( nGlyphCount );
-			aIndexVec.reserve( nGlyphCount );
+			aSizeVec.resize( nGlyphCount );
+			aIndexVec.resize( nGlyphCount );
 			CTRunGetAdvances( pGlyphRun, aFullRange, &aSizeVec[0] );
 			CTRunGetStringIndices( pGlyphRun, aFullRange, &aIndexVec[0] );
 			for( int i = 0; i != nGlyphCount; ++i ) {
 				const int nRelIdx = aIndexVec[i];
-				pDXArray[ nRelIdx ] += aSizeVec[i].width;
-			}
+				aWidthVector[nRelIdx] += aSizeVec[i].width;
+ 			}
+ 		}
+
+		// convert the sub-pixel accurate array into classic pDXArray integers
+		float fWidthSum = 0.0;
+		sal_Int32 nOldDX = 0;
+		for( int i = 0; i < mnCharCount; ++i) {
+			const sal_Int32 nNewDX = rint( fWidthSum += aWidthVector[i]);
+			pDXArray[i] = nNewDX - nOldDX;
+			nOldDX = nNewDX;
 		}
 	}
 

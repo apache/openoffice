@@ -647,7 +647,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			break;
 		case FN_UPDATE_CHARTS:
 			{
-				SwWait aWait( *rView.GetDocShell(), sal_True );
+				SwWait aWait( *rView.GetDocShell(), true );
 				rSh.UpdateAllCharts();
 			}
 			break;
@@ -752,7 +752,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
             if ( (!rSh.IsSelFrmMode() || nSelType & nsSelectionType::SEL_GRF) &&
                 nGalleryItemType == com::sun::star::gallery::GalleryItemType::GRAPHIC )
             {
-                SwWait aWait( *rView.GetDocShell(), sal_True );
+                SwWait aWait( *rView.GetDocShell(), true );
 
                 String aGrfName, aFltName;
                 const Graphic aGrf( pGalleryItem->GetGraphic() );
@@ -1541,11 +1541,16 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 				rSet.Put(SfxBoolItem(nWhich, bDisable));
 			}
 			break;
-			case FN_BACKSPACE:
-			case SID_DELETE:
-				if (rSh.IsSelObjProtected( FLYPROTECT_CONTENT|FLYPROTECT_PARENT ) != 0)
-					rSet.DisableItem( nWhich );
-				break;
+
+            case FN_BACKSPACE:
+            case SID_DELETE:
+                if ( ( rSh.HasReadonlySel() && !rSh.CrsrInsideInputFld() )
+                     || rSh.IsSelObjProtected( FLYPROTECT_CONTENT|FLYPROTECT_PARENT ) != 0 )
+                {
+                    rSet.DisableItem( nWhich );
+                }
+                break;
+
 			case SID_CONTOUR_DLG:
 			{
 				sal_Bool bParentCntProt = 0 != rSh.IsSelObjProtected(FLYPROTECT_CONTENT|FLYPROTECT_PARENT );

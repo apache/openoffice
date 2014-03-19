@@ -278,10 +278,10 @@ void SlideSorterView::ModelHasChanged (void)
 
 void SlideSorterView::LocalModelHasChanged(void)
 {
-	mbModelChangedWhileModifyEnabled = false;
-
-	// First call our base class.
-	View::ModelHasChanged ();
+    mbModelChangedWhileModifyEnabled = false;
+    
+    // First call our base class.
+    View::ModelHasChanged ();
 }
 
 

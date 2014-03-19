@@ -256,10 +256,13 @@ namespace drawinglayer
 				aTextAnchorRange.expand(aTopLeft);
 				aTextAnchorRange.expand(aBottomRight);
 
-				// now create a transformation from this basic range (aTextAnchorRange)
-				aAnchorTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
-					aTextAnchorRange.getWidth(), aTextAnchorRange.getHeight(),
-					aTextAnchorRange.getMinX(), aTextAnchorRange.getMinY());
+                // now create a transformation from this basic range (aTextAnchorRange)
+                // #121494# if we have no scale use at least 1.0 to have a carrier e.g. for
+                // mirror values, else these will get lost
+                aAnchorTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
+                    basegfx::fTools::equalZero(aTextAnchorRange.getWidth()) ? 1.0 : aTextAnchorRange.getWidth(), 
+                    basegfx::fTools::equalZero(aTextAnchorRange.getHeight()) ? 1.0 : aTextAnchorRange.getHeight(),
+                    aTextAnchorRange.getMinX(), aTextAnchorRange.getMinY());
 
 				// apply mirroring
 				aAnchorTransform.scale(bMirrorX ? -1.0 : 1.0, bMirrorY ? -1.0 : 1.0);

@@ -97,8 +97,6 @@ public class ShapeTypes {
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
 		sdNavigator.focus();
-		sdNavigator.select(0);
-		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
 	}
@@ -132,8 +130,6 @@ public class ShapeTypes {
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
 		sdNavigator.focus();
-		sdNavigator.select(0);
-		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
 	}

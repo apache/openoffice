@@ -1358,7 +1358,7 @@ void SwTextShell::Execute(SfxRequest &rReq)
         SwDocStat aCurr;
         SwDocStat aDocStat( rSh.getIDocumentStatistics()->GetDocStat() );
         {
-            SwWait aWait( *GetView().GetDocShell(), sal_True );
+            SwWait aWait( *GetView().GetDocShell(), true );
             rSh.StartAction();
             rSh.CountWords( aCurr );
             rSh.UpdateDocStat( aDocStat );
@@ -1628,6 +1628,16 @@ void SwTextShell::GetState( SfxItemSet &rSet )
                 rSet.DisableItem( nWhich );
             }
             break;
+
+
+        case FN_INSERT_BREAK:
+            if ( rSh.HasReadonlySel()
+                 && !rSh.CrsrInsideInputFld() )
+            {
+                rSet.DisableItem( nWhich );
+            }
+            break;
+
 
         case FN_INSERT_BREAK_DLG:
         case FN_INSERT_COLUMN_BREAK:

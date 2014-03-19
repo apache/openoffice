@@ -1630,15 +1630,23 @@ sal_uInt16 GraphicFilter::ImportGraphic( Graphic& rGraphic, const String& rPath,
 			if( !ImportXPM( rIStream, rGraphic ) )
 				nStatus = GRFILTER_FILTERERROR;
 		}
-		else if( aFilterName.EqualsIgnoreCaseAscii( IMP_BMP ) ||
-					aFilterName.EqualsIgnoreCaseAscii( IMP_SVMETAFILE ) )
-		{
-			// SV interne Importfilter fuer Bitmaps und MetaFiles
-			rIStream >> rGraphic;
-			if( rIStream.GetError() )
-				nStatus = GRFILTER_FORMATERROR;
-		}
-		else if( aFilterName.EqualsIgnoreCaseAscii( IMP_WMF ) ||
+        else if( aFilterName.EqualsIgnoreCaseAscii( IMP_BMP ) ||
+                    aFilterName.EqualsIgnoreCaseAscii( IMP_SVMETAFILE ) )
+        {
+            // SV interne Importfilter fuer Bitmaps und MetaFiles
+            rIStream >> rGraphic;
+
+            if( rIStream.GetError() )
+            {
+                nStatus = GRFILTER_FORMATERROR;
+            }
+            else
+            {
+                // #15508# added BMP type (checked, works)
+                eLinkType = GFX_LINK_TYPE_NATIVE_BMP;
+            }
+        }
+        else if( aFilterName.EqualsIgnoreCaseAscii( IMP_WMF ) ||
 				aFilterName.EqualsIgnoreCaseAscii( IMP_EMF ) )
 		{
 			GDIMetaFile aMtf;
