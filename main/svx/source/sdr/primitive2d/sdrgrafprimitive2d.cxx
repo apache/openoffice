@@ -44,13 +44,15 @@ namespace drawinglayer
 			// create unit outline polygon
 			basegfx::B2DPolygon aUnitOutline(basegfx::tools::createUnitPolygon());
 
-			// add fill, but only when graphic ist transparent
-			if(!getSdrLFSTAttribute().getFill().isDefault() && isTransparent())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
-					createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+            // add fill, but only when graphic ist transparent
+            if(!getSdrLFSTAttribute().getFill().isDefault() && isTransparent())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    createPolyPolygonFillPrimitive(
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -87,22 +89,25 @@ namespace drawinglayer
 					const basegfx::B2DRange aExpandedRange(-fScaleX, -fScaleY, 1.0 + fScaleX, 1.0 + fScaleY);
 					basegfx::B2DPolygon aExpandedUnitOutline(basegfx::tools::createPolygonFromRect(aExpandedRange));
 
-					appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    aExpandedUnitOutline.transform(getTransform());
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                         createPolygonLinePrimitive(
                             aExpandedUnitOutline, 
-                            getTransform(), 
                             getSdrLFSTAttribute().getLine(),
-							attribute::SdrLineStartEndAttribute()));
-				}
-				else
-				{
-					appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                            attribute::SdrLineStartEndAttribute()));
+                }
+                else
+                {
+                    basegfx::B2DPolygon aTransformed(aUnitOutline);
+
+                    aTransformed.transform(getTransform());
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                         createPolygonLinePrimitive(
-                            aUnitOutline, getTransform(), 
+                            aTransformed, 
                             getSdrLFSTAttribute().getLine(),
-							attribute::SdrLineStartEndAttribute()));
-				}
-			}
+                            attribute::SdrLineStartEndAttribute()));
+                }
+            }
 
 			// add text
 			if(!getSdrLFSTAttribute().getText().isDefault())

@@ -34,8 +34,8 @@
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** FillHatchPrimitive2D class
 
             This class defines a hatch filling for a rectangular area. The
@@ -50,47 +50,57 @@ namespace drawinglayer
 
             The decomposition will deliver the hatch lines.
          */
-		class DRAWINGLAYER_DLLPUBLIC FillHatchPrimitive2D : public DiscreteMetricDependentPrimitive2D
-		{
-		private:
-            /// the geometric definition
-			basegfx::B2DRange						maObjectRange;
+        class DRAWINGLAYER_DLLPUBLIC FillHatchPrimitive2D : public DiscreteMetricDependentPrimitive2D
+        {
+        private:
+            /// the geometrically visible area
+            basegfx::B2DRange                       maOutputRange;
+
+            /// the area the gradient definition is based on
+            /// in the simplest case identical to OutputRange
+            basegfx::B2DRange                       maDefinitionRange;
 
             /// the hatch definition
-			attribute::FillHatchAttribute			maFillHatch;
+            attribute::FillHatchAttribute           maFillHatch;
 
             /// hatch background color (if used)
-			basegfx::BColor							maBColor;
+            basegfx::BColor                         maBColor;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
         public:
-            /// constructor
-			FillHatchPrimitive2D(
-				const basegfx::B2DRange& rObjectRange, 
-				const basegfx::BColor& rBColor, 
-				const attribute::FillHatchAttribute& rFillHatch);
+            /// constructors. The one without definition range will use output range as definition range
+            FillHatchPrimitive2D(
+                const basegfx::B2DRange& rOutputRange, 
+                const basegfx::BColor& rBColor, 
+                const attribute::FillHatchAttribute& rFillHatch);
+            FillHatchPrimitive2D(
+                const basegfx::B2DRange& rOutputRange, 
+                const basegfx::B2DRange& rDefinitionRange, 
+                const basegfx::BColor& rBColor, 
+                const attribute::FillHatchAttribute& rFillHatch);
 
-			/// data read access
-			const basegfx::B2DRange& getObjectRange() const { return maObjectRange; }
-			const attribute::FillHatchAttribute& getFillHatch() const { return maFillHatch; }
-			const basegfx::BColor& getBColor() const { return maBColor; }
+            /// data read access
+            const basegfx::B2DRange& getOutputRange() const { return maOutputRange; }
+            const basegfx::B2DRange& getDefinitionRange() const { return maDefinitionRange; }
+            const attribute::FillHatchAttribute& getFillHatch() const { return maFillHatch; }
+            const basegfx::BColor& getBColor() const { return maBColor; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
+            /// compare operator
+            virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// get local decomposition. Overloaded since this decomposition is view-dependent
-			virtual Primitive2DSequence get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get local decomposition. Overloaded since this decomposition is view-dependent
+            virtual Primitive2DSequence get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
             /// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

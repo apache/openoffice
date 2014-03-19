@@ -942,28 +942,27 @@ drawinglayer::primitive2d::Primitive2DSequence SdrDragMethod::AddConnectorOverla
                         }
                     }
 
-		            if(bUseSolidDragging)
-					{
-						const SfxItemSet& rItemSet = pEdge->GetMergedItemSet();
-						const drawinglayer::attribute::SdrLineAttribute aLine(
-							drawinglayer::primitive2d::createNewSdrLineAttribute(rItemSet));
+                    if(bUseSolidDragging)
+                    {
+                        const SfxItemSet& rItemSet = pEdge->GetMergedItemSet();
+                        const drawinglayer::attribute::SdrLineAttribute aLine(
+                            drawinglayer::primitive2d::createNewSdrLineAttribute(rItemSet));
 
-						if(!aLine.isDefault())
-						{
-							const drawinglayer::attribute::SdrLineStartEndAttribute aLineStartEnd(
-								drawinglayer::primitive2d::createNewSdrLineStartEndAttribute(
-									rItemSet, 
-									aLine.getWidth()));
-						
-							drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
-								aRetval, drawinglayer::primitive2d::createPolygonLinePrimitive(
-									aEdgePolygon, 
-									basegfx::B2DHomMatrix(), 
-									aLine, 
-									aLineStartEnd));
-						}
-					}
-					else
+                        if(!aLine.isDefault())
+                        {
+                            const drawinglayer::attribute::SdrLineStartEndAttribute aLineStartEnd(
+                                drawinglayer::primitive2d::createNewSdrLineStartEndAttribute(
+                                    rItemSet, 
+                                    aLine.getWidth()));
+                        
+                            drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                                aRetval, drawinglayer::primitive2d::createPolygonLinePrimitive(
+                                    aEdgePolygon, 
+                                    aLine, 
+                                    aLineStartEnd));
+                        }
+                    }
+                    else
 					{
 						const SvtOptionsDrawinglayer aSvtOptionsDrawinglayer;
 						basegfx::BColor aColA(aSvtOptionsDrawinglayer.GetStripeColorA().getBColor());
