@@ -1493,6 +1493,8 @@ if ( $installer::globals::iswindowsbuild ) { installer::control::read_encodingli
 ####################################################################
 if (($installer::globals::ismacdmgbuild) && ($installer::globals::product =~ /OpenOffice_Dev/)) { $installer::globals::devsnapshotbuild = 1; }
 
+if (($installer::globals::ismacdmgbuild) && ($installer::globals::product =~ /Apache_OpenOffice_Beta/)) { $installer::globals::betabuild = 1; }
+
 #####################################################################
 # Including additional inc files for variable settings, if defined
 #####################################################################
@@ -1576,7 +1578,10 @@ if (( ! $allvariableshashref->{'XPDINSTALLER'} ) || ( ! $installer::globals::isx
 
 if ( $installer::globals::languagepack ) { installer::scriptitems::use_langpack_copy_scpaction($scpactionsinproductarrayref); }
 if ( $installer::globals::patch ) { installer::scriptitems::use_patch_copy_scpaction($scpactionsinproductarrayref); }
-if (($installer::globals::devsnapshotbuild)) { installer::scriptitems::use_dev_copy_scpaction($scpactionsinproductarrayref); }
+if ($installer::globals::devsnapshotbuild) { installer::scriptitems::use_dev_copy_scpaction($scpactionsinproductarrayref); }
+if ($installer::globals::betabuild) { installer::scriptitems::use_beta_copy_scpaction($scpactionsinproductarrayref); }
+
+if ($installer::globals::betabuild && $installer::globals::languagepack) { installer::scriptitems::use_langbeta_copy_scpaction($scpactionsinproductarrayref); }
 
 # $scpactionsinproductarrayref = installer::scriptitems::remove_scpactions_without_name($scpactionsinproductarrayref);
 
@@ -1711,16 +1716,37 @@ for (;1;last)
     if ($installer::globals::is_release
         && $installer::globals::iswindowsbuild)
     {
-        $installer::logger::Info->printf("preparing MSI object for source version %s\n",
-            $installer::globals::source_version);
-        my $source_version_string = join(
-            "",
-            installer::patch::Version::StringToNumberArray($installer::globals::source_version));
-        $installer::globals::source_msi = installer::patch::Msi->FindAndCreate(
-            $installer::globals::source_version,
-            0,
-            $$languagestringref,
-            $installer::globals::product);
+        my $releases = installer::patch::ReleasesList::Instance()->{$installer::globals::source_version};
+        if ( ! defined $releases)
+        {
+            $installer::logger::Info->printf(
+                "there is no recorded information about previous version %s\n",
+                $installer::globals::source_version);
+            $installer::logger::Info->printf("    reverting to non-release build\n");
+            $installer::globals::is_release = 0;
+        }
+        elsif ( ! defined $releases->{'msi'}->{installer::languages::get_normalized_language($$languagestringref)})
+        {
+            $installer::logger::Info->printf(
+                "there is no recorded information about language '%s' in previous version %s\n",
+                $$languagestringref,
+                $installer::globals::source_version);
+            $installer::logger::Info->printf("    reverting to non-release build\n");
+            $installer::globals::is_release = 0;
+        }
+        else
+        {
+            $installer::logger::Info->printf("preparing MSI object for source version %s\n",
+                $installer::globals::source_version);
+            my $source_version_string = join(
+                "",
+                installer::patch::Version::StringToNumberArray($installer::globals::source_version));
+            $installer::globals::source_msi = installer::patch::Msi->FindAndCreate(
+                $installer::globals::source_version,
+                0,
+                $$languagestringref,
+                $installer::globals::product);
+        }
     }
 
 	############################################################

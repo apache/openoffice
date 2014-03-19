@@ -83,7 +83,7 @@
 #include <pagedesc.hxx>
 #include <mvsave.hxx>
 #include <vcl/virdev.hxx>
-
+#include <svx/svdundo.hxx>
 
 using namespace ::com::sun::star;
 
@@ -211,7 +211,7 @@ sal_Bool SwFEShell::Copy( SwDoc* pClpDoc, const String* pNewClpTxt )
                     pClpDoc->CloneSdrObj( *pObj, sal_False, sal_True );
 
                 SwPaM aTemp(aPos);
-                pClpDoc->Insert(aTemp, *pNew, &aSet, NULL);
+                pClpDoc->InsertDrawObj(aTemp, *pNew, aSet );
 			}
 			else
 			{
@@ -396,8 +396,7 @@ sal_Bool SwFEShell::CopyDrawSel( SwFEShell* pDestShell, const Point& rSttPt,
 					aSet.Put( aAnchor );
 					SdrObject* pNew = pDestDoc->CloneSdrObj( *pObj, bIsMove &&
 												GetDoc() == pDestDoc, sal_True );
-					pFmt = pDestDoc->Insert( *pDestShell->GetCrsr(),
-											*pNew, &aSet, NULL );
+					pFmt = pDestDoc->InsertDrawObj( *pDestShell->GetCrsr(), *pNew, aSet );
 				}
 				else
                     pFmt = pDestDoc->CopyLayoutFmt( *pFmt, aAnchor, true, true );
@@ -1299,7 +1298,7 @@ sal_Bool SwFEShell::GetDrawObjGraphic( sal_uLong nFmt, Graphic& rGrf ) const
 		}
 		else if( SOT_FORMAT_GDIMETAFILE == nFmt )
 			rGrf = Imp()->GetDrawView()->GetMarkedObjMetaFile();
-		else if( SOT_FORMAT_BITMAP == nFmt )
+		else if( SOT_FORMAT_BITMAP == nFmt || SOT_FORMATSTR_ID_PNG == nFmt )
 			rGrf = Imp()->GetDrawView()->GetMarkedObjBitmapEx();
 	}
 	return bConvert;
@@ -1456,10 +1455,15 @@ void SwFEShell::Paste( SvStream& rStrm, sal_uInt16 nAction, const Point* pPt )
 
 					DelSelectedObj();
 
-					pFmt = GetDoc()->Insert( *GetCrsr(), *pNewObj, &aFrmSet, NULL );
+					pFmt = GetDoc()->InsertDrawObj( *GetCrsr(), *pNewObj, aFrmSet );
 				}
 				else
-					pView->ReplaceObjectAtView( pOldObj, *Imp()->GetPageView(), pNewObj, sal_True );
+                {
+                    // #123922#  for handling MasterObject and virtual ones correctly, SW
+                    // wants us to call ReplaceObject at the page, but that also
+                    // triggers the same assertion (I tried it), so stay at the view method
+                    pView->ReplaceObjectAtView(pOldObj, *Imp()->GetPageView(), pNewObj);
+                }
 			}
 			break;
 
@@ -1564,23 +1568,52 @@ void SwFEShell::Paste( SvStream& rStrm, sal_uInt16 nAction, const Point* pPt )
 	delete pModel;
 }
 
-sal_Bool SwFEShell::Paste( const Graphic &rGrf )
+bool SwFEShell::Paste( const Graphic &rGrf, const String& rURL )
 {
-	SET_CURR_SHELL( this );
-	SdrObject* pObj;
-	SdrView *pView = Imp()->GetDrawView();
+    SET_CURR_SHELL( this );
+    SdrObject* pObj = 0;
+    SdrView *pView = Imp()->GetDrawView();
 
-	sal_Bool bRet = 1 == pView->GetMarkedObjectList().GetMarkCount() &&
-		(pObj = pView->GetMarkedObjectList().GetMark( 0 )->GetMarkedSdrObj())->IsClosedObj() &&
-		!pObj->ISA( SdrOle2Obj );
+    sal_Bool bRet = 1 == pView->GetMarkedObjectList().GetMarkCount() &&
+        (pObj = pView->GetMarkedObjectList().GetMark( 0 )->GetMarkedSdrObj())->IsClosedObj() &&
+        !pObj->ISA( SdrOle2Obj );
 
-	if( bRet )
-	{
-		SfxItemSet aSet(GetAttrPool(), XATTR_FILLSTYLE, XATTR_FILLBITMAP);
+    if( bRet && pObj )
+    {
+        // #123922# added code to handle the two cases of SdrGrafObj and a fillable, non-
+        // OLE object in focus
+        SdrObject* pResult = pObj;
 
-        aSet.Put(XFillStyleItem(XFILL_BITMAP));
-		aSet.Put(XFillBitmapItem(aEmptyStr, rGrf));
-		pView->SetAttributes(aSet, false);
-	}
-	return bRet;
+        if(dynamic_cast< SdrGrafObj* >(pObj))
+        {
+            SdrGrafObj* pNewGrafObj = (SdrGrafObj*)pObj->Clone();
+
+            pNewGrafObj->SetGraphic(rGrf);
+
+            // #123922#  for handling MasterObject and virtual ones correctly, SW
+            // wants us to call ReplaceObject at the page, but that also
+            // triggers the same assertion (I tried it), so stay at the view method
+            pView->ReplaceObjectAtView(pObj, *pView->GetSdrPageView(), pNewGrafObj);
+
+            // set in all cases - the Clone() will have copied an existing link (!)
+            pNewGrafObj->SetGraphicLink(rURL, String());
+
+            pResult = pNewGrafObj;
+        }
+        else
+        {
+            pView->AddUndo(new SdrUndoAttrObj(*pObj));
+
+            SfxItemSet aSet(pView->GetModel()->GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLBITMAP);
+
+            aSet.Put(XFillStyleItem(XFILL_BITMAP));
+            aSet.Put(XFillBitmapItem(String(), rGrf));
+            pObj->SetMergedItemSetAndBroadcast(aSet);
+        }
+
+        // we are done; mark the modified/new object
+        pView->MarkObj(pResult, pView->GetSdrPageView());
+    }
+
+    return bRet;
 }

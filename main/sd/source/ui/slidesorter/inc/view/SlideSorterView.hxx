@@ -110,9 +110,9 @@ public:
 
     view::Layouter& GetLayouter (void);
 
-	virtual void ModelHasChanged (void);
+    virtual void ModelHasChanged (void);
 
-	void LocalModelHasChanged(void);
+    void LocalModelHasChanged(void);
 
     /** This method is typically called before a model change takes place.
         All references to model data are released.  PostModelChange() has to

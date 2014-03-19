@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef __com_sun_star_document_XUndoManager_idl__
 #define __com_sun_star_document_XUndoManager_idl__
@@ -33,17 +31,13 @@
 #include <com/sun/star/lang/IllegalArgumentException.idl>
 #include <com/sun/star/lang/WrappedTargetException.idl>
 
-//==================================================================================================================
-
 module com { module sun { module star { module document {
 
-published interface XUndoAction;
-published interface XUndoManagerListener;
-
-//==================================================================================================================
+interface XUndoAction;
+interface XUndoManagerListener;
 
 /** provides access to the undo/redo stacks of a document
-
+    <p></p>
     <h3>Undo</h3>
     <p>Changes to a document usually result in recording of information how to undo those changes, if desired. A so-called
     undo action records the information how to undo a single change. Undo actions are maintained in a stack, so that
@@ -72,8 +66,10 @@ published interface XUndoManagerListener;
     <p>An Undo manager can be locked and unlocked, using the <member>XLockable::lock</member> and
     <member>XLockable::unlock</member> methods. When it is locked, then every attempt to add an undo action, or to
     enter or leave an Undo context, will be silently ignored.</p>
+
+    @since OpenOffice 3.4
  */
-published interface XUndoManager
+interface XUndoManager
 {
     /** allows <a href="#locking">locking</a> the undo manager.
     */
@@ -325,10 +321,6 @@ published interface XUndoManager
             );
 };
 
-//==================================================================================================================
-
 }; }; }; };
-
-//==================================================================================================================
 
 #endif

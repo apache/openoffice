@@ -70,6 +70,7 @@
 #include <drawinglayer/processor2d/objectinfoextractor2d.hxx>
 #include <drawinglayer/primitive2d/objectinfoprimitive2d.hxx>
 #include <unotools/cacheoptions.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::io;
@@ -135,7 +136,6 @@ const Graphic ImpLoadLinkedGraphic( const String aFileName, const String aFilter
 							? pGF->GetImportFormatNumber( aFilterName )
 							: GRFILTER_FORMAT_DONTKNOW;
 
-		String aEmptyStr;
 		com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > aFilterData( 1 );
 
 		// Room for improvment:
@@ -144,7 +144,14 @@ const Graphic ImpLoadLinkedGraphic( const String aFileName, const String aFilter
 		// there we should create a new service to provide this data if needed
 		aFilterData[ 0 ].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CreateNativeLink" ) );
 		aFilterData[ 0 ].Value = Any( sal_True );
-		pGF->ImportGraphic( aGraphic, aEmptyStr, *pInStrm, nFilter, NULL, 0, &aFilterData );
+
+        // #123042# for e.g SVG the path is needed, so hand it over here. I have no real idea
+        // what consequences this may have; maybe this is not handed over by purpose here. Not
+        // handing it over means that any GraphicFormat that internallv needs a path as base
+        // to interpret included links may fail.
+        // Alternatively the path may be set at the result after this call when it is known
+        // that it is a SVG graphic, but only because noone yet tried to interpret it.
+        pGF->ImportGraphic( aGraphic, aFileName, *pInStrm, nFilter, NULL, 0, &aFilterData );
 	}
 	return aGraphic;
 }
@@ -1668,6 +1675,118 @@ Reference< XInputStream > SdrGrafObj::getInputStream()
 	}
 
 	return xStream;
+}
+
+// moved crop handle creation here; this is the object type using them
+void SdrGrafObj::addCropHandles(SdrHdlList& rTarget) const
+{
+    basegfx::B2DHomMatrix aMatrix;
+    basegfx::B2DPolyPolygon aPolyPolygon;
+
+    // get object transformation
+    TRGetBaseGeometry(aMatrix, aPolyPolygon);
+
+    // part of object transformation correction, but used later, so defined outside next scope
+    double fShearX(0.0), fRotate(0.0);
+
+    {   // TTTT correct shear, it comes currently mirrored from TRGetBaseGeometry, can be removed with aw080
+        basegfx::B2DTuple aScale;
+        basegfx::B2DTuple aTranslate;
+
+        aMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
+
+        if(!basegfx::fTools::equalZero(fShearX))
+        {
+            // shearX is used, correct it
+            fShearX = -fShearX;
+        }
+
+        aMatrix = basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
+            aScale,
+            fShearX,
+            fRotate,
+            aTranslate);
+    }
+
+    // get crop values
+    const SdrGrafCropItem& rCrop = static_cast< const SdrGrafCropItem& >(GetMergedItem(SDRATTR_GRAFCROP));
+
+    if(rCrop.GetLeft() || rCrop.GetTop() || rCrop.GetRight() ||rCrop.GetBottom())
+    {
+        // decompose object transformation to have current translate and scale
+        basegfx::B2DVector aScale, aTranslate;
+        double fRotate, fShearX;
+
+        aMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
+
+        if(!aScale.equalZero())
+        {
+            // get crop scale
+            const basegfx::B2DVector aCropScaleFactor(
+                GetGraphicObject().calculateCropScaling(
+                    aScale.getX(),
+                    aScale.getY(),
+                    rCrop.GetLeft(),
+                    rCrop.GetTop(),
+                    rCrop.GetRight(),
+                    rCrop.GetBottom()));
+
+            // apply crop scale
+            const double fCropLeft(rCrop.GetLeft() * aCropScaleFactor.getX());
+            const double fCropTop(rCrop.GetTop() * aCropScaleFactor.getY());
+            const double fCropRight(rCrop.GetRight() * aCropScaleFactor.getX());
+            const double fCropBottom(rCrop.GetBottom() * aCropScaleFactor.getY());
+            basegfx::B2DHomMatrix aMatrixForCropViewHdl(aMatrix);
+
+            if(IsMirrored())
+            {
+                // create corrected new matrix, TTTT can be removed with aw080
+                // the old mirror only can mirror horizontally; the vertical mirror
+                // is faked by using the horizontal and 180 degree rotation. Since
+                // the object can be rotated differently from 180 degree, this is
+                // not safe to detect. Just correct horizontal mirror (which is
+                // in IsMirrored()) and keep the rotation angle
+                // caution: Do not modify aMatrix, it is used below to calculate
+                // the exact handle positions
+                basegfx::B2DHomMatrix aPreMultiply;
+
+                // mirrored X, apply
+                aPreMultiply.translate(-0.5, 0.0);
+                aPreMultiply.scale(-1.0, 1.0);
+                aPreMultiply.translate(0.5, 0.0);
+
+                aMatrixForCropViewHdl = aMatrixForCropViewHdl * aPreMultiply;
+            }
+
+            rTarget.AddHdl(
+                new SdrCropViewHdl(
+                    aMatrixForCropViewHdl,
+                    GetGraphicObject().GetGraphic(),
+                    fCropLeft,
+                    fCropTop,
+                    fCropRight,
+                    fCropBottom));
+        }
+    }
+
+    basegfx::B2DPoint aPos;
+
+    aPos = aMatrix * basegfx::B2DPoint(0.0, 0.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_UPLFT, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(0.5, 0.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_UPPER, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(1.0, 0.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_UPRGT, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(0.0, 0.5); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_LEFT , fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(1.0, 0.5); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_RIGHT, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(0.0, 1.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_LWLFT, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(0.5, 1.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_LOWER, fShearX, fRotate));
+    aPos = aMatrix * basegfx::B2DPoint(1.0, 1.0); 
+    rTarget.AddHdl(new SdrCropHdl(Point(basegfx::fround(aPos.getX()), basegfx::fround(aPos.getY())), HDL_LWRGT, fShearX, fRotate));
 }
 
 // eof

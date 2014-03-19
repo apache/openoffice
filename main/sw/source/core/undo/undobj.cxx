@@ -47,17 +47,24 @@
 #include <comcore.hrc>
 #include <docsh.hxx>
 
-class SwRedlineSaveData : public SwUndRng, public SwRedlineData,
-						  private SwUndoSaveSection
+class SwRedlineSaveData: public SwUndRng, public SwRedlineData, private SwUndoSaveSection
 {
 public:
-	SwRedlineSaveData( SwComparePosition eCmpPos,
-						const SwPosition& rSttPos, const SwPosition& rEndPos,
-						SwRedline& rRedl, sal_Bool bCopyNext );
-	~SwRedlineSaveData();
-	void RedlineToDoc( SwPaM& rPam );
-	SwNodeIndex* GetMvSttIdx() const
-		{ return SwUndoSaveSection::GetMvSttIdx(); }
+    SwRedlineSaveData(
+        SwComparePosition eCmpPos,
+        const SwPosition& rSttPos,
+        const SwPosition& rEndPos,
+        SwRedline& rRedl,
+        sal_Bool bCopyNext );
+
+    ~SwRedlineSaveData();
+
+    void RedlineToDoc( SwPaM& rPam );
+
+    SwNodeIndex* GetMvSttIdx() const
+    {
+        return SwUndoSaveSection::GetMvSttIdx();
+    }
 
 #ifdef DBG_UTIL
     sal_uInt16 nRedlineCount;
@@ -246,7 +253,7 @@ void SwUndo::UndoWithContext(SfxUndoContext & rContext)
             dynamic_cast< ::sw::UndoRedoContext * >(& rContext));
     OSL_ASSERT(pContext);
     if (!pContext) { return; }
-    UndoRedoRedlineGuard(*pContext, *this);
+    const UndoRedoRedlineGuard aUndoRedoRedlineGuard(*pContext, *this);
     UndoImpl(*pContext);
 }
 
@@ -256,7 +263,7 @@ void SwUndo::RedoWithContext(SfxUndoContext & rContext)
             dynamic_cast< ::sw::UndoRedoContext * >(& rContext));
     OSL_ASSERT(pContext);
     if (!pContext) { return; }
-    UndoRedoRedlineGuard(*pContext, *this);
+    const UndoRedoRedlineGuard aUndoRedoRedlineGuard(*pContext, *this);
     RedoImpl(*pContext);
 }
 
@@ -907,12 +914,21 @@ void SwUndoSaveSection::SaveSection( SwDoc* pDoc, const SwNodeIndex& rSttIdx )
 }
 
 
-void SwUndoSaveSection::SaveSection( SwDoc* , const SwNodeRange& rRange )
+void SwUndoSaveSection::SaveSection(
+    SwDoc* pDoc,
+    const SwNodeRange& rRange )
 {
-	SwPaM aPam( rRange.aStart, rRange.aEnd );
+    SwPaM aPam( rRange.aStart, rRange.aEnd );
 
-	// loesche alle Fussnoten / FlyFrames / Bookmarks / Verzeichnisse
-	DelCntntIndex( *aPam.GetMark(), *aPam.GetPoint() );
+    // delete all footnotes, fly frames, bookmarks and indexes
+    DelCntntIndex( *aPam.GetMark(), *aPam.GetPoint() );
+    {
+        // move certain indexes out of deleted range
+        SwNodeIndex aSttIdx( aPam.Start()->nNode.GetNode() );
+        SwNodeIndex aEndIdx( aPam.End()->nNode.GetNode() );
+        SwNodeIndex aMvStt( aEndIdx, 1 );
+        pDoc->CorrAbs( aSttIdx, aEndIdx, SwPosition( aMvStt ), sal_True );
+    }
 
 	pRedlSaveData = new SwRedlineSaveDatas;
 	if( !SwUndo::FillSaveData( aPam, *pRedlSaveData, sal_True, sal_True ))
@@ -981,50 +997,51 @@ void SwUndoSaveSection::RestoreSection( SwDoc* pDoc, const SwNodeIndex& rInsPos 
 
 		// sicher und setze die RedlineDaten
 
-SwRedlineSaveData::SwRedlineSaveData( SwComparePosition eCmpPos,
-										const SwPosition& rSttPos,
-										const SwPosition& rEndPos,
-										SwRedline& rRedl,
-										sal_Bool bCopyNext )
-	: SwUndRng( rRedl ),
-	SwRedlineData( rRedl.GetRedlineData(), bCopyNext )
+SwRedlineSaveData::SwRedlineSaveData(
+    SwComparePosition eCmpPos,
+    const SwPosition& rSttPos,
+    const SwPosition& rEndPos,
+    SwRedline& rRedl,
+    sal_Bool bCopyNext )
+    : SwUndRng( rRedl )
+    , SwRedlineData( rRedl.GetRedlineData(), bCopyNext )
 {
-	ASSERT( POS_OUTSIDE == eCmpPos ||
-			!rRedl.GetContentIdx(), "Redline mit Content" );
+    ASSERT( POS_OUTSIDE == eCmpPos || !rRedl.GetContentIdx(), "Redline mit Content" );
 
-	switch( eCmpPos )
-	{
-	case POS_OVERLAP_BEFORE:		// Pos1 ueberlappt Pos2 am Anfang
-		nEndNode = rEndPos.nNode.GetIndex();
-		nEndCntnt = rEndPos.nContent.GetIndex();
-		break;
-	case POS_OVERLAP_BEHIND: 		// Pos1 ueberlappt Pos2 am Ende
-		nSttNode = rSttPos.nNode.GetIndex();
-		nSttCntnt = rSttPos.nContent.GetIndex();
-		break;
+    switch (eCmpPos)
+    {
+    case POS_OVERLAP_BEFORE:		// Pos1 ueberlappt Pos2 am Anfang
+        nEndNode = rEndPos.nNode.GetIndex();
+        nEndCntnt = rEndPos.nContent.GetIndex();
+        break;
 
-	case POS_INSIDE:				// Pos1 liegt vollstaendig in Pos2
-		nSttNode = rSttPos.nNode.GetIndex();
-		nSttCntnt = rSttPos.nContent.GetIndex();
-		nEndNode = rEndPos.nNode.GetIndex();
-		nEndCntnt = rEndPos.nContent.GetIndex();
-		break;
+    case POS_OVERLAP_BEHIND: 		// Pos1 ueberlappt Pos2 am Ende
+        nSttNode = rSttPos.nNode.GetIndex();
+        nSttCntnt = rSttPos.nContent.GetIndex();
+        break;
 
-	case POS_OUTSIDE:				// Pos2 liegt vollstaendig in Pos1
-		if( rRedl.GetContentIdx() )
-		{
-			// dann den Bereich ins UndoArray verschieben und merken
-			SaveSection( rRedl.GetDoc(), *rRedl.GetContentIdx() );
-			rRedl.SetContentIdx( 0 );
-		}
-		break;
+    case POS_INSIDE:				// Pos1 liegt vollstaendig in Pos2
+        nSttNode = rSttPos.nNode.GetIndex();
+        nSttCntnt = rSttPos.nContent.GetIndex();
+        nEndNode = rEndPos.nNode.GetIndex();
+        nEndCntnt = rEndPos.nContent.GetIndex();
+        break;
 
-	case POS_EQUAL:					// Pos1 ist genauso gross wie Pos2
-		break;
+    case POS_OUTSIDE:				// Pos2 liegt vollstaendig in Pos1
+        if ( rRedl.GetContentIdx() )
+        {
+            // dann den Bereich ins UndoArray verschieben und merken
+            SaveSection( rRedl.GetDoc(), *rRedl.GetContentIdx() );
+            rRedl.SetContentIdx( 0 );
+        }
+        break;
 
-	default:
-		ASSERT( !this, "keine gueltigen Daten!" )
-	}
+    case POS_EQUAL:					// Pos1 ist genauso gross wie Pos2
+        break;
+
+    default:
+        ASSERT( !this, "keine gueltigen Daten!" )
+    }
 
 #ifdef DBG_UTIL
     nRedlineCount = rSttPos.nNode.GetNode().GetDoc()->GetRedlineTbl().Count();
@@ -1069,67 +1086,81 @@ void SwRedlineSaveData::RedlineToDoc( SwPaM& rPam )
 	rDoc.SetRedlineMode_intern( eOld );
 }
 
-sal_Bool SwUndo::FillSaveData( const SwPaM& rRange, SwRedlineSaveDatas& rSData,
-							sal_Bool bDelRange, sal_Bool bCopyNext )
+
+sal_Bool SwUndo::FillSaveData(
+    const SwPaM& rRange,
+    SwRedlineSaveDatas& rSData,
+    sal_Bool bDelRange,
+    sal_Bool bCopyNext )
 {
-	if( rSData.Count() )
-		rSData.DeleteAndDestroy( 0, rSData.Count() );
+    if ( rSData.Count() )
+    {
+        rSData.DeleteAndDestroy( 0, rSData.Count() );
+    }
 
-	SwRedlineSaveData* pNewData;
-	const SwPosition *pStt = rRange.Start(), *pEnd = rRange.End();
-	const SwRedlineTbl& rTbl = rRange.GetDoc()->GetRedlineTbl();
-	sal_uInt16 n = 0;
-	rRange.GetDoc()->GetRedline( *pStt, &n );
-	for( ; n < rTbl.Count(); ++n )
-	{
-		SwRedline* pRedl = rTbl[ n ];
-		const SwPosition *pRStt = pRedl->Start(), *pREnd = pRedl->End();
+    SwRedlineSaveData* pNewData;
+    const SwPosition* pStt = rRange.Start();
+    const SwPosition* pEnd = rRange.End();
+    const SwRedlineTbl& rTbl = rRange.GetDoc()->GetRedlineTbl();
+    sal_uInt16 n = 0;
+    rRange.GetDoc()->GetRedline( *pStt, &n );
+    for ( ; n < rTbl.Count(); ++n )
+    {
+        SwRedline* pRedl = rTbl[n];
 
-		SwComparePosition eCmpPos = ComparePosition( *pStt, *pEnd, *pRStt, *pREnd );
-		if( POS_BEFORE != eCmpPos && POS_BEHIND != eCmpPos &&
-			POS_COLLIDE_END != eCmpPos && POS_COLLIDE_START != eCmpPos )
-		{
-			pNewData = new SwRedlineSaveData( eCmpPos, *pStt, *pEnd,
-												*pRedl, bCopyNext );
-			rSData.Insert( pNewData, rSData.Count() );
-		}
-	}
-	if( rSData.Count() && bDelRange )
+        const SwComparePosition eCmpPos =
+            ComparePosition( *pStt, *pEnd, *pRedl->Start(), *pRedl->End() );
+        if ( eCmpPos != POS_BEFORE
+             && eCmpPos != POS_BEHIND
+             && eCmpPos != POS_COLLIDE_END
+             && eCmpPos != POS_COLLIDE_START )
+        {
+            pNewData = new SwRedlineSaveData( eCmpPos, *pStt, *pEnd, *pRedl, bCopyNext );
+            rSData.Insert( pNewData, rSData.Count() );
+        }
+    }
+    if ( rSData.Count() && bDelRange )
+    {
         rRange.GetDoc()->DeleteRedline( rRange, false, USHRT_MAX );
-	return 0 != rSData.Count();
+    }
+    return 0 != rSData.Count();
 }
 
-sal_Bool SwUndo::FillSaveDataForFmt( const SwPaM& rRange, SwRedlineSaveDatas& rSData )
+
+sal_Bool SwUndo::FillSaveDataForFmt(
+    const SwPaM& rRange,
+    SwRedlineSaveDatas& rSData )
 {
-	if( rSData.Count() )
-		rSData.DeleteAndDestroy( 0, rSData.Count() );
+    if ( rSData.Count() )
+    {
+        rSData.DeleteAndDestroy( 0, rSData.Count() );
+    }
 
-	SwRedlineSaveData* pNewData;
-	const SwPosition *pStt = rRange.Start(), *pEnd = rRange.End();
-	const SwRedlineTbl& rTbl = rRange.GetDoc()->GetRedlineTbl();
-	sal_uInt16 n = 0;
-	rRange.GetDoc()->GetRedline( *pStt, &n );
-	for( ; n < rTbl.Count(); ++n )
-	{
-		SwRedline* pRedl = rTbl[ n ];
-        if( nsRedlineType_t::REDLINE_FORMAT == pRedl->GetType() )
-		{
-			const SwPosition *pRStt = pRedl->Start(), *pREnd = pRedl->End();
+    SwRedlineSaveData* pNewData;
+    const SwPosition *pStt = rRange.Start(), *pEnd = rRange.End();
+    const SwRedlineTbl& rTbl = rRange.GetDoc()->GetRedlineTbl();
+    sal_uInt16 n = 0;
+    rRange.GetDoc()->GetRedline( *pStt, &n );
+    for ( ; n < rTbl.Count(); ++n )
+    {
+        SwRedline* pRedl = rTbl[n];
+        if ( nsRedlineType_t::REDLINE_FORMAT == pRedl->GetType() )
+        {
+            const SwComparePosition eCmpPos = ComparePosition( *pStt, *pEnd, *pRedl->Start(), *pRedl->End() );
+            if ( eCmpPos != POS_BEFORE
+                 && eCmpPos != POS_BEHIND
+                 && eCmpPos != POS_COLLIDE_END
+                 && eCmpPos != POS_COLLIDE_START )
+            {
+                pNewData = new SwRedlineSaveData( eCmpPos, *pStt, *pEnd, *pRedl, sal_True );
+                rSData.Insert( pNewData, rSData.Count() );
+            }
 
-			SwComparePosition eCmpPos = ComparePosition( *pStt, *pEnd, *pRStt, *pREnd );
-			if( POS_BEFORE != eCmpPos && POS_BEHIND != eCmpPos &&
-				POS_COLLIDE_END != eCmpPos && POS_COLLIDE_START != eCmpPos )
-			{
-				pNewData = new SwRedlineSaveData( eCmpPos, *pStt, *pEnd,
-													*pRedl, sal_True );
-				rSData.Insert( pNewData, rSData.Count() );
-			}
-
-
-		}
-	}
-	return 0 != rSData.Count();
+        }
+    }
+    return 0 != rSData.Count();
 }
+
 
 void SwUndo::SetSaveData( SwDoc& rDoc, const SwRedlineSaveDatas& rSData )
 {

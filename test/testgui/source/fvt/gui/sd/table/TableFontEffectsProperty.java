@@ -70,7 +70,8 @@ public class TableFontEffectsProperty {
 		app.dispatch(".uno:TableDialog", 3);
 		effectsPage.select();
 		// select Font color
-		effectsPageColor.select(1);
+		final int nBlackIndex = 12; // according to standard.soc as of #i121520#
+		effectsPageColor.select( nBlackIndex);
 		assertEquals("EffectsPage_Color isn't black", effectsPageColor.getSelText(), "Black");
 
 		// select Relief

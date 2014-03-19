@@ -142,8 +142,18 @@ void FuInsertGraphic::DoExecute( SfxRequest&  )
 			{
 				sal_Int8	nAction = DND_ACTION_COPY;
 				SdrObject* pPickObj = mpView->GetEmptyPresentationObject( PRESOBJ_GRAPHIC );
-				if( pPickObj )
-					nAction = DND_ACTION_LINK;
+                bool bSelectionReplaced(false);
+
+                if( pPickObj )
+                {
+                    nAction = DND_ACTION_LINK;
+                }
+                else if(1 == mpView->GetMarkedObjectCount())
+                {
+                    pPickObj = mpView->GetMarkedObjectByIndex(0);
+                    nAction = DND_ACTION_MOVE;
+                    bSelectionReplaced = true;
+                }
 
 				Point aPos;
 				Rectangle aRect(aPos, mpWindow->GetOutputSizePixel() );
@@ -158,6 +168,11 @@ void FuInsertGraphic::DoExecute( SfxRequest&  )
 					String aPath(aDlg.GetPath());
 					pGrafObj->SetGraphicLink(aPath, aFltName);
 				}
+
+                if(bSelectionReplaced && pGrafObj)
+                {
+                    mpView->MarkObj(pGrafObj, mpView->GetSdrPageView());
+                }
 			}
 		}
 		else
@@ -363,7 +378,15 @@ void FuInsertOLE::DoExecute( SfxRequest& rReq )
 					pPage->InsertPresObj( pOleObj, ePresObjKind );
 					pOleObj->SetUserCall(pPickObj->GetUserCall());
 				}
-			}
+
+                // #123468# we need to end text edit before replacing the object. There cannot yet
+                // being text typed (else it would not be an EmptyPresObj anymore), but it may be
+                // in text edit mode
+                if(mpView->IsTextEdit())
+                {
+                    mpView->SdrEndTextEdit();
+                }
+            }
 
 			bool bRet = true;
 			if( pPickObj )

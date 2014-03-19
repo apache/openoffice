@@ -465,7 +465,7 @@ public:
 public:
 	SC_DLLPUBLIC 				ScDocument( ScDocumentMode eMode = SCDOCMODE_DOCUMENT,
 								SfxObjectShell* pDocShell = NULL );
-	SC_DLLPUBLIC 				~ScDocument();
+	SC_DLLPUBLIC 				virtual ~ScDocument();
 
 	inline ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >
 					GetServiceManager() const { return xServiceManager; }
@@ -503,6 +503,7 @@ public:
 	ScFieldEditEngine*	CreateFieldEditEngine();
 	void				DisposeFieldEditEngine(ScFieldEditEngine*& rpEditEngine);
 
+	// Note: the returned ScRangeName is volatile, and it can be changed at any time.
 	SC_DLLPUBLIC ScRangeName*	GetRangeName();
 	void			SetRangeName( ScRangeName* pNewRangeName );
 	SCTAB			GetMaxTableNumber() { return nMaxTableNumber; }

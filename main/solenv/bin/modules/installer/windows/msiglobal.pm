@@ -169,7 +169,8 @@ sub generate_cab_file_list ($$$$)
     write_ddf_file_header(\@ddffile, $cabinetfile, $installdir);
     foreach my $onefile (@sorted_files)
     {	
-        my $styles = $onefile->{'Styles'} // "";
+        my $styles = $onefile->{'Styles'};
+        $styles = "" unless defined $styles;
         if ($styles =~ /\bDONT_PACK\b/)
         {
             $installer::logger::Lang->printf("    excluding '%s' from ddf\n", $onefile->{'uniquename'});
@@ -1511,7 +1512,11 @@ sub get_source_codes ($)
 {
     my ($languagesref) = @_;
     
-    if ( ! defined $installer::globals::source_version)
+    if ( ! $installer::globals::is_release)
+    {
+        return (undef, undef);
+    }
+    elsif ( ! defined $installer::globals::source_version)
     {
         $installer::logger::Lang->printf("no source version defined\n");
         return (undef, undef);

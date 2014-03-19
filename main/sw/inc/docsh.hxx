@@ -120,8 +120,13 @@ class SW_DLLPUBLIC SwDocShell: public SfxObjectShell, public SfxListener
         const sal_Bool bBasic = sal_False );
 
 	SW_DLLPRIVATE sal_uInt16					Delete(const String &rName, sal_uInt16 nFamily);
-	SW_DLLPRIVATE sal_uInt16					ApplyStyles(const String &rName, sal_uInt16 nFamily, SwWrtShell* pShell = 0,
-										sal_uInt16 nMode = 0 );
+
+    SW_DLLPRIVATE sal_uInt16 ApplyStyles(
+        const String &rName,
+        const sal_uInt16 nFamily,
+        SwWrtShell* pShell = 0,
+        const sal_uInt16 nMode = 0 );
+
 	SW_DLLPRIVATE sal_uInt16					DoWaterCan( const String &rName, sal_uInt16 nFamily);
 	SW_DLLPRIVATE sal_uInt16					UpdateStyle(const String &rName, sal_uInt16 nFamily, SwWrtShell* pShell = 0);
 	SW_DLLPRIVATE sal_uInt16					MakeByExample(const String &rName,
@@ -279,12 +284,6 @@ public:
 	void	ReloadFromHtml( const String& rStreamName, SwSrcView* pSrcView );
 
     sal_Int16   GetUpdateDocMode() const {return nUpdateDocMode;}
-
-	//Activate wait cursor for all windows of this document
-	//Optionally all dispatcher could be Locked
-	//Usually locking should be done using the class: SwWaitObject!
-	void EnterWait( sal_Bool bLockDispatcher );
-	void LeaveWait( sal_Bool bLockDispatcher );
 
 	void ToggleBrowserMode(sal_Bool bOn, SwView* pView);
 

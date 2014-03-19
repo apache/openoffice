@@ -136,9 +136,9 @@ static const struct ExceptionalKey
 
 static AquaSalFrame* getMouseContainerFrame()
 {
-    int nWindows = 0;
+    NSInteger nWindows = 0;
     NSCountWindows( &nWindows );
-    int* pWindows = (int*)alloca( nWindows * sizeof(int) );
+    NSInteger* pWindows = (NSInteger*)alloca( nWindows * sizeof(NSInteger) );
     // note: NSWindowList is supposed to be in z-order front to back
     NSWindowList( nWindows, pWindows );
     AquaSalFrame* pDispatchFrame = NULL;
@@ -461,7 +461,7 @@ static AquaSalFrame* getMouseContainerFrame()
     if( mpFrame && AquaSalFrame::isAlive( mpFrame ) )
     {
         // FIXME: does this leak the returned NSCursor of getCurrentCursor ?
-        const NSRect aRect = NSMakeRect( 0, 0, mpFrame->maGeometry.nWidth, mpFrame->maGeometry.nHeight);
+        const NSRect aRect = { NSZeroPoint, NSMakeSize( mpFrame->maGeometry.nWidth, mpFrame->maGeometry.nHeight) };
         [self addCursorRect: aRect cursor: mpFrame->getCurrentCursor()];
     }
 }
@@ -1636,7 +1636,7 @@ private:
     return nil;
 }
 
-- (unsigned int)characterIndexForPoint:(NSPoint)thePoint
+- (NSUInteger)characterIndexForPoint:(NSPoint)thePoint
 {
     (void)thePoint;
     // FIXME
@@ -1716,9 +1716,9 @@ private:
     return [ super accessibleContext ];
 }
 
--(NSView*)viewElementForParent
+-(NSWindow*)windowForParent
 {
-    return mpFrame->getNSView();
+    return mpFrame->getNSWindow();
 }
 
 -(void)registerMouseEventListener: (id)theListener

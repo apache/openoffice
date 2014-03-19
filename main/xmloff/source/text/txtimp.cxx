@@ -2061,7 +2061,7 @@ void XMLTextImportHelper::SetOutlineStyles( sal_Bool bSetEmptyLevels )
     static ::rtl::OUString s_HeadingStyleName(
         RTL_CONSTASCII_USTRINGPARAM("HeadingStyleName"));
 
-    if ((m_pImpl->m_pOutlineStylesCandidates != NULL || bSetEmptyLevels) &&
+    if (( bool(m_pImpl->m_pOutlineStylesCandidates) || bSetEmptyLevels) &&
          m_pImpl->m_xChapterNumbering.is() &&
          !IsInsertMode())
     {
@@ -2125,7 +2125,8 @@ void XMLTextImportHelper::SetOutlineStyles( sal_Bool bSetEmptyLevels )
                         {
                             if (!lcl_HasListStyle(
                                     m_pImpl->m_pOutlineStylesCandidates[i][j],
-                                    m_pImpl->m_xParaStyles, GetXMLImport(),
+                                    m_pImpl->m_xParaStyles,
+                                    GetXMLImport(),
                                     s_NumberingStyleName,
                                     sOutlineStyleName))
                             {

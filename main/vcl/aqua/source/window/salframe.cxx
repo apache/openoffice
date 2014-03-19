@@ -207,9 +207,9 @@ void AquaSalFrame::initWindowAndView()
     else
         [mpNSWindow setAcceptsMouseMovedEvents: YES];
     [mpNSWindow setHasShadow: YES];
-    [mpNSWindow setDelegate: mpNSWindow];
+    [mpNSWindow setDelegate: static_cast<id<NSWindowDelegate> >(mpNSWindow)];
     
-    const NSRect aRect = NSMakeRect( 0,0, maGeometry.nWidth, maGeometry.nHeight );
+    const NSRect aRect = { NSZeroPoint, NSMakeSize( maGeometry.nWidth, maGeometry.nHeight )};
     mnTrackingRectTag = [mpNSView addTrackingRect: aRect owner: mpNSView userData: nil assumeInside: NO];
     
     maSysData.mpNSView = mpNSView;
@@ -745,7 +745,7 @@ void AquaSalFrame::ShowFullScreen( sal_Bool bFullScreen, sal_Int32 nDisplay )
         // which is always on index 0 according to documentation
         bool bHideMenu = (nDisplay == 0);
         
-        NSRect aNewContentRect = { { 0, 0 }, { 0, 0 } };
+        NSRect aNewContentRect = NSZeroRect;
         // get correct screen
         NSScreen* pScreen = nil;
         NSArray* pScreens = [NSScreen screens];
@@ -1191,7 +1191,7 @@ static Color getColor( NSColor* pSysColor, const Color& rDefault, NSWindow* pWin
         NSColor* pRBGColor = [pSysColor colorUsingColorSpaceName: NSDeviceRGBColorSpace device: [pWin deviceDescription]];
         if( pRBGColor )
         {
-            float r = 0, g = 0, b = 0, a = 0;
+            CGFloat r = 0, g = 0, b = 0, a = 0;
             [pRBGColor getRed: &r green: &g blue: &b alpha: &a];
             aRet = Color( int(r*255.999), int(g*255.999), int(b*255.999) );
             /*
@@ -1648,7 +1648,7 @@ void AquaSalFrame::UpdateFrameGeometry()
     // release old track rect
     [mpNSView removeTrackingRect: mnTrackingRectTag];
     // install the new track rect
-    NSRect aTrackRect = { { 0, 0 }, aContentRect.size };
+    NSRect aTrackRect = { NSZeroPoint, aContentRect.size };
     mnTrackingRectTag = [mpNSView addTrackingRect: aTrackRect owner: mpNSView userData: nil assumeInside: NO];
 
     // convert to vcl convention

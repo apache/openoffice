@@ -25,6 +25,7 @@ TARGET=util
 
 .INCLUDE:  settings.mk
 .INCLUDE: $(SOLARINCDIR)$/rtlbootstrap.mk
+#.INCLUDE: $(SOLARENVINC)$/version.mk
 
 # watch for the path delimiter
 .IF "$(GUI)"=="WNT"
@@ -77,11 +78,13 @@ help .PHONY :
 	@echo "    aoo_srcrelease         packs the source release package"
 	@echo "    updatepack"
 	@echo "    openofficedev          devloper snapshot"
-	@echo "    openofficewithjre"
 	@echo "    ooolanguagepack"
+	@echo "    ooobetalanguagepack"
 	@echo "    ooodevlanguagepack"
-	@echo "    sdkoo"
-	@echo "    sdkoodev"
+	@echo "    sdkoo                  builds the developer SDK package"
+	@echo "    sdkoobeta              like sdkoo but with 'Beta' appended to the product name"
+	@echo "    sdkoodev               builds the developer snapshot of the SDK"
+	@echo "    openofficebeta         like openoffice but with 'Beta' appended to product name"
 	@echo 
 	@echo "experimental targets:"
 	@echo "    patch-create           create a patch for updating an installed office (Windows only)"
@@ -136,7 +139,7 @@ VERBOSESWITCH=-verbose
 VERBOSESWITCH=-quiet
 .ENDIF
 
-.IF "$(release:U)"=="T"
+.IF "$(release)"!=""
 RELEASE_SWITCH=-release
 $(foreach,i,$(alllangiso) openoffice_$i.msi) : prepare_release_build
 .ELSE
@@ -180,10 +183,12 @@ openoffice:
 # Add dependencies of basic targets on language specific targets.
 openoffice: $(foreach,i,$(alllangiso) openoffice_$i)
 openofficedev: $(foreach,i,$(alllangiso) openofficedev_$i)
-openofficewithjre: $(foreach,i,$(alllangiso) openofficewithjre_$i)
+openofficebeta: $(foreach,i,$(alllangiso) openofficebeta_$i)
 ooolanguagepack : $(foreach,i,$(alllangiso) ooolanguagepack_$i)
+ooobetalanguagepack : $(foreach,i,$(alllangiso) ooobetalanguagepack_$i)
 ooodevlanguagepack: $(foreach,i,$(alllangiso) ooodevlanguagepack_$i)
 sdkoo: $(foreach,i,$(alllangiso) sdkoo_$i)
+sdkoobeta: $(foreach,i,$(alllangiso) sdkoobeta_$i)
 sdkoodev: $(foreach,i,$(alllangiso) sdkoodev_$i)
 patch-create: $(foreach,i,$(alllangiso) patch-create_$i)
 
@@ -193,6 +198,7 @@ MSISDKOOTEMPLATESOURCE=$(PRJ)$/inc_sdkoo$/windows$/msi_templates
 
 NOLOGOSPLASH:=$(BIN)$/intro.zip
 DEVNOLOGOSPLASH:=$(BIN)$/dev$/intro.zip
+BETA_LOGO_SPLASH:=$(BIN)$/beta$/intro.zip $(BIN)$/beta$/images.zip
 MSIOFFICETEMPLATEDIR=$(MISC)$/openoffice$/msi_templates
 MSILANGPACKTEMPLATEDIR=$(MISC)$/ooolangpack$/msi_templates
 MSISDKOOTEMPLATEDIR=$(MISC)$/sdkoo$/msi_templates
@@ -214,10 +220,12 @@ updatepack : local_python_files
 $(foreach,i,$(alllangiso) openoffice_$i) : adddeps
 openoffice_$(defaultlangiso).archive : adddeps
 $(foreach,i,$(alllangiso) openofficedev_$i) : adddeps
-$(foreach,i,$(alllangiso) openofficewithjre_$i) : adddeps
+$(foreach,i,$(alllangiso) openofficebeta_$i) : adddeps $(BETA_LOGO_SPLASH)
 $(foreach,i,$(alllangiso) ooolanguagepack_$i) : adddeps
+$(foreach,i,$(alllangiso) ooobetalanguagepack_$i) : adddeps
 $(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : adddeps
 $(foreach,i,$(alllangiso) sdkoo_$i) : adddeps
+$(foreach,i,$(alllangiso) sdkoobeta_$i) : adddeps
 $(foreach,i,$(alllangiso) sdkoodev_$i) : adddeps
 
 # Create targets that take the package formats into account.  Together with language dependency we
@@ -225,11 +233,13 @@ $(foreach,i,$(alllangiso) sdkoodev_$i) : adddeps
 # where $language ranges over all languages in $(alllangiso) 
 # and $package ranges over all package formats in $(PKGFORMAT)
 $(foreach,i,$(alllangiso) openoffice_$i) : $$@{$(PKGFORMAT:^".")}
-$(foreach,i,$(alllangiso) openofficewithjre_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) openofficedev_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) openofficebeta_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) ooolanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) ooobetalanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) ooodevlanguagepack_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) sdkoo_$i) : $$@{$(PKGFORMAT:^".")}
+$(foreach,i,$(alllangiso) sdkoobeta_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) sdkoodev_$i) : $$@{$(PKGFORMAT:^".")}
 $(foreach,i,$(alllangiso) patch-create_$i) : $$@{$(PKGFORMAT:^".")}
 
@@ -267,9 +277,6 @@ $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openoffice_$L.$P)) .PHO
 		$(PRJ)$/util$/update.xml	\
 		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
 
-#openofficewithjre_%{$(PKGFORMAT:^".")} :
-$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficewithjre_$L.$P)) .PHONY :
-	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_wJRE -msitemplate $(MSIOFFICETEMPLATEDIR)
 
 #openofficedev_%{$(PKGFORMAT:^".")} :
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficedev_$L.$P)) .PHONY :
@@ -281,10 +288,26 @@ $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficedev_$L.$P)) .
 		$(PRJ)$/util$/update.xml 		\
 		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
 
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) openofficebeta_$L.$P)) .PHONY :
+	$(MAKE_INSTALLER_COMMAND)		\
+		-p Apache_OpenOffice_Beta	\
+		-msitemplate $(MSIOFFICETEMPLATEDIR)
+	$(GEN_UPDATE_INFO_COMMAND)			\
+		--product Apache_OpenOffice_Beta 	\
+		$(PRJ)$/util$/update.xml 		\
+		> $(MISC)/$(@:b)_$(RTL_OS)_$(RTL_ARCH)$(@:e).update.xml
+
 #ooolanguagepack_%{$(PKGFORMAT:^".")} :
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) ooolanguagepack_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND)			\
 		-p Apache_OpenOffice			\
+		-msitemplate $(MSILANGPACKTEMPLATEDIR)	\
+		-languagepack
+
+#ooobetalanguagepack_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) ooobetalanguagepack_$L.$P)) .PHONY :
+	$(MAKE_INSTALLER_COMMAND)			\
+		-p Apache_OpenOffice_Beta			\
 		-msitemplate $(MSILANGPACKTEMPLATEDIR)	\
 		-languagepack
 
@@ -295,6 +318,10 @@ $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) ooodevlanguagepack_$L.$
 #sdkoo_%{$(PKGFORMAT:^".")} :
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) sdkoo_$L.$P)) .PHONY :
 	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_SDK -msitemplate $(MSISDKOOTEMPLATEDIR) -dontstrip
+
+#sdkoobeta_%{$(PKGFORMAT:^".")} :
+$(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) sdkoobeta_$L.$P)) .PHONY :
+	$(MAKE_INSTALLER_COMMAND) -p Apache_OpenOffice_Beta_SDK -msitemplate $(MSISDKOOTEMPLATEDIR) -dontstrip
 
 #sdkoodev_%{$(PKGFORMAT:^".")} :
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) sdkoodev_$L.$P)) .PHONY :
@@ -312,11 +339,26 @@ $(BIN)$/dev$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_dev$/intro.zip
 	@-$(MKDIR) $(@:d)
 	$(COPY) $< $@
 
+$(BIN)$/beta$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_beta$/intro.zip
+	@-$(MKDIR) $(@:d)
+	$(COPY) $< $@
+
+# Replace framework/res/*.png with *-beta.png
+$(BIN)$/beta$/images.zip : $(SOLARBINDIR)$/images.zip
+	$(COPY) $< $@
+	$(PERL) $(SOLARENV)$/bin/replace_in_zip.pl	\
+		$@				\
+		framework/res/			\
+		$(SRC_ROOT)/default_images/framework/res/beta/	\
+		backing.png			\
+		backing_hc.png			\
+		backing_rtl_left.png		\
+		backing_rtl_left_hc.png
 
 .IF "$(OS)" == "WNT"
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-create_$L.$P)) .PHONY :
 	@echo building $@
-	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+	$(PERL) -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
 		create								\
 		--product-name Apache_OpenOffice				\
 		--output-path $(OUT)						\
@@ -325,7 +367,7 @@ $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-create_$L.$P)) .P
 		--language $(subst,$(@:s/_/ /:1)_, $(@:b))			\
 		--package-format $(@:e:s/.//)
 patch-apply .PHONY :
-	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+	$(PERL) -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
 		apply								\
 		--product-name Apache_OpenOffice				\
 		--output-path $(OUT)						\
@@ -333,7 +375,7 @@ patch-apply .PHONY :
 		--language en-US						\
 		--package-format msi
 patch-update-releases-xml .PHONY:
-	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+	$(PERL) -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
 		update-releases-xml						\
 		--product-name Apache_OpenOffice				\
 		--output-path $(OUT)						\
@@ -341,7 +383,7 @@ patch-update-releases-xml .PHONY:
 		--target-version 4.0.1
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-check_$L.$P)) .PHONY :
 	@echo building $@
-	perl -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
+	$(PERL) -I $(SOLARENV)$/bin/modules $(SOLARENV)$/bin$/patch_tool.pl	\
 		check								\
 		--product-name Apache_OpenOffice				\
 		--output-path $(OUT)						\
