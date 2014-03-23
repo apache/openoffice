@@ -1395,23 +1395,23 @@ PropertyState SAL_CALL Cell::getPropertyState( const OUString& PropertyName ) th
 					    }
 					    break;
 
-				    // #i36115#
-				    // If e.g. the LineStart is on NONE and thus the string has length 0, it still
-				    // may be a hard attribute covering the set LineStart of the parent (Style).
-				    // #i37644#
-				    // same is for fill float transparency
-				    case XATTR_LINEEND:
-				    case XATTR_LINESTART:
-				    case XATTR_FILLFLOATTRANSPARENCE:
-					    {
-						    NameOrIndex* pItem = (NameOrIndex*)rSet.GetItem((sal_uInt16)pMap->nWID);
-						    if( ( pItem == NULL ) )
-							    eState = PropertyState_DEFAULT_VALUE;
-					    }
-					    break;
-				    }
-			    }
-		    }
+                    // #i36115#
+                    // If e.g. the LineStart is on NONE and thus the string has length 0, it still
+                    // may be a hard attribute covering the set LineStart of the parent (Style).
+                    // #i37644#
+                    // same is for fill float transparency
+                    case XATTR_LINEEND:
+                    case XATTR_LINESTART:
+                    case XATTR_FILLFLOATTRANSPARENCE:
+                        {
+                            NameOrIndex* pItem = (NameOrIndex*)rSet.GetItem((sal_uInt16)pMap->nWID);
+                            if( ( pItem == NULL ) )
+                                eState = PropertyState_DEFAULT_VALUE;
+                        }
+                        break;
+                    }
+                }
+            }
 		}
 		return eState;
 	}

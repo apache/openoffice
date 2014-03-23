@@ -98,10 +98,13 @@ void SwDrawShell::ExecDrawDlg(SfxRequest& rReq)
 		{
 			sal_Bool bHasMarked = pView->areSdrObjectsSelected();
 
-			SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
+            SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
             DBG_ASSERT(pFact, "Dialogdiet Factory fail!");
-			AbstractSvxAreaTabDialog * pDlg = pFact->CreateSvxAreaTabDialog( NULL,
-				&aNewAttr, &pView->getSdrModelFromSdrView(), pView);
+            AbstractSvxAreaTabDialog * pDlg = pFact->CreateSvxAreaTabDialog( 
+                NULL,
+                &aNewAttr,
+                &pView->getSdrModelFromSdrView(),
+                true);
             DBG_ASSERT(pDlg, "Dialogdiet fail!");
 			// const SvxColorTableItem* pColorItem = (const SvxColorTableItem*)
 									GetView().GetDocShell()->GetItem(SID_COLOR_TABLE);

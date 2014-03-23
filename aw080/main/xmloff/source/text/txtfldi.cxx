@@ -153,6 +153,7 @@ const sal_Char sAPI_is_fixed[]			= "IsFixed";
 const sal_Char sAPI_content[]			= "Content";
 const sal_Char sAPI_value[]				= "Value";
 const sal_Char sAPI_author[]			= "Author";
+const sal_Char sAPI_initials[]          = "Initials";
 const sal_Char sAPI_full_name[]			= "FullName";
 const sal_Char sAPI_place_holder_type[] = "PlaceHolderType";
 const sal_Char sAPI_place_holder[]		= "PlaceHolder";
@@ -558,10 +559,11 @@ XMLTextFieldImportContext::CreateTextFieldImportContext(
 															  nPrefix, rName );
 			break;
 
-		case XML_TOK_TEXT_ANNOTATION:
-			pContext = new XMLAnnotationImportContext( rImport, rHlp,
-													   nPrefix, rName);
-			break;
+        case XML_TOK_TEXT_ANNOTATION:
+        case XML_TOK_TEXT_ANNOTATION_END:
+            pContext =
+                new XMLAnnotationImportContext( rImport, rHlp, nToken, nPrefix, rName);
+            break;
 
 		case XML_TOK_TEXT_SCRIPT:
 			pContext = new XMLScriptImportContext( rImport, rHlp,
@@ -3559,19 +3561,21 @@ const sal_Char* XMLBibliographyFieldImportContext::MapBibliographyFieldName(
 //
 
 XMLAnnotationImportContext::XMLAnnotationImportContext(
-	SvXMLImport& rImport,
-	XMLTextImportHelper& rHlp,
-	sal_uInt16 nPrfx,
-	const OUString& sLocalName) :
-		XMLTextFieldImportContext(rImport, rHlp, sAPI_annotation, 
-								  nPrfx, sLocalName), 
-		sPropertyAuthor(RTL_CONSTASCII_USTRINGPARAM(sAPI_author)),
-		sPropertyContent(RTL_CONSTASCII_USTRINGPARAM(sAPI_content)),
-		// why is there no UNO_NAME_DATE_TIME, but only UNO_NAME_DATE_TIME_VALUE?
-		sPropertyDate(RTL_CONSTASCII_USTRINGPARAM(sAPI_date_time_value)),
-		sPropertyTextRange(RTL_CONSTASCII_USTRINGPARAM(sAPI_TextRange))
+    SvXMLImport& rImport,
+    XMLTextImportHelper& rHlp,
+    sal_uInt16 nToken,
+    sal_uInt16 nPrfx,
+    const OUString& sLocalName)
+    : XMLTextFieldImportContext(rImport, rHlp, sAPI_annotation, nPrfx, sLocalName)
+    , sPropertyName(RTL_CONSTASCII_USTRINGPARAM(sAPI_name))
+    , sPropertyAuthor(RTL_CONSTASCII_USTRINGPARAM(sAPI_author))
+    , sPropertyInitials(RTL_CONSTASCII_USTRINGPARAM(sAPI_initials))
+    , sPropertyContent(RTL_CONSTASCII_USTRINGPARAM(sAPI_content))
+    , sPropertyDate(RTL_CONSTASCII_USTRINGPARAM(sAPI_date_time_value))
+    , sPropertyTextRange(RTL_CONSTASCII_USTRINGPARAM(sAPI_TextRange))
+    , m_nToken( nToken )
 {
-	bValid = sal_True;
+    bValid = sal_True;
 
     // remember old list item and block (#91964#) and reset them
     // for the text frame
@@ -3579,139 +3583,200 @@ XMLAnnotationImportContext::XMLAnnotationImportContext(
     GetImport().GetTextImport()->PushListContext();
 }
 
-void XMLAnnotationImportContext::ProcessAttribute( 
-	sal_uInt16,
-	const OUString& )
-{
-	// ignore
+void XMLAnnotationImportContext::ProcessAttribute(
+    sal_uInt16 nToken,
+    const OUString& rValue )
+ {
+    if ( nToken == XML_TOK_TEXT_NAME )
+    {
+        aName = rValue;
+    }
 }
 
 SvXMLImportContext* XMLAnnotationImportContext::CreateChildContext(
-	sal_uInt16 nPrefix,
-	const OUString& rLocalName,
-	const Reference<XAttributeList >& xAttrList )
+    sal_uInt16 nPrefix,
+    const OUString& rLocalName,
+    const Reference<XAttributeList >& xAttrList )
 {
-	SvXMLImportContext *pContext = 0;
-	if( XML_NAMESPACE_DC == nPrefix )
-	{
-		if( IsXMLToken( rLocalName, XML_CREATOR ) )
-			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix, 
-											rLocalName, aAuthorBuffer);
-		else if( IsXMLToken( rLocalName, XML_DATE ) )
-			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix, 
-											rLocalName, aDateBuffer);
-	}
+    SvXMLImportContext *pContext = 0;
+    if( XML_NAMESPACE_DC == nPrefix )
+    {
+        if( IsXMLToken( rLocalName, XML_CREATOR ) )
+        {
+            pContext =
+                new XMLStringBufferImportContext( GetImport(), nPrefix, rLocalName, aAuthorBuffer);
+        }
+        else if( IsXMLToken( rLocalName, XML_DATE ) )
+        {
+            pContext =
+                new XMLStringBufferImportContext( GetImport(), nPrefix, rLocalName, aDateBuffer);
+        }
+    }
+    else if ( XML_NAMESPACE_TEXT == nPrefix
+              || XML_NAMESPACE_TEXT_EXT == nPrefix )
+    {
+        if( IsXMLToken( rLocalName, XML_SENDER_INITIALS ) )
+        {
+            pContext =
+                new XMLStringBufferImportContext( GetImport(), nPrefix, rLocalName, aInitialsBuffer);
+        }
+    }
 
-	if( !pContext )
-	{
-		try
-		{
-			if ( !mxField.is() )
-				CreateField( mxField, sServicePrefix + GetServiceName() );
-			Any aAny = mxField->getPropertyValue( sPropertyTextRange );
-			Reference< XText > xText;
-			aAny >>= xText;
-			if( xText.is() )
-			{
-				UniReference < XMLTextImportHelper > xTxtImport = GetImport().GetTextImport();
-				if( !mxCursor.is() )
-				{
-					mxOldCursor = xTxtImport->GetCursor();
-					mxCursor = xText->createTextCursor();
-				}
+    if( !pContext )
+    {
+        try
+        {
+            if ( !mxField.is() )
+                CreateField( mxField, sServicePrefix + GetServiceName() );
+            Any aAny = mxField->getPropertyValue( sPropertyTextRange );
+            Reference< XText > xText;
+            aAny >>= xText;
+            if( xText.is() )
+            {
+                UniReference < XMLTextImportHelper > xTxtImport = GetImport().GetTextImport();
+                if( !mxCursor.is() )
+                {
+                    mxOldCursor = xTxtImport->GetCursor();
+                    mxCursor = xText->createTextCursor();
+                }
 
-				if( mxCursor.is() )
-				{
-					xTxtImport->SetCursor( mxCursor );
-					pContext = xTxtImport->CreateTextChildContext( GetImport(), nPrefix, rLocalName, xAttrList );
-				}
-			}
-		}
-		catch ( Exception& ) 
-		{}
+                if( mxCursor.is() )
+                {
+                    xTxtImport->SetCursor( mxCursor );
+                    pContext = xTxtImport->CreateTextChildContext( GetImport(), nPrefix, rLocalName, xAttrList );
+                }
+            }
+        }
+        catch ( Exception& ) 
+        {}
 
-		if( !pContext )
-			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix,  rLocalName, aTextBuffer);
-	}
+        if( !pContext )
+            pContext = new XMLStringBufferImportContext(GetImport(), nPrefix,  rLocalName, aTextBuffer);
+    }
 
-	return pContext;
+    return pContext;
 }
 
 void XMLAnnotationImportContext::EndElement()
 {
-	DBG_ASSERT(GetServiceName().getLength()>0, "no service name for element!");
-	if( mxCursor.is() )
-	{
-		// delete addition newline
-		const OUString aEmpty;
-		mxCursor->gotoEnd( sal_False );
-		mxCursor->goLeft( 1, sal_True );
-		mxCursor->setString( aEmpty );
+    DBG_ASSERT(GetServiceName().getLength()>0, "no service name for element!");
+    if( mxCursor.is() )
+    {
+        // delete addition newline
+        const OUString aEmpty;
+        mxCursor->gotoEnd( sal_False );
+        mxCursor->goLeft( 1, sal_True );
+        mxCursor->setString( aEmpty );
 
-		// reset cursor
-		GetImport().GetTextImport()->ResetCursor();
-	}
+        // reset cursor
+        GetImport().GetTextImport()->ResetCursor();
+    }
 
-	if( mxOldCursor.is() )
-		GetImport().GetTextImport()->SetCursor( mxOldCursor );
+    if( mxOldCursor.is() )
+        GetImport().GetTextImport()->SetCursor( mxOldCursor );
 
     // reinstall old list item #91964#
     GetImport().GetTextImport()->PopListContext();
 
-	if ( bValid )
-	{
-		if ( mxField.is() || CreateField( mxField, sServicePrefix + GetServiceName() ) )
-		{
-			// set field properties
-			PrepareField( mxField );
+    if ( bValid )
+    {
+        if ( m_nToken == XML_TOK_TEXT_ANNOTATION_END )
+        {
+            // Search for a previous annotation with the same name.
+            uno::Reference< text::XTextContent > xPrevField;
+            {
+                Reference<XTextFieldsSupplier> xTextFieldsSupplier(GetImport().GetModel(), UNO_QUERY);
+                uno::Reference<container::XEnumerationAccess> xFieldsAccess(xTextFieldsSupplier->getTextFields());
+                uno::Reference<container::XEnumeration> xFields(xFieldsAccess->createEnumeration());
+                while (xFields->hasMoreElements())
+                {
+                    uno::Reference<beans::XPropertySet> xCurrField(xFields->nextElement(), uno::UNO_QUERY);
+                    OUString aFieldName;
+                    xCurrField->getPropertyValue(sPropertyName) >>= aFieldName;
+                    if ( aFieldName == aName )
+                    {
+                        xPrevField.set( xCurrField, uno::UNO_QUERY );
+                        break;
+                    }
+                }
+            }
+            if ( xPrevField.is() )
+            {
+                // So we are ending a previous annotation,
+                // let's create a text range covering the start and the current position.
+                uno::Reference< text::XText > xText = GetImportHelper().GetText();
+                uno::Reference< text::XTextCursor > xCursor =
+                    xText->createTextCursorByRange( GetImportHelper().GetCursorAsRange() );
+                xCursor->gotoRange( xPrevField->getAnchor(), true );
+                uno::Reference< text::XTextRange > xTextRange( xCursor, uno::UNO_QUERY );
 
-			// attach field to document
-			Reference < XTextContent > xTextContent( mxField, UNO_QUERY );
+                xText->insertTextContent( xTextRange, xPrevField, !xCursor->isCollapsed() );
+            }
+        }
+        else
+        {
+            if ( mxField.is() || CreateField( mxField, sServicePrefix + GetServiceName() ) )
+            {
+                // set field properties
+                PrepareField( mxField );
 
-			// workaround for #80606#
-			try
-			{
-				GetImportHelper().InsertTextContent( xTextContent );
-			}
-			catch (lang::IllegalArgumentException)
-			{
-				// ignore
-			}
-		}
-	}
-	else
-		GetImportHelper().InsertString(GetContent());
+                // attach field to document
+                Reference < XTextContent > xTextContent( mxField, UNO_QUERY );
+
+                // workaround for #80606#
+                try
+                {
+                    GetImportHelper().InsertTextContent( xTextContent );
+                }
+                catch (lang::IllegalArgumentException)
+                {
+                    // ignore
+                }
+            }
+        }
+    }
+    else
+        GetImportHelper().InsertString(GetContent());
 }
 
-void XMLAnnotationImportContext::PrepareField( 
-	const Reference<XPropertySet> & xPropertySet)
+void XMLAnnotationImportContext::PrepareField(
+    const Reference<XPropertySet> & xPropertySet )
 {
-	// import (possibly empty) author
-	OUString sAuthor( aAuthorBuffer.makeStringAndClear() );
-	xPropertySet->setPropertyValue(sPropertyAuthor, makeAny(sAuthor));
+    // import (possibly empty) author
+    OUString sAuthor( aAuthorBuffer.makeStringAndClear() );
+    xPropertySet->setPropertyValue(sPropertyAuthor, makeAny(sAuthor));
 
-	DateTime aDateTime;
-	if (SvXMLUnitConverter::convertDateTime(aDateTime, 
-											aDateBuffer.makeStringAndClear()))
-	{
-		/*
-		Date aDate;
-		aDate.Year = aDateTime.Year;
-		aDate.Month = aDateTime.Month;
-		aDate.Day = aDateTime.Day;
-		xPropertySet->setPropertyValue(sPropertyDate, makeAny(aDate));
-		*/
-		xPropertySet->setPropertyValue(sPropertyDate, makeAny(aDateTime));
-	}
+    // import (possibly empty) initials
+    OUString sInitials( aInitialsBuffer.makeStringAndClear() );
+    xPropertySet->setPropertyValue(sPropertyInitials, makeAny(sInitials));
 
-	OUString sBuffer = aTextBuffer.makeStringAndClear();
-	if ( sBuffer.getLength() )
-	{
-		// delete last paragraph mark (if necessary)
-		if (sal_Char(0x0a) == sBuffer.getStr()[sBuffer.getLength()-1])
-			sBuffer = sBuffer.copy(0, sBuffer.getLength()-1);
-		xPropertySet->setPropertyValue(sPropertyContent, makeAny(sBuffer));
-	}
+    DateTime aDateTime;
+    if (SvXMLUnitConverter::convertDateTime(aDateTime, 
+        aDateBuffer.makeStringAndClear()))
+    {
+        /*
+        Date aDate;
+        aDate.Year = aDateTime.Year;
+        aDate.Month = aDateTime.Month;
+        aDate.Day = aDateTime.Day;
+        xPropertySet->setPropertyValue(sPropertyDate, makeAny(aDate));
+        */
+        xPropertySet->setPropertyValue(sPropertyDate, makeAny(aDateTime));
+    }
+
+    OUString sBuffer = aTextBuffer.makeStringAndClear();
+    if ( sBuffer.getLength() > 0 )
+    {
+        // delete last paragraph mark (if necessary)
+        if (sal_Char(0x0a) == sBuffer.getStr()[sBuffer.getLength()-1])
+            sBuffer = sBuffer.copy(0, sBuffer.getLength()-1);
+        xPropertySet->setPropertyValue(sPropertyContent, makeAny(sBuffer));
+    }
+
+    if ( aName.getLength() > 0 )
+    {
+        xPropertySet->setPropertyValue(sPropertyName, makeAny(aName));
+    }
 }
 
 

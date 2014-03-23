@@ -310,16 +310,15 @@ void SwGetRefField::UpdateField( const SwTxtFld* pFldTxtAttr )
 					nStt = 0;
 					break;
 
-				case REF_ONLYCAPTION:
-					{
+                case REF_ONLYCAPTION:
+                    {
                         const SwTxtAttr* const pTxtAttr = pTxtNd->GetTxtAttrForCharAt(nStt, RES_TXTATR_FIELD);
-						if( pTxtAttr )
-							nStt = SwGetExpField::GetReferenceTextPos(
-												pTxtAttr->GetFmtFld(), *pDoc );
-						else if( nStt + 1 < nEnd )
-							++nStt;
-					}
-					break;
+                        if( pTxtAttr != NULL )
+                            nStt = SwGetExpField::GetReferenceTextPos( pTxtAttr->GetFmtFld(), *pDoc );
+                        else if( nStt + 1 < nEnd )
+                            ++nStt;
+                    }
+                    break;
 
 				case REF_ONLYSEQNO:
 					if( nStt + 1 < nEnd )
@@ -832,7 +831,7 @@ SwTxtNode* SwGetRefFieldType::FindAnchor( SwDoc* pDoc, const String& rRefMark,
     case REF_BOOKMARK:
         {
             IDocumentMarkAccess::const_iterator_t ppMark = pDoc->getIDocumentMarkAccess()->findMark(rRefMark);
-            if(ppMark != pDoc->getIDocumentMarkAccess()->getMarksEnd())
+            if(ppMark != pDoc->getIDocumentMarkAccess()->getAllMarksEnd())
             {
                 const ::sw::mark::IMark* pBkmk = ppMark->get();
                 const SwPosition* pPos = &pBkmk->GetMarkStart();

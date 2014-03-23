@@ -873,44 +873,46 @@ static void OutBodyColor( const sal_Char *pTag, const SwFmt *pFmt,
 
 sal_uInt16 SwHTMLWriter::OutHeaderAttrs()
 {
-	sal_uLong nIdx = pCurPam->GetPoint()->nNode.GetIndex();
-	sal_uLong nEndIdx = pCurPam->GetMark()->nNode.GetIndex();
+    sal_uLong nIdx = pCurPam->GetPoint()->nNode.GetIndex();
+    sal_uLong nEndIdx = pCurPam->GetMark()->nNode.GetIndex();
 
-	SwTxtNode *pTxtNd = 0;
-	while( nIdx<=nEndIdx &&
-			0==(pTxtNd=pDoc->GetNodes()[nIdx]->GetTxtNode()) )
-		nIdx++;
+    SwTxtNode *pTxtNd = 0;
+    while( nIdx<=nEndIdx &&
+        0==(pTxtNd=pDoc->GetNodes()[nIdx]->GetTxtNode()) )
+        nIdx++;
 
-	ASSERT( pTxtNd, "Kein Text-Node gefunden" );
-	if( !pTxtNd || !pTxtNd->HasHints() )
-		return 0;
+    ASSERT( pTxtNd, "Kein Text-Node gefunden" );
+    if( !pTxtNd || !pTxtNd->HasHints() )
+        return 0;
 
-	sal_uInt16 nAttrs = 0;
-	sal_uInt16 nCntAttr = pTxtNd->GetSwpHints().Count();
-	xub_StrLen nOldPos = 0;
-	for( sal_uInt16 i=0; i<nCntAttr; i++ )
-	{
-		const SwTxtAttr *pHt = pTxtNd->GetSwpHints()[i];
-		if( !pHt->End() )
-		{
-			xub_StrLen nPos = *pHt->GetStart();
-			if( nPos-nOldPos > 1 || RES_TXTATR_FIELD != pHt->Which() )
-				break;
+    sal_uInt16 nAttrs = 0;
+    sal_uInt16 nCntAttr = pTxtNd->GetSwpHints().Count();
+    xub_StrLen nOldPos = 0;
+    for( sal_uInt16 i=0; i<nCntAttr; i++ )
+    {
+        const SwTxtAttr *pHt = pTxtNd->GetSwpHints()[i];
+        if( !pHt->End() )
+        {
+            xub_StrLen nPos = *pHt->GetStart();
+            if( nPos-nOldPos > 1
+                || ( pHt->Which() != RES_TXTATR_FIELD
+                     && pHt->Which() != RES_TXTATR_ANNOTATION ) )
+                break;
 
-			const sal_uInt16 nFldWhich =
+            const sal_uInt16 nFldWhich =
                 ((const SwFmtFld&)pHt->GetAttr()).GetField()->GetTyp()->Which();
-			if( RES_POSTITFLD!=nFldWhich &&
-				RES_SCRIPTFLD!=nFldWhich )
-				break;
+            if( RES_POSTITFLD!=nFldWhich &&
+                RES_SCRIPTFLD!=nFldWhich )
+                break;
 
-			OutNewLine();
-			OutHTML_SwFmtFld( *this, pHt->GetAttr() );
-			nOldPos = nPos;
-			nAttrs++;
-		}
-	}
+            OutNewLine();
+            OutHTML_SwFmtFld( *this, pHt->GetAttr() );
+            nOldPos = nPos;
+            nAttrs++;
+        }
+    }
 
-	return nAttrs;
+    return nAttrs;
 }
 
 const SwPageDesc *SwHTMLWriter::MakeHeader( sal_uInt16 &rHeaderAttrs )
@@ -1061,24 +1063,27 @@ void SwHTMLWriter::OutBookmarks()
     const ::sw::mark::IMark* pBookmark = NULL;
     IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
     if(nBkmkTabPos != -1)
-        pBookmark = (pMarkAccess->getMarksBegin() + nBkmkTabPos)->get();
+        pBookmark = (pMarkAccess->getAllMarksBegin() + nBkmkTabPos)->get();
     // Ausgabe aller Bookmarks in diesem Absatz. Die Content-Position
     // wird vorerst nicht beruecksichtigt!
     sal_uInt32 nNode = pCurPam->GetPoint()->nNode.GetIndex();
-    while( nBkmkTabPos != -1 &&
-        pBookmark->GetMarkPos().nNode.GetIndex() == nNode )
+    while( nBkmkTabPos != -1
+           && pBookmark->GetMarkPos().nNode.GetIndex() == nNode )
     {
         // Der Bereich derBookmark wird erstam ignoriert, da er von uns
         // auch nicht eingelesen wird.
 
         // erst die SWG spezifischen Daten:
-        if(dynamic_cast< const ::sw::mark::IBookmark* >(pBookmark) && pBookmark->GetName().getLength() )
+        if ( dynamic_cast< const ::sw::mark::IBookmark* >(pBookmark) != NULL
+             && pBookmark->GetName().getLength() )
+        {
             OutAnchor( pBookmark->GetName() );
+        }
 
-        if( ++nBkmkTabPos >= pMarkAccess->getMarksCount() )
+        if( ++nBkmkTabPos >= pMarkAccess->getAllMarksCount() )
             nBkmkTabPos = -1;
         else
-            pBookmark = (pMarkAccess->getMarksBegin() + nBkmkTabPos)->get();
+            pBookmark = (pMarkAccess->getAllMarksBegin() + nBkmkTabPos)->get();
     }
 
     sal_uInt16 nPos;

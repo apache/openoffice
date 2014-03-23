@@ -50,13 +50,15 @@ namespace drawinglayer
                 getCornerRadiusX(), 
                 getCornerRadiusY()));
 
-			// add fill
-			if(!getSdrLFSTAttribute().getFill().isDefault())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            // add fill
+            if(!getSdrLFSTAttribute().getFill().isDefault())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -71,16 +73,18 @@ namespace drawinglayer
                         getTransform()));
             }
 
-			// add line
-			if(!getSdrLFSTAttribute().getLine().isDefault())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            // add line
+            if(!getSdrLFSTAttribute().getLine().isDefault())
+            {
+                basegfx::B2DPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getLine(),
-						attribute::SdrLineStartEndAttribute()));
-			}
+                        attribute::SdrLineStartEndAttribute()));
+            }
             else if(!getForceFillForHitTest())
             {
                 // if initially no line is defined and it's not a text frame, create 

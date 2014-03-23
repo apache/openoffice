@@ -119,7 +119,7 @@ SwTxtINetFmt::SwTxtINetFmt( SwFmtINetFmt& rAttr,
     , m_bVisited( false )
     , m_bVisitedValid( false )
 {
-    rAttr.pTxtAttr  = this;
+    rAttr.mpTxtAttr  = this;
     SetCharFmtAttr( true );
 }
 
@@ -129,52 +129,52 @@ SwTxtINetFmt::~SwTxtINetFmt( )
 
 SwCharFmt* SwTxtINetFmt::GetCharFmt()
 {
-	const SwFmtINetFmt& rFmt = SwTxtAttrEnd::GetINetFmt();
-	SwCharFmt* pRet = NULL;
+    const SwFmtINetFmt& rFmt = SwTxtAttrEnd::GetINetFmt();
+    SwCharFmt* pRet = NULL;
 
-	if( rFmt.GetValue().Len() )
-	{
-		const SwDoc* pDoc = GetTxtNode().GetDoc();
+    if ( rFmt.GetValue().Len() )
+    {
+        const SwDoc* pDoc = GetTxtNode().GetDoc();
         if( !IsVisitedValid() )
         {
-			SetVisited( pDoc->IsVisitedURL( rFmt.GetValue() ) );
+            SetVisited( pDoc->IsVisitedURL( rFmt.GetValue() ) );
             SetVisitedValid( true );
         }
-		sal_uInt16 nId;
-		const String& rStr = IsVisited() ? rFmt.GetVisitedFmt()
-										   : rFmt.GetINetFmt();
-		if( rStr.Len() )
-			nId = IsVisited() ? rFmt.GetVisitedFmtId() : rFmt.GetINetFmtId();
-		else
-			nId = static_cast<sal_uInt16>(IsVisited() ? RES_POOLCHR_INET_VISIT : RES_POOLCHR_INET_NORMAL);
 
-		// JP 10.02.2000, Bug 72806: dont modify the doc for getting the
-		//		correct charstyle.
-		sal_Bool bResetMod = !pDoc->IsModified();
-		Link aOle2Lnk;
-		if( bResetMod )
-		{
-			aOle2Lnk = pDoc->GetOle2Link();
-			((SwDoc*)pDoc)->SetOle2Link( Link() );
-		}
+        const sal_uInt16 nId = IsVisited() ? rFmt.GetVisitedFmtId() : rFmt.GetINetFmtId();
+        const String& rStr = IsVisited() ? rFmt.GetVisitedFmt() : rFmt.GetINetFmt();
+        if ( rStr.Len() == 0 )
+        {
+            ASSERT( false, "<SwTxtINetFmt::GetCharFmt()> - missing character format at hyperlink attribute");
+        }
 
-		pRet = IsPoolUserFmt( nId )
-				? ((SwDoc*)pDoc)->FindCharFmtByName( rStr )
-				: ((SwDoc*)pDoc)->GetCharFmtFromPool( nId );
+        // JP 10.02.2000, Bug 72806: dont modify the doc for getting the
+        //		correct charstyle.
+        sal_Bool bResetMod = !pDoc->IsModified();
+        Link aOle2Lnk;
+        if ( bResetMod )
+        {
+            aOle2Lnk = pDoc->GetOle2Link();
+            ( (SwDoc*) pDoc )->SetOle2Link( Link() );
+        }
 
-		if( bResetMod )
-		{
-			((SwDoc*)pDoc)->ResetModified();
-			((SwDoc*)pDoc)->SetOle2Link( aOle2Lnk );
-		}
-	}
+        pRet = IsPoolUserFmt( nId )
+               ? ( (SwDoc*) pDoc )->FindCharFmtByName( rStr )
+               : ( (SwDoc*) pDoc )->GetCharFmtFromPool( nId );
 
-	if( pRet )
-		pRet->Add( this );
-	else if( GetRegisteredIn() )
-		GetRegisteredInNonConst()->Remove( this );
+        if ( bResetMod )
+        {
+            ( (SwDoc*) pDoc )->ResetModified();
+            ( (SwDoc*) pDoc )->SetOle2Link( aOle2Lnk );
+        }
+    }
 
-	return pRet;
+    if ( pRet )
+        pRet->Add( this );
+    else if ( GetRegisteredIn() )
+        GetRegisteredInNonConst()->Remove( this );
+
+    return pRet;
 }
 
 void SwTxtINetFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
@@ -304,7 +304,9 @@ SwTxtMeta::CreateTxtMeta(
     ::sw::MetaFieldManager & i_rTargetDocManager,
     SwTxtNode *const i_pTargetTxtNode,
     SwFmtMeta & i_rAttr,
-    xub_StrLen const i_nStart, xub_StrLen const i_nEnd, bool const i_bIsCopy)
+    xub_StrLen const i_nStart,
+    xub_StrLen const i_nEnd,
+    bool const i_bIsCopy)
 {
     if (COPY == i_bIsCopy)
     {   // i_rAttr is already cloned, now call DoCopy to copy the sw::Meta

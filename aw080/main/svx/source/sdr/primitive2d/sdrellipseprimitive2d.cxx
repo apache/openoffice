@@ -59,13 +59,15 @@ namespace drawinglayer
 			// apply to the geometry
 			aUnitOutline.transform(aUnitCorrectionMatrix);
 
-			// add fill
-			if(!getSdrLFSTAttribute().getFill().isDefault())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            // add fill
+            if(!getSdrLFSTAttribute().getFill().isDefault())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -79,13 +81,15 @@ namespace drawinglayer
                         false,
 						basegfx::B2DPolyPolygon(aUnitOutline), 
                         getTransform()));
-			}
-			else
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            }
+            else
+            {
+                basegfx::B2DPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getLine(),
 						attribute::SdrLineStartEndAttribute()));
 			}
@@ -165,13 +169,15 @@ namespace drawinglayer
 			// apply to the geometry
 			aUnitOutline.transform(aUnitCorrectionMatrix);
 
-			// add fill
-			if(!getSdrLFSTAttribute().getFill().isDefault() && aUnitOutline.isClosed())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            // add fill
+            if(!getSdrLFSTAttribute().getFill().isDefault() && aUnitOutline.isClosed())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -185,13 +191,15 @@ namespace drawinglayer
                         false,
 						basegfx::B2DPolyPolygon(aUnitOutline), 
                         getTransform()));
-			}
-			else
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            }
+            else
+            {
+                basegfx::B2DPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getLine(), 
                         getSdrLFSTAttribute().getLineStartEnd()));
 			}

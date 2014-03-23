@@ -2126,11 +2126,15 @@ void ImpTextframeHdl::CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlay
 // SdrCropHdl
 
 SdrCropHdl::SdrCropHdl(
-	SdrHdlList& rHdlList,
-	const SdrObject& rSdrHdlObject, 
-	SdrHdlKind eNewKind,
-	const basegfx::B2DPoint& rPnt)
-:	SdrHdl( rHdlList, &rSdrHdlObject, eNewKind, rPnt)
+    SdrHdlList& rHdlList,
+    const SdrObject& rSdrHdlObject, 
+    SdrHdlKind eNewKind,
+    const basegfx::B2DPoint& rPnt,
+    double fShearX,
+    double fRotation)
+:   SdrHdl( rHdlList, &rSdrHdlObject, eNewKind, rPnt),
+    mfShearX(fShearX),
+    mfRotation(fRotation)
 {
 }
 
@@ -2217,42 +2221,50 @@ void SdrCropHdl::CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayManag
 	BitmapEx aBmpEx1( GetBitmapForHandle( aHandlesBitmap, nHdlSize ) );
 	::sdr::overlay::OverlayObject* pOverlayObject = 0L;
 
-	// animate focused handles
-	if(IsFocusHdl() && (mrHdlList.GetFocusHdl() == this))
+    // animate focused handles
+    if(IsFocusHdl() && (mrHdlList.GetFocusHdl() == this))
     {
-		if( nHdlSize >= 2 )
-			nHdlSize = 1;
+        if( nHdlSize >= 2 )
+            nHdlSize = 1;
 
-		BitmapEx aBmpEx2( GetBitmapForHandle( aHandlesBitmap, nHdlSize + 1 ) );
-		const sal_uInt32 nBlinkTime = sal::static_int_cast<sal_uInt32>(rStyleSettings.GetCursorBlinkTime());
+        BitmapEx aBmpEx2( GetBitmapForHandle( aHandlesBitmap, nHdlSize + 1 ) );
 
-		pOverlayObject = new ::sdr::overlay::OverlayAnimatedBitmapEx(
-			maPosition, 
-			aBmpEx1, 
-			aBmpEx2, 
-			nBlinkTime,
-			(sal_uInt16)(aBmpEx1.GetSizePixel().Width() - 1) >> 1, 
-			(sal_uInt16)(aBmpEx1.GetSizePixel().Height() - 1) >> 1,
-			(sal_uInt16)(aBmpEx2.GetSizePixel().Width() - 1) >> 1, 
-			(sal_uInt16)(aBmpEx2.GetSizePixel().Height() - 1) >> 1);
-	}
-	else
-	{
-		// create centered handle as default
-		pOverlayObject = new ::sdr::overlay::OverlayBitmapEx(
-			maPosition, 
-			aBmpEx1,
-			(sal_uInt16)(aBmpEx1.GetSizePixel().Width() - 1) >> 1,
-			(sal_uInt16)(aBmpEx1.GetSizePixel().Height() - 1) >> 1);
+        const sal_uInt32 nBlinkTime = sal::static_int_cast<sal_uInt32>(rStyleSettings.GetCursorBlinkTime());
+
+        pOverlayObject = new ::sdr::overlay::OverlayAnimatedBitmapEx(
+            maPosition, 
+            aBmpEx1, 
+            aBmpEx2, 
+            nBlinkTime,
+            (sal_uInt16)(aBmpEx1.GetSizePixel().Width() - 1) >> 1, 
+            (sal_uInt16)(aBmpEx1.GetSizePixel().Height() - 1) >> 1,
+            (sal_uInt16)(aBmpEx2.GetSizePixel().Width() - 1) >> 1, 
+            (sal_uInt16)(aBmpEx2.GetSizePixel().Height() - 1) >> 1,
+            mfShearX, 
+            mfRotation);
+    }
+    else
+    {
+        // create centered handle as default
+        pOverlayObject = new ::sdr::overlay::OverlayBitmapEx(
+            maPosition, 
+            aBmpEx1,
+            (sal_uInt16)(aBmpEx1.GetSizePixel().Width() - 1) >> 1,
+            (sal_uInt16)(aBmpEx1.GetSizePixel().Height() - 1) >> 1,
+            0.0,
+            mfShearX,
+            mfRotation);
     }
 
     rOverlayManager.add(*pOverlayObject);
-	maOverlayGroup.append(*pOverlayObject);
+    maOverlayGroup.append(*pOverlayObject);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// with the correction of crop handling I could get rid of the extra mirroring flag, adapted stuff
+// accordingly
 
-SdrCropViewHdl::SdrCropViewHdl( // TTTT: Check if CropPreview works, including all mirrorings (see mbExtraMirrorXFromGraphic in trunk)
+SdrCropViewHdl::SdrCropViewHdl(
     SdrHdlList& rHdlList,
     const SdrObject& rSdrHdlObject, 
     const basegfx::B2DHomMatrix& rObjectTransform,
@@ -2312,15 +2324,11 @@ void SdrCropViewHdl::CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayM
     if(bMirroredX)
     {
         aScale.setX(-aScale.getX());
-        fCropLeft = mfCropRight;
-        fCropRight = mfCropLeft;
     }
 
     if(bMirroredY)
     {
         aScale.setY(-aScale.getY());
-        fCropTop = mfCropBottom;
-        fCropBottom = mfCropTop;
     }
 
     // create target translate and scale
@@ -2387,11 +2395,11 @@ void SdrCropViewHdl::CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayM
     basegfx::B2DHomMatrix aCroppedTransform;
 
     aCroppedTransform.scale(
-        bMirroredX ? -aCropped.getWidth() : aCropped.getWidth(), 
-        bMirroredY ? -aCropped.getHeight() : aCropped.getHeight());
+        aCropped.getWidth(), 
+        aCropped.getHeight());
     aCroppedTransform.translate(
-        bMirroredX ? aCropped.getMaxX() : aCropped.getMinX(), 
-        bMirroredY ? aCropped.getMaxY() : aCropped.getMinY());
+        aCropped.getMinX(), 
+        aCropped.getMinY());
     aCroppedTransform = maObjectTransform * aCroppedTransform;
 
     // prepare graphic primitive (tranformed)

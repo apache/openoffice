@@ -45,7 +45,9 @@ namespace sdr
                         getBitmapEx1(),
                         getBasePosition(),
                         getCenterX1(),
-                        getCenterY1()));
+                        getCenterY1(),
+                        getShearX(),
+                        getRotation()));
 
                 return drawinglayer::primitive2d::Primitive2DSequence(&aPrimitive, 1);
             }
@@ -56,35 +58,41 @@ namespace sdr
                         getBitmapEx2(),
                         getBasePosition(),
                         getCenterX2(),
-                        getCenterY2()));
+                        getCenterY2(),
+                        getShearX(),
+                        getRotation()));
 
                 return drawinglayer::primitive2d::Primitive2DSequence(&aPrimitive, 1);
             }
 		}
 
-		OverlayAnimatedBitmapEx::OverlayAnimatedBitmapEx(
-			const basegfx::B2DPoint& rBasePos,
-			const BitmapEx& rBitmapEx1, 
-			const BitmapEx& rBitmapEx2, 
-			sal_uInt32 nBlinkTime,
-			sal_uInt16 nCenX1, 
-			sal_uInt16 nCenY1, 
-			sal_uInt16 nCenX2, 
-			sal_uInt16 nCenY2)
-		:	OverlayObjectWithBasePosition(rBasePos, Color(COL_WHITE)),
-			maBitmapEx1(rBitmapEx1),
-			maBitmapEx2(rBitmapEx2),
-			mnCenterX1(nCenX1), mnCenterY1(nCenY1),
-			mnCenterX2(nCenX2), mnCenterY2(nCenY2),
-			mnBlinkTime(nBlinkTime),
-			mbOverlayState(false)
+        OverlayAnimatedBitmapEx::OverlayAnimatedBitmapEx(
+            const basegfx::B2DPoint& rBasePos,
+            const BitmapEx& rBitmapEx1, 
+            const BitmapEx& rBitmapEx2, 
+            sal_uInt32 nBlinkTime,
+            sal_uInt16 nCenX1, 
+            sal_uInt16 nCenY1, 
+            sal_uInt16 nCenX2, 
+            sal_uInt16 nCenY2,
+            double fShearX,
+            double fRotation)
+        :   OverlayObjectWithBasePosition(rBasePos, Color(COL_WHITE)),
+            maBitmapEx1(rBitmapEx1),
+            maBitmapEx2(rBitmapEx2),
+            mnCenterX1(nCenX1), mnCenterY1(nCenY1),
+            mnCenterX2(nCenX2), mnCenterY2(nCenY2),
+            mnBlinkTime(nBlinkTime),
+            mfShearX(fShearX),
+            mfRotation(fRotation),
+            mbOverlayState(false)
         {
-			// set AllowsAnimation flag to mark this object as animation capable
-			mbAllowsAnimation = true;
+            // set AllowsAnimation flag to mark this object as animation capable
+            mbAllowsAnimation = true;
 
-			// #i53216# check blink time value range
-			mnBlinkTime = impCheckBlinkTimeValueRange(mnBlinkTime);
-		}
+            // #i53216# check blink time value range
+            mnBlinkTime = impCheckBlinkTimeValueRange(mnBlinkTime);
+        }
 
 		OverlayAnimatedBitmapEx::~OverlayAnimatedBitmapEx()
 		{

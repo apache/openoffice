@@ -42,49 +42,51 @@ using namespace com::sun::star;
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
-		Primitive2DReference SdrMeasurePrimitive2D::impCreatePart(
-			const attribute::SdrLineAttribute& rLineAttribute,
-			const basegfx::B2DHomMatrix& rObjectMatrix, 
-			const basegfx::B2DPoint& rStart, 
-			const basegfx::B2DPoint& rEnd, 
-			bool bLeftActive, 
-			bool bRightActive) const
-		{
-			const attribute::SdrLineStartEndAttribute& rLineStartEnd = getSdrLSTAttribute().getLineStartEnd();
-			basegfx::B2DPolygon aPolygon;
+    namespace primitive2d
+    {
+        Primitive2DReference SdrMeasurePrimitive2D::impCreatePart(
+            const attribute::SdrLineAttribute& rLineAttribute,
+            const basegfx::B2DHomMatrix& rObjectMatrix, 
+            const basegfx::B2DPoint& rStart, 
+            const basegfx::B2DPoint& rEnd, 
+            bool bLeftActive, 
+            bool bRightActive) const
+        {
+            const attribute::SdrLineStartEndAttribute& rLineStartEnd = getSdrLSTAttribute().getLineStartEnd();
+            basegfx::B2DPolygon aPolygon;
 
-			aPolygon.append(rStart);
-			aPolygon.append(rEnd);
+            aPolygon.append(rStart);
+            aPolygon.append(rEnd);
+            aPolygon.transform(rObjectMatrix);
 
-			if(rLineStartEnd.isDefault() || (!bLeftActive && !bRightActive))
-			{
-				return createPolygonLinePrimitive(
-					aPolygon, 
-					rObjectMatrix, 
-					rLineAttribute, 
-					attribute::SdrLineStartEndAttribute());
-			}
-		
+            if(rLineStartEnd.isDefault() || (!bLeftActive && !bRightActive))
+            {
+                return createPolygonLinePrimitive(
+                    aPolygon, 
+                    rLineAttribute, 
+                    attribute::SdrLineStartEndAttribute());
+            }
+        
             if(bLeftActive && bRightActive)
-			{
-				return createPolygonLinePrimitive(
-					aPolygon, 
-					rObjectMatrix, 
-					rLineAttribute, 
-					rLineStartEnd);
-			}
-			
-			const basegfx::B2DPolyPolygon aEmpty;
-			const attribute::SdrLineStartEndAttribute aLineStartEnd(
-				bLeftActive ? rLineStartEnd.getStartPolyPolygon() : aEmpty, bRightActive ? rLineStartEnd.getEndPolyPolygon() : aEmpty,
-				bLeftActive ? rLineStartEnd.getStartWidth() : 0.0, bRightActive ? rLineStartEnd.getEndWidth() : 0.0,
-				bLeftActive ? rLineStartEnd.isStartActive() : false, bRightActive ? rLineStartEnd.isEndActive() : false,
-				bLeftActive ? rLineStartEnd.isStartCentered() : false, bRightActive? rLineStartEnd.isEndCentered() : false);
+            {
+                return createPolygonLinePrimitive(
+                    aPolygon, 
+                    rLineAttribute, 
+                    rLineStartEnd);
+            }
+            
+            const basegfx::B2DPolyPolygon aEmpty;
+            const attribute::SdrLineStartEndAttribute aLineStartEnd(
+                bLeftActive ? rLineStartEnd.getStartPolyPolygon() : aEmpty, bRightActive ? rLineStartEnd.getEndPolyPolygon() : aEmpty,
+                bLeftActive ? rLineStartEnd.getStartWidth() : 0.0, bRightActive ? rLineStartEnd.getEndWidth() : 0.0,
+                bLeftActive ? rLineStartEnd.isStartActive() : false, bRightActive ? rLineStartEnd.isEndActive() : false,
+                bLeftActive ? rLineStartEnd.isStartCentered() : false, bRightActive? rLineStartEnd.isEndCentered() : false);
 
-			return createPolygonLinePrimitive(aPolygon, rObjectMatrix, rLineAttribute, aLineStartEnd);
-		}
+            return createPolygonLinePrimitive(
+                aPolygon, 
+                rLineAttribute, 
+                aLineStartEnd);
+        }
 
 		Primitive2DSequence SdrMeasurePrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& aViewInformation) const
 		{

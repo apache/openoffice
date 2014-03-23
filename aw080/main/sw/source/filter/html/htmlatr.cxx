@@ -2481,9 +2481,10 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 		do {
 			aEndPosLst.OutEndAttrs( rHTMLWrt, nStrPos + nOffset );
 
-			nAttrPos++;
-			if( RES_TXTATR_FIELD == pHt->Which() )		// Felder nicht
-				continue;                               // ausgeben
+            nAttrPos++;
+            if( pHt->Which() == RES_TXTATR_FIELD
+                || pHt->Which() == RES_TXTATR_ANNOTATION )
+                continue;
 
             if ( pHt->End() && !pHt->HasDummyChar() )
 			{
@@ -2576,24 +2577,25 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 					}
 					else
 					{
-						// Hints ohne-Ende werden als letztes ausgebeben
-						ASSERT( !pTxtHt,
-								"Wieso gibt es da schon ein Attribut ohne Ende?" );
-						if( rHTMLWrt.nTxtAttrsToIgnore>0 )
-						{
-							rHTMLWrt.nTxtAttrsToIgnore--;
-						}
-						else
-						{
-							pTxtHt = pHt;
-							sal_uInt16 nFldWhich;
-							if( RES_TXTATR_FIELD != pHt->Which() ||
-								( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetField()->Which()) &&
-								RES_SCRIPTFLD != nFldWhich ) )
-								bWriteBreak = sal_False;
-						}
-						bOutChar = sal_False;		// keine 255 ausgeben
-					}
+                        // Hints ohne-Ende werden als letztes ausgebeben
+                        ASSERT( !pTxtHt, "Wieso gibt es da schon ein Attribut ohne Ende?" );
+                        if( rHTMLWrt.nTxtAttrsToIgnore>0 )
+                        {
+                            rHTMLWrt.nTxtAttrsToIgnore--;
+                        }
+                        else
+                        {
+                            pTxtHt = pHt;
+                            sal_uInt16 nFldWhich;
+                            if( RES_TXTATR_FIELD != pHt->Which()
+                                || ( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetField()->Which())
+                                     && RES_SCRIPTFLD != nFldWhich ) )
+                            {
+                                bWriteBreak = sal_False;
+                            }
+                        }
+                        bOutChar = sal_False;		// keine 255 ausgeben
+                    }
 				} while( ++nAttrPos < nCntAttr && nStrPos ==
 					*( pHt = pNd->GetSwpHints()[ nAttrPos ] )->GetStart() );
 			}
@@ -3418,7 +3420,7 @@ SwAttrFnTab aHTMLAttrFnTab = {
 /* RES_TXTATR_FIELD */              OutHTML_SwFmtFld,
 /* RES_TXTATR_FLYCNT */             OutHTML_SwFlyCnt,
 /* RES_TXTATR_FTN */                OutHTML_SwFmtFtn,
-/* RES_TXTATR_DUMMY4 */             0,
+/* RES_TXTATR_ANNOTATION */         OutHTML_SwFmtFld,
 /* RES_TXTATR_DUMMY3 */             0,
 /* RES_TXTATR_DUMMY1 */             0, // Dummy:
 /* RES_TXTATR_DUMMY2 */             0, // Dummy:

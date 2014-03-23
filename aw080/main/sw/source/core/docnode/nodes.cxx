@@ -291,19 +291,20 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
 
                     pTxtNd->AddToList();
 
-					// Sonderbehandlung fuer die Felder!
-					if( pHts && pHts->Count() )
+                    // Sonderbehandlung fuer die Felder!
+                    if( pHts && pHts->Count() )
                     {
                         // this looks fishy if pDestDoc != 0
                         bool const bToUndo = !pDestDoc &&
                             GetDoc()->GetIDocumentUndoRedo().IsUndoNodes(rNds);
-						for( sal_uInt16 i = pHts->Count(); i; )
-						{
-							sal_uInt16 nDelMsg = 0;
+                        for( sal_uInt16 i = pHts->Count(); i; )
+                        {
+                            sal_uInt16 nDelMsg = 0;
                             SwTxtAttr * const pAttr = pHts->GetTextHint( --i );
                             switch ( pAttr->Which() )
                             {
                             case RES_TXTATR_FIELD:
+                            case RES_TXTATR_ANNOTATION:
                             case RES_TXTATR_INPUTFIELD:
                                 {
                                     SwTxtFld* pTxtFld = static_cast<SwTxtFld*>(pAttr);
@@ -318,30 +319,31 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
                                                 ( pTxtFld->GetFmtFld().IsFldInDoc()
                                                   ? SWFMTFLD_INSERTED
                                                   : SWFMTFLD_REMOVED ) ) );
-									}
-									else
-									if( RES_DDEFLD == pTyp->Which() )
-									{
-										if( bToUndo )
-											((SwDDEFieldType*)pTyp)->DecRefCnt();
-										else
-											((SwDDEFieldType*)pTyp)->IncRefCnt();
-									}
-									nDelMsg = RES_FIELD_DELETED;
-								}
-								break;
-							case RES_TXTATR_FTN:
-								nDelMsg = RES_FOOTNOTE_DELETED;
-								break;
+                                    }
+                                    else
+                                        if( RES_DDEFLD == pTyp->Which() )
+                                        {
+                                            if( bToUndo )
+                                                ((SwDDEFieldType*)pTyp)->DecRefCnt();
+                                            else
+                                                ((SwDDEFieldType*)pTyp)->IncRefCnt();
+                                        }
+                                        nDelMsg = RES_FIELD_DELETED;
+                                }
+                                break;
 
-							case RES_TXTATR_TOXMARK:
+                            case RES_TXTATR_FTN:
+                                nDelMsg = RES_FOOTNOTE_DELETED;
+                                break;
+
+                            case RES_TXTATR_TOXMARK:
                                 static_cast<SwTOXMark&>(pAttr->GetAttr())
                                     .InvalidateTOXMark();
-								break;
+                                break;
 
-							case RES_TXTATR_REFMARK:
-								nDelMsg = RES_REFMARK_DELETED;
-								break;
+                            case RES_TXTATR_REFMARK:
+                                nDelMsg = RES_REFMARK_DELETED;
+                                break;
 
                             case RES_TXTATR_META:
                             case RES_TXTATR_METAFIELD:
@@ -356,37 +358,38 @@ void SwNodes::ChgNode( SwNodeIndex& rDelPos, sal_uLong nSz,
 
                             default:
                                 break;
-							}
-							if( nDelMsg && bToUndo )
-							{
-								SwPtrMsgPoolItem aMsgHint( nDelMsg,
-													(void*)&pAttr->GetAttr() );
-								rNds.GetDoc()->GetUnoCallBack()->
-											ModifyNotification( &aMsgHint, &aMsgHint );
-							}
-						}
-					}
-//FEATURE::CONDCOLL
-					if( RES_CONDTXTFMTCOLL == pTxtNd->GetTxtColl()->Which() )
-						pTxtNd->ChkCondColl();
-//FEATURE::CONDCOLL
-				}
-				else
-				{
-					// in unterschiedliche Docs gemoved ?
-					// dann die Daten wieder persistent machen
-					if( pCNd->IsNoTxtNode() && bRestPersData )
-						((SwNoTxtNode*)pCNd)->RestorePersistentData();
-				}
-			}
-		}
-	}
+                            }
 
-	//JP 03.02.99: alle Felder als invalide erklaeren, aktu. erfolgt im
-	//				Idle-Handler des Docs
-	GetDoc()->SetFieldsDirty( true, NULL, 0 );
-	if( rNds.GetDoc() != GetDoc() )
-		rNds.GetDoc()->SetFieldsDirty( true, NULL, 0 );
+                            if( nDelMsg && bToUndo )
+                            {
+                                SwPtrMsgPoolItem aMsgHint( nDelMsg,
+                                    (void*)&pAttr->GetAttr() );
+                                rNds.GetDoc()->GetUnoCallBack()->
+                                    ModifyNotification( &aMsgHint, &aMsgHint );
+                            }
+                        }
+                    }
+                    //FEATURE::CONDCOLL
+                    if( RES_CONDTXTFMTCOLL == pTxtNd->GetTxtColl()->Which() )
+                        pTxtNd->ChkCondColl();
+                    //FEATURE::CONDCOLL
+                }
+                else
+                {
+                    // in unterschiedliche Docs gemoved ?
+                    // dann die Daten wieder persistent machen
+                    if( pCNd->IsNoTxtNode() && bRestPersData )
+                        ((SwNoTxtNode*)pCNd)->RestorePersistentData();
+                }
+            }
+        }
+    }
+
+    //JP 03.02.99: alle Felder als invalide erklaeren, aktu. erfolgt im
+    //				Idle-Handler des Docs
+    GetDoc()->SetFieldsDirty( true, NULL, 0 );
+    if( rNds.GetDoc() != GetDoc() )
+        rNds.GetDoc()->SetFieldsDirty( true, NULL, 0 );
 
 
 	if( bNewFrms )
@@ -897,7 +900,6 @@ sal_Bool SwNodes::_MoveNodes( const SwNodeRange& aRange, SwNodes & rNodes,
 			break;
 
 		case ND_TEXTNODE:
-			//IAccessibility2 Implementation 2009-----
 			//Solution:Add special function to text node.
 			{
 				if( bNewFrms && pAktNode->GetCntntNode() )
@@ -907,7 +909,6 @@ sal_Bool SwNodes::_MoveNodes( const SwNodeRange& aRange, SwNodes & rNodes,
 				aRg.aEnd--;
 			}
 			break;
-		    //-----IAccessibility2 Implementation 2009
 		case ND_GRFNODE:
 		case ND_OLENODE:
 			{

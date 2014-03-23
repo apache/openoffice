@@ -60,11 +60,13 @@ namespace drawinglayer
 						getTransform()));
 			}
 			else
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -84,20 +86,23 @@ namespace drawinglayer
                         false,
 						basegfx::B2DPolyPolygon(getTail()), 
                         getTransform()));
-			}
-			else
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
-                    createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
-                        getSdrLFSTAttribute().getLine(),
-						attribute::SdrLineStartEndAttribute()));
+            }
+            else
+            {
+                basegfx::B2DPolygon aTransformed(aUnitOutline);
 
+                aTransformed.transform(getTransform());
                 appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        getTail(), 
-                        getTransform(), 
+                        aTransformed, 
+                        getSdrLFSTAttribute().getLine(),
+                        attribute::SdrLineStartEndAttribute()));
+
+                aTransformed = getTail();
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    createPolygonLinePrimitive(
+                        aTransformed, 
                         getSdrLFSTAttribute().getLine(), 
                         getSdrLFSTAttribute().getLineStartEnd()));
 			}

@@ -43,7 +43,9 @@ namespace sdr
                     getBitmapEx(),
                     getBasePosition(),
                     getCenterX(),
-                    getCenterY()));
+                    getCenterY(),
+                    getShearX(),
+                    getRotation()));
 
 			if(basegfx::fTools::more(mfAlpha, 0.0))
 			{
@@ -55,17 +57,23 @@ namespace sdr
             return drawinglayer::primitive2d::Primitive2DSequence(&aReference, 1);
 		}
 
-		OverlayBitmapEx::OverlayBitmapEx(
-			const basegfx::B2DPoint& rBasePos,
-			const BitmapEx& rBitmapEx, 
-			sal_uInt16 nCenX, sal_uInt16 nCenY, double fAlpha)
-		:	OverlayObjectWithBasePosition(rBasePos, Color(COL_WHITE)),
-			maBitmapEx(rBitmapEx),
-			mnCenterX(nCenX),
-			mnCenterY(nCenY),
-			mfAlpha(fAlpha)
-		{
-		}
+        OverlayBitmapEx::OverlayBitmapEx(
+            const basegfx::B2DPoint& rBasePos,
+            const BitmapEx& rBitmapEx, 
+            sal_uInt16 nCenX, 
+            sal_uInt16 nCenY, 
+            double fAlpha,
+            double fShearX,
+            double fRotation)
+        :   OverlayObjectWithBasePosition(rBasePos, Color(COL_WHITE)),
+            maBitmapEx(rBitmapEx),
+            mnCenterX(nCenX),
+            mnCenterY(nCenY),
+            mfAlpha(fAlpha),
+            mfShearX(fShearX),
+            mfRotation(fRotation)
+        {
+        }
 
 		OverlayBitmapEx::~OverlayBitmapEx()
 		{

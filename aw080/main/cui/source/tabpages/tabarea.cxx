@@ -61,7 +61,7 @@ SvxAreaTabDialog::SvxAreaTabDialog
 	Window* pParent,
 	const SfxItemSet* pAttr,
 	SdrModel* pModel,
-	const SdrView* /* pSdrView */
+    bool bShadow
 ) :
 
 	SfxTabDialog( pParent, CUI_RES( RID_SVXDLG_AREA ), pAttr ),
@@ -85,20 +85,29 @@ SvxAreaTabDialog::SvxAreaTabDialog
     mnPos( 0 ),
     mbAreaTP( sal_False )
 {
-	FreeResource();
+    FreeResource();
 
-	AddTabPage( RID_SVXPAGE_AREA, SvxAreaTabPage::Create, 0 );
-	AddTabPage( RID_SVXPAGE_SHADOW, SvxShadowTabPage::Create, 0 );
-	AddTabPage( RID_SVXPAGE_TRANSPARENCE, SvxTransparenceTabPage::Create,  0);
-	AddTabPage( RID_SVXPAGE_COLOR, SvxColorTabPage::Create, 0 );
-	AddTabPage( RID_SVXPAGE_GRADIENT, SvxGradientTabPage::Create, 0 );
-	AddTabPage( RID_SVXPAGE_HATCH, SvxHatchTabPage::Create, 0 );
-	AddTabPage( RID_SVXPAGE_BITMAP, SvxBitmapTabPage::Create,  0);
+    AddTabPage( RID_SVXPAGE_AREA, SvxAreaTabPage::Create, 0 );
 
-	SetCurPageId( RID_SVXPAGE_AREA );
+    if(bShadow)
+    {
+        AddTabPage( RID_SVXPAGE_SHADOW, SvxShadowTabPage::Create, 0 );
+    }
+    else
+    {
+        RemoveTabPage( RID_SVXPAGE_SHADOW );
+    }
 
-	CancelButton& rBtnCancel = GetCancelButton();
-	rBtnCancel.SetClickHdl( LINK( this, SvxAreaTabDialog, CancelHdlImpl ) );
+    AddTabPage( RID_SVXPAGE_TRANSPARENCE, SvxTransparenceTabPage::Create,  0);
+    AddTabPage( RID_SVXPAGE_COLOR, SvxColorTabPage::Create, 0 );
+    AddTabPage( RID_SVXPAGE_GRADIENT, SvxGradientTabPage::Create, 0 );
+    AddTabPage( RID_SVXPAGE_HATCH, SvxHatchTabPage::Create, 0 );
+    AddTabPage( RID_SVXPAGE_BITMAP, SvxBitmapTabPage::Create,  0);
+
+    SetCurPageId( RID_SVXPAGE_AREA );
+
+    CancelButton& rBtnCancel = GetCancelButton();
+    rBtnCancel.SetClickHdl( LINK( this, SvxAreaTabDialog, CancelHdlImpl ) );
 //! rBtnCancel.SetText( CUI_RESSTR( RID_SVXSTR_CLOSE ) );
 }
 

@@ -22,6 +22,8 @@ package org.openoffice.test.common;
 
 import java.io.File;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -62,6 +64,7 @@ public class XMLReporter extends RunListener {
 	
 	private long ignored = 0;
 	
+	private long runStart = 0;
 	private long testStart = 0;
 	
 	@Override
@@ -137,6 +140,7 @@ public class XMLReporter extends RunListener {
 	public void testRunStarted(Description description) throws Exception {
 		suiteName = description.getDisplayName();
 		FileUtil.deleteFile(outputDir);//clear all old output
+		runStart = System.currentTimeMillis();
 		startSuite();
 	}
 
@@ -188,7 +192,17 @@ public class XMLReporter extends RunListener {
 				prop.setAttribute("value", "" + e.getValue());
 				props.appendChild(prop);
 			}
-			
+
+			SimpleDateFormat dateFormat = new SimpleDateFormat( "yyyy/MM/dd HH:mm:ss");
+			String aRunStartStr = dateFormat.format( new Date( runStart));
+			long nRunEnd = System.currentTimeMillis();
+			String aRunEndStr = dateFormat.format( new Date( nRunEnd));
+			double fDuration = (nRunEnd - runStart) / 1000.0;
+			if( fDuration < 20*3600e3) // strip the end date if it is obvious
+				aRunEndStr = aRunEndStr.substring( 11);
+			String aTestTimeStr = String.format( "From %s to %s (%.1f secs)", aRunStartStr, aRunEndStr, fDuration);
+			System.setProperty( "info.test.date", aTestTimeStr);
+
 			FileUtil.storeXML(doc, file);
 			File htmlFile = new File(outputDir, "result.html");
 			InputStream is = getClass().getResourceAsStream("XMLReporter.xsl");

@@ -93,16 +93,18 @@ namespace drawinglayer
 			Primitive2DSequence aRetval;
 			const basegfx::B2DPolyPolygon aUnitPolyPolygon(basegfx::tools::createUnitPolygon());
 
-			// add fill
-			if(!getSdrFTAttribute().getFill().isDefault())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
-					createPolyPolygonFillPrimitive(
-						aUnitPolyPolygon, 
-						getTransform(), 
-						getSdrFTAttribute().getFill(), 
-						getSdrFTAttribute().getFillFloatTransGradient()));
-			}
+            // add fill
+            if(!getSdrFTAttribute().getFill().isDefault())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitPolyPolygon);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    createPolyPolygonFillPrimitive(
+                        aTransformed, 
+                        getSdrFTAttribute().getFill(), 
+                        getSdrFTAttribute().getFillFloatTransGradient()));
+            }
             else
             {
                 // if no fill create one for HitTest and BoundRect fallback

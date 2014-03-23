@@ -62,14 +62,16 @@ namespace drawinglayer
 			// create unit outline polygon
 			const basegfx::B2DPolygon aUnitOutline(basegfx::tools::createUnitPolygon());
 
-			// add fill
-			if(!bBehaveCompatibleToPaintVersion 
-				&& !getSdrLFSTAttribute().getFill().isDefault())
-			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
-					createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+            // add fill
+            if(!bBehaveCompatibleToPaintVersion 
+                && !getSdrLFSTAttribute().getFill().isDefault())
+            {
+                basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
+
+                aTransformed.transform(getTransform());
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    createPolyPolygonFillPrimitive(
+                        aTransformed, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -90,30 +92,32 @@ namespace drawinglayer
 				    double fRotate, fShearX;
 				    getTransform().decompose(aScale, aTranslate, fRotate, fShearX);
 
-				    // create expanded range (add relative half line width to unit rectangle)
-				    double fHalfLineWidth(getSdrLFSTAttribute().getLine().getWidth() * 0.5);
-				    double fScaleX(0.0 != aScale.getX() ? fHalfLineWidth / fabs(aScale.getX()) : 1.0);
-				    double fScaleY(0.0 != aScale.getY() ? fHalfLineWidth / fabs(aScale.getY()) : 1.0);
-				    const basegfx::B2DRange aExpandedRange(-fScaleX, -fScaleY, 1.0 + fScaleX, 1.0 + fScaleY);
-				    basegfx::B2DPolygon aExpandedUnitOutline(basegfx::tools::createPolygonFromRect(aExpandedRange));
+                    // create expanded range (add relative half line width to unit rectangle)
+                    double fHalfLineWidth(getSdrLFSTAttribute().getLine().getWidth() * 0.5);
+                    double fScaleX(0.0 != aScale.getX() ? fHalfLineWidth / fabs(aScale.getX()) : 1.0);
+                    double fScaleY(0.0 != aScale.getY() ? fHalfLineWidth / fabs(aScale.getY()) : 1.0);
+                    const basegfx::B2DRange aExpandedRange(-fScaleX, -fScaleY, 1.0 + fScaleX, 1.0 + fScaleY);
+                    basegfx::B2DPolygon aExpandedUnitOutline(basegfx::tools::createPolygonFromRect(aExpandedRange));
 
-				    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    aExpandedUnitOutline.transform(getTransform());
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                         createPolygonLinePrimitive(
                             aExpandedUnitOutline, 
-                            getTransform(), 
                             getSdrLFSTAttribute().getLine(),
-							attribute::SdrLineStartEndAttribute()));
-			    }
-			    else
-			    {
-				    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                            attribute::SdrLineStartEndAttribute()));
+                }
+                else
+                {
+                    basegfx::B2DPolygon aTransformed(aUnitOutline);
+
+                    aTransformed.transform(getTransform());
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                         createPolygonLinePrimitive(
-                            aUnitOutline, 
-                            getTransform(), 
+                            aTransformed, 
                             getSdrLFSTAttribute().getLine(),
-							attribute::SdrLineStartEndAttribute()));
-			    }
-			}
+                            attribute::SdrLineStartEndAttribute()));
+                }
+            }
             else
             {
                 // if initially no line is defined, create one for HitTest and BoundRect

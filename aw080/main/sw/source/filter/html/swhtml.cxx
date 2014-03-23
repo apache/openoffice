@@ -2755,7 +2755,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
                         const String sName( ((SfxStringItem*)pAttr->pItem)->GetValue() );
                         IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
                         IDocumentMarkAccess::const_iterator_t ppBkmk = pMarkAccess->findMark( sName );
-                        if( ppBkmk != pMarkAccess->getMarksEnd() &&
+                        if( ppBkmk != pMarkAccess->getAllMarksEnd() &&
                             ppBkmk->get()->GetMarkStart() == *pAttrPam->GetPoint() )
                             break; // do not generate duplicates on this position
                         pAttrPam->DeleteMark();
@@ -2773,6 +2773,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
                     }
                     break;
                 case RES_TXTATR_FIELD:
+                case RES_TXTATR_ANNOTATION:
                 case RES_TXTATR_INPUTFIELD:
                     {
                         sal_uInt16 nFldWhich =
@@ -5333,75 +5334,78 @@ void SwHTMLParser::InsertHorzRule()
 
 void SwHTMLParser::ParseMoreMetaOptions()
 {
-	String aName, aContent;
-	sal_Bool bHTTPEquiv = sal_False;
+    String aName, aContent;
+    sal_Bool bHTTPEquiv = sal_False;
 
-	const HTMLOptions *pHTMLOptions = GetOptions();
-	for( sal_uInt16 i = pHTMLOptions->Count(); i; )
-	{
-		const HTMLOption *pOption = (*pHTMLOptions)[ --i ];
-		switch( pOption->GetToken() )
-		{
-		case HTML_O_NAME:
-			aName = pOption->GetString();
-			bHTTPEquiv = sal_False;
-			break;
-		case HTML_O_HTTPEQUIV:
-			aName = pOption->GetString();
-			bHTTPEquiv = sal_True;
-			break;
-		case HTML_O_CONTENT:
-			aContent = pOption->GetString();
-			break;
-		}
-	}
+    const HTMLOptions *pHTMLOptions = GetOptions();
+    for( sal_uInt16 i = pHTMLOptions->Count(); i; )
+    {
+        const HTMLOption *pOption = (*pHTMLOptions)[ --i ];
+        switch( pOption->GetToken() )
+        {
+        case HTML_O_NAME:
+            aName = pOption->GetString();
+            bHTTPEquiv = sal_False;
+            break;
+        case HTML_O_HTTPEQUIV:
+            aName = pOption->GetString();
+            bHTTPEquiv = sal_True;
+            break;
+        case HTML_O_CONTENT:
+            aContent = pOption->GetString();
+            break;
+        }
+    }
 
-	// Hier wird es etwas tricky: Wir wissen genau, da? die Dok-Info
-	// nicht geaendert wurde. Deshalb genuegt es, auf Generator und
-	// auf refresh abzufragen, um noch nicht verarbeitete Token zu finden,
-	// denn das sind die einzigen, die die Dok-Info nicht modifizieren.
-	if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_generator ) ||
-		aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_refresh ) ||
-		aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_type ) ||
-		aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_script_type ) )
-		return;
+    // Hier wird es etwas tricky: Wir wissen genau, da? die Dok-Info
+    // nicht geaendert wurde. Deshalb genuegt es, auf Generator und
+    // auf refresh abzufragen, um noch nicht verarbeitete Token zu finden,
+    // denn das sind die einzigen, die die Dok-Info nicht modifizieren.
+    if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_generator ) ||
+        aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_refresh ) ||
+        aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_type ) ||
+        aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_script_type ) )
+        return;
 
-	aContent.EraseAllChars( _CR );
-	aContent.EraseAllChars( _LF );
+    aContent.EraseAllChars( _CR );
+    aContent.EraseAllChars( _LF );
 
-	if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_sdendnote ) )
-	{
-		FillEndNoteInfo( aContent );
-		return;
-	}
+    if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_sdendnote ) )
+    {
+        FillEndNoteInfo( aContent );
+        return;
+    }
 
-	if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_sdfootnote ) )
-	{
-		FillFootNoteInfo( aContent );
-		return;
-	}
+    if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_sdfootnote ) )
+    {
+        FillFootNoteInfo( aContent );
+        return;
+    }
 
-	String sText(
-			String::CreateFromAscii(TOOLS_CONSTASCII_STRINGPARAM("HTML: <")) );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_meta) );
-	sText.Append( ' ' );
-	if( bHTTPEquiv  )
-		sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_httpequiv) );
-	else
-		sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_name) );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("=\"") );
-	sText.Append( aName );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("\" ") );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_content) );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("=\"") );
-	sText.Append( aContent );
-	sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("\">") );
+    String sText( String::CreateFromAscii(TOOLS_CONSTASCII_STRINGPARAM("HTML: <")) );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_meta) );
+    sText.Append( ' ' );
+    if( bHTTPEquiv  )
+        sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_httpequiv) );
+    else
+        sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_name) );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("=\"") );
+    sText.Append( aName );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("\" ") );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM(OOO_STRING_SVTOOLS_HTML_O_content) );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("=\"") );
+    sText.Append( aContent );
+    sText.AppendAscii( TOOLS_CONSTASCII_STRINGPARAM("\">") );
 
-	SwPostItField aPostItFld(
-		(SwPostItFieldType*)pDoc->GetSysFldType( RES_POSTITFLD ),
-		aEmptyStr, sText, DateTime() );
-	SwFmtFld aFmtFld( aPostItFld );
-	InsertAttr( aFmtFld );
+    SwPostItField aPostItFld(
+        (SwPostItFieldType*)pDoc->GetSysFldType( RES_POSTITFLD ),
+        sText,
+        aEmptyStr,
+        aEmptyStr,
+        aEmptyStr,
+        DateTime() );
+    SwFmtFld aFmtFld( aPostItFld );
+    InsertAttr( aFmtFld );
 }
 
 /*  */

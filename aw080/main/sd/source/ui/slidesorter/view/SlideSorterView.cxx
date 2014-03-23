@@ -277,10 +277,10 @@ void SlideSorterView::LazyReactOnObjectChanges(void)
 
 void SlideSorterView::LocalModelHasChanged(void)
 {
-	mbModelChangedWhileModifyEnabled = false;
+    mbModelChangedWhileModifyEnabled = false;
 
-	// First call our base class.
-	View::LazyReactOnObjectChanges();
+    // First call our base class.
+    View::LazyReactOnObjectChanges();
 }
 
 

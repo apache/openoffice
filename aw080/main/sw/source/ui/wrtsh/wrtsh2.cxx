@@ -74,27 +74,64 @@
 		Beschreibung:
 ------------------------------------------------------------------------*/
 
-void SwWrtShell::Insert(SwField &rFld)
+void SwWrtShell::Insert( SwField& rFld )
 {
-	ResetCursorStack();
-	if(!_CanInsert())
-		return;
-	StartAllAction();
+    ResetCursorStack();
+    if(!_CanInsert())
+        return;
+    StartAllAction();
 
     SwRewriter aRewriter;
     aRewriter.AddRule(UNDO_ARG1, rFld.GetDescription());
 
-	StartUndo(UNDO_INSERT, &aRewriter);
+    StartUndo(UNDO_INSERT, &aRewriter);
 
     bool bDeleted = false;
-	if( HasSelection() )
+    const SwPaM* pAnnotationTextRange = NULL;
+    if ( HasSelection() )
     {
-        bDeleted = DelRight() != 0;
+        if ( rFld.GetTyp()->Which() == RES_POSTITFLD )
+        {
+            // for annotation fields:
+            // - keep the current selection in order to create a corresponding annotation mark
+            // - collapse cursor to its end
+            if ( IsTableMode() )
+            {
+                GetTblCrs()->Normalize( sal_False );
+                const SwPosition rStartPos( *(GetTblCrs()->GetMark()->nNode.GetNode().GetCntntNode()), 0 );
+                KillPams();
+                EndPara();
+                const SwPosition rEndPos( *GetCurrentShellCursor().GetPoint() );
+                pAnnotationTextRange = new SwPaM( rStartPos, rEndPos );
+            }
+            else
+            {
+                NormalizePam( sal_False );
+                const SwPaM& rCurrPaM = GetCurrentShellCursor();
+                pAnnotationTextRange = new SwPaM( *rCurrPaM.GetPoint(), *rCurrPaM.GetMark() );
+                ClearMark();
+            }
+        }
+        else
+        {
+            bDeleted = DelRight() != 0;
+        }
     }
 
     SwEditShell::Insert2(rFld, bDeleted);
+
+    if ( pAnnotationTextRange != NULL )
+    {
+        if ( GetDoc() != NULL )
+        {
+            IDocumentMarkAccess* pMarksAccess = GetDoc()->getIDocumentMarkAccess();
+            pMarksAccess->makeAnnotationMark( *pAnnotationTextRange, ::rtl::OUString() );
+        }
+        delete pAnnotationTextRange;
+    }
+
     EndUndo();
-	EndAllAction();
+    EndAllAction();
 }
 
 /*--------------------------------------------------------------------

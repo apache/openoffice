@@ -41,42 +41,42 @@
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonHairlinePrimitive2D class
 
             This primitive defines a multi-PolygonHairlinePrimitive2D and is
             just for convenience. The definition is not different from the single
-            defined PolygonHairlinePrimitive2Ds.
+                defined PolygonHairlinePrimitive2Ds.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonHairlinePrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonHairlinePrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the hairline geometry
-			basegfx::B2DPolyPolygon					maPolyPolygon;
+            basegfx::B2DPolyPolygon                 maPolyPolygon;
 
             /// the hairline color
-			basegfx::BColor							maBColor;
+            basegfx::BColor                         maBColor;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
+        public:
             /// constructor
-			PolyPolygonHairlinePrimitive2D(const basegfx::B2DPolyPolygon& rPolyPolygon, const basegfx::BColor& rBColor);
+            PolyPolygonHairlinePrimitive2D(const basegfx::B2DPolyPolygon& rPolyPolygon, const basegfx::BColor& rBColor);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const basegfx::BColor& getBColor() const { return maBColor; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::BColor& getBColor() const { return maBColor; }
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -84,52 +84,52 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonMarkerPrimitive2D class
 
             This primitive defines a multi-PolygonMarkerPrimitive2D and is
             just for convenience. The definition is not different from the single
             defined PolygonMarkerPrimitive2Ds.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonMarkerPrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonMarkerPrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the marker hairline geometry
-			basegfx::B2DPolyPolygon					maPolyPolygon;
+            basegfx::B2DPolyPolygon                 maPolyPolygon;
             
             /// the two colors
-			basegfx::BColor							maRGBColorA;
-			basegfx::BColor							maRGBColorB;
+            basegfx::BColor                         maRGBColorA;
+            basegfx::BColor                         maRGBColorB;
 
             /// the dash distance in 'pixels'
-			double									mfDiscreteDashLength;
+            double                                  mfDiscreteDashLength;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
+        public:
             /// constructor
-			PolyPolygonMarkerPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-				const basegfx::BColor& rRGBColorA,
-				const basegfx::BColor& rRGBColorB,
-				double fDiscreteDashLength);
+            PolyPolygonMarkerPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::BColor& rRGBColorA,
+                const basegfx::BColor& rRGBColorB,
+                double fDiscreteDashLength);
 
-			// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const basegfx::BColor& getRGBColorA() const { return maRGBColorA; }
-			const basegfx::BColor& getRGBColorB() const { return maRGBColorB; }
-			double getDiscreteDashLength() const { return mfDiscreteDashLength; }
+            // data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::BColor& getRGBColorA() const { return maRGBColorA; }
+            const basegfx::BColor& getRGBColorB() const { return maRGBColorB; }
+            double getDiscreteDashLength() const { return mfDiscreteDashLength; }
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -137,54 +137,54 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonStrokePrimitive2D class
 
             This primitive defines a multi-PolygonStrokePrimitive2D and is
             just for convenience. The definition is not different from the single
             defined PolygonStrokePrimitive2Ds.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonStrokePrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonStrokePrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the line geometry
-			basegfx::B2DPolyPolygon					maPolyPolygon;
+            basegfx::B2DPolyPolygon                 maPolyPolygon;
             
             /// the line attributes like width, join and color
-			attribute::LineAttribute				maLineAttribute;
+            attribute::LineAttribute                maLineAttribute;
             
             /// the line stroking (if used)
-			attribute::StrokeAttribute				maStrokeAttribute;
+            attribute::StrokeAttribute              maStrokeAttribute;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
+        public:
             /// constructor
-			PolyPolygonStrokePrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-    			const attribute::LineAttribute& rLineAttribute,
-				const attribute::StrokeAttribute& rStrokeAttribute);
+            PolyPolygonStrokePrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::LineAttribute& rLineAttribute,
+                const attribute::StrokeAttribute& rStrokeAttribute);
 
             /// constructor without stroking
-			PolyPolygonStrokePrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-    			const attribute::LineAttribute& rLineAttribute);
+            PolyPolygonStrokePrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::LineAttribute& rLineAttribute);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const attribute::LineAttribute& getLineAttribute() const { return maLineAttribute; }
-			const attribute::StrokeAttribute& getStrokeAttribute() const { return maStrokeAttribute; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const attribute::LineAttribute& getLineAttribute() const { return maLineAttribute; }
+            const attribute::StrokeAttribute& getStrokeAttribute() const { return maStrokeAttribute; }
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -192,52 +192,52 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonStrokePrimitive2D class
 
             This primitive defines a multi-PolygonStrokeArrowPrimitive2D and is
             just for convenience. The definition is not different from the single
             defined PolygonStrokeArrowPrimitive2Ds.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonStrokeArrowPrimitive2D : public PolyPolygonStrokePrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonStrokeArrowPrimitive2D : public PolyPolygonStrokePrimitive2D
+        {
+        private:
             /// geometric definitions for line start and end
-			attribute::LineStartEndAttribute				maStart;
-			attribute::LineStartEndAttribute				maEnd;
+            attribute::LineStartEndAttribute                maStart;
+            attribute::LineStartEndAttribute                maEnd;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
+        public:
             /// constructor
-			PolyPolygonStrokeArrowPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-    			const attribute::LineAttribute& rLineAttribute,
-				const attribute::StrokeAttribute& rStrokeAttribute, 
-				const attribute::LineStartEndAttribute& rStart, 
-				const attribute::LineStartEndAttribute& rEnd);
+            PolyPolygonStrokeArrowPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::LineAttribute& rLineAttribute,
+                const attribute::StrokeAttribute& rStrokeAttribute, 
+                const attribute::LineStartEndAttribute& rStart, 
+                const attribute::LineStartEndAttribute& rEnd);
 
             /// constructor without stroking
-			PolyPolygonStrokeArrowPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-    			const attribute::LineAttribute& rLineAttribute,
-				const attribute::LineStartEndAttribute& rStart, 
-				const attribute::LineStartEndAttribute& rEnd);
+            PolyPolygonStrokeArrowPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::LineAttribute& rLineAttribute,
+                const attribute::LineStartEndAttribute& rStart, 
+                const attribute::LineStartEndAttribute& rEnd);
 
-			/// data read access
-			const attribute::LineStartEndAttribute& getStart() const { return maStart; }
-			const attribute::LineStartEndAttribute& getEnd() const { return maEnd; }
+            /// data read access
+            const attribute::LineStartEndAttribute& getStart() const { return maStart; }
+            const attribute::LineStartEndAttribute& getEnd() const { return maEnd; }
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -245,40 +245,40 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonColorPrimitive2D class
 
             This primitive defines a PolyPolygon filled with a single color.
             This is one of the non-decomposable primitives, so a renderer
             should proccess it.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonColorPrimitive2D : public BasePrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonColorPrimitive2D : public BasePrimitive2D
+        {
+        private:
             /// the PolyPolygon geometry
-			basegfx::B2DPolyPolygon					maPolyPolygon;
+            basegfx::B2DPolyPolygon                 maPolyPolygon;
 
             /// the polygon fill color
-			basegfx::BColor							maBColor;
+            basegfx::BColor                         maBColor;
 
-		public:
+        public:
             /// constructor
-			PolyPolygonColorPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-				const basegfx::BColor& rBColor);
+            PolyPolygonColorPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::BColor& rBColor);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const basegfx::BColor& getBColor() const { return maBColor; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::BColor& getBColor() const { return maBColor; }
 
-			/// get range
-			virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
+            /// get range
+            virtual basegfx::B2DRange getB2DRange(const geometry::ViewInformation2D& rViewInformation) const;
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -286,41 +286,49 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonColorPrimitive2D class
 
             This primitive defines a PolyPolygon filled with a gradient. The
             decomosition will create a MaskPrimitive2D containing a 
             FillGradientPrimitive2D.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonGradientPrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonGradientPrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the PolyPolygon geometry
-			basegfx::B2DPolyPolygon						maPolyPolygon;
+            basegfx::B2DPolyPolygon                     maPolyPolygon;
+
+            /// the definition range
+            basegfx::B2DRange                           maDefinitionRange;
 
             /// the gradient definition
-			attribute::FillGradientAttribute			maFillGradient;
+            attribute::FillGradientAttribute            maFillGradient;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
-            /// constructor
-			PolyPolygonGradientPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-				const attribute::FillGradientAttribute& rFillGradient);
+        public:
+            /// constructors. The one without definition range will use output range as definition range
+            PolyPolygonGradientPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::FillGradientAttribute& rFillGradient);
+            PolyPolygonGradientPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DRange& rDefinitionRange,
+                const attribute::FillGradientAttribute& rFillGradient);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const attribute::FillGradientAttribute& getFillGradient() const { return maFillGradient; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::B2DRange& getDefinitionRange() const { return maDefinitionRange; }
+            const attribute::FillGradientAttribute& getFillGradient() const { return maFillGradient; }
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -328,46 +336,55 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonHatchPrimitive2D class
 
             This primitive defines a PolyPolygon filled with a hatch. The
             decomosition will create a MaskPrimitive2D containing a 
             FillHatchPrimitive2D.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonHatchPrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonHatchPrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the PolyPolygon geometry
-			basegfx::B2DPolyPolygon						maPolyPolygon;
+            basegfx::B2DPolyPolygon                     maPolyPolygon;
+
+            /// the definition range
+            basegfx::B2DRange                           maDefinitionRange;
 
             /// the hatch background color (if used)
-			basegfx::BColor								maBackgroundColor;
+            basegfx::BColor                             maBackgroundColor;
 
             /// the hatch definition
-			attribute::FillHatchAttribute				maFillHatch;
+            attribute::FillHatchAttribute               maFillHatch;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
-            /// constructor
-			PolyPolygonHatchPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon,
-				const basegfx::BColor& rBackgroundColor,
-				const attribute::FillHatchAttribute& rFillHatch);
+        public:
+            /// constructors. The one without definition range will use output range as definition range
+            PolyPolygonHatchPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
+                const basegfx::BColor& rBackgroundColor,
+                const attribute::FillHatchAttribute& rFillHatch);
+            PolyPolygonHatchPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
+                const basegfx::B2DRange& rDefinitionRange,
+                const basegfx::BColor& rBackgroundColor,
+                const attribute::FillHatchAttribute& rFillHatch);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const basegfx::BColor& getBackgroundColor() const { return maBackgroundColor; }
-			const attribute::FillHatchAttribute& getFillHatch() const { return maFillHatch; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::B2DRange& getDefinitionRange() const { return maDefinitionRange; }
+            const basegfx::BColor& getBackgroundColor() const { return maBackgroundColor; }
+            const attribute::FillHatchAttribute& getFillHatch() const { return maFillHatch; }
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
@@ -375,41 +392,49 @@ namespace drawinglayer
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         /** PolyPolygonGraphicPrimitive2D class
 
             This primitive defines a PolyPolygon filled with bitmap data 
             (including transparence). The decomosition will create a MaskPrimitive2D 
             containing a FillGraphicPrimitive2D.
          */
-		class DRAWINGLAYER_DLLPUBLIC PolyPolygonGraphicPrimitive2D : public BufferedDecompositionPrimitive2D
-		{
-		private:
+        class DRAWINGLAYER_DLLPUBLIC PolyPolygonGraphicPrimitive2D : public BufferedDecompositionPrimitive2D
+        {
+        private:
             /// the PolyPolygon geometry
-			basegfx::B2DPolyPolygon						maPolyPolygon;
+            basegfx::B2DPolyPolygon                     maPolyPolygon;
+
+            /// the definition range
+            basegfx::B2DRange                           maDefinitionRange;
 
             /// the bitmap fill definition (may include tiling)
-			attribute::FillGraphicAttribute				maFillGraphic;
+            attribute::FillGraphicAttribute             maFillGraphic;
 
-		protected:
-			/// local decomposition.
-			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
+        protected:
+            /// local decomposition.
+            virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
-		public:
-            /// constructor
-			PolyPolygonGraphicPrimitive2D(
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
-				const attribute::FillGraphicAttribute& rFillGraphic);
+        public:
+            /// constructors. The one without definition range will use output range as definition range
+            PolyPolygonGraphicPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const attribute::FillGraphicAttribute& rFillGraphic);
+            PolyPolygonGraphicPrimitive2D(
+                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DRange& rDefinitionRange,
+                const attribute::FillGraphicAttribute& rFillGraphic);
 
-			/// data read access
-			const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
-			const attribute::FillGraphicAttribute& getFillGraphic() const { return maFillGraphic; }
+            /// data read access
+            const basegfx::B2DPolyPolygon& getB2DPolyPolygon() const { return maPolyPolygon; }
+            const basegfx::B2DRange& getDefinitionRange() const { return maDefinitionRange; }
+            const attribute::FillGraphicAttribute& getFillGraphic() const { return maFillGraphic; }
 
-			/// provide unique ID
-			DeclPrimitrive2DIDBlock()
-		};
-	} // end of namespace primitive2d
+            /// provide unique ID
+            DeclPrimitrive2DIDBlock()
+        };
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

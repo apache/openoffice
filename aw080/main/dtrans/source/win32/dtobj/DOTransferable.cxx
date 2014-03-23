@@ -136,12 +136,14 @@ Any SAL_CALL CDOTransferable::getTransferData( const DataFlavor& aFlavor )
 			 Any aAny = makeAny( aUnicodeText );
 			 return aAny;
 		}
+        // #124085# CF_DIBV5 should not be possible, but keep for reading from the 
+        // clipboard for being on the safe side
         else if(CF_DIBV5 == fetc.getClipformat())
         {
             // #123407# CF_DIBV5 has priority; if the try to fetch this failed, 
             // check CF_DIB availability as an alternative
             fetc.setClipformat(CF_DIB);
-
+        
             try
             {
                 clipDataStream = getClipboardData( fetc );
@@ -373,6 +375,7 @@ CDOTransferable::ByteSequence_t SAL_CALL CDOTransferable::getClipboardData( CFor
 			clipDataToByteStream( aFormatEtc.getClipformat( ), stgmedium, byteStream );
 			
 			// format conversion if necessary
+            // #124085# DIBV5 should not happen currently, but keep as a hint here
 			if(CF_DIBV5 == aFormatEtc.getClipformat() || CF_DIB == aFormatEtc.getClipformat())
             {
 				byteStream = WinDIBToOOBMP(byteStream);
