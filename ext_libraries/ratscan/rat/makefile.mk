@@ -37,9 +37,12 @@ all:
 
 .ELSE
 
-TARFILE_NAME=apache-rat-incubating-0.8-bin
-TARFILE_MD5=e4244e69eb3644e71c254aea5952a918
-TARFILE_ROOTDIR=apache-rat-0.8
+TARFILE_NAME=apache-rat-0.10-bin
+TARFILE_MD5=0f926196d42577addec7e1aa5b510605
+TARFILE_ROOTDIR=apache-rat-0.10
+#TARFILE_NAME=apache-rat-incubating-0.8-bin
+#TARFILE_MD5=e4244e69eb3644e71c254aea5952a918
+#TARFILE_ROOTDIR=apache-rat-0.8
 
 # Trigger unpacking of archive.
 PATCH_FILES=
@@ -52,7 +55,8 @@ BUILD_DIR=
 BUILD_ACTION=echo no building necessary
 BUILD_FLAGS=
 
-OUT2CLASS=apache-rat-0.8.jar
+OUT2CLASS=apache-rat-0.10.jar
+#OUT2CLASS=apache-rat-0.8.jar
 
 # --- Targets ------------------------------------------------------
 

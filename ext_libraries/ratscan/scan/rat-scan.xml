@@ -25,7 +25,7 @@
   <description>
     Check over Apache OpenOffice source files for license headers.
   </description>
-  <property name="version" value="AOO 4.0"/>
+  <property name="version" value="AOO 4.1.0"/>
   <property environment="env"/>
   <property name="src-dir" location="${env.SRC_ROOT}/.."/>
 
@@ -36,9 +36,11 @@
   <target name="buildsources"
           depends="taskdef"
           description="runs the tasks over OpenOffice tree.">
-    <tstamp/>
+    <tstamp>
+      <format property="scan.time" pattern="MM/dd/yyyy hh:mm aa"/>
+    </tstamp>
     <echo level="info">
-      Timestamp: ${DSTAMP} ${TSTAMP}
+      Timestamp: ${scan.time}
     </echo>
     <rat:report format="xml" reportFile="${RAT_SCAN_OUTPUT}">
       <fileset dir="${src-dir}" id="included-files">
