@@ -46,6 +46,9 @@
 #include <svx/svdograf.hxx>
 #include <svx/sdr/contact/viewcontactofgraphic.hxx>
 
+// #124389#
+#include <svx/svdotable.hxx>
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // iterates over all views and unmarks this SdrObject if it is marked
@@ -1187,52 +1190,95 @@ void SdrUndoObjSetText::AfterSetText()
 
 void SdrUndoObjSetText::Undo()
 {
-	// #94278# Trigger PageChangeCall
-	ImpShowPageOfThisObject();
+    // only works with SdrTextObj
+    SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(pObj);
 
-	// alten Text sichern fuer Redo
-	if (!bNewTextAvailable)
-		AfterSetText();
+    if(!pTarget)
+    {
+        OSL_ENSURE(false, "SdrUndoObjSetText::Undo with SdrObject not based on SdrTextObj (!)");
+        return;
+    }
 
-	// Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
-	OutlinerParaObject* pText1 = pOldText;
-	if(pText1)
-		pText1 = new OutlinerParaObject(*pText1);
+    // #94278# Trigger PageChangeCall
+    ImpShowPageOfThisObject();
 
-	SdrText* pText = static_cast< SdrTextObj*>( pObj )->getText(mnText);
-	if( pText )
-		static_cast< SdrTextObj* >( pObj )->NbcSetOutlinerParaObjectForText( pText1, pText );
+    // alten Text sichern fuer Redo
+    if(!bNewTextAvailable)
+    {
+        AfterSetText();
+    }
 
-	pObj->SetEmptyPresObj( bEmptyPresObj );
-	pObj->ActionChanged();
+    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    OutlinerParaObject* pText1 = pOldText;
+
+    if(pText1)
+    {
+        pText1 = new OutlinerParaObject(*pText1);
+    }
+
+    SdrText* pText = pTarget->getText(mnText);
+
+    if(pText)
+    {
+        pTarget->NbcSetOutlinerParaObjectForText(pText1, pText);
+    }
+
+    pTarget->SetEmptyPresObj(bEmptyPresObj);
+    pTarget->ActionChanged();
+
+    // #124389# if it's a table, als oneed to relayout TextFrame
+    if(0 != dynamic_cast< sdr::table::SdrTableObj* >(pTarget))
+    {
+        pTarget->NbcAdjustTextFrameWidthAndHeight();
+    }
 
     // #122410# SetOutlinerParaObject at SdrText does not trigger a
     // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
     // update their preview.
-	pObj->BroadcastObjectChange();
+    pTarget->BroadcastObjectChange();
 }
 
 void SdrUndoObjSetText::Redo()
 {
-	// Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
-	OutlinerParaObject* pText1 = pNewText;
+    // only works with SdrTextObj
+    SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(pObj);
 
-	if(pText1)
-		pText1 = new OutlinerParaObject(*pText1);
+    if(!pTarget)
+    {
+        OSL_ENSURE(false, "SdrUndoObjSetText::Redo with SdrObject not based on SdrTextObj (!)");
+        return;
+    }
 
-	SdrText* pText = static_cast< SdrTextObj*>( pObj )->getText(mnText);
-	if( pText )
-		static_cast< SdrTextObj* >( pObj )->NbcSetOutlinerParaObjectForText( pText1, pText );
+    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    OutlinerParaObject* pText1 = pNewText;
 
-	pObj->ActionChanged();
+    if(pText1)
+    {
+        pText1 = new OutlinerParaObject(*pText1);
+    }
+
+    SdrText* pText = pTarget->getText(mnText);
+
+    if(pText)
+    {
+        pTarget->NbcSetOutlinerParaObjectForText(pText1, pText);
+    }
+
+    pTarget->ActionChanged();
+
+    // #124389# if it's a table, als oneed to relayout TextFrame
+    if(0 != dynamic_cast< sdr::table::SdrTableObj* >(pTarget))
+    {
+        pTarget->NbcAdjustTextFrameWidthAndHeight();
+    }
 
     // #122410# NbcSetOutlinerParaObjectForText at SdrTextObj does not trigger a
     // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
     // update their preview.
-	pObj->BroadcastObjectChange();
+    pTarget->BroadcastObjectChange();
 
-	// #94278# Trigger PageChangeCall
-	ImpShowPageOfThisObject();
+    // #94278# Trigger PageChangeCall
+    ImpShowPageOfThisObject();
 }
 
 XubString SdrUndoObjSetText::GetComment() const
