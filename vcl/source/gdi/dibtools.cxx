@@ -775,46 +775,47 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
 
 bool ImplReadDIBFileHeader( SvStream& rIStm, sal_uLong& rOffset )
 {
-	sal_uInt32	nTmp32;
-	sal_uInt16	nTmp16 = 0;
-	bool	bRet = false;
+    bool bRet = false;
 
-    const sal_Int64 nStreamLength (rIStm.Seek(STREAM_SEEK_TO_END));
-    rIStm.Seek(STREAM_SEEK_TO_BEGIN);
+    const sal_Int64 nSavedStreamPos( rIStm.Tell() );
+    const sal_Int64 nStreamLength( rIStm.Seek( STREAM_SEEK_TO_END ) );
+    rIStm.Seek( nSavedStreamPos );
 
-	rIStm >> nTmp16;
+    sal_uInt16 nTmp16 = 0;
+    rIStm >> nTmp16;
 
-	if ( ( 0x4D42 == nTmp16 ) || ( 0x4142 == nTmp16 ) )
-	{
-		if ( 0x4142 == nTmp16 )
-		{
-			rIStm.SeekRel( 12L );
-			rIStm >> nTmp16;
-			rIStm.SeekRel( 8L );
-			rIStm >> nTmp32;
-			rOffset = nTmp32 - 28UL;
-			bRet = ( 0x4D42 == nTmp16 );
-		}
-		else // 0x4D42 == nTmp16, 'MB' from BITMAPFILEHEADER
-		{
-			rIStm.SeekRel( 8L );        // we are on bfSize member of BITMAPFILEHEADER, forward to bfOffBits
-			rIStm >> nTmp32;            // read bfOffBits
-			rOffset = nTmp32 - 14UL;    // adapt offset by sizeof(BITMAPFILEHEADER)
-			bRet = ( rIStm.GetError() == 0UL );
-		}
+    if ( ( 0x4D42 == nTmp16 ) || ( 0x4142 == nTmp16 ) )
+    {
+        sal_uInt32 nTmp32;
+        if ( 0x4142 == nTmp16 )
+        {
+            rIStm.SeekRel( 12L );
+            rIStm >> nTmp16;
+            rIStm.SeekRel( 8L );
+            rIStm >> nTmp32;
+            rOffset = nTmp32 - 28UL;
+            bRet = ( 0x4D42 == nTmp16 );
+        }
+        else // 0x4D42 == nTmp16, 'MB' from BITMAPFILEHEADER
+        {
+            rIStm.SeekRel( 8L );        // we are on bfSize member of BITMAPFILEHEADER, forward to bfOffBits
+            rIStm >> nTmp32;            // read bfOffBits
+            rOffset = nTmp32 - 14UL;    // adapt offset by sizeof(BITMAPFILEHEADER)
+            bRet = ( rIStm.GetError() == 0UL );
+        }
 
-        if (rOffset >= nStreamLength)
+        if ( rOffset >= nStreamLength )
         {
             // Offset claims that image starts past the end of the
             // stream.  Unlikely.
             rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
             bRet = false;
         }
-	}
-	else
-		rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
+    }
+    else
+        rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
 
-	return bRet;
+    return bRet;
 }
 
 bool ImplWriteDIBPalette( SvStream& rOStm, BitmapReadAccess& rAcc )
