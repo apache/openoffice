@@ -1631,6 +1631,7 @@ sub set_global_code_variables ($$)
         $installer::logger::Lang->printf("there is no source version => created new guids\n");
     }
     
+    $target_upgrade_code = "{7C35B9AB-2CE3-4C18-BE7C-5B97EA089EB3}";
     $installer::globals::productcode = $target_product_code;
     $installer::globals::upgradecode = $target_upgrade_code;
     $allvariableshashref->{'PRODUCTCODE'} = $target_product_code;
