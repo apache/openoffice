@@ -530,33 +530,79 @@ void SdrMarkView::BrkMarkGluePoints()
 
 bool SdrMarkView::HasMarkableObj() const
 {
-	const sal_uInt32 nCount(GetMarkableObjCount());
+    SdrPageView* pPV = GetSdrPageView();
 
-	return (0 != nCount);
+    if(pPV)
+    {
+        SdrObjList* pOL = pPV->GetCurrentObjectList();
+
+        if(pOL)
+        {
+            SdrObjectVector aObjects(pOL->getSdrObjectVector());
+
+            for(sal_uInt32 a(0); a < aObjects.size(); a++)
+            {
+                SdrObject* pCandidate = aObjects[a];
+
+                if(pCandidate)
+                {
+                    if(IsObjMarkable(*pCandidate))
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    OSL_ENSURE(false, "SdrObjectVector with empty entries (!)");
+                }
+            }
+        }
+        else
+        {
+            OSL_ENSURE(false, "Unexpected missing SdrObjList (!)");
+        }
+    }
+
+    return false;
 }
 
 sal_uInt32 SdrMarkView::GetMarkableObjCount() const
 {
-	sal_uInt32 nCount(0);
-	SdrPageView* pPV = GetSdrPageView();
+    sal_uInt32 nCount(0);
+    SdrPageView* pPV = GetSdrPageView();
 
-	if(pPV)
-	{
-		SdrObjList* pOL = pPV->GetCurrentObjectList();
-		sal_uInt32 nObjAnz = pOL->GetObjCount();
+    if(pPV)
+    {
+        SdrObjList* pOL = pPV->GetCurrentObjectList();
 
-		for(sal_uInt32 nObjNum(0); nObjNum < nObjAnz && !nCount; nObjNum++) 
-		{
-			SdrObject* pObj=pOL->GetObj(nObjNum);
+        if(pOL)
+        {
+            SdrObjectVector aObjects(pOL->getSdrObjectVector());
 
-			if(IsObjMarkable(*pObj)) 
-			{
-				nCount++;
-			}
-		}
-	}
+            for(sal_uInt32 a(0); a < aObjects.size(); a++)
+            {
+                SdrObject* pCandidate = aObjects[a];
 
-	return nCount;
+                if(pCandidate)
+                {
+                    if(IsObjMarkable(*pCandidate))
+                    {
+                        nCount++;
+                    }
+                }
+                else
+                {
+                    OSL_ENSURE(false, "SdrObjectVector with empty entries (!)");
+                }
+            }
+        }
+        else
+        {
+            OSL_ENSURE(false, "Unexpected missing SdrObjList (!)");
+        }
+    }
+
+    return nCount;
 }
 
 bool SdrMarkView::ImpIsFrameHandles() const
