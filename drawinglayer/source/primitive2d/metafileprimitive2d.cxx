@@ -2127,9 +2127,14 @@ namespace
 							drawinglayer::primitive2d::Primitive2DSequence xSubContent;
 							{
                                 rTargetHolders.Push();
-								// #i# for sub-Mteafile contents, do start with new, default render state
-								rPropertyHolders.PushDefault();
-								interpretMetafile(aGDIMetaFile, rTargetHolders, rPropertyHolders, rViewInformation);
+
+                                // for sub-Mteafile contents, do start with new, default render state
+                                // #124686# ...but copy font, this is already set accordingly
+                                const Font& rTargetFont = rPropertyHolders.Current().getFont();
+                                rPropertyHolders.PushDefault();
+                                rPropertyHolders.Current().setFont(rTargetFont);
+
+                                interpretMetafile(aGDIMetaFile, rTargetHolders, rPropertyHolders, rViewInformation);
 								xSubContent = rTargetHolders.Current().getPrimitive2DSequence(rPropertyHolders.Current());
 								rPropertyHolders.Pop();
                                 rTargetHolders.Pop();
