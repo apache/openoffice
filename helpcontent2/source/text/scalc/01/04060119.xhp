@@ -341,7 +341,7 @@
 <paragraph role="paragraph" id="par_id3150427" xml-lang="en-US" l10n="U" oldref="306">
 <emph>Value1;...</emph> are up to 30 values, which represent deposits or withdrawals.</paragraph>
 <paragraph role="heading" id="hd_id3153538" xml-lang="en-US" level="3" l10n="U" oldref="307">Example</paragraph>
-<paragraph role="paragraph" id="par_id3154800" xml-lang="en-US" l10n="CHG" oldref="308">What is the net present value of periodic payments of 10, 20 and 30 currency units with a discount rate of 8.75%. At time zero the costs were payed as -40 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3154800" xml-lang="en-US" l10n="CHG" oldref="308">What is the net present value of periodic payments of 10, 20 and 30 currency units with a discount rate of 8.75%. At time zero the costs were paid as -40 currency units.</paragraph>
 <paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="CHG" oldref="309">
 <item type="input">=NPV(8.75%;10;20;30)</item> = 49.43 currency units. The net present value is the returned value minus the initial costs of 40 currency units, therefore 9.43 currency units.</paragraph>
 </section>
