@@ -19,15 +19,13 @@
  * 
  *************************************************************/
 
-
-
-#ifndef _QUICKTIMECOMMON_HXX
-#define _QUICKTIMECOMMON_HXX
+#ifndef MACAVF_COMMON_HXX
+#define MACAVF_COMMON_HXX
 
 #ifdef MACOSX
 #include <premac.h>
 #import <Cocoa/Cocoa.h>
-#import <QTKit/QTKit.h>
+#import <AVFoundation/AVFoundation.h>
 #include <postmac.h>
 #endif
 #include <osl/mutex.hxx>
@@ -53,14 +51,39 @@
 #include <com/sun/star/awt/MouseButton.hpp>
 #include <com/sun/star/media/XManager.hpp>
 
-#define AVMEDIA_QUICKTIME_MANAGER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Manager_QuickTime"
-#define AVMEDIA_QUICKTIME_MANAGER_SERVICENAME "com.sun.star.media.Manager_QuickTime"
 
-#define AVMEDIA_QUICKTIME_PLAYER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Player_QuickTime"
-#define AVMEDIA_QUICKTIME_PLAYER_SERVICENAME "com.sun.star.media.Player_QuickTime"
+#define AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Manager_MacAVF"
+#define AVMEDIA_MACAVF_MANAGER_SERVICENAME "com.sun.star.media.Manager_MacAVF"
 
-#define AVMEDIA_QUICKTIME_WINDOW_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Window_QuickTime"
-#define AVMEDIA_QUICKTIME_WINDOW_SERVICENAME "com.sun.star.media.Window_QuickTime"
+#define AVMEDIA_MACAVF_PLAYER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Player_MacAVF"
+#define AVMEDIA_MACAVF_PLAYER_SERVICENAME "com.sun.star.media.Player_MacAVF"
 
-#endif // _QUICKTIMECOMMOM_HXX
+#define AVMEDIA_MACAVF_WINDOW_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Window_MacAVF"
+#define AVMEDIA_MACAVF_WINDOW_SERVICENAME "com.sun.star.media.Window_MacAVF"
+
+#define AVMEDIA_MACAVF_FRAMEGRABBER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.FrameGrabber_MacAVF"
+#define AVMEDIA_MACAVF_FRAMEGRABBER_SERVICENAME "com.sun.star.media.FrameGrabber_MacAVF"
+
+
+// MacAVObserver handles the notifications used in the AVFoundation framework
+
+@interface MacAVObserverObject : NSObject
+- (void)observeValueForKeyPath:(NSString*)pKeyPath ofObject:(id)pObject change:(NSDictionary*)pChangeDict context:(void*)pContext;
+- (void)onNotification:(NSNotification*)pNotification;
+@end
+
+namespace avmedia { namespace macavf {
+
+class MacAVObserverHandler
+{
+private:
+    static MacAVObserverObject* mpMacAVObserverObject;
+public:
+    MacAVObserverObject* getObserver( void ) const;
+    virtual bool handleObservation( NSString* pKeyPath ) = 0;
+};
+
+}}
+
+#endif // MACAVF_COMMON_HXX
 

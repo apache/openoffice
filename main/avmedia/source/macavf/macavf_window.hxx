@@ -19,10 +19,11 @@
  * 
  *************************************************************/
 
-#ifndef _WINDOW_HXX
-#define _WINDOW_HXX
+#ifndef MACAVF_WINDOW_HXX
+#define MACAVF_WINDOW_HXX
 
-#include "macavfcommon.hxx"
+#include "macavf_common.hxx"
+
 #include <cppuhelper/interfacecontainer.h>
 
 #include "com/sun/star/media/XPlayerWindow.hdl"

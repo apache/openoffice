@@ -19,51 +19,41 @@
  * 
  *************************************************************/
 
+#ifndef MACAVF_MANAGER_HXX
+#define MACAVF_MANAGER_HXX
 
+#include "macavf_common.hxx"
 
-#ifndef _FRAMEGRABBER_HXX
-#define _FRAMEGRABBER_HXX
+#include "com/sun/star/media/XManager.hdl"
 
-#include "quicktimecommon.hxx"
+// -----------
+// - Manager -
+// -----------
 
-#ifndef _COM_SUN_STAR_MEDIA_XFRAMEGRABBER_HDL_
-#include "com/sun/star/media/XFrameGrabber.hdl"
-#endif
+namespace avmedia { namespace macavf {
 
-namespace avmedia { namespace quicktime {
-
-// ----------------
-// - FrameGrabber -
-// ----------------
-
-class FrameGrabber : public ::cppu::WeakImplHelper2 < ::com::sun::star::media::XFrameGrabber,
-                                                      ::com::sun::star::lang::XServiceInfo >
+class Manager : public ::cppu::WeakImplHelper2 < ::com::sun::star::media::XManager,
+                                                 ::com::sun::star::lang::XServiceInfo >
 {
 public:
 
-            FrameGrabber( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rxMgr );
-            ~FrameGrabber();
+    Manager( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rxMgr );
+    ~Manager();
 
-    bool    create( const ::rtl::OUString& rURL );
-
-    // XFrameGrabber
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic > SAL_CALL grabFrame( double fMediaTime ) throw (::com::sun::star::uno::RuntimeException);
+    // XManager
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayer > SAL_CALL createPlayer( const ::rtl::OUString& aURL ) throw (::com::sun::star::uno::RuntimeException);
 
     // XServiceInfo
     virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
-
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >    mxMgr;
-    ::rtl::OUString                                                                     maURL;
-	QTMovie*                                                                            mpMovie; 
-    sal_Bool																			mbInitialized;
-    long																				mnVersion;
+    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
 };
 
-} // namespace quicktime
+} // namespace macavf
 } // namespace avmedia
 
-#endif // _FRAMEGRABBER_HXX
+#endif // MACAVF_MANAGER_HXX
+

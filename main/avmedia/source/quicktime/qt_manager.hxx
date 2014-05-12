@@ -20,15 +20,12 @@
  *************************************************************/
 
 
+#ifndef QT_MANAGER_HXX
+#define QT_MANAGER_HXX
 
-#ifndef _MANAGER_HXX
-#define _MANAGER_HXX
+#include "qt_common.hxx"
 
-#include "quicktimecommon.hxx"
-
-#ifndef _COM_SUN_STAR_MEDIA_XMANAGER_HDL_
 #include "com/sun/star/media/XManager.hdl"
-#endif
 
 // -----------
 // - Manager -
@@ -59,4 +56,5 @@ private:
 } // namespace quicktime
 } // namespace avmedia
 
-#endif // _MANAGER_HXX
+#endif // QT_MANAGER_HXX
+

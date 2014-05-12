@@ -20,12 +20,11 @@
  *************************************************************/
 
 
-
-#ifndef _PLAYER_HXX
-#define _PLAYER_HXX
+#ifndef MACAVF_PLAYER_HXX
+#define MACAVF_PLAYER_HXX
 
 #include <osl/conditn.h>
-#include "macavfcommon.hxx"
+#include "macavf_common.hxx"
 
 #include "com/sun/star/media/XPlayer.hdl"
 
@@ -94,4 +93,5 @@ private:
 } // namespace macavf
 } // namespace avmedia
 
-#endif // _PLAYER_HXX
+#endif // MACAVF_PLAYER_HXX
+

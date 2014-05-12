@@ -20,11 +20,10 @@
  *************************************************************/
 
 
+#ifndef MACAVF_FRAMEGRABBER_HXX
+#define MACAVF_FRAMEGRABBER_HXX
 
-#ifndef _FRAMEGRABBER_HXX
-#define _FRAMEGRABBER_HXX
-
-#include "macavfcommon.hxx"
+#include "macavf_common.hxx"
 
 #include "com/sun/star/media/XFrameGrabber.hdl"
 
@@ -62,5 +61,5 @@ private:
 } // namespace macavf
 } // namespace avmedia
 
-#endif // _FRAMEGRABBER_HXX
+#endif // MACAVF_FRAMEGRABBER_HXX
 
