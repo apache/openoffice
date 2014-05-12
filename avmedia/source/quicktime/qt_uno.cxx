@@ -19,8 +19,7 @@
  * 
  *************************************************************/
 
-#include "macavfcommon.hxx"
-#include "manager.hxx"
+#include "qt_manager.hxx"
 
 using namespace ::com::sun::star;
 
@@ -30,7 +29,7 @@ using namespace ::com::sun::star;
 
 static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< lang::XMultiServiceFactory >& rxFact )
 {
-	return uno::Reference< uno::XInterface >( *new ::avmedia::macavf::Manager( rxFact ) );
+	return uno::Reference< uno::XInterface >( *new ::avmedia::quicktime::Manager( rxFact ) );
 }
 
 // ------------------------------------------
@@ -51,13 +50,13 @@ extern "C" void* SAL_CALL component_getFactory( const sal_Char* pImplName, void*
 	uno::Reference< lang::XSingleServiceFactory > xFactory;
 	void*									pRet = 0;
 
-	if( rtl_str_compare( pImplName, AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ) == 0 )
+	if( rtl_str_compare( pImplName, AVMEDIA_QUICKTIME_MANAGER_IMPLEMENTATIONNAME ) == 0 )
 	{
-		const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( AVMEDIA_MACAVF_MANAGER_SERVICENAME ) );
+		const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( AVMEDIA_QUICKTIME_MANAGER_SERVICENAME ) );
 
 		xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
 						reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-						::rtl::OUString::createFromAscii( AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ),
+						::rtl::OUString::createFromAscii( AVMEDIA_QUICKTIME_MANAGER_IMPLEMENTATIONNAME ),
 						create_MediaPlayer, uno::Sequence< ::rtl::OUString >( &aServiceName, 1 ) ) );
 	}
 
@@ -69,3 +68,4 @@ extern "C" void* SAL_CALL component_getFactory( const sal_Char* pImplName, void*
 
 	return pRet;
 }
+
