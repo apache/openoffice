@@ -20,98 +20,107 @@
  *************************************************************/
 
 
-
 #include <com/sun/star/awt/SystemPointer.hpp>
 #include <com/sun/star/awt/PosSize.hpp>
 
-#include "window.hxx"
-#include "player.hxx"
+#include "qt_window.hxx"
+#include "qt_player.hxx"
 
 using namespace ::com::sun::star;
 
+namespace avmedia { namespace quicktime {
 
-namespace avmedia { namespace macavf {
+// -----------
+// - statics -
+// -----------
+
+static ::osl::Mutex& ImplGetOwnStaticMutex()
+{
+    static ::osl::Mutex* pMutex = NULL;
+
+    if( pMutex == NULL )
+    {
+        ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
+
+        if( pMutex == NULL )
+        {
+            static ::osl::Mutex aMutex;
+            pMutex = &aMutex;
+        }
+    }
+
+    return *pMutex;
+}
 
 // ---------------
 // - Window -
 // ---------------
 
-Window::Window( const uno::Reference< lang::XMultiServiceFactory >& i_rxMgr, Player& i_rPlayer, NSView* i_pParentView )
-:   mxMgr( i_rxMgr )
-,   maListeners( maMutex )
-,   meZoomLevel( media::ZoomLevel_NOT_AVAILABLE )
-,   mrPlayer( i_rPlayer )
-,   mnPointerType( awt::SystemPointer::ARROW )
-,   mpView( i_pParentView )
-,   mpPlayerLayer( NULL )
+// ------------------------------------------------------------------------------
+
+Window::Window( const uno::Reference< lang::XMultiServiceFactory >& i_rxMgr, Player& i_rPlayer, NSView* i_pParentView ) :
+    mxMgr( i_rxMgr ),
+    maListeners( maMutex ),
+    meZoomLevel( media::ZoomLevel_NOT_AVAILABLE ),
+    mrPlayer( i_rPlayer ),
+    mnPointerType( awt::SystemPointer::ARROW ),
+    mpParentView( i_pParentView ),
+    mpMovieView( nil )
 {
-    OSL_TRACE ("Constructing an avmedia::macavf::Window");
-    if( !mpView ) // sanity check
-        return;
+    
+    ::osl::MutexGuard aGuard( ImplGetOwnStaticMutex() );
 
-    // check the media asset for video content
-    AVPlayer* pAVPlayer = mrPlayer.getAVPlayer();
-    AVAsset* pMovie = [[pAVPlayer currentItem] asset];
-    const int nVideoCount = [pMovie tracksWithMediaType:AVMediaTypeVideo].count;
-    const int nAudioCount = [pMovie tracksWithMediaType:AVMediaTypeAudio].count;
-    OSL_TRACE( "Found %d video and %d audio tracks.", nVideoCount, nAudioCount );
-    (void)nAudioCount;
-    if( nVideoCount <= 0 )
-        return;
 
-    // setup the AVPlayerLayer
-    [pAVPlayer retain];
-    [pAVPlayer pause];
-    mpPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:pAVPlayer];
-    [mpPlayerLayer retain];
-    [mpPlayerLayer setFrame:[mpView frame]];
-    [mpPlayerLayer setHidden:YES];
-    [mpPlayerLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-    [mpPlayerLayer addObserver:getObserver() forKeyPath:@"readyForDisplay" options:0 context:this];
+    if( mpParentView ) // sanity check
+    {
+       
+        NSRect aViewRect = [mpParentView frame];
+        aViewRect.origin.x = aViewRect.origin.y = 0;
+        mpMovieView = [[QTMovieView alloc] initWithFrame: aViewRect];
+        [mpMovieView setMovie: mrPlayer.getMovie() ];
+        [mpMovieView setControllerVisible: NO];
+        [mpMovieView setPreservesAspectRatio: YES];
+        [mpMovieView setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable];
+        [mpParentView addSubview: mpMovieView];
+        [mpParentView setAutoresizesSubviews: YES];
+    }
 
-    // setup the target view
-    [mpView setWantsLayer:YES];
-    [mpView.layer addSublayer:mpPlayerLayer];
+    OSL_TRACE ("Window::Window");
 }
 
 // ------------------------------------------------------------------------------
 
 Window::~Window()
 {
-    [mpPlayerLayer removeObserver:getObserver() forKeyPath:@"readyForDisplay"];
-    [mpPlayerLayer release];
+    if( mpMovieView )
+    {
+        [mpMovieView removeFromSuperview];
+        [mpMovieView setMovie:nil];
+        [mpMovieView release];
+        mpMovieView = nil;
+    }	
 }
-
-// ------------------------------------------------------------------------------
 
 bool Window::create( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 {
     return true;
 }
 
-// ------------------------------------------------------------------------------
-
-bool Window::handleObservation( NSString* pKeyPath )
-{
-    OSL_TRACE( "AVPlayer::handleObservation key=\"%s\"", [pKeyPath UTF8String]);
-    const BOOL bReadyForDisplay = [mpPlayerLayer isReadyForDisplay];
-    [mpPlayerLayer setHidden:!bReadyForDisplay];
-    return true;
-}
-
 // XPlayerWindow
 // ------------------------------------------------------------------------------
 
-void SAL_CALL Window::update()
+void SAL_CALL Window::update(  )
     throw (uno::RuntimeException)
-{}
+{
+    ;
+}
 
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL Window::setZoomLevel( media::ZoomLevel eZoomLevel )
     throw (uno::RuntimeException)
 {
-    return false;
+        return false;
 }
 
 // ------------------------------------------------------------------------------
@@ -136,17 +145,14 @@ void SAL_CALL Window::setPointerType( sal_Int32 nPointerType )
 void SAL_CALL Window::setPosSize( sal_Int32 X, sal_Int32 Y, sal_Int32 Width, sal_Int32 Height, sal_Int16 Flags )
     throw (uno::RuntimeException)
 {
-    OSL_TRACE( "AVWindow::setPosSize( %dx%d%+d%+d)", (int)Width,(int)Height,(int)X,(int)Y);//######
-    if( !mpView )
-        return;
-    NSRect aRect = [mpView frame];
-    // NOTE: if( (Flags & awt::PosSize::WIDTH) )
-    aRect.size.width = Width;
-    // NOTE: if( (Flags & awt::PosSize::HEIGHT) )
-    aRect.size.height = Height;
-
-    [mpView setFrameSize: aRect.size];
-    [mpPlayerLayer setFrame: [mpView frame]];
+    if( mpParentView && mpMovieView )
+    {
+        NSRect aRect = [mpMovieView frame];
+        if( (Flags & awt::PosSize::WIDTH) )
+            aRect.size.width = Width;
+        if( (Flags & awt::PosSize::HEIGHT) )
+            aRect.size.height = Height;
+    }
 }
 
 // ------------------------------------------------------------------------------
@@ -156,7 +162,7 @@ awt::Rectangle SAL_CALL Window::getPosSize()
 {
     awt::Rectangle aRet;
 
-    NSRect aRect = [mpView frame];
+    NSRect aRect = [mpMovieView frame];
     aRet.X = aRet.Y = 0;
     aRet.Width = aRect.size.width;
     aRet.Height = aRect.size.height;
@@ -169,7 +175,8 @@ awt::Rectangle SAL_CALL Window::getPosSize()
 void SAL_CALL Window::setVisible( sal_Bool bVisible )
     throw (uno::RuntimeException)
 {
-    OSL_TRACE ("Window::setVisible(%d)", bVisible);
+    OSL_TRACE ("Window::setVisible");
+    
 }
 
 // ------------------------------------------------------------------------------
@@ -177,12 +184,12 @@ void SAL_CALL Window::setVisible( sal_Bool bVisible )
 void SAL_CALL Window::setEnable( sal_Bool bEnable )
     throw (uno::RuntimeException)
 {
-    OSL_TRACE ("Window::setEnable(%d)", bEnable);
+    ;
 }
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL Window::setFocus()
+void SAL_CALL Window::setFocus(  )
     throw (uno::RuntimeException)
 {
     OSL_TRACE ("Window::setFocus");
@@ -315,7 +322,7 @@ void SAL_CALL Window::removeEventListener( const uno::Reference< lang::XEventLis
 ::rtl::OUString SAL_CALL Window::getImplementationName(  )
     throw (uno::RuntimeException)
 {
-    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_MACAVF_WINDOW_IMPLEMENTATIONNAME ) );
+    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_QUICKTIME_WINDOW_IMPLEMENTATIONNAME ) );
 }
 
 // ------------------------------------------------------------------------------
@@ -323,7 +330,7 @@ void SAL_CALL Window::removeEventListener( const uno::Reference< lang::XEventLis
 sal_Bool SAL_CALL Window::supportsService( const ::rtl::OUString& ServiceName )
     throw (uno::RuntimeException)
 {
-    return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( AVMEDIA_MACAVF_WINDOW_SERVICENAME ) );
+    return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( AVMEDIA_QUICKTIME_WINDOW_SERVICENAME ) );
 }
 
 // ------------------------------------------------------------------------------
@@ -332,11 +339,10 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Window::getSupportedServiceNames(  )
     throw (uno::RuntimeException)
 {
     uno::Sequence< ::rtl::OUString > aRet(1);
-    aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_MACAVF_WINDOW_SERVICENAME ) );
+    aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_QUICKTIME_WINDOW_SERVICENAME ) );
 
     return aRet;
 }
 
-} // namespace macavf
+} // namespace quicktime
 } // namespace avmedia
-

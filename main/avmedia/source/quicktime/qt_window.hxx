@@ -20,16 +20,13 @@
  *************************************************************/
 
 
+#ifndef QT_WINDOW_HXX
+#define QT_WINDOW_HXX
 
-#ifndef _WINDOW_HXX
-#define _WINDOW_HXX
-
-#include "quicktimecommon.hxx"
+#include "qt_common.hxx"
 #include <cppuhelper/interfacecontainer.h>
 
-#ifndef _COM_SUN_STAR_MEDIA_XPLAYERWINDOW_HDL_
 #include "com/sun/star/media/XPlayerWindow.hdl"
-#endif
 
 namespace avmedia { namespace quicktime {
 
@@ -108,4 +105,5 @@ private:
 } // namespace quicktime
 } // namespace avmedia
 
-#endif // _WINDOW_HXX
+#endif // QT_WINDOW_HXX
+

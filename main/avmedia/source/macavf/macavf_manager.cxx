@@ -19,15 +19,15 @@
  * 
  *************************************************************/
 
+#include "macavf_manager.hxx"
+#include "macavf_player.hxx"
 
-
-#include "manager.hxx"
-#include "player.hxx"
 #include <tools/urlobj.hxx>
 
 using namespace ::com::sun::star;
 
-namespace avmedia { namespace quicktime {
+namespace avmedia { namespace macavf {
+
 // ----------------
 // - Manager -
 // ----------------
@@ -35,14 +35,13 @@ namespace avmedia { namespace quicktime {
 Manager::Manager( const uno::Reference< lang::XMultiServiceFactory >& rxMgr ) :
     mxMgr( rxMgr )
 {
-    OSL_TRACE( "avmediaquicktime: Manager::Manager" );
+    OSL_TRACE( "Constructing avmedia::macavf::Manager" );
 }
 
 // ------------------------------------------------------------------------------
 
 Manager::~Manager()
-{
-}
+{}
 
 // ------------------------------------------------------------------------------
 
@@ -53,7 +52,7 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
     uno::Reference< media::XPlayer >    xRet( pPlayer );
     INetURLObject                       aURL( rURL );
 
-    OSL_TRACE( "avmediaquicktime: Manager::createPlayer" );
+    OSL_TRACE( "avmediamacavf: Manager::createPlayer" );
 
     if( !pPlayer->create( aURL.GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS ) )  )
         xRet = uno::Reference< media::XPlayer >();
@@ -66,7 +65,7 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
 ::rtl::OUString SAL_CALL Manager::getImplementationName(  )
     throw (uno::RuntimeException)
 {
-    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_QUICKTIME_MANAGER_IMPLEMENTATIONNAME ) );
+    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ) );
 }
 
 // ------------------------------------------------------------------------------
@@ -74,7 +73,7 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
 sal_Bool SAL_CALL Manager::supportsService( const ::rtl::OUString& ServiceName )
     throw (uno::RuntimeException)
 {
-    return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( AVMEDIA_QUICKTIME_MANAGER_SERVICENAME ) );
+    return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( AVMEDIA_MACAVF_MANAGER_SERVICENAME ) );
 }
 
 // ------------------------------------------------------------------------------
@@ -83,10 +82,10 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Manager::getSupportedServiceNames(  )
     throw (uno::RuntimeException)
 {
     uno::Sequence< ::rtl::OUString > aRet(1);
-    aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_QUICKTIME_MANAGER_SERVICENAME ) );
+    aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_MACAVF_MANAGER_SERVICENAME ) );
 
     return aRet;
 }
 
-} // namespace quicktime
+} // namespace macavf
 } // namespace avmedia

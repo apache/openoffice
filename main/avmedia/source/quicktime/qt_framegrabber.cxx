@@ -20,9 +20,8 @@
  *************************************************************/
 
 
-
-#include "framegrabber.hxx"
-#include "player.hxx"
+#include "qt_framegrabber.hxx"
+#include "qt_player.hxx"
 
 #include <tools/stream.hxx>
 #include <vcl/graph.hxx>

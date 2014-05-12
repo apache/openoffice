@@ -20,12 +20,11 @@
  *************************************************************/
 
 
-
 #include <math.h>
 
-#include "player.hxx"
-#include "framegrabber.hxx"
-#include "window.hxx"
+#include "qt_player.hxx"
+#include "qt_framegrabber.hxx"
+#include "qt_window.hxx"
 
 using namespace ::com::sun::star;
 

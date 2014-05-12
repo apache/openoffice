@@ -19,8 +19,8 @@
  * 
  *************************************************************/
 
-#include "framegrabber.hxx"
-#include "player.hxx"
+#include "macavf_framegrabber.hxx"
+#include "macavf_player.hxx"
 
 #include <tools/stream.hxx>
 #include <vcl/graph.hxx>

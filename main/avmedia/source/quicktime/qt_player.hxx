@@ -20,16 +20,13 @@
  *************************************************************/
 
 
-
-#ifndef _PLAYER_HXX
-#define _PLAYER_HXX
+#ifndef QT_PLAYER_HXX
+#define QT_PLAYER_HXX
 
 #include <osl/conditn.h>
-#include "quicktimecommon.hxx"
+#include "qt_common.hxx"
 
-#ifndef _COM_SUN_STAR_MEDIA_XPLAYER_HDL_
 #include "com/sun/star/media/XPlayer.hdl"
-#endif
 
 namespace avmedia { namespace quicktime {
 
@@ -106,4 +103,5 @@ private:
 } // namespace quicktime
 } // namespace avmedia
 
-#endif // _PLAYER_HXX
+#endif // QT_PLAYER_HXX
+

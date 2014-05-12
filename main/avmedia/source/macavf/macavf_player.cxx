@@ -20,9 +20,9 @@
  *************************************************************/
 
 
-#include "player.hxx"
-#include "framegrabber.hxx"
-#include "window.hxx"
+#include "macavf_player.hxx"
+#include "macavf_framegrabber.hxx"
+#include "macavf_window.hxx"
 
 #include <cmath> // for log10()
 
