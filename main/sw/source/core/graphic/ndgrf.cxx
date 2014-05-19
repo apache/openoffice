@@ -68,45 +68,42 @@ using namespace com::sun::star;
 // SwGrfNode
 // --------------------
 SwGrfNode::SwGrfNode(
-        const SwNodeIndex & rWhere,
-        const String& rGrfName, const String& rFltName,
-        const Graphic* pGraphic,
-        SwGrfFmtColl *pGrfColl,
-        SwAttrSet* pAutoAttr ) :
-    SwNoTxtNode( rWhere, ND_GRFNODE, pGrfColl, pAutoAttr ),
-    maGrfObj(),
-    mpReplacementGraphic(0),
-    // --> OD 2007-01-23 #i73788#
-    mbLinkedInputStreamReady( false ),
-    mbIsStreamReadOnly( sal_False )
-    // <--
+    const SwNodeIndex & rWhere,
+    const String& rGrfName,
+    const String& rFltName,
+    const Graphic* pGraphic,
+    SwGrfFmtColl *pGrfColl,
+    SwAttrSet* pAutoAttr )
+        : SwNoTxtNode( rWhere, ND_GRFNODE, pGrfColl, pAutoAttr ),
+          maGrfObj(),
+          mpReplacementGraphic( 0 ),
+          mbLinkedInputStreamReady( false ),
+          mbIsStreamReadOnly( sal_False )
 {
-	maGrfObj.SetSwapStreamHdl( LINK( this, SwGrfNode, SwapGraphic ) );
-	bInSwapIn = bChgTwipSize = bChgTwipSizeFromPixel = bLoadLowResGrf =
-		bFrameInPaint = bScaleImageMap = sal_False;
+    maGrfObj.SetSwapStreamHdl( LINK( this, SwGrfNode, SwapGraphic ) );
+    bInSwapIn = bChgTwipSize = bChgTwipSizeFromPixel = bLoadLowResGrf = bFrameInPaint = bScaleImageMap = sal_False;
 
     bGrafikArrived = sal_True;
-    ReRead(rGrfName,rFltName, pGraphic, 0, sal_False);
+    ReRead( rGrfName, rFltName, pGraphic, 0, sal_False );
 }
 
-SwGrfNode::SwGrfNode( const SwNodeIndex & rWhere,
-				  		const GraphicObject& rGrfObj,
-                      SwGrfFmtColl *pGrfColl, SwAttrSet* pAutoAttr ) :
-    SwNoTxtNode( rWhere, ND_GRFNODE, pGrfColl, pAutoAttr ),
-	maGrfObj(rGrfObj),
-    mpReplacementGraphic(0),
-    // --> OD 2007-01-23 #i73788#
-    mbLinkedInputStreamReady( false ),
-    mbIsStreamReadOnly( sal_False )
-    // <--
+SwGrfNode::SwGrfNode(
+    const SwNodeIndex & rWhere,
+    const GraphicObject& rGrfObj,
+    SwGrfFmtColl *pGrfColl,
+    SwAttrSet* pAutoAttr )
+        : SwNoTxtNode( rWhere, ND_GRFNODE, pGrfColl, pAutoAttr ),
+          maGrfObj( rGrfObj ),
+          mpReplacementGraphic( 0 ),
+          mbLinkedInputStreamReady( false ),
+          mbIsStreamReadOnly( sal_False )
 {
-	maGrfObj = rGrfObj;
-	maGrfObj.SetSwapStreamHdl( LINK( this, SwGrfNode, SwapGraphic ) );
-	if( rGrfObj.HasUserData() && rGrfObj.IsSwappedOut() )
-		maGrfObj.SetSwapState();
-	bInSwapIn = bChgTwipSize = bChgTwipSizeFromPixel= bLoadLowResGrf =
-		bFrameInPaint = bScaleImageMap = sal_False;
-	bGrafikArrived = sal_True;
+    maGrfObj = rGrfObj;
+    maGrfObj.SetSwapStreamHdl( LINK( this, SwGrfNode, SwapGraphic ) );
+    if ( rGrfObj.HasUserData() && rGrfObj.IsSwappedOut() )
+        maGrfObj.SetSwapState();
+    bInSwapIn = bChgTwipSize = bChgTwipSizeFromPixel = bLoadLowResGrf = bFrameInPaint = bScaleImageMap = sal_False;
+    bGrafikArrived = sal_True;
 }
 
 // Konstruktor fuer den SW/G-Reader. Dieser ctor wird verwendet,

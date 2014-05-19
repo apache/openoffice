@@ -2000,30 +2000,29 @@ uno::Any SwXFrame::getPropertyValue(const OUString& rPropertyName)
 			}
 		}
         else if( FN_UNO_GRAPHIC_U_R_L == pEntry->nWID)
-		{
-			String sGrfName;
+        {
+            String sGrfName;
             const SwNodeIndex* pIdx = pFmt->GetCntnt().GetCntntIdx();
-			if(pIdx)
-			{
-				SwNodeIndex aIdx(*pIdx, 1);
-//				SwNoTxtNode* pNoTxt = aIdx.GetNode().GetNoTxtNode();
-				SwGrfNode* pGrfNode = aIdx.GetNode().GetGrfNode();
-				if(!pGrfNode)
-					throw uno::RuntimeException();
-				if( pGrfNode->IsGrfLink() )
-				{
-					pFmt->GetDoc()->GetGrfNms( *(SwFlyFrmFmt*)pFmt, &sGrfName, 0 );
-				}
-				else
-				{
-					String sPrefix( RTL_CONSTASCII_STRINGPARAM(sGraphicObjectProtocol) );
-					String sId( pGrfNode->GetGrfObj().GetUniqueID(),
-								RTL_TEXTENCODING_ASCII_US );
-					(sGrfName = sPrefix) += sId;
-				}
-			}
-			aAny <<= OUString(sGrfName);
-		}
+            if ( pIdx )
+            {
+                SwNodeIndex aIdx( *pIdx, 1 );
+                SwGrfNode* pGrfNode = aIdx.GetNode().GetGrfNode();
+                if ( !pGrfNode )
+                    throw uno::RuntimeException();
+                if ( pGrfNode->IsGrfLink() )
+                {
+                    pFmt->GetDoc()->GetGrfNms( *(SwFlyFrmFmt*) pFmt, &sGrfName, 0 );
+                }
+                else
+                {
+                    String sPrefix( RTL_CONSTASCII_STRINGPARAM( sGraphicObjectProtocol ) );
+                    String sId( pGrfNode->GetGrfObj().GetUniqueID(),
+                    RTL_TEXTENCODING_ASCII_US );
+                    ( sGrfName = sPrefix ) += sId;
+                }
+            }
+            aAny <<= OUString( sGrfName );
+        }
         else if( FN_UNO_REPLACEMENT_GRAPHIC_U_R_L == pEntry->nWID)
         {
             String sGrfName;
