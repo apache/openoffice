@@ -31,7 +31,7 @@
 
 
 body, p, h1, h2, h3, h4, h5, h6, .listitem, .listitemintable, .tablecontent, .tablecontentintable
-	{ font-family: "Bitstream Vera Sans",Arial,Helvetica,Lucida,Geneva,Helmet,sans-serif,"Andale Sans UI","Arial Unicode MS","Lucida Sans Unicode",Tahoma; }
+	{ font-family: "Bitstream Vera Sans",Arial,Helvetica,Lucida,Geneva,Helmet,sans-serif,"Andale Sans UI","Arial Unicode MS","Lucida Sans Unicode",Tahoma; text-align:right; direction:rtl;}
 
 .code, .codeintable, .example, .exampleintable, .literal, .literalintable, .path, .pathintable
 	{ font-family: "Bitstream Vera Sans Mono",Cumberland,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",Monaco,Monospaced; margin-top: 1pt; margin-bottom: 1pt;}
