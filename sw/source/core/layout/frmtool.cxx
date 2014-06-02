@@ -81,6 +81,9 @@
 #include <objectformatter.hxx>
 #include <switerator.hxx>
 
+//UUUU
+#include <svx/sdr/attribute/sdrallfillattributeshelper.hxx>
+
 // ftnfrm.cxx:
 void lcl_RemoveFtns( SwFtnBossFrm* pBoss, sal_Bool bPageOnly, sal_Bool bEndNotes );
 
@@ -225,11 +228,25 @@ SwFrmNotify::~SwFrmNotify()
     const sal_Bool bPrtHeight =
             (aPrt.*fnRect->fnGetHeight)()!=(pFrm->Prt().*fnRect->fnGetHeight)();
     if ( bPrtWidth || bPrtHeight )
-	{
-		const SvxGraphicPosition ePos = pFrm->GetAttrSet()->GetBackground().GetGraphicPos();
-		if ( GPOS_NONE != ePos && GPOS_TILED != ePos )
-			pFrm->SetCompletePaint();
-	}
+    {
+        //UUUU
+        drawinglayer::attribute::SdrAllFillAttributesHelperPtr aFillAttributes(pFrm->getSdrAllFillAttributesHelper());
+
+        if(aFillAttributes.get() && aFillAttributes->isUsed())
+        {
+            //UUUU use SetCompletePaint if needed
+            if(aFillAttributes->needCompleteRepaint())
+            {
+                pFrm->SetCompletePaint();
+            }
+        }
+        else
+        {
+            const SvxGraphicPosition ePos = pFrm->GetAttrSet()->GetBackground().GetGraphicPos();
+            if(GPOS_NONE != ePos && GPOS_TILED != ePos)
+                pFrm->SetCompletePaint();
+        }
+    }
     else
     {
         // #97597# - consider case that *only* margins between

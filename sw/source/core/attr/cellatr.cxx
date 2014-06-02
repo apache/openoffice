@@ -195,10 +195,12 @@ void SwTblBoxFormula::ChangeState( const SfxPoolItem* pItem )
 
 				if( pUpdtFld->bModified )
 				{
-					// und dann in der externen Darstellung
-					aCopy.PtrToBoxNm( &pTblNd->GetTable() );
-					pUpdtFld->pHistory->Add( &aCopy, &aCopy,
-                                pNd->FindTableBoxStartNode()->GetIndex() );
+                    // und dann in der externen Darstellung
+                    aCopy.PtrToBoxNm( &pTblNd->GetTable() );
+                    pUpdtFld->pHistory->Add( 
+                        &aCopy, 
+                        &aCopy,
+                        pNd->FindTableBoxStartNode()->GetIndex());
 				}
 			}
 			else

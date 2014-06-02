@@ -1677,7 +1677,10 @@ void SwTxtNode::DeleteAttribute( SwTxtAttr * const pAttr )
     {
         // create MsgHint before start/end become invalid
         SwUpdateAttr aHint(
-                *pAttr->GetStart(), *pAttr->GetEnd(), pAttr->Which() );
+            *pAttr->GetStart(), 
+            *pAttr->GetEnd(), 
+            pAttr->Which());
+
         m_pSwpHints->Delete( pAttr );
         SwTxtAttr::Destroy( pAttr, GetDoc()->GetAttrPool() );
         NotifyClients( 0, &aHint );
@@ -1752,7 +1755,11 @@ void SwTxtNode::DeleteAttributes(
                 // Start und End weg.
                 // Das CalcVisibleFlag bei HiddenParaFields entfaellt,
                 // da dies das Feld im Dtor selbst erledigt.
-                SwUpdateAttr aHint( nStart, *pEndIdx, nWhich );
+                SwUpdateAttr aHint(
+                    nStart, 
+                    *pEndIdx, 
+                    nWhich);
+
                 m_pSwpHints->DeleteAtPos( nPos );    // gefunden, loeschen,
                 SwTxtAttr::Destroy( pTxtHt, GetDoc()->GetAttrPool() );
                 NotifyClients( 0, &aHint );
@@ -3042,12 +3049,17 @@ bool SwpHints::TryInsertHint(
         if( !rNode.GetDoc()->IsInReading() )
             CHECK;
 #endif
-		// ... und die Abhaengigen benachrichtigen
-		if ( rNode.GetDepends() )
-		{
-			SwUpdateAttr aHint( nHtStart, nHtStart, nWhich );
-			rNode.ModifyNotification( 0, &aHint );
+        // ... und die Abhaengigen benachrichtigen
+        if(rNode.GetDepends())
+        {
+            SwUpdateAttr aHint(
+                nHtStart,
+                nHtStart,
+                nWhich);
+
+            rNode.ModifyNotification(0,&aHint);
         }
+
         return true;
     }
 
@@ -3125,11 +3137,16 @@ bool SwpHints::TryInsertHint(
     }
 
     // ... und die Abhaengigen benachrichtigen
-	if ( rNode.GetDepends() )
-	{
-		SwUpdateAttr aHint( nHtStart, nHtStart == nHintEnd ? nHintEnd + 1 : nHintEnd, nWhich );
-		rNode.ModifyNotification( 0, &aHint );
-	}
+    if ( rNode.GetDepends() )
+    {
+        SwUpdateAttr aHint(
+            // rNode.GetDoc()->GetAttrPool(),
+            nHtStart, 
+            nHtStart == nHintEnd ? nHintEnd + 1 : nHintEnd, 
+            nWhich);
+
+        rNode.ModifyNotification( 0, &aHint );
+    }
 
 #ifdef DBG_UTIL
     if( !bNoHintAdjustMode && !rNode.GetDoc()->IsInReading() )
