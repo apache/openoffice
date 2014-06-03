@@ -41,7 +41,7 @@ $(eval $(call gb_Library_set_ldflags,gtest,\
 ))
 
 $(eval $(call gb_Library_add_linked_libs,gtest,\
-    $(gb_STDLIBS) \
+    kernel32 msvcrt oldnames \
     $(gb_Library_STLLIBS) \
 ))
 
