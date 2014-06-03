@@ -67,7 +67,7 @@ BUILD_FLAGS+= -f ../../../../win/Makefile -j$(EXTMAXPROCESS)
 .ELSE
 
 CONFIGURE_DIR=
-CONFIGURE_ACTION=autoconf && .$/configure
+CONFIGURE_ACTION=.$/configure
 
 .IF "$(OS)"=="MACOSX"
 CONFIGURE_FLAGS='CXX=$(CXX)'
