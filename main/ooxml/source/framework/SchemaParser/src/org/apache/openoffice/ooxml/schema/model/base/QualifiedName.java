@@ -50,6 +50,14 @@ public class QualifiedName
         msNamespaceURI = sNamespaceURI;
     }
     
+    
+    
+    
+    public QualifiedName (final String sLocalPart)
+    {
+        this(null, null, sLocalPart);
+    }
+    
 
 
 
