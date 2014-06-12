@@ -151,6 +151,10 @@
       <paragraph xml-lang="en-US" id="par_id8892483" role="paragraph" l10n="NEW">When you save a document, you can select whether to save the document in the format ODF 1.2, ODF 1.2 (Extended), or in the prior format ODF 1.0/1.1.</paragraph>
       <paragraph xml-lang="en-US" id="par_id0915200911205367" role="note" l10n="NEW">Currently, the ODF 1.2 (Extended) format enables files of Draw and Impress to contain comments. Those comments can be inserted by <item type="menuitem">Insert - Comment</item> in the latest software version. The comments get lost when loading files into prior software versions that were saved by the latest software version.</paragraph>
       <paragraph xml-lang="en-US" id="par_id7198400" role="paragraph" l10n="CHG"><ahelp hid=".">Some companies or organizations may require ODF documents in the ODF 1.0/1.1 format. You can select that format to save in the listbox. This older format cannot store all new features, so the new format ODF 1.2 (Extended) is recommended where possible.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_ODFENCRYPTION" id="bm_id3165414" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3164920" role="heading" level="3" l10n="NEW"
+                 oldref="77">File encryption algorithm for ODF 1.2 format</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3160488" role="paragraph" l10n="U" oldref="78"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_ODFENCRYPTION">Change the default file encryption from blowfish to AES-256 when ODF 1.2 is used.</ahelp> The default file encryption algorithm is blowfish but when ODF 1.2 is used the user can change the default to AES-256. Older encrypted documents can still be loaded but new encrypted documents can't be opened with older office versions. The AES-256 algorithm is more secure than blowfish.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_NOPRETTYPRINTING" id="bm_id3155414" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154920" role="heading" level="3" l10n="CHG"
                  oldref="77">Size optimization for ODF format</paragraph>
