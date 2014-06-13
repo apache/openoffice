@@ -1582,7 +1582,7 @@ sub get_source_codes ($)
 =cut
 sub set_global_code_variables ($$)
 {
-	my ($languagesref, $allvariableshashref) = @_;
+    my ($languagesref, $allvariableshashref) = @_;
 
     my ($source_product_code, $source_upgrade_code) = get_source_codes($languagesref);
     my ($target_product_code, $target_upgrade_code) = (undef, undef);
@@ -1630,15 +1630,36 @@ sub set_global_code_variables ($$)
         $target_upgrade_code = "{" . create_guid() . "}";
         $installer::logger::Lang->printf("there is no source version => created new guids\n");
     }
-    
-    $target_upgrade_code = "{7C35B9AB-2CE3-4C18-BE7C-5B97EA089EB3}";
+
+    # Keep the upgrade code constant between versions.  Read it from the codes.txt file.
+    # Note that this handles regular installation sets and language packs.
+    my $onelanguage = ${$languagesref}[0];
+    $installer::logger::Lang->printf("reading upgrade code for language %s from %s\n",
+        $onelanguage,
+        $installer::globals::codefilename);
+    if (defined $installer::globals::codefilename)
+    {
+        my $code_filename = $installer::globals::codefilename;
+        installer::files::check_file($code_filename);
+        my $codefile = installer::files::read_file($code_filename);
+        my $searchstring = "UPGRADECODE";
+        my $codeblock = installer::windows::idtglobal::get_language_block_from_language_file(
+            $searchstring,
+            $codefile);
+        $target_upgrade_code = installer::windows::idtglobal::get_language_string_from_language_block(
+            $codeblock,
+            $onelanguage,
+            "");
+    }
+    # else use the previously generated upgrade code.
+
     $installer::globals::productcode = $target_product_code;
     $installer::globals::upgradecode = $target_upgrade_code;
     $allvariableshashref->{'PRODUCTCODE'} = $target_product_code;
-	$allvariableshashref->{'UPGRADECODE'} = $target_upgrade_code;
+    $allvariableshashref->{'UPGRADECODE'} = $target_upgrade_code;
 
-	$installer::logger::Lang->printf("target product code is %s\n", $target_product_code);
-	$installer::logger::Lang->printf("target upgrade code is %s\n", $target_upgrade_code);
+    $installer::logger::Lang->printf("target product code is %s\n", $target_product_code);
+    $installer::logger::Lang->printf("target upgrade code is %s\n", $target_upgrade_code);
 }
 
 
