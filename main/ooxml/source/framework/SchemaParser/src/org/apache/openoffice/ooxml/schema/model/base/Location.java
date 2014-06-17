@@ -41,6 +41,14 @@ public class Location
     
     
     
+    public Location ()
+    {
+        this("<predefined>", 0,0,0);
+    }
+    
+    
+    
+    
     @Override
     public String toString ()
     {
