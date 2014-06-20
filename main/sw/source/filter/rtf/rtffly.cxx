@@ -1274,8 +1274,6 @@ void SwRTFParser::InsPicture( const String& rGrfNm, const Graphic* pGrf,
 			    if( pFlySave->nEndNd == rIdx )
 				    pFlySave->nEndNd = rIdx.GetIndex() - 1;
 		    }
-
-            pGrfNd->onGraphicChanged();
         }
 	}
 	else
