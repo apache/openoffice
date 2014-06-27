@@ -2075,27 +2075,18 @@ throw(beans::PropertyVetoException, lang::IllegalArgumentException, lang::Wrappe
             bDone = true;
             break;
         }
-        // case FN_UNO_DEFAULT_OUTLINE_LEVEL:		//#outline level,removed by zahojianwei
-        //{
-        //    sal_Int8 nLevel = 0;
-        //    if( aValue >>= nLevel )
-        //        rBase.getNewBase()->GetCollection()->SetOutlineLevel( nLevel );
-        //    else
-        //        rBase.getNewBase()->GetCollection()->SetOutlineLevel( NO_NUMBERING );
-        //
-        //    bDone = true;
-        //    break;
-        //}
-        case RES_PARATR_OUTLINELEVEL:   //add by zahojianwei
+
+        case RES_PARATR_OUTLINELEVEL:
         {
             sal_Int16 nLevel = 0;
-            aValue >>= nLevel;		
+            aValue >>= nLevel;
             if( 0 <= nLevel && nLevel <= MAXLEVEL)
                 rBase.getNewBase()->GetCollection()->SetAttrOutlineLevel( nLevel );
 
             bDone = true;
-            break;  //<-end,zhaojianwei
+            break;
         }
+
         case FN_UNO_FOLLOW_STYLE:
         {
             OUString sTmp;
