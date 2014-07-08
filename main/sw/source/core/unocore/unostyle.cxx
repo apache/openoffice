@@ -1944,24 +1944,16 @@ void lcl_SetStyleProperty(const SfxItemPropertySimpleEntry& rEntry,
             else
                 throw lang::IllegalArgumentException();
         }
-        break;
-        // case FN_UNO_DEFAULT_OUTLINE_LEVEL:		//#outline level,removed by zahojianwei
-        //{
-        //    sal_Int8 nLevel = 0;
-        //    if( rValue >>= nLevel )
-        //        rBase.mxNewBase->GetCollection()->SetOutlineLevel( nLevel );
-        //    else
-        //        rBase.mxNewBase->GetCollection()->SetOutlineLevel( NO_NUMBERING );
-        //}
-        //break;
-        case RES_PARATR_OUTLINELEVEL:				//add by zahojianwei
+
+        case RES_PARATR_OUTLINELEVEL:
         {
             sal_Int16 nLevel = 0;
-   			rValue >>= nLevel;		
+            rValue >>= nLevel;
             if( 0 <= nLevel && nLevel <= MAXLEVEL)
-				rBase.mxNewBase->GetCollection()->SetAttrOutlineLevel( nLevel );
-        }											
-        break;										//<-end,zhaojianwei
+                rBase.mxNewBase->GetCollection()->SetAttrOutlineLevel( nLevel );
+        }
+        break;
+
         case FN_UNO_FOLLOW_STYLE:
         {
             OUString sTmp;
