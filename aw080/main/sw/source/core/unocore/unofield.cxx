@@ -539,20 +539,31 @@ void SwXFieldMaster::setPropertyValue( const OUString& rPropertyName,
 				}
 			}
 		}
-		if( bSetValue )
-		{
+        if ( bSetValue )
+        {
             // nothing special to be done here for the properties
             // UNO_NAME_DATA_BASE_NAME and UNO_NAME_DATA_BASE_URL.
             // We just call PutValue (empty string is allowed).
             // Thus the last property set will be used as Data Source.
 
-            sal_uInt16 nMId = GetFieldTypeMId( rPropertyName, *pType  );
-            if( USHRT_MAX != nMId )
-				pType->PutValue( rValue, nMId );
+            const sal_uInt16 nMemberValueId = GetFieldTypeMId( rPropertyName, *pType );
+            if ( USHRT_MAX != nMemberValueId )
+            {
+                pType->PutValue( rValue, nMemberValueId );
+                if ( pType->Which() == RES_USERFLD )
+                {
+                    // trigger update of User field in order to get depending Input Fields updated.
+                    pType->UpdateFlds();
+                }
+            }
             else
-                throw beans::UnknownPropertyException(OUString ( RTL_CONSTASCII_USTRINGPARAM ( "Unknown property: " ) ) + rPropertyName, static_cast < cppu::OWeakObject * > ( this ) );
-		}
-	}
+            {
+                throw beans::UnknownPropertyException(
+                    OUString( RTL_CONSTASCII_USTRINGPARAM( "Unknown property: " ) ) + rPropertyName,
+                    static_cast< cppu::OWeakObject * >( this ) );
+            }
+        }
+    }
 	else if(!pType && m_pDoc &&
         ( rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_NAME))) )
 	{
@@ -898,40 +909,37 @@ void SwXFieldMaster::removeVetoableChangeListener(const OUString& /*PropertyName
 
 void SwXFieldMaster::dispose(void) 			throw( uno::RuntimeException )
 {
-	vos::OGuard  aGuard(Application::GetSolarMutex());
-    SwFieldType* pFldType = GetFldType(sal_True);
-	if(pFldType)
-	{
-		sal_uInt16 nTypeIdx = USHRT_MAX;
-		const SwFldTypes* pTypes = GetDoc()->GetFldTypes();
-		for( sal_uInt16 i = 0; i < pTypes->Count(); i++ )
-		{
-			if((*pTypes)[i] == pFldType)
-				nTypeIdx = i;
-		}
+    vos::OGuard aGuard( Application::GetSolarMutex() );
 
-		// zuerst alle Felder loeschen
-		SwIterator<SwFmtFld,SwFieldType> aIter( *pFldType );
-		SwFmtFld* pFld = aIter.First();
-		while(pFld)
-		{
-			// Feld im Undo?
-			SwTxtFld *pTxtFld = pFld->GetTxtFld();
-			if(pTxtFld && pTxtFld->GetTxtNode().GetNodes().IsDocNodes() )
-			{
-				SwTxtNode& rTxtNode = (SwTxtNode&)*pTxtFld->GetpTxtNode();
-				SwPaM aPam(rTxtNode, *pTxtFld->GetStart());
-				aPam.SetMark();
-				aPam.Move();
-				GetDoc()->DeleteAndJoin(aPam);
-			}
+    SwFieldType* pFldType = GetFldType( sal_True );
+    if ( pFldType != NULL )
+    {
+        sal_uInt16 nTypeIdx = USHRT_MAX;
+        const SwFldTypes* pTypes = GetDoc()->GetFldTypes();
+        for ( sal_uInt16 i = 0; i < pTypes->Count(); i++ )
+        {
+            if ( ( *pTypes )[i] == pFldType )
+                nTypeIdx = i;
+        }
+
+        // zuerst alle Felder loeschen
+        SwIterator< SwFmtFld, SwFieldType > aIter( *pFldType );
+        SwFmtFld* pFld = aIter.First();
+        while ( pFld != NULL )
+        {
+            SwTxtFld* pTxtFld = pFld->GetTxtFld();
+            if ( pTxtFld != NULL
+                 && pTxtFld->GetTxtNode().GetNodes().IsDocNodes() )
+            {
+                SwTxtFld::DeleteTxtFld( *pTxtFld );
+            }
             pFld = aIter.Next();
-		}
-		// dann den FieldType loeschen
-		GetDoc()->RemoveFldType(nTypeIdx);
-	}
-	else
-		throw uno::RuntimeException();
+        }
+        // dann den FieldType loeschen
+        GetDoc()->RemoveFldType( nTypeIdx );
+    }
+    else
+        throw uno::RuntimeException();
 }
 
 void SwXFieldMaster::addEventListener(const uno::Reference< lang::XEventListener > & aListener)
@@ -1877,46 +1885,49 @@ void SwXTextField::attach( const uno::Reference< text::XTextRange > & xTextRange
 
 uno::Reference< text::XTextRange >  SwXTextField::getAnchor(void) throw( uno::RuntimeException )
 {
-	vos::OGuard  aGuard(Application::GetSolarMutex());
-	uno::Reference< text::XTextRange >   aRef;
-	SwField* pField = (SwField*)GetField();
-	if(pField)
-	{
-		const SwTxtFld* pTxtFld = m_pFmtFld->GetTxtFld();
-		if(!pTxtFld)
-			throw uno::RuntimeException();
-		const SwTxtNode& rTxtNode = pTxtFld->GetTxtNode();
+    vos::OGuard aGuard( Application::GetSolarMutex() );
 
-		SwPaM aPam(rTxtNode, *pTxtFld->GetStart() + 1, rTxtNode, *pTxtFld->GetStart());
+    uno::Reference< text::XTextRange > aRef;
 
-        aRef = SwXTextRange::CreateXTextRange(
-                *m_pDoc, *aPam.GetPoint(), aPam.GetMark());
-	}
-	return aRef;
+    SwField* pField = (SwField*) GetField();
+    if ( pField != NULL )
+    {
+        const SwTxtFld* pTxtFld = m_pFmtFld->GetTxtFld();
+        if ( !pTxtFld )
+            throw uno::RuntimeException();
+
+        boost::shared_ptr< SwPaM > pPamForTxtFld;
+        SwTxtFld::GetPamForTxtFld( *pTxtFld, pPamForTxtFld );
+        if ( pPamForTxtFld.get() != NULL )
+        {
+            aRef = SwXTextRange::CreateXTextRange( *m_pDoc,
+                                                   *(pPamForTxtFld->GetPoint()),
+                                                   pPamForTxtFld->GetMark() );
+        }
+    }
+    return aRef;
 
 }
 
+
 void SwXTextField::dispose(void) throw( uno::RuntimeException )
 {
-	vos::OGuard  aGuard(Application::GetSolarMutex());
-	SwField* pField = (SwField*)GetField();
-	if(pField)
-	{
-		UnoActionContext aContext(GetDoc());
-		const SwTxtFld* pTxtFld = m_pFmtFld->GetTxtFld();
-		SwTxtNode& rTxtNode = (SwTxtNode&)*pTxtFld->GetpTxtNode();
-		SwPaM aPam(rTxtNode, *pTxtFld->GetStart());
-		aPam.SetMark();
-		aPam.Move();
-		GetDoc()->DeleteAndJoin(aPam);
-	}
+    vos::OGuard aGuard( Application::GetSolarMutex() );
+    SwField* pField = (SwField*) GetField();
+    if ( pField != NULL )
+    {
+        UnoActionContext aContext( GetDoc() );
 
-	if ( m_pTextObject )
-	{
-		m_pTextObject->DisposeEditSource();
-		m_pTextObject->release();
-		m_pTextObject = 0;
-	}
+        ASSERT( m_pFmtFld->GetTxtFld(), "<SwXTextField::dispose()> - missing <SwTxtFld> --> crash" );
+        SwTxtFld::DeleteTxtFld( *( m_pFmtFld->GetTxtFld() ) );
+    }
+
+    if ( m_pTextObject )
+    {
+        m_pTextObject->DisposeEditSource();
+        m_pTextObject->release();
+        m_pTextObject = 0;
+    }
 }
 
 void SwXTextField::addEventListener(const uno::Reference< lang::XEventListener > & aListener) throw( uno::RuntimeException )
@@ -1969,21 +1980,21 @@ void SwXTextField::setPropertyValue(const OUString& rPropertyName, const uno::An
     if ( pEntry->nFlags & beans::PropertyAttribute::READONLY)
         throw beans::PropertyVetoException ( OUString ( RTL_CONSTASCII_USTRINGPARAM ( "Property is read-only: " ) ) + rPropertyName, static_cast < cppu::OWeakObject * > ( this ) );
 
-	if(pField)
-	{
-		// Sonderbehandlung Serienbrieffeld
-		sal_uInt16 nWhich = pField->Which();
-		if( RES_DBFLD == nWhich &&
-			(rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_DATA_BASE_NAME)) ||
-            rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_DATA_BASE_URL))||
-			rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_DATA_TABLE_NAME))||
-			rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_DATA_COLUMN_NAME))))
-		{
-			// hier muss ein neuer Feldtyp angelegt werden und
-			// das Feld an den neuen Typ umgehaengt werden
-			DBG_WARNING("not implemented");
-		}
-		else
+    if ( pField )
+    {
+        // Sonderbehandlung Serienbrieffeld
+        sal_uInt16 nWhich = pField->Which();
+        if ( RES_DBFLD == nWhich
+             && ( rPropertyName.equalsAsciiL( SW_PROP_NAME( UNO_NAME_DATA_BASE_NAME ) )
+                  || rPropertyName.equalsAsciiL( SW_PROP_NAME( UNO_NAME_DATA_BASE_URL ) )
+                  || rPropertyName.equalsAsciiL( SW_PROP_NAME( UNO_NAME_DATA_TABLE_NAME ) )
+                  || rPropertyName.equalsAsciiL( SW_PROP_NAME( UNO_NAME_DATA_COLUMN_NAME ) ) ) )
+        {
+            // hier muss ein neuer Feldtyp angelegt werden und
+            // das Feld an den neuen Typ umgehaengt werden
+            DBG_WARNING( "not implemented" );
+        }
+        else
         {
             // -> #111840#
             SwDoc * pDoc = GetDoc();
@@ -2001,118 +2012,118 @@ void SwXTextField::setPropertyValue(const OUString& rPropertyName, const uno::An
         }
         pField->PutValue( rValue, pEntry->nWID );
 
-	//#i100374# notify SwPostIt about new field content
-	if (RES_POSTITFLD== nWhich && m_pFmtFld)
-	{
-		const_cast<SwFmtFld*>(m_pFmtFld)->Broadcast(SwFmtFldHint( 0, SWFMTFLD_CHANGED ));
-	}
+        //#i100374# notify SwPostIt about new field content
+        if ( RES_POSTITFLD == nWhich && m_pFmtFld )
+        {
+            const_cast< SwFmtFld* >( m_pFmtFld )->Broadcast( SwFmtFldHint( 0, SWFMTFLD_CHANGED ) );
+        }
 
         //#114571# changes of the expanded string have to be notified
         //#to the SwTxtFld
-        if(RES_DBFLD == nWhich && m_pFmtFld->GetTxtFld())
+        if ( RES_DBFLD == nWhich && m_pFmtFld->GetTxtFld() )
         {
             m_pFmtFld->GetTxtFld()->ExpandTxtFld();
         }
-	
-	//#i100374# changing a document field should set the modify flag
-	SwDoc* pDoc = GetDoc();
-	if (pDoc)
-		pDoc->SetModified();
-		
-	}
-	else if(m_pProps)
-	{
-		String* pStr = 0;
-		sal_Bool* pBool = 0;
-        switch(pEntry->nWID)
-		{
-		case FIELD_PROP_PAR1:
-			pStr = &m_pProps->sPar1;
-			break;
-		case FIELD_PROP_PAR2:
-			pStr = &m_pProps->sPar2;
-			break;
-		case FIELD_PROP_PAR3:
-			pStr = &m_pProps->sPar3;
-			break;
-		case FIELD_PROP_PAR4:
-			pStr = &m_pProps->sPar4;
-			break;
-		case FIELD_PROP_FORMAT:
-			rValue >>= m_pProps->nFormat;
+
+        //#i100374# changing a document field should set the modify flag
+        SwDoc* pDoc = GetDoc();
+        if ( pDoc )
+            pDoc->SetModified();
+
+    }
+    else if ( m_pProps )
+    {
+        String* pStr = 0;
+        sal_Bool* pBool = 0;
+        switch (pEntry->nWID)
+        {
+        case FIELD_PROP_PAR1:
+            pStr = &m_pProps->sPar1;
+            break;
+        case FIELD_PROP_PAR2:
+            pStr = &m_pProps->sPar2;
+            break;
+        case FIELD_PROP_PAR3:
+            pStr = &m_pProps->sPar3;
+            break;
+        case FIELD_PROP_PAR4:
+            pStr = &m_pProps->sPar4;
+            break;
+        case FIELD_PROP_FORMAT:
+            rValue >>= m_pProps->nFormat;
             m_pProps->bFormatIsDefault = sal_False;
-			break;
-		case FIELD_PROP_SUBTYPE:
-			m_pProps->nSubType = SWUnoHelper::GetEnumAsInt32( rValue );
-			break;
-		case FIELD_PROP_BYTE1 :
-			rValue >>= m_pProps->nByte1;
-			break;
-		case FIELD_PROP_BOOL1 :
-			pBool = &m_pProps->bBool1;
-			break;
-		case FIELD_PROP_BOOL2 :
-			pBool = &m_pProps->bBool2;
-			break;
-		case FIELD_PROP_BOOL3 :
-			pBool = &m_pProps->bBool3;
-			break;
+            break;
+        case FIELD_PROP_SUBTYPE:
+            m_pProps->nSubType = SWUnoHelper::GetEnumAsInt32( rValue );
+            break;
+        case FIELD_PROP_BYTE1:
+            rValue >>= m_pProps->nByte1;
+            break;
+        case FIELD_PROP_BOOL1:
+            pBool = &m_pProps->bBool1;
+            break;
+        case FIELD_PROP_BOOL2:
+            pBool = &m_pProps->bBool2;
+            break;
+        case FIELD_PROP_BOOL3:
+            pBool = &m_pProps->bBool3;
+            break;
         case FIELD_PROP_BOOL4:
             pBool = &m_pProps->bBool4;
-        break;
-		case FIELD_PROP_DATE :
-		{
-			if(rValue.getValueType() != ::getCppuType(static_cast<const util::Date*>(0)))
-				throw lang::IllegalArgumentException();
+            break;
+        case FIELD_PROP_DATE:
+            {
+            if ( rValue.getValueType() != ::getCppuType( static_cast< const util::Date* >( 0 ) ) )
+                throw lang::IllegalArgumentException();
 
-			util::Date aTemp = *(const util::Date*)rValue.getValue();
-			m_pProps->aDate = Date(aTemp.Day, aTemp.Month, aTemp.Year);
-		}
-		break;
-		case FIELD_PROP_USHORT1:
-		case FIELD_PROP_USHORT2:
-			{
- 				sal_Int16 nVal = 0;
-				rValue >>= nVal;
-                if( FIELD_PROP_USHORT1 == pEntry->nWID)
-					m_pProps->nUSHORT1 = nVal;
-				else
-					m_pProps->nUSHORT2 = nVal;
-			}
-			break;
-		case FIELD_PROP_SHORT1:
-			rValue >>= m_pProps->nSHORT1;
-			break;
-		case FIELD_PROP_DOUBLE:
-			if(rValue.getValueType() != ::getCppuType(static_cast<const double*>(0)))
-				throw lang::IllegalArgumentException();
-			m_pProps->fDouble = *(double*)rValue.getValue();
-			break;
+            util::Date aTemp = *(const util::Date*) rValue.getValue();
+            m_pProps->aDate = Date( aTemp.Day, aTemp.Month, aTemp.Year );
+        }
+            break;
+        case FIELD_PROP_USHORT1:
+            case FIELD_PROP_USHORT2:
+            {
+            sal_Int16 nVal = 0;
+            rValue >>= nVal;
+            if ( FIELD_PROP_USHORT1 == pEntry->nWID )
+                m_pProps->nUSHORT1 = nVal;
+            else
+                m_pProps->nUSHORT2 = nVal;
+        }
+            break;
+        case FIELD_PROP_SHORT1:
+            rValue >>= m_pProps->nSHORT1;
+            break;
+        case FIELD_PROP_DOUBLE:
+            if ( rValue.getValueType() != ::getCppuType( static_cast< const double* >( 0 ) ) )
+                throw lang::IllegalArgumentException();
+            m_pProps->fDouble = *(double*) rValue.getValue();
+            break;
 
-		case FIELD_PROP_DATE_TIME :
-			if(!m_pProps->pDateTime)
-				m_pProps->pDateTime = new util::DateTime;
-			rValue >>= (*m_pProps->pDateTime);
-			break;
-		case FIELD_PROP_PROP_SEQ:
-			rValue >>= m_pProps->aPropSeq;
-			break;
+        case FIELD_PROP_DATE_TIME:
+            if ( !m_pProps->pDateTime )
+                m_pProps->pDateTime = new util::DateTime;
+            rValue >>= ( *m_pProps->pDateTime );
+            break;
+        case FIELD_PROP_PROP_SEQ:
+            rValue >>= m_pProps->aPropSeq;
+            break;
         case FIELD_PROP_STRINGS:
             rValue >>= m_pProps->aStrings;
             break;
-		}
-		if( pStr )
-			::GetString( rValue, *pStr );
-		else if( pBool )
-		{
-			if( rValue.getValueType() == getCppuBooleanType() )
-				*pBool = *(sal_Bool*)rValue.getValue();
-			else
-				throw lang::IllegalArgumentException();
-		}
-	}
-	else
-		throw uno::RuntimeException();
+        }
+        if ( pStr )
+            ::GetString( rValue, *pStr );
+        else if ( pBool )
+        {
+            if ( rValue.getValueType() == getCppuBooleanType() )
+                *pBool = *(sal_Bool*) rValue.getValue();
+            else
+                throw lang::IllegalArgumentException();
+        }
+    }
+    else
+        throw uno::RuntimeException();
 }
 
 uno::Any SwXTextField::getPropertyValue(const OUString& rPropertyName)
@@ -2365,14 +2376,12 @@ void SwXTextField::update(  ) throw (uno::RuntimeException)
                                                 pDocInfFld->GetSubType(),
                                                 pDocInfFld->GetFormat(),
                                                 pDocInfFld->GetLanguage(),
-												pDocInfFld->GetName() ) );
+                                                pDocInfFld->GetName() ) );
             }
             break;
         }
-		// --> FME 2004-10-06 #116480#
-		// Text formatting has to be triggered.
-		const_cast<SwFmtFld*>(m_pFmtFld)->ModifyNotification( 0, 0 );
-		// <--
+        // Text formatting has to be triggered.
+        const_cast< SwFmtFld* >( m_pFmtFld )->ModifyNotification( 0, 0 );
     }
     else
         m_bCallUpdate = sal_True;

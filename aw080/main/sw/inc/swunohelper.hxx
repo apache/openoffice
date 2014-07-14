@@ -27,16 +27,19 @@
 #include <sal/types.h>
 #include "swdllapi.h"
 
-namespace com { namespace sun { namespace star {
-	namespace uno {
-		class Any;
-	}
+namespace com { namespace sun { namespace star { 
+    namespace uno {
+        class Any;
+    }
 }}}
 
 class String;
 class SvStrings;
 class SvPtrarr;
-        
+
+//UUUU
+class SfxItemSet;
+
 namespace SWUnoHelper {
 
 // calls over the compherl the getEnumAsInt32 function and handle the
@@ -72,6 +75,12 @@ SW_DLLPUBLIC sal_Bool UCB_IsFile( const String& rURL );
 
     // is the URL a existing directory?
 sal_Bool UCB_IsDirectory( const String& rURL );
+
+///UUUU helper to check if fill style is set to color or bitmap
+/// and thus formally used SvxBrushItem parts need to be mapped
+/// for backwards compatibility
+bool needToMapFillItemsToSvxBrushItemTypes(const SfxItemSet& rSet);
+
 }
 
 #endif

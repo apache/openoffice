@@ -47,6 +47,9 @@
 #include <svx/svdograf.hxx>
 #include <svx/sdr/contact/viewcontactofgraphic.hxx>
 
+// #124389#
+#include <svx/svdotable.hxx>
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 sal_Bool SdrUndoAction::CanRepeat(SfxRepeatTarget& rView) const
@@ -469,7 +472,7 @@ void SdrUndoAttrObj::Undo()
 		// #105122# Since ClearItem sets back everything to normal
 		// it also sets fit-to-size text to non-fit-to-size text and
 		// switches on autogrowheight (the default). That may lead to
-		// loosing the geometry size info for the object when it is
+		// losing the geometry size info for the object when it is
 		// re-layouted from AdjustTextFrameWidthAndHeight(). This makes
 		// rescuing the size of the object necessary.
 		const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(mrSdrObject));
@@ -1207,32 +1210,47 @@ void SdrUndoObjSetText::AfterSetText()
 
 void SdrUndoObjSetText::Undo()
 {
-	// #94278# Trigger PageChangeCall
-	ImpShowPageOfThisObject();
+    // only works with SdrTextObj
+    SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(&mrSdrObject);
 
-	// alten Text sichern fuer Redo
-	if (!mbNewTextAvailable)
-	{
-		AfterSetText();
-	}
+    if(!pTarget)
+    {
+        OSL_ENSURE(false, "SdrUndoObjSetText::Undo with SdrObject not based on SdrTextObj (!)");
+        return;
+    }
 
-	// Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
-	OutlinerParaObject* pText1 = mpOldText;
+    // #94278# Trigger PageChangeCall
+    ImpShowPageOfThisObject();
 
-	if(pText1)
-	{
-		pText1 = new OutlinerParaObject(*pText1);
-	}
+    // alten Text sichern fuer Redo
+    if(!mbNewTextAvailable)
+    {
+        AfterSetText();
+    }
 
-	SdrText* pText = static_cast< SdrTextObj*>( &mrSdrObject )->getText(mnText);
+    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    OutlinerParaObject* pText1 = mpOldText;
 
-	if( pText )
-	{
-		pText->SetOutlinerParaObject(pText1);
-	}
+    if(pText1)
+    {
+        pText1 = new OutlinerParaObject(*pText1);
+    }
 
-    mrSdrObject.SetEmptyPresObj( mbEmptyPresObj );
-    mrSdrObject.ActionChanged();
+    SdrText* pText = pTarget->getText(mnText);
+
+    if(pText)
+    {
+        pTarget->SetOutlinerParaObjectForText(pText1, pText);
+    }
+
+    pTarget->SetEmptyPresObj(mbEmptyPresObj);
+    pTarget->ActionChanged();
+
+    // #124389# if it's a table, als oneed to relayout TextFrame
+    if(0 != dynamic_cast< sdr::table::SdrTableObj* >(pTarget))
+    {
+        pTarget->AdjustTextFrameWidthAndHeight();
+    }
 
     // #122410# SetOutlinerParaObject at SdrText does not trigger a
     // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
@@ -1242,24 +1260,39 @@ void SdrUndoObjSetText::Undo()
 
 void SdrUndoObjSetText::Redo()
 {
-	// Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
-	OutlinerParaObject* pText1 = mpNewText;
+    // only works with SdrTextObj
+    SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(&mrSdrObject);
 
-	if(pText1)
-	{
-		pText1 = new OutlinerParaObject(*pText1);
-	}
+    if(!pTarget)
+    {
+        OSL_ENSURE(false, "SdrUndoObjSetText::Redo with SdrObject not based on SdrTextObj (!)");
+        return;
+    }
 
-	SdrText* pText = static_cast< SdrTextObj*>( &mrSdrObject )->getText(mnText);
+    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    OutlinerParaObject* pText1 = mpNewText;
 
-	if( pText )
-	{
-		static_cast< SdrTextObj* >( &mrSdrObject )->SetOutlinerParaObjectForText( pText1, pText );
-	}
+    if(pText1)
+    {
+        pText1 = new OutlinerParaObject(*pText1);
+    }
 
-	mrSdrObject.ActionChanged();
+    SdrText* pText = pTarget->getText(mnText);
 
-    // #122410# NbcSetOutlinerParaObjectForText at SdrTextObj does not trigger a
+    if(pText)
+    {
+        pTarget->SetOutlinerParaObjectForText(pText1, pText);
+    }
+
+    pTarget->ActionChanged();
+
+    // #124389# if it's a table, als oneed to relayout TextFrame
+    if(0 != dynamic_cast< sdr::table::SdrTableObj* >(pTarget))
+    {
+        pTarget->AdjustTextFrameWidthAndHeight();
+    }
+
+    // #122410# SetOutlinerParaObjectForText at SdrTextObj does not trigger a
     // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
     // update their preview.
     const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(mrSdrObject);

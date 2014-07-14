@@ -390,7 +390,11 @@ void ImplDecodeRLE( sal_uInt8* pBuffer, DIBV5Header& rHeader, BitmapWriteAccess&
 
 bool ImplReadDIBBits(SvStream& rIStm, DIBV5Header& rHeader, BitmapWriteAccess& rAcc, BitmapWriteAccess* pAccAlpha, bool bTopDown, bool& rAlphaUsed)
 {
-	const sal_uLong nAlignedWidth = AlignedWidth4Bytes(rHeader.nWidth * rHeader.nBitCount);
+    const sal_Int64 nBitsPerLine (static_cast<sal_Int64>(rHeader.nWidth) * static_cast<sal_Int64>(rHeader.nBitCount));
+    if (nBitsPerLine > SAL_MAX_UINT32)
+        return false;
+
+	const sal_uLong nAlignedWidth = AlignedWidth4Bytes(static_cast<sal_uLong>(nBitsPerLine));
 	sal_uInt32 nRMask(( rHeader.nBitCount == 16 ) ? 0x00007c00UL : 0x00ff0000UL);
 	sal_uInt32 nGMask(( rHeader.nBitCount == 16 ) ? 0x000003e0UL : 0x0000ff00UL);
 	sal_uInt32 nBMask(( rHeader.nBitCount == 16 ) ? 0x0000001fUL : 0x000000ffUL);
@@ -609,13 +613,23 @@ bool ImplReadDIBBits(SvStream& rIStm, DIBV5Header& rHeader, BitmapWriteAccess& r
 
 bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLong nOffset )
 {
-	DIBV5Header aHeader;
-	const sal_uLong nStmPos = rIStm.Tell();
-	bool bRet(false);
-	bool bTopDown(false);
+    DIBV5Header aHeader;
+    const sal_uLong nStmPos = rIStm.Tell();
+    bool bRet( false );
+    bool bTopDown( false );
 
-	if(ImplReadDIBInfoHeader(rIStm, aHeader, bTopDown) && aHeader.nWidth && aHeader.nHeight && aHeader.nBitCount)
-	{
+    if ( ImplReadDIBInfoHeader( rIStm, aHeader, bTopDown )
+         && aHeader.nWidth != 0
+         && aHeader.nHeight != 0
+         && aHeader.nBitCount != 0 )
+    {
+        if ( nOffset > 0 && aHeader.nSize > nOffset )
+        {
+            // Header size claims to extend into the image data.
+            // Looks like an error.
+            return false;
+        }
+
 		const sal_uInt16 nBitCount(discretizeBitcount(aHeader.nBitCount));
 		const Size aSizePixel(aHeader.nWidth, aHeader.nHeight);
 		BitmapPalette aDummyPal;
@@ -764,35 +778,47 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
 
 bool ImplReadDIBFileHeader( SvStream& rIStm, sal_uLong& rOffset )
 {
-	sal_uInt32	nTmp32;
-	sal_uInt16	nTmp16 = 0;
-	bool	bRet = false;
+    bool bRet = false;
 
-	rIStm >> nTmp16;
+    const sal_Int64 nSavedStreamPos( rIStm.Tell() );
+    const sal_Int64 nStreamLength( rIStm.Seek( STREAM_SEEK_TO_END ) );
+    rIStm.Seek( nSavedStreamPos );
 
-	if ( ( 0x4D42 == nTmp16 ) || ( 0x4142 == nTmp16 ) )
-	{
-		if ( 0x4142 == nTmp16 )
-		{
-			rIStm.SeekRel( 12L );
-			rIStm >> nTmp16;
-			rIStm.SeekRel( 8L );
-			rIStm >> nTmp32;
-			rOffset = nTmp32 - 28UL;
-			bRet = ( 0x4D42 == nTmp16 );
-		}
-		else // 0x4D42 == nTmp16, 'MB' from BITMAPFILEHEADER
-		{
-			rIStm.SeekRel( 8L );        // we are on bfSize member of BITMAPFILEHEADER, forward to bfOffBits
-			rIStm >> nTmp32;            // read bfOffBits
-			rOffset = nTmp32 - 14UL;    // adapt offset by sizeof(BITMAPFILEHEADER)
-			bRet = ( rIStm.GetError() == 0UL );
-		}
-	}
-	else
-		rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
+    sal_uInt16 nTmp16 = 0;
+    rIStm >> nTmp16;
 
-	return bRet;
+    if ( ( 0x4D42 == nTmp16 ) || ( 0x4142 == nTmp16 ) )
+    {
+        sal_uInt32 nTmp32;
+        if ( 0x4142 == nTmp16 )
+        {
+            rIStm.SeekRel( 12L );
+            rIStm >> nTmp16;
+            rIStm.SeekRel( 8L );
+            rIStm >> nTmp32;
+            rOffset = nTmp32 - 28UL;
+            bRet = ( 0x4D42 == nTmp16 );
+        }
+        else // 0x4D42 == nTmp16, 'MB' from BITMAPFILEHEADER
+        {
+            rIStm.SeekRel( 8L );        // we are on bfSize member of BITMAPFILEHEADER, forward to bfOffBits
+            rIStm >> nTmp32;            // read bfOffBits
+            rOffset = nTmp32 - 14UL;    // adapt offset by sizeof(BITMAPFILEHEADER)
+            bRet = ( rIStm.GetError() == 0UL );
+        }
+
+        if ( rOffset >= nStreamLength )
+        {
+            // Offset claims that image starts past the end of the
+            // stream.  Unlikely.
+            rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
+            bRet = false;
+        }
+    }
+    else
+        rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
+
+    return bRet;
 }
 
 bool ImplWriteDIBPalette( SvStream& rOStm, BitmapReadAccess& rAcc )

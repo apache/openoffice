@@ -27,6 +27,7 @@ gb_Library_FILENAMES := $(patsubst expat_xmlparse:iexpat_xmlparse%,expat_xmlpars
 gb_Library_FILENAMES := $(patsubst libeay32:ilibeay32%,libeay32:libeay32%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst ssleay32:issleay32%,ssleay32:ssleay32%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst zlib:izlib%,zlib:zlib%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst gtest:igtest%,gtest:igtest%,$(gb_Library_FILENAMES))
 endif
 
 #gb_Library_FILENAMES := $(patsubst apr-util:iapr-util%,apr:libapr-util-1%,$(gb_Library_FILENAMES))

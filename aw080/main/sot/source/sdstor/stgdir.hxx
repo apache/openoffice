@@ -100,8 +100,12 @@ class StgDirStrm : public StgDataStrm
 	friend class StgIterator;
 	StgDirEntry* pRoot;							// root of dir tree
 	short 		 nEntries;						// entries per page
-	void		 SetupEntry( sal_Int32, StgDirEntry* );
-public:
+    void SetupEntry(
+        const sal_Int32 n,
+        StgDirEntry* pUpper,
+        const sal_Int32 nEntryCount,
+        const sal_Int32 nDepth);
+public: 
 	StgDirStrm( StgIo& );
 	~StgDirStrm();
 	virtual sal_Bool SetSize( sal_Int32 );				// change the size

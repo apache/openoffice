@@ -1,0 +1,12 @@
+--- misc/gtest-1.7.0/include/gtest/internal/gtest-port.h	2013-09-18 19:48:30.000000000 +0200
++++ misc/build/gtest-1.7.0/include/gtest/internal/gtest-port.h	2014-06-03 15:14:03.000000000 +0200
+@@ -76,6 +76,9 @@
+ //                              Test's own tr1 tuple implementation should be
+ //                              used.  Unused when the user sets
+ //                              GTEST_HAS_TR1_TUPLE to 0.
++
++#define GTEST_USE_OWN_TR1_TUPLE 1
++
+ //   GTEST_LANG_CXX11         - Define it to 1/0 to indicate that Google Test
+ //                              is building in C++11/C++98 mode.
+ //   GTEST_LINKED_AS_SHARED_LIBRARY

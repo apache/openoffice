@@ -32,4 +32,5 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	libeay32										\
 	ssleay32										\
 	zlib											\
+	gtest											\
 ))

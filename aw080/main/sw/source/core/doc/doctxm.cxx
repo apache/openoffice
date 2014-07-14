@@ -546,7 +546,7 @@ sal_Bool SwDoc::DeleteTOX( const SwTOXBase& rTOXBase, sal_Bool bDelNodes )
 		   delete to. This is done by first searching forward from the
 		   end of the TOX' section. If no content node is found behind
 		   the TOX one is searched before it. If this is not
-		   successfull, too, insert new text node behind the end of
+		   successful, too, insert new text node behind the end of
 		   the TOX' section. The cursors from the TOX' section will be
 		   moved to the content node found or the new text node. */
 
@@ -1530,32 +1530,32 @@ void SwTOXBaseSection::UpdateCntnt( SwTOXElement eMyType,
                     TOX_TABLES != SwTOXBase::GetType() &&
                     TOX_ILLUSTRATIONS != SwTOXBase::GetType() &&
                     TOX_OBJECTS != SwTOXBase::GetType() )
-			{
-				const SwTxtNode* pOutlNd = ::lcl_FindChapterNode( *pCNd,
-														MAXLEVEL - 1 );
-				if( pOutlNd )
-				{
-					//sal_uInt16 nTmp = pOutlNd->GetTxtColl()->GetOutlineLevel();//#outline level,zhaojianwei
-					//if( nTmp < NO_NUMBERING )
-					//	nSetLevel = nTmp + 1;
-					if( pOutlNd->GetTxtColl()->IsAssignedToListLevelOfOutlineStyle())
-						nSetLevel = pOutlNd->GetTxtColl()->GetAttrOutlineLevel() ;//<-end,zhaojianwei
-				}
-			}
+            {
+                const SwTxtNode* pOutlNd = ::lcl_FindChapterNode( *pCNd,
+                    MAXLEVEL - 1 );
+                if ( pOutlNd )
+                {
+                    if ( pOutlNd->GetTxtColl()->IsAssignedToListLevelOfOutlineStyle() )
+                    {
+                        nSetLevel = pOutlNd->GetTxtColl()->GetAttrOutlineLevel();
+                    }
+                }
+            }
 
-			if( pCNd->getLayoutFrm( pDoc->GetCurrentLayout() ) && ( !IsFromChapter() ||
-					::lcl_FindChapterNode( *pCNd, 0 ) == pOwnChapterNode ))
-			{
-				SwTOXPara * pNew = new SwTOXPara( *pCNd, eMyType,
-                            ( USHRT_MAX != nSetLevel )
-                            ? static_cast<sal_uInt16>(nSetLevel)
-                            : FORM_ALPHA_DELIMITTER );
-				InsertSorted( pNew );
-			}
-		}
+            if ( pCNd->getLayoutFrm( pDoc->GetCurrentLayout() ) && ( !IsFromChapter() ||
+                                                                     ::lcl_FindChapterNode( *pCNd, 0 ) == pOwnChapterNode ) )
+            {
+                SwTOXPara * pNew =
+                    new SwTOXPara(
+                        *pCNd,
+                        eMyType,
+                        ( USHRT_MAX != nSetLevel ) ? static_cast< sal_uInt16 >( nSetLevel ) : FORM_ALPHA_DELIMITTER );
+                InsertSorted( pNew );
+            }
+        }
 
         nIdx = pNd->StartOfSectionNode()->EndOfSectionIndex() + 2;  // 2 == End-/StartNode
-	}
+    }
 }
 
 /*--------------------------------------------------------------------
@@ -1580,36 +1580,33 @@ void SwTOXBaseSection::UpdateTable( const SwTxtNode* pOwnChapterNode )
 			const SwTableNode* pTblNd = pFBox->GetSttNd()->FindTableNode();
 			SwNodeIndex aCntntIdx( *pTblNd, 1 );
 
-			SwCntntNode* pCNd;
-			while( 0 != ( pCNd = rNds.GoNext( &aCntntIdx ) ) &&
-				aCntntIdx.GetIndex() < pTblNd->EndOfSectionIndex() )
-			{
-				if( pCNd->getLayoutFrm( pDoc->GetCurrentLayout() ) && (!IsFromChapter() ||
-					::lcl_FindChapterNode( *pCNd, 0 ) == pOwnChapterNode ))
-				{
-					SwTOXTable * pNew = new SwTOXTable( *pCNd );
-                    if( IsLevelFromChapter() && TOX_TABLES != SwTOXBase::GetType())
+            SwCntntNode* pCNd;
+            while (0 != ( pCNd = rNds.GoNext( &aCntntIdx ) ) &&
+                   aCntntIdx.GetIndex() < pTblNd->EndOfSectionIndex())
+            {
+                if ( pCNd->getLayoutFrm( pDoc->GetCurrentLayout() )
+                     && ( !IsFromChapter()
+                          || ::lcl_FindChapterNode( *pCNd, 0 ) == pOwnChapterNode ) )
+                {
+                    SwTOXTable * pNew = new SwTOXTable( *pCNd );
+                    if ( IsLevelFromChapter() && TOX_TABLES != SwTOXBase::GetType() )
                     {
-                        const SwTxtNode* pOutlNd =
-                            ::lcl_FindChapterNode( *pCNd, MAXLEVEL - 1 );
-                        if( pOutlNd )
+                        const SwTxtNode* pOutlNd = ::lcl_FindChapterNode( *pCNd, MAXLEVEL - 1 );
+                        if ( pOutlNd )
                         {
-							//sal_uInt16 nTmp = pOutlNd->GetTxtColl()->GetOutlineLevel();//#outline level,zhaojianwei
-							//if( nTmp < NO_NUMBERING )
-							//	pNew->SetLevel( nTmp + 1 );
-                            if( pOutlNd->GetTxtColl()->IsAssignedToListLevelOfOutlineStyle())
-							{
+                            if ( pOutlNd->GetTxtColl()->IsAssignedToListLevelOfOutlineStyle() )
+                            {
                                 const int nTmp = pOutlNd->GetTxtColl()->GetAttrOutlineLevel();
-                                pNew->SetLevel( static_cast<sal_uInt16>(nTmp) );//<-end ,zhaojianwei
-							}
+                                pNew->SetLevel( static_cast< sal_uInt16 >( nTmp ) );
+                            }
                         }
                     }
-                    InsertSorted(pNew);
-					break;
-				}
-			}
-		}
-	}
+                    InsertSorted( pNew );
+                    break;
+                }
+            }
+        }
+    }
 }
 
 /*--------------------------------------------------------------------
