@@ -2459,16 +2459,18 @@ const SwFrmFmt*  SwFEShell::GetFlyNum(sal_uInt16 nIdx, FlyCntType eType ) const
 	return GetDoc()->GetFlyNum(nIdx, eType );
 }
 
+
 // zeige das akt. selektierte "Object" an
 void SwFEShell::MakeSelVisible()
 {
-	if( Imp()->HasDrawView() &&
-		Imp()->GetDrawView()->GetMarkedObjectList().GetMarkCount() )
-	{
-		MakeVisible( Imp()->GetDrawView()->GetAllMarkedRect() );
-	}
-	else
-		SwCrsrShell::MakeSelVisible();
+    if ( Imp()->HasDrawView() &&
+         Imp()->GetDrawView()->GetMarkedObjectList().GetMarkCount() )
+    {
+        GetCurrFrm(); // just to trigger formatting in case the selected object is not formatted.
+        MakeVisible( Imp()->GetDrawView()->GetAllMarkedRect() );
+    }
+    else
+        SwCrsrShell::MakeSelVisible();
 }
 
 
