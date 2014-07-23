@@ -1944,6 +1944,7 @@ void lcl_SetStyleProperty(const SfxItemPropertySimpleEntry& rEntry,
             else
                 throw lang::IllegalArgumentException();
         }
+        break;
 
         case RES_PARATR_OUTLINELEVEL:
         {
