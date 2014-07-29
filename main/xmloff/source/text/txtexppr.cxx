@@ -464,7 +464,9 @@ void XMLTextExportPropertySetMapper::ContextFilter(
 	XMLPropertyState* pClip11State = NULL;
 	XMLPropertyState* pClipState = NULL;
 
+	// filter fo:margin
     XMLPropertyState* pAllParaMargin = NULL;
+    XMLPropertyState* pAllParaMarginRel = NULL;
     XMLPropertyState* pAllMargin = NULL;
 
 	sal_Bool bNeedsAnchor = sal_False;
@@ -584,6 +586,7 @@ void XMLTextExportPropertySetMapper::ContextFilter(
         case CTF_TEXT_CLIP11:    		pClip11State = propertie; break;
         case CTF_TEXT_CLIP:    			pClipState = propertie; break;
         case CTF_PARAMARGINALL:         pAllParaMargin = propertie; break;
+        case CTF_PARAMARGINALL_REL:     pAllParaMarginRel = propertie; break;
         case CTF_MARGINALL:             pAllMargin = propertie; break;
 		}
 	}
@@ -640,6 +643,11 @@ void XMLTextExportPropertySetMapper::ContextFilter(
     {
         pAllParaMargin->mnIndex = -1; // just export individual attributes...
         pAllParaMargin->maValue.clear();
+    }
+    if (pAllParaMarginRel)
+    {
+        pAllParaMarginRel->mnIndex = -1; // just export individual attributes...
+        pAllParaMarginRel->maValue.clear();
     }
     if (pAllMargin)
     {

@@ -3931,13 +3931,12 @@ SwTxtFmtColl* SwRTFParser::MakeColl(const String& rName, sal_uInt16 nPos,
         if( !nPos )
         {
             pColl = pDoc->GetTxtCollFromPool( RES_POOLCOLL_STANDARD, false );
-			//pColl->SetOutlineLevel( nOutlineLevel );		//#outline level,removed by zhaojianwei
-			if(nOutlineLevel < MAXLEVEL )							//->add by zhaojianwei
-				pColl->AssignToListLevelOfOutlineStyle( nOutlineLevel );
-			else
-				pColl->DeleteAssignmentToListLevelOfOutlineStyle();	//<-end,zhaojianwei
-			return pColl;
-		}
+            if ( nOutlineLevel < MAXLEVEL )
+                pColl->AssignToListLevelOfOutlineStyle( nOutlineLevel );
+            else
+                pColl->DeleteAssignmentToListLevelOfOutlineStyle();
+            return pColl;
+        }
 
 		// erzeuge einen Namen
 		aNm.AssignAscii( RTL_CONSTASCII_STRINGPARAM( "NoName(" ));

@@ -219,7 +219,7 @@ namespace svgio
                 return getCssStyleParent();
             }
 
-            if(mrOwner.getParent())
+            if(mrOwner.supportsParentStyle() && mrOwner.getParent())
             {
                 return mrOwner.getParent()->getSvgStyleAttributes(); 
             }
@@ -1130,7 +1130,8 @@ namespace svgio
 
                     if(mpClip)
                     {
-                        mpClip->apply(aSource);
+                        // #i124852# transform may be needed when userSpaceOnUse
+                        mpClip->apply(aSource, pTransform);
                     }
                 }
 
@@ -1143,7 +1144,8 @@ namespace svgio
 
                         if(mpMask)
                         {
-                            mpMask->apply(aSource);
+                            // #i124852# transform may be needed when userSpaceOnUse
+                            mpMask->apply(aSource, pTransform);
                         }
                     }
 
@@ -1876,6 +1878,21 @@ namespace svgio
                     break;
                 }
             }
+        }
+
+        // #125258# ask if fill is a direct hard attribute (no hierarchy)
+        bool SvgStyleAttributes::isFillSet() const
+        {
+            if(mbIsClipPathContent)
+            {
+                return false;
+            }
+            else if(maFill.isSet()) 
+            {
+                return true;
+            }
+
+            return false;
         }
 
         const basegfx::BColor* SvgStyleAttributes::getFill() const 

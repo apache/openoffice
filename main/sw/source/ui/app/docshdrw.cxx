@@ -58,7 +58,7 @@ using namespace ::com::sun::star;
 
 void  SwDocShell::InitDraw()
 {
-	SdrModel *pDrDoc = pDoc->GetDrawModel();
+	SdrModel *pDrDoc = mpDoc->GetDrawModel();
 	if( pDrDoc )
 	{
 		// Listen, bzw. Tables im ItemSet der DocShell anlegen
