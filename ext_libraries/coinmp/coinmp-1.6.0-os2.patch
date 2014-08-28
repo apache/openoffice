@@ -1,0 +1,90 @@
+--- misc/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2014-08-27 13:57:26.000000000 +0200
++++ misc/build/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2014-08-27 12:15:58.000000000 +0200
+@@ -29,7 +29,7 @@
+ 
+ //-----------------------------------------------------------------------------
+ 
+-#if defined(__CYGWIN__) && defined(__GNUC__)
++#if defined(__CYGWIN__) && defined(__GNUC__) || defined(__KLIBC__)
+    typedef typeof(SIG_DFL) CoinSighandler_t;
+ #  define CoinSighandler_t_defined
+ #endif
+--- misc/CoinMP-1.6.0/CoinUtils/src/CoinTime.hpp	2011-01-04 00:31:00.000000000 +0100
++++ misc/build/CoinMP-1.6.0/CoinUtils/src/CoinTime.hpp	2014-08-27 12:58:06.000000000 +0200
+@@ -23,6 +23,9 @@
+ #include <sys/time.h>
+ #endif
+ #if !defined(__MSVCRT__)
++#ifdef __KLIBC__
++#include <sys/types.h>
++#endif
+ #include <sys/resource.h>
+ #endif
+ #endif
+@@ -121,6 +124,12 @@
+   cpu_temp = (double)((double)ticksnow/CLOCKS_PER_SEC);
+ #endif
+ 
++#elif defined(__KLIBC__)
++
++  unsigned int ticksnow;        /* clock_t is same as int */
++  ticksnow = (unsigned int)clock();
++  cpu_temp = (double)((double)ticksnow/CLOCKS_PER_SEC);
++
+ #else
+   struct rusage usage;
+ # ifdef ZEROFAULT
+@@ -141,7 +150,7 @@
+ static inline double CoinSysTime()
+ {
+   double sys_temp;
+-#if defined(_MSC_VER) || defined(__MSVCRT__)
++#if defined(_MSC_VER) || defined(__MSVCRT__) || defined(__KLIBC__)
+   sys_temp = 0.0;
+ #else
+   struct rusage usage;
+@@ -161,7 +170,7 @@
+ static inline double CoinCpuTimeJustChildren()
+ {
+   double cpu_temp;
+-#if defined(_MSC_VER) || defined(__MSVCRT__)
++#if defined(_MSC_VER) || defined(__MSVCRT__) || defined(__KLIBC__)
+   cpu_temp = 0.0;
+ #else
+   struct rusage usage;
+--- misc/CoinMP-1.6.0/CoinMP/src/Makefile.in	2011-08-07 17:09:46.000000000 +0200
++++ misc/build/CoinMP-1.6.0/CoinMP/src/Makefile.in	2014-08-28 00:29:22.000000000 +0200
+@@ -20,6 +20,10 @@
+ 
+ # Author:  Andreas Waechter           IBM    2006-04-13
+ 
++OS2_LA_NAME=CoinMP
++OS2_DLL_NAME=CoinMP
++OS2_DLL_OBJ=$(libCoinMP_la_OBJECTS:%.lo=%.o)
++OS2_DLL_LIBS=../../Cbc/src/.libs/CbcSolver.a ../../Cbc/src/.libs/Cbc.a ../../Cgl/src/.libs/Cgl.a ../../Clp/src/OsiClp/.libs/OsiClp.a ../../Clp/src/.libs/Clp.a ../../Osi/src/Osi/.libs/Osi.a ../../CoinUtils/src/.libs/CoinUtils.a -lstdc++ $(LIBS)
+ 
+ srcdir = @srcdir@
+ top_srcdir = @top_srcdir@
+@@ -547,7 +551,7 @@
+ 	done
+ check-am: all-am
+ check: check-am
+-all-am: Makefile $(LTLIBRARIES) $(HEADERS) config.h config_coinmp.h
++all-am: Makefile $(LTLIBRARIES) $(OS2_DLL_NAME).dll $(HEADERS) config.h config_coinmp.h
+ installdirs:
+ 	for dir in "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includecoindir)"; do \
+ 	  test -z "$$dir" || $(mkdir_p) "$$dir"; \
+@@ -656,3 +660,13 @@
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.
+ .NOEXPORT:
++
++$(OS2_DLL_NAME).dll: lib$(OS2_LA_NAME).la
++	cp .libs/$(OS2_LA_NAME).a .libs/$(OS2_LA_NAME)_s.a
++	echo "LIBRARY $(OS2_DLL_NAME) INITINSTANCE TERMINSTANCE" > $(OS2_DLL_NAME).def
++	echo "DATA MULTIPLE" >> $(OS2_DLL_NAME).def
++	echo "EXPORTS" >> $(OS2_DLL_NAME).def
++	emxexp $(OS2_DLL_OBJ) >> $(OS2_DLL_NAME).def
++	gcc -g -Zbin-files -Zhigh-mem -Zomf -Zdll $(OS2_DLL_NAME).def -o $@ $(OS2_DLL_OBJ) $(OS2_DLL_LIBS) 
++	emximp -o .libs/$(OS2_LA_NAME).a $(OS2_DLL_NAME).def
++	emximp -o .libs/$(OS2_LA_NAME).lib $(OS2_DLL_NAME).def
