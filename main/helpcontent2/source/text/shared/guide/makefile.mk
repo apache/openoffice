@@ -94,7 +94,6 @@ XHPFILES = \
    dragdrop_table.xhp \
    edit_symbolbar.xhp \
    email.xhp \
-   error_report.xhp \
    export_ms.xhp \
    fax.xhp \
    filternavigator.xhp \
