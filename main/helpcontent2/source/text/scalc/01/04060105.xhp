@@ -66,6 +66,26 @@
          <paragraph xml-lang="en-US" id="par_id3149946" role="paragraph" l10n="U" oldref="60">
             <item type="input">=AND (FALSE;TRUE)</item> returns FALSE.</paragraph>
       </section>
+<section id="Section1">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156256"><bookmark_value>TRUE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WAHR" id="bm_id3148426" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U"
+                    oldref="38">TRUE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155985" role="paragraph" l10n="U" oldref="39"><ahelp hid="HID_FUNC_WAHR">The logical value is set to TRUE.</ahelp> The TRUE() function does not require any arguments, and always returns the logical value TRUE.</paragraph>
+        <paragraph xml-lang="en-US" id="hd_id3153717" role="heading" level="3" l10n="U"
+                    oldref="40">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152590" role="code" l10n="U" oldref="41">TRUE()</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147175" role="heading" level="3" l10n="U"
+                    oldref="42">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146148" role="paragraph" l10n="U" oldref="43">If A=TRUE and B=FALSE the following examples appear:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3083285" role="paragraph" l10n="U" oldref="44">
+           <item type="input">=AND(A;B)</item> returns FALSE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3083444" role="paragraph" l10n="U" oldref="45">
+            <item type="input">=OR(A;B)</item> returns TRUE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154314" role="paragraph" l10n="U" oldref="46">
+            <item type="input">=NOT(AND(A;B))</item> returns TRUE</paragraph>
+      </section>	  
       <section id="Section5">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149015"><bookmark_value>FALSE function</bookmark_value>
 </bookmark>
@@ -80,7 +100,7 @@
          <paragraph xml-lang="en-US" id="par_id3147468" role="paragraph" l10n="CHG" oldref="9">
             <item type="input">=NOT(FALSE())</item> returns TRUE</paragraph>
       </section>
-      <section id="Section4">
+ <section id="Section4">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150141"><bookmark_value>IF function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WENN" id="bm_id3152789" localize="false"/>
@@ -121,7 +141,7 @@
          <paragraph xml-lang="en-US" id="par_id3150132" role="paragraph" l10n="CHG" oldref="18">
             <item type="input">=NOT(A)</item>. If A=TRUE then NOT(A) will evaluate FALSE.</paragraph>
       </section>
-      <section id="Section2">
+<section id="Section2">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148394"><bookmark_value>OR function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ODER" id="bm_id3155620" localize="false"/>
@@ -137,13 +157,35 @@
          <paragraph xml-lang="en-US" id="par_id3155819" role="paragraph" l10n="CHG" oldref="24">
             <emph>LogicalValue1; LogicalValue2 ...LogicalValue30</emph> are conditions to be checked. All conditions can be either TRUE or FALSE. If a range is entered as a parameter, the function uses the value from the range that is in the current column or row.<comment>UFI: first try to fix bugtraq 4905779</comment></paragraph>
          <paragraph xml-lang="en-US" id="hd_id3153228" role="heading" level="3" l10n="U"
-                    oldref="25">Example</paragraph>
+                    oldref="25">Examples:</paragraph>
          <paragraph xml-lang="en-US" id="par_id3154870" role="paragraph" l10n="U" oldref="26">The logical values of entries 12&lt;11; 13&gt;22, and 45=45 are to be checked.</paragraph>
          <paragraph xml-lang="en-US" id="par_id3155371" role="paragraph" l10n="U" oldref="27">
             <item type="input">=OR(12&lt;11;13&gt;22;45=45)</item> returns TRUE.</paragraph>
          <paragraph xml-lang="en-US" id="par_id3158412" role="paragraph" l10n="U" oldref="59">
             <item type="input">=OR(FALSE;TRUE)</item> returns TRUE.</paragraph>
       </section>
+<section id="Section7">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148394K"><bookmark_value>XOR function</bookmark_value>
+</bookmark><comment>kschenk added this entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ODER" id="bm_id3155620K" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148394K" role="heading" level="2" l10n="U">XOR</paragraph>
+					<paragraph xml-lang="en-US" id="par_id3156060K" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_ODER">Returns the exclusive "or" of arguments.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148771K" role="paragraph" l10n="U" oldref="62">The arguments are either numbers, logical expressions themselves (TRUE, 1&lt;5, 2+3=7, B8&lt;10) that return logical values, or arrays (A1:C3).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149027K" role="note" l10n="CHG">If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155517K" role="heading" level="3" l10n="U"
+                   oldref="22">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150468K" role="code" l10n="U">XOR(Value1; Value2 ...Value30)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155819K" role="paragraph" l10n="CHG" oldref="24">
+			 
+            <emph>Value1; Value2 ...Value30</emph> are are added modulo 2. TRUE is returned if the result of this addition is
+			1; FALSE is returned if the result of this addition is 0.<comment>UFI: first try to fix bugtraq 4905779</comment></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153228K" role="heading" level="3" l10n="U">Examples:</paragraph>
+         
+         <paragraph xml-lang="en-US" id="par_id3155371K" role="paragraph" l10n="U">
+            <item type="input">=XOR(12&lt;11;13&gt;22;10)</item> returns TRUE since this converts to (1+0+10) mod 2  = 0 </paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158412K" role="paragraph" l10n="U">
+            <item type="input">=XOR(FALSE;TRUE)</item> returns TRUE.</paragraph>
+ </section>	  
       <section id="Section1">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3156256"><bookmark_value>TRUE function</bookmark_value>
 </bookmark>
