@@ -171,6 +171,43 @@ oldref="162">Example</paragraph>
 <item type="input">=AVERAGEA(A1:A50)</item>
 </paragraph>
 </section>
+<section id="averageif">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K1"><bookmark_value>AVERAGEIF function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTB" id="bm_id3149690K1" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148754K1" role="heading" level="2" l10n="U"
+	oldref="157">AVERAGEIF</paragraph><comment>kschenk added this entry </comment>
+<paragraph xml-lang="en-US" id="par_id3145138K1" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTB">Average the values of cells in a range that meet a criteria.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153326K1" role="heading" level="3" l10n="U"
+oldref="159">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149734K1" role="code" l10n="U" >AVERAGEIF( Reference R ; Criterion C [ ; Reference A ] )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260K1" role="paragraph" l10n="CHG" > If reference A is omitted, averages the values of cells in the reference range R that meet the Criterion C. If reference A is given, averages the values of cells of a range that is constructed using the top left cell of reference A and applying the dimensions, shape and size, of reference R.  Does not accept constant values as reference parameters.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145139K1" role="paragraph" l10n="U" >If no cell in range R matches the Criterion C, an Error is returned. If no Numbers are in the range to be averaged, an Error is returned.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149504K1" role="heading" level="3" l10n="U"
+oldref="162">Examples</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150864K1" role="paragraph" l10n="U">
+<item type="input">=AVERAGEIF(A1:A50;"&gt;"0)</item>
+will return the average of A1:A50 of all positive values in the range.
+</paragraph>
+</section>
+<section id="averageifs">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K2"><bookmark_value>AVERAGEIFS function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTC" id="bm_id3149690K2" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148754K2" role="heading" level="2" l10n="U"
+	oldref="157">AVERAGEIFS</paragraph><comment>kschenk added this entry </comment>
+<paragraph xml-lang="en-US" id="par_id3145138K2" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTC">Average the values of cells that meet multiple criteria in multiple ranges.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153326K2" role="heading" level="3" l10n="U"
+oldref="159">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149734K2" role="code" l10n="U" >AVERAGEIFS( Reference A ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260K2" role="paragraph" l10n="CHG" >Averages the values of cells in the reference range A that meet the Criterion C1 in the reference range R1 and the Criterion C2 in the reference range R2, and so on.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145139K2" role="paragraph" l10n="U" >All reference ranges shall have the same dimension and size, else an Error is returned. A logical AND is applied between each array result of each selection; a cell of reference range A is evaluated only if the same position in each array is the result of a Criterion match. If no numbers are in the result set to be averaged, an Error is returned.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149504K2" role="heading" level="3" l10n="U"
+oldref="162">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150864K2" role="paragraph" l10n="U">
+<item type="input">=AVERAGEIFS(A1:A50;B1:B25;"&gt;"0)</item>+will return the average of A1:A50 if all cells in the range B1 to B25 are greater than 0.
+</paragraph>
+</section>
 <section id="mode">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153933"><bookmark_value>MODE function</bookmark_value>
 <bookmark_value>most common value</bookmark_value>
