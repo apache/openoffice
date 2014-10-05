@@ -39,7 +39,7 @@
 <paragraph xml-lang="en-US" id="hd_id3147124" role="heading" level="1" l10n="U" oldref="1">Mathematical Functions</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154943" role="paragraph" l10n="CHG" oldref="2"><variable id="mathematiktext">This category contains the <emph>Mathematical</emph> functions for Calc.
 </variable> To open the <emph>Function Wizard</emph>, choose <link href="text/scalc/01/04060000.xhp" name="Insert - Function"><emph>Insert - Function</emph></link>.</paragraph>
-<sort>
+<sort order="asc" >	
 <section id="Section1">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3146944"><bookmark_value>ABS function</bookmark_value>
 <bookmark_value>absolute values</bookmark_value>
@@ -158,16 +158,13 @@ oldref="85">Example</paragraph>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145084"><bookmark_value>ASIN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCSIN" id="bm_id3149280" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145084" role="heading" level="2" l10n="U"
-oldref="90">ASIN</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145084" role="heading" level="2" l10n="U" oldref="90">ASIN</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156296" role="paragraph" l10n="CHG" oldref="91"><ahelp hid="HID_FUNC_ARCSIN">Returns the inverse trigonometric sine of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3149716" role="heading" level="3" l10n="U"
-oldref="92">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149716" role="heading" level="3" l10n="U" oldref="92">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156305" role="code" l10n="U" oldref="93">ASIN(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150964" role="paragraph" l10n="CHG" oldref="94"> This function returns the inverse trigonometric sine of <emph>Number</emph>, that is the angle (in radians) whose sine is Number. The angle returned is between -PI/2 and +PI/2.</paragraph>
 <paragraph xml-lang="en-US" id="par_id203863" role="paragraph" l10n="NEW">To return the angle in degrees, use the DEGREES function.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3149448" role="heading" level="3" l10n="U"
-oldref="95">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149448" role="heading" level="3" l10n="U" oldref="95">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156100" role="paragraph" l10n="CHG" oldref="96">
 <item type="input">=ASIN(0)</item> returns 0.</paragraph>
 <paragraph xml-lang="en-US" id="par_id6853846" role="paragraph" l10n="NEW">
@@ -179,8 +176,7 @@ oldref="95">Example</paragraph>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3151266"><bookmark_value>ASINH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARSINHYP" id="bm_id3145206" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3151266" role="heading" level="2" l10n="U"
-oldref="100">ASINH</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3151266" role="heading" level="2" l10n="U" oldref="100">ASINH</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147077" role="paragraph" l10n="U" oldref="101"><ahelp hid="HID_FUNC_ARSINHYP">Returns the inverse hyperbolic sine of a number.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150763" role="heading" level="3" l10n="U"
 oldref="102">Syntax</paragraph>
@@ -218,11 +214,9 @@ ACOS, ASIN, ATAN2, ACOT  </comment>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153983"><bookmark_value>ATAN2 function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCTAN2" id="bm_id3159180" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153983" role="heading" level="2" l10n="U"
-oldref="120">ATAN2</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153983" role="heading" level="2" l10n="U" oldref="120">ATAN2</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154297" role="paragraph" l10n="CHG" oldref="121"><ahelp hid="HID_FUNC_ARCTAN2">Returns the inverse trigonometric tangent of the specified x and y coordinates.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3149758" role="heading" level="3" l10n="U"
-oldref="122">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149758" role="heading" level="3" l10n="U" oldref="122">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156013" role="code" l10n="CHG" oldref="123">ATAN2(NumberX; NumberY)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151168" role="paragraph" l10n="CHG" oldref="124"><emph>NumberX</emph> is the value of the x coordinate.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152798" role="paragraph" l10n="CHG" oldref="125"><emph>NumberY</emph> is the value of the y coordinate.</paragraph>
@@ -261,13 +255,11 @@ COSH, SINH, TANH, COTH</comment>
 <paragraph xml-lang="en-US" id="hd_id3153062" role="heading" level="2" l10n="U"
 oldref="149">COS</paragraph>
 <paragraph xml-lang="en-US" id="par_id3148803" role="paragraph" l10n="CHG" oldref="150"><ahelp hid="HID_FUNC_COS">Returns the cosine of the given angle (in radians).</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150779" role="heading" level="3" l10n="U"
-oldref="151">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150779" role="heading" level="3" l10n="U" oldref="151">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154213" role="code" l10n="U" oldref="152">COS(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154285" role="paragraph" l10n="CHG" oldref="153"> Returns the (trigonometric) cosine of <emph>Number</emph>, the angle in radians.</paragraph>
 <paragraph xml-lang="en-US" id="par_id831019" role="paragraph" l10n="NEW">To return the cosine of an angle in degrees, use the RADIANS function.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3153579" role="heading" level="3" l10n="U"
-oldref="154">Examples</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153579" role="heading" level="3" l10n="U" oldref="154">Examples</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147240" role="paragraph" l10n="U" oldref="155">
 <item type="input">=COS(PI()/2)</item> returns 0, the cosine of PI/2 radians.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147516" role="paragraph" l10n="U" oldref="156">
@@ -278,15 +270,12 @@ ACOS, ASIN, ATAN, ATAN2, ACOT  </comment>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154277"><bookmark_value>COSH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COSHYP" id="bm_id3149158" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154277" role="heading" level="2" l10n="U"
-oldref="159">COSH</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154277" role="heading" level="2" l10n="U" oldref="159">COSH</paragraph>
 <paragraph xml-lang="en-US" id="par_id3146946" role="paragraph" l10n="U" oldref="160"><ahelp hid="HID_FUNC_COSHYP">Returns the hyperbolic cosine of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3149792" role="heading" level="3" l10n="U"
-oldref="161">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149792" role="heading" level="3" l10n="U" oldref="161">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3166440" role="code" l10n="U" oldref="162">COSH(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150710" role="paragraph" l10n="CHG" oldref="163">Returns the hyperbolic cosine of <emph>Number</emph>.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3153234" role="heading" level="3" l10n="U"
-oldref="164">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153234" role="heading" level="3" l10n="U" oldref="164">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154099" role="paragraph" l10n="CHG" oldref="165">
 <item type="input">=COSH(0)</item> returns 1, the hyperbolic cosine of 0.</paragraph><comment>see also SINH, TANH, COTH,     
 ACOSH, ASINH, ATANH, ACOTH,   </comment>
@@ -295,11 +284,9 @@ ACOSH, ASINH, ATANH, ACOTH,   </comment>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3152888"><bookmark_value>COT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COT" id="bm_id3153392" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3152888" role="heading" level="2" l10n="U"
-oldref="169">COT</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152888" role="heading" level="2" l10n="U" oldref="169">COT</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153679" role="paragraph" l10n="CHG" oldref="170"><ahelp hid="HID_FUNC_COT">Returns the cotangent of the given angle (in radians).</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3152943" role="heading" level="3" l10n="U"
-oldref="171">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152943" role="heading" level="3" l10n="U" oldref="171">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154856" role="code" l10n="U" oldref="172">COT(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149969" role="paragraph" l10n="CHG" oldref="173"> Returns the (trigonometric) cotangent of <emph>Number</emph>, the angle in radians.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3444624" role="paragraph" l10n="NEW">To return the cotangent of an angle in degrees, use the RADIANS function.</paragraph>
@@ -316,8 +303,7 @@ ACOS, ASIN, ATAN, ATAN2, ACOT  </comment>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154337"><bookmark_value>COTH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COTHYP" id="bm_id3148650" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154337" role="heading" level="2" l10n="U"
-oldref="178">COTH</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154337" role="heading" level="2" l10n="U" oldref="178">COTH</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149419" role="paragraph" l10n="U" oldref="179"><ahelp hid="HID_FUNC_COTHYP">Returns the hyperbolic cotangent of a given number (angle).</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149242" role="heading" level="3" l10n="U"
 oldref="180">Syntax</paragraph>
@@ -334,11 +320,9 @@ ACOSH, ASINH, ATANH, ACOTH,   </comment>
 <bookmark_value>converting;radians, into degrees</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DEG" id="bm_id3153946" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145314" role="heading" level="2" l10n="U"
-oldref="188">DEGREES</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145314" role="heading" level="2" l10n="U" oldref="188">DEGREES</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149939" role="paragraph" l10n="U" oldref="189"><ahelp hid="HID_FUNC_DEG">Converts radians into degrees.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150623" role="heading" level="3" l10n="U"
-oldref="190">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150623" role="heading" level="3" l10n="U" oldref="190">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3145600" role="code" l10n="CHG" oldref="191">DEGREES(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149484" role="paragraph" l10n="CHG" oldref="192"><emph>Number</emph> is the angle in radians to be converted to degrees.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3669545" role="heading" level="3" l10n="NEW">Example</paragraph>
@@ -352,12 +336,10 @@ oldref="190">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3148698" role="heading" level="2" l10n="U"
 oldref="198">EXP</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150592" role="paragraph" l10n="CHG" oldref="199"><ahelp hid="HID_FUNC_EXP">Returns e raised to the power of a number.</ahelp> The constant e has a value of approximately 2.71828182845904.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150351" role="heading" level="3" l10n="U"
-oldref="200">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150351" role="heading" level="3" l10n="U" oldref="200">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3146786" role="code" l10n="U" oldref="201">EXP(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155608" role="paragraph" l10n="U" oldref="202"><emph>Number</emph> is the power to which e is to be raised.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154418" role="heading" level="3" l10n="U"
-oldref="203">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154418" role="heading" level="3" l10n="U" oldref="203">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156340" role="paragraph" l10n="CHG" oldref="204">
 <item type="input">=EXP(1)</item> returns 2.71828182845904, the mathematical constant e to Calc's accuracy.</paragraph><comment>see also POWER,  LN,   </comment>
 </section>
@@ -366,17 +348,14 @@ oldref="203">Example</paragraph>
 <bookmark_value>factorials;numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FAKULTAET" id="bm_id3153886" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145781" role="heading" level="2" l10n="U"
-oldref="208">FACT</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145781" role="heading" level="2" l10n="U" oldref="208">FACT</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151109" role="paragraph" l10n="CHG" oldref="209"><ahelp hid="HID_FUNC_FAKULTAET">Returns the factorial of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3146902" role="heading" level="3" l10n="U"
-oldref="210">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146902" role="heading" level="3" l10n="U" oldref="210">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154661" role="code" l10n="U" oldref="211">FACT(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152952" role="paragraph" l10n="CHG" oldref="212"> Returns Number!, the factorial of <emph>Number</emph>, calculated as 1*2*3*4* ... * Number.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3834650" role="paragraph" l10n="NEW">=FACT(0) returns 1 by definition. </paragraph>
 <paragraph xml-lang="en-US" id="par_id8429517" role="paragraph" l10n="NEW">The factorial of a negative number returns the "invalid argument" error.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154569" role="heading" level="3" l10n="U"
-oldref="213">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154569" role="heading" level="3" l10n="U" oldref="213">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154476" role="paragraph" l10n="CHG" oldref="216">
 <item type="input">=FACT(3)</item> returns 6.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147525" role="paragraph" l10n="CHG" oldref="214">
@@ -388,16 +367,13 @@ oldref="213">Example</paragraph>
 <bookmark_value>rounding;down to next integer</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GANZZAHL" id="bm_id3151311" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3159084" role="heading" level="2" l10n="U"
-oldref="218">INT</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3159084" role="heading" level="2" l10n="U"  oldref="218">INT</paragraph>
 <paragraph xml-lang="en-US" id="par_id3158441" role="paragraph" l10n="U" oldref="219"><ahelp hid="HID_FUNC_GANZZAHL">Rounds a number down to the nearest integer.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3146132" role="heading" level="3" l10n="U"
-oldref="220">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146132" role="heading" level="3" l10n="U" oldref="220">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156146" role="code" l10n="U" oldref="221">INT(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154117" role="paragraph" l10n="CHG" oldref="222">Returns <emph>Number</emph> rounded down to the nearest integer.</paragraph>
 <paragraph xml-lang="en-US" id="par_id153508" role="paragraph" l10n="NEW">Negative numbers round down to the integer below.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3155118" role="heading" level="3" l10n="U"
-oldref="223">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3155118" role="heading" level="3" l10n="U" oldref="223">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156267" role="paragraph" l10n="CHG" oldref="224">
 <item type="input">=INT(5.7)</item> returns 5.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147323" role="paragraph" l10n="CHG" oldref="225">
@@ -410,15 +386,12 @@ CEILING, FLOOR, EVEN, ODD, MROUND,  </comment>
 <bookmark_value>rounding;up/down to even integers</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GERADE" id="bm_id3150949" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150938" role="heading" level="2" l10n="U"
-oldref="227">EVEN</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150938" role="heading" level="2" l10n="U" oldref="227">EVEN</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149988" role="paragraph" l10n="CHG" oldref="228"><ahelp hid="HID_FUNC_GERADE">Rounds a positive number up to the next even integer and a negative number down to the next even integer.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3148401" role="heading" level="3" l10n="U"
-oldref="229">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148401" role="heading" level="3" l10n="U" oldref="229">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150830" role="code" l10n="U" oldref="230">EVEN(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153350" role="paragraph" l10n="CHG" oldref="231"> Returns <emph>Number</emph> rounded to the next even integer up, away from zero. </paragraph>
-<paragraph xml-lang="en-US" id="hd_id3155508" role="heading" level="3" l10n="U"
-oldref="232">Examples</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3155508" role="heading" level="3" l10n="U" oldref="232">Examples</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154361" role="paragraph" l10n="CHG" oldref="233">
 <item type="input">=EVEN(2.3)</item> returns 4.</paragraph>
 <paragraph xml-lang="en-US" id="par_id8477736" role="paragraph" l10n="NEW">
@@ -438,12 +411,10 @@ INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 oldref="237">GCD</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152465" role="paragraph" l10n="U" oldref="238"><ahelp hid="HID_FUNC_GGT">Returns the greatest common divisor of two or more integers.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_id2769249" role="paragraph" l10n="NEW">The greatest common divisor is the positive largest integer which will divide, without remainder, each of the given integers.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150643" role="heading" level="3" l10n="U"
-oldref="239">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150643" role="heading" level="3" l10n="U" oldref="239">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154524" role="code" l10n="U" oldref="240">GCD(Integer1; Integer2; ...; Integer30)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149340" role="paragraph" l10n="U" oldref="241"><emph>Integer1 To 30</emph> are up to 30 integers whose greatest common divisor is to be calculated.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3147317" role="heading" level="3" l10n="U"
-oldref="242">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147317" role="heading" level="3" l10n="U" oldref="242">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151285" role="paragraph" l10n="CHG" oldref="243">
 <item type="input">=GCD(16;32;24) </item>gives the result 8, because 8 is the largest number that can divide 16, 24 and 32 without a remainder.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1604663" role="paragraph" l10n="NEW">
@@ -461,8 +432,7 @@ oldref="677">GCD_ADD</paragraph>
 oldref="679">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156205" role="code" l10n="U" oldref="680">GCD_ADD(Number(s))</paragraph>
 <paragraph xml-lang="en-US" id="par_id3145150" role="paragraph" l10n="U" oldref="681"><emph>Number(s)</emph> is a list of up to 30 numbers.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150239" role="heading" level="3" l10n="U"
-oldref="682">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150239" role="heading" level="3" l10n="U" oldref="682">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3159192" role="paragraph" l10n="U" oldref="683">
 <item type="input">=GCD_ADD(5;15;25)</item> returns 5.</paragraph>
 </section>
@@ -471,16 +441,13 @@ oldref="682">Example</paragraph>
 <bookmark_value>even integers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTGERADE" id="bm_id3149430" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156048" role="heading" level="2" l10n="U"
-oldref="245">ISEVEN<comment>link from Information cat</comment></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156048" role="heading" level="2" l10n="U" oldref="245">ISEVEN<comment>link from Information cat</comment></paragraph>
 <paragraph xml-lang="en-US" id="par_id3149169" role="paragraph" l10n="U" oldref="246"><ahelp hid="HID_FUNC_ISTGERADE">Returns TRUE if the value is an even integer, or FALSE if the value is odd.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3146928" role="heading" level="3" l10n="U"
-oldref="247">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146928" role="heading" level="3" l10n="U" oldref="247">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151203" role="code" l10n="U" oldref="248">ISEVEN(Value)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150491" role="paragraph" l10n="U" oldref="249"><emph>Value</emph> is the value to be checked.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3445844" role="paragraph" l10n="NEW">If Value is not an integer any digits after the decimal point are ignored. The sign of Value is also ignored.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154136" role="heading" level="3" l10n="U"
-oldref="250">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154136" role="heading" level="3" l10n="U" oldref="250">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3163813" role="paragraph" l10n="CHG" oldref="251">
 <item type="input">=ISEVEN(48)</item> returns TRUE</paragraph>
 <paragraph xml-lang="en-US" id="par_id8378856" role="paragraph" l10n="NEW">
@@ -497,16 +464,13 @@ oldref="250">Example</paragraph>
 <bookmark_value>odd integers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTUNGERADE" id="bm_id3149298" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156034" role="heading" level="2" l10n="U"
-oldref="255">ISODD<comment>link from Information cat</comment></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156034" role="heading" level="2" l10n="U" oldref="255">ISODD<comment>link from Information cat</comment></paragraph>
 <paragraph xml-lang="en-US" id="par_id3155910" role="paragraph" l10n="U" oldref="256"><ahelp hid="HID_FUNC_ISTUNGERADE">Returns TRUE if the value is odd, or FALSE if the number is even.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3151006" role="heading" level="3" l10n="U"
-oldref="257">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3151006" role="heading" level="3" l10n="U" oldref="257">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151375" role="code" l10n="U" oldref="258">ISODD(value)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155139" role="paragraph" l10n="U" oldref="259"><emph>Value</emph> is the value to be checked.</paragraph>
 <paragraph xml-lang="en-US" id="par_id9027680" role="paragraph" l10n="NEW">If Value is not an integer any digits after the decimal point are ignored. The sign of Value is also ignored.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3163723" role="heading" level="3" l10n="U"
-oldref="260">Example</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3163723" role="heading" level="3" l10n="U" oldref="260">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155345" role="paragraph" l10n="CHG" oldref="261">
 <item type="input">=ISODD(33)</item> returns TRUE</paragraph>
 <paragraph xml-lang="en-US" id="par_id9392986" role="paragraph" l10n="NEW">
@@ -1017,6 +981,29 @@ oldref="443">Example</paragraph>
 <item type="input">=SUMIF(A1:A10;"&gt;0";B1:10)</item> - sums values from the range B1:B10 only if the corresponding values in the range A1:A10 are &gt;0.</paragraph>
 <paragraph xml-lang="en-US" id="par_id6062196" role="paragraph" l10n="NEW">See COUNTIF() for some more syntax examples that can be used with SUMIF().</paragraph>
 </section>
+<section id="Section15">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151957K"><bookmark_value>SUMIFS function</bookmark_value>
+<bookmark_value>adding;specified numbers</bookmark_value>
+</bookmark><comment>kschenk added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEWNRNG" id="bm_id3151969K" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151957K" role="heading" level="2" l10n="U"
+oldref="436">SUMIFS</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151986K" role="paragraph" l10n="U" ><ahelp hid="HID_FUNC_SUMMEWNRNG">Sum the values of cells in a range that meet multiple criteria in multiple ranges.</ahelp> 
+</paragraph>
+<embed href="text/shared/00/00000001.xhp#regulaer"/>
+<paragraph xml-lang="en-US" id="hd_id3152015K" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152028K" role="code" l10n="U">SUMIFS( Reference R ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152043K" role="paragraph" l10n="U">Sums the value of cells in range R that meet the Criterion C1 in the reference range R1, and the Criterion C2 in the reference range R2, and so on. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3152062K" role="paragraph" l10n="CHG" >A <emph>Criterion</emph> is a single cell Reference, Number or Text. If the criterion is written into the formula, it has to be surrounded by double quotes.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152083K" role="paragraph" l10n="U">All <emph>Reference</emph> ranges shall have the same dimension and size, else an Error is returned.</paragraph>
+<!--<paragraph xml-lang="en-US" id="par_id8347422K" role="note" l10n="NEW">SUMIFS supports the reference concatenation operator (~) only in the Criteria parameter, and only if the optional SumRange parameter is not given.</paragraph>-->
+<paragraph xml-lang="en-US" id="hd_id3152110K" role="heading" level="3" l10n="U"
+oldref="443">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152148K" role="paragraph" l10n="CHG">Sum up cells in range A1:10 if the entires in B1:B10 are positive, and the entries in D1:D10 are the letter "A": <item type="input">=SUMIFS(A1:A10;B1:B10;"&gt;0";D1:D10;"A")</item>
+</paragraph>
+<paragraph xml-lang="en-US" id="par_id6062196K" role="paragraph" l10n="NEW">See COUNTIFS() for some more syntax examples that can be used with SUMIFS().</paragraph>
+</section>
+
 <section id="Section14">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3152195"><bookmark_value>TAN function</bookmark_value>
 </bookmark>
@@ -1409,6 +1396,28 @@ oldref="553">Example</paragraph>
 <item type="input">=COUNTIF(A1:A10;C2)</item> where cell C2 contains the text <item type="input">&gt;2006</item> counts the number of cells in the range A1:A10 which are &gt;2006 </paragraph>
 <paragraph xml-lang="en-US" id="par_id6386913" role="paragraph" l10n="NEW">To count only negative numbers: <item type="input">=COUNTIF(A1:A10;"&lt;0")</item>
 </paragraph>
+</section>
+<section id="Section63">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164897K"><bookmark_value>COUNTIFS function</bookmark_value>
+<bookmark_value>counting;specified cells</bookmark_value>
+</bookmark>
+<comment>kschenk added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZAEHLENWENN" id="bm_id3164909K" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3164897K" role="heading" level="2" l10n="U">COUNTIFS</paragraph>
+<paragraph xml-lang="en-US" id="par_id3164926K" role="paragraph" l10n="CHG"><ahelp hid="HID_FUNC_ZAEHLENWNRNG">Count the number of cells that meet multiple criteria in multiple ranges.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#regulaer"/>
+<paragraph xml-lang="en-US" id="hd_id3164953K" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3164967K" role="code" l10n="U" >COUNTIFS( Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3164980K" role="paragraph" l10n="U" ><emph>Reference R1</emph> is the  range to which the <emph>Criterion C1</emph>applies. <emph>Reference R2</emph> is the  range to which the <emph>Criterion C2</emph>applies, and so on.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3165000K" role="paragraph" l10n="CHG">All <emph>Reference </emph> ranges shall have the same dimension and size, else an Error is returned. <emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted. You may also enter a search text in the form of a regular expression, e.g. b.* for all words that begin with b. You may also indicate a cell range that contains the search criterion. If you search for literal text, enclose the text in double quotes.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3165037K" role="heading" level="3" l10n="U"
+oldref="553">Examples:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3166505K" role="paragraph" l10n="CHG">A1:A10 is a cell range containing the numbers <item type="input">2000</item> to <item type="input">2009</item>. B1:B10 is a cell range containing the numbers 
+<item type="input">2007</item> to <item type="input">2016</item>:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3581652K" role="paragraph" l10n="NEW">
+<item type="input">=COUNTIFS(A1:A10;2006;B1:B10;2014)</item> - this returns 2</paragraph>
+<paragraph xml-lang="en-US" id="par_id5169225K" role="paragraph" l10n="NEW">
+<item type="input">=COUNTIFS(A1:A10;"&gt;=2006";B1:B10;"&gt;=2006") </item>- this returns 14</paragraph>
 </section>
 </sort>
 <section id="relatedtopics">
