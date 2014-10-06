@@ -85,8 +85,8 @@
             <item type="input">=OR(A;B)</item> returns TRUE</paragraph>
          <paragraph xml-lang="en-US" id="par_id3154314" role="paragraph" l10n="U" oldref="46">
             <item type="input">=NOT(AND(A;B))</item> returns TRUE</paragraph>
-      </section>	  
-      <section id="Section5">
+</section>
+<section id="Section5">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149015"><bookmark_value>FALSE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FALSCH" id="bm_id3154678" localize="false"/>
@@ -100,7 +100,7 @@
          <paragraph xml-lang="en-US" id="par_id3147468" role="paragraph" l10n="CHG" oldref="9">
             <item type="input">=NOT(FALSE())</item> returns TRUE</paragraph>
       </section>
- <section id="Section4">
+<section id="Section4">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150141"><bookmark_value>IF function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WENN" id="bm_id3152789" localize="false"/>
@@ -124,7 +124,7 @@
          <paragraph xml-lang="en-US" id="par_id3150867" role="paragraph" l10n="U" oldref="57">
             <item type="input">=IF(A1&gt;5;100;"too small")</item> If the value in A1 is higher than 5, the value 100 is entered in the current cell; otherwise, the text “too small” (without quotes) is entered.</paragraph>
       </section>
-      <section id="Section3">
+<section id="Section3">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3155954"><bookmark_value>NOT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NICHT" id="bm_id3145168" localize="false"/>
@@ -185,27 +185,7 @@
             <item type="input">=XOR(12&lt;11;13&gt;22;10)</item> returns TRUE since this converts to (1+0+10) mod 2  = 0 </paragraph>
          <paragraph xml-lang="en-US" id="par_id3158412K" role="paragraph" l10n="U">
             <item type="input">=XOR(FALSE;TRUE)</item> returns TRUE.</paragraph>
- </section>	  
-      <section id="Section1">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156256"><bookmark_value>TRUE function</bookmark_value>
-</bookmark>
-<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WAHR" id="bm_id3148426" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U"
-                    oldref="38">TRUE</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3155985" role="paragraph" l10n="U" oldref="39"><ahelp hid="HID_FUNC_WAHR">The logical value is set to TRUE.</ahelp> The TRUE() function does not require any arguments, and always returns the logical value TRUE.</paragraph>
-         <paragraph xml-lang="en-US" id="hd_id3153717" role="heading" level="3" l10n="U"
-                    oldref="40">Syntax</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3152590" role="code" l10n="U" oldref="41">TRUE()</paragraph>
-         <paragraph xml-lang="en-US" id="hd_id3147175" role="heading" level="3" l10n="U"
-                    oldref="42">Example</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3146148" role="paragraph" l10n="U" oldref="43">If A=TRUE and B=FALSE the following examples appear:</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3083285" role="paragraph" l10n="U" oldref="44">
-            <item type="input">=AND(A;B)</item> returns FALSE</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3083444" role="paragraph" l10n="U" oldref="45">
-            <item type="input">=OR(A;B)</item> returns TRUE</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3154314" role="paragraph" l10n="U" oldref="46">
-            <item type="input">=NOT(AND(A;B))</item> returns TRUE</paragraph>
-      </section>
+ </section>
 </sort>
 <section id="relatedtopics">
          <embed href="text/scalc/01/04060100.xhp#drking"/>
