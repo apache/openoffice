@@ -1009,7 +1009,6 @@ LINKLINKFILES= \
    text$/shared$/guide$/dragdrop_table.xhp \
    text$/shared$/guide$/edit_symbolbar.xhp \
    text$/shared$/guide$/email.xhp \
-   text$/shared$/guide$/error_report.xhp \
    text$/shared$/guide$/export_ms.xhp \
    text$/shared$/guide$/fax.xhp \
    text$/shared$/guide$/filternavigator.xhp \
